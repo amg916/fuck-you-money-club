@@ -1,780 +1,811 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($12,000–$65,000 USD) and configure a lean, low-opex ($2,000–$12,000 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Reserve-First Capital, RMLO Underwriting, Licensed Servicing, Garn-St Germain Exposure & Twelve Lean Operating Layers",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #35, Subject-To & Wraparound Note Arbitrage, ranks #09 of 36 "
-        "with a 90/100 Money-to-Manpower Score. Across the volume's 11 mapped "
-        "plays, capital discipline matters more than software breadth: protect "
-        "at least half of startup cash, buy transaction-specific expertise, and "
-        "verify every underlying payment. Canonical annual owner profits are "
-        "$28,000 Conservative, $190,000 Base, and $442,000 Scaled, measured against "
-        "operator spread revenue rather than property values or mortgage principal. "
-        "This chapter allocates $12,000–$65,000, specifies twelve infrastructure "
-        "layers, separates fixed overhead from transaction costs, and establishes "
-        "evidence-based launch requirements. HOA priority and tax-redemption "
-        "opportunities receive their own rights analysis and loss limits, never "
-        "automatic access to mortgage-payment reserves."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual operator spread revenue; excludes property value and pass-through debt service",
-            "note": "28% net margin; $28,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$475,000",
-            "context": "Annual operator spread revenue; excludes property value and pass-through debt service",
-            "note": "40.0% net margin; $190,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$850,000",
-            "context": "Annual operator spread revenue; excludes property value and pass-through debt service",
-            "note": "52% net margin; $442,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Protect the reserve before buying a single acquisition channel",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Start with liquidity, not a purchase contract. At $12,000, "
-                    "ring-fence $6,500, or 54.2%, as working-capital and payment "
-                    "float; at $65,000, protect $35,000, or 53.8%. The remaining "
-                    "allocations in the capital matrix sum exactly to $5,500 and "
-                    "$30,000. These are spending ceilings, not instructions to "
-                    "empty each envelope before closing. Obtain transaction-specific "
-                    "quotes from local real-estate counsel, a licensed residential "
-                    "mortgage loan originator, title personnel, and the proposed "
-                    "servicer before committing acquisition cash. Keep reserve "
-                    "money in a separately identified operating savings account, "
-                    "not mixed with buyer escrow or security deposits. At the "
-                    "$2,000 monthly overhead floor, $6,500 buys only 3.25 months "
-                    "before property carrying costs. Because first-deal timing is "
-                    "two to six months, the minimum startup budget cannot fund "
-                    "six months of full overhead plus a troubled property. Begin "
-                    "with staged diligence and minimal subscriptions, maintain "
-                    "documented outside runway, or postpone acquisition. A smaller "
-                    "budget changes the permitted transaction, not the required "
-                    "reserve. Review bank balances weekly against committed "
-                    "invoices, upcoming debt-service dates, insurance premiums, "
-                    "and any earnest-money exposure that could become nonrefundable. "
-                    "Exclude hoped-for buyer deposits from available liquidity "
-                    "until receipt, contractual treatment, and disbursement "
-                    "authority are established."
-                ),
-                (
-                    "Treat monthly overhead and portfolio economics as separate "
-                    "ledgers. The canonical Conservative case produces $100,000 "
-                    "of operator revenue and $28,000 of owner profit, leaving "
-                    "$72,000 of total annual expense. An illustrative $2,000 "
-                    "monthly fixed stack consumes $24,000, leaving $48,000 for "
-                    "transaction expenses, contractors, servicing, losses, and "
-                    "other modeled costs. Base revenue of $475,000 less $190,000 "
-                    "profit leaves $285,000; allocating $6,000 monthly to fixed "
-                    "overhead leaves $213,000 for other annual expenses. Scaled "
-                    "revenue of $850,000 less $442,000 profit leaves $408,000; "
-                    "$12,000 monthly fixed overhead leaves $264,000. These "
-                    "allocations reconcile the supplied scenarios without "
-                    "claiming the scorecard prescribes those individual expense "
-                    "buckets. Reserve transfers are balance-sheet movements, "
-                    "not another expense deduction. Contractor counts describe "
-                    "capacity relationships, not four full-time salaries hidden "
-                    "inside a tiny software budget. The Conservative and Base "
-                    "teams remain one full-time operator plus three contractors; "
-                    "Scaled uses two full-time operators plus four contractors. "
-                    "Add recurring staff only after realized collections support "
-                    "the increase through a stressed quarter. Do not extrapolate "
-                    "annual profit from one unusually large closing spread or "
-                    "treat the headline margin as a monthly cash-distribution "
-                    "instruction. Build the cash forecast around actual due dates "
-                    "and collectible receipts."
-                ),
-                (
-                    "Size deal float from obligations rather than purchase price. "
-                    "For illustration, a $200,000 underlying balance amortized "
-                    "over thirty years at 3% requires approximately $843.21 "
-                    "monthly principal and interest. Add $350 for property "
-                    "taxes and insurance, $35 servicing, and a $200 maintenance "
-                    "allowance: the planning burden becomes $1,428.21 monthly. "
-                    "Six months requires $8,569.26 before foreclosure counsel, "
-                    "HOA assessments, vacancy repairs, or acceleration exposure. "
-                    "The $6,500 minimum-budget reserve therefore cannot support "
-                    "this example without additional dedicated liquidity. Tax "
-                    "and insurance obligations remain payable even when the "
-                    "wrap buyer stops paying; collecting escrow does not eliminate "
-                    "the need to reconcile it. Keep a property-level reserve "
-                    "schedule showing obligation, due date, responsible payer, "
-                    "and source statement. Never solve a shortage by borrowing "
-                    "another borrower's escrow or spending a refundable deposit. "
-                    "For an underlying lender's acceleration demand, six months "
-                    "of installments is not a cure fund: document a separately "
-                    "credible refinance, sale, or negotiated resolution path. "
-                    "Reject a transaction when the exit requires appreciation, "
-                    "an unqualified replacement borrower, or concealment of the "
-                    "transfer. Cash preservation means declining otherwise "
-                    "attractive spreads when the downside exceeds the funded "
-                    "operating envelope."
-                ),
-            ],
-            "table": {
-                "caption": "Reserve-First Startup Allocation: Exact $12,000 and $65,000 Capital Envelopes",
-                "headers": [
-                    "Capital allocation and operating purpose",
-                    "Twelve-thousand-dollar launch allocation",
-                    "Sixty-five-thousand-dollar launch allocation",
-                    "Release condition and cash discipline",
-                ],
-                "rows": [
-                    [
-                        "Working-capital reserve and verified debt-service payment float",
-                        "$6,500 protected cash; 54.2% of total startup capital",
-                        "$35,000 protected cash; 53.8% of total startup capital",
-                        "Release against documented obligations, never speculative bidding appetite",
-                    ],
-                    [
-                        "Local counsel and transaction-document architecture review",
-                        "$1,800 ceiling for scoped legal work before commitment",
-                        "$7,000 ceiling for multiple documented transaction review packages",
-                        "Require written scope addressing transfer, origination, and enforcement",
-                    ],
-                    [
-                        "Title research and preliminary recorded-interest investigation",
-                        "$650 ceiling for initial title and recording investigations",
-                        "$3,500 ceiling for expanded searches across candidate properties",
-                        "Stop spending when unresolved priority defeats the proposed economics",
-                    ],
-                    [
-                        "Licensed RMLO underwriting and borrower application processing",
-                        "$900 planning allowance; replace with transaction-specific provider quote",
-                        "$4,500 planning allowance across independently underwritten borrower files",
-                        "Confirm credentials, deliverables, and lawful compensation before engagement",
-                    ],
-                    [
-                        "Entity banking setup and insurance review costs",
-                        "$650 planning allowance for setup and initial coverage review",
-                        "$2,500 planning allowance for broader entity and coverage needs",
-                        "Separate operating funds and obtain written coverage confirmation",
-                    ],
-                    [
-                        "Software subscriptions and tightly capped outreach experiments",
-                        "$700 ceiling covering staged subscriptions and small outreach tests",
-                        "$3,500 ceiling covering measured acquisition and infrastructure experiments",
-                        "Renew only tools tied to documented production activities",
-                    ],
-                    [
-                        "Transaction diligence and narrowly scoped property investigation",
-                        "$800 ceiling for inspections and approved diligence expenses",
-                        "$9,000 ceiling for inspections and approved transaction preparation",
-                        "Obtain quotes first; unspent allocations remain available cash",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the payment machine before expanding acquisition",
-                "body": (
-                    "Experienced operators buy evidence and execution capacity "
-                    "before they buy a larger lead funnel."
-                ),
-                "items": [
-                    "Obtain an underlying-payment history before pricing the spread; delinquency cures consume cash that the advertised mortgage rate conceals.",
-                    "Schedule servicer remittance ahead of the underlying due date, allowing for the provider's documented ACH settlement and return windows.",
-                    "Keep payment float separate from acquisition cash, with a property-level subledger proving that each committed obligation remains funded.",
-                    "Negotiate fixed-scope counsel and RMLO engagements; a cheap document template cannot resolve a state-specific licensing or lien-priority defect.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Assemble twelve operating layers without twelve expensive subscriptions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The infrastructure matrix specifies twelve functions, not "
-                    "twelve mandatory paid subscriptions. Its exact dollar amounts "
-                    "are planning inputs using named public-plan examples, not "
-                    "verified current offers; confirm checkout prices, geographic "
-                    "availability, taxes, billing cadence, and feature limits "
-                    "before purchase. Quote-based services receive explicit "
-                    "internal allowances rather than invented vendor tariffs. "
-                    "One operator can begin with Google Workspace Business Starter "
-                    "at an assumed $7 monthly annual-commitment rate, Bitwarden "
-                    "Teams at an assumed $4 monthly annual-billing rate, and "
-                    "QuickBooks Online Simple Start at an assumed $38 monthly "
-                    "standard rate. Those three inputs total $49 monthly before "
-                    "tax, domain registration, and professional services. Free "
-                    "HubSpot, Trello, Calendly, and Adobe Acrobat Reader tiers "
-                    "cover basic pipeline, tasks, booking, and document inspection. "
-                    "Do not count an unused subscription as production capacity. "
-                    "A licensed servicer and RMLO are external operating "
-                    "relationships with onboarding, document, and per-file charges; "
-                    "their costs belong in deal underwriting. The $2,000 monthly "
-                    "opex floor must also absorb actual administrative support, "
-                    "insurance, outreach, accounting assistance, and telephone "
-                    "costs. Software alone neither explains that floor nor "
-                    "justifies spending up to it. Start billing only when a "
-                    "named person owns the function."
-                ),
-                (
-                    "Configure one property identifier across CRM, document "
-                    "storage, accounting, servicing, and the reserve register. "
-                    "Use a consistent record such as ST035-0001 rather than "
-                    "borrower Social Security numbers in filenames or email "
-                    "subjects. HubSpot should hold lead source, property address, "
-                    "seller contact permission, next action, and stage; the RMLO's "
-                    "approved portal should hold income evidence and sensitive "
-                    "application material. Google Drive folders need named-user "
-                    "access, multifactor authentication, restricted sharing, "
-                    "and a documented retention schedule. Bitwarden stores "
-                    "credentials and recovery procedures, not a shared password "
-                    "copied into Trello. Give contractors only the records "
-                    "required for their assignments, remove access at engagement "
-                    "end, and keep an access register. Underlying lender access "
-                    "must follow the lender's authorization process; never "
-                    "impersonate the original borrower. Send third-party providers "
-                    "only the information their work requires through approved "
-                    "channels. Export the pipeline and accounting records "
-                    "regularly, then test whether a replacement operator can "
-                    "locate the executed note, recorded security instrument, "
-                    "insurance evidence, payment history, and next maturity date. "
-                    "A backup becomes useful only when restoration and document "
-                    "completeness have been demonstrated. Assign a second "
-                    "authorized person to emergency payment continuity."
-                ),
-                (
-                    "Automate exception detection before automating deal selection. "
-                    "A low-equity or foreclosure-status trigger should create a "
-                    "research task, not an automatic offer or bulk message. "
-                    "Verify public-record dates, reinstatement amounts, contact "
-                    "restrictions, and whether a seller is represented. The "
-                    "servicer should supply a monthly borrower ledger, remittance "
-                    "detail, escrow activity, and exception report, while the "
-                    "operator independently verifies the underlying mortgage "
-                    "payment and insurance status. Autopay enrollment does not "
-                    "prove settlement; returned ACH entries and unapplied funds "
-                    "need assigned owners. Start with read-only exports and "
-                    "calendar reminders. Add integrations only after matching "
-                    "record identifiers, testing duplicate handling, and defining "
-                    "who resolves missing data. Budget a $35 per-note monthly "
-                    "servicing allowance for comparison, but replace it with "
-                    "the provider's written schedule covering setup, late "
-                    "payments, escrow administration, statements, payoff requests, "
-                    "and transfers. Five notes at that allowance cost $175 "
-                    "monthly before extras. Do not select a servicer solely "
-                    "because the headline charge is lower: confirm required "
-                    "licenses, funds segregation, reporting capability, complaint "
-                    "handling, and support for the proposed wrap structure. "
-                    "Vendor branding is not evidence of authorization in the "
-                    "property's jurisdiction. Retain a documented migration "
-                    "procedure before onboarding the first account."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Layer Production Stack: Exact Planning Inputs, Named Providers, and Lean Alternatives",
-                "headers": [
-                    "Operating layer and named vendor candidate",
-                    "Tier and explicit budgeting price assumption",
-                    "Production role and evidence delivered monthly",
-                    "Cheap alternative and boundary against overspending",
-                ],
-                "rows": [
-                    [
-                        "Layer 01: Google Workspace for business identity",
-                        "Business Starter: assume $7 per user monthly, annual commitment",
-                        "Business email, controlled document storage, and shared operating calendars",
-                        "Use one seat initially; add accounts for actual users",
-                    ],
-                    [
-                        "Layer 02: Bitwarden for individual credential management",
-                        "Teams: assume $4 per user monthly, billed annually",
-                        "Individual access, shared collections, and controlled credential recovery procedures",
-                        "Individual Free costs $0; avoid shared team credentials",
-                    ],
-                    [
-                        "Layer 03: HubSpot for seller pipeline management",
-                        "Free CRM: budget $0 monthly within published usage limits",
-                        "Track lead provenance, seller contacts, stages, and follow-up ownership",
-                        "Use a restricted spreadsheet until pipeline complexity warrants migration",
-                    ],
-                    [
-                        "Layer 04: Trello for transaction task coordination",
-                        "Free plan: budget $0 monthly within current workspace limits",
-                        "Assign diligence deadlines, missing evidence, and provider follow-up tasks",
-                        "Use existing Workspace task lists before purchasing automation features",
-                    ],
-                    [
-                        "Layer 05: Calendly for controlled appointment scheduling",
-                        "Free plan: budget $0 monthly within current scheduling limits",
-                        "Book seller discussions and professional reviews without repeated emails",
-                        "Use existing calendar invitations when appointment volume remains low",
-                    ],
-                    [
-                        "Layer 06: QuickBooks Online for operator accounting",
-                        "Simple Start: assume $38 monthly standard subscription before taxes",
-                        "Classify operator receipts, expenses, principal movements, and reserve transfers",
-                        "Use accountant-reviewed ledgers initially; retain transaction-level supporting documents",
-                    ],
-                    [
-                        "Layer 07: Adobe Acrobat Reader for document inspection",
-                        "Reader desktop free tier: budget $0 monthly subscription expense",
-                        "Review executed PDFs and identify missing pages or signatures",
-                        "Use title-provider execution systems; free review does not replace notarization",
-                    ],
-                    [
-                        "Layer 08: Mercury for operating banking evaluation",
-                        "Standard banking: assume $0 monthly fee, subject to eligibility",
-                        "Separate operating cash and reserves through available account functionality",
-                        "Use an eligible local bank; compare actual account disclosures",
-                    ],
-                    [
-                        "Layer 09: First American for title-service evaluation",
-                        "Transaction quote required; allocate $650 initial title-research spending ceiling",
-                        "Investigate vesting, recorded liens, exceptions, and closing requirements",
-                        "Compare a local title agency with equivalent search scope",
-                    ],
-                    [
-                        "Layer 10: NMLS Consumer Access for RMLO verification",
-                        "Public lookup costs $0; budget $900 per-file RMLO allowance",
-                        "Verify professional identifiers and engage a separately quoted originator",
-                        "Compare licensed originators; public lookup does not perform underwriting",
-                    ],
-                    [
-                        "Layer 11: FCI Lender Services for servicing evaluation",
-                        "Written quote required; assume $35 per note monthly allowance",
-                        "Collect payments and report remittances, escrow activity, and exceptions",
-                        "Compare another properly licensed servicer with equivalent wrap capabilities",
-                    ],
-                    [
-                        "Layer 12: REIPro for optional acquisition-data research",
-                        "Basic plan: assume $109 monthly; activate only after validation",
-                        "Identify candidate properties and investigate recorded debt-related acquisition signals",
-                        "Use county records first; verify every commercial-data lead independently",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Separate legal ownership, recognized spreads, and statutory sidecar risk",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Choose the entity and banking structure with counsel and "
-                    "the tax preparer before taking title. An LLC filing does "
-                    "not authorize mortgage origination, servicing, brokerage, "
-                    "or escrow custody. Obtain an EIN, adopt signing authority, "
-                    "document beneficial ownership for bank onboarding, and "
-                    "maintain books that distinguish each property and obligation. "
-                    "The underlying borrower remains liable unless the lender "
-                    "expressly releases them; taking title subject to a mortgage "
-                    "does not create that release. Under 12 U.S.C. §1701j-3, "
-                    "due-on-sale enforcement and specific statutory exceptions "
-                    "require transaction-level review. A trust or entity wrapper "
-                    "does not manufacture an exception for an otherwise covered "
-                    "sale. Disclose the structure accurately to the insurer "
-                    "and obtain appropriate named-insured, mortgagee, occupancy, "
-                    "and loss-payee treatment. Confirm vacancy, rental, "
-                    "seller-financing, and liability exposures rather than "
-                    "assuming the seller's old policy survives unchanged. "
-                    "Require an insurable-interest review and evidence of "
-                    "coverage effective at transfer. Maintain separate "
-                    "authorizations for lender communication and servicer "
-                    "instructions. Bank account labels do not transform "
-                    "operator-controlled funds into a lawful escrow arrangement; "
-                    "use the authorized custodian where required. Reconcile "
-                    "custodial balances separately from operating cash and "
-                    "prohibit owner distributions from funds owed to borrowers "
-                    "or underlying creditors."
-                ),
-                (
-                    "Build the revenue ledger around the supplied economic "
-                    "basis: net upfront option or down-payment spreads and "
-                    "retained annual wrap interest margin, excluding house "
-                    "value and pass-through debt service. Consider an illustrative "
-                    "$240,000 resale with $20,000 down and a $220,000 wrap "
-                    "amortized over thirty years at 7%. Its monthly payment "
-                    "is approximately $1,463.67. Against the earlier $843.21 "
-                    "underlying payment, the cash difference is $620.46, or "
-                    "$585.46 after a $35 servicing allowance, before other "
-                    "costs. First-month wrap interest is $1,283.33 and underlying "
-                    "interest is $500; the $783.33 interest difference is "
-                    "not the same as the cash-payment difference because "
-                    "principal amortization differs. Likewise, $20,000 down "
-                    "less $8,000 seller consideration, $4,000 closing cash, "
-                    "and $6,000 retained liquidity leaves $2,000 freely "
-                    "deployable cash, not automatically $2,000 recognized "
-                    "profit. Have the accountant apply the relevant real-estate "
-                    "and financial-instrument guidance; ASC 606 principal-agent "
-                    "analysis applies where within scope, not indiscriminately "
-                    "to loan interest. The supplied scorecard contains no "
-                    "separate retained-share multiplier, so do not apply a "
-                    "second haircut to its canonical operator-revenue totals. "
-                    "Reconcile cash, earned spreads, principal, escrow, and "
-                    "deferred amounts through distinct ledger accounts."
-                ),
-                (
-                    "Ring-fence hoa_super_lien_tax_deed_redemption_arbitrage as "
-                    "a separate TRACK_1 rights strategy, never a shortcut "
-                    "to free-and-clear title. For a counsel-cleared HOA claim, "
-                    "suppose enforceable priority components total $2,400, "
-                    "the interest costs $1,600, and a documented collectible "
-                    "payoff is $2,700. After $300 collection expense and "
-                    "$64 carrying cost at 12% annually for four months, "
-                    "the illustrative contribution is $736. The payoff "
-                    "assumption needs an itemized legal basis; lien face "
-                    "value does not establish priority, collectibility, "
-                    "or a statutory yield. Tax-sale redemption is a "
-                    "different instrument. Under Texas Tax Code §34.21, "
-                    "property category, redemption timing, permitted "
-                    "expenditures, and tender mechanics determine the "
-                    "calculation. An eligible first-year redemption with "
-                    "a $10,000 statutory base and applicable 25% premium "
-                    "produces $12,500; subtracting the $10,000 investment, "
-                    "$1,000 diligence expense, and $500 carrying cost "
-                    "leaves $1,000. That result requires actual qualifying "
-                    "redemption, not merely winning an auction. Do not "
-                    "fund this $10,000 position from the minimum launch "
-                    "reserve. On defective notice, disputed priority, or "
-                    "uncertain redemption rights, suspend bidding, seek "
-                    "available statutory refunds, and limit acquisitions "
-                    "to counsel-cleared interests. Never treat the mortgage "
-                    "as extinguished without transaction-specific authority "
-                    "and title analysis."
-                ),
-            ],
-            "table": {
-                "caption": "Ownership, Revenue, and Statutory-Rights Controls Before Cash Leaves the Account",
-                "headers": [
-                    "Exposure requiring an explicit operating distinction",
-                    "Document or calculation establishing the position",
-                    "Cash treatment and specific underwriting consequence",
-                    "Failure response protecting remaining operator liquidity",
-                ],
-                "rows": [
-                    [
-                        "Entity ownership differs from mortgage origination authority",
-                        "Entity records plus verified jurisdiction-specific professional licensing analysis",
-                        "Budget entity expenses separately from licensed origination services",
-                        "Pause borrower solicitation until required professional roles are established",
-                    ],
-                    [
-                        "Underlying borrower liability survives an unauthorized assumption narrative",
-                        "Executed loan documents and any express lender release agreement",
-                        "Exclude assumed liability relief from seller consideration calculations",
-                        "Correct transaction disclosures before either party signs closing documents",
-                    ],
-                    [
-                        "Due-on-sale acceleration exceeds an ordinary installment reserve",
-                        "Counsel review of transfer facts and applicable statutory exceptions",
-                        "Stress immediate payoff separately from six-month installment carrying costs",
-                        "Decline acquisition when no funded and credible resolution exists",
-                    ],
-                    [
-                        "Insurance continuity depends on actual ownership and occupancy",
-                        "Written carrier confirmation with correct insured and mortgagee designations",
-                        "Fund effective coverage before assuming existing premiums purchase protection",
-                        "Delay transfer until coverage evidence matches the actual structure",
-                    ],
-                    [
-                        "Recognized operator spread differs from buyer cash receipts",
-                        "Separate schedules for interest, principal, escrow, and upfront consideration",
-                        "Exclude underlying property value and pass-through mortgage debt service",
-                        "Reclassify ledger errors before calculating margins or owner distributions",
-                    ],
-                    [
-                        "HOA priority claims require enforceable jurisdiction-specific collection rights",
-                        "$2,700 recovery less $1,600 cost, $300 expenses, $64 carrying",
-                        "$736 illustrative contribution depends on documented collectible payoff components",
-                        "Suspend bidding and acquire only counsel-cleared enforceable interests",
-                    ],
-                    [
-                        "Tax redemption premiums depend on property and timing",
-                        "$12,500 qualifying redemption less $10,000 investment and $1,500 costs",
-                        "$1,000 illustrative contribution excludes any assumed automatic title extinguishment",
-                        "Seek available statutory refunds when defects undermine acquisition rights",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Run the pre-launch rehearsal before accepting borrower money",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Before launch, have counsel map the proposed seller-financing "
-                    "activity to federal and state requirements, then route "
-                    "every owner-occupant wrap buyer through a licensed RMLO "
-                    "as the operating standard. The SAFE Act framework in "
-                    "12 U.S.C. §§5101–5116, Regulation Z loan-originator "
-                    "provisions in 12 CFR §1026.36, and ability-to-repay "
-                    "requirements in 12 CFR §1026.43 have scope conditions "
-                    "and exclusions that must be evaluated rather than "
-                    "flattened into a universal exemption. Collect verified "
-                    "income, obligations, credit information, and the applicable "
-                    "payment calculation through the originator's process. "
-                    "Do not advertise a borrower as qualified because their "
-                    "down payment covers the acquisition advance. For Texas "
-                    "transactions, review Property Code §5.016 notices for "
-                    "covered encumbered-property conveyances and Finance Code "
-                    "Chapter 159 requirements for wrap mortgage lending, "
-                    "including applicable licensing, disclosures, and closing "
-                    "procedures. A notice is not lender permission and "
-                    "does not erase acceleration exposure. Create a "
-                    "transaction-specific evidence index showing who prepared "
-                    "each document, who reviewed it, when delivery occurred, "
-                    "and where receipt evidence resides. Stop the file "
-                    "when required borrower qualification or notice evidence "
-                    "is missing, even if the seller offers a closing "
-                    "discount. Speed cannot repair an unenforceable instrument."
-                ),
-                (
-                    "Rehearse one complete payment cycle using test records "
-                    "before taking live collections. Enter the buyer amount "
-                    "due, expected receipt date, servicing charge, underlying "
-                    "installment, escrow allocation, and reserve contribution. "
-                    "Model an ACH return after a provisional posting, a "
-                    "tax bill increase, an insurance cancellation notice, "
-                    "and an underlying payment credited to suspense rather "
-                    "than the scheduled installment. Each exception needs "
-                    "an owner, deadline, escalation route, and documentary "
-                    "resolution. The servicer's statement should reconcile "
-                    "to bank activity, while the underlying creditor's "
-                    "statement independently confirms application. Require "
-                    "dual review of new payout destinations and verify "
-                    "wire changes through a trusted telephone number "
-                    "already on file. Keep emergency payment authority "
-                    "separate from authority to change bank details. "
-                    "Document how the backup operator acts if the "
-                    "founder is unavailable on the mortgage due date. "
-                    "For insurance and tax administration, record renewal "
-                    "dates and reconcile actual disbursements rather than "
-                    "relying on dashboard status. Test exporting the "
-                    "complete loan history before accepting a servicing "
-                    "contract. A migration plan needs usable documents, "
-                    "balances, transaction history, and custodial reconciliation, "
-                    "not merely a promise that another provider can "
-                    "take over. Record rehearsal defects and resolve "
-                    "them before live payment instructions are issued."
-                ),
-                (
-                    "Release acquisition spending in stages tied to evidence. "
-                    "First authorize limited records research; next authorize "
-                    "title and counsel review; then authorize borrower "
-                    "underwriting and final document preparation. Preserve "
-                    "contractual diligence exits where available and "
-                    "calendar the exact date money becomes exposed. "
-                    "Before closing, produce a one-page cash bridge "
-                    "showing starting unrestricted cash, closing outflows, "
-                    "remaining reserve, next ninety days of obligations, "
-                    "and a six-month buyer-default case. Reconcile "
-                    "it to bank evidence and provider quotes, not "
-                    "CRM estimates. The founder signs the operating "
-                    "decision after the relevant professionals complete "
-                    "their assigned work; no software status substitutes "
-                    "for their findings. After closing, audit the first "
-                    "three payment cycles individually before increasing "
-                    "volume. Compare actual servicing fees, cure costs, "
-                    "collection timing, and retained interest against "
-                    "the acquisition model. Expand only when funded "
-                    "float grows with the obligations and exception "
-                    "work remains manageable by the stated team. "
-                    "Keep HOA and tax-redemption positions outside "
-                    "the wrap portfolio's payment reserve and report "
-                    "their realized results separately. If acquisition "
-                    "economics weaken, cut lead spending first, "
-                    "preserve servicing and evidence collection, and "
-                    "decline new obligations until liquidity recovers. "
-                    "The cheapest production stack is the one "
-                    "that avoids financing preventable operating mistakes."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Launch Evidence Matrix: Named Owners, Required Proof, and Stop Conditions",
-                "headers": [
-                    "Readiness test and accountable operating owner",
-                    "Evidence required before transaction funds are released",
-                    "Specific pass condition supporting a launch decision",
-                    "Stop condition and practical recovery action",
-                ],
-                "rows": [
-                    [
-                        "Founder owns unrestricted liquidity and reserve sufficiency",
-                        "Bank evidence reconciled to closing uses and stress obligations",
-                        "Protected reserve remains funded after every committed closing outflow",
-                        "Reduce acquisition scope or add documented capital before proceeding",
-                    ],
-                    [
-                        "Local counsel owns transfer and lien-rights analysis",
-                        "Written analysis covering acceleration, priority, notices, and enforcement mechanics",
-                        "Transaction documents and exits address identified jurisdiction-specific exposures",
-                        "Suspend acquisition while unresolved rights undermine the proposed economics",
-                    ],
-                    [
-                        "Licensed RMLO owns owner-occupant borrower qualification work",
-                        "Verified underwriting package and applicable ability-to-repay analysis documentation",
-                        "Required professional credentials and borrower evidence match transaction facts",
-                        "Do not close against an incomplete qualification record",
-                    ],
-                    [
-                        "Title team and insurance broker own closing evidence",
-                        "Vesting, recorded exceptions, required notices, and effective coverage documents",
-                        "Ownership, lien position, and coverage reflect the actual transaction",
-                        "Delay funding until material title or coverage defects resolve",
-                    ],
-                    [
-                        "Servicer and backup operator own payment-cycle continuity",
-                        "Test reconciliation covering returns, escrow changes, and underlying remittances",
-                        "Every exception has an owner and verified resolution procedure",
-                        "Repeat rehearsal after correcting missing evidence or payment controls",
-                    ],
-                    [
-                        "Accountant owns revenue classification and reporting consistency",
-                        "Ledger bridge separating operator spreads, principal movements, and custodial cash",
-                        "Canonical margins reconcile without treating property value as revenue",
-                        "Correct classifications before reporting profits or releasing owner distributions",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four evidence checks before the first live closing",
-                "body": (
-                    "A failed check stops the affected transaction until the "
-                    "missing evidence or operating capacity is supplied."
-                ),
-                "items": [
-                    "Verify unrestricted reserves remain at or above the startup allocation and separately cover the proposed property's stressed obligations.",
-                    "Verify counsel has addressed acceleration, state wrap requirements, lien priority, required notices, and an executable default response.",
-                    "Verify the licensed RMLO's qualification file and the title team's closing evidence are complete for the actual borrower and property.",
-                    "Verify servicing authorization, effective insurance, underlying-payment reconciliation, and backup payment authority through a completed rehearsal.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Create the capital and rights file",
-                    "action": "Reconcile available cash and collect the underlying debt, title, and property records.",
-                    "detail": (
-                        "Assign the property identifier, preserve at least half "
-                        "of startup capital, and record every diligence deadline "
-                        "before any deposit becomes exposed."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Commission transaction-specific professional work",
-                    "action": "Engage local counsel, the licensed RMLO, title personnel, and the insurance broker.",
-                    "detail": (
-                        "Obtain written scopes and prices; resolve transfer "
-                        "rights, borrower qualification, required disclosures, "
-                        "and coverage before finalizing the cash bridge."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Rehearse collection and underlying payment",
-                    "action": "Test the proposed servicer's reporting against a complete simulated payment cycle.",
-                    "detail": (
-                        "Include an ACH return, escrow change, payment suspense "
-                        "event, and founder absence; verify each exception's "
-                        "owner and documentary resolution."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Release funds and audit early performance",
-                    "action": "Close only after evidence checks pass, then reconcile the first three payment cycles.",
-                    "detail": (
-                        "Compare actual spread receipts and expenses with the "
-                        "underwritten model; preserve float and reduce outreach "
-                        "before cutting payment-verification capacity."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": "Buy the payment controls before you buy the spread, and keep the reserve larger than your confidence.",
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Allocate $6,500 of a $12,000 launch or $35,000 of a $65,000 launch to protected working capital, then test property-specific reserve sufficiency.",
-        "Obtain current written prices for the twelve infrastructure layers and activate paid tools only when a named production task requires them.",
-        "Open separately identified operating and reserve accounts, document signing authority, and arrange lawful custody for borrower escrow funds.",
-        "Commission counsel and licensed RMLO review covering due-on-sale exposure, borrower qualification, state wrap rules, and required delivery evidence.",
-        "Rehearse licensed-servicer collections, returned payments, underlying mortgage verification, escrow reconciliation, and emergency payment continuity.",
-        "Segregate HOA and tax-redemption investments from mortgage float; bid only on counsel-cleared rights with documented costs, remedies, and loss limits.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "12 U.S.C. §1701j-3 — Preemption of due-on-sale prohibitions",
-            "url": "https://www.law.cornell.edu/uscode/text/12/1701j-3",
-            "relevance": (
-                "Establishes the federal due-on-sale framework and specified "
-                "transfer exceptions; the proposed conveyance requires "
-                "fact-specific review rather than assumptions about trusts or entities."
-            ),
-        },
-        {
-            "title": "12 U.S.C. §5103 — License or registration required",
-            "url": "https://www.law.cornell.edu/uscode/text/12/5103",
-            "relevance": (
-                "Provides the SAFE Act licensing or registration framework "
-                "for individuals engaging in covered loan-origination activity."
-            ),
-        },
-        {
-            "title": "12 CFR §1026.36 — Prohibited acts or practices and loan-originator requirements",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1026/subpart-E/section-1026.36",
-            "relevance": (
-                "Supports review of loan-originator definitions, qualification, "
-                "compensation restrictions, and specifically conditioned "
-                "seller-financer exclusions."
-            ),
-        },
-        {
-            "title": "12 CFR §1026.43 — Minimum standards for transactions secured by a dwelling",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1026/subpart-E/section-1026.43",
-            "relevance": (
-                "Provides ability-to-repay requirements and scope provisions "
-                "used to structure and document applicable borrower underwriting."
-            ),
-        },
-        {
-            "title": "Texas Property Code §5.016 — Conveyance of residential property encumbered by lien",
-            "url": "https://statutes.capitol.texas.gov/Docs/PR/htm/PR.5.htm#5.016",
-            "relevance": (
-                "Requires analysis of statutory notices and transaction "
-                "conditions for covered conveyances of encumbered residential property."
-            ),
-        },
-        {
-            "title": "Texas Finance Code Chapter 159 — Wrap Mortgage Loan Financing",
-            "url": "https://statutes.capitol.texas.gov/Docs/FI/htm/FI.159.htm",
-            "relevance": (
-                "Governs Texas wrap mortgage lending, including applicable "
-                "licensing, disclosure, closing, and borrower-protection requirements."
-            ),
-        },
-        {
-            "title": "Texas Tax Code §34.21 — Right of redemption",
-            "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.34.htm#34.21",
-            "relevance": (
-                "Defines redemption periods and payment calculations by "
-                "property category and timing; supports conditional tax-sale "
-                "economics rather than assumed automatic title clearance."
-            ),
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'seller-finance-fundamentals-making-the-seller-the-bank',
+ 'question_prompt': 'What is seller financing, how do sellers benefit, and how do practitioners pitch and '
+                    'paper it on houses, businesses, and vehicles?',
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Seller Finance Fundamentals: Making the Seller the Bank',
+ 'subtitle': 'Seller finance vs. bank loans, seller motivations and benefits, seller finance paperwork, '
+             'Texas owner-finance steps, off-market 0% marketplaces, and seller-financing businesses, '
+             'trucks, and an Escalade',
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Pace Morby, Key & Capital and Greg Schwartz agree that seller finance turns a '
+                      'free-and-clear owner into the bank, negotiated on four terms: price, down payment, '
+                      "interest rate and length. Pace pays the seller's number in exchange for terms: "
+                      "Susan's mobile home closed at $110K, principal-only, $10K down split into two $5K "
+                      "installments, $375/mo, while the best cash offer was $57K. Mario's 30-unit building "
+                      'traded at $3M, $0 down, 4%, 50 years, no balloon, against a $1.9M cash offer. Pace '
+                      'prices assignment fees at $2K per $100/mo net cash flow and targets 30%+ '
+                      'cash-on-cash. Key & Capital counters that a 0% seller note is not clever, models '
+                      '6-9% rates with 5-7 year balloons, and flags due-on-sale and seasoning traps. Greg '
+                      'Schwartz demands credit and background checks; Pace verifies income only.',
+ 'key_metrics': [{'label': 'Assignment Fee Per $100 Net Monthly Cash Flow',
+                  'metric': 'Assignment Fee Per $100 Net Monthly Cash Flow',
+                  'value': '$2,000 per $100/mo net ($5,000 per $100 at 0% interest)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Pace's rule of thumb for paying wholesalers on seller-finance and subject-to "
+                             'deals; average cash flow above $500/mo puts the average fee above $10K.',
+                  'source': 'Flipping Mastery TV ([MeNrueZIYeE @ 00:24:45])'},
+                 {'label': 'Average All-In Entry Cost',
+                  'metric': 'Average All-In Entry Cost',
+                  'value': 'About 8% (down payment plus closing costs)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Pace's average cost to get into a deal, versus the 30-35% down ($80-100K on "
+                             'a $300K house) a bank requires.',
+                  'source': 'Pace Morby ([_M0q3Da-vxU @ 00:43:32])'},
+                 {'label': 'Bank Versus Seller Payment Spread',
+                  'metric': 'Bank Versus Seller Payment Spread',
+                  'value': '$1,649/mo at 7.32% vs $1,439/mo at 6%; $12,600 saved over 5 years',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '$300K Dallas duplex, 20% down, $240K financed on a 30-year amortization; '
+                             'savings of $210/mo or $2,520/yr.',
+                  'source': 'Key & Capital ([dzuLMB2Szxc @ 00:04:24])'},
+                 {'label': 'Share Of Real Estate Owned Free And Clear',
+                  'metric': 'Share Of Real Estate Owned Free And Clear',
+                  'value': 'About 30%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Pace's sizing of the seller-finance target pool; Landwatch alone showed "
+                             '11,700 listings and sellers are motivated by gain, not pain.',
+                  'source': 'Flipping Mastery TV ([-E2cCPmM_Q0 @ 00:16:13])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator here frames seller finance the same way: the owner stops '
+                              'being a landlord and becomes the bank, and the deal is built on four '
+                              'levers, not one. Pace Morby lists them as purchase price, down payment, '
+                              'interest rate and length of time, first proving it with an iPhone demo '
+                              'where the market offer was $550 and he bought at $800 as $80/mo for 10 '
+                              'months [_M0q3Da-vxU @ 00:26:22]. Greg Schwartz in Bryan-College Station '
+                              'runs the identical checklist, telling operators to start with the down '
+                              'payment at 20, 10 or 5% before touching rate, amortization or monthly '
+                              'payment, then choose between a 3, 5 or 7 year balloon for liquidity or a 5, '
+                              '7 or 10 year prepayment penalty for steady income [_xN91ltYUa0 @ 00:01:43]. '
+                              'The consensus on seller psychology is equally tight. Pace separates Sub2 '
+                              'sellers, driven by pain such as divorce or no equity, from seller-finance '
+                              'sellers, driven by gain: they want more than the market will bear, often '
+                              'after pulling the house off the market [8VNf8TfmufA @ 00:00:00]. The target '
+                              'list follows directly. Roughly 30% of properties are owned free and clear, '
+                              'Sub2 lists filter for 60%+ equity, and seller-finance lists should aim at '
+                              '100% equity [MeNrueZIYeE @ 00:31:09].',
+                              "The second pillar is that terms beat price. Pace's line is that the value "
+                              'of a property is never the purchase price but what you can do with it, and '
+                              'he taught it to Susan through his F-150 story: a truck Kelley Blue Book '
+                              'valued at $5K sat on Craigslist at $10K for 3 months with no calls until he '
+                              "added 'will take payments,' then sold for $12.5K with $1K down and $350/mo "
+                              '[6FXApQ1y2KE @ 00:10:17]. The same logic drives his claim that creative '
+                              'finance pays the seller more money every time; he says he has never seen a '
+                              'creative transaction that was not a win for the seller, the buyer and any '
+                              'agent involved, while in a cash deal only the buyer wins [8VNf8TfmufA @ '
+                              '00:01:26]. On the masterclass, Pace puts the contrast in numbers: on a '
+                              '$200K ARV, wholesalers pay $110-130K and only about 5% of sellers accept, '
+                              'while creative finance pays 80-100 cents on the dollar [-E2cCPmM_Q0 @ '
+                              '00:03:49]. His Leilani case shows why distressed owners say yes: a '
+                              'zero-down VA loan, a husband who died 30 days after closing, an 11% '
+                              'commission hit if she listed, so Pace took the $1,800 payment subject-to '
+                              'and now rents it for $2,800 [Teh6C2LGk8g @ 00:05:56].',
+                              'Protection is the third point of agreement, and every speaker lands on the '
+                              'same paper trail. Pace says the deal structure is how you protect the '
+                              "seller and that the main protection is the buyer's profit; on top of that "
+                              'he hires a servicing company such as Westar, Evergreen or Del Toro at about '
+                              '$100 setup and $17 per payment drafted 5 days early, writes a new insurance '
+                              'policy listing the seller as additional insured, and records both the 1-1.5 '
+                              'page promissory note and the 80-90 page deed of trust [w1wq3uZtNx8 @ '
+                              '01:06:54]. In his paperwork Q&A he draws the line on public record: the '
+                              'purchase and sale agreement is never recorded, but the deed, deed of trust '
+                              'and note are [IdhS21bvT_o @ 00:29:24]. Greg Schwartz mirrors it for Texas: '
+                              'a promissory note plus a recorded deed of trust, lower closing costs, a '
+                              'local attorney, and payments made direct or through a servicer at $30-40 '
+                              '[_xN91ltYUa0 @ 00:06:17]. Key & Capital adds title insurance and a recorded '
+                              'deed of trust to the checklist and tells sellers to use a licensed '
+                              'originator before carrying paper [dzuLMB2Szxc @ 00:11:14]. Where they agree '
+                              'most is the order: structure first, so the buyer cash flows, then the '
+                              'paperwork locks it.'],
+               'table': {'caption': 'Where the practitioners line up on seller-finance fundamentals',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Say',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Four negotiable terms define every seller-finance deal',
+                                   'Purchase price, down payment, interest rate and length of time are the '
+                                   'levers',
+                                   'Trade a higher price for lower down, lower rate and longer term',
+                                   'Pace Morby ([8VNf8TfmufA @ 00:02:38])'],
+                                  ['Seller-finance sellers are motivated by gain, not pain',
+                                   'Seller finance is typically a gain-full situation because sellers want '
+                                   'gain',
+                                   "Pitch the seller's number and income stream instead of rescue or "
+                                   'relief',
+                                   'Flipping Mastery TV ([MeNrueZIYeE @ 00:21:34])'],
+                                  ['About 30% of properties are owned free and clear',
+                                   'Seller-finance lists should target 100% equity while Sub2 lists filter '
+                                   '60%+',
+                                   'Build separate lists so terms pitches reach owners with no lender',
+                                   'Flipping Mastery TV ([MeNrueZIYeE @ 00:31:09])'],
+                                  ['Creative finance pays far more than wholesale cash offers',
+                                   'Wholesalers pay $110-130K on a $200K ARV; creative pays 80-100 cents',
+                                   'Pitch terms to the large majority of sellers who reject cash offers',
+                                   'Flipping Mastery TV ([-E2cCPmM_Q0 @ 00:03:49])'],
+                                  ["Buyer cash flow is the seller's real protection",
+                                   'Pace says the deal structure protects the seller and buyer profit '
+                                   'matters most',
+                                   'Underwrite so the buyer clears profit before promising any seller '
+                                   'number',
+                                   'Pace Morby ([w1wq3uZtNx8 @ 01:06:54])'],
+                                  ['Record the promissory note and deed of trust',
+                                   'Greg Schwartz closes with a promissory note plus a recorded deed of '
+                                   'trust',
+                                   'Use a local attorney and title rather than handshake paperwork alone',
+                                   'Greg Schwartz | Investing in Bryan-College Station ([_xN91ltYUa0 @ '
+                                   '00:06:17])'],
+                                  ['Seller financing is a meaningful slice of the market',
+                                   '$29.5B in 2025, 5-7% of single-family sales, 21,508 Texas deals',
+                                   'Owner-carry is a mainstream channel in Texas, not a fringe niche play',
+                                   'Key & Capital ([dzuLMB2Szxc @ 00:01:46])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The call script is codified. Pace records every appointment, then pivots '
+                              "with one line: 'I would be willing to come up to your price if you would "
+                              "give me terms,' followed by the F-150 story and a reframe that he will "
+                              'upgrade the seller from landlord to the bank [MeNrueZIYeE @ 00:04:27]. When '
+                              "the conversation turns to buyer risk, he says 'abducted by aliens' instead "
+                              "of 'hit by a bus.' He never sends the first offer. The seller names terms, "
+                              'and when Susan asked for $20K down at 8%, he answered that he was probably '
+                              'not her buyer and stepped back [MeNrueZIYeE @ 00:12:32]. The rebuilt '
+                              'structure on her mobile home: $110K, principal-only, $10K down paid as $5K '
+                              'now and $5K after six months, seller-paid closing costs, inherited tenants '
+                              'at about $1,650 rent throwing off roughly $1K/mo net that funds the down '
+                              'payment, and a $375/mo note matching her RV spot cost [6FXApQ1y2KE @ '
+                              "00:14:14]. The vocabulary matters. Pace says he never writes 'zero percent "
+                              "seller finance' in any offer; every offer says principal-only payments "
+                              '[IdhS21bvT_o @ 01:02:52]. On the masterclass version the term runs 20 '
+                              'years, the best cash offer was $57K, and the house is now worth about '
+                              '$233K, roughly $120K of appreciation in 3 years.',
+                              "The unit economics are just as specific. Pace's deal test: the terms must "
+                              'beat a bank asking 30-40% down, then the cash-on-cash return has to clear '
+                              'the bar; investors want a 12% minimum, he wants 30%+, because the lower the '
+                              'down payment, the higher the return [MeNrueZIYeE @ 00:23:58]. Wholesalers '
+                              'get paid off a cash-flow formula: $2K of assignment fee per $100/mo of net '
+                              'cash flow, or $5K per $100 at 0% interest, which with average cash flow '
+                              'above $500/mo puts the average fee above $10K [MeNrueZIYeE @ 00:25:18]. The '
+                              'ceiling is the biggest assignment fee of his life: $210K, paid as the '
+                              'buyer, on 30 Texas units at $3M, no money down, 4%, 50 years, no balloon, '
+                              "about 10x the $21K/mo cash flow, when the wholesaler's cash number was "
+                              '$1.7M [-E2cCPmM_Q0 @ 00:07:45]. Only 20-30% of opportunities need no money; '
+                              'the rest get funded by partners or private lenders sitting in second '
+                              'position at 8-12%, where $10K at 10% costs about $80/mo. Pace calls it '
+                              'financing your financing, and on a Chandler flip the interest sat in '
+                              'escrow. His all-in entry cost, down payment and closing costs together, '
+                              'averages about 8%, against the 30-35% down a bank demands, roughly $80-100K '
+                              'on a $300K house [_M0q3Da-vxU @ 00:43:32].',
+                              'Term length and balloon mechanics are where Pace protects his downside and '
+                              "the seller's number. His default is a payment based on 30 years with a "
+                              '10-year balloon, backed by a balloon-extension clause that automatically '
+                              "renews for 5 years if the property doesn't appraise at the purchase price "
+                              '[MeNrueZIYeE @ 00:34:02]. The Jillian deal in Atlanta shows the full stack: '
+                              '$1.1M, $0 down, no payments for 6 months, then about $6K/mo at 3% on a '
+                              '30-year amortization with a 10-year balloon, plus a clause requiring her to '
+                              'buy him a steak dinner; five years later Airbnb was outlawed, he sold at '
+                              '$1.5M and rolled the $400K gain into an RV park [w1wq3uZtNx8 @ 00:35:23]. '
+                              'Key & Capital benchmarks what conventional seller-carry looks like: 5-20% '
+                              'down with a 10% median, 6-9% rates or 3-8% for investors, balloons at 3-10 '
+                              'years and usually 5-7, closing in 7-21 days against 30-45 for a bank, with '
+                              'no prepayment penalty [dzuLMB2Szxc @ 00:07:34]. Greg Schwartz closes the '
+                              'loop on collections: the buyer pays the seller directly or through a '
+                              'servicer at $30-40, and the note ends by refinance, sale, buyout, the '
+                              'balloon coming due, or foreclosure, which he calls easier than you would '
+                              'think in Texas [_xN91ltYUa0 @ 00:07:28].'],
+               'table': {'caption': 'Street-level numbers, tools and formulas operators run on '
+                                    'seller-finance deals',
+                         'headers': ['Mechanic',
+                                     'Exact Numbers Taught',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Assignment fee pricing formula for wholesalers',
+                                   '$2,000 per $100/mo net cash flow, or $5,000 per $100 at 0%',
+                                   'Price wholesaler payouts off cash flow instead of spread to cash value',
+                                   'Flipping Mastery TV ([MeNrueZIYeE @ 00:24:45])'],
+                                  ['Cash-on-cash deal test after beating bank terms',
+                                   'Bank wants 30-40% down; investors want 12% minimum, Pace wants 30%+',
+                                   'Push the down payment lower because lower down raises cash-on-cash '
+                                   'return',
+                                   'Flipping Mastery TV ([MeNrueZIYeE @ 00:23:58])'],
+                                  ['Second-position private money for down payments',
+                                   'Private lenders charge 8-12%; $10K at 10% costs about $80/mo',
+                                   'Fund the deals that need capital without pulling personal cash',
+                                   'Flipping Mastery TV ([MeNrueZIYeE @ 00:28:46])'],
+                                  ['Third-party note servicing company setup',
+                                   'Westar, Evergreen or Del Toro at ~$100 setup and ~$17 per payment',
+                                   'Draft payments 5 days early so the seller never chases the buyer',
+                                   'Pace Morby ([w1wq3uZtNx8 @ 01:06:54])'],
+                                  ['Bank versus seller payment comparison on a duplex',
+                                   '$240K financed: $1,649/mo bank at 7.32% vs $1,439/mo seller at 6%',
+                                   'Show the buyer $210/mo, $2,520/yr and $12,600 saved over five years',
+                                   'Key & Capital ([dzuLMB2Szxc @ 00:04:24])'],
+                                  ['Texas contract package for owner-financed offers',
+                                   'TREC 1-4 contract plus seller financing addendum covering vetting, '
+                                   'terms, escrow',
+                                   'Write the offer on state forms with tax and insurance escrow built in',
+                                   'Greg Schwartz | Investing in Bryan-College Station ([_xN91ltYUa0 @ '
+                                   '00:04:06])'],
+                                  ['Free off-market creative deal marketplace and buy box',
+                                   'Buy Box Cartel Marketplace is free, took over a year to code',
+                                   'Set a custom buy box like Dallas multifamily at 0% for match alerts',
+                                   'Richard Taylor ([fu3wlMepckY @ 00:00:25])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Script Lines and Structure Moves That Close Terms Deals',
+                           'body': 'The small word choices and sequencing moves the practitioners use to '
+                                   'get sellers to carry paper on their terms.',
+                           'items': ["Say 'principal only payments,' never 'zero percent,' in every "
+                                     'written offer and on every seller call [Pace Morby — IdhS21bvT_o @ '
+                                     '01:02:52].',
+                                     "Let the seller name terms first, then say you are 'probably not your "
+                                     "buyer' and step back; Pace wants to be the one saying no [Flipping "
+                                     'Mastery TV — MeNrueZIYeE @ 00:12:32].',
+                                     'Skip the high note rate: Pace says it tells the buyer to refinance '
+                                     "the seller out fast, while 0% locks the seller's price even if the "
+                                     'buyer refinances in 6 months [Pace Morby — oBTB4KZYxq8 @ 00:05:00].',
+                                     "Never underwrite before talking to the seller; Pace's in-person "
+                                     'single-family meetings from 2013-2018 produced 30% more closes at '
+                                     '30% less price [Pace Morby — w1wq3uZtNx8 @ 01:50:47].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Build the free-and-clear target list',
+                              'action': 'Pull owners with 100% equity and source seller-finance listings '
+                                        'from Landwatch, the MLS and owner-finance aggregator sites.',
+                              'detail': 'Roughly 30% of properties are free and clear; seller-finance '
+                                        'lists target 100% equity versus 60%+ for Sub2, and Landwatch '
+                                        'showed 25-30 seller-finance listings in Kalispell alone [Flipping '
+                                        'Mastery TV — MeNrueZIYeE @ 00:31:09].'},
+                             {'step': 2,
+                              'title': 'Run the pivot call',
+                              'action': 'Record the appointment, deliver the terms line, tell the F-150 '
+                                        'story, and reframe the seller from landlord to bank.',
+                              'detail': "Pace's line is 'I would be willing to come up to your price if "
+                                        "you would give me terms,' followed immediately by the F-150 story "
+                                        '[Flipping Mastery TV — MeNrueZIYeE @ 00:04:27].'},
+                             {'step': 3,
+                              'title': 'Structure the four terms',
+                              'action': 'Give the seller price, then win down payment, rate and a long '
+                                        'enough term; anchor on 30-year amortization with a 10-year '
+                                        'balloon and an extension clause.',
+                              'detail': 'The seller wins on price while Pace wins on down payment, rate '
+                                        'and term, and a 3-year payoff is too short [Pace Morby — '
+                                        '8VNf8TfmufA @ 00:06:31]; the extension auto-renews 5 years if the '
+                                        "property doesn't appraise [Flipping Mastery TV — MeNrueZIYeE @ "
+                                        '00:34:02].'},
+                             {'step': 4,
+                              'title': 'Paper, record and service the note',
+                              'action': 'Record the promissory note and deed of trust, add the seller as '
+                                        'additional insured, and route payments through a servicer.',
+                              'detail': 'Pace uses Westar, Evergreen or Del Toro at ~$100 setup and ~$17 '
+                                        'per payment [Pace Morby — w1wq3uZtNx8 @ 01:06:54]; Greg Schwartz '
+                                        'closes with a recorded deed of trust and a local attorney [Greg '
+                                        'Schwartz | Investing in Bryan-College Station — _xN91ltYUa0 @ '
+                                        '00:06:17].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split in seller-finance pricing is the interest rate. Pace '
+                              'Morby writes principal-only paper and refuses to say zero percent out loud: '
+                              '"I don\'t ever say zero percent seller finance in any of my offers we '
+                              'always say principal only payments" [IdhS21bvT_o @ 01:02:52]. His logic is '
+                              "that a seller charging 4% simply gets a lower price, Pace's illustration "
+                              'being $60K instead of $90K, and that a refinance would wipe out the '
+                              "interest they expected anyway, so 0% locks the seller's number [8VNf8TfmufA "
+                              '@ 00:04:37]. To back the tax side, he cites a CPA who has sold more than 40 '
+                              'properties at 0% for 1.25 times retail value, while admitting he is unsure '
+                              'of the IRS guideline he quotes for notes over $150K [IdhS21bvT_o @ '
+                              '01:01:44]. Key & Capital runs the opposite playbook. Their Dallas duplex '
+                              'math puts the seller at 6% against a 7.32% bank loan, saving the buyer $210 '
+                              'a month, and they quote typical seller rates of 6-9%, or 3-8% for '
+                              'investors. They flag the mid-term AFR at 4.35% and land the counterpunch '
+                              'bluntly: "So, a 0% seller note is not clever" [dzuLMB2Szxc @ 00:11:35]. '
+                              'Same deal shape, two completely different answers to where the seller '
+                              'actually gets paid.',
+                              'Term length is the second fault line. Pace pushes amortization as long as '
+                              'the seller will tolerate: the Mario deal ran $3M at 4% over 50 years with '
+                              'no balloon, the seller himself proposing 50 after Pace pitched 40, and Pace '
+                              'calls a 3-year payoff too short for the buyer to win [w1wq3uZtNx8 @ '
+                              '01:55:13] [8VNf8TfmufA @ 00:06:31]. His default fallback is a 30-year '
+                              'amortization with a 10-year balloon plus a balloon-extension clause that '
+                              "auto-renews five years if the property won't appraise at the purchase "
+                              'price. Key & Capital treats the balloon as the first of three traps and '
+                              'describes market norms of balloons at 3-10 years, usually 5-7, with the '
+                              'duplex example coming due at five years with roughly $223K still owed '
+                              "[dzuLMB2Szxc @ 00:05:35]. Their defenses overlap with Pace's (an extension "
+                              'clause, a longer balloon, a refinance plan, or a fully amortizing note) but '
+                              'their floor is far lower: never accept a balloon shorter than 12 months. '
+                              'Greg Schwartz frames the choice as a menu rather than a rule: a 3, 5 or '
+                              '7-year balloon suits buyers who need liquidity or plan a BRRRR refinance, '
+                              'while a 5, 7 or 10-year prepayment penalty suits sellers who want steady '
+                              'income [_xN91ltYUa0 @ 00:01:43].',
+                              'Risk tolerance on the underlying loan and the paperwork splits the camp '
+                              'again. Pace says the due-on-sale clause has been called 10 times in roughly '
+                              '40,000 deals, calls it "really easy to overcome," and keeps a deed-back '
+                              'plus a pre-signed lease option as the remedy [EO9EtMTTjm4 @ 01:25:45]. Key '
+                              '& Capital lists due-on-sale under Garn-St Germain as trap number two, '
+                              "alongside Fannie Mae's 12-month seasoning on refinances that pay off a "
+                              'seller note [dzuLMB2Szxc @ 00:08:31]. On recording, Pace records the '
+                              'promissory note and deed of trust on standard seller-finance closes, yet on '
+                              'a building carrying an SBA 504 loan he used a contract for deed with the '
+                              'deed left unrecorded in a safety deposit box so nobody would know ownership '
+                              'had transferred [p0ukMOdzoAc @ 00:11:34]. Key & Capital calls for title '
+                              'insurance and a recorded deed of trust; Greg Schwartz likewise records the '
+                              'deed of trust. Buyer vetting diverges just as hard: on vehicles Pace runs '
+                              '"verification of income" only, no credit check, with bankruptcies and '
+                              'divorces acceptable, while Greg Schwartz sets income, credit and a '
+                              'background check as the minimum and notes full Dodd-Frank underwriting '
+                              "costs over $1,000 [_xN91ltYUa0 @ 00:05:11]. Pace's view is that the buyer's "
+                              "profit, not the paperwork, is the seller's main protection."],
+               'table': {'caption': 'Seller-Finance Fault Lines: Competing Playbooks Side by Side',
+                         'headers': ['Fault Line', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Interest rate charged on the seller note',
+                                   'Pace writes principal-only payments, never says zero percent, and '
+                                   'averages about 3% across acquisitions',
+                                   'Key & Capital calls a 0% seller note not clever and models 6% against '
+                                   'a 7.32% bank loan',
+                                   'Pace Morby ([IdhS21bvT_o @ 01:02:52]); Key & Capital ([dzuLMB2Szxc @ '
+                                   '00:11:35])'],
+                                  ['Balloon timing and total term length on carrybacks',
+                                   'Pace took $3M at 4% over 50 years with no balloon on the Mario deal',
+                                   'Key & Capital cites typical balloons at 3-10 years, usually 5-7, and '
+                                   'never under 12 months',
+                                   'Pace Morby ([w1wq3uZtNx8 @ 01:55:13]); Key & Capital ([dzuLMB2Szxc @ '
+                                   '00:10:38])'],
+                                  ['Due-on-sale exposure on the underlying mortgage',
+                                   'Pace reports the clause called 10 times in about 40,000 deals and '
+                                   'calls it easy to overcome',
+                                   'Key & Capital ranks due-on-sale under Garn-St Germain as trap number '
+                                   'two for buyers',
+                                   'Pace Morby ([EO9EtMTTjm4 @ 01:25:45]); Key & Capital ([dzuLMB2Szxc @ '
+                                   '00:08:31])'],
+                                  ['Buyer vetting before the seller carries the note',
+                                   'Pace runs verification of income only on vehicle buyers, with no '
+                                   'credit check at all',
+                                   'Greg Schwartz requires income, credit and background checks, and lets '
+                                   'the seller cancel if unsatisfied',
+                                   'Pace Morby ([oBTB4KZYxq8 @ 00:15:12]); Greg Schwartz ([_xN91ltYUa0 @ '
+                                   '00:05:11])'],
+                                  ['Note servicing cost and how payments get routed',
+                                   'Pace hires Westar, Evergreen or Del Toro at about $100 setup and $17 '
+                                   'per payment',
+                                   'Greg Schwartz lets buyers pay the seller directly or quotes a servicer '
+                                   'at $30-40',
+                                   'Pace Morby ([w1wq3uZtNx8 @ 01:06:54]); Greg Schwartz ([_xN91ltYUa0 @ '
+                                   '00:07:28])'],
+                                  ['Recording the deed on executory contracts and notes',
+                                   'Pace keeps the deed unrecorded in a safety deposit box on an SBA 504 '
+                                   'building',
+                                   'Key & Capital says record the deed of trust and buy title insurance on '
+                                   'every note',
+                                   'Pace Morby ([p0ukMOdzoAc @ 00:11:34]); Key & Capital ([dzuLMB2Szxc @ '
+                                   '00:11:14])'],
+                                  ['BRRRR as the alternative to creative seller terms',
+                                   'Pace calls BRRRR the laziest strategy, exposed to bank loans and '
+                                   'refinance interest rates',
+                                   'Greg Schwartz pitches 3, 5 or 7-year balloons as useful for liquidity '
+                                   'or BRRRR buyers',
+                                   'Pace Morby ([_M0q3Da-vxU @ 00:19:43]); Greg Schwartz ([_xN91ltYUa0 @ '
+                                   '00:01:43])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["Pace's own origin story is the first failure mode on the table. As a "
+                              'renovation contractor for Opendoor, Offerpad and Zillow, he financed a '
+                              "flipper's rehabs, putting up $100K and getting roughly $105K back at sale; "
+                              'over four years the unpaid balances ran into the millions [_M0q3Da-vxU @ '
+                              '00:01:30]. He then liquidated his rentals to pour another $700K in, and the '
+                              'flipper filed bankruptcy owing about $16M. His lawsuit rule from his '
+                              'seller-finance teaching is blunt: "The number one deterrent for lawsuits is '
+                              'making sure you\'re not the one that writes the first check" [w1wq3uZtNx8 @ '
+                              '01:28:46]. Lease options, a structure he says he is obsessed with, burned '
+                              "him once when heirs contested the contract and it cost $7K to sue. Shena's "
+                              'Mesa duplex shows the investor-side version of the trap: bought in 2021 '
+                              'with 30% down, one unit vacant for months, listed by an agent for about '
+                              'four months without a sale, until a Sub2 student offered back the 30% plus '
+                              'payments in exchange for 0% interest [8VNf8TfmufA @ 00:13:52]. Pace frames '
+                              'that as the norm rather than the exception, claiming 50% of investors throw '
+                              'the house back on the market within a year [8VNf8TfmufA @ 00:14:52].',
+                              'The seller side carries its own set of traps. Pace names the biggest '
+                              'downfall in seller finance as sellers wanting a very high price, and his '
+                              'workaround is to let the seller state terms first and walk when they are '
+                              'wrong: Susan opened at $20K down and 8%, and Pace answered "probably not '
+                              'your buyer" and stepped back [MeNrueZIYeE @ 00:12:32]. Sellers who try to '
+                              'stay landlords instead face his Arizona eviction clock: late in month one, '
+                              'eviction filed in month two, tenant out by months three or four, repairs in '
+                              'five and six, marketing in seven, a new tenant in month eight, roughly '
+                              'seven months of payments with no rent [8VNf8TfmufA @ 00:09:13]. Key & '
+                              'Capital adds the regulatory and tax drag that sellers routinely miss. '
+                              'Dodd-Frank tiers allow one property a year, up to three with a fully '
+                              'amortizing note, and more than five makes the seller a creditor; §453(i) '
+                              'depreciation recapture is taxed in year one even under installment '
+                              'treatment [dzuLMB2Szxc @ 00:11:14]. On the 1031 path, Pace warns that the '
+                              '90-day pressure of a strict exchange lets replacement-property sellers '
+                              'exploit the clock, and he prefers a delayed 1031 with cost segregation '
+                              '[w1wq3uZtNx8 @ 00:44:10].',
+                              'Vehicles and businesses add operational failure points that real estate '
+                              "doesn't. On the Escalade, Grant's balance exceeded market value and a "
+                              'Facebook Marketplace listing at payoff drew zero responses; attorney Sean '
+                              'Sinclair spent about $3,000 of research to find a vehicle cannot be bought '
+                              'subject-to in North Carolina, forcing a $0-down lease option instead '
+                              "[o3cjfzx5Ykk @ 00:11:15]. Turo cash flow cut both ways: Angelo's Turo "
+                              'projection showed about $2,000 a month on a roughly $1,000 payment, but '
+                              'Grant stopped renting after a Denali renter smoked weed in the car and Pace '
+                              'rejected Turo as not worth the risk [o3cjfzx5Ykk @ 00:08:40]. Pace also '
+                              'flags that a stolen-vehicle history can trigger a salvage title or make the '
+                              'car uninsurable, killing Turo use, so Carfax gets pulled first [B5EMtjV6RJM '
+                              '@ 00:18:40]. On businesses, brokers who refuse to submit offers get waited '
+                              'out, and Pace warns that buying a business is not passive until people are '
+                              'hired in place and the operation is automated; the Alaska carpet cleaner '
+                              'ran roughly $6.5K weekly payroll and 15 interviews a day in peak season '
+                              '[p0ukMOdzoAc @ 00:01:24]. And on institutional sellers, his verdict is '
+                              "short: don't waste time sending Opendoor creative offers."],
+               'table': {'caption': 'Firsthand Losses, Near-Misses and the Economics Behind Them',
+                         'headers': ['Failure Mode', 'What Happened', 'Economics Check', 'Expert Source'],
+                         'rows': [["Funding another operator's rehabs on trust",
+                                   'Pace put up $100K per rehab, got about $105K back, then poured in '
+                                   'another $700K',
+                                   'The flipper filed bankruptcy owing about $16M after four years of '
+                                   'unpaid balances piling into millions',
+                                   'Pace Morby ([_M0q3Da-vxU @ 00:01:30])'],
+                                  ["Lease option contested by the seller's heirs",
+                                   "Heirs contested one of Pace's lease options, forcing him into "
+                                   'litigation to hold the deal',
+                                   'Pace spent $7K suing to enforce the lease option he already held',
+                                   'Pace Morby ([w1wq3uZtNx8 @ 01:32:02])'],
+                                  ['Heavy down payment on a purchase that never stabilized',
+                                   'Shena bought a Mesa duplex in 2021 with 30% down; one unit sat vacant '
+                                   'for months',
+                                   'An agent listing ran about four months unsold before a Sub2 student '
+                                   'offered back the 30% plus payments',
+                                   'Pace Morby ([8VNf8TfmufA @ 00:13:52])'],
+                                  ['Seller trying to stay on as a landlord',
+                                   'Arizona eviction runs from a late payment in month one to a new tenant '
+                                   'in month eight',
+                                   'Roughly seven months of mortgage payments go out with no rent coming '
+                                   'in',
+                                   'Pace Morby ([8VNf8TfmufA @ 00:09:13])'],
+                                  ['Short balloon with no exit plan behind it',
+                                   'The duplex example comes due at year five with roughly $223K still '
+                                   'owed on the note',
+                                   'Defenses are a longer balloon, extension clause, refinance plan, or '
+                                   'fully amortizing note; never under 12 months',
+                                   'Key & Capital ([dzuLMB2Szxc @ 00:05:35])'],
+                                  ['Vehicle structure that state law blocks outright',
+                                   "Attorney Sean Sinclair's North Carolina research showed a car cannot "
+                                   'be bought subject-to there',
+                                   'About $3,000 in legal research, and the deal was rebuilt as a $0-down '
+                                   'lease option',
+                                   'Pace Morby ([o3cjfzx5Ykk @ 00:11:15])'],
+                                  ['Hiding a transfer from the lender behind a land trust',
+                                   'Pace warns against land trusts; one investor received about seven '
+                                   'years in prison',
+                                   'He labels lying to the bank as mortgage fraud and uses a deed-back '
+                                   'plus lease option instead',
+                                   'Pace Morby ([EO9EtMTTjm4 @ 01:34:56])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Kill-Switch Checks Before You Carry or Take a Note',
+                           'body': 'Four hard stops pulled from losses and near-misses the practitioners '
+                                   'reported firsthand. Clear every one before signing.',
+                           'items': ['Never be the party that writes the first check into a seller-finance '
+                                     'deal; Pace calls that the number one deterrent for lawsuits [Pace '
+                                     'Morby — w1wq3uZtNx8 @ 01:28:46].',
+                                     'Pull Carfax before carrying any vehicle note; a stolen-vehicle '
+                                     'history can mean a salvage title or an uninsurable car that cannot '
+                                     'go on Turo [Pace Morby — B5EMtjV6RJM @ 00:18:40].',
+                                     'Confirm state vehicle law before structuring subject-to on a car; '
+                                     'North Carolina blocked it and forced a lease option after roughly '
+                                     '$3,000 of attorney research [Pace Morby — o3cjfzx5Ykk @ 00:11:15].',
+                                     'Refuse any balloon shorter than 12 months and build in an extension '
+                                     'clause, refinance plan, or fully amortizing note [Key & Capital — '
+                                     'dzuLMB2Szxc @ 00:10:38].']}}],
+ 'pull_quote': '"The number one deterrent for lawsuits is making sure you\'re not the one that writes the '
+               'first check." — Pace Morby (w1wq3uZtNx8 @ 01:28:46).',
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ['Open every seller conversation with the line "I would be willing to come up to your '
+                      'price if you would give me terms," then tell the F-150 story [Flipping Mastery TV — '
+                      'MeNrueZIYeE @ 00:04:27].',
+                      'Let the seller name the terms first and answer a bad counter with "I\'m probably '
+                      'not your buyer" before stepping back [Pace Morby — 6FXApQ1y2KE @ 00:13:44].',
+                      'Write principal-only payments into every offer instead of ever saying zero percent '
+                      'seller finance [Pace Morby — IdhS21bvT_o @ 01:02:52].',
+                      'Protect the seller with a servicing company, a new insurance policy naming the '
+                      'seller as additional insured, and recording of both the note and deed of trust '
+                      '[Pace Morby — w1wq3uZtNx8 @ 01:06:54].',
+                      'Price assignment fees at $2,000 per $100 of monthly net cash flow, or $5,000 per '
+                      '$100 at 0% interest [Flipping Mastery TV — MeNrueZIYeE @ 00:25:18].',
+                      'Add a balloon-extension clause that auto-renews for five years if the property '
+                      "won't appraise at the purchase price [Flipping Mastery TV — MeNrueZIYeE @ "
+                      '00:34:02].'],
+ 'statutory_citations': [{'title': 'Pace Morby — Know THIS Before Selling on Seller Finance! [00:04:37]',
+                          'url': 'https://www.youtube.com/watch?v=8VNf8TfmufA&t=277s',
+                          'relevance': 'Primary practitioner testimony on 0% seller finance, locking the '
+                                       "seller's price, and refinance risk to seller interest income."},
+                         {'title': 'Key & Capital — Seller Financing Explained: How to Buy Property '
+                                   'Without a Bank [00:08:31]',
+                          'url': 'https://www.youtube.com/watch?v=dzuLMB2Szxc&t=511s',
+                          'relevance': 'Primary practitioner testimony on balloon, due-on-sale and '
+                                       '12-month seasoning traps in seller-financed purchases.'},
+                         {'title': 'Pace Morby — How To Use Seller Finance In Real Estate Deals [01:06:54]',
+                          'url': 'https://www.youtube.com/watch?v=w1wq3uZtNx8&t=4014s',
+                          'relevance': 'Primary practitioner testimony on protecting the seller through '
+                                       'deal structure, servicing, insurance and recording.'},
+                         {'title': 'Pace Morby — Teaching SubTo & Creative Finance to Those In Need '
+                                   '[01:25:45]',
+                          'url': 'https://www.youtube.com/watch?v=EO9EtMTTjm4&t=5145s',
+                          'relevance': 'Primary practitioner testimony on due-on-sale frequency, the '
+                                       'deed-back remedy, and the land-trust mortgage fraud warning.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '_M0q3Da-vxU',
+                       'title': 'Creative Finance Explained for BEGINNER Investors',
+                       'channel': 'Pace Morby',
+                       'author': 'Pace Morby',
+                       'text': 'do you know what our average cost to get into a deal is in terms of down '
+                               "payment closing cost everything it's about 8%.",
+                       'tip': 'do you know what our average cost to get into a deal is in terms of down '
+                              "payment closing cost everything it's about 8%.",
+                       'timestamp': 2612,
+                       'timestamp_seconds': 2612,
+                       'timestamp_label': '[00:43:32]',
+                       'url': 'https://www.youtube.com/watch?v=_M0q3Da-vxU&t=2612s',
+                       'markdown': '[00:43:32](https://www.youtube.com/watch?v=_M0q3Da-vxU&t=2612s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w1wq3uZtNx8',
+                       'title': 'How To Use Seller Finance In Real Estate Deals',
+                       'channel': 'Pace Morby',
+                       'author': 'Pace Morby',
+                       'text': "The number one deterrent for lawsuits is making sure you're not the one "
+                               'that writes the first check.',
+                       'tip': "The number one deterrent for lawsuits is making sure you're not the one "
+                              'that writes the first check.',
+                       'timestamp': 5326,
+                       'timestamp_seconds': 5326,
+                       'timestamp_label': '[01:28:46]',
+                       'url': 'https://www.youtube.com/watch?v=w1wq3uZtNx8&t=5326s',
+                       'markdown': '[01:28:46](https://www.youtube.com/watch?v=w1wq3uZtNx8&t=5326s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w1wq3uZtNx8',
+                       'title': 'How To Use Seller Finance In Real Estate Deals',
+                       'channel': 'Pace Morby',
+                       'author': 'Pace Morby',
+                       'text': 'The deal structure is actually how you protect the seller.',
+                       'tip': 'The deal structure is actually how you protect the seller.',
+                       'timestamp': 4014,
+                       'timestamp_seconds': 4014,
+                       'timestamp_label': '[01:06:54]',
+                       'url': 'https://www.youtube.com/watch?v=w1wq3uZtNx8&t=4014s',
+                       'markdown': '[01:06:54](https://www.youtube.com/watch?v=w1wq3uZtNx8&t=4014s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6FXApQ1y2KE',
+                       'title': 'What is Seller Finance? Creative Real Estate Explained',
+                       'channel': 'Pace Morby',
+                       'author': 'Pace Morby',
+                       'text': 'Susan I would be willing to come up to your number if you would be willing '
+                               'to give me terms.',
+                       'tip': 'Susan I would be willing to come up to your number if you would be willing '
+                              'to give me terms.',
+                       'timestamp': 395,
+                       'timestamp_seconds': 395,
+                       'timestamp_label': '[00:06:35]',
+                       'url': 'https://www.youtube.com/watch?v=6FXApQ1y2KE&t=395s',
+                       'markdown': '[00:06:35](https://www.youtube.com/watch?v=6FXApQ1y2KE&t=395s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'p0ukMOdzoAc',
+                       'title': 'Buying a Business - Seller Finance Explained',
+                       'channel': 'Pace Morby',
+                       'author': 'Pace Morby',
+                       'text': "Because I don't want anybody to know that that ownership has transferred, "
+                               'and the only way they would know if it transferred is if I actually '
+                               "recorded it at the county recorder's office.",
+                       'tip': "Because I don't want anybody to know that that ownership has transferred, "
+                              'and the only way they would know if it transferred is if I actually '
+                              "recorded it at the county recorder's office.",
+                       'timestamp': 694,
+                       'timestamp_seconds': 694,
+                       'timestamp_label': '[00:11:34]',
+                       'url': 'https://www.youtube.com/watch?v=p0ukMOdzoAc&t=694s',
+                       'markdown': '[00:11:34](https://www.youtube.com/watch?v=p0ukMOdzoAc&t=694s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-E2cCPmM_Q0',
+                       'title': 'Introduction To Creative Finance - Masterclass Video 1 w/ Pace Morby',
+                       'channel': 'Flipping Mastery TV',
+                       'author': 'Flipping Mastery TV',
+                       'text': 'wraps are a disposition strategy.',
+                       'tip': 'wraps are a disposition strategy.',
+                       'timestamp': 2112,
+                       'timestamp_seconds': 2112,
+                       'timestamp_label': '[00:35:12]',
+                       'url': 'https://www.youtube.com/watch?v=-E2cCPmM_Q0&t=2112s',
+                       'markdown': '[00:35:12](https://www.youtube.com/watch?v=-E2cCPmM_Q0&t=2112s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IdhS21bvT_o',
+                       'title': 'Creative Finance Q and A SubTo Paperwork Seller Finance Paperwork',
+                       'channel': 'Pace Morby',
+                       'author': 'Pace Morby',
+                       'text': "what I teach is I don't ever say zero percent seller finance in any of my "
+                               'offers we always say principal only payments.',
+                       'tip': "what I teach is I don't ever say zero percent seller finance in any of my "
+                              'offers we always say principal only payments.',
+                       'timestamp': 3772,
+                       'timestamp_seconds': 3772,
+                       'timestamp_label': '[01:02:52]',
+                       'url': 'https://www.youtube.com/watch?v=IdhS21bvT_o&t=3772s',
+                       'markdown': '[01:02:52](https://www.youtube.com/watch?v=IdhS21bvT_o&t=3772s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EO9EtMTTjm4',
+                       'title': 'Teaching SubTo & Creative Finance to Those In Need',
+                       'channel': 'Pace Morby',
+                       'author': 'Pace Morby',
+                       'text': 'Lying to the bank is mortgage fraud.',
+                       'tip': 'Lying to the bank is mortgage fraud.',
+                       'timestamp': 5696,
+                       'timestamp_seconds': 5696,
+                       'timestamp_label': '[01:34:56]',
+                       'url': 'https://www.youtube.com/watch?v=EO9EtMTTjm4&t=5696s',
+                       'markdown': '[01:34:56](https://www.youtube.com/watch?v=EO9EtMTTjm4&t=5696s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'B5EMtjV6RJM',
+                       'title': 'In-Depth Explanation of Seller Finance Paperwork',
+                       'channel': 'Pace Morby',
+                       'author': 'Pace Morby',
+                       'text': 'A stolen vehicle history can leave you with a salvage title or a car you '
+                               "can't insure, which blocks Turo use, so check the Carfax.",
+                       'tip': 'A stolen vehicle history can leave you with a salvage title or a car you '
+                              "can't insure, which blocks Turo use, so check the Carfax.",
+                       'timestamp': 1120,
+                       'timestamp_seconds': 1120,
+                       'timestamp_label': '[00:18:40]',
+                       'url': 'https://www.youtube.com/watch?v=B5EMtjV6RJM&t=1120s',
+                       'markdown': '[00:18:40](https://www.youtube.com/watch?v=B5EMtjV6RJM&t=1120s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oBTB4KZYxq8',
+                       'title': 'NO BANK NEEDED! | How To Buy or Sell a Car on Seller Finance',
+                       'channel': 'Pace Morby',
+                       'author': 'Pace Morby',
+                       'text': 'There are way more buyers with creative Finance than there is with cash.',
+                       'tip': 'There are way more buyers with creative Finance than there is with cash.',
+                       'timestamp': 986,
+                       'timestamp_seconds': 986,
+                       'timestamp_label': '[00:16:26]',
+                       'url': 'https://www.youtube.com/watch?v=oBTB4KZYxq8&t=986s',
+                       'markdown': '[00:16:26](https://www.youtube.com/watch?v=oBTB4KZYxq8&t=986s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fu3wlMepckY',
+                       'title': 'How to Find Off-Market Creative Finance Deals (0% Seller Financing)',
+                       'channel': 'Richard Taylor',
+                       'author': 'Richard Taylor',
+                       'text': 'You can chat, share files, and sign agreements with the wholesalers who '
+                               'hold the contract with the seller right there on the platform.',
+                       'tip': 'You can chat, share files, and sign agreements with the wholesalers who '
+                              'hold the contract with the seller right there on the platform.',
+                       'timestamp': 25,
+                       'timestamp_seconds': 25,
+                       'timestamp_label': '[00:00:25]',
+                       'url': 'https://www.youtube.com/watch?v=fu3wlMepckY&t=25s',
+                       'markdown': '[00:00:25](https://www.youtube.com/watch?v=fu3wlMepckY&t=25s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dzuLMB2Szxc',
+                       'title': 'Seller Financing Explained: How to Buy Property Without a Bank',
+                       'channel': 'Key & Capital',
+                       'author': 'Key & Capital',
+                       'text': 'Never accept a balloon shorter than 12 months, ever.',
+                       'tip': 'Never accept a balloon shorter than 12 months, ever.',
+                       'timestamp': 638,
+                       'timestamp_seconds': 638,
+                       'timestamp_label': '[00:10:38]',
+                       'url': 'https://www.youtube.com/watch?v=dzuLMB2Szxc&t=638s',
+                       'markdown': '[00:10:38](https://www.youtube.com/watch?v=dzuLMB2Szxc&t=638s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dzuLMB2Szxc',
+                       'title': 'Seller Financing Explained: How to Buy Property Without a Bank',
+                       'channel': 'Key & Capital',
+                       'author': 'Key & Capital',
+                       'text': 'So, a 0% seller note is not clever.',
+                       'tip': 'So, a 0% seller note is not clever.',
+                       'timestamp': 695,
+                       'timestamp_seconds': 695,
+                       'timestamp_label': '[00:11:35]',
+                       'url': 'https://www.youtube.com/watch?v=dzuLMB2Szxc&t=695s',
+                       'markdown': '[00:11:35](https://www.youtube.com/watch?v=dzuLMB2Szxc&t=695s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Teh6C2LGk8g',
+                       'title': 'Creative Financing Benefits | HOW SELLERS WIN IN REAL ESTATE!',
+                       'channel': 'Pace Morby',
+                       'author': 'Pace Morby',
+                       'text': 'All sellers are offering 350. I paid 600.',
+                       'tip': 'All sellers are offering 350. I paid 600.',
+                       'timestamp': 544,
+                       'timestamp_seconds': 544,
+                       'timestamp_label': '[00:09:04]',
+                       'url': 'https://www.youtube.com/watch?v=Teh6C2LGk8g&t=544s',
+                       'markdown': '[00:09:04](https://www.youtube.com/watch?v=Teh6C2LGk8g&t=544s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_xN91ltYUa0',
+                       'title': 'How Owner Financing Works in Texas: Step-by-Step (Buyer & Seller Guide)',
+                       'channel': 'Greg Schwartz | Investing in Bryan-College Station',
+                       'author': 'Greg Schwartz | Investing in Bryan-College Station',
+                       'text': 'Hire a local attorney.',
+                       'tip': 'Hire a local attorney.',
+                       'timestamp': 426,
+                       'timestamp_seconds': 426,
+                       'timestamp_label': '[00:07:06]',
+                       'url': 'https://www.youtube.com/watch?v=_xN91ltYUa0&t=426s',
+                       'markdown': '[00:07:06](https://www.youtube.com/watch?v=_xN91ltYUa0&t=426s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MeNrueZIYeE',
+                       'title': 'How To Buy Houses Using Seller Finance - Masterclass Video 3 w/ Pace '
+                                'Morby',
+                       'channel': 'Flipping Mastery TV',
+                       'author': 'Flipping Mastery TV',
+                       'text': 'never send out an offer to a seller in seller finance in my world I want '
+                               'to be the person that says no.',
+                       'tip': 'never send out an offer to a seller in seller finance in my world I want to '
+                              'be the person that says no.',
+                       'timestamp': 752,
+                       'timestamp_seconds': 752,
+                       'timestamp_label': '[00:12:32]',
+                       'url': 'https://www.youtube.com/watch?v=MeNrueZIYeE&t=752s',
+                       'markdown': '[00:12:32](https://www.youtube.com/watch?v=MeNrueZIYeE&t=752s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8VNf8TfmufA',
+                       'title': 'Know THIS Before Selling on Seller Finance!',
+                       'channel': 'Pace Morby',
+                       'author': 'Pace Morby',
+                       'text': '50% of all Real Estate Investors that buy real estate will then throw '
+                               'those houses back into the marketplace and go this is not a business I '
+                               'want to be in.',
+                       'tip': '50% of all Real Estate Investors that buy real estate will then throw those '
+                              'houses back into the marketplace and go this is not a business I want to be '
+                              'in.',
+                       'timestamp': 892,
+                       'timestamp_seconds': 892,
+                       'timestamp_label': '[00:14:52]',
+                       'url': 'https://www.youtube.com/watch?v=8VNf8TfmufA&t=892s',
+                       'markdown': '[00:14:52](https://www.youtube.com/watch?v=8VNf8TfmufA&t=892s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'o3cjfzx5Ykk',
+                       'title': 'Why Seller Finance A Vehicle? | WE BOTH WON',
+                       'channel': 'Pace Morby',
+                       'author': 'Pace Morby',
+                       'text': 'Grant and I worked out a deal towards zero dollars down I take over the '
+                               'payments but we had to structure as a lease option.',
+                       'tip': 'Grant and I worked out a deal towards zero dollars down I take over the '
+                              'payments but we had to structure as a lease option.',
+                       'timestamp': 717,
+                       'timestamp_seconds': 717,
+                       'timestamp_label': '[00:11:57]',
+                       'url': 'https://www.youtube.com/watch?v=o3cjfzx5Ykk&t=717s',
+                       'markdown': '[00:11:57](https://www.youtube.com/watch?v=o3cjfzx5Ykk&t=717s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

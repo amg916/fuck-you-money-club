@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-retained-residual-workflow",
-    "diag-02-merchant-cohort-conversion",
-    "diag-03-base-owner-profit-waterfall",
-    "diag-04-retained-payment-rail-yields",
-    "diag-05-statutory-and-risk-preflight",
-    "diag-06-four-to-six-person-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-first-thirty-days"
+    "diag-01-merchant-boarding-flow",
+    "diag-02-residual-book-funnel",
+    "diag-03-level-3-rate-waterfall",
+    "diag-04-effective-rate-yardsticks",
+    "diag-05-fee-pass-through-gates",
+    "diag-06-atm-location-deal-map",
+    "diag-07-cash-discount-ticket-math",
+    "diag-08-atm-hardware-launch-roadmap"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-retained-residual-workflow",
-    "diag-02-merchant-cohort-conversion",
-    "diag-03-base-owner-profit-waterfall",
-    "diag-04-retained-payment-rail-yields",
-    "diag-05-statutory-and-risk-preflight",
-    "diag-06-four-to-six-person-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-first-thirty-days"
+    "diag-01-merchant-boarding-flow",
+    "diag-02-residual-book-funnel",
+    "diag-03-level-3-rate-waterfall",
+    "diag-04-effective-rate-yardsticks",
+    "diag-05-fee-pass-through-gates",
+    "diag-06-atm-location-deal-map",
+    "diag-07-cash-discount-ticket-math",
+    "diag-08-atm-hardware-launch-roadmap"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-retained-residual-workflow": {
+    "diag-01-merchant-boarding-flow": {
       "concept_a": {
-        "graphic_id": "diag-01-retained-residual-workflow",
+        "graphic_id": "diag-01-merchant-boarding-flow",
         "graphic_type": "diagram",
-        "label": "From Signed Merchant to Audited Residual",
+        "label": "Five Steps to Board a Merchant Without Leaving Money on the Table",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-retained-residual-workflow",
+        "graphic_id": "diag-01-merchant-boarding-flow",
         "graphic_type": "diagram",
-        "label": "From Signed Merchant to Audited Residual",
+        "label": "Five Steps to Board a Merchant Without Leaving Money on the Table",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-retained-residual-workflow",
+        "graphic_id": "diag-01-merchant-boarding-flow",
         "graphic_type": "diagram",
-        "label": "From Signed Merchant to Audited Residual",
+        "label": "Five Steps to Board a Merchant Without Leaving Money on the Table",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-merchant-cohort-conversion": {
+    "diag-02-residual-book-funnel": {
       "concept_a": {
-        "graphic_id": "diag-02-merchant-cohort-conversion",
+        "graphic_id": "diag-02-residual-book-funnel",
         "graphic_type": "diagram",
-        "label": "A Nested Merchant Acquisition Cohort",
+        "label": "From One Account to a $10,000 Monthly Residual Book",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-merchant-cohort-conversion",
+        "graphic_id": "diag-02-residual-book-funnel",
         "graphic_type": "diagram",
-        "label": "A Nested Merchant Acquisition Cohort",
+        "label": "From One Account to a $10,000 Monthly Residual Book",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-merchant-cohort-conversion",
+        "graphic_id": "diag-02-residual-book-funnel",
         "graphic_type": "diagram",
-        "label": "A Nested Merchant Acquisition Cohort",
+        "label": "From One Account to a $10,000 Monthly Residual Book",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-owner-profit-waterfall": {
+    "diag-03-level-3-rate-waterfall": {
       "concept_a": {
-        "graphic_id": "diag-03-base-owner-profit-waterfall",
+        "graphic_id": "diag-03-level-3-rate-waterfall",
         "graphic_type": "diagram",
-        "label": "Base Case: $445,000 Revenue to $189,125 Owner Profit",
+        "label": "How Enhanced Line Items Pull a Commercial Card Rate Down",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-owner-profit-waterfall",
+        "graphic_id": "diag-03-level-3-rate-waterfall",
         "graphic_type": "diagram",
-        "label": "Base Case: $445,000 Revenue to $189,125 Owner Profit",
+        "label": "How Enhanced Line Items Pull a Commercial Card Rate Down",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-owner-profit-waterfall",
+        "graphic_id": "diag-03-level-3-rate-waterfall",
         "graphic_type": "diagram",
-        "label": "Base Case: $445,000 Revenue to $189,125 Owner Profit",
+        "label": "How Enhanced Line Items Pull a Commercial Card Rate Down",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-retained-payment-rail-yields": {
+    "diag-04-effective-rate-yardsticks": {
       "concept_a": {
-        "graphic_id": "diag-04-retained-payment-rail-yields",
+        "graphic_id": "diag-04-effective-rate-yardsticks",
         "graphic_type": "diagram",
-        "label": "Retained Yield by Merchant Segment and Payment Rail",
+        "label": "Effective Rate Yardsticks for Reading Any Statement",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-retained-payment-rail-yields",
+        "graphic_id": "diag-04-effective-rate-yardsticks",
         "graphic_type": "diagram",
-        "label": "Retained Yield by Merchant Segment and Payment Rail",
+        "label": "Effective Rate Yardsticks for Reading Any Statement",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-retained-payment-rail-yields",
+        "graphic_id": "diag-04-effective-rate-yardsticks",
         "graphic_type": "diagram",
-        "label": "Retained Yield by Merchant Segment and Payment Rail",
+        "label": "Effective Rate Yardsticks for Reading Any Statement",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-statutory-and-risk-preflight": {
+    "diag-05-fee-pass-through-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-statutory-and-risk-preflight",
+        "graphic_id": "diag-05-fee-pass-through-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Account Activation",
+        "label": "Four Gates Before Passing Card Fees to Customers",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-statutory-and-risk-preflight",
+        "graphic_id": "diag-05-fee-pass-through-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Account Activation",
+        "label": "Four Gates Before Passing Card Fees to Customers",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-statutory-and-risk-preflight",
+        "graphic_id": "diag-05-fee-pass-through-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Account Activation",
+        "label": "Four Gates Before Passing Card Fees to Customers",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-four-to-six-person-pod": {
+    "diag-06-atm-location-deal-map": {
       "concept_a": {
-        "graphic_id": "diag-06-four-to-six-person-pod",
+        "graphic_id": "diag-06-atm-location-deal-map",
         "graphic_type": "diagram",
-        "label": "One Accountable Owner, Three Contract Specialists",
+        "label": "Who the ATM Operator Negotiates With",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-four-to-six-person-pod",
+        "graphic_id": "diag-06-atm-location-deal-map",
         "graphic_type": "diagram",
-        "label": "One Accountable Owner, Three Contract Specialists",
+        "label": "Who the ATM Operator Negotiates With",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-four-to-six-person-pod",
+        "graphic_id": "diag-06-atm-location-deal-map",
         "graphic_type": "diagram",
-        "label": "One Accountable Owner, Three Contract Specialists",
+        "label": "Who the ATM Operator Negotiates With",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-allocation": {
+    "diag-07-cash-discount-ticket-math": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-cash-discount-ticket-math",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Without Counting Vault Cash",
+        "label": "Average Ticket Decides Whether a Service Fee Stays Above Water",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-cash-discount-ticket-math",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Without Counting Vault Cash",
+        "label": "Average Ticket Decides Whether a Service Fee Stays Above Water",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-cash-discount-ticket-math",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Without Counting Vault Cash",
+        "label": "Average Ticket Decides Whether a Service Fee Stays Above Water",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-first-thirty-days": {
+    "diag-08-atm-hardware-launch-roadmap": {
       "concept_a": {
-        "graphic_id": "diag-08-first-thirty-days",
+        "graphic_id": "diag-08-atm-hardware-launch-roadmap",
         "graphic_type": "diagram",
-        "label": "The First 30 Days: Build Evidence Before Volume",
+        "label": "Four-Week Hardware and Vault Cash Launch",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-first-thirty-days",
+        "graphic_id": "diag-08-atm-hardware-launch-roadmap",
         "graphic_type": "diagram",
-        "label": "The First 30 Days: Build Evidence Before Volume",
+        "label": "Four-Week Hardware and Vault Cash Launch",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-first-thirty-days",
+        "graphic_id": "diag-08-atm-hardware-launch-roadmap",
         "graphic_type": "diagram",
-        "label": "The First 30 Days: Build Evidence Before Volume",
+        "label": "Four-Week Hardware and Vault Cash Launch",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T23:07:52Z"
 }

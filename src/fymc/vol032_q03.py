@@ -1,715 +1,858 @@
 from __future__ import annotations
 
-CHAPTER_3 = {
-    "id": "Q3",
-    "chapter_id": "Q3",
-    "chapter_number": 3,
-    "question_number": 3,
-    "slug": "iso-atm-unit-economics-margin-waterfall-working-capital",
-    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for iso payment processing & atm arbitrage?",
-    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
-    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
-    "subtitle": "Schedule A Residuals, Commercial VCC Rebates, Reg E ATM Fees, ASC 606 Presentation & Payout-Lock Liquidity",
-    "layout_template": "financial_breakdown",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #32, ISO Payment Processing & ATM Arbitrage, holds Rank #02 of 36 "
-        "with a 94/100 Money-to-Manpower Score. The volume's 12 mapped plays share one "
-        "economic discipline: count retained compensation, never merchant settlement volume "
-        "or ATM vault cash. Formula v2.0 fixes annual owner profit at $27,000 Conservative, "
-        "$189,125 Base, and $440,000 Scaled. This chapter reconciles those outcomes through "
-        "explicit partner splits, contractor labor, acquisition costs, reversal allowances, "
-        "and collection delays. It develops the commercial VCC rebate play alongside "
-        "Schedule A residuals, gateway markups, and exclusive venue ATM economics. Separate "
-        "earned revenue from accessible cash, price sponsor-controlled payout locks, and "
-        "fund physical currency independently. Expand only after cohort statements, bank "
-        "receipts, and merchant retention support the next acquisition dollar."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$90,000",
-            "context": "Annual net retained residual, gateway, rebate, and surcharge revenue",
-            "note": "30% margin; $27,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$445,000",
-            "context": "Annual net retained residual, gateway, rebate, and surcharge revenue",
-            "note": "42.5% margin; $189,125 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$800,000",
-            "context": "Annual net retained residual, gateway, rebate, and surcharge revenue",
-            "note": "55% margin; $440,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Establish the retained-revenue denominator before valuing a cohort",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Start with three ledgers: merchant or buyer transaction volume, contractual "
-                    "compensation before downstream participation, and revenue actually retained "
-                    "by the operator. Only the third ledger supplies the scorecard denominator. "
-                    "A merchant processing $75,000 monthly does not create $75,000 of ISO "
-                    "revenue; an ATM loaded with $5,000 does not generate $5,000 of sales. "
-                    "For this illustrative bridge, Conservative contractual commissions total "
-                    "$120,000 with retained_share of 75%, while Base commissions total "
-                    "$556,250 with retained_share of 80%, and Scaled commissions total "
-                    "$1,000,000 with retained_share of 80%. Partner allocations therefore "
-                    "remove $30,000, $111,250, and $200,000 before the canonical revenue "
-                    "lines of $90,000, $445,000, and $800,000. These assumed commission "
-                    "amounts explain the supplied endpoints; they are not additional "
-                    "scorecard observations. Apply ASC 606 principal-versus-agent analysis "
-                    "to each specified service rather than assuming every cash collection "
-                    "belongs on a gross revenue line. Document who controls the service "
-                    "before transfer, who sets compensation, and who bears performance "
-                    "obligations. If a contract requires different presentation, maintain "
-                    "a reconciliation to the scorecard's retained economic basis instead "
-                    "of changing its profit denominator. Keep underlying card volume "
-                    "available for yield analysis, but never add it to operator revenue."
-                ),
-                (
-                    "Build the Base cohort from four independently auditable retained-income "
-                    "streams. First, 175 active merchants producing $150 monthly residual "
-                    "each contribute $315,000 annually. Second, 100 gateway subscriptions "
-                    "retaining $50 monthly contribute $60,000. Third, ten venue ATMs each "
-                    "complete 1,000 annual surcharge-bearing withdrawals; a $3.50 surcharge "
-                    "less $1.30 of contractual venue and processing participation retains "
-                    "$2.20 per withdrawal, or $22,000 annually. Fourth, the commercial VCC "
-                    "example below contributes $48,000. Together these equal exactly "
-                    "$445,000 before operating deductions. Gateway subscriptions may "
-                    "belong to the same merchants, so do not count them as another "
-                    "100 acquired merchant relationships. Each stream already reflects "
-                    "its applicable upstream or partner allocation; never deduct the "
-                    "illustrative 20% aggregate participation again. Map Schedule A "
-                    "authorization fees, monthly minimums, PCI program charges, gateway "
-                    "costs, and residual eligibility to statement fields. IRIS CRM should "
-                    "carry merchant identifiers, effective pricing dates, residual ownership, "
-                    "and rep participation alongside the signed agreement. Compare predicted "
-                    "residuals with processor statements monthly, preserving both transaction "
-                    "counts and dollar bases. A pricing change that lifts merchant charges "
-                    "without lifting retained residuals is not a successful margin expansion "
-                    "for the ISO owner."
-                ),
-                (
-                    "Keep the twelve-play portfolio reference separate from the mechanics "
-                    "actually quantified here: the supplied named play is "
-                    "b2b_commercial_vcc_interchange_rebate_arbitrage. Its proposed "
-                    "140–195 basis-point commercial rebate range is a contract-dependent "
-                    "economic input, not an automatic entitlement to network interchange. "
-                    "Illustrate $10 million of enrolled annual AP invoices with 40% "
-                    "vendor card acceptance, leaving $4 million of qualifying VCC "
-                    "settlements. At 160 basis points, program compensation is $64,000; "
-                    "a 75% operator participation retains $48,000 before delivery expenses. "
-                    "At 140 and 195 basis points, that same accepted volume retains "
-                    "$42,000 and $58,500 respectively. Buyer invoices remain third-party "
-                    "volume, not operator sales. Automatically inject validated Level-3 "
-                    "invoice and line-item fields when supported by the issuer and "
-                    "processor; metadata alone cannot ensure a particular qualification "
-                    "or rebate. For card-averse suppliers, offer a separately accepted "
-                    "1.5%–2% early-pay ACH discount against agreed ten-day payment terms, "
-                    "with the discount beneficiary explicitly contracted. A $10,000 invoice "
-                    "discount produces $150–$200 of supplier concession, not necessarily "
-                    "operator compensation. Focus on fragmented long-tail vendors whose "
-                    "acceptance can be documented, and revert declined invoices to "
-                    "authorized ACH without counting them toward VCC yield."
-                ),
-            ],
-            "table": {
-                "caption": "Retained Revenue, Schedule A, ATM, and Commercial VCC Measurement Matrix",
-                "headers": [
-                    "Revenue measurement or operating rail",
-                    "Concrete cohort calculation and economic denominator",
-                    "Evidence required before recognizing the contribution",
-                    "Failure response preserving cash and relationships",
-                ],
-                "rows": [
-                    [
-                        "Merchant settlement volume remains outside operator revenue",
-                        "$75,000 monthly merchant card volume measures throughput only",
-                        "Processor settlement reports identify merchant funds separately",
-                        "Reclassify settlement balances before calculating any operator margin",
-                    ],
-                    [
-                        "ISO residual cohort uses merchant-level retained yield",
-                        "175 merchants times $150 monthly equals $315,000 annually",
-                        "Signed Schedule A reconciles to individual residual statements",
-                        "Challenge unexpected minimums before offering merchant rate concessions",
-                    ],
-                    [
-                        "Gateway subscription cohort counts retained markup once",
-                        "100 subscriptions times $50 monthly equals $60,000 annually",
-                        "Gateway invoices and merchant contracts substantiate retained markup",
-                        "Remove inactive subscriptions and renegotiate unnecessary platform seats",
-                    ],
-                    [
-                        "ATM surcharge cohort excludes dispensed physical currency",
-                        "Ten machines times 1,000 withdrawals times $2.20 equals $22,000",
-                        "Terminal journals reconcile surcharge collections and partner participation",
-                        "Relocate weak terminals only within signed venue permissions",
-                    ],
-                    [
-                        "Commercial VCC rebates require qualifying accepted invoices",
-                        "$4 million times 1.60% times 75% equals $48,000",
-                        "Issuer program statements verify eligibility and operator participation",
-                        "Route declining suppliers to authorized ACH settlement instead",
-                    ],
-                    [
-                        "Early-pay ACH discounts follow separately negotiated allocation",
-                        "$10,000 invoice times 1.5% creates $150 supplier concession",
-                        "Supplier acceptance identifies discount recipient and payment deadline",
-                        "Use ordinary payment terms when supplier economics deteriorate",
-                    ],
-                    [
-                        "Aggregate retained share bridges compensation to scorecard revenue",
-                        "$556,250 contractual commissions times 80% equals $445,000 retained",
-                        "Participation schedules explain every amount excluded before revenue",
-                        "Prevent downstream partner deductions from appearing twice economically",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Audit the fields that quietly compress residuals",
-                "body": (
-                    "Negotiate auditable compensation definitions and preserve source-level "
-                    "evidence before buying equipment or acquiring another merchant cohort."
-                ),
-                "items": [
-                    "Export IRIS CRM residuals by merchant identifier and effective Schedule A date; flag any fee appearing after a processor pricing amendment.",
-                    "Separate ATM surcharge participation from vault-cash rent; a venue split and a currency funding charge belong to different economic layers.",
-                    "Obtain the issuer's VCC rebate eligibility schedule, exclusions, payout dates, and reversal provisions before quoting an AP platform as free.",
-                    "Track gateway subscriptions within existing merchant cohorts so subscription expansion cannot disguise duplicate acquisition counts or worsening merchant retention.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Reconcile every deduction to the three canonical profit cases",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use the waterfall below as an explicit annual operating budget, not "
-                    "as an assertion that every processor offers these prices. The "
-                    "Conservative retained-revenue line is $90,000 and deductions total "
-                    "$63,000, leaving $27,000. Base retains $445,000 and deducts "
-                    "$255,875, leaving $189,125. Scaled retains $800,000 and deducts "
-                    "$360,000, leaving $440,000. Those results reproduce 30%, 42.5%, "
-                    "and 55% margins exactly. Delivery labor is $24,000, $96,000, "
-                    "and $144,000 respectively; acquisition spending is $12,000, "
-                    "$60,000, and $80,000. Software and monitoring consume $6,000, "
-                    "$18,000, and $30,000, while field operations consume $9,000, "
-                    "$36,000, and $48,000. Expected scrub and reversal losses are "
-                    "$6,000, $22,250, and $32,000, with administration and insurance "
-                    "using $6,000, $23,625, and $26,000. Treat retained_share as "
-                    "an upstream economic adjustment, not an operating expense repeated "
-                    "below revenue. Actual books may classify particular reversals as "
-                    "contra-revenue rather than expense; the management bridge preserves "
-                    "identical net contribution. Close each cohort with separate columns "
-                    "for earned compensation, contractual participation, expected losses, "
-                    "cash paid, and ending receivables. This separation prevents "
-                    "attractive accounting margins from concealing unfunded settlement "
-                    "and collection obligations during growth."
-                ),
-                (
-                    "Tie headcount to deliverables rather than treating contractors as "
-                    "free capacity. Conservative uses one full-time owner and three "
-                    "contractors sharing $24,000 annually across boarding, reconciliation, "
-                    "and field support. Base keeps the same headcount but budgets "
-                    "$96,000 of contractor delivery, equivalent to 1,600 aggregate "
-                    "hours at $60 per hour. Scaled uses two full-time people and "
-                    "four contractors: one owner, one employee with $72,000 loaded "
-                    "annual cost, and contractors totaling another $72,000. Owner "
-                    "profit is the model's residual available to the owner, not "
-                    "profit remaining after an additional assumed owner salary. Any "
-                    "replacement-manager salary must reduce that residual explicitly. "
-                    "At Base, illustrative acquisition spending of $60,000 for 60 "
-                    "new merchant relationships implies $1,000 CAC, but only if "
-                    "that budget actually belongs to merchant acquisition; allocate "
-                    "ATM and AP prospecting separately when incurred. A $150 monthly "
-                    "merchant residual with $30 incremental servicing cost supplies "
-                    "$120 monthly contribution before fixed overhead and modeled "
-                    "losses, producing an 8.33-month simple CAC payback. One lost "
-                    "merchant after month six contributes only $720 against "
-                    "$1,000 CAC before other deductions. Reward retained, collected "
-                    "contribution rather than applications submitted or terminals shipped."
-                ),
-                (
-                    "Scrub allowances must follow the actual contract's loss allocation. "
-                    "The illustrative allowance equals 6.67% of Conservative revenue, "
-                    "5% of Base revenue, and 4% of Scaled revenue; the decline "
-                    "assumes cleaner cohorts and better residual auditing, not automatic "
-                    "improvement with size. Track commission clawbacks, invalid transaction "
-                    "rebates, merchant closures, ATM journal discrepancies, and sponsor "
-                    "offsets separately. A merchant's chargeback principal is not "
-                    "automatically an ISO loss; recognize exposure only where the "
-                    "agreement transfers liability or makes residuals available for "
-                    "offset. Likewise, a refundable sponsor hold is restricted cash "
-                    "or a receivable restriction, not immediately a loss expense. "
-                    "Avoid deducting both the allowance and every funded reserve "
-                    "deposit from profit. The supplied $1,500–$10,000 monthly operating "
-                    "range should not be presented as the all-in ceiling for these "
-                    "expanded budgets. Software, field operations, and administration "
-                    "alone average $1,750 Conservative, $6,468.75 Base, and $8,666.67 "
-                    "Scaled monthly; labor, CAC, and losses remain additional. "
-                    "Verifi RDR and Ethoca can reduce eligible dispute handling, "
-                    "but service fees and automatically refunded transactions still "
-                    "affect contribution. Review thirty-, sixty-, and ninety-day "
-                    "cohort loss emergence before reducing allowances or distributing "
-                    "cash previously reserved against adverse adjustments."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 Annual Gross-to-Net Bridge With Explicit Illustrative Cost Allocation",
-                "headers": [
-                    "Annual waterfall line and treatment",
-                    "Conservative case with one full-time owner",
-                    "Base case with one full-time owner",
-                    "Scaled case with two full-time people",
-                ],
-                "rows": [
-                    [
-                        "Contractual compensation before assumed upstream partner participation",
-                        "$120,000 annual commissions before contractual downstream participation",
-                        "$556,250 annual commissions before contractual downstream participation",
-                        "$1,000,000 annual commissions before contractual downstream participation",
-                    ],
-                    [
-                        "Partner participation excluded before retained operator revenue",
-                        "$30,000 allocated upstream; operator retained share equals 75%",
-                        "$111,250 allocated upstream; operator retained share equals 80%",
-                        "$200,000 allocated upstream; operator retained share equals 80%",
-                    ],
-                    [
-                        "Canonical retained revenue excludes settlement and vault currency",
-                        "$90,000 annual retained revenue supplies the margin denominator",
-                        "$445,000 annual retained revenue supplies the margin denominator",
-                        "$800,000 annual retained revenue supplies the margin denominator",
-                    ],
-                    [
-                        "Delivery labor includes paid contractor and employee capacity",
-                        "$24,000 annually funds three contractors supporting the owner",
-                        "$96,000 annually funds three contractors supporting the owner",
-                        "$144,000 annually funds one employee and four contractors",
-                    ],
-                    [
-                        "Acquisition spending covers attributable prospecting and onboarding costs",
-                        "$12,000 annual acquisition budget is expensed in this model",
-                        "$60,000 annual acquisition budget is expensed in this model",
-                        "$80,000 annual acquisition budget is expensed in this model",
-                    ],
-                    [
-                        "Software and monitoring support boarding and residual reconciliation",
-                        "$6,000 annually funds CRM, monitoring, and reconciliation tooling",
-                        "$18,000 annually funds CRM, monitoring, and reconciliation tooling",
-                        "$30,000 annually funds CRM, monitoring, and reconciliation tooling",
-                    ],
-                    [
-                        "Field operations cover maintenance and contracted physical servicing",
-                        "$9,000 annually funds ATM servicing and operational support",
-                        "$36,000 annually funds ATM servicing and operational support",
-                        "$48,000 annually funds ATM servicing and operational support",
-                    ],
-                    [
-                        "Scrub and reversal allowance captures expected economic losses",
-                        "$6,000 expected losses equal 6.67% of retained revenue",
-                        "$22,250 expected losses equal 5% of retained revenue",
-                        "$32,000 expected losses equal 4% of retained revenue",
-                    ],
-                    [
-                        "Administration and insurance complete the modeled operating deductions",
-                        "$6,000 annually funds administration, insurance, and bookkeeping support",
-                        "$23,625 annually funds administration, insurance, and bookkeeping support",
-                        "$26,000 annually funds administration, insurance, and bookkeeping support",
-                    ],
-                    [
-                        "Total operating deductions exclude previously removed partner participation",
-                        "$63,000 total deductions reconcile all six operating categories",
-                        "$255,875 total deductions reconcile all six operating categories",
-                        "$360,000 total deductions reconcile all six operating categories",
-                    ],
-                    [
-                        "Annual owner net profit matches the canonical scorecard",
-                        "$27,000 owner profit equals exactly 30% retained-revenue margin",
-                        "$189,125 owner profit equals exactly 42.5% retained-revenue margin",
-                        "$440,000 owner profit equals exactly 55% retained-revenue margin",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Finance payout delays without borrowing merchant or vault funds",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Model collection timing from the economic earning date, not the "
-                    "date a salesperson expects payment. Assume a 45-day effective "
-                    "DSO measured from earned residual revenue, incorporating statement "
-                    "preparation and the scheduled payout interval. Add a separate "
-                    "15-day stress lock only when it is incremental to that "
-                    "45-day assumption. Using twelve thirty-day months, daily revenue "
-                    "equals $250 Conservative, $1,236.11 Base, and $2,222.22 Scaled. "
-                    "The 45-day receivable balances are therefore $11,250, $55,625, "
-                    "and $100,000; the extra lock adds $3,750, $18,541.67, and "
-                    "$33,333.33. Sixty-day total receivables become $15,000, $74,166.67, "
-                    "and $133,333.33. These are accounting exposures, not automatically "
-                    "the cash required to survive the wait. A residual already "
-                    "accrued but subject to a contractual setoff may be less "
-                    "financeable than an ordinary trade invoice. Review assignment "
-                    "restrictions, termination rights, personal recourse, and sponsor "
-                    "cross-collateralization before pledging receivables. Keep an aging "
-                    "schedule by processor, merchant cohort, and compensation type. "
-                    "Commercial VCC rebates may follow quarterly qualification cycles "
-                    "while ATM surcharges settle more frequently, so a blended "
-                    "DSO is a planning shortcut that must reconcile to the "
-                    "actual dated receipt schedule before committing acquisition spending."
-                ),
-                (
-                    "Calculate the operating bridge from cash outflows rather than "
-                    "financing the entire receivable balance by reflex. Excluding "
-                    "expected loss allowances, annual cash operating expenses are "
-                    "$57,000 Conservative, $233,625 Base, and $328,000 Scaled. "
-                    "Assuming even spending, sixty days requires $9,500, $38,937.50, "
-                    "and $54,666.67. Add three months of modeled scrub losses "
-                    "as an accessible liquidity buffer: $1,500, $5,562.50, and "
-                    "$8,000. The resulting minimum planning balances are $11,000, "
-                    "$44,500, and $62,666.67 before equipment purchases, taxes, "
-                    "debt service, unusual settlements, or vault currency. These "
-                    "buffers are cash earmarks, not additional profit deductions. "
-                    "If a processor requires a separate restricted reserve, add "
-                    "the incremental restriction unless the contract permits the "
-                    "same dollars to satisfy both needs. The $8,000–$45,000 "
-                    "startup range can support an asset-light entry, but its "
-                    "upper end barely covers the Base operating bridge and "
-                    "does not fund Scaled liquidity. Front-loaded CAC invalidates "
-                    "the even-spending shortcut: paying the full $60,000 Base "
-                    "acquisition budget immediately requires a dated cash forecast "
-                    "rather than another annual average. Release owner distributions "
-                    "only after the forecast includes payroll commitments, contractor "
-                    "invoices, processor offsets, and scheduled cash-loading requirements."
-                ),
-                (
-                    "Treat ATM vault currency as a separate circulating asset with "
-                    "its own replenishment calendar. Ten machines carrying $4,000 "
-                    "each tie up $40,000; a 25% replenishment buffer adds "
-                    "$10,000, creating a $50,000 currency requirement outside the "
-                    "operating bridge. At an illustrative 12% annual funding "
-                    "rate, financing that amount costs $6,000 annually, before "
-                    "delivery, insurance, and shrinkage. The canonical scenarios "
-                    "assume no separate incremental financing charge; adding this "
-                    "facility to Base without offsetting savings reduces owner "
-                    "profit from $189,125 to $183,125. Provider-owned vault cash "
-                    "reduces operator currency ownership but replaces it with "
-                    "contracted service charges and reconciliation obligations. Never "
-                    "use merchant settlement balances as a substitute facility. "
-                    "Configure remote telemetry around cash remaining, withdrawal "
-                    "velocity, communications failure, and weekend replenishment lead "
-                    "time; surcharge revenue disappears when a popular machine "
-                    "runs empty. Under 12 CFR 1005.16, an ATM operator charging "
-                    "a fee must provide the required notice before the consumer "
-                    "is committed and allow continuation only after the consumer "
-                    "elects to proceed. Record terminal disclosure configuration "
-                    "and reconciliation exceptions together, because a profitable "
-                    "withdrawal forecast is unusable when fees cannot be "
-                    "collected under the applicable operating requirements."
-                ),
-            ],
-            "table": {
-                "caption": "Collection Lag, Cash Bridge, Restricted Reserves, and Vault-Currency Separation",
-                "headers": [
-                    "Liquidity component and modeling assumption",
-                    "Conservative liquidity requirement or operating consequence",
-                    "Base liquidity requirement or operating consequence",
-                    "Scaled liquidity requirement or operating consequence",
-                ],
-                "rows": [
-                    [
-                        "Forty-five-day effective DSO includes ordinary payout processing",
-                        "$11,250 receivable exposure follows the stated earning-date convention",
-                        "$55,625 receivable exposure follows the stated earning-date convention",
-                        "$100,000 receivable exposure follows the stated earning-date convention",
-                    ],
-                    [
-                        "Additional fifteen-day payout lock extends the collection interval",
-                        "$3,750 additional receivables arise beyond ordinary collection timing",
-                        "$18,541.67 additional receivables arise beyond ordinary collection timing",
-                        "$33,333.33 additional receivables arise beyond ordinary collection timing",
-                    ],
-                    [
-                        "Sixty-day total receivables measure exposure rather than expenses",
-                        "$15,000 total receivables include ordinary lag and extra lock",
-                        "$74,166.67 total receivables include ordinary lag and extra lock",
-                        "$133,333.33 total receivables include ordinary lag and extra lock",
-                    ],
-                    [
-                        "Sixty-day cash operating bridge assumes evenly timed spending",
-                        "$9,500 supports cash expenses excluding modeled loss allowances",
-                        "$38,937.50 supports cash expenses excluding modeled loss allowances",
-                        "$54,666.67 supports cash expenses excluding modeled loss allowances",
-                    ],
-                    [
-                        "Three-month loss buffer remains accessible for adverse adjustments",
-                        "$1,500 liquidity earmark funds three months of modeled losses",
-                        "$5,562.50 liquidity earmark funds three months of modeled losses",
-                        "$8,000 liquidity earmark funds three months of modeled losses",
-                    ],
-                    [
-                        "Combined operating bridge excludes equipment and vault currency",
-                        "$11,000 planning balance combines expense bridge and loss buffer",
-                        "$44,500 planning balance combines expense bridge and loss buffer",
-                        "$62,666.67 planning balance combines expense bridge and loss buffer",
-                    ],
-                    [
-                        "Contract-specific restricted reserves require separate incremental funding analysis",
-                        "Add sponsor-required restricted deposits beyond the accessible operating buffer",
-                        "Add sponsor-required restricted deposits beyond the accessible operating buffer",
-                        "Add sponsor-required restricted deposits beyond the accessible operating buffer",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Construct the dated receivable ledger",
-                    "action": "Import processor statements and rebate schedules into a cohort-level earning and collection calendar.",
-                    "detail": "Record earning date, statement date, contractual payout date, actual receipt, contractual offsets, and the counterparty controlling each hold.",
-                },
-                {
-                    "step": 2,
-                    "title": "Separate operating and custodial balances",
-                    "action": "Reconcile operator cash, restricted reserves, merchant settlement references, and ATM vault currency independently.",
-                    "detail": "Use separate ledger accounts and appropriate bank arrangements; do not treat merchant funds or physical currency inventory as distributable profit.",
-                },
-                {
-                    "step": 3,
-                    "title": "Forecast thirteen weeks of cash movements",
-                    "action": "Schedule contractor invoices, acquisition payments, equipment purchases, currency replenishment, and expected residual receipts by week.",
-                    "detail": "Run the ordinary collection schedule and an additional fifteen-day payout lock, then identify the lowest unrestricted operating balance.",
-                },
-                {
-                    "step": 4,
-                    "title": "Set acquisition and distribution limits",
-                    "action": "Fund the next merchant cohort only after preserving the operating bridge and all separate restricted requirements.",
-                    "detail": "Document available facilities, borrowing costs, concentration limits, and the action required when a processor misses its expected payout date.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Stress contribution, concentration, and surcharge mechanics before scaling",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Stress the same canonical revenue base instead of constructing "
-                    "a more flattering replacement forecast. A 10% revenue loss "
-                    "with cash cost savings equal to 20% of lost revenue "
-                    "reduces profit by 8% of original revenue. Conservative "
-                    "therefore falls to $19,800, Base to $153,525, and Scaled "
-                    "to $376,000. An independent two-percentage-point increase "
-                    "in scrub losses costs $1,800, $8,900, and $16,000, "
-                    "leaving $25,200, $180,225, and $424,000. A separate "
-                    "thirty-day collection extension creates additional receivables "
-                    "of $7,500, $37,083.33, and $66,666.67. Financing those "
-                    "balances continuously at 12% annually costs $900, $4,450, "
-                    "and $8,000; the expense does not equal the receivable "
-                    "principal. Combining all three static shocks against original "
-                    "revenue produces profits of $17,100, $140,175, and $352,000. "
-                    "This additive convention is deliberately explicit; a dynamic "
-                    "forecast should recalculate losses and receivables after "
-                    "attrition instead. Do not assume full labor savings when "
-                    "a merchant leaves, because contractor retainers and employee "
-                    "payroll may persist. Use concentration reports to identify "
-                    "whether one processor, venue chain, or AP buyer can "
-                    "create several shocks simultaneously through a termination, "
-                    "reserve increase, or delayed qualification decision."
-                ),
-                (
-                    "Test price compression at the merchant and supplier level. "
-                    "A $20 monthly residual concession across the illustrative "
-                    "175-merchant Base cohort removes $42,000 of annual "
-                    "contribution before any cost response, reducing owner "
-                    "profit to $147,125. Avoid matching a competitor's headline "
-                    "rate until interchange categories, authorization counts, "
-                    "gateway charges, and monthly minimums reconcile to a "
-                    "comparable retained yield. In the VCC cohort, acceptance "
-                    "falling from 40% to 25% of $10 million enrolled "
-                    "invoices lowers retained revenue from $48,000 to $30,000 "
-                    "at the same 160-basis-point rebate and 75% participation. "
-                    "Base owner profit then becomes $171,125 with unchanged "
-                    "costs. Level-3 data can support correct qualification, "
-                    "but cannot compel supplier acceptance or eliminate issuer "
-                    "program exclusions. ACH fallback should preserve payment "
-                    "execution and buyer retention without booking an unearned "
-                    "rebate. High-risk MID orchestration means sponsor-approved "
-                    "routing for accurately disclosed businesses, not hiding "
-                    "merchant identity, product categories, or chargebacks. If "
-                    "underwriting declines a category, stop that proposed "
-                    "routing and seek a sponsor explicitly willing to "
-                    "underwrite it. Monitor chargebacks and MATCH-related "
-                    "contract provisions before acquisition incentives turn "
-                    "rejected or unstable merchants into expensive onboarding "
-                    "work with no durable residual."
-                ),
-                (
-                    "Translate surcharge requirements into pricing logic and test "
-                    "transactions, not decorative policy text. Visa and Mastercard "
-                    "rules distinguish credit-card surcharging from debit and "
-                    "prepaid acceptance; a debit card does not become "
-                    "surcharge-eligible merely because it is processed without "
-                    "a PIN. Regulation II, including 12 CFR 235.3 and "
-                    "235.7, governs covered debit interchange and routing "
-                    "restrictions; it does not establish the commercial "
-                    "credit-card rebate assumed in the VCC example. New "
-                    "York General Business Law Section 518 imposes "
-                    "surcharge price-display and amount requirements, while "
-                    "other states require separate location-specific review. "
-                    "Configure genuine dual pricing consistently across "
-                    "advertised prices, checkout, receipts, and merchant "
-                    "agreements rather than relabeling an added card "
-                    "fee after the sale. Sponsor-bank underwriting "
-                    "requirements and the business definitions in 31 "
-                    "CFR 1010.100 require activity-specific analysis; a "
-                    "limited withdrawal ATM operation and a broader "
-                    "funds-transfer service should not receive identical "
-                    "assumptions. Before expansion, reconcile retained "
-                    "revenue, demonstrate positive stressed contribution, "
-                    "verify payout access, and fund separate currency "
-                    "needs. If any condition fails, pause that "
-                    "cohort's acquisition spending while preserving "
-                    "existing merchant support and ordinary payment "
-                    "execution. The profitable operator protects both "
-                    "unit contribution and the timing of usable cash."
-                ),
-            ],
-            "table": {
-                "caption": "Static Sensitivity Tests Against Canonical Retained Revenue and Owner Profit",
-                "headers": [
-                    "Stress assumption and explicit calculation convention",
-                    "Conservative annual owner profit after stress",
-                    "Base annual owner profit after stress",
-                    "Scaled annual owner profit after stress",
-                ],
-                "rows": [
-                    [
-                        "Canonical baseline before any incremental sensitivity adjustment",
-                        "$27,000 baseline profit uses the supplied 30% margin",
-                        "$189,125 baseline profit uses the supplied 42.5% margin",
-                        "$440,000 baseline profit uses the supplied 55% margin",
-                    ],
-                    [
-                        "Ten-percent revenue decline saves twenty-percent of lost revenue",
-                        "$19,800 profit remains after $7,200 net contribution loss",
-                        "$153,525 profit remains after $35,600 net contribution loss",
-                        "$376,000 profit remains after $64,000 net contribution loss",
-                    ],
-                    [
-                        "Scrub losses increase two percentage points against original revenue",
-                        "$25,200 profit remains after $1,800 additional annual losses",
-                        "$180,225 profit remains after $8,900 additional annual losses",
-                        "$424,000 profit remains after $16,000 additional annual losses",
-                    ],
-                    [
-                        "Thirty-day extra receivables financed continuously at twelve-percent annually",
-                        "$26,100 profit remains after $900 annual financing expense",
-                        "$184,675 profit remains after $4,450 annual financing expense",
-                        "$432,000 profit remains after $8,000 annual financing expense",
-                    ],
-                    [
-                        "Three preceding shocks combine additively against original revenue",
-                        "$17,100 profit remains after $9,900 combined annual deductions",
-                        "$140,175 profit remains after $48,950 combined annual deductions",
-                        "$352,000 profit remains after $88,000 combined annual deductions",
-                    ],
-                    [
-                        "Delivery labor costs rise twenty-five percent without productivity improvement",
-                        "$21,000 profit remains after $6,000 additional labor expense",
-                        "$165,125 profit remains after $24,000 additional labor expense",
-                        "$404,000 profit remains after $36,000 additional labor expense",
-                    ],
-                    [
-                        "Acquisition budget increases fifty-percent without additional retained revenue",
-                        "$21,000 profit remains after $6,000 additional acquisition expense",
-                        "$159,125 profit remains after $30,000 additional acquisition expense",
-                        "$400,000 profit remains after $40,000 additional acquisition expense",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before funding the next cohort",
-                "body": (
-                    "Apply these checks to each processor relationship, venue portfolio, "
-                    "and AP buyer rather than relying on blended portfolio averages."
-                ),
-                "items": [
-                    "Reconcile signed Schedule A economics, partner participation, and collected residuals to the retained-revenue ledger without duplicate deductions.",
-                    "Confirm sponsor-approved merchant categories, credit-versus-debit pricing behavior, applicable state price displays, and ATM fee disclosure configuration.",
-                    "Demonstrate sufficient unrestricted liquidity for the dated payout-lock forecast, separate sponsor restrictions, and independently funded vault currency.",
-                    "Verify cohort CAC payback, reversal exposure, and supplier acceptance under the combined stress case before increasing acquisition commitments.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A residual is worth its retained contribution only when the payout arrives without consuming the cash needed to earn the next one.",
-    "diagram_id": "diag-03",
-    "action_checklist": [
-        "Build separate transaction-volume, contractual-compensation, and retained-revenue ledgers; reconcile them to $90,000, $445,000, and $800,000 scenario revenue.",
-        "Load the six operating deduction categories and reproduce $27,000, $189,125, and $440,000 annual owner profit without counting partner participation twice.",
-        "Audit IRIS CRM merchant cohorts against Schedule A effective dates, gateway subscriptions, ATM journals, and issuer VCC rebate statements.",
-        "Construct a thirteen-week cash forecast using actual payout dates, incremental locks, contractor commitments, front-loaded CAC, and accessible loss buffers.",
-        "Finance ATM vault currency separately and test telemetry alerts, replenishment lead times, fee disclosures, and surcharge receipt reconciliation.",
-        "Run attrition, reversal, financing, labor, and CAC sensitivities; restrict new cohort spending when stressed contribution or unrestricted liquidity fails the documented threshold.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "12 CFR 1005.16 — Disclosures at automated teller machines",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1005/section-1005.16",
-            "relevance": (
-                "Requires applicable ATM operator fee notice before commitment and "
-                "consumer election to continue, directly affecting collectible surcharge revenue."
-            ),
-        },
-        {
-            "title": "12 CFR 235.3 — Reasonable and proportional interchange transaction fees",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-II/subchapter-A/part-235/section-235.3",
-            "relevance": (
-                "Defines covered debit interchange limitations; debit economics must "
-                "not be substituted for commercial credit-card rebate assumptions."
-            ),
-        },
-        {
-            "title": "12 CFR 235.7 — Limitations on payment card restrictions",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-II/subchapter-A/part-235/section-235.7",
-            "relevance": (
-                "Addresses debit network exclusivity and routing restrictions, informing "
-                "processor configuration and merchant routing economics."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 1693o-2 — Reasonable fees and rules for payment card transactions",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1693o-2",
-            "relevance": (
-                "Provides the statutory debit interchange and payment-card restriction "
-                "framework underlying Regulation II."
-            ),
-        },
-        {
-            "title": "New York General Business Law Section 518 — Credit card surcharge",
-            "url": "https://www.nysenate.gov/legislation/laws/GBS/518",
-            "relevance": (
-                "Establishes New York credit-card surcharge price-display and amount "
-                "requirements that must be reflected in merchant pricing implementation."
-            ),
-        },
-        {
-            "title": "31 CFR 1010.100 — General definitions",
-            "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/section-1010.100",
-            "relevance": (
-                "Supplies Bank Secrecy Act business and activity definitions relevant "
-                "to distinguishing limited ATM operations from broader money-services activities."
-            ),
-        },
-    ],
-}
+CHAPTER_3 = {'id': 'Q3',
+ 'chapter_id': 'Q3',
+ 'chapter_number': 3,
+ 'question_number': 3,
+ 'slug': 'interchange-optimization-level-2-3-visa-cedp-debit-rulings',
+ 'question_prompt': 'How do you cut processing costs for B2B and debit-heavy merchants through Level 2/3 '
+                    'data, interchange optimization, and the post-Durbin debit rules?',
+ 'kicker': 'Q3 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Interchange Optimization: Level 2/3 Data, Visa CEDP, and Debit Rate Rulings',
+ 'subtitle': 'Level 2 and Level 3 card data; interchange audits; PayTrace optimization and Visa CEDP since '
+             'April 2026; auto-filled data risk; a $35,000/month case study; gateway feature settings; the '
+             "truck stop ruling against the Fed's debit cap; and whether processors pass Durbin savings "
+             'through',
+ 'layout_template': 'financial_analysis',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners agree interchange, not processor markup, is the margin pool: Sean '
+                      "Jones puts it at 75 to 90 percent of card fees, and VeraSave's Jeremy Layton says "
+                      'interchange drives 80 to 90 percent of delivered savings. Only business, corporate, '
+                      'purchasing and government cards benefit, via a Level 3-capable gateway. The street '
+                      'mechanics are statement-driven: flag standard and EIRF downgrades, fix batch '
+                      'timing, and pass real line items. Quoted Visa spreads run 75 to 120 basis points, '
+                      'and Jones reports one client saving $35,000 per month. Visa CEDP changed the rules: '
+                      'Level 2 programs retired in April 2026, a 0.05 percent fee now applies to '
+                      'enhanced-data transactions, and unverified merchants get no Level 3 rate. '
+                      "Practitioners split on whether Level 3 can be automatic, and the 8th Circuit's "
+                      'October 2026 debit ruling has not yet moved the 21 cent cap.',
+ 'key_metrics': [{'label': 'Interchange Share of Card Fees',
+                  'metric': 'Interchange Share of Card Fees',
+                  'value': '75 to 90 percent',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Share of total card fees that is interchange paid to the issuing bank rather '
+                             'than the processor, spread across more than 400 rates',
+                  'source': 'Sean Jones Revolution Payments ([vVvGM8Rlor8 @ 00:00:15])'},
+                 {'label': 'Visa Commercial Spread With Full Data',
+                  'metric': 'Visa Commercial Spread With Full Data',
+                  'value': '2.5 to 3 percent down to 1.75 percent, saving 75 to 120 bps',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Visa commercial card interchange without enhanced data versus with '
+                             'qualifying Level 3 data',
+                  'source': 'PayTrace ([5z1bCzU6Luw @ 00:20:53])'},
+                 {'label': 'Level 3 Client Savings',
+                  'metric': 'Level 3 Client Savings',
+                  'value': '$35,000 per month',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'E-commerce client moved from 2.95, 2.65, 3 and 2.8 rates to 1.45 on large '
+                             'tickets and about 1.9 at Level 2',
+                  'source': 'Sean Jones Revolution Payments ([EQEdEkxVIXU @ 00:01:14])'},
+                 {'label': 'CEDP Participation Fee',
+                  'metric': 'CEDP Participation Fee',
+                  'value': '0.05 percent',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Fee processors report on US commercial and small business transactions sent '
+                             'with Level 2 or Level 3 data, whether or not a lower rate applies',
+                  'source': 'TouchSuite ([mFDxx7C-_EA @ 00:00:02])'}],
+ 'sections': [{'section_number': 1,
+               'heading': 'The Practitioner Consensus: Interchange Is the Real Margin Pool',
+               'paragraphs': ['Every practitioner on this beat starts from the same arithmetic: the '
+                              'processor markup is the small number, and interchange is the big one. Sean '
+                              'Jones of Revolution Payments puts interchange at 75 to 90 percent of total '
+                              'card fees and stresses that this money flows back to the issuing bank, not '
+                              'the processor, across more than 400 distinct rates that shift by card type, '
+                              'processing method, ticket size and industry [vVvGM8Rlor8 @ 00:00:15]. '
+                              'Jeremy Layton of VeraSave lands in the same range, saying 80-plus percent '
+                              "of a merchant's fees are interchange, which is exactly why his shop aims at "
+                              'interchange rather than processor margin [KlaksrooZhw @ 00:07:56]. Jones '
+                              'adds the uncomfortable reason most merchants never hear about Level 3: '
+                              'processors earn nothing from interchange, and plenty of reps lack the '
+                              'knowledge because no certification is required to enter the field '
+                              '[QBl05xxHst0 @ 00:01:27]. James Sheppard of CCSalesPro frames the operator '
+                              'payoff bluntly. Facing a merchant who wanted lower costs, the choice was '
+                              'either to cut residuals and lose margin by lowering the pricing, or to find '
+                              'a way to cut the interchange costs, which cost the ISO nothing [AKvayIEwefA '
+                              '@ 00:33:36]. The consensus play is to attack the interchange category each '
+                              'transaction lands in while leaving the markup intact, so the merchant saves '
+                              'real money and the residual survives the conversation.',
+                              'The second point of agreement is who actually benefits. TouchSuite is '
+                              'explicit that only business, corporate, purchasing and government cards '
+                              'gain from enhanced data, and that consumer cards generally do not, so the '
+                              'opportunity has to be sized against business-card volume alone [60QTYm0QFZU '
+                              '@ 00:00:22]. Roger McNamara, appearing on CCSalesPro, sharpens the filter '
+                              'further: about 30 percent of B2B transactions still do not qualify, because '
+                              'cards carrying personal liability are excluded from the commercial programs '
+                              '[tG2nIK3Th4Q @ 00:10:18]. The baseline prerequisite is the right pipe. '
+                              'Jones warns that credit card terminals do not support Level 3 line-item '
+                              'detail, and that a merchant needs a Level 3-capable payment gateway, which '
+                              'a competent processor should be able to help select [QBl05xxHst0 @ '
+                              '00:02:31]. The final shared rule is that data has to be real and verified, '
+                              'not merely present in the authorization. PayTrace states it flatly under '
+                              "Visa's Commercial Enhanced Data Program: if you are not verified, you do "
+                              'not get Level 3 regardless of what you are trying to send in [5z1bCzU6Luw @ '
+                              '00:26:40]. That turns Level 3 eligibility into a status the merchant earns '
+                              'rather than a toggle the gateway flips. Across channels the model is '
+                              'identical: identify commercial volume, route it through a capable gateway, '
+                              "and feed it data that survives Visa's scrutiny.",
+                              'On the debit side, the consensus is about pass-through, not optimization '
+                              'tricks. Merchant Doctor warns that some processors will not pass Durbin '
+                              'savings to merchants and tells owners to look for qualified, mid-qualified '
+                              'and non-qualified buckets on their statements, then demand true '
+                              'interchange-plus pricing [Hx-TboJVDyo @ 00:02:58]. Sloan Bush of '
+                              'Interchange Plus Solutions, speaking with Practical Ecommerce, makes the '
+                              'same case with numbers: e-commerce debit interchange sat at 1.6 percent '
+                              'plus 15 cents while merchants were paying roughly 2.25 percent plus 30 '
+                              'cents, and tiered processors pocketed the difference [LjfmC9EATic @ '
+                              '00:06:24]. The legal ground is shifting but has not moved checkout yet. '
+                              'LawLens reports the 8th Circuit ruled unanimously for the truck stop Corner '
+                              "Post on October 26, 2026, knocking down the Fed's debit-card fee cap "
+                              '[M4iOZn_3wng @ 00:01:30], yet stresses that no new fee was set, the Fed has '
+                              'roughly 45 days to seek rehearing, and until the mandate issues, the 21 '
+                              'cent cap stands [M4iOZn_3wng @ 00:04:36]. The operator takeaway shared by '
+                              'all three is the same: debit savings only reach a merchant whose pricing is '
+                              'true interchange-plus, because a tiered statement can absorb a rate cut '
+                              'before the merchant ever sees it. Whatever the courts eventually set, the '
+                              'statement structure decides who keeps the money.'],
+               'table': {'caption': 'Where the practitioners agree on interchange optimization and debit '
+                                    'pass-through',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioners Report',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Interchange dominates the merchant fee stack',
+                                   'Interchange runs 75 to 90 percent of card fees and goes to issuing '
+                                   'banks',
+                                   'Audit interchange categories before arguing about processor markup '
+                                   'percentages with merchants',
+                                   'Sean Jones Revolution Payments ([vVvGM8Rlor8 @ 00:00:15])'],
+                                  ['Delivered savings come mostly from interchange',
+                                   'VeraSave says 80 to 90 percent of the savings it delivers come from '
+                                   'interchange',
+                                   'Target B2B merchants where interchange levers produce the bulk of '
+                                   'savings',
+                                   'CCSalesPro ([KlaksrooZhw @ 00:05:11])'],
+                                  ['Only commercial cards benefit from enhanced data',
+                                   'Business, corporate, purchasing and government cards benefit; consumer '
+                                   'cards generally do not',
+                                   'Size the opportunity against business-card volume, never against total '
+                                   'processing volume',
+                                   'TouchSuite ([60QTYm0QFZU @ 00:00:22])'],
+                                  ['Not every B2B card actually qualifies',
+                                   'Roughly 30 percent of B2B transactions miss out because '
+                                   'personal-liability cards are excluded',
+                                   'Discount projected savings for personal-liability cards hiding inside '
+                                   'the commercial volume',
+                                   'CCSalesPro ([tG2nIK3Th4Q @ 00:10:18])'],
+                                  ['The gateway is the hard prerequisite',
+                                   'Credit card terminals do not support Level 3 line-item detail on their '
+                                   'own',
+                                   'Move commercial volume onto a Level 3-capable gateway before '
+                                   'projecting any savings',
+                                   'Sean Jones Revolution Payments ([QBl05xxHst0 @ 00:02:31])'],
+                                  ['Verification now decides Level 3 eligibility',
+                                   'Unverified merchants get no Level 3 rate regardless of the data they '
+                                   'send in',
+                                   'Treat CEDP verification status as the first check on every commercial '
+                                   'deal',
+                                   'PayTrace ([5z1bCzU6Luw @ 00:26:40])'],
+                                  ['Debit savings require true interchange-plus pricing',
+                                   'Some processors keep Durbin savings; merchants must demand true '
+                                   'interchange-plus pricing instead',
+                                   'Convert tiered debit merchants to interchange-plus so rate cuts '
+                                   'actually reach them',
+                                   'Merchant Doctor ([Hx-TboJVDyo @ 00:02:58])']]}},
+              {'section_number': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The street workflow starts with the statement, not the pitch deck. '
+                              "TouchSuite's method is to find every line labeled business, corporate, "
+                              'purchasing or commercial, flag the standard and non-qualified lines, then '
+                              'compare a qualified line against a downgraded one to measure the rate gap '
+                              "[60QTYm0QFZU @ 00:00:40]. CCSalesPro's Payment Insights segment tells reps "
+                              'to hunt for standard or EIRF entries, with the standard downgrade rate '
+                              'sitting around 2.95 percent [mqEQN-xgAAk @ 00:03:33]. The same segment '
+                              'shows how cheap the fix can be: an auto shop doing over $100,000 a month '
+                              'had 80 percent of its transactions downgraded because it batched weekly to '
+                              'dodge a 25 cent batch fee. Settlement dates that did not match '
+                              'authorization dates triggered the downgrades, costing about $1,000 a month '
+                              'to save roughly $2, and the cure was simply daily auto-batching '
+                              '[mqEQN-xgAAk @ 00:04:03]. Eric Jenks of PayTrace puts the timing rule at '
+                              'transactions not settled within 48 hours falling to EIRF, though in the '
+                              'same breath gives a figure of 20 hours, so tighter is safer [AKvayIEwefA @ '
+                              '00:44:03]. Before any data integration, the operator move is to read the '
+                              'downgrade lines, check batch timing, and quote the gap in dollars the owner '
+                              'can see on their own statement.',
+                              'The numbers practitioners quote cluster around a one-point spread on Visa '
+                              'commercial cards. PayTrace walks Visa rates from 2.5 to 3 percent down to '
+                              '1.75 percent with full data, a saving of 75 to 120 basis points '
+                              '[5z1bCzU6Luw @ 00:20:53]. Jenks maps the Visa commercial standard rate of '
+                              '2.95 percent to Level 2 at 2.05 percent, a 90-point spread worth about $800 '
+                              'in that example, and deliberately skipped modeling a Level 3 move because '
+                              'those Visa cards are not assured to reach it [AKvayIEwefA @ 00:48:15]. '
+                              'Jones cites Visa commercial interchange at 1.9 versus 2.7 percent, an 80 '
+                              'basis point difference before markup, even while headlining the same video '
+                              "with cuts of 1 percent and more [QBl05xxHst0 @ 00:01:27]. Jones's client "
+                              'case is the loudest proof point: an e-commerce merchant whose commercial '
+                              'transactions landed at 2.95, 2.65, 3 and 2.8 moved to 1.45 on large tickets '
+                              'and about 1.9 at Level 2, for savings Jones reports as $35,000 per month '
+                              "[EQEdEkxVIXU @ 00:01:14]. Jenks's example is the conservative template for "
+                              'a proposal: model the Level 2 move first, treat Level 3 as upside, and '
+                              "multiply the spread against commercial volume only, never the merchant's "
+                              'full processing book.',
+                              "Visa's Commercial Enhanced Data Program rewired the mechanics. TouchSuite "
+                              'reports processors passing through a 0.05 percent participation fee on US '
+                              'commercial and small business transactions sent with Level 2 or Level 3 '
+                              'data, charged whether or not a lower rate applies, and says that since '
+                              'April 2026 sending data may cost more than sending none at all [mFDxx7C-_EA '
+                              '@ 00:00:02]. Verified merchants get Product 3 rates at settlement, while '
+                              'non-verified merchants pay the higher rate up front and see the difference '
+                              'credited back roughly 10 to 15 days later if the data passes [mFDxx7C-_EA @ '
+                              '00:00:56]. Layton explains what Visa is screening for: its AI flags '
+                              'repeated or generic values in the enhanced data fields, so recycled filler '
+                              "is exactly what gets caught [KlaksrooZhw @ 00:17:35]. PayTrace's answer is "
+                              'a product list tool holding five fields per product, a one-time setup it '
+                              'pegs at about half an hour, after which genuine line-item data rides along '
+                              'with each transaction [5z1bCzU6Luw @ 00:30:53]. The working sequence is '
+                              'consistent across these operators: build a real product catalog, pass clean '
+                              'line items long enough to become verified, then watch settlement and '
+                              'credit-backs to confirm Product 3 rates are actually landing rather than '
+                              'assuming the gateway handled it.'],
+               'table': {'caption': 'Street numbers, settings and tools operators work with on commercial '
+                                    'card deals',
+                         'headers': ['Mechanic',
+                                     'Number or Setting',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Visa commercial rate with full enhanced data',
+                                   '2.5 to 3 percent down to 1.75 percent, saving 75 to 120 bps',
+                                   'Multiply the spread against commercial card volume to size the '
+                                   'proposal',
+                                   'PayTrace ([5z1bCzU6Luw @ 00:20:53])'],
+                                  ['Mastercard data rate 3 benchmark',
+                                   'About 1.9 percent for Mastercard data rate 3 transactions',
+                                   'Quote Mastercard commercial savings separately from the Visa spread',
+                                   'PayTrace ([5z1bCzU6Luw @ 00:22:35])'],
+                                  ['Visa commercial standard moved to Level 2',
+                                   '2.95 percent to 2.05 percent, a 90-point spread worth about $800',
+                                   'Model the Level 2 move first and hold Level 3 as upside',
+                                   'CCSalesPro ([AKvayIEwefA @ 00:48:15])'],
+                                  ['Settlement timing before EIRF downgrade',
+                                   'Transactions not settled within 48 hours fall to EIRF',
+                                   'Set daily auto-batching so settlement matches the authorization date',
+                                   'CCSalesPro ([AKvayIEwefA @ 00:44:03])'],
+                                  ['CEDP participation fee on enhanced data',
+                                   '0.05 percent on US commercial and small business Level 2 or Level 3 '
+                                   'transactions',
+                                   'Stop sending Level 2 only where the fee buys no rate benefit',
+                                   'TouchSuite ([mFDxx7C-_EA @ 00:00:02])'],
+                                  ['Non-verified merchant credit-back window',
+                                   'Higher rate paid up front, difference credited back roughly 10 to 15 '
+                                   'days later',
+                                   'Track credit-backs on statements to confirm data is passing Visa '
+                                   'checks',
+                                   'TouchSuite ([mFDxx7C-_EA @ 00:00:56])'],
+                                  ['ISO Amp proposal tool subscription pricing',
+                                   '$195 a month for 3 users, $29 per additional user',
+                                   'Budget the tool against residual gained from interchange-optimized '
+                                   'proposals',
+                                   'CCSalesPro ([AKvayIEwefA @ 01:01:45])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'How Top Reps Open, Close and Keep Commercial Card Deals',
+                           'body': 'Field moves the speakers use to get statements, justify integration '
+                                   'work and lift residuals without cutting margin.',
+                           'items': ["Lead with ISO Amp's quick estimate to flash a number like 'over "
+                                     "$1,000 a year' before asking for the statement [CCSalesPro — "
+                                     'AKvayIEwefA @ 00:12:06].',
+                                     "Sell the integration as payroll math: three weeks of a developer's "
+                                     'time, about $8,000 in payroll, yields $70,000 a year in savings '
+                                     '[CCSalesPro — tG2nIK3Th4Q @ 00:18:33].',
+                                     'On a compliant surcharge program, adding a signature-debit per-item '
+                                     'fee lifts the residual from about $40 to $82 [CCSalesPro — '
+                                     'AKvayIEwefA @ 00:22:59].',
+                                     "Use the CEDP rollout as a retention hook; VeraSave's partner pitch "
+                                     "to existing merchants is 'fees just went up by 20%' [CCSalesPro — "
+                                     'KlaksrooZhw @ 00:30:08].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pull and Flag the Statement',
+                              'action': 'Isolate commercial card lines and every downgrade before '
+                                        'pitching.',
+                              'detail': 'Find lines labeled business, corporate, purchasing or commercial, '
+                                        'flag standard and non-qualified entries, and compare against a '
+                                        'qualified line to get the rate gap [TouchSuite — 60QTYm0QFZU @ '
+                                        '00:00:40].'},
+                             {'step': 2,
+                              'title': 'Confirm the Gateway',
+                              'action': "Verify the merchant's gateway can carry Level 2 and Level 3 data.",
+                              'detail': 'Ask the processor which gateway is in use and whether it supports '
+                                        'Level 2 and Level 3 [CCSalesPro — mqEQN-xgAAk @ 00:02:58]; '
+                                        'terminals alone will not carry line-item detail [Sean Jones '
+                                        'Revolution Payments — QBl05xxHst0 @ 00:02:31].'},
+                             {'step': 3,
+                              'title': 'Fix Settlement Timing',
+                              'action': 'Switch the merchant to daily auto-batching.',
+                              'detail': 'Weekly batching to dodge a 25 cent batch fee downgraded 80 '
+                                        "percent of an auto shop's transactions, costing about $1,000 a "
+                                        'month to save roughly $2 [CCSalesPro — mqEQN-xgAAk @ 00:04:03].'},
+                             {'step': 4,
+                              'title': 'Load Real Line Items and Get Verified',
+                              'action': "Build the product list and scrub data that fails Visa's checks.",
+                              'detail': 'Set up the product list once, five fields per product in about '
+                                        'half an hour [PayTrace — 5z1bCzU6Luw @ 00:30:53], and kill blank '
+                                        "or zero fields, generic descriptions like 'goods' and line items "
+                                        'that do not add up [TouchSuite — mFDxx7C-_EA @ 00:01:14].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether Level 3 is something a processor simply '
+                              'switches on. Sean Jones of Revolution Payments pitches an interchange audit '
+                              "that will 'automatically update all of your transactions' to Level 3, and "
+                              'says businesses are finding one to one-and-a-half percent added to '
+                              'bottom-line profit margins on their existing sales volume [vVvGM8Rlor8 @ '
+                              '00:01:23]. Eric Jenks of PayTrace, working the same B2B lane on the '
+                              'CCSalesPro live event, refuses to model it that way. His Visa commercial '
+                              'example moves a 2.95% standard rate only to Level 2 at 2.05%, a 90-point '
+                              "spread worth about $800, because those Visa cards 'don't guarantee to go to "
+                              "level three' [AKvayIEwefA @ 00:48:15]. PayTrace's own CEDP session hardens "
+                              'that into a flat rule: if the merchant is not verified, it does not get '
+                              'Level 3 regardless of what data it tries to send in [5z1bCzU6Luw @ '
+                              '00:26:40]. TouchSuite adds the cash-flow mechanics behind that rule. '
+                              'Non-Verified merchants pay the higher rate up front at settlement and only '
+                              'see the Product 3 difference credited back roughly 10 to 15 days later, and '
+                              "only if Visa's checks pass the line items [mFDxx7C-_EA @ 00:00:56]. Jones "
+                              'sells the automatic version; Jenks, PayTrace and TouchSuite quote the '
+                              'verified-only version, and the two numbers cannot sit in the same proposal.',
+                              'Practitioners also disagree on how big the prize actually is. Revolution '
+                              "Payments headlines Level 3 as cutting interchange 'by 1% and more,' yet the "
+                              "same video's worked Visa commercial number is 1.9% against 2.7%, an 80 "
+                              'basis point gap before any markup, and Jones adds that processors earn '
+                              'nothing from interchange, which is why so few of them ever bring it up '
+                              '[QBl05xxHst0 @ 00:01:27]. His own client case swings far wider: before '
+                              'rates of 2.95, 2.65, 3% and 2.8 dropped to 1.45 on large tickets and about '
+                              '1.9 at Level 2, for a claimed $35,000 per month in savings on an e-commerce '
+                              'merchant [EQEdEkxVIXU @ 00:01:14]. PayTrace frames the Visa win as 2.5 to '
+                              '3% falling to 1.75%, a saving in the 75 to 120 basis point range '
+                              "[5z1bCzU6Luw @ 00:20:53]. TouchSuite's deliberately made-up example runs "
+                              'much smaller: $100,000 a month in card sales, 40% on business cards, a '
+                              '$1,250 average ticket keyed into a virtual terminal, an assumed 0.5% rate '
+                              'gap, and about $200 a month or $2,400 a year affected by enhanced data '
+                              '[60QTYm0QFZU @ 00:01:31]. Jones sells the ceiling, TouchSuite models the '
+                              'floor, and PayTrace publishes a range an agent can defend line by line in '
+                              'front of a CFO.',
+                              'The third fault line is who gets paid for the savings and how hard to push '
+                              'the data. Jeremy Layton of VeraSave says the only way his firm makes money '
+                              'is bringing a savings to a merchant: it takes a portion of savings for a '
+                              'set period, charges nothing if nothing is found, and he admits the model '
+                              'has caused contention with processors [KlaksrooZhw @ 00:07:21]. James '
+                              "Sheppard argues from the agent's seat instead. He says he could either cut "
+                              'his residuals and lose margin by lowering pricing, or find a way to cut the '
+                              "interchange costs 'which didn't cost me anything' [AKvayIEwefA @ 00:33:36]. "
+                              'On data integrity the two CCSalesPro voices openly diverge. Sheppard says '
+                              "Visa's CEDP screening could be gamed within a couple of months, and he "
+                              'expected ERP transaction IDs to become mandatory to close that hole '
+                              '[KlaksrooZhw @ 00:20:31]. Layton counters with what he sees in the field: '
+                              'some gateways and acquirers are still inserting randomized fake data into '
+                              'transactions and taking a share of the resulting savings, and he warns of '
+                              "'big problems' for them if they get caught [KlaksrooZhw @ 00:22:09]. "
+                              "Sheppard's read is that the screening is beatable; Layton's read is that "
+                              'whoever is beating it is carrying the risk on behalf of every merchant in '
+                              'the portfolio.'],
+               'table': {'caption': 'Side-by-side practitioner playbooks where the experts split',
+                         'headers': ['Fault Line',
+                                     'Aggressive or Alternative Playbook',
+                                     'Counter Playbook',
+                                     'Expert Source'],
+                         'rows': [['Whether Level 3 qualification is automatic or verified',
+                                   'Revolution Payments promises to automatically update all of your '
+                                   'transactions to Level 3',
+                                   'Jenks models Visa commercial only to Level 2 because Level 3 is not '
+                                   'guaranteed',
+                                   'Sean Jones Revolution Payments ([vVvGM8Rlor8 @ 00:01:23]); CCSalesPro '
+                                   '([AKvayIEwefA @ 00:48:15])'],
+                                  ['How large the Level 3 interchange spread really is',
+                                   'Headline claim that Level 3 cuts commercial interchange by 1% and more',
+                                   "Same video's worked Visa example is 1.9% versus 2.7%, an 80 basis "
+                                   'point gap',
+                                   'Sean Jones Revolution Payments ([QBl05xxHst0 @ 00:01:27])'],
+                                  ['Which hardware or software path carries Level 3 data',
+                                   'Credit card terminals do not support Level 3, so move to a Level 3 '
+                                   'capable gateway',
+                                   'Payment Alliance pitches PayTrace optimization through gateways, '
+                                   'virtual terminals and recurring billing',
+                                   'Sean Jones Revolution Payments ([QBl05xxHst0 @ 00:02:31]); Payment '
+                                   'Alliance ([DJ6yGG_L6uI @ 00:00:51])'],
+                                  ['Which merchant pricing model protects interchange savings',
+                                   'GoDaddy sells flat rate and calls interchange-plus less predictable '
+                                   'because of processor markup',
+                                   'Merchant Doctor tells merchants to demand true interchange-plus to '
+                                   'actually capture Durbin savings',
+                                   'GoDaddy ([bBK7nzs3_mQ @ 00:00:34]); Merchant Doctor ([Hx-TboJVDyo @ '
+                                   '00:02:58])'],
+                                  ['How the optimization provider itself gets paid',
+                                   'VeraSave takes a portion of savings for a set period and charges '
+                                   'nothing otherwise',
+                                   'ISO Amp charges a flat $195 a month for 3 users plus $29 per '
+                                   'additional user',
+                                   'CCSalesPro ([KlaksrooZhw @ 00:07:21]); CCSalesPro ([AKvayIEwefA @ '
+                                   '01:01:45])'],
+                                  ['Whether Visa CEDP data screening can be beaten',
+                                   'Sheppard says the screening could be gamed within a couple of months '
+                                   'of launch',
+                                   'Layton expects Visa to double down and have this figured out by the '
+                                   'end of 2026',
+                                   'CCSalesPro ([KlaksrooZhw @ 00:20:31]); CCSalesPro ([KlaksrooZhw @ '
+                                   '00:24:54])'],
+                                  ['What the regulated debit interchange cap actually is',
+                                   'LawLens states 21 cents plus 0.05% plus 1 cent for fraud prevention on '
+                                   'big banks',
+                                   'Merchant Doctor states 22 cents and .05%; Sheppard says 22 cents and '
+                                   'five basis points or 21 cents',
+                                   'LawLens ([M4iOZn_3wng @ 00:00:19]); Merchant Doctor ([Hx-TboJVDyo @ '
+                                   '00:01:21]); CCSalesPro ([tG2nIK3Th4Q @ 00:46:16])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive mistakes are self-inflicted settlement habits. '
+                              "CCSalesPro's auto shop case is the cleanest example: a merchant doing over "
+                              '$100,000 a month batched weekly to dodge a 25-cent batch fee, the '
+                              'settlement date stopped matching the authorization date, 80% of its '
+                              'transactions downgraded, and the shop burned roughly $1,000 a month to save '
+                              'about $2 until daily auto-batching was switched on [mqEQN-xgAAk @ '
+                              '00:04:03]. Eric Jenks puts a clock on the same trap, telling agents that '
+                              'transactions not settled within 48 hours fall to EIRF, although in the same '
+                              'answer he also says 20 hours, so the exact window he gives is inconsistent '
+                              '[AKvayIEwefA @ 00:44:03]. Roger McNamara flags a quieter trigger on the '
+                              'CCSalesPro Level 2 and 3 session: a missing sequential invoice number '
+                              'knocks a B2B ticket from roughly 2.05 up to about 2.25 [tG2nIK3Th4Q @ '
+                              "00:12:28]. TouchSuite's statement checklist stacks up the rest of the usual "
+                              'suspects: zero or missing tax amounts, blank PO numbers, line items that do '
+                              'not sum to the charged total, batches that are not settled promptly, and '
+                              'gateway fields left optional, off by default or unmapped, all under the '
+                              "blunt reminder that 'sending data is not the same as qualifying' "
+                              '[60QTYm0QFZU @ 00:00:55].',
+                              "Visa's CEDP rollout turned enhanced data from a free upgrade into a trap. "
+                              'Layton reports the program went live October 17, 2025 with Visa '
+                              'tight-lipped on details, and that Visa then paused reviews on November 11 '
+                              "in a rollout he calls 'utter chaos' [KlaksrooZhw @ 00:17:55]. What "
+                              'merchants actually hit was worse than a pause: verified status flipping '
+                              'within one to two weeks, and real line-item data getting flagged as fake '
+                              '[KlaksrooZhw @ 00:19:42]. TouchSuite lays out the cost side. Processors '
+                              'report a 0.05% participation fee on US commercial and small business '
+                              'transactions sent with Level 2 or Level 3 data whether or not a lower rate '
+                              'applies, and since Visa retired Level 2 programs for Business, Corporate '
+                              'and Purchasing cards in mid-April 2026, leaving only fleet fuel, sending '
+                              'Level 2 only can trigger the fee with no rate benefit at all [mFDxx7C-_EA @ '
+                              '00:00:40]. Its hypothetical distributor, with $100,000 a month in Visa '
+                              'commercial volume, a $1,000 average ticket and zero card-present volume, '
+                              'pays about $2,790 a month on Level 2 only, roughly $600 a year more than '
+                              'sending no data, against about $1,980 a month once verified for Product 3 '
+                              '[mFDxx7C-_EA @ 00:01:34]. The old easy win is now the line item that '
+                              'bleeds.',
+                              'The economics check that trips up most merchants is whether savings ever '
+                              'reach them. Merchant Doctor warns that some processors simply will not pass '
+                              'Durbin debit savings through, and that qualified, mid-qualified and '
+                              'non-qualified lines on a statement are the tell that a merchant needs to '
+                              'demand true interchange-plus [Hx-TboJVDyo @ 00:02:58]. Sloan Bush of '
+                              'Interchange Plus Solutions puts numbers on the skim: e-commerce debit '
+                              'interchange of 1.6% plus 15 cents, merchants on tiered plans still paying '
+                              'about 2 and a quarter percent plus 30 cents, and tiered processors '
+                              'pocketing the 1.6% savings [LjfmC9EATic @ 00:06:24]. The debit rule itself '
+                              "is a moving target. LawLens reports the 8th Circuit's unanimous October 26, "
+                              '2026 ruling that knocked out how the Fed built the Regulation II cap, but '
+                              'no new fee was set, the Fed has about 45 days to seek rehearing, and until '
+                              'the mandate issues the 21-cent cap stands and checkout costs do not move '
+                              "[M4iOZn_3wng @ 00:04:36]. On the B2B side the bottleneck is the merchant's "
+                              'own back office: Jenks reports prospects refusing optimization outright '
+                              'because they are locked into a million-dollar ERP system that nobody wants '
+                              'to touch for a payments project [AKvayIEwefA @ 00:55:16].'],
+               'table': {'caption': 'Firsthand traps, their measured cost, and the practitioner warning '
+                                    'attached',
+                         'headers': ['Trap',
+                                     'Firsthand Cost or Trigger',
+                                     'Practitioner Warning',
+                                     'Expert Source'],
+                         'rows': [['Weekly batching to avoid a 25-cent batch fee',
+                                   '80% of transactions downgraded, roughly $1,000 a month lost to save '
+                                   'about $2',
+                                   'Settlement date must match authorization date, so switch the account '
+                                   'to daily auto-batching',
+                                   'CCSalesPro ([mqEQN-xgAAk @ 00:04:03])'],
+                                  ['Missing sequential invoice number on B2B tickets',
+                                   'Downgrade moves the ticket from roughly 2.05 up to about 2.25',
+                                   'Invoice and order number fields are part of the Level 2 data set and '
+                                   'must be populated',
+                                   'CCSalesPro ([tG2nIK3Th4Q @ 00:12:28])'],
+                                  ['Sending Level 2 only on Visa commercial after April 2026',
+                                   'About $2,790 a month versus $1,980 verified, roughly $600 a year worse '
+                                   'than no data',
+                                   'Check what you send and what you pay, because the participation fee '
+                                   'hits regardless',
+                                   'TouchSuite ([mFDxx7C-_EA @ 00:01:34])'],
+                                  ['Relying on CEDP Verified status staying put',
+                                   'Status flipped within one to two weeks and real data was flagged as '
+                                   'fake',
+                                   'Merchants received six to eight different error codes during the '
+                                   'chaotic rollout',
+                                   'CCSalesPro ([KlaksrooZhw @ 00:19:42])'],
+                                  ['Operating unverified while still sending enhanced data',
+                                   'Downgrades reach upwards of a full percent on affected commercial '
+                                   'transactions',
+                                   'If you are not verified you do not get Level 3 regardless of the data '
+                                   'sent',
+                                   'PayTrace ([5z1bCzU6Luw @ 00:28:04])'],
+                                  ['Tiered processors lumping debit into the qualified rate',
+                                   'Debit interchange of 1.6% plus 15 cents billed at about 2.25% plus 30 '
+                                   'cents',
+                                   'Demand true interchange-plus or the processor pockets the Durbin '
+                                   'savings',
+                                   'Practical Ecommerce ([LjfmC9EATic @ 00:06:24])'],
+                                  ['Statement fees that do not reconcile with the itemized lines',
+                                   'ISO Amp shows $536 itemized against a $721 statement total in the '
+                                   'example',
+                                   'The proposal tool raises a red flag when itemized fees fail to match '
+                                   'the total',
+                                   'CCSalesPro ([AKvayIEwefA @ 00:18:34])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before quoting any Level 2/3 or CEDP savings',
+                           'body': 'Every item below comes from a loss, downgrade or reversal a '
+                                   'practitioner reported firsthand. Clear all four before a savings '
+                                   'number goes in front of a merchant.',
+                           'items': ['Force daily auto-batching on the account before modeling savings; '
+                                     'weekly batching to dodge a 25-cent fee downgraded 80% of an auto '
+                                     "shop's tickets and cost about $1,000 a month [CCSalesPro — "
+                                     'mqEQN-xgAAk @ 00:04:03].',
+                                     'Confirm CEDP Verified status before pricing Product 3 rates, because '
+                                     'an unverified merchant does not get Level 3 regardless of what it '
+                                     'sends [PayTrace — 5z1bCzU6Luw @ 00:26:40].',
+                                     'Shut off Level 2-only submissions on Visa commercial cards, since '
+                                     'they can trigger the 0.05% participation fee with no rate benefit '
+                                     '[TouchSuite — mFDxx7C-_EA @ 00:00:40].',
+                                     'Refuse auto-filled or randomized line-item data; Layton reports '
+                                     'gateways inserting fake data and warns of big problems when they get '
+                                     'caught [CCSalesPro — KlaksrooZhw @ 00:22:09].']}}],
+ 'pull_quote': 'I could either cut my residuals and lose my margin by lowering the pricing or I could find '
+               "a way to cut the interchange costs which didn't cost me anything. — CCSalesPro "
+               '(AKvayIEwefA @ 00:33:36)',
+ 'diagram_id': 'diag-03',
+ 'action_checklist': ['Pull the merchant statement, flag every line labeled standard or non-qualified, and '
+                      'compare it against a qualified line to size the rate gap [TouchSuite — 60QTYm0QFZU '
+                      '@ 00:00:40].',
+                      'Ask the current processor which gateway the merchant runs on and whether it '
+                      'supports Level 2 and Level 3 data [CCSalesPro — mqEQN-xgAAk @ 00:02:58].',
+                      'Switch the account to daily auto-batching so settlement dates match authorization '
+                      'dates and stop avoidable downgrades [CCSalesPro — mqEQN-xgAAk @ 00:04:03].',
+                      "Load the merchant's product list once, five fields per product, in a one-time setup "
+                      'of about half an hour [PayTrace — 5z1bCzU6Luw @ 00:30:53].',
+                      'Run the uploaded statement through a CEDP-verified status check before promising '
+                      'any Level 2 or Level 3 savings [CCSalesPro — KlaksrooZhw @ 00:36:35].',
+                      'Calculate the effective rate as total processing costs divided by total card sales '
+                      'to expose what the merchant is actually paying [GoDaddy — bBK7nzs3_mQ @ 00:01:33].'],
+ 'statutory_citations': [{'title': 'PayTrace — How to Reduce Your B2B Credit Card Processing Fees with '
+                                   'PayTrace Interchange Optimization and CEDP [00:26:40]',
+                          'url': 'https://www.youtube.com/watch?v=5z1bCzU6Luw&t=1600s',
+                          'relevance': 'Primary practitioner testimony on Visa CEDP verification as the '
+                                       'hard gate for Level 3 rates.'},
+                         {'title': 'TouchSuite — Visa CEDP Explained: Why Level 2 Data No Longer Lowers '
+                                   'B2B Card Rates [00:00:40]',
+                          'url': 'https://www.youtube.com/watch?v=mFDxx7C-_EA&t=40s',
+                          'relevance': 'Primary practitioner testimony on the retirement of Visa Level 2 '
+                                       'programs and the participation fee trap.'},
+                         {'title': 'CCSalesPro — The Future of Interchange Optimization [00:22:09]',
+                          'url': 'https://www.youtube.com/watch?v=KlaksrooZhw&t=1329s',
+                          'relevance': 'Primary practitioner testimony on fake line-item data, CEDP '
+                                       'rollout chaos and the risk to gateways.'},
+                         {'title': "LawLens — A Truck Stop Just Killed the Fed's Debit-Card Fee Cap — But "
+                                   "Your Checkout Won't Change Yet [00:04:36]",
+                          'url': 'https://www.youtube.com/watch?v=M4iOZn_3wng&t=276s',
+                          'relevance': 'Primary practitioner testimony on the 8th Circuit debit cap ruling '
+                                       'and why the 21-cent cap still stands.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'bBK7nzs3_mQ',
+                       'title': 'How to Lower Credit Card Processing Fees for Small Businesses - GoDaddy',
+                       'channel': 'GoDaddy',
+                       'author': 'GoDaddy',
+                       'text': 'It shows what you are actually paying, not just the headline rate.',
+                       'tip': 'It shows what you are actually paying, not just the headline rate.',
+                       'timestamp': 93,
+                       'timestamp_seconds': 93,
+                       'timestamp_label': '[00:01:33]',
+                       'url': 'https://www.youtube.com/watch?v=bBK7nzs3_mQ&t=93s',
+                       'markdown': '[00:01:33](https://www.youtube.com/watch?v=bBK7nzs3_mQ&t=93s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-APdyXeqh6o',
+                       'title': 'Advanced Payment Gateway Features (Merchant Configuration Guide)',
+                       'channel': 'NMI',
+                       'author': 'NMI',
+                       'text': 'Transactions with no expiration date are passed as 0000 and will almost '
+                               'always fail.',
+                       'tip': 'Transactions with no expiration date are passed as 0000 and will almost '
+                              'always fail.',
+                       'timestamp': 133,
+                       'timestamp_seconds': 133,
+                       'timestamp_label': '[00:02:13]',
+                       'url': 'https://www.youtube.com/watch?v=-APdyXeqh6o&t=133s',
+                       'markdown': '[00:02:13](https://www.youtube.com/watch?v=-APdyXeqh6o&t=133s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'M4iOZn_3wng',
+                       'title': "A Truck Stop Just Killed the Fed's Debit-Card Fee Cap — But Your Checkout "
+                                "Won't Change Yet",
+                       'channel': 'LawLens',
+                       'author': 'LawLens',
+                       'text': 'Until then, the 21 cent cap stands.',
+                       'tip': 'Until then, the 21 cent cap stands.',
+                       'timestamp': 276,
+                       'timestamp_seconds': 276,
+                       'timestamp_label': '[00:04:36]',
+                       'url': 'https://www.youtube.com/watch?v=M4iOZn_3wng&t=276s',
+                       'markdown': '[00:04:36](https://www.youtube.com/watch?v=M4iOZn_3wng&t=276s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Hx-TboJVDyo',
+                       'title': 'What is the Durbin Amendment & Will Your Credit Card Processor Let you '
+                                'benefit?',
+                       'channel': 'Merchant Doctor',
+                       'author': 'Merchant Doctor',
+                       'text': 'Look for qualified, mid-qualified and non-qualified on your statement and '
+                               'demand true interchange-plus pricing.',
+                       'tip': 'Look for qualified, mid-qualified and non-qualified on your statement and '
+                              'demand true interchange-plus pricing.',
+                       'timestamp': 178,
+                       'timestamp_seconds': 178,
+                       'timestamp_label': '[00:02:58]',
+                       'url': 'https://www.youtube.com/watch?v=Hx-TboJVDyo&t=178s',
+                       'markdown': '[00:02:58](https://www.youtube.com/watch?v=Hx-TboJVDyo&t=178s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LjfmC9EATic',
+                       'title': 'Credit Card Exec On Durbin Amendment, New Debit Card Rates',
+                       'channel': 'Practical Ecommerce',
+                       'author': 'Practical Ecommerce',
+                       'text': 'E-commerce debit interchange is 1.6% plus 15 cents while merchants pay '
+                               'about 2 and a quarter percent plus 30 cents, and tiered processors pocket '
+                               'the 1.6% savings.',
+                       'tip': 'E-commerce debit interchange is 1.6% plus 15 cents while merchants pay '
+                              'about 2 and a quarter percent plus 30 cents, and tiered processors pocket '
+                              'the 1.6% savings.',
+                       'timestamp': 384,
+                       'timestamp_seconds': 384,
+                       'timestamp_label': '[00:06:24]',
+                       'url': 'https://www.youtube.com/watch?v=LjfmC9EATic&t=384s',
+                       'markdown': '[00:06:24](https://www.youtube.com/watch?v=LjfmC9EATic&t=384s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DJ6yGG_L6uI',
+                       'title': 'Lower Interchange Rates B2B | Interchange Optimization for Level 2 and '
+                                'Level 3 Cards"',
+                       'channel': 'Payment Alliance',
+                       'author': 'Payment Alliance',
+                       'text': 'PayTrace Level 2 and Level 3 optimization lowers interchange on phone and '
+                               'business-card transactions.',
+                       'tip': 'PayTrace Level 2 and Level 3 optimization lowers interchange on phone and '
+                              'business-card transactions.',
+                       'timestamp': 18,
+                       'timestamp_seconds': 18,
+                       'timestamp_label': '[00:00:18]',
+                       'url': 'https://www.youtube.com/watch?v=DJ6yGG_L6uI&t=18s',
+                       'markdown': '[00:00:18](https://www.youtube.com/watch?v=DJ6yGG_L6uI&t=18s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tG2nIK3Th4Q',
+                       'title': 'Get the Inside Scoop on Level 2 & 3 Interchange Optimization',
+                       'channel': 'CCSalesPro',
+                       'author': 'CCSalesPro',
+                       'text': 'Thirty percent of B2B transactions do not qualify, and cards carrying '
+                               'personal liability are excluded.',
+                       'tip': 'Thirty percent of B2B transactions do not qualify, and cards carrying '
+                              'personal liability are excluded.',
+                       'timestamp': 618,
+                       'timestamp_seconds': 618,
+                       'timestamp_label': '[00:10:18]',
+                       'url': 'https://www.youtube.com/watch?v=tG2nIK3Th4Q&t=618s',
+                       'markdown': '[00:10:18](https://www.youtube.com/watch?v=tG2nIK3Th4Q&t=618s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5z1bCzU6Luw',
+                       'title': 'How to Reduce Your B2B Credit Card Processing Fees with PayTrace '
+                                'Interchange Optimization and CEDP',
+                       'channel': 'PayTrace',
+                       'author': 'PayTrace',
+                       'text': "So, if you're not verified, you do not get level three regardless of what "
+                               "you're trying to send in.",
+                       'tip': "So, if you're not verified, you do not get level three regardless of what "
+                              "you're trying to send in.",
+                       'timestamp': 1600,
+                       'timestamp_seconds': 1600,
+                       'timestamp_label': '[00:26:40]',
+                       'url': 'https://www.youtube.com/watch?v=5z1bCzU6Luw&t=1600s',
+                       'markdown': '[00:26:40](https://www.youtube.com/watch?v=5z1bCzU6Luw&t=1600s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5z1bCzU6Luw',
+                       'title': 'How to Reduce Your B2B Credit Card Processing Fees with PayTrace '
+                                'Interchange Optimization and CEDP',
+                       'channel': 'PayTrace',
+                       'author': 'PayTrace',
+                       'text': 'Downgrades for unverified commercial transactions reach upwards of a full '
+                               'percent.',
+                       'tip': 'Downgrades for unverified commercial transactions reach upwards of a full '
+                              'percent.',
+                       'timestamp': 1684,
+                       'timestamp_seconds': 1684,
+                       'timestamp_label': '[00:28:04]',
+                       'url': 'https://www.youtube.com/watch?v=5z1bCzU6Luw&t=1684s',
+                       'markdown': '[00:28:04](https://www.youtube.com/watch?v=5z1bCzU6Luw&t=1684s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EQEdEkxVIXU',
+                       'title': 'How I saved this client over $35,000 in interchange fees with level 3 '
+                                'credit card processing',
+                       'channel': 'Sean Jones Revolution Payments',
+                       'author': 'Sean Jones Revolution Payments',
+                       'text': 'Rates dropped from 2.95, 2.65, 3% and 2.8 to 1.45 on large tickets and '
+                               'about 1.9 at Level 2, saving $35,000 per month.',
+                       'tip': 'Rates dropped from 2.95, 2.65, 3% and 2.8 to 1.45 on large tickets and '
+                              'about 1.9 at Level 2, saving $35,000 per month.',
+                       'timestamp': 74,
+                       'timestamp_seconds': 74,
+                       'timestamp_label': '[00:01:14]',
+                       'url': 'https://www.youtube.com/watch?v=EQEdEkxVIXU&t=74s',
+                       'markdown': '[00:01:14](https://www.youtube.com/watch?v=EQEdEkxVIXU&t=74s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'AKvayIEwefA',
+                       'title': 'Interchange Optimization Made Easy - Live Event Replay',
+                       'channel': 'CCSalesPro',
+                       'author': 'CCSalesPro',
+                       'text': 'I could either cut my residuals and lose my margin by lowering the pricing '
+                               "or I could find a way to cut the interchange costs which didn't cost me "
+                               'anything.',
+                       'tip': 'I could either cut my residuals and lose my margin by lowering the pricing '
+                              "or I could find a way to cut the interchange costs which didn't cost me "
+                              'anything.',
+                       'timestamp': 2016,
+                       'timestamp_seconds': 2016,
+                       'timestamp_label': '[00:33:36]',
+                       'url': 'https://www.youtube.com/watch?v=AKvayIEwefA&t=2016s',
+                       'markdown': '[00:33:36](https://www.youtube.com/watch?v=AKvayIEwefA&t=2016s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'AKvayIEwefA',
+                       'title': 'Interchange Optimization Made Easy - Live Event Replay',
+                       'channel': 'CCSalesPro',
+                       'author': 'CCSalesPro',
+                       'text': "You'll note that we didn't move that to level three because quite frankly "
+                               "in the Visa world those cards don't guarantee to go to level three.",
+                       'tip': "You'll note that we didn't move that to level three because quite frankly "
+                              "in the Visa world those cards don't guarantee to go to level three.",
+                       'timestamp': 2895,
+                       'timestamp_seconds': 2895,
+                       'timestamp_label': '[00:48:15]',
+                       'url': 'https://www.youtube.com/watch?v=AKvayIEwefA&t=2895s',
+                       'markdown': '[00:48:15](https://www.youtube.com/watch?v=AKvayIEwefA&t=2895s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '60QTYm0QFZU',
+                       'title': 'Level 2 and Level 3 Card Data: Estimate the Business Card Impact',
+                       'channel': 'TouchSuite',
+                       'author': 'TouchSuite',
+                       'text': 'Sending data is not the same as qualifying.',
+                       'tip': 'Sending data is not the same as qualifying.',
+                       'timestamp': 55,
+                       'timestamp_seconds': 55,
+                       'timestamp_label': '[00:00:55]',
+                       'url': 'https://www.youtube.com/watch?v=60QTYm0QFZU&t=55s',
+                       'markdown': '[00:00:55](https://www.youtube.com/watch?v=60QTYm0QFZU&t=55s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vVvGM8Rlor8',
+                       'title': 'Interchange Audit & Level-3 Processing',
+                       'channel': 'Sean Jones Revolution Payments',
+                       'author': 'Sean Jones Revolution Payments',
+                       'text': 'Businesses are finding anywhere from one to one-and-a-half percent added '
+                               'to their bottom line profit margins on their existing sales volume.',
+                       'tip': 'Businesses are finding anywhere from one to one-and-a-half percent added to '
+                              'their bottom line profit margins on their existing sales volume.',
+                       'timestamp': 66,
+                       'timestamp_seconds': 66,
+                       'timestamp_label': '[00:01:06]',
+                       'url': 'https://www.youtube.com/watch?v=vVvGM8Rlor8&t=66s',
+                       'markdown': '[00:01:06](https://www.youtube.com/watch?v=vVvGM8Rlor8&t=66s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QBl05xxHst0',
+                       'title': 'Level 3 Processing Interchange Rates | Revolution Payments',
+                       'channel': 'Sean Jones Revolution Payments',
+                       'author': 'Sean Jones Revolution Payments',
+                       'text': 'Credit card terminals do not support level 3 line item detail, so your '
+                               'processor should be able to assist in choosing a level 3 capable payment '
+                               'gateway.',
+                       'tip': 'Credit card terminals do not support level 3 line item detail, so your '
+                              'processor should be able to assist in choosing a level 3 capable payment '
+                              'gateway.',
+                       'timestamp': 151,
+                       'timestamp_seconds': 151,
+                       'timestamp_label': '[00:02:31]',
+                       'url': 'https://www.youtube.com/watch?v=QBl05xxHst0&t=151s',
+                       'markdown': '[00:02:31](https://www.youtube.com/watch?v=QBl05xxHst0&t=151s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KlaksrooZhw',
+                       'title': 'The Future of Interchange Optimization',
+                       'channel': 'CCSalesPro',
+                       'author': 'CCSalesPro',
+                       'text': 'Some gateways and acquirers are still inserting randomized fake data and '
+                               'taking a share of the savings, and there will be big problems if they get '
+                               'caught.',
+                       'tip': 'Some gateways and acquirers are still inserting randomized fake data and '
+                              'taking a share of the savings, and there will be big problems if they get '
+                              'caught.',
+                       'timestamp': 1329,
+                       'timestamp_seconds': 1329,
+                       'timestamp_label': '[00:22:09]',
+                       'url': 'https://www.youtube.com/watch?v=KlaksrooZhw&t=1329s',
+                       'markdown': '[00:22:09](https://www.youtube.com/watch?v=KlaksrooZhw&t=1329s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mqEQN-xgAAk',
+                       'title': 'What is Interchange Optimization? | Payment Insights',
+                       'channel': 'CCSalesPro',
+                       'author': 'CCSalesPro',
+                       'text': 'The auto shop batched weekly to avoid a 25 cent batch fee, 80% of its '
+                               'transactions downgraded, and it cost about $1,000 a month to save about $2 '
+                               'until it moved to daily auto-batching.',
+                       'tip': 'The auto shop batched weekly to avoid a 25 cent batch fee, 80% of its '
+                              'transactions downgraded, and it cost about $1,000 a month to save about $2 '
+                              'until it moved to daily auto-batching.',
+                       'timestamp': 243,
+                       'timestamp_seconds': 243,
+                       'timestamp_label': '[00:04:03]',
+                       'url': 'https://www.youtube.com/watch?v=mqEQN-xgAAk&t=243s',
+                       'markdown': '[00:04:03](https://www.youtube.com/watch?v=mqEQN-xgAAk&t=243s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mFDxx7C-_EA',
+                       'title': 'Visa CEDP Explained: Why Level 2 Data No Longer Lowers B2B Card Rates',
+                       'channel': 'TouchSuite',
+                       'author': 'TouchSuite',
+                       'text': 'Since April 2026, it may cost more than sending no data at all.',
+                       'tip': 'Since April 2026, it may cost more than sending no data at all.',
+                       'timestamp': 2,
+                       'timestamp_seconds': 2,
+                       'timestamp_label': '[00:00:02]',
+                       'url': 'https://www.youtube.com/watch?v=mFDxx7C-_EA&t=2s',
+                       'markdown': '[00:00:02](https://www.youtube.com/watch?v=mFDxx7C-_EA&t=2s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'}]}

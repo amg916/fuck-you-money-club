@@ -1,689 +1,828 @@
 from __future__ import annotations
 
-CHAPTER_5 = {
-    "id": "Q5",
-    "chapter_id": "Q5",
-    "chapter_number": 5,
-    "question_number": 5,
-    "slug": "beginner-traps-clawbacks-and-asymmetric-failure-modes",
-    "question_prompt": "What kills 80% of newcomers in gpu compute & telecom capacity arbitrage, and what forensic metrics detect margin leaks, regulatory landmines, or platform bans before they wipe out capital?",
-    "kicker": "Q5 / THE BIG MONEY PLAYBOOKS",
-    "title": "Beginner Traps, Clawbacks & Asymmetric Failure Modes",
-    "subtitle": "H100/H200/B200 Commitment Losses, LiteLLM Routing Leakage, SIP Settlement Reversals, and FCC Access-Stimulation Exposure",
-    "layout_template": "expert_insights",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #36, GPU Compute & Telecom Capacity Arbitrage, ranks #03 of 36 "
-        "with a 94/100 Money-to-Manpower Score across 15 mapped plays. Its attractive "
-        "spread disappears when reserved GPU hours idle, inference retries escape "
-        "metering, carrier settlements reverse, or abusive traffic contaminates an "
-        "upstream account. The canonical annual owner-profit cases are $27,000 "
-        "Conservative, $189,000 Base, and $456,000 Scaled; gross billings are not "
-        "retained contribution. This chapter converts those economics into measurable "
-        "stop conditions, reconciled ledgers, tenant isolation, and contractual recovery "
-        "controls. It also dissects access-stimulation and automated outreach shortcuts "
-        "without treating geography, attestation, or account multiplication as permission. "
-        "The question's 80% framing is a stress-test prompt, not an observed failure rate."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$150,000",
-            "context": "Annual gross billings; $97,500 retained contribution at 65%",
-            "note": "18% gross-basis net margin; $27,000 owner profit; 1 FT + 2 C; 27.69% retained net margin",
-        },
-        {
-            "label": "Base",
-            "value": "$675,000",
-            "context": "Annual gross billings; $438,750 retained contribution at 65%",
-            "note": "28.0% gross-basis net margin; $189,000 owner profit; 1 FT + 2 C; 43.08% retained net margin",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual gross billings; $780,000 retained contribution at 65%",
-            "note": "38% gross-basis net margin; $456,000 owner profit; 2 FT + 3 C; 58.46% retained net margin",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Reconcile the spread before signing another capacity commitment",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The first fatal trap is counting customer spend as owner earnings; "
-                    "the second is treating committed inventory as a variable expense. "
-                    "Formula v2.0 fixes the annual gross-billing cases at $150,000, "
-                    "$675,000, and $1,200,000. Applying the stipulated 65% retained share "
-                    "leaves $97,500, $438,750, and $780,000 after upstream capacity and "
-                    "termination costs of $52,500, $236,250, and $420,000. Deducting the "
-                    "remaining modeled costs of $70,500, $249,750, and $324,000 produces "
-                    "exactly $27,000, $189,000, and $456,000 in owner profit. These are "
-                    "18%, 28.0%, and 38% of gross billings, or 27.69%, 43.08%, and "
-                    "58.46% of retained contribution after rounding. Keep three separate "
-                    "ledger views: customer billings, upstream-adjusted contribution, and "
-                    "owner profit. Under ASC 606, principal-versus-agent presentation "
-                    "depends on control of the specified service, not the spreadsheet's "
-                    "retained-share assumption. An agent presentation can recognize the "
-                    "retained fee; a principal presentation can recognize gross revenue "
-                    "with upstream cost separately. Never substitute merchant sales, "
-                    "customer application revenue, or customer wallet deposits for earned "
-                    "operator revenue. The quoted $2,000–$14,000 monthly operating range "
-                    "cannot represent every residual modeled expense: staffing, servicing, "
-                    "and other costs must bridge the difference explicitly rather than "
-                    "being erased to flatter the advertised margin."
-                ),
-                (
-                    "Reserved-to-on-demand H100, H200, and B200 slicing fails when a "
-                    "broker purchases calendar hours but sells only useful workload "
-                    "hours. Consider an illustrative eight-GPU reservation at $2 per GPU "
-                    "hour for a 720-hour month: the fixed bill is $11,520. Selling at "
-                    "$3 per GPU hour requires 3,840 billable hours, or 66.67% utilization, "
-                    "just to cover that reservation. At 70% utilization, 4,032 hours "
-                    "produce $12,096, leaving only $576 before storage, networking, "
-                    "support, payment costs, and credits. These rates are stress-test "
-                    "inputs, not market quotations or replacements for the canonical "
-                    "65% retained-share cases. A ten-percent retail price reduction to "
-                    "$2.70 pushes reservation-only break-even to 74.07%. Generation "
-                    "repricing therefore destroys thin spreads before the monthly "
-                    "dashboard shows a revenue decline. Measure sold hours against "
-                    "reserved GPU hours, not against server uptime or DCGM utilization "
-                    "alone. Maintain separate measures for billable occupancy, compute "
-                    "activity, and completed customer work. Freeze additional reservations "
-                    "when forecast utilization falls below fully loaded break-even plus "
-                    "ten percentage points for seven days. Use shorter commitments, "
-                    "explicitly permitted resale, or genuinely available on-demand "
-                    "capacity as fallbacks; moving an idle reservation between internal "
-                    "projects does not create an external sale."
-                ),
-                (
-                    "The third trap is selling a service promise that upstream terms "
-                    "cannot fund. Unlimited inference, uncapped bandwidth, automatic SLA "
-                    "credits, and refundable prepaid balances each create liabilities "
-                    "that survive a customer pause. A $10,000–$60,000 startup budget "
-                    "does not cover an arbitrarily large reservation plus payment "
-                    "reversals and carrier deposits. Build a daily liquidity waterfall "
-                    "showing settled unrestricted cash, refundable customer balances, "
-                    "tax liabilities, disputed settlements, and the next thirty days "
-                    "of irrevocable commitments. At Base, monthly gross billings are "
-                    "$56,250, upstream cost is $19,687.50, retained contribution is "
-                    "$36,562.50, other modeled costs are $20,812.50, and owner profit "
-                    "is $15,750. A $20,000 loss therefore exceeds one month's modeled "
-                    "owner profit even when the customer dashboard reports growth. "
-                    "Keep an operating reserve separate from wallet liabilities; a "
-                    "successful card authorization is neither final settlement nor "
-                    "immunity from dispute. Pause new fixed commitments when available "
-                    "cash cannot cover those thirty-day obligations plus the modeled "
-                    "refund and dispute stress. Negotiate cancellation rights, pass-through "
-                    "fee schedules, and capped remedies before launch. Reconcile each "
-                    "credit to the original invoice and upstream recovery claim so "
-                    "that customer goodwill does not become an invisible second expense."
-                ),
-            ],
-            "table": {
-                "caption": "Seven Economic Traps and the Ledger Evidence That Exposes Them",
-                "headers": [
-                    "Failure mechanism and exposed operating asset",
-                    "Forensic measurement and illustrative warning threshold",
-                    "Concrete unit economics or recovery evidence",
-                    "Circuit-breaker and economically credible fallback action",
-                ],
-                "rows": [
-                    [
-                        "Gross customer billings mistaken for distributable operator earnings",
-                        "Reconcile retained contribution and owner profit every business day",
-                        "Base billings $675,000 become $438,750 contribution before other costs",
-                        "Block distributions until upstream invoices and expense accruals reconcile",
-                    ],
-                    [
-                        "Calendar-hour reservations purchased against speculative customer demand forecasts",
-                        "Freeze purchases below fully loaded break-even plus ten points",
-                        "Eight GPUs at $2 hourly require $11,520 monthly commitments",
-                        "Use shorter reservations or permitted on-demand sourcing for overflow",
-                    ],
-                    [
-                        "GPU generation repricing compresses previously attractive hourly retail spreads",
-                        "Reprice forecasts whenever comparable executable offers decline ten percent",
-                        "Reducing $3 hourly to $2.70 raises reservation-only break-even materially",
-                        "Renegotiate capacity before renewal rather than discounting blindly",
-                    ],
-                    [
-                        "Refundable prepaid balances incorrectly fund irreversible infrastructure expansion",
-                        "Compare unrestricted settled cash against obligations and refund stress",
-                        "A $20,000 loss exceeds Base monthly profit of $15,750",
-                        "Segregate liability coverage and stop signing unfunded capacity commitments",
-                    ],
-                    [
-                        "Unmetered storage and network charges consume nominal inference margin",
-                        "Alert when unallocated vendor charges exceed one percent daily",
-                        "Assign every egress byte and storage day to customers",
-                        "Apply disclosed usage pricing or enforce documented resource limits",
-                    ],
-                    [
-                        "Customer SLA credits exceed recoverable upstream service remedies",
-                        "Compare issued customer credits against accepted supplier recovery claims",
-                        "A $500 customer credit minus $100 recovery costs $400",
-                        "Cap promised remedies and reserve unmatched credits when issued",
-                    ],
-                    [
-                        "Headline monthly overhead excludes material modeled staffing expenses",
-                        "Bridge every residual cost category to the canonical scorecard",
-                        "Scaled residual costs total $324,000 before $456,000 owner profit",
-                        "Reject budgets that omit contractors or silently rewrite margins",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Audit the obligation, not the attractive dashboard",
-                "body": (
-                    "Treat utilization, settlement finality, and upstream recovery as "
-                    "independent risks; strong performance in one does not cancel the others."
-                ),
-                "items": [
-                    "Record reservation renewal deadlines alongside customer cancellation windows; require the demand owner to review both before another term starts.",
-                    "Replay one representative production workload against each proposed H100/H200/B200 offer before comparing price per completed job.",
-                    "Maintain a credit-recovery ledger linking customer credits, supplier tickets, accepted recoveries, and cash receipts without netting disputed amounts.",
-                    "Publish gross-basis and retained-basis margins together so a 43.08% Base retained margin never masquerades as a gross-billing margin.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Stop inference leakage and tenant contamination at the execution boundary",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Dynamic routing through LiteLLM and vLLM can reduce sourcing cost "
-                    "while silently multiplying purchased work. The fourth trap is "
-                    "retry amplification: a timeout triggers a second provider while "
-                    "the first request continues generating billable tokens. The fifth "
-                    "is measuring only the successful response, which conceals failed "
-                    "attempts, speculative generations, and disconnected streams. For "
-                    "an illustrative million-token bundle sold for $4 with $2.20 of "
-                    "expected upstream cost, a full duplicate purchase raises cost to "
-                    "$4.40 and produces a $0.40 loss before support. Actual tariffs "
-                    "must distinguish input, output, cached input, and provider-specific "
-                    "billing units. Assign a stable customer request identifier and "
-                    "separate attempt identifiers; reconcile purchased tokens across all "
-                    "attempts before computing contribution. Treat idempotency as an "
-                    "application contract rather than assuming every upstream honors "
-                    "the same header. Alert when purchased-to-chargeable token ratio "
-                    "exceeds 1.10 over fifteen minutes with a meaningful sample, or "
-                    "when retry rate exceeds two percent. These are initial operating "
-                    "thresholds to calibrate, not industry laws. Disable speculative "
-                    "fallback on the affected route, bound attempts and execution "
-                    "time, and expose a clear customer error when no economically "
-                    "and contractually eligible route remains available for that request."
-                ),
-                (
-                    "The sixth trap is assuming a prepaid Stripe wallet makes "
-                    "concurrent spending impossible. Ten requests can each observe a "
-                    "$1 balance and collectively purchase $8 of upstream service "
-                    "unless the application reserves exposure atomically. Implement "
-                    "authorization, reservation, capture, release, and refund as separate "
-                    "ledger events with stable idempotency keys. Reserve a conservative "
-                    "maximum based on token limits, GPU time, destination class, and "
-                    "published fees; settle against measured consumption after completion. "
-                    "A customer with insufficient available balance receives a bounded "
-                    "service refusal, not unsecured credit disguised as a retry. The "
-                    "seventh trap is equating GPU activity with delivered value. "
-                    "DCGM reports hardware telemetry, while the scheduler and billing "
-                    "ledger establish tenant allocation and chargeable service. Correlate "
-                    "XID events, memory pressure, ECC counters, queue time, job exits, "
-                    "and customer credits by host and allocation identifier. Repeated "
-                    "uncorrectable errors or unexplained cross-tenant access justify "
-                    "immediate host isolation; sustained high utilization alone does "
-                    "not establish a defect. Offer predefined concurrency limits and "
-                    "queue bounds instead of selling unlimited priority. Persist "
-                    "metering events durably before releasing reservations, and send "
-                    "late usage into an exception queue rather than silently "
-                    "discarding a legitimate upstream liability during reconciliation."
-                ),
-                (
-                    "The eighth trap is treating GPU partitioning as complete tenant "
-                    "security. NVIDIA MIG, when supported and configured for the "
-                    "specific hardware, provides useful partitioning, but shared host "
-                    "administration, storage, credentials, networking, and orchestration "
-                    "still require isolation. Run untrusted customer code only within "
-                    "a deliberately designed execution boundary with constrained "
-                    "privileges, scoped service identities, controlled egress, and "
-                    "documented teardown. A crypto-mining workload can violate an "
-                    "upstream acceptable-use policy even when every invoice is paid. "
-                    "Inspect workload declarations, resource behavior, and permitted "
-                    "network destinations without collecting unnecessary prompt content. "
-                    "The ninth trap is promising enterprise zero-data-retention while "
-                    "LiteLLM callbacks, tracing exporters, crash reports, or fallback "
-                    "providers retain request bodies. Maintain an eligibility matrix "
-                    "covering region, retention terms, model identity, subprocessors, "
-                    "and logging settings for every route. A cheaper provider that "
-                    "violates the customer's required boundary is not an eligible "
-                    "fallback. Test retention controls using synthetic requests and "
-                    "verify deletion behavior across queues, object storage, and "
-                    "backups. When an isolation or retention control fails, suspend "
-                    "the affected service, preserve restricted operational evidence, "
-                    "and use the contract's incident process. Never open replacement "
-                    "accounts to conceal a provider suspension or distribute an "
-                    "abusive tenant across otherwise healthy infrastructure pools."
-                ),
-            ],
-            "table": {
-                "caption": "Inference, Wallet, and Isolation Controls with Observable Stop Conditions",
-                "headers": [
-                    "Beginner shortcut and resulting execution failure",
-                    "Telemetry source and initial intervention condition",
-                    "Specific cost exposure or service defect",
-                    "Bounded response preserving customer and upstream integrity",
-                ],
-                "rows": [
-                    [
-                        "Retrying timed-out inference without checking earlier attempt execution",
-                        "Alert above two percent retries over fifteen sampled minutes",
-                        "Two $2.20 purchases exceed one $4 customer charge",
-                        "Bound retries and disable speculative duplicate provider requests",
-                    ],
-                    [
-                        "Billing successful responses while discarding failed upstream attempts",
-                        "Investigate purchased-to-chargeable token ratios above 1.10 with adequate samples",
-                        "Uncharged failed attempts accumulate genuine upstream token liabilities",
-                        "Reconcile every attempt identifier before publishing route contribution",
-                    ],
-                    [
-                        "Concurrent wallet checks authorize spending against identical available balances",
-                        "Require zero negative available balances after atomic reservation",
-                        "Ten simultaneous requests can turn $1 into $8 exposure",
-                        "Reserve maximum exposure transactionally before starting purchased execution",
-                    ],
-                    [
-                        "Treating DCGM device activity as sufficient customer billing evidence",
-                        "Compare scheduler allocations against durable usage ledger events",
-                        "Hardware utilization cannot identify which customer owes payment",
-                        "Join allocation identifiers and quarantine unmatched billable records",
-                    ],
-                    [
-                        "Selling unlimited queue priority on shared reserved GPU pools",
-                        "Intervene when contracted latency objectives exhaust error budgets",
-                        "Congestion generates cancellations and credits despite high utilization",
-                        "Enforce concurrency limits and offer bounded scheduled execution",
-                    ],
-                    [
-                        "Assuming GPU partitions protect shared credentials and host storage",
-                        "Isolate immediately after verified cross-tenant access or credential exposure",
-                        "One compromised tenant can contaminate every shared host customer",
-                        "Revoke scoped identities and rebuild affected execution boundaries",
-                    ],
-                    [
-                        "Routing retention-restricted prompts through cheaper incompatible fallback providers",
-                        "Require every selected route to satisfy retention eligibility",
-                        "Callback logs and crash exports can retain customer payloads",
-                        "Fail closed or use a contractually eligible alternate route",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Reserve bounded customer exposure",
-                    "action": "Atomically reserve wallet funds before dispatching purchased work.",
-                    "detail": "Calculate the reservation from maximum tokens, runtime, destination fees, and the customer's contracted tariff; reject insufficient available balances.",
-                },
-                {
-                    "step": 2,
-                    "title": "Dispatch only eligible execution",
-                    "action": "Choose a route satisfying security, retention, capacity, and contribution constraints.",
-                    "detail": "Attach a stable request identifier, unique attempt identifier, maximum attempt count, deadline, and tenant-scoped execution credentials.",
-                },
-                {
-                    "step": 3,
-                    "title": "Capture durable actual consumption",
-                    "action": "Join provider usage, scheduler allocation, and customer charge records.",
-                    "detail": "Capture measured charges, release unused reservations, and preserve failed-attempt costs without exposing customer payloads in general logs.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile and isolate exceptions",
-                    "action": "Compare ledger totals with upstream statements and route-level margins.",
-                    "detail": "Investigate unmatched events, pause loss-making routes, and resolve disputed charges through documented corrections rather than destructive ledger edits.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Price telecom settlement risk without manufacturing compensable traffic",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The mapped play telecom_voice_traffic_pumping_8yy_sms_arbitrage is "
-                    "especially dangerous when its name becomes an operating instruction. "
-                    "Revenue-sharing CLEC arrangements, free conference bridges, AI voice "
-                    "lines, radio streams, and international verification endpoints do "
-                    "not automatically create collectible access or termination revenue. "
-                    "Analyze the carrier's role, applicable tariff or negotiated "
-                    "agreement, traffic origin, compensation path, and current access "
-                    "rules before underwriting any receivable. FCC access-stimulation "
-                    "definitions in 47 CFR 61.3(bbb) address specified LEC arrangements "
-                    "and traffic characteristics; they are not defeated by describing "
-                    "calls as entertainment or distributing them across switches. "
-                    "Toll-free compensation has also undergone specific FCC reforms. "
-                    "Never model an old 8YY rate deck as perpetual income. For "
-                    "illustration, a claimed $0.002 share on ten million minutes "
-                    "creates a $20,000 provisional receivable, not settled profit. "
-                    "If the contractual basis fails and transport costs $0.0015 "
-                    "per minute, the operator can lose $15,000 while receiving "
-                    "nothing. Exclude disputed or unsupported shares from spendable "
-                    "cash and maintain recovery evidence by traffic cohort. Genuine "
-                    "human initiation is a necessary safeguard for the specified "
-                    "fallback, but it does not by itself establish that access "
-                    "charges are lawful, that compensation is collectible, or that "
-                    "every downstream participant accepted the traffic."
-                ),
-                (
-                    "The tenth trap is treating geographic diversification as a cure "
-                    "for rejected traffic. The defensible fallback is non-access-stimulation "
-                    "SIP service sold for actual utility under locally valid contracts, "
-                    "with genuine user initiation where required and jurisdiction-specific "
-                    "review before expansion. Do not move disputed pumping traffic "
-                    "among countries or carriers to escape enforcement. As an "
-                    "illustrative ordinary SIP spread, one million legitimate billable "
-                    "minutes sold at $0.009 against $0.006 termination cost generates "
-                    "$9,000 billings and $3,000 contribution before platform charges, "
-                    "taxes, support, fraud, and credits. This lane-specific example "
-                    "does not replace the portfolio's 65% retained-share assumption. "
-                    "Track answer-seizure ratio, average call duration, short-call share, "
-                    "destination mix, concurrent channels, and complaints against each "
-                    "customer's baseline. A sudden threefold increase in expensive "
-                    "destinations or fivefold minute acceleration merits automated "
-                    "spend containment and review, not an accusation based solely "
-                    "on traffic shape. Use explicit destination allowlists and "
-                    "customer-specific concurrency ceilings. STIR/SHAKEN attestation "
-                    "supports caller identity assertions; it does not prove human "
-                    "initiation, establish marketing permission, or certify lawful "
-                    "content. Determine the applicable obligations under 47 CFR "
-                    "64.6301 and 64.6305 for the actual provider role, and verify "
-                    "required Robocall Mitigation Database filings rather than "
-                    "assuming an upstream listing covers every reseller."
-                ),
-                (
-                    "The eleventh trap is confusing 10DLC registration with delivery "
-                    "permission. The Campaign Registry and downstream carrier processes "
-                    "impose operational requirements, while 47 U.S.C. 227 and 47 CFR "
-                    "64.1200 govern applicable calling and texting conduct. Register "
-                    "the actual brand, use case, sample messages, and opt-out handling; "
-                    "do not borrow another business's campaign identity or recycle "
-                    "registrations to evade rejection. Ten thousand logical messages "
-                    "can become twenty thousand billed segments when encoding or "
-                    "length crosses a segmentation boundary. At an illustrative "
-                    "$0.008 vendor cost per segment, that changes cost from $80 "
-                    "to $160 before number rental and campaign fees. International "
-                    "OTP endpoints also need anti-abuse controls against artificially "
-                    "generated verification requests and toll fraud. Reconcile delivered, "
-                    "failed, filtered, and billed segment counts under the actual "
-                    "contract because failure does not universally eliminate cost. "
-                    "The twelfth trap is overlooking role-specific FCC Form 499-A, "
-                    "contribution, and customer-information duties. Evaluate registration "
-                    "and filing requirements separately from contribution exemptions; "
-                    "47 CFR 54.706 supplies contribution rules, not a universal "
-                    "reseller exemption. Restrict access to call-detail records and "
-                    "apply 47 U.S.C. 222 where applicable. Maintain an invoice-level "
-                    "map of carrier surcharges, taxes, reversals, and dispute deadlines "
-                    "so gross spread is never mistaken for final settlement."
-                ),
-            ],
-            "table": {
-                "caption": "Carrier Settlement, Access Compensation, and Messaging Failure Matrix",
-                "headers": [
-                    "Traffic or contractual failure requiring investigation",
-                    "Primary evidence and specific early-warning measurement",
-                    "Concrete exposure before final carrier settlement",
-                    "Permitted fallback or immediate protective operating action",
-                ],
-                "rows": [
-                    [
-                        "Assuming revenue-sharing conference traffic creates automatically collectible compensation",
-                        "Verify current tariffs and access-stimulation treatment before underwriting receivables",
-                        "Ten million minutes at $0.002 create $20,000 provisional receivables",
-                        "Sell genuine utility through independently valid non-access-stimulation contracts",
-                    ],
-                    [
-                        "Funding operations from disputed toll-free revenue-share settlement statements",
-                        "Track disputed settlement cohorts separately from cleared cash receipts",
-                        "Unsupported compensation can disappear while $15,000 transport remains payable",
-                        "Exclude disputed shares from commitment funding and pursue documentation",
-                    ],
-                    [
-                        "Moving rejected traffic across countries to conceal underlying practices",
-                        "Review jurisdictional contracts and traffic purpose before adding routes",
-                        "Additional carriers can multiply deposits and correlated termination exposure",
-                        "Diversify legitimate services without relocating rejected abusive traffic",
-                    ],
-                    [
-                        "Treating caller identity attestation as proof of customer permission",
-                        "Validate applicable filing status and separate initiation evidence",
-                        "Identity assertions cannot establish consent or lawful message content",
-                        "Suspend unsupported traffic while preserving restricted operational evidence",
-                    ],
-                    [
-                        "Selecting cheapest SIP destinations without customer-specific exposure ceilings",
-                        "Contain threefold expensive-destination shifts or fivefold minute acceleration",
-                        "One million minutes at $0.006 incur $6,000 termination cost",
-                        "Enforce destination allowlists and review anomalous customer requests",
-                    ],
-                    [
-                        "Pricing logical SMS messages without encoding and segmentation costs",
-                        "Compare logical messages against billed segments for each campaign",
-                        "Twenty thousand segments at $0.008 cost $160 before fees",
-                        "Preview segmentation and disclose actual segment-based customer pricing",
-                    ],
-                    [
-                        "Assuming wholesale status removes filing and information-protection duties",
-                        "Document provider classification and each applicable reporting obligation",
-                        "Unpriced assessments and restricted call records create separate exposures",
-                        "Resolve filing responsibilities and restrict customer-information access explicitly",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four facts before provisioning a production route",
-                "body": (
-                    "A route becomes usable only when its contractual, identity, "
-                    "economic, and data-handling evidence supports the proposed service."
-                ),
-                "items": [
-                    "Confirm permitted resale, customer use case, current compensation terms, destination permissions, and the party responsible for disputed carrier charges.",
-                    "Verify applicable STIR/SHAKEN implementation, Robocall Mitigation Database status, Form 499-A responsibilities, and brand-specific 10DLC provisioning evidence.",
-                    "Load tested prices for billing increments, SMS segments, surcharges, number rental, credits, and minimum commitments into the contribution ledger.",
-                    "Demonstrate customer-specific spend containment, genuine initiation evidence where required, tenant isolation, and restricted handling of call-detail records.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Stop acquisition shortcuts and convert warnings into bounded shutdowns",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The mapped play high_velocity_dm_outbound_systems fails when "
-                    "operators interpret velocity as permission to automate unsolicited "
-                    "messages. Blind cold blasts can encounter PeerFloodError, account "
-                    "restrictions, or silent placement into low-visibility request "
-                    "folders. Buying replacement accounts, rotating identities after "
-                    "suspension, scraping recipients, and disguising links amplify "
-                    "platform exposure rather than improving acquisition economics. "
-                    "Use platform-permitted comment-to-DM triggers, hand-raiser reactions, "
-                    "or inbound messages that clearly request the relevant response. "
-                    "A reaction unrelated to the offered conversation is weak evidence "
-                    "of intent. The specified fallback requires a user-initiated trigger "
-                    "before automated dispatch and external links only after the "
-                    "prospect replies; it still operates within the platform's API "
-                    "permissions and messaging windows. For an illustrative cohort "
-                    "of 1,000 eligible triggers, 100 replies and ten paid trials "
-                    "produce a one-percent trigger-to-trial conversion. At $20 trial "
-                    "billings, that is $200 gross billings, not $200 contribution. "
-                    "Applying the portfolio's illustrative 65% share leaves $130; "
-                    "a $180 acquisition cost loses $50 before servicing. Measure "
-                    "cohorts through settled, retained contribution rather than "
-                    "celebrating sent-message counts. Stop the affected automation "
-                    "on an explicit platform restriction and investigate the "
-                    "underlying permission or relevance defect before resuming permitted "
-                    "activity through the approved interface."
-                ),
-                (
-                    "The thirteenth trap is believing more inboxes or suppliers "
-                    "necessarily reduce concentration risk. Multiple inboxes controlled "
-                    "by one organization can share enforcement exposure; multiple "
-                    "GPU brands can depend on the same datacenter, payment account, "
-                    "or upstream reseller. Route warm signals across authorized "
-                    "team inboxes for workload assignment, not to evade messaging "
-                    "limits. Maintain a dependency graph showing ownership, physical "
-                    "location, upstream network, settlement counterparty, and privileged "
-                    "credentials. IPv4 capacity adds its own failure modes: stale "
-                    "reputation, disputed authorization, incorrect routing objects, "
-                    "abuse complaints, and prefixes that an upstream will not "
-                    "announce. Verify lease rights, letters of authorization, relevant "
-                    "RPKI route authorization, and routing acceptance before promising "
-                    "reachability. An illustrative 1,000-address lease at $0.40 per "
-                    "address monthly costs $400; reselling 800 at $0.60 generates "
-                    "$480 and only $80 before routing, support, and replacements. "
-                    "Losing 200 paying addresses removes $120 and makes that "
-                    "spread negative. Investigate correlated failures rather than "
-                    "replacing inventory blindly. Set customer and supplier exposure "
-                    "ceilings using stressed recoverable cash, not nominal revenue. "
-                    "A practical initial ceiling limits any single unsettled "
-                    "counterparty exposure to ten percent of unrestricted cash; "
-                    "larger positions require explicitly funded reserves and a "
-                    "documented continuity plan."
-                ),
-                (
-                    "The final trap is collecting forensic metrics without assigning "
-                    "authority to stop losses. Put a named owner, observation window, "
-                    "minimum sample, and reversible action beside every alert. Separate "
-                    "measurement defects from verified abuse, and separate a tenant "
-                    "pause from a platform-wide shutdown. A fifteen-minute token "
-                    "reconciliation warning should first constrain the affected route; "
-                    "a verified cross-tenant secret exposure warrants immediate "
-                    "isolation and credential revocation. Carrier complaints require "
-                    "prompt investigation and containment under contractual and "
-                    "applicable regulatory procedures, not an automatic conclusion "
-                    "that every customer call is unlawful. Preserve invoice snapshots, "
-                    "configuration versions, restricted identifiers, and settlement "
-                    "records sufficient to explain the decision without unnecessarily "
-                    "retaining sensitive payloads. Exercise a monthly loss drill "
-                    "covering a provider outage, payment reversal, anomalous SIP "
-                    "burst, and retention-ineligible inference fallback. Measure time "
-                    "to containment and maximum cash exposure during the drill. "
-                    "At Base, seven days of average upstream spend equals "
-                    "approximately $4,531.03 using $236,250 divided by 365 and "
-                    "multiplied by seven; uncontrolled delay can consume real "
-                    "capital before review. Restart only after the defect is "
-                    "corrected, evidence reconciles, customer commitments remain "
-                    "supportable, and a bounded canary demonstrates the intended "
-                    "behavior. Owner judgment should approve exceptions explicitly "
-                    "rather than silently normalizing repeated threshold breaches."
-                ),
-            ],
-            "table": {
-                "caption": "Acquisition, Counterparty, and Incident Circuit-Breakers for Small Teams",
-                "headers": [
-                    "Unsafe operating assumption and exposed dependency",
-                    "Observable evidence and initial warning condition",
-                    "Unit economics or measurable capital exposure",
-                    "Scoped intervention and evidence required for restart",
-                ],
-                "rows": [
-                    [
-                        "Cold mass messaging mistaken for scalable customer acquisition",
-                        "Stop affected automation immediately after explicit platform restrictions",
-                        "Message volume creates no recognized revenue without customer purchases",
-                        "Use permitted user-initiated triggers and reply-before-link conversation flows",
-                    ],
-                    [
-                        "Hand-raiser acquisition judged by sends instead of retained contribution",
-                        "Review every cohort through paid trials and settled contribution",
-                        "Ten $20 trials retain $130 before $180 acquisition spending",
-                        "Pause negative cohorts and improve relevance within permitted interfaces",
-                    ],
-                    [
-                        "Multiple inboxes mistaken for independent platform enforcement exposure",
-                        "Map shared ownership and permissions across every production inbox",
-                        "One organization-level restriction can interrupt all dependent outreach",
-                        "Assign warm conversations without bypassing account or messaging limits",
-                    ],
-                    [
-                        "Several suppliers secretly depend on identical infrastructure or settlement",
-                        "Document common datacenters and counterparties before assigning concentration limits",
-                        "Correlated outages invalidate apparently diversified capacity availability forecasts",
-                        "Maintain genuinely independent eligible supply and tested customer communication",
-                    ],
-                    [
-                        "Leased IPv4 inventory sold before authorization and routing verification",
-                        "Verify lease rights and routing acceptance before customer activation",
-                        "Eight hundred addresses at $0.60 yield $480 against $400",
-                        "Reject disputed prefixes and replace inventory through authorized lessors",
-                    ],
-                    [
-                        "Unsettled counterparty exposure grows faster than unrestricted operating cash",
-                        "Initially constrain each unsettled counterparty to ten percent cash",
-                        "Larger exposures require funded reserves rather than optimistic settlement",
-                        "Shorten settlement cycles or cap incremental service exposure",
-                    ],
-                    [
-                        "Alerts remain informational while preventable loss continues accumulating",
-                        "Measure containment time and peak exposure during monthly drills",
-                        "Seven average Base upstream-spend days equal approximately $4,531.03",
-                        "Assign named responders and restart through bounded verified canaries",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "An arbitrage spread is real only after every purchased unit, reversible receipt, and enforceable obligation has an owner.",
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Reconcile all three canonical cases into gross billings, 65% retained contribution, residual costs, and exact annual owner profit before changing capacity commitments.",
-        "Calculate fully loaded GPU break-even utilization and test a ten-percent retail-price decline against each H100/H200/B200 reservation renewal.",
-        "Implement atomic wallet reservations and request-to-attempt reconciliation; test duplicate retries, disconnected streams, late usage, and provider invoice differences.",
-        "Classify each telecom service role and document current compensation terms, applicable FCC filings, genuine initiation evidence, messaging permissions, and settlement recovery rights.",
-        "Constrain automated outreach to permitted user-initiated triggers, send external links only after a reply, and evaluate acquisition using settled retained contribution.",
-        "Run a bounded incident drill covering tenant isolation, expensive-destination bursts, payment reversals, retention-ineligible fallback, and correlated supplier failure.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "47 CFR 61.3(bbb) — Access stimulation definition",
-            "url": "https://www.ecfr.gov/current/title-47/section-61.3",
-            "relevance": "Evaluate specified LEC arrangements and traffic characteristics before treating revenue-sharing access compensation as collectible.",
-        },
-        {
-            "title": "47 CFR 64.6301 — Caller ID authentication",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.6301",
-            "relevance": "Determine applicable caller ID authentication implementation duties; attestation does not establish consent or lawful traffic purpose.",
-        },
-        {
-            "title": "47 CFR 64.6305 — Robocall mitigation and certification",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.6305",
-            "relevance": "Identify applicable mitigation, certification, and database obligations for the actual voice-provider role.",
-        },
-        {
-            "title": "47 U.S.C. 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Assess applicable restrictions on automated calling and texting independently of carrier registration or routing availability.",
-        },
-        {
-            "title": "47 CFR 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": "Implement applicable calling and messaging permissions, revocation handling, and related operational restrictions.",
-        },
-        {
-            "title": "47 CFR 54.706 — Universal service contribution obligations",
-            "url": "https://www.ecfr.gov/current/title-47/section-54.706",
-            "relevance": "Evaluate contribution treatment by service and provider role rather than assuming wholesale status removes obligations.",
-        },
-        {
-            "title": "47 CFR 54.711 — Contributor reporting requirements",
-            "url": "https://www.ecfr.gov/current/title-47/section-54.711",
-            "relevance": "Connect applicable contribution reporting to documented revenue classifications and current Telecommunications Reporting Worksheet requirements.",
-        },
-        {
-            "title": "47 U.S.C. 222 — Privacy of customer information",
-            "url": "https://www.law.cornell.edu/uscode/text/47/222",
-            "relevance": "Identify applicable telecommunications customer-information protections and restrict access to call-detail records accordingly.",
-        },
-    ],
-}
+CHAPTER_5 = {'id': 'Q5',
+ 'chapter_id': 'Q5',
+ 'chapter_number': 5,
+ 'question_number': 5,
+ 'slug': 'finops-and-repatriation-controlling-cloud-and-ai-compute-spend',
+ 'question_prompt': 'How do teams control cloud and AI spend, and when does bare metal or owning hardware '
+                    'beat hyperscaler bills?',
+ 'kicker': 'Q5 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'FinOps and Repatriation: Controlling Cloud and AI Compute Spend',
+ 'subtitle': "AWS FinOps basics, CapEx vs OpEx and rightsizing, RI and savings-plan benchmarking, Amazon's "
+             'internal cost lessons, FinOps+ at re:Invent, building a FinOps agent, agentic AI FinOps on '
+             'Azure, AI budgets under tokenmaxxing, AI subscriptions vs owning an H100, $500 Epyc servers, '
+             'and the $200 box vs $4,000 cloud bill',
+ 'layout_template': 'case_study',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners from AWS, Vantage, ProsperOps, Kion and the FinOps Foundation '
+                      'converge on one sequence: hourly resource-level visibility, engineer ownership, '
+                      'policy-driven automation, then commitment and model-routing discipline. ProsperOps '
+                      'benchmarks average Effective Savings Rate at 10.5% against a 98th percentile near '
+                      '40.5%, and its automation engine posts a 47% blended discount at over 98% coverage. '
+                      'Intellipaat pegs on-demand at two or three times committed rates. AI tokens now '
+                      'dominate the agenda: GenAI tops budget-overrun causes, FinOps X attendees spend 80% '
+                      'of their time on AI, and Vantage streams invocation logs because AWS billing lags '
+                      'seven to eight hours. The split comes on autonomy versus oversight and on '
+                      'repatriation: Nick Gioftsos champions a $200 box over a $4,000 cloud bill, while '
+                      'Caleb Writes Code finds a $200 subscription beats owning an H100.',
+ 'key_metrics': [{'label': 'Average Effective Savings Rate on AWS Compute',
+                  'metric': 'Average Effective Savings Rate on AWS Compute',
+                  'value': '10.5% average; 75th percentile in the low 20s; 98th percentile about 40.5%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'ProsperOps benchmark across more than 1,400 data points with up to $2M per '
+                             'month in compute spend, measuring outcome-based savings from RIs and Savings '
+                             'Plans.',
+                  'source': 'ProsperOps, a Flexera company ([KW_LS_stgvc @ 00:03:35])'},
+                 {'label': 'On-Demand Premium Over Long-Term Commitment',
+                  'metric': 'On-Demand Premium Over Long-Term Commitment',
+                  'value': 'Two or three times more expensive',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Intellipaat's comparison of on-demand pricing against long-term commitment "
+                             'rates, used to argue that a central team should own rate negotiation.',
+                  'source': 'Intellipaat ([7_L1_3-4kg8 @ 00:22:10])'},
+                 {'label': 'Share of FinOps Time Spent on AI Spend',
+                  'metric': 'Share of FinOps Time Spent on AI Spend',
+                  'value': '80% of time',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'FinOps X attendees reporting how much of their working time now goes to AI '
+                             'spend, alongside GenAI ranking as the top cause of budget overruns greater '
+                             'than 10%.',
+                  'source': 'Vantage ([N1u_6ENlZV4 @ 00:16:54])'},
+                 {'label': 'Self-Hosted DGX H100 Break-Even',
+                  'metric': 'Self-Hosted DGX H100 Break-Even',
+                  'value': 'About $400K total cost of ownership; 28 users to break even',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Caleb Writes Code's math for hosting a frontier model on a $285K-300K DGX "
+                             'H100 versus paying $200 per month per subscription seat.',
+                  'source': 'Caleb Writes Code ([SmYNK0kqaDI @ 00:05:08])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator who spoke on this starts in the same place: you cannot cut '
+                              'what you cannot see. AWS With A Beer frames FinOps as a financial guard '
+                              'rail that forces engineering, finance and leadership into one room, and '
+                              'names lack of visibility, zombie instances, tangled pricing on data '
+                              'transfer and reserved instances, and organizational silos as the core leaks '
+                              '[6qqv9Ss3MaE @ 00:01:50]. Intellipaat pushes ownership down to the people '
+                              'launching the servers: finance experts will not fully understand ECS or '
+                              'Lambda versus EC2 choices, so developers must justify spend against '
+                              'business value and own the bill [7_L1_3-4kg8 @ 00:07:24]. Nathan Perry of '
+                              'the AWS OPTICS team describes how Amazon itself moved from monthly, '
+                              'account-level data to hourly, ARN-level grain using CUR and Data Exports, '
+                              'then democratized Cost Explorer to every team rather than hoarding it '
+                              'inside a central group [tPYmvdc5oE0 @ 00:02:17]. Rem at Vantage lays out '
+                              'the same sequence for AI spend: visibility, then allocation, then value '
+                              'measurement, then budgets and guardrails, in that order [1-lJfz3oQ2w @ '
+                              '00:08:02]. The shared lesson is blunt. Get granular data into the hands of '
+                              'whoever controls the resource, attach a business owner to every dollar, and '
+                              'only then start cutting.',
+                              'Rate optimization is the second point of agreement, and the numbers are '
+                              'loud. Intellipaat puts on-demand pricing at two or three times the cost of '
+                              'long-term commitment and argues a central team should own rate negotiation '
+                              "so engineers never touch it [7_L1_3-4kg8 @ 00:22:10]. ProsperOps' Erik "
+                              'Carlin pitches the logical extreme: software that buys and manages Reserved '
+                              'Instances and Savings Plans autonomously across more than $1B in annual '
+                              'compute, stating flatly that the platform does not provide recommendations, '
+                              'it acts [_ScBbR2FfCA @ 00:00:23]. Tatum Tummins of Kion makes the '
+                              'governance case for the same instinct, warning that a human review cycle of '
+                              '30 to 60 days simply lets waste pile up while the ticket waits; the line is '
+                              'that policy becomes automation and automation becomes guardrails '
+                              "[NE8Ua2YVa6Q @ 00:06:12]. Nathan Perry keeps Amazon's automation policy- "
+                              'and threshold-triggered but logs every action and preserves human '
+                              'oversight, calling that balance crucial to building trust and driving '
+                              'adoption [tPYmvdc5oE0 @ 00:13:10]. The consensus position: commit to '
+                              'discounted rates centrally, encode waste definitions, snapshot retention, '
+                              'lights-off schedules and tagging rules as policy, and let machines execute '
+                              'faster than a monthly review meeting ever could, while keeping an audit '
+                              'trail humans can read.',
+                              'The third shared conviction is that AI tokens have become the budget line '
+                              'that breaks plans. Jean of 451/S&P reports that GenAI was the top cause of '
+                              'budget overruns greater than 10%, and that FinOps X attendees now say 80% '
+                              "of their time goes to AI spend [N1u_6ENlZV4 @ 00:15:23]. Vantage's Ben adds "
+                              'that tracked spend across roughly 30 AI providers has tripled year-to-date, '
+                              'with customers commonly running 1,500 to 2,500 employees on Claude. In the '
+                              'Tokenmaxxing session, the Vantage team warns that leaderboards treating '
+                              'token burn as productivity are not sustainable because tokens cost money, '
+                              'and pushes cost per developer, cost per customer and cost per Linear ticket '
+                              'as the real yardsticks [1-lJfz3oQ2w @ 00:05:23]. Adam Richter of the AWS '
+                              'optics team reframes the job itself: FinOps is shifting from reading '
+                              'dashboards to asking whether ten large GPU instances are each idling at 10% '
+                              "when one at 100% would do [JqwiGt78aOI @ 00:07:58]. Intellipaat's unit math "
+                              'shows why per-unit thinking wins: a Lambda refactor lifts spend from $1,000 '
+                              'to $1,300 while users double from 1,000 to 2,000, pushing cost per customer '
+                              'below $1 [7_L1_3-4kg8 @ 00:35:30].'],
+               'table': {'caption': 'Where practitioners agree on the baseline FinOps operating model',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Actually Do',
+                                     'Why It Matters To The Bill',
+                                     'Expert Source'],
+                         'rows': [['Visibility comes before any cutting',
+                                   'Run Cost Explorer as a financial Fitbit, AWS Budgets with custom '
+                                   'alerts, and Trusted Advisor for idle resources',
+                                   'Zombie instances, complex pricing and organizational silos drive '
+                                   'uncontrolled cloud growth when nobody is watching',
+                                   'AWS With A Beer ([6qqv9Ss3MaE @ 00:03:00])'],
+                                  ['Fine-grained cost data for every team',
+                                   'Move from monthly account grain to hourly ARN grain using CUR and Data '
+                                   'Exports, then open Cost Explorer to all',
+                                   'Teams can only fix spend they can trace back to the specific resources '
+                                   'they launched',
+                                   'AWS Events ([tPYmvdc5oE0 @ 00:02:17])'],
+                                  ['Engineers own their own cloud spend',
+                                   'Developers justify every EC2 launch against business value instead of '
+                                   'deferring cost questions to finance',
+                                   'Finance staff cannot judge ECS, Lambda or EC2 architecture trade-offs '
+                                   'on their own',
+                                   'Intellipaat ([7_L1_3-4kg8 @ 00:07:24])'],
+                                  ['Governance runs as automated policy',
+                                   'Encode orphan definitions, snapshot retention, lights-off for dev and '
+                                   'sandbox, and tag key-value pairs as policy',
+                                   'Human reviews lasting 30 to 60 days let waste keep accruing while '
+                                   'approvals sit in queue',
+                                   'AWS Events ([NE8Ua2YVa6Q @ 00:05:06])'],
+                                  ['Commitment buying is centralized and automated',
+                                   'Automate RIs and Savings Plans and score results with Effective '
+                                   'Savings Rate net of the vendor fee',
+                                   'ESR turns discount instruments into one outcome-based ROI number '
+                                   'leadership can track',
+                                   'ProsperOps, a Flexera company ([_ScBbR2FfCA @ 00:00:56])'],
+                                  ['AI spend needs a multi-KPI scorecard',
+                                   'Track model mix, cache ratio, cost per developer, cost per customer '
+                                   'and cost per Linear ticket together',
+                                   'Single KPIs get gamed through smaller PRs or prompt reuse that '
+                                   'inflates cache-hit ratios',
+                                   'Vantage ([1-lJfz3oQ2w @ 00:16:23])'],
+                                  ['Spend is framed against business outcomes',
+                                   'Attribute spend to revenue, such as $100K of cloud spend tied to $1M '
+                                   'of revenue generated',
+                                   'Business-aligned mechanisms are one of the three core lessons from '
+                                   "Amazon's internal FinOps program",
+                                   'AWS Events ([tPYmvdc5oE0 @ 00:16:27])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["On commitments, ProsperOps publishes the scoreboard. Erik Carlin's example "
+                              'customer console shows 1,306 automated actions averaging more than 45 per '
+                              'day, near-perfect utilization, a 47% blended discount and over 98% '
+                              'coverage, with savings reported as incremental lifetime dollars net of the '
+                              'ProsperOps charge and allocated back by account, resource type or region '
+                              'through Intelligent Showback [_ScBbR2FfCA @ 00:01:08]. The ProsperOps '
+                              'benchmark across more than 1,400 data points, up to $2M per month in '
+                              'compute, sets the grading curve: average Effective Savings Rate is 10.5%, '
+                              'the 75th percentile sits in the low 20s and the 98th percentile hits about '
+                              '40.5% [KW_LS_stgvc @ 00:03:35]. The same benchmark flags a savings-loss '
+                              'zone, mostly at smaller customers holding unused commitments, because it is '
+                              "actually possible with these instruments to lose money. Intellipaat's term "
+                              'rule is the street version: never buy a three-year plan for an application '
+                              'expected to last two, since one more year is completely wasted [7_L1_3-4kg8 '
+                              '@ 00:15:36]. On Azure, the FinOps Foundation demo overlays existing '
+                              'reservations and savings plans before acting on Advisor rightsizing, '
+                              'because shrinking a VM can leave an existing RI underutilized [b7TiwS4_Ytw '
+                              '@ 00:17:51].',
+                              "Token spend gets its own toolkit. Vantage's demo wires OpenAI, Anthropic "
+                              'and Cursor billing into one view, drills from token usage into uncached '
+                              'input, cache writes, cache reads and output, then sets per-user budgets '
+                              'with anomaly alerts; joining application logs to Anthropic costs splits out '
+                              'agents that share a single API key [1-lJfz3oQ2w @ 00:24:06]. Ben at Vantage '
+                              'recommends Bedrock request metadata combined with virtual tags for '
+                              'attribution, and flags the billing-latency gap: AWS billing lags seven to '
+                              'eight hours while an engineer can blow up token usage inside an hour, so '
+                              'invocation logs should stream straight to the cost platform [N1u_6ENlZV4 @ '
+                              "00:39:12]. Adam Richter's routing playbook uses Bedrock intelligent prompt "
+                              'routing, Opus to plan and Sonnet or Haiku to write code, with backoffs or '
+                              'sequential calls to dodge API throttling; input tokens run roughly four '
+                              'times cheaper than output, but input balloons over multi-turn chats '
+                              "[JqwiGt78aOI @ 00:18:04]. Hande Adiguzel treats the agent's context window "
+                              'as a budget to optimize rather than a limit, warning that handing an agent '
+                              'too many tools makes it slower, more expensive and likely to pick the wrong '
+                              'tool [b7TiwS4_Ytw @ 00:23:47].',
+                              'Repatriation math is where the street gets specific. Caleb Writes Code runs '
+                              'the H100 numbers: a $200 monthly subscription over six years totals '
+                              '$14,400, buying an H100 costs about $30,000, and renting one from a '
+                              'neocloud at about $2.20 per hour for eight hours a day runs about $38,544 '
+                              'with weekends or $27,456 on weekdays only [SmYNK0kqaDI @ 00:01:20]. Sharing '
+                              'one card among four users shifts part of the math, since four subscriptions '
+                              'cost $57,600 while the H100 plus roughly $3,700 of electricity at $0.20 per '
+                              'kWh totals about $33,700, but Kimi K2 Thinking needs at least 14 H100s at '
+                              'full precision and a DGX H100 lands near $400K total cost of ownership, or '
+                              '28 users to break even [SmYNK0kqaDI @ 00:05:08]. Craft Computing shows the '
+                              'cheap end: a Quanta T22HF two-node Epyc chassis with rails for $500, at a '
+                              'time when a single H11SSL board alone has climbed to $300 to $400 '
+                              '[JoqFD69bWLw @ 00:05:40]. Nick Gioftsos contrasts a $200 box against a '
+                              "client's $4,000 cloud bill for the same workload, and specs a roughly 15 W "
+                              'lab built on a Proxmox mini PC, a separate NAS, and a VLAN-segmented router '
+                              'and switch [rGnDq9evKng @ 00:00:00].'],
+               'table': {'caption': 'Exact mechanics, settings and unit economics taught by the '
+                                    'practitioners',
+                         'headers': ['Mechanic Or Tool',
+                                     'Exact Numbers Or Settings',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Effective Savings Rate benchmark curve',
+                                   'Average 10.5%, 75th percentile in the low 20s, 98th percentile about '
+                                   '40.5%',
+                                   'Grade commitment performance against more than 1,400 peer data points '
+                                   'up to $2M monthly',
+                                   'ProsperOps, a Flexera company ([KW_LS_stgvc @ 00:03:35])'],
+                                  ['Autonomous RI and Savings Plan engine',
+                                   '1,306 actions, 45-plus per day, 47% blended discount, over 98% '
+                                   'coverage',
+                                   'Let software adjust commitments daily instead of waiting on periodic '
+                                   'human purchase reviews',
+                                   'ProsperOps, a Flexera company ([_ScBbR2FfCA @ 00:01:08])'],
+                                  ['Azure tiered forecast-based budgets',
+                                   '50% and 75% thresholds on actual or forecasted cost, scoped by '
+                                   'subscription, app, then tags',
+                                   'Forecast-based alerts fire earlier and offset the latency in Azure '
+                                   'cost data',
+                                   'FinOps Foundation ([b7TiwS4_Ytw @ 00:11:19])'],
+                                  ['AI-written Cloud Custodian cleanup policy',
+                                   'Snapshot unattached EBS volumes older than 7 days, then delete the '
+                                   'volumes',
+                                   'Turn written waste definitions into enforced cleanup without filing '
+                                   'manual tickets',
+                                   'AWS Events ([NE8Ua2YVa6Q @ 00:09:25])'],
+                                  ['AI-assisted monthly budget updates',
+                                   'Cut from 45 to 60 minutes down to under 5 minutes across 50 to 100 '
+                                   'cost centers',
+                                   'In-app prompts replace spreadsheet grind for owners maintaining many '
+                                   'cost center budgets',
+                                   'AWS Events ([NE8Ua2YVa6Q @ 00:08:34])'],
+                                  ['Rightsizing lift-and-shift servers',
+                                   '32 cores and 256 GB provisioned, 4 vCPU and 16 GB used at peak, 87% '
+                                   'wasted',
+                                   'Monitor, identify, downsize, re-evaluate using Compute Optimizer and '
+                                   'CloudWatch before and after migration',
+                                   'CloudExpert Solutions ([dpje7Qql0SU @ 00:09:37])'],
+                                  ['Owning versus renting H100 capacity',
+                                   '$30,000 per card, about $2.20 per hour rented, DGX near $400K total '
+                                   'cost of ownership',
+                                   'Compare against $200 monthly subscriptions over six years before '
+                                   'buying any GPU hardware',
+                                   'Caleb Writes Code ([SmYNK0kqaDI @ 00:01:03])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Shortcuts operators pulled straight from their own demos',
+                           'body': 'Small configuration moves the speakers used to keep automation, agents '
+                                   'and token budgets from biting back.',
+                           'items': ['Instance Scheduler is tag-based, so warn developers who work '
+                                     'weekends before lights-off schedules shut their boxes down [AWS '
+                                     'Events — JqwiGt78aOI @ 00:14:19].',
+                                     'Start every FinOps agent read-only or human-in-the-loop, and confirm '
+                                     '.gitignore hides access keys before the repo leaves the machine [AWS '
+                                     'Events — JqwiGt78aOI @ 00:19:37].',
+                                     'Prompt compactors can raise output tokens, so measure the full bill '
+                                     'before declaring a compression win [Vantage — 1-lJfz3oQ2w @ '
+                                     '00:30:15].',
+                                     'If a user cannot view cost in the Azure portal, neither can their '
+                                     'agent, so sort cost-read permissions before enabling the ARM MCP '
+                                     'Server cost toolsets via headers [FinOps Foundation — b7TiwS4_Ytw @ '
+                                     '00:26:56].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Drop to hourly, resource-level cost data',
+                              'action': 'Enable CUR and Data Exports at hourly ARN grain and open Cost '
+                                        'Explorer to every engineering team.',
+                              'detail': 'Amazon moved off monthly account-level data, democratized Cost '
+                                        'Explorer, and layered in tagging, Compute Optimizer, Cost '
+                                        'Optimization Hub and Organizations [AWS Events — tPYmvdc5oE0 @ '
+                                        '00:02:17].'},
+                             {'step': 2,
+                              'title': 'Set tiered, forecast-driven budgets',
+                              'action': 'Build budgets by subscription or billing account, then app, then '
+                                        'tags, with 50% and 75% thresholds on forecasted cost.',
+                              'detail': 'Forecast-based budgets are more proactive and offset cost-data '
+                                        'latency compared with alerts on actual spend [FinOps Foundation — '
+                                        'b7TiwS4_Ytw @ 00:11:19].'},
+                             {'step': 3,
+                              'title': 'Automate commitments and score them with ESR',
+                              'action': 'Hand RI and Savings Plan management to automation and track '
+                                        'Effective Savings Rate against the peer curve.',
+                              'detail': 'Average ESR is 10.5%, the 75th percentile sits in the low 20s and '
+                                        'the 98th percentile reaches about 40.5%, while unused commitments '
+                                        'can push smaller accounts into a savings-loss zone [ProsperOps, a '
+                                        'Flexera company — KW_LS_stgvc @ 00:03:35].'},
+                             {'step': 4,
+                              'title': 'Instrument tokens in near real time',
+                              'action': 'Stream model invocation logs into the cost platform, tag Bedrock '
+                                        'requests, and set per-user budgets with anomaly alerts.',
+                              'detail': 'AWS billing lags seven to eight hours while an engineer can blow '
+                                        'up token usage within an hour, so invocation logs plus Bedrock '
+                                        'request metadata and virtual tags close the gap [Vantage — '
+                                        'N1u_6ENlZV4 @ 00:39:12].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The build-versus-buy fight is the sharpest split in the room. Jean of '
+                              '451/S&P, speaking on Vantage, tracks a repeating arc: shops start with a '
+                              'first-party tool, try to roll their own, then end up buying a capable '
+                              'third-party platform [N1u_6ENlZV4 @ 00:06:38]. Nathan Perry of the AWS '
+                              'OPTICS team, after 11 years inside Amazon, goes further and labels the '
+                              "early custom-build confidence 'Dunning Kruger', a lesson the Amazon team "
+                              'paid to learn [tPYmvdc5oE0 @ 00:19:27]. Adam Richter, also on the optics '
+                              'team, does not ban building. Richter wires up a live FinOps agent on camera '
+                              'with Kiro CLI, Strands and the Billing and Cost Management MCP, but warns '
+                              'that the moment you build, you own support and security yourself '
+                              '[JqwiGt78aOI @ 00:09:22]. ProsperOps takes the opposite pole from every '
+                              'dashboard vendor: Erik Carlin states flatly that the platform does not '
+                              'provide recommendations, it acts, with ProsperBot buying and reshaping RIs '
+                              'and Savings Plans autonomously across more than $1B in annual compute '
+                              '[_ScBbR2FfCA @ 00:00:23]. The operator choice is three-way: buy visibility, '
+                              'build an agent you will maintain forever, or hand the commitment portfolio '
+                              'to an autonomous engine and judge it purely on incremental savings net of '
+                              'its own charge.',
+                              'How fast automation should fire is the second fault line. Tatum Tummins of '
+                              'Kion, who spent 7.5 years running FinOps in healthcare, argues that a human '
+                              'review cycle of 30 to 60 days simply lets waste accrue in the meantime, and '
+                              'pushes policy straight into automated guardrails: orphan definitions, '
+                              'snapshot retention, lights-off for dev and sandbox, and enforced tag '
+                              "key-value pairs [NE8Ua2YVa6Q @ 00:06:12]. Nathan Perry runs Amazon's own "
+                              'estate with a counterweight, keeping policy- and threshold-triggered '
+                              'automation paired with human oversight and logging every single action, '
+                              'calling that balance crucial to building trust and driving adoption '
+                              '[tPYmvdc5oE0 @ 00:13:10]. Adam Richter sits even further toward caution for '
+                              'agents, preferring to start read-only or human-in-the-loop before granting '
+                              'any write access [JqwiGt78aOI @ 00:19:37]. The Microsoft team of Vikram '
+                              'Desai and Hande Adiguzel lands on a hybrid: the GitHub Copilot CLI agent '
+                              'pulls Advisor usage and rate recommendations, overlays existing RIs and '
+                              'savings plans, then ships the change as a Terraform pull request for human '
+                              "approval [b7TiwS4_Ytw @ 00:20:35]. Kion's fast lane looks like an "
+                              'AI-written Cloud Custodian policy that snapshots unattached EBS volumes '
+                              'older than 7 days and then deletes them; the Microsoft lane routes every '
+                              'change through a reviewer first.',
+                              'The repatriation debate splits cleanly between cloud economics and owned '
+                              'iron. CloudExpert Solutions frames CapEx as the losing bet: $2M on servers '
+                              'over five years, traffic drops by year three, the hardware is outdated by '
+                              'year five, and you carry the full risk, while OpEx scales from 10 to 50 to '
+                              "5 servers with 'zero waste' [dpje7Qql0SU @ 00:02:47]. Nick Gioftsos, a "
+                              'systems and cloud engineer working in Azure and Microsoft 365, opens with '
+                              "the counter-punch: a $200 box doing the same workload as a client's $4,000 "
+                              'cloud bill, with the team sitting idle for three hours during a regional '
+                              'hiccup, and a warning that cloud-only engineers are building careers on '
+                              'rented land [rGnDq9evKng @ 00:00:00]. Caleb Writes Code runs the GPU '
+                              'version of the same math and lands on the rental side: $200 a month in '
+                              'subscriptions for six years totals $14,400 against roughly $30,000 for one '
+                              "H100, so 'the math doesn't really work in our favor' for owning "
+                              '[SmYNK0kqaDI @ 00:01:03]. Hostrunway pitches the middle path: dedicated '
+                              'bare metal with H100, H200 and B300 GPUs, no hypervisor, no noisy '
+                              'neighbors, billed month-to-month with no lock-in [Auj5NAlVFVk @ 00:02:13]. '
+                              "Even Gioftsos concedes the cloud isn't going away."],
+               'table': {'caption': 'Competing playbooks named practitioners run for cloud and AI compute '
+                                    'spend',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Cost tooling: build in-house or buy a platform',
+                                   'Start with first-party tools, attempt an in-house build, then buy a '
+                                   'capable third-party tool',
+                                   'Build on native AWS Billing and Cost Management and treat custom-build '
+                                   'confidence as Dunning Kruger',
+                                   'Vantage ([N1u_6ENlZV4 @ 00:06:38]); AWS Events ([tPYmvdc5oE0 @ '
+                                   '00:19:27])'],
+                                  ['Who executes commitment purchases and adjustments',
+                                   'ProsperBot autonomously buys and reshapes RIs and Savings Plans with '
+                                   'no recommendations step',
+                                   'Trusted Advisor and Compute Optimizer surface rightsizing and RI '
+                                   'recommendations for humans to act on',
+                                   'ProsperOps, a Flexera company ([_ScBbR2FfCA @ 00:00:23]); AWS With A '
+                                   'Beer ([6qqv9Ss3MaE @ 00:03:00])'],
+                                  ['How fast governance automation should fire',
+                                   'Policy becomes automation and guardrails, skipping 30 to 60 day human '
+                                   'review lag',
+                                   'Policy and threshold-triggered automation paired with human oversight '
+                                   'and every action logged',
+                                   'AWS Events ([NE8Ua2YVa6Q @ 00:06:12]); AWS Events ([tPYmvdc5oE0 @ '
+                                   '00:13:10])'],
+                                  ['How much write access a FinOps agent gets',
+                                   'Start the agent read-only or human-in-the-loop before any autonomous '
+                                   'action',
+                                   'Agent drafts the optimization as a Terraform pull request for human '
+                                   'approval',
+                                   'AWS Events ([JqwiGt78aOI @ 00:19:37]); FinOps Foundation ([b7TiwS4_Ytw '
+                                   '@ 00:20:35])'],
+                                  ['Owning infrastructure versus paying for cloud usage',
+                                   'OpEx cloud: pay for 10, then 50, then 5 servers with zero waste',
+                                   "A $200 owned box replacing a client's $4,000 cloud bill for the same "
+                                   'workload',
+                                   'CloudExpert Solutions ([dpje7Qql0SU @ 00:04:13]); Nick Gioftsos '
+                                   '([rGnDq9evKng @ 00:00:00])'],
+                                  ['Single-user AI compute: subscribe, rent, or buy',
+                                   'A $200 monthly subscription totals $14,400 over six full years',
+                                   'Buy an H100 near $30,000 or rent a neocloud H100 at $2.20 per hour',
+                                   'Caleb Writes Code ([SmYNK0kqaDI @ 00:01:03])'],
+                                  ['How to route expensive models across the organization',
+                                   'Blunt routing that makes certain models off-limits to certain '
+                                   'departments entirely',
+                                   'Bedrock intelligent prompt routing: Opus plans the work, Sonnet or '
+                                   'Haiku writes the code',
+                                   'Vantage ([N1u_6ENlZV4 @ 00:27:24]); AWS Events ([JqwiGt78aOI @ '
+                                   '00:15:14])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Commitments are where operators bleed fastest. ProsperOps built a benchmark '
+                              'of more than 1,400 data points covering up to $2M a month in compute spend, '
+                              'and it maps a savings-loss zone where unused commitments turn into a net '
+                              "loss: 'it's actually possible with these instruments to lose money', with "
+                              'that zone dominated by smaller customers [KW_LS_stgvc @ 00:01:58]. Right '
+                              'above it sits a no-savings zone where commitments go unused at spend levels '
+                              'up to roughly $250K to $500K a month, and the average Effective Savings '
+                              'Rate across the whole set is only 10.5%, against the low 20s at the 75th '
+                              'percentile and about 40.5% at the 98th [KW_LS_stgvc @ 00:03:35]. '
+                              "Intellipaat's instructor gives the simplest version of the trap: buy a "
+                              "three-year plan for an app predicted to live two years and 'one more year "
+                              "would be completely wasted' [7_L1_3-4kg8 @ 00:15:36]. The Microsoft demo "
+                              'exposes the collision between rate and usage optimization: right-sizing a '
+                              'VM can leave an existing reservation underutilized, which is why the '
+                              'Copilot agent overlays current RIs and savings plans on top of Advisor '
+                              'recommendations before proposing any change [b7TiwS4_Ytw @ 00:17:51]. Rate '
+                              'wins and usage wins fight each other unless one workflow sees both at the '
+                              'same time.',
+                              'AI spend breaks the old monthly-close rhythm. Ben of Vantage and Jean of '
+                              '451/S&P both flag the latency gap: AWS billing lags 7 to 8 hours, while an '
+                              'engineer can blow up token usage inside an hour, so the fix is streaming '
+                              'invocation logs straight into the cost platform, and both agree there is '
+                              'still room for improvement [N1u_6ENlZV4 @ 00:39:12]. Tokenmaxxing creates '
+                              "its own perverse incentives: Vantage's session on AI budgets warns that "
+                              'smaller PRs drive tokens-per-PR down without improving cost-per-feature, '
+                              'and prompt reuse inflates cache-hit ratios, so any single KPI gets gamed '
+                              'and teams must track many of them [1-lJfz3oQ2w @ 00:14:57]. The same '
+                              'session reports that prompt compactors can raise output tokens, the '
+                              'opposite of what an operator buys them for [1-lJfz3oQ2w @ 00:30:15]. Adam '
+                              'Richter adds the math behind that trap: input tokens run about four times '
+                              'cheaper than output, but input balloons as multi-turn chats carry history '
+                              'forward, and the consensus-plus-judge agent pattern that cuts hallucination '
+                              "costs more to run [JqwiGt78aOI @ 00:18:04]. Vantage's rule is to decide the "
+                              'over-budget action, downgrade the model or stop usage, before the spike '
+                              'hits, while protecting end users in application AI.',
+                              'Repatriating to owned hardware trades the cloud bill for a new set of '
+                              'failure points. Craft Computing bought two AMD Epyc nodes in a Quanta T22HF '
+                              'chassis for $500 including rails, then hit a wall: one proprietary U.2 '
+                              'power cable, zero vendor documentation for a 2018 server, no POST after '
+                              'about 20 minutes, and a BMC that appears cloud-connected to Quanta, '
+                              'requiring a license and active subscription to manage your own local '
+                              "hardware [JoqFD69bWLw @ 00:15:33]. Quanta's answer was that it does not "
+                              'recommend CPUs not designed for the platform and cannot provide relevant '
+                              'documentation, leaving the fix to crowdsourcing [JoqFD69bWLw @ 00:19:39]. '
+                              'Caleb Writes Code finds the GPU version of the same trap: Kimi K2 Thinking '
+                              'needs at least 14 H100s at full precision, a DGX H100 runs $285K to $300K, '
+                              'about $400K total cost of ownership, and needs 28 users to break even '
+                              '[SmYNK0kqaDI @ 00:05:08]. Even then, the 140 GB left for KV cache yields '
+                              'roughly 80,000 tokens, about 2,850 per person. Nick Gioftsos names the '
+                              'cloud-side trap as the virtual taximeter: fear of a $400 bill drives a '
+                              'terraform destroy after 45 minutes, so day-90 problems like a full /var, '
+                              'expired certificates and memory leaks never surface [rGnDq9evKng @ '
+                              '00:03:58].'],
+               'table': {'caption': 'Firsthand traps and the economics check each practitioner applied',
+                         'headers': ['Trap', 'Firsthand Evidence', 'Economics Check', 'Expert Source'],
+                         'rows': [['Unused commitments sitting idle on the bill',
+                                   'Savings-loss zone concentrated among smaller customers in a '
+                                   '1,400-point benchmark',
+                                   'Track ESR: average 10.5% versus about 40.5% at the 98th percentile',
+                                   'ProsperOps, a Flexera company ([KW_LS_stgvc @ 00:01:58])'],
+                                  ["Commitment term longer than the workload's life",
+                                   'Three-year plan bought for an application predicted to last two years',
+                                   'One full year of the commitment is completely wasted',
+                                   'Intellipaat ([7_L1_3-4kg8 @ 00:15:36])'],
+                                  ['Slow human review of waste policies',
+                                   'Waste keeps accruing during 30 to 60 day review cycles',
+                                   'Convert written policy into automated guardrails that produce outcomes',
+                                   'AWS Events ([NE8Ua2YVa6Q @ 00:06:12])'],
+                                  ['Billing latency on fast-moving AI token spend',
+                                   'AWS billing lags 7 to 8 hours while one engineer can blow up tokens '
+                                   'within an hour',
+                                   'Stream invocation logs directly into the cost platform for near '
+                                   'real-time alerts',
+                                   'Vantage ([N1u_6ENlZV4 @ 00:39:12])'],
+                                  ['Lift-and-shift migration carrying oversized servers',
+                                   '32 cores and 256 GB provisioned while peak use is 4 vCPU and 16 GB',
+                                   '87% of spend wasted; monitor, identify, downsize, then re-evaluate '
+                                   'continuously',
+                                   'CloudExpert Solutions ([dpje7Qql0SU @ 00:09:37])'],
+                                  ['Cheap proprietary used servers with locked management',
+                                   'Cloud-connected BMC needing a Quanta subscription, no documentation, '
+                                   'one proprietary U.2 cable',
+                                   '$500 bought two Epyc nodes that still would not POST',
+                                   'Craft Computing ([JoqFD69bWLw @ 00:15:33])'],
+                                  ['Self-hosting a frontier model on owned GPUs',
+                                   'Kimi K2 Thinking needs at least 14 H100s at full precision',
+                                   'DGX H100 at about $400K TCO needs 28 users just to break even',
+                                   'Caleb Writes Code ([SmYNK0kqaDI @ 00:05:08])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Stop-Ship Checks Before Committing, Automating, or Repatriating',
+                           'body': 'Every item below is a trap a named practitioner hit or measured '
+                                   'firsthand. Clear all four before signing a commitment, granting an '
+                                   'agent write access, or racking owned hardware.',
+                           'items': ["Never buy a commitment term longer than the workload's predicted "
+                                     'life; a three-year plan on a two-year app wastes a full year '
+                                     '[Intellipaat — 7_L1_3-4kg8 @ 00:15:36].',
+                                     'Overlay existing RIs and savings plans before right-sizing, or the '
+                                     'downsized VM leaves the reservation underutilized [FinOps Foundation '
+                                     '— b7TiwS4_Ytw @ 00:17:51].',
+                                     'Start any FinOps agent read-only or human-in-the-loop, and confirm '
+                                     '.gitignore hides access keys before code leaves the box [AWS Events '
+                                     '— JqwiGt78aOI @ 00:19:37].',
+                                     'Before buying used servers, verify the BMC is not locked behind a '
+                                     'vendor cloud license and that documentation exists for the platform '
+                                     '[Craft Computing — JoqFD69bWLw @ 00:15:33].']}}],
+ 'pull_quote': '"It\'s actually possible with these instruments to lose money." — attributed to '
+               'ProsperOps, a Flexera company (KW_LS_stgvc @ 00:01:58).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Move cost data from monthly/account grain to hourly/ARN grain using CUR and Data '
+                      'Exports, and open Cost Explorer to every team [AWS Events — tPYmvdc5oE0 @ '
+                      '00:02:17].',
+                      'Adopt Effective Savings Rate as the outcome KPI for commitments and benchmark it '
+                      'against the 10.5% average and the 40.5% top tier [ProsperOps, a Flexera company — '
+                      'KW_LS_stgvc @ 00:00:39].',
+                      'Build tiered budgets from subscription to app to tags with 50% and 75% thresholds '
+                      'on forecasted cost to offset data latency [FinOps Foundation — b7TiwS4_Ytw @ '
+                      '00:11:19].',
+                      'Integrate OpenAI, Anthropic and Cursor spend, drill into uncached input, cache '
+                      'writes/reads and output, and set per-user budgets with anomaly alerts [Vantage — '
+                      '1-lJfz3oQ2w @ 00:19:43].',
+                      'Route models by task with Bedrock intelligent prompt routing, using Opus to plan '
+                      'and Sonnet or Haiku to code [AWS Events — JqwiGt78aOI @ 00:15:14].',
+                      'Codify waste policy as automation, such as a Cloud Custodian policy that snapshots '
+                      'unattached EBS volumes older than 7 days and then deletes them [AWS Events — '
+                      'NE8Ua2YVa6Q @ 00:09:25].'],
+ 'statutory_citations': [{'title': 'ProsperOps, a Flexera company — Benchmarking AWS Cloud Financial '
+                                   'Management [00:01:58]',
+                          'url': 'https://www.youtube.com/watch?v=KW_LS_stgvc&t=118s',
+                          'relevance': 'Primary practitioner testimony on commitment savings-loss zones '
+                                       'and ESR percentile benchmarks.'},
+                         {'title': "AWS Events — AWS re:Invent 2025 - Amazon's finops: Cloud cost lessons "
+                                   'from a global e-commerce giant (AMZ308) [00:13:10]',
+                          'url': 'https://www.youtube.com/watch?v=tPYmvdc5oE0&t=790s',
+                          'relevance': 'Primary practitioner testimony on balancing automation with human '
+                                       'oversight inside Amazon.'},
+                         {'title': 'Vantage — The State of Cloud & AI Cost Management in 2026 | FinOps '
+                                   'Summer Camp Session 1 [00:39:12]',
+                          'url': 'https://www.youtube.com/watch?v=N1u_6ENlZV4&t=2352s',
+                          'relevance': 'Primary practitioner testimony on billing latency versus near '
+                                       'real-time AI token spend.'},
+                         {'title': 'Caleb Writes Code — AI Subscription vs H100 [00:01:03]',
+                          'url': 'https://www.youtube.com/watch?v=SmYNK0kqaDI&t=63s',
+                          'relevance': 'Primary practitioner testimony on owning versus renting versus '
+                                       'subscribing to GPU compute.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '6qqv9Ss3MaE',
+                       'title': 'AWS FinOps Explained in 5 Minutes',
+                       'channel': 'AWS With A Beer',
+                       'author': 'AWS With A Beer',
+                       'text': 'FinOps is a financial guard rail where engineering, finance and leadership '
+                               'work together.',
+                       'tip': 'FinOps is a financial guard rail where engineering, finance and leadership '
+                              'work together.',
+                       'timestamp': 71,
+                       'timestamp_seconds': 71,
+                       'timestamp_label': '[00:01:11]',
+                       'url': 'https://www.youtube.com/watch?v=6qqv9Ss3MaE&t=71s',
+                       'markdown': '[00:01:11](https://www.youtube.com/watch?v=6qqv9Ss3MaE&t=71s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'N1u_6ENlZV4',
+                       'title': 'The State of Cloud & AI Cost Management in 2026 | FinOps Summer Camp '
+                                'Session 1',
+                       'channel': 'Vantage',
+                       'author': 'Vantage',
+                       'text': 'And so these are big businesses that are growing and as a result they have '
+                               'a big impact on costs.',
+                       'tip': 'And so these are big businesses that are growing and as a result they have '
+                              'a big impact on costs.',
+                       'timestamp': 1408,
+                       'timestamp_seconds': 1408,
+                       'timestamp_label': '[00:23:28]',
+                       'url': 'https://www.youtube.com/watch?v=N1u_6ENlZV4&t=1408s',
+                       'markdown': '[00:23:28](https://www.youtube.com/watch?v=N1u_6ENlZV4&t=1408s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_ScBbR2FfCA',
+                       'title': 'FinOps X - 3-min Vendor Pitch - ProsperOps with Erik Carlin',
+                       'channel': 'ProsperOps, a Flexera company',
+                       'author': 'ProsperOps, a Flexera company',
+                       'text': "Our platform doesn't provide recommendations.",
+                       'tip': "Our platform doesn't provide recommendations.",
+                       'timestamp': 23,
+                       'timestamp_seconds': 23,
+                       'timestamp_label': '[00:00:23]',
+                       'url': 'https://www.youtube.com/watch?v=_ScBbR2FfCA&t=23s',
+                       'markdown': '[00:00:23](https://www.youtube.com/watch?v=_ScBbR2FfCA&t=23s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NE8Ua2YVa6Q',
+                       'title': 'AWS re:Invent 2025 - FinOps+: A New Era of Accelerating Value (COP211)',
+                       'channel': 'AWS Events',
+                       'author': 'AWS Events',
+                       'text': 'Policy becomes automation and automation becomes guardrails.',
+                       'tip': 'Policy becomes automation and automation becomes guardrails.',
+                       'timestamp': 285,
+                       'timestamp_seconds': 285,
+                       'timestamp_label': '[00:04:45]',
+                       'url': 'https://www.youtube.com/watch?v=NE8Ua2YVa6Q&t=285s',
+                       'markdown': '[00:04:45](https://www.youtube.com/watch?v=NE8Ua2YVa6Q&t=285s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1-lJfz3oQ2w',
+                       'title': 'Managing AI Budgets in the Age of Tokenmaxxing | FinOps Summer Camp '
+                                'Session 3',
+                       'channel': 'Vantage',
+                       'author': 'Vantage',
+                       'text': 'In reality this is not really a sustainable practice because obviously '
+                               'tokens cost money.',
+                       'tip': 'In reality this is not really a sustainable practice because obviously '
+                              'tokens cost money.',
+                       'timestamp': 323,
+                       'timestamp_seconds': 323,
+                       'timestamp_label': '[00:05:23]',
+                       'url': 'https://www.youtube.com/watch?v=1-lJfz3oQ2w&t=323s',
+                       'markdown': '[00:05:23](https://www.youtube.com/watch?v=1-lJfz3oQ2w&t=323s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KW_LS_stgvc',
+                       'title': 'Benchmarking AWS Cloud Financial Management',
+                       'channel': 'ProsperOps, a Flexera company',
+                       'author': 'ProsperOps, a Flexera company',
+                       'text': "It's actually possible with these instruments to lose money.",
+                       'tip': "It's actually possible with these instruments to lose money.",
+                       'timestamp': 118,
+                       'timestamp_seconds': 118,
+                       'timestamp_label': '[00:01:58]',
+                       'url': 'https://www.youtube.com/watch?v=KW_LS_stgvc&t=118s',
+                       'markdown': '[00:01:58](https://www.youtube.com/watch?v=KW_LS_stgvc&t=118s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wKXTR8j4jbY',
+                       'title': 'AWS reInvent 2025:  FinOps A New Era of Accelerating Value',
+                       'channel': 'Kion',
+                       'author': 'Kion',
+                       'text': 'When that happens, you start to have guardrails and those guardrails '
+                               'produce outcomes.',
+                       'tip': 'When that happens, you start to have guardrails and those guardrails '
+                              'produce outcomes.',
+                       'timestamp': 345,
+                       'timestamp_seconds': 345,
+                       'timestamp_label': '[00:05:45]',
+                       'url': 'https://www.youtube.com/watch?v=wKXTR8j4jbY&t=345s',
+                       'markdown': '[00:05:45](https://www.youtube.com/watch?v=wKXTR8j4jbY&t=345s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tPYmvdc5oE0',
+                       'title': "AWS re:Invent 2025 - Amazon's finops: Cloud cost lessons from a global "
+                                'e-commerce giant (AMZ308)',
+                       'channel': 'AWS Events',
+                       'author': 'AWS Events',
+                       'text': "This balance between automation and oversight is super important, and it's "
+                               'crucial to building trust and driving adoption.',
+                       'tip': "This balance between automation and oversight is super important, and it's "
+                              'crucial to building trust and driving adoption.',
+                       'timestamp': 790,
+                       'timestamp_seconds': 790,
+                       'timestamp_label': '[00:13:10]',
+                       'url': 'https://www.youtube.com/watch?v=tPYmvdc5oE0&t=790s',
+                       'markdown': '[00:13:10](https://www.youtube.com/watch?v=tPYmvdc5oE0&t=790s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7_L1_3-4kg8',
+                       'title': 'AWS Finops Tutorial | AWS FinOps | Cloud Finops | Intellipaat',
+                       'channel': 'Intellipaat',
+                       'author': 'Intellipaat',
+                       'text': 'Do not buy a three-year plan for an application predicted to last two '
+                               'years, because one more year would be completely wasted.',
+                       'tip': 'Do not buy a three-year plan for an application predicted to last two '
+                              'years, because one more year would be completely wasted.',
+                       'timestamp': 936,
+                       'timestamp_seconds': 936,
+                       'timestamp_label': '[00:15:36]',
+                       'url': 'https://www.youtube.com/watch?v=7_L1_3-4kg8&t=936s',
+                       'markdown': '[00:15:36](https://www.youtube.com/watch?v=7_L1_3-4kg8&t=936s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JqwiGt78aOI',
+                       'title': 'Build a FinOps Agent I The Keys to AWS Optimization | S16 E6',
+                       'channel': 'AWS Events',
+                       'author': 'AWS Events',
+                       'text': 'From my perspective, I prefer initially like read only or human in the '
+                               'loop.',
+                       'tip': 'From my perspective, I prefer initially like read only or human in the '
+                              'loop.',
+                       'timestamp': 1177,
+                       'timestamp_seconds': 1177,
+                       'timestamp_label': '[00:19:37]',
+                       'url': 'https://www.youtube.com/watch?v=JqwiGt78aOI&t=1177s',
+                       'markdown': '[00:19:37](https://www.youtube.com/watch?v=JqwiGt78aOI&t=1177s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dpje7Qql0SU',
+                       'title': 'Cloud FinOps Explained | CapEx vs OpEx, Cost Savings & Rightsizing | AWS '
+                                'CLF-C02 [2026]',
+                       'channel': 'CloudExpert Solutions',
+                       'author': 'CloudExpert Solutions',
+                       'text': 'They are wasting 87% of what they pay for.',
+                       'tip': 'They are wasting 87% of what they pay for.',
+                       'timestamp': 598,
+                       'timestamp_seconds': 598,
+                       'timestamp_label': '[00:09:58]',
+                       'url': 'https://www.youtube.com/watch?v=dpje7Qql0SU&t=598s',
+                       'markdown': '[00:09:58](https://www.youtube.com/watch?v=dpje7Qql0SU&t=598s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'b7TiwS4_Ytw',
+                       'title': 'AI for FinOps on Azure: Smarter Cloud Operations with Agentic AI',
+                       'channel': 'FinOps Foundation',
+                       'author': 'FinOps Foundation',
+                       'text': "There's one principle we kept in mind when we were building the server, "
+                               "which is treat your agent's context window as a budget you need to "
+                               'optimize, rather than a limit you cannot exceed.',
+                       'tip': "There's one principle we kept in mind when we were building the server, "
+                              "which is treat your agent's context window as a budget you need to "
+                              'optimize, rather than a limit you cannot exceed.',
+                       'timestamp': 1406,
+                       'timestamp_seconds': 1406,
+                       'timestamp_label': '[00:23:26]',
+                       'url': 'https://www.youtube.com/watch?v=b7TiwS4_Ytw&t=1406s',
+                       'markdown': '[00:23:26](https://www.youtube.com/watch?v=b7TiwS4_Ytw&t=1406s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JoqFD69bWLw',
+                       'title': 'TWO AMD Epyc Servers for $500!',
+                       'channel': 'Craft Computing',
+                       'author': 'Craft Computing',
+                       'text': 'The BMC appears to be cloud connected directly to Quanta, so you have to '
+                               'have a license and an active subscription with Quanta to access the BMC on '
+                               'your own local hardware.',
+                       'tip': 'The BMC appears to be cloud connected directly to Quanta, so you have to '
+                              'have a license and an active subscription with Quanta to access the BMC on '
+                              'your own local hardware.',
+                       'timestamp': 933,
+                       'timestamp_seconds': 933,
+                       'timestamp_label': '[00:15:33]',
+                       'url': 'https://www.youtube.com/watch?v=JoqFD69bWLw&t=933s',
+                       'markdown': '[00:15:33](https://www.youtube.com/watch?v=JoqFD69bWLw&t=933s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rGnDq9evKng',
+                       'title': 'The Cloud Was a Lie (Why Senior Engineers Are Going Back to Bare Metal)',
+                       'channel': 'Nick Gioftsos',
+                       'author': 'Nick Gioftsos',
+                       'text': 'If you only know how to build in the cloud, you are building your career '
+                               'on rented land.',
+                       'tip': 'If you only know how to build in the cloud, you are building your career on '
+                              'rented land.',
+                       'timestamp': 55,
+                       'timestamp_seconds': 55,
+                       'timestamp_label': '[00:00:55]',
+                       'url': 'https://www.youtube.com/watch?v=rGnDq9evKng&t=55s',
+                       'markdown': '[00:00:55](https://www.youtube.com/watch?v=rGnDq9evKng&t=55s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Auj5NAlVFVk',
+                       'title': 'Bare-Metal, Cloud & AI GPU Servers Built for Scale | Hostrunway',
+                       'channel': 'Hostrunway',
+                       'author': 'Hostrunway',
+                       'text': 'No hypervisor, no noisy neighbors.',
+                       'tip': 'No hypervisor, no noisy neighbors.',
+                       'timestamp': 55,
+                       'timestamp_seconds': 55,
+                       'timestamp_label': '[00:00:55]',
+                       'url': 'https://www.youtube.com/watch?v=Auj5NAlVFVk&t=55s',
+                       'markdown': '[00:00:55](https://www.youtube.com/watch?v=Auj5NAlVFVk&t=55s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SmYNK0kqaDI',
+                       'title': 'AI Subscription vs H100',
+                       'channel': 'Caleb Writes Code',
+                       'author': 'Caleb Writes Code',
+                       'text': "So yeah, right up front, the math doesn't really work in our favor because "
+                               "you're much better off using $200 a month subscription for 6 years "
+                               'instead.',
+                       'tip': "So yeah, right up front, the math doesn't really work in our favor because "
+                              "you're much better off using $200 a month subscription for 6 years instead.",
+                       'timestamp': 63,
+                       'timestamp_seconds': 63,
+                       'timestamp_label': '[00:01:03]',
+                       'url': 'https://www.youtube.com/watch?v=SmYNK0kqaDI&t=63s',
+                       'markdown': '[00:01:03](https://www.youtube.com/watch?v=SmYNK0kqaDI&t=63s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SmYNK0kqaDI',
+                       'title': 'AI Subscription vs H100',
+                       'channel': 'Caleb Writes Code',
+                       'author': 'Caleb Writes Code',
+                       'text': 'Broadly speaking my hot take is that companies that charge by the API '
+                               "pricing probably bakes their unit cost into their pricing so they don't "
+                               'lose money.',
+                       'tip': 'Broadly speaking my hot take is that companies that charge by the API '
+                              "pricing probably bakes their unit cost into their pricing so they don't "
+                              'lose money.',
+                       'timestamp': 509,
+                       'timestamp_seconds': 509,
+                       'timestamp_label': '[00:08:29]',
+                       'url': 'https://www.youtube.com/watch?v=SmYNK0kqaDI&t=509s',
+                       'markdown': '[00:08:29](https://www.youtube.com/watch?v=SmYNK0kqaDI&t=509s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'}]}

@@ -1,1584 +1,901 @@
 from __future__ import annotations
 
-
 def build_volume_037_workbook() -> dict:
-    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
-        return {
-            "name": name,
-            "type": input_type,
-            "prompt": prompt,
-            "example": example,
-        }
-
-    return {
-        "workbook_id": "wb-037-saas-discount-and-gpo-arbitrage",
-        "volume_id": "vol-037-saas-discount-and-gpo-arbitrage",
-        "title": "SaaS Discount Brokerage & GPO Arbitrage — Operator Companion Workbook",
-        "subtitle": (
-            "6 Printable Operator Worksheets for Authorized SaaS Brokerage, "
-            "Partner Attribution, GPO Rebates, Shared-Savings Audits, "
-            "Reserve-Safe Execution, and Transferable Small-Team Operations"
-        ),
-        "worksheets": [
-            {
-                "worksheet_id": "ws-01",
-                "number": 1,
-                "title": "Arbitrage Deal / Counterparty Underwriting & Spread Qualification",
-                "purpose": (
-                    "Qualify an authorized software discount opportunity before promising "
-                    "savings or accepting payment. Establish the actual customer, licensed "
-                    "tenant, distribution route, renewal deadline, collectible retained "
-                    "spread, and downside exposure. Reject opportunities that depend on "
-                    "unapproved pooling, speculative rebates, or unsupported partner status."
-                ),
-                "chapter_ref": "Q1, Q2, Q6",
-                "instructions": [
-                    (
-                        "Open one opportunity record per customer contracting entity and "
-                        "renewal cohort. Attach customer-provided invoices, subscription "
-                        "exports, and written research permission. Keep distinct tenants "
-                        "separate even when a common parent owns several operating companies."
-                    ),
-                    (
-                        "Verify the proposed route with the relevant distributor or "
-                        "master agent before quoting. Separate purchase authorization, "
-                        "partner attribution, delegated administration, and subscription "
-                        "transfer rights; a CPOR association alone does not establish "
-                        "every permission required for fulfillment."
-                    ),
-                    (
-                        "Normalize each incumbent invoice to comparable seats, editions, "
-                        "terms, support, and taxes. Establish a documented baseline rather "
-                        "than comparing an annual negotiated price with an inflated "
-                        "monthly list price or a materially different product."
-                    ),
-                    (
-                        "Request dated evidence for customer credit quality and supplier "
-                        "settlement terms. Price the complete annual commitment exposure, "
-                        "not just the next monthly installment. Treat delayed rebates "
-                        "and disputed commissions as separate collection risks."
-                    ),
-                    (
-                        "Write a specific accept, revise, or reject decision with an "
-                        "accountable owner and expiration date. Advance only when the "
-                        "authorized route, enforceable customer obligations, collectible "
-                        "spread, and required prefunding all survive a documented downside case."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Customer entity, tenant, and authority",
-                        "textarea",
-                        (
-                            "Identify the contracting entity, tenant identifiers, billing "
-                            "contact, and individual authorized to approve procurement. "
-                            "Explain how the collected evidence connects the customer "
-                            "agreement to each subscription without crossing tenant boundaries."
-                        ),
-                        (
-                            "Harbor Design LLC supplies its incorporation record, current "
-                            "Microsoft invoice, and tenant export covering 120 licensed "
-                            "employees. Its procurement director signs the purchasing "
-                            "mandate. The affiliate operating 35 additional seats remains "
-                            "outside this opportunity until it executes a separate agreement."
-                        ),
-                    ),
-                    field(
-                        "Authorized distribution and attribution route",
-                        "textarea",
-                        (
-                            "Record the vendor program, distributor, relationship evidence, "
-                            "and precise transaction permissions. Distinguish attribution "
-                            "from reseller authority and administrative access; identify "
-                            "the written source governing any proposed subscription or partner change."
-                        ),
-                        (
-                            "The proposed Microsoft route uses the brokerage's active "
-                            "Pax8 reseller relationship and the customer's accepted "
-                            "purchasing relationship. Operations verifies applicable CSP "
-                            "transfer eligibility separately. Any CPOR claim is handled "
-                            "only where the relevant program supports it; delegated "
-                            "administration receives separate scoped authorization."
-                        ),
-                    ),
-                    field(
-                        "Renewal cliff and cancellation evidence",
-                        "textarea",
-                        (
-                            "Capture subscription renewal dates, commitment duration, "
-                            "billing cadence, notice requirements, and the authoritative "
-                            "source for change windows. Assign an owner to confirm "
-                            "current program rules before representing any cancellation right."
-                        ),
-                        (
-                            "The 120-seat cohort renews on September 1 under an annual "
-                            "commitment with monthly billing. Operations saves the current "
-                            "distributor terms and portal deadline evidence on August 5. "
-                            "An internal August 20 decision deadline leaves time for "
-                            "customer funding and supplier confirmation."
-                        ),
-                    ),
-                    field(
-                        "Comparable spend baseline",
-                        "textarea",
-                        (
-                            "Build the baseline from actual recurring charges and "
-                            "equivalent entitlements. Separate taxes, implementation work, "
-                            "temporary credits, unused seats, and true product changes "
-                            "so every claimed saving has an identifiable economic source."
-                        ),
-                        (
-                            "The verified cohort contains 120 seats priced at $20 per "
-                            "seat monthly, producing $28,800 annual subscription charges "
-                            "before tax. A separate $1,200 migration invoice is excluded. "
-                            "The comparison retains the same edition, annual commitment, "
-                            "support scope, and seat count throughout the quote."
-                        ),
-                    ),
-                    field(
-                        "Retained spread qualification",
-                        "textarea",
-                        (
-                            "Calculate customer billings, supplier entitlement, retained "
-                            "spread, and effective retained_share for the proposed route. "
-                            "Identify contractual adjustments and distinguish economic "
-                            "spread calculations from the separate ASC 606 presentation assessment."
-                        ),
-                        (
-                            "For this illustrative quote, annual customer billings equal "
-                            "$28,800 and the distributor entitlement equals $26,496. "
-                            "Retained spread is $2,304, with retained_share of 8%. "
-                            "The agency assessment supports recording only that retained "
-                            "amount as operator revenue; customer subscription spend "
-                            "does not become brokerage revenue."
-                        ),
-                    ),
-                    field(
-                        "Counterparty payment capacity",
-                        "textarea",
-                        (
-                            "Summarize objective payment evidence, authorized references, "
-                            "payment method, and unresolved disputes. Quantify annual "
-                            "supplier exposure if customer collections stop, and specify "
-                            "which funding evidence must exist before a commitment is placed."
-                        ),
-                        (
-                            "Harbor supplies twelve months of timely incumbent payments "
-                            "and two trade references under written permission. The "
-                            "brokerage still requires $28,800 annual prefunding before "
-                            "placing the order. A stored payment method alone cannot "
-                            "cover the $26,496 supplier obligation if later collections fail."
-                        ),
-                    ),
-                    field(
-                        "GPO membership and rebate eligibility",
-                        "textarea",
-                        (
-                            "Document the member agreement, eligible products, volume "
-                            "bracket, measurement period, exclusions, rebate recipient, "
-                            "and settlement lag. Explain whether aggregation changes "
-                            "commercial pricing only or also changes any licensed usage rights."
-                        ),
-                        (
-                            "A signed illustrative GPO schedule pays a 5% administrative "
-                            "rebate on $1,600,000 of eligible annual member purchases, "
-                            "yielding $80,000 before operating costs. Members retain "
-                            "separate tenants and licenses. Returns reduce eligible "
-                            "volume, and settlement occurs quarterly after the supplier "
-                            "validates the membership roster."
-                        ),
-                    ),
-                    field(
-                        "Master-agent residual rights",
-                        "textarea",
-                        (
-                            "Identify the master-agent agreement, eligible recurring "
-                            "billing base, commission percentage, activation condition, "
-                            "payment lag, and clawback period. Determine whether residual "
-                            "rights survive account reassignment, termination, or a sale of the brokerage."
-                        ),
-                        (
-                            "An illustrative Telarus channel schedule credits 5% on "
-                            "$5,000 monthly eligible UCaaS charges per activated customer. "
-                            "Forty continuously active accounts produce $120,000 annual "
-                            "residuals. The reviewer verifies exclusions, termination "
-                            "language, and assignment restrictions rather than treating "
-                            "the modeled percentage as a published program rate."
-                        ),
-                    ),
-                    field(
-                        "Shared-savings baseline and fee claim",
-                        "textarea",
-                        (
-                            "State the baseline methodology, measurement period, fee "
-                            "percentage, validation process, and treatment of supplier "
-                            "rebates. Exclude reductions caused by unrelated workforce "
-                            "changes unless the agreement explicitly includes that service."
-                        ),
-                        (
-                            "A comparable annual renewal falls from $240,000 to $200,000 "
-                            "without changing seats or entitlements. Verified savings "
-                            "equal $40,000. A signed 30% success-fee clause produces "
-                            "$12,000 operator revenue and $28,000 customer benefit after "
-                            "the fee, with supplier-funded credits separately disclosed "
-                            "and excluded from duplicate claims."
-                        ),
-                    ),
-                    field(
-                        "Decision, exception, and downside owner",
-                        "textarea",
-                        (
-                            "Write the underwriting decision and quantify its failure "
-                            "threshold. Name the person responsible for each unresolved "
-                            "condition, establish a quote expiration, and specify the "
-                            "evidence that would require rejection rather than repricing."
-                        ),
-                        (
-                            "Accept Harbor only after cleared prefunding and confirmed "
-                            "supplier terms by August 20. If supplier cost rises to "
-                            "$27,360, retained spread falls to $1,440, or 5%. "
-                            "The deal owner must reprice or reject; combining unrelated "
-                            "customers into one tenant is never an acceptable remedy."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The deal owner and operations reviewer sign the dated evidence "
-                    "packet. Customer authority, supplier route, renewal deadline, "
-                    "collectible retained spread, and full commitment funding must "
-                    "be documented; any unresolved licensing boundary stops placement."
-                ),
-            },
-            {
-                "worksheet_id": "ws-02",
-                "number": 2,
-                "title": "Unit Economics, Escrow/Reserve Float & Working-Capital Calculator",
-                "purpose": (
-                    "Convert channel activity into recognized operator revenue, owner "
-                    "profit, and cash requirements without counting customer software "
-                    "spend as earnings. Reconcile the three canonical scenarios, "
-                    "calculate settlement timing and reserve coverage, and distinguish "
-                    "ordinary operating reserves from genuinely restricted escrow funds."
-                ),
-                "chapter_ref": "Q3, Q4",
-                "instructions": [
-                    (
-                        "Create separate schedules for customer subscription billings, "
-                        "supplier entitlements, operator revenue, operating costs, and "
-                        "cash movements. Apply retained_share only to the applicable "
-                        "spread-bearing billings, then add independently earned residuals, "
-                        "administrative rebates, and shared-savings fees."
-                    ),
-                    (
-                        "Copy the Conservative, Base, and Scaled scorecard totals "
-                        "exactly before building supporting transaction assumptions. "
-                        "Treat the supplied gross revenue label as operator revenue "
-                        "on the stated net-retained basis, never as underlying member purchases."
-                    ),
-                    (
-                        "Prepare a thirteen-week cash forecast using actual contractual "
-                        "payment dates. Show rebate lags, commission disputes, customer "
-                        "prefunding, supplier commitments, and processor holds separately; "
-                        "annual profit does not establish the cash available for next "
-                        "week's supplier debit."
-                    ),
-                    (
-                        "Identify the legal holder and withdrawal conditions for "
-                        "each reserve or escrow balance. Do not describe an ordinary "
-                        "brokerage bank account as escrow. Document how customer "
-                        "refund obligations and remaining annual commitments constrain "
-                        "apparently available cash."
-                    ),
-                    (
-                        "Stress the model for tier compression, delayed collections, "
-                        "credit defaults, and lost renewals. Keep the canonical "
-                        "scorecard unchanged, report stress cases alongside it, and "
-                        "define the cash threshold that suspends additional commitments "
-                        "before funding becomes insufficient."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Revenue basis and retained_share bridge",
-                        "textarea",
-                        (
-                            "Define each revenue stream and the applicable recognition "
-                            "basis. Show the equation connecting underlying billings "
-                            "to retained contribution, with separate treatment for "
-                            "supplier liabilities, taxes, and fees earned outside the resale spread."
-                        ),
-                        (
-                            "For agency-classified wholesale activity, $2,500,000 annual "
-                            "customer billings multiplied by retained_share of 0.08 "
-                            "produce $200,000 operator revenue. Supplier entitlement "
-                            "equals $2,300,000. Add $120,000 residuals, $80,000 GPO "
-                            "administrative rebates, and $100,000 earned audit fees "
-                            "to reach $500,000 total operator revenue."
-                        ),
-                    ),
-                    field(
-                        "Conservative canonical reconciliation",
-                        "textarea",
-                        (
-                            "Reconcile the Conservative revenue, net margin, owner "
-                            "profit, and implied total costs. Preserve the specified "
-                            "staffing model, and explain how illustrative stream "
-                            "allocations support rather than replace the canonical annual totals."
-                        ),
-                        (
-                            "Conservative operator revenue is $100,000, comprising an "
-                            "illustrative $40,000 spread, $24,000 residuals, $16,000 "
-                            "rebates, and $20,000 audit fees. At 32% net margin, "
-                            "annual owner net profit is $32,000 and implied costs "
-                            "are $68,000. Staffing remains one full-time operator "
-                            "plus three contractors."
-                        ),
-                    ),
-                    field(
-                        "Base canonical reconciliation",
-                        "textarea",
-                        (
-                            "Reconcile the Base revenue streams, total costs, net "
-                            "margin, and annual owner profit. Explain the treatment "
-                            "of supplier pass-through amounts so the same subscription "
-                            "spend cannot inflate both reported revenue and operating expense."
-                        ),
-                        (
-                            "Base operator revenue equals $500,000 and total modeled "
-                            "costs equal $275,000, leaving $225,000 annual owner net "
-                            "profit at 45.0%. The team is one full-time operator "
-                            "plus three contractors. The $2,300,000 wholesale supplier "
-                            "entitlement is excluded from both agency revenue and "
-                            "these modeled operating costs."
-                        ),
-                    ),
-                    field(
-                        "Scaled canonical reconciliation",
-                        "textarea",
-                        (
-                            "Record the Scaled revenue, margin, owner profit, total "
-                            "costs, and six-person staffing structure. Identify a "
-                            "consistent illustrative stream mix without silently "
-                            "changing the canonical margin to accommodate a different operating design."
-                        ),
-                        (
-                            "Scaled operator revenue is $900,000: $360,000 spread, "
-                            "$216,000 residuals, $144,000 rebates, and $180,000 audit "
-                            "fees. Costs equal $378,000, producing $522,000 annual "
-                            "owner net profit at 58%. Staffing is two full-time "
-                            "people plus four contractors, six people in total."
-                        ),
-                    ),
-                    field(
-                        "Operating expense scope and cost bridge",
-                        "textarea",
-                        (
-                            "Separate the quoted monthly operating expense range "
-                            "from total scenario costs. State which direct delivery, "
-                            "acquisition, contractor, reserve, and support expenses "
-                            "sit outside the selected overhead subtotal, avoiding duplicate expense recognition."
-                        ),
-                        (
-                            "The published monthly opex range is $1,500–$9,500. "
-                            "For an illustrative Base bridge, select $5,000 monthly "
-                            "overhead, or $60,000 annually, plus $120,000 delivery "
-                            "labor, $55,000 acquisition, and $40,000 other direct "
-                            "costs and modeled losses. These nonoverlapping categories "
-                            "sum to the required $275,000."
-                        ),
-                    ),
-                    field(
-                        "Annual commitment funding calculator",
-                        "textarea",
-                        (
-                            "Calculate customer prefunding, total supplier commitment, "
-                            "unencumbered spread, and any remaining exposure. Distinguish "
-                            "payment authorization from cleared funds, and show how "
-                            "a customer default changes exposure when installments were mistakenly allowed."
-                        ),
-                        (
-                            "Harbor prepays $28,800 against a $26,496 annual supplier "
-                            "commitment, leaving $2,304 spread before costs and reserves. "
-                            "With monthly supplier installments of $2,208, default "
-                            "after three paid months would otherwise leave $19,872 "
-                            "of supplier exposure. Full annual prefunding prevents "
-                            "that installment-funded mismatch."
-                        ),
-                    ),
-                    field(
-                        "Reserve ownership and escrow classification",
-                        "textarea",
-                        (
-                            "Identify each balance's owner, bank arrangement, permitted "
-                            "uses, release triggers, and accounting classification. "
-                            "Explain whether the funds are a brokerage reserve, "
-                            "customer liability, or separately administered escrow under an executed agreement."
-                        ),
-                        (
-                            "The brokerage keeps a $12,000 operating risk reserve "
-                            "in a dedicated account owned by the brokerage. It "
-                            "is not escrow. A separate customer deposit ledger "
-                            "tracks $28,800 received for Harbor; supplier funding "
-                            "and any refund rights remain encumbrances until the "
-                            "applicable contractual obligations are satisfied."
-                        ),
-                    ),
-                    field(
-                        "Settlement lag and thirteen-week cash need",
-                        "textarea",
-                        (
-                            "Map cash receipts and disbursements by week using "
-                            "contractual settlement dates. Calculate peak cumulative "
-                            "deficit without borrowing customer subscription funds, "
-                            "and specify the available capital supporting that deficit and the protected reserve."
-                        ),
-                        (
-                            "A launch begins with $25,000 capital, within the "
-                            "$5,000–$30,000 startup range. Three months of $5,000 "
-                            "cash operating costs consume $15,000 before a $20,000 "
-                            "rebate arrives in week thirteen. Peak deficit is "
-                            "$15,000; a $5,000 protected reserve leaves $5,000 "
-                            "additional cash headroom."
-                        ),
-                    ),
-                    field(
-                        "Shared-savings and commission collection math",
-                        "textarea",
-                        (
-                            "Calculate fee entitlement, invoice date, expected cash "
-                            "date, dispute exposure, and collection cost for contingent "
-                            "revenue. Keep measured savings, customer benefit, earned "
-                            "fees, and cash receipts in distinct columns of the supporting schedule."
-                        ),
-                        (
-                            "Ten comparable renewal audits each validate $40,000 "
-                            "savings. At the contractual 25% fee, each earns "
-                            "$10,000 and total earned fees equal $100,000. "
-                            "If two invoices remain unpaid, cash receipts are "
-                            "$80,000 and receivables are $20,000; the $400,000 "
-                            "customer savings pool is never operator revenue."
-                        ),
-                    ),
-                    field(
-                        "Tier compression and liquidity stress",
-                        "textarea",
-                        (
-                            "Model a specific adverse change without altering the "
-                            "canonical reference case. Quantify revenue loss, revised "
-                            "profit, collection delay, and cash response; identify "
-                            "the minimum unrestricted balance required before accepting further annual commitments."
-                        ),
-                        (
-                            "Reducing the Base wholesale retained_share from 8% "
-                            "to 6% on $2,500,000 billings removes $50,000 revenue. "
-                            "With costs unchanged at $275,000, stress-case profit "
-                            "becomes $175,000 on $450,000 revenue. Pause new "
-                            "unfunded commitments whenever unrestricted cash would "
-                            "fall below the separately approved $12,000 reserve."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The reviewer independently recomputes $32,000, $225,000, and "
-                    "$522,000 annual owner net profit from the canonical scenarios. "
-                    "Every cash forecast excludes encumbered customer money from "
-                    "available working capital and identifies funding for the peak deficit."
-                ),
-            },
-            {
-                "worksheet_id": "ws-03",
-                "number": 3,
-                "title": "End-to-End Execution, Idempotent Ledger & QA Pre-Flight Sheet",
-                "purpose": (
-                    "Turn an approved opportunity into a traceable order, license "
-                    "record, supplier payable, and collectible operator fee. Prevent "
-                    "duplicate commitments through idempotent processing, verify tenant "
-                    "boundaries, reconcile settlement evidence, and define safe recovery "
-                    "when a distributor response or billing event is ambiguous."
-                ),
-                "chapter_ref": "Q7, Q8",
-                "instructions": [
-                    (
-                        "Assign a stable internal deal identifier before collecting "
-                        "documents or creating orders. Link customer, tenant, supplier, "
-                        "subscription, and contract records through explicit identifiers "
-                        "rather than email subjects, editable company names, or "
-                        "spreadsheet row positions."
-                    ),
-                    (
-                        "Define separate order, payment, entitlement, and recognition "
-                        "states. Require evidence for each transition and retain "
-                        "the original event payload. An accepted payment does "
-                        "not prove provisioning, and provisioning does not independently "
-                        "prove that a commission was earned."
-                    ),
-                    (
-                        "Use a database uniqueness constraint for local event "
-                        "processing and supplier idempotency features where supported. "
-                        "After an ambiguous timeout, query supplier status before "
-                        "retrying a commitment; local deduplication cannot reverse "
-                        "an order already accepted upstream."
-                    ),
-                    (
-                        "Run a preflight comparison against the signed quote "
-                        "before submitting any order. Check tenant, product, "
-                        "quantity, term, funding, support scope, and applicable "
-                        "program permissions. Have a second reviewer inspect "
-                        "high-exposure annual commitments."
-                    ),
-                    (
-                        "Reconcile orders, entitlements, supplier statements, customer "
-                        "balances, and operator earnings daily during launch. "
-                        "Route mismatches to a documented exception queue and "
-                        "preserve reversible actions where available; never use "
-                        "license deletion as an improvised billing correction."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Deal identifiers and system of record",
-                        "textarea",
-                        (
-                            "Specify stable identifiers for the deal, customer entity, "
-                            "tenant, subscription cohort, and supplier account. Name "
-                            "the authoritative system for each attribute and describe "
-                            "how amendments remain linked without rewriting original evidence."
-                        ),
-                        (
-                            "Deal D037-001 links customer C-014, tenant T-014, "
-                            "cohort R-2026-09, and distributor account P-008. "
-                            "PostgreSQL stores operational identifiers; the signed "
-                            "contract repository stores commercial authority. Amendment "
-                            "A-002 references D037-001 and preserves A-001, allowing "
-                            "reviewers to reconstruct the original 120-seat purchase "
-                            "and later authorized changes."
-                        ),
-                    ),
-                    field(
-                        "Order state transitions",
-                        "textarea",
-                        (
-                            "Define the allowed order states, transition evidence, "
-                            "responsible role, and forbidden shortcuts. Separate "
-                            "commercial acceptance from supplier submission, activation, "
-                            "settlement, and revenue recognition so operational status cannot silently create earnings."
-                        ),
-                        (
-                            "D037-001 progresses through drafted, reviewed, funded, "
-                            "submitted, confirmed, and reconciled. The funded state "
-                            "requires bank evidence; confirmed requires a supplier "
-                            "order identifier and matching entitlement export. An "
-                            "HTTP timeout leaves the order submitted with an "
-                            "exception flag, never automatically confirmed or resubmitted."
-                        ),
-                    ),
-                    field(
-                        "Idempotency key and uniqueness control",
-                        "textarea",
-                        (
-                            "Describe the canonical business key, payload version, "
-                            "database constraint, and retry behavior for each "
-                            "commitment-creating operation. State how the process "
-                            "handles supplier endpoints that provide no native idempotency support."
-                        ),
-                        (
-                            "The local order key combines D037-001, T-014, "
-                            "R-2026-09, and quote version 3. A unique database "
-                            "constraint admits one active placement intent. A "
-                            "transactional outbox tracks delivery. When supplier "
-                            "idempotency is unavailable, ambiguous results enter "
-                            "manual reconciliation before any operator can authorize "
-                            "a replacement submission."
-                        ),
-                    ),
-                    field(
-                        "Webhook authenticity and replay handling",
-                        "textarea",
-                        (
-                            "Record the provider's supported authentication method, "
-                            "event identifier, timestamp checks, replay protection, "
-                            "and payload retention. Explain how duplicate delivery "
-                            "or out-of-order events affect state without assuming all providers expose identical controls."
-                        ),
-                        (
-                            "For a provider offering signed webhooks, the receiver "
-                            "checks its documented signature and timestamp rules "
-                            "before storing the event. Event E-441 has a unique "
-                            "provider-event key. Three duplicate deliveries produce "
-                            "one ledger transition, while an older pending event "
-                            "cannot overwrite the later confirmed order state."
-                        ),
-                    ),
-                    field(
-                        "Tenant and entitlement preflight",
-                        "textarea",
-                        (
-                            "List the exact comparisons required before placement "
-                            "and after activation. Include tenant identity, edition, "
-                            "seat quantity, commitment term, support responsibility, "
-                            "and permitted transfer route, with an explicit prohibition on unauthorized cross-customer pooling."
-                        ),
-                        (
-                            "The reviewer matches T-014, 120 seats, the quoted "
-                            "edition, annual commitment, and $28,800 customer charge "
-                            "against the signed order. The post-activation export "
-                            "must show the same tenant and quantity. A proposed "
-                            "move into the broker's tenant fails preflight even "
-                            "if it appears to improve pricing."
-                        ),
-                    ),
-                    field(
-                        "Agency ledger posting and recognition",
-                        "textarea",
-                        (
-                            "Describe the debit and credit sequence for customer "
-                            "receipts, supplier obligations, deferred fees, and "
-                            "earned operator revenue. Tie recognition timing to "
-                            "the documented performance obligation rather than automatically recognizing the full retained spread at collection."
-                        ),
-                        (
-                            "For this agency-classified arrangement, receipt debits "
-                            "cash $28,800 and credits a clearing liability $28,800. "
-                            "Allocation debits clearing $28,800, credits supplier "
-                            "payable $26,496, and credits deferred operator fees "
-                            "$2,304. The assessed stand-ready service recognizes "
-                            "$192 monthly for twelve months by releasing deferred fees."
-                        ),
-                    ),
-                    field(
-                        "Daily three-way reconciliation",
-                        "textarea",
-                        (
-                            "Define the comparison between accepted orders, live "
-                            "entitlements, and supplier billing, then connect the "
-                            "result to customer balances and operator earnings. "
-                            "Specify materiality thresholds and ownership for every unmatched item."
-                        ),
-                        (
-                            "The daily job compares 120 ordered seats with 120 "
-                            "active entitlements and a $2,208 monthly supplier "
-                            "installment. A statement showing 125 seats creates "
-                            "a five-seat exception, not an automatic customer "
-                            "invoice. Operations investigates that day and keeps "
-                            "the unmatched charge outside the approved settlement batch."
-                        ),
-                    ),
-                    field(
-                        "Timeout and partial-failure recovery",
-                        "textarea",
-                        (
-                            "Write the recovery sequence for an uncertain order "
-                            "response or partial provisioning event. Identify "
-                            "read-only checks, customer communication, supplier "
-                            "escalation, and the evidence required before any irreversible remedial action is attempted."
-                        ),
-                        (
-                            "A distributor request times out after submission. "
-                            "Operations searches by the client reference and "
-                            "retrieves supplier order S-778 showing 120 seats "
-                            "pending activation. The worker links S-778 to "
-                            "D037-001 instead of submitting again, informs Harbor "
-                            "of the delay, and schedules a status check in "
-                            "thirty minutes."
-                        ),
-                    ),
-                    field(
-                        "Credit, refund, and clawback correction",
-                        "textarea",
-                        (
-                            "Define how supplier credits, customer refunds, and "
-                            "commission reversals enter the ledger without "
-                            "deleting original entries. Specify linkage, reviewer "
-                            "approval, period treatment, and reconciliation against the next supplier or master-agent statement."
-                        ),
-                        (
-                            "A $300 residual clawback references original earning "
-                            "E-190 and supplier adjustment C-021. Accounting "
-                            "records a separate $300 reduction to commission "
-                            "revenue or the applicable estimate, then reconciles "
-                            "the reduced remittance. The original earning stays "
-                            "visible, and the customer receives no unrelated "
-                            "subscription change."
-                        ),
-                    ),
-                    field(
-                        "Evidence packet and QA sign-off",
-                        "textarea",
-                        (
-                            "List the evidence required to close execution, "
-                            "including contract version, funding proof, supplier "
-                            "confirmation, entitlement export, recognition schedule, "
-                            "and exception resolution. Assign an independent reviewer and record their dated decision."
-                        ),
-                        (
-                            "Packet D037-001 contains signed quote version 3, "
-                            "cleared bank receipt, supplier order S-778, the "
-                            "120-seat entitlement export, and the twelve-month "
-                            "$192 recognition schedule. A second reviewer "
-                            "signs the checklist after resolving the five-seat "
-                            "statement discrepancy; the erroneous supplier charge "
-                            "remains linked to its credit."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "A duplicate-event replay creates no extra order or ledger "
-                    "posting, an ambiguous-timeout test triggers reconciliation "
-                    "rather than blind resubmission, and the reviewer matches "
-                    "the signed quote to funding, entitlements, supplier billing, "
-                    "and the recognition schedule."
-                ),
-            },
-            {
-                "worksheet_id": "ws-04",
-                "number": 4,
-                "title": "Statutory, Licensing, Contract Addendum & Compliance Audit",
-                "purpose": (
-                    "Translate licensing, outreach, payment, and accounting obligations "
-                    "into evidence-backed operating requirements. Establish authorized "
-                    "program participation, bounded delegated access, enforceable "
-                    "commercial terms, and accurate revenue presentation while "
-                    "preventing tenant pooling, misleading savings claims, and "
-                    "uncontrolled use of customer procurement information."
-                ),
-                "chapter_ref": "Q5, Q9",
-                "instructions": [
-                    (
-                        "Collect the actual agreements governing the selected "
-                        "vendor route and record their effective dates. Separate "
-                        "Microsoft CSP purchasing, applicable CPOR attribution, "
-                        "Adobe VIP Marketplace membership, and Zoom channel "
-                        "permissions instead of treating them as interchangeable "
-                        "transfer mechanisms."
-                    ),
-                    (
-                        "Map each outbound channel to the relevant federal "
-                        "and state requirements before activation. Document "
-                        "recipient type, dialing technology, consent evidence "
-                        "where required, suppression procedures, and substantiation "
-                        "of every savings claim used by callers or messages."
-                    ),
-                    (
-                        "Draft addenda that define baseline calculations, fee "
-                        "entitlement, payment timing, annual commitment liability, "
-                        "and access boundaries. Use objective acceptance evidence "
-                        "and explicit adjustment rules so disputes do not "
-                        "depend on informal sales promises."
-                    ),
-                    (
-                        "Have the accounting owner document the ASC 606 "
-                        "principal-versus-agent assessment for each specified "
-                        "service. Evaluate control and performance obligations "
-                        "rather than assuming every channel contract shares "
-                        "the same revenue presentation or recognition schedule."
-                    ),
-                    (
-                        "Maintain a dated control register with evidence "
-                        "locations, responsible people, review frequency, and "
-                        "remediation deadlines. Recheck affected controls when "
-                        "vendor terms, outreach technology, payment methods, "
-                        "customer jurisdictions, or the brokerage's service "
-                        "scope changes materially."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Vendor program and license boundary register",
-                        "textarea",
-                        (
-                            "Record the agreement governing each licensed activity "
-                            "and explain the authority it grants. Identify "
-                            "separate requirements for purchasing, attribution, "
-                            "transfer, delegation, and end-user use so commercial discounting cannot expand licensed access."
-                        ),
-                        (
-                            "The register links Microsoft purchasing to the "
-                            "active CSP distribution agreement, Adobe orders "
-                            "to the customer's VIP Marketplace route, and Zoom "
-                            "residuals to the applicable Zoom Up or TSD "
-                            "agreement. It records CPOR only for supported "
-                            "attribution activity and prohibits unauthorized "
-                            "seat-sharing between unrelated customer tenants."
-                        ),
-                    ),
-                    field(
-                        "Annual commitment and prefunding addendum",
-                        "textarea",
-                        (
-                            "Draft concrete terms covering commitment duration, "
-                            "billing cadence, customer funding, supplier change "
-                            "windows, and refund handling. State who bears "
-                            "remaining supplier obligations and prevent sales language from implying monthly cancellation of annual commitments."
-                        ),
-                        (
-                            "The addendum states: Customer funds $28,800 before "
-                            "placement of the twelve-month 120-seat order. "
-                            "Monthly supplier billing does not shorten the "
-                            "annual commitment. Reductions and cancellations "
-                            "follow the attached current supplier rules. "
-                            "Refunds reflect actual recoverable supplier "
-                            "credits and the separately stated earned "
-                            "service-fee treatment."
-                        ),
-                    ),
-                    field(
-                        "TCPA and telephone outreach controls",
-                        "textarea",
-                        (
-                            "Map telephone activity to 47 U.S.C. § 227 and "
-                            "47 CFR § 64.1200, including recipient numbers, "
-                            "technology, consent requirements, calling restrictions, "
-                            "and suppression evidence. Include applicable state rules rather than assuming business targeting creates a blanket exemption."
-                        ),
-                        (
-                            "The pilot uses manually placed live calls to "
-                            "verified business office numbers during recipient "
-                            "business hours. It excludes automated texts, "
-                            "prerecorded messages, and artificial-voice calls. "
-                            "The owner reviews mobile-number and state-law "
-                            "exposure before expansion, logs required permission, "
-                            "and suppresses an opted-out number before the "
-                            "next dialing batch."
-                        ),
-                    ),
-                    field(
-                        "FTC TSR and claims substantiation",
-                        "textarea",
-                        (
-                            "Review 16 CFR Part 310 and FTC Act "
-                            "15 U.S.C. § 45 against the proposed sales "
-                            "process. Explain applicable B2B limits, prohibited "
-                            "misrepresentations, recordkeeping duties, and the evidence supporting stated affiliations and savings."
-                        ),
-                        (
-                            "The script says the brokerage will evaluate "
-                            "documented renewal savings, not that Microsoft "
-                            "appointed it to audit the prospect. The control "
-                            "owner checks the TSR's current B2B scope, including "
-                            "prohibitions on material misrepresentations, and "
-                            "retains substantiation and records required for "
-                            "the actual campaign and its applicable retention period."
-                        ),
-                    ),
-                    field(
-                        "Commercial email and suppression procedure",
-                        "textarea",
-                        (
-                            "Apply CAN-SPAM, 15 U.S.C. § 7704, to "
-                            "commercial email content and suppression handling. "
-                            "Specify truthful routing information, subject lines, "
-                            "advertising identification where required, postal address, opt-out functionality, and responsibility for outside senders."
-                        ),
-                        (
-                            "A renewal-audit email uses the brokerage's real "
-                            "sender identity, a factual subject, its postal "
-                            "address, and a working unsubscribe link. The "
-                            "system processes opt-outs immediately, within "
-                            "the statutory ten-business-day limit, keeps the "
-                            "mechanism available for thirty days after sending, "
-                            "and prevents an agency from reimporting suppressed contacts."
-                        ),
-                    ),
-                    field(
-                        "Shared-savings and rebate disclosure clauses",
-                        "textarea",
-                        (
-                            "Write the fee calculation, validation rights, "
-                            "measurement boundaries, adjustment process, and "
-                            "disclosure of supplier-paid compensation. Explain "
-                            "how the agreement prevents duplicate charges when shared savings and channel remuneration touch the same renewal."
-                        ),
-                        (
-                            "The clause defines comparable savings as verified "
-                            "baseline cost minus executed renewal cost, "
-                            "excluding taxes and unrelated seat reductions. "
-                            "A 30% fee applies to $40,000 validated savings, "
-                            "producing $12,000. The schedule discloses supplier "
-                            "compensation and credits overlapping remuneration "
-                            "against the audit fee where the signed "
-                            "agreement requires that treatment."
-                        ),
-                    ),
-                    field(
-                        "ASC 606 principal-versus-agent memorandum",
-                        "textarea",
-                        (
-                            "Document the specified services, control assessment, "
-                            "performance obligations, variable consideration, and "
-                            "recognition timing under ASC 606. Reference "
-                            "ASC 606-10-55-36 through 55-40 for principal-versus-agent analysis and distinguish contractual economics from presentation conclusions."
-                        ),
-                        (
-                            "The memorandum concludes that the modeled wholesale "
-                            "arrangement is agency-classified and presents "
-                            "$2,304 retained fees rather than $28,800 subscription "
-                            "billings. It separately assesses the stand-ready "
-                            "service period and rebate uncertainty. If an "
-                            "actual arrangement establishes control before "
-                            "transfer, accounting reassesses presentation instead "
-                            "of forcing the portfolio assumption."
-                        ),
-                    ),
-                    field(
-                        "Payment authorization and account controls",
-                        "textarea",
-                        (
-                            "Identify ACH or card authorization evidence, "
-                            "processor rules, account classification, payment "
-                            "reversibility, and funding-release controls. "
-                            "Distinguish business-account requirements from consumer protections, and explain why an authorization alone does not eliminate collection risk."
-                        ),
-                        (
-                            "Harbor signs a business ACH authorization through "
-                            "the processor, which applies the relevant Nacha "
-                            "requirements and its own underwriting rules. "
-                            "The reviewer checks UCC Article 4A applicability "
-                            "for covered transfers and does not assume "
-                            "consumer Regulation E, 12 CFR Part 1005, "
-                            "governs the business account."
-                        ),
-                    ),
-                    field(
-                        "Customer information and delegated access",
-                        "textarea",
-                        (
-                            "Define the minimum procurement information and "
-                            "administrative permissions required, retention "
-                            "periods, deletion procedures, and access reviewers. "
-                            "Assess applicable privacy duties, including California Civil Code § 1798.100 et seq. where its scope requirements are met."
-                        ),
-                        (
-                            "The audit collects invoices, SKU counts, renewal "
-                            "dates, and authorized contacts, but no mailbox "
-                            "content. A scoped GDAP relationship is used "
-                            "only when the service requires administration. "
-                            "Access expires after the engagement, procurement "
-                            "files follow the documented retention schedule, "
-                            "and the quarterly reviewer removes inactive "
-                            "contractor accounts."
-                        ),
-                    ),
-                    field(
-                        "GPO competition boundaries and audit remediation",
-                        "textarea",
-                        (
-                            "Specify lawful purchasing coordination boundaries, "
-                            "member information restrictions, and remediation "
-                            "owners. Assess Sherman Act concerns under "
-                            "15 U.S.C. § 1 when sharing competitively sensitive information or coordinating purchasing behavior beyond the signed program."
-                        ),
-                        (
-                            "Members submit eligible purchase totals to the "
-                            "GPO administrator, not competitors' future "
-                            "selling prices, wages, or customer strategies. "
-                            "The administrator distributes aggregated bracket "
-                            "results only. A discovered cross-member pricing "
-                            "spreadsheet is access-restricted immediately, "
-                            "preserved for review, and removed from routine "
-                            "distribution before the next quarterly rebate "
-                            "calculation."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The responsible reviewer signs the vendor-authority register, "
-                    "outreach controls, payment addendum, compensation disclosures, "
-                    "access register, and ASC 606 memorandum. Every unresolved "
-                    "finding has an owner and deadline; activities affected by "
-                    "missing authority or required permission remain inactive."
-                ),
-            },
-            {
-                "worksheet_id": "ws-05",
-                "number": 5,
-                "title": "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker",
-                "purpose": (
-                    "Build a measurable acquisition and fulfillment pipeline using "
-                    "permitted technographic research, verified renewal evidence, "
-                    "authorized distributor integrations, and auditable pricing "
-                    "logic. Connect every automation to an accountable operator, "
-                    "detect economic deterioration early, and preserve a manual "
-                    "fallback that cannot duplicate commitments."
-                ),
-                "chapter_ref": "Q6, Q10",
-                "instructions": [
-                    (
-                        "Define the ideal customer using observable procurement "
-                        "conditions rather than speculative company profiling. "
-                        "Use public DNS and customer-authorized evidence "
-                        "as research inputs, then verify actual products, "
-                        "seat counts, and renewal dates directly before "
-                        "claiming an opportunity."
-                    ),
-                    (
-                        "Instrument the pipeline from researched account "
-                        "through accepted audit, signed engagement, funded "
-                        "order, and collected fee. Distinguish observed "
-                        "conversion from planning assumptions and exclude "
-                        "customer software spend when calculating acquisition "
-                        "payback or channel productivity."
-                    ),
-                    (
-                        "Connect only approved accounts and documented "
-                        "interfaces for Pax8, Ingram, Telarus, or other "
-                        "selected providers. Separate read-only imports "
-                        "from commitment-creating actions, and preserve "
-                        "manual evidence capture when a provider lacks "
-                        "the required API capability."
-                    ),
-                    (
-                        "Version benchmark inputs, supplier floors, "
-                        "shared-savings calculations, and exception rules. "
-                        "Recompute the customer proposal when any "
-                        "material assumption changes, and require a "
-                        "reviewed quote version before automation can "
-                        "place or amend a paid subscription."
-                    ),
-                    (
-                        "Set thresholds for integration failures, rebate "
-                        "compression, defaults, and licensing anomalies. "
-                        "Document the safe fallback and recovery owner "
-                        "for each condition; restoring throughput is "
-                        "secondary to preventing duplicate orders, "
-                        "unsupported claims, or unauthorized tenant changes."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Ideal customer and renewal trigger definition",
-                        "textarea",
-                        (
-                            "Define customer size, product mix, renewal horizon, "
-                            "purchase authority, and minimum collectible opportunity. "
-                            "Identify the evidence required to qualify each "
-                            "condition so lead scoring does not mistake a public technology signal for purchasing intent."
-                        ),
-                        (
-                            "The first segment is independently operated "
-                            "design firms with 75–250 paid collaboration "
-                            "seats and a renewal inside 120 days. A "
-                            "qualified opportunity needs an authorized "
-                            "procurement contact, current invoice, comparable "
-                            "product scope, and at least $2,000 projected "
-                            "annual retained contribution before direct "
-                            "delivery costs."
-                        ),
-                    ),
-                    field(
-                        "DNS, MX, and SPF signal boundaries",
-                        "textarea",
-                        (
-                            "Specify the public signals collected, rate "
-                            "limits, provenance, and permitted interpretation. "
-                            "Explain which commercial facts those signals "
-                            "cannot establish, and define the customer-confirmation "
-                            "step before using them in a quote or savings estimate."
-                        ),
-                        (
-                            "A rate-limited DNS lookup records MX and "
-                            "SPF observations with collection dates. A "
-                            "Microsoft-associated mail route suggests a "
-                            "research hypothesis but proves neither paid "
-                            "seat count nor renewal timing. The researcher "
-                            "requests an authorized invoice before entering "
-                            "120 seats or a September renewal into "
-                            "the pricing engine."
-                        ),
-                    ),
-                    field(
-                        "Acquisition funnel and cohort conversion",
-                        "textarea",
-                        (
-                            "State the funnel stages, observation window, "
-                            "conversion assumptions, and qualification criteria. "
-                            "Keep the denominator consistent and identify "
-                            "which outcomes are measured versus modeled so a promising small sample is not presented as established performance."
-                        ),
-                        (
-                            "A modeled monthly cohort contains 200 "
-                            "researched accounts, 40 qualified conversations, "
-                            "12 accepted audits, and four signed deals. "
-                            "That implies 20%, 30%, and 33.3% successive "
-                            "conversion rates. The tracker labels these "
-                            "as planning assumptions until completed "
-                            "cohorts supply actual outcomes and elapsed "
-                            "sales-cycle evidence."
-                        ),
-                    ),
-                    field(
-                        "Acquisition cost and contribution payback",
-                        "textarea",
-                        (
-                            "Calculate acquisition cost using the relevant "
-                            "channel expense and signed-customer denominator. "
-                            "Then compute payback from collected retained "
-                            "contribution after direct service cost, not from subscription billings, estimated savings, or unpaid contingent fees."
-                        ),
-                        (
-                            "A cohort costs $2,400 in outreach labor "
-                            "and tools and signs four customers, giving "
-                            "$600 acquisition cost per customer. Each "
-                            "customer contributes $200 monthly retained "
-                            "revenue less $50 direct service cost. "
-                            "Monthly contribution is $150, producing "
-                            "four-month simple payback before fixed "
-                            "overhead and collection delays."
-                        ),
-                    ),
-                    field(
-                        "Distributor and master-agent integration map",
-                        "textarea",
-                        (
-                            "List each provider, authorized account, "
-                            "supported interface, imported objects, "
-                            "write permissions, and reconciliation owner. "
-                            "Distinguish CPOR, CSP, VIP, and commission workflows rather than assuming a common endpoint can execute all partner changes."
-                        ),
-                        (
-                            "Pax8 order and billing records enter "
-                            "through the brokerage's authorized interface; "
-                            "Ingram records follow its supported account "
-                            "export or API. Telarus commission statements "
-                            "are reconciled separately. CPOR attribution "
-                            "and Adobe VIP changes use their applicable "
-                            "program workflows, with manual evidence "
-                            "capture wherever the selected account "
-                            "lacks automation support."
-                        ),
-                    ),
-                    field(
-                        "Benchmark floor and quote version control",
-                        "textarea",
-                        (
-                            "Define the benchmark's comparable dimensions, "
-                            "source permissions, age limit, supplier "
-                            "floor, and minimum spread. Specify "
-                            "how quote versions are invalidated when costs or entitlements change and prevent cross-customer confidential pricing from leaking."
-                        ),
-                        (
-                            "Quote version 3 compares identical "
-                            "edition, term, region, support, and "
-                            "120-seat quantity. The supplier floor "
-                            "is $18.40 per seat monthly and "
-                            "the customer price is $20. A "
-                            "new floor of $19 invalidates the "
-                            "quote, reduces annual spread to "
-                            "$1,440, and requires a fresh "
-                            "underwriting decision."
-                        ),
-                    ),
-                    field(
-                        "Shared-savings audit engine controls",
-                        "textarea",
-                        (
-                            "Specify baseline inputs, normalization rules, "
-                            "fee percentage, rounding, customer verification, "
-                            "and exception handling. Ensure the "
-                            "engine isolates negotiation savings from quantity changes and reconciles overlapping rebates before generating an invoice."
-                        ),
-                        (
-                            "The engine normalizes a $240,000 "
-                            "baseline to unchanged seats and "
-                            "features, then compares the signed "
-                            "$200,000 renewal. Savings equal "
-                            "$40,000 and a 30% fee equals "
-                            "$12,000. A concurrent 10% seat "
-                            "reduction routes the case to "
-                            "manual recalculation instead of "
-                            "inflating the negotiation claim."
-                        ),
-                    ),
-                    field(
-                        "Risk thresholds and fallback actions",
-                        "textarea",
-                        (
-                            "Assign measurable triggers for spread "
-                            "compression, overdue remittances, default "
-                            "exposure, and tenant anomalies. "
-                            "Document the person responsible, immediate containment action, required customer communication, and evidence needed to resume the affected workflow."
-                        ),
-                        (
-                            "A wholesale spread below 6%, "
-                            "a residual remittance thirty days "
-                            "past its contractual due date, "
-                            "or any cross-customer tenant "
-                            "proposal creates an exception. "
-                            "The operations owner stops "
-                            "affected placements, reconciles "
-                            "supplier evidence, and preserves "
-                            "existing authorized services while "
-                            "the deal owner resolves pricing "
-                            "or collection exposure."
-                        ),
-                    ),
-                    field(
-                        "Secret storage, job access, and audit trail",
-                        "textarea",
-                        (
-                            "Identify where integration secrets "
-                            "are stored, which jobs can "
-                            "retrieve them, and how access "
-                            "is reviewed. Record rotation, redaction, and incident steps without placing credentials or customer-sensitive payloads in printable operational worksheets."
-                        ),
-                        (
-                            "An encrypted secret manager holds "
-                            "provider credentials; the nightly "
-                            "billing importer receives read-only "
-                            "access where supported. Production "
-                            "logs record event identifiers "
-                            "and status, not tokens or "
-                            "full invoices. A quarterly "
-                            "review removes inactive contractors, "
-                            "and suspected exposure triggers "
-                            "credential revocation, rotation, "
-                            "and scoped access-history review."
-                        ),
-                    ),
-                    field(
-                        "Referral flywheel and manual recovery drill",
-                        "textarea",
-                        (
-                            "Describe the permission-based referral "
-                            "request, measured outcome, and "
-                            "fallback drill supporting reliable "
-                            "delivery. Identify what evidence can be shared externally and how operators reconcile manual work before automated processing resumes."
-                        ),
-                        (
-                            "After the customer verifies "
-                            "$28,000 net benefit, the "
-                            "account owner requests permission "
-                            "for an anonymized case study "
-                            "and one referral introduction. "
-                            "During a two-hour integration "
-                            "outage drill, operators import "
-                            "approved statements manually and "
-                            "mark event keys; recovery "
-                            "replays create zero duplicate "
-                            "earnings or orders."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The pipeline identifies evidence-backed opportunities, reports "
-                    "contribution-based acquisition payback, and demonstrates one "
-                    "successful manual recovery without duplicate orders. All "
-                    "provider permissions, benchmark versions, suppression rules, "
-                    "and risk fallback owners are recorded before production use."
-                ),
-            },
-            {
-                "worksheet_id": "ws-06",
-                "number": 6,
-                "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
-                "purpose": (
-                    "Translate the model into a thirty-day evidence-building launch "
-                    "and a repeatable small-team operating cadence. Assign "
-                    "accountability, protect startup capital, measure retained "
-                    "earnings and cash separately, and assemble transferable "
-                    "contracts and records without treating projected revenue "
-                    "as an achieved run rate."
-                ),
-                "chapter_ref": "Q11, Q12",
-                "instructions": [
-                    (
-                        "Organize the first thirty days "
-                        "around verified deliverables rather "
-                        "than a promised close date. "
-                        "The stated time to first "
-                        "deal is one to three "
-                        "months, so an unfinished sales "
-                        "cycle at day thirty requires "
-                        "evidence review, not invented revenue."
-                    ),
-                    (
-                        "Assign one accountable owner to "
-                        "each sales, procurement, operations, "
-                        "accounting, and technical control. "
-                        "Use contractors for bounded "
-                        "work packages with documented "
-                        "handoffs; preserve independent review "
-                        "of high-exposure commitments even "
-                        "when the full-time pod is small."
-                    ),
-                    (
-                        "Set weekly targets for qualified "
-                        "opportunities, verified savings, funded "
-                        "orders, collected retained revenue, "
-                        "renewal retention, and exception "
-                        "age. Separate leading activity "
-                        "indicators from earned revenue "
-                        "and cash so pipeline optimism "
-                        "cannot mask deteriorating economics."
-                    ),
-                    (
-                        "Reconcile the pod dashboard to "
-                        "the canonical scenarios and "
-                        "current ledger every month. "
-                        "Track headcount, contractor scope, "
-                        "total costs, reserve sufficiency, "
-                        "and concentration alongside margin; "
-                        "a high percentage margin alone "
-                        "does not establish a transferable business."
-                    ),
-                    (
-                        "Build the exit-readiness record "
-                        "from executed agreements and "
-                        "reconciled evidence throughout launch. "
-                        "Verify assignment rights, residual "
-                        "survival, customer permissions, and "
-                        "supplier relationships before treating "
-                        "recurring commissions as transferable "
-                        "assets in a buyer discussion."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Days 1–7 authority and evidence sprint",
-                        "textarea",
-                        (
-                            "Define the first week's completed "
-                            "deliverables, named roles, budget, "
-                            "and acceptance evidence. Prioritize "
-                            "authorized distribution access, customer engagement documents, ledger structure, and sourcing criteria before committing spending to broad acquisition."
-                        ),
-                        (
-                            "The full-time operator confirms "
-                            "one authorized supplier route "
-                            "and signs off the engagement "
-                            "template. The accounting contractor "
-                            "documents the revenue policy; "
-                            "the systems contractor creates "
-                            "the event ledger. Week-one "
-                            "spending is capped at $2,000, "
-                            "and ten candidate accounts "
-                            "receive evidence-based research "
-                            "records rather than automated quotes."
-                        ),
-                    ),
-                    field(
-                        "Days 8–14 discovery and audit sprint",
-                        "textarea",
-                        (
-                            "Set discovery and audit targets "
-                            "with specific evidence requirements, "
-                            "outreach permissions, and reviewer "
-                            "capacity. Define what makes an audit accepted and prevent incomplete invoices or unverified renewal dates from entering the qualified pipeline."
-                        ),
-                        (
-                            "The operator targets ten "
-                            "qualified conversations and three "
-                            "accepted audits during week "
-                            "two. Each accepted audit "
-                            "requires written customer authority, "
-                            "a current invoice, comparable "
-                            "SKU details, and a renewal "
-                            "date. The procurement contractor "
-                            "reviews all three baselines "
-                            "before any savings percentage "
-                            "is shared."
-                        ),
-                    ),
-                    field(
-                        "Days 15–21 quote and execution rehearsal",
-                        "textarea",
-                        (
-                            "Specify reviewed proposal outputs, "
-                            "funding requirements, supplier checks, "
-                            "and failure simulations for "
-                            "week three. State which actions use test records and which require a real signed customer order and cleared payment."
-                        ),
-                        (
-                            "Two reviewed proposals show "
-                            "baseline, supplier floor, retained "
-                            "spread, and customer benefit. "
-                            "The systems contractor rehearses "
-                            "duplicate-event and timeout handling "
-                            "with test records. No live "
-                            "annual subscription is placed "
-                            "without an executed order "
-                            "and cleared prefunding, even "
-                            "if the prospect verbally "
-                            "accepts the quotation."
-                        ),
-                    ),
-                    field(
-                        "Days 22–30 launch review and cash decision",
-                        "textarea",
-                        (
-                            "Define the final launch review, "
-                            "evidence packet, remaining cash "
-                            "test, and next-month decision. "
-                            "Distinguish a signed engagement, funded placement, earned fee, and collected revenue so unfinished work is reported at its actual stage."
-                        ),
-                        (
-                            "Day thirty shows three "
-                            "accepted audits, two issued "
-                            "quotes, and one signed "
-                            "engagement awaiting prefunding. "
-                            "Recognized and collected revenue "
-                            "remain $0. With $18,000 "
-                            "unrestricted cash after $7,000 "
-                            "launch spending, the operator "
-                            "continues the one-to-three-month "
-                            "sales cycle and schedules "
-                            "weekly funding reviews."
-                        ),
-                    ),
-                    field(
-                        "Pod roles, capacity, and review coverage",
-                        "textarea",
-                        (
-                            "Map the canonical staffing "
-                            "structure to concrete responsibilities "
-                            "and weekly capacity. Identify "
-                            "the independent reviewer for commitments and accounting exceptions, and define the capacity signal that justifies adding the second full-time operator."
-                        ),
-                        (
-                            "The Base pod has one "
-                            "full-time commercial operator and "
-                            "three contractors covering procurement, "
-                            "accounting, and systems. Each "
-                            "contractor receives a bounded "
-                            "work queue and named "
-                            "handoff. The Scaled design "
-                            "adds a full-time operations "
-                            "lead and a fourth contractor, "
-                            "creating the required six-person "
-                            "team without removing independent "
-                            "commitment review."
-                        ),
-                    ),
-                    field(
-                        "Weekly KPI definitions and denominators",
-                        "textarea",
-                        (
-                            "Define each KPI's numerator, "
-                            "denominator, measurement window, "
-                            "data source, and owner. "
-                            "Include customer concentration, renewal retention, exception age, and contribution-based acquisition payback alongside sales activity and collected retained revenue."
-                        ),
-                        (
-                            "The dashboard reports four "
-                            "signed deals from twelve "
-                            "accepted audits, or 33.3% "
-                            "audit conversion. Thirty-eight "
-                            "of forty eligible renewals "
-                            "retain service, or 95% "
-                            "logo retention. Largest-customer "
-                            "share is $60,000 divided "
-                            "by $500,000 retained revenue, "
-                            "or 12%; any exception "
-                            "older than two business "
-                            "days receives an owner review."
-                        ),
-                    ),
-                    field(
-                        "Canonical scorecard and scale decision",
-                        "textarea",
-                        (
-                            "Record the volume rank, "
-                            "Money-to-Manpower score, component "
-                            "scores, and scenario targets. "
-                            "Explain which operating evidence supports expansion without treating the editorial score or a projected annualized month as proof of achieved profit."
-                        ),
-                        (
-                            "Volume 037 is pipeline "
-                            "rank #04 of 37 with "
-                            "a 94/100 score: revenue "
-                            "24, margin 24, team "
-                            "efficiency 19, accessibility "
-                            "14, and automation 13. "
-                            "Annual owner profit targets "
-                            "remain $32,000 Conservative, "
-                            "$225,000 Base, and $522,000 "
-                            "Scaled. Expansion requires "
-                            "reconciled collections, supported "
-                            "capacity, and funded commitment "
-                            "exposure."
-                        ),
-                    ),
-                    field(
-                        "Concentration and recurring earnings quality",
-                        "textarea",
-                        (
-                            "Measure customer, supplier, and "
-                            "program concentration using retained "
-                            "revenue rather than customer "
-                            "subscription spend. Separate durable recurring earnings from contingent audit fees and identify the largest contractual or rebate dependency requiring mitigation."
-                        ),
-                        (
-                            "In the Base illustration, "
-                            "$200,000 spread plus $120,000 "
-                            "residuals represents $320,000, "
-                            "or 64% of operator "
-                            "revenue, before assessing "
-                            "contract durability. GPO "
-                            "rebates contribute 16% and "
-                            "audit fees 20%. If "
-                            "one supplier supports all "
-                            "wholesale spread, that "
-                            "supplier represents 40% "
-                            "of operator revenue and "
-                            "requires explicit compression monitoring."
-                        ),
-                    ),
-                    field(
-                        "Exit-readiness contracts and evidence ledger",
-                        "textarea",
-                        (
-                            "List the records needed "
-                            "to verify earnings quality, "
-                            "customer authority, residual "
-                            "ownership, and transfer restrictions. Assign a custodian and refresh interval, and specify which materials require customer permission before external buyer access."
-                        ),
-                        (
-                            "The monthly record set "
-                            "includes reconciled revenue "
-                            "schedules, supplier statements, "
-                            "customer contracts, rebate "
-                            "calculations, and twelve-month "
-                            "renewal cohorts. Each master-agent "
-                            "agreement has an assignment "
-                            "and residual-survival summary. "
-                            "Buyer access uses redacted "
-                            "copies under authorized "
-                            "sharing arrangements; customer "
-                            "tenant credentials never "
-                            "enter the diligence room."
-                        ),
-                    ),
-                    field(
-                        "Stop, repair, expand, and handoff decision",
-                        "textarea",
-                        (
-                            "Write a measurable operating "
-                            "decision with the accountable "
-                            "owner, supporting evidence, "
-                            "review date, and required corrective actions. Include a handoff test proving another authorized operator can reconcile a deal without relying on undocumented founder knowledge."
-                        ),
-                        (
-                            "Continue the pilot while "
-                            "unrestricted cash exceeds "
-                            "the $12,000 reserve and "
-                            "all annual orders remain "
-                            "fully funded. Repair any "
-                            "unmatched supplier statement "
-                            "before expansion. An authorized "
-                            "backup operator must reconstruct "
-                            "D037-001 from contract through "
-                            "the $2,304 retained-fee "
-                            "schedule within sixty minutes "
-                            "using documented records alone."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The operator signs the thirty-day review with actual stage "
-                    "counts, cash balances, unresolved issues, and the next "
-                    "decision date. Scenario targets reconcile exactly, the "
-                    "pod has named review coverage, and an authorized backup "
-                    "successfully reconstructs one complete deal from preserved evidence."
-                ),
-            },
-        ],
-    }
+    return {'workbook_id': 'wb-037-saas-discount-and-gpo-arbitrage',
+ 'volume_id': 'vol-037-saas-discount-and-gpo-arbitrage',
+ 'title': 'SaaS Discount Brokerage & GPO Arbitrage — Practitioner Testimony Operator Workbook',
+ 'subtitle': 'A field workbook for brokering Microsoft, Adobe, Google Workspace, and UCaaS licenses '
+             'through distributor marketplaces, harvesting partner incentives, and protecting margin on '
+             'every seat you resell or buy.',
+ 'worksheets': [{'worksheet_id': 'ws-01',
+                 'number': 1,
+                 'title': 'Microsoft Channel Entry and Incentive Harvest Worksheet',
+                 'purpose': 'Build a verified Microsoft resale foundation, from Partner Center '
+                            'registration through indirect provider selection, NCE term discipline, and '
+                            'Microsoft Commerce Incentives enrollment, so a thin 8-15% license margin is '
+                            'backed by service revenue and stacked back-end incentives paid as 60% rebate '
+                            'and 40% co-op.',
+                 'chapter_ref': 'Q1-Q2',
+                 'instructions': ['Complete fields in order, because provider choice, incentive '
+                                  'eligibility, and CPOR claims all depend on a verified Partner Center '
+                                  'account and a linked MPN ID.',
+                                  'Pull live numbers from Partner Center, your distributor marketplace, '
+                                  'and your earnings reports rather than estimating from memory or old '
+                                  'quotes.',
+                                  'Record every date that triggers a hard deadline, including NCE 7-day '
+                                  'windows, CPOR 12-month start limits, and the April 2026 MFA cutoff for '
+                                  'automation.',
+                                  'After any enrollment or association change, wait two to three days and '
+                                  'then validate the status before treating the item as complete.',
+                                  'Book skilling well before quarter end so capability points and '
+                                  'designation status refresh in time for the next monthly score update.'],
+                 'fields': [{'name': 'partner_center_foundation',
+                             'type': 'text',
+                             'prompt': 'Record the domain email, primary Entra tenant, and business '
+                                       'verification status you used to register Partner Center, then note '
+                                       'your AI Cloud Partner Program enrollment date and the MPN ID you '
+                                       'will link to an indirect provider for resale.',
+                             'example': 'Registered Partner Center under a domain email on our primary '
+                                        'Entra tenant, cleared business verification, joined the free AI '
+                                        'Cloud Partner Program, and linked our MPN ID to Pax8, since '
+                                        'direct bill demands $1,000,000 per year, up from roughly '
+                                        '$300,000, and Pax8 APAC expects two-thirds of direct partners to '
+                                        'move indirect [Pax8 APAC — Xywyds1IfvM @ 00:04:31].'},
+                            {'name': 'provider_model_selection',
+                             'type': 'textarea',
+                             'prompt': 'Compare CSP Direct, Indirect Provider, and Indirect Reseller for '
+                                       'your firm, naming which layer owns first-line support, the '
+                                       'indirect provider you chose, and the marketplace, provisioning, '
+                                       'and in-house ticket closure evidence that justified the choice '
+                                       'over alternatives.',
+                             'example': 'Chose Indirect Reseller under Pax8 after scoring marketplace '
+                                        'strength, instant provisioning, and tickets closed in-house '
+                                        'rather than escalated [Pax8 APAC — Xywyds1IfvM @ 00:09:05]. '
+                                        'Support ownership is logged in the customer contract because the '
+                                        'indirect reseller is not responsible for support; support falls '
+                                        'back to the provider [Spyglass MTG — yNBOfW1MoPs @ 00:00:50].'},
+                            {'name': 'license_margin_math',
+                             'type': 'textarea',
+                             'prompt': 'Show the per-seat margin math for one core Microsoft license, '
+                                       'including MSRP, your cost, the resulting percentage, and the '
+                                       'managed service you will bundle around it so the account earns on '
+                                       'the service layer rather than the software alone.',
+                             'example': 'Seat cost $18 against $20 MSRP, inside the 8-15% license margin '
+                                        'band, so we wrap onboarding, security baselining and helpdesk '
+                                        'into one per-user fee, because the partner earns the margin on '
+                                        'the service layer, not the software [m365 Show | M365, Azure '
+                                        'Cloud, Power Platform & AI — LGgw20GtaDQ @ 00:04:18].'},
+                            {'name': 'nce_term_and_window',
+                             'type': 'textarea',
+                             'prompt': 'List each NCE subscription with chosen term (monthly, annual paid '
+                                       'monthly, annual, or triennial), the resulting premium or saving, '
+                                       'the order date, and the exact date its 7-day adjustment window '
+                                       'closes, plus who signs off on seat counts.',
+                             'example': 'Twenty seats moved from monthly to annual because monthly terms '
+                                        'carry a 20% premium, a $100 seat becoming $120, while annual paid '
+                                        'monthly adds only 5% and triennial saves 12-18% [m365 Show | '
+                                        'M365, Azure Cloud, Power Platform & AI — LGgw20GtaDQ @ 00:04:45]. '
+                                        'The operations lead signed off seat counts on day two.'},
+                            {'name': 'incentive_stack',
+                             'type': 'textarea',
+                             'prompt': 'Map your target incentive stack for M365, Azure, and Dynamics, '
+                                       'listing core, Tier 1, Tier 2, PSTN, and customer-add rates you '
+                                       'expect to qualify for, and confirm Microsoft Commerce Incentives '
+                                       'enrollment is separate from your benefits package or designation.',
+                             'example': 'M365 stack: core 3.75%, Tier 1 5%, Tier 2 7%, PSTN 20% and '
+                                        'customer-add 15% for 12 months, up to 25.75%; Azure to 26%, '
+                                        'Dynamics to 34.75% [Inside Microsoft AI Cloud Partner Program — '
+                                        'jz1cE7UYBO4 @ 00:15:48]. MCI enrollment filed separately because '
+                                        'a benefits package or designation alone starts nothing.'},
+                            {'name': 'mci_eligibility_check',
+                             'type': 'textarea',
+                             'prompt': 'Document MCI eligibility per location ID: trailing 12-month '
+                                       'revenue against the $25K floor, the designation, specialization, '
+                                       'or capability points you hold, enrollment status color, Incentives '
+                                       'Admin role holder, and every payout profile created for co-op, '
+                                       'fee, indirect, and rebate.',
+                             'example': 'Location ID clears the $25K trailing 12-month floor and holds 25 '
+                                        'capability points, with scores refreshing only monthly [Pax8 — '
+                                        'tsL0gg_Jy9U @ 00:11:07]. Status is green in every enrollment row, '
+                                        'Incentives Admin assigned, payout profiles built for co-op, fee, '
+                                        'indirect and rebate before forecasting cash [Inside Microsoft AI '
+                                        'Cloud Partner Program — jcYTmMdEGPo @ 00:21:04].'},
+                            {'name': 'fy27_incentive_shift',
+                             'type': 'textarea',
+                             'prompt': 'Explain how the FY27 removal of core incentives for Modern Work '
+                                       'and Business Apps changes your plan, naming which Tier 2 strategic '
+                                       'SKUs, growth accelerator targets, and tiered Azure growth bands '
+                                       'you will now chase instead, and why.',
+                             'example': 'Core incentive no longer carries the plan, so we push Tier 2 '
+                                        'strategic SKUs at 7% and target the CSP growth accelerator, which '
+                                        'rises to 12.5% from 7.5% [Pax8 — 1RKZdigqOf4 @ 00:12:20]. '
+                                        'Forecasts avoid double counting because growth margin already '
+                                        'includes base margin and is not stacked on top [Pax8 — '
+                                        'tsL0gg_Jy9U @ 00:07:16].'},
+                            {'name': 'cpor_claims',
+                             'type': 'textarea',
+                             'prompt': 'List each Claiming Partner of Record association you will submit, '
+                                       'with customer domain match, workload start date within 12 months, '
+                                       'original two-to-three sentence workload description, and the '
+                                       'Modern Work deployment points you expect versus the CSP '
+                                       'equivalent.',
+                             'example': 'Domain matched, start date inside 12 months, description written '
+                                        'originally, never copied, then pasted from a draft because '
+                                        'comments do not autosave [Inside Microsoft AI Cloud Partner '
+                                        'Program — uHFljjNXztI @ 00:26:54]. Expected 5 deployment points '
+                                        'versus 2.5 for CSP, with usage growth at 0.06 versus 0.015 '
+                                        '[Inside Microsoft AI Cloud Partner Program — uHFljjNXztI @ '
+                                        '00:04:19].'},
+                            {'name': 'copilot_trial_conversion',
+                             'type': 'text',
+                             'prompt': 'Describe how you configure Copilot trials at checkout so trial '
+                                       'seats roll into paid subscriptions, including seat count, '
+                                       'conversion setting, the follow-up date, and the governance '
+                                       'controls each deployed agent needs before going live with the '
+                                       'customer.',
+                             'example': 'Copilot in 30 trial set to convert to subscription after trial at '
+                                        'checkout, so all 25 seats roll straight into paid seats [Pax8 — '
+                                        '1RKZdigqOf4 @ 00:37:13]. Each agent gets a named owner, '
+                                        'least-privilege access, a registry entry and a credit limit, '
+                                        'because an agent nobody owns is a liability with a login '
+                                        '[Microsoft Events — z4JbWkKJagI @ 00:30:34].'},
+                            {'name': 'support_and_operations_hygiene',
+                             'type': 'textarea',
+                             'prompt': 'Record your escalation and hygiene routines: what you send '
+                                       'Microsoft on API failures, how you pull portal diagnostics, how '
+                                       'long you wait before filing billing disputes, MFA readiness for '
+                                       'automation, and the order of steps before removing a customer.',
+                             'example': 'API tickets carry request and response logs plus the '
+                                        'MS-CorrelationID, with a SPOCK file pulled by Ctrl+Alt+D for '
+                                        'portal faults [Microsoft Helps — 9Q30FhN41LI @ 00:35:20]. Billing '
+                                        'gaps get a 24-hour recheck before filing [m365 Show | M365, Azure '
+                                        'Cloud, Power Platform & AI — uiVjifpxK38 @ 00:13:33]. Customer '
+                                        'removal starts by suspending subscriptions and cancelling '
+                                        'reservations.'}],
+                 'completion_gate': 'Do not forecast incentive cash or quote a Microsoft deal until MCI '
+                                    'enrollment is green, the Incentives Admin role is assigned, payout '
+                                    'profiles exist for co-op, fee, indirect and rebate, NCE seat counts '
+                                    'are locked inside the 7-day window, and every API automation is '
+                                    'MFA-ready ahead of the April 2026 cutoff.'},
+                {'worksheet_id': 'ws-02',
+                 'number': 2,
+                 'title': 'Marketplace Margin Engine and Adobe VIP Marketplace Migration Worksheet',
+                 'purpose': 'Turn distributor marketplace purchasing into a margin engine by testing offer '
+                            'viability, enforcing margin floors, reconciling tenant, billing and PSA data, '
+                            'and moving Adobe customers from classic VIP to VIP Marketplace without '
+                            'duplicate consoles or wrong-quantity renewals.',
+                 'chapter_ref': 'Q3-Q4',
+                 'instructions': ['Score each offer against the three launch questions before touching '
+                                  'pricing, and treat a single no answer as a stop.',
+                                  'Calculate margin on sell price, never markup on cost, and flag any line '
+                                  'that falls below the 30% or 60% floors.',
+                                  'Reconcile tenant, billing engine, and PSA counts monthly and log every '
+                                  'recovered dollar against the client it came from.',
+                                  'Check every Adobe anniversary date before scheduling a transfer, and '
+                                  'keep customers inside the 30-day renewal window on the old VIP route.',
+                                  'Lock Adobe downsizes and auto-renewal changes at least two days before '
+                                  'the anniversary and record the locking date in the field.'],
+                 'fields': [{'name': 'offer_viability_three_questions',
+                             'type': 'textarea',
+                             'prompt': 'Answer the three launch questions for your next marketplace offer: '
+                                       'where you create value, where and how you make money, and whether '
+                                       'you have the execution muscle to support it, giving a plain yes or '
+                                       'no with evidence for each.',
+                             'example': 'Managed security bundle: value is created in onboarding and '
+                                        'monitoring, money is made on the wrapped service rather than the '
+                                        'licence, and execution muscle exists through a staffed helpdesk. '
+                                        'All three answered yes, so the offer launches [Pax8 — _98wIAhek0M '
+                                        '@ 00:08:58]. Benchmark: $4.14 of services per $1 of Microsoft '
+                                        'cloud [Cloud Software Association — phXe8eJoVeo @ 00:13:15].'},
+                            {'name': 'margin_floor_check',
+                             'type': 'textarea',
+                             'prompt': 'For every product line you resell, record cost, sell price, and '
+                                       'true margin rather than markup, then flag any security, RMM, or '
+                                       'non-Microsoft licensing line below the floor and any managed '
+                                       'support service below the best-in-class threshold.',
+                             'example': 'RMM line repriced because markup looked healthy but margin sat '
+                                        'under the floor; the rule is at least 30% margin, not markup, on '
+                                        'security, RMM and non-Microsoft licensing [Pax8 — KcmWalqZBzk @ '
+                                        '00:01:54]. Managed support is held to the best-in-class marker of '
+                                        'at least 60% margin on managed support services [Pax8 — '
+                                        'KcmWalqZBzk @ 00:02:14].'},
+                            {'name': 'tenant_billing_psa_reconciliation',
+                             'type': 'textarea',
+                             'prompt': 'Reconcile license counts across the M365 tenant, your billing '
+                                       'engine, and your PSA for each client, listing every mismatch '
+                                       'found, its monthly value, the system of record you corrected, and '
+                                       'the date the next invoice confirmed the fix.',
+                             'example': 'Monthly three-way check compares tenant seats, the Xero billing '
+                                        'engine and PSA agreements, the same gap-closing routine that '
+                                        'recovered $130,000 a year for one US client [Tubblog - The Hub '
+                                        'for MSPs — NVSw5ZYgQzw @ 00:14:03]. The framing for leadership: '
+                                        'the challenge is quote-to-cash, not just selling [Cloud Software '
+                                        'Association — phXe8eJoVeo @ 00:28:13].'},
+                            {'name': 'client_delta_analysis',
+                             'type': 'textarea',
+                             'prompt': 'Run a per-client delta analysis comparing revenue per endpoint '
+                                       'against logged service cost, noting hours logging rules, ticket '
+                                       'volume outliers, and whether the fix for each unprofitable client '
+                                       'is training, process change, or a price increase.',
+                             'example': 'Agreement-covered work is never marked non-billable and 100% of '
+                                        'hours are logged against at least an eight-hour day [Pax8 — '
+                                        'TxvzhnvDnxA @ 00:17:30]. A law-firm client showed normal revenue '
+                                        'per endpoint but high ticket counts, so lunch-and-learns replaced '
+                                        'a price increase [Pax8 — TxvzhnvDnxA @ 00:25:05], remembering '
+                                        'that the highest efficiency clients churn more often than '
+                                        'average.'},
+                            {'name': 'security_attach_campaign',
+                             'type': 'textarea',
+                             'prompt': 'Design your security attach campaign: which MDR or SOC bundle is '
+                                       'included by default, how the opt-out waiver works, the target '
+                                       'adoption rate, and how you will track declines against renewal '
+                                       'conversations and upsell recommendations for every managed client.',
+                             'example': 'MDR and SOC coverage ships inside every managed bundle and '
+                                        'customers must sign a waiver to decline, the opt-out structure '
+                                        'that produced over 90% adoption [Magic Chats — fM8cQVJ3oh8 @ '
+                                        '00:08:39]. A read-only MCP query, using a token from Settings '
+                                        'then Integrations, lists renewals in the next 30 days for '
+                                        'Defender upsells [Pax8 — P960HFmyakQ @ 00:10:42].'},
+                            {'name': 'var_fee_transparency',
+                             'type': 'textarea',
+                             'prompt': 'When buying through a value-added reseller, list every fee line on '
+                                       'the quote, mark which survive the rule that strikes everything '
+                                       'except shipping and sales tax, confirm taxes are itemised, and '
+                                       'record what time-saving brokerage value justifies any remaining '
+                                       'reseller margin.',
+                             'example': 'Quote reduced to licence, shipping and sales tax after striking '
+                                        'every other VAR fee and requiring itemised taxes on each quote '
+                                        '[Staying Connected — 6YNd6Xcyekw @ 00:05:38]. Remaining margin is '
+                                        'accepted only where the reseller acts as an advisor, the shift '
+                                        'one partner described as moving beyond being a commoditized '
+                                        'box-shifter [Ingram Micro Cloud UK — bGmD7XlTNZI @ 00:02:02].'},
+                            {'name': 'vipmp_transfer_plan',
+                             'type': 'textarea',
+                             'prompt': 'For each Adobe customer still on classic VIP, record the agreement '
+                                       'number, anniversary date, whether it falls inside the 30-day '
+                                       'renewal window, who enters the transfer, and confirmation that no '
+                                       'new order was placed before the inbound transfer ran.',
+                             'example': 'Design agency on classic VIP sits 12 days from its anniversary, '
+                                        'so it renews on the old route and migration is parked until the '
+                                        'window closes [TD SYNNEX Spain — 824bcq4wI-Q @ 00:21:40]. New '
+                                        'orders stay blocked, since a fresh order would generate another '
+                                        'console and another VIP plan instead of migrating it [TD SYNNEX '
+                                        'Spain — 824bcq4wI-Q @ 00:18:14].'},
+                            {'name': 'admin_and_volume_level',
+                             'type': 'text',
+                             'prompt': 'Record the single VIP Marketplace owner email for each account, '
+                                       'confirm it sits on a corporate domain rather than a blacklisted '
+                                       "private provider, and note the price level the customer's seat "
+                                       'count places them in on the volume ladder.',
+                             'example': 'Owner email rejected at onboarding because it ended in Gmail; '
+                                        'only one admin email is allowed and private domains sit on '
+                                        "Adobe's blacklist [AppXite — GDHnAQ3r53A @ 00:05:08]. With 14 "
+                                        'seats the customer lands at the 10-49 level, above Level 1 up to '
+                                        '9 units, with Levels 3 and 4 currently priced alike [TD SYNNEX '
+                                        'Spain — 824bcq4wI-Q @ 00:09:09].'},
+                            {'name': 'renewal_change_lock',
+                             'type': 'textarea',
+                             'prompt': 'List every downsize, increase, and auto-renewal change for '
+                                       'upcoming Adobe anniversaries, with the date each change is locked '
+                                       'and who approved it, the buffer kept against time-zone drift, and '
+                                       'how you handle the 14-day return window for new licences.',
+                             'example': 'Downsize from 10 to 6 seats locked three days before the '
+                                        'anniversary, beating the two-day rule so time-zone drift cannot '
+                                        'renew the wrong quantity [SoftwareOne Platform — sNCywL0bfVI @ '
+                                        '00:01:11]. New licences are confirmed with users inside 14 days, '
+                                        'because after the 15th day a VIPMP licence cannot be returned [TD '
+                                        'SYNNEX Spain — 824bcq4wI-Q @ 00:17:35].'},
+                            {'name': 'auto_renewal_bulk_and_escalation',
+                             'type': 'textarea',
+                             'prompt': 'Identify set-and-forget Adobe accounts for auto-renewal, the bulk '
+                                       'configuration order you will use per agreement, scheduled renewal '
+                                       'increases staged in advance with their effective dates, and the '
+                                       'designated technical relationship manager who alone may escalate '
+                                       'issues to Adobe technical support.',
+                             'example': 'A customer renewing the same seats since 2016 and every '
+                                        'single-unit customer move to auto-renewal [TD SYNNEX Spain — '
+                                        '824bcq4wI-Q @ 00:23:03], flipped in one configuration order '
+                                        'because they share an agreement [SoftwareOne Platform — '
+                                        'nnAd6F22fiw @ 00:00:18]. A staged jump from 2 to 10 licences was '
+                                        'overwritten in the history tab to five extra [AppXite — '
+                                        'GDHnAQ3r53A @ 00:10:18].'}],
+                 'completion_gate': 'The worksheet is complete when every offer has three documented yes '
+                                    'answers, every resold line clears its margin floor, reconciliation '
+                                    'gaps are closed and confirmed by the next invoice, and every classic '
+                                    'VIP customer has a transfer date, a corporate-domain owner email, and '
+                                    'renewal quantities locked at least two days before the anniversary.'},
+                {'worksheet_id': 'ws-03',
+                 'number': 3,
+                 'title': 'Adobe and Workspace Discount Arbitrage and UCaaS Brokerage Worksheet',
+                 'purpose': 'Treat list price as a negotiable anchor across Adobe, Google Workspace, Zoom, '
+                            'and RingCentral by matching plans to real usage, pricing exit costs, '
+                            'verifying seat legitimacy, and brokering UCaaS and contact center deals where '
+                            'the provider, not the customer, pays the representation fee.',
+                 'chapter_ref': 'Q5-Q6',
+                 'instructions': ['Start with the buyer type, since consumer, small business, student, and '
+                                  'enterprise buyers face different Adobe discounts and renewal uplifts.',
+                                  'Price exit costs and cancellation-screen offers before recommending any '
+                                  'Adobe plan change or renewal.',
+                                  'Get Google to confirm the license type behind any cheap Workspace seats '
+                                  'before buying or reselling them.',
+                                  'Use the four-line switch test on every platform migration and show the '
+                                  'year-one difference even when it is unfavorable.',
+                                  'For UCaaS deals, confirm the CRM integration path, exit terms, and real '
+                                  'support tier before presenting street pricing.'],
+                 'fields': [{'name': 'adobe_plan_fit',
+                             'type': 'textarea',
+                             'prompt': 'For each Adobe seat or client, record the current plan and monthly '
+                                       'price, actual feature use, the cheaper plan or single app that '
+                                       'would cover it, and whether a free alternative closes the gap for '
+                                       "that user's workload entirely.",
+                             'example': 'Illustrator-only freelancer moved off Creative Cloud Pro, which '
+                                        'runs $69.99 a month after the intro deal, about $840 a year [Tech '
+                                        'Meets East — xCgcup4z6CI @ 00:02:28]. Users who skip heavy AI '
+                                        'features drop to Creative Cloud Standard at $54.99 a month, '
+                                        'noting that increases were deferred, not cancelled [Tech Meets '
+                                        'East — IIVbCmH7kHA @ 00:24:24].'},
+                            {'name': 'adobe_exit_cost',
+                             'type': 'textarea',
+                             'prompt': 'Price the exit on every Adobe annual-paid-monthly plan before '
+                                       'signing or renewing: remaining payments, the early cancellation '
+                                       'share owed, where the fee is disclosed, and whether any retention '
+                                       'offer at the cancellation screen restarts a new commitment.',
+                             'example': 'Eight payments remain, and half of every remaining payment is '
+                                        'owed on early cancellation, a fee reportedly buried in fine print '
+                                        'or behind hover icons [Tech Meets East — ZnXsR4iADwM @ 00:02:30]. '
+                                        'Free months at the cancellation screen were declined because '
+                                        'accepting can start a brand new one-year commitment [Tech Meets '
+                                        'East — ZnXsR4iADwM @ 00:07:28].'},
+                            {'name': 'adobe_discount_stack',
+                             'type': 'textarea',
+                             'prompt': 'List every Adobe discount route you can legitimately apply for '
+                                       'each buyer type, such as introductory, regional, student, or '
+                                       'annual prepaid pricing, with verification method, expiry, and the '
+                                       'enterprise renewal uplift you expect where discounts do not apply.',
+                             'example': 'Student buyers verify through school email at the account step, '
+                                        'skipping manual document checks [Daniel Studios — 4XzZib-kFMg @ '
+                                        '00:03:09], with Black Friday peaking at 77% off the first year '
+                                        '[Daniel Studios — lyQ4gisVObM @ 00:00:12]. Enterprise renewals '
+                                        'are budgeted for 8 to 12% increases on multi-year agreements '
+                                        '[Tech Meets East — ZnXsR4iADwM @ 00:17:28].'},
+                            {'name': 'workspace_reseller_terms',
+                             'type': 'textarea',
+                             'prompt': 'Document your Google Workspace reseller arrangement: wholesale '
+                                       'versus retail pricing, off-book discounts available above your '
+                                       'seat thresholds, split-billing eligibility for mixing premium and '
+                                       'light licenses, and the professional email address used for '
+                                       'partner enrollment and its approval date.',
+                             'example': 'Our 24-user client now qualifies for split licensing, mixing '
+                                        'premium and light seats, because the floor dropped to 20 users '
+                                        'from more than 100 [itGenius 🤓 Biz Tech Experts — aAQpTV4Ybnk @ '
+                                        '00:02:25]. Partner enrollment used a domain address, since it '
+                                        'cannot be a standard personal address ending in gmail.com [HowTo '
+                                        'With Glen — o7bsmkpf6kA @ 00:01:04].'},
+                            {'name': 'workspace_seat_legitimacy',
+                             'type': 'textarea',
+                             'prompt': 'Before buying or reselling any discounted Workspace seats, record '
+                                       'the seat price, the license type Google confirms for the domain, '
+                                       'whether it rides a nonprofit, education, legacy, or official '
+                                       'partner panel, and the callback reference from Google support.',
+                             'example': 'A vendor offered seats under $2, the price typical of nonprofit '
+                                        'panels procured at as low as $0 and holding 500-plus seats '
+                                        "[InboxKit — 0Vk8NzIt_RM @ 00:00:29]. We filed Google's form under "
+                                        'the suspended administrator option, requested a phone callback, '
+                                        'and asked which license type the domain runs on before any '
+                                        'purchase [InboxKit — 0Vk8NzIt_RM @ 00:01:51].'},
+                            {'name': 'switch_decision_four_lines',
+                             'type': 'textarea',
+                             'prompt': 'Before recommending any platform switch, fill the four decision '
+                                       'lines: current bill, replacement cost including anything retained, '
+                                       'one-time transition cost, and the first date old commitments can '
+                                       'end, then state the year-one net difference for the client '
+                                       'honestly.',
+                             'example': 'M365-to-Workspace move scored on four lines: current bill, '
+                                        'replacement including retained licences, one-time transition '
+                                        'cost, and first exit date for old commitments [Rook Technology '
+                                        'Consulting — -uYS0eABgbk @ 00:02:10]. The cheaper-looking switch '
+                                        'can still cost $2,800 more in year one, so the client stays put '
+                                        'until old commitments can end.'},
+                            {'name': 'ucaas_broker_pricing',
+                             'type': 'textarea',
+                             'prompt': 'For each UCaaS deal, record list price per user, the brokered '
+                                       'street price you negotiated, idle DID and toll-free minute rates, '
+                                       'and confirmation that the provider rather than the customer pays '
+                                       'your representation fee on the account.',
+                             'example': 'Zoom Phone Unlimited brokered below $10 per user, sometimes $8 to '
+                                        '$9, against a $15 list [AeroCom Inc — viRtp8k9GAo @ 00:03:12]. '
+                                        'Idle DIDs pushed from the $5 list toward $1 and high-volume '
+                                        'toll-free from 3.7 cents to 1.5 to 2 cents per inbound minute '
+                                        '[AeroCom Inc — viRtp8k9GAo @ 00:08:22], with the provider paying '
+                                        'our fee.'},
+                            {'name': 'spiff_and_channel_programs',
+                             'type': 'textarea',
+                             'prompt': 'List the vendor incentives active on your pipeline, including '
+                                       'SPIFF multiples, residual changes, and end dates, plus which '
+                                       'stalled deals you will pivot into those products and how Channel '
+                                       'Harmony or similar conflict rules affect who owns each '
+                                       'opportunity.',
+                             'example': 'A UC deal stuck on complex analytics requirements pivots to '
+                                        'RingCX, where RingCentral is paying a 15x SPIFF plus increased '
+                                        'residuals through year-end [Telarus — 8ge4I4KL5kQ @ 00:10:59]. '
+                                        'Zoom pipeline is tracked as its own practice, since the channel '
+                                        'TAM is sized at $200 billion plus by decade end [UC Today News — '
+                                        'dqTXnYdAKdQ @ 00:10:09].'},
+                            {'name': 'contact_center_upsell',
+                             'type': 'textarea',
+                             'prompt': 'Decide whether each queue-heavy customer needs a full contact '
+                                       'center license or a lighter add-on, recording supervisor and agent '
+                                       'counts, the analytics they actually require, per-seat pricing for '
+                                       'each option, and the integration proof demanded from bundled '
+                                       'vendors.',
+                             'example': 'A support team needing queue times and real-time analytics gets '
+                                        'the Customer Engagement Pack at $20 per supervisor per month '
+                                        'instead of $100-plus per agent [AeroCom Inc — auYElw4sYi8 @ '
+                                        '00:13:34]. On a NICE plus RingCentral bid we demanded proof of '
+                                        'integrated workflows, consistent administration, data sharing and '
+                                        'implementation ownership [CX without the BS — DKzL7oMyWis @ '
+                                        '00:06:51].'},
+                            {'name': 'ucaas_contract_risk',
+                             'type': 'text',
+                             'prompt': 'Record the contract risks for each UCaaS recommendation: '
+                                       'early-exit terms against expected headcount volatility, the '
+                                       'support tier the customer will actually receive and its cost, and '
+                                       'the CRM integration path confirmed before pricing was presented to '
+                                       'the decision maker.',
+                             'example': 'Seasonal headcount flagged because Zoom rarely releases customers '
+                                        'early and is not month-to-month [AeroCom Inc — auYElw4sYi8 @ '
+                                        '00:24:32]. Support tier checked, since chat needs over $10 a '
+                                        'month and phone over $200 [LONDON FILM — ZHjObNVm5_Y @ 00:02:11]. '
+                                        'A deal lost on CRM gaps reopens with a free 14-day, five-user '
+                                        'trial [WeAreVoxFlo — Zbk_QOoXQ_M @ 00:02:08].'}],
+                 'completion_gate': 'Do not present a recommendation until each Adobe client has a '
+                                    'plan-fit and exit-cost entry, every discounted Workspace seat has a '
+                                    'Google-confirmed license type, every switch has all four decision '
+                                    'lines filled, and every UCaaS proposal shows street versus list '
+                                    'pricing, the fee source, exit terms, the real support tier, and a '
+                                    'confirmed CRM integration path.'},
+                {'worksheet_id': 'ws-04',
+                 'number': 4,
+                 'title': 'GPO Leverage and Contingency Audit Ledger',
+                 'purpose': 'Capture how pooled buying power, supplier-paid admin fees, commitment '
+                            'compliance, and contingency telecom audits turn into verified savings, so '
+                            'every GPO contract and expense recovery is documented, tracked to the '
+                            'invoice, and defensible before it goes live.',
+                 'chapter_ref': 'Q7-Q8',
+                 'instructions': ['Pull 12 months of general ledger data for every category you plan to '
+                                  'route through a GPO or a contingency auditor before filling any field.',
+                                  'Confirm how each GPO and audit partner is paid, whether admin fee, '
+                                  'participation fee, shared savings, retainer, or hourly, before '
+                                  'comparing savings claims.',
+                                  'Record compliance targets and carve-outs inside the contract itself, '
+                                  'never in side emails or verbal agreements with account executives.',
+                                  'Treat every disconnect, rate change, and refund as open until the next '
+                                  'invoice confirms it billed correctly.',
+                                  'Cite the practitioner source for each benchmark you rely on so '
+                                  'reviewers can trace every savings assumption back to its origin.'],
+                 'fields': [{'name': 'gpo_fee_model',
+                             'type': 'text',
+                             'prompt': 'Record exactly how your chosen GPO gets paid: vendor '
+                                       'administrative fees, member participation fees, or both, and '
+                                       'whether each fee is a percentage or an annual flat rate. Note who '
+                                       'ultimately funds the savings you are being promised and why.',
+                             'example': 'Our food-service GPO is Una, which runs free membership with no '
+                                        'commitments or exclusivities and funds itself from a small slice '
+                                        'of the supplier admin fee [Una — wRrnU1fw7P0 @ 00:00:47]. Fee '
+                                        'model logged as vendor-paid percentage only, no member '
+                                        'participation charge, confirmed against the fee-structure '
+                                        'checklist [Educationleaves — Nx4UI5uowcw @ 00:01:25].'},
+                            {'name': 'admin_fee_exposure',
+                             'type': 'textarea',
+                             'prompt': 'Estimate the supplier-paid administrative fee flowing to the GPO '
+                                       'on your category spend, using the 1.5 to 3 percent of sales range. '
+                                       'Then decide whether that fee stream makes the middleman the real '
+                                       'winner on any contract you are evaluating.',
+                             'example': 'On $2,000,000 of annual med-device purchases, the manufacturer '
+                                        'admin fee runs $30,000 to $60,000, which Eric Bricker likens to a '
+                                        'commission [AHealthcareZ - Healthcare Finance Explained — '
+                                        'N0B0bUjLrUE @ 00:01:24]. Flagged against PBM-affiliated GPOs '
+                                        'pocketing $7.6 billion in 2022 fees [PBM Insider — uyVsmq0w3FM @ '
+                                        '00:01:24]; decision: request fee disclosure before signing.'},
+                            {'name': 'commitment_compliance_plan',
+                             'type': 'textarea',
+                             'prompt': 'Choose between a binding letter of commitment and a flexible '
+                                       'letter of participation for each category. State the committed '
+                                       'compliance level, 70, 80, or 90 percent, and describe the Power BI '
+                                       'or Tableau tracker that will monitor it against rebate thresholds.',
+                             'example': 'Surgical gloves signed on a letter of commitment at 80 percent; '
+                                        'we will run the category at 81 percent rather than hover near 78 '
+                                        'or 79 without a carve-out [Healthcare Supply Chain Hub: Angelique '
+                                        'W. Beslic — K2Slgt-y1wo @ 00:21:44]. A Power BI tracker checks '
+                                        'compliance and rebate status before go-live [Healthcare Supply '
+                                        'Chain Hub: Angelique W. Beslic — K2Slgt-y1wo @ 00:26:28].'},
+                            {'name': 'carve_out_justification',
+                             'type': 'textarea',
+                             'prompt': 'List every product excluded from a committed contract and attach '
+                                       'the written clinical justification that supports it. Explain where '
+                                       'the justification lives inside the contract and how the 10 to 20 '
+                                       'percent uncommitted sandbox will be used for innovation.',
+                             'example': 'Carve-out: one specialty catheter line, documented by our '
+                                        'clinical committee in an enhanced addendum to the GPO contract '
+                                        '[Healthcare Supply Chain Hub: Angelique W. Beslic — K2Slgt-y1wo @ '
+                                        '00:23:09]. The remaining 10 to 20 percent wiggle room above 80 to '
+                                        '90 percent compliance is reserved as a sandbox for trialing new '
+                                        'suppliers [Healthcare Supply Chain Hub: Angelique W. Beslic — '
+                                        'K2Slgt-y1wo @ 00:03:39].'},
+                            {'name': 'tail_spend_handoff',
+                             'type': 'textarea',
+                             'prompt': 'Separate tail spend and non-strategic categories you will hand to '
+                                       'the GPO from strategic spend you will negotiate yourself. Name the '
+                                       'search tool or team you will use to connect contracts and '
+                                       'suppliers you are not yet linked to.',
+                             'example': 'Handed to the GPO: janitorial supplies, office consumables and '
+                                        'break-room food, the small categories that quietly add up, while '
+                                        'our team keeps strategic spend the GPO typically cannot help with '
+                                        '[Una — pKhFVbBzkz4 @ 00:02:32]. Ran the Opus search, found two '
+                                        'unconnected cooperative contracts, and pinged the OMNIA team to '
+                                        'connect them [OMNIA Partners — fdEV8yBr5eM @ 00:02:47].'},
+                            {'name': 'day_one_expectations',
+                             'type': 'text',
+                             'prompt': 'Write the expectations you will put on the table at the first '
+                                       'onboarding call: volume, locations, SKUs, and terms. Include the '
+                                       'savings range you expect to see and how member-specific numbers '
+                                       'will be confirmed during onboarding.',
+                             'example': 'Day-one sheet lists 12 locations, 340 SKUs, weekly delivery '
+                                        'volume and net-30 terms, because unmet or undiscussed '
+                                        'expectations cause the most frustration [Una — N9511Ln5CfE @ '
+                                        '00:07:27]. Target food savings set at 18 to 22 percent with '
+                                        'long-term price protection, member-specific numbers to be '
+                                        'confirmed on the onboarding call [Una — vXeviFgIR1I @ 00:00:24].'},
+                            {'name': 'contingency_fee_terms',
+                             'type': 'textarea',
+                             'prompt': 'Define the contingency or shared-savings agreement with your '
+                                       'cost-reduction partner: fee model, upfront cost, whether incumbent '
+                                       'vendors stay in place, and how many vendors are attacked first. '
+                                       'Compare the expected reduction against running the audit '
+                                       'internally.',
+                             'example': 'Engagement is pure shared savings with nothing to start, so no '
+                                        'budget line is needed [Expense Consulting — o2wyRpIYL0w @ '
+                                        '00:01:34]. Scope opens on three to five vendors rather than all '
+                                        '100 [ExpenseSavvy — 2RDXap2GiBE @ 00:03:32]. Outsourcing chosen '
+                                        'because typical reductions run 15 to 40 percent versus 3 to 5 '
+                                        'percent internally [singlesourcetelecom — GcLqzAGpP2s @ '
+                                        '00:02:19].'},
+                            {'name': 'telecom_go_behind_audit',
+                             'type': 'textarea',
+                             'prompt': 'Identify accounts previously audited by other firms and schedule a '
+                                       'go-behind audit focused on data accounts. Also list over-collected '
+                                       'sales tax claims, back-billing refunds, and forward savings you '
+                                       'will pursue on auto-paid invoices nobody reads.',
+                             'example': 'Data accounts already audited twice go to a go-behind audit, the '
+                                        'same move that pulled a $165,000 credit on one account [Auditel, '
+                                        'Inc. Telecom Expense Management — YAHf-FXxBCM @ 00:01:19]. Vendor '
+                                        'sales tax is checked for over-collection and refunded to us '
+                                        '[kconole2011 — meAxKn8Td5k @ 00:01:52], keeping incumbent vendors '
+                                        'in place while the price drops.'},
+                            {'name': 'disconnect_order_tracking',
+                             'type': 'textarea',
+                             'prompt': 'Log every disconnect and rate-change order placed with a carrier, '
+                                       'including closed sites and leftover equipment. Record the invoice '
+                                       'that confirms each change, because providers place orders '
+                                       'incorrectly or not at all while the account keeps billing.',
+                             'example': 'Closed satellite office: switch shutdown emailed to the carrier, '
+                                        'but it was never shut off, the pattern brightfin cleaned up for '
+                                        'roughly $56,000 [brightfin — lxObl7Zpr2A @ 00:03:06]. A '
+                                        'still-activated modem was found charging after devices were '
+                                        'ported [Ancy Alphonse — RV9K4EXWxJs @ 00:04:19]. Each disconnect '
+                                        'stays open until the next invoice confirms it [Auditel, Inc. '
+                                        'Telecom Expense Management — F00NVfaC6Tk @ 00:01:33].'},
+                            {'name': 'ucaas_license_reclaim',
+                             'type': 'textarea',
+                             'prompt': 'Map every Zoom, Teams, and similar collaboration license to HR '
+                                       'master data so departed employees are flagged at off-boarding. '
+                                       'Identify license stacking across overlapping products and decide '
+                                       'where deliberate redundancy is justified for staff running '
+                                       'customer demos.',
+                             'example': "HR master data now feeds the license register, so leavers' active "
+                                        'seats are flagged and reclaimed at off-boarding [UC Today News — '
+                                        'bQwapQbcKSk @ 00:14:25]. Heavy users holding two or three similar '
+                                        'meeting products get trimmed to one, except sales staff, who keep '
+                                        'a backup tool for customer demos by written policy [UC Today News '
+                                        '— bQwapQbcKSk @ 00:12:20].'}],
+                 'completion_gate': 'Do not sign a GPO commitment or contingency engagement until the fee '
+                                    'model is confirmed, a Power BI or Tableau compliance tracker is live, '
+                                    'every carve-out has written clinical justification, and each '
+                                    'disconnect order shows on a corrected invoice.'},
+                {'worksheet_id': 'ws-05',
+                 'number': 5,
+                 'title': 'SaaS Estate Audit and Renewal Defense Planner',
+                 'purpose': 'Build the money-first, identity-second view of the SaaS estate, rightsize '
+                            'idle and shadow licenses, and enter every renewal with usage data, a '
+                            'calendared notice deadline, and contract language that caps increases and '
+                            'protects downscaling rights.',
+                 'chapter_ref': 'Q9-Q10',
+                 'instructions': ['Start with spend data from ERP, invoices, and expense reports, then '
+                                  'layer identity data from SSO, Entra ID, Okta, and the HRIS.',
+                                  'Work renewals backward from the notice deadline, opening each '
+                                  'negotiation 60 to 90 days before the renewal date at minimum.',
+                                  'Keep your own monthly assignment records for Adobe and Microsoft so '
+                                  'vendor assessments can be challenged with evidence.',
+                                  'Get every concession, price lock, and seat-flexibility promise in '
+                                  'writing; verbal assurances from account managers do not count.',
+                                  'Transfer owned documents and workspaces before reclaiming any seat, and '
+                                  'log each reclaimed license into a shared pool.'],
+                 'fields': [{'name': 'spend_baseline',
+                             'type': 'textarea',
+                             'prompt': 'Assemble twelve months of ERP, invoice, and expense data to build '
+                                       'the money-first SaaS baseline. Record the vendor count leadership '
+                                       'estimated before the audit and the count the audit actually found, '
+                                       'then note the multiple between them.',
+                             'example': 'Leadership guessed 55 vendors; the 12-month ERP, invoice and '
+                                        'Concur pull found 160, inside the two-to-four-times underestimate '
+                                        'band [SaaS Procurement Insider — udHdwtjP7yM @ 00:00:00]. The '
+                                        'transaction CSV was uploaded to AI for categorization, cutting a '
+                                        'two-day job to two hours [SaaS Procurement Insider — udHdwtjP7yM '
+                                        '@ 00:01:50], with free trials auto-renewing on cards flagged '
+                                        'separately.'},
+                            {'name': 'identity_join',
+                             'type': 'textarea',
+                             'prompt': 'Join the spend baseline to identity sources such as SSO, Entra ID, '
+                                       'Okta, and the HRIS. Describe the quarterly cross-match that '
+                                       'catches leavers and role-changers still holding paid seats, and '
+                                       'name the owner who runs it.',
+                             'example': 'Entra ID and Okta login data joined to the HRIS roster; every '
+                                        'quarter the IT asset lead cross-matches app user lists to catch '
+                                        'leavers and role-changers holding paid seats [SaaS Procurement '
+                                        'Insider — udHdwtjP7yM @ 00:07:57]. Default birthright licenses '
+                                        'are listed explicitly in each review because they go unflagged '
+                                        'and quietly add up [YouAttest — NCcXkxFkX8k @ 00:05:05].'},
+                            {'name': 'cost_per_active_user_triage',
+                             'type': 'textarea',
+                             'prompt': 'Calculate cost per active user for each tool and sort it into '
+                                       'three bands: cancel tools under 20 percent utilization, right-size '
+                                       'the middle band 90 days before renewal, and negotiate the rest. '
+                                       'Record the band and next action.',
+                             'example': 'Diagramming tool at 14 percent active use goes to cancel; the '
+                                        'project tracker at 52 percent is right-sized in a review held 60 '
+                                        'to 90 days before renewal [NinjaOne IT Tech Tips — ORh7DquM3lY @ '
+                                        '00:01:07]. Benchmark context: 44 percent of licenses sit idle in '
+                                        'any 30-day window [SAP Concur — ARjBgExQ3oQ @ 00:09:33].'},
+                            {'name': 'shadow_it_discovery',
+                             'type': 'textarea',
+                             'prompt': 'Estimate the share of actual SaaS spend sitting in shadow IT, from '
+                                       'employee-expensed apps, departmental buys, and free trials '
+                                       'auto-renewing on a credit card. Note which login sources or '
+                                       'browser signals reveal them and which tools carry cyber risk '
+                                       'needing review.',
+                             'example': 'Azure AD and Google Workspace login monitoring plus browser '
+                                        'extensions surfaced shadow IT at 22 percent of real spend, inside '
+                                        'the 15 to 30 percent band [SaaS Procurement Insider — udHdwtjP7yM '
+                                        '@ 00:03:10]. We assume roughly 40 percent of the team is already '
+                                        'using these tools [IronEdge Group — nsIixe4EZI0 @ 00:40:04], so '
+                                        'those apps join the cyber-risk review first.'},
+                            {'name': 'reclaim_workflow',
+                             'type': 'textarea',
+                             'prompt': 'Design the seat reclaim workflow: inactivity threshold, manager '
+                                       'confirmation campaign, document and workspace transfer, automated '
+                                       'deactivation, and redeployment to a shared pool. Name the platform '
+                                       'or form tool that sends messages and deactivates users through '
+                                       'APIs.',
+                             'example': 'Reclaim starts at 90 days of inactivity, and owned documents and '
+                                        'workspaces transfer before any seat is pulled [Zylo | The Leader '
+                                        'in Enterprise SaaS Management — ftGGihhAn3g @ 00:02:37]. An '
+                                        'Airtable form handles messaging, collects responses and '
+                                        'deactivates users through the APIs [Optimize Information Systems '
+                                        '— tex2cNz4vcc @ 00:04:21]; freed seats land in a shared pool for '
+                                        'redeployment.'},
+                            {'name': 'assignment_records_and_shelf_check',
+                             'type': 'textarea',
+                             'prompt': 'Before cutting any Adobe or Microsoft seats, document your own '
+                                       'month-to-month assignment records. Also mine help desk tickets for '
+                                       'repeated purchases of the same tool and check idle licenses on the '
+                                       'shelf before approving any new request.',
+                             'example': 'Monthly assignment logs are kept because Adobe once assessed a '
+                                        'client at 250 seats against 200 in use [MetrixData 360 — '
+                                        'lB5ThkY4hMA @ 00:16:32]. Ticket mining found mind-mapping '
+                                        'software bought 150 times in 60 days, fixed with a volume '
+                                        'agreement and 90-day reclaim [MetrixData 360 — lB5ThkY4hMA @ '
+                                        '00:26:16]; a pending Kofax request receives an idle Adobe license '
+                                        'instead.'},
+                            {'name': 'vendor_usage_data_demand',
+                             'type': 'textarea',
+                             'prompt': 'List the usage data you will demand from each vendor in writing '
+                                       'before renewal: user list, last login, 90-day login count, and '
+                                       "session duration. Record each vendor's response and treat any "
+                                       'refusal as a negotiation signal worth noting.',
+                             'example': 'Written request sent to the CRM vendor for user list, last login, '
+                                        '90-day login count and session duration; the vendor declined, '
+                                        'logged as a signal [SaaS Procurement Insider — udHdwtjP7yM @ '
+                                        '00:06:44], since vendors know SSO access arms buyers to negotiate '
+                                        '[SaaS Procurement Insider — udHdwtjP7yM @ 00:07:20]. Comparable '
+                                        'case: 40 seats renewed at 19,200 euros with only 12 actual '
+                                        'users.'},
+                            {'name': 'notice_deadline_calendar',
+                             'type': 'text',
+                             'prompt': 'Calendar the contractual notice deadline for each auto-renewing '
+                                       'contract, not the renewal date. Count the notice period literally, '
+                                       'name an owner and a backup for the reminder, and record the '
+                                       'address where written notice must be delivered.',
+                             'example': 'Renewal on December 31 with a 60-day notice clause means notice '
+                                        'by November 1, while a two-month clause means October 31 [fynk — '
+                                        'QLqtDhk3PoI @ 00:02:19]. Reminder routes to the finance owner and '
+                                        'an IT backup [fynk — QLqtDhk3PoI @ 00:02:44]. Notice goes to the '
+                                        'contract address with delivery proof, because a friendly chat may '
+                                        'not count [fynk — QLqtDhk3PoI @ 00:04:10].'},
+                            {'name': 'price_cap_language',
+                             'type': 'textarea',
+                             'prompt': 'Write the renewal price cap you will demand, targeting 3 to 5 '
+                                       'percent. Define what the percentage applies to, whether the cap '
+                                       'multiplies across term length, and any volume, spend, or term '
+                                       'conditions attached to it.',
+                             'example': 'Supplier paper allowed 5 to 25 percent increases; we countered '
+                                        'with a 4 percent cap [Tropic — FESALIJcxS0 @ 00:02:00]. Redline '
+                                        'specifies 4 percent of last-year net spend, not CPI plus four '
+                                        '[Marcus Harris Software & Tech Attorney — PQUXMXjSfjw @ '
+                                        '00:04:17], and states that added users come at existing pricing '
+                                        'without renegotiation [Heather Meeker — RDxElFsVuWs @ 00:10:00].'},
+                            {'name': 'negotiation_sequence',
+                             'type': 'textarea',
+                             'prompt': 'Lay out the negotiation sequence for your largest renewal: kickoff '
+                                       'date, who attends discovery calls, year-one price target, '
+                                       'multi-year concessions sought, and exit terms. Flag any '
+                                       'acceleration clause and any downscaling rights you need written '
+                                       'into the contract.',
+                             'example': 'Kickoff set 75 days out with the CFO kept off discovery calls '
+                                        '[Tropic — veu6EUBTdBE @ 00:02:57]. Year-one price gets negotiated '
+                                        'before multi-year is offered for concessions [Tropic — '
+                                        "veu6EUBTdBE @ 00:04:24]. The exit clause's acceleration of "
+                                        'remaining fees is struck [Marcus Harris Software & Tech Attorney '
+                                        '— xY5Bk1dd768 @ 00:06:35], and downscaling rights are written in '
+                                        '[Redress Compliance — -1Sqw4pgdxY @ 00:01:57].'}],
+                 'completion_gate': 'The worksheet is complete when every tool carries a '
+                                    'cost-per-active-user band, every auto-renewing contract has a '
+                                    'calendared notice deadline with owner and backup, vendor usage data '
+                                    'is requested in writing, and the price cap definition is redlined.'},
+                {'worksheet_id': 'ws-06',
+                 'number': 6,
+                 'title': 'SaaS Sales Engine and Pricing Architecture Blueprint',
+                 'purpose': 'Translate cold-call volume, procurement-proof business cases, and quota math '
+                            'into a repeatable selling motion, then design seat, credit, and uplift '
+                            'pricing that protects gross margin from heavy AI users and survives '
+                            'enterprise buyer pushback at renewal.',
+                 'chapter_ref': 'Q11-Q12',
+                 'instructions': ['Measure dials, conversations, and meetings per block before judging any '
+                                  'opener or script, and retire openers that book nothing.',
+                                  'Keep price as the final issue with procurement and bring the champion '
+                                  'into every pricing conversation.',
+                                  'Pair every concession with something received in return and log it in '
+                                  'the concession ledger the same day.',
+                                  'Model P50 and P90 cost per user before publishing any AI credit '
+                                  'allowance or usage tier.',
+                                  'Store renewal uplift terms on the quote itself so no renewal ships at '
+                                  "the prior year's price by accident."],
+                 'fields': [{'name': 'cold_call_cadence',
+                             'type': 'textarea',
+                             'prompt': 'Set the weekly cold-call cadence: dial hours per day, calls per '
+                                       'hour, total weekly dials, and the meeting target those dials '
+                                       'should produce. Write the permission opener you will use and the '
+                                       'meeting, not the product, you are selling.',
+                             'example': 'One hour a day at 40 calls an hour gives 200 dials a week and at '
+                                        'least two meetings [Sell Better — aW8jAYnvqyI @ 00:00:13]. Opener '
+                                        "ends with permission check: I'm not looking to sign you guys up, "
+                                        'is that fair [Sales Scripter — u9D8WbQixac @ 00:09:27]. Close by '
+                                        'asking for calendars, booking today or tomorrow, triple confirm '
+                                        '[Sell Better — m2z1tgfv8Kc @ 00:13:34].'},
+                            {'name': 'opener_test_log',
+                             'type': 'textarea',
+                             'prompt': 'Log each opener by dial block: dials made, conversations reached, '
+                                       'and meetings booked. Retire any opener whose block books nothing, '
+                                       'and record your success rate against the average cold-call '
+                                       'benchmark and the talk ratio you held.',
+                             'example': 'Opener A ran 400 dials and booked zero, so it is retired, the '
+                                        "lesson from Armand's 800 dials over four weeks with no meetings "
+                                        '[Sell Better — aW8jAYnvqyI @ 00:08:01]. Opener B hit 2.1 percent '
+                                        'against the 1.48 percent average, with a 55/45 talk ratio [Sell '
+                                        'Better — m2z1tgfv8Kc @ 00:00:03]; a calendar hold follows each '
+                                        'booking.'},
+                            {'name': 'procurement_business_case',
+                             'type': 'textarea',
+                             'prompt': 'Build the business case you will walk procurement through: the '
+                                       'champion in the room, the measurable return, and the spend '
+                                       'requested. Keep price as the final issue and record how believable '
+                                       'the executive sponsor rates the numbers.',
+                             'example': 'Model follows the Gong case: 80 new AEs ramping one month faster '
+                                        'at $40k ARR each equals $3.2M against $385k spend [Caliber '
+                                        '(Formerly pclub.io) — lmaQjDuWaSY @ 00:03:57]. After walking '
+                                        "procurement through the CRO's numbers, we asked how believable "
+                                        "they were; 'very believable' moved a $200k budget to a $385k "
+                                        'signature [Caliber (Formerly pclub.io) — lmaQjDuWaSY @ '
+                                        '00:03:36].'},
+                            {'name': 'concession_ledger',
+                             'type': 'textarea',
+                             'prompt': 'Keep a concession ledger for the deal: each give, what you '
+                                       'received in return, and when it was offered. Confirm cash is the '
+                                       'last objection before conceding quarterly billing, net 60 or 90 '
+                                       'terms, or delayed payments.',
+                             'example': 'Give: quarterly billing. Get: a two-year term and a case study. '
+                                        'Offered only after the buyer confirmed cash was the last blocker, '
+                                        'following the rule do not offer that until you know it is the '
+                                        'last thing [Caliber (Formerly pclub.io) — lmaQjDuWaSY @ '
+                                        '00:08:39]. Every give is paired, because dragons only get '
+                                        'hungrier when fed [Caliber (Formerly pclub.io) — B5SsF-kHahw @ '
+                                        '00:09:19].'},
+                            {'name': 'quota_ote_model',
+                             'type': 'text',
+                             'prompt': 'Set quota as a multiple of on-target earnings for each rep and '
+                                       'record the attainment assumption behind the headcount plan. State '
+                                       'the SDR-to-AE ratio for your segment and the correction you will '
+                                       'make if it overspends.',
+                             'example': "A $200K OTE rep carries about $1M quota at 5x, against Bridge's "
+                                        '4.6x median [SaasRise — 3enRkyZlcQk @ 00:00:36]. The plan does '
+                                        'not assume 80 percent attainment with doubled reps, since 91 '
+                                        'percent of companies missed quota [The SaaS CFO — uBngVWkX0K4 @ '
+                                        '00:27:09]. Mid-market SDR bench cut from 2.5:1 to 2:1 '
+                                        '[GrowthSpree - AI Native B2B Marketing Agency — 2dLvgvK0qCY @ '
+                                        '00:02:07].'},
+                            {'name': 'renewal_automation',
+                             'type': 'textarea',
+                             'prompt': 'Describe the CRM automation that surfaces every renewal before it '
+                                       'lapses: trigger object, days-before-expiry threshold, agreement '
+                                       'repository search, and who receives the task. Include how call '
+                                       'notes are captured automatically into the customer record and '
+                                       'which integration handles it.',
+                             'example': 'HubSpot workflow fires on the contract object when the renewal '
+                                        'date is less than 30 days away [HubSpot Data Analytics by '
+                                        'MergeYourData — ahHk4naTV0s @ 00:00:46]. Each Monday the account '
+                                        'manager opens the Docusign Agreements tab, sorts by expiration '
+                                        'and pulls MSAs expiring in 90 days [Docusign — HlJxNYkv7AY @ '
+                                        '00:00:24]. RingCentral call notes sync through Zapier.'},
+                            {'name': 'pricing_metric',
+                             'type': 'textarea',
+                             'prompt': 'Name the pricing metric for your offer and test it: is it '
+                                       'non-arbitrary, can a computer count it, and does it leave friction '
+                                       'only at the price point. Record which internal teams and customers '
+                                       'validated the metric before launch.',
+                             'example': 'Metric chosen: active workflows per month, countable by the '
+                                        'billing system and non-arbitrary [Willingness to Pay — '
+                                        'rTGrwbYBlXg @ 00:02:50]. The checkout flow leaves one friction '
+                                        'point at the price instead of four [Willingness to Pay — '
+                                        'tNlpy7MZ8Vk @ 00:01:02]. Validated internally with finance, '
+                                        'customer success, sales and product, then externally with '
+                                        'customers [Willingness to Pay — KGmwDKTR6fQ @ 00:00:59].'},
+                            {'name': 'hybrid_margin_model',
+                             'type': 'textarea',
+                             'prompt': 'Model the hybrid structure: base seat fee, included credits, and '
+                                       'metered overage. Calculate P50 and P90 cost per user against the '
+                                       'price point, confirm at least 60 percent gross margin at P50, and '
+                                       'note retention alongside growth.',
+                             'example': 'Seat at $40 with 500 AI credits; P50 user costs $14, a 65 percent '
+                                        'margin, while P90 costs five times that, so overage applies past '
+                                        'the credit pool [The Innovation Attorney — ubYfOw6FSPA @ '
+                                        '00:21:13]. Hybrid chosen for its 105 percent net revenue '
+                                        'retention versus 102 for subscription [The Innovation Attorney — '
+                                        'ubYfOw6FSPA @ 00:09:42].'},
+                            {'name': 'renewal_uplift',
+                             'type': 'textarea',
+                             'prompt': 'Specify the renewal uplift stored on each quote, fixed or maximum, '
+                                       'and the opening escalator you will anchor with. Explain how the '
+                                       'uplift is applied automatically at renewal and where CPI replaces '
+                                       'a fixed rate for buyers expected to haggle.',
+                             'example': 'Escalator talks open at seven percent, expecting procurement to '
+                                        'land near four [Champion Leadership — jOL79tUtq3o @ 00:31:08]. '
+                                        'Standard quotes store a fixed 5 percent uplift, so a $100 line '
+                                        'becomes $105 automatically [MonetizeNow — x0K0bAATQIA @ '
+                                        '00:03:06]; enterprise quotes use a maximum uplift as the '
+                                        'negotiation ceiling instead [MonetizeNow — x0K0bAATQIA @ '
+                                        '00:00:21].'},
+                            {'name': 'ai_usage_guardrails',
+                             'type': 'textarea',
+                             'prompt': 'Set guardrails for AI usage: fair-use policy, pilot cohort size '
+                                       'before full rollout, and the meters buyers will watch. Price in '
+                                       'the alerts, rollover, locked overage pricing, and contractual caps '
+                                       'enterprise buyers are likely to demand at signature.',
+                             'example': 'Fair-use policy caps heavy users, avoiding the unlimited plan '
+                                        'where about 5 percent of users bled an image-generation company; '
+                                        'usage opens to a 12-customer pilot first [Champion Leadership — '
+                                        'jOL79tUtq3o @ 00:18:01]. Contract template already offers alerts '
+                                        'at 80 and 100 percent, rollover, locked overage pricing and a '
+                                        'hard cap [Soft Learn Hub — oDjXoRkYaA0 @ 00:02:18].'}],
+                 'completion_gate': 'Release the plan only when openers have dial-block results, quota is '
+                                    'set as an OTE multiple with realistic attainment, P50 gross margin '
+                                    'clears 60 percent, uplift terms sit on every quote, and an AI '
+                                    'fair-use policy is piloted.'}]}

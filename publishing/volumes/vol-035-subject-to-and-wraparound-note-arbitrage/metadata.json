@@ -9,49 +9,49 @@
       "ARBITRAGE"
     ],
     "deck": [
-      "DISCLOSE THE DEBT. UNDERWRITE THE BUYER.",
-      "SERVICE EVERY PAYMENT."
+      "BUY THE LOW-RATE LOAN, NOT THE HOUSE: SUBJECT-TO TAKEOVERS, MIRROR WRAPS, AND SELLER-AS-BANK PITCHES",
+      "SELL ON AN EQUITY WRAP FOR SPREAD, DOWN PAYMENT, AND CASH FLOW, THEN SERVICE, DISCLOSE, AND PLAN EVERY NOTE EXIT"
     ],
-    "lead": "Subject-To Acquisitions, RMLO-Underwritten Wrap Mortgages & Serviced Performing-Note Spreads with Explicit Debt Risk Controls",
-    "summary": "Evaluate existing loan terms, due-on-sale exposure, seller liability, and buyer repayment capacity before structuring counsel-reviewed acquisitions and wraps with independent servicing and payment reserves.",
+    "lead": "Practitioners take over existing low-rate loans subject-to, then sell on a wraparound note that earns the spread on the full balance while a third-party servicer pays the underlying lender first.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies on subject-to acquisition, wraparound note arbitrage, seller financing, compliance, servicing, and note exits. Every claim, metric, and quote carries timestamped inline attribution to the practitioner and video it came from.",
     "chapters": [
-      "Subject-to acquisitions vs wrap note structures",
-      "Existing lenders, sellers & buyer obligations",
-      "Payment spreads, amortization & reserve math",
-      "Title review, servicing & closing costs",
-      "Due-on-sale calls, defaults & insurance gaps",
-      "Seller sourcing & informed risk disclosures",
-      "Acquisition diligence & counsel-led closings",
-      "RMLO underwriting & ability-to-repay review",
-      "Mortgage licensing & consumer credit rules",
-      "Third-party servicing & underlying loan audits",
-      "Note portfolio controls & workout planning",
-      "First 30-day acquisition-screening sprint"
+      "Wraparound Mortgage Mechanics: How the Wrap Rides on the Underlying Loan",
+      "Buying Subject-To: Pitching Sellers, Agents, and Lenders",
+      "Wrap Arbitrage: Selling on a Wrap for Spread, Down Payment, and Cash Flow",
+      "Seller Finance Fundamentals: Making the Seller the Bank",
+      "Structuring and Underwriting Creative Deals: Hybrids and the Morby Method",
+      "The Due-on-Sale Clause: Law, Exceptions, and Practitioner Workarounds",
+      "Sub-To and Wrap Failure Modes: When Deals Go Sideways",
+      "Closing, Title, and Taxing Creative Sales",
+      "Dodd-Frank and Seller Financing: Exemptions and Ability-to-Repay",
+      "Compliance and Loan Servicing: The Back Office of Every Note",
+      "Buying Mortgage Notes: Discounted and Non-Performing Loan Investing",
+      "Note Exits and Liquidity: Partials, Sales, Funding, and Marketplaces"
     ],
     "flow": [
       [
-        "SCREEN",
-        "Review loan terms, title & seller goals"
+        "TARGET",
+        "Pull absentee owners with values above $300,000, at least 20% equity, and two-plus years of ownership, plus preforeclosures that can be bought before auction."
       ],
       [
-        "DISCLOSE",
-        "Explain seller liability & acceleration risk"
+        "PITCH",
+        "Frame the retail sale as roughly 10% lost to commissions and closing costs, offer to take over payments and cover arrears, and reverse-engineer the seller's monthly number without mentioning interest."
       ],
       [
-        "UNDERWRITE",
-        "Verify buyer capacity with an RMLO"
+        "ACQUIRE",
+        "Buy subject-to or on a mirror wrap, assemble the lender access package (SSN, authorization to release, notarized limited POA), and keep the seller's insurance in force with the trust as additional insured."
       ],
       [
         "CLOSE",
-        "Execute counsel-reviewed documents"
+        "Open escrow and get the title report before promising a move-out date, then record the deed of trust or mortgage with the wraparound rider as the security instrument, never the note itself."
       ],
       [
-        "SERVICE",
-        "Track wrap & underlying loan payments"
+        "WRAP",
+        "Sell on an equity wrap that marks up both price and interest rate so the spread runs on the full balance, with disclosure of the existing mortgage and due-on-sale clause up front and at closing."
       ],
       [
-        "MONITOR",
-        "Audit reserves, insurance & defaults"
+        "SERVICE & EXIT",
+        "Route every payment through a servicer that pays the underlying lender first, name a refinance, reserves, and timeline plan if the loan is called, and ask to renew and extend balloons before paying off or selling the note."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "SUBJECT-TO & WRAPAROUND NOTE ARBITRAGE",
-  "subtitle": "The Complete Playbook for Subject-To & Wraparound Note Arbitrage: $100,000–$850,000 USD in Annual Operator Revenue, a 1 FT + 3 C (4 People) Core Pod, and a Six-Person Scale Plan",
+  "subtitle": "Buy on a Mirror Wrap, Sell on an Equity Wrap: Subject-To Takeovers, Hybrid Seller Notes, Due-on-Sale Defense, Servicer-Run Back Offices, and Note Partials That Recycle Capital",
   "chapter_count": 12,
-  "total_word_count": 77689,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 76106,
+  "expert_youtube_link_count": 211,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:03Z"
+  "updated_at": "2026-11-24T23:07:52Z"
 }

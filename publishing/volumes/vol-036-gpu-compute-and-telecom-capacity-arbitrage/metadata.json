@@ -9,49 +9,49 @@
       "ARBITRAGE"
     ],
     "deck": [
-      "RESERVE CAPACITY. METER REAL USAGE.",
-      "PROTECT SPREADS AND SERVICE LEVELS."
+      "RENTING VRAM, NOT HASHING: 4090, 5090, 3090 AND CMP 170HX RIGS TESTED ON VAST, RUNPOD, SIMPLEPOD AND SALAD",
+      "MEMORY BANDWIDTH OVER TERAFLOPS: 8-GPU HGX BASEBOARDS, INFERENCE ENGINES, SIP TRUNKS AND A2P 10DLC SMS"
     ],
-    "lead": "Bare-Metal H100/H200 Capacity Resale, Metered Inference Routing & Authorized Wholesale SIP/A2P Telecom Operations",
-    "summary": "Match contracted compute and telecom capacity to verified customer demand, isolate tenants, meter billable consumption, and protect margins with resale permissions, service-level controls, and consent-based messaging safeguards.",
+    "lead": "Operators who moved from crypto mining to AI rentals report that the money now sits in renting VRAM, with Salad 4090s netting about $2.92 a day, a 10x CMP 170HX server pulling $36.37 in a day, and memory capacity and bandwidth, not headline teraflops, pricing data-center silicon.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, with every claim carrying timestamped inline attribution to its speaker and source video. Coverage runs from hand-built rental rigs, data-center GPUs and marketplace hosting through colocation, FinOps, neocloud brokerage, Kubernetes GPU sharing, inference engines and token routing to SIP trunking, A2P 10DLC and carrier compliance.",
     "chapters": [
-      "GPU capacity vs SIP and A2P resale models",
-      "Infrastructure suppliers & authorized resale terms",
-      "GPU-hour, token, minute & message margins",
-      "Capacity commitments & working-capital reserves",
-      "Idle clusters, toll fraud & service-credit losses",
-      "Demand validation & committed customer sourcing",
-      "H100/H200 slicing & tenant isolation",
-      "Inference routing, metering & failover controls",
-      "Telecom registration, consent & data obligations",
-      "Usage reconciliation & automated spend limits",
-      "Lean operations pods & supplier diversification",
-      "First 30-day metered-capacity launch sprint"
+      "From Mining Rig to AI Rental Rig: Building and Hosting Your Own GPUs for Profit",
+      "Inside the Silicon: Data-Center GPUs, AI Servers, and Challenger Chips",
+      "Renting GPUs on Marketplaces: RunPod vs Vast.ai in the Field",
+      "Colocation, Warehouses, and Data-Center Plumbing for GPU Operators",
+      "FinOps and Repatriation: Controlling Cloud and AI Compute Spend",
+      "Neocloud Economics and Multi-Cloud GPU Brokerage",
+      "Multi-Tenant GPU Sharing on Kubernetes",
+      "Inference Engines: Getting Maximum Tokens per GPU",
+      "Routing Tokens vs Self-Hosting: Gateways, Cheap Hardware, and Confidential Inference",
+      "SIP Trunking, CPaaS Carriers, and Voice-AI Telephony",
+      "A2P 10DLC: Registering, Vetting, and Delivering Business SMS",
+      "Carrier Compliance and Telecom Business Models"
     ],
     "flow": [
       [
-        "VALIDATE",
-        "Confirm workloads & lawful traffic demand"
+        "SOURCE",
+        "Test any used GPU in person before paying, price-check it on gpudeals.net, and play OEMs against each other, as with Dell at $1M versus Supermicro at $750K."
       ],
       [
-        "CONTRACT",
-        "Secure resale rights & capacity terms"
+        "STRESS-TEST",
+        "Run the C-Payne stress tool for 48 hours to a week, watch for throttling such as a 4090 dropping from 450 W to 230 W, and reseat or swap risers one at a time if System interrupts climb."
       ],
       [
-        "PROVISION",
-        "Isolate tenants & configure routes"
+        "HARDEN",
+        "Size PSUs, PDUs and rack circuits for a steady 80% load, put IPMI on its own out-of-band VLAN, keep InfiniBand off the management switch, and hold GPUs under 83 C."
       ],
       [
-        "METER",
-        "Track usage, cost & customer limits"
+        "LIST",
+        "Rent capacity on marketplaces that take about 25% on Vast, 20% on SimplePod, or 10% plus 40 cents on Salad, never power-limiting below 90% on Salad."
       ],
       [
-        "PROTECT",
-        "Enforce service levels & abuse controls"
+        "SERVE",
+        "Benchmark tokens per GPU across more than one inference server, since Ollama showed an H200 at near-parity with an H100 at 36.6 tok/s, and price silicon on memory capacity and bandwidth."
       ],
       [
-        "RECONCILE",
-        "Audit supplier bills & realized spreads"
+        "CONNECT",
+        "Wire voice-AI telephony over SIP trunks and CPaaS carriers, then register and vet A2P 10DLC campaigns to deliver business SMS within carrier compliance."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "GPU COMPUTE & TELECOM CAPACITY ARBITRAGE",
-  "subtitle": "The Complete Playbook for GPU Compute & Telecom Capacity Arbitrage: $150,000–$1,200,000 USD in Annual Gross Billings, Built Around a 1 FT + 2 C Pod (3 People), Scaling to 5",
+  "subtitle": "Renting VRAM Instead of Hashing, Pricing the Job Instead of the Hour, Keeping Neocloud GPUs Busy, Packing Tokens per Weight Read, and Clearing 10DLC Vetting and STIR/SHAKEN Before the Carrier Margin Disappears",
   "chapter_count": 12,
-  "total_word_count": 79002,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 71806,
+  "expert_youtube_link_count": 211,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:03Z"
+  "updated_at": "2026-11-24T23:07:52Z"
 }

@@ -1,632 +1,813 @@
 from __future__ import annotations
 
-CHAPTER_6 = {
-    "id": "Q6",
-    "chapter_id": "Q6",
-    "chapter_number": 6,
-    "question_number": 6,
-    "slug": "sourcing-demand-mining-and-landing-your-first-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in gpu compute & telecom capacity arbitrage, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (1–4 months)?",
-    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
-    "title": "Sourcing, Demand Mining & Landing Your First Deals",
-    "subtitle": "H100/H200/B200 Supply Signals, LiteLLM Demand Mining, SIP Route Tests, and Lifeline Enrollment Economics Under 47 CFR Part 54",
-    "layout_template": "step_by_step_sop",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #36, ranked #03 of 36 with a 94/100 Money-to-Manpower Score, "
-        "wins by matching documented demand to capacity that suppliers cannot efficiently sell. "
-        "This chapter maps 15 operator plays across reserved GPUs, inference routing, SIP, messaging, "
-        "IPv4, and carefully bounded Lifeline partnerships. Build a signal ledger, qualify actual "
-        "workloads, secure resale rights, and sell prepaid pilots before accepting upstream commitments. "
-        "The canonical annual owner-profit cases are $27,000 Conservative, $189,000 Base, and "
-        "$456,000 Scaled, against gross billings of $150,000, $675,000, and $1,200,000. "
-        "Use measured contribution rather than advertised spreads, distinguish ETC reimbursements "
-        "from aggregator revenue, and target the first 3–10 paying wins within 1–4 months."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$150,000",
-            "context": "Annual gross billings; $97,500 retained contribution at 65%",
-            "note": "18% gross-basis net margin; $27,000 owner profit; 27.69% retained-basis margin; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$675,000",
-            "context": "Annual gross billings; $438,750 retained contribution at 65%",
-            "note": "28.0% gross-basis net margin; $189,000 owner profit; 43.08% retained-basis margin; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual gross billings; $780,000 retained contribution at 65%",
-            "note": "38% gross-basis net margin; $456,000 owner profit; 58.46% retained-basis margin; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Mine GPU supply dislocations and attach each one to a buyer trigger",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a narrow executable inventory: one geography, one GPU family, one workload, "
-                    "and one service promise. H100, H200, and B200 listings are prospecting signals, not "
-                    "interchangeable products. Record accelerator memory, interconnect, host RAM, storage, "
-                    "network egress, available dates, minimum commitment, and contractual resale permission. "
-                    "Compare public offers from CoreWeave, Lambda, RunPod, and specialist bare-metal hosts, "
-                    "then request dated written quotes rather than copying headline hourly prices. Mine "
-                    "provider status histories, announced capacity additions, public procurement awards, and "
-                    "supplier newsletters for timing mismatches. A new cluster can create seller urgency; "
-                    "it does not prove spare inventory or favorable terms. On the buyer side, public "
-                    "engineering posts about inference latency, hiring notices for GPU infrastructure "
-                    "engineers, and product launches with image or speech features identify testable "
-                    "problems. Store the source URL, observation date, proposed workload, business contact, "
-                    "and next verification question in a CRM. Never infer a prospect's private consumption "
-                    "from a job advertisement. The first outreach should offer a reproducible benchmark "
-                    "or dated capacity window, not assert knowledge of their cloud invoice. Separate "
-                    "buyer evidence from supplier evidence so an attractive discount cannot masquerade "
-                    "as demonstrated demand."
-                ),
-                (
-                    "Translate every supply signal into a minimum sell-through calculation before contacting "
-                    "buyers. An illustrative 720-hour H100 reservation at $1.60 per hour costs $1,152; "
-                    "selling 480 hours at $2.80 produces $1,344 and only $192 before support, egress, "
-                    "payment fees, and credits. Bare reservation break-even is 412 sold hours after "
-                    "rounding upward, approximately 57.2% utilization; the operating break-even is higher. "
-                    "A seller calling that a 43% markup has not established owner profit. Prefer a "
-                    "short paid workload test on flexible capacity, followed by a buyer reservation "
-                    "covering the supplier's noncancelable exposure. For inference, benchmark input and "
-                    "output tokens separately, including context length, cache treatment, concurrency, "
-                    "time to first token, and accepted-output quality. LiteLLM can route requests and "
-                    "vLLM can serve compatible models, but neither makes upstream processing terms "
-                    "equivalent. Pin the approved provider set for zero-retention customers and disable "
-                    "payload logging throughout the serving path. Use NVIDIA DCGM for operational "
-                    "telemetry and a separate billing ledger for chargeable units. Stop offering the "
-                    "route when its measured contribution turns negative; do not silently switch to "
-                    "a cheaper model, weaker region, or different retention policy to preserve spread."
-                ),
-                (
-                    "Package the first eight mapped plays below as distinct buying conversations, not "
-                    "eight simultaneous infrastructure launches. A founder with one employee-equivalent "
-                    "role and two contractors should choose one compute wedge and retain alternatives "
-                    "as referral opportunities. Public GitHub issues, Hugging Face discussions, and "
-                    "engineering conference recordings can reveal batch deadlines or serving constraints; "
-                    "read them manually or through permitted interfaces, and use published business "
-                    "contact channels rather than harvesting personal addresses. Create a one-page "
-                    "benchmark card showing hardware, model revision, quantization, test date, workload "
-                    "shape, delivered units, and exclusions. Ask prospects to provide synthetic or "
-                    "approved evaluation data, never production secrets in a discovery form. Match "
-                    "commercial terms to the signal: a launch deadline supports a bounded burst "
-                    "reservation, while stable nightly queues support scheduled capacity. A public "
-                    "request for proposals can justify a response only after checking submission "
-                    "requirements and delivery obligations. Do not imply that a procurement notice "
-                    "is an award. Maintain two qualified suppliers for each promised service, but "
-                    "validate migration time and buyer permission before advertising redundancy. "
-                    "The fallback is usually a smaller, reversible pilot rather than a larger "
-                    "reservation purchased in anticipation of demand."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped Plays 1–8: Compute Signals, Illustrative Unit Economics, and Reversible Fallbacks",
-                "headers": [
-                    "Mapped operator play and buyer",
-                    "Specific signal and verification method",
-                    "Illustrative deal math before overhead",
-                    "Failure condition and operating fallback",
-                ],
-                "rows": [
-                    [
-                        "Play 1: Reserved H100 capacity for deadline-driven inference teams",
-                        "Confirm launch date, required region, and written supplier availability",
-                        "480 hours times $2.80 minus $1,152 reservation leaves $192",
-                        "Low utilization destroys spread; retain hourly sourcing until prepaid",
-                    ],
-                    [
-                        "Play 2: H200 memory-heavy serving for long-context application operators",
-                        "Request context distribution and benchmark memory pressure on approved models",
-                        "100 hours sold at $4 minus $280 supply leaves $120",
-                        "Weak throughput improvement requires reverting to measured H100 economics",
-                    ],
-                    [
-                        "Play 3: B200 launch-window brokerage for performance-sensitive research buyers",
-                        "Verify actual installation, software compatibility, delivery date, and resale rights",
-                        "80 delivered hours at $6 minus $360 supply leaves $120",
-                        "Late hardware delivery requires buyer-approved replacement or unused-credit return",
-                    ],
-                    [
-                        "Play 4: Isolated GPU partitions for smaller compatible inference tenants",
-                        "Confirm MIG support, partition availability, and required tenant isolation",
-                        "Three partitions at $1 hourly minus $2 host leaves $1",
-                        "Memory interference requires dedicated allocation instead of oversold partitions",
-                    ],
-                    [
-                        "Play 5: Scheduled batch inference for predictable overnight processing",
-                        "Find recurring queues and confirm deadlines tolerate scheduled execution",
-                        "300 hours at $2 minus $420 supply leaves $180",
-                        "Missed windows require checkpointing and a priced flexible-capacity fallback",
-                    ],
-                    [
-                        "Play 6: Multi-provider LLM routing for quality-matched application workloads",
-                        "Collect approved evaluation prompts and separate input from output meters",
-                        "100 million matched tokens at $3 versus $2 leaves $100",
-                        "Quality or retention mismatch disables routing despite apparent price savings",
-                    ],
-                    [
-                        "Play 7: Private inference endpoints for enterprise retention requirements",
-                        "Request written retention specification and inspect every processor's terms",
-                        "$2,000 monthly endpoint billing minus $1,200 supply leaves $800",
-                        "Unverifiable zero retention requires declining that workload or redesigning",
-                    ],
-                    [
-                        "Play 8: Render and training overflow for deadline-constrained production studios",
-                        "Confirm software licensing, checkpoint format, and acceptable transfer windows",
-                        "200 hours at $3 minus $400 capacity leaves $200",
-                        "Transfer costs erase spread; benchmark locally before accepting assets",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Trade verified capacity windows, not attractive screenshots",
-                "body": "Experienced brokers constrain both delivery exposure and measurement ambiguity before discussing discounts.",
-                "items": [
-                    "Ask suppliers for a quote expiration timestamp and an allocation identifier; a public price page does not reserve hardware.",
-                    "Run one benchmark with cache disabled and another with the proposed production cache policy; disclose both token-cost results.",
-                    "Negotiate a small expansion option before negotiating a large discount, because unpurchased capacity carries no utilization loss.",
-                    "Treat DCGM telemetry, customer usage records, and supplier invoices as separate evidence streams; reconcile discrepancies before issuing credits.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Mine telecom intent without mistaking subsidies or traffic volume for your revenue",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Telecom demand mining begins with service changes that buyers already disclose: "
-                    "contact-center migrations, new branch openings, public communications procurements, "
-                    "application launches requiring transactional messaging, and network expansions. "
-                    "Use SAM.gov and municipal purchasing portals for documented needs, FCC carrier "
-                    "records for entity checks, and published network contacts for IPv4 discussions. "
-                    "A Robocall Mitigation Database entry helps verify a provider's filing status; "
-                    "it does not certify every offered route. Ask SIP prospects for destination "
-                    "mix, authorized traffic purpose, existing completion metrics, and representative "
-                    "call-detail records stripped of unnecessary personal information. A million "
-                    "minutes billed at $0.008 against $0.005 termination creates $3,000 before "
-                    "platform charges, fraud, support, and taxes or fees allocated to the operator. "
-                    "One expensive destination burst can consume that spread, so use prepaid "
-                    "balances, destination restrictions, velocity limits, and tested disconnect behavior. "
-                    "Least-cost routing should rank only routes meeting the buyer's quality and "
-                    "authorization requirements. For 10DLC, obtain sender identity, use case, and "
-                    "opt-in evidence before registration; TCR registration is an ecosystem requirement, "
-                    "not permission to send unsolicited traffic. For IPv4, verify holder authority, "
-                    "routing authorization, and reputation before advertising address availability."
-                ),
-                (
-                    "The mandatory play mvno_lifeline_acp_telecom_subsidy_aggregation requires a narrower "
-                    "operating interpretation than its historical label suggests. ACP ended on June "
-                    "1, 2024; exclude ACP receipts from a new-deal model unless a later enacted "
-                    "program and current implementing authority establish an available benefit. "
-                    "Lifeline support generally reaches $9.25 monthly for qualifying broadband service "
-                    "or qualifying bundles, with up to $25 additional support for eligible Tribal "
-                    "subscribers; voice-only support has separate rules. Neither a white-label MVNO "
-                    "agreement nor aggregator status independently creates reimbursement eligibility. "
-                    "The ETC receives support subject to designation, subscriber eligibility, qualifying "
-                    "service, usage, and claims requirements. SNAP, Medicaid, and SSI participation "
-                    "can establish an eligibility pathway, but household limits and verification "
-                    "still apply. California LifeLine has its own current tariffs, reimbursement "
-                    "rules, and program administration; never add a generic state amount to federal "
-                    "support and market the result as a universal entitlement. Likewise, a $2–$4 "
-                    "wholesale quote may cover a restricted allowance rather than unlimited high-speed "
-                    "data. Verify actual network entitlement, throttling, device costs, activation "
-                    "fees, and geographic availability. Reject an unlimited-service headline whenever "
-                    "the underlying plan cannot substantiate that claim."
-                ),
-                (
-                    "For this TRACK_2 play, source the first deal through a documented ETC partnership "
-                    "and a small authorized enrollment channel, not a projection of hundreds of "
-                    "thousands of households. Request the ETC agreement, approved territories, approved "
-                    "scripts, benefit verification workflow, commission schedule, and reversal rules. "
-                    "For 100 ordinary eligible lines, $9.25 support produces $925 of ETC support; "
-                    "an illustrative $3 per-line network cost leaves $625 before every other "
-                    "ETC expense. That is not the aggregator's revenue. If the contract instead "
-                    "pays the aggregator $20 per validated activation, 100 activations generate "
-                    "$2,000 in commissions; a modeled 10% reversal reserve leaves $1,800 before "
-                    "acquisition and service costs. Acquire customers through authorized community "
-                    "organizations using voluntary referrals; never buy benefit-recipient lists "
-                    "or collect unnecessary eligibility documents. Schedule a Day-20 SMS or IVR "
-                    "reminder only through authorized contact channels and explain how subscribers "
-                    "can make qualifying use. Under the applicable nonusage rules, 30 days without "
-                    "qualifying usage triggers a required 15-day notice-and-cure process, not "
-                    "automatic immediate termination. A reply counts only when it satisfies the "
-                    "actual qualifying-use criteria. Apply agent clawbacks only under signed "
-                    "commission terms, preserving subscriber rights and auditable usage evidence."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped Plays 9–15: Telecom Buying Triggers, Contribution Tests, and Controlled Fallbacks",
-                "headers": [
-                    "Mapped operator play and counterparty",
-                    "Demand evidence and required operating rights",
-                    "Illustrative unit economics and revenue boundary",
-                    "Risk fallback before expanding the channel",
-                ],
-                "rows": [
-                    [
-                        "Play 9: Wholesale SIP termination for established contact-center operators",
-                        "Validate legitimate traffic, destination mix, and carrier resale agreement",
-                        "One million minutes at $0.003 spread produces $3,000 contribution",
-                        "Restrict destinations and pause routes when fraud thresholds trigger",
-                    ],
-                    [
-                        "Play 10: SIP failover capacity for multi-site enterprise communications",
-                        "Find continuity requirements and perform controlled inbound and outbound tests",
-                        "$500 monthly service charge minus $180 standby cost leaves $320",
-                        "Failed failover tests require remediation before selling continuity commitments",
-                    ],
-                    [
-                        "Play 11: Registered 10DLC operations for permission-based transactional senders",
-                        "Verify sender identity, authorized campaign purpose, and documented recipient permission",
-                        "100,000 segments at $0.003 spread leaves $300 before registration",
-                        "Rejected campaigns require corrected evidence rather than alternate sender identities",
-                    ],
-                    [
-                        "Play 12: Authorized IPv4 leasing for documented network expansion",
-                        "Inspect registry records, holder authorization, routing documents, and reputation",
-                        "256 addresses at $0.60 minus $0.40 each leaves $51.20",
-                        "Ownership or abuse concerns require rejecting the address block",
-                    ],
-                    [
-                        "Play 13: Private interconnect brokerage for latency-sensitive application operators",
-                        "Confirm endpoints, cross-connect responsibilities, installation dates, and resale permission",
-                        "$1,500 monthly billing minus $1,050 circuit supply leaves $450",
-                        "Installation slippage requires service-start billing and alternate approved connectivity",
-                    ],
-                    [
-                        "Play 14: White-label enterprise mobile pools for field-service businesses",
-                        "Request device counts, actual usage distribution, and carrier activation terms",
-                        "100 lines at $12 minus $8 wholesale leaves $400",
-                        "Usage overruns require disclosed caps or correctly priced pooled allowances",
-                    ],
-                    [
-                        "Play 15: mvno_lifeline_acp_telecom_subsidy_aggregation through an authorized ETC enrollment partnership",
-                        "Verify ETC designation, current benefit rules, permitted territory, and commissions",
-                        "100 activations times $20 commission less 10% reserve leaves $1,800",
-                        "Use lawful Day-20 reminders, notice-and-cure procedures, and contractual agent clawbacks",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Qualify contribution, authority, and delivery before quoting a paid pilot",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Score each opportunity out of 100 using six evidence-backed dimensions: measured "
-                    "demand earns 25 points, contribution earns 25, buyer authority earns 15, "
-                    "delivery fit earns 15, permitted use earns 10, and payment readiness earns "
-                    "10. Give full demand points only for buyer-provided usage evidence or a "
-                    "bounded workload with a real deadline. Give full contribution points only "
-                    "after counting unavoidable reservation cost, variable supply, egress, processing "
-                    "fees, expected credits, support, and reversals. The working threshold is "
-                    "75 points for a paid pilot and 85 for considering a longer commitment, "
-                    "with no unresolved identity, permitted-use, or resale-rights failure. These "
-                    "are operating choices, not measured industry benchmarks. A high score cannot "
-                    "compensate for prohibited traffic or missing authority to process customer "
-                    "data. Capture the budget owner, technical evaluator, contract signer, and "
-                    "upstream account owner separately; one enthusiastic engineer rarely fills "
-                    "all four roles. For subsidy aggregation, replace compute consumption evidence "
-                    "with valid ETC authorization and the specific commission-paying event. "
-                    "Keep sensitive eligibility evidence inside the approved verification system, "
-                    "not the general CRM. Missing evidence lowers the score and creates an "
-                    "assigned next action rather than an optimistic forecast entry."
-                ),
-                (
-                    "Reconcile the portfolio to Formula v2.0 before presenting earnings. Conservative "
-                    "gross billings of $150,000 less 35% upstream cost of $52,500 leave "
-                    "$97,500 retained contribution; subtracting $70,500 of other modeled costs "
-                    "produces $27,000 owner profit. Base billings of $675,000 less $236,250 "
-                    "leave $438,750; subtracting $249,750 produces $189,000. Scaled billings "
-                    "of $1,200,000 less $420,000 leave $780,000; subtracting $324,000 "
-                    "produces $456,000. The resulting gross-basis margins are 18%, 28.0%, "
-                    "and 38%; retained-basis margins are 27.69%, 43.08%, and 58.46%. "
-                    "These are fixed canonical portfolio cases, not margins promised for each "
-                    "illustrative deal. The 65% retained-share presentation also does not settle "
-                    "ASC 606 principal-versus-agent classification: assess control and contractual "
-                    "obligations for each service before choosing gross or net presentation. "
-                    "An enrollment agent records its earned commission, not the ETC's subsidy "
-                    "receipts or the household's retail benefit. Staffing remains 1 FT + 2 C "
-                    "for Conservative and Base, and 2 FT + 3 C for Scaled. Do not "
-                    "present the $2,000–$14,000 monthly operating envelope as covering all "
-                    "residual modeled costs; the canonical arithmetic requires a broader cost bridge."
-                ),
-                (
-                    "Build a pilot order that can be accepted without negotiating an entire platform "
-                    "relationship. Specify delivered units, service window, benchmark conditions, support "
-                    "hours, data location, cancellation rules, refund mechanics, and the precise event "
-                    "that starts billing. A $500 prepaid compute pilot with a $175 upstream "
-                    "budget illustrates the canonical 65% retained share, leaving $325 before "
-                    "other costs; it does not prove the supplier can actually deliver at "
-                    "that budget. Obtain the supplier quote first. Use Stripe to collect payment "
-                    "and your own append-only usage ledger to manage service credits; payment "
-                    "processor receipts alone cannot establish remaining consumption entitlement. "
-                    "Define low-balance alerts and hard-stop behavior before any customer traffic "
-                    "arrives. For SIP, stop new chargeable sessions under the agreed balance "
-                    "policy while accounting for ongoing calls. For inference, reserve estimated "
-                    "maximum request cost and settle actual usage afterward. Keep $10,000–$60,000 "
-                    "startup capital allocated between setup, refundable customer obligations, and "
-                    "supplier exposure rather than treating every collected dollar as available "
-                    "profit. Limit initial noncancelable commitments to the amount supported by "
-                    "usable cash and contracted demand after refund reserves. An unsigned expansion "
-                    "promise does not belong in that calculation."
-                ),
-            ],
-            "table": {
-                "caption": "Six-Dimension Qualification Scorecard With Evidence and Explicit Failure Responses",
-                "headers": [
-                    "Scored dimension and maximum points",
-                    "Evidence required for full scoring",
-                    "Specific commercial or technical acceptance test",
-                    "Response when evidence fails the test",
-                ],
-                "rows": [
-                    [
-                        "Measured demand contributes twenty-five available qualification points",
-                        "Buyer supplies dated usage or a bounded workload specification",
-                        "Replay the representative workload and document required delivery volume",
-                        "Offer a smaller diagnostic instead of reserving speculative capacity",
-                    ],
-                    [
-                        "Contribution quality contributes twenty-five available qualification points",
-                        "Written supply quote includes commitments, metering, and ancillary charges",
-                        "Positive contribution survives the documented downside utilization case",
-                        "Reprice the offer or reject the negative-contribution route",
-                    ],
-                    [
-                        "Buyer authority contributes fifteen available qualification points",
-                        "Named signer confirms budget ownership and procurement process",
-                        "Signer accepts pilot scope and authorized payment method",
-                        "Continue discovery without representing verbal enthusiasm as booked revenue",
-                    ],
-                    [
-                        "Delivery fit contributes fifteen available qualification points",
-                        "Benchmark demonstrates region, latency, isolation, and workload compatibility",
-                        "Measured results meet the written customer acceptance criteria",
-                        "Narrow the service promise or source an approved alternative",
-                    ],
-                    [
-                        "Permitted use contributes ten available qualification points",
-                        "Identity, resale rights, traffic purpose, and processor terms align",
-                        "No unresolved prohibited-use or customer-data handling condition remains",
-                        "Decline the workload until documented requirements are satisfied",
-                    ],
-                    [
-                        "Payment readiness contributes ten available qualification points",
-                        "Customer prepays and accepts metering plus refund treatment",
-                        "Collected usable funds cover exposure after applicable reserves",
-                        "Keep delivery disabled until payment and reserve conditions hold",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before activating the first paid workload",
-                "body": "A passing commercial score does not replace these pre-flight verification requirements.",
-                "items": [
-                    "Verify supplier resale permission, service availability, customer identity, and workload purpose against signed terms.",
-                    "Demonstrate usage metering, low-balance alerts, spend limits, and stop behavior with a deliberately exhausted test wallet.",
-                    "Confirm tenant isolation, approved processors, retention settings, and a tested customer-approved recovery path.",
-                    "For telecom, determine the actual provider role and resulting STIR/SHAKEN, database, Form 499-A, messaging, or ETC obligations before activation.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Run a permission-aware cadence and convert measured pilots into the first 3–10 wins",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build a weekly acquisition loop around 25 newly researched business accounts, "
-                    "not a purchased bulk list. In week one, choose one compute or telecom "
-                    "offer, validate two suppliers, and publish a benchmark page with dated "
-                    "assumptions. In weeks two through four, research 100 accounts and prioritize "
-                    "the 40 with a clear trigger and plausible buyer. Send a short business "
-                    "email identifying yourself, the observed public trigger, the bounded offer, "
-                    "and a simple opt-out. Follow applicable CAN-SPAM requirements, including "
-                    "accurate routing information, a postal address, and timely suppression. "
-                    "Use a manual professional-network interaction on day four, a relevant "
-                    "benchmark follow-up on day eight, and a final close-the-loop email on "
-                    "day fourteen. Stop on objection or opt-out; do not add SMS, automated "
-                    "calls, or personal-channel outreach merely because email went unanswered. "
-                    "For inbound, publish a GPU cost worksheet, a destination-specific SIP "
-                    "test guide, or an ETC partner checklist with explicit scope. Ask "
-                    "referral partners for an introduction rather than an exported client "
-                    "list. Track every touch, source, reply category, and suppression event "
-                    "so contractor activity remains visible and duplicate approaches do not "
-                    "damage the account."
-                ),
-                (
-                    "Use a planning funnel with explicit denominators: 100 researched accounts produce "
-                    "40 qualified targets, 12 substantive replies, eight discovery calls, five "
-                    "paid pilots, and three first signed service orders. That means 40% "
-                    "research-to-qualified, 30% qualified-to-reply, 66.7% reply-to-discovery, "
-                    "62.5% discovery-to-pilot, and 60% pilot-to-order conversion, or 3% "
-                    "overall. These are test assumptions, not externally validated market "
-                    "averages. A win requires an executed order and collected payment; "
-                    "a trial signup or unsigned mandate does not count. For an agency "
-                    "mandate, also specify whether compensation is a retainer, activation "
-                    "fee, or earned brokerage commission. Review the funnel every Friday "
-                    "using account-level records, not message counts. If replies are weak, "
-                    "inspect targeting and offer relevance before increasing volume. If "
-                    "pilots fail to convert, separate performance failures from buyer-budget "
-                    "failures and procurement delays. Three comparable 100-account cohorts "
-                    "would imply nine wins at the assumed rate; add partner-originated "
-                    "opportunities rather than promising a tenth. Months two through four "
-                    "should expand only the channel with positive measured acquisition "
-                    "contribution, acceptable support load, and supplier headroom. Keep the "
-                    "1–4 month first-deal window as a planning range, never a customer promise."
-                ),
-                (
-                    "Handle objections with evidence and smaller commitments. When a buyer says "
-                    "hyperscaler credits are cheaper, compare the actual incremental workload "
-                    "cost after credits and concede workloads you cannot beat; sell an "
-                    "uncovered region, deadline, or service gap instead. When they fear "
-                    "broker disappearance, show the service boundary, escalation path, export "
-                    "procedure, and funded recovery option without exposing supplier credentials. "
-                    "When they request postpaid terms, offer a smaller prepaid pilot or "
-                    "a separately underwritten deposit arrangement rather than silently financing "
-                    "usage. When a telecom prospect asks for cheaper routes without answering "
-                    "traffic questions, decline routing until the use case is verified. "
-                    "For Lifeline partners claiming guaranteed subsidy income, show the "
-                    "actual payable event, current program rules, and reversal schedule. "
-                    "After each pilot, deliver a reconciliation containing purchased units, "
-                    "consumed units, supplier cost, customer credits, incident history, and "
-                    "the proposed renewal scope. Request a testimonial only with written "
-                    "permission and customer-approved metrics. Retain failed-pilot reasons as "
-                    "structured CRM fields so acquisition improves rather than repeatedly "
-                    "selling the same mismatch. The first ten customers should establish "
-                    "a repeatable unit, not ten bespoke services that require ten "
-                    "different support runbooks and consume the entire small team's capacity."
-                ),
-            ],
-            "table": {
-                "caption": "First-Deal Cadence and Objection Handling With Observable Conversion Evidence",
-                "headers": [
-                    "Acquisition stage or common objection",
-                    "Concrete operator message or action",
-                    "Evidence that advances the commercial conversation",
-                    "Stop condition or bounded next step",
-                ],
-                "rows": [
-                    [
-                        "Day one introduces a verified public buying trigger",
-                        "Offer a dated benchmark for the prospect's stated workload",
-                        "Buyer confirms relevance and identifies the technical evaluator",
-                        "Suppress opted-out contacts immediately and record the disposition",
-                    ],
-                    [
-                        "Day four adds a manual professional-channel interaction",
-                        "Reference relevant public work without repeating an aggressive pitch",
-                        "Prospect voluntarily engages or accepts a focused introduction",
-                        "Avoid personal-channel escalation when professional outreach receives silence",
-                    ],
-                    [
-                        "Day eight supplies reproducible results and pilot scope",
-                        "Share measured throughput, service boundaries, and prepaid pilot pricing",
-                        "Buyer supplies evaluation criteria and names the budget owner",
-                        "Revise mismatched scope rather than discounting unsupported performance claims",
-                    ],
-                    [
-                        "Day fourteen closes an unanswered outreach sequence",
-                        "Ask whether to close the opportunity and stop follow-ups",
-                        "Buyer requests a specific future date or declines",
-                        "Archive inactive prospects without cycling them through fresh identities",
-                    ],
-                    [
-                        "Existing cloud credits appear cheaper than broker pricing",
-                        "Compare incremental delivered workload cost after available customer credits",
-                        "Document an uncovered deadline, region, or operational service requirement",
-                        "Concede uneconomic workloads and preserve a narrow referral relationship",
-                    ],
-                    [
-                        "Buyer demands unsecured postpaid usage before any pilot",
-                        "Offer a smaller prepaid test with transparent reconciliation",
-                        "Collected funds cover service exposure after applicable refund reserves",
-                        "Decline unfunded commitments instead of disguising credit exposure",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Build the two-sided evidence ledger",
-                    "action": "Record 100 researched accounts and two qualified suppliers for the selected service.",
-                    "detail": "Attach public-source dates, buyer triggers, written quotes, resale terms, workload assumptions, and named evidence owners.",
-                },
-                {
-                    "step": 2,
-                    "title": "Qualify and deliver the bounded offer",
-                    "action": "Score prospects, select the strongest 40, and run the fourteen-day outreach sequence.",
-                    "detail": "Require documented authority, permitted use, contribution, and payment readiness; maintain one shared suppression list.",
-                },
-                {
-                    "step": 3,
-                    "title": "Collect payment and execute measured pilots",
-                    "action": "Target five prepaid pilots with written acceptance criteria and tested spending controls.",
-                    "detail": "Record delivery performance, actual supplier costs, credits, support time, and customer acceptance against the original scope.",
-                },
-                {
-                    "step": 4,
-                    "title": "Convert, reconcile, and repeat selectively",
-                    "action": "Seek three paid service orders from the first cohort and review results before expansion.",
-                    "detail": "Repeat only profitable channels; use additional cohorts and authorized referrals to pursue ten wins without expanding commitments prematurely.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "The first profitable deal is a verified buyer matched to deliverable capacity, not cheap capacity waiting for a buyer.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Choose one of the fifteen mapped plays and define its buyer, chargeable unit, service boundary, and reversible fallback.",
-        "Obtain two dated supplier quotes with explicit resale rights, minimum commitments, ancillary charges, and delivery evidence.",
-        "Research 100 business accounts, preserve public-source provenance, and qualify the strongest 40 using the weighted scorecard.",
-        "Publish one reproducible benchmark or telecom test guide and run the permission-aware fourteen-day outreach cadence.",
-        "Activate five prepaid pilots only after verifying metering, spend stops, tenant isolation, and role-specific telecom requirements.",
-        "Reconcile three signed paid orders to actual contribution, then repeat successful cohorts toward ten wins within the planning window.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "47 U.S.C. § 214(e) — Eligible telecommunications carriers",
-            "url": "https://www.law.cornell.edu/uscode/text/47/214",
-            "relevance": "ETC designation and associated service obligations distinguish an eligible support recipient from an ordinary reseller or enrollment agent.",
-        },
-        {
-            "title": "47 CFR § 54.403 — Lifeline support amount",
-            "url": "https://www.ecfr.gov/current/title-47/section-54.403",
-            "relevance": "Determine applicable federal support and enhanced Tribal support from the current rule rather than assuming a universal combined reimbursement.",
-        },
-        {
-            "title": "47 CFR § 54.409 — Consumer qualification for Lifeline",
-            "url": "https://www.ecfr.gov/current/title-47/section-54.409",
-            "relevance": "Apply income or qualifying-program pathways and the relevant household restrictions before treating an enrollment as eligible.",
-        },
-        {
-            "title": "47 CFR § 54.405(e)(3) — Lifeline de-enrollment for nonusage",
-            "url": "https://www.ecfr.gov/current/title-47/section-54.405",
-            "relevance": "For covered service, implement the 30-day nonusage trigger and required 15-day notice-and-cure process instead of immediate termination.",
-        },
-        {
-            "title": "47 CFR § 54.407(c)(2) — Qualifying usage for Lifeline support",
-            "url": "https://www.ecfr.gov/current/title-47/section-54.407",
-            "relevance": "Validate the actual qualifying-use event; a reminder campaign or message delivery alone does not establish subscriber usage.",
-        },
-        {
-            "title": "FCC — Affordable Connectivity Program conclusion",
-            "url": "https://www.fcc.gov/acp",
-            "relevance": "The FCC records ACP's June 1, 2024 end; do not model current ACP receipts without a later operative authority.",
-        },
-        {
-            "title": "47 CFR § 64.6301 — Caller identification authentication",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.6301",
-            "relevance": "Determine applicable STIR/SHAKEN implementation duties from the operator's actual voice-service role and network circumstances.",
-        },
-        {
-            "title": "47 CFR § 64.6305 — Robocall mitigation and certification",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.6305",
-            "relevance": "Evaluate required mitigation practices, certifications, database filings, and restrictions before accepting wholesale voice traffic.",
-        },
-        {
-            "title": "47 CFR §§ 54.706 and 54.711 — Contributions and reporting",
-            "url": "https://www.ecfr.gov/current/title-47/part-54/subpart-H",
-            "relevance": "Determine contribution status and reporting duties for telecommunications activity; evaluate Form 499-A obligations rather than assuming every broker has identical treatment.",
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Use accurate sender information, required identification and address information, functional opt-outs, and timely suppression in commercial outreach.",
-        },
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on telephone equipment use",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Evaluate calling and messaging restrictions independently of carrier registration, campaign provisioning, or an existing email conversation.",
-        },
-    ],
-}
+CHAPTER_6 = {'id': 'Q6',
+ 'chapter_id': 'Q6',
+ 'chapter_number': 6,
+ 'question_number': 6,
+ 'slug': 'neocloud-economics-multi-cloud-gpu-brokerage',
+ 'question_prompt': 'How do neoclouds make money, and how do teams broker and schedule GPU jobs across '
+                    'multiple clouds and clusters?',
+ 'kicker': 'Q6 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Neocloud Economics and Multi-Cloud GPU Brokerage',
+ 'subtitle': 'Single-H100 neocloud unit economics, CoreWeave, Nebius, Crusoe, Lambda, and Fluidstack, '
+             'GPUaaS, startups leaving AWS and Azure for bare metal, debt-financed buildouts from the '
+             'telecom bust, SkyPilot as an intercloud broker at Meta scale, unscheduled-GPU diagnosis, '
+             'gang scheduling and preemption, spot-checkpoint math, CoreWeave SUNK, Modelplane, and '
+             'multi-node fine-tuning on Nebius',
+ 'layout_template': 'step_by_step_blueprint',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Neocloud operators and multi-cloud brokers converge on one law: idle or stalled '
+                      'GPUs bleed money, so utilization, scheduling and portability decide who survives. '
+                      'Caleb Writes Code models a $25K H100 rented at $2.30/hr returning a 28% CAGR only '
+                      'at full utilization, with broad stocks winning below roughly 55%. Neoclouds list '
+                      'GPUs at roughly half to two-thirds of hyperscaler prices and up to 30-50% cheaper '
+                      "on contract, while SkyPilot's broker finds up to 3x on-demand and 9x spot price "
+                      'spreads across zones. Street mechanics center on queues with priority preemption, '
+                      'checkpointed spot runs saved near a 34-minute interval, and one YAML spec that '
+                      'fails over across clouds. Disagreement persists over provider picks, Slurm versus '
+                      'Kubernetes, and whether neocloud debt echoes the telecom bust, where a NY-LA '
+                      'circuit collapsed from $1.8M to under $150K a year.',
+ 'key_metrics': [{'label': 'Neocloud Break-Even Utilization',
+                  'metric': 'Neocloud Break-Even Utilization',
+                  'value': 'At or below ~55% utilization, broad stocks beat the neocloud',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'H100 bought for $25K plus $5K opex, rented at $2.30/hr for about 4 years, '
+                             'returns a 28% CAGR only at 100% utilization',
+                  'source': 'Caleb Writes Code ([9u2hCf8FlW0 @ 00:01:22])'},
+                 {'label': 'Cross-Cloud GPU Price Spread',
+                  'metric': 'Cross-Cloud GPU Price Spread',
+                  'value': 'Up to 3x on-demand and up to 9x spot',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Price differences measured across zones by the SkyPilot intercloud broker '
+                             "team at NSDI '23",
+                  'source': 'USENIX ([3Edw88b1bRg @ 00:07:21])'},
+                 {'label': 'Scheduler Utilization Gap',
+                  'metric': 'Scheduler Utilization Gap',
+                  'value': '~45% default Kubernetes vs ~85% workload-aware, worth ~$150k per day',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Modeled on a 10,000-GPU fleet costing about $400M across 1,250 hosts in 32 '
+                             'racks',
+                  'source': 'Codemia ([a_zou7QahAo @ 00:04:38])'},
+                 {'label': 'Optimal Spot Checkpoint Interval',
+                  'metric': 'Optimal Spot Checkpoint Interval',
+                  'value': '~34 minutes (square root of 2 x MTBI x save cost)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '2,000-run simulation of a 100h job with 8h interruptions, 6-minute restarts, '
+                             '72s saves and a 70% spot discount',
+                  'source': 'The Code Notebook ([IZtzUfhm8LU @ 00:10:20])'}],
+ 'sections': [{'section_number': 1,
+               'title': 'The Practitioner Consensus',
+               'paragraphs': ['Every operator in this chapter starts from the same brutal arithmetic: a '
+                              'GPU only earns while it is busy. Caleb Writes Code prices a single H100 at '
+                              '$25K plus $5K opex, gives it roughly 4 years of useful life, and shows that '
+                              'renting it at $2.30/hr yields about $55 a day, near $20K a year and about '
+                              '$80K over four years, which works out to a 28% CAGR only at 100% '
+                              'utilization; at or below roughly 55% utilization, broad stocks beat the '
+                              'neocloud outright [9u2hCf8FlW0 @ 00:01:22]. The gpuMaster frames the same '
+                              'pain from the renter side: stalled GPUs still bill, and large-scale GPU '
+                              "workloads are 'far less forgiving' [_tV0Elv_jIk @ 00:01:29]. Codemia puts a "
+                              'dollar figure on scheduler quality for a 10,000-GPU fleet: default '
+                              'Kubernetes lands near 45% utilization, a workload-aware design reaches '
+                              'about 85%, and that gap is worth roughly $150k per day [a_zou7QahAo @ '
+                              '00:04:38]. The Code Notebook compresses the whole consensus into one line, '
+                              "'The cheapest GPU is one that is switched off,' backed by a scale-to-zero "
+                              'simulation that cut 24 GPU-hours to 4.04, an 83% reduction, at a cost of '
+                              '3.9 cold starts per day lasting 60 seconds each [IZtzUfhm8LU @ 00:12:17].',
+                              'The second point of agreement is that neoclouds win on price and workload '
+                              'fit, not on breadth of services. Cloud Computing Insider defines a neocloud '
+                              'as an AI-first, GPU-centric provider and argues that hyperscalers were '
+                              'built for all IT, while neoclouds were built for the compute, networking '
+                              'and storage patterns modern AI needs, and hyperscalers charge more for AI '
+                              'because they run it less efficiently [mAgWtefgeP8 @ 00:01:02]. Romil '
+                              'Bhardwaj of SkyPilot, speaking at TMLS, lists the neocloud edge as instant '
+                              'self-serve capacity, 3.2TB/s InfiniBand, top SemiAnalysis ClusterMAX tiers, '
+                              'and pricing up to 30 to 50% cheaper depending on contract length, while '
+                              'warning that the long tail of neoclouds runs 2 to 3x cheaper but less '
+                              'reliable [_oWJ0t-RW7o @ 00:06:30]. The Code Notebook, working from vendor '
+                              'figures dated October 2026, pegs neocloud GPU list prices at roughly '
+                              'one-half to two-thirds of big-cloud rates [IZtzUfhm8LU @ 00:05:29]. Caleb '
+                              'Writes Code, whose own model assumes a market rate of $1 to $5 per hour '
+                              'across CoreWeave, Runpod, Vultr and Thunder Compute, adds the hard '
+                              'corollary: neoclouds are heavily commoditized, customers typically look for '
+                              'the cheapest pricing, and any operator who charges a premium watches '
+                              'utilization fall [9u2hCf8FlW0 @ 00:01:37].',
+                              'The third consensus is that no serious buyer stays on one provider. '
+                              'Zhanghao Wu and Kevin Mingtarja of SkyPilot open their '
+                              'frontier-capabilities talk by pointing to Meta signing multi-billion-dollar '
+                              'deals with CoreWeave and Nebius and give three reasons to run '
+                              'multi-provider: capacity, cost, and no single point of failure [uwLkrJb5pEA '
+                              "@ 00:01:47]. Romil Bhardwaj, presenting at CNCF, traces OpenAI's move from "
+                              'Microsoft exclusivity to Oracle, CoreWeave and GCP [-czZES1U_Us @ '
+                              "00:00:49]. The USENIX NSDI '23 SkyPilot team makes the economic case for "
+                              'brokerage: silos reduce availability and leverage, a single-cloud business '
+                              'is more vulnerable to large-scale outages, and it has lower negotiation '
+                              "leverage to get a better deal because 'choice is power' [3Edw88b1bRg @ "
+                              '00:01:22]. Their broker example routes SGX workloads to Azure, TPU training '
+                              'to GCP and Inferentia inference to AWS. Cloud Computing Insider expects the '
+                              'end state to be a hybrid, heterogeneous mix, telling buyers that a '
+                              'best-of-breed play is going to be complex and heterogeneous, and that if '
+                              'they shortlist two providers it is probably Nebius and CoreWeave, while '
+                              'disclaiming any single-provider recommendation [mAgWtefgeP8 @ 00:13:14]. '
+                              'The prerequisite all of them share is a portability layer that lets '
+                              'workloads move when prices, quotas or availability shift.'],
+               'table': {'caption': 'Where neocloud operators, brokers and buyers agree on the core '
+                                    'economics',
+                         'headers': ['Consensus Point',
+                                     'What The Practitioner Reported',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Utilization decides whether neocloud rentals pay',
+                                   '$25K H100 at $2.30/hr earns about $55/day and 28% CAGR at 100% '
+                                   'utilization',
+                                   'At or below roughly 55% utilization, broad stocks beat the GPU rental '
+                                   'business',
+                                   'Caleb Writes Code ([9u2hCf8FlW0 @ 00:00:50])'],
+                                  ['Stalled GPUs keep billing the renter regardless',
+                                   'Large-scale GPU workloads are far less forgiving and stalled GPUs '
+                                   'still bill',
+                                   "Saying 'we need more GPUs' is incomplete without topology and "
+                                   'throughput analysis',
+                                   'The gpuMaster ([_tV0Elv_jIk @ 00:01:29])'],
+                                  ['Neoclouds undercut hyperscalers on GPU pricing',
+                                   'Neoclouds run up to 30-50% cheaper depending on the contract length '
+                                   'signed',
+                                   'Benchmark your own workload during a roughly week-long POC before '
+                                   'signing anything',
+                                   'Toronto Machine Learning Society (TMLS) ([_oWJ0t-RW7o @ 00:06:30])'],
+                                  ['Scheduler quality converts directly into daily cash',
+                                   'Default Kubernetes near 45% utilization versus about 85% with '
+                                   'workload-aware design',
+                                   'On a 10,000-GPU fleet that utilization gap is worth roughly $150k per '
+                                   'day',
+                                   'Codemia ([a_zou7QahAo @ 00:04:38])'],
+                                  ['Multi-provider sourcing is now the default posture',
+                                   'Capacity, cost and no single point of failure drive multi-provider '
+                                   'strategy',
+                                   "Meta's multi-billion-dollar CoreWeave and Nebius deals signal the "
+                                   'market shift underway',
+                                   'SkyPilot ([uwLkrJb5pEA @ 00:01:47])'],
+                                  ['Single-cloud silos destroy buyer negotiating leverage',
+                                   'Lock-in reduces availability, raises outage exposure and lowers '
+                                   'negotiation leverage overall',
+                                   'Use credible alternative providers to win better deals because choice '
+                                   'is power',
+                                   'USENIX ([3Edw88b1bRg @ 00:01:22])'],
+                                  ['AI platforms will end up hybrid and heterogeneous',
+                                   'Best-of-breed plays are complex; Nebius and CoreWeave lead a '
+                                   'two-provider shortlist',
+                                   'Judge platform readiness against twelve months out, as usage can scale '
+                                   'toward millions',
+                                   'Cloud Computing Insider ([mAgWtefgeP8 @ 00:13:14])']]}},
+              {'section_number': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['On the supply side, the build math gets heavier fast. Caleb Writes Code '
+                              'notes that a GPT-3-class model needs more than 350GB of VRAM, so a serious '
+                              'customer needs at least 8 H100s, which puts the minimum rentable unit at '
+                              '$250K: $200K for cards and $50K opex; eBay cards are risky, and supplier '
+                              'relationships act as the moat [9u2hCf8FlW0 @ 00:03:59]. Scaling is '
+                              'non-linear: efficiency drops to 77% at 8 GPUs under model parallelism and '
+                              '74% at 512 per an NVIDIA paper, fragmented nodes create bottlenecks, and '
+                              'scheduling turns into Tetris. CUDA and ROCm workloads are not '
+                              'interchangeable, so a mixed fleet carries heterogeneity risk. On financing, '
+                              'Caleb Writes Code points out that resale value stays near purchase price, '
+                              'which enables asset-backed loans, while contracts trade a discount for '
+                              'flexibility [9u2hCf8FlW0 @ 00:13:55]. Codemia sizes a 10,000-GPU fleet at '
+                              'about $400M across 1,250 hosts in 32 racks, with cards renting at $20 to '
+                              '$40 per hour [a_zou7QahAo @ 00:03:35]. Reliability becomes a sales weapon: '
+                              "Deok Filho of CoreWeave cites Meta's figure of roughly 8 hours between "
+                              'interruptions per 1,000 GPUs and claims CoreWeave runs 70 to 80 hours for '
+                              'an equivalent job size [vdP0fhqpYZs @ 00:06:03].',
+                              'On the buy side, The Code Notebook lays out the pricing ladder: flex start '
+                              'runs about half price, commitments go down to about 45%, and spot goes down '
+                              'to about 9% [IZtzUfhm8LU @ 00:06:06]. The commitment rule is simple: '
+                              'utilization must exceed 1 minus the discount. With $10 on-demand, a $4.50 '
+                              'commit costs $5 per used hour at 90% busy but $45 per used hour at 10% '
+                              "busy, hence 'Never commit to your peak.' Spot carries a different tax: AWS "
+                              'gives 2 minutes of warning and Azure gives 30 seconds. In a 2,000-run '
+                              'simulation of a 100-hour job with interruptions every 8 hours, 6-minute '
+                              'restarts, 72-second saves and a 70% discount, never saving produced '
+                              '2,203,564 hours, saving every 30 minutes finished in 109 hours at a cost of '
+                              '32.6 against 100 on-demand, and saving every 30 seconds took 345 hours at '
+                              '103.5. The optimal save interval, the square root of 2 times MTBI times '
+                              'save cost, lands near 34 minutes [IZtzUfhm8LU @ 00:10:20]. The USENIX '
+                              'SkyPilot team measured the spread that makes brokering pay: up to 3x on '
+                              'on-demand pricing and up to 9x on spot across zones [3Edw88b1bRg @ '
+                              "00:07:21]. Codemia's scheduler polls for spot reclaim every 5 seconds "
+                              'against the 2-minute warning [a_zou7QahAo @ 00:29:02].',
+                              'The brokerage layer itself is mostly scheduling and provisioning plumbing. '
+                              "SkyPilot's Zhanghao Wu and Kevin Mingtarja run `sky launch --gpus B200` for "
+                              'a dev box, bump `num_nodes 16` to scale out, and use `sky jobs launch` so a '
+                              'GPU failure, node maintenance, quota reclamation or spot preemption is '
+                              'recovered hands-free; in their demo the optimizer picked the cheapest '
+                              'option, an already-provisioned CoreWeave H100 node [uwLkrJb5pEA @ '
+                              '00:08:31]. At Meta FAIR, Lucca Bertoncini found a 10-step setup lost about '
+                              '90% of users by step 2 and 98% by the end, and 2FA on every cluster drove '
+                              'adoption to 0%, so the team shipped a single binary that writes the '
+                              'configuration and holds SSH/ET tunnels in tmux with 2FA done once, across '
+                              'clusters of roughly 20K GPUs each [Pas2NE76220 @ 00:05:54]. Seung Jin Yang '
+                              'of SkyPilot replaces spreadsheets and node taints with a real queue, '
+                              'priority preemption backed by checkpoints, Slack alerts on preemption, and '
+                              "quota borrowing that lets a team grab 256 GPUs idling in another team's "
+                              'queue [tb-Yg8PNXT4 @ 00:05:02]. Alex from Nebius shows SkyPilot task '
+                              'definitions running 3 to 4x shorter than the Kubernetes equivalent, driving '
+                              'a 2-node, 16-H100 Llama 3.1 fine-tune with TorchTune [QLSYI5Ali8Y @ '
+                              '00:02:24].'],
+               'table': {'caption': 'Exact numbers, formulas and commands practitioners run in neocloud '
+                                    'brokerage',
+                         'headers': ['Mechanic',
+                                     'Exact Numbers Or Command',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Single H100 rental unit economics baseline',
+                                   '$25K card plus $5K opex, $2.30/hr, about $80K over 4 years',
+                                   'Reach full utilization for 28% CAGR; at or below 55%, stocks win',
+                                   'Caleb Writes Code ([9u2hCf8FlW0 @ 00:00:50])'],
+                                  ['Commitment break-even rule for reserved GPUs',
+                                   'Utilization must exceed 1 minus the discount on list price',
+                                   'A $4.50 commit on $10 on-demand costs $45 per used hour at 10% busy',
+                                   'The Code Notebook ([IZtzUfhm8LU @ 00:07:33])'],
+                                  ['Checkpoint interval for interrupted spot training runs',
+                                   'Square root of 2 times MTBI times save cost, about 34 minutes',
+                                   'Saving every 30 minutes cost 32.6 versus 100 on-demand in simulation',
+                                   'The Code Notebook ([IZtzUfhm8LU @ 00:10:20])'],
+                                  ['Managed job recovery across clouds and neoclouds',
+                                   'sky jobs launch with automatic node-failure and preemption recovery '
+                                   'built in',
+                                   'Avoid 3 a.m. pages when GPUs fail, nodes drain or spot is reclaimed',
+                                   'SkyPilot ([uwLkrJb5pEA @ 00:08:31])'],
+                                  ['Gang placement scoring for multi-node training jobs',
+                                   'Bandwidth 40%, compactness 25%, rack penalty 25%, fragmentation 10%, '
+                                   'under 100ms',
+                                   'Pair with an etcd 60s lease and two-phase commit to place gangs',
+                                   'Codemia ([a_zou7QahAo @ 00:13:52])'],
+                                  ['Quota floors and burst allowances between teams',
+                                   'Reserved floor of 400 cards plus a burst allowance of 600 cards',
+                                   'Enforce dominant-resource fairness across teams sharing the same GPU '
+                                   'fleet',
+                                   'Codemia ([a_zou7QahAo @ 00:20:40])'],
+                                  ['MIG slicing to lift idle card utilization',
+                                   'Up to 7 slices per card, taking utilization from 8% to over 60%',
+                                   'Carve lightly used cards into slices instead of leaving whole GPUs '
+                                   'idle',
+                                   'Codemia ([a_zou7QahAo @ 00:32:20])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'What The Brokers Do Before Spending A Dollar',
+                           'body': 'The operators who win on GPU arbitrage test before they sign, request '
+                                   'capabilities instead of clusters, and price work rather than sticker '
+                                   'hours.',
+                           'items': ['Run your own end-to-end workload in a roughly week-long POC before '
+                                     'signing, and use multicloud optionality as negotiating leverage '
+                                     '[Toronto Machine Learning Society (TMLS) — _oWJ0t-RW7o @ 00:07:47].',
+                                     'Never build a plan around a chip that is only announced, and always '
+                                     'test your own workload before you sign anything [The Code Notebook — '
+                                     'IZtzUfhm8LU @ 00:04:26].',
+                                     'Request intent, not hardware: a `network_tier: best` field gets '
+                                     'translated to EFA or GPUDirect per cloud, with raw pod specs kept as '
+                                     'an escape hatch [CNCF [Cloud Native Computing Foundation] — '
+                                     '-czZES1U_Us @ 00:12:15].',
+                                     'Declare requirements, not clusters: the deployment asked for 8 GPUs '
+                                     'with at least 140GB VRAM on vLLM, never named the cluster, and '
+                                     'placed 2 replicas across AWS and CoreWeave [Modelplane — Wq9Ov_jlxlM '
+                                     '@ 00:03:54].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Model Utilization Break-Even',
+                              'action': 'Price the card, opex and hourly rate, then compute returns at '
+                                        'realistic utilization rather than full occupancy.',
+                              'detail': 'Use the baseline of a $25K H100 plus $5K opex rented at $2.30/hr, '
+                                        'which returns a 28% CAGR at 100% utilization while broad stocks '
+                                        'win at or below roughly 55% [Caleb Writes Code — 9u2hCf8FlW0 @ '
+                                        '00:01:22].'},
+                             {'step': 2,
+                              'title': 'Benchmark Shortlisted Neoclouds',
+                              'action': 'Run your own workload on each candidate provider before '
+                                        'committing any contract.',
+                              'detail': 'Run a roughly week-long POC to confirm end-to-end performance, '
+                                        'since neoclouds can be 30-50% cheaper depending on contract '
+                                        'length and multicloud gives negotiating leverage [Toronto Machine '
+                                        'Learning Society (TMLS) — _oWJ0t-RW7o @ 00:07:47].'},
+                             {'step': 3,
+                              'title': 'Size Commitments Below Peak',
+                              'action': 'Commit only the capacity you will keep busier than the break-even '
+                                        'line.',
+                              'detail': 'Commit only when utilization will exceed 1 minus the discount; a '
+                                        '$4.50 commit on $10 on-demand costs $5 per used hour at 90% busy '
+                                        'and $45 at 10% busy, so never commit to your peak [The Code '
+                                        'Notebook — IZtzUfhm8LU @ 00:07:52].'},
+                             {'step': 4,
+                              'title': 'Launch Through A Broker With Checkpointed Recovery',
+                              'action': 'Define the job once in YAML, launch as a managed job, and mount '
+                                        'checkpoints to durable storage.',
+                              'detail': 'Launch with `sky jobs launch`, mount checkpoints (the demo used '
+                                        'S3 at /checkpoints), and let SkyPilot recover from GPU failure, '
+                                        'node maintenance, quota reclamation or spot preemption hands-free '
+                                        '[SkyPilot — uwLkrJb5pEA @ 00:08:31].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ["The first split is whether to own GPUs or arbitrage other people's "
+                              'capacity. Caleb Writes Code runs the owner math cold: a $25,000 H100 plus '
+                              '$5,000 opex, a four-year life, and $2.30 per hour yielding roughly $55 a '
+                              "day, about $20,000 a year and $80,000 over the card's life, a 28% CAGR only "
+                              'at 100% utilization [9u2hCf8FlW0 @ 00:00:50]. Drop to roughly 55% '
+                              'utilization and broad stocks beat the neocloud, and because the market is '
+                              'commoditized, any premium price simply bleeds utilization [9u2hCf8FlW0 @ '
+                              '00:01:22]. Romil Bhardwaj attacks from the buyer side: the long tail of '
+                              'neoclouds runs two to three times cheaper but is less reliable, and '
+                              'neoclouds can land 30 to 50% cheaper depending on how long a contract you '
+                              'sign [_oWJ0t-RW7o @ 00:06:30]. Cloud Computing Insider frames the same gap '
+                              'structurally, arguing hyperscalers charge more for AI because they were '
+                              'built for all IT and are less efficient at it [mAgWtefgeP8 @ 00:01:49]. The '
+                              'owner needs full racks and steady renters; the broker profits when that '
+                              "owner's margin collapses under competition. Both camps agree price is the "
+                              'battlefield, but they sit on opposite sides of the same spread, and an '
+                              'operator has to decide which side of that spread pays the bills before '
+                              'buying a single card.',
+                              'The second fight is concentration versus brokerage. Cloud Computing Insider '
+                              'will name names, saying if you look at two providers it is probably Nebius '
+                              'and CoreWeave, with CoreWeave as the gold standard, yet the same speaker '
+                              'refuses to back a single provider and warns that a best-of-breed play will '
+                              "be complex and heterogeneous [mAgWtefgeP8 @ 00:13:14]. CoreWeave's Deok "
+                              'Filho pushes concentration hard: Meta reports about eight hours between '
+                              'interruptions per 1,000 GPUs, CoreWeave claims 70 to 80 hours for an '
+                              "equivalent job size, and the pitch closes with 'It just will run better on "
+                              "us' [vdP0fhqpYZs @ 00:06:03]. The Sky Computing team at USENIX argues the "
+                              'opposite, that silos cut availability and negotiation leverage because '
+                              'choice is power, and that clouds will never commoditize themselves through '
+                              'standardization, so a broker must sit on top [3Edw88b1bRg @ 00:01:22]. '
+                              'Modelplane adds a sharper twist: the multi-cloud layer is too important to '
+                              'be proprietary, and clusters should be treated as one fleet where a '
+                              'deployment never names the cluster at all [Wq9Ov_jlxlM @ 00:02:46]. '
+                              'Single-vendor depth buys reliability numbers and integrated tooling; '
+                              "brokerage buys leverage and failover. Neither camp disputes the other's "
+                              'data, only which risk an operator should eat.',
+                              'The third split is how to buy time on the iron. Caleb Writes Code treats '
+                              'contracts as a plain trade of discount for flexibility [9u2hCf8FlW0 @ '
+                              "00:11:30]. The Code Notebook maps the buyer's full ladder: flex start at "
+                              'about half price, commitments down to about 45%, spot down to about 9%, and '
+                              'a hard rule that a commitment only wins when utilization exceeds one minus '
+                              "the discount, summed up as 'Never commit to your peak' [IZtzUfhm8LU @ "
+                              '00:07:52]. The USENIX SkyPilot team bets on the spread instead, measuring '
+                              'up to three times difference in on-demand pricing and up to nine times in '
+                              'spot pricing across zones, then routing jobs with an ILP solver that '
+                              'minimizes total cost or time [3Edw88b1bRg @ 00:07:21]. Underneath the '
+                              'pricing sits a cluster-manager argument. Romil Bhardwaj says Slurm hits '
+                              'isolation and serving limits, Kubernetes brings a steep learning curve with '
+                              'no SSH and no gang scheduling, and raw VMs dump key management and manual '
+                              'orchestration on the team, so the recommendation is managed Kubernetes plus '
+                              'VMs [_oWJ0t-RW7o @ 00:11:41]. CoreWeave answers by running Slurm on '
+                              'Kubernetes through SUNK, while Meta FAIR still flags schedulers stacked on '
+                              'schedulers as an open problem. Each answer reshapes how much of the '
+                              'discount actually reaches the bottom line.'],
+               'table': {'caption': 'Side-by-side playbooks where neocloud and brokerage practitioners '
+                                    'split',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Own GPUs versus rent the price spread',
+                                   'Buy an H100 at $25K, earning 28% CAGR only at 100% utilization',
+                                   'Rent neocloud capacity 30 to 50% cheaper depending on contract length',
+                                   'Caleb Writes Code ([9u2hCf8FlW0 @ 00:00:50]); Toronto Machine Learning '
+                                   'Society (TMLS) ([_oWJ0t-RW7o @ 00:06:30])'],
+                                  ['Single best provider versus a heterogeneous provider mix',
+                                   'Shortlist Nebius and CoreWeave as the two strongest picks',
+                                   'Expect a complex, heterogeneous best-of-breed stack across many '
+                                   'providers',
+                                   'Cloud Computing Insider ([mAgWtefgeP8 @ 00:12:47])'],
+                                  ['Vendor reliability depth versus brokered cross-cloud failover',
+                                   'CoreWeave claims 70 to 80 hours between interruptions per 1,000 GPUs',
+                                   'Broker across clouds because choice is power in every negotiation',
+                                   'SkyPilot ([vdP0fhqpYZs @ 00:06:03]); USENIX ([3Edw88b1bRg @ '
+                                   '00:01:22])'],
+                                  ['Committed reservations versus chasing spot price spreads',
+                                   'Commit only when utilization exceeds one minus the discount offered',
+                                   'Chase up to nine times spot spreads across zones with ILP',
+                                   'The Code Notebook ([IZtzUfhm8LU @ 00:07:33]); USENIX ([3Edw88b1bRg @ '
+                                   '00:07:21])'],
+                                  ['Slurm versus Kubernetes as the cluster control plane',
+                                   'Run Slurm on Kubernetes through SUNK with backfill and priority '
+                                   'scheduling',
+                                   'Managed Kubernetes plus VMs because Slurm limits isolation and serving',
+                                   'SkyPilot ([vdP0fhqpYZs @ 00:01:56]); Toronto Machine Learning Society '
+                                   '(TMLS) ([_oWJ0t-RW7o @ 00:11:41])'],
+                                  ['Proprietary integrated stack versus an open fleet layer',
+                                   'Use the vendor-integrated stack that claims jobs run better there',
+                                   'Keep the multi-cloud layer open, Apache-licensed and built on '
+                                   'Crossplane',
+                                   'SkyPilot ([vdP0fhqpYZs @ 00:15:59]); Modelplane ([Wq9Ov_jlxlM @ '
+                                   '00:02:46])'],
+                                  ['Which cost metric should drive GPU procurement decisions',
+                                   'Market rate cards from $1 to $5 per GPU-hour set pricing',
+                                   'Track cost per training run, per token and per request instead',
+                                   'Caleb Writes Code ([9u2hCf8FlW0 @ 00:00:32]); The gpuMaster '
+                                   '([_tV0Elv_jIk @ 00:07:32])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive trap is cheap spot capacity run without discipline. The '
+                              'Code Notebook simulated a 100-hour job with interruptions every eight '
+                              'hours, a six-minute restart, 72 seconds per save, 2,000 runs, and a 70% '
+                              'discount: never saving stretched the job to 2,203,564 hours, saving every '
+                              '30 minutes finished in 109 hours at a cost of 32.6 against 100 on-demand, '
+                              'and saving every 30 seconds ballooned to 345 hours at 103.5 [IZtzUfhm8LU @ '
+                              '00:09:58]. Their verdict is that spot without checkpoints is not cheap, '
+                              'saving too often costs more than not using spot at all, and the optimal '
+                              'interval is the square root of two times mean time between interruptions '
+                              'times save cost, about 34 minutes [IZtzUfhm8LU @ 00:10:20]. The same '
+                              'speaker notes the warning windows are brutal: AWS gives two minutes and '
+                              "Azure gives 30 seconds. Codemia's scheduler design polls the two-minute "
+                              'reclaim notice every five seconds and tells operators to give each job a '
+                              'random offset so checkpoint timers do not line up, because correlated '
+                              "failures are where these systems break [a_zou7QahAo @ 00:31:58]. SkyPilot's "
+                              'managed jobs layer pitches hands-free recovery from GPU failure, node '
+                              'maintenance, quota reclamation, and spot preemption so nobody gets paged at '
+                              '3:00 a.m. [uwLkrJb5pEA @ 00:08:31].',
+                              "The second trap is paying for GPUs that are not doing work. The gpuMaster's "
+                              'core warning is that stalled GPUs still bill, and that large-scale GPU '
+                              'workloads are far less forgiving [_tV0Elv_jIk @ 00:01:29]. Caleb Writes '
+                              'Code measured the scaling tax: efficiency drops to 77% at eight GPUs under '
+                              'model parallelism and 74% at 512, and fragmented nodes turn scheduling into '
+                              'Tetris [9u2hCf8FlW0 @ 00:05:04]. Seung Jin Yang of SkyPilot debugged the '
+                              'failures researchers actually hit when they ask why their job is not '
+                              'scheduled: fragmentation, rogue taints left by agents, a request for 128 '
+                              'CPUs on nodes with only about 126.32 allocatable that shows up as blocked, '
+                              'and quota oversubscription where 12 GPUs are promised against 8, which, in '
+                              'their words, can happen in practice [tb-Yg8PNXT4 @ 00:13:27]. Codemia '
+                              'prices the gap: default Kubernetes gets about 45% utilization, a '
+                              'workload-aware design about 85%, a spread worth roughly $150,000 per day on '
+                              'a 10,000-GPU fleet [a_zou7QahAo @ 00:04:38]. The same speaker caps '
+                              'defragmentation at 5% per hour, because the cure has to stay cheaper than '
+                              'the disease. Every one of these leaks lands as billed GPU hours with zero '
+                              'training progress behind them.',
+                              'The third trap is the balance sheet. Tulipnomics walks through the telecom '
+                              'bust as a template: Lucent promised $6.7 billion in customer credit by '
+                              'September 2000, with Nortel and Cisco running similar programs, summed up '
+                              "as the seller lending the buyer the money to buy the seller's own products "
+                              '[71yv5MpdX1s @ 00:02:24]. When capacity flooded in, a New York to Los '
+                              'Angeles circuit fell from $1.8 million a year to under $150,000, telecom '
+                              'made up over half of 2002 bond defaults with 21 cents of recovery, and the '
+                              "same channel now counts roughly $36 billion of CoreWeave debt plus Moody's "
+                              'tally of $1.2 trillion in lease commitments, $820 billion not yet started '
+                              '[71yv5MpdX1s @ 00:09:54]. theCUBE flags the operator-level exposure: a 2024 '
+                              'net loss of $863.4 million, NVIDIA dependence, and over 60% of revenue from '
+                              'Microsoft, with the warning that sustaining profitability is going to be '
+                              'another challenge [VjfoLNKgo3A @ 00:03:51]. Caleb Writes Code offers the '
+                              'counterweight, noting that GPU resale value stays near purchase price, '
+                              "which enables asset-backed loans [9u2hCf8FlW0 @ 00:13:55]. Tulipnomics' own "
+                              'coda cuts both ways: the cable was never the problem, but new owners bought '
+                              'the networks for a fraction of what they cost to build, and the banks lost '
+                              'money on the fiber.'],
+               'table': {'caption': 'Firsthand failure modes with the numbers practitioners measured',
+                         'headers': ['Failure Mode',
+                                     'Firsthand Number',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Running spot capacity with no checkpoints at all',
+                                   'A 100-hour job stretched to 2,203,564 hours in simulation',
+                                   'Save roughly every 34 minutes to cut cost to 32.6',
+                                   'The Code Notebook ([IZtzUfhm8LU @ 00:09:12])'],
+                                  ['Over-checkpointing spot jobs far too frequently',
+                                   'Saving every 30 seconds took 345 hours at cost 103.5',
+                                   'Saving too often costs more than skipping spot entirely',
+                                   'The Code Notebook ([IZtzUfhm8LU @ 00:10:20])'],
+                                  ['Signing a reservation sized to peak demand',
+                                   'A $4.50 commit costs $45 per used hour at 10% busy',
+                                   'Commit only when utilization exceeds one minus the discount',
+                                   'The Code Notebook ([IZtzUfhm8LU @ 00:07:07])'],
+                                  ['Owned cards sitting at low rental utilization',
+                                   'At or below roughly 55% utilization, broad stocks beat the neocloud',
+                                   'Model returns at real utilization, never at full 100% occupancy',
+                                   'Caleb Writes Code ([9u2hCf8FlW0 @ 00:01:22])'],
+                                  ['Scheduler blind spots blocking researcher jobs silently',
+                                   'Requesting 128 CPUs against about 126.32 allocatable shows as blocked',
+                                   'Audit allocatable resources, rogue taints and quota oversubscription '
+                                   'first',
+                                   'SkyPilot ([tb-Yg8PNXT4 @ 00:11:00])'],
+                                  ['Leaving default Kubernetes scheduling on a large fleet',
+                                   'About 45% utilization versus about 85% with workload-aware design',
+                                   'That gap is worth roughly $150,000 per day on 10,000 GPUs',
+                                   'Codemia ([a_zou7QahAo @ 00:04:38])'],
+                                  ['Painful multi-step onboarding to shared GPU clusters',
+                                   'A ten-step setup lost about 98% of users by the end',
+                                   'Ship one binary that writes config and holds tunnels open',
+                                   'SkyPilot ([Pas2NE76220 @ 00:04:51])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear These Before Scaling GPU Spend',
+                           'body': 'Every item below maps to a loss or bottleneck a practitioner measured '
+                                   'or debugged firsthand. Do not add nodes, sign commits, or flip jobs to '
+                                   'spot until each one is checked.',
+                           'items': ['Checkpoint interval set near the square-root optimum, about 34 '
+                                     'minutes in the simulation, before any spot job runs [The Code '
+                                     'Notebook — IZtzUfhm8LU @ 00:10:20].',
+                                     'Commitment sized below peak and signed only where utilization clears '
+                                     'one minus the discount [The Code Notebook — IZtzUfhm8LU @ 00:07:52].',
+                                     'Own workload benchmarked end to end in a roughly week-long POC '
+                                     'before any contract is signed [Toronto Machine Learning Society '
+                                     '(TMLS) — _oWJ0t-RW7o @ 00:07:47].',
+                                     'Provider interruption rate per 1,000 GPUs confirmed against the '
+                                     'reported benchmarks of about 8 hours at Meta and 70 to 80 hours at '
+                                     'CoreWeave [SkyPilot — vdP0fhqpYZs @ 00:06:03].']}}],
+ 'pull_quote': '"Spot without checkpoints is not cheap." — The Code Notebook (IZtzUfhm8LU @ 00:09:35).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Test your own workload before you sign anything, and never build a plan around a '
+                      'chip that is only announced [The Code Notebook — IZtzUfhm8LU @ 00:04:26].',
+                      'Run a roughly week-long POC on each candidate neocloud and use the multicloud '
+                      'option as negotiating leverage on price [Toronto Machine Learning Society (TMLS) — '
+                      '_oWJ0t-RW7o @ 00:07:33].',
+                      'Spin up a dev box with sky launch --gpus B200, scale out with num_nodes 16, and '
+                      'move long runs to sky jobs launch for automatic node-failure recovery [SkyPilot — '
+                      'uwLkrJb5pEA @ 00:05:36].',
+                      'Replace spreadsheets and node taints with an actual queuing setup using priority '
+                      'preemption, checkpoints, and real-time Slack alerts on preemption [SkyPilot — '
+                      'tb-Yg8PNXT4 @ 00:04:12].',
+                      'Mount S3 checkpoints at /checkpoints and cache the container image on NFS so '
+                      'preempted Slurm jobs resume fast [SkyPilot — uwLkrJb5pEA @ 00:19:36].',
+                      'Scale inference to zero when idle; the simulation dropped 24 GPU-hours to 4.04, an '
+                      '83% cut, at 3.9 cold starts per day of 60 seconds each [The Code Notebook — '
+                      'IZtzUfhm8LU @ 00:12:59].'],
+ 'statutory_citations': [{'title': 'Caleb Writes Code — The Economics of Neoclouds [00:01:22]',
+                          'url': 'https://www.youtube.com/watch?v=9u2hCf8FlW0&t=82s',
+                          'relevance': 'Primary practitioner testimony on H100 unit economics and the '
+                                       'utilization break-even for neocloud owners.'},
+                         {'title': 'The Code Notebook — Why Cheap Spot GPUs End Up Costing MORE (The '
+                                   'Checkpoint Mistake) [00:09:35]',
+                          'url': 'https://www.youtube.com/watch?v=IZtzUfhm8LU&t=575s',
+                          'relevance': 'Primary practitioner testimony on spot checkpoint economics and '
+                                       'commitment break-even math.'},
+                         {'title': "USENIX — NSDI '23 - SkyPilot: An Intercloud Broker for Sky Computing "
+                                   '[00:07:21]',
+                          'url': 'https://www.youtube.com/watch?v=3Edw88b1bRg&t=441s',
+                          'relevance': 'Primary practitioner testimony on cross-cloud price spreads and '
+                                       'intercloud brokerage architecture.'},
+                         {'title': 'Tulipnomics — The Telecom Bust: The Debt That Built the Internet '
+                                   '[00:02:24]',
+                          'url': 'https://www.youtube.com/watch?v=71yv5MpdX1s&t=144s',
+                          'relevance': 'Primary practitioner testimony on vendor financing, capacity '
+                                       'gluts, and AI infrastructure debt parallels.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '9u2hCf8FlW0',
+                       'title': 'The Economics of Neoclouds',
+                       'channel': 'Caleb Writes Code',
+                       'author': 'Caleb Writes Code',
+                       'text': 'So, right off the bat, you realize that utilization is a key metric to '
+                               'consider when you run Neo clouds.',
+                       'tip': 'So, right off the bat, you realize that utilization is a key metric to '
+                              'consider when you run Neo clouds.',
+                       'timestamp': 82,
+                       'timestamp_seconds': 82,
+                       'timestamp_label': '[00:01:22]',
+                       'url': 'https://www.youtube.com/watch?v=9u2hCf8FlW0&t=82s',
+                       'markdown': '[00:01:22](https://www.youtube.com/watch?v=9u2hCf8FlW0&t=82s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mAgWtefgeP8',
+                       'title': 'Top 5 NeoClouds Explained: CoreWeave, Nebius, Crusoe, Lambda, Fluidstack',
+                       'channel': 'Cloud Computing Insider',
+                       'author': 'Cloud Computing Insider',
+                       'text': 'So, consider the fact that your best of breed play is going to be complex '
+                               "and it's going to be heterogeneous.",
+                       'tip': 'So, consider the fact that your best of breed play is going to be complex '
+                              "and it's going to be heterogeneous.",
+                       'timestamp': 794,
+                       'timestamp_seconds': 794,
+                       'timestamp_label': '[00:13:14]',
+                       'url': 'https://www.youtube.com/watch?v=mAgWtefgeP8&t=794s',
+                       'markdown': '[00:13:14](https://www.youtube.com/watch?v=mAgWtefgeP8&t=794s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VjfoLNKgo3A',
+                       'title': 'Ep. 36 GPUaaS Explained: Why CoreWeave and Others Are Fueling the Next '
+                                'Cloud Revolution | AI Insight',
+                       'channel': 'SiliconANGLE theCUBE',
+                       'author': 'SiliconANGLE theCUBE',
+                       'text': 'Sustaining profitability is going to be another challenge for them.',
+                       'tip': 'Sustaining profitability is going to be another challenge for them.',
+                       'timestamp': 231,
+                       'timestamp_seconds': 231,
+                       'timestamp_label': '[00:03:51]',
+                       'url': 'https://www.youtube.com/watch?v=VjfoLNKgo3A&t=231s',
+                       'markdown': '[00:03:51](https://www.youtube.com/watch?v=VjfoLNKgo3A&t=231s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '71yv5MpdX1s',
+                       'title': 'The Telecom Bust: The Debt That Built the Internet',
+                       'channel': 'Tulipnomics',
+                       'author': 'Tulipnomics',
+                       'text': "The seller lends the buyer the money to buy the seller's own products.",
+                       'tip': "The seller lends the buyer the money to buy the seller's own products.",
+                       'timestamp': 144,
+                       'timestamp_seconds': 144,
+                       'timestamp_label': '[00:02:24]',
+                       'url': 'https://www.youtube.com/watch?v=71yv5MpdX1s&t=144s',
+                       'markdown': '[00:02:24](https://www.youtube.com/watch?v=71yv5MpdX1s&t=144s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_tV0Elv_jIk',
+                       'title': 'Bare-Metal GPU Clouds vs Hyperscalers: Why startups are fleeing AWS and '
+                                'Azure?',
+                       'channel': 'The gpuMaster',
+                       'author': 'The gpuMaster',
+                       'text': "So saying, 'We need more GPUs,' is incomplete.",
+                       'tip': "So saying, 'We need more GPUs,' is incomplete.",
+                       'timestamp': 287,
+                       'timestamp_seconds': 287,
+                       'timestamp_label': '[00:04:47]',
+                       'url': 'https://www.youtube.com/watch?v=_tV0Elv_jIk&t=287s',
+                       'markdown': '[00:04:47](https://www.youtube.com/watch?v=_tV0Elv_jIk&t=287s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Pas2NE76220',
+                       'title': 'SkyPilot at 100k+ GPU Scale at Meta AI (FAIR) - Lucca Bertoncini (Meta)',
+                       'channel': 'SkyPilot',
+                       'author': 'SkyPilot',
+                       'text': 'Uh so yeah 10 steps like you lost like 98% of the users.',
+                       'tip': 'Uh so yeah 10 steps like you lost like 98% of the users.',
+                       'timestamp': 291,
+                       'timestamp_seconds': 291,
+                       'timestamp_label': '[00:04:51]',
+                       'url': 'https://www.youtube.com/watch?v=Pas2NE76220&t=291s',
+                       'markdown': '[00:04:51](https://www.youtube.com/watch?v=Pas2NE76220&t=291s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tb-Yg8PNXT4',
+                       'title': 'Why are my GPUs not getting scheduled - Seung Jin Yang (SkyPilot)',
+                       'channel': 'SkyPilot',
+                       'author': 'SkyPilot',
+                       'text': 'This is what we in the industry call fragmentation.',
+                       'tip': 'This is what we in the industry call fragmentation.',
+                       'timestamp': 540,
+                       'timestamp_seconds': 540,
+                       'timestamp_label': '[00:09:00]',
+                       'url': 'https://www.youtube.com/watch?v=tb-Yg8PNXT4&t=540s',
+                       'markdown': '[00:09:00](https://www.youtube.com/watch?v=tb-Yg8PNXT4&t=540s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_oWJ0t-RW7o',
+                       'title': 'Building Multi-Cloud GenAI Platforms Without the Pain | Romil Bhardwaj, '
+                                'SkyPilot',
+                       'channel': 'Toronto Machine Learning Society (TMLS)',
+                       'author': 'Toronto Machine Learning Society (TMLS)',
+                       'text': 'Whereas Neoclouds can be up to like 30 to 50% cheaper depending on how uh '
+                               "long of a contract you're signing.",
+                       'tip': 'Whereas Neoclouds can be up to like 30 to 50% cheaper depending on how uh '
+                              "long of a contract you're signing.",
+                       'timestamp': 390,
+                       'timestamp_seconds': 390,
+                       'timestamp_label': '[00:06:30]',
+                       'url': 'https://www.youtube.com/watch?v=_oWJ0t-RW7o&t=390s',
+                       'markdown': '[00:06:30](https://www.youtube.com/watch?v=_oWJ0t-RW7o&t=390s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IZtzUfhm8LU',
+                       'title': 'Why Cheap Spot GPUs End Up Costing MORE (The Checkpoint Mistake)',
+                       'channel': 'The Code Notebook',
+                       'author': 'The Code Notebook',
+                       'text': 'Spot without checkpoints is not cheap.',
+                       'tip': 'Spot without checkpoints is not cheap.',
+                       'timestamp': 575,
+                       'timestamp_seconds': 575,
+                       'timestamp_label': '[00:09:35]',
+                       'url': 'https://www.youtube.com/watch?v=IZtzUfhm8LU&t=575s',
+                       'markdown': '[00:09:35](https://www.youtube.com/watch?v=IZtzUfhm8LU&t=575s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3Edw88b1bRg',
+                       'title': "NSDI '23 - SkyPilot: An Intercloud Broker for Sky Computing",
+                       'channel': 'USENIX',
+                       'author': 'USENIX',
+                       'text': "And we see that there's a up to three times difference for on-demand "
+                               'pricing and up to nine times difference for spot pricing.',
+                       'tip': "And we see that there's a up to three times difference for on-demand "
+                              'pricing and up to nine times difference for spot pricing.',
+                       'timestamp': 441,
+                       'timestamp_seconds': 441,
+                       'timestamp_label': '[00:07:21]',
+                       'url': 'https://www.youtube.com/watch?v=3Edw88b1bRg&t=441s',
+                       'markdown': '[00:07:21](https://www.youtube.com/watch?v=3Edw88b1bRg&t=441s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uwLkrJb5pEA',
+                       'title': 'SkyPilot: Your AI Infra, Frontier Capabilities - Zhanghao Wu, Kevin '
+                                'Mingtarja (SkyPilot)',
+                       'channel': 'SkyPilot',
+                       'author': 'SkyPilot',
+                       'text': 'For example, a GPU failure, a node maintenance, or quota reclamation, spot '
+                               'preemption, SkyPilot handles the whole recovery with your hands free.',
+                       'tip': 'For example, a GPU failure, a node maintenance, or quota reclamation, spot '
+                              'preemption, SkyPilot handles the whole recovery with your hands free.',
+                       'timestamp': 511,
+                       'timestamp_seconds': 511,
+                       'timestamp_label': '[00:08:31]',
+                       'url': 'https://www.youtube.com/watch?v=uwLkrJb5pEA&t=511s',
+                       'markdown': '[00:08:31](https://www.youtube.com/watch?v=uwLkrJb5pEA&t=511s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'a_zou7QahAo',
+                       'title': 'GPU Cluster Scheduler System Design | Gang Scheduling, Topology, '
+                                'Preemption',
+                       'channel': 'Codemia',
+                       'author': 'Codemia',
+                       'text': 'Correlated failures are where these systems break.',
+                       'tip': 'Correlated failures are where these systems break.',
+                       'timestamp': 1918,
+                       'timestamp_seconds': 1918,
+                       'timestamp_label': '[00:31:58]',
+                       'url': 'https://www.youtube.com/watch?v=a_zou7QahAo&t=1918s',
+                       'markdown': '[00:31:58](https://www.youtube.com/watch?v=a_zou7QahAo&t=1918s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vdP0fhqpYZs',
+                       'title': 'Training At Scale With Confidence (SkyPilot Integration w/ CoreWeave '
+                                'SUNK) - Deok Filho (CoreWeave)',
+                       'channel': 'SkyPilot',
+                       'author': 'SkyPilot',
+                       'text': 'We have addressed them and our number is around 70 to 80 hours for a '
+                               'equivalent job size, 1,000 GPUs.',
+                       'tip': 'We have addressed them and our number is around 70 to 80 hours for a '
+                              'equivalent job size, 1,000 GPUs.',
+                       'timestamp': 363,
+                       'timestamp_seconds': 363,
+                       'timestamp_label': '[00:06:03]',
+                       'url': 'https://www.youtube.com/watch?v=vdP0fhqpYZs&t=363s',
+                       'markdown': '[00:06:03](https://www.youtube.com/watch?v=vdP0fhqpYZs&t=363s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-czZES1U_Us',
+                       'title': 'Building Multi-cloud AI Platforms on Kubernetes Without the Pain - Romil '
+                                'Bhardwaj, SkyPilot',
+                       'channel': 'CNCF [Cloud Native Computing Foundation]',
+                       'author': 'CNCF [Cloud Native Computing Foundation]',
+                       'text': "And there's like no fleet-wide view.",
+                       'tip': "And there's like no fleet-wide view.",
+                       'timestamp': 791,
+                       'timestamp_seconds': 791,
+                       'timestamp_label': '[00:13:11]',
+                       'url': 'https://www.youtube.com/watch?v=-czZES1U_Us&t=791s',
+                       'markdown': '[00:13:11](https://www.youtube.com/watch?v=-czZES1U_Us&t=791s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Wq9Ov_jlxlM',
+                       'title': 'Run One AI Model Across Multiple Clouds and GPUs (Modelplane)',
+                       'channel': 'Modelplane',
+                       'author': 'Modelplane',
+                       'text': 'And the economics are changing every single day.',
+                       'tip': 'And the economics are changing every single day.',
+                       'timestamp': 108,
+                       'timestamp_seconds': 108,
+                       'timestamp_label': '[00:01:48]',
+                       'url': 'https://www.youtube.com/watch?v=Wq9Ov_jlxlM&t=108s',
+                       'markdown': '[00:01:48](https://www.youtube.com/watch?v=Wq9Ov_jlxlM&t=108s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QLSYI5Ali8Y',
+                       'title': 'Video tutorial: SkyPilot and Kubernetes for multi-node LLM fine-tuning',
+                       'channel': 'Nebius',
+                       'author': 'Nebius',
+                       'text': 'For this demo, I provisioned a fairly small cluster with only two GPU '
+                               'nodes.',
+                       'tip': 'For this demo, I provisioned a fairly small cluster with only two GPU '
+                              'nodes.',
+                       'timestamp': 251,
+                       'timestamp_seconds': 251,
+                       'timestamp_label': '[00:04:11]',
+                       'url': 'https://www.youtube.com/watch?v=QLSYI5Ali8Y&t=251s',
+                       'markdown': '[00:04:11](https://www.youtube.com/watch?v=QLSYI5Ali8Y&t=251s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IZtzUfhm8LU',
+                       'title': 'Why Cheap Spot GPUs End Up Costing MORE (The Checkpoint Mistake)',
+                       'channel': 'The Code Notebook',
+                       'author': 'The Code Notebook',
+                       'text': 'Never commit to your peak.',
+                       'tip': 'Never commit to your peak.',
+                       'timestamp': 472,
+                       'timestamp_seconds': 472,
+                       'timestamp_label': '[00:07:52]',
+                       'url': 'https://www.youtube.com/watch?v=IZtzUfhm8LU&t=472s',
+                       'markdown': '[00:07:52](https://www.youtube.com/watch?v=IZtzUfhm8LU&t=472s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'a_zou7QahAo',
+                       'title': 'GPU Cluster Scheduler System Design | Gang Scheduling, Topology, '
+                                'Preemption',
+                       'channel': 'Codemia',
+                       'author': 'Codemia',
+                       'text': 'The cure has to stay cheaper than the disease.',
+                       'tip': 'The cure has to stay cheaper than the disease.',
+                       'timestamp': 1424,
+                       'timestamp_seconds': 1424,
+                       'timestamp_label': '[00:23:44]',
+                       'url': 'https://www.youtube.com/watch?v=a_zou7QahAo&t=1424s',
+                       'markdown': '[00:23:44](https://www.youtube.com/watch?v=a_zou7QahAo&t=1424s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'}]}

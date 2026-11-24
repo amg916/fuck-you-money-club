@@ -1,657 +1,904 @@
 from __future__ import annotations
 
-CHAPTER_11 = {
-    "id": "Q11",
-    "chapter_id": "Q11",
-    "chapter_number": 11,
-    "question_number": 11,
-    "slug": "pod-architecture-contractor-kpis-exit-valuation",
-    "question_prompt": "How do you structure a lean 1 FT + 3 C (4 people) -> 2 FT + 4 C (6 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
-    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
-    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
-    "subtitle": "ALE Placement Pods, Master-Lease Controls, Accrual Cohorts, Contractor Service Levels & Transferable Housing Earnings",
-    "layout_template": "action_checklist",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #33, Insurance Housing & Corporate Rental Arbitrage, ranks #07 of 36 "
-        "with a 90/100 Money-to-Manpower Score. Its 12 mapped plays become transferable "
-        "only when placement decisions, property readiness, collections, and lease exposure "
-        "survive the founder's absence. This chapter assigns those plays to a 1 FT + 3 C "
-        "pod, defines the expansion to 2 FT + 4 C, and turns weekly exceptions into "
-        "documented operating evidence. Canonical annual owner profits are $21,600 "
-        "Conservative, $150,100 Base, and $364,000 Scaled. Preserve the distinction between "
-        "gross housing billings and the 45% retained spread. Buyers purchase defensible "
-        "earnings, assignable relationships, and controlled obligations; a durable cash cow "
-        "requires exactly the same discipline."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$180,000",
-            "context": "Annual gross housing billings; $81,000 retained at 45%.",
-            "note": "12% gross-basis net margin; $21,600 annual owner net profit; 1 FT + 3 C; 26.67% retained net margin.",
-        },
-        {
-            "label": "Base",
-            "value": "$790,000",
-            "context": "Annual gross housing billings; $355,500 retained at 45%.",
-            "note": "19.0% gross-basis net margin; $150,100 annual owner net profit; 1 FT + 3 C; 42.22% retained net margin.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,400,000",
-            "context": "Annual gross housing billings; $630,000 retained at 45%.",
-            "note": "26% gross-basis net margin; $364,000 annual owner net profit; 2 FT + 4 C; 57.78% retained net margin.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Assign twelve plays to four seats before adding inventory",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build the Base pod around one accountable full-time operator and three "
-                    "independent service providers, not four interchangeable assistants. The "
-                    "operator owns pricing, landlord commitments, payer authorization, cash "
-                    "allocation, and exceptions that can extend lease liability. Contractor "
-                    "one delivers placement coordination and document completeness; contractor "
-                    "two delivers property readiness, inspections, and vendor dispatch; contractor "
-                    "three delivers billing preparation, reconciliations, and receivable follow-up. "
-                    "Use this chapter's twelve-play operating map to distribute the candidate's "
-                    "twelve mapped plays: P01 payer origination, P02 corporate account origination, "
-                    "P03 landlord sourcing, P04 written sublease authorization, P05 furnishing and "
-                    "readiness, P06 authorized placement, P07 resident arrival, P08 extension "
-                    "management, P09 telemetry response, P10 utility-cap reconciliation, P11 "
-                    "claims collection, and P12 turnover and vacancy recovery. These labels "
-                    "organize work rather than introduce twelve separate businesses. Put each "
-                    "play in a shared register with its accountable seat, backup, evidence, "
-                    "and escalation trigger. A carrier referral is not a payment commitment; "
-                    "a resident arrival is not proof that billing may continue indefinitely. "
-                    "The operator accepts the exposure only after matching the authorized "
-                    "stay, housing agreement, and master-lease obligations. Keep resident "
-                    "service available through contracted coverage without pretending the "
-                    "founder can personally answer every overnight incident."
-                ),
-                (
-                    "Purchase contractor outputs with measurable acceptance criteria instead "
-                    "of disguising employee schedules as vendor agreements. Illustrative "
-                    "negotiation anchors are $75 per accepted placement packet, $140 per "
-                    "documented standard turnover inspection and coordination job, and $500 "
-                    "monthly for reconciliation of up to twenty active placement accounts. "
-                    "These are procurement assumptions, not additions to the canonical profit "
-                    "cases. Cleaning labor, furniture repairs, emergency attendance, and "
-                    "overflow account work need separately quoted scopes. Define acceptance "
-                    "as objective evidence: signed authorization, timestamped readiness photos, "
-                    "a reconciled ledger, or an acknowledged resident handoff. Require defects "
-                    "caused by the provider to be corrected within one business day without "
-                    "another coordination charge; distinguish those defects from landlord "
-                    "maintenance or resident damage. Pay accepted invoices on agreed terms "
-                    "and document disputed line items rather than withholding an entire "
-                    "month's compensation. Before selecting contractor status, examine actual "
-                    "control, economic dependence, business independence, and applicable state "
-                    "tests alongside 29 U.S.C. section 203 and 26 U.S.C. section 3121(d). "
-                    "A contract label cannot cure employment facts. If the seat requires "
-                    "continuous supervised availability, model employment or a genuine service "
-                    "firm instead, and update the operating forecast before expanding commitments."
-                ),
-                (
-                    "At Scaled, preserve the six-person design: two full-time seats and four "
-                    "contractor seats. The founder becomes commercial and capital lead; the "
-                    "second full-time operator owns daily dispatch, resident escalations, "
-                    "readiness verification, and exception closure. Retain the three specialist "
-                    "contractor scopes and add a fourth provider for cross-trained field "
-                    "coverage and turnover quality assurance. Contractors remain scoped "
-                    "business services only where the relationship supports that treatment. "
-                    "Add the second employee because measured workload and contribution can "
-                    "support the seat, not because a particular property count feels impressive. "
-                    "Track dispatch hours, unresolved exceptions, arrivals per coordinator, "
-                    "and inspection rework for eight weeks. Repeated service failures despite "
-                    "a repaired workflow indicate a capacity problem; errors caused by missing "
-                    "authorization indicate a control problem. Require the new seat's forecast "
-                    "to fit within the Scaled expense envelope rather than automatically "
-                    "deducting another salary from the published profit. Use company-owned "
-                    "email, Bitwarden business vaults, and role-based portal access wherever "
-                    "supported. Never share carrier credentials across providers. Document "
-                    "delegation limits for extensions and refunds so the pod can handle "
-                    "routine events while the commercial lead is absent. A backup must "
-                    "demonstrate the task, not merely appear beside a name."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Play Seat Map for the Four-Person and Six-Person Housing Pods",
-                "headers": [
-                    "Seat and mapped play coverage",
-                    "Concrete authority and delivery boundary",
-                    "Compensation or capacity control",
-                    "Acceptance evidence and backup arrangement",
-                ],
-                "rows": [
-                    [
-                        "Full-time commercial operator owns P01 and P02 origination",
-                        "Approves payer relationships, rate floors, and account exposure",
-                        "Owner economics remain inside the canonical profit bridge",
-                        "Signed payer terms and documented backup pricing authority",
-                    ],
-                    [
-                        "Full-time commercial operator owns P03 and P04 contracting",
-                        "Executes landlord commitments only with express sublease permission",
-                        "Lease exposure reviewed before each additional property commitment",
-                        "Executed addendum and location-specific occupancy review retained together",
-                    ],
-                    [
-                        "Placement contractor delivers P06 and P07 resident coordination",
-                        "Prepares authorization packets and coordinates verified arrival instructions",
-                        "Illustrative seventy-five dollars per accepted complete placement packet",
-                        "Complete packet checked by operator before access release",
-                    ],
-                    [
-                        "Field contractor delivers P05 and P12 readiness execution",
-                        "Coordinates furnishing, documented inspections, turnover, and vacancy recovery",
-                        "Illustrative one-hundred-forty dollars per accepted coordination inspection job",
-                        "Timestamped inspection evidence reviewed against resident arrival deadline",
-                    ],
-                    [
-                        "Ledger contractor supports P08, P10, and P11 collections",
-                        "Tracks extension paperwork, utility caps, invoices, and disputes",
-                        "Illustrative five-hundred-dollar monthly scope covering twenty active accounts",
-                        "Reconciled account schedules reviewed by accountable full-time operator",
-                    ],
-                    [
-                        "Second full-time operator owns P09 and daily execution",
-                        "Directs incident triage and verifies contractor deliverable acceptance",
-                        "Added only after workload evidence and expense-envelope review",
-                        "Independent incident drill confirms practical commercial-lead absence coverage",
-                    ],
-                    [
-                        "Fourth contractor backs P05, P09, and P12 fieldwork",
-                        "Provides independent reinspection and separately scoped emergency attendance",
-                        "Written coverage retainer plus prequoted accepted service events",
-                        "Backup provider completes one observed turnover before deployment",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy evidence, preserve relationships, and eliminate founder-only knowledge",
-                "body": "The strongest contractor scopes remove recurring lease and collection ambiguity before it becomes an emergency.",
-                "items": [
-                    "Attach the payer's authorization end date to every placement task; do not let a portal reservation date silently substitute for funded occupancy.",
-                    "Photograph meter readings and thermostat settings at turnover so utility-cap disputes can be reconstructed without asking the departing resident.",
-                    "Keep a landlord-approved backup access method outside the failed smart-lock system, with logged release and immediate credential rotation afterward.",
-                    "Have the backup contractor run a real arrival and inspection monthly; a contact list alone provides no evidence of operational continuity.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Run a weekly exception scorecard with hard exposure limits",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Run a forty-five-minute weekly operating review from one frozen Sunday "
-                    "snapshot, with emergency issues handled immediately rather than waiting "
-                    "for the meeting. Export permitted ALE or CRS housing portal records "
-                    "and reconcile them to the placement register; portal synchronization "
-                    "must respect each counterparty's access terms and supported interfaces. "
-                    "The first page contains only metrics with definitions, denominators, "
-                    "owners, and corrective actions. Measure authorized occupied nights divided "
-                    "by rentable nights, realized retained contribution per occupied night, "
-                    "unfunded occupied nights, readiness defects, extension lead time, days "
-                    "sales outstanding, and committed lease exposure. Exclude genuine "
-                    "maintenance downtime from the operational rentable-night denominator, "
-                    "but show it separately and retain its cost in property profitability. "
-                    "Do not erase vacancy by relabeling units as unavailable. Maintain both "
-                    "a trailing thirteen-week trend and a next-thirty-day exposure forecast. "
-                    "Assign every red exception a named owner and dated action, then begin "
-                    "the next meeting with unresolved prior actions. The placement coordinator "
-                    "explains authorization gaps; the field provider explains readiness "
-                    "failures; the ledger provider explains disputed invoices. The operator "
-                    "decides whether to stop intake, negotiate a release, or reserve cash "
-                    "against a liability that service activity cannot repair."
-                ),
-                (
-                    "Set contractor service levels around consequences that actually matter "
-                    "to displaced households. Require a readiness certificate at least "
-                    "twenty-four hours before arrival, arrival instructions before the "
-                    "agreed handoff window, and confirmation that an extension request "
-                    "reached the authorized payer contact at least seven calendar days "
-                    "before funding expires. These are internal targets, not promises "
-                    "about carrier response speed. Emergency coverage should acknowledge "
-                    "a leak or lockout within fifteen minutes under a paid coverage "
-                    "scope, immediately route life-safety events to emergency services, "
-                    "and dispatch qualified help within the property's documented local "
-                    "response capability. Distinguish acknowledgement, dispatch, attendance, "
-                    "and resolution timestamps; one fast text message does not prove "
-                    "the incident was resolved. Sample every new contractor's first five "
-                    "deliverables, then inspect at least ten percent monthly while "
-                    "rechecking every material defect. Use smart-lock event records and "
-                    "leak telemetry as supporting evidence, not substitutes for physical "
-                    "inspection. Noise devices should report agreed threshold events "
-                    "without recording resident conversations. Apply neutral, documented "
-                    "placement standards and reasonable-accommodation procedures consistent "
-                    "with 42 U.S.C. section 3604. Do not let urgency, algorithmic screening, "
-                    "or a contractor's informal preferences become discriminatory housing "
-                    "decisions. Maintain a resident escalation route that bypasses the "
-                    "provider whose work is disputed."
-                ),
-                (
-                    "Enforce a maximum twenty-five percent concentration for each ultimate "
-                    "payer group, corporate customer group, landlord ownership group, and "
-                    "placement-channel counterparty before releasing growth capital. Measure "
-                    "payer and customer shares on trailing-twelve-month gross billings and "
-                    "retained contribution separately; measure landlord shares on committed "
-                    "rent dollars, and channel shares on originated retained contribution. "
-                    "Use the higher exposure signal when related entities or shared "
-                    "procurement channels obscure dependence. Four equal customers satisfy "
-                    "the ceiling mathematically but leave no practical buffer, so target "
-                    "twenty percent during sourcing. A new business with one placement "
-                    "will initially exceed the ceiling; label that condition explicitly, "
-                    "cap incremental fixed commitments, and diversify rather than presenting "
-                    "a startup exception as a mature transferable book. Existing residents "
-                    "still receive contracted service. Simulate immediate loss of the "
-                    "largest payer and the largest landlord independently, then model "
-                    "correlated loss when a housing network controls both introductions "
-                    "and collections. Calculate remaining lease payments, refundable "
-                    "deposits, receivable delays, relocation costs, and realistic vacancy "
-                    "recovery time. An early claim closeout may stop reimbursement before "
-                    "the master lease ends. A scorecard that reports occupancy but hides "
-                    "that mismatch encourages expansion precisely when the operator should "
-                    "be reducing uncovered lease duration."
-                ),
-            ],
-            "table": {
-                "caption": "Weekly Housing Scorecard: Definitions, Intervention Targets, and Evidence",
-                "headers": [
-                    "Metric with explicit operating definition",
-                    "Internal target or intervention trigger",
-                    "Accountable owner and corrective response",
-                    "Evidence retained for weekly verification",
-                ],
-                "rows": [
-                    [
-                        "Authorized occupied nights divided by genuinely rentable nights",
-                        "Review forecast below eighty-five percent before inventory expansion",
-                        "Commercial operator reprices gaps without weakening authorization requirements",
-                        "Placement calendar reconciled with downtime and authorization records",
-                    ],
-                    [
-                        "Occupied nights beyond written payer authorization end dates",
-                        "Zero unfunded nights accepted without documented alternative payment",
-                        "Placement coordinator escalates immediately for lawful resolution planning",
-                        "Payer correspondence and resident agreement establish payment responsibility",
-                    ],
-                    [
-                        "Extension requests delivered before current authorized funding expires",
-                        "Every request submitted at least seven calendar days beforehand",
-                        "Ledger contractor tracks response while operator controls commitments",
-                        "Timestamped submission and separate payer acceptance evidence retained",
-                    ],
-                    [
-                        "Arrivals supported by completed property readiness acceptance evidence",
-                        "Every readiness certificate completed twenty-four hours before arrival",
-                        "Field contractor corrects defects before resident access release",
-                        "Inspection checklist and photographs establish actual completion status",
-                    ],
-                    [
-                        "Ending trade receivables divided by ninety-day credit billings",
-                        "Multiply by ninety; investigate results above forty-five days",
-                        "Ledger contractor separates invoice defects from payer delay",
-                        "Aged invoices reconciled with credits and subsequent receipts",
-                    ],
-                    [
-                        "Largest grouped payer, customer, landlord, and channel exposures",
-                        "Each concentration remains at or below twenty-five percent",
-                        "Commercial operator freezes expansion increasing an existing breach",
-                        "Group ownership mapping accompanies separately defined exposure denominators",
-                    ],
-                    [
-                        "Uncovered lease payments after authorized placement funding ends",
-                        "Review every uncovered dollar against liquidity and recovery",
-                        "Commercial operator negotiates releases or funds measured exposure",
-                        "Lease schedule reconciled with funding dates and deposits",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the weekly evidence set",
-                    "action": "Capture Sunday placement, authorization, lease, service, and receivable snapshots.",
-                    "detail": "Use stable property and placement identifiers; retain export timestamps and reconcile record counts before computing ratios.",
-                },
-                {
-                    "step": 2,
-                    "title": "Reconcile exposure before discussing growth",
-                    "action": "Match funded occupancy against committed landlord payments and pending extensions.",
-                    "detail": "List every funding gap, concentration breach, disputed invoice, and missing sublease addendum with its dollar exposure.",
-                },
-                {
-                    "step": 3,
-                    "title": "Assign corrective work with acceptance evidence",
-                    "action": "Give each exception one accountable seat, one deadline, and one closure artifact.",
-                    "detail": "Escalate emergencies immediately; require payer acceptance, corrected inspection evidence, or ledger reconciliation rather than verbal completion claims.",
-                },
-                {
-                    "step": 4,
-                    "title": "Publish the next operating commitment",
-                    "action": "Release only inventory and contractor spending supported by the updated forecast.",
-                    "detail": "Archive the signed review record and carry unresolved exceptions into the next meeting without resetting their original age.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Make accrual cohorts reconcile to the canonical retained spread",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Keep three distinct views: gross housing billings, retained revenue "
-                    "under the supplied scorecard convention, and owner net profit. The "
-                    "canonical forty-five percent retained share produces $81,000 from "
-                    "$180,000 Conservative billings, $355,500 from $790,000 Base billings, "
-                    "and $630,000 from $1,400,000 Scaled billings. Corresponding landlord "
-                    "rent and utility pass-through amounts are $99,000, $434,500, and "
-                    "$770,000. Remaining operating costs implied by the scorecard are "
-                    "$59,400, $205,400, and $266,000; subtracting those costs yields "
-                    "$21,600, $150,100, and $364,000 annual owner net profit. Gross-basis "
-                    "net margins remain twelve, nineteen, and twenty-six percent. Retained "
-                    "net margins are 26.67%, 42.22%, and 57.78%, respectively. Do not "
-                    "deduct rent a second time after calculating retained revenue, or "
-                    "describe gross billings as the operator's retained earnings. Apply "
-                    "the supplied ASC 606 net-presentation assumption consistently in "
-                    "this chapter, while having the reporting accountant assess actual "
-                    "principal-versus-agent facts by contract. A master lease can carry "
-                    "control and inventory risk that matter to that assessment. If "
-                    "statutory reporting uses a different presentation, preserve a clear "
-                    "reconciliation to this management scorecard rather than silently "
-                    "changing the underlying economic cases. Contractor quotes must fit "
-                    "the applicable cost envelope."
-                ),
-                (
-                    "Close monthly by placement cohort and property, not merely by "
-                    "bank deposit date. A cohort begins with the resident's arrival "
-                    "month and retains its payer, property, authorization history, and "
-                    "final settlement trail. Recognize earned housing consideration "
-                    "across the contracted service period, subject to the applicable "
-                    "revenue-recognition assessment; record advance receipts separately "
-                    "until earned. Accrue landlord rent over the period of use, accrue "
-                    "utilities from reliable estimates when bills arrive late, and "
-                    "reverse estimates against actual invoices. Keep refundable resident "
-                    "and landlord deposits on appropriate balance-sheet schedules instead "
-                    "of treating them as operating income or immediate expenses. Track "
-                    "furniture and equipment under a documented capitalization policy, "
-                    "including depreciation and replacement requirements. Use QuickBooks "
-                    "Online classes or equivalent dimensions for properties, with a "
-                    "separate placement subledger when the accounting system cannot "
-                    "represent both dimensions cleanly. A closed insurance claim does "
-                    "not automatically extinguish the operator's lease obligation. Record "
-                    "credits, termination charges, bad-debt estimates, and unresolved "
-                    "disputes against the affected cohort so acquisition-month margins "
-                    "do not look attractive while later losses disappear into overhead. "
-                    "Have the ledger contractor prepare the close and the full-time "
-                    "operator review unusual journals, deposit movements, and related-party "
-                    "payments before locking the period."
-                ),
-                (
-                    "Build the buyer evidence room while operating, using restricted "
-                    "Google Workspace or Microsoft 365 folders and a document index "
-                    "that connects each balance to its source. Separate resident "
-                    "identity and claim details from commercial summaries; diligence "
-                    "rarely requires unrestricted access to household information. Retain "
-                    "executed master leases, explicit corporate-housing sublease addenda, "
-                    "payer agreements, insurance schedules, incident histories, contractor "
-                    "scopes, and service records under an established retention schedule. "
-                    "For each location, document habitability responsibilities and the "
-                    "actual occupancy-tax rules. California Revenue and Taxation Code "
-                    "section 7280 authorizes specified local transient-occupancy taxation; "
-                    "the applicable local ordinance and qualifying occupancy facts "
-                    "determine treatment. A thirty-day booking label alone should not "
-                    "drive an exemption entry. Commissioned photographs, inspection "
-                    "templates, automation scripts, and operating manuals need written "
-                    "ownership terms. Under 17 U.S.C. section 204(a), a copyright "
-                    "ownership transfer generally requires a signed writing; payment "
-                    "for a contractor deliverable does not itself transfer copyright. "
-                    "Obtain signed assignments from the rights holders, preserve "
-                    "third-party license restrictions, and identify preexisting materials "
-                    "explicitly. Export workflow definitions and maintain company-controlled "
-                    "administrator access so a provider's departure does not remove "
-                    "the operating system. Document portal transfer restrictions instead "
-                    "of assuming every login is a saleable asset."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Formula v2.0 Bridge and Accrual-Cohort Close Controls",
-                "headers": [
-                    "Scenario or accounting control objective",
-                    "Gross-to-retained or ledger treatment",
-                    "Profit or balance reconciliation requirement",
-                    "Evidence and specific reviewer responsibility",
-                ],
-                "rows": [
-                    [
-                        "Conservative case with one full-time and three contractors",
-                        "$180,000 gross less $99,000 pass-through equals $81,000 retained",
-                        "$81,000 retained less $59,400 costs equals $21,600 profit",
-                        "Operator verifies twelve-percent gross margin and 26.67% retained",
-                    ],
-                    [
-                        "Base case with one full-time and three contractors",
-                        "$790,000 gross less $434,500 pass-through equals $355,500 retained",
-                        "$355,500 retained less $205,400 costs equals $150,100 profit",
-                        "Operator verifies nineteen-percent gross margin and 42.22% retained",
-                    ],
-                    [
-                        "Scaled case with two full-time and four contractors",
-                        "$1,400,000 gross less $770,000 pass-through equals $630,000 retained",
-                        "$630,000 retained less $266,000 costs equals $364,000 profit",
-                        "Operator verifies twenty-six-percent gross margin and 57.78% retained",
-                    ],
-                    [
-                        "Arrival-month cohorts preserve complete placement economics through settlement",
-                        "Earned service revenue follows documented contracted occupancy periods",
-                        "Later credits and collection losses remain linked backward",
-                        "Ledger contractor reconciles placement schedules against general ledger",
-                    ],
-                    [
-                        "Refundable deposits remain separate from recurring operating performance",
-                        "Resident liabilities and landlord deposit assets tracked separately",
-                        "Deposit movements reconcile to cash and contractual deductions",
-                        "Operator reviews deductions against photographs and executed agreements",
-                    ],
-                    [
-                        "Late utility invoices cannot inflate recently closed cohorts",
-                        "Accrue reasonable estimates and reverse against actual invoices",
-                        "Utility-cap recovery requires contractual support and earned treatment",
-                        "Ledger contractor retains estimates, meter evidence, and bills",
-                    ],
-                    [
-                        "Commissioned operating assets require documented transferable ownership rights",
-                        "Signed assignments identify deliverables and excluded preexisting materials",
-                        "Third-party licenses remain separate from owned intellectual property",
-                        "Operator verifies signatures before placing assets in diligence",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Price transferable earnings, not a persuasive billing headline",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Choose the buyer lens before discussing a multiple. An owner-operator "
-                    "may value seller's discretionary earnings because they intend to "
-                    "replace the seller's labor; a managed-business buyer needs earnings "
-                    "after market-rate replacement of necessary management work. Canonical "
-                    "owner net profit is not automatically either measure. Build a "
-                    "bridge from the books that identifies owner compensation already "
-                    "expensed, discretionary benefits, interest, taxes, depreciation, "
-                    "amortization, and genuinely nonrecurring costs without double "
-                    "counting. Recurring turnover damage, vacancy, emergency dispatch, "
-                    "and lease-break losses are operating economics, not convenient "
-                    "add-backs. For an explicitly illustrative owner-operated negotiation, "
-                    "assume normalized discretionary earnings equal the Base $150,100 "
-                    "owner profit after review. A two-to-three-times multiple then "
-                    "indicates $300,200 to $450,300 of enterprise value before transaction "
-                    "adjustments. This is a planning sensitivity, not an observed "
-                    "transaction range or a promised premium. Apply the same assumption "
-                    "to Scaled $364,000 only if the ownership workload and normalization "
-                    "support it; the resulting arithmetic is $728,000 to $1,092,000. "
-                    "Do not multiply $790,000 or $1,400,000 of gross billings by "
-                    "an earnings multiple. Short-duration placements and long-duration "
-                    "lease obligations can make apparently strong earnings less durable "
-                    "than the headline suggests."
-                ),
-                (
-                    "For a managed acquisition sensitivity, suppose the Base profit "
-                    "contains no expense for replacing the working owner's duties "
-                    "and assume a fully loaded replacement cost of $75,000. The "
-                    "result is $75,100 after replacement, not the original $150,100. "
-                    "A hypothetical three-to-four-times multiple on that simplified "
-                    "adjusted earnings proxy yields $225,300 to $300,400. Do not "
-                    "label the proxy audited EBITDA without completing the remaining "
-                    "accounting adjustments, and do not subtract replacement compensation "
-                    "again if it is already included. The difference explains why "
-                    "documented delegation can be worth more than another unassignable "
-                    "carrier introduction. A buyer also tests change-of-control and "
-                    "assignment provisions, remaining lease duration, personal guarantees, "
-                    "property condition, open claims, and customer portability. No "
-                    "purchase agreement automatically releases a seller's landlord "
-                    "guarantee; obtain the required counterparty release expressly. "
-                    "Translate enterprise value into seller proceeds through a "
-                    "negotiated bridge for debt, cash, working-capital delivery, escrow, "
-                    "fees, and other agreed adjustments. State how lease liabilities "
-                    "and deposits are treated to prevent inconsistent deductions. "
-                    "Earn-outs tied to billings can reward low-quality occupancy; "
-                    "collected retained contribution, with precise definitions and "
-                    "buyer conduct protections, better reflects the economic asset "
-                    "being transferred."
-                ),
-                (
-                    "Build premium evidence rather than asserting a premium multiple. "
-                    "Deliver at least twelve consecutive monthly closes, a trailing "
-                    "cohort profitability schedule, concentration calculations, tested "
-                    "backup coverage, and a register of contracts requiring consent "
-                    "or replacement. Show that the six-person configuration actually "
-                    "runs without founder intervention for an agreed operating trial, "
-                    "including arrivals, extensions, incidents, collections, and turnover. "
-                    "Measure interventions and repair the workflow when the founder "
-                    "still supplies undocumented judgment. Keep origination relationships "
-                    "in company-controlled records, but respect the payer's discretion "
-                    "to choose housing vendors after ownership changes. Commission a "
-                    "proportionate quality-of-earnings review before allowing a headline "
-                    "offer to anchor expectations. Compare cash at closing, contingent "
-                    "consideration, retained liabilities, transition work, and transaction "
-                    "costs against continuing distributions under a conservative vacancy "
-                    "stress. A cash-cow decision still requires replacement reserves, "
-                    "adequate insurance, clean books, and concentration discipline; "
-                    "retaining ownership does not excuse founder dependence. Do not "
-                    "capitalize every dollar of reported profit into a sale value "
-                    "while ignoring the cash needed for deposits, furniture refreshes, "
-                    "or payer delays. The durable objective is optionality: a buyer "
-                    "can operate the book, a manager can operate the book, or "
-                    "the owner can retain it without becoming the permanent emergency "
-                    "dispatcher for every household."
-                ),
-            ],
-            "table": {
-                "caption": "Illustrative Earnings Valuation and Transferability Evidence Matrix",
-                "headers": [
-                    "Buyer lens or transferability issue",
-                    "Explicit assumption and calculation treatment",
-                    "Value implication or negotiation consequence",
-                    "Required diligence evidence before relying",
-                ],
-                "rows": [
-                    [
-                        "Base owner-operated valuation using normalized discretionary earnings assumption",
-                        "$150,100 assumed earnings multiplied by two to three",
-                        "$300,200 to $450,300 illustrative enterprise value before adjustments",
-                        "Reconciled earnings bridge confirms owner labor treatment explicitly",
-                    ],
-                    [
-                        "Scaled owner-operated valuation using identical illustrative earnings assumption",
-                        "$364,000 assumed earnings multiplied by two to three",
-                        "$728,000 to $1,092,000 illustrative enterprise value before adjustments",
-                        "Six-person operating history supports earnings and ownership workload",
-                    ],
-                    [
-                        "Base managed-business sensitivity after incremental owner labor replacement",
-                        "$150,100 less $75,000 assumed replacement equals $75,100",
-                        "Three-to-four-times proxy produces $225,300 to $300,400 enterprise value",
-                        "Compensation review confirms replacement cost was previously excluded",
-                    ],
-                    [
-                        "Master-lease assignment and guarantee release affect executable transfer",
-                        "Read each consent provision and document counterparty requirements",
-                        "Unreleased guarantees can leave seller exposure after closing",
-                        "Signed consents and express releases match transaction structure",
-                    ],
-                    [
-                        "Customer portability depends on contracts and relationship ownership",
-                        "Separate recurring payer history from binding purchase commitments",
-                        "Referral dependence can support contingent rather than upfront consideration",
-                        "Payer correspondence establishes actual assignment and onboarding requirements",
-                    ],
-                    [
-                        "Working-capital delivery changes proceeds without changing headline valuation",
-                        "Define receivables, deposits, payables, cash, and lease treatment",
-                        "Negotiated adjustments prevent double deductions and hidden funding",
-                        "Closing balance schedules reconcile to agreed purchase definitions",
-                    ],
-                    [
-                        "Retention decision compares distributions with executable net sale proceeds",
-                        "Model vacancy stress, replacement reserves, taxes, and transition effort",
-                        "Durable cash generation may outweigh weak contingent offers",
-                        "Independent review challenges assumptions before accepting binding terms",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before marketing a transferable housing book",
-                "body": "Resolve evidence gaps before presenting earnings or transferability claims to a buyer.",
-                "items": [
-                    "Confirm every property has executed corporate-housing sublease permission, documented assignment requirements, and a schedule of outstanding guarantees and release conditions.",
-                    "Reconcile twelve monthly closes to bank activity, placement cohorts, authorization records, retained-share calculations, and the proposed normalized earnings bridge.",
-                    "Verify each grouped payer, customer, landlord, and channel concentration is at or below 25% using the stated denominator; disclose any breach and its corrective plan.",
-                    "Complete a founder-absence operating trial and verify signed copyright assignments, company-controlled accounts, and lawful transfer arrangements for restricted portal access.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A transferable housing book turns every placement into documented earnings and every promise into a bounded obligation.",
-    "diagram_id": "diag-06",
-    "action_checklist": [
-        "Assign P01 through P12 to the four-person pod with one accountable seat, one tested backup, and one acceptance artifact per play.",
-        "Execute contractor scopes with priced outputs, correction deadlines, coverage arrangements, and classification review based on actual working conditions.",
-        "Publish the weekly exposure scorecard with funded nights, extension lead time, readiness defects, receivable aging, and grouped concentration ceilings of 25%.",
-        "Reconcile monthly gross billings, the 45% retained share, operating costs, and owner profit to the three canonical cases without double-counting pass-throughs.",
-        "Assemble assignable contracts, explicit sublease addenda, copyright assignments, deposit schedules, and restricted-access cohort evidence in a company-controlled diligence room.",
-        "Compare owner-operated and managed-buyer earnings bridges, quantify replacement labor and transaction adjustments, and test the cash-cow alternative under vacancy stress.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "17 U.S.C. section 204(a) — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": "Obtain signed written copyright assignments for commissioned manuals, photographs, scripts, and other owned deliverables; distinguish third-party licenses.",
-        },
-        {
-            "title": "29 U.S.C. section 203 — Fair Labor Standards Act definitions",
-            "url": "https://www.law.cornell.edu/uscode/text/29/203",
-            "relevance": "Evaluate actual employment relationships rather than relying on contractor labels when structuring coordinated housing operations.",
-        },
-        {
-            "title": "26 U.S.C. section 3121(d) — Employee definition for employment taxes",
-            "url": "https://www.law.cornell.edu/uscode/text/26/3121",
-            "relevance": "Review common-law employee status and relevant statutory categories when deciding how recurring operator seats should be engaged and paid.",
-        },
-        {
-            "title": "42 U.S.C. section 3604 — Discrimination in sale or rental of housing",
-            "url": "https://www.law.cornell.edu/uscode/text/42/3604",
-            "relevance": "Apply nondiscriminatory placement practices and applicable reasonable-accommodation duties across resident intake and contractor-delivered housing services.",
-        },
-        {
-            "title": "California Revenue and Taxation Code section 7280 — Local transient occupancy taxation",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=7280.",
-            "relevance": "Check the governing local ordinance and actual qualifying occupancy facts before recording transient-occupancy tax treatment or exemptions.",
-        },
-    ],
-}
+CHAPTER_11 = {'id': 'Q11',
+ 'chapter_id': 'Q11',
+ 'chapter_number': 11,
+ 'question_number': 11,
+ 'slug': 'lease-exits-early-termination-non-renewal-tenant-protections',
+ 'question_prompt': "What happens legally when a lease ends early, isn't renewed, or a tenant breaks it?",
+ 'kicker': 'Q11 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Lease Exits: Early Termination, Non-Renewal, and Tenant Protections',
+ 'subtitle': 'Breaking a lease with and without penalty, landlord options when tenants leave early, '
+             'early-termination clauses, domestic violence and HUD survivor rules, non-renewal notices, '
+             'void lease clauses, California AB1482 exemptions, and tenant screening',
+ 'layout_template': 'chapter_opener',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Landlord attorneys, tenant advocates, and property managers converge on one rule: '
+                      'the lease is a contract, and the exit price is set by its early termination clause, '
+                      'the notice clock, and whether the landlord must re-rent. Street numbers cluster '
+                      'tightly: termination fees of one to three months rent, a two-month buyout as the '
+                      'landlord-side default, Florida capping liquidated damages at two months, and '
+                      'military orders ending a lease 30 days after the next rent date. Habitability '
+                      'failures, quiet-enjoyment breaches, domestic violence documentation, and illegal '
+                      'units can release tenants without penalty. The fight lines are real: tenant-side '
+                      'operators push replacement tenants and sublets as the strongest negotiating chip, '
+                      'while a Florida property manager bans both outright, and California and Ontario '
+                      'protections cannot be waived regardless of what the paper says.',
+ 'key_metrics': [{'label': 'Typical Early Termination Fee Range',
+                  'metric': 'Typical Early Termination Fee Range',
+                  'value': '1 to 3 months rent',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Set amount a tenant pays to end the tenancy early, framed as potentially '
+                             'cheaper than paying rent on an unoccupied unit until the lease is up.',
+                  'source': 'Tenant Law Group, PC ([mXtFESh8Jwc @ 00:01:19])'},
+                 {'label': 'Standard Landlord Buyout Option',
+                  'metric': 'Standard Landlord Buyout Option',
+                  'value': 'Around two months rent',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Buyout clause landlords add to the lease letting a tenant pay a portion of '
+                             'the remaining lease to terminate early.',
+                  'source': 'DoorLoop ([DMY8aqSWFmQ @ 00:03:58])'},
+                 {'label': 'Florida Lease Default Cap',
+                  'metric': 'Florida Lease Default Cap',
+                  'value': 'Up to two months of rent under Florida Statutes 83.595',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Maximum a Florida landlord can charge for lease default or liquidated '
+                             'damages when the lease lacks its own default section.',
+                  'source': 'The Listing Real Estate Management ([WU7IqO6I6fk @ 00:02:04])'},
+                 {'label': 'SCRA Lease Termination Clock',
+                  'metric': 'SCRA Lease Termination Clock',
+                  'value': 'Lease ends 30 days after the next rent payment date',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Applies to permanent change of station or deployment orders of 90 days or '
+                             'more; written notice plus orders, with early termination fees prohibited.',
+                  'source': '60SecondLaw ([X_XeyY10oQE @ 00:03:50])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['The baseline every practitioner starts from is brutal: a lease is a binding '
+                              "contract, and walking out early is a breach. Adulting Shouldn't Suck frames "
+                              'the math plainly, a 12-month lease at $1,000 a month is a $12,000 promise, '
+                              'and a tenant who leaves after seven months leaves $5,000 the landlord will '
+                              'chase in court rather than eat [07RfH5S46pg @ 00:01:37]. Matthew Tropp of '
+                              'The Legal Aid Society says a departing tenant may be liable for every month '
+                              'left, with landlords collecting through a collections agency first and then '
+                              'suing in small claims, civil, or state supreme court depending on the '
+                              'amount [sIjDgu8Ns9w @ 00:02:22]. The counterweight is the duty to mitigate. '
+                              '60SecondLaw explains that in most states the landlord must make reasonable '
+                              'efforts to re-rent, advertise, show, and price fairly, and once a new '
+                              "tenant moves in the old tenant's rent obligation ends, with no double "
+                              'collection for the same month; the speaker names California Civil Code '
+                              'section 1951.2, a Texas Property Code provision that voids lease clauses '
+                              "cancelling the duty, and New York's Real Property Law section 227E since "
+                              '2019, while flagging Georgia and Florida as states without it [X_XeyY10oQE '
+                              '@ 00:01:40]. eForms adds that tenants may then owe only for the months the '
+                              'unit sat vacant [5Q9y-UGaIA8 @ 00:01:10].',
+                              'On the list of exits that cost nothing, the speakers line up almost word '
+                              'for word. Habitability comes first: Renter Lifestyle ties the implied '
+                              'warranty of habitability to mold, roaches, mice, leaky roofs, and flooding, '
+                              'triggering a right to terminate if the landlord fails to remedy after '
+                              'notice [EyV5J0CkYDA @ 00:00:17]. DoorLoop, speaking to landlords, concedes '
+                              'that in most states a tenant in unlivable housing, think no heat in a cold '
+                              'climate, no hot water, a failing roof, mold, or lead, can terminate without '
+                              'owing any of the remaining rent balance [DMY8aqSWFmQ @ 00:01:22]. eForms '
+                              'layers in the paper trail requirement, the tenant must have complained in '
+                              'writing to the landlord and the health department before walking '
+                              '[z85yNn7zCws @ 00:00:46]. Military orders and illegal units round out the '
+                              "core: TurboTenant's Christa confirms active duty members relocating for "
+                              'over 30 days cannot be charged for lost rent, that landlords may demand a '
+                              'copy of the orders, and that missing a required disclosure such as lead '
+                              'paint on pre-1978 houses or renting a unit zoned industrial hands the '
+                              'tenant a clean exit plus a possible fee against the landlord [HBrEcXEe2_I @ '
+                              '00:01:04]. The practical upshot is consistent: the reason for leaving sets '
+                              'the price.',
+                              'The non-renewal side runs on the same contract logic. Attorney Robert '
+                              'Flessas says a landlord can serve non-renewal on a month-to-month tenancy, '
+                              'but the original lease controls the notice, some require 60 days even after '
+                              'the conversion, and silent leases default to state statutes; mid-lease, a '
+                              'paying, rule-abiding tenant can only be non-renewed at term end, while '
+                              'non-payment opens eviction even during COVID moratoriums [aMeH-WgmCCg @ '
+                              '00:00:36]. Ontario Renter Rights pushes harder: under section 38 of the '
+                              'Residential Tenancies Act an expired fixed term is deemed renewed month to '
+                              'month on the same terms with no new signature, expiry is not a termination '
+                              'ground, and section 4 voids any clause inconsistent with the act, including '
+                              'no-pets and acceleration clauses that make all remaining rent due on one '
+                              'default [N08BrJ9_Luw @ 00:00:41]. David Piotrowski, who represents '
+                              'California landlords, adds that AB 1482 just cause protections attach after '
+                              '12 months of continuous lawful occupancy and cannot be waived even if the '
+                              'tenant agrees [dOXVjIvVseI @ 00:02:04]. On the tenant exit side, Better '
+                              'Call Kal puts typical UK notice periods at one or two months and warns that '
+                              'skipping them triggers additional costs and penalties, which is why the '
+                              'notice always goes out in writing [2ZipHRbP_7U @ 00:01:44].'],
+               'table': {'caption': 'Where the practitioners agree on lease exits and non-renewal',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Agree On',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['A lease is a binding contract for the full term',
+                                   'A 12-month, $1,000 lease is a $12,000 promise the landlord can sue to '
+                                   'collect',
+                                   'Price every exit against the remaining rent balance before negotiating '
+                                   'anything',
+                                   "Adulting Shouldn't Suck ([07RfH5S46pg @ 00:01:37])"],
+                                  ['The duty to mitigate cuts the remaining rent bill',
+                                   'In most states the landlord must advertise, show, and fairly price the '
+                                   'unit to re-rent',
+                                   'Rent obligation ends once a new tenant moves in, with no double rent '
+                                   'collected',
+                                   '60SecondLaw ([X_XeyY10oQE @ 00:01:40])'],
+                                  ['Habitability failure releases the tenant without remaining rent owed',
+                                   'No heat, no hot water, a failing roof, mold, or lead make housing '
+                                   'unlivable',
+                                   'Tenant can terminate without owing any of the remaining rent balance '
+                                   'in most states',
+                                   'DoorLoop ([DMY8aqSWFmQ @ 00:01:22])'],
+                                  ['Written complaints must come before a habitability walkout',
+                                   'Complaints to the landlord and the health department must be made in '
+                                   'writing',
+                                   'Undocumented complaints leave the tenant exposed to a rent claim in '
+                                   'court',
+                                   'eForms ([z85yNn7zCws @ 00:00:46])'],
+                                  ['Active duty orders end the lease without any penalty',
+                                   'Relocation orders for over 30 days let a service member break the '
+                                   'lease',
+                                   'Landlords cannot charge for lost rent but may demand a copy of the '
+                                   'orders',
+                                   'TurboTenant ([HBrEcXEe2_I @ 00:01:04])'],
+                                  ['Expired fixed terms roll into month-to-month tenancies in Ontario',
+                                   'Section 38 deems the tenancy renewed on the same terms with no new '
+                                   'signature',
+                                   'Expiry alone is never a termination ground; the landlord still needs a '
+                                   'lawful ground',
+                                   'Ontario Renter Rights ([N08BrJ9_Luw @ 00:00:41])'],
+                                  ['California just cause protections cannot be signed away by tenants',
+                                   'AB 1482 just cause rules apply after 12 months of continuous lawful '
+                                   'occupancy',
+                                   'Waiver clauses fail even when the tenant signs and agrees to waive '
+                                   'them',
+                                   'David Piotrowski ([dOXVjIvVseI @ 00:07:56])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The fee math converges on a tight band. Tenant Law Group, PC pegs early '
+                              'termination fees at one to three months rent and frames them as cheaper '
+                              'than carrying rent on an empty unit until term end, citing the civil code '
+                              'for liability running until the lease ends or the landlord re-rents, plus '
+                              'reasonable re-renting costs [mXtFESh8Jwc @ 00:01:19]. 60SecondLaw narrows '
+                              'it to one to two months, with two months the usual California figure, and '
+                              'opens with the cautionary math: eight months left on a lease after a job '
+                              'offer translates to a $16,000 bill for an apartment the tenant will never '
+                              "live in [X_XeyY10oQE @ 00:02:38]. From the landlord chair, DoorLoop's "
+                              'Sydney tells owners to write a buyout option into the lease, typically '
+                              'around two months rent, alongside a notice period, a termination fee, and a '
+                              'written notice of termination for liability reasons [DMY8aqSWFmQ @ '
+                              '00:03:43]. The Listing Real Estate Management reports the most common lease '
+                              'break package as a two-month fee plus a forfeited security deposit, with '
+                              'the alternative being ongoing rent until a replacement tenant signs, and '
+                              'points to Florida Statutes 83.595 allowing up to two months rent as '
+                              'liquidated damages [WU7IqO6I6fk @ 00:01:18].',
+                              'Protected exits run on precise clocks. 60SecondLaw walks the Service '
+                              'Members Civil Relief Act, 50 USC sections 3901 through 3938 with lease '
+                              'termination under section 3955: it covers a tenant who signed and then '
+                              'entered active duty, or an active duty member with permanent change of '
+                              'station or deployment orders of 90 days or more; written notice plus a copy '
+                              'of the orders ends the lease 30 days after the next rent payment date, '
+                              'termination fees are prohibited, but rent through the end date and damage '
+                              'beyond normal wear and tear are still owed [X_XeyY10oQE @ 00:03:50]. '
+                              "readingDlaw lays out the survivor statutes: Washington's RCW 59.18.575 "
+                              'requires written notice and a protection order or qualified third-party '
+                              'report within 90 days of the incident, releases rent after the last day of '
+                              'the move-out month, and returns the full deposit despite forfeiture clauses '
+                              "[9mr0xXwbasA @ 00:01:58]. Oregon's ORS 90.453 runs on 14 days written "
+                              "notice with verification and bars a fee for ending the lease, and Illinois' "
+                              'Safe Homes Act gives a defense when written notice goes in before moving '
+                              "out or within three days after [9mr0xXwbasA @ 00:02:48]. Matthew Tropp's "
+                              'list lets domestic violence victims provide documentation within 25 days of '
+                              'giving notice [sIjDgu8Ns9w @ 00:01:43].',
+                              "Negotiation is a paper game. 60SecondLaw's sequence: send more written "
+                              'notice than the minimum by certified mail or email if the lease allows, '
+                              'keep paying rent until a buyout is signed by both parties, and bring a '
+                              'qualified applicant, the strongest chip because a landlord who can re-rent '
+                              'tomorrow has no reason to chase; the signed agreement must state the '
+                              'amount, the move-out date, and that no further rent is owed [X_XeyY10oQE @ '
+                              '00:05:35]. Matthew Tropp adds the exit hardware: get any release in '
+                              'writing, demand the written key receipt the landlord is legally required to '
+                              'provide, and leave no belongings or occupants behind [sIjDgu8Ns9w @ '
+                              '00:01:10]. Better Call Kal closes the loop with a thorough clean, any '
+                              'necessary repairs, and your own photos and videos of the property condition '
+                              'before leaving [2ZipHRbP_7U @ 00:06:13]. For vetting the replacement '
+                              "tenant, ezLandlordForms runs screening off just an applicant's name and "
+                              'email, returning a credit report, resident score, criminal background '
+                              'check, eviction history, and rental application in a color-coded dashboard; '
+                              'landlords can select the applicant pays option so the applicant covers the '
+                              'fee and the landlord pays nothing, and pro subscribers get $5 off every '
+                              'screening [8wMQUi8wEbw @ 00:00:34].'],
+               'table': {'caption': 'Exact exit numbers, clocks, and tools quoted by the practitioners',
+                         'headers': ['Mechanic',
+                                     'Exact Number Or Tool',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Early termination fee range written into leases',
+                                   'One to three months rent as a set amount to end the tenancy',
+                                   'Often cheaper than carrying rent on an unoccupied unit until term end',
+                                   'Tenant Law Group, PC ([mXtFESh8Jwc @ 00:01:19])'],
+                                  ['Landlord buyout clause added to new leases',
+                                   'Buyout typically around two months rent paid toward the remaining '
+                                   'lease',
+                                   'Written in alongside notice period, termination fee, and written '
+                                   'notice requirement',
+                                   'DoorLoop ([DMY8aqSWFmQ @ 00:03:58])'],
+                                  ['Florida lease default and liquidated damages cap',
+                                   'Florida Statutes 83.595 allows up to two months of rent',
+                                   'Check the state cap before setting lease default or liquidated damages '
+                                   'terms',
+                                   'The Listing Real Estate Management ([WU7IqO6I6fk @ 00:02:04])'],
+                                  ['Service Members Civil Relief Act lease termination clock',
+                                   'Orders of 90 days or more; lease ends 30 days after next rent date',
+                                   'Send written notice with a copy of orders; no early termination fees '
+                                   'allowed',
+                                   '60SecondLaw ([X_XeyY10oQE @ 00:03:50])'],
+                                  ['Washington survivor early termination release window',
+                                   'Request within 90 days of the incident under RCW 59.18.575',
+                                   'Rent released after the last day of the move-out month; full deposit '
+                                   'returned',
+                                   'readingDlaw ([9mr0xXwbasA @ 00:01:58])'],
+                                  ['Oregon survivor written notice period',
+                                   'At least 14 days written notice under ORS 90.453 with verification '
+                                   'attached',
+                                   'Landlord must release the tenant and cannot charge a fee for ending '
+                                   'the lease',
+                                   'readingDlaw ([9mr0xXwbasA @ 00:02:48])'],
+                                  ['Tenant screening for replacement applicants and new tenants',
+                                   'Name and email only; applicant pays option; $5 off for pro subscribers',
+                                   'Pulls credit report, resident score, criminal background, eviction '
+                                   'history, and rental application',
+                                   'ezLandlordForms ([8wMQUi8wEbw @ 00:01:23])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Exit Plays The Speakers Actually Run',
+                           'body': 'Leverage moves pulled straight from the tenant-side and landlord-side '
+                                   'playbooks, each built to shrink the rent bill or keep the relationship '
+                                   'profitable.',
+                           'items': ['Weaponize the duty to mitigate: if there is no buyout, send the '
+                                     'landlord a written reminder of their duty to make reasonable efforts '
+                                     'to re-rent citing your state statute, save the listing if they post '
+                                     'it, and note every week the unit sits vacant with no listing '
+                                     '[60SecondLaw — X_XeyY10oQE @ 00:06:09].',
+                                     "Find your state's rule fast by Googling landlord's duty to re-rent "
+                                     'plus your state, then call a local landlord tenant attorney, many '
+                                     'will give direction for free without you paying for services '
+                                     "[Adulting Shouldn't Suck — 07RfH5S46pg @ 00:05:28].",
+                                     'Landlords cut surprise exits by reading the lease with the tenant at '
+                                     'signing; tenants who understand the early termination and eviction '
+                                     'policies are more likely to follow them and avoid extra expenses '
+                                     '[DoorLoop — DMY8aqSWFmQ @ 00:04:11].',
+                                     'Turn a move-out into revenue: one landlord with six properties '
+                                     'returns the entire security deposit to tenants leaving to buy if '
+                                     'they use him as their real estate agent, and others set up lender '
+                                     'referral deals or a $50 gift card [TurboTenant — HBrEcXEe2_I @ '
+                                     '00:06:32].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Audit The Lease Paper',
+                              'action': 'Pull the early termination clause, notice requirement, sublet and '
+                                        'assignment language, and penalty terms before talking to anyone.',
+                              'detail': 'Look for four things: an early termination clause, the notice '
+                                        'requirement, any sublet or assignment language, and penalties for '
+                                        'breaking the lease, then check state law for military, domestic '
+                                        'violence, early termination, and habitability rules [60SecondLaw '
+                                        '— X_XeyY10oQE @ 00:04:24].'},
+                             {'step': 2,
+                              'title': 'Classify The Exit Reason',
+                              'action': 'Match the situation against the penalty-free grounds: '
+                                        'habitability, quiet enjoyment, military service, domestic '
+                                        'violence, or an illegal unit.',
+                              'detail': 'Unlivable conditions after notice, a breach of quiet enjoyment '
+                                        'the landlord ignores, active duty deployment or relocation, and '
+                                        'domestic violence with a police report or restraining order are '
+                                        'the recognized penalty-free exits [eForms — 5Q9y-UGaIA8 @ '
+                                        '00:01:38].'},
+                             {'step': 3,
+                              'title': 'Negotiate The Buyout In Writing',
+                              'action': 'Propose a fixed payment effective on a specific date, offer a '
+                                        'qualified replacement applicant, and keep paying rent until both '
+                                        'parties sign.',
+                              'detail': 'Call the landlord, explain the situation, propose a fixed payment '
+                                        'to end the lease on a specific date, and get the termination '
+                                        'agreement signed by both parties before moving out; never rely on '
+                                        'a handshake or a casual text [60SecondLaw — X_XeyY10oQE @ '
+                                        '00:05:16].'},
+                             {'step': 4,
+                              'title': 'Exit Clean And Document',
+                              'action': 'Keep copies of every notice, return keys for a written receipt, '
+                                        'and leave a forwarding address for the deposit.',
+                              'detail': 'Keep copies of everything and record when and how notice was '
+                                        'delivered, then return the keys and give a safe forwarding '
+                                        'address for the deposit when you leave [readingDlaw — 9mr0xXwbasA '
+                                        '@ 00:05:26].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split runs straight through the replacement-tenant play. The '
+                              'Listing Real Estate Management tells landlords to never accept a '
+                              'tenant-found replacement, because the tenant ends up posting on Facebook '
+                              'and other social platforms trying to find a new tenant, and calls '
+                              'subletting a nightmare that only breeds lease problems and potential '
+                              'property damage, capped with the question of how you evict someone who is '
+                              'not on the lease agreement [WU7IqO6I6fk @ 00:02:37]. The tenant-side camp '
+                              'treats that exact move as the master key. 60SecondLaw calls a qualified '
+                              'applicant in hand the strongest negotiating chip you have, because a '
+                              'landlord who can re-rent tomorrow has no reason to chase you [X_XeyY10oQE @ '
+                              "00:05:35]. Adulting Shouldn't Suck ran the play at commercial scale: with "
+                              'roughly four years left on a gym lease, they found a credit-worthy buyer '
+                              'with finances in order who took over the space through a sublease while the '
+                              'original agreement stayed in their name, and it worked out really well '
+                              '[07RfH5S46pg @ 00:03:39]. Tenant Law Group, PC hands tenants the leverage '
+                              'point that most leases require landlord approval for a sublet, but that '
+                              'approval cannot be unreasonably withheld [mXtFESh8Jwc @ 00:00:58]. The '
+                              'clause you write decides which camp wins.',
+                              'Nobody agrees on the price of an exit. DoorLoop pegs a lease buyout, where '
+                              'the tenant pays a portion of the remainder of the lease to walk early, at '
+                              'typically around two months rent [DMY8aqSWFmQ @ 00:03:58]. 60SecondLaw says '
+                              'early termination fees commonly equal one to two months rent, with 2 months '
+                              'the usual amount California landlords write into these clauses [X_XeyY10oQE '
+                              '@ 00:02:56]. The Listing Real Estate Management stacks the hit harder: its '
+                              'most common lease break fee is two months rent plus a forfeited security '
+                              'deposit, and in Florida it points to Florida Statutes 83.595 letting a '
+                              'landlord charge up to two months of rent for lease default or liquidated '
+                              'damages [WU7IqO6I6fk @ 00:02:04]. The deposit grab is where the camps '
+                              'collide. TurboTenant warns that without specific early termination language '
+                              'spelling out the deposit, a landlord cannot keep it just because the tenant '
+                              'leaves early; it only covers past unpaid rent and itemized damage backed by '
+                              'receipts. Yet the same hosts report that landlords who do write the clause '
+                              'usually demand the entire deposit, an all-or-nothing forfeit rather than a '
+                              'prorated cut based on months left [HBrEcXEe2_I @ 00:05:12]. Write the '
+                              'forfeiture in from day one or expect to hand the money back.',
+                              'The end of the term itself splits by jurisdiction. Attorney Robert Flessas '
+                              'says a landlord can give notice of non-renewal, and on a month-to-month '
+                              'tenancy the notice period comes from the original lease, such as a 60-day '
+                              'notice, or from state landlord tenant statutes when the lease is silent; '
+                              'mid-term, a paying, rule-abiding tenant can only be non-renewed at the end '
+                              'of the one-year period [aMeH-WgmCCg @ 00:00:53]. Ontario Renter Rights '
+                              'flips the premise: under section 38 an expired fixed term is deemed renewed '
+                              'month to month on the same terms, expiry has never been a termination '
+                              "ground, and a landlord's offer of a new fixed term is a choice, not an "
+                              'obligation [N08BrJ9_Luw @ 00:01:18]. Military exits split on the numbers '
+                              "too. Adulting Shouldn't Suck says orders to go somewhere for more than 30 "
+                              'days end the lease in 30 days or at the end of the month once the landlord '
+                              'receives notice [07RfH5S46pg @ 00:07:30]. 60SecondLaw sets the trigger at a '
+                              'permanent change of station or a deployment of 90 days or more, with the '
+                              'lease ending 30 days after the next rent payment date and the tenant still '
+                              'owing rent through that end date [X_XeyY10oQE @ 00:04:07]. Price your '
+                              'vacancy runway off the stricter clock.'],
+               'table': {'caption': 'Lease-exit decision points where practitioners run opposite playbooks',
+                         'headers': ['Decision Point',
+                                     'Hard-Line Playbook',
+                                     'Alternative Playbook',
+                                     'Expert Source'],
+                         'rows': [['Tenant-found replacement or sublet as the exit route',
+                                   'Never allow it; tenants post on Facebook for replacements and you '
+                                   'cannot evict someone who is not on the lease',
+                                   'A qualified applicant in hand is the strongest negotiating chip; a gym '
+                                   'lease with four years left was handed to a credit-worthy buyer',
+                                   'The Listing Real Estate Management ([WU7IqO6I6fk @ 00:02:37]) vs '
+                                   "60SecondLaw ([X_XeyY10oQE @ 00:05:35]) and Adulting Shouldn't Suck "
+                                   '([07RfH5S46pg @ 00:03:39])'],
+                                  ['Whether the landlord negotiates an early release at all',
+                                   'Tenant signed a legally binding contract, so there is no room for '
+                                   'negotiation; always stick to the lease terms',
+                                   'A six-property landlord returns the entire security deposit if a '
+                                   'buying tenant uses him as the real estate agent',
+                                   'The Listing Real Estate Management ([WU7IqO6I6fk @ 00:03:07]) vs '
+                                   'TurboTenant ([HBrEcXEe2_I @ 00:06:32])'],
+                                  ['Size of the early termination fee or buyout',
+                                   'Two months rent plus forfeited security deposit; Florida allows up to '
+                                   'two months as liquidated damages',
+                                   'Buyout typically around two months; fees range 1 to 3 months and can '
+                                   'beat paying rent on an empty unit',
+                                   'The Listing Real Estate Management ([WU7IqO6I6fk @ 00:02:04]) vs '
+                                   'DoorLoop ([DMY8aqSWFmQ @ 00:03:58]) and Tenant Law Group, PC '
+                                   '([mXtFESh8Jwc @ 00:01:19])'],
+                                  ['Keeping the security deposit when the tenant breaks early',
+                                   'With forfeiture language written in, landlords usually require the '
+                                   'entire deposit, all or nothing, not prorated',
+                                   'Washington survivors get the full deposit back even with a forfeiture '
+                                   'clause, subject only to damage rules',
+                                   'TurboTenant ([HBrEcXEe2_I @ 00:05:12]) vs readingDlaw ([9mr0xXwbasA @ '
+                                   '00:02:29])'],
+                                  ['What happens when a fixed-term lease simply expires',
+                                   'Landlord can elect not to renew at the end of the one-year term with '
+                                   'lease or statute notice',
+                                   'Ontario deems the tenancy renewed month to month on the same terms; '
+                                   'expiry is never a termination ground',
+                                   'Attorney Robert Flessas ([aMeH-WgmCCg @ 00:01:10]) vs Ontario Renter '
+                                   'Rights ([N08BrJ9_Luw @ 00:01:18])'],
+                                  ['Military exit trigger and the notice clock',
+                                   'Orders for more than 30 days; tenant gives 30 to 60 days notice and '
+                                   'cannot be penalized for lost rent',
+                                   'Permanent change of station or deployment of at least 90 days; lease '
+                                   'ends 30 days after next rent date',
+                                   'TurboTenant ([HBrEcXEe2_I @ 00:01:04]) vs Renter Lifestyle '
+                                   '([EyV5J0CkYDA @ 00:03:50]) and 60SecondLaw ([X_XeyY10oQE @ 00:04:07])'],
+                                  ['Structuring the lease term when an early exit is likely',
+                                   'Tenants who might leave early should take a month-to-month lease or a '
+                                   'three or six month option',
+                                   'Landlords uneasy about waiting out a lease should rent month-to-month '
+                                   'or build in an early termination clause',
+                                   "Adulting Shouldn't Suck ([07RfH5S46pg @ 00:08:20]) vs eForms "
+                                   '([z85yNn7zCws @ 00:02:31])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The fastest way to turn a move into a money disaster is to stop paying and '
+                              'disappear. 60SecondLaw lays out the damage: the landlord can send the debt '
+                              'to collections, sue for the remaining rent, and tank your credit, and '
+                              'assuming the security deposit covers the break fails because the deposit is '
+                              'for damage and unpaid rent, not a prepayment of your broken lease '
+                              "[X_XeyY10oQE @ 00:07:16]. The Legal Aid Society's Matthew Tropp confirms "
+                              'the collection ladder: a collections agency first, then depending on the '
+                              'amount owed, small claims court, civil court, or state supreme court, with '
+                              'debt that can follow a person after they have left the apartment and land '
+                              'on their credit [sIjDgu8Ns9w @ 00:02:40]. The handshake exit is the second '
+                              "trap. 60SecondLaw says 'He said I could go' loses to a signed lease every "
+                              'time, and skipping the required written notice can add another full month '
+                              'or more of liability [X_XeyY10oQE @ 00:07:47]. Unauthorized subletting is '
+                              "the third: Adulting Shouldn't Suck warns subletting is typically not "
+                              'allowed in most places, and doing it first and asking forgiveness later can '
+                              'get you evicted [07RfH5S46pg @ 00:04:57]. Every one of these losses traces '
+                              'back to missing paper.',
+                              'Landlords lose on paperwork too. David Piotrowski warns that a property not '
+                              'exempt from AB 1482 must comply with every just cause eviction protection, '
+                              'and failing to do so will likely cause you to lose the eviction case, so '
+                              'the exemption call has to be made before the eviction process starts '
+                              '[dOXVjIvVseI @ 00:07:40]. The exemptions carry their own tripwires: the '
+                              'duplex exemption only holds if the owner occupied one unit at the beginning '
+                              'of the tenancy and stayed throughout, and the single-family exemption '
+                              'requires an owner that is not a REIT, corporation, or LLC with a corporate '
+                              'member, plus written exemption notice in specific language on specific '
+                              'deadlines [dOXVjIvVseI @ 00:05:41]. Just cause protections also cannot be '
+                              'waived even if the tenant agrees. Ontario Renter Rights reports the same '
+                              'wall in Ontario: an acceleration clause that makes the whole remaining term '
+                              'due on one default is void under section 15, often borrowed from commercial '
+                              'leases, and section 3 means the act applies despite any waiver [N08BrJ9_Luw '
+                              '@ 00:03:40]. TurboTenant adds the disclosure trap: skip a required '
+                              'disclosure like lead paint for houses built before 1978 and the tenant can '
+                              'break the lease, and you might also get a fee [HBrEcXEe2_I @ 00:03:02].',
+                              'The economics check that saves or sinks a break is the duty to mitigate. '
+                              '60SecondLaw says that once a tenant leaves, most states require the '
+                              'landlord to make reasonable efforts to re-rent, advertise, show, and fairly '
+                              'price the unit, but Georgia and Florida are among the handful that impose '
+                              'no such duty, so a tenant there can be billed for the full remaining term '
+                              '[X_XeyY10oQE @ 00:02:19]. Tenant Law Group, PC lays out the California math '
+                              'under civil code section 1951.2: unpaid rent until the lease ends or a new '
+                              'tenant is found, plus reasonable costs for re-renting, cut down only if the '
+                              'tenant shows the landlord skipped advertising or rejected suitable tenants '
+                              '[mXtFESh8Jwc @ 00:00:22]. The cheapest fix sits upstream at intake. The '
+                              'Listing Real Estate Management calls it a red flag when a prospect touring '
+                              'the property asks what happens if they need to break the lease, because '
+                              'most likely they will break it during the term [WU7IqO6I6fk @ 00:01:35]. '
+                              'ezLandlordForms pitches screening that returns a credit report, resident '
+                              'score, criminal background check, and eviction history report in a '
+                              'color-coded red-flag dashboard, with an applicant-pays option so landlords '
+                              'pay nothing [8wMQUi8wEbw @ 00:00:51]. Screening is the one exit cost paid '
+                              'before the lease is signed.'],
+               'table': {'caption': 'Firsthand lease-exit failure modes and the money they cost',
+                         'headers': ['Failure Mode',
+                                     'What Went Wrong',
+                                     'Economics / Fallout',
+                                     'Expert Source'],
+                         'rows': [['Tenant stops paying rent and simply disappears',
+                                   'No notice, no agreement, and the deposit treated as a prepayment of '
+                                   'the broken lease',
+                                   'Debt goes to collections, landlord sues for the remaining rent, and '
+                                   'credit gets tanked for the next apartment',
+                                   '60SecondLaw ([X_XeyY10oQE @ 00:07:16])'],
+                                  ['Exit rests on a verbal deal or a loose buyout',
+                                   'A handshake or casual text, or a buyout that lets you leave while the '
+                                   'rent clock keeps running',
+                                   'A verbal go-ahead is worth nothing if the landlord later sues for 8 '
+                                   'months of rent',
+                                   '60SecondLaw ([X_XeyY10oQE @ 00:03:13])'],
+                                  ['Notice period ignored or shortchanged',
+                                   'Tenant leaves without the required written notice or misses the one or '
+                                   'two month notice window',
+                                   'Adds another full month or more of liability plus additional costs and '
+                                   'penalties',
+                                   '60SecondLaw ([X_XeyY10oQE @ 00:07:47]) and Better Call Kal '
+                                   '([2ZipHRbP_7U @ 00:01:44])'],
+                                  ['Sublet done without permission or with the wrong subtenant',
+                                   'Subletting is typically not allowed, and a sublet leaves the original '
+                                   'tenant on the lease',
+                                   'Eviction risk if unauthorized; if the subtenant stops paying, the '
+                                   'landlord comes after you',
+                                   "Adulting Shouldn't Suck ([07RfH5S46pg @ 00:04:57]) and 60SecondLaw "
+                                   '([X_XeyY10oQE @ 00:06:41])'],
+                                  ['Landlord skips the AB 1482 just cause analysis',
+                                   'Eviction filed on a non-exempt property without just cause, or relying '
+                                   'on a tenant waiver',
+                                   'Landlord will likely lose the eviction case; just cause requirements '
+                                   'cannot be waived even by agreement',
+                                   'David Piotrowski ([dOXVjIvVseI @ 00:07:40]) and David Piotrowski '
+                                   '([dOXVjIvVseI @ 00:07:56])'],
+                                  ['Survivor early exit executed out of order',
+                                   'Leaving without required written notice, missing the deadline, or '
+                                   'assuming a harmful co-tenant is released too',
+                                   'In Washington the request must come within 90 days and rent for the '
+                                   'move-out month is usually still owed',
+                                   'readingDlaw ([9mr0xXwbasA @ 00:06:22]) and readingDlaw ([9mr0xXwbasA @ '
+                                   '00:02:11])'],
+                                  ['Credit damage left unchallenged after the break',
+                                   'Landlord reports the unpaid lease obligations to credit agencies or '
+                                   'pursues legal action',
+                                   'Credit score takes the hit; anything on the report should be disputed '
+                                   'in writing with the agency',
+                                   'Better Call Kal ([2ZipHRbP_7U @ 00:05:19]) and The Legal Aid Society '
+                                   '([sIjDgu8Ns9w @ 00:02:58])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Hard Stops Before Any Unit Changes Hands',
+                           'body': 'Each stop below comes from a loss or reversal practitioners reported '
+                                   'firsthand. Clear all four before keys move or rent stops.',
+                           'items': ['No move-out and no rent stoppage until a termination agreement is '
+                                     'signed by both sides stating the amount, the move-out date, and that '
+                                     'no further rent is owed [60SecondLaw — X_XeyY10oQE @ 00:05:52].',
+                                     'Landlords run the AB 1482 exemption determination before starting '
+                                     'any eviction, because a non-exempt property without just cause will '
+                                     'likely lose the case [David Piotrowski — dOXVjIvVseI @ 00:07:40].',
+                                     'Get a written receipt when the keys go back and leave nothing you '
+                                     'want, and no occupants, in the apartment [The Legal Aid Society — '
+                                     'sIjDgu8Ns9w @ 00:01:10].',
+                                     'Clean, repair, and document the property condition with your own '
+                                     'photos and videos before vacating to block deposit deductions '
+                                     '[Better Call Kal — 2ZipHRbP_7U @ 00:06:13].']}}],
+ 'pull_quote': '"Without a record of the landlord\'s re-renting efforts, you can\'t use the duty to '
+               'mitigate in your favor. Paper wins these fights." — 60SecondLaw (X_XeyY10oQE @ 00:08:05).',
+ 'diagram_id': 'diag-06',
+ 'action_checklist': ['Pull the lease and mark four things: the early termination clause, the notice '
+                      'requirement, sublet or assignment language, and penalties for breaking [60SecondLaw '
+                      '— X_XeyY10oQE @ 00:04:43].',
+                      'Give at least 30 days or one month of notice, get any landlord release in writing, '
+                      'and if refused send written notice by email or letter [The Legal Aid Society — '
+                      'sIjDgu8Ns9w @ 00:00:53].',
+                      'On habitability failures, make the complaint in writing, and if the landlord '
+                      'refuses to fix it in a timely manner, notify the landlord of your intent to break '
+                      "the lease [Adulting Shouldn't Suck — 07RfH5S46pg @ 00:06:03].",
+                      "With no buyout on the table, send a written reminder of the landlord's duty to "
+                      're-rent citing your state statute, then save listings and log weeks the unit sits '
+                      'vacant [60SecondLaw — X_XeyY10oQE @ 00:06:09].',
+                      'Landlords write an early termination clause covering the notice period, the '
+                      'termination fee, and written notice of termination, then walk the tenant through it '
+                      'at signing [DoorLoop — DMY8aqSWFmQ @ 00:03:43].',
+                      'Survivors gather the proof the state accepts, such as a protection order, police '
+                      'report, or signed advocate statement, deliver written notice, and keep copies of '
+                      'everything [readingDlaw — 9mr0xXwbasA @ 00:05:26].'],
+ 'statutory_citations': [{'title': '60SecondLaw — Want Out of Your Lease Early? The Real Cost of Breaking '
+                                   'It [00:01:40]',
+                          'url': 'https://www.youtube.com/watch?v=X_XeyY10oQE&t=100s',
+                          'relevance': 'Primary practitioner testimony on the duty to mitigate, buyout '
+                                       'paper trail, military exits, and the five money-disaster '
+                                       'mistakes.'},
+                         {'title': 'David Piotrowski — AB1482 - Exemptions to the Tenant Protection Act of '
+                                   '2019 [00:02:04]',
+                          'url': 'https://www.youtube.com/watch?v=dOXVjIvVseI&t=124s',
+                          'relevance': 'Primary practitioner testimony on the 12-month just cause trigger, '
+                                       'owner-occupancy and single-family exemptions, and non-waivable '
+                                       'protections.'},
+                         {'title': 'readingDlaw — Domestic violence and breaking your lease early: WA, OR, '
+                                   'IL and HUD survivor rules (US) [00:01:58]',
+                          'url': 'https://www.youtube.com/watch?v=9mr0xXwbasA&t=118s',
+                          'relevance': 'Primary practitioner testimony on survivor early termination '
+                                       'windows, proof requirements, deposit return, and co-tenant '
+                                       'liability.'},
+                         {'title': "Ontario Renter Rights — Your Lease Expired — You Don't Have to Leave "
+                                   '(and Other Void Lease Clauses) [00:00:41]',
+                          'url': 'https://www.youtube.com/watch?v=N08BrJ9_Luw&t=41s',
+                          'relevance': 'Primary practitioner testimony on deemed month-to-month renewal '
+                                       'and void acceleration and no-pets clauses.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'aMeH-WgmCCg',
+                       'title': 'CAN A LANDLORD NOT RENEW YOUR LEASE AT ANYTIME?',
+                       'channel': 'Attorney Robert Flessas',
+                       'author': 'Attorney Robert Flessas',
+                       'text': "If you're in the middle of a one-year lease and you've been paying your "
+                               'rent and abiding by the rules, your landlord can only elect to not renew '
+                               'your lease at the end of the one-year lease period.',
+                       'tip': "If you're in the middle of a one-year lease and you've been paying your "
+                              'rent and abiding by the rules, your landlord can only elect to not renew '
+                              'your lease at the end of the one-year lease period.',
+                       'timestamp': 70,
+                       'timestamp_seconds': 70,
+                       'timestamp_label': '[00:01:10]',
+                       'url': 'https://www.youtube.com/watch?v=aMeH-WgmCCg&t=70s',
+                       'markdown': '[00:01:10](https://www.youtube.com/watch?v=aMeH-WgmCCg&t=70s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'N08BrJ9_Luw',
+                       'title': "Your Lease Expired — You Don't Have to Leave (and Other Void Lease "
+                                'Clauses)',
+                       'channel': 'Ontario Renter Rights',
+                       'author': 'Ontario Renter Rights',
+                       'text': 'Expiry is not a termination ground, and it never has been under this act.',
+                       'tip': 'Expiry is not a termination ground, and it never has been under this act.',
+                       'timestamp': 78,
+                       'timestamp_seconds': 78,
+                       'timestamp_label': '[00:01:18]',
+                       'url': 'https://www.youtube.com/watch?v=N08BrJ9_Luw&t=78s',
+                       'markdown': '[00:01:18](https://www.youtube.com/watch?v=N08BrJ9_Luw&t=78s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dOXVjIvVseI',
+                       'title': 'AB1482 - Exemptions to the Tenant Protection Act of 2019',
+                       'channel': 'David Piotrowski',
+                       'author': 'David Piotrowski',
+                       'text': "If your property is not exempt, then you'll have to comply with all the "
+                               'Just Cause eviction protections, and failing to do so will likely cause '
+                               'you to lose the eviction case.',
+                       'tip': "If your property is not exempt, then you'll have to comply with all the "
+                              'Just Cause eviction protections, and failing to do so will likely cause you '
+                              'to lose the eviction case.',
+                       'timestamp': 460,
+                       'timestamp_seconds': 460,
+                       'timestamp_label': '[00:07:40]',
+                       'url': 'https://www.youtube.com/watch?v=dOXVjIvVseI&t=460s',
+                       'markdown': '[00:07:40](https://www.youtube.com/watch?v=dOXVjIvVseI&t=460s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dOXVjIvVseI',
+                       'title': 'AB1482 - Exemptions to the Tenant Protection Act of 2019',
+                       'channel': 'David Piotrowski',
+                       'author': 'David Piotrowski',
+                       'text': 'The Just Cause eviction requirements cannot be waived, even if the tenant '
+                               'agrees to waive those restrictions.',
+                       'tip': 'The Just Cause eviction requirements cannot be waived, even if the tenant '
+                              'agrees to waive those restrictions.',
+                       'timestamp': 476,
+                       'timestamp_seconds': 476,
+                       'timestamp_label': '[00:07:56]',
+                       'url': 'https://www.youtube.com/watch?v=dOXVjIvVseI&t=476s',
+                       'markdown': '[00:07:56](https://www.youtube.com/watch?v=dOXVjIvVseI&t=476s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '07RfH5S46pg',
+                       'title': 'How To Break Your Lease | Get Out Of Your Lease With No Penalty',
+                       'channel': "Adulting Shouldn't Suck",
+                       'author': "Adulting Shouldn't Suck",
+                       'text': 'Subletting is typically not allowed in most places, so make sure that you '
+                               "ask about it before you do it, because if you do it and it's not allowed "
+                               'you can get evicted.',
+                       'tip': 'Subletting is typically not allowed in most places, so make sure that you '
+                              "ask about it before you do it, because if you do it and it's not allowed "
+                              'you can get evicted.',
+                       'timestamp': 297,
+                       'timestamp_seconds': 297,
+                       'timestamp_label': '[00:04:57]',
+                       'url': 'https://www.youtube.com/watch?v=07RfH5S46pg&t=297s',
+                       'markdown': '[00:04:57](https://www.youtube.com/watch?v=07RfH5S46pg&t=297s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DMY8aqSWFmQ',
+                       'title': 'Early Termination of Lease Agreements for Landlords',
+                       'channel': 'DoorLoop',
+                       'author': 'DoorLoop',
+                       'text': 'Buyout in this case refers to the ability of the tenant to pay a portion '
+                               'of the remainder of their lease early to terminate their lease, and '
+                               'typically this fee is around two months rent.',
+                       'tip': 'Buyout in this case refers to the ability of the tenant to pay a portion of '
+                              'the remainder of their lease early to terminate their lease, and typically '
+                              'this fee is around two months rent.',
+                       'timestamp': 238,
+                       'timestamp_seconds': 238,
+                       'timestamp_label': '[00:03:58]',
+                       'url': 'https://www.youtube.com/watch?v=DMY8aqSWFmQ&t=238s',
+                       'markdown': '[00:03:58](https://www.youtube.com/watch?v=DMY8aqSWFmQ&t=238s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mXtFESh8Jwc',
+                       'title': 'What Happens If You Break Your Lease Early?',
+                       'channel': 'Tenant Law Group, PC',
+                       'author': 'Tenant Law Group, PC',
+                       'text': "An early termination fee is a set amount you'd pay to end your tenancy "
+                               'early, typically ranging from 1 to 3 months rent, and it could be less '
+                               'expensive than paying rent for an unoccupied unit until your lease is up.',
+                       'tip': "An early termination fee is a set amount you'd pay to end your tenancy "
+                              'early, typically ranging from 1 to 3 months rent, and it could be less '
+                              'expensive than paying rent for an unoccupied unit until your lease is up.',
+                       'timestamp': 79,
+                       'timestamp_seconds': 79,
+                       'timestamp_label': '[00:01:19]',
+                       'url': 'https://www.youtube.com/watch?v=mXtFESh8Jwc&t=79s',
+                       'markdown': '[00:01:19](https://www.youtube.com/watch?v=mXtFESh8Jwc&t=79s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2ZipHRbP_7U',
+                       'title': 'Lawyer Explains: How To Get Out Of A Lease Early',
+                       'channel': 'Better Call Kal',
+                       'author': 'Better Call Kal',
+                       'text': 'Be prepared to propose solutions such as finding your replacement tenant '
+                               'or offering to pay a penalty for early termination.',
+                       'tip': 'Be prepared to propose solutions such as finding your replacement tenant or '
+                              'offering to pay a penalty for early termination.',
+                       'timestamp': 132,
+                       'timestamp_seconds': 132,
+                       'timestamp_label': '[00:02:12]',
+                       'url': 'https://www.youtube.com/watch?v=2ZipHRbP_7U&t=132s',
+                       'markdown': '[00:02:12](https://www.youtube.com/watch?v=2ZipHRbP_7U&t=132s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sIjDgu8Ns9w',
+                       'title': '5 Things You Need to Know About Breaking Your Lease',
+                       'channel': 'The Legal Aid Society',
+                       'author': 'The Legal Aid Society',
+                       'text': 'If the landlord does not try to re-rent the apartment in good faith, then '
+                               'they may not be able to collect any of the unpaid rent from you.',
+                       'tip': 'If the landlord does not try to re-rent the apartment in good faith, then '
+                              'they may not be able to collect any of the unpaid rent from you.',
+                       'timestamp': 88,
+                       'timestamp_seconds': 88,
+                       'timestamp_label': '[00:01:28]',
+                       'url': 'https://www.youtube.com/watch?v=sIjDgu8Ns9w&t=88s',
+                       'markdown': '[00:01:28](https://www.youtube.com/watch?v=sIjDgu8Ns9w&t=88s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WU7IqO6I6fk',
+                       'title': 'What to do if my Tenant Breaks the Lease Agreement?',
+                       'channel': 'The Listing Real Estate Management',
+                       'author': 'The Listing Real Estate Management',
+                       'text': 'Tenant finding a replacement: never allow this option, as your tenant will '
+                               'end up posting on Facebook and other social platforms trying to find a new '
+                               'tenant to take their place.',
+                       'tip': 'Tenant finding a replacement: never allow this option, as your tenant will '
+                              'end up posting on Facebook and other social platforms trying to find a new '
+                              'tenant to take their place.',
+                       'timestamp': 157,
+                       'timestamp_seconds': 157,
+                       'timestamp_label': '[00:02:37]',
+                       'url': 'https://www.youtube.com/watch?v=WU7IqO6I6fk&t=157s',
+                       'markdown': '[00:02:37](https://www.youtube.com/watch?v=WU7IqO6I6fk&t=157s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EyV5J0CkYDA',
+                       'title': 'How to Break Your Lease Without Penalty [10 Effective Strategies]',
+                       'channel': 'Renter Lifestyle',
+                       'author': 'Renter Lifestyle',
+                       'text': "If you signed a lease prior to active duty service, or if you're already "
+                               'serving on active duty and receive permanent change of station or '
+                               'deployment orders for a period of at least 90 days, then you should be '
+                               'able to terminate your housing lease without penalty.',
+                       'tip': "If you signed a lease prior to active duty service, or if you're already "
+                              'serving on active duty and receive permanent change of station or '
+                              'deployment orders for a period of at least 90 days, then you should be able '
+                              'to terminate your housing lease without penalty.',
+                       'timestamp': 230,
+                       'timestamp_seconds': 230,
+                       'timestamp_label': '[00:03:50]',
+                       'url': 'https://www.youtube.com/watch?v=EyV5J0CkYDA&t=230s',
+                       'markdown': '[00:03:50](https://www.youtube.com/watch?v=EyV5J0CkYDA&t=230s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HBrEcXEe2_I',
+                       'title': 'Debunking Lease Breaking Myths: Navigating Early Termination | Be A '
+                                'Better Landlord',
+                       'channel': 'TurboTenant',
+                       'author': 'TurboTenant',
+                       'text': "Usually from what I've seen, landlords require them to forfeit the entire "
+                               "amount; it's not prorated based on how long they have left in the lease "
+                               'agreement itself.',
+                       'tip': "Usually from what I've seen, landlords require them to forfeit the entire "
+                              "amount; it's not prorated based on how long they have left in the lease "
+                              'agreement itself.',
+                       'timestamp': 312,
+                       'timestamp_seconds': 312,
+                       'timestamp_label': '[00:05:12]',
+                       'url': 'https://www.youtube.com/watch?v=HBrEcXEe2_I&t=312s',
+                       'markdown': '[00:05:12](https://www.youtube.com/watch?v=HBrEcXEe2_I&t=312s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'X_XeyY10oQE',
+                       'title': 'Want Out of Your Lease Early? The Real Cost of Breaking It',
+                       'channel': '60SecondLaw',
+                       'author': '60SecondLaw',
+                       'text': 'Just stopping payment and disappearing lets the landlord send the debt to '
+                               'collections, sue you for the remaining rent, and tank your credit, making '
+                               'your next apartment harder to get.',
+                       'tip': 'Just stopping payment and disappearing lets the landlord send the debt to '
+                              'collections, sue you for the remaining rent, and tank your credit, making '
+                              'your next apartment harder to get.',
+                       'timestamp': 436,
+                       'timestamp_seconds': 436,
+                       'timestamp_label': '[00:07:16]',
+                       'url': 'https://www.youtube.com/watch?v=X_XeyY10oQE&t=436s',
+                       'markdown': '[00:07:16](https://www.youtube.com/watch?v=X_XeyY10oQE&t=436s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'X_XeyY10oQE',
+                       'title': 'Want Out of Your Lease Early? The Real Cost of Breaking It',
+                       'channel': '60SecondLaw',
+                       'author': '60SecondLaw',
+                       'text': "Without a record of the landlord's re-renting efforts, you can't use the "
+                               'duty to mitigate in your favor. Paper wins these fights.',
+                       'tip': "Without a record of the landlord's re-renting efforts, you can't use the "
+                              'duty to mitigate in your favor. Paper wins these fights.',
+                       'timestamp': 485,
+                       'timestamp_seconds': 485,
+                       'timestamp_label': '[00:08:05]',
+                       'url': 'https://www.youtube.com/watch?v=X_XeyY10oQE&t=485s',
+                       'markdown': '[00:08:05](https://www.youtube.com/watch?v=X_XeyY10oQE&t=485s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'z85yNn7zCws',
+                       'title': 'How To Break A Lease Early (And Avoid Getting Taken to Court)',
+                       'channel': 'eForms',
+                       'author': 'eForms',
+                       'text': "Your landlord's primary concern when you decide to break your lease is "
+                               'losing months of rent in the process of looking for a new tenant, so if '
+                               'you offer to help, your landlord is likely to be more open to negotiating '
+                               'with you.',
+                       'tip': "Your landlord's primary concern when you decide to break your lease is "
+                              'losing months of rent in the process of looking for a new tenant, so if you '
+                              'offer to help, your landlord is likely to be more open to negotiating with '
+                              'you.',
+                       'timestamp': 90,
+                       'timestamp_seconds': 90,
+                       'timestamp_label': '[00:01:30]',
+                       'url': 'https://www.youtube.com/watch?v=z85yNn7zCws&t=90s',
+                       'markdown': '[00:01:30](https://www.youtube.com/watch?v=z85yNn7zCws&t=90s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9mr0xXwbasA',
+                       'title': 'Domestic violence and breaking your lease early: WA, OR, IL and HUD '
+                                'survivor rules (US)',
+                       'channel': 'readingDlaw',
+                       'author': 'readingDlaw',
+                       'text': 'The request must happen within 90 days of the incident, and the tenant is '
+                               'released from rent after the last day of the month they move out, so the '
+                               'rent for that month is usually still owed.',
+                       'tip': 'The request must happen within 90 days of the incident, and the tenant is '
+                              'released from rent after the last day of the month they move out, so the '
+                              'rent for that month is usually still owed.',
+                       'timestamp': 131,
+                       'timestamp_seconds': 131,
+                       'timestamp_label': '[00:02:11]',
+                       'url': 'https://www.youtube.com/watch?v=9mr0xXwbasA&t=131s',
+                       'markdown': '[00:02:11](https://www.youtube.com/watch?v=9mr0xXwbasA&t=131s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5Q9y-UGaIA8',
+                       'title': 'Can You Break a Lease Early? Tenant Rights Explained',
+                       'channel': 'eForms',
+                       'author': 'eForms',
+                       'text': 'In most states, landlords are required to make a good faith effort to '
+                               'rerent the property, and if they find a new tenant, you may only be '
+                               'responsible for the time the unit was vacant.',
+                       'tip': 'In most states, landlords are required to make a good faith effort to '
+                              'rerent the property, and if they find a new tenant, you may only be '
+                              'responsible for the time the unit was vacant.',
+                       'timestamp': 70,
+                       'timestamp_seconds': 70,
+                       'timestamp_label': '[00:01:10]',
+                       'url': 'https://www.youtube.com/watch?v=5Q9y-UGaIA8&t=70s',
+                       'markdown': '[00:01:10](https://www.youtube.com/watch?v=5Q9y-UGaIA8&t=70s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8wMQUi8wEbw',
+                       'title': 'Best Tenant Screening Service for Landlords',
+                       'channel': 'ezLandlordForms',
+                       'author': 'ezLandlordForms',
+                       'text': 'Landlords can choose the applicant pays option when they send a screening '
+                               "request, which means the applicant covers the fee and landlords don't pay "
+                               'anything.',
+                       'tip': 'Landlords can choose the applicant pays option when they send a screening '
+                              "request, which means the applicant covers the fee and landlords don't pay "
+                              'anything.',
+                       'timestamp': 83,
+                       'timestamp_seconds': 83,
+                       'timestamp_label': '[00:01:23]',
+                       'url': 'https://www.youtube.com/watch?v=8wMQUi8wEbw&t=83s',
+                       'markdown': '[00:01:23](https://www.youtube.com/watch?v=8wMQUi8wEbw&t=83s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'}]}

@@ -1,802 +1,841 @@
 from __future__ import annotations
 
-CHAPTER_6 = {
-    "id": "Q6",
-    "chapter_id": "Q6",
-    "chapter_number": 6,
-    "question_number": 6,
-    "slug": "sourcing-demand-mining-and-landing-your-first-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in saas discount brokerage & gpo arbitrage, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (1–3 months)?",
-    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
-    "title": "Sourcing, Demand Mining & Landing Your First Deals",
-    "subtitle": "Mine Renewal Cliffs, Validate CSP and VIP Routes, and Convert Authorized Spend Audits Through CAN-SPAM, TCPA, and Net-Retained Economics",
-    "layout_template": "step_by_step_sop",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #37, SaaS Discount Brokerage & GPO Arbitrage, ranks #04 of 37 "
-        "with a 94/100 Money-to-Manpower Score. This chapter organizes 12 mapped "
-        "plays around renewal timing, authorized channel economics, and documented "
-        "buyer demand. Start with a narrow account cohort, verify subscription "
-        "commitments, and sell a bounded audit before proposing a transfer. Public "
-        "signals identify questions; invoices and customer authority establish "
-        "executable opportunities. A modeled 200-account cohort yields six signed "
-        "mandates, with collection tracked separately. Canonical annual owner "
-        "profits are $32,000 Conservative, $225,000 Base, and $522,000 Scaled. "
-        "Those outcomes use retained operator revenue, never customer subscription "
-        "spend. High-volume mailbox infrastructure receives an entitlement and "
-        "arithmetic check rather than becoming the first-deal strategy."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual retained operator revenue; client subscription spend excluded",
-            "note": "32% net margin; $32,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$500,000",
-            "context": "Annual retained operator revenue; client subscription spend excluded",
-            "note": "45.0% net margin; $225,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual retained operator revenue; client subscription spend excluded",
-            "note": "58% net margin; $522,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Find Renewal Pressure Before Buying Outreach Volume",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with one buyer profile: organizations with 50–500 employees, "
-                    "a named operating or procurement owner, and a software decision "
-                    "expected within 120 days. Assemble 200 accounts from company "
-                    "websites, state business registries, public procurement calendars, "
-                    "SEC EDGAR filings, and referrals from bookkeepers or managed "
-                    "service providers. Record each source URL, observation date, "
-                    "business reason for contact, and confidence level in HubSpot "
-                    "or a controlled spreadsheet. A hiring advertisement mentioning "
-                    "Microsoft 365 suggests a product footprint; it does not establish "
-                    "seat count, renewal date, or purchasing authority. MX and SPF "
-                    "records can suggest messaging infrastructure, but gateways and "
-                    "outsourced mail services obscure the actual subscription stack. "
-                    "Treat DNS as a hypothesis generator, never as permission to "
-                    "access a tenant. Public acquisitions, office consolidations, "
-                    "procurement notices, and departures of procurement leaders are "
-                    "stronger conversation starters because they explain why ownership "
-                    "or demand may change. Verify the actual renewal window directly "
-                    "with the customer. A public bid deadline belongs to a published "
-                    "procurement process; it is not permission to bypass that process. "
-                    "Keep source collection limited to business-relevant information "
-                    "and avoid collecting personal identifiers that the deal does not require."
-                ),
-                (
-                    "Map opportunities to the twelve plays in the matrix, then "
-                    "choose the smallest authorized intervention. Microsoft CSP "
-                    "renewal placement needs an eligible distributor relationship "
-                    "and customer agreement; CPOR attribution is not a universal "
-                    "billing-transfer mechanism. Adobe VIP Marketplace opportunities "
-                    "depend on the applicable reseller, anniversary, and transfer "
-                    "rules. Zoom and UCaaS residuals require an executed supplier "
-                    "or master-agent schedule through an authorized route such as "
-                    "Telarus or Avant. GPO rebates require genuine membership and "
-                    "eligible purchases, not pooled seats across unrelated tenants. "
-                    "Shared-savings mandates need an agreed baseline before negotiation "
-                    "starts. For example, a documented $120,000 renewal reduced to "
-                    "$96,000 produces $24,000 annual savings; a 30% contingent fee "
-                    "produces $7,200 operator revenue. Exclude taxes, currency changes, "
-                    "and scope reductions unless the mandate explicitly defines "
-                    "their treatment. Where supplier compensation and savings fees "
-                    "coexist, disclose both and document any offset. Never present "
-                    "illustrative channel percentages as published vendor entitlements. "
-                    "Obtain the current written schedule and calculate after splits, "
-                    "eligibility exclusions, and reversals. If an authorized route "
-                    "fails, retain the audit engagement or refer the implementation "
-                    "to a qualified partner instead of inventing a transfer pathway."
-                ),
-                (
-                    "The mapped play multi_inbox_free_workspace_outbound_clusters "
-                    "requires a hard arithmetic and entitlement correction before "
-                    "use. At 300 mailboxes, 15–25 messages daily, and 22 sending "
-                    "days, theoretical volume is 99,000–165,000 messages monthly. "
-                    "Exceeding 150,000 therefore requires the upper end of that "
-                    "range; it says nothing about delivery or placement. At "
-                    "$6–$12 per seat, 300 retail seats would cost $1,800–$3,600 "
-                    "monthly before domains and administration. Microsoft developer "
-                    "subscriptions are for qualifying development activity, not an "
-                    "assumed subsidy for commercial prospecting. Partner benefits "
-                    "also require their actual permitted-use terms. Cloudflare Email "
-                    "Routing forwards inbound messages; it does not itself supply "
-                    "an outbound SMTP service. Use only expressly permitted sending "
-                    "accounts and relays, with accurate identity and authenticated "
-                    "domains. A two-to-three-domain tenant cap is an internal "
-                    "design choice, not proof of vendor permission. Catch-all "
-                    "SMTP behavior cannot verify every recipient. Remove tracking "
-                    "pixels, validate addresses through permitted methods, and "
-                    "suppress uncertain contacts. Keep standby infrastructure only "
-                    "for legitimate continuity, never to escape provider restrictions. "
-                    "The practical fallback is one branded domain, a small "
-                    "permission-aware account cohort, and a licensed service whose "
-                    "rules permit the intended outreach."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve Chapter-Mapped Plays: Observable Demand, Retained Unit Math, and Executable Fallbacks",
-                "headers": [
-                    "Mapped play and concrete buying situation",
-                    "Evidence required before presenting an offer",
-                    "Illustrative retained revenue or infrastructure math",
-                    "Risk boundary and practical fallback route",
-                ],
-                "rows": [
-                    [
-                        "Microsoft CSP renewal placement for documented subscription renewals",
-                        "Customer supplies current SKUs, commitment dates, and authorized signer",
-                        "$60,000 eligible annual spend times 8% retained spread equals $4,800",
-                        "Verify distributor terms; retain audit work if transfer cannot proceed",
-                    ],
-                    [
-                        "Adobe VIP Marketplace anniversary review for eligible customer memberships",
-                        "Customer provides membership information, anniversary date, and reseller history",
-                        "$40,000 eligible annual spend times 6% retained spread equals $2,400",
-                        "Confirm current transfer rules; negotiate incumbent renewal when transfer fails",
-                    ],
-                    [
-                        "Zoom master-agent placement for properly attributed new eligible subscriptions",
-                        "Supplier confirms opportunity registration, service eligibility, and payment schedule",
-                        "$2,000 eligible monthly charges times 10% retained residual equals $200 monthly",
-                        "Registration conflict triggers referral or audit-only service instead of reassignment",
-                    ],
-                    [
-                        "UCaaS renewal review for customers approaching documented carrier decisions",
-                        "Customer provides service inventory, termination terms, and eligible recurring charges",
-                        "$5,000 eligible monthly charges times 8% retained residual equals $400 monthly",
-                        "Exclude emergency-service and migration complexity until qualified implementers scope delivery",
-                    ],
-                    [
-                        "GPO membership enrollment for genuine independent purchasing organizations",
-                        "Executed membership agreement identifies eligible categories and administrative compensation",
-                        "$100,000 eligible annual purchases times 2% retained rebate equals $2,000",
-                        "Keep customer licenses separate; use ordinary negotiated purchasing if ineligible",
-                    ],
-                    [
-                        "GPO volume-bracket reconciliation for already eligible member purchases",
-                        "Written schedule confirms bracket calculation and treatment of previous purchases",
-                        "$200,000 eligible spend times one percentage-point improvement equals $2,000",
-                        "Apply prospective treatment unless written terms expressly permit retroactive calculation",
-                    ],
-                    [
-                        "Contingent renewal shared-savings audit for comparable software scope",
-                        "Signed baseline defines price, quantities, term, exclusions, and verification",
-                        "$24,000 verified annual savings times 30% contingent fee equals $7,200",
-                        "Use fixed-fee review when baseline disagreement prevents defensible attribution",
-                    ],
-                    [
-                        "Seat-rightsizing audit for customer-authorized utilization and license exports",
-                        "Customer confirms active users, service accounts, and removable paid seats",
-                        "Twenty seats times $30 monthly times twelve times 25% equals $1,800",
-                        "Book savings only after permitted reductions actually change payable charges",
-                    ],
-                    [
-                        "Acquisition overlap audit for separately contracted acquired business tenants",
-                        "Authorized buyer supplies both contracts and lawful consolidation requirements",
-                        "$40,000 verified duplicate annual costs removed times 25% equals $10,000",
-                        "Preserve tenant separation until contractual and technical migration requirements resolve",
-                    ],
-                    [
-                        "MSP referral partnership for underserved customer procurement requests",
-                        "Referral agreement records ownership, compensation split, and customer disclosure",
-                        "$8,000 earned operator fee less 20% referral share leaves $6,400",
-                        "Resolve principal-agent treatment and avoid conflicting undisclosed compensation arrangements",
-                    ],
-                    [
-                        "Inbound renewal-clinic audit sourced through an explicit buyer request",
-                        "Buyer submits renewal month and business contact before secure document exchange",
-                        "$20,000 verified annual savings times 35% contingent fee equals $7,000",
-                        "Offer limited paid diagnostics when no executable renewal event exists",
-                    ],
-                    [
-                        "multi_inbox_free_workspace_outbound_clusters evaluated as entitled infrastructure, not free production capacity",
-                        "Written service terms must permit actual prospecting and commercial mailbox use",
-                        "Three hundred inboxes times twenty-five sends times twenty-two days equals 165,000",
-                        "Replace subsidy assumptions and restriction-driven rotation with licensed, bounded outreach",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Capture Contractual Timing, Not Merely Product Footprints",
-                "body": (
-                    "The highest-value sourcing record combines a plausible demand "
-                    "signal with the contractual date that makes action possible."
-                ),
-                "items": [
-                    "Ask for the cancellation-notice deadline separately from the renewal date; the earlier date usually controls the usable sales window.",
-                    "Maintain separate fields for CPOR attribution, reseller relationship, delegated access, and billing ownership; one does not establish the others.",
-                    "Request the distributor's dated compensation schedule before quoting savings; store the eligible-charge definition alongside the percentage.",
-                    "Use a customer-supplied redacted invoice for initial qualification, then request narrower contract extracts rather than an unrestricted tenant export.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Score Executability Before Requesting a Signed Mandate",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use a 100-point scorecard to separate approachable accounts "
-                    "from executable opportunities. Allocate 20 points to renewal "
-                    "timing, 20 to buyer authority, 15 to baseline evidence, "
-                    "20 to the authorized commercial route, 15 to retained "
-                    "economics, and 10 to payment exposure. Score only documented "
-                    "facts; an attractive logo earns nothing. Advance accounts "
-                    "at 75 points only when authority, entitlement, and payment "
-                    "requirements are independently satisfied. A prospect with "
-                    "a renewal in 45 days but no contract access belongs "
-                    "in discovery, not in the proposal forecast. Conversely, "
-                    "an excellent customer renewing in eight months belongs "
-                    "in a dated nurture queue, not a forced immediate "
-                    "transfer. Use task reminders at 120, 90, and 60 "
-                    "days before the notice deadline, adjusting for the actual "
-                    "supplier process. Ask five opening questions: who signs, "
-                    "what renews, when notice is due, what scope must "
-                    "remain, and who receives supplier compensation today. These "
-                    "questions expose incumbent relationships without accusing anyone "
-                    "of overcharging. Record evidence references rather than "
-                    "pasting full contracts into general CRM notes. Restrict "
-                    "document access to the owner and the specialist actually "
-                    "responsible for that account's authorized assessment."
-                ),
-                (
-                    "Build the baseline from a dated invoice, order form, "
-                    "renewal quote, seat inventory, and any price-protection "
-                    "language. Reconcile annual commitments with monthly billing "
-                    "because payment frequency does not necessarily change "
-                    "the customer's obligation. Microsoft NCE opportunities are "
-                    "especially sensitive: verify the current cancellation and "
-                    "reduction rules for the exact subscription and transaction, "
-                    "then model exposure through the full enforceable term. "
-                    "Require prefunding or a documented payment arrangement "
-                    "appropriate to the exposure, with ACH or card authorization "
-                    "where used. Auto-debit can fail or be disputed; it "
-                    "is not equivalent to cash already collected. If customer "
-                    "credit cannot support the commitment, use an eligible "
-                    "direct-billing referral or an audit-only engagement. Do "
-                    "not fund a customer's annual obligation merely to "
-                    "win a thin spread. Separate list-price comparisons from "
-                    "actual savings: a promotional catalog discount does not "
-                    "prove improvement over the customer's executable renewal "
-                    "quote. Normalize currency, term, support, quantities, and "
-                    "payment dates. Retain the original baseline and a "
-                    "versioned adjustment log. Obtain written agreement on "
-                    "seat reductions, product substitutions, and implementation "
-                    "costs before including those items in the savings calculation."
-                ),
-                (
-                    "Turn qualified demand into a narrowly scoped mandate "
-                    "that specifies the covered products, authorized contacts, "
-                    "baseline, savings percentage, measurement period, and "
-                    "payment trigger. A 30% fee against $24,000 verified "
-                    "annual savings yields $7,200, but collection timing "
-                    "must follow the contract rather than a sales "
-                    "representative's forecast. Define whether the fee becomes "
-                    "payable on executed renewal, realized invoice reductions, "
-                    "or another measurable event. Include a dispute "
-                    "reconciliation procedure and a deadline for delivering "
-                    "supporting invoices. Document channel compensation and "
-                    "whether it reduces the contingent charge. Obtain "
-                    "separate authority for distributor submissions; permission "
-                    "to review an invoice does not authorize a "
-                    "license transfer or tenant administration. Request "
-                    "read-only exports wherever they suffice. Never ask "
-                    "the buyer to email administrator credentials. An "
-                    "incumbent reseller objection deserves a concrete response: "
-                    "the audit can proceed without moving billing, and "
-                    "a transfer occurs only when documented economics "
-                    "justify disruption. When the customer refuses to "
-                    "share prices, offer a redacted baseline worksheet "
-                    "or a limited fixed-fee review instead of inventing "
-                    "a benchmark. Close only the service that the "
-                    "available evidence supports; attach later implementation "
-                    "work through a separately priced statement of work."
-                ),
-            ],
-            "table": {
-                "caption": "One-Hundred-Point Qualification Scorecard With Evidence-Based Advancement",
-                "headers": [
-                    "Qualification dimension and maximum available points",
-                    "Full-credit evidence required from the account",
-                    "Partial-credit treatment for incomplete deal evidence",
-                    "Operating response when evidence remains insufficient",
-                ],
-                "rows": [
-                    [
-                        "Renewal timing contributes twenty possible qualification points",
-                        "Written notice deadline and executable renewal event fall within ninety days",
-                        "Award ten for verified events between ninety-one and 180 days",
-                        "Schedule dated nurture tasks rather than forecasting immediate close revenue",
-                    ],
-                    [
-                        "Buyer authority contributes twenty possible qualification points",
-                        "Named signer confirms authority and identifies accountable procurement owner",
-                        "Award ten when a sponsor introduces the documented purchasing owner",
-                        "Require signer confirmation before sharing a binding commercial proposal",
-                    ],
-                    [
-                        "Baseline evidence contributes fifteen possible qualification points",
-                        "Invoice, current quantities, renewal quote, and comparable scope reconcile",
-                        "Award seven when invoices exist but renewal pricing remains pending",
-                        "Keep discovery open and exclude unsupported savings from projected fees",
-                    ],
-                    [
-                        "Authorized commercial route contributes twenty possible qualification points",
-                        "Current partner agreement and transaction eligibility support the proposed action",
-                        "Award ten for audit-only authority without confirmed channel implementation",
-                        "Perform authorized audit work while withholding unsupported transfer promises",
-                    ],
-                    [
-                        "Retained unit economics contribute fifteen possible qualification points",
-                        "Documented expected fee exceeds acquisition and delivery cost threshold",
-                        "Award seven where sensitivities remain positive but compensation needs confirmation",
-                        "Reprice scope or decline economics that depend on unearned rebates",
-                    ],
-                    [
-                        "Payment exposure contributes ten possible qualification points",
-                        "Funding covers commitment exposure and collection terms are explicitly accepted",
-                        "Award five for fee-only work with acceptable documented payment terms",
-                        "Do not originate unfunded annual commitments for an unqualified payer",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Checks Before a Quote Becomes a Commitment",
-                "body": (
-                    "A high numerical score cannot compensate for missing "
-                    "authority, unsupported entitlement, or unfunded obligations."
-                ),
-                "items": [
-                    "Verify the signer, covered customer entity, permitted data access, and separate authorization for each distributor or supplier submission.",
-                    "Obtain the current CSP, VIP Marketplace, master-agent, or GPO terms supporting the precise transaction and compensation being proposed.",
-                    "Reconcile the same-scope baseline, contingent fee, supplier compensation, referral split, and customer-facing disclosure in one worksheet.",
-                    "Confirm available funding, enforceable collection terms, cancellation exposure, and a viable audit-only fallback before accepting annual obligations.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Run a Bounded Multi-Channel Cadence That Earns Documents",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Run outreach as account research followed by a "
-                    "specific invitation, not an inbox-count competition. "
-                    "The initial message should identify one observable "
-                    "business event, one relevant purchasing question, "
-                    "and one small next step. For example: "
-                    "'Your procurement calendar lists a collaboration-software "
-                    "renewal this quarter. We compare the executable "
-                    "renewal quote with authorized channel options while "
-                    "keeping support requirements fixed. Would the owner "
-                    "of that renewal want a fifteen-minute scope "
-                    "check?' Do not claim access to private "
-                    "pricing or assert that DNS proves the "
-                    "company is overspending. Send from an identifiable "
-                    "business address with accurate headers, a truthful "
-                    "subject, a valid postal address, and a "
-                    "working opt-out. CAN-SPAM applies to commercial "
-                    "business email; follow 15 U.S.C. § 7704, "
-                    "including the ten-business-day opt-out deadline and "
-                    "applicable advertising identification. Suppress immediately "
-                    "operationally rather than waiting for the "
-                    "statutory maximum. Authenticate mail using SPF, "
-                    "DKIM, and DMARC, and follow the provider's "
-                    "acceptable-use rules. Strip tracking pixels and "
-                    "measure replies, meetings, and signed mandates "
-                    "instead of treating unreliable open rates as "
-                    "buyer intent. Never treat an email opt-out "
-                    "as an invitation to pursue the same "
-                    "person through another channel."
-                ),
-                (
-                    "Use six touches over eighteen business days "
-                    "only where each channel and contact are "
-                    "appropriate. Begin with a researched email, "
-                    "follow with a manual business call, offer "
-                    "a useful comparison worksheet, and finish "
-                    "with a close-the-loop message. Stop immediately "
-                    "when asked, when the address is invalid, "
-                    "or when an applicable restriction prevents "
-                    "further contact. Calls and texts require "
-                    "separate analysis under 47 U.S.C. § 227 "
-                    "and 47 CFR § 64.1200; a business "
-                    "title does not remove protections associated "
-                    "with a wireless number or prohibited "
-                    "calling method. Do not add automated "
-                    "texts or prerecorded calls to this "
-                    "cadence without establishing the applicable "
-                    "permission and requirements. The FTC's "
-                    "Telemarketing Sales Rule contains important "
-                    "business-call distinctions and prohibits covered "
-                    "misrepresentations; avoid a blanket business-exemption "
-                    "assumption. Maintain channel-specific suppression "
-                    "and a broader do-not-contact preference "
-                    "when requested. Use HubSpot tasks and "
-                    "a shared suppression register instead "
-                    "of uncontrolled contractor lists. Check "
-                    "state calling restrictions before geographic "
-                    "expansion. For a small first-deal campaign, "
-                    "careful manual research and limited direct "
-                    "contact provide better learning than adding "
-                    "an expensive automation stack before the "
-                    "offer has demonstrated relevance."
-                ),
-                (
-                    "Build inbound alongside outbound with a "
-                    "renewal-clinic page, a baseline worksheet, "
-                    "and one referral conversation each working "
-                    "day. Ask MSPs, fractional technology leaders, "
-                    "and bookkeeping firms for introductions to "
-                    "customers approaching a genuine decision, "
-                    "not exports of their customer databases. "
-                    "Publish a worked example using explicitly "
-                    "illustrative numbers and a defined same-scope "
-                    "comparison. The form should request business "
-                    "contact, product family, and renewal month; "
-                    "move contracts into a controlled upload "
-                    "channel after qualification. Handle objections "
-                    "with bounded alternatives. 'Our reseller "
-                    "already handles this' becomes an audit "
-                    "that preserves the reseller unless a "
-                    "better authorized outcome exists. 'We cannot "
-                    "change vendors' becomes a like-for-like "
-                    "renewal review. 'Your percentage is too "
-                    "high' becomes a transparent fee cap "
-                    "or fixed-scope diagnostic, not a hidden "
-                    "supplier payment. 'Send your cheapest "
-                    "price' becomes a request for quantities, "
-                    "term, support requirements, and the "
-                    "current executable quote. 'No time' "
-                    "becomes a short checklist and a "
-                    "scheduled date before notice expires. "
-                    "Record the objection category and "
-                    "next agreed action. A polite rejection "
-                    "without a future buying event belongs "
-                    "in closed records, not an endless "
-                    "automated follow-up sequence."
-                ),
-            ],
-            "table": {
-                "caption": "Eighteen-Business-Day Cadence With Useful Assets and Explicit Stop Conditions",
-                "headers": [
-                    "Timing and appropriate authorized contact channel",
-                    "Specific message or asset to deliver",
-                    "Evidence that moves the opportunity forward",
-                    "Objection response and mandatory stopping behavior",
-                ],
-                "rows": [
-                    [
-                        "Business day one uses a researched commercial email",
-                        "Connect a sourced business event to one renewal ownership question",
-                        "Buyer identifies the responsible owner or confirms a relevant deadline",
-                        "Correct wrong-contact records and immediately honor any opt-out request",
-                    ],
-                    [
-                        "Business day four permits an appropriate manual business call",
-                        "Ask who manages the identified renewal without claiming private account knowledge",
-                        "Authorized contact confirms timing and permits the next useful exchange",
-                        "Respect calling restrictions and stop when further contact is refused",
-                    ],
-                    [
-                        "Business day seven offers a concise baseline comparison worksheet",
-                        "Show fields for quantities, term, support, current quote, and exclusions",
-                        "Buyer returns enough evidence to assess a same-scope comparison",
-                        "Offer redaction when price sensitivity prevents sharing a full invoice",
-                    ],
-                    [
-                        "Business day ten uses a requested meeting or permitted follow-up",
-                        "Explain audit-only service alongside any separately authorized channel option",
-                        "Buyer confirms scope, authority, and acceptable supplier compensation treatment",
-                        "Preserve incumbent reseller when switching creates more disruption than value",
-                    ],
-                    [
-                        "Business day fourteen delivers a scoped assessment where evidence supports it",
-                        "Present baseline arithmetic, compensation disclosure, milestones, and payment trigger",
-                        "Signer resolves objections and identifies the intended mandate execution date",
-                        "Replace vague discount demands with comparable quantities and contractual terms",
-                    ],
-                    [
-                        "Business day eighteen closes the loop without manufactured urgency",
-                        "Summarize the unresolved decision and offer a dated future review",
-                        "Buyer signs, selects a future event, or explicitly declines pursuit",
-                        "Close inactive pursuit and retain only necessary suppression information",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Build the evidence-backed account cohort",
-                    "action": "Research 200 accounts in one vertical and one executable product family.",
-                    "detail": (
-                        "Capture public source, event date, plausible renewal "
-                        "question, business contact provenance, and exclusion "
-                        "reason where the account does not fit."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Apply channel and account eligibility",
-                    "action": "Validate relevance, contact permissions where required, suppression status, and provider rules.",
-                    "detail": (
-                        "Use an identifiable sending domain, permitted business "
-                        "contact methods, and immediate suppression. Treat "
-                        "catch-all addresses as uncertain rather than verified."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Convert the reply into a bounded assessment",
-                    "action": "Collect redacted evidence and complete the 100-point qualification worksheet.",
-                    "detail": (
-                        "Require separate confirmation of signer authority, "
-                        "authorized route, comparable baseline, and payment "
-                        "exposure before presenting executable economics."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Execute the mandate and verify the first result",
-                    "action": "Sign the scoped agreement, obtain transaction-specific authority, and reconcile the first payable event.",
-                    "detail": (
-                        "Record signed mandate, supplier acceptance, customer "
-                        "benefit, fee recognition, cash receipt, and possible "
-                        "clawback exposure as separate milestones."
-                    ),
-                },
-            ],
-        },
-        {
-            "heading": "4. Convert the First Cohort and Reconcile Every Revenue Dollar",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Treat the initial funnel as a testable "
-                    "planning model rather than an industry "
-                    "benchmark. From 200 researched accounts, "
-                    "suppose 120 meet the signal definition, "
-                    "60 meet timing and contact requirements, "
-                    "24 produce substantive two-way conversations, "
-                    "12 supply sufficient evidence and qualify, "
-                    "and six sign mandates. That is "
-                    "60%, 50%, 40%, 50%, and 50% "
-                    "conversion between successive stages, or "
-                    "3% from raw account to signed "
-                    "mandate. The 40% conversation assumption "
-                    "is ambitious for purely cold outreach "
-                    "and requires testing; warm introductions "
-                    "must be reported separately. Three "
-                    "wins from 200 accounts would be "
-                    "1.5%; ten would be 5%. Define "
-                    "a commercial win explicitly as a "
-                    "signed mandate, then track accepted "
-                    "implementation and collected revenue as "
-                    "different outcomes. During weeks one "
-                    "and two, build evidence and obtain "
-                    "partner schedules. During weeks three "
-                    "through six, run discovery and "
-                    "baseline reviews. During weeks seven "
-                    "through twelve, close executable mandates "
-                    "and reconcile supplier acceptance. Some "
-                    "renewal calendars will exceed this "
-                    "window. Diagnose the stage that "
-                    "fails before increasing volume: poor "
-                    "conversations suggest relevance problems; "
-                    "poor document return suggests trust "
-                    "or effort problems; poor signatures "
-                    "suggest weak economics or unclear "
-                    "decision authority."
-                ),
-                (
-                    "Keep cohort economics separate from the "
-                    "canonical annual scenarios. If six "
-                    "mandates each produce a $7,200 "
-                    "earned fee, the cohort yields "
-                    "$43,200 retained fee revenue before "
-                    "delivery and acquisition costs. If "
-                    "each customer instead produces only "
-                    "half the modeled savings, revenue "
-                    "falls to $21,600; signatures alone "
-                    "do not preserve the forecast. "
-                    "At $150 acquisition cost per "
-                    "signed mandate and $1,200 direct "
-                    "delivery cost per mandate, six "
-                    "completed engagements consume $8,100 "
-                    "and leave $35,100 before shared "
-                    "overhead and other costs in "
-                    "the full-savings illustration. These "
-                    "are sensitivity assumptions, not "
-                    "the volume scorecard. Canonical "
-                    "Conservative economics are $100,000 "
-                    "revenue less $68,000 total costs, "
-                    "yielding $32,000 owner profit "
-                    "at 32%. Base is $500,000 "
-                    "less $275,000, yielding $225,000 "
-                    "at 45.0%. Scaled is $900,000 "
-                    "less $378,000, yielding $522,000 "
-                    "at 58%. Preserve staffing of "
-                    "1 FT plus 3 contractors "
-                    "for Conservative and Base, "
-                    "and 2 FT plus 4 "
-                    "contractors for Scaled. The "
-                    "stated $1,500–$9,500 monthly opex "
-                    "range is not a substitute "
-                    "for each scenario's full "
-                    "annual cost base. Do not "
-                    "backsolve it into contradictory "
-                    "owner-profit figures."
-                ),
-                (
-                    "The scorecard revenue basis is retained "
-                    "operator compensation, despite its gross-revenue "
-                    "label; customer software billings are "
-                    "excluded. For an agency transaction "
-                    "with $100,000 underlying subscription "
-                    "spend and an 8% retained "
-                    "share, use $8,000 operator revenue, "
-                    "not $100,000. Apply the retained "
-                    "share once, not again to "
-                    "already-net revenue. Assess principal "
-                    "versus agent presentation under "
-                    "ASC 606 from the actual "
-                    "control and contractual facts; "
-                    "net presentation is not an "
-                    "elective cosmetic choice. Reconcile "
-                    "Pax8, Ingram, or master-agent "
-                    "statements against accepted customer "
-                    "orders, eligible charges, compensation "
-                    "splits, reversals, and cash "
-                    "receipts. Do not assume a "
-                    "single CPOR or VIP sync "
-                    "covers every distributor workflow. "
-                    "Use supported exports or "
-                    "documented interfaces and test "
-                    "the first transaction manually. "
-                    "Track rebate recognition separately "
-                    "from eventual payment, especially "
-                    "where volume brackets or "
-                    "customer persistence affect entitlement. "
-                    "Maintain a clawback register "
-                    "with contractual triggers and "
-                    "expiry dates. Expand sourcing "
-                    "only after one complete "
-                    "cycle demonstrates documented demand, "
-                    "authorized execution, correct fee "
-                    "calculation, and collection. The "
-                    "first ten wins should "
-                    "produce a reusable evidence "
-                    "trail and a narrower "
-                    "target profile, not merely "
-                    "a larger mailing list."
-                ),
-            ],
-            "table": {
-                "caption": "Illustrative First-Cohort Funnel: Account Counts, Conversion Denominators, and Corrective Actions",
-                "headers": [
-                    "Pipeline stage and modeled account count",
-                    "Conversion calculation with an explicit denominator",
-                    "Evidence required before counting the account",
-                    "Corrective action when the stage underperforms",
-                ],
-                "rows": [
-                    [
-                        "Research inventory begins with two hundred distinct business accounts",
-                        "Two hundred accounts establish the full starting cohort denominator",
-                        "Each account has a dated public source and a relevant business hypothesis",
-                        "Remove duplicates and irrelevant entities before interpreting response performance",
-                    ],
-                    [
-                        "Signal-qualified inventory contains one hundred twenty relevant business accounts",
-                        "One hundred twenty divided by two hundred equals sixty percent",
-                        "A sourced event supports a plausible product or renewal conversation",
-                        "Tighten source selection when product signals fail direct customer verification",
-                    ],
-                    [
-                        "Executable outreach cohort contains sixty appropriately contactable timed accounts",
-                        "Sixty divided by one hundred twenty equals fifty percent",
-                        "Timing, contact provenance, channel rules, and suppression checks support outreach",
-                        "Improve renewal discovery rather than contacting excluded accounts through substitutes",
-                    ],
-                    [
-                        "Substantive conversation stage contains twenty-four responsive qualified business contacts",
-                        "Twenty-four divided by sixty equals forty percent between these stages",
-                        "A two-way exchange establishes a real purchasing question or responsible owner",
-                        "Separate referrals from cold accounts and revise relevance before expanding volume",
-                    ],
-                    [
-                        "Evidence-qualified assessment stage contains twelve sufficiently documented customer opportunities",
-                        "Twelve divided by twenty-four equals fifty percent between these stages",
-                        "Baseline evidence and qualification score support a bounded commercial proposal",
-                        "Reduce document burden and explain narrow access requirements when buyers hesitate",
-                    ],
-                    [
-                        "Signed mandate stage contains six executed customer service engagements",
-                        "Six divided by twelve equals fifty percent; six divided by two hundred equals three percent",
-                        "Authorized signer executes scope, compensation, baseline, and measurable payment terms",
-                        "Inspect economics and decision ownership while reporting collections separately from signatures",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The best lead is a documented renewal decision you can execute profitably, not an address you can send to.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Build a 200-account cohort with dated public signals, a named product hypothesis, and separate fields for renewal and cancellation-notice deadlines.",
-        "Confirm current distributor, master-agent, and GPO terms; distinguish attribution, reseller status, billing control, and customer access authority.",
-        "Score each opportunity out of 100 and require documented authority, permitted execution, comparable baseline, and funded exposure before commitment.",
-        "Run the bounded eighteen-business-day cadence using identifiable business channels, accurate claims, channel-specific restrictions, and immediate suppression.",
-        "Execute a narrowly scoped mandate with a 25%–35% savings fee where agreed, disclosed supplier compensation, and a measurable collection trigger.",
-        "Reconcile the first accepted transaction and cash receipt to retained operator revenue, then compare actual stage conversions with the six-mandate planning model.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Commercial email requirements include accurate transmission "
-                "information, nondeceptive subjects, required identification "
-                "and address information, an opt-out mechanism, and timely "
-                "honoring of opt-out requests."
-            ),
-        },
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Evaluate the number called, calling technology, message "
-                "type, and applicable permission before adding telephone "
-                "or text outreach; business context alone does not resolve "
-                "every restriction."
-            ),
-        },
-        {
-            "title": "47 CFR § 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": (
-                "Operational rules address covered calls and texts, "
-                "identification, do-not-call procedures, consent, and "
-                "revocation requirements relevant to channel design."
-            ),
-        },
-        {
-            "title": "16 CFR § 310.3 — Deceptive telemarketing acts or practices",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310/section-310.3",
-            "relevance": (
-                "Control representations about savings, supplier relationships, "
-                "fees, and service performance; covered business telemarketing "
-                "must not rely on false or misleading claims."
-            ),
-        },
-        {
-            "title": "16 CFR § 310.6 — Exemptions",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310/section-310.6",
-            "relevance": (
-                "Check the exact scope and exceptions of business-call "
-                "treatment rather than treating all business outreach "
-                "as outside the Telemarketing Sales Rule."
-            ),
-        },
-        {
-            "title": "18 U.S.C. § 1030 — Fraud and related activity in connection with computers",
-            "url": "https://www.law.cornell.edu/uscode/text/18/1030",
-            "relevance": (
-                "Keep tenant access within customer authorization; public "
-                "DNS observations and invoice-review permission do not "
-                "authorize administrative access to customer systems."
-            ),
-        },
-    ],
-}
+CHAPTER_6 = {'id': 'Q6',
+ 'chapter_id': 'Q6',
+ 'chapter_number': 6,
+ 'question_number': 6,
+ 'slug': 'ucaas-ccaas-resale-zoom-ringcentral-partner-channel',
+ 'question_prompt': 'Which UCaaS and CCaaS platforms are partners selling, and how do partner programs, '
+                    'pricing, integrations, and compliance shape those deals?',
+ 'kicker': 'Q6 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'UCaaS and CCaaS Resale: Zoom, RingCentral, and the Partner Channel Opportunity',
+ 'subtitle': 'RingCentral IGNITE and Zoom channel programs, agentic AI in contact centers, the Gartner '
+             'UCaaS Magic Quadrant, Zoom Phone demos, pricing, onboarding, and compliance, CRM '
+             'integrations for resellers, AI copilots across Microsoft, Zoom, and Webex, and Zoom Phone vs '
+             'RingCentral comparisons',
+ 'layout_template': 'step_by_step_blueprint',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners selling UCaaS and CCaaS through the partner channel converge on one '
+                      'play: the broker or advisor owns the deal, the vendor pays the fee, and the '
+                      "customer pays nothing for representation. AeroCom's Mike Smith prices Zoom Phone "
+                      'Unlimited below $10 against a $15 list and Metered near $5 against $10, while '
+                      "Telarus partners chase a 15x SPIFF on RingCX and RingCentral's Channel Harmony "
+                      'limits conflict. Zoom executives size the channel TAM above $200B and push '
+                      'dedicated practices, AI voicebots, and bundled security. Contact center features '
+                      'are sliding into the base UCaaS license, opening $20-$25 add-on upsells. '
+                      "Disagreements are sharp: Brian Nichols attacks RingCentral's Trustpilot and BBB "
+                      'record, analysts call Zoom Contact Center a 1.0 product, and full contact center '
+                      'pricing is quoted anywhere from $69 to $149 per agent.',
+ 'key_metrics': [{'label': 'Zoom Phone Unlimited street price',
+                  'metric': 'Zoom Phone Unlimited street price',
+                  'value': 'Below $10/user/month (sometimes $8-$9) against a $15 list price',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Mike Smith of AeroCom reports what brokered clients pay for the most popular '
+                             'Zoom Phone tier versus list.',
+                  'source': 'AeroCom Inc ([viRtp8k9GAo @ 00:03:12])'},
+                 {'label': 'RingCX partner SPIFF',
+                  'metric': 'RingCX partner SPIFF',
+                  'value': '15x SPIFF plus increased residuals through year-end',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Brandon Thomas of RingCentral describes the RingCX partner incentive as a '
+                             '"crazy amount of money" on the Telarus channel.',
+                  'source': 'Telarus ([8ge4I4KL5kQ @ 00:10:59])'},
+                 {'label': 'Zoom channel total addressable market',
+                  'metric': 'Zoom channel total addressable market',
+                  'value': '$200B+ by end of decade',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Zoom Head of Global Channel Mark Jenkins sizes the partner opportunity and '
+                             'urges partners to build a dedicated Zoom practice.',
+                  'source': 'UC Today News ([dqTXnYdAKdQ @ 00:10:09])'},
+                 {'label': 'Customer Engagement Pack vs full contact center',
+                  'metric': 'Customer Engagement Pack vs full contact center',
+                  'value': '$20/supervisor/month vs $100+/agent/month',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'AeroCom demo positions the queue-analytics add-on as a cheap alternative to '
+                             'full contact center licensing.',
+                  'source': 'AeroCom Inc ([auYElw4sYi8 @ 00:13:34])'}],
+ 'sections': [{'title': 'The Practitioner Consensus',
+               'paragraphs': ['The channel consensus starts with who pays the broker. AeroCom president '
+                              'Mike Smith tells buyers flatly, "Don\'t call Zoom directly," and explains '
+                              'that the vendor pays the fee, so representation costs the customer nothing '
+                              '[viRtp8k9GAo @ 00:00:38]. The AeroCom Zoom Phone review repeats the pitch: '
+                              'better-than-direct pricing for organizations of 100 or more users, with the '
+                              'provider covering the broker fee and the customer paying $0 [auYElw4sYi8 @ '
+                              '00:31:55]. RingCentral runs the same logic through the Telarus channel. '
+                              'Brandon Thomas, RingCentral AVP of Partner Success, told Telarus CCO '
+                              'Richard Murray that customers with a partner attached stay with RingCentral '
+                              'longer [8ge4I4KL5kQ @ 00:04:58], and named limiting channel conflict '
+                              "through Channel Harmony as the vendor's number one priority [8ge4I4KL5kQ @ "
+                              "00:05:28]. Zoom's channel chief Mark Jenkins pushes the same direction at "
+                              'larger scale, sizing the total addressable market at more than $200 billion '
+                              'by the end of the decade and urging partners to build a dedicated Zoom '
+                              'practice instead of treating Zoom as a side line [dqTXnYdAKdQ @ 00:10:23]. '
+                              'Jenkins also counts five to seven or more partners touching a single '
+                              'customer, from consultants and solution providers to integrators and MSPs '
+                              '[dqTXnYdAKdQ @ 00:10:58]. Across vendors the operator takeaway is '
+                              'identical: the partner owns the relationship, the vendor funds the '
+                              'commission, and customer stickiness is the asset being sold.',
+                              'The second point of agreement is that UCaaS and CCaaS are collapsing into '
+                              "one sale. UC Today's David Dungay observed that buying the two together is "
+                              'spreading down to mid-market and SMB accounts [dqTXnYdAKdQ @ 00:04:27], and '
+                              'Zoom CX chief Chris Moresy told Telarus that CCaaS, CRM, ticketing, '
+                              'hyperscalers, UC and CC are converging [-0tioUlVICE @ 00:10:16]. Moresy '
+                              "added that Zoom's contact center has passed 1,500 customers, including "
+                              'first-time Zoom buyers who purchase contact center only [-0tioUlVICE @ '
+                              "00:09:47]. AeroCom's Mike Smith shows the mechanism on the product side: "
+                              'queue login and logout, mandatory logout reason codes, and callback in '
+                              'queue have moved into the base Zoom Phone license [H1SvYMYWK1o @ 00:03:33], '
+                              'while a full contact center seat still runs $70 to $80 or more per user '
+                              '[H1SvYMYWK1o @ 00:03:10]. On RingCentral, Brandon Thomas describes RingCX '
+                              'as out-of-the-box and easier to implement, with WFM integrations, analytics '
+                              'and conversational AI, and a sweet spot of mid-market and below '
+                              '[8ge4I4KL5kQ @ 00:11:33]. Thomas also reports partners already closing '
+                              'RingCX deals in the last month by pivoting UC sales that carried complex '
+                              'analytics requirements [8ge4I4KL5kQ @ 00:12:58]. For a reseller, the phone '
+                              'deal is now also a light contact center deal, and every UC conversation is '
+                              'a doorway into a CCaaS seat.',
+                              'The baseline prerequisites are just as consistent. VoxFlo opens with a '
+                              'blunt observation: CRM integration comes up early in every UCaaS and CCaaS '
+                              'sale, and without it deals stall, go to a competitor, or require a bespoke '
+                              'build costing thousands [Zbk_QOoXQ_M @ 00:00:01]. VoxFlo adds that 79% of '
+                              'opportunity data never reaches the CRM and 45% of CRM data is not AI-ready '
+                              "[Zbk_QOoXQ_M @ 00:00:25]. Zoom's Mark Jenkins lists the skills a partner "
+                              'practice needs: technical depth, consultative selling, support and project '
+                              'management, with named gaps in cloud integration, security and compliance, '
+                              "and data analytics [dqTXnYdAKdQ @ 00:14:27]. Jenkins points to Zoom's "
+                              'self-paced training, UCaaS and CCaaS advisors, boot camps, and '
+                              'accreditations up more than 300% year over year to close those gaps '
+                              '[dqTXnYdAKdQ @ 00:16:05]. Compliance is the hidden deal-killer in regulated '
+                              "accounts. Theta Lake's Anthony Robinson told Zoom architect Patrick Kelly "
+                              'that regulated customers switch off team chat, meeting chat and recordings, '
+                              'pushing users into other tools and wasting licenses they already pay for '
+                              '[CHFSW3MiXcU @ 00:03:53]. Partners who lack depth can borrow it: Richard '
+                              'Murray notes Telarus engineers and solution architects can overlay on deals '
+                              '[8ge4I4KL5kQ @ 00:09:08]. The prerequisite stack is CRM sync, compliance '
+                              'capture, and engineering backup before the first quote goes out.'],
+               'table': {'caption': 'Where UCaaS and CCaaS channel practitioners agree',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Vendor-paid broker fee model for Zoom Phone buyers',
+                                   'Mike Smith says vendors pay the fee and buyers should never call Zoom '
+                                   'directly',
+                                   'Lead every pitch with zero-cost representation and better-than-direct '
+                                   'pricing for buyers',
+                                   'AeroCom Inc ([viRtp8k9GAo @ 00:00:38])'],
+                                  ['Partner-attached RingCentral customers stay longer than unattached '
+                                   'ones',
+                                   'Brandon Thomas says RingCentral customers with a partner attached stay '
+                                   'longer',
+                                   'Sell retention value to the vendor and lean on Channel Harmony '
+                                   'protection',
+                                   'Telarus ([8ge4I4KL5kQ @ 00:04:58])'],
+                                  ['Dedicated vendor practice beats treating Zoom as a side line',
+                                   'Mark Jenkins sizes the Zoom channel TAM above $200B by end of decade',
+                                   'Build a focused Zoom practice with technical, sales, support, and '
+                                   'project skills',
+                                   'UC Today News ([dqTXnYdAKdQ @ 00:10:23])'],
+                                  ['UCaaS and CCaaS increasingly bought together in smaller accounts',
+                                   'David Dungay sees combined buying spreading into mid-market and SMB '
+                                   'accounts',
+                                   'Quote phone and contact center together instead of as separate '
+                                   'projects',
+                                   'UC Today News ([dqTXnYdAKdQ @ 00:04:27])'],
+                                  ['Contact center features are entering the base UCaaS license',
+                                   'Queue login, logout reason codes, and queue callback now ship in base '
+                                   'Zoom Phone',
+                                   'Use base-license queue features to win light contact center buyers '
+                                   'cheaply',
+                                   'AeroCom Inc ([H1SvYMYWK1o @ 00:03:33])'],
+                                  ['CRM integration decides UCaaS and CCaaS deals very early',
+                                   'VoxFlo says missing CRM integration stalls deals or forces builds '
+                                   'costing thousands',
+                                   'Confirm CRM sync before quoting and revisit deals previously lost on '
+                                   'integration',
+                                   'WeAreVoxFlo ([Zbk_QOoXQ_M @ 00:00:01])'],
+                                  ['Compliance capture unlocks regulated accounts that disable Zoom '
+                                   'features',
+                                   'Regulated customers disable chat and recordings, wasting licenses they '
+                                   'already pay for',
+                                   'Pair Zoom with Theta Lake capture so regulated buyers can switch '
+                                   'features back on',
+                                   'Tattooed Nerd ([CHFSW3MiXcU @ 00:03:53])']]}},
+              {'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["AeroCom's Mike Smith gives the most granular Zoom Phone price sheet. Phone "
+                              'Unlimited, the most popular tier, lists at $15 per user per month, and '
+                              "Smith's clients land below $10, sometimes at $8 to $9 [viRtp8k9GAo @ "
+                              '00:03:12]. Pro Plus lists at $18.32 with clients paying around $14, and '
+                              'Business Plus lists at $22.49 with clients near $16 [viRtp8k9GAo @ '
+                              '00:02:37]. Metered lists at $10 per user or device, comes in around $5, and '
+                              'bills every outbound minute because it includes no usage [viRtp8k9GAo @ '
+                              "00:04:29]. Smith's 2026 update notes the base price climbed from $15 to "
+                              '$16, though they claim clients pay far less [H1SvYMYWK1o @ 00:01:52]. The '
+                              'fee structure is the second weapon. Zoom charges no admin or 911 fee, while '
+                              'competitors charge roughly $4 plus $1, or $5 per user per month '
+                              '[viRtp8k9GAo @ 00:05:04]. The AeroCom demo states it directly: "Zoom is $5 '
+                              'less per month per user than a lot of their competition" [auYElw4sYi8 @ '
+                              '00:22:49]. Idle DIDs list at $5 a month and are often negotiated to about '
+                              '$1 [viRtp8k9GAo @ 00:08:22], toll-free numbers run $5 per month plus 3.7 '
+                              'cents per inbound minute with high-volume users reaching 1.5 to 2 cents, '
+                              'and international is billed per country at roughly $20 a month typical '
+                              'spend [viRtp8k9GAo @ 00:09:17].',
+                              'The upsell ladder sits between the phone seat and a full contact center. '
+                              'Smith lists Zoom Contact Center at $69, $99 or $149 per agent per month, '
+                              'with discounts of about 25% common [viRtp8k9GAo @ 00:06:12]. Below that '
+                              'tier, the Power Pack at $25 per number per month delivers queue analytics '
+                              'without contact center licenses and enables SMS on the main number '
+                              '[viRtp8k9GAo @ 00:07:07]. In the AeroCom demo the add-on, since renamed the '
+                              'Customer Engagement Pack [H1SvYMYWK1o @ 00:12:24], is pitched at $20 per '
+                              'supervisor per month against $100 or more per agent for a full contact '
+                              'center: "it\'s only $20 per month as an add-on, and it gives you all that '
+                              'insight, real-time analytics" [auYElw4sYi8 @ 00:13:34]. Revenue Accelerator '
+                              'is the AI upsell Smith calls "the biggest thing," with talk-to-listen '
+                              'ratio, talk speed, longest spiel and filler-word tracking against custom '
+                              'thresholds such as 50/50 or 85/15 [H1SvYMYWK1o @ 00:05:24]. On RingCentral, '
+                              'the money sits in IGNITE and RingCX. Thomas says partners wanted to own the '
+                              'sale and asked for speed first, so RingCentral strengthened quoting tools '
+                              'and matched compensation to the work [8ge4I4KL5kQ @ 00:07:33]. RingCX '
+                              'carries a 15x SPIFF plus increased residuals through year-end, which Thomas '
+                              'called a "crazy amount of money" [8ge4I4KL5kQ @ 00:10:59].',
+                              'Execution comes down to a few repeatable plays. The AeroCom demo describes '
+                              'contract buyouts in which Zoom gives 12 to 15 months of free service, '
+                              '"within reason," to pull customers off existing agreements [auYElw4sYi8 @ '
+                              '00:23:27]. For Microsoft shops, Thomas says RingCentral has shifted from '
+                              'replacing Teams to an additive sale through an embedded dialer or direct '
+                              'routing [8ge4I4KL5kQ @ 00:15:08], with no double licensing required '
+                              "[8ge4I4KL5kQ @ 00:16:51]. Murray contrasts RingCentral's five 9s with Teams "
+                              'at "three9," and Thomas affirms it [8ge4I4KL5kQ @ 00:17:07]. CRM '
+                              'integration is outsourced rather than built. VoxFlo supports more than 300 '
+                              'CRMs "with no bespoke build and no upfront cost," runs live with '
+                              'RingCentral and Zoom Phone, and is white-label [Zbk_QOoXQ_M @ 00:00:47]. '
+                              'Its go-to-market script targets recruitment, real estate, legal and '
+                              'financial services, reopens deals lost on integration, and closes with: '
+                              '"Offer a free 14-day trial for five users" [Zbk_QOoXQ_M @ 00:02:08]. '
+                              'Sales-team deployments follow the Zoom Phone and Outreach pattern Brian '
+                              'Bolander demonstrated: the admin adds the app from the Marketplace, selects '
+                              'it under Settings > Voice, and accepts that the voice setting is '
+                              'all-or-none across the whole organization [cHY6UbMTjDA @ 00:02:33]. Reps '
+                              'then work sequences with preset dispositions through a Chrome extension '
+                              'CTI, and outbound calls are recorded and transcribed [cHY6UbMTjDA @ '
+                              '00:09:53].'],
+               'table': {'caption': 'Street pricing and partner incentives quoted by channel practitioners',
+                         'headers': ['Line Item',
+                                     'List or Base Price',
+                                     'Street or Negotiated Price',
+                                     'Expert Source'],
+                         'rows': [['Zoom Phone Unlimited, the most popular single-license tier',
+                                   '$15 per user per month at Zoom list price',
+                                   'Below $10 per user, sometimes $8 to $9 negotiated',
+                                   'AeroCom Inc ([viRtp8k9GAo @ 00:03:12])'],
+                                  ['Zoom Pro Plus bundle quoted for mid-to-large companies',
+                                   '$18.32 per user per month list price quoted',
+                                   'Around $14 per user depending on total user count',
+                                   'AeroCom Inc ([viRtp8k9GAo @ 00:02:19])'],
+                                  ['Zoom Metered license with zero included usage minutes',
+                                   '$10 per user or device per month list',
+                                   'Around $5, with every outbound minute billed separately',
+                                   'AeroCom Inc ([viRtp8k9GAo @ 00:04:29])'],
+                                  ['Zoom Contact Center agent licenses across three tiers',
+                                   '$69, $99, or $149 per agent per month',
+                                   'Discounts of about 25% off list are common',
+                                   'AeroCom Inc ([viRtp8k9GAo @ 00:06:12])'],
+                                  ['Customer Engagement Pack supervisor analytics add-on for queues',
+                                   '$20 per supervisor per month as an add-on',
+                                   'Versus $100 or more per agent for full contact center',
+                                   'AeroCom Inc ([auYElw4sYi8 @ 00:13:34])'],
+                                  ['Idle DIDs and toll-free numbers on Zoom Phone accounts',
+                                   '$5 per idle DID; toll-free $5 plus 3.7 cents per minute',
+                                   'Idle DIDs near $1; high-volume toll-free at 1.5 to 2 cents',
+                                   'AeroCom Inc ([viRtp8k9GAo @ 00:08:22])'],
+                                  ['RingCX contact center deals sold through the RingCentral partner '
+                                   'channel',
+                                   '15x SPIFF plus increased residuals through year-end',
+                                   "Called a crazy amount of money by RingCentral's Brandon Thomas",
+                                   'Telarus ([8ge4I4KL5kQ @ 00:10:59])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Where the Channel Margin Actually Hides',
+                           'body': 'The practitioners make their money on the gap between list and street '
+                                   'pricing, on fee stripping, and on stacking vendor incentives on top of '
+                                   'add-on upsells.',
+                           'items': ['Never let a 100-plus-user buyer go direct; the broker route promises '
+                                     'better-than-direct pricing and the provider pays the fee [AeroCom '
+                                     'Inc — auYElw4sYi8 @ 00:02:36].',
+                                     'Negotiate idle DIDs from the $5 list toward $1 and push high-volume '
+                                     'toll-free from 3.7 cents down to 1.5 to 2 cents per inbound minute '
+                                     '[AeroCom Inc — viRtp8k9GAo @ 00:08:22].',
+                                     'Pivot UC deals stuck on complex analytics requirements into RingCX '
+                                     'to capture the 15x SPIFF and increased residuals before year-end '
+                                     '[Telarus — 8ge4I4KL5kQ @ 00:12:58].',
+                                     "Reopen deals previously lost on CRM integration with VoxFlo's free "
+                                     '14-day trial for five users [WeAreVoxFlo — Zbk_QOoXQ_M @ '
+                                     '00:02:08].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Qualify Seat Count and Fit',
+                              'action': 'Target companies from 50 to a few thousand employees and screen '
+                                        'out seasonal headcount swings.',
+                              'detail': 'Mike Smith targets 50 to a few thousand employees [AeroCom Inc — '
+                                        'H1SvYMYWK1o @ 00:00:25], and the AeroCom review flags seasonal '
+                                        'user swings as a poor fit because Zoom is not month-to-month '
+                                        '[AeroCom Inc — auYElw4sYi8 @ 00:28:43].'},
+                             {'step': 2,
+                              'title': 'Quote Below List and Strip Fees',
+                              'action': 'Price Phone Unlimited under $10 and sell the absence of admin and '
+                                        '911 fees.',
+                              'detail': "Smith's clients pay below $10 against a $15 list, and Zoom "
+                                        'carries no admin or 911 fee versus roughly $5 per user at '
+                                        'competitors [AeroCom Inc — viRtp8k9GAo @ 00:05:04].'},
+                             {'step': 3,
+                              'title': 'Stack the Upsell',
+                              'action': 'Attach the $20 Customer Engagement Pack or move complex deals '
+                                        'into RingCX for the SPIFF.',
+                              'detail': 'The AeroCom demo prices the add-on at $20 per supervisor versus '
+                                        '$100+ per agent [AeroCom Inc — auYElw4sYi8 @ 00:13:34], while '
+                                        'RingCX pays a 15x SPIFF plus increased residuals [Telarus — '
+                                        '8ge4I4KL5kQ @ 00:10:59].'},
+                             {'step': 4,
+                              'title': 'Lock In CRM and Sales-Tool Integrations',
+                              'action': 'Connect the CRM through VoxFlo and configure Outreach under '
+                                        'Settings > Voice before go-live.',
+                              'detail': 'VoxFlo covers 300+ CRMs with no bespoke build [WeAreVoxFlo — '
+                                        'Zbk_QOoXQ_M @ 00:00:47], and the Outreach voice setting applies '
+                                        'all-or-none across the organization [Tattooed Nerd — cHY6UbMTjDA '
+                                        '@ 00:03:17].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split among brokers is whether to sell a full contact center '
+                              "seat at all. AeroCom's demo broker pegs a full contact center at $100 or "
+                              'more per agent and steers queue-heavy buyers into the Customer Engagement '
+                              'Pack, pitching it as "only $20 per month as an add-on" that exposes '
+                              'real-time queue analytics, call length, and declined or unanswered calls '
+                              "[auYElw4sYi8 @ 00:13:34]. Mike Smith, AeroCom's president, quotes that same "
+                              'full seat at $70 to $80-plus per user and says the gap keeps shrinking '
+                              'because queue login and logout, mandatory logout reason codes, and callback '
+                              'in queue now ride inside the base UCaaS license [H1SvYMYWK1o @ 00:03:10]. '
+                              'In a 2025 pricing walk-through, Smith lists Zoom Contact Center at $69, '
+                              '$99, or $149 per agent per month with roughly 25% discounts common, and '
+                              'prices the Power Pack at $25 per number per month for queue analytics plus '
+                              'SMS on the main number [viRtp8k9GAo @ 00:06:12]. Three price anchors '
+                              'circulate from one brokerage, so a reseller quoting a mid-market buyer has '
+                              'to decide up front whether the deal is a cheap add-on upsell or a full '
+                              'per-agent seat sale before the first proposal goes out.',
+                              "Zoom's contact center maturity splits the room. Tutorials By David says "
+                              'Zoom Phone "lacks some of the deep contact center features" larger '
+                              'businesses need and hands enterprises to RingCentral, which integrates with '
+                              'Salesforce and HubSpot but costs more for small teams [iZPzQgYhbHA @ '
+                              '00:00:14]. Zeus Kerravala, on the UC Today News panel, calls Zoom Contact '
+                              'Center a "pretty good 1.0" that still lacked Salesforce and Zendesk '
+                              'integrations when the panel reviewed it [Wcqc4eUu_5o @ 00:22:11]. On the '
+                              'other side, Patrick Kelly of Tattooed Nerd presents the contact center as a '
+                              'strength, bundling the Video Engagement Center and Solvvy AI on a single '
+                              "dashboard [pW6NJcmH21E @ 00:08:35]. Zoom's own CX chief, Chris Moresy, "
+                              'counters the immaturity charge with four years in contact center, roughly '
+                              '$100M in business at high double-digit growth, and 1,500-plus customers, '
+                              'some of them first-time Zoom buyers purchasing contact center only '
+                              '[-0tioUlVICE @ 00:09:47]. The playbook fork is clear: resellers chasing '
+                              'large enterprise logos with deep CRM workflows lean RingCentral, while '
+                              "resellers working existing Zoom accounts and mid-market buyers pitch Zoom's "
+                              'contact center as a single-platform add, accepting that analysts and some '
+                              'reviewers still grade it below the specialists.',
+                              "Microsoft Teams forces another fork. RingCentral's Brandon Thomas, speaking "
+                              'on Telarus, says the play has shifted from replacing Teams to an additive '
+                              'sale through an embedded dialer or direct routing, with no double licensing '
+                              'required [8ge4I4KL5kQ @ 00:15:08]. Thomas also affirms Telarus host Richard '
+                              "Murray's framing of RingCentral's five 9s against Teams at three 9s. "
+                              "AeroCom's broker takes the opposite line for light phone users already on "
+                              'Teams E5 or E7, sending them to Teams Phone via Operator Connect rather '
+                              'than forcing a Zoom deal [auYElw4sYi8 @ 00:30:05]. Brian Nichols of CX '
+                              'without the BS notes Gartner cut its forecast for calling through office '
+                              'suites by 2028 from 90% to 70%, a 20-point retreat [DKzL7oMyWis @ '
+                              "00:04:07]. On AI pricing, CallTower's Kade Herbert says Zoom and Webex AI "
+                              'are "very free," helping ROI, while Copilot carries a premium, and Madison '
+                              'D makes budget a deciding factor because Microsoft means extra licensing '
+                              '[YnbZO1fa7BQ @ 00:06:04]. The contrast sets two openings: a '
+                              'Teams-coexistence overlay where RingCentral sells beside Microsoft, and a '
+                              "cost-displacement pitch where Zoom's bundled AI undercuts Copilot add-on "
+                              'spend for buyers who are not locked into Microsoft 365 workflows.'],
+               'table': {'caption': 'Contested playbooks for UCaaS and CCaaS resale, side by side',
+                         'headers': ['Contested Question',
+                                     'Playbook A (Who Argues It)',
+                                     'Playbook B (Who Argues It)',
+                                     'Expert Source'],
+                         'rows': [['Full contact center seat versus add-on analytics pack',
+                                   'Sell the $20 per supervisor Customer Engagement Pack instead of '
+                                   '$100-plus agent seats',
+                                   'Price full Zoom Contact Center at $69, $99, or $149 per agent with '
+                                   'roughly 25% discounts',
+                                   'AeroCom Inc ([auYElw4sYi8 @ 00:13:34]); AeroCom Inc ([viRtp8k9GAo @ '
+                                   '00:06:12])'],
+                                  ['Is Zoom Contact Center mature enough for enterprise buyers?',
+                                   'Zoom lacks some deep contact center features, and RingCentral suits '
+                                   'larger enterprises better',
+                                   'Zoom bundles the Video Engagement Center and Solvvy AI on one single '
+                                   'dashboard',
+                                   'Tutorials By David ([iZPzQgYhbHA @ 00:00:14]); Tattooed Nerd '
+                                   '([pW6NJcmH21E @ 00:08:35])'],
+                                  ['Replace Microsoft Teams or sell alongside it as an overlay',
+                                   'RingCentral now sells additively through embedded dialer or direct '
+                                   'routing without double licensing',
+                                   'Light phone users on Teams E5 or E7 should take Teams Phone through '
+                                   'Operator Connect',
+                                   'Telarus ([8ge4I4KL5kQ @ 00:15:08]); AeroCom Inc ([auYElw4sYi8 @ '
+                                   '00:30:05])'],
+                                  ['Is Zoom AI a selling point or a renewal risk?',
+                                   'Gartner flags inconsistent Zoom AI and bundling that raises customer '
+                                   'renewal costs over time',
+                                   'Revenue Accelerator is "the biggest thing" with talk ratios, Ask AI, '
+                                   'and manager dashboards',
+                                   'CX without the BS ([DKzL7oMyWis @ 00:03:44]); AeroCom Inc '
+                                   '([H1SvYMYWK1o @ 00:04:47])'],
+                                  ['Fully autonomous voicebots versus keeping human agents in the loop',
+                                   'Klarna fired agents for a 75% expense cut, then partly backtracked on '
+                                   'the move',
+                                   'Zoom rejects "agents don\'t have a place" and pushes Agent Assist over '
+                                   '16 knowledge bases',
+                                   'Telarus ([-0tioUlVICE @ 00:05:35]); Telarus ([-0tioUlVICE @ '
+                                   '00:06:08])'],
+                                  ['Is Zoom pricing simple or a complicated fee ecosystem?',
+                                   'No admin fee and no 911 fee saves about $5 per user every month',
+                                   'Complex pricing and steep multi-site setups make Zoom hard for '
+                                   'first-time admins to run',
+                                   'AeroCom Inc ([viRtp8k9GAo @ 00:05:04]); LONDON FILM ([ZHjObNVm5_Y @ '
+                                   '00:03:42])'],
+                                  ['Who owns the customer relationship in the channel model?',
+                                   'RingCentral IGNITE lets partners own the sale with SE support and '
+                                   'stronger quoting tools',
+                                   'ALE partners now own and invoice customers directly, an approach Avaya '
+                                   'also took earlier',
+                                   'Telarus ([8ge4I4KL5kQ @ 00:07:03]); UC Today News ([Wcqc4eUu_5o @ '
+                                   '00:04:09])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Brian Nichols of CX without the BS, who discloses a bias as a Level365 '
+                              'seller, opens with the warning that Leader status is no free pass, then '
+                              "lays out RingCentral's review gap: 4.2 out of 5 on G2 and Capterra against "
+                              '1.8 on Trustpilot across about 2,000 reviews, and roughly 1.06 on BBB with '
+                              '596 complaints in three years [DKzL7oMyWis @ 00:01:55]. The complaints '
+                              'Nichols cites are exit traps: 16 calls and a 2.5-hour call to cancel, four '
+                              'months to close an account, overbilling that took 90 days plus an FCC '
+                              'complaint to unwind, and auto-renewal without clear notice [DKzL7oMyWis @ '
+                              '00:02:16]. Nichols pitches the inverse at Level365: 100% US-based support, '
+                              'month-to-month terms, and no early termination fees [DKzL7oMyWis @ '
+                              "00:08:28]. Zoom carries its own lock-in: AeroCom's broker warns that as a "
+                              'publicly traded company Zoom rarely releases customers early, is not '
+                              'month-to-month, and so misfits companies with seasonal user swings, and it '
+                              'is a poor fit for customers who need hand-holding [auYElw4sYi8 @ 00:24:32]. '
+                              'For a reseller, the check is the exit clause and the cancellation path, '
+                              "because both vendors' terms decide how painful and how slow a customer "
+                              'departure becomes.',
+                              'Line-item fees surface after signature. Mike Smith of AeroCom warns that '
+                              '"every single provider is going to charge you for idle IDs," with Zoom\'s '
+                              'base at about $5 per DID per month, often negotiated down to about $1 '
+                              "[viRtp8k9GAo @ 00:08:22]. Smith's Metered license at $10 list includes no "
+                              'usage, so every outbound minute is billed, and toll-free runs $5 per number '
+                              'plus 3.7 cents per inbound minute unless volume earns 1.5 to 2 cents. '
+                              "LONDON FILM's review flags that live chat support requires a subscription "
+                              'over $10 a month and live phone support requires over $200 a month, and its '
+                              'documentation is text-heavy, with fewer screenshots than Nextiva '
+                              '[ZHjObNVm5_Y @ 00:02:11]. The same review calls call routing, reports, and '
+                              'AI settings "overwhelming" for teams moving off landlines and points them '
+                              'toward Ooma or Nextiva when IT support is thin [GA4lZkmVP-w @ 00:09:23]. '
+                              'Add-on creep compounds it: polling needs a licensed host on an eligible '
+                              'paid plan, Zoom Mate requires extra licensing, and custom Clips branding '
+                              "needs Clips Plus. Gartner's flag, relayed by Brian Nichols, is that Zoom's "
+                              'bundling raises renewal costs [DKzL7oMyWis @ 00:03:44].',
+                              'Integration gaps kill UCaaS and CCaaS deals before pricing even matters. '
+                              'WeAreVoxFlo says CRM integration comes up early in every sale and, without '
+                              'it, deals stall, go to a competitor, or need a bespoke build "costing '
+                              'thousands," while 79% of opportunity data never reaches the CRM and 45% of '
+                              'CRM data is not AI-ready [Zbk_QOoXQ_M @ 00:00:25]. Configuration traps '
+                              'follow: on Tattooed Nerd, the Zoom Phone and Outreach voice setting is '
+                              'all-or-none for the whole organization, and the CTI still requires the Zoom '
+                              'client running [cHY6UbMTjDA @ 00:03:17]. In regulated accounts, Theta '
+                              "Lake's Anthony Robinson reports customers disabling team chat, meeting "
+                              'chat, and recordings, which pushes users to other tools and wastes licenses '
+                              "they already pay for [CHFSW3MiXcU @ 00:03:53]. On automation, Zoom's Chris "
+                              'Moresy and the Telarus host recount Klarna firing agents, cutting expenses '
+                              "75%, then partly unwinding the move, the cautionary tale behind Zoom's "
+                              'stance that human agents still have a place [-0tioUlVICE @ 00:05:35]. The '
+                              'operator check is to qualify the CRM, compliance archive, and staffing plan '
+                              'before quoting a single seat, because each of these failures strands '
+                              'licenses the customer is already paying for.'],
+               'table': {'caption': 'Firsthand failure modes and the economics check each one demands',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Report',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['RingCentral cancellation maze',
+                                   '16 calls, 2.5-hour calls to cancel, and four months to close an '
+                                   'account',
+                                   'Overbilling took 90 days plus an FCC complaint to recover',
+                                   'CX without the BS ([DKzL7oMyWis @ 00:02:16])'],
+                                  ['Cisco Webex outage remedy cap',
+                                   'Webex calling outage remedies are capped at 5% of the monthly fee',
+                                   '"5% is not a remedy" for enterprises that live and die by uptime',
+                                   'CX without the BS ([DKzL7oMyWis @ 00:03:24])'],
+                                  ['NICE plus RingCentral ticket ownership gap',
+                                   'Unresolved question of whose queue owns a 9 PM Friday ticket',
+                                   'The partner is left holding the ticket when ownership is unclear',
+                                   'CX without the BS ([DKzL7oMyWis @ 00:06:07])'],
+                                  ['Zoom contract lock-in',
+                                   'Publicly traded Zoom rarely releases customers early and is not '
+                                   'month-to-month',
+                                   'Seasonal headcount swings do not fit a fixed-seat Zoom contract',
+                                   'AeroCom Inc ([auYElw4sYi8 @ 00:24:32])'],
+                                  ['Idle DIDs and metered minutes',
+                                   'Idle DIDs list at $5 per month each, and Metered includes no usage',
+                                   'Negotiate idle DIDs toward about $1 and price outbound minutes into '
+                                   'Metered quotes',
+                                   'AeroCom Inc ([viRtp8k9GAo @ 00:08:22])'],
+                                  ['Live support paywall',
+                                   'Live chat requires over $10 per month and live phone over $200 per '
+                                   'month',
+                                   'Small accounts on low tiers fall back to text-heavy documentation',
+                                   'LONDON FILM ([GA4lZkmVP-w @ 00:14:48])'],
+                                  ['Compliance-driven feature shutdown',
+                                   'Regulated customers disable team chat, meeting chat, and recordings '
+                                   'entirely',
+                                   'Users drift to other tools while paid licenses sit wasted',
+                                   'Tattooed Nerd ([CHFSW3MiXcU @ 00:03:53])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before a UCaaS or CCaaS quote goes out',
+                           'body': 'Each gate below comes straight from a pitfall a practitioner reported '
+                                   'losing deals, money, or customers to.',
+                           'items': ['Confirm the CRM integration path before pricing, and run the free '
+                                     '14-day trial for five users on deals previously lost to integration '
+                                     'gaps [WeAreVoxFlo — Zbk_QOoXQ_M @ 00:02:08].',
+                                     'Check exit terms and headcount volatility, since Zoom rarely '
+                                     'releases customers early and is not month-to-month [AeroCom Inc — '
+                                     'auYElw4sYi8 @ 00:24:32].',
+                                     'Verify the support tier the customer will actually get, because chat '
+                                     'needs over $10 a month and phone support over $200 a month [LONDON '
+                                     'FILM — ZHjObNVm5_Y @ 00:02:11].',
+                                     'On integrated NICE plus RingCentral deals, demand proof of '
+                                     'integrated workflows, consistent administration, data sharing, and '
+                                     'implementation ownership [CX without the BS — DKzL7oMyWis @ '
+                                     '00:06:51].']}}],
+ 'pull_quote': '"For large enterprises that lives and dies by uptime, 5% is not a remedy." — CX without '
+               'the BS (DKzL7oMyWis @ 00:03:24).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Route mid-to-large Zoom deals through a broker instead of calling Zoom directly, '
+                      'with the broker fee paid by the vendor [AeroCom Inc — viRtp8k9GAo @ 00:00:38].',
+                      'Negotiate Zoom Phone Unlimited from the $15 list to below $10 per user, sometimes '
+                      '$8 to $9 [AeroCom Inc — viRtp8k9GAo @ 00:03:12].',
+                      'Use contract buyouts to pull customers off incumbent providers, with free service '
+                      'for 12 to 15 months within reason [AeroCom Inc — auYElw4sYi8 @ 00:23:27].',
+                      'Pivot complex-analytics UC sales into RingCX for mid-market and below to capture '
+                      'the 15x SPIFF plus increased residuals through year-end [Telarus — 8ge4I4KL5kQ @ '
+                      '00:10:59].',
+                      'Revisit deals lost on CRM integration with a white-label connector covering '
+                      '300-plus CRMs and a free 14-day trial for five users [WeAreVoxFlo — Zbk_QOoXQ_M @ '
+                      '00:02:08].',
+                      "Bundle security with UCaaS and CCaaS for SMB using Zoom's Palo Alto Networks, "
+                      'Zscaler, and Theta Lake integrations [UC Today News — dqTXnYdAKdQ @ 00:09:03].'],
+ 'statutory_citations': [{'title': 'AeroCom Inc — Zoom Phone Pricing for Mid-Large-Size Companies in 2025 '
+                                   '[00:08:22]',
+                          'url': 'https://www.youtube.com/watch?v=viRtp8k9GAo&t=502s',
+                          'relevance': 'Primary practitioner testimony on Zoom list versus negotiated '
+                                       'pricing, idle DID fees, and broker-paid fees.'},
+                         {'title': 'CX without the BS — Gartner UCaaS Magic Quadrant 2026 EXPLAINED '
+                                   '(Cisco, Microsoft, RingCentral, Zoom) [00:02:16]',
+                          'url': 'https://www.youtube.com/watch?v=DKzL7oMyWis&t=136s',
+                          'relevance': 'Primary practitioner testimony on RingCentral cancellation '
+                                       'complaints, Cisco outage remedies, and Zoom renewal-cost risk.'},
+                         {'title': 'Telarus — How RingCentral is Currently Innovating in the Contact '
+                                   'Center Space and their IGNITE! Program [00:10:59]',
+                          'url': 'https://www.youtube.com/watch?v=8ge4I4KL5kQ&t=659s',
+                          'relevance': 'Primary practitioner testimony on RingCX SPIFFs, IGNITE partner '
+                                       'ownership, and the Teams additive sale.'},
+                         {'title': 'AeroCom Inc — Zoom Phone System (UCaaS) Review & Demo | Hard to Beat '
+                                   '[00:24:32]',
+                          'url': 'https://www.youtube.com/watch?v=auYElw4sYi8&t=1472s',
+                          'relevance': 'Primary practitioner testimony on Zoom contract lock-in, add-on '
+                                       'packs, and customer fit.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '8ge4I4KL5kQ',
+                       'title': 'How RingCentral is Currently Innovating in the Contact Center Space and '
+                                'their IGNITE! Program',
+                       'channel': 'Telarus',
+                       'author': 'Telarus',
+                       'text': 'RingCentral is paying a 15x SPIFF plus increased residuals on RingCX '
+                               'through year-end, which is a crazy amount of money.',
+                       'tip': 'RingCentral is paying a 15x SPIFF plus increased residuals on RingCX '
+                              'through year-end, which is a crazy amount of money.',
+                       'timestamp': 659,
+                       'timestamp_seconds': 659,
+                       'timestamp_label': '[00:10:59]',
+                       'url': 'https://www.youtube.com/watch?v=8ge4I4KL5kQ&t=659s',
+                       'markdown': '[00:10:59](https://www.youtube.com/watch?v=8ge4I4KL5kQ&t=659s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-0tioUlVICE',
+                       'title': 'Understanding Agentic AI in CX- An Executive Interview with Zoom',
+                       'channel': 'Telarus',
+                       'author': 'Telarus',
+                       'text': 'It can take actions on its own.',
+                       'tip': 'It can take actions on its own.',
+                       'timestamp': 80,
+                       'timestamp_seconds': 80,
+                       'timestamp_label': '[00:01:20]',
+                       'url': 'https://www.youtube.com/watch?v=-0tioUlVICE&t=80s',
+                       'markdown': '[00:01:20](https://www.youtube.com/watch?v=-0tioUlVICE&t=80s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DKzL7oMyWis',
+                       'title': 'Gartner UCaaS Magic Quadrant 2026 EXPLAINED (Cisco, Microsoft, '
+                                'RingCentral, Zoom)',
+                       'channel': 'CX without the BS',
+                       'author': 'CX without the BS',
+                       'text': 'For large enterprises that lives and dies by uptime, 5% is not a remedy.',
+                       'tip': 'For large enterprises that lives and dies by uptime, 5% is not a remedy.',
+                       'timestamp': 204,
+                       'timestamp_seconds': 204,
+                       'timestamp_label': '[00:03:24]',
+                       'url': 'https://www.youtube.com/watch?v=DKzL7oMyWis&t=204s',
+                       'markdown': '[00:03:24](https://www.youtube.com/watch?v=DKzL7oMyWis&t=204s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DKzL7oMyWis',
+                       'title': 'Gartner UCaaS Magic Quadrant 2026 EXPLAINED (Cisco, Microsoft, '
+                                'RingCentral, Zoom)',
+                       'channel': 'CX without the BS',
+                       'author': 'CX without the BS',
+                       'text': 'See, real support answers the phone and owns the problem.',
+                       'tip': 'See, real support answers the phone and owns the problem.',
+                       'timestamp': 272,
+                       'timestamp_seconds': 272,
+                       'timestamp_label': '[00:04:32]',
+                       'url': 'https://www.youtube.com/watch?v=DKzL7oMyWis&t=272s',
+                       'markdown': '[00:04:32](https://www.youtube.com/watch?v=DKzL7oMyWis&t=272s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Zbk_QOoXQ_M',
+                       'title': 'VoxFlo | CRM Integration for UCaaS & CCaaS Resellers #wearevoxflo',
+                       'channel': 'WeAreVoxFlo',
+                       'author': 'WeAreVoxFlo',
+                       'text': 'It supports over 300 CRM with no bespoke build and no upfront cost.',
+                       'tip': 'It supports over 300 CRM with no bespoke build and no upfront cost.',
+                       'timestamp': 47,
+                       'timestamp_seconds': 47,
+                       'timestamp_label': '[00:00:47]',
+                       'url': 'https://www.youtube.com/watch?v=Zbk_QOoXQ_M&t=47s',
+                       'markdown': '[00:00:47](https://www.youtube.com/watch?v=Zbk_QOoXQ_M&t=47s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dqTXnYdAKdQ',
+                       'title': 'Zoom Multicast: The Next UC Channel Opportunity',
+                       'channel': 'UC Today News',
+                       'author': 'UC Today News',
+                       'text': 'The channel TAM is $200 billion plus by the end of the decade, and '
+                               'partners should build a dedicated Zoom practice.',
+                       'tip': 'The channel TAM is $200 billion plus by the end of the decade, and partners '
+                              'should build a dedicated Zoom practice.',
+                       'timestamp': 609,
+                       'timestamp_seconds': 609,
+                       'timestamp_label': '[00:10:09]',
+                       'url': 'https://www.youtube.com/watch?v=dqTXnYdAKdQ&t=609s',
+                       'markdown': '[00:10:09](https://www.youtube.com/watch?v=dqTXnYdAKdQ&t=609s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'auYElw4sYi8',
+                       'title': 'Zoom Phone System (UCaaS) Review & Demo | Hard to Beat',
+                       'channel': 'AeroCom Inc',
+                       'author': 'AeroCom Inc',
+                       'text': "So, it's only $20 per month as an add-on, and it gives you all that "
+                               'insight, real-time analytics, like you know, how long your calls are, you '
+                               'know, in queue, and all kinds of good stuff.',
+                       'tip': "So, it's only $20 per month as an add-on, and it gives you all that "
+                              'insight, real-time analytics, like you know, how long your calls are, you '
+                              'know, in queue, and all kinds of good stuff.',
+                       'timestamp': 814,
+                       'timestamp_seconds': 814,
+                       'timestamp_label': '[00:13:34]',
+                       'url': 'https://www.youtube.com/watch?v=auYElw4sYi8&t=814s',
+                       'markdown': '[00:13:34](https://www.youtube.com/watch?v=auYElw4sYi8&t=814s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'auYElw4sYi8',
+                       'title': 'Zoom Phone System (UCaaS) Review & Demo | Hard to Beat',
+                       'channel': 'AeroCom Inc',
+                       'author': 'AeroCom Inc',
+                       'text': 'So, right away, Zoom is $5 less per month per user than a lot of their '
+                               'competition.',
+                       'tip': 'So, right away, Zoom is $5 less per month per user than a lot of their '
+                              'competition.',
+                       'timestamp': 1369,
+                       'timestamp_seconds': 1369,
+                       'timestamp_label': '[00:22:49]',
+                       'url': 'https://www.youtube.com/watch?v=auYElw4sYi8&t=1369s',
+                       'markdown': '[00:22:49](https://www.youtube.com/watch?v=auYElw4sYi8&t=1369s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cHY6UbMTjDA',
+                       'title': 'Zoom Phone & Outreach Integration - DEMO!',
+                       'channel': 'Tattooed Nerd',
+                       'author': 'Tattooed Nerd',
+                       'text': 'The voice setting is all or none for the whole organization.',
+                       'tip': 'The voice setting is all or none for the whole organization.',
+                       'timestamp': 197,
+                       'timestamp_seconds': 197,
+                       'timestamp_label': '[00:03:17]',
+                       'url': 'https://www.youtube.com/watch?v=cHY6UbMTjDA&t=197s',
+                       'markdown': '[00:03:17](https://www.youtube.com/watch?v=cHY6UbMTjDA&t=197s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'H1SvYMYWK1o',
+                       'title': "Zoom Phone - What's New in 2026",
+                       'channel': 'AeroCom Inc',
+                       'author': 'AeroCom Inc',
+                       'text': 'The Zoom Phone base price went up from $15 to $16 per user per month.',
+                       'tip': 'The Zoom Phone base price went up from $15 to $16 per user per month.',
+                       'timestamp': 112,
+                       'timestamp_seconds': 112,
+                       'timestamp_label': '[00:01:52]',
+                       'url': 'https://www.youtube.com/watch?v=H1SvYMYWK1o&t=112s',
+                       'markdown': '[00:01:52](https://www.youtube.com/watch?v=H1SvYMYWK1o&t=112s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GA4lZkmVP-w',
+                       'title': 'ZOOM PHONE EXPERT REVIEW FOR BUSINESSES B2B -COMPLETE PROFESSIONAL '
+                                'ANALYSIS',
+                       'channel': 'LONDON FILM',
+                       'author': 'LONDON FILM',
+                       'text': 'Live support access depends on your subscription level.',
+                       'tip': 'Live support access depends on your subscription level.',
+                       'timestamp': 870,
+                       'timestamp_seconds': 870,
+                       'timestamp_label': '[00:14:30]',
+                       'url': 'https://www.youtube.com/watch?v=GA4lZkmVP-w&t=870s',
+                       'markdown': '[00:14:30](https://www.youtube.com/watch?v=GA4lZkmVP-w&t=870s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YnbZO1fa7BQ',
+                       'title': 'AI Disruption in UC: Copilot, Zoom & Webex Face Off',
+                       'channel': 'UC Today News',
+                       'author': 'UC Today News',
+                       'text': 'The sky is no longer falling.',
+                       'tip': 'The sky is no longer falling.',
+                       'timestamp': 128,
+                       'timestamp_seconds': 128,
+                       'timestamp_label': '[00:02:08]',
+                       'url': 'https://www.youtube.com/watch?v=YnbZO1fa7BQ&t=128s',
+                       'markdown': '[00:02:08](https://www.youtube.com/watch?v=YnbZO1fa7BQ&t=128s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Wcqc4eUu_5o',
+                       'title': 'The Latest Big News on ALE Doubling Down on UCaaS, Enterprise ChatGPT & '
+                                "Zoom's AI Companion",
+                       'channel': 'UC Today News',
+                       'author': 'UC Today News',
+                       'text': 'Zoom Contact Center is a pretty good 1.0, but it lacks Salesforce and '
+                               'Zendesk integrations.',
+                       'tip': 'Zoom Contact Center is a pretty good 1.0, but it lacks Salesforce and '
+                              'Zendesk integrations.',
+                       'timestamp': 1331,
+                       'timestamp_seconds': 1331,
+                       'timestamp_label': '[00:22:11]',
+                       'url': 'https://www.youtube.com/watch?v=Wcqc4eUu_5o&t=1331s',
+                       'markdown': '[00:22:11](https://www.youtube.com/watch?v=Wcqc4eUu_5o&t=1331s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CHFSW3MiXcU',
+                       'title': 'Is your Zoom compliance actually secure?',
+                       'channel': 'Tattooed Nerd',
+                       'author': 'Tattooed Nerd',
+                       'text': "We don't hold your data hostage.",
+                       'tip': "We don't hold your data hostage.",
+                       'timestamp': 1505,
+                       'timestamp_seconds': 1505,
+                       'timestamp_label': '[00:25:05]',
+                       'url': 'https://www.youtube.com/watch?v=CHFSW3MiXcU&t=1505s',
+                       'markdown': '[00:25:05](https://www.youtube.com/watch?v=CHFSW3MiXcU&t=1505s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'viRtp8k9GAo',
+                       'title': 'Zoom Phone Pricing for Mid-Large-Size Companies in 2025',
+                       'channel': 'AeroCom Inc',
+                       'author': 'AeroCom Inc',
+                       'text': 'My customers will probably pay more around the $14 range, but again, it '
+                               'depends on the amount of users you have.',
+                       'tip': 'My customers will probably pay more around the $14 range, but again, it '
+                              'depends on the amount of users you have.',
+                       'timestamp': 139,
+                       'timestamp_seconds': 139,
+                       'timestamp_label': '[00:02:19]',
+                       'url': 'https://www.youtube.com/watch?v=viRtp8k9GAo&t=139s',
+                       'markdown': '[00:02:19](https://www.youtube.com/watch?v=viRtp8k9GAo&t=139s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'viRtp8k9GAo',
+                       'title': 'Zoom Phone Pricing for Mid-Large-Size Companies in 2025',
+                       'channel': 'AeroCom Inc',
+                       'author': 'AeroCom Inc',
+                       'text': "Every single provider is going to charge you for idle IDs, and that's "
+                               "Zoom's base price is about $5 per month per did for idle did.",
+                       'tip': "Every single provider is going to charge you for idle IDs, and that's "
+                              "Zoom's base price is about $5 per month per did for idle did.",
+                       'timestamp': 502,
+                       'timestamp_seconds': 502,
+                       'timestamp_label': '[00:08:22]',
+                       'url': 'https://www.youtube.com/watch?v=viRtp8k9GAo&t=502s',
+                       'markdown': '[00:08:22](https://www.youtube.com/watch?v=viRtp8k9GAo&t=502s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pW6NJcmH21E',
+                       'title': 'Is Zoom the best UCaaS Platform?',
+                       'channel': 'Tattooed Nerd',
+                       'author': 'Tattooed Nerd',
+                       'text': 'People know Zoom only for meetings.',
+                       'tip': 'People know Zoom only for meetings.',
+                       'timestamp': 48,
+                       'timestamp_seconds': 48,
+                       'timestamp_label': '[00:00:48]',
+                       'url': 'https://www.youtube.com/watch?v=pW6NJcmH21E&t=48s',
+                       'markdown': '[00:00:48](https://www.youtube.com/watch?v=pW6NJcmH21E&t=48s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZHjObNVm5_Y',
+                       'title': 'ZOOM PHONE REVIEW - IMPLEMENTATION/ ONBOARDING - CUSTOMER SUPPORT B2B '
+                                'BUSINESS EXPERT  ANALYSIS',
+                       'channel': 'LONDON FILM',
+                       'author': 'LONDON FILM',
+                       'text': "Zoom's biggest onboarding advantage is familiarity.",
+                       'tip': "Zoom's biggest onboarding advantage is familiarity.",
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=ZHjObNVm5_Y&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=ZHjObNVm5_Y&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iZPzQgYhbHA',
+                       'title': "Zoom Phone VS RingCentral in 2026 (What's Better?)",
+                       'channel': 'Tutorials By David',
+                       'author': 'Tutorials By David',
+                       'text': 'Zoom Phone lacks some of the deep contact center features that larger '
+                               'businesses need.',
+                       'tip': 'Zoom Phone lacks some of the deep contact center features that larger '
+                              'businesses need.',
+                       'timestamp': 14,
+                       'timestamp_seconds': 14,
+                       'timestamp_label': '[00:00:14]',
+                       'url': 'https://www.youtube.com/watch?v=iZPzQgYhbHA&t=14s',
+                       'markdown': '[00:00:14](https://www.youtube.com/watch?v=iZPzQgYhbHA&t=14s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'}]}

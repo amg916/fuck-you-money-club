@@ -9,49 +9,49 @@
       "ARBITRAGE"
     ],
     "deck": [
-      "CREDENTIAL THE FLEET. VERIFY THE ORDER.",
-      "DISPATCH WITH TRACEABLE HANDOFFS."
+      "DIRECT MEDICAL COURIER CONTRACTS, SPECIMEN AND COLD-CHAIN ROUTES, AND THE SPREAD BETWEEN $10 DRIVER STOPS AND $20 TO $50 CLIENT BILLING",
+      "NEMT STARTUP ROADMAPS, MEDICAID BROKER WORK, FACILITY REFERRAL PIPELINES, RATES AND BILLING, AND DISPATCH SOFTWARE WITH TRIP VERIFICATION"
     ],
-    "lead": "Medicaid Transportation Networks, STAT Laboratory Routes & Credentialed Fleet Dispatch with Documented Service Controls",
-    "summary": "Separate passenger transportation from specimen logistics, verify broker contracts and service authorizations, and control route margins through credential checks, custody records, and lawful worker classification.",
+    "lead": "Practitioners show how to land the contract before buying the vehicle, carry HIPAA and bloodborne pathogen training, and win direct lab, pharmacy, medical supply and VA courier work instead of taking brokered runs booked at triple the driver's pay.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies covering medical courier launches, direct contracts, specialized specimen work, NEMT operations, broker relationships, billing and dispatch enforcement. Every claim, metric, pro-tip and quote carries timestamped inline attribution to the practitioner and video it came from.",
     "chapters": [
-      "NEMT trips vs medical courier route models",
-      "Medicaid TPAs, laboratories & service buyers",
-      "Per-trip rates, deadhead & route contribution",
-      "Dispatch systems & credentialing startup costs",
-      "Missed trips, rejected claims & specimen loss",
-      "Broker enrollment & laboratory route sourcing",
-      "Driver qualifications & vehicle inspections",
-      "STAT dispatch, cold chain & custody records",
-      "Privacy, transport rules & 1099 classification",
-      "Service verification & clean billing workflows",
-      "Dispatch pods & backup fleet coverage",
-      "First 30-day credentialed-route launch sprint"
+      "Launching a Medical Courier Operation from Zero",
+      "Hunting and Landing Direct Medical Courier Contracts",
+      "Medical Courier Companies, Brokerages, and Apps Hiring 1099 Drivers",
+      "Specimens, Cold Chain, Organs, and STAT: Specialized Courier Work",
+      "Courier Pay Reality, Pricing, and Route Profitability",
+      "Entity, Insurance, Enrollment, and Legal Foundations",
+      "NEMT Startup Roadmap and the Mistakes That Bankrupt New Owners",
+      "NEMT Vehicles and Day-to-Day Trip Execution",
+      "Working With (and Around) Medicaid Brokers",
+      "Private Pay, Facility Contracts, and Direct Referral Pipelines",
+      "NEMT Rates, Billing, and Unit Economics",
+      "Dispatch Software, Trip Verification, and Fraud Enforcement"
     ],
     "flow": [
       [
+        "CERTIFY",
+        "Complete HIPAA and bloodborne pathogen training and launch in the car you already own, with no van or Sprinter purchase until a signed contract covers the payment."
+      ],
+      [
+        "INSURE",
+        "Ask each client whether it requires a $300,000 or $1 million liability limit before buying commercial auto and business liability coverage, since the contract dictates the insurance."
+      ],
+      [
+        "PROSPECT",
+        "Send 25 or more applications a day with same-day follow-up calls, set keyword alerts on Indeed, CB Driver and Google, call department lines 9 to 11 a.m. Tuesday or Wednesday, and mine sam.gov for VA courier awards."
+      ],
+      [
+        "PRICE",
+        "Charge a $35 minimum per pickup or a $750 to $1,000 weekly retainer and negotiate weekend, after-hour and wait-time terms with lab directors and pharmacy managers."
+      ],
+      [
         "CONTRACT",
-        "Confirm network terms & service scope"
+        "Write the client's stated volume assumptions into the bid, add pay-the-remainder cancellation language, and check deadhead miles, waiting time, stop count, exclusivity and equipment before signing."
       ],
       [
-        "CREDENTIAL",
-        "Verify drivers, vehicles & coverage"
-      ],
-      [
-        "AUTHORIZE",
-        "Validate trip or specimen orders"
-      ],
-      [
-        "DISPATCH",
-        "Assign qualified capacity & track timing"
-      ],
-      [
-        "VERIFY",
-        "Record delivery, custody & exceptions"
-      ],
-      [
-        "RECONCILE",
-        "Audit claims, payouts & route margins"
+        "SCALE",
+        "Bank three months of operating expenses for 90-day first checks, then hire a driver only when $300 to $500 a week remains after driver pay and the contract allows subcontractors."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "NEMT & MEDICAL COURIER DISPATCH ARBITRAGE",
-  "subtitle": "The Complete Playbook for NEMT & Medical Courier Dispatch Arbitrage: $250,000–$1,600,000 USD in Annual Gross Billings with a 2 FT + 2 C (4 People) Core Pod, Scaling to Six",
+  "subtitle": "Land the contract before the van, price every route on miles, hours and deadhead, stack STAT and direct facility work over gig apps, enroll before you bill, diversify off broker dependence, and prove every trip",
   "chapter_count": 12,
-  "total_word_count": 78263,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 74940,
+  "expert_youtube_link_count": 211,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:03Z"
+  "updated_at": "2026-11-24T23:07:52Z"
 }

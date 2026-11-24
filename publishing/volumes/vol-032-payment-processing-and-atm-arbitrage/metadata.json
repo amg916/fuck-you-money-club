@@ -9,49 +9,49 @@
       "ARBITRAGE"
     ],
     "deck": [
-      "AUDIT SCHEDULE A. SECURE THE VENUE.",
-      "RECONCILE RECURRING RESIDUALS."
+      "INTERCHANGE-PLUS PRICING, STATEMENT MATH, AND DURBIN DEBIT COST TESTS",
+      "RESIDUAL SPLITS, ISO PARTNERSHIPS, AND ATM LOCATION ECONOMICS"
     ],
-    "lead": "Wholesale ISO Residual Portfolios, Compliant Dual-Pricing Terminals & Exclusive-Venue ATM Route Economics",
-    "summary": "Separate merchant processing volume from earned residuals, validate sponsor and network rules, and price ATM placements around cash replenishment, venue shares, security, and transaction density.",
+    "lead": "Merchant-services and ATM operators show how card fees split among issuing banks, card brands, processors, and ISOs, and how agents turn the processor markup into monthly residual income.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, with every quote, metric, and tip carrying timestamped inline attribution to its source video. The chapters run from card processing flow, pricing models, and interchange optimization through dual pricing, surcharging, residual economics, ISO building, high-risk accounts, and ATM unit economics, locations, hardware, and vault cash.",
     "chapters": [
-      "ISO residuals vs ATM surcharge revenue",
-      "Sponsor banks, processors & Schedule A terms",
-      "Basis-point spreads & route unit economics",
-      "Terminal deployment & ATM startup capital",
-      "Chargebacks, reserves & residual clawbacks",
-      "Merchant statement audits & venue prospecting",
-      "Dual-pricing disclosures & terminal setup",
-      "ATM cash loading & settlement reconciliation",
-      "Network rules, PCI scope & local compliance",
-      "Residual audits & merchant retention loops",
-      "Lean service pods & portfolio transfer rights",
-      "First 30-day merchant-and-venue launch sprint"
+      "How Card Processing Works: Players, Payment Flow, and Debit Regulation",
+      "Merchant Pricing Models and Statement Analysis",
+      "Interchange Optimization: Level 2/3 Data, Visa CEDP, and Debit Rate Rulings",
+      "Dual Pricing and Cash Discount: Mechanics and the Sales Pitch",
+      "Surcharging Compliance and the Legal Ways to Pass On Card Fees",
+      "Residual Income Economics and ISO Agreement Terms",
+      "Building, Keeping, and Selling a Merchant Portfolio",
+      "Becoming an ISO: Registration, Partner Programs, and Scaling",
+      "High-Risk Accounts and Chargeback Defense",
+      "ATM Unit Economics: Real Profit, Hidden Costs, and Startup Budget",
+      "ATM Locations, Contracts, and Surcharge Setting",
+      "ATM Hardware, Vault Cash, Security, and High-Risk Cash Businesses"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Audit merchant demand & venue traffic"
+        "ANALYZE",
+        "Open with a free cost analysis: divide total interchange by volume to land near 1.7 percent, then subtract interchange from total fees to expose the real markup."
+      ],
+      [
+        "QUALIFY",
+        "Pull the average ticket and card mix first; tickets under about 15 dollars need per-item fees that cover the 22-cent regulated debit cost."
+      ],
+      [
+        "CODE",
+        "Verify the SIC or MCC code and the card-present versus card-not-present setup so the merchant is not miscoded into higher rates."
       ],
       [
         "PRICE",
-        "Model Schedule A & cash-service costs"
+        "Price from Schedule A costs on interchange plus, charging the cost of the card plus a set margin such as 0.25 or 0.60 percent so Durbin cost drops pass through."
       ],
       [
-        "CONTRACT",
-        "Confirm sponsor terms & placement rights"
+        "SUPPORT",
+        "Resolve past-due gateway accounts before they go delinquent, since after 6 months of uncollected fees the balance is debited from the affiliate account."
       ],
       [
-        "DEPLOY",
-        "Configure terminals & verify disclosures"
-      ],
-      [
-        "RECONCILE",
-        "Match settlements, residuals & cash"
-      ],
-      [
-        "RETAIN",
-        "Service accounts & monitor route yield"
+        "EARN",
+        "Collect the residual on the split: at 80/20, 280 dollars of gross profit on a 20,000-dollar-per-month cafe pays the agent 224 dollars every month."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "ISO PAYMENT PROCESSING & ATM ARBITRAGE",
-  "subtitle": "The Complete Playbook for ISO Payment Processing & ATM Arbitrage: $90,000–$800,000 USD in Annual Retained Revenue, Built Around a 1 FT + 3 C (4 People) Pod",
+  "subtitle": "Board Merchants on Interchange Plus, Capture Level 3 Savings, Pass Fees Through Compliant Dual Pricing, Protect a Vested Residual Book, Defend High-Risk Accounts with Chargeback Alerts, and Build Location-First ATM Routes on Signed Agreements and Disciplined Vault Cash",
   "chapter_count": 12,
-  "total_word_count": 77260,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 77503,
+  "expert_youtube_link_count": 208,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T23:07:52Z"
 }

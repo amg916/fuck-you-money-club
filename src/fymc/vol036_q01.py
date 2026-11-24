@@ -1,767 +1,793 @@
 from __future__ import annotations
 
-CHAPTER_1 = {
-    "id": "Q1",
-    "chapter_id": "Q1",
-    "chapter_number": 1,
-    "question_number": 1,
-    "slug": "gpu-compute-telecom-capacity-arbitrage-business-model",
-    "question_prompt": "What exactly is gpu compute & telecom capacity arbitrage, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
-    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
-    "title": "What Exactly Is GPU Compute & Telecom Capacity Arbitrage?",
-    "subtitle": "H100/H200/B200 Reservations, vLLM Metering, Wholesale SIP, Registered 10DLC, and ASC 606 Principal-versus-Agent Economics",
-    "layout_template": "opportunity_overview",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #36, GPU Compute & Telecom Capacity Arbitrage, ranks #03 of 36 "
-        "with a 94/100 Money-to-Manpower Score. The operator converts authorized "
-        "wholesale GPU reservations, inference endpoints, and carrier capacity into "
-        "metered services with tighter routing, collection, and support economics. "
-        "This chapter maps 15 plays, separating the core capacity business from "
-        "adjacent commercial-card rebate distribution. Canonical annual owner profits "
-        "are $27,000 Conservative, $189,000 Base, and $456,000 Scaled. Gross service "
-        "billings are not customer merchandise volume, and the modeled 65% retained "
-        "share is not an automatic accounting conclusion. Durable operators own "
-        "workload qualification, tenant isolation, prepaid collection, carrier "
-        "permissions, and auditable unit economics; fragile operators merely rent "
-        "expensive hardware and advertise an attractive hourly price."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$150,000",
-            "context": "Annual gross service billings; $97,500 retained contribution",
-            "note": "18% gross-basis net margin; $27,000 owner profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$675,000",
-            "context": "Annual gross service billings; $438,750 retained contribution",
-            "note": "28.0% gross-basis net margin; $189,000 owner profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual gross service billings; $780,000 retained contribution",
-            "note": "38% gross-basis net margin; $456,000 owner profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Sell a Measured Service, Not a Speculative Hardware Position",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "GPU compute and telecom capacity arbitrage buys an explicitly "
-                    "resalable input under one pricing schedule and sells a defined "
-                    "service under another. The input might be an eight-GPU H100 "
-                    "server, an H200 reservation, a qualified B200 deployment, "
-                    "wholesale SIP termination, registered messaging throughput, "
-                    "or an IPv4 lease with documented usage rights. The customer "
-                    "buys completed inference, GPU time, delivered message segments, "
-                    "connected voice minutes, or address availability, rather than "
-                    "ownership of the underlying infrastructure. The spread exists "
-                    "because the operator aggregates demand, absorbs commitment "
-                    "risk, meters accurately, and solves integration problems that "
-                    "individual buyers cannot justify solving themselves. This is "
-                    "not riskless arbitrage: reservation invoices continue during "
-                    "idle periods, model quality varies across endpoints, and "
-                    "carriers change destination rates. Start with one workload "
-                    "class and one upstream agreement whose resale, support, "
-                    "geographic, and suspension clauses match the downstream offer. "
-                    "An advertised cloud price is a sourcing lead, not permission "
-                    "to subdivide an account. Maintain a service specification "
-                    "covering model version, quantization, latency, concurrency, "
-                    "data handling, billing increments, and credit remedies. That "
-                    "specification is the product; the GPU or trunk is its input. "
-                    "A signed customer order should make that distinction explicit "
-                    "before any noncancelable capacity purchase."
-                ),
-                (
-                    "The central mapped play, gpu_reserved_to_spot_inference_slicing, "
-                    "combines reserved hardware with isolated inference and "
-                    "interruptible queues, while keeping authorized telecom resale "
-                    "as a separate service ledger. Consider an illustrative "
-                    "eight-GPU reservation costing $2 per available GPU-hour. "
-                    "Across 720 hours, the commitment is $11,520. Selling 80% "
-                    "of 5,760 available GPU-hours at $5 generates $23,040; "
-                    "allocating another $2,880 to service operations leaves "
-                    "$8,640, or 37.5% of billings. This illustrates the play's "
-                    "35%–55% target net spread, not a replacement for the "
-                    "chapter's canonical scenarios. At 50% utilization, receipts "
-                    "fall to $14,400 and the same costs consume every dollar. "
-                    "Use vLLM for compatible serving workloads, LiteLLM for "
-                    "policy-based endpoint selection, and NVIDIA DCGM for hardware "
-                    "telemetry. None independently supplies a complete billing or "
-                    "security boundary. Benchmark accepted output, model quality, "
-                    "memory pressure, and tail latency before selling fractional "
-                    "capacity. Where supported and qualified, hardware partitioning "
-                    "can improve isolation, but separate credentials, networks, "
-                    "storage, and lifecycle controls remain necessary. Suspend "
-                    "abusive workloads, preserve required evidence, reroute only "
-                    "compliant traffic to authorized alternatives, and renegotiate "
-                    "excess reservations before idle capacity becomes an existential "
-                    "cash drain. Never quietly substitute a weaker model merely "
-                    "to protect the advertised spread."
-                ),
-                (
-                    "Five operator archetypes clarify what a small team actually "
-                    "does. A reservation slicer owns scheduling and utilization; "
-                    "an inference broker owns quality-aware routing and application "
-                    "integration; a managed endpoint operator sells deployment "
-                    "reliability; a telecom reseller owns route economics and "
-                    "traffic legitimacy; an address-capacity broker owns usage "
-                    "rights, registry coordination, and reputation recovery. These "
-                    "roles can share invoicing and observability without sharing "
-                    "all permissions or statutory duties. A developer using "
-                    "Twilio messaging is not automatically a wholesale voice "
-                    "provider, and an IPv4 lessor does not become a carrier merely "
-                    "by leasing addresses. Contract the actual activity instead "
-                    "of adopting every obligation associated with the word telecom. "
-                    "The supplied scorecard allocates 24 points to revenue "
-                    "potential, 24 to margin potential, 20 to team efficiency, "
-                    "13 to startup accessibility, and 13 to automation, totaling "
-                    "94. Those weights favor repeatable metering and collection, "
-                    "not ownership of racks. Budget $10,000–$60,000 of startup "
-                    "capital and a one-to-four-month first-deal window, with "
-                    "customer qualification preceding commitments. Contractors "
-                    "should cover named specialties such as GPU operations and "
-                    "carrier integration; they are not invisible full-time "
-                    "capacity. The owner retains pricing authority, supplier "
-                    "exposure limits, incident accountability, and the decision "
-                    "to discontinue an uneconomic service."
-                ),
-            ],
-            "table": {
-                "caption": "Five Operator Archetypes and the Deliverable Each Actually Sells",
-                "headers": [
-                    "Operator archetype",
-                    "Purchased input and named tooling",
-                    "Customer deliverable and economic moat",
-                    "Failure boundary and required operating response",
-                ],
-                "rows": [
-                    [
-                        "Reservation slicer serving isolated batch and inference workloads",
-                        "Authorized H100 or H200 reservations with vLLM serving",
-                        "Measured GPU-hours supported by predictable scheduling and tenant separation",
-                        "Idle commitments consume cash; shrink reservations before renewing capacity",
-                    ],
-                    [
-                        "Inference broker routing workloads across qualified model providers",
-                        "LiteLLM routing over independently contracted compatible provider endpoints",
-                        "Accepted tokens at documented quality and latency service levels",
-                        "Endpoint changes damage output quality; retain tested pinned alternatives",
-                    ],
-                    [
-                        "Managed endpoint operator supporting private enterprise application deployments",
-                        "Dedicated bare-metal capacity with deployment automation and DCGM telemetry",
-                        "Reserved availability plus implementation support and verifiable retention controls",
-                        "Support scope expands silently; price incident coverage and change requests",
-                    ],
-                    [
-                        "Telecom reseller delivering authorized voice and registered messaging",
-                        "Wholesale SIP agreements and approved Bandwidth or Twilio integrations",
-                        "Metered minutes or message segments with traffic-specific route controls",
-                        "Abusive traffic creates carrier exposure; suspend customers and investigate promptly",
-                    ],
-                    [
-                        "Address-capacity broker coordinating legitimate IPv4 leasing and routing",
-                        "Documented lessor authority with ARIN records and appropriate route authorization",
-                        "Usable address blocks supported by reputation checks and routing coordination",
-                        "Blacklisting destroys usability; isolate abuse and enforce contractual remediation",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "2. Reconcile Billings, Retained Contribution, and Owner Profit",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use three separate accounting views: customer billings, "
-                    "retained contribution after upstream supply, and owner net "
-                    "profit after remaining operating costs. Formula v2.0 supplies "
-                    "a 65% retained share, meaning upstream bare-metal and carrier "
-                    "commitments consume 35% of modeled gross billings. For the "
-                    "Conservative case, $150,000 less $52,500 leaves $97,500; "
-                    "subtracting $70,500 of remaining costs produces $27,000. "
-                    "For Base, $675,000 less $236,250 leaves $438,750; "
-                    "subtracting $249,750 produces $189,000. For Scaled, "
-                    "$1,200,000 less $420,000 leaves $780,000; subtracting "
-                    "$324,000 produces $456,000. Gross-basis owner margins "
-                    "are exactly 18%, 28.0%, and 38%. Dividing profit by "
-                    "retained contribution instead produces 27.69%, 43.08%, "
-                    "and 58.46%, rounded to two decimals. Label the denominator "
-                    "every time; otherwise a sales deck can accidentally present "
-                    "two different margins as comparable. The retained revenue "
-                    "range is therefore $97,500–$780,000, with $438,750 "
-                    "at Base. Neither customer product sales nor an enterprise "
-                    "customer's total application spend belongs in these service "
-                    "billings. Track GPU-hours, tokens, minutes, segments, and "
-                    "address-months in separate quantity fields, then reconcile "
-                    "each to its applicable invoice rate. Annual scenario totals "
-                    "are portfolio assumptions, not vendor quotations or evidence "
-                    "that every individual service retains precisely 65%."
-                ),
-                (
-                    "ASC 606 presentation follows control of the specified service, "
-                    "not the percentage a spreadsheet retains. Apply the "
-                    "principal-versus-agent analysis in ASC 606-10-55-36 through "
-                    "55-40 to each performance obligation. An operator controlling "
-                    "capacity before transfer, carrying fulfillment responsibility, "
-                    "and exercising meaningful pricing discretion may present "
-                    "customer service revenue gross with upstream supply as cost. "
-                    "An agent arranging another provider's service generally "
-                    "presents the fee or commission it earns. The scorecard's "
-                    "65% retained-revenue view is a management normalization; "
-                    "it does not establish agent status or make all retained "
-                    "contribution automatically recognizable revenue. Document "
-                    "contracts, control indicators, credits, and performance "
-                    "obligations before choosing ledger treatment. Prepaid Stripe "
-                    "wallet collections normally create a customer liability "
-                    "until the contracted service is delivered; payment success "
-                    "alone does not demonstrate earned revenue. Maintain an "
-                    "append-only usage ledger tying request identifiers to "
-                    "billable quantities, provider charges, credits, and settlement "
-                    "events. Distinguish input tokens, output tokens, cached "
-                    "tokens, retries, and rejected requests in the rate card. "
-                    "For voice, define answer supervision and rounding; for "
-                    "messaging, disclose segment counting and carrier surcharges. "
-                    "Reconcile refunds and service credits against the original "
-                    "usage record rather than burying them in a generic "
-                    "marketing expense. That discipline makes gross and net "
-                    "presentations auditable without confusing either with cash."
-                ),
-                (
-                    "The supplied monthly operating-expense range of $2,000–$14,000 "
-                    "cannot represent every residual cost in every canonical "
-                    "case: Base residual costs alone average $20,812.50 "
-                    "monthly, and Scaled residual costs average $27,000. "
-                    "Preserve the canonical profits and treat the stated range "
-                    "as a core-overhead planning band, with additional labor, "
-                    "variable service costs, selling expense, and reserves "
-                    "itemized separately. The source does not allocate those "
-                    "categories, so the operating budget must substantiate them "
-                    "before a commitment. Do not subtract upstream supply "
-                    "twice or silently reduce labor to force a preferred "
-                    "margin. Conservative and Base each use one full-time "
-                    "operator plus two contractors; Scaled uses two full-time "
-                    "operators plus three contractors, five people total. "
-                    "Separately model settlement timing, refundable wallet "
-                    "balances, supplier deposits, disputed payments, and annual "
-                    "renewals because accounting profit does not fund a "
-                    "reservation invoice before cash arrives. Stress-test "
-                    "utilization, selling-price compression, destination mix, "
-                    "and customer concentration independently. A ten-point "
-                    "utilization decline is not equivalent to a ten-percent "
-                    "unit-price cut when reserved supply remains fixed. "
-                    "For owned hardware, include depreciation and replacement "
-                    "economics; for rented hardware, capture renewal repricing "
-                    "and stranded commitments. The 35%–55% spread aspiration "
-                    "belongs to selected optimized offers, while the canonical "
-                    "18%–38% gross-basis owner margins describe the broader "
-                    "business after its complete cost stack."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 Annual Reconciliation Without Gross-versus-Retained Confusion",
-                "headers": [
-                    "Scenario and staffed operating footprint",
-                    "Gross billings and upstream supply deduction",
-                    "Retained contribution and remaining expense bridge",
-                    "Owner profit and explicitly named margin denominators",
-                ],
-                "rows": [
-                    [
-                        "Conservative operation uses one full-time operator plus two contractors",
-                        "$150,000 gross billings minus $52,500 upstream supply commitments",
-                        "$97,500 retained contribution minus $70,500 remaining annual operating costs",
-                        "$27,000 owner profit; 18% gross-basis margin; 27.69% retained-basis margin",
-                    ],
-                    [
-                        "Base operation uses one full-time operator plus two contractors",
-                        "$675,000 gross billings minus $236,250 upstream supply commitments",
-                        "$438,750 retained contribution minus $249,750 remaining annual operating costs",
-                        "$189,000 owner profit; 28.0% gross-basis margin; 43.08% retained-basis margin",
-                    ],
-                    [
-                        "Scaled operation uses two full-time operators plus three contractors",
-                        "$1,200,000 gross billings minus $420,000 upstream supply commitments",
-                        "$780,000 retained contribution minus $324,000 remaining annual operating costs",
-                        "$456,000 owner profit; 38% gross-basis margin; 58.46% retained-basis margin",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the Spread Before Optimizing the Router",
-                "body": (
-                    "The strongest operational advantage is an auditable relationship "
-                    "between customer promises, supplier obligations, and cash exposure."
-                ),
-                "items": [
-                    "Price reserved GPU commitments against paid utilization, excluding benchmark time, maintenance, and free customer trials from the utilization numerator.",
-                    "Use DCGM to explain hardware behavior, but bill from authenticated application events reconciled against accepted work and contract-defined retry treatment.",
-                    "Maintain a destination-level SIP margin floor including billing increments, number charges, taxes where applicable, and supplier minimum commitments.",
-                    "Set wallet replenishment and concurrency limits from maximum in-flight spend; a positive wallet balance alone cannot prevent parallel-request overspend.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Compare Fifteen Plays by Units, Moats, and Reversal Risk",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The fifteen-row matrix maps distinct sellable offers rather "
-                    "than claiming fifteen independent profit engines. Rows share "
-                    "infrastructure, so revenue must be assigned once to the "
-                    "actual customer deliverable. All unit prices below are "
-                    "illustrative negotiated economics, not current published "
-                    "vendor tariffs or assertions that a named platform permits "
-                    "resale by default. For token routing, one hundred million "
-                    "billable tokens sold at $3 per million creates $300 "
-                    "of service billings; buying the matching workload at "
-                    "$1.80 per million costs $180 before routing, support, "
-                    "and collection. Real invoices require separate input and "
-                    "output weights, cache treatment, and model-specific pricing. "
-                    "For SIP, one million connected minutes sold at $0.009 "
-                    "produces $9,000; $0.006 upstream termination costs "
-                    "$6,000 before number rental, surcharges, and support. "
-                    "For messaging, one million segments with a $0.002 "
-                    "service markup yields $2,000 of markup, not the "
-                    "customer's resulting sales and not necessarily gross "
-                    "accounting revenue. Compare offers using contribution per "
-                    "constrained resource: GPU-hour, concurrent session, approved "
-                    "message throughput, support hour, or committed cash dollar. "
-                    "A large apparent spread on a tiny or operationally "
-                    "fragile workload may be inferior to a narrower spread "
-                    "on predictable replenishing demand. Require a measured "
-                    "customer workload before accepting a supplier minimum."
-                ),
-                (
-                    "The adjacent mapped play "
-                    "b2b_commercial_vcc_interchange_rebate_arbitrage is an "
-                    "accounts-payable distribution business, not GPU utilization "
-                    "income. It embeds automated AP or faster vendor settlement "
-                    "into freight, construction, medical supply, property "
-                    "management, or media workflows, then routes participating "
-                    "vendors to issuer-approved commercial virtual cards. A "
-                    "negotiated 140–195 basis-point rebate on $100 million "
-                    "of eligible settled card volume implies $1.4 million–"
-                    "$1.95 million of gross rebates before customer sharing, "
-                    "platform fees, reversals, and service costs. The $100 "
-                    "million is third-party invoice volume, never operator "
-                    "revenue. Commercial-card classification, issuer terms, "
-                    "merchant acceptance, and any cap must be verified; "
-                    "neither an uncapped rebate nor a particular interchange "
-                    "category follows automatically from issuing a virtual "
-                    "card. Use issuer-supported Level-3 line-item metadata "
-                    "accurately rather than inventing invoice fields. For "
-                    "card-averse vendors, an authorized early-pay ACH "
-                    "alternative with a 1.5%–2% discount on a $10,000 "
-                    "invoice means $150–$200 of supplier-funded discount, "
-                    "whose beneficiary depends on contract allocation. "
-                    "Concentrate on fragmented vendors with genuine acceptance "
-                    "fit. Returned payments and refunded invoices require "
-                    "reversal handling. This adjacent play is mapped for "
-                    "comparison only; none of its hypothetical rebates is "
-                    "added to the volume's canonical $150,000, $675,000, "
-                    "or $1,200,000 service-billing scenarios."
-                ),
-                (
-                    "A durable moat is operational evidence that customers "
-                    "cannot cheaply reproduce: a regression corpus for their "
-                    "model outputs, repeatable deployment manifests, defensible "
-                    "meter reconciliation, and an escalation record showing "
-                    "how incidents were contained. Cheapest-provider routing "
-                    "alone is fragile because published prices converge and "
-                    "the cheapest endpoint can fail the customer's quality "
-                    "test. Maintain provider-specific limits for context "
-                    "length, tool behavior, structured output, throughput, "
-                    "region, and retention before allowing automatic failover. "
-                    "Contract enterprise zero-data-retention at every relevant "
-                    "processor, then disable prompt logging, redact error "
-                    "traces, and test backups and support workflows for "
-                    "payload leakage. Retain necessary billing metadata "
-                    "without retaining customer content. Telecom moats come "
-                    "from clean traffic history, accurate registration, "
-                    "route-specific quality measurements, and fast abuse "
-                    "response, not from finding permissive carriers. IPv4 "
-                    "moats require clean provenance and responsive routing "
-                    "coordination; a letter of authorization does not erase "
-                    "bad reputation. Every offer needs a stop condition "
-                    "that can run without the founder awake: a negative "
-                    "margin floor, exhausted prepaid balance, failed quality "
-                    "benchmark, revoked usage right, or credible abuse signal. "
-                    "The fallback must preserve customer commitments and "
-                    "supplier rules rather than moving prohibited traffic "
-                    "to another account. This is how a small team keeps "
-                    "complexity bounded while increasing billed volume."
-                ),
-            ],
-            "table": {
-                "caption": "Fifteen Mapped Sub-Verticals: Illustrative Units, Named Rails, Defensible Moats, and Failure Fallbacks",
-                "headers": [
-                    "Mapped play and specific customer deliverable",
-                    "Named platform or contracted infrastructure rail",
-                    "Illustrative fee structure and defensible operating advantage",
-                    "Clawback or failure trigger and concrete fallback",
-                ],
-                "rows": [
-                    [
-                        "gpu_reserved_to_spot_inference_slicing: reserved clusters serving isolated inference and interruptible batches",
-                        "Authorized H100/H200/B200 bare metal, vLLM, LiteLLM, and NVIDIA DCGM",
-                        "Eight GPUs at $2 hourly cost; $5 sales at 80% utilization support scheduling-led contribution",
-                        "Idle reservations or abusive jobs erase spread; suspend abuse, reroute permitted work, and reduce commitments",
-                    ],
-                    [
-                        "Multi-provider token routing for latency-sensitive enterprise application requests",
-                        "LiteLLM with separately authorized OpenAI, Anthropic, and Together AI endpoints",
-                        "One hundred million tokens at $3 per million yields $300; quality-tested routing protects retention",
-                        "Model drift or retention mismatch blocks substitution; pin versions and select a contract-compatible tested endpoint",
-                    ],
-                    [
-                        "Embedding pipeline brokerage for recurring enterprise document indexing jobs",
-                        "vLLM-compatible embedding deployments with customer-controlled Qdrant indexing workflows",
-                        "Fifty million tokens at $0.20 per million yields $10; recurring document connectors justify additional service fees",
-                        "Dimension changes invalidate indexes; version embeddings and rebuild only under an agreed migration plan",
-                    ],
-                    [
-                        "Interruptible overnight inference batches with explicit completion deadlines",
-                        "Authorized Runpod or Vast.ai capacity with checkpointed batch scheduling",
-                        "One thousand sold GPU-hours at $2.40 yields $2,400 against illustrative $1.40 hourly supply",
-                        "Preemption threatens deadlines; checkpoint work and reserve a priced noninterruptible recovery allocation",
-                    ],
-                    [
-                        "Dedicated private inference endpoints with reserved customer availability",
-                        "Contracted CoreWeave capacity running isolated customer-specific vLLM deployment stacks",
-                        "A $4,000 monthly endpoint against $2,500 supply leaves $1,500 before support and credits",
-                        "Availability breaches trigger contractual credits; maintain tested replacement capacity and bounded service remedies",
-                    ],
-                    [
-                        "Customer-authorized LoRA training jobs with reproducible artifact delivery",
-                        "Hugging Face PEFT workflows on appropriately isolated reserved GPU workers",
-                        "Forty GPU-hours billed at $6 creates $240 against $80 supply at $2 hourly",
-                        "Unusable adapters cause rework; use acceptance benchmarks and preserve reproducible training configuration",
-                    ],
-                    [
-                        "Cache-aware inference packaging for repetitive approved enterprise prompts",
-                        "Supported vLLM prefix caching with strictly controlled tenant-scoped cache policies",
-                        "One million requests with $0.001 processing savings releases $1,000 before cache infrastructure costs",
-                        "Cross-tenant exposure or stale outputs defeats savings; isolate caches and disable affected reuse immediately",
-                    ],
-                    [
-                        "Wholesale SIP termination resale for screened business calling traffic",
-                        "Authorized Bandwidth or Telnyx agreements with Kamailio and FreeSWITCH routing",
-                        "One million minutes at $0.009 versus $0.006 supply leaves $3,000 before remaining costs",
-                        "Fraud, surcharge changes, or poor answer quality require route suspension and authorized carrier substitution",
-                    ],
-                    [
-                        "Registered 10DLC messaging capacity with segment-aware customer billing",
-                        "The Campaign Registry with approved Twilio or Bandwidth messaging relationships",
-                        "One million segments carrying $0.002 markup yields $2,000 before registration and support expenses",
-                        "Misregistered campaigns or unlawful traffic cause blocking; stop sending and correct documented campaign details",
-                    ],
-                    [
-                        "Business number inventory management with authorized SIP service attachment",
-                        "Telnyx or Bandwidth number provisioning under the applicable resale agreement",
-                        "Five hundred numbers billed at $2 monthly yields $1,000 against illustrative $500 number rental",
-                        "Porting disputes or emergency-calling gaps require ownership verification and service-specific provisioning remediation",
-                    ],
-                    [
-                        "IPv4 address leasing coordination for legitimate hosting customer allocations",
-                        "Documented IPXO arrangements with ARIN record checks and routing authorization",
-                        "A 256-address block at $0.60 monthly yields $153.60 against $89.60 supply at $0.35",
-                        "Abuse listings or revoked authority destroy usability; isolate offending allocations and enforce replacement terms",
-                    ],
-                    [
-                        "Customer burst-capacity brokerage around predictable product launch windows",
-                        "Explicitly permitted AWS EC2 Capacity Blocks or contracted specialist GPU reservations",
-                        "Two hundred reserved GPU-hours at $5 retail yields $1,000 against illustrative $600 supply",
-                        "Unused launch capacity remains payable; require customer deposits and noncancelable reservation acknowledgment",
-                    ],
-                    [
-                        "Managed GPU development workspaces for small machine-learning teams",
-                        "JupyterHub with isolated containers on contracted Lambda or comparable GPU capacity",
-                        "Twenty workspaces at $150 monthly yields $3,000 against a measured $1,800 resource allowance",
-                        "Idle notebooks and privileged workloads consume margin; enforce sleep policies and restrict execution privileges",
-                    ],
-                    [
-                        "Region-qualified inference continuity packages for production application operators",
-                        "LiteLLM with separately contracted Azure and AWS regional service alternatives",
-                        "A $1,000 monthly continuity fee against $600 reserved backup cost leaves $400 before testing",
-                        "Regional transfer restrictions or model incompatibility block failover; use only prequalified permitted destinations",
-                    ],
-                    [
-                        "b2b_commercial_vcc_interchange_rebate_arbitrage: embedded AP settlement and commercial-card distribution",
-                        "Issuer-approved Visa or Mastercard commercial programs with authorized Marqeta or Stripe Issuing integrations",
-                        "$100 million eligible volume at 140–195 basis points yields $1.4 million–$1.95 million gross rebates",
-                        "Refunds reverse rebates and vendors may reject cards; provide accurate Level-3 data and agreed early-pay ACH",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Build the Permission, Metering, and Incident System Before Scaling",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "For telecom, determine the service role before automating "
-                    "provisioning. Covered voice providers face STIR/SHAKEN and "
-                    "Robocall Mitigation Database requirements under 47 CFR "
-                    "64.6301 and 64.6305; duties differ by provider "
-                    "category, network, and applicable exceptions. A reseller "
-                    "cannot assume its upstream provider's filing automatically "
-                    "discharges its own obligations. Authentication attests "
-                    "specified calling information; it does not establish "
-                    "that a call is wanted or lawful. Apply the Telephone "
-                    "Consumer Protection Act, 47 U.S.C. 227, and the "
-                    "implementing restrictions in 47 CFR 64.1200 to the "
-                    "actual calling or messaging activity. Registered 10DLC "
-                    "campaigns support carrier delivery requirements but "
-                    "do not replace required permission, identification, "
-                    "or opt-out handling. Evaluate FCC Form 499-A "
-                    "registration and reporting using the entity's actual "
-                    "telecommunications activity and applicable instructions; "
-                    "contribution exemptions do not necessarily remove "
-                    "registration or reporting duties. Where interconnected "
-                    "VoIP is supplied, address applicable emergency-calling "
-                    "requirements under 47 CFR 9.11. Keep customer "
-                    "identity, intended traffic, number authority, destination "
-                    "limits, and escalation contacts together in the "
-                    "provisioning record. Automated least-cost routing must "
-                    "exclude unauthorized routes and destinations regardless "
-                    "of price. Treat sudden destination changes, unusually "
-                    "short calls, and spending acceleration as investigation "
-                    "signals rather than proof of legitimate growth."
-                ),
-                (
-                    "For compute, establish separate control-plane and workload "
-                    "identities, least-privilege access, tenant-specific secrets, "
-                    "network restrictions, and a tested destruction process "
-                    "for ephemeral storage. Quantized serving improves "
-                    "economics only when output quality remains acceptable; "
-                    "it does not sanitize inputs or isolate customer data. "
-                    "Prevent unauthorized privileged containers and "
-                    "customer-controlled access to host management interfaces. "
-                    "AUP screening should prohibit specifically disallowed "
-                    "mining, credential abuse, and unlawful content processing "
-                    "without treating every high-utilization job as abuse. "
-                    "Bind wallet checks to a server-side reservation of "
-                    "estimated maximum request cost, then settle against "
-                    "actual metered usage; otherwise concurrent requests "
-                    "can all pass the same balance check. Stripe webhooks "
-                    "need signature verification, replay-safe event handling, "
-                    "and reconciliation with settlement records before "
-                    "crediting balances. Record request metadata sufficient "
-                    "to explain billing while excluding protected payloads "
-                    "from ordinary logs. Preserve evidence under documented "
-                    "retention rules when investigating incidents, and "
-                    "distinguish that narrow process from routine content "
-                    "retention promises. The Computer Fraud and Abuse "
-                    "Act, 18 U.S.C. 1030, reinforces the importance "
-                    "of authorization boundaries; it does not prescribe "
-                    "a complete tenant-isolation design. Test isolation "
-                    "with your own authorized accounts and workloads, "
-                    "including storage reuse, cache separation, and "
-                    "failed-request logging, before admitting external tenants."
-                ),
-                (
-                    "The launch sequence should prove one closed loop: "
-                    "an approved customer requests an authorized service, "
-                    "the system reserves spend, the upstream fulfills "
-                    "the work, the meter records accepted units, and "
-                    "the ledger releases or consumes the reservation "
-                    "exactly once. Exercise duplicate webhooks, delayed "
-                    "provider invoices, partial responses, model outages, "
-                    "message segmentation, and SIP rounding during the "
-                    "pilot. Then compare customer charges with upstream "
-                    "charges and explain every material variance. Use "
-                    "a daily exception queue for negative contribution, "
-                    "unallocated usage, stale deposits, failed replenishment, "
-                    "and unexplained credits. Assign each exception a "
-                    "person and response time instead of adding another "
-                    "dashboard nobody owns. Before expanding commitments, "
-                    "require evidence of repeat paid demand across "
-                    "multiple billing cycles and enough cash to survive "
-                    "the next supplier invoice without spending refundable "
-                    "customer balances. Scale the capacity unit that "
-                    "already works rather than launching every mapped "
-                    "offer simultaneously. Keep the canonical portfolio "
-                    "cases visible, but manage the business through "
-                    "measured cohorts and destination-specific economics. "
-                    "A small team earns its efficiency by narrowing "
-                    "promises, automating reversible routine work, and "
-                    "escalating consequential exceptions. The final "
-                    "decision is whether customers repeatedly buy a "
-                    "reliable service at a price covering every "
-                    "obligation, not whether a demonstration can "
-                    "generate tokens or connect a call."
-                ),
-            ],
-            "table": {
-                "caption": "Four Launch Verification Records Connecting Authority, Delivery, and Cash",
-                "headers": [
-                    "Verification record and accountable operating owner",
-                    "Required evidence before admitting paid customer traffic",
-                    "Automated measurement and exception handling mechanism",
-                    "Failure response before additional commitments are accepted",
-                ],
-                "rows": [
-                    [
-                        "Supplier authority record maintained by the commercial contract owner",
-                        "Executed resale rights, region permissions, rate schedules, and suspension terms",
-                        "Versioned supplier terms connected to service-specific purchasing and routing rules",
-                        "Disable unsupported offers and obtain corrected rights before accepting orders",
-                    ],
-                    [
-                        "Compute isolation record maintained by the infrastructure operations specialist",
-                        "Tested tenant boundaries, payload retention settings, and quality acceptance results",
-                        "DCGM telemetry correlated with application meters and authorized isolation tests",
-                        "Quarantine affected workers and restore only after documented corrective testing",
-                    ],
-                    [
-                        "Telecom eligibility record maintained by the designated service operations owner",
-                        "Applicable provider filings, campaign records, number authority, and traffic permissions",
-                        "Destination margin floors with complaint escalation and registration status monitoring",
-                        "Stop affected traffic and correct the underlying authorization or configuration",
-                    ],
-                    [
-                        "Revenue reconciliation record maintained by the owner and accounting support",
-                        "Matched wallet liabilities, delivered units, supplier charges, and customer credits",
-                        "Daily ledger reconciliation with duplicate-event protection and aged exception reporting",
-                        "Freeze additional exposure until missing charges or unsupported balances are resolved",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Pre-Flight Checks That Must Produce Evidence",
-                "body": (
-                    "Release paid traffic only when the service-specific records "
-                    "demonstrate authority, isolation, metering, and controlled exposure."
-                ),
-                "items": [
-                    "Verify executed upstream resale rights and confirm that each proposed fallback provider permits the same customer workload and geographic handling.",
-                    "Run two-tenant isolation and zero-data-retention tests covering caches, storage reuse, traces, backups, and support access.",
-                    "Complete applicable telecom provider filings and campaign registrations; verify number authority, opt-out handling, destination controls, and emergency-calling scope.",
-                    "Replay a complete prepaid billing cycle with concurrent requests, duplicate events, refunds, and supplier reconciliation; prove that balances cannot be spent twice.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Qualify one narrow paid workload",
-                    "action": "Collect a representative authorized workload and a signed service specification.",
-                    "detail": "Record required quality, latency, region, usage units, retention, support boundaries, and customer acceptance criteria before pricing.",
-                },
-                {
-                    "step": 2,
-                    "title": "Secure matching supply and fallback rights",
-                    "action": "Contract the smallest viable capacity commitment with a compatible authorized backup.",
-                    "detail": "Compare cancellation exposure, resale permission, destination pricing, minimum spend, and the cash required through the first renewal.",
-                },
-                {
-                    "step": 3,
-                    "title": "Prove collection and usage reconciliation",
-                    "action": "Run a prepaid pilot and reconcile every delivered unit to both ledgers.",
-                    "detail": "Reserve in-flight spend, validate settlement events, classify credits, and document the principal-versus-agent assessment for each deliverable.",
-                },
-                {
-                    "step": 4,
-                    "title": "Expand only the measured profitable unit",
-                    "action": "Increase capacity after repeat paid demand and incident tests support the next commitment.",
-                    "detail": "Review utilization, quality, destination contribution, exception workload, customer concentration, and available cash before each supplier renewal.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": (
-        "The durable spread belongs to the operator who controls promises, "
-        "permissions, meters, and cash—not the operator who merely finds a cheaper GPU."
-    ),
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Choose one archetype and write a service specification covering billable units, quality, latency, region, retention, and credit remedies.",
-        "Obtain executed upstream resale permission and a contract-compatible fallback before committing to GPU reservations or wholesale telecom minimums.",
-        "Build a ledger separating gross service billings, 65% modeled retained contribution, upstream costs, remaining costs, and owner profit.",
-        "Benchmark vLLM and LiteLLM against the customer's acceptance corpus, then test tenant isolation and the complete payload-retention path.",
-        "Implement prepaid spend reservation, idempotent Stripe event handling, DCGM-linked observability, and daily supplier-to-customer reconciliation.",
-        "Verify applicable voice-provider duties, 10DLC registration, number authority, and incident ownership before increasing traffic or commitments.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "47 CFR 64.6301 — Caller ID Authentication",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.6301",
-            "relevance": (
-                "Establishes caller ID authentication duties for covered providers; "
-                "map the actual service role and network before provisioning voice traffic."
-            ),
-        },
-        {
-            "title": "47 CFR 64.6305 — Robocall Mitigation and Certification",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.6305",
-            "relevance": (
-                "Supports provider-specific mitigation, certification, database, "
-                "and traffic-acceptance controls rather than reliance on upstream assurances alone."
-            ),
-        },
-        {
-            "title": "47 U.S.C. 227 — Restrictions on Telephone Equipment Use",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Provides the statutory framework for restrictions affecting covered "
-                "calling and messaging activity; carrier registration does not replace these duties."
-            ),
-        },
-        {
-            "title": "47 CFR 64.1200 — Delivery Restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": (
-                "Supplies activity-specific calling and messaging restrictions, "
-                "including applicable permission and do-not-call requirements."
-            ),
-        },
-        {
-            "title": "47 CFR 64.1195 — Registration of Interstate Telecommunications Providers",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1195",
-            "relevance": (
-                "Requires covered providers to address registration through the "
-                "specified filing framework before offering covered services."
-            ),
-        },
-        {
-            "title": "47 CFR 54.706 and 54.711 — Contributions and Reporting",
-            "url": "https://www.ecfr.gov/current/title-47/section-54.706",
-            "relevance": (
-                "Defines covered contribution activity; read alongside section 54.711 "
-                "and applicable FCC Form 499 instructions to determine reporting treatment."
-            ),
-        },
-        {
-            "title": "47 CFR 54.711 — Contributor Reporting Requirements",
-            "url": "https://www.ecfr.gov/current/title-47/section-54.711",
-            "relevance": (
-                "Anchors reporting obligations associated with universal service "
-                "contributions and the applicable revenue reporting framework."
-            ),
-        },
-        {
-            "title": "47 CFR 9.11 — Interconnected VoIP Emergency Calling",
-            "url": "https://www.ecfr.gov/current/title-47/section-9.11",
-            "relevance": (
-                "Requires service-specific emergency-calling analysis when the "
-                "operator supplies interconnected VoIP rather than merely unrelated capacity."
-            ),
-        },
-        {
-            "title": "18 U.S.C. 1030 — Fraud and Related Activity in Connection with Computers",
-            "url": "https://www.law.cornell.edu/uscode/text/18/1030",
-            "relevance": (
-                "Provides statutory context for authorization boundaries, "
-                "customer workload screening, and controlled access to shared infrastructure."
-            ),
-        },
-    ],
-}
+CHAPTER_1 = {'id': 'Q1',
+ 'chapter_id': 'Q1',
+ 'chapter_number': 1,
+ 'question_number': 1,
+ 'slug': 'from-mining-rig-to-ai-rental-rig',
+ 'question_prompt': 'How do practitioners hand-build, host, and monetize their own GPU rental rigs, and '
+                    'what carries over from (and goes wrong in) GPU crypto mining?',
+ 'kicker': 'Q1 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'From Mining Rig to AI Rental Rig: Building and Hosting Your Own GPUs for Profit',
+ 'subtitle': "Hand-building 100 to 1,000 GPU servers, CMP 170HX and budget 'AI' card rental servers, "
+             "$3,000 rental-PC payback math, $10K of rental-platform testing, Nvidia's home "
+             'mini-datacenter payouts, CLORE and Pearl/Monero dual mining, rig power and cooling math, '
+             'FPGA competition, Windows interrupt crashes, and cryptojacking malware',
+ 'layout_template': 'opportunity_overview',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators who moved from crypto mining to AI rentals agree the money now sits in '
+                      'renting VRAM, not hashing. Red Panda Mining calls GPU mining dead at residential '
+                      'power, while Modern Mining and BearMarketMiner report daily rental income from '
+                      '4090, 5090 and 4060 Ti rigs. The shared prerequisites are fiber or strong symmetric '
+                      'upload, high system RAM, NVMe storage, and power infrastructure held near 80% load. '
+                      'The street numbers: Vast takes about 25%, SimplePod 20%, and Salad 10% plus 40 '
+                      'cents. A 4090 on Salad nets about $2.92 a day, a 10x 170HX server pulled $36.37 in '
+                      "a day, and Alec Glover's chassis run $1,500-$2,000. The disagreements are "
+                      'newest-generation hardware versus cheap PCIe 3.0 servers, building versus buying '
+                      'with a warranty, and high-end versus budget cards.',
+ 'key_metrics': [{'label': 'Marketplace cut on Vast, RunPod and ShadeForm',
+                  'metric': 'Marketplace cut on Vast, RunPod and ShadeForm',
+                  'value': 'About 25% of rental revenue',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Glover rates 25% as cheap because the marketplace handles all marketing, '
+                             'sales and support for the host.',
+                  'source': 'Alec Glover ([iuLuDflfEE4 @ 00:15:18])'},
+                 {'label': 'Salad 4090 net daily profit',
+                  'metric': 'Salad 4090 net daily profit',
+                  'value': '$2.92 per day',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "18 cents an hour ($4.32 a day), minus Salad's 10% fee and a 40-cent "
+                             'deduction ($3.88), minus $0.96 of power.',
+                  'source': 'Modern Mining ([WJnsgbZsg0U @ 00:37:51])'},
+                 {'label': '10x 170HX server earnings over about 24 hours',
+                  'metric': '10x 170HX server earnings over about 24 hours',
+                  'value': '$36.37',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Ten CMP 170HX cards unlocked to 64 GB each, rented on SimplePod at about 20 '
+                             'cents per GPU per hour.',
+                  'source': 'Red Panda Mining ([SJbOF9Ufm0Q @ 00:08:10])'},
+                 {'label': 'Steady-state power load target',
+                  'metric': 'Steady-state power load target',
+                  'value': '80% of rated capacity',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'All power infrastructure, from PSUs to PDUs to rack circuits, sized to sit '
+                             'at a consistent 80% load.',
+                  'source': 'Alec Glover ([CgsDEFaGLJ0 @ 00:27:22])'}],
+ 'sections': [{'heading': '1. The Practitioner Consensus: Rented VRAM Replaced Hashrate',
+               'paragraphs': ['The operators who lived through the Ethereum era agree the hashing business '
+                              'is finished and rented VRAM is the replacement. Red Panda Mining puts it '
+                              "without hedging: 'GPU mining is dead, and it's not profitable at all, "
+                              "especially at any residential electric.' The same operator has redirected "
+                              'cards, servers and traded-in ASICs into rental fleets [mfQE_CptyLA @ '
+                              '00:04:26]. Modern Mining reaches the same conclusion from a single-card '
+                              "consumer build. A long parts-and-profit walkthrough ends with 'Do not buy "
+                              "crypto miners,' and the channel runs eight rigs on rental software instead "
+                              '[WJnsgbZsg0U @ 00:42:42]. Mining-native channels quietly concede the point. '
+                              'Honey With Crypto frames a 5 to 6 lakh rupee rig as dead capital if its '
+                              'coin collapses and names AI GPU renting as the escape hatch [Wp6L77ZvZw8 @ '
+                              '00:00:22]. Crypto Miners Rigs, running about 50 miners, adds a hard rule: '
+                              "if revenue minus power doesn't leave a cushion, don't buy the cards for "
+                              'mining alone. The channel also notes that GPUs, unlike ASICs, keep their '
+                              'resale value [1q_WZwOjByQ @ 00:07:22]. That resale angle is what makes the '
+                              'pivot workable. Silicon that stopped paying on hashrate can be relisted to '
+                              'renters who pay by the hour for memory and compute.',
+                              'The second point of agreement is that renters pick machines on '
+                              'infrastructure, not just on the GPU model. Red Panda Mining runs its rental '
+                              'boxes on fiber internet with a static IP and reports Vast machines getting '
+                              'verified within one to two days on that setup. The channel is also fitting '
+                              'a 4 TB Samsung NVMe to the V100 server [ET1JYocpu0M @ 00:08:32]. Modern '
+                              'Mining sets the connectivity floor at 500 Mb, runs eight rigs on a 1 Gb '
+                              'symmetric line, and stresses that upload is the number that matters '
+                              '[WJnsgbZsg0U @ 00:10:01]. BearMarketMiner measured the memory effect '
+                              'directly on OctaSpace. A 26 GB rig landed 7 rentals in roughly 30 days, '
+                              'while a 63 GB rig landed 82. Both test builds carried 64 GB of system RAM, '
+                              'paired with a 1 TB disk and at least 100/100 internet as the OctaSpace '
+                              'baseline [egH5hKD913Y @ 00:10:53]. At warehouse scale Alec Glover applies '
+                              'the same thinking to storage. Every node gets four U.2 drives through an '
+                              'SFF-8654 backplane, treated as scratch space or RAID0 rather than primary '
+                              'storage [CgsDEFaGLJ0 @ 00:18:33]. The shared lesson is that a fast card '
+                              'stuck behind thin RAM, slow disks or weak upload simply sits unrented.',
+                              'Power discipline is the third shared baseline, and the mining and '
+                              'data-center camps use the same number. Alec Glover runs all power '
+                              'infrastructure at a consistent 80% steady-state load. A 4090 server is '
+                              'sized at about 4.6 kW (GPU TDP plus 1,000 W) on four 1,600 W supplies, and '
+                              '5090 servers move to five supplies with one PDU each [CgsDEFaGLJ0 @ '
+                              '00:27:42]. Crypto Miners Rigs applies the same 80% rule to an open-frame '
+                              'rig. Count cards at their planned power limit plus about 150 W for the '
+                              'platform, and keep continuous load near 80% of the PSU rating. A 15 A/120 V '
+                              'circuit supports only about 12 A, or 1,440 W, so bigger rigs need 20 A or '
+                              '240 V [1q_WZwOjByQ @ 00:03:38]. Red Panda Mining builds in headroom the '
+                              'same way, planning only six to eight of ten servers on a rack fed by three '
+                              '30 A/240 V circuits [mfQE_CptyLA @ 00:15:12]. Heat is the other half of the '
+                              'equation. Modern Mining exhausts rig heat through a window with a 50 W fan. '
+                              'Dumping it indoors roughly doubles the power cost, though it offsets '
+                              'heating in winter [WJnsgbZsg0U @ 00:10:33]. Nobody treats electrical and '
+                              'thermal planning as optional once multiple cards run around the clock.'],
+               'table': {'caption': 'Where the GPU rental operators line up: the consensus baseline before '
+                                    'buying a single card',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Why It Matters for Operators',
+                                     'Expert Source'],
+                         'rows': [['Hash mining no longer pays at home',
+                                   'GPU mining called dead at residential electricity; fleet pivoted to '
+                                   'Vast.ai and SimplePod rentals',
+                                   'Rental income replaces hashrate as the reason to own the cards',
+                                   'Red Panda Mining ([mfQE_CptyLA @ 00:04:26])'],
+                                  ['Marketplace fees are a cost worth paying',
+                                   'Vast, RunPod and ShadeForm take about 25 percent of rental revenue',
+                                   'No marketing, sales or support work, so 25 percent counts as cheap',
+                                   'Alec Glover ([iuLuDflfEE4 @ 00:15:34])'],
+                                  ['System RAM drives how often rigs rent',
+                                   'A 26 GB rig got 7 rentals in about 30 days versus 82 at 63 GB',
+                                   'Budget for 64 GB of system RAM instead of skimping on memory',
+                                   'BearMarketMiner ([egH5hKD913Y @ 00:10:53])'],
+                                  ['Never cheap out on the RAM or the GPU',
+                                   'Used 64 GB DDR4 for $320 paired with a used $2,100 TUF 4090',
+                                   'CPU and board can be bargain parts, while memory and card cannot',
+                                   'Modern Mining ([WJnsgbZsg0U @ 00:08:41])'],
+                                  ['Hold power at 80 percent continuous load',
+                                   'All power infrastructure kept at a consistent 80 percent steady-state '
+                                   'load',
+                                   'Sets PSU, PDU and circuit counts before any cards get purchased',
+                                   'Alec Glover ([CgsDEFaGLJ0 @ 00:27:22])'],
+                                  ['Fiber and a static IP speed up verification',
+                                   'Fiber internet plus a static IP got Vast machines verified within one '
+                                   'to two days',
+                                   'Connectivity is a listing prerequisite, not an afterthought upgrade '
+                                   'later',
+                                   'Red Panda Mining ([ET1JYocpu0M @ 00:08:32])'],
+                                  ['Multi-GPU nodes attract large-model renters',
+                                   'Renters want multi-GPU nodes so they can pool VRAM for large LLMs',
+                                   'Favors eight- and ten-GPU servers over scattered single-card boxes',
+                                   'Red Panda Mining ([ET1JYocpu0M @ 00:10:33])']]}},
+              {'heading': '2. Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Modern Mining's single-card build is the cleanest consumer template for "
+                              'Salad. The parts list: a used ASUS TUF 4090 at $2,100, a no-name 1000 W PSU '
+                              'with a native 12V 600 W cable for about $100, an $80 MSI B550 board, a $90 '
+                              'Ryzen 5500, a $15 frame, a $10 Govee smart plug, 64 GB of used eBay DDR4 '
+                              'for $320, a $20 Peerless Assassin cooler and a 1 TB NVMe [WJnsgbZsg0U @ '
+                              '00:02:05]. The unit economics are spelled out step by step. Eighteen cents '
+                              "an hour, which Modern Mining calls the cap, equals $4.32 a day. Salad's 10% "
+                              'cash-out fee and a 40-cent deduction cut that to $3.88. Roughly 0.4 kW of '
+                              'draw over 24 hours costs $0.96, leaving $2.92 a day. That is about $854 a '
+                              'year at 80% uptime and a 3.5-year breakeven, before counting 80-90% card '
+                              "resale [WJnsgbZsg0U @ 00:37:51]. BearMarketMiner lists Salad's entry bar as "
+                              '32 GB RAM, 500 GB storage and about 50 Mb each way. A 5090 prices around '
+                              '0.237 there, and a 4060 Ti around 6 cents, averaging 7 to 13 cents '
+                              '[egH5hKD913Y @ 00:12:53]. The tuning trick: locking the 7950X at 1600 MHz '
+                              'dropped system draw from 600 W to 318 W. Power-limiting below 90% on Salad, '
+                              'though, gets the rig degraded [egH5hKD913Y @ 00:21:18].',
+                              'Red Panda Mining runs the opposite playbook: cheap ex-enterprise servers '
+                              'packed with older high-VRAM cards. The core buy was a pallet of ten '
+                              'Gigabyte G481-HA0 servers at $500 each plus $600 freight. The upgrades were '
+                              'Xeon Gold 6152s at about $350 for 22, plus 32 sticks of 16 GB DDR4-2400 ECC '
+                              'RDIMM at $40-50 apiece [mfQE_CptyLA @ 00:12:51]. Into the Gigabyte chassis '
+                              'go eight passively cooled Tesla V100 16 GB cards at about CA$400-420 each. '
+                              'They rent for 8-20 cents an hour, against 8-15 cents for a 5060 Ti that '
+                              'costs nearly CA$1,000 after tax. The V100 buys similar rent at half the '
+                              'price, with a projected $25-40 a day and a 4-6 month ROI [ET1JYocpu0M @ '
+                              '00:07:02]. The 170HX server is the payoff: ten cards unlocked to 64 GB each '
+                              'for 640 GB of VRAM, rented at 20 cents per GPU per hour. It earned $30.42 '
+                              "for 9 GPUs over 19 hours and $36.37 over about 24 hours. After SimplePod's "
+                              '20% fee, 20 cents nets about 16 cents, or $38.40 per full day, on cards '
+                              'bought for $150-170 [SJbOF9Ufm0Q @ 00:08:10]. Alec Glover maps the sales '
+                              'channels above that. Vast, RunPod and ShadeForm take about 25%, while '
+                              'resellers such as HydroHost, ShadeForm and FluidStack take 7.5-15% on '
+                              'one-to-two-year contracts [iuLuDflfEE4 @ 00:17:08].',
+                              "At warehouse scale, Alec Glover's hardware rules come from weeks lost to "
+                              'unstable risers and adapters. Buy ASRock boards with native SlimSAS (19 '
+                              'ports, eight GPUs at x16, a 14-GPU limit), or MCIO for Gen5. Cheap '
+                              'slot-to-SlimSAS adapters threw AER errors and driver crashes after weeks, '
+                              'and 10GTech Gen5 risers failed within 30 minutes. Only C-Payne risers, at '
+                              'over $100 per GPU, and One Chassis assemblies, at about $80, stayed stable '
+                              "[CgsDEFaGLJ0 @ 00:13:22]. Gen4 moves 2 GB/s per lane against Gen5's 4 GB/s, "
+                              'about 24 versus 48 GB/s at x16 in practice. Even so, dropping Gen5 cards '
+                              'into Gen4/DDR4 systems saved roughly $10K per server, and the 5090 '
+                              "inference customer didn't care [CgsDEFaGLJ0 @ 00:05:12]. Red Panda Mining "
+                              'draws the line lower down: no 4090s on Gen3, which the channel calls a '
+                              'waste. Its 8x4090 plan is therefore a 7U PCIe 5.0 MCIO build rather than a '
+                              'reuse of the Gen3 Octominer box [X2uIX3DDPu0 @ 00:07:29]. Crypto LLC adds '
+                              'the riser diagnosis from mining farms. When new cards crash Windows 11 and '
+                              "System interrupts sit at 7-10%, the culprit is 'most of the time' a riser, "
+                              'even though BIOS shows every PCIe port green. Swapping the bad riser '
+                              'dropped interrupts to 0-1% [nHwXk9HCuYI @ 00:04:18].'],
+               'table': {'caption': 'Rental platforms, fees and real rates logged by the operators',
+                         'headers': ['Platform or Setup',
+                                     'Rate or Fee Reported',
+                                     'Operator Detail',
+                                     'Expert Source'],
+                         'rows': [['Vast.ai marketplace with a single 5090',
+                                   "About 25 percent cut believed to be added to the renter's price",
+                                   '5090 earned about 40 cents an hour, roughly $9.30 a day',
+                                   'Red Panda Mining ([mfQE_CptyLA @ 00:06:55])'],
+                                  ['SimplePod.ai with the ten-card 170HX server',
+                                   '20 percent fee, so 20 cents per GPU nets about 16 cents',
+                                   'Works out to about $38.40 per full day of rental',
+                                   'Red Panda Mining ([SJbOF9Ufm0Q @ 00:08:10])'],
+                                  ['Salad with a single used 4090 rig',
+                                   '10 percent cash-out fee plus a 40-cent deduction',
+                                   '4090 at the 18-cent cap nets about $2.92 a day after power',
+                                   'Modern Mining ([WJnsgbZsg0U @ 00:37:51])'],
+                                  ['OctaSpace with 4060 Ti and 5090 test rigs',
+                                   '4060 Ti at 6-9 cents, newcomers 7.5-8 cents; 5090 at 23-35 cents',
+                                   '5090 rented about 45 of 90 days, so plan around 25 cents',
+                                   'BearMarketMiner ([egH5hKD913Y @ 00:15:20])'],
+                                  ['Nosana benchmark and premium job market',
+                                   'About 13 cents per 55-minute job after a benchmark every two hours',
+                                   'Premium 5090 market closed, though premium 5090s fetch nearly 68 cents',
+                                   'BearMarketMiner ([egH5hKD913Y @ 00:08:26])'],
+                                  ['Resellers HydroHost, ShadeForm and FluidStack on contract',
+                                   '7.5 to 15 percent margin on one-to-two-year contracts',
+                                   'Long-term deals instead of hourly marketplace spot rentals',
+                                   'Alec Glover ([iuLuDflfEE4 @ 00:17:08])'],
+                                  ['Vast.ai with an eight-GPU 3080 rig',
+                                   '$0.075 per GPU hour, $0.609 per server hour',
+                                   'About $14.61 a day after being priced lowest among eight-GPU rigs',
+                                   'Red Panda Mining ([ET1JYocpu0M @ 00:11:23])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small moves the rental operators use to squeeze more out of each rig',
+                           'body': 'Four field-tested adjustments covering card selection, power draw, '
+                                   'used-card buying and vendor quotes.',
+                           'items': ['SimplePod wants 30-series cards, not more 4090s or 5090s; 3090s and '
+                                     '3060s rent consistently at low power draw [Red Panda Mining — '
+                                     'mfQE_CptyLA @ 00:08:39].',
+                                     'Pin the CPU clock: locking a 7950X at 1600 MHz cut system draw from '
+                                     '600 W to 318 W, but never power-limit below 90% on Salad or the rig '
+                                     'gets degraded [BearMarketMiner — egH5hKD913Y @ 00:21:18].',
+                                     'Test used GPUs in person before paying, price-check on gpudeals.net, '
+                                     'seat the 12V cable fully and run a 14-gauge power cable [Modern '
+                                     'Mining — WJnsgbZsg0U @ 00:14:04].',
+                                     'Play OEMs against each other: Glover cites Dell at $1M versus '
+                                     'Supermicro at $750K, with OEM margins around 10% and sometimes 8% '
+                                     '[Alec Glover — CgsDEFaGLJ0 @ 00:54:07].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Spec the box for what renters filter on',
+                              'action': 'Lock in upload bandwidth, system RAM and NVMe storage before '
+                                        'choosing the card count.',
+                              'detail': 'Run at least 500 Mb, ideally 1 Gb symmetric, because upload '
+                                        'matters [Modern Mining — WJnsgbZsg0U @ 00:10:01]. Carry high '
+                                        'system RAM: a 63 GB rig got 82 rentals versus 7 at 26 GB '
+                                        '[BearMarketMiner — egH5hKD913Y @ 00:10:53].'},
+                             {'step': 2,
+                              'title': 'Configure BIOS and remote access for unattended uptime',
+                              'action': 'Set BIOS for automatic recovery and install remote and '
+                                        'update-blocking tools.',
+                              'detail': 'Turn XMP off, set restore after AC power loss to on, and enable '
+                                        'SVM. Then install Stop Updates 10, Chrome Remote Desktop and '
+                                        'Nvidia drivers [Modern Mining — WJnsgbZsg0U @ 00:23:42].'},
+                             {'step': 3,
+                              'title': 'Burn in and hunt down riser faults before listing',
+                              'action': 'Stress-test every GPU for days and watch for throttling or '
+                                        'interrupt spikes.',
+                              'detail': 'Run the C-Payne stress tool for 48 hours to a week and flag drops '
+                                        'like a 4090 falling from 450 W to 230 W [Alec Glover — '
+                                        'CgsDEFaGLJ0 @ 00:46:26]. On Windows, System interrupts at 7-10% '
+                                        'point to a bad riser [Crypto LLC — nHwXk9HCuYI @ 00:01:27].'},
+                             {'step': 4,
+                              'title': 'List low, get rented, and clear verification',
+                              'action': 'Undercut comparable listings to win first rentals, then relist if '
+                                        'the machine stalls unverified.',
+                              'detail': 'Red Panda priced a 3080 rig lowest among eight-GPU rigs on Vast '
+                                        'and it rented instantly [Red Panda Mining — ET1JYocpu0M @ '
+                                        '00:12:03]. For unverified listings, unlist for 5-10 minutes and '
+                                        'relist [Red Panda Mining — mfQE_CptyLA @ 00:07:30].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ["Alec Glover and Red Panda Mining run opposite hardware playbooks. Glover's "
+                              'rule for any rental business is to buy the newest generation: it costs a '
+                              'premium, depreciates in a friendlier way, and stays rentable longer, while '
+                              'low-end stock is what sits idle when the market slows [CgsDEFaGLJ0 @ '
+                              '00:01:08]. Looking back on a warehouse cloud scaled to 1,000 GPUs, Glover '
+                              'says the move now would be decommissioned H100s and H200s in a DIY facility '
+                              'that can be certified [iuLuDflfEE4 @ 00:11:02]. Red Panda Mining goes the '
+                              'other way on purpose. They bought a pallet of ten Gigabyte G481-HA0 servers '
+                              'at $500 each, run PCIe 3.0 boards, and openly flag that this gear may '
+                              'command lower rates than AMD Epyc systems [mfQE_CptyLA @ 00:12:51]. Their '
+                              'V100 buy follows the same logic: Tesla V100 16 GB cards at roughly CA$400 '
+                              'to 420 each rent for 8 to 20 cents an hour, against 8 to 15 cents for a '
+                              '5060 Ti that costs about CA$800 before tax, so the older card earns similar '
+                              'rent for half the capital [ET1JYocpu0M @ 00:07:02]. Glover is optimizing '
+                              'for durability and certification; Red Panda is optimizing for payback '
+                              'speed, targeting a four-to-six-month ROI on the V100 box.',
+                              'The build-versus-buy line splits by card class. Alec Glover says that for '
+                              'enterprise cards a vendor charges only a 10 to 15 percent margin over '
+                              'building, so paying roughly $10K extra on a $100K server for the warranty '
+                              'is the smart trade, and building only makes sense for consumer GPUs '
+                              '[iuLuDflfEE4 @ 00:03:03]. On bus bandwidth, Glover measured about 24 GB/s '
+                              'on Gen4 x16 versus 48 on Gen5, yet putting Gen5 cards on Gen4/DDR4 hosts '
+                              'saved about $10K per server and their 5090 inference customer never noticed '
+                              '[CgsDEFaGLJ0 @ 00:07:16]. Glover still concedes Gen5 is always more '
+                              'expensive than Gen4 but carries twice the throughput. Red Panda Mining '
+                              'draws a harder line for the top cards: 4090s on a Gen3 Octominer are a '
+                              'waste, so they are planning a separate 7U PCIe 5.0 MCIO build for eight '
+                              '4090s and reserving the Gen3 box for 3070s or CMP 170HX cards [X2uIX3DDPu0 '
+                              "@ 00:07:29]. Yet the same channel's ten 170HX cards, unlocked to 64 GB each "
+                              'and running LLM inference over a PCIe 2.0 x4 link, are pulling real '
+                              'rentals, matching their own read that renters want multi-GPU nodes to pool '
+                              'VRAM for large LLMs [SJbOF9Ufm0Q @ 00:05:28].',
+                              'Platform choice is where the playbooks fork hardest. Alec Glover calls the '
+                              'roughly 25 percent cut taken by Vast, RunPod, and ShadeForm cheap, because '
+                              'the marketplace absorbs marketing, sales, and support, while resellers such '
+                              'as HydroHost, ShadeForm, and FluidStack take only 7.5 to 15 percent but '
+                              'want one- to two-year contracts [iuLuDflfEE4 @ 00:15:18]. Red Panda Mining '
+                              'pays that same 25 percent on Vast but splits their fleet: invite-only '
+                              'SimplePod demands redundant internet and generators, wants 30-series cards '
+                              'rather than more 4090s and 5090s, and keeps their 3090s and 3060s rented at '
+                              'low draw, while Vast renters appear to be crypto-mining instead '
+                              '[mfQE_CptyLA @ 00:08:39]. Modern Mining runs Salad instead, accepting a 10 '
+                              'percent cash-out fee plus a 40-cent deduction and an 18-cent hourly cap on '
+                              'a 4090 [WJnsgbZsg0U @ 00:37:51]. BearMarketMiner, after $10,000 of testing, '
+                              'gives the most split verdict: on OctaSpace a 4060 Ti rented about as often '
+                              'as a 5090, so start with a 4060 Ti, yet they also conclude high-end is '
+                              'definitely the way to go, and their Salad 5090 kept earning until its '
+                              'three-month job ended [egH5hKD913Y @ 00:04:39]. The right card depends on '
+                              "which marketplace's renters you are courting."],
+               'table': {'caption': 'Opposing playbooks on hardware, platforms, and business model',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Which GPU generation to buy for rentals',
+                                   'Buy the newest generation; now decommissioned H100/H200s in a '
+                                   'certifiable DIY facility',
+                                   'Buy cheap older gear: $500 Gigabyte PCIe 3.0 servers and CA$400 V100s '
+                                   'with similar rent',
+                                   'Alec Glover ([CgsDEFaGLJ0 @ 00:01:08]); Red Panda Mining ([ET1JYocpu0M '
+                                   '@ 00:07:02])'],
+                                  ['Build the server yourself or buy from a vendor',
+                                   'Buy enterprise servers; the 10 to 15 percent vendor margin pays for '
+                                   'the warranty',
+                                   'Self-build a consumer 4090 rig on a $15 frame, $80 MSI B550 board, and '
+                                   '$90 Ryzen',
+                                   'Alec Glover ([iuLuDflfEE4 @ 00:03:03]); Modern Mining ([WJnsgbZsg0U @ '
+                                   '00:04:19])'],
+                                  ['How much PCIe bandwidth the cards actually need',
+                                   'Gen5 cards on Gen4/DDR4 hosts saved about $10K per server; the '
+                                   'inference customer did not care',
+                                   '4090s on a Gen3 board are a waste; plan a 7U PCIe 5.0 MCIO build '
+                                   'instead',
+                                   'Alec Glover ([CgsDEFaGLJ0 @ 00:07:16]); Red Panda Mining ([X2uIX3DDPu0 '
+                                   '@ 00:07:29])'],
+                                  ['Marketplace versus private or contract channels',
+                                   'Vast, RunPod, ShadeForm at about 25 percent are cheap; resellers take '
+                                   '7.5 to 15 percent on contracts',
+                                   'Invite-only SimplePod at a 20 percent fee rents 30-series cards '
+                                   'steadily at low draw',
+                                   'Alec Glover ([iuLuDflfEE4 @ 00:15:18]); Red Panda Mining ([SJbOF9Ufm0Q '
+                                   '@ 00:08:10])'],
+                                  ['Entry card for a first rental rig',
+                                   'Start with a 4060 Ti because it rented about as often as a 5090 on '
+                                   'OctaSpace',
+                                   'High-end is definitely the way to go; premium 5090s on Nosana fetch '
+                                   'nearly 68 cents',
+                                   'BearMarketMiner ([egH5hKD913Y @ 00:04:39]); BearMarketMiner '
+                                   '([egH5hKD913Y @ 00:06:44])'],
+                                  ['Keep mining coins or switch the rig to AI rentals',
+                                   'Still mining Quantus with per-watt efficiency math; the 5070 rig nets '
+                                   '$1.78 a day',
+                                   'GPU mining is dead and not profitable at all at any residential '
+                                   'electric rate',
+                                   'MysticOrb289 ([w5vhWKlqN_k @ 00:01:01]); Red Panda Mining '
+                                   '([mfQE_CptyLA @ 00:04:26])'],
+                                  ['Whether home-hosted GPUs can be monetised for AI',
+                                   'Span XFRA nodes in homes: Span pays power and internet, homeowner pays '
+                                   'about $150 a month',
+                                   'Skeptic asks how AI would ever monetise home GPUs the way mining did',
+                                   'TheAIGRID ([vahdFdoK6y4 @ 00:05:45]); brandon coin ([HsTuMEqbt48 @ '
+                                   '00:04:14])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["Risers and boards are where the firsthand losses cluster. Alec Glover's "
+                              'cheap slot-to-SlimSAS adapters threw AER errors and crashed drivers only '
+                              'after weeks in service, and the 10GTech Gen5 risers they tested were '
+                              'completely unusable, failing within 30 minutes, while C-Payne risers at '
+                              'over $100 per GPU and One Chassis assemblies at about $80 stayed stable '
+                              '[CgsDEFaGLJ0 @ 00:13:41]. Their blunt verdict was that they wasted time '
+                              'avoiding ASRock boards with native SlimSAS [iuLuDflfEE4 @ 00:02:25]. Crypto '
+                              'LLC sees the same pattern on Windows 11 farms: three freshly installed GPUs '
+                              'crashed the whole rig as soon as they mined, System interrupts sat at 7 to '
+                              '13 percent, and BIOS still showed every PCIe port green, falsely signalling '
+                              'all was well. Their fix is to reseat the risers, rerun the miner, then swap '
+                              'one riser at a time, and from their experience it is risers most of the '
+                              "time [nHwXk9HCuYI @ 00:04:18]. Red Panda Mining's 600 CAD Octominer never "
+                              'booted at all: no VGA signal, a flashing LED, and an M1 error after a CMOS '
+                              'reset, RAM and CPU reseats, a swap to E5-2640 V3s, and pulling the NVMe, '
+                              'leaving a motherboard swap on the to-do list [X2uIX3DDPu0 @ 00:16:34].',
+                              'The second trap is gross-rate math. Alec Glover warns that newcomers simply '
+                              'divide hardware cost by online hourly rates, when a cloud is far more than '
+                              "hardware [iuLuDflfEE4 @ 00:00:18]. Red Panda Mining's own 170HX server "
+                              'shows the gap: the $60-a-day figure was shoot-for-the-moon pricing, while '
+                              'real rentals paid $30.42 for nine GPUs over 19 hours and about $36.37 over '
+                              "a full day, and SimplePod's 20 percent fee turns a 20-cent rate into "
+                              'roughly 16 cents [SJbOF9Ufm0Q @ 00:08:10]. Modern Mining walks the same '
+                              'erosion on Salad: a 4090 capped at 18 cents an hour grosses $4.32 a day, '
+                              'drops to $3.88 after the 10 percent fee and 40-cent deduction, then to '
+                              '$2.92 after power, and at 80 percent uptime lands near $854 a year and a '
+                              '3.5-year breakeven, which they offset by counting on 80 to 90 percent '
+                              'resale value [WJnsgbZsg0U @ 00:39:50]. Mining-side operators face a faster '
+                              "squeeze: MysticOrb289's 3090 is barely covering power on Quantus at 22 "
+                              'cents per kWh, and a working FPGA bitstream for the Osprey E-300 now '
+                              'threatens the GPU miners, with daily coin output halving if difficulty '
+                              'doubles [w5vhWKlqN_k @ 00:01:21].',
+                              "Network and power shortcuts break under real load. Alec Glover's earlier "
+                              'network ran daisy-chained 1G links to single ports on each machine and '
+                              'caused outages, so they rebuilt around redundant routers, MC-LAG switch '
+                              'pairs, and Arista 10G 48-port switches at about $200 each [iuLuDflfEE4 @ '
+                              '00:10:03]. Red Panda Mining hit the same wall at smaller scale when a '
+                              'renter pulled 400 GB in 20 minutes over 3 Gb fiber: throughput swung '
+                              'between 550 Mbps and 3 Gbps, packet loss hit 10 to 12 percent, and an X550 '
+                              'NIC firmware error surfaced, leaving a possible Ubiquiti upgrade on the '
+                              'table [SJbOF9Ufm0Q @ 00:12:23]. On power, Glover keeps every circuit, PSU, '
+                              'and PDU at a consistent 80 percent load and burns in new servers for 48 '
+                              'hours to a week, because a 4090 sliding from 450 W to 230 W can crash on '
+                              'overheating or throttle an entire multi-GPU server back [CgsDEFaGLJ0 @ '
+                              '00:47:22]. BearMarketMiner flags two settings that quietly kill income: '
+                              'power-limiting below 90 percent on Salad gets the rig degraded, and thin '
+                              'RAM starves demand, with a 26 GB rig landing 7 rentals in about 30 days '
+                              'against 82 for a 63 GB rig [egH5hKD913Y @ 00:10:53].'],
+               'table': {'caption': 'Firsthand failures, their cost, and the fix practitioners applied',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Fix or Economic Check',
+                                     'Expert Source'],
+                         'rows': [['Cheap slot-to-SlimSAS adapters and Gen5 risers',
+                                   'AER errors and driver crashes after weeks; 10GTech Gen5 risers failed '
+                                   'within 30 minutes',
+                                   'Buy ASRock native SlimSAS or MCIO boards, C-Payne or about $80 One '
+                                   'Chassis assemblies',
+                                   'Alec Glover ([CgsDEFaGLJ0 @ 00:08:32])'],
+                                  ['Daisy-chained 1G network on single ports',
+                                   'Single 1G links to single ports on each machine caused outages across '
+                                   'the cloud',
+                                   'Redundant routers, MC-LAG switch pairs, Arista 10G 48-port switches at '
+                                   'about $200 each',
+                                   'Alec Glover ([iuLuDflfEE4 @ 00:10:03])'],
+                                  ['Used server dead on arrival',
+                                   '600 CAD Octominer gave no VGA signal, a flashing LED, then an M1 error',
+                                   'CMOS reset, RAM and CPU reseats, CPU swap all failed; motherboard swap '
+                                   'deferred',
+                                   'Red Panda Mining ([X2uIX3DDPu0 @ 00:16:34])'],
+                                  ['Too little system RAM on a rental rig',
+                                   'A 26 GB rig got 7 rentals in about 30 days versus 82 for a 63 GB rig',
+                                   'Build with 64 GB RAM, a 1 TB disk, and at least 100/100 internet',
+                                   'BearMarketMiner ([egH5hKD913Y @ 00:10:53])'],
+                                  ['Cryptojacking malware hijacking the GPU and CPU',
+                                   'Slowness, high GPU use, overheating, and miners that pause when Task '
+                                   'Manager opens',
+                                   'Defender Offline scan, msconfig Safe Boot, purge startup entries and '
+                                   'restore points',
+                                   'MalwareFox ([ACdz4nNt8P8 @ 00:02:41])'],
+                                  ['Coin difficulty spike wiping out mining margin',
+                                   'Pearl difficulty rose significantly and the 3060 Ti plus 3060s setup '
+                                   'goes negative without price gains',
+                                   'Treat AI GPU renting as the fallback so a 5 to 6 lakh rig is not '
+                                   'wasted',
+                                   'Honey With Crypto ([Wp6L77ZvZw8 @ 00:01:53])'],
+                                  ['Project abandons GPU miners outright',
+                                   'CLORE 2.0 removes miners, burns 300M CLORE, and migrates to ERC20 '
+                                   'after Ethereum and Flux did similar',
+                                   'Speaker warns the burn is a red flag and ERC20 fees could cost $100 to '
+                                   'send $10',
+                                   'Rabid Mining ([1bwwstZFQ7Q @ 00:01:30])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear these four gates before a rig goes live',
+                           'body': 'Every item below is a loss or near-miss a practitioner reported '
+                                   'firsthand; a rig that skips one tends to fail after renters are '
+                                   'already on it.',
+                           'items': ['Run the C-Payne stress tool for 48 hours to a week and watch for '
+                                     'throttling such as a 4090 dropping from 450 W to 230 W [Alec Glover '
+                                     '— CgsDEFaGLJ0 @ 00:46:26].',
+                                     'Test any used GPU in person before paying and price-check it on '
+                                     'gpudeals.net to dodge used-card scams [Modern Mining — WJnsgbZsg0U @ '
+                                     '00:14:04].',
+                                     'If System interrupts climb while mining or renting, reseat risers, '
+                                     'rerun, then replace one riser at a time even when BIOS shows every '
+                                     'port green [Crypto LLC — nHwXk9HCuYI @ 00:02:46].',
+                                     'If revenue minus power does not leave a cushion, do not buy the '
+                                     'cards for mining alone [Crypto Miners Rigs — 1q_WZwOjByQ @ '
+                                     '00:07:22].']}}],
+ 'pull_quote': 'When you think about not having to do any marketing, not having to do any sales, not '
+               'having to do any support, 25% is really cheap. Alec Glover (iuLuDflfEE4 @ 00:15:34).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Size power by counting each card at its planned power limit plus about 150 W for '
+                      'the platform, then keep continuous load near 80 percent of PSU rating [Crypto '
+                      'Miners Rigs — 1q_WZwOjByQ @ 00:03:38].',
+                      'Get fiber internet and a static IP before listing so Vast machines verify within '
+                      'one to two days [Red Panda Mining — ET1JYocpu0M @ 00:08:32].',
+                      'Build rental rigs with high RAM, a 1 TB disk, and at least 100/100 internet, since '
+                      'RAM drives rental count [BearMarketMiner — egH5hKD913Y @ 00:11:25].',
+                      'In BIOS leave XMP off, set restore after AC power loss to on, and enable SVM before '
+                      'installing the rental client [Modern Mining — WJnsgbZsg0U @ 00:23:42].',
+                      'Burn in every new server for 48 hours to a week with the C-Payne stress tool before '
+                      'renters touch it [Alec Glover — CgsDEFaGLJ0 @ 00:46:26].',
+                      'Fund the first build with your own capital, because lenders now finance only '
+                      'long-term commitments from strong-credit customers [Alec Glover — iuLuDflfEE4 @ '
+                      '00:18:12].'],
+ 'statutory_citations': [{'title': 'Alec Glover — everything i learned building 100 GPU servers [00:13:41]',
+                          'url': 'https://www.youtube.com/watch?v=CgsDEFaGLJ0&t=821s',
+                          'relevance': 'Primary practitioner testimony on riser failures, PCIe '
+                                       'generations, power at 80 percent load, and burn-in testing.'},
+                         {'title': 'Alec Glover — I Built My Own GPU Cloud (and you can too) [00:15:34]',
+                          'url': 'https://www.youtube.com/watch?v=iuLuDflfEE4&t=934s',
+                          'relevance': 'Primary practitioner testimony on marketplace fees, reseller '
+                                       'contracts, network outages, and financing.'},
+                         {'title': 'Red Panda Mining — My 10x 170HX GPU "Ai" Server Is Actually Making '
+                                   'Money Now. [00:08:30]',
+                          'url': 'https://www.youtube.com/watch?v=SJbOF9Ufm0Q&t=510s',
+                          'relevance': 'Primary practitioner testimony on realized rental income versus '
+                                       'listed pricing and platform fees.'},
+                         {'title': 'Modern Mining — I Built a $3000 AI Computer for Profit in 2026 '
+                                   '[00:37:51]',
+                          'url': 'https://www.youtube.com/watch?v=WJnsgbZsg0U&t=2271s',
+                          'relevance': 'Primary practitioner testimony on Salad fees, net daily earnings, '
+                                       'and breakeven math for a 4090 rig.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'CgsDEFaGLJ0',
+                       'title': 'everything i learned building 100 GPU servers',
+                       'channel': 'Alec Glover',
+                       'author': 'Alec Glover',
+                       'text': 'You basically just want everything to be at a consistent 80% load.',
+                       'tip': 'You basically just want everything to be at a consistent 80% load.',
+                       'timestamp': 1642,
+                       'timestamp_seconds': 1642,
+                       'timestamp_label': '[00:27:22]',
+                       'url': 'https://www.youtube.com/watch?v=CgsDEFaGLJ0&t=1642s',
+                       'markdown': '[00:27:22](https://www.youtube.com/watch?v=CgsDEFaGLJ0&t=1642s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CgsDEFaGLJ0',
+                       'title': 'everything i learned building 100 GPU servers',
+                       'channel': 'Alec Glover',
+                       'author': 'Alec Glover',
+                       'text': "So, I would say to anybody who's looking to do this and looking for "
+                               'something scalable, just go for the chassis immediately.',
+                       'tip': "So, I would say to anybody who's looking to do this and looking for "
+                              'something scalable, just go for the chassis immediately.',
+                       'timestamp': 295,
+                       'timestamp_seconds': 295,
+                       'timestamp_label': '[00:04:55]',
+                       'url': 'https://www.youtube.com/watch?v=CgsDEFaGLJ0&t=295s',
+                       'markdown': '[00:04:55](https://www.youtube.com/watch?v=CgsDEFaGLJ0&t=295s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iuLuDflfEE4',
+                       'title': 'I Built My Own GPU Cloud (and you can too)',
+                       'channel': 'Alec Glover',
+                       'author': 'Alec Glover',
+                       'text': 'But when you think about not having to do any marketing, not having to do '
+                               'any sales, not having to do any support, 25% is really cheap.',
+                       'tip': 'But when you think about not having to do any marketing, not having to do '
+                              'any sales, not having to do any support, 25% is really cheap.',
+                       'timestamp': 934,
+                       'timestamp_seconds': 934,
+                       'timestamp_label': '[00:15:34]',
+                       'url': 'https://www.youtube.com/watch?v=iuLuDflfEE4&t=934s',
+                       'markdown': '[00:15:34](https://www.youtube.com/watch?v=iuLuDflfEE4&t=934s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mfQE_CptyLA',
+                       'title': 'AI GPU Rentals feels like Ethereum GPU Mining Again.',
+                       'channel': 'Red Panda Mining',
+                       'author': 'Red Panda Mining',
+                       'text': "GPU mining is dead, and it's not profitable at all, especially at any "
+                               'residential electric.',
+                       'tip': "GPU mining is dead, and it's not profitable at all, especially at any "
+                              'residential electric.',
+                       'timestamp': 266,
+                       'timestamp_seconds': 266,
+                       'timestamp_label': '[00:04:26]',
+                       'url': 'https://www.youtube.com/watch?v=mfQE_CptyLA&t=266s',
+                       'markdown': '[00:04:26](https://www.youtube.com/watch?v=mfQE_CptyLA&t=266s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ET1JYocpu0M',
+                       'title': 'I Bought 8 ACTUAL "Ai" GPUs...',
+                       'channel': 'Red Panda Mining',
+                       'author': 'Red Panda Mining',
+                       'text': 'So the rental rate is about the same or it is almost pretty much the same '
+                               'depending how much you rent it for.',
+                       'tip': 'So the rental rate is about the same or it is almost pretty much the same '
+                              'depending how much you rent it for.',
+                       'timestamp': 445,
+                       'timestamp_seconds': 445,
+                       'timestamp_label': '[00:07:25]',
+                       'url': 'https://www.youtube.com/watch?v=ET1JYocpu0M&t=445s',
+                       'markdown': '[00:07:25](https://www.youtube.com/watch?v=ET1JYocpu0M&t=445s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WJnsgbZsg0U',
+                       'title': 'I Built a $3000 AI Computer for Profit in 2026',
+                       'channel': 'Modern Mining',
+                       'author': 'Modern Mining',
+                       'text': 'So, right off the bat, Salad charges a 10% fee when you do your cash out.',
+                       'tip': 'So, right off the bat, Salad charges a 10% fee when you do your cash out.',
+                       'timestamp': 2271,
+                       'timestamp_seconds': 2271,
+                       'timestamp_label': '[00:37:51]',
+                       'url': 'https://www.youtube.com/watch?v=WJnsgbZsg0U&t=2271s',
+                       'markdown': '[00:37:51](https://www.youtube.com/watch?v=WJnsgbZsg0U&t=2271s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'egH5hKD913Y',
+                       'title': "I Spent $10,000 Testing AI GPU Rentals - Here's What I Learned",
+                       'channel': 'BearMarketMiner',
+                       'author': 'BearMarketMiner',
+                       'text': 'High-end definitely the way to go.',
+                       'tip': 'High-end definitely the way to go.',
+                       'timestamp': 404,
+                       'timestamp_seconds': 404,
+                       'timestamp_label': '[00:06:44]',
+                       'url': 'https://www.youtube.com/watch?v=egH5hKD913Y&t=404s',
+                       'markdown': '[00:06:44](https://www.youtube.com/watch?v=egH5hKD913Y&t=404s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'X2uIX3DDPu0',
+                       'title': 'I bought this $600 "AI" GPU Rental SERVER!',
+                       'channel': 'Red Panda Mining',
+                       'author': 'Red Panda Mining',
+                       'text': 'So, my power consumption for my servers for AI is definitely a lot better '
+                               "than let's say crypto mining.",
+                       'tip': 'So, my power consumption for my servers for AI is definitely a lot better '
+                              "than let's say crypto mining.",
+                       'timestamp': 135,
+                       'timestamp_seconds': 135,
+                       'timestamp_label': '[00:02:15]',
+                       'url': 'https://www.youtube.com/watch?v=X2uIX3DDPu0&t=135s',
+                       'markdown': '[00:02:15](https://www.youtube.com/watch?v=X2uIX3DDPu0&t=135s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SJbOF9Ufm0Q',
+                       'title': 'My 10x 170HX GPU "Ai" Server Is Actually Making Money Now.',
+                       'channel': 'Red Panda Mining',
+                       'author': 'Red Panda Mining',
+                       'text': 'I know vast.ai has a 25% fee as well.',
+                       'tip': 'I know vast.ai has a 25% fee as well.',
+                       'timestamp': 510,
+                       'timestamp_seconds': 510,
+                       'timestamp_label': '[00:08:30]',
+                       'url': 'https://www.youtube.com/watch?v=SJbOF9Ufm0Q&t=510s',
+                       'markdown': '[00:08:30](https://www.youtube.com/watch?v=SJbOF9Ufm0Q&t=510s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vahdFdoK6y4',
+                       'title': 'Nvidias New Mini Datacenter Pays You Every Month',
+                       'channel': 'TheAIGRID',
+                       'author': 'TheAIGRID',
+                       'text': 'That figure is an estimate floating around social media, and it is not the '
+                               'deal that Span has officially described.',
+                       'tip': 'That figure is an estimate floating around social media, and it is not the '
+                              'deal that Span has officially described.',
+                       'timestamp': 376,
+                       'timestamp_seconds': 376,
+                       'timestamp_label': '[00:06:16]',
+                       'url': 'https://www.youtube.com/watch?v=vahdFdoK6y4&t=376s',
+                       'markdown': '[00:06:16](https://www.youtube.com/watch?v=vahdFdoK6y4&t=376s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HsTuMEqbt48',
+                       'title': 'Nvidia Urges Customers to Stop Crypto Mining',
+                       'channel': 'brandon coin',
+                       'author': 'brandon coin',
+                       'text': "Nvidia's CTO told the Guardian that crypto doesn't bring anything useful "
+                               'for society but AI does.',
+                       'tip': "Nvidia's CTO told the Guardian that crypto doesn't bring anything useful "
+                              'for society but AI does.',
+                       'timestamp': 105,
+                       'timestamp_seconds': 105,
+                       'timestamp_label': '[00:01:45]',
+                       'url': 'https://www.youtube.com/watch?v=HsTuMEqbt48&t=105s',
+                       'markdown': '[00:01:45](https://www.youtube.com/watch?v=HsTuMEqbt48&t=105s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nHwXk9HCuYI',
+                       'title': 'GPU Mining Farm - Fixing System Interrupts in Windows 11, Mining Crash',
+                       'channel': 'Crypto LLC',
+                       'author': 'Crypto LLC',
+                       'text': "So in this case it's risers; from our experience most of the time it's "
+                               'just risers.',
+                       'tip': "So in this case it's risers; from our experience most of the time it's just "
+                              'risers.',
+                       'timestamp': 258,
+                       'timestamp_seconds': 258,
+                       'timestamp_label': '[00:04:18]',
+                       'url': 'https://www.youtube.com/watch?v=nHwXk9HCuYI&t=258s',
+                       'markdown': '[00:04:18](https://www.youtube.com/watch?v=nHwXk9HCuYI&t=258s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w5vhWKlqN_k',
+                       'title': 'Stop Mining Quantus on GPU Until You See This FPGA Warning',
+                       'channel': 'MysticOrb289',
+                       'author': 'MysticOrb289',
+                       'text': "If not, don't mine at a loss hoping it comes back.",
+                       'tip': "If not, don't mine at a loss hoping it comes back.",
+                       'timestamp': 321,
+                       'timestamp_seconds': 321,
+                       'timestamp_label': '[00:05:21]',
+                       'url': 'https://www.youtube.com/watch?v=w5vhWKlqN_k&t=321s',
+                       'markdown': '[00:05:21](https://www.youtube.com/watch?v=w5vhWKlqN_k&t=321s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ACdz4nNt8P8',
+                       'title': 'How to Remove Bitcoin Miner Malware | Prevent Crypto Jacking',
+                       'channel': 'MalwareFox',
+                       'author': 'MalwareFox',
+                       'text': 'Install a reputed anti-malware and keep its real-time protection enabled.',
+                       'tip': 'Install a reputed anti-malware and keep its real-time protection enabled.',
+                       'timestamp': 476,
+                       'timestamp_seconds': 476,
+                       'timestamp_label': '[00:07:56]',
+                       'url': 'https://www.youtube.com/watch?v=ACdz4nNt8P8&t=476s',
+                       'markdown': '[00:07:56](https://www.youtube.com/watch?v=ACdz4nNt8P8&t=476s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1q_WZwOjByQ',
+                       'title': 'How to Build a GPU Mining Rig in 2026: Step-by-Step (Power, Cooling, Real '
+                                'Math)',
+                       'channel': 'Crypto Miners Rigs',
+                       'author': 'Crypto Miners Rigs',
+                       'text': "If revenue minus power doesn't leave a cushion, don't buy the cards for "
+                               'mining alone.',
+                       'tip': "If revenue minus power doesn't leave a cushion, don't buy the cards for "
+                              'mining alone.',
+                       'timestamp': 442,
+                       'timestamp_seconds': 442,
+                       'timestamp_label': '[00:07:22]',
+                       'url': 'https://www.youtube.com/watch?v=1q_WZwOjByQ&t=442s',
+                       'markdown': '[00:07:22](https://www.youtube.com/watch?v=1q_WZwOjByQ&t=442s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1q_WZwOjByQ',
+                       'title': 'How to Build a GPU Mining Rig in 2026: Step-by-Step (Power, Cooling, Real '
+                                'Math)',
+                       'channel': 'Crypto Miners Rigs',
+                       'author': 'Crypto Miners Rigs',
+                       'text': 'Mixing supplies on one card and its riser is a classic way to cook '
+                               'hardware.',
+                       'tip': 'Mixing supplies on one card and its riser is a classic way to cook '
+                              'hardware.',
+                       'timestamp': 201,
+                       'timestamp_seconds': 201,
+                       'timestamp_label': '[00:03:21]',
+                       'url': 'https://www.youtube.com/watch?v=1q_WZwOjByQ&t=201s',
+                       'markdown': '[00:03:21](https://www.youtube.com/watch?v=1q_WZwOjByQ&t=201s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Wp6L77ZvZw8',
+                       'title': 'Double Profit From GPU Mining? Pearl + Monero Mining Setup Guide 2026 🤑',
+                       'channel': 'Honey With Crypto',
+                       'author': 'Honey With Crypto',
+                       'text': 'This is of very rubbish quality.',
+                       'tip': 'This is of very rubbish quality.',
+                       'timestamp': 560,
+                       'timestamp_seconds': 560,
+                       'timestamp_label': '[00:09:20]',
+                       'url': 'https://www.youtube.com/watch?v=Wp6L77ZvZw8&t=560s',
+                       'markdown': '[00:09:20](https://www.youtube.com/watch?v=Wp6L77ZvZw8&t=560s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1bwwstZFQ7Q',
+                       'title': 'BREAKING: CLORE Just Killed GPU Mining Forever!!',
+                       'channel': 'Rabid Mining',
+                       'author': 'Rabid Mining',
+                       'text': 'And the only way to remove miner sell pressure is to not have miners.',
+                       'tip': 'And the only way to remove miner sell pressure is to not have miners.',
+                       'timestamp': 453,
+                       'timestamp_seconds': 453,
+                       'timestamp_label': '[00:07:33]',
+                       'url': 'https://www.youtube.com/watch?v=1bwwstZFQ7Q&t=453s',
+                       'markdown': '[00:07:33](https://www.youtube.com/watch?v=1bwwstZFQ7Q&t=453s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'}]}

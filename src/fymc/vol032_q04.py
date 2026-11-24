@@ -1,617 +1,874 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($8,000–$45,000 USD) and configure a lean, low-opex ($1,500–$10,000 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Reserve-First ISO Schedule A Economics, Sponsor-Bank Boarding, Reg E ATM Controls & a Twelve-Layer Production Stack",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #32, ISO Payment Processing & ATM Arbitrage, ranks #02 of 36 with a "
-        "94/100 Money-to-Manpower Score. This chapter funds the infrastructure supporting "
-        "the volume's 12 mapped plays without mistaking merchant settlements or ATM vault "
-        "cash for operator revenue. Keep at least half of startup capital in working-capital "
-        "and float reserves, then buy only the controls needed to board merchants, reconcile "
-        "residuals, monitor terminals, and acquire qualified accounts. Formula v2.0 produces "
-        "annual owner profit of $27,000 Conservative, $189,125 Base, and $440,000 Scaled. "
-        "A twelve-layer vendor matrix separates published-price planning references from "
-        "contract-priced services. The launch sequence prioritizes sponsor acceptance, "
-        "documented Schedule A spreads, tested fee disclosures, and measurable diagnostic "
-        "mailers over office space, custom applications, or premature ATM purchases."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$90,000",
-            "context": "Annual operator revenue from net retained residuals, gateway markups, and ATM surcharges",
-            "note": "30% net margin; $27,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$445,000",
-            "context": "Annual operator revenue from net retained residuals, gateway markups, and ATM surcharges",
-            "note": "42.5% net margin; $189,125 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$800,000",
-            "context": "Annual operator revenue from net retained residuals, gateway markups, and ATM surcharges",
-            "note": "55% net margin; $440,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Ring-fence reserves before buying terminals or recurring overhead",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Allocate startup dollars by survival function, not by how impressive the stack looks. "
-                    "The $8,000 launch below holds $4,400, or 55%, in reserve and releases only $3,600 "
-                    "for setup. Within that reserve, keep $4,000 as unrestricted working capital and $400 "
-                    "as an incident cushion; launch merchant acquisition without owning an ATM. The "
-                    "$45,000 version reserves $24,750, also 55%, split into $18,000 of unrestricted "
-                    "working capital and a $6,750 vault-cash allocation. Vault cash is an asset deployed "
-                    "to dispensing equipment, not an expense, a fee receipt, or freely available payroll "
-                    "money. Maintain separate bank subaccounts and a terminal-level cash ledger so every "
-                    "withdrawal, replenishment, reversal, and shortage has an accountable owner. At a "
-                    "$1,500 monthly fixed burn, $4,000 buys only 2.67 months before collections; the "
-                    "expected first-deal window is one to four months, with residual payment potentially "
-                    "later. Therefore, set a day-60 funding decision and stop discretionary acquisition "
-                    "before liquidity falls below the next month's committed bills. At the larger launch, "
-                    "$18,000 supports three months of a $6,000 fixed stack. Do not justify equipment "
-                    "purchases by counting cash inside machines as available operating runway."
-                ),
-                (
-                    "Treat the $1,500–$10,000 monthly opex range as a fixed operating envelope, not a "
-                    "ceiling on every expense required by the scorecard. Formula v2.0 requires total annual "
-                    "costs of $63,000 Conservative, $255,875 Base, and $360,000 Scaled: revenue less "
-                    "owner profit in each case. One transparent planning bridge assigns fixed overhead "
-                    "of $18,000, $72,000, and $120,000 respectively, leaving $45,000, $183,875, and "
-                    "$240,000 for variable delivery, acquisition, contractor services, equipment expense, "
-                    "and other modeled costs. These are illustrative allocations, not additional canonical "
-                    "inputs. Any expense embedded in a net retained revenue calculation must not appear "
-                    "again in those cost pools. Match the 1 FT + 3 C Conservative and Base teams, and "
-                    "the 2 FT + 4 C Scaled team, to documented workloads rather than assuming six "
-                    "full-time salaries. Contractors can cover bookkeeping, terminal field service, and "
-                    "qualified appointment support under defined scopes. Keep employee compensation, "
-                    "contractor invoices, owner draws, and tax distributions distinct in the ledger. The "
-                    "canonical owner-profit figures remain unchanged; this chapter neither adds an owner "
-                    "salary back nor assumes that personal tax payments are an operating deduction."
-                ),
-                (
-                    "Build a monthly revenue bridge before negotiating a Schedule A. An illustrative "
-                    "Conservative portfolio earns 100 merchants × $60 retained monthly residual × 12 "
-                    "= $72,000, plus three ATMs × 500 monthly withdrawals × $1 retained surcharge "
-                    "× 12 = $18,000. Base can reconcile as 400 merchants × $80 × 12 = $384,000, "
-                    "five ATMs × 800 withdrawals × $1.25 × 12 = $60,000, and $1,000 annual "
-                    "retained gateway markup. Scaled reconciles as 600 merchants × $90 × 12 = "
-                    "$648,000, ten ATMs × 1,000 withdrawals × $1.25 × 12 = $150,000, and "
-                    "$2,000 annual retained gateway markup. These portfolio constructions illustrate "
-                    "the supplied totals; they are not acquisition forecasts. They produce the exact "
-                    "$90,000, $445,000, and $800,000 operator revenue cases. Apply the canonical "
-                    "30%, 42.5%, and 55% margins to obtain $27,000, $189,125, and $440,000. "
-                    "The scorecard's gross-revenue label describes operator revenue already measured "
-                    "on a net retained fee basis. Do not apply another retained-share haircut, record "
-                    "merchant card settlement volume as sales, or book ATM cash replenishment as "
-                    "revenue. Document the principal-versus-agent analysis underlying ASC 606 presentation "
-                    "with the accountant before importing processor statements into the general ledger."
-                ),
-            ],
-            "table": {
-                "caption": "Reserve-First Startup Allocation: Exact $8,000 and $45,000 Cash Budgets",
-                "headers": [
-                    "Capital allocation and operating purpose",
-                    "$8,000 lean merchant-first launch",
-                    "$45,000 merchant and ATM launch",
-                    "Release condition and cash-control mechanism",
-                ],
-                "rows": [
-                    [
-                        "Working-capital and float reserve protected from discretionary purchases",
-                        "$4,400 total: $4,000 working capital plus $400 incident cushion",
-                        "$24,750 total: $18,000 working capital plus $6,750 vault allocation",
-                        "Both plans reserve 55%; track deployed vault cash separately",
-                    ],
-                    [
-                        "Entity formation, banking setup, and initial accounting configuration",
-                        "$600 spending envelope; use current state fees before authorization",
-                        "$1,250 spending envelope; include operating agreement and bank setup",
-                        "Release against filed documents, verified ownership, and bank acceptance",
-                    ],
-                    [
-                        "Insurance deposits and documented payment-services coverage review",
-                        "$500 initial allocation; obtain binding terms before representing coverage",
-                        "$2,000 initial allocation; evaluate cyber, liability, and cash exclusions",
-                        "Rebudget inadequate quotes without reducing the protected reserve percentage",
-                    ],
-                    [
-                        "Software setup and narrowly scoped initial integration work",
-                        "$300 initial allocation; select free tiers and sponsor-provided tools",
-                        "$1,500 initial allocation; prioritize reconciliation and terminal telemetry integration",
-                        "Require exportable records and itemized recurring charges before purchase",
-                    ],
-                    [
-                        "Sponsor onboarding, contract review, and operational training expenses",
-                        "$500 allocation; prefer approved sub-ISO economics over premature registration",
-                        "$2,500 allocation; review Schedule A and residual ownership provisions",
-                        "Reject unfunded registration obligations or undocumented downstream liability transfers",
-                    ],
-                    [
-                        "Measured acquisition experiments using private technical diagnostic mailers",
-                        "$700 cohort budget; includes production, postage, and analyst review",
-                        "$3,000 staged budget; release successive cohorts after measured results",
-                        "Suppress duplicates and calculate contribution payback before expanding spend",
-                    ],
-                    [
-                        "Physical deployment, site diligence, and service-readiness equipment",
-                        "$1,000 allocation; surveys and service readiness without ATM ownership",
-                        "$10,000 allocation; equipment, installation, spares, and documented site preparation",
-                        "Purchase only after venue economics and processor compatibility are verified",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy residual visibility before buying visible infrastructure",
-                "body": (
-                    "Experienced operators protect liquidity and contract rights first; a polished dashboard "
-                    "cannot repair a negative Schedule A or inaccessible residual data."
-                ),
-                "items": [
-                    "Request three redacted monthly residual statements and replay every fee category before accepting a processor's headline split.",
-                    "Negotiate export access, post-termination residual rights, reserve treatment, and clawback limits before paying integration fees.",
-                    "Start ATM venue diligence with processor transaction evidence and service-distance estimates; foot traffic alone does not establish withdrawals.",
-                    "Keep one tested replacement terminal path and one cash-service fallback instead of stocking several unproductive machines.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Assemble twelve layers around sponsor-owned payment rails",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Buy twelve capabilities, not twelve mandatory subscriptions. The matrix names a primary "
-                    "vendor for each layer and a cheaper operating path. Its exact public-tier figures are "
-                    "planning references, not live-verified offers; confirm current regional pricing, billing "
-                    "commitments, taxes, and permitted commercial use before purchase. Where providers sell "
-                    "by contract, the matrix explicitly identifies quote-only pricing rather than inventing "
-                    "a universal rate. Budget two Google Workspace Business Starter seats at $7 per user "
-                    "monthly on an annual commitment, two Bitwarden Teams seats at $4 per user monthly "
-                    "billed annually, one $5 Amazon Lightsail Linux instance, and 2,000 Amazon SES "
-                    "outbound messages at $0.10 per thousand. That narrow example totals $27.20 monthly "
-                    "before tax, SES data charges, optional backups, and contract-priced services. It is "
-                    "only the software floor, not the entire operating budget. Hosted boarding supplied "
-                    "by the sponsor can eliminate an early CRM integration, while Wave Starter and "
-                    "controlled CSV imports can support an initial general ledger. Do not purchase a "
-                    "paid integration until an actual reconciliation bottleneck consumes more labor "
-                    "value than the subscription and its maintenance burden. Preserve monthly exports "
-                    "even when an attractive free tier makes switching appear unnecessary."
-                ),
-                (
-                    "Keep payment credentials out of the infrastructure you build. Use sponsor-approved "
-                    "hosted applications, processor tokenization, and encrypted terminal channels; the "
-                    "operator CRM should hold merchant identifiers, application status, and contract "
-                    "references rather than raw card numbers or verification codes. PCI DSS is a "
-                    "contractual security standard, not a substitute for statutory analysis. Confirm "
-                    "the applicable validation scope with the sponsor and acquiring relationships. "
-                    "Protect domain administration, email, banking, and residual portals with individual "
-                    "accounts and strong multifactor authentication, preferably hardware-backed where "
-                    "supported. Separate sales permissions from bank-detail edits and payout exports. "
-                    "For IRIS CRM, require a sample boarding export and a residual import test using "
-                    "the proposed processor before committing to a contract. Match merchant IDs, "
-                    "effective dates, basis points, per-item charges, minimums, and reserve releases "
-                    "against the signed Schedule A. A $40,000 monthly merchant producing a genuinely "
-                    "retained 20-basis-point spread yields $80 before separately booked operator costs; "
-                    "a nominal 20-basis-point markup before sponsor deductions does not. Alert when "
-                    "an expected $80 becomes $65, then classify the $15 difference as volume change, "
-                    "pricing change, upstream deduction, or missing payment before escalating it."
-                ),
-                (
-                    "Treat dispute automation and ATM telemetry as controls with measurable economics. "
-                    "Verifi RDR and Ethoca Alerts operate through supported processor or acquirer "
-                    "relationships; confirm merchant eligibility, network coverage, event pricing, and "
-                    "refund authority before enabling rules. An illustrative $15 alert that avoids an "
-                    "otherwise applicable $25 chargeback fee saves only $10 on that fee comparison, "
-                    "before integration costs and any change in refunded principal. It does not recover "
-                    "goods already delivered or automatically improve every network monitoring metric. "
-                    "Add duplicate-event detection so two services cannot trigger two refunds. For "
-                    "Hyosung MoniView or processor-supplied telemetry, verify terminal compatibility, "
-                    "connectivity, cash counters, reversal handling, and whether access is included "
-                    "with processing. At an assumed 25 withdrawals daily and $80 average cash "
-                    "dispensed, a machine consumes $2,000 per day; a two-day replenishment lead "
-                    "time plus one safety day requires $6,000. That nearly exhausts the larger "
-                    "launch's $6,750 vault allocation before accommodating another machine. Use "
-                    "venue-funded cash under documented terms, a priced cash-service arrangement, "
-                    "or fewer machines when demand exceeds funded capacity. Telemetry informs a "
-                    "physical count and settlement reconciliation; it never proves that every cassette "
-                    "contains the amount reported by software."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Layer Named-Vendor Stack: Price References, Responsibilities, and Lean Substitutes",
-                "headers": [
-                    "Layer and named primary vendor",
-                    "Exact tier reference or contract-pricing boundary",
-                    "Production responsibility and acceptance evidence",
-                    "Cheaper lean alternative and operating tradeoff",
-                ],
-                "rows": [
-                    [
-                        "01: Google Workspace handles operator identity and business email",
-                        "Business Starter reference: $7 per user monthly with annual commitment",
-                        "Use individual mailboxes, protected recovery, and named merchant correspondence",
-                        "Begin with one licensed operator; avoid unnecessary contractor mailbox seats",
-                    ],
-                    [
-                        "02: Bitwarden manages shared credentials through controlled organizational access",
-                        "Teams reference: $4 per user monthly, billed through annual subscription",
-                        "Store secrets centrally and remove contractor access immediately upon departure",
-                        "Individual Free supports a solo operator but lacks equivalent team administration",
-                    ],
-                    [
-                        "03: Cloudflare provides authoritative DNS and basic domain protection",
-                        "Free plan reference: $0 subscription; domain registration remains separately priced",
-                        "Record DNS changes and protect registrar recovery from mailbox compromise",
-                        "Registrar-included DNS avoids migration but requires equivalent account protection",
-                    ],
-                    [
-                        "04: Amazon Lightsail runs scheduled diagnostic and reconciliation jobs",
-                        "Linux public-IPv4 bundle reference: $5 monthly with 512 MB memory",
-                        "Run bounded jobs, patch dependencies, and exclude sensitive payment credentials",
-                        "Existing encrypted workstation supports early batches without continuous server availability",
-                    ],
-                    [
-                        "05: Amazon SES delivers requested reports and operational messages",
-                        "Outbound reference: $0.10 per 1,000 messages, with data charges separate",
-                        "Authenticate sending domains and process delivery failures and suppression events",
-                        "Existing business mailbox handles low-volume requested reports without automated delivery",
-                    ],
-                    [
-                        "06: Wave supplies the initial accounting and expense ledger",
-                        "Starter reference: $0 subscription; payment services and optional upgrades cost extra",
-                        "Reconcile operator fees separately from merchant settlement and vault cash",
-                        "Controlled double-entry workbook works temporarily with monthly accountant review",
-                    ],
-                    [
-                        "07: GitHub stores diagnostic code and reviewed configuration changes",
-                        "Free organization tier reference: $0 subscription within published usage limits",
-                        "Version scripts and use protected secret storage outside repository contents",
-                        "Local Git plus encrypted backup avoids hosted collaboration at small scale",
-                    ],
-                    [
-                        "08: HubSpot tracks acquisition cohorts and merchant follow-up ownership",
-                        "Free CRM reference: $0 subscription, subject to current feature limits",
-                        "Capture source evidence, mailer status, merchant response, and next action",
-                        "Restricted-access spreadsheet supports early cohorts with disciplined duplicate checking",
-                    ],
-                    [
-                        "09: IRIS CRM coordinates sponsor boarding and residual analysis",
-                        "Contract-priced service; require written setup, monthly, integration, and exit charges",
-                        "Prove processor-specific boarding exports and replay actual residual statement calculations",
-                        "Sponsor portal plus controlled CSV audit avoids premature standalone licensing",
-                    ],
-                    [
-                        "10: Verifi RDR and Ethoca support eligible dispute automation",
-                        "Contract-priced network services; obtain separate event fees and refund rules",
-                        "Test duplicate suppression and reconcile each event against processor records",
-                        "Sponsor dispute portal plus scheduled review reduces subscriptions but adds labor",
-                    ],
-                    [
-                        "11: Hyosung MoniView supports compatible ATM remote operational visibility",
-                        "Processor or distributor quote required; verify licensing and connectivity inclusions",
-                        "Monitor terminal health, estimated cash, reversal exceptions, and replenishment tickets",
-                        "Included processor telemetry plus physical counts can support an initial route",
-                    ],
-                    [
-                        "12: Lob supports API-driven physical diagnostic mailer production",
-                        "Contract and usage pricing vary; obtain exact format-specific delivered-piece quote",
-                        "Preserve approved artwork, mailing evidence, address corrections, and suppression records",
-                        "Local printer and USPS mailing support an illustrative $1.25 piece assumption",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Establish the entity, banking boundaries, and evidence-driven acquisition loop",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Form the entity in the state appropriate to its actual operations, obtain an EIN "
-                    "through the IRS, document ownership, and open accounts under the same legal name "
-                    "used in sponsor contracts. Maintain separate operating, tax, and vault-cash records; "
-                    "do not route merchant settlement through an ordinary operator checking account. "
-                    "The sponsor should document whether the business is an agent, sub-ISO, registered "
-                    "ISO, ATM deployer, or some combination, including who bears registration costs "
-                    "and ongoing oversight. Direct registration fees can break the $8,000 plan; use "
-                    "an explicitly authorized sponsored arrangement or defer launch rather than "
-                    "pretending those obligations disappear. Collect written insurance terms for general "
-                    "liability, technology errors, cyber events, employee dishonesty, and cash exposure "
-                    "as relevant. Examine unattended-machine, mysterious-disappearance, transit, "
-                    "deductible, and subcontractor exclusions instead of treating a policy certificate "
-                    "as proof that vault losses are covered. Review venue agreements for access hours, "
-                    "power, communications, exclusivity, removal rights, surcharge sharing, and cash "
-                    "ownership. If equipment financing or residual financing grants collateral rights, "
-                    "review the applicable state's UCC Article 9 requirements and search existing "
-                    "filings before signing. Personal guarantees and cross-default clauses can turn "
-                    "a small hardware purchase into exposure across the entire residual portfolio."
-                ),
-                (
-                    "Implement newly_registered_domain_trigger_arbitrage as a narrow private technical "
-                    "diagnostic service, not a claim of affiliation with a registrar or government "
-                    "office. Request authorized ICANN CZDS access and compute daily differences "
-                    "between successive available zone files; zone additions are discovery signals, "
-                    "not proof of registration date. For .us, use authorized registry RDAP access "
-                    "or licensed feeds where available, respecting access terms and published limits. "
-                    "Do not assume every record is unredacted or that a public bulk RDAP feed "
-                    "exists. Normalize domain tokens and cross-match them against permitted Secretary "
-                    "of State LLC records, then manually verify the business association and usable "
-                    "physical mailing address. A registered-agent address is not automatically the "
-                    "merchant's storefront. Over 72 hours, run bounded public DNS and HTTP checks "
-                    "at roughly 24-hour intervals for homepage reachability, sitemap.xml, SPF, and "
-                    "DMARC. Store timestamps and observed responses. Record zero observed Google "
-                    "indexed pages only when a permitted search source actually supports that "
-                    "observation; never equate it with proof of zero indexed pages. Missing SPF "
-                    "or DMARC warrants context about intended email use, not a fabricated breach "
-                    "claim. Stop probes that encounter access restrictions or express opt-out requests."
-                ),
-                (
-                    "Price the diagnostic cohort as an experiment with an explicit stop condition. "
-                    "Assume 400 verified mailers at $1.25 delivered each, plus $200 for analyst "
-                    "review and preparation: $700 total. The $1.25 is an illustrative print-and-postage "
-                    "assumption, not a Lob tariff. Eight replies imply a 2% response rate; two boarded "
-                    "merchants imply a 0.5% boarding rate and $350 acquisition cost per merchant. "
-                    "At $60 retained monthly residual each, the cohort generates $120 monthly "
-                    "operator revenue and a simple 5.83-month revenue payback before servicing "
-                    "costs, attrition, or payment delay. If incremental service costs are $15 per "
-                    "merchant monthly, contribution becomes $90 and payback extends to 7.78 months. "
-                    "Pause the next cohort if verified addresses deteriorate or projected contribution "
-                    "payback exceeds the funded horizon. Each mailer should identify the private "
-                    "sender, show a specific observed fault, offer an actionable DNS or sitemap "
-                    "repair, and avoid invoice-like formatting. Keep payment-processing outreach "
-                    "secondary to the genuine diagnostic. When WHOIS privacy prevents resolution, "
-                    "fall back to authorized CZDS zone files plus verified SOS cross-matching, "
-                    "not high-frequency WHOIS scraping. Skip unresolved identities rather than "
-                    "buying increasingly intrusive data to force a match."
-                ),
-            ],
-            "table": {
-                "caption": "Entity, Banking, Insurance, and NRD Evidence Controls",
-                "headers": [
-                    "Control surface requiring documented ownership",
-                    "Evidence required before committing startup funds",
-                    "Concrete unit economics or operating test",
-                    "Failure response preserving capital and customer trust",
-                ],
-                "rows": [
-                    [
-                        "Legal entity and sponsor relationship define authorized operating scope",
-                        "Filed entity documents, EIN confirmation, sponsor contract, and ownership schedule",
-                        "Compare complete registration obligations against the funded onboarding budget",
-                        "Choose an authorized sub-ISO arrangement or defer unaffordable direct registration",
-                    ],
-                    [
-                        "Bank accounts distinguish operator receipts from deployed cash assets",
-                        "Bank-approved account titles, signer permissions, and terminal-level cash ledger",
-                        "$6,750 allocated vault cash cannot also fund recurring software bills",
-                        "Freeze discretionary deployment when bank reconciliation reveals unexplained differences",
-                    ],
-                    [
-                        "Insurance and venue terms determine who actually bears losses",
-                        "Bound coverage wording, exclusions, venue agreement, and cash-service responsibilities",
-                        "Compare each deductible with available unrestricted incident funding before deployment",
-                        "Reduce machine exposure or obtain suitable coverage before loading cash",
-                    ],
-                    [
-                        "NRD identity matching links public signals to verified businesses",
-                        "Authorized zone access, source timestamps, SOS matches, and address validation",
-                        "Review 400 unique recipients before approving the $700 acquisition cohort",
-                        "Suppress ambiguous matches and registered-agent addresses lacking a useful business connection",
-                    ],
-                    [
-                        "Diagnostic mailers convert verified observations into measurable merchant conversations",
-                        "Approved private-sender artwork, reproducible findings, opt-outs, and cohort attribution",
-                        "Two merchants at $45 contribution each repay $700 in 7.78 months",
-                        "Pause follow-on cohorts when realized contribution cannot support funded payback",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Authorize and normalize the discovery inputs",
-                    "action": "Document CZDS permissions, permitted .us RDAP access, and SOS retrieval terms.",
-                    "detail": "Diff available zone snapshots daily, deduplicate domains, and record discovery dates separately from verified registration dates.",
-                },
-                {
-                    "step": 2,
-                    "title": "Verify identity and collect bounded diagnostics",
-                    "action": "Confirm business matches and perform public DNS and HTTP checks across 72 hours.",
-                    "detail": "Capture observations at approximately 24-hour intervals, honor access restrictions, and suppress unresolved mailing identities.",
-                },
-                {
-                    "step": 3,
-                    "title": "Send a truthful, reproducible technical audit",
-                    "action": "Approve the private-sender mailer and dispatch only the funded, verified cohort.",
-                    "detail": "Show an actual finding and repair path; distinguish observational search results from a definitive indexing diagnosis.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile conversion economics before repeating",
-                    "action": "Attribute replies, boarded merchants, first residual receipts, and servicing costs to the cohort.",
-                    "detail": "Compare actual contribution payback against runway and suppress opt-outs before authorizing the next mailing batch.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Verify fee mechanics, settlement evidence, and incident readiness before launch",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Test customer-facing pricing as a transaction flow, not a brochure. Credit-card "
-                    "surcharging and genuinely posted dual pricing require different implementations; "
-                    "calling a checkout-added fee a cash discount does not establish that it is one. "
-                    "Under 15 U.S.C. § 1693o-2 and Regulation II, debit routing and permitted "
-                    "discount practices require specific treatment, while network rules separately "
-                    "prohibit debit and prepaid surcharging even when a debit card is processed "
-                    "without a PIN. Obtain current Visa and Mastercard requirements through the "
-                    "acquirer, including applicable caps, notice procedures, and receipt presentation. "
-                    "Check state-specific requirements wherever merchants operate; New York General "
-                    "Business Law § 518 requires transparent presentation of credit-card pricing "
-                    "and restricts the surcharge amount. Run approved test transactions spanning "
-                    "credit, debit, prepaid, refund, partial refund, and canceled sale. Capture "
-                    "receipts, displayed prices, tender classification, and processor results "
-                    "without storing cardholder secrets. High-risk MID orchestration means approved "
-                    "placement of accurately described merchants with suitable acquirers, never "
-                    "splitting activity to hide chargebacks, misrepresenting merchant category, "
-                    "or circumventing MATCH-related underwriting. If classification or pricing "
-                    "cannot be verified, disable the affected fee configuration and continue "
-                    "only with a documented supported pricing model."
-                ),
-                (
-                    "For ATMs, implement Regulation E's operator-fee notice under 12 CFR § 1005.16 "
-                    "before the consumer becomes committed to paying the fee. The on-screen notice "
-                    "or paper notice must state the amount and allow the consumer to elect to "
-                    "continue; do not claim that a federal exterior placard requirement remains "
-                    "universally applicable. Venue and network signage obligations still need "
-                    "separate review. Test withdrawal success, customer cancellation, cash-unavailable "
-                    "conditions, communication failure, partial dispense behavior where supported, "
-                    "and processor reversal handling. Reconcile electronic journal records with "
-                    "settlement and physical cash counts before authorizing unattended operation. "
-                    "Review FinCEN's FIN-2007-G006 against the actual business model: its analysis "
-                    "of limited-service ATM owners is fact-specific, not a blanket exemption "
-                    "for every cash or transfer product. Maintain funding-source evidence and "
-                    "cooperate with the bank's customer due diligence. Do not add deposits, "
-                    "remittances, cryptocurrency, or another transfer function under an ordinary "
-                    "cash-withdrawal operating assumption. Set replenishment thresholds using "
-                    "cash demand and lead time, then name the person who receives an alert, "
-                    "the backup service provider, and the maximum safe response interval "
-                    "for each venue. An unanswered dashboard alert is not an operating control."
-                ),
-                (
-                    "Run a small controlled production pilot only after sponsor authorization and "
-                    "documented bench tests. Use an approved test environment where available; do "
-                    "not manufacture card activity merely to create transaction volume. Trace one "
-                    "merchant from application and underwriting decision through activation, fee "
-                    "configuration, first statement, residual calculation, and bank receipt. For "
-                    "the ATM route, trace one replenishment through dual-record custody, cassette "
-                    "loading, successful withdrawal, settlement, and closing cash reconciliation. "
-                    "A first-deal milestone does not establish recurring profitability; residual "
-                    "lag and later adjustments can change usable cash. Define explicit restart "
-                    "conditions for failures: corrected configuration, repeat transaction evidence, "
-                    "balanced ledger, and written ownership of any unresolved exception. Maintain "
-                    "a compact incident packet with sponsor escalation contacts, bank contact "
-                    "routes, terminal serial numbers, venue access instructions, and backup "
-                    "service arrangements. Test export recovery and contractor access removal "
-                    "before either becomes urgent. Review the operating dashboard weekly for "
-                    "merchant attrition, retained spread, dispute events, machine availability, "
-                    "cash variance, and unrestricted runway. Add headcount or paid tooling only "
-                    "when measured workload breaches a defined service target and the "
-                    "incremental contribution funds the added commitment without consuming "
-                    "the protected reserve."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Launch Verification Matrix: Evidence, Stop Conditions, and Named Recovery Paths",
-                "headers": [
-                    "Production readiness surface and accountable operating role",
-                    "Required evidence from an approved test",
-                    "Specific stop condition before customer exposure",
-                    "Recovery action and repeat verification requirement",
-                ],
-                "rows": [
-                    [
-                        "Sponsor relationship and merchant underwriting owned by principal operator",
-                        "Written authorization, approved merchant category, signed pricing, and boarding acceptance",
-                        "Application facts differ from actual products, owners, or transaction behavior",
-                        "Correct the application and obtain sponsor acceptance before activating processing",
-                    ],
-                    [
-                        "Merchant pricing configuration owned by processor-supported implementation lead",
-                        "Credit, debit, prepaid, refund, and cancellation evidence matches approved settings",
-                        "Debit surcharge appears or displayed price conflicts with actual receipt",
-                        "Disable affected pricing and repeat the complete supported tender test",
-                    ],
-                    [
-                        "ATM disclosures and cash custody owned by route manager",
-                        "Fee election, reversal behavior, physical counts, and settlement reconcile correctly",
-                        "Customer cannot cancel before fee commitment or cash variance remains unexplained",
-                        "Suspend dispensing until configuration and custody records pass repeat verification",
-                    ],
-                    [
-                        "Residual recognition and liquidity owned by accounting control lead",
-                        "Schedule A replay matches statement and actual operator bank receipt",
-                        "Merchant settlement or vault cash enters recognized operator revenue",
-                        "Correct ledger mapping and rebuild the revenue bridge before reporting profit",
-                    ],
-                    [
-                        "Security and continuity owned by designated system administrator",
-                        "Individual access, multifactor protection, export recovery, and contact escalation tested",
-                        "Shared privileged credentials persist or recovery depends on one unavailable person",
-                        "Rotate access, establish backup custody, and repeat restoration before expansion",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four evidence checks before production expansion",
-                "body": (
-                    "Expansion follows reproducible evidence, not a sales promise or a terminal's successful power-on."
-                ),
-                "items": [
-                    "Verify at least 50% of initial capital remains allocated to working-capital and float reserves, with unrestricted cash and deployed vault cash reported separately.",
-                    "Verify sponsor authorization, accurate merchant classification, signed Schedule A terms, and a reproducible net retained residual calculation.",
-                    "Verify debit and prepaid fee treatment, state-specific pricing presentation, ATM fee election, reversals, and reconciliation using approved test procedures.",
-                    "Verify named incident coverage, tested data exports, restricted bank-edit permissions, physical cash accountability, and a funded recovery path.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Buy the evidence that protects a residual before buying the infrastructure that merely displays it.",
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Choose the $8,000 or $45,000 allocation, reserve 55%, and publish unrestricted working cash separately from deployed ATM float.",
-        "Obtain written sponsor scope, complete Schedule A economics, residual ownership terms, and itemized registration or onboarding obligations.",
-        "Confirm current vendor prices, adopt only required stack layers, and test exports before committing to contract-priced integrations.",
-        "Run one verified $700 NRD diagnostic cohort using authorized zone access, SOS identity checks, bounded probes, and contribution-payback tracking.",
-        "Test merchant tender classification, state pricing presentation, ATM fee election, reversal handling, and physical cash reconciliation before expansion.",
-        "Reconcile annual operator revenue and total costs to $27,000, $189,125, and $440,000 owner profit without counting settlements or vault cash as revenue.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "12 CFR § 1005.16 — Disclosures at automated teller machines",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1005/section-1005.16",
-            "relevance": "Requires covered ATM operator fee disclosure and consumer election before the consumer becomes committed to paying the fee.",
-        },
-        {
-            "title": "15 U.S.C. § 1693o-2 — Reasonable fees and rules for payment card transactions",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1693o-2",
-            "relevance": "Establishes federal debit interchange, routing, and payment-discount provisions relevant to processor contracting and merchant pricing design.",
-        },
-        {
-            "title": "12 CFR § 235.7 — Limitations on payment card restrictions",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-II/subchapter-A/part-235/section-235.7",
-            "relevance": "Addresses debit network exclusivity and routing restrictions; network surcharge rules must be checked separately.",
-        },
-        {
-            "title": "New York General Business Law § 518 — Credit card surcharge restrictions",
-            "url": "https://www.nysenate.gov/legislation/laws/GBS/518",
-            "relevance": "Requires applicable New York credit-card pricing to be clearly presented and limits the permissible surcharge amount.",
-        },
-        {
-            "title": "31 CFR § 1010.100(ff) — Money services business definitions",
-            "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/section-1010.100",
-            "relevance": "Provides definitions used to assess whether activities extending beyond ordinary ATM cash withdrawals trigger additional business classifications.",
-        },
-        {
-            "title": "FinCEN FIN-2007-G006 — Guidance on whether certain ATM owners are money services businesses",
-            "url": "https://www.fincen.gov/resources/statutes-regulations/guidance/application-definition-money-services-business-certain-owner",
-            "relevance": "Explains the fact-specific treatment of certain limited-service ATM owners and operators; additional transfer functions require separate assessment.",
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'dual-pricing-cash-discount-mechanics-sales-pitch',
+ 'question_prompt': 'How do cash discount and dual pricing programs work, and how do you pitch them to '
+                    'merchants without scaring them off?',
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Dual Pricing and Cash Discount: Mechanics and the Sales Pitch',
+ 'subtitle': 'How cash discount and dual pricing work on POS systems; free-POS packages; 3% and 4% Edge '
+             'programs; pros, cons, and worked examples; presenting cash discounting without confusing the '
+             'merchant; field closing tactics; and cash discount residuals as the key variable',
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Dual pricing and cash discounting sellers converge on one promise: post a cash '
+                      'price and a card price, let the customer choose, and push processing cost off the '
+                      "merchant's statement. The gas pump is the universal proof point, used by Joe "
+                      'Wagner, James Shepherd, FTx POS and Titan to normalize the spread, typically three '
+                      'to four percent. On the register, a Valor terminal turns a $100 cash price into a '
+                      '$104 card price; PaymentCloud prices a $17.66 cheeseburger at $18.37 on card. '
+                      'Shepherd warns that residuals live or die on average ticket: $25 to $70 is the '
+                      'sweet spot, a $10 ticket goes negative 20 basis points at 3 percent, and '
+                      'high-ticket corporate reward cards near 2.5 percent interchange squeeze margin. '
+                      'They split on whether shelves must carry both prices and on trial length, from 30 '
+                      'to 60 days.',
+ 'key_metrics': [{'label': 'Cash Discount Residual Sweet Spot',
+                  'metric': 'Cash Discount Residual Sweet Spot',
+                  'value': '$25 to $70 average ticket',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'James Shepherd identifies the average ticket band where flat rate service '
+                             'fee pricing carries the lowest cost and the fattest ISO markup.',
+                  'source': 'CCSalesPro ([AnhJYbY3ptw @ 00:01:30])'},
+                 {'label': 'Signature Debit Per-Item Cost',
+                  'metric': 'Signature Debit Per-Item Cost',
+                  'value': '22 cents plus 5 basis points; roughly 30 to 32 cents all-in',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Regulated debit interchange plus processor fees; about 1 percent on a $30 '
+                             'sale, 3.2 percent on a $10 sale, 6.4 percent on a $5 sale.',
+                  'source': 'CCSalesPro ([AnhJYbY3ptw @ 00:02:07])'},
+                 {'label': 'Easy Pay Flat Monthly Fee Tiers',
+                  'metric': 'Easy Pay Flat Monthly Fee Tiers',
+                  'value': '$25 under $5,000; $50 for $5,000 to $10,000; $100 flat above $10,000',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'One monthly fee replaces percentages, transaction, batch, PCI and annual '
+                             'fees; the highest monthly charge is $100 regardless of volume.',
+                  'source': 'Joe Wagner | Merchant Services & Passive Income ([81tAw0Al6N0 @ 00:01:38])'},
+                 {'label': 'Debit Share of Card Transactions',
+                  'metric': 'Debit Share of Card Transactions',
+                  'value': 'Over 80%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'FTx POS measured its parent company stores and found over 80 percent of card '
+                             'transactions flagged as debit, which cannot be surcharged.',
+                  'source': 'FTx POS ([YyYXmSsR5as @ 00:00:58])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus — Two Prices, the Gas Pump Frame, and a '
+                        'Zero-Fee Statement',
+               'paragraphs': ['Across the operators, the core mechanism is the same: the merchant posts a '
+                              'cash price and a card price, the customer picks, and the spread covers '
+                              'processing so the merchant stops absorbing fees. Chad The POS Guy frames it '
+                              'bluntly, saying the cash price is always lower and the whole point is that '
+                              "'your customer pays for the fees, and not you' [pNxf7ZuEt5w @ 00:00:34]. "
+                              'Electronic Money Company sells the same outcome as a merchant statement '
+                              'showing no fees at month end, with card revenue arriving at full value and '
+                              'clients reporting 10 to 30% increases in profit margins [QxwC71KUT-g @ '
+                              "00:02:36]. Joe Wagner's Easy Pay material pitches offsetting up to 100% of "
+                              'processing fees, naming the specific bleed points merchants hate: '
+                              'percentages, transaction fees, batch fees, statement fees, PCI fees and '
+                              'annual fees [81tAw0Al6N0 @ 00:00:34]. Titan Merchant Services adds the '
+                              'fairness angle, arguing that interchange subsidizes consumer reward '
+                              'programs, so every customer eats year-after-year price hikes driven by '
+                              "someone else's rewards card, while dual pricing hands cash payers a three "
+                              'to four percent break and brings that same three to four percent back to '
+                              'the business [lsC_M7zjTjY @ 00:01:26]. The shared promise is not a lower '
+                              "rate; it is removing the processing line from the merchant's cost structure "
+                              'entirely.',
+                              'The single most repeated proof point is the fuel pump. Joe Wagner tells '
+                              'merchants that a gas station charging an extra five or ten cents per gallon '
+                              'on a card is the exact program they already accept as consumers, then jokes '
+                              'that nobody drives to another station over a dime [KRZuPsngOLw @ 00:02:18]. '
+                              'James Shepherd of CCSalesPro, after field-selling in rural Pennsylvania, '
+                              'calls the fuel station concept the thread that ties the whole pitch '
+                              'together: it works as the opener, the psychological preamble before '
+                              'objections, the rebuttal itself and the education the merchant later '
+                              'repeats to customers [3bPRCy508Lc @ 00:07:13]. FTx POS points to the same '
+                              'pump sign reading cash price and credit price as the textbook example of '
+                              'dual pricing [YyYXmSsR5as @ 00:01:39]. On customer acceptance, the sellers '
+                              'are uniformly confident. Scott Shaw tells merchants who fear the added four '
+                              'percent will drive shoppers elsewhere that studies show cash discounting '
+                              'was not an issue at the point of sale 99.2 percent of the time and had zero '
+                              'impact on sales, and backs that with a 60-day trial plus a promise to '
+                              'switch back to traditional processing on request [hdPpKRl1Bhk @ 00:02:43]. '
+                              'The consensus: consumer familiarity, not technology, closes the merchant.',
+                              'Operators also agree on the baseline prerequisites. First, the platform has '
+                              'to support it: Chad The POS Guy warns that Toast and Square cannot pass '
+                              'fees to the customer, so merchants on those systems are forced to eat the '
+                              'roughly 3 percent [pNxf7ZuEt5w @ 00:00:48]. Second, the terminal does the '
+                              "math, not the cashier. Joe Wagner's Easy Pay pitch says the free terminal "
+                              'automatically recognizes payment type, prints the correct cash or credit '
+                              'price on the receipt and tracks everything so there is no reconciliation '
+                              'work [9ImWZ__BWMs @ 00:01:03]. Third, signage and price display: FTx POS '
+                              'insists you must display the credit price and cannot show only the cheaper '
+                              'cash price and then charge more at checkout, because that is just a '
+                              'surcharge by another name [YyYXmSsR5as @ 00:01:56], while O3 Merchant '
+                              "Services' Tanya lists menus, signs, point of sale screens and itemized "
+                              'receipts as places prices must appear [y6h2-zKFtQ0 @ 00:02:04]. Fourth, the '
+                              'commercial wrapper: nearly every seller leads with free equipment and no '
+                              'long-term contract, asking the merchant for a 45 to 60 day test run rather '
+                              "than a lease. Joe Wagner's own line is that merchants stay because they are "
+                              'happy, not because they are locked in.'],
+               'table': {'caption': 'Where the practitioners line up on dual pricing and cash discount '
+                                    'fundamentals',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Why It Matters To An Operator',
+                                     'Expert Source'],
+                         'rows': [['Two posted prices, with the customer choosing the payment method',
+                                   'Cash price always sits lower while the card price carries the fee',
+                                   'Merchant takes home full sale value instead of eating roughly three '
+                                   'percent',
+                                   'Chad The POS Guy ([pNxf7ZuEt5w @ 00:00:15])'],
+                                  ['Gas pump cash and credit pricing is the universal normalizer',
+                                   'Consumers already pay five or ten cents more per gallon on cards',
+                                   'Merchant recalls being the consumer and never thinking twice about it',
+                                   'Joe Wagner | Merchant Services & Passive Income ([KRZuPsngOLw @ '
+                                   '00:02:18])'],
+                                  ['Typical spread runs three to four percent of the advertised price',
+                                   'Cash payers get a three to four percent discount off advertised',
+                                   'That same three to four percent flows back to the business as profit',
+                                   'Titan Merchant Services ([lsC_M7zjTjY @ 00:01:26])'],
+                                  ['Terminal calculates the card price so staff never do the math',
+                                   'Merchant keys one cash price and the terminal shows cash 100, card 104',
+                                   'Usually a four percent differential applied automatically before the '
+                                   'card runs',
+                                   'CCSalesPro ([3bPRCy508Lc @ 00:03:30])'],
+                                  ['Credit price must be displayed, not hidden behind cash-only pricing',
+                                   'Showing only the cheaper cash price then charging more is just '
+                                   'surcharging',
+                                   'FTx says dual pricing carries no caps and works in all 50 states',
+                                   'FTx POS ([YyYXmSsR5as @ 00:01:56])'],
+                                  ['Platform choice decides whether fees can be passed to customers at all',
+                                   'Toast and Square cannot pass the processing fee to the customer',
+                                   'Merchants on those systems keep paying about three percent out of '
+                                   'pocket',
+                                   'Chad The POS Guy ([pNxf7ZuEt5w @ 00:00:48])'],
+                                  ['No contract, free terminal and a short test run sell trust',
+                                   'Easy Pay provides a free terminal and asks for a 45 to 60 day test run',
+                                   'Merchants stay because they are happy, not because they are locked in',
+                                   'Joe Wagner | Merchant Services & Passive Income ([9ImWZ__BWMs @ '
+                                   '00:01:18])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers — Register Math, Residual '
+                        'Math, and the Scripted Close',
+               'paragraphs': ['The register math is simple and the practitioners show it to the cent. On a '
+                              'Valor PayTech terminal, James Shepherd has the merchant key in only the '
+                              'cash price; the terminal applies the differential, usually four percent, '
+                              'and displays cash price 100, card price 104, with the receipt printing just '
+                              'card price 104 once the card option is chosen [3bPRCy508Lc @ 00:03:30]. '
+                              "Scott Shaw's signage tells customers a four percent fee applies to all "
+                              'store sales with an immediate four percent cash discount, so a ten dollar '
+                              'item rings up at ten dollars cash or ten dollars and forty cents on a card '
+                              "[hdPpKRl1Bhk @ 00:01:19]. PaymentCloud's cafe example lists a bacon "
+                              'cheeseburger at $17.66 cash and $18.37 card, a spread of about 4.02 '
+                              'percent, with both prices on the POS screen and at the bottom of the '
+                              "receipt [xRGCXR9kPug @ 00:01:13]. On the merchant's side of the ledger, "
+                              'Chad The POS Guy runs $30,000 a month at about 3 percent: $900 out of '
+                              'pocket and $29,100 taken home under traditional processing, versus the full '
+                              '$30,000 under dual pricing [pNxf7ZuEt5w @ 00:01:07]. Shepherd stresses the '
+                              'back end is identical to a non-cash adjustment program; only display, '
+                              'receipt and signage change.',
+                              'For the ISO side, James Shepherd calls average ticket the most important '
+                              'variable in cash discounting residuals, because the program is really flat '
+                              'rate pricing: the rep earns on the service fee collected from card payers, '
+                              'not on the discount [AnhJYbY3ptw @ 00:00:20]. The sweet spot is a $25 to '
+                              '$70 average ticket. Signature debit carries regulated interchange of 22 '
+                              'cents plus 5 basis points, roughly 30 to 32 cents all-in with processor '
+                              'fees, which is only about 1 percent on a $30 sale, so a 3 percent service '
+                              'fee leaves around 180 basis points of markup [AnhJYbY3ptw @ 00:02:07]. That '
+                              'debit math matters in practice: FTx POS reports that over 80 percent of its '
+                              "parent company's card transactions flag as debit [YyYXmSsR5as @ 00:00:58]. "
+                              'The edges bite. At a $10 ticket the 32 cents becomes 3.2 percent, so a 3 '
+                              'percent fee yields residuals of negative 20 basis points; at $5 it is 6.4 '
+                              'percent, underwater even at 3.99 percent, which is why Shepherd suggests a '
+                              'per-item fee like 59 cents on tiny tickets. At $150 tickets, jewelry and '
+                              'B2B merchants may run corporate reward cards near 2.5 percent interchange, '
+                              'so the percentage has to climb [AnhJYbY3ptw @ 00:04:26].',
+                              "The sales sequence is equally scripted. Joe Wagner's four-step soft-blow "
+                              'method runs: make them feel the savings, normalize it through the gas pump, '
+                              'explain that the program works exactly that way, then pull out the '
+                              "application with 'here let me show you,' a line Wagner says will make some "
+                              'reps millions [KRZuPsngOLw @ 00:04:02]. Inside the longer five-step '
+                              'conversation of intro, short story, presentation, close and rehash, Wagner '
+                              'refuses to ask for the bill, instead offering an either-or ballpark like '
+                              "'are you paying like 700 a month here, are you more like in the 400 range,' "
+                              'then annualizing a $500 answer into $6,000 a year and asking what the '
+                              "merchant would do with it [tgxPcd70hpA @ 00:09:26]. The application's first "
+                              "page shows annual, batch and transaction fees crossed out with black X's, "
+                              'which doubles as the bridge into the presentation and then into the close '
+                              "[tgxPcd70hpA @ 00:06:24]. James Shepherd's field opener skips the curiosity "
+                              'hook entirely: ask whether the merchant has seen a fuel station with cash '
+                              'and card prices, then explain that their current price becomes the cash '
+                              "price and the company 'just collects that tiny little difference' to offset "
+                              'processing [3bPRCy508Lc @ 00:06:11]. Shepherd reports a really good '
+                              'response to that opener.'],
+               'table': {'caption': 'Register math, merchant savings and ISO pricing numbers as stated by '
+                                    'the practitioners',
+                         'headers': ['Mechanic',
+                                     'Exact Number Stated',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Valor PayTech terminal dual pricing display at checkout',
+                                   '$100 keyed cash price displays as a $104 card price',
+                                   'Receipt prints only card price 104 after the merchant selects it',
+                                   'CCSalesPro ([3bPRCy508Lc @ 00:03:42])'],
+                                  ['Shaw Merchant Group four percent service fee signage',
+                                   '$10 item rings up $10 cash or $10.40 on card',
+                                   'Software adds the four percent automatically at the time of checkout',
+                                   'Scott Shaw ([hdPpKRl1Bhk @ 00:01:19])'],
+                                  ['PaymentCloud cafe menu example with both prices shown',
+                                   '$17.66 cash versus $18.37 card, roughly a 4.02 percent fee',
+                                   'Both prices appear on the POS screen and bottom of the receipt',
+                                   'PaymentCloud ([xRGCXR9kPug @ 00:01:13])'],
+                                  ['Merchant monthly fee burden under traditional card processing',
+                                   '$30,000 monthly sales at about 3 percent costs $900',
+                                   'Merchant takes home $29,100 versus the full $30,000 with dual pricing',
+                                   'Chad The POS Guy ([pNxf7ZuEt5w @ 00:01:07])'],
+                                  ['Annual cost of absorbing card fees on monthly volume',
+                                   '$300 to $400 per $10,000; $3,600 to $4,800 per year',
+                                   'Annualized loss is the number to put in front of merchants',
+                                   'Electronic Money Company ([QxwC71KUT-g @ 00:03:15])'],
+                                  ['Easy Pay flat monthly fee tiers replacing percentage pricing',
+                                   '$25 under $5,000; $50 up to $10,000; $100 flat above that',
+                                   'Merchant pays one fee and the highest monthly charge is $100',
+                                   'Joe Wagner | Merchant Services & Passive Income ([81tAw0Al6N0 @ '
+                                   '00:01:38])'],
+                                  ['Per-item fee fallback for very low average ticket merchants',
+                                   '$5 ticket costs 6.4 percent; consider 59 cents per transaction',
+                                   'A percentage fee alone leaves the ISO underwater below $25 tickets',
+                                   'CCSalesPro ([AnhJYbY3ptw @ 00:03:45])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Closing Lines and Pricing Tweaks the Pros Actually Use',
+                           'body': 'Field-tested moves from reps who have closed dual pricing and cash '
+                                   'discount deals door to door and priced them for residuals.',
+                           'items': ['Always annualize the savings: a merchant saving $500 a month hears '
+                                     "'six thousand dollars a year,' then gets asked whether it goes back "
+                                     'into the business or toward a vacation [Joe Wagner | Merchant '
+                                     'Services & Passive Income — KRZuPsngOLw @ 00:01:14].',
+                                     "Never ask for the statement; say 'I don't even need your bill' "
+                                     'because the fees are going away, and let the merchant ballpark with '
+                                     'an either-or question [Joe Wagner | Merchant Services & Passive '
+                                     'Income — tgxPcd70hpA @ 00:09:10].',
+                                     'On very low tickets, swap the 3.99 percent service fee for a '
+                                     'per-item fee such as 59 cents, and on high-ticket corporate card '
+                                     'merchants push the percentage up [CCSalesPro — AnhJYbY3ptw @ '
+                                     '00:03:45].',
+                                     'Once you are filling out the application, stop explaining; Wagner '
+                                     'says these deals are so fragile one small extra detail triggers ten '
+                                     'more rebuttals [Joe Wagner | Merchant Services & Passive Income — '
+                                     'tgxPcd70hpA @ 00:24:41].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Intro That Kills Rebuttals Up Front',
+                              'action': "Open likable and short, pre-empting the 'I'm busy' and 'I get "
+                                        "calls all day' brush-offs before the merchant can use them.",
+                              'detail': "Wagner's opener is 'I know you're real busy and I probably get "
+                                        "like two calls on this a day, let me just share what I've got and "
+                                        "I'll be out of your way,' because people buy when they like and "
+                                        'trust you [Joe Wagner | Merchant Services & Passive Income — '
+                                        'tgxPcd70hpA @ 00:01:44].'},
+                             {'step': 2,
+                              'title': 'Feel the Savings, Then Normalize at the Pump',
+                              'action': 'Get a ballpark monthly fee figure, annualize it, then walk the '
+                                        'merchant back to the last time they paid a higher card price for '
+                                        'gas.',
+                              'detail': 'Ask about the gas station charging five or ten cents more per '
+                                        'gallon on a card and joke that nobody drives elsewhere over a '
+                                        'dime, so the merchant remembers being the consumer and not '
+                                        'flinching [Joe Wagner | Merchant Services & Passive Income — '
+                                        'KRZuPsngOLw @ 00:02:18].'},
+                             {'step': 3,
+                              'title': 'Pull the App Out as a Trust Tool',
+                              'action': 'Show the first page with annual, batch and transaction fees '
+                                        'crossed out, pull the free terminal form, and write the core '
+                                        'model on the paper.',
+                              'detail': "Wagner writes 'month to month, no contract' on the application "
+                                        'and offers an initial next to it, so the words match a document '
+                                        'and the rep is already bridging into the close [Joe Wagner | '
+                                        'Merchant Services & Passive Income — tgxPcd70hpA @ 00:18:07].'},
+                             {'step': 4,
+                              'title': 'Bridge Close, Handshake and Rehash',
+                              'action': 'Deliver a bridge close line, stick a hand out for the handshake, '
+                                        'then confirm signage, install timing and the referral ask.',
+                              'detail': "Line: 'The hardest part is what we're doing right here, it only "
+                                        "takes another couple of minutes'; then signage ships, the "
+                                        'pre-programmed terminal arrives in five to seven days, and the '
+                                        'rep warns they will come back for referrals [Joe Wagner | '
+                                        'Merchant Services & Passive Income — tgxPcd70hpA @ 00:25:39].'}]},
+              {'heading': '3. Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The first fault line is what the product actually is. PaymentCloud draws a '
+                              'hard line: a cash discount knocks a discount off the regular price when the '
+                              'customer pays cash, while dual pricing runs two separate prices with the '
+                              'cash price sitting as the original sticker price [xRGCXR9kPug @ 00:01:54]. '
+                              'James Shepherd of CCSalesPro flattens that distinction on the money side, '
+                              'telling reps that this version of dual pricing has the exact same economic '
+                              'model as a non-cash adjustment or service fee program, so residuals and '
+                              'margin do not move at all; only the display, signage and receipt print '
+                              "change. Shepherd's reason for switching is card-brand pressure: Visa has "
+                              'come out strongly against adding a fee line item to the receipt, so the '
+                              'customer now picks a cash or card price before the card ever touches the '
+                              'terminal [3bPRCy508Lc @ 00:02:08]. Scott Shaw still pitches the older '
+                              'structure openly, with signage announcing a four percent fee on all store '
+                              'sales and software that adds a four percent service fee at checkout, '
+                              'turning a $10 item into $10.40 on a card [hdPpKRl1Bhk @ 00:01:00]. Joe '
+                              'Wagner sidesteps the labels entirely and sells the whole thing as flat-rate '
+                              'processing with the junk fees crossed out [tgxPcd70hpA @ 00:03:12].',
+                              'The second split is how much shelf work the merchant has to do. Tanya at O3 '
+                              'Merchant Services tells owners they must display prices everywhere, on '
+                              'menus, signs, point of sale screens and itemized receipts, before running '
+                              'the program [y6h2-zKFtQ0 @ 00:02:04]. Shepherd pushes back on blanket shelf '
+                              "rules: what the merchant puts on the shelf or menu is the merchant's "
+                              'decision, the terminal keys in only the cash price and calculates a card '
+                              'price usually four percent higher, and only certain states such as New York '
+                              'truly require both prices on the shelf or menu [3bPRCy508Lc @ 00:04:09]. '
+                              'FTx POS lands in the middle with one bright line: you must display the '
+                              'credit price, and showing only the cheaper cash price then charging more at '
+                              'checkout is just another way of doing a surcharge [YyYXmSsR5as @ 00:01:56]. '
+                              'On surcharging itself, PaymentCloud says it carries many regulations and '
+                              'state rules while dual pricing does not [xRGCXR9kPug @ 00:02:28], and FTx '
+                              'goes further, saying dual pricing has no caps, works in all 50 states, and '
+                              'lets a merchant discount as deep as they want, whereas surcharging is '
+                              'capped at 3% or actual cost and blocked on every debit card, which FTx says '
+                              'covers over 80% of card transactions in its parent company stores.',
+                              "The economics of the merchant-facing offer also diverge. Joe Wagner's Easy "
+                              'Pay model charges one flat monthly fee for the life of the account: $25 '
+                              'under $5,000 in volume, $50 between $5,000 and $10,000, and a flat $100 '
+                              'above $10,000, no matter whether the merchant runs $50,000 or $100,000 '
+                              "[81tAw0Al6N0 @ 00:01:38]. iSmart Payments' Edge pitch goes lower, claiming "
+                              'most businesses processing over $10,000 a month pay zero, with software '
+                              'that knows in real time what each non-cash transaction will cost and '
+                              'adjusts the purchase price to offset it [x7WUlpG34a8 @ 00:01:46]. Customer '
+                              "reaction is the other live argument. Scott Shaw's pitch claims studies show "
+                              'cash discounting was not an issue 99.2 percent of the time and had zero '
+                              'impact on sales [hdPpKRl1Bhk @ 00:02:43], while PaymentCloud lists customer '
+                              'confusion and extra staff explaining time as real costs and warns that too '
+                              'wide a cash-card gap can discourage sales if customers see the card price '
+                              'as unfair [xRGCXR9kPug @ 00:03:36]. Shaw backs the claim with a 60-day '
+                              'trial and a promise to switch merchants back to traditional processing '
+                              "while still paying less than they do now. PaymentCloud's answer is the "
+                              'opposite lever: strike a balance between the cash incentive and a '
+                              'reasonable card price, and treat customer communication as the key to '
+                              'making the program work.'],
+               'table': {'caption': 'Side-by-side playbooks where cash discount and dual pricing '
+                                    'practitioners split',
+                         'headers': ['Point Of Disagreement', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['How cash discount differs from dual pricing',
+                                   'Cash discount subtracts from the regular price; dual pricing keeps '
+                                   'cash as the original sticker price',
+                                   'Dual pricing runs the identical economic model as a non-cash '
+                                   'adjustment; only display and receipt change',
+                                   'PaymentCloud ([xRGCXR9kPug @ 00:01:54]); CCSalesPro ([3bPRCy508Lc @ '
+                                   '00:01:24])'],
+                                  ['How much shelf and menu disclosure is required',
+                                   'Display prices on menus, signs, point of sale screens and itemized '
+                                   'receipts before launching',
+                                   "Shelf and menu are the merchant's call; states like New York require "
+                                   'both prices posted',
+                                   'O3 Merchant Services ([y6h2-zKFtQ0 @ 00:02:04]); CCSalesPro '
+                                   '([3bPRCy508Lc @ 00:04:09])'],
+                                  ['Fee line item versus a separate card price',
+                                   'Signage announces a four percent fee added at checkout, so a $10 item '
+                                   'rings $10.40',
+                                   'Visa strongly opposes fee line items, so the customer picks cash or '
+                                   'card price first',
+                                   'Scott Shaw ([hdPpKRl1Bhk @ 00:01:00]); CCSalesPro ([3bPRCy508Lc @ '
+                                   '00:02:08])'],
+                                  ['Whether surcharging is a usable alternative path',
+                                   'Surcharging carries many regulations and state rules that dual pricing '
+                                   'simply does not have',
+                                   'Surcharging misses every debit card, caps at 3%, and works in only 47 '
+                                   'states',
+                                   'PaymentCloud ([xRGCXR9kPug @ 00:02:28]); FTx POS ([YyYXmSsR5as @ '
+                                   '00:00:42])'],
+                                  ['What the merchant pays the processor each month',
+                                   'Flat $25, $50 or $100 monthly by volume tier, capped at $100 for any '
+                                   'volume',
+                                   'Zero cost for most businesses processing over $10,000 a month, with '
+                                   'free signage and equipment',
+                                   'Joe Wagner | Merchant Services & Passive Income ([81tAw0Al6N0 @ '
+                                   '00:01:38]); iSmart Payments -Credit Card Processing Solutions '
+                                   '([x7WUlpG34a8 @ 00:01:46])'],
+                                  ['How much customer pushback to expect at checkout',
+                                   'Studies cited show cash discounting was not an issue 99.2 percent of '
+                                   'the time',
+                                   'Customer confusion, extra staff explaining time, and an oversized gap '
+                                   'can discourage sales',
+                                   'Scott Shaw ([hdPpKRl1Bhk @ 00:02:43]); PaymentCloud ([xRGCXR9kPug @ '
+                                   '00:03:36])'],
+                                  ["How to open the pitch on the merchant's floor",
+                                   'Make the merchant feel annualized savings first, then normalize with '
+                                   'the gas station example',
+                                   'Skip the fee-elimination hook and open directly on the fuel station '
+                                   'cash and card question',
+                                   'Joe Wagner | Merchant Services & Passive Income ([KRZuPsngOLw @ '
+                                   '00:00:58]); CCSalesPro ([3bPRCy508Lc @ 00:05:42])']]}},
+              {'heading': '4. Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The sharpest economics trap belongs to the rep, not the merchant. James '
+                              'Shepherd of CCSalesPro tells reps to reclassify cash discounting as '
+                              'flat-rate pricing, because what they actually earn is the service fee '
+                              'collected on card transactions, and flat rate behaves nothing like '
+                              'interchange plus. The sweet spot is a $25 to $70 average ticket, where '
+                              'signature debit at 22 cents plus 5 basis points lands around 30 to 32 cents '
+                              'all-in, roughly 1% of a $30 sale, leaving about 180 basis points of markup '
+                              'on a 3% fee [AnhJYbY3ptw @ 00:01:30]. Below that band the math flips. A $10 '
+                              'average ticket makes 32 cents equal 3.2%, so a 3% fee puts residuals at '
+                              'negative 20 basis points, and a $5 ticket costs 6.4%, still underwater at '
+                              '3.99% [AnhJYbY3ptw @ 00:02:44]. The other edge is high ticket: a $150 '
+                              'average jewelry store or a B2B account swiping corporate reward cards with '
+                              '2.5% interchange earns almost nothing on a 3% fee [AnhJYbY3ptw @ 00:04:12]. '
+                              'That is the check to run before copying a blanket offer like Titan Merchant '
+                              "Services' three to four percent cash discount pitched to businesses from "
+                              "all different industry types [lsC_M7zjTjY @ 00:01:26]. Shepherd's fixes are "
+                              'a per-item fee such as 59 cents on tiny tickets and a higher percentage on '
+                              'rewards-heavy high-ticket books.',
+                              'On the street, the deal usually dies on wording, not math. Joe Wagner is '
+                              'blunt that walking in and announcing the merchant can drop their fees by '
+                              'charging their customers does not work, because the merchant has not yet '
+                              'been made to feel the savings or remember being the consumer [KRZuPsngOLw @ '
+                              '00:03:12]. The second killer is the awkward pause. Reps who pitch without '
+                              'the application already on the table eventually run out of things to say, '
+                              'then reach for the app and trigger a rapid-fire list of reasons not to sign '
+                              'today; Wagner keeps the app out from the first bridge so the paperwork '
+                              'never arrives as a threat [tgxPcd70hpA @ 00:19:42]. The third is '
+                              'over-talking after the yes. Once the rep is asking for address and phone '
+                              'number, Wagner says deals are so fragile that one unnecessary detail can '
+                              'trigger ten more rebuttals, and Wagner fully expects reps who ignore this '
+                              'to call after walking out without the deal [tgxPcd70hpA @ 00:24:41]. '
+                              'Shepherd reports a personal reversal: the old pitch opened with eliminating '
+                              'fees to spark curiosity, then rural Pennsylvania showed those hoops could '
+                              'be skipped in favor of leading straight with the fuel station question, now '
+                              'threaded through the opening, the objection preamble and the rebuttal '
+                              '[3bPRCy508Lc @ 00:05:20].',
+                              'Structural traps sit underneath the pitch. Shepherd moved reps off the '
+                              'non-cash adjustment because that program was clearly under attack by the '
+                              'card brands, with Visa coming out strongly against a fee line item on the '
+                              'receipt [3bPRCy508Lc @ 00:02:08]. FTx POS flags the surcharge trap from the '
+                              'other side: over 80% of card transactions in its parent company stores '
+                              'would be flagged as debit and could not be surcharged at all, and '
+                              'surcharging is also not available for all Amex cards, capped at 3% or '
+                              'actual cost, live in only 47 states, with seven more states carrying '
+                              'pending legislation to ban it [YyYXmSsR5as @ 00:00:58]. Platform choice can '
+                              'block the whole program: Chad The POS Guy says Toast and Square cannot pass '
+                              'the fee to the customer, so a merchant doing $30,000 a month at about 3% '
+                              'eats $900 out of pocket and takes home roughly $29,100 [pNxf7ZuEt5w @ '
+                              '00:00:48]. PaymentCloud adds the leftover-cost check: some processors still '
+                              'charge small transaction or service fees even under dual pricing, so every '
+                              'cost line needs review before the merchant assumes the bill goes to zero '
+                              '[xRGCXR9kPug @ 00:04:23]. PaymentCloud also lists setup with a supporting '
+                              'processor and compliance with the law and the PCI Data Security Standard '
+                              'among the disadvantages.'],
+               'table': {'caption': 'Firsthand failure modes, what was measured, and the fix each '
+                                    'practitioner teaches',
+                         'headers': ['Failure Mode',
+                                     'What Happened Or Was Measured',
+                                     'Operator Fix Taught',
+                                     'Expert Source'],
+                         'rows': [["Low average ticket collapses the rep's residual",
+                                   'A $10 ticket makes 32 cents equal 3.2% against a 3% fee, negative 20 '
+                                   'basis points',
+                                   'Switch tiny-ticket merchants to per-item pricing such as 59 cents per '
+                                   'transaction',
+                                   'CCSalesPro ([AnhJYbY3ptw @ 00:02:44])'],
+                                  ['High ticket rewards cards bleed the margin',
+                                   'A $150 average jewelry or B2B account runs corporate reward cards at '
+                                   '2.5% interchange',
+                                   'Raise the percentage to cover rewards cards after checking average '
+                                   'ticket and card mix',
+                                   'CCSalesPro ([AnhJYbY3ptw @ 00:04:12])'],
+                                  ['Leading the pitch with charging the customers',
+                                   "The merchant shuts the conversation down right there with I can't do "
+                                   'that, not interested',
+                                   'Make them feel savings, then normalize with gas stations, Fandango and '
+                                   'DMV examples first',
+                                   'Joe Wagner | Merchant Services & Passive Income ([tgxPcd70hpA @ '
+                                   '00:11:12])'],
+                                  ['Grabbing the application late in the pitch',
+                                   'Pulling the app cold triggers a rapid-fire list of reasons not to sign '
+                                   'today',
+                                   'Pull the app early on the crossed-out fees page and write month to '
+                                   'month on it',
+                                   'Joe Wagner | Merchant Services & Passive Income ([tgxPcd70hpA @ '
+                                   '00:19:42])'],
+                                  ['Over-explaining once the paperwork has started',
+                                   'One small unnecessary detail during the application triggers ten more '
+                                   'rebuttals and a lost deal',
+                                   'Once asking for address and phone, ask only what the application in '
+                                   'front of you needs',
+                                   'Joe Wagner | Merchant Services & Passive Income ([tgxPcd70hpA @ '
+                                   '00:24:41])'],
+                                  ['Surcharging a debit-heavy merchant book',
+                                   'Over 80% of parent company card transactions were flagged debit and '
+                                   'could not be surcharged',
+                                   'Run cash discounting or dual pricing instead and always display the '
+                                   'credit price',
+                                   'FTx POS ([YyYXmSsR5as @ 00:00:58])'],
+                                  ['Merchant locked into a POS that cannot pass fees',
+                                   'Toast and Square cannot pass the fee, so $30,000 monthly at 3% costs '
+                                   '$900',
+                                   'Move the merchant onto a point of sale system that supports cash '
+                                   'discounting or dual pricing',
+                                   'Chad The POS Guy ([pNxf7ZuEt5w @ 00:00:48])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Boarding A Cash Discount Or Dual Pricing Merchant',
+                           'body': 'Every item below is a trap a practitioner reported hitting or warned '
+                                   'reps about directly; clear all four before the terminal ships.',
+                           'items': ['Model the average ticket first: below $25 the fixed 30 to 32 cent '
+                                     'cost can push a 3% or even 3.99% fee underwater, so quote a per-item '
+                                     'fee such as 59 cents instead [CCSalesPro — AnhJYbY3ptw @ 00:03:21].',
+                                     'Pull the card mix on high-ticket and B2B accounts: corporate reward '
+                                     'cards at 2.5% interchange wipe out a 3% service fee, so raise the '
+                                     'percentage before boarding [CCSalesPro — AnhJYbY3ptw @ 00:04:42].',
+                                     'Confirm the point of sale can pass the fee at all: Toast and Square '
+                                     'cannot, which leaves the merchant paying about $900 a month on '
+                                     '$30,000 in sales [Chad The POS Guy — pNxf7ZuEt5w @ 00:00:48].',
+                                     'Never post only the cash price and then charge more at card '
+                                     'checkout, because that is just another way of doing a surcharge; '
+                                     'display the credit price [FTx POS — YyYXmSsR5as @ 00:01:56].']}}],
+ 'pull_quote': '"One thing you can be sure of: just about every consumer that walks in the door has at one '
+               'point paid a slightly higher price for gas because they used their card, and they accepted '
+               'it." — CCSalesPro (3bPRCy508Lc @ 00:07:26).',
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ["Skip the merchant's bill and ballpark monthly fees with an either-or question such "
+                      'as 700 a month or more like 400, then annualize the number so $500 a month becomes '
+                      '$6,000 a year [Joe Wagner | Merchant Services & Passive Income — tgxPcd70hpA @ '
+                      '00:09:26].',
+                      'Normalize before explaining by asking whether the merchant has been to a gas '
+                      'station that charges an extra five or ten cents per gallon on a card, and get them '
+                      'to acknowledge it did not change their behavior [Joe Wagner | Merchant Services & '
+                      'Passive Income — KRZuPsngOLw @ 00:02:01].',
+                      "Open the application to the page with the black x's and point at the crossed-out "
+                      'annual fee, batch fee and transaction fee lines [Joe Wagner | Merchant Services & '
+                      'Passive Income — tgxPcd70hpA @ 00:06:24].',
+                      'While explaining the no-contract model, pull out the free terminal form and write '
+                      'month to month, no contract on the application so the words are backed by a '
+                      'document [Joe Wagner | Merchant Services & Passive Income — tgxPcd70hpA @ '
+                      '00:18:07].',
+                      'Set pricing by average ticket and card mix: per-item fees on really low tickets and '
+                      'a higher percentage on high tickets loaded with corporate rewards cards [CCSalesPro '
+                      '— AnhJYbY3ptw @ 00:04:57].',
+                      'Configure the terminal so the merchant keys in the cash price, the terminal '
+                      'calculates the card price differential of usually four percent, and the receipt '
+                      'prints the card price, with signage at the counter and the door [CCSalesPro — '
+                      '3bPRCy508Lc @ 00:03:30].'],
+ 'statutory_citations': [{'title': 'CCSalesPro — Cash Discounting Residuals – The Most Important Variable '
+                                   '[00:02:44]',
+                          'url': 'https://www.youtube.com/watch?v=AnhJYbY3ptw&t=164s',
+                          'relevance': 'Primary practitioner testimony on average ticket size, the $25 to '
+                                       '$70 sweet spot, negative residuals on low tickets, and corporate '
+                                       'rewards card cost on high tickets.'},
+                         {'title': 'Joe Wagner | Merchant Services & Passive Income — Cash Discount & Dual '
+                                   'Pricing Sales Pitch | Merchant Services Training [00:11:12]',
+                          'url': 'https://www.youtube.com/watch?v=tgxPcd70hpA&t=672s',
+                          'relevance': 'Primary practitioner testimony on normalizing the cash discount '
+                                       'pitch, using the application as a bridge, the bridge close line, '
+                                       'and how deals are lost by over-explaining.'},
+                         {'title': 'CCSalesPro — How to Sell Dual Pricing [00:02:08]',
+                          'url': 'https://www.youtube.com/watch?v=3bPRCy508Lc&t=128s',
+                          'relevance': 'Primary practitioner testimony on moving from non-cash adjustment '
+                                       'to dual pricing under Visa pressure and leading the pitch with the '
+                                       'fuel station concept.'},
+                         {'title': 'FTx POS — Reduce Card Processing Fees with Dual Pricing (FTx POS) '
+                                   '[00:01:56]',
+                          'url': 'https://www.youtube.com/watch?v=YyYXmSsR5as&t=116s',
+                          'relevance': 'Primary practitioner testimony on surcharging limits on debit '
+                                       'cards and the requirement to display the credit price under dual '
+                                       'pricing.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'QxwC71KUT-g',
+                       'title': 'How Dual Pricing Helps Merchants Eliminate Credit Card Fees',
+                       'channel': 'Electronic Money Company',
+                       'author': 'Electronic Money Company',
+                       'text': 'Every $10,000 in credit card sales can cost you $300 to $400 in fees, and '
+                               'over a year that adds up to $3,600 or $4,800 or more.',
+                       'tip': 'Every $10,000 in credit card sales can cost you $300 to $400 in fees, and '
+                              'over a year that adds up to $3,600 or $4,800 or more.',
+                       'timestamp': 195,
+                       'timestamp_seconds': 195,
+                       'timestamp_label': '[00:03:15]',
+                       'url': 'https://www.youtube.com/watch?v=QxwC71KUT-g&t=195s',
+                       'markdown': '[00:03:15](https://www.youtube.com/watch?v=QxwC71KUT-g&t=195s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pNxf7ZuEt5w',
+                       'title': 'what is DUAL PRICING / CASH DISCOUNT with a POS?',
+                       'channel': 'Chad The POS Guy',
+                       'author': 'Chad The POS Guy',
+                       'text': 'Toast and Square do not have the ability to actually pass the fees off to '
+                               "their customer, so if you're using Toast or Square, you as the business "
+                               'owner are forced to pay for that credit card processing fee.',
+                       'tip': 'Toast and Square do not have the ability to actually pass the fees off to '
+                              "their customer, so if you're using Toast or Square, you as the business "
+                              'owner are forced to pay for that credit card processing fee.',
+                       'timestamp': 48,
+                       'timestamp_seconds': 48,
+                       'timestamp_label': '[00:00:48]',
+                       'url': 'https://www.youtube.com/watch?v=pNxf7ZuEt5w&t=48s',
+                       'markdown': '[00:00:48](https://www.youtube.com/watch?v=pNxf7ZuEt5w&t=48s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'b0H2H7FAjPA',
+                       'title': 'Dual Pricing Explained: Clear Cash and Card Prices',
+                       'channel': 'Next Generation Payments',
+                       'author': 'Next Generation Payments',
+                       'text': 'A comprehensive free point of sale package that eliminates these costs '
+                               'entirely: zero hardware fees, zero SaaS fees, zero credit card processing '
+                               'fees.',
+                       'tip': 'A comprehensive free point of sale package that eliminates these costs '
+                              'entirely: zero hardware fees, zero SaaS fees, zero credit card processing '
+                              'fees.',
+                       'timestamp': 4,
+                       'timestamp_seconds': 4,
+                       'timestamp_label': '[00:00:04]',
+                       'url': 'https://www.youtube.com/watch?v=b0H2H7FAjPA&t=4s',
+                       'markdown': '[00:00:04](https://www.youtube.com/watch?v=b0H2H7FAjPA&t=4s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xRGCXR9kPug',
+                       'title': 'Save Money With Dual Pricing: Why Merchants Switch to Dual Pricing | '
+                                'Pros, Cons, and an Example',
+                       'channel': 'PaymentCloud',
+                       'author': 'PaymentCloud',
+                       'text': 'Bacon cheeseburger for a cash price of $17.66 and a bacon cheeseburger for '
+                               'a credit card price of $18.37; the fee here will be about 4.02%.',
+                       'tip': 'Bacon cheeseburger for a cash price of $17.66 and a bacon cheeseburger for '
+                              'a credit card price of $18.37; the fee here will be about 4.02%.',
+                       'timestamp': 73,
+                       'timestamp_seconds': 73,
+                       'timestamp_label': '[00:01:13]',
+                       'url': 'https://www.youtube.com/watch?v=xRGCXR9kPug&t=73s',
+                       'markdown': '[00:01:13](https://www.youtube.com/watch?v=xRGCXR9kPug&t=73s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '81tAw0Al6N0',
+                       'title': 'How the Cash Discount Program & Dual Pricing Actually Work (Full '
+                                'Explanation)',
+                       'channel': 'Joe Wagner | Merchant Services & Passive Income',
+                       'author': 'Joe Wagner | Merchant Services & Passive Income',
+                       'text': 'If you process less than $5,000, you only pay $25; if you process between '
+                               '$5,000 and $10,000, you only pay $50 a month.',
+                       'tip': 'If you process less than $5,000, you only pay $25; if you process between '
+                              '$5,000 and $10,000, you only pay $50 a month.',
+                       'timestamp': 98,
+                       'timestamp_seconds': 98,
+                       'timestamp_label': '[00:01:38]',
+                       'url': 'https://www.youtube.com/watch?v=81tAw0Al6N0&t=98s',
+                       'markdown': '[00:01:38](https://www.youtube.com/watch?v=81tAw0Al6N0&t=98s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hdPpKRl1Bhk',
+                       'title': 'Dual Pricing - Cash Discounting Program - Eliminate Payment Processing '
+                                'Fees - Merchant Services',
+                       'channel': 'Scott Shaw',
+                       'author': 'Scott Shaw',
+                       'text': 'When you sign up for the dual pricing program you are given a 60-day trial '
+                               "period to run the program, and if it doesn't work for your business we can "
+                               'switch you back to traditional processing.',
+                       'tip': 'When you sign up for the dual pricing program you are given a 60-day trial '
+                              "period to run the program, and if it doesn't work for your business we can "
+                              'switch you back to traditional processing.',
+                       'timestamp': 183,
+                       'timestamp_seconds': 183,
+                       'timestamp_label': '[00:03:03]',
+                       'url': 'https://www.youtube.com/watch?v=hdPpKRl1Bhk&t=183s',
+                       'markdown': '[00:03:03](https://www.youtube.com/watch?v=hdPpKRl1Bhk&t=183s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KRZuPsngOLw',
+                       'title': 'How to Present Cash Discounting Without Confusing the Merchant',
+                       'channel': 'Joe Wagner | Merchant Services & Passive Income',
+                       'author': 'Joe Wagner | Merchant Services & Passive Income',
+                       'text': "If you're saving someone five hundred dollars a month you need to "
+                               'reference this program as saving them six thousand dollars a year.',
+                       'tip': "If you're saving someone five hundred dollars a month you need to reference "
+                              'this program as saving them six thousand dollars a year.',
+                       'timestamp': 74,
+                       'timestamp_seconds': 74,
+                       'timestamp_label': '[00:01:14]',
+                       'url': 'https://www.youtube.com/watch?v=KRZuPsngOLw&t=74s',
+                       'markdown': '[00:01:14](https://www.youtube.com/watch?v=KRZuPsngOLw&t=74s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lsC_M7zjTjY',
+                       'title': 'Best Payment Processing Solutions: Cash Discount & Dual Pricing',
+                       'channel': 'Titan Merchant Services',
+                       'author': 'Titan Merchant Services',
+                       'text': 'Businesses from all different industry types can empower their customers '
+                               'with the choice of paying with their credit card or getting a three to '
+                               'four percent discount off the advertised price by paying with cash.',
+                       'tip': 'Businesses from all different industry types can empower their customers '
+                              'with the choice of paying with their credit card or getting a three to four '
+                              'percent discount off the advertised price by paying with cash.',
+                       'timestamp': 86,
+                       'timestamp_seconds': 86,
+                       'timestamp_label': '[00:01:26]',
+                       'url': 'https://www.youtube.com/watch?v=lsC_M7zjTjY&t=86s',
+                       'markdown': '[00:01:26](https://www.youtube.com/watch?v=lsC_M7zjTjY&t=86s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9ImWZ__BWMs',
+                       'title': 'What Is Dual Pricing? | Merchant Services Explained',
+                       'channel': 'Joe Wagner | Merchant Services & Passive Income',
+                       'author': 'Joe Wagner | Merchant Services & Passive Income',
+                       'text': 'You determine your cash prices based on how much profits you need to earn '
+                               "on each item or service, and then that's the same amount you will receive "
+                               'even if they pay by card.',
+                       'tip': 'You determine your cash prices based on how much profits you need to earn '
+                              "on each item or service, and then that's the same amount you will receive "
+                              'even if they pay by card.',
+                       'timestamp': 49,
+                       'timestamp_seconds': 49,
+                       'timestamp_label': '[00:00:49]',
+                       'url': 'https://www.youtube.com/watch?v=9ImWZ__BWMs&t=49s',
+                       'markdown': '[00:00:49](https://www.youtube.com/watch?v=9ImWZ__BWMs&t=49s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'AnhJYbY3ptw',
+                       'title': 'Cash Discounting Residuals – The Most Important Variable',
+                       'channel': 'CCSalesPro',
+                       'author': 'CCSalesPro',
+                       'text': 'If somebody has an average ticket size of $10, well now all of a sudden '
+                               'that 32 cents becomes 3.2%.',
+                       'tip': 'If somebody has an average ticket size of $10, well now all of a sudden '
+                              'that 32 cents becomes 3.2%.',
+                       'timestamp': 164,
+                       'timestamp_seconds': 164,
+                       'timestamp_label': '[00:02:44]',
+                       'url': 'https://www.youtube.com/watch?v=AnhJYbY3ptw&t=164s',
+                       'markdown': '[00:02:44](https://www.youtube.com/watch?v=AnhJYbY3ptw&t=164s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3bPRCy508Lc',
+                       'title': 'How to Sell Dual Pricing',
+                       'channel': 'CCSalesPro',
+                       'author': 'CCSalesPro',
+                       'text': 'The idea of adding a line item to the receipt and adding a fee to the '
+                               "transaction when it's a card transaction is something that Visa has come "
+                               'out strongly against.',
+                       'tip': 'The idea of adding a line item to the receipt and adding a fee to the '
+                              "transaction when it's a card transaction is something that Visa has come "
+                              'out strongly against.',
+                       'timestamp': 128,
+                       'timestamp_seconds': 128,
+                       'timestamp_label': '[00:02:08]',
+                       'url': 'https://www.youtube.com/watch?v=3bPRCy508Lc&t=128s',
+                       'markdown': '[00:02:08](https://www.youtube.com/watch?v=3bPRCy508Lc&t=128s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'y6h2-zKFtQ0',
+                       'title': 'Traditional Credit Card Pricing vs. Dual Pricing: Which One to Choose For '
+                                'Your Business',
+                       'channel': 'O3 Merchant Services',
+                       'author': 'O3 Merchant Services',
+                       'text': 'Before applying this dual pricing program business owners need to be aware '
+                               'that they must comply with some rules and regulations such as displaying '
+                               'their prices everywhere.',
+                       'tip': 'Before applying this dual pricing program business owners need to be aware '
+                              'that they must comply with some rules and regulations such as displaying '
+                              'their prices everywhere.',
+                       'timestamp': 108,
+                       'timestamp_seconds': 108,
+                       'timestamp_label': '[00:01:48]',
+                       'url': 'https://www.youtube.com/watch?v=y6h2-zKFtQ0&t=108s',
+                       'markdown': '[00:01:48](https://www.youtube.com/watch?v=y6h2-zKFtQ0&t=108s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GRvIDwPGLhg',
+                       'title': 'What is dual pricing credit card processing?',
+                       'channel': 'Bay State Merchant Services',
+                       'author': 'Bay State Merchant Services',
+                       'text': 'At Bay State Merchant Services, we help you implement dual pricing the '
+                               'right way with compliant signage, system setup, and support every step of '
+                               'the way.',
+                       'tip': 'At Bay State Merchant Services, we help you implement dual pricing the '
+                              'right way with compliant signage, system setup, and support every step of '
+                              'the way.',
+                       'timestamp': 74,
+                       'timestamp_seconds': 74,
+                       'timestamp_label': '[00:01:14]',
+                       'url': 'https://www.youtube.com/watch?v=GRvIDwPGLhg&t=74s',
+                       'markdown': '[00:01:14](https://www.youtube.com/watch?v=GRvIDwPGLhg&t=74s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tgxPcd70hpA',
+                       'title': 'Cash Discount & Dual Pricing Sales Pitch | Merchant Services Training',
+                       'channel': 'Joe Wagner | Merchant Services & Passive Income',
+                       'author': 'Joe Wagner | Merchant Services & Passive Income',
+                       'text': "Once you're asking for address and phone number, no more details, no more "
+                               'unnecessary questions; the only questions at that point are filling in '
+                               'whatever is in front of you on the application.',
+                       'tip': "Once you're asking for address and phone number, no more details, no more "
+                              'unnecessary questions; the only questions at that point are filling in '
+                              'whatever is in front of you on the application.',
+                       'timestamp': 1481,
+                       'timestamp_seconds': 1481,
+                       'timestamp_label': '[00:24:41]',
+                       'url': 'https://www.youtube.com/watch?v=tgxPcd70hpA&t=1481s',
+                       'markdown': '[00:24:41](https://www.youtube.com/watch?v=tgxPcd70hpA&t=1481s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tgxPcd70hpA',
+                       'title': 'Cash Discount & Dual Pricing Sales Pitch | Merchant Services Training',
+                       'channel': 'Joe Wagner | Merchant Services & Passive Income',
+                       'author': 'Joe Wagner | Merchant Services & Passive Income',
+                       'text': "The hardest part is what we're doing right here, I'm basically done, it "
+                               "only takes another couple of minutes; what do you say, you're going to "
+                               'give me a shot.',
+                       'tip': "The hardest part is what we're doing right here, I'm basically done, it "
+                              "only takes another couple of minutes; what do you say, you're going to give "
+                              'me a shot.',
+                       'timestamp': 1300,
+                       'timestamp_seconds': 1300,
+                       'timestamp_label': '[00:21:40]',
+                       'url': 'https://www.youtube.com/watch?v=tgxPcd70hpA&t=1300s',
+                       'markdown': '[00:21:40](https://www.youtube.com/watch?v=tgxPcd70hpA&t=1300s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'x7WUlpG34a8',
+                       'title': 'How Edge 3% & 4% Dual Pricing System Will Save Businesses Money on Credit '
+                                'Card Processing Fees',
+                       'channel': 'iSmart Payments -Credit Card Processing Solutions',
+                       'author': 'iSmart Payments -Credit Card Processing Solutions',
+                       'text': 'The Edge software knows in real time how much the business will be charged '
+                               'for a given non-cash transaction, and so Edge simply adjusts the purchase '
+                               'price to the customer, offsetting any fees.',
+                       'tip': 'The Edge software knows in real time how much the business will be charged '
+                              'for a given non-cash transaction, and so Edge simply adjusts the purchase '
+                              'price to the customer, offsetting any fees.',
+                       'timestamp': 73,
+                       'timestamp_seconds': 73,
+                       'timestamp_label': '[00:01:13]',
+                       'url': 'https://www.youtube.com/watch?v=x7WUlpG34a8&t=73s',
+                       'markdown': '[00:01:13](https://www.youtube.com/watch?v=x7WUlpG34a8&t=73s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YyYXmSsR5as',
+                       'title': 'Reduce Card Processing Fees with Dual Pricing (FTx POS)',
+                       'channel': 'FTx POS',
+                       'author': 'FTx POS',
+                       'text': 'You cannot display the cash or the cheaper price and then charge the '
+                               'customer more when they check out when they use credit, because basically '
+                               "that's just another way of doing a surcharge.",
+                       'tip': 'You cannot display the cash or the cheaper price and then charge the '
+                              'customer more when they check out when they use credit, because basically '
+                              "that's just another way of doing a surcharge.",
+                       'timestamp': 116,
+                       'timestamp_seconds': 116,
+                       'timestamp_label': '[00:01:56]',
+                       'url': 'https://www.youtube.com/watch?v=YyYXmSsR5as&t=116s',
+                       'markdown': '[00:01:56](https://www.youtube.com/watch?v=YyYXmSsR5as&t=116s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

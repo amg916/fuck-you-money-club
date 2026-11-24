@@ -1,470 +1,470 @@
 {
   "workbook_id": "wb-033-insurance-housing-and-rental-arbitrage",
   "volume_id": "vol-033-insurance-housing-and-rental-arbitrage",
-  "title": "Insurance Housing & Corporate Rental Arbitrage — Operator Companion Workbook",
-  "subtitle": "6 Printable Operator Worksheets for Carrier-Paid ALE Placements, Corporate Master-Leases, 30-to-270-Day Stays, Retained-Spread Math, Working-Capital Protection, Contract Controls, and Small-Team Execution",
+  "title": "Insurance Housing & Corporate Rental Arbitrage — Practitioner Testimony Operator Workbook",
+  "subtitle": "Field worksheets for landing insurance relocation placements, reading the payer's ALE rules, building corporate housing demand before signing leases, and pitching landlords for rental arbitrage that survives scaling",
   "worksheets": [
     {
       "worksheet_id": "ws-01",
       "number": 1,
-      "title": "Arbitrage Deal / Counterparty Underwriting & Spread Qualification",
-      "purpose": "Qualify an insurance-displacement or corporate-relocation placement before committing landlord rent. Establish who owes payment, which occupancy rights exist, how the stay can end, and whether the retained spread survives collection delays, utility overruns, and an early departure.",
-      "chapter_ref": "Q1, Q2, Q6",
+      "title": "Insurance Relocation Booking and Claim Pricing Plan",
+      "purpose": "Build the property profile, portal presence, specialist outreach, and pricing math that make your home the adjuster's first pick for a displaced family, while protecting your cash flow with utility caps, family-friendly fees, a hybrid calendar, and reserves sized for unpredictable claim timing.",
+      "chapter_ref": "Q1-Q2",
       "instructions": [
-        "Open one underwriting record for each proposed unit and payer combination. Attach the actual request, property address, proposed dates, written landlord permission, and payer contact. Separate a placement inquiry from a binding purchase commitment before calculating expected cash.",
-        "Confirm the contracting entity through independently obtained contact details. Ask whether the carrier, housing intermediary, employer, or occupant signs the payment obligation. Record invoice requirements and approved extensions; a claim reference alone does not establish who must pay.",
-        "Price the complete occupancy interval using a documented daily rate and specific landlord and utility obligations. Keep refundable deposits, occupancy tax collections, and damage recoveries outside earned housing revenue. Compare the resulting spread against the canonical retained-share benchmark.",
-        "Read termination provisions in the master lease and placement agreement together. Model the earliest permitted payer departure against the latest landlord payment commitment. Require an explicit funding source for the difference rather than treating future referrals as available liquidity.",
-        "Approve only a deal with traceable payment authority, lawful occupancy rights, adequate cash coverage, and a written loss limit. Assign one decision owner and a review date, then preserve rejected assumptions so later extensions cannot silently revive them."
+        "Complete the property profile first, because every later answer about pricing, fees, and outreach depends on the exact home you are offering to displaced families.",
+        "Submit to every relocation database you list here, then phone each one within a week to confirm receipt, since forms often send no confirmation at all.",
+        "Run the hotel comparison and Coverage D math side by side so your quote sits below the insurer's current spend and inside the family's loss-of-use budget.",
+        "Write utility caps, breakage terms, and fee amounts into the agreement and contract notes before any family signs, never after the first bill arrives.",
+        "Finish with the reserve and exit plan, and do not arbitrage a home for claims until that cash is set aside in a separate account."
       ],
       "fields": [
         {
-          "name": "Placement demand and authorized payer",
+          "name": "target_family_home_profile",
           "type": "textarea",
-          "prompt": "Identify the displaced household or relocating employee, the contracting payer, the placement coordinator, and the authorized stay interval. State exactly which signed document creates the payment obligation and which operational contact can confirm it.",
-          "example": "Placement P033-001 covers unit T03 from January 1 through April 1, 2027, a 90-night interval. The fictional intermediary Harbor Placement Services signs a $22,500 purchase order at $250 nightly. Its billing manager confirms payment responsibility; the household supplies arrival details but does not replace the named debtor."
+          "prompt": "Describe the exact home you will offer displaced families: bedroom and bathroom count, pet policy, neighborhood safety, finish level, and whether the family can tour before signing. Explain why this profile beats a hotel stay and how it supports a company guarantor arrangement.",
+          "example": "Three-bedroom, two-bath pet-friendly house in a safe neighborhood, designer-grade finishes, open to a family walkthrough before any agreement. Bailey Kramer names the standard directly: three bedrooms, two bathrooms is best [Bailey Kramer — J-7ks576i8Q @ 00:04:22]. Jesse Vasquez warns that landing the relocator is easy while getting the family to choose your home is hard [Jesse Vasquez — O1Wmu9p-zdc @ 00:02:33]."
         },
         {
-          "name": "Counterparty verification and collection evidence",
+          "name": "portal_listing_log",
           "type": "textarea",
-          "prompt": "Record independent entity verification, callback details, credit evidence, invoice routing, and payment history. Distinguish a coordinator's availability message from authorized purchasing power, and specify what evidence is required before releasing keys or incurring setup costs.",
-          "example": "The operator checks the intermediary's registered entity record, calls its published main number, and verifies the purchase order with accounts payable. Two references report payment within 35 days. The first placement requires a signed order and a $7,500 advance credited against housing charges, not booked as a damage deposit."
+          "prompt": "List every relocation database you will submit to, including ALE Solutions, CRS, Sedgwick, and the Temporary Housing Directory, with submission date, listed price, and the date you will phone to confirm receipt. Note any duplicate entries discovered during follow-up calls.",
+          "example": "ALE Solutions form submitted Monday with a realistic monthly figure, THD form submitted the same day, confirmation calls scheduled for the following Friday. The Bougie Baldie notes the form gives no confirmation and can create duplicate entries [The Bougie Baldie — PaAH8z8rPe8 @ 00:03:13]. Bailey Kramer adds that the listed price is not the price you charge [Bailey Kramer — DFn2vbuykUY @ 00:01:17]."
         },
         {
-          "name": "Property control and landlord permission",
+          "name": "specialist_email_blast",
           "type": "textarea",
-          "prompt": "Describe the operator's leasehold rights and attach the executed corporate-housing sublease addendum. Identify permitted occupants, placement channels, stay lengths, insurance duties, access rights, and restrictions that would make an otherwise profitable placement an unauthorized sublease.",
-          "example": "T03's addendum expressly permits furnished corporate and insurance relocation subleases lasting 30 to 270 days, with named occupants registered before arrival. The landlord signs before furniture delivery. The document prohibits event use, preserves building access rules, and requires the operator to maintain the agreed commercial liability coverage throughout the master lease."
+          "prompt": "Draft the weekly or biweekly email you will send to relocation specialists. Include the property headline, availability window, pet policy, and the PS and PPS lines that ask for forwards and offer referrals in other cities, so your contact list compounds each week.",
+          "example": "Subject: Pet-friendly 3/2 available now, family-ready. Body lists photos, move-in date, and pet terms. PS: please forward this to any specialist on your team. PPS: I can refer trusted homes in other cities. Bailey Kramer uses exactly this pairing so ten contacts become twenty the next week [Bailey Kramer — J-7ks576i8Q @ 00:09:59]."
         },
         {
-          "name": "Comparable inventory and service-adjusted rate",
+          "name": "per_night_anchor_script",
           "type": "textarea",
-          "prompt": "List comparable furnished inventory with matching bedrooms, location, availability, accessibility features, and included services. Explain why the proposed rate is collectible from the actual payer, rather than extrapolating from advertised vacation-rental prices or unavailable units.",
-          "example": "Three written 90-night quotes show $238, $252, and $265 nightly for two-bedroom units within the requested school area. T03's $250 quote includes parking, internet, and a defined utility allowance. The payer accepts that rate in writing; an unavailable $310 listing is excluded from the comparison because it cannot satisfy the placement dates."
+          "prompt": "Write the exact words you will use on a placement call to ask for the nightly price range instead of the budget. Describe how you will stay silent until the agency names a number and how you will respond.",
+          "example": "Script: 'What price range per night are you working with for this family?' Then pause and let them answer. Dr Chau Ong teaches asking for the range, never the budget, because whoever gives the number first wins [Dr Chau Ong — Bbit4NDO_Hc @ 00:03:44]. Jorge Garcia cites pre-approved budgets of $8,000 to $18,000 monthly [Jorge Garcia | Roadmap Lodging — PJdlrM6k8ks @ 00:03:33]."
         },
         {
-          "name": "Gross billings and retained-spread qualification",
+          "name": "hotel_comparison_math",
           "type": "textarea",
-          "prompt": "Calculate housing billings, landlord rent, included utility costs, retained contribution, and remaining operating costs separately. Show both gross-billing and retained-contribution margins, keeping customer deposits and the household's underlying insurance claim outside the operator's revenue calculation.",
-          "example": "For 90 nights, $250 times 90 equals $22,500 housing billings. Three $3,750 rent payments plus $1,125 utilities total $12,375. Retained contribution is $10,125, or 45%. Other modeled costs of $5,850 leave $4,275 owner net: 19% of billings and 42.22% of retained contribution, rounded."
+          "prompt": "Calculate what the displaced family currently costs the insurer in hotel rooms and kennel fees per month. Set your monthly quote beside that figure and state the savings you will present to the adjuster as the reason to approve.",
+          "example": "A family of seven in two Holiday Inn Express rooms ran about $15,000 a month; Jesse Vasquez quoted $8,100 for a house and it was accepted [Jesse Vasquez — Ncr7TdF1G34 @ 00:04:12]. Rich Somers frames $180-200 a night plus an $80 kennel as roughly $17-18K for 30 days [Rich Somers — g075AOuQIwk @ 00:28:22]."
         },
         {
-          "name": "Stay duration and extension evidence",
+          "name": "coverage_d_budget_calc",
           "type": "textarea",
-          "prompt": "Separate the authorized occupancy end date from the estimated repair or assignment completion date. Define extension notice, rate confirmation, purchase-order amendment, and landlord availability requirements so a verbal forecast cannot become an unfunded rent obligation.",
-          "example": "The repair estimate suggests occupancy through May, but the order ends April 1. On March 15, the coordinator must request any extension. An April 1 through May 1 extension requires a signed $7,500 amendment for 30 nights and confirmed unit availability. Until both exist, the ledger retains April 1 as the departure date."
+          "prompt": "Estimate the Coverage D loss-of-use budget for your target home type. Start with purchase price, strip out land value, apply the 20-30% dwelling percentage, and divide across six and twelve months to find a defensible monthly quote.",
+          "example": "On a $480K Smyrna purchase, Ruben Kanya strips roughly 10% land using a cost segregation study, leaving $432K dwelling. At 20% that is $86,400, or $7,200 a month over 12 months and $14,400 over six [Landlord Diaries - The Monthly Rentals Podcast — vbHlGVZKjvg @ 00:45:27]. That range sets the ceiling for the quote."
         },
         {
-          "name": "Early closeout and lease-break exposure",
-          "type": "textarea",
-          "prompt": "Compare payer cancellation rights with landlord termination rights, including notice periods, minimum charges, and replacement-placement credits. Quantify the maximum uncovered commitment and identify the specific reserve, negotiated amendment, or replacement agreement that absorbs the exposure.",
-          "example": "If the payer can end after day 60 while the master lease remains committed through day 90, one $3,750 rent payment remains exposed. Budget another $375 for utilities and carrying costs, producing $4,125 at risk. The operator reserves that amount unless a signed minimum-charge clause or replacement booking actually transfers the cost."
+          "name": "utility_cap_terms",
+          "type": "text",
+          "prompt": "Write the electric and water cap language you will place in the agreement and contract notes before signing. State the monthly threshold, who pays above it, and how you will document readings so overages are billed cleanly.",
+          "example": "Contract note: guest pays all electric above $500 per month and water above a stated cap, billed from the monthly statement. Jesse Vasquez learned this the hard way when uncapped electric ran about $1,000 a month on the $8,100 house, and now writes caps in up front [Jesse Vasquez — O1Wmu9p-zdc @ 00:06:27]."
         },
         {
-          "name": "Household fit and property operating constraints",
-          "type": "textarea",
-          "prompt": "Record occupancy count, pets, accessibility needs, parking, school proximity, and essential property features using consistent housing criteria. Identify service requirements that change cost or suitability without substituting assumptions about a household for documented operational needs.",
-          "example": "The placement includes two adults, two children, one vehicle, and a request for step-free access. T03's verified elevator route and two bedrooms satisfy the stated requirements. The operator records the accommodation request separately, confirms the elevator service contact, and does not apply an automatic pet surcharge to an assistance-animal request."
+          "name": "fee_schedule_review",
+          "type": "text",
+          "prompt": "List your cleaning, pet, and deposit fees and compare them with competing homes. Explain how each fee lands on a family paying out of pocket and which fees you will reduce so the total does not cost you the booking.",
+          "example": "Cleaning $150, pet $75, deposit $200, total $425 versus a competitor near $1,000. Bailey Kramer reminds operators that the families are the ones who have to pay the fees [Bailey Kramer — J-7ks576i8Q @ 00:19:33], and a $1,000 versus $200 gap loses bookings [Bailey Kramer — J-7ks576i8Q @ 00:19:46]. Lower fees keep the family choosing you."
         },
         {
-          "name": "Fraud signals and payment-change controls",
+          "name": "hybrid_calendar_rules",
           "type": "textarea",
-          "prompt": "Specify suspicious payment instructions, identity inconsistencies, duplicate requests, and access changes that require independent verification. Define the response owner and evidence retained without collecting unnecessary claim, medical, or household information merely because a portal permits it.",
-          "example": "A message asks to redirect a $7,500 refund to a new bank account. The bookkeeper freezes that payment, calls the payer using its previously verified number, and requests written confirmation from the authorized account contact. The case file retains the request and callback result, while unrelated household documents remain outside the billing record."
+          "prompt": "Define how you will run a duplicate 30-day-minimum Airbnb listing beside your agency listings. State the maximum short-stay booking window, which holiday weekends you will refuse in advance, and how long you will hold a unit pending adjuster approval.",
+          "example": "STR window open no more than 30 days out, and no Fourth of July bookings accepted in May [Landlord Diaries - The Monthly Rentals Podcast — vbHlGVZKjvg @ 00:35:03]. Treat ASAP as at least a week, and hold the unit 24 hours pending adjuster approval rather than releasing it [She's Got Assets — 5Py6jcyyUyA @ 01:19:18]."
         },
         {
-          "name": "Written investment decision and loss limit",
+          "name": "reserve_and_exit_plan",
           "type": "textarea",
-          "prompt": "Summarize the decision using signed rights, collectible pricing, cash requirements, cancellation exposure, and an explicit maximum acceptable loss. Name the accountable operator and conditions that require re-underwriting rather than allowing an old decision to authorize changed terms.",
-          "example": "Decision: proceed with T03 only after the landlord addendum, $22,500 order, and $7,500 advance are confirmed. The operator accepts at most $4,125 of uncovered closeout exposure, funded from unrestricted cash. A shorter guaranteed stay, different debtor, or rate below $250 requires a revised calculation and a new written decision before commitment."
+          "prompt": "Record the cash reserve you will hold before arbitraging a home for claims, the months it covers, and three exit strategies if claim leads dry up. Name the trigger date for activating each exit and who approves it.",
+          "example": "Reserve of six months of all-in cost, about $19,800 on a $3,300 monthly run rate. Exits: midterm nurse lease, standard furnished monthly, long-term tenant. Jose Luiz Morales requires at least six months of reserves and three exit strategies before arbitraging a home for claims [Jose Luiz Morales — 5tg19JIMU0o @ 00:35:50]."
         }
       ],
-      "completion_gate": "The named operator signs only when payer authority, executed sublease permission, dated pricing, maximum loss, and its cash funding source are evidenced in the same placement record."
+      "completion_gate": "Do not accept an insurance placement until every portal submission is phone-confirmed, electric and water caps are written into the agreement and notes, total family-paid fees sit near the low end of local competitors, and at least six months of reserves plus three exit strategies are documented."
     },
     {
       "worksheet_id": "ws-02",
       "number": 2,
-      "title": "Unit Economics, Escrow/Reserve Float & Working-Capital Calculator",
-      "purpose": "Reconcile gross housing billings with the scorecard's retained-share economics, then translate profit into cash requirements. Separate refundable liabilities from spendable funds, preserve the three canonical scenarios, and test whether delayed collections or vacancy can exhaust otherwise profitable operations.",
-      "chapter_ref": "Q3, Q4",
+      "title": "Payer-Side Intake and Corporate Housing Demand Builder",
+      "purpose": "Learn to read a claim the way the adjuster does, confirming habitability, ALE limits, runway, and comparable pricing, then convert that understanding into a corporate housing operation built demand-first, underwritten at conservative occupancy, and protected by direct client relationships and verified guests.",
+      "chapter_ref": "Q3-Q4",
       "instructions": [
-        "Copy the three canonical scenarios exactly before adding local assumptions. Use 45% retained share for each scenario and calculate the implied remaining expense pool from owner net profit. Keep scenario benchmarks separate from a property's actual negotiated costs.",
-        "Build a bridge from gross housing charges to landlord and utility pass-throughs, retained contribution, remaining expenses, and owner net. Show the denominator beside every margin. Do not count insurance claim proceeds or a corporate relocation budget as operator revenue.",
-        "Create a dated cash schedule rather than relying on annual profit. Place landlord payments, furnishing purchases, payroll, deposits, and expected collections on their actual dates. Stress late payment without assuming an invoice can fund rent before cash arrives.",
-        "Maintain separate balances for refundable customer deposits, collected taxes, landlord deposits, and unrestricted operating cash. Apply any jurisdiction-specific custody requirements. A liability held in a bank account does not become working capital simply because the balance is visible.",
-        "Test vacancy, early closeout, utility overruns, and collection delay individually before combining them. Mark costs as fixed, variable, or refundable. Approve expansion only after the combined downside still leaves the chosen minimum cash reserve fully funded."
+        "Confirm the uninhabitable finding and the shape of the ALE limit before quoting, because ALE only pays the increase over normal living costs on a covered loss.",
+        "Price against comparable local housing the carrier would accept, not against the highest number you hope to collect, since agencies negotiate rates down.",
+        "Ask about pets, trips, and breakage on the first call so disputes never surface on the back end of the stay.",
+        "Lock at least one relocation, adjuster, or HR relationship before you sign, furnish, or list any corporate housing unit.",
+        "Underwrite at 80% occupancy and verify every employer and occupant before handing over keys."
       ],
       "fields": [
         {
-          "name": "Conservative canonical reconciliation",
-          "type": "textarea",
-          "prompt": "Enter the Conservative gross billings, retained share, owner net, team configuration, and implied expense bridge. Calculate the retained net margin explicitly, distinguishing the 12% gross-billing margin from the larger percentage measured against retained contribution.",
-          "example": "Conservative: $180,000 annual gross billings; $99,000 landlord and utility pass-throughs; $81,000 retained contribution; and $59,400 remaining expenses. Owner net is exactly $21,600. Gross-billing margin is 12%, while $21,600 divided by $81,000 is 26.67%, rounded. Staffing remains 1 full-time operator plus 3 contractors."
+          "name": "habitability_trigger_check",
+          "type": "text",
+          "prompt": "Record how you will confirm the family's home was deemed uninhabitable by authorities or the adjuster after a covered loss. Note which document or phone confirmation you will request before quoting, and who on the claim provides it.",
+          "example": "Before quoting, ask the relocation specialist to confirm the adjuster has deemed the home uninhabitable and opened ALE. Be A Claims Adjuster states the home must be deemed uninhabitable by the authorities or by the insurance company's adjuster [Be A Claims Adjuster — _Odm8IhYr80 @ 00:01:46]. No uninhabitable finding, no ALE money, no booking."
         },
         {
-          "name": "Base canonical reconciliation",
+          "name": "ale_limit_runway",
           "type": "textarea",
-          "prompt": "Enter the Base scenario without rounding its annual owner profit or replacing gross billings with retained revenue. Calculate pass-through costs and the residual expense pool, then identify which margin the operating dashboard will display.",
-          "example": "Base: $790,000 gross billings less $434,500 pass-throughs yields $355,500 retained contribution. Deduct $205,400 remaining expenses to obtain exactly $150,100 annual owner net. That equals 19.0% of gross billings and 42.22% of retained contribution, rounded. The team remains 1 full-time operator plus 3 contractors."
+          "prompt": "Document whether the family's ALE limit is a dollar cap, a time cap, both, or neither, and estimate how much runway remains. Explain how that runway sets your contract length and the extension you will offer.",
+          "example": "Policy written at 30% of a $300,000 dwelling gives a $90,000 cap [Insurance Savvy — Xnrpk3PKFg4 @ 00:02:33]; an Actual Loss Sustained policy usually runs up to 12 months [Crowley Insurance Agency, Inc — TkI2Qak3r34 @ 00:01:15]. United Policyholders warns a neighbor's policy can read completely differently [United Policyholders — bPQqrGrXfiI @ 00:05:54]."
         },
         {
-          "name": "Scaled canonical reconciliation and expense classification",
-          "type": "textarea",
-          "prompt": "Reconcile the Scaled scenario and explain how its residual expense pool relates to the stated monthly operating-expense range. Do not force annual totals to fit a monthly overhead assumption by silently deleting variable delivery costs.",
-          "example": "Scaled: $1,400,000 gross billings minus $770,000 pass-throughs equals $630,000 retained contribution. Remaining expenses are $266,000, leaving $364,000 owner net: 26% gross and 57.78% retained margin. The team is 2 full-time plus 4 contractors. The $22,166.67 monthly residual exceeds the $18,000 upper opex benchmark and requires a separate cost bridge."
+          "name": "california_duration_note",
+          "type": "text",
+          "prompt": "If the claim falls under California rules, record the 24-month floor, the possible extension to 36 months, and the construction delays that justify it. Note how you will align your lease term with that longer timeline.",
+          "example": "California sets a 24-month ALE minimum, extendable up to 36 months in 6-month increments for good-faith permit, materials or contractor delays, but the extension is not automatic [United Policyholders — bPQqrGrXfiI @ 00:22:58]. Offer a renewable term with a 30-day check-in tied to the family's rebuild schedule so your calendar is never surprised."
         },
         {
-          "name": "Revenue presentation and accounting-policy bridge",
+          "name": "comparable_pricing",
           "type": "textarea",
-          "prompt": "Document the scorecard's analytical retained-share measure separately from the entity's reporting policy. Identify the promised service, control assessment, and principal-versus-agent conclusion before determining gross or net presentation; also identify relevant master-lease accounting treatment.",
-          "example": "The dashboard labels $790,000 as gross housing billings and $355,500 as scorecard retained revenue. The accountant evaluates ASC 606-10-55-36 through 55-40 for applicable service arrangements and ASC 842 for leases. A 45% planning spread does not itself establish net reporting; signed contracts determine the accounting analysis and documented presentation."
+          "prompt": "Identify comparable local housing the carrier would consider equivalent to the family's prior home, and set your monthly price against it. Explain why a quote far above the comparable will be cut back by the adjuster or agency.",
+          "example": "Kela Trishaan prices a San Diego 3bd/2ba at about $5,000 a month and notes the carrier does not owe for a $10,000 place [Kela Trishaan — awTD63In04A @ 00:06:59]. Jesse Vasquez adds that agencies negotiate lower rates so they don't use up the policyholder's ALE [Jesse Vasquez — 70ZSuGbTIJo @ 00:04:54]."
         },
         {
-          "name": "Placement-level unit economics and cost allocation",
+          "name": "intake_pets_and_trips",
           "type": "textarea",
-          "prompt": "Calculate a complete placement from occupied nights and rate through allocated operating costs. State whether each cost is invoiced, estimated, or allocated, and explain how placement totals reconcile to annual scenarios without assuming every unit has identical utilization.",
-          "example": "T03 generates $22,500 over 90 nights. Contract rent of $11,250 and budgeted utilities of $1,125 leave $10,125 retained contribution. Allocated operating costs of $5,850 leave $4,275 owner net. These ratios match the Base benchmark, but the annual $790,000 target requires its own portfolio occupancy and rate schedule rather than multiplying by a fractional booking count."
+          "prompt": "List the intake questions you will ask the family or specialist on the first call, covering pets, pre-planned trips, household size, and move-in date. Explain why raising each item at the start prevents disputes later in the stay.",
+          "example": "Intake script: How many people and pets? Any trips planned during the claim? Target move-in date? Kela Trishaan says it is better to have the conversation in the beginning than argue on the back end [Kela Trishaan — awTD63In04A @ 00:13:11], citing a pre-planned birthday trip denied mid-claim [Kela Trishaan — awTD63In04A @ 00:13:23]."
         },
         {
-          "name": "Startup uses and unrestricted reserve",
+          "name": "breakage_responsibility",
           "type": "textarea",
-          "prompt": "Allocate startup capital among refundable landlord deposits, furnishings, launch expenses, and unrestricted cash. Identify how many units this funds and prohibit treating the full launch budget as both setup spending and a simultaneously available operating reserve.",
-          "example": "A $60,000 two-unit launch allocates $10,000 to landlord deposits, $18,000 to furnishings, $4,500 to insurance and setup, and $27,500 to unrestricted cash. The total is exactly $60,000. This funds two initial units, not the entire Base portfolio. The candidate's $12,000 lower startup bound requires a materially lighter, separately priced launch."
+          "prompt": "Write the breakage clause for insurance families: who pays for damaged furniture, appliances, and small items, how damage is documented at move-in and move-out, and how you will explain it to the family before they sign.",
+          "example": "Clause: normal wear covered by the owner; breakage beyond wear billed to the household with photos from the turnover inspection. Driven Saver describes families paying for a refrigerator and even a thrown-away fork [Driven Saver — uCQYAZ1ws_w @ 00:04:31], so spell it out up front instead of surprising a family already in crisis."
         },
         {
-          "name": "Receivables float and cash runway",
+          "name": "demand_first_relationship",
           "type": "textarea",
-          "prompt": "Calculate the cash required between first disbursement and first collection using stated payment timing and cost behavior. Include emergency liquidity separately, and identify whether advances reduce the gap only after they are received and available for contractual use.",
-          "example": "For two units, normalized monthly landlord and utility cash is $8,250 and other operating cash is $3,900. At a conservative constant $12,150 monthly burn, 45 days requires $18,225. Adding a $6,000 emergency reserve gives $24,225 required liquidity. Against $27,500 unrestricted cash, headroom is $3,275 before additional setup commitments or collection deterioration."
+          "prompt": "Name at least one relocation manager, adjuster, or HR contact you will lock in before signing any lease. Record how you met them, what housing they need, and the next date you will follow up with them.",
+          "example": "Contact: regional HR lead met through BNI, needs two furnished units for crews on 90-day rotations. Jorge Garcia locks demand before any lease because demand first eliminates 90% of the risk [Jorge Garcia | Roadmap Lodging — Ewazlh6zOLM @ 00:01:21]. Jesse Vasquez adds that direct relationships insulate you from industry shifts [Jesse Vasquez — 70ZSuGbTIJo @ 00:09:39]."
         },
         {
-          "name": "Deposits, tax collections, and restricted balances",
-          "type": "textarea",
-          "prompt": "List each cash balance with its owner, refund trigger, ledger liability, custody rule, and permitted use. Keep tenant security, payer advances, tax collections, and landlord security deposits distinct rather than combining them into a single apparent reserve.",
-          "example": "A $2,000 occupant security deposit remains a refundable liability; $900 of collected occupancy tax remains payable to the taxing authority. Neither supports the $27,500 unrestricted reserve. A $5,000 landlord deposit is a recoverable asset, not liquid runway. A $7,500 housing advance follows its contract and is released to earned revenue as the applicable service is delivered."
+          "name": "three_edges_location",
+          "type": "text",
+          "prompt": "Score your target unit against the three-edges location rule of hospitals, highways, and hotels, plus Wi-Fi, blackout curtains, a desk, and a full kitchen. Note any gap you must fix before pitching corporate clients and estimate what each fix will cost.",
+          "example": "Unit sits near a hospital, two minutes from the highway, and close to a hotel row where work trucks park. Jesse Vasquez photographs trucks at Extended Stay America and Holiday Inn Express, then pitches those companies on savings versus hotel spend [Jesse Vasquez — ypZmx1qTnpY @ 00:02:47]. Gap: add blackout curtains and a desk."
         },
         {
-          "name": "Vacancy and utility sensitivity",
+          "name": "occupancy_underwriting",
           "type": "textarea",
-          "prompt": "Model a specific lost-occupancy interval and utility overrun while holding unavoidable commitments constant. Calculate the revised owner net and explain which assumptions differ from the canonical scenario so the stress case cannot overwrite the benchmark.",
-          "example": "Starting from T03's $4,275 Base-aligned placement profit, ten unpaid nights remove $2,500 of billings. Assume rent and allocated operating costs remain unchanged and utilities exceed budget by $450. Revised profit is $1,325. This is a local downside case, not a revision to the canonical $150,100 annual Base owner-net figure."
+          "prompt": "Underwrite the unit at 80% occupancy and show monthly revenue, rent, and net at that level. Compare against the 95% mature-operator benchmark and state whether the deal still works if occupancy falls short of your target.",
+          "example": "Avenue West will not bring a property into its program unless it can rent it more than 80% of the time [RPOAM Real Estate Investor Podcast — f2vS4cnBnoI @ 00:14:33]. Gabriel Wacker runs about 95% occupied [Vivian Yip — DNkNK6FNKog @ 00:20:45]. Model both levels before signing the lease."
         },
         {
-          "name": "Cash break-even and expansion funding threshold",
+          "name": "guest_verification_and_billing",
           "type": "textarea",
-          "prompt": "Calculate a practical occupancy break-even under an explicit fixed-cost stress assumption. Then state the cash threshold for adding inventory, including new setup costs and existing reserve obligations rather than relying on booked revenue or uncollected receivables.",
-          "example": "Two units at $250 nightly produce $15,000 in a normalized 30-day fully occupied period. Holding all $12,150 modeled cash costs fixed gives 81% cash break-even occupancy. A third unit requiring $14,000 setup cannot be funded from $3,275 headroom. Expansion waits for additional unrestricted funding or collected surplus while preserving the $24,225 reserve requirement."
+          "prompt": "Describe how you will verify the employer, background-check every occupant for evictions and fraud, and set up payment. Note how you will keep the client relationship direct rather than letting an online travel agency control cancellations and fees.",
+          "example": "LaShaun Shanae verifies the employer, background-checks every occupant for evictions and fraud, and has the employer pay by credit card [LaShaun Shanae — nZd4KYLOZDw @ 00:14:56]. PBD Living warns that OTAs take a cut and control cancellations, so build direct booking with LinkedIn and Facebook ads to adjusters and HR [PBD Living | Furnished Housing — DviX_t2s-0E @ 00:03:58]."
         }
       ],
-      "completion_gate": "All three annual scenarios reconcile exactly; restricted balances are excluded from runway; the dated downside schedule remains funded; and the accountant's presentation analysis is separate from the 45% scorecard measure."
+      "completion_gate": "Do not sign a corporate or insurance housing lease until the uninhabitable finding and ALE limit type are confirmed, your price sits at the local comparable, intake questions on pets and trips are logged, one named demand relationship is locked, and the unit pencils at 80% occupancy."
     },
     {
       "worksheet_id": "ws-03",
       "number": 3,
-      "title": "End-to-End Execution, Idempotent Ledger & QA Pre-Flight Sheet",
-      "purpose": "Convert an accepted placement into a repeatable operating record from contract through settlement. Prevent duplicate invoices, unauthorized extensions, premature access, and lost deposits by defining durable identifiers, evidence checkpoints, reconciliation rules, and a tested exception path.",
-      "chapter_ref": "Q7, Q8",
+      "title": "Landlord Pitch, Lease Terms, and Scaling Stress Test",
+      "purpose": "Turn landlord outreach into signed leases by pitching as a corporate housing company, answering rent and condition fears with proof, and negotiating terms that protect capital, then stress-test every unit against a minimum net, an automation stack, concentration risk, insurance, and local ordinances before scaling.",
+      "chapter_ref": "Q5-Q6",
       "instructions": [
-        "Create the placement record before sending contracts or collecting money. Assign stable identifiers for the unit, payer, household, contract version, occupancy interval, invoice, and payment. Reuse those identifiers across systems rather than matching records by names alone.",
-        "Define state changes explicitly: requested, qualified, contracted, ready, occupied, extension pending, departed, and settled. Specify the evidence required for each transition. A portal status change must not independently authorize new rent commitments or key delivery.",
-        "Design each billing action to tolerate retries. Store a business event key and the resulting external invoice identifier before acknowledging completion. After an uncertain API response, inspect the existing result instead of blindly issuing the same charge again.",
-        "Perform arrival and departure checks with dated evidence, restricted access, and a named responsible contractor. Test locks, smoke alarms, leak sensors, furnishings, and emergency instructions. Correct critical defects before arrival rather than relying on a future maintenance ticket.",
-        "Close each placement only after cash application, utility adjustments, deposit disposition, damage evidence, and landlord obligations reconcile. Retain an immutable correction trail. Run duplicate-event and failed-invoice tests before allowing an unattended workflow to handle live placements."
+        "Never lead with Airbnb; write every script and tour talking point around a corporate housing company placing professionals in furnished units.",
+        "Set your maximum rent before the first call so a persuasive landlord cannot talk you into a spread that never pays back.",
+        "Log every rejection with its reason, because repeated objections show you exactly where your script needs to change.",
+        "Prove unit one profitable at your minimum net before you add unit two, and have your automation stack running the day the lease is signed.",
+        "Bind your own insurance and read local ordinances repeatedly before committing capital to any additional unit or market."
       ],
       "fields": [
         {
-          "name": "Placement identifiers and source-of-truth record",
+          "name": "corporate_housing_opener",
           "type": "textarea",
-          "prompt": "Define stable identifiers and the authoritative storage location for each commercial object. Include a uniqueness rule that survives spelling changes, portal retries, and employee turnover without embedding sensitive household information in operational keys.",
-          "example": "Use placement P033-001, unit T03, payer PAY-014, contract CT-001-v1, and invoice INV-001. The placement register stores dates and references; signed documents remain in access-controlled storage. Household names never appear in webhook URLs. A unique placement identifier persists even when the coordinator changes or the payer corrects its display name."
+          "prompt": "Write the opening line you will use when calling or touring with a landlord, framing your business as a corporate housing company. Include the filter question you will ask about short-term furnished leases and how you will follow up.",
+          "example": "Opener: We are a corporate housing company placing professionals in furnished units. Do you allow leases for short-term furnished housing? Aurelio Licata's lesson six is don't say Airbnb, say corporate housing company [Aurelio Licata — Q3hSpjquUTE @ 00:06:28], and Rafa Loza uses the filter question because it opens a conversation [Rafa Loza — 894g1JF-IuM @ 00:13:25]."
         },
         {
-          "name": "Contract snapshot and state transition evidence",
+          "name": "landlord_fear_answers",
           "type": "textarea",
-          "prompt": "Describe the signed contract snapshot, version history, and evidence needed to move a placement into contracted and ready states. Specify how changed dates or rates are handled without overwriting the original obligations or their audit trail.",
-          "example": "P033-001 becomes contracted after CT-001-v1 and the landlord addendum are signed. It becomes ready only after the $7,500 advance clears and inspection CHK-001 passes. A later date change creates CT-001-v2 with a new signature record; the first version remains preserved. Operations cannot mark the placement occupied merely because a portal shows an estimated arrival."
+          "prompt": "List the two landlord fears, on-time rent and property condition, and write your answer to each. Include the payment proof you will show, the damage responsibility language, and the cleaning frequency you will commit to in writing.",
+          "example": "Rent: autopay set two days early, and when asked how they know you'll pay, show the autopay confirmation itself [Jorge Contreras | Airbnb Arbitrage — _M0OdXelhoU @ 00:03:55]. Jorge Contreras sets up the property on autopay two days early [Jorge Contreras | Airbnb Arbitrage — d8qhoiAWdLs @ 00:01:43]. Condition: written damage responsibility plus frequent professional cleaning."
         },
         {
-          "name": "Arrival pre-flight and access release",
-          "type": "textarea",
-          "prompt": "Create the arrival checklist covering habitability, inventory, access, contact details, and payment conditions. Record who inspects each item and how an unresolved critical defect blocks access release while triggering an alternative housing response.",
-          "example": "At 11:00 on arrival day, the field contractor tests smoke alarms, running water, HVAC, door operation, and the leak sensor. A failed lock requires repair or approved alternate accommodation. After inspection passes, a unique code activates at 16:00. The household receives emergency contacts, parking instructions, and an inventory acknowledgment through the agreed secure channel."
+          "name": "rent_cap_and_spread",
+          "type": "text",
+          "prompt": "Set the maximum rent you will accept for this unit based on projected revenue. Show the rent-to-revenue spread, the nightly rate relative to monthly rent, and the asking price at which you will walk away from the deal, even after negotiation.",
+          "example": "Sean Rakidzich pays $2,000 and charges $3,000, with one guideline: don't pay too much in rent [Sean Rakidzich — lGwvDjwR4uU @ 00:05:05]. Linda Kim walked from a $4,000 ask against a $3,700 need [Linda Kim — 5vV0oy-jJ7g @ 00:31:38]. Ceiling here: $1,900 rent against a $3,000 projection, before any concession."
         },
         {
-          "name": "Invoice idempotency and retry behavior",
+          "name": "lease_terms_and_free_rent",
           "type": "textarea",
-          "prompt": "Define the business-event key, database uniqueness constraint, invoice creation sequence, and recovery behavior after a timeout. Explain how the workflow distinguishes replaying an existing event from creating a legitimate new billing interval or adjustment.",
-          "example": "The January key is P033-001|housing|2027-01-01|2027-02-01|v1. A unique database constraint permits one event record. The worker stores the external invoice identifier and status. If the response times out, it queries by the same supported idempotency key or reference before retrying. A correction creates a linked credit or adjustment, never a second indistinguishable January invoice."
+          "prompt": "Outline the lease terms you will request: length, LLC signer, start-date gap after signing, free-rent concession, and escape clause. Explain how each term protects your capital during setup and if the market or building changes. Note which term you will trade away first.",
+          "example": "Request a two-to-three-year lease in the LLC's name, signed June 1 and beginning June 15 [Jorge Contreras | Airbnb Arbitrage — _M0OdXelhoU @ 00:05:06]. Colin Wright gets free rent on all deals because Wright won't take deals without it [Official Success Formula — NSyEBVGX02o @ 00:58:03], plus a one-to-two-month escape clause."
         },
         {
-          "name": "Accrual, payment application, and bank reconciliation",
+          "name": "startup_capital_plan",
           "type": "textarea",
-          "prompt": "Specify how earned housing charges, customer advances, receivables, and bank receipts are recorded and reconciled. Distinguish operational billing records from the formal general ledger, and name the owner responsible for clearing unmatched receipts.",
-          "example": "A $7,500 pre-arrival receipt is recorded against P033-001 as an advance under the accounting policy. January's 31 nights create $7,750 of housing charges. Applying the advance leaves $250 receivable. The bookkeeper matches the bank transaction and remittance reference, then reconciles the operational subledger to the general ledger before monthly close."
+          "prompt": "Total your startup capital for unit one: first month, deposit, furniture, photos, and setup. Identify how you will fund it without a business loan and how many months of revenue you need to recover it at your projected net.",
+          "example": "Rafa Loza puts per-unit setup at $5,000-$15,000 depending on market and started with $6K cash plus a $9K credit card for furniture [Rafa Loza — 894g1JF-IuM @ 00:06:40]. LoCasa warns that if unit one isn't profitable, more units won't solve it [LoCasa — OSi_ARPIpaM @ 00:00:42]. Plan: $11,000 total, recovered in six months."
         },
         {
-          "name": "Exception queue and compensating actions",
-          "type": "textarea",
-          "prompt": "List failures that require intervention, including rejected invoices, missing purchase orders, payment reversals, and incorrect occupancy dates. Define an owner, resolution deadline, and correction method that preserves history instead of deleting inconvenient records.",
-          "example": "Invoice INV-001 is rejected because the purchase order suffix is missing. The bookkeeper owns a one-business-day correction task and confirms the required suffix with accounts payable. If the invoice amount was correct, the workflow resubmits the same receivable rather than creating another sale. The rejection, correction, and acceptance timestamps remain visible."
+          "name": "rejection_quota_log",
+          "type": "text",
+          "prompt": "Set your daily outreach quota for landlord and apartment-complex calls, and log each rejection with the reason given. Note which objections repeat so you can adjust your script before the next round of calls. Also list buildings under construction you will target.",
+          "example": "Quota: at least one call a day, logged by building and objection. Rafa Loza heard 30+ no's before the first yes and 20+ more before the second [Joshua Baldovino — 1JRlBob3GhE @ 00:20:58]. Target new construction too, since those owners have vacancy to solve for years to come [Joshua Baldovino — 1JRlBob3GhE @ 00:47:46]."
         },
         {
-          "name": "Extension and early departure execution",
+          "name": "minimum_net_threshold",
           "type": "textarea",
-          "prompt": "Define the operational sequence for extending or shortening a stay, including signed authority, inventory availability, billing changes, and access timing. Separate commercial authorization from physical possession and applicable resident-protection requirements.",
-          "example": "A signed April extension adds 30 nights and $7,500 to P033-001 before April inventory is committed. The access schedule is updated after contract and availability checks. If payment later becomes disputed while the household remains in possession, staff escalate through the lawful process; they do not remotely disable the resident's working code as a collection tactic."
+          "prompt": "State the minimum monthly net each property must produce to stay in your portfolio. Show the projected net for this unit and decide whether to keep, renegotiate, or walk away, along with the date you will review it.",
+          "example": "Richie Matthews: if you're not spitting out at least $2,000 to $2,500 per month per property, walk away from the deal or better yet, negotiate it [Richie Matthews — VtVf0h80q0w @ 00:06:44]. This unit projects $1,600 net, so renegotiate rent down $500 or exit before the escape window closes."
         },
         {
-          "name": "Utility-cap reconciliation and supporting evidence",
+          "name": "automation_and_va_stack",
           "type": "textarea",
-          "prompt": "State the utility allowance, measurement interval, allocation method, supporting invoices, and contractual authorization for excess charges. Explain how shared meters, delayed bills, and disputed charges are resolved without fabricating usage data or applying an undisclosed markup.",
-          "example": "The 90-night contract includes $1,125 utilities. Actual supported charges total $1,380, creating $255 excess. The signed clause permits documented excess without markup. The bookkeeper attaches the relevant statements, removes unrelated service periods, and issues a separate referenced adjustment. Without that clause, the operator absorbs the difference rather than inventing a retroactive fee."
+          "prompt": "List the software and virtual assistant setup you will have running the day the lease is signed: messaging, calendar sync, dynamic pricing, and written protocols. Note the monthly cost and which tasks you will delegate first.",
+          "example": "Stack: Hospitable at $40 plus dynamic pricing at $40, about $80 a month [Richie Matthews — O4cBKKUBS64 @ 00:13:29]. Delegate guest messaging and cleaner scheduling to a VA first. Matthews went from 18 to 35 units in six months after delegating [Richie Matthews — VtVf0h80q0w @ 00:04:01], because you can't scale chaos."
         },
         {
-          "name": "Departure, turnover, and deposit disposition",
-          "type": "textarea",
-          "prompt": "Describe possession confirmation, condition evidence, cleaning, repairs, deposit accounting, and readiness for the next household. Distinguish ordinary wear from documented damage and identify the legal deadline and notice requirements applicable to any retained deposit amount.",
-          "example": "After confirmed surrender on April 1, the contractor compares arrival and departure photos, records meter readings, and schedules $180 cleaning already included in operating costs. A broken table receives a $140 repair estimate and contract review. The bookkeeper prepares any lawful itemized deduction and refund on the applicable deadline, without charging ordinary wear as damage."
+          "name": "unit_concentration_check",
+          "type": "text",
+          "prompt": "Map where your current and planned units sit and flag any building or block where you are stacking more than one. Explain whether local demand can absorb the stacked units without cannibalizing your own bookings and rates.",
+          "example": "Humza Zafar warns against stacking units in one building or across the street outside Dubai or New York-type demand; Detroit cannibalization cost about $100K [Humza Zafar — 1D3J3ID1ZZM @ 00:53:42]. Current plan: two units in one mid-size building, third unit moved to a separate neighborhood to protect rates."
         },
         {
-          "name": "Pre-flight test cases and settlement proof",
+          "name": "coverage_and_regulation_check",
           "type": "textarea",
-          "prompt": "Record test inputs and expected outcomes for duplicate events, partial payments, extension races, and late utility bills. State the evidence required to settle a placement and the reconciliation tolerance for monetary discrepancies.",
-          "example": "Replay the January event three times: exactly one $7,750 invoice must exist. Apply $7,500 and then $250: the receivable must reach zero. Submit two identical extension events: only one $7,500 April charge survives. Settlement requires zero unexplained cents, completed deposit disposition, and a documented owner for any legitimate utility accrual still outstanding."
+          "prompt": "Record the traditional insurance you will bind after signing, including liability and loss of income, and summarize the local ordinances you have read. Note any city-staff answers you still need to verify before committing more capital.",
+          "example": "Bind traditional coverage with liability and loss of income for a 3-4 month repair instead of relying on the Airbnb host guarantee [Short Term Sage - Airbnb, Vacation Rental Host — wt5AlXFsjDQ @ 00:19:07]. Read the ordinances repeatedly and take city-staff answers with a grain of salt [Joshua Baldovino — 1JRlBob3GhE @ 00:46:39]."
         }
       ],
-      "completion_gate": "Duplicate-event tests pass, every live placement has signed source documents and arrival evidence, and the subledger reconciles without unexplained differences before unattended billing is enabled."
+      "completion_gate": "Do not sign a second arbitrage lease until unit one clears your minimum monthly net, the lease includes a start-date gap and escape clause under your LLC, your automation stack and VA protocols are live, no building is overstacked, and your own liability and loss-of-income coverage is bound."
     },
     {
       "worksheet_id": "ws-04",
       "number": 4,
-      "title": "Statutory, Licensing, Contract Addendum & Compliance Audit",
-      "purpose": "Translate property-specific statutes, local occupancy rules, and contract duties into operational evidence. Verify sublease authority, tax treatment, habitability, fair-housing practices, insurance, and licensing boundaries before a household arrives or a payer receives an unsupported exemption claim.",
-      "chapter_ref": "Q5, Q9",
+      "title": "Midterm Rental Setup and the Airbnb Pivot Math",
+      "purpose": "Turn the midterm rental fundamentals and pivot economics into a launch file for one door: furnishing budget, rent multiple, conservative occupancy, payment and deposit controls, listing copy, insurance confirmation, and the tax schedule decision, all built before a single lease is signed.",
+      "chapter_ref": "Q7-Q8",
       "instructions": [
-        "Identify the actual state, municipality, property classification, and occupancy arrangement before applying a rule. Use the Texas examples only for Texas properties, then record current primary-source provisions and local requirements for each address in the operating portfolio.",
-        "Review the master lease, sublease addendum, building rules, placement contract, and insurance terms together. Resolve conflicting occupancy limits, termination rights, and permitted uses in writing. A landlord's informal encouragement does not replace the executed authorization required for corporate placements.",
-        "Determine state and local occupancy-tax treatment independently. Retain the documents supporting any permanent-resident exemption, including written intent and uninterrupted occupancy where required. Do not assume carrier payment or a 30-day listing automatically eliminates every lodging-related tax.",
-        "Convert habitability, security-deposit, screening, and accommodation duties into dated tasks with accountable owners. Preserve inspection evidence and notices. Apply consistent housing criteria while handling individualized accommodation requests through a documented process rather than automatic exclusions.",
-        "Inspect policy endorsements and licensed activities before representing services to carriers or employers. Confirm actual coverage for the described occupancy model. Separate arranging housing from adjusting insurance claims or brokering property for another party without required authority."
+        "Work one property at a time; every figure on this sheet belongs to a single address and a single furnished unit.",
+        "Use the conservative number whenever a range appears, then note the upside figure separately so it never drives the decision.",
+        "Complete the pivot stress test at both 95% and 65% occupancy before you buy furniture or cancel any long-term lease.",
+        "Make the insurer call and the tax review before listing, because both answers can change the rent you need to charge.",
+        "Keep every citation next to the number it supports so you can defend each assumption to a partner, lender, or yourself."
       ],
       "fields": [
         {
-          "name": "Jurisdiction and property-use determination",
-          "type": "textarea",
-          "prompt": "Identify the address, state, city, zoning classification, building restrictions, and applicable rental-registration rules. Record the official source and review date, explaining why stay length alone does not settle the property's permitted use.",
-          "example": "For illustrative Texas unit T03, the operator checks the city zoning map, rental-registration ordinance, certificate requirements, and building rules before signing. The record identifies 30-to-270-day furnished residential placements as the proposed use. Operations obtains written clarification when local definitions depend on services or transient occupancy, rather than assuming a 30-night minimum resolves classification."
+          "name": "furnishing_budget",
+          "type": "text",
+          "prompt": "Calculate the furnishing budget for your unit using the per-square-foot rule. Enter the square footage, the low and high cost range, whether you will handle assembly yourself, and the month by which furniture must pay itself back from rent.",
+          "example": "1,000 sq ft three-bedroom: $10,000 low, $15,000 high, because the rule of thumb runs 10 to 15 dollars per square foot including assembly labor [Bailey Kramer — De_DgYIghMo @ 00:03:12]. I will assemble myself to pull toward the low end. Payback target: month 10, matching the $6,000-furnishing illustration paid back in a little over 10 months [John Racine — iNwc9csMvTA @ 00:09:08]."
         },
         {
-          "name": "Express sublease addendum and Texas permission rule",
-          "type": "textarea",
-          "prompt": "Record the executed landlord authorization and its permitted corporate-housing activities. For a Texas property, address Texas Property Code Section 91.005 and reconcile the authorization with occupant registration, building restrictions, and master-lease default provisions.",
-          "example": "Texas Property Code Section 91.005 addresses landlord consent before subletting. T03's signed addendum states: 'Landlord authorizes Tenant to furnish and sublease the premises for corporate relocation and insurance-displacement stays of 30 to 270 days.' It also specifies occupant limits and notice procedures, removing the conflicting blanket sublease prohibition."
+          "name": "rent_multiple_target",
+          "type": "text",
+          "prompt": "Set the monthly base rent for the furnished unit by applying a multiple to the local long-term rent. Record the long-term comp, the multiple you chose, the resulting monthly rent, and the deposit you will collect as a fraction of a month.",
+          "example": "Long-term comp $2,000. Multiple 1.5x to 2x, the base-rent rule of thumb from a Furnished Finder marketing director who owns 13 MTRs [Furnished Finder — JG03P3JsuHc @ 00:25:43]. Target rent $3,000 to $4,000. Deposit set at one-third to one-half of a month, so $1,000 to $2,000. Floor check: single-family comps run 35% above long-term [Midterm Rental Consulting — GC5LW4scQwo @ 00:00:55]."
         },
         {
-          "name": "Permanent-resident occupancy-tax evidence",
-          "type": "textarea",
-          "prompt": "Document whether the specific arrangement is taxable lodging and what state and local exemptions apply. Record the required evidence, effective date, interrupted-stay treatment, and reconciliation process when actual occupancy differs from the original written intent.",
-          "example": "For Texas, review Tax Code Section 156.101 and 34 TAC Section 3.161 for permanent-resident treatment and written notice mechanics. T03 retains the 90-night agreement, occupancy evidence, and payer records. The bookkeeper separately checks local tax requirements and recalculates treatment if early departure changes eligibility; carrier payment itself supplies no exemption."
+          "name": "occupancy_underwriting",
+          "type": "text",
+          "prompt": "Underwrite the unit at a conservative occupancy rather than the best-case figure you hope for. Write the occupancy percentage you will model, the number of vacant months you expect per year, and the cash reserve you will hold before launch.",
+          "example": "Modeled occupancy 80 to 85%, with about two vacant months a year and a three-month cash reserve in place before the first guest [Real Life Planning with Cynthia Meyer — icpm0fFsk6Y @ 00:07:54]. Upside reference only: one operator reports 92% occupancy with under one week vacant between rentals [Midterm Rental Consulting — GC5LW4scQwo @ 00:00:55]. Reserve amount: three months of rent plus utilities."
         },
         {
-          "name": "Habitability, repairs, and emergency response",
-          "type": "textarea",
-          "prompt": "Map applicable repair and safety duties to inspections, response procedures, notices, and vendor coverage. Identify how the master landlord and operator coordinate without assuming their private cost allocation eliminates duties owed to residents.",
-          "example": "For a covered Texas residential tenancy, review Property Code Sections 92.052 and 92.056 concerning repair duties and remedies, including their conditions. T03 maintains dated safety checks and a 24-hour emergency number. A water leak triggers immediate mitigation and resident contact; responsibility for the invoice is resolved afterward without delaying protection of the household."
+          "name": "payment_and_keys_policy",
+          "type": "text",
+          "prompt": "Define the payment rule that controls when keys are released to an incoming tenant. List the automated payment channel you will use, the payment apps you will refuse, and the exact step that must clear before anyone receives access.",
+          "example": "No keys until first month's rent clears through the automated rent channel; Zelle, Venmo, and Cash App are refused outright [Jesse Vasquez — VtuboLMzJj0 @ 00:11:05]. The signed lease is the release trigger, because the lease is your safety net [Jesse Vasquez — VtuboLMzJj0 @ 00:04:48]. Monthly check: send somebody every single month [Jesse Vasquez — VtuboLMzJj0 @ 00:16:04]."
         },
         {
-          "name": "Security-deposit custody and refund procedure",
-          "type": "textarea",
-          "prompt": "Identify the legal character of each deposit and the applicable custody, deduction, notice, and refund rules. State the surrender date and forwarding-address process, preserving itemized support for deductions rather than using deposits as operating income.",
-          "example": "For a covered Texas residential deposit, Property Code Sections 92.103, 92.104, and 92.107 govern refund timing, deductions, and forwarding-address requirements. The operator records surrender, requests a forwarding address, and schedules the 30-day refund workflow. A $2,000 deposit remains a liability; ordinary wear is excluded from deductions, and retained amounts require documented support."
+          "name": "deposit_handling",
+          "type": "text",
+          "prompt": "Describe where security deposits will be held and how deductions will be proven. Name the dedicated account, the documentation you will keep for each deduction, and whether you will rely on the platform damage waiver or skip it entirely.",
+          "example": "Deposit goes into a dedicated savings account opened for this property only, with every deduction documented, and the Furnished Finder damage waiver is skipped [Midterm Rental Consulting — PLf1d4djjZw @ 00:05:14]. Cleaners photograph the unit before each check-in and after each checkout so disputes never turn into hearsay [Jacob and Elissa — ZoPbBZvfW94 @ 00:03:34]."
         },
         {
-          "name": "Fair housing and accommodation workflow",
-          "type": "textarea",
-          "prompt": "Document consistent selection criteria, accessibility representations, accommodation handling, and staff escalation. Identify the federal fair-housing requirements applicable to the arrangement and prevent automated pet, occupancy, or screening rules from bypassing individualized review.",
-          "example": "The housing workflow applies 42 U.S.C. Section 3604, including reasonable-accommodation requirements in Section 3604(f)(3)(B) where applicable. An assistance-animal request goes to a trained reviewer rather than an automatic $300 pet-fee rule. Staff request only appropriate supporting information, record the decision, and verify advertised accessibility features before offering the unit."
+          "name": "lease_deadline_screening",
+          "type": "text",
+          "prompt": "Set the deadline an approved applicant has to sign the lease and fund the deposit. Explain how you will treat applicants who miss it, and state whether your calendar stays open to other inquiries until both steps are finished.",
+          "example": "Applicants get 72 hours to sign and fund the deposit; anyone who ghosts the process is treated as a future bad tenant [Midterm Rental Consulting — r-8W10XEuGg @ 00:05:06]. The calendar stays open, following the rule do not block your calendar until you have a lease signed [Airbnb Hosting and Short Term Rental Tips — 264jEA_cXOw @ 00:19:55]. Backup applicants stay queued."
         },
         {
-          "name": "Screening reports and adverse-action records",
+          "name": "listing_copy_plan",
           "type": "textarea",
-          "prompt": "Identify whether consumer reports are used, the permissible purpose, access restrictions, and adverse-action process. Distinguish payer credit review from household screening and avoid collecting reports merely because an integration offers them.",
-          "example": "If T03's operator obtains a consumer report, it documents a permissible purpose under 15 U.S.C. Section 1681b and applicable authorization requirements. A report-based adverse action follows 15 U.S.C. Section 1681m. The record includes the reporting agency's details and required consumer notices; a corporate payer's purchase order does not automatically justify screening every household member."
+          "prompt": "Draft the opening lines of your Furnished Finder description and the photo shot list. Specify where your contact email appears, whether you write in bullets or prose, and which practical items and safety features each photo and bullet must show.",
+          "example": "First line: email address as a bullet, then bullets only, no flowery prose, since past wins came from direct one-to-one emails with nurses [Midterm Rental Consulting — kaZB8y5juss @ 00:00:51]. Shot list: coffee machine, dishes, Tupperware, blackout curtains, towels. Copy bullets: security, lighting, free parking [Landlord Diaries - The Monthly Rentals Podcast — XTn3a_-I1Rg @ 00:04:37]. Photos stay true-to-property."
         },
         {
-          "name": "Lead disclosure and property-condition documents",
+          "name": "pivot_stress_test",
           "type": "textarea",
-          "prompt": "Record building age, applicable lead-based paint disclosure requirements, required attachments, and signed delivery evidence. Check actual exemptions rather than assuming every furnished or temporary arrangement avoids federal residential disclosure duties.",
-          "example": "For a covered pre-1978 dwelling, review 42 U.S.C. Section 4852d, 24 CFR Part 35 Subpart A, and 40 CFR Part 745 Subpart F. Before executing the covered lease, provide the required pamphlet, disclosures, and available records. T03's file preserves acknowledgments and the building-age evidence used to determine whether the requirements apply."
+          "prompt": "Run the STR-to-MTR pivot math before switching any door. Enter the current long-term comp, projected monthly furnished rent, added utilities and cleaning costs, and the resulting net at both a strong and a weak occupancy scenario.",
+          "example": "Scenario from a $3,000-comp illustration: $4,800 of added costs leaves a net gain of only about $1,800, which is exactly why you have to run the numbers [John Racine — iNwc9csMvTA @ 00:08:21]. Stress test at 95% and at 65% occupancy, with added utilities and cleaning counted before calling it a raise [John Racine — iNwc9csMvTA @ 00:12:36]."
         },
         {
-          "name": "Commercial insurance and contractual risk allocation",
-          "type": "textarea",
-          "prompt": "List required policies, limits, named insureds, endorsements, deductibles, and exclusions against the actual housing model. Specify evidence beyond a certificate and identify who funds losses that remain outside coverage.",
-          "example": "T03's contract requires $1 million per-occurrence and $2 million aggregate commercial general liability limits. The broker confirms the described furnished subleasing activity and reviews relevant exclusions and additional-insured endorsements. A certificate alone does not amend coverage. The operator separately prices contents coverage and funds a $2,500 deductible reserve from unrestricted cash."
+          "name": "insurance_call_script",
+          "type": "text",
+          "prompt": "Script the call to your insurer before the first monthly guest arrives. Record the exact phrase you will use to describe the operation, the coverage question you will ask, and what the renter's own policy does and does not protect.",
+          "example": "Opening line: this is a furnished mid-term rental. Question: does the landlord package allow furnished short-to-mid occupancy, or does it assume a 12-month lease [Short-Term Stays & Rentals — QIziS47827w @ 00:01:50]? Gap noted: a renter's policy usually covers only their belongings, not walls, appliances, or liability exposure [Short-Term Stays & Rentals — QIziS47827w @ 00:01:35]."
         },
         {
-          "name": "Licensing boundaries and contract audit closure",
-          "type": "textarea",
-          "prompt": "Identify whether any activity requires real-estate, lodging, or insurance-adjuster authority. Distinguish operating controlled inventory from negotiating transactions for others, and assign unresolved licensing questions a named owner.",
-          "example": "Texas Occupations Code Chapter 1101 requires review when the operator performs brokerage activities for another. Texas Insurance Code Section 4101.051 addresses adjuster licensing. T03's staff quotes housing and supplies invoices; they do not negotiate policy coverage or represent an adjustment role. The operator documents the activity-specific determination before marketing additional services or collecting related fees."
+          "name": "tax_schedule_check",
+          "type": "text",
+          "prompt": "Determine how rental income will be reported this year. Note how many days the unit will be rented, the expected average stay length, and every guest service you provide, then mark whether the operation leans toward Schedule E or Schedule C.",
+          "example": "Rented well over 14 days, so the income is reportable [Lodge Compliance — zQI1CpxOnQ0 @ 00:01:32]. Average stay is monthly, far above 7 days. Services: turnover cleaning and linens only, no daily maid service, meals, airport rides, or concierge, which keeps the unit off the 15.3% Schedule C self-employment path [Restart Tax Talk — SpF7mXFixD8 @ 00:00:59]. Lean: Schedule E."
         }
       ],
-      "completion_gate": "Every property has executed sublease authority, a current jurisdiction record, documented tax treatment, resident-protection procedures, verified insurance terms, and resolved licensing questions for the services actually offered."
+      "completion_gate": "Done when the unit has a written furnishing budget and payback month, rent set at a stated multiple of long-term rent, underwriting at 80 to 85% occupancy with a three-month reserve, the payment and deposit rules written, insurer confirmation in hand, and the pivot net positive at 65% occupancy."
     },
     {
       "worksheet_id": "ws-05",
       "number": 5,
-      "title": "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker",
-      "purpose": "Build a small-team acquisition and fulfillment pipeline that keeps availability, contracts, billing, and property telemetry consistent. Automate repeatable work while retaining clear human ownership for mismatched portal data, unsafe conditions, collection problems, and placement requests that exceed funded capacity.",
-      "chapter_ref": "Q6, Q10",
+      "title": "Nurse and Contract-Worker Housing with Airtight Lease Paper",
+      "purpose": "Build the demand, screening, and paperwork system for 13-week travelers: confirm hospital demand, equip and list the unit for nurses, screen every adult, block payment fraud, write extension and sublease clauses, and collect the insurance certificates that keep a master lease and subtenants protected.",
+      "chapter_ref": "Q9-Q10",
       "instructions": [
-        "Map every integration to a business object, authorized access method, update frequency, and failure owner. Use documented APIs or permitted exports where available. Do not infer that an ALE or CRS portal grants unrestricted automated access.",
-        "Separate inquiry generation from verified demand. Track referral source, qualified request, quote, signed order, arrival, and collected payment. Calculate conversion and acquisition cost from completed records rather than counting every portal message as a potential booking.",
-        "Automate reminders and comparisons before automating commitments. Extension requests, utility-cap adjustments, and invoice drafts should carry the source contract and calculation. Route changed terms or missing authority to a responsible operator before money or access changes.",
-        "Use smart locks, leak sensors, and non-recording noise telemetry for defined operating purposes. Document resident disclosures, access limits, retention, and device failure behavior. Maintain a local response path when cloud services, batteries, or network connections fail.",
-        "Test recovery from portal outages, duplicate messages, sensor faults, and contractor unavailability. Measure exceptions per placement and minutes of manual work. Expand automation only when its error handling preserves the ledger, resident access, and cash controls."
+        "Start with the hospital HR call; if demand is weak, stop here before spending money on furniture or a lease.",
+        "Write every clause in plain language a tenant can read in one pass, and keep each permission in writing.",
+        "Send the sublease addendum during the opening negotiation so the owner sees every term before the signing table.",
+        "Treat the payment protocol as non-negotiable; share it with every tenant before the first dollar moves.",
+        "Archive signed addenda and certificates in a property folder so permission survives any change in management."
       ],
       "fields": [
         {
-          "name": "Acquisition channels and accountable contacts",
-          "type": "textarea",
-          "prompt": "List the carrier-housing intermediaries, relocation managers, employers, and local referral sources you will approach. Define the useful inventory information each receives and the measurable next step owned by a team member.",
-          "example": "The operator targets 12 housing coordinators, 8 employer mobility contacts, and 5 restoration-company referral contacts. Each receives a concise inventory sheet showing dates, bedrooms, service area, and direct billing terms. The desired next step is a qualified placement request, not an implied referral promise. One weekly owner reviews responses and removes unsuitable contacts."
+          "name": "hospital_demand_check",
+          "type": "text",
+          "prompt": "Verify traveler demand before you buy or lease near a hospital. Record the hospital name, the drive time from the unit, who you reached in human resources, and what they said about traveler housing demand and typical contract length.",
+          "example": "Target radius: within about 20 minutes of the hospital, filled by 13-week contracts that often extend. Called hospital HR about traveler housing demand before buying; their answer beats any market report [The CoLiving Insider — VbsbBFnJvik @ 00:06:17]. Benchmark: ensuite rehabs one mile from Johns Hopkins hold 95-97% occupancy [Landlord Diaries - The Monthly Rentals Podcast — utDX2blYFMk @ 00:21:36]."
         },
         {
-          "name": "Qualified-demand funnel and acquisition cost",
+          "name": "nurse_amenity_checklist",
           "type": "textarea",
-          "prompt": "Define funnel stages and calculate conversion using distinct opportunities rather than messages. Allocate outreach spend and labor consistently, then compare acquisition cost with collected placement contribution and repeat business.",
-          "example": "A monthly cohort produces 40 inquiries, 16 qualified requests, 8 quotes, and 4 signed placements. Inquiry-to-signature conversion is 10%; quote-to-signature conversion is 50%. With $1,200 outreach spend and $800 allocated labor, acquisition cost is $500 per signed placement. The dashboard also tracks collections so unpaid signatures do not masquerade as successful revenue."
+          "prompt": "List every amenity a travel nurse will check before booking your unit. Mark each item as installed, ordered, or missing, and note which of them you will feature in photos and which you will call out in the listing text.",
+          "example": "Installed: blackout curtains, fast Wi-Fi, in-unit laundry, quality bed. Ordered: desk and full kitchen kit. Pets: dogs allowed, since flipping to pet friendly raised revenue 30% [Clint Coons Esq. | Real Estate Asset Protection — 2WVMiZV3TYI @ 00:16:39]. Listing text calls out security, lighting and free parking [Landlord Diaries - The Monthly Rentals Podcast — XTn3a_-I1Rg @ 00:04:37]."
         },
         {
-          "name": "ALE and CRS portal synchronization contract",
-          "type": "textarea",
-          "prompt": "Specify the permitted portal connection, canonical availability record, synchronization frequency, and conflict-resolution rule. Identify fields that cannot independently authorize a booking, and define behavior when data becomes stale.",
-          "example": "Where authorized access exists, the workflow imports ALE or CRS placement references into the internal register every 30 minutes. Inventory holds require an internal reservation identifier. A portal's estimated end date cannot extend a contract. If synchronization fails twice, the listing is flagged for manual confirmation and the coordinator receives a direct availability update."
+          "name": "inquiry_response_standard",
+          "type": "text",
+          "prompt": "Commit to a response standard for every inquiry from nurses and contract workers. Write the maximum reply window, who covers inquiries when you are unavailable, and the pre-recorded materials you will send instead of scheduling an in-person showing.",
+          "example": "Reply window: same day, every inquiry, because a nurse who does not hear back the same day books somewhere else [The CoLiving Insider — VbsbBFnJvik @ 00:05:24]. Target is minutes, not hours, with true-to-property photos and a pre-recorded walkthrough replacing in-person showings [Landlord Diaries - The Monthly Rentals Podcast — n77MirHjIVo @ 00:26:26]. Backup responder: my named backup contact."
         },
         {
-          "name": "Workflow stack and duplicate-event controls",
-          "type": "textarea",
-          "prompt": "Name the tools, object mapping, event identifiers, retry rules, and human exception queue. Explain how automation logs decisions without copying unnecessary household documents into every connected service.",
-          "example": "Airtable tracks opportunities, DocuSign holds signed agreements, QuickBooks Online handles accounting records, and n8n coordinates permitted integrations. A PostgreSQL event table enforces unique business keys. Only placement identifiers and required billing data move between systems. Failed events enter a named-owner queue; retries inspect prior results before creating external documents."
+          "name": "tenant_screening_standard",
+          "type": "text",
+          "prompt": "Set the screening standard every occupant must pass before a lease is offered. Specify which adults are screened, the checks you run on each, and whether you still verify credit when a staffing agency or employer already vetted the tenant.",
+          "example": "Every adult 18 and over is screened, and credit is still checked even when the employer has already vetted the nurse [Landlord Diaries - The Monthly Rentals Podcast — XTn3a_-I1Rg @ 00:24:14]. For corporate placements, the employer is verified and every occupant is background-checked for evictions and fraud, with the employer paying by credit card [LaShaun Shanae — nZd4KYLOZDw @ 00:14:56]."
         },
         {
-          "name": "Lease-extension reminder and authorization workflow",
-          "type": "textarea",
-          "prompt": "Define reminder timing, required responses, pricing inputs, signature evidence, and inventory changes for extensions. Explain what the workflow does when the coordinator predicts a longer stay but cannot authorize payment.",
-          "example": "At 21, 14, and 7 days before departure, the system requests confirmation from the authorized coordinator. A proposed 30-night extension generates a $7,500 draft amendment at $250 nightly. No invoice or additional landlord commitment is created until signed authority and availability are recorded. Unanswered requests enter the operator's daily departure-risk queue."
+          "name": "payment_fraud_guard",
+          "type": "text",
+          "prompt": "Write the payment-safety protocol you will share with every tenant before money changes hands. Include when the first payment is accepted, how you test the receiving account, and the exact sentence that warns tenants about fake payment requests.",
+          "example": "No money is taken before the lease is signed. A $1 test payment runs into a separate bank account first, and tenants are told that I will never request money outside the agreed process [Caytlyn Cole Tolliver — ObdxpkrC-yE @ 00:10:02]. Warning sentence: I will never request money [Caytlyn Cole Tolliver — ObdxpkrC-yE @ 00:12:35]. Never Zelle, Venmo, or Cash App."
         },
         {
-          "name": "Smart-lock, leak, and noise telemetry response",
+          "name": "extension_notice_clause",
           "type": "textarea",
-          "prompt": "Map each device event to a proportionate response, resident disclosure, data-retention period, and manual fallback. Distinguish maintenance alerts from enforcement decisions and prohibit remote access changes that bypass resident protections.",
-          "example": "A leak sensor sends an alert to the operator and backup plumber, with acknowledgment targeted within 10 minutes. Noise telemetry measures levels without recording conversations and prompts a welfare or disturbance check, not an automatic penalty. Battery warnings create maintenance tasks. A physical key protocol preserves lawful resident access during a cloud outage."
+          "prompt": "Draft the lease clause that governs contract extensions for 13-week tenants. State the minimum notice you require, what happens to the calendar if notice is late, and how you handle the next applicant waiting in your queue meanwhile.",
+          "example": "Clause: tenant must give at least one month's notice of any contract extension, so the calendar can be held or released for the next tenant in the queue [Caytlyn Cole Tolliver — KIPX-8cQrqc @ 00:07:27]. Queue rule: never turn anyone away until a lease is signed and a deposit is made [Caytlyn Cole Tolliver — KIPX-8cQrqc @ 00:01:27]. Late notice releases the dates."
         },
         {
-          "name": "Utility-cap automation and dispute routing",
+          "name": "room_vs_whole_unit",
           "type": "textarea",
-          "prompt": "Define bill ingestion, date allocation, allowance lookup, calculation validation, and supporting-document delivery. State which discrepancies require manual review before an excess charge is posted or sent to the payer.",
-          "example": "The workflow reads the $1,125 allowance from the signed 90-night contract and compares it with $1,380 supported utility costs. It drafts a $255 adjustment with source statements. A shared meter, overlapping billing period, or missing excess-charge clause routes the item to the bookkeeper instead of automatically collecting the amount."
+          "prompt": "Compare renting the unit whole against renting it by the room. Enter the whole-unit monthly rent, the per-room rent multiplied by room count, the occupancy you will underwrite for each model, and the turnover cost per room.",
+          "example": "Whole unit: $2,000-$2,200. By the room: 2 x $1,250 = $2,500, and about 20% of Furnished Finder listings rent by the room [Landlord Diaries - The Monthly Rentals Podcast — XTn3a_-I1Rg @ 00:12:06]. Room model underwritten at 75% occupancy, not 100%, with $100-$150 per room turnover and more than one guest source [The CoLiving Insider — VbsbBFnJvik @ 00:05:42]."
         },
         {
-          "name": "Contractor pod coverage and service levels",
-          "type": "textarea",
-          "prompt": "Assign primary and backup owners for turnover, maintenance, bookkeeping, and after-hours response. Define service expectations and escalation evidence without treating contractor headcount as unlimited daily delivery capacity.",
-          "example": "The Base pod has one full-time operator and three contractors: turnover, maintenance, and bookkeeping. The operator remains accountable for emergency dispatch and payer decisions. Backup vendors are prequalified for scheduling failures. The scorecard counts available hours and completed tasks, not just four names, and flags simultaneous turnovers that exceed actual field capacity."
+          "name": "recruiter_feeder_channel",
+          "type": "text",
+          "prompt": "Map a direct feeder channel that sends tenants to you without competing in the listing scrum. Name the staffing agencies, recruiters, or hospital contacts you will approach, the platform you will use to find them, and your partnership pitch.",
+          "example": "Channel: staffing recruiters found on LinkedIn, plus direct calls to the agency pitching a housing partnership [Bailey Kramer — phifsNzsrJk @ 00:11:28]. Backup listing: Furnished Finder at $99 per listing for a 12-month membership with no booking fee, since one month-long booking pays for the year [The House Hacking Podcast — 63S3a8R7kZs @ 00:05:32]. Pitch opens with a question, not a hard sell."
         },
         {
-          "name": "Vacancy, closeout, and concentration fallback",
+          "name": "sublease_addendum_terms",
           "type": "textarea",
-          "prompt": "Define triggers for falling occupancy, early claim closure, payer concentration, and aging receivables. Connect each trigger to a concrete cash-preserving response with an owner and a deadline.",
-          "example": "If one payer exceeds 35% of receivables or any invoice passes 45 days, the operator reviews new exposure before accepting another placement. An early closeout activates the $4,125 unit reserve and replacement marketing within one business day. Replacement income reduces the uncovered loss only after a binding booking exists, with contractual credits applied."
+          "prompt": "List every term your one-page sublease addendum must contain before the first listing goes live. Cover stay-length language, named platforms, guest types, a ban or pandemic opt-out, which document prevails, and when the addendum reaches the owner.",
+          "example": "Terms: under-30-day hosting permitted, platforms named, addendum prevails over the lease, and a 60-day no-penalty opt-out after a government-mandated short-term rental ban or pandemic restrictions [LoCasa — VFt0XueZxpE @ 00:07:05]. Guest types broadened to all travelers so the landlord cannot turn the tables later [LoCasa — VFt0XueZxpE @ 00:01:56]. Addendum sent during the opening negotiation, not at signing."
         },
         {
-          "name": "Data access, retention, and outage recovery",
-          "type": "textarea",
-          "prompt": "Document least-privilege access, multi-factor authentication, backup testing, retention limits, and incident ownership. Specify the minimum offline information needed to support occupied households without exporting complete claim files.",
-          "example": "The field contractor sees unit instructions and service contacts but not payer banking details. Billing users cannot change smart-lock schedules. A daily encrypted backup is restore-tested monthly. An access-controlled emergency roster contains only current occupancies and essential contacts. Document retention follows actual contractual and statutory needs, with expired access removed after each assignment."
+          "name": "liability_certificate_requirements",
+          "type": "text",
+          "prompt": "Record the insurance proof required on both sides of the lease. Enter the liability limit on your certificate, whether the landlord is named as additional insured, the minimum liability each subtenant must carry, and the renters insurance requirement.",
+          "example": "Certificate: $1,000,000 per occurrence with the additional insured box checked for the landlord [Commercial Real Estate Pro Network — ZVbVs2WDmLw @ 00:03:16]. Subtenant liability minimum: $100,000. Renters insurance required on every new lease and renewal, citing the national average of about $132 a year for a $100,000 limit [BiggerPockets — 8MMoqEHoIn0 @ 00:03:49]. Coverage verified on paper, never assumed."
         }
       ],
-      "completion_gate": "Authorized integrations, duplicate-event controls, manual fallbacks, device response procedures, and named pod coverage are tested; no automated process can create an unsupported charge, commitment, or resident lockout."
+      "completion_gate": "Done when hospital demand is confirmed by phone, the amenity list is fully installed, screening covers every adult with credit checked, the payment protocol and extension clause are written into the lease, the signed addendum is archived, and liability certificates are on file."
     },
     {
       "worksheet_id": "ws-06",
       "number": 6,
-      "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
-      "purpose": "Turn the underwriting and control system into a sequenced 30-day launch without confusing readiness with earned revenue. Track placement quality, cash exposure, contractor capacity, and transferable records so growth remains funded and the operation can withstand an ownership transition.",
-      "chapter_ref": "Q11, Q12",
+      "title": "Exit Clauses, Tenant Protections, and the Right Insurance Stack",
+      "purpose": "Price every way out of a lease before signing it and insure the operation so a claim actually pays: termination fees, state rules, protected exits, signed termination agreements, move-out proof, California just cause checks, the policy conversion call, liability limits, honest use disclosure, and safety items.",
+      "chapter_ref": "Q11-Q12",
       "instructions": [
-        "Plan the first 30 days as a readiness and demand-validation sprint. The candidate's expected time to first deal remains one to three months. Assign dated deliverables and evidence without assuming the calendar forces a signed placement or collected payment.",
-        "Sequence capital commitments after property rights, payer terms, and reserve requirements are understood. Use the $12,000 to $60,000 startup range as a boundary for a specific launch plan, not proof that every portfolio size is affordable.",
-        "Maintain a weekly pod dashboard that separates gross housing billings, retained contribution, owner net, occupancy, receivables, and unrestricted cash. Show both actuals and canonical benchmarks. Do not annualize a single high-occupancy placement as an established operating history.",
-        "Review capacity using simultaneous arrivals, departures, emergency coverage, and manual exception minutes. The Base configuration is one full-time operator plus three contractors; the Scaled configuration is two full-time operators plus four contractors, with actual coverage demonstrated.",
-        "Prepare transfer-quality records from the first placement. Track contract assignment rights, landlord deposits, furniture ownership, resident liabilities, software access, and open disputes. A prospective buyer should be able to reconcile earnings and obligations without relying on the founder's memory."
+        "Read the early termination clause and notice clock before signing; the exit price is set on day one, not at move-out.",
+        "Look up your state's rules yourself and confirm them with a local landlord tenant attorney before relying on them.",
+        "Never stop paying rent or hand back keys without a signed termination agreement and a written key receipt.",
+        "Make the 15-minute insurance conversion call before any tenant, guest, or room renter moves in.",
+        "Disclose the real occupancy model in writing and update the carrier before renewal whenever rooms or guest types change."
       ],
       "fields": [
         {
-          "name": "Days 1–7: demand and jurisdiction validation",
-          "type": "textarea",
-          "prompt": "List the first week's deliverables, owners, evidence, and spending ceiling. Prioritize verifiable payer demand, lawful property use, and landlord permission before committing to furnishings or an unfunded master lease.",
-          "example": "By day 7, the operator completes five coordinator interviews, obtains three written comparable quotes, and reviews two candidate properties. The jurisdiction record and draft landlord addendum are complete. Spending is capped at $1,000 for document review and inspections. No lease is signed solely because a coordinator describes a possible future claim."
+          "name": "termination_fee_terms",
+          "type": "text",
+          "prompt": "Price the early exit before you sign any lease, as tenant or as landlord. Record the termination fee or buyout written into the agreement, how many months of rent it equals, and how it compares with paying rent on an empty unit.",
+          "example": "Master lease buyout: two months rent, matching the typical landlord-side buyout of around two months [DoorLoop — DMY8aqSWFmQ @ 00:03:58]. The common range runs 1 to 3 months rent and can be cheaper than paying rent on an unoccupied unit until the lease is up [Tenant Law Group, PC — mXtFESh8Jwc @ 00:01:19]. On $2,000 rent, exit cost is $4,000."
         },
         {
-          "name": "Days 8–14: contracting and funded setup",
-          "type": "textarea",
-          "prompt": "Define the documents, cash checks, and property conditions required before setup begins. Assign each commitment an owner and preserve the distinction between the two-unit launch budget and later portfolio expansion.",
-          "example": "By day 14, the two-unit plan has executed corporate-housing addenda, verified insurance terms, and a signed capital schedule. The $60,000 allocation remains $10,000 deposits, $18,000 furnishings, $4,500 setup, and $27,500 unrestricted cash. Purchases proceed only for authorized units. The operator records delivery dates and cancellation terms for each furniture order."
+          "name": "state_rule_lookup",
+          "type": "text",
+          "prompt": "Look up the rules in the state where the unit sits before relying on any exit plan. Note whether the landlord has a duty to re-rent, any statutory cap on default charges, and the local attorney you contacted for direction.",
+          "example": "Searched landlord's duty to re-rent plus the state, then called a local landlord tenant attorney, since many give direction for free [Adulting Shouldn't Suck — 07RfH5S46pg @ 00:05:28]. Florida note: default damages capped at up to two months of rent under Florida Statutes 83.595 when the lease lacks its own default section [The Listing Real Estate Management — WU7IqO6I6fk @ 00:02:04]."
         },
         {
-          "name": "Days 15–21: systems, vendors, and test placements",
+          "name": "protected_exit_review",
           "type": "textarea",
-          "prompt": "Specify the integration, safety, contractor, and ledger tests completed before the first household arrives. Include deliberate failure cases and define acceptable evidence rather than treating software configuration as verified operation.",
-          "example": "By day 21, the pod runs a mock arrival, a duplicate January invoice event, a lock-network outage, and a leak escalation. The bookkeeper demonstrates one invoice after three event replays. The maintenance contractor confirms backup access and dispatch. Failures receive owners and retest dates; a configured workflow is not marked tested without results."
+          "prompt": "Identify every exit that can release a tenant without penalty regardless of what the lease says. Note military orders, domestic violence documentation, habitability or quiet-enjoyment failures, and illegal units, plus the notice clock that applies to each one.",
+          "example": "Military: permanent change of station or deployment orders of 90 days or more end the lease 30 days after the next rent date, with written notice plus orders and no early termination fee [60SecondLaw — X_XeyY10oQE @ 00:03:50]. Also flagged: habitability, quiet-enjoyment, domestic violence, illegal units. Ontario rule: expiry is not a termination ground [Ontario Renter Rights — N08BrJ9_Luw @ 00:01:18]."
         },
         {
-          "name": "Days 22–30: placement readiness and go-live evidence",
+          "name": "termination_agreement_checklist",
           "type": "textarea",
-          "prompt": "Define the final readiness review and the conditions for accepting the first live placement. Include a continuation plan when qualified demand has not yet converted within the initial 30-day sprint.",
-          "example": "By day 30, both units have documented condition checks, current availability, billing templates, and emergency coverage. A live arrival requires signed payer authority and funded cash exposure. If no deal has closed, the operator continues targeted outreach within the one-to-three-month first-deal window and reviews carrying costs weekly instead of reporting fictional occupancy."
+          "prompt": "Draft the termination agreement that must exist before anyone moves out or stops paying rent. List the signatures required, the dollar amount owed, the move-out date, and the release language confirming that no further rent is due afterward.",
+          "example": "No move-out and no rent stoppage until both sides sign an agreement stating the amount, the move-out date, and that no further rent is owed [60SecondLaw — X_XeyY10oQE @ 00:05:52]. If no buyout exists, a written reminder of the landlord's duty to re-rent goes out citing the state statute, and every vacant week with no listing is logged [60SecondLaw — X_XeyY10oQE @ 00:06:09]."
         },
         {
-          "name": "Weekly pod operating KPI definitions",
-          "type": "textarea",
-          "prompt": "Define each weekly metric with its numerator, denominator, source, and owner. Separate occupied nights from available inventory, signed orders from earned charges, and receivables from collected cash.",
-          "example": "The pod reports occupied nights divided by rentable nights, earned housing charges, retained contribution, owner-net estimate, aged receivables, and unrestricted cash. For 54 occupied nights across two units over 30 days, occupancy is 90%. At $250 nightly, earned housing charges are $13,500 before tax; cash collections are shown separately."
+          "name": "move_out_documentation",
+          "type": "text",
+          "prompt": "Plan the move-out documentation that protects the deposit on your way out of a master lease. Describe the cleaning and repairs completed, the photos and videos captured, how keys are returned, and what proof you keep afterward.",
+          "example": "Unit cleaned, repaired, and documented with my own photos and videos before vacating to block deposit deductions [Better Call Kal — 2ZipHRbP_7U @ 00:06:13]. Keys returned against a written receipt, with nothing I want and no occupants left in the apartment [The Legal Aid Society — sIjDgu8Ns9w @ 00:01:10]. Files saved in the property folder alongside the original move-in condition photos."
         },
         {
-          "name": "Canonical benchmark and actual-results bridge",
-          "type": "textarea",
-          "prompt": "Record the candidate ranking, score, annual scenario benchmarks, and actual reporting period. Explain variances in rate, occupancy, pass-through costs, and overhead without rewriting the canonical numbers to match early performance.",
-          "example": "Candidate 33 ranks #07 of 36 with 90/100: revenue 23, margin 24, team efficiency 18, startup accessibility 13, automation 12. Annual owner-net benchmarks remain $21,600, $150,100, and $364,000. The dashboard labels first-month actuals separately and reconciles differences through occupied nights, nightly rate, landlord costs, utilities, and remaining operating expenses."
+          "name": "just_cause_exemption_check",
+          "type": "text",
+          "prompt": "Before starting any eviction or non-renewal in California, document the AB 1482 exemption determination. Record whether the property is exempt, the basis for that conclusion, and the just cause ground you will rely on if it is not exempt.",
+          "example": "Exemption determination is run before any eviction, because a non-exempt property without just cause will likely lose the case [David Piotrowski — dOXVjIvVseI @ 00:07:40]. Tenant waivers are not relied on, since just cause requirements cannot be waived even if the tenant agrees [David Piotrowski — dOXVjIvVseI @ 00:07:56]. Determination memo is filed with the lease."
         },
         {
-          "name": "Capacity, hiring, and contractor economics",
-          "type": "textarea",
-          "prompt": "Measure the work behind the staffing model and define a funded trigger for adding capacity. Identify the manual tasks that constrain growth before assuming automation eliminates physical turnover or emergency response.",
-          "example": "The Base pod tracks 35 operator hours and 24 aggregate contractor hours weekly during a sample period. If operator demand exceeds 45 hours for four weeks or arrival checks miss their deadlines, the operator reviews workload and funding. The Scaled benchmark permits 2 full-time plus 4 contractors, but hiring requires a priced role and preserved cash reserves."
+          "name": "policy_conversion_call",
+          "type": "text",
+          "prompt": "Script the conversion call that rewrites the property's coverage before a tenant or guest moves in. Record the agent's name, the exact policy form you request, the endorsements you add, and the named insured shown on the declarations.",
+          "example": "Fifteen-minute call before move-in telling the agent this address is becoming a rental [Real Property Management Palisade — aUKpl6xobwU @ 00:02:05]. Form: dwelling fire pushed to DP3 with replacement cost, loss of rent, vandalism, and water coverage. Named insured matches the deed, including the LLC [Bryan Gutowsky | Michigan Insurance — UUWJRIHQaqk @ 00:03:22]."
         },
         {
-          "name": "Expansion, pause, and orderly exit triggers",
-          "type": "textarea",
-          "prompt": "Set measurable thresholds for adding units, pausing new commitments, or winding down a property. Include resident continuity, landlord notice, cash obligations, and documented decisions rather than relying on intuition after a loss.",
-          "example": "Expansion pauses whenever unrestricted cash falls below the modeled $24,225 two-unit reserve or receivables exceed the approved aging limit. A unit with repeated negative contribution receives a contract-specific exit review. The operator preserves existing resident obligations, issues required landlord notices, and funds final utilities before removing inventory from marketing."
+          "name": "liability_limits_stack",
+          "type": "text",
+          "prompt": "Set the liability stack that sits behind every rental door. Enter the per-property liability limit, whether an umbrella policy sits on top, how premiums compare with the old homeowner policy, and whether multiple homes can share one bundled policy.",
+          "example": "Liability: at least $500,000 per door [Blue Fox Properties — 7sscnFcWkp4 @ 00:03:58], stacked toward $1 million with an umbrella on top. Premium expectation: about 25 percent more than homeowner coverage for the same property [Steadily — 8qVhmrP1DZM @ 00:01:22]. Scaling plan: up to 30 homes on one bill with one renewal date [AmericanModernIns — fR49bewBEuo @ 00:00:44]."
         },
         {
-          "name": "Transferable asset and obligation ledger",
+          "name": "use_disclosure",
           "type": "textarea",
-          "prompt": "List assets, contracts, liabilities, assignment restrictions, and supporting evidence needed for a transfer. Separate owned furnishings from landlord property and identify obligations that remain with the operator unless expressly transferred.",
-          "example": "The ledger records $18,000 original furniture cost with invoices and condition records, $10,000 landlord deposits with refund terms, and each master lease's assignment clause. Customer security deposits remain listed as liabilities. Software credentials are replaced through authorized account transfer procedures. A buyer cannot assume lease assignment or payer-contract transfer without the required agreement."
+          "prompt": "Write the exact use disclosure you will give your carrier in writing. Describe the occupancy model, the number of rooms and agreements, the guest types, and the date you will report any change in rooms or guest mix before renewal.",
+          "example": "Disclosure: rent-by-the-room to unrelated adults on separate agreements, with every change in rooms or guest type reported before renewal [The CoLiving Insider — RyLyOzBiWEs @ 00:10:10]. Reason: a six-unit, roughly 3,000 sq ft room house described as a 1,600 sq ft one-family home; after an about $371,000 loss, the policy was rescinded back to inception [The CoLiving Insider — RyLyOzBiWEs @ 00:02:42]."
         },
         {
-          "name": "Exit-readiness earnings and diligence package",
-          "type": "textarea",
-          "prompt": "Define the records needed to substantiate earnings and operating continuity. Reconcile billings, retained contribution, owner compensation, receivables, and unresolved claims, while separating documented operating history from forecasts and valuation assumptions.",
-          "example": "The diligence package includes 12 months of bank reconciliations, placement subledgers, tax records, executed contracts, and unit-level contribution reports when that history exists. A newly launched operation instead presents its actual shorter period explicitly. The $150,100 Base owner-net benchmark remains a planning case until earned; no sale multiple or transfer value is invented."
+          "name": "safety_and_damage_waiver",
+          "type": "text",
+          "prompt": "List the safety items that must be in place before any claim could ever be filed, and decide how guest damage is covered. Note smoke alarms, deadbolts, and window screens, plus the damage waiver amount and the coverage it buys.",
+          "example": "Working smoke alarms installed, dual cylinder deadbolts removed, and screens on all operable windows before any claim can be filed [Blue Fox Properties — 7sscnFcWkp4 @ 00:04:30]. Damage approach: a non-refundable $50 or $100 damage waiver backing about $500 of self-insured guest damage [Jacob and Elissa — ZoPbBZvfW94 @ 00:08:16]. Breakage responsibility spelled out in the lease up front."
         }
       ],
-      "completion_gate": "The 30-day sprint has dated evidence for completed tasks, uncompleted tasks have owners and funding decisions, actual results remain distinct from canonical scenarios, and the asset-and-obligation ledger supports an orderly handover."
+      "completion_gate": "Done when each lease has a priced exit in months of rent, state rules are confirmed, a termination agreement template is ready, the policy is rewritten as a dwelling fire DP3 with at least $500,000 liability, the use disclosure is sent in writing, and safety items are installed."
     }
   ]
 }

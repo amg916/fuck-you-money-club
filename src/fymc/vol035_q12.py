@@ -1,787 +1,814 @@
 from __future__ import annotations
 
-CHAPTER_12 = {
-    "id": "Q12",
-    "chapter_id": "Q12",
-    "chapter_number": 12,
-    "question_number": 12,
-    "slug": "first-30-day-launch-sprint-kill-fix-scale-gates",
-    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching subject-to & wraparound note arbitrage, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
-    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
-    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
-    "subtitle": "A Four-Person Launch Pod for Low-Rate Debt Acquisition, SAFE Act RMLO Underwriting, Texas Transfer Notices, and Auditable Wrap Servicing",
-    "layout_template": "thirty_day_plan",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #35, Subject-To & Wraparound Note Arbitrage, ranks #09 of 36 "
-        "with a 90/100 Money-to-Manpower Score. This sprint organizes 11 mapped "
-        "plays into a four-person pod: one full-time operator and three contracted "
-        "specialists. Days 1–30 produce verified seller files, counsel-reviewed "
-        "structures, documented RMLO underwriting, and a tested servicing ledger—not "
-        "a forced closing. The annual scorecard cases remain $28,000, $190,000, and "
-        "$442,000 in owner net profit on $100,000, $475,000, and $850,000 of operator "
-        "revenue. Home values, buyer principal, and underlying mortgage remittances "
-        "stay outside that revenue basis. A $6,000 first-month burn ceiling, "
-        "transaction-specific liquidity requirements, and measured Day 30/60/90 "
-        "decisions separate fixable execution friction from deals that must stop."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual operator revenue from net upfront spreads and retained wrap interest",
-            "note": "28% margin; $28,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$475,000",
-            "context": "Annual operator revenue excluding property value and pass-through debt service",
-            "note": "40.0% margin; $190,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$850,000",
-            "context": "Annual operator revenue from recognized net spreads and retained interest",
-            "note": "52% margin; $442,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Days 1–7: Fund the Pod and Define Eleven Executable Plays",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with an operating map, not a property advertisement. For this "
-                    "chapter, the eleven mapped plays are P01 debt-trigger sourcing, P02 "
-                    "permission-based seller outreach, P03 underlying-debt verification, P04 "
-                    "title and lien clearance, P05 due-on-sale exposure analysis, P06 "
-                    "subject-to acquisition structuring, P07 licensed RMLO buyer underwriting, "
-                    "P08 wrap pricing and retained-spread analysis, P09 disclosures and "
-                    "documented closing, P10 licensed third-party servicing, and P11 payment "
-                    "audit, reserves, and workouts. These identifiers organize the volume's "
-                    "mechanics rather than create eleven independent businesses. The single "
-                    "full-time operator owns P01, P02, P03, and P08. Contractor one is "
-                    "local real-estate counsel coordinating title and settlement for P04, "
-                    "P05, P06, and P09; contractor two is the licensed RMLO responsible "
-                    "for P07; contractor three is the appropriately licensed servicer "
-                    "responsible for P10 and supporting P11. The operator retains final "
-                    "cash-control accountability. Title companies, insurers, and inspectors "
-                    "remain transaction vendors, not additional dedicated pod seats. Record "
-                    "each contractor's scope, jurisdiction, backup contact, fees, and weekly "
-                    "capacity before assigning files. Limit active acquisition files to "
-                    "five and buyer underwriting files to three during the first month. "
-                    "A file exceeding those limits enters a dated queue rather than "
-                    "silently expanding the four-person operating model."
-                ),
-                (
-                    "Fund the sprint separately from the first acquisition. The startup "
-                    "capital range is $12,000–$65,000, while the operating-expense range is "
-                    "$2,000–$12,000 monthly; neither range establishes adequate transaction "
-                    "liquidity. Set a first-month nonrecoverable burn ceiling of $6,000, "
-                    "allocated as $1,800 for counsel and title scoping, $900 for RMLO "
-                    "process design and lawful file charges, $600 for servicing setup "
-                    "and testing, $900 for data and measured outreach, $600 for "
-                    "inspection and insurance diligence, and $1,200 for administration "
-                    "and contingency. These are procurement caps, not quoted vendor "
-                    "prices. Record paid invoices plus committed cancellation charges "
-                    "against the ceiling, so deferred invoices cannot disguise consumption. "
-                    "A founder starting with $12,000 therefore preserves at least $6,000 "
-                    "before transaction funding, but that remainder does not automatically "
-                    "support a closing. Each proposed acquisition needs a separately "
-                    "funded ledger for reinstatement, settlement, repairs, and reserves. "
-                    "Require liquid reserves covering six months of stressed property "
-                    "carry plus a counsel-quoted enforcement allowance, and document a "
-                    "credible acceleration response. Six months of payments cannot repay "
-                    "an accelerated mortgage. Do not spend buyer funds before settlement "
-                    "or count refundable deposits as available launch capital. Stop new "
-                    "commitments when the ceiling is reached without an explicit funded revision."
-                ),
-                (
-                    "Build the evidence system before sourcing volume. Use Airtable or "
-                    "a protected spreadsheet for stage tracking, a restricted document "
-                    "repository for statements and identity records, and QuickBooks for "
-                    "cash classifications. Keep Social Security numbers and credit reports "
-                    "out of the general pipeline. Require multifactor authentication, "
-                    "role-limited access, and a document retention schedule approved for "
-                    "the actual lending and servicing relationships. Verify RMLO status "
-                    "through NMLS Consumer Access and applicable state records; verify "
-                    "the servicer's required licenses separately because an origination "
-                    "credential does not establish servicing authority. Counsel maps "
-                    "12 U.S.C. §1701j-3, applicable state foreclosure law, and the actual "
-                    "loan's transfer provisions before any offer language is approved. "
-                    "A subject-to transfer does not release the original borrower, and "
-                    "a low interest rate does not neutralize acceleration rights. "
-                    "Treat seller distress as a verification trigger, never as permission "
-                    "to imply lender affiliation or promise foreclosure relief. Days "
-                    "one through seven should finish with signed scopes, spending "
-                    "controls, a state-specific document checklist, and ten manually "
-                    "screened properties. The week's success metric is a usable "
-                    "operating system and lawful contact basis, not the number of "
-                    "automated messages a platform can transmit."
-                ),
-            ],
-            "table": {
-                "caption": "Week One: Daily Ownership, Evidence, and Release Conditions",
-                "headers": [
-                    "Day and accountable pod owner",
-                    "Required operator work and mapped plays",
-                    "Evidence retained in the project file",
-                    "Measurable condition before advancing the file",
-                ],
-                "rows": [
-                    [
-                        "Day 1: operator establishes capital and authority",
-                        "Map P01 through P11 into signed responsibility assignments",
-                        "Capital ledger separates launch funds from transaction liquidity",
-                        "All eleven plays have one accountable named owner",
-                    ],
-                    [
-                        "Day 2: counsel scopes the target state's rules",
-                        "Review P04, P05, P06, and P09 legal dependencies",
-                        "Written checklist identifies transfer, origination, and foreclosure requirements",
-                        "Counsel identifies unresolved requirements before any seller offer",
-                    ],
-                    [
-                        "Day 3: operator verifies contracted specialist capacity",
-                        "Confirm RMLO licensing and servicer licensing where required",
-                        "Dated registry records accompany contracts and escalation contacts",
-                        "Three contracted seats accept documented weekly file limits",
-                    ],
-                    [
-                        "Day 4: operator configures restricted evidence storage",
-                        "Build P03 verification fields and P11 audit permissions",
-                        "Access register identifies document owners and permitted readers",
-                        "Sensitive buyer records stay outside general pipeline exports",
-                    ],
-                    [
-                        "Day 5: operator approves narrow sourcing criteria",
-                        "Use P01 to screen low-rate debt and distress",
-                        "Ten property records retain source dates and selection reasons",
-                        "Every prospect has an identifiable lawful contact method",
-                    ],
-                    [
-                        "Day 6: RMLO and servicer rehearse file handoffs",
-                        "Connect P07 underwriting requests with P10 onboarding requirements",
-                        "Sample file records document transfer and exception handling",
-                        "Every required field reaches its responsible specialist intact",
-                    ],
-                    [
-                        "Day 7: operator reconciles first-week commitments and capacity",
-                        "Review spending, contractor response times, and unresolved dependencies",
-                        "Weekly dashboard includes invoices plus cancellable commitment exposure",
-                        "Cumulative commitments remain within the approved $6,000 ceiling",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Conditions Before Any Binding Acquisition Commitment",
-                "body": (
-                    "The operator records evidence, an accountable reviewer, and a review "
-                    "date for each condition. A missing condition stops the affected deal."
-                ),
-                "items": [
-                    "Verify the current mortgage statement, reinstatement amount when relevant, payment history, escrow status, and seller-authorized lender information.",
-                    "Obtain counsel's documented transfer analysis, title review, required notice calendar, and feasible response to lender acceleration.",
-                    "Confirm the RMLO's applicable licensing and written owner-occupant underwriting process, plus the servicer's authority and payment-verification controls.",
-                    "Fund settlement obligations and six months of stressed carry separately from the launch budget, with a quoted enforcement allowance and no reliance on refundable buyer deposits.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Days 8–14: Convert Seller Signals into Verified, Rejectable Files",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "During week two, source enough evidence to reject weak deals "
-                    "quickly without overwhelming the pod. Build a cohort of forty "
-                    "unique, manually reviewed property records from county recorder "
-                    "filings, authorized data services such as PropStream, and referral "
-                    "partners. A recorded mortgage amount is not a current payoff, "
-                    "and a foreclosure filing does not establish the seller's remaining "
-                    "cure period. Deduplicate by parcel and ownership entity, then "
-                    "log source date, debt vintage, apparent occupancy, and contact "
-                    "basis. Target twenty individualized first contacts, eight substantive "
-                    "seller conversations, and four written document authorizations by "
-                    "Day 14; these are internal planning thresholds, not expected "
-                    "market conversion rates. Count a conversation only when an owner "
-                    "or authorized representative discusses debt, timing, and objectives. "
-                    "Do not count voicemail, duplicate callbacks, or broker forwards "
-                    "as additional conversations. Counsel reviews telephone and text "
-                    "practices against 47 U.S.C. §227 and relevant state restrictions; "
-                    "manual activity still needs applicable suppression and solicitation "
-                    "controls. Honor opt-outs immediately. Keep acquisition dialogue "
-                    "separate from any foreclosure-rescue representation. If twenty "
-                    "properly targeted contacts produce fewer than four conversations, "
-                    "change one variable—list quality, contact timing, or message "
-                    "specificity—before purchasing a larger list. Preserve the original "
-                    "cohort so later comparisons remain meaningful."
-                ),
-                (
-                    "P03 and P04 turn a seller narrative into a payment "
-                    "and title record. Obtain seller-authorized statements, note and "
-                    "security-instrument copies, current servicer contact details, payment "
-                    "history, escrow analysis, and any reinstatement or payoff quotation. "
-                    "Match borrower names, property address, account identifiers, and "
-                    "statement dates across documents. A screenshot showing a low "
-                    "monthly payment is insufficient when an adjustable rate resets "
-                    "next year or escrow excludes insurance. Title work must identify "
-                    "junior liens, judgments, tax delinquency, association claims, "
-                    "bankruptcy issues, and recorded interests affecting transfer. "
-                    "Counsel determines priority and required releases rather than "
-                    "assuming every lien disappears at closing. Request an insurance "
-                    "quote reflecting actual occupancy and ownership; continuing the "
-                    "seller's old policy without carrier review can leave an uninsured "
-                    "interest. Build a twelve-month property cash calendar showing "
-                    "principal and interest, tax installments, insurance renewals, "
-                    "association charges, and known repairs. Record whether each "
-                    "item is escrowed or paid directly to avoid double counting. "
-                    "Set a two-business-day internal turnaround target for reviewing "
-                    "a complete seller packet, not for producing third-party records. "
-                    "An incomplete packet stays pending with a named missing "
-                    "document and due date. It never becomes verified merely "
-                    "because the seller needs an immediate answer."
-                ),
-                (
-                    "P05 and P06 determine whether the transaction should exist. "
-                    "Under 12 U.S.C. §1701j-3, lenders generally may enforce "
-                    "contractual due-on-sale provisions subject to statutory limitations "
-                    "and protected transfers. An ordinary investor acquisition should "
-                    "not be assumed protected, and a trust wrapper is not a "
-                    "universal exception. Counsel documents the exact transfer, lender "
-                    "rights, required communications, and practical refinancing or "
-                    "disposition alternatives. In Texas, review Property Code §5.016 "
-                    "for applicable notices and timing, including its exceptions, "
-                    "and Finance Code Chapter 159 for wrap-specific requirements. "
-                    "Notice is not equivalent to lender permission. Price the "
-                    "deal only after modeling reinstatement, seller consideration, "
-                    "settlement costs, reserves, and probable buyer terms. For "
-                    "pipeline screening, require at least $300 monthly retained "
-                    "cash contribution after underlying debt service, servicing "
-                    "fees, and explicitly modeled property obligations, excluding "
-                    "principal recoveries from revenue. Stress six months without "
-                    "buyer receipts, a 20% increase in property taxes and insurance, "
-                    "and the counsel-estimated enforcement period. Those stresses "
-                    "test liquidity rather than redefine accounting profit. Reject "
-                    "a file with fabricated documents, an uncurable title defect, "
-                    "or no feasible acceleration response. Hold a potentially "
-                    "repairable file for seven calendar days with one specific "
-                    "cure request; do not negotiate indefinitely around missing evidence."
-                ),
-            ],
-            "table": {
-                "caption": "Week Two: Seller Cohort, Debt Verification, and Transfer Analysis",
-                "headers": [
-                    "Day and accountable pod owner",
-                    "Required operator work and mapped plays",
-                    "Evidence retained in the project file",
-                    "Measurable condition before advancing the file",
-                ],
-                "rows": [
-                    [
-                        "Day 8: operator locks the initial sourcing cohort",
-                        "P01 screens forty unique records using recorded evidence",
-                        "Parcel register preserves source dates and debt assumptions",
-                        "Forty records are deduplicated before contact totals begin",
-                    ],
-                    [
-                        "Day 9: operator begins individually reviewed seller outreach",
-                        "P02 executes ten contacts with documented solicitation controls",
-                        "Contact log records channel, outcome, and suppression requests",
-                        "Every opt-out is suppressed before another contact attempt",
-                    ],
-                    [
-                        "Day 10: operator completes the first contact batch",
-                        "P02 reaches twenty cumulative individualized first contact attempts",
-                        "Conversation notes distinguish owners from unauthorized third parties",
-                        "Fewer than four conversations triggers a targeting revision",
-                    ],
-                    [
-                        "Day 11: operator obtains document access from sellers",
-                        "P03 requests debt records through authorized communication channels",
-                        "Written authorizations accompany statements and lender information requests",
-                        "Four authorized packets are targeted without mislabeling incomplete records",
-                    ],
-                    [
-                        "Day 12: counsel coordinates title and lien diligence",
-                        "P04 reconciles ownership, liens, arrears, and transfer constraints",
-                        "Title findings identify required releases and responsible counterparties",
-                        "Every material title issue receives a documented disposition",
-                    ],
-                    [
-                        "Day 13: counsel evaluates acceleration and acquisition structure",
-                        "P05 and P06 examine transfer rights and alternatives",
-                        "Written deal memo distinguishes notice from lender permission",
-                        "No file advances without a feasible acceleration response",
-                    ],
-                    [
-                        "Day 14: operator prices the verified acquisition shortlist",
-                        "P08 models retained cash contribution and downside liquidity",
-                        "Property cash calendar includes escrow and direct obligations",
-                        "At least two verified files target $300 monthly contribution",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Find the Payment Failure Before the Seller Finds a Buyer",
-                "body": (
-                    "Veteran operators protect the spread by reconciling documents and "
-                    "cash timing before negotiating headline rates."
-                ),
-                "items": [
-                    "Compare the latest escrow analysis with the mortgage statement; an escrow shortage can consume the apparent spread before a wrap is originated.",
-                    "Request the reinstatement quotation's expiration date and daily accrual terms; a stale arrears number can break the settlement funding schedule.",
-                    "Test the proposed ownership and occupancy structure with the insurance carrier before binding acquisition terms, rather than inheriting an unsuitable seller policy.",
-                    "Schedule underlying-payment verification ahead of the contractual due date, with a funded backup remittance procedure that does not depend on buyer autopay succeeding.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Days 15–21: Underwrite the Buyer and Rehearse the Money Movement",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Week three connects a verified acquisition to a genuinely "
-                    "underwritten buyer, not merely someone holding a down payment. "
-                    "Route every owner-occupant wrap buyer through the licensed RMLO "
-                    "under this operating policy. Counsel and the RMLO determine "
-                    "the transaction's actual coverage under the SAFE Act, 12 U.S.C. "
-                    "§5103, Regulation Z's loan-originator provisions, and the "
-                    "ability-to-repay requirements of 12 CFR §1026.43. Seller-financer "
-                    "exclusions and exemptions have conditions; one exclusion does "
-                    "not erase other federal or state duties. Collect income, "
-                    "employment, debts, credit history, proposed housing obligations, "
-                    "and assets using the RMLO's secure process. Obtain consumer "
-                    "reports only with a permissible purpose and appropriate "
-                    "authorization under the Fair Credit Reporting Act. The RMLO "
-                    "documents the applicable repayment analysis and required "
-                    "disclosures; a large down payment is not a substitute "
-                    "for repayment capacity. Establish pricing and qualification "
-                    "criteria before evaluating applicants, apply them consistently, "
-                    "and route required adverse-action communications to the "
-                    "responsible creditor. Do not advertise a promised approval "
-                    "or steer a buyer toward an unaffordable balloon. If no "
-                    "suitable buyer exists by Day 21, keep the acquisition "
-                    "conditional where legally available or stop it. The "
-                    "two-to-six-month first-deal window makes patience an operating "
-                    "requirement, not evidence that the sprint failed."
-                ),
-                (
-                    "P08 must separate principal movement, cash spread, and recognized "
-                    "operator revenue. Consider an illustrative $180,000 underlying "
-                    "balance at 3.5% with 300 months remaining and a $200,000 "
-                    "wrap balance at 7.5% amortized over 360 months. Scheduled "
-                    "principal-and-interest payments are approximately $901 and "
-                    "$1,398 monthly, respectively. The roughly $497 payment "
-                    "difference is not all interest income: first-month wrap "
-                    "interest is $1,250 and underlying interest is $525, while "
-                    "the two loans amortize principal at different speeds. "
-                    "Maintain separate amortization schedules and classify "
-                    "principal collections correctly. A $35 servicing fee "
-                    "reduces payment cash spread to roughly $462 before "
-                    "other obligations, reserves, and taxes; actual timing "
-                    "and contractual allocations can change that result. "
-                    "The canonical annual revenue basis includes net "
-                    "upfront option or down-payment spreads and retained "
-                    "wrap interest margin, excluding home face value and "
-                    "pass-through debt service. A buyer down payment is "
-                    "not automatically current-period income. Have the "
-                    "accountant assess sale, financing, refundable-deposit, "
-                    "and principal components, including principal-agent "
-                    "presentation where ASC 606 applies and the relevant "
-                    "receivable accounting. Never multiply a servicing "
-                    "retained-share assumption into an already net spread "
-                    "without reconciling the underlying ledger. Cash "
-                    "available for distributions must also respect reserves "
-                    "and contractual restrictions."
-                ),
-                (
-                    "P09 and P10 require a settlement-to-servicing rehearsal "
-                    "before an actual closing. Counsel and the settlement "
-                    "agent assemble the acquisition instruments, wrap note, "
-                    "security instrument, disclosures, applicable notices, "
-                    "escrow instructions, insurance evidence, and recording "
-                    "sequence. The servicer maps incoming buyer funds "
-                    "to underlying payments, escrow obligations, fees, "
-                    "principal, retained interest, and any suspense balance. "
-                    "Verify underlying lender acceptance and payment "
-                    "posting through authorized channels; a servicer's "
-                    "outgoing transaction reference alone does not prove "
-                    "the mortgage was credited. Test a normal payment, "
-                    "a returned ACH debit, a partial payment, and a "
-                    "late underlying remittance using synthetic data "
-                    "rather than live consumer funds. Specify who "
-                    "advances a shortfall, where the advance originates, "
-                    "and how it is replenished. Set a one-business-day "
-                    "internal exception escalation target and a "
-                    "five-business-day month-end reconciliation target, "
-                    "without replacing statutory deadlines with these "
-                    "internal goals. Autopay does not transfer "
-                    "accountability away from the operator. P11 starts "
-                    "before closing by defining the reserve ledger, "
-                    "delinquency contacts, and counsel-led enforcement "
-                    "path. Never use lock changes, utility interruption, "
-                    "or informal repossession as substitutes for "
-                    "the applicable foreclosure or possession process. "
-                    "End the week with a reproducible payment waterfall "
-                    "and explicit ownership of every failure condition."
-                ),
-            ],
-            "table": {
-                "caption": "Week Three: RMLO Underwriting, Revenue Classification, and Servicing Tests",
-                "headers": [
-                    "Day and accountable pod owner",
-                    "Required operator work and mapped plays",
-                    "Evidence retained in the project file",
-                    "Measurable condition before advancing the file",
-                ],
-                "rows": [
-                    [
-                        "Day 15: RMLO establishes the buyer underwriting file",
-                        "P07 collects authorized financial records through secure channels",
-                        "Application checklist records income, obligations, assets, and occupancy",
-                        "Every submitted applicant follows the same documented criteria",
-                    ],
-                    [
-                        "Day 16: RMLO documents applicable repayment capacity analysis",
-                        "P07 evaluates proposed payments against verified borrower resources",
-                        "Written underwriting record identifies conditions and required disclosures",
-                        "No buyer progresses solely because cash is available",
-                    ],
-                    [
-                        "Day 17: operator reconciles wrap pricing and classifications",
-                        "P08 separates interest margin from recovered loan principal",
-                        "Dual amortization schedules support cash and revenue reconciliations",
-                        "Principal collections never inflate recognized operator revenue totals",
-                    ],
-                    [
-                        "Day 18: counsel reviews settlement documents and timing",
-                        "P09 resolves transfer notices and wrap disclosure dependencies",
-                        "Document calendar includes applicable delivery and waiting periods",
-                        "Settlement cannot precede completion of applicable statutory periods",
-                    ],
-                    [
-                        "Day 19: servicer configures the proposed payment waterfall",
-                        "P10 assigns underlying remittances, escrow, fees, and suspense",
-                        "Test ledger identifies every destination and funding source",
-                        "Every simulated receipt reconciles to its assigned allocation",
-                    ],
-                    [
-                        "Day 20: servicer and operator test payment exceptions",
-                        "P10 and P11 rehearse returns, shortages, and delays",
-                        "Four synthetic cases preserve alerts and resolution evidence",
-                        "All four cases have accountable responders and resolutions",
-                    ],
-                    [
-                        "Day 21: operator reviews readiness without forcing settlement",
-                        "P09 through P11 confirm funding and exception ownership",
-                        "Readiness packet joins underwriting, documents, reserves, and tests",
-                        "Zero material unresolved defects precede any closing authorization",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the reviewed transaction inputs",
-                    "action": "Version the debt statement, buyer terms, title findings, and settlement funding worksheet.",
-                    "detail": "Any change to balance, rate, occupancy, ownership, or closing date triggers review of the affected underwriting and disclosure calculations.",
-                },
-                {
-                    "step": 2,
-                    "title": "Reconcile separate cash and revenue schedules",
-                    "action": "Match both amortization schedules to the settlement ledger and the proposed servicing waterfall.",
-                    "detail": "Show principal, interest, escrow, servicing charges, refundable funds, and operator revenue separately; resolve every difference before funds move.",
-                },
-                {
-                    "step": 3,
-                    "title": "Prove the underlying payment control",
-                    "action": "Run synthetic normal, returned, partial, and delayed-payment cases through the servicer's process.",
-                    "detail": "Record the alert owner, backup funding source, posting-verification method, and replenishment instruction for each case.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release only an evidenced closing packet",
-                    "action": "Obtain documented counsel, RMLO, servicer, and operator signoffs within their assigned responsibilities.",
-                    "detail": "The operator confirms available liquidity and completed conditions; unresolved statutory timing or material file defects stop settlement.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Days 22–30: Reconcile the Scorecard and Apply Day 30/60/90 Decisions",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use the final nine days to audit the machine, not "
-                    "manufacture month-one earnings. Reconcile every invoice and "
-                    "commitment against the $6,000 launch ceiling, review each "
-                    "active file with its specialist, and preserve written "
-                    "reasons for rejection. The annual Formula v2.0 cases "
-                    "are fixed reference points: Conservative revenue of "
-                    "$100,000 less $72,000 of total expenses produces "
-                    "$28,000 owner net profit at 28%; Base revenue "
-                    "of $475,000 less $285,000 produces $190,000 at "
-                    "40.0%; Scaled revenue of $850,000 less $408,000 "
-                    "produces $442,000 at 52%. Conservative and Base "
-                    "use one full-time operator plus three contractors; "
-                    "Scaled uses two full-time staff plus four "
-                    "contractors. These reconciliations do not imply "
-                    "that all expenses are monthly overhead or "
-                    "that this chapter has recalculated the scorecard "
-                    "engine. Acquisition-related costs, specialist fees, "
-                    "and other modeled operating costs must remain "
-                    "consistent with the canonical annual totals. "
-                    "For dashboard comparison only, annual revenue "
-                    "divided by twelve equals approximately $8,333, "
-                    "$39,583, and $70,833; upfront spreads make "
-                    "actual monthly receipts uneven. Do not extrapolate "
-                    "one down payment into recurring revenue. Track "
-                    "recognized upfront spreads and earned retained "
-                    "interest separately, then reconcile their combined "
-                    "annual amount to the selected case. An unclosed "
-                    "pipeline contributes zero booked revenue."
-                ),
-                (
-                    "Define the decision vocabulary before viewing results. Kill "
-                    "means stop the affected deal, tactic, or launch "
-                    "commitments; it does not abandon existing payment "
-                    "and consumer obligations. Fix means maintain or "
-                    "reduce spending while assigning one measurable "
-                    "correction with a seven-day owner and deadline. "
-                    "Scale means authorize a bounded capacity increase "
-                    "after evidence passes, not promise the Scaled "
-                    "annual outcome. At Day 30, require forty "
-                    "screened properties, twenty lawful first contacts, "
-                    "eight substantive conversations, four authorized "
-                    "seller packets, two fully verified acquisition "
-                    "files, and one file meeting pricing and "
-                    "liquidity requirements. With those counts and "
-                    "zero material unresolved defects, increase next "
-                    "month's contact budget by at most 25%, "
-                    "while preserving the five-file and three-buyer "
-                    "capacity limits. A closing is not required. "
-                    "At Day 60, require cumulative counts of "
-                    "eighty screened properties, forty first contacts, "
-                    "sixteen conversations, eight authorized packets, "
-                    "four verified files, and two economically "
-                    "qualified files. At Day 90, require "
-                    "120 screened properties, sixty first contacts, "
-                    "twenty-four conversations, twelve authorized "
-                    "packets, six verified files, and three "
-                    "economically qualified files. Measure conversion "
-                    "within dated cohorts; overlapping files cannot "
-                    "be counted twice. These thresholds are "
-                    "management assumptions to test locally, not "
-                    "published industry averages or substitutes "
-                    "for individual deal underwriting."
-                ),
-                (
-                    "Apply safety and liquidity failures before funnel counts. "
-                    "Any fabricated record, unresolved material origination "
-                    "defect, or unsupported acceleration plan kills "
-                    "the affected transaction immediately. Hitting the "
-                    "spending ceiling pauses additional commitments "
-                    "until existing obligations and a funded "
-                    "revision are reconciled. Fewer than four "
-                    "conversations from twenty contacts calls for "
-                    "a sourcing fix; zero economically qualified "
-                    "files after ten fully verified files "
-                    "kills that sourcing thesis unless a "
-                    "documented pricing change restores feasibility. "
-                    "At Day 60, capacity may increase "
-                    "only when all numeric milestones pass, "
-                    "the required reserves remain funded, and "
-                    "four servicing tests still pass. At "
-                    "Day 90, portfolio expansion additionally "
-                    "requires two consecutive fully reconciled "
-                    "monthly cycles on each existing serviced "
-                    "account, zero unresolved underlying-payment "
-                    "exceptions, and median operator handling "
-                    "time below three hours per verified "
-                    "acquisition file, excluding specialist labor. "
-                    "Without seasoned accounts, expand research "
-                    "only and keep acquisition limits unchanged. "
-                    "No closing by Day 90 prompts a "
-                    "bottleneck review, not automatic shutdown, "
-                    "because first-deal timing remains two "
-                    "to six months. Approve the six-person "
-                    "Scaled pod only after sustained workload "
-                    "exceeds 80% of measured capacity for "
-                    "four weeks and forward retained revenue "
-                    "supports its incremental cost. Growth "
-                    "must follow verified servicing performance, "
-                    "never compensate for absent payment evidence."
-                ),
-            ],
-            "table": {
-                "caption": "Week Four Deliverables and Quantitative Day 30/60/90 Decision Matrix",
-                "headers": [
-                    "Checkpoint and accountable review owner",
-                    "Required deliverable or measured evidence",
-                    "Kill or Fix condition and response",
-                    "Release or Scale condition and limit",
-                ],
-                "rows": [
-                    [
-                        "Day 22: operator reconciles all launch spending",
-                        "Ledger includes paid bills and committed cancellation charges",
-                        "Pause new commitments when the $6,000 ceiling binds",
-                        "Release only funded expenses within remaining approved capacity",
-                    ],
-                    [
-                        "Day 23: counsel audits every active acquisition file",
-                        "File memo resolves title, transfer, and notice dependencies",
-                        "Kill affected transactions containing uncurable material legal defects",
-                        "Advance only files with documented resolutions and timing",
-                    ],
-                    [
-                        "Day 24: RMLO audits owner-occupant buyer file completeness",
-                        "Underwriting evidence supports actual proposed repayment obligations consistently",
-                        "Fix missing documentation before communicating transaction readiness externally",
-                        "Release complete files with applicable underwriting conditions satisfied",
-                    ],
-                    [
-                        "Day 25: servicer repeats the exception testing sequence",
-                        "Four synthetic cases show complete posting and escalation",
-                        "Fix any missing alert or unfunded shortfall response",
-                        "Release onboarding only after four successful documented tests",
-                    ],
-                    [
-                        "Day 26: operator locks the transaction liquidity worksheet",
-                        "Six months stressed carry and enforcement allowance remain funded",
-                        "Kill the deal without a feasible acceleration response",
-                        "Release only with settlement funds separate from reserves",
-                    ],
-                    [
-                        "Day 27: operator reconciles revenue against principal movement",
-                        "Accountant-reviewed classifications distinguish earned spreads from pass-through funds",
-                        "Fix any ledger that counts home values as revenue",
-                        "Release dashboard totals only after cash-to-ledger differences resolve",
-                    ],
-                    [
-                        "Day 28: entire pod reviews measured handling capacity",
-                        "Time records show acquisition and buyer-file work separately",
-                        "Fix bottlenecks before adding files beyond current limits",
-                        "Keep five active acquisitions and three buyer files",
-                    ],
-                    [
-                        "Day 29: operator prepares the cohort decision packet",
-                        "Dated counts identify contacts, conversations, packets, and verified files",
-                        "Fix duplicate counts and unsupported stage changes immediately",
-                        "Release one reproducible dashboard with documented evidence links",
-                    ],
-                    [
-                        "Day 30: operator conducts the first formal review",
-                        "Record commitments, funnel milestones, defects, and correction owners",
-                        "Fix missed milestones with seven-day accountable corrective actions",
-                        "Apply the Day 30 threshold row before increasing spend",
-                    ],
-                    [
-                        "Day 30 decision: operator signs the initial cohort disposition",
-                        "Require 40 screened, 20 contacts, eight conversations, four packets, two verified, one qualified",
-                        "Kill defective deals; fix shortfalls without increasing current spending",
-                        "With all conditions met, raise contact budget at most 25%",
-                    ],
-                    [
-                        "Day 60 decision: pod reviews cumulative sourcing and controls",
-                        "Require 80 screened, 40 contacts, sixteen conversations, eight packets, four verified, two qualified",
-                        "Kill thesis at zero qualified among ten verified files; otherwise fix misses",
-                        "Permit at most 25% contact-budget growth with funded reserves and passing tests",
-                    ],
-                    [
-                        "Day 90 decision: operator reviews evidence before portfolio expansion",
-                        "Require 120 screened, 60 contacts, twenty-four conversations, twelve packets, six verified, three qualified",
-                        "Fix absent seasoning or workload failures; kill material transaction defects",
-                        "Expand active acquisition capacity by one only after two clean cycles and handling under three hours",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Scale the evidence chain before you scale the note count.",
-    "diagram_id": "diag-08",
-    "action_checklist": [
-        "Assign all eleven plays to the one-operator, three-contractor pod and enforce five active acquisition files plus three buyer underwriting files.",
-        "Fund the $6,000 first-month burn ceiling separately from settlement cash, six months of stressed carry, and the counsel-quoted enforcement allowance.",
-        "Complete forty screened property records, twenty lawful first contacts, eight conversations, four authorized packets, and two verified files by Day 30.",
-        "Obtain counsel-reviewed transfer analysis and licensed RMLO underwriting before advancing any owner-occupant wrap transaction toward settlement.",
-        "Pass four synthetic servicing cases and reconcile underlying-payment posting, escrow, fees, principal, and retained interest before onboarding live funds.",
-        "Apply the Day 30/60/90 decision matrix to dated cohorts, preserve correction owners, and reconcile annual economics to $28,000, $190,000, or $442,000 owner profit.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "12 U.S.C. §1701j-3 — Preemption of due-on-sale prohibitions",
-            "url": "https://www.law.cornell.edu/uscode/text/12/1701j-3",
-            "relevance": (
-                "Establishes the federal due-on-sale framework and specified protected "
-                "transfers; counsel must evaluate the actual acquisition rather than "
-                "assuming that subject-to or trust ownership prevents acceleration."
-            ),
-        },
-        {
-            "title": "12 U.S.C. §5103 — License or registration required",
-            "url": "https://www.law.cornell.edu/uscode/text/12/5103",
-            "relevance": (
-                "Supports the SAFE Act licensing and registration analysis for "
-                "individuals acting as residential mortgage loan originators."
-            ),
-        },
-        {
-            "title": "12 CFR §1026.43 — Minimum standards for transactions secured by a dwelling",
-            "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
-            "relevance": (
-                "Provides ability-to-repay requirements and scope provisions used by "
-                "counsel and the RMLO to determine and document applicable underwriting."
-            ),
-        },
-        {
-            "title": "12 CFR §1026.36 — Prohibited acts or practices and certain requirements for credit secured by a dwelling",
-            "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/36/",
-            "relevance": (
-                "Addresses loan-originator definitions, qualification requirements, "
-                "and conditional seller-financer exclusions relevant to wrap structuring."
-            ),
-        },
-        {
-            "title": "Texas Property Code §5.016 — Conveyance of Residential Property Encumbered by Lien",
-            "url": "https://statutes.capitol.texas.gov/Docs/PR/htm/PR.5.htm#5.016",
-            "relevance": (
-                "Requires analysis of applicable transfer notices, delivery timing, "
-                "and statutory exceptions when conveying encumbered residential property."
-            ),
-        },
-        {
-            "title": "Texas Finance Code Chapter 159 — Wrap Mortgage Loan Financing",
-            "url": "https://statutes.capitol.texas.gov/Docs/FI/htm/FI.159.htm",
-            "relevance": (
-                "Provides Texas wrap mortgage licensing, disclosure, borrower-rights, "
-                "and servicing requirements that must be mapped to the actual transaction."
-            ),
-        },
-        {
-            "title": "47 U.S.C. §227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Informs telephone and text outreach controls, including applicable "
-                "restrictions that must be assessed before contacting distressed sellers."
-            ),
-        },
-        {
-            "title": "15 U.S.C. §1681b — Permissible purposes of consumer reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681b",
-            "relevance": (
-                "Requires a permissible purpose for consumer-report access; buyer "
-                "credit information belongs in the authorized underwriting workflow."
-            ),
-        },
-        {
-            "title": "12 CFR §1002.9 — Notifications",
-            "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/9/",
-            "relevance": (
-                "Defines applicable credit-decision notification requirements, "
-                "including adverse-action duties assigned to the responsible creditor."
-            ),
-        },
-    ],
-}
+CHAPTER_12 = {'id': 'Q12',
+ 'chapter_id': 'Q12',
+ 'chapter_number': 12,
+ 'question_number': 12,
+ 'slug': 'note-exits-liquidity-partials-sales-funding-marketplaces',
+ 'question_prompt': 'How do I sell, partial out, fund, and trade notes, including notes I create from my '
+                    'own seller-financed or wrapped deals?',
+ 'kicker': 'Q12 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Note Exits and Liquidity: Partials, Sales, Funding, and Marketplaces',
+ 'subtitle': 'Selling partials, selling a note after one payment, pricing a note for sale, buying notes '
+             'with no money, five creative funding sources, hypothecation with local banks, turning a '
+             'rental into a note, Paperstac listings and trading, note arbitrage, and first-deal mistakes',
+ 'layout_template': 'action_worksheet_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Note holders exit through three doors: a full sale, a partial sale of the next '
+                      'block of payments, or borrowing against the paper. Fred and Tracy Rewey, Cal Ewing, '
+                      'and the Paperstac operators agree the partial is the sharpest lever. It lets a '
+                      'holder raise cash at 10-13% investor yields while keeping the tail, and the '
+                      'buy-full, sell-front-partial play can recover nearly all capital. Seasoning drives '
+                      'price: Moxxie buys after one payment, but 6-12 months moves offers and 24+ is '
+                      'stronger. Bank-like paper fetches 95-98% of principal versus 90%-70% for '
+                      'seller-finance notes. Marketplaces bundle listing, escrow, collateral audit, timed '
+                      'auctions, and an AI price predictor. Disagreements center on leverage: Justin '
+                      'Roberts hypothecates notes with local banks at about 80%, the JKP host doubts a 10x '
+                      'leverage claim, and Paperstac calls partials on wraps potentially sticky.',
+ 'key_metrics': [{'label': 'Rewey partial buyer yield',
+                  'metric': 'Rewey partial buyer yield',
+                  'value': '13.3% on the next 96 of 176 payments bought for $47,615',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Partial carved from an $86,900 note at 9.5%; the seller is owed $47,249 when '
+                             'the note reassigns.',
+                  'source': 'Paperstac ([UwiEQOh84Y4 @ 00:17:14])'},
+                 {'label': 'Cal Ewing partial investor IRR',
+                  'metric': 'Cal Ewing partial investor IRR',
+                  'value': '10.48%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'An IRA investor paid 55,000 for the next 120 payments on a Laredo-area '
+                             'mobile-home note while Cal kept the tail, valued at 95,402 at full term.',
+                  'source': 'Cal Ewing ([LCY-eZOK6gw @ 00:09:51])'},
+                 {'label': 'Seller-finance note sale price vs bank-like paper',
+                  'metric': 'Seller-finance note sale price vs bank-like paper',
+                  'value': '90%-70% of principal vs 95-98% for bank-like loans',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Pricing spread between owner-financed notes and loans that resemble a '
+                             'traditional bank mortgage.',
+                  'source': 'Texas Capital Finance ([w4PRGbUrreA @ 00:08:46])'},
+                 {'label': 'Paperstac price predictor accuracy',
+                  'metric': 'Paperstac price predictor accuracy',
+                  'value': 'Within about 2% on sales of $30K or more',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Model retrained monthly on about 40 data points and used internally for '
+                             '2.5-3 years before launch.',
+                  'source': 'Paperstac ([zhg1k-uMJM0 @ 00:15:26])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Across the Paperstac, Rewey, and Cal Ewing camps, the partial is the '
+                              'default liquidity lever for a performing note. Instead of dumping the whole '
+                              'asset, the holder sells a defined block of upcoming payments and keeps the '
+                              'tail. Paperstac frames it as buying, say, 100 of 360 payments. The seller '
+                              'steps back in if the borrower defaults, and only certain servicers are set '
+                              'up to handle the split [XRyBErGyKgQ @ 00:06:24]. Fred and Tracy Rewey run '
+                              'the classic version on an $86,900 note at 9.5%. An investor buys the next '
+                              '96 of 176 payments for $47,615 at a 13.3% yield, and the seller is owed '
+                              '$47,249 when the note reassigns. Partial size is dictated by how much cash '
+                              'the seller actually needs [UwiEQOh84Y4 @ 00:17:14]. Cal Ewing used the same '
+                              'move on a Laredo-area mobile-home note when a private lender needed repair '
+                              'cash. Cal sold the next 120 payments to an IRA investor for 55,000 while '
+                              'keeping a 130-plus payment tail valued at 95,402 at full term [LCY-eZOK6gw '
+                              '@ 00:09:12]. Texas Capital Finance lists full and partial sales as the two '
+                              'exit types and says partials often command a higher price. That gives '
+                              'holders a reason to price both before letting go of the whole income stream '
+                              '[w4PRGbUrreA @ 00:02:30].',
+                              'The exit price is set long before the sale, at origination and through '
+                              "seasoning. Moxxie's senior note analyst Dawn says a note can technically "
+                              'sell the day after it is created, and Moxxie will buy once the first '
+                              "payment lands. Even so, six to 12 months of consistent payments 'can make a "
+                              "real difference' and 24 months or more is stronger. With zero history, "
+                              'pricing has to lean on borrower credit, down payment and structure alone '
+                              "[usXnfzN3Wmc @ 00:01:02]. Cherif Medawar's buy-side checklist mirrors that: "
+                              '6 months to a year of on-time payments, a real cash down payment, credit '
+                              "actually run, and collateral comps. Medawar's reason is that borrowers with "
+                              'no skin in the game walk away [bhfdMe7Dpwk @ 00:06:55]. Texas Capital '
+                              'Finance puts the spread in numbers. Bank-like loans sell for 95-98% of '
+                              'principal while seller-finance notes sell between 90% and 70%, and the '
+                              'closer the paper resembles a traditional bank mortgage, the higher the '
+                              'price [w4PRGbUrreA @ 00:08:46]. Sierra Davis adds the hard floor on '
+                              "paperwork: 'If the paperwork is not good, you can't forclose on it.' A "
+                              'broken chain of assignment or a missing promissory note kills value no '
+                              'matter how clean the pay history looks [XsNZ5SQXdCI @ 00:16:34].',
+                              'On the full-sale side, the consensus venue is the online marketplace that '
+                              'bundles listing with closing. Rick Allen and Brett Berkkey of Paperstac, on '
+                              "Patrick Franz's show, describe the platform as 'MLS plus the title "
+                              "company.' Some deals sold 'in the first hour' and a pool of Colorado land "
+                              'notes went the same day, while listings that sit 30 days without an update '
+                              'expire [y6ljJ3T0eNg @ 00:33:07]. The Paperstac listing walkthrough tells '
+                              'sellers to pre-load files, a recent BPO and pay history, because buyers '
+                              'will ask for them anyway. Sellers then pick flexible, firm or make-an-offer '
+                              'pricing and write a description that tells the story [chL0454K1Zs @ '
+                              "00:01:09]. The relaunch team warns that mispriced assets 'go to die,' and "
+                              'the platform now runs a price predictor retrained monthly on about 40 data '
+                              "points [zhg1k-uMJM0 @ 00:16:15]. Paperstac's first-deal mistakes episode "
+                              "drives home the back-office rule that protects every future exit: 'Record "
+                              "your assignments and record your deeds.' Unrecorded paper knocks buyers out "
+                              'of the chain of title. In their examples, one buyer surfaced three years '
+                              'later and tax notices arrived 18 months after a sale [MkofIE1Xq0o @ '
+                              '00:14:43].'],
+               'table': {'caption': 'Where the note-exit practitioners line up',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Partials are the go-to liquidity lever for performing notes',
+                                   'Investor buys the next 96 of 176 payments for $47,615 at 13.3% yield',
+                                   'Seller raises cash and still holds the reassigned back-end payments',
+                                   'Paperstac ([UwiEQOh84Y4 @ 00:17:14])'],
+                                  ["Partial size is driven by the seller's actual cash need",
+                                   'The Reweys set the number of payments sold by what the seller needs',
+                                   'Size the payment block to the lump sum the holder actually needs',
+                                   'Paperstac ([UwiEQOh84Y4 @ 00:18:02])'],
+                                  ['Experienced sellers act as a motivated default backstop for buyers',
+                                   'Partial buyers get an already-performing loan and a seller who steps '
+                                   'in on default',
+                                   'Partials suit buyers with limited capital who want an active backstop',
+                                   'Paperstac ([XRyBErGyKgQ @ 00:07:37])'],
+                                  ['Seasoning materially lifts the offer price on a note sale',
+                                   'Moxxie buys after the first payment; 6-12 months helps and 24+ months '
+                                   'is stronger',
+                                   "Clean on-time history lowers perceived risk and raises the buyer's "
+                                   'offer',
+                                   'Moxxie Education - Seller Financing & Notes ([usXnfzN3Wmc @ '
+                                   '00:01:02])'],
+                                  ['Bank-like paper commands the highest exit price in the market',
+                                   'Bank-like loans sell at 95-98% of principal, seller-finance notes at '
+                                   '90%-70%',
+                                   'The closer the note resembles a bank mortgage, the higher the price '
+                                   'paid',
+                                   'Texas Capital Finance ([w4PRGbUrreA @ 00:08:46])'],
+                                  ['Paperwork must support a foreclosure or the note loses value',
+                                   'Promissory note present, unbroken chain of assignment, and a '
+                                   'business-use affidavit are required',
+                                   'Broken paperwork means no foreclosure remedy, and buyers price that in',
+                                   'Agent2Investor Podcast ([XsNZ5SQXdCI @ 00:16:53])'],
+                                  ['Record every assignment and deed before you try to resell',
+                                   'Unrecorded paper drops buyers out of the chain of title years after '
+                                   'closing',
+                                   'Recording protects the next exit and avoids chasing wound-down fund '
+                                   'sellers',
+                                   'Paperstac ([MkofIE1Xq0o @ 00:14:54])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The most-repeated street play is to buy the whole note, sell a front '
+                              'partial that recovers the cost, and keep the tail for close to nothing. The '
+                              "Reweys' Dallas deal is the template. They bought a $54,000 note at 11.5% "
+                              'for $47,500, then sold the next 279 payments for $51,000 to an investor '
+                              'earning 11.7%. They netted $3,500 at closing and kept 79 payments, which '
+                              'paid out when the loan cleared after 18 years [UwiEQOh84Y4 @ 00:28:05]. On '
+                              'their base deal, selling 144 of 176 payments for the full $68,430 purchase '
+                              "price left 32 payments of about $800 with an 'infinite' return. Paperstac's "
+                              'funding episode runs the non-performing version: buy at $35,000 on a '
+                              '$55,000-60,000 UPB, reperform it, and sell a partial for $34,000. The buyer '
+                              "then sits on a $1,000 basis plus the tail. In Eddie Speed's '$100 model,' "
+                              "$100 stays in as the IRS 'substantial investment' [_BvWeumu2WI @ 00:02:01]. "
+                              "Inside a self-directed IRA the same move was described as 'bought it for "
+                              "30... sold it for 30 100,' keeping $15,000-16,000 tax-free. Josh Andrews "
+                              'pre-sells partials before buying [XRyBErGyKgQ @ 00:13:59].',
+                              'The paperwork has to spell out what happens when the stream breaks early. '
+                              "The Reweys' rule is that on payoff each party receives the present value of "
+                              'its share. That can be calculated either on yield, which they favor when '
+                              'selling, or as present value at the note rate, and servicing stays where it '
+                              'already is [UwiEQOh84Y4 @ 00:20:16]. Cal Ewing modeled three 36-month '
+                              'outcomes on the Laredo partial. On payoff, the investor has collected '
+                              '26,217 and takes 41,900 more, for 68,000 total and a 13,017 profit, while '
+                              'Cal gets about 20,600 [LCY-eZOK6gw @ 00:12:50]. At a Texas non-judicial '
+                              'auction, a 105,000 bid less a 5,000 attorney fee against 62,500 owed '
+                              'produces the same 41,900 and 20,600 split, with the surplus going to the '
+                              "borrower. In an REO, the investor's interest converts to a present-value "
+                              'claim. ARV of 130,000 less 20,000 in costs nets 110,000. The investor takes '
+                              '41,900 plus 10,215, described as 15% of the net, for 52,115, and Cal keeps '
+                              '57,885 [LCY-eZOK6gw @ 00:19:21]. Paperstac notes that FCI is among the '
+                              'servicers that handle partials, and who pays servicing on default depends '
+                              'on the agreement [XRyBErGyKgQ @ 00:11:22].',
+                              'When the holder wants cash without giving up ownership at all, Justin '
+                              'Roberts borrows against the paper instead. Roberts got about $80,000 '
+                              'against a roughly $100,000 note, plus a portfolio loan on 24 notes for '
+                              "about $2 million priced 'a little bit under prime.' Roberts also warns not "
+                              "to bank on 80% from day one [b-4NVMQ1GZ8 @ 00:20:09]. Paperstac's wrap play "
+                              'turns a rental into sellable paper. A property bought in 2015, owing '
+                              '$80,000 and worth $230,000-240,000, sells at $240,000 with $30,000 down on '
+                              'a $210,000 note at 8.5-9% over 30 years. After six months of seasoning the '
+                              'note sells for $180,000-190,000, and Paperstac pays off the $80,000 '
+                              'underlying lien before releasing funds [5bOm5hdSRXc @ 00:08:58]. On the '
+                              'closing side, 88-90% of Paperstac buyers use escrow plus collateral audit '
+                              'and sign a disbursement agreement only after reviewing the audit. The '
+                              'platform pays for FedEx two-day shipping so files land in 3-5 days, instead '
+                              'of a buyer wiring $50,000 and waiting 30 days [y6ljJ3T0eNg @ 00:43:47]. The '
+                              'relaunched site adds timed auctions of 1 to 30 days. Winning means being '
+                              "'awarded' the asset, followed by a 14-day due diligence window [zhg1k-uMJM0 "
+                              '@ 00:04:54].'],
+               'table': {'caption': 'Exit mechanics with the exact numbers practitioners stated',
+                         'headers': ['Mechanic',
+                                     'Exact Numbers Stated',
+                                     'Execution Detail',
+                                     'Expert Source'],
+                         'rows': [['Buy the full note, then sell a front partial (Dallas deal)',
+                                   '$54,000 note at 11.5% bought for $47,500; next 279 payments sold for '
+                                   '$51,000',
+                                   'Investor earns 11.7%; the Reweys net $3,500 and keep 79 tail payments',
+                                   'Paperstac ([UwiEQOh84Y4 @ 00:28:05])'],
+                                  ['Reperform a non-performer, then sell a partial',
+                                   'Bought at $35,000 on $55,000-60,000 UPB; partial sold for $34,000',
+                                   'Keep a $1,000 basis plus the tail; the $100 model leaves $100 in',
+                                   'Paperstac ([_BvWeumu2WI @ 00:02:01])'],
+                                  ['Partial sold to take out a private lender',
+                                   '120 payments sold for 55,000; investor IRR of 10.48% with 32,291 '
+                                   'profit',
+                                   'Tail worth 95,402 at full term stays with Cal Ewing as owner',
+                                   'Cal Ewing ([LCY-eZOK6gw @ 00:09:51])'],
+                                  ['Hypothecating notes with small local banks',
+                                   'About $80,000 on a $100,000 note; 24 notes collateralized for about '
+                                   '$2M',
+                                   'Portfolio loan priced a little bit under prime, backed by personal '
+                                   'guarantees',
+                                   'Note Investing & Seller Financing - JKP Holdings ([b-4NVMQ1GZ8 @ '
+                                   '00:20:09])'],
+                                  ['Converting a mortgaged rental into a wrap note',
+                                   '$210,000 note at 8.5-9%, seasoned 6 months, sold for $180,000-190,000',
+                                   'Paperstac pays off the $80,000 underlying lien, then releases the '
+                                   "seller's funds",
+                                   'Paperstac ([5bOm5hdSRXc @ 00:08:58])'],
+                                  ['Marketplace escrow plus collateral audit at closing',
+                                   '88-90% of buyers use escrow and audit; files arrive in 3-5 days',
+                                   'Buyer signs the disbursement agreement only after reviewing the audit '
+                                   'results',
+                                   'Patrick Franz ([y6ljJ3T0eNg @ 00:43:47])'],
+                                  ['Timed auctions and the AI price predictor',
+                                   'Auctions run 1 to 30 days; predictor within about 2% on $30K+ sales',
+                                   'Auction winner is awarded the asset, then gets a 14-day due diligence '
+                                   'period',
+                                   'Paperstac ([zhg1k-uMJM0 @ 00:15:26])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Partial Structuring Edges From the Desk',
+                           'body': 'Small structuring moves the practitioners use to squeeze yield, '
+                                   'protect the tail, and time the market.',
+                           'items': ['Re-amortize a restarted loan at 360 months so payments are '
+                                     'front-loaded with interest, and track three balances: the partial '
+                                     "buyer's balance, the reassignment/entitlement balance, and current "
+                                     'UPB [Paperstac — XRyBErGyKgQ @ 00:17:35].',
+                                     'Size the partial to your cash and yield target: on a $400 payment, '
+                                     '12 months equals $4,800, so paying $4,000 earns about 20% while '
+                                     'paying $5,000 loses money [Paperstac — XRyBErGyKgQ @ 00:09:50].',
+                                     'Split-payment partials only work on notes paying more than '
+                                     '$1,000/mo, and the Reweys route them through an attorney so the '
+                                     "structure doesn't create a security [Paperstac — UwiEQOh84Y4 @ "
+                                     '00:32:03].',
+                                     'Hunt auction inventory late in the year: the relaunch team says the '
+                                     "best deals come from 'Thanksgiving on' [Paperstac — zhg1k-uMJM0 @ "
+                                     '00:04:26].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Assemble the sale package',
+                              'action': 'Gather the full document stack before requesting quotes.',
+                              'detail': 'Pull the promissory note, deed of trust, settlement statement, '
+                                        'insurance and tax records, and the borrower credit report, then '
+                                        'add payment history and collateral details. A borrower score of '
+                                        '650+ gets the highest price [Texas Capital Finance — w4PRGbUrreA '
+                                        '@ 00:04:25].'},
+                             {'step': 2,
+                              'title': 'Get vetted and list on the marketplace',
+                              'action': 'Register as a seller, pass ownership vetting, and load the asset.',
+                              'detail': "Click 'become a seller,' pass the vetting that confirms you hold "
+                                        'the note, then list by data tape, servicer email feed, or manual '
+                                        'entry with public/private files and pay history [Patrick Franz — '
+                                        'y6ljJ3T0eNg @ 00:32:11]. Choose flexible, firm, or make-an-offer '
+                                        'pricing [Paperstac — chL0454K1Zs @ 00:01:45].'},
+                             {'step': 3,
+                              'title': 'Structure the partial if you are keeping the tail',
+                              'action': 'Set the payment block by cash need and price it on yield.',
+                              'detail': "Let the seller's cash need set how many payments to sell, price "
+                                        'on yield when selling, and fix the reassignment balance plus '
+                                        'payoff treatment, where each party gets the present value of its '
+                                        'share. Leave servicing where it is [Paperstac — UwiEQOh84Y4 @ '
+                                        '00:18:02].'},
+                             {'step': 4,
+                              'title': 'Close through escrow and audit, then record',
+                              'action': 'Fund escrow, clear the collateral audit, and record the '
+                                        'assignment.',
+                              'detail': 'Have the buyer sign the disbursement agreement after reviewing '
+                                        'the collateral audit [Patrick Franz — y6ljJ3T0eNg @ 00:44:17], '
+                                        'then record assignments and deeds so neither side falls out of '
+                                        'the chain of title [Paperstac — MkofIE1Xq0o @ 00:14:43].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Partials split the room on who should sit on which side of the trade. Fred '
+                              'and Tracy Rewey treat buy-full, sell-partial as the cleanest exit. They '
+                              'sell 144 of 176 payments for the same $68,430 paid for the whole note, and '
+                              "the remaining 32 payments of roughly $800 carry an 'infinite' return. Their "
+                              'Dallas deal, bought at $47,500, sold the next 279 payments for $51,000, '
+                              'netting $3,500 while keeping 79 payments [UwiEQOh84Y4 @ 00:23:31]. Cal '
+                              'Ewing came at partials from the opposite direction, as a reluctant '
+                              "first-timer. Texas is Cal's favorite state and Cal did not want to sell, "
+                              'but the private lender on the deal needed repair cash. So an IRA investor '
+                              'paid 55,000 for the next 120 payments at a 10.48% IRR, while Cal kept a '
+                              'tail of 130-plus payments worth 95,402 at full term [LCY-eZOK6gw @ '
+                              '00:09:12]. Buy-side yield expectations diverge hard. The Reweys priced '
+                              "their partial at 13.3%. Paperstac's hosts pitch whole-loan yields of 12 or "
+                              "13 percent becoming '30 35' through partial structuring, and call the 10 to "
+                              '20 percent buyers target expensive money for the seller [XRyBErGyKgQ @ '
+                              "00:09:02]. The Paperstac guests on Patrick Franz's show quote partial "
+                              "purchases at '30 40%' yields [y6ljJ3T0eNg @ 00:13:08]. A seller reading "
+                              'those numbers is looking at what buyers think the lump sum is worth to '
+                              'them.',
+                              'Pricing method is the second fault line. The Reweys run partials two ways: '
+                              'on yield, which they favor when selling, or at present value using the note '
+                              'rate. On any payoff, each party collects the present value of its share '
+                              '[UwiEQOh84Y4 @ 00:21:17]. Sierra Davis prices off yield and LTV together: '
+                              '12% is the target, 13% is good, and nothing goes under a 10% floor. A 70% '
+                              'LTV cap turns roughly $85,000 to $86,000 owed on a $120,000 sale into a '
+                              '$75,000 offer at 11% [XsNZ5SQXdCI @ 00:41:16]. The JKP Holdings hosts push '
+                              'back on that mindset. They warn against pricing performing paper on yield '
+                              'alone and against assuming it keeps performing, and they dismiss '
+                              "percent-of-UPB pricing as 'an old wise sale' [b-4NVMQ1GZ8 @ 00:05:05]. "
+                              "Texas Capital Finance frames price from the seller's chair instead: the "
+                              'closer a note resembles a traditional bank mortgage, the higher the price. '
+                              'Bank-like paper fetches 95 to 98% of principal, while typical '
+                              'seller-finance notes land between 90% and 70% [w4PRGbUrreA @ 00:08:46]. '
+                              'These camps write very different checks on identical paper. Whoever sells a '
+                              'partial or a whole note has to know which lens the buyer uses: yield, LTV, '
+                              'or how closely the file looks like bank paper.',
+                              "Leverage is where the playbooks split widest. JKP's hosts draw the line "
+                              'cleanly: a partial buyer owns the note for a period, while hypothecation '
+                              'lets the creator keep the note and borrow against it [b-4NVMQ1GZ8 @ '
+                              '00:08:47]. Justin Roberts went the bank route after five or six notes '
+                              'drained their cash. They pulled about $80,000 against a roughly $100,000 '
+                              'note, plus a 24-note portfolio loan near $2 million priced a little under '
+                              'prime. Yet the host openly doubted 10x leverage claims and pegged fund '
+                              'financing at 75 to 80% advances at 4 to 5% [b-4NVMQ1GZ8 @ 00:41:50]. Justin '
+                              'also refuses private money at 8 to 12%, even while lending at 12% '
+                              "themselves. Paperstac's funding playbook runs another way. It sells a "
+                              'partial off a reperformed non-performer, brings in patient rather than '
+                              'active JV capital, or raises a Reg D fund from accredited investors. Their '
+                              'Reg A+ raise left them doubting they would do another, because collecting '
+                              '$1,000 at a time is brutal next to $100,000 to $500,000 checks [_BvWeumu2WI '
+                              '@ 00:06:12]. Dave Van Horn takes yet another lane: borrowing 80% of about '
+                              '$2 million in home equity at 4% to lend $1.6 million at 14%. Van Horn stays '
+                              "mixed on HELOCs, though, because undisciplined borrowers 'go to vegas' "
+                              '[jFBvJbcMbFA @ 00:20:36].'],
+               'table': {'caption': 'Contrasting exit, pricing, and liquidity playbooks reported by note '
+                                    'practitioners',
+                         'headers': ['Decision Point',
+                                     'Playbook A',
+                                     'Contrasting Playbook',
+                                     'Expert Source'],
+                         'rows': [['Full sale versus partial sale as the exit route',
+                                   'Texas Capital Finance says partial sales often command a higher price '
+                                   'than full sales',
+                                   'The Reweys buy the full note, sell 144 of 176 payments, and keep an '
+                                   'infinite-return tail',
+                                   'Texas Capital Finance ([w4PRGbUrreA @ 00:02:30]); Paperstac '
+                                   '([UwiEQOh84Y4 @ 00:23:31])'],
+                                  ['How long to season a fresh note before selling',
+                                   'Moxxie buys once the first payment lands, and no law or rule requires '
+                                   'holding',
+                                   'Cherif Medawar wants six months to a year of on-time payments before '
+                                   'buying',
+                                   'Moxxie Education - Seller Financing & Notes ([usXnfzN3Wmc @ '
+                                   '00:00:19]); Cherif Medawar ([bhfdMe7Dpwk @ 00:06:55])'],
+                                  ['Which math sets the price of a partial',
+                                   'The Reweys calculate on yield, which they treat as best when selling a '
+                                   'partial',
+                                   'The alternative is present value at the note rate, and on payoff each '
+                                   'side takes its present value',
+                                   'Paperstac ([UwiEQOh84Y4 @ 00:21:17]); Paperstac ([UwiEQOh84Y4 @ '
+                                   '00:20:16])'],
+                                  ['Yield-driven bids versus skepticism about yield-only pricing',
+                                   'Sierra Davis targets 12% yield with a 10% floor and a 70% LTV cap',
+                                   'JKP hosts warn against pricing performing paper on yield alone or '
+                                   'assuming it keeps performing',
+                                   'Agent2Investor Podcast ([XsNZ5SQXdCI @ 00:43:31]); Note Investing & '
+                                   'Seller Financing - JKP Holdings ([b-4NVMQ1GZ8 @ 00:05:05])'],
+                                  ['Unlocking cash from notes already held',
+                                   'Sell a partial, so the buyer owns the payment stream for a set period',
+                                   'Hypothecate with local banks: about $80,000 against a $100,000 note, '
+                                   'though Justin warns not to bank on 80% on day one',
+                                   'Note Investing & Seller Financing - JKP Holdings ([b-4NVMQ1GZ8 @ '
+                                   '00:08:47]); Note Investing & Seller Financing - JKP Holdings '
+                                   '([b-4NVMQ1GZ8 @ 00:19:30])'],
+                                  ['Raising outside capital for note purchases',
+                                   'A Reg D fund with accredited investors, an attorney, and a track '
+                                   'record can reach millions',
+                                   'Reg A+ allows non-accredited money but is expensive and capped, and '
+                                   'Paperstac doubts it would repeat one',
+                                   'Paperstac ([_BvWeumu2WI @ 00:05:35]); Paperstac ([_BvWeumu2WI @ '
+                                   '00:06:12])'],
+                                  ['Selling partials on wraparound notes',
+                                   'Paperstac calls partials on wraps potentially sticky, so sellers use '
+                                   'the proceeds to pay off the underlying lien',
+                                   'Justin Roberts gets local banks to sign off on due-on-sale and wrap '
+                                   'through bank-approved structures',
+                                   'Paperstac ([5bOm5hdSRXc @ 00:07:29]); Note Investing & Seller '
+                                   'Financing - JKP Holdings ([b-4NVMQ1GZ8 @ 00:12:35])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Most note deals that blow up do it at the closing table, not in the payment '
+                              'stream. Paperstac watches hundreds of closings a quarter and keeps seeing '
+                              'the same buyer errors. Buyers bid without an indicative bid. They show up '
+                              'without funds ready, so sellers suspect the loan is being shopped and block '
+                              'them. Their self-directed IRA custodians take weeks while the assignment '
+                              'sits in draft, and one deal has run three months [MkofIE1Xq0o @ 00:07:23]. '
+                              'Vesting mistakes on FBO wording, address, or signer are worse. Changing the '
+                              'PSA after the collateral is with the auditor and money is in escrow '
+                              'unravels the whole closing, so screenshot the vesting before anything moves '
+                              '[MkofIE1Xq0o @ 00:12:07]. Lowballing every listing by $20,000 gets an '
+                              'account frozen, and going dark mid-deal invites the seller to resell. The '
+                              'quietest trap hits after funding. Unrecorded assignments and deeds have '
+                              'knocked buyers out of the chain of title, surfacing three years later or as '
+                              'tax notices 18 months after a sale. Fund wind-downs then make the original '
+                              'seller nearly impossible to track down [MkofIE1Xq0o @ 00:14:54]. '
+                              "Off-platform, the Paperstac guests on Patrick Franz's show describe buyers "
+                              'wiring $50,000 and waiting 30 days for a collateral file. On-platform, '
+                              'FedEx two-day shipping lands files in three to five days [y6ljJ3T0eNg @ '
+                              '00:45:12].',
+                              "Collateral and paper quality kill exits further downstream. Sierra Davis's "
+                              'first note, bought from a mentor after seven months of study, collapsed '
+                              'fast. The borrower paid three times, then the roughly $75,000 house turned '
+                              'up empty mid-renovation. Sierra cancelled the contract and resold the '
+                              'property as-is on seller financing [XsNZ5SQXdCI @ 00:32:08]. Their rule '
+                              'since then: if the paperwork is not good, you cannot foreclose. Justin '
+                              'Roberts found that sloppy origination also blocks leverage. Their first '
+                              'dozen notes carried no RMLO and a flat $20,000 down regardless of credit, '
+                              'and banks rejected them as below standard [b-4NVMQ1GZ8 @ 00:16:07]. Growth '
+                              "then slammed into one bank's legal lending limit, forcing a pivot and a "
+                              'revolving door of bank contacts. Cherif Medawar flags the borrower with no '
+                              'skin in the game, pointing to VA loans up to $2 million with no money down '
+                              'where borrowers simply walk. Cherif demands a real cash down payment plus '
+                              'six months to a year of on-time seasoning [bhfdMe7Dpwk @ 00:06:08]. '
+                              "Paperstac's wrap segment adds the structural warnings. Originate through an "
+                              'attorney or title company, watch the due-on-sale exposure because banks are '
+                              'wise to subject-to deals, and never turn a great portfolio of real estate '
+                              'into a crappy portfolio of notes [5bOm5hdSRXc @ 00:15:37].',
+                              'Run the downside math before signing any partial or note sale. Cal Ewing '
+                              'modeled three outcomes at month 36 on the 55,000 partial. A payoff gives '
+                              'the investor 68,000 total and a 13,017 profit, with roughly 20,600 to Cal. '
+                              'A Texas non-judicial auction at a 105,000 bid, less a 5,000 attorney fee, '
+                              'still pays the investor 41,900 and Cal 20,600, with the surplus going to '
+                              'the borrower. An REO sale at 130,000 ARV, less 20,000 in costs, pays the '
+                              'investor 52,115 and leaves Cal 57,885 [LCY-eZOK6gw @ 00:19:21]. Texas '
+                              "Capital Finance warns sellers that total future interest is not the note's "
+                              'value, because borrowers can prepay [w4PRGbUrreA @ 00:08:31]. Justin '
+                              'Roberts lived that: their first owner-financed flip paid off after two '
+                              'payments. Justin also reports that buyers with $20,000 to $30,000 down have '
+                              'dried up and four flips sit unsold. Desperate sellers are now cutting 4 to '
+                              "5% 30-year notes, the kind of low-rate paper Justin says won't win 80% bank "
+                              "advances [b-4NVMQ1GZ8 @ 00:47:49]. Paperstac's pricing team adds the "
+                              'marketplace verdict: mispriced assets go to die. Their monthly-retrained '
+                              'price predictor runs within about 2% on sales of $30,000 or more, so an '
+                              'inflated ask gets exposed fast [zhg1k-uMJM0 @ 00:16:15].'],
+               'table': {'caption': 'Firsthand failure modes and the economics checks practitioners now '
+                                    'run',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check Or Fix',
+                                     'Expert Source'],
+                         'rows': [['Bidding without funds actually ready to close',
+                                   'Sellers suspect the buyer is shopping the loan and block that buyer',
+                                   'Have cash or a fully approved retirement account in place before '
+                                   'placing any bid',
+                                   'Paperstac ([MkofIE1Xq0o @ 00:05:56])'],
+                                  ['Self-directed IRA custodian delays stalling the assignment',
+                                   'Custodians take weeks, the assignment stays in draft, and one deal ran '
+                                   'three months',
+                                   'Get a complete stamp of approval from the account manager before going '
+                                   'under contract',
+                                   'Paperstac ([MkofIE1Xq0o @ 00:10:25])'],
+                                  ['Unrecorded assignments and deeds after closing',
+                                   'Buyers fell out of the chain of title, discovered three years later or '
+                                   'via tax notices',
+                                   "Record assignments and deeds immediately, using Paperstac's recording "
+                                   'option when available',
+                                   'Paperstac ([MkofIE1Xq0o @ 00:14:54])'],
+                                  ['Weak origination blocking bank hypothecation',
+                                   'First dozen notes with no RMLO and flat $20,000 down were rejected by '
+                                   'banks',
+                                   'Originate to bank standards and keep polished financials, QuickBooks, '
+                                   'and DSCR ready',
+                                   'Note Investing & Seller Financing - JKP Holdings ([b-4NVMQ1GZ8 @ '
+                                   '00:16:07])'],
+                                  ['Borrower abandoning the property soon after purchase',
+                                   'Borrower paid three times and the house was found empty mid-renovation',
+                                   'Underwrite property, paperwork, and payer, then lean on mentors for '
+                                   'red flags',
+                                   'Agent2Investor Podcast ([XsNZ5SQXdCI @ 00:32:08])'],
+                                  ['Split-payment partials drifting into a securities problem',
+                                   'The Reweys only use split-payment partials on notes paying more than '
+                                   '$1,000 monthly',
+                                   'Bring in an attorney so the split structure does not create a security',
+                                   'Paperstac ([UwiEQOh84Y4 @ 00:32:03])'],
+                                  ['Wiring money before the collateral file arrives',
+                                   'Off-platform buyers wire $50,000 and wait 30 days for the collateral '
+                                   'file',
+                                   'Use escrow plus collateral audit and sign disbursement only after '
+                                   'reviewing the audit',
+                                   'Patrick Franz ([y6ljJ3T0eNg @ 00:45:12])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear These Four Gates Before Any Note Exit or Partial',
+                           'body': 'Every gate below comes from a deal that stalled, unraveled, or lost '
+                                   'money for a named practitioner. Clear all four before signing a '
+                                   'purchase, a partial sale, or a full note sale.',
+                           'items': ['Lock an indicative bid off verified rate, UPB, origination date, and '
+                                     'last pay date, and never lowball every listing by $20,000 [Paperstac '
+                                     '— MkofIE1Xq0o @ 00:04:12].',
+                                     'Confirm FBO wording, address, and signer on the vesting and '
+                                     'screenshot it before collateral goes to the auditor [Paperstac — '
+                                     'MkofIE1Xq0o @ 00:12:07].',
+                                     'On a wrap, run title, disclose the underlying lien, and use partial '
+                                     'proceeds to pay that lien off so the note moves to first position '
+                                     '[Paperstac — 5bOm5hdSRXc @ 00:07:29].',
+                                     'Model payoff, auction, and REO splits between the partial investor '
+                                     'and the tail holder before selling any partial [Cal Ewing — '
+                                     'LCY-eZOK6gw @ 00:12:50].']}}],
+ 'pull_quote': '"Record your assignments and record your deeds." — Paperstac (MkofIE1Xq0o @ 00:14:43).',
+ 'diagram_id': 'diag-08',
+ 'action_checklist': ['Build the listing with photos, a recent BPO value document, pay history, and '
+                      'private files, because buyers will ask for the files anyway [Paperstac — '
+                      'chL0454K1Zs @ 00:01:24].',
+                      'Choose flexible, firm, or make-an-offer pricing and write a subtitle and seller '
+                      "description that tell the note's story [Paperstac — chL0454K1Zs @ 00:01:45].",
+                      'Assemble the sale package: promissory note, deed of trust, settlement statement, '
+                      'insurance and tax records, and the borrower credit report, where a 650-plus score '
+                      'draws the highest price [Texas Capital Finance — w4PRGbUrreA @ 00:04:25].',
+                      "Size any partial to the seller's actual cash need and leave servicing where it "
+                      'already sits [Paperstac — UwiEQOh84Y4 @ 00:18:02].',
+                      'Before pitching local banks, prepare a roughly 20-page banker package of '
+                      "financials, quarterly reports, and a PFS, modeled on Stinson Bland's 'banker's "
+                      "bible' [Note Investing & Seller Financing - JKP Holdings — b-4NVMQ1GZ8 @ 00:21:08].",
+                      'Close through escrow plus a collateral audit, and sign the disbursement agreement '
+                      'only after reviewing that audit [Patrick Franz — y6ljJ3T0eNg @ 00:44:17].'],
+ 'statutory_citations': [{'title': 'Paperstac — Partial Mortgage Note Training with Fred & Tracy Rewey '
+                                   '[00:23:31]',
+                          'url': 'https://www.youtube.com/watch?v=UwiEQOh84Y4&t=1411s',
+                          'relevance': 'Primary practitioner testimony on buy-full, sell-partial '
+                                       'structuring, partial pricing math, and tail retention.'},
+                         {'title': 'Cal Ewing — How to Cash Out of a Performing Note Without Selling It – '
+                                   'Real Case Study on Selling Partials! [00:09:12]',
+                          'url': 'https://www.youtube.com/watch?v=LCY-eZOK6gw&t=552s',
+                          'relevance': 'Primary practitioner testimony on a first-time partial sale to an '
+                                       'IRA investor and payoff, auction, and REO split modeling.'},
+                         {'title': 'Note Investing & Seller Financing - JKP Holdings — Note Hypothecation '
+                                   'with Local Banks w/ Justin Roberts | Real Estate Notes Show Ep 134 '
+                                   '[00:08:47]',
+                          'url': 'https://www.youtube.com/watch?v=b-4NVMQ1GZ8&t=527s',
+                          'relevance': 'Primary practitioner testimony on hypothecation versus partials, '
+                                       'bank advance rates, and legal lending limits.'},
+                         {'title': 'Paperstac — 5 Mistakes That Will Wreck Your First Mortgage Note Deal '
+                                   '[00:14:54]',
+                          'url': 'https://www.youtube.com/watch?v=MkofIE1Xq0o&t=894s',
+                          'relevance': 'Primary practitioner testimony on closing failures, vesting '
+                                       'errors, IRA delays, and unrecorded assignments.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'jFBvJbcMbFA',
+                       'title': 'Mortgage Note Arbitrage & the Future of the Industry (Interview)',
+                       'channel': 'Paperstac',
+                       'author': 'Paperstac',
+                       'text': "A lot of times it's not what we pay it's how we pay stuff.",
+                       'tip': "A lot of times it's not what we pay it's how we pay stuff.",
+                       'timestamp': 1654,
+                       'timestamp_seconds': 1654,
+                       'timestamp_label': '[00:27:34]',
+                       'url': 'https://www.youtube.com/watch?v=jFBvJbcMbFA&t=1654s',
+                       'markdown': '[00:27:34](https://www.youtube.com/watch?v=jFBvJbcMbFA&t=1654s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UwiEQOh84Y4',
+                       'title': 'Partial Mortgage Note Training with Fred & Tracy Rewey',
+                       'channel': 'Paperstac',
+                       'author': 'Paperstac',
+                       'text': 'We bought the $54,000 note at 11.5% for $47,500, sold the next 279 '
+                               'payments for $51,000, netted $3,500, and kept 79 payments.',
+                       'tip': 'We bought the $54,000 note at 11.5% for $47,500, sold the next 279 payments '
+                              'for $51,000, netted $3,500, and kept 79 payments.',
+                       'timestamp': 1685,
+                       'timestamp_seconds': 1685,
+                       'timestamp_label': '[00:28:05]',
+                       'url': 'https://www.youtube.com/watch?v=UwiEQOh84Y4&t=1685s',
+                       'markdown': '[00:28:05](https://www.youtube.com/watch?v=UwiEQOh84Y4&t=1685s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LCY-eZOK6gw',
+                       'title': 'How to Cash Out of a Performing Note Without Selling It – Real Case Study '
+                                'on Selling Partials!',
+                       'channel': 'Cal Ewing',
+                       'author': 'Cal Ewing',
+                       'text': "This is the first time I've ever sold partials.",
+                       'tip': "This is the first time I've ever sold partials.",
+                       'timestamp': 499,
+                       'timestamp_seconds': 499,
+                       'timestamp_label': '[00:08:19]',
+                       'url': 'https://www.youtube.com/watch?v=LCY-eZOK6gw&t=499s',
+                       'markdown': '[00:08:19](https://www.youtube.com/watch?v=LCY-eZOK6gw&t=499s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w4PRGbUrreA',
+                       'title': 'How to Sell Your Mortgage Note for the Best Price | Step-by-Step Guide',
+                       'channel': 'Texas Capital Finance',
+                       'author': 'Texas Capital Finance',
+                       'text': 'The simplest way to explain price is the closer your mortgage resembles a '
+                               "traditional bank's mortgage the higher the price and vice versa.",
+                       'tip': 'The simplest way to explain price is the closer your mortgage resembles a '
+                              "traditional bank's mortgage the higher the price and vice versa.",
+                       'timestamp': 398,
+                       'timestamp_seconds': 398,
+                       'timestamp_label': '[00:06:38]',
+                       'url': 'https://www.youtube.com/watch?v=w4PRGbUrreA&t=398s',
+                       'markdown': '[00:06:38](https://www.youtube.com/watch?v=w4PRGbUrreA&t=398s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bhfdMe7Dpwk',
+                       'title': 'How To Buy Mortgage Notes With No Money? | @CherifMedawar',
+                       'channel': 'Cherif Medawar',
+                       'author': 'Cherif Medawar',
+                       'text': 'VA loans go up to $2 million with no money down, and borrowers with no '
+                               'skin in the game walk away, so require a real cash down payment.',
+                       'tip': 'VA loans go up to $2 million with no money down, and borrowers with no skin '
+                              'in the game walk away, so require a real cash down payment.',
+                       'timestamp': 368,
+                       'timestamp_seconds': 368,
+                       'timestamp_label': '[00:06:08]',
+                       'url': 'https://www.youtube.com/watch?v=bhfdMe7Dpwk&t=368s',
+                       'markdown': '[00:06:08](https://www.youtube.com/watch?v=bhfdMe7Dpwk&t=368s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XRyBErGyKgQ',
+                       'title': 'Mortgage Note Partials – The How & Why To Do It',
+                       'channel': 'Paperstac',
+                       'author': 'Paperstac',
+                       'text': 'Buy the loan, sell a partial at 12 to 14 percent to cover your cost, and '
+                               'keep the last eight or so years of the 18.',
+                       'tip': 'Buy the loan, sell a partial at 12 to 14 percent to cover your cost, and '
+                              'keep the last eight or so years of the 18.',
+                       'timestamp': 805,
+                       'timestamp_seconds': 805,
+                       'timestamp_label': '[00:13:25]',
+                       'url': 'https://www.youtube.com/watch?v=XRyBErGyKgQ&t=805s',
+                       'markdown': '[00:13:25](https://www.youtube.com/watch?v=XRyBErGyKgQ&t=805s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_BvWeumu2WI',
+                       'title': '5 Creative Ways to Fund Your Next Mortgage Note Purchase',
+                       'channel': 'Paperstac',
+                       'author': 'Paperstac',
+                       'text': "They might buy something for 35,000 that's worth, you know, the principal "
+                               "balance on it is 55 or 60,000, and they'll turn around and sell a partial "
+                               'on it for 34,000.',
+                       'tip': "They might buy something for 35,000 that's worth, you know, the principal "
+                              "balance on it is 55 or 60,000, and they'll turn around and sell a partial "
+                              'on it for 34,000.',
+                       'timestamp': 121,
+                       'timestamp_seconds': 121,
+                       'timestamp_label': '[00:02:01]',
+                       'url': 'https://www.youtube.com/watch?v=_BvWeumu2WI&t=121s',
+                       'markdown': '[00:02:01](https://www.youtube.com/watch?v=_BvWeumu2WI&t=121s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MkofIE1Xq0o',
+                       'title': '5 Mistakes That Will Wreck Your First Mortgage Note Deal',
+                       'channel': 'Paperstac',
+                       'author': 'Paperstac',
+                       'text': 'Record your assignments and record your deeds.',
+                       'tip': 'Record your assignments and record your deeds.',
+                       'timestamp': 883,
+                       'timestamp_seconds': 883,
+                       'timestamp_label': '[00:14:43]',
+                       'url': 'https://www.youtube.com/watch?v=MkofIE1Xq0o&t=883s',
+                       'markdown': '[00:14:43](https://www.youtube.com/watch?v=MkofIE1Xq0o&t=883s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MkofIE1Xq0o',
+                       'title': '5 Mistakes That Will Wreck Your First Mortgage Note Deal',
+                       'channel': 'Paperstac',
+                       'author': 'Paperstac',
+                       'text': 'This is a good way to get banned is if you go through and just go to every '
+                               "single listing and offer 20 grand underneath what it's listed for.",
+                       'tip': 'This is a good way to get banned is if you go through and just go to every '
+                              "single listing and offer 20 grand underneath what it's listed for.",
+                       'timestamp': 790,
+                       'timestamp_seconds': 790,
+                       'timestamp_label': '[00:13:10]',
+                       'url': 'https://www.youtube.com/watch?v=MkofIE1Xq0o&t=790s',
+                       'markdown': '[00:13:10](https://www.youtube.com/watch?v=MkofIE1Xq0o&t=790s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'usXnfzN3Wmc',
+                       'title': 'Can I Sell My Seller Financed Mortgage Note After Just ONE Payment?',
+                       'channel': 'Moxxie Education - Seller Financing & Notes',
+                       'author': 'Moxxie Education - Seller Financing & Notes',
+                       'text': 'Technically, you can sell a note the day after you create it.',
+                       'tip': 'Technically, you can sell a note the day after you create it.',
+                       'timestamp': 19,
+                       'timestamp_seconds': 19,
+                       'timestamp_label': '[00:00:19]',
+                       'url': 'https://www.youtube.com/watch?v=usXnfzN3Wmc&t=19s',
+                       'markdown': '[00:00:19](https://www.youtube.com/watch?v=usXnfzN3Wmc&t=19s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5bOm5hdSRXc',
+                       'title': 'Turn a Rental with a Current Mortgage into a Mortgage Note (How to)',
+                       'channel': 'Paperstac',
+                       'author': 'Paperstac',
+                       'text': 'Doing partials on a wrap could get potentially sticky.',
+                       'tip': 'Doing partials on a wrap could get potentially sticky.',
+                       'timestamp': 381,
+                       'timestamp_seconds': 381,
+                       'timestamp_label': '[00:06:21]',
+                       'url': 'https://www.youtube.com/watch?v=5bOm5hdSRXc&t=381s',
+                       'markdown': '[00:06:21](https://www.youtube.com/watch?v=5bOm5hdSRXc&t=381s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'b-4NVMQ1GZ8',
+                       'title': 'Note Hypothecation with Local Banks w/ Justin Roberts | Real Estate Notes '
+                                'Show Ep 134',
+                       'channel': 'Note Investing & Seller Financing - JKP Holdings',
+                       'author': 'Note Investing & Seller Financing - JKP Holdings',
+                       'text': "So, I would not bank on 80% if you're looking to start doing this day one.",
+                       'tip': "So, I would not bank on 80% if you're looking to start doing this day one.",
+                       'timestamp': 1170,
+                       'timestamp_seconds': 1170,
+                       'timestamp_label': '[00:19:30]',
+                       'url': 'https://www.youtube.com/watch?v=b-4NVMQ1GZ8&t=1170s',
+                       'markdown': '[00:19:30](https://www.youtube.com/watch?v=b-4NVMQ1GZ8&t=1170s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XsNZ5SQXdCI',
+                       'title': 'The Note Investing Strategy for Busy W-2 Professionals with Sierra Davis',
+                       'channel': 'Agent2Investor Podcast',
+                       'author': 'Agent2Investor Podcast',
+                       'text': "I mean, I don't like it lower than 10%.",
+                       'tip': "I mean, I don't like it lower than 10%.",
+                       'timestamp': 2611,
+                       'timestamp_seconds': 2611,
+                       'timestamp_label': '[00:43:31]',
+                       'url': 'https://www.youtube.com/watch?v=XsNZ5SQXdCI&t=2611s',
+                       'markdown': '[00:43:31](https://www.youtube.com/watch?v=XsNZ5SQXdCI&t=2611s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'y6ljJ3T0eNg',
+                       'title': 'PaperStac Marketplace & Mortgage Note Investing Guide',
+                       'channel': 'Patrick Franz',
+                       'author': 'Patrick Franz',
+                       'text': 'Due diligence is half the battle in this game.',
+                       'tip': 'Due diligence is half the battle in this game.',
+                       'timestamp': 1209,
+                       'timestamp_seconds': 1209,
+                       'timestamp_label': '[00:20:09]',
+                       'url': 'https://www.youtube.com/watch?v=y6ljJ3T0eNg&t=1209s',
+                       'markdown': '[00:20:09](https://www.youtube.com/watch?v=y6ljJ3T0eNg&t=1209s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WaCgDRVF1rY',
+                       'title': 'How to Buy and Sell Mortgage Notes Online (Without the Headache)',
+                       'channel': 'Paperstac',
+                       'author': 'Paperstac',
+                       'text': "It's free to list, with over 6,000 registered buyers, you'll get real bids "
+                               'at market values, almost immediately.',
+                       'tip': "It's free to list, with over 6,000 registered buyers, you'll get real bids "
+                              'at market values, almost immediately.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=WaCgDRVF1rY&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=WaCgDRVF1rY&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zhg1k-uMJM0',
+                       'title': 'Inside the New Paperstac: A New Era for Mortgage Note Trading',
+                       'channel': 'Paperstac',
+                       'author': 'Paperstac',
+                       'text': "Auction isn't to scare anybody, it's the way that a lot of people do "
+                               'things.',
+                       'tip': "Auction isn't to scare anybody, it's the way that a lot of people do "
+                              'things.',
+                       'timestamp': 219,
+                       'timestamp_seconds': 219,
+                       'timestamp_label': '[00:03:39]',
+                       'url': 'https://www.youtube.com/watch?v=zhg1k-uMJM0&t=219s',
+                       'markdown': '[00:03:39](https://www.youtube.com/watch?v=zhg1k-uMJM0&t=219s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'chL0454K1Zs',
+                       'title': 'How to List a Mortgage Note That Sells in Under 30 Days',
+                       'channel': 'Paperstac',
+                       'author': 'Paperstac',
+                       'text': 'Buyers are going to ask for the files, so load them up front and set them '
+                               'private so you can share them per transaction.',
+                       'tip': 'Buyers are going to ask for the files, so load them up front and set them '
+                              'private so you can share them per transaction.',
+                       'timestamp': 69,
+                       'timestamp_seconds': 69,
+                       'timestamp_label': '[00:01:09]',
+                       'url': 'https://www.youtube.com/watch?v=chL0454K1Zs&t=69s',
+                       'markdown': '[00:01:09](https://www.youtube.com/watch?v=chL0454K1Zs&t=69s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'}]}

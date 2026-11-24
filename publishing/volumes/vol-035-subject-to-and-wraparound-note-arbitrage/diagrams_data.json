@@ -1,332 +1,333 @@
 {
   "diagrams": [
     {
-      "diagram_id": "diag-01-subject-to-wrap-operating-loop",
-      "chart_type": "process_flow",
-      "title": "From Existing Debt to Verified Retained Spread",
-      "subtitle": "Five linked controls separate a performing wrap from an opaque payment promise.",
+      "diagram_id": "diag-01-wrap-mechanics-process-flow",
       "chapter_number": 1,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Workflow order is operational, not a forecast of five completed transactions. First-deal timing remains 2–6 months. Property value, loan principal, escrow deposits, and pass-through debt service are excluded from canonical operator revenue.",
-      "caption": "The operator acquires subject to existing debt without assuming that the original borrower has been released. A wrap adds a separate buyer obligation; it does not remove the senior lien.",
+      "title": "The Wrap Machine, From Target List to Servicer",
+      "subtitle": "Mirror wrap in, equity wrap out, spread earned on the full balance",
+      "caption": "Five steps practitioners describe for laying a larger wrap note over a live underlying loan, with the buyer paying the wrap holder and a servicer paying the original lender first.",
+      "assumptions_note": "Targeting filters come from Chris Goff's nationwide query; buy-side and sell-side structures come from Bill Brunchick; servicing order comes from Scott Horne. No figures beyond those reported are implied.",
+      "note": "Sources: Chris Goff (X_UODDIMvFs), Bill Brunchick with Kris Haskins (kM__5b36grI), Scott Horne's Owner Finance Network (VDXOvtqzbZk).",
+      "chart_type": "process_flow",
       "stages": [
         {
-          "label": "Source low-equity debt situations",
-          "value": "Match seller needs with verified existing debt",
-          "numeric_value": 1.0,
-          "detail": "Use county recorder filings, foreclosure notices, and authorized seller records to identify low-equity situations. Confirm seller objectives, arrears, occupancy, and equity before pricing the existing rate advantage."
+          "step": "01",
+          "label": "Pull Absentee-Owner Targets",
+          "value": "Step 1",
+          "detail": "Chris Goff filters absentee owners with values above $300,000, at least 20% equity and two-plus years of ownership; his nationwide query returned 7,284,401 properties."
         },
         {
-          "label": "Underwrite title and acceleration",
-          "value": "Price senior-lien exposure before making commitments",
-          "numeric_value": 2.0,
-          "detail": "Obtain title work, mortgage statements, reinstatement figures, insurance terms, and the actual security instrument. Model lender acceleration under 12 U.S.C. §1701j-3 and reject transactions without a funded response."
+          "step": "02",
+          "label": "Buy on a Mirror Wrap",
+          "value": "Step 2",
+          "detail": "Brunchick buys on a mirror wrap when there is little or no equity, matching the underlying terms."
         },
         {
-          "label": "Qualify the wrap buyer",
-          "value": "Route every owner-occupant buyer through licensed origination",
-          "numeric_value": 3.0,
-          "detail": "Have the licensed RMLO document income, assets, debts, credit obligations, and repayment capacity. Apply 12 CFR §1026.43 where covered and document the treatment of taxes, insurance, balloon terms, and payment changes."
+          "step": "03",
+          "label": "Sell on an Equity Wrap",
+          "value": "Step 3",
+          "detail": "Mark up both price and rate so the spread runs on the full balance; Brunchick shows 6% on $20,000 of equity plus a 2% gap on an $80,000 first at 4%."
         },
         {
-          "label": "Close with transparent payment routing",
-          "value": "Execute recorded instruments and configure licensed servicing",
-          "numeric_value": 4.0,
-          "detail": "Counsel and title professionals coordinate deed, wrap note, security instrument, notices, and lien priority. The licensed servicer establishes borrower autopay, underlying-payment routing, escrow handling, and reporting."
+          "step": "04",
+          "label": "Record the Security Instrument",
+          "value": "Step 4",
+          "detail": "Never record the note itself; record the deed of trust or mortgage with the wraparound rider (Brunchick)."
         },
         {
-          "label": "Reconcile and manage exceptions",
-          "value": "Verify underlying payments before releasing retained cash",
-          "numeric_value": 5.0,
-          "detail": "Reconcile the wrap ledger, underlying lender statement, bank settlement, tax account, and insurance evidence monthly. Escalate missing payments immediately; borrower autopay success alone does not prove senior-debt payment."
+          "step": "05",
+          "label": "Board a Payment Servicer",
+          "value": "Step 5",
+          "detail": "Scott Horne routes every payment through a servicer that pays the underlying lender first and the seller last, the industry's fraud preventer."
         }
       ]
     },
     {
-      "diagram_id": "diag-02-qualified-seller-to-serviced-wrap-funnel",
-      "chart_type": "funnel",
-      "title": "One Cohort, Five Measurable Conversion Steps",
-      "subtitle": "A 500-record sourcing cohort narrows to six funded and boarded wraps.",
+      "diagram_id": "diag-02-due-on-sale-exposure-funnel",
       "chapter_number": 6,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Illustrative six-month cohort, not observed conversion data. Every stage is a subset of the preceding stage. Counts do not derive the $475,000 annual Base-Case revenue: annual retained interest also depends on the seasoned performing portfolio.",
-      "caption": "Track losses by reason: seller mismatch, title defects, acceleration liquidity, buyer repayment capacity, and closing attrition. Do not count an application as a funded wrap.",
+      "title": "Due-on-Sale Exposure, From Deal Samples to Cure Clocks",
+      "subtitle": "Reported call counts narrow to the operator's time-boxed controls",
+      "caption": "Practitioner-reported sample sizes and call counts show the clause is a lender right rarely exercised, followed by the two clocks operators manage when it matters.",
+      "assumptions_note": "Each stage is a separate practitioner sample or rule, not one cohort; conversions restate each speaker's own reported outcome and are not chained probabilities.",
+      "note": "Sources: Investor Army Podcast guest (WFGzQCgPP54), Horne Real Estate Law (00RujvVfDRc), Pace Morby (cOTyo3LTDPk), In Rem Podcast (d9fjKwIC-VE).",
+      "chart_type": "funnel",
       "stages": [
         {
-          "label": "Screened seller records",
-          "value": "500 unique records establish the cohort denominator",
-          "numeric_value": 500.0,
-          "detail": "Deduplicate property and owner records, verify the trigger date, and document contact eligibility. This starting population represents 100% of the defined cohort."
+          "label": "Owner-Financed Mortgages Tracked",
+          "value": 15000,
+          "display": "15,000 mortgages",
+          "conversion": "Fewer than ten calls reported",
+          "detail": "Investor Army Podcast guest's count across owner-financed mortgages."
         },
         {
-          "label": "Documented seller conversations",
-          "value": "150 conversations equal 30% of screened records",
-          "numeric_value": 150.0,
-          "detail": "Count only sellers who discuss debt terms and transaction objectives. The remaining 350 records never advance into documented underwriting during this cohort window."
+          "label": "Owner-Finance Wrap Closings",
+          "value": 10000,
+          "display": "10,000 deals",
+          "conversion": "13 due-on-sale cases",
+          "detail": "Horne Real Estate Law's reported incidence across its wrap closings."
         },
         {
-          "label": "Debt-and-title qualified opportunities",
-          "value": "45 opportunities equal 30% of seller conversations",
-          "numeric_value": 45.0,
-          "detail": "Require usable debt evidence, preliminary title findings, a priceable arrears position, and a credible acceleration response. These opportunities equal 9% of starting records."
+          "label": "Subject-To Houses per Call",
+          "value": 500,
+          "display": "About 1 in 500 houses",
+          "conversion": "About one call per 500 houses",
+          "detail": "Pace Morby's estimate, including deals using land trusts; he adds a land trust does not stop the clause."
         },
         {
-          "label": "Matched and underwritten wrap files",
-          "value": "12 files equal 26.7% of qualified opportunities",
-          "numeric_value": 12.0,
-          "detail": "Each file has a specific qualified buyer, licensed RMLO review, documented repayment analysis, and counsel-reviewed structure. These files equal 2.4% of starting records."
+          "label": "Acceleration Cure Window",
+          "value": 30,
+          "display": "30 days",
+          "conversion": "Pay off, refinance, or deed back",
+          "detail": "In Rem Podcast found a 30-day window in every clause reviewed, with lenders usually offering a 30-day title-back option."
         },
         {
-          "label": "Funded and servicer-boarded wraps",
-          "value": "Six closings equal 50% of underwritten files",
-          "numeric_value": 6.0,
-          "detail": "Count only executed closings with confirmed funding, recording submission, servicing setup, and an underlying payment schedule. Final conversion equals 1.2% of records."
+          "label": "Post-Reinstatement Wait",
+          "value": 15,
+          "display": "10 to 15 days",
+          "conversion": "No deed transfer before the wait clears",
+          "detail": "Morby waits 10 to 15 days after reinstatement to close escrow; a deed moved 3 days in is his most common cause of a call."
         }
       ]
     },
     {
-      "diagram_id": "diag-03-base-case-retained-revenue-waterfall",
-      "chart_type": "waterfall",
-      "title": "$475,000 Operator Revenue to $190,000 Owner Profit",
-      "subtitle": "Four expense deductions reconcile exactly to the Base-Case 40.0% net margin.",
+      "diagram_id": "diag-03-tampa-wrap-entry-waterfall",
       "chapter_number": 3,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Annual USD. First and final bars are totals; intervening bars are signed deductions. Canonical revenue already excludes home face value and pass-through debt service. The four expense allocations are editorial assumptions totaling $285,000, not additional canonical inputs. Do not deduct senior debt twice.",
-      "caption": "Conservative: $100,000 revenue less $72,000 expenses equals $28,000 profit at 28%. Base: $475,000 less $285,000 equals $190,000 at 40.0%. Scaled: $850,000 less $408,000 equals $442,000 at 52%. Core staffing is four people; scaled staffing is six. These are annual scenarios, not month-one run rates.",
-      "stages": [
+      "title": "Entry Profit Before the First Wrap Payment",
+      "subtitle": "Dom Inglese's Tampa sub-to at 2.75% resold on a 7% wrap",
+      "caption": "The buyer's down payment exceeds the operator's cash in, so the deal is profitable before monthly spread begins.",
+      "assumptions_note": "All figures are Dom Inglese's reported deal numbers; the $330,000 all-in basis is shown as a reference bar, and no cash-flow figure is projected.",
+      "note": "Source: Dom Inglese (Lv34MZLHg1I @ 00:03:24).",
+      "chart_type": "waterfall",
+      "bars": [
         {
-          "label": "Gross operator revenue",
-          "value": "$475,000 annual retained-spread revenue before operating expenses",
-          "numeric_value": 475000.0,
-          "detail": "Illustratively, $210,000 earned net upfront spreads plus $265,000 retained annual wrap interest equals $475,000. Do not book every cash down payment as earned revenue. Apply transaction-specific accounting: interest follows applicable interest guidance, while any ASC 606 service component requires its own principal-versus-agent analysis."
+          "label": "Operator All-In Basis",
+          "value": 330000,
+          "display": "$330,000",
+          "kind": "total"
         },
         {
-          "label": "Acquisition and closing expenses",
-          "value": "Subtract $100,000 of annual direct transaction expenses",
-          "numeric_value": -100000.0,
-          "detail": "Allocate sourcing, title, recording, counsel, and transaction-specific origination expenses not already netted from upfront spreads. Running contribution becomes $375,000; property purchase principal is excluded."
+          "label": "Wrap Sale Price",
+          "value": 400000,
+          "display": "$400,000",
+          "kind": "total"
         },
         {
-          "label": "Realized losses and carrying expenses",
-          "value": "Subtract $80,000 of annual loss and workout expenses",
-          "numeric_value": -80000.0,
-          "detail": "Model recognized credit losses, property protection, workout counsel, and nonrecoverable carrying expenses. Running contribution becomes $295,000. Moving cash into a reserve account is not itself an expense."
+          "label": "Wrap Note Carried at 7%",
+          "value": 350000,
+          "display": "-$350,000",
+          "kind": "deduction"
         },
         {
-          "label": "Contractor and servicing expenses",
-          "value": "Subtract $60,000 of annual recurring delivery expenses",
-          "numeric_value": -60000.0,
-          "detail": "Cover recurring contractor retainers, licensed servicing charges, reconciliation support, and borrower-service administration. Running contribution becomes $235,000; exclude origination charges already assigned above."
+          "label": "Buyer Down Payment",
+          "value": 50000,
+          "display": "$50,000",
+          "kind": "total"
         },
         {
-          "label": "Systems and administrative overhead",
-          "value": "Subtract $45,000 of annual recurring overhead expenses",
-          "numeric_value": -45000.0,
-          "detail": "Cover CRM, document controls, bookkeeping, business insurance, and administrative support. Combined with the prior $60,000, recurring overhead equals $105,000 annually, or $8,750 monthly, within the stated opex range."
+          "label": "Operator Cash In",
+          "value": 40000,
+          "display": "-$40,000",
+          "kind": "deduction"
         },
         {
-          "label": "Annual owner net profit",
-          "value": "$190,000 remaining profit equals exactly 40.0% margin",
-          "numeric_value": 190000.0,
-          "detail": "Calculate $475,000 minus $100,000 minus $80,000 minus $60,000 minus $45,000. Owner distributions and personal taxes are outside this illustrative operating bridge; profit does not equal immediately distributable cash."
+          "label": "Entry Profit Before Cash Flow",
+          "value": 10000,
+          "display": "$10,000",
+          "kind": "result"
         }
       ]
     },
     {
-      "diagram_id": "diag-04-subniche-contractual-rate-spreads",
-      "chart_type": "horizontal_bars",
-      "title": "Five Sub-Niches, One Consistent Spread Measure",
-      "subtitle": "Compare contractual rate-spread proxies, not borrower APR or investor return.",
+      "diagram_id": "diag-04-subto-pitch-percentages",
       "chapter_number": 2,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Numeric values are annual percentage-point differences between illustrative wrap and underlying note rates. Rates are examples, not market quotes. Unequal balances, amortization, defaults, fees, escrow, and prepayments change actual retained yield.",
-      "caption": "At equal $100,000 interest-only balances, one percentage point equals $1,000 annual gross interest spread. Actual underwriting must model both amortization schedules and monthly cash timing.",
-      "stages": [
+      "title": "The Numbers Behind the Subject-To Pitch",
+      "subtitle": "Seller costs, entry scores and the friction points practitioners report",
+      "caption": "Percentages subject-to buyers cite when pitching sellers and screening entry, from retail-sale cost to title and insurance friction.",
+      "assumptions_note": "Single-point claims show identical min, max and typical values; the entry fee bar spans the 16% scored deal to the 25% ceiling.",
+      "note": "Sources: Pace Morby (1GjR0GDWoyo, bKMcgnoYXfQ, X94W660WDh8), Flipping Mastery TV (rYMNGajRMfo), Lex Levinrad (YY7F8y8K0cU).",
+      "chart_type": "horizontal_bars",
+      "unit": "Percent",
+      "bars": [
         {
-          "label": "Clean-payment low-equity resale",
-          "value": "3.0 percentage points from 6.5% less 3.5%",
-          "numeric_value": 3.0,
-          "detail": "Illustrative equal-balance gross spread is $3,000 annually per $100,000. Use licensed-servicer ACH collections and verify senior-lender settlement rather than relying on a buyer payment screenshot."
+          "label": "Seller Retail Sale Cost (Morby)",
+          "min": 10,
+          "max": 10,
+          "typical": 10,
+          "display": "About 10% (3% + 3% + about 4%)"
         },
         {
-          "label": "Relocation seller with seasoned debt",
-          "value": "3.5 percentage points from 7.0% less 3.5%",
-          "numeric_value": 3.5,
-          "detail": "Illustrative equal-balance gross spread is $3,500 annually per $100,000. Confirm occupancy and insurance changes, obtain a complete payment history, and model seller release separately from the property transfer."
+          "label": "Sub-To Entry Fee Score (Flipping Mastery TV)",
+          "min": 16,
+          "max": 25,
+          "typical": 16,
+          "display": "16% scored; under 25% is high"
         },
         {
-          "label": "Documented reinstatement opportunity",
-          "value": "4.0 percentage points from 7.5% less 3.5%",
-          "numeric_value": 4.0,
-          "detail": "Illustrative equal-balance gross spread is $4,000 annually per $100,000. A higher spread can disappear after arrears, reinstatement fees, foreclosure deadlines, and a delayed first wrap payment."
+          "label": "Sellers Deferring Equity (Morby)",
+          "min": 80,
+          "max": 80,
+          "typical": 80,
+          "display": "80% defer equity 3 to 4 years"
         },
         {
-          "label": "Self-employed owner-occupant buyer",
-          "value": "4.5 percentage points from 8.0% less 3.5%",
-          "numeric_value": 4.5,
-          "detail": "Illustrative equal-balance gross spread is $4,500 annually per $100,000. Require RMLO-reviewed income evidence and repayment capacity; a larger down payment does not replace the required underwriting analysis."
+          "label": "Buyers Tripped by Insurance Step (Levinrad)",
+          "min": 90,
+          "max": 90,
+          "typical": 90,
+          "display": "90% trip on keeping the seller's policy"
         },
         {
-          "label": "Texas covered wrap transaction",
-          "value": "5.0 percentage points from 8.5% less 3.5%",
-          "numeric_value": 5.0,
-          "detail": "Illustrative equal-balance gross spread is $5,000 annually per $100,000. Price only after reviewing Texas Finance Code Chapter 159, Property Code §5.016, applicable rate limits, licensing, and required disclosures."
+          "label": "Title Reports Showing Issues (Morby)",
+          "min": 99,
+          "max": 99,
+          "typical": 99,
+          "display": "99% of reports he sees"
         }
       ]
     },
     {
-      "diagram_id": "diag-05-wrap-preflight-decision-tree",
-      "chart_type": "decision_tree",
-      "title": "Four Decisions Before Committing Capital",
-      "subtitle": "Each affirmative branch advances; each unresolved branch stops commitment.",
+      "diagram_id": "diag-05-hybrid-underwriting-gates",
       "chapter_number": 5,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "The four nodes are sequential decision checks. Stage numbers represent order, not probabilities. Transaction scope, state requirements, lien terms, and borrower use determine the applicable rules; a servicer does not cure defective origination.",
-      "caption": "Do not conceal a transfer, substitute a trust label for statutory analysis, or infer lender permission from continued payment acceptance. Keep written evidence for every decision.",
-      "stages": [
+      "title": "Four Gates Before a Hybrid or Wrap Closes",
+      "subtitle": "Lien coverage, real arrears, active income, borrower pre-screen",
+      "caption": "Kill-or-proceed gates practitioners apply when structuring subject-to plus seller-note hybrids and carrying wrap paper.",
+      "assumptions_note": "Gate order is an organizing sequence; each rule is stated by the attributed practitioner, and the $5,000 buffer is Pace Morby's reported legal-fee gap.",
+      "note": "Sources: Scott Horne's Owner Finance Network (it6vSh38OhY), Pace Morby (t7aFESM6V_k, rQCg4GFRLAI), Fusion Notes (JAyoDBTIEIE).",
+      "chart_type": "decision_tree",
+      "nodes": [
         {
-          "label": "Can acceleration be absorbed?",
-          "value": "Yes advances; absent funding means decline the acquisition",
-          "numeric_value": 1.0,
-          "detail": "Review 12 U.S.C. §1701j-3 and the actual due-on-sale clause. Document lender permission where obtained or specific statutory protection where applicable. Otherwise quantify payoff exposure and verify available liquidity or a credible refinance plan."
+          "gate": "G1",
+          "question": "Is the wrap balance at least equal to every underlying lien, including modification, down-payment assistance and 0% HUD liens?",
+          "pass_next": "G2",
+          "fail_action": "Restructure; the position can drift upside down (Scott Horne)."
         },
         {
-          "label": "Is origination properly structured?",
-          "value": "Yes advances; deficient underwriting returns to licensed RMLO",
-          "numeric_value": 2.0,
-          "detail": "Route every owner-occupant wrap buyer through a licensed RMLO. Map SAFE Act requirements under 12 U.S.C. §§5102–5103 and Regulation Z §§1026.36 and 1026.43. Document coverage, repayment capacity, compensation treatment, and any specifically applicable exemption."
+          "gate": "G2",
+          "question": "Are payoff and arrears confirmed with the lender, plus about $5,000 for legal fees?",
+          "pass_next": "G3",
+          "fail_action": "Rebuild the entry fee; the title company is not the bank (Pace Morby)."
         },
         {
-          "label": "Are state wrap requirements satisfied?",
-          "value": "Yes advances; missing notices stop closing preparation",
-          "numeric_value": 3.0,
-          "detail": "For Texas, counsel checks Property Code §5.016 for covered encumbered-property conveyances, including applicable advance notices, and Finance Code Chapter 159 for wrap licensing and transaction duties. Document recipient, delivery timing, closing conditions, and applicable exceptions rather than copying generic forms."
+          "gate": "G3",
+          "question": "If using the Morby Method, is active income coming in on the deal?",
+          "pass_next": "G4",
+          "fail_action": "Kill the Morby Method; people take the cash out and bail (Pace Morby)."
         },
         {
-          "label": "Can title and payments remain controlled?",
-          "value": "Yes permits closing; unresolved control defects require remediation",
-          "numeric_value": 4.0,
-          "detail": "Confirm lien priority, current taxes, insurance interests, and foreclosure remedies. Contract a licensed third-party servicer, document applicable Regulation X duties, test underlying-payment reporting, and fund transaction-specific reserves before accepting buyer funds."
+          "gate": "G4",
+          "question": "Does a five-minute pre-screen show no bankruptcies, foreclosures or missed mortgage payments in the last 12 months?",
+          "pass_next": "Carry the paper and close",
+          "fail_action": "Decline to carry paper on the wrap (Fusion Notes)."
         }
       ]
     },
     {
-      "diagram_id": "diag-06-four-person-core-six-person-scale-pod",
-      "chart_type": "org_architecture",
-      "title": "Four Core Seats, Six at Scaled Volume",
-      "subtitle": "One full-time owner and three contractors form the canonical starting pod.",
+      "diagram_id": "diag-06-note-buyer-operating-model",
       "chapter_number": 11,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Each numeric value represents one person. Core seats total 1 FT + 3 C; adding both expansion seats produces 2 FT + 4 C. Title companies, lenders, and the servicer are external vendors, not extra dedicated pod seats. Contractor credentials must fit the actual duties assigned.",
-      "caption": "The owner controls capital and exceptions; the RMLO owns buyer underwriting; counsel owns transaction documents; servicing operations verifies the licensed servicer's payment evidence.",
-      "stages": [
+      "title": "The Non-Performing Note Buyer's Operating Model",
+      "subtitle": "First-position paper, licensed servicing, borrower-first resolution",
+      "caption": "The note buyer sits at the center of servicers, sourcing channels, diligence and borrower resolution, exiting through the borrower before foreclosure.",
+      "assumptions_note": "Headcount was not reported by practitioners; spoke KPIs restate reported rules and results only.",
+      "note": "Sources: Colin Whitenack (gxiK62dzE34), PPR Capital Management (DEk2gIFHJiM), Fusion Notes (PXDW2SqUfMA), Sierra Davis (UimgP_cJydU), FIXnotes (lxjMbDIOEGw), Lauren Wells via Preferred Trust (nauUgmh1YZg).",
+      "chart_type": "org_architecture",
+      "center": {
+        "role": "Note Buyer",
+        "headcount": "Not reported; boutique shops up to a $600-700M NPL desk",
+        "focus": "First-position, secured single-family collateral with deep equity"
+      },
+      "spokes": [
         {
-          "label": "Core owner and acquisition lead",
-          "value": "One full-time seat owns pricing and capital decisions",
-          "numeric_value": 1.0,
-          "detail": "Maintain seller relationships, approve documented underwriting assumptions, manage acceleration liquidity, and review weekly pipeline aging. Personally resolve material exceptions rather than delegating risk acceptance to an automated CRM status."
+          "role": "Licensed Loan Servicer",
+          "type": "Required partner",
+          "kpi": "Boarded at closing or the deal is killed (Whitenack, PPR)"
         },
         {
-          "label": "Core licensed RMLO",
-          "value": "One contractor seat owns buyer origination and underwriting",
-          "numeric_value": 1.0,
-          "detail": "Collect repayment evidence, document applicable ability-to-repay analysis, manage required borrower disclosures, and coordinate permissible origination compensation. Reject incomplete files before the closing calendar creates pressure to bypass review."
+          "role": "Servicers and Foreclosure Attorneys",
+          "type": "Off-market sourcing",
+          "kpi": "Leads on portfolio sales and fund closings (Fusion Notes)"
         },
         {
-          "label": "Core real estate counsel",
-          "value": "One contractor seat owns statutory analysis and documents",
-          "numeric_value": 1.0,
-          "detail": "Review transfer restrictions, state wrap requirements, security instruments, remedies, and title exceptions. Coordinate external title and settlement vendors and maintain a transaction-specific notice evidence checklist."
+          "role": "Diligence on People, Property, Paperwork",
+          "type": "Bid gate",
+          "kpi": "Finished inside a 14 to 21 day window with BPO, insurance, taxes (Sierra Davis)"
         },
         {
-          "label": "Core servicing operations specialist",
-          "value": "One contractor seat owns independent monthly payment reconciliation",
-          "numeric_value": 1.0,
-          "detail": "Reconcile licensed-servicer reports against underlying lender statements and bank records. Track taxes, insurance, borrower inquiries, and delinquency aging; this seat does not substitute for required servicing licenses or external servicer functions."
-        },
-        {
-          "label": "Scaled portfolio operations lead",
-          "value": "Second full-time seat adds capacity for portfolio exceptions",
-          "numeric_value": 1.0,
-          "detail": "Add at scaled workload to manage reconciliations, collection escalation, servicer service levels, and cash forecasting. The owner retains capital decisions while this seat prevents exception queues from aging."
-        },
-        {
-          "label": "Scaled diligence and coordination specialist",
-          "value": "Fourth contractor seat expands document and closing capacity",
-          "numeric_value": 1.0,
-          "detail": "Collect authorized records, maintain title and insurance checklists, coordinate document delivery, and track closing dependencies. Leave regulated origination, legal interpretation, and licensed servicing activity with the appropriately credentialed providers."
+          "role": "Borrower Resolution",
+          "type": "Rapport and intel",
+          "kpi": "About 90% reperform, under 5% liquidated (Lauren Wells, 7e Investments)"
         }
       ]
     },
     {
-      "diagram_id": "diag-07-startup-capital-four-bucket-allocation",
-      "chart_type": "stacked_comparison",
-      "title": "Allocate Startup Cash Before Buying Payment Spread",
-      "subtitle": "Four buckets reconcile to lean $12,000, planning $35,000, and expanded $65,000.",
+      "diagram_id": "diag-07-seller-finance-vs-bank-entry",
       "chapter_number": 4,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Numeric values show the $35,000 planning stack in USD. Every detail supplies corresponding lean and expanded allocations. These are setup-and-liquidity budgets, not property purchase prices, annual expenses, or a promise that acceleration can be funded from startup cash.",
-      "caption": "Lean total: $3,000 + $4,000 + $2,000 + $3,000 = $12,000. Planning total: $8,000 + $10,000 + $7,000 + $10,000 = $35,000. Expanded total: $15,000 + $20,000 + $10,000 + $20,000 = $65,000.",
-      "stages": [
+      "title": "Making the Seller the Bank, by the Percentages",
+      "subtitle": "Creative entry cost against bank down payments and seller-note rates",
+      "caption": "Pace Morby's average 8% entry compares with the 30-35% down a bank requires, while Key & Capital models seller notes at 6-9%.",
+      "assumptions_note": "Buckets are percentages reported by different practitioners and are shown side by side, not summed.",
+      "note": "Sources: Pace Morby (_M0q3Da-vxU), Key & Capital (dzuLMB2Szxc), Flipping Mastery TV (-E2cCPmM_Q0).",
+      "chart_type": "stacked_comparison",
+      "total_range": "8% creative entry vs 30-35% bank down payment (percent of price)",
+      "buckets": [
         {
-          "label": "Professional structure and document setup",
-          "value": "$8,000 planning allocation establishes transaction-specific operating documents",
-          "numeric_value": 8000.0,
-          "detail": "Lean $3,000; planning $8,000; expanded $15,000. Fund counsel review, RMLO engagement setup, entity records, state requirement mapping, and initial title diligence. Per-closing costs still require separate transaction budgets."
+          "label": "Pace Morby Average All-In Entry",
+          "low": 8,
+          "high": 8,
+          "notes": "Down payment plus closing costs, about 8%."
         },
         {
-          "label": "Transaction and reinstatement liquidity",
-          "value": "$10,000 planning allocation supports documented closing cash requirements",
-          "numeric_value": 10000.0,
-          "detail": "Lean $4,000; planning $10,000; expanded $20,000. Hold cash for verified arrears, title cures, and closing timing differences. Decline deals whose cure requirements exceed committed funds; these amounts cannot fund an arbitrary senior-mortgage payoff."
+          "label": "Bank Down Payment Requirement",
+          "low": 30,
+          "high": 35,
+          "notes": "$80-100K on a $300K house, per Pace Morby."
         },
         {
-          "label": "Sourcing and servicing infrastructure",
-          "value": "$7,000 planning allocation builds auditable records and payment rails",
-          "numeric_value": 7000.0,
-          "detail": "Lean $2,000; planning $7,000; expanded $10,000. Configure a CRM such as HubSpot, access-controlled document storage, licensed-servicer boarding, bookkeeping, and payment reconciliation exports. Use dual review for payment destination changes."
+          "label": "Key & Capital Seller-Note Rates",
+          "low": 6,
+          "high": 9,
+          "notes": "Modeled with 5-7 year balloons; a 0% seller note is not clever."
         },
         {
-          "label": "Runway and exception cash reserve",
-          "value": "$10,000 planning allocation protects early operating continuity",
-          "numeric_value": 10000.0,
-          "detail": "Lean $3,000; planning $10,000; expanded $20,000. Preserve cash for operating delays and payment exceptions. At $2,000–$12,000 monthly opex, $10,000 covers roughly 0.83–5 months before transaction shocks; arrange more runway when the 2–6 month first-deal window requires it."
+          "label": "Real Estate Owned Free and Clear",
+          "low": 30,
+          "high": 30,
+          "notes": "Pace's sizing of the seller-finance target pool."
         }
       ]
     },
     {
-      "diagram_id": "diag-08-first-thirty-days-operating-sprint",
-      "chart_type": "timeline_roadmap",
-      "title": "Thirty Days to a Documented Operating System",
-      "subtitle": "Build sourcing, underwriting, closing controls, and payment evidence before scaling.",
+      "diagram_id": "diag-08-partial-sale-roadmap",
       "chapter_number": 12,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Four milestone values are ending calendar days: 7, 14, 21, and 30. This sprint prepares the operation; the canonical first-deal expectation remains 2–6 months. Do not force a closing into thirty days to satisfy the diagram.",
-      "caption": "Day 30 success means an auditable acquisition and servicing process with named owners, funded operating runway, and a qualified pipeline—not an assumed funded transaction.",
-      "stages": [
+      "title": "From Bid to Partial Sale to First Position",
+      "subtitle": "Price it, audit it, size the partial, clean up the wrap",
+      "caption": "A four-stage path for buying a note, selling a front partial and keeping the tail, built from Paperstac and Cal Ewing operating rules.",
+      "assumptions_note": "Week labels are an organizing frame; practitioners did not state a four-week timeline. Dollar and yield figures are their reported examples.",
+      "note": "Sources: Paperstac (MkofIE1Xq0o, XRyBErGyKgQ, 5bOm5hdSRXc), Cal Ewing (LCY-eZOK6gw).",
+      "chart_type": "timeline_roadmap",
+      "weeks": [
         {
-          "label": "Days 1-7",
-          "value": "Select the market and document statutory operating requirements",
-          "numeric_value": 7.0,
-          "detail": "Owner and counsel choose one jurisdiction, review 12 U.S.C. §1701j-3 and applicable state wrap rules, engage the RMLO, and map title, disclosure, and servicing responsibilities. Deliver a written transaction checklist and startup cash allocation."
+          "week": "Week 1",
+          "title": "Lock an Indicative Bid",
+          "deliverable": "Bid built off verified rate, UPB, origination date and last pay date",
+          "gate": "Never lowball every listing by $20,000 (Paperstac)"
         },
         {
-          "label": "Days 8-14",
-          "value": "Configure sourcing records and rehearse the underwriting workflow",
-          "numeric_value": 14.0,
-          "detail": "Build the deduplicated seller cohort, configure CRM stage definitions, and assemble an authorized sample file. Test senior-debt amortization, wrap amortization, escrow changes, default carrying cost, and acceleration liquidity in a spreadsheet."
+          "week": "Week 2",
+          "title": "Clean the Collateral",
+          "deliverable": "FBO wording, address and signer confirmed and screenshotted",
+          "gate": "Vesting verified before collateral goes to the auditor (Paperstac)"
         },
         {
-          "label": "Days 15-21",
-          "value": "Validate buyer qualification and licensed-servicer payment controls",
-          "numeric_value": 21.0,
-          "detail": "Have the RMLO review a qualified buyer file when available; otherwise rehearse with clearly synthetic records. Confirm servicer licensing and contractual scope, test reconciliation exports without live funds, and rehearse a failed underlying payment escalation."
+          "week": "Week 3",
+          "title": "Size and Model the Partial",
+          "deliverable": "On a $400 payment, 12 months equals $4,800; paying $4,000 earns about 20% while $5,000 loses money",
+          "gate": "Payoff, auction and REO splits modeled before any partial sells (Cal Ewing)"
         },
         {
-          "label": "Days 22-30",
-          "value": "Review qualified files and prove end-to-end exception handling",
-          "numeric_value": 30.0,
-          "detail": "Counsel reviews candidate documents and notice timing; operations completes a mock monthly reconciliation. The owner verifies runway and deal-specific liquidity, records unresolved defects, and schedules only files that satisfy the documented requirements."
+          "week": "Week 4",
+          "title": "Move the Wrap to First Position",
+          "deliverable": "Title run, underlying lien disclosed, partial proceeds pay it off",
+          "gate": "Assignments and deeds recorded (Paperstac)"
         }
       ]
     }

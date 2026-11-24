@@ -1,694 +1,904 @@
 from __future__ import annotations
 
-CHAPTER_2 = {
-    "id": "Q2",
-    "chapter_id": "Q2",
-    "chapter_number": 2,
-    "question_number": 2,
-    "slug": "who-pays-payment-processing-atm-settlement-rails",
-    "question_prompt": "Who writes the check in iso payment processing & atm arbitrage, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
-    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "Sponsor-Bank Schedule A Economics, Approved MID Routing, Reg E ATM Disclosures, UCC Refinance Triggers & Protected Residual Collections",
-    "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #32, ISO Payment Processing & ATM Arbitrage, holds Rank #02 of 36 "
-        "with a 94/100 Money-to-Manpower Score. This chapter connects 12 mapped plays "
-        "to the people who authorize fees, the institutions that move funds, and the "
-        "contracts that preserve collection rights. Merchants pay for approved acceptance "
-        "and reliable settlement; ATM users pay disclosed access charges; contracted "
-        "funding partners pay qualifying referral commissions. None of their underlying "
-        "sales, withdrawals, or loan proceeds becomes operator revenue. Canonical annual "
-        "owner profit is $27,000 Conservative, $189,125 Base, and $440,000 Scaled, against "
-        "$90,000, $445,000, and $800,000 of retained revenue. The operating advantage "
-        "comes from auditable wholesale spreads, exclusive venue economics, accurate "
-        "residual statements, and enforceable payment instructions rather than hidden "
-        "routing or possession of customer funds."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$90,000",
-            "context": "Annual retained ISO residuals, gateway markups, and ATM surcharge revenue",
-            "note": "30% net margin; $27,000 owner profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$445,000",
-            "context": "Annual retained ISO residuals, gateway markups, and ATM surcharge revenue",
-            "note": "42.5% net margin; $189,125 owner profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$800,000",
-            "context": "Annual retained ISO residuals, gateway markups, and ATM surcharge revenue",
-            "note": "55% net margin; $440,000 owner profit; 2 FT + 4 C (6 people)",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Identify the payer, the signing authority, and the measurable pain",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The merchant owner signs because interrupted acceptance threatens payroll, "
-                    "inventory replenishment, and customer retention; the controller signs payment "
-                    "instructions because unexplained deductions threaten cash forecasting. Those are "
-                    "different buying motives, and a proposal must answer both. A restaurant processing "
-                    "$100,000 monthly might accept a separately priced $50 retained service contribution "
-                    "when documented reconciliation and terminal support save four staff hours. That "
-                    "illustrative contribution is not its total processing bill. Interchange, network "
-                    "assessments, processor charges, and contractual splits still require their own "
-                    "statement lines. Obtain the merchant agreement signer, settlement-account authority, "
-                    "and person empowered to dispute invoices before boarding. An accounts-payable "
-                    "contact cannot authorize changes to a sponsor-bank settlement arrangement merely "
-                    "because they receive statements. For larger merchants, the treasury team controls "
-                    "bank details while procurement negotiates the gateway contract. Sell an "
-                    "itemized improvement against three actual statements, not a promise to make "
-                    "processing free. Statutes constrain pricing and disclosure; they do not force "
-                    "a merchant to buy an ISO's services. The acute pain is operational: legitimate "
-                    "sales cannot settle dependably, reserve deductions are poorly understood, or "
-                    "the existing provider cannot support an accurately disclosed business model."
-                ),
-                (
-                    "An ATM has three economically distinct counterparties: the cardholder paying "
-                    "a disclosed surcharge, the venue providing placement rights, and the vault-cash "
-                    "owner supplying withdrawal inventory. The venue manager may welcome installation "
-                    "but lack authority to grant exclusivity; verify the lease, ownership entity, "
-                    "and any existing machine contract. With a $3.50 surcharge, a hypothetical "
-                    "$1.00 venue allocation and $0.50 processor allocation leave $2.00 of retained "
-                    "surcharge revenue per completed withdrawal before operator expenses. At 300 "
-                    "monthly withdrawals, that is $600 monthly retained revenue, not the $30,000 "
-                    "of cash dispensed if average withdrawals are $100. Reg E requires the "
-                    "applicable screen or paper notice before commitment and the consumer's "
-                    "election to proceed. It does not require the obsolete federal exterior "
-                    "fee placard. A venue payment should follow settled transaction counts, "
-                    "not screen impressions or attempted withdrawals. Separately document who "
-                    "funds replenishment, bears shortages, carries cash coverage, and receives "
-                    "network reimbursements. A $15,000 cash load remains cash inventory or "
-                    "another party's funded asset according to ownership, never surcharge income. "
-                    "Venue demand for predictable rent should be met with a conservative minimum "
-                    "only after measured traffic supports it."
-                ),
-                (
-                    "This chapter's 12 mapped plays comprise the two specified strategies plus "
-                    "ten operating applications: Schedule A residual capture, gateway markup, "
-                    "terminal support subscriptions, approved dual pricing, dispute deflection, "
-                    "reserve reporting, exclusive ATM placement, venue revenue sharing, vault-cash "
-                    "coordination, and residual recovery audits. These applications describe work, "
-                    "not additional canonical scorecard revenue. The specified strategies are "
-                    "high_risk_payfac_iso_mid_cascading_arbitrage and "
-                    "ucc1_expiration_refi_trigger_arbitrage. The first sells approved acceptance "
-                    "and orchestration; the second identifies potential refinancing conversations "
-                    "from public filings and verified obligations. A business four to nine months "
-                    "into an expensive advance may value a cash-flow review, but a UCC filing "
-                    "alone proves neither that age nor a refinance need. A contracted funder "
-                    "might pay a disclosed 2% referral commission on $100,000 actually funded, "
-                    "producing $2,000 before specified reversals and expenses. Principal remains "
-                    "the borrower's financing, not the referrer's sales. Require a signed "
-                    "compensation schedule, documented referral attribution, and a funded-event "
-                    "definition before transmitting the lead. If a financing partner will not "
-                    "identify its payment entity or reversal period, reject the arrangement. "
-                    "Keep illustrative referral and subscription economics outside the three "
-                    "canonical cases unless a separately approved model explicitly incorporates them."
-                ),
-            ],
-            "table": {
-                "caption": "Payer Psychology, Budget Authority, and Evidence Required Before Commitment",
-                "headers": [
-                    "Payer and economic role",
-                    "Acute reason to authorize expenditure",
-                    "Authority evidence to obtain before execution",
-                    "Unit economics and failed-sale fallback",
-                ],
-                "rows": [
-                    [
-                        "Merchant operating company purchasing approved card acceptance services",
-                        "Repeated settlement interruptions create immediate payroll and inventory uncertainty",
-                        "Executed merchant agreement plus verified settlement-account signing authority",
-                        "Model $50 monthly retained contribution; decline unsupported savings claims",
-                    ],
-                    [
-                        "Merchant treasury department buying auditable gateway reconciliation services",
-                        "Unmatched deposits consume accounting time and distort daily liquidity",
-                        "Approved service order identifying invoice recipient and treasury owner",
-                        "Retain $15 monthly markup; resolve missing batch references first",
-                    ],
-                    [
-                        "Cardholder electing to purchase convenient onsite cash access",
-                        "Immediate cash requirement outweighs the clearly disclosed withdrawal charge",
-                        "Recorded fee disclosure and affirmative continuation before transaction completion",
-                        "Retain $2 per withdrawal; cancel without charging abandoned transactions",
-                    ],
-                    [
-                        "Venue owner exchanging exclusive floor access for economic participation",
-                        "Reliable cash access supports customer spending and reduces complaints",
-                        "Property authority evidence and review of existing placement restrictions",
-                        "Share $1 per withdrawal; avoid guarantees before measuring traffic",
-                    ],
-                    [
-                        "Vault-cash provider supplying withdrawal inventory under separate funding terms",
-                        "Documented replenishment controls protect funded inventory and expected recovery",
-                        "Signed cash ownership schedule and verified replenishment responsibility matrix",
-                        "Track $15,000 cash separately; suspend loading after unresolved shortages",
-                    ],
-                    [
-                        "Contracted commercial funder purchasing attributable qualified borrower introductions",
-                        "Verified financing demand reduces acquisition work and unproductive conversations",
-                        "Signed referral schedule naming payer entity and funded-event evidence",
-                        "Illustrative $2,000 commission; exclude unpaid introductions from collected revenue",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Sell the reconciliation advantage before negotiating the headline rate",
-                "body": (
-                    "Experienced operators win durable accounts by proving where money moves "
-                    "and who can change the instructions."
-                ),
-                "items": [
-                    "Request three processor statements and the matching bank deposits; reconstruct one complete batch before quoting a Schedule A spread.",
-                    "Ask the venue for its current ATM contract before surveying the location; exclusivity and removal clauses can outweigh excellent foot traffic.",
-                    "Export IRIS CRM merchant identifiers alongside residual line items; preserve historical identifiers when an approved MID migration changes reporting.",
-                    "Put the funder's referral attribution window and commission reversal events in writing before sending the first UCC-triggered introduction.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Price approved risk without disguising merchants, reserves, or declines",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "For high_risk_payfac_iso_mid_cascading_arbitrage, treat a proposed network of "
-                    "25–60 domestic and offshore acquiring banks as a diligence universe, not "
-                    "an entitlement to route transactions anywhere. An ISO relationship is not "
-                    "automatically a payment-facilitator appointment. Each acquirer must approve "
-                    "the actual merchant entity, products, customer locations, descriptors, "
-                    "beneficial owners, and settlement terms. A business rejected by Stripe "
-                    "or PayPal is not thereby acceptable to another provider. Telehealth "
-                    "GLP-1 services, peptide products, nutra subscriptions, sweepstakes gaming, "
-                    "high-ticket coaching, and AI companions have materially different licensing, "
-                    "product, advertising, and network restrictions. Accept only activities "
-                    "lawful in the relevant jurisdictions and expressly supported by the "
-                    "sponsor and card brands. Route among approved MIDs belonging to the "
-                    "proper merchant under documented rules; never substitute another "
-                    "business's identity or disguise the transaction category. A hard decline "
-                    "or prohibited retry response ends that attempt. Permitted retries need "
-                    "processor-specific response handling, duplicate prevention, and frequency "
-                    "limits. Offshore acquiring introduces additional country, currency, and "
-                    "cross-border requirements rather than an escape from domestic restrictions. "
-                    "If no approved acquirer supports the disclosed activity, the fallback "
-                    "is to decline boarding, not conceal it behind orchestration software."
-                ),
-                (
-                    "The advertised buy rate of roughly 2.10% and merchant pricing of "
-                    "5.50%–8.90% require a scope comparison before anyone calls the difference "
-                    "profit. On $100,000 of monthly processed sales, those prices produce "
-                    "$5,500–$8,900 in merchant processing charges and a nominal $2,100 wholesale "
-                    "charge only if that quote applies to the same transaction population. "
-                    "The apparent $3,400–$6,800 spread is preliminary: determine whether "
-                    "interchange, assessments, cross-border costs, gateway events, refunds, "
-                    "and dispute fees are included. Under an explicitly illustrative "
-                    "contract, $5,500 less $2,100 and $1,400 of additional charges leaves "
-                    "$2,000 distributable residual; a 50% retained share yields $1,000 "
-                    "operator revenue. A 10% rolling reserve withholds another $10,000 "
-                    "of merchant settlement for that month; it is collateral, not "
-                    "additional processing revenue. Make the 10% reserve the minimum "
-                    "proposal for this high-risk design, subject to stricter underwriting "
-                    "and a written release schedule. Deploy Verifi RDR or Ethoca only "
-                    "where supported, reconcile resulting refunds, and prevent duplicate "
-                    "credits. Use 3DS2 step-up on approved risk signals, including relevant "
-                    "BIN patterns, while recognizing that authentication does not eliminate "
-                    "all disputes or replace accurate descriptors and fulfillment evidence."
-                ),
-                (
-                    "For ucc1_expiration_refi_trigger_arbitrage, separate lien-record intelligence "
-                    "from debt underwriting. Under UCC 9-515, an ordinary financing statement "
-                    "generally lasts five years, and continuation generally occurs during "
-                    "the six months before expiration; statutory exceptions exist. Filing "
-                    "expiration is not the underlying note's maturity, and a continuation "
-                    "does not establish a new advance. Use state Secretary of State "
-                    "records to identify the debtor, secured party, collateral description, "
-                    "and filing dates, then obtain actual agreements and payoff information "
-                    "with the business's authorization. To locate borrowers four to nine "
-                    "months into an MCA or equipment note, verify funding dates rather "
-                    "than subtracting months from an assumed lien expiration. Compare total "
-                    "payoff, payment frequency, liens, and proposed proceeds before presenting "
-                    "consolidation. A $120,000 refinance paying $108,000 of verified obligations "
-                    "and $4,000 of disclosed costs leaves $8,000 usable proceeds; it does "
-                    "not create $120,000 operating revenue. Avoid additional stacking that "
-                    "breaches existing covenants or conceals indebtedness. Use direct mail, "
-                    "compliant B2B work-email sequences, and manually human-dialed outreach "
-                    "as practical fallbacks, while checking applicable calling, email, "
-                    "broker, and state commercial financing disclosure requirements. Manual "
-                    "dialing is a channel choice, not a universal exemption."
-                ),
-            ],
-            "table": {
-                "caption": "Approved Spread Mechanics, Risk Ownership, and Concrete Fallbacks",
-                "headers": [
-                    "Operating application and transaction premise",
-                    "Illustrative unit math before operator expenses",
-                    "Required evidence and assigned risk owner",
-                    "Fallback when the premise fails verification",
-                ],
-                "rows": [
-                    [
-                        "Approved high-risk orchestration across properly disclosed merchant accounts",
-                        "$100,000 sales times 5.50% yields $5,500 merchant charges",
-                        "Sponsor confirms products, jurisdictions, descriptors, ownership, and retry rules",
-                        "Stop unsupported routing and decline boarding without an approved acquirer",
-                    ],
-                    [
-                        "Wholesale Schedule A residual capture after all contracted deductions",
-                        "$5,500 less $2,100 less $1,400 leaves $2,000 distributable residual",
-                        "Processor supplies complete cost schedule and auditable residual calculation",
-                        "Reprice transparently or reject accounts with unverifiable wholesale costs",
-                    ],
-                    [
-                        "Contractual retained share applied to the distributable processing residual",
-                        "$2,000 distributable residual times 50% produces $1,000 retained revenue",
-                        "Executed agreement defines splits, deductions, clawbacks, and surviving rights",
-                        "Exclude disputed amounts until contractual entitlement can be substantiated",
-                    ],
-                    [
-                        "High-risk rolling reserve securing merchant exposure under underwriting terms",
-                        "$100,000 monthly volume times 10% withholds $10,000 merchant collateral",
-                        "Sponsor identifies reserve custodian, release calendar, and setoff rights",
-                        "Require stronger collateral or refuse exposure beyond approved underwriting",
-                    ],
-                    [
-                        "Dispute deflection coordinated with supported pre-dispute resolution services",
-                        "Ten $80 approved refunds reverse $800 of merchant sales",
-                        "Merchant owns refund policy and processor confirms duplicate-credit controls",
-                        "Pause automation when alerts cannot match unique settled transactions",
-                    ],
-                    [
-                        "Approved dual pricing supported by transparent terminal and receipt logic",
-                        "$100 cash and $103 credit display a $3 price difference",
-                        "Acquirer reviews actual program classification and applicable pricing requirements",
-                        "Use ordinary pricing when debit handling or disclosures fail review",
-                    ],
-                    [
-                        "Verified UCC-triggered refinancing introduction without concealed debt stacking",
-                        "$120,000 proceeds less $108,000 payoff less $4,000 costs leaves $8,000",
-                        "Borrower authorizes payoff verification and funder owns credit decision",
-                        "Reject unsupported payoff assumptions and return to documented obligations",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify authority, economics, disclosures, and recoverability before launch",
-                "body": (
-                    "Treat these four checks as documented pre-flight conditions for each "
-                    "merchant, venue, and funding relationship."
-                ),
-                "items": [
-                    "Obtain sponsor confirmation that every MID, product category, merchant descriptor, jurisdiction, and permitted retry path matches the approved operating model.",
-                    "Rebuild a sample residual using the complete Schedule A, retained share, reserve terms, and all transaction charges; reject unexplained spread assumptions.",
-                    "Test ATM fee election, credit surcharge or dual-price display, debit treatment, cancellation behavior, and receipt output against current applicable rules.",
-                    "Verify payer identity, bank instructions, lien and payoff evidence where relevant, contractual deductions, and the exact event that makes compensation payable.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Choose settlement rails that preserve custody boundaries and collection evidence",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Card acceptance follows authorization, capture, clearing, and settlement; "
-                    "none is interchangeable with a final guarantee of merchant proceeds. "
-                    "The issuer approves an authorization through the network and acquirer, "
-                    "the merchant submits capture, and the acquirer calculates funding "
-                    "under its merchant agreement. The sponsor or processor funds the "
-                    "verified merchant account after applicable fees, reserves, refunds, "
-                    "and other adjustments. The ISO ordinarily receives its separately "
-                    "calculated residual on the processor's contractual payment cycle, "
-                    "often after month end. The ISO should not collect merchant sales "
-                    "into its operating account to simplify reconciliation. An ATM "
-                    "withdrawal instead debits the cardholder through the supported "
-                    "network, dispenses physical cash, and produces settlement entries "
-                    "that reimburse the appropriate cash-funding party and allocate "
-                    "charges. Match terminal identifier, transaction reference, journal, "
-                    "dispense status, and settlement report before declaring a shortage "
-                    "or paying venue commissions. A reversed or partially dispensed "
-                    "transaction requires the processor's adjustment procedure. Daily "
-                    "proof should reconcile cash loaded, cash dispensed, remaining "
-                    "inventory, and settlement receivables. Neither merchant settlement "
-                    "balances nor ATM cash reimbursements should enter the ISO's "
-                    "retained-revenue ledger. Keep operational access to reports separate "
-                    "from authority to redirect funds or change beneficiary accounts."
-                ),
-                (
-                    "The eight-rail matrix distinguishes actual transfer mechanisms from "
-                    "commercial payment arrangements. Wire and ACH move money; escrow, "
-                    "retainers, statutory disbursement, platform checkout, factoring, and "
-                    "milestone holds describe custody, contracting, or collection structures "
-                    "that may themselves use those mechanisms. Select the arrangement "
-                    "according to the payable obligation, not the sales team's preference. "
-                    "A $2,000 installation invoice can use a $500 retainer and $1,500 "
-                    "documented completion payment, while recurring processor residuals "
-                    "should follow the processor's contracted ledger and payout route. "
-                    "Escrow is appropriate only when an authorized independent provider "
-                    "accepts the transaction and release conditions; the ISO's ordinary "
-                    "bank account is not escrow. Statutory disbursement applies only "
-                    "where a specific legal process controls distribution, not as a "
-                    "label for ordinary merchant settlement. Factoring an earned receivable "
-                    "requires assignment rights and clarity about recourse, reserves, "
-                    "and obligor notice. A platform checkout receipt proves that a "
-                    "payment was initiated, not that chargebacks or refunds are "
-                    "impossible. For wires, independently verify instructions using "
-                    "a known contact and segregate beneficiary changes from payment "
-                    "release. For ACH, preserve authorization, account validation where "
-                    "required, and return handling; consumer and business protections "
-                    "differ by transaction and governing rules."
-                ),
-                (
-                    "Protect fees with precise earning events rather than ownership "
-                    "claims over the merchant's entire cash flow. The ISO agreement "
-                    "should define the residual calculation, payment deadline, statement "
-                    "delivery, permitted setoffs, audit access, termination effects, "
-                    "portfolio transfer rules, and survival of earned payment rights. "
-                    "A narrowly drafted non-circumvention provision can address introduced "
-                    "accounts, but processor acceptance, attribution evidence, and "
-                    "commercial enforceability matter more than aggressive wording. "
-                    "A merchant service order should distinguish gateway subscription "
-                    "charges from pass-through processing deductions and state what "
-                    "happens after account closure. Never attempt to collect an "
-                    "unrelated service invoice by redirecting card settlement without "
-                    "contractual and sponsor authority. Credit screening begins with "
-                    "verified entity records, beneficial ownership required by the "
-                    "sponsor, operating history, bank evidence obtained with authorization, "
-                    "refund practices, and financial capacity. Ask the sponsor to "
-                    "perform authorized MATCH and network screening; do not treat "
-                    "a clean search as credit approval. For a $10,000 monthly "
-                    "residual payer, a two-month delay creates $20,000 of exposure. "
-                    "Set an escalation threshold, stop adding unsecured exposure "
-                    "when statements become unreliable, and use contractual collection "
-                    "remedies. Reserve availability belongs in the counterparty "
-                    "assessment but cannot be assumed available to satisfy the ISO's "
-                    "own overdue invoices."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Payment and Settlement Arrangements Compared by Authority and Failure Mode",
-                "headers": [
-                    "Rail or commercial payment arrangement",
-                    "Suitable obligation and illustrative payment structure",
-                    "Authority and release evidence required for use",
-                    "Principal failure mode and operator response",
-                ],
-                "rows": [
-                    [
-                        "Bank wire through the payer's verified banking relationship",
-                        "Pay a $12,000 equipment purchase to the contracted supplier",
-                        "Authorized treasury release follows independent confirmation of beneficiary instructions",
-                        "Misdirected funds may resist recovery; verify before initiating payment",
-                    ],
-                    [
-                        "Independent escrow under documented custody and release instructions",
-                        "Hold $20,000 portfolio consideration until agreed transfer evidence arrives",
-                        "Authorized escrow provider follows signed conditions accepted by both parties",
-                        "Disputed milestones freeze release; specify evidence and dispute procedure",
-                    ],
-                    [
-                        "ACH credit or debit through an authorized banking arrangement",
-                        "Receive monthly processor residuals or collect authorized gateway subscriptions",
-                        "Preserve correct authorization, account details, payout reports, and return handling",
-                        "Returns disrupt expected cash; investigate codes before permitted reinitiation",
-                    ],
-                    [
-                        "Service retainer governed by an explicit engagement agreement",
-                        "Collect $500 toward a $2,000 documented installation service engagement",
-                        "Agreement states application, refund terms, and service delivery obligations",
-                        "Unearned collections require appropriate liability treatment until services occur",
-                    ],
-                    [
-                        "Statutory disbursement within a specifically applicable legal distribution process",
-                        "Receive an allowed claim distribution from an authorized legal administrator",
-                        "Applicable order or statute determines recipient priority and payment authority",
-                        "Incorrect priority delays payment; obtain controlling distribution documentation first",
-                    ],
-                    [
-                        "Platform checkout operated by an approved payment service provider",
-                        "Collect a separately authorized $200 equipment support service charge",
-                        "Merchant configuration, customer authorization, and service evidence support collection",
-                        "Refunds and disputes reverse proceeds; maintain fulfillment and refund records",
-                    ],
-                    [
-                        "Receivable factoring under an enforceable assignment and funding contract",
-                        "Advance $9,000 against a verified $10,000 earned contractual receivable",
-                        "Confirm assignment permission, obligor notice, advance terms, and recourse",
-                        "Fees and recourse reduce value; reject prohibited residual assignments",
-                    ],
-                    [
-                        "Milestone holds tied to objective delivery and acceptance evidence",
-                        "Release $1,500 after completing the installation following a $500 retainer",
-                        "Named acceptance authority signs measurable installation and connectivity criteria",
-                        "Subjective acceptance invites delay; specify tests and dispute timing",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Map the obligation and authorized payer",
-                    "action": "Identify the legal payer, beneficiary, earning event, and person empowered to approve payment.",
-                    "detail": "Separate merchant proceeds, reserve collateral, vault cash, venue allocations, and the operator's own earned fees.",
-                },
-                {
-                    "step": 2,
-                    "title": "Approve the contractual movement of funds",
-                    "action": "Document the appropriate rail, custody arrangement, deduction rights, and release evidence.",
-                    "detail": "Use independent beneficiary verification and keep bank-detail maintenance separate from payment release authority.",
-                },
-                {
-                    "step": 3,
-                    "title": "Reconcile transaction evidence to the payout",
-                    "action": "Match processor batches or ATM journals to settlement reports, residual statements, and bank entries.",
-                    "detail": "Investigate missing references, duplicate credits, reversals, venue allocations, and reserve changes before closing the period.",
-                },
-                {
-                    "step": 4,
-                    "title": "Escalate exceptions without diverting customer funds",
-                    "action": "Open a dated collection or reconciliation case and apply the agreement's documented remedies.",
-                    "detail": "Pause additional unsecured exposure where permitted; never seize merchant settlement or vault cash to cover unrelated invoices.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Reconcile retained economics and build a defensible collection cadence",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Formula v2.0 labels the three scorecard totals gross revenue, but "
-                    "this candidate's specified basis is net retained ISO residuals, "
-                    "gateway markups, and ATM surcharges. Use that basis consistently "
-                    "and document principal-versus-agent conclusions under ASC 606 for "
-                    "the actual contracts. Do not mechanically net every receipt: "
-                    "determine which amounts the operator controls as principal and "
-                    "which it collects or reports for others. For this scorecard, "
-                    "the retained_share adjustment belongs before the displayed revenue "
-                    "total, and a share already removed must not be deducted again. "
-                    "An illustrative Conservative bridge is 150 merchant accounts "
-                    "at $30 monthly retained residual, or $54,000 annually; 150 "
-                    "gateway accounts at $10 monthly retained markup, or $18,000; "
-                    "and 18,000 annual ATM withdrawals at $1 retained surcharge, "
-                    "or $18,000. Total retained revenue is exactly $90,000. "
-                    "Deducting $63,000 of annual operating costs leaves $27,000 "
-                    "owner net profit and a 30% margin with 1 FT + 3 C. "
-                    "These account and transaction counts are illustrative "
-                    "reconciliations, not additional canonical inputs or measured "
-                    "portfolio performance. Merchant card volume and dispensed "
-                    "currency are intentionally absent from revenue. A separate "
-                    "cash forecast must address residual payment delays, expense "
-                    "timing, and any operator-owned vault-cash requirements."
-                ),
-                (
-                    "The Base bridge uses 500 merchants at $50 monthly retained "
-                    "residual, producing $300,000 annually, plus 250 gateway accounts "
-                    "at $15 monthly retained markup, producing $45,000. Another "
-                    "50,000 annual ATM withdrawals at $2 retained surcharge "
-                    "contribute $100,000. That totals $445,000; $255,875 of "
-                    "annual costs leaves exactly $189,125 owner net profit, "
-                    "a 42.5% margin, with 1 FT + 3 C. The Scaled bridge "
-                    "uses 800 merchants at $60 monthly retained residual "
-                    "for $576,000, 400 gateways at $20 monthly retained "
-                    "markup for $96,000, and 64,000 annual ATM withdrawals "
-                    "at $2 retained surcharge for $128,000. Revenue is "
-                    "$800,000; costs of $360,000 leave $440,000 owner "
-                    "net profit, a 55% margin, with 2 FT + 4 C. "
-                    "Account overlap is allowed because gateway markup pays "
-                    "for a distinct contracted service; duplicate residual "
-                    "entries are not. Staffing labels describe headcount "
-                    "categories, not assumed contractor hours or compensation. "
-                    "The supplied monthly opex range of $1,500–$10,000 "
-                    "is an operating planning range, not a substitute "
-                    "for these full annual cost totals. At Base, losing "
-                    "50 accounts contributing $50 monthly removes $30,000 "
-                    "annual residual revenue before replacement costs or "
-                    "any reduction in expenses."
-                ),
-                (
-                    "Close monthly using IRIS CRM exports, processor statements, "
-                    "gateway invoices, ATM telemetry, and bank records rather "
-                    "than treating a dashboard balance as collected profit. "
-                    "Record opening receivables, earned retained fees, reversals, "
-                    "collections, and closing receivables by contractual payer. "
-                    "Age exceptions against actual due dates, and separate "
-                    "merchant attrition from processor underpayment. Audit rate "
-                    "changes and portfolio transfers because the same merchant "
-                    "can survive while its residual economics deteriorate. "
-                    "For pricing, apply current Visa and Mastercard rules "
-                    "alongside state requirements; credit surcharging, cash "
-                    "discounts, and dual pricing are not interchangeable "
-                    "labels. Do not surcharge debit transactions merely "
-                    "because the terminal processes them without a PIN. "
-                    "Durbin provisions govern debit interchange and network "
-                    "issues but do not independently authorize every merchant "
-                    "pricing program. For ATMs, preserve Reg E fee-election "
-                    "evidence and distinguish an ordinary withdrawal-only "
-                    "machine from added services that could change FinCEN "
-                    "analysis. Remote telemetry should generate cash and "
-                    "connectivity exceptions, not autonomously bypass settlement "
-                    "controls. Finally, define who reviews disputed residuals, "
-                    "who authorizes refunds, and who contacts a late payer. "
-                    "A small team scales when each exception has an "
-                    "owner, source evidence, and a resolution deadline, "
-                    "not when customer money temporarily masks missing fees."
-                ),
-            ],
-            "table": {
-                "caption": "Exact Canonical Economics and the Monthly Evidence That Protects Them",
-                "headers": [
-                    "Scenario or control being reconciled",
-                    "Revenue bridge or observable operating event",
-                    "Required cost, profit, or ledger treatment",
-                    "Evidence and response when reconciliation breaks",
-                ],
-                "rows": [
-                    [
-                        "Conservative case staffed by one full-time operator and three contractors",
-                        "$54,000 residuals plus $18,000 gateway markups plus $18,000 ATM surcharges",
-                        "$90,000 revenue minus $63,000 costs equals $27,000 profit at 30%",
-                        "Match retained components to statements; exclude all merchant settlement balances",
-                    ],
-                    [
-                        "Base case staffed by one full-time operator and three contractors",
-                        "$300,000 residuals plus $45,000 gateway markups plus $100,000 ATM surcharges",
-                        "$445,000 revenue minus $255,875 costs equals $189,125 profit at 42.5%",
-                        "Confirm account counts and withdrawals without duplicating gateway-related residual entries",
-                    ],
-                    [
-                        "Scaled case staffed by two full-time operators and four contractors",
-                        "$576,000 residuals plus $96,000 gateway markups plus $128,000 ATM surcharges",
-                        "$800,000 revenue minus $360,000 costs equals $440,000 profit at 55%",
-                        "Reconcile six-person operating capacity against actual service and exception workloads",
-                    ],
-                    [
-                        "Contractual retained share applied before scorecard revenue presentation",
-                        "$2,000 distributable residual times 50% creates $1,000 operator entitlement",
-                        "Do not deduct the same contractual partner share twice",
-                        "Inspect executed split schedules and document principal-versus-agent accounting conclusions",
-                    ],
-                    [
-                        "Reserve movement kept outside the operator's retained revenue bridge",
-                        "$100,000 merchant sales generate $10,000 withheld at a 10% reserve",
-                        "Track merchant collateral separately from processing fees and owner profit",
-                        "Match reserve releases to the sponsor's dated contractual release schedule",
-                    ],
-                    [
-                        "ATM cash ownership reconciled separately from earned withdrawal surcharges",
-                        "A $15,000 owned cash load funds withdrawals without creating sales",
-                        "Reconcile inventory and reimbursement receivables without recognizing currency as revenue",
-                        "Compare journals, cassette counts, reversals, telemetry, and settlement bank entries",
-                    ],
-                    [
-                        "Attrition sensitivity tracked separately from canonical scenario margin assumptions",
-                        "Fifty lost merchants times $50 monthly removes $30,000 annual revenue",
-                        "Reforecast costs explicitly rather than preserving the old margin automatically",
-                        "Investigate closures, rate matching, service failures, and disputed residual deductions",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Own the evidence for your fee, not the customer's settlement money.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Build a payer-authority register covering merchant signers, treasury contacts, sponsor settlement owners, venue principals, vault-cash owners, and referral commission payers.",
-        "Reconstruct one approved merchant's complete Schedule A calculation, including all charges, contractual retained share, reserve withholding, and the processor's residual payment date.",
-        "Document approved MID routing, prohibited retry responses, descriptor matching, 3DS2 treatment, supported dispute services, and the fallback when no acquirer supports the activity.",
-        "Test each ATM's pre-transaction fee disclosure and cancellation flow, then reconcile terminal journals, physical cash, network settlement, and venue allocations.",
-        "Verify UCC-triggered prospects against actual funding dates, payoff evidence, existing liens, outreach requirements, and written commission attribution before making introductions.",
-        "Close a sample month to the exact $90,000, $445,000, or $800,000 annual retained-revenue basis, separating customer funds, reserves, referral illustrations, and collection timing.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "12 CFR 1005.16 — Disclosures at automated teller machines",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1005/section-1005.16",
-            "relevance": (
-                "Requires applicable ATM fee disclosure by screen or paper before the "
-                "consumer is committed and permits charging only after the consumer "
-                "receives the notice and elects to continue."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 1693o-2 — Reasonable fees and rules for payment card transactions",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1693o-2",
-            "relevance": (
-                "Provides the statutory framework for debit interchange regulation, "
-                "network restrictions, and specified merchant discount protections; "
-                "does not replace applicable network or state pricing requirements."
-            ),
-        },
-        {
-            "title": "12 CFR 235.7 — Limitations on payment card restrictions",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-II/subchapter-A/part-235/section-235.7",
-            "relevance": (
-                "Addresses debit network exclusivity and routing restrictions; informs "
-                "routing design without authorizing merchant identity substitution "
-                "or unsupported acquiring relationships."
-            ),
-        },
-        {
-            "title": "UCC 9-515 — Duration and effectiveness of financing statement; effect of lapsed financing statement",
-            "url": "https://www.law.cornell.edu/ucc/9/9-515",
-            "relevance": (
-                "Explains ordinary five-year filing effectiveness and the six-month "
-                "continuation window, subject to exceptions. Verify the governing "
-                "state enactment; filing lapse is distinct from debt maturity."
-            ),
-        },
-        {
-            "title": "47 U.S.C. 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Establishes federal restrictions relevant to telephone solicitation "
-                "and specified calling technologies; manual dialing does not resolve "
-                "every applicable federal or state outreach requirement."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 7704 — Other protections for users of commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Governs commercial email practices including truthful transmission "
-                "information, required identification and address information, "
-                "and functioning opt-out procedures for B2B prospecting."
-            ),
-        },
-        {
-            "title": "31 CFR 1010.100(ff) — Money services business definitions",
-            "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/section-1010.100",
-            "relevance": (
-                "Defines money services business categories relevant to evaluating "
-                "actual ATM and payment activities, especially when services extend "
-                "beyond conventional withdrawal-only operation."
-            ),
-        },
-    ],
-}
+CHAPTER_2 = {'id': 'Q2',
+ 'chapter_id': 'Q2',
+ 'chapter_number': 2,
+ 'question_number': 2,
+ 'slug': 'q02-merchant-pricing-models-statement-analysis',
+ 'question_prompt': 'How do interchange, tiered, flat-rate, interchange-plus, and subscription pricing '
+                    'compare, and how do you read a merchant statement to find the real cost?',
+ 'kicker': 'Q2 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Merchant Pricing Models and Statement Analysis',
+ 'subtitle': 'Interchange basics; tiered vs. interchange-plus vs. flat-rate vs. subscription pricing; '
+             'which structure pays the agent more; and reading tiered and cost-plus statements line by '
+             'line to find hidden fees',
+ 'layout_template': 'executive_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners across BancardSales, CCSalesPro, Merchant Maverick, Helcim and '
+                      'MerchantAccounts.ca agree that interchange is the fixed wholesale floor under every '
+                      'pricing model, identical across processors and non-negotiable, so the only lever is '
+                      'the processor markup and the card-acceptance habits that keep transactions in '
+                      'cheaper categories. The street mechanics are statement math: total interchange '
+                      'divided by volume should land near 1.7 percent, total fees minus interchange '
+                      'exposes markup, and tier statements are judged by card mix before rates, with 60 to '
+                      '70 percent qualified expected for storefronts. Agents price from Schedule A costs, '
+                      'using per-item fees to survive small-ticket debit. The split comes on tiered '
+                      'pricing: Merchant Maverick and Joe Wagner call it a buried-markup red flag, while '
+                      'Bryan Manning and Paygent AI argue the right model is situational, with Manning '
+                      'naming the effective rate as the only undisputed yardstick.',
+ 'key_metrics': [{'label': 'Average US Interchange Effective Rate',
+                  'metric': 'Average US Interchange Effective Rate',
+                  'value': '1.7 percent (1.6 to 1.8 percent is about right)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Total interchange divided by total volume on an interchange plus statement, '
+                             'stated as the US average in May 2019',
+                  'source': 'CCSalesPro ([2Sn4XMqpW4I @ 00:01:46])'},
+                 {'label': 'Interchange Share of Total Processing Cost',
+                  'metric': 'Interchange Share of Total Processing Cost',
+                  'value': 'Roughly 70 to 90 percent',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Portion of transaction processing costs that goes to interchange depending '
+                             'on the rate plan, with the rest going to the processor and card association',
+                  'source': 'Merchant Maverick ([dUz90pAXTm0 @ 00:02:30])'},
+                 {'label': 'Uncompetitive Markup Threshold at Mid Volume',
+                  'metric': 'Uncompetitive Markup Threshold at Mid Volume',
+                  'value': 'More than about 0.7 percent markup at 20,000 to 40,000 dollars monthly volume',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Markup effective rate (total fees minus interchange, divided by volume) '
+                             'above this level signals a savings opportunity',
+                  'source': 'CCSalesPro ([2Sn4XMqpW4I @ 00:06:40])'},
+                 {'label': 'Small-Ticket Flat Rate Loss Trap',
+                  'metric': 'Small-Ticket Flat Rate Loss Trap',
+                  'value': 'About 33 cents of per-item cost on a 2 dollar ticket, roughly 15 percent cost '
+                           'against a 3.5 percent flat rate',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Agents who sold a coffee shop on 3.5 percent flat rate owed money back to '
+                             'the processor on their first residual statement',
+                  'source': 'CCSalesPro ([fb0PHmE8aCc @ 00:04:55])'}],
+ 'sections': [{'section': 1,
+               'heading': 'The Practitioner Consensus',
+               'paragraphs': ['Every practitioner starts from the same floor: interchange. Bryan Manning '
+                              'of BancardSales frames it as the prime rate of payments, a published '
+                              'schedule of hundreds of categories that is the same for every processing '
+                              'company and acts as the base cost for credit and debit acceptance '
+                              '[AseZioaNb5s @ 00:01:14]. Ahmad at Merchant Maverick calls it the wholesale '
+                              'layer set by Visa and Mastercard, shared between the card associations and '
+                              'issuing banks like Chase, Wells Fargo and Bank of America, and flatly '
+                              'states those fees cannot be negotiated [h72ua8pD9cU @ 00:04:38]. David at '
+                              'MerchantAccounts.ca makes the same point from the Canadian side: '
+                              'interchange is set at a country level, so switching processors never '
+                              'changes the underlying cost structure, and nearly all of it flows to the '
+                              'card issuing bank with a roughly 0.1 percent card brand fee layered on top '
+                              '[btemhvIers4 @ 00:00:47]. PaymentCloud closes the loop for the merchant '
+                              'across the desk: because issuing banks assign interchange, there is no way '
+                              'to lower it, but the discount rate the processor adds to each transaction '
+                              'is open for negotiation [xfBalp9Zzio @ 00:06:31]. The practical consensus '
+                              'is blunt. The only money in play is the markup, so every pitch, audit and '
+                              'repricing targets that layer and nothing beneath it.',
+                              'The practitioners also agree on what pushes a transaction into a cheap or '
+                              'expensive category. Manning lists the business type and MCC code, '
+                              'face-to-face versus internet acceptance, average ticket, consumer versus '
+                              'business or corporate cards, interchange optimization technology and daily '
+                              'settlement, noting each card lands in one and only one category and that '
+                              'the brands publish changes twice a year, spring and fall [AseZioaNb5s @ '
+                              '00:02:37]. Merchant Maverick puts a ratio on the card-type gap: credit '
+                              'interchange runs roughly six times higher than debit, rewards cards cost '
+                              'more, and interchange eats roughly 70 to 90 percent of total processing '
+                              'cost depending on the rate plan [dUz90pAXTm0 @ 00:02:30]. James Shepherd of '
+                              'CCSalesPro adds the industry layer most merchants miss, explaining that the '
+                              'same card spending 100 dollars costs a grocery store less than a retail '
+                              'store because grocers run on their own interchange table, while B2B cards '
+                              'and rewards cards cost more and debit usually costs significantly less '
+                              'except at tiny-ticket shops like coffee [bdumFSr4sA8 @ 00:04:25]. Manning '
+                              'turns that into merchant-side habits: run AVS, key the three-digit code and '
+                              'billing zip, settle daily, swipe or dip whenever the card is present, and '
+                              'void instead of refunding, all to qualify more transactions into the lower '
+                              'interchange category [AseZioaNb5s @ 00:04:57].',
+                              "The third point of agreement is that the processor's underlying cost never "
+                              'moves with the pricing label on the account. Shepherd tells a newly '
+                              'independent agent that whether a 10,000 dollar pizza shop sits on '
+                              'interchange plus, tiered, flat rate, surcharging or cash discounting, the '
+                              'roughly 200 dollars of interchange plus dues, assessments and Schedule A '
+                              'per-item costs stays identical, so revenue depends entirely on how the deal '
+                              'is priced [fb0PHmE8aCc @ 00:01:07]. Shepherd reduces the choice to '
+                              'simplicity versus transparency: larger accounts want interchange plus not '
+                              'because it is cheaper but because the statement shows cost and markup line '
+                              'by line, while smaller merchants are drifting from tiered to a single flat '
+                              'rate because they do not want fifty lines on a statement [fb0PHmE8aCc @ '
+                              '00:02:51]. David at MerchantAccounts.ca lands in the same place, saying '
+                              'flat pricing can suit a small merchant who mostly wants easy '
+                              'reconciliation, but every large merchant on the planet belongs on '
+                              "interchange plus [btemhvIers4 @ 00:04:58]. Manning's tiebreaker is the "
+                              'effective rate: every model collapses into one end-of-month number, and '
+                              'that rate is the only undisputed figure for comparing any two providers '
+                              '[5jk-0XxkiR0 @ 00:11:32]. In practice, operators read every model through '
+                              'that single number before arguing about labels.'],
+               'table': {'caption': 'Where the practitioners line up on interchange, cost floors and model '
+                                    'choice',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Reports',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Interchange is a fixed base cost for everyone',
+                                   'Same schedule for every processor, compared to the prime rate in '
+                                   'mortgage lending',
+                                   'Stop shopping interchange and attack the processor markup layer '
+                                   'instead',
+                                   'BancardSales ([AseZioaNb5s @ 00:01:14])'],
+                                  ['Published interchange cannot be discounted by a sales rep',
+                                   'Be careful when a merchant account rep offers a discount on standard '
+                                   'interchange',
+                                   'Treat any promised interchange discount as a warning sign during '
+                                   'competitive pitches',
+                                   'Merchant Maverick ([dUz90pAXTm0 @ 00:03:58])'],
+                                  ['Interchange dominates the total processing bill every month',
+                                   'Roughly 70 to 90 percent of processing cost goes to interchange fees',
+                                   'Markup is the remaining slice where processors earn money and compete '
+                                   'for accounts',
+                                   'Merchant Maverick ([dUz90pAXTm0 @ 00:02:30])'],
+                                  ['Card type drives the category cost on every swipe',
+                                   'Rewards and ultra premium cards cost more while debit costs far less '
+                                   'than credit',
+                                   'Read the card mix before judging any quoted rate on a statement',
+                                   'MerchantAccounts.ca ([btemhvIers4 @ 00:01:02])'],
+                                  ['Agent cost is identical across every pricing model',
+                                   'Schedule A interchange, dues, assessments and per-item costs never '
+                                   'change with the pricing label',
+                                   'Agent revenue depends entirely on the markup level chosen for the deal',
+                                   'CCSalesPro ([fb0PHmE8aCc @ 00:01:41])'],
+                                  ['Effective rate is the universal comparison yardstick',
+                                   'Every pricing model yields one single end-of-month rate for the '
+                                   'merchant account',
+                                   'Compare any two providers on effective rate before trusting '
+                                   'transparency labels',
+                                   'BancardSales ([5jk-0XxkiR0 @ 00:11:32])'],
+                                  ['Growing merchants are rewarded on interchange plus pricing',
+                                   'Volume milestones unlock lower markup because cost is separated from '
+                                   'margin',
+                                   'Pitch interchange plus to bigger accounts and flat rate to the '
+                                   'smallest ones',
+                                   'Helcim ([cZ2DaswdAqo @ 00:07:43])']]}},
+              {'section': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Statement work starts with identifying the pricing model in seconds, before '
+                              "touching a single rate. Shepherd's rule for tiered statements is to scan "
+                              'for qualified, mid-qualified and non-qualified, usually abbreviated as '
+                              'qual, m-qual and n-qual, and the presence of those words alone confirms '
+                              'tier pricing [RxgrRsVThx4 @ 00:00:00]. An interchange plus statement '
+                              'instead carries a huge interchange table of incomprehensible abbreviations, '
+                              'anywhere from ten to 200 lines, plus a total interchange figure; Shepherd '
+                              'treats a supposed cost-plus statement with no total interchange amount as '
+                              'suspicious on sight [2Sn4XMqpW4I @ 00:05:13]. The disguise to watch for is '
+                              'tiered pricing dressed up as an interchange table: the category names are '
+                              'real, but scanning down the rate column shows only three or four distinct '
+                              'rates repeating across many lines, which means bucketed rates are being '
+                              'displayed like pass-through [XEaaN73nJ6Q @ 00:06:39]. Subscription pricing '
+                              'announces itself as one large monthly subscription or monthly fee around 40 '
+                              'or 50 dollars, with everything else presented as Visa and Mastercard cost, '
+                              'though Shepherd warns that small network-access fees often carry hidden '
+                              'markup on top of the subscription, and that processors mostly offer it to '
+                              'small merchants who would pay only about 30 dollars of markup on tiered '
+                              'pricing, overpaying roughly 20 dollars a month [aZv0u_x9ipQ @ 00:00:42].',
+                              'Once the model is known, the arithmetic is simple enough to run at a '
+                              'counter. Shepherd divides total interchange by total volume and expects '
+                              'roughly 1.7 percent, with 1.6 to 1.8 percent normal, small-ticket '
+                              'debit-heavy shops near 2.5 to 2.7 percent, large-ticket rewards and B2B '
+                              'merchants around 2.2 to 2.8 percent, and debit-heavy auto repair as low as '
+                              '1 percent [2Sn4XMqpW4I @ 00:03:03]. Total fees minus total interchange is '
+                              'the markup; divide that by volume and benchmark it against size: 1 to 1.5 '
+                              'percent is unremarkable under 10,000 dollars a month, anything over about '
+                              '0.7 percent at 20,000 to 40,000 is uncompetitive, and above 60,000 even 0.3 '
+                              'percent probably has a better offer waiting [2Sn4XMqpW4I @ 00:06:22]. David '
+                              'shows the per-card math in Canada: a basic Visa at 1.4 percent interchange '
+                              'plus a 0.1 percent card brand fee is a 1.5 percent cost, so interchange '
+                              'plus 0.5 percent bills the merchant 2 percent on that card [btemhvIers4 @ '
+                              '00:02:07]. The markup ladder then steps down with size, with David quoting '
+                              'around 0.25 over interchange at a million dollars a month for low-risk '
+                              'product and about 0.15 at ten million [btemhvIers4 @ 00:03:42].',
+                              "On tiered statements, Shepherd's first move is card mix, not rates: a "
+                              'storefront retailer, restaurant or auto shop should show 60 to 70 percent '
+                              'qualified with the rest split roughly evenly between mid and non-qualified, '
+                              'and anything lower usually means savings are sitting on the table '
+                              '[RxgrRsVThx4 @ 00:02:54]. The quickest rate win is converting a blended '
+                              'qualified rate into four-tier pricing with a separate, cheaper debit and '
+                              'check card qualified rate. On the agent side, the CCSalesPro coach dissects '
+                              'a live deal priced at 1.45, 2.29 and 3.5 percent plus 10 and 15 cent item '
+                              'fees: with regulated debit costing about 22 cents and five basis points, '
+                              'that 25 cents covers the per-item cost and the qualified basis points on '
+                              'debit are almost all profit [fb0PHmE8aCc @ 00:06:41]. For a 240 dollar '
+                              'average ticket, the play is interchange plus 40 basis points and 10 cents '
+                              'for a large account, or for one doing 20,000 dollars a month or less, a '
+                              'simplified flat 2.15 percent and 25 cents, keeping a high per-item fee '
+                              'because nothing else is passed through [fb0PHmE8aCc @ 00:08:16]. The '
+                              "coach's final call was to simply match the existing tiered pricing, because "
+                              'the mid and non-qualified bumps protect margin if next month brings rewards '
+                              'and corporate cards instead of debit [fb0PHmE8aCc @ 00:10:06].'],
+               'table': {'caption': 'Statement math, benchmarks and tools the practitioners actually run',
+                         'headers': ['Mechanic or Tool',
+                                     'Exact Numbers or Workflow',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Interchange effective rate check on cost-plus statements',
+                                   'Total interchange divided by total volume should land near 1.7 percent',
+                                   'Flags padded or marked-up interchange when the figure looks '
+                                   'dramatically off',
+                                   'CCSalesPro ([2Sn4XMqpW4I @ 00:03:03])'],
+                                  ['Markup extraction formula for any interchange plus statement',
+                                   'Total fees minus total interchange, then divided by total monthly '
+                                   'volume',
+                                   'Benchmarks markup against monthly volume bands to locate savings',
+                                   'CCSalesPro ([2Sn4XMqpW4I @ 00:05:31])'],
+                                  ['Tiered card mix benchmark for physical locations',
+                                   'Storefronts should show 60 to 70 percent qualified transactions each '
+                                   'month',
+                                   'A lower qualified share signals bucket games and an easy savings pitch',
+                                   'CCSalesPro ([RxgrRsVThx4 @ 00:02:54])'],
+                                  ['Canadian interchange plus per-card math',
+                                   '1.4 percent interchange plus 0.1 brand fee plus 0.5 markup equals 2 '
+                                   'percent',
+                                   'Shows the merchant exactly what the processor keeps on each card',
+                                   'MerchantAccounts.ca ([btemhvIers4 @ 00:02:29])'],
+                                  ['Small-ticket regulated debit per-item floor',
+                                   'Regulated debit runs about 22 cents plus five basis points per '
+                                   'transaction',
+                                   'Always load per-item fees into flat or tiered small-ticket deals',
+                                   'CCSalesPro ([fb0PHmE8aCc @ 00:07:14])'],
+                                  ['ISO Amp full-service statement analysis platform',
+                                   'Uploads return categorized fees, about 87 percent back in 20 minutes '
+                                   'or less',
+                                   'Converts any statement into side-by-side proposals across every '
+                                   'pricing model',
+                                   'CCSalesPro ([bdumFSr4sA8 @ 00:01:49])'],
+                                  ['Helcim free statement comparison calculator',
+                                   'Three inputs: current cost, online versus in-person split, volume by '
+                                   'card type',
+                                   'Estimates merchant savings from moving onto an interchange plus model',
+                                   'Helcim ([cZ2DaswdAqo @ 00:09:16])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Street-Level Pricing Edges From the Field',
+                           'body': 'These are the moves practitioners use to protect margin on their own '
+                                   "book and to find switch targets fast on someone else's statement.",
+                           'items': ['Never price an average ticket under about 15 dollars on flat or '
+                                     'tiered without a per-item fee; agents who sold a coffee shop at 3.5 '
+                                     'percent flat owed the processor money on the first residual '
+                                     '[CCSalesPro — fb0PHmE8aCc @ 00:05:24]',
+                                     'A merchant still on tiered pricing likely has not had fees reviewed '
+                                     'in years and is almost always overpaying, which makes the account a '
+                                     'prime switch target [Joe Wagner | Merchant Services & Passive Income '
+                                     '— XXH81AbZQcg @ 00:01:11]',
+                                     'Before switching processors, ask the current one to move the account '
+                                     'onto interchange plus, since the same processor may offer all three '
+                                     'models and cut fees without a switch [Paygent AI — xTWy5shtdSk @ '
+                                     '00:09:53]',
+                                     'Larger merchants who have stayed with a processor can trade a longer '
+                                     'contract term for a lower interchange markup [MerchantAccounts.ca — '
+                                     'btemhvIers4 @ 00:05:27]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Identify the pricing model',
+                              'action': 'Scan the statement for tier words, a full interchange table, or '
+                                        'one large monthly subscription fee.',
+                              'detail': 'Qual, m-qual and n-qual confirm tier pricing, while an '
+                                        'interchange table showing only three or four repeating rates is '
+                                        'tiered pricing displayed like pass-through [CCSalesPro — '
+                                        'RxgrRsVThx4 @ 00:00:00] [CCSalesPro — XEaaN73nJ6Q @ 00:06:39]'},
+                             {'step': 2,
+                              'title': 'Compute the effective and interchange rates',
+                              'action': 'Divide total fees by total volume, then total interchange by '
+                                        'total volume.',
+                              'detail': 'The interchange figure should sit near 1.7 percent, and the '
+                                        'overall effective rate is the one number that compares any '
+                                        'provider to any other [CCSalesPro — 2Sn4XMqpW4I @ 00:03:03] '
+                                        '[BancardSales — 5jk-0XxkiR0 @ 00:11:32]'},
+                             {'step': 3,
+                              'title': 'Isolate and benchmark the markup',
+                              'action': 'Subtract total interchange from total fees, divide by volume, and '
+                                        'compare to the volume band.',
+                              'detail': '1 to 1.5 percent is normal under 10,000 dollars a month, over 0.7 '
+                                        'percent at 20,000 to 40,000 is uncompetitive, and even 0.3 '
+                                        'percent above 60,000 can be beaten [CCSalesPro — 2Sn4XMqpW4I @ '
+                                        '00:06:22]'},
+                             {'step': 4,
+                              'title': 'Price the proposal from Schedule A cost',
+                              'action': 'Quote interchange plus to large accounts and a simplified flat '
+                                        'rate with a strong per-item fee to smaller ones.',
+                              'detail': 'Interchange plus 40 basis points and 10 cents for a big account, '
+                                        'or a flat 2.15 percent and 25 cents for one doing 20,000 dollars '
+                                        'a month or less [CCSalesPro — fb0PHmE8aCc @ 00:08:29]'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Tiered pricing is the sharpest split on the street. Ahmad at Merchant '
+                              'Maverick calls it the least transparent model and the worst one a merchant '
+                              'can sit on. He tells owners to ask their processor whether they are on it '
+                              'and to get off it immediately [h72ua8pD9cU @ 00:16:08]. Joe Wagner goes '
+                              'further for agents prospecting accounts. To him tiered is old school and '
+                              'intentionally vague, and a merchant still on it is a great sign, because '
+                              'they likely have not had their fees reviewed in years and are almost always '
+                              'overpaying [XXH81AbZQcg @ 00:01:11]. Bryan Manning at BancardSales pushes '
+                              'back hard. He rejects the claim that tier-based and flat rate programs are '
+                              'dishonest. He points out that Stripe and Square both boldly claim '
+                              'transparent pricing on their own pricing pages while running tier-based '
+                              'models, and concludes that true and transparent is just a subjective term '
+                              'people use for whatever model they prefer [5jk-0XxkiR0 @ 00:10:17]. '
+                              'CCSalesPro sits in between. When the host started fifteen years ago '
+                              'everybody was on tiered. It faded, then came back in a resurgence. Today '
+                              'the most common version is two-tier pricing, card present versus card not '
+                              'present, the structure PayPal, Square and Stripe run [XEaaN73nJ6Q @ '
+                              '00:04:26].',
+                              'Interchange plus gets the loudest endorsements, but even its champions make '
+                              'exceptions. David at MerchantAccounts.ca calls it the best model in the '
+                              'industry with literally no downside. He would quote a low-risk merchant '
+                              'doing a million dollars a month at 0.25 over interchange and a '
+                              'ten-million-dollar account at 0.15. He still concedes it is not always best '
+                              'for small merchants who just want something easy to reconcile, and flat '
+                              'pricing may suit them better [btemhvIers4 @ 00:04:58]. Helcim pitches '
+                              'scale: at 100K in monthly sales, an interchange plus merchant could see an '
+                              'effective rate under 1.5%, compared with the 2.5% or 2.9% Square or Stripe '
+                              'keep charging as volume grows [cZ2DaswdAqo @ 00:08:22]. Crystal Little at '
+                              'Paygent AI flips the flat-rate argument. She says card-not-present '
+                              'e-commerce shops benefit most from flat rate because their underlying '
+                              'interchange is already the highest. She even recommends splitting volume '
+                              'across two processors: interchange plus for in-person payments and a flat '
+                              'rate processor online [xTWy5shtdSk @ 00:12:34]. Subscription pricing draws '
+                              'the widest split. CCSalesPro flags that processors mostly hand it to small '
+                              'merchants who would pay only thirty dollars of markup on tier pricing '
+                              'instead of a fifty-dollar subscription, and that extra network-access fees '
+                              'get marked up on top [aZv0u_x9ipQ @ 00:01:19].',
+                              "On the agent side, CCSalesPro's coaching call reframes the whole debate "
+                              "around the agent's own books. Schedule A costs (interchange, card brand "
+                              'dues and assessments, per-item costs and BIN sponsorship) are identical '
+                              'whether you sell interchange plus, tiered, flat rate, surcharging or cash '
+                              'discounting. That leaves revenue as the only question, and revenue depends '
+                              'entirely on the level you price at. Interchange plus 90 basis points and 25 '
+                              'cents earns a lot, while interchange plus five basis points and three cents '
+                              'earns almost nothing [fb0PHmE8aCc @ 00:01:57]. For a debit-heavy merchant '
+                              'with a 240-dollar average ticket, the coach lays out two plays. Go in with '
+                              'interchange plus 40 basis points and 10 cents if the account is big. '
+                              'Simplify to a flat 2.15% and 25 cents across the board if they run 20,000 a '
+                              'month or less [fb0PHmE8aCc @ 00:08:29]. Contract terms split practitioners '
+                              'too. David at MerchantAccounts.ca wants young merchants on month-to-month '
+                              'interchange plus, but tells larger established merchants to trade a longer '
+                              'contract term for a lower interchange markup [btemhvIers4 @ 00:05:27]. '
+                              'Ahmad at Merchant Maverick, by contrast, ranks the early termination fee '
+                              'among the worst junk fees. It runs from a hundred dollars to thousands, and '
+                              'he says good processors do not charge one [h72ua8pD9cU @ 00:11:00].'],
+               'table': {'caption': 'Side-by-side practitioner splits on pricing models, merchant fit, and '
+                                    'contract strategy',
+                         'headers': ['Debate Point', 'Camp A Position', 'Camp B Position', 'Expert Source'],
+                         'rows': [['Is tiered pricing dishonest or just a different model',
+                                   'Merchant Maverick calls tiered the least transparent, worst model and '
+                                   'says get off it immediately',
+                                   'BancardSales says tier and flat rate are situational, noting Stripe '
+                                   'and Square claim transparent pricing',
+                                   'Merchant Maverick ([h72ua8pD9cU @ 00:16:08]); BancardSales '
+                                   '([5jk-0XxkiR0 @ 00:09:16])'],
+                                  ['Is interchange plus always the best model for everyone',
+                                   'MerchantAccounts.ca says literally no downside and every large '
+                                   'merchant on earth belongs on it',
+                                   'CCSalesPro says smaller merchants want simplicity and prefer one flat '
+                                   'rate over fifty statement lines',
+                                   'MerchantAccounts.ca ([btemhvIers4 @ 00:04:00]); CCSalesPro '
+                                   '([fb0PHmE8aCc @ 00:03:06])'],
+                                  ['Which merchant actually benefits most from flat rate pricing',
+                                   'Merchant Maverick says newer low-volume businesses, getting expensive '
+                                   'once volume climbs past 10K monthly',
+                                   'Paygent AI says card-not-present e-commerce shops benefit most because '
+                                   'their interchange is already highest',
+                                   'Merchant Maverick ([h72ua8pD9cU @ 00:18:45]); Paygent AI ([xTWy5shtdSk '
+                                   '@ 00:04:22])'],
+                                  ['Is subscription or membership pricing a good deal for merchants',
+                                   'Merchant Maverick calls membership pricing a great model for a certain '
+                                   'volume and sale amount',
+                                   'CCSalesPro says processors offer it mostly to small merchants who '
+                                   'overpay fifty dollars versus thirty',
+                                   'Merchant Maverick ([h72ua8pD9cU @ 00:17:37]); CCSalesPro ([aZv0u_x9ipQ '
+                                   '@ 00:01:19])'],
+                                  ['Should a card-present retail store ever use flat rate',
+                                   'BancardSales says skip the 2.6% flat minimum when merchant accounts '
+                                   'run over a point lower',
+                                   'BancardSales flip side: startups and seasonal companies may prefer '
+                                   'pay-as-you-go with no monthly fees',
+                                   'BancardSales ([5jk-0XxkiR0 @ 00:07:58]); BancardSales ([5jk-0XxkiR0 @ '
+                                   '00:08:27])'],
+                                  ['When does tiered pricing actually make sense for a merchant',
+                                   'Paygent AI says tiered fits B2B sellers and law offices with '
+                                   'predictable transaction flow',
+                                   'Paygent AI warns that when consumers pick any card freely, tiered '
+                                   'becomes a roll of the dice',
+                                   'Paygent AI ([xTWy5shtdSk @ 00:08:43]); Paygent AI ([xTWy5shtdSk @ '
+                                   '00:09:19])'],
+                                  ['Switch processors or just switch the pricing model in place',
+                                   'Paygent AI says call your current processor first because it may offer '
+                                   'all three models',
+                                   'Merchant Maverick says choosing the right processor is the difference '
+                                   'between getting swindled or treated fairly',
+                                   'Paygent AI ([xTWy5shtdSk @ 00:10:09]); Merchant Maverick ([h72ua8pD9cU '
+                                   '@ 00:05:07])']]},
+               'key_metrics': [{'label': 'Interchange plus markup for large low-risk merchants',
+                                'metric': 'Interchange plus markup for large low-risk merchants',
+                                'value': '0.25% over interchange at $1M/month; 0.15% at $10M/month',
+                                'confidence': 'attributed_practitioner_claim',
+                                'context': 'David at MerchantAccounts.ca quotes lower markups as volume '
+                                           'rises because the account needs less margin to service.',
+                                'source': 'MerchantAccounts.ca ([btemhvIers4 @ 00:03:42])'},
+                               {'label': 'Square card-present flat rate versus tier merchant account',
+                                'metric': 'Square card-present flat rate versus tier merchant account',
+                                'value': '2.6% + $0.10 versus an average below 1.8% on tier-based swiped '
+                                         'transactions',
+                                'confidence': 'attributed_practitioner_claim',
+                                'context': 'Bryan Manning notes the trade-off: merchant accounts usually '
+                                           'carry $10 to $25 monthly fees that Square does not charge.',
+                                'source': 'BancardSales ([5jk-0XxkiR0 @ 00:05:45])'},
+                               {'label': 'Interchange plus effective rate at $100K monthly sales',
+                                'metric': 'Interchange plus effective rate at $100K monthly sales',
+                                'value': 'Under 1.5% versus 2.5% to 2.9% on Square or Stripe',
+                                'confidence': 'attributed_practitioner_claim',
+                                'context': 'Helcim attributes the drop to a more predictable card mix at '
+                                           'scale plus volume discounts on markup.',
+                                'source': 'Helcim ([cZ2DaswdAqo @ 00:08:22])'}]},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive agent mistake is pricing a small-ticket account on '
+                              'percentage alone. CCSalesPro tells of agents who sold a coffee shop a flat '
+                              '3.5% across the board, opened their first residual statement, and found '
+                              'they had lost money and owed it back to the processor [fb0PHmE8aCc @ '
+                              '00:04:39]. The math is brutal. Regulated debit under the Durbin amendment '
+                              'carries 22 cents, card brand fees add a couple of cents, and a five-cent '
+                              'transaction fee rides on top. That puts roughly 33 cents of fixed cost on a '
+                              'customer spending two dollars, about 15% of the ticket against a 3.5% '
+                              "charge [fb0PHmE8aCc @ 00:05:08]. The coach's rule is that once the average "
+                              'ticket drops below 15 bucks, flat or tier pricing needs real per-item fees '
+                              'built in, or it will eat your lunch in a hurry. The second trap is trusting '
+                              'a single month. A debit-heavy account showing a 1.99 effective rate looks '
+                              'safe to flat-price near two percent and 25 cents. But if that month was a '
+                              'fluke and the merchant starts running rewards and corporate cards at two '
+                              'and a half to three percent, the margin shrinks very quickly. The safer '
+                              'play is matching the existing tier sheet so the mid-qualified and '
+                              'non-qualified buckets protect the margin [fb0PHmE8aCc @ 00:09:50].',
+                              'On the statement, the biggest error James Shepherd at CCSalesPro sees on '
+                              'tier pricing is reading the rates instead of the card mix. No industry rule '
+                              'says which transactions go into which bucket. Some processors post a really '
+                              'good qualified rate, put very few transactions there, and push most of the '
+                              'volume into non-qualified, the highest rate [RxgrRsVThx4 @ 00:02:40]. His '
+                              'benchmark is that a retailer, restaurant or auto repair shop should show '
+                              '60% to 70% qualified, with the rest split fairly evenly between '
+                              "mid-qualified and non-qualified. A pizza shop's phone orders belong in "
+                              'mid-qualified, but anything far outside that pattern points to savings '
+                              '[RxgrRsVThx4 @ 00:02:54]. Interchange plus has its own trap. If the '
+                              'statement never shows a total interchange amount, Shepherd calls it '
+                              'suspicious. If total interchange divided by total volume sits far from the '
+                              'roughly 1.7% national average, it may be what he calls interchange plus '
+                              'plus: marked-up interchange with hidden costs buried in the table '
+                              '[2Sn4XMqpW4I @ 00:04:13]. The markup check is total fees minus total '
+                              'interchange, divided by volume. At 20,000 to 40,000 a month, a markup above '
+                              'about 0.7% is most likely not competitive. Even 0.3% at 60,000 and up can '
+                              'probably be beaten [2Sn4XMqpW4I @ 00:06:40].',
+                              'Merchant-side traps cluster in the flat-fee lines. Ahmad at Merchant '
+                              'Maverick calls a terminal lease an absolutely horrible deal that ends up '
+                              'costing thousands of dollars for a 200 to 300 dollar piece of equipment. '
+                              "His rule is simple: don't ever get a terminal lease [h72ua8pD9cU @ "
+                              '00:09:20]. PaymentCloud warns that many processors implement annual rate '
+                              'increases, usually announced by a notice on the statement two to three '
+                              'months before they hit. It tells merchants to watch leasing and equipment '
+                              'fees, compliance and regulatory fees, PCI fees and monthly access fees to '
+                              'make sure they do not creep up [xfBalp9Zzio @ 00:04:53]. The same team '
+                              'calls chargebacks financial gremlins that nibble away at profits and can '
+                              'ultimately get the merchant account terminated. High-risk accounts can also '
+                              'have a percentage of sales held in a separate non-interest-bearing reserve '
+                              "account [xfBalp9Zzio @ 00:03:25]. Merchant Maverick's Maverick Minute adds "
+                              'a red flag for sales pitches: be careful if a merchant account rep offers a '
+                              'discount on the standard published interchange rates. The only way to '
+                              'eliminate or reduce interchange is to pass it on to customers, which '
+                              'Merchant Maverick calls a whole other can of worms [dUz90pAXTm0 @ '
+                              '00:03:58].'],
+               'table': {'caption': 'Firsthand failure modes, warning signs, and the unit economics behind '
+                                    'each trap',
+                         'headers': ['Failure Mode',
+                                     'What Happened Or Warning Sign',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Flat-rating a small-ticket coffee shop at 3.5% across the board',
+                                   'Agents opened their first residual statement and owed money back to '
+                                   'the processor',
+                                   'About 33 cents of fixed cost on a two-dollar ticket equals roughly 15%',
+                                   'CCSalesPro ([fb0PHmE8aCc @ 00:04:55])'],
+                                  ['Pricing a flat rate off one fluke debit-heavy month',
+                                   'Flat near two percent on a 1.99 effective account leaves no '
+                                   'rewards-card cushion',
+                                   'Rewards and corporate cards can cost two and a half to three percent '
+                                   'quickly',
+                                   'CCSalesPro ([fb0PHmE8aCc @ 00:09:50])'],
+                                  ['Reading tier rates while ignoring the actual card mix',
+                                   'Processor posts a great qualified rate but routes most volume into '
+                                   'non-qualified',
+                                   'Physical-location businesses should run 60% to 70% qualified '
+                                   'transactions',
+                                   'CCSalesPro ([RxgrRsVThx4 @ 00:02:54])'],
+                                  ['Interchange plus plus hiding inside an interchange table',
+                                   'Missing total interchange line, or interchange far off the national '
+                                   'average',
+                                   'Total interchange divided by volume should land near 1.6% to 1.8%',
+                                   'CCSalesPro ([2Sn4XMqpW4I @ 00:02:41])'],
+                                  ['Subscription pricing with marked-up network access fees stacked on top',
+                                   'Merchant pays the fifty-dollar subscription plus extra markup without '
+                                   'really knowing it',
+                                   'The same small merchant might pay only thirty dollars of markup on '
+                                   'tiers',
+                                   'CCSalesPro ([aZv0u_x9ipQ @ 00:02:05])'],
+                                  ['Leasing a credit card terminal instead of buying outright',
+                                   'Lease ends up costing thousands of dollars for a cheap piece of '
+                                   'equipment',
+                                   'Buying outright typically runs about 150 to 350 dollars per terminal',
+                                   'Merchant Maverick ([h72ua8pD9cU @ 00:09:20]); Merchant Maverick '
+                                   '([h72ua8pD9cU @ 00:09:06])'],
+                                  ["Missing the processor's annual rate increase notice on statements",
+                                   'Processors announce yearly increases two to three months ahead on the '
+                                   'statement',
+                                   'Watch leasing, PCI, compliance and monthly access fees for quiet creep',
+                                   'PaymentCloud ([xfBalp9Zzio @ 00:04:22])']]},
+               'key_metrics': [{'label': 'Fixed cost on a two-dollar coffee shop ticket',
+                                'metric': 'Fixed cost on a two-dollar coffee shop ticket',
+                                'value': 'About $0.33 per transaction, roughly 15% of the sale',
+                                'confidence': 'attributed_practitioner_claim',
+                                'context': 'Regulated debit at 22 cents plus card brand fees plus a '
+                                           'five-cent transaction fee wiped out a 3.5% flat rate.',
+                                'source': 'CCSalesPro ([fb0PHmE8aCc @ 00:05:08])'},
+                               {'label': 'Interchange share of total processing cost',
+                                'metric': 'Interchange share of total processing cost',
+                                'value': 'Roughly 70% to 90%',
+                                'confidence': 'attributed_practitioner_claim',
+                                'context': 'Merchant Maverick says interchange is the single largest '
+                                           'expense, with the rest going to the processor and card '
+                                           'association.',
+                                'source': 'Merchant Maverick ([dUz90pAXTm0 @ 00:02:30])'},
+                               {'label': 'Competitive markup benchmark by monthly volume',
+                                'metric': 'Competitive markup benchmark by monthly volume',
+                                'value': 'Above ~0.7% at $20K-$40K/month likely not competitive; ~0.3% at '
+                                         '$60K+ may still be beaten',
+                                'confidence': 'attributed_practitioner_claim',
+                                'context': 'Markup is total fees minus total interchange, divided by total '
+                                           'volume; 1% to 1.5% is not unusual under $10K/month.',
+                                'source': 'CCSalesPro ([2Sn4XMqpW4I @ 00:06:40])'}],
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Pre-Quote Kill Checks',
+                           'body': 'Run these four checks on every statement before you put a number in '
+                                   'front of a merchant. Each one comes from a practitioner who watched an '
+                                   'account or a margin blow up.',
+                           'items': ['Never quote flat or tier pricing on an average ticket under 15 '
+                                     'dollars without per-item fees that cover the 22-cent regulated debit '
+                                     'cost [CCSalesPro — fb0PHmE8aCc @ 00:05:24].',
+                                     'Check card mix before rates: a physical-location statement running '
+                                     'well under 60% to 70% qualified means the buckets are stacked '
+                                     'against the merchant [CCSalesPro — RxgrRsVThx4 @ 00:02:54].',
+                                     'Treat any interchange plus statement without a total interchange '
+                                     'figure as suspicious, then subtract interchange from total fees to '
+                                     'expose the real markup [CCSalesPro — 2Sn4XMqpW4I @ 00:05:13].',
+                                     'Walk away from any rep promising a discount on standard published '
+                                     'interchange rates, since interchange only goes away by passing it to '
+                                     'customers [Merchant Maverick — dUz90pAXTm0 @ 00:03:58].']}}],
+ 'pull_quote': '"You got to make sure you have some per item fees in there because if you don\'t that can '
+               'really eat your lunch in a hurry." - CCSalesPro (fb0PHmE8aCc @ 00:05:39).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Calculate the effective rate (total fees divided by total volume) on every '
+                      'statement and use it as the single number to compare any two providers '
+                      '[BancardSales — 5jk-0XxkiR0 @ 00:11:32].',
+                      'Divide total interchange by total volume and compare it against the roughly 1.7% '
+                      'average to catch marked-up interchange [CCSalesPro — 2Sn4XMqpW4I @ 00:03:03].',
+                      'Subtract total interchange from total fees, divide by volume, and test that markup '
+                      'against the volume benchmarks before quoting [CCSalesPro — 2Sn4XMqpW4I @ 00:06:22].',
+                      'On tier statements, move the merchant from one blended qualified rate to split '
+                      'debit and credit qualified rates on 4-tier pricing [CCSalesPro — RxgrRsVThx4 @ '
+                      '00:06:55].',
+                      'Strike junk fees: a statement fee charged on top of the monthly fee, online '
+                      'reporting fees, debit network fees, and monthly minimums negotiated to zero '
+                      '[Merchant Maverick — h72ua8pD9cU @ 00:11:27].',
+                      'Push card acceptance best practices that qualify transactions for lower '
+                      'interchange: AVS, CVV and zip entry, daily settlement, swiping or dipping, and '
+                      'voids instead of refunds [BancardSales — AseZioaNb5s @ 00:05:14].'],
+ 'statutory_citations': [{'title': 'Merchant Maverick — Credit Card Processing Fees and Rates Explained '
+                                   '[00:16:08]',
+                          'url': 'https://www.youtube.com/watch?v=h72ua8pD9cU&t=968s',
+                          'relevance': 'Primary practitioner testimony on why tiered pricing is the least '
+                                       'transparent model and which junk fees to strip.'},
+                         {'title': 'CCSalesPro — Choosing The Right Pricing Structure: Tiered Pricing VS. '
+                                   'Interchange Plus [00:04:22]',
+                          'url': 'https://www.youtube.com/watch?v=fb0PHmE8aCc&t=262s',
+                          'relevance': 'Primary practitioner testimony on the coffee shop flat-rate '
+                                       'residual loss and agent pricing plays.'},
+                         {'title': 'BancardSales — Merchant Account Rates & Pricing - Interchange Plus, '
+                                   'Tier Based & Flat Rate Comparison [00:09:16]',
+                          'url': 'https://www.youtube.com/watch?v=5jk-0XxkiR0&t=556s',
+                          'relevance': 'Primary practitioner testimony disputing that tier and flat rate '
+                                       'pricing are dishonest and naming effective rate as the '
+                                       'tiebreaker.'},
+                         {'title': 'CCSalesPro — What is Interchange Plus or Cost Plus Pricing - Merchant '
+                                   'Services [00:04:13]',
+                          'url': 'https://www.youtube.com/watch?v=2Sn4XMqpW4I&t=253s',
+                          'relevance': 'Primary practitioner testimony on detecting interchange plus plus '
+                                       'and benchmarking markup by volume.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'AseZioaNb5s',
+                       'title': 'Merchant Account Pricing -  What Is Interchange - Fees, Rates and Why '
+                                "it's important to you!",
+                       'channel': 'BancardSales',
+                       'author': 'BancardSales',
+                       'text': 'Interchange optimization is not available with aggregator payment services '
+                               'like Stripe, PayPal or Square.',
+                       'tip': 'Interchange optimization is not available with aggregator payment services '
+                              'like Stripe, PayPal or Square.',
+                       'timestamp': 347,
+                       'timestamp_seconds': 347,
+                       'timestamp_label': '[00:05:47]',
+                       'url': 'https://www.youtube.com/watch?v=AseZioaNb5s&t=347s',
+                       'markdown': '[00:05:47](https://www.youtube.com/watch?v=AseZioaNb5s&t=347s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5jk-0XxkiR0',
+                       'title': 'Merchant Account Rates & Pricing - Interchange Plus, Tier Based & Flat '
+                                'Rate Comparison',
+                       'channel': 'BancardSales',
+                       'author': 'BancardSales',
+                       'text': 'All of these pricing models will yield an effective rate, one single rate '
+                               'at the end of the month, and this effective rate is the only undisputed '
+                               'rate by which every single merchant account provider and rate program can '
+                               'be compared.',
+                       'tip': 'All of these pricing models will yield an effective rate, one single rate '
+                              'at the end of the month, and this effective rate is the only undisputed '
+                              'rate by which every single merchant account provider and rate program can '
+                              'be compared.',
+                       'timestamp': 692,
+                       'timestamp_seconds': 692,
+                       'timestamp_label': '[00:11:32]',
+                       'url': 'https://www.youtube.com/watch?v=5jk-0XxkiR0&t=692s',
+                       'markdown': '[00:11:32](https://www.youtube.com/watch?v=5jk-0XxkiR0&t=692s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fb0PHmE8aCc',
+                       'title': 'Choosing The Right Pricing Structure: Tiered Pricing VS. Interchange Plus',
+                       'channel': 'CCSalesPro',
+                       'author': 'CCSalesPro',
+                       'text': 'I know agents that have sold a coffee shop on flat rate pricing at say '
+                               '3.5, and they get their first residual statement and find out that they '
+                               'owe money back to the processor.',
+                       'tip': 'I know agents that have sold a coffee shop on flat rate pricing at say 3.5, '
+                              'and they get their first residual statement and find out that they owe '
+                              'money back to the processor.',
+                       'timestamp': 262,
+                       'timestamp_seconds': 262,
+                       'timestamp_label': '[00:04:22]',
+                       'url': 'https://www.youtube.com/watch?v=fb0PHmE8aCc&t=262s',
+                       'markdown': '[00:04:22](https://www.youtube.com/watch?v=fb0PHmE8aCc&t=262s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dUz90pAXTm0',
+                       'title': 'Merchant Account Pricing: Interchange Fees Explained',
+                       'channel': 'Merchant Maverick',
+                       'author': 'Merchant Maverick',
+                       'text': 'Be careful if a sales representative from a merchant account service '
+                               'provider offers you a discount on the standard published interchange '
+                               'rates.',
+                       'tip': 'Be careful if a sales representative from a merchant account service '
+                              'provider offers you a discount on the standard published interchange rates.',
+                       'timestamp': 238,
+                       'timestamp_seconds': 238,
+                       'timestamp_label': '[00:03:58]',
+                       'url': 'https://www.youtube.com/watch?v=dUz90pAXTm0&t=238s',
+                       'markdown': '[00:03:58](https://www.youtube.com/watch?v=dUz90pAXTm0&t=238s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'h72ua8pD9cU',
+                       'title': 'Credit Card Processing Fees and Rates Explained',
+                       'channel': 'Merchant Maverick',
+                       'author': 'Merchant Maverick',
+                       'text': 'Tiered pricing is the least transparent pricing model, the worst one you '
+                               'can be on, and by no means should you ever be on tiered pricing.',
+                       'tip': 'Tiered pricing is the least transparent pricing model, the worst one you '
+                              'can be on, and by no means should you ever be on tiered pricing.',
+                       'timestamp': 968,
+                       'timestamp_seconds': 968,
+                       'timestamp_label': '[00:16:08]',
+                       'url': 'https://www.youtube.com/watch?v=h72ua8pD9cU&t=968s',
+                       'markdown': '[00:16:08](https://www.youtube.com/watch?v=h72ua8pD9cU&t=968s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cZ2DaswdAqo',
+                       'title': 'Interchange Plus: The "Secret" Pricing Model That Saves Your Business '
+                                'Thousands',
+                       'channel': 'Helcim',
+                       'author': 'Helcim',
+                       'text': "If you're processing 100K in monthly sales, you could see your effective "
+                               'processing rate decrease to less than 1.5%, far better than continuing to '
+                               'pay Square or Stripe that 2.5 or 2.9%.',
+                       'tip': "If you're processing 100K in monthly sales, you could see your effective "
+                              'processing rate decrease to less than 1.5%, far better than continuing to '
+                              'pay Square or Stripe that 2.5 or 2.9%.',
+                       'timestamp': 502,
+                       'timestamp_seconds': 502,
+                       'timestamp_label': '[00:08:22]',
+                       'url': 'https://www.youtube.com/watch?v=cZ2DaswdAqo&t=502s',
+                       'markdown': '[00:08:22](https://www.youtube.com/watch?v=cZ2DaswdAqo&t=502s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RxgrRsVThx4',
+                       'title': 'How to Read a Merchant Statement   Tier Pricing',
+                       'channel': 'CCSalesPro',
+                       'author': 'CCSalesPro',
+                       'text': "If you're a physical location business, 60 to 70% of your transactions "
+                               'should be qualified, and the others should be split fairly evenly between '
+                               'non-qualified and mid-qualified.',
+                       'tip': "If you're a physical location business, 60 to 70% of your transactions "
+                              'should be qualified, and the others should be split fairly evenly between '
+                              'non-qualified and mid-qualified.',
+                       'timestamp': 174,
+                       'timestamp_seconds': 174,
+                       'timestamp_label': '[00:02:54]',
+                       'url': 'https://www.youtube.com/watch?v=RxgrRsVThx4&t=174s',
+                       'markdown': '[00:02:54](https://www.youtube.com/watch?v=RxgrRsVThx4&t=174s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2Sn4XMqpW4I',
+                       'title': 'What is Interchange Plus or Cost Plus Pricing - Merchant Services',
+                       'channel': 'CCSalesPro',
+                       'author': 'CCSalesPro',
+                       'text': 'If the interchange amount is dramatically different than the interchange '
+                               'amount on the statement, it might be interchange plus plus pricing, '
+                               'meaning the interchange might be marked up a little bit.',
+                       'tip': 'If the interchange amount is dramatically different than the interchange '
+                              'amount on the statement, it might be interchange plus plus pricing, meaning '
+                              'the interchange might be marked up a little bit.',
+                       'timestamp': 253,
+                       'timestamp_seconds': 253,
+                       'timestamp_label': '[00:04:13]',
+                       'url': 'https://www.youtube.com/watch?v=2Sn4XMqpW4I&t=253s',
+                       'markdown': '[00:04:13](https://www.youtube.com/watch?v=2Sn4XMqpW4I&t=253s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XXH81AbZQcg',
+                       'title': 'What Is Tiered Pricing? Merchant Services Pricing Explained',
+                       'channel': 'Joe Wagner | Merchant Services & Passive Income',
+                       'author': 'Joe Wagner | Merchant Services & Passive Income',
+                       'text': "If a merchant is still on tiered pricing, they likely haven't had their "
+                               "fees reviewed in years, they're almost always overpaying, and you have a "
+                               'huge opportunity to save them money.',
+                       'tip': "If a merchant is still on tiered pricing, they likely haven't had their "
+                              "fees reviewed in years, they're almost always overpaying, and you have a "
+                              'huge opportunity to save them money.',
+                       'timestamp': 71,
+                       'timestamp_seconds': 71,
+                       'timestamp_label': '[00:01:11]',
+                       'url': 'https://www.youtube.com/watch?v=XXH81AbZQcg&t=71s',
+                       'markdown': '[00:01:11](https://www.youtube.com/watch?v=XXH81AbZQcg&t=71s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qBBgFNiTDYg',
+                       'title': 'What is Interchange Plus Pricing? | Payments Insights',
+                       'channel': 'CCSalesPro',
+                       'author': 'CCSalesPro',
+                       'text': 'Interchange plus pricing is almost always used with merchants who do more '
+                               'than 100,000 a month in credit card processing volume.',
+                       'tip': 'Interchange plus pricing is almost always used with merchants who do more '
+                              'than 100,000 a month in credit card processing volume.',
+                       'timestamp': 181,
+                       'timestamp_seconds': 181,
+                       'timestamp_label': '[00:03:01]',
+                       'url': 'https://www.youtube.com/watch?v=qBBgFNiTDYg&t=181s',
+                       'markdown': '[00:03:01](https://www.youtube.com/watch?v=qBBgFNiTDYg&t=181s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XEaaN73nJ6Q',
+                       'title': 'What is Tiered Pricing? | Payments Insights',
+                       'channel': 'CCSalesPro',
+                       'author': 'CCSalesPro',
+                       'text': "If you're looking at an interchange table and there's only like three or "
+                               "four rates on there, you're probably looking at tiered pricing that's "
+                               'displayed like an interchange table.',
+                       'tip': "If you're looking at an interchange table and there's only like three or "
+                              "four rates on there, you're probably looking at tiered pricing that's "
+                              'displayed like an interchange table.',
+                       'timestamp': 399,
+                       'timestamp_seconds': 399,
+                       'timestamp_label': '[00:06:39]',
+                       'url': 'https://www.youtube.com/watch?v=XEaaN73nJ6Q&t=399s',
+                       'markdown': '[00:06:39](https://www.youtube.com/watch?v=XEaaN73nJ6Q&t=399s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'btemhvIers4',
+                       'title': 'What is Interchange Plus Pricing?',
+                       'channel': 'MerchantAccounts.ca',
+                       'author': 'MerchantAccounts.ca',
+                       'text': 'If a merchant was processing a million dollars per month for a low risk '
+                               "product maybe I would quote them 0.25 over interchange, and if they're "
+                               'doing 10 million dollars a month maybe 0.15 over interchange.',
+                       'tip': 'If a merchant was processing a million dollars per month for a low risk '
+                              "product maybe I would quote them 0.25 over interchange, and if they're "
+                              'doing 10 million dollars a month maybe 0.15 over interchange.',
+                       'timestamp': 222,
+                       'timestamp_seconds': 222,
+                       'timestamp_label': '[00:03:42]',
+                       'url': 'https://www.youtube.com/watch?v=btemhvIers4&t=222s',
+                       'markdown': '[00:03:42](https://www.youtube.com/watch?v=btemhvIers4&t=222s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bdumFSr4sA8',
+                       'title': 'Understanding Merchant Statements and Fees',
+                       'channel': 'CCSalesPro',
+                       'author': 'CCSalesPro',
+                       'text': 'The card brands collect dues and assessments, generally 13 to 15 basis '
+                               'points plus around 2 cents, and they have a bunch of other fees like a per '
+                               'location fee and international assessments that can really stack up.',
+                       'tip': 'The card brands collect dues and assessments, generally 13 to 15 basis '
+                              'points plus around 2 cents, and they have a bunch of other fees like a per '
+                              'location fee and international assessments that can really stack up.',
+                       'timestamp': 291,
+                       'timestamp_seconds': 291,
+                       'timestamp_label': '[00:04:51]',
+                       'url': 'https://www.youtube.com/watch?v=bdumFSr4sA8&t=291s',
+                       'markdown': '[00:04:51](https://www.youtube.com/watch?v=bdumFSr4sA8&t=291s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xfBalp9Zzio',
+                       'title': 'Understanding Your Merchant Statement: Everything They Don’t Want You To '
+                                'Know',
+                       'channel': 'PaymentCloud',
+                       'author': 'PaymentCloud',
+                       'text': 'Many processors implement annual rate increases, and typically a notice '
+                               'will be included on your statement 2 to 3 months before any increase '
+                               'happens.',
+                       'tip': 'Many processors implement annual rate increases, and typically a notice '
+                              'will be included on your statement 2 to 3 months before any increase '
+                              'happens.',
+                       'timestamp': 262,
+                       'timestamp_seconds': 262,
+                       'timestamp_label': '[00:04:22]',
+                       'url': 'https://www.youtube.com/watch?v=xfBalp9Zzio&t=262s',
+                       'markdown': '[00:04:22](https://www.youtube.com/watch?v=xfBalp9Zzio&t=262s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xTWy5shtdSk',
+                       'title': 'Flat Rate vs Interchange Plus vs Tiered Pricing — What Merchants Need to '
+                                'Know',
+                       'channel': 'Paygent AI',
+                       'author': 'Paygent AI',
+                       'text': 'Maybe it makes sense for your business to have two processors, one that is '
+                               'a certain pricing model for some of your transactions and another that is '
+                               'a different one.',
+                       'tip': 'Maybe it makes sense for your business to have two processors, one that is '
+                              'a certain pricing model for some of your transactions and another that is a '
+                              'different one.',
+                       'timestamp': 737,
+                       'timestamp_seconds': 737,
+                       'timestamp_label': '[00:12:17]',
+                       'url': 'https://www.youtube.com/watch?v=xTWy5shtdSk&t=737s',
+                       'markdown': '[00:12:17](https://www.youtube.com/watch?v=xTWy5shtdSk&t=737s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aZv0u_x9ipQ',
+                       'title': 'Cost Structures - Subscription Rate Pricing - How to Sell Merchant '
+                                'Services',
+                       'channel': 'CCSalesPro',
+                       'author': 'CCSalesPro',
+                       'text': "There's two big problems with subscription rate pricing, and first of all "
+                               "most processors only offer it to very small merchants who don't actually "
+                               'pay that much in markup on a traditional cost structure.',
+                       'tip': "There's two big problems with subscription rate pricing, and first of all "
+                              "most processors only offer it to very small merchants who don't actually "
+                              'pay that much in markup on a traditional cost structure.',
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=aZv0u_x9ipQ&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=aZv0u_x9ipQ&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'}]}

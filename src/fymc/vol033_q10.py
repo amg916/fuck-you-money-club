@@ -1,648 +1,904 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 1 FT + 3 C (4 people) insurance housing & corporate rental arbitrage team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python Event Ledgers, Authorized ALE / CRS Synchronization, Reviewed Extensions, Telemetry Dispatch, and CAN-SPAM Distribution Controls",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #33, Insurance Housing & Corporate Rental Arbitrage, ranks #07 of 36 "
-        "with a 90/100 Money-to-Manpower Score. This chapter maps 12 operational plays "
-        "into one event-driven system for carrier-paid ALE placements, corporate "
-        "master-leases, and 30-to-270-day stays. A 1 FT + 3 C team targets automation "
-        "of more than 70% of measured repetitive task time while people retain authority "
-        "over commitments, access exceptions, billing disputes, and distribution claims. "
-        "The canonical annual owner profits remain $21,600 Conservative, $150,100 Base, "
-        "and $364,000 Scaled; automation savings are operating levers, not additions to "
-        "those outcomes. Build authorized portal synchronization, documented landlord "
-        "permissions, recoverable device workflows, and referral attribution before "
-        "buying traffic. Treat the 45% retained spread separately from gross housing billings."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$180,000",
-            "context": "Annual gross housing billings; 45% retained revenue equals $81,000.",
-            "note": "12% gross-basis net margin; $21,600 annual owner net profit; 1 FT + 3 C; 26.67% retained net margin.",
-        },
-        {
-            "label": "Base",
-            "value": "$790,000",
-            "context": "Annual gross housing billings; 45% retained revenue equals $355,500.",
-            "note": "19.0% gross-basis net margin; $150,100 annual owner net profit; 1 FT + 3 C; 42.22% retained net margin.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,400,000",
-            "context": "Annual gross housing billings; 45% retained revenue equals $630,000.",
-            "note": "26% gross-basis net margin; $364,000 annual owner net profit; 2 FT + 4 C; 57.78% retained net margin.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build an authorized event spine before automating placement decisions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a placement ledger, not a chatbot. Assign immutable identifiers to "
-                    "each property, landlord addendum, household, payer authorization, reservation, "
-                    "and invoice; maintain separate access permissions for each record family. "
-                    "For the Base team, the full-time operator owns commitments and exceptions, "
-                    "while three contractors cover placement research, field operations, and "
-                    "bookkeeping. Use Python 3.9 workers with urllib.request for approved HTTPS "
-                    "connections, json for payloads, decimal.Decimal for money, and sqlite3 for a "
-                    "single-host event ledger. Move to a managed transactional database when "
-                    "multiple writers or availability requirements exceed that deployment. The "
-                    "ingress service verifies provider-specific signatures with hmac.compare_digest "
-                    "where supported, checks timestamps, and stores an event before acknowledging "
-                    "delivery. A transaction inserts both the incoming event and its pending job; "
-                    "a unique source-and-event identifier prevents duplicate reservations. Store "
-                    "credentials outside records and prompts, scope each integration narrowly, "
-                    "and redact addresses from ordinary diagnostic logs. The twelve plays mapped "
-                    "below are this chapter's operating decomposition, including the specified "
-                    "card-rebate play; they are not twelve additional scorecard revenue streams. "
-                    "Every worker produces a proposed state transition, supporting evidence, "
-                    "and an accountable owner rather than silently converting extracted text "
-                    "into an external commitment."
-                ),
-                (
-                    "Treat ALE Solutions and CRS Temporary Housing as counterparties with "
-                    "account-specific workflows, not interchangeable public APIs. Confirm what "
-                    "each account actually permits: an approved integration, scheduled export, "
-                    "structured email feed, or manual portal update. Do not build credential-sharing "
-                    "robots or bypass access restrictions. Normalize authorized availability "
-                    "feeds into property identifier, stay window, nightly or monthly quote basis, "
-                    "pet restrictions, accessibility facts, and observed-at timestamp. Missing "
-                    "facts become explicit review tasks rather than invented values. An LLM "
-                    "may extract proposed dates and utility terms from an authorized document, "
-                    "but its output must cite the document identifier and page span. Validate "
-                    "the resulting JSON against required fields, bounded dates, currency, and "
-                    "enumerated statuses in Python before presenting it to the coordinator. "
-                    "Treat instructions inside attachments as document content, never commands "
-                    "to the integration. Require fresh availability confirmation before a "
-                    "placement offer: a listing seen yesterday does not establish availability "
-                    "today. If a connector stalls, mark its observations stale, stop outward "
-                    "availability claims, and have the placement contractor reconcile a signed "
-                    "export or telephone confirmation. Save that confirmation alongside the "
-                    "proposed reservation so another operator can reconstruct exactly what "
-                    "was relied upon."
-                ),
-                (
-                    "Measure automation against repetitive work actually performed. In an "
-                    "illustrative weekly sample, intake normalization consumes 120 minutes, "
-                    "availability research 180, quote assembly 150, extension reminders 120, "
-                    "invoice preparation 180, and distribution preparation 150: 900 minutes "
-                    "total. Suppose the workflows remove 720 minutes but introduce 60 minutes "
-                    "of review and recovery inside those categories. Net repetitive effort "
-                    "removed is 660 divided by 900, or 73.33%; the residual workload is "
-                    "240 minutes. Record the sample period, volumes, and exception mix so "
-                    "a quiet week cannot masquerade as durable leverage. This denominator "
-                    "does not include emergency repairs, negotiation, or resident support. "
-                    "At an illustrative loaded labor rate of $30 per hour, eleven recovered "
-                    "hours represent $330 of weekly capacity, not automatically lower payroll. "
-                    "Price a document run at 6,000 input tokens times an assumed $3 per "
-                    "million plus 1,000 output tokens times an assumed $15 per million: "
-                    "$0.033. Add $0.007 of allocated queue and storage cost for $0.040 "
-                    "per successful run, before retries and human review. These are planning "
-                    "rates rather than vendor quotations. Log actual billed usage and "
-                    "recalculate whenever the model, prompt size, or review frequency changes."
-                ),
-            ],
-            "table": {
-                "caption": "Plays 1–7: Authorized Housing Data, Qualification, and Fulfillment",
-                "headers": [
-                    "Mapped operator play",
-                    "Automated unit and economic check",
-                    "Human decision and evidence",
-                    "Failure recovery and safe continuation",
-                ],
-                "rows": [
-                    [
-                        "Play 1: Authorized ALE / CRS availability synchronization",
-                        "Forty daily observations at $0.01 each cost $0.40.",
-                        "Placement contractor confirms current availability before any binding offer.",
-                        "Pause stale listings and reconcile approved exports by telephone.",
-                    ],
-                    [
-                        "Play 2: Source-linked intake extraction and document normalization",
-                        "One hundred document runs at $0.040 cost $4.00.",
-                        "Coordinator verifies dates and payer limits against source pages.",
-                        "Route unreadable documents into manual entry with second-person checking.",
-                    ],
-                    [
-                        "Play 3: Rules-based housing fit and availability research",
-                        "Twenty searches saving six minutes recover two staff hours.",
-                        "Operator reviews lawful fit criteria and requested accessibility features.",
-                        "Discard unsupported rankings and use verified inventory search instead.",
-                    ],
-                    [
-                        "Play 4: Landlord addendum indexing and permission tracking",
-                        "Twelve packets saving ten minutes recover two staff hours.",
-                        "Operator verifies explicit corporate-housing sublease permission for each property.",
-                        "Block property activation until signed permission resolves the defect.",
-                    ],
-                    [
-                        "Play 5: Evidence-backed quote assembly and spread checking",
-                        "Ten proposed quotes saving twelve minutes recover two hours.",
-                        "Operator accepts price, cancellation exposure, and payer authorization separately.",
-                        "Return conflicting prices to manual calculation using signed terms.",
-                    ],
-                    [
-                        "Play 6: Scheduled smart-lock credentials and arrival coordination",
-                        "Thirty supported arrivals at $0.08 messaging cost total $2.40.",
-                        "Field contractor verifies occupancy dates and resident access delivery.",
-                        "Use documented identity verification and a staffed physical-key fallback.",
-                    ],
-                    [
-                        "Play 7: Leak and privacy-preserving noise incident routing",
-                        "Fifty telemetry notifications at $0.02 each cost $1.00.",
-                        "Field contractor assesses physical conditions before charges or intervention.",
-                        "Dispatch a local contact when device health becomes uncertain.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make evidence cheaper than reconstructing the placement",
-                "body": "Design the record around the disputes an experienced housing coordinator expects.",
-                "items": [
-                    "Keep payer authorization expiry separate from resident checkout and master-lease expiry; three independent clocks prevent one extended date from silently extending everything.",
-                    "Photograph meter readings at occupancy boundaries and retain the original utility statement; utility-cap disagreements usually turn on allocation periods, not arithmetic.",
-                    "Record portal update acknowledgments separately from local save timestamps; a locally successful worker does not prove the counterparty received the change.",
-                    "Reserve a documented physical-key recovery route before the first arrival; battery alerts are useful only when somebody can reach the property.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Automate extensions and billing without automating consequential mistakes",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Extension automation must track three clocks independently: resident need, "
-                    "payer authorization, and landlord lease exposure. Schedule reminders fourteen, "
-                    "seven, and three days before the earliest relevant expiry, then assemble "
-                    "a proposed extension packet containing written payer terms, landlord "
-                    "availability, resident acceptance, revised dates, and a cancellation "
-                    "comparison. The system may chase missing documents; only the operator "
-                    "may commit additional rent or represent coverage as confirmed. Suppose "
-                    "a proposed thirty-day extension bills $6,000 and carries $3,300 of "
-                    "landlord rent and utility pass-throughs. Its $2,700 retained spread "
-                    "matches the canonical 45% planning share, before operating costs. If "
-                    "the payer funds only ten days at $200 per day while the landlord "
-                    "still requires the entire $3,300 commitment, the resulting $2,000 "
-                    "billing leaves a $1,300 shortfall before other costs. A confidence "
-                    "score cannot repair that mismatch. Stop the extension, negotiate "
-                    "aligned cancellation terms, or source a property with compatible "
-                    "availability. When a claim closes early, immediately open a lease "
-                    "exposure task and revise forecast cash receipts; do not simply "
-                    "delete remaining nights from the calendar. Preserve both the original "
-                    "authorization and the closeout notice for reconciliation."
-                ),
-                (
-                    "Build utility-cap billing as reproducible arithmetic over signed terms, "
-                    "not free-form model reasoning. A contract with a $300 monthly allowance "
-                    "and $372 of eligible, correctly allocated charges produces a $72 "
-                    "proposed excess charge. The worker must identify the billing period, "
-                    "occupancy boundaries, covered utility categories, meter evidence, "
-                    "allocation rule, and responsible payer. A twelve-day occupancy cannot "
-                    "automatically inherit an entire building's monthly overage. Use Decimal "
-                    "amounts, retain full intermediate precision, and round only at the "
-                    "contractually appropriate line-item boundary. Prepare a draft in "
-                    "QuickBooks Online through an authorized connection, then require "
-                    "bookkeeping review before issuing a disputed or exceptional charge. "
-                    "Keep deposits, taxes, pass-throughs, retained contribution, and recognized "
-                    "revenue in distinct ledger fields. The scorecard fixes gross annual "
-                    "billings at $180,000, $790,000, and $1,400,000, with retained amounts "
-                    "of $81,000, $355,500, and $630,000. Owner profits remain $21,600, "
-                    "$150,100, and $364,000. Those figures imply $59,400, $205,400, and "
-                    "$266,000 of costs below the retained-spread line. Treat those residuals "
-                    "as scenario reconciliation totals, not instructions to relabel every "
-                    "cost as monthly overhead. An accountant must assess actual ASC 606 "
-                    "principal-versus-agent presentation from the contracts rather than "
-                    "assuming that a 45% spread establishes the accounting conclusion."
-                ),
-                (
-                    "Give device events narrower authority than billing events. A leak "
-                    "sensor can create an urgent incident and notify the field contractor; "
-                    "a noise-level threshold can request a courteous welfare-oriented "
-                    "check, but neither should generate an automatic penalty or lockout. "
-                    "Use non-recording noise-level devices rather than collecting "
-                    "conversations, disclose installed equipment, and restrict access to "
-                    "event history. Smart-lock codes should be unique, time-bounded, and "
-                    "verified against an accepted reservation, with a physical fallback "
-                    "for battery, connectivity, or vendor outages. An unresolved extension "
-                    "is a human case, not a reason to disable resident access. For "
-                    "sensor-triggered water shutoff, use only professionally configured "
-                    "equipment and a property-specific response plan that considers "
-                    "habitability and resident needs. Seven telemetry events from one "
-                    "failing sensor should become one correlated incident rather than "
-                    "seven contractor dispatches. Retry transient delivery failures "
-                    "with bounded exponential backoff and jitter; route exhausted attempts "
-                    "to a visible exception queue. Review local landlord-entry rules "
-                    "before dispatching inside an occupied home. California Civil Code "
-                    "section 1954, for example, distinguishes emergency entry from "
-                    "ordinary access with notice. Preserve the event, the human decision, "
-                    "and the resolution without treating a device reading as proof "
-                    "of resident wrongdoing."
-                ),
-            ],
-            "table": {
-                "caption": "Plays 8–12 and Two Cross-Cutting Controls for Reviewed Execution",
-                "headers": [
-                    "Mapped play or control",
-                    "Concrete unit math and boundary",
-                    "Required human evidence and decision",
-                    "Recovery path when the condition fails",
-                ],
-                "rows": [
-                    [
-                        "Play 8: Three-clock lease-extension packet preparation and reminders",
-                        "Thirty authorized days at $200 generate $6,000 billings.",
-                        "Operator reconciles resident acceptance, landlord dates, and payer funding.",
-                        "Stop unfunded extensions and negotiate compatible cancellation exposure first.",
-                    ],
-                    [
-                        "Play 9: Contract-linked utility-cap billing and invoice reconciliation",
-                        "Eligible charges of $372 minus $300 allowance equal $72.",
-                        "Bookkeeper verifies eligible categories and signed allocation language first.",
-                        "Hold disputed lines while issuing only independently supported charges.",
-                    ],
-                    [
-                        "Play 10: Verified inventory publishing and referral attribution",
-                        "Eight attributable inquiries from forty visits produce 20% conversion.",
-                        "Coordinator verifies displayed availability and explicit testimonial publication permission.",
-                        "Remove stale pages and use factual availability-request forms instead.",
-                    ],
-                    [
-                        "Play 11: Targeted corporate outreach and partner follow-up",
-                        "Two placements from forty relevant contacts produce 5% conversion.",
-                        "Operator checks recipient relevance and suppression status before sending.",
-                        "Stop the sequence after objections or poor placement economics.",
-                    ],
-                    [
-                        "Play 12: agency_ad_spend_card_multiplier_rebate_cycling — eligible agency advertising rewards",
-                        "Permitted $10,000 spend yields $250 benefits before $140 deductions.",
-                        "Operator verifies client authority and issuer eligibility before payment.",
-                        "Switch to client-direct billing or approved prefunding immediately instead.",
-                    ],
-                    [
-                        "Cross-cutting control: Reservation writes with durable idempotency keys",
-                        "Three identical deliveries must create exactly one reservation record.",
-                        "Coordinator resolves competing updates using authoritative source evidence first.",
-                        "Quarantine version conflicts instead of overwriting accepted reservation dates.",
-                    ],
-                    [
-                        "Cross-cutting control: Reviewed corrections and append-only audit evidence",
-                        "One incorrect $72 line receives one linked reversing entry.",
-                        "Bookkeeper confirms correction authority and downstream invoice state first.",
-                        "Preserve original records and send a reviewed correction notice.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before externally consequential execution",
-                "body": "Automation prepares evidence; these checks determine whether execution is authorized.",
-                "items": [
-                    "Verify the signed landlord corporate-housing sublease addendum covers the property, intended use, occupancy limits, and proposed dates before accepting a placement.",
-                    "Match written payer authorization, resident acceptance, landlord commitment, and early-closeout exposure before issuing any extension or binding quote.",
-                    "Check local occupancy-tax treatment, habitability readiness, commercial liability coverage, and applicable entry rules before occupancy or physical intervention.",
-                    "Confirm recipient, amount, source documents, current record version, and recovery route before sending an invoice, access instruction, or paid campaign.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Compound distribution from verified inventory, not manufactured demand",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build programmatic distribution around verified supply and useful placement "
-                    "facts. A neighborhood page should publish current furnished-housing "
-                    "capabilities, realistic stay ranges, parking, pet terms, accessibility "
-                    "features, and the process for requesting a dated quote. Generate "
-                    "drafts from structured inventory, then have the placement contractor "
-                    "check every factual claim before publishing. Do not expose resident "
-                    "addresses, claim identifiers, carrier relationships, or testimonials "
-                    "without appropriate permission. For stale inventory, replace live "
-                    "availability assertions with a request form rather than leaving "
-                    "a misleading book-now message. Attach source, partner, page, and "
-                    "campaign identifiers to inquiries, but exclude sensitive claim "
-                    "details from analytics systems. An illustrative funnel of 400 "
-                    "qualified visits producing forty inquiries, ten qualified opportunities, "
-                    "and two placements converts 0.5% of visits into placements. If "
-                    "each placement bills $6,000 and retains $2,700 before operating "
-                    "costs, the pair creates $12,000 of billings and $5,400 of retained "
-                    "spread, not $12,000 of owner profit. At $600 of measured acquisition "
-                    "cost, cost per placement is $300. Compare that acquisition cost "
-                    "with incremental servicing expense and lease risk before expanding "
-                    "traffic. The page itself is only useful when the team can "
-                    "fulfill the exact stay it attracts."
-                ),
-                (
-                    "Make the referral loop operational rather than promotional. After a "
-                    "successful move-in and resolved initial service issues, send the "
-                    "authorized coordinator a concise placement recap and a shareable "
-                    "availability-request link. Ask whether another relocation coordinator "
-                    "would benefit from the same service; do not publish a displaced "
-                    "household's story as growth material. Corporate mobility teams, "
-                    "restoration contractors, and established housing coordinators can "
-                    "each refer suitable demand, but a referral is not permission "
-                    "to imply insurer endorsement. Avoid payments tied to insurance "
-                    "claim steering without a jurisdiction-specific review of the "
-                    "arrangement. For outbound email, assemble small, role-relevant lists "
-                    "from permitted business sources, verify the actual housing use "
-                    "case, and use truthful sender identity and subject lines. "
-                    "Commercial messages need a working opt-out and valid postal "
-                    "address under 15 U.S.C. section 7704; honor opt-outs within "
-                    "ten business days and maintain a suppression list across vendors. "
-                    "Keep automated marketing calls and texts outside this email "
-                    "workflow unless their separate requirements have been addressed. "
-                    "Fair Housing Act section 3604 constrains discriminatory housing "
-                    "advertising and practices where applicable. Segment by legitimate "
-                    "stay needs and service geography, not protected traits or "
-                    "demographic proxies. A human reviews each new audience definition "
-                    "before a sequence runs."
-                ),
-                (
-                    "Apply agency_ad_spend_card_multiplier_rebate_cycling only when the operator "
-                    "actually has a genuine, client-authorized advertising arrangement. "
-                    "Ordinary housing rent is not agency advertising spend, and card "
-                    "rewards do not justify manufacturing transactions. Verify issuer "
-                    "eligibility, agency payment authority, platform billing rules, "
-                    "reward ownership, and client pass-through obligations in writing. "
-                    "In an illustrative monthly case, $10,000 of eligible advertising "
-                    "spend earns 2% card rewards, or $200, plus a permitted 0.5% "
-                    "volume rebate, or $50. Deduct $40 of processing costs, $60 "
-                    "of carrying cost, and $40 owed back to the client: the "
-                    "remaining benefit is $110. That is 1.1% of spend, separate "
-                    "from campaign effectiveness and separate from housing billings. "
-                    "Use expected redeemable value rather than aspirational travel "
-                    "valuations, and account for caps, exclusions, reversals, and "
-                    "settlement timing. If carrying costs rise to $180 with other "
-                    "assumptions unchanged, the benefit becomes negative $10. Stop "
-                    "rewards-dependent spending and move to client-direct billing "
-                    "or prefunded approved agency terms. Neither example adds "
-                    "income to the canonical owner-profit cases. The play earns "
-                    "a place only when the underlying campaign already meets "
-                    "its acquisition-cost limit and the payment arrangement does "
-                    "not place resident-service liquidity at risk."
-                ),
-            ],
-            "table": {
-                "caption": "Distribution Flywheel: Attribution, Contribution, and Stop Conditions",
-                "headers": [
-                    "Distribution surface and accountable workflow",
-                    "Illustrative measurable unit economics",
-                    "Human review before broader distribution",
-                    "Stop condition and recovery action",
-                ],
-                "rows": [
-                    [
-                        "Verified neighborhood pages generated from current structured inventory",
-                        "Four hundred visits producing two placements equal 0.5% conversion.",
-                        "Placement contractor checks every housing feature and availability claim.",
-                        "Replace stale availability promises with dated quote-request workflows immediately.",
-                    ],
-                    [
-                        "Corporate coordinator outreach limited to relevant business recipients",
-                        "Forty contacts producing two placements equal 5% contact conversion.",
-                        "Operator checks business relevance and suppression records before release.",
-                        "Suppress objections across vendors and stop poorly matched sequences.",
-                    ],
-                    [
-                        "Post-arrival referral requests sent through authorized coordinator relationships",
-                        "Ten requests producing two introductions equal 20% introduction conversion.",
-                        "Coordinator confirms service issues are resolved before requesting introductions.",
-                        "Pause referral requests whenever unresolved resident problems remain active.",
-                    ],
-                    [
-                        "Paid search campaigns restricted to fulfillable relocation demand",
-                        "Six hundred dollars producing two placements equals $300 acquisition.",
-                        "Operator compares acquisition cost with retained spread and servicing.",
-                        "Pause geography where supply gaps make advertised stays unavailable.",
-                    ],
-                    [
-                        "Client-authorized advertising payments using eligible agency reward arrangements",
-                        "Two hundred fifty dollars less $140 deductions leaves $110.",
-                        "Bookkeeper reconciles permitted benefits against actual issuer settlement records.",
-                        "Use client-direct billing when eligibility or economics deteriorate materially.",
-                    ],
-                    [
-                        "Permissioned partner landing pages with explicit relationship descriptions",
-                        "Eight inquiries from forty visits equal 20% inquiry conversion.",
-                        "Operator verifies wording does not imply unauthorized insurer endorsement.",
-                        "Remove unsupported partner claims and publish independently verified capabilities.",
-                    ],
-                    [
-                        "Source-level cohort reporting tied to completed housing placements",
-                        "Twelve thousand dollars billed retains $5,400 before operating costs.",
-                        "Bookkeeper reconciles placement attribution against receipts and credit adjustments.",
-                        "Recalculate cohorts after cancellations rather than preserving inflated results.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Scale only after replay, recovery, and contribution reporting work",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use a four-stage release process: observe, shadow, assist, and execute "
-                    "bounded actions. During observation, collect actual task durations "
-                    "and source documents without changing external systems. In shadow "
-                    "mode, run extraction and matching against completed placements, "
-                    "then compare proposed outputs with verified records. In assisted "
-                    "mode, people approve outbound artifacts while the worker records "
-                    "edits and reasons. Only after repeatable results should low-risk "
-                    "actions, such as internal reminders and verified inventory refreshes, "
-                    "execute without individual review. Keep binding quotes, lease "
-                    "extensions, disputed bills, and access exceptions under human "
-                    "authority. Use a test set containing overlapping stays, duplicate "
-                    "webhooks, expired authorization, utility credits, early claim "
-                    "closeout, inaccessible attachments, and a missing landlord addendum. "
-                    "Measure date accuracy, amount accuracy, unsupported-claim rate, "
-                    "duplicate-write prevention, and recovery time separately; one "
-                    "average accuracy score hides expensive failures. A model upgrade "
-                    "must pass the same regression set before replacing the current "
-                    "version. Retain prompt version, model identifier, document hash, "
-                    "validation results, and reviewer disposition for each consequential "
-                    "draft. Publish only metrics supported by actual logs. A successful "
-                    "demonstration on ten clean documents is not evidence that the "
-                    "system can safely handle a damaged authorization at midnight."
-                ),
-                (
-                    "Operate one visible exception queue with severity, age, owner, and "
-                    "next action. Leak alerts and arrival-access failures need immediate "
-                    "routing to an on-call person; stale listing observations can "
-                    "usually wait for the next scheduled reconciliation. Separate "
-                    "provider outages from bad payloads so the same retry policy "
-                    "does not hammer a service or repeatedly process a defective "
-                    "document. On HTTP 429 responses, respect Retry-After where "
-                    "provided and apply a bounded delay. On authentication failure, "
-                    "stop that connector and notify the owner instead of repeatedly "
-                    "submitting credentials. Keep a dead-letter record after exhausted "
-                    "attempts, with sensitive content protected and enough metadata "
-                    "to reproduce the failure. Replays must preserve idempotency "
-                    "keys; correcting source data creates a new version linked "
-                    "to the original event. Test restoration from encrypted backups "
-                    "into an isolated environment and verify counts, identifiers, "
-                    "and invoice totals before declaring recovery complete. In a "
-                    "twenty-event drill with two duplicated deliveries, the ledger "
-                    "should show twenty unique business events and twenty-two "
-                    "delivery attempts. If the external platform lacks idempotent "
-                    "writes, perform a lookup and human reconciliation before "
-                    "retrying an uncertain reservation or invoice creation. A timeout "
-                    "does not prove the first attempt failed."
-                ),
-                (
-                    "Close each month with a bridge from gross billings to retained "
-                    "spread, operating costs, and owner profit. The Conservative, "
-                    "Base, and Scaled gross-basis margins remain 12%, 19.0%, and "
-                    "26%; dividing their owner profits by retained revenue produces "
-                    "26.67%, 42.22%, and 57.78%, respectively. Show both bases so "
-                    "a contractor cannot mistake retained margin for margin on "
-                    "total customer invoices. Track automation subscriptions, reviewed "
-                    "exceptions, contractor dispatches, acquisition spending, vacancy "
-                    "exposure, and refunds in the relevant cost accounts. Do not "
-                    "add recovered labor capacity to profit unless spending actually "
-                    "falls or supported volume increases. Startup capital of $12,000 "
-                    "to $60,000, monthly operating outlays of $3,000 to $18,000, "
-                    "and one-to-three-month first-deal timing remain planning ranges "
-                    "with distinct scopes, not guaranteed funding adequacy. The "
-                    "Scaled case uses two full-time staff plus four contractors, "
-                    "rather than assuming the Base team can absorb every exception. "
-                    "Before expanding geography, verify written sublease permission, "
-                    "local habitability requirements, insurance coverage, and the "
-                    "jurisdiction's occupancy-tax rules. Texas Tax Code section "
-                    "156.101 provides a specific permanent-resident exemption framework; "
-                    "a thirty-day stay elsewhere does not inherit that treatment. "
-                    "Expand the workflow only when the current team can demonstrate "
-                    "reconciled economics and tested service continuity."
-                ),
-            ],
-            "table": {
-                "caption": "Recovery and Scale Scoreboard for the Four-Person Operating Team",
-                "headers": [
-                    "Control and accountable operating owner",
-                    "Measured acceptance evidence or reconciliation",
-                    "Response when the check fails",
-                    "Economic interpretation for the scorecard",
-                ],
-                "rows": [
-                    [
-                        "Full-time operator owns consequential commitment review and exception priorities",
-                        "Every accepted extension links current payer and landlord evidence.",
-                        "Hold commitments until conflicting dates and cancellation exposure resolve.",
-                        "Prevents unfunded lease obligations from consuming the retained spread.",
-                    ],
-                    [
-                        "Placement contractor owns source freshness and supported quote facts",
-                        "Every offer uses availability confirmed for its proposed dates.",
-                        "Withdraw stale offers and request direct counterparty confirmation immediately.",
-                        "Avoids acquisition spending against inventory the team cannot fulfill.",
-                    ],
-                    [
-                        "Field contractor owns arrival recovery and telemetry incident closure",
-                        "Each urgent incident records acknowledgment and documented physical resolution.",
-                        "Escalate to the named backup contact when acknowledgment fails.",
-                        "Protects service continuity without treating device alerts as revenue.",
-                    ],
-                    [
-                        "Bookkeeping contractor owns invoice evidence and retained-spread reconciliation",
-                        "Base billings of $790,000 reconcile to $355,500 retained revenue.",
-                        "Quarantine unsupported charges and reconcile source documents before posting.",
-                        "Base owner profit remains $150,100 after $205,400 residual costs.",
-                    ],
-                    [
-                        "Integration owner owns duplicate suppression and uncertain-write recovery",
-                        "Twenty unique events survive twenty-two deliveries without duplicate writes.",
-                        "Reconcile uncertain external state before replaying any consequential write.",
-                        "Prevents duplicate deposits or reservations from distorting reported cash.",
-                    ],
-                    [
-                        "Operations lead owns measured repetitive-work automation and review cost",
-                        "Nine hundred baseline minutes become 240 residual weekly minutes.",
-                        "Revert unstable categories to assisted processing and remeasure effort.",
-                        "Recovered eleven hours create capacity rather than automatic payroll savings.",
-                    ],
-                    [
-                        "Expansion owner owns staffing capacity and property readiness verification",
-                        "Scaled staffing explicitly includes two full-time and four contractor roles.",
-                        "Pause new geography until recovery coverage and property checks work.",
-                        "Scaled $630,000 retained revenue supports $364,000 modeled owner profit.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Baseline the real placement workload",
-                    "action": "Time one representative week and classify every repetitive task.",
-                    "detail": "Separate intake, research, quote assembly, reminders, invoice preparation, and distribution from negotiation, emergency response, and other nonrepetitive work.",
-                },
-                {
-                    "step": 2,
-                    "title": "Replay verified records in shadow mode",
-                    "action": "Run authorized historical documents through extraction, validation, and proposed transitions.",
-                    "detail": "Check duplicate handling, conflicting dates, early closeout, utility credits, and missing addenda without sending messages or changing external reservations.",
-                },
-                {
-                    "step": 3,
-                    "title": "Release bounded actions with named reviewers",
-                    "action": "Enable internal reminders and reviewed drafts before permitting limited automatic execution.",
-                    "detail": "Keep commitments, disputed billing, access exceptions, and new distribution claims with accountable humans; record edits and retain source evidence.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile economics and test recovery",
-                    "action": "Close the monthly billing bridge and run a duplicate-delivery and outage drill.",
-                    "detail": "Compare actual run costs and review minutes with baseline, restore an isolated backup, and verify recovery coverage before adding properties or geography.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "Automate the evidence and the reminders; keep people accountable for the promise, the payment, and the front door.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Create property, placement, authorization, event, and invoice identifiers with source timestamps, version checks, and durable duplicate suppression.",
-        "Confirm permitted ALE / CRS synchronization methods and implement stale-feed handling with approved exports or documented direct confirmation.",
-        "Index every signed landlord corporate-housing sublease addendum and connect extension reminders to resident, payer, and landlord expiry dates.",
-        "Configure reviewed utility-cap drafts, unique arrival credentials, privacy-preserving telemetry, and a staffed physical-key recovery route.",
-        "Launch verified inventory pages and suppressed-list-aware outreach; activate agency card rewards only under genuine authorized advertising arrangements.",
-        "Measure net repetitive minutes removed, actual cost per successful run, exception aging, and the monthly gross-to-retained-to-owner-profit bridge.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Commercial email workflows require truthful routing and subject information, required identification and address information, an opt-out mechanism, and timely suppression of opt-outs.",
-        },
-        {
-            "title": "42 U.S.C. § 3604 — Discrimination in the sale or rental of housing",
-            "url": "https://www.law.cornell.edu/uscode/text/42/3604",
-            "relevance": "Where applicable, housing advertising, qualification criteria, and rental practices must avoid prohibited discrimination; automated audience and listing generation require review against these requirements.",
-        },
-        {
-            "title": "California Civil Code § 1954 — Landlord entry into a dwelling unit",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954.",
-            "relevance": "For applicable California residential occupancies, field-service dispatch must distinguish emergency entry from ordinary access and apply the statute's purpose, timing, and notice requirements.",
-        },
-        {
-            "title": "Texas Tax Code § 156.101 — Exception for permanent residents",
-            "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.156.htm#156.101",
-            "relevance": "Texas state hotel occupancy tax treatment includes a permanent-resident exception with specific conditions; document eligibility rather than treating every extended stay as automatically exempt.",
-        },
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Automated calling and texting require a separate assessment of applicable restrictions and implementing rules; a commercial-email workflow does not establish permission for telephone marketing.",
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'vol033-q10-leases-subleases-required-insurance-clauses',
+ 'question_prompt': 'Which lease, sublease, and insurance clauses do I need to protect an arbitrage or '
+                    'midterm rental business?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Leases, Subleases, and Required Insurance Clauses',
+ 'subtitle': 'Residential lease essentials, filling out sublease agreements, subleasing versus assignment, '
+             'arbitrage lease addenda, getting a corporate lease, midterm entry-and-cleaning clauses, '
+             'certificates of liability, and requiring renters or tenant liability insurance',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Arbitrage operators, landlords, and insurance specialists converge on one rule: if '
+                      'subleasing and short-stay hosting are not written into the lease or a one-page '
+                      'addendum, the deal does not exist. LoCasa and Short Term Sage report verbal '
+                      'approvals collapsing when landlords or management companies changed, while a '
+                      'midterm landlord publishes a clause voiding any unapproved sublease or Airbnb '
+                      'listing. Street mechanics include under-30-day hosting language, named platforms, a '
+                      '60-day pandemic or ban opt-out, an addendum-prevails line, and corporate leases '
+                      'signed through an EIN-backed entity with a professional address. Insurance clauses '
+                      'require a liability certificate naming the landlord as additional insured at '
+                      'typically $1 million per occurrence, tenant liability minimums typically at '
+                      '$100,000, and renters insurance averaging about $132 a year. Disagreements center '
+                      'on whether arbitrage tenants help or hurt owners and whether exit clauses need '
+                      'leverage.',
+ 'key_metrics': [{'label': 'Sublease Rent Spread',
+                  'metric': 'Sublease Rent Spread',
+                  'value': '$500/month master rent, $700/month sublease, $200/month kept by the sublessor',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Worked example of a tenant who believes the unit is under-rented, subleases '
+                             'at a markup, and stays bound by the original lease',
+                  'source': 'The Real Estate Classroom ([5XzcoZ5NWj4 @ 00:05:19])'},
+                 {'label': 'Arbitrage Opt-Out Notice Period',
+                  'metric': 'Arbitrage Opt-Out Notice Period',
+                  'value': '60 days notice, no penalty',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Addendum clause letting the tenant terminate after a government-mandated '
+                             'short-term rental ban, pandemic restrictions, or similar public safety event',
+                  'source': 'LoCasa ([VFt0XueZxpE @ 00:07:05])'},
+                 {'label': 'Required Liability Limit On Certificate',
+                  'metric': 'Required Liability Limit On Certificate',
+                  'value': 'Typically $1,000,000 per occurrence',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "General liability limit a landlord typically wants to see on the tenant's "
+                             'certificate of liability insurance, alongside the additional insured box '
+                             'being checked',
+                  'source': 'Commercial Real Estate Pro Network ([ZVbVs2WDmLw @ 00:03:16])'},
+                 {'label': 'Renters Insurance Average Cost',
+                  'metric': 'Renters Insurance Average Cost',
+                  'value': 'About $132 per year (roughly $11 per month) for a $100,000 coverage limit',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'National average figure landlords can cite when requiring renters insurance '
+                             'on new leases and renewals',
+                  'source': 'BiggerPockets ([8MMoqEHoIn0 @ 00:03:49])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['The loudest consensus is blunt: an arbitrage deal that lives on a handshake '
+                              'is a deal waiting to die. LoCasa opens with a landlord who said short-term '
+                              'was fine, but because the lease never granted permission, the listing '
+                              'turned into a mess and the operator had to pivot to midterm stays after the '
+                              'first few months [VFt0XueZxpE @ 00:00:00]. John of Short Term Sage reports '
+                              'the reverse outcome: written permission saved two of their units when the '
+                              'management company was swapped out over the Christmas holiday and a '
+                              'brand-new face took over the office in the new year [Z-l9YSGM49I @ '
+                              '00:05:20]. Dani Bryant hammers the same point from the corporate side, '
+                              'warning that signing in a business name does not by itself unlock Airbnb, '
+                              'because corporate leases are usually the same residential form filled out '
+                              'with business information, subletting restriction and all [YHN32S73aOo @ '
+                              '00:02:36]. Bryant also defines the corporate lease as the business, not the '
+                              'individual, taking possession and financial responsibility for the unit, '
+                              'which is why they refuse personal leases and run every apartment through an '
+                              'entity [jD3cHooRd3k @ 00:00:21]. The baseline prerequisite is identical '
+                              'across camps: get it in writing, in clear terms, before the keys change '
+                              'hands.',
+                              'Every source that diagrams the legal chain lands in the same place: '
+                              'subleasing does not move the original tenant off the hook. The Real Estate '
+                              'Classroom lays out the sublessor role, where the tenant turns landlord, and '
+                              'warns that if the subtenant stops paying, the original tenant still answers '
+                              'for every term of the master lease and the landlord has to evict both of '
+                              'them, which gets legally complicated [5XzcoZ5NWj4 @ 00:05:41]. The Midterm '
+                              'Rental Consulting host writes that exact exposure into their own lease, '
+                              'stating that no sublease releases the tenant from any obligation and that '
+                              'the tenant is liable for any violation caused by a subtenant [fXUr5E30rH8 @ '
+                              "00:09:12]. On the paperwork side, eLeaseAgreement's Joe walks a sublease "
+                              "form that restates the parent agreement's dates so the incoming renter "
+                              'knows when they must be out, and closes with a signing page where the '
+                              'original landlord usually has to sign off alongside the sublessor and '
+                              "subtenant [Pgdbie9cCw0 @ 00:07:58]. TurboTenant's John Martin treats "
+                              'subletting rules as a core lease policy, flagging whether a tenant can '
+                              'sublet or list on Airbnb at all as a line item to settle in the lease '
+                              '[_6CIsjeFw-w @ 00:02:21]. For arbitrage operators, that means the master '
+                              'lease and the sublease are two linked contracts with one liable party: you.',
+                              'Insurance is the second pillar, and the property managers and brokers agree '
+                              'on the core split. BiggerPockets argues landlords should require renters '
+                              "insurance on every new lease and renewal because the landlord's dwelling "
+                              "policy covers only the structure, never the tenant's belongings, and most "
+                              'renters will skip coverage unless forced [8MMoqEHoIn0 @ 00:02:07]. Tanya of '
+                              'Envy Property Management draws the companion line: tenant liability '
+                              "insurance pays for damage the tenant causes to the landlord's property, and "
+                              'they describe a basement flood from a frozen hose bib that ruined walls, '
+                              "baseboards, and a ceiling, with the claim filed against the tenant's own "
+                              'policy [Iv_qchMsG9E @ 00:04:12]. Tanya also warns that tenants are the '
+                              'primary source of bodily injury and property damage liability, and when '
+                              'plaintiff attorneys find a liable tenant with no assets and no insurance, '
+                              'the litigation turns to the landlord for failure to provide a safe premises '
+                              '[JoRxVtdO-LA @ 00:03:34]. On the commercial side, Darren Gross explains '
+                              'that the lease is what forces the tenant to hand over a certificate of '
+                              'liability insurance proving limits and coverage dates, ideally listing the '
+                              'landlord as additional insured rather than just certificate holder '
+                              '[ZVbVs2WDmLw @ 00:00:19]. Each of these clauses lands on whoever signs the '
+                              'master lease.'],
+               'table': {'caption': 'Where operators, landlords, and insurance specialists agree on lease '
+                                    'and insurance baselines',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Require',
+                                     'Why It Matters To Operators',
+                                     'Expert Source'],
+                         'rows': [['Written sublease permission is the legal green light',
+                                   'Permission to sublease spelled out in writing inside the lease or a '
+                                   'signed addendum',
+                                   'Verbal approval forced one operator out of short-term into midterm '
+                                   'after a few months',
+                                   'LoCasa ([VFt0XueZxpE @ 00:01:13])'],
+                                  ['Paper survives management company turnover',
+                                   'An email reply saying yes you are permitted works, but get it in '
+                                   'writing',
+                                   'Written terms saved two units when a new management company arrived '
+                                   'after Christmas',
+                                   'Short Term Sage - Airbnb, Vacation Rental Host ([Z-l9YSGM49I @ '
+                                   '00:05:00])'],
+                                  ['A corporate lease is not listing permission',
+                                   'Sign in the business name and still obtain written subletting '
+                                   'permission separately',
+                                   'Corporate leases usually reuse the residential form with its '
+                                   'no-subletting clause intact',
+                                   'Multiple Streams Queen (Dani Bryant) ([YHN32S73aOo @ 00:02:53])'],
+                                  ['The original tenant stays liable after subleasing',
+                                   'Treat every master lease obligation as yours regardless of who '
+                                   'occupies the unit',
+                                   'If the subtenant stops paying, the landlord must evict both tenant and '
+                                   'subtenant',
+                                   'The Real Estate Classroom ([5XzcoZ5NWj4 @ 00:06:04])'],
+                                  ['Subletting and Airbnb rules belong in the lease',
+                                   'State plainly whether the tenant may sublet or list the property on '
+                                   'Airbnb',
+                                   'Unstated rules and restrictions become a major source of landlord and '
+                                   'tenant conflict',
+                                   'TurboTenant ([_6CIsjeFw-w @ 00:02:21])'],
+                                  ['The landlord dwelling policy covers structure only',
+                                   'Require renters insurance on every new lease and on every lease '
+                                   'renewal',
+                                   'Without it, tenants lose belongings and uncovered renters often '
+                                   'abandon damaged units',
+                                   'BiggerPockets ([8MMoqEHoIn0 @ 00:02:07])'],
+                                  ["Tenant liability coverage protects the owner's policy",
+                                   'Require a tenant liability policy covering tenant-caused structural '
+                                   'damage like fire and water',
+                                   "Claims hit the tenant policy instead of the landlord's own policy and "
+                                   'deductible',
+                                   'Envy Property Management ([JoRxVtdO-LA @ 00:02:01])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["LoCasa's addendum is a one-page document that overrides the base lease, and "
+                              'the clause wording is specific. The hosting clause reads that the tenant '
+                              'may host guests for periods of less than 30 consecutive days, because many '
+                              'leases ban hotel-like stays and impose a 30-day minimum even after the '
+                              'landlord blesses Airbnb [VFt0XueZxpE @ 00:03:20]. A separate marketing '
+                              'clause names the platforms outright: Airbnb, VRBO, Furnished Finder, '
+                              'Booking.com, and similar services. The exit clause lets the tenant '
+                              'terminate with 60 days notice and no penalty in the event of a '
+                              'government-mandated short-term rental ban, pandemic restrictions, or '
+                              'similar public safety event, which LoCasa says would have saved operators '
+                              'thousands during COVID [VFt0XueZxpE @ 00:07:05]. The final line states that '
+                              'in any conflict between the addendum and the standard lease, the addendum '
+                              'shall prevail [VFt0XueZxpE @ 00:08:34]. Short Term Sage pitches a cheaper '
+                              'version of the same protection: a clause letting the operator terminate at '
+                              "one month's payment if a Black Swan event hits, after noting that only big "
+                              'players like Sonder and Lyric carry the leverage to negotiate rent '
+                              'deferrals tied to market drops of 700 points [Z-l9YSGM49I @ 00:02:33]. The '
+                              'hosts say that early-termination language goes into every contract going '
+                              'forward.',
+                              "Dani Bryant's corporate-lease setup is a checklist with real prices. Form "
+                              'an entity that requires an EIN, most commonly an LLC, pull the EIN free '
+                              'from the IRS, and never register it at a home address, a mistake Bryant '
+                              'made personally and spent a long time unwinding because lenders want every '
+                              'document to match [jD3cHooRd3k @ 00:02:14]. They rent a virtual office '
+                              'address through providers like iPostal, Regus, or Opus, paying about 50 '
+                              'dollars a month, and suggest asking a friend with an office suite to rent '
+                              'their address for 20 to 25 dollars a month, then add a professional email '
+                              '[jD3cHooRd3k @ 00:08:50]. Bryant says roughly 95 percent of the apartment '
+                              'complexes they dealt with required business credit, and good business '
+                              "credit [jD3cHooRd3k @ 00:06:57]. Once a unit is secured, eLeaseAgreement's "
+                              'sublease math is simple: an early move-in is billed by dividing monthly '
+                              'rent by 30 and multiplying by the days, a sublessor usually mirrors the '
+                              'deposit they paid the original landlord, deposits typically return in 30 '
+                              'days, and late fees run a flat 25 dollars or around 5 percent, checked '
+                              'against state caps [Pgdbie9cCw0 @ 00:04:35]. Weak-credit subtenants can be '
+                              'made to prepay a couple of months.',
+                              'Insurance compliance runs on paper the operator can produce on demand. '
+                              'Darren Gross reads a liability certificate top to bottom: the producer is '
+                              'the agent, the insured is the tenant, insurer letters map to each coverage '
+                              'line, general liability is the line landlords care about, usually on an '
+                              'occurrence form, the additional insured box must be checked, and limits '
+                              'typically run a million dollars per occurrence, with the aggregate being '
+                              'the total payout in the policy period [ZVbVs2WDmLw @ 00:03:16]. Gross adds '
+                              'that real additional insured status usually comes on a separate endorsement '
+                              'page, and the certificate only says the carrier will endeavor to notify the '
+                              'holder if the policy cancels. SureVestor describes the residential version: '
+                              'management makes minimum liability coverage, typically 100,000 dollars, a '
+                              'lease condition, and tenants who fail to show evidence get added to a '
+                              'master policy for a set monthly fee, with an administration fee layered on '
+                              'top when done properly [pv1TYEchw80 @ 00:00:34]. BiggerPockets puts renters '
+                              'insurance at about 132 dollars a year, roughly 11 dollars a month, for '
+                              '100,000 dollars of coverage [8MMoqEHoIn0 @ 00:03:49], with proof usually '
+                              'due within 14 days of lease start [8MMoqEHoIn0 @ 00:06:45].'],
+               'table': {'caption': 'Exact clause language, deal math, and insurance checks taught by the '
+                                    'practitioners',
+                         'headers': ['Clause Or Tool',
+                                     'Exact Language Or Number',
+                                     'Execution Note',
+                                     'Expert Source'],
+                         'rows': [['Under-30-day guest hosting clause in the addendum',
+                                   'Tenant may host guests for periods of less than 30 consecutive days',
+                                   'Needed because many leases demand a 30-day minimum even after Airbnb '
+                                   'approval',
+                                   'LoCasa ([VFt0XueZxpE @ 00:03:20])'],
+                                  ['Third-party platform marketing permission clause',
+                                   'Tenant may market on Airbnb, VRBO, Furnished Finder, Booking.com, and '
+                                   'similar services',
+                                   'Some landlords allow subleasing yet do not want the unit visible '
+                                   'online',
+                                   'LoCasa ([VFt0XueZxpE @ 00:04:51])'],
+                                  ['Pandemic and legal ban opt-out clause',
+                                   'Terminate with 60 days notice and no penalty after a government ban',
+                                   'Leaves time to finish bookings, move furniture, and let the owner '
+                                   're-rent',
+                                   'LoCasa ([VFt0XueZxpE @ 00:07:20])'],
+                                  ['Residential sublease spread math on a single unit',
+                                   'Master rent of 500 dollars, sublease at 700, keeps 200 monthly',
+                                   'Sublessor remains bound by the original lease even while collecting '
+                                   'the spread',
+                                   'The Real Estate Classroom ([5XzcoZ5NWj4 @ 00:05:19])'],
+                                  ['Commercial lease-to-sublease leverage play on retail',
+                                   'Leased at 8,000 a month, subleased to Burberry at 20,000 a month',
+                                   'Appraisal jumped from 1.2 million at seller rent to 4 million on '
+                                   'sublease income',
+                                   'Cherif Medawar ([enwvqXWa1Wk @ 00:03:31])'],
+                                  ['Certificate of liability insurance line-by-line check',
+                                   'General liability, additional insured box checked, typically one '
+                                   'million per occurrence',
+                                   'Request the separate endorsement page that actually grants additional '
+                                   'insured coverage',
+                                   'Commercial Real Estate Pro Network ([ZVbVs2WDmLw @ 00:03:52])'],
+                                  ['Commercial lease required coverage list and bundling',
+                                   'General liability, property, business interruption, workers comp, '
+                                   'additional insured, improvements, limits',
+                                   'Bundling property and general liability into a BOP can earn insurer '
+                                   'discounts',
+                                   'Colony Solutions - Business Insurance ([ltlYiLn1uB4 @ 00:02:41])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Leverage Moves From Operators In The Field',
+                           'body': 'Timing, wording, and sequencing decide whether a landlord signs the '
+                                   'addendum or walks away. These are the moves operators say they '
+                                   'actually used.',
+                           'items': ['Send the addendum during the opening negotiation, not at signing, so '
+                                     'the owner knows what to expect and never feels pushed into a corner '
+                                     'at the closing table [LoCasa — VFt0XueZxpE @ 00:10:50].',
+                                     'If you pitch only traveling nurses and contractors, the clause must '
+                                     'say exactly that and you must stand by it, or broaden it to all '
+                                     'traveler types so the landlord cannot turn the tables later [LoCasa '
+                                     '— VFt0XueZxpE @ 00:01:56].',
+                                     'Line up the subtenant first, then give the owner reasons: Medawar '
+                                     'talked an 8,000 ask down to 6,000 with 90 days free rent, tenant '
+                                     'improvements at their own cost, and the right to sublease [Cherif '
+                                     'Medawar — enwvqXWa1Wk @ 00:02:10].',
+                                     'Smaller multifamily owners close to the deal are easier to win '
+                                     'early-termination protections from than large REIT managers, so push '
+                                     'Black Swan exits there first [Short Term Sage - Airbnb, Vacation '
+                                     'Rental Host — Z-l9YSGM49I @ 00:03:20].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Build The Business Shell',
+                              'action': 'Form an EIN-backed entity, professional address, and business '
+                                        'email before approaching any landlord or complex.',
+                              'detail': 'Bryant chooses an entity, gets the EIN, pays about 50 dollars a '
+                                        'month for a professional office address or asks a friend with a '
+                                        'suite for 20 to 25 dollars a month, and keeps every record '
+                                        'matching [Multiple Streams Queen (Dani Bryant) — jD3cHooRd3k @ '
+                                        '00:08:50].'},
+                             {'step': 2,
+                              'title': 'Pitch And Paper The Addendum',
+                              'action': 'Deliver a one-page addendum covering sublease permission, '
+                                        'under-30-day stays, named platforms, a 60-day opt-out, and '
+                                        'addendum-prevails language.',
+                              'detail': 'LoCasa says operators rarely rewrite the whole lease; a one-pager '
+                                        'with these provisions overrides the conflicting residential terms '
+                                        '[LoCasa — VFt0XueZxpE @ 00:05:23].'},
+                             {'step': 3,
+                              'title': 'Fill The Sublease Correctly',
+                              'action': 'Restate the parent agreement dates, list left-behind furnishings '
+                                        'in an addendum, set rent, deposit, late fee, and utilities, then '
+                                        'collect signatures.',
+                              'detail': 'Joe has the sublessor, subtenant, and usually the original '
+                                        'landlord sign off, and lists furnishings on an addendum page when '
+                                        'they will not fit on one line [eLeaseAgreement — Pgdbie9cCw0 @ '
+                                        '00:07:58].'},
+                             {'step': 4,
+                              'title': 'Lock The Insurance Stack',
+                              'action': 'Verify the liability certificate and endorsement, then require '
+                                        'renters insurance proof from every occupant.',
+                              'detail': 'Gross wants general liability with the additional insured box '
+                                        'checked and the separate endorsement page [Commercial Real Estate '
+                                        'Pro Network — ZVbVs2WDmLw @ 00:03:52]; BiggerPockets sets proof '
+                                        'of renters insurance within 14 days of lease start [BiggerPockets '
+                                        '— 8MMoqEHoIn0 @ 00:06:45].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split runs straight through the sublease clause itself. LoCasa '
+                              "writes it from the operator's chair: get an addendum stating the tenant 'is "
+                              'permitted to sublease the unit to vetted traveling professionals, including '
+                              'but not limited to healthcare workers, contractors, and corporate '
+                              "personnel,' or widen it to all travelers, because pitching nurses-only and "
+                              "then hosting guests 'from all walks of life' hands the landlord an excuse "
+                              'to turn the tables [VFt0XueZxpE @ 00:01:13]. LoCasa then stacks explicit '
+                              'approval for stays under 30 consecutive days, permission to market on '
+                              'Airbnb, VRBO, Furnished Finder and Booking.com, and a supremacy line that '
+                              "the addendum 'shall prevail' over conflicting lease language [VFt0XueZxpE @ "
+                              '00:08:34]. Midterm Rental Consulting writes the mirror image from the '
+                              "owner's chair: no sublease or assignment 'without the prior written consent "
+                              "of landlord in landlord's sole discretion,' any attempt is void and cause "
+                              "for termination, and listing on Airbnb, VRBO 'or similar program' kills the "
+                              "lease [fXUr5E30rH8 @ 00:08:39]. That host's objection is economic: the "
+                              'Zillow arbitrageur either grinds the owner down toward the long-term '
+                              'unfurnished rate to capture the delta, or pays the top of the midterm '
+                              'market and has no room left to mark it up [fXUr5E30rH8 @ 00:07:40]. '
+                              'Operators pitching owners should expect the second clause as the default '
+                              'lease language and arrive with the first one already drafted as a one-page '
+                              'addendum.',
+                              'The exit clause splits operators by size. LoCasa keeps the opt-out narrow '
+                              "on purpose: 'in the event of a government-mandated short-term rental ban, "
+                              'pandemic restrictions, or similar public safety event, tenant may terminate '
+                              "this lease with 60 days notice and no penalty' [VFt0XueZxpE @ 00:07:05]. If "
+                              "a unit simply stops performing or the landlord relationship sours, LoCasa's "
+                              "play is to break the lease and accept that 'you may have to pay a little "
+                              "bit more,' rather than demand a free walk-away the owner will resent. Short "
+                              "Term Sage's John admits he is not big enough to extract the "
+                              "occupancy-triggered or market-crash rent holidays that 'sander lyric' style "
+                              'players win by taking two or three floors of a building, where a 700-point '
+                              'market drop buys a month of free rent [Z-l9YSGM49I @ 00:01:58]. His '
+                              "scaled-down version is a clause letting him terminate at 'just one month's "
+                              "payment,' pitched as easier with smaller multifamily owners than with REIT "
+                              'managers. The two camps also differ on what counts as writing. John treats '
+                              "an email reply that says 'yes you are permitted' as sufficient, as long as "
+                              'it is in writing [Z-l9YSGM49I @ 00:05:00], while LoCasa wants a signed '
+                              'addendum sent during the initial negotiation so the owner is never pushed '
+                              'into a corner at the closing table [VFt0XueZxpE @ 00:10:50].',
+                              'Insurance requirements split three ways. SureVestor describes tenant '
+                              "liability as a master policy in the management company's name: the lease "
+                              "makes minimum liability coverage, 'typically a hundred thousand dollars,' a "
+                              'condition, and a tenant who fails to show proof is added to the master '
+                              'policy for a set monthly fee, with the manager allowed to charge an '
+                              'administration fee on top [pv1TYEchw80 @ 00:00:18]. Envy Property '
+                              "Management's Tanya argues every landlord should require that tenant "
+                              'liability layer because it pays for structural damage the tenant causes, so '
+                              'the owner is not forced to file against their own rental dwelling policy '
+                              '[JoRxVtdO-LA @ 00:01:42]. BiggerPockets pushes the other product hard: '
+                              'always require HO4-style renters insurance on every new lease and renewal, '
+                              'at a national average of about $132 a year, roughly $11 a month, for a '
+                              '$100,000 coverage limit [8MMoqEHoIn0 @ 00:03:49]. SureVestor partly sides '
+                              'with that camp, warning that tenant-liability-plus-contents bundles do not '
+                              'cover belongings like a true renters policy, and that renters insurance '
+                              'gives broader coverage at a comparable price. On commercial and corporate '
+                              'paper, Darren Gross of Commercial Real Estate Pro Network says being a mere '
+                              "certificate holder is the weaker seat; 'more ideally you want to be listed "
+                              "as an additional insured' on the tenant's general liability policy "
+                              '[ZVbVs2WDmLw @ 00:00:19].'],
+               'table': {'caption': 'Side-by-side playbooks on sublease paper, exits, and required '
+                                    'insurance',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Sublease permission clause in the master lease',
+                                   'Operator addendum permits subleasing to vetted travelers, stays under '
+                                   '30 days, and listing on Airbnb and VRBO',
+                                   'Owner lease bans any sublease without prior written consent in sole '
+                                   'discretion; attempts are void and terminate',
+                                   'LoCasa ([VFt0XueZxpE @ 00:01:13]); Midterm Rental Consulting '
+                                   '([fXUr5E30rH8 @ 00:08:39])'],
+                                  ['Early exit when the business gets shut down',
+                                   'Sixty-day notice opt-out with no penalty, limited to pandemic or '
+                                   'government-mandated short-term rental bans',
+                                   "Black Swan termination at just one month's payment, easier to win from "
+                                   'smaller multifamily owners',
+                                   'LoCasa ([VFt0XueZxpE @ 00:07:05]); Short Term Sage - Airbnb, Vacation '
+                                   'Rental Host ([Z-l9YSGM49I @ 00:02:33])'],
+                                  ['What counts as written proof of permission',
+                                   'An email reply saying yes you are permitted is acceptable written '
+                                   'proof for the unit',
+                                   'Signed one-page addendum with supremacy language; contracts with '
+                                   'everyone, even your mother, literally to a tea',
+                                   'Short Term Sage - Airbnb, Vacation Rental Host ([Z-l9YSGM49I @ '
+                                   '00:05:00]); LoCasa ([VFt0XueZxpE @ 00:08:46])'],
+                                  ['Assign the deal or run the sublease spread',
+                                   'Assignment hands the whole lease to an assignee who keeps the original '
+                                   'term and rent',
+                                   'Cherif leased at $6,000 to sublease at $10,000, and leased at $8,000 '
+                                   'against Burberry paying $20,000',
+                                   'The Real Estate Classroom ([5XzcoZ5NWj4 @ 00:03:03]); Cherif Medawar '
+                                   '([enwvqXWa1Wk @ 00:03:15])'],
+                                  ['Which liability product the lease requires',
+                                   'Master tenant liability policy, $100,000 minimum, auto-enrollment for '
+                                   'a monthly fee plus administration fee',
+                                   'Tenant-held renters insurance averaging about $132 per year for a '
+                                   '$100,000 coverage limit',
+                                   'SureVestor ([pv1TYEchw80 @ 00:00:18]); BiggerPockets ([8MMoqEHoIn0 @ '
+                                   '00:03:49])'],
+                                  ["Landlord standing on the tenant's liability policy",
+                                   'Certificate holder only, showing carrier, limits, coverage dates, and '
+                                   'an endeavor-to-notify cancellation line',
+                                   'Additional insured endorsement so the landlord is covered for claims '
+                                   'tied to tenant operations',
+                                   'Commercial Real Estate Pro Network ([ZVbVs2WDmLw @ 00:03:52]); Colony '
+                                   'Solutions - Business Insurance ([ltlYiLn1uB4 @ 00:01:38])'],
+                                  ['Where the lease paper itself comes from',
+                                   'Lawyer or platform templates, including TurboTenant state leases and '
+                                   'LegalTemplates at one dollar for seven days',
+                                   'Free Zillow lease downloaded in 2025, then modified to match city and '
+                                   'state rules',
+                                   'TurboTenant ([_6CIsjeFw-w @ 00:04:50]); Business Guide ([gO0LLG_9nSA @ '
+                                   '00:03:07]); Midterm Rental Consulting ([fXUr5E30rH8 @ 00:03:59])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["LoCasa opens with the scar: a landlord said 'Sure, you can rent it out "
+                              "shortterm,' the lease never recorded that permission, listing the unit "
+                              "turned into 'a total mess,' and the operation had to pivot to midterm "
+                              "rentals after the first few months [VFt0XueZxpE @ 00:00:00]. LoCasa's three "
+                              'named mistakes follow from that loss: verbal-only permission, vague '
+                              "language where 'short-term rental can mean different things to different "
+                              "people,' and no shutdown plan for a COVID-style ban or a city ordinance "
+                              'change [VFt0XueZxpE @ 00:09:55]. Without a ban-triggered opt-out, the '
+                              "operator is 'stuck paying full rent even if the city bans short-term rental "
+                              "stays or puts a stay-at-home order in place' [VFt0XueZxpE @ 00:06:51]. "
+                              "Short Term Sage's John lived the management-turnover version: the "
+                              'management company was swapped out over the Christmas holiday, a brand-new '
+                              'face showed up in the new year at an office where he had literally '
+                              'delivered chocolates, and only written permission kept two of his units '
+                              'running [Z-l9YSGM49I @ 00:05:20]. His warning is that a new manager can '
+                              'read the lease cold, order the operator to stop marketing on Airbnb or any '
+                              'online channel, or demand rentals of 60 days or more, and his STR brokerage '
+                              'refuses to move forward on deals papered that way.',
+                              'The second trap is assuming a sublease moves liability off the operator. '
+                              'The Real Estate Classroom spells out the chain: in a $500-to-$700 sublease '
+                              'that nets $200 a month, if the subtenant stops paying, the original tenant '
+                              "is still bound by every term of the master lease, and 'the landlord "
+                              "actually has to evict both of them' [5XzcoZ5NWj4 @ 00:05:41]. Midterm "
+                              "Rental Consulting hard-codes that exposure from the owner's side: no "
+                              'sublease releases the tenant from any obligation, the tenant is liable for '
+                              'any violation caused by a subtenant, and subleasing without written '
+                              'clearance is grounds to cancel the contract [fXUr5E30rH8 @ 00:08:56]. The '
+                              'same host describes how arbitrage deals die on Zillow: the operator rents '
+                              "at midterm price, cannot get more because they 'haven't studied the market "
+                              "conditions,' gets locked into a one- or two-year contract, gets desperate, "
+                              "and starts 'installing less quality tenants' while the owner's headaches "
+                              'grow [fXUr5E30rH8 @ 00:08:12]. Envy Property Management adds the lawsuit '
+                              'math: tenants are the primary source of bodily injury and property damage '
+                              'liability, from assault and battery to an unlicensed daycare, animal bites '
+                              'and firearms, and when plaintiff attorneys find a liable tenant with no '
+                              'assets and no insurance, litigation turns to the landlord for failure to '
+                              'provide a safe premises [JoRxVtdO-LA @ 00:03:13].',
+                              'The insurance checks are where money is recovered or lost. Envy Property '
+                              "Management's Tanya reports a live claim: an exterior hose left on the hose "
+                              'bib froze, burst the interior water pipe and flooded a basement, wrecking '
+                              'walls, baseboards and the ceiling; because the tenant carried tenant '
+                              "liability coverage, the firm filed against the tenant's policy instead of "
+                              "the owner's [Iv_qchMsG9E @ 00:03:53]. BiggerPockets lays out the uninsured "
+                              "version: renters who cause damage without coverage 'simply abandon the "
+                              "property,' the security deposit often fails to cover repairs, vacancy days "
+                              'stack up, some states make landlords cover relocation living expenses when '
+                              "the tenant has no policy, and owner premiums 'shoot up' after tenant-caused "
+                              'claims [8MMoqEHoIn0 @ 00:04:23]. SureVestor flags the cheap-bundle risk: if '
+                              'a claim hits a tenant-liability-plus-contents policy, the limited contents '
+                              'coverage could expose the management company to legal issues with its own '
+                              'tenants [pv1TYEchw80 @ 00:01:13]. On commercial paper, Darren Gross notes '
+                              "the certificate only says the carrier 'will endeavor' to notify the holder "
+                              'if the policy cancels, and real additional-insured status usually arrives '
+                              'as a separate endorsement page from the policy rather than a note in the '
+                              "certificate's remarks box [ZVbVs2WDmLw @ 00:04:17]."],
+               'table': {'caption': 'Firsthand failures, what they cost, and the countermove practitioners '
+                                    'use',
+                         'headers': ['Failure Mode',
+                                     'What Happened',
+                                     'Economics Check / Countermove',
+                                     'Expert Source'],
+                         'rows': [['Verbal short-term permission never written into the lease',
+                                   'Landlord said yes to short-term stays, lease lacked permission, and '
+                                   'listing became a total mess',
+                                   'Operator pivoted to midterm rentals after a few months; put every '
+                                   'permission in a written addendum',
+                                   'LoCasa ([VFt0XueZxpE @ 00:00:00])'],
+                                  ['Management company swapped out mid-lease',
+                                   'New manager arrived after the Christmas holiday and could challenge '
+                                   'arbitrage use under lease terms',
+                                   'Written permission saved two units; the STR brokerage will not move '
+                                   'forward on deals without it',
+                                   'Short Term Sage - Airbnb, Vacation Rental Host ([Z-l9YSGM49I @ '
+                                   '00:05:20])'],
+                                  ['Subtenant stops paying on a spread deal',
+                                   'Subtenant quits on a $700 sublease while the $500 master rent keeps '
+                                   'coming due',
+                                   'Original tenant stays liable for the full master lease, and the '
+                                   'landlord evicts both parties',
+                                   'The Real Estate Classroom ([5XzcoZ5NWj4 @ 00:06:04])'],
+                                  ['Overpaying for an arbitrage unit found on Zillow',
+                                   'Operator pays midterm price, cannot mark it up, and gets locked into '
+                                   'one or two years',
+                                   'Desperation leads to less quality tenants, owner headaches grow, and '
+                                   'the sublease clause gets enforced',
+                                   'Midterm Rental Consulting ([fXUr5E30rH8 @ 00:08:12])'],
+                                  ['Home address on the first EIN and LLC filings',
+                                   'Mismatched entity paperwork took Dani time to undo and still blocks a '
+                                   "friend's line of credit",
+                                   'Use a professional business address, with fees seen as low as $25 a '
+                                   'month, from day one',
+                                   'Multiple Streams Queen (Dani Bryant) ([jD3cHooRd3k @ 00:02:14])'],
+                                  ['Uninsured tenant damages the unit and walks',
+                                   'Tenants without coverage simply abandon the property after causing '
+                                   'damage, leaving the owner the bill',
+                                   'Security deposit often falls short; require proof of renters insurance '
+                                   'within 14 days of lease start',
+                                   'BiggerPockets ([8MMoqEHoIn0 @ 00:04:23])'],
+                                  ['Recycled lease template missing new state requirements',
+                                   'Old agreement skips disclosures from laws the state recently passed, '
+                                   'yet landlord remains responsible',
+                                   'Disclosures are owed at signing; lead-based paint disclosure is '
+                                   'required on every US lease',
+                                   'TurboTenant ([_6CIsjeFw-w @ 00:02:59])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'No Listing Goes Live Until These Four Clear',
+                           'body': 'Each gate is built from a loss or near-loss the practitioners reported '
+                                   'on their own units and files.',
+                           'items': ['Written sublease, under-30-day, and platform-listing permission is '
+                                     'signed before the first listing goes live; a verbal yes forced '
+                                     'LoCasa into a midterm pivot [LoCasa — VFt0XueZxpE @ 00:00:00].',
+                                     'Permission survives a management change: archive the email or signed '
+                                     'addendum, because a swapped management company nearly cost two units '
+                                     '[Short Term Sage - Airbnb, Vacation Rental Host — Z-l9YSGM49I @ '
+                                     '00:05:20].',
+                                     'Subtenant default is priced in: master rent stays payable and the '
+                                     'landlord can evict both parties if the subtenant stops paying [The '
+                                     'Real Estate Classroom — 5XzcoZ5NWj4 @ 00:05:41].',
+                                     'Liability coverage is verified on paper, since a liable tenant with '
+                                     'no assets and no insurance pushes litigation onto the landlord [Envy '
+                                     'Property Management — JoRxVtdO-LA @ 00:03:13].']}}],
+ 'pull_quote': '"If you\'re doing Airbnb arbitrage and not using the right lease addendum, you\'re '
+               'basically building your business on a handshake." - LoCasa (VFt0XueZxpE @ 00:00:00)',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Form an LLC, S corp, or C corp that requires an EIN, and file the EIN and entity '
+                      'with a matching professional business address, never your home address [Multiple '
+                      'Streams Queen (Dani Bryant) — jD3cHooRd3k @ 00:01:51].',
+                      'Draft a one-page addendum granting sublease to traveling professionals or all '
+                      'travelers, stays under 30 days, and listing on Airbnb, VRBO, and Booking.com, with '
+                      'a line that the addendum prevails over the lease [LoCasa — VFt0XueZxpE @ 00:05:23].',
+                      'Add a 60-day, no-penalty opt-out triggered by a government-mandated short-term '
+                      'rental ban or pandemic restrictions, and send the addendum during initial '
+                      'negotiation [LoCasa — VFt0XueZxpE @ 00:07:05].',
+                      'Get written permission to list on Airbnb and other platforms before signing, at '
+                      'minimum an email saying yes you are permitted, so a new management company cannot '
+                      'shut you down [Short Term Sage - Airbnb, Vacation Rental Host — Z-l9YSGM49I @ '
+                      '00:05:00].',
+                      'Put renters insurance in every new lease and renewal, mention it during the tenant '
+                      'interview, and collect proof within 14 days of lease start [BiggerPockets — '
+                      '8MMoqEHoIn0 @ 00:06:29].',
+                      'On any commercial or corporate lease, check the certificate of liability for '
+                      'general liability, the additional insured box, the endorsement page, and typically '
+                      'a million dollars per occurrence [Commercial Real Estate Pro Network — ZVbVs2WDmLw '
+                      '@ 00:02:36].'],
+ 'statutory_citations': [{'title': 'LoCasa — Airbnb Arbitrage Lease Addendum: Must-Have Clauses to Protect '
+                                   'Your Business | LoCasa [00:01:13]',
+                          'url': 'https://www.youtube.com/watch?v=VFt0XueZxpE&t=73s',
+                          'relevance': 'Primary practitioner testimony on written sublease permission, '
+                                       'under-30-day stays, platform listing rights, supremacy language, '
+                                       'and the 60-day opt-out.'},
+                         {'title': 'Midterm Rental Consulting — Lease Language for Midterm Rental '
+                                   'Landlords [00:08:39]',
+                          'url': 'https://www.youtube.com/watch?v=fXUr5E30rH8&t=519s',
+                          'relevance': 'Primary practitioner testimony on the owner-side sublease ban, '
+                                       'void subleases, subtenant liability, and Airbnb listing as cause '
+                                       'for termination.'},
+                         {'title': 'The Real Estate Classroom — Assignment of Lease and Subleasing | Real '
+                                   'Estate Exam Prep Videos [00:05:41]',
+                          'url': 'https://www.youtube.com/watch?v=5XzcoZ5NWj4&t=341s',
+                          'relevance': 'Primary practitioner testimony on sublessor liability for the '
+                                       'master lease and the landlord evicting both tenant and subtenant.'},
+                         {'title': "Envy Property Management — The Difference Between Renter's Insurance "
+                                   'and Tenant Liability Insurance [00:03:16]',
+                          'url': 'https://www.youtube.com/watch?v=Iv_qchMsG9E&t=196s',
+                          'relevance': 'Primary practitioner testimony on tenant liability coverage paying '
+                                       "for tenant-caused damage to the landlord's property."}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '_6CIsjeFw-w',
+                       'title': 'What Landlords MUST Include in Residential Lease Agreements',
+                       'channel': 'TurboTenant',
+                       'author': 'TurboTenant',
+                       'text': 'Consider including subletting rules, for instance, can a tenant sublet the '
+                               'property or list it on Airbnb.',
+                       'tip': 'Consider including subletting rules, for instance, can a tenant sublet the '
+                              'property or list it on Airbnb.',
+                       'timestamp': 141,
+                       'timestamp_seconds': 141,
+                       'timestamp_label': '[00:02:21]',
+                       'url': 'https://www.youtube.com/watch?v=_6CIsjeFw-w&t=141s',
+                       'markdown': '[00:02:21](https://www.youtube.com/watch?v=_6CIsjeFw-w&t=141s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Pgdbie9cCw0',
+                       'title': 'How to Fill in Sublease Agreement',
+                       'channel': 'eLeaseAgreement',
+                       'author': 'eLeaseAgreement',
+                       'text': 'The sublessor will write their name, the sublessee will write their name, '
+                               'and the lessor, the original landlord, usually has to sign off.',
+                       'tip': 'The sublessor will write their name, the sublessee will write their name, '
+                              'and the lessor, the original landlord, usually has to sign off.',
+                       'timestamp': 478,
+                       'timestamp_seconds': 478,
+                       'timestamp_label': '[00:07:58]',
+                       'url': 'https://www.youtube.com/watch?v=Pgdbie9cCw0&t=478s',
+                       'markdown': '[00:07:58](https://www.youtube.com/watch?v=Pgdbie9cCw0&t=478s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gO0LLG_9nSA',
+                       'title': 'Tenant Sublease Agreement Template - How To Fill Tenant Sublease '
+                                'Agreement',
+                       'channel': 'Business Guide',
+                       'author': 'Business Guide',
+                       'text': 'There are three parties that you have to fill in online: the original '
+                               'tenant, the subtenant, and the landlord.',
+                       'tip': 'There are three parties that you have to fill in online: the original '
+                              'tenant, the subtenant, and the landlord.',
+                       'timestamp': 59,
+                       'timestamp_seconds': 59,
+                       'timestamp_label': '[00:00:59]',
+                       'url': 'https://www.youtube.com/watch?v=gO0LLG_9nSA&t=59s',
+                       'markdown': '[00:00:59](https://www.youtube.com/watch?v=gO0LLG_9nSA&t=59s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VFt0XueZxpE',
+                       'title': 'Airbnb Arbitrage Lease Addendum: Must-Have Clauses to Protect Your '
+                                'Business | LoCasa',
+                       'channel': 'LoCasa',
+                       'author': 'LoCasa',
+                       'text': "Subleasing permission is your legal green light, and if it's not in "
+                               "writing, it doesn't exist.",
+                       'tip': "Subleasing permission is your legal green light, and if it's not in "
+                              "writing, it doesn't exist.",
+                       'timestamp': 73,
+                       'timestamp_seconds': 73,
+                       'timestamp_label': '[00:01:13]',
+                       'url': 'https://www.youtube.com/watch?v=VFt0XueZxpE&t=73s',
+                       'markdown': '[00:01:13](https://www.youtube.com/watch?v=VFt0XueZxpE&t=73s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VFt0XueZxpE',
+                       'title': 'Airbnb Arbitrage Lease Addendum: Must-Have Clauses to Protect Your '
+                                'Business | LoCasa',
+                       'channel': 'LoCasa',
+                       'author': 'LoCasa',
+                       'text': "Without this, you're stuck paying full rent even if the city bans "
+                               'short-term rental stays or puts a stay-at-home order in place.',
+                       'tip': "Without this, you're stuck paying full rent even if the city bans "
+                              'short-term rental stays or puts a stay-at-home order in place.',
+                       'timestamp': 411,
+                       'timestamp_seconds': 411,
+                       'timestamp_label': '[00:06:51]',
+                       'url': 'https://www.youtube.com/watch?v=VFt0XueZxpE&t=411s',
+                       'markdown': '[00:06:51](https://www.youtube.com/watch?v=VFt0XueZxpE&t=411s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5XzcoZ5NWj4',
+                       'title': 'Assignment of Lease and Subleasing | Real Estate Exam Prep Videos',
+                       'channel': 'The Real Estate Classroom',
+                       'author': 'The Real Estate Classroom',
+                       'text': 'If the subtenant stops paying the rent, the original tenant is still '
+                               'responsible for all the terms and conditions of that original lease '
+                               'agreement.',
+                       'tip': 'If the subtenant stops paying the rent, the original tenant is still '
+                              'responsible for all the terms and conditions of that original lease '
+                              'agreement.',
+                       'timestamp': 341,
+                       'timestamp_seconds': 341,
+                       'timestamp_label': '[00:05:41]',
+                       'url': 'https://www.youtube.com/watch?v=5XzcoZ5NWj4&t=341s',
+                       'markdown': '[00:05:41](https://www.youtube.com/watch?v=5XzcoZ5NWj4&t=341s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'enwvqXWa1Wk',
+                       'title': 'How Does A Sublease Work?',
+                       'channel': 'Cherif Medawar',
+                       'author': 'Cherif Medawar',
+                       'text': 'I took a corner property, I leased the property for eight thousand a '
+                               'month, and I subleased it to Burberry for 20,000 a month.',
+                       'tip': 'I took a corner property, I leased the property for eight thousand a month, '
+                              'and I subleased it to Burberry for 20,000 a month.',
+                       'timestamp': 195,
+                       'timestamp_seconds': 195,
+                       'timestamp_label': '[00:03:15]',
+                       'url': 'https://www.youtube.com/watch?v=enwvqXWa1Wk&t=195s',
+                       'markdown': '[00:03:15](https://www.youtube.com/watch?v=enwvqXWa1Wk&t=195s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YHN32S73aOo',
+                       'title': 'How to Get a Corporate Lease for Airbnb?',
+                       'channel': 'Multiple Streams Queen (Dani Bryant)',
+                       'author': 'Multiple Streams Queen (Dani Bryant)',
+                       'text': "Just because you can get a corporate lease doesn't mean that you can put "
+                               'it on public platforms.',
+                       'tip': "Just because you can get a corporate lease doesn't mean that you can put it "
+                              'on public platforms.',
+                       'timestamp': 173,
+                       'timestamp_seconds': 173,
+                       'timestamp_label': '[00:02:53]',
+                       'url': 'https://www.youtube.com/watch?v=YHN32S73aOo&t=173s',
+                       'markdown': '[00:02:53](https://www.youtube.com/watch?v=YHN32S73aOo&t=173s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Z-l9YSGM49I',
+                       'title': "Airbnb Rental Arbitrage Contract DO's and DON'TS (Corporate Lease "
+                                'Addendum)',
+                       'channel': 'Short Term Sage - Airbnb, Vacation Rental Host',
+                       'author': 'Short Term Sage - Airbnb, Vacation Rental Host',
+                       'text': 'You need something in writing that says yes you can do this, and it has '
+                               'saved me on two of my units when the management company got swapped out.',
+                       'tip': 'You need something in writing that says yes you can do this, and it has '
+                              'saved me on two of my units when the management company got swapped out.',
+                       'timestamp': 300,
+                       'timestamp_seconds': 300,
+                       'timestamp_label': '[00:05:00]',
+                       'url': 'https://www.youtube.com/watch?v=Z-l9YSGM49I&t=300s',
+                       'markdown': '[00:05:00](https://www.youtube.com/watch?v=Z-l9YSGM49I&t=300s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jD3cHooRd3k',
+                       'title': 'How to start corporate lease - Airbnb Superhost',
+                       'channel': 'Multiple Streams Queen (Dani Bryant)',
+                       'author': 'Multiple Streams Queen (Dani Bryant)',
+                       'text': 'I would say 95 percent of the apartment complexes that I have dealt with '
+                               'required my business to have some business credit and have good business '
+                               'credit.',
+                       'tip': 'I would say 95 percent of the apartment complexes that I have dealt with '
+                              'required my business to have some business credit and have good business '
+                              'credit.',
+                       'timestamp': 417,
+                       'timestamp_seconds': 417,
+                       'timestamp_label': '[00:06:57]',
+                       'url': 'https://www.youtube.com/watch?v=jD3cHooRd3k&t=417s',
+                       'markdown': '[00:06:57](https://www.youtube.com/watch?v=jD3cHooRd3k&t=417s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JoRxVtdO-LA',
+                       'title': 'The Benefits of Tenant Liability Insurance Landlords MUST Know!',
+                       'channel': 'Envy Property Management',
+                       'author': 'Envy Property Management',
+                       'text': 'When plaintiff attorneys discover that a liable tenant has no assets and '
+                               'no insurance, litigation turns to the landlord for failure to provide a '
+                               'safe premises.',
+                       'tip': 'When plaintiff attorneys discover that a liable tenant has no assets and no '
+                              'insurance, litigation turns to the landlord for failure to provide a safe '
+                              'premises.',
+                       'timestamp': 193,
+                       'timestamp_seconds': 193,
+                       'timestamp_label': '[00:03:13]',
+                       'url': 'https://www.youtube.com/watch?v=JoRxVtdO-LA&t=193s',
+                       'markdown': '[00:03:13](https://www.youtube.com/watch?v=JoRxVtdO-LA&t=193s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZVbVs2WDmLw',
+                       'title': 'Landlord   Tenant Required Insurance Certificate of Liability Insurance',
+                       'channel': 'Commercial Real Estate Pro Network',
+                       'author': 'Commercial Real Estate Pro Network',
+                       'text': "These will be the limit you're looking for, typically a million dollars in "
+                               'the occurrence is what you want to make sure you have.',
+                       'tip': "These will be the limit you're looking for, typically a million dollars in "
+                              'the occurrence is what you want to make sure you have.',
+                       'timestamp': 196,
+                       'timestamp_seconds': 196,
+                       'timestamp_label': '[00:03:16]',
+                       'url': 'https://www.youtube.com/watch?v=ZVbVs2WDmLw&t=196s',
+                       'markdown': '[00:03:16](https://www.youtube.com/watch?v=ZVbVs2WDmLw&t=196s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ltlYiLn1uB4',
+                       'title': 'Why Your Commercial Lease Requires Business Insurance',
+                       'channel': 'Colony Solutions - Business Insurance',
+                       'author': 'Colony Solutions - Business Insurance',
+                       'text': 'Additional insured endorsements are super important; your landlord will '
+                               "likely want this so they're covered under your policy for claims related "
+                               'to your operations.',
+                       'tip': 'Additional insured endorsements are super important; your landlord will '
+                              "likely want this so they're covered under your policy for claims related to "
+                              'your operations.',
+                       'timestamp': 98,
+                       'timestamp_seconds': 98,
+                       'timestamp_label': '[00:01:38]',
+                       'url': 'https://www.youtube.com/watch?v=ltlYiLn1uB4&t=98s',
+                       'markdown': '[00:01:38](https://www.youtube.com/watch?v=ltlYiLn1uB4&t=98s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pv1TYEchw80',
+                       'title': 'Tenant Liability Insurance',
+                       'channel': 'SureVestor',
+                       'author': 'SureVestor',
+                       'text': 'The management company makes it a condition of the lease that the tenant '
+                               'has to have minimum liability coverage, typically a hundred thousand '
+                               'dollars.',
+                       'tip': 'The management company makes it a condition of the lease that the tenant '
+                              'has to have minimum liability coverage, typically a hundred thousand '
+                              'dollars.',
+                       'timestamp': 18,
+                       'timestamp_seconds': 18,
+                       'timestamp_label': '[00:00:18]',
+                       'url': 'https://www.youtube.com/watch?v=pv1TYEchw80&t=18s',
+                       'markdown': '[00:00:18](https://www.youtube.com/watch?v=pv1TYEchw80&t=18s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fXUr5E30rH8',
+                       'title': 'Lease Language for Midterm Rental Landlords',
+                       'channel': 'Midterm Rental Consulting',
+                       'author': 'Midterm Rental Consulting',
+                       'text': 'Tenant will not sublease or assign all or any portion of the property '
+                               "without the prior written consent of landlord in landlord's sole "
+                               'discretion.',
+                       'tip': 'Tenant will not sublease or assign all or any portion of the property '
+                              "without the prior written consent of landlord in landlord's sole "
+                              'discretion.',
+                       'timestamp': 519,
+                       'timestamp_seconds': 519,
+                       'timestamp_label': '[00:08:39]',
+                       'url': 'https://www.youtube.com/watch?v=fXUr5E30rH8&t=519s',
+                       'markdown': '[00:08:39](https://www.youtube.com/watch?v=fXUr5E30rH8&t=519s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fXUr5E30rH8',
+                       'title': 'Lease Language for Midterm Rental Landlords',
+                       'channel': 'Midterm Rental Consulting',
+                       'author': 'Midterm Rental Consulting',
+                       'text': 'You are going to be locked into a one or a two-year contract with them, '
+                               'and they are then going to get desperate and start installing less quality '
+                               'tenants.',
+                       'tip': 'You are going to be locked into a one or a two-year contract with them, and '
+                              'they are then going to get desperate and start installing less quality '
+                              'tenants.',
+                       'timestamp': 492,
+                       'timestamp_seconds': 492,
+                       'timestamp_label': '[00:08:12]',
+                       'url': 'https://www.youtube.com/watch?v=fXUr5E30rH8&t=492s',
+                       'markdown': '[00:08:12](https://www.youtube.com/watch?v=fXUr5E30rH8&t=492s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8MMoqEHoIn0',
+                       'title': 'Landlords: Always (Always, Always) Require Renters Insurance—Here’s Why | '
+                                'Daily Podcast',
+                       'channel': 'BiggerPockets',
+                       'author': 'BiggerPockets',
+                       'text': 'It is usual for tenants to provide proof of renters insurance within 14 '
+                               'days of the lease start date.',
+                       'tip': 'It is usual for tenants to provide proof of renters insurance within 14 '
+                              'days of the lease start date.',
+                       'timestamp': 405,
+                       'timestamp_seconds': 405,
+                       'timestamp_label': '[00:06:45]',
+                       'url': 'https://www.youtube.com/watch?v=8MMoqEHoIn0&t=405s',
+                       'markdown': '[00:06:45](https://www.youtube.com/watch?v=8MMoqEHoIn0&t=405s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Iv_qchMsG9E',
+                       'title': "The Difference Between Renter's Insurance and Tenant Liability Insurance",
+                       'channel': 'Envy Property Management',
+                       'author': 'Envy Property Management',
+                       'text': 'Because this tenant has tenant liability insurance coverage, we are able '
+                               'to file a claim through their policy to cover the damages done to the '
+                               'property due to the flood.',
+                       'tip': 'Because this tenant has tenant liability insurance coverage, we are able to '
+                              'file a claim through their policy to cover the damages done to the property '
+                              'due to the flood.',
+                       'timestamp': 233,
+                       'timestamp_seconds': 233,
+                       'timestamp_label': '[00:03:53]',
+                       'url': 'https://www.youtube.com/watch?v=Iv_qchMsG9E&t=233s',
+                       'markdown': '[00:03:53](https://www.youtube.com/watch?v=Iv_qchMsG9E&t=233s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

@@ -1,334 +1,335 @@
 {
   "diagrams": [
     {
-      "diagram_id": "diag-01-order-to-cash-dispatch",
-      "chart_type": "process_flow",
-      "title": "One Order, One Evidence Trail, One Settlement",
-      "subtitle": "Separate passenger transport and specimen handling within one dispatch desk.",
+      "diagram_id": "diag-01-courier-launch-sequence",
       "chapter_number": 1,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "The pod coordinates contracted providers rather than owning a fleet. Passenger trips and specimen movements require separate service rules, escalation procedures, and evidence packets.",
-      "caption": "Close each assignment only after reconciling authorization, performance evidence, payer billing, and provider settlement.",
+      "title": "Medical Courier Launch Sequence",
+      "subtitle": "Contract first, vehicle second, reserves before direct invoicing",
+      "chart_type": "process_flow",
       "stages": [
         {
-          "label": "Validate the contracted order",
-          "value": "Confirm payer, service scope, authorization, and collection terms",
-          "numeric_value": 1.0,
-          "detail": "For NEMT, verify member eligibility, authorized transport level, destination, and standing-order validity. For courier work, verify specimen class, receiving hours, packaging responsibility, and contracted pickup deadline."
+          "step": "01",
+          "label": "Land the contract before the vehicle",
+          "value": "Step 1",
+          "detail": "No van or Sprinter purchase until a signed contract covers the payment; the car already owned is the launch vehicle (Medical Courier Connection)."
         },
         {
-          "label": "Match qualified transport capacity",
-          "value": "Assign an eligible provider with documented backup coverage",
-          "numeric_value": 2.0,
-          "detail": "Check driver credentials, vehicle suitability, insurance, service-area limits, and exclusions. A signed owner-operator agreement does not resolve worker classification."
+          "step": "02",
+          "label": "Carry HIPAA and bloodborne pathogen training",
+          "value": "Step 2",
+          "detail": "Practitioners treat HIPAA and bloodborne pathogen training as the baseline credential for any medical courier route."
         },
         {
-          "label": "Dispatch and capture service events",
-          "value": "Record timestamped pickup, movement, delivery, and exceptions",
-          "numeric_value": 3.0,
-          "detail": "Use RouteGenie or MediRoutes for configured NEMT GPS events. Use barcode custody records for specimens; escalate missed STAT pickups to the named laboratory contact immediately."
+          "step": "03",
+          "label": "Bind commercial auto plus business liability",
+          "value": "Step 3",
+          "detail": "Diamond Hunter Enterprises: commercial auto insurance plus business liability insurance, even as a solo operator."
         },
         {
-          "label": "Build the payer evidence packet",
-          "value": "Reconcile ordered service against completed service before billing",
-          "numeric_value": 4.0,
-          "detail": "Scrub 837P claims only where the payer requires that format; otherwise submit the contracted broker file or courier invoice. Attach required trip verification or custody evidence."
+          "step": "04",
+          "label": "Bank three months of operating expenses",
+          "value": "Step 4",
+          "detail": "Invoice-paid direct clients run 20-30 day billing cycles and first checks can take 90 days (Medical Courier Connection)."
         },
         {
-          "label": "Collect, settle, and reconcile",
-          "value": "Track receivables separately from provider payment obligations",
-          "numeric_value": 5.0,
-          "detail": "Forecast Medicaid broker Net-30/45 collection exposure against settlement dates. Under the canonical model, 55% of gross billings funds drivers and 45% remains before pod costs and owner profit."
+          "step": "05",
+          "label": "Hire a driver only at a $300-$500 weekly spread",
+          "value": "Step 5",
+          "detail": "Hire only when $300-$500 a week remains after driver pay, and check the client contract for subcontractor and approval clauses first (Giganomic Era)."
         }
-      ]
+      ],
+      "caption": "The launch order practitioners converge on: contract, credentials, insurance, cash reserves, then the first hire.",
+      "assumptions_note": "Sequence reflects the operator gates as stated; Sarah Davis notes that at levels one and two a name, SSN and 1099 status were enough to get hired before any LLC or EIN.",
+      "note": "Sources - Medical Courier Connection (o1VRiVMJTpY @ 00:24:07, 00:14:00); Diamond Hunter Enterprises (zQaL3OdQ2D8 @ 00:04:29); Giganomic Era (2w9s8G4Gx9Q @ 00:00:41)."
     },
     {
-      "diagram_id": "diag-02-qualified-account-conversion",
-      "chart_type": "funnel",
-      "title": "Convert a Defined Account Cohort",
-      "subtitle": "One hundred target accounts narrow to five signed service accounts.",
+      "diagram_id": "diag-02-nemt-foundation-dollar-stakes",
       "chapter_number": 6,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Illustrative counts follow one account cohort across a complete sales cycle; they are not observed conversion benchmarks. Every later stage is a subset of the preceding stage. First-deal planning remains 2–5 months, not one sprint.",
-      "caption": "Count accounts consistently: route reviews, proposals, and awards refer to the same original account list.",
+      "title": "Dollar Stakes at Each NEMT Foundation Gate",
+      "subtitle": "From launch capital down to the portal fee, every gate carries a price",
+      "chart_type": "funnel",
       "stages": [
         {
-          "label": "Mapped target accounts",
-          "value": "100 accounts with named purchasing or transport contacts",
-          "numeric_value": 100.0,
-          "detail": "Build a deduplicated list of Medicaid transport brokers, workers'-comp administrators, laboratories, and collection networks within the service territory."
+          "label": "Wheelchair-accessible van launch",
+          "value": 50000,
+          "display": "$30,000-$50,000 (ambulatory single van $15,000-$30,000)",
+          "conversion": "Launch capital sized before any enrollment filing",
+          "detail": "Geoff Cole's all-in figures; Medicaid enrollment then opens a 60 to 120 day dead zone with no billing."
         },
         {
-          "label": "Qualified service fit",
-          "value": "60 accounts pass territory, service, and payer screening",
-          "numeric_value": 60.0,
-          "detail": "Retain 60% of the original cohort after confirming outsourcing demand, procurement access, credentialing requirements, and feasible payment terms."
+          "label": "Missed state transport registration",
+          "value": 45000,
+          "display": "$45,000 loss to one operator",
+          "conversion": "Medicaid office and transport authority are separate doors",
+          "detail": "Nemiton: enrollment is three separate layers; in California layer three is CPUC registration."
         },
         {
-          "label": "Documented route discovery",
-          "value": "30 accounts share usable service and exception requirements",
-          "numeric_value": 30.0,
-          "detail": "Advance 50% of qualified accounts after receiving trip windows, route density, transport levels, specimen needs, or other service-specific workload evidence."
+          "label": "Unregistered operation fines",
+          "value": 25000,
+          "display": "$5,000-$25,000 in fines plus shutdown",
+          "conversion": "Registration filed and active before the first trip",
+          "detail": "Nemiton: operating without CPUC registration earned a cease and desist after 3 months on the road."
         },
         {
-          "label": "Costed proposals delivered",
-          "value": "15 accounts receive capacity-backed pricing and service terms",
-          "numeric_value": 15.0,
-          "detail": "Advance 50% of discovery accounts after pricing driver settlements, deadhead, standby coverage, failed pickups, and collection timing."
+          "label": "Commercial auto premium",
+          "value": 10000,
+          "display": "$6,000-$10,000 per vehicle per year",
+          "conversion": "Bound before trips, defense kept outside the limits",
+          "detail": "Brian Jungeberg on Medical Courier Connection; errors and omissions, not cargo coverage, protects a ruined biopsy."
         },
         {
-          "label": "Signed service accounts",
-          "value": "5 accounts execute scoped contracts with operating contacts",
-          "numeric_value": 5.0,
-          "detail": "Convert one-third of proposals and 5% of the original cohort. Signing does not equal dispatch readiness, recognized revenue, or collected cash."
+          "label": "NC Tracks portal fee",
+          "value": 631,
+          "display": "$631 application fee",
+          "conversion": "Portal link plus NPI required by most NC brokers",
+          "detail": "Motivational Charles: most brokers contacted required NC Tracks linkage and an NPI before paying a provider."
         }
-      ]
+      ],
+      "caption": "The LLC, EIN, Type 2 NPI, Medicaid enrollment and broker credentialing sequence, ranked by the dollars at stake at each gate.",
+      "assumptions_note": "Stage values use the upper bound of each quoted range; the $45,000 figure is a single operator's reported loss, not an average.",
+      "note": "Sources - Geoff Cole (dLgmDQavyEU @ 00:05:52); Nemiton (qijT2a0o9VE @ 00:05:15); Medical Courier Connection (0eV-OzFHmX8 @ 00:05:40); Motivational Charles (pFLQ24hu-Ac @ 00:00:35)."
     },
     {
-      "diagram_id": "diag-03-base-case-billings-to-profit",
-      "chart_type": "waterfall",
-      "title": "Base Case: $925,000 Gross to $166,500 Owner Profit",
-      "subtitle": "Six bars distinguish billings, retained contribution, costs, and profit.",
+      "diagram_id": "diag-03-carrier-weekly-settlement",
       "chapter_number": 3,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Annual USD. Opening, retained subtotal, and closing bars are absolute totals; negative bars are deductions. Retained share is 45%. The two pod-cost allocations are illustrative splits of the canonical $249,750 residual operating cost.",
-      "caption": "$925,000 − $508,750 = $416,250 retained; $416,250 − $120,000 − $129,750 = $166,500 profit. Profit is 18.0% of gross billings and 40.0% of retained revenue.",
-      "stages": [
+      "title": "From Car Weekly Cap to Net Settlement",
+      "subtitle": "Advertised revenue is not profit",
+      "chart_type": "waterfall",
+      "bars": [
         {
-          "label": "Opening gross contracted billings",
-          "value": "$925,000 annual customer billings before driver settlements",
-          "numeric_value": 925000.0,
-          "detail": "Opening total: NEMT brokerage and medical courier service billings, excluding underlying healthcare charges and any unrelated client transaction volume."
+          "label": "American Expediting car weekly cap",
+          "value": 1200,
+          "display": "$1,200",
+          "kind": "total"
         },
         {
-          "label": "Deduct external driver settlements",
-          "value": "−$508,750 paid to contracted transport delivery providers",
-          "numeric_value": -508750.0,
-          "detail": "Deduction: 55% of gross billings compensates the external transport network. These providers are separate from the four-person administrative and dispatch pod."
+          "label": "Administrative fee + tech data",
+          "value": -11.3,
+          "display": "-$11.30",
+          "kind": "deduction"
         },
         {
-          "label": "Retained dispatch revenue subtotal",
-          "value": "$416,250 retained under the canonical 45% share",
-          "numeric_value": 416250.0,
-          "detail": "Absolute subtotal, not another inflow. This model uses the specified ASC 606 agent presentation; actual net presentation requires a contract-specific principal-agent assessment and is not established by the percentage alone."
+          "label": "Occupational accidental insurance",
+          "value": -15.85,
+          "display": "-$15.85",
+          "kind": "deduction"
         },
         {
-          "label": "Deduct full-time pod seat costs",
-          "value": "−$120,000 allocated to two full-time operating seats",
-          "numeric_value": -120000.0,
-          "detail": "Deduction: illustrative combined compensation and employment burden for the two full-time seats. If the owner fills a seat, keep seat compensation distinct from the residual owner-profit line."
+          "label": "Cargo insurance",
+          "value": -4.65,
+          "display": "-$4.65",
+          "kind": "deduction"
         },
         {
-          "label": "Deduct remaining pod operating costs",
-          "value": "−$129,750 covers contractor seats and other operating expenses",
-          "numeric_value": -129750.0,
-          "detail": "Deduction: illustrative aggregate for two contractor seats, dispatch software, insurance, billing support, credentialing, administration, and service exceptions. Do not deduct driver settlements a second time."
+          "label": "Commercial auto liability",
+          "value": -25.0,
+          "display": "-$25.00",
+          "kind": "deduction"
         },
         {
-          "label": "Closing annual owner net profit",
-          "value": "$166,500 equals 18.0% gross and 40.0% retained margin",
-          "numeric_value": 166500.0,
-          "detail": "Closing total: canonical Base-Case annual owner profit. Working-capital funding is a cash requirement rather than an additional expense automatically deducted here."
+          "label": "Net settlement before fuel and upkeep",
+          "value": 1143.2,
+          "display": "$1,143.20",
+          "kind": "result"
         }
-      ]
+      ],
+      "caption": "A top-of-band car week shrinks before the first mile once carrier settlement deductions come out.",
+      "assumptions_note": "Pairs the American Expediting car cap read by Eann with the weekly deduction schedule Dean Medical Courier Academy reported on a different carrier contract ($6.30 admin, $5 tech data, $15.85, $4.65, $25); fuel, oil changes and repairs are not yet deducted.",
+      "note": "Sources - Eann (tidUl8-lql8 @ 00:02:10); Dean Medical Courier Academy (q25UyvVRKew @ 00:03:50); Sarah Davis | The D&G Way (XX29XpCCZO4 @ 00:23:09)."
     },
     {
-      "diagram_id": "diag-04-service-rail-retained-yields",
-      "chart_type": "horizontal_bars",
-      "title": "Compare Retained Dollars per Completed Assignment",
-      "subtitle": "Five service examples use the same 45% retained-share assumption.",
+      "diagram_id": "diag-04-weekly-revenue-bands",
       "chapter_number": 2,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Synthetic pricing examples, not fee schedules or market quotes. Each bar measures USD retained before pod overhead for one completed one-way trip or one defined courier run. Assignment duration and mileage differ, so bars do not rank hourly returns.",
-      "caption": "Apply the contracted unit definition before comparing yield; a courier run and a passenger trip are not interchangeable units.",
-      "stages": [
+      "title": "Weekly Revenue Bands for Direct and Contract Courier Work",
+      "subtitle": "Direct retainers and routes against the vehicle-class ladder",
+      "chart_type": "horizontal_bars",
+      "unit": "USD per week",
+      "bars": [
         {
-          "label": "Medicaid broker ambulatory trip",
-          "value": "$31.50 retained from a $70 completed one-way trip",
-          "numeric_value": 31.5,
-          "detail": "$70 gross less $38.50 driver settlement leaves $31.50. Use broker authorization and trip-log rules; disputed eligibility or missing GPS evidence can erase collection."
+          "label": "Direct oxygen supply route",
+          "min": 655,
+          "max": 655,
+          "typical": 655,
+          "display": "About $131/day x 5 days ($2,620/month)"
         },
         {
-          "label": "Medicaid broker wheelchair trip",
-          "value": "$54 retained from a $120 completed one-way trip",
-          "numeric_value": 54.0,
-          "detail": "$120 gross less $66 driver settlement leaves $54. Verify vehicle equipment, securement capability, passenger assistance requirements, and the authorized transport level."
+          "label": "Direct client weekly retainer",
+          "min": 750,
+          "max": 1000,
+          "typical": 875,
+          "display": "$750-$1,000 per week"
         },
         {
-          "label": "Workers'-comp administrator trip",
-          "value": "$45 retained from a $100 completed one-way trip",
-          "numeric_value": 45.0,
-          "detail": "$100 gross less $55 driver settlement leaves $45. Confirm administrator authorization and contracted wait-time rules rather than importing Medicaid billing assumptions."
+          "label": "Sedan contract work",
+          "min": 800,
+          "max": 1500,
+          "typical": 1150,
+          "display": "$800-$1,500 per week"
         },
         {
-          "label": "Scheduled laboratory courier run",
-          "value": "$40.50 retained from a $90 defined collection run",
-          "numeric_value": 40.5,
-          "detail": "$90 gross less $49.50 driver settlement leaves $40.50. Specify included stops, receiving cutoffs, packaging responsibility, and custody-event evidence in the route scope."
+          "label": "Cargo van contract work",
+          "min": 1500,
+          "max": 3500,
+          "typical": 2500,
+          "display": "$1,500-$3,500 per week ($2,500 van route posted)"
         },
         {
-          "label": "Contracted STAT specimen run",
-          "value": "$81 retained from a $180 defined urgent run",
-          "numeric_value": 81.0,
-          "detail": "$180 gross less $99 driver settlement leaves $81. Price backup availability and deadline exposure; higher dollars per run do not establish better utilization."
+          "label": "Non-CDL box truck work",
+          "min": 4000,
+          "max": 8000,
+          "typical": 6000,
+          "display": "$4,000-$8,000 per week"
         }
-      ]
+      ],
+      "caption": "Direct contracts set the floor; vehicle capacity widens the ceiling of what can be bid.",
+      "assumptions_note": "Typical values are midpoints of each quoted range; the oxygen route weekly figure multiplies the quoted $131 per day by the 5 service days stated.",
+      "note": "Sources - Giganomic Era (YV5-h4wgh4Q @ 00:05:08); Giganomic Era retainer playbook; JT Automations (gpeFpvbyWg4 @ 00:04:02, 00:29:09)."
     },
     {
-      "diagram_id": "diag-05-preflight-statutory-risk-checks",
-      "chart_type": "decision_tree",
-      "title": "Four Checks Before Accepting a Live Assignment",
-      "subtitle": "A failed applicable check routes the order to remediation, not dispatch.",
+      "diagram_id": "diag-05-route-profitability-gates",
       "chapter_number": 5,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Apply checks in sequence to the actual service. Passenger-only work does not inherit specimen-shipping requirements. Document why a conditional requirement does or does not apply.",
-      "caption": "Proceed only when the assigned provider, information workflow, service evidence, and handling method support the contracted work.",
-      "stages": [
+      "title": "Route Profitability Gates",
+      "subtitle": "No rate gets judged without miles, hours and volume attached",
+      "chart_type": "decision_tree",
+      "nodes": [
         {
-          "label": "Payer and provider eligibility",
-          "value": "Yes: continue; no: obtain required credentials and authorization",
-          "numeric_value": 1.0,
-          "detail": "For Medicaid work, verify state and broker enrollment, driver and vehicle requirements, exclusions screening, and trip authorization under applicable program rules. 42 CFR 431.53 and 440.170(a) establish context, not universal broker payment eligibility."
+          "gate": "G1",
+          "question": "Are miles, hours, stops and daily volume known?",
+          "pass_next": "G2",
+          "fail_action": "Do not judge the rate; a $350 route at 250 miles and 10-12 hours can lose to a $250 route at 80 miles and 4 hours."
         },
         {
-          "label": "Worker status and insured capacity",
-          "value": "Yes: continue; no: redesign staffing or replace capacity",
-          "numeric_value": 2.0,
-          "detail": "Evaluate actual control and applicable labor tests under 29 U.S.C. 203 and state law, including California Labor Code section 2775 where relevant. Verify commercial coverage for the assigned service; a 1099 label or insurance certificate alone does not resolve exposure."
+          "gate": "G2",
+          "question": "Is pay still positive after carrier deductions and fuel?",
+          "pass_next": "G3",
+          "fail_action": "Reprice or pass; $40 an hour with $8 an hour of gas is really $32 an hour, and settlements carry roughly $50 a week in deductions."
         },
         {
-          "label": "Protected information handling",
-          "value": "Yes: continue; no: repair access controls and required agreements",
-          "numeric_value": 3.0,
-          "detail": "Determine business-associate status under 45 CFR 160.103; execute required agreements under 164.502(e) and 164.504(e). Restrict dispatch access to necessary information. A courier conduit analysis does not automatically extend to a platform storing protected health information."
+          "gate": "G3",
+          "question": "Are exclusivity, uncapped specimen liability and no-notice termination struck?",
+          "pass_next": "G4",
+          "fail_action": "Negotiate for 30 days notice minimum before signing."
         },
         {
-          "label": "Specimen classification and exposure controls",
-          "value": "Yes: release; no: correct packaging or select qualified service",
-          "numeric_value": 4.0,
-          "detail": "For specimen work, confirm classification before applying 49 CFR 173.199 Category B packaging and marking rules; Category A material needs a different workflow. Apply 29 CFR 1910.1030 to covered employee exposure and follow laboratory handling instructions under 42 CFR 493.1242."
+          "gate": "G4",
+          "question": "Does the carrier contract allow subcontractors?",
+          "pass_next": "Accept and price as a $175 flat daily rate built from $40 an hour, 70 cents a mile and a 25% markup.",
+          "fail_action": "Walk away if the plan is to hire drivers and expand."
         }
-      ]
+      ],
+      "caption": "Four checks separate a paying route from a $20 job that costs $20 to handle.",
+      "assumptions_note": "The $175 daily rate is Giganomic Era's build for a 2.5-hour, 45-mile morning lab route; other routes need their own build.",
+      "note": "Sources - Sarah Davis | The D&G Way (hxoZsGym9DU @ 00:08:18); Samuel B. (X99grw6uMuY @ 00:03:30); Dean Medical Courier Academy (q25UyvVRKew @ 00:03:50); Giganomic Era (EgbN0cCrzpk @ 00:01:40, 00:06:19); Dj Mo (twmmoYWAs5Y @ 00:08:07)."
     },
     {
-      "diagram_id": "diag-06-four-to-six-person-pod",
-      "chart_type": "org_architecture",
-      "title": "Four Core Seats, Six at Scaled Volume",
-      "subtitle": "Two full-time and two contractor seats expand to three of each.",
+      "diagram_id": "diag-06-single-van-unit-economics",
       "chapter_number": 11,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Each bar represents one distinct pod seat; the final two seats activate only in the Scaled scenario. External drivers are delivery capacity outside the pod count. Contractor designation requires a supportable relationship under applicable law.",
-      "caption": "Base capacity is not round-the-clock staffing. Sell only coverage windows supported by the roster and documented backup arrangements.",
-      "stages": [
+      "title": "Single-Van NEMT Unit Economics Architecture",
+      "subtitle": "Selectivity, paid deadhead and priced wait time carry the margin",
+      "chart_type": "org_architecture",
+      "center": {
+        "role": "Owner-dispatcher",
+        "headcount": "One multi-load wheelchair van on one broker contract",
+        "focus": "Refuse $35 filler trips; the van grossed $125,000 in 2024 (ThatNEMTGirl)."
+      },
+      "spokes": [
         {
-          "label": "Core FT: owner and account lead",
-          "value": "One full-time seat owns contracts, capacity, and cash",
-          "numeric_value": 1.0,
-          "detail": "Approve pricing, review receivable aging, maintain payer relationships, and own escalation decisions. Separate operating seat compensation from residual owner profit."
+          "role": "Broker trip intake",
+          "type": "Revenue channel",
+          "kpi": "Trips an hour or more out run only when the broker pays dead miles."
         },
         {
-          "label": "Core FT: dispatch operations lead",
-          "value": "One full-time seat owns live routing and service evidence",
-          "numeric_value": 1.0,
-          "detail": "Manage RouteGenie or MediRoutes workflows, provider availability, missed pickups, and shift handoffs. Protect specimen and passenger workflows from accidental mixing."
+          "role": "Private pay rate book",
+          "type": "Revenue channel",
+          "kpi": "Base or load fee plus $2-$5 per mile and $15-$30 per 30 minutes of wait."
         },
         {
-          "label": "Core C: claims and collections specialist",
-          "value": "One contractor seat owns billing quality and receivable follow-up",
-          "numeric_value": 1.0,
-          "detail": "Validate required 837P fields or broker invoice files, resolve denials, reconcile remittances, and escalate Net-30/45 slippage before settlement cash becomes constrained."
+          "role": "Fleet utilization",
+          "type": "Capacity control",
+          "kpi": "$500 per vehicle per week floor; about 200 trips at a $50 average for $10,000 a month."
         },
         {
-          "label": "Core C: credential and quality specialist",
-          "value": "One contractor seat owns provider records and evidence sampling",
-          "numeric_value": 1.0,
-          "detail": "Track credential expiration, insurance evidence, trip-log completeness, and barcode custody exceptions. Structure the engagement around a lawful service relationship."
-        },
-        {
-          "label": "Scaled FT: second operations dispatcher",
-          "value": "One additional full-time seat extends supported coverage windows",
-          "numeric_value": 1.0,
-          "detail": "Add this seat for the canonical three-FT configuration as concurrent assignments and recovery workload exceed the documented capacity of the core operations lead."
-        },
-        {
-          "label": "Scaled C: route onboarding specialist",
-          "value": "One additional contractor seat implements newly awarded service routes",
-          "numeric_value": 1.0,
-          "detail": "Add this seat for the canonical three-contractor configuration; document stop instructions, provider readiness, laboratory contacts, and route acceptance evidence."
+          "role": "Cost-per-mile review",
+          "type": "Cost control",
+          "kpi": "Monthly expenses divided by monthly miles; reprice when rates stop covering it."
         }
-      ]
+      ],
+      "caption": "One van becomes a business when every spoke is measured against the owner's trip selectivity.",
+      "assumptions_note": "The $125,000 result came from a one-year test inside a five-vehicle fleet; the $500 weekly floor is Shantasia_RN's stated minimum, not disclosed earnings.",
+      "note": "Sources - ThatNEMTGirl (govQRXzu6Rg @ 00:01:22, 00:04:44); Shantasia_RN (3tRytphhdUU @ 00:01:00; Dr_9wzpyoaE @ 00:00:15); Nemt University (DoH4BLPOrvI @ 00:05:12)."
     },
     {
-      "diagram_id": "diag-07-startup-capital-allocation",
-      "chart_type": "stacked_comparison",
-      "title": "Allocate Startup Capital Without Buying a Fleet",
-      "subtitle": "Four buckets total $40,000 within the $15,000–$65,000 range.",
+      "diagram_id": "diag-07-specialized-courier-pay-lanes",
       "chapter_number": 4,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Numeric values show a $40,000 planning case. Corresponding lean allocations total $15,000 and expanded allocations total $65,000. These are funding envelopes, not automatically deductible expenses or proof of sufficient payment float.",
-      "caption": "At Base-Case driver settlements of $508,750 annually, smooth 30-day exposure is approximately $41,815 and 45-day exposure is $62,723 before offsets from actual settlement terms.",
-      "stages": [
+      "title": "Specialized Courier Hourly Pay Lanes",
+      "subtitle": "The biggest jump comes from cutting out the middleman",
+      "chart_type": "stacked_comparison",
+      "total_range": "$15 to $65+ per hour",
+      "buckets": [
         {
-          "label": "Provider readiness and insurance setup",
-          "value": "$12,000 planning allocation for service-ready provider onboarding",
-          "numeric_value": 12000.0,
-          "detail": "Lean allocation $3,000; expanded allocation $18,000. Fund coverage deposits, credential checks, contract setup, and provider onboarding rather than vehicle purchases."
+          "label": "Pharmacy fleet hourly route",
+          "low": 15,
+          "high": 18,
+          "notes": "Unposted stat orders paying $80-$100 each can stack on top (Boss up with Kae)."
         },
         {
-          "label": "Dispatch and evidence infrastructure",
-          "value": "$8,000 planning allocation for configured operational tooling",
-          "numeric_value": 8000.0,
-          "detail": "Lean allocation $2,000; expanded allocation $12,000. Fund dispatch configuration, barcode equipment, access controls, billing integration, and event-record retention."
+          "label": "Employee medical courier listing",
+          "low": 17,
+          "high": 17,
+          "notes": "Pass unless the company vehicle is needed to get started (Ello Hunny Bun)."
         },
         {
-          "label": "Commercial setup and pilot preparation",
-          "value": "$9,000 planning allocation for contracting and service preparation",
-          "numeric_value": 9000.0,
-          "detail": "Lean allocation $3,000; expanded allocation $15,000. Fund scoped route discovery, staff preparation, dry runs, payer setup, and account acquisition before live volume."
+          "label": "Platform-based gig",
+          "low": 18,
+          "high": 28,
+          "notes": "Middleman platform rate (MONEY CENTRAL)."
         },
         {
-          "label": "Settlement cash and exception reserve",
-          "value": "$11,000 planning allocation held for timing and recovery exposure",
-          "numeric_value": 11000.0,
-          "detail": "Lean allocation $7,000; expanded allocation $20,000. Size final liquidity from daily settlements and collection lags. This reserve alone cannot fund Base-Case 30-day driver exposure; stage volume or secure additional liquidity."
+          "label": "Direct facility contract",
+          "low": 28,
+          "high": 65,
+          "notes": "Hospital pays the courier directly; three or more contracts reach $5,000-$9,000 a month (MONEY CENTRAL)."
         }
-      ]
+      ],
+      "caption": "Same cooler, same specimens; the payer relationship decides which lane the hour lands in.",
+      "assumptions_note": "Direct facility pay is quoted as $28 to $65 an hour or more; STAT stacks only pay when the detour stays short, since a $50 STAT is not necessarily a $50 opportunity.",
+      "note": "Sources - MONEY CENTRAL (GN6voRihdrc @ 00:03:18, 00:03:34); Boss up with Kae (rwv6d5iSQQY @ 00:06:04); Ello Hunny Bun (QxvapgKdXHI @ 00:08:14); Medical Courier Connection (qLWRmpKkEP0 @ 00:02:15)."
     },
     {
-      "diagram_id": "diag-08-thirty-day-launch-sprint",
-      "chart_type": "timeline_roadmap",
-      "title": "Thirty Days to an Evidence-Ready Operating Desk",
-      "subtitle": "Four weekly milestones prepare the business for a 2–5 month sales cycle.",
+      "diagram_id": "diag-08-dispatch-verification-roadmap",
       "chapter_number": 12,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "This sprint establishes readiness, not a promised first award. Use synthetic or properly authorized test records; do not dispatch paid passenger or specimen work before applicable credentials, agreements, and service requirements are satisfied.",
-      "caption": "Preserve the canonical annual cases: Conservative $250,000 gross and $30,000 profit; Base $925,000 and $166,500; Scaled $1,600,000 and $384,000. The sprint does not forecast those results.",
-      "stages": [
+      "title": "Dispatch and Trip Verification Roadmap",
+      "subtitle": "A trip that cannot be proven will not get paid",
+      "chart_type": "timeline_roadmap",
+      "weeks": [
         {
-          "label": "Days 1-7: define the service boundary",
-          "value": "Complete territory, payer, provider, and service requirement maps",
-          "numeric_value": 7.0,
-          "detail": "Choose initial NEMT transport levels and courier specimen classes. Document enrollment requirements, insurance coverage, labor classification, pickup windows, and accountable exception contacts."
+          "week": "Week 1",
+          "title": "Select broker-integrated dispatch software",
+          "deliverable": "Fee stack compared, Bambi flat per-car pricing against RouteGenie at $50 per vehicle per month plus $100 setup, 2.5 cents per text and 5 cents per call.",
+          "gate": "Broker trip requests import automatically."
         },
         {
-          "label": "Days 8-14: configure the evidence path",
-          "value": "Demonstrate order intake through dispatch, custody, and billing records",
-          "numeric_value": 14.0,
-          "detail": "Configure dispatch roles, GPS events, barcode custody records, required information agreements, and payer-specific billing outputs. Test missing authorization and missed pickup cases with controlled records."
+          "week": "Week 2",
+          "title": "Configure multi-load and bulk auto-dispatch",
+          "deliverable": "Multi-loading enabled payer by payer with pickup and drop-off order set explicitly.",
+          "gate": "Bulk assignment benchmark in reach, such as Bambi solving 41 trips in about 10 seconds."
         },
         {
-          "label": "Days 15-21: validate capacity and unit economics",
-          "value": "Finish provider-backed route quotes and settlement timing models",
-          "numeric_value": 21.0,
-          "detail": "Model 45% retained share: Conservative $112,500 retained with $30,000 profit at 26.67%; Base $416,250 retained with $166,500 profit at 40.0%; Scaled $720,000 retained with $384,000 profit at 53.33%. Gross margins remain 12%, 18.0%, and 24%, respectively."
+          "week": "Week 3",
+          "title": "Enforce six-point trip verification",
+          "deliverable": "Service, recipient, provider, date, location, and start and end time captured with signatures, timestamps and GPS breadcrumbs.",
+          "gate": "Any trip missing a point is held; breadcrumb mileage must match invoiced mileage."
         },
         {
-          "label": "Days 22-30: rehearse and pursue scoped awards",
-          "value": "Complete exception drills, account proposals, and operating handoffs",
-          "numeric_value": 30.0,
-          "detail": "Rehearse driver absence, disputed trip evidence, missed STAT pickup, and late remittance. Assign the four core seats and define when the two Scaled seats are needed. Submit proposals without treating unsigned pipeline as revenue."
+          "week": "Week 4",
+          "title": "Prove audit readiness and cut denials",
+          "deliverable": "Automated reminders live and claim scrubbing on, the setup SwiftAid credits with cutting denials from 23% to 6%.",
+          "gate": "Full audit packet of signatures, timestamps, routes and photos pulled in about 10 minutes."
         }
-      ]
+      ],
+      "caption": "Software, multi-load, verification and audit packets in sequence, as enforcement tightens around GPS-spoofed rides.",
+      "assumptions_note": "Week labels sequence the work and are not practitioner-quoted durations; the denial and dispatch benchmarks are vendor and operator reports.",
+      "note": "Sources - Bambi (CbCgWxHPCxU @ 00:09:38; dxaejS8Bpis @ 00:00:15); RouteGenie (_mEgB7bAsFE @ 00:01:00; 382JPpV04Tg @ 00:01:09); SwiftAid Transport (YGC_f04Hg3g @ 00:08:34, 00:37:06); ZeitRide NEMT Software (ajqkD-2jPd8 @ 00:22:43)."
     }
   ]
 }

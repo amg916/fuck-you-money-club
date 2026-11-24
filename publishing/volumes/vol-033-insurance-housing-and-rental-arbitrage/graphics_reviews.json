@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-placement-to-collection",
-    "diag-02-authorized-placement-funnel",
-    "diag-03-base-case-billings-to-owner-profit",
-    "diag-04-placement-rail-retained-yields",
-    "diag-05-property-and-placement-preflight",
-    "diag-06-four-to-six-seat-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-thirty-day-launch-sprint"
+    "diag-01-insurance-relocation-booking-flow",
+    "diag-02-arbitrage-scale-ladder",
+    "diag-03-ale-excess-cost-waterfall",
+    "diag-04-insurance-vs-ltr-str-revenue",
+    "diag-05-landlord-pitch-gates",
+    "diag-06-lease-exit-counterparties",
+    "diag-07-corporate-unit-startup-stack",
+    "diag-08-insuring-the-rental-roadmap"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-placement-to-collection",
-    "diag-02-authorized-placement-funnel",
-    "diag-03-base-case-billings-to-owner-profit",
-    "diag-04-placement-rail-retained-yields",
-    "diag-05-property-and-placement-preflight",
-    "diag-06-four-to-six-seat-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-thirty-day-launch-sprint"
+    "diag-01-insurance-relocation-booking-flow",
+    "diag-02-arbitrage-scale-ladder",
+    "diag-03-ale-excess-cost-waterfall",
+    "diag-04-insurance-vs-ltr-str-revenue",
+    "diag-05-landlord-pitch-gates",
+    "diag-06-lease-exit-counterparties",
+    "diag-07-corporate-unit-startup-stack",
+    "diag-08-insuring-the-rental-roadmap"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-placement-to-collection": {
+    "diag-01-insurance-relocation-booking-flow": {
       "concept_a": {
-        "graphic_id": "diag-01-placement-to-collection",
+        "graphic_id": "diag-01-insurance-relocation-booking-flow",
         "graphic_type": "diagram",
-        "label": "Control the Placement Before Buying the Lease",
+        "label": "Getting Booked by Insurance Relocation Companies",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-placement-to-collection",
+        "graphic_id": "diag-01-insurance-relocation-booking-flow",
         "graphic_type": "diagram",
-        "label": "Control the Placement Before Buying the Lease",
+        "label": "Getting Booked by Insurance Relocation Companies",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-placement-to-collection",
+        "graphic_id": "diag-01-insurance-relocation-booking-flow",
         "graphic_type": "diagram",
-        "label": "Control the Placement Before Buying the Lease",
+        "label": "Getting Booked by Insurance Relocation Companies",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-authorized-placement-funnel": {
+    "diag-02-arbitrage-scale-ladder": {
       "concept_a": {
-        "graphic_id": "diag-02-authorized-placement-funnel",
+        "graphic_id": "diag-02-arbitrage-scale-ladder",
         "graphic_type": "diagram",
-        "label": "A Placement Funnel with Traceable Denominators",
+        "label": "The Arbitrage Scale Ladder",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-authorized-placement-funnel",
+        "graphic_id": "diag-02-arbitrage-scale-ladder",
         "graphic_type": "diagram",
-        "label": "A Placement Funnel with Traceable Denominators",
+        "label": "The Arbitrage Scale Ladder",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-authorized-placement-funnel",
+        "graphic_id": "diag-02-arbitrage-scale-ladder",
         "graphic_type": "diagram",
-        "label": "A Placement Funnel with Traceable Denominators",
+        "label": "The Arbitrage Scale Ladder",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-case-billings-to-owner-profit": {
+    "diag-03-ale-excess-cost-waterfall": {
       "concept_a": {
-        "graphic_id": "diag-03-base-case-billings-to-owner-profit",
+        "graphic_id": "diag-03-ale-excess-cost-waterfall",
         "graphic_type": "diagram",
-        "label": "From $790,000 Gross Billings to $150,100 Owner Profit",
+        "label": "ALE Pays Only the Increase",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-case-billings-to-owner-profit",
+        "graphic_id": "diag-03-ale-excess-cost-waterfall",
         "graphic_type": "diagram",
-        "label": "From $790,000 Gross Billings to $150,100 Owner Profit",
+        "label": "ALE Pays Only the Increase",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-case-billings-to-owner-profit",
+        "graphic_id": "diag-03-ale-excess-cost-waterfall",
         "graphic_type": "diagram",
-        "label": "From $790,000 Gross Billings to $150,100 Owner Profit",
+        "label": "ALE Pays Only the Increase",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-placement-rail-retained-yields": {
+    "diag-04-insurance-vs-ltr-str-revenue": {
       "concept_a": {
-        "graphic_id": "diag-04-placement-rail-retained-yields",
+        "graphic_id": "diag-04-insurance-vs-ltr-str-revenue",
         "graphic_type": "diagram",
-        "label": "Compare Retained Spread Before Overhead",
+        "label": "Insurance Housing Against Long-Term and Short-Term Rent",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-placement-rail-retained-yields",
+        "graphic_id": "diag-04-insurance-vs-ltr-str-revenue",
         "graphic_type": "diagram",
-        "label": "Compare Retained Spread Before Overhead",
+        "label": "Insurance Housing Against Long-Term and Short-Term Rent",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-placement-rail-retained-yields",
+        "graphic_id": "diag-04-insurance-vs-ltr-str-revenue",
         "graphic_type": "diagram",
-        "label": "Compare Retained Spread Before Overhead",
+        "label": "Insurance Housing Against Long-Term and Short-Term Rent",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-property-and-placement-preflight": {
+    "diag-05-landlord-pitch-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-property-and-placement-preflight",
+        "graphic_id": "diag-05-landlord-pitch-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before a Binding Housing Commitment",
+        "label": "Landlord Pitch Gates for Rental Arbitrage",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-property-and-placement-preflight",
+        "graphic_id": "diag-05-landlord-pitch-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before a Binding Housing Commitment",
+        "label": "Landlord Pitch Gates for Rental Arbitrage",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-property-and-placement-preflight",
+        "graphic_id": "diag-05-landlord-pitch-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before a Binding Housing Commitment",
+        "label": "Landlord Pitch Gates for Rental Arbitrage",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-four-to-six-seat-pod": {
+    "diag-06-lease-exit-counterparties": {
       "concept_a": {
-        "graphic_id": "diag-06-four-to-six-seat-pod",
+        "graphic_id": "diag-06-lease-exit-counterparties",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Six at Scale",
+        "label": "Lease Exit Map for the Leaseholder",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-four-to-six-seat-pod",
+        "graphic_id": "diag-06-lease-exit-counterparties",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Six at Scale",
+        "label": "Lease Exit Map for the Leaseholder",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-four-to-six-seat-pod",
+        "graphic_id": "diag-06-lease-exit-counterparties",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Six at Scale",
+        "label": "Lease Exit Map for the Leaseholder",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-allocation": {
+    "diag-07-corporate-unit-startup-stack": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-corporate-unit-startup-stack",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Before Adding Fixed Rent",
+        "label": "All-In Startup Stack for One Corporate Housing Unit",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-corporate-unit-startup-stack",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Before Adding Fixed Rent",
+        "label": "All-In Startup Stack for One Corporate Housing Unit",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-corporate-unit-startup-stack",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Before Adding Fixed Rent",
+        "label": "All-In Startup Stack for One Corporate Housing Unit",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-thirty-day-launch-sprint": {
+    "diag-08-insuring-the-rental-roadmap": {
       "concept_a": {
-        "graphic_id": "diag-08-thirty-day-launch-sprint",
+        "graphic_id": "diag-08-insuring-the-rental-roadmap",
         "graphic_type": "diagram",
-        "label": "Build a Placement-Ready Desk in Thirty Days",
+        "label": "Insuring the Rental Operation",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-thirty-day-launch-sprint",
+        "graphic_id": "diag-08-insuring-the-rental-roadmap",
         "graphic_type": "diagram",
-        "label": "Build a Placement-Ready Desk in Thirty Days",
+        "label": "Insuring the Rental Operation",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-thirty-day-launch-sprint",
+        "graphic_id": "diag-08-insuring-the-rental-roadmap",
         "graphic_type": "diagram",
-        "label": "Build a Placement-Ready Desk in Thirty Days",
+        "label": "Insuring the Rental Operation",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T23:07:52Z"
 }

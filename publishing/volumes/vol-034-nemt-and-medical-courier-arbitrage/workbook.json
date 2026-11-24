@@ -1,470 +1,470 @@
 {
   "workbook_id": "wb-034-nemt-and-medical-courier-arbitrage",
   "volume_id": "vol-034-nemt-and-medical-courier-arbitrage",
-  "title": "NEMT & Medical Courier Dispatch Arbitrage — Operator Companion Workbook",
-  "subtitle": "6 Printable Operator Worksheets for Medicaid Standing Orders, Workers' Compensation Transport, STAT Specimen Routes, Driver Settlement Controls, Payment Float, and Acquisition-Ready Dispatch Pods",
+  "title": "NEMT & Medical Courier Dispatch Arbitrage — Practitioner Testimony Operator Workbook",
+  "subtitle": "A Field-Tested Operating Workbook for Launching a Medical Courier Business, Landing Direct Contracts, Working Hiring Fleets and Specialized Lanes, Pricing Routes for Real Profit, and Building the Entity, Insurance, and Enrollment Foundation",
   "worksheets": [
     {
       "worksheet_id": "ws-01",
       "number": 1,
-      "title": "Arbitrage Deal / Counterparty Underwriting & Spread Qualification",
-      "purpose": "Qualify a healthcare logistics contract before committing dispatch capacity or driver settlements. Separate authorized passenger trips from specimen deliveries, verify the actual payer and service requirements, and establish whether the retained spread survives cancellations, documentation failures, backup coverage, and delayed collections.",
-      "chapter_ref": "Q1, Q2, Q6",
+      "title": "Launch Sequence and Direct Contract Pipeline",
+      "purpose": "Sequence the launch of a medical courier operation so that no money goes into vehicles, insurance, or entity paperwork before a contract justifies it, then build a direct-contract pipeline that replaces middleman pay with lab, pharmacy, and clinic clients who pay the full rate and sign terms that protect the operator.",
+      "chapter_ref": "Q1-Q2",
       "instructions": [
-        "Choose one named counterparty and one service lane for this sheet. Collect its proposed agreement, rate exhibit, authorization workflow, payment calendar, and sample documentation requirements before calculating spread or discussing a launch date with drivers.",
-        "Underwrite the organization that actually owes payment rather than the facility requesting transportation. Verify contracting authority, provider enrollment requirements, dispute rights, and whether a broker can withhold unrelated invoices after a single disputed trip.",
-        "Build a representative service basket using completed trips or accepted route stops, not requested appointments. Price empty repositioning, wheelchair capacity, wait time, failed handoffs, after-hours dispatch, and backup assignments explicitly before accepting a blended rate.",
-        "Interview at least two qualified carrier businesses about the proposed lane. Verify actual operating capacity and settlement expectations, then compare their quotes against the service requirements without assuming that contractor classification follows from the agreement heading.",
-        "Record a proceed, renegotiate, or decline decision supported by documents and arithmetic. Assign an owner and resolution date to every unresolved condition; do not convert an unverified standing-order forecast into committed revenue or immediately spendable cash."
+        "Start with the vehicle you already own and record it before considering any purchase; a van or Sprinter only enters the plan when a signed contract covers its payment.",
+        "Fill in the rate benchmarks before you contact a single prospect, so every offer is judged against third-party day rates, vehicle-class ladders, and the per-stop spread large companies keep.",
+        "Block a fixed daily window for applications and calls, and log every submission with the date, contact name, follow-up call time, and the response you received.",
+        "Write the client's stated volume, hours, and stop count into each bid in plain language, and attach your cancellation and subcontractor terms before anything is signed.",
+        "Review this sheet weekly; move any route that clashes with your day job into the decline or backup-coverage column instead of stretching your availability."
       ],
       "fields": [
         {
-          "name": "Contracting entity and collectible payment obligation",
+          "name": "launch_level_and_vehicle",
           "type": "textarea",
-          "prompt": "Identify the legal buyer, requesting facility, payer intermediary, and authorized signer. Explain which entity owes your company money, which contract establishes that obligation, and what evidence supports its ability to pay.",
-          "example": "Illustrative Harbor Access TPA signs the dispatch agreement and owes accepted invoices; three dialysis centers only submit schedules. The file contains the TPA's W-9, signer authorization, insurance certificate, and two vendor references reporting payment within 42 days. A facility scheduler's email cannot expand the TPA's contracted payment obligation."
+          "prompt": "Identify which courier level you are starting at and which vehicle you already own. Explain why you will launch with that vehicle instead of buying a van or Sprinter, and name the signed contract that would justify any upgrade.",
+          "example": "I start at level one in the paid-off sedan I already drive. Medical Courier Connection says no van or Sprinter purchase until a signed contract covers the payment [Medical Courier Connection — o1VRiVMJTpY @ 00:24:07]. Sarah Davis adds that a bigger vehicle expands capacity but does not automatically raise your level [Sarah Davis | The D&G Way — bzwpVnDnULQ @ 00:02:47]."
         },
         {
-          "name": "Service lane and authorized demand evidence",
+          "name": "paperwork_order",
           "type": "textarea",
-          "prompt": "Define geography, passenger assistance level or specimen class, operating hours, and recurring demand. Distinguish a planning forecast from a written purchase commitment and identify the authorization required for each billable service.",
-          "example": "The pilot covers ambulatory dialysis transportation within a 22-mile service area, weekdays from 05:30 to 18:00. Thirty patients generate up to 180 one-way legs weekly at three round trips each. Only 150 legs currently have valid authorizations; the remaining 30 stay outside the committed revenue forecast until verified."
+          "prompt": "Decide your paperwork order for the first ninety days. State whether you will form an LLC, pull an EIN, and open business banking before your first contract, or start under your name and SSN as a 1099 contractor, and explain why.",
+          "example": "Miles & Money and Diamond Hunter Enterprises push LLC, EIN and business banking first, while Sarah Davis says levels one and two needed a name, SSN and 1099 status. I will start as a 1099 contractor, then form the LLC once a vendor posting demands it, keeping overhead low [STICK WITH US DELIVERY 🚚 📦 — cWa2fFpFFFU @ 00:05:40]."
         },
         {
-          "name": "Rate card and retained spread qualification",
+          "name": "training_and_insurance_stack",
           "type": "textarea",
-          "prompt": "Calculate gross billings, carrier settlement, and retained dispatch contribution for the service basket. Show approved accessorial charges separately and explain whether quoted rates preserve the canonical 45 percent retained share.",
-          "example": "A sample basket contains 100 completed one-way legs billed at $50 each, producing $5,000 gross billings. Carrier settlements total $2,750, leaving $2,250 retained contribution, exactly 45 percent. A separately authorized $20 wait charge with a $15 carrier payment retains only 25 percent and must be modeled separately."
+          "prompt": "List the HIPAA and bloodborne pathogen certificates you hold or will complete, and the exact insurance you will carry. Note whether a client has told you its required liability limit before you pay any premium, and record that limit.",
+          "example": "Diamond Hunter Enterprises says commercial auto plus business liability is needed even solo [Diamond Hunter Enterprises — zQaL3OdQ2D8 @ 00:04:29], but Tony of Stick With Us Delivery says to ask whether the company requires $300,000 or $1 million first [STICK WITH US DELIVERY 🚚 📦 — gvxg69CITsE @ 00:04:22]. I hold both certificates and will bind only the limit requested."
         },
         {
-          "name": "Standing-order durability and concentration exposure",
+          "name": "market_rate_benchmarks",
           "type": "textarea",
-          "prompt": "Document standing-order renewal, termination notice, appointment variability, and customer concentration. Estimate the contribution lost if the largest facility withdraws, and identify a credible replacement lane rather than assuming immediate demand substitution.",
-          "example": "The TPA provides a 90-day standing-order schedule but may terminate on 30 days' notice. Its largest dialysis center supplies $18,000 monthly billings and $8,100 retained contribution at 45 percent. The replacement pipeline contains two laboratory opportunities, but neither enters the forecast before a signed service order exists."
+          "prompt": "Write down the rate benchmarks you will measure every offer against, by vehicle class and by payer type. Compare third-party day rates with direct-contract pricing and note the spread large courier companies keep between driver pay and client billing.",
+          "example": "LearnCargo puts third-party medical courier work near $200 per day [LearnCargo — TkA2pcOAGoQ @ 00:01:58]. JT Automations ladders sedans at $800 to $1,500 weekly up to $4,000 to $8,000 in a non-CDL box truck [JT Automations — gpeFpvbyWg4 @ 00:04:02]. Giganomic Era shows drivers earning $10 per stop while clients pay $20 to $50 [Giganomic Era — YewfRfz9eUI @ 00:01:26]."
         },
         {
-          "name": "Carrier capacity and operational evidence",
+          "name": "cash_reserve_plan",
           "type": "textarea",
-          "prompt": "List primary and backup carrier businesses, permitted service capabilities, insurance evidence, vehicle availability, and dispatch acceptance rules. Separate available vehicles from merely registered vehicles and explain how capacity was independently verified.",
-          "example": "Carrier A demonstrates four available ambulatory vehicles; Carrier B documents two wheelchair-accessible vehicles with current inspections. The dispatcher verifies certificates directly with the insurance producer and observes one scheduled service demonstration. Two additional registered vehicles remain excluded because their drivers are unavailable during the dialysis morning peak."
+          "prompt": "Calculate three months of operating expenses, including fuel, insurance, phone, and maintenance, and state where that reserve sits today. Explain how you will cover the gap if a direct client takes ninety days to send the first check.",
+          "example": "I will not accept invoice-paid direct clients until three full months of operating expenses sit in a separate account. Ken and Linda of Medical Courier Connection set that rule because billing cycles run 20 to 30 days and first checks can take 90 days to arrive [Medical Courier Connection — o1VRiVMJTpY @ 00:14:00]."
         },
         {
-          "name": "STAT route acceptance and handoff requirements",
+          "name": "prospecting_script_and_schedule",
           "type": "textarea",
-          "prompt": "Define pickup deadlines, destination acceptance hours, specimen classification, packaging responsibility, and temperature instructions. Identify who can reject a shipment and who resolves a missed handoff without allowing dispatchers to improvise clinical decisions.",
-          "example": "The laboratory requests pickup within 30 minutes and delivery within 90 minutes of acceptance. The laboratory classifies and packages each shipment; the courier verifies the external package checklist and barcode. A leaking package is refused and escalated to the laboratory supervisor, who determines replacement collection and clinical urgency."
+          "prompt": "Write the opening line you will use on prospecting calls and the exact time windows you will dial. Name the departments you will call directly, the decision-makers you will ask for, and how you will cluster in-person visits geographically.",
+          "example": "Lunch-break calls open with 'Are your deliveries currently handled internally...?' [Giganomic Era — 7Mz5ctFZBX0 @ 00:05:23]. I dial direct department lines, never the main hospital number, between 9:00 and 11:00 a.m. on Tuesday or Wednesday [Giganomic Era — jv40GZPfRSc @ 00:01:44], asking lab directors and pharmacy managers by name, then visit clinics in one cluster per afternoon."
         },
         {
-          "name": "Payment terms and disputed invoice boundaries",
-          "type": "textarea",
-          "prompt": "Extract the payment clock, clean-invoice definition, submission deadline, correction window, offset rights, and collection escalation path. Identify whether timing begins at service completion, invoice receipt, or acceptance after a separate validation process.",
-          "example": "The draft pays Net-45 after acceptance, with acceptance allowed five business days after submission. Weekly batching adds up to seven calendar days before submission. The counterproposal requires itemized disputes within five business days and payment of undisputed lines on schedule, preventing one missing trip signature from freezing the entire weekly invoice."
+          "name": "application_cadence",
+          "type": "text",
+          "prompt": "Set your daily application target and your follow-up rule for every submission. List the job boards and keyword alerts you will monitor, and describe how you will keep applying after the first contract lands instead of stopping.",
+          "example": "Leelah committed to 25 applications daily, landed a first contract around day seven, then pushed to 40 to 50 per day [Leelah The Entrepreneur — UUrhf6VurIA @ 00:05:24]. I will match that on Indeed, CB Driver and Google alerts, and call the same day after each submission, leaving professional voicemails [My Business Vibe 9 — mm9doNupm1k @ 00:04:18]."
         },
         {
-          "name": "Denial and clawback evidence assessment",
+          "name": "direct_pricing_terms",
           "type": "textarea",
-          "prompt": "Review a sample of historical denials or simulated exceptions. Identify missing authorization, unsupported mileage, duplicate submission, and absent delivery evidence separately, then assign prevention controls and a recoverability estimate supported by documentation.",
-          "example": "A 200-leg sample contains six missing authorization references, three mileage mismatches, and one duplicate submission. The ten affected $50 lines represent $500 of exposure before correction. Authorization validation blocks new bookings; GPS review resolves mileage exceptions; the duplicate is voided rather than resubmitted under a different trip identifier."
+          "prompt": "Draft the pricing terms you will propose to your first direct client. Include a per-pickup minimum or weekly retainer, plus your terms for weekend work, holiday coverage, after-hour requests, emergency STAT service, and waiting time, and explain which term you expect to matter most.",
+          "example": "Giganomic Era charges a $35 minimum per pickup or a $750 to $1,000 weekly retainer and says the bigger opportunity is negotiating weekend work, holiday coverage, after-hour requests, emergency STAT service and waiting time [Giganomic Era — YV5-h4wgh4Q @ 00:03:58]. A comparable direct oxygen route paid $2,620 monthly, about $131 per day [Giganomic Era — YV5-h4wgh4Q @ 00:05:08]."
         },
         {
-          "name": "Pricing floor and adverse service basket",
+          "name": "contract_protection_clauses",
           "type": "textarea",
-          "prompt": "Stress the quote with increased carrier rates, canceled appointments, and backup usage. Calculate the price needed to retain 45 percent after carrier settlement and explain what contract adjustment would preserve the service's economics.",
-          "example": "If carrier settlement rises from $27.50 to $30 per completed leg, a $50 customer rate retains $20, or 40 percent. Preserving 45 percent requires $30 divided by 0.55, approximately $54.55. The proposed exhibit therefore includes a documented rate-review mechanism rather than silently assuming the original spread survives."
+          "prompt": "List the protective clauses you will write into every bid and contract. Cover how you record the client's stated volume assumptions, what cancellation language you require, and which subcontractor or approval clauses you must review before hiring a driver.",
+          "example": "Medical Courier Connection writes the client's stated assumptions into the bid so misrepresented volume is on paper [Medical Courier Connection — o1VRiVMJTpY @ 00:36:30], and pay-the-remainder cancellation language forced a bank client to pay out about 8 months [Medical Courier Connection — o1VRiVMJTpY @ 00:27:30]. I will hire only when $300 to $500 weekly remains after driver pay."
         },
         {
-          "name": "Underwriting decision and unresolved conditions",
+          "name": "availability_and_capacity_rule",
           "type": "textarea",
-          "prompt": "State the commercial decision, evidence supporting it, outstanding conditions, accountable owners, and expiration date of the offer. Explain which unresolved issues prevent service acceptance and which can be monitored after a limited pilot.",
-          "example": "Decision: renegotiate the 150-authorized-leg pilot at the current $50 rate only if $27.50 carrier settlements remain available. The operations lead must verify backup coverage, and the controller must remove portfolio-wide invoice offsets. The offer expires in 14 days; no trips are accepted before the signed rate exhibit and service credentials are complete."
+          "prompt": "Map your day-job hours against every route you are considering, including morning and evening runs. State which routes you will decline, where you will offer backup or overflow coverage instead, and how you will avoid overpromising around-the-clock availability.",
+          "example": "My day job runs midday, so I keep early morning and evening routes and decline anything that clashes, offering backup and overflow coverage instead of 24/7 promises [Giganomic Era — 7Mz5ctFZBX0 @ 00:06:20]. Giganomic Era puts it plainly: a missed opportunity is better than a failed contract that damages your reputation [Giganomic Era — 7Mz5ctFZBX0 @ 00:06:36]."
         }
       ],
-      "completion_gate": "The commercial owner and operations lead sign only after the collectible payer, authorization process, primary and backup capacity, pricing basket, and payment-clock exposure are evidenced. Every unresolved launch-critical condition has a named owner and blocks the affected service lane."
+      "completion_gate": "Worksheet 1 is complete when the launch vehicle is one you already own, three months of operating expenses are banked or scheduled, the liability limit is confirmed by a client before purchase, at least 25 daily applications are logged with same-day follow-up, and every bid carries written volume assumptions and cancellation language."
     },
     {
       "worksheet_id": "ws-02",
       "number": 2,
-      "title": "Unit Economics, Reserve Float & Working-Capital Calculator",
-      "purpose": "Reconcile the three canonical scenarios without treating driver settlements as retained revenue or patient activity as operator sales. Calculate collection float, operating cash needs, restricted reserves, and a funded volume ceiling before scaling an otherwise profitable dispatch book.",
-      "chapter_ref": "Q3, Q4",
+      "title": "Hiring Fleets, App Strategy, and Specialized Lanes",
+      "purpose": "Choose which hiring fleets, brokerages, and apps deserve your onboarding hours, set the insurance limits and credentials that act as the entry moat, and decide which specialized lane, STAT, cold chain, specimens, or organs, you can safely enter with the certifications, coolers, and relationships already in hand.",
+      "chapter_ref": "Q3-Q4",
       "instructions": [
-        "Copy the canonical annual gross billings, 45 percent retained share, and owner profit into separate columns. Derive carrier settlements and residual operating expense algebraically so the worksheet cannot silently substitute a different profitability assumption.",
-        "Maintain distinct reporting views for customer billings, carrier payables, retained contribution, and owner profit. Document the contract-specific ASC 606 principal-versus-agent conclusion; the scorecard's retained-share presentation does not determine accounting treatment for every future agreement.",
-        "Use a declared day-count convention when converting annual figures into a float requirement. Include service-to-invoice delay and acceptance delay when measuring cash exposure, rather than treating a nominal Net-45 clause as the complete collection cycle.",
-        "Separate reusable working capital from setup spending, operating losses, and restricted balances. Count a credit facility only after its documents, borrowing conditions, availability, and draw timing have been confirmed by the responsible treasury owner.",
-        "Stress collections and denial losses before committing additional standing orders. When available liquidity cannot support the proposed volume, reduce the funded volume ceiling, renegotiate settlement timing, or secure additional committed capital before accepting the exposure."
+        "List every target company with your vehicle class, its published pay floor or weekly cap, and whether it has confirmed routes in your exact market.",
+        "Complete each application in full on the first pass, check every availability day, then call the listed dispatch number rather than waiting for an email.",
+        "Disclose your full background truthfully on every vetting form, and note any credential, such as a TWIC card, that could move you to the front of the line.",
+        "Before accepting a specialized lane, confirm the certifications, damage insurance, cooler count, and dry ice limits it requires, and write each one down.",
+        "Run the STAT checklist on every stacked request, and record each decline with the reason so your patterns become visible over a month of routes."
       ],
       "fields": [
         {
-          "name": "Conservative scenario reconciliation",
+          "name": "vehicle_class_pay_floor",
           "type": "textarea",
-          "prompt": "Reconcile the Conservative scenario from gross billings through carrier settlements, retained contribution, operating expense, and owner profit. State both gross-billings margin and retained margin so the two denominators remain unambiguous.",
-          "example": "Conservative annual billings are $250,000. Carrier settlements equal $137,500 at 55 percent, leaving $112,500 retained contribution. Other operating expense is $82,500, producing $30,000 owner net profit. Profit equals 12 percent of gross billings and 26.67 percent of retained contribution. The reported core team is 2 FT plus 2 C."
+          "prompt": "Record the daily pay floor that applies to your vehicle class and the weekly caps published by any fleet you are targeting. Explain how a vehicle upgrade would change your ceiling and which signed work would have to come first.",
+          "example": "Diamond Hunter Enterprises sets a $200 daily sedan minimum, $400 to $500 for a cargo van or Sprinter, and $800 to $1,200 for a box truck [Diamond Hunter Enterprises — kDbf0ylOUNw @ 00:01:00]. American Expediting caps cars at $1,200 weekly, vans at $1,500 and box trucks near $2,000 [Eann — tidUl8-lql8 @ 00:02:10]. My sedan floor is $200."
         },
         {
-          "name": "Base scenario reconciliation",
+          "name": "application_completeness",
           "type": "textarea",
-          "prompt": "Reconcile the Base scenario using the supplied annual figures without adding revenue from patient appointments or laboratory testing. Calculate monthly planning amounts from unrounded annual values and identify the reported core staffing configuration.",
-          "example": "Base annual billings are $925,000; settlements are $508,750; retained contribution is $416,250; other expense is $249,750; owner profit is $166,500. Gross-billings margin is 18 percent and retained margin is 40 percent. Monthly owner profit is $13,875, with a reported core team of 2 FT plus 2 C."
+          "prompt": "Describe how you will complete every fleet application in full on the first attempt. Note which availability days you will check, which dispatch numbers you will call instead of waiting, and how often you will follow up by name.",
+          "example": "Giganomic Era warns companies only contact applicants who complete the full form [Giganomic Era — VOBDHU3FYtA @ 00:05:53]. On Strategic Delivery Solutions forms I check Sunday through Saturday because the goal is a callback, then call the listed number [Side Hustle 247 — WVwEyiww470 @ 00:04:40]. I call dispatch by name every five to seven days."
         },
         {
-          "name": "Scaled scenario reconciliation",
+          "name": "market_route_check",
           "type": "textarea",
-          "prompt": "Reconcile the Scaled Small-Team scenario and disclose the difference between core personnel and external carrier capacity. Preserve the canonical profit while recording staffing or settlement assumptions that would require a separate sensitivity case.",
-          "example": "Scaled billings are $1,600,000; settlements are $880,000; retained contribution is $720,000; other expense is $336,000; owner profit is $384,000. Margins are 24 percent of billings and 53.33 percent of retained contribution. The core team is 3 FT plus 3 C; external carrier personnel are inventoried separately, not represented as six people performing every trip."
+          "prompt": "Before investing onboarding hours, confirm whether each target company actually has routes in your exact market. List the companies, the date you asked, the answer you received, and what silence from a company will mean for your next move.",
+          "example": "Giganomic Era says silence usually means no routes exist in that market, so confirm before onboarding [Giganomic Era — 7k3sVGSbmRA @ 00:04:03]. Applicants without courier experience still get turned down when the vehicle fails age requirements or insurance limits run too low [Giganomic Era — 7k3sVGSbmRA @ 00:05:11]. I ask about local routes, vehicle age and limits on the first call."
         },
         {
-          "name": "Operating expense bridge and planning assumptions",
+          "name": "insurance_agent_script",
           "type": "textarea",
-          "prompt": "Bridge the stated $3,500 to $18,000 monthly operating range to each scenario's implied total expense. Label any allocation as a planning assumption rather than changing the canonical totals or hiding omitted labor costs.",
-          "example": "Planning allocation only: fixed overhead is $3,500, $12,000, and $18,000 monthly for Conservative, Base, and Scaled. Remaining annual expense is $40,500, $105,750, and $120,000 respectively. Together these reconcile to $82,500, $249,750, and $336,000. The supplied monthly range is therefore not presented as each scenario's complete all-in expense."
+          "prompt": "Write the script you will use with your insurance agent when raising limits for paid delivery. Describe the work you pursue, the per-person, per-accident, and property damage limits you request, and whether you need an endorsement or commercial policy.",
+          "example": "Following Giganomic Era, I tell the agent I am pursuing pharmacy, medical supply and local business delivery, ask for 100,000 per person, 300,000 per accident and 50,000 or 100,000 property damage, and confirm whether paid delivery needs an endorsement or a commercial policy [Giganomic Era — FzfSZhrc8rM @ 00:08:02]. Those 100/300 limits act as the entry moat."
         },
         {
-          "name": "Revenue presentation and settlement accounting",
+          "name": "app_vs_contract_strategy",
           "type": "textarea",
-          "prompt": "Describe the contractual control assessment supporting gross or net revenue presentation under ASC 606. Preserve the scorecard's 45 percent retained contribution view while keeping customer receivables, settlement liabilities, and recognized revenue distinguishable.",
-          "example": "For the Base planning view, $925,000 customer billings less $508,750 carrier settlements leaves $416,250 retained contribution. The accountant documents the principal-agent assessment under ASC 606-10-55-36 through 55-40 for each contract. An agent presentation recognizes the net fee; a supported principal presentation recognizes gross revenue and carrier expense without changing the underlying cash."
+          "prompt": "Decide what role delivery apps will play in your schedule, if any. State whether you will refuse apps, use them as gap fillers, or run them alongside contracted routes, and explain how apps differ from a recurring customer.",
+          "example": "Lavish Life refuses apps entirely, while Giganomic Era reports $1,000 to $1,500 weeks on Dispatch and rates Roadie a high-odds gap filler. Giganomic Era also warns gig apps were designed for you to be available, not to win [Giganomic Era — VOBDHU3FYtA @ 00:07:20], and platform access is not a regular customer [Giganomic Era — FzfSZhrc8rM @ 00:09:20]."
         },
         {
-          "name": "Thirty-day and forty-five-day cash float",
+          "name": "unposted_work_and_credentials",
           "type": "textarea",
-          "prompt": "Calculate carrier and operating cash needed before collections using a 30-day planning month. State whether the interval measures actual service-to-cash timing, and include a separate reserve without describing internal cash as customer escrow.",
-          "example": "Base monthly settlements are $42,395.83 and other expense is $20,812.50. Funding 30 days plus a $10,000 reserve requires $73,208.33. Funding 45 days requires $63,593.75 settlements plus $31,218.75 expense plus $10,000 reserve, totaling $104,812.50. Calculations use unrounded annual values; the reserve is internal treasury cash, not a customer escrow account."
+          "prompt": "List the unposted work you will ask each fleet about, such as one-off STAT orders, and the credentials that move you up the line. Note any background issues that could block a credential and how you will disclose them truthfully.",
+          "example": "Kae says pharmacy fleets posting $15 to $18 hourly routes hand out stat orders paying $80 to $100 [Boss up with Kae — rwv6d5iSQQY @ 00:06:04]. A TWIC card opens Fort Industries aviation pickups [Boss up with Kae — 6vnVGK7rSFQ @ 00:04:37], and one student lost a federal contract over an untruthful UAR disclosure [Diamond Hunter Enterprises — rPBtFcgIPmQ @ 00:02:15]."
         },
         {
-          "name": "Collection-delay sensitivity and liquidity response",
+          "name": "specialized_lane_choice",
           "type": "textarea",
-          "prompt": "Extend the cash-conversion interval to include invoice batching, acceptance lag, and slower payment. Calculate the revised funded requirement and identify the exact action taken before accepting new services beyond available liquidity.",
-          "example": "A 60-day service-to-cash stress requires two Base months of settlements and expense: $126,416.67, plus the $10,000 reserve, totaling $136,416.67. Against $115,000 of confirmed liquidity, the shortfall is $21,416.67. New recurring volume pauses until collections accelerate, settlement terms change, or additional capital is committed and available."
+          "prompt": "Choose which specialized lane you will pursue first: STAT, cold chain, specimens, or organs. List the certifications already in hand, the insurance that would cover damages, and the facility relationship you need before chasing that lane. Explain why that lane fits your vehicle.",
+          "example": "LearnCargo warns against chasing cold chain or organ contracts without damage insurance and certifications in hand [LearnCargo — 703O5MjUp9A @ 00:04:16], and notes $1,500 to $5,000 weeks belong to couriers with years of hospital or clinic relationships [LearnCargo — 703O5MjUp9A @ 00:03:58]. I start with specimens, holding HIPAA and OSHA bloodborne pathogen training."
         },
         {
-          "name": "Startup uses and committed capital stack",
+          "name": "certification_stack",
           "type": "textarea",
-          "prompt": "Allocate startup cash among setup spending, available working capital, and protected reserves. Compare the remaining liquidity with the float requirement and distinguish funded resources from unsigned credit proposals or expected customer payments.",
-          "example": "A $65,000 startup contribution funds $15,000 of setup costs and leaves $50,000 cash. A signed, drawable $65,000 working-capital line brings available liquidity to $115,000. Against the $104,812.50 Base 45-day requirement, headroom is $10,187.50. The line exceeds startup equity and is separately disclosed; a lender's preliminary term sheet would contribute zero available funding."
+          "prompt": "Build your certification stack and budget. Decide whether you will stop at the two-certificate minimum or pursue a larger stack, list each course, its cost, and completion date, and note which higher-paying lanes each credential unlocks for your market.",
+          "example": "Markie Williams calls HIPAA and OSHA bloodborne pathogen training the two most important [Markie Williams Online Certification Courses — WizhPVJ0zVE @ 00:01:13]. A $90 pack adds hazard communication, fire safety, specimen transport, cybersecurity and harassment prevention [HIPAA Training — zLJq8PlUMDQ @ 00:01:10]. Diamond Hunter ties radiopharmaceutical, chemo and Cairo Fertility credentials to $1,500-plus daily [Diamond Hunter Enterprises — jyu_AIm5pAw @ 00:05:35]."
         },
         {
-          "name": "Denial loss and reserve replenishment",
+          "name": "cooler_and_supply_setup",
           "type": "textarea",
-          "prompt": "Model an incremental unrecoverable denial separately from canonical profit. Explain whether carrier settlements remain payable, how reserve cash is replenished, and why reserving cash does not itself create an additional operating expense.",
-          "example": "A new unrecoverable denial equal to 2 percent of Base billings is $18,500. If settlements and other expenses remain unchanged and this loss was not already budgeted, owner profit falls from $166,500 to $148,000. Moving $10,000 into a reserve account only reallocates cash; recording the actual loss follows the applicable accounting treatment."
+          "prompt": "Specify your specimen cooler and supply bag setup. Record daily specimen volume and frozen specimen needs from each client, the number of coolers required, your spill kit contents, and the dry ice limit you will enforce in your vehicle.",
+          "example": "I ask each lab about daily volume and frozen specimens before buying coolers, since some routes run 50 coolers [Medical Courier Connection — oF-_Ka8kNzk @ 00:02:51]. Coolers stay leak proof, puncture resistant and biohazard marked, stocked with a spill kit, baggies, gloves and alcohol-based rubs. I cap dry ice and keep fresh air moving [Medical Courier Connection — oF-_Ka8kNzk @ 00:03:19]."
         },
         {
-          "name": "Funded volume ceiling and release trigger",
+          "name": "stat_stacking_rule",
           "type": "textarea",
-          "prompt": "Set the maximum billings supportable by available working capital under a declared settlement ratio and collection interval. Hold operating cash and reserves aside first, and specify what evidence permits the volume ceiling to increase.",
-          "example": "With $115,000 liquidity, reserve $10,000 and hold $31,218.75 for 45 days of Base operating expense. The remaining $73,781.25 funds settlements. Dividing by 0.55 and 1.5 months supports $89,431.82 monthly billings under this fixed-expense assumption. The controller raises this ceiling only after reviewing actual collection timing and incremental staffing costs."
+          "prompt": "Write your STAT stacking rule. For each STAT offer, answer where it takes you, the added miles, the added time, and whether it breaks an existing commitment, then state how you will prioritize when two STAT requests collide.",
+          "example": "Before any stack I check destination, added miles, added time and existing commitments, and decline anything that makes me late [Medical Courier Connection — qLWRmpKkEP0 @ 00:05:10]. A $50 STAT isn't necessarily a $50 opportunity once deadhead counts [Medical Courier Connection — qLWRmpKkEP0 @ 00:02:15]. When two collide, the patient-care specimen runs first [Medical Courier Connection — qLWRmpKkEP0 @ 00:06:15]."
         }
       ],
-      "completion_gate": "The controller verifies all three canonical reconciliations, approves the contract-specific revenue presentation, and confirms drawable cash covers the selected service-to-cash stress plus reserve. Proposed volume remains below the documented funded ceiling."
+      "completion_gate": "Worksheet 2 is complete when every target company has a confirmed local route answer, your insurance limits meet 100/300 or the specific contract requirement, your certification stack lists dates and costs, your cooler plan matches client specimen volume, and a written STAT rule governs every stacked run."
     },
     {
       "worksheet_id": "ws-03",
       "number": 3,
-      "title": "End-to-End Execution, Idempotent Ledger & QA Pre-Flight Sheet",
-      "purpose": "Translate a service request into a verified assignment, documented completion, collectible invoice, and reconciled carrier payment. Establish durable identifiers, controlled state transitions, evidence retention, and exception handling so retries, corrections, and dispatch outages cannot create duplicate services or unsupported claims.",
-      "chapter_ref": "Q7, Q8",
+      "title": "Route Pricing, Pay Reality, and the Legal Foundation",
+      "purpose": "Price routes from the ground up instead of accepting advertised pay, net out every deduction and cost before celebrating gross revenue, and lay the entity, insurance, enrollment, and billing foundation that keeps courier and NEMT work legally protected and actually paid.",
+      "chapter_ref": "Q5-Q6",
       "instructions": [
-        "Map the actual workflow from authorization intake through cash application before configuring software. Name the owner of each transition and specify the evidence required to advance, reverse, or cancel a service without losing its history.",
-        "Create one durable business identifier for each authorized service leg or courier movement. Attach source-system identifiers as references, then define idempotency keys for assignment, evidence ingestion, invoicing, and settlement rather than relying on timestamps alone.",
-        "Separate planned events from observed events in the ledger. Preserve appointment times, actual GPS observations, barcode scans, and corrections with their provenance; never manufacture a missing event simply because the invoice requires a completed field.",
-        "Test normal completion, cancellation, duplicate delivery, failed handoff, corrected billing, and partial payment in a nonproduction environment. Verify both customer receivables and carrier payables after each test, including the audit trail left by reversals.",
-        "Complete pre-flight checks before each shift and reconcile all open exceptions before invoice release. When a safety, packaging, authorization, or evidence defect remains unresolved, isolate the affected service rather than blocking unrelated valid work."
+        "Price at least one route with the flat-rate build before quoting any client: time, mileage, markup, and a clean rounded figure.",
+        "Gather miles, hours, stops, and daily volume for every offer, and compute effective hourly pay after fuel and weekly carrier deductions.",
+        "Mark up every draft contract for exclusivity, specimen liability, termination notice, subcontractor rights, and fuel surcharge language before you sign.",
+        "Describe your operation to insurance agents in precise cargo terms, and confirm which coverages, including errors and omissions, each client contract demands.",
+        "If NEMT is part of the plan, treat Medicaid enrollment, state transportation registration, and broker credentialing as separate doors, each requiring written confirmation."
       ],
       "fields": [
         {
-          "name": "Intake packet and minimum necessary data",
+          "name": "flat_rate_build",
           "type": "textarea",
-          "prompt": "Define mandatory intake fields for passenger and specimen lanes separately. Identify which information dispatch genuinely needs, how authorization is verified, and which sensitive details should remain outside ordinary notifications and billing summaries.",
-          "example": "Passenger intake records service ID, payer authorization, pickup and destination, appointment time, mobility needs, and a controlled contact channel. Courier intake records package ID, laboratory instructions, destination, and deadline. A routine driver notification contains a task reference and secure access link, not diagnosis text or specimen results copied into an ordinary message."
+          "prompt": "Build a flat daily rate for one real or prospective route. Record the hours, total miles, your mileage rate, your hourly time value, the subtotal, your markup percentage, and the clean rounded number you will actually quote.",
+          "example": "Using Giganomic Era's build for a 2.5-hour, 45-mile morning lab route: mileage at 70 cents is $31.50, time at $40 an hour is $100, for $131.50 total. A 25% markup brings it to $164, rounded up to a clean $175 per service day [Giganomic Era — EgbN0cCrzpk @ 00:01:40]. Stat runs are quoted separately at $65-plus."
         },
         {
-          "name": "Canonical service identifier and duplicate detection",
+          "name": "true_route_comparison",
           "type": "textarea",
-          "prompt": "Specify the business key that distinguishes legitimate repeated appointments from duplicate requests. Explain how external identifiers map to internal service records and how corrections preserve identity without creating another payable movement.",
-          "example": "Service SVC-004182 represents the outbound leg for authorization AUTH-731 on the scheduled service date. The return leg receives SVC-004183. Reimporting the same TPA row matches the source ID and leg key instead of creating a third service. Changing pickup time creates schedule revision 2 while preserving both original service identifiers."
+          "prompt": "Compare two routes you have been offered using miles, hours, stops, and daily volume rather than advertised pay. Calculate effective pay per hour after fuel for each, and explain which route you will take and why the numbers support it.",
+          "example": "Sarah Davis shows a $350 route at 250 miles and 10 to 12 hours can lose to a $250 route at 80 miles and 4 hours [Sarah Davis | The D&G Way — hxoZsGym9DU @ 00:08:18]. Samuel B. adds that $40 an hour minus $8 of gas is really $32 [Samuel B. — X99grw6uMuY @ 00:03:30]. I take the shorter route."
         },
         {
-          "name": "Lifecycle states and authorized transitions",
+          "name": "settlement_deductions",
           "type": "textarea",
-          "prompt": "List service states, transition owners, and evidence prerequisites. Describe how cancellations, failed pickups, and corrections are represented without marking an unperformed service completed or deleting information needed for a later payer audit.",
-          "example": "The lifecycle is requested, authorized, assigned, accepted, arrived, completed, evidence-verified, invoiced, and collected. Dispatch owns assignment; the carrier supplies arrival and completion events; billing verifies evidence. A patient cancellation enters canceled with reason and timestamp. Any contractual cancellation fee uses its own charge code and never masquerades as a completed passenger leg."
+          "prompt": "List every deduction a carrier contract takes from your weekly settlement before you drive a single mile. Total them, subtract them from expected gross, and note the cash buffer you hold for gas, food, and maintenance until settlements start.",
+          "example": "Dean Medical Courier Academy lists $6.30 administrative, $5 tech data, $15.85 occupational accidental, $4.65 cargo and $25 commercial auto liability, roughly $50 weekly [Dean Medical Courier Academy — q25UyvVRKew @ 00:03:50]. Gilsar Vergara holds a buffer for gas and food until settlements pay and budgets oil changes as often as every two weeks [Gilsar Vergara — _1Xl9_H-PX8 @ 00:04:23]."
         },
         {
-          "name": "Atomic ledger posting and retry behavior",
+          "name": "pay_claim_reality_check",
           "type": "textarea",
-          "prompt": "Define how the ledger prevents duplicate financial events when callbacks repeat or connections fail. Include uniqueness constraints, transaction boundaries, payload comparison, and the response to a repeated key carrying conflicting amounts.",
-          "example": "The posting key is SVC-004182:carrier-settlement:v1, enforced by a database unique constraint. One transaction records the event and $27.50 payable; an outbox record schedules notification after commit. Repeating the same payload returns the existing result. Repeating the key with $30.00 raises a review exception; an approved adjustment receives a new linked revision."
+          "prompt": "Test the biggest weekly pay claim you have seen against real invoices and route results. Note the conditions behind the claim, any cancellations that cut pay, and the realistic part-time or full-time daily figure you will plan your budget around.",
+          "example": "Dean Medical Courier Academy's $3,500 weeks came only during driver shortages and bad weather. Dj Mo's real invoice week totaled $891.60 [Dj Mo — Wc0Dykqpw-Q @ 00:05:59]. Pedro Santiago ran 14 stops with one cancellation and made $140 [Pedro “Mr.BetonYou” Santiago — BhO0ZqkVHFk @ 00:11:29]. I budget around a $220 to $230 part-time day [Side Hustle 247 — NjZBEatuBlc @ 00:04:58]."
         },
         {
-          "name": "GPS verification and disputed mileage",
+          "name": "contract_red_lines",
           "type": "textarea",
-          "prompt": "Record which GPS observations substantiate pickup, drop-off, and route distance. Define tolerances, outage handling, and manual review requirements while distinguishing estimated routing distance from observed evidence used in a claim.",
-          "example": "Route planning predicts 12.4 miles; recorded travel is 13.1 miles because of a documented road closure. The reviewer attaches the GPS track and dispatch note, then applies the payer's mileage rule. A missing pickup fix triggers review of permitted alternative evidence, not insertion of an invented coordinate or automatic substitution of planned mileage."
+          "prompt": "Write the contract red lines you will strike or negotiate before signing any carrier or direct agreement. Cover exclusivity, liability caps on specimens, termination notice, subcontractor rights, and fuel surcharge language, and state the minimum terms you will accept.",
+          "example": "Giganomic Era strikes exclusive service clauses, uncapped specimen liability and no-notice termination, pushing for 30 days notice minimum [Giganomic Era — EgbN0cCrzpk @ 00:06:19]. Dj Mo only takes carrier contracts that allow subcontractors [Dj Mo — twmmoYWAs5Y @ 00:08:07], and Kae asks for a fuel surcharge that rises when gas climbs above $4 [Boss up with Kae — 6vnVGK7rSFQ @ 00:09:32]."
         },
         {
-          "name": "Barcode custody and specimen exception trail",
+          "name": "business_model_and_entity",
           "type": "textarea",
-          "prompt": "Define required custody events, handler identifiers, package condition checks, and temperature evidence where specified. Describe how a damaged seal, missing scan, or out-of-range reading is escalated without retroactively changing the original event.",
-          "example": "Package LAB-8821 is scanned at laboratory release, carrier acceptance, and receiving-bench handoff, with UTC timestamps and handler IDs. A required temperature logger records an excursion at 09:42. Dispatch preserves the reading and contacts the laboratory supervisor; only the laboratory's designated decision-maker determines specimen usability and any recollection requirement."
+          "prompt": "Choose your business model, medical courier or NEMT, and your entity structure, LLC or sole proprietorship. Explain the liability exposure that drives the choice and list the formation steps, including EIN and any Type 2 NPI, in the order you will file them.",
+          "example": "Alton Arell ran six figures without an LLC, while The Couvent Collective calls sole proprietorship a trap. Business Assurance says an LLC protects personal assets [Business Assurance — -U66kxsJM0o @ 00:03:54]. I form the LLC, pull the EIN, then register one Type 2 NPI, since one NPI follows you everywhere [RouteGenie — 3Z74zrMSRtA @ 00:05:37]."
         },
         {
-          "name": "Invoice or 837P submission eligibility",
+          "name": "insurance_description_and_coverage",
           "type": "textarea",
-          "prompt": "Identify the payer-approved submission channel and required claim fields. Explain when an 837P is appropriate, how authorization and service evidence are matched, and how acknowledgments differ from actual adjudication or payment.",
-          "example": "The Medicaid intermediary requires its portal roster for this contract, so billing does not generate an unsolicited 837P. A different enrolled-provider contract uses the payer's 837P companion guide, including its required codes and identifiers. A 999 or 277CA response updates transmission or claim-status tracking where applicable; neither is treated as cash received."
+          "prompt": "Write how you will describe your operation to an insurance agent and list every coverage you will bind. Specify cargo type, radius, and passenger status, and note whether you need errors and omissions or hired and non-owned coverage.",
+          "example": "I never say 'medical transportation' for sealed specimens, because the agent hears passengers; I spell out cargo, radius and no passengers [Giganomic Era — wJcNFJjkNwA @ 00:03:53]. Medical Courier Connection buys errors and omissions before the lab asks and uses it as a sales tool [Medical Courier Connection — 0eV-OzFHmX8 @ 00:27:25], since cargo coverage protects nothing on a ruined biopsy."
         },
         {
-          "name": "Carrier settlement and cash application",
+          "name": "enrollment_layers",
           "type": "textarea",
-          "prompt": "Describe how accepted service evidence generates a carrier payable and how remittances are allocated against customer receivables. Keep carrier payment terms independent of customer collection unless the signed agreement explicitly provides otherwise.",
-          "example": "One hundred accepted $50 legs create $5,000 customer billings and $2,750 carrier payables. The customer remits $4,900 and identifies two disputed $50 lines. Cash application closes 98 lines and leaves $100 open with dispute reasons. The carrier's agreed settlement date remains unchanged; dispatch does not silently deduct the customer dispute from its payment."
+          "prompt": "If NEMT is in your plan, map every enrollment layer you must clear before billing a trip. List state Medicaid enrollment, state transportation authority registration, broker credentialing, and portal fees, with the written confirmation you will require for each.",
+          "example": "Nemiton calls enrollment three separate layers; in California, operating without CPUC registration earned a cease and desist after 3 months [Nemiton — qijT2a0o9VE @ 00:01:10]. Motivational Charles paid $631 for NC Tracks access [Motivational Charles — pFLQ24hu-Ac @ 00:00:35]. Geoff Cole says running trips before written Medicaid confirmation means never getting paid [Geoff Cole — dLgmDQavyEU @ 00:00:31]."
         },
         {
-          "name": "Pre-flight test matrix and acceptance evidence",
+          "name": "dead_zone_budget",
           "type": "textarea",
-          "prompt": "List executable test cases covering duplicate events, cancellations, billing corrections, missing evidence, and partial payment. For each case, state expected service counts, payable amounts, and the evidence retained by the reviewer.",
-          "example": "Test PF-07 submits the same $50 service completion three times. Expected output is one completed service, one $50 invoice line, and one $27.50 payable. PF-08 cancels before dispatch and expects zero completed-service charges. The reviewer stores test payloads, ledger extracts, and observed results; any duplicate posting blocks production use of that integration."
+          "prompt": "Budget the enrollment dead zone between applying and approval. Record your startup cost estimate by vehicle type, the number of days you expect to wait, and the operating cash that will carry fuel, insurance, and payroll until the first payment.",
+          "example": "Geoff Cole prices a single ambulatory van at $15,000 to $30,000 all in, and $30,000 to $50,000 for wheelchair-accessible [Geoff Cole — dLgmDQavyEU @ 00:05:52]. The full process takes 60 to 120 days, a dead zone where you cannot bill Medicaid [Geoff Cole — dLgmDQavyEU @ 00:05:01]. Commercial auto runs $6,000 to $10,000 yearly [Medical Courier Connection — 0eV-OzFHmX8 @ 00:05:40]."
         },
         {
-          "name": "Outage operation and reconciliation recovery",
+          "name": "document_folder_and_billing_readiness",
           "type": "textarea",
-          "prompt": "Document the controlled fallback during dispatch or network failure. Specify temporary identifiers, secure evidence capture, escalation channels, and the reconciliation procedure that prevents offline services from being invoiced twice after recovery.",
-          "example": "During a 40-minute outage, the dispatcher uses an encrypted offline roster containing only necessary service details. Temporary event OFF-021 references SVC-004182 and records its actual completion time. After recovery, reconciliation checks existing events before import. The second reviewer confirms that five offline completions produce five ledger events, not five additional services."
+          "prompt": "Assemble your full document folder before submitting any application, and confirm billing readiness before the first trip. List each document, the date you checked names, addresses, and numbers for exact matches, and every state or broker billing submission window.",
+          "example": "Nemiton builds the entire folder first and checks every name, address and number for exact matches, since one afternoon of checking saves a month of waiting [Nemiton — qijT2a0o9VE @ 00:03:44]. MJ Business Academy warns 50 to 100 unbilled trips pile up fast, so billing software and submission windows are set before launch [MJ Business Academy — OH1QaUPvJ8k @ 00:06:57]."
         }
       ],
-      "completion_gate": "Operations and billing approve the event map, replay tests, evidence rules, and outage reconciliation. Duplicate callbacks produce no duplicate service, invoice, or settlement, and every released charge links to its authorization and actual service evidence."
+      "completion_gate": "Worksheet 3 is complete when at least one route carries a documented flat-rate build, every offer shows effective pay after fuel and deductions, your contract red lines are written, your entity and NPI steps are filed in order, and no billable trip is scheduled before written enrollment confirmation and billing setup are in place."
     },
     {
       "worksheet_id": "ws-04",
       "number": 4,
-      "title": "Statutory, Licensing, Contract Addendum & Compliance Audit",
-      "purpose": "Convert healthcare transport obligations into a lane-specific evidence register with accountable owners. Verify Medicaid enrollment, passenger transport authority, privacy safeguards, specimen handling, worker classification, insurance, and contract allocation before accepting services whose legal requirements differ by state, cargo, or payer.",
-      "chapter_ref": "Q5, Q9",
+      "title": "NEMT Startup Roadmap and Vehicle Fit: Cash, Capital, and the Van Decision",
+      "purpose": "Lock in operating cash, a funded capital tier, and real local demand before buying any vehicle. Then match the van to the client base, the state's entry-style rules, and a written cancellation policy, so the fleet only grows when existing seats are already full.",
+      "chapter_ref": "Q7-Q8",
       "instructions": [
-        "Identify the operating states, payer programs, passenger assistance levels, and shipment classifications before selecting requirements. Use current primary authorities and payer manuals; a generic NEMT checklist cannot establish permission to perform every transport or specimen service.",
-        "Assign each obligation to the contracting entity, carrier, laboratory, or dispatch company that actually performs the regulated function. Collect supporting evidence and renewal dates rather than relying solely on representations in a subcontractor agreement.",
-        "Review the real working relationship with each contractor against applicable federal and state tests. Examine scheduling control, rate negotiation, equipment ownership, business independence, and integration into operations before treating a signed contractor agreement as sufficient.",
-        "Translate statutory and payer requirements into operational controls that dispatchers can execute. Define what happens when credentials expire, a package leaks, a privacy incident occurs, or a driver cannot safely perform the assigned assistance.",
-        "Draft contract addenda around measurable responsibilities, evidence access, incident reporting, payment disputes, and service limits. Resolve conflicting clauses before signature, and preserve the reviewed contract version alongside the requirements and credential register."
+        "Complete the cash reserve and capital tier fields first, because every vehicle decision below depends on how many months of payment lag you can survive.",
+        "Do not sign a vehicle note until the monthly burn field shows payment, insurance, fuel, and maintenance totals, with written dealer and insurer quotes attached.",
+        "Confirm in writing that your state Medicaid program accepts your chosen entry style before you pick between side-entry and rear-entry vans.",
+        "Run overflow prospecting calls and facility visits in the same weeks you shop vehicles, so evidence of demand arrives before the purchase does.",
+        "Revisit the expansion trigger every month, and add no vehicle or contract until utilization holds above 70 percent with a current insurance certificate on file."
       ],
       "fields": [
         {
-          "name": "Medicaid transportation and enrollment requirements",
+          "name": "cash_reserve_runway",
           "type": "textarea",
-          "prompt": "Identify the applicable state Medicaid transportation model, provider enrollment requirements, and broker credentialing conditions. Explain which organization submits claims and which service records establish eligibility for payment under the selected arrangement.",
-          "example": "The register cites 42 CFR 431.53 and 440.170(a) for Medicaid transportation requirements and 42 CFR 455.410 for applicable provider enrollment. The state manual and broker agreement determine this lane's enrollment and documentation steps. Dispatch retains enrollment confirmation, authorization references, eligible driver records, and required trip evidence before releasing the first claim."
+          "prompt": "Calculate the operating cash reserve you will hold before the first billable trip. List monthly fuel, payroll, insurance, and software costs, then multiply by three to cover the lag between running trips and collecting Medicaid or broker payments.",
+          "example": "Nemiton sizes the reserve at 90 days of operating cash because Medicaid pays in 30 to 60 days and billing can lag 45 to 90 days [Nemiton — w246jND2Ahw @ 00:06:12]. Example entry: fuel $1,200, insurance $1,440, payroll $3,800, software $160, so $6,600 monthly times three equals a $19,800 reserve before launch."
         },
         {
-          "name": "Passenger authority and interstate cargo scope",
-          "type": "textarea",
-          "prompt": "List state and local passenger-carrier permits, vehicle requirements, and any relevant interstate operating authority. Evaluate specimen freight brokerage separately from passenger dispatch instead of assuming one registration covers every business activity.",
-          "example": "The launch scope is intrastate ambulatory transport, with permit requirements verified against the selected state's transportation agency and Medicaid program. A proposed interstate specimen lane receives a separate applicability review under 49 U.S.C. 13901 and 13904. If property-broker registration applies, the file addresses financial security under 49 CFR 387.307 before that lane begins."
+          "name": "capital_tier",
+          "type": "text",
+          "prompt": "Name the startup capital tier you are actually funding, the dollar amount committed, and the source of those funds. Explain whether the amount covers vehicle, insurance, credentialing, and reserve, or which item gets deferred until revenue arrives.",
+          "example": "Tier 1 at $45K to $65K, per Nemiton's three-tier ladder, with Tier 2 at $140K to $190K and Tier 3 above $400K [Nemiton — w246jND2Ahw @ 00:05:17]. Geoff Cole prices an ambulatory single-van launch at $15,000 to $30,000 all in, and $30,000 to $50,000 for wheelchair-accessible [Geoff Cole — dLgmDQavyEU @ 00:05:52]. Funding: personal savings."
         },
         {
-          "name": "HIPAA role mapping and business associate agreements",
+          "name": "onramp_choice",
           "type": "textarea",
-          "prompt": "Map protected health information flows and determine each party's role. Identify required business associate and subcontractor agreements, permitted uses, access limits, and incident obligations without assuming every courier relationship has identical privacy treatment.",
-          "example": "Dispatch stores identifiable trip schedules for a covered provider, so the documented assessment requires a BAA under 45 CFR 164.502(e) and 164.504(e). A cloud vendor handling that information receives the appropriate subcontractor agreement. The team separately assesses a sealed-package courier arrangement; any conduit analysis is documented rather than automatically extended to the scheduling database."
+          "prompt": "Choose your on-ramp: broker approval with one or two clean cars, private pay first while enrollment is pending, or a facility-first launch. Defend the choice against your state's approval timeline and the cash you can realistically hold today.",
+          "example": "Private pay first, following Joe Padilla, because Medi-Cal approval takes 5 to 7 months, and MediRoutes notes new owners should not expect 200 broker trips in year one [MediRoutes NEMT Software — g6k_yncRR8o @ 00:22:03]. JT Automations counters that one or two clean cars plus broker approval is enough, since the money is in contracts and volume [JT Automations — dHKhNi-IC-0 @ 00:06:53]."
         },
         {
-          "name": "Security safeguards and breach response",
+          "name": "overflow_prospecting",
           "type": "textarea",
-          "prompt": "Translate privacy and security duties into access controls, device safeguards, incident ownership, and reporting clocks. Distinguish contractual incident notices from statutory breach notifications and document who evaluates whether an incident meets the applicable definition.",
-          "example": "The control register maps risk analysis and safeguards to 45 CFR 164.308 and 164.312. A lost dispatch device triggers immediate account suspension and a contractual 24-hour report. The privacy lead assesses breach status under 164.402; business-associate notification under 164.410 must occur without unreasonable delay and no later than 60 calendar days after discovery."
+          "prompt": "List five dialysis centers, hospitals, or case managers you will ask about transportation overflow this month. Record the contact name, the exact question asked, how they reacted, and the follow-up date you set for each hesitation.",
+          "example": "Question used: 'Who handles your patient transportation overflow?' JT Automations treats hesitation as an opening, since one case manager or discharge coordinator relationship can bring 100+ rides a month [JT Automations — dHKhNi-IC-0 @ 00:07:46]. Entry: Eastside dialysis, charge nurse hesitated, follow-up Saturday with Padilla-style shift visits [MediRoutes NEMT Software — g6k_yncRR8o @ 00:12:44]."
         },
         {
-          "name": "Worker classification and owner-operator evidence",
+          "name": "vehicle_type_decision",
           "type": "textarea",
-          "prompt": "Document the actual contractor relationship under applicable labor, tax, and state tests. Explain how essential safety and payer requirements differ from managerial control, and identify when an employee staffing model is required.",
-          "example": "The California review addresses Labor Code sections 2775 and 2776, including whether a business-to-business exception actually applies and what test follows. Carrier evidence includes separate customers, negotiated rates, equipment ownership, and independent operations. Dispatch does not assume a 1099 form resolves classification; fixed shifts and extensive control trigger a documented employment-model review."
+          "prompt": "Decide between an ambulatory sedan, a wheelchair-accessible minivan, or a full-size van. Tie the decision to the share of trip requests in your market, the mobility devices your clients use, and whether multi-loading is required for profitable routes.",
+          "example": "RouteGenie says a wheelchair minivan can complete up to 90% of contracts, from 63.5% ambulatory plus 30.3% wheelchair requests in Indiana data [RouteGenie — Lh999r_-mi0 @ 00:05:17]. The Wheelchair & Stretcher operator prefers a Ford Transit fitting a stretcher, two wheelchairs, and one ambulatory rider [Wheelchair & Stretcher Transportation Services — svdIU5f-6tA @ 00:00:23]."
         },
         {
-          "name": "Bloodborne pathogen exposure controls",
+          "name": "monthly_burn",
           "type": "textarea",
-          "prompt": "Assess occupational exposure by role and document applicable employee protections, training, equipment, and incident response. State who maintains the exposure-control plan and what a courier does when a package shows leakage or external contamination.",
-          "example": "For employees with reasonably anticipated occupational exposure, the employer implements 29 CFR 1910.1030, including an exposure-control plan, appropriate training, protective equipment, and required vaccination and post-exposure arrangements. A courier encountering leakage isolates the area and contacts the designated responder; the courier does not open primary containers or perform untrained cleanup."
+          "prompt": "Price the full monthly burn on the vehicle before signing any note: down payment, financed payment, commercial insurance, fuel, and maintenance. Convert the total to an annual run cost and state the weekly revenue needed to cover it.",
+          "example": "NEMT Growth Machine paid $87,900 after taxes for a Ford Transit 350 XL rear-lift van, $6,000 down and about $1,600 monthly [NEMT Growth Machine — nSB43YYfRs0 @ 00:00:00]. Commercial insurance ran about $17,315 a year, roughly $1,440 monthly, pushing fixed cost above $3,000 a month and all-in cost to $43,000 to $45,000 [NEMT Growth Machine — nSB43YYfRs0 @ 00:00:20]."
         },
         {
-          "name": "Specimen classification and transport packaging",
-          "type": "textarea",
-          "prompt": "Record the shipper's specimen classification, packaging standard, marking requirements, mode of transport, and training assessment. Distinguish Category B shipments from Category A and exempt specimens before applying a standard courier workflow.",
-          "example": "The laboratory classifies a qualifying Category B shipment under 49 CFR 173.134 and prepares packaging and marks under 173.199, including UN3373 where required. Dispatch accepts only the reviewed packaging configuration. Category A material is excluded from this lane and routed for a separate 173.196 assessment; air shipments require additional mode-specific review."
+          "name": "entry_style_compliance",
+          "type": "text",
+          "prompt": "Confirm in writing whether your state Medicaid program and target organizations accept side-entry or rear-entry vans for wheelchair work. Record who confirmed it, the date, and any emergency-exit requirement that could make a purchased van unusable.",
+          "example": "California denied a rear-entry van without an emergency exit for Medicaid wheelchair work [MJ Business Academy — P_pN6quM3G4 @ 00:11:02]. MJ Business Academy warns against dropping 40, 50, 60,000 on a van certain organizations will not accept [MJ Business Academy — P_pN6quM3G4 @ 00:11:27]. Entry: side entry confirmed by state Medicaid provider services by email, filed with the buyer's order."
         },
         {
-          "name": "Laboratory instructions and specimen acceptance",
+          "name": "client_fit_measurement",
           "type": "textarea",
-          "prompt": "Obtain the receiving laboratory's written collection, transport, preservation, and rejection instructions. Explain how applicable CLIA requirements influence handoff evidence without implying that the dispatch company makes laboratory testing or clinical acceptance decisions.",
-          "example": "For the applicable nonwaived laboratory, the file references 42 CFR 493.1242 and its written specimen-handling procedures. The route profile specifies the laboratory's validated temperature range and maximum transit interval. A late delivery receives an exception record; the laboratory decides whether to accept, reject, or request recollection, and dispatch preserves that decision."
+          "prompt": "Measure the candidate vehicle against your real client base. Note leg extenders, reclining wheelchairs, stretchers, and couples who both ride in wheelchairs, then record whether the floor plan, lift, and securement points handle every case without a second trip.",
+          "example": "MJ Business Academy flags leg extenders, reclining wheelchairs, and couples who both ride in wheelchairs [MJ Business Academy — ohTDpW0zUS8 @ 00:06:54]. A Mobility Works rep steered Jasmine and Monica from a smaller bench-seat van to the extended cut [MJ Business Academy — P_pN6quM3G4 @ 00:10:25]. AMS Vans stretcher mounts pull out with a 9/16 ratchet [AMS Vans — -DCWDiGaTn0 @ 00:01:20]."
         },
         {
-          "name": "Screening insurance and credential renewal",
+          "name": "no_show_policy",
           "type": "textarea",
-          "prompt": "Specify screening sources, payer-required review intervals, insurance verification, and credential-expiration behavior. Distinguish statutory duties from additional contract requirements and identify the evidence needed to resolve a possible exclusion-list match.",
-          "example": "The register maps applicable screening obligations under 42 CFR 455.436 and the payer's monthly exclusion-check requirement. Staff review OIG LEIE results and applicable state lists, resolving possible matches with reliable identifiers. Insurance is verified with the producer. Expired required coverage removes the affected carrier from assignment until replacement evidence is independently confirmed."
+          "prompt": "Draft your written no-show and late-cancellation policy. State the notice window, the fee charged inside it, how riders must cancel, the automated reminders you will send, and how you document broker failures to notify you of cancellations.",
+          "example": "Policy built on a 24-hour notice window with automated trip reminders [RouteGenie — d8ocN3ERJag @ 00:02:26], charging $25 on a $100 trip canceled inside 24 hours [RouteGenie — d8ocN3ERJag @ 00:04:22]. Riders are trained to call the broker directly, and when the broker fails to notify, dispatch calls and gets a note placed on that client account [LearnCargo — MOdO2Zzw1wI @ 00:00:32]."
         },
         {
-          "name": "Contract addendum and evidence retention schedule",
-          "type": "textarea",
-          "prompt": "Draft concrete clauses covering service limits, records access, disputed charges, incident escalation, and retention. Identify which retention period applies to each record class instead of assigning every operational record the same statutory deadline.",
-          "example": "The addendum requires authorization references, unaltered trip evidence, prompt incident reporting, and payment of undisputed lines. The schedule retains HIPAA-required policies and related documentation under 45 CFR 164.316(b)(2)(i) for six years. Trip and claim records follow the applicable state and payer periods, with longer preservation when a dispute or legal hold applies."
+          "name": "expansion_trigger",
+          "type": "text",
+          "prompt": "Write the expansion trigger you will obey before adding a second vehicle or contract. State the utilization percentage, how you measure it weekly, and the insurance certificate checks that must be current before any new trip is accepted.",
+          "example": "No expansion until existing vehicles exceed 70% utilization [Nemiton — w246jND2Ahw @ 00:16:25], and RouteGenie warns against taking more contracts than fleet, time and staff can handle [RouteGenie — 3VPGH67xGp8 @ 00:04:29]. A current commercial insurance certificate stays on file, since a personal policy will not cover paid passengers and an expired certificate can block trips [Shantasia_RN — hS8ke40DMr4 @ 00:03:53]."
         }
       ],
-      "completion_gate": "The responsible operations, privacy, and contract reviewers verify lane-specific authority, enrollment, credential evidence, packaging responsibilities, worker classification, and signed addenda. Any expired credential or unresolved service-scope restriction prevents assignment of the affected work."
+      "completion_gate": "Do not purchase or finance any vehicle until a 90-day cash reserve is funded, the monthly burn is priced with written quotes, entry style is confirmed in writing with the state, and at least one overflow conversation shows real local demand."
     },
     {
       "worksheet_id": "ws-05",
       "number": 5,
-      "title": "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker",
-      "purpose": "Build a controlled acquisition and automation system that increases accepted, collectible service volume rather than raw requests. Connect dispatch, evidence, billing, and collections with measurable exception handling, then pair every automation dependency with a secure fallback and accountable operator.",
-      "chapter_ref": "Q6, Q10",
+      "title": "Brokers, Private Pay, and Facility Contracts: Building a Diversified Trip Book",
+      "purpose": "Measure how much of the business depends on Medicaid brokers, negotiate every broker term in writing, and build a direct pipeline of facility contracts, hospital discharges, and prepaid private-pay riders that carries the margin brokers take away.",
+      "chapter_ref": "Q9-Q10",
       "instructions": [
-        "Choose automation only after defining its input, output, permissions, and failure behavior. Validate the contracted capabilities of RouteGenie or MediRoutes in the selected edition rather than assuming every integration, export, or routing feature is included.",
-        "Build acquisition lists around facilities and intermediaries with identifiable route problems. Record the decision-maker, service gap, estimated authorized volume, and payment model; avoid using patient-level information to enrich prospect lists or ordinary marketing systems.",
-        "Instrument the path from signed agreement to accepted service and collected cash. Track authorization failures, assignment rejection, missing scans, invoice rejection, and payment delay separately so apparently growing booking volume cannot conceal deteriorating economics.",
-        "Require every integration to support replay protection, bounded retries, alert ownership, and reconciliation. Route conflicting events to human review, and test the fallback procedure before the first live STAT assignment depends on automated delivery.",
-        "Prioritize improvements using recovered contribution and documented operator time rather than attractive dashboards. Reinvest only after evidence quality, service performance, and cash collections remain stable across the pilot's agreed observation period."
+        "Start with the broker concentration field, because every negotiation and growth decision below depends on how exposed your revenue is to a single broker.",
+        "Move every broker conversation about rates, renewals, and disputes to email, and log each exchange in the negotiation field the same day.",
+        "Begin re-credentialing the day any broker switch is announced, and track each submission date against the expected 21 to 45 day window.",
+        "Schedule in-person facility visits weekly, prepare the after-hours objection response before walking in, and ask for the decision-maker instead of the front desk.",
+        "Require prepayment or a signed contract before any private-pay or facility trip runs, and add no more than two new facilities until service holds steady."
       ],
       "fields": [
         {
-          "name": "Target account thesis and service trigger",
+          "name": "broker_concentration",
           "type": "textarea",
-          "prompt": "Define the ideal buyer, service problem, geographic density, and observable buying trigger. Explain how the opportunity matches available carrier capacity and why its payment structure fits the current working-capital ceiling.",
-          "example": "The target list contains 20 dialysis facilities within two adjacent service clusters and ten laboratories with scheduled afternoon transfers. Outreach asks about missed pickups and backup coverage, not patient identities. A qualified opportunity needs recurring authorized demand, a named payer, and a payment cycle supportable within the $115,000 liquidity plan."
+          "prompt": "List every broker and direct payer feeding your trips and the percentage of last month's revenue each produced. Flag any single broker above half of revenue and write the specific action that will reduce that dependence within ninety days.",
+          "example": "Nemiton calls broker concentration the number one hidden risk in NEMT [Nemiton — LjAb-IUYxbM @ 00:13:47]. UMTPG clients who ran 100 percent on one broker lost about $185K and faced a $75K MTM audit claim [United Medical Transportation Providers Group — A2vs7pLblSk @ 00:12:13]. Entry: Modivcare 82%, private pay 18%, action: two facility visits weekly."
         },
         {
-          "name": "Prospecting funnel and conversion economics",
-          "type": "textarea",
-          "prompt": "Specify weekly account outreach, discovery, proposal, and signed-pilot targets. Calculate acquisition cost from actual sales expense and signed customers, then compare that cost with retained contribution rather than gross contract value.",
-          "example": "A four-week campaign contacts 40 organizations, produces 12 discovery calls, six qualified proposals, and two signed pilots. Sales expense is $3,000, so acquisition cost is $1,500 per signed customer. Each pilot forecasts $5,000 monthly billings and $2,250 retained contribution; contribution payback is approximately 0.67 months before incremental overhead, onboarding costs, and collection delay."
+          "name": "broker_payment_model",
+          "type": "text",
+          "prompt": "Identify which payment model your state uses for NEMT: in-house fee-for-service, capitation, managed care organization, or hybrid. Name the brokers operating in your regions, any announced handover dates, and the spread you estimate between state reimbursement and your pay.",
+          "example": "Nemt University calls in-house fee-for-service administration by the state Medicaid agency the best model [Nemt University — iihLkCuH8NY @ 00:01:12]. Brokers receive the full reimbursement and subpay providers, a 15-35% spread worth $15,000-18,750 yearly on a 3-vehicle fleet [Nemiton — LjAb-IUYxbM @ 00:01:11]. Georgia entry: Verida takes all 5 regions April 1, 2026 [Nemt University — zXw7440bths @ 00:06:26]."
         },
         {
-          "name": "Dispatch platform selection and configuration",
+          "name": "credentialing_timeline",
           "type": "textarea",
-          "prompt": "Compare RouteGenie and MediRoutes against concrete workflow requirements, supported interfaces, access controls, and export needs. Record the selected configuration and evidence of a successful test instead of assuming vendor capabilities.",
-          "example": "The pilot evaluation requires recurring-trip import, GPS event export, role-based access, and a reviewable assignment history. The team requests a vendor demonstration using ten synthetic trips and confirms which features the quoted edition includes. Selection remains conditional on a successful export and duplicate-import test, not a sales presentation or an undocumented integration promise."
+          "prompt": "Map your broker credentialing timeline step by step. Record the NPI, EIN, and entity documents submitted, the date of each inquiry form, your weekly resubmission schedule, the expected 21 to 45 day window, and the re-credentialing start date after any broker switch.",
+          "example": "Before partnering with a broker, Nemt University requires an NPI, an EIN, and an LLC or corporation [Nemt University — 0nJ9GYcr744 @ 00:04:31]. About 30 percent of providers fail to re-credential in time when a broker switch is announced, so the clock starts that day [Nemt University — zXw7440bths @ 00:06:26]. Entry: inquiry form resubmitted every Monday until approval."
         },
         {
-          "name": "Integration contract and event delivery controls",
+          "name": "written_negotiation_log",
           "type": "textarea",
-          "prompt": "Define the source event, destination, schema version, authentication method, retry policy, and reconciliation key for each connection. Explain how unsupported interfaces or missing vendor guarantees affect the chosen implementation.",
-          "example": "Where a documented vendor interface supports it, completion events enter a versioned ingestion endpoint using scoped credentials and event IDs. Otherwise, a controlled export is reconciled by service ID. Retries back off at one, five, and fifteen minutes; unresolved events enter a review queue. The operator does not invent an undocumented endpoint."
+          "prompt": "Keep a written negotiation log for every broker rate, renewal, and dispute. Record the date, the offer received, your counteroffer, and the final written answer, and note every time a broker pushed to move the conversation onto the phone.",
+          "example": "Every rate, renewal, and dispute exchange goes by email, never phone, to build a paper trail [United Medical Transportation Providers Group — 0Z6CsGngipI @ 00:22:59]. MJ Business Academy says never accept the first offer and keep pushing until you hear final final offer [MJ Business Academy — KSSO5Igfn2Y @ 00:05:52]. Entry: counteroffer sent by email Tuesday."
         },
         {
-          "name": "Claims scrubbing and accounts receivable automation",
+          "name": "out_of_network_leverage",
           "type": "textarea",
-          "prompt": "Define deterministic checks for authorized billing channels and aging alerts. Distinguish transmission errors, payer rejection, adjudication, and unpaid accepted invoices so automation assigns each exception to the correct resolution owner.",
-          "example": "The scrubber checks authorization, service date, required identifiers, duplicate service keys, and payer-specific fields before the approved submission. AR alerts begin at the contractual due date, then escalate seven and fourteen days later. A rejected transaction goes to billing correction; an accepted but unpaid invoice goes to collections with its evidence packet attached."
+          "prompt": "Describe when you will work out of network or cherry-pick broker trips instead of accepting the standard rate. State the minimum margin that justifies network participation and the side-door payers, such as county social services, you will approach directly.",
+          "example": "When a broker reaches out first, UMTPG says you are in the driver's seat: play hard to get over email and work out of network unless the margin is good [United Medical Transportation Providers Group — 0Z6CsGngipI @ 00:06:21]. Motivational Charles reports Vance County Social Services needs providers and pays more than ModivCare [Motivational Charles — BCwbkTt30cY @ 00:03:57]."
         },
         {
-          "name": "Specimen scanning automation and alert thresholds",
-          "type": "textarea",
-          "prompt": "Define expected barcode events, missing-event timers, temperature integration where required, and escalation ownership. Explain how an alert reaches a human and what evidence confirms that the receiving laboratory was contacted.",
-          "example": "A STAT pickup accepted at 09:00 must show carrier custody by 09:30 under the route contract. At 09:20, a missing custody scan alerts dispatch; at 09:25, dispatch calls the carrier and laboratory. The exception record stores contacts, response times, and recovery decisions. A delivered notification alone does not prove the specimen reached the laboratory."
+          "name": "hybrid_mix_target",
+          "type": "text",
+          "prompt": "Set your target broker-to-private-pay mix for the next six months. Record current monthly revenue, the projected revenue at the target mix, the private-pay rate range you will quote, and the ramp period you are budgeting before results appear.",
+          "example": "Nemiton models $14,200-18,900 per month at a 70/30 broker/private mix versus $8,700-11,300 at 100% broker, with private pay at $35-85 per trip and a 60-90 day ramp [Nemiton — LjAb-IUYxbM @ 00:08:35]. Diversified operators run 25-40% margins versus 5-15% broker-only [Nemiton — 6nWzJ25nMDg @ 00:00:36]. Target: 70/30 by month six."
         },
         {
-          "name": "Least-privilege access and controlled data exports",
+          "name": "facility_visit_plan",
           "type": "textarea",
-          "prompt": "Specify access boundaries for sales, dispatch, billing, carriers, and analysts. Identify which data can enter external services and how permissions, contractual safeguards, and export logging are verified before transmission.",
-          "example": "Sales sees facility contacts and aggregate lane volume, not passenger schedules. Carriers see only assigned service details. Billing sees payer identifiers and required evidence. Analytics exports use service tokens and aggregated metrics where possible. A new external service receives sensitive data only after documented purpose, access, and applicable contractual safeguards are verified."
+          "prompt": "Plan your in-person facility visit route for the next four weeks. List nursing homes, rehab centers, dialysis clinics, and hospitals by name, the decision-maker you will ask for, the visit time, and the objection response you will use.",
+          "example": "In-person visits close 30-50% and referrals 40-60%, while brokers close nothing [Nemiton — 6nWzJ25nMDg @ 00:00:00]. When a facility says it already has a provider, answer: perfect, who does your after-hours work? [Wheelchair & Stretcher Transportation Services — zn8XUaFzOCk @ 00:02:08]. ThatNEMTGirl skips the front desk and pitches executive directors [ThatNEMTGirl — 5gdeSbLFdzk @ 00:32:25]."
         },
         {
-          "name": "Risk register and actionable fallback ownership",
+          "name": "hospital_discharge_pitch",
           "type": "textarea",
-          "prompt": "Record each high-impact dependency, observable failure signal, response deadline, fallback owner, and recovery evidence. Include carrier failure, platform outage, credential expiry, and delayed payer collections rather than limiting the register to software problems.",
-          "example": "If a primary carrier misses acceptance for a STAT request within five minutes, dispatch contacts the qualified backup and advises the laboratory of the updated estimate. If neither can meet the requirement, the service is explicitly declined or renegotiated. The log records contact attempts and the laboratory's response instead of leaving the request silently assigned."
+          "prompt": "Build your hospital discharge pitch. Estimate the facility's daily discharge transport spend, the vehicle capability you bring, your average fare and floor, and the audit-exposure argument explaining when Medicaid gets billed and when the hospital pays you directly.",
+          "example": "Two East Coast hospitals spend $6,000 per weekday on discharge transport and want one provider [United Medical Transportation Providers Group — 3KYWcZTUEuM @ 00:01:21]. Mike Boron averages $230 for 7 miles, floor near $180 [Bambi — bGYVSmlvo90 @ 00:10:53]. Pitch: bill Medicaid when fully covered, otherwise the hospital pays directly and avoids fines [United Medical Transportation Providers Group — HvP2_Kts7vA @ 00:11:30]."
         },
         {
-          "name": "Referral flywheel and healthcare remuneration boundaries",
-          "type": "textarea",
-          "prompt": "Design a referral process based on demonstrated service quality and aggregate performance evidence. Identify who approves incentives or commercial arrangements and explain how the process avoids paying for patient referrals or steering federally reimbursed business.",
-          "example": "After 30 verified pilot days, the account manager offers an aggregate on-time report and requests an introduction to another operations manager. No patient list or per-patient referral payment changes hands. Any proposed remuneration arrangement receives review for 42 U.S.C. 1320a-7b(b) and applicable state restrictions before an offer is made or funds are committed."
+          "name": "prepayment_terms",
+          "type": "text",
+          "prompt": "Write the payment terms you will require from private-pay riders and facilities before any trip runs. Include prepayment rules, net terms offered to facilities, the contract language covering disputed or unauthorized trips, and your fuel-driven rate adjustment clause.",
+          "example": "MJ Business Academy runs no contract, no trip until payment clears, since otherwise a client may dispute the service, claim it was unauthorized, or cancel [MJ Business Academy — LCV7CgKI3PQ @ 00:04:38]. On pricing, the same operator says it is nothing personal, it is a business, with gas over seven dollars a gallon [MJ Business Academy — LCV7CgKI3PQ @ 00:06:35]."
         },
         {
-          "name": "Automation return and exception burden",
+          "name": "growth_pacing",
           "type": "textarea",
-          "prompt": "Calculate the measurable value of an automation using operator time, avoided duplicate payments, and recovered collectible charges. Subtract subscription and maintenance costs, and specify when excessive exceptions require redesign or rollback.",
-          "example": "A reconciliation tool saves 20 monthly hours at $30 per hour and prevents $300 of documented duplicate settlement losses, creating $900 monthly benefit. Subscription and maintenance cost $350, leaving $550 incremental benefit. If exception handling consumes another ten hours, benefit falls to $250; the owner rechecks actual time logs before expanding deployment."
+          "prompt": "Set the pace of facility growth you can actually service. Name the first one or two facilities, the vehicle types each account needs, the month you expect pilots to become standing contracts, and the patient feedback you will collect.",
+          "example": "Nemt Business Life jumped to 20 nursing homes too fast to service, so cap early growth at one or two [Nemt Business Life — UtiLgcZo4dU @ 00:16:55], and remember the patient's opinion drives new contracts [Nemt Business Life — UtiLgcZo4dU @ 00:18:10]. Nemiton says month-two pilots become standing contracts by month four [Nemiton — 6nWzJ25nMDg @ 00:05:10]."
         }
       ],
-      "completion_gate": "Each live automation has a verified interface, least-privilege access, duplicate protection, reconciliation evidence, and tested human fallback. Acquisition targets are tied to authorized, fundable service volume, and improvement claims use observed contribution or labor savings."
+      "completion_gate": "Do not sign or renew any broker agreement until concentration is measured, every rate exchange sits in an email log, credentialing dates are tracked, and at least one direct facility or prepaid private-pay account is active or scheduled for a pilot."
     },
     {
       "worksheet_id": "ws-06",
       "number": 6,
-      "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
-      "purpose": "Turn the operating design into a bounded 30-day readiness sprint with measurable deliverables, realistic deal timing, and a documented handoff. Track service quality, liquidity, owner dependence, and transferable records so growth decisions and eventual buyer diligence rest on verified operating evidence.",
-      "chapter_ref": "Q11, Q12",
+      "title": "Rates, Unit Economics, Dispatch, and Trip Verification: Pricing and Proving Every Trip",
+      "purpose": "Price every trip from your own cost per mile, charge for deadhead and wait time, decline filler work, and run dispatch software that captures signatures, timestamps, and GPS proof, so every billed trip gets paid and survives an audit.",
+      "chapter_ref": "Q11-Q12",
       "instructions": [
-        "Treat the first 30 days as a readiness and qualification sprint, not an assumed revenue deadline. Preserve the canonical two-to-five-month first-deal expectation, and separate activities possible before contracting from services that require completed credentials and signed agreements.",
-        "Assign every sprint deliverable to a named role with a due date and observable acceptance evidence. Limit simultaneous priorities so the core pod can complete credential review, system tests, and customer qualification without relying on unrecorded owner overtime.",
-        "Publish a weekly scorecard with explicit numerators, denominators, observation periods, and exclusions. Review service quality beside retained contribution and cash so increased volume does not hide late pickups, unpaid invoices, or expanding settlement obligations.",
-        "Build the diligence register while operating rather than reconstructing it during a sale process. Preserve contract versions, credential histories, accounting reconciliations, incident dispositions, and assignment restrictions with controlled access and appropriate record-retention rules.",
-        "At day 30, compare completed evidence with the readiness criteria and choose a limited pilot, further remediation, or continued prospecting. Document the decision without booking unsigned pipeline as revenue or treating a simulated workflow test as a completed customer service."
+        "Calculate cost per mile from last month's actual expenses and miles before filling any rate field, and reprice whenever rates stop covering it.",
+        "Write separate base, mileage, wait, and after-hours rates by mobility type instead of one flat rate, and include the price-variation clause on every sheet.",
+        "Confirm dead-mile payment with each broker before accepting any trip an hour or more from home base, and log the answer in writing.",
+        "Compare at least two dispatch platforms on total fees, broker integration, and multi-load setup before signing, and configure multi-loading payer by payer.",
+        "Run the timed audit packet drill monthly, hold any trip missing a verification point, and block any claim where GPS mileage and invoiced mileage disagree."
       ],
       "fields": [
         {
-          "name": "Days one through seven underwriting deliverables",
-          "type": "textarea",
-          "prompt": "Define first-week outcomes for counterparty selection, service scope, capital planning, and regulatory research. State the evidence required for completion and identify any activity that must wait for a signed contract or verified credential.",
-          "example": "By day 7, the commercial lead completes five buyer interviews and two draft lane models. Operations documents state-specific service requirements and verifies two carrier candidates. The controller completes all three canonical scenario reconciliations and a 60-day cash stress. No passenger or specimen movement is represented as authorized merely because these documents exist."
+          "name": "cost_per_mile",
+          "type": "text",
+          "prompt": "Run your operating cost per mile: total monthly expenses divided by total monthly miles. Show both numbers, the resulting cost per mile, and the lowest per-mile rate you will accept before repricing or declining a trip.",
+          "example": "Nemt University's formula is total monthly expenses divided by monthly miles, repriced when rates stop covering it [Nemt University — DoH4BLPOrvI @ 00:05:12]. RouteGenie's chart offers $3 to $5 per mile weekdays, $5 to $7 off hours and weekends, and $5 to $10 holidays as starting points [RouteGenie — qceSg9X8F0E @ 00:05:09]. Entry: $9,000 over 4,500 miles equals $2."
         },
         {
-          "name": "Days eight through fourteen control build",
+          "name": "rate_structure",
           "type": "textarea",
-          "prompt": "Specify second-week deliverables for contract exhibits, evidence capture, ledger design, and privacy controls. Identify the reviewer for each artifact and the test that demonstrates the document translates into a working operating control.",
-          "example": "By day 14, operations drafts the service-level exhibit and backup escalation tree. Billing implements service keys and settlement replay tests using synthetic records. The privacy lead maps data flows and required agreements. A reviewer must trace one test service from intake through a $50 invoice and $27.50 payable."
+          "prompt": "Write your rate structure by mobility type: base or load fee, per-mile charge, wait-time fee per 30 minutes, and after-hours, weekend, and holiday premiums. Explain why tiered pricing protects margin better than one flat rate for every trip.",
+          "example": "Nemt University charges forty dollars just to start the vehicle toward any appointment, noting others may charge 50 to 55 [Nemt University — ZerukPCXB6Q @ 00:06:55]. RouteGenie warns that one rate for all trips hits profitability through losses or thinner margins on after-hours work [RouteGenie — wrfiCapUB9s @ 00:05:47]. Entry: wheelchair base $55, $3 per mile, $20 per 30 minutes wait."
         },
         {
-          "name": "Days fifteen through twenty-one rehearsal",
+          "name": "deadhead_wait_policy",
           "type": "textarea",
-          "prompt": "Plan a realistic rehearsal covering normal services and exceptions without exposing unnecessary patient information. Define the expected evidence, failure criteria, and remediation owner for missed pickups, duplicate events, and platform outages.",
-          "example": "The rehearsal processes 20 synthetic passenger legs and five sealed training packages. It includes two cancellations, three duplicate callbacks, a missing custody scan, and a 30-minute platform outage. Expected results contain no duplicate payable and no fabricated completion. Each defect receives an owner and a demonstrated retest before live acceptance."
+          "prompt": "Define how you charge for deadhead miles and wait time. State your service radius, the deadhead charge beyond it, which brokers pay dead miles on long trips, and how you price wait time when a broker pays none.",
+          "example": "With a 25-mile radius, ABC Transport would charge 15 deadhead miles each way on John Smith's trip [RouteGenie — 9j6I5bSKP24 @ 00:02:19]. ThatNEMTGirl confirms the broker pays dead miles before taking trips an hour or more from base [ThatNEMTGirl — govQRXzu6Rg @ 00:04:44]. RouteGenie notes LogistiCare pays no driver wait time at all [RouteGenie — FBWU2kTGLwI @ 00:00:00]."
         },
         {
-          "name": "Days twenty-two through thirty decision",
+          "name": "revenue_target_math",
           "type": "textarea",
-          "prompt": "Define the day-30 decision packet and distinguish a ready operating system from a signed customer launch. State which evidence permits a limited pilot and how remaining sales work continues beyond the sprint.",
-          "example": "The day-30 packet contains tested workflows, verified carrier credentials, a funded volume ceiling, and the current contract negotiation log. If no agreement is signed, the decision is readiness complete and prospecting continues. The two-to-five-month first-deal expectation remains intact. Live work begins only when the specific lane's commercial and operating requirements are satisfied."
+          "prompt": "Work backward from your monthly revenue target to the completed trips required. State the average reimbursement per trip, the trips needed per week, the weekly floor per vehicle, and the expenses still deducted before any profit remains.",
+          "example": "Shantasia_RN puts $10,000 monthly at roughly 200 completed trips averaging $50, with payroll, fuel, maintenance, insurance, taxes and software still coming out [Shantasia_RN — 3tRytphhdUU @ 00:01:00]. The stated floor is $500 per vehicle per week, $2,500 across five vehicles [Shantasia_RN — Dr_9wzpyoaE @ 00:00:15]. Entry: 50 trips weekly across two vans."
         },
         {
-          "name": "Core pod staffing and coverage design",
+          "name": "trip_selectivity",
           "type": "textarea",
-          "prompt": "Allocate responsibilities across the canonical core staffing levels and identify backup coverage. Distinguish core contractors from external carrier businesses, and explain how outsourced delivery capacity affects labor dependence and diligence.",
-          "example": "Base staffing assigns two full-time roles to operations and account/billing management, with two contracted support roles for qualified overflow and bookkeeping. Scaled staffing is three full-time plus three contracted core roles. Carrier businesses remain separately tracked within settlement economics; the staffing label does not claim that four or six people perform the entire transport network's labor."
+          "prompt": "Write your trip selectivity rules. List the broker trips you decline, the minimum fare you accept, the multi-load pairings you build around dialysis and nearby destinations, and the operating hours matched to when brokers actually request trips.",
+          "example": "ThatNEMTGirl grossed $125,000 in 2024 on one two-wheelchair van with one broker by refusing $35 filler trips [ThatNEMTGirl — govQRXzu6Rg @ 00:01:22], multi-loading nearby dialysis patients [ThatNEMTGirl — govQRXzu6Rg @ 00:01:40], and running 6:00 a.m. to 6:00 p.m. weekdays and 6:00 a.m. to 4:00 p.m. Saturdays [ThatNEMTGirl — govQRXzu6Rg @ 00:04:12]."
         },
         {
-          "name": "Service quality KPI definitions and thresholds",
-          "type": "textarea",
-          "prompt": "Define on-time pickup, completed service, evidence completeness, and STAT exception rates with explicit denominators. Explain cancellations and customer-approved rescheduling, then identify the corrective action triggered by each breached threshold.",
-          "example": "Of 200 accepted passenger legs, ten cancel before dispatch and 190 complete. Of those completed legs, 184 meet the agreed pickup window: 96.84 percent. Evidence is complete for 188 of 190, or 98.95 percent. A 98 percent pickup target is missed, triggering lane review rather than reclassifying late trips as customer cancellations."
+          "name": "rate_sheet_language",
+          "type": "text",
+          "prompt": "Draft the rate sheet language you send to facilities. Include the off-peak premium framing, the clause stating prices can vary over time, the surcharge trigger tied to fuel, and how you justify rates without cutting below cost.",
+          "example": "Every MJ Business Academy rate sheet states prices can vary over time, so a surcharge like the $7 to $8 gas spike can be added [MJ Business Academy — aA7hgZoPF_Q @ 00:02:16]. For a 4 a.m. dialysis run, frame the premium as: we are happy to accommodate those early morning hours [Nemt University — DoH4BLPOrvI @ 00:09:42]."
         },
         {
-          "name": "Cash and contribution KPI scorecard",
+          "name": "software_selection",
           "type": "textarea",
-          "prompt": "Define retained share, aged receivables, settlement coverage, and available headroom using consistent periods. Show actual results beside the canonical target and explain deviations without rewriting the original scenario assumptions.",
-          "example": "A month produces $77,083.33 billings and $42,395.83 settlements, approximately matching the Base 45 percent retained share after rounding. Treasury tracks the $104,812.50 45-day funding requirement against $115,000 available liquidity. Actual collection aging is shown by invoice due date; a rising overdue balance triggers a revised cash forecast before additional standing orders are accepted."
+          "prompt": "Compare at least two dispatch platforms before committing. Record the per-vehicle price, setup, messaging, and training fees, broker integrations, multi-load configuration steps, auto-dispatch speed, and whether facility-user logins let partners book their own trips directly in your system.",
+          "example": "A buyer's notes list RouteGenie at $50 per vehicle per month plus $100 setup, 2.5 cents per text and 5 cents per call, against Bambi's single per-car price [Bambi — CbCgWxHPCxU @ 00:09:38]. RouteGenie integrates with MTM, ModivCare and Access2Care [Nemiton — LjAb-IUYxbM @ 00:16:01]. Bambi requires enabling multi-loading payer by payer [Bambi — dxaejS8Bpis @ 00:00:15]."
         },
         {
-          "name": "Owner independence and handoff rehearsal",
+          "name": "six_point_verification",
           "type": "textarea",
-          "prompt": "Identify decisions still requiring the owner and convert recurring ones into delegated procedures. Test a bounded absence with emergency escalation available, recording unresolved exceptions rather than claiming independence from a written manual alone.",
-          "example": "During a two-day handoff rehearsal, the operations lead handles scheduling, carrier substitutions, and routine service exceptions. The controller authorizes settlements within documented limits. Three owner interruptions are logged: a rate concession, a disputed specimen handoff, and a credit draw. Procedures are updated and retested before describing the business as owner-independent."
+          "prompt": "Build your six-point trip verification checklist for drivers. For each point, name the in-app evidence captured, such as timestamps, signatures, GPS breadcrumbs, or geofence events, and the rule that holds a trip from billing when any point is missing.",
+          "example": "Hold any trip lacking service, recipient, provider, date, location, and start and end time [RouteGenie — _mEgB7bAsFE @ 00:01:00]. Drivers capture passenger or facility signatures and mark canceled-at-door or no-show in the MediRoutes app [MediRoutes NEMT Software — nLjDVheWODU @ 00:04:06]. Block claims where GPS breadcrumb mileage does not match invoiced mileage [SwiftAid Transport — YGC_f04Hg3g @ 00:08:34]."
         },
         {
-          "name": "Exit-readiness evidence and transfer restrictions",
-          "type": "textarea",
-          "prompt": "Inventory records a buyer would need to verify earnings, service quality, contract durability, and operational transferability. Identify assignment restrictions and access controls before sharing documents outside the operating team.",
-          "example": "The diligence register contains monthly reconciliations, customer concentration, signed contracts, carrier coverage, credential histories, incident dispositions, and system exports. Two customer agreements require written assignment consent, so their transfer is not assumed. Buyer materials use redacted or aggregate evidence first; identifiable health information is not uploaded to an ordinary deal folder."
+          "name": "audit_packet_drill",
+          "type": "text",
+          "prompt": "Run a timed audit packet drill. Pick three completed trips at random and pull signatures, timestamps, routes, and photos for each. Record the time it took, every missing item, and the fix you will make before the next drill.",
+          "example": "ZeitRide sets the standard at a full packet of signatures, timestamps, routes, and photos in about 10 minutes instead of a week of scrambling [ZeitRide NEMT Software — ajqkD-2jPd8 @ 00:22:43]. The stakes are real: New York's 2022 audit found $196 million in improper payments and 72% of audited claims non-compliant [SwiftAid Transport — YGC_f04Hg3g @ 00:03:28]. Drill result: 14 minutes."
         },
         {
-          "name": "Day-thirty decision and ninety-day operating mandate",
+          "name": "billing_denial_control",
           "type": "textarea",
-          "prompt": "Record completed deliverables, open defects, the next operating objective, and conditions for expansion. Preserve the canonical scenario targets while distinguishing forecast economics from verified customer results and collected cash.",
-          "example": "Decision: continue qualification until the first contract and carrier coverage are fully documented, then run a capped pilot within available float. The next 90 days prioritize collected invoices, verified on-time service, and repeatable reconciliation. The Base $166,500 annual owner profit remains a scenario target, not an earned result or a substitute for observed operating records."
+          "prompt": "Set your billing and denial controls. Record each broker's submission window, your claim scrubbing step, current denial rate, automated reminder settings that cut no-shows, and the incoming broker transitions you must credential with before day one.",
+          "example": "Metro Medical Transport cut denials from 23% to 6% in six months with automated claim scrubbing and broker API integration, recovering $200,000 a month [SwiftAid Transport — YGC_f04Hg3g @ 00:37:06]. RouteGenie reminder calls plus trip tracking can reduce no-shows up to 50% [RouteGenie — j__fVq5xHLo @ 00:01:37]. Montana Medicaid trips require Modivcare enrollment before transition [RouteGenie — GWBpqyUYyjE @ 00:06:24]."
         }
       ],
-      "completion_gate": "The sprint owner signs a day-30 decision supported by completed artifacts and actual test results. Live expansion requires the specific lane's credentials, executed agreements, funded float, tested fallback, and measurable service performance; unsigned pipeline and simulated activity remain separately labeled."
+      "completion_gate": "Do not bill a single trip until cost per mile is calculated, tiered rates and the price-variation clause are written, dispatch software captures all six verification points, and a timed audit packet drill has been completed in under 15 minutes."
     }
   ]
 }

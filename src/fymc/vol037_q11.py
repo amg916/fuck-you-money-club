@@ -1,750 +1,808 @@
 from __future__ import annotations
 
-CHAPTER_11 = {
-    "id": "Q11",
-    "chapter_id": "Q11",
-    "chapter_number": 11,
-    "question_number": 11,
-    "slug": "pod-architecture-contractor-kpis-and-exit-valuation",
-    "question_prompt": "How do you structure a lean 1 FT + 3 C (4 people) -> 2 FT + 4 C (6 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
-    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
-    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
-    "subtitle": "CSP, Adobe VIP Marketplace, Telarus and GPO Pods: Contractor Economics, ASC 606 Cohorts, Signed IP Transfers and Buyer-Ready Residual Books",
-    "layout_template": "action_checklist",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #37, SaaS Discount Brokerage & GPO Arbitrage, ranks #04 of 37 "
-        "with a 94/100 Money-to-Manpower Score. Its 12 mapped plays become "
-        "transferable assets only when a lean pod can source, authorize, reconcile, "
-        "and renew contracts without founder memory. Start with one full-time "
-        "principal and three contractors; expand to two full-time employees and "
-        "four contractors only against measured workload and collected contribution. "
-        "The canonical annual owner profits are $32,000 Conservative, $225,000 "
-        "Base, and $522,000 Scaled. This chapter assigns accountable seats, prices "
-        "contractor deliverables, defines weekly evidence-based scorecards, and "
-        "separates customer software spend from retained revenue. Clean accrual "
-        "cohorts, concentration limits, signed intellectual-property assignments, "
-        "and assignable residual agreements support either a disciplined sale "
-        "or a durable owner-operated cash business."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual recognized retained revenue; excludes client subscription spend",
-            "note": "32% margin; $32,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$500,000",
-            "context": "Annual recognized retained revenue; excludes client subscription spend",
-            "note": "45.0% margin; $225,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual recognized retained revenue; excludes client subscription spend",
-            "note": "58% margin; $522,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Assign twelve plays to four accountable seats before adding headcount",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build the initial pod around one full-time principal and three "
-                    "deliverable-based contractors, not four miniature departments. "
-                    "The principal owns commercial authority, vendor relationships, "
-                    "cash exposure, and final pricing. Contractor A owns research and "
-                    "qualified renewal opportunities; Contractor B owns authorized "
-                    "provisioning evidence and renewal administration; Contractor C "
-                    "owns savings calculations, statement matching, and accrual "
-                    "support. For this chapter, organize the twelve mapped operator "
-                    "plays into an explicit execution map: P01 DNS/MX/SPF account "
-                    "signals; P02 renewal-cliff discovery; P03 Microsoft CSP margin "
-                    "capture; P04 eligible Microsoft CPOR attribution; P05 Adobe VIP "
-                    "Marketplace brokerage; P06 authorized distributor billing "
-                    "reconciliation; P07 Telarus Zoom residuals; P08 Avant UCaaS "
-                    "residuals; P09 GPO membership aggregation; P10 GPO rebate "
-                    "reconciliation; P11 benchmark renewal negotiation; and P12 "
-                    "contingent shared-savings audits. These are work packages, not "
-                    "twelve promises that every vendor pays every fee. CPOR "
-                    "attribution alone neither transfers a subscription nor "
-                    "establishes reseller authority. Each opportunity must identify "
-                    "its actual supplier agreement, customer authorization, eligible "
-                    "product, and compensation schedule before entering a forecast. "
-                    "One customer can traverse several packages, but the ledger "
-                    "must prevent duplicate revenue attribution. Keep responsibility "
-                    "visible in a shared register so a contractor absence never "
-                    "turns an annual commitment into an orphaned obligation."
-                ),
-                (
-                    "Use a single deal record in HubSpot or an equivalent CRM, "
-                    "linked to an evidence folder and accounting customer identifier. "
-                    "Contractor A delivers a dated renewal source, procurement "
-                    "contact, estimated seat count, and qualification notes; a DNS "
-                    "signal is a hypothesis, not proof of a paid tenant. Contractor "
-                    "B verifies the permitted Microsoft CSP transaction route, "
-                    "Adobe VIP Marketplace reseller process, or master-agent order "
-                    "path before touching subscriptions. Use Pax8 and Ingram "
-                    "Micro statement exports or authorized APIs where available; "
-                    "never assume access to one distributor grants access to another. "
-                    "Contractor C independently matches contractual rates to billed "
-                    "seats, earned residuals, and cash receipts. The principal "
-                    "approves exceptions and executes agreements but cannot approve "
-                    "their own reconciliation adjustments without a documented "
-                    "second review. Use named accounts, least-privilege permissions, "
-                    "and separate credentials for each customer environment. "
-                    "Prohibit unauthorized multi-tenant seat pooling even when "
-                    "aggregate pricing looks attractive. Record P03 and P05 "
-                    "authorizations separately from P09 membership evidence because "
-                    "a purchasing-group agreement does not rewrite license terms. "
-                    "An evidence checklist, rather than informal chat history, "
-                    "determines whether a package is complete and whether a "
-                    "contractor can invoice for accepted work."
-                ),
-                (
-                    "The scaled pod adds one full-time operations lead and one "
-                    "contractor, bringing the total to six people rather than "
-                    "building a sales hierarchy. The operations lead takes daily "
-                    "renewal control, exception routing, and first-pass quality "
-                    "review from the principal. Contractor D takes renewal outreach "
-                    "and member administration; Contractor A retains sourcing, "
-                    "Contractor B retains transaction execution, and Contractor C "
-                    "retains financial evidence. Trigger expansion from an eight-week "
-                    "workload record: accepted packages consume more than eighty "
-                    "percent of purchased capacity, renewal exceptions repeatedly "
-                    "breach the agreed response window, and collected contribution "
-                    "covers the incremental seat under the downside forecast. "
-                    "Capacity is purchased output, not required contractor attendance. "
-                    "Define customer response windows and acceptance deadlines while "
-                    "leaving independent contractors control over working methods "
-                    "consistent with applicable classification rules. IRS common-law "
-                    "employee analysis under 26 U.S.C. section 3121(d)(2) and "
-                    "California Labor Code section 2775 require fact-specific "
-                    "classification; a contractor label does not settle the issue. "
-                    "Use employment where operational control requires it. Every "
-                    "seat needs a documented backup, but backup coverage must fit "
-                    "the same four-person or six-person roster. The principal's "
-                    "absence test is five business days without missed renewal "
-                    "decisions, unreviewed exposure increases, or inaccessible records."
-                ),
-            ],
-            "table": {
-                "caption": "Four-Person Launch Pod and Six-Person Expansion Responsibility Matrix",
-                "headers": [
-                    "Seat or coverage arrangement",
-                    "Mapped execution responsibility",
-                    "Accepted evidence and review standard",
-                    "Authority boundary and backup coverage",
-                ],
-                "rows": [
-                    [
-                        "Full-time principal controlling commercial and capital decisions",
-                        "Own pricing and supplier terms across all twelve plays",
-                        "Signed terms and exposure register reviewed every week",
-                        "Operations contractor prepares evidence but cannot bind commitments",
-                    ],
-                    [
-                        "Contractor A delivering research and qualified opportunity packages",
-                        "Execute P01 account signals and P02 renewal discovery",
-                        "Dated source and procurement contact support each opportunity",
-                        "Principal reviews claims before external commercial offers leave",
-                    ],
-                    [
-                        "Contractor B administering authorized software transaction evidence",
-                        "Execute P03 CSP, P04 attribution, and P05 VIP",
-                        "Customer authority and permitted transaction route match records",
-                        "Principal approves commitments while Contractor C checks amounts",
-                    ],
-                    [
-                        "Contractor B administering authorized recurring channel order workflows",
-                        "Execute P06 billing workflows, P07 Telarus, P08 Avant",
-                        "Order acceptance and compensation schedules support residual claims",
-                        "No supplier credentials shared across unrelated customer environments",
-                    ],
-                    [
-                        "Contractor C maintaining purchasing and savings evidence packages",
-                        "Execute P09 membership, P10 rebates, P11 benchmarks, P12 audits",
-                        "Member records and independently checked calculations support invoices",
-                        "Principal negotiates terms while Contractor B verifies quantities",
-                    ],
-                    [
-                        "Second full-time seat added only in scaled configuration",
-                        "Operations lead coordinates exceptions across all twelve plays",
-                        "Weekly backlog and customer deadlines remain within capacity",
-                        "Principal retains capital authority and unusual contract decisions",
-                    ],
-                    [
-                        "Fourth contractor added only in scaled configuration",
-                        "Renewal specialist supports P02 discovery and P09 membership",
-                        "Verified calendar updates and member confirmations meet acceptance",
-                        "Operations lead covers absences using documented customer records",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make channel knowledge portable before it becomes founder leverage",
-                "body": (
-                    "The valuable operating asset is an executable evidence chain, "
-                    "not a founder's private collection of vendor contacts."
-                ),
-                "items": [
-                    "Store the actual Telarus or Avant compensation exhibit beside each order identifier; a headline commission percentage cannot reconcile a residual statement.",
-                    "Separate Microsoft CPOR attribution evidence from CSP transaction authority so a new operator cannot mistake partner association for subscription-transfer permission.",
-                    "Snapshot Adobe VIP Marketplace renewal dates and seat quantities before permitted changes; retain the resulting distributor confirmation afterward.",
-                    "Give the backup operator a redacted, completed P12 savings audit and require them to reproduce the fee from the signed baseline.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Buy accepted deliverables and run one weekly exception scorecard",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Price contractor work against retained revenue rather than "
-                    "customer subscription volume. An illustrative launch schedule "
-                    "pays Contractor A $500 monthly plus $75 per accepted renewal "
-                    "opportunity, Contractor B $650 monthly plus $100 per completed "
-                    "authorized transaction package, and Contractor C $600 monthly "
-                    "plus $125 per completed reconciliation or savings package. "
-                    "At four accepted packages per contractor each month, total "
-                    "contractor expense is $2,950 monthly, or $35,400 annually. "
-                    "These purchased deliverables are examples, not assumed market "
-                    "rates or additional scorecard inputs. The Conservative case "
-                    "permits $68,000 of total annual expense because $100,000 "
-                    "recognized revenue less $32,000 owner profit equals $68,000; "
-                    "this contractor schedule leaves $32,600 for all other "
-                    "modeled costs. The Base and Scaled cases permit $275,000 "
-                    "and $378,000 respectively. The stated $1,500 to $9,500 "
-                    "monthly operating range is a planning envelope, not a "
-                    "substitute for those complete annual expense bridges; "
-                    "document which fixed costs it includes and separately "
-                    "reconcile variable delivery costs. Do not assume owner profit "
-                    "already contains a market replacement salary. Set a written "
-                    "monthly package cap, require acceptance evidence, and approve "
-                    "additional scope before work starts. Budget rejected rework "
-                    "without paying twice for the same defective deliverable."
-                ),
-                (
-                    "Write quality standards as objective outcomes. A research "
-                    "package needs a source dated within thirty days, a usable "
-                    "renewal window, and a valid procurement route; reject scraped "
-                    "contact lists without account evidence. A provisioning package "
-                    "needs the correct tenant or customer identifier, documented "
-                    "authorization, committed term, cancellation window, and "
-                    "supplier acceptance. A reconciliation package needs a complete "
-                    "invoice-to-statement bridge and a reviewer who can reproduce "
-                    "the calculation. Set one-business-day acknowledgment for "
-                    "ordinary exceptions and same-business-day escalation for "
-                    "unauthorized changes, threatened cancellation deadlines, or "
-                    "unfunded annual commitments. The principal owns actual "
-                    "customer protection while the contractor agreement defines "
-                    "delivery deadlines and purchased coverage. Sample at least "
-                    "ten percent of routine packages and review every new supplier "
-                    "route, material savings invoice, and credit exposure increase. "
-                    "Track first-pass acceptance with a launch target of ninety-five "
-                    "percent, but never dilute the denominator by removing rejected "
-                    "packages. Any optional success fee should attach to collected "
-                    "eligible retained revenue under written attribution and "
-                    "reversal terms, not total client spend. Do not reclaim "
-                    "compensation arbitrarily: distinguish contractual correction "
-                    "obligations from wage deductions and settle classification "
-                    "before deploying an incentive design."
-                ),
-                (
-                    "Run a thirty-minute weekly review from a frozen Monday "
-                    "snapshot, using Friday's accounting cutoff. Review only "
-                    "exceptions, decisions, and accountable next actions; the "
-                    "dashboard already carries routine activity. Track qualified "
-                    "renewals against capacity, accepted packages against delivered "
-                    "packages, signed orders against authorized orders, and "
-                    "earned retained revenue against collected retained revenue. "
-                    "Measure partner receivable aging separately from customer "
-                    "receivables because a delayed master-agent statement is not "
-                    "the same failure as an unpaid NCE commitment. Show thirty-, "
-                    "sixty-, and ninety-day renewal cohorts, unresolved statement "
-                    "variances, and uncovered supplier obligations. Attribute each "
-                    "exception to P01 through P12 so attractive sourcing volume "
-                    "cannot hide weak rebate collection. Require an owner, a "
-                    "dated resolution, and a measurable cash consequence for "
-                    "every red item. For outbound activity, preserve contact "
-                    "source, suppression status, and channel permissions. Review "
-                    "47 U.S.C. section 227 and 47 CFR section 64.1200 "
-                    "for calling and messaging practices; business-to-business "
-                    "positioning does not erase restrictions involving mobile "
-                    "numbers, prerecorded calls, or protected recipients. The "
-                    "FTC's 16 CFR Part 310 also contains applicable "
-                    "business-to-business misrepresentation prohibitions. Reward "
-                    "verified opportunities and realized collections, never raw "
-                    "dial counts that encourage unreliable claims or unwanted "
-                    "automated outreach."
-                ),
-            ],
-            "table": {
-                "caption": "Weekly Pod Scorecard with Explicit Denominators and Exception Ownership",
-                "headers": [
-                    "Metric and accountable operating seat",
-                    "Calculation and underlying evidence source",
-                    "Initial target or escalation threshold",
-                    "Required correction when the threshold breaks",
-                ],
-                "rows": [
-                    [
-                        "Qualified renewal delivery owned by Contractor A",
-                        "Accepted renewal packages divided by contracted package capacity",
-                        "Four accepted monthly packages under illustrative launch schedule",
-                        "Replace unsupported signals with dated procurement renewal evidence",
-                    ],
-                    [
-                        "First-pass acceptance owned by principal or operations lead",
-                        "Initially accepted packages divided by all submitted packages",
-                        "At least ninety-five percent with rejected submissions retained",
-                        "Identify repeated defect and require corrected acceptance evidence",
-                    ],
-                    [
-                        "Authorized transaction completeness owned by Contractor B",
-                        "Fully evidenced transactions divided by all executed transactions",
-                        "Every executed transaction carries complete customer authority evidence",
-                        "Stop additional changes and investigate missing authorization immediately",
-                    ],
-                    [
-                        "Partner collection aging owned by Contractor C",
-                        "Unpaid earned residuals grouped by contractual payment due date",
-                        "Escalate balances exceeding agreed terms by fifteen days",
-                        "Submit order-level dispute with statement and compensation exhibit",
-                    ],
-                    [
-                        "Renewal readiness owned by principal or renewal specialist",
-                        "Upcoming commitments with approved decisions divided by upcoming commitments",
-                        "Every commitment has decision before supplier cancellation deadline",
-                        "Escalate missing instruction before any irreversible renewal action",
-                    ],
-                    [
-                        "Uncovered annual exposure owned by full-time principal",
-                        "Noncancelable supplier liability less eligible settled customer funding",
-                        "Zero uncovered exposure before approving new annual commitments",
-                        "Pause commitment until funding and reversal exposure are resolved",
-                    ],
-                    [
-                        "Reconciliation exception aging owned by Contractor C",
-                        "Open statement discrepancies tracked from initial documented detection",
-                        "Every material discrepancy receives an owner within one day",
-                        "Record cash consequence and dated supplier resolution action",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the weekly evidence set",
-                    "action": "Export CRM opportunities, distributor statements, cash activity, and renewal deadlines.",
-                    "detail": "Use one accounting cutoff and preserve source identifiers so all twelve plays reconcile to the same reporting period.",
-                },
-                {
-                    "step": 2,
-                    "title": "Validate denominators and exceptions",
-                    "action": "Recompute acceptance, collection aging, concentration, and uncovered commitments.",
-                    "detail": "Retain rejected packages and unpaid earned revenue in the relevant populations; document exclusions with a reviewer.",
-                },
-                {
-                    "step": 3,
-                    "title": "Assign cash-linked corrective actions",
-                    "action": "Give each exception one accountable seat, deadline, and quantified exposure.",
-                    "detail": "The principal decides capital and contract issues; contractors receive bounded correction packages within purchased capacity.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close with independently checked evidence",
-                    "action": "Attach corrected records and obtain review before marking an exception resolved.",
-                    "detail": "Carry unresolved items into the next snapshot without resetting their original detection dates or concealing aging.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Reconcile retained revenue, renewal cohorts, and correlated concentration",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat the scorecard's revenue labels as the supplied retained "
-                    "operator revenue basis, not permission to book underlying "
-                    "software spend. The canonical cases remain $100,000 at "
-                    "32 percent, $500,000 at 45.0 percent, and $900,000 "
-                    "at 58 percent, producing $32,000, $225,000, and "
-                    "$522,000 annual owner profit. Although the scorecard "
-                    "calls these gross revenue, they exclude pass-through "
-                    "subscription spend and represent retained spreads, residuals, "
-                    "administrative rebates, and eligible shared-savings fees. "
-                    "Illustratively, $100,000 of client subscription billings "
-                    "with a ten-percent retained share produces $10,000 "
-                    "operator revenue on that modeled basis, not $100,000. "
-                    "Do not deduct the retained share again after entering "
-                    "the net amount. ASC 606 principal-versus-agent assessment "
-                    "requires analyzing control of each specified service; "
-                    "contract wording or billing presentation alone cannot "
-                    "determine gross reporting. Document the accounting conclusion "
-                    "by revenue stream and reconcile any statutory presentation "
-                    "difference back to the scorecard's retained contribution "
-                    "basis. Customer cash collected before an earned fee is "
-                    "not automatically revenue. Likewise, an expected partner "
-                    "rebate is not earned simply because a salesperson put "
-                    "it in the CRM. Keep performance conditions, payment "
-                    "timing, and collectibility evidence distinct throughout "
-                    "the monthly close."
-                ),
-                (
-                    "Maintain a cohort subledger keyed by customer, supplier "
-                    "group, agreement, order identifier, play code, service month, "
-                    "renewal date, and termination terms. Contractor C closes "
-                    "earned residuals to statements and cash, tracks unbilled "
-                    "amounts separately, and records adjustments with the "
-                    "original cohort rather than hiding them in current "
-                    "sales. For GPO rebates, retain the member roster, "
-                    "eligible purchase base, bracket calculation, supplier "
-                    "confirmation, and contractual allocation between members "
-                    "and operator. For shared savings, define a like-for-like "
-                    "baseline before negotiation: seats, product tier, service "
-                    "period, currency, and excluded migration costs. A "
-                    "$200,000 baseline reduced to $160,000 produces "
-                    "$40,000 eligible savings; a thirty-percent fee is "
-                    "$12,000 operator revenue only when contractually "
-                    "earned and appropriately recognized. Separate this "
-                    "one-time amount from evergreen residual revenue in "
-                    "buyer materials. Reconcile the bank, customer ledger, "
-                    "supplier obligations, and deferred balances monthly. "
-                    "For annual Microsoft NCE commitments, require funding "
-                    "before commitment under the agreed credit policy; "
-                    "a stored card or scheduled ACH debit is not settled "
-                    "cash. Consider return, dispute, and reversal exposure "
-                    "before releasing reserves. Annual supplier liability "
-                    "can survive customer nonpayment, and monthly customer "
-                    "billing does not transform that liability into a "
-                    "cancelable monthly obligation."
-                ),
-                (
-                    "Set both customer-group and counterparty-group caps at "
-                    "twenty-five percent or less of trailing-twelve-month "
-                    "recognized retained revenue, using twenty percent as "
-                    "the internal warning level. At Base, the hard "
-                    "revenue cap is $125,000 per group; at Scaled "
-                    "it is $225,000. Combine commonly controlled customers "
-                    "rather than splitting subsidiaries into cosmetic accounts. "
-                    "Measure payer concentration and underlying vendor "
-                    "dependency separately: Microsoft exposure routed through "
-                    "two distributors remains correlated Microsoft exposure. "
-                    "Apply the same twenty-five-percent ceiling separately "
-                    "to positive partner receivables and outstanding supplier "
-                    "commitments by counterparty group, reporting zero-total "
-                    "populations as having no outstanding exposure. Early "
-                    "books will often exceed the revenue cap; label "
-                    "the actual breach, stop optional expansion of the "
-                    "dominant exposure, and build unrelated cohorts rather "
-                    "than claiming diversification prematurely. Map P03 "
-                    "through P06 to software-vendor dependency, P07 and "
-                    "P08 to both master-agent and underlying carrier "
-                    "dependency, and P09 through P12 to actual payers "
-                    "and contractual savings sources. Stress a lost "
-                    "rebate tier, a delayed residual statement, and "
-                    "one annual-commit customer default independently. "
-                    "A transfer-ready book needs documented reserve "
-                    "responses and replacement acquisition capacity, "
-                    "not merely a spreadsheet showing many customer names."
-                ),
-            ],
-            "table": {
-                "caption": "Accrual, Cohort, and Concentration Controls for Retained Revenue",
-                "headers": [
-                    "Control and affected revenue stream",
-                    "Required accounting or exposure treatment",
-                    "Evidence retained for independent reconstruction",
-                    "Exception response and operating consequence",
-                ],
-                "rows": [
-                    [
-                        "Retained spread recognition across authorized software brokerage",
-                        "Exclude pass-through subscriptions from modeled operator revenue totals",
-                        "Customer billings reconcile to supplier cost and retained share",
-                        "Correct gross inflation before publishing margins or buyer materials",
-                    ],
-                    [
-                        "Master-agent residual accrual across Telarus and Avant orders",
-                        "Recognize earned amounts under documented contractual performance conditions",
-                        "Order identifiers connect compensation exhibits, statements, and receipts",
-                        "Age unpaid earnings separately from customer collection failures",
-                    ],
-                    [
-                        "GPO bracket rebate accrual across eligible member purchases",
-                        "Separate operator allocation from amounts belonging to members",
-                        "Roster and supplier confirmation support bracket and allocation",
-                        "Reverse unsupported estimates and preserve original cohort attribution",
-                    ],
-                    [
-                        "Shared-savings recognition across contingent renewal audit engagements",
-                        "Recognize earned fees against approved like-for-like savings baselines",
-                        "Signed baseline and final contract reproduce the savings calculation",
-                        "Exclude unsupported savings and separate one-time fees from residuals",
-                    ],
-                    [
-                        "Customer-group concentration across all recognized retained revenue",
-                        "Keep each controlled group at or below twenty-five percent",
-                        "Trailing annual ledger aggregates subsidiaries under common control",
-                        "Flag breaches and redirect acquisition toward unrelated customer groups",
-                    ],
-                    [
-                        "Counterparty-group concentration across revenue and balance exposures",
-                        "Apply separate twenty-five-percent caps to revenue, receivables, commitments",
-                        "Payer and underlying vendor tags expose correlated channel dependency",
-                        "Pause optional concentration growth and document balance reduction actions",
-                    ],
-                    [
-                        "Annual commitment funding across Microsoft NCE customer cohorts",
-                        "Match noncancelable liabilities against eligible settled customer funding",
-                        "Supplier terms and bank evidence support reserve adequacy calculations",
-                        "Decline unfunded commitments and escalate return or dispute exposure",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before accepting or transferring a cohort",
-                "body": (
-                    "An attractive spread does not compensate for missing authority, "
-                    "unfunded commitments, unearned revenue, or concentrated exposure."
-                ),
-                "items": [
-                    "Verify the customer authorization, permitted CSP or VIP transaction route, and applicable supplier agreement against the specific order.",
-                    "Verify settled prefunding and reserves against the full noncancelable annual liability, including payment-return and dispute exposure.",
-                    "Verify earned retained revenue, rebate allocation, and the shared-savings baseline through an independently reproducible reconciliation.",
-                    "Verify customer and counterparty concentration against the twenty-five-percent caps; disclose existing breaches and document reduction actions.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Build a transferable book and value replacement-adjusted earnings",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Prepare the transfer package while the pod is small. "
-                    "Create an agreement register covering assignment, change "
-                    "of control, termination, post-termination residuals, customer "
-                    "solicitation restrictions, and supplier notification duties. "
-                    "A Telarus or Avant relationship is not automatically "
-                    "saleable merely because residuals recur; the executed "
-                    "agreement controls payment survival and transfer rights. "
-                    "Likewise, customer authorization does not replace a "
-                    "supplier's required transfer process. Keep renewal "
-                    "calendars, compensation exhibits, GPO member agreements, "
-                    "and reconciliation procedures under company-controlled "
-                    "access. Obtain written intellectual-property assignments "
-                    "from contractors for original scripts, templates, "
-                    "benchmark databases, and documentation where rights "
-                    "are transferable. Under 17 U.S.C. section 204(a), "
-                    "a copyright ownership transfer generally requires a "
-                    "signed writing; paying an invoice does not itself "
-                    "establish ownership. Do not rely solely on a "
-                    "work-made-for-hire label for commissioned software. "
-                    "Identify preexisting contractor tools and third-party "
-                    "materials, securing the licenses needed for continued "
-                    "operation and permitted transfer instead of claiming "
-                    "ownership of everything delivered. Maintain provenance "
-                    "for pricing benchmarks and customer information. "
-                    "A buyer should receive usable rights and permitted "
-                    "records through controlled diligence access, not an "
-                    "unrestricted export of customer credentials. Contractor "
-                    "departure must trigger access revocation and verified "
-                    "handover without interrupting the next renewal cycle."
-                ),
-                (
-                    "Use valuation multiples as explicit sensitivities, not "
-                    "assertions that every brokerage commands a premium. "
-                    "An owner-operated microbusiness might be evaluated "
-                    "using an illustrative two-to-three-times normalized "
-                    "seller's discretionary earnings range; a genuinely "
-                    "managed, transferable book might be modeled at "
-                    "three-to-five-times normalized EBITDA. These are "
-                    "negotiation scenarios, not observed transaction "
-                    "comparables. Canonical owner profit is neither "
-                    "automatically SDE nor EBITDA. Build a bridge for "
-                    "owner compensation, interest, taxes, depreciation, "
-                    "amortization, defensible addbacks, and replacement "
-                    "labor before applying either denominator. If Base "
-                    "owner profit of $225,000 equals normalized SDE "
-                    "after that bridge, two-to-three times implies "
-                    "$450,000 to $675,000 of illustrative enterprise "
-                    "value. In a separate simplified managed-buyer "
-                    "sensitivity, assume the supplied owner profit "
-                    "excludes founder replacement pay and all other "
-                    "EBITDA adjustments net to zero. Deducting $120,000 "
-                    "replacement cost leaves $105,000 Base EBITDA "
-                    "and $402,000 Scaled EBITDA. Three-to-five times "
-                    "then implies $315,000 to $525,000 and "
-                    "$1,206,000 to $2,010,000 respectively. If "
-                    "replacement pay is already expensed, do not "
-                    "deduct it twice. Conservative profit cannot "
-                    "support that replacement assumption, so avoid "
-                    "forcing a positive managed-earnings valuation."
-                ),
-                (
-                    "Explain the premium through evidence a buyer can "
-                    "test: durable collected residuals, low customer churn, "
-                    "clean transfer rights, compliant license routes, "
-                    "diversified counterparties, and operations that survive "
-                    "founder absence. Segment P03 through P10 recurring "
-                    "economics from P11 and P12 project fees; classify "
-                    "each actual contract by its terms rather than "
-                    "assuming its play code guarantees recurrence. "
-                    "Show cohort retention on retained revenue, "
-                    "not underlying subscription spend, and distinguish "
-                    "seat expansion from vendor price increases. "
-                    "Provide twenty-four months of monthly bridges "
-                    "when available; a younger book should show "
-                    "its actual history without manufactured continuity. "
-                    "Reconcile enterprise value to seller proceeds "
-                    "through cash, debt, debt-like exposures, working "
-                    "capital adjustments, fees, escrow, and contingent "
-                    "consideration. Negotiate any earnout around "
-                    "identifiable collected cohorts and defined buyer "
-                    "servicing obligations, avoiding metrics the buyer "
-                    "can change unilaterally. Keep the cash-cow "
-                    "alternative equally disciplined: replacement "
-                    "coverage, reserves, and recurring audit work "
-                    "still matter when no sale is planned. "
-                    "Compare realistic after-cost sale proceeds "
-                    "with sustainable distributions under rebate "
-                    "compression and customer default stresses. "
-                    "The objective is optionality: the same "
-                    "four-person or six-person pod should support "
-                    "continued ownership, a partial transition, or "
-                    "an orderly full transfer without requiring "
-                    "the principal to remain the undocumented operating system."
-                ),
-            ],
-            "table": {
-                "caption": "Buyer Diligence and Illustrative Valuation Bridge Without Double Counting",
-                "headers": [
-                    "Diligence asset or valuation sensitivity",
-                    "Required evidence or explicit modeling assumption",
-                    "Buyer interpretation and earnings treatment",
-                    "Operator action before marketing the book",
-                ],
-                "rows": [
-                    [
-                        "Supplier residual rights and contract transfer package",
-                        "Executed agreements identify assignment and residual survival conditions",
-                        "Recurring receipts merit scrutiny when transfer requires additional permission",
-                        "Document required consents and resolve missing compensation exhibits",
-                    ],
-                    [
-                        "Contractor intellectual-property ownership and continuing tool access",
-                        "Signed assignments distinguish commissioned works from preexisting licensed tools",
-                        "Operational continuity depends on enforceable rights and usable documentation",
-                        "Obtain missing writings and confirm permitted license transfer scope",
-                    ],
-                    [
-                        "Base owner-operated illustrative normalized SDE enterprise value",
-                        "Assume verified normalized SDE equals canonical $225,000 owner profit",
-                        "Two-to-three-times sensitivity produces $450,000 to $675,000 enterprise value",
-                        "Complete earnings bridge before representing this sensitivity to buyers",
-                    ],
-                    [
-                        "Base managed-buyer illustrative replacement-adjusted EBITDA enterprise value",
-                        "Assume $120,000 replacement cost and zero other net adjustments",
-                        "$105,000 EBITDA at three-to-five times produces $315,000 to $525,000",
-                        "Verify replacement salary was absent from existing modeled expenses",
-                    ],
-                    [
-                        "Scaled managed-buyer illustrative replacement-adjusted EBITDA enterprise value",
-                        "Assume $522,000 profit less incremental $120,000 founder replacement cost",
-                        "$402,000 EBITDA at three-to-five times produces $1,206,000 to $2,010,000",
-                        "Validate management capacity and avoid deducting replacement labor twice",
-                    ],
-                    [
-                        "Conservative replacement-adjusted managed earnings feasibility assessment",
-                        "Canonical $32,000 profit cannot fund assumed $120,000 replacement cost",
-                        "Negative replacement-adjusted earnings undermine this managed EBITDA valuation method",
-                        "Evaluate owner-operated economics without inventing a positive EBITDA multiple",
-                    ],
-                    [
-                        "Seller proceeds and continuing ownership decision bridge",
-                        "Account for debt, working capital, fees, escrow, and earnouts",
-                        "Enterprise value differs materially from cash received at closing",
-                        "Compare realistic net proceeds against stressed sustainable owner distributions",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "A premium book is retained cash flow that another operator can verify, "
-        "service, and lawfully transfer without borrowing the founder's memory."
-    ),
-    "diagram_id": "diag-06",
-    "action_checklist": [
-        "Assign P01 through P12 to the principal and three contractors, with one evidence checklist and backup owner for every execution package.",
-        "Execute deliverable-based compensation schedules, classification reviews, confidentiality terms, and signed assignments covering transferable contractor-created intellectual property.",
-        "Launch the weekly scorecard with fixed denominators, first-pass acceptance, renewal deadlines, partner aging, and uncovered annual-commit exposure.",
-        "Reconcile the $100,000, $500,000, and $900,000 retained-revenue cases to $68,000, $275,000, and $378,000 total annual expenses respectively.",
-        "Measure customer-group and counterparty-group exposure against twenty-five-percent caps, including correlated underlying vendor dependencies and outstanding balances.",
-        "Assemble the agreement register, cohort ledger, founder-replacement earnings bridge, and seller-proceeds model before choosing sale preparation or continued distributions.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "17 U.S.C. section 204(a) — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": (
-                "Obtain a signed writing for contractor copyright transfers rather "
-                "than treating payment alone as ownership of scripts or documentation."
-            ),
-        },
-        {
-            "title": "17 U.S.C. section 101 — Definitions, including work made for hire",
-            "url": "https://www.law.cornell.edu/uscode/text/17/101",
-            "relevance": (
-                "Evaluate whether commissioned work fits the statutory categories "
-                "instead of relying solely on a contractor agreement's label."
-            ),
-        },
-        {
-            "title": "26 U.S.C. section 3121(d)(2) — Common-law employee definition",
-            "url": "https://www.law.cornell.edu/uscode/text/26/3121",
-            "relevance": (
-                "Assess actual control and working relationships when structuring "
-                "contractor seats and deciding whether employment is required."
-            ),
-        },
-        {
-            "title": "California Labor Code section 2775 — Employee and independent contractor classification",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=2775.",
-            "relevance": (
-                "Apply the relevant California classification framework and evaluate "
-                "applicable exceptions before staffing covered work with contractors."
-            ),
-        },
-        {
-            "title": "47 U.S.C. section 227 — Restrictions on telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Design outreach practices around applicable calling and messaging "
-                "restrictions rather than assuming business prospects are categorically exempt."
-            ),
-        },
-        {
-            "title": "47 CFR section 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": (
-                "Maintain channel-specific outreach controls, suppression records, and "
-                "permissions appropriate to the recipients and technology used."
-            ),
-        },
-        {
-            "title": "16 CFR Part 310 — Telemarketing Sales Rule",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310",
-            "relevance": (
-                "Account for applicable business-to-business misrepresentation prohibitions "
-                "and evaluate the rule's scope before approving telemarketing scripts."
-            ),
-        },
-    ],
-}
+CHAPTER_11 = {'id': 'Q11',
+ 'chapter_id': 'Q11',
+ 'chapter_number': 11,
+ 'question_number': 11,
+ 'slug': 'selling-saas-cold-calling-procurement-quotas-crm-automation',
+ 'question_prompt': 'How do SaaS sellers prospect, close against procurement, hit quota, and automate CRM '
+                    'and renewal workflows?',
+ 'kicker': 'Q11 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Selling SaaS: Cold Calling, Closing Against Procurement, Quotas, and CRM Automation',
+ 'subtitle': 'Cold-calling masterclasses and scripts, negotiating with procurement without discounting, '
+             'SaaS negotiation and sales tips, SDR/AE quota and OTE benchmarks, compensation plan design, '
+             'hitting quota monthly, rep career levels, Salesforce offer negotiation, automated renewal '
+             'deals in HubSpot and DocuSign, and RingCentral/AgencyZoom call-note automation',
+ 'layout_template': 'chapter_opener',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners converge on a numbers-first playbook for selling SaaS. Cold calling '
+                      'runs on volume and structure: 40 calls an hour, 200 a week for two meetings, a '
+                      'permission opener that wins the first 60-90 seconds, and selling the meeting rather '
+                      "than the product. Against procurement, Caliber's operators keep price as the final "
+                      'issue, bring the champion into the room, and turned a $200k budget into a signed '
+                      '$385k Gong deal with a $3.2M ARR business case. Quota math anchors on OTE '
+                      "multiples, from SaasRise's 5x to QuotaPath's 5.6-6.1x, with GrowthSpree benchmarks "
+                      'for SDR and AE loads. CRM automation handles renewals and call notes through '
+                      'HubSpot, Docusign, Zapier, and RingCentral. Disagreements surface on whether pain '
+                      'must exist before pitching, whether self-sourced pipeline earns accelerators, and '
+                      'when to offer payment terms.',
+ 'key_metrics': [{'label': 'Cold Call Volume to Meetings',
+                  'metric': 'Cold Call Volume to Meetings',
+                  'value': '40 calls/hour; 200 calls/week at one hour/day yields at least 2 meetings/week',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Sell Better panel baseline for how much daily dialing produces a steady '
+                             'weekly meeting count.',
+                  'source': 'Sell Better ([aW8jAYnvqyI @ 00:00:13])'},
+                 {'label': 'Procurement Business Case Return',
+                  'metric': 'Procurement Business Case Return',
+                  'value': '$3.2M ARR return against $385k spend (80 new AEs x $40k ARR for a '
+                           'one-month-faster ramp)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Gong deal in Q4 2021 where procurement held a $200k budget; signed six hours '
+                             'later without discounting.',
+                  'source': 'Caliber (Formerly pclub.io) ([lmaQjDuWaSY @ 00:03:57])'},
+                 {'label': 'Quota-to-OTE Multiple',
+                  'metric': 'Quota-to-OTE Multiple',
+                  'value': 'Quota = 5x OTE; $200K median OTE rep should bring in about $1M; Bridge median '
+                           '4.6x, up from 4.2x',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Bridge Group data on 158 companies with 48% of reps at quota, down from '
+                             'about 51%.',
+                  'source': 'SaasRise ([3enRkyZlcQk @ 00:00:36])'},
+                 {'label': 'Cold Call Success Rate',
+                  'metric': 'Cold Call Success Rate',
+                  'value': '1.48% average success rate; top reps 30%+',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Gong benchmark cited to open the cold calling course, alongside a 55/45 talk '
+                             'ratio.',
+                  'source': 'Sell Better ([m2z1tgfv8Kc @ 00:00:03])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every cold-calling operator here treats the phone as a '
+                              "numbers-plus-structure machine, not a talent show. Sell Better's panel "
+                              'opens with the baseline math: 40 calls an hour, and 200 calls a week from '
+                              'just one hour a day yields at least two booked meetings a week [aW8jAYnvqyI '
+                              '@ 00:00:13]. The same panel warns that more than 80% of calls die in the '
+                              'first 60 to 90 seconds, which is why every call is broken into intro, hook, '
+                              "and close [aW8jAYnvqyI @ 00:05:01]. Sell Better's 18-minute course backs "
+                              'that with Chorus data showing the average cold call lasts 80 seconds, so '
+                              'the opener carries almost the whole outcome [m2z1tgfv8Kc @ 00:06:03]. Sales '
+                              'Scripter lands on the same point from a failed software-outsourcing call '
+                              'that ended in "send me an email": the rep was selling the product instead '
+                              'of the meeting, and about 90% of broken calls get fixed by flipping the '
+                              'goal to booking the next conversation [u9D8WbQixac @ 00:02:23]. The shared '
+                              'baseline is blunt. Block a daily calling window, dial enough to beat a low '
+                              'pickup rate, keep the opener tight, and treat a short follow-up meeting as '
+                              'the only thing being sold on the first touch.',
+                              'On closing against procurement, the Caliber operators and Oz SaaS Master '
+                              'agree that price is the last conversation, never the first. Chris Orloff, '
+                              'who helped grow Gong from $200K to over $200M ARR, refuses to negotiate '
+                              'until the buyer names the seller as vendor of choice, using the "if price '
+                              'were not an issue" test, then asks what steps remain "if we agreed on price '
+                              'right now" and goes silent [B5SsF-kHahw @ 00:01:06]. Oz SaaS Master '
+                              'compresses the same rule into a single hack: price comes last [m505TQagq7g '
+                              '@ 00:02:04]. The Caliber Gong deal shows the payoff. Procurement walked in '
+                              'with a $200k budget against a $385k Q4 deal in October 2021, and instead of '
+                              'discounting, the seller asked permission to walk procurement through the '
+                              'math already built with the CRO, then pulled the champion into the '
+                              'procurement meeting with a prepared talk track and a "shoot your shot" ask '
+                              '[lmaQjDuWaSY @ 00:05:28]. Orloff explains why that champion matters: '
+                              'procurement teams are often comped on price cuts, and even a 30 to 40% '
+                              'success rate at getting the champion into the room beats zero [B5SsF-kHahw '
+                              '@ 00:04:15]. The consensus sequence is differentiate early, anchor to '
+                              'value, and only then talk numbers.',
+                              'Quota setting is the other place the speakers converge, and the anchor is a '
+                              "multiple of on-target earnings. SaasRise's coach, who built a company to "
+                              '$50M ARR, cites Bridge Group data across 158 companies: median AE OTE of '
+                              '$200K, median quota around $960K, and only 48% of reps hitting quota, down '
+                              'from about 51%. The rule is to set OTE at 20% of the new ARR the rep should '
+                              'close, meaning quota equals 5x OTE, so a $200K rep should bring in about $1 '
+                              'million, split 50/50 between base and commission [3enRkyZlcQk @ 00:00:36]. '
+                              "QuotaPath's Ryan and Graham, after 700-plus comp consults, push the "
+                              'multiple higher, recommending a quota-to-OTE ratio of 5.6 to 6.1x rather '
+                              "than guessing [uBngVWkX0K4 @ 00:23:36]. GrowthSpree's 2026 benchmarks put "
+                              'AE quotas at $600-900k for SMB, $0.9-1.4M for mid-market, $1.2-1.8M for '
+                              'enterprise, and $1.5-2.5M for strategic, with 70% attainment and a 24% win '
+                              "rate [2dLvgvK0qCY @ 00:01:00]. Money Machine's day-in-the-life breakdown "
+                              'fits inside that band: a 25-year-old AE on a $65K base carrying roughly '
+                              '$600K a year, qualifying every opportunity with MEDDPICC and asking "Who '
+                              'else needs to be involved?" [cjmKIrc6hgE @ 00:02:56].'],
+               'table': {'caption': 'Where the practitioners agree: the baseline rules for selling SaaS',
+                         'headers': ['Principle', 'What Practitioners Do', 'Why It Works', 'Expert Source'],
+                         'rows': [['Sell the meeting, not the software',
+                                   'Make the first touch about booking a brief follow-up call instead of '
+                                   'pitching features',
+                                   'About 90% of failed calls get fixed by this single shift in goal',
+                                   'Sales Scripter ([u9D8WbQixac @ 00:02:23])'],
+                                  ['Win the first ninety seconds of every dial',
+                                   'Structure each call as intro, hook, and close with a tight permission '
+                                   'opener',
+                                   'More than 80% of cold calls fail within the first 60 to 90 seconds',
+                                   'Sell Better ([aW8jAYnvqyI @ 00:05:01])'],
+                                  ['Protect a fixed daily dialing block',
+                                   'Dial one hour a day at 40 calls an hour for 200 calls a week',
+                                   'Produces at least two booked meetings every single week from the block',
+                                   'Sell Better ([aW8jAYnvqyI @ 00:00:13])'],
+                                  ['Become vendor of choice before discussing price',
+                                   'Confirm selection with the "if price were not an issue" test, then '
+                                   'make price final',
+                                   'Stops procurement from negotiating before the value is locked in',
+                                   'Caliber (Formerly pclub.io) ([B5SsF-kHahw @ 00:01:06])'],
+                                  ['Put the champion inside the procurement room',
+                                   'Hand the champion a prepared talk track and directly ask them to '
+                                   'attend',
+                                   'Counters procurement pressure in a $385k deal facing a $200k budget',
+                                   'Caliber (Formerly pclub.io) ([lmaQjDuWaSY @ 00:05:28])'],
+                                  ['Set quota as a multiple of OTE',
+                                   'Set OTE at 20% of target new ARR so quota equals five times OTE',
+                                   'A rep paid $200K a year should bring in about $1 million',
+                                   'SaasRise ([3enRkyZlcQk @ 00:00:36])'],
+                                  ['Disqualify bad deals aggressively and early',
+                                   'Walk away from deals that will not close instead of chasing them for '
+                                   'months',
+                                   'The best sales people are professional disqualifiers who protect their '
+                                   'time',
+                                   'Money Machine ([cjmKIrc6hgE @ 00:09:13])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["The opener mechanics are scripted down to the word. Sell Better's course "
+                              'runs a permission-based intro that gets a yes about 90% of the time, '
+                              'followed by a relevance statement and a customer-voice priority drop, then '
+                              'front-loads two or three prepared questions with context to trigger '
+                              'authority bias [m2z1tgfv8Kc @ 00:08:01]. Armand, on the Sell Better panel, '
+                              'logged 800 dials over four weeks with zero meetings before switching to the '
+                              '"have you heard my name tossed around" opener, while Nick on the same panel '
+                              'bans "how are you" and "bad time" in favor of a tailored permission opener '
+                              '[aW8jAYnvqyI @ 00:08:01]. When the prospect stalls with "send me info," '
+                              'Sales Scripter\'s rebuttal is "I\'m not looking to sign you guys up... Is '
+                              'that fair?", and "no need" or "no budget" objections get deflected into '
+                              'pain questions on speed, code quality, skillsets, and cost, or '
+                              'current-state questions on in-house versus outsourced work [u9D8WbQixac @ '
+                              '00:09:27]. The close is equally mechanical: summarize what was heard, ask '
+                              '"Do you have your calendar handy?", book for today or tomorrow rather than '
+                              'next week, and triple-confirm the meeting before hanging up [m2z1tgfv8Kc @ '
+                              '00:13:34].',
+                              'The daily activity math is where reps either hit or miss. Dylan Rich, 12 '
+                              'years in sales, reverse-engineers the month from the number: at 100 dials '
+                              'per meeting and a 70% show rate, the math runs 15 times 1.7 equals 25.5, so '
+                              'about 26 booked meetings, which means 2,600 calls across 22 working days '
+                              '[D_gkFglCscs @ 00:02:54]. Rich then fences the calendar, calling from 9 to '
+                              '11 AM and again from 4 to 6:30 PM, with admin pushed into the window from '
+                              '11 to 3 or 4, working a top-100 list through CRM tasks [D_gkFglCscs @ '
+                              "00:09:09]. Money Machine's SDR in a 30-person bullpen gets 250 names a day, "
+                              'a script, and an auto-dialer, and runs a funnel of 80 dials to 40 '
+                              'voicemails to 10 conversations to 2 meetings, hearing "no" about 60 times a '
+                              'day and leaning on "I just need 30 seconds" for the busy objection '
+                              "[cjmKIrc6hgE @ 00:02:08]. GrowthSpree's 2026 benchmark pegs the median SDR "
+                              'at 11 meetings, 7.5 attended, 6 SQLs, $48k pipeline, 68% attainment, a '
+                              'four-month ramp, and about 85 activities a day, with inbound-heavy SDRs '
+                              'booking 14 to 18 meetings and outbound-heavy SDRs booking 6 to 10 '
+                              '[2dLvgvK0qCY @ 00:00:38].',
+                              'Comp plans and CRM plumbing get the same no-guesswork treatment. '
+                              "QuotaPath's rule of threes splits a plan into how much (OTE and pay mix, "
+                              'assuming 100% of target, not 80%), for what (quota amount and frequency), '
+                              'and how (commissions and bonuses), with a "pizza topping rule" of no more '
+                              'than three components [uBngVWkX0K4 @ 00:09:43]. The same team caps the '
+                              'total commission stack at roughly 30% per deal, pays on bookings rather '
+                              'than GAAP revenue, and pays on year-one ARR [uBngVWkX0K4 @ 00:36:31]. On '
+                              "renewals, MergeYourData answers Justin Humphreys' question about manual "
+                              'renewal quotes with a HubSpot workflow on the contract object that fires '
+                              'when the renewal date is less than 30 days out, re-enrolls every '
+                              'anniversary, and creates a deal in a "contract sent" stage with the amount '
+                              'set to annual contract value, though line items still need custom code '
+                              "[ahHk4naTV0s @ 00:00:46]. For call logging, TechMarketer's Zapier build "
+                              'formats the date and time, finds or creates a Google folder, uploads the '
+                              'RingCentral recording, looks up the AgencyZoom lead by phone number, and '
+                              'drops an activity note carrying the recording title and link straight onto '
+                              'the lead record [5C8NoZ-wXbo @ 00:00:34].'],
+               'table': {'caption': 'Street mechanics: scripts, numbers, and tools the operators actually '
+                                    'run',
+                         'headers': ['Mechanic',
+                                     'Exact Numbers or Script',
+                                     'Tool or Payoff',
+                                     'Expert Source'],
+                         'rows': [['Permission opener with relevance and priority drop',
+                                   'Tailored permission intro, relevance line, then customer-voice '
+                                   'priority drop',
+                                   'Prospects say yes to the permission intro about 90% of the time',
+                                   'Sell Better ([m2z1tgfv8Kc @ 00:08:01])'],
+                                  ['Monthly dial math reverse-engineered from quota',
+                                   '100 dials per meeting, 70% show rate, about 26 meetings needed',
+                                   'Requires 2,600 calls spread across 22 working days each month',
+                                   'Dylan Rich ([D_gkFglCscs @ 00:02:54])'],
+                                  ['Daily SDR funnel inside a bullpen',
+                                   '80 dials, 40 voicemails, 10 conversations, 2 meetings booked per day',
+                                   'Runs on 250 names a day, a script, and an auto-dialer',
+                                   'Money Machine ([cjmKIrc6hgE @ 00:02:08])'],
+                                  ['Procurement business case built with the CRO',
+                                   '80 new AEs times $40k ARR for a one-month-faster ramp',
+                                   '$3.2M ARR return against $385k spend, signed six hours later',
+                                   'Caliber (Formerly pclub.io) ([lmaQjDuWaSY @ 00:03:11])'],
+                                  ['Discount authority ladder handled by rules',
+                                   'Rep can give 5%, manager 10%, director 12% maximum discount',
+                                   'Keeps discounting out of the comp plan and inside clear rules',
+                                   'The SaaS CFO ([uBngVWkX0K4 @ 00:47:51])'],
+                                  ['Automatic renewal deal creation in HubSpot',
+                                   'Contract workflow fires when renewal date is less than 30 days away',
+                                   'Creates a contract sent deal, close date 30 days out, amount equals '
+                                   'ACV',
+                                   'HubSpot Data Analytics by MergeYourData ([ahHk4naTV0s @ 00:02:53])'],
+                                  ['VOIP pick for AgencyZoom users',
+                                   'RingCentral with Zapier missed-call Slack alerts and RingSense AI '
+                                   'scoring',
+                                   'Open integrations beat Bridge and Lightspeed, which lack an open API',
+                                   'Accelerated Automation ([OrXv43zBEj4 @ 00:01:07])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Moves the operators swear by',
+                           'body': 'Small, specific plays the practitioners use to protect price and book '
+                                   'more meetings.',
+                           'items': ["After walking procurement through the CRO's numbers, ask the CRO "
+                                     '"how believable" the case is; "very believable" turned a $200k '
+                                     'budget into a $385k signature [Caliber (Formerly pclub.io) — '
+                                     'lmaQjDuWaSY @ 00:03:36]',
+                                     'If cash is the blocker, confirm it is the last objection before '
+                                     'conceding quarterly billing, net 60/90, or delayed payments: "do not '
+                                     'offer that until you know that this is the last thing" [Caliber '
+                                     '(Formerly pclub.io) — lmaQjDuWaSY @ 00:08:39]',
+                                     'Get something back for every concession, because "Dragons only get '
+                                     'hungrier when they\'re fed" [Caliber (Formerly pclub.io) — '
+                                     'B5SsF-kHahw @ 00:09:19]',
+                                     'Send a placeholder calendar hold right after booking ("I\'m holding '
+                                     'a baby... don\'t drop the baby") for about 10% more meetings held, '
+                                     'plus a three-month exit invite [Sell Better — aW8jAYnvqyI @ '
+                                     '00:33:25]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Prep the dial block',
+                              'action': "Load the next day's call list the night before and stay out of "
+                                        'the inbox until dialing is done.',
+                              'detail': 'Armand habit-stacks 40 dials prepped the night before with no '
+                                        'inbox until finished, while Sarah stands in a power stance for 30 '
+                                        'minutes daily, even if only 10 calls [Sell Better — aW8jAYnvqyI @ '
+                                        '00:03:39]'},
+                             {'step': 2,
+                              'title': 'Run the opener and hook',
+                              'action': 'Open with permission, state relevance, drop a customer-voice '
+                                        'priority, then ask 2-3 prepared questions.',
+                              'detail': 'The permission intro gets a yes about 90% of the time; front-load '
+                                        'questions with context to use authority bias [Sell Better — '
+                                        'm2z1tgfv8Kc @ 00:08:01]'},
+                             {'step': 3,
+                              'title': 'Book and triple-confirm',
+                              'action': 'Summarize, ask for the calendar, book today or tomorrow, and '
+                                        'confirm three ways.',
+                              'detail': 'Close with "Do you have your calendar handy?", book for today or '
+                                        'tomorrow, and run a triple confirmation [Sell Better — '
+                                        'm2z1tgfv8Kc @ 00:13:34]'},
+                             {'step': 4,
+                              'title': 'Isolate the procurement objection',
+                              'action': 'Sort price resistance into value, cash/logistics, or better-deal '
+                                        'buckets and answer only the real one.',
+                              'detail': 'Present two or three buckets to isolate the objection; more '
+                                        'discovery for value, terms only for a confirmed final cash issue '
+                                        '[Caliber (Formerly pclub.io) — lmaQjDuWaSY @ 00:07:14]'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Cold-call openers split the Sell Better bench down the middle. Nick bans '
+                              '"how are you" and "is this a bad time" outright and runs a tailored '
+                              'permission opener instead, while Armand burned 800 dials over four weeks '
+                              'for zero meetings before switching to the "have you heard my name tossed '
+                              'around" opener [aW8jAYnvqyI @ 00:06:24]. The 18-minute course sides with '
+                              'permission, claiming a yes roughly 90 percent of the time before moving to '
+                              'relevance and a customer-voice priority drop [m2z1tgfv8Kc @ 00:08:01]. The '
+                              'second fault line is pain. The host insists a meeting needs real pain on '
+                              'the table; Sarah refuses to wait for it and manufactures it with a "magic '
+                              'wand" question, and the panel layers on customer-voice pros-and-cons '
+                              'framing credited to ZoomInfo [aW8jAYnvqyI @ 00:19:31]. Sales Scripter cuts '
+                              'through both camps: roughly 90 percent of broken calls get fixed by selling '
+                              'the meeting rather than the product, and "no need" objections get deflected '
+                              'straight back into pain or current-state questions on speed, code quality, '
+                              'skillsets, and cost [u9D8WbQixac @ 00:02:23]. Pick one opener, run it for a '
+                              "measurable block of dials, and only then swap; Armand's switch came after "
+                              'the data said zero, not after one bad morning.',
+                              "Caliber's two Gong-era playbooks agree that price resistance sorts into "
+                              'three buckets but split on what the third one means. In the $385k Q4 deal '
+                              'against a $200k procurement budget, the buckets were not bought into value, '
+                              'a logistical or cash issue, or a buyer simply trying to get a better deal, '
+                              'and the rep sometimes presents only two buckets to force the objection into '
+                              "the open [lmaQjDuWaSY @ 00:03:57]. Chris Orloff's version recasts the third "
+                              'bucket as capital stewardship and answers constraint problems with delayed '
+                              'or split payment instead of a lower number [B5SsF-kHahw @ 00:10:49]. '
+                              'Discount authority is where the operators diverge hardest. QuotaPath keeps '
+                              'discounting out of the comp plan entirely and governs it with hard '
+                              'authority tiers: rep 5 percent, manager 10 percent, director 12 percent '
+                              "[uBngVWkX0K4 @ 00:47:51]. Orloff's playbook runs on posture rather than "
+                              'tiers: set the walk-away limit up front, get something back for every '
+                              "concession, and remember that dragons only get hungrier when they're fed "
+                              '[B5SsF-kHahw @ 00:09:19]. Orloff also reports that a blunt "my last shoe" '
+                              'line once broke the tension. Run tiers when several reps touch pricing; run '
+                              "Orloff's posture when a single closer owns the whole negotiation.",
+                              'Quota-to-OTE multiples are the loudest numeric disagreement. SaasRise sets '
+                              'OTE at 20 percent of the new ARR a rep should close, which makes quota 5x '
+                              'OTE: a $200K rep split $100K base and $100K commission should bring in '
+                              'about $1M, against a Bridge Group median of 4.6x across 158 companies '
+                              '[3enRkyZlcQk @ 00:00:36]. SaasRise flags that these are medians that deal '
+                              'size and market will move. QuotaPath pushes harder, telling operators to '
+                              'set quota:OTE at 5.6 to 6.1x instead of guessing, while conceding the '
+                              'multiple grows from 3x early to 5 to 6x as the company scales [uBngVWkX0K4 '
+                              '@ 00:23:36]. GrowthSpree benchmarks by segment rather than multiple: SMB '
+                              'AEs carry $600 to 900K, mid-market $0.9 to 1.4M, enterprise $1.2 to 1.8M, '
+                              'strategic $1.5 to 2.5M, with 70 percent attainment and a 24 percent win '
+                              'rate [2dLvgvK0qCY @ 00:01:00]. Inside QuotaPath itself, Ryan and Graham '
+                              'split on deal source: Ryan favors paying an accelerator on self-sourced '
+                              'pipeline, Graham objects that paying less on marketing-sourced deals sends '
+                              'the wrong message [uBngVWkX0K4 @ 00:46:45]. Model the plan three ways '
+                              'before publishing it: the SaasRise 5x line, the QuotaPath 5.6x floor, and '
+                              "the GrowthSpree segment band for the AE's actual deal size."],
+               'table': {'caption': 'Side-by-side playbooks where Q11 practitioners take different roads '
+                                    'to the same meeting, signature, or quota',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Which opener survives the first 60 to 90 seconds',
+                                   "Nick kills 'how are you' and 'bad time' and runs a tailored permission "
+                                   'opener',
+                                   "Armand pivots to 'have you heard my name tossed around' after 800 "
+                                   'dials and zero meetings',
+                                   'Sell Better ([aW8jAYnvqyI @ 00:08:01])'],
+                                  ['Whether pain must exist before booking the meeting',
+                                   'The host requires real pain on the call before a meeting is worth '
+                                   'booking',
+                                   "Sarah creates the pain herself with a 'magic wand' question, then hard "
+                                   'closes',
+                                   'Sell Better ([aW8jAYnvqyI @ 00:19:31])'],
+                                  ['What the cold call is actually selling to the prospect',
+                                   'Sales Scripter sells the meeting, not the product, fixing about 90 '
+                                   'percent of calls',
+                                   'Sell Better course says do not pitch, run discovery, and be first to '
+                                   'say goodbye',
+                                   'Sales Scripter ([u9D8WbQixac @ 00:02:23]); Sell Better ([m2z1tgfv8Kc @ '
+                                   '00:01:14])'],
+                                  ['How to answer cash-driven price resistance from procurement',
+                                   'Caliber confirms it is the last objection, then concedes quarterly '
+                                   'billing or net 60/90 terms',
+                                   'Orloff classifies it as a constraint and offers delayed or split '
+                                   'payment instead of a lower price',
+                                   'Caliber (Formerly pclub.io) ([lmaQjDuWaSY @ 00:08:22]); Caliber '
+                                   '(Formerly pclub.io) ([B5SsF-kHahw @ 00:10:49])'],
+                                  ['Who controls discounts and when they actually land',
+                                   'QuotaPath runs rule-based tiers of rep 5%, manager 10%, director 12%, '
+                                   'kept out of comp',
+                                   'Oz SaaS Master says end-of-month discounts only work when the buyer '
+                                   'holds sole control',
+                                   'The SaaS CFO ([uBngVWkX0K4 @ 00:47:51]); Oz SaaS Master ([m505TQagq7g '
+                                   '@ 00:00:46])'],
+                                  ["What quota multiple a rep's OTE should carry",
+                                   'SaasRise sets quota at 5x OTE against a Bridge median of 4.6x, up from '
+                                   '4.2x',
+                                   'QuotaPath sets quota:OTE at 5.6 to 6.1x, growing from 3x as the '
+                                   'company scales',
+                                   'SaasRise ([3enRkyZlcQk @ 00:00:36]); The SaaS CFO ([uBngVWkX0K4 @ '
+                                   '00:23:36])'],
+                                  ['Whether to pay reps differently by deal source',
+                                   'Ryan pays an accelerator on pipeline the rep sources personally '
+                                   'through prospecting',
+                                   'Graham argues paying less on marketing-sourced deals sends the team '
+                                   'the wrong message',
+                                   'The SaaS CFO ([uBngVWkX0K4 @ 00:46:45])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first trap is grinding volume through an opener that never converts. '
+                              'Armand logged 800 dials across four weeks and booked zero meetings before '
+                              'his opener change, and the panel puts the failure point early: more than 80 '
+                              'percent of calls die in the first 60 to 90 seconds [aW8jAYnvqyI @ '
+                              '00:08:01]. The 18-minute course adds the base rates behind the grind: '
+                              "pickup sits around 5 percent, Gong's measured success rate is 1.48 percent, "
+                              'and call reluctance hits over 80 percent of reps, which is why the fix is '
+                              'to stand up and chase conversations rather than meetings [m2z1tgfv8Kc @ '
+                              "00:16:02]. Sales Scripter's live example shows the classic dead end: a "
+                              'software-outsourcing pitch that ends in "send me an email." The rebuttal '
+                              'reframes the ask with "I\'m not looking to sign you guys up... Is that '
+                              'fair?" and routes "no budget" into a cost question until the prospect '
+                              'agrees to a brief call [u9D8WbQixac @ 00:09:27]. Dylan Rich puts the volume '
+                              'floor in plain numbers: at 100 dials per meeting and a 70 percent show '
+                              'rate, 15 x 1.7 equals 25.5, so about 26 meetings, or 2,600 calls over 22 '
+                              'days, and the mindset has to hold through the 100th dial [D_gkFglCscs @ '
+                              '00:02:54].',
+                              "Late-stage deals die on people and paper, not price. Money Machine's "
+                              'AE-level rep lost a $40K deal to an indemnification clause from legal, and '
+                              'names the structural killer: a champion without political capital loses the '
+                              'deal, which is why "Who else needs to be involved?" is the question that '
+                              'matters [cjmKIrc6hgE @ 00:04:03]. The same rep reports spending 90 percent '
+                              "of the time chasing. Caliber's procurement warning is blunt: payment-term "
+                              'concessions like quarterly billing, net 60 or net 90, and delayed payments '
+                              'only go on the table once the rep confirms cash is the last objection, '
+                              'because "do not offer that until you know that this is the last thing" '
+                              '[lmaQjDuWaSY @ 00:08:39]. In the $385k Gong deal, the rep isolated the '
+                              "objection, ran the CRO's ramp math, and signed six hours later. Orloff adds "
+                              'that procurement teams are often comped on price cuts, so walking in '
+                              'without the champion hands them the room; even a 30 to 40 percent success '
+                              'rate on getting the champion into that meeting beats zero [B5SsF-kHahw @ '
+                              '00:04:15]. Oz SaaS Master closes the excuse loop: the wrong person means no '
+                              "close, and missed signings are the seller's fault, not the buyer's "
+                              '[m505TQagq7g @ 00:01:01].',
+                              'The comp plan itself is the third failure surface. QuotaPath reports 91 '
+                              'percent of companies missed quota, and the classic planning trap is '
+                              'assuming 80 percent attainment and doubling reps; cliffs in the plan make '
+                              'reps push deals into next quarter, and one plan they saw ran to 37 pages '
+                              "[uBngVWkX0K4 @ 00:28:39]. QuotaPath's fix is pairing accelerators with "
+                              'decelerators, such as a reduced rate on 0 to 33 percent attainment. '
+                              'GrowthSpree flags the staffing version of the same mistake: mid-market '
+                              'teams running above a 2.5:1 SDR-to-AE ratio overspend on SDRs, and the fix '
+                              'is cutting back to 2:1 [2dLvgvK0qCY @ 00:02:07]. SaasRise gives the hard '
+                              'check: if quota sits under about 4.5x OTE, raise the quota, cut the OTE, or '
+                              "change the rep's motion, and remember only 48 percent of reps hit quota in "
+                              'the Bridge data, down from about 51 percent [3enRkyZlcQk @ 00:01:27]. The '
+                              'CRM stack fails quietly too. Mariah Gates of Accelerated Automation warns '
+                              'against Twilio except as a Band-Aid because it is a developer platform, '
+                              'notes Bridge and Lightspeed lack an open API, and insists each user have '
+                              'their own line and own connection [OrXv43zBEj4 @ 00:02:44]. She also tells '
+                              'operators running RingSense AI transcription to notify clients, because '
+                              'state rules vary.'],
+               'table': {'caption': 'Failure modes Q11 practitioners hit firsthand, what it cost them, and '
+                                    'the fix they now teach',
+                         'headers': ['Failure Mode',
+                                     'What Happened or Was Measured',
+                                     'Operator Fix Taught',
+                                     'Expert Source'],
+                         'rows': [['Dead opener burning a full month of dials',
+                                   'Armand logged 800 dials across four weeks with zero meetings booked',
+                                   "Switch to the 'have you heard my name tossed around' opener and retest",
+                                   'Sell Better ([aW8jAYnvqyI @ 00:08:01])'],
+                                  ["Cold call ending in the 'send me an email' brush-off",
+                                   'Software outsourcing rep pitched the product and got pushed to email',
+                                   "Sell the meeting, then use the 'not looking to sign you up, is that "
+                                   "fair' rebuttal",
+                                   'Sales Scripter ([u9D8WbQixac @ 00:09:27])'],
+                                  ['Legal redlines killing a late-stage deal',
+                                   'AE lost a $40K deal to an indemnification clause raised by legal',
+                                   "Ask 'Who else needs to be involved?' and test the champion's political "
+                                   'capital',
+                                   'Money Machine ([cjmKIrc6hgE @ 00:04:21])'],
+                                  ['Offering payment terms to procurement too early',
+                                   'Caliber warns against offering terms before cash is confirmed as the '
+                                   'last objection',
+                                   'Confirm it is the last objection, then concede quarterly, net 60/90, '
+                                   'or delayed payment',
+                                   'Caliber (Formerly pclub.io) ([lmaQjDuWaSY @ 00:08:39])'],
+                                  ['Quota cliffs and over-optimistic capacity planning',
+                                   '91 percent of companies missed quota, and cliffs push deals into next '
+                                   'quarter',
+                                   'Pair accelerators with decelerators and stop assuming 80 percent '
+                                   'attainment with doubled reps',
+                                   'The SaaS CFO ([uBngVWkX0K4 @ 00:32:37])'],
+                                  ['SDR overstaffing dragging mid-market spend',
+                                   'Mid-market teams above a 2.5:1 SDR-to-AE ratio overspend on SDRs',
+                                   'Cut the SDR-to-AE ratio back to 2:1 for mid-market motions',
+                                   'GrowthSpree - AI Native B2B Marketing Agency ([2dLvgvK0qCY @ '
+                                   '00:02:07])'],
+                                  ['Renewals slipping through manual CRM steps',
+                                   "Justin Humphreys asked whether renewals require a manual 'create "
+                                   "renewal quote' step, and line items still need custom code",
+                                   'Contract-object workflow fires under 30 days to renewal and re-enrolls '
+                                   'every anniversary',
+                                   'HubSpot Data Analytics by MergeYourData ([ahHk4naTV0s @ 00:03:23])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Kill-Switch Checks Before Scaling Dials, Deals, or Comp',
+                           'body': 'Hard stops drawn from dials, deals, and comp plans that already failed '
+                                   'on the floor. Clear all four before adding reps, raising quotas, or '
+                                   'walking into procurement.',
+                           'items': ['No opener stays in rotation past a dial block that books nothing; '
+                                     "Armand's 800 dials over four weeks booked zero meetings [Sell Better "
+                                     '— aW8jAYnvqyI @ 00:08:01].',
+                                     'No payment-term concession goes on the table until cash is confirmed '
+                                     'as the last objection [Caliber (Formerly pclub.io) — lmaQjDuWaSY @ '
+                                     '00:08:39].',
+                                     'No headcount plan built on 80 percent attainment with doubled reps; '
+                                     '91 percent of companies missed quota [The SaaS CFO — uBngVWkX0K4 @ '
+                                     '00:27:09].',
+                                     'No mid-market SDR bench above 2.5:1 per AE; cut back to 2:1 '
+                                     '[GrowthSpree - AI Native B2B Marketing Agency — 2dLvgvK0qCY @ '
+                                     '00:02:07].']}}],
+ 'pull_quote': '"The best sales people are professional disqualifiers." — Money Machine (cjmKIrc6hgE @ '
+               '00:09:13).',
+ 'diagram_id': 'diag-06',
+ 'action_checklist': ['Prep 40 dials the night before, stand up, and finish the call block before opening '
+                      'the inbox [Sell Better — aW8jAYnvqyI @ 00:03:39].',
+                      'Close every live conversation with "Do you have your calendar handy?", book for '
+                      'today or tomorrow, and triple-confirm the meeting [Sell Better — m2z1tgfv8Kc @ '
+                      '00:13:34].',
+                      'Before negotiating, confirm vendor of choice with "if price were not an issue", '
+                      'then ask what steps remain "if we agreed on price right now" and stay silent '
+                      '[Caliber (Formerly pclub.io) — B5SsF-kHahw @ 00:02:41].',
+                      'Walk procurement through the CRO\'s ramp math and ask "how believable" before price '
+                      'comes up, as in the $3.2M return against $385k spend [Caliber (Formerly pclub.io) — '
+                      'lmaQjDuWaSY @ 00:03:36].',
+                      'Build a HubSpot contract workflow that creates a renewal deal at annual contract '
+                      'value when renewal is less than 30 days out, with re-enrollment on [HubSpot Data '
+                      'Analytics by MergeYourData — ahHk4naTV0s @ 00:02:53].',
+                      'Route RingCentral call recordings through Zapier into a Google folder and log an '
+                      'AgencyZoom activity note matched by phone number [TechMarketer — 5C8NoZ-wXbo @ '
+                      '00:00:34].'],
+ 'statutory_citations': [{'title': 'Caliber (Formerly pclub.io) — How We Negotiated a $385k SaaS Deal with '
+                                   'Procurement (Without Discounting) [00:03:57]',
+                          'url': 'https://www.youtube.com/watch?v=lmaQjDuWaSY&t=237s',
+                          'relevance': 'Primary practitioner testimony on isolating procurement price '
+                                       'resistance into buckets and closing a $385k Gong deal against a '
+                                       '$200k budget.'},
+                         {'title': 'Caliber (Formerly pclub.io) — CEO EXPLAINS: 9 SaaS Negotiation Tips to '
+                                   'Close SaaS Deals (At the Price YOU Want) [00:10:49]',
+                          'url': 'https://www.youtube.com/watch?v=B5SsF-kHahw&t=649s',
+                          'relevance': 'Primary practitioner testimony on the capital-stewardship bucket, '
+                                       'walk-away limits, and trading every concession.'},
+                         {'title': 'The SaaS CFO — Unlocking Sales Success: Ben Murray and QuotaPath on '
+                                   'Building Scalable Compensation Plans [00:23:36]',
+                          'url': 'https://www.youtube.com/watch?v=uBngVWkX0K4&t=1416s',
+                          'relevance': 'Primary practitioner testimony on quota:OTE multiples, cliffs, '
+                                       'decelerators, and discount authority tiers.'},
+                         {'title': 'Money Machine — Your Life as Every Level of a SaaS Sales Rep — From '
+                                   'SDR to VP [00:04:03]',
+                          'url': 'https://www.youtube.com/watch?v=cjmKIrc6hgE&t=243s',
+                          'relevance': 'Primary practitioner testimony on champions without political '
+                                       'capital and a $40K deal lost to an indemnification clause.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'lmaQjDuWaSY',
+                       'title': 'How We Negotiated a $385k SaaS Deal with Procurement (Without '
+                                'Discounting)',
+                       'channel': 'Caliber (Formerly pclub.io)',
+                       'author': 'Caliber (Formerly pclub.io)',
+                       'text': 'Do not offer that until you know that this is the last thing.',
+                       'tip': 'Do not offer that until you know that this is the last thing.',
+                       'timestamp': 519,
+                       'timestamp_seconds': 519,
+                       'timestamp_label': '[00:08:39]',
+                       'url': 'https://www.youtube.com/watch?v=lmaQjDuWaSY&t=519s',
+                       'markdown': '[00:08:39](https://www.youtube.com/watch?v=lmaQjDuWaSY&t=519s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aW8jAYnvqyI',
+                       'title': '35 Minutes of Expert Cold Calling Tips (B2B & Software Sales)',
+                       'channel': 'Sell Better',
+                       'author': 'Sell Better',
+                       'text': "And what this means is I'm holding a baby and that means don't drop the "
+                               'baby.',
+                       'tip': "And what this means is I'm holding a baby and that means don't drop the "
+                              'baby.',
+                       'timestamp': 2005,
+                       'timestamp_seconds': 2005,
+                       'timestamp_label': '[00:33:25]',
+                       'url': 'https://www.youtube.com/watch?v=aW8jAYnvqyI&t=2005s',
+                       'markdown': '[00:33:25](https://www.youtube.com/watch?v=aW8jAYnvqyI&t=2005s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'u9D8WbQixac',
+                       'title': 'Cold Call Example for Software Development',
+                       'channel': 'Sales Scripter',
+                       'author': 'Sales Scripter',
+                       'text': "I'm not looking to sign you guys up... Is that fair.",
+                       'tip': "I'm not looking to sign you guys up... Is that fair.",
+                       'timestamp': 567,
+                       'timestamp_seconds': 567,
+                       'timestamp_label': '[00:09:27]',
+                       'url': 'https://www.youtube.com/watch?v=u9D8WbQixac&t=567s',
+                       'markdown': '[00:09:27](https://www.youtube.com/watch?v=u9D8WbQixac&t=567s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'm2z1tgfv8Kc',
+                       'title': 'Full 18-Minute Cold Calling Course (For SaaS Sales)',
+                       'channel': 'Sell Better',
+                       'author': 'Sell Better',
+                       'text': 'Summarize, then ask do you have your calendar handy, book for today or '
+                               'tomorrow, and triple confirm.',
+                       'tip': 'Summarize, then ask do you have your calendar handy, book for today or '
+                              'tomorrow, and triple confirm.',
+                       'timestamp': 814,
+                       'timestamp_seconds': 814,
+                       'timestamp_label': '[00:13:34]',
+                       'url': 'https://www.youtube.com/watch?v=m2z1tgfv8Kc&t=814s',
+                       'markdown': '[00:13:34](https://www.youtube.com/watch?v=m2z1tgfv8Kc&t=814s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ahHk4naTV0s',
+                       'title': 'Triggering Renewal Deal Creation Automatically with Contracts in HubSpot',
+                       'channel': 'HubSpot Data Analytics by MergeYourData',
+                       'author': 'HubSpot Data Analytics by MergeYourData',
+                       'text': 'Trigger the workflow on the contract object when the renewal date is less '
+                               'than 30 days from now.',
+                       'tip': 'Trigger the workflow on the contract object when the renewal date is less '
+                              'than 30 days from now.',
+                       'timestamp': 46,
+                       'timestamp_seconds': 46,
+                       'timestamp_label': '[00:00:46]',
+                       'url': 'https://www.youtube.com/watch?v=ahHk4naTV0s&t=46s',
+                       'markdown': '[00:00:46](https://www.youtube.com/watch?v=ahHk4naTV0s&t=46s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CnpFwgvhMNc',
+                       'title': 'Salesforce Salary Negotiation | How to Navigate a Salesforce Offer '
+                                'Negotiation',
+                       'channel': 'The Salary Negotiator',
+                       'author': 'The Salary Negotiator',
+                       'text': 'Send the counter by email targeting the top of the band, and the recruiter '
+                               'takes it back nine times out of 10.',
+                       'tip': 'Send the counter by email targeting the top of the band, and the recruiter '
+                              'takes it back nine times out of 10.',
+                       'timestamp': 603,
+                       'timestamp_seconds': 603,
+                       'timestamp_label': '[00:10:03]',
+                       'url': 'https://www.youtube.com/watch?v=CnpFwgvhMNc&t=603s',
+                       'markdown': '[00:10:03](https://www.youtube.com/watch?v=CnpFwgvhMNc&t=603s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HlJxNYkv7AY',
+                       'title': 'Docusign IAM for Sales: Customer Renewal Management',
+                       'channel': 'Docusign',
+                       'author': 'Docusign',
+                       'text': 'Go to the Agreements tab, sort by expiration, and find the MSA that '
+                               'expires in 90 days.',
+                       'tip': 'Go to the Agreements tab, sort by expiration, and find the MSA that expires '
+                              'in 90 days.',
+                       'timestamp': 24,
+                       'timestamp_seconds': 24,
+                       'timestamp_label': '[00:00:24]',
+                       'url': 'https://www.youtube.com/watch?v=HlJxNYkv7AY&t=24s',
+                       'markdown': '[00:00:24](https://www.youtube.com/watch?v=HlJxNYkv7AY&t=24s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2dLvgvK0qCY',
+                       'title': 'B2B SaaS Sales Quota Benchmarks 2026: SDR Meetings, AE Quota, OTE, Ratios',
+                       'channel': 'GrowthSpree - AI Native B2B Marketing Agency',
+                       'author': 'GrowthSpree - AI Native B2B Marketing Agency',
+                       'text': 'Mid-market above 2.5:1 overspends on SDRs, and the fix is cutting back to '
+                               '2:1.',
+                       'tip': 'Mid-market above 2.5:1 overspends on SDRs, and the fix is cutting back to '
+                              '2:1.',
+                       'timestamp': 127,
+                       'timestamp_seconds': 127,
+                       'timestamp_label': '[00:02:07]',
+                       'url': 'https://www.youtube.com/watch?v=2dLvgvK0qCY&t=127s',
+                       'markdown': '[00:02:07](https://www.youtube.com/watch?v=2dLvgvK0qCY&t=127s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'D_gkFglCscs',
+                       'title': 'How to Hit Your Quota EVERY Single Month as a Sales Rep',
+                       'channel': 'Dylan Rich',
+                       'author': 'Dylan Rich',
+                       'text': 'At 100 dials per meeting and a 70 percent show rate, 15 times 1.7 is 25.5, '
+                               'so about 26 meetings, which is 2,600 calls over 22 days.',
+                       'tip': 'At 100 dials per meeting and a 70 percent show rate, 15 times 1.7 is 25.5, '
+                              'so about 26 meetings, which is 2,600 calls over 22 days.',
+                       'timestamp': 174,
+                       'timestamp_seconds': 174,
+                       'timestamp_label': '[00:02:54]',
+                       'url': 'https://www.youtube.com/watch?v=D_gkFglCscs&t=174s',
+                       'markdown': '[00:02:54](https://www.youtube.com/watch?v=D_gkFglCscs&t=174s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cjmKIrc6hgE',
+                       'title': 'Your Life as Every Level of a SaaS Sales Rep — From SDR to VP',
+                       'channel': 'Money Machine',
+                       'author': 'Money Machine',
+                       'text': 'The best sales people are professional disqualifiers.',
+                       'tip': 'The best sales people are professional disqualifiers.',
+                       'timestamp': 553,
+                       'timestamp_seconds': 553,
+                       'timestamp_label': '[00:09:13]',
+                       'url': 'https://www.youtube.com/watch?v=cjmKIrc6hgE&t=553s',
+                       'markdown': '[00:09:13](https://www.youtube.com/watch?v=cjmKIrc6hgE&t=553s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cjmKIrc6hgE',
+                       'title': 'Your Life as Every Level of a SaaS Sales Rep — From SDR to VP',
+                       'channel': 'Money Machine',
+                       'author': 'Money Machine',
+                       'text': 'No one gets fired for buying IBM.',
+                       'tip': 'No one gets fired for buying IBM.',
+                       'timestamp': 331,
+                       'timestamp_seconds': 331,
+                       'timestamp_label': '[00:05:31]',
+                       'url': 'https://www.youtube.com/watch?v=cjmKIrc6hgE&t=331s',
+                       'markdown': '[00:05:31](https://www.youtube.com/watch?v=cjmKIrc6hgE&t=331s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uBngVWkX0K4',
+                       'title': 'Unlocking Sales Success: Ben Murray and QuotaPath on Building Scalable '
+                                'Compensation Plans',
+                       'channel': 'The SaaS CFO',
+                       'author': 'The SaaS CFO',
+                       'text': 'Avoid cliffs, because they make reps push deals to next quarter.',
+                       'tip': 'Avoid cliffs, because they make reps push deals to next quarter.',
+                       'timestamp': 1957,
+                       'timestamp_seconds': 1957,
+                       'timestamp_label': '[00:32:37]',
+                       'url': 'https://www.youtube.com/watch?v=uBngVWkX0K4&t=1957s',
+                       'markdown': '[00:32:37](https://www.youtube.com/watch?v=uBngVWkX0K4&t=1957s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3enRkyZlcQk',
+                       'title': 'What quota a $200,000 rep should carry',
+                       'channel': 'SaasRise',
+                       'author': 'SaasRise',
+                       'text': 'A rep you pay 200k a year should bring in about 1 million.',
+                       'tip': 'A rep you pay 200k a year should bring in about 1 million.',
+                       'timestamp': 120,
+                       'timestamp_seconds': 120,
+                       'timestamp_label': '[00:02:00]',
+                       'url': 'https://www.youtube.com/watch?v=3enRkyZlcQk&t=120s',
+                       'markdown': '[00:02:00](https://www.youtube.com/watch?v=3enRkyZlcQk&t=120s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'B5SsF-kHahw',
+                       'title': 'CEO EXPLAINS: 9 SaaS Negotiation Tips to Close SaaS Deals (At the Price '
+                                'YOU Want)',
+                       'channel': 'Caliber (Formerly pclub.io)',
+                       'author': 'Caliber (Formerly pclub.io)',
+                       'text': "Dragons only get hungrier when they're fed.",
+                       'tip': "Dragons only get hungrier when they're fed.",
+                       'timestamp': 559,
+                       'timestamp_seconds': 559,
+                       'timestamp_label': '[00:09:19]',
+                       'url': 'https://www.youtube.com/watch?v=B5SsF-kHahw&t=559s',
+                       'markdown': '[00:09:19](https://www.youtube.com/watch?v=B5SsF-kHahw&t=559s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'm505TQagq7g',
+                       'title': '🔥 20 SaaS Sales Hacks That’ll Make You Close Deals Like a Boss 💰🚀',
+                       'channel': 'Oz SaaS Master',
+                       'author': 'Oz SaaS Master',
+                       'text': 'Eight, a great question will always have more power than a great '
+                               'statement.',
+                       'tip': 'Eight, a great question will always have more power than a great statement.',
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=m505TQagq7g&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=m505TQagq7g&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'm505TQagq7g',
+                       'title': '🔥 20 SaaS Sales Hacks That’ll Make You Close Deals Like a Boss 💰🚀',
+                       'channel': 'Oz SaaS Master',
+                       'author': 'Oz SaaS Master',
+                       'text': "You'll double your demo success with this change.",
+                       'tip': "You'll double your demo success with this change.",
+                       'timestamp': 140,
+                       'timestamp_seconds': 140,
+                       'timestamp_label': '[00:02:20]',
+                       'url': 'https://www.youtube.com/watch?v=m505TQagq7g&t=140s',
+                       'markdown': '[00:02:20](https://www.youtube.com/watch?v=m505TQagq7g&t=140s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5C8NoZ-wXbo',
+                       'title': 'Automate Client Notes with RingCentral & AgencyZoom – Zapier Workflow',
+                       'channel': 'TechMarketer',
+                       'author': 'TechMarketer',
+                       'text': 'If the lead is found by phone number, create an activity note in '
+                               'AgencyZoom with the recording title and link.',
+                       'tip': 'If the lead is found by phone number, create an activity note in AgencyZoom '
+                              'with the recording title and link.',
+                       'timestamp': 34,
+                       'timestamp_seconds': 34,
+                       'timestamp_label': '[00:00:34]',
+                       'url': 'https://www.youtube.com/watch?v=5C8NoZ-wXbo&t=34s',
+                       'markdown': '[00:00:34](https://www.youtube.com/watch?v=5C8NoZ-wXbo&t=34s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OrXv43zBEj4',
+                       'title': 'Which VOIP phone system should I use if I use AgencyZoom?',
+                       'channel': 'Accelerated Automation',
+                       'author': 'Accelerated Automation',
+                       'text': 'Avoid Twilio except as a Band-Aid, because it is a developer platform.',
+                       'tip': 'Avoid Twilio except as a Band-Aid, because it is a developer platform.',
+                       'timestamp': 164,
+                       'timestamp_seconds': 164,
+                       'timestamp_label': '[00:02:44]',
+                       'url': 'https://www.youtube.com/watch?v=OrXv43zBEj4&t=164s',
+                       'markdown': '[00:02:44](https://www.youtube.com/watch?v=OrXv43zBEj4&t=164s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'}]}

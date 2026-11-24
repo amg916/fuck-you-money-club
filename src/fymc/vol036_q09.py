@@ -1,698 +1,841 @@
 from __future__ import annotations
 
-CHAPTER_9 = {
-    "id": "Q9",
-    "chapter_id": "Q9",
-    "chapter_number": 9,
-    "question_number": 9,
-    "slug": "contracts-statutory-guardrails-licensing-and-outreach-scripts",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern gpu compute & telecom capacity arbitrage?",
-    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
-    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": "Prepaid GPU Capacity, FCC Provider Boundaries, STIR/SHAKEN, 10DLC Registration, Data Covenants & Evidence-Backed Sales",
-    "layout_template": "legal_compliance_notes",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #36, GPU Compute & Telecom Capacity Arbitrage, holds Rank #03 of 36 "
-        "with a 94/100 Money-to-Manpower Score across a shelf of 15 mapped plays. "
-        "This chapter turns reserved GPU capacity, inference routing, SIP termination, "
-        "10DLC messaging, and IPv4 access into precisely bounded commercial obligations. "
-        "The three annual owner-profit cases are $27,000 Conservative, $189,000 Base, "
-        "and $456,000 Scaled; gross billings must remain distinct from the 65% retained "
-        "contribution basis. Build service-specific contracts, determine the actual FCC "
-        "provider role, verify upstream resale rights, and restrict outreach to "
-        "supportable claims. Prepaid wallets, tenant isolation, documented consent, "
-        "and evidence-backed competitor comparisons protect the spread without "
-        "promising permissions, retention behavior, or capacity that suppliers cannot deliver."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$150,000",
-            "context": "Annual gross billings; $97,500 retained contribution at 65%",
-            "note": "18% gross-billings net margin; $27,000 owner profit; 1 FT + 2 C; 27.69% retained margin",
-        },
-        {
-            "label": "Base",
-            "value": "$675,000",
-            "context": "Annual gross billings; $438,750 retained contribution at 65%",
-            "note": "28.0% gross-billings net margin; $189,000 owner profit; 1 FT + 2 C; 43.08% retained margin",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual gross billings; $780,000 retained contribution at 65%",
-            "note": "38% gross-billings net margin; $456,000 owner profit; 2 FT + 3 C; 58.46% retained margin",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Classify each service before accepting a customer order",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a service inventory, not a single label such as technology reseller. "
-                    "A dedicated H100 lease, a metered inference endpoint, outbound SIP termination, "
-                    "application-to-person messaging, and an IPv4 sublease create different obligations "
-                    "even when one Stripe invoice collects payment. Identify the contracting seller, "
-                    "upstream supplier, customer location, traffic destination, numbering responsibility, "
-                    "and party controlling service delivery. Pure compute hosting does not become "
-                    "telecommunications merely because packets traverse a network. Conversely, buying "
-                    "carrier termination wholesale does not remove provider duties when the operator "
-                    "sells covered voice services under their own name. For voice, map the offering "
-                    "against 47 U.S.C. 153 and the applicable FCC service definitions; evaluate "
-                    "Section 214 authority under 47 U.S.C. 214 and 47 CFR Part 63, including "
-                    "whether international service requires separate authority. Determine FCC Form "
-                    "499-A registration and reporting duties from actual activities and current filing "
-                    "instructions. A contribution exemption does not automatically eliminate filing "
-                    "duties. Record who owns each filing, its supporting revenue classification, and "
-                    "the next review date. Keep compute and telecom order forms separable so that "
-                    "adding messaging does not silently expand a GPU customer's service scope or "
-                    "cause unrelated usage to inherit unsuitable suspension and billing terms."
-                ),
-                (
-                    "Treat STIR/SHAKEN, the Robocall Mitigation Database, and messaging registration "
-                    "as separate systems with separate evidence. Under 47 CFR 64.6301 and 64.6305, "
-                    "determine the obligations attached to the operator's actual voice-provider or "
-                    "intermediate-provider role, including authentication, mitigation, filing, and "
-                    "traffic acceptance requirements where applicable. Do not describe a supplier's "
-                    "database entry as the reseller's filing. Verify upstream status and require "
-                    "timely traceback cooperation, customer investigation, and route suspension rights. "
-                    "A signed call is not proof that its recipient authorized it; attestation and "
-                    "consumer permission answer different questions. For 10DLC, The Campaign Registry "
-                    "and carrier campaign vetting are industry onboarding mechanisms, not federal "
-                    "licenses and not substitutes for TCPA analysis. Capture the actual brand, use "
-                    "case, opt-in language, sample messages, help response, and opt-out behavior before "
-                    "submitting a campaign. Prohibit moving rejected traffic to another aggregator "
-                    "to bypass restrictions. Configure least-cost routing to consider destination, "
-                    "quality, permitted traffic, and supplier eligibility before price. If an eligible "
-                    "route costs more than the customer's ceiling, pause delivery or obtain a revised "
-                    "order rather than silently routing through an unsuitable carrier. Preserve "
-                    "traceability without retaining message content longer than the documented purpose requires."
-                ),
-                (
-                    "Build a jurisdiction worksheet around where customers and end users receive "
-                    "service, not merely the operator's incorporation state. California Public "
-                    "Utilities Code 1001 illustrates why facilities, service classification, and "
-                    "state commission authority require a separate analysis; it does not establish "
-                    "that every cloud application needs a telephone certificate. Check state "
-                    "registration, numbering, emergency-calling, accessibility, tax, and surcharge "
-                    "requirements against the specific product. Interconnected VoIP can trigger "
-                    "duties that a non-interconnected software feature does not. Florida Statutes "
-                    "501.059 adds state telephone-solicitation constraints that cannot be replaced "
-                    "by a national campaign template. California consumer-data processing can "
-                    "require service-provider or contractor terms under Civil Code 1798.100 and "
-                    "related provisions, depending on the parties and thresholds. Maintain separate "
-                    "tax mappings for compute, telecommunications, and messaging rather than assuming "
-                    "a software tax code fits everything. Screen customer identity, beneficial "
-                    "ownership where warranted, destination, and intended use against applicable "
-                    "sanctions restrictions; GPU hardware, software, technical transfers, and "
-                    "restricted end uses may also require export-control analysis. Do not represent "
-                    "every cloud GPU session as a hardware export. Escalate facts that change the "
-                    "classification, and keep the affected destination or service disabled until "
-                    "the required permissions and operating responsibilities are established."
-                ),
-            ],
-            "table": {
-                "caption": "Service Classification and Provider-Responsibility Evidence Matrix",
-                "headers": [
-                    "Service and actual operating role",
-                    "Authority or commercial boundary to evaluate",
-                    "Evidence required before customer activation",
-                    "Fallback when the boundary remains unresolved",
-                ],
-                "rows": [
-                    [
-                        "Dedicated GPU access sold with defined capacity commitments",
-                        "Upstream lease must expressly permit customer resale",
-                        "Executed resale permission identifying geography and tenancy rights",
-                        "Offer only capacity covered by documented supplier permission",
-                    ],
-                    [
-                        "Inference routing sold through an operator-controlled endpoint",
-                        "Provider terms govern subprocessors and permitted model usage",
-                        "Approved routing inventory with retention and regional restrictions",
-                        "Pin workloads to a single contractually eligible endpoint",
-                    ],
-                    [
-                        "Outbound voice termination sold under the operator's name",
-                        "FCC classification determines filings and provider-specific operating duties",
-                        "Written role analysis plus applicable registration and filing records",
-                        "Keep voice sales inactive while classification is resolved",
-                    ],
-                    [
-                        "International telecommunications routes offered to enterprise calling customers",
-                        "Section 214 analysis addresses applicable international authorization requirements",
-                        "Authority records identifying the entity actually providing service",
-                        "Exclude international destinations until authorization requirements are satisfied",
-                    ],
-                    [
-                        "Covered voice traffic received from an upstream provider",
-                        "Applicable database and traffic acceptance rules require verification",
-                        "Dated provider checks and documented traceback response ownership",
-                        "Suspend the affected route and preserve investigation evidence",
-                    ],
-                    [
-                        "Business messaging delivered through registered 10DLC carrier routes",
-                        "Carrier registration supplements rather than replaces recipient permission",
-                        "Brand campaign records and reproducible opt-in evidence packages",
-                        "Stop campaign traffic when registration or permission fails",
-                    ],
-                    [
-                        "IPv4 access leased without transferring address ownership rights",
-                        "RIR policies and lessor authority constrain permitted delegation",
-                        "Lease authority plus applicable routing authorization and abuse contacts",
-                        "Withdraw affected advertisements and migrate only with customer coordination",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four verifications before the first paid production workload",
-                "body": (
-                    "Apply these checks to the specific service and jurisdiction; a completed "
-                    "compute review cannot authorize an unrelated voice launch."
-                ),
-                "items": [
-                    "Verify supplier resale rights, tenant geography, workload permissions, and the exact entity signing the customer order.",
-                    "Document applicable FCC, state, emergency-service, registration, and contribution duties with named filing owners.",
-                    "Test wallet exhaustion, tenant isolation, payload logging controls, and route suspension using noncustomer test traffic.",
-                    "Match customer claims, consent evidence, retention promises, and liability obligations to capabilities proven by each upstream supplier.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Make data, acceptable use, and supplier promises enforceable",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "A compute order should identify GPU model, physical or virtual allocation, "
-                    "memory entitlement, scheduling policy, region, maintenance windows, and permitted "
-                    "substitution. H100, H200, and B200 capacity are not interchangeable simply "
-                    "because a dashboard displays GPU hours. Specify whether a slice provides "
-                    "hardware partitioning, time sharing, or exclusive access, and describe the "
-                    "isolation actually implemented. Run vLLM behind tenant-scoped credentials and "
-                    "apply authorization before LiteLLM chooses a provider. Avoid shared caches "
-                    "that expose another customer's prompts, embeddings, adapters, or generated "
-                    "output. Use DCGM for device health and utilization evidence, but define a "
-                    "separate customer billing meter; device utilization alone does not establish "
-                    "billable reserved time or accepted tokens. The acceptable-use schedule should "
-                    "prohibit unauthorized access, malware deployment, abusive mining where supplier "
-                    "terms prohibit it, unlawful content processing, and abusive calling or messaging. "
-                    "Specify investigative access, evidence preservation, immediate isolation for "
-                    "active harm, notice when appropriate, and restoration conditions. Customer "
-                    "screening is a risk-control process, not a claim that every compute reseller "
-                    "is subject to bank-style identification duties. Request identity and business "
-                    "purpose proportionate to service risk, and avoid accumulating sensitive "
-                    "identity documents without a defined need, restricted access, and deletion schedule."
-                ),
-                (
-                    "Translate zero-data-retention promises into a data-flow schedule covering request "
-                    "bodies, responses, cache entries, tracing, crash dumps, abuse systems, support "
-                    "tickets, and backups. An operator cannot promise enterprise payload deletion "
-                    "while a fallback inference provider retains prompts for product improvement. "
-                    "Require explicit upstream settings or written terms supporting the promise, "
-                    "and remove ineligible endpoints from the routing pool rather than hoping "
-                    "a preferred route always succeeds. Distinguish payload retention from minimal "
-                    "billing and security metadata; disclose their fields, purpose, retention "
-                    "period, and access controls. Document any mandatory preservation exception "
-                    "narrowly instead of marketing absolute deletion that the contract contradicts. "
-                    "For health-sector customers, evaluate whether the service creates a business "
-                    "associate relationship under 45 CFR 160.103 and whether agreements under "
-                    "45 CFR 164.504(e) are required. A business associate agreement is useful "
-                    "only when the selected infrastructure can perform its obligations. For "
-                    "covered telecommunications customer information, evaluate 47 U.S.C. 222 "
-                    "and the implementing FCC requirements separately from a general privacy "
-                    "policy. Test log suppression using synthetic sensitive markers, verify "
-                    "backups and support exports, and retain the test result. Failed deletion "
-                    "or accidental payload capture should trigger the incident procedure and "
-                    "customer notice assessment specified in the data-processing schedule."
-                ),
-                (
-                    "Allocate intellectual-property rights by asset rather than saying that everything "
-                    "belongs to the customer. The customer retains rights in supplied data, "
-                    "weights, adapters, and prompts to the extent they possess those rights; "
-                    "the operator receives only the permissions needed to provide the service. "
-                    "Generated-output rights remain subject to applicable law and upstream model "
-                    "terms, so do not promise exclusive ownership merely because inference was "
-                    "paid. Identify the operator's pre-existing orchestration code, templates, "
-                    "and metering logic, and prohibit training on customer content unless a "
-                    "separate affirmative agreement permits it. Require customers to hold necessary "
-                    "model and dataset licenses without claiming this transfers the operator's "
-                    "own responsibilities. For IPv4 capacity, identify address blocks, permitted "
-                    "announcements, relevant registry policies, routing authorization, abuse "
-                    "contacts, and return procedures; possession of an invoice does not establish "
-                    "routing authority. Set a remediation period for reputation damage where "
-                    "safe, and reserve prompt isolation for active abuse. When a supplier "
-                    "terminates capacity, provide an orderly export or migration path for "
-                    "customer-controlled artifacts without exposing another tenant's information. "
-                    "The practical fallback is fewer eligible services with enforceable promises, "
-                    "not a broader catalog whose data, licensing, and routing obligations cannot "
-                    "be satisfied by the actual delivery chain."
-                ),
-            ],
-            "table": {
-                "caption": "Data, Licensing, and Acceptable-Use Contract Schedule",
-                "headers": [
-                    "Schedule requiring an explicit customer commitment",
-                    "Clause mechanics to write into the agreement",
-                    "Operational proof retained by the service owner",
-                    "Failure response with a bounded customer remedy",
-                ],
-                "rows": [
-                    [
-                        "GPU allocation and supported substitution service schedule",
-                        "Name model memory isolation region and substitution permission",
-                        "Provisioning records connect each tenant to contracted resources",
-                        "Offer approved substitute capacity or contractually defined credits",
-                    ],
-                    [
-                        "Tenant boundary and workload security implementation schedule",
-                        "Separate credentials storage namespaces caches and administrative access",
-                        "Isolation tests demonstrate cross-tenant access attempts are blocked",
-                        "Isolate affected workloads and execute the incident procedure",
-                    ],
-                    [
-                        "Enterprise payload retention and subprocessor restriction schedule",
-                        "List payload exclusions metadata periods and permitted subprocessors",
-                        "Synthetic-marker tests validate logs backups and support exports",
-                        "Disable incompatible routes before accepting additional customer requests",
-                    ],
-                    [
-                        "Customer identity and proportionate service screening schedule",
-                        "Collect business purpose authority and risk-relevant identity evidence",
-                        "Restricted records show review outcome without unnecessary document copies",
-                        "Decline activation when material identity discrepancies remain unresolved",
-                    ],
-                    [
-                        "Customer artifacts and generated output ownership schedule",
-                        "Separate supplied assets platform code and model-license limitations",
-                        "Versioned model terms accompany each approved inference endpoint",
-                        "Remove incompatible models and preserve customer artifact portability",
-                    ],
-                    [
-                        "Abuse investigation suspension and restoration operating schedule",
-                        "Define prohibited conduct evidence handling notice and restoration",
-                        "Incident records link triggering evidence to scoped suspension",
-                        "Suspend the affected service rather than unrelated customer workloads",
-                    ],
-                    [
-                        "Address delegation and routing authority lease schedule",
-                        "Identify address blocks delegation rights and announcement responsibilities",
-                        "Applicable registry records and routing authorizations match the lease",
-                        "Coordinate route withdrawal and return the delegated address capacity",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the spread at the supplier boundary",
-                "body": (
-                    "Experienced operators purchase enforceable rights and observable service "
-                    "behavior, not merely an attractive capacity quote."
-                ),
-                "items": [
-                    "Attach the supplier's precise retention configuration to each enterprise order; exclude unsupported LiteLLM fallbacks automatically.",
-                    "Separate DCGM health telemetry from invoice evidence so a busy device does not become an invented customer charge.",
-                    "Negotiate GPU substitution and maintenance credits before accepting long commitments; require customer permission for materially different hardware.",
-                    "Keep a prequalified voice route with verified provider status and agreed traffic rules; price resilience before a carrier suspension occurs.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Tie fees, liability, and exit rights to the canonical economics",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use the Formula v2.0 scorecard as a reconciliation framework, not a license "
-                    "to classify accounting revenue by preference. Conservative gross billings "
-                    "of $150,000 leave $97,500 at the stipulated 65% retained share; subtracting "
-                    "$70,500 of remaining modeled costs produces $27,000 owner profit. Base "
-                    "gross billings of $675,000 leave $438,750; subtracting $249,750 produces "
-                    "$189,000. Scaled gross billings of $1,200,000 leave $780,000; subtracting "
-                    "$324,000 produces $456,000. The corresponding upstream allocations are "
-                    "$52,500, $236,250, and $420,000. Owner-profit margins on gross billings "
-                    "are 18%, 28.0%, and 38%; margins on retained contribution are 27.69%, "
-                    "43.08%, and 58.46%. These are different denominators, not competing "
-                    "versions of the same percentage. ASC 606 principal-versus-agent analysis "
-                    "depends on control and the actual arrangement; a 65% modeling factor "
-                    "does not independently establish net presentation. Maintain gross customer "
-                    "collections, supplier pass-throughs, retained contribution, and recognized "
-                    "revenue in separate ledger views. The advertised monthly operating-expense "
-                    "range is not an exhaustive reconciliation of every annual modeled cost. "
-                    "Keep workload examples below separate from these canonical scenarios, and "
-                    "never count customer application sales, token-user commerce, or downstream "
-                    "merchant volume as the operator's own billings."
-                ),
-                (
-                    "Define the fee trigger before configuring the wallet. For reserved GPU "
-                    "capacity, billing can attach to the contracted reservation interval even "
-                    "when utilization is low; for token services, define accepted input and "
-                    "output units, tokenizer version, retries, and treatment of failed requests. "
-                    "For SIP, state destination rate decks, connection charges, minimum duration, "
-                    "rounding increments, and rate-change notice. For messaging, distinguish "
-                    "segments, carrier surcharges, registration charges, and delivery status. "
-                    "Illustratively, 1,000 accepted GPU-hours billed at $3.00 produce $3,000 "
-                    "gross; a $1.05 supplier cost per hour produces $1,050 upstream cost "
-                    "and $1,950 retained contribution, before remaining expenses. Those "
-                    "assumed rates illustrate the 65% factor and are not market quotes. "
-                    "Require a prepaid balance, authorize expected consumption atomically, "
-                    "settle measured usage, and release unused authorization. Stripe payment "
-                    "success does not eliminate chargebacks or make funds irrevocable. "
-                    "Prevent concurrent requests from overspending the same balance, and "
-                    "specify service suspension, residual-balance refunds, disputed usage, "
-                    "and abandoned-property treatment where applicable. Keep credits "
-                    "nontransferable and limited to the operator's own services unless "
-                    "a separate stored-value analysis supports broader functionality. A "
-                    "wallet protects collections; it cannot repair an uneconomic bare-metal "
-                    "commitment or replace an enforceable customer reservation."
-                ),
-                (
-                    "Make the commercial allocation readable enough that sales, support, and "
-                    "engineering implement the same agreement. Scope belongs in the order "
-                    "form; usage definitions and fee triggers belong in the pricing schedule; "
-                    "availability calculations, exclusions, and credits belong in the service "
-                    "schedule. Limit anti-circumvention to identified introductions, a defined "
-                    "service opportunity, a reasonable period, and documented damages or an "
-                    "enforceable fee mechanism. Do not use it to block independent customer "
-                    "relationships or conceal supplier identity needed for security review. "
-                    "Negotiate a stated liability cap with explicit treatment of confidentiality, "
-                    "data incidents, intellectual-property claims, unpaid fees, and conduct "
-                    "that applicable law prevents parties from limiting. Avoid assuming "
-                    "supplier caps automatically cover the operator's broader promises. "
-                    "Specify notice addresses, escalation deadlines, governing law, forum "
-                    "or arbitration mechanics, and a practical method for disputing "
-                    "meter records. Evaluate UCC Article 2 only where the transaction "
-                    "and jurisdiction support its application; cloud services are not "
-                    "automatically sales of goods. Renewal should require clear notice "
-                    "and a defined cancellation path. Provide export timing, artifact "
-                    "format, deletion confirmation, number portability where applicable, "
-                    "and treatment of unused prepaid funds. Price these duties into "
-                    "the spread before signing, especially when upstream capacity renews "
-                    "earlier than the customer's reservation."
-                ),
-            ],
-            "table": {
-                "caption": "Commercial Clause Checklist and Canonical Financial Controls",
-                "headers": [
-                    "Commercial term with a named economic exposure",
-                    "Required clause or measurement rule for operators",
-                    "Evidence supporting billing or enforcing the promise",
-                    "Fallback preserving cash and customer exit rights",
-                ],
-                "rows": [
-                    [
-                        "Service scope and supplier-supported delivery obligation schedule",
-                        "Specify hardware regions traffic classes exclusions and dependencies",
-                        "Signed order maps each promise to supplier capability",
-                        "Remove unsupported commitments before accepting the customer reservation",
-                    ],
-                    [
-                        "Usage fee trigger and prepaid balance settlement schedule",
-                        "Define accepted units reservations retries rounding and deductions",
-                        "Immutable usage identifiers reconcile wallet entries to invoices",
-                        "Pause consumption before the available prepaid balance expires",
-                    ],
-                    [
-                        "Conservative case with eighteen percent gross-billings profit margin",
-                        "$150,000 gross less $52,500 upstream leaves $97,500 retained",
-                        "$97,500 retained less $70,500 remaining costs yields $27,000",
-                        "Keep staffing at one full-time operator plus two contractors",
-                    ],
-                    [
-                        "Base case with twenty-eight percent gross-billings profit margin",
-                        "$675,000 gross less $236,250 upstream leaves $438,750 retained",
-                        "$438,750 retained less $249,750 remaining costs yields $189,000",
-                        "Keep staffing at one full-time operator plus two contractors",
-                    ],
-                    [
-                        "Scaled case with thirty-eight percent gross-billings profit margin",
-                        "$1,200,000 gross less $420,000 upstream leaves $780,000 retained",
-                        "$780,000 retained less $324,000 remaining costs yields $456,000",
-                        "Use two full-time operators plus three specialist contractors",
-                    ],
-                    [
-                        "Introduction protection liability allocation and dispute resolution schedule",
-                        "Bound protected opportunities caps exceptions deadlines and chosen forum",
-                        "Signed schedules and introduction records support any claimed remedy",
-                        "Resolve documented disputes without blocking unrelated customer data access",
-                    ],
-                    [
-                        "Renewal cancellation portability and unused prepaid funds schedule",
-                        "Specify notice periods export format deletion and refund treatment",
-                        "Renewal notices and settlement records demonstrate timely customer communication",
-                        "Allow orderly migration before withdrawing committed production capacity",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Create a service-specific responsibility record",
-                    "action": "Map each proposed order to supplier rights, service classification, and jurisdiction.",
-                    "detail": "Name the seller, filing owner, data processors, permitted destinations, and unresolved dependencies before generating a payable invoice.",
-                },
-                {
-                    "step": 2,
-                    "title": "Align contract language with configured controls",
-                    "action": "Attach pricing, retention, acceptable-use, service, and exit schedules.",
-                    "detail": "Check every promise against actual LiteLLM routes, vLLM tenancy, SIP permissions, messaging registration, and prepaid settlement behavior.",
-                },
-                {
-                    "step": 3,
-                    "title": "Run synthetic usage through billing and failure paths",
-                    "action": "Test accepted units, duplicate events, failed requests, wallet exhaustion, and supplier interruption.",
-                    "detail": "Reconcile the customer-facing meter to ledger entries; record exclusions and verify that retries cannot create unauthorized duplicate deductions.",
-                },
-                {
-                    "step": 4,
-                    "title": "Activate only the reviewed service configuration",
-                    "action": "Archive signed schedules and enable the documented capacity and traffic classes.",
-                    "detail": "Assign recurring reviews for filing changes, supplier status, price compression, retention settings, consent evidence, and customer cancellation requests.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Use evidence-backed comparisons and permission-aware outreach scripts",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The mapped play competitor_intent_comparison_hijacking targets high-intent "
-                    "comparison, pricing, and cancellation searches through genuinely useful "
-                    "decision pages. Build text-only nominative comparisons using dated public "
-                    "pricing citations, matched units, region, commitment duration, hardware "
-                    "generation, and workload constraints. Nominative fair use is "
-                    "fact-dependent and varies by jurisdiction; using a competitor's name "
-                    "does not authorize confusion about source, sponsorship, or affiliation. "
-                    "Evaluate false-association and advertising risk under 15 U.S.C. 1125(a), "
-                    "and substantiate objective claims under the FTC Act. Do not copy logos, "
-                    "imitate account portals, suggest endorsement, or publish cancellation "
-                    "instructions that require a customer's credentials. A migration guide "
-                    "should explain how the customer exports their own artifacts through "
-                    "official interfaces. Illustratively, 200 qualified monthly visits at "
-                    "the play's 10–18% conversion assumption produce 20–36 conversions. "
-                    "If each conversion is an activated customer buying $200 of service, "
-                    "gross billings are $4,000–$7,200 and retained contribution at 65% "
-                    "is $2,600–$4,680 before acquisition and operating expenses. If conversion "
-                    "means a form submission instead, these billings cannot be claimed "
-                    "without a separate activation rate. The fallback is narrower text-only "
-                    "comparison coverage, timestamped public sources, and suspended claims "
-                    "when equivalent current pricing cannot be verified."
-                ),
-                (
-                    "Separate commercial email from calling and messaging workflows because their "
-                    "permission rules differ. CAN-SPAM, 15 U.S.C. 7704, governs commercial "
-                    "email requirements including accurate headers, nondeceptive subjects, "
-                    "required advertising identification, a valid postal address, and a "
-                    "working opt-out honored within the statutory period. It does not "
-                    "create blanket permission to send automated sales texts. Under "
-                    "47 U.S.C. 227 and 47 CFR 64.1200, analyze the actual calling "
-                    "technology, message content, destination, consent, and applicable "
-                    "do-not-call requirements; business recipients and manually initiated "
-                    "calls do not erase every federal or state restriction. Check "
-                    "state rules before selecting calling hours or recording discovery "
-                    "sessions. Store the recipient's relevant consent evidence, source, "
-                    "timestamp, permitted sender, and requested channel rather than "
-                    "treating a purchased lead list as authorization. The scripts below "
-                    "are exact spoken or written bodies, not a substitute for production "
-                    "sender identification, postal-address fields, unsubscribe controls, "
-                    "or jurisdiction-specific disclosures. Deploy scripts only after "
-                    "the relevant contact eligibility check. Honor a stop request "
-                    "across connected systems promptly, and prevent a CRM resynchronization "
-                    "from reactivating suppression records. When permission cannot be "
-                    "established, use search content or a requested reply instead of "
-                    "switching channels to continue unwanted outreach."
-                ),
-                (
-                    "Discovery should expose contractual mismatches before anyone quotes a cheaper "
-                    "unit rate. Ask whether GPU spend purchases exclusive reservations or "
-                    "interruptible consumption, whether prompts may leave a named region, "
-                    "whether outputs include protected health information, and whether "
-                    "the customer needs payload retention disabled across every fallback. "
-                    "For voice, ask who supplies numbers, originates traffic, obtains "
-                    "permission, answers traceback requests, and bears emergency-service "
-                    "duties where applicable. For messaging, inspect the opt-in journey "
-                    "and campaign use case rather than accepting a screenshot of a "
-                    "registration status alone. Quote a pilot with a wallet ceiling, "
-                    "named units, a stop condition, and a documented migration path. "
-                    "An illustrative $300 prepaid GPU pilot at $3.00 per accepted "
-                    "hour funds 100 hours; at the assumed $1.05 upstream rate, "
-                    "its $195 retained contribution is not owner profit. If the "
-                    "customer needs a $4.00 eligible route under a $3.00 price "
-                    "ceiling, pause or revise the order rather than quietly accepting "
-                    "a negative spread. Record objections as concrete constraints, "
-                    "not permission to exaggerate availability or savings. Send a "
-                    "written recap identifying assumptions, evidence still required, "
-                    "and excluded services. The strongest close is a bounded test "
-                    "whose bill, retention behavior, and exit procedure match the "
-                    "signed schedules."
-                ),
-            ],
-            "table": {
-                "caption": "Verbatim Outreach and Discovery Scripts with Deployment Conditions",
-                "headers": [
-                    "Channel and intended buyer interaction context",
-                    "Verbatim script body for the stated interaction",
-                    "Required evidence before this script is deployed",
-                    "Stop condition and appropriate operating fallback response",
-                ],
-                "rows": [
-                    [
-                        "Commercial email introducing a relevant GPU comparison service",
-                        "'This is a commercial introduction about GPU capacity brokerage. We can compare your required model, region, reservation term, and retention settings against a dated written quote. Reply if you want that comparison, or use unsubscribe to stop these emails.'",
-                        "Accurate sender identity postal address and working unsubscribe controls",
-                        "Suppress further commercial email after a valid opt-out request",
-                    ],
-                    [
-                        "Requested comparison page explaining competitor pricing methodology clearly",
-                        "'This independent comparison uses public prices captured on the date shown. We identify region, hardware, commitment length, and excluded fees. We are not affiliated with the providers compared. Check the linked source before purchasing.'",
-                        "Dated source captures and genuinely comparable unit definitions",
-                        "Withdraw savings claims when equivalent current evidence disappears",
-                    ],
-                    [
-                        "GPU discovery call with an eligible business prospect",
-                        "'Are you buying reserved GPU time or accepted inference units? Which model, region, isolation boundary, and payload-retention settings are mandatory? We will exclude any route that cannot meet those requirements.'",
-                        "Contact eligibility review and an accurate supported-capability inventory",
-                        "Decline unsupported requirements rather than silently substituting resources",
-                    ],
-                    [
-                        "Enterprise privacy discussion before routing any customer payload",
-                        "'Which request fields and outputs must remain unlogged, and may billing metadata be retained? We will list every permitted subprocessor and will not enable a fallback whose retention terms conflict with your order.'",
-                        "Verified subprocessor settings and tested payload-log suppression behavior",
-                        "Keep customer traffic disabled until retention obligations align",
-                    ],
-                    [
-                        "Voice discovery conversation before proposing wholesale termination rates",
-                        "'Who originates your calls, supplies the numbers, maintains recipient permission, and responds to traceback requests? We need the traffic purpose, destinations, and provider responsibilities before offering a production route.'",
-                        "Documented traffic purpose customer identity and applicable provider analysis",
-                        "Reject traffic that lacks supportable permission or traceability",
-                    ],
-                    [
-                        "Messaging onboarding discussion for a proposed business campaign",
-                        "'Please show the actual opt-in journey, sender identity, sample messages, and stop response. Campaign registration does not establish recipient permission. We will activate only the reviewed use case and supported routes.'",
-                        "Reproducible opt-in evidence plus required carrier campaign registration",
-                        "Suspend changed or rejected campaigns instead of aggregator hopping",
-                    ],
-                    [
-                        "Written pilot recap following completed discovery and qualification",
-                        "'Your proposed pilot is capped at $300 prepaid and 100 accepted GPU-hours at $3.00 per hour. The order will name hardware, region, billing rules, retention settings, and the stop condition before you fund the wallet.'",
-                        "Executable order and supplier capacity supporting the illustrative quote",
-                        "Revise the order if available eligible capacity changes",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A capacity spread survives only when the rights, meter, route, and customer promise describe the same service.",
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Create separate compute, inference, voice, messaging, and IPv4 responsibility records identifying supplier rights and the actual contracting provider.",
-        "Resolve applicable FCC Form 499-A, Section 214, STIR/SHAKEN, Robocall Mitigation Database, state, and emergency-service responsibilities before activating affected services.",
-        "Attach signed scope, fee-trigger, acceptable-use, retention, IP, liability, dispute, anti-circumvention, renewal, and exit schedules to every production order.",
-        "Test prepaid concurrency controls, customer meters, tenant isolation, payload-log suppression, supplier interruption, and permitted routing fallbacks with synthetic traffic.",
-        "Reconcile canonical gross billings, 65% retained contribution, remaining modeled costs, and owner profit separately from the ASC 606 presentation assessment.",
-        "Publish only sourced competitor comparisons and deploy outreach scripts through channel-specific eligibility, suppression, identification, and evidence-retention controls.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "47 U.S.C. 153 — Communications Act definitions",
-            "url": "https://www.law.cornell.edu/uscode/text/47/153",
-            "relevance": "Supports service classification by actual offering rather than a reseller's marketing label.",
-        },
-        {
-            "title": "47 U.S.C. 214 — Extensions and discontinuances of service",
-            "url": "https://www.law.cornell.edu/uscode/text/47/214",
-            "relevance": "Provides the statutory basis for applicable telecommunications authorization analysis.",
-        },
-        {
-            "title": "47 CFR Part 63 — Authorizations and service discontinuance",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-63",
-            "relevance": "Contains implementing requirements relevant to domestic and international telecommunications authority and discontinuance.",
-        },
-        {
-            "title": "47 CFR 54.711 — Contributor reporting requirements",
-            "url": "https://www.ecfr.gov/current/title-47/section-54.711",
-            "relevance": "Supports evaluation of applicable contribution reporting alongside current FCC Form 499-A instructions.",
-        },
-        {
-            "title": "47 CFR 64.6301 — Caller ID authentication",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.6301",
-            "relevance": "Defines caller ID authentication obligations applicable to covered voice service arrangements.",
-        },
-        {
-            "title": "47 CFR 64.6305 — Robocall mitigation and certification",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.6305",
-            "relevance": "Addresses covered provider mitigation, certification, database, and traffic acceptance responsibilities.",
-        },
-        {
-            "title": "47 U.S.C. 227 — Restrictions on telephone equipment use",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Establishes TCPA constraints relevant to calling and messaging use cases.",
-        },
-        {
-            "title": "47 CFR 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": "Implements federal calling, consent, identification, and do-not-call requirements for applicable communications.",
-        },
-        {
-            "title": "47 U.S.C. 222 — Privacy of customer information",
-            "url": "https://www.law.cornell.edu/uscode/text/47/222",
-            "relevance": "Requires separate evaluation of telecommunications customer-information obligations where applicable.",
-        },
-        {
-            "title": "45 CFR 164.504 — Uses and disclosures: organizational requirements",
-            "url": "https://www.ecfr.gov/current/title-45/section-164.504",
-            "relevance": "Specifies business associate agreement requirements relevant to qualifying health-data processing relationships.",
-        },
-        {
-            "title": "California Civil Code 1798.100 — Consumer information duties",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.100.",
-            "relevance": "Informs applicable privacy notices, processing limitations, and contractual requirements for covered customer-data arrangements.",
-        },
-        {
-            "title": "California Public Utilities Code 1001 — Certificates of public convenience",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PUC&sectionNum=1001.",
-            "relevance": "Illustrates state authority questions requiring service-specific analysis rather than blanket cloud-service licensing assumptions.",
-        },
-        {
-            "title": "Florida Statutes 501.059 — Telephone solicitation",
-            "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.059.html",
-            "relevance": "Adds state-specific telephone-solicitation requirements requiring review before deploying calling or messaging campaigns.",
-        },
-        {
-            "title": "15 U.S.C. 7704 — Commercial electronic mail requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Governs commercial email identification, truthful transmission information, postal-address disclosure, and opt-out handling.",
-        },
-        {
-            "title": "15 U.S.C. 1125(a) — False designations and misleading descriptions",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1125",
-            "relevance": "Informs competitor comparison, affiliation, source-confusion, and advertising-claim controls.",
-        },
-        {
-            "title": "15 U.S.C. 45 — Unfair or deceptive acts or practices",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": "Supports substantiation of savings, service-capability, privacy, and retention representations.",
-        },
-    ],
-}
+CHAPTER_9 = {'id': 'Q9',
+ 'chapter_id': 'Q9',
+ 'chapter_number': 9,
+ 'question_number': 9,
+ 'slug': 'routing-tokens-vs-self-hosting-gateways-cheap-hardware-confidential-inference',
+ 'question_prompt': 'Should I buy tokens through an API router, self-host models, or squeeze them onto '
+                    'cheap hardware, and how do I keep sensitive prompts private?',
+ 'kicker': 'Q9 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Routing Tokens vs Self-Hosting: Gateways, Cheap Hardware, and Confidential Inference',
+ 'subtitle': 'OpenRouter vs Requesty vs LiteLLM, LiteLLM proxy budgets, rate limits, fallbacks, and '
+             'auto-routing, 5.6x provider price gaps on Hugging Face and OpenRouter, the 5% fee vs '
+             'self-host decision, self-hosted LLM infrastructure, Kaggle free servers, 80B models on old '
+             'laptops, two RTX 3090s, the NVMe offload myth, enclave-based confidential inference for '
+             'neoclouds, and HIPAA and FedRAMP compliance',
+ 'layout_template': 'tool_resource_directory',
+ 'reading_time_minutes': 15,
+ 'executive_summary': "Practitioners converge on rent first, own later: Data Science Festival's Daniel "
+                      'keeps teams on third-party APIs under £10k a month and calls £100k a month a strong '
+                      'push to self-host, while Jono Finds sets the managed-gateway line at 20k a month '
+                      "and prices OpenRouter's 5 percent commission at 5,000 a month on 100,000 of usage. "
+                      'LiteLLM operators enforce budgets, rate limits, and fallbacks through virtual keys, '
+                      'though Ready Tensor watched the request that crossed a $500 budget still succeed. '
+                      "Prompt Engineer 48 found OpenRouter's cheapest provider up to 2x slower, with "
+                      'fastest routing costing 1.3 to 8 times more. Cheap-hardware builders hit 3 to 33 '
+                      'tokens per second on free Kaggle T4s, used 3090s, and laptop clusters, where adding '
+                      'a fourth node slowed things down. TWiz and Jono Finds clash on whether OpenRouter '
+                      'or LiteLLM is the self-hosted option.',
+ 'key_metrics': [{'label': 'Monthly Spend That Pushes Toward Self-Hosting',
+                  'metric': 'Monthly Spend That Pushes Toward Self-Hosting',
+                  'value': 'Over £100,000 per month; stay third-party under £10,000 per month',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Daniel's rent-versus-own cost bands for LLM inference, with the £10k-£100k "
+                             'range treated as a judgment call',
+                  'source': 'Data Science Festival ([WiA5Hm6IpZs @ 00:13:47])'},
+                 {'label': 'Managed Gateway Routing Commission',
+                  'metric': 'Managed Gateway Routing Commission',
+                  'value': '5% commission: 5,000 a month on 100,000 a month of usage (60,000 a year)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Jono Finds pricing OpenRouter's ongoing cut against self-hosting the free "
+                             'LiteLLM software',
+                  'source': 'Jono Finds ([XZPNjgJ4E0c @ 00:02:24])'},
+                 {'label': 'Fastest vs Cheapest Provider Latency on GPT-OSS 120B',
+                  'metric': 'Fastest vs Cheapest Provider Latency on GPT-OSS 120B',
+                  'value': '1.34s (Cerebras, fastest) vs 3.89s (Venice, cheapest); fastest cost 5.6x more',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Median latency from a 180-request OpenRouter test across three models, three '
+                             'routing modes, and 20 prompts',
+                  'source': 'Prompt Engineer 48 ([FpNPRj38T6s @ 00:03:34])'},
+                 {'label': 'Free Kaggle Dual-T4 Server Throughput',
+                  'metric': 'Free Kaggle Dual-T4 Server Throughput',
+                  'value': '26.6-30.1 tok/s at IQ2XS; 28.5-33.2 tok/s at Q2',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Strata engine running a ~180B MoE model with ~72% of experts on two free T4 '
+                             'GPUs and the rest on CPU',
+                  'source': 'Bruno Vega ([KVXaHQu32Rw @ 00:07:53])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['The money line is drawn in the same place by every operator who put a '
+                              'number on it. Daniel of Data Value People tells teams to stay on '
+                              'third-party APIs below £10k a month, treat anything above £100k a month as '
+                              '"a pretty strong push to start self-hosting," and call the band in between '
+                              'a judgment call [WiA5Hm6IpZs @ 00:13:30]. The trigger for even reopening '
+                              'the question is failed SLOs or roughly £30k a month, and Daniel is blunt '
+                              'that "that\'s the trigger to start thinking about it, not to start doing '
+                              'it" [WiA5Hm6IpZs @ 00:23:47]. Jono Finds lands inside that band: under 20k '
+                              'a month, run the managed gateway; regulated, air-gapped, or high-spend '
+                              'shops self-host [XZPNjgJ4E0c @ 00:05:13]. Mariselle Hartwell frames the '
+                              'same split as stage and risk, pointing weekend projects at the marketplace '
+                              'and pushing teams that need RBAC, team budgets, audit logs, PII redaction, '
+                              'or data residency toward heavier routing [pa2rbXDnUYM @ 00:02:48]. '
+                              'Compliance is the one axis where the scales tip hard: Daniel says it always '
+                              'favors self-hosting and that a criminal-defense firm had to self-host '
+                              'because of legal privilege, while CodeFlow Daily warns that "compliance is '
+                              'not a label on the model" and lives in org settings, contracts, and '
+                              'platform boundaries [WT00OA0ml2g @ 00:00:57].',
+                              'Across the gateway camp, nobody argues about the shape of the stack: one '
+                              'OpenAI-compatible endpoint in front of many backends, with money and '
+                              'failure policy enforced in the middle. Professor Py calls the LiteLLM proxy '
+                              '"a router with a wallet and a clock," and names the price plainly as one '
+                              'extra network hop plus upfront configuration [2nHPifw-TkE @ 00:01:20]. '
+                              'Ready Tensor wires GPT-4o, 4o-mini, and a vLLM summarizer running on Modal '
+                              'behind arbitrary alias names through an OpenAI-compatible base URL, so the '
+                              'client never knows which box answered [9t-W51EHgzY @ 00:02:14]. Yeyu Lab '
+                              'shows the same compatibility on the marketplace side, dropping OpenRouter '
+                              'into AutoGen 0.2.2 and into CrewAI via LangChain through an '
+                              'OpenAI-compatible client, for under one cent of total spend [opR3LozV3NM @ '
+                              '00:04:27]. The fallback is the part everyone leans on. Prompt Engineer 48 '
+                              'ran the same request with fallbacks on and got an answer, then with '
+                              'fallbacks off and got a 404, which makes resilience a configuration choice '
+                              'rather than a property of the platform [FpNPRj38T6s @ 00:07:28]. The shared '
+                              'prerequisite is discipline before rollout: Professor Py insists latency and '
+                              'policy get tested first, measured against a capped max-tokens baseline '
+                              '[2nHPifw-TkE @ 00:07:05].',
+                              'On cheap hardware the agreement is harsher: fitting a model is not running '
+                              'it. Byte Forensics draws the line flatly, separating placement from '
+                              'performance and warning that mmap and the page cache are not VRAM, so a '
+                              'model that loads off NVMe can still crawl [ux5n4VAhUNU @ 00:02:52]. Remy '
+                              'Runs puts numbers on why: a 3090 has roughly 4.5 times the bandwidth of '
+                              'eight-channel DDR4, and Optane reads around 8 GB/s while running about '
+                              'three times slower on random reads [o6WzuMA5VL8 @ 00:06:21], which is why a '
+                              'RAM-disk tweak alone made the 2.8-trillion-parameter Kimi K3 rig 41 percent '
+                              'faster. Cian Mag hit the same wall horizontally: four ThinkPad L380 boards '
+                              'on 2.5GbE ran Qwen3-Next-80B-A3B over llama.cpp RPC at 4 to 5 tokens per '
+                              'second, and adding the fourth node made the cluster slower than three '
+                              'because every extra machine is one more box the rest have to wait for '
+                              "[kgSARM9iGF4 @ 00:05:47]. Bruno Vega's free Kaggle build only works because "
+                              'the Strata engine parks about 72 percent of experts on the two T4s, leaves '
+                              'the rest in RAM on three CPU threads, and keeps the 28.8GB N-gram table on '
+                              'disk [KVXaHQu32Rw @ 00:04:57]. Placement is the whole game.'],
+               'table': {'caption': 'Where the routing, self-hosting, and cheap-hardware operators agree',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Reported',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Monthly spend decides the rent-versus-own question first',
+                                   'Stay third-party under £10k a month, strong push to self-host above '
+                                   '£100k',
+                                   'Profile real load and price it before buying any GPU capacity',
+                                   'Data Science Festival ([WiA5Hm6IpZs @ 00:13:30])'],
+                                  ['Managed gateway wins at small and early-stage volumes',
+                                   'Under 20k a month use the managed option; regulated or air-gapped '
+                                   'shops self-host',
+                                   'Do not stand up infrastructure before spend or regulation forces it',
+                                   'Jono Finds ([XZPNjgJ4E0c @ 00:05:13])'],
+                                  ['Compliance and legal privilege override the spend math',
+                                   'Compliance always favors self-hosting; criminal-defense privilege made '
+                                   'self-hosting mandatory for that application',
+                                   'Regulated workloads skip the cost debate and go straight to owned '
+                                   'inference',
+                                   'Data Science Festival ([WiA5Hm6IpZs @ 00:17:46])'],
+                                  ['The proxy is a control plane, not free latency',
+                                   'LiteLLM proxy is a router with a wallet and a clock, costing one extra '
+                                   'network hop',
+                                   'Benchmark latency and policy enforcement before routing production '
+                                   'traffic through it',
+                                   'Professor Py: AI Engineering ([2nHPifw-TkE @ 00:01:20])'],
+                                  ['Fallback resilience exists only when it is switched on',
+                                   'Fallbacks on still returned an answer; fallbacks off returned a 404 '
+                                   'error',
+                                   'Explicitly enable fallbacks and verify which providers are allowed per '
+                                   'model',
+                                   'Prompt Engineer 48 ([FpNPRj38T6s @ 00:07:28])'],
+                                  ['Fitting a model is different from running it efficiently',
+                                   'mmap and page cache are not VRAM; heavy swapping makes workloads '
+                                   'unresponsive',
+                                   'Measure launch-to-ready time, time to first token, and tokens per '
+                                   'second',
+                                   'Byte Forensics ([ux5n4VAhUNU @ 00:02:52])'],
+                                  ['Adding more weak nodes can make clusters slower',
+                                   'The fourth ThinkPad node ran slower than three because of 2.5GbE '
+                                   'network overhead',
+                                   'Stop scaling nodes once network transfer becomes the dominant '
+                                   'bottleneck',
+                                   'Cian Mag ([kgSARM9iGF4 @ 00:05:47])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The LiteLLM drill is concrete. Professor Py measures a latency baseline '
+                              'with a capped max-tokens call, then hits /key_generate to mint a virtual '
+                              'key with a $0.5 max budget, 1 request per minute, and 2,000 tokens per '
+                              'minute [2nHPifw-TkE @ 00:03:00]. A two-request burst proves the limiter by '
+                              'counting 429s, a call to bad.model proves the fallback by landing on '
+                              'GPT-4o-mini, and /key_info returns spend so remaining budget is simply max '
+                              'budget minus spend. Ready Tensor runs the proxy in Docker on port 4000 with '
+                              'an admin/admin login and a Postgres backend, sets budget blocking with a '
+                              'Slack alert at 80 percent, and hands a virtual key a $500 budget '
+                              '[9t-W51EHgzY @ 00:06:18]. Using deliberately absurd test pricing of $1 per '
+                              'input token and $2 per output token, a test of 41 prompt tokens and 39 '
+                              'completion tokens priced out at $119, and the request that crossed $500 '
+                              'still went through before the next one bounced with a 400 budget-exceeded '
+                              "error and a Slack ping [9t-W51EHgzY @ 00:12:43]. The LiteLLM team's Auto "
+                              'Router layers heuristics, keyword rules, and a classifier reading the last '
+                              'three turns to send simple prompts to GPT 5.6 Luna, medium to Terra, and '
+                              'reasoning to Claude [blSVb26UQYg @ 00:02:25].',
+                              'On the marketplace side, the levers are routing suffixes and per-token '
+                              'price. After Hugging Face moved LLM routing onto OpenRouter with :fastest, '
+                              ':cheapest, and :provider suffixes and no markup, Prompt Engineer 48 hit a '
+                              '402 on HF credits and ran the test straight through OpenRouter: 180 '
+                              'requests across three models, three modes, and 20 prompts, reading medians '
+                              '[FpNPRj38T6s @ 00:01:27]. On GPT-OSS 120B the default ran 1.87s, cheapest '
+                              'via Venice 3.89s, and fastest via Cerebras 1.34s at 5.6 times the cheapest '
+                              'cost; on Qwen 3.8 27B cheapest crawled to 8.99s with a 22-second tail while '
+                              'fastest hit 1.83s for about 20 percent more money [FpNPRj38T6s @ 00:04:45]. '
+                              'The whole run cost 2.3 cents, with the fastest-to-cheapest price ratio '
+                              'spanning 1.3 to 8 times, and Venice was serving Int4 while Cerebras served '
+                              'FP16. Yeyu Lab loaded $5 of credit and logged Llama 13B under 15 cents, '
+                              'Mistral 7B at 27 cents, Yi 34B at 72 cents, and CodeLlama 70B at 81 cents '
+                              'per million tokens at roughly 50 tokens per second, with free 7B models '
+                              'capped at 10 requests per minute [opR3LozV3NM @ 00:03:30]. Jono Finds '
+                              'prices the toll: a 5 percent commission, so 100,000 a month in usage means '
+                              '5,000 a month for routing [XZPNjgJ4E0c @ 00:02:24].',
+                              "Self-hosting mechanics come in three flavors. Daniel's production path is "
+                              'five steps: rent a GPU instance on AWS or GCP, install the NVIDIA Container '
+                              'Toolkit, run one docker run of the vLLM image that pulls the model from '
+                              "Hugging Face, configure security, and repoint the client's base URL "
+                              '[WiA5Hm6IpZs @ 00:27:57]. vLLM then exports time to first token, tokens per '
+                              'second, and KV-cache metrics to Prometheus and Grafana, and KV caching '
+                              'alone is pitched as a 10x to 1000x speedup depending on prompt length. '
+                              "Bruno Vega's free-tier path runs on Kaggle's two T4s, 16GB each, with 29GB "
+                              'of RAM, 12-hour sessions, and roughly 30 GPU-hours a week, pushing 26.6 to '
+                              '30.1 tokens per second at IQ2XS, worth about $1.50 a week across 3.24M '
+                              'tokens [KVXaHQu32Rw @ 00:14:53]. Remy Runs shows flags are money: the '
+                              '-cpu-moe switch took GPT-OSS 120B from under 1 to about 10 tokens per '
+                              'second [o6WzuMA5VL8 @ 00:10:33]. Duality Technologies wraps the '
+                              'confidential version: encrypt the serving image into your own bucket, store '
+                              'key and digest in your secret manager as the trust anchor, boot a '
+                              'confidential H100 TEE, and release weights only after attestation '
+                              '[nXTWdWFiGvM @ 00:01:00]. Only CPU, GPU, and memory samples leave the '
+                              'enclave each minute.'],
+               'table': {'caption': 'Exact tools, configurations, and measured numbers from the operators',
+                         'headers': ['Tool / Setup',
+                                     'Exact Configuration or Price',
+                                     'Measured Result',
+                                     'Expert Source'],
+                         'rows': [['LiteLLM virtual key rate-limit and fallback test',
+                                   '/key_generate with $0.5 max budget, RPM 1, TPM 2,000',
+                                   'Two-request burst counted 429s; bad.model fell back to GPT-4o-mini',
+                                   'Professor Py: AI Engineering ([2nHPifw-TkE @ 00:03:00])'],
+                                  ['LiteLLM proxy with Postgres budget enforcement',
+                                   'Docker on port 4000, $500 virtual key budget, Slack alert at 80 '
+                                   'percent',
+                                   'Crossing request succeeded; next request returned 400 budget exceeded '
+                                   'with Slack alert',
+                                   'Ready Tensor ([9t-W51EHgzY @ 00:12:43])'],
+                                  ['OpenRouter GPT-OSS 120B routing mode comparison',
+                                   'Default versus :cheapest Venice versus :fastest Cerebras suffix '
+                                   'routing',
+                                   '1.87s default, 3.89s cheapest, 1.34s fastest at 5.6x cost',
+                                   'Prompt Engineer 48 ([FpNPRj38T6s @ 00:03:34])'],
+                                  ['OpenRouter paid open-weight model pricing',
+                                   'Llama 13B under 15 cents, CodeLlama 70B 81 cents per million tokens',
+                                   'Roughly 50 tokens per second on $5 of prepaid credit',
+                                   'Yeyu Lab ([opR3LozV3NM @ 00:03:30])'],
+                                  ['Kaggle T4 x2 running the Strata engine',
+                                   'IQ2XS experts 35.45GB, 17,702 experts on GPU, three CPU threads',
+                                   '26.6 to 30.1 tokens per second, about 6s to first token',
+                                   'Bruno Vega ([KVXaHQu32Rw @ 00:07:53])'],
+                                  ['vLLM container on a rented cloud GPU',
+                                   'One docker run of the vLLM image plus NVIDIA Container Toolkit install',
+                                   'Prometheus and Grafana track TTFT, tokens per second, and KV cache',
+                                   'Data Science Festival ([WiA5Hm6IpZs @ 00:27:57])'],
+                                  ['Two used RTX 3090s plus Optane storage',
+                                   'Kimi K3 at 2.8T total, 104B active, shipped at 4-bit',
+                                   'About 3 tokens per second; RAM-disk tweak made it 41 percent faster',
+                                   'Remy Runs ([o6WzuMA5VL8 @ 00:01:32])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small settings that move latency, spend, and exposure',
+                           'body': 'These are the operator-level adjustments the practitioners flagged '
+                                   'after running gateways and free-tier hardware under real load.',
+                           'items': ['Lock the gateway before anything else: the LiteLLM team runs the '
+                                     'Auto Router with drop_params enabled and a strong master key '
+                                     '[LiteLLM AI Gateway — blSVb26UQYg @ 00:03:44].',
+                                     'Choose the routing suffix on purpose: on Qwen 3.8 27B, :fastest cut '
+                                     'median latency from 8.99s on :cheapest to 1.83s for about 20 percent '
+                                     'more spend [Prompt Engineer 48 — FpNPRj38T6s @ 00:04:45].',
+                                     'Pick the lean agent harness on slow prefill hardware: the same edit '
+                                     'task took 29.5s through the pi harness versus 92.7s through open '
+                                     'code [Bruno Vega — KVXaHQu32Rw @ 00:14:19].',
+                                     'Eat the cold start once: the first Kaggle boot took 1,097s, 840s of '
+                                     'it downloading 68GB, so cache the weights to a ~80GB private dataset '
+                                     '[Bruno Vega — KVXaHQu32Rw @ 00:11:32].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Profile real load on APIs first',
+                              'action': 'Prototype on third-party APIs and record a capped max-tokens '
+                                        'latency baseline before touching hardware.',
+                              'detail': 'Daniel prototypes on APIs unless compliance blocks it and '
+                                        'profiles real load first, revisiting only if SLOs fail or cost '
+                                        'nears £30k a month [Data Science Festival — WiA5Hm6IpZs @ '
+                                        '00:23:00]; Professor Py records the latency baseline with a '
+                                        'capped max-tokens request [Professor Py: AI Engineering — '
+                                        '2nHPifw-TkE @ 00:02:03].'},
+                             {'step': 2,
+                              'title': 'Stand up the proxy with keyed budgets',
+                              'action': 'Run the LiteLLM proxy in Docker with a Postgres backend, budget '
+                                        'blocking, an 80 percent Slack alert, and per-key budgets.',
+                              'detail': 'Ready Tensor runs Docker on port 4000, issues a virtual key with '
+                                        'a $500 budget, and alerts to Slack at 80 percent, noting that the '
+                                        'crossing request still succeeds before the 400 block lands [Ready '
+                                        'Tensor — 9t-W51EHgzY @ 00:06:18].'},
+                             {'step': 3,
+                              'title': 'Set routing mode and fallbacks deliberately',
+                              'action': 'Confirm billing, enabled providers, and the routing mode, then '
+                                        'switch fallbacks on and verify them.',
+                              'detail': 'Prompt Engineer 48 advises checking billing and enabled providers '
+                                        'and picking :fastest or :cheapest deliberately, after seeing '
+                                        'fallbacks-off requests return a 404 [Prompt Engineer 48 — '
+                                        'FpNPRj38T6s @ 00:09:12].'},
+                             {'step': 4,
+                              'title': 'Self-host on vLLM only after the trigger fires',
+                              'action': 'Rent a GPU, install the NVIDIA Container Toolkit, launch the vLLM '
+                                        'image, secure it, repoint the base URL, and wire Prometheus and '
+                                        'Grafana.',
+                              'detail': "Daniel's five-step vLLM setup ends with changing the client's "
+                                        'base URL, with TTFT, tokens per second, and KV-cache metrics '
+                                        'exported to Prometheus and Grafana [Data Science Festival — '
+                                        'WiA5Hm6IpZs @ 00:27:57].'}]},
+              {'section_number': 3,
+               'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The loudest split is over what the gateways actually are and who should run '
+                              'one. TWiz frames OpenRouter as open-source and community-driven, and frames '
+                              'LiteLLM as a lightweight on-premise engine that runs models locally, best '
+                              'for strict compliance needs and restricted networks [NwDtEKBC_uo @ '
+                              '00:00:16]. Jono Finds describes the opposite stack. In that version, '
+                              'OpenRouter is a managed, closed-source marketplace with 300+ models across '
+                              '60+ providers that charges a 5% commission forever. LiteLLM is free '
+                              'software you host yourself, either as a library or as a proxy with a '
+                              'database, per-key budgets, per-team cost tracking, RBAC and guardrails '
+                              '[XZPNjgJ4E0c @ 00:03:14]. Only the Jono Finds version comes with hard '
+                              'numbers: at 100,000 a month in usage you pay 5,000 a month, or 60,000 a '
+                              'year, purely for routing [XZPNjgJ4E0c @ 00:02:24]. Mariselle Hartwell adds '
+                              'a third lane between the two. It is an enterprise router clocked at 8ms '
+                              'versus 55ms latency, with PII redaction and data residency, which matters '
+                              'for agents making 50 calls. Hartwell pitches the marketplace as a '
+                              'five-minute weekend-project setup with no RBAC, team budgets or audit logs '
+                              '[pa2rbXDnUYM @ 00:01:19]. The verdict is not a single winner: pick by stage '
+                              'and risk [pa2rbXDnUYM @ 00:02:48].',
+                              'The break-even line for leaving third-party APIs moves depending on who '
+                              'draws it. Daniel of Data Value People, speaking at Data Science Festival, '
+                              'says to stay third-party under £10k a month, to treat anything over £100k '
+                              "as a strong push to self-host, and to call everything in between 'it "
+                              "depends' [WiA5Hm6IpZs @ 00:13:30]. Daniel stacks the costs plainly. GPUs "
+                              'run £1-10k a month, and an ML engineer at £800 a day is about £16k a month. '
+                              'Daniel also warns that third-party prices may be VC-subsidized. Jono Finds '
+                              'puts the managed-gateway ceiling at 20k a month, which lands inside that '
+                              'band, and sends regulated, air-gapped or high-spend shops to self-hosting '
+                              '[XZPNjgJ4E0c @ 00:05:13]. Remy Runs comes at the same question from the '
+                              'hardware side and lands on renting. Kimi K3 costs roughly $15 per million '
+                              'output tokens through an API, against 89 hours of grinding on the Optane '
+                              "box to produce the same output [o6WzuMA5VL8 @ 00:26:57]. Daniel's own "
+                              'trigger is deliberately cautious: reconsider only when SLOs fail or spend '
+                              "reaches about £30k a month. In Daniel's words, that is 'the trigger to "
+                              "start thinking about it, not to start doing it' [WiA5Hm6IpZs @ 00:23:47].",
+                              "Inside the routers, 'cheapest' and 'fastest' are different bets. Prompt "
+                              'Engineer 48 ran 180 requests through OpenRouter, covering 3 models in 3 '
+                              'modes with 20 prompts each. Cheapest-mode Venice served GPT-OSS 120B at a '
+                              '3.89s median, against 1.34s on fastest-mode Cerebras, which cost 5.6x more '
+                              '[FpNPRj38T6s @ 00:03:34]. On Qwen 3.8 27B, fastest came in at 1.83s for '
+                              'only about 20% more cost, while cheapest dragged to 8.99s with a 22s tail. '
+                              'Venice serves Int4 while Cerebras serves FP16, and answer quality was never '
+                              "graded. Prompt Engineer 48's closing advice is to check billing, check "
+                              'enabled providers, and pick a mode deliberately. LiteLLM AI Gateway skips '
+                              'the provider auction and routes by prompt difficulty instead. A heuristic '
+                              "runs first, then keyword rules such as 'security review' or 'incident' "
+                              'force the complex tier, then an LLM classifier reads the last 3 turns. '
+                              'Session renaming gets pushed to the cheapest tier [blSVb26UQYg @ 00:02:25]. '
+                              'On self-hosted hardware, the no-GPU answers diverge just as sharply. Cian '
+                              'Mag chains four broken ThinkPads over llama.cpp RPC for 4-5 tok/s on an 80B '
+                              'model [kgSARM9iGF4 @ 00:05:00]. Bruno Vega squeezes a ~180B model onto free '
+                              'Kaggle T4s at 26.6-33.2 tok/s [KVXaHQu32Rw @ 00:07:53].'],
+               'table': {'caption': 'Side-by-side playbooks where practitioners split on gateways, '
+                                    'routing, thresholds and privacy',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['What OpenRouter and LiteLLM actually are',
+                                   'OpenRouter is open-source and community-driven; LiteLLM runs models '
+                                   'locally on-premise with low overhead',
+                                   'OpenRouter is a managed closed-source marketplace; LiteLLM is a free '
+                                   'self-hosted proxy with budgets and RBAC',
+                                   'TWiz ([NwDtEKBC_uo @ 00:00:16]); Jono Finds ([XZPNjgJ4E0c @ '
+                                   '00:03:14])'],
+                                  ['How you pay for routing',
+                                   'Managed marketplace takes a 5% commission forever, so 100k monthly '
+                                   'usage costs 5k monthly',
+                                   'Self-hosted software is free, but you own the database, caching, '
+                                   'patching and attack surface',
+                                   'Jono Finds ([XZPNjgJ4E0c @ 00:02:24]); Mariselle Hartwell '
+                                   '([pa2rbXDnUYM @ 00:01:57])'],
+                                  ['Gateway latency overhead per call',
+                                   'Managed gateway adds 25-40ms; the speed-focused enterprise router '
+                                   'clocks 8ms versus 55ms',
+                                   'Self-hosted adds under 1ms, but a badly configured self-hosted gateway '
+                                   'can add more latency',
+                                   'Jono Finds ([XZPNjgJ4E0c @ 00:06:22]); Mariselle Hartwell '
+                                   '([pa2rbXDnUYM @ 00:01:19])'],
+                                  ['Provider selection inside one model',
+                                   'Cheapest suffix sent GPT-OSS 120B to Venice Int4 at a 3.89s median '
+                                   'latency',
+                                   'Fastest suffix sent it to Cerebras FP16 at 1.34s for 5.6x the cost',
+                                   'Prompt Engineer 48 ([FpNPRj38T6s @ 00:03:34])'],
+                                  ['Routing by provider versus by prompt difficulty',
+                                   'Marketplace routing options are fastest, cheapest or auto with '
+                                   'automatic failover across providers',
+                                   'Auto Router sends simple prompts to GPT 5.6 Luna, medium to Terra, and '
+                                   'complex reasoning to Claude',
+                                   'Jono Finds ([XZPNjgJ4E0c @ 00:01:36]); LiteLLM AI Gateway '
+                                   '([blSVb26UQYg @ 00:01:51])'],
+                                  ['Monthly spend threshold for self-hosting',
+                                   'Stay third-party under £10k monthly, strong push to self-host over '
+                                   '£100k monthly',
+                                   'Use the managed gateway under 20k monthly; regulated, air-gapped or '
+                                   'high spend should self-host',
+                                   'Data Science Festival ([WiA5Hm6IpZs @ 00:13:30]); Jono Finds '
+                                   '([XZPNjgJ4E0c @ 00:05:13])'],
+                                  ['Keeping prompts private without owning the GPUs',
+                                   'Compliance always favors self-hosting; a criminal defense firm must '
+                                   'self-host for legal privilege',
+                                   'Run frontier models inside a confidential H100 TEE, pushing weights '
+                                   'only after attestation succeeds',
+                                   'Data Science Festival ([WiA5Hm6IpZs @ 00:16:01]); Duality Technologies '
+                                   '([nXTWdWFiGvM @ 00:02:38])']]}},
+              {'section_number': 4,
+               'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The gateway layer fails in quiet, billable ways. Ready Tensor set a $500 '
+                              'budget on a LiteLLM virtual key and watched the request that crossed the '
+                              "line still succeed. Only the next call returned a 400 'budget exceeded' "
+                              'error plus a Slack alert, so the overshoot lands on you [9t-W51EHgzY @ '
+                              "00:12:43]. Jono Finds lists the self-hosted proxy's operational debt. "
+                              'Import time runs 3-4 seconds, which hurts serverless. The database degrades '
+                              'after 1M entries, and at 100,000 requests a day that threshold arrives in '
+                              '10 days. The dashboard dies when you disable logging. A September 2025 '
+                              'release caused memory failures, and a founder advised avoiding it '
+                              '[XZPNjgJ4E0c @ 00:04:07]. On the managed side, Jono Finds flags credits '
+                              'that expire after a year, failed free-tier requests that still count '
+                              'against the limit, and agentic workflows that produce surprise bills '
+                              "[XZPNjgJ4E0c @ 00:02:24]. Mariselle Hartwell's sharpest warning is about "
+                              'security. Hartwell cites a credential-harvesting compromise and says that '
+                              'self-hosting the open-source router means you own the attack surface, '
+                              'including the database, caching and patching [pa2rbXDnUYM @ 00:01:57].',
+                              'Cheap hardware breaks at the slowest link. Cian Mag added a fourth laptop '
+                              'to the llama.cpp RPC cluster and got slower output than with three, because '
+                              "2.5GbE moves only about 312 MB/s. In Cian Mag's words: 'Otherwise, you're "
+                              "adding another machine that the rest of the cluster has to wait for' "
+                              '[kgSARM9iGF4 @ 00:07:10]. Cian Mag also calls the RPC backend fragile and '
+                              'insecure, keeps it off open networks, and admits to having no verified '
+                              'power or cost data [kgSARM9iGF4 @ 00:08:36]. Byte Forensics attacks the '
+                              'NVMe-offload pitch directly. Fitting a model is not the same as running it '
+                              'efficiently, mmap and the page cache are not VRAM, and heavy swapping makes '
+                              'the workload unresponsive [ux5n4VAhUNU @ 00:02:52]. Remy Runs confirms the '
+                              'bandwidth math on a live rig. A 3090 has roughly 4.5x the bandwidth of '
+                              '8-channel DDR4, and Optane reads around 8 GB/s and is about 3x slower on '
+                              'random reads. A 32K-token prefill took over a minute, stretching to about '
+                              '2.5 minutes over Thunderbolt [o6WzuMA5VL8 @ 00:12:04]. Remy also found that '
+                              'a single flag, -cpu-moe, was the difference between under 1 and about 10 '
+                              'tok/s on GPT-OSS 120B. Supply is turning against the build too: Optane is '
+                              'end-of-life, and DRAM contract prices rose about 90% in a quarter.',
+                              "Free and cheap endpoints collapse under agent traffic. Bruno Vega's Kaggle "
+                              'server faces GPU queues over 15 minutes and a 32K context cap. Agent '
+                              'harnesses send 8-30K tokens up front, about 85 seconds of prefill, while '
+                              'the Cloudflare tunnel cuts requests at 100 seconds [KVXaHQu32Rw @ '
+                              '00:12:40]. Tooling mattered: the same edit task took 29.5s through the pi '
+                              "harness versus 92.7s through open code. Kaggle's AUP also lists server "
+                              'farming as abuse, so multiple accounts are out, and prompts pass through '
+                              "Google and Cloudflare [KVXaHQu32Rw @ 00:16:09]. Bruno's own value math is "
+                              'blunt: 3.24M tokens a week is worth about $1.50 at $0.15/$0.47 per million. '
+                              'Daniel at Data Science Festival warns that third-party providers change '
+                              'models silently. Daniel adds that 99% uptime means about 7 hours of down or '
+                              'degraded time a month [WiA5Hm6IpZs @ 00:15:26]. CodeFlow Daily maps the '
+                              'compliance traps that blindside teams who assume a vendor setting covers '
+                              'them. ZDR does not carry over to new orgs. The HIPAA setting is permanent '
+                              'and returns HTTP 400 on non-eligible features. Cached schemas lack PHI '
+                              'protection. Claude Code cloud sessions, mobile and gateways all sit outside '
+                              'HIPAA coverage [WT00OA0ml2g @ 00:15:31].'],
+               'table': {'caption': 'Firsthand failures, bottlenecks and economics checks reported by the '
+                                    'practitioners',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check or Fix',
+                                     'Expert Source'],
+                         'rows': [['Budget cap lets one request overshoot',
+                                   'The request crossing the $500 key budget still succeeded before '
+                                   'blocking started',
+                                   'Next call returned 400 budget exceeded plus Slack alert; the 80% alert '
+                                   'fires earlier',
+                                   'Ready Tensor ([9t-W51EHgzY @ 00:12:43])'],
+                                  ['Serverless backend cold start behind proxy',
+                                   'Modal cold start on the vLLM summarizer triggered a hanging request '
+                                   'Slack alert',
+                                   'Expect first-call stalls from scaled-to-zero backends and watch the '
+                                   'hanging-request alerts',
+                                   'Ready Tensor ([9t-W51EHgzY @ 00:11:02])'],
+                                  ['Rate limits and fallbacks untested before rollout',
+                                   'Key with RPM 1 and TPM 2,000 returned 429s on a burst of 2 requests',
+                                   'Request bad.model with fallback to GPT-4o-mini, and test latency and '
+                                   'policy before rollout',
+                                   'Professor Py: AI Engineering ([2nHPifw-TkE @ 00:07:05])'],
+                                  ['Provider fallbacks switched off',
+                                   'With fallbacks off the request returned a 404; with fallbacks on it '
+                                   'still answered',
+                                   'Total test spend was 2.3 cents across 180 requests, so cheap to verify '
+                                   'first',
+                                   'Prompt Engineer 48 ([FpNPRj38T6s @ 00:07:28])'],
+                                  ['Adding nodes to a CPU laptop cluster',
+                                   'The fourth ThinkPad node made the 80B model slower than three nodes',
+                                   '2.5GbE moves about 312 MB/s, so network overhead outweighs added RAM '
+                                   'and compute',
+                                   'Cian Mag ([kgSARM9iGF4 @ 00:05:47])'],
+                                  ['Running weights off NVMe and swap',
+                                   'Heavy swapping made the local AI workload unresponsive during offload '
+                                   'testing',
+                                   'Price any upgrade against the bottleneck you actually measured, not '
+                                   'the spec sheet',
+                                   'Byte Forensics ([ux5n4VAhUNU @ 00:10:45])'],
+                                  ['Free models and free GPU sessions under real load',
+                                   'Free 7B models capped at 10 requests per minute could not orchestrate '
+                                   'AutoGen or CrewAI agents',
+                                   'Kaggle cold start took 1,097s with 840s downloading 68GB, so weights '
+                                   'get cached to a private dataset',
+                                   'Yeyu Lab ([opR3LozV3NM @ 00:04:27]); Bruno Vega ([KVXaHQu32Rw @ '
+                                   '00:11:32])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before routing production tokens or self-hosting',
+                           'body': 'Each check comes from a failure a practitioner hit or measured '
+                                   'firsthand. Clear all four before you move real traffic or real money.',
+                           'items': ['Keep llama.cpp RPC nodes off open networks. The backend is fragile '
+                                     'and insecure, and there is no verified power or cost data for the '
+                                     'laptop cluster [Cian Mag — kgSARM9iGF4 @ 00:08:36].',
+                                     'Assume one request will overshoot any LiteLLM key budget. Only the '
+                                     "call after the $500 line gets the 400 'budget exceeded' error [Ready "
+                                     'Tensor — 9t-W51EHgzY @ 00:12:43].',
+                                     'Measure launch-to-ready time, TTFT and tok/s, cold versus warm, '
+                                     'before paying for faster SSDs or more RAM [Byte Forensics — '
+                                     'ux5n4VAhUNU @ 00:10:45].',
+                                     'For confidential inference, attest every new serving image before '
+                                     'releasing weights, and roll back on failure. The audit log carries '
+                                     'no prompts [Duality Technologies — nXTWdWFiGvM @ 00:04:03].']}}],
+ 'pull_quote': '"You don\'t need to fit the model, you need to feed the slice." — Remy Runs (o6WzuMA5VL8 @ '
+               '00:29:40).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Capture a latency baseline with a capped max-tokens request. Then call '
+                      '/key_generate with a $0.5 max budget, RPM 1 and TPM 2,000, and fire a 2-request '
+                      'burst to count the 429s [Professor Py: AI Engineering — 2nHPifw-TkE @ 00:03:00].',
+                      'Back the LiteLLM proxy with Postgres, turn on budget blocking, and wire a Slack '
+                      'alert at 80% of budget before handing out virtual keys [Ready Tensor — 9t-W51EHgzY '
+                      '@ 00:04:56].',
+                      'Before sending traffic, check billing and enabled providers and pick :fastest, '
+                      ':cheapest or :provider deliberately. The fastest/cheapest cost ratio ran from 1.3x '
+                      'to 8x [Prompt Engineer 48 — FpNPRj38T6s @ 00:09:12].',
+                      'Prototype on APIs unless compliance blocks it and profile real load first. Revisit '
+                      'self-hosting only when SLOs fail or spend nears £30k a month [Data Science Festival '
+                      '— WiA5Hm6IpZs @ 00:23:00].',
+                      'Stand up self-hosted inference in five steps: rent a GPU instance, install the '
+                      'NVIDIA Container Toolkit, run the vLLM image with one docker run, configure '
+                      'security, and switch the client base URL [Data Science Festival — WiA5Hm6IpZs @ '
+                      '00:27:57].',
+                      'Test offload in three scenarios (max GPU placement, reduced placement, and disk '
+                      'offload) and record launch-to-ready, TTFT and tok/s for each [Byte Forensics — '
+                      'ux5n4VAhUNU @ 00:06:16].'],
+ 'statutory_citations': [{'title': 'Jono Finds — OpenRouter vs LiteLLM: Pay 5% or Host It Yourself? (2026) '
+                                   '[00:02:24]',
+                          'url': 'https://www.youtube.com/watch?v=XZPNjgJ4E0c&t=144s',
+                          'relevance': 'Primary practitioner testimony on the 5% managed-routing '
+                                       'commission versus self-hosted LiteLLM operational debt.'},
+                         {'title': 'Data Science Festival — Self Hosted LLMs: Running Your Own Inference '
+                                   'Infrastructure [00:13:47]',
+                          'url': 'https://www.youtube.com/watch?v=WiA5Hm6IpZs&t=827s',
+                          'relevance': 'Primary practitioner testimony on monthly spend thresholds for '
+                                       'moving from third-party APIs to self-hosted inference.'},
+                         {'title': 'Duality Technologies — Confidential LLM Inference: Run Frontier Models '
+                                   'Without Seeing Prompts [00:02:38]',
+                          'url': 'https://www.youtube.com/watch?v=nXTWdWFiGvM&t=158s',
+                          'relevance': 'Primary practitioner testimony on attested confidential H100 TEE '
+                                       'deployment with weights released only after attestation.'},
+                         {'title': 'Remy Runs — I Ran a 2.8 Trillion AI on Two Used RTX 3090s (Did NOT '
+                                   'Expect This) [00:26:57]',
+                          'url': 'https://www.youtube.com/watch?v=o6WzuMA5VL8&t=1617s',
+                          'relevance': 'Primary practitioner testimony on renting tokens at about $15 per '
+                                       'million versus 89 hours on a used-hardware Optane rig.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'KVXaHQu32Rw',
+                       'title': "Don't Buy a GPU Instead Build This 32GB Free AI Server Instead",
+                       'channel': 'Bruno Vega',
+                       'author': 'Bruno Vega',
+                       'text': 'Agent harnesses send 8 to 30K tokens up front, about 85 seconds of '
+                               'prefill, and Cloudflare cuts requests at 100 seconds.',
+                       'tip': 'Agent harnesses send 8 to 30K tokens up front, about 85 seconds of prefill, '
+                              'and Cloudflare cuts requests at 100 seconds.',
+                       'timestamp': 760,
+                       'timestamp_seconds': 760,
+                       'timestamp_label': '[00:12:40]',
+                       'url': 'https://www.youtube.com/watch?v=KVXaHQu32Rw&t=760s',
+                       'markdown': '[00:12:40](https://www.youtube.com/watch?v=KVXaHQu32Rw&t=760s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pa2rbXDnUYM',
+                       'title': 'OpenRouter vs Requesty vs LiteLLM Review 2026: API Routing Comparison & '
+                                'My Experience Overview',
+                       'channel': 'Mariselle Hartwell',
+                       'author': 'Mariselle Hartwell',
+                       'text': 'With the open-source option you manage the database, caching and patching, '
+                               'and self-hosting means you own the attack surface.',
+                       'tip': 'With the open-source option you manage the database, caching and patching, '
+                              'and self-hosting means you own the attack surface.',
+                       'timestamp': 117,
+                       'timestamp_seconds': 117,
+                       'timestamp_label': '[00:01:57]',
+                       'url': 'https://www.youtube.com/watch?v=pa2rbXDnUYM&t=117s',
+                       'markdown': '[00:01:57](https://www.youtube.com/watch?v=pa2rbXDnUYM&t=117s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2nHPifw-TkE',
+                       'title': 'LiteLLM Proxy in Python: Routing, Rate Limits, Budgets, and Fallbacks',
+                       'channel': 'Professor Py: AI Engineering',
+                       'author': 'Professor Py: AI Engineering',
+                       'text': 'The proxy is a router with a wallet and a clock, and the trade-off is one '
+                               'extra network hop plus upfront configuration.',
+                       'tip': 'The proxy is a router with a wallet and a clock, and the trade-off is one '
+                              'extra network hop plus upfront configuration.',
+                       'timestamp': 80,
+                       'timestamp_seconds': 80,
+                       'timestamp_label': '[00:01:20]',
+                       'url': 'https://www.youtube.com/watch?v=2nHPifw-TkE&t=80s',
+                       'markdown': '[00:01:20](https://www.youtube.com/watch?v=2nHPifw-TkE&t=80s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9t-W51EHgzY',
+                       'title': 'LiteLLM Proxy Tutorial: Track Costs, Budgets, and Multi-Provider LLM '
+                                'Usage',
+                       'channel': 'Ready Tensor',
+                       'author': 'Ready Tensor',
+                       'text': 'The request that crossed the $500 budget still succeeded, and the next one '
+                               'returned a 400 budget exceeded error plus a Slack alert.',
+                       'tip': 'The request that crossed the $500 budget still succeeded, and the next one '
+                              'returned a 400 budget exceeded error plus a Slack alert.',
+                       'timestamp': 763,
+                       'timestamp_seconds': 763,
+                       'timestamp_label': '[00:12:43]',
+                       'url': 'https://www.youtube.com/watch?v=9t-W51EHgzY&t=763s',
+                       'markdown': '[00:12:43](https://www.youtube.com/watch?v=9t-W51EHgzY&t=763s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FpNPRj38T6s',
+                       'title': 'Cheapest Provider Was 2x SLOWER? WILD Hugging Face + OpenRouter Routing '
+                                'Results',
+                       'channel': 'Prompt Engineer 48',
+                       'author': 'Prompt Engineer 48',
+                       'text': 'On GPT-OSS 120B the default took 1.87 seconds, cheapest Venice took 3.89 '
+                               'seconds, and fastest Cerebras took 1.34 seconds at 5.6 times the cost of '
+                               'cheapest.',
+                       'tip': 'On GPT-OSS 120B the default took 1.87 seconds, cheapest Venice took 3.89 '
+                              'seconds, and fastest Cerebras took 1.34 seconds at 5.6 times the cost of '
+                              'cheapest.',
+                       'timestamp': 214,
+                       'timestamp_seconds': 214,
+                       'timestamp_label': '[00:03:34]',
+                       'url': 'https://www.youtube.com/watch?v=FpNPRj38T6s&t=214s',
+                       'markdown': '[00:03:34](https://www.youtube.com/watch?v=FpNPRj38T6s&t=214s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'opR3LozV3NM',
+                       'title': 'OpenRouter - Use The LLM Inference API with the Lowest Cost',
+                       'channel': 'Yeyu Lab',
+                       'author': 'Yeyu Lab',
+                       'text': 'The free 7B models such as Mistral, Eagle and Zephyr are limited to 10 '
+                               'requests per minute.',
+                       'tip': 'The free 7B models such as Mistral, Eagle and Zephyr are limited to 10 '
+                              'requests per minute.',
+                       'timestamp': 182,
+                       'timestamp_seconds': 182,
+                       'timestamp_label': '[00:03:02]',
+                       'url': 'https://www.youtube.com/watch?v=opR3LozV3NM&t=182s',
+                       'markdown': '[00:03:02](https://www.youtube.com/watch?v=opR3LozV3NM&t=182s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'blSVb26UQYg',
+                       'title': 'LiteLLM Auto Router: Send Each Prompt to the Right Model',
+                       'channel': 'LiteLLM AI Gateway',
+                       'author': 'LiteLLM AI Gateway',
+                       'text': 'Routing runs a heuristic first, then keyword rules like security review or '
+                               'incident going to complex, then an LLM classifier using the last 3 turns '
+                               'with heuristic fallback.',
+                       'tip': 'Routing runs a heuristic first, then keyword rules like security review or '
+                              'incident going to complex, then an LLM classifier using the last 3 turns '
+                              'with heuristic fallback.',
+                       'timestamp': 145,
+                       'timestamp_seconds': 145,
+                       'timestamp_label': '[00:02:25]',
+                       'url': 'https://www.youtube.com/watch?v=blSVb26UQYg&t=145s',
+                       'markdown': '[00:02:25](https://www.youtube.com/watch?v=blSVb26UQYg&t=145s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kgSARM9iGF4',
+                       'title': '4 Broken Laptops Run an 80B AI Model With No GPU (128GB RAM)',
+                       'channel': 'Cian Mag',
+                       'author': 'Cian Mag',
+                       'text': "Otherwise, you're adding another machine that the rest of the cluster has "
+                               'to wait for.',
+                       'tip': "Otherwise, you're adding another machine that the rest of the cluster has "
+                              'to wait for.',
+                       'timestamp': 430,
+                       'timestamp_seconds': 430,
+                       'timestamp_label': '[00:07:10]',
+                       'url': 'https://www.youtube.com/watch?v=kgSARM9iGF4&t=430s',
+                       'markdown': '[00:07:10](https://www.youtube.com/watch?v=kgSARM9iGF4&t=430s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'o6WzuMA5VL8',
+                       'title': 'I Ran a 2.8 Trillion AI on Two Used RTX 3090s (Did NOT Expect This)',
+                       'channel': 'Remy Runs',
+                       'author': 'Remy Runs',
+                       'text': "You don't need to fit the model, you need to feed the slice.",
+                       'tip': "You don't need to fit the model, you need to feed the slice.",
+                       'timestamp': 1780,
+                       'timestamp_seconds': 1780,
+                       'timestamp_label': '[00:29:40]',
+                       'url': 'https://www.youtube.com/watch?v=o6WzuMA5VL8&t=1780s',
+                       'markdown': '[00:29:40](https://www.youtube.com/watch?v=o6WzuMA5VL8&t=1780s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ux5n4VAhUNU',
+                       'title': 'The Fast SSD Offload Myth: Why Running Local AI from NVMe Fails',
+                       'channel': 'Byte Forensics',
+                       'author': 'Byte Forensics',
+                       'text': 'Fitting a model is not the same as running it efficiently.',
+                       'tip': 'Fitting a model is not the same as running it efficiently.',
+                       'timestamp': 172,
+                       'timestamp_seconds': 172,
+                       'timestamp_label': '[00:02:52]',
+                       'url': 'https://www.youtube.com/watch?v=ux5n4VAhUNU&t=172s',
+                       'markdown': '[00:02:52](https://www.youtube.com/watch?v=ux5n4VAhUNU&t=172s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nXTWdWFiGvM',
+                       'title': 'Confidential LLM Inference: Run Frontier Models Without Seeing Prompts',
+                       'channel': 'Duality Technologies',
+                       'author': 'Duality Technologies',
+                       'text': 'CPU, GPU and memory telemetry is sampled once a minute, and that is all '
+                               'that leaves the enclave.',
+                       'tip': 'CPU, GPU and memory telemetry is sampled once a minute, and that is all '
+                              'that leaves the enclave.',
+                       'timestamp': 211,
+                       'timestamp_seconds': 211,
+                       'timestamp_label': '[00:03:31]',
+                       'url': 'https://www.youtube.com/watch?v=nXTWdWFiGvM&t=211s',
+                       'markdown': '[00:03:31](https://www.youtube.com/watch?v=nXTWdWFiGvM&t=211s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UlUCeUlE1j8',
+                       'title': 'Confidential Inference for Neoclouds: Run AI Without Seeing Prompts',
+                       'channel': 'Duality Technologies',
+                       'author': 'Duality Technologies',
+                       'text': 'The same confidential inference workflow runs for a GPU-cloud operator '
+                               'using its own object storage and access key.',
+                       'tip': 'The same confidential inference workflow runs for a GPU-cloud operator '
+                              'using its own object storage and access key.',
+                       'timestamp': 31,
+                       'timestamp_seconds': 31,
+                       'timestamp_label': '[00:00:31]',
+                       'url': 'https://www.youtube.com/watch?v=UlUCeUlE1j8&t=31s',
+                       'markdown': '[00:00:31](https://www.youtube.com/watch?v=UlUCeUlE1j8&t=31s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WiA5Hm6IpZs',
+                       'title': 'Self Hosted LLMs: Running Your Own Inference Infrastructure',
+                       'channel': 'Data Science Festival',
+                       'author': 'Data Science Festival',
+                       'text': "If your cost per month is over 100,000 pounds, that's a pretty strong push "
+                               'to start self-hosting.',
+                       'tip': "If your cost per month is over 100,000 pounds, that's a pretty strong push "
+                              'to start self-hosting.',
+                       'timestamp': 827,
+                       'timestamp_seconds': 827,
+                       'timestamp_label': '[00:13:47]',
+                       'url': 'https://www.youtube.com/watch?v=WiA5Hm6IpZs&t=827s',
+                       'markdown': '[00:13:47](https://www.youtube.com/watch?v=WiA5Hm6IpZs&t=827s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WiA5Hm6IpZs',
+                       'title': 'Self Hosted LLMs: Running Your Own Inference Infrastructure',
+                       'channel': 'Data Science Festival',
+                       'author': 'Data Science Festival',
+                       'text': "That's the trigger to start thinking about it, not to start doing it.",
+                       'tip': "That's the trigger to start thinking about it, not to start doing it.",
+                       'timestamp': 1427,
+                       'timestamp_seconds': 1427,
+                       'timestamp_label': '[00:23:47]',
+                       'url': 'https://www.youtube.com/watch?v=WiA5Hm6IpZs&t=1427s',
+                       'markdown': '[00:23:47](https://www.youtube.com/watch?v=WiA5Hm6IpZs&t=1427s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WT00OA0ml2g',
+                       'title': 'Claude Architect Professional (CCAR-P) Part 11: Compliance, HIPAA, '
+                                'FedRAMP and Ethical AI',
+                       'channel': 'CodeFlow Daily',
+                       'author': 'CodeFlow Daily',
+                       'text': 'Compliance is not a label on the model.',
+                       'tip': 'Compliance is not a label on the model.',
+                       'timestamp': 57,
+                       'timestamp_seconds': 57,
+                       'timestamp_label': '[00:00:57]',
+                       'url': 'https://www.youtube.com/watch?v=WT00OA0ml2g&t=57s',
+                       'markdown': '[00:00:57](https://www.youtube.com/watch?v=WT00OA0ml2g&t=57s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NwDtEKBC_uo',
+                       'title': 'OpenRouter vs LiteLLM Which AI Gateway Should You Use',
+                       'channel': 'TWiz',
+                       'author': 'TWiz',
+                       'text': 'Light LLM, by contrast, emphasizes local deployment, delivering fast '
+                               'inference and strong data privacy by running models on premises.',
+                       'tip': 'Light LLM, by contrast, emphasizes local deployment, delivering fast '
+                              'inference and strong data privacy by running models on premises.',
+                       'timestamp': 154,
+                       'timestamp_seconds': 154,
+                       'timestamp_label': '[00:02:34]',
+                       'url': 'https://www.youtube.com/watch?v=NwDtEKBC_uo&t=154s',
+                       'markdown': '[00:02:34](https://www.youtube.com/watch?v=NwDtEKBC_uo&t=154s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XZPNjgJ4E0c',
+                       'title': 'OpenRouter vs LiteLLM: Pay 5% or Host It Yourself? (2026)',
+                       'channel': 'Jono Finds',
+                       'author': 'Jono Finds',
+                       'text': 'At 100,000 a month in usage, you are paying 5,000 a month for routing.',
+                       'tip': 'At 100,000 a month in usage, you are paying 5,000 a month for routing.',
+                       'timestamp': 144,
+                       'timestamp_seconds': 144,
+                       'timestamp_label': '[00:02:24]',
+                       'url': 'https://www.youtube.com/watch?v=XZPNjgJ4E0c&t=144s',
+                       'markdown': '[00:02:24](https://www.youtube.com/watch?v=XZPNjgJ4E0c&t=144s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XZPNjgJ4E0c',
+                       'title': 'OpenRouter vs LiteLLM: Pay 5% or Host It Yourself? (2026)',
+                       'channel': 'Jono Finds',
+                       'author': 'Jono Finds',
+                       'text': 'A badly configured self-hosted gateway can add more latency than the '
+                               'managed service.',
+                       'tip': 'A badly configured self-hosted gateway can add more latency than the '
+                              'managed service.',
+                       'timestamp': 412,
+                       'timestamp_seconds': 412,
+                       'timestamp_label': '[00:06:52]',
+                       'url': 'https://www.youtube.com/watch?v=XZPNjgJ4E0c&t=412s',
+                       'markdown': '[00:06:52](https://www.youtube.com/watch?v=XZPNjgJ4E0c&t=412s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'}]}

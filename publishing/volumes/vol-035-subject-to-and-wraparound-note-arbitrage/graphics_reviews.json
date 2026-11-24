@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-subject-to-wrap-operating-loop",
-    "diag-02-qualified-seller-to-serviced-wrap-funnel",
-    "diag-03-base-case-retained-revenue-waterfall",
-    "diag-04-subniche-contractual-rate-spreads",
-    "diag-05-wrap-preflight-decision-tree",
-    "diag-06-four-person-core-six-person-scale-pod",
-    "diag-07-startup-capital-four-bucket-allocation",
-    "diag-08-first-thirty-days-operating-sprint"
+    "diag-01-wrap-mechanics-process-flow",
+    "diag-02-due-on-sale-exposure-funnel",
+    "diag-03-tampa-wrap-entry-waterfall",
+    "diag-04-subto-pitch-percentages",
+    "diag-05-hybrid-underwriting-gates",
+    "diag-06-note-buyer-operating-model",
+    "diag-07-seller-finance-vs-bank-entry",
+    "diag-08-partial-sale-roadmap"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-subject-to-wrap-operating-loop",
-    "diag-02-qualified-seller-to-serviced-wrap-funnel",
-    "diag-03-base-case-retained-revenue-waterfall",
-    "diag-04-subniche-contractual-rate-spreads",
-    "diag-05-wrap-preflight-decision-tree",
-    "diag-06-four-person-core-six-person-scale-pod",
-    "diag-07-startup-capital-four-bucket-allocation",
-    "diag-08-first-thirty-days-operating-sprint"
+    "diag-01-wrap-mechanics-process-flow",
+    "diag-02-due-on-sale-exposure-funnel",
+    "diag-03-tampa-wrap-entry-waterfall",
+    "diag-04-subto-pitch-percentages",
+    "diag-05-hybrid-underwriting-gates",
+    "diag-06-note-buyer-operating-model",
+    "diag-07-seller-finance-vs-bank-entry",
+    "diag-08-partial-sale-roadmap"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-subject-to-wrap-operating-loop": {
+    "diag-01-wrap-mechanics-process-flow": {
       "concept_a": {
-        "graphic_id": "diag-01-subject-to-wrap-operating-loop",
+        "graphic_id": "diag-01-wrap-mechanics-process-flow",
         "graphic_type": "diagram",
-        "label": "From Existing Debt to Verified Retained Spread",
+        "label": "The Wrap Machine, From Target List to Servicer",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-subject-to-wrap-operating-loop",
+        "graphic_id": "diag-01-wrap-mechanics-process-flow",
         "graphic_type": "diagram",
-        "label": "From Existing Debt to Verified Retained Spread",
+        "label": "The Wrap Machine, From Target List to Servicer",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-subject-to-wrap-operating-loop",
+        "graphic_id": "diag-01-wrap-mechanics-process-flow",
         "graphic_type": "diagram",
-        "label": "From Existing Debt to Verified Retained Spread",
+        "label": "The Wrap Machine, From Target List to Servicer",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-qualified-seller-to-serviced-wrap-funnel": {
+    "diag-02-due-on-sale-exposure-funnel": {
       "concept_a": {
-        "graphic_id": "diag-02-qualified-seller-to-serviced-wrap-funnel",
+        "graphic_id": "diag-02-due-on-sale-exposure-funnel",
         "graphic_type": "diagram",
-        "label": "One Cohort, Five Measurable Conversion Steps",
+        "label": "Due-on-Sale Exposure, From Deal Samples to Cure Clocks",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-qualified-seller-to-serviced-wrap-funnel",
+        "graphic_id": "diag-02-due-on-sale-exposure-funnel",
         "graphic_type": "diagram",
-        "label": "One Cohort, Five Measurable Conversion Steps",
+        "label": "Due-on-Sale Exposure, From Deal Samples to Cure Clocks",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-qualified-seller-to-serviced-wrap-funnel",
+        "graphic_id": "diag-02-due-on-sale-exposure-funnel",
         "graphic_type": "diagram",
-        "label": "One Cohort, Five Measurable Conversion Steps",
+        "label": "Due-on-Sale Exposure, From Deal Samples to Cure Clocks",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-case-retained-revenue-waterfall": {
+    "diag-03-tampa-wrap-entry-waterfall": {
       "concept_a": {
-        "graphic_id": "diag-03-base-case-retained-revenue-waterfall",
+        "graphic_id": "diag-03-tampa-wrap-entry-waterfall",
         "graphic_type": "diagram",
-        "label": "$475,000 Operator Revenue to $190,000 Owner Profit",
+        "label": "Entry Profit Before the First Wrap Payment",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-case-retained-revenue-waterfall",
+        "graphic_id": "diag-03-tampa-wrap-entry-waterfall",
         "graphic_type": "diagram",
-        "label": "$475,000 Operator Revenue to $190,000 Owner Profit",
+        "label": "Entry Profit Before the First Wrap Payment",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-case-retained-revenue-waterfall",
+        "graphic_id": "diag-03-tampa-wrap-entry-waterfall",
         "graphic_type": "diagram",
-        "label": "$475,000 Operator Revenue to $190,000 Owner Profit",
+        "label": "Entry Profit Before the First Wrap Payment",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-subniche-contractual-rate-spreads": {
+    "diag-04-subto-pitch-percentages": {
       "concept_a": {
-        "graphic_id": "diag-04-subniche-contractual-rate-spreads",
+        "graphic_id": "diag-04-subto-pitch-percentages",
         "graphic_type": "diagram",
-        "label": "Five Sub-Niches, One Consistent Spread Measure",
+        "label": "The Numbers Behind the Subject-To Pitch",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-subniche-contractual-rate-spreads",
+        "graphic_id": "diag-04-subto-pitch-percentages",
         "graphic_type": "diagram",
-        "label": "Five Sub-Niches, One Consistent Spread Measure",
+        "label": "The Numbers Behind the Subject-To Pitch",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-subniche-contractual-rate-spreads",
+        "graphic_id": "diag-04-subto-pitch-percentages",
         "graphic_type": "diagram",
-        "label": "Five Sub-Niches, One Consistent Spread Measure",
+        "label": "The Numbers Behind the Subject-To Pitch",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-wrap-preflight-decision-tree": {
+    "diag-05-hybrid-underwriting-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-wrap-preflight-decision-tree",
+        "graphic_id": "diag-05-hybrid-underwriting-gates",
         "graphic_type": "diagram",
-        "label": "Four Decisions Before Committing Capital",
+        "label": "Four Gates Before a Hybrid or Wrap Closes",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-wrap-preflight-decision-tree",
+        "graphic_id": "diag-05-hybrid-underwriting-gates",
         "graphic_type": "diagram",
-        "label": "Four Decisions Before Committing Capital",
+        "label": "Four Gates Before a Hybrid or Wrap Closes",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-wrap-preflight-decision-tree",
+        "graphic_id": "diag-05-hybrid-underwriting-gates",
         "graphic_type": "diagram",
-        "label": "Four Decisions Before Committing Capital",
+        "label": "Four Gates Before a Hybrid or Wrap Closes",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-four-person-core-six-person-scale-pod": {
+    "diag-06-note-buyer-operating-model": {
       "concept_a": {
-        "graphic_id": "diag-06-four-person-core-six-person-scale-pod",
+        "graphic_id": "diag-06-note-buyer-operating-model",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Six at Scaled Volume",
+        "label": "The Non-Performing Note Buyer's Operating Model",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-four-person-core-six-person-scale-pod",
+        "graphic_id": "diag-06-note-buyer-operating-model",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Six at Scaled Volume",
+        "label": "The Non-Performing Note Buyer's Operating Model",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-four-person-core-six-person-scale-pod",
+        "graphic_id": "diag-06-note-buyer-operating-model",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Six at Scaled Volume",
+        "label": "The Non-Performing Note Buyer's Operating Model",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-four-bucket-allocation": {
+    "diag-07-seller-finance-vs-bank-entry": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-four-bucket-allocation",
+        "graphic_id": "diag-07-seller-finance-vs-bank-entry",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Before Buying Payment Spread",
+        "label": "Making the Seller the Bank, by the Percentages",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-four-bucket-allocation",
+        "graphic_id": "diag-07-seller-finance-vs-bank-entry",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Before Buying Payment Spread",
+        "label": "Making the Seller the Bank, by the Percentages",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-four-bucket-allocation",
+        "graphic_id": "diag-07-seller-finance-vs-bank-entry",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Before Buying Payment Spread",
+        "label": "Making the Seller the Bank, by the Percentages",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-first-thirty-days-operating-sprint": {
+    "diag-08-partial-sale-roadmap": {
       "concept_a": {
-        "graphic_id": "diag-08-first-thirty-days-operating-sprint",
+        "graphic_id": "diag-08-partial-sale-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Documented Operating System",
+        "label": "From Bid to Partial Sale to First Position",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-first-thirty-days-operating-sprint",
+        "graphic_id": "diag-08-partial-sale-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Documented Operating System",
+        "label": "From Bid to Partial Sale to First Position",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-first-thirty-days-operating-sprint",
+        "graphic_id": "diag-08-partial-sale-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Documented Operating System",
+        "label": "From Bid to Partial Sale to First Position",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:03Z"
+  "updated_at": "2026-11-24T23:07:52Z"
 }

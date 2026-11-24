@@ -1,718 +1,911 @@
 from __future__ import annotations
 
-CHAPTER_11 = {
-    "id": "Q11",
-    "chapter_id": "Q11",
-    "chapter_number": 11,
-    "question_number": 11,
-    "slug": "pod-architecture-contractor-kpis-and-exit-valuation",
-    "question_prompt": "How do you structure a lean 1 FT + 3 C (4 people) -> 2 FT + 4 C (6 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
-    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
-    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
-    "subtitle": "RMLO Origination, Licensed Servicing, Accrual Cohorts, UCC Note Transfers & Evidence-Based Buyer Pricing",
-    "layout_template": "action_checklist",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #35, Subject-To & Wraparound Note Arbitrage, ranks #09 of 36 "
-        "with a 90/100 Money-to-Manpower Score across 11 mapped plays. The operating "
-        "advantage is a small pod controlling acquisition, licensed origination, payment "
-        "verification, and transferable records rather than collecting impressive property "
-        "face values. Start with 1 FT + 3 C, then add one operations employee and "
-        "one accounting contractor only when measured capacity supports 2 FT + 4 C. "
-        "Canonical annual owner profits are $28,000 Conservative, $190,000 Base, and "
-        "$442,000 Scaled. This chapter assigns every play, prices contractor work, "
-        "defines weekly exception ownership, and separates business earnings from note "
-        "asset value. Premium pricing requires independently reproducible cash flows, "
-        "documented transfer rights, and limited counterparty dependence."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual operator revenue: net upfront spreads plus retained wrap interest margin",
-            "note": "28% net margin; $28,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$475,000",
-            "context": "Annual operator revenue: net upfront spreads plus retained wrap interest margin",
-            "note": "40.0% net margin; $190,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$850,000",
-            "context": "Annual operator revenue: net upfront spreads plus retained wrap interest margin",
-            "note": "52% net margin; $442,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Assign eleven plays to four seats before adding capacity",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use eleven explicit work packages as this chapter's operating map for "
-                    "Candidate #35's eleven mapped plays: P1 debt-trigger sourcing; P2 seller "
-                    "qualification; P3 underlying-debt verification; P4 acquisition underwriting; "
-                    "P5 title and transfer execution; P6 owner-occupant buyer qualification; "
-                    "P7 wrap origination; P8 payment servicing; P9 underlying-payment and "
-                    "escrow verification; P10 delinquency resolution; and P11 cohort accounting "
-                    "and transfer readiness. The founding full-time operator owns P1 through "
-                    "P4, commercial decisions, and P11. Contractor one is the appropriately "
-                    "licensed residential mortgage loan originator, owning P6 and P7. Contractor "
-                    "two is the appropriately licensed third-party servicer, owning P8 and "
-                    "monthly evidence production for P9. Contractor three is qualified real "
-                    "estate counsel, coordinating P5 and directing lawful P10 remedies. The "
-                    "operator independently reviews P9 rather than allowing the payment "
-                    "executor to certify their own performance. Treat these as accountable "
-                    "seats, not permission to practice outside a license. A servicing company "
-                    "or law firm can supply a contracted seat, but its employees remain "
-                    "external delivery capacity; disclose that distinction when describing "
-                    "the four-person model to a buyer. Recording offices, title insurers, "
-                    "and other transaction vendors create direct deal costs, not invisible "
-                    "internal employees. Every file needs one named decision owner and "
-                    "one recorded next action."
-                ),
-                (
-                    "Write statements of work around accepted outputs, not vague availability. "
-                    "An illustrative RMLO budget is $1,250 per completed origination package, "
-                    "subject to the compensation restrictions in Regulation Z, 12 CFR "
-                    "1026.36(d), and state licensing rules. Never tie originator pay to "
-                    "interest-rate markup, a prohibited loan term, or steering a buyer "
-                    "into a more profitable wrap. An illustrative servicing quote is "
-                    "$35 per active loan monthly plus $150 boarding; specify whether "
-                    "escrow administration, underlying remittance, payoff statements, and "
-                    "default notices cost extra. Counsel might quote $1,500 for a standard "
-                    "transaction review, with contested enforcement separately authorized. "
-                    "These are planning assumptions, not vendor offers or additions to "
-                    "canonical profit. Require RMLO completeness review within two business "
-                    "days after receiving a complete application package; contractual speed "
-                    "never shortens statutory waiting periods. Require the servicer to "
-                    "deliver daily exception exports and monthly reconciliation evidence "
-                    "within five business days after statement availability. Counsel must "
-                    "acknowledge urgent acceleration or foreclosure correspondence within "
-                    "one business day and identify controlling deadlines. The operator "
-                    "accepts each deliverable against a checklist and records rejection "
-                    "reasons. Contractor independence depends on actual working conditions; "
-                    "an invoice and a contractor label do not resolve worker classification."
-                ),
-                (
-                    "Scale by transferring an existing control burden, not by inventing "
-                    "a management layer. The second full-time seat becomes portfolio "
-                    "operations lead and assumes daily P8 exception review, independent "
-                    "P9 reconciliation, routine P10 coordination, and document indexing "
-                    "for P11. The fourth contractor becomes the accounting specialist "
-                    "responsible for monthly accrual schedules, cohort tie-outs, and "
-                    "quarterly earnings normalization. The founder retains acquisition "
-                    "authority, liquidity allocation, vendor selection, and material workout "
-                    "decisions. This produces exactly 2 FT + 4 C accountable seats. "
-                    "Before hiring, measure four consecutive weeks of overdue reconciliations, "
-                    "unresolved servicing exceptions, and founder processing hours; an "
-                    "illustrative trigger is more than ten weekly hours of repeatable "
-                    "portfolio administration alongside sufficient contracted contribution "
-                    "to support loaded compensation. Do not convert an acquisition surge "
-                    "into permanent payroll before those loans season. Each seat needs "
-                    "a documented absence procedure, least-privilege access, and a replacement "
-                    "provider file. The founder must not be the only person who can "
-                    "locate underlying statements or explain a payment waterfall. Use "
-                    "a shared task register with property identifiers, not borrower tax "
-                    "identifiers in task titles. Test coverage by having the operations "
-                    "lead reproduce one complete account history without asking the founder."
-                ),
-            ],
-            "table": {
-                "caption": "Eleven-Play Ownership and Acceptance Matrix for the Four-Seat Pod",
-                "headers": [
-                    "Accountable seat and mapped work",
-                    "Accepted operating deliverable",
-                    "Compensation and service expectation",
-                    "Independent quality control",
-                ],
-                "rows": [
-                    [
-                        "Founder owns P1 sourcing and P2 seller qualification",
-                        "Document debt triggers, seller objectives, and permissioned contact history",
-                        "Founder compensation remains inside the canonical expense bridge",
-                        "Reject unsupported equity estimates before scheduling seller negotiations",
-                    ],
-                    [
-                        "Founder owns P3 verification and P4 acquisition underwriting",
-                        "Reconcile mortgage balance, arrears, escrow, insurance, and payment terms",
-                        "Complete written acquisition memo before committing transaction funds",
-                        "Counsel reviews transfer structure and identified acceleration exposure",
-                    ],
-                    [
-                        "Counsel owns P5 transfer execution and remedy design",
-                        "Deliver reviewed instruments, recording evidence, and deadline calendar",
-                        "Illustrative standard review costs fifteen hundred dollars per transaction",
-                        "Founder matches recorded parties against executed closing instructions",
-                    ],
-                    [
-                        "Licensed RMLO owns P6 qualification and P7 origination",
-                        "Deliver documented underwriting, disclosures, and applicable licensing evidence",
-                        "Illustrative completed package costs twelve hundred fifty dollars",
-                        "Counsel checks structure while founder checks package completeness",
-                    ],
-                    [
-                        "Licensed servicer owns P8 collections and servicing records",
-                        "Export payment allocation, arrears aging, and remittance evidence",
-                        "Illustrative monthly servicing costs thirty five dollars per loan",
-                        "Founder reconciles exports against independent bank transaction records",
-                    ],
-                    [
-                        "Founder independently reviews P9 evidence and coordinates P10",
-                        "Maintain underlying payment proof and dated exception resolution",
-                        "Escalate missing underlying payment evidence within one business day",
-                        "Counsel controls statutory notices and contested enforcement decisions",
-                    ],
-                    [
-                        "Founder owns P11 until scaled accounting contractor arrives",
-                        "Produce accrual cohorts, ownership schedules, and transfer-ready records",
-                        "Scaled accounting scope receives a separately budgeted fixed retainer",
-                        "Operations lead reproduces balances from source documents monthly",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make the thin pod stronger than its headcount",
-                "body": (
-                    "Buy reproducible evidence and specialist judgment; do not buy a "
-                    "second collection of spreadsheets that only the contractor understands."
-                ),
-                "items": [
-                    "Request a sample underlying-payment reconciliation before selecting a servicer; reject proposals that prove buyer collection but cannot prove senior-debt application.",
-                    "Negotiate a boarding correction window covering transcription errors, payment hierarchy, escrow settings, and senior-loan identifiers without another setup charge.",
-                    "Preserve seller-authorized access to underlying statements where permitted; do not share portal passwords or depend on forwarded screenshots alone.",
-                    "Run an absence drill on one seasoned wrap every quarter, including payoff calculation, senior-balance verification, and counsel escalation."
-                ],
-            },
-        },
-        {
-            "heading": "2. Run weekly evidence-based scorecards and cap dependence",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Hold a forty-five-minute weekly portfolio meeting using a frozen "
-                    "servicer export, bank activity, underlying statements, and the task "
-                    "register. The founder chairs until the operations lead exists. "
-                    "Measure collection effectiveness as scheduled borrower cash received "
-                    "by the contractual due date divided by scheduled cash due, reporting "
-                    "principal, interest, and escrow separately. Do not call that ratio "
-                    "operator revenue. Show thirty-day delinquency by unpaid principal "
-                    "balance and by account count; one large troubled note can hide "
-                    "inside an attractive count-based statistic. Track the percentage of "
-                    "senior payments independently verified before their applicable deadline, "
-                    "with a target of one hundred percent. Also show open escrow "
-                    "shortfalls, insurance cancellations, unresolved suspense balances, and "
-                    "days since each exception was first identified. A late senior "
-                    "payment requires immediate action even when the wrap buyer paid "
-                    "on time. Track RMLO package first-pass acceptance and counsel "
-                    "deadline adherence, but never reward speed by overlooking missing "
-                    "income evidence. End the meeting with a named owner, funded "
-                    "remediation, and next review date for every material exception. "
-                    "Preserve each weekly snapshot so a prospective buyer can distinguish "
-                    "stable controls from a clean dashboard assembled immediately before "
-                    "marketing the business."
-                ),
-                (
-                    "Set a maximum twenty-five percent economic exposure to any related "
-                    "borrower group, seller source, referral channel, or funding counterparty. "
-                    "Calculate each relevant concentration on both trailing-twelve-month "
-                    "operator contribution and the associated portfolio exposure: outstanding "
-                    "wrap principal for borrower groups, acquisition contribution for seller "
-                    "channels, and callable obligations for funding providers. Do not "
-                    "mix these denominators into one flattering percentage. Underlying "
-                    "lender concentration also matters because similar transfer terms or "
-                    "acceleration practices can create correlated stress. Separate ultimate "
-                    "ownership groups rather than counting multiple entities as independent "
-                    "customers. At twenty percent, require a written diversification plan; "
-                    "at twenty-five percent, stop adding exposure to that group. A "
-                    "new book with fewer than four independent accounts cannot satisfy "
-                    "a universal twenty-five percent account cap. Label that book "
-                    "concentrated incubation inventory, fund its stress reserve, and do "
-                    "not market it as diversified. One RMLO and one servicer create "
-                    "deliberate vendor dependencies in the four-seat architecture. Disclose "
-                    "those one-hundred-percent service dependencies separately instead of "
-                    "claiming the economic cap eliminates them. Reduce outage risk "
-                    "through portable exports, successor-provider diligence, and contractually "
-                    "specified transition assistance. Activating simultaneous additional "
-                    "provider seats changes the stated pod model and must be counted."
-                ),
-                (
-                    "Tie scorecard consequences to control failures rather than subjective "
-                    "frustration. If an RMLO package fails first-pass review, return a "
-                    "specific deficiency list and start the correction clock only after "
-                    "all missing third-party inputs arrive. If the servicer cannot match "
-                    "a senior remittance to the lender's applied payment, open an "
-                    "exception immediately and trace the funds before another automated "
-                    "disbursement creates confusion. Never withhold borrower escrow money "
-                    "as leverage in a contractor dispute. Service credits, if negotiated, "
-                    "belong in the vendor contract and must not impair required loan "
-                    "administration. Escalate repeated material defects through a documented "
-                    "replacement decision, including data export and continuity testing. "
-                    "The monthly reserve review should model a buyer default, senior "
-                    "debt service, property taxes, insurance, legal expense, and plausible "
-                    "recovery delay for each exposed cohort. An acceleration demand "
-                    "creates a separate liquidity problem that ordinary payment reserves "
-                    "may not cover. The due-on-sale framework in 12 U.S.C. 1701j-3 "
-                    "contains specific protected transfers; a routine subject-to sale "
-                    "does not gain protection merely because payments remain current. "
-                    "Bring counsel the actual transfer documents and lender correspondence. "
-                    "Do not score concealment, delayed notice handling, or unsupported "
-                    "assumptions about lender tolerance as operational success."
-                ),
-            ],
-            "table": {
-                "caption": "Weekly KPI Definitions, Thresholds, and Required Responses",
-                "headers": [
-                    "Weekly measurement",
-                    "Exact denominator or evidence",
-                    "Operating threshold",
-                    "Owner response and retained proof",
-                ],
-                "rows": [
-                    [
-                        "Buyer collection effectiveness measured against contractual payment dates",
-                        "Cash received by due date divided by scheduled cash",
-                        "Investigate every missed payment using account-specific contractual deadlines",
-                        "Servicer records contact attempts and lawful next actions",
-                    ],
-                    [
-                        "Thirty-day delinquency shown by principal and account count",
-                        "Delinquent unpaid principal divided by total unpaid principal",
-                        "Illustrative management alert begins above three percent principal",
-                        "Founder updates reserves and counsel evaluates available remedies",
-                    ],
-                    [
-                        "Senior payment verification measures applied funds not instructions",
-                        "Underlying lender statements matched to servicer remittance evidence",
-                        "Require complete verification before each applicable payment deadline",
-                        "Founder traces missing applications and documents same-day escalation",
-                    ],
-                    [
-                        "Escrow and insurance exceptions tracked individually by property",
-                        "Tax bills, coverage documents, account balances, and renewal dates",
-                        "Permit zero unresolved lapses or overdue tax payments",
-                        "Servicer supplies evidence while founder authorizes funded correction",
-                    ],
-                    [
-                        "Origination quality measured through first-pass file acceptance",
-                        "Accepted complete packages divided by complete packages submitted",
-                        "Illustrative target exceeds ninety five percent without shortcuts",
-                        "RMLO corrects deficiencies and identifies recurring document causes",
-                    ],
-                    [
-                        "Related-group dependence measured across distinct economic exposure bases",
-                        "Contribution share and relevant portfolio exposure calculated separately",
-                        "Maximum twenty five percent with twenty percent warning",
-                        "Founder stops incremental exposure and documents diversification actions",
-                    ],
-                    [
-                        "Vendor continuity measured separately from economic concentration limits",
-                        "Readable exports, successor readiness, and tested transfer instructions",
-                        "Require monthly exports and quarterly sample recovery testing",
-                        "Operations owner documents actual restoration time and missing fields",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the reporting population",
-                    "action": "Export the active loan register and payment ledger every Monday.",
-                    "detail": "Use stable account identifiers and preserve the extraction timestamp; reconcile additions, payoffs, transfers, and closures against the prior snapshot.",
-                },
-                {
-                    "step": 2,
-                    "title": "Prove both sides of the waterfall",
-                    "action": "Match borrower receipts, senior applications, and escrow movements.",
-                    "detail": "Separate pending transfers from completed applications and attach the underlying lender evidence to each unresolved exception.",
-                },
-                {
-                    "step": 3,
-                    "title": "Assign funded corrections",
-                    "action": "Review exceptions, concentrations, and deadlines in the weekly meeting.",
-                    "detail": "Record the accountable seat, required cash, legal deadline, corrective action, and next verification date without changing historical snapshots.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close only against source evidence",
-                    "action": "Require independent evidence before marking an exception resolved.",
-                    "detail": "A payment instruction alone cannot close a senior-payment exception; retain applied-payment proof and the reviewer identity.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Reconcile canonical profit to clean accrual cohorts",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Keep the Formula v2.0 scorecard intact: Conservative operator revenue "
-                    "is $100,000, expenses are $72,000, and annual owner net profit "
-                    "is $28,000 at twenty-eight percent. Base revenue is $475,000, "
-                    "expenses are $285,000, and profit is $190,000 at forty percent. "
-                    "Scaled revenue is $850,000, expenses are $408,000, and profit "
-                    "is $442,000 at fifty-two percent. The first two cases use "
-                    "1 FT + 3 C; Scaled uses 2 FT + 4 C. "
-                    "Although the supplied scorecard calls its top line gross revenue, "
-                    "its economic basis is net upfront option or down-payment spreads "
-                    "plus retained annual wrap interest margin, excluding property face "
-                    "value and pass-through debt service. Do not apply another retained-share "
-                    "haircut to that already retained basis. For an illustrative Base "
-                    "bridge, $275,000 of eligible upfront spreads plus $200,000 of "
-                    "retained interest margin equals $475,000. This split is an analytical "
-                    "example, not a supplied deal-production forecast. The stated $2,000 "
-                    "to $12,000 monthly operating range describes a recurring overhead "
-                    "envelope, not the full annual expense bridge. Direct closing costs, "
-                    "contracted origination work, losses, and other scenario costs must "
-                    "also reconcile. Do not force total expenses into that narrower "
-                    "monthly envelope."
-                ),
-                (
-                    "Maintain a loan-level accrual subledger separate from the cash "
-                    "waterfall. Each account needs acquisition date, origination cohort, "
-                    "wrap principal, senior principal, both interest schedules, escrow "
-                    "balances, fees, delinquency status, and ownership percentages. A "
-                    "simple illustrative month with $1,500 borrower interest and $900 "
-                    "senior interest produces $600 retained interest margin before "
-                    "servicing and other expenses. If borrower principal receipts are "
-                    "$250 and senior principal reduction is $300, those amounts affect "
-                    "asset and liability balances and liquidity; they do not magically "
-                    "become another $550 of revenue. Likewise, tax and insurance "
-                    "escrow receipts remain separately controlled obligations. A $20,000 "
-                    "buyer down payment is not automatically $20,000 earned income. "
-                    "Allocate it according to the executed transaction, acquisition "
-                    "basis, refund obligations, and applicable recognition guidance. "
-                    "Use ASC 606 principal-versus-agent analysis for activities actually "
-                    "within that standard, while financial instruments and property "
-                    "transfers require their applicable accounting guidance. The scorecard "
-                    "net presentation is a management convention, not a substitute "
-                    "for that analysis. Produce a bridge from statutory or GAAP "
-                    "books to scorecard contribution so a buyer can understand "
-                    "presentation differences without mistaking principal collections "
-                    "for earnings or escrow balances for available working capital."
-                ),
-                (
-                    "Close each month by reconciling bank cash, servicer cash, senior "
-                    "balances, and the general ledger before presenting owner distributions. "
-                    "Use QuickBooks Online or an equivalent ledger for entity accounts, "
-                    "with a controlled loan schedule supporting each balance; software "
-                    "labels do not establish correct recognition. Tag upfront spreads "
-                    "and recurring margin by acquisition quarter, source channel, state, "
-                    "RMLO, and underlying lender. Compare cohorts at equal seasoning "
-                    "ages so a new, apparently clean pool does not outperform an "
-                    "older pool merely because defaults have not emerged. Report "
-                    "cash collections, earned interest, nonaccrual treatment, charge-offs, "
-                    "recoveries, and reserve movements separately under a documented "
-                    "accounting policy. Require the accounting contractor to explain "
-                    "every manual journal affecting revenue or owner profit. Retain "
-                    "support for founder compensation and replacement labor because "
-                    "a purchaser will normalize both. Review a rolling thirteen-week "
-                    "cash forecast alongside earnings; a profitable spread business "
-                    "can still lack cash for an accelerated senior balance. Reconcile "
-                    "distributable cash only after restricted escrow, near-term obligations, "
-                    "and stress reserves. Maintain at least twelve monthly closes "
-                    "before claiming a seasoned earnings history, and label younger "
-                    "cohorts explicitly. A durable cash cow depends on repeatable "
-                    "collection and controlled reinvestment, not aggressive recognition."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 Reconciliation and Loan-Level Accounting Controls",
-                "headers": [
-                    "Scenario or accounting component",
-                    "Required measurement and presentation",
-                    "Canonical or illustrative financial treatment",
-                    "Evidence supporting the monthly close",
-                ],
-                "rows": [
-                    [
-                        "Conservative case retains the original four-seat operating structure",
-                        "Annual operator revenue equals one hundred thousand dollars",
-                        "$100,000 revenue less $72,000 expenses equals $28,000 profit",
-                        "Twenty eight percent margin reconciles to annual owner profit",
-                    ],
-                    [
-                        "Base case retains the original four-seat operating structure",
-                        "Annual operator revenue equals four hundred seventy five thousand",
-                        "$475,000 revenue less $285,000 expenses equals $190,000 profit",
-                        "Forty percent margin reconciles to annual owner profit",
-                    ],
-                    [
-                        "Scaled case supports the specified six-seat operating structure",
-                        "Annual operator revenue equals eight hundred fifty thousand",
-                        "$850,000 revenue less $408,000 expenses equals $442,000 profit",
-                        "Fifty two percent margin reconciles to annual owner profit",
-                    ],
-                    [
-                        "Illustrative Base revenue bridge separates upfront and recurring contribution",
-                        "Eligible upfront spreads plus earned retained annual interest margin",
-                        "$275,000 upfront plus $200,000 recurring equals $475,000 revenue",
-                        "Signed transactions and accrual schedules substantiate each recognized component",
-                    ],
-                    [
-                        "Principal movements remain outside retained interest revenue calculations",
-                        "Track borrower receivable reductions separately from senior liability reductions",
-                        "$250 received and $300 repaid affect balances and liquidity",
-                        "Amortization schedules reconcile both balances to external statements",
-                    ],
-                    [
-                        "Escrow collections remain segregated from unrestricted operating contribution",
-                        "Match borrower escrow obligations with funded tax and insurance payments",
-                        "Restricted escrow balances never increase available owner distribution capacity",
-                        "Servicer statements match tax receipts and active insurance evidence",
-                    ],
-                    [
-                        "Normalized earnings distinguish owner benefit from transferable operating profit",
-                        "Document replacement labor, unusual costs, and recurring maintenance spending",
-                        "Illustrative Base replacement labor of $80,000 leaves $110,000 earnings",
-                        "Apply replacement adjustment only when not already expensed",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify these four conditions before releasing capital",
-                "body": (
-                    "Apply these pre-flight tests to each acquisition and repeat the "
-                    "relevant checks before distributing portfolio cash."
-                ),
-                "items": [
-                    "Match senior balance, payment status, transfer terms, and seller authority to current source documents; fund an acceleration response appropriate to the identified exposure.",
-                    "Obtain licensed RMLO underwriting for every owner-occupant wrap buyer and documented counsel review of applicable origination and state wrap requirements.",
-                    "Confirm servicer licensing where required, correct payment instructions, escrow treatment, and independently testable proof of senior-payment application.",
-                    "Reconcile the proposed cash release to unrestricted funds after escrow obligations, scheduled debt service, funded repairs, and documented stress reserves."
-                ],
-            },
-        },
-        {
-            "heading": "4. Package transferable earnings without double-counting note value",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build the exit room as an operating system, not a "
-                    "last-minute document dump. Include entity ownership, executed acquisition "
-                    "agreements, recorded security instruments, original-note custody records, "
-                    "endorsements, assignments, servicing contracts, borrower histories, senior "
-                    "statements, tax evidence, insurance records, underwriting packages, and "
-                    "monthly cohort reconciliations. UCC section 3-203 addresses transfer "
-                    "of instruments, but possession, endorsement, holder status, mortgage "
-                    "assignment, and enforceability require instrument-specific and state-specific "
-                    "review. A scanned promissory note is not automatically an adequate "
-                    "substitute for required original custody. Identify which contracts "
-                    "require assignment permission and whether a proposed equity sale "
-                    "triggers change-of-control provisions. Preserve contractor-created templates, "
-                    "scripts, workflows, and reporting code with written copyright "
-                    "assignments satisfying 17 U.S.C. 204(a) where ownership transfers "
-                    "are intended. Specify preexisting vendor materials and the continuing "
-                    "license needed to operate them; payment for a deliverable alone "
-                    "does not transfer every intellectual-property right. Loan records "
-                    "also contain protected customer information. Use role-based access, "
-                    "redacted diligence samples, confidentiality agreements, and counsel-reviewed "
-                    "disclosure procedures before sharing identifiable borrower files. Keep "
-                    "a manifest linking each asset to its supporting records. The "
-                    "buyer should be able to select an account and reproduce "
-                    "ownership, cash flow, and unresolved risk without founder narration."
-                ),
-                (
-                    "Price the transaction according to what actually transfers. A "
-                    "whole-loan buyer values expected collectible cash flows after senior "
-                    "obligations, servicing, losses, enforcement costs, and required returns. "
-                    "A platform buyer values transferable earnings from origination, "
-                    "administration, and genuinely durable relationships. Do not add "
-                    "a full discounted value of retained note interest to a "
-                    "multiple of earnings already containing that same interest stream. "
-                    "For a small owner-operated platform, test an illustrative two "
-                    "to three times normalized seller discretionary earnings range; "
-                    "for a genuinely manager-run operation, test three to five "
-                    "times normalized EBITDA. These are negotiation sensitivities, not "
-                    "verified transaction comparables or automatic premiums. Buyer diligence "
-                    "must establish which earnings definition fits. If Base owner "
-                    "profit of $190,000 excludes $80,000 of necessary replacement "
-                    "labor, transferable operating earnings become $110,000. Applying the "
-                    "illustrative three-to-five-times range yields $330,000 to $550,000 "
-                    "of platform enterprise value before cash, debt, working-capital "
-                    "adjustments, and transaction costs. Do not subtract replacement "
-                    "labor again if already included. Conservative profit of $28,000 "
-                    "may support no standalone management layer, making an asset "
-                    "sale more plausible. Scaled profit of $442,000 still requires "
-                    "the same normalization; headcount alone does not establish "
-                    "management independence or a transferable franchise."
-                ),
-                (
-                    "A premium requires evidence that lowers the buyer's future "
-                    "work or risk. Show twelve to twenty-four months of "
-                    "reconciled servicing history, declining founder intervention, repeatable "
-                    "buyer underwriting, documented concentration limits, and an orderly "
-                    "response to actual delinquency. Separate unresolved title defects, "
-                    "senior acceleration exposure, disputed balances, and missing documents "
-                    "into an exception schedule rather than burying them in "
-                    "representations. A buyer may require a holdback, seller note, "
-                    "or earnout when collections or origination relationships remain "
-                    "uncertain; model proceeds by timing and collectibility rather "
-                    "than headline purchase price. For an illustrative note purchase, "
-                    "discount projected net distributable cash flows at several "
-                    "required returns and stress prepayments, defaults, recovery delays, "
-                    "and senior acceleration. Do not describe the resulting yield "
-                    "as a quoted market clearing level. Compare selling against "
-                    "holding the same after-cost cash flows with equivalent "
-                    "risk assumptions. Holding may dominate when the business "
-                    "has clean servicing and attractive seasoned spreads but "
-                    "little transferable origination goodwill. Selling may dominate "
-                    "when concentration or founder dependence is expensive to "
-                    "repair. Keep the exit room current either way: portable "
-                    "records improve refinancing, succession, servicer replacement, and "
-                    "dispute resolution even when no sale occurs. Transferability "
-                    "is an operating capability before it becomes a valuation argument."
-                ),
-            ],
-            "table": {
-                "caption": "Buyer Diligence, Earnings Multiples, and Transferability Evidence",
-                "headers": [
-                    "Valuation or transfer issue",
-                    "Required evidence and buyer test",
-                    "Illustrative pricing consequence",
-                    "Operator preparation before buyer outreach",
-                ],
-                "rows": [
-                    [
-                        "Owner-operated platform depends materially on continuing founder involvement",
-                        "Normalize seller discretionary earnings using documented recurring cost requirements",
-                        "Test two to three times normalized discretionary earnings",
-                        "Identify replacement duties and avoid unsupported owner expense addbacks",
-                    ],
-                    [
-                        "Manager-run platform demonstrates repeatable operations without founder processing",
-                        "Normalize EBITDA after necessary market-rate replacement labor expense",
-                        "Test three to five times sustainable normalized EBITDA",
-                        "Provide absence drills and independently reproduced monthly reporting",
-                    ],
-                    [
-                        "Base earnings require illustrative replacement labor not already expensed",
-                        "$190,000 owner profit less $80,000 replacement leaves $110,000",
-                        "$330,000 to $550,000 platform value before closing adjustments",
-                        "Confirm labor treatment before applying any earnings multiple",
-                    ],
-                    [
-                        "Note portfolio value depends on collectible residual cash flows",
-                        "Model senior debt, servicing, losses, recoveries, and acceleration exposure",
-                        "Discount net cash flows without duplicating capitalized interest earnings",
-                        "Prepare account-level forecasts reconciled to actual payment histories",
-                    ],
-                    [
-                        "Instrument transfer requires defensible ownership and custody evidence",
-                        "Review originals, endorsements, assignments, liens, and state transfer requirements",
-                        "Missing enforceability evidence can impair price or transfer feasibility",
-                        "Have counsel resolve custody defects before marketing affected assets",
-                    ],
-                    [
-                        "Contractor intellectual property must support continuing independent operation",
-                        "Obtain signed assignments and identify retained vendor licensing rights",
-                        "Portable owned workflows reduce transition expense and dependency discounts",
-                        "Index signed intellectual-property documents beside each delivered asset",
-                    ],
-                    [
-                        "Contingent consideration changes realizable proceeds despite headline pricing",
-                        "Model holdbacks, seller financing, earnout conditions, and payment priority",
-                        "Compare discounted collectible proceeds rather than nominal purchase totals",
-                        "Negotiate measurable release conditions and preserve verification access",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A transferable spread business proves every dollar, assigns every exception, and never asks the buyer to purchase the founder's memory.",
-    "diagram_id": "diag-06",
-    "action_checklist": [
-        "Assign P1 through P11 to the founder, licensed RMLO, licensed servicer, and counsel, with explicit acceptance evidence and absence coverage.",
-        "Execute contractor scopes covering compensation, correction deadlines, source-data exports, transition assistance, and signed intellectual-property assignments where needed.",
-        "Freeze a weekly scorecard showing borrower collections, senior-payment verification, delinquency, escrow defects, and separately measured concentration exposures.",
-        "Enforce the twenty-five percent economic concentration ceiling, label incubation exceptions, and disclose single-provider dependencies without disguising extra seats.",
-        "Reconcile all three canonical profit cases to accrual cohorts, principal movements, restricted escrow, direct costs, and normalized replacement labor.",
-        "Build a transfer-ready diligence room and compare platform earnings value, note cash-flow value, and continued ownership without counting the same income twice.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "12 U.S.C. 1701j-3 — Preemption of due-on-sale prohibitions",
-            "url": "https://www.law.cornell.edu/uscode/text/12/1701j-3",
-            "relevance": (
-                "Defines the federal due-on-sale framework and enumerated transfer "
-                "protections; review the actual transaction rather than assuming "
-                "current payments prevent acceleration."
-            ),
-        },
-        {
-            "title": "12 U.S.C. 5103 — SAFE Act licensing and registration requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/12/5103",
-            "relevance": (
-                "Supports verification of applicable mortgage loan originator "
-                "licensing or registration before assigning buyer qualification "
-                "and wrap origination work."
-            ),
-        },
-        {
-            "title": "12 CFR 1026.43 — Minimum standards for transactions secured by a dwelling",
-            "url": "https://www.ecfr.gov/current/title-12/section-1026.43",
-            "relevance": (
-                "Provides ability-to-repay requirements for covered transactions; "
-                "document coverage analysis, verified underwriting inputs, and "
-                "the basis for any claimed exemption."
-            ),
-        },
-        {
-            "title": "12 CFR 1026.36 — Prohibited acts or practices and loan originator requirements",
-            "url": "https://www.ecfr.gov/current/title-12/section-1026.36",
-            "relevance": (
-                "Controls relevant loan originator compensation, steering, and "
-                "qualification requirements; contractor pricing cannot reward "
-                "prohibited loan-term variations."
-            ),
-        },
-        {
-            "title": "Texas Property Code section 5.016 — Conveyance of residential property encumbered by lien",
-            "url": "https://statutes.capitol.texas.gov/Docs/PR/htm/PR.5.htm#5.016",
-            "relevance": (
-                "Requires analysis of notices and other applicable requirements "
-                "when conveying covered residential property subject to an "
-                "existing lien, including statutory exceptions."
-            ),
-        },
-        {
-            "title": "Texas Finance Code Chapter 159 — Wrap Mortgage Loan Financing",
-            "url": "https://statutes.capitol.texas.gov/Docs/FI/htm/FI.159.htm",
-            "relevance": (
-                "Supplies Texas-specific wrap mortgage licensing, disclosure, "
-                "closing, and servicing requirements that must be incorporated "
-                "into contractor scopes when applicable."
-            ),
-        },
-        {
-            "title": "17 U.S.C. 204(a) — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": (
-                "Generally requires a signed writing for copyright ownership "
-                "transfers other than transfers by operation of law; obtain "
-                "appropriate assignments for contractor-created operating assets."
-            ),
-        },
-        {
-            "title": "UCC section 3-203 — Transfer of instrument; rights acquired by transfer",
-            "url": "https://www.law.cornell.edu/ucc/3/3-203",
-            "relevance": (
-                "Provides the model instrument-transfer framework; counsel must "
-                "apply the relevant state's enacted text and separately verify "
-                "endorsement, custody, security interests, and mortgage assignments."
-            ),
-        },
-        {
-            "title": "16 CFR Part 314 — Standards for Safeguarding Customer Information",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314",
-            "relevance": (
-                "For covered financial institutions, establishes safeguards for "
-                "customer information and service-provider oversight relevant "
-                "to loan files, servicing exports, and buyer diligence access."
-            ),
-        },
-    ],
-}
+CHAPTER_11 = {'id': 'Q11',
+ 'chapter_id': 'Q11',
+ 'chapter_number': 11,
+ 'question_number': 11,
+ 'slug': 'buying-mortgage-notes-discounted-npl-investing',
+ 'question_prompt': 'How do I become the bank by buying performing and non-performing mortgage notes at a '
+                    'discount, and how do I profit from them?',
+ 'kicker': 'Q11 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Buying Mortgage Notes: Discounted and Non-Performing Loan Investing',
+ 'subtitle': 'Where to source notes, buying at deep discounts, non-performing note resolutions and six '
+             'exit strategies, notes vs. rentals returns, note funds vs. direct buying, first-purchase '
+             "stories, and 'become the bank' breakdowns",
+ 'layout_template': 'chapter_opener',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Note buyers, from boutique shops to a $600-700M NPL desk, agree that non-performing '
+                      'mortgage paper trades cheap because banks refuse partial payments and dump defaults '
+                      'at 25-60% of value. They also report that most defaults trace to a life event and '
+                      'that many of those borrowers can be brought back to paying. The operator consensus '
+                      'is to buy first-position, secured, single-family collateral with deep equity. Hire '
+                      'a licensed servicer. Then exit through the borrower via forbearance, modification '
+                      'and resale rather than foreclosure. Street pricing runs from 96 cents for '
+                      'scratch-and-dent paper down to roughly 40 cents at notice of sale, and PPR prices '
+                      'off the lower of UPB or property value. Reported results include 90% reperformance, '
+                      'an 11.5% average yield and a 20% IRR on a 189-loan trade. Practitioners split on '
+                      'whether NPL foreclose-and-flip suits beginners and whether to buy notes directly or '
+                      'through a fund.',
+ 'key_metrics': [{'label': 'NPL Reperformance Rate',
+                  'metric': 'NPL Reperformance Rate',
+                  'value': 'About 90% reperform; under 5% liquidated',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Lauren Wells of 7e Investments reports that about 90% of the non-performing '
+                             'notes the firm buys return to paying status. Under 5% are liquidated, '
+                             'tracked against biweekly benchmarks.',
+                  'source': 'Preferred Trust ([nauUgmh1YZg @ 00:08:27])'},
+                 {'label': 'Seasoned Portfolio Average Yield',
+                  'metric': 'Seasoned Portfolio Average Yield',
+                  'value': '11.5% average yield',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Kevin Shortle, a former commercial appraiser with 30+ years in notes, '
+                             'reports an 11.5% average yield with an 86% investment-to-balance ratio and '
+                             'investment-to-value under 60%.',
+                  'source': 'Investor Fuel - Real Estate Mastermind ([VrGeElvxk5E @ 00:17:02])'},
+                 {'label': '189-Loan NPL Trade IRR',
+                  'metric': '189-Loan NPL Trade IRR',
+                  'value': 'About 20% IRR, about $8M gross profit',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'PPR bought about $23M UPB against about $50M property value for about $18M. '
+                             'Over 50% reperformed, about 25% paid off or short-sold and about 20% '
+                             'foreclosed, over an 18-month weighted average hold.',
+                  'source': 'PPR Capital Management ([DEk2gIFHJiM @ 00:21:34])'},
+                 {'label': 'DIY vs. Fund Return Spread',
+                  'metric': 'DIY vs. Fund Return Spread',
+                  'value': 'DIY 12-18% (NPLs up to 40-50%) vs. fund 8-12%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Rick Allen and TJ Osterman report that direct note buyers earn 12-18% and '
+                             'that NPLs have hit 40-50%, but that direct buyers will lose some deals. '
+                             'Funds spread risk at lower 8-12% returns.',
+                  'source': 'Paperstac ([EdBetMgLDeQ @ 00:06:20])'}],
+ 'sections': [{'section_number': 1,
+               'heading': 'The Practitioner Consensus',
+               'paragraphs': ['Every operator here agrees that the inventory exists because of a broken '
+                              'bank workflow, not broken borrowers. Lauren Wells of 7e Investments says '
+                              'roughly 90 to 95 percent of the non-performing notes the firm buys trace '
+                              'back to a life event: job loss, a death, a health crisis or COVID '
+                              "[nauUgmh1YZg @ 00:04:00]. 7e's fund walkthrough adds the mechanical "
+                              'trigger. Banks refuse partial payments, so a three-month delinquency '
+                              'snowballs into a twelve-month one. The firm then steps in to renegotiate so '
+                              "the borrower's payments become investor distributions [El1w73FgjM0 @ "
+                              '00:00:11]. Larry Hoffman explains why the paper hits the street cheap. '
+                              'Banks dump non-performing loans to free lending capacity and satisfy '
+                              'regulators, at 25 to 60 percent of their actual dollar value [R_jwbBWh1LA @ '
+                              '00:04:43]. FIXnotes adds that charge-off is how most loans reach the '
+                              'secondary market in the first place [lxjMbDIOEGw @ 00:03:33]. The consensus '
+                              'play follows directly. Buy the debt at a deep discount, step into the '
+                              "lender's shoes and fix the payment relationship the bank was too rigid to "
+                              'fix. The business is the spread between what the seller accepts and what '
+                              'the borrower ultimately pays or the collateral fetches. These operators '
+                              'price from that gap rather than from face value.',
+                              'The second point of agreement is collateral discipline. Bill Mencarow of '
+                              'Paper Source tells beginners to buy first-position notes only and to stick '
+                              'to single-family homes or farmland. Mencarow also tells them to ask whether '
+                              'they would actually want to own the property, and rules out factories and '
+                              'shopping centers [LuxJXWLFKHI @ 00:13:54]. FIXnotes puts a number on why '
+                              'lien position matters. An unsecured loan is worth roughly 100 times less, '
+                              'about 50 basis points versus 50 cents, so checking county records for '
+                              'secured status and lien position comes before any bid [lxjMbDIOEGw @ '
+                              '00:01:23]. Sierra Davis, a data scientist who buys and originates notes, '
+                              'warns that junior liens carry wipe-out risk and pushes secured paper only '
+                              '[UimgP_cJydU @ 00:17:39]. Institutional buyers run the same filter at '
+                              "scale: PPR Capital Management's NPL book is 1-to-4 unit residential and 99 "
+                              'percent single-family detached [DEk2gIFHJiM @ 00:02:11]. The equity cushion '
+                              'is the other half of the rule. Mencarow calls a down payment under 15 to 20 '
+                              'percent scary and says mobile homes with zero or $1,000 down usually '
+                              'default. The best collateral, per Mencarow, is an owner-occupied '
+                              'single-family home in a stable, diversified economy, backed by an amortized '
+                              'note rather than a balloon. That cushion lets an operator negotiate from '
+                              'strength instead of hoping the market holds.',
+                              'Third, practitioners agree the money is made through the borrower, not the '
+                              "courthouse. PPR's Taylor Nelson says every exit decision starts with "
+                              'borrower intent. Nelson adds that exiting through the borrower (reperform, '
+                              "season, resell) is more profitable '99% of the time' [DEk2gIFHJiM @ "
+                              '00:06:37]. Mencarow has been investing in notes since the 1980s, has never '
+                              'foreclosed and negotiates instead [LuxJXWLFKHI @ 00:16:46]. FIXnotes lays '
+                              'out six exits: full or discounted payoff, modification or structured '
+                              'settlement, cash for keys or deed in lieu, short sale, foreclosure, and an '
+                              'NPL loan sale to a local investor. It ranks foreclosure as the least '
+                              'favorable of the six [qxx8ymWOrGU @ 00:03:34]. Colin Whitenack describes '
+                              'the same posture. Close, get a servicer involved because you cannot service '
+                              "the mortgage yourself, then enter 'problem-solving mode,' where the "
+                              'borrower either reperforms or gets help exiting the property [gxiK62dzE34 @ '
+                              '00:00:42]. The servicer point is near-universal. PPR outsourced servicing '
+                              'after Dodd-Frank, Davis insists on a licensed servicer, and FIXnotes calls '
+                              'skipping servicing to save $25 a false economy. A reperformed loan can then '
+                              'be held for cash flow or sold to performing-note buyers. That resale is the '
+                              'flip that turns a distressed purchase into a realized gain, with '
+                              'foreclosure kept as the backstop that gives negotiation its teeth.'],
+               'table': {'caption': 'Core Operating Principles Shared Across Note Buyers',
+                         'headers': ['Consensus Principle',
+                                     'What Practitioners Say',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Defaults stem mostly from life events, not bad borrowers',
+                                   "About 90-95% of 7e's non-performing notes trace to job loss, death, "
+                                   'health, or COVID',
+                                   "Underwrite the predicament and design a workout around the borrower's "
+                                   'recovery',
+                                   'Preferred Trust ([nauUgmh1YZg @ 00:04:00])'],
+                                  ['Banks sell distressed paper at steep, regulator-driven discounts',
+                                   'Banks dump non-performing loans for lending capacity and regulators at '
+                                   '25-60% of value',
+                                   'A deep discounted basis protects capital across modify, short sale, or '
+                                   'foreclose exits',
+                                   'Larry Hoffman ([R_jwbBWh1LA @ 00:04:43])'],
+                                  ['Start with first-position notes on property you would own',
+                                   'Stick with first position, single-family homes or farmland, and avoid '
+                                   'factories or shopping centers',
+                                   'Pass on junior liens and thin-down-payment mobile homes that usually '
+                                   'default',
+                                   'Toby Mathis Esq | Tax Planning & Asset Protection ([LuxJXWLFKHI @ '
+                                   '00:13:54])'],
+                                  ['Lien position drives value far more than face amount',
+                                   'Unsecured loans are worth roughly 100 times less, about 50 bps versus '
+                                   '50 cents',
+                                   'Pull county records to confirm secured status and lien position before '
+                                   'any bid',
+                                   'FIXnotes | Non-Performing Note Investing ([lxjMbDIOEGw @ 00:01:23])'],
+                                  ['Exit through the borrower whenever borrower intent allows it',
+                                   'Reperform, season, and resell is more profitable 99% of the time at '
+                                   'PPR',
+                                   'Treat foreclosure as the least favorable exit and as backstop leverage '
+                                   'only',
+                                   'PPR Capital Management ([DEk2gIFHJiM @ 00:06:37])'],
+                                  ['A servicer gets involved immediately after closing on the note',
+                                   'You close, then bring in a servicer because you cannot service the '
+                                   'mortgage yourself',
+                                   'Budget servicing from day one rather than trying to save $25 a month',
+                                   'Colin Whitenack | Real Estate & Investing ([gxiK62dzE34 @ 00:00:42])'],
+                                  ['Reliability and a personal network unlock the best deal flow',
+                                   'The best deals never really hit the street; be a reliable buyer inside '
+                                   'your buy box',
+                                   'Close every deal you commit to and build seller relationships over '
+                                   'years',
+                                   'Fusion Notes ([PXDW2SqUfMA @ 00:02:06])']]}},
+              {'section_number': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Pricing is where the operators get specific. Lee Arnold's ladder starts "
+                              'from a $100,000 note at 8 percent over 30 years, about $833 a month, and '
+                              'walks the price down as the paper gets uglier. Arnold quotes 96 cents for '
+                              'scratch-and-dent paper paid past the 15-day grace period, 92 cents for '
+                              '30-to-60-day slow-pay, and 80 to 84 cents once the borrower stops '
+                              'responding [tszcHb-Spo4 @ 00:02:25]. The price falls to 60 to 65 cents at '
+                              'notice of default or lis pendens and roughly 40 cents at notice of sale. At '
+                              'that stage, a modification that restores the note to $100,000 turns a '
+                              "$40,000 buy into a $60,000 profit [tszcHb-Spo4 @ 00:03:39]. PPR's Nelson "
+                              'prices off the lower of the loan balance or the property value. That means '
+                              '80 to 90 cents of UPB on equity loans and about 70 cents of property value '
+                              'on upside-down ones [DEk2gIFHJiM @ 00:13:56]. Wells reports that 7e buys at '
+                              '40 to 60 percent of value from credit unions, whole-loan traders, '
+                              "liquidating funds and a broker's weekly list [nauUgmh1YZg @ 00:05:54]. "
+                              'Sierra Davis runs the yield math backward. Take a $40,000 UPB note paying '
+                              '$500 a month at 8.5 percent, secured by a $100,000 property. Offering '
+                              '$22,000 targets a 12 to 15 percent yield and nets about $475 a month after '
+                              'servicing.',
+                              'The diligence and closing sequence is consistent across shops. PPR prices '
+                              'the data tape first and submits a bid. Once awarded, it runs 30 to 60 days '
+                              'of diligence on collateral, the assignment chain, tax and title, and a '
+                              'drive-by BPO, then closes 30 to 45 days after that [DEk2gIFHJiM @ '
+                              '00:15:09]. Davis compresses the retail version into an indicative offer '
+                              'followed by 14 to 21 days of diligence on the three Ps: people, property '
+                              'and paperwork. Davis prefers 24 to 48 months of payment seasoning, closes '
+                              'with an assignment and allonge, then boards the loan with a servicer '
+                              "[UimgP_cJydU @ 00:33:40]. Whitenack's checklist is the field version. Order "
+                              'a BPO, review payment history, rates, amounts paid, the last payment and '
+                              'anything unusual, and confirm insurance is in place and taxes are current '
+                              '[gxiK62dzE34 @ 00:00:16]. Sourcing feeds the front of that pipeline. Dan of '
+                              'Fusion Notes names Paperstac, Tradex and Watermark Exchange, plus Facebook '
+                              'buy/sell groups where you post your buy criteria and conferences like Note '
+                              'Expo, DME and IMN. Dan then points to two overlooked channels. Foreclosure '
+                              'attorneys have large investor networks, and loan servicers know which '
+                              'clients are selling portfolios or closing funds [PXDW2SqUfMA @ 00:01:19]. '
+                              'Davis caps exposure at or below 75 percent ITV and prices to the worst-case '
+                              'exit.',
+                              'Once the loan is boarded, the workout script decides the return. FIXnotes '
+                              'says the two biggest points of loan resolution are building rapport and '
+                              "gathering intel, while playing good cop against an unseen 'loan committee' "
+                              '[lxjMbDIOEGw @ 00:05:29]. Every call runs on three questions: What '
+                              'happened? Where are you now? What do you want to do? [lxjMbDIOEGw @ '
+                              '00:06:48]. In the FIXnotes lifecycle, a loan goes 90 days late, gets a '
+                              'demand letter, then moves to forbearance, modification, reinstatement or '
+                              'foreclosure. FIXnotes favors forbearance because it keeps the foreclosure '
+                              'pending and avoids modification phantom income, and writes its '
+                              "modifications at 9 percent and up. 7e's sequence is an attorney demand "
+                              'letter, then a negotiated plan, then reperformance [El1w73FgjM0 @ '
+                              '00:07:24]. Wells describes the plan itself: forbearance or a trial plan for '
+                              'six months, then a loan modification. Arrears are wrapped to the end of the '
+                              'loan or paid quarterly, and the reperformed note is then resold for profit '
+                              "[nauUgmh1YZg @ 00:05:15]. PPR's modification toolbox adds deferring "
+                              'principal to a balloon and extending terms to 30 or 40 years. The FIXnotes '
+                              'exit menu supplies the stick: a deed in lieu, cash for keys, or a short '
+                              'sale where waiving the deficiency buys cooperation. 7e frames having '
+                              'multiple exits as the negotiating leverage itself.'],
+               'table': {'caption': 'Street Price Ladder and Bid Rules by Delinquency Stage',
+                         'headers': ['Stage or Pricing Rule',
+                                     'Price Point',
+                                     'Street Mechanic',
+                                     'Expert Source'],
+                         'rows': [['Scratch-and-dent note paid past the 15-day grace period',
+                                   'About 96 cents on the dollar of balance',
+                                   'Minor lateness keeps pricing near face on a $100K, 8%, 30-year note',
+                                   'The Lee Arnold System of Real Estate Investing ([tszcHb-Spo4 @ '
+                                   '00:01:16])'],
+                                  ['Slow-pay note running 30 to 60 days late',
+                                   'About 92 cents on the dollar of balance',
+                                   'Chronic lateness earns a modest additional discount from the note '
+                                   'seller',
+                                   'The Lee Arnold System of Real Estate Investing ([tszcHb-Spo4 @ '
+                                   '00:01:33])'],
+                                  ['Non-performing note where the borrower gives no response',
+                                   'Anywhere from 80 to 84 cents on the dollar',
+                                   'Silence from the borrower pushes the paper firmly into distressed '
+                                   'pricing',
+                                   'The Lee Arnold System of Real Estate Investing ([tszcHb-Spo4 @ '
+                                   '00:02:25])'],
+                                  ['Notice of default or lis pendens recorded against the property',
+                                   'About 60 to 65 cents on the dollar',
+                                   'Example given is a $65K note secured against a $200K house',
+                                   'The Lee Arnold System of Real Estate Investing ([tszcHb-Spo4 @ '
+                                   '00:03:03])'],
+                                  ['Notice of sale with three weeks of advertising underway',
+                                   'Roughly 40 cents on the dollar of balance',
+                                   'Modification restores the note to $100K, turning a $40K buy into $60K '
+                                   'profit',
+                                   'The Lee Arnold System of Real Estate Investing ([tszcHb-Spo4 @ '
+                                   '00:03:39])'],
+                                  ['Institutional rule: lower of UPB or property value',
+                                   '80-90 cents of UPB on equity loans; about 70 cents of value '
+                                   'upside-down',
+                                   'Always price off whichever is lower, the loan balance or the '
+                                   'collateral value',
+                                   'PPR Capital Management ([DEk2gIFHJiM @ 00:13:56])'],
+                                  ['Upset bid floor when foreclosure is the fallback',
+                                   'Buy under 60 cents to profit at a 70-cent recovery',
+                                   'Set upset bids low because taking REOs runs against the business model',
+                                   'FIXnotes | Non-Performing Note Investing ([lxjMbDIOEGw @ 00:04:18])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Edges the Operators Use at the Bid and the Workout',
+                           'body': 'These are the moves practitioners say widen the spread between '
+                                   'purchase basis and realized exit, from bidding to deal structure to '
+                                   'off-market sourcing.',
+                           'items': ['Bid lower on loans carrying legacy 3-5% rates. Those borrowers can '
+                                     'afford to reinstate, which kills the upside, so write your own '
+                                     'modifications at 9% and up [FIXnotes | Non-Performing Note Investing '
+                                     '— lxjMbDIOEGw @ 00:07:28].',
+                                     'In a partial, the buyer still receives a full assignment and '
+                                     'endorsement, the purchase agreement limits the months bought, and '
+                                     'the note is reassigned back afterward. The ideal partial makes you '
+                                     'whole, and everything after it is gravy [Paperstac — Il6eOQ_69VM @ '
+                                     '00:14:44].',
+                                     'Create sellable paper. On a $100K lot, the most Kevin Shortle pays '
+                                     'for a $90K or $80K note is $70K. Fix it by splitting into a $70K '
+                                     'first, a $20K second and $10K down [Investor Fuel - Real Estate '
+                                     'Mastermind — VrGeElvxk5E @ 00:22:01].',
+                                     'Work loan servicers for off-market supply. They know which clients '
+                                     'are selling portfolios or closing funds, and foreclosure attorneys '
+                                     'can connect you to their investor networks [Fusion Notes — '
+                                     'PXDW2SqUfMA @ 00:01:36].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Get on the Tape Lists',
+                              'action': 'Build inbound deal flow from exchanges, groups, conferences and '
+                                        'direct relationships.',
+                              'detail': 'Get on the lists that send note tapes from small banks, hedge '
+                                        'funds and private investors, then layer in Paperstac, Tradex, '
+                                        'Watermark Exchange and Facebook buy/sell groups where you post '
+                                        'your buy criteria [Colin Whitenack | Real Estate & Investing — '
+                                        'gxiK62dzE34 @ 00:00:00].'},
+                             {'step': 2,
+                              'title': 'Price the Tape and Bid',
+                              'action': 'Bid off the lower of UPB or property value, not off face amount.',
+                              'detail': 'Pay 80-90 cents of UPB on equity loans and about 70 cents of '
+                                        'property value on upside-down loans. Submit the bid before any '
+                                        'deep diligence is ordered [PPR Capital Management — DEk2gIFHJiM @ '
+                                        '00:13:56].'},
+                             {'step': 3,
+                              'title': 'Diligence the Three Ps and Close',
+                              'action': 'Verify people, property and paperwork, then close and board with '
+                                        'a servicer.',
+                              'detail': 'Run 14-21 days of diligence on people, property and paperwork, '
+                                        'preferring 24-48 months of seasoning. Close with an assignment '
+                                        'and allonge, then board the loan with a licensed servicer [Sierra '
+                                        'Davis — UimgP_cJydU @ 00:33:40].'},
+                             {'step': 4,
+                              'title': 'Work Out, Reperform, Resell',
+                              'action': 'Move the borrower through a trial plan into a modification, then '
+                                        'sell the reperformed note.',
+                              'detail': 'Use forbearance or a six-month trial plan, then a loan '
+                                        'modification with arrears wrapped to the end or paid quarterly. '
+                                        'Then resell the reperformed note for profit [Preferred Trust — '
+                                        'nauUgmh1YZg @ 00:05:15].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether to run your own tape or hand capital to a '
+                              'fund. Rick Allen and TJ Osterman of Paperstac put DIY returns at 12 to 18 '
+                              'percent, with non-performing loans hitting 40 to 50 percent, but they warn '
+                              'flatly that you will lose some deals, while fund returns sit in the 8 to 12 '
+                              'percent band with risk spread across the book [EdBetMgLDeQ @ 00:06:20]. '
+                              'Their answer is a hybrid: park $100K of $150K in funds and run the '
+                              'remainder through partials and hypothecation, or split $500K into $400K '
+                              'passive and $100K active [EdBetMgLDeQ @ 00:15:35]. 7e Investments sells the '
+                              'passive side directly, quoting a $5K Reg A+ minimum at 7 percent for one '
+                              'year or 8 percent for four years, and an accredited-only Reg D Class E5 '
+                              'bond paying 11 percent monthly on a $500K minimum [El1w73FgjM0 @ 00:03:15]. '
+                              'Kevin Shortle, running a personal book after 30-plus years, reports an 11.5 '
+                              'percent average yield at 86 percent investment-to-balance and under 60 '
+                              'percent investment-to-value [VrGeElvxk5E @ 00:17:02]. The operator read: a '
+                              'solo buyer who executes well matches or beats the top fund tier, but '
+                              'absorbs every blown deal personally instead of across 120-plus pooled '
+                              'assets.',
+                              'Practitioners split hard on whether non-performing paper is a beginner '
+                              'play. Stealth Wealth pitches buying non-performing notes, foreclosing, and '
+                              'flipping as low risk and says it works especially well for investors who '
+                              'are just starting out [0m8vHNeASRY @ 00:06:24]. Bill Mencarow of Paper '
+                              "Source tells newcomers on Toby Mathis's channel to get a mentor and stick "
+                              'only with first-position notes, and adds that in notes since the 80s Bill '
+                              'has never foreclosed, negotiating every time instead [LuxJXWLFKHI @ '
+                              '00:13:54]. FIXnotes treats the property as the outcome to avoid: set upset '
+                              'bids low because REOs are the opposite of why they are in the business, and '
+                              'buy under 60 cents so even a 70-cent recovery still pays [lxjMbDIOEGw @ '
+                              '00:04:18]. Taylor Nelson at PPR Capital Management ranks exiting through '
+                              'the borrower as more profitable 99 percent of the time, reperforming, '
+                              'seasoning, and reselling rather than taking title [DEk2gIFHJiM @ 00:06:37]. '
+                              'The FIXnotes six-exit menu still keeps foreclosure live as the least '
+                              'favorable lever, alongside cash for keys, deed in lieu as the stick, and '
+                              'short sales where waiving the deficiency buys cooperation. Net: the '
+                              'foreclose-and-flip camp is a minority voice, and the operators with the '
+                              'biggest books push negotiation and treat the courthouse as leverage, not '
+                              'the business model.',
+                              'Pricing frameworks diverge too. Lee Arnold anchors to cents on the note '
+                              'balance by delinquency stage: 96 for scratch-and-dent, 92 for slow-pay, 80 '
+                              'to 84 for non-performing with no response, 60 to 65 at notice of default, '
+                              'and about 40 at notice of sale [tszcHb-Spo4 @ 00:02:25]. PPR instead works '
+                              'off the lower of loan balance or property value, paying 80 to 90 cents of '
+                              'UPB on equity loans and about 70 cents of property value on upside-down '
+                              'loans [DEk2gIFHJiM @ 00:14:14]. Larry Hoffman frames bank dumps at 25 to 60 '
+                              'percent of actual dollar value, while Preferred Trust guest Lauren Wells of '
+                              '7e buys at 40 to 60 percent [R_jwbBWh1LA @ 00:04:58]. Servicing splits the '
+                              'same way: PPR outsourced to a licensed servicer that executes its '
+                              'loss-mitigation waterfall, while FIXnotes pushes client-managed servicing '
+                              'and calls skipping a servicer to save $25 a false economy [lxjMbDIOEGw @ '
+                              '00:09:31]. On exits, Bill Mencarow sells the next nine years of payments '
+                              'and keeps the tail, Tracy Rewey sells a partial that makes the seller whole '
+                              'so everything out in the future is gravy, and Kevin Shortle buys the next '
+                              '40 of 56 payments. Pick one pricing model and one servicing model before '
+                              'you bid, and run every tape through the same math.'],
+               'table': {'caption': 'Side-by-side playbooks where note practitioners take opposing '
+                                    'approaches',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Fund capital versus buying notes yourself',
+                                   'Buy notes yourself for 12 to 18 percent, with NPLs hitting 40 to 50 '
+                                   'percent',
+                                   'Fund capital for 8 to 12 percent with risk spread, or run a hybrid '
+                                   'split',
+                                   'Paperstac ([EdBetMgLDeQ @ 00:06:20]); Paperstac ([EdBetMgLDeQ @ '
+                                   '00:15:35])'],
+                                  ['Non-performing paper as a first deal',
+                                   'Foreclose and flip NPLs, pitched as low risk for brand-new investors',
+                                   'Get a mentor and buy first-position notes only when starting out',
+                                   'Stealth Wealth ([0m8vHNeASRY @ 00:06:24]); Toby Mathis Esq | Tax '
+                                   'Planning & Asset Protection ([LuxJXWLFKHI @ 00:13:54])'],
+                                  ['Pricing anchor for a delinquent note',
+                                   'Cents on the note balance by delinquency stage, from 96 down to about '
+                                   '40',
+                                   'Lower of UPB or property value: 80 to 90 cents equity, about 70 cents '
+                                   'upside-down',
+                                   'The Lee Arnold System of Real Estate Investing ([tszcHb-Spo4 @ '
+                                   '00:02:25]); PPR Capital Management ([DEk2gIFHJiM @ 00:14:14])'],
+                                  ['Servicing model after closing the purchase',
+                                   'Outsource to a licensed servicer running the loss-mitigation waterfall',
+                                   'Client-managed servicing; skipping it to save $25 is a false economy',
+                                   'PPR Capital Management ([DEk2gIFHJiM @ 00:03:15]); FIXnotes | '
+                                   'Non-Performing Note Investing ([lxjMbDIOEGw @ 00:09:31])'],
+                                  ['Modification structure for a reperforming borrower',
+                                   'Write modifications at 9 percent or higher, and bid lower on '
+                                   'legacy-rate files',
+                                   'Defer principal to a balloon and extend the term to 30 or 40 years',
+                                   'FIXnotes | Non-Performing Note Investing ([lxjMbDIOEGw @ 00:08:50]); '
+                                   'PPR Capital Management ([DEk2gIFHJiM @ 00:07:22])'],
+                                  ['Registration path for raising outside capital',
+                                   'Reg A with a $5K minimum, SEC-qualified with annual audited financials',
+                                   'Reg D at $15K to $20K, which Paperstac would choose in hindsight',
+                                   'Preferred Trust ([nauUgmh1YZg @ 00:14:11]); Paperstac ([EdBetMgLDeQ @ '
+                                   '00:10:05])'],
+                                  ['Buying existing paper versus creating new notes',
+                                   'Buy discounted notes off exchanges, tapes, Facebook groups, and broker '
+                                   'lists',
+                                   'Rehab and seller-finance to create a note, season 12 to 24 months, '
+                                   'then sell',
+                                   'Fusion Notes ([PXDW2SqUfMA @ 00:00:14]); Sierra Davis ([UimgP_cJydU @ '
+                                   '00:25:43])']]},
+               'key_metrics': [{'label': 'DIY versus fund return band',
+                                'metric': 'DIY versus fund return band',
+                                'value': '12-18% DIY (NPLs up to 40-50%) vs 8-12% fund',
+                                'confidence': 'attributed_practitioner_claim',
+                                'context': 'Rick Allen and TJ Osterman contrast self-directed note buying '
+                                           'with fund investing, noting DIY buyers will lose some deals.',
+                                'source': 'Paperstac ([EdBetMgLDeQ @ 00:06:20])'},
+                               {'label': 'Self-run portfolio average yield',
+                                'metric': 'Self-run portfolio average yield',
+                                'value': '11.5% average yield, 86% investment-to-balance, under 60% ITV',
+                                'confidence': 'attributed_practitioner_claim',
+                                'context': "Kevin Shortle's portfolio metrics after 30-plus years buying "
+                                           'notes.',
+                                'source': 'Investor Fuel - Real Estate Mastermind ([VrGeElvxk5E @ '
+                                          '00:17:02])'},
+                               {'label': 'Upside-down loan pricing',
+                                'metric': 'Upside-down loan pricing',
+                                'value': 'About 70 cents of property value (80-90 cents of UPB on equity '
+                                         'loans)',
+                                'confidence': 'attributed_practitioner_claim',
+                                'context': 'PPR always prices off the lower of the loan balance or the '
+                                           'property value.',
+                                'source': 'PPR Capital Management ([DEk2gIFHJiM @ 00:14:14])'}]},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Time is the silent killer of NPL returns. Taylor Nelson of PPR describes a '
+                              'loan underwritten for a 12-month hold that a Chapter 13 bankruptcy filing '
+                              'stretched to 36 months, still closing at roughly a 20 to 25 percent return '
+                              'but tying up capital three times longer than projected [DEk2gIFHJiM @ '
+                              '00:20:18]. Sierra Davis flags that foreclosure timelines vary by state, '
+                              'with New York able to take years, and that junior liens carry wipe-out risk '
+                              '[UimgP_cJydU @ 00:15:35]. Kevin Shortle puts Florida foreclosure at about '
+                              '18 months, warns that a contested contract for deed can be forced into '
+                              'foreclosure by a judge, and notes COVID-era modifications stretched some '
+                              'loans to 60 years before rules changed October 1, with foreclosures '
+                              "expected to rise from here [VrGeElvxk5E @ 00:28:24]. PPR's own 189-loan "
+                              'trade, roughly $23M UPB against $50M of property value bought for about '
+                              '$18M, still saw about 20 percent foreclose, even as it produced about $8M '
+                              'gross profit at a 20 percent IRR over an 18-month weighted hold '
+                              '[DEk2gIFHJiM @ 00:21:34]. The check: model the worst-case state timeline '
+                              'and a bankruptcy delay into every bid, because even a well-bought 189-loan '
+                              'book carried a one-in-five foreclosure rate and holds that can triple. Plan '
+                              'reserves accordingly.',
+                              'Overpaying is the most repeated self-inflicted wound. FIXnotes warns that '
+                              'borrowers sitting on 3 to 5 percent legacy rates can simply reinstate, '
+                              'leaving you holding cheap debt, so the bid has to drop for those files, '
+                              'while their own modifications get written at 9 percent and up [lxjMbDIOEGw '
+                              '@ 00:07:28]. PPR confirms the resale side of that trap: low-coupon loans '
+                              'fetch a weaker price when you go to sell the reperformed paper [DEk2gIFHJiM '
+                              '@ 00:12:02]. Kevin Shortle sees the same mistake on note creation, where a '
+                              'seller carries a $90K or $80K note on a $100K lot and Kevin pays at most '
+                              '$70K for it; the fix is structuring a $70K first, a $20K second, and $10K '
+                              'down so the paper is sellable [VrGeElvxk5E @ 00:21:12]. Bill Mencarow adds '
+                              'collateral traps: a down payment under 15 to 20 percent is scary, and '
+                              'mobile homes sold with $0 or $1,000 down usually default, so stick to '
+                              'single-family homes or farmland over factories and shopping centers, and '
+                              'ask whether you would want to own the property [LuxJXWLFKHI @ 00:14:30]. '
+                              'Personal Finance for Everyone lists skipping diligence, overpaying, '
+                              'impatience, and thin cash reserves as the four standard ways a cheap note '
+                              'becomes a costly mistake.',
+                              'Even the passive route has trapdoors. Rick Allen and TJ Osterman describe '
+                              'note investing as very passive until it is not, then very involved, and '
+                              'admit Reg A+ was exorbitant once you stack an attorney, accountant, '
+                              'controller, fund admin, and two audits, which is why they would pick Reg D '
+                              'in hindsight [EdBetMgLDeQ @ 00:04:08]. Lauren Wells of 7e reports the '
+                              'honest loss line from just under 100 loans: less than $8,000 lost across '
+                              'three loans in a year and a half, with about 5 percent going through full '
+                              "foreclosure via a partner REO firm [nauUgmh1YZg @ 00:09:18]. 7e's own fund "
+                              'walkthrough labels the investments speculative and illiquid and flags '
+                              'rising delinquencies and flattening values as the reason for stricter '
+                              'buying [El1w73FgjM0 @ 00:12:05]. Tracy Rewey, in the business since 1988, '
+                              'tells newcomers to expect that not every note pays and to learn the '
+                              'financial calculator [Il6eOQ_69VM @ 00:23:49]. Fusion Notes adds a sourcing '
+                              'trap: the best deals never really hit the street, so a buyer who fails to '
+                              'close inside a stated buy box never sees the good paper. The economics '
+                              'check is simple: budget for losses, fund overhead, and dead time before you '
+                              'count the yield.'],
+               'table': {'caption': 'Firsthand failure modes and the economics check each practitioner '
+                                    'applies',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Bankruptcy filing blows up the hold period',
+                                   'A Chapter 13 filing stretched a projected 12-month hold to 36 months',
+                                   'Still produced about a 20 to 25 percent return; model the delay into '
+                                   'the bid',
+                                   'PPR Capital Management ([DEk2gIFHJiM @ 00:20:18])'],
+                                  ['Legacy-rate borrower reinstates instead of modifying',
+                                   'Borrowers on 3 to 5 percent rates can reinstate and keep cheap debt',
+                                   'Bid lower on low-coupon files; modifications get written at 9 percent '
+                                   'and up',
+                                   'FIXnotes | Non-Performing Note Investing ([lxjMbDIOEGw @ 00:07:28])'],
+                                  ['Bank applies resumed payments to arrears and fees',
+                                   "Payments go to arrears and late fees first, snowballing the borrower's "
+                                   'debt',
+                                   'Use forbearance or a six-month trial plan, then modify and wrap the '
+                                   'arrears',
+                                   'Preferred Trust ([nauUgmh1YZg @ 00:05:01])'],
+                                  ['Junior lien or unsecured paper gets wiped out',
+                                   'Junior liens carry wipe-out risk; unsecured loans are worth about 100 '
+                                   'times less',
+                                   'Verify secured status and lien position at the county before bidding',
+                                   'Sierra Davis ([UimgP_cJydU @ 00:17:39]); FIXnotes | Non-Performing '
+                                   'Note Investing ([lxjMbDIOEGw @ 00:01:23])'],
+                                  ['Created note priced too close to property value',
+                                   'A $90K or $80K note on a $100K lot draws a $70K maximum offer',
+                                   'Split into a $70K first, $20K second, and $10K down to stay sellable',
+                                   'Investor Fuel - Real Estate Mastermind ([VrGeElvxk5E @ 00:21:12])'],
+                                  ['Thin down payment on weak collateral defaults',
+                                   'Mobile homes sold with $0 or $1,000 down usually end up in default',
+                                   'Treat anything under 15 to 20 percent down as scary collateral',
+                                   'Toby Mathis Esq | Tax Planning & Asset Protection ([LuxJXWLFKHI @ '
+                                   '00:14:30])'],
+                                  ['Long state foreclosure timelines freeze capital',
+                                   'Florida runs about 18 months, and New York foreclosure can take years',
+                                   'Price to the worst-case exit and stay at or below 75 percent ITV',
+                                   'Investor Fuel - Real Estate Mastermind ([VrGeElvxk5E @ 00:28:24]); '
+                                   'Sierra Davis ([UimgP_cJydU @ 00:15:35]); Sierra Davis ([UimgP_cJydU @ '
+                                   '00:43:02])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Kill Switches Before You Wire Funds',
+                           'body': 'Each gate comes from a loss, delay, or pricing mistake the '
+                                   'practitioners hit or watched others hit. If a file fails any one of '
+                                   'them, the bid dies or the price drops.',
+                           'items': ['Kill the bid if diligence on the 3 Ps (people, property, paperwork) '
+                                     'is not finished inside the 14 to 21 day window, including a BPO, '
+                                     'insurance on the property, and current taxes [Sierra Davis — '
+                                     'UimgP_cJydU @ 00:33:40] [Colin Whitenack | Real Estate & Investing — '
+                                     'gxiK62dzE34 @ 00:00:29].',
+                                     'Kill the bid if the price only works at full reperformance; buy '
+                                     'under 60 cents so even a 70-cent recovery still pays [FIXnotes | '
+                                     'Non-Performing Note Investing — lxjMbDIOEGw @ 00:04:18].',
+                                     'Kill the bid on a legacy 3 to 5 percent coupon unless the price '
+                                     'absorbs a reinstatement and a weaker low-coupon resale [FIXnotes | '
+                                     'Non-Performing Note Investing — lxjMbDIOEGw @ 00:07:28] [PPR Capital '
+                                     'Management — DEk2gIFHJiM @ 00:12:02].',
+                                     'Kill the deal if no licensed servicer is boarded at closing, because '
+                                     "you can't service the mortgage yourself [Colin Whitenack | Real "
+                                     'Estate & Investing — gxiK62dzE34 @ 00:00:42] [PPR Capital Management '
+                                     '— DEk2gIFHJiM @ 00:03:15].']},
+               'key_metrics': [{'label': 'Chapter 13 hold extension',
+                                'metric': 'Chapter 13 hold extension',
+                                'value': 'Projected 12-month hold stretched to 36 months',
+                                'confidence': 'attributed_practitioner_claim',
+                                'context': 'PPR case study where a borrower bankruptcy filing tripled the '
+                                           'hold, still returning about 20 to 25 percent.',
+                                'source': 'PPR Capital Management ([DEk2gIFHJiM @ 00:19:19])'},
+                               {'label': '189-loan trade foreclosure share',
+                                'metric': '189-loan trade foreclosure share',
+                                'value': 'About 20% foreclosed; about 20% IRR on an 18-month weighted hold',
+                                'confidence': 'attributed_practitioner_claim',
+                                'context': 'About $23M UPB on about $50M property value bought for about '
+                                           '$18M; over 50% reperformed and about 25% paid off or '
+                                           'short-sold.',
+                                'source': 'PPR Capital Management ([DEk2gIFHJiM @ 00:21:34])'},
+                               {'label': 'Realized NPL losses',
+                                'metric': 'Realized NPL losses',
+                                'value': 'Less than $8,000 lost across 3 loans in 1.5 years',
+                                'confidence': 'attributed_practitioner_claim',
+                                'context': 'Lauren Wells of 7e on a book of just under 100 loans, with '
+                                           'about 5% going to full foreclosure.',
+                                'source': 'Preferred Trust ([nauUgmh1YZg @ 00:09:18])'},
+                               {'label': 'Florida foreclosure timeline',
+                                'metric': 'Florida foreclosure timeline',
+                                'value': 'About 18 months',
+                                'confidence': 'attributed_practitioner_claim',
+                                'context': 'Kevin Shortle contrasts Florida foreclosure with a '
+                                           'contract-for-deed eviction of 30 to 90 days.',
+                                'source': 'Investor Fuel - Real Estate Mastermind ([VrGeElvxk5E @ '
+                                          '00:28:24])'}]}],
+ 'pull_quote': '"So, you\'re always working off of the lower of the loan balance or that property value." '
+               'Taylor Nelson, attributed to PPR Capital Management (DEk2gIFHJiM @ 00:14:14).',
+ 'diagram_id': 'diag-06',
+ 'action_checklist': ['Build deal flow beyond the exchanges: post your buy criteria in Facebook buy/sell '
+                      'groups and ask foreclosure attorneys and loan servicers which clients are selling '
+                      'portfolios [Fusion Notes — PXDW2SqUfMA @ 00:01:19].',
+                      'Price every tape off the lower of UPB or property value, targeting 80 to 90 cents '
+                      'of UPB on equity loans and about 70 cents of value on upside-down loans [PPR '
+                      'Capital Management — DEk2gIFHJiM @ 00:14:14].',
+                      'Run diligence before closing: order a BPO, review payment history and last payment, '
+                      'and confirm insurance is in place and taxes are current [Colin Whitenack | Real '
+                      'Estate & Investing — gxiK62dzE34 @ 00:00:16].',
+                      'Close with an assignment and allonge, then board the loan with a licensed servicer '
+                      '[Sierra Davis — UimgP_cJydU @ 00:33:40].',
+                      'Open borrower calls to build rapport and gather intel using the script: What '
+                      'happened? Where are you now? What do you want to do? [FIXnotes | Non-Performing '
+                      'Note Investing — lxjMbDIOEGw @ 00:06:48].',
+                      'Run a 6-month forbearance or trial plan, convert it to a loan modification with '
+                      'arrears wrapped to the end or paid quarterly, then resell the reperformed note '
+                      '[Preferred Trust — nauUgmh1YZg @ 00:05:15].'],
+ 'statutory_citations': [{'title': 'PPR Capital Management — Mortgage Note Investing Explained: The '
+                                   'Non-Performing Loan Opportunity [00:21:34]',
+                          'url': 'https://www.youtube.com/watch?v=DEk2gIFHJiM&t=1294s',
+                          'relevance': 'Primary practitioner testimony on a 189-loan NPL trade, its '
+                                       'reperformance and foreclosure mix, and its 20 percent IRR.'},
+                         {'title': 'Paperstac — Should You Invest in a Mortgage Note Fund or Buy Notes '
+                                   'Yourself? [00:06:20]',
+                          'url': 'https://www.youtube.com/watch?v=EdBetMgLDeQ&t=380s',
+                          'relevance': 'Primary practitioner testimony on DIY versus fund return bands, '
+                                       'deal losses, and the hybrid allocation model.'},
+                         {'title': "FIXnotes | Non-Performing Note Investing — The Beginner's Guide to "
+                                   'Resolutions (Non-Performing Mortgage Notes) [00:07:28]',
+                          'url': 'https://www.youtube.com/watch?v=lxjMbDIOEGw&t=448s',
+                          'relevance': 'Primary practitioner testimony on reinstatement risk from '
+                                       'legacy-rate borrowers and bidding lower on those files.'},
+                         {'title': 'Investor Fuel - Real Estate Mastermind — Why Note Investing Beats '
+                                   'Rentals: 11% Returns, Less Risk, and No Tenants with Kevin Shortle '
+                                   '[00:21:12]',
+                          'url': 'https://www.youtube.com/watch?v=VrGeElvxk5E&t=1272s',
+                          'relevance': 'Primary practitioner testimony on pricing created notes and '
+                                       'restructuring them into sellable first and second liens.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'nauUgmh1YZg',
+                       'title': 'Building Wealth through Non-Performing Mortgage Note Investing',
+                       'channel': 'Preferred Trust',
+                       'author': 'Preferred Trust',
+                       'text': 'Our minimum is 5K.',
+                       'tip': 'Our minimum is 5K.',
+                       'timestamp': 851,
+                       'timestamp_seconds': 851,
+                       'timestamp_label': '[00:14:11]',
+                       'url': 'https://www.youtube.com/watch?v=nauUgmh1YZg&t=851s',
+                       'markdown': '[00:14:11](https://www.youtube.com/watch?v=nauUgmh1YZg&t=851s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PXDW2SqUfMA',
+                       'title': 'Dan Explains Where to Buy Mortgage Notes',
+                       'channel': 'Fusion Notes',
+                       'author': 'Fusion Notes',
+                       'text': 'so foreclosure attorneys are dealing with investors who own loans all the '
+                               'time.',
+                       'tip': 'so foreclosure attorneys are dealing with investors who own loans all the '
+                              'time.',
+                       'timestamp': 79,
+                       'timestamp_seconds': 79,
+                       'timestamp_label': '[00:01:19]',
+                       'url': 'https://www.youtube.com/watch?v=PXDW2SqUfMA&t=79s',
+                       'markdown': '[00:01:19](https://www.youtube.com/watch?v=PXDW2SqUfMA&t=79s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HXkjpvAG51k',
+                       'title': 'Mortgage Note Investing A Profitable Path to Real',
+                       'channel': 'Personal Finance for Everyone',
+                       'author': 'Personal Finance for Everyone',
+                       'text': 'a cheap note can quickly become a costly mistake if you overlook these '
+                               'details.',
+                       'tip': 'a cheap note can quickly become a costly mistake if you overlook these '
+                              'details.',
+                       'timestamp': 559,
+                       'timestamp_seconds': 559,
+                       'timestamp_label': '[00:09:19]',
+                       'url': 'https://www.youtube.com/watch?v=HXkjpvAG51k&t=559s',
+                       'markdown': '[00:09:19](https://www.youtube.com/watch?v=HXkjpvAG51k&t=559s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UimgP_cJydU',
+                       'title': 'How to Become the Bank in 2026 (Note Investing Full Breakdown)',
+                       'channel': 'Sierra Davis',
+                       'author': 'Sierra Davis',
+                       'text': 'So if the borrower owes $100,000 at 10% but the investor buys that note '
+                               'for 80,000 the yield is significantly higher than 10%.',
+                       'tip': 'So if the borrower owes $100,000 at 10% but the investor buys that note for '
+                              '80,000 the yield is significantly higher than 10%.',
+                       'timestamp': 1498,
+                       'timestamp_seconds': 1498,
+                       'timestamp_label': '[00:24:58]',
+                       'url': 'https://www.youtube.com/watch?v=UimgP_cJydU&t=1498s',
+                       'markdown': '[00:24:58](https://www.youtube.com/watch?v=UimgP_cJydU&t=1498s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tszcHb-Spo4',
+                       'title': 'How to Buy Mortgage Notes at GREAT Discounts',
+                       'channel': 'The Lee Arnold System of Real Estate Investing',
+                       'author': 'The Lee Arnold System of Real Estate Investing',
+                       'text': 'now something like this you can anticipate paying anywhere from 80 to 84 '
+                               'cents on the dollar.',
+                       'tip': 'now something like this you can anticipate paying anywhere from 80 to 84 '
+                              'cents on the dollar.',
+                       'timestamp': 145,
+                       'timestamp_seconds': 145,
+                       'timestamp_label': '[00:02:25]',
+                       'url': 'https://www.youtube.com/watch?v=tszcHb-Spo4&t=145s',
+                       'markdown': '[00:02:25](https://www.youtube.com/watch?v=tszcHb-Spo4&t=145s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lxjMbDIOEGw',
+                       'title': "The Beginner's Guide to Resolutions (Non-Performing Mortgage Notes)",
+                       'channel': 'FIXnotes | Non-Performing Note Investing',
+                       'author': 'FIXnotes | Non-Performing Note Investing',
+                       'text': 'For loan resolution, I think the two biggest points of your loan '
+                               'resolution process are to build rapport and gather intel.',
+                       'tip': 'For loan resolution, I think the two biggest points of your loan resolution '
+                              'process are to build rapport and gather intel.',
+                       'timestamp': 329,
+                       'timestamp_seconds': 329,
+                       'timestamp_label': '[00:05:29]',
+                       'url': 'https://www.youtube.com/watch?v=lxjMbDIOEGw&t=329s',
+                       'markdown': '[00:05:29](https://www.youtube.com/watch?v=lxjMbDIOEGw&t=329s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'R_jwbBWh1LA',
+                       'title': 'Note Investing Explained: How to Become the Bank in 2026',
+                       'channel': 'Larry Hoffman',
+                       'author': 'Larry Hoffman',
+                       'text': "We're talking 25 to 60% of their actual dollar value.",
+                       'tip': "We're talking 25 to 60% of their actual dollar value.",
+                       'timestamp': 298,
+                       'timestamp_seconds': 298,
+                       'timestamp_label': '[00:04:58]',
+                       'url': 'https://www.youtube.com/watch?v=R_jwbBWh1LA&t=298s',
+                       'markdown': '[00:04:58](https://www.youtube.com/watch?v=R_jwbBWh1LA&t=298s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LuxJXWLFKHI',
+                       'title': 'How To Be A Note Investor (A Step-By-Step GUIDE)',
+                       'channel': 'Toby Mathis Esq | Tax Planning & Asset Protection',
+                       'author': 'Toby Mathis Esq | Tax Planning & Asset Protection',
+                       'text': 'Specifically for somebody starting out, I would only stick with first '
+                               'position notes.',
+                       'tip': 'Specifically for somebody starting out, I would only stick with first '
+                              'position notes.',
+                       'timestamp': 834,
+                       'timestamp_seconds': 834,
+                       'timestamp_label': '[00:13:54]',
+                       'url': 'https://www.youtube.com/watch?v=LuxJXWLFKHI&t=834s',
+                       'markdown': '[00:13:54](https://www.youtube.com/watch?v=LuxJXWLFKHI&t=834s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qxx8ymWOrGU',
+                       'title': '6 Ways to Profit from Non-Performing Notes',
+                       'channel': 'FIXnotes | Non-Performing Note Investing',
+                       'author': 'FIXnotes | Non-Performing Note Investing',
+                       'text': 'as a note investor you are a lender and you can enforce your security '
+                               'instrument through the foreclosure process.',
+                       'tip': 'as a note investor you are a lender and you can enforce your security '
+                              'instrument through the foreclosure process.',
+                       'timestamp': 231,
+                       'timestamp_seconds': 231,
+                       'timestamp_label': '[00:03:51]',
+                       'url': 'https://www.youtube.com/watch?v=qxx8ymWOrGU&t=231s',
+                       'markdown': '[00:03:51](https://www.youtube.com/watch?v=qxx8ymWOrGU&t=231s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gxiK62dzE34',
+                       'title': 'How does investing in a non-performing mortgage note work? - Colin '
+                                'Whitenack',
+                       'channel': 'Colin Whitenack | Real Estate & Investing',
+                       'author': 'Colin Whitenack | Real Estate & Investing',
+                       'text': 'Once you own the note, you close on it, you get a servicer involved '
+                               "because you can't service the mortgage.",
+                       'tip': 'Once you own the note, you close on it, you get a servicer involved because '
+                              "you can't service the mortgage.",
+                       'timestamp': 42,
+                       'timestamp_seconds': 42,
+                       'timestamp_label': '[00:00:42]',
+                       'url': 'https://www.youtube.com/watch?v=gxiK62dzE34&t=42s',
+                       'markdown': '[00:00:42](https://www.youtube.com/watch?v=gxiK62dzE34&t=42s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VrGeElvxk5E',
+                       'title': 'Why Note Investing Beats Rentals: 11% Returns, Less Risk, and No Tenants '
+                                'with Kevin Shortle',
+                       'channel': 'Investor Fuel - Real Estate Mastermind',
+                       'author': 'Investor Fuel - Real Estate Mastermind',
+                       'text': "I'll tell you right now, the most I pay for that note is 70 grand.",
+                       'tip': "I'll tell you right now, the most I pay for that note is 70 grand.",
+                       'timestamp': 1272,
+                       'timestamp_seconds': 1272,
+                       'timestamp_label': '[00:21:12]',
+                       'url': 'https://www.youtube.com/watch?v=VrGeElvxk5E&t=1272s',
+                       'markdown': '[00:21:12](https://www.youtube.com/watch?v=VrGeElvxk5E&t=1272s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VrGeElvxk5E',
+                       'title': 'Why Note Investing Beats Rentals: 11% Returns, Less Risk, and No Tenants '
+                                'with Kevin Shortle',
+                       'channel': 'Investor Fuel - Real Estate Mastermind',
+                       'author': 'Investor Fuel - Real Estate Mastermind',
+                       'text': 'My average yield was 11.5%.',
+                       'tip': 'My average yield was 11.5%.',
+                       'timestamp': 1022,
+                       'timestamp_seconds': 1022,
+                       'timestamp_label': '[00:17:02]',
+                       'url': 'https://www.youtube.com/watch?v=VrGeElvxk5E&t=1022s',
+                       'markdown': '[00:17:02](https://www.youtube.com/watch?v=VrGeElvxk5E&t=1022s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0m8vHNeASRY',
+                       'title': 'Mortgage Note Investing (Explained) in 8 Minutes!',
+                       'channel': 'Stealth Wealth',
+                       'author': 'Stealth Wealth',
+                       'text': 'it works especially well for investors who do not have experience in real '
+                               'estate investing or are just starting out.',
+                       'tip': 'it works especially well for investors who do not have experience in real '
+                              'estate investing or are just starting out.',
+                       'timestamp': 384,
+                       'timestamp_seconds': 384,
+                       'timestamp_label': '[00:06:24]',
+                       'url': 'https://www.youtube.com/watch?v=0m8vHNeASRY&t=384s',
+                       'markdown': '[00:06:24](https://www.youtube.com/watch?v=0m8vHNeASRY&t=384s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DEk2gIFHJiM',
+                       'title': 'Mortgage Note Investing Explained: The Non-Performing Loan Opportunity',
+                       'channel': 'PPR Capital Management',
+                       'author': 'PPR Capital Management',
+                       'text': "So, you're always working off of the lower of the loan balance or that "
+                               'property value.',
+                       'tip': "So, you're always working off of the lower of the loan balance or that "
+                              'property value.',
+                       'timestamp': 854,
+                       'timestamp_seconds': 854,
+                       'timestamp_label': '[00:14:14]',
+                       'url': 'https://www.youtube.com/watch?v=DEk2gIFHJiM&t=854s',
+                       'markdown': '[00:14:14](https://www.youtube.com/watch?v=DEk2gIFHJiM&t=854s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DEk2gIFHJiM',
+                       'title': 'Mortgage Note Investing Explained: The Non-Performing Loan Opportunity',
+                       'channel': 'PPR Capital Management',
+                       'author': 'PPR Capital Management',
+                       'text': 'We made about a 20 or 25% return.',
+                       'tip': 'We made about a 20 or 25% return.',
+                       'timestamp': 1218,
+                       'timestamp_seconds': 1218,
+                       'timestamp_label': '[00:20:18]',
+                       'url': 'https://www.youtube.com/watch?v=DEk2gIFHJiM&t=1218s',
+                       'markdown': '[00:20:18](https://www.youtube.com/watch?v=DEk2gIFHJiM&t=1218s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EdBetMgLDeQ',
+                       'title': 'Should You Invest in a Mortgage Note Fund or Buy Notes Yourself?',
+                       'channel': 'Paperstac',
+                       'author': 'Paperstac',
+                       'text': "It can be very passive until it's not.",
+                       'tip': "It can be very passive until it's not.",
+                       'timestamp': 248,
+                       'timestamp_seconds': 248,
+                       'timestamp_label': '[00:04:08]',
+                       'url': 'https://www.youtube.com/watch?v=EdBetMgLDeQ&t=248s',
+                       'markdown': '[00:04:08](https://www.youtube.com/watch?v=EdBetMgLDeQ&t=248s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Il6eOQ_69VM',
+                       'title': 'My First Mortgage Note Purchase - Tracy Rewey',
+                       'channel': 'Paperstac',
+                       'author': 'Paperstac',
+                       'text': 'yes that is the ideal situation is to sell a partial that makes you whole '
+                               "and everything out in the future if you're the seller here everything out "
+                               'in the future is gravy right.',
+                       'tip': 'yes that is the ideal situation is to sell a partial that makes you whole '
+                              "and everything out in the future if you're the seller here everything out "
+                              'in the future is gravy right.',
+                       'timestamp': 1008,
+                       'timestamp_seconds': 1008,
+                       'timestamp_label': '[00:16:48]',
+                       'url': 'https://www.youtube.com/watch?v=Il6eOQ_69VM&t=1008s',
+                       'markdown': '[00:16:48](https://www.youtube.com/watch?v=Il6eOQ_69VM&t=1008s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'El1w73FgjM0',
+                       'title': 'Mortgage Note Income Fund',
+                       'channel': '7e Investments',
+                       'author': '7e Investments',
+                       'text': 'The 52% on the slide is an illustration, but the logic behind it is how we '
+                               'think about protecting capital.',
+                       'tip': 'The 52% on the slide is an illustration, but the logic behind it is how we '
+                              'think about protecting capital.',
+                       'timestamp': 515,
+                       'timestamp_seconds': 515,
+                       'timestamp_label': '[00:08:35]',
+                       'url': 'https://www.youtube.com/watch?v=El1w73FgjM0&t=515s',
+                       'markdown': '[00:08:35](https://www.youtube.com/watch?v=El1w73FgjM0&t=515s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'}]}

@@ -1,689 +1,858 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($5,000–$30,000 USD) and configure a lean, low-opex ($1,500–$9,500 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Reserve-First Treasury, Microsoft CSP and Adobe VIP Rails, Twelve Lean Stack Layers, and Evidence-Backed Launch Controls",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #37, SaaS Discount Brokerage & GPO Arbitrage, ranks #04 of 37 "
-        "with a 94/100 Money-to-Manpower Score. Across its 12 mapped plays, capital "
-        "belongs in liquidity and authorized distribution relationships before custom "
-        "software. Allocate at least half of the $5,000–$30,000 startup envelope to "
-        "working capital, then assemble twelve inexpensive infrastructure layers around "
-        "Microsoft CSP, Adobe VIP Marketplace, Telarus or Avant, and documented GPO "
-        "membership. Formula v2.0 annual owner profits remain $32,000 Conservative, "
-        "$225,000 Base, and $522,000 Scaled; client subscription spend is excluded "
-        "from recognized brokerage revenue. This chapter translates those targets into "
-        "cash envelopes, explicit planning prices, entity and insurance controls, and "
-        "launch tests. Weekly technographic observation supports renewal discovery, "
-        "but never establishes an exact installation date or a customer's buying authority."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual retained brokerage revenue; client subscription spend excluded",
-            "note": "32% margin; $32,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$500,000",
-            "context": "Annual retained brokerage revenue; client subscription spend excluded",
-            "note": "45.0% margin; $225,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual retained brokerage revenue; client subscription spend excluded",
-            "note": "58% margin; $522,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Ring-fence liquidity before purchasing productive capacity",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build three startup envelopes of $5,000, $15,000, and $30,000, "
-                    "not three excuses to buy different software. Allocate 50% to "
-                    "working-capital reserve, 10% to entity, banking, and insurance setup, "
-                    "10% to contracts and accounting design, 8% to security and recovery, "
-                    "10% to initial infrastructure, and 12% to prospect validation. The "
-                    "resulting reserves are $2,500, $7,500, and $15,000. Hold them in a "
-                    "separate business deposit account with a documented transfer rule; "
-                    "they are neither recognized revenue nor discretionary marketing cash. "
-                    "At the minimum $1,500 monthly recurring operating envelope, the "
-                    "smallest reserve provides only 1.67 months before collections. Since "
-                    "the first deal can take one to three months, a $5,000 launch "
-                    "requires deferred discretionary spending, separate living-expense "
-                    "coverage, or contracted early collections. Do not silently assume "
-                    "three months of runway. Quotes for insurance or contract review can "
-                    "exceed an envelope; reduce outreach purchases or increase committed "
-                    "capital rather than borrowing from the protected half. Spend setup "
-                    "money only against a receipt and a named operational dependency. "
-                    "An unused allocation remains cash, not permission to purchase "
-                    "another subscription. Reforecast available runway every Friday "
-                    "using settled balances, dated obligations, and collectible invoices "
-                    "rather than the CRM's probability-weighted pipeline."
-                ),
-                (
-                    "Keep the scorecard and the cash budget on separate, reconciling "
-                    "schedules. Formula v2.0 specifies $100,000 revenue and $32,000 owner "
-                    "profit at 32%, $500,000 and $225,000 at 45.0%, and $900,000 and "
-                    "$522,000 at 58%. Their implied total annual costs are $68,000, "
-                    "$275,000, and $378,000. An illustrative fixed operating allocation "
-                    "of $1,500, $5,500, and $9,500 monthly consumes $18,000, $66,000, "
-                    "and $114,000 annually; the remaining cost allowances are $50,000, "
-                    "$209,000, and $264,000. Those allowances must absorb delivery labor, "
-                    "contractors, acquisition, applicable compensation, and other costs "
-                    "outside the fixed envelope without counting anything twice. They "
-                    "are reconciliation limits, not evidence that those costs have been "
-                    "quoted. Preserve teams of 1 FT + 3 C, 1 FT + 3 C, and "
-                    "2 FT + 4 C respectively; contractor counts do not imply full-time "
-                    "utilization. Label the scorecard's gross revenue line as retained "
-                    "brokerage revenue in management reporting because customer software "
-                    "spend is excluded. Owner profit is the supplied model output, not "
-                    "a newly calculated personal after-tax distribution. If payroll, "
-                    "insurance, or acquisition quotes break these limits, change the "
-                    "delivery design or reject the operating plan rather than inflating "
-                    "revenue with pass-through subscription dollars."
-                ),
-                (
-                    "Underwrite commitment exposure before activating annual Microsoft NCE "
-                    "seats. A customer ordering 100 seats at an illustrative $20 monthly "
-                    "wholesale cost creates $24,000 of annual supplier exposure before "
-                    "contract-specific cancellation rights. A $2,000 monthly debit does "
-                    "not prefund that obligation, and a $2,500 reserve cannot safely "
-                    "carry it. Require collected annual funding, explicit supplier-supported "
-                    "credit arrangements, or a genuinely shorter commitment permitted "
-                    "by the distributor; otherwise decline the order. Card authorization "
-                    "and ACH initiation are not settled cash, and settlement does not "
-                    "eliminate every return or dispute risk. Maintain separate ledgers "
-                    "for customer funding, supplier payables, earned fees, and reversal "
-                    "exposure. For an agency illustration, $1,000,000 of customer "
-                    "subscription spend generating a $100,000 commission pool with an "
-                    "80% retained share produces $80,000 of operator revenue, not "
-                    "$1,000,000 or $100,000. The example does not assign an undocumented "
-                    "retained_share to the canonical scenarios. Apply the actual contract "
-                    "and ASC 606 principal-versus-agent analysis, then reconcile cash "
-                    "receipts to that treatment. A distributor's late rebate remains a "
-                    "receivable only when recognition criteria are satisfied; it cannot "
-                    "fund next week's supplier debit. Model a delayed payout and a "
-                    "customer default together before approving any material commitment."
-                ),
-            ],
-            "table": {
-                "caption": "Six capital envelopes across $5,000, $15,000, and $30,000 launches",
-                "headers": [
-                    "Capital allocation and protected percentage",
-                    "Amounts across the three startup envelopes",
-                    "Purchase or treasury instruction before release",
-                    "Failure response preserving the reserve floor",
-                ],
-                "rows": [
-                    [
-                        "Working capital and supplier exposure reserve receives 50%",
-                        "$2,500, $7,500, and $15,000 remain separately tracked cash",
-                        "Release against dated obligations and verified collected funding",
-                        "Decline commitments exceeding funding and documented supplier credit",
-                    ],
-                    [
-                        "Entity, banking, and initial insurance setup receives 10%",
-                        "$500, $1,500, and $3,000 fund documented setup costs",
-                        "Obtain actual filing costs and broker premium quotations",
-                        "Move outreach allocations first when essential premiums exceed estimates",
-                    ],
-                    [
-                        "Contracts and accounting policy design together receive 10%",
-                        "$500, $1,500, and $3,000 support narrowly scoped engagements",
-                        "Prioritize agency treatment, supplier liability, and customer authority",
-                        "Reduce contract variants instead of copying incompatible reseller terms",
-                    ],
-                    [
-                        "Security controls and tested recovery capability receive 8%",
-                        "$400, $1,200, and $2,400 support initial security purchases",
-                        "Buy hardware authentication keys and test encrypted restoration",
-                        "Defer cosmetic dashboards before weakening access or recovery controls",
-                    ],
-                    [
-                        "Initial infrastructure and software commissioning together receive 10%",
-                        "$500, $1,500, and $3,000 cover initial stack commissioning",
-                        "Purchase only services required by one complete transaction",
-                        "Retain unused funds rather than prepay speculative annual licenses",
-                    ],
-                    [
-                        "Prospect validation and first acquisition experiments receive 12%",
-                        "$600, $1,800, and $3,600 fund measured customer discovery",
-                        "Test qualified renewal conversations before buying large contact lists",
-                        "Stop campaigns when verified acquisition economics exceed retained contribution",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect cash from commitments disguised as software overhead",
-                "body": (
-                    "The largest early balance-sheet risk is usually a supplier obligation, "
-                    "not the price of the CRM."
-                ),
-                "items": [
-                    "Ask the distributor to demonstrate its actual cancellation, transfer, and credit-note workflow before accepting the first annual NCE order.",
-                    "Negotiate payout evidence and dispute procedures with Telarus or Avant; a verbal residual estimate cannot support a cash forecast.",
-                    "Maintain a separate rebate-reversal schedule by supplier, member cohort, and earning period so GPO clawbacks cannot disappear inside blended margins.",
-                    "Invoice shared savings only after the agreed baseline and signed renewal establish the fee; at 30%, $40,000 of validated savings yields $12,000 before collection costs.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Assemble twelve inexpensive layers around one auditable transaction",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat the twelve-layer matrix as a procurement specification, not "
-                    "a claim that vendor prices were checked live. Its exact dollar "
-                    "figures are explicit USD planning inputs for named tiers; confirm "
-                    "regional pricing, taxes, eligibility, annual commitments, and "
-                    "contract terms before purchase. Start with one Google Workspace "
-                    "Business Starter identity at $7 monthly on annual commitment, "
-                    "one Bitwarden Teams seat at $4 monthly billed annually, one "
-                    "$5 Amazon Lightsail instance, and 20 GB of Amazon S3 Standard "
-                    "storage at $0.023 per GB-month in US East. That baseline is "
-                    "$16.46 monthly before requests, transfer, domain registration, "
-                    "payment fees, taxes, and any required seat minimums. It is "
-                    "deliberately much smaller than the $1,500 minimum operating "
-                    "envelope because software subscriptions are not the whole business. "
-                    "Increase identity and vault seats for actual workers, never shared "
-                    "logins; do not buy six paid CRM seats merely because the scaled "
-                    "team contains six people. Keep free-tier limits visible in the "
-                    "purchasing register. When a limit becomes binding, compare the "
-                    "paid upgrade against the hours it saves using a documented "
-                    "loaded labor rate. A $50 monthly upgrade needs more than "
-                    "one saved hour at $50 per hour to create positive direct value."
-                ),
-                (
-                    "Implement saas_technographic_churn_pixel_scraping as a permission-aware "
-                    "public-signal collector, not a covert tracking deployment. Fetch "
-                    "public commercial pages and permitted DNS TXT/CNAME observations "
-                    "weekly, recording retrieval time, source, response status, and a "
-                    "content hash. Python urllib, html.parser, hashlib, sqlite3, and "
-                    "a scheduler are sufficient for the first pass; use a permitted "
-                    "DNS-over-HTTPS endpoint for record types the socket module does "
-                    "not expose. Salesforce, HubSpot, Marketo, Segment, and NetSuite "
-                    "references can indicate technology use, but a script disappearance "
-                    "can also reflect a tag-manager change, caching, or blocked retrieval. "
-                    "Weekly polling identifies a seven-day observation interval, not "
-                    "the exact installation or removal day. Store last-seen and "
-                    "first-absent timestamps instead of inventing precision. For "
-                    "1,000 domains and five observations per weekly cycle, budget "
-                    "5,000 fetches weekly, or about 21,650 monthly using 4.33 weeks. "
-                    "At two seconds of serialized processing per fetch, that is "
-                    "roughly twelve processing hours monthly, mostly waiting rather "
-                    "than analyst labor. Rate-limit by host, honor access restrictions, "
-                    "avoid authenticated pages, and stop on sustained denial responses. "
-                    "Route only corroborated changes into the CRM; raw signal volume "
-                    "is not qualified pipeline."
-                ),
-                (
-                    "The specified fallback combines passive DNS history with public "
-                    "job-posting mentions before a person confirms a likely vendor "
-                    "switch. A twelve-month renewal at months ten or eleven is a "
-                    "hypothesis only after an actual subscription start date or "
-                    "customer-confirmed anniversary exists; website tags alone cannot "
-                    "establish a billing term. Suppose 40 weekly changes yield ten "
-                    "corroborated switches and four authorized renewal conversations. "
-                    "At fifteen analyst minutes per change and $40 per hour, "
-                    "screening costs $400, or $100 per qualified conversation before "
-                    "other acquisition expenses. If the conversations do not produce "
-                    "enough retained contribution, reduce monitoring scope rather "
-                    "than accelerating outreach. Connect customer-approved opportunities "
-                    "to distributor workflows with stable customer, tenant, quote, "
-                    "and order identifiers. Pax8 and Ingram access, Adobe VIP "
-                    "Marketplace capabilities, and Telarus or Avant feeds depend on "
-                    "contracts and enabled interfaces; no generic integration promises "
-                    "universal CPOR or billing automation. Microsoft CPOR attribution "
-                    "does not itself transfer licenses or authorize tenant administration. "
-                    "Use supplier-supported exports until API permissions are confirmed. "
-                    "A nightly CSV reconciliation with exception ownership is safer "
-                    "than an untested write integration that duplicates seats, "
-                    "changes tenant assignments, or posts a rebate twice. Retain "
-                    "request identifiers so repeated jobs remain idempotent."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve named-vendor layers with explicit planning tiers and lean fallbacks",
-                "headers": [
-                    "Layer and named service selected for planning",
-                    "Exact pricing input and material purchase condition",
-                    "Operational role and required implementation evidence",
-                    "Cheaper alternative or disciplined upgrade trigger",
-                ],
-                "rows": [
-                    [
-                        "Layer 01 uses Google Workspace Business Starter identities",
-                        "$7 per user monthly, annual commitment planning basis",
-                        "Separate business mailboxes, calendar ownership, and multifactor authentication",
-                        "Use existing licensed business identities instead of duplicate seats",
-                    ],
-                    [
-                        "Layer 02 uses Bitwarden Teams credential vaults",
-                        "$4 per user monthly, billed annually planning basis",
-                        "Share scoped secrets through collections with individual accountability",
-                        "Bitwarden Free at $0 supports isolated single-operator credentials",
-                    ],
-                    [
-                        "Layer 03 uses Cloudflare Free authoritative DNS",
-                        "$0 monthly DNS tier; domain registration costs extra",
-                        "Publish verified SPF, DKIM, and DMARC records correctly",
-                        "Retain existing registrar DNS when equivalent controls already exist",
-                    ],
-                    [
-                        "Layer 04 uses Amazon Lightsail Linux compute",
-                        "$5 monthly public-IPv4 bundle is the planning selection",
-                        "Schedule collectors and reconciliations without storing supplier credentials",
-                        "Use an existing secured workstation before needing unattended hosting",
-                    ],
-                    [
-                        "Layer 05 uses GitHub Free private repositories",
-                        "$0 subscription tier; metered excess usage remains separate",
-                        "Version schemas, matching rules, and reproducible deployment instructions",
-                        "Local Git at $0 works with independent encrypted backups",
-                    ],
-                    [
-                        "Layer 06 uses Python and SQLite observation storage",
-                        "$0 license cost for standard-library collection and storage",
-                        "Record public evidence intervals and deduplicate change events",
-                        "Manual domain checks fit the first twenty qualified accounts",
-                    ],
-                    [
-                        "Layer 07 uses Amazon S3 Standard evidence storage",
-                        "$0.023 per GB-month, US East first storage band",
-                        "Encrypt evidence objects and restrict access by service identity",
-                        "Encrypted local archives cost $0 incremental on existing storage",
-                    ],
-                    [
-                        "Layer 08 uses HubSpot Free customer records",
-                        "$0 subscription tier within currently available free allowances",
-                        "Track authority, anniversary evidence, source provenance, and opportunity stage",
-                        "Use an existing spreadsheet while enforcing unique customer identifiers",
-                    ],
-                    [
-                        "Layer 09 uses Stripe Payments domestic collection rails",
-                        "ACH 0.8%, capped $5; domestic cards 2.9% plus $0.30",
-                        "Track settlement and exceptions; confirm applicable account pricing",
-                        "Bank transfers may reduce fees under the bank's actual schedule",
-                    ],
-                    [
-                        "Layer 10 uses Wave Starter bookkeeping records",
-                        "$0 subscription tier; payment and optional services cost extra",
-                        "Maintain retained-fee ledgers with manual imports where supported",
-                        "An accountant-approved ledger avoids buying premature automation add-ons",
-                    ],
-                    [
-                        "Layer 11 uses tawk.to Free customer support",
-                        "$0 software tier; optional staffing services remain separate",
-                        "Route order questions without accepting credentials through chat",
-                        "An existing shared mailbox eliminates another initial support interface",
-                    ],
-                    [
-                        "Layer 12 uses Microsoft Partner Center account access",
-                        "$0 account-access budget; programs and distributor obligations priced separately",
-                        "Verify authorized partner relationships and supported customer workflows",
-                        "Begin with contracted distributor portals and controlled manual exports",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Make entity, treasury, and revenue evidence production-grade",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Form the operating entity in the jurisdiction justified by actual "
-                    "management and business activity, obtain its EIN directly from "
-                    "the IRS, and use the same legal name across banking, distributor "
-                    "applications, insurance, and customer contracts. A Delaware filing "
-                    "does not remove another state's registration or tax obligations. "
-                    "Document the responsible signatory and beneficial ownership "
-                    "information requested by the bank, then check current reporting "
-                    "requirements for the entity rather than assuming every domestic "
-                    "company has identical federal filing duties. Maintain operating, "
-                    "reserve, and customer-funding subledgers even if the bank offers "
-                    "only two physical accounts. FDIC coverage generally aggregates "
-                    "deposits by depositor, insured bank, and ownership category; "
-                    "multiple account labels do not automatically multiply protection. "
-                    "Require independent verification of changed supplier payment "
-                    "instructions through an established contact channel. A founder-only "
-                    "operation can use a delayed release and bank alerts until a "
-                    "second authorized reviewer exists, but should document that "
-                    "remaining concentration of control. Collect W-9 forms where "
-                    "appropriate, classify contractors from actual working conditions, "
-                    "and calendar state annual reports and applicable tax filings. "
-                    "These controls prevent entity confusion and payment diversion "
-                    "from consuming the same reserve that protects customer commitments."
-                ),
-                (
-                    "Ask an insurance broker for technology errors-and-omissions and "
-                    "cyber quotations that describe brokerage, procurement recommendations, "
-                    "customer tenant access, and collection activity accurately. Review "
-                    "social-engineering, funds-transfer, contractual-liability, and "
-                    "professional-services exclusions instead of assuming a broad policy "
-                    "name covers supplier debt. Record deductibles and retention amounts "
-                    "in the liquidity model; insurance does not make an unfunded annual "
-                    "license commitment disappear. Customer agreements should state "
-                    "who buys licenses, who invoices whom, how savings are measured, "
-                    "which credits reduce fees, and what happens after cancellation "
-                    "or vendor repricing. For a $200,000 like-for-like renewal baseline "
-                    "reduced to $160,000, verified annual savings equal $40,000; "
-                    "a 25%–35% contingent fee yields $10,000–$14,000. At 30%, "
-                    "the invoice is $12,000, subject to the agreed earning and "
-                    "collection terms. Seat reductions, removed modules, different "
-                    "support levels, taxes, currency changes, and one-time credits "
-                    "need explicit normalization rules. Obtain written authority "
-                    "before requesting account details or submitting partner changes. "
-                    "For Adobe VIP Marketplace, Microsoft CSP, Zoom-related master-agent "
-                    "business, and private GPO membership, preserve the applicable "
-                    "supplier and member agreements. Never combine unrelated customers "
-                    "inside a pooled tenant to manufacture volume eligibility. "
-                    "A wholesale discount cannot cure an unauthorized license structure."
-                ),
-                (
-                    "Make recognition policy traceable to each contract instead of "
-                    "hard-coding every receipt as commission income. ASC 606 "
-                    "principal-versus-agent guidance examines control before transfer; "
-                    "a reseller label alone does not decide presentation. For this "
-                    "candidate's scorecard, recognized operator revenue is the net "
-                    "retained fee basis, including eligible wholesale spreads, residuals, "
-                    "administrative rebates, and earned shared-savings fees, excluding "
-                    "customer subscription spend. Where actual contracts produce "
-                    "different accounting presentation, maintain an explicit bridge "
-                    "to the scorecard and have the accountant resolve statutory "
-                    "reporting treatment. Public-company revenue rules are not a "
-                    "universal filing mandate for a small private brokerage. Separately, "
-                    "outbound acquisition must reflect the channel used. Apply "
-                    "CAN-SPAM requirements to commercial email, including accurate "
-                    "headers, identification, address, and functioning opt-out handling. "
-                    "Maintain suppression records centrally rather than merely removing "
-                    "contacts from one campaign. Review 47 U.S.C. 227 and "
-                    "47 CFR 64.1200 before automated calls or texts, and review "
-                    "16 CFR Part 310 for applicable telemarketing restrictions, "
-                    "including business-to-business misrepresentation prohibitions. "
-                    "Do not treat a business phone number as blanket permission "
-                    "for automated outreach. Keep approved scripts and source records "
-                    "with the opportunity so complaints, disputes, and supplier "
-                    "reviews can be answered from evidence rather than recollection."
-                ),
-            ],
-            "table": {
-                "caption": "Four production records connecting legal identity, risk, authority, and earnings",
-                "headers": [
-                    "Control record maintained by the operating business",
-                    "Evidence captured before live customer money moves",
-                    "Recurring verification and named ownership requirement",
-                    "Failure response and direct financial consequence",
-                ],
-                "rows": [
-                    [
-                        "Entity and bank identity match across every agreement",
-                        "Formation record, IRS EIN letter, and bank confirmation",
-                        "Founder checks signatories and calendars applicable state filings",
-                        "Suspend mismatched payments until verified legal identity is restored",
-                    ],
-                    [
-                        "Insurance schedule describes actual brokerage and access activities",
-                        "Broker quotations, policy exclusions, deductibles, and coverage dates",
-                        "Founder reviews material service changes with the insurance broker",
-                        "Restrict uncovered activities or fund the documented retained exposure",
-                    ],
-                    [
-                        "Customer authority file governs licenses and member eligibility",
-                        "Signed authority, supplier permissions, tenant identifiers, and GPO terms",
-                        "Operations verifies every proposed transfer against supported supplier procedures",
-                        "Reject unauthorized pooling and preserve customers in separate tenants",
-                    ],
-                    [
-                        "Revenue evidence file supports retained contribution and reversals",
-                        "Executed contracts, supplier statements, savings baselines, and payout reconciliation",
-                        "Accountant reviews earning conditions and principal-versus-agent presentation monthly",
-                        "Hold disputed amounts outside earned fees until evidence resolves",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Prove readiness with a funded order and a reversible failure drill",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Run one complete dry transaction before introducing live customer "
-                    "funds. Choose a supplier-supported test environment where available; "
-                    "otherwise use internal records and clearly separated synthetic "
-                    "orders that never submit purchases. Create a customer identifier, "
-                    "capture authority, attach a quote, calculate retained revenue, "
-                    "simulate collection, and reconcile the supplier statement. For "
-                    "a $10,000 customer invoice with $9,000 attributable supplier "
-                    "cost under an applicable agency arrangement, the spread is "
-                    "$1,000, not $10,000 of scorecard revenue. At the matrix's "
-                    "domestic card planning rate, collection costs $290.30, leaving "
-                    "$709.70 before other operating costs; capped ACH processing "
-                    "would cost $5 under the stated schedule, leaving $995. "
-                    "Actual authorization, settlement timing, return exposure, "
-                    "and account pricing still determine the collection design. "
-                    "Do not extrapolate those illustrative contribution figures "
-                    "into replacement annual scorecard margins. Then replay the "
-                    "same statement and webhook identifiers to prove that no "
-                    "duplicate invoice, seat order, or commission is created. "
-                    "An operator should be able to trace every amount from "
-                    "signed terms through earning evidence to the bank entry "
-                    "without joining records by customer display name. Preserve "
-                    "the dry-run artifacts as the template for first-deal review."
-                ),
-                (
-                    "Exercise the failures that can overwhelm a small team: an "
-                    "ACH return after provisioning, a duplicate supplier statement, "
-                    "a compressed partner rebate, a lost administrator device, "
-                    "and a customer requesting an unsupported transfer. Assign "
-                    "each failure a person, a response deadline, and a bounded "
-                    "financial exposure. A $50,000 eligible monthly spend base "
-                    "at a 4% retained rebate produces $2,000; compression to "
-                    "3% removes $500 monthly, or $6,000 annually if sustained. "
-                    "That loss must reduce forecast contribution unless contract "
-                    "terms or operating changes genuinely offset it. Test recovery "
-                    "by restoring evidence and the SQLite database into a clean "
-                    "environment, then checking record counts, hashes, and access "
-                    "restrictions. Set an initial recovery-point target of one "
-                    "business day and a recovery-time target of four business "
-                    "hours for internal records; do not advertise these as "
-                    "supplier-backed service commitments. Revoke a test worker's "
-                    "access and verify loss of vault, mailbox, CRM, and cloud "
-                    "permissions. Keep emergency credentials offline with controlled "
-                    "access. A backup that cannot be restored and an account "
-                    "that cannot be revoked are production defects, even when "
-                    "the subscription invoice is only a few dollars."
-                ),
-                (
-                    "Release the first live order only after commercial authority, "
-                    "funding sufficiency, revenue mapping, and recovery evidence "
-                    "all pass the checks below. For the first thirty days, "
-                    "review supplier liabilities and settled collections daily, "
-                    "exceptions twice weekly, and acquisition economics weekly. "
-                    "Keep the founder responsible for supplier commitments; "
-                    "contractors can research public signals, reconcile approved "
-                    "statements, and prepare customer documentation within scoped "
-                    "permissions. Expand fixed spend only after recurring retained "
-                    "contribution covers the proposed recurring expense and the "
-                    "reserve remains intact under a payout delay. If a "
-                    "$300 monthly automation service saves six hours at $40 "
-                    "per hour, its $240 labor benefit does not justify "
-                    "the purchase on labor savings alone. Measure additional "
-                    "error reduction separately rather than asserting it. "
-                    "Keep a twelve-week cash forecast with dated receipts, "
-                    "contractual supplier debits, payroll, contractor milestones, "
-                    "and rebate-reversal scenarios. Reconcile the forecast to "
-                    "actual bank activity every week and record why each "
-                    "material variance occurred. A lean launch is complete "
-                    "when a funded, authorized transaction can be collected, "
-                    "fulfilled, reconciled, and recovered by the assigned "
-                    "team without improvisation. It is not complete merely "
-                    "because twelve vendor accounts exist or a dashboard "
-                    "shows a large pipeline."
-                ),
-            ],
-            "table": {
-                "caption": "Four release decisions with objective evidence and explicit stop conditions",
-                "headers": [
-                    "Readiness decision required before the first order",
-                    "Evidence demonstrating a successful end-to-end test",
-                    "Acceptance threshold and accountable operating owner",
-                    "Stop condition and permitted corrective fallback",
-                ],
-                "rows": [
-                    [
-                        "Commercial authority and supplier route are independently established",
-                        "Signed authority matches tenant, member, supplier, and order identifiers",
-                        "Founder verifies supported procedures before any purchase submission",
-                        "Use an authorized referral arrangement when reseller permissions fail",
-                    ],
-                    [
-                        "Funding covers commitments without consuming protected operating liquidity",
-                        "Settled funding schedule matches every noncancelable supplier payment",
-                        "Treasury owner checks delayed receipts and reversal exposure together",
-                        "Shorten permitted terms or decline the unfunded customer commitment",
-                    ],
-                    [
-                        "Revenue and cash reconcile without duplicate transaction effects",
-                        "Replay tests preserve invoice counts and retained contribution totals",
-                        "Bookkeeping owner matches contracts, statements, invoices, and bank entries",
-                        "Retain controlled manual reconciliation until integration defects are corrected",
-                    ],
-                    [
-                        "Recovery and access removal work under realistic conditions",
-                        "Clean restoration passes hashes and revoked accounts lose access",
-                        "Operations meets internal recovery targets using recorded drill evidence",
-                        "Delay live access until restoration and revocation both succeed",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four proofs required before accepting supplier liability",
-                "body": (
-                    "Each check needs retained evidence and an accountable owner; "
-                    "a checked box without an artifact does not pass."
-                ),
-                "items": [
-                    "Verify customer authority and the actual Microsoft CSP, Adobe VIP Marketplace, master-agent, or GPO route; CPOR attribution alone is insufficient.",
-                    "Match settled prefunding and permitted credit terms to the full supplier commitment, including plausible returns and delayed residual payouts.",
-                    "Reconcile a sample order to net retained revenue and replay its events without creating duplicate seats, invoices, or commissions.",
-                    "Restore records into a clean environment and revoke a test worker across every production identity, vault, and integration.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Lock the funding envelope",
-                    "action": "Separate at least half of startup capital into tracked reserve.",
-                    "detail": (
-                        "Document the remaining five allocations, dated obligations, "
-                        "and the twelve-week cash forecast before purchasing annual services."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Provision the minimum transaction path",
-                    "action": "Create individual identities and connect approved supplier records.",
-                    "detail": (
-                        "Record actual prices, permissions, customer identifiers, and "
-                        "evidence storage; begin with controlled exports where APIs are unavailable."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Rehearse collection and reconciliation",
-                    "action": "Run a synthetic order through fees, settlement, and statement matching.",
-                    "detail": (
-                        "Test duplicate events, partial credits, and payout delays without "
-                        "placing an unintended live purchase or charging a customer."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Release one funded live order",
-                    "action": "Approve the order only after all four readiness proofs pass.",
-                    "detail": (
-                        "Inspect the first settlement and supplier liability manually, "
-                        "retain the evidence, and resolve exceptions before increasing volume."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": "Buy proof of a funded transaction before buying the appearance of a large brokerage.",
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Allocate the $5,000, $15,000, or $30,000 envelope and protect at least 50% as separately tracked working capital.",
-        "Reconcile the three canonical revenue and owner-profit cases to total annual cost limits of $68,000, $275,000, and $378,000.",
-        "Confirm all twelve stack tiers against actual vendor quotes and provision individual identities without unnecessary paid seats.",
-        "Configure weekly technographic observation with timestamp intervals, host rate limits, corroborating DNS evidence, and human qualification.",
-        "Execute customer authority and supplier agreements, then document prefunding, insurance exclusions, and retained-revenue accounting.",
-        "Complete the funded-order rehearsal, duplicate-event test, clean restoration, and worker-access revocation before the first live commitment.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. 7704 — Requirements for transmission of commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Configure truthful commercial email, required sender information, "
-                "postal address, and functioning opt-out handling for renewal outreach."
-            ),
-        },
-        {
-            "title": "47 U.S.C. 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Evaluate automated calling and texting methods, destination types, "
-                "and applicable permission requirements before launching telephone outreach."
-            ),
-        },
-        {
-            "title": "47 CFR 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": (
-                "Translate applicable calling, texting, identification, and suppression "
-                "requirements into channel-specific operating controls."
-            ),
-        },
-        {
-            "title": "16 CFR Part 310 — Telemarketing Sales Rule",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310",
-            "relevance": (
-                "Review applicable telemarketing practices and exemptions, including "
-                "business-to-business misrepresentation restrictions and relevant recordkeeping."
-            ),
-        },
-        {
-            "title": "12 CFR 330.11 — Accounts of corporations, partnerships, and unincorporated associations",
-            "url": "https://www.ecfr.gov/current/title-12/section-330.11",
-            "relevance": (
-                "Assess business deposit coverage by the applicable ownership category "
-                "rather than assuming separate reserve labels create separate insurance limits."
-            ),
-        },
-        {
-            "title": "17 CFR 210.4-01 — Form, order, and terminology",
-            "url": "https://www.ecfr.gov/current/title-17/section-210.4-01",
-            "relevance": (
-                "Provides a primary regulatory reference for GAAP-based financial statements "
-                "within its SEC reporting scope; ASC 606 itself is accounting guidance, "
-                "not a general private-brokerage registration requirement."
-            ),
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'adobe-vip-marketplace-reselling-provisioning-transfers-team-licensing',
+ 'question_prompt': 'How does the Adobe VIP and VIP Marketplace reseller program work, and how do I '
+                    'provision, migrate, transfer, resize, and bill Adobe team licenses through it?',
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Reselling Adobe Through VIP Marketplace: Provisioning, Transfers, and Team Licensing',
+ 'subtitle': 'VIP to VIP Marketplace changes, Admin Console and reseller console workflows, Extended VIP '
+             'agreements, changing resellers, migrating VIP contracts to distributor portals, AppXite '
+             'automation, weekly invoicing changes, downsizing and auto-renewal settings, and Adobe Teams '
+             'vs Enterprise plan structures',
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': "Adobe's VIP Marketplace is the forced successor to classic VIP, and every channel "
+                      'operator who spoke treats it as a migrate-or-exit event: Bechtle UK flagged '
+                      'commercial VIP end-of-life for January 2025, AppXite says partners will soon be '
+                      'unable to transact Adobe any other way, and TD SYNNEX Spain opened reselling '
+                      'without certification. The street mechanics are consistent: four price levels keyed '
+                      'to per-customer seat counts, auto-renewal on the anniversary date, a 14-day return '
+                      "window replacing VIP's 30 days, and licenses landing in the admin console within "
+                      'minutes instead of roughly 5 days. Operators split on the transfer itself, with TD '
+                      'SYNNEX running it partner-side without customer involvement while Bechtle requires '
+                      'the customer admin to enter the agreement number, and on how late renewal changes '
+                      'can be pushed: SoftwareOne says two days out, TD SYNNEX says one.',
+ 'key_metrics': [{'label': 'VIPMP Volume Level Ladder',
+                  'metric': 'VIPMP Volume Level Ladder',
+                  'value': 'Level 1 up to 9 units; price breaks at 10-49, 50-99 and 100+ units',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'David Villanueva described the four per-end-customer volume levels on Stream '
+                             'One, noting Levels 3 and 4 currently carry the same discount.',
+                  'source': 'TD SYNNEX Spain ([824bcq4wI-Q @ 00:09:09])'},
+                 {'label': 'New License Return Window',
+                  'metric': 'New License Return Window',
+                  'value': '14 days (vs. 30 days, or up to 120 days with penalty, under VIP)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Villanueva said after the 15th day a VIPMP license cannot be returned, '
+                             'calling it stricter than classic VIP.',
+                  'source': 'TD SYNNEX Spain ([824bcq4wI-Q @ 00:17:35])'},
+                 {'label': 'Order-to-Console Provisioning Time',
+                  'metric': 'Order-to-Console Provisioning Time',
+                  'value': 'About 5 days under VIP vs. minutes under VIPM',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Bechtle UK said licenses now land in the admin console within minutes of '
+                             'ordering, removing the need for a license buffer.',
+                  'source': 'Bechtle UK ([v3ZCe1YINus @ 00:11:55])'},
+                 {'label': 'Buying Cycle Steps',
+                  'metric': 'Buying Cycle Steps',
+                  'value': 'Approximately 8 steps under VIP reduced to 4 under VIPM',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Zoe Roby counted the steps from quote request through invoicing under each '
+                             'program.',
+                  'source': 'Bechtle UK ([v3ZCe1YINus @ 00:04:18])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every channel voice treats VIP Marketplace as a deadline, not an option. '
+                              'Zoe Roby of Bechtle UK laid out the calendar: Adobe stopped accepting new '
+                              'commercial VIP business as of June, set January 2025 as end-of-life for '
+                              'commercial VIP, and required every live agreement to be migrated before the '
+                              'end of December, while education and government were not yet forced across '
+                              '[v3ZCe1YINus @ 00:02:42]. Angelina at AppXite put it more bluntly to '
+                              'resellers: within a few years there will be no other way to transact Adobe '
+                              'products, because Adobe is shifting to a purely digital model [GDHnAQ3r53A '
+                              "@ 00:01:15]. Adobe's own Doris Bing, speaking on the Pugh Computers "
+                              'webinar, framed the shift as a modernization of a program that had run '
+                              'manually for over 12 years, now API-based so the partner can quote, order '
+                              'and provision without bouncing between the reseller console and the '
+                              'licensing portal [qQoPO5MwZ60 @ 00:06:58]. David Villanueva at TD SYNNEX '
+                              'Spain added the angle that matters most for new entrants: no partner '
+                              'certification is required, only enablement on the distributor marketplace, '
+                              'and the recurring annual certification Adobe used to demand is gone '
+                              '[824bcq4wI-Q @ 00:06:49]. The barrier to adding Adobe resale to an existing '
+                              'cloud book is now close to zero.',
+                              "The structure underneath is consistent across Adobe's own explainers and "
+                              'the distributors running it. Adobe Care describes Direct Partners, also '
+                              'called APC reseller partners, as typically Platinum resellers or '
+                              'distributors who contract with Adobe and plug their marketplaces into it '
+                              'through APIs, while downstream resellers transact through those Direct '
+                              'Partner platforms [LCbK1S1leOQ @ 00:00:35]. The Direct Partner carries the '
+                              'build cost: it is their responsibility to invest in the marketplace '
+                              'platform, either through a third-party platform provider or an in-house '
+                              'team [LCbK1S1leOQ @ 00:02:38]. Support flows the same way. The reseller is '
+                              'the first line, handling onboarding, account management, billing questions '
+                              'and reseller-change requests, and only the technical relationship manager '
+                              'designated by the platform provider can escalate to Adobe technical '
+                              'support, through a contact method that may not be shared with resellers or '
+                              'customers [-rVmsfC5Agk @ 00:03:00]. AppXite pitches its platform exactly '
+                              'into that gap, saying partners who ride it avoid the technical development '
+                              'costs and delays of building and maintaining the Adobe API integration '
+                              'themselves, while running other vendor ecosystems alongside Adobe on the '
+                              'same platform [dhzXos8LyEg @ 00:01:40]. The practical read: a small '
+                              "reseller does not build anything, it rents a Direct Partner's marketplace "
+                              'and owns the customer relationship.',
+                              'On commercial mechanics, the agreement among the speakers is near-total. '
+                              "Auto-renewal on the customer's anniversary date replaces the old manual "
+                              'renewal chase; AppXite says auto-renewals are on by default and can be '
+                              'switched off per subscription, while increases can be pre-scheduled for the '
+                              'renewal date [GDHnAQ3r53A @ 00:09:23]. Doris Bing confirmed the renewal '
+                              'kicks in automatically on the anniversary so neither customer nor reseller '
+                              'touches anything that day, and that the partner can toggle it off at any '
+                              'point in the term, including for a customer running a tender [qQoPO5MwZ60 @ '
+                              '00:13:32]. Pricing still runs on four levels: Mayor Goodway at Bechtle UK '
+                              "said the customer's existing VIP level migrates across and three of the "
+                              'four levels carry volume discounts, with deeper discounts on a three-year '
+                              'commitment [v3ZCe1YINus @ 00:13:03]. And the customer-side surface barely '
+                              'moves. Adobe Care stresses the customer experience stays nearly identical '
+                              'for anyone migrating, with the Admin Console still the place to add '
+                              'licenses, assign and unassign users and monitor storage [LCbK1S1leOQ @ '
+                              '00:01:28]. For a reseller, that means the migration pitch is easy: same '
+                              'console, same products, same anniversary, with the renewal headache shifted '
+                              "off the reseller's calendar and onto the platform's API layer."],
+               'table': {'caption': 'Where the Adobe VIP Marketplace practitioners agree',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Reported',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Commercial VIP is being retired for all new business',
+                                   'Bechtle UK cited a June cutoff for new commercial VIP and January 2025 '
+                                   'end-of-life',
+                                   'Every live commercial agreement must move before the December deadline',
+                                   'Bechtle UK ([v3ZCe1YINus @ 00:02:42])'],
+                                  ['No partner certification is required to start reselling Adobe',
+                                   'TD SYNNEX Spain authorizes partners in about five minutes from their '
+                                   'customer number',
+                                   'Existing Microsoft cloud resellers can add Adobe to their catalog '
+                                   'almost immediately',
+                                   'TD SYNNEX Spain ([824bcq4wI-Q @ 00:26:34])'],
+                                  ['Auto-renewal fires automatically on the customer anniversary date',
+                                   'Doris Bing said neither the customer nor the reseller needs to act '
+                                   'that day',
+                                   'Renewal quantities and opt-outs must be preset before the anniversary '
+                                   'arrives',
+                                   'Pugh Computers Ltd ([qQoPO5MwZ60 @ 00:12:38])'],
+                                  ["Four price levels remain, tied to each customer's own seat count",
+                                   'Bechtle UK said the current level migrates and three levels carry '
+                                   'volume discounts',
+                                   'Expect the level to adjust at renewal when seats cross a band',
+                                   'Bechtle UK ([v3ZCe1YINus @ 00:13:03])'],
+                                  ['Direct Partners fund and operate the marketplace platform itself',
+                                   'Adobe Care says Direct Partners must invest via third-party or '
+                                   'in-house platform providers',
+                                   'Smaller resellers rent a distributor marketplace instead of building '
+                                   'API integrations',
+                                   'Adobe Care ([LCbK1S1leOQ @ 00:02:38])'],
+                                  ['Escalations to Adobe run only through the designated technical '
+                                   'relationship manager',
+                                   'Adobe Care says the reseller is first line and the TRM contact stays '
+                                   'private',
+                                   'Budget reseller time for billing, onboarding and reseller-change '
+                                   'questions from customers',
+                                   'Adobe Care ([-rVmsfC5Agk @ 00:03:00])'],
+                                  ['Customer Admin Console experience stays nearly identical after '
+                                   'migration to VIPM',
+                                   'Adobe Care says customers keep managing licenses, users and storage in '
+                                   'the same console',
+                                   'Pitch the migration as a back-office change with no end-user '
+                                   'retraining needed',
+                                   'Adobe Care ([LCbK1S1leOQ @ 00:01:28])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Pricing mechanics are where resellers lose orders. Villanueva walked '
+                              'through the level ladder on Stream One: Level 1 is the base tier up to nine '
+                              'units, and prices step down at 10 to 49, 50 to 99 and 100-plus, with Levels '
+                              '3 and 4 currently carrying the same discount [824bcq4wI-Q @ 00:09:09]. '
+                              'Every product shows up as four separate references, one per level, and if a '
+                              'reseller attaches a Level 2 reference to a one-unit order, Adobe rejects it '
+                              'with an error [824bcq4wI-Q @ 00:14:26]. Levels are per end customer, '
+                              'exactly like Microsoft licensing, so stacking 50 small customers to buy at '
+                              'Level 3 does not work. AppXite removes that guesswork: its platform queries '
+                              "Adobe through the API, returns the customer's live level, Level 3 in the "
+                              'demo, and flips it to Level 4 the moment a large enough quantity is typed, '
+                              'recalculating the yearly price [GDHnAQ3r53A @ 00:05:42]. The same screen '
+                              'exposes partner price, suggested retail and margin, lets the seller knock 5 '
+                              'percent off a single deal or lock a permanent 5 percent discount onto a '
+                              'customer, and hides margins and partner price entirely when the customer '
+                              'self-serves [GDHnAQ3r53A @ 00:07:08]. Quotes go out by email and the '
+                              'customer approves with one button that fires the API call back.',
+                              'Moving an existing book across is a transfer, not a new order, and getting '
+                              'that wrong spawns a second console. Villanueva warned that placing a fresh '
+                              'order for a customer who already holds a VIP plan creates another VIP plan; '
+                              'instead, the partner opens Adobe Inbound Transfer under Opportunities in '
+                              'Stream One, enters the VIP number, and products, quantities, IDs and the '
+                              'anniversary date all carry over without the customer being notified '
+                              '[824bcq4wI-Q @ 00:19:46]. AppXite runs it at scale: it validates every '
+                              "customer's eligibility, sends back a report with reasons for anyone who "
+                              'cannot move yet, then migrates all eligible customers in one batch '
+                              '[GDHnAQ3r53A @ 00:02:47]. SoftwareOne Benelux runs it as a zero-cost '
+                              'migration order inside its client portal, keyed off the membership ID found '
+                              'in the Admin Console under account contract ID, with a hard instruction to '
+                              'check quantities and leave out any admin-console orders still awaiting '
+                              'fulfilment [6-M7SxMm3Yc @ 00:01:04]. For changing reseller on an existing '
+                              'VIP number, Istiak of Technical Support Online showed the code route: the '
+                              'gaining reseller enters the VIP number and admin email, Adobe mails a code '
+                              'to the customer admin, the code goes into Change Reseller on the customer '
+                              'portal, and the customer with its Illustrator and Photoshop seats then '
+                              'shows up in the new reseller portal [DKHVlefC0YE @ 00:03:18].',
+                              'Once a customer is live on the marketplace, every clock gets shorter. New '
+                              "licenses carry a 14-day return window; Villanueva contrasted it with VIP's "
+                              '30 days and the option to return up to 120 days with a penalty, and after '
+                              'day 15 nothing comes back [824bcq4wI-Q @ 00:17:35]. Doris Bing added that '
+                              'seats requested from the Admin Console now give the reseller only seven '
+                              'days to place the real order, after which the license simply disappears '
+                              'rather than blocking the console, and that pricing is now prorated daily '
+                              'across 365 or 366 days instead of monthly [qQoPO5MwZ60 @ 00:11:19]. On '
+                              'reductions, SoftwareOne Platform says annual subscriptions can only be '
+                              "downsized in the run-up to the vendor's renewal date, roughly 30 days out, "
+                              'and recommends filing every downsize order two days before the anniversary '
+                              'because time zones shift when auto-renewal actually fires [sNCywL0bfVI @ '
+                              '00:00:55]. Billing cadence moved too: from February 2026, Adobe invoices '
+                              'partners weekly, so SoftwareOne issued its final monthly invoice on '
+                              'February 1st and its first weekly run on February 2nd, invoicing only in '
+                              "weeks with a transaction [3h2yhifqqWI @ 00:01:25]. SoftwareOne's advice was "
+                              'to warn internal finance and invoice-approval stakeholders ahead of the '
+                              'switch to avoid surprises.'],
+               'table': {'caption': 'VIP Marketplace mechanics, settings and numbers operators run on',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Setting',
+                                     'How Operators Execute It',
+                                     'Expert Source'],
+                         'rows': [['Volume level ladder applied per individual end customer',
+                                   'Level 1 up to nine units, then 10-49, 50-99 and 100-plus',
+                                   "Pick the product reference matching that customer's total seat count",
+                                   'TD SYNNEX Spain ([824bcq4wI-Q @ 00:09:09])'],
+                                  ['Wrong-level product reference attached to a small order',
+                                   'Level 2 reference on a one-unit order returns an order error',
+                                   'Match the reference level to actual quantity before submitting '
+                                   'checkout',
+                                   'TD SYNNEX Spain ([824bcq4wI-Q @ 00:14:26])'],
+                                  ['Return window for newly purchased marketplace licenses',
+                                   '14 days free of charge, with an exception process outside that',
+                                   'Process reductions inside 14 days or request a channel account manager '
+                                   'exception',
+                                   'Pugh Computers Ltd ([qQoPO5MwZ60 @ 00:14:25])'],
+                                  ['Customer add-license requests raised from the Admin Console',
+                                   'Seven days to place the final order before the license disappears',
+                                   'Convert every console request into a real order within the week',
+                                   'Pugh Computers Ltd ([qQoPO5MwZ60 @ 00:11:02])'],
+                                  ['Downsize timing ahead of the annual anniversary date',
+                                   'Downsize window roughly 30 days out; file orders two days early',
+                                   'Submit change orders two days before anniversary to avoid wrong '
+                                   'renewal quantities',
+                                   'SoftwareOne Platform ([sNCywL0bfVI @ 00:00:55])'],
+                                  ['Extended VIP agreement term built in the reseller console',
+                                   'Maximum of 50 months via manual customer anniversary date selection',
+                                   'Tick select customer anniversary and leave several days of order '
+                                   'buffer',
+                                   'Luís Guzmán ([OvtYYoCkO-w @ 00:02:18])'],
+                                  ['Provisioning speed from order to admin console availability',
+                                   'About 5 days under VIP versus minutes under VIP Marketplace',
+                                   'Drop the license buffer and order on demand, even on weekends',
+                                   'Bechtle UK ([v3ZCe1YINus @ 00:11:55])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'What the Adobe channel operators actually do',
+                           'body': 'Four moves the distributors and platform providers use to keep Adobe '
+                                   'marketplace accounts clean and renewing.',
+                           'items': ['Move set-and-forget accounts first: Villanueva advises putting '
+                                     'long-standing VIP plans, such as a customer renewing the same seats '
+                                     'since 2016, and single-unit customers onto auto-renewal so nobody '
+                                     'chases expiry dates again [TD SYNNEX Spain — 824bcq4wI-Q @ '
+                                     '00:23:03].',
+                                     'Register the admin under a corporate domain: AppXite says the VIPMP '
+                                     'admin email can only be one per account and Gmail, Outlook and other '
+                                     "private addresses sit on Adobe's blacklisted domain list [AppXite — "
+                                     'GDHnAQ3r53A @ 00:05:08].',
+                                     'Stage renewal increases in advance: AppXite scheduled a jump from 2 '
+                                     'to 10 licenses on the renewal date, then overwrote it in the history '
+                                     "tab to five extra, noting the final price follows Adobe's price list "
+                                     'on that day [AppXite — GDHnAQ3r53A @ 00:10:18].',
+                                     'Flip auto-renewal in bulk: SoftwareOne lets one configuration order '
+                                     'enable or disable auto-renewal across many subscriptions at once, as '
+                                     'long as they all sit in the same agreement [SoftwareOne Platform — '
+                                     'nnAd6F22fiw @ 00:00:18].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Get Adobe-enabled on a Direct Partner marketplace',
+                              'action': 'Request Adobe authorization from your distributor before touching '
+                                        'any customer.',
+                              'detail': 'TD SYNNEX Spain authorizes partners from their customer number in '
+                                        'a matter of five minutes; until then the Adobe Inbound Transfer '
+                                        'option and Adobe search results simply do not appear [TD SYNNEX '
+                                        'Spain — 824bcq4wI-Q @ 00:26:34].'},
+                             {'step': 2,
+                              'title': 'Audit every VIP plan against its renewal window',
+                              'action': 'Sort the customer book by anniversary date and flag plans inside '
+                                        'the window.',
+                              'detail': 'VIP plans inside the 30-days-before or 30-days-after renewal '
+                                        'window cannot be migrated; renew them the usual way, then '
+                                        'transfer once the window closes to avoid a duplicated renewal [TD '
+                                        'SYNNEX Spain — 824bcq4wI-Q @ 00:21:57].'},
+                             {'step': 3,
+                              'title': 'Run the transfer and verify quantities',
+                              'action': "Submit the migration order using the customer's Adobe membership "
+                                        'ID.',
+                              'detail': 'Pull the membership ID from the Admin Console under account '
+                                        'contract ID, confirm quantities against the console, exclude '
+                                        'pending admin-console orders, and note the migration order itself '
+                                        'costs no money [SoftwareOne Benelux — 6-M7SxMm3Yc @ 00:01:19].'},
+                             {'step': 4,
+                              'title': 'Preset renewal quantities and opt-outs',
+                              'action': 'Book a session with each customer admin before the anniversary to '
+                                        'lock renewal settings.',
+                              'detail': 'Bechtle UK targets the month prior to the anniversary for a '
+                                        'one-to-one with each Adobe admin to set renewal quantities and '
+                                        'auto-renew status, unticking auto-renewal on anything not being '
+                                        'recommitted [Bechtle UK — v3ZCe1YINus @ 00:06:46].'}]},
+              {'id': 'section_3',
+               'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The first split is over who actually pushes the migration button. David '
+                              'Villanueva of TD SYNNEX Spain runs the move as a pure partner-side '
+                              'transfer: inside StreamOne he opens Opportunities, picks Adobe Inbound '
+                              'Transfer, keys in the VIP plan number, and states flatly that the end '
+                              'customer has no involvement, will not be notified, and keeps every product, '
+                              'quantity, VIP ID and anniversary date [824bcq4wI-Q @ 00:19:46]. Bechtle UK '
+                              "takes the opposite line. Zoe Roby's team generates the customer an admin "
+                              'account on Bechtle Clouds, then the customer must click Transfer Adobe '
+                              'membership and enter their own VIP agreement number, because the Bechtle '
+                              'and Adobe Marketplace terms can only be accepted by a business member or '
+                              'admin [v3ZCe1YINus @ 00:08:45]. Doris Bing of Adobe, speaking on the Pugh '
+                              'Computers webinar, contradicts the silent-transfer framing: on migration '
+                              'day the customer receives an official Adobe communication, so nobody gets '
+                              'moved without knowing [qQoPO5MwZ60 @ 00:15:17]. AppXite pitches a fourth '
+                              "playbook built for volume operators: the platform validates every account's "
+                              'eligibility, sends back a report listing the reason any customer cannot '
+                              'move yet, and after the reseller confirms, migrates the eligible book in a '
+                              'single batch rather than one customer at a time [GDHnAQ3r53A @ 00:02:47].',
+                              'Practitioners also disagree on how late an operator can kill or trim an '
+                              'auto-renewal. Doris Bing says auto-renewal can be switched off during the '
+                              'whole period, even two months before renewal when a customer gets nervous '
+                              'or has a tender running, but Bing also warns the 30-day post-anniversary '
+                              'grace is gone, so the renewal order effectively lands on the anniversary '
+                              'date itself [qQoPO5MwZ60 @ 00:13:47]. Villanueva at TD SYNNEX goes tighter, '
+                              'saying the auto-renewal or the item can be cancelled up to one day before '
+                              'the anniversary and it simply will not renew [824bcq4wI-Q @ 00:24:30]. '
+                              'SoftwareOne refuses to play that close: because auto-renewal parameters are '
+                              'set by the vendor and timing varies by time zone, they tell operators to '
+                              'complete every downsize order two days before the anniversary to avoid '
+                              'renewing at the wrong quantity [sNCywL0bfVI @ 00:01:11]. Bechtle muddies '
+                              'the water further by telling customers that turning off auto-renew for a '
+                              'product they will not recommit to must be done within the 14-day window, '
+                              'framing cancellation around the return clock rather than the anniversary '
+                              '[v3ZCe1YINus @ 00:13:03]. SoftwareOne also limits annual and multi-year '
+                              'downsizes to roughly the 30 days leading into renewal, while Bechtle says '
+                              'quantities can be raised or lowered in the run-up to the auto-renew date.',
+                              'On money, the distribution side and the platform side tell different '
+                              'stories. AppXite sells the move with additional financial rebates for early '
+                              'adopters and the advantage of securing long-term customers [GDHnAQ3r53A @ '
+                              "00:00:56]. Villanueva at TD SYNNEX deflates that: the product and Adobe's "
+                              'cost are the same as VIP, the price reduction is small and not significant, '
+                              'and TD SYNNEX simply adjusted margins to make Marketplace a little more '
+                              'competitive, pitching a relatively reasonable margin [824bcq4wI-Q @ '
+                              '00:05:13]. Even the price-level story differs. Bechtle describes four '
+                              'levels, three of which carry volume discounts, with deeper cuts on a '
+                              'three-year commitment [v3ZCe1YINus @ 00:13:20], while Villanueva notes '
+                              'Adobe has priced level 3 and level 4 identically for a year and a half to '
+                              'two years, so pushing a customer past 100 units buys no extra discount over '
+                              'level 3. On the end-customer side, Daniel Studios argues most companies '
+                              'should stay on Adobe for Teams: Adobe recommends Teams for 1 to 10 seats, '
+                              'but the cart actually accepts up to 250 licenses, and online information '
+                              'suggests Enterprise usually costs more per license, with single sign-on and '
+                              'negotiated purchasing the main extras [vQ-PbEC-qMw @ 00:03:18]. Unlimited '
+                              'Adobe Stock access on Enterprise, Daniel Studios adds, costs significantly '
+                              'more money.'],
+               'table': {'caption': 'Competing VIP Marketplace playbooks, side by side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Who executes the VIP migration',
+                                   'TD SYNNEX runs Adobe Inbound Transfer partner-side; end customer has '
+                                   'no involvement or notification',
+                                   'Bechtle has the customer admin enter the VIP agreement number to '
+                                   'accept terms',
+                                   'TD SYNNEX Spain ([824bcq4wI-Q @ 00:19:46]); Bechtle UK ([v3ZCe1YINus @ '
+                                   '00:08:45])'],
+                                  ['Batch versus single-account migration',
+                                   'AppXite validates eligibility, reports reasons, then migrates all '
+                                   'eligible customers in one batch',
+                                   'SoftwareOne client places one zero-cost migration order per Adobe '
+                                   'membership ID',
+                                   'AppXite ([GDHnAQ3r53A @ 00:02:47]); SoftwareOne Benelux ([6-M7SxMm3Yc '
+                                   '@ 00:01:19])'],
+                                  ['Latest safe auto-renewal change',
+                                   'Adobe says auto-renewal can be switched off at any point during the '
+                                   'term',
+                                   'SoftwareOne finishes downsize orders two days before anniversary to '
+                                   'beat time-zone drift',
+                                   'Pugh Computers Ltd ([qQoPO5MwZ60 @ 00:13:47]); SoftwareOne Platform '
+                                   '([sNCywL0bfVI @ 00:01:11])'],
+                                  ['Flexibility on the return window',
+                                   'TD SYNNEX: strictly 14 days, after the 15th day licenses cannot be '
+                                   'returned',
+                                   'Adobe: outside 14 days, partner can request an exception through '
+                                   'channel account managers',
+                                   'TD SYNNEX Spain ([824bcq4wI-Q @ 00:17:53]); Pugh Computers Ltd '
+                                   '([qQoPO5MwZ60 @ 00:14:42])'],
+                                  ['Real margin upside of Marketplace',
+                                   "AppXite pitches additional margins and volume discounts as Adobe's "
+                                   'incentive to join',
+                                   'TD SYNNEX says the price reduction is small and not significant, '
+                                   'margins merely adjusted',
+                                   'AppXite ([dhzXos8LyEg @ 00:01:24]); TD SYNNEX Spain ([824bcq4wI-Q @ '
+                                   '00:04:50])'],
+                                  ['Build versus rent the marketplace platform',
+                                   'Adobe makes the direct partner responsible for investing in its own '
+                                   'marketplace platform',
+                                   'AppXite lets partners skip Adobe API integration development and '
+                                   'maintenance costs entirely',
+                                   'Adobe Care ([LCbK1S1leOQ @ 00:02:38]); AppXite ([dhzXos8LyEg @ '
+                                   '00:01:40])'],
+                                  ['Teams versus Enterprise for end customers',
+                                   'Daniel Studios: Teams covers most firms and the cart accepts up to 250 '
+                                   'licenses',
+                                   'Enterprise adds single sign-on and negotiated purchasing, usually at '
+                                   'higher per-license cost',
+                                   'Daniel Studios ([vQ-PbEC-qMw @ 00:03:18]); Daniel Studios '
+                                   '([vQ-PbEC-qMw @ 00:04:01])']]}},
+              {'id': 'section_4',
+               'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The classic migration mistake is placing a fresh order for a customer who '
+                              'already holds VIP. Villanueva at TD SYNNEX warns that a new order generates '
+                              'another console and another VIP plan, which is exactly what you do not '
+                              'want; existing customers must go through the transfer flow instead '
+                              '[824bcq4wI-Q @ 00:18:14]. The transfer itself is a one-way door: once a '
+                              'plan moves to StreamOne it cannot go back to the reseller console and the '
+                              'old VIP model, though it can still be moved to another distributor or '
+                              'marketplace later [824bcq4wI-Q @ 00:21:06]. Timing kills deals too. Plans '
+                              'sitting inside the renewal window, 30 days before or after anniversary, '
+                              'cannot be migrated, because Adobe wants to avoid a renewal duplicated '
+                              'across VIP and Marketplace; the partner renews the old way and migrates '
+                              'after the window closes. SoftwareOne Benelux flags a quieter trap: before '
+                              'submitting the migration order, check quantities against the Adobe admin '
+                              'console, and do not add any order placed through the admin console that is '
+                              'still waiting to be fulfilled, because the migration order is for fully '
+                              'paid licenses only [6-M7SxMm3Yc @ 00:01:04]. Bechtle adds a global wrinkle: '
+                              'Global SKUs were still unavailable under Marketplace then, so customers '
+                              'using them were scheduled to migrate only after Adobe released them '
+                              '[v3ZCe1YINus @ 00:13:51].',
+                              'The ordering traps cluster around levels and quantities. StreamOne always '
+                              'shows four references for the same product by volume level, and Villanueva '
+                              'warns that attaching a level-two SKU to a single-unit order throws an error '
+                              'because Adobe refuses that price for an incorrect volume; levels also '
+                              'cannot be pooled across end customers [824bcq4wI-Q @ 00:14:26]. AppXite '
+                              "sidesteps this by validating the customer's level against Adobe through the "
+                              'API and recalculating automatically as quantity changes, but warns that the '
+                              'renewal figure is only an estimate since Adobe may change the price list by '
+                              'the renewal date [GDHnAQ3r53A @ 00:10:01]. AppXite also reminds sellers '
+                              'that quantities cannot be decreased during the commitment period, only '
+                              'increased. On the downsizing side, SoftwareOne says annual and multi-year '
+                              'subscriptions can only be reduced in the period leading up to renewal, '
+                              'roughly 30 days out, and that vendor-set auto-renewal timing varies by time '
+                              'zone [sNCywL0bfVI @ 00:00:55]. Bechtle reports the return window has shrunk '
+                              'to 14 days, which removes the old trick of effectively getting a month of '
+                              "use for free, while TD SYNNEX contrasts it with VIP's 30-day return and up "
+                              'to 120 days with a penalty [v3ZCe1YINus @ 00:04:01]. After day 15, '
+                              'Villanueva says, nothing comes back.',
+                              'The operational bottlenecks sit outside the order screen. Adobe Care spells '
+                              'out that escalations to Adobe technical support may only originate from the '
+                              'technical relationship manager designated by the marketplace platform '
+                              'provider, and that contact method may not be shared with resellers or '
+                              'customers, so a reseller with a technical problem has to climb the chain '
+                              'through the direct partner [-rVmsfC5Agk @ 00:03:00]. AppXite hits an '
+                              'onboarding snag on the admin email: there can be only one owner email per '
+                              'VIP Marketplace account, and Gmail, Outlook and other private addresses sit '
+                              'on an Adobe domain blacklist, and customers often come back asking to '
+                              'change it [GDHnAQ3r53A @ 00:05:08]. Finance is the next pressure point. '
+                              'SoftwareOne says that starting February 2026 Adobe invoices partners '
+                              'weekly, so customers receive an invoice in every week a new order, renewal '
+                              'or credit memo lands, and finance approvers should be warned ahead of time '
+                              'to avoid surprises [3h2yhifqqWI @ 00:02:04]. On the legacy reseller '
+                              'console, Luís Guzmán shows that setting a custom anniversary end date on an '
+                              "extended VIP agreement to today's date leaves only today to place the "
+                              'order, so the date has to be pushed out, for example five days, to keep '
+                              'room to transact, with 50 months as the maximum term [OvtYYoCkO-w @ '
+                              '00:03:08].'],
+               'table': {'caption': 'Firsthand failure modes and the operator fix for each',
+                         'headers': ['Failure Mode',
+                                     'What Happened / Mechanism',
+                                     'Operator Fix',
+                                     'Expert Source'],
+                         'rows': [['Duplicate VIP plan from new order',
+                                   'Placing a new order for an existing VIP customer spawns another '
+                                   'console and plan',
+                                   'Use the Adobe Inbound Transfer section with the existing VIP plan '
+                                   'number',
+                                   'TD SYNNEX Spain ([824bcq4wI-Q @ 00:18:14])'],
+                                  ['Volume level SKU mismatch error',
+                                   'A level-two reference attached to a single unit errors out at Adobe',
+                                   "Match the StreamOne volume reference to the end customer's actual unit "
+                                   'count',
+                                   'TD SYNNEX Spain ([824bcq4wI-Q @ 00:14:26])'],
+                                  ['Migration blocked by renewal window',
+                                   'VIP plans within 30 days either side of anniversary cannot be migrated',
+                                   'Renew through the old channel, then migrate once 30 days have passed',
+                                   'TD SYNNEX Spain ([824bcq4wI-Q @ 00:21:57])'],
+                                  ['Renewal at the wrong quantity',
+                                   'Vendor-set auto-renewal timing shifts by time zone and renews old '
+                                   'quantities',
+                                   'Submit every downsize order at least two days before the anniversary '
+                                   'date',
+                                   'SoftwareOne Platform ([sNCywL0bfVI @ 00:01:11])'],
+                                  ['Unfulfilled admin console orders in migration',
+                                   'Pending admin console orders added to the migration order distort '
+                                   'license quantities',
+                                   'Migrate fully paid licenses only and verify counts in the admin '
+                                   'console',
+                                   'SoftwareOne Benelux ([6-M7SxMm3Yc @ 00:01:04])'],
+                                  ['Seven-day add-license request expiry',
+                                   'Admin console add-license requests vanish after seven days without a '
+                                   'final partner order',
+                                   'Chase the customer and place the final order inside the seven days',
+                                   'Pugh Computers Ltd ([qQoPO5MwZ60 @ 00:11:19])'],
+                                  ['Change-reseller code throws an error',
+                                   'Code submission showed an error and the old reseller was still listed',
+                                   'Reselect change reseller and resubmit the emailed code until it '
+                                   'succeeds',
+                                   'Technical Support Online ([DKHVlefC0YE @ 00:02:14])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before any VIP Marketplace order or migration goes out',
+                           'body': 'Every gate below maps to a loss, error, or lockout that a practitioner '
+                                   'hit or warned about directly; clear all four before submitting.',
+                           'items': ['Block any new order for a customer who already holds a VIP plan '
+                                     'until the inbound transfer has been run, or you spawn a second '
+                                     'console and plan [TD SYNNEX Spain — 824bcq4wI-Q @ 00:18:14].',
+                                     'Check the anniversary date first; inside 30 days either side, renew '
+                                     'on the old VIP route and park the migration until the window closes '
+                                     '[TD SYNNEX Spain — 824bcq4wI-Q @ 00:21:40].',
+                                     'Lock all downsizes and auto-renewal changes at least two days before '
+                                     'the anniversary so time-zone drift cannot renew the wrong quantity '
+                                     '[SoftwareOne Platform — sNCywL0bfVI @ 00:01:11].',
+                                     'Reject Gmail, Outlook or other private admin emails at onboarding, '
+                                     'since only one owner email is allowed and those domains are '
+                                     'blacklisted [AppXite — GDHnAQ3r53A @ 00:05:08].']}}],
+ 'pull_quote': '"Under VIPM there\'s no window due to the auto renew function, so this means that you need '
+               'to know in advance of your anniversary what plans and quantities you need going forward." '
+               'Bechtle UK (v3ZCe1YINus @ 00:03:46).',
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ['Email your distributor with your customer number to get Adobe authorization in '
+                      'StreamOne; no certification is required and TD SYNNEX turns it around in about 5 '
+                      'minutes [TD SYNNEX Spain — 824bcq4wI-Q @ 00:26:34].',
+                      'Audit the book for long-running VIP plans that always renew with unchanged, low '
+                      'unit counts and move those first to automate their renewals [TD SYNNEX Spain — '
+                      '824bcq4wI-Q @ 00:23:03].',
+                      "Schedule each migration in the month before the customer's anniversary and run a "
+                      'one-to-one session with the Adobe admin [Bechtle UK — v3ZCe1YINus @ 00:06:46].',
+                      'Preset renewal-date quantity increases in the subscription edit flow and track '
+                      'overrides under the history tab [AppXite — GDHnAQ3r53A @ 00:09:43].',
+                      'Flip auto-renewal on or off for multiple subscriptions in one agreement with a '
+                      'single configuration order instead of one order per subscription [SoftwareOne '
+                      'Platform — nnAd6F22fiw @ 00:00:18].',
+                      "Brief customer finance and invoice-approval stakeholders on Adobe's weekly "
+                      'invoicing cadence before it starts [SoftwareOne Platform — 3h2yhifqqWI @ '
+                      '00:02:04].'],
+ 'statutory_citations': [{'title': 'TD SYNNEX Spain — Adobe VIP Marketplace [00:18:14]',
+                          'url': 'https://www.youtube.com/watch?v=824bcq4wI-Q&t=1094s',
+                          'relevance': 'Primary practitioner testimony on inbound transfer mechanics, '
+                                       'duplicate-plan risk, renewal-window migration blocks, and '
+                                       'irreversibility.'},
+                         {'title': 'Bechtle UK — Are you ready for the changes coming to Adobe VIP? '
+                                   '[00:03:46]',
+                          'url': 'https://www.youtube.com/watch?v=v3ZCe1YINus&t=226s',
+                          'relevance': 'Primary practitioner testimony on the loss of the renewal window, '
+                                       'the 14-day cancellation rule, and customer-driven migration.'},
+                         {'title': 'Pugh Computers Ltd — Webinar: Monthly Adobe Spotlight: VIP Marketplace '
+                                   '- May 22nd 2024 [00:13:13]',
+                          'url': 'https://www.youtube.com/watch?v=qQoPO5MwZ60&t=793s',
+                          'relevance': 'Primary practitioner testimony from Adobe on auto-renewal '
+                                       'behavior, seven-day add-license expiry, and return exceptions.'},
+                         {'title': 'SoftwareOne Platform — Downsize Adobe Subscriptions [00:01:11]',
+                          'url': 'https://www.youtube.com/watch?v=sNCywL0bfVI&t=71s',
+                          'relevance': 'Primary practitioner testimony on downsize eligibility windows and '
+                                       'the two-day pre-anniversary buffer.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'GDHnAQ3r53A',
+                       'title': 'How to Scale and Automate Your Adobe VIP Marketplace Business with '
+                                'AppXite (Program Overview & Demo)',
+                       'channel': 'AppXite',
+                       'author': 'AppXite',
+                       'text': 'You cannot decrease the quantity of licenses during the commitment period '
+                               'but you can increase them.',
+                       'tip': 'You cannot decrease the quantity of licenses during the commitment period '
+                              'but you can increase them.',
+                       'timestamp': 583,
+                       'timestamp_seconds': 583,
+                       'timestamp_label': '[00:09:43]',
+                       'url': 'https://www.youtube.com/watch?v=GDHnAQ3r53A&t=583s',
+                       'markdown': '[00:09:43](https://www.youtube.com/watch?v=GDHnAQ3r53A&t=583s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-rVmsfC5Agk',
+                       'title': 'VIP MarketPlace Support for the Adobe Admin Console',
+                       'channel': 'Adobe Care',
+                       'author': 'Adobe Care',
+                       'text': 'Escalations to Adobe technical support may only originate from the '
+                               'technical relationship manager who has been designated by the marketplace '
+                               'platform provider.',
+                       'tip': 'Escalations to Adobe technical support may only originate from the '
+                              'technical relationship manager who has been designated by the marketplace '
+                              'platform provider.',
+                       'timestamp': 164,
+                       'timestamp_seconds': 164,
+                       'timestamp_label': '[00:02:44]',
+                       'url': 'https://www.youtube.com/watch?v=-rVmsfC5Agk&t=164s',
+                       'markdown': '[00:02:44](https://www.youtube.com/watch?v=-rVmsfC5Agk&t=164s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'v3ZCe1YINus',
+                       'title': 'Are you ready for the changes coming to Adobe VIP?',
+                       'channel': 'Bechtle UK',
+                       'author': 'Bechtle UK',
+                       'text': "Under VIPM there's no window due to the auto renew function, so this means "
+                               'that you need to know in advance of your anniversary what plans and '
+                               'quantities you need going forward.',
+                       'tip': "Under VIPM there's no window due to the auto renew function, so this means "
+                              'that you need to know in advance of your anniversary what plans and '
+                              'quantities you need going forward.',
+                       'timestamp': 226,
+                       'timestamp_seconds': 226,
+                       'timestamp_label': '[00:03:46]',
+                       'url': 'https://www.youtube.com/watch?v=v3ZCe1YINus&t=226s',
+                       'markdown': '[00:03:46](https://www.youtube.com/watch?v=v3ZCe1YINus&t=226s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '824bcq4wI-Q',
+                       'title': 'Adobe VIP Marketplace',
+                       'channel': 'TD SYNNEX Spain',
+                       'author': 'TD SYNNEX Spain',
+                       'text': "If I place a new order, what I'm going to generate is another console, "
+                               "another VIP plan, and that's not what we want. What we want is to migrate "
+                               'it.',
+                       'tip': "If I place a new order, what I'm going to generate is another console, "
+                              "another VIP plan, and that's not what we want. What we want is to migrate "
+                              'it.',
+                       'timestamp': 1094,
+                       'timestamp_seconds': 1094,
+                       'timestamp_label': '[00:18:14]',
+                       'url': 'https://www.youtube.com/watch?v=824bcq4wI-Q&t=1094s',
+                       'markdown': '[00:18:14](https://www.youtube.com/watch?v=824bcq4wI-Q&t=1094s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '824bcq4wI-Q',
+                       'title': 'Adobe VIP Marketplace',
+                       'channel': 'TD SYNNEX Spain',
+                       'author': 'TD SYNNEX Spain',
+                       'text': "An important issue with the renewal window is that you can't migrate VIP "
+                               'plans that are in the renewal window.',
+                       'tip': "An important issue with the renewal window is that you can't migrate VIP "
+                              'plans that are in the renewal window.',
+                       'timestamp': 1300,
+                       'timestamp_seconds': 1300,
+                       'timestamp_label': '[00:21:40]',
+                       'url': 'https://www.youtube.com/watch?v=824bcq4wI-Q&t=1300s',
+                       'markdown': '[00:21:40](https://www.youtube.com/watch?v=824bcq4wI-Q&t=1300s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qQoPO5MwZ60',
+                       'title': 'Webinar: Monthly Adobe Spotlight: VIP Marketplace  - May 22nd 2024',
+                       'channel': 'Pugh Computers Ltd',
+                       'author': 'Pugh Computers Ltd',
+                       'text': 'In that case you only have seven days, and after these seven days if you '
+                               'have not placed the final order with the reseller the license will just '
+                               'disappear.',
+                       'tip': 'In that case you only have seven days, and after these seven days if you '
+                              'have not placed the final order with the reseller the license will just '
+                              'disappear.',
+                       'timestamp': 662,
+                       'timestamp_seconds': 662,
+                       'timestamp_label': '[00:11:02]',
+                       'url': 'https://www.youtube.com/watch?v=qQoPO5MwZ60&t=662s',
+                       'markdown': '[00:11:02](https://www.youtube.com/watch?v=qQoPO5MwZ60&t=662s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LCbK1S1leOQ',
+                       'title': 'VIP MarketPlace Overview in Adobe Admin Console',
+                       'channel': 'Adobe Care',
+                       'author': 'Adobe Care',
+                       'text': "Keep in mind that it's the Direct Partner's responsibility to invest in "
+                               'the creation of their marketplace platform by using a platform provider.',
+                       'tip': "Keep in mind that it's the Direct Partner's responsibility to invest in the "
+                              'creation of their marketplace platform by using a platform provider.',
+                       'timestamp': 158,
+                       'timestamp_seconds': 158,
+                       'timestamp_label': '[00:02:38]',
+                       'url': 'https://www.youtube.com/watch?v=LCbK1S1leOQ&t=158s',
+                       'markdown': '[00:02:38](https://www.youtube.com/watch?v=LCbK1S1leOQ&t=158s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OvtYYoCkO-w',
+                       'title': 'Reseller Console   Creating Extended VIP',
+                       'channel': 'Luís Guzmán',
+                       'author': 'Luís Guzmán',
+                       'text': 'If we select the last one which is July 2027 we will have a total of 50 '
+                               'months; it is the maximum we can put, 50 months.',
+                       'tip': 'If we select the last one which is July 2027 we will have a total of 50 '
+                              'months; it is the maximum we can put, 50 months.',
+                       'timestamp': 138,
+                       'timestamp_seconds': 138,
+                       'timestamp_label': '[00:02:18]',
+                       'url': 'https://www.youtube.com/watch?v=OvtYYoCkO-w&t=138s',
+                       'markdown': '[00:02:18](https://www.youtube.com/watch?v=OvtYYoCkO-w&t=138s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DKHVlefC0YE',
+                       'title': 'Need To Change Your Adobe Reseller? Watch This Tutorial',
+                       'channel': 'Technical Support Online',
+                       'author': 'Technical Support Online',
+                       'text': 'An error message is shown, but this is not perfect. Just select again.',
+                       'tip': 'An error message is shown, but this is not perfect. Just select again.',
+                       'timestamp': 134,
+                       'timestamp_seconds': 134,
+                       'timestamp_label': '[00:02:14]',
+                       'url': 'https://www.youtube.com/watch?v=DKHVlefC0YE&t=134s',
+                       'markdown': '[00:02:14](https://www.youtube.com/watch?v=DKHVlefC0YE&t=134s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6-M7SxMm3Yc',
+                       'title': 'Migrate Adobe VIP to Client Portal Marketplace',
+                       'channel': 'SoftwareOne Benelux',
+                       'author': 'SoftwareOne Benelux',
+                       'text': 'If you have placed an order through the admin console before the migration '
+                               'order and that needs to be fulfilled, do not add them in this order; this '
+                               'is for full paid licenses only.',
+                       'tip': 'If you have placed an order through the admin console before the migration '
+                              'order and that needs to be fulfilled, do not add them in this order; this '
+                              'is for full paid licenses only.',
+                       'timestamp': 64,
+                       'timestamp_seconds': 64,
+                       'timestamp_label': '[00:01:04]',
+                       'url': 'https://www.youtube.com/watch?v=6-M7SxMm3Yc&t=64s',
+                       'markdown': '[00:01:04](https://www.youtube.com/watch?v=6-M7SxMm3Yc&t=64s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vQ-PbEC-qMw',
+                       'title': 'Adobe Teams vs Enterprise Plans & Pricing Explained – Honest Comparison',
+                       'channel': 'Daniel Studios',
+                       'author': 'Daniel Studios',
+                       'text': 'From what I could find online is that most of the time going with Adobe '
+                               'for Enterprises is going to be more expensive per license than Adobe for '
+                               'Teams.',
+                       'tip': 'From what I could find online is that most of the time going with Adobe for '
+                              'Enterprises is going to be more expensive per license than Adobe for Teams.',
+                       'timestamp': 99,
+                       'timestamp_seconds': 99,
+                       'timestamp_label': '[00:01:39]',
+                       'url': 'https://www.youtube.com/watch?v=vQ-PbEC-qMw&t=99s',
+                       'markdown': '[00:01:39](https://www.youtube.com/watch?v=vQ-PbEC-qMw&t=99s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nnAd6F22fiw',
+                       'title': 'Configure Auto-renewal',
+                       'channel': 'SoftwareOne Platform',
+                       'author': 'SoftwareOne Platform',
+                       'text': 'All the subscriptions must belong to the same agreement and some '
+                               'subscriptions may not be eligible for the change you request.',
+                       'tip': 'All the subscriptions must belong to the same agreement and some '
+                              'subscriptions may not be eligible for the change you request.',
+                       'timestamp': 18,
+                       'timestamp_seconds': 18,
+                       'timestamp_label': '[00:00:18]',
+                       'url': 'https://www.youtube.com/watch?v=nnAd6F22fiw&t=18s',
+                       'markdown': '[00:00:18](https://www.youtube.com/watch?v=nnAd6F22fiw&t=18s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dhzXos8LyEg',
+                       'title': 'Adobe Cloud Ecosystem Explained: VIP Marketplace',
+                       'channel': 'AppXite',
+                       'author': 'AppXite',
+                       'text': 'With the marketplace automation deals will be closed within hours, not '
+                               'days.',
+                       'tip': 'With the marketplace automation deals will be closed within hours, not '
+                              'days.',
+                       'timestamp': 35,
+                       'timestamp_seconds': 35,
+                       'timestamp_label': '[00:00:35]',
+                       'url': 'https://www.youtube.com/watch?v=dhzXos8LyEg&t=35s',
+                       'markdown': '[00:00:35](https://www.youtube.com/watch?v=dhzXos8LyEg&t=35s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3h2yhifqqWI',
+                       'title': 'Adobe VIP Marketplace: Weekly Invoicing Update Starting Feb 2026',
+                       'channel': 'SoftwareOne Platform',
+                       'author': 'SoftwareOne Platform',
+                       'text': 'We recommend informing any internal stakeholders involved in financial '
+                               'approvals or invoice processing of this change ahead of February to avoid '
+                               'surprises.',
+                       'tip': 'We recommend informing any internal stakeholders involved in financial '
+                              'approvals or invoice processing of this change ahead of February to avoid '
+                              'surprises.',
+                       'timestamp': 124,
+                       'timestamp_seconds': 124,
+                       'timestamp_label': '[00:02:04]',
+                       'url': 'https://www.youtube.com/watch?v=3h2yhifqqWI&t=124s',
+                       'markdown': '[00:02:04](https://www.youtube.com/watch?v=3h2yhifqqWI&t=124s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7RrRDIJ0Aa0',
+                       'title': 'Adobe Teams Pricing Plans Explained (Full Guide) – Which Business Plan '
+                                'Should You Get?',
+                       'channel': 'Daniel Studios',
+                       'author': 'Daniel Studios',
+                       'text': "In case you need to use three apps from Adobe, it's definitely worth going "
+                               'with Creative Cloud Pro because you get 20 plus apps.',
+                       'tip': "In case you need to use three apps from Adobe, it's definitely worth going "
+                              'with Creative Cloud Pro because you get 20 plus apps.',
+                       'timestamp': 143,
+                       'timestamp_seconds': 143,
+                       'timestamp_label': '[00:02:23]',
+                       'url': 'https://www.youtube.com/watch?v=7RrRDIJ0Aa0&t=143s',
+                       'markdown': '[00:02:23](https://www.youtube.com/watch?v=7RrRDIJ0Aa0&t=143s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WP4zbGYBoHs',
+                       'title': 'How To Buy Adobe Software For Teams (Full Guide) - Creative Cloud, '
+                                'Photoshop, Acrobat, Premiere Pro',
+                       'channel': 'Daniel Studios',
+                       'author': 'Daniel Studios',
+                       'text': 'Make sure to provide your legal business name, and this is very important '
+                               "to get right because this is going to be the name that you'll be getting "
+                               'on your invoices.',
+                       'tip': 'Make sure to provide your legal business name, and this is very important '
+                              "to get right because this is going to be the name that you'll be getting on "
+                              'your invoices.',
+                       'timestamp': 140,
+                       'timestamp_seconds': 140,
+                       'timestamp_label': '[00:02:20]',
+                       'url': 'https://www.youtube.com/watch?v=WP4zbGYBoHs&t=140s',
+                       'markdown': '[00:02:20](https://www.youtube.com/watch?v=WP4zbGYBoHs&t=140s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sNCywL0bfVI',
+                       'title': 'Downsize Adobe Subscriptions',
+                       'channel': 'SoftwareOne Platform',
+                       'author': 'SoftwareOne Platform',
+                       'text': 'We recommend that you complete all downsize orders 2 days prior to your '
+                               'anniversary date to avoid your subscriptions from being renewed at the '
+                               'incorrect quantities.',
+                       'tip': 'We recommend that you complete all downsize orders 2 days prior to your '
+                              'anniversary date to avoid your subscriptions from being renewed at the '
+                              'incorrect quantities.',
+                       'timestamp': 55,
+                       'timestamp_seconds': 55,
+                       'timestamp_label': '[00:00:55]',
+                       'url': 'https://www.youtube.com/watch?v=sNCywL0bfVI&t=55s',
+                       'markdown': '[00:00:55](https://www.youtube.com/watch?v=sNCywL0bfVI&t=55s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

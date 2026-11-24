@@ -1,665 +1,819 @@
 from __future__ import annotations
 
-CHAPTER_6 = {
-    "id": "Q6",
-    "chapter_id": "Q6",
-    "chapter_number": 6,
-    "question_number": 6,
-    "slug": "sourcing-demand-mining-and-landing-your-first-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in insurance housing & corporate rental arbitrage, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (1–3 months)?",
-    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
-    "title": "Sourcing, Demand Mining & Landing Your First Deals",
-    "subtitle": "Mine ALE Placement Demand, Secure Written Corporate Sublease Rights, and Convert Verified Housing Briefs Through CRS, Twilio, and Local Operating Partners",
-    "layout_template": "step_by_step_sop",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #33, Insurance Housing & Corporate Rental Arbitrage, ranks #07 of 36 "
-        "with a 90/100 Money-to-Manpower Score. This chapter turns 12 mapped plays into "
-        "a repeatable first-deal system: mine displacement and employer demand, qualify "
-        "authorized placement buyers, secure landlord permissions, and quote executable "
-        "30-to-270-day stays. The supplied pay-per-call play connects to eleven "
-        "chapter-specific sourcing workflows without confusing restoration lead fees "
-        "with housing revenue. Canonical annual owner profits remain $21,600 "
-        "Conservative, $150,100 Base, and $364,000 Scaled. Their gross housing billings "
-        "are $180,000, $790,000, and $1,400,000; the 45% retained amounts are $81,000, "
-        "$355,500, and $630,000. Use the first 1–3 months to validate buyer response, "
-        "landlord flexibility, payment authority, and cancellation exposure before "
-        "expanding fixed lease obligations."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$180,000",
-            "context": "Annual gross housing billings; $81,000 retained at 45%",
-            "note": "12% gross-billings net margin; $21,600 annual owner net profit; 26.67% retained margin; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$790,000",
-            "context": "Annual gross housing billings; $355,500 retained at 45%",
-            "note": "19.0% gross-billings net margin; $150,100 annual owner net profit; 42.22% retained margin; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,400,000",
-            "context": "Annual gross housing billings; $630,000 retained at 45%",
-            "note": "26% gross-billings net margin; $364,000 annual owner net profit; 57.78% retained margin; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Map Twelve Plays to Real Buyers Before Taking Inventory Risk",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with one serviceable geography, two bedroom configurations, and a "
-                    "documented maximum travel radius. Insurance Additional Living Expense "
-                    "(ALE) demand is not a list of distressed households; it is a stream of "
-                    "authorized housing requests constrained by repair duration, household needs, "
-                    "policy limits, and purchasing procedures. Build buyer records for CRS "
-                    "Temporary Housing, ALE Solutions, regional restoration firms, relocation "
-                    "management companies, hospital staffing desks, and major employer mobility "
-                    "teams. Confirm each organization's current supplier intake process directly "
-                    "rather than assuming a portal listing produces assignments. Record service "
-                    "territory, purchasing contact, minimum documentation, accepted property "
-                    "types, payment timing, and after-hours escalation route. Keep landlord "
-                    "supply records separate from buyer records; a vacant furnished house "
-                    "without written corporate sublease rights is not executable inventory. "
-                    "The twelve plays mapped here comprise the supplied "
-                    "rank_and_rent_pay_per_call_routing play plus eleven chapter-specific "
-                    "workflows: restoration dispatch partnerships, housing-vendor onboarding, "
-                    "municipal repair signals, hospital staffing demand, employer project "
-                    "relocation, furnished vacancy rescue, institutional landlord sourcing, "
-                    "school-zone housing search, pet-compatible inventory, extension rescue, "
-                    "and buyer reactivation. The latter names describe this chapter's operating "
-                    "map, not additional canonical play identifiers. Assign each workflow an "
-                    "owner, weekly activity budget, economic hypothesis, and fallback before "
-                    "collecting leads. Prioritize sources that expose purchase timing rather "
-                    "than merely indicating general market interest."
-                ),
-                (
-                    "Mine public signals at the organization and property-market level. City "
-                    "permit portals can reveal substantial repair work, but a permit does not "
-                    "establish insured displacement or permission to contact occupants. Aggregate "
-                    "repair permits by ZIP code and week, compare them with public emergency "
-                    "management incident summaries, and ask restoration business contacts whether "
-                    "housing demand exceeds their existing options. Avoid collecting household "
-                    "claim details from public incident narratives. Employer newsroom "
-                    "announcements, procurement notices, construction schedules, and hospital "
-                    "career pages can expose incoming crews or rotating clinical staff. Verify "
-                    "the actual housing purchaser: a hospital opening fifty positions does not "
-                    "mean fifty furnished leases are authorized. Track publication date, expected "
-                    "start date, local contact, and evidence strength in Airtable or a spreadsheet. "
-                    "Use two independent signals before assigning outreach priority, such as a "
-                    "project award plus a confirmed mobilization schedule. For supply, review "
-                    "publicly advertised furnished vacancies and professional property-manager "
-                    "portfolios, then ask directly about corporate occupancy. Do not infer "
-                    "permission from an ordinary residential listing. A useful weekly research "
-                    "batch contains twenty buyer organizations and twenty potential properties, "
-                    "with source URLs and last-verification dates. Remove stale records after "
-                    "two unsuccessful verification cycles instead of recycling them into "
-                    "automated campaigns that inflate activity without increasing executable "
-                    "housing matches."
-                ),
-                (
-                    "Treat rank_and_rent_pay_per_call_routing as a separate acquisition and "
-                    "referral business line, not disguised ALE placement revenue. Its TRACK_2 "
-                    "model builds local service hubs for foundation repair, water restoration, "
-                    "probate liquidation, or commercial roofing and routes calls through Ringba "
-                    "or Twilio. Water restoration offers the closest operational adjacency to "
-                    "displacement housing; the other categories require independent buyer "
-                    "validation. Contract for $75–$300 per accepted inbound call lasting over "
-                    "90 seconds, with additional service-area, intent, duplicate, and spam "
-                    "criteria. At twenty accepted calls priced at $150, billings equal $3,000; "
-                    "subtract an illustrative $900 acquisition cost and $300 tracking and "
-                    "quality-review cost to leave $1,800 before overhead. A restoration call "
-                    "becomes a housing opportunity only through a separate, permissioned "
-                    "introduction. Never sell a claimant's details merely because a call lasted "
-                    "long enough. Anchor traffic in useful organic city and calculator pages, "
-                    "which remain accessible if a Google Business Profile is suspended; search "
-                    "rankings themselves can still fall. Co-verify Maps only with real partner "
-                    "physical addresses that meet Google's eligibility rules. Require prepaid "
-                    "auto-refill call wallets, pause routing when funds fail, and document "
-                    "dispute resolution. If call quality deteriorates, stop paid acquisition "
-                    "and retain the organic resource pages while repairing buyer fit."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped Plays 1–7: Buyer Signals, Unit Economics, and Operating Fallbacks",
-                "headers": [
-                    "Mapped workflow and specific demand entry point",
-                    "Evidence required before contacting the purchasing organization",
-                    "Illustrative unit economics used for initial screening",
-                    "Failure condition and practical operating fallback action",
-                ],
-                "rows": [
-                    [
-                        "Play 1: rank_and_rent_pay_per_call_routing for local restoration operators",
-                        "Confirm service territory, accepted call criteria, and prepaid buyer wallet",
-                        "Twenty accepted calls at $150 produce $3,000 separate referral billings",
-                        "Pause unpaid routing; retain organic pages independent of Maps availability",
-                    ],
-                    [
-                        "Play 2: Restoration dispatch partnerships around active displacement demand",
-                        "Dispatcher confirms housing introductions are requested and permitted by households",
-                        "Four introductions producing one $6,000 booking justify testing referral effort",
-                        "If introductions stall, supply useful availability sheets without purchasing household lists",
-                    ],
-                    [
-                        "Play 3: Housing-vendor onboarding with established temporary housing coordinators",
-                        "Purchasing team confirms supplier documents, coverage geography, and request distribution",
-                        "Two $6,000 monthly bookings yield $5,400 retained at the modeled share",
-                        "If onboarding takes longer, pursue direct authorized employer housing purchasers",
-                    ],
-                    [
-                        "Play 4: Municipal repair signals translated into restoration business outreach",
-                        "Aggregate permitted repair clusters and verify displacement demand through business contacts",
-                        "Ten research hours at $30 require $300 of attributable acquisition recovery",
-                        "If permits reflect occupied repairs, deprioritize clusters without confirmed housing needs",
-                    ],
-                    [
-                        "Play 5: Hospital staffing demand verified through actual housing purchasers",
-                        "Staffing agency confirms funded assignment dates and responsibility for lodging payment",
-                        "Three $5,000 occupied months create $15,000 gross housing billings",
-                        "If workers self-book, offer transparent individual terms without employer payment assumptions",
-                    ],
-                    [
-                        "Play 6: Employer project relocation linked to confirmed mobilization schedules",
-                        "Project administrator identifies authorized signer, crew dates, and approved accommodation budget",
-                        "Two units for two $6,000 months create $24,000 gross billings",
-                        "If mobilization slips, delay lease activation or release time-limited property holds",
-                    ],
-                    [
-                        "Play 7: Furnished vacancy rescue through written corporate occupancy permissions",
-                        "Owner confirms property condition, vacancy dates, and explicit corporate sublease rights",
-                        "A $6,000 occupied month supports $3,300 modeled rent and utility costs",
-                        "Reject inflexible annual commitments when buyer duration remains materially shorter",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Source the Constraints Competitors Fail to Record",
-                "body": "Dispatchers and placement coordinators reward accurate answers more than oversized inventory claims.",
-                "items": [
-                    "Send a timestamped availability sheet listing school boundary verification, stairs, fenced yards, parking, and earliest inspected move-in; never present an unconfirmed owner conversation as reserved inventory.",
-                    "Ask restoration partners when repair schedules typically slip, then approach placement coordinators before the original housing end date with a documented extension alternative.",
-                    "Quote a pet-compatible property with its actual deposit, cleaning terms, and outdoor configuration; handle assistance-animal requests separately from ordinary pet rules.",
-                    "Keep one qualified backup landlord for each active request and obtain explicit hold expiry times so a delayed payer decision does not trigger duplicate lease commitments.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Score Both Sides of the Deal and Price the Uncovered Tail",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Score buyer requests and properties separately before combining them. A "
-                    "buyer request earns twenty points each for verified payment authority, "
-                    "documented budget, executable arrival timing, feasible household requirements, "
-                    "and written duration or cancellation terms. Pursue requests scoring eighty "
-                    "or more, but make payment authority and lawful occupancy mandatory rather "
-                    "than allowing other points to offset their absence. Payment authority means "
-                    "identifying the contractual customer, invoice recipient, authorized signer, "
-                    "and any purchase-order requirement. A carrier's involvement does not "
-                    "automatically make the carrier your debtor. Confirm whether a housing "
-                    "coordinator purchases accommodation, merely introduces the household, or "
-                    "requires reimbursement through another party. Never interpret policy "
-                    "coverage or negotiate claim benefits as part of a housing sales script. "
-                    "Property scoring allocates twenty points each to written sublease "
-                    "permission, verified condition, exact location fit, cancellation alignment, "
-                    "and stressed contribution. Require the permission and condition components "
-                    "in full before occupancy. Capture school-boundary verification dates "
-                    "without promising enrollment, confirm accessibility features objectively, "
-                    "and distinguish assistance-animal accommodations from ordinary pet charges. "
-                    "An attractive nightly rate cannot rescue a property that fails essential "
-                    "household needs. Send the buyer two genuinely executable choices rather "
-                    "than ten speculative listings, and mark the precise time each price and "
-                    "availability commitment expires."
-                ),
-                (
-                    "Underwrite individual bookings with actual costs, then reconcile the "
-                    "portfolio to the canonical scorecard rather than forcing every property "
-                    "to retain exactly 45%. For a thirty-day booking at $200 daily, gross "
-                    "housing billings are $6,000. Illustrative landlord rent and utility "
-                    "pass-throughs of $3,300 leave $2,700 retained, matching the modeled "
-                    "45% share. If cleaning, consumables, payment fees, and contractor "
-                    "coordination total $650, the booking contributes $2,050 before allocated "
-                    "overhead and vacancy reserves. A ten-day gap against a $110 daily "
-                    "rent-and-utility run rate consumes another $1,100, reducing that "
-                    "contribution to $950. Do not call either amount annual owner profit. "
-                    "For an early departure, calculate the remaining landlord obligation "
-                    "less enforceable customer cancellation receipts and credible replacement "
-                    "occupancy; do not assume every vacant night can be resold. A sixty-day "
-                    "lease supporting a thirty-day customer commitment creates thirty days "
-                    "of uncovered exposure unless contractual protections or existing demand "
-                    "close that mismatch. Negotiate extension options, shorter initial "
-                    "commitments, or a documented landlord release schedule. If the owner "
-                    "refuses flexibility, quote the uncovered tail explicitly or reject the "
-                    "property. The fallback is a managed partner placement with clearly "
-                    "defined responsibilities, not an undisclosed sublease or an optimistic "
-                    "occupancy assumption."
-                ),
-                (
-                    "Maintain three distinct accounting views: gross housing billings, retained "
-                    "revenue under the supplied 45% scorecard convention, and owner net profit "
-                    "after operating costs. Conservative annual gross billings of $180,000 "
-                    "less $99,000 rent and utility pass-throughs leave $81,000 retained; "
-                    "$59,400 of remaining costs leave $21,600 owner profit. Base gross "
-                    "billings of $790,000 less $434,500 pass-throughs leave $355,500 "
-                    "retained; $205,400 of remaining costs leave $150,100 owner profit. "
-                    "Scaled gross billings of $1,400,000 less $770,000 pass-throughs leave "
-                    "$630,000 retained; $266,000 of remaining costs leave $364,000 owner "
-                    "profit. These are respectively 12%, 19.0%, and 26% margins on "
-                    "gross billings, or 26.67%, 42.22%, and 57.78% on retained amounts. "
-                    "Retain the specified teams of 1 FT + 3 C, 1 FT + 3 C, "
-                    "and 2 FT + 4 C. ASC 606 principal-versus-agent presentation depends "
-                    "on contractual control and facts; the 45% modeling convention does "
-                    "not independently determine required statement presentation. Keep "
-                    "referral-call revenue outside these housing scenarios. Likewise, "
-                    "refundable deposits, underlying property values, and insurance claim "
-                    "limits are not housing revenue. Reconcile the monthly ledger to "
-                    "actual occupancy, invoices, vendor obligations, and cash collections "
-                    "before increasing sourcing spend."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped Plays 8–12 and Two Required Underwriting Controls",
-                "headers": [
-                    "Workflow or control applied to the proposed booking",
-                    "Qualification evidence required before issuing executable terms",
-                    "Illustrative economics or exact canonical reconciliation rule",
-                    "Risk fallback when the initial hypothesis fails",
-                ],
-                "rows": [
-                    [
-                        "Play 8: Institutional landlord sourcing for repeatable furnished inventory",
-                        "Authorized property representative signs corporate occupancy and sublease provisions",
-                        "Five potential units require individual underwriting before any portfolio commitment",
-                        "Pilot one property first when bulk discounts require excessive fixed exposure",
-                    ],
-                    [
-                        "Play 9: School-zone housing search for verified household location requirements",
-                        "Buyer confirms location need and checks enrollment rules with district staff",
-                        "A verified $6,000 monthly booking retains $2,700 at modeled share",
-                        "Offer nearby alternatives without promising admission or disclosing household school details",
-                    ],
-                    [
-                        "Play 10: Pet-compatible inventory with objective property and accommodation screening",
-                        "Owner supplies written animal terms and process for legally required accommodations",
-                        "Budget a $200 actual cleaning increment before judging booking contribution",
-                        "Change properties when lawful household requirements cannot be accommodated reliably",
-                    ],
-                    [
-                        "Play 11: Extension rescue for placements approaching their authorized end",
-                        "Purchasing contact confirms extension authority before landlord option deadline expires",
-                        "Fourteen additional days at $200 create $2,800 incremental gross billings",
-                        "Arrange a documented alternative when landlord availability prevents a lawful extension",
-                    ],
-                    [
-                        "Play 12: Buyer reactivation using documented expired or unfilled requests",
-                        "Buyer reconfirms current dates, purchasing authority, and changed household requirements",
-                        "Ten personalized updates costing $150 require attributable contribution above that spend",
-                        "Archive closed requests and honor opt-outs instead of repeatedly recycling contacts",
-                    ],
-                    [
-                        "Control thirteen: Separate housing billings from retained operating revenue",
-                        "Ledger identifies rent pass-throughs, utilities, booking costs, and collected customer invoices",
-                        "Base $790,000 gross less $434,500 pass-throughs equals $355,500 retained",
-                        "Investigate mismatches before scaling lease commitments or reporting annual profit",
-                    ],
-                    [
-                        "Control fourteen: Price cancellation exposure before accepting the property",
-                        "Signed documents identify landlord tail, customer termination rights, and collectible remedies",
-                        "Ten uncovered days at $110 consume $1,100 before replacement acquisition costs",
-                        "Shorten commitments, negotiate release rights, or decline the unmatched obligation",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Pre-Flight Verifications Before Money or Keys Move",
-                "body": "A high lead score never substitutes for executable documents and a verified dwelling.",
-                "items": [
-                    "Verify the property owner's authority and obtain an explicit written corporate-housing sublease addendum covering occupants, duration, assignment limits, and extension mechanics.",
-                    "Verify the contractual payer, authorized signer, purchase-order requirements, deposit handling, invoice destination, and documented consequences of early claim closeout.",
-                    "Inspect habitability and life-safety conditions, confirm required insurance coverage with the broker, and test entry credentials before promising an arrival time.",
-                    "Verify address-specific rental rules and occupancy-tax treatment, then calculate the full uncovered lease tail using actual cancellation terms and cash reserves.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Run a Permissioned Cadence That Converts Signals into Signed Bookings",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build outreach around a useful operational artifact: a one-page, timestamped "
-                    "housing capability sheet with geography, bedroom mix, inspected availability, "
-                    "response hours, household-fit fields, and invoice requirements. On day one, "
-                    "send a personalized business email to the verified placement or mobility "
-                    "contact explaining which current constraint you can solve. On day three, "
-                    "make a manual call to the organization's published business number and "
-                    "ask who purchases temporary accommodation. On day six, send one relevant "
-                    "inventory update, explicitly separating confirmed availability from sourcing "
-                    "capacity. On day ten, request a short supplier-intake conversation; on "
-                    "day fourteen, close the loop and offer future updates only if wanted. "
-                    "Do not substitute automated texts or prerecorded calls for business "
-                    "development discipline. The TCPA, 47 U.S.C. § 227, and 47 CFR "
-                    "§ 64.1200 impose restrictions that depend on technology, recipient, "
-                    "and message type. Commercial email must follow CAN-SPAM requirements, "
-                    "including truthful routing information, a valid postal address, and a "
-                    "working opt-out process. Maintain suppression records across channels. "
-                    "Disable call recording by default until the relevant jurisdictions' "
-                    "requirements and the announcement process are established. Treat an "
-                    "inbound restoration call as permission to address that request, not "
-                    "blanket permission for unrelated marketing or disclosure to housing "
-                    "buyers."
-                ),
-                (
-                    "Use a reverse funnel with explicit definitions rather than announcing "
-                    "industry conversion averages. An illustrative sixty-day planning cohort "
-                    "starts with 240 researched buyer records, removes sixty for weak "
-                    "relevance or unverifiable contacts, and produces 180 qualified "
-                    "organizations. Suppose personalized outreach reaches 120 relevant "
-                    "decision-makers, forty engage in substantive conversations, twenty "
-                    "submit verified housing briefs, twelve accept executable proposals "
-                    "for review, and six sign bookings. The stage rates are 75% "
-                    "qualification, 66.7% decision-maker reach, 33.3% conversation, 50% "
-                    "brief creation, 60% proposal creation, and 50% signing. Overall "
-                    "record-to-booking conversion is 2.5%; these are planning assumptions "
-                    "to replace with observed cohort results. A signed booking counts as "
-                    "a win only when property rights, customer terms, payment arrangements, "
-                    "and arrival dates are confirmed. A vendor registration, unsigned "
-                    "mandate, or verbal promise counts separately. At the same modeled "
-                    "conversion, three wins require 120 researched records and ten require "
-                    "400, but larger samples do not cure poor buyer fit. With $3,600 "
-                    "in attributable acquisition labor and tools, six wins cost $600 "
-                    "each. Compare that cost against the booking's stressed contribution, "
-                    "not its gross invoice. Track arrival and collection rates after "
-                    "signature so cancellations cannot conceal an unproductive sourcing "
-                    "channel."
-                ),
-                (
-                    "Handle objections by identifying the constraint and producing evidence. "
-                    "When a coordinator says, 'Your rate is high,' ask whether the "
-                    "comparison includes utilities, parking, furnishings, duration flexibility, "
-                    "and household fit; provide an itemized comparison without inventing "
-                    "competitor charges. When a landlord says, 'We prohibit subletting,' "
-                    "request a discussion of an explicit corporate-housing addendum; if "
-                    "they decline, remove the property. When a buyer says, 'Insurance "
-                    "will pay,' identify the actual contracting debtor and required "
-                    "authorization before reserving inventory. When a coordinator says, "
-                    "'We already have vendors,' offer a narrow overflow use case such "
-                    "as a verified fenced-yard property within a specific radius, rather "
-                    "than claiming universal availability. When duration is uncertain, "
-                    "offer a priced initial term with written extension options and "
-                    "a clear notice deadline. For a buyer requesting immediate arrival, "
-                    "show the inspection timestamp and access-test result; refuse to "
-                    "substitute an uninspected unit merely to save the sale. Record "
-                    "each objection in the CRM with a reason code and next action. "
-                    "Review lost requests weekly to distinguish price resistance from "
-                    "missing inventory, slow response, or payment friction. That diagnosis "
-                    "determines whether to change sourcing, terms, or positioning instead "
-                    "of issuing discounts that consume the spread."
-                ),
-            ],
-            "table": {
-                "caption": "Fourteen-Day Outreach Cadence and Evidence-Based Objection Handling",
-                "headers": [
-                    "Contact stage or specific objection being addressed",
-                    "Concrete message or action delivered to the prospect",
-                    "Evidence captured before moving into the next stage",
-                    "Fallback protecting contribution, privacy, and execution quality",
-                ],
-                "rows": [
-                    [
-                        "Day one email to a verified housing purchasing contact",
-                        "Send a concise capability sheet addressing one documented local inventory constraint",
-                        "Record contact relevance, delivery result, source URL, and suppression status",
-                        "Remove irrelevant contacts rather than increasing automated follow-up frequency",
-                    ],
-                    [
-                        "Day three manual call through the organization's published number",
-                        "Ask who authorizes temporary housing purchases and supplier intake requirements",
-                        "Capture purchasing role, preferred communication channel, and requested next action",
-                        "Leave one useful message without repeated calls to personal numbers",
-                    ],
-                    [
-                        "Day six inventory update with independently verified availability details",
-                        "Offer two suitable properties with exact hold expirations and inclusive pricing",
-                        "Record household requirements, budget confirmation, and availability verification timestamps",
-                        "Offer a sourcing update instead when neither property remains executable",
-                    ],
-                    [
-                        "Day ten supplier conversation and day fourteen loop closure",
-                        "Request the next authorized housing brief and explain response coverage",
-                        "Record supplier status separately from signed bookings and collected revenue",
-                        "Stop the sequence unless future relevant updates are requested",
-                    ],
-                    [
-                        "Price objection from a coordinator comparing apparently cheaper accommodation",
-                        "Compare actual inclusions, flexibility, and household fit without invented competitor costs",
-                        "Capture the buyer's real budget and acceptable tradeoffs in writing",
-                        "Offer a lower-cost configuration only when stressed contribution remains acceptable",
-                    ],
-                    [
-                        "Landlord objection involving prohibited subletting or unapproved corporate occupancy",
-                        "Present a written addendum describing occupants, terms, insurance, and responsibilities",
-                        "Obtain authorized signatures before advertising the property as executable inventory",
-                        "Remove the property immediately when explicit permission cannot be secured",
-                    ],
-                    [
-                        "Payment objection claiming the insurance carrier automatically owes every invoice",
-                        "Identify the contractual payer and obtain required purchasing authorization first",
-                        "Document debtor identity, invoice instructions, payment timing, and cancellation terms",
-                        "Release expiring holds when the buyer cannot establish payment authority",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Create a verified weekly research cohort",
-                    "action": "Research twenty buyer organizations and twenty supply prospects within the chosen service radius.",
-                    "detail": "Attach source URLs, verification dates, purchasing-role evidence, property permission status, and one specific demand hypothesis to every record.",
-                },
-                {
-                    "step": 2,
-                    "title": "Execute the fourteen-day business outreach cadence",
-                    "action": "Send relevant capability sheets, make manual business calls, and offer only verified inventory updates.",
-                    "detail": "Honor channel preferences and suppression records; measure conversations and housing briefs rather than message volume or profile views.",
-                },
-                {
-                    "step": 3,
-                    "title": "Match and underwrite executable housing requests",
-                    "action": "Score both parties, inspect shortlisted properties, and calculate contribution after the uncovered lease tail.",
-                    "detail": "Secure written sublease rights, identify the contractual payer, confirm address-specific operating requirements, and timestamp every quote and hold.",
-                },
-                {
-                    "step": 4,
-                    "title": "Convert signatures into arrivals and collections",
-                    "action": "Confirm documents, payment arrangements, access delivery, and the first extension review date.",
-                    "detail": "Count the signed booking separately from arrival and cash collection, then reconcile acquisition cost and actual contribution by originating cohort.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Land Three to Ten Wins Without Building a Vacancy Trap",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Sequence the first ninety days around evidence accumulation. During weeks "
-                    "one and two, select the service radius, build the initial buyer "
-                    "cohort, inspect candidate supply, and prepare customer and landlord "
-                    "documents. During weeks three and four, complete supplier conversations "
-                    "and secure conditional property availability without assuming unfunded "
-                    "long-term lease obligations. During weeks five through eight, convert "
-                    "verified briefs into the first three signed bookings, recording "
-                    "arrival quality and collection timing before expanding. During weeks "
-                    "nine through twelve, pursue up to ten cumulative wins only if "
-                    "the earlier cohort demonstrates positive stressed contribution and "
-                    "reliable service. These are execution targets, not claims about "
-                    "observed market performance. Startup capital remains within the "
-                    "specified $12,000–$60,000 planning range, and the stated monthly "
-                    "operating-expense range remains $3,000–$18,000. Annual scorecard "
-                    "remaining-cost totals include categories beyond any narrowly defined "
-                    "monthly cash overhead estimate; reconcile categories rather than "
-                    "silently forcing equality. Separate deposits and refundable balances "
-                    "from earned income. At an illustrative $3,300 monthly rent-and-utility "
-                    "commitment, three occupied units consume $9,900 monthly before "
-                    "other costs; a forty-five-day collection delay can require "
-                    "$14,850 just to bridge those obligations. Obtain adequate working "
-                    "capital or shorter payment cycles before signing leases that "
-                    "depend on immediate customer reimbursement."
-                ),
-                (
-                    "Check address-specific operating rules before advertising a thirty-day "
-                    "stay as automatically exempt from lodging taxes or rental restrictions. "
-                    "Texas Tax Code § 156.101 addresses the state hotel occupancy "
-                    "tax exemption for permanent residents, but local taxes, documentation, "
-                    "and other jurisdictions require separate analysis. California Civil "
-                    "Code § 1941.1 identifies important dwelling habitability conditions; "
-                    "use the applicable jurisdiction's standards to build an inspection "
-                    "checklist rather than copying one state's rules nationwide. Fair "
-                    "Housing Act requirements under 42 U.S.C. § 3604 affect "
-                    "advertising, selection, and reasonable accommodations where applicable. "
-                    "Document objective property features and evaluate accommodation requests "
-                    "through a consistent process. Ask the insurance broker to confirm "
-                    "commercial general liability, property coverage responsibilities, "
-                    "occupancy limitations, and any required additional insured "
-                    "endorsements; a certificate alone does not rewrite exclusions. "
-                    "Noise telemetry should report levels without capturing conversations, "
-                    "and leak sensors should trigger a named responder rather than "
-                    "merely populate a dashboard. Provide appropriate notice about "
-                    "devices and their purpose. Collect only household information "
-                    "needed for placement and service, restrict access by role, and "
-                    "define deletion periods. These controls preserve the sourcing "
-                    "advantage because coordinators stop sending requests when a "
-                    "supplier creates preventable occupant complaints or documentation "
-                    "failures."
-                ),
-                (
-                    "Operate one source of truth for each booking: customer, property, "
-                    "authorized occupants, approved dates, daily or monthly price, utility "
-                    "cap, landlord commitment, invoice schedule, and extension deadline. "
-                    "Synchronize ALE and CRS-related request workflows only through "
-                    "supported portal functions, authorized exports, or permitted "
-                    "integrations; do not assume a public API or scrape restricted "
-                    "account data. A spreadsheet with disciplined timestamps is safer "
-                    "than an unreliable synchronization claim. Use smart-lock codes "
-                    "unique to the stay, revoke them according to lawful occupancy "
-                    "and possession procedures, and never use automation to conduct "
-                    "an improper lockout. Schedule extension outreach before both "
-                    "the customer notice deadline and the landlord option expiry. "
-                    "Utility-cap billing must follow the signed agreement and actual "
-                    "supporting charges rather than an invented overage. Review the "
-                    "funnel every Friday by source cohort: researched records, "
-                    "verified contacts, conversations, briefs, proposals, signatures, "
-                    "arrivals, collections, acquisition cost, and stressed contribution. "
-                    "Pause sources producing weak payment authority or repeated "
-                    "cancellations even if they generate abundant inquiries. Expand "
-                    "the inventory radius only after contractor coverage, inspection "
-                    "capacity, and emergency response remain dependable. The decisive "
-                    "first-deal milestone is not ten listings or ten verbal yeses; "
-                    "it is a repeatable chain from credible demand through "
-                    "authorized occupancy to collected, reconciled contribution."
-                ),
-            ],
-            "table": {
-                "caption": "Ninety-Day Launch Controls, Operating Authorities, and Scaling Decisions",
-                "headers": [
-                    "Launch checkpoint and accountable operating work package",
-                    "Specific evidence proving the checkpoint is complete",
-                    "Numerical operating test or governing authority applied",
-                    "Required response when the evidence shows weakness",
-                ],
-                "rows": [
-                    [
-                        "Weeks one and two establish the narrow service territory",
-                        "Verified buyer cohort, inspected supply shortlist, and written document templates",
-                        "Research twenty buyers and twenty potential properties during each weekly batch",
-                        "Reduce geographic coverage when inspection and emergency response remain unreliable",
-                    ],
-                    [
-                        "Weeks three and four validate purchasing access and supply flexibility",
-                        "Completed supplier conversations and timestamped conditional property availability confirmations",
-                        "Advance only requests scoring eighty with mandatory authority components satisfied",
-                        "Avoid fixed leases when demand remains speculative or purchasing contacts unverifiable",
-                    ],
-                    [
-                        "Weeks five through eight convert the initial three bookings",
-                        "Signed customer terms, landlord permissions, payment arrangements, and confirmed arrival dates",
-                        "Three units at $3,300 require $9,900 monthly rent-and-utility funding",
-                        "Secure additional working capital or shorter collection cycles before committing",
-                    ],
-                    [
-                        "Weeks nine through twelve expand toward ten cumulative wins",
-                        "Earlier arrivals and collections demonstrate positive stressed contribution by source",
-                        "At illustrative 2.5% conversion, ten wins require four hundred researched records",
-                        "Repair the weakest funnel stage rather than merely purchasing more leads",
-                    ],
-                    [
-                        "Address-specific tax and habitability review precedes every property launch",
-                        "Documented jurisdiction checks, required registrations, inspection results, and tax treatment",
-                        "Apply Texas Tax Code § 156.101 only where its provisions govern",
-                        "Reprice applicable taxes and correct dwelling defects before offering occupancy",
-                    ],
-                    [
-                        "Advertising and household matching use consistent objective selection criteria",
-                        "Property descriptions, accommodation procedures, and access controls support fair treatment",
-                        "Review applicable duties under 42 U.S.C. § 3604 before deployment",
-                        "Correct discriminatory criteria and obtain an appropriate property alternative",
-                    ],
-                    [
-                        "Friday cohort review reconciles sourcing outcomes with actual operating contribution",
-                        "Booking ledger ties invoices, rent, utilities, acquisition costs, and collections",
-                        "Preserve annual owner profits of $21,600, $150,100, and $364,000",
-                        "Keep illustrative experiments separate from canonical annual scorecard reporting",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The best housing lead is an authorized buyer matched to a permitted property with a priced exit.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Select one service radius and build separate buyer and property registers with source URLs, verification dates, and accountable owners.",
-        "Map all twelve sourcing workflows, keeping pay-per-call referral economics separate from canonical housing billings and retained revenue.",
-        "Launch the fourteen-day permissioned outreach cadence using timestamped capability sheets and a shared suppression register.",
-        "Score every housing brief and property, requiring written sublease rights, verified payment authority, inspected condition, and priced cancellation exposure.",
-        "Execute the first three bookings with documented payment arrangements, tested arrival access, extension deadlines, and address-specific operating checks.",
-        "Review cohort conversion, arrivals, collections, acquisition cost, and stressed contribution weekly before pursuing ten cumulative wins or expanding fixed leases.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Evaluate calling and messaging practices by technology, recipient, and purpose before using automated outreach or prerecorded communications.",
-        },
-        {
-            "title": "47 CFR § 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": "Implement applicable consent, identification, calling, and do-not-call requirements for telephone outreach rather than assuming business development is universally exempt.",
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Use truthful commercial email headers and subject lines, required sender identification and postal information, and an effective opt-out process.",
-        },
-        {
-            "title": "42 U.S.C. § 3604 — Discrimination in the sale or rental of housing and other prohibited practices",
-            "url": "https://www.law.cornell.edu/uscode/text/42/3604",
-            "relevance": "Review housing advertising, selection criteria, and reasonable accommodation procedures wherever the Fair Housing Act applies.",
-        },
-        {
-            "title": "Texas Tax Code § 156.101 — Exception: Permanent Resident",
-            "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.156.htm#156.101",
-            "relevance": "Determine whether a qualifying permanent-resident exemption applies to Texas state hotel occupancy tax; separately verify local requirements and supporting records.",
-        },
-        {
-            "title": "California Civil Code § 1941.1 — Dwelling conditions affecting tenantability",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1941.1.",
-            "relevance": "For applicable California dwellings, build inspection and repair procedures around statutory tenantability conditions before promising move-in readiness.",
-        },
-    ],
-}
+CHAPTER_6 = {'id': 'Q6',
+ 'chapter_id': 'Q6',
+ 'chapter_number': 6,
+ 'question_number': 6,
+ 'slug': 'scaling-automating-stress-testing-arbitrage',
+ 'question_prompt': 'How do arbitrage operators automate and scale their portfolios, and where does the '
+                    'master-lease model break down?',
+ 'kicker': 'Q6 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Scaling, Automating, and Stress-Testing Arbitrage',
+ 'subtitle': 'Scaling to 60, 76, and 300+ units, automation stacks, remote management, teams and org '
+             'charts, a Mexico City case study, master-lease failure modes, and why some operators quit '
+             'arbitrage for co-hosting',
+ 'layout_template': 'step_by_step_blueprint',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators who scaled past 20, 60, even 450 doors agree on the same spine: pitch '
+                      'landlords as corporate housing, underwrite at two to three times rent against 24 '
+                      'months of AirDNA data, and hire a virtual assistant the day the lease is signed. '
+                      'Richie Matthews went from 18 to 35 units in six months after delegating, running an '
+                      '$80-a-month Hospitable-plus-pricing stack and 900 VA protocols. Colin Wright '
+                      'refuses deals without free rent and negotiates one-to-two-month escape clauses. '
+                      'Humza Zafar peaked at 450 units, cleared his 0% APR cards before they reset, and '
+                      'moved to A-class because fixed costs are identical across classes. The fault lines: '
+                      'Wright skips sublease addendums while Brian Fontenot refuses to do anything under '
+                      'the radar, and Milan Sánchez Stiepovic and Jeremy Werden argue co-hosting carries '
+                      'far lower risk than holding leases.',
+ 'key_metrics': [{'label': 'Delegated Scaling Run',
+                  'metric': 'Delegated Scaling Run',
+                  'value': '18 to 35 units in 6 months',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Unit growth after Matthews built his system in March 2021 and delegated '
+                             'operations to VAs',
+                  'source': 'Richie Matthews ([VtVf0h80q0w @ 00:04:01])'},
+                 {'label': 'Minimum Net Per Property',
+                  'metric': 'Minimum Net Per Property',
+                  'value': '$2,000 to $2,500 per month',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Walk-away threshold; any deal netting less gets dropped or renegotiated, '
+                             'with an average of 6 units per building',
+                  'source': 'Richie Matthews ([VtVf0h80q0w @ 00:06:44])'},
+                 {'label': 'Peak Portfolio Size',
+                  'metric': 'Peak Portfolio Size',
+                  'value': '450 units, cut back to 300',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Zafar trimmed after economy units died to competition and shifted to '
+                             'A-class, where fixed costs leave more margin',
+                  'source': 'Humza Zafar ([1D3J3ID1ZZM @ 00:06:25])'},
+                 {'label': 'Automation Stack Cost',
+                  'metric': 'Automation Stack Cost',
+                  'value': '$80 per month (Hospitable $40 + dynamic pricing $40)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Monthly software cost Matthews quotes for running messaging, calendar sync '
+                             'and pricing per operation',
+                  'source': 'Richie Matthews ([O4cBKKUBS64 @ 00:13:29])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['The operators who scaled fastest never walked into a leasing office asking '
+                              'about Airbnb. Brian Fontenot built a list of buildings that already '
+                              'accepted corporate housing, targeted large Class A complexes through a '
+                              "realtor, and pitched himself to the leasing professional as a 'corporate "
+                              "housing provider' until a corporate lease was verified [D63ppvOFpvk @ "
+                              '00:10:26]. Richie Matthews runs the same filter on Class B stock 10 to 15 '
+                              "years old: the first question is 'do you allow corporate leasing?' and "
+                              'nothing else happens until the answer is yes [O4cBKKUBS64 @ 00:09:25]. In '
+                              "Mexico City, Nathan Carillo says the words 'sublet' or 'Airbnb' get him "
+                              "hung up on immediately, so he opens with 'corporate rental, short or long "
+                              "term' and works 20 inquiries and three to four appointments a day "
+                              "[z5rgPmF_Dm4 @ 00:13:35]. Farhan Abbasi says landlords 'didn't like "
+                              "hearing' his other framing but 'loved hearing guaranteed,' and his best "
+                              'target is an owner who has carried a unit vacant for more than a month, '
+                              'because debt service on an empty unit hurts [Y2Nj2IYzw-Q @ 00:18:41]. The '
+                              'baseline prerequisite across all four: a landlord who sees a guaranteed, '
+                              'professional tenant that kills vacancy, not a side hustle trying to slip a '
+                              'listing past the lease.',
+                              'Every scaled operator underwrites the spread before touching furniture, and '
+                              'they converge on a hard multiple. Richie Matthews targets markets where '
+                              'gross revenue runs two to three times rent, checked in AirDNA against 24 to '
+                              '36 months of history, citing a Nashville 2/2 that grosses $7,500 against '
+                              '$2,500 rent [VtVf0h80q0w @ 00:07:50]. His absolute floor is a 2.0 multiple '
+                              'verified on Rentometer, with rent at no more than half of revenue and '
+                              'ideally a third; if 24 months of month-over-month data does not exist for '
+                              'the market, he walks [O4cBKKUBS64 @ 00:03:08]. Quentin West works the math '
+                              'backwards: a $2,000 minimum profit plus $2,000 rent, $600 utilities and '
+                              '$500 cleaning means the unit must clear $5,100 a month, and AirDNA has to '
+                              'show more than $60,000 a year before anyone checks Zillow [GFTAQzCp4aM @ '
+                              '00:18:27]. Colin Wright runs AirDNA, BNB Calc and Zillow rents together but '
+                              'warns the data is scraped and not 100% accurate; his own units outperform '
+                              'it, and he tells operators to balance occupancy against rate rather than '
+                              'chase a full calendar [NSyEBVGX02o @ 00:11:43]. The shared rule: the spread '
+                              'clears a written floor before a lease ever reaches signature, and nobody '
+                              'here signs on a hunch.',
+                              'The third point of agreement is that scale comes from systems and people, '
+                              'not from the founder answering messages. Matthews says step one is hiring a '
+                              'virtual assistant the day the lease is signed, and after building his '
+                              'system in March 2021 and delegating, he went from 18 to 35 units in six '
+                              'months [VtVf0h80q0w @ 00:04:17]. Abbasi ran his early units off an Excel '
+                              'and Google Sheets master file that produced date errors, and the business '
+                              'only became scalable once he paired a channel manager with a VA '
+                              '[Y2Nj2IYzw-Q @ 00:14:44]. Fontenot mapped the staffing curve by unit count: '
+                              "Guesty's communication service covered four to five units but still left "
+                              'him with 2 a.m. lockout calls, he hired an admin and communications person '
+                              'at five to seven units, grew that team to three or four people at 10 to 15 '
+                              'units, and added a property manager at 20 [D63ppvOFpvk @ 00:22:08]. Humza '
+                              'Zafar, running hundreds of doors, now works about three hours a week '
+                              'because a COO in Philadelphia runs operations and Philippines-based VAs '
+                              "handle customer service six days a week [1D3J3ID1ZZM @ 00:18:39]. Abbasi's "
+                              'minimum stack is calendar sync, dynamic pricing and outside help once a '
+                              'portfolio passes four or five units.'],
+               'table': {'caption': 'Where scaled arbitrage operators agree before the first lease is '
+                                    'signed',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Do',
+                                     'Why It Scales',
+                                     'Expert Source'],
+                         'rows': [['Pitch the unit as corporate housing, never as Airbnb',
+                                   'Lead with corporate housing provider language to Class A leasing '
+                                   'professionals',
+                                   'Leasing teams verify a corporate lease instead of rejecting a '
+                                   'short-term host',
+                                   'Short Term Rental Secrets ([D63ppvOFpvk @ 00:10:26])'],
+                                  ['Screen every landlord for corporate leasing approval first',
+                                   'Ask whether the building allows corporate leasing before any tour or '
+                                   'call',
+                                   'Kills dead-end deals early and keeps acquisition running by automated '
+                                   'message',
+                                   'Richie Matthews ([O4cBKKUBS64 @ 00:09:25])'],
+                                  ['Target owners already bleeding from vacancy at the unit level',
+                                   'Approach owners who have carried a unit vacant for more than a month',
+                                   'Debt service on an empty unit turns guaranteed rent into a win-win',
+                                   'Short Term Sage - Airbnb, Vacation Rental Host ([Y2Nj2IYzw-Q @ '
+                                   '00:18:41])'],
+                                  ['Favor mom-and-pop owners over big complexes for longevity',
+                                   'Work rent.com, apartments.com, networking events and '
+                                   'investor-landlords for small owners',
+                                   'Big complexes deny the model while small owners keep you in the '
+                                   'building',
+                                   'Alex Sabio ([52k99Zbi6fk @ 00:03:56])'],
+                                  ['Underwrite every market to a two-to-three-times rent multiple',
+                                   'Pull AirDNA with 24 to 36 months of revenue history per market',
+                                   'A Nashville 2/2 grossing $7,500 against $2,500 rent is a 3x market',
+                                   'Richie Matthews ([VtVf0h80q0w @ 00:07:50])'],
+                                  ['Hire help before the portfolio breaks the founder',
+                                   'Pair a channel manager with a VA once past four or five units',
+                                   'Spreadsheet master files produced date errors until tech and help '
+                                   'arrived',
+                                   'Short Term Sage - Airbnb, Vacation Rental Host ([Y2Nj2IYzw-Q @ '
+                                   '00:14:44])'],
+                                  ['Move up to A-class where fixed costs stay identical',
+                                   'Shift from $800 economy units to A-class apartments and 2BR-plus '
+                                   'layouts',
+                                   'Internet and cleaning cost the same, leaving more meat on the bone',
+                                   'Humza Zafar ([1D3J3ID1ZZM @ 00:06:25])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["The unit math the practitioners publish is specific. Rafa Loza's 2BR "
+                              'conversion cost a $1,000 deposit plus $2,950 rent, so $3,950 to get the '
+                              'keys, then roughly $15,000 for beds, TVs, wallpaper and locks; he averages '
+                              'at least $1,500 a month in profit over 12 months, swinging from $400 to '
+                              '$4,000 or $5,000, and pays the unit back in year one [52k99Zbi6fk @ '
+                              '00:02:28]. Colin Wright tells newcomers to start with a studio or '
+                              'one-bedroom at $7,000 to $10,000 to furnish and $10,000 to $15,000 all-in, '
+                              'netting $10,000 to $20,000 a year, while houses renting at $5,000 to '
+                              '$10,000 can throw a negative month [NSyEBVGX02o @ 00:13:01]. Short Term '
+                              "Dojo's monthly model runs $4,500 revenue against a $1,500 lease, $75 "
+                              'supplies, $75 STR-specific insurance, a $50 tech stack plus utilities, '
+                              'totaling $2,000 in costs and netting $2,500, versus roughly $500 as a '
+                              'long-term rental [tfwUVSMpB2c @ 00:05:11]. At the top end, Humza Zafar '
+                              'reports $2,600 to $2,800 rent producing $6,000 to $7,000 a month, $4,000 to '
+                              '$5,000 rent producing $8,000 to $11,000, and an $8,000-rent mansion '
+                              'furnished for $50,000 grossing $15,000 to $20,000 a month [1D3J3ID1ZZM @ '
+                              "00:07:23]. Zafar's reasoning is that fixed costs like internet and cleaning "
+                              'are identical across classes, so bigger units leave more margin per door.',
+                              "The automation layer is nearly identical across operators. Rafael Loza's "
+                              'top PMS is Hospitable, which syncs calendars across Airbnb, VRBO, '
+                              'Booking.com and a direct site to stop same-day double bookings and feeds '
+                              "PriceLabs; he tells hosts to stay away from Airbnb's native pricing tool "
+                              "because it 'will underprice everything' [J8lQc66Jf6c @ 00:01:07]. Matthews "
+                              'prices his stack at $40 for Hospitable plus $40 for dynamic pricing, $80 a '
+                              'month, and lists every unit on 20 platforms the day it goes live, including '
+                              'Booking, Expedia, Furnished Finder and ALE channels, while 70% of amateurs '
+                              'use two or fewer [O4cBKKUBS64 @ 00:05:44]. Fontenot runs Guesty, Hey Market '
+                              'for SMS, Zendesk and Slack, uses SiteMinder to reach Expedia, HomeAway, '
+                              'corporate-housing and travel-nurse portals, and screens every guest through '
+                              "Autohost; when COVID left Wheelhouse's event data stale, he switched to "
+                              "PriceClaro's manual pricing service and saw a '20 to 30' revenue increase "
+                              '[D63ppvOFpvk @ 00:24:02]. Colin Wright layers Ring doorbells, smart locks '
+                              'with a unique code per guest and per cleaner, and Minut sensors that log '
+                              'decibels, smoking and crowds as claim evidence, plus PriceLabs managed by a '
+                              'revenue manager at $50 to $60 per listing [NSyEBVGX02o @ 00:30:24]. Wright '
+                              'adds that setting the base price correctly is critical.',
+                              'Financing and labor are where the scaled operators squeeze the most. Zafar '
+                              'funded his run to roughly 100 units with 0% APR business credit cards for '
+                              'furniture plus month-free rent concessions, then paused at 200 units for a '
+                              'few months to clear the cards before the 15-month promotional window closed '
+                              '[1D3J3ID1ZZM @ 00:03:45]. Wright says he gets free rent on every deal '
+                              'because he will not take one without it, offers landlords package terms '
+                              "like '10 units, here's my terms,' and negotiates an escape clause usually "
+                              'costing one to two months of rent, which he offsets by asking the next '
+                              'property for a two-month concession [NSyEBVGX02o @ 00:58:03]. Wright '
+                              "sources his own VAs on onlinejobs.ph at $3 to $5 an hour. Matthews' first "
+                              'unit in February 2020 cost $4,800 total, $4,500 of furniture and a $300 '
+                              'deposit, with four weeks of free rent, and his VAs train for five days, run '
+                              'autonomously on day six, and work from 900 protocols with a six-minute '
+                              'maximum response time split-tested across 10,000 reservations; they never '
+                              'touch refunds or safety [O4cBKKUBS64 @ 00:16:04]. Quentin West pushes '
+                              'leverage further: one credit check across more than 45 signed leases, an '
+                              'LLC, and ten hours of script practice before calling landlords [GFTAQzCp4aM '
+                              '@ 00:41:26].'],
+               'table': {'caption': 'Exact tools, costs and unit numbers the operators run on',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Tool',
+                                     'Operator Detail',
+                                     'Expert Source'],
+                         'rows': [['Startup cash required to open one arbitrage unit',
+                                   '$1,000 deposit plus $2,950 rent, then about $15,000 furnishing',
+                                   'Profit averages at least $1,500 monthly with payback inside year one',
+                                   'Alex Sabio ([52k99Zbi6fk @ 00:02:28])'],
+                                  ['PMS and calendar sync across every booking channel',
+                                   'Hospitable syncing Airbnb, VRBO, Booking.com and a direct booking site',
+                                   'Prevents same-day double bookings and feeds PriceLabs dynamic pricing '
+                                   'daily',
+                                   'Rafael Loza ([J8lQc66Jf6c @ 00:00:12])'],
+                                  ['Monthly software cost for messaging and pricing automation',
+                                   'Hospitable at $40 plus dynamic pricing at $40 equals $80',
+                                   'One booking per month pays for a $700 to $800 monthly VA',
+                                   'Richie Matthews ([O4cBKKUBS64 @ 00:13:29])'],
+                                  ['Guest screening and corporate channel distribution at scale',
+                                   'Autohost checks ID, sex-offender registry and watchlist within 12 '
+                                   'hours',
+                                   'Property managers get portal access while SiteMinder reaches '
+                                   'travel-nurse portals',
+                                   'Short Term Rental Secrets ([D63ppvOFpvk @ 00:15:01])'],
+                                  ['Furniture rental instead of buying for faster launches',
+                                   'Court Furniture Rent at $550 to $750 monthly with setup included',
+                                   'Walk away from deals netting under $2,000 to $2,500 per property',
+                                   'Richie Matthews ([VtVf0h80q0w @ 00:06:32])'],
+                                  ['In-unit security hardware that doubles as claims evidence',
+                                   'Ring doorbell, per-guest smart-lock codes and Minut noise and smoke '
+                                   'sensors',
+                                   'Decibel, smoking and crowd logs back up damage claims against guests',
+                                   'Official Success Formula ([NSyEBVGX02o @ 00:30:24])'],
+                                  ['Cleaning team structure that holds quality across units',
+                                   'One lead manages about eight cleaners across about 22 units',
+                                   'Cleaners are first contact reporting damage, smoking and excess pets',
+                                   'Rafael Loza ([J8lQc66Jf6c @ 00:03:43])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Acquisition and Revenue Edges Scaled Operators Actually Use',
+                           'body': 'Four moves the operators credit for landing doors and squeezing more '
+                                   'revenue out of each one, pulled from their own deal flow and booking '
+                                   'data.',
+                           'items': ['Drive your neighborhood for buildings under construction and ask the '
+                                     'contractors on site to connect you directly with the owner [Alex '
+                                     'Sabio — 52k99Zbi6fk @ 00:07:06]',
+                                     'Only accept VRBO or Booking.com reservations when they catch a '
+                                     "premium over Airbnb, since Airbnb's host fee jumped from 3% to 15% "
+                                     '[Official Success Formula — NSyEBVGX02o @ 00:38:14]',
+                                     'Offer your units to the complex as guest suites and overnight model '
+                                     'units for prospective long-term tenants to bond with the leasing '
+                                     'office [Short Term Rental Secrets — D63ppvOFpvk @ 00:11:13]',
+                                     "List during the landlord's two-week setup grace period: one Mexico "
+                                     'City listing booked three stays within 30 minutes, at a cost of '
+                                     'about $200 in photos [Short Term Sage - Airbnb, Vacation Rental Host '
+                                     '— z5rgPmF_Dm4 @ 00:29:48]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Underwrite the Market',
+                              'action': 'Pull 24 months of AirDNA data and confirm at least a 2x rent '
+                                        'multiple',
+                              'detail': 'Spend about 20 minutes each morning pulling month-over-month '
+                                        'AirDNA data and Rentometer rents; walk if 24 months of data is '
+                                        'missing or the multiple falls under 2.0, then verify legality for '
+                                        'the market [Richie Matthews — O4cBKKUBS64 @ 00:10:19]'},
+                             {'step': 2,
+                              'title': 'Negotiate the Lease Terms',
+                              'action': 'Demand free rent and an escape clause before signing',
+                              'detail': 'Refuse deals without free rent, negotiate an escape clause of one '
+                                        "to two months' rent, and push package terms of multiple units "
+                                        'with lower or no security deposits [Official Success Formula — '
+                                        'NSyEBVGX02o @ 00:58:03]'},
+                             {'step': 3,
+                              'title': 'Install the Stack and the VA',
+                              'action': 'Hire a VA on lease day and load Hospitable, PriceLabs and canned '
+                                        'messages',
+                              'detail': 'Hire the VA the day the lease is signed at $4 to $4.50 an hour '
+                                        'paid through Wise every other week, list on all platforms, and '
+                                        'load roughly 900 canned messages into Hospitable with PriceLabs '
+                                        'running pricing [Richie Matthews — VtVf0h80q0w @ 00:05:24]'},
+                             {'step': 4,
+                              'title': 'Furnish, Shoot and Launch',
+                              'action': 'Run a floor-plan-to-install pipeline and book an STR-specific '
+                                        'photographer',
+                              'detail': 'Move from floor plan to vision board to storage locker to '
+                                        'install, budget $8,000 to $10,000 turnkey, give every unit a '
+                                        'desk, sleeper sofa and air mattress, and hire an STR-specific '
+                                        'photographer shooting HDR brackets [Official Success Formula — '
+                                        'NSyEBVGX02o @ 00:27:07]'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether arbitrage should be the scaling engine at '
+                              'all. Milan Sánchez Stiepovic runs Happy Host at 163 units and says 98% of '
+                              "them now sit under management, calling co-hosting '100% superior' after "
+                              'trying both models, yet he still tells beginners to do their first unit as '
+                              'arbitrage [nPFkgk7QMfA @ 00:18:20]. Jeremy Werden quit arbitrage outright: '
+                              'a $2,500-rent unit grossing $5,000 against $1,000 in costs nets $1,500, but '
+                              'a slide to $3,000 revenue leaves the operator $500 short, while a co-host '
+                              'earning 20% of that same $5,000 pockets $1,000 a month with minimal '
+                              'overhead and no lease exposure [kXJgiO6RYaU @ 00:02:07]. Humza Zafar argues '
+                              'the opposite for the US market, rejecting 80/20 revenue share because a '
+                              'roughly $15K startup with rent concessions keeps the master lease worth '
+                              'carrying; he concedes only that Dubai, with $40–50K paid upfront, changes '
+                              'the math [1D3J3ID1ZZM @ 00:44:45]. John Bell refuses to pick a side at all. '
+                              'At roughly 50 units split about evenly between arbitrage and co-hosting, '
+                              'co-hosting income covers his leases through slow seasons and COVID, and his '
+                              "rule is that 'it always bleeds into the next method so you're going to want "
+                              "a good blend' [scmRAbKvEPk @ 00:06:14].",
+                              'Pace is the second fault line. Richie Matthews teaches speed: he copied the '
+                              'Sonder playbook, went to 18 properties in 12 months and 46 in two years, '
+                              'and frames his VA-plus-protocol system as the thing that makes that pace '
+                              "possible because 'you can't scale chaos' [O4cBKKUBS64 @ 00:07:11]. The "
+                              'CoLiving Insider prescribes the brake pedal instead: hold every new house '
+                              'at break-even for 90 days before opening the next, put each house in its '
+                              "own LLC 'so one bad lease cannot take down the rest,' and never pay above "
+                              'market just to win a deal, pointing to Quarters raising $300M and still '
+                              'going bankrupt as a business that grew faster than its margins could '
+                              'support [zj0PhRK1anA @ 00:07:57]. Humza Zafar sits between them. He scaled '
+                              'from 5 to roughly 100 units on 0% APR cards and free-month concessions, but '
+                              'deliberately paused at 200 units for a few months to clear the cards before '
+                              'the 15-month promotional window closed [1D3J3ID1ZZM @ 00:13:20]. Rafa Loza '
+                              'looks back and says he should have capped out at about $30K a month in cash '
+                              'flow and bought property, after a $2.7–3M revenue year left him paying $86K '
+                              'in taxes with nothing to depreciate [52k99Zbi6fk @ 00:07:31].',
+                              'How openly to run the model, and whose name goes on the paper, splits the '
+                              'room just as hard. Brian Fontenot refuses to sign leases in a personal '
+                              'name, routes everything through a business entity, issues guests a '
+                              'short-term occupancy permit so the arrangement is not a sublet, and insists '
+                              "on doing nothing 'under the radar,' even giving property managers portal "
+                              'access to his Autohost guest screening [D63ppvOFpvk @ 00:13:28]. Colin '
+                              'Wright runs looser: he skips the sublease addendum, leans on verbal or '
+                              'written permission, says an LLC is not required, keeps some leases in his '
+                              'own name, and openly books the cost, roughly 15 units lost to new owners '
+                              'over three years [NSyEBVGX02o @ 00:23:11]. Nathan Carillo in Mexico City '
+                              "hides the model's name entirely, never saying 'sublet' or 'Airbnb' on a "
+                              "first call because owners hang up, and pitches a 'corporate rental, "
+                              "short/long term' backed by a professional video, landlord testimonials, a "
+                              'presentation and a website [z5rgPmF_Dm4 @ 00:13:35]. Quentin West, on Beau '
+                              "Eckstein's show, takes the entity route to its scaling conclusion: one "
+                              'credit check across 45+ signed leases, an LLC, and ten hours of script '
+                              'practice before working landlords [GFTAQzCp4aM @ 00:41:26].'],
+               'table': {'caption': 'Side-by-side playbooks where scaled arbitrage operators split',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Arbitrage versus co-hosting as the core scaling engine',
+                                   'Humza Zafar rejects US 80/20 revenue share because startup runs about '
+                                   '$15K with concessions',
+                                   'Milan keeps 98% of 163 units under management and calls co-hosting '
+                                   'superior',
+                                   'Humza Zafar ([1D3J3ID1ZZM @ 00:44:45]); Milan Sánchez Stiepovic '
+                                   '([nPFkgk7QMfA @ 00:18:20])'],
+                                  ['Single-family homes versus apartments and luxury houses',
+                                   'Richie Matthews tells operators facing single family homes to simply '
+                                   'run away',
+                                   'Humza runs an $8K-rent mansion grossing $15–20K per month after a $50K '
+                                   'furnish',
+                                   'Richie Matthews ([O4cBKKUBS64 @ 00:01:28]); Humza Zafar ([1D3J3ID1ZZM '
+                                   '@ 00:07:23])'],
+                                  ['Starter unit class: small economy units versus A-class larger units',
+                                   'Colin Wright says start with a studio or one-bedroom at $10–15K all-in',
+                                   'Humza dropped $800 Dallas economy units for A-class after competition '
+                                   'killed that tier',
+                                   'Official Success Formula ([NSyEBVGX02o @ 00:13:01]); Humza Zafar '
+                                   '([1D3J3ID1ZZM @ 00:04:57])'],
+                                  ['Growth pace: speed-scaling versus one house at a time',
+                                   'Richie Matthews copied Sonder and hit 18 properties in 12 months, 46 '
+                                   'in two years',
+                                   'Hold each new house 90 days at break-even before opening the next one',
+                                   'Richie Matthews ([O4cBKKUBS64 @ 00:00:20]); The CoLiving Insider '
+                                   '([zj0PhRK1anA @ 00:07:57])'],
+                                  ['Lease paperwork: entity-signed transparency versus handshake '
+                                   'permission',
+                                   'Fontenot signs only through a business entity and does nothing under '
+                                   'the radar',
+                                   'Colin Wright skips the sublease addendum and lost about 15 units to '
+                                   'new owners',
+                                   'Short Term Rental Secrets ([D63ppvOFpvk @ 00:13:28]); Official Success '
+                                   'Formula ([NSyEBVGX02o @ 00:23:11])'],
+                                  ['Virtual assistant sourcing: offshore hourly versus local hire',
+                                   'Richie Matthews scales on offshore VAs paid $4 to $4.50 an hour',
+                                   'Quentin West prefers working with a local virtual assistant instead of '
+                                   'offshore help',
+                                   'Richie Matthews ([O4cBKKUBS64 @ 00:06:55]); Beau Eckstein, Business '
+                                   'Ownership Coach ([GFTAQzCp4aM @ 00:17:20])'],
+                                  ['What co-hosting actually pays per door if you switch models',
+                                   "John Bell's segment puts the co-hosting fee at 15–20% of revenue",
+                                   'Milan charges about 20% and up to 35%, calculated including the '
+                                   'cleaning fee',
+                                   'Short Term Sage - Airbnb, Vacation Rental Host ([scmRAbKvEPk @ '
+                                   '00:04:49]); Milan Sánchez Stiepovic ([nPFkgk7QMfA @ 00:10:48])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The landlord exit is the failure every operator eventually meets. Rafa Loza '
+                              "states it bluntly: 'you will only be a business as long as the landlord or "
+                              "Property Management allows you to be in the building,' and he steers "
+                              'operators toward mom-and-pop owners because big complexes deny you '
+                              '[52k99Zbi6fk @ 00:03:34]. He lived it, growing from zero to 14 units in '
+                              'nine months and reaching about 28, before COVID and a building sale cut him '
+                              'back to three; it took another year and a half to rebuild to 76 '
+                              '[52k99Zbi6fk @ 00:06:41]. The CoLiving Insider walks through an owner '
+                              'selling nine months into payback on a $27K setup and an owner defaulting on '
+                              'the mortgage, and puts every fix before signing: strike the sale clause, '
+                              'add a buyout and a right of first refusal, pull county records, and get an '
+                              'SNDA plus a notice clause [zj0PhRK1anA @ 00:00:48]. Farhan Abbasi prices '
+                              'the wind-down when a market closes on you: storage at $350 a month for '
+                              'three apartments over about eight months, furniture that cost $2–3K per '
+                              "apartment with near-zero resale, and a final answer that 'the simplest one "
+                              "was to unfortunately throw them away' [Y2Nj2IYzw-Q @ 01:00:07].",
+                              'Scale itself eats margin, and the operators who ran the biggest portfolios '
+                              "report it most precisely. Humza Zafar's Dallas economy units rented for "
+                              '$800 and earned about $3,000 in 2021–22, furnished with $2,000 of IKEA, '
+                              'until competition killed that tier and forced him into A-class only '
+                              '[1D3J3ID1ZZM @ 00:04:57]. He also reports per-unit net shrinking as the '
+                              'portfolio grows, from $1,500 down to $700–800 and from $800 down to $300. '
+                              'His Detroit case is the cleanest warning on cannibalization: one building '
+                              'went from 20 to 50 units, another 30 were added across the street, and net '
+                              'per unit collapsed from $1,200–1,500 to about $500, a roughly $100K loss; '
+                              'he now concentrates units only in Dubai or New York-type demand '
+                              '[1D3J3ID1ZZM @ 00:33:19]. Jeremy Werden names the same trap from the '
+                              "competitor's side, saturation and price wars whenever nearby operators "
+                              'launch units, and pairs it with the seasonal mistake of failing to bank '
+                              'summer profit to carry winter rent [kXJgiO6RYaU @ 00:04:29]. Colin Wright '
+                              'frames the problem as markets saturated with bad hosts rather than with '
+                              'hosts, adding that the $2K IKEA furniture package that used to win no '
+                              'longer works [NSyEBVGX02o @ 00:15:17].',
+                              'The operational failures are personal, expensive, and usually discovered by '
+                              'the operators who scaled first. Jeremy Werden warns that roughly year-long '
+                              '0% APR cards fund the furniture until the promo ends and the operator is '
+                              'left sitting on six-figure debt, a spiral he wants viewers to steer clear '
+                              'of entirely [kXJgiO6RYaU @ 00:05:02]. Richie Matthews self-furnished from '
+                              'IKEA and Amazon and cleaned his own units for the first year while '
+                              "acquiring 18 properties in 12 months; his summary of that stretch is 'my "
+                              "first year was up all night' [VtVf0h80q0w @ 00:08:55]. Colin Wright names "
+                              'his single biggest mistake as running with no SOPs at all, which meant '
+                              'training every VA one-on-one as the team grew [NSyEBVGX02o @ 00:52:50]. '
+                              "Brian Fontenot found that even with Guesty's communication service covering "
+                              'support at 4–5 units he was still taking 2 a.m. lockout calls, which forced '
+                              'an admin and communications hire at 5–7 units, growth of that team from one '
+                              'person to three or four by 10–15 units, and a dedicated property manager '
+                              'once he reached 20 units [D63ppvOFpvk @ 00:22:08].'],
+               'table': {'caption': 'Failure modes operators hit firsthand and the fix each one now runs',
+                         'headers': ['Failure Mode',
+                                     'What Happened',
+                                     'Practitioner Fix or Check',
+                                     'Expert Source'],
+                         'rows': [['Owner sells the building in the middle of payback',
+                                   'A $27K setup was stranded nine months into payback when the owner sold',
+                                   'Strike the sale clause and add a buyout plus right of first refusal',
+                                   'The CoLiving Insider ([zj0PhRK1anA @ 00:00:48])'],
+                                  ['Cannibalizing your own units in one building',
+                                   'Detroit building went 20 to 50 units and net per unit fell to about '
+                                   '$500',
+                                   'Concentrate units only in Dubai or New York-type demand markets',
+                                   'Humza Zafar ([1D3J3ID1ZZM @ 00:33:19])'],
+                                  ['Landlord steals the business model mid-negotiation',
+                                   'A Mexico City owner heard the projected income, cancelled, and started '
+                                   'his own Airbnb',
+                                   'Never lead with sublet or Airbnb; pitch a corporate rental, short or '
+                                   'long term',
+                                   'Short Term Sage - Airbnb, Vacation Rental Host ([z5rgPmF_Dm4 @ '
+                                   '00:45:16])'],
+                                  ['Stale dynamic pricing data during a demand shock',
+                                   'Wheelhouse relied on events that COVID cancelled, so its rate data '
+                                   'went stale',
+                                   'Switched to PriceClaro manual pricing and saw a 20 to 30 revenue '
+                                   'increase',
+                                   'Short Term Rental Secrets ([D63ppvOFpvk @ 00:23:46])'],
+                                  ['Card-funded furniture turning into a debt spiral',
+                                   'Year-long 0% APR furniture cards can end in six-figure debt when '
+                                   'promos expire',
+                                   'Pause growth and clear the cards before the 15-month promo window ends',
+                                   'Jeremy Werden ([kXJgiO6RYaU @ 00:05:02]); Humza Zafar ([1D3J3ID1ZZM @ '
+                                   '00:13:20])'],
+                                  ['Spotty internet breaking the smart-home stack',
+                                   'Weak internet took down locks and devices, forcing monthly-rotated '
+                                   'backup lock codes',
+                                   'Switch to a better internet provider and treat it like electricity',
+                                   'Rafael Loza ([J8lQc66Jf6c @ 00:02:38])'],
+                                  ['Resident or guest non-payment wiping out monthly margin',
+                                   "One $850 non-payment equals roughly half of that house's monthly "
+                                   'profit',
+                                   'Screen residents, follow fair housing, and keep three months of owner '
+                                   'rent reserved',
+                                   'The CoLiving Insider ([zj0PhRK1anA @ 00:03:38])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Kill Checks Before the Next Lease',
+                           'body': 'Run these checks before signing or adding another unit; each one comes '
+                                   'from an operator who paid for skipping it.',
+                           'items': ['Walk away or renegotiate any deal that is not spitting out at least '
+                                     '$2,000 to $2,500 net per month per property [Richie Matthews — '
+                                     'VtVf0h80q0w @ 00:06:44].',
+                                     'Hold each new house at break-even for 90 days and put it in its own '
+                                     'LLC before opening the next one [The CoLiving Insider — zj0PhRK1anA '
+                                     '@ 00:07:57].',
+                                     'Do not stack units in one building or across the street outside '
+                                     'Dubai or New York-type demand; Detroit cannibalization cost about '
+                                     '$100K [Humza Zafar — 1D3J3ID1ZZM @ 00:53:42].',
+                                     'Negotiate a one-to-two-month-rent escape clause before signing, and '
+                                     'offset that exit cost with a two-month rent concession on the next '
+                                     'property [Official Success Formula — NSyEBVGX02o @ 00:04:30].']}}],
+ 'pull_quote': '"And now you\'re able to scale because you can\'t scale chaos." — Richie Matthews '
+               '(O4cBKKUBS64 @ 00:07:11).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Screen every market for at least a 2x and ideally 3x revenue-to-rent multiple using '
+                      '24 months of month-over-month data, and walk if the data is not there [Richie '
+                      'Matthews — O4cBKKUBS64 @ 00:10:19].',
+                      'Hire a virtual assistant the day you sign the lease, make sure they work for a '
+                      'US-based operator, and pay them through Wise every other week [Richie Matthews — '
+                      'VtVf0h80q0w @ 00:04:17].',
+                      'Run Hospitable synced with PriceLabs for daily dynamic pricing and stay away from '
+                      "Airbnb's native pricing tool [Rafael Loza — J8lQc66Jf6c @ 00:01:07].",
+                      'Background-check every guest through Autohost for ID, sex-offender and watchlist '
+                      'hits, and give property managers portal access to the reports [Short Term Rental '
+                      'Secrets — D63ppvOFpvk @ 00:15:01].',
+                      'Drive your neighborhood for buildings under construction and ask the contractors to '
+                      'connect you with the owner [Alex Sabio — 52k99Zbi6fk @ 00:07:06].',
+                      'Install Ring doorbells, smart locks with a unique code per guest and per cleaner, '
+                      'and Minut sensors for decibels, smoking and crowds to back claims with evidence '
+                      '[Official Success Formula — NSyEBVGX02o @ 00:30:09].'],
+ 'statutory_citations': [{'title': 'Humza Zafar — Humza Zafar on Scaling to $1M/mo with Airbnb Arbitrage & '
+                                   'Why Most Hosts Fail | BNB Inside [00:33:19]',
+                          'url': 'https://www.youtube.com/watch?v=1D3J3ID1ZZM&t=1999s',
+                          'relevance': 'Primary practitioner testimony on per-unit margin compression and '
+                                       'Detroit unit cannibalization at scale.'},
+                         {'title': 'The CoLiving Insider — Rental Arbitrage Gone Wrong: 5 Ways a Master '
+                                   'Lease Fails [00:07:57]',
+                          'url': 'https://www.youtube.com/watch?v=zj0PhRK1anA&t=477s',
+                          'relevance': 'Primary practitioner testimony on master lease failure modes, '
+                                       'one-LLC-per-house and 90-day break-even growth rules.'},
+                         {'title': 'Richie Matthews — Billion Dollar Blueprint For Apartment Arbitrage '
+                                   '[00:16:04]',
+                          'url': 'https://www.youtube.com/watch?v=O4cBKKUBS64&t=964s',
+                          'relevance': 'Primary practitioner testimony on speed-scaling through 900 VA '
+                                       'protocols and 20-platform distribution.'},
+                         {'title': 'Jeremy Werden — 6 Brutal Reasons I Quit Airbnb Arbitrage And Switched '
+                                   'to Co Hosting [00:05:02]',
+                          'url': 'https://www.youtube.com/watch?v=kXJgiO6RYaU&t=302s',
+                          'relevance': 'Primary practitioner testimony on 0% APR debt spirals, saturation '
+                                       'price wars and the switch to co-hosting.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '52k99Zbi6fk',
+                       'title': 'Scaling to 76 Airbnb Arbitrage Units with Rafa Loza',
+                       'channel': 'Alex Sabio',
+                       'author': 'Alex Sabio',
+                       'text': 'You will only be a business as long as the landlord or Property Management '
+                               'allows you to be in the building.',
+                       'tip': 'You will only be a business as long as the landlord or Property Management '
+                              'allows you to be in the building.',
+                       'timestamp': 214,
+                       'timestamp_seconds': 214,
+                       'timestamp_label': '[00:03:34]',
+                       'url': 'https://www.youtube.com/watch?v=52k99Zbi6fk&t=214s',
+                       'markdown': '[00:03:34](https://www.youtube.com/watch?v=52k99Zbi6fk&t=214s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'J8lQc66Jf6c',
+                       'title': 'How to Automate your Airbnb Rental Arbitrage!',
+                       'channel': 'Rafael Loza',
+                       'author': 'Rafael Loza',
+                       'text': "Please stay away from it, do not use it, it's terrible.",
+                       'tip': "Please stay away from it, do not use it, it's terrible.",
+                       'timestamp': 67,
+                       'timestamp_seconds': 67,
+                       'timestamp_label': '[00:01:07]',
+                       'url': 'https://www.youtube.com/watch?v=J8lQc66Jf6c&t=67s',
+                       'markdown': '[00:01:07](https://www.youtube.com/watch?v=J8lQc66Jf6c&t=67s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VtVf0h80q0w',
+                       'title': 'Rental Arbitrage Has Changed — Use This New System',
+                       'channel': 'Richie Matthews',
+                       'author': 'Richie Matthews',
+                       'text': "And if you're not spitting out at least $2,000 to $2,500 per month per "
+                               'property, walk away from the deal or better yet, negotiate it.',
+                       'tip': "And if you're not spitting out at least $2,000 to $2,500 per month per "
+                              'property, walk away from the deal or better yet, negotiate it.',
+                       'timestamp': 404,
+                       'timestamp_seconds': 404,
+                       'timestamp_label': '[00:06:44]',
+                       'url': 'https://www.youtube.com/watch?v=VtVf0h80q0w&t=404s',
+                       'markdown': '[00:06:44](https://www.youtube.com/watch?v=VtVf0h80q0w&t=404s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Y2Nj2IYzw-Q',
+                       'title': 'How to manage and build Rental Arbitrage properties remotely w/ Farhan '
+                                'Abbasi',
+                       'channel': 'Short Term Sage - Airbnb, Vacation Rental Host',
+                       'author': 'Short Term Sage - Airbnb, Vacation Rental Host',
+                       'text': "Don't fall into the hype, do your financial modeling very conservatively.",
+                       'tip': "Don't fall into the hype, do your financial modeling very conservatively.",
+                       'timestamp': 3939,
+                       'timestamp_seconds': 3939,
+                       'timestamp_label': '[01:05:39]',
+                       'url': 'https://www.youtube.com/watch?v=Y2Nj2IYzw-Q&t=3939s',
+                       'markdown': '[01:05:39](https://www.youtube.com/watch?v=Y2Nj2IYzw-Q&t=3939s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'D63ppvOFpvk',
+                       'title': 'Scaling a Rental Arbitrage Business With Systems & Teams with Brian '
+                                'Fontenot',
+                       'channel': 'Short Term Rental Secrets',
+                       'author': 'Short Term Rental Secrets',
+                       'text': "What I recommend definitely is that you don't go the route of signing it "
+                               'in a personal name.',
+                       'tip': "What I recommend definitely is that you don't go the route of signing it in "
+                              'a personal name.',
+                       'timestamp': 808,
+                       'timestamp_seconds': 808,
+                       'timestamp_label': '[00:13:28]',
+                       'url': 'https://www.youtube.com/watch?v=D63ppvOFpvk&t=808s',
+                       'markdown': '[00:13:28](https://www.youtube.com/watch?v=D63ppvOFpvk&t=808s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NSyEBVGX02o',
+                       'title': 'He Makes $600K/Month Without Owning a Single Property | Airbnb Arbitrage '
+                                'Secrets with Colin Wright',
+                       'channel': 'Official Success Formula',
+                       'author': 'Official Success Formula',
+                       'text': "I'm getting free rent on all of my deals now because I don't take deals "
+                               'without.',
+                       'tip': "I'm getting free rent on all of my deals now because I don't take deals "
+                              'without.',
+                       'timestamp': 3483,
+                       'timestamp_seconds': 3483,
+                       'timestamp_label': '[00:58:03]',
+                       'url': 'https://www.youtube.com/watch?v=NSyEBVGX02o&t=3483s',
+                       'markdown': '[00:58:03](https://www.youtube.com/watch?v=NSyEBVGX02o&t=3483s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'z5rgPmF_Dm4',
+                       'title': 'What its like scaling a Rental Arbitrage business in Mexico City w/ '
+                                'Nathan & Raquel Carillo',
+                       'channel': 'Short Term Sage - Airbnb, Vacation Rental Host',
+                       'author': 'Short Term Sage - Airbnb, Vacation Rental Host',
+                       'text': "It's the same amount of effort that I need to put and it's much more "
+                               'profitable.',
+                       'tip': "It's the same amount of effort that I need to put and it's much more "
+                              'profitable.',
+                       'timestamp': 1215,
+                       'timestamp_seconds': 1215,
+                       'timestamp_label': '[00:20:15]',
+                       'url': 'https://www.youtube.com/watch?v=z5rgPmF_Dm4&t=1215s',
+                       'markdown': '[00:20:15](https://www.youtube.com/watch?v=z5rgPmF_Dm4&t=1215s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'O4cBKKUBS64',
+                       'title': 'Billion Dollar Blueprint For Apartment Arbitrage',
+                       'channel': 'Richie Matthews',
+                       'author': 'Richie Matthews',
+                       'text': "And now you're able to scale because you can't scale chaos.",
+                       'tip': "And now you're able to scale because you can't scale chaos.",
+                       'timestamp': 431,
+                       'timestamp_seconds': 431,
+                       'timestamp_label': '[00:07:11]',
+                       'url': 'https://www.youtube.com/watch?v=O4cBKKUBS64&t=431s',
+                       'markdown': '[00:07:11](https://www.youtube.com/watch?v=O4cBKKUBS64&t=431s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'O4cBKKUBS64',
+                       'title': 'Billion Dollar Blueprint For Apartment Arbitrage',
+                       'channel': 'Richie Matthews',
+                       'author': 'Richie Matthews',
+                       'text': 'At 15% vacancy, trust me, the landlord is going to fly to town.',
+                       'tip': 'At 15% vacancy, trust me, the landlord is going to fly to town.',
+                       'timestamp': 527,
+                       'timestamp_seconds': 527,
+                       'timestamp_label': '[00:08:47]',
+                       'url': 'https://www.youtube.com/watch?v=O4cBKKUBS64&t=527s',
+                       'markdown': '[00:08:47](https://www.youtube.com/watch?v=O4cBKKUBS64&t=527s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GFTAQzCp4aM',
+                       'title': 'Maximizing Profits with Rental Arbitrage on Airbnb and VRBO',
+                       'channel': 'Beau Eckstein, Business Ownership Coach',
+                       'author': 'Beau Eckstein, Business Ownership Coach',
+                       'text': "Build up our cash flow with Arbitrage because it's not long-term wealth, "
+                               "it's cash flow, it's temporary.",
+                       'tip': "Build up our cash flow with Arbitrage because it's not long-term wealth, "
+                              "it's cash flow, it's temporary.",
+                       'timestamp': 1424,
+                       'timestamp_seconds': 1424,
+                       'timestamp_label': '[00:23:44]',
+                       'url': 'https://www.youtube.com/watch?v=GFTAQzCp4aM&t=1424s',
+                       'markdown': '[00:23:44](https://www.youtube.com/watch?v=GFTAQzCp4aM&t=1424s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'roqaSiCOnsI',
+                       'title': 'What is Rental Arbitrage vs Cohosting vs BRRRR vs Turnkey',
+                       'channel': 'Short Term Sage - Airbnb, Vacation Rental Host',
+                       'author': 'Short Term Sage - Airbnb, Vacation Rental Host',
+                       'text': "If things go belly-up I'm out as soon as the lease ends.",
+                       'tip': "If things go belly-up I'm out as soon as the lease ends.",
+                       'timestamp': 203,
+                       'timestamp_seconds': 203,
+                       'timestamp_label': '[00:03:23]',
+                       'url': 'https://www.youtube.com/watch?v=roqaSiCOnsI&t=203s',
+                       'markdown': '[00:03:23](https://www.youtube.com/watch?v=roqaSiCOnsI&t=203s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'scmRAbKvEPk',
+                       'title': 'Which is Harder to Start and Scale, Rental Arbitrage or Cohosting?',
+                       'channel': 'Short Term Sage - Airbnb, Vacation Rental Host',
+                       'author': 'Short Term Sage - Airbnb, Vacation Rental Host',
+                       'text': "It always bleeds into the next method so you're going to want a good "
+                               'blend.',
+                       'tip': "It always bleeds into the next method so you're going to want a good blend.",
+                       'timestamp': 374,
+                       'timestamp_seconds': 374,
+                       'timestamp_label': '[00:06:14]',
+                       'url': 'https://www.youtube.com/watch?v=scmRAbKvEPk&t=374s',
+                       'markdown': '[00:06:14](https://www.youtube.com/watch?v=scmRAbKvEPk&t=374s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tfwUVSMpB2c',
+                       'title': 'Running a Short Term Rental though the Master Lease (Arbitrage) model',
+                       'channel': 'Short Term Dojo',
+                       'author': 'Short Term Dojo',
+                       'text': "If you don't have money and you want to build your unit count in your "
+                               "portfolio, it's probably better off to go in the co-host route.",
+                       'tip': "If you don't have money and you want to build your unit count in your "
+                              "portfolio, it's probably better off to go in the co-host route.",
+                       'timestamp': 777,
+                       'timestamp_seconds': 777,
+                       'timestamp_label': '[00:12:57]',
+                       'url': 'https://www.youtube.com/watch?v=tfwUVSMpB2c&t=777s',
+                       'markdown': '[00:12:57](https://www.youtube.com/watch?v=tfwUVSMpB2c&t=777s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zj0PhRK1anA',
+                       'title': 'Rental Arbitrage Gone Wrong: 5 Ways a Master Lease Fails',
+                       'channel': 'The CoLiving Insider',
+                       'author': 'The CoLiving Insider',
+                       'text': 'Put each house in its own limited liability company or LLC, so one bad '
+                               'lease cannot take down the rest.',
+                       'tip': 'Put each house in its own limited liability company or LLC, so one bad '
+                              'lease cannot take down the rest.',
+                       'timestamp': 477,
+                       'timestamp_seconds': 477,
+                       'timestamp_label': '[00:07:57]',
+                       'url': 'https://www.youtube.com/watch?v=zj0PhRK1anA&t=477s',
+                       'markdown': '[00:07:57](https://www.youtube.com/watch?v=zj0PhRK1anA&t=477s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zj0PhRK1anA',
+                       'title': 'Rental Arbitrage Gone Wrong: 5 Ways a Master Lease Fails',
+                       'channel': 'The CoLiving Insider',
+                       'author': 'The CoLiving Insider',
+                       'text': 'Almost every fix happens before you sign.',
+                       'tip': 'Almost every fix happens before you sign.',
+                       'timestamp': 554,
+                       'timestamp_seconds': 554,
+                       'timestamp_label': '[00:09:14]',
+                       'url': 'https://www.youtube.com/watch?v=zj0PhRK1anA&t=554s',
+                       'markdown': '[00:09:14](https://www.youtube.com/watch?v=zj0PhRK1anA&t=554s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1D3J3ID1ZZM',
+                       'title': 'Humza Zafar on Scaling to $1M/mo with Airbnb Arbitrage & Why Most Hosts '
+                                'Fail | BNB Inside',
+                       'channel': 'Humza Zafar',
+                       'author': 'Humza Zafar',
+                       'text': 'Location is the most important thing.',
+                       'tip': 'Location is the most important thing.',
+                       'timestamp': 3206,
+                       'timestamp_seconds': 3206,
+                       'timestamp_label': '[00:53:26]',
+                       'url': 'https://www.youtube.com/watch?v=1D3J3ID1ZZM&t=3206s',
+                       'markdown': '[00:53:26](https://www.youtube.com/watch?v=1D3J3ID1ZZM&t=3206s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nPFkgk7QMfA',
+                       'title': 'Whats better? Airbnb Arbitrage vs Airbnb Management (Co-hosting)',
+                       'channel': 'Milan Sánchez Stiepovic',
+                       'author': 'Milan Sánchez Stiepovic',
+                       'text': "I've tried both models and this one for me it's 100% superior, management "
+                               'or co-hosting.',
+                       'tip': "I've tried both models and this one for me it's 100% superior, management "
+                              'or co-hosting.',
+                       'timestamp': 1100,
+                       'timestamp_seconds': 1100,
+                       'timestamp_label': '[00:18:20]',
+                       'url': 'https://www.youtube.com/watch?v=nPFkgk7QMfA&t=1100s',
+                       'markdown': '[00:18:20](https://www.youtube.com/watch?v=nPFkgk7QMfA&t=1100s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kXJgiO6RYaU',
+                       'title': '6 Brutal Reasons I Quit Airbnb Arbitrage And Switched to Co Hosting',
+                       'channel': 'Jeremy Werden',
+                       'author': 'Jeremy Werden',
+                       'text': 'Benefit number four, and again I think this really is the biggest one, is '
+                               'lower financial risk.',
+                       'tip': 'Benefit number four, and again I think this really is the biggest one, is '
+                              'lower financial risk.',
+                       'timestamp': 442,
+                       'timestamp_seconds': 442,
+                       'timestamp_label': '[00:07:22]',
+                       'url': 'https://www.youtube.com/watch?v=kXJgiO6RYaU&t=442s',
+                       'markdown': '[00:07:22](https://www.youtube.com/watch?v=kXJgiO6RYaU&t=442s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'}]}

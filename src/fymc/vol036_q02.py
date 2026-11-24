@@ -1,603 +1,822 @@
 from __future__ import annotations
 
-CHAPTER_2 = {
-    "id": "Q2",
-    "chapter_id": "Q2",
-    "chapter_number": 2,
-    "question_number": 2,
-    "slug": "who-pays-gpu-compute-telecom-payment-rails",
-    "question_prompt": "Who writes the check in gpu compute & telecom capacity arbitrage, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
-    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "H100/H200/B200 Reservations, LiteLLM Metering, SIP Settlement, Stripe Prefunding, and FCC Provider Obligations",
-    "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #36, GPU Compute & Telecom Capacity Arbitrage, ranks #03 of 36 "
-        "with a 94/100 Money-to-Manpower Score. Across 15 mapped plays, buyers pay "
-        "to replace idle GPU commitments, unpredictable inference bills, carrier failures, "
-        "and fragmented provisioning with measurable service. The economic buyer is "
-        "usually a founder, infrastructure leader, agency principal, or communications "
-        "operator; treasury controls settlement. Conservative, Base, and Scaled annual "
-        "owner profits are $27,000, $189,000, and $456,000 against gross billings of "
-        "$150,000, $675,000, and $1,200,000. The scorecard retains 65% after upstream "
-        "capacity costs. This chapter separates budget authority from technical enthusiasm, "
-        "compares eight settlement rails, and establishes prefunding, fee evidence, credit "
-        "limits, and lawful service suspension before irreversible capacity is purchased."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$150,000",
-            "context": "Annual gross billings; $97,500 retained contribution at 65%",
-            "note": "18% gross-basis net margin; $27,000 owner profit; 1 FT + 2 C; 27.69% retained-basis margin",
-        },
-        {
-            "label": "Base",
-            "value": "$675,000",
-            "context": "Annual gross billings; $438,750 retained contribution at 65%",
-            "note": "28.0% gross-basis net margin; $189,000 owner profit; 1 FT + 2 C; 43.08% retained-basis margin",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual gross billings; $780,000 retained contribution at 65%",
-            "note": "38% gross-basis net margin; $456,000 owner profit; 2 FT + 3 C; 58.46% retained-basis margin",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Identify the buyer, the budget owner, and the measurable loss",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The check writer buys relief from a measurable operating loss, not an abstract capacity spread. "
-                    "For an AI application founder, the acute pain is a product launch whose inference cost exceeds "
-                    "subscription receipts. For an infrastructure director, it is a reserved cluster sitting idle while "
-                    "another team queues urgent jobs. For a contact-center operator, it is rejected calls, unstable "
-                    "termination quality, or a carrier deposit that absorbs working capital. Quote an accepted unit "
-                    "before quoting savings: GPU device-hour with a named configuration, model-specific input and output "
-                    "tokens, answered SIP minutes by destination, or registered messaging traffic with carrier fees "
-                    "itemized. An illustrative H100 purchase at $1.40 per device-hour and sale at $2.00 leaves $0.60 "
-                    "before orchestration, idle inventory, support, and settlement expense. At 1,000 sold hours, that "
-                    "is $600, not $2,000 of owner earnings. This transaction has different unit economics from the "
-                    "portfolio scorecard and must not replace its 65% retained assumption. Ask the buyer which existing "
-                    "invoice or missed revenue event the purchase replaces. If they cannot identify either, sell a "
-                    "small paid benchmark rather than committing a month of bare metal. A benchmark must reproduce "
-                    "their workload, latency target, isolation requirement, and real invoice dimensions."
-                ),
-                (
-                    "Separate the technical champion, contractual signer, budget owner, and person authorized to release "
-                    "cash. A developer may possess an API key without authority to accept a twelve-month minimum. "
-                    "Procurement may issue a purchase order while accounts payable still lacks the vendor record "
-                    "needed to remit funds. Obtain the legal entity name, billing address, purchase-order reference, "
-                    "signatory authority, tax documentation, remittance contact, and dispute address before reserving "
-                    "capacity. For escrow, identify both the depositor and the person empowered to accept deliverables; "
-                    "their release authority belongs in the escrow instructions. A founder paying by card should "
-                    "authorize recurring replenishment and its maximum amount explicitly. An enterprise paying by wire "
-                    "should confirm beneficiary details through a previously verified callback channel, never solely "
-                    "through an emailed bank-change notice. Counterparty screening combines business-registration records, "
-                    "domain ownership signals, expected workloads, sanctions screening where applicable, and upstream "
-                    "acceptable-use restrictions. These controls support commercial risk management; they do not imply "
-                    "every compute reseller is a regulated bank. Reject requests to conceal the end customer from "
-                    "a supplier when supplier terms require disclosure. A genuine buyer can explain who uses the "
-                    "service, who approves charges, and which entity bears payment responsibility when an affiliate "
-                    "or subcontractor consumes the capacity."
-                ),
-                (
-                    "Use a fifteen-play operating map without pretending every play has identical buyers or margins. "
-                    "The first thirteen are H100 reservation slicing, H200 reservation slicing, B200 reservation slicing, "
-                    "batch GPU backfill, managed fine-tuning windows, dedicated private inference, multi-provider token "
-                    "routing, regional inference overflow, wholesale SIP termination, inbound DID bundles, registered "
-                    "10DLC messaging, authorized IPv4 leasing, and managed capacity procurement. The remaining two are "
-                    "cloud_ai_startup_credit_aggregation_arbitrage and agency_ad_spend_card_multiplier_rebate_cycling. "
-                    "This is the chapter's operational mapping, not a claim that thirteen additional canonical identifiers "
-                    "were supplied. For each play, record a paid unit, the person owning its budget, a measurable "
-                    "acceptance condition, and a fallback route. A 100,000-minute SIP order at $0.012 produces $1,200 "
-                    "in billings; termination at $0.008 consumes $800 before number rental, surcharges, fraud, and "
-                    "support. If a route deteriorates, move only permitted traffic to a qualified alternative and "
-                    "apply a contractual spend ceiling. A 1,000-hour GPU reservation sold for only 600 hours can "
-                    "lose money despite a positive quoted hourly spread. Release uncommitted inventory, shorten "
-                    "reservation duration, or price the reservation itself. Capacity access is the product only "
-                    "when the operator has contractual resale rights; otherwise, sell authorized management services "
-                    "against the customer's own supplier account."
-                ),
-            ],
-            "table": {
-                "caption": "Seven Buyer Groups, Budget Authority, and Evidence Required Before Capacity Purchase",
-                "headers": [
-                    "Buyer and immediate operating pain",
-                    "Budget and settlement authority",
-                    "Accepted paid unit and evidence",
-                    "Fallback when authority or demand fails",
-                ],
-                "rows": [
-                    [
-                        "AI SaaS founder facing inference costs above subscription receipts",
-                        "Founder signs within documented corporate spending authority and limits",
-                        "Model-specific token ledger reconciled against application request identifiers",
-                        "Run a prepaid benchmark before accepting recurring capacity commitments",
-                    ],
-                    [
-                        "Infrastructure director carrying idle H100 and H200 reservation expense",
-                        "Procurement signs while treasury confirms the approved payment schedule",
-                        "Reserved device-hours with configuration, availability, and isolation evidence",
-                        "Offer shorter reservation windows with clearly priced cancellation exposure",
-                    ],
-                    [
-                        "Research team requiring scheduled fine-tuning on named GPU configurations",
-                        "Department budget owner approves spend under institutional purchasing rules",
-                        "Completed training window supported by job logs and checkpoints",
-                        "Use smaller paid trials without promising identical benchmark performance",
-                    ],
-                    [
-                        "Contact-center operator losing answered calls through unstable termination routes",
-                        "Communications executive contracts and finance authorizes carrier settlement funds",
-                        "Rated call-detail records showing destination, duration, and route selection",
-                        "Shift permitted traffic to tested alternative carriers within limits",
-                    ],
-                    [
-                        "Messaging platform suffering blocked campaigns and unpredictable carrier surcharges",
-                        "Platform principal funds campaigns and accepts documented messaging charges",
-                        "Registered campaign traffic matched to delivery events and surcharges",
-                        "Pause affected campaigns rather than rotate identities around filtering",
-                    ],
-                    [
-                        "Hosting operator requiring legitimate address space and documented routing rights",
-                        "Network owner approves lease terms and finance verifies beneficiary",
-                        "Authorized address lease with routing authorization and abuse ownership",
-                        "Withdraw disputed announcements and obtain replacement authorized address space",
-                    ],
-                    [
-                        "Agency principal seeking permitted rebates without financing client advertising",
-                        "Client authorizes spend while agency finance controls prefunded limits",
-                        "Client-approved advertising invoices reconciled with contractual rebate allocation terms",
-                        "Move advertising to client-direct billing when funding becomes uncertain",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "2. Select settlement rails that match reversibility and delivery",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Prefunding changes the exposure clock, but a dashboard balance is not proof of final cash. "
-                    "Stripe checkout can confirm a successful card payment while chargeback exposure and processor "
-                    "reserves remain. ACH debit can produce a return after service has already consumed upstream "
-                    "capacity. A wire credited to the correct account generally offers stronger settlement certainty, "
-                    "although fraud investigations, sanctions issues, and recall requests still require handling. Track "
-                    "three states separately: payment initiated, funds available, and risk reserve released. Create "
-                    "customer spendable credit only under an explicit policy for the particular rail and buyer. "
-                    "For example, a $5,000 card-funded account with a $1,000 internal risk reserve permits $4,000 "
-                    "of initial service, not an immediate $5,000 noncancelable supplier purchase. At $200 hourly "
-                    "burn, that spendable balance covers twenty hours. Stop admitting new jobs before it reaches "
-                    "zero, while reserving enough credit for jobs already running. Disclose this balance policy "
-                    "before payment. Treat prepaid service balances as customer contract liabilities until earned, "
-                    "with documented refund and expiration rules where permitted. Keep them closed-loop service "
-                    "credits rather than transferable cash equivalents; transferability, cash redemption, and holding "
-                    "money for third parties require a separate payments-law analysis. Never describe a processor's "
-                    "ordinary merchant balance as an independent escrow account."
-                ),
-                (
-                    "Compare settlement rails against the same delivery obligation instead of choosing the cheapest "
-                    "headline fee. Wire suits larger verified reservations; ACH can suit established business customers; "
-                    "platform checkout accelerates small prepaid purchases. Retainers and milestone holds are contract "
-                    "structures layered over a payment rail, while factoring finances an eligible receivable after "
-                    "it exists. Escrow is useful when a buyer needs independent custody before a defined release "
-                    "event, but hourly compute cannot tolerate an acceptance test left open for weeks. Specify "
-                    "the benchmark, evidence source, objection period, partial-release method, refund allocation, and "
-                    "dispute procedure before either party deposits funds. Statutory disbursement is not an ordinary "
-                    "GPU payment option: a telecom support program pays only eligible participants and services "
-                    "under its governing rules. Do not sell a speculative program reimbursement as committed cash. "
-                    "For an illustrative $20,000 reservation, $5,000 released after provisioning and $15,000 after "
-                    "a specified burn-in test reduces ambiguity but still leaves supplier exposure before the second "
-                    "release. Match upstream commitment dates to released funds, or finance the gap explicitly. "
-                    "A customer-funded escrow balance cannot pay the supplier until its instructions permit release. "
-                    "The operator must price that timing difference rather than quietly borrowing against customer "
-                    "money that remains restricted."
-                ),
-                (
-                    "Credit screening should translate evidence into a dollar limit, not a decorative risk score. "
-                    "Verify the buyer's entity and business purpose, request trade references for material postpaid "
-                    "exposure, inspect payment history, and investigate mismatches between the contracting party and "
-                    "the payer. A bank letter alone does not establish willingness to pay disputed usage. Define "
-                    "unsecured exposure as delivered unpaid service plus unavoidable supplier commitments, less eligible "
-                    "cash collateral actually available to cover those obligations. If delivered usage is $8,000, "
-                    "remaining unavoidable commitments are $4,000, and usable security is $5,000, exposure is $7,000. "
-                    "A $6,000 limit therefore requires additional funding or reduced new consumption. Avoid double "
-                    "counting deposits already applied to invoices. For new counterparties, begin with prefunded "
-                    "service and enlarge limits only after observed settlement performance. Obtain consent for any "
-                    "credit inquiry that requires it and collect only necessary verification data. Bind account "
-                    "ownership changes to renewed verification, especially before raising throughput. The contract "
-                    "should permit suspension of new work for exhausted credit, suspected account compromise, or "
-                    "prohibited traffic, with notice and emergency handling appropriate to the service. Retain enough "
-                    "operational capacity to export customer artifacts safely rather than using their data as "
-                    "collection leverage."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Settlement Rails and Structures Compared Against Irreversible Capacity Exposure",
-                "headers": [
-                    "Rail or settlement structure",
-                    "Authority and usable release evidence",
-                    "Exposure and fee protection mechanics",
-                    "Best deployment and concrete failure fallback",
-                ],
-                "rows": [
-                    [
-                        "Bank wire for verified business reservation purchases and deposits",
-                        "Treasury verifies beneficiary independently and bank confirms credited funds",
-                        "Bind reserved inventory to credited funds and documented cancellation terms",
-                        "Delay supplier commitment when beneficiary verification or receipt remains unresolved",
-                    ],
-                    [
-                        "Independent escrow for negotiated provisioning and benchmark acceptance obligations",
-                        "Named acceptance authority releases funds under signed objective instructions",
-                        "Specify partial releases, dispute deadlines, refund allocation, and custody fees",
-                        "Reduce provisioning scope when release timing cannot fund supplier obligations",
-                    ],
-                    [
-                        "ACH credit or authorized business debit for repeat purchasers",
-                        "Match bank settlement records with authorization and customer invoice references",
-                        "Price return exposure and maintain limits through applicable return periods",
-                        "Require wire prefunding after returns or inconsistent payer identity evidence",
-                    ],
-                    [
-                        "Service retainer funded through a separately identified payment rail",
-                        "Authorized signer accepts reservation scope and finance funds scheduled replenishment",
-                        "Separate earned reservation fees from refundable unused service credit balances",
-                        "Reduce reserved capacity when replenishment misses the contractual payment date",
-                    ],
-                    [
-                        "Statutory program disbursement for eligible supported telecommunications services only",
-                        "Program administrator approves eligible claims under governing support program rules",
-                        "Preserve eligibility, service, and invoice evidence without assuming reimbursement timing",
-                        "Exclude anticipated reimbursements from available working capital until actually received",
-                    ],
-                    [
-                        "Platform checkout using Stripe cards or other enabled payment methods",
-                        "Authenticated customer accepts pricing and processor reports the payment lifecycle",
-                        "Maintain dispute reserves and reconcile webhooks against authoritative payment records",
-                        "Throttle new consumption when disputes exceed the approved risk allowance",
-                    ],
-                    [
-                        "Receivables factoring against assignable earned and accepted customer invoices",
-                        "Factor approves debtor and assignment while customer receives required notice",
-                        "Model fees, reserves, dilution, recourse, and customer setoff rights explicitly",
-                        "Return to prefunding when invoices fail verification or assignment restrictions",
-                    ],
-                    [
-                        "Milestone holds with payment released against narrowly defined delivery evidence",
-                        "Named buyer representative accepts milestones within the agreed review period",
-                        "Limit retained amounts and distinguish service credits from withheld principal",
-                        "Pause subsequent milestones when earlier undisputed amounts remain contractually overdue",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify Authority, Cash, Capacity, and Exposure Before Activation",
-                "body": "Release service only after these four checks produce retained evidence tied to the customer account.",
-                "items": [
-                    "Match the contracting entity, authorized signer, payer, and permitted end customer; resolve affiliate-payment exceptions in writing.",
-                    "Confirm usable funds for the selected rail, subtract restricted escrow and dispute reserves, and establish the spendable balance.",
-                    "Verify supplier resale rights, named hardware or carrier service, available inventory, and upstream cancellation exposure.",
-                    "Simulate wallet exhaustion with running jobs and live calls; confirm that admission limits prevent uncontrolled new commitments.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Protect the fee and reconcile gross billings to owner profit",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Reconcile every proposal to the supplied Formula v2.0 rather than borrowing a favorable margin "
-                    "from one transaction. Conservative gross billings are $150,000; upstream capacity costs at 35% "
-                    "are $52,500, leaving $97,500 retained contribution. Subtract $70,500 of remaining modeled costs "
-                    "to obtain $27,000 owner profit: 18% of gross billings and 27.69% of retained contribution. "
-                    "Base gross billings of $675,000 less $236,250 upstream costs leave $438,750; remaining costs "
-                    "of $249,750 produce $189,000 profit, or 28.0% gross-basis and 43.08% retained-basis margins. "
-                    "Scaled billings of $1,200,000 less $420,000 upstream costs leave $780,000; remaining costs "
-                    "of $324,000 produce $456,000 profit, or 38% and 58.46%, respectively. These remaining-cost "
-                    "figures are algebraic residuals, not an invented expense allocation. The supplied $2,000–$14,000 "
-                    "monthly operating-expense range cannot describe every residual at Base and Scaled; obtain its "
-                    "scope before using it as a total-cost ceiling. Conservative and Base use 1 FT + 2 C; "
-                    "Scaled uses 2 FT + 3 C. Under ASC 606, principal-versus-agent presentation depends on "
-                    "control of the specified service, not merely collecting the invoice. Use the supplied 65% "
-                    "retained basis for scorecard comparison without automatically treating gross collections as recognized "
-                    "operator revenue."
-                ),
-                (
-                    "Fee protection starts with delivering a service the customer continues to need. A buyer can "
-                    "purchase hardware access elsewhere; they cannot instantly reproduce tested routing, normalized "
-                    "metering, reserved inventory management, and documented carrier operations. Contract for those "
-                    "deliverables explicitly. Separate capacity charges, orchestration fees, managed-service retainers, and "
-                    "permitted procurement commissions so a payment dispute does not erase the entire invoice. A "
-                    "narrow introduction-protection clause should identify the introduced supplier or customer, covered "
-                    "transaction, duration, fee trigger, reporting obligation, and existing-relationship exceptions. Its "
-                    "enforceability depends on the governing law and actual facts; avoid punitive formulas disconnected "
-                    "from the earned fee. Obtain supplier acknowledgment when their settlement process must remit "
-                    "your commission. A signed introduction email is useful evidence but does not create payment "
-                    "authority by itself. Attach an order schedule defining device configuration, token tokenizer, "
-                    "SIP billing increments, destination rates, taxes, carrier surcharges, and service-credit calculations. "
-                    "Record tariff or rate-deck versions and their effective timestamps before usage begins. Preserve "
-                    "signed acceptance, metering exports, and invoice delivery records in an access-controlled archive. "
-                    "If the customer objects to one rated destination, isolate that amount while pursuing undisputed "
-                    "charges under the contract. Do not threaten network abuse, data withholding, or deceptive "
-                    "routing to collect an invoice."
-                ),
-                (
-                    "The agency_ad_spend_card_multiplier_rebate_cycling play concerns genuine client-authorized advertising "
-                    "spend, not synthetic purchases or a way to manufacture compute revenue. Assume an eligible "
-                    "agency arrangement processes $100,000 of approved monthly advertising and earns 2% cash-equivalent "
-                    "rewards plus a contract-permitted 0.5% volume rebate. That is $2,500 before deductions. If "
-                    "incremental processing costs are $700, financing costs are $600, and the client receives "
-                    "$800 under the agency agreement, the residual is $400 before agency labor and taxes. "
-                    "If financing doubles, the residual becomes negative $200. Check reward-category exclusions, "
-                    "merchant acceptance terms, issuer limits, rebate clawbacks, client ownership of benefits, and "
-                    "payment timing before approving the arrangement. Value points at a defensible realized redemption "
-                    "amount, not a promotional travel valuation. The client's $100,000 media purchase is underlying "
-                    "client spend, not automatically agency revenue or GPU billings. Keep this example outside "
-                    "the canonical annual scenarios unless the scorecard explicitly incorporates its net economics. "
-                    "Require client prefunding or approved agency credit terms, and never increase advertising solely "
-                    "to chase rewards. The fallback is client-direct billing or prefunded approved agency terms; "
-                    "stop rewards-dependent spending immediately when permitted economics deteriorate. Preserve campaign "
-                    "authorization, invoices, card statements, and the agreed allocation of every rebate."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Annual Waterfall and Contractual Fee-Protection Evidence",
-                "headers": [
-                    "Scenario or control being reconciled",
-                    "Gross billing and retained contribution treatment",
-                    "Cost or exposure calculation to preserve",
-                    "Owner economics or required collection evidence",
-                ],
-                "rows": [
-                    [
-                        "Conservative case operated by one full-time person and two contractors",
-                        "$150,000 gross billings yield $97,500 retained contribution at 65%",
-                        "$52,500 upstream expense plus $70,500 remaining modeled annual costs",
-                        "$27,000 owner profit equals 18% gross-basis and 27.69% retained-basis",
-                    ],
-                    [
-                        "Base case operated by one full-time person and two contractors",
-                        "$675,000 gross billings yield $438,750 retained contribution at 65%",
-                        "$236,250 upstream expense plus $249,750 remaining modeled annual costs",
-                        "$189,000 owner profit equals 28.0% gross-basis and 43.08% retained-basis",
-                    ],
-                    [
-                        "Scaled case operated by two full-time people and three contractors",
-                        "$1,200,000 gross billings yield $780,000 retained contribution at 65%",
-                        "$420,000 upstream expense plus $324,000 remaining modeled annual costs",
-                        "$456,000 owner profit equals 38% gross-basis and 58.46% retained-basis",
-                    ],
-                    [
-                        "Principal-versus-agent assessment applied separately to each specified customer service",
-                        "Present gross revenue only when the applicable control analysis supports it",
-                        "Avoid deducting upstream costs twice from already net-presented service revenue",
-                        "Retain accounting memorandum connecting contract promises with actual delivery control",
-                    ],
-                    [
-                        "Introduced supplier commission protected through a narrowly drafted agreement",
-                        "Identify covered transactions and exclude documented preexisting customer supplier relationships",
-                        "Calculate commission using agreed eligible transactions and disclosed settlement deductions",
-                        "Preserve signed acknowledgment, transaction reports, invoices, and actual remittance records",
-                    ],
-                    [
-                        "Agency rewards example based on genuine authorized monthly advertising",
-                        "$100,000 client media spend creates $2,500 illustrative gross reward benefits",
-                        "$700 processing plus $600 financing plus $800 client allocation",
-                        "$400 residual precedes labor and taxes; doubled financing produces loss",
-                    ],
-                    [
-                        "Disputed usage isolated without rewriting the entire monthly service invoice",
-                        "Separate challenged destination charges from all other accepted customer usage",
-                        "Apply documented service credits without silently changing underlying metered quantities",
-                        "Collect undisputed balances using contract terms and preserved delivery evidence",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect Spread Through Evidence Rather Than Lock-In",
-                "body": "Veteran operators preserve optionality while making the purchased service and earned fee easy to verify.",
-                "items": [
-                    "Version every SIP rate deck with an effective timestamp; attach the applicable version identifier to each rated call record.",
-                    "Quote H100, H200, and B200 capacity by actual configuration and tested workload throughput, not by model name alone.",
-                    "Keep commission acknowledgments separate from supplier introductions so remittance responsibility survives personnel changes.",
-                    "Calculate card-reward economics after financing, clawbacks, processing, and client allocation; disable the strategy before its residual turns negative.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Connect entitlement, metering, and suspension to the cash ledger",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "For cloud_ai_startup_credit_aggregation_arbitrage, form Delaware or Wyoming entities only for genuine "
-                    "standalone vertical SaaS businesses, not duplicate identities designed to evade program limits. "
-                    "AWS Activate, Microsoft for Startups and Azure founder programs, Google for Startups Cloud, "
-                    "Cloudflare, and startup offers from OpenAI or Anthropic have distinct eligibility, referral, "
-                    "expiration, and permitted-use terms. The supplied $25,000–$350,000 grant range and $50,000–$350,000 "
-                    "play label are planning envelopes, not available balances or promises of stackable awards. "
-                    "Verify each current offer and approved account separately. An illustrative $50,000 approved "
-                    "credit used against eligible $5,000 monthly charges lasts ten months only if expiration "
-                    "and service restrictions allow it. A genuine extraction SaaS earning $10,000 monthly with "
-                    "$200–$1,000 remaining cash delivery costs can show 90–98% cash delivery margin while eligible "
-                    "compute is covered; that excludes labor, taxes, acquisition, and replacement compute costs. "
-                    "Never label it owner net margin. Sell the application outcome, never raw API keys or "
-                    "unapproved credit transfers. Use authorized data sources and permitted collection methods. Track "
-                    "grant depletion beside paid demand, and price renewals against unsubsidized costs. Maintain "
-                    "tested local open-weight Llama or DeepSeek deployments through vLLM where licensing and hardware "
-                    "fit; warm capacity and regression tests, rather than a model name alone, determine migration "
-                    "continuity."
-                ),
-                (
-                    "Make the consumption ledger independently reconstructable. LiteLLM can route inference across approved "
-                    "providers, but record request identifier, customer, model revision, tokenizer basis, input tokens, "
-                    "output tokens, retry disposition, and billed price. vLLM serving metrics and NVIDIA DCGM "
-                    "telemetry support operations; GPU utilization percentage alone is not a customer invoice. For "
-                    "device-hour products, bill the contracted allocation interval, excluding only the downtime or "
-                    "credits actually promised. Reserve maximum expected job cost before admission and reconcile "
-                    "actual consumption afterward. If a job can consume $120 and the wallet holds $100, "
-                    "reject it, shorten it with customer authorization, or obtain more funds before starting. "
-                    "For SIP, rate call-detail records with destination normalization, rounding increments, connected duration, "
-                    "and concurrency caps. For messaging, reconcile provider-accepted segments, delivery events, campaign "
-                    "fees, and carrier surcharges under the agreed charging rules. Stripe webhooks require signature "
-                    "verification, idempotent processing, and reconciliation against the processor's records so a replay "
-                    "cannot mint credit twice. Keep immutable accounting events with correcting entries rather than "
-                    "editing historical usage silently. Enterprise zero-data-retention commitments require provider eligibility "
-                    "checks and payload logging disabled throughout the path; retain only contractually permitted "
-                    "billing metadata. Separate tenants through appropriate GPU, container, network, storage, and credential "
-                    "boundaries, then test those boundaries."
-                ),
-                (
-                    "Telecom delivery requires role-specific obligations before automation can safely provision service. Determine "
-                    "whether the business is a voice service provider, intermediate provider, interconnected VoIP provider, "
-                    "reseller, or messaging software vendor under the applicable rule. STIR/SHAKEN implementation and "
-                    "Robocall Mitigation Database duties follow the covered role and current FCC requirements; buying "
-                    "an upstream carrier connection does not automatically discharge them. Register applicable 10DLC "
-                    "brands and campaigns through the carrier ecosystem, while distinguishing those contractual requirements "
-                    "from the TCPA and FCC calling rules. Evaluate FCC Form 499-A registration and reporting "
-                    "under the service classification and filing instructions; a contribution exemption does not "
-                    "automatically eliminate reporting. Screen workloads and traffic against supplier acceptable-use terms, "
-                    "including prohibited mining, unlawful calls, and identity misrepresentation. An automated least-cost "
-                    "router must optimize only among authorized, quality-qualified routes; never bypass blocking through "
-                    "caller-ID manipulation or campaign identity rotation. Run a daily close joining customer payments, "
-                    "earned usage, unused credit, supplier accruals, refunds, disputes, and restricted reserves. Investigate "
-                    "breaks before increasing throughput. The minimum operating package is a signed order, verified "
-                    "payment authority, funded exposure limit, reproducible meter, qualified fallback, and tested suspension "
-                    "path. These controls turn capacity trading into a service business whose cash conversion "
-                    "survives both customer disputes and supplier repricing."
-                ),
-            ],
-            "table": {
-                "caption": "Meter-to-Cash Controls for Credits, Inference, GPU Reservations, and Telecom Traffic",
-                "headers": [
-                    "Operating surface and charged unit",
-                    "Evidence captured before service activation",
-                    "Reconciliation and customer fee protection",
-                    "Failure response preserving permitted service boundaries",
-                ],
-                "rows": [
-                    [
-                        "Startup grant funded SaaS using eligible cloud service consumption",
-                        "Approved program account, genuine entity, expiration date, and service eligibility",
-                        "Match grant deductions to supplier invoices without recording grants as sales",
-                        "Switch to funded permitted compute before usable grant balances expire",
-                    ],
-                    [
-                        "Multi-provider inference billed through model-specific input and output tokens",
-                        "Approved provider route, model revision, price schedule, and retention terms",
-                        "Join request identifiers to tokenizer counts and duplicate retry treatment",
-                        "Route to tested permitted alternatives within customer latency and budget",
-                    ],
-                    [
-                        "Reserved H100, H200, or B200 capacity sold by allocation interval",
-                        "Hardware configuration, isolation method, reservation rights, and available supplier inventory",
-                        "Reconcile allocation intervals with scheduler events and contractual downtime credits",
-                        "Stop new allocations when credit cannot cover already admitted workloads",
-                    ],
-                    [
-                        "Wholesale SIP traffic billed using destination-specific answered call minutes",
-                        "Verified customer role, permitted traffic, destination limits, and carrier terms",
-                        "Match call-detail records with versioned rate decks and rounding increments",
-                        "Suspend prohibited traffic while routing legitimate calls through qualified alternatives",
-                    ],
-                    [
-                        "Registered 10DLC messaging charged by agreed segments and carrier fees",
-                        "Verified brand, applicable campaign registration, permitted content, and sender authority",
-                        "Reconcile accepted segments, carrier charges, delivery events, and campaign fees",
-                        "Pause rejected campaigns rather than bypass filtering through identity rotation",
-                    ],
-                    [
-                        "Customer service wallet funded through approved merchant payment methods",
-                        "Verified payer, accepted balance terms, risk reserve, and authenticated payment",
-                        "Reconcile deposits, earned charges, refunds, disputes, and unused service liabilities",
-                        "Freeze suspicious replenishment and preserve an auditable customer balance history",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Bind the commercial parties",
-                    "action": "Collect entity, signer, payer, end-user, purchase-order, and remittance details.",
-                    "detail": "Attach supplier resale permissions, acceptable-use terms, service classification, and the named person authorized to accept delivery.",
-                },
-                {
-                    "step": 2,
-                    "title": "Fund the exposure limit",
-                    "action": "Select the settlement rail and calculate spendable funds after restrictions and reserves.",
-                    "detail": "Exclude unreleased escrow, anticipated grants, speculative reimbursements, and unearned card rewards from usable supplier funding.",
-                },
-                {
-                    "step": 3,
-                    "title": "Test admission and metering",
-                    "action": "Run a paid benchmark with signed prices, reproducible usage records, and a wallet-exhaustion test.",
-                    "detail": "Verify idempotent payment posting, maximum job-cost reservation, telecom destination caps, and the agreed treatment of retries or failed delivery.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close cash and earned service daily",
-                    "action": "Reconcile payments, consumption, supplier accruals, refunds, disputes, and customer liabilities.",
-                    "detail": "Investigate unmatched events before expanding limits; execute the tested fallback or suspend new consumption when funding or service conditions fail.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "The spread belongs to the operator only after authorized demand, earned service, and usable cash reconcile.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Create a buyer-authority record identifying the legal customer, technical champion, authorized signer, budget owner, payer, and acceptance representative.",
-        "Choose one of the eight settlement structures and document release evidence, reversibility, reserves, refund treatment, and supplier funding dates.",
-        "Rebuild all three scorecard waterfalls with 65% retained contribution and the exact $27,000, $189,000, and $456,000 annual owner profits.",
-        "Attach configuration-specific GPU pricing, model-specific token prices, versioned SIP rate decks, and messaging surcharges to signed customer orders.",
-        "Verify startup-credit eligibility and agency-reward permissions independently; exclude client media spend and grant face values from operator sales.",
-        "Test metering reconstruction, tenant isolation, qualified route failover, grant depletion response, and suspension before a wallet can fund uncontrolled exposure.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "47 CFR § 64.6301 — Caller ID authentication",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.6301",
-            "relevance": "Determine applicable caller-ID authentication duties from the provider's actual role and covered network operations before enabling voice traffic.",
-        },
-        {
-            "title": "47 CFR § 64.6305 — Robocall mitigation and certification",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.6305",
-            "relevance": "Evaluate covered-provider mitigation, certification, database, and traffic-acceptance requirements rather than assuming an upstream carrier covers every obligation.",
-        },
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on telephone equipment use",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Assess calling and messaging restrictions independently of carrier campaign registration and contractual traffic permissions.",
-        },
-        {
-            "title": "47 CFR § 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": "Translate applicable calling restrictions and consent-related duties into customer onboarding, traffic controls, and complaint response.",
-        },
-        {
-            "title": "47 CFR § 54.706 — Contributions",
-            "url": "https://www.ecfr.gov/current/title-47/section-54.706",
-            "relevance": "Determine whether the offered telecommunications services and provider classification create universal service contribution obligations.",
-        },
-        {
-            "title": "47 CFR § 54.711 — Contributor reporting requirements",
-            "url": "https://www.ecfr.gov/current/title-47/section-54.711",
-            "relevance": "Evaluate reporting duties alongside current FCC Form 499 instructions rather than treating a contribution exemption as a universal filing exemption.",
-        },
-        {
-            "title": "47 CFR § 54.514 — Payment for discounted services",
-            "url": "https://www.ecfr.gov/current/title-47/section-54.514",
-            "relevance": "Illustrates why program-based telecommunications disbursement requires eligible services, parties, and payment procedures instead of ordinary merchant checkout.",
-        },
-        {
-            "title": "31 CFR § 1010.100(ff) — Money services business definitions",
-            "url": "https://www.ecfr.gov/current/title-31/section-1010.100",
-            "relevance": "Assess the specific wallet and funds-flow design before adding transfers, redemption, or third-party money movement; a service-credit label alone does not decide classification.",
-        },
-    ],
-}
+CHAPTER_2 = {'id': 'Q2',
+ 'chapter_id': 'Q2',
+ 'chapter_number': 2,
+ 'question_number': 2,
+ 'slug': 'inside-the-silicon-data-center-gpus-ai-servers-challenger-chips',
+ 'question_prompt': 'What hardware actually sits inside AI compute capacity, and how do H100, H200, B200, '
+                    'and alternative accelerators differ for buyers and renters?',
+ 'kicker': 'Q2 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Inside the Silicon: Data-Center GPUs, AI Servers, and Challenger Chips',
+ 'subtitle': 'Modding a CMP 170HX into an A100, modern AI server anatomy, an 8-GPU DGX V100 in colo, H100 '
+             'internals, H100 vs H200 vs B200 inference specs, a Lambda B200 cluster tour, Dell XE9680 and '
+             "Supermicro HGX 8-GPU systems, IBM's 288-card design, a wafer-scale '30x faster' chip, "
+             "Stanford's memory claim, and Intel's AI-stack gap",
+ 'layout_template': 'executive_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners converge on one verdict: in data-center AI silicon, memory capacity '
+                      'and bandwidth price the asset, not headline teraflops. Hitesh C., Screwdriver '
+                      'Science and AI Andrew all show H100-class parts starving at under one percent '
+                      'utilization during decode, while Cloud Ninjas and Supermicro confirm the tradeable '
+                      'unit is an 8-GPU SXM/HGX baseboard with a 1:1 GPU-to-NIC ratio. Street mechanics '
+                      "run from SysTelligence's ipmitool fan override and a 1,000-hour payback on a $250K "
+                      "box, to LOCKBREAK's $8 voltage-glitch board turning a $2,500 CMP 170HX into 80 GB "
+                      'and 85.9 TF. Disagreements are sharp: Cyfuture AI claims the H200 runs up to 45% '
+                      'faster, Gimel12 measured near-parity on Ollama, and AI Andrew plus Tomorrow '
+                      'Engineered argue challenger chips beat GPUs on energy per token.',
+ 'key_metrics': [{'label': 'Hardware-unlocked CMP 170HX OpenCL FP16 throughput',
+                  'metric': 'Hardware-unlocked CMP 170HX OpenCL FP16 throughput',
+                  'value': '85.9 TF versus 72.5 TF retail A100 and 50.1 TF software-only unlock',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Kate's fuse-rewrite cards benchmarked in a single non-tensor OpenCL FP16 "
+                             'test after voltage glitching restored SM count, math rate, PCIe Gen4 and '
+                             'NVLink.',
+                  'source': 'LOCKBREAK ([k-M24u2WcZw @ 00:05:44])'},
+                 {'label': 'Bare-metal 8-GPU server payback against rental pricing',
+                  'metric': 'Bare-metal 8-GPU server payback against rental pricing',
+                  'value': '~$250K server versus $30/GPU-hr ($240/hr) pays back in ~1,000 hours, about 6 '
+                           'weeks',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Murli's arithmetic on a Supermicro 8-GPU H100/H200 box run flat out, which "
+                             'he later tempers with a typical 12-to-18-month enterprise break-even.',
+                  'source': 'SysTelligence ([2tGJAc9AgQI @ 00:11:58])'},
+                 {'label': 'Measured H200 versus H100 decode throughput on Ollama',
+                  'metric': 'Measured H200 versus H100 decode throughput on Ollama',
+                  'value': 'H100 at 36.6 tok/s against an H200 showing effectively no gain, both near 600 '
+                           'W',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Llama 3.3 70B at Q4 (~43 GB) under Ollama with Open WebUI, 87-90% '
+                             'utilization on both cards; the speaker blames the inference server, not the '
+                             'silicon.',
+                  'source': 'Gimel12 ([gD-lTOjHc04 @ 00:03:51])'},
+                 {'label': 'NorthPole energy per token against H100',
+                  'metric': 'NorthPole energy per token against H100',
+                  'value': '72.7x less energy per token, 288 cards at ~30 kW air-cooled versus NVL72 at '
+                           '~120 kW liquid',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "IBM's 12 nm prototype rack compared head-to-head with an NVL72 that AI "
+                             'Andrew prices at about $3M, with benchmarks run against Hopper and 2024-era '
+                             'vLLM.',
+                  'source': 'AI Andrew ([vj8GAlW7mQo @ 00:00:52])'}],
+ 'sections': [{'heading': 'Section 1 - The Practitioner Consensus',
+               'paragraphs': ['Every operator on this bench lands in the same place: the scarce resource '
+                              'inside an AI server is memory capacity and bandwidth, not raw flops. Hitesh '
+                              'C. pins the H100 at 80 GB of HBM3 moving 3.35 TB/s with FP8 at 3,958 TF and '
+                              'FP16 at 1,979 TF, then warns that both headline numbers are sparse figures '
+                              'that halve the moment you run dense [fKrvPg4P6KY @ 00:00:28]. Screwdriver '
+                              'Science explains why that matters physically: a memory fetch burns roughly '
+                              '100 times the energy of a multiply, so the H100 stacks HBM twelve-high at '
+                              'more than 1 TB/s per stack and uses eight stacks to reach about 8 TB/s, all '
+                              'inside a module that pulls about 700 W [b3RlbR2xqfM @ 00:07:32]. AI Andrew '
+                              'runs the roofline that closes the argument: Llama 3 8B in FP16 is 16 GB of '
+                              'weights, one full read at 3.35 TB/s takes 4.8 ms, and because the H100 '
+                              'wants about 295 operations per byte while token-by-token decode delivers '
+                              'about one, utilization sits under one percent [vj8GAlW7mQo @ 00:02:42]. '
+                              'Extrude Studio reaches the same conclusion from the other side, reporting '
+                              'compute idle up to 80% of the time under autoregression on $30,000-plus '
+                              'cards [xkHs2GUaKro @ 00:01:18].',
+                              'The second agreement is about physical shape, and it dictates what you can '
+                              'actually buy and resell. Scott Flowers is blunt that SXM5 and HGX parts are '
+                              'not discrete cards: "you\'re going to see a baseboard as opposed to a PCIe '
+                              'card," one board carrying all eight GPUs, with the host\'s ten PCIe slots '
+                              'allocated as one NIC per GPU plus two for networking [NvI2zdq5I3Q @ '
+                              '00:02:09]. Supermicro states the same topology as a design rule, putting '
+                              '400 GB NICs into eight PCIe x16 slots to give "a 1:1 GPU to Nick ratio to '
+                              'avoid Network bottlenecks," then aggregating 32 nodes onto a non-blocking '
+                              'spine-leaf fabric [K7eFRXwd_9U @ 00:00:57]. Murli quantifies why the '
+                              'baseboard exists at all: NVLink moves 900 GB/s while PCIe 5.0 manages 64 '
+                              'GB/s, and ConnectX-7 is what enables GPUDirect RDMA out of the box '
+                              '[2tGJAc9AgQI @ 00:02:47]. ServeTheHome shows the generational step in the '
+                              'same slot: B200 HGX runs eight ConnectX-7 at 400 Gb, one per GPU, while '
+                              'B300 moves to ConnectX-8 at 800 Gb per GPU built directly into the '
+                              'baseboard, doubling network throughput and bringing 288 GB of HBM3E per '
+                              'part [CHEbom4opXg @ 00:03:13].',
+                              'Third, the baseline prerequisite is not the GPU budget, it is power and '
+                              'heat, and most rooms do not have either. Screwdriver Science puts 72 GPUs '
+                              'in a rack at about 120 kW, roughly a hundred homes, and calls a single H100 '
+                              'module "a microwave oven running flat out all day" [b3RlbR2xqfM @ '
+                              '00:10:20]. Murli does the same math at the chassis level: eight 700 W parts '
+                              'is 5,600 W before overhead, the server exceeds 10,000 W in practice, '
+                              'air-cooled models need inlet air below 30 degrees, and "hot aisle '
+                              'containment is mandatory" because the hot aisle exceeds 70 degrees '
+                              '[2tGJAc9AgQI @ 00:07:25]. ServeTheHome walks the plant that answers this, '
+                              'an in-row CDU rated at about 1.8 MW, "enough for more than 10 of these NBL '
+                              '72 racks," plus rear-door heat exchangers at 50 kW and 80 kW and cooling '
+                              'towers that push water toward ambient rather than refrigerating it '
+                              '[CHEbom4opXg @ 00:12:14], and calls liquid cooling "standard in 18 months" '
+                              "at Lambda's 36 MW Columbus site [N5AJJ0tAoxc @ 00:01:23]. AI Andrew "
+                              'supplies the gap that makes this a sourcing problem: 69% of operators still '
+                              'run racks under 10 kW [vj8GAlW7mQo @ 00:07:38].'],
+               'table': {'caption': 'Where multiple practitioners agree on the economics and prerequisites '
+                                    'of data-center GPU silicon',
+                         'headers': ['Consensus Point',
+                                     'Practitioner Evidence As Stated',
+                                     'Operator Prerequisite It Creates',
+                                     'Expert Source'],
+                         'rows': [['Memory bandwidth, not teraflops, sets the real ceiling',
+                                   'H100 holds 80 GB HBM3 at 3.35 TB/s, FP8 3,958 TF sparse and FP16 1,979 '
+                                   'TF sparse',
+                                   'Size every purchase by KV cache and bandwidth, and halve all sparse '
+                                   'spec sheets first',
+                                   'Hitesh C. ([fKrvPg4P6KY @ 00:00:28])'],
+                                  ['Decode leaves the expensive silicon almost entirely idle',
+                                   'H100 needs about 295 ops per byte while decode delivers about one, so '
+                                   'utilization is under 1%',
+                                   'Price capacity on tokens delivered per watt, never on advertised peak '
+                                   'math rates',
+                                   'AI Andrew ([vj8GAlW7mQo @ 00:02:42])'],
+                                  ['The tradeable unit is an 8-GPU baseboard, not a card',
+                                   'SXM5 and HGX ship as a single eight-GPU baseboard rather than discrete '
+                                   'PCIe add-in cards',
+                                   'Buy and resell whole systems, and keep hands off the baseboard '
+                                   'wherever possible',
+                                   'Cloud Ninjas ([NvI2zdq5I3Q @ 00:02:09])'],
+                                  ['One NIC per GPU is the non-negotiable fabric ratio',
+                                   'Eight 400 GB NICs sit in eight PCIe x16 slots to deliver a 1:1 GPU to '
+                                   'NIC ratio',
+                                   'Budget network ports alongside GPUs or the fabric becomes the '
+                                   'bottleneck',
+                                   'Supermicro ([K7eFRXwd_9U @ 00:00:57])'],
+                                  ['NVLink is why the proprietary baseboard exists at all',
+                                   'NVLink moves 900 GB/s against PCIe 5.0 at only 64 GB/s, with '
+                                   'ConnectX-7 enabling GPUDirect RDMA',
+                                   'Do not substitute PCIe topologies for SXM when multi-GPU training is '
+                                   'the workload',
+                                   'SysTelligence ([2tGJAc9AgQI @ 00:02:47])'],
+                                  ['Rack-scale power dwarfs what most colo space supports',
+                                   'Seventy-two GPUs per rack draw roughly 120 kW, which is about one '
+                                   'hundred homes of load',
+                                   'Secure high-density power and containment before signing for any GPU '
+                                   'allocation',
+                                   'Screwdriver Science ([b3RlbR2xqfM @ 00:10:20])'],
+                                  ['The installed base is nowhere near this density today',
+                                   'Sixty-nine percent of operators still run their racks under 10 kW of '
+                                   'draw',
+                                   'Expect retrofit cost, not just hardware cost, in any capacity '
+                                   'arbitrage model',
+                                   'AI Andrew ([vj8GAlW7mQo @ 00:07:38])']]}},
+              {'heading': 'Section 2 - Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Start with the spec-and-price ladder the sellers themselves quote. Hitesh '
+                              'C. puts the H200 at 141 GB and 4.8 TB/s with identical compute to the H100 '
+                              'and NVLink at 900, giving a decode ceiling about 1.4x higher, and flags '
+                              'that the widely repeated Llama 2 70B 1.9x result compares batch 32 against '
+                              'batch 8 [fKrvPg4P6KY @ 00:01:18]. Cyfuture AI frames the same part as +76% '
+                              'VRAM and +43% memory speed inside the same 700 W envelope, claims up to 45% '
+                              'faster LLM inference and 1.7x in multi-GPU, then prices it at 20-25% more '
+                              'than an H100 with cloud rental starting around $3.80 per hour and the pitch '
+                              'that "total cost per workload can actually be lower" [8nL31VyVz8s @ '
+                              '00:01:00]. Design Guy scores B200 over H200 six rounds to two: 180 GB '
+                              'against 141 GB, 7.7 TB/s against 4.8, FP8 at 9 PF sparse against 3,958 TF, '
+                              'but 1,000 W against 700 W and FP64 falling to 37 TF from 67 TF [PnUJffgghas '
+                              '@ 00:05:35]. Gimel12 supplies the street price floor, calling H100 and H200 '
+                              '"30 or 30 something" thousand and hard to find, against an A6000 at roughly '
+                              '$7-8K delivering 17.5 tok/s [gD-lTOjHc04 @ 00:06:54].',
+                              "The most aggressive mechanic in this chapter is LOCKBREAK's account of Kate "
+                              'turning mining silicon into A100-class compute. The CMP 170HX carries the '
+                              'same GA100 die as a $20,000-plus A100; GA100 has 128 SMs and retail A100 '
+                              'enables 108, while the mining SKU launched in 2021 at $4,299 crippled to 70 '
+                              'SMs, 8 GB usable memory, PCIe Gen1, no NVLink and a 1/32 math rate enforced '
+                              'by 16,384 eFuses, even though about 80 GB of HBM2E is physically present '
+                              '[k-M24u2WcZw @ 00:01:25]. Munikote\'s CMP Unlocker, following Pry\'s "A '
+                              'Canary in the Crypto Mine" paper, exposed 64 GB, restored math and doubled '
+                              'link speed, pushing card prices from a couple hundred dollars to over '
+                              '$1,000, but it could not touch fuses [k-M24u2WcZw @ 00:03:26]. The hardware '
+                              'path is voltage glitching with an roughly $8 microcontroller board that '
+                              'controls the VRM and dips power during the fuse read to disable '
+                              'write-protect, after which new fuse records clear the disable masks while '
+                              'leaving genuinely defective cores off, taking one hour to two days per card '
+                              '[k-M24u2WcZw @ 00:04:23]. Nine of ten cards hit 80 GB with 120-126 SMs '
+                              '[k-M24u2WcZw @ 00:05:44].',
+                              'On the operations side the tooling is specific and short. Murli overrides '
+                              'thermals with `ipmitool raw 0x30 0x45 0x01 0x01` to pin fans at full speed '
+                              'for training runs [2tGJAc9AgQI @ 00:08:08], caps draw with `nvidia-smi -p`, '
+                              'plans electrical for 120% of nameplate load [2tGJAc9AgQI @ 00:09:34], keeps '
+                              'IPMI on a separate out-of-band VLAN because "mixing IPMI management traffic '
+                              'with GPU workload traffic causes serious performance issues," holds GPUs '
+                              'below 83 degrees and HBM below 95, treats memory use above 90% as near '
+                              'capacity, and keeps 200 Gb InfiniBand off the management switch '
+                              "[2tGJAc9AgQI @ 00:05:17]. Craft Computing's version of the same discipline "
+                              'is version-pinning: Proxmox 8 with GRID 17.6, because 19 drops V100 and 18 '
+                              'is unstable, and 17.6 demands kernel 6.8 or lower, which rules out Proxmox '
+                              '9, on an Inspur DGX V100 that idles near 950 W and hits 3,300 W loaded with '
+                              'GRID entry licensing at $3,000 or $10,000 [9c1c3JPZ2ps @ 00:05:19]. Scott '
+                              'Flowers closes the resale loop: an order for 1,000 units is "very '
+                              'difficult," they filled 128 with painful OEM matching, and held value beats '
+                              'their ROI models [NvI2zdq5I3Q @ 00:05:08].'],
+               'table': {'caption': 'Exact tools, commands, prices and measured outcomes as taught by the '
+                                    'practitioners',
+                         'headers': ['Street Move',
+                                     'Exact Tool, Command, Spec or Price',
+                                     'Reported Result Or Measurement',
+                                     'Expert Source'],
+                         'rows': [['Unlock crippled mining silicon via software first',
+                                   "Munikote CMP Unlocker following Pry's crypto-mine paper on a CMP 170HX "
+                                   'card',
+                                   'Exposed 64 GB, restored math rate, doubled link speed, drove prices '
+                                   'past $1,000',
+                                   'LOCKBREAK ([k-M24u2WcZw @ 00:03:26])'],
+                                  ['Go hardware when software cannot reach the fuses',
+                                   'Roughly $8 microcontroller board glitching the VRM during the eFuse '
+                                   'read',
+                                   'Nine of ten cards reached 80 GB with 120 to 126 SMs, one to two days '
+                                   'each',
+                                   'LOCKBREAK ([k-M24u2WcZw @ 00:05:02])'],
+                                  ['Force full cooling before a long training run',
+                                   'Command `ipmitool raw 0x30 0x45 0x01 0x01` sets fans to full speed',
+                                   'Keeps GPUs under 83 degrees and HBM under 95 degrees at sustained full '
+                                   'load',
+                                   'SysTelligence ([2tGJAc9AgQI @ 00:08:08])'],
+                                  ['Model buy-versus-rent on an eight-GPU bare-metal box',
+                                   'About $250K of server against $30 per GPU-hour, which is $240 per hour '
+                                   'billed',
+                                   'Payback lands near 1,000 hours of utilization, roughly six weeks run '
+                                   'flat out',
+                                   'SysTelligence ([2tGJAc9AgQI @ 00:11:58])'],
+                                  ['Pin the virtualization stack to a working combination',
+                                   'Proxmox 8 plus GRID 17.6 on kernel 6.8 or lower, since 19 drops V100',
+                                   'VRAM splits statically and compute dynamically, with output capped at '
+                                   '60 FPS',
+                                   'Craft Computing ([9c1c3JPZ2ps @ 00:05:19])'],
+                                  ['Quote rental against purchase on current Hopper parts',
+                                   'H200 priced 20 to 25 percent above H100 with cloud rental from about '
+                                   '$3.80 per hour',
+                                   'Claimed up to 45 percent faster inference and 1.7x in multi-GPU at the '
+                                   'same 700 W',
+                                   'Cyfuture AI ([8nL31VyVz8s @ 00:01:00])'],
+                                  ['Source used accelerators through a broker channel',
+                                   'Used H100, H200, B200 and B300 servers traded via salesclouds.com by '
+                                   'the ton',
+                                   'Thousand-unit orders are very difficult; a 128-unit order filled with '
+                                   'hard OEM matching',
+                                   'Cloud Ninjas ([NvI2zdq5I3Q @ 00:05:08])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Four moves the practitioners actually executed and measured',
+                           'body': 'These are the specific, repeatable levers the speakers demonstrated on '
+                                   'live hardware, with the numbers they recorded and the limits they hit '
+                                   'while doing it.',
+                           'items': ['Treat sparse spec sheets as marketing: sparse figures are exactly '
+                                     'double the dense figures, and the entire B200 number set is still '
+                                     "'projected' by the vendor, so pick H200 when KV cache limits batch "
+                                     'size and Blackwell only when you genuinely need FP4 or faster NVLink '
+                                     '[Hitesh C. — fKrvPg4P6KY @ 00:03:01].',
+                                     'Keep the baseboard in the chassis. Scott Flowers refuses the job '
+                                     "outright - 'I do not like to take the baseboard out. I just don't.' "
+                                     '- because only a few removals are safe, and he will not even film an '
+                                     'install until a failed unit shows up [Cloud Ninjas — NvI2zdq5I3Q @ '
+                                     '00:00:32].',
+                                     'Isolate management traffic and harden the box before it leaves your '
+                                     'hands: IPMI on its own out-of-band VLAN, 200 Gb InfiniBand off the '
+                                     'management switch, secure boot enabled and NVMe encrypted, with '
+                                     'electrical planned at 120 percent of load [SysTelligence — '
+                                     '2tGJAc9AgQI @ 00:05:17].',
+                                     'Do not trust a single-framework benchmark to price silicon. Running '
+                                     'Llama 3.3 70B at Q4 under Ollama produced 36.6 tok/s on an H100 and '
+                                     'effectively no gain on an H200 at 87-90 percent utilization, which '
+                                     'the operator attributes to the inference server and plans to retest '
+                                     'on vLLM [Gimel12 — gD-lTOjHc04 @ 00:03:51].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Fix the memory budget before shopping for compute',
+                              'action': 'Compute weights plus KV cache for the target model, then select '
+                                        'the part by capacity and bandwidth rather than flops.',
+                              'detail': 'A 70B model needs roughly 140 GB, which is why H100 at 80 GB '
+                                        'forces sharding while H200 at 141 GB and 4.8 TB/s or B200 at 192 '
+                                        'GB do not [SysTelligence — 2tGJAc9AgQI @ 00:04:12]; FP16 at that '
+                                        'size wants about 132 GB, so Q4 quantization drops the same model '
+                                        'to roughly 43 GB and changes the whole hardware decision [Gimel12 '
+                                        '— gD-lTOjHc04 @ 00:01:29].'},
+                             {'step': 2,
+                              'title': 'Buy the system as a baseboard plus fabric, never as loose parts',
+                              'action': 'Specify an 8-GPU SXM/HGX baseboard with one NIC per GPU and '
+                                        'confirm slot count before the purchase order.',
+                              'detail': 'Expect ten PCIe slots allocated as one NIC per GPU plus two for '
+                                        'networking on a single eight-GPU baseboard [Cloud Ninjas — '
+                                        'NvI2zdq5I3Q @ 00:03:25], matched to eight 400 GB NICs in eight '
+                                        'x16 slots for a 1:1 GPU-to-NIC ratio and 32-node non-blocking '
+                                        'spine-leaf aggregation [Supermicro — K7eFRXwd_9U @ 00:00:57].'},
+                             {'step': 3,
+                              'title': 'Prove the power and cooling envelope on paper first',
+                              'action': 'Add up PSU capacity, inlet temperature limits and containment, '
+                                        'then size the plant for the real rack draw.',
+                              'detail': 'Plan on 4,000 to 6,000 W power supplies, inlet air below 30 '
+                                        'degrees for air-cooled units, and a chassis that exceeds 10,000 W '
+                                        'once eight 700 W parts and fans are running [SysTelligence — '
+                                        '2tGJAc9AgQI @ 00:02:05]; at rack scale that becomes six 5,250 W '
+                                        'titanium supplies per server and 130 kg of weight inside 1.6 MW '
+                                        'UPS blocks [ServeTheHome — N5AJJ0tAoxc @ 00:08:31].'},
+                             {'step': 4,
+                              'title': 'Run the buy-versus-rent arithmetic both ways before committing',
+                              'action': 'Price the box against hourly rental at realistic utilization, '
+                                        'then sanity-check against resale behaviour.',
+                              'detail': 'A roughly $250K server against $240 per hour of equivalent rental '
+                                        'pays back in about 1,000 hours, while the same operator states '
+                                        'typical enterprise break-even runs 12 to 18 months [SysTelligence '
+                                        '— 2tGJAc9AgQI @ 00:13:01]; three-year-old H100s and H200s are '
+                                        "'still monsters' whose held value beats the ROI models, with "
+                                        'H200s scarce because hyperscalers are holding them [Cloud Ninjas '
+                                        '— NvI2zdq5I3Q @ 00:06:10].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The loudest split in Hopper buying is how much the H200 actually buys you. '
+                              'Cyfuture AI pitches the card as up to 45% faster on LLM inference and 1.7x '
+                              'in multi-GPU runs inside the same 700 W envelope. It argues that a 20–25% '
+                              'price premium and cloud entry near $3.80/hr still produce a lower cost per '
+                              'workload [Cyfuture AI — 8nL31VyVz8s @ 00:00:40]. Gimel12 ran Llama 3.3 70B '
+                              'at Q4 on Ollama with Open WebUI and got 36.6 tok/s on the H100, with the '
+                              'H200 landing in the same band. Both cards pulled about 600 W at 87–90% '
+                              "utilization. The speaker's verdict was 'not a big difference,' which they "
+                              'blamed on the Ollama inference server; they called the result inaccurate '
+                              'and promised a vLLM rerun [Gimel12 — gD-lTOjHc04 @ 00:03:51]. Hitesh C. '
+                              'sits between the two. Compute is the same, but memory goes from 80 GB at '
+                              '3.35 TB/s to 141 GB at 4.8 TB/s, so the decode ceiling rises about 1.4x. '
+                              "Nvidia's 1.9x Llama 2 70B headline compares batch 32 against batch 8 "
+                              '[Hitesh C. — fKrvPg4P6KY @ 00:01:18]. The working read: the H200 premium '
+                              'pays off when the extra memory lets you raise batch size, not when a '
+                              'quantized model already fits in 80 GB.',
+                              'On the Hopper-versus-Blackwell call, Design Guy scores the B200 a 6–2 '
+                              'winner. It has 180 GB versus 141 GB, 7.7 TB/s versus 4.8 TB/s, 9 PF sparse '
+                              'FP8 versus 3,958 TF, and 1.8 TB/s NVLink versus 900 GB/s. The H200 keeps '
+                              'two rounds: FP64, at 67 TF against 37 TF, and power, at 700 W against 1,000 '
+                              'W TDP. That keeps FP64 shops and tight power envelopes on the H200 [Design '
+                              'Guy — PnUJffgghas @ 00:05:35]. Hitesh C. frames the same fork as a workload '
+                              'rule. If KV cache is what caps batch size, buy H200; if you need FP4 or '
+                              'faster NVLink, buy Blackwell. B200 figures are Nvidia projections, and '
+                              'sparse numbers are double the dense ones [Hitesh C. — fKrvPg4P6KY @ '
+                              '00:03:01]. Cloud Ninjas argues the older iron is far from dead: resale '
+                              'values on three-year-old H100 and H200 servers have held up and beaten ROI '
+                              'models [Cloud Ninjas — NvI2zdq5I3Q @ 00:06:10]. Gimel12 takes the budget '
+                              'road entirely. The A6000 clocked 17.5 tok/s at roughly $7–8K, against H100 '
+                              "or H200 cards at '30 or 30 something' thousand that are hard to find. For "
+                              'multi-user load, Gimel12 often recommends two to four A6000s [Gimel12 — '
+                              'gD-lTOjHc04 @ 00:08:29].',
+                              "The challenger camp splits on whether Nvidia's lead is the silicon or the "
+                              'stack. Tomorrow Engineered relays Cerebras claims of up to 30x over Nvidia '
+                              'GPUs and an Artificial Analysis run of more than 2,500 tok/s on Llama 4 '
+                              'Maverick, against roughly 1,000 for Blackwell and 550 for Groq. '
+                              'SemiAnalysis pegs the real gap at 20–40x and calls the efficiency gain '
+                              "'slight at best' on 125–135 kW racks [Tomorrow Engineered — yYBoW-BKDl8 @ "
+                              "00:16:36]. AI Andrew pushes IBM's NorthPole, a 288-card 12 nm rack drawing "
+                              'about 30 kW air-cooled that claims 72.7x less energy per token than the '
+                              'H100. He then concedes it is a capacity-limited, inference-only prototype '
+                              'that IBM itself benchmarked against Hopper and 2024-era vLLM [AI Andrew — '
+                              'vj8GAlW7mQo @ 00:28:28]. Extrude Studio argues the fix belongs in the model '
+                              'rather than the chip. Next concept modeling from Hazy Research turns a '
+                              '1,000-word answer into 32 parallel passes for roughly 30x, versus 2–3x from '
+                              'speculative decoding [Extrude Studio — xkHs2GUaKro @ 00:04:32]. CyberPulse '
+                              'answers every hardware story with the moat thesis. Intel lost with '
+                              "Larrabee, Xeon Phi, Gaudi 3 and Falcon Shores because Nvidia sells 'the "
+                              "promise' of compatibility. CyberPulse adds that PyTorch and AI-written code "
+                              'are now lowering switching costs [CyberPulse — Z69EERVnY6w @ 00:14:29].'],
+               'table': {'caption': 'Contested calls in GPU and challenger-chip buying, side by side',
+                         'headers': ['Battleground',
+                                     'Playbook A',
+                                     'Counter-Playbook or Rebuttal',
+                                     'Expert Source'],
+                         'rows': [['H200 versus H100 real-world LLM inference uplift',
+                                   'Up to 45% faster LLM inference and 1.7x multi-GPU at the same 700 W',
+                                   'Llama 3.3 70B Q4 on Ollama showed near-parity, blamed on the inference '
+                                   'server',
+                                   'Cyfuture AI ([8nL31VyVz8s @ 00:00:40]); Gimel12 ([gD-lTOjHc04 @ '
+                                   '00:03:51])'],
+                                  ['Reading vendor H200 benchmark headlines at face value',
+                                   "Nvidia's 1.9x Llama 2 70B result is marketed as the H200 gain",
+                                   'That figure compares batch 32 against batch 8; the decode ceiling is '
+                                   'about 1.4x',
+                                   'Hitesh C. ([fKrvPg4P6KY @ 00:01:18])'],
+                                  ['H200 versus B200 for a new cluster build',
+                                   'B200 wins 6–2 on memory, bandwidth, FP8, FP16, NVLink and recency',
+                                   'H200 keeps FP64 at 67 TF versus 37 TF and 700 W versus 1,000 W TDP',
+                                   'Design Guy ([PnUJffgghas @ 00:05:35])'],
+                                  ['Air-cooled versus liquid-cooled GPU rack density',
+                                   'Lambda Columbus runs several thousand air-cooled B200s inside a 36 MW '
+                                   'facility',
+                                   'Liquid is called standard in 18 months; Supermicro 4U liquid doubles '
+                                   'density to 64 GPUs per rack',
+                                   'ServeTheHome ([N5AJJ0tAoxc @ 00:01:23]); Supermicro ([K7eFRXwd_9U @ '
+                                   '00:00:41])'],
+                                  ['Wafer-scale challenger silicon versus Blackwell GPUs',
+                                   'Cerebras claims up to 30x and over 2,500 tok/s on Llama 4 Maverick',
+                                   'SemiAnalysis puts the gap at 20–40x with efficiency gains slight at '
+                                   'best',
+                                   'Tomorrow Engineered ([yYBoW-BKDl8 @ 00:16:36])'],
+                                  ['Purpose-built inference silicon versus Hopper racks',
+                                   'IBM NorthPole rack claims 72.7x less energy per token at about 30 kW',
+                                   'A capacity-limited, inference-only prototype that IBM benchmarked '
+                                   'against Hopper and vLLM 2024',
+                                   'AI Andrew ([vj8GAlW7mQo @ 00:28:28])'],
+                                  ['Bare-metal GPU server payback horizon',
+                                   'A $250K server renting at $240 per hour pays back in about 1,000 hours',
+                                   'The same speaker says typical enterprise break-even runs 12 to 18 '
+                                   'months',
+                                   'SysTelligence ([2tGJAc9AgQI @ 00:13:01])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The hardware-unlock trade is the sharpest example of one-way risk. '
+                              "LOCKBREAK walks through Kate's voltage-glitch workflow on CMP 170HX mining "
+                              'cards. An ~$8 microcontroller board dips VRM power during the fuse read to '
+                              'disable write-protect. New fuse records then clear the disable masks while '
+                              'truly defective cores stay off, at one hour to two days per card [LOCKBREAK '
+                              '— k-M24u2WcZw @ 00:04:23]. The traps are spelled out on camera. Fuse writes '
+                              "are permanent, and 'No driver update can unblow a fuse.' Results are a "
+                              'lottery: 9 of 10 cards reached 80 GB with 120–126 SMs, but one topped out '
+                              'at 64 GB. The 85.9 TF headline comes from a single non-tensor OpenCL FP16 '
+                              'test, sits only about 10% above the 78 TF spec, and ECC and MIG were never '
+                              'tested [LOCKBREAK — k-M24u2WcZw @ 00:07:03]. The margin also compresses '
+                              'fast. The software unlock alone pushed cards from a couple hundred dollars '
+                              'to over $1,000, and the 10 GB card now sits near $2,500 with the 8 GB near '
+                              '$3,000 [LOCKBREAK — k-M24u2WcZw @ 00:09:11]. Cloud Ninjas applies the same '
+                              'irreversibility logic to HGX servers. They refuse to pull baseboards '
+                              'because only a few removals are safe, and they are holding off on an '
+                              'install walkthrough until they have a failed unit [Cloud Ninjas — '
+                              'NvI2zdq5I3Q @ 00:00:32].',
+                              "Hosting traps hit before any revenue lands. Craft Computing's eight-V100 "
+                              'DGX cloud-gaming build is pinned to Proxmox 8 and GRID 17.6. Version 19 '
+                              'dropped V100, version 18 is unstable, and 17.6 needs kernel 6.8 or older, '
+                              'which locks out Proxmox 9. The vGPU unlock only spans Maxwell through '
+                              'Turing/Volta [Craft Computing — 9c1c3JPZ2ps @ 00:05:19]. Once running, GRID '
+                              'caps output at 60 FPS and VRAM splits statically. VMs cost about 10%, plus '
+                              '5% for GRID. The box idles near 950 W and hits 3,300 W at full load. The '
+                              'verdict was disappointing: roughly a GTX 1070 per gamer. GRID entry costs '
+                              "$3,000 for an A5000 or $10,000 for a Blackwell 6000 Pro, while Intel's B70 "
+                              'Pro offers SR-IOV with no licensing [Craft Computing — 9c1c3JPZ2ps @ '
+                              '00:17:04]. SysTelligence lists the data-center failure points. Mixing IPMI '
+                              "management traffic with GPU workload traffic 'causes serious performance "
+                              "issues.' GPUs must stay under 83°C and HBM under 95°C. Hot aisles exceed "
+                              '70°C, so containment is mandatory, and power should be planned at 120% of '
+                              'load [SysTelligence — 2tGJAc9AgQI @ 00:05:17]. ServeTheHome adds that a 1.8 '
+                              'MW in-row CDU needs its pH, inlet and outlet temperatures, and pump speeds '
+                              'watched [ServeTheHome — CHEbom4opXg @ 00:12:14].',
+                              'Supply and concentration risk is the economics check most buyers skip. '
+                              'Cloud Ninjas trades used H100 through B300 servers. They report that H200s '
+                              'are scarce because hyperscalers are holding them, while H100s only trickle '
+                              "out. An order for 1,000 is 'very difficult,' and even a filled order of 128 "
+                              'was hard because OEM and configuration had to match [Cloud Ninjas — '
+                              'NvI2zdq5I3Q @ 00:05:08]. AI Andrew flags HBM as the choke point: it is sold '
+                              'out through 2026, and the squeeze is expected to run to late 2027. He also '
+                              'notes that 69% of operators run racks under 10 kW, while an NVL72 costs '
+                              'about $3M and draws about 120 kW [AI Andrew — vj8GAlW7mQo @ 00:07:38]. '
+                              'Tomorrow Engineered stacks up the Cerebras warnings. Memory has been stuck '
+                              'at 44 GB since 2021. DeepSeek V4 Pro needs about 40 systems, over $20M and '
+                              '1 MW. The prefill/decode hardware ratio is fixed at order time. UAE '
+                              'customers made up 86% of 2025 revenue [Tomorrow Engineered — yYBoW-BKDl8 @ '
+                              '00:19:11]. CyberPulse shows what a stack miss costs. Gaudi 3 missed $500M, '
+                              'Intel posted a $16.6B quarterly loss and an $18.8B annual loss, Intel was '
+                              'dropped from the Dow, and Falcon Shores was cancelled [CyberPulse — '
+                              'Z69EERVnY6w @ 00:08:39].'],
+               'table': {'caption': 'Firsthand traps, losses and economics checks reported by '
+                                    'practitioners',
+                         'headers': ['Trap',
+                                     'Firsthand Evidence',
+                                     'Economics or Ops Check',
+                                     'Expert Source'],
+                         'rows': [['Permanent eFuse rewrites on unlocked mining cards',
+                                   'Fuse writes cannot be reversed; no driver update can unblow a fuse',
+                                   'Treat every glitched card as a one-way bet before writing new records',
+                                   'LOCKBREAK ([k-M24u2WcZw @ 00:07:03])'],
+                                  ['Hardware unlock yield lottery across a batch',
+                                   'Nine of ten cards hit 80 GB, but one stalled at 64 GB',
+                                   'Price the batch assuming at least one card underdelivers on memory',
+                                   'LOCKBREAK ([k-M24u2WcZw @ 00:08:13])'],
+                                  ['Thin benchmark evidence behind unlock performance claims',
+                                   '85.9 TF comes from one non-tensor OpenCL FP16 test; ECC and MIG '
+                                   'untested',
+                                   'The gap versus the 78 TF A100 spec is only about 10%',
+                                   'LOCKBREAK ([k-M24u2WcZw @ 00:07:36])'],
+                                  ['GRID driver and kernel lock-in on V100 hosts',
+                                   'Version 19 dropped V100, 18 is unstable, and 17.6 needs kernel 6.8 or '
+                                   'older',
+                                   'Proxmox 9 is off the table for this vGPU stack',
+                                   'Craft Computing ([9c1c3JPZ2ps @ 00:05:19])'],
+                                  ['Per-seat performance collapse in shared vGPU gaming',
+                                   '60 FPS cap, roughly 15% overhead, about a GTX 1070 per gamer',
+                                   'GRID entry runs $3,000 to $10,000; Intel B70 Pro needs no license',
+                                   'Craft Computing ([9c1c3JPZ2ps @ 00:17:04])'],
+                                  ['Thermal and management-network failures in GPU racks',
+                                   'IPMI mixed with workload traffic causes serious performance issues; '
+                                   'hot aisles exceed 70°C',
+                                   'Hold GPUs under 83°C and HBM under 95°C, and plan power at 120% of '
+                                   'load',
+                                   'SysTelligence ([2tGJAc9AgQI @ 00:05:17])'],
+                                  ['Fixed prefill/decode ratio on wafer-scale systems',
+                                   'The hardware ratio is locked at order time and memory sits at 44 GB',
+                                   'DeepSeek V4 Pro needs about 40 systems, over $20M, and 1 MW',
+                                   'Tomorrow Engineered ([yYBoW-BKDl8 @ 00:19:11])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Stop Checks Before Committing Capital to GPU Iron',
+                           'body': 'Each of these failures was hit or measured firsthand by an operator. '
+                                   'Clear all four before you buy, flash, or rack anything.',
+                           'items': ['Do not write fuse records on any card you cannot afford to brick: '
+                                     'fuse writes are permanent and unlock yields vary, with one card '
+                                     'stuck at 64 GB [LOCKBREAK — k-M24u2WcZw @ 00:08:13].',
+                                     'Confirm the GRID branch and kernel before building vGPU hosts: 17.6 '
+                                     'needs kernel 6.8 or older, and version 19 drops V100 [Craft '
+                                     'Computing — 9c1c3JPZ2ps @ 00:05:19].',
+                                     'Put IPMI on a separate out-of-band VLAN, keep InfiniBand off the '
+                                     'management switch, and hold GPUs under 83°C before loading training '
+                                     'jobs [SysTelligence — 2tGJAc9AgQI @ 00:05:17].',
+                                     'Do not promise large H200 deliveries until OEM and configuration '
+                                     'matches are secured; 1,000-unit orders are very difficult and even '
+                                     '128 was hard [Cloud Ninjas — NvI2zdq5I3Q @ 00:05:08].']}}],
+ 'pull_quote': '"No driver update can unblow a fuse." — LOCKBREAK (k-M24u2WcZw @ 00:07:03)',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Rerun any H100-versus-H200 comparison on vLLM instead of Ollama before trusting a '
+                      'near-parity result [Gimel12 — gD-lTOjHc04 @ 00:03:51].',
+                      'Halve sparse TFLOPS figures to get dense throughput, and treat B200 numbers as '
+                      'Nvidia projections when sizing a purchase [Hitesh C. — fKrvPg4P6KY @ 00:03:01].',
+                      'Isolate IPMI on a separate out-of-band VLAN so management traffic never mixes with '
+                      'GPU workload traffic [SysTelligence — 2tGJAc9AgQI @ 00:05:17].',
+                      'Cap GPU power with nvidia-smi -p and size power delivery at 120% of the expected '
+                      'load [SysTelligence — 2tGJAc9AgQI @ 00:09:14].',
+                      'Spec one 400 Gb NIC per GPU across the 8 PCIe x16 slots to hold a 1:1 GPU-to-NIC '
+                      'ratio and avoid network bottlenecks [Supermicro — K7eFRXwd_9U @ 00:00:57].',
+                      'Pin V100 vGPU hosts to Proxmox 8 with GRID 17.6 on kernel 6.8 or older, since '
+                      'version 19 dropped V100 and version 18 is unstable [Craft Computing — 9c1c3JPZ2ps @ '
+                      '00:05:19].'],
+ 'statutory_citations': [{'title': "LOCKBREAK — How a Hacker Turned Nvidia's $2,500 Mining Card Into a "
+                                   '$20,000 A100 [00:07:03]',
+                          'url': 'https://www.youtube.com/watch?v=k-M24u2WcZw&t=423s',
+                          'relevance': 'Primary practitioner testimony on eFuse-level GPU unlocking, '
+                                       'permanent fuse risk, yield lottery, and mining-card price '
+                                       'arbitrage.'},
+                         {'title': 'SysTelligence — The Server Powering the AI Revolution — Supermicro GPU '
+                                   'Bare Metal Exposed [00:13:01]',
+                          'url': 'https://www.youtube.com/watch?v=2tGJAc9AgQI&t=781s',
+                          'relevance': 'Primary practitioner testimony on bare-metal GPU server thermals, '
+                                       'IPMI isolation, power capping, and payback economics.'},
+                         {'title': 'Gimel12 — H200 vs H100: Ultimate AI Inference GPU Comparison 2025 '
+                                   '[00:03:51]',
+                          'url': 'https://www.youtube.com/watch?v=gD-lTOjHc04&t=231s',
+                          'relevance': 'Primary practitioner testimony on hands-on H100 versus H200 '
+                                       'inference testing and the Ollama bottleneck.'},
+                         {'title': 'Tomorrow Engineered — This New AI Chip Could Make AI Run 30X Faster '
+                                   'Than Nvidia GPUs! [00:19:11]',
+                          'url': 'https://www.youtube.com/watch?v=yYBoW-BKDl8&t=1151s',
+                          'relevance': 'Primary practitioner testimony on Cerebras wafer-scale claims, '
+                                       'independent rebuttals, and customer concentration risk.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'k-M24u2WcZw',
+                       'title': "How a Hacker Turned Nvidia's $2,500 Mining Card Into a $20,000 A100",
+                       'channel': 'LOCKBREAK',
+                       'author': 'LOCKBREAK',
+                       'text': 'No driver update can unblow a fuse.',
+                       'tip': 'No driver update can unblow a fuse.',
+                       'timestamp': 423,
+                       'timestamp_seconds': 423,
+                       'timestamp_label': '[00:07:03]',
+                       'url': 'https://www.youtube.com/watch?v=k-M24u2WcZw&t=423s',
+                       'markdown': '[00:07:03](https://www.youtube.com/watch?v=k-M24u2WcZw&t=423s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CHEbom4opXg',
+                       'title': 'Newest Gen AI Servers Are Built Like This',
+                       'channel': 'ServeTheHome',
+                       'author': 'ServeTheHome',
+                       'text': 'This CDU can handle something like 1.8 MW of cooling capacity, which is '
+                               'enough for more than 10 of these NVL72 racks that are over here.',
+                       'tip': 'This CDU can handle something like 1.8 MW of cooling capacity, which is '
+                              'enough for more than 10 of these NVL72 racks that are over here.',
+                       'timestamp': 734,
+                       'timestamp_seconds': 734,
+                       'timestamp_label': '[00:12:14]',
+                       'url': 'https://www.youtube.com/watch?v=CHEbom4opXg&t=734s',
+                       'markdown': '[00:12:14](https://www.youtube.com/watch?v=CHEbom4opXg&t=734s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9c1c3JPZ2ps',
+                       'title': 'EIGHT GPUs in a Cloud Gaming Server - Nvidia DGX V100',
+                       'channel': 'Craft Computing',
+                       'author': 'Craft Computing',
+                       'text': 'GPU memory is split statically.',
+                       'tip': 'GPU memory is split statically.',
+                       'timestamp': 420,
+                       'timestamp_seconds': 420,
+                       'timestamp_label': '[00:07:00]',
+                       'url': 'https://www.youtube.com/watch?v=9c1c3JPZ2ps&t=420s',
+                       'markdown': '[00:07:00](https://www.youtube.com/watch?v=9c1c3JPZ2ps&t=420s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xkHs2GUaKro',
+                       'title': 'Stanford Just Destroyed Nvidia’s $30,000 Monopoly (It’s Over)',
+                       'channel': 'Extrude Studio',
+                       'author': 'Extrude Studio',
+                       'text': 'Under autoregression, an H100 that costs more than $30,000 sits with its '
+                               'compute idle up to 80% of the time.',
+                       'tip': 'Under autoregression, an H100 that costs more than $30,000 sits with its '
+                              'compute idle up to 80% of the time.',
+                       'timestamp': 78,
+                       'timestamp_seconds': 78,
+                       'timestamp_label': '[00:01:18]',
+                       'url': 'https://www.youtube.com/watch?v=xkHs2GUaKro&t=78s',
+                       'markdown': '[00:01:18](https://www.youtube.com/watch?v=xkHs2GUaKro&t=78s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'b3RlbR2xqfM',
+                       'title': 'How do AI Chips Actually Work?  Inside the NVIDIA H100',
+                       'channel': 'Screwdriver Science',
+                       'author': 'Screwdriver Science',
+                       'text': "That's a microwave oven running flat out all day.",
+                       'tip': "That's a microwave oven running flat out all day.",
+                       'timestamp': 71,
+                       'timestamp_seconds': 71,
+                       'timestamp_label': '[00:01:11]',
+                       'url': 'https://www.youtube.com/watch?v=b3RlbR2xqfM&t=71s',
+                       'markdown': '[00:01:11](https://www.youtube.com/watch?v=b3RlbR2xqfM&t=71s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fKrvPg4P6KY',
+                       'title': '46. H100 vs H200 vs Blackwell B200 for LLM Inference',
+                       'channel': 'Hitesh C.',
+                       'author': 'Hitesh C.',
+                       'text': 'It has 80 gigabytes of HBM3 at 3.35 terabytes per second.',
+                       'tip': 'It has 80 gigabytes of HBM3 at 3.35 terabytes per second.',
+                       'timestamp': 28,
+                       'timestamp_seconds': 28,
+                       'timestamp_label': '[00:00:28]',
+                       'url': 'https://www.youtube.com/watch?v=fKrvPg4P6KY&t=28s',
+                       'markdown': '[00:00:28](https://www.youtube.com/watch?v=fKrvPg4P6KY&t=28s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'N5AJJ0tAoxc',
+                       'title': 'Inside a NEW AI Cluster - Tour with NVIDIA B200',
+                       'channel': 'ServeTheHome',
+                       'author': 'ServeTheHome',
+                       'text': 'Liquid cooling is expected to be standard in 18 months.',
+                       'tip': 'Liquid cooling is expected to be standard in 18 months.',
+                       'timestamp': 83,
+                       'timestamp_seconds': 83,
+                       'timestamp_label': '[00:01:23]',
+                       'url': 'https://www.youtube.com/watch?v=N5AJJ0tAoxc&t=83s',
+                       'markdown': '[00:01:23](https://www.youtube.com/watch?v=N5AJJ0tAoxc&t=83s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PnUJffgghas',
+                       'title': 'NVIDIA H200 vs NVIDIA B200 AI GPU Explained | Pros, Cons & Verdict for '
+                                '2026',
+                       'channel': 'Design Guy',
+                       'author': 'Design Guy',
+                       'text': 'That 39 GB jump means larger models fit directly on chip with far less '
+                               'sharding.',
+                       'tip': 'That 39 GB jump means larger models fit directly on chip with far less '
+                              'sharding.',
+                       'timestamp': 86,
+                       'timestamp_seconds': 86,
+                       'timestamp_label': '[00:01:26]',
+                       'url': 'https://www.youtube.com/watch?v=PnUJffgghas&t=86s',
+                       'markdown': '[00:01:26](https://www.youtube.com/watch?v=PnUJffgghas&t=86s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vj8GAlW7mQo',
+                       'title': 'IBM Just Proved NVIDIA’s GPUs Are Built Wrong (With a 12nm Chip and 288 '
+                                'Cards)',
+                       'channel': 'AI Andrew',
+                       'author': 'AI Andrew',
+                       'text': 'They were built for a different job, and the job changed.',
+                       'tip': 'They were built for a different job, and the job changed.',
+                       'timestamp': 2139,
+                       'timestamp_seconds': 2139,
+                       'timestamp_label': '[00:35:39]',
+                       'url': 'https://www.youtube.com/watch?v=vj8GAlW7mQo&t=2139s',
+                       'markdown': '[00:35:39](https://www.youtube.com/watch?v=vj8GAlW7mQo&t=2139s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yYBoW-BKDl8',
+                       'title': 'This New AI Chip Could Make AI Run 30X Faster Than Nvidia GPUs!',
+                       'channel': 'Tomorrow Engineered',
+                       'author': 'Tomorrow Engineered',
+                       'text': 'That writing step is where GPUs hit a wall.',
+                       'tip': 'That writing step is where GPUs hit a wall.',
+                       'timestamp': 296,
+                       'timestamp_seconds': 296,
+                       'timestamp_label': '[00:04:56]',
+                       'url': 'https://www.youtube.com/watch?v=yYBoW-BKDl8&t=296s',
+                       'markdown': '[00:04:56](https://www.youtube.com/watch?v=yYBoW-BKDl8&t=296s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Z69EERVnY6w',
+                       'title': 'Why Can’t Intel Copy NVIDIA’s Complete AI Stack?',
+                       'channel': 'CyberPulse',
+                       'author': 'CyberPulse',
+                       'text': "Nvidia doesn't sell a chip.",
+                       'tip': "Nvidia doesn't sell a chip.",
+                       'timestamp': 558,
+                       'timestamp_seconds': 558,
+                       'timestamp_label': '[00:09:18]',
+                       'url': 'https://www.youtube.com/watch?v=Z69EERVnY6w&t=558s',
+                       'markdown': '[00:09:18](https://www.youtube.com/watch?v=Z69EERVnY6w&t=558s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Z69EERVnY6w',
+                       'title': 'Why Can’t Intel Copy NVIDIA’s Complete AI Stack?',
+                       'channel': 'CyberPulse',
+                       'author': 'CyberPulse',
+                       'text': 'Nvidia kept that promise for 20 years.',
+                       'tip': 'Nvidia kept that promise for 20 years.',
+                       'timestamp': 885,
+                       'timestamp_seconds': 885,
+                       'timestamp_label': '[00:14:45]',
+                       'url': 'https://www.youtube.com/watch?v=Z69EERVnY6w&t=885s',
+                       'markdown': '[00:14:45](https://www.youtube.com/watch?v=Z69EERVnY6w&t=885s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NvI2zdq5I3Q',
+                       'title': 'Dell PowerEdge XE9680 Server GPUs | NVIDIA H100 & H200 | AI & HPC '
+                                'Performance | GPU Overview',
+                       'channel': 'Cloud Ninjas',
+                       'author': 'Cloud Ninjas',
+                       'text': 'I do not like to take the baseboard out.',
+                       'tip': 'I do not like to take the baseboard out.',
+                       'timestamp': 32,
+                       'timestamp_seconds': 32,
+                       'timestamp_label': '[00:00:32]',
+                       'url': 'https://www.youtube.com/watch?v=NvI2zdq5I3Q&t=32s',
+                       'markdown': '[00:00:32](https://www.youtube.com/watch?v=NvI2zdq5I3Q&t=32s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8nL31VyVz8s',
+                       'title': "H200 GPU vs H100 GPU: What's New and Is It Worth Upgrading?",
+                       'channel': 'Cyfuture AI',
+                       'author': 'Cyfuture AI',
+                       'text': 'But thanks to improved efficiency and throughput, total cost per workload '
+                               'can actually be lower.',
+                       'tip': 'But thanks to improved efficiency and throughput, total cost per workload '
+                              'can actually be lower.',
+                       'timestamp': 60,
+                       'timestamp_seconds': 60,
+                       'timestamp_label': '[00:01:00]',
+                       'url': 'https://www.youtube.com/watch?v=8nL31VyVz8s&t=60s',
+                       'markdown': '[00:01:00](https://www.youtube.com/watch?v=8nL31VyVz8s&t=60s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2tGJAc9AgQI',
+                       'title': 'The Server Powering the AI Revolution — Supermicro GPU Bare Metal Exposed',
+                       'channel': 'SysTelligence',
+                       'author': 'SysTelligence',
+                       'text': 'Mixing IPMI management traffic with GPU workload traffic causes serious '
+                               'performance issues.',
+                       'tip': 'Mixing IPMI management traffic with GPU workload traffic causes serious '
+                              'performance issues.',
+                       'timestamp': 317,
+                       'timestamp_seconds': 317,
+                       'timestamp_label': '[00:05:17]',
+                       'url': 'https://www.youtube.com/watch?v=2tGJAc9AgQI&t=317s',
+                       'markdown': '[00:05:17](https://www.youtube.com/watch?v=2tGJAc9AgQI&t=317s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2tGJAc9AgQI',
+                       'title': 'The Server Powering the AI Revolution — Supermicro GPU Bare Metal Exposed',
+                       'channel': 'SysTelligence',
+                       'author': 'SysTelligence',
+                       'text': 'The break-even point is typically 12 to 18 months for most enterprise '
+                               'workloads.',
+                       'tip': 'The break-even point is typically 12 to 18 months for most enterprise '
+                              'workloads.',
+                       'timestamp': 781,
+                       'timestamp_seconds': 781,
+                       'timestamp_label': '[00:13:01]',
+                       'url': 'https://www.youtube.com/watch?v=2tGJAc9AgQI&t=781s',
+                       'markdown': '[00:13:01](https://www.youtube.com/watch?v=2tGJAc9AgQI&t=781s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'K7eFRXwd_9U',
+                       'title': 'Supermicro NVIDIA HGX H100/H200 8-GPU Systems',
+                       'channel': 'Supermicro',
+                       'author': 'Supermicro',
+                       'text': 'Providing a 1:1 GPU to NIC ratio to avoid network bottlenecks.',
+                       'tip': 'Providing a 1:1 GPU to NIC ratio to avoid network bottlenecks.',
+                       'timestamp': 57,
+                       'timestamp_seconds': 57,
+                       'timestamp_label': '[00:00:57]',
+                       'url': 'https://www.youtube.com/watch?v=K7eFRXwd_9U&t=57s',
+                       'markdown': '[00:00:57](https://www.youtube.com/watch?v=K7eFRXwd_9U&t=57s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gD-lTOjHc04',
+                       'title': 'H200 vs H100: Ultimate AI Inference GPU Comparison 2025',
+                       'channel': 'Gimel12',
+                       'author': 'Gimel12',
+                       'text': 'A new GPU H200 cannot be the same like the old GPU; the difference is '
+                               'almost nothing.',
+                       'tip': 'A new GPU H200 cannot be the same like the old GPU; the difference is '
+                              'almost nothing.',
+                       'timestamp': 269,
+                       'timestamp_seconds': 269,
+                       'timestamp_label': '[00:04:29]',
+                       'url': 'https://www.youtube.com/watch?v=gD-lTOjHc04&t=269s',
+                       'markdown': '[00:04:29](https://www.youtube.com/watch?v=gD-lTOjHc04&t=269s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'}]}

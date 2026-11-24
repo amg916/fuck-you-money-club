@@ -1,1173 +1,883 @@
 from __future__ import annotations
 
-LEDGER_SCHEMA = r"""
-PRAGMA journal_mode = WAL;
-PRAGMA foreign_keys = ON;
-PRAGMA busy_timeout = 30000;
-
-CREATE TABLE IF NOT EXISTS deal (
-    deal_id TEXT PRIMARY KEY,
-    client_id TEXT NOT NULL,
-    program TEXT NOT NULL,
-    source_ref TEXT NOT NULL,
-    request_json TEXT NOT NULL,
-    score INTEGER NOT NULL CHECK (score BETWEEN 0 AND 100),
-    exposure_cents INTEGER NOT NULL CHECK (exposure_cents >= 0),
-    state TEXT NOT NULL DEFAULT 'intake'
-        CHECK (state IN (
-            'intake', 'verified', 'funded', 'authorized',
-            'active', 'settled', 'rejected'
-        )),
-    authority_ref TEXT,
-    terms_ref TEXT,
-    verification_ref TEXT,
-    UNIQUE (client_id, program, source_ref)
-);
-
-CREATE TABLE IF NOT EXISTS workflow_event (
-    command_key TEXT PRIMARY KEY,
-    deal_id TEXT NOT NULL REFERENCES deal(deal_id),
-    request_json TEXT NOT NULL,
-    resulting_state TEXT NOT NULL,
-    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
-);
-
-CREATE TABLE IF NOT EXISTS outbox (
-    command_key TEXT PRIMARY KEY REFERENCES workflow_event(command_key),
-    deal_id TEXT NOT NULL REFERENCES deal(deal_id),
-    status TEXT NOT NULL DEFAULT 'pending'
-        CHECK (status IN ('pending', 'ambiguous', 'done')),
-    provider_ref TEXT UNIQUE,
-    UNIQUE (deal_id)
-);
-
-CREATE TABLE IF NOT EXISTS journal (
-    event_key TEXT PRIMARY KEY,
-    deal_id TEXT REFERENCES deal(deal_id),
-    kind TEXT NOT NULL CHECK (
-        kind IN ('recognize', 'receipt', 'expense', 'fund', 'release', 'refund')
-    ),
-    amount_cents INTEGER NOT NULL CHECK (amount_cents > 0),
-    debit_account TEXT NOT NULL,
-    credit_account TEXT NOT NULL,
-    evidence_ref TEXT NOT NULL,
-    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    UNIQUE (kind, evidence_ref),
-    CHECK (
-        (kind = 'recognize'
-            AND debit_account = 'receivable'
-            AND credit_account = 'revenue')
-        OR (kind = 'receipt'
-            AND debit_account = 'operating_cash'
-            AND credit_account = 'receivable')
-        OR (kind = 'expense'
-            AND debit_account = 'expense'
-            AND credit_account = 'operating_cash')
-        OR (kind = 'fund'
-            AND debit_account = 'restricted_cash'
-            AND credit_account = 'client_liability')
-        OR (kind IN ('release', 'refund')
-            AND debit_account = 'client_liability'
-            AND credit_account = 'restricted_cash')
-    ),
-    CHECK (kind = 'expense' OR deal_id IS NOT NULL)
-);
-
-CREATE TRIGGER IF NOT EXISTS journal_no_update
-BEFORE UPDATE ON journal
-BEGIN
-    SELECT RAISE(ABORT, 'Journal entries are immutable');
-END;
-
-CREATE TRIGGER IF NOT EXISTS journal_no_delete
-BEFORE DELETE ON journal
-BEGIN
-    SELECT RAISE(ABORT, 'Journal entries are immutable');
-END;
-"""
-
-INTAKE_MODULE = r'''
-import json
-import sqlite3
-import uuid
-from contextlib import contextmanager
-
-
-@contextmanager
-def transaction(path):
-    con = sqlite3.connect(path, timeout=30, isolation_level=None)
-    con.execute("PRAGMA foreign_keys = ON")
-    con.execute("PRAGMA busy_timeout = 30000")
-    try:
-        con.execute("BEGIN IMMEDIATE")
-        yield con
-        con.commit()
-    except BaseException:
-        if con.in_transaction:
-            con.rollback()
-        raise
-    finally:
-        con.close()
-
-
-def intake(path, client_id, program, source_ref, days_to_renewal,
-           replied, authority_seen, exposure_cents):
-    if not all(isinstance(x, str) and x.strip()
-               for x in (client_id, program, source_ref)):
-        raise ValueError("Client, program, and source references are required")
-    if type(exposure_cents) is not int or exposure_cents < 0:
-        raise ValueError("Exposure must be nonnegative integer cents")
-    if type(days_to_renewal) is not int:
-        raise ValueError("Renewal distance must be an integer")
-    if type(replied) is not bool or type(authority_seen) is not bool:
-        raise ValueError("Signal inputs must be boolean values")
-    request = json.dumps(
-        [client_id, program, source_ref, days_to_renewal,
-         replied, authority_seen, exposure_cents],
-        separators=(",", ":"),
-    )
-    identity = json.dumps(
-        [client_id, program, source_ref], separators=(",", ":")
-    )
-    deal_id = str(uuid.uuid5(uuid.NAMESPACE_URL, identity))
-    score = (
-        40 * (0 <= days_to_renewal <= 90)
-        + 30 * replied
-        + 30 * authority_seen
-    )
-    with transaction(path) as con:
-        prior = con.execute(
-            "SELECT request_json FROM deal WHERE deal_id = ?", (deal_id,)
-        ).fetchone()
-        if prior:
-            if prior[0] != request:
-                raise ValueError("Intake identity reused with different inputs")
-            return deal_id
-        con.execute(
-            """INSERT INTO deal
-               (deal_id, client_id, program, source_ref, request_json,
-                score, exposure_cents)
-               VALUES (?, ?, ?, ?, ?, ?, ?)""",
-            (deal_id, client_id, program, source_ref,
-             request, score, exposure_cents),
-        )
-    return deal_id
-'''
-
-WORKFLOW_MODULE = r'''
-import json
-from intake import transaction
-
-
-def held_cents(con, deal_id):
-    return con.execute(
-        """SELECT COALESCE(SUM(
-               CASE WHEN kind = 'fund' THEN amount_cents
-                    WHEN kind IN ('release', 'refund') THEN -amount_cents
-                    ELSE 0 END), 0)
-           FROM journal WHERE deal_id = ?""",
-        (deal_id,),
-    ).fetchone()[0]
-
-
-def apply(path, command_key, deal_id, action, evidence_ref,
-          authority_ref=None, terms_ref=None):
-    if not command_key or not evidence_ref:
-        raise ValueError("Stable command and evidence references are required")
-    request = json.dumps(
-        [deal_id, action, evidence_ref, authority_ref, terms_ref],
-        separators=(",", ":"),
-    )
-    with transaction(path) as con:
-        prior = con.execute(
-            """SELECT request_json, resulting_state
-               FROM workflow_event WHERE command_key = ?""",
-            (command_key,),
-        ).fetchone()
-        if prior:
-            if prior[0] != request:
-                raise ValueError("Command key reused with different inputs")
-            return prior[1]
-        row = con.execute(
-            "SELECT state, exposure_cents FROM deal WHERE deal_id = ?",
-            (deal_id,),
-        ).fetchone()
-        if row is None:
-            raise ValueError("Deal does not exist")
-        state, exposure = row
-        target = {
-            "verify": "verified", "reserve": "funded",
-            "order": "authorized", "confirm": "active",
-            "close": "settled", "reject": "rejected",
-        }.get(action)
-        allowed = {
-            "verify": ("intake",), "reserve": ("verified",),
-            "order": ("funded",), "confirm": ("authorized",),
-            "close": ("active",),
-            "reject": ("intake", "verified", "funded"),
-        }
-        if target is None or state not in allowed[action]:
-            raise ValueError("Transition does not match current deal state")
-        if action == "verify":
-            if not authority_ref or not terms_ref:
-                raise ValueError("Signed authority and program terms are required")
-            con.execute(
-                """UPDATE deal SET authority_ref = ?, terms_ref = ?,
-                   verification_ref = ? WHERE deal_id = ?""",
-                (authority_ref, terms_ref, evidence_ref, deal_id),
-            )
-        if action in ("reserve", "order"):
-            if held_cents(con, deal_id) < exposure:
-                raise ValueError("Cleared client funding does not cover exposure")
-        if action == "confirm":
-            receipt = con.execute(
-                """SELECT provider_ref FROM outbox
-                   WHERE deal_id = ? AND status = 'done'""",
-                (deal_id,),
-            ).fetchone()
-            if receipt is None or receipt[0] != evidence_ref:
-                raise ValueError("Confirmed provider receipt is required")
-        if action == "close":
-            revenue, receipts = con.execute(
-                """SELECT
-                     COALESCE(SUM(CASE WHEN kind = 'recognize'
-                         THEN amount_cents ELSE 0 END), 0),
-                     COALESCE(SUM(CASE WHEN kind = 'receipt'
-                         THEN amount_cents ELSE 0 END), 0)
-                   FROM journal WHERE deal_id = ?""",
-                (deal_id,),
-            ).fetchone()
-            if revenue <= 0 or revenue != receipts:
-                raise ValueError("Recognized fees must be fully collected")
-            if held_cents(con, deal_id) != 0:
-                raise ValueError("Client funding must be fully resolved")
-        con.execute(
-            """INSERT INTO workflow_event
-               (command_key, deal_id, request_json, resulting_state)
-               VALUES (?, ?, ?, ?)""",
-            (command_key, deal_id, request, target),
-        )
-        con.execute(
-            "UPDATE deal SET state = ? WHERE deal_id = ?", (target, deal_id)
-        )
-        if action == "order":
-            con.execute(
-                "INSERT INTO outbox (command_key, deal_id) VALUES (?, ?)",
-                (command_key, deal_id),
-            )
-    return target
-
-
-def claim_order(path, command_key):
-    with transaction(path) as con:
-        row = con.execute(
-            "SELECT deal_id, status FROM outbox WHERE command_key = ?",
-            (command_key,),
-        ).fetchone()
-        if row is None or row[1] != "pending":
-            return None
-        con.execute(
-            "UPDATE outbox SET status = 'ambiguous' WHERE command_key = ?",
-            (command_key,),
-        )
-        return {"idempotency_key": command_key, "deal_id": row[0]}
-
-
-def finish_order(path, command_key, provider_ref):
-    if not provider_ref:
-        raise ValueError("Provider confirmation reference is required")
-    with transaction(path) as con:
-        row = con.execute(
-            """SELECT status, provider_ref FROM outbox
-               WHERE command_key = ?""",
-            (command_key,),
-        ).fetchone()
-        if row is None:
-            raise ValueError("Order does not exist")
-        if row[0] == "done":
-            if row[1] != provider_ref:
-                raise ValueError("Provider confirmation conflicts with prior receipt")
-            return
-        if row[0] != "ambiguous":
-            raise ValueError("Order must be claimed before confirmation")
-        con.execute(
-            """UPDATE outbox SET status = 'done', provider_ref = ?
-               WHERE command_key = ?""",
-            (provider_ref, command_key),
-        )
-'''
-
-SETTLEMENT_MODULE = r'''
-from intake import transaction
-from workflow import held_cents
-
-
-ACCOUNTS = {
-    "recognize": ("receivable", "revenue"),
-    "receipt": ("operating_cash", "receivable"),
-    "expense": ("expense", "operating_cash"),
-    "fund": ("restricted_cash", "client_liability"),
-    "release": ("client_liability", "restricted_cash"),
-    "refund": ("client_liability", "restricted_cash"),
-}
-
-
-def post(path, event_key, deal_id, kind, amount_cents, evidence_ref):
-    if kind not in ACCOUNTS:
-        raise ValueError("Unsupported journal event kind")
-    if type(amount_cents) is not int or amount_cents <= 0:
-        raise ValueError("Amount must be positive integer cents")
-    if not event_key or not evidence_ref:
-        raise ValueError("Stable event and source evidence references are required")
-    debit, credit = ACCOUNTS[kind]
-    values = (deal_id, kind, amount_cents, debit, credit, evidence_ref)
-    with transaction(path) as con:
-        prior = con.execute(
-            """SELECT deal_id, kind, amount_cents, debit_account,
-                      credit_account, evidence_ref
-               FROM journal WHERE event_key = ?""",
-            (event_key,),
-        ).fetchone()
-        if prior:
-            if prior != values:
-                raise ValueError("Journal event key reused with different inputs")
-            return
-        state = None
-        if deal_id is not None:
-            row = con.execute(
-                "SELECT state FROM deal WHERE deal_id = ?", (deal_id,)
-            ).fetchone()
-            if row is None:
-                raise ValueError("Deal does not exist")
-            state = row[0]
-        elif kind != "expense":
-            raise ValueError("Client-related events require a deal")
-        if kind == "recognize" and state != "active":
-            raise ValueError("Recognition requires active delivery evidence")
-        if kind == "receipt":
-            receivable = con.execute(
-                """SELECT COALESCE(SUM(
-                       CASE WHEN kind = 'recognize' THEN amount_cents
-                            WHEN kind = 'receipt' THEN -amount_cents
-                            ELSE 0 END), 0)
-                   FROM journal WHERE deal_id = ?""",
-                (deal_id,),
-            ).fetchone()[0]
-            if amount_cents > receivable:
-                raise ValueError("Receipt exceeds recognized receivable")
-        if kind == "fund" and state not in ("intake", "verified"):
-            raise ValueError("Funding must precede reservation")
-        if kind == "release" and state != "active":
-            raise ValueError("Supplier release requires confirmed activation")
-        if kind == "refund" and state != "rejected":
-            raise ValueError("Refund requires rejection before order submission")
-        if kind in ("release", "refund"):
-            if amount_cents > held_cents(con, deal_id):
-                raise ValueError("Disbursement exceeds held client funding")
-        con.execute(
-            """INSERT INTO journal
-               (event_key, deal_id, kind, amount_cents,
-                debit_account, credit_account, evidence_ref)
-               VALUES (?, ?, ?, ?, ?, ?, ?)""",
-            (event_key,) + values,
-        )
-'''
-
-RECONCILIATION_VIEW = r"""
-CREATE VIEW IF NOT EXISTS deal_reconciliation AS
-SELECT
-    d.deal_id,
-    d.client_id,
-    d.program,
-    d.state,
-    COALESCE(SUM(CASE WHEN j.kind = 'recognize'
-        THEN j.amount_cents ELSE 0 END), 0) AS revenue_cents,
-    COALESCE(SUM(CASE WHEN j.kind = 'receipt'
-        THEN j.amount_cents ELSE 0 END), 0) AS collected_cents,
-    COALESCE(SUM(CASE
-        WHEN j.kind = 'recognize' THEN j.amount_cents
-        WHEN j.kind = 'receipt' THEN -j.amount_cents
-        ELSE 0 END), 0) AS receivable_cents,
-    COALESCE(SUM(CASE
-        WHEN j.kind = 'fund' THEN j.amount_cents
-        WHEN j.kind IN ('release', 'refund') THEN -j.amount_cents
-        ELSE 0 END), 0) AS client_funds_cents
-FROM deal d
-LEFT JOIN journal j ON j.deal_id = d.deal_id
-GROUP BY d.deal_id, d.client_id, d.program, d.state;
-
-CREATE VIEW IF NOT EXISTS operator_reconciliation AS
-SELECT
-    COALESCE(SUM(CASE WHEN kind = 'recognize'
-        THEN amount_cents ELSE 0 END), 0) AS revenue_cents,
-    COALESCE(SUM(CASE WHEN kind = 'expense'
-        THEN amount_cents ELSE 0 END), 0) AS expense_cents,
-    COALESCE(SUM(CASE
-        WHEN kind = 'recognize' THEN amount_cents
-        WHEN kind = 'expense' THEN -amount_cents
-        ELSE 0 END), 0) AS owner_profit_cents,
-    COALESCE(SUM(CASE
-        WHEN kind = 'receipt' THEN amount_cents
-        WHEN kind = 'expense' THEN -amount_cents
-        ELSE 0 END), 0) AS operating_cash_change_cents,
-    COALESCE(SUM(CASE
-        WHEN kind = 'recognize' THEN amount_cents
-        WHEN kind = 'receipt' THEN -amount_cents
-        ELSE 0 END), 0) AS receivable_cents
-FROM journal;
-"""
-
-QA_MODULE = r'''
-import sqlite3
-import tempfile
-from concurrent.futures import ThreadPoolExecutor
-from pathlib import Path
-
-from intake import intake, transaction
-from workflow import apply, claim_order, finish_order
-from settlement import post
-
-
-def require(condition, message):
-    if not condition:
-        raise AssertionError(message)
-
-
-def audit(path):
-    with transaction(path) as con:
-        require(
-            con.execute("PRAGMA integrity_check").fetchone()[0] == "ok",
-            "SQLite integrity check failed",
-        )
-        require(
-            not con.execute("PRAGMA foreign_key_check").fetchall(),
-            "Foreign key check failed",
-        )
-        require(
-            not con.execute(
-                """SELECT deal_id FROM deal_reconciliation
-                   WHERE receivable_cents < 0 OR client_funds_cents < 0"""
-            ).fetchall(),
-            "Client balance invariant failed",
-        )
-        require(
-            not con.execute(
-                """SELECT d.deal_id FROM deal d
-                   JOIN deal_reconciliation r USING (deal_id)
-                   WHERE d.state IN ('funded', 'authorized')
-                     AND r.client_funds_cents < d.exposure_cents"""
-            ).fetchall(),
-            "Reserved exposure lacks client funding",
-        )
-        require(
-            not con.execute(
-                "SELECT command_key FROM outbox WHERE status = 'ambiguous'"
-            ).fetchall(),
-            "Provider submission requires receipt investigation",
-        )
-        revenue, expense, profit, cash, receivable = con.execute(
-            "SELECT * FROM operator_reconciliation"
-        ).fetchone()
-        require(revenue - expense == profit, "Profit equation failed")
-        require(profit - cash == receivable, "Cash bridge failed")
-
-
-def self_test():
-    with tempfile.TemporaryDirectory() as directory:
-        path = str(Path(directory) / "ledger.sqlite3")
-        con = sqlite3.connect(path)
-        try:
-            con.executescript(Path("schema.sql").read_text(encoding="utf-8"))
-            con.executescript(Path("reconcile.sql").read_text(encoding="utf-8"))
-        finally:
-            con.close()
-
-        def same_intake(_):
-            return intake(
-                path, "client-001", "authorized-csp", "renewal-001",
-                45, True, True, 100000,
-            )
-
-        with ThreadPoolExecutor(max_workers=8) as pool:
-            identities = list(pool.map(same_intake, range(32)))
-        require(len(set(identities)) == 1, "Concurrent intake duplicated a deal")
-        deal_id = identities[0]
-        apply(path, "verify-001", deal_id, "verify",
-              "review-001", "authority-001", "terms-001")
-        post(path, "fund-001", deal_id, "fund", 100000, "bank-credit-001")
-        apply(path, "reserve-001", deal_id, "reserve", "exposure-check-001")
-        apply(path, "order-001", deal_id, "order", "signed-quote-001")
-        with ThreadPoolExecutor(max_workers=8) as pool:
-            claims = list(pool.map(
-                lambda _: claim_order(path, "order-001"), range(32)
-            ))
-        require(
-            sum(claim is not None for claim in claims) == 1,
-            "More than one worker claimed the same order",
-        )
-        finish_order(path, "order-001", "provider-activation-001")
-        apply(path, "confirm-001", deal_id, "confirm",
-              "provider-activation-001")
-        post(path, "release-001", deal_id, "release",
-             100000, "supplier-settlement-001")
-        post(path, "fee-001", deal_id, "recognize", 10000, "invoice-line-001")
-
-        def same_receipt(_):
-            post(path, "receipt-001", deal_id, "receipt",
-                 10000, "bank-receipt-001")
-
-        with ThreadPoolExecutor(max_workers=8) as pool:
-            list(pool.map(same_receipt, range(32)))
-        try:
-            post(path, "receipt-001", deal_id, "receipt",
-                 9999, "bank-receipt-001")
-        except ValueError:
-            pass
-        else:
-            raise AssertionError("Conflicting replay was accepted")
-        apply(path, "close-001", deal_id, "close", "close-package-001")
-        audit(path)
-        with transaction(path) as con:
-            require(
-                con.execute("SELECT COUNT(*) FROM deal").fetchone()[0] == 1,
-                "Intake uniqueness failed",
-            )
-            require(
-                con.execute(
-                    "SELECT revenue_cents FROM operator_reconciliation"
-                ).fetchone()[0] == 10000,
-                "Revenue was duplicated",
-            )
-    print("Reference concurrency, replay, and reconciliation checks passed")
-
-
-if __name__ == "__main__":
-    self_test()
-'''
-
-CHAPTER_7 = {
-    "id": "Q7",
-    "chapter_id": "Q7",
-    "chapter_number": 7,
-    "question_number": 7,
-    "slug": "complete-operating-process-production-blueprint-90-day-cohort-walk",
-    "question_prompt": "How does an operator execute saas discount brokerage & gpo arbitrage end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
-    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
-    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
-    "subtitle": "Authorized CSP and VIP execution, Telarus residuals, GPO rebates, SQLite settlement controls, and a cash-to-ledger cohort under 47 U.S.C. § 227",
-    "layout_template": "research_exhibit",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #37, SaaS Discount Brokerage & GPO Arbitrage, ranks #04 of 37 "
-        "with a 94/100 Money-to-Manpower Score. This chapter turns 12 mapped plays "
-        "into an execution system: permissioned acquisition, authorized license "
-        "movement, protected commitments, evidenced fee recognition, and reconciled "
-        "cash. The Conservative, Base, and Scaled cases produce $32,000, $225,000, "
-        "and $522,000 annual owner profit on $100,000, $500,000, and $900,000 "
-        "recognized operator revenue. Client subscription spend stays outside "
-        "those revenue figures. A six-module SQLite reference separates client "
-        "funding from earned spreads and blocks duplicate local execution. The "
-        "worked cohort reaches the Base monthly pace in Month 3 while exposing "
-        "receivable drag, rejected opportunities, contractor costs, and the "
-        "difference between booked contribution and spendable cash."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual recognized operator revenue; client subscription spend excluded",
-            "note": "32% net margin; $32,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$500,000",
-            "context": "Annual recognized operator revenue; retained spreads, residuals, rebates, and fees",
-            "note": "45.0% net margin; $225,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual recognized operator revenue; pass-through subscription billings excluded",
-            "note": "58% net margin; $522,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Turn warm renewal signals into authorized, underwritten opportunities",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with an opportunity record, not a discount promise. Capture the "
-                    "customer entity, tenant identifier, billing owner, incumbent channel, "
-                    "renewal date, cancellation window, seat quantities, currency, and signed "
-                    "authority to inspect commercial documents. Use a customer-provided invoice "
-                    "and authorized administration export as primary evidence; DNS, MX, and "
-                    "SPF observations only suggest which questions to ask. A Microsoft mail "
-                    "record does not establish licensing rights or buying authority. Record "
-                    "the quoted SKU, commitment term, billing frequency, promotional expiry, "
-                    "and proposed effective date before comparing prices. Score renewal "
-                    "proximity at 40 points, a genuine prospect reply at 30, and observed "
-                    "buying authority at 30; the score prioritizes review without authorizing "
-                    "a purchase. Preserve an immutable source reference so repeated CRM "
-                    "deliveries update the work queue rather than create duplicate deals. "
-                    "A quote packet should identify exactly which subscriptions can move, "
-                    "which remain with the incumbent, and which require a new commercial "
-                    "agreement. If evidence conflicts, retain the existing service and ask "
-                    "for corrected documents. Losing a speculative spread costs less than "
-                    "creating overlapping annual commitments or interrupting a customer's "
-                    "identity, collaboration, and telephone services during an avoidable migration."
-                ),
-                (
-                    "Implement high_velocity_dm_outbound_systems as a warm-trigger queue, not "
-                    "a mechanism for multiplying unsolicited messages. A prospect comments "
-                    "on a renewal checklist, reacts to an explicit offer, or initiates an "
-                    "inbound message; route that signal to one assigned inbox under the "
-                    "platform's current messaging permissions. Require the prospect's reply "
-                    "before sending an external booking or upload link. In Month 3, 240 "
-                    "eligible signals produce 120 replies, 48 discovery conversations, 24 "
-                    "qualified quote packets, and 20 activations after four scrubs. Those "
-                    "illustrative conversion rates are 50%, 40%, 50%, and 83.3% respectively, "
-                    "not promised platform performance. Deduplicate at the person-and-company "
-                    "level, honor opt-outs across inboxes, and record trigger evidence. "
-                    "PeerFloodError or disappearing Message Requests means stop and inspect "
-                    "permission and delivery conditions, not rotate identities to defeat "
-                    "limits. A reaction alone does not authorize every channel or message "
-                    "type. Telephone and text follow-up must be evaluated separately under "
-                    "47 U.S.C. § 227 and 47 CFR § 64.1200. The FTC's business-to-business "
-                    "telemarketing treatment does not permit deceptive savings claims. "
-                    "Keep suppression, channel eligibility, and commercial underwriting "
-                    "separate so a promising renewal never overrides an outreach restriction."
-                ),
-                (
-                    "Map twelve operating plays without pretending every step has a supplied "
-                    "registry identifier. The supplied acquisition identifier maps to warm-trigger "
-                    "routing; the remaining descriptive mappings are renewal-cliff scoring, "
-                    "authorized CSP spreads, Adobe VIP transfers, Zoom residuals, UCaaS "
-                    "residuals, GPO bracket rebates, shared-savings audits, license reclamation, "
-                    "term alignment, prefunded commitment control, and settlement recovery. "
-                    "Only the first identifier is asserted as registry metadata here. "
-                    "For each quote, calculate the retained amount after distributor "
-                    "charges, agent splits, and contractually required customer credits. "
-                    "A $12,000 customer software bill yielding a $1,200 retained spread "
-                    "contributes $1,200 operator revenue under the volume's net-agency "
-                    "basis, not $12,000. A completed savings engagement with $16,666.67 "
-                    "of agreed eligible savings and a 30% fee produces $5,000 after "
-                    "cent rounding. Define eligible savings against equivalent seats, "
-                    "features, support, taxes, and service periods; separate reductions "
-                    "caused by canceled business units. A license-reclamation recommendation "
-                    "can improve that baseline but earns no separate fee unless contracted. "
-                    "When the vendor floor removes the spread, switch to a permitted "
-                    "audit engagement or decline the transaction rather than pool unrelated "
-                    "customers' seats inside an unauthorized tenant."
-                ),
-            ],
-            "table": {
-                "caption": "Permissioned Intake and Twelve-Play Commercial Routing Matrix",
-                "headers": [
-                    "Operating play or paired workflow",
-                    "Required evidence and accountable owner",
-                    "Unit economics and decision rule",
-                    "Failure containment and practical fallback",
-                ],
-                "rows": [
-                    [
-                        "high_velocity_dm_outbound_systems paired with warm-trigger inbox assignment",
-                        "Acquisition owner records the initiating action and subsequent prospect reply",
-                        "Route 240 signals into 120 replies before projecting downstream conversions",
-                        "Stop restricted dispatch and retain only user-initiated permitted messaging paths",
-                    ],
-                    [
-                        "Renewal-cliff scoring paired with customer-specific term alignment",
-                        "Commercial reviewer compares renewal notices against signed subscription schedules",
-                        "Forty renewal points require an actual zero-to-ninety-day renewal interval",
-                        "Keep the incumbent subscription when cancellation or transfer timing conflicts",
-                    ],
-                    [
-                        "Authorized CSP spreads paired with Adobe VIP transfer execution",
-                        "Channel specialist verifies distributor authorization and each customer's permitted transfer",
-                        "A twelve-thousand-dollar subscription yielding twelve hundred contributes only retained revenue",
-                        "Use the authorized channel process rather than treating CPOR as transfer authority",
-                    ],
-                    [
-                        "Zoom residuals paired with separately contracted UCaaS residuals",
-                        "Agent owner retains the supplier schedule and executed master-agent agreement",
-                        "A five-hundred-dollar retained monthly residual requires an eligible active account",
-                        "Investigate attribution and activation dates before booking disputed supplier commissions",
-                    ],
-                    [
-                        "GPO bracket rebates paired with evidenced settlement recovery",
-                        "GPO administrator documents membership, qualifying purchases, exclusions, and payment schedule",
-                        "Recognize only earned retained rebates after customer allocations and reversals",
-                        "Accrue no speculative tier uplift before contractual eligibility becomes supportable",
-                    ],
-                    [
-                        "Shared-savings audits paired with authorized license reclamation analysis",
-                        "Audit owner obtains baseline invoices and written acceptance of eligible savings",
-                        "Thirty percent of sixteen thousand six hundred sixty-six dollars produces five thousand",
-                        "Exclude scope reductions and negotiate a fixed fee when attribution fails",
-                    ],
-                    [
-                        "Prefunded commitment control completes the twelve descriptive operating mappings",
-                        "Credit owner records cleared funding against the remaining enforceable supplier exposure",
-                        "A twelve-thousand-dollar annual obligation requires twelve thousand of matched protection",
-                        "Offer permitted monthly commitment terms or leave the customer with its incumbent",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the spread before optimizing the pitch",
-                "body": "The strongest small-team advantage is accurate routing and fewer expensive exceptions, not a larger unsolicited messaging queue.",
-                "items": [
-                    "Tag every renewal by commitment expiry and cancellation deadline separately; an annual term billed monthly still creates annual exposure.",
-                    "Ask the distributor for the exact retained-dollar schedule after agent splits; headline partner discounts can conceal a smaller payable spread.",
-                    "Maintain one suppression record across every permitted inbox so a prospect's opt-out survives reassignment and contractor turnover.",
-                    "Use a matched-SKU savings worksheet and attach the rejected alternative quote; this prevents later disputes over cheaper but materially weaker service.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Move from signed authority to activation without inheriting unsecured commitments",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Execute through the actual program rather than a generic partner label. "
-                    "Microsoft CSP resale authority, customer relationships, delegated access, "
-                    "subscription transfer eligibility, and CPOR associations are distinct "
-                    "concepts; a CPOR association is not universal permission to resell "
-                    "or move subscriptions. For Adobe VIP Marketplace, follow the current "
-                    "distributor transfer procedure and preserve the membership and order "
-                    "references. For Zoom or UCaaS through Telarus or Avant, verify the "
-                    "specific supplier agreement, commissionable products, activation event, "
-                    "and residual schedule. GPO work requires documented membership and "
-                    "the actual rebate schedule, including exclusions and customer allocations. "
-                    "Never assume a distributor supports an automated endpoint merely "
-                    "because its portal displays an operation. Use documented APIs where "
-                    "available and a controlled human task otherwise. Before execution, "
-                    "freeze the signed quote version, authorized seat counts, destination "
-                    "tenant, service dates, and responsible administrator. The customer "
-                    "retains administration rights unless separately delegated. Keep secrets "
-                    "out of the CRM and ledger; store credentials in a managed secret "
-                    "store with narrowly scoped access. If a program requires additional "
-                    "evidence, the opportunity waits in verification while the existing "
-                    "service remains intact and the quoted economics are refreshed."
-                ),
-                (
-                    "Protect annual commitments before pressing the supplier order button. "
-                    "For an annual NCE obligation of $12,000, a customer's $1,000 monthly "
-                    "autodebit instruction leaves substantial exposure; it is not equivalent "
-                    "to prefunding the full obligation. Prefer customer-direct supplier "
-                    "payment where the commercial arrangement permits it, or collect "
-                    "cleared prefunding matched to the remaining liability. Card authorization "
-                    "and a newly initiated ACH debit are not cleared, irreversible funds. "
-                    "Document return, chargeback, and concentration exposure even after "
-                    "settlement. The reference workflow names its protected state funded; "
-                    "an escrow arrangement, when used, must be administered through an "
-                    "appropriately authorized provider under documented release instructions. "
-                    "The software state itself establishes neither custody authority nor "
-                    "an escrow account. Client-controlled direct payments remain evidence "
-                    "rather than operator cash entries; the reference client-funds postings "
-                    "apply only where the operator actually holds matched funds under "
-                    "the applicable arrangement. Maintain restricted balances separately "
-                    "from operating cash and never spend them on acquisition or payroll. "
-                    "If adequate protection is unavailable, quote an eligible monthly "
-                    "commitment, require a different payment structure, or decline. "
-                    "Do not use another customer's prepayment to bridge the shortfall."
-                ),
-                (
-                    "Fulfillment ends with evidence, not an optimistic status change. "
-                    "Store the supplier acceptance reference, effective date, SKU quantities, "
-                    "customer confirmation, and first billing record. Compare the activated "
-                    "configuration with the frozen quote before recording an earned spread. "
-                    "For residuals, match each statement line to the active customer and "
-                    "applicable agent split. For rebates, document satisfied purchase "
-                    "conditions and estimate reversals only when the recognition policy "
-                    "supports doing so. For savings fees, the worked model assumes a "
-                    "distinct completed audit obligation and an enforceable fee accepted "
-                    "by the customer; a contingent future reduction alone is insufficient. "
-                    "Apply ASC 606 principal-versus-agent analysis to each arrangement. "
-                    "The scorecard uses net retained operator revenue, but that convention "
-                    "does not determine every real contract's accounting conclusion. "
-                    "A reviewer should reconcile the supplier statement, customer invoice, "
-                    "bank receipt, and ledger event before closing a settlement period. "
-                    "Keep recurring relationships active across periods rather than closing "
-                    "them after the first commission. Correct disputed statements through "
-                    "documented supplier adjustments and a controlled accounting procedure; "
-                    "the minimal reference deliberately blocks journal edits and lacks "
-                    "a general credit-note subsystem. Route those exceptions outside its "
-                    "straight-through path until that extension is implemented and tested."
-                ),
-            ],
-            "table": {
-                "caption": "Authorized Fulfillment, Commitment Protection, and Evidence Controls",
-                "headers": [
-                    "Execution checkpoint and responsible role",
-                    "Evidence required before proceeding further",
-                    "Concrete commercial or ledger treatment",
-                    "Exception response that preserves customer service",
-                ],
-                "rows": [
-                    [
-                        "Commercial reviewer verifies customer authority and exact subscription scope",
-                        "Signed authority identifies customer entity, tenant, permitted actions, and expiry",
-                        "Verification creates no supplier order and recognizes no operator revenue",
-                        "Return conflicting documents for correction while preserving the incumbent service",
-                    ],
-                    [
-                        "Channel specialist validates distributor and supplier program eligibility",
-                        "Current terms support the specific CSP, VIP, agent, or GPO activity",
-                        "Forecast only the retained spread available under the applicable program",
-                        "Replace an unsupported transfer with a permitted renewal or audit service",
-                    ],
-                    [
-                        "Credit owner matches protected funds to remaining annual commitment",
-                        "Cleared funding evidence identifies payer, amount, settlement date, and restrictions",
-                        "Client funding increases restricted cash and matching client liability only",
-                        "Require full protection or choose a permitted shorter commitment structure",
-                    ],
-                    [
-                        "Order operator submits the frozen quote through the authorized channel",
-                        "Immutable command reference accompanies the exact tenant and subscription payload",
-                        "One local outbox record permits one initial submission claim only",
-                        "Investigate uncertain provider responses before authorizing any further submission attempt",
-                    ],
-                    [
-                        "Fulfillment reviewer confirms activation against supplier and customer evidence",
-                        "Provider acceptance matches service dates, quantities, destination tenant, and quote",
-                        "Activation permits evidenced fee recognition without counting customer software spend",
-                        "Suspend revenue recognition and resolve discrepancies before declaring completed delivery",
-                    ],
-                    [
-                        "Settlement contractor matches commissions and rebates to source statement lines",
-                        "Supplier statement line references remain unique across imported statement files",
-                        "Recognized fees debit receivables while actual collections reduce receivables",
-                        "Investigate missing attribution or rebate eligibility before escalating payment disputes",
-                    ],
-                    [
-                        "Owner closes the period after independent cash and exception review",
-                        "Bank settlement totals agree with journal entries and remaining customer liabilities",
-                        "Recurring accounts remain active while settled one-time engagements can close",
-                        "Carry unresolved receivables visibly and restrict distributions to available operating cash",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before creating supplier exposure",
-                "body": "All four checks require attached evidence; a high lead score cannot substitute for any of them.",
-                "items": [
-                    "Verify the signer, customer entity, tenant, and permitted actions against signed authority and the exact supplier program.",
-                    "Recalculate the retained spread using current price floors, agent splits, customer credits, and any rebate eligibility restrictions.",
-                    "Match cleared prefunding or permitted direct-payment protection to the complete remaining supplier obligation, including annual commitments billed monthly.",
-                    "Confirm the immutable order key, duplicate check, rollback limitations, and named person responsible for investigating ambiguous supplier responses.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the commercial packet",
-                    "action": "Attach signed authority, equivalent-service baseline, quote version, and current program terms.",
-                    "detail": "Record the customer tenant and renewal window separately from inferred technographic signals.",
-                },
-                {
-                    "step": 2,
-                    "title": "Protect the commitment",
-                    "action": "Verify cleared funding or the permitted customer-direct payment structure before ordering.",
-                    "detail": "Measure remaining enforceable exposure rather than treating monthly billing as monthly commitment.",
-                },
-                {
-                    "step": 3,
-                    "title": "Submit once and confirm delivery",
-                    "action": "Claim the durable outbox item, submit through the authorized channel, and retain the provider receipt.",
-                    "detail": "An ambiguous response requires provider lookup or human investigation; never blindly resubmit.",
-                },
-                {
-                    "step": 4,
-                    "title": "Recognize, collect, and reconcile",
-                    "action": "Post earned retained fees, match bank receipts, and review the receivable and client-funds balances.",
-                    "detail": "Close only fully resolved one-time engagements; keep recurring relationships available for later settlement periods.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Install the six-module ledger and serialize every consequential transition",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use the six reference modules below as a bounded transaction core, "
-                    "not an entire channel integration product. Save each artifact under "
-                    "its indicated filename in one directory. Initialize a fresh SQLite "
-                    "database with schema.sql and reconcile.sql; run python qa.py from "
-                    "that directory to exercise the included temporary-database checks. "
-                    "The reference code has not been executed here. Python 3.9 and "
-                    "the standard library are sufficient. Every mutation starts BEGIN "
-                    "IMMEDIATE, so SQLite serializes competing writers before they inspect "
-                    "balances or states. Unique natural identities block duplicate intake, "
-                    "journal source lines, workflow commands, and order creation. Integer "
-                    "cents eliminate binary floating-point drift, while each journal row "
-                    "contains one equal debit and credit. A replay returns the earlier "
-                    "result only when its immutable payload agrees; conflicting reuse "
-                    "raises an error. Keep the database on a supported local filesystem, "
-                    "not a shared network mount, and use SQLite's backup API for "
-                    "consistent snapshots. Restrict filesystem write access to the service "
-                    "identity because database constraints cannot replace application "
-                    "authorization. Rejected lock acquisition leaves no committed partial "
-                    "work; the caller may retry the same command identity after the "
-                    "contention condition clears."
-                ),
-                (
-                    "Separate local atomicity from supplier-side execution. The order "
-                    "transition commits the workflow event, new state, and outbox row "
-                    "together. A worker claims that row in another serialized transaction "
-                    "and marks it ambiguous before touching the network. Only one worker "
-                    "can obtain the initial claim. Send the stable command key as the "
-                    "provider idempotency key where the documented API supports it. "
-                    "If the worker crashes before sending, or receives a timeout after "
-                    "sending, the item remains ambiguous and cannot be automatically "
-                    "claimed again. Resolve it by looking up the provider transaction "
-                    "or obtaining documented human confirmation. Providers without durable "
-                    "idempotency and lookup require this deliberately conservative halt. "
-                    "No local database can promise exactly-once effects across an arbitrary "
-                    "external service; the reference prevents duplicate local dispatch "
-                    "and fails closed where remote certainty is unavailable. An authenticated "
-                    "adapter must validate webhook signatures, supplier account scope, "
-                    "and source references before invoking these functions. Network calls "
-                    "stay outside database transactions, preventing a slow supplier from "
-                    "holding the writer lock. Configure alerting for pending age and "
-                    "ambiguous outcomes, with a named settlement owner rather than an "
-                    "unbounded background retry loop."
-                ),
-                (
-                    "Treat the supplied core's accounting boundaries as explicit design "
-                    "decisions. Recognition increases receivables and retained revenue; "
-                    "collection increases operating cash and decreases receivables. Client "
-                    "funding and supplier releases affect restricted cash and client "
-                    "liabilities without touching revenue. Expenses reduce operating cash "
-                    "and owner profit. Opening owner capital is tracked separately from "
-                    "the operating cash-change view. The minimal engine supports a "
-                    "straight-through order, matched funding, positive earned fees, collections, "
-                    "and expenses; recurring invoice lines use distinct period-specific "
-                    "evidence references on an active deal. It intentionally excludes "
-                    "foreign exchange, tax allocation, fee reversals, partial activation, "
-                    "and supplier-credit accounting. Add those capabilities with explicit "
-                    "event types and invariant tests before routing affected production "
-                    "transactions through it. Store signed documents in access-controlled "
-                    "object storage and put stable references in the ledger; a reference "
-                    "string alone does not authenticate evidence. Test simultaneous "
-                    "duplicate delivery, changed-payload replay, insufficient funding, "
-                    "receipt overcollection, and interrupted provider submission. Reconcile "
-                    "the views to bank and supplier exports daily, then perform a "
-                    "restore drill against a copied backup. The included QA checks "
-                    "are a starting suite, not evidence that a particular deployment "
-                    "or adapter has passed acceptance."
-                ),
-            ],
-            "table": {
-                "caption": "Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
-                "headers": [
-                    "Module filename and bounded production responsibility",
-                    "Copy-pasteable implementation for the reference core",
-                    "Concurrency and accounting invariant enforced",
-                    "Operator installation and verification requirement",
-                ],
-                "rows": [
-                    [
-                        "Module 1 — schema.sql creates constrained identities and immutable journal storage",
-                        LEDGER_SCHEMA,
-                        "Unique source references and balanced two-account entries prevent duplicate local records",
-                        "Execute against a fresh local database before accepting any production commands",
-                    ],
-                    [
-                        "Module 2 — intake.py scores opportunities and provides serialized transaction boundaries",
-                        INTAKE_MODULE,
-                        "Deterministic deal identity and locked comparisons reject changed-payload intake replays",
-                        "Invoke only behind authenticated intake handling with validated customer evidence",
-                    ],
-                    [
-                        "Module 3 — workflow.py implements verification, protected funding, and order states",
-                        WORKFLOW_MODULE,
-                        "One claimed outbox item prevents competing workers from submitting the initial order",
-                        "Connect an authorized supplier adapter and investigate ambiguous outcomes before continuing",
-                    ],
-                    [
-                        "Module 4 — settlement.py posts retained revenue and segregated client funding",
-                        SETTLEMENT_MODULE,
-                        "Locked balance checks prevent overcollection and disbursement beyond recorded client funds",
-                        "Validate bank and supplier evidence before calling the journal posting function",
-                    ],
-                    [
-                        "Module 5 — reconcile.sql exposes deal balances and owner cash conversion",
-                        RECONCILIATION_VIEW,
-                        "Client subscription funding never enters recognized revenue or operating cash change",
-                        "Compare daily exports against source statements and investigate every unmatched difference",
-                    ],
-                    [
-                        "Module 6 — qa.py exercises concurrent replay and straight-through settlement",
-                        QA_MODULE,
-                        "Concurrent duplicate commands yield one deal, one initial order claim, and one receipt",
-                        "Run locally, add failure-injection tests, and record actual deployment acceptance results",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Walk the first ninety days from qualified signals to reconciled cash",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The cohort below starts with $20,000 owner capital, no opening "
-                    "receivables, and no preexisting recurring book. All operating expenses "
-                    "are paid in the month incurred; client subscription cash is excluded. "
-                    "Month 1 converts 120 warm signals into 60 replies, 24 discoveries, "
-                    "12 qualified opportunities, and ten activations after two scrubs. "
-                    "Six reseller accounts contribute $500 each, two residual accounts "
-                    "contribute $500 each, one rebate contributes $1,000, and one completed "
-                    "savings audit contributes $5,000: total recognized revenue is $10,000. "
-                    "Month 2 adds fifteen activations from eighteen qualified opportunities. "
-                    "Eight reseller accounts at $750, three residual accounts at $500, "
-                    "two rebates at $1,750, and two audits at $5,000 generate $21,000 "
-                    "new revenue. Add the first month's $4,000 recurring spread-and-residual "
-                    "book to reach $25,000. Rebate and audit amounts do not automatically "
-                    "recur. Scrubs happen before ordering and recognition, so the model "
-                    "does not bury their lost forecast value inside realized revenue. "
-                    "Acquisition and contractor expenses still absorb the work spent "
-                    "on those rejected opportunities. The example assumes no defaults "
-                    "or post-activation clawbacks; replacing that assumption requires an "
-                    "explicit loss expense and revised cash bridge."
-                ),
-                (
-                    "Month 3 adds twenty activations: ten reseller accounts at $800, "
-                    "four residual accounts at $750, three earned rebates at $1,388.89, "
-                    "and three completed audits at $5,000. New revenue equals $30,166.67. "
-                    "The retained recurring book contributes another $11,500 from Months "
-                    "1 and 2, producing $41,666.67 recognized revenue. All six audits "
-                    "across the quarter use a 30% fee on $16,666.67 accepted eligible "
-                    "savings, rounded to $5,000 apiece. The model assumes the contracted "
-                    "audit obligation is completed and collectible in its stated month. "
-                    "Fixed monthly overhead is $6,500, within the volume's $1,500–$9,500 "
-                    "monthly overhead range. Delivery labor, commissions, payment costs, "
-                    "and other variable operating costs equal 39.4% of recognized revenue "
-                    "in this illustration. Therefore Month 3 variable costs are $16,416.67 "
-                    "and total costs are $22,916.67, leaving $18,750 owner profit. "
-                    "The Base team remains one full-time owner plus three contractors; "
-                    "contractor costs are included rather than hidden outside the margin. "
-                    "The $500,000 annual revenue and $275,000 annual cost targets imply "
-                    "$225,000 profit at 45.0%. Month 3 is a replenished operating pace, "
-                    "not contracted recurring revenue or a claim that the ramp quarter "
-                    "already earned one quarter of the annual target."
-                ),
-                (
-                    "Cash conversion determines the safe distribution, not the revenue "
-                    "dashboard. Month 1 collects $6,000 and carries $4,000 receivables. "
-                    "Month 2 collects that $4,000 plus $18,000 of current fees, ending "
-                    "with $7,000 receivables. Month 3 collects the $7,000 opening balance "
-                    "plus $31,666.67 current fees, leaving $10,000 receivables. Quarter "
-                    "collections total $66,666.67 against $49,706.67 paid operating costs, "
-                    "so cumulative operating cash generation is $16,960. Quarter recognized "
-                    "revenue of $76,666.67 less those costs produces $26,960 owner profit; "
-                    "the $10,000 difference is closing receivables. Add the initial "
-                    "$20,000 capital to obtain $36,960 closing unrestricted cash before "
-                    "owner distributions. Restricted customer funds, if any, sit outside "
-                    "that number. For annual reconciliation, use exact annual targets "
-                    "rather than multiplying rounded monthly displays: eight revenue "
-                    "months at $41,666.67 and four at $41,666.66 total $500,000. "
-                    "Apply the corresponding cent allocation to annual costs to preserve "
-                    "$225,000 profit. Conservative remains $100,000 revenue, $68,000 costs, "
-                    "and $32,000 profit; Scaled remains $900,000 revenue, $378,000 costs, "
-                    "and $522,000 profit. None of these scenarios counts customer software "
-                    "spend as operator revenue or reuses the same rebate twice."
-                ),
-            ],
-            "table": {
-                "caption": "Worked 90-Day Cohort Walk",
-                "headers": [
-                    "Cohort stage and qualified-deal movement",
-                    "Recognized retained revenue and exact unit bridge",
-                    "Collections, scrubs, and closing receivable exposure",
-                    "Paid operating costs and cumulative cash movement",
-                ],
-                "rows": [
-                    [
-                        "Month 1 sourcing produces 120 signals, 60 replies, 24 discoveries, and 12 qualified opportunities",
-                        "Ten activations comprise six reseller accounts, two residual accounts, one rebate, and one audit",
-                        "Two opportunities scrub before commitment: one lacks authority and one lacks protected funding",
-                        "Fixed overhead is $6,500; variable work costs $3,940 despite rejected opportunities",
-                    ],
-                    [
-                        "Month 1 settlement establishes the first $4,000 monthly recurring contribution book",
-                        "Six times $500 plus two times $500 plus $1,000 plus $5,000 equals $10,000",
-                        "Collect $6,000 of current fees; closing receivables equal $4,000 with zero realized defaults",
-                        "Pay $10,440; monthly cash change is negative $4,440; ending cash equals $15,560",
-                    ],
-                    [
-                        "Month 2 sourcing produces 180 signals, 90 replies, 36 discoveries, and 18 qualified opportunities",
-                        "Fifteen activations comprise eight reseller accounts, three residual accounts, two rebates, and two audits",
-                        "Three opportunities scrub before ordering: two lack savings and one has incompatible renewal timing",
-                        "Fixed overhead remains $6,500; variable costs rise to $9,850 with additional delivery work",
-                    ],
-                    [
-                        "Month 2 settlement carries forward every eligible Month 1 recurring account",
-                        "New revenue of $21,000 plus $4,000 recurring contribution equals $25,000 recognized revenue",
-                        "Collect $4,000 prior receivables plus $18,000 current fees; closing receivables equal $7,000",
-                        "Pay $16,350; monthly cash increases $5,650; cumulative operating cash reaches $1,210",
-                    ],
-                    [
-                        "Month 3 sourcing produces 240 signals, 120 replies, 48 discoveries, and 24 qualified opportunities",
-                        "Twenty activations comprise ten reseller accounts, four residual accounts, three rebates, and three audits",
-                        "Four opportunities scrub before ordering: two fail funding and two fail permitted transfer conditions",
-                        "Fixed overhead remains $6,500; variable costs reach $16,416.67 across the Base delivery mix",
-                    ],
-                    [
-                        "Month 3 settlement reaches the replenished Base monthly pace without assuming perpetual audit fees",
-                        "New $30,166.67 plus inherited recurring $11,500 equals $41,666.67 revenue and $18,750 profit",
-                        "Collect $7,000 prior fees plus $31,666.67 current fees; closing receivables equal $10,000",
-                        "Pay $22,916.67; monthly cash increases $15,750; cumulative operating cash reaches $16,960",
-                    ],
-                    [
-                        "Ninety-day close totals 54 qualified opportunities, nine scrubs, and 45 activated customer engagements",
-                        "Quarter revenue equals $76,666.67; quarter costs equal $49,706.67; owner profit equals $26,960",
-                        "Quarter collections equal $66,666.67; profit less cash generation equals $10,000 closing receivables",
-                        "Opening $20,000 capital plus $16,960 cash generation equals $36,960 before owner distributions",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A discount becomes an operating business only when authority, commitment exposure, retained revenue, and collected cash reconcile to the same deal.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Create a customer-authorized intake packet with tenant identity, renewal deadline, matched-SKU baseline, and stable source reference.",
-        "Configure high_velocity_dm_outbound_systems around user-initiated signals, one assigned inbox, shared suppression, and links only after a prospect reply.",
-        "Verify the exact CSP, VIP, master-agent, or GPO rights and protect the full remaining commitment before supplier submission.",
-        "Extract the six reference modules, initialize a local test database, run the supplied QA suite, and add adapter-specific interruption tests.",
-        "Reconcile supplier statements, retained-fee invoices, bank receipts, client-funds liabilities, and period-specific source references every business day.",
-        "Track the ninety-day cohort separately from annualized pace, preserving the $500,000 revenue, $275,000 cost, and $225,000 Base profit reconciliation.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Evaluate telephone and text acquisition methods by technology, recipient, message purpose, and applicable permission requirements rather than assuming business outreach is categorically exempt.",
-        },
-        {
-            "title": "47 CFR § 64.1200 — Delivery restrictions and telephone solicitation rules",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": "Implement channel-specific calling controls, suppression handling, and applicable consent requirements before routing warm prospects into telephone or text follow-up.",
-        },
-        {
-            "title": "16 CFR § 310.3 — Deceptive telemarketing acts or practices",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310/section-310.3",
-            "relevance": "Support savings representations, material service comparisons, fee terms, and commercial affiliations with evidence; specified deceptive practices also apply to business-to-business telemarketing.",
-        },
-        {
-            "title": "16 CFR § 310.6 — Telemarketing Sales Rule exemptions",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310/section-310.6",
-            "relevance": "Read the business-to-business exemption together with its exceptions instead of treating a business recipient as a blanket exemption from all telemarketing requirements.",
-        },
-        {
-            "title": "15 U.S.C. § 7001 — Electronic signatures in global and national commerce",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7001",
-            "relevance": "Preserve reproducible electronic agreements and signature evidence; electronic execution does not replace verification of signer authority or required substantive contract terms.",
-        },
-    ],
-}
+CHAPTER_7 = {'id': 'Q7',
+ 'chapter_id': 'Q7',
+ 'chapter_number': 7,
+ 'question_number': 7,
+ 'slug': 'gpo-pooled-buying-power-discounts',
+ 'question_prompt': 'What is a group purchasing organization, how does it make money, and when does '
+                    'joining one actually beat negotiating on your own?',
+ 'kicker': 'Q7 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Group Purchasing Organizations: How Pooled Buying Power Creates Discounts',
+ 'subtitle': 'GPO definitions and revenue models (admin fees), healthcare and PBM GPOs, GPO contracts and '
+             'value analysis, the limits for small med-device suppliers, member lock-in and involvement, '
+             'evaluating savings against solo negotiation, and OMNIA Partners cooperative purchasing for '
+             'public agencies and universities',
+ 'layout_template': 'thirty_day_roadmap',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators across healthcare, private-sector, and public-sector GPOs agree on one '
+                      'engine: pool member volume, negotiate tiered pricing nobody could win alone, and '
+                      'get paid by suppliers. Una pitches free membership funded by a small slice of the '
+                      'supplier admin fee, with food savings averaging 18 to 22 percent; Educationleaves '
+                      'cites 20 to 25 percent average savings. Eric Bricker pegs the supplier-paid admin '
+                      'fee at 1.5 to 3 percent of sales and calls it a commission, while Mark Copeland '
+                      'calls the 3 percent the vig. Angelique Beslic breaks down the contract levers: '
+                      'binding letters of commitment at 70 to 90 percent compliance, flexible letters of '
+                      'participation, clinically documented carve-outs, and a 10 to 20 percent sandbox. '
+                      'The split: Una and OMNIA sell second-generation value, while PBM Insider, Beslic, '
+                      'and Copeland warn the fee stream makes the middleman the real winner.',
+ 'key_metrics': [{'label': 'Supplier-paid GPO administrative fee',
+                  'metric': 'Supplier-paid GPO administrative fee',
+                  'value': 'About 1.5 to 3 percent of manufacturer sales to member hospitals',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Eric Bricker describes the fee manufacturers pay hospital GPOs as a percent '
+                             'of what they sell, noting it sounds like a commission built to incentivize '
+                             'sales.',
+                  'source': 'AHealthcareZ - Healthcare Finance Explained ([N0B0bUjLrUE @ 00:01:05])'},
+                 {'label': 'Average food-category savings through Una',
+                  'metric': 'Average food-category savings through Una',
+                  'value': '18 to 22 percent',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Una's food category lead reports average double-digit savings plus long-term "
+                             'price protection, with member-specific numbers set on the onboarding call.',
+                  'source': 'Una ([vXeviFgIR1I @ 00:00:24])'},
+                 {'label': 'PBM-affiliated GPO fees collected in 2022',
+                  'metric': 'PBM-affiliated GPO fees collected in 2022',
+                  'value': '$7.6 billion',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Jim Lodge reports GPOs set up by PBM parent companies pocketed this in fees '
+                             'while most rebates were being returned to plan sponsors.',
+                  'source': 'PBM Insider ([uyVsmq0w3FM @ 00:01:24])'},
+                 {'label': 'Typical GPO commitment compliance band',
+                  'metric': 'Typical GPO commitment compliance band',
+                  'value': '80 to 90 percent compliance, leaving 10 to 20 percent wiggle room',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Angelique Beslic explains most commitment contracts demand this compliance '
+                             'level, with the uncommitted remainder usable as an innovation sandbox.',
+                  'source': 'Healthcare Supply Chain Hub: Angelique W. Beslic ([K2Slgt-y1wo @ 00:03:39])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['The base mechanic is identical across every operator: a GPO aggregates the '
+                              'purchase volume of many members so each one buys at a price tier it could '
+                              'never reach alone. Una frames it as tapping billions in pooled buying power '
+                              'to land volume discounts members can never get on their own, then stresses '
+                              'the kicker that matters to a CFO: the price breaks arrive without the '
+                              'member spending more money [wRrnU1fw7P0 @ 00:00:24]. Educationleaves '
+                              'repeats the same pitch nearly word for word, adding that group sourcing '
+                              'motivates suppliers to hand members discounted pricing and that businesses '
+                              'save 20 to 25 percent on average across products and services [Nx4UI5uowcw '
+                              '@ 00:01:04]. Hospital Supply Chain Education ties the leverage to '
+                              'headcount, saying a GPO wins volume discounts, bulk pricing, and favorable '
+                              'terms because it represents a large number of hospitals and providers '
+                              '[f5FL9qjTeE0 @ 00:00:59]. MT Purchasing adds the compounding effect: every '
+                              'new member raises collective buying power, letting the GPO constantly '
+                              'renegotiate supplier contracts and push better pricing back to members '
+                              '[e9uItyw_9cI @ 00:00:45]. The operator takeaway is simple: the asset being '
+                              'sold is aggregated volume, and the price a member gets is a function of the '
+                              'whole pool, not its own order size or negotiating skill.',
+                              'Practitioners also agree on who funds the machine: in most models the '
+                              'supplier pays, not the member who captures the discount. Una runs free '
+                              'membership with no commitments or exclusivities, explaining that built-in '
+                              'arrangements let supplier partners make money, deliver healthy double-digit '
+                              'value to members, and route a very small percentage of the admin fee back '
+                              'to Una [wRrnU1fw7P0 @ 00:01:10]. Eric Bricker of AHealthcareZ puts a number '
+                              'on that supplier-side payment in hospitals: roughly 1.5 to 3 percent of '
+                              'what manufacturers sell to member hospitals, labeled an administrative fee '
+                              "even though, in Bricker's words, it kind of sounds like a commission, with "
+                              'hospitals also paying membership dues to belong to Premier or Vizient '
+                              '[N0B0bUjLrUE @ 00:01:05]. Educationleaves lays out the full menu operators '
+                              'will meet in the market: administrative fees paid by vendors, participation '
+                              'fees paid by buying members, or both, set either as a percentage of '
+                              'purchases or as an annual flat rate [Nx4UI5uowcw @ 00:01:25]. MT Purchasing '
+                              'closes its pitch the same way Una does, offering membership for free with '
+                              'no commitments or purchasing requirements for any business that joins '
+                              '[e9uItyw_9cI @ 00:02:26]. The baseline expectation in the private-sector '
+                              'pitches: members rarely write a check, and supplier margin bankrolls the '
+                              'GPO.',
+                              'The third point of agreement is that the discount is only half the product; '
+                              'the other half is reclaimed procurement time without surrendering control. '
+                              'OMNIA Partners argues that plugging in a prevetted, benchmarked agreement '
+                              'lets a team skip sourcing the category, move resources to the next one, and '
+                              'accomplish twice as much in the same time with the same headcount, '
+                              'bypassing in some cases hundreds of hours of sourcing work [iaBVYfYH_ro @ '
+                              "00:00:52]. Una's team insists no GPO locks a member in: the buyer decides "
+                              'whether to run a single contract in one category or hand over the entire AP '
+                              'file and category stack for review [pKhFVbBzkz4 @ 00:00:01]. Una also kills '
+                              'the misconception that everything funnels through the GPO, telling members '
+                              'they keep owning the supplier relationship and every touch point while Una '
+                              'activates pricing on the back end [wRrnU1fw7P0 @ 00:01:49]. Intalere makes '
+                              'the same promise from the healthcare side, stating that GPOs do not sell '
+                              "products themselves and simply work with a member's current suppliers to "
+                              'get the lowest possible prices on items already being purchased '
+                              '[qlmtp85_1-Q @ 00:00:22]. The consensus prerequisite is that the member '
+                              'still has to show up, pick categories, and activate contracts; Intalere '
+                              'puts it bluntly: the more you connect with the GPO, the more you save.'],
+               'table': {'caption': 'Where GPO practitioners line up on the core business model',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Reports',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Pooled volume drives the price breaks',
+                                   'Members tap collective buying power for volume discounts without '
+                                   'actually spending more money',
+                                   'Your price is set by the whole pool, not your own order size',
+                                   'Una ([wRrnU1fw7P0 @ 00:00:24])'],
+                                  ['Average savings land in double digits',
+                                   'Group sourcing pushes suppliers to discount, with businesses saving 20 '
+                                   'to 25 percent on average',
+                                   'Benchmark every GPO offer against a double-digit savings expectation '
+                                   'before signing',
+                                   'Educationleaves ([Nx4UI5uowcw @ 00:01:04])'],
+                                  ['Suppliers usually fund the GPO',
+                                   'Free membership with a very small percentage of the supplier admin fee '
+                                   'returning to Una',
+                                   'Expect no member fee in the private-sector models these operators '
+                                   'pitch',
+                                   'Una ([wRrnU1fw7P0 @ 00:01:10])'],
+                                  ['Hospital GPO fee is a percentage of sales',
+                                   'Manufacturers pay roughly 1.5 to 3 percent of sales, which Bricker '
+                                   'says sounds like a commission',
+                                   'The GPO earns more when suppliers sell more total volume to members',
+                                   'AHealthcareZ - Healthcare Finance Explained ([N0B0bUjLrUE @ '
+                                   '00:01:05])'],
+                                  ['Prevetted agreements free up sourcing hours',
+                                   'Plug in a benchmarked agreement and move resources to the next '
+                                   'category to accomplish twice as much',
+                                   'Use GPO contracts on categories your team lacks the bandwidth to '
+                                   'source',
+                                   'OMNIA Partners ([iaBVYfYH_ro @ 00:00:52])'],
+                                  ['No lock-in and full member autonomy',
+                                   'Members can run one contract in one category or review the entire AP '
+                                   'file and category stack',
+                                   'Start narrow with a single category and expand only when value shows '
+                                   'up',
+                                   'Una ([pKhFVbBzkz4 @ 00:00:01])'],
+                                  ['Growing membership compounds the leverage',
+                                   'Each new member raises collective buying power so the GPO keeps '
+                                   'renegotiating supplier contracts',
+                                   'A bigger pool gives the GPO more ammunition at every renegotiation '
+                                   'cycle',
+                                   'MT Purchasing ([e9uItyw_9cI @ 00:00:45])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The money flows on a percentage-of-sales rail, and the numbers line up '
+                              'across buyer and seller accounts. Bricker pegs the hospital GPO take at '
+                              'about 1.5 to 3 percent of manufacturer sales, and points out the structural '
+                              'tension: the GPO negotiates prices down while the same manufacturer pays it '
+                              'a cut of everything sold, and commission structures exist to incentivize '
+                              'sales [N0B0bUjLrUE @ 00:01:24]. Mark Copeland, who still sells medical '
+                              'devices and calls the fee the vig, runs the vendor-side math: sell a '
+                              'product to a hospital for $100 while on contract and you owe the GPO $3, '
+                              'and GPOs chase large spends because 3 percent of $100,000 is $3,000 '
+                              '[0F5PDJ2Sxds @ 00:04:55]. Copeland adds the hidden labor: vendors must keep '
+                              'track of sales tracings, submit them to the GPO, and manage the contract '
+                              'paperwork, a process Copeland calls a nightmare [0F5PDJ2Sxds @ 00:04:40]. '
+                              'Una describes the same rail from the member side, with suppliers funding '
+                              'double-digit member value and a very small share of the admin fee flowing '
+                              'back to the GPO [wRrnU1fw7P0 @ 00:01:10]. For an operator sizing a GPO '
+                              'play, the unit economics are blunt: revenue scales with throughput, which '
+                              'is why Copeland says GPOs are really good for gloves, cleaning supplies, '
+                              'and other commodities.',
+                              'On the member side, the pitch and the paperwork are where the discount '
+                              'actually gets locked in. Una CEO Anthony opens skeptical buyers with a '
+                              'spend comparison: Anthony asks a procurement officer, CFO, or controller '
+                              'how much they run through office supplies, then contrasts a buyer doing a '
+                              'million against Una doing 200 million in the category, and lets that gap '
+                              'set the stage [N9511Ln5CfE @ 00:08:26]. Angelique Beslic then breaks down '
+                              'the two activation instruments in healthcare. A letter of commitment is a '
+                              'signed, binding, system-level agreement committing 70, 80, or 90 percent of '
+                              'category spend to a supplier in exchange for top-tier pricing and rebates, '
+                              'with contract-dictated penalties if compliance slips [K2Slgt-y1wo @ '
+                              '00:13:40]. A letter of participation is a click-to-activate option in the '
+                              'GPO dashboard that can run by department or affiliate, with the tier '
+                              'assigned from the monthly spend reports the member already sends '
+                              "[K2Slgt-y1wo @ 00:14:42]. Carve-outs are a separate lever: in Beslic's "
+                              'Ethicon illustration, an 80 percent suture and endomechanical commitment '
+                              'can slip to 78 percent because a clinically proven bariatric exception, '
+                              'tested and accepted by the vendor, accounts for the other 2 percent '
+                              '[K2Slgt-y1wo @ 00:17:45]. Beslic stresses carve-outs are documented '
+                              'exceptions, not the leftover non-commitment percentage.',
+                              'The final mechanics cover the 10 to 20 percent left outside commitment and '
+                              'how buyers squeeze it. Beslic tells members to hold compliance at 80, 80.5, '
+                              'or 81 percent rather than hovering at 78 or 79 without a carve-out, then '
+                              'route the uncommitted slice into trials, secondary suppliers, and '
+                              'third-party overstock resellers such as Surgery Shop, Surgery Stuff, Palm '
+                              'Harbor, and Omni Channel, which sell surplus hospital allocation below GPO '
+                              'tier pricing [K2Slgt-y1wo @ 00:22:06]. Beslic also pushes members to stack '
+                              'Vizient-style impact standardization rebates on top of ordinary vendor '
+                              'rebates [K2Slgt-y1wo @ 00:24:25]. Una runs its own trial mechanic: no '
+                              'long-term commitment, a handful of categories, and a 3 to 6 month test '
+                              'where the GPO has to prove itself every day [N9511Ln5CfE @ 00:05:56]. On '
+                              'the higher-ed side, Gonzaga purchasing manager Madison Seipel describes the '
+                              'Opus e-procurement tool through OMNIA Partners, where staff search multiple '
+                              'suppliers at once and pay the contract price with a P-card, which Seipel '
+                              'says gets products to campus faster [fdEV8yBr5eM @ 00:02:16]. Seipel adds '
+                              'that Opus surfaces contracts the university is not yet connected to, so '
+                              'staff can flag a product and have purchasing connect the contract. The '
+                              'pattern across every model: the contract only pays if someone actively '
+                              'activates, tracks, and fills the available tiers.'],
+               'table': {'caption': 'GPO street mechanics, numbers, and tools as practitioners run them',
+                         'headers': ['Mechanic', 'Number or Tool', 'How It Runs', 'Expert Source'],
+                         'rows': [['Supplier-side administrative fee on hospital sales',
+                                   'Roughly 1.5 to 3 percent of manufacturer sales',
+                                   'Manufacturer pays the GPO a percent of everything it sells to member '
+                                   'hospitals',
+                                   'AHealthcareZ - Healthcare Finance Explained ([N0B0bUjLrUE @ '
+                                   '00:01:24])'],
+                                  ['Vendor fee math once a product is on contract',
+                                   '3 percent: $3 on a $100 sale, $3,000 on $100,000',
+                                   'Vendor owes the GPO the vig and must track and submit sales tracings',
+                                   'Value Analysis Expert ([0F5PDJ2Sxds @ 00:04:55])'],
+                                  ['Letter of commitment for top-tier pricing',
+                                   '70, 80, or 90 percent of category spend committed in writing',
+                                   'Signed binding system-level deal unlocking top-tier pricing and '
+                                   'rebates, with penalties below commitment',
+                                   'Healthcare Supply Chain Hub: Angelique W. Beslic ([K2Slgt-y1wo @ '
+                                   '00:13:40])'],
+                                  ['Letter of participation for flexible access',
+                                   'Click-to-activate inside the GPO member dashboard',
+                                   'Runs by department or affiliate, with tier assigned from monthly spend '
+                                   'reports sent to the GPO',
+                                   'Healthcare Supply Chain Hub: Angelique W. Beslic ([K2Slgt-y1wo @ '
+                                   '00:14:42])'],
+                                  ['Clinically justified carve-out from a commitment',
+                                   '80 percent commitment allowed to slip to 78 percent',
+                                   'Vendor accepts a proven exception such as bariatric cases as 2 percent '
+                                   'outside the commitment',
+                                   'Healthcare Supply Chain Hub: Angelique W. Beslic ([K2Slgt-y1wo @ '
+                                   '00:17:45])'],
+                                  ['Food category savings through a horizontal GPO',
+                                   '18 to 22 percent average savings on food',
+                                   'Member-specific numbers confirmed on the onboarding call after '
+                                   'reviewing purchase data',
+                                   'Una ([vXeviFgIR1I @ 00:00:24])'],
+                                  ['Network scale and contract catalog size',
+                                   '100,000-plus members with access to more than 1,400 contracts',
+                                   'New members immediately tap that buying power on supplies, equipment, '
+                                   'pharmaceuticals, and telehealth',
+                                   'Intalere ([qlmtp85_1-Q @ 00:00:39])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Where operators squeeze extra value out of a GPO',
+                           'body': 'The highest-leverage moves are verification and activation: confirm '
+                                   'your tier, defend your compliance band, offload tail spend, and hunt '
+                                   'contracts you are not yet connected to.',
+                           'items': ['Have your decision support or informatics analyst verify the spend '
+                                     'reports you send the GPO so you are signed up for the tier you '
+                                     'actually qualify for, then raise any gap with your GPO account '
+                                     'executive [Healthcare Supply Chain Hub: Angelique W. Beslic — '
+                                     'K2Slgt-y1wo @ 00:15:02].',
+                                     'Run committed categories at 80, 80.5, or 81 percent instead of '
+                                     'hovering near 78 or 79 without a carve-out, to avoid compliance risk '
+                                     'and rebate loss [Healthcare Supply Chain Hub: Angelique W. Beslic — '
+                                     'K2Slgt-y1wo @ 00:21:44].',
+                                     'Hand the GPO your tail spend and the non-strategic categories that '
+                                     'quietly add up, and keep your own time on strategic spend the GPO '
+                                     'typically cannot help with [Una — pKhFVbBzkz4 @ 00:02:32].',
+                                     'Use the Opus search to spot suppliers and contracts you are not yet '
+                                     'connected to, then ping the OMNIA team or your purchasing team to '
+                                     'get the contract connected [OMNIA Partners — fdEV8yBr5eM @ '
+                                     '00:02:47].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Map your GPO landscape',
+                              'action': 'Calculate what percentage of your contracts sit on GPO paper '
+                                        'versus local paper.',
+                              'detail': 'Beslic says every buyer should know that split, decide whether '
+                                        'the GPO is the foundational strategic partner, and check '
+                                        'membership in aggregate pharmacy, lab, or med-surg groups chasing '
+                                        'deeper savings [Healthcare Supply Chain Hub: Angelique W. Beslic '
+                                        '— K2Slgt-y1wo @ 00:25:25].'},
+                             {'step': 2,
+                              'title': 'Build a category recipe and trial it',
+                              'action': 'Shortlist categories that fit, such as office supplies, shipping, '
+                                        'or hotel travel, and test a few.',
+                              'detail': 'Anthony at Una pushes a dietitian approach over a butcher '
+                                        'approach, building a plan around categories that fit, then '
+                                        'testing a few categories for 3 to 6 months with no long-term '
+                                        'commitment [Una — N9511Ln5CfE @ 00:05:56].'},
+                             {'step': 3,
+                              'title': 'Choose LOC or LOP per category',
+                              'action': 'Run scenario analyses on letters of commitment versus letters of '
+                                        'participation.',
+                              'detail': 'Beslic tells buyers to spot-check product categories to see '
+                                        'whether LOPs are leaving tier savings on the table because no '
+                                        'commitment was signed [Healthcare Supply Chain Hub: Angelique W. '
+                                        'Beslic — K2Slgt-y1wo @ 00:27:04].'},
+                             {'step': 4,
+                              'title': 'Track compliance, rebates, and admin fees monthly',
+                              'action': 'Build compliance and rebate trackers in Power BI or Tableau and '
+                                        'review them with suppliers and the GPO account executive.',
+                              'detail': 'Beslic and guest Heidi warn that volumes get misreported and that '
+                                        'GPOs sometimes show a member not even participating in a '
+                                        'contract, so check rebates and admin fees with the account '
+                                        'executive on a regular cadence [Healthcare Supply Chain Hub: '
+                                        'Angelique W. Beslic — K2Slgt-y1wo @ 00:30:31].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over who actually pays for the discount. Una pitches '
+                              'membership as completely free, with no commitments or exclusivities, and '
+                              'says the supplier arrangement is built so the vendor still makes money, the '
+                              'member gets a healthy double-digit value, and a very small percentage of '
+                              'the admin fee flows back to Una [wRrnU1fw7P0 @ 00:00:47]. Intalere runs the '
+                              'same free-membership pitch, telling members the more they connect with the '
+                              'GPO, the more they save, across 1,400-plus contracts [qlmtp85_1-Q @ '
+                              '00:01:02]. Dr. Eric Bricker of AHealthcareZ describes a different '
+                              'hospital-side reality: manufacturers pay Premier and Vizient roughly a 1.5 '
+                              'to 3 percent admin fee on what they sell, and hospitals still pay '
+                              'membership dues on top to be in the group [N0B0bUjLrUE @ 00:01:59]. '
+                              'Educationleaves lays out the three revenue models side by side: some GPOs '
+                              'collect administrative fees from the vendors they oversee, some collect '
+                              'participation fees from the buying members, and some do both, set either as '
+                              'a percentage of purchases or as an annual flat rate [Nx4UI5uowcw @ '
+                              '00:01:25]. For an operator, the takeaway is that free to the member does '
+                              'not mean free in the chain; the fee rides inside the supplier deal, and the '
+                              "member's job is to confirm the net price still beats what they could get "
+                              'alone.',
+                              'A second camp questions whether large buyers need the middleman at all. '
+                              'Bricker points to UPMC, which runs its own analytics AI company to scan '
+                              'every contract and flag which GPO arrangements are worth using and which '
+                              "they frankly shouldn't use, and to Intermountain Healthcare, which used to "
+                              'own a GPO, sold it, and decided to just do it themselves [N0B0bUjLrUE @ '
+                              '00:06:33]. Mark Copeland, the Value Analysis Expert, argues the ground has '
+                              "shifted under the GPO's feet: HCA started HealthTrust as its own GPO and "
+                              'licensed it out, but the typical health system now runs eight to 12 '
+                              'hospitals plus three or four surgery centers and no longer needs that heft '
+                              '[0F5PDJ2Sxds @ 00:03:08]. Jim Lodge, the PBM Insider, goes further on the '
+                              'pharmacy side, saying plan sponsors are likely better off if their PBM '
+                              'avoids GPOs altogether and contracts directly with manufacturers, adding '
+                              'that nobody is probably going to tell you that [uyVsmq0w3FM @ 00:02:25]. '
+                              'Angelique W. Beslic refuses to pick a side but tells buyers to keep asking '
+                              'whether they even need a GPO, noting that some health systems and some '
+                              'suppliers are already dropping out of the GPO game [K2Slgt-y1wo @ '
+                              '00:28:25]. Copeland adds that hospitals routinely tell vendors they can '
+                              'beat the GPO price with local pricing anyway.',
+                              'The third fault line is how much engagement and commitment the GPO model '
+                              'should demand. Insight Sourcing Group says many GPOs take a fit and forget '
+                              'it approach, leaning on suppliers to drive implementation, and its data '
+                              'shows that produces lower compliance rates and a rising risk of pricing '
+                              'inaccuracies, leaving procurement reporting savings it cannot back with '
+                              'financial results [h348wGhEx-8 @ 00:01:06]. OMNIA Partners pitches the '
+                              'opposite: it does not stop once a contract is adopted, and its team keeps '
+                              'pushing members into new contracts to drive second generation savings '
+                              '[iaBVYfYH_ro @ 00:03:31]. Anthony, president and CEO of Una, frames the '
+                              'choice as butcher versus dietitian, where the butcher just wants to sell '
+                              'you meat and close the contract, while the dietitian builds an a la carte '
+                              'recipe category by category, then tests a few categories for three to six '
+                              'months with no long-term commitment [N9511Ln5CfE @ 00:04:14]. Beslic shows '
+                              'the commitment trade-off is real money: a letter of commitment is binding '
+                              'at the system level and unlocks top-tier pricing and rebates at 70, 80, or '
+                              '90 percent of spend, while a letter of participation is a dashboard click '
+                              'that is flexible but only pays the tier your reported spend qualifies for '
+                              '[K2Slgt-y1wo @ 00:13:40].'],
+               'table': {'caption': 'Competing GPO playbooks: where named practitioners split on fees, '
+                                    'commitment, and whether to use a GPO at all',
+                         'headers': ['Contested Issue', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Who funds the discount and the GPO margin',
+                                   'Free membership with no commitments; a small slice of the supplier '
+                                   'admin fee returns to Una',
+                                   'Manufacturers pay a 1.5 to 3 percent admin fee and hospitals also pay '
+                                   'membership dues',
+                                   'Una ([wRrnU1fw7P0 @ 00:00:47]); AHealthcareZ - Healthcare Finance '
+                                   'Explained ([N0B0bUjLrUE @ 00:01:24])'],
+                                  ['Large health systems keeping or dropping the GPO middleman',
+                                   'UPMC runs its own AI analytics company to grade which GPO arrangements '
+                                   'to use',
+                                   'Intermountain owned a GPO, sold it, and now contracts on its own '
+                                   'without an external GPO',
+                                   'AHealthcareZ - Healthcare Finance Explained ([N0B0bUjLrUE @ '
+                                   '00:06:33])'],
+                                  ['Pharmacy benefit GPOs versus direct manufacturer contracting by the '
+                                   'PBM',
+                                   'PBM-owned GPOs aggregate contracted wholesale price and negotiate '
+                                   'back-end rebates in bulk',
+                                   'Plan sponsors likely better off if the PBM skips GPOs and contracts '
+                                   'directly with manufacturers',
+                                   'PBM Insider ([uyVsmq0w3FM @ 00:01:03]); PBM Insider ([uyVsmq0w3FM @ '
+                                   '00:02:25])'],
+                                  ['Small innovative device sellers joining a hospital GPO contract',
+                                   'GPOs improve market access for smaller and mid-size suppliers trying '
+                                   'to get their name out',
+                                   'GPO listing brings a 3 percent fee, tracing nightmare, commodity '
+                                   'label, and still no approval',
+                                   'Healthcare Supply Chain Hub: Angelique W. Beslic ([K2Slgt-y1wo @ '
+                                   '00:08:45]); Value Analysis Expert ([0F5PDJ2Sxds @ 00:04:22])'],
+                                  ['Post-signing engagement model after the contract goes live',
+                                   'Fit and forget: suppliers drive implementation, compliance drops, and '
+                                   'pricing inaccuracies creep in',
+                                   'High touch: the GPO team keeps pushing adoption of new contracts for '
+                                   'second generation savings',
+                                   'Insight Sourcing Group ([h348wGhEx-8 @ 00:01:06]); OMNIA Partners '
+                                   '([iaBVYfYH_ro @ 00:03:31])'],
+                                  ['Commitment level the member signs to reach pricing tiers',
+                                   'Letter of commitment: binding system-level 70 to 90 percent of spend '
+                                   'for top-tier pricing and rebates',
+                                   'Letter of participation or no-commitment model: activate by department '
+                                   'or test categories for 3 to 6 months',
+                                   'Healthcare Supply Chain Hub: Angelique W. Beslic ([K2Slgt-y1wo @ '
+                                   '00:13:40]); Una ([N9511Ln5CfE @ 00:05:56])'],
+                                  ['Vertical versus horizontal GPO coverage of the spend file',
+                                   'Vertical GPOs serve one segment such as healthcare, hospitality, '
+                                   'dental, or veterinary buyers',
+                                   'Horizontal GPOs span all markets, mostly indirect spend like office '
+                                   'supplies, shipping, and hotels',
+                                   'Educationleaves ([Nx4UI5uowcw @ 00:02:11]); Una ([N9511Ln5CfE @ '
+                                   '00:05:03])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive trap Beslic describes is the year-end surprise: the '
+                              'vendor walks in and says you did not make the rebates last year, while your '
+                              'own figures showed 81 percent compliance, which is why every committed '
+                              'contract needs monthly compliance tracking with finance and your analyst, '
+                              'ideally in a joint monthly meeting with the supplier [K2Slgt-y1wo @ '
+                              '00:23:27]. Heidi, a guest coming from both the distributor and GPO side, '
+                              'adds that volumes sometimes do not get reported accurately, especially when '
+                              'part of the inventory is ordered direct because of a back order or '
+                              'allocation, so tier qualification has to be checked against the reports '
+                              'sent to the GPO [K2Slgt-y1wo @ 00:29:54]. Beslic has also seen the GPO '
+                              'admit it did not even show the member participating in a contract, meaning '
+                              'no rebate and no admin fees were flowing [K2Slgt-y1wo @ 00:30:31]. Insight '
+                              'Sourcing Group describes the same leak at the program level: unchecked '
+                              'compliance and pricing inaccuracies put procurement professionals in a '
+                              'tight spot where they have reported against savings targets but may not '
+                              'have the financial results to support it [h348wGhEx-8 @ 00:01:21]. The '
+                              'economics check is simple: savings not reconciled monthly against the GPO '
+                              'spend reports are savings on paper only.',
+                              'On the supplier side, Mark Copeland calls the GPO listing a trap for small '
+                              'innovative med device sellers. Getting on a contract usually means a 3 '
+                              'percent administrative fee, the vig, so a $100 sale owes the GPO $3, plus '
+                              'sales tracings to submit and tie contracts to manage, which Copeland calls '
+                              'a nightmare, frankly [0F5PDJ2Sxds @ 00:04:22]. Worse, listing next to '
+                              'gloves and cleaning supplies tells buyers you are a commodity, nobody at '
+                              'the GPO sells your product, and walking in with we are on your GPO still '
+                              'earns the reply that you are not approved and must go through value '
+                              'analysis, often followed by an offer of better local pricing [0F5PDJ2Sxds @ '
+                              '00:05:58]. Copeland has watched sellers show up only to hear the hospital '
+                              'switched GPOs last year and is now on Vizient [0F5PDJ2Sxds @ 00:07:33]. '
+                              'Bricker reports the structural version of the same complaint: GPOs get '
+                              'accused of pay-to-play shelf space, where manufacturers pay or offer much '
+                              'larger discounts to win placement, leaving small and newer manufacturers '
+                              'without the volume or budget to get on the shelf [N0B0bUjLrUE @ 00:05:24]. '
+                              "The net effect is that a GPO contract can raise a small seller's cost of "
+                              'sale without adding a single approval.',
+                              'The incentive trap runs through every fee model. Jim Lodge reports that '
+                              'PBM-owned GPOs pocketed 7.6 billion dollars in fees in 2022 alone, and '
+                              'because those fees are not technically rebates, PBMs can tell employers '
+                              'with a straight face that they pass through 100 percent of rebates while '
+                              'never disclosing the GPO take, booked through entities domiciled in places '
+                              'like Ireland and Switzerland [uyVsmq0w3FM @ 00:01:47]. Bricker flags the '
+                              'same misalignment in hospitals: because the GPO earns a percentage of what '
+                              'the manufacturer sells, it financially wants the manufacturer to sell as '
+                              'much as humanly possible, even if per-unit cost drops [N0B0bUjLrUE @ '
+                              "00:05:57]. Beslic's member-side trap is self-inflicted: carve-outs are not "
+                              'a free pass, and they are not the leftover percentage outside the '
+                              'commitment, and too many carve-outs equal lost leverage and weaker '
+                              'contracts, so you have to play in one field and cannot have your cake and '
+                              'eat it too [K2Slgt-y1wo @ 00:03:01]. The compliance version is hanging '
+                              'around 78 percent on an 80 percent commitment without a documented '
+                              "carve-out, which risks both contract penalties and rebate loss; Beslic's "
+                              'target is to sit at 80 to 81 percent and stay fair to the vendor '
+                              '[K2Slgt-y1wo @ 00:21:21].'],
+               'table': {'caption': 'Firsthand GPO failure modes, what practitioners saw happen, and the '
+                                    'fix they teach',
+                         'headers': ['Failure Mode',
+                                     'What Happened Or Was Measured',
+                                     'Operator Fix Taught',
+                                     'Expert Source'],
+                         'rows': [['Year-end rebate miss despite internal compliance figures',
+                                   'Vendor says the rebate was missed while internal numbers showed 81 '
+                                   'percent compliance',
+                                   'Track compliance monthly with finance and analysts and meet the '
+                                   'supplier every month',
+                                   'Healthcare Supply Chain Hub: Angelique W. Beslic ([K2Slgt-y1wo @ '
+                                   '00:23:27])'],
+                                  ['Spend volumes misreported to the GPO tier engine',
+                                   'Direct orders placed during back orders or allocation never land in '
+                                   'GPO spend reports',
+                                   'Review the spend reports sent to the GPO and validate every tier level '
+                                   'hit',
+                                   'Healthcare Supply Chain Hub: Angelique W. Beslic ([K2Slgt-y1wo @ '
+                                   '00:29:54])'],
+                                  ['Member never actually activated on the contract it assumed',
+                                   'GPO shows no participation on record, so no rebate and no admin fees '
+                                   'flow',
+                                   'Hold regular check-ins with the GPO account executive covering every '
+                                   'contract in use',
+                                   'Healthcare Supply Chain Hub: Angelique W. Beslic ([K2Slgt-y1wo @ '
+                                   '00:30:31])'],
+                                  ['Fit and forget program management by the GPO itself',
+                                   'Lower compliance rates and pricing inaccuracies, with savings reported '
+                                   'but no financial results',
+                                   'Integrate technology and human category management for trackable '
+                                   'sustainable savings',
+                                   'Insight Sourcing Group ([h348wGhEx-8 @ 00:01:21])'],
+                                  ['Small device seller pays to list on a hospital GPO',
+                                   '3 percent fee, sales tracings, commodity perception, and still not '
+                                   'approved in hospitals',
+                                   'Tell buyers you are not on their GPO and ask if that blocks doing '
+                                   'business',
+                                   'Value Analysis Expert ([0F5PDJ2Sxds @ 00:07:45])'],
+                                  ['Hidden GPO fees inside PBM rebate pass-through claims',
+                                   '7.6 billion dollars in GPO fees in 2022 never counted as rebates to '
+                                   'employers',
+                                   'Push the PBM to avoid GPOs and contract directly with the drug '
+                                   'manufacturers',
+                                   'PBM Insider ([uyVsmq0w3FM @ 00:01:24])'],
+                                  ['Commission-style admin fee misaligns the GPO with the buyer',
+                                   'GPO paid 1.5 to 3 percent of manufacturer sales wants total volume '
+                                   'pushed up',
+                                   'Run your own contract analytics like UPMC to grade which GPO '
+                                   'arrangements to keep',
+                                   'AHealthcareZ - Healthcare Finance Explained ([N0B0bUjLrUE @ '
+                                   '00:06:33])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Do not book GPO savings until these four checks pass',
+                           'body': 'Every item below comes from a loss, leak, or frustration a named '
+                                   'practitioner reported firsthand. Clear all four before counting a GPO '
+                                   'contract as savings.',
+                           'items': ['No committed contract goes live without a compliance and rebate '
+                                     'tracker built in Power BI or Tableau and checked against the '
+                                     'committed 70, 80, or 90 percent [Healthcare Supply Chain Hub: '
+                                     'Angelique W. Beslic — K2Slgt-y1wo @ 00:26:28].',
+                                     'Every carve-out carries written clinical justification inside the '
+                                     'contract, such as an enhanced addendum to the GPO contract '
+                                     '[Healthcare Supply Chain Hub: Angelique W. Beslic — K2Slgt-y1wo @ '
+                                     '00:23:09].',
+                                     'Confirm whether the GPO is paid by vendor admin fees, member '
+                                     'participation fees, or both, and whether it is a percentage or '
+                                     'annual flat rate [Educationleaves — Nx4UI5uowcw @ 00:01:25].',
+                                     'Put volume, locations, SKUs, and terms expectations on the table at '
+                                     'day one, because unmet or undiscussed expectations are the biggest '
+                                     'cause of frustration [Una — N9511Ln5CfE @ 00:07:27].']}}],
+ 'pull_quote': '"Walk in and say, hey, we\'re on your GPO and they\'ll say, great. You\'re still not '
+               'approved." Mark Copeland, Value Analysis Expert (0F5PDJ2Sxds @ 00:05:42).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Map your GPO landscape and know the exact percentage of contracts on GPO paper '
+                      'versus local paper [Healthcare Supply Chain Hub: Angelique W. Beslic — K2Slgt-y1wo '
+                      '@ 00:25:25].',
+                      'Run scenario analyses on letters of commitment versus letters of participation to '
+                      'find tiers you miss by not committing [Healthcare Supply Chain Hub: Angelique W. '
+                      'Beslic — K2Slgt-y1wo @ 00:27:04].',
+                      'Ask the GPO for every stacked rebate, including product category impact '
+                      'standardization rebates on top of vendor rebates [Healthcare Supply Chain Hub: '
+                      'Angelique W. Beslic — K2Slgt-y1wo @ 00:24:45].',
+                      'Use the 10 to 20 percent non-commitment wiggle room for trials and third-party '
+                      'overstock vendors like Surgery Shop, Palm Harbor, and Omni Channel [Healthcare '
+                      'Supply Chain Hub: Angelique W. Beslic — K2Slgt-y1wo @ 00:22:06].',
+                      'Pilot a no-commitment GPO on a few categories for 3 to 6 months and hand off '
+                      'non-strategic tail spend first [Una — N9511Ln5CfE @ 00:05:56] [Una — pKhFVbBzkz4 @ '
+                      '00:02:32].',
+                      'Route day-to-day buying through a cooperative e-procurement tool like Opus to hit '
+                      'contract price on P-cards and surface contracts you are not yet connected to [OMNIA '
+                      'Partners — fdEV8yBr5eM @ 00:02:31].'],
+ 'statutory_citations': [{'title': 'Healthcare Supply Chain Hub: Angelique W. Beslic — Demystifying GPO '
+                                   'Contracts: How Healthcare Supply Chain Unlocks Savings and Strategy '
+                                   '[00:13:40]',
+                          'url': 'https://www.youtube.com/watch?v=K2Slgt-y1wo&t=820s',
+                          'relevance': 'Primary practitioner testimony on letters of commitment, letters '
+                                       'of participation, carve-outs, and rebate compliance tracking.'},
+                         {'title': 'AHealthcareZ - Healthcare Finance Explained — Hospital Group '
+                                   'Purchasing Organizations (GPOs) Explained [00:01:24]',
+                          'url': 'https://www.youtube.com/watch?v=N0B0bUjLrUE&t=84s',
+                          'relevance': 'Primary practitioner testimony on the 1.5 to 3 percent admin fee, '
+                                       'membership dues, and GPO incentive misalignment.'},
+                         {'title': 'Value Analysis Expert — Everything You Need to Know About GPOs and '
+                                   'Value Analysis / GPOs - Sutures and Cents / S4 Ep1 [00:04:22]',
+                          'url': 'https://www.youtube.com/watch?v=0F5PDJ2Sxds&t=262s',
+                          'relevance': 'Primary practitioner testimony on the supplier-side cost of GPO '
+                                       'listing for small innovative device sellers.'},
+                         {'title': "PBM Insider — The PBM Insider - Group Purchasing Organizations (GPO's) "
+                                   '[00:01:24]',
+                          'url': 'https://www.youtube.com/watch?v=uyVsmq0w3FM&t=84s',
+                          'relevance': 'Primary practitioner testimony on PBM-owned GPO fees hidden '
+                                       'outside rebate pass-through claims.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'wRrnU1fw7P0',
+                       'title': 'GPO FAQ: Understanding Group Purchasing Organizations',
+                       'channel': 'Una',
+                       'author': 'Una',
+                       'text': 'Una is free membership; we want to make sure that the value that we show '
+                               "is in the savings, and everything is free, there's no commitments or "
+                               'exclusivities.',
+                       'tip': 'Una is free membership; we want to make sure that the value that we show is '
+                              "in the savings, and everything is free, there's no commitments or "
+                              'exclusivities.',
+                       'timestamp': 47,
+                       'timestamp_seconds': 47,
+                       'timestamp_label': '[00:00:47]',
+                       'url': 'https://www.youtube.com/watch?v=wRrnU1fw7P0&t=47s',
+                       'markdown': '[00:00:47](https://www.youtube.com/watch?v=wRrnU1fw7P0&t=47s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Nx4UI5uowcw',
+                       'title': 'What is Group Purchasing Organization (GPO)?  Explained in 3 Minutes!',
+                       'channel': 'Educationleaves',
+                       'author': 'Educationleaves',
+                       'text': 'The group purchasing method of sourcing motivates suppliers to give GPO '
+                               'members discounted pricing; on average businesses save 20 to 25 on '
+                               'products and services through group purchasing.',
+                       'tip': 'The group purchasing method of sourcing motivates suppliers to give GPO '
+                              'members discounted pricing; on average businesses save 20 to 25 on products '
+                              'and services through group purchasing.',
+                       'timestamp': 64,
+                       'timestamp_seconds': 64,
+                       'timestamp_label': '[00:01:04]',
+                       'url': 'https://www.youtube.com/watch?v=Nx4UI5uowcw&t=64s',
+                       'markdown': '[00:01:04](https://www.youtube.com/watch?v=Nx4UI5uowcw&t=64s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'N0B0bUjLrUE',
+                       'title': 'Hospital Group Purchasing Organizations (GPOs) Explained',
+                       'channel': 'AHealthcareZ - Healthcare Finance Explained',
+                       'author': 'AHealthcareZ - Healthcare Finance Explained',
+                       'text': 'They get paid about a 1.5 to 3 percent administrative fee from the '
+                               'manufacturers, and that percent is a percent of what the manufacturers '
+                               'sell to the hospitals.',
+                       'tip': 'They get paid about a 1.5 to 3 percent administrative fee from the '
+                              'manufacturers, and that percent is a percent of what the manufacturers sell '
+                              'to the hospitals.',
+                       'timestamp': 84,
+                       'timestamp_seconds': 84,
+                       'timestamp_label': '[00:01:24]',
+                       'url': 'https://www.youtube.com/watch?v=N0B0bUjLrUE&t=84s',
+                       'markdown': '[00:01:24](https://www.youtube.com/watch?v=N0B0bUjLrUE&t=84s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uyVsmq0w3FM',
+                       'title': "The PBM Insider - Group Purchasing Organizations (GPO's)",
+                       'channel': 'PBM Insider',
+                       'author': 'PBM Insider',
+                       'text': 'While most rebates were being returned to plan sponsors, these GPOs '
+                               'pocketed 7.6 billion in fees in 2022 alone.',
+                       'tip': 'While most rebates were being returned to plan sponsors, these GPOs '
+                              'pocketed 7.6 billion in fees in 2022 alone.',
+                       'timestamp': 84,
+                       'timestamp_seconds': 84,
+                       'timestamp_label': '[00:01:24]',
+                       'url': 'https://www.youtube.com/watch?v=uyVsmq0w3FM&t=84s',
+                       'markdown': '[00:01:24](https://www.youtube.com/watch?v=uyVsmq0w3FM&t=84s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iaBVYfYH_ro',
+                       'title': 'What is a Group Purchasing Organization or GPO?',
+                       'channel': 'OMNIA Partners',
+                       'author': 'OMNIA Partners',
+                       'text': "What separates us out in the space is the idea that we don't stop once a "
+                               "contract's been adopted.",
+                       'tip': "What separates us out in the space is the idea that we don't stop once a "
+                              "contract's been adopted.",
+                       'timestamp': 193,
+                       'timestamp_seconds': 193,
+                       'timestamp_label': '[00:03:13]',
+                       'url': 'https://www.youtube.com/watch?v=iaBVYfYH_ro&t=193s',
+                       'markdown': '[00:03:13](https://www.youtube.com/watch?v=iaBVYfYH_ro&t=193s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'h348wGhEx-8',
+                       'title': 'InsightGPO | Group Purchasing Programs',
+                       'channel': 'Insight Sourcing Group',
+                       'author': 'Insight Sourcing Group',
+                       'text': 'Many GPOs take a fit and forget it approach relying primarily on suppliers '
+                               'to drive implementation and program management.',
+                       'tip': 'Many GPOs take a fit and forget it approach relying primarily on suppliers '
+                              'to drive implementation and program management.',
+                       'timestamp': 66,
+                       'timestamp_seconds': 66,
+                       'timestamp_label': '[00:01:06]',
+                       'url': 'https://www.youtube.com/watch?v=h348wGhEx-8&t=66s',
+                       'markdown': '[00:01:06](https://www.youtube.com/watch?v=h348wGhEx-8&t=66s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'f5FL9qjTeE0',
+                       'title': 'What is a healthcare Group Purchasing Organization or GPO?',
+                       'channel': 'Hospital Supply Chain Education',
+                       'author': 'Hospital Supply Chain Education',
+                       'text': 'To become a member of a GPO, healthcare providers usually pay a fee or a '
+                               "percentage of the savings generated through the GPO's contracts.",
+                       'tip': 'To become a member of a GPO, healthcare providers usually pay a fee or a '
+                              "percentage of the savings generated through the GPO's contracts.",
+                       'timestamp': 112,
+                       'timestamp_seconds': 112,
+                       'timestamp_label': '[00:01:52]',
+                       'url': 'https://www.youtube.com/watch?v=f5FL9qjTeE0&t=112s',
+                       'markdown': '[00:01:52](https://www.youtube.com/watch?v=f5FL9qjTeE0&t=112s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pKhFVbBzkz4',
+                       'title': 'GPO FAQ: Exploring the Benefits of a Group Purchasing Organization',
+                       'channel': 'Una',
+                       'author': 'Una',
+                       'text': 'No, a GPO is not going to lock you in; it really is up to you as the '
+                               'member how strategic or how involved you want that GPO to be.',
+                       'tip': 'No, a GPO is not going to lock you in; it really is up to you as the member '
+                              'how strategic or how involved you want that GPO to be.',
+                       'timestamp': 1,
+                       'timestamp_seconds': 1,
+                       'timestamp_label': '[00:00:01]',
+                       'url': 'https://www.youtube.com/watch?v=pKhFVbBzkz4&t=1s',
+                       'markdown': '[00:00:01](https://www.youtube.com/watch?v=pKhFVbBzkz4&t=1s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'K2Slgt-y1wo',
+                       'title': 'Demystifying GPO Contracts: How Healthcare Supply Chain Unlocks Savings '
+                                'and Strategy',
+                       'channel': 'Healthcare Supply Chain Hub: Angelique W. Beslic',
+                       'author': 'Healthcare Supply Chain Hub: Angelique W. Beslic',
+                       'text': 'A letter of commitment is a binding system-level agreement that unlocks '
+                               "top-tier pricing and rebates, but you've got to sign it.",
+                       'tip': 'A letter of commitment is a binding system-level agreement that unlocks '
+                              "top-tier pricing and rebates, but you've got to sign it.",
+                       'timestamp': 820,
+                       'timestamp_seconds': 820,
+                       'timestamp_label': '[00:13:40]',
+                       'url': 'https://www.youtube.com/watch?v=K2Slgt-y1wo&t=820s',
+                       'markdown': '[00:13:40](https://www.youtube.com/watch?v=K2Slgt-y1wo&t=820s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'K2Slgt-y1wo',
+                       'title': 'Demystifying GPO Contracts: How Healthcare Supply Chain Unlocks Savings '
+                                'and Strategy',
+                       'channel': 'Healthcare Supply Chain Hub: Angelique W. Beslic',
+                       'author': 'Healthcare Supply Chain Hub: Angelique W. Beslic',
+                       'text': "Use that 10 or 20% as a strategic sandbox, and make sure you're tracking "
+                               'monthly your compliance with finance, with your analyst.',
+                       'tip': "Use that 10 or 20% as a strategic sandbox, and make sure you're tracking "
+                              'monthly your compliance with finance, with your analyst.',
+                       'timestamp': 1407,
+                       'timestamp_seconds': 1407,
+                       'timestamp_label': '[00:23:27]',
+                       'url': 'https://www.youtube.com/watch?v=K2Slgt-y1wo&t=1407s',
+                       'markdown': '[00:23:27](https://www.youtube.com/watch?v=K2Slgt-y1wo&t=1407s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qlmtp85_1-Q',
+                       'title': 'Who is Intalere and What is a GPO?',
+                       'channel': 'Intalere',
+                       'author': 'Intalere',
+                       'text': 'We simply work with your current suppliers to get you the lowest possible '
+                               'prices on the items you already purchase; our 100,000 plus members '
+                               'nationwide currently have access to more than 1,400 contracts.',
+                       'tip': 'We simply work with your current suppliers to get you the lowest possible '
+                              'prices on the items you already purchase; our 100,000 plus members '
+                              'nationwide currently have access to more than 1,400 contracts.',
+                       'timestamp': 39,
+                       'timestamp_seconds': 39,
+                       'timestamp_label': '[00:00:39]',
+                       'url': 'https://www.youtube.com/watch?v=qlmtp85_1-Q&t=39s',
+                       'markdown': '[00:00:39](https://www.youtube.com/watch?v=qlmtp85_1-Q&t=39s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'N9511Ln5CfE',
+                       'title': 'What Businesses Need To Know About GPOs',
+                       'channel': 'Una',
+                       'author': 'Una',
+                       'text': 'We find a few categories, and we can bring value, and we test that out for '
+                               '3-6 months; every day we have to get up and prove ourselves because we '
+                               "don't have long-term commitments.",
+                       'tip': 'We find a few categories, and we can bring value, and we test that out for '
+                              '3-6 months; every day we have to get up and prove ourselves because we '
+                              "don't have long-term commitments.",
+                       'timestamp': 356,
+                       'timestamp_seconds': 356,
+                       'timestamp_label': '[00:05:56]',
+                       'url': 'https://www.youtube.com/watch?v=N9511Ln5CfE&t=356s',
+                       'markdown': '[00:05:56](https://www.youtube.com/watch?v=N9511Ln5CfE&t=356s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'e9uItyw_9cI',
+                       'title': 'GPOs: Everything You Need To Know',
+                       'channel': 'MT Purchasing',
+                       'author': 'MT Purchasing',
+                       'text': 'A GPO creates and manages contracts for indirect supplies, items and '
+                               "services; they don't directly buy or sell any of the items or services "
+                               'themselves, instead they negotiate the rates and discounts that suppliers '
+                               'give their members.',
+                       'tip': 'A GPO creates and manages contracts for indirect supplies, items and '
+                              "services; they don't directly buy or sell any of the items or services "
+                              'themselves, instead they negotiate the rates and discounts that suppliers '
+                              'give their members.',
+                       'timestamp': 16,
+                       'timestamp_seconds': 16,
+                       'timestamp_label': '[00:00:16]',
+                       'url': 'https://www.youtube.com/watch?v=e9uItyw_9cI&t=16s',
+                       'markdown': '[00:00:16](https://www.youtube.com/watch?v=e9uItyw_9cI&t=16s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0F5PDJ2Sxds',
+                       'title': 'Everything You Need to Know About GPOs and Value Analysis / GPOs - '
+                                'Sutures and Cents / S4 Ep1',
+                       'channel': 'Value Analysis Expert',
+                       'author': 'Value Analysis Expert',
+                       'text': "We usually have to pay what's called a 3% administrative fee to the GPO; "
+                               "if I sell it to the hospital for $100 but I'm on their GPO, I now owe the "
+                               'GPO $3.',
+                       'tip': "We usually have to pay what's called a 3% administrative fee to the GPO; if "
+                              "I sell it to the hospital for $100 but I'm on their GPO, I now owe the GPO "
+                              '$3.',
+                       'timestamp': 262,
+                       'timestamp_seconds': 262,
+                       'timestamp_label': '[00:04:22]',
+                       'url': 'https://www.youtube.com/watch?v=0F5PDJ2Sxds&t=262s',
+                       'markdown': '[00:04:22](https://www.youtube.com/watch?v=0F5PDJ2Sxds&t=262s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vXeviFgIR1I',
+                       'title': "GPO FAQ: Evaluating a Group Purchasing Organization's Potential",
+                       'channel': 'Una',
+                       'author': 'Una',
+                       'text': 'With our food suppliers specifically, the true benefit is going to be '
+                               "long-term savings and long-term protection in the pricing that you're "
+                               'paying, on average between 18 to 22%.',
+                       'tip': 'With our food suppliers specifically, the true benefit is going to be '
+                              "long-term savings and long-term protection in the pricing that you're "
+                              'paying, on average between 18 to 22%.',
+                       'timestamp': 24,
+                       'timestamp_seconds': 24,
+                       'timestamp_label': '[00:00:24]',
+                       'url': 'https://www.youtube.com/watch?v=vXeviFgIR1I&t=24s',
+                       'markdown': '[00:00:24](https://www.youtube.com/watch?v=vXeviFgIR1I&t=24s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eTxETdL4Omg',
+                       'title': 'Cooperative Purchasing Provides Value to Public Agencies Through OMNIA '
+                                'Partners',
+                       'channel': 'OMNIA Partners',
+                       'author': 'OMNIA Partners',
+                       'text': 'All contracts in the OMNIA Partners portfolio have been competitively '
+                               'solicited and publicly awarded by a lead public agency.',
+                       'tip': 'All contracts in the OMNIA Partners portfolio have been competitively '
+                              'solicited and publicly awarded by a lead public agency.',
+                       'timestamp': 66,
+                       'timestamp_seconds': 66,
+                       'timestamp_label': '[00:01:06]',
+                       'url': 'https://www.youtube.com/watch?v=eTxETdL4Omg&t=66s',
+                       'markdown': '[00:01:06](https://www.youtube.com/watch?v=eTxETdL4Omg&t=66s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fdEV8yBr5eM',
+                       'title': 'How Gonzaga University Simplifies Procurement with OMNIA Partners',
+                       'channel': 'OMNIA Partners',
+                       'author': 'OMNIA Partners',
+                       'text': 'We have the ability to use our P-cards, and being able to go on and get '
+                               'that contract price and use their P-card is really valuable for our '
+                               "colleagues because it's a lot faster.",
+                       'tip': 'We have the ability to use our P-cards, and being able to go on and get '
+                              'that contract price and use their P-card is really valuable for our '
+                              "colleagues because it's a lot faster.",
+                       'timestamp': 136,
+                       'timestamp_seconds': 136,
+                       'timestamp_label': '[00:02:16]',
+                       'url': 'https://www.youtube.com/watch?v=fdEV8yBr5eM&t=136s',
+                       'markdown': '[00:02:16](https://www.youtube.com/watch?v=fdEV8yBr5eM&t=136s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'}]}

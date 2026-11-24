@@ -1,734 +1,542 @@
-from __future__ import annotations
+"""Volume 033 diagrams: Insurance Housing & Corporate Rental Arbitrage."""
 
-VOLUME_033_SUBTITLE = (
-    "The Complete Playbook for Insurance Housing & Corporate Rental Arbitrage: "
-    "$180,000–$1,400,000 USD in Annual Gross Billings with a "
-    "1 FT + 3 C (4 People) Core Pod; Six Seats at Scale"
+from typing import Any, Dict, List
+
+VOLUME_033_SUBTITLE: str = (
+    "Getting booked by ALE Solutions, CRS, and Sedgwick, pricing claim homes off "
+    "Coverage D and hotel bills, pitching landlords as a corporate housing company, "
+    "lining up demand before the lease, scaling with VAs, and locking sublease, "
+    "exit, and landlord-policy protections in writing"
 )
 
-VOLUME_033_POSITIONING_ALTERNATIVES = [
+
+def build_volume_033_diagrams_data() -> List[Dict[str, Any]]:
+    return [
+        {
+            "diagram_id": "diag-01-insurance-relocation-booking-flow",
+            "chapter_number": 1,
+            "chart_type": "process_flow",
+            "title": "Getting Booked by Insurance Relocation Companies",
+            "subtitle": "From portal listing to a signed, utility-capped agreement",
+            "caption": (
+                "Five practitioner-tested moves for landing displaced families: list "
+                "in agency portals, confirm by phone, run specialist email blasts, "
+                "let the agency name the number, and cap utilities before signing."
+            ),
+            "assumptions_note": (
+                "Figures are attributed practitioner claims. The $8,100 house versus "
+                "about $15,000 a month in hotel rooms is one family-of-seven case "
+                "reported by Jesse Vasquez, not a market average."
+            ),
+            "note": (
+                "Sources include Bailey Kramer (DFn2vbuykUY, J-7ks576i8Q), The Bougie "
+                "Baldie (PaAH8z8rPe8), Dr Chau Ong (Bbit4NDO_Hc), and Jesse Vasquez "
+                "(Ncr7TdF1G34, O1Wmu9p-zdc)."
+            ),
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "List on ALE Solutions and THD",
+                    "value": "Step 1",
+                    "detail": (
+                        "Put a realistic number on the ALE Solutions form; the listed "
+                        "price is not the price you charge and gets renegotiated after "
+                        "the match (Bailey Kramer)."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Confirm every submission by phone",
+                    "value": "Step 2",
+                    "detail": (
+                        "Call within a week, because the form gives no confirmation "
+                        "and can create duplicate entries (The Bougie Baldie)."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Email specialists on a cadence",
+                    "value": "Step 3",
+                    "detail": (
+                        "Weekly or biweekly blasts with a PS asking specialists to "
+                        "forward and a PPS offering referrals in other cities, so ten "
+                        "contacts become twenty (Bailey Kramer)."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Let the agency name the number",
+                    "value": "Step 4",
+                    "detail": (
+                        "Ask for the price range per night, never the budget (Dr Chau "
+                        "Ong). Anchor against the hotel bill, such as $8,100 a month "
+                        "versus about $15,000 in two rooms (Jesse Vasquez)."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Cap utilities before signing",
+                    "value": "Step 5",
+                    "detail": (
+                        "Write electric and water caps into the agreement and notes, "
+                        "such as the guest paying electric above $500; uncapped "
+                        "electric ran about $1,000 a month on the $8,100 house "
+                        "(Jesse Vasquez)."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-02-arbitrage-scale-ladder",
+            "chapter_number": 6,
+            "chart_type": "funnel",
+            "title": "The Arbitrage Scale Ladder",
+            "subtitle": "Peak portfolios, delegated growth, and per-building density",
+            "caption": (
+                "Reported portfolio sizes from two scaled operators, narrowing from "
+                "Humza Zafar's 450-unit peak to Richie Matthews' average of 6 units "
+                "per building."
+            ),
+            "assumptions_note": (
+                "Each stage is a separately reported operator figure, not a single "
+                "cohort converting through stages. Unit counts are attributed "
+                "practitioner claims."
+            ),
+            "note": (
+                "Humza Zafar (1D3J3ID1ZZM) reported the 450 peak and 300 trim; Richie "
+                "Matthews (VtVf0h80q0w, O4cBKKUBS64) reported 18 to 35 units in 6 "
+                "months and the $2,000 to $2,500 minimum net per property."
+            ),
+            "stages": [
+                {
+                    "label": "Peak portfolio (Humza Zafar)",
+                    "value": 450,
+                    "display": "450 units",
+                    "conversion": "Peak",
+                    "detail": (
+                        "Economy units died to competition; stacking units in Detroit "
+                        "cost about $100K in cannibalization."
+                    ),
+                },
+                {
+                    "label": "Trimmed A-class portfolio",
+                    "value": 300,
+                    "display": "300 units",
+                    "conversion": "450 cut back to 300",
+                    "detail": (
+                        "Shifted to A-class because fixed costs are identical across "
+                        "classes; cleared 0% APR cards before they reset."
+                    ),
+                },
+                {
+                    "label": "Delegated portfolio (Richie Matthews)",
+                    "value": 35,
+                    "display": "35 units",
+                    "conversion": "18 to 35 in 6 months",
+                    "detail": (
+                        "An $80-a-month Hospitable plus dynamic pricing stack and 900 "
+                        "VA protocols after delegating operations."
+                    ),
+                },
+                {
+                    "label": "Pre-delegation portfolio",
+                    "value": 18,
+                    "display": "18 units",
+                    "conversion": "Baseline before the March 2021 system build",
+                    "detail": "You can't scale chaos (Richie Matthews).",
+                },
+                {
+                    "label": "Average units per building",
+                    "value": 6,
+                    "display": "6 units",
+                    "conversion": "Per-building density",
+                    "detail": (
+                        "Any property not netting at least $2,000 to $2,500 per month "
+                        "gets dropped or renegotiated."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-03-ale-excess-cost-waterfall",
+            "chapter_number": 3,
+            "chart_type": "waterfall",
+            "title": "ALE Pays Only the Increase",
+            "subtitle": "Rent and meal reimbursement after the normal-cost baseline",
+            "caption": (
+                "Two payer-side examples: rent rising from $1,500 to $2,000 pays $500, "
+                "and a $200 weekly food spend against a $150 baseline pays $50."
+            ),
+            "assumptions_note": (
+                "The rent and meal segments are separate examples from different "
+                "speakers and use different periods; the meal figures are weekly. "
+                "Overstating the normal-expense baseline shortchanges the recovery "
+                "(Bill Coffman)."
+            ),
+            "note": (
+                "Rent example from United Policyholders (bPQqrGrXfiI); meal example "
+                "from Kela Trishaan (awTD63In04A); coverage principle from Insurance "
+                "Savvy (Xnrpk3PKFg4)."
+            ),
+            "bars": [
+                {"label": "Temporary rent incurred", "value": 2000, "display": "$2,000", "kind": "total"},
+                {"label": "Normal rent baseline", "value": -1500, "display": "-$1,500", "kind": "deduction"},
+                {"label": "ALE rent reimbursement", "value": 500, "display": "$500", "kind": "result"},
+                {"label": "Weekly food spend while displaced", "value": 200, "display": "$200/week", "kind": "total"},
+                {"label": "Normal weekly food baseline", "value": -150, "display": "-$150/week", "kind": "deduction"},
+                {"label": "ALE meal reimbursement", "value": 50, "display": "$50/week", "kind": "result"},
+            ],
+        },
+        {
+            "diagram_id": "diag-04-insurance-vs-ltr-str-revenue",
+            "chapter_number": 2,
+            "chart_type": "horizontal_bars",
+            "title": "Insurance Housing Against Long-Term and Short-Term Rent",
+            "subtitle": "Metro Atlanta case studies and a Smyrna Coverage D budget",
+            "caption": (
+                "Reported monthly figures for the same markets across long-term, "
+                "short-term, and insurance midterm models, plus a worked Coverage D "
+                "budget."
+            ),
+            "assumptions_note": (
+                "Typical values are the figures the speakers stated, not computed "
+                "midpoints. The Smyrna budget strips roughly 10% land value from a "
+                "$480K purchase using a cost segregation study."
+            ),
+            "note": (
+                "Ruben Kanya's Atlanta 4-bedroom figures via Rich Somers (g075AOuQIwk) "
+                "and Smyrna math via Landlord Diaries - The Monthly Rentals Podcast "
+                "(vbHlGVZKjvg); Anya Sher's 3/2 via Real Estate Pros Show (-OpbvAckfkQ)."
+            ),
+            "unit": "USD per month",
+            "bars": [
+                {
+                    "label": "Atlanta 4BR long-term rent",
+                    "min": 2000,
+                    "max": 2200,
+                    "typical": 2000,
+                    "display": "$2,000-2,200",
+                },
+                {
+                    "label": "Atlanta 4BR short-term revenue",
+                    "min": 5000,
+                    "max": 7000,
+                    "typical": 5000,
+                    "display": "$5K average, $7K peak",
+                },
+                {
+                    "label": "Atlanta 4BR insurance midterm",
+                    "min": 7950,
+                    "max": 7950,
+                    "typical": 7950,
+                    "display": "$7,950 average at 100% occupancy",
+                },
+                {
+                    "label": "Metro Atlanta 3/2, long-term to insurance",
+                    "min": 2000,
+                    "max": 6300,
+                    "typical": 6300,
+                    "display": "~$2,000 LTR, ~$4,500 STR, $6,300 insurance",
+                },
+                {
+                    "label": "Smyrna Coverage D monthly budget",
+                    "min": 7200,
+                    "max": 14400,
+                    "typical": 7200,
+                    "display": "$7,200 over 12 months, $14,400 over 6",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-05-landlord-pitch-gates",
+            "chapter_number": 5,
+            "chart_type": "decision_tree",
+            "title": "Landlord Pitch Gates for Rental Arbitrage",
+            "subtitle": "Framing, rent cap, landlord fears, and proving unit one",
+            "caption": (
+                "Four gates distilled from operators who pitched hundreds of landlords, "
+                "including Aurelio Licata's 500+ pitches that produced 50+ properties."
+            ),
+            "assumptions_note": (
+                "The $2,000 rent against $3,000 charged is Sean Rakidzich's baseline "
+                "spread rule; Linda Kim's $4,000 ask against a $3,700 need is a single "
+                "walk-away example."
+            ),
+            "note": (
+                "Drawn from Aurelio Licata (Q3hSpjquUTE), Rafa Loza (894g1JF-IuM), "
+                "Sean Rakidzich (lGwvDjwR4uU), Linda Kim (5vV0oy-jJ7g), Jorge "
+                "Contreras (_M0OdXelhoU), and LoCasa (OSi_ARPIpaM)."
+            ),
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": (
+                        "Did the pitch open as a corporate housing company with the "
+                        "filter question about short-term furnished leases?"
+                    ),
+                    "pass_next": "G2",
+                    "fail_action": (
+                        "Reframe; never lead with Airbnb, and ask whether the "
+                        "landlord allows leases for short-term furnished housing."
+                    ),
+                },
+                {
+                    "gate": "G2",
+                    "question": (
+                        "Is the rent low enough to charge roughly double, such as "
+                        "$3,000 against $2,000 rent?"
+                    ),
+                    "pass_next": "G3",
+                    "fail_action": (
+                        "Walk away, as Linda Kim did from a $4,000 ask against a "
+                        "$3,700 need."
+                    ),
+                },
+                {
+                    "gate": "G3",
+                    "question": (
+                        "Are on-time rent and property condition answered with "
+                        "autopay two days early and written damage responsibility?"
+                    ),
+                    "pass_next": "G4",
+                    "fail_action": (
+                        "Show the autopay confirmation itself instead of arguing the "
+                        "point."
+                    ),
+                },
+                {
+                    "gate": "G4",
+                    "question": "Is unit one profitable before adding unit two?",
+                    "pass_next": (
+                        "Sign a two-to-three-year lease under an LLC and bind your own "
+                        "liability and loss-of-income coverage."
+                    ),
+                    "fail_action": (
+                        "Fix unit one first; adding more units does not solve the "
+                        "problem."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-06-lease-exit-counterparties",
+            "chapter_number": 11,
+            "chart_type": "org_architecture",
+            "title": "Lease Exit Map for the Leaseholder",
+            "subtitle": "Who sets the exit price when a lease ends early",
+            "caption": (
+                "The leaseholder sits between the landlord's buyout terms, legal "
+                "advice on the duty to re-rent, a replacement-tenant offer, and "
+                "statutory exits such as SCRA."
+            ),
+            "assumptions_note": (
+                "Termination fees of 1 to 3 months rent and a buyout around two months "
+                "rent are typical figures cited by the speakers; Florida caps "
+                "liquidated damages at two months under Statutes 83.595."
+            ),
+            "note": (
+                "Drawn from DoorLoop (DMY8aqSWFmQ), Tenant Law Group, PC "
+                "(mXtFESh8Jwc), 60SecondLaw (X_XeyY10oQE), Adulting Shouldn't Suck "
+                "(07RfH5S46pg), and Better Call Kal (2ZipHRbP_7U)."
+            ),
+            "center": {
+                "role": "Leaseholder on the master lease",
+                "headcount": "Single leaseholder entity",
+                "focus": (
+                    "No move-out and no rent stoppage until a termination agreement "
+                    "states the amount, move-out date, and that no further rent is owed."
+                ),
+            },
+            "spokes": [
+                {
+                    "role": "Landlord or property manager",
+                    "type": "Counterparty",
+                    "kpi": "Buyout around two months rent; fees typically 1 to 3 months",
+                },
+                {
+                    "role": "Local landlord-tenant attorney",
+                    "type": "Advisor",
+                    "kpi": "Direction on the state duty to re-rent, often free",
+                },
+                {
+                    "role": "Replacement tenant",
+                    "type": "Negotiating chip",
+                    "kpi": "Proposed alongside an early-termination penalty offer",
+                },
+                {
+                    "role": "Military orders under SCRA",
+                    "type": "Statutory exit",
+                    "kpi": "Lease ends 30 days after the next rent date; no fees",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-07-corporate-unit-startup-stack",
+            "chapter_number": 4,
+            "chart_type": "stacked_comparison",
+            "title": "All-In Startup Stack for One Corporate Housing Unit",
+            "subtitle": "Rent, deposit, and furniture against monthly payback",
+            "caption": (
+                "Dr Chau Ong's startup math for one subleased mid-term corporate unit, "
+                "recouped in about 6 months at $2k a month."
+            ),
+            "assumptions_note": (
+                "Single-unit figures from one operator; low and high are equal because "
+                "one value was reported per bucket. The payback bucket is monthly cash "
+                "flow, not an upfront cost."
+            ),
+            "note": (
+                "Dr Chau Ong via Landlord Diaries - The Monthly Rentals Podcast "
+                "(yo5DDACarw0); demand-first gate from Jorge Garcia | Roadmap Lodging "
+                "(Ewazlh6zOLM)."
+            ),
+            "total_range": "$12,000 all-in, recouped in about 6 months at $2k/month",
+            "buckets": [
+                {"label": "First month rent", "low": 2500, "high": 2500, "notes": "Subleased mid-term unit"},
+                {"label": "Security deposit", "low": 2500, "high": 2500, "notes": "Paid at lease signing"},
+                {"label": "Furniture", "low": 7000, "high": 7000, "notes": "Largest single bucket"},
+                {
+                    "label": "Monthly cash flow toward payback",
+                    "low": 2000,
+                    "high": 2000,
+                    "notes": "Lock a relocation, adjuster, or HR relationship before the lease",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-08-insuring-the-rental-roadmap",
+            "chapter_number": 12,
+            "chart_type": "timeline_roadmap",
+            "title": "Insuring the Rental Operation",
+            "subtitle": "From the conversion call to scheduled portfolio coverage",
+            "caption": (
+                "Four steps that move a property off a homeowner policy and onto "
+                "landlord coverage, with disclosure, liability, and evidence gates."
+            ),
+            "assumptions_note": (
+                "Week labels order the practitioner gates; no speaker testified to "
+                "specific durations beyond the 15-minute conversion call. Premium "
+                "figures are a Michigan quote and a national estimate."
+            ),
+            "note": (
+                "Drawn from Real Property Management Palisade (aUKpl6xobwU), Hannigan "
+                "Insurance Agency (aGvo7Dq3gTM), Steadily (8qVhmrP1DZM), The CoLiving "
+                "Insider (RyLyOzBiWEs), Blue Fox Properties (7sscnFcWkp4), Jacob and "
+                "Elissa (ZoPbBZvfW94), and AmericanModernIns (fR49bewBEuo)."
+            ),
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Make the conversion call",
+                    "deliverable": (
+                        "A 15-minute call telling the agent the address is becoming a "
+                        "rental, before the tenant moves in."
+                    ),
+                    "gate": "Policy rewritten for tenant occupancy; the failure mode is a denied claim.",
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Rewrite as a landlord policy",
+                    "deliverable": (
+                        "Dwelling fire pushed to DP3 with replacement cost, loss of "
+                        "rent, vandalism, and water; about $1,200 a year versus $895 "
+                        "in Michigan, about 25 percent more per Steadily."
+                    ),
+                    "gate": "Named insured matches how the home is deeded, including an LLC.",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Disclose exact use and stack liability",
+                    "deliverable": (
+                        "Written disclosure of rent-by-the-room use and at least "
+                        "$500,000 in liability; Lopez v. Allstate rescinded a policy "
+                        "on an about $371,000 loss."
+                    ),
+                    "gate": "Every change in rooms or guest type reported before renewal.",
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Safety fixes and damage evidence",
+                    "deliverable": (
+                        "Working smoke alarms, no dual cylinder deadbolts, screens on "
+                        "operable windows, and cleaner photos before every check-in "
+                        "and after every checkout."
+                    ),
+                    "gate": "Scaled portfolios consolidate up to 30 homes on one bill and renewal date.",
+                },
+            ],
+        },
+    ]
+
+
+VOLUME_033_POSITIONING_ALTERNATIVES: List[Dict[str, Any]] = [
     {
-        "title": "The ALE Placement Desk",
+        "title": "The Adjuster's First Pick",
         "subtitle": (
-            "Turn authorized displaced-household requests into documented "
-            "30-to-270-day housing placements with controlled lease exposure."
+            "Pricing family homes against hotel bills and Coverage D budgets for "
+            "insurance-displaced households"
         ),
-        "audience": (
-            "Furnished-housing operators building referral relationships with "
-            "insurance housing coordinators and claim representatives."
-        ),
+        "audience": "Owners and arbitrage operators with pet-friendly 3-5 bedroom family homes",
         "research_basis": (
-            "Additional Living Expense coverage can support temporary housing "
-            "after a covered loss, but policy limits, claim authorization, "
-            "approved dates, and the actual contracting payer determine collection. "
-            "Build a placement file around written spending authority rather "
-            "than assuming every household expense is carrier-payable."
+            "Jesse Vasquez's $8,100 house against about $15,000 a month in hotel rooms, "
+            "Jorge Garcia's $8,000 to $18,000 pre-approved budgets, Ruben Kanya's "
+            "Atlanta and Smyrna Coverage D math, and United Policyholders on ALE "
+            "duration rules."
         ),
         "sources": [
-            "https://content.naic.org/consumer/insurance-search.htm",
-            "https://www.tdi.texas.gov/pubs/consumer/cb025.html",
-            "https://www.law.cornell.edu/uscode/text/42/3604",
-        ][1:],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+            "https://www.youtube.com/watch?v=Ncr7TdF1G34&t=252s",
+            "https://www.youtube.com/watch?v=PJdlrM6k8ks&t=213s",
+            "https://www.youtube.com/watch?v=g075AOuQIwk&t=1761s",
+            "https://www.youtube.com/watch?v=vbHlGVZKjvg&t=2727s",
+            "https://www.youtube.com/watch?v=O1Wmu9p-zdc&t=387s",
+            "https://www.youtube.com/watch?v=bPQqrGrXfiI&t=1378s",
+        ],
+        "validation_status": "Grounded strictly in Vol. 033 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Corporate Housing Spread",
+        "title": "Say Corporate Housing Company, Not Airbnb",
         "subtitle": (
-            "Control landlord permission, occupancy duration, and payer terms "
-            "before committing to furnished master leases."
+            "Demand-first leasing, landlord pitch scripts, and the occupancy floors "
+            "scaled operators underwrite to"
         ),
-        "audience": (
-            "Relocation coordinators and furnished-rental operators serving "
-            "employers, project teams, and temporary assignments."
-        ),
+        "audience": "New and scaling rental arbitrage operators pitching landlords and B2B clients",
         "research_basis": (
-            "Written landlord authority must match the proposed subletting "
-            "and occupant structure. New York Real Property Law section 226-b "
-            "illustrates jurisdiction-specific restrictions and procedures; "
-            "Texas Tax Code section 156.101 illustrates why a permanent-resident "
-            "tax exemption requires a specific occupancy analysis."
+            "Aurelio Licata's 500+ landlord pitches, Sean Rakidzich's $2,000 rent to "
+            "$3,000 rule, Avenue West's 80% occupancy floor, Jorge Garcia's demand-first "
+            "gate, Dr Chau Ong's $12,000 unit math, and Richie Matthews' $2,000 to "
+            "$2,500 minimum net."
         ),
         "sources": [
-            "https://www.nysenate.gov/legislation/laws/RPP/226-B",
-            "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.156.htm#156.101",
+            "https://www.youtube.com/watch?v=Q3hSpjquUTE&t=388s",
+            "https://www.youtube.com/watch?v=lGwvDjwR4uU&t=305s",
+            "https://www.youtube.com/watch?v=f2vS4cnBnoI&t=873s",
+            "https://www.youtube.com/watch?v=Ewazlh6zOLM&t=81s",
+            "https://www.youtube.com/watch?v=yo5DDACarw0&t=1558s",
+            "https://www.youtube.com/watch?v=VtVf0h80q0w&t=404s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 033 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Four-Person Relocation Pod",
+        "title": "If It's Not in Writing, It Doesn't Exist",
         "subtitle": (
-            "Run placement intake, property readiness, extensions, and "
-            "collections through four accountable seats before scaling to six."
+            "Sublease addenda, lease exits, and landlord insurance that keep a "
+            "furnished rental business standing"
         ),
-        "audience": (
-            "Owner-operators replacing informal hosting routines with "
-            "documented furnished-housing service delivery."
-        ),
+        "audience": "Operators holding master leases and owners converting homes to rentals",
         "research_basis": (
-            "Fair Housing Act requirements under 42 U.S.C. 3604 and "
-            "24 CFR 100.202 inform consistent screening and disability-related "
-            "housing practices where applicable. California Civil Code "
-            "section 1941.1 supplies concrete dwelling-condition requirements "
-            "for California properties, making readiness evidence an "
-            "operating responsibility rather than a marketing claim."
+            "LoCasa's written sublease and 60-day opt-out clauses, DoorLoop and "
+            "60SecondLaw on buyouts and SCRA exits, Real Property Management Palisade "
+            "on denied claims, Hannigan's $1,200 landlord policy, and the Lopez v. "
+            "Allstate rescission."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/42/3604",
-            "https://www.ecfr.gov/current/title-24/subtitle-B/chapter-I/"
-            "subchapter-A/part-100/subpart-D/section-100.202",
-            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml"
-            "?sectionNum=1941.1.&lawCode=CIV",
+            "https://www.youtube.com/watch?v=VFt0XueZxpE&t=73s",
+            "https://www.youtube.com/watch?v=DMY8aqSWFmQ&t=238s",
+            "https://www.youtube.com/watch?v=X_XeyY10oQE&t=230s",
+            "https://www.youtube.com/watch?v=aUKpl6xobwU&t=20s",
+            "https://www.youtube.com/watch?v=aGvo7Dq3gTM&t=149s",
+            "https://www.youtube.com/watch?v=RyLyOzBiWEs&t=162s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 033 YouTube practitioner transcripts.",
     },
 ]
-
-
-def build_volume_033_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-placement-to-collection",
-            "process_flow",
-            "Control the Placement Before Buying the Lease",
-            "Five linked records connect payer authority to collected housing cash.",
-            1,
-            "operating_framework",
-            (
-                "Operating framework for authorized ALE and corporate placements "
-                "lasting approximately 30–270 days. A referral is neither "
-                "payment authorization nor a signed occupancy agreement."
-            ),
-            (
-                "The control point is a documented match among landlord "
-                "permission, payer commitment, occupant terms, and lease exposure."
-            ),
-            [
-                (
-                    "Qualify the placement",
-                    "Capture payer, dates, household, and authorized budget",
-                    1.0,
-                    (
-                        "Record the contracting payer, claim or purchase-order "
-                        "reference, household requirements, covered dates, and "
-                        "spending limit in Airtable. Obtain written authority "
-                        "before representing a carrier as the debtor."
-                    ),
-                ),
-                (
-                    "Secure lawful inventory",
-                    "Obtain explicit landlord corporate-housing sublease permission",
-                    2.0,
-                    (
-                        "Execute a property-specific written addendum covering "
-                        "corporate occupants, subletting, furnished use, access, "
-                        "maximum occupancy, and lease-break terms; reject verbal "
-                        "permission and conflicting building restrictions."
-                    ),
-                ),
-                (
-                    "Price the exposure",
-                    "Match approved stay economics against committed lease costs",
-                    3.0,
-                    (
-                        "Quote rent, included utilities, utility caps, taxes, "
-                        "deposits, and extension pricing separately. Stress-test "
-                        "an early claim closeout against remaining landlord rent "
-                        "and the next realistically obtainable placement."
-                    ),
-                ),
-                (
-                    "Deliver and extend",
-                    "Document readiness, access, and written extension authority",
-                    4.0,
-                    (
-                        "Capture condition photographs and a readiness checklist; "
-                        "issue time-limited smart-lock access. Use authorized ALE "
-                        "or CRS portal exports to reconcile dates, and request "
-                        "extensions before current funding expires."
-                    ),
-                ),
-                (
-                    "Collect and reconcile",
-                    "Match invoices, receipts, deposits, and landlord settlements",
-                    5.0,
-                    (
-                        "Reconcile approved nights and documented utility-cap "
-                        "charges in QuickBooks Online. Keep refundable deposits "
-                        "separate from earnings; close access credentials and "
-                        "record vacancy exposure when occupants depart."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-authorized-placement-funnel",
-            "funnel",
-            "A Placement Funnel with Traceable Denominators",
-            "One 100-request cohort narrows to twelve executed, funded starts.",
-            6,
-            "illustrative_model",
-            (
-                "Illustrative acquisition cohort, not observed conversion data "
-                "or an annual revenue forecast. Each stage is a subset of "
-                "the preceding stage; use one request identifier throughout."
-            ),
-            (
-                "Track loss reasons separately: missing authority, inventory "
-                "mismatch, rejected terms, or an unfunded start."
-            ),
-            [
-                (
-                    "Received housing requests",
-                    "100 requests captured within one intake cohort",
-                    100.0,
-                    (
-                        "Deduplicate requests across adjusters, relocation desks, "
-                        "and authorized housing portals. Count one household or "
-                        "corporate assignment once, even when multiple properties "
-                        "are proposed."
-                    ),
-                ),
-                (
-                    "Payer-qualified requests",
-                    "60 requests retain documented authority and budget",
-                    60.0,
-                    (
-                        "Sixty percent of intake passes payer identity, approved "
-                        "dates, and budget checks. Reject unsupported promises "
-                        "that a later claim decision will reimburse the stay."
-                    ),
-                ),
-                (
-                    "Inventory-matched requests",
-                    "36 qualified requests match permitted ready inventory",
-                    36.0,
-                    (
-                        "Sixty percent of qualified requests fit landlord "
-                        "permission, location, household needs, readiness date, "
-                        "and occupancy limits; apply consistent screening and "
-                        "reasonable-accommodation procedures where required."
-                    ),
-                ),
-                (
-                    "Accepted commercial terms",
-                    "18 matched requests accept documented pricing and terms",
-                    18.0,
-                    (
-                        "Half of matched requests accept the complete quote, "
-                        "including taxes, utility caps, cancellation exposure, "
-                        "extension mechanics, and the responsible contracting payer."
-                    ),
-                ),
-                (
-                    "Executed funded starts",
-                    "12 accepted requests become executed funded placements",
-                    12.0,
-                    (
-                        "Two-thirds of accepted requests produce signed agreements "
-                        "and the required deposit or documented credit terms. "
-                        "Overall cohort conversion is twelve percent; placement "
-                        "count alone does not establish annual billings."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-case-billings-to-owner-profit",
-            "waterfall",
-            "From $790,000 Gross Billings to $150,100 Owner Profit",
-            "Six bars reconcile the 45% retained spread and 19.0% gross-basis margin.",
-            3,
-            "illustrative_model",
-            (
-                "Formula v2.0 canonical Base totals: $790,000 gross billings, "
-                "$355,500 retained revenue, and $150,100 annual owner profit. "
-                "The three operating-expense categories are illustrative "
-                "allocations totaling $205,400, not supplied line-item forecasts. "
-                "First and last bars are totals; intervening negative values "
-                "are deductions. The 45% retained presentation follows the "
-                "supplied ASC 606 scorecard convention; actual reporting requires "
-                "the contract-specific principal-versus-agent assessment."
-            ),
-            (
-                "$790,000 − $434,500 − $96,000 − $72,000 − $37,400 = "
-                "$150,100. Owner profit is 19.0% of gross billings and "
-                "42.22% of retained revenue."
-            ),
-            [
-                (
-                    "Gross housing billings",
-                    "$790,000 annual customer housing billings before deductions",
-                    790000.0,
-                    (
-                        "Opening total represents billed housing activity, "
-                        "not underlying property value or retained operator "
-                        "revenue. Refundable deposits and taxes collected solely "
-                        "for remittance are outside this modeled total."
-                    ),
-                ),
-                (
-                    "Landlord rent and utilities",
-                    "Subtract $434,500 for the 55% pass-through share",
-                    -434500.0,
-                    (
-                        "Landlord master-lease rent and utility pass-throughs "
-                        "consume fifty-five percent of billings, leaving "
-                        "$355,500 retained revenue at the canonical forty-five "
-                        "percent retained share."
-                    ),
-                ),
-                (
-                    "Delivery labor expense",
-                    "Subtract $96,000 for modeled non-owner delivery labor",
-                    -96000.0,
-                    (
-                        "Illustrative contractor and support-labor expense covers "
-                        "placement coordination, field execution, and billing. "
-                        "The owner's full-time seat receives the remaining "
-                        "modeled owner profit rather than a second salary deduction."
-                    ),
-                ),
-                (
-                    "Property services and systems",
-                    "Subtract $72,000 for services, insurance, and operating systems",
-                    -72000.0,
-                    (
-                        "Illustrative expense covers turnover services, maintenance, "
-                        "commercial insurance, access hardware support, and "
-                        "software subscriptions. Exclude landlord rent and utility "
-                        "amounts already deducted in the pass-through bar."
-                    ),
-                ),
-                (
-                    "Acquisition and administration",
-                    "Subtract $37,400 for acquisition and administrative expenses",
-                    -37400.0,
-                    (
-                        "Illustrative expense includes referral acquisition, "
-                        "payment processing, bookkeeping, and general administration. "
-                        "Total post-spread operating expense is $205,400 annually, "
-                        "or $17,116.67 monthly before rounding."
-                    ),
-                ),
-                (
-                    "Annual owner net profit",
-                    "$150,100 remains after all modeled operating deductions",
-                    150100.0,
-                    (
-                        "Closing total is the canonical Base owner profit, "
-                        "not another positive increment. Divide by $790,000 "
-                        "for 19.0% gross-basis margin or by $355,500 "
-                        "for 42.22% retained-basis margin."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-placement-rail-retained-yields",
-            "horizontal_bars",
-            "Compare Retained Spread Before Overhead",
-            "Illustrative retained dollars per $100 of housing billings.",
-            2,
-            "illustrative_model",
-            (
-                "Independent underwriting examples, not measured market yields "
-                "or a weighted portfolio forecast. Each bar subtracts only "
-                "landlord rent and utility pass-throughs. The canonical "
-                "portfolio retained share remains 45%; these bars are not "
-                "owner net margins."
-            ),
-            (
-                "A higher apparent spread can disappear through vacancy, "
-                "slow collection, chargebacks, or an unpriced lease extension."
-            ),
-            [
-                (
-                    "Authorized ALE housing invoice",
-                    "$48 retained per $100 under this illustration",
-                    48.0,
-                    (
-                        "Illustrative $52 landlord-and-utility cost leaves $48 "
-                        "before overhead. Require a named contracting payer and "
-                        "written coverage dates; an adjuster referral alone "
-                        "does not establish carrier payment liability."
-                    ),
-                ),
-                (
-                    "Employer purchase-order ACH",
-                    "$45 retained per $100 under this illustration",
-                    45.0,
-                    (
-                        "Illustrative $55 landlord-and-utility cost leaves $45 "
-                        "before overhead. Match employer purchase-order limits, "
-                        "invoice routing, and ACH settlement terms; fund the "
-                        "gap between landlord due dates and customer receipts."
-                    ),
-                ),
-                (
-                    "Relocation intermediary invoice",
-                    "$42 retained per $100 under this illustration",
-                    42.0,
-                    (
-                        "Illustrative $58 landlord-and-utility cost leaves $42 "
-                        "before overhead. Identify the intermediary's actual "
-                        "payment obligation and separately expense any platform "
-                        "or placement fee rather than hiding it in rent."
-                    ),
-                ),
-                (
-                    "Healthcare staffing housing",
-                    "$46 retained per $100 under this illustration",
-                    46.0,
-                    (
-                        "Illustrative $54 landlord-and-utility cost leaves $46 "
-                        "before overhead. Align assignment cancellation terms "
-                        "with landlord exposure and document who pays when "
-                        "a worker changes facilities or leaves early."
-                    ),
-                ),
-                (
-                    "Direct corporate card booking",
-                    "$44 retained per $100 under this illustration",
-                    44.0,
-                    (
-                        "Illustrative $56 landlord-and-utility cost leaves $44 "
-                        "before overhead. Deduct card-processing costs later "
-                        "as operating expense and preserve signed occupancy "
-                        "records for billing disputes and chargeback responses."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-property-and-placement-preflight",
-            "decision_tree",
-            "Four Checks Before a Binding Housing Commitment",
-            "Every check must pass; a failed branch returns to remediation.",
-            5,
-            "operating_framework",
-            (
-                "Sequential decision framework, not a numerical risk score. "
-                "Cited state provisions apply only in their jurisdictions. "
-                "Assess the actual property, occupancy classification, "
-                "contracting structure, and local rules."
-            ),
-            (
-                "Written permission, tax treatment, dwelling readiness, and "
-                "funded risk allocation must agree before committing rent."
-            ),
-            [
-                (
-                    "Landlord authority",
-                    "Pass with explicit permission; otherwise stop lease commitment",
-                    1.0,
-                    (
-                        "Obtain an executed corporate-housing sublease addendum "
-                        "for every property. Check lease, building, and local "
-                        "restrictions; New York Real Property Law section 226-b "
-                        "has scope and procedure limits and is not blanket "
-                        "permission for corporate subletting."
-                    ),
-                ),
-                (
-                    "Occupancy and tax treatment",
-                    "Pass with documented classification; otherwise reprice or decline",
-                    2.0,
-                    (
-                        "Review lodging classification and state plus local "
-                        "occupancy taxes. Texas Tax Code section 156.101 "
-                        "addresses the state permanent-resident exemption for "
-                        "at least thirty consecutive days with uninterrupted "
-                        "payment; do not export that rule nationwide."
-                    ),
-                ),
-                (
-                    "Habitability and fair housing",
-                    "Pass with readiness evidence; otherwise repair before occupancy",
-                    3.0,
-                    (
-                        "Inspect required heating, plumbing, electrical safety, "
-                        "and dwelling conditions; California Civil Code "
-                        "section 1941.1 supplies California requirements. Apply "
-                        "42 U.S.C. 3604 and 24 CFR 100.202 where applicable "
-                        "to screening and disability-related housing practices."
-                    ),
-                ),
-                (
-                    "Insurance and closeout exposure",
-                    "Pass with funded exposure; otherwise renegotiate before signing",
-                    4.0,
-                    (
-                        "Have the broker confirm furnished corporate-sublet "
-                        "coverage, exclusions, and required liability limits. "
-                        "Compare early claim closeout with landlord lease-break "
-                        "costs, verify commercial insurance requirements, and "
-                        "assign utility overruns and uninsured losses explicitly."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-four-to-six-seat-pod",
-            "org_architecture",
-            "Four Core Seats, Six at Scale",
-            "The placement seat converts to full-time before two contractor additions.",
-            11,
-            "operating_framework",
-            (
-                "FT means full-time; C means contractor. Core pod: owner "
-                "1 FT plus placement, property, and billing 3 C. Scaled pod: "
-                "owner and placement 2 FT plus property, billing, inventory, "
-                "and coverage 4 C. Each node represents one person when active; "
-                "the last two nodes activate only in the scaled scenario. "
-                "Worker classification follows actual working arrangements."
-            ),
-            (
-                "Conservative: $180,000 gross, $81,000 retained, $21,600 profit "
-                "at 12% gross margin and 26.67% retained margin. Base: "
-                "$790,000 gross, $355,500 retained, $150,100 profit at 19.0% "
-                "and 42.22%. Scaled: $1,400,000 gross, $630,000 retained, "
-                "$364,000 profit at 26% and 57.78%."
-            ),
-            [
-                (
-                    "Owner and commercial lead",
-                    "Core and scaled: one full-time accountable operator",
-                    1.0,
-                    (
-                        "Own landlord commitments, payer credit terms, pricing "
-                        "floors, cash exposure, and placement exceptions. Review "
-                        "a weekly forward vacancy schedule and aged receivables "
-                        "before accepting additional fixed lease obligations."
-                    ),
-                ),
-                (
-                    "Placement and extension lead",
-                    "Core: one contractor; scaled: one full-time lead",
-                    1.0,
-                    (
-                        "Own intake, approved budgets, inventory matching, and "
-                        "extension reminders. Reconcile authorized ALE or CRS "
-                        "portal records with Airtable; use supported integrations "
-                        "or permitted exports rather than assuming API access."
-                    ),
-                ),
-                (
-                    "Property readiness lead",
-                    "Core and scaled: one contracted property-readiness specialist",
-                    1.0,
-                    (
-                        "Own inspections, turnover scheduling, access provisioning, "
-                        "and vendor dispatch. Use smart locks plus disclosed "
-                        "leak and noise-level telemetry; avoid recording private "
-                        "conversations or using cameras inside occupied homes."
-                    ),
-                ),
-                (
-                    "Billing and collections lead",
-                    "Core and scaled: one contracted billing specialist",
-                    1.0,
-                    (
-                        "Own QuickBooks Online invoices, approved utility-cap "
-                        "charges, payment matching, deposit liabilities, and "
-                        "extension billing. Escalate overdue balances before "
-                        "additional unfunded nights accumulate."
-                    ),
-                ),
-                (
-                    "Inventory onboarding specialist",
-                    "Scaled addition: one contractor for incremental property onboarding",
-                    1.0,
-                    (
-                        "Activate only in the six-person configuration. Assemble "
-                        "landlord addenda, property specifications, tax treatment "
-                        "records, readiness photographs, and insurance evidence "
-                        "without shifting final lease authority from the owner."
-                    ),
-                ),
-                (
-                    "Service coverage specialist",
-                    "Scaled addition: one contractor for extended service coverage",
-                    1.0,
-                    (
-                        "Activate only in the six-person configuration. Provide "
-                        "documented incident triage and extension follow-up "
-                        "coverage; route emergencies to appropriate responders "
-                        "and log handoffs to the property lead."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-startup-capital-allocation",
-            "stacked_comparison",
-            "Allocate Startup Cash Before Adding Fixed Rent",
-            "Four buckets reconcile $12,000 lean, $30,000 planning, and $60,000 upper budgets.",
-            4,
-            "illustrative_model",
-            (
-                "Illustrative allocations within the canonical $12,000–$60,000 "
-                "startup range. Numeric values encode the $30,000 planning "
-                "stack; each stage also supplies lean and upper allocations. "
-                "Weights remain 30%, 35%, 20%, and 15%. These are cash uses, "
-                "not four immediate profit-and-loss expenses."
-            ),
-            (
-                "Lean totals $12,000; planning totals $30,000; upper totals "
-                "$60,000. Validate deposits and furnishing quotes before "
-                "choosing a property count."
-            ),
-            [
-                (
-                    "Lease-entry cash",
-                    "$3,600 lean; $9,000 planning; $18,000 upper allocation",
-                    9000.0,
-                    (
-                        "Thirty percent funds landlord security deposits and "
-                        "contractually required prepaid rent. Track refundable "
-                        "deposits as assets and prepaid rent by service period; "
-                        "neither is automatically an immediate operating expense."
-                    ),
-                ),
-                (
-                    "Furniture and property setup",
-                    "$4,200 lean; $10,500 planning; $21,000 upper allocation",
-                    10500.0,
-                    (
-                        "Thirty-five percent funds furniture, linens, kitchen "
-                        "equipment, installation, and initial readiness work. "
-                        "Obtain property-specific quotes; distinguish durable "
-                        "assets from consumables and avoid assuming one budget "
-                        "equips an arbitrary number of units."
-                    ),
-                ),
-                (
-                    "Vacancy and collection liquidity",
-                    "$2,400 lean; $6,000 planning; $12,000 upper allocation",
-                    6000.0,
-                    (
-                        "Twenty percent remains available for vacancy gaps, "
-                        "payer delays, and early-closeout rent exposure. This "
-                        "cash reserve is not a deductible expense merely "
-                        "because it has been assigned to a budget bucket."
-                    ),
-                ),
-                (
-                    "Launch systems and risk setup",
-                    "$1,800 lean; $4,500 planning; $9,000 upper allocation",
-                    4500.0,
-                    (
-                        "Fifteen percent funds insurance inception payments, "
-                        "contract preparation, access equipment, bookkeeping "
-                        "setup, and workflow configuration. Separate recurring "
-                        "charges from prepayments and installed assets."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-thirty-day-launch-sprint",
-            "timeline_roadmap",
-            "Build a Placement-Ready Desk in Thirty Days",
-            "Four weekly milestones establish evidence before expanding lease exposure.",
-            12,
-            "operating_framework",
-            (
-                "The sprint prepares operations; canonical time to first deal "
-                "remains one to three months. Numeric values are milestone "
-                "end days, not expected placements. Initial commitments must "
-                "fit available capital and documented payer demand."
-            ),
-            (
-                "End the month with permissioned inventory, tested billing, "
-                "clear responsibility, and a controlled live-placement pipeline."
-            ),
-            [
-                (
-                    "Days 1–7",
-                    "Choose one service area and document operating constraints",
-                    7.0,
-                    (
-                        "Map landlord permission requirements, occupancy taxes, "
-                        "habitability rules, and insurance needs. Build a "
-                        "thirteen-week cash forecast using the $3,000–$18,000 "
-                        "monthly operating-expense envelope and separately "
-                        "model landlord rent and utility pass-through timing."
-                    ),
-                ),
-                (
-                    "Days 8–14",
-                    "Qualify inventory and complete the property permission file",
-                    14.0,
-                    (
-                        "Inspect candidate units, obtain furnishing quotes, "
-                        "and negotiate explicit corporate-housing sublease "
-                        "addenda. Obtain broker coverage confirmation and "
-                        "calculate the cash loss from an early departure "
-                        "followed by an unfilled lease period."
-                    ),
-                ),
-                (
-                    "Days 15–21",
-                    "Test intake, extension tracking, access, and invoice reconciliation",
-                    21.0,
-                    (
-                        "Configure Airtable records, authorized portal exports, "
-                        "QuickBooks Online invoice mapping, and smart-lock "
-                        "expiry. Run a synthetic placement through extension, "
-                        "utility overage, partial payment, and early-closeout "
-                        "cases without transmitting invented customer records."
-                    ),
-                ),
-                (
-                    "Days 22–30",
-                    "Open qualified referrals and review every proposed commitment",
-                    30.0,
-                    (
-                        "Contact relevant insurance housing coordinators and "
-                        "corporate relocation desks with verified inventory "
-                        "facts. Track the nested request cohort, evaluate "
-                        "signed payer terms, and commit only exposure the "
-                        "cash forecast can support if first collection slips."
-                    ),
-                ),
-            ],
-        ),
-    ]
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for (
-            identifier,
-            kind,
-            title,
-            subtitle,
-            chapter,
-            tag,
-            note,
-            caption,
-            stages,
-        ) in specs
-    ]

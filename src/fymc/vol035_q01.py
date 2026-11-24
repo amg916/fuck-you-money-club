@@ -1,675 +1,879 @@
 from __future__ import annotations
 
-CHAPTER_1 = {
-    "id": "Q1",
-    "chapter_id": "Q1",
-    "chapter_number": 1,
-    "question_number": 1,
-    "slug": "subject-to-wraparound-note-arbitrage-operating-model",
-    "question_prompt": "What exactly is subject-to & wraparound note arbitrage, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
-    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
-    "title": "What Exactly Is Subject-To & Wraparound Note Arbitrage?",
-    "subtitle": "Low-Rate Debt, RMLO-Underwritten Wrap Notes, Garn-St Germain Transfer Risk, and Licensed-Servicer Cash Waterfalls",
-    "layout_template": "opportunity_overview",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #35, Subject-To & Wraparound Note Arbitrage, ranks #09 of 36 "
-        "with a 90/100 Money-to-Manpower Score. The operator acquires property "
-        "subject to existing low-rate debt, then finances a qualified buyer "
-        "through a lawful wraparound note. Revenue means retained upfront "
-        "economics and interest spread, never property value or debt-service "
-        "throughput. This chapter organizes 11 mapped plays: two specified "
-        "cross-shelf plays and nine supporting operating applications. Canonical "
-        "annual owner profits are $28,000 Conservative, $190,000 Base, and "
-        "$442,000 Scaled. Durable returns require licensed RMLO underwriting, "
-        "licensed third-party servicing, verified underlying payments, and a "
-        "funded acceleration exit. The moat is a documented performing-note "
-        "system; a large coupon without transfer-risk reserves is merely "
-        "leveraged exposure."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual retained upfront economics and wrap interest margin",
-            "note": "28% margin; $28,000 owner profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$475,000",
-            "context": "Annual retained upfront economics and wrap interest margin",
-            "note": "40.0% margin; $190,000 owner profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$850,000",
-            "context": "Annual retained upfront economics and wrap interest margin",
-            "note": "52% margin; $442,000 owner profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Acquire a financing position, not an exemption from mortgage risk",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Subject-to describes a title acquisition in which an existing mortgage remains "
-                    "attached to the property and the original borrower ordinarily remains liable "
-                    "on the underlying note. It is not a lender-approved assumption, and making "
-                    "payments does not release that borrower. A wraparound resale creates a new "
-                    "buyer obligation that includes the economic burden of the existing debt. "
-                    "The operator collects the wrap payment through a licensed third-party "
-                    "servicer, funds the underlying obligation, and retains the permitted spread "
-                    "after expenses. The specified play, subject_to_wraparound_rmlo_note_spread, "
-                    "targets underlying coupons of 2.75%–4.25% and buyer coupons of 8.5%–9.9%, "
-                    "subject to underwriting, pricing restrictions, and state execution rules. "
-                    "Those bands describe a screening thesis, not an entitlement to charge "
-                    "any particular borrower a particular rate. Start with the actual note, "
-                    "security instrument, payment history, payoff statement, title commitment, "
-                    "insurance declarations, and escrow analysis. A seller's dashboard screenshot "
-                    "cannot establish lien priority, reinstatement cost, or permission to transfer. "
-                    "Record who owns the property, who owes each debt, who services each "
-                    "payment, and who can enforce each remedy. These relationships determine "
-                    "whether the apparent spread survives a missed payment, casualty loss, "
-                    "lender demand, or disputed closing."
-                ),
-                (
-                    "The simplest unit illustration uses a $200,000 underlying balance at 3.5% "
-                    "and a $220,000 wrap balance at 9.0%. Opening-balance annualized interest "
-                    "is $7,000 underneath and $19,800 on the wrap, producing $12,800 before "
-                    "servicing, losses, carrying costs, and overhead. This is an interest "
-                    "snapshot, not a twelve-month amortization forecast. Calculate actual monthly "
-                    "interest on declining balances and split every payment between principal, "
-                    "interest, escrow, and charges. If the resale price is $240,000 and the "
-                    "buyer contributes $20,000, the resulting $220,000 note fits that illustration; "
-                    "neither the $240,000 price nor the entire down payment becomes retained "
-                    "operating revenue. Compare the scheduled underlying payment with the buyer's "
-                    "fully underwritten housing payment, including taxes, insurance, association "
-                    "charges, and applicable assessments. Reject a structure that works only "
-                    "because escrow shortages or repairs are ignored. A $45 monthly servicing "
-                    "budget consumes $540 annually; an additional $2,400 operating reserve "
-                    "allocation reduces distributable cash further, although transferring cash "
-                    "to a reserve is not itself an accounting expense. If acceleration occurs, "
-                    "engage counsel and the servicer, seek lender-approved assumption or "
-                    "refinancing, and execute a documented lawful sale or payoff when necessary."
-                ),
-                (
-                    "Five operator archetypes share the same payment plumbing but require "
-                    "different acquisition discipline. A low-equity seller specialist solves "
-                    "a narrow exit problem; an equity-rich seller specialist must separately "
-                    "fund the seller's equity rather than pretend a cheap first mortgage "
-                    "finances everything. An owner-occupant wrap originator needs a qualified "
-                    "buyer and documented repayment capacity. A performing-note operator earns "
-                    "through collected cash flows rather than repeated closings. An institutional "
-                    "process specialist supplies servicing oversight and evidence management "
-                    "without representing that administration transfers creditor obligations. "
-                    "Use PropStream or ATTOM to identify candidate properties, then verify "
-                    "ownership and recorded liens through authoritative county records and "
-                    "a title professional. Low-equity and pre-foreclosure signals are research "
-                    "inputs, not invitations to pressure distressed households. Map state "
-                    "foreclosure-rescue restrictions before discussing a transaction with an "
-                    "owner facing an active sale date. The practical moat is a network of "
-                    "title personnel, RMLOs, servicers, insurance agents, and local counsel "
-                    "who can reject defective transactions quickly. The beginner mistake is "
-                    "building marketing volume before establishing this rejection capability. "
-                    "One disputed deed or uninsurable transfer can consume several years "
-                    "of modeled interest margin and strand the original borrower."
-                ),
-            ],
-            "table": {
-                "caption": "Five operator archetypes and the financing problem each actually solves",
-                "headers": [
-                    "Operator archetype",
-                    "Acquisition and buyer focus",
-                    "Retained economic engine",
-                    "Durability test and failure response",
-                ],
-                "rows": [
-                    [
-                        "Low-equity seller exit specialist using documented title transfers",
-                        "Target manageable arrears and motivated sellers with verifiable ownership",
-                        "Retain permitted closing economics plus collected net wrap interest",
-                        "Reject disputed reinstatement figures; require a funded payoff alternative",
-                    ],
-                    [
-                        "Equity-rich seller specialist combining cash and existing mortgage debt",
-                        "Fund seller equity explicitly without concealing additional junior obligations",
-                        "Price total capital cost before claiming any mortgage spread",
-                        "Reduce purchase price when equity funding erases recurring contribution",
-                    ],
-                    [
-                        "Owner-occupant wrap originator coordinating licensed RMLO buyer underwriting",
-                        "Match affordable housing payments with independently documented repayment capacity",
-                        "Earn permitted retained economics after origination and servicing allocations",
-                        "Decline buyers whose qualification depends on speculative future refinancing",
-                    ],
-                    [
-                        "Performing-note portfolio operator emphasizing collections rather than closing volume",
-                        "Acquire or retain documented notes with verified payment histories",
-                        "Collect net interest while tracking principal recovery separately monthly",
-                        "Reprice delinquent assets using lawful workout and enforcement timelines",
-                    ],
-                    [
-                        "Servicing oversight specialist maintaining lender and borrower evidence trails",
-                        "Coordinate licensed servicers without personally commingling borrower escrow funds",
-                        "Charge separately contracted administrative fees for actual delivered services",
-                        "Escalate missing remittances immediately and preserve independent account access",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Underwrite the documents that survive a bad month",
-                "body": "A useful acquisition file explains the downside without requiring the original salesperson to interpret it.",
-                "items": [
-                    "Obtain a current reinstatement or payoff statement directly through authorized channels; reconcile legal fees and escrow advances before pricing seller proceeds.",
-                    "Compare the underlying amortization schedule with the proposed wrap schedule month by month; a favorable coupon gap can conceal an unfavorable payment gap.",
-                    "Require the insurance agent to document ownership, occupancy, mortgagee interests, and loss-payee treatment accurately rather than preserve an obsolete policy description.",
-                    "Keep an acceleration-exit worksheet with dated refinance assumptions, sale costs, liens, and available liquidity; refresh it whenever value or borrower performance deteriorates.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Separate asset value, cash collections, retained revenue, and owner profit",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The scorecard's gross revenue field uses a deliberately narrow economic "
-                    "boundary: net upfront option or down-payment spreads plus retained annual "
-                    "wraparound interest margin. It excludes home face value, mortgage principal "
-                    "collections, escrow receipts, and pass-through debt service. Treat that "
-                    "boundary as a management reporting convention, not a substitute for "
-                    "transaction-specific accounting. A property sale, loan origination, purchased "
-                    "note, and separately contracted administrative service can follow different "
-                    "recognition rules. Interest-bearing instruments are generally analyzed under "
-                    "applicable financial-instrument guidance rather than automatically applying "
-                    "ASC 606 to every receipt. ASC 606 principal-versus-agent analysis matters "
-                    "where a service arrangement actually falls within its scope. A buyer's "
-                    "down payment can represent purchase consideration, principal recovery, "
-                    "deferred amounts, or refundable funds; it is not automatically earned "
-                    "fee income. Build a closing statement bridge that identifies seller "
-                    "proceeds, lien cures, third-party charges, refundable balances, basis "
-                    "recovery, and any amount actually eligible for recognition. Have the "
-                    "accountant reconcile the scorecard presentation to the financial statements. "
-                    "Do not apply another retained-share haircut to scorecard dollars already "
-                    "expressed on a retained basis. Equally, never inflate those dollars "
-                    "by adding the mortgage payments handled for somebody else."
-                ),
-                (
-                    "The canonical Conservative case is $100,000 revenue, $72,000 expenses, "
-                    "and $28,000 annual owner profit at 28%. Base is $475,000 revenue, "
-                    "$285,000 expenses, and $190,000 profit at 40.0%. Scaled is $850,000 "
-                    "revenue, $408,000 expenses, and $442,000 profit at 52%. Staffing remains "
-                    "one full-time operator plus three contractors in the first two cases "
-                    "and two full-time operators plus four contractors in the third. These "
-                    "are the fixed Formula v2.0 outputs, not projections derived from the "
-                    "single-property illustration. A transparent illustrative bridge uses "
-                    "$25,000 retained upfront economics plus $75,000 retained interest for "
-                    "Conservative; $175,000 plus $300,000 for Base; and $300,000 plus "
-                    "$550,000 for Scaled. The bridge reconciles revenue but does not assert "
-                    "an undocumented portfolio count or closing cadence. Recurring overhead "
-                    "of $2,000–$12,000 monthly is only one component of total expenses. "
-                    "Direct origination work, acquisition expenses, servicing, collection "
-                    "costs, realized losses, and other properly recognized charges explain "
-                    "why annual total expenses can exceed that overhead range. Keep owner "
-                    "distributions, debt principal, and cash reserve transfers outside the "
-                    "expense bridge unless their underlying accounting treatment requires "
-                    "otherwise. Avoid subtracting underlying interest twice after reporting "
-                    "interest margin net of that same cost."
-                ),
-                (
-                    "Startup capital of $12,000–$65,000 and a two-to-six-month first-deal "
-                    "window describe access conditions, not sufficient capitalization for "
-                    "every acquisition. A property requiring $18,000 of reinstatement, $7,000 "
-                    "of closing and repair cash, and $10,000 of liquidity already absorbs "
-                    "$35,000 before any seller equity payment. An $800,000 portfolio balance "
-                    "does not become operating revenue merely because the operator controls "
-                    "its payment instructions. Build separate ledgers for property basis, "
-                    "underlying debt, wrap receivables, escrow liabilities, retained income, "
-                    "and unrestricted cash. Use QuickBooks Online for the general ledger "
-                    "and a licensed servicer's loan-level statements for contractual balances; "
-                    "neither should silently overwrite the other. Reconcile bank deposits "
-                    "to collection batches, batches to borrower statements, and underlying "
-                    "remittances to lender confirmations. A principal collection improves "
-                    "cash availability while reducing a receivable; interest recognition "
-                    "and loss provisioning require their own analysis. Stress liquidity "
-                    "for borrower delinquency, tax reassessment, insurance renewal, legal "
-                    "expense, and an accelerated first mortgage. The largest downside is "
-                    "often a payoff demand rather than one missed installment. Profit "
-                    "quality therefore depends on funded survival time and exit feasibility, "
-                    "not only the percentage printed beside the annual revenue figure."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 reconciliation using retained revenue rather than property throughput",
-                "headers": [
-                    "Canonical scenario and team",
-                    "Retained revenue bridge",
-                    "Expenses and owner profit",
-                    "Interpretation and operating constraint",
-                ],
-                "rows": [
-                    [
-                        "Conservative operation with one full-time operator and three contractors",
-                        "$25,000 upfront plus $75,000 interest equals $100,000 annual revenue",
-                        "$72,000 expenses leave $28,000 annual owner profit at 28%",
-                        "Keep acquisition commitments within funded reserves and verified servicing capacity",
-                    ],
-                    [
-                        "Base operation with one full-time operator and three contractors",
-                        "$175,000 upfront plus $300,000 interest equals $475,000 annual revenue",
-                        "$285,000 expenses leave $190,000 annual owner profit at 40.0%",
-                        "Increase performing balances without counting principal collections as earned income",
-                    ],
-                    [
-                        "Scaled operation with two full-time operators and four contractors",
-                        "$300,000 upfront plus $550,000 interest equals $850,000 annual revenue",
-                        "$408,000 expenses leave $442,000 annual owner profit at 52%",
-                        "Maintain six-person execution while reserving liquidity against correlated acceleration exposure",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Compare sixteen sub-verticals and map eleven executable operating plays",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The comparison matrix distinguishes eleven mapped operating plays from "
-                    "five additional underwriting segments. Plays one and eleven use the "
-                    "two supplied cross-shelf identifiers; plays two through ten are descriptive "
-                    "operating applications, not invented catalog identifiers. Play one is "
-                    "the complete subject-to wrap engine. The nine supporting applications "
-                    "cover low-equity sourcing, arrears resolution, seller-equity funding, "
-                    "buyer qualification, servicing, escrow auditing, performing-note retention, "
-                    "workouts, and acceleration exits. Their unit economics are costs, capital "
-                    "allocations, or retained receipts within the same transaction, not eleven "
-                    "independent revenue streams. The five additional segments expose different "
-                    "risks involving condominiums, insurance, tax resets, balloons, and note "
-                    "sales. Named platforms identify practical research or workflow tools, "
-                    "not endorsements or verified current price quotations. Every dollar "
-                    "budget in the matrix is an illustrative operator assumption to replace "
-                    "with a written quote. PropStream and ATTOM can support sourcing; ICE "
-                    "Mortgage Technology Encompass can support an RMLO's origination workflow; "
-                    "DocuSign can document permitted electronic execution. None establishes "
-                    "that a particular transfer, instrument, fee, or foreclosure remedy is "
-                    "valid. A title professional and state-specific execution plan remain "
-                    "necessary even when the software shows a complete checklist."
-                ),
-                (
-                    "The second specified play, tcpa_litigator_scrub_honeypot_arbitrage, is "
-                    "best understood here as consent-first outbound risk screening, not a "
-                    "method for bypassing telephone restrictions. Lawfully obtained PACER "
-                    "or CourtListener records can contribute docket-derived risk signals "
-                    "alongside authoritative do-not-call checks, revocation processing, "
-                    "identity verification, and channel-specific consent evidence. A plaintiff "
-                    "match neither authorizes contact nor establishes that someone is a "
-                    "fraudulent claimant. Name collisions, stale telephone assignments, sealed "
-                    "records, and incomplete dockets create obvious error paths. For a "
-                    "separately contracted screening service, an illustrative $0.03 charge "
-                    "on 10,000 authorized screening events yields $300 billings; $120 "
-                    "of data and processing costs leaves $180 contribution before labor "
-                    "and overhead. Those amounts do not enter the canonical real-estate "
-                    "scenario bridge. Price the service for evidence preservation and "
-                    "suppression accuracy, not a promise of immunity. Apply 47 U.S.C. "
-                    "§227, 47 CFR §64.1200, applicable state calling rules, and the "
-                    "FTC Telemarketing Sales Rule where relevant. Disable uncertain "
-                    "enrichment and require independently verified consent and authoritative "
-                    "suppression checks when provenance or matching fails. Never rotate "
-                    "numbers or change vendors to defeat a recipient's revocation."
-                ),
-                (
-                    "Evaluate every sub-vertical using the same four questions: what money "
-                    "is actually retained, what capital remains exposed, what document "
-                    "proves performance, and what event reverses the expected economics? "
-                    "A $2,000 closing fee can be less valuable than $600 of well-supported "
-                    "annual contribution if the former carries a refund obligation or "
-                    "conceals defective origination. Conversely, a long-duration note with "
-                    "an attractive coupon can be worth little when its underlying mortgage "
-                    "is immediately callable and no exit is funded. Record refund and "
-                    "repurchase obligations as contract terms, not generic worst-case "
-                    "language. In a note sale, distinguish sale proceeds and carrying "
-                    "value from previously recognized interest; representations about "
-                    "payment history can create recourse after cash arrives. For condominium "
-                    "and association properties, read assessment notices and lien provisions "
-                    "before calculating the buyer's housing burden. For insurance-sensitive "
-                    "properties, obtain a bound or bindable coverage plan reflecting "
-                    "actual ownership and occupancy. For balloon structures, test lawful "
-                    "availability and repayment feasibility rather than assume refinancing. "
-                    "The comparison favors repeatable document quality over exotic terms: "
-                    "an ordinary fixed-payment transaction with reliable remittances usually "
-                    "fits a small team better than a clever instrument requiring constant "
-                    "exceptions and emergency legal work."
-                ),
-            ],
-            "table": {
-                "caption": "Sixteen sub-vertical comparisons: eleven mapped plays and five additional risk segments",
-                "headers": [
-                    "Sub-vertical and mapped role",
-                    "Named platform or execution rail",
-                    "Illustrative fee structure or unit economics",
-                    "Small-team moat and evidence requirement",
-                    "Clawback or failure trigger and fallback",
-                ],
-                "rows": [
-                    [
-                        "Play 1: subject_to_wraparound_rmlo_note_spread combining acquisition and qualified resale",
-                        "Encompass-supported RMLO workflow plus independently licensed third-party loan servicing",
-                        "$19,800 wrap interest less $7,000 underlying interest gives $12,800 annualized",
-                        "Preserve verified underwriting, title priority, and monthly underlying payment evidence",
-                        "Acceleration destroys carry assumptions; pursue approved assumption, refinancing, or payoff",
-                    ],
-                    [
-                        "Play 2: low-equity sourcing with independently verified ownership records",
-                        "PropStream candidate searches followed by authoritative county recorder document review",
-                        "$600 research budget across twenty reviewed leads equals $30 each",
-                        "Maintain seller-specific lien evidence rather than merely purchased lead lists",
-                        "Incorrect balances erase spread; stop acquisition and rebuild verified underwriting",
-                    ],
-                    [
-                        "Play 3: arrears resolution before purchasing distressed mortgaged property",
-                        "ATTOM signals plus lender-issued reinstatement statements and local counsel review",
-                        "$18,000 arrears plus $2,000 documented charges requires $20,000 cure capital",
-                        "Track foreclosure dates and permitted transaction structures before negotiating terms",
-                        "Expired cure quotations require refreshed amounts or a canceled acquisition",
-                    ],
-                    [
-                        "Play 4: seller-equity funding alongside an existing low-rate mortgage",
-                        "Qualia-supported title closing workflow with separately documented capital funding sources",
-                        "$30,000 seller equity at 10% costs $3,000 annual interest",
-                        "Disclose every funding lien and model aggregate repayment obligations explicitly",
-                        "Unfunded equity commitments require repricing rather than concealed junior debt",
-                    ],
-                    [
-                        "Play 5: owner-occupant qualification through licensed mortgage origination professionals",
-                        "NMLS Consumer Access license checks and Encompass-supported underwriting document workflows",
-                        "$1,500 illustrative origination budget reduces $5,000 retained economics to $3,500",
-                        "Retain verified income, obligations, housing costs, and written underwriting conclusions",
-                        "Failed repayment capacity means decline or restructure within lawful limits",
-                    ],
-                    [
-                        "Play 6: licensed servicing with reconciled borrower and underlying remittances",
-                        "Account Servicing platform evaluation with state licensing and service-scope verification",
-                        "$45 monthly servicing allowance equals $540 annual cost per note",
-                        "Reconcile collections, underlying payments, escrow liabilities, and exception logs monthly",
-                        "Missing remittance evidence triggers immediate investigation and documented servicing correction",
-                    ],
-                    [
-                        "Play 7: escrow auditing for tax and insurance payment continuity",
-                        "County tax portals and carrier billing records reconciled against servicer statements",
-                        "$3,600 annual taxes plus $1,800 insurance requires $450 monthly funding",
-                        "Check actual disbursements rather than trusting a positive escrow balance",
-                        "Tax increases require lawful adjustment and prompt funded shortage resolution",
-                    ],
-                    [
-                        "Play 8: performing-note retention with disciplined cash and principal separation",
-                        "QuickBooks Online general ledger reconciled with licensed servicer loan statements",
-                        "$12,800 annualized spread less $540 servicing leaves $12,260 before other costs",
-                        "Preserve payment history and maintain independent control of accounting classifications",
-                        "Delinquency requires collectibility review rather than continued optimistic income reporting",
-                    ],
-                    [
-                        "Play 9: documented borrower workouts before avoidable enforcement expense",
-                        "DocuSign-supported execution where permitted plus counsel-managed state notice procedures",
-                        "Two $1,600 missed payments create $3,200 arrears before permitted charges",
-                        "Use consistent hardship documentation and authorized servicing communications throughout resolution",
-                        "Broken workout terms trigger counsel-reviewed remedies and updated carrying reserves",
-                    ],
-                    [
-                        "Play 10: acceleration exits through approved refinancing or documented sale",
-                        "Bankrate rate research followed by actual lender underwriting and written quotations",
-                        "$210,000 net sale proceeds less $200,000 payoff leaves $10,000 liquidity",
-                        "Refresh executable exit values and track available unrestricted payoff resources",
-                        "Refinance denial requires lawful sale planning instead of concealed transfers",
-                    ],
-                    [
-                        "Play 11: tcpa_litigator_scrub_honeypot_arbitrage supporting consent-first outbound screening services",
-                        "PACER and CourtListener risk signals alongside National Do Not Call checks",
-                        "10,000 screenings at $0.03 less $120 processing leaves $180 contribution",
-                        "Preserve contact permission, revocations, source provenance, and cautious identity matching",
-                        "Ambiguous matches disable enrichment; verified permission and suppression remain mandatory",
-                    ],
-                    [
-                        "Comparison segment 12: condominium wraps with association assessment exposure",
-                        "County recorder records and association-issued resale certificates reviewed before closing",
-                        "$300 monthly association dues add $3,600 annual buyer housing burden",
-                        "Read lien provisions, special assessments, and pending association litigation records",
-                        "Unfunded assessments require repricing or rejection before buyer payment commitments",
-                    ],
-                    [
-                        "Comparison segment 13: insurance-sensitive properties with ownership or occupancy changes",
-                        "FEMA flood maps plus licensed insurance agent coverage and carrier confirmation",
-                        "$1,200 annual premium increase consumes $100 of monthly payment capacity",
-                        "Match insured interests and occupancy facts to actual transaction documents",
-                        "Coverage refusal requires replacement coverage or abandoning the proposed structure",
-                    ],
-                    [
-                        "Comparison segment 14: tax-reset properties following taxable ownership transfers",
-                        "County assessor records and tax collector estimates checked against exemption eligibility",
-                        "$2,400 annual reassessment increase adds $200 to monthly housing expense",
-                        "Underwrite post-transfer taxes rather than automatically preserving seller exemption assumptions",
-                        "Lost exemptions require revised affordability analysis and properly funded escrows",
-                    ],
-                    [
-                        "Comparison segment 15: balloon obligations requiring independently feasible maturity exits",
-                        "Encompass-supported maturity analysis and written lender criteria for prospective refinancing",
-                        "$220,000 maturity balance requires principal funding beyond ordinary monthly interest",
-                        "Track legal eligibility and repayment capacity without assuming future appreciation",
-                        "Unavailable refinancing requires early lawful sale or documented permitted restructuring",
-                    ],
-                    [
-                        "Comparison segment 16: performing-note sales with documented investor recourse terms",
-                        "Paperstac transaction workflow supplemented by independent document custody and counsel",
-                        "$220,000 face value sold at 92% yields $202,400 before costs",
-                        "Reconcile proceeds to carrying value and preserve precise seller representations",
-                        "Breached representations can trigger repurchase; cure defects before marketing notes",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Build a small-team control system that survives acceleration and default",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Federal due-on-sale law is the first structural constraint. Under "
-                    "12 U.S.C. §1701j-3, lenders generally may enforce contractual due-on-sale "
-                    "provisions subject to specified protections and exceptions. An ordinary "
-                    "investor acquisition does not automatically qualify for those protections. "
-                    "A trust label, payment history, or servicing arrangement does not "
-                    "independently neutralize acceleration. Explain continuing seller liability "
-                    "and record the agreed response to a lender demand. For Texas property, "
-                    "Tex. Prop. Code §5.016 addresses notice requirements for certain "
-                    "conveyances encumbered by recorded liens, with statutory exceptions; "
-                    "Texas Finance Code Chapter 159 separately addresses wrap mortgage "
-                    "loan licensing, disclosures, and related obligations. Treat these as "
-                    "distinct analyses rather than one universal form. For owner-occupant "
-                    "buyers, require licensed RMLO involvement as the operating standard, "
-                    "then determine applicable federal and state creditor, originator, "
-                    "disclosure, and ability-to-repay duties. The SAFE Act framework, "
-                    "12 U.S.C. §§5101–5116, does not replace Regulation Z analysis. "
-                    "Seller-financer exclusions under 12 CFR §1026.36 have conditions "
-                    "and limited scope; they do not automatically eliminate obligations "
-                    "under §1026.43. Resolve coverage before advertising terms, collecting "
-                    "application fees, or promising a closing date to the buyer."
-                ),
-                (
-                    "A one-person operator should coordinate specialists, not impersonate "
-                    "all of them. In the Conservative and Base team design, the three "
-                    "contractor roles cover transaction and legal coordination, licensed "
-                    "origination, and licensed servicing or bookkeeping coordination. "
-                    "Required title, insurance, and other vendors remain external service "
-                    "providers; the staffing shorthand is not a claim that three people "
-                    "hold every necessary credential. At Scaled, a second full-time "
-                    "operator owns portfolio exceptions while four contractors support "
-                    "repeatable execution. Build a monthly evidence packet containing "
-                    "buyer collections, underlying lender confirmations, escrow movements, "
-                    "tax and insurance status, delinquencies, and current reserve availability. "
-                    "Use the servicer's controlled portal for sensitive records and "
-                    "restricted accounting access for reconciliation. Avoid emailing "
-                    "complete identity documents across a casual deal group. Separate "
-                    "payment authorization from reconciliation wherever practical, even "
-                    "if that separation is an external bookkeeper checking the owner's "
-                    "instructions. Route exceptions by severity: insurance cancellation "
-                    "and acceleration notices outrank routine document cleanup. A shared "
-                    "calendar tracks notice deadlines, renewal dates, escrow reviews, "
-                    "and note maturities. Automation should collect evidence and expose "
-                    "exceptions; it should not independently issue legal notices or "
-                    "change borrower terms without authorized professional review."
-                ),
-                (
-                    "The final purchase decision combines profitability with survivability. "
-                    "Require a positive retained spread after realistic servicing and "
-                    "loss assumptions, a buyer payment supported by verified capacity, "
-                    "accurate insurance, a lawful closing path, and an executable response "
-                    "to acceleration. A six-month reserve based on $1,600 of monthly "
-                    "underlying payment and $400 of property carrying costs equals "
-                    "$12,000, but it does not fund a $200,000 payoff demand. Track "
-                    "those risks separately. If a buyer defaults, contact the servicer "
-                    "and counsel, preserve records, evaluate permitted workouts, and "
-                    "follow applicable notice and foreclosure procedures. Do not use "
-                    "lockouts, utility interruption, or informal repossession as collection "
-                    "tools. If the underlying lender accelerates, confirm the demand "
-                    "and deadlines, update payoff figures, evaluate lender-approved "
-                    "assumption or refinancing, and prepare a lawful sale if necessary. "
-                    "The seller should receive the communications promised in the "
-                    "transaction documents rather than discover problems through damaged "
-                    "credit. Review portfolio concentration by underlying lender, geography, "
-                    "insurance exposure, maturity date, and servicer. The durable "
-                    "small-team business earns a financing spread while continuously "
-                    "verifying performance; the fragile version spends upfront cash "
-                    "and hopes nobody exercises a contractual right."
-                ),
-            ],
-            "table": {
-                "caption": "Four operating controls with named evidence, owners, and stop conditions",
-                "headers": [
-                    "Control and accountable execution owner",
-                    "Required evidence before commitment",
-                    "Recurring verification and operating frequency",
-                    "Stop condition and practical next action",
-                ],
-                "rows": [
-                    [
-                        "Title and transfer analysis owned by transaction counsel and title personnel",
-                        "Review recorded liens, underlying instruments, seller authority, and required transfer notices",
-                        "Refresh payoff figures and search updates immediately before final closing disbursement",
-                        "Unresolved priority or transfer defects require correction before funds are released",
-                    ],
-                    [
-                        "Buyer underwriting coordinated by a licensed RMLO with creditor oversight",
-                        "Document income, debts, housing costs, applicable disclosures, and underwriting conclusions",
-                        "Recheck material changes before consummation and retain the completed origination record",
-                        "Unsupported repayment capacity requires declining or lawfully restructuring the proposed transaction",
-                    ],
-                    [
-                        "Payment and escrow reconciliation owned by licensed servicer and independent reviewer",
-                        "Confirm servicing authority, payment waterfall, escrow treatment, and underlying account access",
-                        "Match every monthly collection batch against lender confirmations and escrow disbursements",
-                        "Missing underlying payment confirmation requires immediate investigation and documented corrective action",
-                    ],
-                    [
-                        "Liquidity and exit readiness owned by operator with counsel support",
-                        "Maintain reserve balances, current payoff estimates, sale values, and refinancing alternatives",
-                        "Refresh exit assumptions quarterly and immediately after material adverse portfolio events",
-                        "Unfunded acceleration exposure requires reducing commitments and executing a feasible exit",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before committing acquisition capital",
-                "body": "Proceed only when the evidence supports the transaction as structured, not a more convenient version of it.",
-                "items": [
-                    "Verify title, current balances, seller authority, transfer restrictions, required notices, and the original borrower's continuing liability in the closing file.",
-                    "Obtain licensed RMLO underwriting and a documented determination of applicable origination, disclosure, pricing, and ability-to-repay requirements.",
-                    "Execute the licensed servicing arrangement, test the payment waterfall, and confirm that insurance and tax monitoring reflect actual ownership and occupancy.",
-                    "Fund carrying reserves and document a separate acceleration response supported by realistic assumption, refinancing, sale, or payoff capacity.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Build the verified debt and title file",
-                    "action": "Collect authorized lender records, recorded instruments, seller documents, and insurance information.",
-                    "detail": "Reconcile balances and arrears to current statements; identify due-on-sale language, lien priority, and state-specific transfer requirements.",
-                },
-                {
-                    "step": 2,
-                    "title": "Underwrite the buyer and retained economics",
-                    "action": "Coordinate licensed RMLO review and model both amortization schedules with complete housing costs.",
-                    "detail": "Separate principal, interest, escrow, refundable receipts, and eligible retained economics; reject structures dependent on unsupported refinancing assumptions.",
-                },
-                {
-                    "step": 3,
-                    "title": "Close through documented professional execution",
-                    "action": "Use counsel and title personnel to finalize instruments, notices, disbursements, and servicing authority.",
-                    "detail": "Confirm accurate insurance, licensed servicing capacity, underlying payment access, and funded reserves before releasing transaction funds.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile performance and refresh the exit",
-                    "action": "Review collections, lender confirmations, escrow disbursements, and exception reports every month.",
-                    "detail": "Escalate delinquency or acceleration immediately; update liquidity and pursue documented lawful workout, assumption, refinancing, sale, or payoff paths.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "A mortgage spread is durable only when the payment trail is provable and the exit can survive the lender exercising its rights.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Create a debt-and-title intake packet covering underlying instruments, current balances, reinstatement amounts, seller authority, and transfer restrictions.",
-        "Engage a licensed RMLO and transaction counsel to document buyer underwriting and applicable federal and state origination requirements.",
-        "Build a monthly amortization and cash-waterfall model that separates principal, interest, escrow, retained revenue, expenses, and reserve transfers.",
-        "Reconcile the three canonical scenarios to $28,000, $190,000, and $442,000 owner profit without adding property value or pass-through payments.",
-        "Select and verify a licensed third-party servicer, establish independent underlying-payment checks, and schedule tax and insurance reviews.",
-        "Fund carrying liquidity, document an acceleration exit, and restrict outbound outreach to verified permissions and authoritative suppression controls.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "12 U.S.C. §1701j-3 — Preemption of due-on-sale prohibitions",
-            "url": "https://www.law.cornell.edu/uscode/text/12/1701j-3",
-            "relevance": "Establishes the federal due-on-sale framework and specified transfer protections; ordinary investor transfers require independent contractual and statutory analysis.",
-        },
-        {
-            "title": "12 U.S.C. §5103 — Mortgage loan originator licensing and registration",
-            "url": "https://www.law.cornell.edu/uscode/text/12/5103",
-            "relevance": "Provides core SAFE Act licensing and registration requirements relevant to individuals engaging in covered mortgage origination activities.",
-        },
-        {
-            "title": "12 CFR §1026.43 — Minimum standards for transactions secured by a dwelling",
-            "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
-            "relevance": "Defines applicable ability-to-repay requirements, coverage, and exceptions; licensed RMLO participation does not replace the creditor's required analysis.",
-        },
-        {
-            "title": "12 CFR §1026.36 — Prohibited acts or practices and certain requirements for credit secured by a dwelling",
-            "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/36/",
-            "relevance": "Addresses loan-originator requirements and conditional seller-financer exclusions that must be evaluated separately from other mortgage obligations.",
-        },
-        {
-            "title": "Texas Property Code §5.016 — Conveyance of residential property encumbered by lien",
-            "url": "https://statutes.capitol.texas.gov/Docs/PR/htm/PR.5.htm#5.016",
-            "relevance": "Sets notice requirements and exceptions for covered encumbered residential conveyances; incorporate applicable timing and delivery into the closing process.",
-        },
-        {
-            "title": "Texas Finance Code Chapter 159 — Wrap mortgage loan financing",
-            "url": "https://statutes.capitol.texas.gov/Docs/FI/htm/FI.159.htm",
-            "relevance": "Provides Texas-specific wrap mortgage licensing, disclosure, and other operating requirements beyond the general property-transfer notice analysis.",
-        },
-        {
-            "title": "47 U.S.C. §227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Supplies the statutory TCPA framework; docket-based risk screening neither creates contact permission nor displaces applicable telephone restrictions.",
-        },
-        {
-            "title": "47 CFR §64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": "Contains telephone solicitation and related operational restrictions requiring channel-appropriate consent, suppression, and revocation handling.",
-        },
-        {
-            "title": "16 CFR §310.4 — Abusive telemarketing acts or practices",
-            "url": "https://www.ecfr.gov/current/title-16/section-310.4",
-            "relevance": "Addresses applicable telemarketing restrictions, including do-not-call controls that remain necessary regardless of plaintiff-risk screening results.",
-        },
-    ],
-}
+CHAPTER_1 = {'id': 'Q1',
+ 'chapter_id': 'Q1',
+ 'chapter_number': 1,
+ 'question_number': 1,
+ 'slug': 'wraparound-mortgage-mechanics-underlying-loan',
+ 'question_prompt': 'What exactly is a wraparound mortgage (wrap / AITD), how does the payment stack work '
+                    "on top of the seller's existing loan, and what are the core terms an operator must "
+                    'know?',
+ 'kicker': 'Q1 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Wraparound Mortgage Mechanics: How the Wrap Rides on the Underlying Loan',
+ 'subtitle': 'Wrap notes, all-inclusive trust deeds (AITD), installment notes wrapping an existing first, '
+             'wrap vs. subject-to vs. land contract vs. assumable loans, the due-on-sale landmine, and '
+             'exam-level definitions',
+ 'layout_template': 'opportunity_overview',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners describe one machine: a new, larger wrap note laid over a live '
+                      'underlying loan, the buyer paying the wrap holder and the holder paying the '
+                      'original lender. The consensus edge is that the spread is earned on the full '
+                      'balance, not just equity: Bill Brunchick, with roughly 1,200 wrap closings, shows '
+                      '6% on the equity plus a 2% rate gap on an $80,000 first at 4%, and Chris Goff '
+                      'models $126,000 total profit on a $350,000 wrap over a $300,000 loan at 3.5%. '
+                      'Street mechanics include buying on mirror wraps, selling on equity wraps, '
+                      'unrecorded notes with recorded AITD riders, Texas bilingual disclosures, and '
+                      'third-party servicers who pay the underlying lender first. Disagreement centers on '
+                      'acquisition: Pace Morby never buys on a wrap and prefers split-note hybrids, while '
+                      'Brian Gibbons says never sell on a seller-held wrap.',
+ 'key_metrics': [{'label': "Wrap Closings by Bill Brunchick's Escrow Company",
+                  'metric': "Wrap Closings by Bill Brunchick's Escrow Company",
+                  'value': 'Roughly 1,200 wraps closed over about 25 years',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Attorney Bill Brunchick, appearing with Kris Haskins, says they lost count '
+                             'after about 1,200 wrap closings through an escrow company that specializes '
+                             'in wraps, more than any other attorney in their state.',
+                  'source': 'kris haskins ([kM__5b36grI @ 00:08:35])'},
+                 {'label': 'Equity Wrap Monthly Spread on High-End Homes',
+                  'metric': 'Equity Wrap Monthly Spread on High-End Homes',
+                  'value': '$400 to $600 per month with no landlording',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Brunchick's example: a $2,400 all-inclusive payment that only rents for "
+                             '$2,500 fails as a rental, but selling on an owner-carry wrap with the buyer '
+                             'paying PITI and a raised rate catches $400 to $600 a month.',
+                  'source': 'kris haskins ([kM__5b36grI @ 00:14:43])'},
+                 {'label': 'Full-Cycle Wrap Profit Model',
+                  'metric': 'Full-Cycle Wrap Profit Model',
+                  'value': 'About $126,000 ($10,000 down + $63,810 cash flow + $52,415.31 balance gap)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Chris Goff's example: $300,000 underlying at 3.5% wrapped into a $350,000 "
+                             'sale at 5% with $10,000 down, $531.75 monthly spread over a 10-year balloon.',
+                  'source': 'Chris Goff ([X_UODDIMvFs @ 00:05:32])'},
+                 {'label': 'Share of Wrap Business That Is Disclosure',
+                  'metric': 'Share of Wrap Business That Is Disclosure',
+                  'value': '90%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Scott Horne says 90% of the wraparound business is proper disclosure in the '
+                             'contract up front and at closing, so the buyer understands the existing '
+                             'mortgage and the due-on-sale clause.',
+                  'source': "Scott Horne's Owner Finance Network ([VDXOvtqzbZk @ 00:07:01])"}],
+ 'sections': [{'title': 'The Practitioner Consensus: The Wrap Rides on Top of a Live Loan',
+               'paragraphs': ['Every practitioner on the board describes the same machine: a new, larger '
+                              'note laid on top of a loan that stays alive underneath. Kris Haskins frames '
+                              'it with a $100,000 first at 6% wrapped into a $150,000 wrap, where the '
+                              'borrower makes one payment to the wraparound lender and that lender remits '
+                              'the first-mortgage payment to the original lender [kM__5b36grI @ 00:03:01]. '
+                              'Scott Horne of the Owner Finance Network calls the wrap a brand-new note '
+                              'and deed of trust subject to the underlying lien, technically a subordinate '
+                              'lien rather than a second, and says the cleanest way to grasp it is the '
+                              'flow of money: buyer pays seller, seller pays the underlying mortgage '
+                              'company [VDXOvtqzbZk @ 00:00:36]. Tim of Tim Talks Real Estate walks the '
+                              "same path, adding that the buyer's single payment is usually priced a bit "
+                              "above the seller's old rate, the seller pockets the difference, and in most "
+                              'cases the bank underneath does not even know the house changed hands '
+                              '[Dklhw3jMfVo @ 00:02:25]. Pace Morby adds a hard definitional line: a wrap '
+                              'requires two notes or more, because without an existing debt there is '
+                              'nothing to wrap together [hTxjhDN2Cyo @ 00:07:11]. Everything downstream '
+                              'depends on that live underlying payment arriving on time.',
+                              'The second point of agreement is why operators bother: the spread is earned '
+                              'on the entire balance, not only on the equity. Attorney Bill Brunchick, who '
+                              'says they have closed roughly 1,200 wraps through their own escrow company, '
+                              'lays it out on a $100,000 sale over an $80,000 underlying loan at 4%: a '
+                              'separate second at 6% earns 6% only on the $20,000, while an all-inclusive '
+                              'wrap at 6% earns 6% on the $20,000 equity plus the 2% difference on the '
+                              'underlying $80,000 [kM__5b36grI @ 00:10:56]. Maximilian Dier calls this '
+                              'flipping loans and runs a $400,000 FHA loan at 3% resold inside a $600,000 '
+                              'wrap at 8%, collecting a 5% spread on the $400,000 and the full 8% on the '
+                              "$200,000 of equity [49GchpJCUB0 @ 00:04:36]. PrepAgent's exam-prep math "
+                              'lands in the same place: Vivian carries an $80,000 loan at 4%, sells for '
+                              '$120,000 with 10% down, finances $108,000 at 7%, and earns 7% on $28,000 '
+                              "plus 3% on the $80,000 [-8VDqc249XY @ 00:02:29]. Edspira's Suzie example "
+                              'repeats the pattern, a 1.5% spread on a $35,000 loan at 7% while collecting '
+                              '8.5% on the rest [OXZZS-KeaXc @ 00:05:52]. Same math, four different '
+                              'teachers, one conclusion: the cheap underlying debt is the asset being '
+                              'resold.',
+                              'The consensus on prerequisites is equally tight, and it centers on the '
+                              'underlying lender that never signed off on the deal. Tim of Tim Talks Real '
+                              'Estate, in the business since 2007, calls the due-on-sale clause the '
+                              'landmine: almost every regular mortgage lets the lender demand the entire '
+                              'balance once title transfers, and a wrap almost always transfers title '
+                              'while that loan stays open [Dklhw3jMfVo @ 00:03:16]. Brian Gibbons of '
+                              'REISkills says wraps almost always violate the due-on-sale clause in the '
+                              "seller's underlying financing, and adds the second baseline risk: a buyer "
+                              'has to worry about the seller collecting the payment and never paying the '
+                              "first [9rVA292DHlY @ 00:01:49]. Scott Horne's answer is a loan servicer who "
+                              'collects from the buyer, pays the underlying mortgage company first, and '
+                              'releases whatever is left to the seller, a setup the industry calls its '
+                              'fraud preventer [VDXOvtqzbZk @ 00:07:47]. Chris Goff lands on the same '
+                              'control point, recommending an escrow company coordinate monthly payments '
+                              'because paying the seller and hoping the bank gets paid carries risk '
+                              '[X_UODDIMvFs @ 00:06:51]. Across all four, the baseline is identical: '
+                              'assume the clause exists, plan for buyer default, and never let the '
+                              "underlying payment depend on one person's honesty."],
+               'table': {'caption': 'Where the wrap practitioners agree on structure, spread, and baseline '
+                                    'risk',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioners Report',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Single payment flows through the wrap holder',
+                                   'Buyer makes one payment to the wrap holder, who remits the underlying '
+                                   'first-mortgage payment',
+                                   'Treat the underlying payment as the first claim on every dollar '
+                                   'collected',
+                                   'kris haskins ([kM__5b36grI @ 00:03:01])'],
+                                  ['A wrap needs at least two notes',
+                                   'Two or more separate notes get rolled together; no existing debt means '
+                                   'nothing to wrap',
+                                   'Free-and-clear property gets a plain seller carryback, not a wrap '
+                                   'structure',
+                                   'Pace Morby ([hTxjhDN2Cyo @ 00:07:11])'],
+                                  ['Spread is earned on the full balance',
+                                   'All-inclusive wrap earns the full rate on equity plus the rate gap on '
+                                   'the underlying loan',
+                                   'Price the wrap above the underlying rate to capture both spreads at '
+                                   'once',
+                                   'kris haskins ([kM__5b36grI @ 00:10:56])'],
+                                  ['Break-even floor on the wrap interest rate',
+                                   "The seller must charge at least the existing loan's rate just to break "
+                                   'even on the deal',
+                                   'Never set the wrap rate below the underlying contract rate under any '
+                                   'negotiation',
+                                   'PrepAgent ([-8VDqc249XY @ 00:01:53])'],
+                                  ['Due-on-sale clause is the landmine underneath',
+                                   'Almost every regular mortgage lets the lender call the full balance '
+                                   'once title transfers',
+                                   'Build a plan with refinance path, reserves, and timeline that survives '
+                                   'the call',
+                                   'Tim Talks Real Estate ([Dklhw3jMfVo @ 00:03:16])'],
+                                  ['Third-party servicer pays the underlying lender first',
+                                   'Servicer collects from the buyer, pays the mortgage company, then '
+                                   'sends the seller the remainder',
+                                   'Route every buyer payment through a servicer rather than straight to '
+                                   'the seller',
+                                   "Scott Horne's Owner Finance Network ([VDXOvtqzbZk @ 00:07:32])"],
+                                  ["Buyer default lands on the seller's original loan",
+                                   'If the wrap buyer defaults, the seller is still legally responsible '
+                                   'for the original mortgage',
+                                   'Screen wrap buyers hard because the underlying lender only ever sees '
+                                   'the seller',
+                                   'Shop Rates ([Z_X2-JRfBYs @ 00:01:41])']]}},
+              {'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Bill Brunchick's core street play is to buy on a mirror wrap and sell on an "
+                              'equity wrap. When there is little or no equity, the note to the seller '
+                              'mirrors the underlying loan exactly: if the first has 26 years left at 4% '
+                              'with a $1,200 monthly payment, the wrap note carries the same terms and the '
+                              'seller gets a little cash at closing [kM__5b36grI @ 00:12:11]. On the exit, '
+                              'the operator marks up both price and rate: on a $100,000 house over an '
+                              '$80,000 first at 4%, Brunchick sells at $105,000 because owner financing '
+                              'earns a premium, then charges about 6.25%, catching 6.25% on the $25,000 '
+                              'equity and 2.25% on the rest [kM__5b36grI @ 00:13:23]. Scott Horne uses the '
+                              'acquisition mirror wrap to solve a different problem: a seller with 25 '
+                              'years left at 4% on $100,000 who wants out in five years gets a wrap with '
+                              'identical payment and amortization plus a built-in five-year balloon '
+                              '[VDXOvtqzbZk @ 00:02:40]. Epic Real Estate builds the wrap from parts, '
+                              'combining a $175,000 first at 6% and a $75,000 seller carryback at 8% into '
+                              'one $1,599 payment, $1,049 to the lender and $550 to the seller '
+                              '[5n5x76_xKLU @ 00:03:06]. Epic notes the blended rate lands closer to the '
+                              '6% than the 8% because the first carries more balance.',
+                              'Chris Goff publishes the cleanest full-cycle numbers. The seller owes '
+                              '$300,000 at 3.5%, a $1,347.13 payment with 20 years left; the wrap sells at '
+                              '$350,000 with $10,000 down at 5%, amortized over 30 years for a $1,878.88 '
+                              'payment with a 10-year balloon [X_UODDIMvFs @ 00:04:08]. That produces '
+                              '$531.75 a month, or $63,810 over 120 months, plus a $52,415.31 gap between '
+                              'the two amortized balances, for roughly $126,000 total profit including the '
+                              "down payment [X_UODDIMvFs @ 00:05:32]. Goff's split: the $40,000 above the "
+                              'first earns the full 5%, the $300,000 underneath earns only the 1.5% '
+                              'difference, and there are no repair, turnover, or management costs. Bill '
+                              'Brunchick says equity wraps work best on high-end homes: a $2,400 '
+                              'all-inclusive payment that only rents for $2,500 is a dead rental, but '
+                              'pushing taxes and insurance to the buyer, who pays PITI while the operator '
+                              'pays only P and I, can catch $400 to $600 a month with no landlording '
+                              '[kM__5b36grI @ 00:14:43]. Maximilian Dier prices for buyers the banks '
+                              'rejected, such as cash-business owners and people whose credit was wrecked '
+                              'by divorce, quoting 360-month terms at 8 to 10% with 20% down [49GchpJCUB0 '
+                              "@ 00:06:36]. Dier's rule for every one of those deals: never overpay, "
+                              'because a buyer who refinances early leaves no spread to recover the loss.',
+                              'The paper stack is specific. Brunchick attaches a wraparound addendum to '
+                              'whatever standard purchase contract the operator already uses, with a '
+                              'choice between mirror wrap and equity wrap, then executes an all-inclusive '
+                              'wraparound promissory note that is never recorded; the recorded security '
+                              'instrument is a standard deed of trust with a wraparound rider, making it '
+                              'an AITD, or a wraparound rider to the mortgage in mortgage states '
+                              '[kM__5b36grI @ 00:17:27]. Brunchick is blunt that notarizing and recording '
+                              'a note means nothing; the recorded rider is what gives the world notice '
+                              'that this is a wraparound and not just a second. In Texas, Scott Horne adds '
+                              'the underlying lien disclosure notice and finance disclosure notice, '
+                              'delivered to the buyer in Spanish and English at bare minimum [VDXOvtqzbZk '
+                              '@ 00:06:45]. When buying an existing wrap note on top of a subject-to, '
+                              'Horne wants a power of attorney, an authorization form, the mortgage '
+                              "statement, the seller's Social Security number and date of birth, and the "
+                              'online password [ZLt_A_LBSu0 @ 00:03:16]. Note Unlimited tracks the '
+                              'structure in software: two notes on the same property address, the wrap '
+                              'flagged with the wraparound parameter set to yes, linked under a related '
+                              'notes tab with amortization, cash flow and NPV views [gUg3ObEfMB0 @ '
+                              '00:02:25].'],
+               'table': {'caption': 'Wrap deal math as taught by the practitioners, underlying loan to '
+                                    'spread',
+                         'headers': ['Deal Structure',
+                                     'Underlying Loan',
+                                     'Wrap Terms Taught',
+                                     'Spread or Result',
+                                     'Expert Source'],
+                         'rows': [['Equity wrap resale on a low-equity acquisition',
+                                   '$80,000 first at 4% under a $100,000 house',
+                                   'Resold at $105,000 at about 6.25% interest to the buyer',
+                                   '6.25% on the $25,000 equity plus 2.25% on the underlying balance',
+                                   'kris haskins ([kM__5b36grI @ 00:13:23])'],
+                                  ['Full-cycle wrap with 10-year balloon',
+                                   '$300,000 at 3.5%, $1,347.13 payment, 20 years left',
+                                   '$350,000 price, $10,000 down, 5%, 30-year amortization, 10-year '
+                                   'balloon',
+                                   '$531.75 monthly, $63,810 over 120 months, about $126,000 total profit',
+                                   'Chris Goff ([X_UODDIMvFs @ 00:05:32])'],
+                                  ['Subject-to acquisition resold as a wrap',
+                                   '$400,000 FHA loan at 3% with $100,000 cash to the seller',
+                                   'Resold for $600,000 with seller financing at 8% interest',
+                                   '5% spread on the $400,000 plus the full 8% on $200,000 equity',
+                                   'Maximilian Dier ([49GchpJCUB0 @ 00:04:36])'],
+                                  ['Subject-to plus seller carryback wrapped into one',
+                                   '$175,000 existing first at 6% with a $1,049 monthly payment',
+                                   '$75,000 seller carryback at 8% with a $550 monthly payment',
+                                   'Single $1,599 payment with a blended rate closer to 6% than 8%',
+                                   'Epic Real Estate ([5n5x76_xKLU @ 00:03:06])'],
+                                  ['Seller-side wrap tracked in note software',
+                                   "$100,000 remaining at 4% on Bob's existing mortgage",
+                                   '$150,000 wraparound mortgage to Alice at 6% interest',
+                                   'Rate spread plus the $50,000 added principal drive the monthly cash '
+                                   'flow',
+                                   'Note Unlimited ([gUg3ObEfMB0 @ 00:01:31])'],
+                                  ['Acquisition mirror wrap with a balloon',
+                                   "$100,000 at 4% with 25 years remaining on the seller's loan",
+                                   'Identical payment and 25-year amortization with a five-year balloon '
+                                   'added',
+                                   "Meets the seller's early-payoff demand without modifying the "
+                                   'underlying mortgage',
+                                   "Scott Horne's Owner Finance Network ([VDXOvtqzbZk @ 00:02:40])"]]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Wrap Spread Plays Operators Actually Run',
+                           'body': 'Four field moves from operators who structure, buy, and resell wraps '
+                                   'on live underlying loans.',
+                           'items': ['Buy on a mirror wrap when there is little or no equity, then sell on '
+                                     'an equity wrap that marks up both price and interest rate so the '
+                                     'spread runs on the full balance [kris haskins — kM__5b36grI @ '
+                                     '00:13:02].',
+                                     'Before paying off or selling a property bought on a balloon wrap, '
+                                     'ask the seller to renew and extend for another three or five years; '
+                                     "if you don't ask, you don't get [Scott Horne's Owner Finance Network "
+                                     '— VDXOvtqzbZk @ 00:03:10].',
+                                     'Target absentee owners with property values above $300,000, at least '
+                                     "20% equity, and two-plus years of ownership; Goff's nationwide query "
+                                     'returned 7,284,401 properties, and low-equity owners are more likely '
+                                     'to deal [Chris Goff — X_UODDIMvFs @ 00:00:17].',
+                                     'When a wrap buyer brings a new buyer who wants to assume, buy from '
+                                     'the seller for the same down payment and resell on a new wrap with '
+                                     'the same terms, so the note on file belongs to a borrower you '
+                                     "processed and the note-sale exit stays clean [Scott Horne's Owner "
+                                     'Finance Network — ZLt_A_LBSu0 @ 00:05:49].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pull a Targeted Seller List',
+                              'action': 'Query absentee owners with moderate equity and two-plus years of '
+                                        'ownership before spending on mail or skip tracing.',
+                              'detail': 'Goff sets equity at 20% rather than high-equity only because '
+                                        'owners with little equity are more likely to work with you when '
+                                        'they cannot afford to sell with commissions [Chris Goff — '
+                                        'X_UODDIMvFs @ 00:02:21].'},
+                             {'step': 2,
+                              'title': 'Acquire and Lock Control of the Underlying Loan',
+                              'action': 'Take the deed subject-to or on a mirror wrap, and collect '
+                                        'everything needed to service the underlying debt yourself.',
+                              'detail': 'Brunchick mirrors the underlying note when there is no equity and '
+                                        'adds a little cash at closing [kris haskins — kM__5b36grI @ '
+                                        '00:12:31]; Horne demands the mortgage statement, seller '
+                                        'identifiers, and the online password to control the underlying '
+                                        "[Scott Horne's Owner Finance Network — ZLt_A_LBSu0 @ 00:03:32]."},
+                             {'step': 3,
+                              'title': 'Underwrite the Wrap Buyer',
+                              'action': 'Run consumer buyers through a residential mortgage loan '
+                                        'originator and review the loan package before approving the sale.',
+                              'detail': 'Horne checks ability to repay and debt-to-income: a 30% DTI is '
+                                        'reasonable, while a buyer at 70% DTI simply cannot afford the '
+                                        "house [Scott Horne's Owner Finance Network — VDXOvtqzbZk @ "
+                                        '00:06:09].'},
+                             {'step': 4,
+                              'title': 'Paper, Record, and Service the Wrap',
+                              'action': 'Attach the wrap addendum, sign the unrecorded all-inclusive note, '
+                                        'record the deed of trust with the wraparound rider, and set up '
+                                        'third-party servicing.',
+                              'detail': 'Brunchick records the wraparound rider so the AITD gives notice '
+                                        'it is a wrap, not just a second [kris haskins — kM__5b36grI @ '
+                                        "00:17:27]; Horne's servicer pays the underlying mortgage company "
+                                        "first and the seller last [Scott Horne's Owner Finance Network — "
+                                        'VDXOvtqzbZk @ 00:07:32].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ["Pace Morby draws the hardest line on the buy side: 'we never want to buy on "
+                              "a wrap we want to sell on a wrap' [hTxjhDN2Cyo @ 00:05:25]. Their reason is "
+                              "the blended rate. In Morby's car example, a $459 payment at six percent and "
+                              'a $200 equity payment at zero percent become one $659 payment at six '
+                              'percent once wrapped, so the equity slice that could have carried zero '
+                              "percent now bleeds interest. Morby's fix is to separate the notes and "
+                              "acquire on a 'hybrid': subject-to on the existing debt, plus a separate "
+                              'seller-finance note on the equity with its own terms [hTxjhDN2Cyo @ '
+                              '00:05:40]. Attorney Bill Brunchick, who owns an escrow company that '
+                              'specializes in wraps and lost count of closings after about 1,200, runs the '
+                              'opposite playbook: buy on a mirror wrap when there is little or no equity, '
+                              'then sell on an equity wrap with the price and interest rate marked up '
+                              '[kM__5b36grI @ 00:13:02]. Brian Gibbons at REISkills sits in a third camp, '
+                              'calling buying on a wraparound or AITD a great idea for investors renting '
+                              'out or running lease options, while flatly telling operators never to sell '
+                              'their own property on a seller-held mortgage or wraparound because the '
+                              'seller will have to foreclose if the buyer defaults [9rVA292DHlY @ '
+                              '00:05:09].',
+                              'The second split is whose side the structure protects. Bill Brunchick '
+                              'prefers to buy straight subject-to and simply take the deed, but concedes '
+                              'that under a bare sub-to the seller is without recourse if the buyer stops '
+                              'paying; an all-inclusive wrap or AITD hands the seller a lien and a '
+                              'foreclosure path to get the property back [kM__5b36grI @ 00:11:53]. Chris '
+                              'Goff reports that attorneys are more likely to do a wrap than a sub-to '
+                              'because subject-to protects the buyer, not the seller, and a seller '
+                              'shopping for another property can show the wrap income. Yet Goff flips back '
+                              'to subject-to when seller death is the worry, because a sub-to takes the '
+                              'seller out of the picture and nobody needs their signature down the road '
+                              '[X_UODDIMvFs @ 00:07:35]. Ashland Mortgage splits it on payment: subject-to '
+                              'delivers the absolute lowest payment, while the wrap is more attractive to '
+                              'sellers who want their equity paying them every month, and Ashland treats '
+                              'the due-on-sale call as rarely enforced when payments stay on time '
+                              '[IKu9qf2jZBk @ 00:00:45]. Tim Talks Real Estate, in the business since '
+                              '2007, rejects that comfort outright: treat the risk as real, and never '
+                              'build a plan that only works if the bank never notices [Dklhw3jMfVo @ '
+                              '00:04:06].',
+                              'Exit structure splits again by state and by appetite for control. Brunchick '
+                              'buys on a deed subject-to everywhere, then sells on an unrecorded '
+                              'installment land contract and keeps title until the buyer pays off, except '
+                              'in Texas, where the rules on installment land contracts force a wraparound '
+                              'deed of trust on both the buy and the sell [kM__5b36grI @ 00:18:44]. Pace '
+                              'Morby hits the same Texas wall from the other direction, calling executory '
+                              'contracts illegal there and naming Texas the only state where they cannot '
+                              'be done [hTxjhDN2Cyo @ 00:02:40]. On stacking, Ron LeGrand gives a one-line '
+                              'green light: yes, you can do a wrap over a wrap [OuQxeQu2HJA @ 00:01:32]. '
+                              "Scott Horne, whose Dallas lunch group started calling a wrap of a wrap 'sub "
+                              "3,' refuses to let a downstream buyer simply assume an existing wrap. Horne "
+                              'instead buys the house from the seller for the same down payment the new '
+                              'buyer is paying and simultaneously sells to that buyer on a fresh wrap with '
+                              'the same terms, becoming the direct mortgage holder and running the buyer '
+                              "through loan processing [ZLt_A_LBSu0 @ 00:05:49]. Horne's logic is "
+                              'exit-first: if the assumption simply passes through, there is no telling '
+                              'whose mortgage is being sold in a future note sale or what financial '
+                              'information exists on that borrower.'],
+               'table': {'caption': 'Side-by-side playbooks where wrap practitioners split',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Structure used on the acquisition side of the deal',
+                                   'Never buy on a wrap; acquire on a hybrid with separate sub-to and '
+                                   'seller-finance notes',
+                                   'Buy on a mirror wrap when equity is thin, then sell on a marked-up '
+                                   'equity wrap',
+                                   'Pace Morby ([hTxjhDN2Cyo @ 00:05:40]) vs kris haskins ([kM__5b36grI @ '
+                                   '00:13:02])'],
+                                  ['Whether to protect the seller or the buyer at closing',
+                                   'AITD gives the seller a lien and foreclosure path instead of zero '
+                                   'recourse under sub-to',
+                                   'Switch to subject-to when seller death could freeze future signatures '
+                                   'on the deal',
+                                   'kris haskins ([kM__5b36grI @ 00:11:53]) vs Chris Goff ([X_UODDIMvFs @ '
+                                   '00:07:35])'],
+                                  ['How seriously to price the due-on-sale clause',
+                                   'Rarely enforced when payments stay on time; shield the transfer with '
+                                   'land trusts or LLCs',
+                                   'Treat the risk as real and build a plan that survives the day the bank '
+                                   'notices',
+                                   'Ashland Mortgage ([IKu9qf2jZBk @ 00:01:01]) vs Tim Talks Real Estate '
+                                   '([Dklhw3jMfVo @ 00:04:06])'],
+                                  ['Instrument used when selling to the end buyer',
+                                   'Sell on an unrecorded installment land contract and keep title until '
+                                   'the buyer pays off',
+                                   'In Texas, executory contracts are out, so buy and sell on wraparound '
+                                   'deeds of trust',
+                                   'kris haskins ([kM__5b36grI @ 00:18:44]) and Pace Morby ([hTxjhDN2Cyo @ '
+                                   '00:02:40])'],
+                                  ['Handling a buyer who wants into an existing wrap',
+                                   'A wrap over a wrap is allowed and workable as a straight stack',
+                                   'Buy from the seller and re-wrap as direct holder rather than letting '
+                                   'the assumption pass',
+                                   "Ron LeGrand ([OuQxeQu2HJA @ 00:01:32]) vs Scott Horne's Owner Finance "
+                                   'Network ([ZLt_A_LBSu0 @ 00:05:49])'],
+                                  ['Price point where the wrap math works best',
+                                   'Wrap high-end homes that cannot rent for the payment; buy low-end on a '
+                                   'wrap and rent',
+                                   'Target absentee owners above $300,000 with at least 20 percent equity '
+                                   'and two years owned',
+                                   'kris haskins ([kM__5b36grI @ 00:13:39]) and Chris Goff ([X_UODDIMvFs @ '
+                                   '00:01:36])'],
+                                  ['Selling your own property on a wraparound mortgage',
+                                   'Sell on a wrap for higher price, higher rate, less rehab work, and '
+                                   'note-sale exits',
+                                   'Never sell your own property on a wraparound because the seller must '
+                                   'foreclose on default',
+                                   "Scott Horne's Owner Finance Network ([VDXOvtqzbZk @ 00:03:57]) vs "
+                                   'REISkills.com - Where you learn Real Estate Investing ([9rVA292DHlY @ '
+                                   '00:05:09])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The landmine every practitioner names is the due-on-sale clause. Tim Talks '
+                              'Real Estate spells out the mechanics: almost every regular mortgage carries '
+                              'the clause, a wrap almost always transfers the property while the original '
+                              'loan is still open, and the lender can demand the whole balance, not the '
+                              'monthly payment but the whole thing, the day they find out [Dklhw3jMfVo @ '
+                              '00:03:16]. Brian Gibbons calls it the main problem with wraps and adds the '
+                              "buyer-side trap: the seller collects the buyer's payment and then never "
+                              'pays the first mortgage [9rVA292DHlY @ 00:01:49]. Gibbons handles both by '
+                              "putting the property in a land trust and routing the buyer's money to a "
+                              'third-party payee that pays the mortgage first and sends the rest to the '
+                              'seller. Scott Horne runs the same defense through a loan servicer: buyer '
+                              'pays servicer, servicer pays the underlying lender first, seller gets '
+                              "whatever is left. Horne calls it the industry's fraud preventer, because a "
+                              'later default can then only mean the buyer missed, not that the seller '
+                              'pocketed the money [VDXOvtqzbZk @ 00:07:47]. Chris Goff wants an escrow '
+                              'company coordinating the monthly payment for the same reason, flagging the '
+                              'risk in just paying the seller and hoping the seller is making the payment '
+                              '[X_UODDIMvFs @ 00:06:51].',
+                              "The second failure mode is the buyer simply stopping. PrepAgent's "
+                              "Sam-and-Bill example flips from win-win to 'not so fast': if Bill stops "
+                              'paying, Sam cannot pay the existing mortgage, the bank gets angry and it '
+                              'becomes a big issue [uHpaHL4qN84 @ 00:02:45]. Shop Rates calls buyer '
+                              'default the biggest risk point because the seller stays legally responsible '
+                              'for the original mortgage, telling sellers to choose their buyers wisely '
+                              'and buyers to make sure the seller is financially stable [Z_X2-JRfBYs @ '
+                              '00:01:26]. Ron LeGrand puts the credit cost on the table: selling on a wrap '
+                              'means nobody pays off the underlying debt, so a personally guaranteed loan '
+                              "stays the seller's responsibility for as long as it takes the buyer to cash "
+                              'them out. With guaranteed debt in play, LeGrand says to be more selective '
+                              'on who goes in the house, or even sell at retail price right now and get '
+                              'that debt out of your life [OuQxeQu2HJA @ 00:05:15]. Brian Gibbons adds the '
+                              'closing-table bleed: title transfers and a new mortgage or trust deed gets '
+                              'recorded, attorney fees stack on top, and if the seller is getting no money '
+                              'down they may refuse to bring cash, so the investor can wind up paying all '
+                              'the costs just to get the deal done [9rVA292DHlY @ 00:04:50].',
+                              'Then come the economics checks. Maximilian Dier says the place people get '
+                              'in trouble is overpaying: buy at $300,000 on a house only worth $270,000, '
+                              'wrap it out at $280,000 telling yourself you will make it up over time, and '
+                              'if the buyer refinances or pays the loan off in full, you are screwed. '
+                              "Dier's rule is to buy under market value with a low interest rate and build "
+                              'in instant equity [49GchpJCUB0 @ 00:09:19]. Bill Brunchick runs the '
+                              'rent-versus-wrap test on high-end homes: a $2,400 all-inclusive payment '
+                              'that only rents for $2,500 is not worth the risk, but pushing taxes and '
+                              'insurance onto a wrap buyer and raising the rate can catch a spread of $400 '
+                              'to $600 a month with no landlording responsibility [kM__5b36grI @ '
+                              '00:14:43]. PrepAgent sets the floor: to break even, the seller must charge '
+                              'at least as much interest as the existing loan costs, which is why sellers '
+                              'negotiate the highest rate they can so the first mortgage gets paid while '
+                              "the deal still earns a profit [-8VDqc249XY @ 00:01:35]. Scott Horne's buyer "
+                              'screen is the debt-to-income check run through a residential mortgage loan '
+                              'originator: a 30 percent DTI is pretty reasonable, but at 70 percent the '
+                              'bottom line is the buyer cannot afford the house [VDXOvtqzbZk @ 00:06:09].'],
+               'table': {'caption': 'Wrap failure modes, what triggered them, and the practitioner '
+                                    'countermeasure',
+                         'headers': ['Failure Mode',
+                                     'What Goes Wrong',
+                                     'Operator Countermeasure',
+                                     'Expert Source'],
+                         'rows': [['Underlying lender calls the loan due',
+                                   'Transfer gets discovered and the lender demands the entire balance at '
+                                   'once',
+                                   'Have a refinance path, reserves, and a timeline before anyone signs '
+                                   'the wrap',
+                                   'Tim Talks Real Estate ([Dklhw3jMfVo @ 00:05:31])'],
+                                  ["Seller pockets the buyer's wrap payment",
+                                   'Buyer pays the seller, who then never pays the first mortgage',
+                                   'Land trust plus third-party payee that pays the mortgage first, '
+                                   'remainder to seller',
+                                   'REISkills.com - Where you learn Real Estate Investing ([9rVA292DHlY @ '
+                                   '00:02:06])'],
+                                  ['Buyer stops paying the wrap note',
+                                   'Seller cannot cover the existing mortgage and the bank might decide to '
+                                   'foreclose',
+                                   "Screen buyers hard and treat the seller's own payment risk as live",
+                                   'Edspira ([OXZZS-KeaXc @ 00:08:18])'],
+                                  ['Overpaying on the acquisition before wrapping',
+                                   'Buyer refinances or pays off in full and the hoped-for spread never '
+                                   'arrives',
+                                   'Buy under market value with a low rate and instant equity built in',
+                                   'Maximilian Dier ([49GchpJCUB0 @ 00:09:34])'],
+                                  ['Personally guaranteed underlying loan stays on credit',
+                                   'Nobody pays off the underlying debt, so the seller stays on the hook',
+                                   'Be more selective on the buyer, or sell at retail to clear the debt',
+                                   'Ron LeGrand ([OuQxeQu2HJA @ 00:05:15])'],
+                                  ['Buying a wrap note without control of the first',
+                                   'Investor cannot navigate or verify payments on the underlying mortgage',
+                                   'Collect power of attorney, authorization form, statement, SSN, date of '
+                                   'birth, and online password',
+                                   "Scott Horne's Owner Finance Network ([ZLt_A_LBSu0 @ 00:03:16])"],
+                                  ['Buying on a land contract instead of a deed',
+                                   'Seller can pick up liens, get divorced, or file bankruptcy against the '
+                                   'title',
+                                   "Get the deed up front so the seller's problems no longer affect you",
+                                   'kris haskins ([kM__5b36grI @ 00:19:45])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before a wrap closes',
+                           'body': 'Each check below comes from a trap a practitioner named or hit '
+                                   'directly. Fail any one and the wrap does not close as structured.',
+                           'items': ['Name the exact plan if the underlying lender calls the loan due: '
+                                     'refinance path, reserves, and a timeline [Tim Talks Real Estate — '
+                                     'Dklhw3jMfVo @ 00:05:31].',
+                                     'Route every buyer payment through a loan servicer that pays the '
+                                     "underlying lender first and the seller last [Scott Horne's Owner "
+                                     'Finance Network — VDXOvtqzbZk @ 00:07:47].',
+                                     'Never record the note itself; record the deed of trust or mortgage '
+                                     'with the wraparound rider as the security instrument [kris haskins — '
+                                     'kM__5b36grI @ 00:17:07].',
+                                     'Before buying into a wrap of a wrap, check whether the front-end '
+                                     "seller is an investor who may call that loan due [Scott Horne's "
+                                     'Owner Finance Network — ZLt_A_LBSu0 @ 00:07:45].']}}],
+ 'pull_quote': "'Don't build a plan that only works if the bank never notices. Build one that survives the "
+               "day it does.' — Tim Talks Real Estate (Dklhw3jMfVo @ 00:04:06).",
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Run the mirror-in, equity-out spread: on a $100,000 house with an $80,000 first at '
+                      '4 percent, sell at $105,000 at about six and a quarter percent to earn that rate on '
+                      'the $25,000 equity and two and a quarter percent on the underlying [kris haskins — '
+                      'kM__5b36grI @ 00:13:23].',
+                      'Attach the wraparound addendum to the standard purchase contract and mark whether '
+                      'the deal is a mirror wrap or an equity wrap [kris haskins — kM__5b36grI @ '
+                      '00:15:56].',
+                      'Collect the underlying-loan control package before buying any wrap note: power of '
+                      'attorney, authorization form, mortgage statement, seller contact details, SSN, date '
+                      "of birth, and online password [Scott Horne's Owner Finance Network — ZLt_A_LBSu0 @ "
+                      '00:03:16].',
+                      "Set up a third-party payee so the buyer's payment hits the first mortgage first and "
+                      'only the remainder goes to the seller [REISkills.com - Where you learn Real Estate '
+                      'Investing — 9rVA292DHlY @ 00:02:06].',
+                      'In Texas, deliver the underlying lien disclosure and finance disclosure notices to '
+                      "the buyer in both Spanish and English at bare minimum [Scott Horne's Owner Finance "
+                      'Network — VDXOvtqzbZk @ 00:06:45].',
+                      'Model the deal as two linked notes on the same property address, flagging the wrap '
+                      'note so amortization, cash flow, and NPV track side by side [Note Unlimited — '
+                      'gUg3ObEfMB0 @ 00:02:07].'],
+ 'statutory_citations': [{'title': 'kris haskins — What is a Wraparound Wrap Note Mortgage-Subject to-Land '
+                                   'Contract [00:11:16]',
+                          'url': 'https://www.youtube.com/watch?v=kM__5b36grI&t=676s',
+                          'relevance': 'Primary practitioner testimony on how the wrap preserves the '
+                                       'low-rate underlying loan and catches a spread on both the equity '
+                                       'and the existing financing.'},
+                         {'title': 'Tim Talks Real Estate — Wraparound Mortgages Explained How They Work '
+                                   'and the Due on Sale Landmine [00:02:57]',
+                          'url': 'https://www.youtube.com/watch?v=Dklhw3jMfVo&t=177s',
+                          'relevance': 'Primary practitioner testimony on the due-on-sale clause and why a '
+                                       'wrap transfer exposes the deal to a full-balance call.'},
+                         {'title': "Scott Horne's Owner Finance Network — Can You Buy a Wraparound "
+                                   'Mortgage  How “Sub 3” Deals Work [00:05:49]',
+                          'url': 'https://www.youtube.com/watch?v=ZLt_A_LBSu0&t=349s',
+                          'relevance': 'Primary practitioner testimony on restructuring a downstream wrap '
+                                       'so the investor becomes the direct mortgage holder.'},
+                         {'title': 'Pace Morby — Understanding Real Estate Wraps | Wrap Around Mortgages '
+                                   'Explained [00:05:25]',
+                          'url': 'https://www.youtube.com/watch?v=hTxjhDN2Cyo&t=325s',
+                          'relevance': 'Primary practitioner testimony on selling on a wrap while '
+                                       'acquiring on a hybrid with separated notes.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'kM__5b36grI',
+                       'title': 'What is a Wraparound Wrap Note Mortgage-Subject to-Land Contract',
+                       'channel': 'kris haskins',
+                       'author': 'kris haskins',
+                       'text': 'If the underlying is four percent and you took a second at six percent '
+                               "you're only making six percent on the second; if you did a wrap "
+                               "all-inclusive for a hundred grand at six percent you're making six percent "
+                               'on the 20,000 equity and another two percent, the difference, on the first '
+                               '80.',
+                       'tip': 'If the underlying is four percent and you took a second at six percent '
+                              "you're only making six percent on the second; if you did a wrap "
+                              "all-inclusive for a hundred grand at six percent you're making six percent "
+                              'on the 20,000 equity and another two percent, the difference, on the first '
+                              '80.',
+                       'timestamp': 656,
+                       'timestamp_seconds': 656,
+                       'timestamp_label': '[00:10:56]',
+                       'url': 'https://www.youtube.com/watch?v=kM__5b36grI&t=656s',
+                       'markdown': '[00:10:56](https://www.youtube.com/watch?v=kM__5b36grI&t=656s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kM__5b36grI',
+                       'title': 'What is a Wraparound Wrap Note Mortgage-Subject to-Land Contract',
+                       'channel': 'kris haskins',
+                       'author': 'kris haskins',
+                       'text': "Don't be trying to record a note; we've seen people notarize notes and "
+                               "record them, and those don't mean anything, you need a security "
+                               'instrument, a mortgage or deed of trust.',
+                       'tip': "Don't be trying to record a note; we've seen people notarize notes and "
+                              "record them, and those don't mean anything, you need a security instrument, "
+                              'a mortgage or deed of trust.',
+                       'timestamp': 1012,
+                       'timestamp_seconds': 1012,
+                       'timestamp_label': '[00:16:52]',
+                       'url': 'https://www.youtube.com/watch?v=kM__5b36grI&t=1012s',
+                       'markdown': '[00:16:52](https://www.youtube.com/watch?v=kM__5b36grI&t=1012s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VDXOvtqzbZk',
+                       'title': 'Wraparound Mortgage 101: How Wraps Work, When to Use Them, and Required '
+                                'Disclosures',
+                       'channel': "Scott Horne's Owner Finance Network",
+                       'author': "Scott Horne's Owner Finance Network",
+                       'text': 'The servicer pays your mortgage company first and pays you whatever is '
+                               'left over in the end; we kind of call that our fraud preventer in the '
+                               'industry.',
+                       'tip': 'The servicer pays your mortgage company first and pays you whatever is left '
+                              'over in the end; we kind of call that our fraud preventer in the industry.',
+                       'timestamp': 467,
+                       'timestamp_seconds': 467,
+                       'timestamp_label': '[00:07:47]',
+                       'url': 'https://www.youtube.com/watch?v=VDXOvtqzbZk&t=467s',
+                       'markdown': '[00:07:47](https://www.youtube.com/watch?v=VDXOvtqzbZk&t=467s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hTxjhDN2Cyo',
+                       'title': 'Understanding Real Estate Wraps | Wrap Around Mortgages Explained',
+                       'channel': 'Pace Morby',
+                       'author': 'Pace Morby',
+                       'text': 'So we never want to buy on a wrap, we want to sell on a wrap.',
+                       'tip': 'So we never want to buy on a wrap, we want to sell on a wrap.',
+                       'timestamp': 325,
+                       'timestamp_seconds': 325,
+                       'timestamp_label': '[00:05:25]',
+                       'url': 'https://www.youtube.com/watch?v=hTxjhDN2Cyo&t=325s',
+                       'markdown': '[00:05:25](https://www.youtube.com/watch?v=hTxjhDN2Cyo&t=325s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZLt_A_LBSu0',
+                       'title': 'Can You Buy a Wraparound Mortgage  How “Sub 3” Deals Work',
+                       'channel': "Scott Horne's Owner Finance Network",
+                       'author': "Scott Horne's Owner Finance Network",
+                       'text': "I'm going to buy the house from the seller for the same down payment that "
+                               "the buyer is paying, and at the same time I'm going to sell it to the "
+                               'back-end buyer with a new wraparound mortgage.',
+                       'tip': "I'm going to buy the house from the seller for the same down payment that "
+                              "the buyer is paying, and at the same time I'm going to sell it to the "
+                              'back-end buyer with a new wraparound mortgage.',
+                       'timestamp': 349,
+                       'timestamp_seconds': 349,
+                       'timestamp_label': '[00:05:49]',
+                       'url': 'https://www.youtube.com/watch?v=ZLt_A_LBSu0&t=349s',
+                       'markdown': '[00:05:49](https://www.youtube.com/watch?v=ZLt_A_LBSu0&t=349s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZLt_A_LBSu0',
+                       'title': 'Can You Buy a Wraparound Mortgage  How “Sub 3” Deals Work',
+                       'channel': "Scott Horne's Owner Finance Network",
+                       'author': "Scott Horne's Owner Finance Network",
+                       'text': 'Can you get a power of attorney from that original seller? Maybe. Can you '
+                               'get an authorization form from that original seller? Maybe.',
+                       'tip': 'Can you get a power of attorney from that original seller? Maybe. Can you '
+                              'get an authorization form from that original seller? Maybe.',
+                       'timestamp': 182,
+                       'timestamp_seconds': 182,
+                       'timestamp_label': '[00:03:02]',
+                       'url': 'https://www.youtube.com/watch?v=ZLt_A_LBSu0&t=182s',
+                       'markdown': '[00:03:02](https://www.youtube.com/watch?v=ZLt_A_LBSu0&t=182s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'X_UODDIMvFs',
+                       'title': 'What is a Seller Finance Wrap Around Mortgage | EXPLAINED!',
+                       'channel': 'Chris Goff',
+                       'author': 'Chris Goff',
+                       'text': "There's some risk involved when you just pay the seller and hope that the "
+                               "seller's making the payment, so using an escrow company would definitely "
+                               'speed this process up.',
+                       'tip': "There's some risk involved when you just pay the seller and hope that the "
+                              "seller's making the payment, so using an escrow company would definitely "
+                              'speed this process up.',
+                       'timestamp': 411,
+                       'timestamp_seconds': 411,
+                       'timestamp_label': '[00:06:51]',
+                       'url': 'https://www.youtube.com/watch?v=X_UODDIMvFs&t=411s',
+                       'markdown': '[00:06:51](https://www.youtube.com/watch?v=X_UODDIMvFs&t=411s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uHpaHL4qN84',
+                       'title': 'Wrap Around Mortgage',
+                       'channel': 'PrepAgent',
+                       'author': 'PrepAgent',
+                       'text': "Keep in mind there's a lot of risk for Sam. This has to be assumable and "
+                               'not have a due on sale clause.',
+                       'tip': "Keep in mind there's a lot of risk for Sam. This has to be assumable and "
+                              'not have a due on sale clause.',
+                       'timestamp': 148,
+                       'timestamp_seconds': 148,
+                       'timestamp_label': '[00:02:28]',
+                       'url': 'https://www.youtube.com/watch?v=uHpaHL4qN84&t=148s',
+                       'markdown': '[00:02:28](https://www.youtube.com/watch?v=uHpaHL4qN84&t=148s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Dklhw3jMfVo',
+                       'title': 'Wraparound Mortgages Explained How They Work and the Due on Sale Landmine',
+                       'channel': 'Tim Talks Real Estate',
+                       'author': 'Tim Talks Real Estate',
+                       'text': "Don't build a plan that only works if the bank never notices. Build one "
+                               'that survives the day it does.',
+                       'tip': "Don't build a plan that only works if the bank never notices. Build one "
+                              'that survives the day it does.',
+                       'timestamp': 246,
+                       'timestamp_seconds': 246,
+                       'timestamp_label': '[00:04:06]',
+                       'url': 'https://www.youtube.com/watch?v=Dklhw3jMfVo&t=246s',
+                       'markdown': '[00:04:06](https://www.youtube.com/watch?v=Dklhw3jMfVo&t=246s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '49GchpJCUB0',
+                       'title': 'What is a Wraparound Mortgage in Real Estate?',
+                       'channel': 'Maximilian Dier',
+                       'author': 'Maximilian Dier',
+                       'text': "You cannot overpay for a property if you're wrapping it.",
+                       'tip': "You cannot overpay for a property if you're wrapping it.",
+                       'timestamp': 559,
+                       'timestamp_seconds': 559,
+                       'timestamp_label': '[00:09:19]',
+                       'url': 'https://www.youtube.com/watch?v=49GchpJCUB0&t=559s',
+                       'markdown': '[00:09:19](https://www.youtube.com/watch?v=49GchpJCUB0&t=559s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gUg3ObEfMB0',
+                       'title': 'Wraparound Mortgages Explained',
+                       'channel': 'Note Unlimited',
+                       'author': 'Note Unlimited',
+                       'text': 'Alice will make payments based on a $150,000 mortgage at 6%, but Bob will '
+                               'continue to pay the original 4% interest on the initial $100,000.',
+                       'tip': 'Alice will make payments based on a $150,000 mortgage at 6%, but Bob will '
+                              'continue to pay the original 4% interest on the initial $100,000.',
+                       'timestamp': 91,
+                       'timestamp_seconds': 91,
+                       'timestamp_label': '[00:01:31]',
+                       'url': 'https://www.youtube.com/watch?v=gUg3ObEfMB0&t=91s',
+                       'markdown': '[00:01:31](https://www.youtube.com/watch?v=gUg3ObEfMB0&t=91s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-8VDqc249XY',
+                       'title': 'Wraparound Mortgages | Real Estate Exam Prep Key Concepts',
+                       'channel': 'PrepAgent',
+                       'author': 'PrepAgent',
+                       'text': 'To break even the seller must charge at least as much interest as they are '
+                               'being charged on their existing loan.',
+                       'tip': 'To break even the seller must charge at least as much interest as they are '
+                              'being charged on their existing loan.',
+                       'timestamp': 95,
+                       'timestamp_seconds': 95,
+                       'timestamp_label': '[00:01:35]',
+                       'url': 'https://www.youtube.com/watch?v=-8VDqc249XY&t=95s',
+                       'markdown': '[00:01:35](https://www.youtube.com/watch?v=-8VDqc249XY&t=95s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5n5x76_xKLU',
+                       'title': 'Wraparound Mortgage & All Inclusive Trust Deed (AITD) | Creative Real '
+                                'Estate Investing | Video 9',
+                       'channel': 'Epic Real Estate',
+                       'author': 'Epic Real Estate',
+                       'text': 'Due to the amount of each individual loan, the actual blended rate will be '
+                               'closer to the lower rate than the higher one because of the larger amount '
+                               'in the original loan.',
+                       'tip': 'Due to the amount of each individual loan, the actual blended rate will be '
+                              'closer to the lower rate than the higher one because of the larger amount '
+                              'in the original loan.',
+                       'timestamp': 220,
+                       'timestamp_seconds': 220,
+                       'timestamp_label': '[00:03:40]',
+                       'url': 'https://www.youtube.com/watch?v=5n5x76_xKLU&t=220s',
+                       'markdown': '[00:03:40](https://www.youtube.com/watch?v=5n5x76_xKLU&t=220s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9rVA292DHlY',
+                       'title': 'Wrap Around Mortgage - AITD - All Inclusive Trust Deed',
+                       'channel': 'REISkills.com - Where you learn Real Estate Investing',
+                       'author': 'REISkills.com - Where you learn Real Estate Investing',
+                       'text': 'The main problem with wraparound mortgages is they almost always violate '
+                               "the due on sale clause in the seller's underlying financing.",
+                       'tip': 'The main problem with wraparound mortgages is they almost always violate '
+                              "the due on sale clause in the seller's underlying financing.",
+                       'timestamp': 109,
+                       'timestamp_seconds': 109,
+                       'timestamp_label': '[00:01:49]',
+                       'url': 'https://www.youtube.com/watch?v=9rVA292DHlY&t=109s',
+                       'markdown': '[00:01:49](https://www.youtube.com/watch?v=9rVA292DHlY&t=109s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OXZZS-KeaXc',
+                       'title': 'Wraparound Mortages',
+                       'channel': 'Edspira',
+                       'author': 'Edspira',
+                       'text': "FHA loans and VA loans historically were assumable and you didn't have "
+                               'this kind of issue with the due on sale clause, so you could do a '
+                               'wraparound with that.',
+                       'tip': "FHA loans and VA loans historically were assumable and you didn't have this "
+                              'kind of issue with the due on sale clause, so you could do a wraparound '
+                              'with that.',
+                       'timestamp': 452,
+                       'timestamp_seconds': 452,
+                       'timestamp_label': '[00:07:32]',
+                       'url': 'https://www.youtube.com/watch?v=OXZZS-KeaXc&t=452s',
+                       'markdown': '[00:07:32](https://www.youtube.com/watch?v=OXZZS-KeaXc&t=452s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Z_X2-JRfBYs',
+                       'title': 'Ditch the Bank? 🏡 Assumable vs. Wraparound Mortgages Explained! | Shop '
+                                'Rates',
+                       'channel': 'Shop Rates',
+                       'author': 'Shop Rates',
+                       'text': 'If you, the buyer, default on the wrap loan, the seller is still legally '
+                               'responsible for their original mortgage.',
+                       'tip': 'If you, the buyer, default on the wrap loan, the seller is still legally '
+                              'responsible for their original mortgage.',
+                       'timestamp': 86,
+                       'timestamp_seconds': 86,
+                       'timestamp_label': '[00:01:26]',
+                       'url': 'https://www.youtube.com/watch?v=Z_X2-JRfBYs&t=86s',
+                       'markdown': '[00:01:26](https://www.youtube.com/watch?v=Z_X2-JRfBYs&t=86s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IKu9qf2jZBk',
+                       'title': 'THE 3% INTEREST HACK: Subject-To vs. Wrap Mortgages Explained',
+                       'channel': 'Ashland Mortgage',
+                       'author': 'Ashland Mortgage',
+                       'text': 'To mitigate this risk, sophisticated investors often use land trusts or '
+                               'LLCs to shield the transaction and keep the bank from triggering a red '
+                               'flag in their automated systems.',
+                       'tip': 'To mitigate this risk, sophisticated investors often use land trusts or '
+                              'LLCs to shield the transaction and keep the bank from triggering a red flag '
+                              'in their automated systems.',
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=IKu9qf2jZBk&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=IKu9qf2jZBk&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OuQxeQu2HJA',
+                       'title': 'Wraparound Mortgages - Ask Ron',
+                       'channel': 'Ron LeGrand',
+                       'author': 'Ron LeGrand',
+                       'text': 'When you sell the house on a wrap and you have an underlying loan that you '
+                               "personally guaranteed, you're not off the hook.",
+                       'tip': 'When you sell the house on a wrap and you have an underlying loan that you '
+                              "personally guaranteed, you're not off the hook.",
+                       'timestamp': 298,
+                       'timestamp_seconds': 298,
+                       'timestamp_label': '[00:04:58]',
+                       'url': 'https://www.youtube.com/watch?v=OuQxeQu2HJA&t=298s',
+                       'markdown': '[00:04:58](https://www.youtube.com/watch?v=OuQxeQu2HJA&t=298s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'}]}

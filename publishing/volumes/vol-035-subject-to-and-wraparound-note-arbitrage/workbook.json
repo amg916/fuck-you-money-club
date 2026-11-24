@@ -1,470 +1,470 @@
 {
   "workbook_id": "wb-035-subject-to-and-wraparound-note-arbitrage",
   "volume_id": "vol-035-subject-to-and-wraparound-note-arbitrage",
-  "title": "Subject-To & Wraparound Note Arbitrage — Operator Companion Workbook",
-  "subtitle": "6 Printable Operator Worksheets for Low-Rate Debt Acquisition, RMLO Buyer Underwriting, Retained Note Spreads, Verified Servicing, Reserve Protection, and Transfer-Ready Operations",
+  "title": "Subject-To & Wraparound Note Arbitrage — Practitioner Testimony Operator Workbook",
+  "subtitle": "Field worksheets for wrap mechanics, subject-to acquisition, wrap arbitrage, seller-finance terms, hybrid structuring, and due-on-sale defense, built from operator numbers and closing-table rules",
   "worksheets": [
     {
       "worksheet_id": "ws-01",
       "number": 1,
-      "title": "Arbitrage Deal, Counterparty Underwriting & Spread Qualification",
-      "purpose": "Qualify a subject-to acquisition and proposed wraparound sale before committing acquisition cash. Connect verified underlying debt, seller authority, buyer repayment capacity, property condition, and acceleration exposure to a documented spread decision that survives independent title, servicing, and licensed origination review.",
-      "chapter_ref": "Q1, Q2, Q6",
+      "title": "Wrap Mechanics and the Subject-To Acquisition File",
+      "purpose": "Document the underlying loan, the wrap structure that rides on it, and the seller pitch that puts the deal under contract, so the spread is earned on the full balance and every payment, recording, and called-loan decision is written down before closing.",
+      "chapter_ref": "Q1-Q2",
       "instructions": [
-        "Build one evidence folder per property using a stable deal identifier. Collect seller-authorized mortgage statements, title evidence, insurance declarations, tax records, and repair estimates before entering terms; record source dates so stale balances cannot silently drive pricing.",
-        "Separate the seller's continuing loan obligation from your acquisition of title. Have transaction counsel examine the actual transfer provisions and statutory exceptions, then price an acceleration response without assuming that timely payments prevent lender enforcement.",
-        "Route every proposed owner-occupant wrap buyer through a licensed residential mortgage loan originator. Require verified income, obligations, credit evidence, and documented repayment analysis before setting final terms; seller motivation and buyer cash do not replace underwriting.",
-        "Compute interest contribution and cash payment spread separately using dated amortization schedules. Identify principal movements, escrow collections, acquisition basis, and servicing costs explicitly; a positive monthly receipt difference can coexist with weak economics or inadequate liquidity.",
-        "Approve only a fully evidenced property, seller, buyer, and servicing combination. Assign each unresolved defect an owner and resolution date; reject transactions requiring hidden transfers, inflated buyer income, unsupported valuation, or reserve funding dependent on immediate resale."
+        "Pull every underlying loan figure from the lender itself, using an authorization to release, before entering any number in this worksheet.",
+        "Work the spread math on the full balance, comparing a separate second lien against an all-inclusive wrap on the same numbers.",
+        "Write the payment waterfall so a servicer pays the underlying lender first and the wrap holder last, every single month.",
+        "Name the called-loan plan with a refinance path, reserves, and a dated timeline before signing any purchase agreement.",
+        "Treat disclosure as the core of the business: explain the existing mortgage and the due-on-sale clause to the buyer in writing, up front and again at closing."
       ],
       "fields": [
         {
-          "name": "Deal identity and title authority",
+          "name": "underlying_loan_profile",
           "type": "textarea",
-          "prompt": "Record the property identifier, vesting, seller authority, existing liens, and evidence dates. Explain who independently reconciled the title commitment against seller statements and which unresolved interests would stop acquisition.",
-          "example": "Deal STW-035-001 covers a $255,000 proposed resale property. The title commitment dated June 3 lists one $200,000 mortgage and no junior deed of trust. Both vested sellers sign through the title company; the closer must clear a recorded judgment before funds move."
+          "prompt": "Record the live underlying loan you intend to wrap or take subject-to: lender, current principal balance, note rate, monthly payment, remaining term, and whether the note carries a due-on-sale clause. State how you verified each figure directly with the lender.",
+          "example": "Virginia Beach 3bd/1ba preforeclosure: $119,000 principal, $1,100 PITI, ARV $230,000 to $240,000. A bankruptcy discharge made every missed payment due, so the reinstatement came to $46,000 and roughly $50,000 to get in, confirmed with an authorization to release form signed by the seller [kris haskins — DhOoZcypJCM @ 00:07:25]. Lender figures only, no seller estimates."
         },
         {
-          "name": "Underlying debt evidence and payment status",
+          "name": "spread_on_full_balance",
           "type": "textarea",
-          "prompt": "Capture the unpaid principal, contractual rate, remaining term, principal and interest payment, escrow amount, arrears, and modification history. Distinguish servicer-confirmed figures from seller estimates and identify the next payment deadline.",
-          "example": "The authorized servicer statement shows $200,000 principal, 3.00% fixed interest, and 360 remaining monthly payments after a documented recast. Principal and interest equal approximately $843.21; tax and insurance escrow adds $400.00. The account is current, with the next $1,243.21 payment due July 1."
+          "prompt": "Compare the income from carrying a separate second lien against an all-inclusive wrap on the same deal. Show the rate earned on the equity portion and the rate gap earned on the underlying balance, and explain which structure you will use.",
+          "example": "Underlying $80,000 at 4%. A $20,000 second at 6% earns 6% only on the second. An all-inclusive wrap for $100,000 at 6% earns 6% on the $20,000 equity plus the 2% difference on the first $80,000 [kris haskins — kM__5b36grI @ 00:10:56]. Decision: write the all-inclusive wrap so the spread runs on the full balance."
         },
         {
-          "name": "Seller objective and acquisition consideration",
+          "name": "full_cycle_profit_model",
           "type": "textarea",
-          "prompt": "Describe the seller's verified objective, proposed cash consideration, existing arrears allocation, and continuing exposure on the underlying note. State the communications and documentary evidence required before the seller accepts the structure.",
-          "example": "The sellers seek relocation cash rather than a mortgage release. The acquisition offers $10,000 equity consideration and identifies $5,000 of separately classified transaction costs. Written acknowledgments explain that title transfer does not release the sellers from their existing loan and that acceleration remains possible."
+          "prompt": "Model the full-cycle profit of your wrap: down payment collected, monthly spread multiplied across the balloon term, and the gap between the wrap balance and the underlying balance at payoff. Total all three and state the balloon length you assumed.",
+          "example": "$300,000 underlying at 3.5% wrapped into a $350,000 sale at 5% with $10,000 down. Monthly spread $531.75 over a 10-year balloon equals $63,810 cash flow; balance gap at payoff $52,415.31. Total about $126,000 [Chris Goff — X_UODDIMvFs @ 00:05:32]. Every component traces to the amortization schedule, not a rounded guess, and the balloon date is written into the note."
         },
         {
-          "name": "Property condition and valuation support",
-          "type": "textarea",
-          "prompt": "Document comparable sales, inspection findings, occupancy, repair scope, and taxes supporting the proposed resale price. Identify deferred work that could impair habitability, insurance placement, borrower affordability, or a realistic liquidation exit.",
-          "example": "Three closed comparable sales support a $250,000 to $260,000 range; the proposed price is $255,000. An independent inspection identifies $6,000 of roof and electrical work. The acquisition budget funds those repairs separately, and the licensed contractor must complete them before buyer occupancy."
+          "name": "mirror_vs_equity_wrap",
+          "type": "text",
+          "prompt": "Decide whether you are buying on a mirror wrap or selling on an equity wrap, or both. Record the equity position, the price markup, and the interest rate markup that turns a thin-equity acquisition into a full-balance spread on resale.",
+          "example": "Little or no equity on entry, so buy on a mirror wrap, then sell on an equity wrap that marks up both price and rate [kris haskins — kM__5b36grI @ 00:13:02]. High-end check: a $2,400 all-inclusive payment that rents for only $2,500 fails as a rental, but an owner-carry wrap with a raised rate catches $400 to $600 monthly."
         },
         {
-          "name": "Wrap buyer and licensed RMLO file",
+          "name": "acquisition_stance",
           "type": "textarea",
-          "prompt": "Identify the buyer's intended occupancy and the licensed RMLO responsible for underwriting. Record verified income, employment, obligations, credit authorization, available cash, and the location of the documented repayment analysis.",
-          "example": "The owner-occupant buyer provides verified monthly gross income of $6,500, recurring debt payments of $650, and documented funds for a $25,000 down payment. The NMLS-verified RMLO evaluates a $1,930.20 projected housing payment, approximately 39.70% total debt-to-income, and verified post-closing reserves before recommending terms."
+          "prompt": "State your acquisition stance on wraps. Note where respected operators disagree about buying on a wrap versus selling on one, which side you are taking on this deal, and what structure you will use instead if you refuse to buy on a wrap.",
+          "example": "Pace Morby: never buy on a wrap, sell on a wrap [Pace Morby — hTxjhDN2Cyo @ 00:05:25]; he prefers split-note hybrids on the acquisition. Brian Gibbons issues a different warning and says never sell on a seller-held wrap. My stance: acquire subject-to with a separate seller note, then dispose on a wrap routed through a third-party servicer."
         },
         {
-          "name": "Wrap terms and amortization comparison",
-          "type": "textarea",
-          "prompt": "Enter the sale price, down payment, wrap principal, fixed rate, amortization period, payment, and maturity. Compare both amortization schedules and explain why scheduled cash spread differs from the first month's interest contribution.",
-          "example": "A $255,000 sale less $25,000 down creates a $230,000 wrap at 7.00% over 360 months, approximately $1,530.20 principal and interest. Against $843.21 underlying debt service, cash spread is $686.99. First-month interest contribution is $1,341.67 less $500.00, or $841.67, before servicing and credit costs."
+          "name": "security_instrument_and_recording",
+          "type": "text",
+          "prompt": "Identify exactly what gets recorded at the county and what stays unrecorded. Name the security instrument, the wraparound rider attached to it, and who holds the original note, so nobody mistakes a notarized note for recorded security. Confirm the closer agrees.",
+          "example": "Recorded: deed of trust with the all-inclusive wraparound rider as the security instrument. Unrecorded: the wrap note, held in the original by the holder. People notarize notes and record them, and those do not mean anything; a mortgage or deed of trust is required [kris haskins — kM__5b36grI @ 00:16:52]. Closer confirmed the rider before signing."
         },
         {
-          "name": "Due-on-sale analysis and acceleration funding",
+          "name": "servicer_waterfall",
           "type": "textarea",
-          "prompt": "Summarize counsel's review of the underlying transfer clause, applicable federal exceptions, and lender communication strategy. Identify an executable payoff or sale response, including funding evidence, rather than treating lender silence as consent.",
-          "example": "Counsel reviews 12 U.S.C. §1701j-3 and 12 CFR Part 591 against the proposed deed transfer. No protected exception is assumed. A documented $205,000 payoff funding proposal remains subject to fresh underwriting; without executable funding or a supported sale exit, the deal cannot advance."
+          "prompt": "Name the loan servicer who will collect every buyer payment, and write out the payment order: who gets paid first, who gets paid last, and how you will receive proof that the underlying lender was paid each month without relying on the seller.",
+          "example": "Buyer pays the servicer; the servicer pays the mortgage company first and pays the wrap holder whatever is left over, which the industry calls its fraud preventer [Scott Horne's Owner Finance Network — VDXOvtqzbZk @ 00:07:47]. Just paying the seller and hoping the seller pays carries real risk, and an escrow company speeds the process."
         },
         {
-          "name": "Insurance, tax, and servicing feasibility",
+          "name": "due_on_sale_plan",
           "type": "textarea",
-          "prompt": "Confirm that ownership, occupancy, insured interests, property taxes, and underlying escrow obligations can be administered accurately. Name the licensed third-party servicer and describe how payment verification reaches both affected counterparties every month.",
-          "example": "The insurance broker quotes coverage reflecting actual ownership and owner occupancy, with lender interests correctly documented. The proposed licensed servicer allocates $400 monthly to the underlying escrow obligation and supplies payment confirmations. The title company verifies current taxes; no duplicate tax reserve is charged as revenue."
+          "prompt": "Write the exact plan you will execute if the underlying lender calls the loan due. Include the refinance path, the reserves set aside, and the timeline, and confirm whether the loan is assumable or carries a due-on-sale clause before you sign anything.",
+          "example": "Called-loan plan named in advance: refinance path, cash reserves, and a dated timeline [Tim Talks Real Estate — Dklhw3jMfVo @ 00:05:31]. Loan carries a due-on-sale clause; the textbook case warns there is a lot of risk unless the loan is assumable with no such clause. Disclosure handled up front, since 90% of the wrap business is proper disclosure."
         },
         {
-          "name": "Stress case and concentration limits",
+          "name": "lender_access_package",
           "type": "textarea",
-          "prompt": "Test buyer delinquency, repair overrun, increased escrow, acceleration, and a slower property exit. Quantify the cash required under combined stress and define portfolio exposure limits that remain workable without new acquisitions.",
-          "example": "Six months of underlying payments require $7,459.26 at $1,243.21 monthly. Add $12,000 for case-specific enforcement and property work, producing $19,459.26 before additional sale costs. A $20,000 deal reserve nearly covers that scenario but does not cover a $205,000 acceleration payoff; separate funding is necessary."
+          "prompt": "List the documents you collected to speak with the seller's mortgage company before closing, and record the arrears, reinstatement, and payoff figures you obtained. Note whether escrow is open and whether the title report is in hand, and list any issues it shows.",
+          "example": "Lender access package assembled first: the seller's SSN, an authorization to release, and a notarized limited POA [kris haskins — FybFcuS9T7s @ 00:06:23]. No move-out date promised until escrow opened and the title report arrived, because Morby says 99% of the reports he sees show issues. Opening escrow is where the challenges actually start."
         },
         {
-          "name": "Qualification decision and exception owner",
+          "name": "seller_pitch_and_entry_fee",
           "type": "textarea",
-          "prompt": "Write an explicit proceed, reprice, or reject decision supported by the file. Assign each remaining exception a responsible professional, required evidence, deadline, and consequence if the condition cannot be resolved.",
-          "example": "Decision: reprice and hold funding. The title company must release the judgment, the RMLO must complete repayment analysis, and the capital provider must document executable payoff terms. The operator will not substitute projected appreciation for those conditions; failure by June 14 cancels the proposed acquisition."
+          "prompt": "Script your seller pitch and score your entry fee. Show the seller's retail-sale cost, your cash offer anchor, the takeover terms you will offer, and every dollar of cash needed to get in as a percentage of value, scored against a 25% ceiling.",
+          "example": "Owes $160,000, comps $260,000. Entry: $8,000 commission, $4,000 TC plus closing, $15,000 wholesale fee, $5,000 to the seller, so $32,000 out of $192,000 scores 16%, under the 25% ceiling [Flipping Mastery TV — rYMNGajRMfo @ 00:02:27]. Pitch: a retail listing costs about 10% in commissions and closing costs; taking over payments hands the seller a small check instead."
         }
       ],
-      "completion_gate": "Proceed only when title authority, current debt, licensed buyer underwriting, accurate insurance, servicing feasibility, and an executable acceleration response are documented; record the named reviewers and retain the rejected-deal rationale when any condition fails."
+      "completion_gate": "Complete only when all ten fields hold lender-verified figures, the security instrument and wraparound rider are identified for recording, a servicer is named to pay the underlying lender first, the called-loan plan lists refinance path, reserves, and timeline, and the entry fee scores under the 25% ceiling."
     },
     {
       "worksheet_id": "ws-02",
       "number": 2,
-      "title": "Unit Economics, Escrow Float & Working-Capital Calculator",
-      "purpose": "Translate contract economics into retained operator revenue, owner profit, and usable cash without counting home value, note principal, or custodial collections as sales. Reconcile the three canonical scenarios while separately funding acquisition outlays, restricted escrow, default reserves, and acceleration liquidity.",
-      "chapter_ref": "Q3, Q4",
+      "title": "Wrap Arbitrage and Seller-Finance Terms Sheet",
+      "purpose": "Price the resale wrap for spread, down payment, and cash flow, then negotiate seller-finance terms on price, down payment, rate, and length, so both sides of the deal are underwritten against rent, buyer affordability, and the payment path to the underlying lender.",
+      "chapter_ref": "Q3-Q4",
       "instructions": [
-        "Create separate columns for gross customer cash, principal movements, custodial escrow, retained interest contribution, and recognized upfront spread. Obtain an accounting policy for each contract form before mapping operational cash receipts into the Formula v2.0 scorecard.",
-        "Import the underlying and wrap amortization schedules using the same payment dates and rounding convention. Reconcile opening principal, interest, principal reduction, and ending principal each month; do not annualize the first month's margin as an exact forecast.",
-        "Treat tax and insurance collections as restricted liabilities until properly disbursed. Maintain reserve cash outside the operating distribution account, and distinguish cash transfers into reserves from recognized expenses, expected credit losses, and subsequent actual expenditures.",
-        "Reproduce Conservative, Base, and Scaled revenue and profit exactly before adding local assumptions. Build a bridge from recurring overhead and additional delivery costs to total annual expense, keeping debt-service pass-throughs outside recognized operator revenue.",
-        "Stress the opening cash budget independently from annual profitability. Identify the timing of acquisition funds, buyer receipts, repairs, servicing setup, and reserve deposits; prevent distributions whenever the unrestricted cash forecast falls below the documented operating floor."
+        "Structure the monthly payment first and rent-test it against local market rent before setting the wrap price or note rate.",
+        "Vet every non-qualifying buyer for affordability of the full payment, not just the down payment, before selling to them.",
+        "Use plain seller language: describe seller financing with the existing loan staying in place and principal only payments.",
+        "Negotiate all four terms together, conceding price only when the seller gives terms in exchange.",
+        "Fund a 12-month escrow prepay for taxes and insurance from the buyer's down payment and route lender payments so the seller is never a pass-through."
       ],
       "fields": [
         {
-          "name": "Revenue recognition and retained-share mapping",
+          "name": "sub_to_wrap_entry_profit",
           "type": "textarea",
-          "prompt": "Define which contractual amounts enter the scorecard and which remain principal, liabilities, or pass-throughs. Document the accountant's treatment of upfront spreads and interest, including any principal-versus-agent assessment relevant to gross billings.",
-          "example": "For this workbook, scorecard revenue means retained upfront spread plus retained annual wrap interest contribution. A $255,000 property price and $230,000 wrap principal are excluded. The accountant assesses ASC 606 only where applicable to customer contracts; loan interest and property-sale accounting follow their applicable guidance."
+          "prompt": "Compare the buyer's down payment on your wrap against your own cash in on the subject-to acquisition. Record the underlying rate, your all-in basis, the wrap price, the wrap note amount and rate, and the entry profit before cash flow.",
+          "example": "Tampa sub-to at 2.75%, $330,000 all-in, $40,000 of operator cash. Resold on a $400,000 wrap with a $350,000 note at 7% and a $50,000 down payment, so $10,000 is made before the house starts cash flowing [Dom Inglese — Lv34MZLHg1I @ 00:03:24]. Monthly spread is upside on top of an entry that already paid."
         },
         {
-          "name": "Upfront cash bridge and recognized spread",
+          "name": "total_collections_projection",
           "type": "textarea",
-          "prompt": "Bridge the buyer's initial receipt to acquisition consideration, transaction costs, restricted deposits, and retained cash. Explain which amounts the accounting policy recognizes immediately and which require deferral or a different classification.",
-          "example": "A $25,000 buyer down payment less $10,000 seller consideration and $5,000 acquisition costs leaves $10,000 cash before repairs and reserves. That arithmetic alone does not establish recognized revenue. The accountant must document any recognized upfront spread and prevent the same $5,000 cost from being deducted twice."
+          "prompt": "Project total collections over the full life of the wrap note: sale price, down payment, note amount, rate, and amortization. Then discount the total for time value of money and compare it against the equity you actually gave up.",
+          "example": "$100,000 sale, $10,000 down, $90,000 at 9.5% over 30 years: $142,377 of total collections on $20,000 of equity, discounted a third to a half for time value of money [Propelio TV — pCK7ihJF_-Q @ 00:16:10]. A higher underlying rate still works: a $64,000 underlying at 9.5% costs $539 while a $90,000 wrap at 9% brings $724."
         },
         {
-          "name": "Monthly interest and principal reconciliation",
-          "type": "textarea",
-          "prompt": "Calculate one month's borrower interest, underlying interest, both principal reductions, and cash spread from actual schedules. Explain how principal timing changes liquidity without changing the definition of retained interest contribution.",
-          "example": "Month one produces $1,341.67 wrap interest and $500.00 underlying interest, leaving $841.67 contribution. Buyer principal is $188.53; underlying principal reduction is $343.21. Therefore $841.67 plus $188.53 less $343.21 equals $686.99 cash spread, before servicing fees, escrow movements, and other operating expenditures."
+          "name": "buyer_payment_vs_rent",
+          "type": "text",
+          "prompt": "Set the wrap payment by structuring the monthly number first, then rent-test it. Record the local market rent, the proposed monthly payment, the note rate you will not lead with, and whether the payment would sit unsold at that level.",
+          "example": "Talk about the monthly payment, not the interest rate, and benchmark it against local rent; 9% is possible [Caleb Christopher — UOyoE5Fc7VE @ 00:02:24]. Fail case: wraps priced at $6,000 a month in $3,500 rent areas sit unsold. Pass case: Nick Disney's typical $150,000 note at 10.9%, about $1,400 monthly over 30 years."
         },
         {
-          "name": "Escrow liability and reserve segregation",
+          "name": "buyer_affordability_vetting",
           "type": "textarea",
-          "prompt": "Specify the bank accounts, beneficiary ledgers, authorized disbursements, and reconciliation cadence for escrow and operating reserves. Quantify the amount unavailable for owner distributions and explain how shortages are detected.",
-          "example": "Ten buyers each remit $400 of monthly escrow, creating $4,000 of collections owed for designated tax and insurance obligations. The servicer reconciles individual balances to the custodial account and underlying remittances. A separate $20,000 company-funded default reserve remains restricted by operating policy, not classified as revenue."
+          "prompt": "Describe how you vetted the non-qualifying buyer for affordability of the full payment before selling the property. Identify the buyer profile, the income documentation you reviewed, and why a bank turned this buyer down. Note any red flags that remain open.",
+          "example": "Buyer is a penalty box buyer: ITIN holder with a cash job, not bankable [Dom Inglese — StKrDLiCONM @ 00:04:00]. Affordability vetted against the full wrap payment, not just the down payment, before any sale. Down payment funds a 12-month escrow prepay for taxes and insurance at closing, so the first year of escrow cannot lapse."
         },
         {
-          "name": "Conservative canonical scenario",
-          "type": "textarea",
-          "prompt": "Reconcile annual recognized operator revenue, net margin, owner net profit, and total expense to the Conservative benchmark. Provide an illustrative contribution mix and expense bridge without equating the benchmark to property transaction volume.",
-          "example": "Conservative revenue is $100,000: illustratively $40,000 recognized upfront spreads plus $60,000 retained annual interest contribution. Expenses total $72,000, comprising $24,000 recurring overhead and $48,000 additional delivery and risk costs. Owner net profit is exactly $28,000 at 28%, staffed by 1 FT plus 3 C."
+          "name": "seller_language",
+          "type": "text",
+          "prompt": "Write the exact words you will use with the seller to describe the structure. Avoid jargon that confuses, record the phrase you will use for the existing loan staying in place, and note how you describe the payments.",
+          "example": "Never say wrap or subject-to; call it seller financing where the existing loan stays in place, because a confused mind says no [Creative Finance Playbook — u3lV-kVx-LU @ 00:02:36]. On free-and-clear deals, write principal only payments, never zero percent, in every written offer and on every seller call, exactly as Pace Morby teaches."
         },
         {
-          "name": "Base canonical scenario",
+          "name": "four_terms_negotiation",
           "type": "textarea",
-          "prompt": "Reconcile the Base benchmark using retained operator revenue and a complete expense bridge. State the staffing model and explain why neither serviced loan balances nor buyer principal collections increase the revenue target.",
-          "example": "Base revenue is $475,000: illustratively $175,000 recognized upfront spreads plus $300,000 retained annual interest contribution. Annual expenses equal $285,000, split between $96,000 recurring overhead and $189,000 additional delivery and risk costs. Owner net profit is $190,000 at 40.0%, with 1 FT plus 3 C."
+          "prompt": "Lay out the four negotiable terms on a seller-finance deal: price, down payment, interest rate, and length. Show what the seller asked for, what you offered in exchange, and how paying the seller's number bought you better terms.",
+          "example": "Susan, I would be willing to come up to your number if you would be willing to give me terms [Pace Morby — 6FXApQ1y2KE @ 00:06:35]. Result: mobile home closed at $110K, principal-only, $10K down split into two $5K installments, $375 a month, against a best cash offer of $57K. Price conceded; terms won."
         },
         {
-          "name": "Scaled canonical scenario",
+          "name": "note_rate_and_balloon",
           "type": "textarea",
-          "prompt": "Reconcile the Scaled Small-Team benchmark and identify the required staffing and expense discipline. Preserve the canonical profit calculation while separating illustrative expense allocations from any claim about an individual property's expected performance.",
-          "example": "Scaled revenue is $850,000: illustratively $350,000 recognized upfront spreads plus $500,000 retained annual interest contribution. Expenses equal $408,000, comprising $144,000 recurring overhead and $264,000 additional delivery and risk costs. Owner net profit is $442,000 at 52%, supported by 2 FT plus 4 C."
+          "prompt": "Choose the rate and balloon on the seller note and defend both. Compare a principal-only note against a 6 to 9 percent note with a 5 to 7 year balloon, and record your extension clause or refinance plan.",
+          "example": "Key & Capital models 6-9% rates with 5-7 year balloons and refuses any balloon shorter than 12 months and builds in an extension clause, refinance plan, or fully amortizing note [Key & Capital — dzuLMB2Szxc @ 00:10:38]. Pace counters that a high note rate tells the buyer to refinance the seller out fast, while 0% locks the price."
         },
         {
-          "name": "Startup cash and funding sequence",
-          "type": "textarea",
-          "prompt": "Build a dated startup cash schedule within the stated capital range, separating operating runway from property-level commitments. Identify the highest cumulative cash requirement and which expenses must be funded before receiving buyer money.",
-          "example": "A $55,000 opening budget allocates $15,000 to seller consideration and acquisition costs, $6,000 to repairs, $20,000 to default reserves, $8,000 to two months of operating runway, and $6,000 to diligence and setup. This fits the $12,000–$65,000 range but excludes a separately funded acceleration payoff."
+          "name": "bank_vs_seller_payment",
+          "type": "text",
+          "prompt": "Run the bank-versus-seller payment comparison on the same property. Record the financed amount, the bank rate and payment, the seller rate and payment, the monthly savings, and the total savings over your expected hold period. Note the cash a bank requires down.",
+          "example": "$300K Dallas duplex, 20% down, $240K financed on a 30-year amortization: bank at 7.32% runs $1,649 a month, seller at 6% runs $1,439, saving $210 monthly, $2,520 yearly, and $12,600 over 5 years [Key & Capital — dzuLMB2Szxc @ 00:04:24]. A bank wants 30-35% down; Pace's average all-in entry is about 8%."
         },
         {
-          "name": "Delinquency carrying cost and liquidity test",
-          "type": "textarea",
-          "prompt": "Model missed buyer payments without suspending underlying mortgage payments. Include servicing, taxes, insurance, property work, and case-specific enforcement costs; identify how many months the segregated reserve actually supports before additional capital is needed.",
-          "example": "At $1,243.21 underlying payment plus $35 monthly servicing, six months cost $7,669.26. Adding $12,000 enforcement and property work brings stress usage to $19,669.26, leaving $330.74 from a $20,000 reserve. This test excludes acceleration payoff and must be expanded for longer state-specific timelines."
+          "name": "assignment_fee_and_cash_on_cash",
+          "type": "text",
+          "prompt": "Price the assignment fee and the expected return. Record net monthly cash flow after the seller payment, taxes, insurance, and reserves, apply the per-hundred-dollar fee rule, and confirm the deal clears your cash-on-cash target minimum before signing.",
+          "example": "Rule of thumb: $2,000 of assignment fee per $100 of net monthly cash flow, or $5,000 per $100 at 0% interest [Flipping Mastery TV — MeNrueZIYeE @ 00:24:45]. A deal netting $500 a month supports a $10K fee. Target 30%+ cash-on-cash, and never be the party that writes the first check."
         },
         {
-          "name": "Distribution policy and accounting close",
+          "name": "servicing_and_payment_control",
           "type": "textarea",
-          "prompt": "State the monthly conditions for owner distributions, including reconciled custodial balances, current underlying payments, reserve minimums, and recognized profit. Specify who resolves differences between earnings and cash before any withdrawal.",
-          "example": "The controller releases distributions only after all ten underlying payments are verified, escrow reconciles to individual ledgers, and the $20,000 reserve floor remains intact. A $12,000 accounting profit with only $7,000 unrestricted cash permits no more than $7,000 before additional operating runway requirements are applied."
+          "prompt": "Decide how the underlying lender gets paid on your wrap and who controls that flow. Choose between a servicer, a clearing house that sends receipts, or direct payment, and confirm the seller never acts as a pass-through.",
+          "example": "Never let the seller act as a pass-through; pay the original lender directly or through a clearing house that sends receipts [Caleb Christopher — UBngwrCrCxM @ 00:05:36]. Horne Real Estate Law always uses a servicer, reporting due-on-sale in 13 cases out of 10,000 deals, while Nick Disney pays lenders directly. Chosen path: servicer with monthly receipts."
         }
       ],
-      "completion_gate": "All three canonical scenarios reconcile exactly: $100,000/$28,000, $475,000/$190,000, and $850,000/$442,000 revenue/profit. Principal and escrow remain outside operator revenue, expense classifications avoid double counting, and the dated cash forecast funds every required reserve and closing outlay."
+      "completion_gate": "Complete only when the wrap payment passes a local rent test, the buyer affordability file covers the full payment, the seller note has a rate and balloon with an extension or refinance plan, the payment path to the underlying lender bypasses the seller, and the 12-month escrow prepay is funded at closing."
     },
     {
       "worksheet_id": "ws-03",
       "number": 3,
-      "title": "Execution, Idempotent Ledger & QA Pre-Flight",
-      "purpose": "Convert an approved transaction into a repeatable closing and servicing process with evidence at every handoff. Establish immutable event identifiers, balanced journals, controlled corrections, and independent underlying-payment verification so duplicate messages or missing receipts cannot distort balances or trigger duplicate transfers.",
-      "chapter_ref": "Q7, Q8",
+      "title": "Hybrid Structuring and Due-on-Sale Defense Plan",
+      "purpose": "Layer the subject-to loan, the seller equity note, and any private money into one hybrid, then document the timing, insurance, entity, and cure steps that keep the due-on-sale clause from turning a rare call into a lost property.",
+      "chapter_ref": "Q5-Q6",
       "instructions": [
-        "Map the transaction from signed acquisition documents through recording, buyer origination, servicing activation, and the first verified underlying payment. Give each handoff one accountable owner, required evidence, and a stop condition that prevents premature fund movement.",
-        "Use stable identifiers for properties, loans, counterparties, payment events, and journal batches. Enforce uniqueness in the ledger store rather than relying on spreadsheet appearance; retries must retrieve existing results instead of posting an additional receipt or disbursement.",
-        "Preserve original events and correct errors through linked reversals and replacement entries. Store amounts as integer cents, timestamps with time zones, and source references; never erase a prior posting merely because a bank return arrives later.",
-        "Run a three-way reconciliation among bank activity, the licensed servicer's loan ledger, and the operator's accounting records. Verify the underlying lender's receipt separately because a successful outbound transfer does not prove correct loan-level application.",
-        "Complete a rehearsal using duplicate notifications, partial payments, returned payments, and delayed statements before activating production autopay. Require independent review of the first live cycle and record both the actual result and unresolved exceptions."
+        "Map each layer of the hybrid separately, with balance, rate, payment, and balloon, before combining them into one entry fee.",
+        "Get real payoff and arrears figures from the lender and add about $5,000 for legal fees the title company will miss.",
+        "Total every underlying lien, including modification and HUD liens, and keep the wrap balance at or above that total.",
+        "Hold the deed transfer until 10 to 15 days after any reinstatement and lock the insurance structure at closing.",
+        "Write the acceleration cure before closing: 30-day payoff source, deed-back fallback, and a rule that nothing false ever reaches the lender."
       ],
       "fields": [
         {
-          "name": "Closing sequence and evidence handoffs",
+          "name": "hybrid_structure",
           "type": "textarea",
-          "prompt": "List each closing dependency in execution order, including title clearance, final underwriting, signed documents, funding authorization, recording confirmation, and servicing setup. Name the recipient and evidence required for each completed handoff.",
-          "example": "The RMLO delivers the final buyer file to the closer; counsel confirms the document package; the title company verifies cleared funds and recording instructions. Servicing activation follows document validation and confirmed closing. The operator retains the recorded instrument reference and first-payment schedule under deal STW-035-001."
+          "prompt": "Map the hybrid: the existing loan you are taking subject-to, the seller equity carried on a separate note, and any private money in third position funding the entry fee. Record balance, rate, payment, and balloon for each layer.",
+          "example": "Colorado Springs townhouse: 2.99% loan stays in place subject-to; sellers knocked 20k off the equity in exchange for 1.5% so they could sell the note, finishing at 146,000, $400 a month, 10-year balloon [James Heller -- Hellerman Industries — nO_A1GtSlaA @ 00:05:26]. Private money sits in third position only if the entry fee requires it."
         },
         {
-          "name": "Canonical identifiers and source of truth",
-          "type": "textarea",
-          "prompt": "Define immutable identifiers for the property, underlying loan, wrap loan, buyer, servicing account, and payment. Explain how external references map to internal records without exposing full account numbers in routine dashboards.",
-          "example": "Property P035001 links to underlying loan U035001 and wrap loan W035001. The servicer account reference is stored in an access-controlled mapping, while dashboards display only the final four digits. PostgreSQL holds the canonical relationships; Airtable displays workflow status but cannot alter posted loan balances."
+          "name": "acquire_hybrid_dispo_wrap",
+          "type": "text",
+          "prompt": "Show the arbitrage when you acquire on a hybrid and dispose on a wrap. Record the underlying rate kept clean on acquisition, the wrap rate charged to your end buyer, and the spread you capture between them.",
+          "example": "Do not buy on a wrap; keep the sub-to note clean, acquire on hybrid and dispo on wrap, where a 6% wrap over a 3% loan is the arbitrage [Flipping Mastery TV — 6Bdxz-HKeFI @ 00:05:33]. Hybrids are about 15% of Pace's creative acquisitions. Landlord Dropout's warning applies: if the buyer stops paying, the underlying payment still remains."
         },
         {
-          "name": "Idempotency key and duplicate handling",
+          "name": "no_money_down_cash_flow",
           "type": "textarea",
-          "prompt": "Specify the unique event key, database constraint, transaction boundary, and retry response for payment intake. Explain how the process distinguishes a genuine second payment from a repeated notification of the first payment.",
-          "example": "The intake key combines servicer identifier, external payment identifier, and event type. A PostgreSQL unique constraint rejects a second posting of receipt PAY7842. The handler returns the existing journal reference; a separate PAY7843 remains eligible even when its amount and date match the first payment."
+          "prompt": "Build the net monthly cash flow on a no-money-down seller-finance rental. Start with market rent, subtract the seller payment, taxes and insurance, and a vacancy and repair reserve, then record the note balance and term. Confirm the result is positive.",
+          "example": "$1,650 rent minus a $375 seller payment, $150 taxes and insurance, and a $200 vacancy and repair reserve nets $925 a month on a $100k 0% note paid over 240 months [Pace Morby — Ke0nzzYXEfk @ 00:02:38]. About 70% of Pace's deals still need private money for the entry fee; the rest close without it."
         },
         {
-          "name": "Receipt allocation and balanced journals",
-          "type": "textarea",
-          "prompt": "Describe how one buyer receipt is allocated across interest, principal, and escrow according to the contract and accounting policy. Show the balancing entry and keep subsequent underlying debt service separately traceable.",
-          "example": "For a $1,930.20 receipt, debit cash $1,930.20, credit wrap interest $1,341.67, credit note receivable $188.53, and credit escrow liability $400.00. Separately allocate the $843.21 underlying principal-and-interest payment to $500.00 interest and $343.21 principal, with escrow remittance recorded through the custodial reconciliation."
+          "name": "arrears_and_payoff_verification",
+          "type": "text",
+          "prompt": "Record the payoff and arrears figures exactly as the lender stated them, not as the title company estimated them. Add your legal-fee cushion, and show how the corrected number changes the entry fee you are funding at closing.",
+          "example": "The title company is not the bank, so expect the arrears to be off by about $5,000 in legal fees [Pace Morby — t7aFESM6V_k @ 00:05:54]. Real payoff and arrears pulled from the lender, then $5,000 added to the entry fee budget. Private lender in third position sized to the corrected figure, not the title estimate."
         },
         {
-          "name": "Returned payment and correction protocol",
+          "name": "wrap_balance_vs_liens",
           "type": "textarea",
-          "prompt": "Define how bank returns, allocation errors, and charge reversals affect cash, borrower balances, and downstream tasks. Preserve the original transaction and specify review before adding any contractual fee or changing delinquency status.",
-          "example": "Receipt PAY7842 for $1,930.20 returns unpaid two banking days after posting. A linked reversal restores the receivable and escrow balances and removes the cash. The servicer reviews permitted fees and borrower notices; the underlying payment still proceeds from company reserves rather than being silently canceled."
+          "prompt": "List every lien under the wrap, including modification liens, down-payment assistance, and zero-payment HUD liens. Total them and confirm the wrap balance is at least equal to all underlying debt so the position cannot drift upside down.",
+          "example": "The wrap balance has to be at least equal to all of the underlying debt [Scott Horne's Owner Finance Network — it6vSh38OhY @ 00:04:30]. Lien schedule: first mortgage, modification lien, down-payment assistance, and a 0% no-payment HUD lien, all totaled against the wrap balance. Borrower pre-screened in five minutes for bankruptcies, foreclosures, and missed payments in 12 months."
         },
         {
-          "name": "Underlying-payment independent verification",
+          "name": "morby_method_gate",
           "type": "textarea",
-          "prompt": "Record how the operator confirms that the underlying lender received and correctly applied each scheduled payment. Define the evidence deadline, escalation owner, and treatment of unapplied funds or missing lender confirmation.",
-          "example": "The licensed servicer sends $1,243.21 for the July underlying payment. Operations matches its transfer reference to the authorized lender statement showing $843.21 principal and interest plus $400.00 escrow. Missing confirmation after two business days creates an exception; a bank debit alone does not close the task."
+          "prompt": "Decide whether a Morby Method structure fits this deal. Record why the seller's cash-down demand could not be negotiated away, the seller's ownership share in your buyer LLC, and the active income the property already produces.",
+          "example": "Hard fast rule: if there is not active income coming in on the deal, no Morby Method [Pace Morby — rQCg4GFRLAI @ 00:05:44], because people take the cash out and bail on the payments. The method swaps seller carryback for seller ownership in the buyer LLC. Vacant property here, so the structure is killed and renegotiated."
         },
         {
-          "name": "Cash, servicing, and accounting reconciliation",
-          "type": "textarea",
-          "prompt": "Specify the three records reconciled, acceptable rounding treatment, unmatched-item aging, and reviewer independence. Explain how aggregated bank deposits are broken into individual loan receipts without using unexplained balancing entries.",
-          "example": "A $19,302.00 bank deposit must match ten $1,930.20 loan receipts, their allocation journals, and the servicer batch report. The bookkeeper prepares the reconciliation; the owner reviews it. A missing $1,930.20 item remains in a dated exception queue rather than being booked as miscellaneous income."
+          "name": "reinstatement_timing",
+          "type": "text",
+          "prompt": "If the loan was in foreclosure, record the reinstatement date, the planned escrow closing date, and the days between them. Note how long you will hold the physical warranty deed when the loan sits with a small local bank.",
+          "example": "Catch up the payments, then wait about 10 to 15 days after the loan is reinstated to close escrow [Pace Morby — cOTyo3LTDPk @ 00:03:27]. Transferring the deed 3 days into reinstatement is Morby's most common cause of a call. Small-bank loan, so the physical warranty deed is held about 30 days before recording."
         },
         {
-          "name": "Document access and audit evidence",
+          "name": "insurance_structure",
           "type": "textarea",
-          "prompt": "Define access rights, retention ownership, version control, and evidence linking for signed documents and borrower records. Specify which sensitive information is excluded from operational notifications and how access changes are reviewed.",
-          "example": "Signed notes and disclosures reside in an encrypted document repository with role-based access and multifactor authentication. The acquisition contractor sees property status but not tax returns. The audit record stores document version, SHA-256 digest, reviewer, and timestamp; weekly access review removes departed contractors before further file access."
+          "prompt": "Write out the insurance structure on the property: who is the named insured, who is additional insured, and who is listed as mortgagee. On a wrap, record the end buyer's policy and your position as secondary mortgagee.",
+          "example": "Investor named insured, seller additional insured, lender as mortgagee; on the wrap, the end buyer is named insured with the investor as secondary mortgagee [Investor Army Podcast — WFGzQCgPP54 @ 00:04:00]. Botched insurance is a real trigger for a due-on-sale call, alongside missed payments, bad paperwork, and angry sellers or ex-spouses on the loan."
         },
         {
-          "name": "Pre-flight test cases and observed outcomes",
+          "name": "llc_trust_transfer",
           "type": "textarea",
-          "prompt": "List executable tests for duplicates, partial receipts, returns, holiday timing, and absent lender confirmation. Record expected ledger effects and actual observed results separately so a test plan is never mistaken for completed verification.",
-          "example": "Planned case T03 submits PAY7842 twice and expects one receipt journal. Planned case T04 returns that receipt and expects one linked reversal. Planned case T05 omits lender confirmation and expects escalation. These are workbook examples, not executed tests; the operator must attach actual results before activation."
+          "prompt": "If title moves into an LLC or land trust, record the entity, its ownership percentages, and how they match the deed. Note the loan investor and origination date, and how you will answer any lender letter asking to verify ownership.",
+          "example": "Fannie Mae exempts transfers to a borrower-controlled LLC on loans from June 1st, 2016 onward; Freddie Mac requires the original borrower as managing member [Ken McElroy — ulx_sqYnYVA @ 00:04:01]. Verification letters get answered with the operating agreement or land trust agreement, never ignored. Morby's caution stands: a land trust does not stop the clause."
         },
         {
-          "name": "First-cycle acceptance and operational handover",
+          "name": "called_loan_cure",
           "type": "textarea",
-          "prompt": "Define the first live cycle's acceptance criteria and handover packet. Include borrower payment instructions, escrow allocation, underlying receipt, reconciled statements, and named ownership of any exception remaining after closing.",
-          "example": "The first-cycle packet contains the $1,930.20 buyer receipt, $1,243.21 underlying remittance confirmation, $35 servicing fee, and reconciled loan balances. Operations and the bookkeeper sign independently. A disputed allocation stays assigned to the licensed servicer, and distributions remain suspended until the exception is resolved."
+          "prompt": "Write the cure sequence for an acceleration letter. Record the cure window, the cash or refinance source to pay the balance, the deed-back fallback, and confirm that nothing false will ever be sent to the lender.",
+          "example": "Every clause reviewed across private, Fannie Mae, Freddie Mac, FHA, and VA loans gives 30 days to pay the full balance, and lenders usually also offer a 30-day title-back option [In Rem Podcast — d9fjKwIC-VE @ 00:00:41]. Fallback: deed back plus an agreement for sale. A false affidavit emailed to a lender is wire fraud and bank fraud."
         }
       ],
-      "completion_gate": "Activate routine servicing only after signed documents are linked, duplicate and reversal tests have recorded passing results, the first underlying payment is independently verified, and bank, servicer, and accounting balances reconcile with no unexplained difference."
+      "completion_gate": "Complete only when every hybrid layer is mapped, arrears carry the legal-fee cushion, the wrap balance covers all underlying liens, reinstatement timing and insurance roles are recorded, any Morby Method structure shows active income, and the called-loan cure names a funding source and a deed-back fallback."
     },
     {
       "worksheet_id": "ws-04",
       "number": 4,
-      "title": "Statutory, Licensing, Contract Addendum & Compliance Audit",
-      "purpose": "Build a transaction-specific legal and operational evidence register covering transfer restrictions, origination, repayment analysis, disclosures, servicing, privacy, and enforcement. Translate each applicable requirement into a document, responsible professional, delivery deadline, and retained proof rather than relying on general seller-financing assumptions.",
-      "chapter_ref": "Q5, Q9",
+      "title": "Failure-Mode Defense and Creative Closing Control",
+      "purpose": "Stress-test a subject-to or wrap file against the ways these deals go sideways: seller bankruptcy clawbacks, insurance trip switches, misdirected closing packets, and called notes. Then lock down the closing table, Texas disclosure timing, and year-one installment-sale tax so the deal survives title, the lender, and Form 6252.",
+      "chapter_ref": "Q7-Q8",
       "instructions": [
-        "Determine the property state, buyer occupancy, transaction purpose, creditor status, and parties' activities before selecting statutory requirements. Have counsel distinguish federal coverage, state licensing, and contractual duties; a narrow exemption in one category does not resolve the others.",
-        "Verify the RMLO and servicing provider through the relevant licensing records and confirm their actual scope of engagement. Retain dated evidence and require written responsibility for underwriting, disclosures, payment administration, and escalation rather than relying on marketing descriptions.",
-        "Create a delivery calendar from the current law and actual transaction facts. Identify required recipients, document versions, delivery methods, waiting periods, and proof of receipt; do not assume a generic closing checklist satisfies state wraparound requirements.",
-        "Review buyer-facing and seller-facing contracts together so payment duties, acceleration exposure, cure rights, servicing access, insurance interests, and payoff procedures are consistent. Use transaction counsel's completed instruments rather than treating workbook example language as executable loan documents.",
-        "Complete a final evidence review before funding and repeat the relevant checks after material changes. Preserve reasons for adverse credit decisions, borrower communications, and servicing exceptions according to a documented retention schedule tied to applicable requirements."
+        "Complete every field before scheduling closing, because the failure modes captured here are cheapest to prevent at the table and most expensive to repair after the deed records.",
+        "Interview the seller directly about bankruptcy, judgments, liens, and insurance, and attach the title search, declarations page, and signed affidavits to the deal folder for each answer.",
+        "Write the called-note plan B as a dated sequence of actions with named funding sources, not as a general intention, so it can be executed inside a roughly 30-day window.",
+        "Vet the title company or law-firm closing office in writing, including its named closer, underwriter requirements, draft settlement statement, and wiring policy, before sending the file.",
+        "Run the installment-sale tax model with real numbers for contract price, gross profit, payments, and recapture, and revise the down payment if the year-one tax exceeds the cash received."
       ],
       "fields": [
         {
-          "name": "Jurisdiction and transaction coverage matrix",
+          "name": "seller_bankruptcy_screen",
           "type": "textarea",
-          "prompt": "Identify property location, occupancy, borrower purpose, creditor activity, and governing instruments. Map each fact to the federal and state provisions requiring professional review, including exceptions that must be established rather than presumed.",
-          "example": "The example property is in Texas, and the buyer will occupy it as a principal residence. Counsel evaluates Tex. Prop. Code §5.016 and Texas Finance Code Chapter 159, along with applicable federal consumer-credit provisions. The file separately records origination licensing, disclosure coverage, and servicing requirements."
+          "prompt": "Record the seller's bankruptcy status and solvency screen before closing. Note whether you asked point-blank about a current or planned filing, what judgments, tax liens, collections, or pending evictions surfaced, and which reaffirmation clause and notarized solvency affidavit you attached.",
+          "example": "Asked the seller point-blank whether they were in or considering bankruptcy and got a clear no. The title search showed one paid collection, no judgments, no tax liens and no pending evictions, so the file moved forward with a reaffirmation clause and a notarized affidavit of solvency signed at the table [William Tingle — D8NZHrMYpSE @ 00:06:02]."
         },
         {
-          "name": "Transfer restriction and due-on-sale memorandum",
+          "name": "insurance_trigger_lock",
           "type": "textarea",
-          "prompt": "Record the underlying contract's transfer language and counsel's analysis under federal due-on-sale law. Explain whether a specific protected transfer applies and document the practical funding response if the lender accelerates.",
-          "example": "The memorandum cites 12 U.S.C. §1701j-3 and 12 CFR Part 591, quotes the mortgage transfer clause, and finds no established exception for the proposed investor acquisition. No trust or entity transfer is described as automatic protection. The seller acknowledgment and capital plan address continuing acceleration exposure."
+          "prompt": "Document the insurance structure locked at closing. State whether the seller switched to a landlord policy, who is named insured and additional insured, who is mortgagee, and how you kept the seller relationship clean enough to call on later.",
+          "example": "Seller converted the owner-occupant homeowner's policy to a landlord policy the day of closing, with the investor added as additional insured and the original lender kept as mortgagee. Since the declarations page is the trigger roughly 90% of the time, the change was made early and the seller agreed to help with renewals [James Bealer — Y7CyY8gLd3U @ 00:03:10]."
         },
         {
-          "name": "RMLO licensing and engagement scope",
+          "name": "due_on_sale_plan_b",
           "type": "textarea",
-          "prompt": "Verify the individual and sponsoring entity responsible for origination, including state authority, license status, engagement scope, and evidence date. Explain how compensation and responsibilities are documented before borrower application work begins.",
-          "example": "Operations checks the RMLO's active Texas authority through NMLS Consumer Access and retains the dated result. The engagement covers application intake, verified repayment analysis, and applicable disclosures. Counsel reviews the SAFE Act framework at 12 U.S.C. §§5101–5117 and applicable state implementing requirements before origination starts."
+          "prompt": "Write the plan B if the underlying lender calls the note. Name the payoff source, the refinance path, the deed-back and restructure option, the reserve amount, and the day-by-day timeline that fits inside the roughly 30-day window after a notice.",
+          "example": "If PennyMac or any servicer calls the loan while payments are current, the first move mirrors Evan Ragsdale's cure: deed the property back to the original borrower, then restructure as a contract for deed on the same economics, keeping control, cash flow and upside. Refinance quotes stay on file as the backup [Evan Ragsdale — m8scT0nPuzY @ 00:02:08]."
         },
         {
-          "name": "Ability-to-repay and product review",
-          "type": "textarea",
-          "prompt": "Identify the documented repayment factors, product terms, and applicable creditor obligations. Record any claimed exemption with counsel's factual basis while maintaining this operating policy's licensed RMLO underwriting for every owner-occupant buyer.",
-          "example": "The RMLO evaluates income, assets, employment, existing obligations, mortgage-related costs, credit history, and the proposed payment under the applicable 15 U.S.C. §1639c and 12 CFR §1026.43 framework. Counsel separately reviews 12 CFR §1026.36 seller-financer provisions; those provisions are not treated as a blanket repayment-analysis exemption."
+          "name": "closing_packet_routing",
+          "type": "text",
+          "prompt": "Track where the executed closing packet travels after signing. List the deed, settlement statement, trust documents and title exception sheet, the only approved recipient, the carrier tracking number, and who confirmed delivery so nothing lands on the lender's desk.",
+          "example": "Mobile notary instructed in writing to ship the signed packet only to the title company, never to the mortgage servicer. A misdirected FedEx once put the deed and trust documents on Freedom Mortgage's desk, so this file logs the tracking number and a same-day delivery confirmation from the escrow officer [Sub2Investor — WxPHAXmQ-j4 @ 00:05:08]."
         },
         {
-          "name": "Texas wrap and existing-lien disclosures",
+          "name": "title_company_vetting",
           "type": "textarea",
-          "prompt": "Create a counsel-verified register for existing-lien and wrap disclosures, recipients, required content, statutory timing, and delivery evidence. Distinguish the property-code requirements from the finance-code requirements and record applicability separately.",
-          "example": "The Texas packet separately tracks Tex. Prop. Code §5.016 and Texas Finance Code Chapter 159. Counsel enters the applicable delivery deadlines and required recipients before scheduling closing. The closer retains dated versions and delivery proof; signing the deed does not substitute for completing required earlier disclosure steps."
+          "prompt": "Score the title company or law-firm closing office before sending the file. Record the named closer, its underwriter requirements, whether the draft settlement statement avoids showing the existing loan as a payoff, and its policy on emailed wiring instruction changes.",
+          "example": "Called three offices. The winner named one closer, stated its underwriter requirements for a subject-to file, and sent a draft settlement statement that kept the existing loan in place rather than listing it as a payoff. It also confirmed it never changes wiring instructions by email and expects callbacks to a known number [Music City TC — -AAdJ4WwUuM @ 00:03:25]."
         },
         {
-          "name": "Credit decisions and adverse-action records",
-          "type": "textarea",
-          "prompt": "Specify authorized credit access, consistent underwriting criteria, decision ownership, and applicable notification duties. Identify the record retained when an application is declined or changed because of credit information or verified affordability.",
-          "example": "The RMLO obtains a permissible purpose and appropriate authorization before requesting credit under 15 U.S.C. §1681b. If the application is declined, the responsible creditor evaluates ECOA and 12 CFR §1002.9 notice duties, plus applicable 15 U.S.C. §1681m requirements. The file retains actual reasons rather than generic rejection language."
+          "name": "texas_disclosure_timing",
+          "type": "text",
+          "prompt": "If the property sits in Texas, log the date the buyer received the written list of every existing loan with due-on-sale and insurance warnings, the closing date, and the day count proving at least seven days passed between them.",
+          "example": "Texas wrap: the buyer signed receipt of the underlying-lien notice ten days before the scheduled closing, listing the first lien and a small second, each with due-on-sale and insurance-risk warnings. Ten days clears the seven-day minimum, so the buyer cannot cancel and recover earnest money for late notice [Attorney Hamilton Rucker — 4coBBRVrtIA @ 00:05:06]."
         },
         {
-          "name": "Servicing, escrow, and borrower information",
+          "name": "dual_insurance_policies",
           "type": "textarea",
-          "prompt": "Document servicing-provider authority, payment allocation rules, escrow handling, statement delivery, and borrower error channels. Determine which federal servicing provisions apply and identify state duties that remain regardless of a federal exemption.",
-          "example": "Counsel and the licensed servicer assess 12 U.S.C. §2605, 12 CFR §1024.17, and 12 CFR §1026.41 for this loan and provider. The contract requires monthly underlying-payment evidence and a documented borrower inquiry channel. Escrow collections remain separately reconciled even when a particular federal provision does not apply."
+          "prompt": "On a wrap sale, describe both insurance policies in force. Identify the seller's original policy kept alive for the old bank, the separate buyer policy, the named insureds and mortgagees on each, and who monitors renewal and cancellation notices.",
+          "example": "The seller wanted to cancel the old policy to save money, which is the mistake that makes the old bank see its required coverage lapse and move toward foreclosure. The original policy stays in force for the underlying lender, and the end buyer binds a separate policy naming the investor as secondary mortgagee [Attorney Hamilton Rucker — 4coBBRVrtIA @ 00:04:32]."
         },
         {
-          "name": "Contract addenda and operational covenants",
-          "type": "textarea",
-          "prompt": "List the counsel-drafted provisions necessary to allocate underlying-payment duties, insurance maintenance, information access, payoff processing, and default remedies. Identify inconsistencies between the wrap note, security instrument, purchase contract, and servicing agreement.",
-          "example": "Counsel's drafting instruction states: require monthly evidence of underlying payment, authorize appropriate servicing information access, specify the payoff calculation method, and identify lawful remedies for payment failure. The servicing agreement must support those duties operationally. A ten-day internal reporting target cannot shorten any statutory borrower notice period."
+          "name": "wrap_spread_check",
+          "type": "text",
+          "prompt": "Enter the underlying loan rate, the wrap note rate, and the resulting interest spread. Explain why the spread is wide enough to cover servicing, insurance gaps, and a possible six-month foreclosure stretch if the wrap buyer stops paying.",
+          "example": "Underlying loan at 3.5%, wrap carried at 6%, a 2.5-point spread on the full wrapped balance. Attorney Patrick McQueen frames 5.5% to 6% as the range where a seller holding a 3.5% loan earns on the rate difference, and the margin here also funds reserves for missed buyer payments [KELLY ZITLOW — pYujIjfIOkE @ 00:05:59]."
         },
         {
-          "name": "Default, foreclosure, and bankruptcy response",
+          "name": "installment_sale_tax_model",
           "type": "textarea",
-          "prompt": "Identify the professionals responsible for default notices, loss-mitigation review, foreclosure, and bankruptcy monitoring. State which actions must stop when new facts change the permitted enforcement path and how carrying costs remain funded.",
-          "example": "Texas counsel evaluates Tex. Prop. Code §51.002 and applicable federal servicing requirements before enforcement. A bankruptcy filing triggers immediate review of 11 U.S.C. §362 before collection activity continues. Operations preserves the $20,000 reserve and keeps the underlying loan current; no contractor changes locks or pressures occupants outside the lawful process."
+          "prompt": "Model year-one tax before signing. Show the contract price, gross profit, gross profit percentage, year-one payments received, taxable gain, any depreciation recapture taxed in full, and any mortgage above basis treated as a payment in the sale year.",
+          "example": "Rental building sold for $1,200,000 with $240,000 down and a $960,000 note at 6.5%. Gross profit of $728,000 over the contract price gives a 0.6067 gross profit percentage. Year-one payments of $250,730 times that percentage produce $152,118 of taxable gain before recapture is added and checked against cash in hand [Hans Goldstein: Tax & Exit Planning — mIvRRP_DEd0 @ 00:01:46]."
         },
         {
-          "name": "Privacy controls and evidence sign-off",
-          "type": "textarea",
-          "prompt": "Map borrower information flows, service-provider access, retention duties, and incident responsibility. Identify applicable safeguards requirements and record the final professional review of licenses, disclosures, signed instruments, and delivery evidence before funding.",
-          "example": "The reviewer assesses GLBA obligations and 16 CFR Part 314 applicability, restricts tax returns to the RMLO and authorized reviewers, and requires encrypted file exchange. Before funding, counsel and operations confirm current licenses, completed documents, and delivery evidence. Open disclosure defects prevent closing until corrected through the required process."
+          "name": "dealer_down_payment_cushion",
+          "type": "text",
+          "prompt": "If you are a dealer or flipper barred from installment treatment, calculate the down payment needed to cover the full tax on the gain at closing, and state how later payments will be taxed only on interest.",
+          "example": "As a flipper, installment treatment is off the table, so the down payment was backed into from the tax bill rather than from the buyer's comfort. The buyer brings enough cash at closing to cover the full tax on the overall gain, leaving every later note payment as after-tax money taxed only on interest [Mark J Kohler — jThMHTcyEdY @ 00:01:40]."
         }
       ],
-      "completion_gate": "Fund only after counsel and the licensed providers have documented applicability, completed required underwriting and disclosures, verified delivery timing, reconciled contractual duties, and assigned servicing and enforcement responsibilities. Reopen the review when parties, terms, occupancy, or closing dates materially change."
+      "completion_gate": "Do not close until the seller has denied any bankruptcy plan in writing, the landlord policy and buyer policy are bound with correct insureds and mortgagees, the packet recipient is locked to the title company, Texas notice timing is proven where applicable, and the year-one tax model shows cash received covering the tax due."
     },
     {
       "worksheet_id": "ws-05",
       "number": 5,
-      "title": "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker",
-      "purpose": "Build a permissioned acquisition and servicing workflow that surfaces low-equity opportunities without automating judgment or hiding risk. Connect source provenance, seller conversations, qualified referrals, licensed underwriting, and payment monitoring to measurable conversion stages, exception handling, and tested manual recovery procedures.",
-      "chapter_ref": "Q6, Q10",
+      "title": "Dodd-Frank Coverage, Ability-to-Repay, and Servicing Back Office",
+      "purpose": "Decide whether an owner-carry sale falls under Dodd-Frank, document the eight ability-to-repay factors with a licensed originator, and board the note with a licensed servicer whose fee schedule, payment waterfall, document audit, and payoff verification make the paper compliant, collectible, and sellable.",
+      "chapter_ref": "Q9-Q10",
       "instructions": [
-        "Start with documented source permissions and defined acquisition criteria rather than bulk collection. Label public-record signals as leads requiring verification, and suppress contacts when ownership, outreach restrictions, or seller preferences prevent appropriate follow-up.",
-        "Create one pipeline record per property and maintain source provenance through every stage. Use deduplication and explicit stage criteria so repeated foreclosure records or broker referrals do not inflate opportunity counts or generate conflicting seller contacts.",
-        "Automate reminders, document completeness checks, and reconciliation alerts while keeping credit decisions, contract interpretation, and fund release with authorized professionals. Record the inputs and event history behind every status change so exceptions remain explainable.",
-        "Measure the acquisition flywheel using verified seller conversations, qualified properties, completed RMLO files, closed transactions, and performing notes. Include rejected deal reasons and servicing quality when evaluating channels; inexpensive leads can still create expensive portfolio risk.",
-        "Maintain manual alternatives for each critical integration and test them on a scheduled basis. An outage must not cause duplicate payments, missed underlying debt service, lost borrower notices, or unreviewed changes to credit and closing decisions."
+        "Start with occupancy: identify who will actually live in the property before choosing an exemption lane, because the name on the deed never decides coverage.",
+        "Engage a licensed mortgage loan originator for any file that cannot clearly use an exemption, and keep the originator's work product in the permanent loan file.",
+        "Calculate debt-to-income and residual income from documented figures, and decline any buyer who passes the ratio but cannot carry the full payment month to month.",
+        "Compare at least two servicers by laying each fee schedule over its servicing agreement, then confirm the payment waterfall pays the underlying lien before anyone else.",
+        "Audit the note, notary block, and recording proof before boarding, and obtain every payoff figure directly from the lender or that lender's own servicer."
       ],
       "fields": [
         {
-          "name": "Lead sources and authorized collection",
+          "name": "occupancy_coverage_test",
           "type": "textarea",
-          "prompt": "List acquisition sources, permitted use, refresh cadence, and verification requirements. Explain how low-equity or pre-foreclosure signals become research tasks without treating distress as proof of seller willingness or transaction suitability.",
-          "example": "The operator reviews 40 county-record notices and 20 licensed-broker referrals weekly using authorized access. Each record retains its source and publication date. Staff verify ownership and current loan status before discussing terms; a foreclosure filing alone neither establishes available equity nor authorizes access to private mortgage information."
+          "prompt": "Determine whether Dodd-Frank applies by recording the buyer's true intended occupancy, not the name on the deed. Note whether a buyer LLC, relative, or investor story is involved, and whether a signed business-purpose acknowledgment limits residence to fourteen days yearly.",
+          "example": "Buyer asked to close in an LLC and described the house as an investment, but a follow-up call revealed the buyer's sister would live there full time. Occupancy purpose decides coverage, so the file was treated as a primary-residence owner-carry loan and routed for a full ability-to-repay review [William Bronchick — ZGvGq-_10yA @ 00:37:21]."
         },
         {
-          "name": "Outreach controls and seller communication",
-          "type": "textarea",
-          "prompt": "Define outreach channels, contact permissions, suppression handling, and review of applicable communication rules. Describe the seller-facing explanation of subject-to financing, continuing liability, and acceleration exposure without promising debt release or rescue.",
-          "example": "Before telephone outreach, the campaign owner reviews 47 U.S.C. §227, 47 CFR §64.1200, 16 CFR Part 310, and applicable state requirements. Suppressed contacts remain excluded. The script explains that the seller's mortgage stays outstanding and that a title transfer can trigger lender action; it never promises credit repair."
+          "name": "exemption_lane",
+          "type": "text",
+          "prompt": "Identify which exemption lane, if any, this sale uses. State whether the seller is a natural person, estate, or trust using the one-property pass, or counts toward three deals in twelve months, and confirm balloon and adjustment-cap limits.",
+          "example": "Seller is an individual carrying a second deal this year, so the three-property lane applies. The note runs fixed for at least five years, has no negative amortization, caps adjustments at 2% per year and 6% lifetime, and carries no balloon. Outside Texas, processing the buyer on the first deal is still standard [Scott Horne's Owner Finance Network — 1WQyfpf7efQ @ 00:02:17]."
         },
         {
-          "name": "Deduplication and pipeline state machine",
+          "name": "originator_engagement",
           "type": "textarea",
-          "prompt": "Specify property matching keys, permitted stage transitions, required evidence, and duplicate resolution. Explain how the system preserves multiple referral sources while maintaining one accountable owner and one current seller-contact plan.",
-          "example": "Normalized parcel identifier plus county forms the primary matching key. A second broker referral attaches to P035001 rather than creating another opportunity. Airtable stages are sourced, verified, qualified, underwritten, closing, and servicing. Movement to qualified requires current debt evidence, seller authority, preliminary valuation, and a named acquisition owner."
+          "prompt": "Record the licensed mortgage loan originator engaged for this file, the fee and who pays it, the time required, and which tasks they completed, including the application, documentation of the eight factors, and the printed disclosure stack.",
+          "example": "Engaged an originator down the hall for $500 and roughly 40 minutes of work. The originator took the buyer's application, documented all eight ability-to-repay factors, and printed the full disclosure stack for signing. Even where an originator is optional, using one kills the borrower's later excuse and protects the seller [William Bronchick — ZGvGq-_10yA @ 00:32:42]."
         },
         {
-          "name": "Automated document collection and review",
+          "name": "dti_and_residual",
           "type": "textarea",
-          "prompt": "Identify documents requested automatically, expiry rules, access restrictions, and professional review responsibilities. Define what happens when a document is missing, inconsistent, unreadable, or older than the transaction's evidence policy permits.",
-          "example": "An n8n workflow requests the authorized mortgage statement, insurance declarations, and tax record after seller permission is recorded. A statement older than 30 days creates a refresh task. Extracted balances remain provisional until reviewed; borrower income files route directly to the licensed RMLO's secure intake process."
+          "prompt": "Calculate the buyer's back-end debt-to-income ratio and monthly residual income after the full wrap payment. Compare the ratio to the 43% line and your personal screen, then explain whether family size or living costs make the file fail anyway.",
+          "example": "Back-end DTI came in at 41%, under the 43% line yet well above the three-to-one personal screen of about 33%. With four children in California and only about $500 left each month, the buyer passes the ratio and still fails residual income, so the file is declined [Sub2Investor — 1oenw8zc-5s @ 00:24:46]."
         },
         {
-          "name": "Acquisition funnel and channel economics",
+          "name": "eight_factor_file",
           "type": "textarea",
-          "prompt": "Calculate conversion by documented stage and attribute channel spending to qualified opportunities and completed transactions. Separate planning assumptions from observed results and include the time lag between initial contact and recognized contribution.",
-          "example": "A planning funnel starts with 120 records, 36 verified conversations, 12 qualified properties, four complete files, and one closing. At $2,400 channel spend, planned cost per qualified property is $200 and cost per closing is $2,400. Actual conversion replaces these assumptions only after the cohort matures."
+          "prompt": "List the evidence stored for each of the eight ability-to-repay factors, where the written file lives, and the retention date at least three years after consummation, so documented diligence survives a counterclaim or foreclosure defense raised years later.",
+          "example": "Pay stubs, bank statements, credit report, debt list, and a written DTI and residual worksheet sit in one labeled folder per factor, copied to the servicer. Considering the factors without documentation does not hold up, and borrowers can raise the failure as a foreclosure defense for the life of the loan [William Bronchick — MNznbFmtOwI @ 00:18:16]."
         },
         {
-          "name": "Licensed-servicer integration and event security",
+          "name": "thin_credit_conditions",
           "type": "textarea",
-          "prompt": "Describe the servicer data exchange, authentication, event validation, access scope, and failure response. Ensure automation can reconcile approved events without independently changing loan terms or issuing unrestricted transfers from borrower accounts.",
-          "example": "The servicer integration uses scoped credentials stored outside workflow text, authenticated notifications where supported, and an allowlisted event schema. Receipt events enter the idempotent ledger queue. An unexpected amount or loan identifier creates review work; automation cannot rewrite the note rate or initiate an unapproved borrower debit."
+          "prompt": "For ITIN, cash-income, or blank-credit buyers, list the income documentation accepted and the conditions requiring twelve months of recurring monthly bills paid, such as utilities, phone, rent, or subscriptions, that establish payment behavior before final approval.",
+          "example": "Penalty box buyer with an ITIN and documented cash-job income. Approval was conditioned on twelve months of proof that utilities, a phone plan, rent and two online subscriptions were paid every month. Those receipts establish payment behavior that a blank credit report cannot show and go into the underwriting file [Sub2Investor — 1oenw8zc-5s @ 00:21:46]."
         },
         {
-          "name": "Monthly tax, insurance, and payment audit",
-          "type": "textarea",
-          "prompt": "Define recurring checks for underlying payments, tax status, insurance continuity, escrow changes, and policy renewals. State the evidence source, responsible reviewer, and escalation timing for each detected discrepancy or missing confirmation.",
-          "example": "On the fifth business day, operations matches every underlying receipt to the lender record and reviews escrow changes. Insurance renewals receive 45-day reminders; taxes receive a county-record check before delinquency. A premium increase from $1,800 to $2,400 annually adds $50 monthly to the affordability and escrow review."
+          "name": "servicer_selection",
+          "type": "text",
+          "prompt": "Name the licensed servicer boarding this note and the model chosen, full-service or client-managed. Record the quoted monthly fee, the fee schedule laid line by line over the servicing agreement, and any add-on charges discovered before signing.",
+          "example": "Client-managed servicer quoted $25 per loan per month. Laying the servicer's full fee schedule over the servicing agreement line by line revealed monthly add-ons that pushed the true cost toward $40 to $45, so the quote was renegotiated toward the $30 standard before the note was boarded [7e Investments — SZhJFIusBp4 @ 00:03:22]."
         },
         {
-          "name": "Servicer outage and manual fallback",
+          "name": "payment_waterfall",
           "type": "textarea",
-          "prompt": "Write the fallback for unavailable portals, failed notifications, delayed remittances, and bank interruptions. Specify who verifies payment status before manual action and how recovery avoids duplicate underlying payments or duplicate ledger entries.",
-          "example": "If the portal is unavailable before the July payment deadline, operations calls the servicer through a verified contact and checks the bank record. An authorized manual payment occurs only after duplicate risk is resolved. Its reference is linked to the original obligation so restored automation does not pay again."
+          "prompt": "Map the servicer's payment waterfall for every buyer payment. Record the check-clearing hold, the underlying lien paid first, escrow moved into trust, the servicing fee deducted, and the remainder forwarded to the investor, with receipts sent.",
+          "example": "Buyer pays by check; the servicer holds it four days to clear, then pays the underlying lien holder, moves the tax and insurance escrow into a trust account, deducts its fee, and forwards the remainder to the investor. The seller is never a pass-through, which is why servicers call this the fraud preventer [Scott Horne's Owner Finance Network — adTW0EyLeRk @ 00:09:56]."
         },
         {
-          "name": "Risk triggers and stop conditions",
+          "name": "note_document_audit",
           "type": "textarea",
-          "prompt": "Define quantitative triggers for acquisition pauses, distribution holds, professional escalation, and additional reserves. Distinguish temporary system faults from borrower distress and lender enforcement so each event receives the appropriate response.",
-          "example": "Two unverified underlying payments, any acceleration notice, or a reserve balance below $20,000 pauses new commitments. A buyer 15 days past due enters the servicer's applicable outreach process. An acceleration notice goes directly to counsel and the capital provider; automated marketing never resolves an enforcement event."
+          "prompt": "Audit the note package before boarding or buying. Check note length, the notary block, recording proof for the security instrument, and every material term, then decide whether a borrower-signed addendum fixes gaps or a full reclose is required.",
+          "example": "Promissory note ran four pages, notary block completed, and the deed of trust recorded with the county. One material term was missing, so the borrower signed an addendum rather than redoing the documents, since only an incorrect interest rate or P&I amount forces a full redo of the package [Note Investing & Seller Financing - JKP Holdings — uKK5_EVlvus @ 00:09:09]."
         },
         {
-          "name": "Referral flywheel and continuous improvement",
-          "type": "textarea",
-          "prompt": "Describe how performing-note evidence, transparent seller communication, and documented closing quality improve referrals. Assign review cadence and channel changes using actual results while checking any compensation arrangement before making referral payments.",
-          "example": "Each quarter, the operator shares aggregated payment-verification performance with approved broker partners without borrower data. A channel with eight qualified files and zero title-ready transactions is suspended. Any proposed paid referral is reviewed for applicable 12 U.S.C. §2607 restrictions and state requirements before compensation is offered."
+          "name": "payoff_verification",
+          "type": "text",
+          "prompt": "Record how the underlying lien payoff and arrears figures were obtained. Name the lender or its servicer contacted directly, the date, the amount quoted, and the confirmation method, rejecting any figure relayed through a third party.",
+          "example": "A third party emailed a payoff letter with new wiring details, and it was set aside. The payoff was requested directly from the underlying lender's servicer, confirmed by callback to the number on the original loan statement, and matched to the servicing ledger, because payoff fraud happens out there every day [Scott Horne's Owner Finance Network — adTW0EyLeRk @ 00:16:51]."
         }
       ],
-      "completion_gate": "Launch automated workflows only after source permissions, suppression rules, deduplication, professional decision boundaries, and payment fallbacks are documented. Record observed duplicate-event and outage test results, and assign every high-risk alert to a named person with an evidence-based resolution deadline."
+      "completion_gate": "Do not fund or board the note until true occupancy is documented, the exemption lane or originator file is complete, DTI and residual income both pass, all eight factors are stored for at least three years, the servicer fee schedule matches the agreement, and every payoff figure came directly from the lender."
     },
     {
       "worksheet_id": "ws-06",
       "number": 6,
-      "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
-      "purpose": "Turn the first month into an evidence-producing operating sprint rather than a forced closing deadline. Assign a small-team pod, budget acquisition runway, measure file quality and servicing integrity, and assemble transferable note records while preserving the canonical annual scorecard and realistic deal timing.",
-      "chapter_ref": "Q11, Q12",
+      "title": "Note Acquisition, Resolution, and Liquidity Exits",
+      "purpose": "Source and price discounted or non-performing mortgage notes with disciplined diligence, resolve defaults through the borrower rather than foreclosure, and plan liquidity exits through full sales, partials, and marketplace listings so capital is recovered while the tail of the note stays in your hands.",
+      "chapter_ref": "Q11-Q12",
       "instructions": [
-        "Set the first month's objective as a functioning acquisition, underwriting, closing, and servicing system. Preserve the expected two-to-six-month first-deal horizon; do not lower standards or assume immediate revenue merely because the launch sprint ends after 30 days.",
-        "Assign the founder and three contracted specialists to explicit responsibilities, then document supporting title, insurance, and accounting vendors. Distinguish core staffing from outside service organizations so the team-efficiency claim does not hide required professional work.",
-        "Budget monthly overhead separately from property capital and reserves. Track leading indicators during launch and recognized revenue after eligible events occur; compare annualized performance with canonical scenarios only when the cohort and timing support the comparison.",
-        "Build the exit file from the first transaction using signed documents, recording evidence, servicing histories, reconciled balances, and unresolved risk disclosures. A potential note buyer must be able to reconstruct the asset without relying on the founder's memory.",
-        "Finish day 30 with a written continue, repair, or pause decision. Record completed work, actual test results, missing evidence, remaining cash runway, and next owners; neither a polished dashboard nor a full lead list substitutes for an executable transaction."
+        "Log the sourcing channel and contact for every note, including servicers, foreclosure attorneys, and marketplace auctions, so repeat off-market supply can be tracked and worked again.",
+        "Finish diligence on people, property, and paperwork inside the 14 to 21 day window, and kill the bid if any of the three remains open when the window closes.",
+        "Price every bid off the lower of unpaid balance or property value, and confirm the deal still pays at partial recovery rather than full reperformance.",
+        "Plan the borrower resolution before closing on the note, including rapport steps, intel targets, delegated authority, and the modification rate you are prepared to write.",
+        "Model every partial and marketplace exit with all balances and default scenarios written out, and verify vesting, recording, and seasoning before any collateral changes hands."
       ],
       "fields": [
         {
-          "name": "Launch objective and benchmark identity",
-          "type": "textarea",
-          "prompt": "State the volume's operating thesis, scorecard identity, and measurable 30-day objective. Distinguish the ranking and annual scenario benchmarks from evidence that the current launch has actually produced qualified opportunities or recognized revenue.",
-          "example": "Volume 035 is Candidate #35, pipeline rank #09 of 36, with a Money-to-Manpower Score of 90/100. Day 30 targets one complete practice file, verified professional coverage, and a tested servicing workflow. First-deal planning remains two to six months; the score does not create booked revenue."
+          "name": "note_sourcing_channel",
+          "type": "text",
+          "prompt": "List the sourcing channel for this note, such as a loan servicer, foreclosure attorney, marketplace auction, or direct seller. Record the contact, how they learned the portfolio was for sale, and the season the listing surfaced.",
+          "example": "Lead came from a foreclosure attorney who handles defaults for several note-owning investors and mentioned one was closing a fund. Servicers are a parallel off-market feed because they know which clients are selling portfolios, and the auction watch list gets extra attention from Thanksgiving on every year [Fusion Notes — PXDW2SqUfMA @ 00:01:36]."
         },
         {
-          "name": "Days 1–7 professional and capital setup",
+          "name": "three_ps_diligence",
           "type": "textarea",
-          "prompt": "Assign first-week deliverables for counsel, licensed origination, servicing, banking, insurance, and capital planning. Identify the evidence that makes each relationship operational and the expense owner responsible for staying within the startup budget.",
-          "example": "By day 7, the founder obtains counsel's scope, an NMLS-verified RMLO engagement, a licensed-servicer proposal, and bank-account separation instructions. The $55,000 startup plan reserves $20,000 for default carrying costs. The capital file separately documents the requirements for any acceleration funding commitment."
+          "prompt": "Track due diligence on the three Ps, people, property, and paperwork, inside the 14 to 21 day window. Record the BPO value, insurance status, current taxes, borrower intel, and the date diligence finished or the bid was killed.",
+          "example": "Day 9 of a 21-day window: BPO returned, hazard insurance confirmed active on the property, and county taxes current. The borrower's default traced to a life event, a job loss, and rapport calls suggest a path back to paying. Paperwork review is the remaining gate before the bid is locked [Sierra Davis — UimgP_cJydU @ 00:33:40]."
         },
         {
-          "name": "Days 8–14 acquisition and file rehearsal",
+          "name": "bid_price_math",
           "type": "textarea",
-          "prompt": "Define the second week's source validation, outreach, qualification, and document rehearsal targets. State how staff handle incomplete evidence and which sample transactions are educational exercises rather than actual funded opportunities.",
-          "example": "Days 8–14 target 30 verified property records, eight appropriate seller conversations, and two evidence-based preliminary screens. Staff rehearse STW-035-001 as a worked example only. A missing lender statement prevents qualification; the team does not invent balances to meet its weekly target."
+          "prompt": "Show the bid math. Record unpaid principal balance, property value, the lower of the two, your price in cents on the dollar, and the recovery you need, confirming the bid still pays if the loan never fully reperforms.",
+          "example": "UPB of $100,000 against a $140,000 property value, so pricing runs off the $100,000 UPB. Bid set at 55 cents, $55,000, under the 60-cent ceiling so that even a 70-cent recovery still pays. A price that only works at full reperformance gets killed before submission to the seller [FIXnotes | Non-Performing Note Investing — lxjMbDIOEGw @ 00:04:18]."
         },
         {
-          "name": "Days 15–21 underwriting and ledger tests",
-          "type": "textarea",
-          "prompt": "Set third-week deliverables for licensed underwriting, disclosure planning, amortization review, event handling, and reconciliation rehearsal. Specify the observed evidence required to distinguish a completed test from a planned test or vendor assurance.",
-          "example": "Days 15–21 produce one RMLO-reviewed sample affordability analysis and five ledger test records. The duplicate-receipt test must leave one $1,930.20 receipt journal; the return test must create one linked reversal. The reviewer attaches actual outputs and records failures without labeling them completed."
+          "name": "legacy_coupon_adjustment",
+          "type": "text",
+          "prompt": "If the note carries a legacy 3 to 5 percent coupon, explain how your price absorbs a likely borrower reinstatement and a weaker low-coupon resale, and state the modification rate you would write if the borrower needs one.",
+          "example": "Note carries a 3.75% legacy rate, so the borrower can likely afford to reinstate, which kills most of the upside. The bid was cut to price in a reinstatement and a weaker resale of low-coupon paper, and any new modification written on this loan starts at 9% or higher [FIXnotes | Non-Performing Note Investing — lxjMbDIOEGw @ 00:07:28]."
         },
         {
-          "name": "Days 22–30 readiness and next-month decision",
+          "name": "resolution_path",
           "type": "textarea",
-          "prompt": "Define the final week's evidence review, remaining cash forecast, transaction readiness assessment, and decision criteria. Identify the next month's work that can continue safely if no acquisition has reached funding readiness.",
-          "example": "On day 30, the founder reviews professional coverage, two qualified property files, recorded test results, and a 90-day cash forecast. With no fundable deal, the team continues verified sourcing and buyer-file preparation within budget. It does not recognize projected spreads or force a closing."
+          "prompt": "Choose the primary resolution path through the borrower, such as forbearance, modification, or resale, before foreclosure. Record rapport-building steps, intel gathered on the life event behind the default, delegated authority held, and the target modification turnaround.",
+          "example": "Holding delegated authority from the servicer, the modification was prepped the same day as the borrower call and sent with the servicer's ACH authorization form. The goal is a modified, reperforming loan within about 30 days, built on rapport and intel rather than a rushed foreclosure filing on day one [FIXnotes | Non-Performing Note Investing — 5H6jVWw2QK0 @ 00:02:02]."
         },
         {
-          "name": "Pod staffing and responsibility boundaries",
+          "name": "pay_history_read",
           "type": "textarea",
-          "prompt": "Map the core staffing model to acquisition, licensed origination, servicing control, legal coordination, and financial review. Identify outside vendor services and explain how their costs remain visible without misstating core team size.",
-          "example": "Conservative and Base use 1 FT founder plus 3 C: acquisition support, a licensed RMLO engagement, and servicing-control support. The licensed servicing company, counsel, title company, and accounting firm remain separately costed vendors. Scaled uses 2 FT plus 4 C, six core people, without removing required professional services."
+          "prompt": "Summarize 12 to 24 months of pay history alongside the servicing notes. Flag rolling 30s or rolling 60s, record what the notes reveal about borrower intent, and state the price adjustment those patterns justify on this note.",
+          "example": "Eighteen months of ledger show rolling 30s with no 60s, so the price was knocked down rather than walked. The servicing notes mattered more: on a comparable file, a four-years-delinquent contract for deed with a $40,000 payoff sold for about $30,000 because the notes showed the borrower would sign a deed in lieu [Paperstac — VkGqESM8fdY @ 00:03:17]."
         },
         {
-          "name": "Pod KPI definitions and review cadence",
+          "name": "partial_sizing",
           "type": "textarea",
-          "prompt": "Define each metric's numerator, denominator, source, owner, and review frequency. Balance acquisition conversion with underlying-payment verification, reserve adequacy, borrower performance, and reconciliation quality so growth cannot conceal servicing deterioration.",
-          "example": "Weekly acquisition conversion equals qualified files divided by verified conversations: 12 divided by 36 equals 33.33%. Monthly payment verification equals confirmed underlying receipts divided by scheduled payments, targeting 100%. Operations also reports past-due balances, unmatched cash, reserve coverage, and exceptions older than two business days."
+          "prompt": "Size any partial sale to your cash and yield target. Record the monthly payment, number of payments sold, total payments in the block, the price paid, the resulting partial-buyer yield, and the tail you keep after reassignment.",
+          "example": "From an $86,900 note at 9.5%, the next 96 of 176 payments were sold for $47,615, giving the partial buyer a 13.3% yield. When the block is paid, the note reassigns and the seller is still owed $47,249, preserving the tail while raising cash today for the next acquisition [Paperstac — UwiEQOh84Y4 @ 00:17:14]."
         },
         {
-          "name": "Annual scorecard and expense accountability",
+          "name": "default_split_model",
           "type": "textarea",
-          "prompt": "Record the canonical revenue, margin, owner profit, and staffing benchmarks alongside actual results. Explain recurring overhead versus additional annual delivery costs and assign variance review without treating portfolio principal as revenue.",
-          "example": "The annual scorecard preserves $100,000 revenue and $28,000 profit; $475,000 and $190,000; $850,000 and $442,000. Margins remain 28%, 40.0%, and 52%. Monthly overhead examples are $2,000, $8,000, and $12,000 within the stated range. Total annual expenses still reconcile to $72,000, $285,000, and $408,000."
+          "prompt": "Before selling a partial, model how payoff, auction, and REO outcomes split between the partial investor and the tail holder. Record the reassignment balance, entitlement balance, and current UPB, and who receives proceeds in each scenario.",
+          "example": "An IRA investor paid 55,000 for the next 120 payments on a mobile-home note, earning 10.48%, while the tail is valued at 95,402 at full term. The split sheet shows who is paid first on an early payoff, at auction, or after an REO resale, tracking all three balances [Cal Ewing — LCY-eZOK6gw @ 00:12:50]."
         },
         {
-          "name": "Note transfer and exit-readiness evidence",
-          "type": "textarea",
-          "prompt": "List the asset documents, payment history, lien evidence, custody records, and transfer restrictions required for a potential note sale. Explain how counsel verifies enforcement rights and protects borrower information during diligence.",
-          "example": "The exit folder contains the original note custody record, endorsements, recorded security instrument, assignments, payment history, and underlying loan status. Counsel reviews applicable UCC §3-301 enforcement issues and state recording requirements. Prospective buyers receive controlled diligence access; underlying acceleration exposure is disclosed rather than removed from the sale narrative."
+          "name": "wrap_note_first_position",
+          "type": "text",
+          "prompt": "If the note being sold or partialed is a wrap, document the title run, the underlying lien disclosed to the buyer, and how partial proceeds pay that lien off so the paper moves into first position before trading.",
+          "example": "Wrap note sits over a small underlying first. Title was run, the underlying lien was disclosed in writing to the partial buyer, and the partial proceeds are wired straight to that lien's payoff so the wrap note moves to first position, since partials on wraps can otherwise get sticky [Paperstac — 5bOm5hdSRXc @ 00:07:29]."
         },
         {
-          "name": "Scale, hold, or exit decision ledger",
+          "name": "marketplace_listing_check",
           "type": "textarea",
-          "prompt": "Write the decision rule for adding acquisitions, holding the portfolio, or pursuing an asset exit. Include reserve coverage, evidence quality, valuation haircuts, transaction costs, and responsibility for remaining obligations after any transfer.",
-          "example": "Scale only after three consecutive reconciled cycles with 100% underlying-payment verification and funded reserves. For an illustrative $230,000 wrap balance, a 90% sale price is $207,000; a $200,000 underlying payoff and $5,000 costs leave $2,000 before other adjustments. That cash is not automatically recognized profit or release from all obligations."
+          "prompt": "Before listing or bidding on a marketplace, verify rate, UPB, origination date, and last pay date, confirm FBO vesting wording, address, and signer with a screenshot, and record whether assignments and deeds are recorded and the seasoning months.",
+          "example": "Indicative bid locked off verified rate, UPB, origination date and last pay date, with no blanket $20,000 lowball. FBO wording, address and signer were screenshotted before collateral went to the auditor. With 14 months of seasoning, offers should improve over a one-payment note, and every assignment is recorded [Paperstac — MkofIE1Xq0o @ 00:04:12]."
         }
       ],
-      "completion_gate": "Close the sprint with a signed decision ledger, assigned core and vendor responsibilities, an updated cash runway, actual test evidence, and a complete list of unresolved transaction conditions. Scale only after the specified servicing history and reserves exist; preserve the two-to-six-month first-deal planning horizon."
+      "completion_gate": "Do not wire purchase funds or sell any partial until diligence on people, property, and paperwork closed inside the window, the bid pays at partial recovery, a licensed servicer is boarded at closing, default splits are modeled for every scenario, and vesting, assignments, and deeds are verified and recorded."
     }
   ]
 }

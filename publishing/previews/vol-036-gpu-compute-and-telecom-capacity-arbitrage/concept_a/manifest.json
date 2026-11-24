@@ -6,60 +6,60 @@
   "preview_only": true,
   "files": {
     "digital_pdf.pdf": {
-      "bytes": 1947992,
-      "sha256": "77f78f1d358cae5551ed593e12acbc8f650a36bac5f3d385ae697884552065b0"
+      "bytes": 1454375,
+      "sha256": "2dbb5220d409ceadf3b25628ee5dbcb5c0ea45d2cba55564bbbc737db12add06"
     },
     "print_6x9_pdf.pdf": {
-      "bytes": 2519605,
-      "sha256": "d193312d609d0eaecbc978807303febf959737794600015572ce663a2c887ca0"
+      "bytes": 1806516,
+      "sha256": "bee62addedf33c14518570f0b27d8ff195caf20e40c61f0f681dcc65e962e4ac"
     },
     "workbook_pdf.pdf": {
-      "bytes": 546464,
-      "sha256": "8f07ecc1466c49330d2f101bcdc653771dd2f9d798cc79b8d154ef233bb21196"
+      "bytes": 490619,
+      "sha256": "01a263fb7bded62fe2f0b383c08d0d4be115171464d5fa1c56c46791402ecb29"
     },
     "book.epub": {
-      "bytes": 278080,
-      "sha256": "4c99bd0f743efc5f66871ac6c330136eec594dd597e8399e73c6e542c3339316"
+      "bytes": 230660,
+      "sha256": "947ffe7a3f7deacfa789c192ad90de60ea316349363e0208de52b4c0fa068c74"
     },
     "art/cover.svg": {
-      "bytes": 4425,
-      "sha256": "c5507a0d595b8d3bcafbda595c39f708a810bb0fe8af17633fd58b38cc19ae5a"
+      "bytes": 4440,
+      "sha256": "d6b68610b250cbb00f8428150cb2c37204a8b2ffb6de467c4dae79d655e2828f"
     },
     "art/scorecard.svg": {
       "bytes": 70953,
       "sha256": "3d86826905585be6481fd1c3db765173d3fe47d430757c4f6c913e3c843c23cc"
     },
     "art/diag_01.svg": {
-      "bytes": 11531,
-      "sha256": "3e0d8499995666446f957d979c684d2bcbae27d92305981df4d1bc8325eb8f09"
+      "bytes": 9562,
+      "sha256": "38f2456e67dc20e8e490d8e4772381a2829a2c8e7f7de231a72d469964f1438b"
     },
     "art/diag_02.svg": {
-      "bytes": 8098,
-      "sha256": "3229e64fe241cd182daa919741d7674f8a9c9fec094ab85244bcf05e46794905"
+      "bytes": 7162,
+      "sha256": "82a861b99e821ddc419cac048feb3e09e4e0bf9280982cc880d4d8ac03642389"
     },
     "art/diag_03.svg": {
-      "bytes": 12544,
-      "sha256": "c355205d2d595c5f7da3a5d42a582e0d155af9d4c53f201ad8902c174ad7a298"
+      "bytes": 8739,
+      "sha256": "da7c64c4a852f4a8cbe94a7b92cc6c03f517a10d86b1bada5f1a922f81faabd0"
     },
     "art/diag_04.svg": {
-      "bytes": 9736,
-      "sha256": "40e3024028c3858d345e5031d927041c3ca8056819f8d254acfe2e509595c4f9"
+      "bytes": 6091,
+      "sha256": "2e39694891c5875c45cc7fa03976881b49b9e9c16e519046e3ab9c1eb9fc3e02"
     },
     "art/diag_05.svg": {
-      "bytes": 10580,
-      "sha256": "17dbe9092e1b897d92dffd25e286b143bbe75a874e721e05d6da5ed0d7ed317a"
+      "bytes": 7443,
+      "sha256": "0ea31e93baa54ec08045d35037d172af952601cb6307d5c58f951a49e8b4f300"
     },
     "art/diag_06.svg": {
-      "bytes": 11633,
-      "sha256": "53f55c6d255a27c346d03425da17b6edee4ae416bb54f101f8d9d30e518c5660"
+      "bytes": 4275,
+      "sha256": "1ecf44630a6a99e58ffaf4d94839882db0c4d1add0f7001980593421f5a67898"
     },
     "art/diag_07.svg": {
-      "bytes": 9670,
-      "sha256": "5c620de679cf43bc74f9c9ac2dc7dae18900507109b4dadc544e65b64fdf3f5a"
+      "bytes": 3758,
+      "sha256": "a5de716c51c9edfb08996186795e9865b8175332747efc6cb87fd0f3f98626a4"
     },
     "art/diag_08.svg": {
-      "bytes": 8388,
-      "sha256": "b5f7a4b965d6c78f5b22a0ffe32c2b19f6acb8c75f68f4051ff401f32de2ee7a"
+      "bytes": 4329,
+      "sha256": "4a7e3a17d1214ebd8457792feacb1697902ae9ad5c7b99e5d09d07000dd08a45"
     }
   }
 }

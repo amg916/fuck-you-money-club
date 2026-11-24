@@ -1,669 +1,889 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 1 FT + 3 C (4 people) saas discount brokerage & gpo arbitrage team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python Evidence Pipelines, Authorized CSP and VIP Reconciliation, Shared-Savings Ledgers, and TCPA-Aware Distribution",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #37, SaaS Discount Brokerage & GPO Arbitrage, ranks #04 of 37 "
-        "with a 94/100 Money-to-Manpower Score. This chapter turns 12 mapped plays "
-        "into an evidence-first operating system: discover public signals, obtain "
-        "authorized invoices, calculate eligible economics, reconcile partner "
-        "statements, and distribute verified outcomes. Python handles deterministic "
-        "work; language models extract and draft; people authorize consequential "
-        "changes. The canonical annual owner-profit cases are $32,000 Conservative, "
-        "$225,000 Base, and $522,000 Scaled. Their revenue excludes client subscription "
-        "spend and measures retained operator economics. A measured 76% straight-through "
-        "task rate is achievable in the illustrative queue, but only with bounded "
-        "permissions, exception ownership, and tested recovery. Agency advertising "
-        "rewards remain a separate, contract-permitted adjacent play rather than "
-        "a reason to manufacture spend."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual retained operator revenue; client subscription spend excluded",
-            "note": "32% net margin; $32,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$500,000",
-            "context": "Annual retained operator revenue; client subscription spend excluded",
-            "note": "45.0% net margin; $225,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual retained operator revenue; client subscription spend excluded",
-            "note": "58% net margin; $522,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build an evidence graph before automating qualification",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a tenant-scoped evidence graph, not a spreadsheet of guessed renewals. "
-                    "Represent each organization, domain, customer authorization, agreement, subscription, "
-                    "invoice, and partner relationship as a separate record with a stable identifier. "
-                    "A scheduled Python worker can query an approved DNS-over-HTTPS endpoint using "
-                    "urllib.request, parse JSON, and record MX and TXT responses with observation time "
-                    "and resolver identity. Microsoft-associated MX records and SPF includes suggest "
-                    "mail infrastructure; they do not establish license quantity, purchasing channel, "
-                    "contract value, or renewal date. Multiple SPF records are an operational anomaly, "
-                    "not proof of a migration opportunity. Use those signals to prioritize a permission-based "
-                    "spend assessment, then collect invoices and renewal schedules through a customer-controlled "
-                    "upload link. Store original documents separately from extracted fields, hash each "
-                    "artifact with hashlib, and preserve the source page supporting every commercial "
-                    "claim. CRM records should distinguish observed facts, customer assertions, model "
-                    "extractions, and reviewer confirmations. A renewal-cliff trigger becomes actionable "
-                    "only when a verified agreement establishes its notice deadline. Calculate outreach "
-                    "dates backward from that deadline, including review time and vendor processing "
-                    "buffers. Missing contractual evidence routes the account to document collection "
-                    "rather than an invented savings estimate."
-                ),
-                (
-                    "Map the chapter's twelve plays into explicit workflow lanes: DNS qualification, "
-                    "renewal-cliff detection, authorized CSP margin capture, CPOR association tracking, "
-                    "Adobe VIP Marketplace reconciliation, Telarus residual reconciliation, Avant residual "
-                    "reconciliation, GPO bracket monitoring, benchmark price-floor testing, contingent "
-                    "shared-savings audits, referral distribution, and agency advertising rewards. These "
-                    "are operating lanes, not twelve independent revenue streams; CPOR tracking and "
-                    "benchmarking often support the same earned fee. Microsoft CPOR is a relationship "
-                    "and attribution mechanism for eligible workloads, not a universal license-transfer "
-                    "instruction or entitlement to a reseller spread. Maintain separate records for "
-                    "CSP purchasing authority, eligible CPOR associations, and customer administrative "
-                    "permissions. For the discovery lane, an illustrative 200 reviewed domains at "
-                    "$0.02 each costs $4 before labor; if 20 customers submit authorized invoices, "
-                    "the machine discovery cost is $0.20 per evidence-ready account. This ratio "
-                    "does not include outreach labor or prove conversion. If DNS evidence conflicts "
-                    "with an invoice, preserve both observations and let the invoice control the "
-                    "commercial assessment after verification. Contractors receive only their assigned "
-                    "customer records. The owner controls partner credentials, pricing exceptions, "
-                    "and contract acceptance, keeping a four-person organization from becoming four "
-                    "unrestricted administrators."
-                ),
-                (
-                    "Use language models as bounded document processors with no purchasing privileges. "
-                    "Send the minimum invoice excerpt needed to extract currency, SKU, service period, "
-                    "quantity, unit price, term, and cancellation language. Remove bank details and "
-                    "unnecessary personal identifiers before transmission, and use an approved service "
-                    "whose retention terms fit the customer agreement. Require a JSON object containing "
-                    "field values, source quotations, page references, and explicit missing-field flags. "
-                    "Validate types and required keys in Python; perform money calculations with decimal.Decimal "
-                    "rather than accepting model arithmetic. Reject unsupported SKUs, impossible date "
-                    "ranges, conflicting currencies, or totals that fail invoice reconciliation. Treat "
-                    "instructions embedded in uploaded contracts as document content, never as commands "
-                    "to the automation. A reviewer must confirm ambiguous renewal language, customer "
-                    "authority, and any proposed external savings claim. Build a regression set from "
-                    "redacted, authorized examples covering credits, annual commitments billed monthly, "
-                    "midterm seat additions, and overlapping subscriptions. Measure field accuracy "
-                    "separately from extraction completion: a populated renewal date is harmful if "
-                    "it describes an invoice cycle instead of the contractual commitment. When a "
-                    "model service fails, retain the document in a manual extraction queue and "
-                    "continue deterministic reconciliation for previously verified accounts."
-                ),
-            ],
-            "table": {
-                "caption": "Evidence Acquisition and Twelve-Play Workflow Routing Matrix",
-                "headers": [
-                    "Workflow lane and commercial purpose",
-                    "Evidence required before operational use",
-                    "Automated action within bounded authority",
-                    "Human review and recovery procedure",
-                ],
-                "rows": [
-                    [
-                        "DNS qualification identifies plausible software infrastructure prospects",
-                        "Timestamped MX and SPF observations from approved resolvers",
-                        "Classify provider indicators without asserting purchased license quantities",
-                        "Resolve contradictory signals before drafting specific customer claims",
-                    ],
-                    [
-                        "Renewal-cliff detection prioritizes documented cancellation notice windows",
-                        "Customer agreement establishes term and notice deadline",
-                        "Schedule reminders backward from verified contractual notice dates",
-                        "Review ambiguous wording before contacting the vendor",
-                    ],
-                    [
-                        "Authorized CSP margin capture tracks approved reseller economics",
-                        "Customer authority and current distributor terms support eligibility",
-                        "Calculate eligible spread using effective dated price schedules",
-                        "Reject unsupported transfers and preserve existing customer service",
-                    ],
-                    [
-                        "CPOR association tracking preserves eligible workload attribution evidence",
-                        "Applicable program requirements and customer relationship evidence exist",
-                        "Track association status separately from subscription purchasing authority",
-                        "Escalate disputed attribution without changing customer subscription ownership",
-                    ],
-                    [
-                        "Adobe VIP Marketplace reconciliation detects authorized billing differences",
-                        "Customer membership and approved transaction records identify subscriptions",
-                        "Compare quantities and anniversary dates against distributor statements",
-                        "Resolve discrepancies through authorized distributor support procedures",
-                    ],
-                    [
-                        "Telarus and Avant residual lanes reconcile separate agreements",
-                        "Supplier statements and executed agent agreements establish entitlement",
-                        "Match customer accounts with earned residual periods",
-                        "Dispute missing commissions without assuming perpetual payment rights",
-                    ],
-                    [
-                        "GPO brackets and benchmarks support documented savings audits",
-                        "Member authority and comparable eligible purchases establish inputs",
-                        "Calculate brackets and comparable costs without duplicate savings",
-                        "Verify contractual exclusions before quoting an achievable outcome",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Preserve the evidence that earns the spread",
-                "body": (
-                    "The useful asset is the verified customer-to-contract relationship, "
-                    "not the largest prospect database."
-                ),
-                "items": [
-                    "Store commitment end dates separately from invoice dates; monthly NCE invoices can support an annual obligation.",
-                    "Snapshot the eligible partner tier when quoting, then recheck it before execution so rebate compression cannot silently erase contribution.",
-                    "Attach source quotations to extracted notice clauses; reviewers can verify the decisive language without rereading every document.",
-                    "Keep CPOR association status outside the reseller transfer state machine; attribution evidence does not authorize a subscription move.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Turn partner events into recoverable billing operations",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Implement a small event pipeline with an HTTPS receiver, durable queue, Python "
-                    "worker, and append-only audit journal. Pax8, Ingram, Telarus, and Adobe-related "
-                    "distributor integrations require agreement-specific access; do not assume every "
-                    "portal exposes a webhook or the same subscription operations. Use documented "
-                    "APIs where available, approved scheduled exports otherwise, and manual portal "
-                    "verification when neither interface supports the required field. Verify webhook "
-                    "signatures according to the provider's specification, reject stale messages when "
-                    "timestamps are supported, and persist accepted events before acknowledging receipt. "
-                    "Build idempotency keys from provider identity, event identifier, and operation "
-                    "type. Store raw event hashes alongside normalized records, then reconcile the "
-                    "latest authoritative state because webhook ordering is unreliable. Python's "
-                    "sqlite3 supports a modest single-writer deployment; transactions and unique "
-                    "constraints prevent duplicate event insertion. Separate ingestion from any "
-                    "external write so a replay cannot create a second order. The job state "
-                    "machine should distinguish received, validated, review-required, authorized, "
-                    "submitted, confirmed, and exception states. Confirmation requires a provider "
-                    "receipt or refreshed authoritative record, not merely an HTTP success response "
-                    "from an intermediary. Keep a customer-visible change log describing what "
-                    "actually changed and who authorized it."
-                ),
-                (
-                    "Automate reconciliation aggressively while keeping commercial commitments behind human "
-                    "review. Match each distributor invoice line to the customer agreement, tenant, "
-                    "subscription identifier, SKU, quantity, service dates, and effective price. "
-                    "Illustratively, 100 eligible subscriptions producing $100 monthly retained spread "
-                    "yield $120,000 annual operator revenue, not the face value of customer "
-                    "software purchases. A missing customer payment does not extinguish an annual "
-                    "NCE distributor obligation. Require prefunded terms or an approved ACH or "
-                    "card collection arrangement with advance collection and documented credit limits; "
-                    "a debit authorization alone is not cash. Verify settlement, consider return "
-                    "exposure, and stop new commitments when available coverage falls below the "
-                    "approved threshold. Do not cancel or suspend existing customer service automatically "
-                    "because a collection event failed. Route that decision through the contract "
-                    "owner and applicable provider procedures. For Adobe VIP Marketplace, preserve "
-                    "membership, anniversary, transaction, and distributor identifiers rather than "
-                    "repurposing Microsoft fields. For Telarus or Avant, reconcile supplier payments, "
-                    "agent splits, eligibility, and clawback periods. An illustrative 150 accounts "
-                    "at $100 monthly retained residual produce $180,000 annually only if the "
-                    "executed agreements and collected statements support those amounts. Forecast "
-                    "residuals separately from earned revenue."
-                ),
-                (
-                    "Design recovery before increasing throughput. Retry timeouts and temporary server "
-                    "errors with exponential backoff, jitter, and the provider's rate-limit guidance; "
-                    "stop automatic retries on authorization failures or rejected commercial instructions. "
-                    "After an ambiguous order timeout, query authoritative order status before "
-                    "resubmitting anything. Put exhausted jobs in a dead-letter queue with customer "
-                    "impact, evidence links, retry history, and a named owner. A daily reconciliation "
-                    "compares provider exports against local subscriptions and commissions, catching "
-                    "events that never arrived. Maintain a manual fallback worksheet containing "
-                    "verified identifiers, requested operation, reviewer identity, and confirmation "
-                    "receipt; import the resulting evidence afterward instead of bypassing the "
-                    "ledger. Test restoration from backups and replay events into a nonproduction "
-                    "environment without external write credentials. Give each integration a narrow "
-                    "credential, rotate it according to provider capabilities, and keep secrets "
-                    "outside prompts, application logs, and shared worksheets. Contractor permissions "
-                    "should expire with the engagement. The owner reviews every license transfer, "
-                    "new annual commitment, rebate dispute settlement, and bank-detail change. "
-                    "Routine matched invoice lines may clear automatically, but a tenfold quantity "
-                    "jump, changed beneficiary, or new tenant identifier must stop that path. "
-                    "This architecture scales reconciliation without outsourcing commercial judgment "
-                    "to a language model."
-                ),
-            ],
-            "table": {
-                "caption": "Partner Billing State Transitions and Recovery Controls",
-                "headers": [
-                    "Event or condition requiring operational attention",
-                    "Deterministic processing and evidence retention rule",
-                    "Consequence requiring an identified human reviewer",
-                    "Recovery path preserving customer service continuity",
-                ],
-                "rows": [
-                    [
-                        "Signed provider event arrives through documented webhook interface",
-                        "Verify authenticity and persist before acknowledging successful receipt",
-                        "Reviewer investigates repeated signature failures affecting expected events",
-                        "Retrieve approved exports while webhook credentials are repaired",
-                    ],
-                    [
-                        "Repeated event identifier appears after provider delivery retry",
-                        "Unique constraint suppresses duplicate processing within provider scope",
-                        "Reviewer checks collisions involving materially different event bodies",
-                        "Preserve both hashes and investigate provider event semantics",
-                    ],
-                    [
-                        "Annual NCE commitment lacks sufficient collected customer coverage",
-                        "Block new commitment submission against uncovered payment exposure",
-                        "Owner assesses credit terms and remaining return exposure",
-                        "Use prefunding or decline the new annual obligation",
-                    ],
-                    [
-                        "VIP Marketplace quantity differs from authorized customer transaction",
-                        "Compare membership identifiers and effective transaction service dates",
-                        "Authorized reviewer confirms intended quantities with customer evidence",
-                        "Open distributor correction request without unauthorized seat pooling",
-                    ],
-                    [
-                        "Master-agent residual payment falls below expected contract amount",
-                        "Reconcile supplier collections and agreed downstream agent splits",
-                        "Owner approves dispute amounts using executed agreement terms",
-                        "Track disputed revenue separately until entitlement is resolved",
-                    ],
-                    [
-                        "Order submission times out after potentially reaching provider",
-                        "Query authoritative order status before considering any resubmission",
-                        "Reviewer resolves ambiguous provider state before commitment changes",
-                        "Escalate through support while retaining original request identifiers",
-                    ],
-                    [
-                        "Credential expires during scheduled subscription reconciliation work",
-                        "Stop affected jobs and preserve queued customer records",
-                        "Credential custodian restores narrowly scoped authorized integration access",
-                        "Run approved manual exports and reconcile missed periods",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before consequential execution",
-                "body": (
-                    "Automation may prepare the transaction packet. An identified "
-                    "reviewer must establish authority and economics before execution."
-                ),
-                "items": [
-                    "Verify customer authority, destination tenant, eligible program route, and the exact operation permitted by the signed agreement.",
-                    "Verify current tier pricing, retained spread, rebate conditions, and every customer pass-through obligation against dated evidence.",
-                    "Verify collected coverage for annual obligations, payment-return exposure, and documented credit limits before creating new commitments.",
-                    "Verify subscription quantities, effective dates, cancellation constraints, and a recovery procedure that does not depend on reversing an irreversible order.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Normalize the authorized event",
-                    "action": "Validate the provider message and resolve its customer-scoped identifiers.",
-                    "detail": "Persist the source hash, provider event identifier, receipt time, and applicable agreement version before processing.",
-                },
-                {
-                    "step": 2,
-                    "title": "Reconcile the proposed economics",
-                    "action": "Compare subscription state, customer authority, collected coverage, and retained contribution.",
-                    "detail": "Use Decimal calculations and effective dated schedules; route mismatched quantities or unsupported program assumptions to review.",
-                },
-                {
-                    "step": 3,
-                    "title": "Authorize the consequential operation",
-                    "action": "Have the designated reviewer approve the specific transaction packet.",
-                    "detail": "Record reviewer identity and approved payload hash; changed payloads require a fresh review rather than inherited permission.",
-                },
-                {
-                    "step": 4,
-                    "title": "Confirm and reconcile completion",
-                    "action": "Retrieve authoritative confirmation and update the customer evidence ledger.",
-                    "detail": "Investigate ambiguous results before retrying; compare the next provider statement with the confirmed transaction.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Price automation against retained contribution, not customer spend",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build the benchmark engine around comparable service, not the lowest number "
-                    "scraped from a promotional page. Each comparison must match SKU, edition, "
-                    "seat quantity, geography, currency, commitment length, billing cadence, support "
-                    "scope, and eligibility date. Store quote expiry and evidence provenance. "
-                    "Separate seat removal, product substitution, negotiated discount, and rebate "
-                    "effects so the same reduction cannot be claimed twice. An illustrative "
-                    "customer's eligible annual baseline of $120,000 compared with $100,000 "
-                    "of equivalent delivered service creates $20,000 of verified savings. At "
-                    "a contracted 30% fee, operator revenue is $6,000 and customer savings "
-                    "after that fee are $14,000. Add migration charges or lost benefits "
-                    "before assessing savings if the agreement requires them. The 25% to "
-                    "35% fee range is a commercial parameter, not permission to choose "
-                    "the highest percentage retroactively. A price floor should cover distributor "
-                    "cost, delivery effort, expected credit loss, and required contribution after "
-                    "client rebates. If a partner reduces a rebate by $3 per seat "
-                    "across 1,000 eligible seats monthly, annual contribution falls $36,000 "
-                    "unless another contractually valid adjustment offsets it. Freeze affected "
-                    "quotes and reprice prospectively; never hide the compression inside fabricated "
-                    "benchmark savings."
-                ),
-                (
-                    "Reconcile the canonical Formula v2.0 cases on the supplied retained-revenue "
-                    "basis. Conservative revenue of $100,000 less $68,000 total modeled "
-                    "costs leaves $32,000 owner profit at 32%. Base revenue of "
-                    "$500,000 less $275,000 leaves $225,000 at 45.0%. Scaled "
-                    "revenue of $900,000 less $378,000 leaves $522,000 at 58%. "
-                    "The first two cases use 1 FT plus 3 contractors; Scaled "
-                    "uses 2 FT plus 4 contractors. These are annual scenarios, not "
-                    "evidence that software alone creates the margin increase. One illustrative "
-                    "Base composition is $120,000 CSP spread, $180,000 master-agent "
-                    "residuals, $80,000 GPO administration revenue, and $120,000 contingent "
-                    "audit fees. The GPO component could reflect $4,000,000 eligible "
-                    "member purchases at a retained 2% rate; the audit component could "
-                    "reflect $400,000 verified savings at 30%. Neither eligible purchases "
-                    "nor savings become operator revenue. Apply retained_share exactly once "
-                    "when converting an upstream fee pool into the operator's contractual "
-                    "share. Do not apply it again to already retained inputs. ASC "
-                    "606 principal-versus-agent analysis follows the actual promise and control "
-                    "facts; the scorecard's net basis does not establish every contract's "
-                    "accounting conclusion. Reconcile the management ledger to the adopted "
-                    "accounting treatment."
-                ),
-                (
-                    "Measure automation using completed task instances and actual handling time. "
-                    "In an illustrative monthly queue of 1,000 eligible tasks, 760 "
-                    "complete straight through and 240 require six minutes of manual "
-                    "work each. Review a random 10% sample of the straight-through "
-                    "tasks: 76 checks at two minutes each. Add 180 minutes "
-                    "for exception remediation. Against a six-minute manual baseline for "
-                    "every task, handling falls from 6,000 to 1,772 minutes, "
-                    "a 70.47% reduction, while the straight-through rate is 76%. "
-                    "Include monitoring and rework in subsequent measurements rather than "
-                    "quietly excluding them. Budget $0.012 per machine run: $0.006 "
-                    "licensed lookup allocation, $0.004 model usage, $0.0015 compute, "
-                    "and $0.0005 storage and logging. The model allowance assumes "
-                    "2,500 input tokens at $0.80 per million and 500 "
-                    "output tokens at $4 per million; these are planning rates, "
-                    "not quoted vendor prices. One thousand runs cost $12 before "
-                    "labor, retries, fixed subscriptions, and taxes. At $60 per "
-                    "hour, the 1,772 handling minutes cost $1,772, making "
-                    "this measured batch $1,784 before those excluded costs. "
-                    "Cap retry budgets and compare verified contribution per account, "
-                    "not token savings alone, before expanding the queue."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Profit Reconciliation and Illustrative Unit-Economics Tests",
-                "headers": [
-                    "Scenario or unit requiring economic reconciliation",
-                    "Retained revenue calculation and recognition boundary",
-                    "Cost or profit consequence for operator",
-                    "Evidence check and adverse-case fallback procedure",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual case uses one employee plus three contractors",
-                        "$100,000 retained annual revenue excludes customer subscription purchases",
-                        "$68,000 modeled costs leave $32,000 profit at 32%",
-                        "Reconcile total costs before claiming the canonical margin",
-                    ],
-                    [
-                        "Base annual case retains the four-person operating structure",
-                        "$500,000 retained annual revenue excludes underlying member purchasing",
-                        "$275,000 modeled costs leave $225,000 profit at 45.0%",
-                        "Match each revenue component to an enforceable entitlement",
-                    ],
-                    [
-                        "Scaled annual case uses two employees plus four contractors",
-                        "$900,000 retained annual revenue remains the operator basis",
-                        "$378,000 modeled costs leave $522,000 profit at 58%",
-                        "Add capacity only when reconciled contribution supports staffing",
-                    ],
-                    [
-                        "Equivalent-service audit verifies a customer renewal savings opportunity",
-                        "$20,000 verified savings times 30% earns $6,000",
-                        "Customer retains $14,000 after the contracted audit fee",
-                        "Recalculate savings when implementation costs change comparable economics",
-                    ],
-                    [
-                        "Eligible GPO member purchases generate retained administration revenue",
-                        "$4,000,000 eligible purchases times 2% earns $80,000",
-                        "Member purchasing volume never becomes broker recognized revenue",
-                        "Remove excluded purchases before assessing bracket eligibility thresholds",
-                    ],
-                    [
-                        "Monthly automated queue processes one thousand eligible tasks",
-                        "Machine processing costs $12 before labor and overhead",
-                        "Measured handling adds $1,772 at $60 per hour",
-                        "Include retries and monitoring before extending savings claims",
-                    ],
-                    [
-                        "Partner tier compression reduces eligible recurring seat contribution",
-                        "One thousand seats lose $3 each every month",
-                        "Annual contribution decreases $36,000 without an offsetting adjustment",
-                        "Freeze affected quotes and renegotiate future authorized pricing",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Compound verified distribution without automating promises",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Create three distribution loops from verified operations. The programmatic loop "
-                    "publishes narrowly scoped renewal guides and calculators using approved pricing "
-                    "assumptions, dated evidence, and explicit inputs; it never exposes private "
-                    "partner schedules or customer invoices. The referral loop gives satisfied "
-                    "customers a shareable assessment link after a verified outcome, with "
-                    "permission to use any named testimonial and clear disclosure of "
-                    "referral compensation where relevant. The outbound loop routes evidence-supported "
-                    "accounts into human-approved email sequences and lawful calling workflows. "
-                    "A public MX record does not establish permission for automated "
-                    "marketing texts or prerecorded calls. Apply 47 U.S.C. 227 "
-                    "and 47 CFR 64.1200 to the actual calling technology, "
-                    "number type, and consent context. Commercial email must satisfy "
-                    "15 U.S.C. 7704, including accurate headers, a valid postal "
-                    "address, and timely opt-out processing. Maintain suppression records "
-                    "across the CRM and every sending provider. The FTC's "
-                    "Telemarketing Sales Rule does not give business outreach a "
-                    "blanket exemption from deception restrictions; review 16 CFR "
-                    "310.3 and 310.6 against the campaign. Have a person "
-                    "approve initial claims and every material template change, "
-                    "then pause sequences automatically when consent records, source "
-                    "evidence, or suppression synchronization fail."
-                ),
-                (
-                    "Treat agency_ad_spend_card_multiplier_rebate_cycling as an adjacent, separately tracked play, "
-                    "not a mechanism for inflating SaaS revenue. Route only genuine, "
-                    "client-authorized advertising purchases through an eligible agency payment "
-                    "arrangement whose issuer, advertising platform, and customer contracts "
-                    "permit the activity. An illustrative $100,000 monthly advertising "
-                    "budget earning a realizable 2% reward produces $2,000 "
-                    "of reward value. Deduct $800 processing expense, $300 "
-                    "funding cost, $600 contractual client pass-through, and $100 "
-                    "expected loss allowance; only $200 remains before overhead "
-                    "and tax treatment. Exclude points that cannot be redeemed "
-                    "under the operating plan, and do not stack overlapping "
-                    "reward assumptions without contractual support. That $100,000 "
-                    "is client advertising spend, not brokerage revenue, and "
-                    "the $200 is not added to the canonical cases "
-                    "presented here. A Python reconciliation job can match "
-                    "authorized campaign invoices, settled card transactions, reward "
-                    "statements, and client credits while flagging caps and "
-                    "excluded merchant categories. People approve funding exposure "
-                    "and arrangement changes. Never create artificial purchases, "
-                    "circular payments, or extra advertising merely to earn "
-                    "rewards. If issuer eligibility changes or contribution "
-                    "turns negative, move to client-direct billing or "
-                    "prefunded approved agency terms and stop rewards-dependent "
-                    "spending immediately."
-                ),
-                (
-                    "Run distribution as a cohort ledger with explicit economic stopping "
-                    "rules. Illustratively, 1,000 qualified guide visits producing 50 "
-                    "assessment requests, 20 evidence-complete audits, and four signed "
-                    "customers imply a 5% request rate, 40% document-completion "
-                    "rate, and 20% audit-to-customer rate. At $1,200 "
-                    "campaign cost, acquisition cost is $300 per signed "
-                    "customer before assessment labor. If each customer produces "
-                    "$1,000 first-year retained revenue, the cohort contributes "
-                    "$4,000 before acquisition, fulfillment, and overhead, not "
-                    "$4,000 owner profit. Track refunds, payment delays, "
-                    "churn, and contractor time by cohort before increasing "
-                    "spend. The full-time owner controls partner relationships, "
-                    "exception economics, and consequential approvals; three contractors "
-                    "cover evidence operations, reconciliation, and distribution quality "
-                    "under documented scopes. Review weekly samples by risk "
-                    "stratum, not just at random: include every new "
-                    "vendor adapter, changed model prompt, disputed savings "
-                    "calculation, and unusually large commitment. Quarantine an "
-                    "adapter when discrepancies exceed its predeclared tolerance, "
-                    "revert to approved exports, and replay corrected "
-                    "events after testing. Publish only refreshed calculators "
-                    "and substantiated outcomes. The flywheel compounds because "
-                    "each completed engagement improves authorized evidence, "
-                    "benchmark coverage, and referral credibility, while "
-                    "the human team retains control over obligations "
-                    "that software cannot safely unwind."
-                ),
-            ],
-            "table": {
-                "caption": "Distribution Flywheels, Reward Economics, and Stop Conditions",
-                "headers": [
-                    "Distribution mechanism and authorized operating input",
-                    "Concrete conversion or contribution measurement rule",
-                    "Human decision retained outside automated execution",
-                    "Failure signal and immediate recovery action",
-                ],
-                "rows": [
-                    [
-                        "Programmatic renewal guides use approved dated benchmark assumptions",
-                        "Track qualified visits through evidence-complete customer assessment requests",
-                        "Reviewer approves claims and protects confidential partner schedules",
-                        "Withdraw stale calculators until current assumptions are verified",
-                    ],
-                    [
-                        "Customer referral links follow verified delivered savings outcomes",
-                        "Attribute signed customers without counting duplicate referral submissions",
-                        "Customer approves named testimonials and relevant compensation disclosures",
-                        "Remove disputed endorsements and retain underlying permission records",
-                    ],
-                    [
-                        "Commercial email campaigns use documented audience selection criteria",
-                        "Measure signed customer contribution after outreach and review costs",
-                        "Reviewer approves material claims and opt-out processing design",
-                        "Pause sending when suppression synchronization fails across providers",
-                    ],
-                    [
-                        "Calling workflows distinguish technology and recipient number context",
-                        "Track authorized contacts without treating public records as consent",
-                        "Qualified reviewer resolves campaign-specific calling requirements before launch",
-                        "Stop affected calls when required authorization evidence fails",
-                    ],
-                    [
-                        "Agency reward lane routes genuine authorized advertising purchases",
-                        "$2,000 rewards less $1,800 deductions leaves $200",
-                        "Owner verifies issuer eligibility and client economic allocation",
-                        "Switch client-direct or prefunded approved terms when economics fail",
-                    ],
-                    [
-                        "Illustrative acquisition cohort converts four customers from visits",
-                        "$1,200 campaign spending divided by four customers equals $300",
-                        "Owner compares collected contribution against complete acquisition costs",
-                        "Reduce spend when cohort payback exceeds approved limits",
-                    ],
-                    [
-                        "Weekly risk-stratified quality review tests changing automation components",
-                        "Measure error severity and handling minutes alongside task completion",
-                        "Owner approves adapter restoration after corrected replay evidence",
-                        "Quarantine defective adapters and reconcile through approved exports",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Automate the evidence trail and the arithmetic; keep authority over every obligation.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Create customer-scoped records linking authorization, contracts, subscriptions, source documents, and effective partner terms before importing prospects.",
-        "Deploy a read-only DNS and document-extraction pipeline with source quotations, Decimal validation, and manual handling for ambiguous renewal clauses.",
-        "Implement idempotent provider ingestion, authoritative reconciliation, dead-letter ownership, and tested manual-export recovery before enabling external writes.",
-        "Reconcile retained revenue to the $100,000, $500,000, and $900,000 canonical cases without including client subscription or advertising spend.",
-        "Measure a 1,000-task pilot using straight-through completion, sampled error severity, total handling time, and fully allocated run costs.",
-        "Launch reviewed content, referral, and outbound cohorts with synchronized suppressions; isolate agency reward economics and enforce the client-direct fallback.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "47 U.S.C. 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Evaluate marketing calls and messages against the statute's "
-                "technology, recipient, and consent requirements before activating outreach."
-            ),
-        },
-        {
-            "title": "47 CFR 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": (
-                "Implement applicable calling restrictions, consent controls, "
-                "do-not-call procedures, and opt-out handling for the actual campaign."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Commercial email workflows need accurate routing information, "
-                "required sender information, and effective opt-out processing."
-            ),
-        },
-        {
-            "title": "16 CFR 310.3 — Deceptive telemarketing acts or practices",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310/section-310.3",
-            "relevance": (
-                "Review telemarketing representations about savings, affiliation, "
-                "pricing, and service characteristics for prohibited deception."
-            ),
-        },
-        {
-            "title": "16 CFR 310.6 — Exemptions",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310/section-310.6",
-            "relevance": (
-                "Determine the precise scope of business-call exemptions and "
-                "their exceptions rather than assuming every B2B campaign is exempt."
-            ),
-        },
-        {
-            "title": "16 CFR 255.5 — Disclosure of material connections",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
-            "relevance": (
-                "The FTC endorsement guides explain disclosure of material "
-                "connections relevant to compensated referrals and published testimonials."
-            ),
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'buy-side-saas-negotiation-renewal-defense',
+ 'question_prompt': 'How do buyers negotiate SaaS contracts and renewals so they avoid traps, uplifts, '
+                    'auto-renewals, and paying for empty seats?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Buy-Side SaaS Negotiation and Renewal Defense',
+ 'subtitle': 'Six-step software negotiation, key contract terms and attorney-flagged gotchas, renewal '
+             'traps, price caps multiplied by term length, auto-renewal review, unused-seat renewal '
+             'strategy, HubSpot downgrade windows, Salesforce renewal tips, Microsoft EA true-up '
+             'flexibility, Oracle market-rate benchmarking, and the most underrated negotiation tactic',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': "Buy-side SaaS operators converge on one rule: renewals are won before the vendor's "
+                      'clock runs out. Tropic starts 60 to 90 days ahead, Marcus Harris sets a 60-day '
+                      'floor, and The Negotiator Guru plans Salesforce six months out with the real '
+                      'negotiation landing three months prior. The usage baseline is the weapon: 8 out of '
+                      "10 Negotiator Guru clients are over-licensed, and fynk's case shows 40 seats "
+                      'renewed at €19,200 with only 12 actual users. Street mechanics include flat renewal '
+                      'quotes, scenario pricing, low anchors, 3 to 5% uplift caps, 40% benchmark discounts '
+                      'on Oracle ERP cloud, and Microsoft seat-reduction rights traded for new spend. The '
+                      'fights are in the fine print: UpperEdge exposes caps multiplied by term length, '
+                      'Harris dissects volume, spend, and term conditions on caps, and Zylo argues value '
+                      'concessions beat beating vendors up on price.',
+ 'key_metrics': [{'label': 'Renewal Kickoff Window',
+                  'metric': 'Renewal Kickoff Window',
+                  'value': '60 to 90 days before the renewal date',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Courtney Mahar's step one: enough runway for multiple negotiation rounds, "
+                             'approvals, and using rep commitment dates as leverage.',
+                  'source': 'Tropic ([veu6EUBTdBE @ 00:00:49])'},
+                 {'label': 'Target Renewal Price Cap',
+                  'metric': 'Target Renewal Price Cap',
+                  'value': '3 to 5% cap versus vendor language allowing 5 up to 25% increases',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Annie McGovern reports supplier terms permitting 5 to 25% renewal increases '
+                             'and recommends negotiating a 3 to 5% cap for pricing predictability.',
+                  'source': 'Tropic ([FESALIJcxS0 @ 00:02:00])'},
+                 {'label': 'Over-Licensed Customer Rate',
+                  'metric': 'Over-Licensed Customer Rate',
+                  'value': '8 out of 10 customers',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Share of The Negotiator Guru's Salesforce clients paying for licenses with "
+                             'greater capability than they need, surfaced through its right-sizing '
+                             'process.',
+                  'source': 'The Negotiator Guru ([dOTg4A37x5g @ 00:00:38])'},
+                 {'label': 'Automatic Renewal Share',
+                  'metric': 'Automatic Renewal Share',
+                  'value': 'Roughly 70% of SaaS contracts',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Share of SaaS contracts that renew automatically if nobody acts, which is '
+                             'why fynk works backward from the notice deadline rather than the renewal '
+                             'date.',
+                  'source': 'fynk ([QLqtDhk3PoI @ 00:03:07])'}],
+ 'sections': [{'title': 'The Practitioner Consensus',
+               'paragraphs': ['Every practitioner who talks timing lands in the same place: the renewal is '
+                              'won or lost on runway. Courtney Mahar of Tropic kicks off 60 to 90 days '
+                              'before the renewal date and frames that not as over-preparing but as the '
+                              'minimum needed to run several negotiation rounds, collect approvals, and '
+                              "weaponize the rep's end-of-month or end-of-quarter commitment dates "
+                              '[veu6EUBTdBE @ 00:00:49]. The teams that wing it reply to the rep the day '
+                              'before auto-renewal and eat a 20% increase they never saw coming. Marcus '
+                              'Harris puts the floor at 60 days for an ordinary deal and much more for '
+                              'large enterprise paper, insisting on backup positions, a distilled '
+                              'concession list, and ideally a second vendor in play at the same time '
+                              '[xY5Bk1dd768 @ 00:00:41]. The Negotiator Guru goes further for Salesforce: '
+                              'plan six months back from the end date, because self-run clients always '
+                              'take longer than they think and get pinned against an arbitrary deadline, '
+                              'while the real negotiation lands roughly three months out [dOTg4A37x5g @ '
+                              '00:03:37]. Yusuf Young applies the same rule to HubSpot, telling buyers to '
+                              'set a calendar reminder 90 days before renewal because both companies in '
+                              "Young's case files started too late and paid for it [O6H36x0A6_g @ "
+                              '00:04:32].',
+                              'The second consensus point is brutal and simple: you are almost certainly '
+                              'paying for seats and capability nobody uses, and the usage number is your '
+                              'opening weapon. The Negotiator Guru reports that 8 out of 10 of its clients '
+                              'are over-licensed, paying for a greater capability than they need, and '
+                              'calls stripping that shelfware off the next renewal a quick win that needs '
+                              "no master's degree [dOTg4A37x5g @ 00:00:38]. fynk opens with the archetype: "
+                              'a January invoice for design software, 40 seats at €19,200, renewed '
+                              'automatically, with only 12 people actually using it and 28 seats paid for '
+                              'and never opened [QLqtDhk3PoI @ 00:00:03]. Tropic folds the same check into '
+                              'baseline prep, pulling current contract value, renewal date, and actual '
+                              'usage against what is licensed, plus whether the existing discount is '
+                              'SKU-level, per-user, or a one-time concession set to fall off at renewal '
+                              '[veu6EUBTdBE @ 00:01:55]. CloudEagle lists regular usage audits as a core '
+                              'best practice so teams stop funding shelfware, and pairs it with '
+                              'centralizing every contract and renewal date in one place because otherwise '
+                              'one team thinks IT is on it, finance assumes procurement is handling it, '
+                              'and nobody knows what is actually happening [s8wp3enRPD8 @ 00:03:22]. The '
+                              'number goes on the table before price does.',
+                              'Third, the practitioners agree the contract itself is the renewal defense, '
+                              'and two clauses do most of the work. Auto-renewal comes out wherever '
+                              'possible: Vistack tells buyers to ask the vendor to remove any auto-renewal '
+                              'clause because it will bite at renewal, and to negotiate the MSA and terms '
+                              'alongside price because doing it all at once saves time and preserves '
+                              'leverage [B8MSOZzfQLk @ 00:01:51]. Annie McGovern of Tropic calls '
+                              'auto-renewal one of the most commonly missed clauses, often hidden in '
+                              'service agreements; where a supplier insists on keeping it to preserve '
+                              'negotiated pricing, the buyer must know the opt-out window, usually 30 days '
+                              'but sometimes 60 or 90 [FESALIJcxS0 @ 00:01:29]. Price caps are the second '
+                              'pillar, and everyone warns the cap is only as good as its definition. '
+                              'Marcus Harris asks the question vendors exploit: a 5% cap, but 5% of what, '
+                              'net spend of the last year or CPI plus five, and guarantees that any '
+                              'ambiguity lets the vendor find a way around the cap [PQUXMXjSfjw @ '
+                              '00:04:17]. UpperEdge adds a fresh trick now spreading across vendors big '
+                              'and small: the familiar 3% or 5% cap multiplied by the number of years in '
+                              'the renewal term [nrJ8yyEVHmY @ 00:01:06].'],
+               'table': {'caption': 'Practitioner Consensus: The Renewal Defense Baseline',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Do',
+                                     'Why It Matters',
+                                     'Expert Source'],
+                         'rows': [['Start the renewal clock early',
+                                   'Kick off 60 to 90 days before renewal and use rep commitment dates as '
+                                   'leverage',
+                                   'Day-before replies end in surprise 20% increases and lost negotiating '
+                                   'leverage',
+                                   'Tropic ([veu6EUBTdBE @ 00:00:49])'],
+                                  ['Plan Salesforce renewals six months out',
+                                   'Build the roadmap and internal negotiation team, expecting real '
+                                   'negotiation about three months prior',
+                                   'Self-run clients run out of runway against an arbitrary renewal date',
+                                   'The Negotiator Guru ([dOTg4A37x5g @ 00:03:37])'],
+                                  ['Right-size licenses before talking price',
+                                   'Compare what you use against what you pay for and cut the shelfware',
+                                   '8 out of 10 clients pay for greater capability than they need',
+                                   'The Negotiator Guru ([dOTg4A37x5g @ 00:00:38])'],
+                                  ['Kill or control auto-renewal clauses',
+                                   'Strip auto-renewal terms or track the 30, 60, or 90 day opt-out window',
+                                   'Hidden auto-renewal terms bottleneck the team into renewing without '
+                                   'any optionality',
+                                   'Tropic ([FESALIJcxS0 @ 00:01:00])'],
+                                  ['Define the price cap with precision',
+                                   'Specify the base, any CPI linkage, covered products, and block product '
+                                   'renames',
+                                   'Any ambiguity lets the vendor find a way around the cap',
+                                   'Marcus Harris Software & Tech Attorney ([PQUXMXjSfjw @ 00:04:17])'],
+                                  ['Negotiate legal terms alongside price',
+                                   'Put the MSA and terms of agreement on the table with pricing, not at '
+                                   'the end',
+                                   'Running everything together saves time and gives more leverage on the '
+                                   'terms',
+                                   'Vistack ([B8MSOZzfQLk @ 00:01:36])'],
+                                  ['Spend leverage before signing the contract',
+                                   'Write contractor, affiliate, and partner access rights into the '
+                                   'agreement up front',
+                                   'You never have as much leverage as right before you sign',
+                                   'Marcus Harris Software & Tech Attorney ([2XJmAjfVmQw @ 00:01:17])']]}},
+              {'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Tropic's discovery-call script is the cleanest street sequence. Ask the rep "
+                              'to walk through the current agreement, what is changing and what is '
+                              'staying, confirm usage and adoption, clarify standard uplifts and SKU '
+                              'updates, and demand a flat renewal quote as the baseline every later number '
+                              'is measured against [veu6EUBTdBE @ 00:02:44]. Keep the final approver off '
+                              'these early calls: vendors negotiate differently without the decision-maker '
+                              "in the room, and the buyer keeps a natural 'I need to run this by my team' "
+                              'buffer [veu6EUBTdBE @ 00:02:57]. Request scenario quotes, start '
+                              'conservative on growth projections, and be aggressive with seat cuts '
+                              'because seats can be added back. Then anchor below the target, never lead '
+                              'with multi-year, push year-one pricing down first and only then trade a '
+                              'longer term for concessions; expect several rounds because the first '
+                              'counter is rarely the best [veu6EUBTdBE @ 00:04:24]. Redress Compliance '
+                              'supplies the benchmark ammunition: almost nobody pays Oracle list price on '
+                              'large enterprise deals, and if peers of similar size get 40% off an ERP '
+                              "cloud package, that becomes the baseline. Quote a competitor's number "
+                              "directly, such as Workday's proposal, and collect at least three discount "
+                              'data points from peers, consultants, or RFPs before signing [sALcv-71Klw @ '
+                              '00:00:36].',
+                              'Price-cap fine print is where renewal savings quietly die, and the '
+                              'practitioners map the traps clause by clause. Marcus Harris lists the '
+                              'standard conditions vendors attach: a minimum volume of the new purchase, a '
+                              'minimum spend that is separate from volume, excluded product lines, and a '
+                              'term-match rule where a five-year initial term cannot be renewed for one '
+                              'year and keep the cap, so the clever cap often covers nothing actually '
+                              'needed at renewal time [PQUXMXjSfjw @ 00:01:14]. Lock the product '
+                              'definition too, or the vendor renames the product and claims it no longer '
+                              'falls under the cap [PQUXMXjSfjw @ 00:05:06]. Annie McGovern reports '
+                              'supplier terms allowing 5 up to 25% increases at renewal, some vendors '
+                              'raising prices with no language at all, and repackaging that adds support '
+                              'fees or across-SKU increases a pre-negotiated cap does not touch; the fix '
+                              'is a 3 to 5% cap written to survive pricing-model changes, plus 90 days of '
+                              'notice before any pricing or packaging change [FESALIJcxS0 @ 00:02:14]. '
+                              'UpperEdge inverts the vendor logic on term length: more years should buy '
+                              'better protection, so a 3% cap fits a three-year deal and a 2% cap fits a '
+                              'five-year deal, and the renewal cap belongs inside the discount ask rather '
+                              'than after it [nrJ8yyEVHmY @ 00:03:16].',
+                              'Downsizing rights and non-cash currency are the last lever set. Redress '
+                              'Compliance flags the Microsoft EA asymmetry: true-ups any time, true-downs '
+                              'locked until the end of the three-year term. The counter is annual '
+                              'downscaling rights above a committed baseline, an elastic pool that flexes '
+                              'up or down without penalty, one-year subscriptions for contractors or '
+                              'regional teams, and the threat of moving seats to month-to-month CSP plans, '
+                              'which alone can loosen EA terms [-1Sqw4pgdxY @ 00:01:18]. Trade flexibility '
+                              'for new spend: adopt Azure Sentinel or Microsoft Viva, but secure the right '
+                              'to cut 15% of seats in year two, and never accept verbal promises '
+                              '[-1Sqw4pgdxY @ 00:01:38]. Tropic pushes rollover clauses on consumption '
+                              'contracts, which most suppliers grant if renewal is at the same or higher '
+                              'volume, a tiered rate table with discounts baked in for forecasted growth, '
+                              'and avoidance of monthly invoicing in arrears for overages [FESALIJcxS0 @ '
+                              "00:03:41]. Zylo's procurement voice calls value concessions the most "
+                              'underrated tactic: case studies, reference calls, and branding unlock deals '
+                              "when pulled out in sticky situations in today's market, while beating "
+                              'vendors up on price is the one move to avoid [YYskploUvNc @ 00:00:42]. '
+                              'Tropic also prices the logo, treating co-marketing rights as a concession '
+                              'worth extra discount rather than handing it over free.'],
+               'table': {'caption': 'Street Mechanics: Numbers, Clauses, and Scripts',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Term',
+                                     'How Operators Execute It',
+                                     'Expert Source'],
+                         'rows': [['Value layering at the close',
+                                   '3 to 5% uplift cap plus free months, extra seats, or usage credits',
+                                   'Ask only after price is settled, when talks feel collaborative and '
+                                   'final',
+                                   'Tropic ([veu6EUBTdBE @ 00:05:02])'],
+                                  ['Renewal price cap language',
+                                   'Vendor terms allow 5 up to 25%; target cap is 3 to 5%',
+                                   'Write cap language that survives repackaging, with 90 days notice of '
+                                   'changes',
+                                   'Tropic ([FESALIJcxS0 @ 00:02:00])'],
+                                  ['Term-length cap multiplication trick',
+                                   '3% times three years on a three-year renewal term',
+                                   'Reject the multiplier and demand 3% for three years, 2% for five',
+                                   'UpperEdge, LLC ([nrJ8yyEVHmY @ 00:01:06])'],
+                                  ['Market benchmark discount anchor',
+                                   '40% off list for similar-size Oracle ERP cloud buyers, three data '
+                                   'points minimum',
+                                   'Cite competitor proposals like Workday and demand a matching effective '
+                                   'price',
+                                   'Redress Compliance ([sALcv-71Klw @ 00:00:36])'],
+                                  ['Salesforce edition downgrade',
+                                   'Unlimited to Enterprise edition yields 20 plus percent savings per '
+                                   'month',
+                                   'Match the edition to how the tool is naturally used before negotiating '
+                                   'price',
+                                   'The Negotiator Guru ([dOTg4A37x5g @ 00:00:56])'],
+                                  ['Microsoft EA seat downscaling right',
+                                   'Right to reduce 15% of seats in year two',
+                                   'Tie flexibility to new investment and threaten CSP month-to-month seat '
+                                   'moves',
+                                   'Redress Compliance ([-1Sqw4pgdxY @ 00:01:38])'],
+                                  ['SLA failure credits',
+                                   "Monthly credit of 10 to 50% of that month's fees",
+                                   'Add termination rights for repeated failures on top of the credits',
+                                   'Heather Meeker ([RDxElFsVuWs @ 00:27:14])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Leverage Moves Reps Hope You Skip',
+                           'body': 'Small procedural moves that shift leverage back to the buyer before '
+                                   'and during the renewal cycle.',
+                           'items': ['Keep the final approver off discovery calls: vendors negotiate '
+                                     'differently without the decision-maker in the room, and you keep the '
+                                     "'I need to run this by my team' buffer [Tropic — veu6EUBTdBE @ "
+                                     '00:02:57]',
+                                     'Salesforce renewal dates are very easy to extend by 30, 60, or 90 '
+                                     'days even when reps say they cannot [The Negotiator Guru — '
+                                     'dOTg4A37x5g @ 00:03:37]',
+                                     'Read notice periods literally: 60 days before December 31 is '
+                                     'November 1, two months before is October 31, and one day can decide '
+                                     'the outcome [fynk — QLqtDhk3PoI @ 00:02:19]',
+                                     'Just threatening to shift seats to month-to-month CSP plans can push '
+                                     'Microsoft into better EA flexibility to keep the seats [Redress '
+                                     'Compliance — -1Sqw4pgdxY @ 00:01:18]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Inventory Contracts and Count Real Usage',
+                              'action': 'Build one list of every software contract with an owner, a '
+                                        'backup, and hard usage counts.',
+                              'detail': 'Comb invoices, company card charges, IT records, and team leads; '
+                                        'give tools whose buyer has left a new owner, then count seats '
+                                        'that logged in during the last 30 days, real marketing contacts, '
+                                        'and features never turned on [fynk — QLqtDhk3PoI @ 00:00:53] '
+                                        '[Yusuf Young — O6H36x0A6_g @ 00:03:17]'},
+                             {'step': 2,
+                              'title': 'Work Backward From the Notice Deadline',
+                              'action': 'Set the review start date from the notice deadline, not the '
+                                        'renewal date.',
+                              'detail': 'A December 31 renewal with notice due November 1 means review '
+                                        'starts in early October; a reminder one week before renewal '
+                                        'arrives 53 days after the notice deadline, and roughly 70% of '
+                                        'SaaS contracts renew automatically [fynk — QLqtDhk3PoI @ '
+                                        '00:03:27] [fynk — QLqtDhk3PoI @ 00:03:07]'},
+                             {'step': 3,
+                              'title': 'Demand a Written Line-by-Line Quote',
+                              'action': 'Send one email 90 days before renewal requesting an itemized '
+                                        "quote and next year's price in writing.",
+                              'detail': 'List exactly what you want removed using your usage numbers, get '
+                                        "next year's price confirmed in writing because HubSpot can raise "
+                                        'you to full list price with 30 days notice, and convert every '
+                                        'phone-call change into email [Yusuf Young — O6H36x0A6_g @ '
+                                        '00:05:30]'},
+                             {'step': 4,
+                              'title': 'Negotiate, Serve Notice, and File the Outcome',
+                              'action': 'Anchor low, push year-one price before multi-year, then send '
+                                        'formal written notice and record the result.',
+                              'detail': 'Negotiate year-one pricing down before offering multi-year for '
+                                        'concessions, then give written notice to the right address with '
+                                        'proof it arrived, since a friendly chat with the account manager '
+                                        'may not count and deleting accounts does not end the commitment '
+                                        '[Tropic — veu6EUBTdBE @ 00:04:24] [fynk — QLqtDhk3PoI @ '
+                                        '00:04:10]'}]},
+              {'section_number': 3,
+               'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The runway clock is the first open fight. Courtney Mahar of Tropic kicks '
+                              'the process off 60 to 90 days before the renewal date and frames that '
+                              'window as the appropriate timeline to run multiple negotiation rounds, '
+                              "collect approvals, and turn the rep's end-of-quarter or end-of-month "
+                              'commitment dates into leverage [veu6EUBTdBE @ 00:01:01]. Marcus Harris '
+                              'treats 60 days as a floor for a standard SaaS agreement, says a large '
+                              'enterprise deal demands much more time, concession lists, and backup '
+                              'positions, and ideally wants the buyer negotiating with more than one '
+                              'vendor at a time [xY5Bk1dd768 @ 00:00:41]. The Negotiator Guru pushes the '
+                              'start line out to six months before the end date, says the real negotiation '
+                              'happens about three months out because of how Salesforce plays its renewal '
+                              'customers, and adds a contrarian claim: the renewal date is very easy to '
+                              'extend by 30, 60, or 90 days even when the rep insists it cannot move '
+                              "[dOTg4A37x5g @ 00:03:37]. Yusuf Young's HubSpot evidence cuts the other "
+                              "way, because once that account auto-renewed the vendor's answer was a flat "
+                              'no, with the earliest possible change pushed to February 2027 [O6H36x0A6_g '
+                              '@ 00:02:11]. The operator read: treat the extension as a '
+                              'Salesforce-specific lever the Guru reports, and build every other calendar '
+                              'around the contractual notice date.',
+                              "How hard to swing is the second split. Tropic's Courtney Mahar tells buyers "
+                              'to anchor lower than where they want to land, refuse to flinch at pushback, '
+                              "and expect several rounds, because the first counter is rarely the vendor's "
+                              'best offer [veu6EUBTdBE @ 00:04:37]. Redress Compliance runs the identical '
+                              'play against Oracle: calmly label an exorbitant quote as out of line with '
+                              'what the market pays, then cite a rival figure, such as a Workday proposal, '
+                              'that Oracle must at least match on effective price [sALcv-71Klw @ '
+                              "00:00:55]. Zylo's procurement expert draws a hard line the other way, "
+                              'warning buyers to never beat vendors up on price, because grinding purely '
+                              'for the lowest possible number leaves the relationship owner in a bad, '
+                              "sticky situation [YYskploUvNc @ 00:00:00]. Zylo's preferred lever is value "
+                              'concessions, offering a case study, a reference call, or branding to reach '
+                              'a win-win, a tactic the speaker says has proven very effective in sticky '
+                              "situations in today's economy. Tropic's Annie McGovern splits the "
+                              'difference on that same branding currency: strip co-marketing logo rights '
+                              'out of the terms of service for brand protection, or, if the company is '
+                              'open to keeping them, treat that language as a concession that must buy '
+                              'further discounting [FESALIJcxS0 @ 00:04:59]. Both camps agree pushback is '
+                              'expected; they disagree on whether to win it with pressure or with currency '
+                              'the vendor values.',
+                              'Term length and cap design split the room again. Tropic says never lead '
+                              'with a multi-year: drive year-one pricing down first, then offer the longer '
+                              'commitment only in exchange for concessions, and save the 3 to 5% uplift '
+                              'cap for the final value-layering round [veu6EUBTdBE @ 00:04:24]. Marcus '
+                              'Harris treats length as a direct pricing chip, arguing a five-to-seven-year '
+                              'term should earn some discount for the time the buyer is tied up with that '
+                              'particular vendor [2XJmAjfVmQw @ 00:10:50]. UpperEdge attacks the newest '
+                              'vendor move inside that trade: renewal caps quietly rewritten as 3% '
+                              'multiplied by the number of renewal years, so another three-year deal '
+                              'carries a 3 times 3 uplift. Their counter-model flips the logic into a '
+                              'one-time uplift where more term buys better protection, such as a 3% cap on '
+                              'a three-year deal and a 2% cap on a five-year deal, negotiated alongside '
+                              'the extra discount rather than after it [nrJ8yyEVHmY @ 00:03:16]. Heather '
+                              'Meeker anchors the reference point differently, using a sample clause that '
+                              "lets the customer renew at the vendor's then current list price, on the "
+                              'logic that list ought to be the highest price the vendor charges anyone, '
+                              'much less good customers that already have an agreement in place '
+                              '[RDxElFsVuWs @ 00:14:21].'],
+               'table': {'caption': 'Side-by-side renewal playbooks where named practitioners take '
+                                    'opposing or alternative positions.',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Renewal start line and deadline rigidity',
+                                   'Start 60 to 90 days out to run multiple rounds, get approvals, and '
+                                   'exploit rep commitment dates',
+                                   'Plan six months ahead, negotiate hard three months out, and request a '
+                                   '30 to 90 day extension',
+                                   'Tropic ([veu6EUBTdBE @ 00:01:01]); The Negotiator Guru ([dOTg4A37x5g @ '
+                                   '00:03:37])'],
+                                  ['Pressure posture toward the vendor rep',
+                                   'Anchor low, expect several rounds, and quote market rates or rival '
+                                   'bids against Oracle',
+                                   'Never beat vendors up on price; trade case studies, reference calls, '
+                                   'or branding instead',
+                                   'Redress Compliance ([sALcv-71Klw @ 00:01:13]); Zylo | The Leader in '
+                                   'Enterprise SaaS Management ([YYskploUvNc @ 00:00:42])'],
+                                  ['Handling the auto-renewal clause in the paper',
+                                   'Ask the vendor to remove any auto-renewal clause before it bites at '
+                                   'renewal',
+                                   'Accept it where required to keep pricing, but track the 30, 60, or 90 '
+                                   'day opt-out',
+                                   'Vistack ([B8MSOZzfQLk @ 00:01:51]); Tropic ([FESALIJcxS0 @ 00:01:29])'],
+                                  ['Multi-year commitment as a bargaining chip',
+                                   'Hold multi-year back until year-one pricing is down, then sell it for '
+                                   'concessions',
+                                   'Expect a discount for a five-to-seven-year term that ties you to the '
+                                   'vendor',
+                                   'Tropic ([veu6EUBTdBE @ 00:04:24]); Marcus Harris Software & Tech '
+                                   'Attorney ([2XJmAjfVmQw @ 00:10:50])'],
+                                  ['Shedding seats when headcount shrinks mid-term',
+                                   'Negotiate annual downscaling rights or an elastic pool that flexes '
+                                   'without any penalty',
+                                   'Threaten or execute a shift of volatile users to month-to-month CSP '
+                                   'plans',
+                                   'Redress Compliance ([-1Sqw4pgdxY @ 00:00:39]); Redress Compliance '
+                                   '([-1Sqw4pgdxY @ 00:01:18])'],
+                                  ['Where the pricing benchmark data comes from',
+                                   'Gather at least three discount data points from peers, consultants, or '
+                                   'RFPs',
+                                   'Use renewal platforms that surface pricing benchmarks and real-time '
+                                   'usage insights',
+                                   'Redress Compliance ([sALcv-71Klw @ 00:02:04]); CloudEagle '
+                                   '([s8wp3enRPD8 @ 00:04:14])'],
+                                  ['Logo and case-study rights as negotiation currency',
+                                   'Offer to collaborate on a case study in exchange for a small discount',
+                                   'Strip co-marketing language for brand protection unless it buys '
+                                   'further discounting',
+                                   'Vistack ([B8MSOZzfQLk @ 00:01:19]); Tropic ([FESALIJcxS0 @ '
+                                   '00:04:45])']]}},
+              {'section_number': 4,
+               'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive failure in the field is a missed notice window, not a '
+                              "bad price. fynk's case opens on a January invoice for design software: 40 "
+                              'seats, €19,200, renewed automatically for another year while only 12 people '
+                              'actually use it, because the contract demanded notice by November 1, 60 '
+                              'days before renewal, and that window had closed weeks earlier [QLqtDhk3PoI '
+                              '@ 00:00:27]. Yusuf Young documents the HubSpot version: a small Sales Hub '
+                              "Professional team planned to drop empty seats at renewal, HubSpot's "
+                              'reminders landed in spam, the contract auto-renewed on February 26, and the '
+                              'company paid $5,000 for a year of seats nobody uses, with HubSpot answering '
+                              'that nothing could be done until February 2027 [O6H36x0A6_g @ 00:02:11]. '
+                              "Tropic's Annie McGovern explains why removal is not always available: some "
+                              'suppliers require an auto-renewal clause to hold negotiated pricing, which '
+                              'makes the opt-out period the real battleground, where 30 days notice '
+                              'usually suffices but some suppliers demand 60 or 90 [FESALIJcxS0 @ '
+                              '00:01:29]. CloudEagle puts missed deadlines at the top of the renewal '
+                              'hurdle list, alongside renewals popping up outside the budget cycle and '
+                              'departments failing to communicate, with one team assuming IT is on it '
+                              'while finance assumes procurement is handling it [s8wp3enRPD8 @ 00:02:08].',
+                              'The second trap is price protection that evaporates at renewal. Marcus '
+                              "Harris warns that the odds a buyer's clever price cap does not actually "
+                              'cover what they want to license at renewal are pretty high, because caps '
+                              'arrive loaded with volume minimums, spend minimums, product exclusions, '
+                              'matching-term requirements, and vague percentage language, and a vendor can '
+                              'even rename a product so it no longer falls under the cap [PQUXMXjSfjw @ '
+                              '00:05:06]. UpperEdge reports vendors big and small now multiplying the cap '
+                              'by renewal term length, and ties the move to RPO, remaining performance '
+                              'obligation, which CEOs and CFOs now pitch on earnings calls as proof they '
+                              'will grow customer spend in term and at renewal [nrJ8yyEVHmY @ 00:04:09]. '
+                              "Tropic's Annie McGovern adds the repackaging problem: suppliers bolt on "
+                              'support fees or apply increases across all SKUs, and a pre-negotiated cap '
+                              'often does not apply, so cap language must survive pricing-model changes '
+                              'and be backed by 90 days notice of any pricing or packaging shift '
+                              '[FESALIJcxS0 @ 00:02:28]. fynk shows the quiet version in practice: an '
+                              'unread pricing email, then single sign-on and API access turning into paid '
+                              'add-ons at renewal while the headline price still goes up [QLqtDhk3PoI @ '
+                              '00:02:19].',
+                              'The third failure class is paying for capacity that cannot be shed. The '
+                              'Negotiator Guru reports that 8 out of 10 of their customers are over '
+                              'licensed, and that dropping from Salesforce Lightning Unlimited to '
+                              'Enterprise edition, when actual usage allows it, is naturally a 20-plus '
+                              'percent monthly saving before any price talk begins [dOTg4A37x5g @ '
+                              '00:00:38]. Redress Compliance flags the Microsoft EA asymmetry: licenses '
+                              'can be added any time through annual true-ups, but true-downs are usually '
+                              'locked until the end of the three-year term and even then restricted, so a '
+                              'headcount drop or divestiture leaves the buyer paying for shelfware '
+                              '[-1Sqw4pgdxY @ 00:00:00]. Marcus Harris warns that the exit door itself can '
+                              'be booby-trapped, because termination language often carries an '
+                              'acceleration clause making every fee for the remaining term immediately '
+                              'due, since vendors priced the discount off list against the full term and '
+                              'refuse to walk away from that expected revenue [xY5Bk1dd768 @ 00:06:35]. '
+                              'Yusuf Young closes on data lock-in: one HubSpot customer moved up to '
+                              'Enterprise without asking, renewed anyway at $20,000, then lost CRM access '
+                              'for three days and could not even see whether a customer had written to '
+                              'them, while standard record exports carry property values and associations '
+                              'but not notes, calls, or emails [O6H36x0A6_g @ 00:07:13].'],
+               'table': {'caption': 'Firsthand renewal losses and the economics check each practitioner '
+                                    'runs to stop a repeat.',
+                         'headers': ['Failure Mode',
+                                     'What The Practitioner Saw',
+                                     'Economics Check Before Signing',
+                                     'Expert Source'],
+                         'rows': [['Counting the notice period the wrong way',
+                                   'Sixty days before December 31 is November 1, but two months before is '
+                                   'October 31',
+                                   'Read the notice clause exactly as written and calendar the earlier '
+                                   'date',
+                                   'fynk ([QLqtDhk3PoI @ 00:02:19])'],
+                                  ['Reminder keyed to the renewal date instead of notice',
+                                   'A reminder one week before renewal arrives 53 days after the notice '
+                                   'deadline',
+                                   'Work backward from notice and start review in early October for '
+                                   'December 31',
+                                   'fynk ([QLqtDhk3PoI @ 00:03:27])'],
+                                  ['Separate quote never activated before the renewal date',
+                                   'A £1,450 HubSpot customer cut contacts but renewed at the old tier '
+                                   'with no credit',
+                                   "Email for a line-by-line quote 90 days out and confirm next year's "
+                                   'price in writing',
+                                   'Yusuf Young ([O6H36x0A6_g @ 00:05:10])'],
+                                  ['Two-page order form hiding a full contract',
+                                   'A simple order form incorporated by URL a 15-page one-sided, '
+                                   'unreasonable, onerous contract',
+                                   'Pull and review every URL-referenced agreement before treating the '
+                                   'deal as simple',
+                                   'Marcus Harris Software & Tech Attorney ([xY5Bk1dd768 @ 00:01:42])'],
+                                  ['One-time discount falling off at the renewal',
+                                   'One-time discounts disappear at renewal, unlike SKU-level or '
+                                   'price-per-user discounts on the contract',
+                                   'Classify every current discount before requesting the flat renewal '
+                                   'baseline quote',
+                                   'Tropic ([veu6EUBTdBE @ 00:02:08])'],
+                                  ['Indemnity and data caps sized to recent fees',
+                                   'A multimillion-dollar suit against a cap of six months of fees is '
+                                   'probably not enough',
+                                   'Push data incident damages into a super cap or a carve-out from the '
+                                   'liability cap',
+                                   'Marcus Harris Software & Tech Attorney ([2XJmAjfVmQw @ 00:09:53]); '
+                                   'Marcus Harris Software & Tech Attorney ([xY5Bk1dd768 @ 00:04:50])'],
+                                  ['Exceeding licensed users with no add-on clause',
+                                   'Without an express add-users provision, a customer exceeding its user '
+                                   'count is in breach',
+                                   'Write in the right to add users at existing pricing or current '
+                                   'discount',
+                                   'Heather Meeker ([RDxElFsVuWs @ 00:10:20])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before The Notice Date Passes',
+                           'body': 'Every renewal file clears these four checks before the opt-out window '
+                                   'closes; each one traces to a loss a named practitioner watched happen.',
+                           'items': ['Calendar the notice deadline, not the renewal date, and route the '
+                                     'reminder to both the owner and a backup so a departed buyer cannot '
+                                     'orphan the tool [fynk — QLqtDhk3PoI @ 00:02:44].',
+                                     'Send written notice to the address the contract specifies and keep '
+                                     'proof it arrived, because a friendly chat with the account manager '
+                                     'may not count and deleting accounts does not end the commitment '
+                                     '[fynk — QLqtDhk3PoI @ 00:04:10].',
+                                     'Confirm every change agreed on a phone call by email and lock next '
+                                     "year's price in writing early, since HubSpot can raise a customer to "
+                                     'full list price with 30 days notice [Yusuf Young — O6H36x0A6_g @ '
+                                     '00:05:30].',
+                                     'Never accept verbal promises on seat flexibility; make downscaling '
+                                     'rights part of the contract and then actually use them by '
+                                     'rightsizing annually [Redress Compliance — -1Sqw4pgdxY @ '
+                                     '00:01:57].']}}],
+ 'pull_quote': "Don't accept standard. You're not a standard customer. I guarantee you're not. You've "
+               'given them a lot already. — UpperEdge, LLC (nrJ8yyEVHmY @ 00:04:22).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Build one list of every software contract from invoices, company card charges, IT, '
+                      'and team leads, and assign a new owner plus a backup to any tool whose buyer has '
+                      'left [fynk — QLqtDhk3PoI @ 00:00:53].',
+                      'Count real usage before the renewal talk: seats logged in during the last 30 days, '
+                      'marketing contacts actually emailed or engaged in six months, and features never '
+                      'turned on [Yusuf Young — O6H36x0A6_g @ 00:03:17].',
+                      'Run the discovery call by asking the rep to walk through the current agreement, '
+                      'request a flat renewal quote as the baseline, and keep decision-makers off the call '
+                      '[Tropic — veu6EUBTdBE @ 00:02:44].',
+                      'Gather at least three data points on pricing discounts from peers, consultants, or '
+                      'RFPs before finalizing any enterprise cloud deal [Redress Compliance — sALcv-71Klw '
+                      '@ 00:02:04].',
+                      'Define the renewal cap base in the contract language, specifying whether 5% applies '
+                      'to the net spend of the last year of the initial term or a CPI plus five formula '
+                      '[Marcus Harris Software & Tech Attorney — PQUXMXjSfjw @ 00:04:17].',
+                      'On consumption contracts, negotiate a rollover clause for unused volume and a rate '
+                      'table with discounting baked into tiers beyond the contracted volume [Tropic — '
+                      'FESALIJcxS0 @ 00:03:41].'],
+ 'statutory_citations': [{'title': 'UpperEdge, LLC — SaaS Vendors’ New Trick: Multiplying Pricing Caps by '
+                                   'Term Length [00:01:06]',
+                          'url': 'https://www.youtube.com/watch?v=nrJ8yyEVHmY&t=66s',
+                          'relevance': 'Primary practitioner testimony on vendors multiplying renewal '
+                                       'price caps by the number of renewal years.'},
+                         {'title': 'Marcus Harris Software & Tech Attorney — Renewing SaaS Contracts? '
+                                   'Don’t Fall for These Common Traps! [00:04:17]',
+                          'url': 'https://www.youtube.com/watch?v=PQUXMXjSfjw&t=257s',
+                          'relevance': 'Primary practitioner testimony on ambiguous price cap definitions '
+                                       'and vendor workarounds at renewal.'},
+                         {'title': 'fynk — SaaS renewal management: a renewal strategy to stop paying for '
+                                   'unused software [00:03:27]',
+                          'url': 'https://www.youtube.com/watch?v=QLqtDhk3PoI&t=207s',
+                          'relevance': 'Primary practitioner testimony on notice-deadline math and '
+                                       'reminders that fire too late to act.'},
+                         {'title': 'Yusuf Young — HubSpot Renewal: $5,000 for Empty Seats. 5 Steps to '
+                                   'Avoid It [00:02:11]',
+                          'url': 'https://www.youtube.com/watch?v=O6H36x0A6_g&t=131s',
+                          'relevance': 'Primary practitioner testimony on an auto-renewal that locked a '
+                                       'company into a year of empty seats.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'veu6EUBTdBE',
+                       'title': '6 Steps to Win Every Software Negotiation',
+                       'channel': 'Tropic',
+                       'author': 'Tropic',
+                       'text': 'Step one, start early. Kick your process off 60 to 90 days before your '
+                               'renewal date.',
+                       'tip': 'Step one, start early. Kick your process off 60 to 90 days before your '
+                              'renewal date.',
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=veu6EUBTdBE&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=veu6EUBTdBE&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'veu6EUBTdBE',
+                       'title': '6 Steps to Win Every Software Negotiation',
+                       'channel': 'Tropic',
+                       'author': 'Tropic',
+                       'text': "Don't lead with a multi-year. First, negotiate year one pricing down, then "
+                               'offer multi-year in exchange for concessions.',
+                       'tip': "Don't lead with a multi-year. First, negotiate year one pricing down, then "
+                              'offer multi-year in exchange for concessions.',
+                       'timestamp': 264,
+                       'timestamp_seconds': 264,
+                       'timestamp_label': '[00:04:24]',
+                       'url': 'https://www.youtube.com/watch?v=veu6EUBTdBE&t=264s',
+                       'markdown': '[00:04:24](https://www.youtube.com/watch?v=veu6EUBTdBE&t=264s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2XJmAjfVmQw',
+                       'title': 'Key Negotiation Points in SaaS Contracts',
+                       'channel': 'Marcus Harris Software & Tech Attorney',
+                       'author': 'Marcus Harris Software & Tech Attorney',
+                       'text': "You never have as much leverage with a vendor as you do when you're "
+                               'negotiating this contract right before you sign on the dotted line.',
+                       'tip': "You never have as much leverage with a vendor as you do when you're "
+                              'negotiating this contract right before you sign on the dotted line.',
+                       'timestamp': 77,
+                       'timestamp_seconds': 77,
+                       'timestamp_label': '[00:01:17]',
+                       'url': 'https://www.youtube.com/watch?v=2XJmAjfVmQw&t=77s',
+                       'markdown': '[00:01:17](https://www.youtube.com/watch?v=2XJmAjfVmQw&t=77s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'r6xTyjDAFrQ',
+                       'title': '#Procurement Expert Shares His TOP 3 Challenges of #SaaS Contract '
+                                'Renewals',
+                       'channel': 'Zylo | The Leader in Enterprise SaaS Management',
+                       'author': 'Zylo | The Leader in Enterprise SaaS Management',
+                       'text': 'Not every organization has a dedicated procurement resource or team, so '
+                               "often times we see it land on the department manager's desk to negotiate "
+                               'and monitor those agreements.',
+                       'tip': 'Not every organization has a dedicated procurement resource or team, so '
+                              "often times we see it land on the department manager's desk to negotiate "
+                              'and monitor those agreements.',
+                       'timestamp': 82,
+                       'timestamp_seconds': 82,
+                       'timestamp_label': '[00:01:22]',
+                       'url': 'https://www.youtube.com/watch?v=r6xTyjDAFrQ&t=82s',
+                       'markdown': '[00:01:22](https://www.youtube.com/watch?v=r6xTyjDAFrQ&t=82s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xY5Bk1dd768',
+                       'title': 'Don’t Fall for These Sneaky SaaS Contract Negotiation Gotchas!',
+                       'channel': 'Marcus Harris Software & Tech Attorney',
+                       'author': 'Marcus Harris Software & Tech Attorney',
+                       'text': 'Often times what you will see is some sort of a provision that will allow '
+                               "you to get out of that contract, but there's an acceleration clause and "
+                               'all the fees that would have been due and owing for the remainder of that '
+                               'term are automatically owed to the vendor.',
+                       'tip': 'Often times what you will see is some sort of a provision that will allow '
+                              "you to get out of that contract, but there's an acceleration clause and all "
+                              'the fees that would have been due and owing for the remainder of that term '
+                              'are automatically owed to the vendor.',
+                       'timestamp': 395,
+                       'timestamp_seconds': 395,
+                       'timestamp_label': '[00:06:35]',
+                       'url': 'https://www.youtube.com/watch?v=xY5Bk1dd768&t=395s',
+                       'markdown': '[00:06:35](https://www.youtube.com/watch?v=xY5Bk1dd768&t=395s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'B8MSOZzfQLk',
+                       'title': 'How To Negotiate A SaaS Contract',
+                       'channel': 'Vistack',
+                       'author': 'Vistack',
+                       'text': 'Make sure that you ask the vendor to remove any auto renewal clause '
+                               'because they otherwise could bite you later on in the renewal.',
+                       'tip': 'Make sure that you ask the vendor to remove any auto renewal clause because '
+                              'they otherwise could bite you later on in the renewal.',
+                       'timestamp': 111,
+                       'timestamp_seconds': 111,
+                       'timestamp_label': '[00:01:51]',
+                       'url': 'https://www.youtube.com/watch?v=B8MSOZzfQLk&t=111s',
+                       'markdown': '[00:01:51](https://www.youtube.com/watch?v=B8MSOZzfQLk&t=111s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PQUXMXjSfjw',
+                       'title': 'Renewing SaaS Contracts? Don’t Fall for These Common Traps!',
+                       'channel': 'Marcus Harris Software & Tech Attorney',
+                       'author': 'Marcus Harris Software & Tech Attorney',
+                       'text': "Let's say you've negotiated a 5% cap, but 5% of what? Is it 5% of the net "
+                               'spend of the last year of the initial term? Is it a CPI plus five cap.',
+                       'tip': "Let's say you've negotiated a 5% cap, but 5% of what? Is it 5% of the net "
+                              'spend of the last year of the initial term? Is it a CPI plus five cap.',
+                       'timestamp': 257,
+                       'timestamp_seconds': 257,
+                       'timestamp_label': '[00:04:17]',
+                       'url': 'https://www.youtube.com/watch?v=PQUXMXjSfjw&t=257s',
+                       'markdown': '[00:04:17](https://www.youtube.com/watch?v=PQUXMXjSfjw&t=257s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RDxElFsVuWs',
+                       'title': 'How to Negotiate a SaaS Agreement',
+                       'channel': 'Heather Meeker',
+                       'author': 'Heather Meeker',
+                       'text': 'If a customer needs more users the customer should be able to add users at '
+                               'the existing pricing without being in breach of the agreement or '
+                               'renegotiating it.',
+                       'tip': 'If a customer needs more users the customer should be able to add users at '
+                              'the existing pricing without being in breach of the agreement or '
+                              'renegotiating it.',
+                       'timestamp': 600,
+                       'timestamp_seconds': 600,
+                       'timestamp_label': '[00:10:00]',
+                       'url': 'https://www.youtube.com/watch?v=RDxElFsVuWs&t=600s',
+                       'markdown': '[00:10:00](https://www.youtube.com/watch?v=RDxElFsVuWs&t=600s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FESALIJcxS0',
+                       'title': 'What Most People Miss in Software and AI Contracts That Costs Them '
+                                'Thousands',
+                       'channel': 'Tropic',
+                       'author': 'Tropic',
+                       'text': 'Negotiating a price cap of 3 to 5% provides pricing predictability and '
+                               'protection so you can keep the great pricing you worked so hard for.',
+                       'tip': 'Negotiating a price cap of 3 to 5% provides pricing predictability and '
+                              'protection so you can keep the great pricing you worked so hard for.',
+                       'timestamp': 134,
+                       'timestamp_seconds': 134,
+                       'timestamp_label': '[00:02:14]',
+                       'url': 'https://www.youtube.com/watch?v=FESALIJcxS0&t=134s',
+                       'markdown': '[00:02:14](https://www.youtube.com/watch?v=FESALIJcxS0&t=134s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nrJ8yyEVHmY',
+                       'title': 'SaaS Vendors’ New Trick: Multiplying Pricing Caps by Term Length',
+                       'channel': 'UpperEdge, LLC',
+                       'author': 'UpperEdge, LLC',
+                       'text': "They may be keeping the percentage increase the same as what you're used "
+                               "to, but they're saying that it's 3% times the number of years in your "
+                               'renewal.',
+                       'tip': "They may be keeping the percentage increase the same as what you're used "
+                              "to, but they're saying that it's 3% times the number of years in your "
+                              'renewal.',
+                       'timestamp': 66,
+                       'timestamp_seconds': 66,
+                       'timestamp_label': '[00:01:06]',
+                       'url': 'https://www.youtube.com/watch?v=nrJ8yyEVHmY&t=66s',
+                       'markdown': '[00:01:06](https://www.youtube.com/watch?v=nrJ8yyEVHmY&t=66s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 's8wp3enRPD8',
+                       'title': 'How to Review Every SaaS Renewal Before It Auto Renews',
+                       'channel': 'CloudEagle',
+                       'author': 'CloudEagle',
+                       'text': 'First, centralize all your contracts and renewal dates in one easily '
+                               'accessible place. Next, automate renewal reminders. Set them for 30, 60, '
+                               'or even 90 days out so you have time to review before any auto renewal.',
+                       'tip': 'First, centralize all your contracts and renewal dates in one easily '
+                              'accessible place. Next, automate renewal reminders. Set them for 30, 60, or '
+                              'even 90 days out so you have time to review before any auto renewal.',
+                       'timestamp': 163,
+                       'timestamp_seconds': 163,
+                       'timestamp_label': '[00:02:43]',
+                       'url': 'https://www.youtube.com/watch?v=s8wp3enRPD8&t=163s',
+                       'markdown': '[00:02:43](https://www.youtube.com/watch?v=s8wp3enRPD8&t=163s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QLqtDhk3PoI',
+                       'title': 'SaaS renewal management: a renewal strategy to stop paying for unused '
+                                'software',
+                       'channel': 'fynk',
+                       'author': 'fynk',
+                       'text': "Here's why the date matters so much. Roughly 70% of SaaS contracts renew "
+                               'automatically. If you do nothing, you keep paying.',
+                       'tip': "Here's why the date matters so much. Roughly 70% of SaaS contracts renew "
+                              'automatically. If you do nothing, you keep paying.',
+                       'timestamp': 187,
+                       'timestamp_seconds': 187,
+                       'timestamp_label': '[00:03:07]',
+                       'url': 'https://www.youtube.com/watch?v=QLqtDhk3PoI&t=187s',
+                       'markdown': '[00:03:07](https://www.youtube.com/watch?v=QLqtDhk3PoI&t=187s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QLqtDhk3PoI',
+                       'title': 'SaaS renewal management: a renewal strategy to stop paying for unused '
+                                'software',
+                       'channel': 'fynk',
+                       'author': 'fynk',
+                       'text': 'A reminder one week before the renewal arrives 53 days after the notice '
+                               "deadline. By then it's too late.",
+                       'tip': 'A reminder one week before the renewal arrives 53 days after the notice '
+                              "deadline. By then it's too late.",
+                       'timestamp': 207,
+                       'timestamp_seconds': 207,
+                       'timestamp_label': '[00:03:27]',
+                       'url': 'https://www.youtube.com/watch?v=QLqtDhk3PoI&t=207s',
+                       'markdown': '[00:03:27](https://www.youtube.com/watch?v=QLqtDhk3PoI&t=207s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'O6H36x0A6_g',
+                       'title': 'HubSpot Renewal: $5,000 for Empty Seats. 5 Steps to Avoid It',
+                       'channel': 'Yusuf Young',
+                       'author': 'Yusuf Young',
+                       'text': 'The contract auto renewed on the 26th of February, they paid $5,000 for a '
+                               "year for seats nobody uses, and HubSpot's answer afterwards was no, they "
+                               "renewed, so there's nothing they could do about it.",
+                       'tip': 'The contract auto renewed on the 26th of February, they paid $5,000 for a '
+                              "year for seats nobody uses, and HubSpot's answer afterwards was no, they "
+                              "renewed, so there's nothing they could do about it.",
+                       'timestamp': 131,
+                       'timestamp_seconds': 131,
+                       'timestamp_label': '[00:02:11]',
+                       'url': 'https://www.youtube.com/watch?v=O6H36x0A6_g&t=131s',
+                       'markdown': '[00:02:11](https://www.youtube.com/watch?v=O6H36x0A6_g&t=131s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dOTg4A37x5g',
+                       'title': 'Salesforce Renewal - Top Negotiation Tips',
+                       'channel': 'The Negotiator Guru',
+                       'author': 'The Negotiator Guru',
+                       'text': "8 out of 10 of our customers are over licensed, meaning they're paying for "
+                               'licenses for a greater capability than they need.',
+                       'tip': "8 out of 10 of our customers are over licensed, meaning they're paying for "
+                              'licenses for a greater capability than they need.',
+                       'timestamp': 38,
+                       'timestamp_seconds': 38,
+                       'timestamp_label': '[00:00:38]',
+                       'url': 'https://www.youtube.com/watch?v=dOTg4A37x5g&t=38s',
+                       'markdown': '[00:00:38](https://www.youtube.com/watch?v=dOTg4A37x5g&t=38s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sALcv-71Klw',
+                       'title': '🎥 Oracle ERP Cloud Negotiation Tip #9: Benchmark and Know the Market '
+                                'Rates',
+                       'channel': 'Redress Compliance',
+                       'author': 'Redress Compliance',
+                       'text': "Remember, Oracle's first offer is rarely their best. They expect educated "
+                               "customers to push back. Show them you've done your homework.",
+                       'tip': "Remember, Oracle's first offer is rarely their best. They expect educated "
+                              "customers to push back. Show them you've done your homework.",
+                       'timestamp': 92,
+                       'timestamp_seconds': 92,
+                       'timestamp_label': '[00:01:32]',
+                       'url': 'https://www.youtube.com/watch?v=sALcv-71Klw&t=92s',
+                       'markdown': '[00:01:32](https://www.youtube.com/watch?v=sALcv-71Klw&t=92s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-1Sqw4pgdxY',
+                       'title': 'True-Up Flexibility in Microsoft EA – How to Avoid Paying for Unused '
+                                'Licenses',
+                       'channel': 'Redress Compliance',
+                       'author': 'Redress Compliance',
+                       'text': 'Traditionally Microsoft lets you true up annually, but true downs, '
+                               'reductions, are usually locked until the end of the three-year term and '
+                               'even then with restrictions.',
+                       'tip': 'Traditionally Microsoft lets you true up annually, but true downs, '
+                              'reductions, are usually locked until the end of the three-year term and '
+                              'even then with restrictions.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=-1Sqw4pgdxY&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=-1Sqw4pgdxY&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YYskploUvNc',
+                       'title': 'The Most Underrated SaaS Negotiation Tactic',
+                       'channel': 'Zylo | The Leader in Enterprise SaaS Management',
+                       'author': 'Zylo | The Leader in Enterprise SaaS Management',
+                       'text': "Avoid, never beat up your vendors, never beat them up on price, that's "
+                               'just gonna put your relationship owner in a bad sticky situation.',
+                       'tip': "Avoid, never beat up your vendors, never beat them up on price, that's just "
+                              'gonna put your relationship owner in a bad sticky situation.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=YYskploUvNc&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=YYskploUvNc&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

@@ -1,655 +1,862 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-and-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($10,000–$60,000 USD) and configure a lean, low-opex ($2,000–$14,000 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Prepaid Stripe Wallets, H100/H200/B200 Capacity, LiteLLM Routing, SIP Controls, and FCC Readiness on a Reserve-First Budget",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #36, GPU Compute & Telecom Capacity Arbitrage, ranks #03 of 36 "
-        "with a 94/100 Money-to-Manpower Score across 15 mapped plays. Start with "
-        "customer-funded consumption, not speculative hardware commitments: retain "
-        "55% of opening capital as working-capital reserve, isolate customer credits, "
-        "and assemble twelve inexpensive infrastructure layers. Canonical annual "
-        "owner profits are $27,000 Conservative, $189,000 Base, and $456,000 Scaled; "
-        "their gross billings are distinct from the 65% retained contribution. "
-        "This chapter separates recurring overhead from upstream consumption, "
-        "prices a reproducible control plane, and defines launch evidence for GPU "
-        "isolation, payment settlement, telecom identity, and recovery. Free-edge "
-        "publishing supports acquisition; powered-land options remain capped "
-        "research experiments rather than substitutes for contracted electricity."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$150,000",
-            "context": "Annual gross billings; $97,500 retained contribution at 65%",
-            "note": "18% gross-basis net margin; $27,000 annual owner net profit; 27.69% retained margin; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$675,000",
-            "context": "Annual gross billings; $438,750 retained contribution at 65%",
-            "note": "28.0% gross-basis net margin; $189,000 annual owner net profit; 43.08% retained margin; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual gross billings; $780,000 retained contribution at 65%",
-            "note": "38% gross-basis net margin; $456,000 annual owner net profit; 58.46% retained margin; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Ring-fence float before signing a single capacity commitment",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Allocate opening capital before selecting providers. The three budgets below "
-                    "hold 55% in working-capital reserve: $5,500 from $10,000, $16,500 from "
-                    "$30,000, and $33,000 from $60,000. These are alternative launch envelopes, "
-                    "not additional funding layered onto one business. Reserve cash covers "
-                    "settlement delays, refund exposure, expiring credits, and upstream invoices "
-                    "arriving before cleared customer payments; it does not authorize speculative "
-                    "GPU reservations. Keep customer prepaid balances in a separate ledger "
-                    "liability and exclude those balances from freely deployable owner capital. "
-                    "Use a business operating account, a separately tracked reserve account, "
-                    "and provider-specific payment limits. Confirm the bank's deposit insurance "
-                    "treatment and aggregate balances by legal ownership category rather than "
-                    "assuming each account creates fresh coverage. Obtain an EIN directly from "
-                    "the IRS, register the entity with its state, document beneficial ownership "
-                    "for bank onboarding, and keep signed provider contracts under that entity. "
-                    "Price technology errors-and-omissions and cyber coverage against actual "
-                    "GPU hosting, messaging, and voice activities; inspect telecommunications "
-                    "and infrastructure exclusions. At the smallest budget, narrow the product "
-                    "to one prepaid inference route. If entity costs or insurance exceed the "
-                    "allowance, reduce pilot scope instead of borrowing from the reserve."
-                ),
-                (
-                    "Reconcile the canonical scorecard before describing anything as revenue. "
-                    "Conservative gross billings of $150,000 less $52,500 upstream spend leave "
-                    "$97,500 retained contribution; subtract $70,500 remaining expenses to reach "
-                    "$27,000 owner profit. Base gross billings of $675,000 less $236,250 upstream "
-                    "spend leave $438,750; subtract $249,750 to reach $189,000. Scaled gross "
-                    "billings of $1,200,000 less $420,000 upstream spend leave $780,000; subtract "
-                    "$324,000 to reach $456,000. Thus total monthly scorecard expenses average "
-                    "$10,250, $40,500, and $62,000 respectively. The stated $2,000–$14,000 monthly "
-                    "planning range cannot represent all-in expenditure in every scenario. "
-                    "Treat it here as a controllable recurring-overhead envelope, with upstream "
-                    "consumption and additional delivery expenses separately visible. Illustrative "
-                    "monthly overhead targets of $2,000, $7,000, and $14,000 consume $24,000, "
-                    "$84,000, and $168,000 annually, leaving $46,500, $165,750, and $156,000 "
-                    "within the remaining-expense budgets for other modeled operating costs. "
-                    "Do not add these costs twice. The 65% retained share is the scorecard's "
-                    "economic presentation, not an automatic accounting election. Under ASC "
-                    "606-10-55-36 through 55-40, evaluate control and principal-versus-agent "
-                    "status for each performance obligation before selecting gross or net "
-                    "recognized revenue. Merchant activity and customer model output never "
-                    "become operator revenue merely because they traverse the platform."
-                ),
-                (
-                    "Release launch spending in small, reversible increments across the expected "
-                    "one-to-four-month path to a first deal. A $2,000 monthly fixed burn consumes "
-                    "$8,000 over four months, so a $10,000 launch cannot simultaneously spend "
-                    "that amount and preserve its reserve without collections or additional "
-                    "capital. Keep the pre-revenue control plane below the operating envelope, "
-                    "defer contractor retainers, and require a dated cash forecast before "
-                    "expanding availability. For an illustrative GPU offer, a $2.40 hourly "
-                    "upstream commitment sold at $4.00 per occupied hour needs 60% utilization "
-                    "just to cover capacity; payment fees and support raise the actual threshold. "
-                    "A 720-hour month costs $1,728 whether customers consume it or not. At "
-                    "50% occupancy, billings reach only $1,440, producing a $288 capacity loss "
-                    "before overhead. Purchase hourly capacity first, measure paid utilization, "
-                    "and negotiate reservations only after signed demand covers the downside. "
-                    "Keep H100, H200, and B200 rate cards separate because memory capacity, "
-                    "interconnect topology, and workload performance change effective output "
-                    "cost. Finance no annual SaaS contract from anticipated savings alone. "
-                    "Track settled cash, wallet liabilities, refundable provider deposits, "
-                    "nonrefundable setup fees, and committed capacity separately in the weekly "
-                    "thirteen-week forecast; each has a different recovery path."
-                ),
-            ],
-            "table": {
-                "caption": "Reserve-First Startup Allocation: Three Complete, Non-Additive Capital Envelopes",
-                "headers": [
-                    "Capital allocation and permitted operating purpose",
-                    "Ten-thousand-dollar launch allocation",
-                    "Thirty-thousand-dollar launch allocation",
-                    "Sixty-thousand-dollar launch allocation",
-                ],
-                "rows": [
-                    [
-                        "Working-capital reserve remains outside discretionary purchasing authority",
-                        "$5,500 reserve protects settlement delays and refund exposure",
-                        "$16,500 reserve protects larger invoices and settlement interruptions",
-                        "$33,000 reserve protects expanded commitments and customer reversals",
-                    ],
-                    [
-                        "Entity, banking, insurance, and contract setup receive explicit ceilings",
-                        "$1,500 funds formation, account setup, and initial coverage",
-                        "$3,500 funds broader coverage and targeted contract review",
-                        "$6,500 funds expanded coverage and multi-product contracting work",
-                    ],
-                    [
-                        "Control-plane setup purchases reproducibility instead of elaborate dashboards",
-                        "$500 funds minimal hosting, backups, and initial configuration",
-                        "$1,500 funds tested automation and documented recovery setup",
-                        "$3,000 funds isolated environments and stronger recovery tooling",
-                    ],
-                    [
-                        "Metered delivery pilots buy evidence before recurring capacity",
-                        "$2,000 funds tightly capped customer-linked GPU consumption tests",
-                        "$6,000 funds multiple paid workload and carrier trials",
-                        "$12,000 funds measured regional capacity and failover trials",
-                    ],
-                    [
-                        "Demand testing and diligence remain capped experimental expenses",
-                        "$500 funds acquisition tests without speculative land options",
-                        "$2,500 funds measured acquisition and bounded site diligence",
-                        "$5,500 funds expanded acquisition experiments and contingent diligence",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "2. Assemble twelve priced layers without confusing software with capacity",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build the control plane around twelve explicit layers, not twelve compulsory "
-                    "subscriptions. The matrix uses exact reference rate pins and license prices "
-                    "for reproducible budgeting; these are planning inputs, not verified current "
-                    "checkout quotes. Confirm currency, region, included quotas, tax, and commercial "
-                    "eligibility before purchase, then record the accepted rate card with its "
-                    "effective date. Cloudflare Workers Paid at a $5 monthly minimum, a "
-                    "DigitalOcean Basic droplet at $6 monthly, Supabase Pro from $25 monthly "
-                    "for the reference organization configuration, and GitHub Team at $4 per "
-                    "user monthly produce a $44 baseline for two GitHub seats. That subtotal "
-                    "excludes taxes, excess usage, additional database compute, paid messaging, "
-                    "GPU capacity, and payment processing. Cloudflare R2 Standard storage at "
-                    "$0.015 per GB-month makes 100 billable GB cost $1.50 before operations "
-                    "and applicable allowances. Keep synthetic checks and build logs small "
-                    "enough for the chosen observability tier. A cheap control plane is not "
-                    "a highly available service by itself: the single droplet needs reproducible "
-                    "configuration, tested restoration, and an explicit recovery objective. "
-                    "Route synchronous inference outside that small host. Its job is admission, "
-                    "accounting coordination, and configuration delivery, not pretending that "
-                    "one gigabyte of memory can run production model serving."
-                ),
-                (
-                    "Treat the Stripe balance, internal wallet, and upstream consumption meter "
-                    "as separate systems reconciled by immutable identifiers. At the reference "
-                    "US domestic-card rate of 2.9% plus $0.30, a $100 top-up costs $3.20 "
-                    "and a $10 top-up costs $0.59. Encourage sensible minimum purchases rather "
-                    "than absorbing repeated fixed charges on tiny wallets. Fees vary by "
-                    "payment method, geography, currency conversion, and dispute activity, so "
-                    "save the applicable processor schedule. Credit a wallet from authenticated "
-                    "payment events with idempotent processing, not from a browser success "
-                    "redirect. Availability for delivery must also reflect settlement and risk "
-                    "policy; a successful charge can still reverse. Reserve an estimated "
-                    "maximum request cost atomically before dispatch, settle the actual debit "
-                    "after completion, and release unused reservations. LiteLLM may coordinate "
-                    "model routes, but the authoritative ledger belongs in transactional storage. "
-                    "vLLM token counters describe model work; NVIDIA DCGM describes hardware "
-                    "behavior. Neither independently proves a customer invoice. Join request "
-                    "identifier, tenant identifier, selected model, token counts, elapsed GPU "
-                    "time, and price version into a billing event. Reconcile provider invoices "
-                    "daily and investigate discrepancies before increasing wallet limits or "
-                    "opening another region. Preserve credit adjustments as compensating entries "
-                    "rather than editing historical usage."
-                ),
-                (
-                    "Configure tenant boundaries before accepting arbitrary workloads. For managed "
-                    "inference, restrict the execution environment to approved serving images, "
-                    "disable unnecessary outbound access, scope object-store credentials, and "
-                    "separate customer artifacts by authorization policy. For customer-supplied "
-                    "containers, use dedicated hosts or an isolation design that has actually "
-                    "been assessed; MIG partitions GPU resources but does not by itself "
-                    "establish a complete hostile-tenant security boundary. Test GPU memory "
-                    "cleanup, host access restrictions, and credential revocation between leases. "
-                    "Enterprise zero-data-retention promises require coordinated settings across "
-                    "LiteLLM callbacks, upstream model providers, exception reporters, tracing, "
-                    "support exports, and backups. Retain necessary billing metadata without "
-                    "retaining prompts, responses, audio, or message bodies where the agreement "
-                    "excludes them. WireGuard supplies an inexpensive administrative tunnel, "
-                    "not identity lifecycle management; distribute individual keys and revoke "
-                    "departures promptly. Keep customer traffic off the administrative subnet. "
-                    "On telecom routes, OpenSIPS admission rules should enforce authorized "
-                    "destinations, concurrency, maximum call duration, and spend ceilings before "
-                    "least-cost routing selects a carrier. A cheaper route that fails identity "
-                    "requirements, answer quality, or contracted destination restrictions is "
-                    "not an eligible substitute. Meter IPv4 leases by assigned address and "
-                    "contract period, verify delegation rights, and do not count address "
-                    "inventory as recognized sales before the promised service is delivered."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Layer Infrastructure Matrix: Exact Reference Rate Pins, Functions, and Lean Alternatives",
-                "headers": [
-                    "Named layer and vendor pricing reference",
-                    "Production role and enforceable operating boundary",
-                    "Cost calculation and purchasing discipline",
-                    "Cheaper implementation and explicit operational tradeoff",
-                ],
-                "rows": [
-                    [
-                        "Edge delivery: Cloudflare Pages Free, Workers Paid $5 monthly minimum",
-                        "Serve static acquisition properties and bounded admission endpoints",
-                        "Budget $5 minimum; separately meter requests and CPU overages",
-                        "Use Pages static artifacts only when dynamic execution is unnecessary",
-                    ],
-                    [
-                        "Control host: DigitalOcean Basic, one GiB, $6 monthly reference",
-                        "Run lightweight coordination services outside the GPU execution path",
-                        "One reference droplet costs $72 annually before added services",
-                        "Share an existing authorized host while accepting weaker fault separation",
-                    ],
-                    [
-                        "Wallet database: Supabase Pro, $25 monthly starting reference",
-                        "Persist transactional balances, price versions, and idempotent billing events",
-                        "Budget $300 annually before added compute and usage charges",
-                        "Self-host PostgreSQL for zero license cost with added maintenance",
-                    ],
-                    [
-                        "Artifact storage: Cloudflare R2 Standard, $0.015 per GB-month reference",
-                        "Store approved artifacts and encrypted recovery exports without prompts",
-                        "One hundred billable GB costs $1.50 before request charges",
-                        "Retain smaller artifacts locally while preserving independent recovery copies",
-                    ],
-                    [
-                        "Code delivery: GitHub Team, $4 per user monthly reference",
-                        "Protect deployment branches and record reproducible infrastructure changes",
-                        "Two seats cost $8 monthly before extra Actions consumption",
-                        "Use GitHub Free where required private-repository controls remain sufficient",
-                    ],
-                    [
-                        "Administrative network: WireGuard self-hosted, $0 software license charge",
-                        "Restrict management access through individual revocable peer identities",
-                        "Budget existing host resources and operator key-management time",
-                        "Use OpenSSH tunnels for fewer endpoints with explicit access records",
-                    ],
-                    [
-                        "Observability: Grafana Cloud Free, $0 subscription within plan limits",
-                        "Alert on wallet failures, latency, utilization, and carrier anomalies",
-                        "Enforce retention and ingestion ceilings before exhausting free allocations",
-                        "Run Prometheus locally with less convenient independent incident visibility",
-                    ],
-                    [
-                        "Collections: Stripe standard US domestic cards, 2.9% plus $0.30",
-                        "Collect prepaid funds and reconcile signed events into liabilities",
-                        "A $100 charge incurs $3.20 under this reference schedule",
-                        "Use quoted bank-transfer rails when reconciliation and settlement fit",
-                    ],
-                    [
-                        "Inference routing: LiteLLM open-source edition, $0 software license charge",
-                        "Choose eligible providers using price, latency, and retention constraints",
-                        "Pay underlying providers separately and cap retries per request",
-                        "Use one provider adapter until routing complexity earns savings",
-                    ],
-                    [
-                        "GPU serving: vLLM and NVIDIA DCGM, $0 software license charges",
-                        "Serve approved models and correlate usage with hardware telemetry",
-                        "Budget actual GPU leases separately from free serving software",
-                        "Start with metered inference before administering dedicated GPU capacity",
-                    ],
-                    [
-                        "SIP routing: OpenSIPS self-hosted, $0 software license charge",
-                        "Apply destination policy and bounded least-cost routing between carriers",
-                        "Carrier commitments and termination rates require separate signed schedules",
-                        "Use one contracted carrier initially and retain portable routing configuration",
-                    ],
-                    [
-                        "Messaging: Twilio US long-code SMS, $0.0083 per segment reference",
-                        "Send registered business messaging with tenant-specific throughput limits",
-                        "Ten thousand segments cost $83 before carrier and registration fees",
-                        "Defer messaging entirely until contracted demand supports onboarding expenses",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Spend on measurements that prevent the next expensive surprise",
-                "body": "A lean stack earns its margin through narrow routing eligibility, bounded exposure, and reliable evidence rather than a large subscription inventory.",
-                "items": [
-                    "Benchmark a fixed representative prompt set on each H100, H200, and B200 offer; compare dollars per accepted output token at the required latency, not advertised GPU-hour prices.",
-                    "Put a maximum retry budget beside each LiteLLM route. A timeout followed by a second provider can create two upstream charges while the customer sees one response.",
-                    "Reconcile SIP call-detail records by carrier call identifier and billing increment. A sixty-second minimum can erase the apparent advantage of a cheaper per-minute rate.",
-                    "Keep signed static build artifacts ready for direct upload. A cloud build outage should delay publishing, not force an emergency paid build subscription.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Use free-edge acquisition and powered-land research as bounded options",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The mapped play serverless_edge_free_tier_empire_hosting belongs on the "
-                    "acquisition side of this business, not inside the delivery margin "
-                    "calculation. Publish useful static GPU price explainers, latency calculators, "
-                    "regional capacity directories, and telecom comparison tools as pre-rendered "
-                    "HTML and JSON. At $0.00 incremental hosting per eligible property, "
-                    "1,000 static properties have a $0 hosting line only while aggregate "
-                    "account limits, permitted commercial use, bandwidth, and deployment "
-                    "constraints all remain satisfied. Domains, editorial work, maintenance, "
-                    "and dynamic APIs still cost money. Prefer 1,000 logical tools or "
-                    "directory pages within a manageable set of sites rather than assuming "
-                    "a vendor permits 1,000 independent projects. Cloudflare Pages, Workers, "
-                    "GitHub Pages, Vercel, Netlify, and Supabase have different product limits "
-                    "and commercial-use rules; their free allocations are not interchangeable. "
-                    "In particular, do not select a personal-use plan for a commercial "
-                    "brokerage or use GitHub Pages as unrestricted commercial application "
-                    "hosting. Each property needs accurate source attribution, a useful "
-                    "calculator or original comparison, and a clear conversion path. "
-                    "Measure qualified enquiries and settled customer revenue by property "
-                    "cohort. A thousand near-duplicate pages that generate support noise "
-                    "and no paid accounts are overhead, even when the hosting invoice "
-                    "remains zero."
-                ),
-                (
-                    "Model acquisition economics with cash rather than page counts. Suppose "
-                    "100 static tools each receive 200 qualified monthly visits, producing "
-                    "20,000 visits. At a 0.5% enquiry rate, that yields 100 enquiries; "
-                    "at a 10% paid conversion rate, it produces ten customers. If each "
-                    "customer buys $100 of initial usage, gross billings total $1,000 "
-                    "and the canonical retained-share assumption yields $650 before other "
-                    "expenses. Ten domestic-card charges at the reference Stripe rate cost "
-                    "$32, leaving $618 before content, support, and overhead. These are "
-                    "illustrative conversion assumptions, not additions to the annual "
-                    "scorecard scenarios. Spending $900 to create that cohort would not "
-                    "recover its cost from those first purchases alone. Record repeat "
-                    "purchases before claiming a favorable acquisition payback. If build "
-                    "minutes become restrictive, pre-build locally or on authorized "
-                    "self-hosted runners and upload compiled artifacts through the supported "
-                    "deployment API. If traffic exceeds an allocation, consolidate sites, "
-                    "cache immutable assets, or purchase the appropriate plan from realized "
-                    "margin. Never multiply accounts to bypass vendor limits. Keep forms "
-                    "behind rate limits and challenge suspicious submissions; static hosting "
-                    "does not make an exposed lead endpoint immune to abuse or "
-                    "unbounded downstream API charges."
-                ),
-                (
-                    "The second mapped play, ferc_grid_interconnection_queue_land_speculation, "
-                    "requires an even tighter capital boundary. Overlay public ISO or RTO "
-                    "interconnection queues with parcel boundaries, zoning, substation locations, "
-                    "flood maps, and utility service territories to identify research candidates. "
-                    "FERC interconnection reforms under Order No. 2023 and 18 CFR 35.28 "
-                    "address generator interconnection processes; a nearby generator queue "
-                    "entry does not establish deliverable electric service for a data center. "
-                    "Request the serving utility's actual load-service process, capacity "
-                    "study requirements, upgrade allocation, deposit schedule, and energization "
-                    "timeline. For an illustrative $500 nonrefundable, ninety-day option "
-                    "premium plus $300 of capped desktop diligence, the at-risk outlay "
-                    "is $800, provided the signed agreement creates no additional mandatory "
-                    "payments or purchase obligation. That experiment fits inside the "
-                    "$2,500 or $5,500 diligence envelopes, not the $500 smallest-launch "
-                    "allowance and never the reserve. Verify title, access, option assignability, "
-                    "and termination mechanics before paying. State real-estate licensing "
-                    "rules can differ between acquiring an interest for the entity and "
-                    "brokering another owner's transaction. If utility evidence or land-use "
-                    "feasibility fails, let the contingent option lapse or assess an "
-                    "independently viable use. Never advertise secured power based on "
-                    "distance to a substation or a queue spreadsheet."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped-Play Experiments: Bounded Unit Economics and Explicit Failure Responses",
-                "headers": [
-                    "Experiment and precise scope of operator work",
-                    "Illustrative unit calculation and capital boundary",
-                    "Evidence required before increasing committed spending",
-                    "Fallback that preserves cash and contractual accuracy",
-                ],
-                "rows": [
-                    [
-                        "serverless_edge_free_tier_empire_hosting creates useful static acquisition tools within permitted allocations",
-                        "One thousand eligible properties multiply $0 incremental hosting only",
-                        "Document account limits, commercial eligibility, traffic, and deployment quotas",
-                        "Consolidate logical properties before paying for broader hosting capacity",
-                    ],
-                    [
-                        "Static acquisition cohort measures customers rather than indexed pages",
-                        "Twenty thousand visits yield ten customers under stated assumptions",
-                        "Track settled purchases and repeat usage against content costs",
-                        "Retire unproductive pages and retain tools producing qualified enquiries",
-                    ],
-                    [
-                        "Precompiled publishing removes unnecessary cloud build-minute consumption from experiments",
-                        "Ten thousand SMS segments are unrelated to static hosting costs",
-                        "Separate hosting, messaging, domains, and editorial expense by cohort",
-                        "Upload locally built artifacts without bypassing provider account limits",
-                    ],
-                    [
-                        "ferc_grid_interconnection_queue_land_speculation researches contingent sites without representing secured power",
-                        "$500 option premium plus $300 diligence limits initial exposure",
-                        "Obtain utility process evidence and independently verify parcel constraints",
-                        "Allow the option to expire when required evidence fails",
-                    ],
-                    [
-                        "Powered-land research distinguishes generator queues from customer load service",
-                        "An $800 experiment stays outside the protected reserve allocation",
-                        "Check assignability, access, title, zoning, and additional payment obligations",
-                        "Evaluate independent land uses without implying available electrical capacity",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Prove money movement, isolation, carrier standing, and recovery before launch",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Prepare a launch evidence packet that another operator can reproduce. "
-                    "Run a real low-value top-up, deliver a bounded workload, reconcile "
-                    "the provider charge, issue a partial credit, and verify that the "
-                    "wallet and accounting export remain balanced. Replay the processor "
-                    "event to prove idempotency; submit simultaneous requests to prove "
-                    "that one balance cannot fund duplicate reservations. Disconnect "
-                    "the metering path and confirm that new consumption stops rather "
-                    "than becoming unpriced service. Restore the database into an isolated "
-                    "environment and compare wallet totals, request identifiers, and "
-                    "unsettled reservations. Define a recovery-point objective for acknowledged "
-                    "billing events and show how an append-only event journal closes "
-                    "the gap after restoring a snapshot. Exercise a compromised tenant "
-                    "key, an exhausted balance, a provider timeout, and an attempted "
-                    "cross-tenant object read. Confirm that security events reach someone "
-                    "who can revoke access without logging customer payloads. Assign "
-                    "incident ownership across the canonical teams: one full-time operator "
-                    "plus two contractors in Conservative and Base, and two full-time "
-                    "operators plus three contractors at Scaled. Contractor count does "
-                    "not establish round-the-clock coverage. Publish support hours and "
-                    "buy an explicit on-call arrangement only when the delivery budget "
-                    "and customer commitments justify it."
-                ),
-                (
-                    "Telecom launch requirements depend on the service actually provided. "
-                    "Classify the entity's role as reseller, voice service provider, "
-                    "gateway provider, messaging intermediary, or infrastructure supplier "
-                    "before choosing filings and contracts. Under 47 CFR 64.6301 and "
-                    "64.6305, determine applicable caller-ID authentication, robocall "
-                    "mitigation, and Robocall Mitigation Database certification duties; "
-                    "buying a trunk does not automatically discharge the downstream "
-                    "entity's obligations. Confirm provider standing and the circumstances "
-                    "in which traffic must be blocked. Evaluate FCC Form 499-A "
-                    "registration and reporting using the service model and current "
-                    "instructions; a contribution exemption does not automatically remove "
-                    "every filing duty. For US application-to-person messaging over "
-                    "ten-digit long codes, complete the carrier-required brand and "
-                    "campaign registration process through the relevant provider and "
-                    "The Campaign Registry ecosystem. Registration is distinct from "
-                    "the TCPA restrictions in 47 U.S.C. 227 and implementing rules. "
-                    "Collect evidence of authorized messaging purposes, implement "
-                    "applicable opt-out handling, and verify number ownership. For "
-                    "voice, screen customer identity, destination patterns, and sudden "
-                    "concurrency changes. For GPU access, screen intended workloads "
-                    "against the upstream acceptable-use policy and investigate abrupt "
-                    "mining-like consumption. Apply proportional review and documented "
-                    "suspension rules rather than assuming every high-utilization workload "
-                    "is abusive."
-                ),
-                (
-                    "Release production with a customer-specific exposure ceiling, not an "
-                    "unlimited public signup switch. An illustrative first account with "
-                    "$500 prepaid credit, a $100 daily consumption ceiling, and a "
-                    "$25 maximum in-flight reservation bounds several failure modes, "
-                    "but those controls do not eliminate payment reversals or provider "
-                    "billing delay. Calculate maximum loss as outstanding upstream "
-                    "consumption plus irreversible commitments plus refund exposure, "
-                    "less reliably recoverable funds; do not subtract the entire "
-                    "wallet liability as though it were owner cash. Reconcile every "
-                    "day during the pilot and review route profitability weekly. "
-                    "For SIP, test destination blocking and immediate concurrency "
-                    "reduction before allowing international traffic. For SMS, bill "
-                    "segments rather than visible messages and test Unicode expansion. "
-                    "For inference, test streamed responses, disconnects, retries, and "
-                    "output-token caps. For leased IPv4 capacity, retain evidence "
-                    "of authorization, abuse contacts, and revocation procedures. "
-                    "Increase limits only after settled collections, accepted invoices, "
-                    "and observed demand support the change. If any readiness "
-                    "check fails, keep the unaffected static acquisition layer "
-                    "online while disabling the implicated paid service. That "
-                    "separation preserves useful demand generation without selling "
-                    "capacity the operator cannot safely meter, fund, or restore. "
-                    "The reserve is a shock absorber, not permission to launch "
-                    "with unresolved accounting defects."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Flight Evidence Matrix: Observable Tests, Ownership, and Stop Conditions",
-                "headers": [
-                    "Readiness domain and accountable operational owner",
-                    "Required evidence produced by a reproducible test",
-                    "Acceptance condition tied to bounded financial exposure",
-                    "Immediate response when the condition is unmet",
-                ],
-                "rows": [
-                    [
-                        "Operator owns settlement, wallet liabilities, and customer credit accounting",
-                        "Signed event replay and concurrent spending tests preserve balances",
-                        "Exactly one credit and bounded reservations survive duplicate delivery",
-                        "Disable new paid requests while repairing ledger reconciliation",
-                    ],
-                    [
-                        "Infrastructure contractor owns tenant isolation and provider retention settings",
-                        "Cross-tenant access fails and payload logging remains disabled",
-                        "Approved workloads execute without exposing another customer's artifacts",
-                        "Quarantine the affected execution pool and revoke exposed credentials",
-                    ],
-                    [
-                        "Telecom specialist owns service classification and applicable carrier evidence",
-                        "Document applicable filings, provider standing, and campaign registration",
-                        "Each enabled route satisfies its applicable identity and operating requirements",
-                        "Disable affected routes without interrupting independently qualified services",
-                    ],
-                    [
-                        "Operator owns cash forecasting and upstream commitment authorization",
-                        "Thirteen-week forecast includes settlement stress and provider invoice timing",
-                        "Protected reserve remains at least half of opening capital",
-                        "Reduce capacity commitments and defer discretionary acquisition spending",
-                    ],
-                    [
-                        "Infrastructure contractor owns restoration and billing-event recovery exercises",
-                        "Isolated restore reproduces balances and resolves outstanding reservations",
-                        "Measured recovery meets documented customer service and accounting objectives",
-                        "Keep launch limited until recovery evidence is repeatable",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four proofs required before increasing customer exposure",
-                "body": "Keep evidence with the deployment version, price schedule, provider contract, and named operator responsible for each test.",
-                "items": [
-                    "Cash proof: demonstrate a settled collection, balanced wallet liability, bounded refund exposure, and a stress forecast preserving at least 50% of opening capital.",
-                    "Metering proof: replay payment events and concurrent requests; verify exact-once ledger effects, capped reservations, and suspension when metering becomes unavailable.",
-                    "Service proof: demonstrate tenant isolation and retention settings, then document the applicable telecom filings, provider standing, and messaging registrations for enabled products.",
-                    "Recovery proof: restore the ledger and configuration, reconcile post-snapshot events, revoke a tenant credential, and stop an active route without manual database edits.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the launch envelope",
-                    "action": "Select one capital column and segregate its 55% reserve.",
-                    "detail": "Record authorized spending owners, customer-credit liabilities, provider deposits, and a thirteen-week forecast before purchasing subscriptions or capacity.",
-                },
-                {
-                    "step": 2,
-                    "title": "Deploy the minimum reproducible stack",
-                    "action": "Configure the twelve layers while purchasing only the services required by the first offer.",
-                    "detail": "Store accepted price schedules, infrastructure configuration, retention settings, secrets ownership, and restoration instructions in the controlled project repository.",
-                },
-                {
-                    "step": 3,
-                    "title": "Run an end-to-end paid rehearsal",
-                    "action": "Collect a small payment, reserve wallet funds, execute work, reconcile costs, and process an adjustment.",
-                    "detail": "Repeat events, interrupt the provider, exhaust the wallet, test tenant boundaries, and restore the ledger before increasing any spending limit.",
-                },
-                {
-                    "step": 4,
-                    "title": "Launch with bounded exposure",
-                    "action": "Enable one qualified customer cohort with explicit daily and in-flight limits.",
-                    "detail": "Review daily settlement and consumption evidence, expand only after actual route margins and cash timing support the additional commitments, and keep failed products disabled.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "Reserve cash before reserving capacity, and sell only what you can meter, fund, isolate, and restore.",
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Choose the $10,000, $30,000, or $60,000 launch envelope and segregate its 55% working-capital reserve before approving discretionary purchases.",
-        "Reconcile all three scorecard cases from gross billings through 35% upstream costs, 65% retained contribution, remaining expenses, and exact annual owner profit.",
-        "Confirm the twelve infrastructure rate pins against actual checkout terms and signed carrier schedules; record limits, effective dates, and commercial eligibility.",
-        "Implement transactional prepaid wallets with authenticated events, idempotent credits, atomic usage reservations, daily reconciliation, and fail-closed spending controls.",
-        "Document tenant isolation, enterprise retention settings, applicable FCC obligations, carrier standing, and brand or campaign registration for every enabled product.",
-        "Complete a paid rehearsal and isolated recovery test; launch static acquisition separately and keep powered-land experiments outside the protected reserve.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "47 CFR 64.6301 — Caller ID authentication",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.6301",
-            "relevance": "Determine applicable caller-ID authentication duties from the entity's actual voice-service role and supported network technology.",
-        },
-        {
-            "title": "47 CFR 64.6305 — Robocall mitigation and certification",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.6305",
-            "relevance": "Evaluate applicable mitigation plans, database certifications, provider-status checks, and restrictions on accepting traffic.",
-        },
-        {
-            "title": "47 CFR 54.706 — Contributions",
-            "url": "https://www.ecfr.gov/current/title-47/section-54.706",
-            "relevance": "Assess federal universal-service contribution treatment for the actual telecommunications and interconnected voice activities offered.",
-        },
-        {
-            "title": "47 CFR 54.711 — Contributor reporting requirements",
-            "url": "https://www.ecfr.gov/current/title-47/section-54.711",
-            "relevance": "Map applicable contributor reporting duties to current FCC Form 499 instructions rather than assuming a carrier handles every reseller obligation.",
-        },
-        {
-            "title": "47 U.S.C. 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Evaluate restrictions governing automated calling and messaging separately from carrier-required brand and campaign registration.",
-        },
-        {
-            "title": "47 CFR 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": "Implement applicable calling, messaging, revocation, and do-not-call controls for the specific traffic and customer use case.",
-        },
-        {
-            "title": "18 CFR 35.28 — Non-discriminatory open access transmission tariff",
-            "url": "https://www.ecfr.gov/current/title-18/section-35.28",
-            "relevance": "Interpret generator-interconnection process evidence without treating a queue entry or nearby substation as proof of available data-center load service.",
-        },
-        {
-            "title": "12 CFR 330.11 — Accounts of a corporation, partnership, or unincorporated association",
-            "url": "https://www.ecfr.gov/current/title-12/section-330.11",
-            "relevance": "Evaluate business deposit coverage by legal ownership category instead of assuming separate operating and reserve accounts create separate coverage limits.",
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'colocation-warehouses-datacenter-plumbing-gpu-operators',
+ 'question_prompt': 'Where should GPU servers physically live, and what do colocation, power delivery, '
+                    'tiers, and IP or BGP connectivity really cost and require?',
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Colocation, Warehouses, and Data-Center Plumbing for GPU Operators',
+ 'subtitle': 'Colo pricing for space, power, and cross-connects, a $25K/month warehouse GPU data center, '
+             'homelab colo walkthroughs, a 36 MW facility tour, high-density colo, busways, RPPs, PDUs, '
+             'and 1 MW HVDC racks, Uptime Tier 1-4 standards, ARIN registration, BGP over GRE without an '
+             'ASN, and 44Net port forwarding',
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'GPU operators choosing between colocation and a DIY warehouse face one dominant '
+                      'variable: power. Alec Glover ran 1,000 GPUs in a warehouse for about $25,000 a '
+                      'month, modeling $50 per kW-month against a colocation floor of $150 per kW-month '
+                      'billed on provisioned circuits, but admits the build was underspent and choked '
+                      'growth. IPTP Networks breaks colo quotes into six cost areas, pricing '
+                      'cross-connects at $500 to $1,500 install plus $100 to $300 monthly and remote hands '
+                      'at $150 to $350 an hour. Techno Tim found retail quotes of $350 to $900 a month and '
+                      "joined a split-cost rack instead. Lawrence Systems' Deft tour and Colovore stress "
+                      'redundancy and 20 kW density, while Null0 Labs shows GRE-tunneled BGP as a '
+                      'workaround when a building cannot get transit directly. Practitioners split on how '
+                      'much redundancy is worth paying for.',
+ 'key_metrics': [{'label': 'Warehouse GPU Operating Cost',
+                  'metric': 'Warehouse GPU Operating Cost',
+                  'value': '$25,000 per month for 1,000 GPUs over almost three years',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Glover's DIY warehouse run cost, estimated at one-third to one-fifth of a "
+                             'typical Tier III facility',
+                  'source': 'Alec Glover ([TZp1yBea0o4 @ 00:00:00])'},
+                 {'label': 'Colocation vs DIY Power Price',
+                  'metric': 'Colocation vs DIY Power Price',
+                  'value': '$150+ per kW per month colo vs $50 or less per kW per month DIY',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Colo bills the full provisioned circuit; the DIY model only paid for power '
+                             'actually used',
+                  'source': 'Alec Glover ([TZp1yBea0o4 @ 00:01:49])'},
+                 {'label': 'Cross-Connect Cost Per Link',
+                  'metric': 'Cross-Connect Cost Per Link',
+                  'value': '$500 to $1,500 install plus $100 to $300 monthly',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Four cross-connects mean $2,000 to $6,000 in upfront cost alone',
+                  'source': 'IPTP Networks ([3EnjHW-36GI @ 00:02:34])'},
+                 {'label': 'GPU Server Power Draw',
+                  'metric': 'GPU Server Power Draw',
+                  'value': '5 to 15 kW per GPU server vs under 0.5 kW for a standard server',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Why power is usually the largest variable on a colocation quote',
+                  'source': 'IPTP Networks ([3EnjHW-36GI @ 00:01:36])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every practitioner who priced real capacity lands on the same axis: power, '
+                              'not space. IPTP Networks calls power usually the largest variable on a '
+                              'colocation quote, billed either as a flat allocation of reserved capacity '
+                              'or by the meter on actual consumption, with redundant power adding roughly '
+                              '15 to 20 percent; they flag that a standard server draws under half a '
+                              'kilowatt while a GPU server pulls 5 to 15 [3EnjHW-36GI @ 00:01:17]. Alec '
+                              'Glover, who ran a thousand GPUs, explains why that hurts: colos bill on '
+                              'power provisioned, so a GPU box needing a full 6 kW circuit pays for the '
+                              'whole circuit monthly whether it runs at 20 or 30 percent, and only larger '
+                              'deals unlock fixed price plus energy [TZp1yBea0o4 @ 00:01:30]. Colovore '
+                              'frames density as the second lever: an operator stuck in a decade-old '
+                              'facility capped at 4 kW per rack needs 10 racks and then 20 after growth, '
+                              'while a 20 kW-per-rack colo lets the same load fit in four 10 kW cabinets '
+                              'and grow vertically inside them [JMz8luHLVxc @ 00:00:20]. The shared '
+                              'baseline is simple: model kilowatts first, then rack units, because rack '
+                              'units alone will not explain why two quotes for the same footprint diverge.',
+                              'Redundancy is the second point of agreement, and the vocabulary is the same '
+                              'whether the building is a Tier III colo or a warehouse. Alec Glover defines '
+                              'it as buying more units than you need, notated N+1 or N+2, and applies it '
+                              'bluntly to cooling: if the math says one air conditioner, you still buy '
+                              'two, because a single failure puts your SLAs at risk [TZp1yBea0o4 @ '
+                              '00:07:34]. MEP BOOSTER gives the same arithmetic for Tier III design: if '
+                              'the load needs three units, install four, so one can fail while the '
+                              'remaining three carry full load, with dual power and cooling paths letting '
+                              'UPS maintenance, generator testing, or pump replacement happen while IT '
+                              'load keeps running [O0T9qQ1TuGU @ 00:15:24]. Gareth Knight pins Tier III at '
+                              '99.982 percent uptime, under 1.6 hours of downtime a year, and positions it '
+                              'as the cost-versus-availability sweet spot below Tier IV [mNQb5B_voNw @ '
+                              '00:03:51]. Data Center News adds the operator caveat everyone should '
+                              'internalize: simply building a Tier IV facility does not guarantee Tier IV '
+                              'uptime, because the site has to be consistently maintained and monitored, '
+                              'from temperature and humidity to power usage [8DzqbL0HKG0 @ 00:02:53]. '
+                              'Consensus: buy redundancy where a single failure kills customer uptime, and '
+                              'back it with monitoring.',
+                              'The third shared conclusion is that connectivity and carrier presence '
+                              'decide whether a site is usable for paying customers. IPTP Networks notes '
+                              'that location and carrier ecosystem never appear in the rack rate, yet they '
+                              'determine what you can connect to and at what cost, from the number of ISPs '
+                              'and on-site internet exchanges to cloud on-ramps reached through '
+                              'cross-connects [3EnjHW-36GI @ 00:00:41]. Alec Glover treats the network as '
+                              'the next most important component after power: the building must support '
+                              'dedicated internet plans that let you run your own BGP router, and their '
+                              'warehouse ran a 10 Gbit primary backed by a 1 Gbit link, carrying about 100 '
+                              'servers per 10 gig [TZp1yBea0o4 @ 00:05:05]. Techno Tim saw the upside of '
+                              'carrier density firsthand at a Cologix site in downtown Minneapolis, where '
+                              'sub-millisecond pings came back over a site-to-site VPN because the home '
+                              'ISP also sat in that data center a few miles away [zbkqRPIUYAo @ 00:05:49]. '
+                              "Deft's team, touring with Lawrence Systems, warns that carriers sometimes "
+                              'run through the same manhole or conduit, so they build redundant fiber '
+                              'sides and route customers over diverse carriers so a single cut cannot take '
+                              'out both paths [gsN_CJJDy_o @ 00:12:21].'],
+               'table': {'caption': 'Where GPU and Colocation Practitioners Agree',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Power drives the colocation bill',
+                                   'Power is usually the largest variable, billed as flat allocation or '
+                                   'metered, with redundancy adding 15 to 20 percent',
+                                   'Quote kilowatts and billing method before comparing any rack unit '
+                                   'counts',
+                                   'IPTP Networks ([3EnjHW-36GI @ 00:01:17])'],
+                                  ['Provisioned circuits are billed in full',
+                                   'A 6 kW GPU circuit is billed monthly in full whether used at 20 or 30 '
+                                   'percent',
+                                   'Underutilized GPU racks in colo pay for idle headroom every single '
+                                   'month',
+                                   'Alec Glover ([TZp1yBea0o4 @ 00:01:30])'],
+                                  ['Density prevents horizontal rack sprawl',
+                                   'Legacy 4 kW racks forced 10 then 20 cabinets while 20 kW racks '
+                                   'absorbed growth vertically',
+                                   'Target high-density racks so hardware refreshes fill existing cabinets '
+                                   'instead of new ones',
+                                   'Colovore LLC ([JMz8luHLVxc @ 00:00:20])'],
+                                  ['N+1 on every critical component',
+                                   'Need three units, install four; dual paths allow maintenance while the '
+                                   'IT load keeps running',
+                                   'Spec spare cooling and power capacity before customers depend on '
+                                   'uptime guarantees',
+                                   'MEP BOOSTER ([O0T9qQ1TuGU @ 00:15:24])'],
+                                  ['Tier III is the cost-availability sweet spot',
+                                   'Tier III delivers 99.982 percent uptime, under 1.6 hours of yearly '
+                                   'downtime, below Tier IV cost',
+                                   'Use Tier III as the benchmark when pricing a DIY build against '
+                                   'colocation',
+                                   'Gareth Knight ([mNQb5B_voNw @ 00:03:51])'],
+                                  ['Dedicated BGP-capable internet is mandatory',
+                                   'Run your own BGP router over dedicated plans; 10 Gbit primary plus 1 '
+                                   'Gbit backup handled about 100 servers',
+                                   'Confirm the building can get dedicated BGP circuits before committing '
+                                   'to the site',
+                                   'Alec Glover ([TZp1yBea0o4 @ 00:05:05])'],
+                                  ['Carrier ecosystem sets connection costs',
+                                   'Location and carrier ecosystem never appear in the rack rate yet '
+                                   'decide reachable networks and costs',
+                                   'Count ISPs, internet exchanges, and cloud on-ramps on site before '
+                                   'accepting a quote',
+                                   'IPTP Networks ([3EnjHW-36GI @ 00:00:41])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Start with the unit economics the operators actually paid. Alec Glover ran '
+                              'a thousand GPUs in a warehouse for almost three years at about $25,000 a '
+                              'month, and estimates a typical Tier III facility would have run three to '
+                              'five times that, a gap they say saved millions [TZp1yBea0o4 @ 00:00:00]. '
+                              'The math behind it: colocation has a hard time pricing below $150 per '
+                              'kilowatt per month, and Glover argues it has only gotten more expensive, '
+                              'while every DIY model they ran came in at $50 per kilowatt per month or '
+                              'less, because power that was not used was not paid for [TZp1yBea0o4 @ '
+                              '00:01:49]. On top of power, IPTP Networks says connectivity is where colo '
+                              'quotes diverge most: every link to another provider or partner needs its '
+                              'own cross-connect, carrying an installation fee of typically $500 to $1,500 '
+                              'plus a monthly charge of around $100 to $300, so four cross-connects mean '
+                              '$2,000 to $6,000 upfront alone [3EnjHW-36GI @ 00:02:34]. The last recurring '
+                              'line is remote hands, the facility engineers doing reboots, drive swaps, '
+                              'and cable checks on your behalf, typically billed at $150 to $350 an hour '
+                              'with a one-hour minimum [3EnjHW-36GI @ 00:02:56]. Budget every one of these '
+                              'lines before comparing any warehouse lease.',
+                              'For small footprints, the street move is to stop buying retail space and '
+                              'share a rack. Techno Tim called several data centers before colocating a '
+                              'homelab: one quoted half a cabinet, 24U, with 50 Mbps burstable to a '
+                              'gigabit, two switch ports, and 16 IPs for $900 a month plus a $4,500 '
+                              'one-time fee, and another offered 4U with 50 Mbps burst to 1 gigabit and '
+                              'one public IP for about $350 a month [zbkqRPIUYAo @ 00:00:50]. The workable '
+                              'option came from Will, who runs Plover Digital and rented a whole rack with '
+                              'friends to split the cost, which kept dropping as more people joined; Tim '
+                              'recommends that route outright [zbkqRPIUYAo @ 00:01:29]. IPTP Networks '
+                              'explains the structure behind it: top-tier facilities rarely sell less than '
+                              'a full rack, so 1U and partial cabinets typically come through a reseller '
+                              'or managed hosting provider rather than the data center itself [3EnjHW-36GI '
+                              '@ 00:00:56]. Some operators do slice inventory directly: Deft, on the '
+                              'Lawrence Systems tour, offers half cabinets and quarter-cabinet '
+                              'compartments to put two customers in the same physical space, secured with '
+                              'customer-changeable combination locks and optional fingerprint or card '
+                              'readers at the cabinet level [gsN_CJJDy_o @ 00:21:37]. The more tenants on '
+                              'the rack, the lower each share, which is the whole play.',
+                              'Network plumbing is where operators cut the most cost with config rather '
+                              'than cash. Alec Glover first NATed public IPs to private addresses on '
+                              "machines, then switched to assigning public IPs directly on each server's "
+                              'interface, which made wiping a box, re-IPing it, and handing it to the next '
+                              'customer fast [TZp1yBea0o4 @ 00:06:26]. When a building cannot get BGP, '
+                              'Null0 Labs builds a plain GRE tunnel from the basement router to a router '
+                              "racked in a provider's data center, skipping IPSec because the tunnel only "
+                              'carries public transit, then splits the lent /24 into a /25 for the DC LAN '
+                              'and a /30 for the tunnel interfaces [Pr9psxw4Z_o @ 00:17:32]. The session '
+                              'starts on private ASN 64592; the upstream, running public AS900, strips the '
+                              'private ASN, sends only a default route, and filters inbound to the lent '
+                              '/24, so nobody on the internet sees the private ASN [Pr9psxw4Z_o @ '
+                              "00:31:22]. Owning your own ASN is not stifling: Jeremy Cioara shows ARIN's "
+                              'autonomous system number at a $550 initial fee and $150 a year to maintain, '
+                              'while IPv4 blocks now come from a carrier, not ARIN, with authorization to '
+                              'advertise them over BGP [5WW8432TcR4 @ 00:03:15]. Underlay ISPs then become '
+                              'interchangeable plumbing.'],
+               'table': {'caption': 'Street Numbers for Colo, Warehouse, and Network Plumbing',
+                         'headers': ['Line Item or Mechanic',
+                                     'Exact Figure or Setting',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Colocation power pricing floor',
+                                   '$150 per kW per month minimum, and reportedly only getting more '
+                                   'expensive',
+                                   'Benchmark every colo quote against the DIY model of $50 per kW',
+                                   'Alec Glover ([TZp1yBea0o4 @ 00:01:49])'],
+                                  ['Cross-connect installation and recurring cost',
+                                   '$500 to $1,500 install plus $100 to $300 monthly for each link',
+                                   'Four cross-connects mean $2,000 to $6,000 upfront before any recurring '
+                                   'charges',
+                                   'IPTP Networks ([3EnjHW-36GI @ 00:02:34])'],
+                                  ['Remote hands hourly billing',
+                                   '$150 to $350 per hour, usually with a one-hour minimum charge',
+                                   'Covers facility engineers doing reboots, drive swaps, and cable checks '
+                                   'for you',
+                                   'IPTP Networks ([3EnjHW-36GI @ 00:02:56])'],
+                                  ['Facility PUE baked into rate',
+                                   'Modern Tier III and IV run 1.2 to 1.4, older buildings 1.8 to 2.2',
+                                   'Not a separate line item; it is reflected in the rate you pay',
+                                   'IPTP Networks ([3EnjHW-36GI @ 00:01:36])'],
+                                  ['Cooling load sizing for compute',
+                                   'Air conditioning uses roughly 30 to 40 percent of data center power',
+                                   'Plan 30 to 40 kW of cooling for every 100 kW of compute',
+                                   'Alec Glover ([TZp1yBea0o4 @ 00:10:00])'],
+                                  ['Cooling ton to kilowatt conversion',
+                                   'One ton is 12,000 BTU, calculated at 11,000 for headroom, roughly 4 kW',
+                                   'A single 5 ton perforated floor tile delivers about 20 kW of cooling',
+                                   'Lawrence Systems ([gsN_CJJDy_o @ 00:18:11])'],
+                                  ['ARIN autonomous system number fees',
+                                   '$550 initial fee then $150 annual maintenance fee every year',
+                                   'Register an ASN before announcing your own blocks through a transit '
+                                   'provider',
+                                   'Jeremy Cioara ([5WW8432TcR4 @ 00:03:15])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Field-Tested Shortcuts From the Cage and the Warehouse',
+                           'body': 'Small operational habits decide whether a remote rack is cheap to run '
+                                   'or bleeds remote-hands hours and emergency drives across town.',
+                           'items': ['Standardize identical servers and document serial numbers and disk '
+                                     'positions so you can order parts before the drive to the facility '
+                                     '[Techno Tim — zbkqRPIUYAo @ 00:02:20]',
+                                     'Lean on the colo parts room: Deft stocks common drive sizes because '
+                                     'an 800 GB versus 960 GB mismatch can ruin your day, plus DAC cables '
+                                     'and spare PDUs, with staff on site 24x7 to rack gear [Lawrence '
+                                     'Systems — gsN_CJJDy_o @ 00:24:30]',
+                                     'Buy a PDU chassis whose behavior is set by a multi-pin cable, so one '
+                                     'unit runs as a 20 amp 208 volt 3 kW PDU or a 17 kW monster by '
+                                     'swapping only the cable [Lawrence Systems — gsN_CJJDy_o @ 00:27:05]',
+                                     'Use switched intelligent rack PDUs to power cycle a locked server '
+                                     'remotely and track temperature and humidity exactly where GPUs draw '
+                                     'intake air [Cakka | Cybersecurity — psGPevLhvpI @ 00:04:47]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock a BGP-capable underlay',
+                              'action': 'Secure dedicated internet plans at the building with a primary '
+                                        'and a backup link.',
+                              'detail': 'Step one is finding a provider that offers BGP and dedicated '
+                                        'internet at the bandwidth you need; Glover ran a 10 Gbit primary '
+                                        'backed by a 1 Gbit link and carried about 100 servers on 10 gig '
+                                        '[Alec Glover — TZp1yBea0o4 @ 00:05:52]'},
+                             {'step': 2,
+                              'title': 'Build the GRE tunnel to a transit-rich rack',
+                              'action': 'Remove the default route, pin a static host route to the remote '
+                                        'tunnel endpoint via the ISP, and bring up the tunnel.',
+                              'detail': 'Delete the default route, add a static route to the remote '
+                                        "router's public IP out of the ISP interface, then set tunnel "
+                                        'source G1, the remote destination, and path MTU discovery; no '
+                                        'IPSec is needed for public transit [Null0 Labs — Pr9psxw4Z_o @ '
+                                        '00:14:32]'},
+                             {'step': 3,
+                              'title': 'Peer on a private ASN with a pull-up route',
+                              'action': 'Run iBGP over the tunnel on a private ASN and nail the announced '
+                                        'block to Null0.',
+                              'detail': 'Configure router BGP 64592 with update-source tunnel 0, announce '
+                                        'the /24, and add a static pull-up route to null 0 so the prefix '
+                                        'appears in the BGP table; set next-hop-self toward the basement '
+                                        'router [Null0 Labs — Pr9psxw4Z_o @ 00:26:29]'},
+                             {'step': 4,
+                              'title': 'Cut over to a public ASN and your own block',
+                              'action': 'Re-peer with the upstream on your public ASN and have them update '
+                                        'prefix filters.',
+                              'detail': 'After verifying block ownership with the upstream, the transit '
+                                        'provider adds your new /22 to their inbound prefix list and '
+                                        'outbound route map so it is announced to the internet instead of '
+                                        'being filtered [Null0 Labs — Pr9psxw4Z_o @ 00:53:01]'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Alec Glover and the colocation sellers split hardest on who should own the '
+                              'building. Glover ran a thousand GPUs in a warehouse for almost three years '
+                              'at $25,000 a month and says a typical tier three data center would have '
+                              'cost three to five times as much [TZp1yBea0o4 @ 00:00:00]. His math: colos '
+                              'bill the full provisioned circuit, so a GPU server on a 6 kW circuit pays '
+                              'for all 6 kW whether it runs at 20% or 30%, and he says nobody will quote '
+                              'under $150 per kilowatt per month, while his own models landed at $50 or '
+                              'less because idle power was not billed [TZp1yBea0o4 @ 00:01:30]. IPTP '
+                              'Networks frames the same lever as a contract choice rather than a reason to '
+                              'leave: power can be a flat reserved allocation or metered on actual '
+                              'consumption, redundant power adds roughly 15 to 20%, and a GPU server draws '
+                              '5 to 15 kW against under half a kilowatt for a standard box [3EnjHW-36GI @ '
+                              '00:01:17]. Colovore argues the opposite fix, density: a legacy colo capping '
+                              'Don at 4 kW per rack forces ten racks, while Marty in a 20 kW-per-rack hall '
+                              'consolidates into four cabinets and grows vertically instead of buying more '
+                              'floor space [JMz8luHLVxc @ 00:00:20].',
+                              'How much redundancy to buy is the second fault line. Glover argues the '
+                              'engineering in tier-rated buildings serves a valid purpose, but good enough '
+                              'is good enough and the savings from skipping functions can outweigh the '
+                              'drawbacks, then admits his own crew took it too far [TZp1yBea0o4 @ '
+                              '00:00:27]. Gareth Knight pitches tier three as the sweet spot: N+1 on every '
+                              'critical component, concurrent maintainability, and 99.982% uptime, which '
+                              'he translates to less than 1.6 hours of downtime per year at reasonable '
+                              'cost compared with tier four [mNQb5B_voNw @ 00:03:51]. PCweb pushes the '
+                              'floor lower for small players, saying not every company needs tier four and '
+                              'that startups or small businesses can live with tier one or two, while '
+                              'enterprises where every second counts are stuck with three or four '
+                              '[0acbHqkQe80 @ 00:01:26]. Data Center News throws cold water on paying for '
+                              'the certificate alone: simply building a tier four facility does not '
+                              'guarantee tier four uptime, and without comprehensive monitoring even a '
+                              'tier four hall can go down unexpectedly, like a car with no dashboard '
+                              '[8DzqbL0HKG0 @ 00:02:53]. The split is plain: Glover buys redundancy only '
+                              'where customers feel it, the tier camp buys it as insurance, and the '
+                              'monitoring camp says the label is worthless without live telemetry.',
+                              'On getting public IPs and routing into a GPU room, four playbooks compete. '
+                              'Glover went direct: buy dedicated internet plans that let you run your own '
+                              'BGP router, a 10 Gbit link backed by a 1 Gbit link, roughly 100 servers on '
+                              'the 10 gig, and his own public IPs that he eventually bound directly to '
+                              'server interfaces instead of NATing, so boxes could be wiped and re-handed '
+                              'to new customers [TZp1yBea0o4 @ 00:05:05]. Null0 Labs argues you do not '
+                              'need BGP at the building at all: run a plain GRE tunnel over a commodity '
+                              "ISP to a router in someone else's rack with real transit, peer with a "
+                              'private ASN that the upstream strips, and skip IPSec because the traffic is '
+                              'public anyway [Pr9psxw4Z_o @ 00:02:11]. Jeremy Cioara warns IPv4 no longer '
+                              'comes from ARIN, only from a carrier who authorizes you to advertise it, '
+                              'while an ASN runs $550 up front and $150 a year in maintenance [5WW8432TcR4 '
+                              '@ 00:03:15]. FEPLabs Radio shows the lightest option for ham operators '
+                              'stuck behind CGNAT on Starlink or a Verizon hotspot: a WireGuard tunnel to '
+                              '44Net that lands a public 44.x address with no port forwards [ou57Rm_y3fs @ '
+                              '00:08:04].'],
+               'table': {'caption': 'Competing playbooks for GPU colocation, power, cooling, and routing',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Own the facility or rent colocation space',
+                                   'DIY warehouse modeled at $50 per kW per month or less, paying only for '
+                                   'power actually drawn',
+                                   'Tier-rated colo billed on the full provisioned circuit, flat or '
+                                   'metered, rarely under $150 per kW per month',
+                                   'Alec Glover ([TZp1yBea0o4 @ 00:01:30]); IPTP Networks ([3EnjHW-36GI @ '
+                                   '00:01:17])'],
+                                  ['Rack density ceiling when hardware refreshes',
+                                   'Legacy colo capping draw at 4 kW per rack forces horizontal sprawl to '
+                                   'twenty cabinets',
+                                   'High-density hall at 20 kW per rack lets growth fill existing cabinets '
+                                   'vertically',
+                                   'Colovore LLC ([JMz8luHLVxc @ 00:01:15])'],
+                                  ['Small-footprint entry into a real data center',
+                                   'Split a full rack among friends so every added tenant lowers '
+                                   "everyone's monthly cost",
+                                   'Buy half or quarter cabinets with combination, card, or fingerprint '
+                                   'locks from the operator',
+                                   'Techno Tim ([zbkqRPIUYAo @ 00:01:29]); Lawrence Systems ([gsN_CJJDy_o '
+                                   '@ 00:21:37])'],
+                                  ['Cooling strategy and power overhead',
+                                   'Filtered outdoor free-air cooling instead of AC that eats 30 to 40% of '
+                                   'facility power',
+                                   'Chilled-water plant with million-gallon tanks chilled at night to cut '
+                                   'expensive daytime peak load',
+                                   'Alec Glover ([TZp1yBea0o4 @ 00:10:00]); Lawrence Systems ([gsN_CJJDy_o '
+                                   '@ 00:10:02])'],
+                                  ['Delivering power to AI-density racks',
+                                   'Overhead busway with hot-swappable tap-off boxes feeding 120 kW racks '
+                                   'without de-energizing the row',
+                                   'Sidecar power rack converting AC to 800 V HVDC, roughly 1.1 MW with '
+                                   '5+1 redundancy',
+                                   'Cakka | Cybersecurity ([psGPevLhvpI @ 00:02:28]); Open Compute Project '
+                                   '([OXIIIfjjDgU @ 00:03:13])'],
+                                  ['Upstream routing and public address space',
+                                   'Dedicated internet plans at the building so you run your own BGP '
+                                   'router',
+                                   'GRE tunnel over a commodity ISP to a remote router with transit, '
+                                   'private ASN stripped upstream',
+                                   'Alec Glover ([TZp1yBea0o4 @ 00:05:52]); Null0 Labs ([Pr9psxw4Z_o @ '
+                                   '00:07:09])'],
+                                  ['Remote access link between home and rack',
+                                   'Hardware site-to-site VPN from the home router straight into the colo '
+                                   'rack',
+                                   'Software WireGuard tunnel to 44Net that bypasses CGNAT with zero port '
+                                   'forwards',
+                                   'Techno Tim ([zbkqRPIUYAo @ 00:06:36]); FEPLabs Radio ([ou57Rm_y3fs @ '
+                                   '00:08:04])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The loudest firsthand failure comes from Glover, who says the warehouse '
+                              'model was right but his execution was wrong: they cut so deep that scaling '
+                              'and growing the business became very difficult, and the build set the '
+                              'business back even while saving money [TZp1yBea0o4 @ 00:00:43]. A second '
+                              'utility feed from another substation was never an option because only one '
+                              'utility company served the area, so the failover layer big colos rely on '
+                              'simply did not exist [TZp1yBea0o4 @ 00:14:42]. Without generators, the only '
+                              'answer to customers during an outage is that power returns when the utility '
+                              'turns it back on, and cloud buyers already assume you sit in a real data '
+                              "center with backup power [TZp1yBea0o4 @ 00:13:34]. Lawrence Systems' Deft "
+                              'tour shows backup power failing even when you own it: generators run 500 kW '
+                              'to 3 MW each and must reach speed in about 16 seconds, but if the first '
+                              'unit latches onto the paralleling bus with a bad sine wave, the others '
+                              'refuse to sync and a site can end up with one of seven generators trying to '
+                              'carry the load [gsN_CJJDy_o @ 00:07:08].',
+                              'Environmental shortcuts kill hardware quietly. Glover warns that running '
+                              'stock air conditioners strips moisture, and if humidity lands near 5% you '
+                              'risk a static shock that destroys a ton of hardware, so non-data-center '
+                              'units need bolt-on humidifiers and dehumidifiers [TZp1yBea0o4 @ 00:09:43]. '
+                              'His sharper warning is on free cooling: hardware coming out of old '
+                              'crypto-mining sites is absolutely destroyed after three years from wet, '
+                              'dirty air, with corrosion and salt buildup, so accelerated depreciation and '
+                              'lost resale value can outrun what skipping air conditioning saved '
+                              '[TZp1yBea0o4 @ 00:10:48]. Cakka | Cybersecurity flags the electrical '
+                              'version of the same trap at GPU densities: a 120 kW rack at 480 V '
+                              'three-phase pulls 152 amps per phase versus 38 for a 30 kW rack, cable '
+                              'bundles choke trays and airflow, and a rack loading one phase heavily '
+                              'creates harmonic distortion and dangerous overheating at the upstream '
+                              'transformer [psGPevLhvpI @ 00:05:22]. Colovore shows the slow-motion '
+                              'version: Don, capped at 4 kW per rack, refreshes into power-hungry blade '
+                              'servers, fits even fewer per cabinet, and sprawls from ten to twenty '
+                              'cabinets that now all need managing [JMz8luHLVxc @ 00:01:15].',
+                              'The recurring bill is where colo budgets leak. IPTP Networks puts every '
+                              'cross-connect at a $500 to $1,500 install plus $100 to $300 a month, so '
+                              'four cross-connects mean $2,000 to $6,000 upfront, and remote hands for '
+                              'reboots, drive swaps, and cable checks runs $150 to $350 an hour, usually '
+                              "with a one-hour minimum [3EnjHW-36GI @ 00:02:34]. Lawrence Systems' tour "
+                              'shows why on-site spares matter: crews drive two or three hours, discover '
+                              'the DAC cable or rack kit never shipped with a $40,000 storage array, and '
+                              'an 800 GB versus 960 GB SSD mismatch decides whether you have a good day or '
+                              "a bad one [gsN_CJJDy_o @ 00:24:01]. Techno Tim's countermeasure is to "
+                              "standardize every server's components and document serial numbers and disk "
+                              'positions so parts can be ordered before the drive downtown [zbkqRPIUYAo @ '
+                              '00:02:20]. Beam Networks reports a software-side trap in a six-server colo '
+                              'rack: the Ceph cluster on shared 10 gig is extremely slow, adding disks '
+                              'slows the whole cluster for a while, RAM is at capacity, and storage sits '
+                              'at 66% with a warning, so Ceph is slated to be ripped out [4NmQ_0-0BC8 @ '
+                              '00:04:21].'],
+               'table': {'caption': 'Firsthand failure modes and the economics behind them',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Saw',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Paying for provisioned power you never draw',
+                                   'A GPU server pays for the full 6 kW circuit even at 20% to 30% '
+                                   'utilization',
+                                   'Colo rarely quotes under $150 per kW per month versus a $50 DIY model',
+                                   'Alec Glover ([TZp1yBea0o4 @ 00:01:30])'],
+                                  ['Dirty, wet free-air cooling',
+                                   'Ex-mining hardware absolutely destroyed after three years by corrosion '
+                                   'and salt buildup',
+                                   'Accelerated depreciation can exceed savings from skipping AC that eats '
+                                   '30 to 40% of power',
+                                   'Alec Glover ([TZp1yBea0o4 @ 00:10:48])'],
+                                  ['Fire suppression in an unsealed warehouse',
+                                   'Gas and CO2 flooding systems need an airtight room a warehouse cannot '
+                                   'provide',
+                                   'Expect water sprinklers and extinguishers just to secure building '
+                                   'occupancy',
+                                   'Alec Glover ([TZp1yBea0o4 @ 00:15:39])'],
+                                  ['Generators out of phase on the paralleling bus',
+                                   'First generator with a bad sine wave blocks the others from latching '
+                                   'on',
+                                   'A site can run on one of seven generators, far short of critical load',
+                                   'Lawrence Systems ([gsN_CJJDy_o @ 00:07:08])'],
+                                  ['Cross-connect creep across partners and carriers',
+                                   'Every connection to another provider or partner requires its own '
+                                   'cross-connect',
+                                   'Four cross-connects cost $2,000 to $6,000 upfront plus $100 to $300 '
+                                   'monthly each',
+                                   'IPTP Networks ([3EnjHW-36GI @ 00:02:34])'],
+                                  ['Upgrading buried PDUs on live racks',
+                                   'Growing power needs means a stressful two-person live swap of PDUs, '
+                                   'done twice',
+                                   'Eaton universal PDU swaps only the cable, scaling from about 3 kW to '
+                                   '17 kW',
+                                   'Lawrence Systems ([gsN_CJJDy_o @ 00:28:16])'],
+                                  ['Phase imbalance at AI rack density',
+                                   'A 120 kW rack drawing heavily on one phase creates harmonic distortion',
+                                   'Overheats the upstream transformer; 152 amps per phase at 480 V forces '
+                                   'busway delivery',
+                                   'Cakka | Cybersecurity ([psGPevLhvpI @ 00:05:22])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before You Sign a Colo Quote or Light Up a Warehouse',
+                           'body': 'Every item below is a loss, near-miss, or hidden bill a practitioner '
+                                   'hit firsthand. Clear all four before committing GPUs to a room.',
+                           'items': ['Price power both ways, provisioned versus metered, and refuse to pay '
+                                     'monthly for a full 6 kW circuit your GPUs only use at 20% to 30% '
+                                     '[Alec Glover — TZp1yBea0o4 @ 00:01:30].',
+                                     'Read humidity the day you fire up non-data-center air conditioning; '
+                                     'at 5% you risk a static shock that destroys a ton of hardware [Alec '
+                                     'Glover — TZp1yBea0o4 @ 00:09:43].',
+                                     'Count cross-connects into the quote before signing: four of them '
+                                     'alone run $2,000 to $6,000 upfront before monthly charges [IPTP '
+                                     'Networks — 3EnjHW-36GI @ 00:02:34].',
+                                     'Balance every high-density rack across all three phases before '
+                                     'loading it, because one-phase draw overheats the upstream '
+                                     'transformer [Cakka | Cybersecurity — psGPevLhvpI @ 00:05:22].']}}],
+ 'pull_quote': 'I ran a thousand GPUs in a warehouse for almost three years straight, and it only cost me '
+               '$25,000 a month. Doing this in a typical tier three data center would cost you almost 3 to '
+               'five times as much money. — Alec Glover (TZp1yBea0o4 @ 00:00:00)',
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ['Call several facilities for quotes and compare rack space, bandwidth, IPs, and '
+                      'one-time fees line by line before committing to a shared or full rack (Techno Tim, '
+                      'zbkqRPIUYAo @ 00:00:50).',
+                      'Ask every provider the same set of questions across all six cost areas so quotes '
+                      'become directly comparable (IPTP Networks, 3EnjHW-36GI @ 00:03:17).',
+                      'Wire three-phase power from the start and put UPS between the transformer and the '
+                      'rack PDUs before calling a warehouse a data center (Alec Glover, TZp1yBea0o4 @ '
+                      '00:03:21).',
+                      'Size air conditioning with many smaller units at N+1 or better so any single '
+                      'failure still leaves cooling running in every zone (Alec Glover, TZp1yBea0o4 @ '
+                      '00:08:24).',
+                      'If the building ISP will not offer BGP, run a GRE tunnel to your own router in a '
+                      'transit-rich rack elsewhere and peer from there (Null0 Labs, Pr9psxw4Z_o @ '
+                      '01:02:09).',
+                      'Open an ARIN account and point of contact now, and budget $550 for the initial ASN '
+                      'plus $150 a year in maintenance (Jeremy Cioara, 5WW8432TcR4 @ 00:03:15).'],
+ 'statutory_citations': [{'title': 'Alec Glover — How to Build a Warehouse GPU Data Center: A Practical '
+                                   'Guide [00:01:30]',
+                          'url': 'https://www.youtube.com/watch?v=TZp1yBea0o4&t=90s',
+                          'relevance': 'Primary practitioner testimony on provisioned-power colo billing '
+                                       'versus DIY warehouse economics for a thousand-GPU operation.'},
+                         {'title': 'IPTP Networks — Colocation Pricing Explained: Space, Power, '
+                                   'Cross-Connects [00:02:34]',
+                          'url': 'https://www.youtube.com/watch?v=3EnjHW-36GI&t=154s',
+                          'relevance': 'Primary practitioner testimony on cross-connect installation and '
+                                       'monthly fees and remote-hands hourly rates.'},
+                         {'title': 'Lawrence Systems — Inside a 36 Megawatt Data Center: The Power, '
+                                   'Cooling and Fiber [00:07:08]',
+                          'url': 'https://www.youtube.com/watch?v=gsN_CJJDy_o&t=428s',
+                          'relevance': 'Primary practitioner testimony on generator paralleling failures, '
+                                       'redundancy, and on-site spares in a production colo.'},
+                         {'title': 'Null0 Labs — How to Peer with BGP Over the Internet Using GRE Tunnels '
+                                   '| No ASN? No Problem! [00:07:09]',
+                          'url': 'https://www.youtube.com/watch?v=Pr9psxw4Z_o&t=429s',
+                          'relevance': 'Primary practitioner testimony on tunneling BGP from a basement '
+                                       'data center to a remote transit router with a private ASN.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '3EnjHW-36GI',
+                       'title': 'Colocation Pricing Explained: Space, Power, Cross-Connects',
+                       'channel': 'IPTP Networks',
+                       'author': 'IPTP Networks',
+                       'text': 'An installation fee, typically $500 to $1,500, followed by a monthly '
+                               'recurring charge of around $100 to $300. Four cross-connects can therefore '
+                               'mean $2,000 to $6,000 in upfront cost alone.',
+                       'tip': 'An installation fee, typically $500 to $1,500, followed by a monthly '
+                              'recurring charge of around $100 to $300. Four cross-connects can therefore '
+                              'mean $2,000 to $6,000 in upfront cost alone.',
+                       'timestamp': 154,
+                       'timestamp_seconds': 154,
+                       'timestamp_label': '[00:02:34]',
+                       'url': 'https://www.youtube.com/watch?v=3EnjHW-36GI&t=154s',
+                       'markdown': '[00:02:34](https://www.youtube.com/watch?v=3EnjHW-36GI&t=154s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TZp1yBea0o4',
+                       'title': 'How to Build a Warehouse GPU Data Center: A Practical Guide',
+                       'channel': 'Alec Glover',
+                       'author': 'Alec Glover',
+                       'text': 'The way the collocation business model works is they actually bill you '
+                               'based on the amount of power provisioned, so for a GPU server that needs a '
+                               'full 6 kW circuit, you need to pay them monthly for that whole 6 kW '
+                               'circuit.',
+                       'tip': 'The way the collocation business model works is they actually bill you '
+                              'based on the amount of power provisioned, so for a GPU server that needs a '
+                              'full 6 kW circuit, you need to pay them monthly for that whole 6 kW '
+                              'circuit.',
+                       'timestamp': 90,
+                       'timestamp_seconds': 90,
+                       'timestamp_label': '[00:01:30]',
+                       'url': 'https://www.youtube.com/watch?v=TZp1yBea0o4&t=90s',
+                       'markdown': '[00:01:30](https://www.youtube.com/watch?v=TZp1yBea0o4&t=90s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TZp1yBea0o4',
+                       'title': 'How to Build a Warehouse GPU Data Center: A Practical Guide',
+                       'channel': 'Alec Glover',
+                       'author': 'Alec Glover',
+                       'text': "You'll see some computer hardware that comes out of these old cryptomining "
+                               "facilities that are doing this and it's just absolutely destroyed after 3 "
+                               "years because they're sucking wet, dirty air onto it and it's causing "
+                               'corrosion.',
+                       'tip': "You'll see some computer hardware that comes out of these old cryptomining "
+                              "facilities that are doing this and it's just absolutely destroyed after 3 "
+                              "years because they're sucking wet, dirty air onto it and it's causing "
+                              'corrosion.',
+                       'timestamp': 648,
+                       'timestamp_seconds': 648,
+                       'timestamp_label': '[00:10:48]',
+                       'url': 'https://www.youtube.com/watch?v=TZp1yBea0o4&t=648s',
+                       'markdown': '[00:10:48](https://www.youtube.com/watch?v=TZp1yBea0o4&t=648s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zbkqRPIUYAo',
+                       'title': 'I Colocated My HomeLab in a Data Center',
+                       'channel': 'Techno Tim',
+                       'author': 'Techno Tim',
+                       'text': 'Will runs a small company called Plover Digital, and he and his friends '
+                               'decided to rent out a rack and then split the cost, and the more people '
+                               'they added to the space, the cheaper it was for all of them.',
+                       'tip': 'Will runs a small company called Plover Digital, and he and his friends '
+                              'decided to rent out a rack and then split the cost, and the more people '
+                              'they added to the space, the cheaper it was for all of them.',
+                       'timestamp': 89,
+                       'timestamp_seconds': 89,
+                       'timestamp_label': '[00:01:29]',
+                       'url': 'https://www.youtube.com/watch?v=zbkqRPIUYAo&t=89s',
+                       'markdown': '[00:01:29](https://www.youtube.com/watch?v=zbkqRPIUYAo&t=89s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gsN_CJJDy_o',
+                       'title': 'Inside a 36 Megawatt Data Center: The Power, Cooling and Fiber',
+                       'channel': 'Lawrence Systems',
+                       'author': 'Lawrence Systems',
+                       'text': 'If that first generator attaches to a bus or a paralleling piece of '
+                               'equipment and has a bad wave form for the sine wave then it can possibly '
+                               'set the standard, and when the second generator latches on it says hey I '
+                               "can't match that standard.",
+                       'tip': 'If that first generator attaches to a bus or a paralleling piece of '
+                              'equipment and has a bad wave form for the sine wave then it can possibly '
+                              'set the standard, and when the second generator latches on it says hey I '
+                              "can't match that standard.",
+                       'timestamp': 428,
+                       'timestamp_seconds': 428,
+                       'timestamp_label': '[00:07:08]',
+                       'url': 'https://www.youtube.com/watch?v=gsN_CJJDy_o&t=428s',
+                       'markdown': '[00:07:08](https://www.youtube.com/watch?v=gsN_CJJDy_o&t=428s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gsN_CJJDy_o',
+                       'title': 'Inside a 36 Megawatt Data Center: The Power, Cooling and Fiber',
+                       'channel': 'Lawrence Systems',
+                       'author': 'Lawrence Systems',
+                       'text': "You just spent $40,000 on this new storage array and it's great, oh and "
+                               "they didn't include the cables or the rack mounting kit.",
+                       'tip': "You just spent $40,000 on this new storage array and it's great, oh and "
+                              "they didn't include the cables or the rack mounting kit.",
+                       'timestamp': 1441,
+                       'timestamp_seconds': 1441,
+                       'timestamp_label': '[00:24:01]',
+                       'url': 'https://www.youtube.com/watch?v=gsN_CJJDy_o&t=1441s',
+                       'markdown': '[00:24:01](https://www.youtube.com/watch?v=gsN_CJJDy_o&t=1441s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'orsNmJSDpws',
+                       'title': 'The 4 Types of Data Centers Explained | Enterprise, Colocation, '
+                                'Hyperscale & Edge',
+                       'channel': 'MegaWatt Path',
+                       'author': 'MegaWatt Path',
+                       'text': 'Here, instead of building your own, you rent space from a third party, but '
+                               'you bring your own hardware. Think of it as leasing an apartment for your '
+                               'servers.',
+                       'tip': 'Here, instead of building your own, you rent space from a third party, but '
+                              'you bring your own hardware. Think of it as leasing an apartment for your '
+                              'servers.',
+                       'timestamp': 50,
+                       'timestamp_seconds': 50,
+                       'timestamp_label': '[00:00:50]',
+                       'url': 'https://www.youtube.com/watch?v=orsNmJSDpws&t=50s',
+                       'markdown': '[00:00:50](https://www.youtube.com/watch?v=orsNmJSDpws&t=50s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4NmQ_0-0BC8',
+                       'title': 'Why I Colocate 6 Servers (Data Center Walkthrough)',
+                       'channel': 'Beam Networks',
+                       'author': 'Beam Networks',
+                       'text': 'The thing is this storage cluster is extremely slow, I absolutely hate it, '
+                               "I'm going to be redoing the storage cluster very soon.",
+                       'tip': 'The thing is this storage cluster is extremely slow, I absolutely hate it, '
+                              "I'm going to be redoing the storage cluster very soon.",
+                       'timestamp': 228,
+                       'timestamp_seconds': 228,
+                       'timestamp_label': '[00:03:48]',
+                       'url': 'https://www.youtube.com/watch?v=4NmQ_0-0BC8&t=228s',
+                       'markdown': '[00:03:48](https://www.youtube.com/watch?v=4NmQ_0-0BC8&t=228s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JMz8luHLVxc',
+                       'title': 'Colovore - Modern Servers Require High Density Colocation',
+                       'channel': 'Colovore LLC',
+                       'author': 'Colovore LLC',
+                       'text': 'Marty knows that by using a high density co-location facility he can place '
+                               'a lot more servers in each cabinet; his colo can deliver 20 kilowatts per '
+                               'rack.',
+                       'tip': 'Marty knows that by using a high density co-location facility he can place '
+                              'a lot more servers in each cabinet; his colo can deliver 20 kilowatts per '
+                              'rack.',
+                       'timestamp': 20,
+                       'timestamp_seconds': 20,
+                       'timestamp_label': '[00:00:20]',
+                       'url': 'https://www.youtube.com/watch?v=JMz8luHLVxc&t=20s',
+                       'markdown': '[00:00:20](https://www.youtube.com/watch?v=JMz8luHLVxc&t=20s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'psGPevLhvpI',
+                       'title': 'How AI Data Centers Power GPUs | Busways, RPPs & Rack PDUs Explained | '
+                                'Day 18',
+                       'channel': 'Cakka | Cybersecurity',
+                       'author': 'Cakka | Cybersecurity',
+                       'text': 'At 480 V three-phase, a standard 30 kW rack draws a manageable 38 amps per '
+                               'phase. But when you scale a rack up to 120 kW, that current jumps to 152 '
+                               'amps per phase.',
+                       'tip': 'At 480 V three-phase, a standard 30 kW rack draws a manageable 38 amps per '
+                              'phase. But when you scale a rack up to 120 kW, that current jumps to 152 '
+                              'amps per phase.',
+                       'timestamp': 38,
+                       'timestamp_seconds': 38,
+                       'timestamp_label': '[00:00:38]',
+                       'url': 'https://www.youtube.com/watch?v=psGPevLhvpI&t=38s',
+                       'markdown': '[00:00:38](https://www.youtube.com/watch?v=psGPevLhvpI&t=38s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OXIIIfjjDgU',
+                       'title': 'LITEON 1MW Power Rack Solution for AI Data Center presented by LITEON',
+                       'channel': 'Open Compute Project',
+                       'author': 'Open Compute Project',
+                       'text': 'Total the power will be over like 1.3 MW, and if we consider with the 5 + '
+                               '1 redundancy, then the power could have been up to 1.1 MW.',
+                       'tip': 'Total the power will be over like 1.3 MW, and if we consider with the 5 + 1 '
+                              'redundancy, then the power could have been up to 1.1 MW.',
+                       'timestamp': 193,
+                       'timestamp_seconds': 193,
+                       'timestamp_label': '[00:03:13]',
+                       'url': 'https://www.youtube.com/watch?v=OXIIIfjjDgU&t=193s',
+                       'markdown': '[00:03:13](https://www.youtube.com/watch?v=OXIIIfjjDgU&t=193s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ou57Rm_y3fs',
+                       'title': 'Port Forwarding, No Tears: 44Net Connect on ASL3',
+                       'channel': 'FEPLabs Radio',
+                       'author': 'FEPLabs Radio',
+                       'text': "Because it's going through this private virtual private network tunnel, "
+                               "you don't have to do any port forwards, and it doesn't matter if you're on "
+                               'CGNAT.',
+                       'tip': "Because it's going through this private virtual private network tunnel, you "
+                              "don't have to do any port forwards, and it doesn't matter if you're on "
+                              'CGNAT.',
+                       'timestamp': 484,
+                       'timestamp_seconds': 484,
+                       'timestamp_label': '[00:08:04]',
+                       'url': 'https://www.youtube.com/watch?v=ou57Rm_y3fs&t=484s',
+                       'markdown': '[00:08:04](https://www.youtube.com/watch?v=ou57Rm_y3fs&t=484s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5WW8432TcR4',
+                       'title': 'ARIN: Purpose and Registration! Ep.4: Understanding BGP - Keeping IT '
+                                'Simple',
+                       'channel': 'Jeremy Cioara',
+                       'author': 'Jeremy Cioara',
+                       'text': "You'll see the initial approval or the initial fee is going to be 550, "
+                               'then annual maintenance fees are going to be 150 a year.',
+                       'tip': "You'll see the initial approval or the initial fee is going to be 550, then "
+                              'annual maintenance fees are going to be 150 a year.',
+                       'timestamp': 195,
+                       'timestamp_seconds': 195,
+                       'timestamp_label': '[00:03:15]',
+                       'url': 'https://www.youtube.com/watch?v=5WW8432TcR4&t=195s',
+                       'markdown': '[00:03:15](https://www.youtube.com/watch?v=5WW8432TcR4&t=195s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Pr9psxw4Z_o',
+                       'title': 'How to Peer with BGP Over the Internet Using GRE Tunnels | No ASN? No '
+                                'Problem!',
+                       'channel': 'Null0 Labs',
+                       'author': 'Null0 Labs',
+                       'text': 'If this is just to carry public internet traffic and a BGP peering, '
+                               "technically we don't need the overhead of IPSec; we can just do a standard "
+                               'VTI tunnel to create the peering.',
+                       'tip': 'If this is just to carry public internet traffic and a BGP peering, '
+                              "technically we don't need the overhead of IPSec; we can just do a standard "
+                              'VTI tunnel to create the peering.',
+                       'timestamp': 131,
+                       'timestamp_seconds': 131,
+                       'timestamp_label': '[00:02:11]',
+                       'url': 'https://www.youtube.com/watch?v=Pr9psxw4Z_o&t=131s',
+                       'markdown': '[00:02:11](https://www.youtube.com/watch?v=Pr9psxw4Z_o&t=131s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mNQb5B_voNw',
+                       'title': 'Understanding Tier 3 Data Centre Requirements',
+                       'channel': 'Gareth Knight',
+                       'author': 'Gareth Knight',
+                       'text': 'Tier 3 data centers boast an impressive uptime of 99.982%, which '
+                               'translates to less than 1.6 hours of downtime per year.',
+                       'tip': 'Tier 3 data centers boast an impressive uptime of 99.982%, which translates '
+                              'to less than 1.6 hours of downtime per year.',
+                       'timestamp': 231,
+                       'timestamp_seconds': 231,
+                       'timestamp_label': '[00:03:51]',
+                       'url': 'https://www.youtube.com/watch?v=mNQb5B_voNw&t=231s',
+                       'markdown': '[00:03:51](https://www.youtube.com/watch?v=mNQb5B_voNw&t=231s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'O0T9qQ1TuGU',
+                       'title': 'What is a Data Centre? (Tier 1, Tier 2, Tier 3, Tier 4 Explained)',
+                       'channel': 'MEP BOOSTER',
+                       'author': 'MEP BOOSTER',
+                       'text': 'Suppose if the required number of unit is N, then install one extra unit; '
+                               'suppose if you require three units, you need to install four units.',
+                       'tip': 'Suppose if the required number of unit is N, then install one extra unit; '
+                              'suppose if you require three units, you need to install four units.',
+                       'timestamp': 924,
+                       'timestamp_seconds': 924,
+                       'timestamp_label': '[00:15:24]',
+                       'url': 'https://www.youtube.com/watch?v=O0T9qQ1TuGU&t=924s',
+                       'markdown': '[00:15:24](https://www.youtube.com/watch?v=O0T9qQ1TuGU&t=924s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0acbHqkQe80',
+                       'title': 'Data Center Tiers Explained: Tier 1 vs 2 vs 3 vs 4 | Uptime Institute '
+                                'Standards',
+                       'channel': 'PCweb | Angel Eulises Ortiz: Consultor SEO',
+                       'author': 'PCweb | Angel Eulises Ortiz: Consultor SEO',
+                       'text': 'Not every company needs tier 4. For startups or small businesses, tier one '
+                               'or two might be sufficient.',
+                       'tip': 'Not every company needs tier 4. For startups or small businesses, tier one '
+                              'or two might be sufficient.',
+                       'timestamp': 86,
+                       'timestamp_seconds': 86,
+                       'timestamp_label': '[00:01:26]',
+                       'url': 'https://www.youtube.com/watch?v=0acbHqkQe80&t=86s',
+                       'markdown': '[00:01:26](https://www.youtube.com/watch?v=0acbHqkQe80&t=86s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8DzqbL0HKG0',
+                       'title': 'Uptime Data Center Tier Levels - The Gold Standard',
+                       'channel': 'Data Center News',
+                       'author': 'Data Center News',
+                       'text': "Simply building a tier 4 facility doesn't guarantee tier 4 uptime. You "
+                               'need to consistently maintain and operate it according to those standards.',
+                       'tip': "Simply building a tier 4 facility doesn't guarantee tier 4 uptime. You need "
+                              'to consistently maintain and operate it according to those standards.',
+                       'timestamp': 173,
+                       'timestamp_seconds': 173,
+                       'timestamp_label': '[00:02:53]',
+                       'url': 'https://www.youtube.com/watch?v=8DzqbL0HKG0&t=173s',
+                       'markdown': '[00:02:53](https://www.youtube.com/watch?v=8DzqbL0HKG0&t=173s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

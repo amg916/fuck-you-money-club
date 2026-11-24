@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-authorized-renewal-workflow",
-    "diag-02-renewal-cohort-funnel",
-    "diag-03-base-case-profit-waterfall",
-    "diag-04-retained-yield-by-commercial-rail",
-    "diag-05-statutory-and-exposure-decision-tree",
-    "diag-06-four-to-six-person-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-thirty-day-launch-roadmap"
+    "diag-01-microsoft-channel-entry-route",
+    "diag-02-brokered-ucaas-price-ladder",
+    "diag-03-msp-margin-floor-waterfall",
+    "diag-04-microsoft-incentive-rate-bands",
+    "diag-05-adobe-workspace-buy-gates",
+    "diag-06-saas-sales-pod-architecture",
+    "diag-07-vipmp-volume-level-ladder",
+    "diag-08-hybrid-pricing-rollout-roadmap"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-authorized-renewal-workflow",
-    "diag-02-renewal-cohort-funnel",
-    "diag-03-base-case-profit-waterfall",
-    "diag-04-retained-yield-by-commercial-rail",
-    "diag-05-statutory-and-exposure-decision-tree",
-    "diag-06-four-to-six-person-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-thirty-day-launch-roadmap"
+    "diag-01-microsoft-channel-entry-route",
+    "diag-02-brokered-ucaas-price-ladder",
+    "diag-03-msp-margin-floor-waterfall",
+    "diag-04-microsoft-incentive-rate-bands",
+    "diag-05-adobe-workspace-buy-gates",
+    "diag-06-saas-sales-pod-architecture",
+    "diag-07-vipmp-volume-level-ladder",
+    "diag-08-hybrid-pricing-rollout-roadmap"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-authorized-renewal-workflow": {
+    "diag-01-microsoft-channel-entry-route": {
       "concept_a": {
-        "graphic_id": "diag-01-authorized-renewal-workflow",
+        "graphic_id": "diag-01-microsoft-channel-entry-route",
         "graphic_type": "diagram",
-        "label": "From Renewal Signal to Retained Contribution",
+        "label": "Microsoft Channel Entry Route",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-authorized-renewal-workflow",
+        "graphic_id": "diag-01-microsoft-channel-entry-route",
         "graphic_type": "diagram",
-        "label": "From Renewal Signal to Retained Contribution",
+        "label": "Microsoft Channel Entry Route",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-authorized-renewal-workflow",
+        "graphic_id": "diag-01-microsoft-channel-entry-route",
         "graphic_type": "diagram",
-        "label": "From Renewal Signal to Retained Contribution",
+        "label": "Microsoft Channel Entry Route",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-renewal-cohort-funnel": {
+    "diag-02-brokered-ucaas-price-ladder": {
       "concept_a": {
-        "graphic_id": "diag-02-renewal-cohort-funnel",
+        "graphic_id": "diag-02-brokered-ucaas-price-ladder",
         "graphic_type": "diagram",
-        "label": "A Nested Annual Cohort Supporting the Base Case",
+        "label": "Brokered UCaaS Price Ladder",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-renewal-cohort-funnel",
+        "graphic_id": "diag-02-brokered-ucaas-price-ladder",
         "graphic_type": "diagram",
-        "label": "A Nested Annual Cohort Supporting the Base Case",
+        "label": "Brokered UCaaS Price Ladder",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-renewal-cohort-funnel",
+        "graphic_id": "diag-02-brokered-ucaas-price-ladder",
         "graphic_type": "diagram",
-        "label": "A Nested Annual Cohort Supporting the Base Case",
+        "label": "Brokered UCaaS Price Ladder",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-case-profit-waterfall": {
+    "diag-03-msp-margin-floor-waterfall": {
       "concept_a": {
-        "graphic_id": "diag-03-base-case-profit-waterfall",
+        "graphic_id": "diag-03-msp-margin-floor-waterfall",
         "graphic_type": "diagram",
-        "label": "Base-Case Revenue to $225,000 Owner Profit",
+        "label": "MSP Margin Floor Waterfall",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-case-profit-waterfall",
+        "graphic_id": "diag-03-msp-margin-floor-waterfall",
         "graphic_type": "diagram",
-        "label": "Base-Case Revenue to $225,000 Owner Profit",
+        "label": "MSP Margin Floor Waterfall",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-case-profit-waterfall",
+        "graphic_id": "diag-03-msp-margin-floor-waterfall",
         "graphic_type": "diagram",
-        "label": "Base-Case Revenue to $225,000 Owner Profit",
+        "label": "MSP Margin Floor Waterfall",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-retained-yield-by-commercial-rail": {
+    "diag-04-microsoft-incentive-rate-bands": {
       "concept_a": {
-        "graphic_id": "diag-04-retained-yield-by-commercial-rail",
+        "graphic_id": "diag-04-microsoft-incentive-rate-bands",
         "graphic_type": "diagram",
-        "label": "Compare Retained Yield on a Common Spend Denominator",
+        "label": "Microsoft Incentive Rate Bands",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-retained-yield-by-commercial-rail",
+        "graphic_id": "diag-04-microsoft-incentive-rate-bands",
         "graphic_type": "diagram",
-        "label": "Compare Retained Yield on a Common Spend Denominator",
+        "label": "Microsoft Incentive Rate Bands",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-retained-yield-by-commercial-rail",
+        "graphic_id": "diag-04-microsoft-incentive-rate-bands",
         "graphic_type": "diagram",
-        "label": "Compare Retained Yield on a Common Spend Denominator",
+        "label": "Microsoft Incentive Rate Bands",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-statutory-and-exposure-decision-tree": {
+    "diag-05-adobe-workspace-buy-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-statutory-and-exposure-decision-tree",
+        "graphic_id": "diag-05-adobe-workspace-buy-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before a Binding Commitment",
+        "label": "Adobe and Workspace Buy Gates",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-statutory-and-exposure-decision-tree",
+        "graphic_id": "diag-05-adobe-workspace-buy-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before a Binding Commitment",
+        "label": "Adobe and Workspace Buy Gates",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-statutory-and-exposure-decision-tree",
+        "graphic_id": "diag-05-adobe-workspace-buy-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before a Binding Commitment",
+        "label": "Adobe and Workspace Buy Gates",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-four-to-six-person-pod": {
+    "diag-06-saas-sales-pod-architecture": {
       "concept_a": {
-        "graphic_id": "diag-06-four-to-six-person-pod",
+        "graphic_id": "diag-06-saas-sales-pod-architecture",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Two Explicit Scaling Additions",
+        "label": "SaaS Sales Pod Architecture",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-four-to-six-person-pod",
+        "graphic_id": "diag-06-saas-sales-pod-architecture",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Two Explicit Scaling Additions",
+        "label": "SaaS Sales Pod Architecture",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-four-to-six-person-pod",
+        "graphic_id": "diag-06-saas-sales-pod-architecture",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Two Explicit Scaling Additions",
+        "label": "SaaS Sales Pod Architecture",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-allocation": {
+    "diag-07-vipmp-volume-level-ladder": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-vipmp-volume-level-ladder",
         "graphic_type": "diagram",
-        "label": "Four Buckets Across a $5,000–$30,000 Launch",
+        "label": "VIPMP Volume Level Ladder",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-vipmp-volume-level-ladder",
         "graphic_type": "diagram",
-        "label": "Four Buckets Across a $5,000–$30,000 Launch",
+        "label": "VIPMP Volume Level Ladder",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-vipmp-volume-level-ladder",
         "graphic_type": "diagram",
-        "label": "Four Buckets Across a $5,000–$30,000 Launch",
+        "label": "VIPMP Volume Level Ladder",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-thirty-day-launch-roadmap": {
+    "diag-08-hybrid-pricing-rollout-roadmap": {
       "concept_a": {
-        "graphic_id": "diag-08-thirty-day-launch-roadmap",
+        "graphic_id": "diag-08-hybrid-pricing-rollout-roadmap",
         "graphic_type": "diagram",
-        "label": "A 30-Day Sprint to an Execution-Ready Brokerage",
+        "label": "Hybrid Pricing Rollout Roadmap",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-thirty-day-launch-roadmap",
+        "graphic_id": "diag-08-hybrid-pricing-rollout-roadmap",
         "graphic_type": "diagram",
-        "label": "A 30-Day Sprint to an Execution-Ready Brokerage",
+        "label": "Hybrid Pricing Rollout Roadmap",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-thirty-day-launch-roadmap",
+        "graphic_id": "diag-08-hybrid-pricing-rollout-roadmap",
         "graphic_type": "diagram",
-        "label": "A 30-Day Sprint to an Execution-Ready Brokerage",
+        "label": "Hybrid Pricing Rollout Roadmap",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:03Z"
+  "updated_at": "2026-11-24T23:07:52Z"
 }

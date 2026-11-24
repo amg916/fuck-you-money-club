@@ -1,696 +1,537 @@
-from __future__ import annotations
+"""Volume 037 diagrams for SaaS discount brokerage and GPO arbitrage."""
 
-VOLUME_037_SUBTITLE = (
-    "The Complete Playbook for SaaS Discount Brokerage & GPO Arbitrage: "
-    "$100,000–$900,000 USD in Annual Retained Revenue; "
-    "Start with 1 FT + 3 C (4 People), Scale to 6"
-)
+from typing import Any, Dict, List
 
-VOLUME_037_POSITIONING_ALTERNATIVES = [
-    {
-        "title": "The Authorized SaaS Renewal Desk",
-        "subtitle": (
-            "Build recurring retained spreads through authorized Microsoft CSP, "
-            "Adobe VIP Marketplace, and vendor-specific partner relationships."
-        ),
-        "audience": (
-            "An owner-led procurement brokerage with three contractors covering "
-            "licensing operations, renewal analysis, and collections."
-        ),
-        "research_basis": (
-            "Distinguish vendor authorization from revenue presentation. Vendor "
-            "agreements determine transfer rights; ASC 606 principal-versus-agent "
-            "analysis determines gross or net presentation. The cited SEC rule "
-            "establishes the GAAP framework for applicable SEC financial statements, "
-            "not a universal filing obligation for private brokerages. The model "
-            "counts retained operator consideration rather than client subscription spend."
-        ),
-        "sources": [
-            "https://www.law.cornell.edu/cfr/text/17/210.4-01",
-        ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
-    },
-    {
-        "title": "The Evergreen UCaaS Residual Pod",
-        "subtitle": (
-            "Turn documented business renewal opportunities into contracted "
-            "Telarus or Avant master-agent residuals without carrying subscription principal."
-        ),
-        "audience": (
-            "Business communications advisers who can document customer authority, "
-            "manage carrier installations, and reconcile monthly residual statements."
-        ),
-        "research_basis": (
-            "Outreach design must distinguish business solicitation from calls or "
-            "texts subject to TCPA restrictions. The FTC TSR business-call exemption "
-            "does not remove specified prohibitions on deceptive representations. "
-            "These rules support evidence-based prospecting, not an assumed right "
-            "to automate calls to every business contact."
-        ),
-        "sources": [
-            "https://www.law.cornell.edu/uscode/text/47/227",
-            "https://www.law.cornell.edu/cfr/text/16/310.3",
-            "https://www.law.cornell.edu/cfr/text/16/310.6",
-        ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
-    },
-    {
-        "title": "The Private GPO Savings Bureau",
-        "subtitle": (
-            "Combine contracted administrative rebates with separately earned "
-            "25%–35% renewal shared-savings fees and auditable member economics."
-        ),
-        "audience": (
-            "Vertical procurement specialists serving independent businesses with "
-            "comparable software needs and separately authorized purchasing decisions."
-        ),
-        "research_basis": (
-            "Sherman Act Section 1 makes purchasing-group structure and competitor "
-            "coordination material operating questions. Use written member mandates, "
-            "restricted access to sensitive information, and documented rebate "
-            "allocation; group purchasing is not blanket permission to coordinate "
-            "members' downstream prices or exclude competing suppliers."
-        ),
-        "sources": [
-            "https://www.law.cornell.edu/uscode/text/15/1",
-            "https://www.law.cornell.edu/uscode/text/15/2",
-        ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
-    },
+__all__ = [
+    "VOLUME_037_SUBTITLE",
+    "build_volume_037_diagrams_data",
+    "VOLUME_037_POSITIONING_ALTERNATIVES",
 ]
 
 
+VOLUME_037_SUBTITLE: str = (
+    "From Partner Center to Pooled Buying - Indirect CSP Incentive Stacking, "
+    "Distributor Margin Wraps, VIPMP Migrations, Brokered UCaaS, GPO Admin Fees, "
+    "Contingency Telecom Audits, SaaS Rightsizing and Renewal Defense"
+)
+
+
 def build_volume_037_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-authorized-renewal-workflow",
-            "process_flow",
-            "From Renewal Signal to Retained Contribution",
-            "Five operating steps separate customer subscription spend from earned brokerage revenue.",
-            1,
-            "operating_framework",
-            (
-                "The operator has customer permission and current vendor agreements. "
-                "Microsoft CPOR attribution is not interchangeable with CSP resale "
-                "authority; Adobe VIP Marketplace and Zoom partner routes have "
-                "their own eligibility and transfer requirements."
+    """Return the 8 structured diagram dicts for Volume 037."""
+    diagrams: List[Dict[str, Any]] = [
+        {
+            "diagram_id": "diag-01-microsoft-channel-entry-route",
+            "chapter_number": 1,
+            "chart_type": "process_flow",
+            "title": "Microsoft Channel Entry Route",
+            "subtitle": "Partner Center to indirect CSP to Commerce Incentives",
+            "caption": (
+                "Operators entering the Microsoft channel converge on one route, "
+                "ending with a separate Microsoft Commerce Incentives enrollment."
             ),
-            (
-                "Track one opportunity identifier across discovery, authorization, "
-                "quote, activation, and settlement. No stage authorizes cross-customer "
-                "seat pooling or converts client subscription spend into operator revenue."
+            "assumptions_note": (
+                "Direct bill threshold of $1M trailing revenue reported as raised "
+                "from roughly $300,000 effective October. License margin of 8-15% "
+                "is before any service bundling."
             ),
-            [
-                (
-                    "Detect a renewal trigger",
-                    "Permissioned account research",
-                    1.0,
-                    (
-                        "Use public DNS, MX, and SPF signals to prioritize research; "
-                        "confirm actual products, seat counts, and renewal dates from "
-                        "customer-provided contracts rather than inferring license eligibility."
+            "note": (
+                "Attributed to Pax8 APAC, Inside Microsoft AI Cloud Partner Program, "
+                "m365 Show and Spyglass MTG."
+            ),
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Register Partner Center Account",
+                    "value": "Step 1",
+                    "detail": (
+                        "Create the account and company profile under a domain email "
+                        "tied to the primary Entra tenant."
                     ),
-                ),
-                (
-                    "Verify the authorized route",
-                    "Customer mandate and vendor eligibility",
-                    2.0,
-                    (
-                        "Record customer authority and the applicable Microsoft CSP, "
-                        "CPOR, Adobe VIP Marketplace, Zoom Up, or master-agent agreement. "
-                        "Check transfer windows, tenant boundaries, and existing commitments."
+                },
+                {
+                    "step": "02",
+                    "label": "Clear Business Verification",
+                    "value": "Step 2",
+                    "detail": "Pass business verification before attempting to transact.",
+                },
+                {
+                    "step": "03",
+                    "label": "Join the AI Cloud Partner Program",
+                    "value": "Step 3",
+                    "detail": (
+                        "Enrollment is free; benefits packages run $345 to $4,730 a "
+                        "year. Check the benefits tab before buying another security "
+                        "license."
                     ),
-                ),
-                (
-                    "Price the retained economics",
-                    "Comparable scope and measurable savings",
-                    3.0,
-                    (
-                        "Normalize term, seats, taxes, support, and service levels. "
-                        "Separate vendor-funded spreads from member rebates and "
-                        "25%–35% shared-savings fees; disclose any combined compensation."
+                },
+                {
+                    "step": "04",
+                    "label": "Link MPN ID to an Indirect Provider",
+                    "value": "Step 4",
+                    "detail": (
+                        "More than 90% of partners run indirect through Ingram Micro, "
+                        "Pax8, TD Synnex or Sherweb, since direct bill demands $1M "
+                        "trailing revenue, a designation and paid support."
                     ),
-                ),
-                (
-                    "Activate and reconcile billing",
-                    "Authorized changes with funded exposure",
-                    4.0,
-                    (
-                        "Complete vendor-approved changes and reconcile Pax8, Ingram, "
-                        "or Telarus records where supported. Fund annual NCE exposure "
-                        "before commitment; monthly auto-debit alone does not cover it."
+                },
+                {
+                    "step": "05",
+                    "label": "Enroll in Commerce Incentives Separately",
+                    "value": "Step 5",
+                    "detail": (
+                        "A benefits package or designation does not start incentive "
+                        "earnings on its own. Lock NCE seat counts and term inside "
+                        "the 7-day window."
                     ),
-                ),
-                (
-                    "Recognize and monitor earnings",
-                    "Earned consideration with clawback tracking",
-                    5.0,
-                    (
-                        "Reconcile partner statements, customer acceptance, rebate "
-                        "conditions, and residual receipts. Apply ASC 606 contract "
-                        "analysis and maintain separate ledgers for client pass-through "
-                        "amounts, operator earnings, and potential reversals."
-                    ),
-                ),
+                },
             ],
-        ),
-        (
-            "diag-02-renewal-cohort-funnel",
-            "funnel",
-            "A Nested Annual Cohort Supporting the Base Case",
-            "200 permissioned opportunities narrow to 10 activated portfolio accounts.",
-            6,
-            "illustrative_model",
-            (
-                "Illustrative annual acquisition cohort, not measured conversion data. "
-                "Each stage is a subset of the preceding stage. Ten portfolio accounts "
-                "each contribute $50,000 in annual recognized retained revenue after "
-                "full activation; partial-year activation produces less revenue."
+        },
+        {
+            "diagram_id": "diag-02-brokered-ucaas-price-ladder",
+            "chapter_number": 6,
+            "chart_type": "funnel",
+            "title": "Brokered UCaaS Price Ladder",
+            "subtitle": "Monthly per-seat prices from full contact center down to brokered Zoom Phone",
+            "caption": (
+                "Contact center quotes span $69 to $149 per agent, while add-ons and "
+                "brokered phone seats compress the monthly bill well below list."
             ),
-            (
-                "Stage conversions are 50%, 50%, 50%, and 40%; overall conversion "
-                "is 5%. Ten accounts multiplied by $50,000 equals the $500,000 "
-                "Base-Case annual revenue target. First-deal timing remains 1–3 months."
+            "assumptions_note": (
+                "Values are monthly prices as quoted by practitioners; contact center "
+                "is per agent, the Customer Engagement Pack is per supervisor and Zoom "
+                "Phone is per user. The broker fee is paid by the provider, not the customer."
             ),
-            [
-                (
-                    "Permissioned opportunities",
-                    "200 accounts with documented renewal windows",
-                    200.0,
-                    (
-                        "Count distinct prospective portfolio accounts with an identified "
-                        "buyer, a documented contact basis, and a contract renewal window; "
-                        "exclude scraped contact lists without qualification."
+            "note": (
+                "Attributed to Mike Smith of AeroCom Inc, with the contact center "
+                "range as quoted by UCaaS channel practitioners."
+            ),
+            "stages": [
+                {
+                    "label": "Full Contact Center Ceiling",
+                    "value": 149,
+                    "display": "$149 per agent per month",
+                    "conversion": "Top of the $69 to $149 quoted range",
+                    "detail": "Analysts still call Zoom Contact Center a 1.0 product.",
+                },
+                {
+                    "label": "Full Contact Center Floor",
+                    "value": 69,
+                    "display": "$69 per agent per month",
+                    "conversion": "Bottom of the $69 to $149 quoted range",
+                    "detail": "Features are sliding into the base UCaaS license.",
+                },
+                {
+                    "label": "Customer Engagement Pack Add-On",
+                    "value": 20,
+                    "display": "$20 per supervisor per month",
+                    "conversion": "Positioned against $100+ per agent full licensing",
+                    "detail": "Real-time queue analytics sold as a $20-$25 upsell.",
+                },
+                {
+                    "label": "Zoom Phone Unlimited List",
+                    "value": 15,
+                    "display": "$15 per user per month",
+                    "conversion": "List anchor before brokering",
+                    "detail": "Most popular Zoom Phone tier.",
+                },
+                {
+                    "label": "Zoom Phone Unlimited Brokered",
+                    "value": 10,
+                    "display": "Below $10 per user per month",
+                    "conversion": "Sometimes $8-$9 against the $15 list",
+                    "detail": (
+                        "Never let a 100-plus-user buyer go direct; the provider "
+                        "pays the broker fee."
                     ),
-                ),
-                (
-                    "Evidence-complete accounts",
-                    "100 accounts with usable contract evidence",
-                    100.0,
-                    (
-                        "Half the original cohort supplies invoices, product identifiers, "
-                        "seat counts, commitment dates, and procurement authority sufficient "
-                        "to calculate a comparable incumbent baseline."
-                    ),
-                ),
-                (
-                    "Eligible economic cases",
-                    "50 accounts with authorized positive economics",
-                    50.0,
-                    (
-                        "Half the evidence-complete accounts passes vendor eligibility, "
-                        "minimum retained contribution, and funding checks after migration "
-                        "costs, concessions, and expected clawbacks."
-                    ),
-                ),
-                (
-                    "Signed mandates",
-                    "25 accounts with executed commercial terms",
-                    25.0,
-                    (
-                        "Half the eligible accounts executes a mandate defining "
-                        "compensation, savings measurement, rebate ownership, customer "
-                        "responsibilities, and the permitted licensing route."
-                    ),
-                ),
-                (
-                    "Activated earning accounts",
-                    "10 accounts earning $50,000 annually each",
-                    10.0,
-                    (
-                        "Forty percent of signed accounts completes activation and "
-                        "begins earning contracted consideration. Treat $500,000 as "
-                        "full-year recognized revenue only when service timing supports it."
-                    ),
-                ),
+                },
             ],
-        ),
-        (
-            "diag-03-base-case-profit-waterfall",
-            "waterfall",
-            "Base-Case Revenue to $225,000 Owner Profit",
-            "$500,000 retained operator revenue less $275,000 operating costs yields 45.0%.",
-            3,
-            "illustrative_model",
-            (
-                "Six bars contain an opening total, four signed deductions, and a "
-                "closing total; the final bar is not another increment. Cost allocations "
-                "are illustrative because only scenario totals are canonical. Opening "
-                "gross revenue is gross within the operator income statement but already "
-                "net of client subscription pass-through under the specified agency model."
+        },
+        {
+            "diagram_id": "diag-03-msp-margin-floor-waterfall",
+            "chapter_number": 3,
+            "chart_type": "waterfall",
+            "title": "MSP Margin Floor Waterfall",
+            "subtitle": "Managed support versus security, RMM and non-Microsoft licensing",
+            "caption": (
+                "The MSP earns its real margin on wrapped services, with a 60% floor "
+                "on managed support and a 30% floor on resold security, RMM and "
+                "non-Microsoft licensing."
             ),
-            (
-                "$500,000 − $120,000 − $75,000 − $50,000 − $30,000 = $225,000; "
-                "$225,000 / $500,000 = 45.0%. Conservative is $100,000 revenue, "
-                "$68,000 costs, and $32,000 profit at 32%. Scaled is $900,000 revenue, "
-                "$378,000 costs, and $522,000 profit at 58%. The supplied monthly opex "
-                "range of $1,500–$9,500 is not a ceiling on all-in annual scenario costs."
+            "assumptions_note": (
+                "Each price is indexed to 100 so the floors read as margin, not "
+                "markup; the cost bars are the arithmetic complements of the stated "
+                "60% and 30% margin floors."
             ),
-            [
-                (
-                    "Recognized retained revenue",
-                    "$500,000 opening operator revenue total",
-                    500000.0,
-                    (
-                        "Count earned partner spreads, master-agent residuals, GPO "
-                        "administrative rebates, and shared-savings fees. Exclude client "
-                        "software subscription principal and avoid applying a second "
-                        "retained-share reduction to this already-retained revenue."
-                    ),
-                ),
-                (
-                    "Contractor delivery",
-                    "−$120,000 annual delivery labor allocation",
-                    -120000.0,
-                    (
-                        "Allocate licensing operations, savings verification, and "
-                        "reconciliation work across the three contractor seats. "
-                        "This modeled deduction leaves $380,000 before remaining costs."
-                    ),
-                ),
-                (
-                    "Acquisition and channel servicing",
-                    "−$75,000 annual variable commercial costs",
-                    -75000.0,
-                    (
-                        "Budget qualified outreach, referral compensation, account "
-                        "onboarding, and partner-servicing costs without duplicating "
-                        "deductions already embedded in retained partner spreads."
-                    ),
-                ),
-                (
-                    "Systems and professional operations",
-                    "−$50,000 annual infrastructure operating allocation",
-                    -50000.0,
-                    (
-                        "Cover CRM, document storage, reconciliation tooling, bookkeeping, "
-                        "contract review, insurance, and operating administration. "
-                        "The modeled running balance becomes $255,000."
-                    ),
-                ),
-                (
-                    "Credit and service-loss expense",
-                    "−$30,000 annual modeled loss allocation",
-                    -30000.0,
-                    (
-                        "Model unrecovered customer exposure and service remediation "
-                        "as expenses. Revenue reversals already netted from the opening "
-                        "total must not also appear in this deduction."
-                    ),
-                ),
-                (
-                    "Owner net profit",
-                    "$225,000 closing profit at 45.0%",
-                    225000.0,
-                    (
-                        "This is the canonical annual owner-profit endpoint, not "
-                        "another source of revenue. Personal taxes, financing choices, "
-                        "and owner distributions are not separately modeled."
-                    ),
-                ),
+            "note": (
+                "Attributed to the Pax8 profitability playbook, with IDC's $4.14 of "
+                "services per $1 of Microsoft cloud cited by the Pax8 co-founder via "
+                "Cloud Software Association."
+            ),
+            "bars": [
+                {
+                    "label": "Managed Support Price",
+                    "value": 100,
+                    "display": "100 (indexed price)",
+                    "kind": "total",
+                },
+                {
+                    "label": "Delivery Cost Ceiling",
+                    "value": 40,
+                    "display": "-40",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Managed Support Margin Floor",
+                    "value": 60,
+                    "display": "60% margin, best in class",
+                    "kind": "result",
+                },
+                {
+                    "label": "Security, RMM and Non-Microsoft Price",
+                    "value": 100,
+                    "display": "100 (indexed price)",
+                    "kind": "total",
+                },
+                {
+                    "label": "Product Cost Ceiling",
+                    "value": 70,
+                    "display": "-70",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Licensing Margin Floor",
+                    "value": 30,
+                    "display": "At least 30% margin, not markup",
+                    "kind": "result",
+                },
             ],
-        ),
-        (
-            "diag-04-retained-yield-by-commercial-rail",
-            "horizontal_bars",
-            "Compare Retained Yield on a Common Spend Denominator",
-            "Five illustrative commercial rails measured against $100,000 of eligible annual client spend.",
-            2,
-            "illustrative_model",
-            (
-                "Numeric values are modeled retained revenue dollars, not published "
-                "vendor rates or profit margins. Use comparable annual scope and "
-                "exclude taxes. Rails are alternatives unless executed agreements "
-                "expressly permit combined compensation without duplicate billing."
+        },
+        {
+            "diagram_id": "diag-04-microsoft-incentive-rate-bands",
+            "chapter_number": 2,
+            "chart_type": "horizontal_bars",
+            "title": "Microsoft Incentive Rate Bands",
+            "subtitle": "Where the FY27 incentive money now sits",
+            "unit": "percent",
+            "caption": (
+                "With the core incentive stripped from Modern Work and Business Apps "
+                "in FY27, the money moves to Tier 2 strategic SKUs, the growth "
+                "accelerator and tiered Azure growth."
             ),
-            (
-                "The spend denominator belongs to the customer. At a modeled 8% "
-                "retained yield, $6,250,000 of eligible spend would produce $500,000 "
-                "operator revenue; it would not create $6,250,000 of operator revenue."
+            "assumptions_note": (
+                "Growth margin already includes base margin and is not stacked on "
+                "top. Eligibility requires $25K trailing 12-month revenue per location "
+                "ID plus a designation, specialization or 25 capability points."
             ),
-            [
-                (
-                    "Microsoft CSP retained spread",
-                    "$8,000 retained from $100,000 eligible spend",
-                    8000.0,
-                    (
-                        "Assume an 8% retained spread after upstream shares. Confirm "
-                        "current CSP economics and NCE commitment exposure; CPOR "
-                        "attribution alone does not establish a resale discount."
-                    ),
-                ),
-                (
-                    "Adobe VIP Marketplace spread",
-                    "$10,000 retained from $100,000 eligible spend",
-                    10000.0,
-                    (
-                        "Assume a 10% retained spread under an authorized reseller "
-                        "arrangement. Validate customer eligibility, volume brackets, "
-                        "term alignment, and distributor deductions before quoting."
-                    ),
-                ),
-                (
-                    "Zoom or UCaaS residual",
-                    "$6,000 retained from $100,000 eligible spend",
-                    6000.0,
-                    (
-                        "Assume a 6% annual retained residual after master-agent "
-                        "shares. Reconcile Telarus or Avant statements and account "
-                        "for installation delays, cancellations, and contracted chargebacks."
-                    ),
-                ),
-                (
-                    "Private GPO administrative rebate",
-                    "$4,000 retained from $100,000 eligible spend",
-                    4000.0,
-                    (
-                        "Assume a 4% earned administrative rebate after member "
-                        "allocations. Confirm the purchasing bracket, qualifying spend, "
-                        "payment timing, and which party owns each rebate component."
-                    ),
-                ),
-                (
-                    "Renewal shared-savings fee",
-                    "$6,000 retained from $20,000 verified savings",
-                    6000.0,
-                    (
-                        "Reduce a comparable $100,000 baseline to $80,000 and earn "
-                        "30% of the $20,000 verified reduction. The contracted "
-                        "25%–35% fee range would produce $5,000–$7,000."
-                    ),
-                ),
+            "note": (
+                "Attributed to Pax8 and Inside Microsoft AI Cloud Partner Program."
+            ),
+            "bars": [
+                {
+                    "label": "CSP Growth Accelerator",
+                    "min": 7.5,
+                    "max": 12.5,
+                    "typical": 12.5,
+                    "display": "12.5%, up from 7.5%",
+                },
+                {
+                    "label": "Tiered Azure Growth",
+                    "min": 7,
+                    "max": 12,
+                    "typical": 10,
+                    "display": "12 / 10 / 7% tiers",
+                },
+                {
+                    "label": "Tier 2 Strategic SKUs",
+                    "min": 7,
+                    "max": 7,
+                    "typical": 7,
+                    "display": "7%",
+                },
+                {
+                    "label": "Stacked Ceiling, M365 to Dynamics",
+                    "min": 25.75,
+                    "max": 34.75,
+                    "typical": 26,
+                    "display": "25.75% M365, 26% Azure, 34.75% Dynamics",
+                },
+                {
+                    "label": "MCI Payout Split, Co-op to Rebate",
+                    "min": 40,
+                    "max": 60,
+                    "typical": 60,
+                    "display": "60% rebate, 40% co-op",
+                },
             ],
-        ),
-        (
-            "diag-05-statutory-and-exposure-decision-tree",
-            "decision_tree",
-            "Four Checks Before a Binding Commitment",
-            "Proceed only when authority, funding, outreach, and purchasing-group structure are documented.",
-            5,
-            "operating_framework",
-            (
-                "These are sequential yes-or-no operating checks. Contractual licensing "
-                "requirements and the internal credit policy are distinct from statutory "
-                "duties. A failed check routes the account to the stated corrective "
-                "action rather than silently advancing to execution."
+        },
+        {
+            "diagram_id": "diag-05-adobe-workspace-buy-gates",
+            "chapter_number": 5,
+            "chart_type": "decision_tree",
+            "title": "Adobe and Workspace Buy Gates",
+            "subtitle": "Price the exit and verify the license before chasing a discount",
+            "caption": (
+                "List price is a negotiable anchor, but cheap seats and retention "
+                "offers carry hidden commitments that must clear four gates."
             ),
-            (
-                "Keep the supporting contract, funds evidence, outreach basis, and "
-                "member mandate with the opportunity record. Statutes do not grant "
-                "vendor transfer rights, and a customer signature does not eliminate "
-                "annual vendor commitment exposure."
+            "assumptions_note": (
+                "Sub-$2 Workspace seats often ride nonprofit, education or legacy "
+                "panels that Google is suspending; a cheaper switch can cost $2,800 "
+                "more in year one."
             ),
-            [
-                (
-                    "Authorized licensing route?",
-                    "Yes proceed; no obtain valid authority",
-                    1.0,
-                    (
-                        "Verify the customer mandate and applicable CSP, CPOR, VIP "
-                        "Marketplace, Zoom, or GPO agreement. Reject unauthorized "
-                        "cross-tenant seat pooling; use the vendor-approved transfer "
-                        "process or retain the existing arrangement."
+            "note": (
+                "Attributed to Tech Meets East, InboxKit and Rook Technology Consulting."
+            ),
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": (
+                        "Has Google confirmed the domain sits on an official partner "
+                        "license, not a nonprofit, edu or legacy panel?"
                     ),
-                ),
-                (
-                    "Annual exposure fully covered?",
-                    "Yes proceed; no defer the commitment",
-                    2.0,
-                    (
-                        "Require cleared customer funding covering the committed NCE "
-                        "exposure and monitor ACH return or card dispute risk. "
-                        "Recurring debit authorization is a collection mechanism, "
-                        "not proof of irrevocable annual funding."
+                    "pass_next": "G2",
+                    "fail_action": (
+                        "Reject the sub-$2 seats and file Google's support form for a "
+                        "phone callback."
                     ),
-                ),
-                (
-                    "Outreach route permitted?",
-                    "Yes proceed; no redesign the contact method",
-                    3.0,
-                    (
-                        "Apply 47 U.S.C. 227 and applicable FCC rules to calls and "
-                        "texts. Under 16 CFR 310.3 and 310.6(b)(7), do not treat "
-                        "business solicitation as exempt from specified deception "
-                        "prohibitions; assess relevant state calling requirements."
+                },
+                {
+                    "gate": "G2",
+                    "question": (
+                        "Is the Adobe annual-paid-monthly exit priced, with half of "
+                        "every remaining payment owed on early cancellation?"
                     ),
-                ),
-                (
-                    "GPO conduct independently defensible?",
-                    "Yes execute; no obtain structure-specific review",
-                    4.0,
-                    (
-                        "Assess competitor coordination under 15 U.S.C. 1. Preserve "
-                        "independent member purchasing decisions, restrict competitively "
-                        "sensitive information, document rebate ownership, and exclude "
-                        "downstream price coordination from the member arrangement."
+                    "pass_next": "G3",
+                    "fail_action": "Do not sign until the exit fee is priced in.",
+                },
+                {
+                    "gate": "G3",
+                    "question": (
+                        "Is it confirmed that retention free months do not restart a "
+                        "new one-year commitment?"
                     ),
-                ),
+                    "pass_next": "G4",
+                    "fail_action": "Decline the free months at the cancellation screen.",
+                },
+                {
+                    "gate": "G4",
+                    "question": (
+                        "Does the switch case hold across current bill, replacement "
+                        "incl. retained items, one-time transition cost and the first "
+                        "date old commitments end?"
+                    ),
+                    "pass_next": "Proceed with the purchase or switch",
+                    "fail_action": "Hold the switch and keep the incumbent.",
+                },
             ],
-        ),
-        (
-            "diag-06-four-to-six-person-pod",
-            "org_architecture",
-            "Four Core Seats, Two Explicit Scaling Additions",
-            "Conservative and Base use 1 FT + 3 C; Scaled uses 2 FT + 4 C.",
-            11,
-            "operating_framework",
-            (
-                "FT means full-time and C means contractor. Numeric values indicate "
-                "baseline seat occupancy: four active seats and two inactive expansion "
-                "seats. Activate both expansion seats to reach the six-person Scaled pod."
+        },
+        {
+            "diagram_id": "diag-06-saas-sales-pod-architecture",
+            "chapter_number": 11,
+            "chart_type": "org_architecture",
+            "title": "SaaS Sales Pod Architecture",
+            "subtitle": "Numbers-first pod built around the account executive",
+            "caption": (
+                "The AE carries a quota near 5x OTE, fed by SDR dialing, a CRO "
+                "champion, a procurement gate held on price, and CRM renewal automation."
             ),
-            (
-                "The four-person pod supports the canonical $100,000 Conservative "
-                "and $500,000 Base revenue cases. The six-person pod corresponds "
-                "to $900,000 Scaled revenue; headcount alone does not establish demand."
+            "assumptions_note": (
+                "Quota multiples reported range from 5x (SaasRise) to 5.6-6.1x "
+                "(QuotaPath), with a Bridge median of 4.6x; 48% of reps hit quota."
             ),
-            [
-                (
-                    "Owner and commercial lead",
-                    "One full-time core seat owns economics",
-                    1.0,
-                    (
-                        "Own vendor relationships, pricing, customer commitments, "
-                        "concentration limits, and cash exposure. Review exception "
-                        "reports instead of manually rebuilding every partner statement."
-                    ),
-                ),
-                (
-                    "Licensing operations specialist",
-                    "One contractor core seat owns activation",
-                    1.0,
-                    (
-                        "Validate tenant boundaries, transfer eligibility, product "
-                        "identifiers, commitment dates, and distributor records. "
-                        "Maintain evidence for every customer-authorized license change."
-                    ),
-                ),
-                (
-                    "Savings and procurement analyst",
-                    "One contractor core seat owns measurement",
-                    1.0,
-                    (
-                        "Build comparable incumbent baselines, test price floors, "
-                        "calculate contingent fees, and distinguish seat reductions "
-                        "from genuine like-for-like procurement savings."
-                    ),
-                ),
-                (
-                    "Billing and collections specialist",
-                    "One contractor core seat owns reconciliation",
-                    1.0,
-                    (
-                        "Match customer receipts, distributor charges, residual "
-                        "statements, and rebate settlements. Escalate funding gaps "
-                        "before a new annual vendor commitment is created."
-                    ),
-                ),
-                (
-                    "Scaled operations manager",
-                    "Add one full-time seat when scaling",
-                    0.0,
-                    (
-                        "Join the existing owner to create two full-time seats. "
-                        "Own delivery capacity, workflow exceptions, contractor "
-                        "coordination, and renewal-service continuity."
-                    ),
-                ),
-                (
-                    "Scaled portfolio analyst",
-                    "Add one contractor seat when scaling",
-                    0.0,
-                    (
-                        "Join the three core contractors to create four contractor "
-                        "seats. Expand renewal monitoring, rebate verification, "
-                        "and independent checks on shared-savings calculations."
-                    ),
-                ),
+            "note": (
+                "Attributed to Sell Better, Caliber, SaasRise, GrowthSpree and "
+                "HubSpot Data Analytics by MergeYourData."
+            ),
+            "center": {
+                "role": "Mid-Market Account Executive",
+                "headcount": "1 AE per 2 SDRs, never above 2.5 to 1",
+                "focus": "Quota at 5x OTE; a $200K median OTE rep brings in about $1M",
+            },
+            "spokes": [
+                {
+                    "role": "SDR",
+                    "type": "Outbound dialing",
+                    "kpi": "40 calls per hour; 200 calls per week for at least 2 meetings",
+                },
+                {
+                    "role": "CRO Champion",
+                    "type": "Internal sponsor",
+                    "kpi": "Rates the business case very believable in the room",
+                },
+                {
+                    "role": "Procurement",
+                    "type": "Buyer gate",
+                    "kpi": "Price kept as the final issue; terms only after cash is the last objection",
+                },
+                {
+                    "role": "CRM Automation",
+                    "type": "Renewal engine",
+                    "kpi": "Workflow fires when renewal date is under 30 days out",
+                },
             ],
-        ),
-        (
-            "diag-07-startup-capital-allocation",
-            "stacked_comparison",
-            "Four Buckets Across a $5,000–$30,000 Launch",
-            "Lean, working, and expanded launch budgets total $5,000, $15,000, and $30,000.",
-            4,
-            "illustrative_model",
-            (
-                "Numeric values show the $15,000 working-budget allocation. Each "
-                "stage also states lean and expanded amounts for comparison. These "
-                "are startup allocations, not annual operating expenses or canonical "
-                "revenue scenarios; no bucket finances customer subscription principal."
+        },
+        {
+            "diagram_id": "diag-07-vipmp-volume-level-ladder",
+            "chapter_number": 4,
+            "chart_type": "stacked_comparison",
+            "title": "VIPMP Volume Level Ladder",
+            "subtitle": "Four per-end-customer price levels on Adobe VIP Marketplace",
+            "total_range": "1 to 100+ units per end customer",
+            "caption": (
+                "VIP Marketplace keys price to per-customer seat counts, with "
+                "auto-renewal on the anniversary date and a 14-day return window."
             ),
-            (
-                "The working allocation is $4,500 + $3,000 + $4,500 + $3,000 = "
-                "$15,000. Monthly opex remains the supplied $1,500–$9,500 planning "
-                "range. Protect runway through the 1–3 month first-deal window "
-                "without using customer-designated funds for brokerage expenses."
+            "assumptions_note": (
+                "Level 1 starts at a single unit; Level 4 is open-ended above 100 "
+                "units. Levels 3 and 4 currently carry the same discount."
             ),
-            [
-                (
-                    "Partner and contract setup",
-                    "Lean $1,500; working $4,500; expanded $9,000",
-                    4500.0,
-                    (
-                        "Allocate 30% to agreement review, customer mandates, "
-                        "bookkeeping setup, partner onboarding work, and insurance "
-                        "setup. Vendor-specific deposits require separate verification."
-                    ),
-                ),
-                (
-                    "Systems and reconciliation",
-                    "Lean $1,000; working $3,000; expanded $6,000",
-                    3000.0,
-                    (
-                        "Allocate 20% to CRM configuration, access-controlled document "
-                        "storage, statement imports, renewal tracking, and audit-ready "
-                        "reconciliation templates before purchasing custom integrations."
-                    ),
-                ),
-                (
-                    "Evidence-led acquisition",
-                    "Lean $1,500; working $4,500; expanded $9,000",
-                    4500.0,
-                    (
-                        "Allocate 30% to vertical prospect research, buyer interviews, "
-                        "permissioned outreach, and initial contract audits. Measure "
-                        "qualified opportunities rather than purchased contact volume."
-                    ),
-                ),
-                (
-                    "Brokerage liquidity reserve",
-                    "Lean $1,000; working $3,000; expanded $6,000",
-                    3000.0,
-                    (
-                        "Allocate 20% to brokerage timing gaps and operating "
-                        "contingencies. Keep this reserve distinct from customer "
-                        "prefunding and increase runway if sales or settlement takes longer."
-                    ),
-                ),
+            "note": "Attributed to David Villanueva of TD SYNNEX Spain.",
+            "buckets": [
+                {
+                    "label": "Level 1",
+                    "low": 1,
+                    "high": 9,
+                    "notes": "Up to 9 units; move single-unit customers to auto-renewal",
+                },
+                {
+                    "label": "Level 2",
+                    "low": 10,
+                    "high": 49,
+                    "notes": "First price break",
+                },
+                {
+                    "label": "Level 3",
+                    "low": 50,
+                    "high": 99,
+                    "notes": "Same discount as Level 4 today",
+                },
+                {
+                    "label": "Level 4",
+                    "low": 100,
+                    "high": 100,
+                    "notes": "100 units and above",
+                },
             ],
-        ),
-        (
-            "diag-08-thirty-day-launch-roadmap",
-            "timeline_roadmap",
-            "A 30-Day Sprint to an Execution-Ready Brokerage",
-            "Build evidence and operating readiness before forecasting collected residuals.",
-            12,
-            "operating_framework",
-            (
-                "The four milestones span Days 1–30. Activities use authorized "
-                "project resources and customer-provided records. Partner onboarding, "
-                "renewal timing, and vendor activation can extend beyond this sprint; "
-                "the canonical first-deal range is 1–3 months."
+        },
+        {
+            "diagram_id": "diag-08-hybrid-pricing-rollout-roadmap",
+            "chapter_number": 12,
+            "chart_type": "timeline_roadmap",
+            "title": "Hybrid Pricing Rollout Roadmap",
+            "subtitle": "Seat base, metered usage and enforced renewal uplift",
+            "caption": (
+                "The seat survives as a base fee wrapped in credits, metered overage "
+                "and contractual uplifts, with hybrid models posting 105% net revenue "
+                "retention."
             ),
-            (
-                "Finish the sprint with a defined niche, verified economics, "
-                "executable documents, and a reconciled pilot or documented activation "
-                "schedule. Do not label quoted savings, unsigned rebates, or future "
-                "residuals as recognized revenue."
+            "assumptions_note": (
+                "A P90 user can cost five times a P50 user, and AI pulls classical "
+                "85% to 95% gross margins toward roughly 50%."
             ),
-            [
-                (
-                    "Days 1-7",
-                    "Choose one niche and verify partner routes",
-                    1.0,
-                    (
-                        "Select a repeatable buyer segment, obtain current partner "
-                        "terms, define excluded license arrangements, and build a "
-                        "retained-revenue worksheet separating subscription principal "
-                        "from operator consideration."
-                    ),
-                ),
-                (
-                    "Days 8-14",
-                    "Collect evidence and test comparable economics",
-                    2.0,
-                    (
-                        "Request permissioned renewal contracts, normalize product "
-                        "scope, test vendor price floors, and calculate prospective "
-                        "shared-savings fees. Document why each candidate passes "
-                        "or fails the four pre-commitment checks."
-                    ),
-                ),
-                (
-                    "Days 15-21",
-                    "Execute mandates and establish funded readiness",
-                    3.0,
-                    (
-                        "Finalize compensation terms, member rebate allocation, "
-                        "customer authority, and permitted transfer steps. Verify "
-                        "funding before annual commitments and configure distributor "
-                        "or master-agent statement reconciliation."
-                    ),
-                ),
-                (
-                    "Days 22-30",
-                    "Reconcile a pilot and schedule remaining activation",
-                    4.0,
-                    (
-                        "Complete one authorized pilot when vendor timing permits, "
-                        "or record the dated activation dependency. Reconcile earned "
-                        "consideration, inspect exception handling, and compare "
-                        "forecast contribution with the Base-Case cost structure."
-                    ),
-                ),
+            "note": (
+                "Attributed to The Innovation Attorney, Champion Leadership, "
+                "MonetizeNow, Soft Learn Hub and Willingness to Pay."
+            ),
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Model P50 and P90 Cost per User",
+                    "deliverable": "Cost model against the price point",
+                    "gate": "Hold at least 60% gross margin at P50 users",
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Fair-Use Policy and Pilot",
+                    "deliverable": "Usage pilot with 5 to 20 customers",
+                    "gate": "Fair-use cap in place before opening usage to the full base",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Encode Renewal Uplift",
+                    "deliverable": "Fixed or maximum uplift stored on every quote",
+                    "gate": "Escalator talks open at 7% within the 3% to 7% range",
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Price In Buyer Meter Controls",
+                    "deliverable": "Alerts at 80% and 100%, rollover, locked overage and a contractual cap",
+                    "gate": "Validated with finance, customer success, sales, product and customers",
+                },
             ],
-        ),
+        },
     ]
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for (
-            identifier,
-            kind,
-            title,
-            subtitle,
-            chapter,
-            tag,
-            note,
-            caption,
-            stages,
-        ) in specs
-    ]
+    return diagrams
+
+
+VOLUME_037_POSITIONING_ALTERNATIVES: List[Dict[str, Any]] = [
+    {
+        "title": "The Indirect CSP Margin Engine",
+        "subtitle": (
+            "Stack Microsoft incentives, wrap services at 30-60% margin, and stop "
+            "living on an 8-15% license"
+        ),
+        "audience": "MSPs and resellers entering or rebuilding a Microsoft and distributor practice",
+        "research_basis": (
+            "Pax8 APAC on the $1M direct bill threshold, Inside Microsoft AI Cloud "
+            "Partner Program on stacked incentives and the 60/40 payout split, Pax8 "
+            "on 30% and 60% margin floors, and the Pax8 co-founder citing IDC's $4.14 "
+            "of services per $1 of Microsoft cloud."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=Xywyds1IfvM&t=271s",
+            "https://www.youtube.com/watch?v=jz1cE7UYBO4&t=948s",
+            "https://www.youtube.com/watch?v=jcYTmMdEGPo&t=118s",
+            "https://www.youtube.com/watch?v=tsL0gg_Jy9U&t=667s",
+            "https://www.youtube.com/watch?v=KcmWalqZBzk&t=114s",
+            "https://www.youtube.com/watch?v=phXe8eJoVeo&t=795s",
+        ],
+        "validation_status": "Grounded strictly in Vol. 037 YouTube practitioner transcripts.",
+    },
+    {
+        "title": "Renewal Defense and Rightsizing",
+        "subtitle": (
+            "Find the 44% of idle licenses, calendar the notice deadline, and cap "
+            "uplifts at 3 to 5%"
+        ),
+        "audience": "IT, finance and procurement leads buying SaaS without a dedicated sourcing team",
+        "research_basis": (
+            "SaaS Procurement Insider on 2-4x vendor undercounts and 15-30% shadow IT, "
+            "MetrixData 360 on $250K+ yearly reclaim from help desk tickets, Tropic on "
+            "60 to 90 day kickoffs and 3 to 5% caps, The Negotiator Guru on 8 in 10 "
+            "over-licensed clients, and fynk on roughly 70% auto-renewing contracts."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=udHdwtjP7yM&t=190s",
+            "https://www.youtube.com/watch?v=lB5ThkY4hMA&t=1576s",
+            "https://www.youtube.com/watch?v=veu6EUBTdBE&t=49s",
+            "https://www.youtube.com/watch?v=FESALIJcxS0&t=120s",
+            "https://www.youtube.com/watch?v=dOTg4A37x5g&t=38s",
+            "https://www.youtube.com/watch?v=QLqtDhk3PoI&t=187s",
+        ],
+        "validation_status": "Grounded strictly in Vol. 037 YouTube practitioner transcripts.",
+    },
+    {
+        "title": "Pooled Buying, Brokered Seats and Contingency Audits",
+        "subtitle": (
+            "Let suppliers and providers pay the fee while GPOs, brokers and auditors "
+            "pull the discount"
+        ),
+        "audience": "Operators and owners who want lower unit prices without paying upfront for representation",
+        "research_basis": (
+            "Eric Bricker on 1.5 to 3 percent supplier-paid GPO admin fees, Una on 18 "
+            "to 22 percent food savings, Angelique Beslic on 80 to 90 percent "
+            "compliance bands, AeroCom on Zoom Phone below $10 against a $15 list, and "
+            "Auditel on a $68,000 monthly bill cut and a $165,000 go-behind credit."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=N0B0bUjLrUE&t=65s",
+            "https://www.youtube.com/watch?v=vXeviFgIR1I&t=24s",
+            "https://www.youtube.com/watch?v=K2Slgt-y1wo&t=219s",
+            "https://www.youtube.com/watch?v=viRtp8k9GAo&t=192s",
+            "https://www.youtube.com/watch?v=F00NVfaC6Tk&t=141s",
+            "https://www.youtube.com/watch?v=YAHf-FXxBCM&t=95s",
+        ],
+        "validation_status": "Grounded strictly in Vol. 037 YouTube practitioner transcripts.",
+    },
+]

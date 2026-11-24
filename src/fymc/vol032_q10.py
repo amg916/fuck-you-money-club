@@ -1,690 +1,803 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 1 FT + 3 C (4 people) iso payment processing & atm arbitrage team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "IRIS CRM Residual Reconciliation, Sponsor-Approved Dispute Rules, ATM Telemetry, and Evidence-Led Distribution Under Regulation E",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #32, ISO Payment Processing & ATM Arbitrage, ranks #02 of 36 "
-        "with a 94/100 Money-to-Manpower Score. This chapter maps 12 operator "
-        "plays into one evidence-led automation system: source qualified accounts, "
-        "board through sponsor-controlled workflows, reconcile retained residuals, "
-        "resolve eligible disputes, monitor ATM liquidity, and recycle verified "
-        "results into distribution. A 1 FT + 3 C team targets 70%+ repetitive-task "
-        "automation without delegating underwriting, pricing exceptions, cash "
-        "movement, or consequential communications to an LLM. The canonical annual "
-        "owner-profit cases remain $27,000 Conservative, $189,125 Base, and "
-        "$440,000 Scaled. Each workflow carries a unit-cost budget, a replay-safe "
-        "event record, a named reviewer, and a manual fallback. Growth follows "
-        "measured contribution and service capacity rather than merchant settlement "
-        "volume, vault cash, or speculative rewards."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$90,000",
-            "context": "Annual net retained ISO residuals, gateway markups, and ATM surcharges",
-            "note": "30% net margin; $27,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$445,000",
-            "context": "Annual net retained ISO residuals, gateway markups, and ATM surcharges",
-            "note": "42.5% net margin; $189,125 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$800,000",
-            "context": "Annual net retained ISO residuals, gateway markups, and ATM surcharges",
-            "note": "55% net margin; $440,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build an evidence pipeline before automating merchant decisions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a Python service that receives only contract-authorized processor, "
-                    "CRM, dispute-provider, and ATM-monitoring events. IRIS CRM capabilities depend "
-                    "on the purchased service and partner permissions; inspect the actual integration "
-                    "contract rather than assuming every boarding field or residual report has a "
-                    "public endpoint. Where webhooks are unavailable, ingest scheduled encrypted "
-                    "exports through the same event envelope. Store event_id, source, merchant "
-                    "reference, received_at, schema_version, payload_digest, and processing_state. "
-                    "Validate signatures using the provider's documented algorithm, enforce timestamp "
-                    "tolerance where supported, and reject duplicate event keys before creating work. "
-                    "Python's hashlib, hmac, json, sqlite3, and decimal support a small prototype; "
-                    "SQLite requires deliberate single-writer handling and a tested migration path "
-                    "before multiple workers contend. Persist the authenticated event before "
-                    "acknowledging receipt, then let a worker perform transformations outside the "
-                    "request lifecycle. Separate immutable source evidence from normalized records "
-                    "and proposed actions. A revised Schedule A must create a new effective-dated "
-                    "version, never overwrite the version that explained last month's payout. This "
-                    "architecture makes a late processor correction replayable without accidentally "
-                    "resubmitting a merchant application or issuing a second refund. Assign one "
-                    "owner to every connector and record its last successful synchronization."
-                ),
-                (
-                    "Use the LLM as a constrained extraction and drafting component, not as the "
-                    "ledger or sponsor underwriter. Supply redacted documents with explicit field "
-                    "definitions, require structured output, and validate every amount, date, "
-                    "currency, and identifier against deterministic rules. Keep full card numbers, "
-                    "security codes, PIN material, bank credentials, and customer authentication "
-                    "secrets outside prompts and general application logs. Merchant websites and "
-                    "uploaded statements are untrusted evidence: instructions embedded inside them "
-                    "cannot change tool permissions, recipient addresses, or pricing rules. For a "
-                    "boarding packet, the model may identify a missing ownership document and draft "
-                    "a request; the responsible contractor checks the cited source before sending "
-                    "anything consequential. Sponsor-bank underwriting remains with the authorized "
-                    "decision maker, especially for elevated-risk categories and adverse history. "
-                    "Do not rotate MIDs to conceal activity, bypass restrictions, or fragment "
-                    "chargeback ratios. Maintain separate permissions for reading evidence, "
-                    "proposing updates, and executing approved changes. The full-time operator owns "
-                    "commercial exceptions; three contractors cover boarding, residual analysis, "
-                    "and field-service coordination under restricted accounts. Use a weekly sample "
-                    "of ordinary completed cases as well as every exception to catch silent "
-                    "extraction drift before it becomes a portfolio-wide billing error."
-                ),
-                (
-                    "Define the automation denominator before advertising a seventy-percent result. "
-                    "An illustrative weekly cohort contains 1,000 eligible repetitive work items: "
-                    "300 research records, 200 qualification checks, 180 boarding completeness "
-                    "checks, 140 residual lines, 100 telemetry alerts, and 80 distribution drafts. "
-                    "If 720 finish their defined low-risk endpoint without human editing, "
-                    "straight-through completion is 72%; the other 280 remain assisted or manual. "
-                    "A generated application is not completed underwriting, and a draft email is "
-                    "not a sent acquisition touch. Keep these endpoints separate in the dashboard. "
-                    "Assume each automated item formerly required four minutes and now creates "
-                    "twenty seconds of average review or monitoring work: 720 times 220 seconds "
-                    "equals 44 hours saved before maintenance. At an illustrative $0.012 model "
-                    "charge, $0.003 queue and storage allocation, and $0.005 monitoring allocation, "
-                    "each successful run costs $0.020; 720 runs cost $14.40. Add retries, failed "
-                    "attempts, subscriptions, integration upkeep, and reviewer labor separately. "
-                    "Count all attempts in the cost numerator and only accepted outputs in the "
-                    "completion denominator. Stop increasing throughput when exception aging rises, "
-                    "even if token costs remain tiny. The bottleneck is accountable review capacity, "
-                    "not inexpensive text generation."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped Plays P01–P06: Evidence, Processing, and ATM Automation",
-                "headers": [
-                    "Mapped play and operating endpoint",
-                    "Deterministic trigger and unit economics",
-                    "Human authority and required evidence",
-                    "Failure fallback and recovery condition",
-                ],
-                "rows": [
-                    [
-                        "P01: Research authorized merchant prospects using traceable public evidence",
-                        "Process 300 records at two cents each, costing six dollars",
-                        "Research contractor verifies business category against the cited source",
-                        "Quarantine contradictory records until original evidence supports renewed processing",
-                    ],
-                    [
-                        "P02: Qualify merchants against documented sponsor acceptance criteria",
-                        "Run 200 checks at two cents, costing four dollars",
-                        "Boarding contractor reviews risk flags before requesting application documents",
-                        "Send ambiguous classifications to sponsor review rather than automatic rejection",
-                    ],
-                    [
-                        "P03: Assemble IRIS CRM boarding packets without approving merchants",
-                        "Check 180 packets at two cents, costing three dollars sixty",
-                        "Authorized sponsor personnel decide acceptance using complete submitted evidence",
-                        "Use encrypted export intake when permitted integration access fails",
-                    ],
-                    [
-                        "P04: Audit retained residual lines against effective Schedule A versions",
-                        "Check 140 lines at two cents, costing two dollars eighty",
-                        "Residual analyst signs off discrepancies using processor settlement evidence",
-                        "Freeze disputed adjustments while preserving undisputed historical ledger entries",
-                    ],
-                    [
-                        "P05: Resolve eligible disputes through contracted Verifi RDR or Ethoca services",
-                        "Limit each automated resolution using transaction contribution and recovery economics",
-                        "Operator approves rule versions while provider eligibility controls execution",
-                        "Suspend automated actions when transaction matching or eligibility becomes uncertain",
-                    ],
-                    [
-                        "P06: Forecast ATM cash needs from authenticated remote telemetry",
-                        "Check 100 alerts at two cents, costing two dollars",
-                        "Cash custodian confirms replenishment using reconciled cassette and journal balances",
-                        "Dispatch authorized field verification when fresh telemetry cannot be established",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make source evidence cheaper to retrieve than an argument",
-                "body": (
-                    "The strongest small-team advantage is a short path from an alert "
-                    "to the exact contract, transaction, or machine record that explains it."
-                ),
-                "items": [
-                    "Store the Schedule A version and processor statement page beside each residual exception; a payout total alone cannot explain a basis-point change.",
-                    "Treat a successful HTTP response as transport evidence only; require the provider's durable transaction reference before marking a refund or boarding submission complete.",
-                    "Compare ATM dispense journals with host records and physical balancing; a healthy communications heartbeat does not prove usable cash availability.",
-                    "Track duplicate dispute alerts across contracted providers by original transaction identity before any refund, while preserving each provider's separate deadline.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Reconcile automation economics to retained revenue, not payment volume",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Anchor every dashboard to the Formula v2.0 revenue basis: net retained ISO "
-                    "processing residuals, gateway markups, and ATM surcharges. The scorecard labels "
-                    "the annual top line gross revenue, but it is not merchant card settlement "
-                    "volume or ATM vault cash. Conservative revenue of $90,000 less $63,000 total "
-                    "modeled expenses produces $27,000 owner profit at 30%. Base revenue of "
-                    "$445,000 less $255,875 produces $189,125 at 42.5%. Scaled revenue of $800,000 "
-                    "less $360,000 produces $440,000 at 55%, with staffing increasing from 1 FT "
-                    "plus 3 C to 2 FT plus 4 C. These expense totals are algebraic reconciliations "
-                    "of the supplied cases, not newly estimated contractor budgets. Keep the "
-                    "stated $1,500–$10,000 monthly operating-expense range separate from a complete "
-                    "scenario expense bridge; it does not explain every modeled annual cost. "
-                    "Similarly, $8,000–$45,000 startup capital is a funding requirement, not "
-                    "recognized revenue. For an agent arrangement, apply the documented retained "
-                    "share consistently with the ASC 606 principal-versus-agent assessment. If "
-                    "$20,000 of statement economics leaves the operator a contractual 35% share, "
-                    "the modeled retained amount is $7,000, not $20,000 followed by a second "
-                    "retained-share deduction. Record timing differences separately from entitlement "
-                    "differences so cash receipts cannot silently redefine earned revenue."
-                ),
-                (
-                    "Residual automation should recompute expected earnings from authorized source "
-                    "fields, not infer interchange from merchant-facing labels. Suppose an "
-                    "illustrative account generates $80,000 eligible monthly card volume and "
-                    "the signed arrangement leaves eight basis points plus a $15 retained "
-                    "gateway markup: $80,000 times 0.0008 plus $15 equals $79 monthly retained "
-                    "revenue. A two-basis-point unexplained reduction costs $16 monthly, or "
-                    "$192 annually if volume remains constant. Compare actual statements to "
-                    "effective dates, exclusions, minimums, and contractual adjustments before "
-                    "calling that difference leakage. Dispute automation needs a separate "
-                    "transaction-level economic test. Verifi RDR rules and Ethoca alert handling "
-                    "depend on the specific contracted product, enrollment, and response mechanics; "
-                    "neither name implies universal protection against chargebacks. For an "
-                    "illustrative $40 eligible transaction, compare a $40 refund plus provider "
-                    "fees with the expected disputed principal, dispute fee, recovery probability, "
-                    "and operational cost under the merchant's policy. Avoid counting avoided "
-                    "fees as operator revenue. Match prior refunds and transaction identity before "
-                    "acting, retain the provider reference, and reconcile subsequent processor "
-                    "postings. If eligibility is unclear or a provider times out, create a "
-                    "deadline-bearing human task rather than retrying a potentially completed "
-                    "refund without checking its status."
-                ),
-                (
-                    "Map agency_ad_spend_card_multiplier_rebate_cycling to TRACK_2 only for genuine "
-                    "client-authorized advertising spend through eligible agency payment arrangements. "
-                    "The full play is Whitelisted Agency Ad-Spend Card-Multiplier Points & "
-                    "Volume-Rebate Cycling. An illustrative $100,000 monthly advertising budget "
-                    "earns $1,500 in contract-permitted rewards at 1.5% and $200 in a separately "
-                    "permitted 0.2% volume rebate. Subtract $600 funding cost, $300 processing "
-                    "cost, and $500 client pass-through obligations: incremental contribution "
-                    "is $300, before other applicable expenses. At twelve identical months, "
-                    "that is $3,600, not $1.2 million of operator revenue. Do not add this "
-                    "illustration to the canonical scorecard cases; its inclusion requires an "
-                    "explicitly reconciled portfolio allocation. Value points at realizable "
-                    "contractual redemption economics, not travel-blog valuations, and determine "
-                    "the appropriate accounting treatment separately. A Python eligibility ledger "
-                    "should track issuer terms, merchant category, spend caps, client authorization, "
-                    "payment due dates, rebate reversals, and the party entitled to each benefit. "
-                    "The operator reviews any reward-dependent recommendation. Prohibit fabricated "
-                    "purchases, circular transfers, and spend created solely to manufacture rewards. "
-                    "When issuer eligibility changes or the funding spread turns negative, move "
-                    "to client-direct billing or prefunded approved agency terms and stop "
-                    "rewards-dependent spending. Automation monitors the spread; it never creates "
-                    "permission to use a client's money."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped Plays P07–P12: Retention, Distribution, and Incremental Contribution",
-                "headers": [
-                    "Mapped play and specific operating scope",
-                    "Illustrative unit math and decision boundary",
-                    "Evidence required before consequential execution",
-                    "Risk fallback preserving the underlying relationship",
-                ],
-                "rows": [
-                    [
-                        "P07: Renew exclusive venue ATM agreements using measured availability",
-                        "Retain 400 monthly withdrawals at one dollar contribution each",
-                        "Operator verifies venue exclusivity, service performance, and signed renewal terms",
-                        "Offer service remediation before proposing unsupported traffic or earnings claims",
-                    ],
-                    [
-                        "P08: Publish reviewed merchant education from verified recurring questions",
-                        "Ten qualified inquiries at twenty dollars production cost each",
-                        "Reviewer checks every pricing example against current approved schedules",
-                        "Unpublish affected pages when source terms change materially",
-                    ],
-                    [
-                        "P09: Generate permissioned referrals from documented merchant service improvements",
-                        "Two introductions from ten satisfied accounts yield twenty percent participation",
-                        "Account owner confirms permission before identifying merchants to third parties",
-                        "Replace referral requests with service recovery when satisfaction deteriorates",
-                    ],
-                    [
-                        "P10: Send evidence-based outbound messages to researched business contacts",
-                        "Twenty replies from 400 relevant messages yield five percent response",
-                        "Reviewer checks factual personalization, sender identity, and suppression status",
-                        "Pause affected segments when complaints or invalid addresses increase",
-                    ],
-                    [
-                        "P11: Protect retained margin through reviewed rate-matching decisions",
-                        "A sixteen-dollar monthly concession consumes 192 dollars annual contribution",
-                        "Operator compares retained margin against documented service and acquisition costs",
-                        "Decline uneconomic concessions while offering clearly scoped service alternatives",
-                    ],
-                    [
-                        "P12: Execute agency_ad_spend_card_multiplier_rebate_cycling under documented TRACK_2 eligibility",
-                        "Seventeen hundred dollars benefits less fourteen hundred costs leaves 300",
-                        "Operator verifies client authorization, issuer eligibility, and benefit ownership",
-                        "Switch to client-direct billing or prefunded approved agency terms",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify authority, economics, reversibility, and evidence before execution",
-                "body": (
-                    "Pre-flight verification applies to the action being taken, not "
-                    "merely to the account's previous acceptance."
-                ),
-                "items": [
-                    "Confirm the sponsor-approved business category, actual activity, and merchant identity before boarding or changing processing arrangements; never use another MID to evade restrictions.",
-                    "Recalculate retained contribution using the effective contract and all applicable client pass-through obligations before publishing a quote or approving a concession.",
-                    "Check original transaction identity, prior refunds, provider eligibility, and maximum permitted amount before enabling an automated dispute-resolution rule.",
-                    "Verify current issuer terms and client authorization before agency spend; if rewards disappear, confirm client-direct billing or approved prefunding can continue the legitimate campaign.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Turn verified service results into repeatable distribution",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build the distribution flywheel around a closed service fact: a corrected "
-                    "residual calculation, a faster complete boarding packet, or improved ATM "
-                    "availability supported by logs. Ask the merchant or venue for permission "
-                    "before using identifiable results, then create a short reviewed case study "
-                    "with the measurement window, denominator, and material limitations. A "
-                    "programmatic page generator can assemble vertical-specific education from "
-                    "approved components: restaurant gateway reconciliation, independent-retailer "
-                    "pricing comparisons, or venue cash-service planning. It must not manufacture "
-                    "local offices, customer endorsements, savings claims, or sponsor relationships. "
-                    "Require a unique practical example and a source-backed operating answer "
-                    "before publishing each page. Use Search Console and first-party analytics "
-                    "to attribute qualified inquiries, then link the resulting CRM opportunity "
-                    "to its eventual retained contribution. Eighty weekly distribution drafts "
-                    "at the earlier two-cent run budget cost $1.60 in variable automation "
-                    "expense, but editorial review and distribution costs still matter. If "
-                    "ten qualified inquiries require $200 of total production and review, "
-                    "cost per qualified inquiry is $20. Only signed, activated, economically "
-                    "acceptable accounts advance the acquisition scorecard. A page generating "
-                    "traffic without accepted opportunities is a research signal, not a "
-                    "profitable distribution asset. Retire duplicated pages instead of "
-                    "expanding a weak template across hundreds of locations."
-                ),
-                (
-                    "Outbound should be a research-to-conversation system rather than a message "
-                    "volume contest. Build narrowly defined lists from permitted sources, deduplicate "
-                    "company and contact records, and document why the offering fits each prospect. "
-                    "An LLM can turn a verified observation into a concise draft, but it cannot "
-                    "invent a processor relationship or claim to have audited a statement it "
-                    "has never seen. Under 15 U.S.C. § 7704, commercial email requires accurate "
-                    "transmission information, nondeceptive subjects, the applicable advertising "
-                    "identification, a valid postal address, and a functioning opt-out mechanism; "
-                    "honor opt-outs within the statutory period and suppress them across vendors. "
-                    "Telephone and text campaigns need separate analysis under 47 U.S.C. § 227 "
-                    "and implementing rules before activation. Keep the default workflow "
-                    "email-only until the proposed additional channel has been reviewed. In an "
-                    "illustrative cohort, 400 relevant messages produce twenty replies, eight "
-                    "qualified calls, four complete applications, and two activated merchants. "
-                    "If total acquisition effort costs $600, acquisition cost is $300 per "
-                    "activated merchant. At $79 monthly retained revenue, revenue-only payback "
-                    "is about 3.8 months; contribution payback takes longer after servicing "
-                    "costs and attrition. Track both instead of presenting the shorter number "
-                    "as recovered cash profit."
-                ),
-                (
-                    "Referrals and venue partnerships compound only when service capacity keeps "
-                    "pace with promises. Trigger a referral request after a verified positive "
-                    "service event and an account-owner review, not immediately after an "
-                    "automated satisfaction score. For ATM venues, use uptime, successful "
-                    "dispenses, cash-out hours, and reconciled surcharge sharing as the shared "
-                    "operating record. A venue with 400 monthly withdrawals and $1 retained "
-                    "contribution per withdrawal contributes $400 before unallocated overhead; "
-                    "a proposed $150 monthly exclusivity payment leaves $250 before those "
-                    "remaining costs. Do not confuse the withdrawn principal with sales. "
-                    "Offer reporting access that exposes only that venue's records, and "
-                    "restrict referral attribution links so they reveal no merchant account "
-                    "details. For pricing-led campaigns, distinguish a credit-card surcharge "
-                    "from a genuine cash discount or clearly displayed dual pricing. Card-brand "
-                    "rules, debit restrictions, sponsor requirements, and applicable state law "
-                    "must be evaluated against the actual implementation, not its marketing "
-                    "label. New York General Business Law § 518 makes displayed total credit "
-                    "pricing especially relevant there; do not transplant a national template "
-                    "without checking jurisdiction. When pricing evidence becomes stale, pause "
-                    "affected content and offers while continuing ordinary service and "
-                    "nonpricing educational outreach. Distribution should amplify verified "
-                    "operations, not conceal operational debt."
-                ),
-            ],
-            "table": {
-                "caption": "Distribution Loop Matrix: Observable Inputs, Conversion Math, and Stop Conditions",
-                "headers": [
-                    "Distribution loop and permitted source material",
-                    "Measurement connecting activity to retained economics",
-                    "Human review before publication or outreach",
-                    "Stop condition and safe operating alternative",
-                ],
-                "rows": [
-                    [
-                        "Publish merchant education derived from reviewed support resolutions",
-                        "Measure qualified inquiries against total production and review expense",
-                        "Editor verifies examples, jurisdiction, source dates, and merchant permissions",
-                        "Withdraw stale pricing pages while preserving accurate nonpricing guidance",
-                    ],
-                    [
-                        "Create venue case studies from reconciled ATM operating records",
-                        "Compare activated venue contribution against attributable acquisition spending",
-                        "Venue manager approves identification and verifies the measurement window",
-                        "Remove unsupported performance claims and retain anonymized internal analysis",
-                    ],
-                    [
-                        "Request introductions after documented service improvements and account review",
-                        "Track accepted introductions through activation rather than counting invitations",
-                        "Account owner verifies satisfaction and permission to share contact details",
-                        "Stop referral requests when unresolved service complaints remain open",
-                    ],
-                    [
-                        "Send narrow email campaigns using researched business relevance",
-                        "Calculate acquisition cost from activated merchants and complete campaign expense",
-                        "Reviewer checks sender identity, claims, postal address, and opt-out handling",
-                        "Suppress opted-out recipients across every connected sending and enrichment system",
-                    ],
-                    [
-                        "Compare pricing using current contracts and actual merchant statements",
-                        "Calculate retained contribution after concessions rather than advertised processing savings",
-                        "Operator verifies credit versus debit treatment and applicable jurisdiction",
-                        "Replace uncertain quotes with a reviewed request for source statements",
-                    ],
-                    [
-                        "Offer permissioned venue reporting that supports transparent renewal conversations",
-                        "Measure renewal contribution after venue payments and direct servicing costs",
-                        "Relationship owner checks venue-specific access and reconciled surcharge allocations",
-                        "Disable cross-account exposure immediately and provide verified individual statements",
-                    ],
-                    [
-                        "Attribute campaigns using first-party records and restricted referral identifiers",
-                        "Connect source identifiers to realized contribution after refunds and attrition",
-                        "Analyst checks duplicate attribution and excludes test or internal accounts",
-                        "Use documented manual attribution when automated identity matching becomes unreliable",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Scale with bounded actions, cash controls, and rehearsed recovery",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "ATM telemetry deserves a separate control plane because monitoring a "
-                    "machine is not authority to move cash. Collect timestamped cassette "
-                    "estimates, dispense counts, reject counts, communications status, and "
-                    "electronic-journal references from the authorized monitoring arrangement. "
-                    "Reconcile estimated cash against host transactions and physical balancing; "
-                    "dispense reversals and partial dispenses can break a simplistic counter. "
-                    "For an illustrative site holding $6,000 usable cash with expected "
-                    "withdrawals of $1,500 daily, nominal coverage is four days. With two "
-                    "days of replenishment lead time and a one-day safety buffer, issue an "
-                    "alert when usable cash reaches $4,500, adjusted for weekends and known "
-                    "events. The field contractor confirms conditions, while the authorized "
-                    "custodian approves cash movement through established procedures. Under "
-                    "12 CFR § 1005.16, a fee-charging ATM operator must provide the required "
-                    "fee notice on screen or paper before the consumer is committed and "
-                    "allow the consumer to elect to continue. Verify the actual terminal "
-                    "experience after configuration changes. FinCEN treatment depends on the "
-                    "actual services performed; do not assume conventional withdrawal-only "
-                    "ATM operation and additional money-transmission services have identical "
-                    "obligations. Keep the bank relationship, source-of-cash records, terminal "
-                    "configuration history, and service permissions aligned with the actual "
-                    "business model."
-                ),
-                (
-                    "Design failures as explicit states: received, validated, proposed, authorized, "
-                    "submitted, confirmed, reconciled, or held. A provider timeout after "
-                    "submission is an uncertain outcome, not proof that nothing happened. "
-                    "Before retrying a refund or application submission, query the documented "
-                    "status mechanism or obtain provider confirmation. Where supported, reuse "
-                    "the original idempotency key; where unsupported, require manual resolution "
-                    "before another consequential request. Retry temporary read failures with "
-                    "bounded exponential backoff and jitter, then move exhausted work into a "
-                    "dead-letter queue carrying the original event reference and a named "
-                    "owner. Do not retry authentication failures indefinitely or log secrets "
-                    "while debugging them. Monitor oldest unresolved item, duplicate-action "
-                    "count, reconciliation variance, stale telemetry minutes, and reviewer "
-                    "queue age. Set initial targets from actual contractual deadlines and "
-                    "service commitments, not arbitrary dashboard colors. Every day, compare "
-                    "counts and financial totals between source reports and processed records "
-                    "to detect missing events that error logs cannot reveal. Maintain "
-                    "encrypted backups, restricted restoration credentials, and a tested "
-                    "restore procedure. A replay drill should recover records without "
-                    "reissuing external actions. An incident is closed only when operational "
-                    "state, provider state, and ledger state agree, with the reconciliation "
-                    "evidence attached to the incident record."
-                ),
-                (
-                    "Scale distribution only after the exception system survives a controlled "
-                    "load test using synthetic or appropriately de-identified records. Double "
-                    "research and draft volume first, hold consequential action limits "
-                    "constant, and measure accepted outputs, reviewer minutes, provider "
-                    "errors, and downstream activation. In the Base case, the full-time "
-                    "operator retains pricing and relationship accountability while the "
-                    "three contractors maintain boarding, residual, and field-service "
-                    "queues. In the Scaled case, the second full-time role can own "
-                    "operations and quality, with four contractors supporting the "
-                    "documented workload. Those roles explain coverage, not a new "
-                    "profit forecast: the canonical $800,000 revenue and $440,000 "
-                    "owner profit remain unchanged. Review access when responsibilities "
-                    "change, revoke departed-user credentials promptly, and separate "
-                    "production secrets from development examples. Each week, inspect "
-                    "all high-impact exceptions and a stratified sample of ordinary "
-                    "automated completions across processors, merchant categories, "
-                    "venues, and acquisition sources. Track false passes separately "
-                    "from false holds because their consequences differ. If automation "
-                    "falls below the measured 70% target, fix the largest repetitive "
-                    "exception class rather than removing necessary review. The durable "
-                    "flywheel is better evidence producing fewer exceptions, faster "
-                    "service, stronger referrals, and more retained contribution per "
-                    "reviewer hour. Keep that loop measurable even when acquisition "
-                    "volume temporarily slows."
-                ),
-            ],
-            "table": {
-                "caption": "Recovery Matrix: Seven Failure States With Explicit Ownership and Restart Evidence",
-                "headers": [
-                    "Detected failure and immediate containment action",
-                    "Named operating responsibility and evidence required",
-                    "Manual fallback preserving customer service continuity",
-                    "Restart test before normal automation resumes",
-                ],
-                "rows": [
-                    [
-                        "Webhook signature validation fails and the payload enters quarantine",
-                        "Integration owner checks provider key rotation and authenticated delivery records",
-                        "Use authorized source exports without trusting the rejected payload",
-                        "Verify fresh signed events and reject replayed historical deliveries",
-                    ],
-                    [
-                        "IRIS CRM synchronization stops before a complete boarding packet exists",
-                        "Boarding contractor reconciles source documents against the last confirmed state",
-                        "Prepare a controlled packet through the sponsor's permitted alternative channel",
-                        "Match external application references before resuming queued submission work",
-                    ],
-                    [
-                        "Residual totals diverge from effective contractual retained-share calculations",
-                        "Residual analyst compares statement detail, contract versions, and adjustment notices",
-                        "Hold disputed changes while continuing verified undisputed reconciliation work",
-                        "Resolve variance with source evidence and independently reviewed calculations",
-                    ],
-                    [
-                        "Dispute provider times out after receiving a consequential request",
-                        "Dispute owner checks provider status and original transaction identifiers",
-                        "Create deadline-bearing manual review without issuing another uncertain refund",
-                        "Confirm terminal provider status and reconcile the processor posting",
-                    ],
-                    [
-                        "ATM heartbeat remains current while dispense or balance records conflict",
-                        "Field coordinator compares journal, host records, and custodian balancing evidence",
-                        "Arrange authorized physical inspection and restrict unreliable cash forecasting",
-                        "Reconcile actual usable cash and confirm successful controlled terminal testing",
-                    ],
-                    [
-                        "LLM output cites missing evidence or violates the required schema",
-                        "Quality reviewer checks source provenance and deterministic validation failures",
-                        "Use the verified template and manual extraction for affected cases",
-                        "Pass representative regression examples before restoring the revised prompt",
-                    ],
-                    [
-                        "Acquisition workflow ignores suppression or publishes outdated pricing examples",
-                        "Distribution owner checks suppression propagation and affected content versions",
-                        "Pause affected sends and pages while continuing direct service support",
-                        "Verify end-to-end suppression and reviewed replacement content before restart",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Baseline the work and freeze the definitions",
-                    "action": "Measure one representative week of research, qualification, fulfillment, and distribution work.",
-                    "detail": (
-                        "Assign a stable endpoint to every work category, record manual "
-                        "minutes and error rates, and exclude sponsor decisions from "
-                        "claims of completed automated underwriting."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Run the pipeline in observation mode",
-                    "action": "Ingest authorized events and generate proposals without consequential external execution.",
-                    "detail": (
-                        "Compare proposals with actual operator decisions, test duplicate "
-                        "delivery and missing-event detection, and attach source evidence "
-                        "to every material discrepancy."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Enable bounded low-risk completion",
-                    "action": "Release validated research, completeness checks, and reconciled internal alerts first.",
-                    "detail": (
-                        "Retain explicit human authorization for underwriting submissions, "
-                        "pricing exceptions, cash movements, and new consequential rules; "
-                        "use provider-supported controls for approved automatic dispute handling."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Prove recovery before increasing distribution",
-                    "action": "Rehearse outages, uncertain submissions, stale telemetry, and backup restoration.",
-                    "detail": (
-                        "Require matching source, provider, and ledger records after "
-                        "recovery, then raise acquisition throughput only while reviewer "
-                        "capacity and accepted-output economics remain within measured limits."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": (
-        "Automate the evidence and the repetition; keep authority over pricing, "
-        "cash, underwriting, and reputation."
-    ),
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Create a versioned event ledger with authenticated intake, duplicate detection, source references, and explicit consequential-action states.",
-        "Baseline eligible repetitive work and measure straight-through completion, accepted-output cost, reviewer minutes, and exception aging against the 70%+ target.",
-        "Reconcile retained residuals, gateway markups, and ATM surcharges to the exact $90,000, $445,000, and $800,000 annual scorecard revenue cases.",
-        "Test contracted IRIS CRM, Verifi RDR, Ethoca, and ATM monitoring capabilities without assuming unavailable endpoints, universal eligibility, or automatic cash authority.",
-        "Launch reviewed content, permissioned referrals, and suppressed-list-aware outbound with activated-account contribution attribution rather than traffic-only reporting.",
-        "Rehearse uncertain-outcome recovery and verify client-direct or prefunded fallback for agency reward arrangements before increasing automated throughput.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "12 CFR § 1005.16 — Disclosures at automated teller machines",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1005/section-1005.16",
-            "relevance": (
-                "A fee-charging ATM operator must provide the required fee notice "
-                "before commitment and permit the consumer to elect to continue; "
-                "test the actual terminal experience after configuration changes."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 1693o-2 — Reasonable fees and rules for payment card transactions",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1693o-2",
-            "relevance": (
-                "Establishes the federal debit-interchange and payment-card framework; "
-                "evaluate related implementing rules separately from card-brand surcharge "
-                "rules and state pricing requirements."
-            ),
-        },
-        {
-            "title": "12 CFR § 235.7 — Limitations on payment card restrictions",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-II/subchapter-A/part-235/section-235.7",
-            "relevance": (
-                "Addresses debit network exclusivity and routing restrictions; "
-                "routing automation must reflect the applicable transaction and "
-                "network arrangements rather than assume unrestricted processor choice."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for transmission of commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Defines commercial-email requirements relevant to sender identity, "
-                "subject lines, advertising identification, postal addresses, "
-                "opt-out mechanisms, and timely suppression."
-            ),
-        },
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Telephone and text acquisition require channel-specific review "
-                "of the proposed technology, recipient context, and applicable "
-                "authorization requirements before activation."
-            ),
-        },
-        {
-            "title": "New York General Business Law § 518 — Credit card surcharge pricing",
-            "url": "https://www.nysenate.gov/legislation/laws/GBS/518",
-            "relevance": (
-                "Requires attention to displayed total credit-card pricing and "
-                "limits the surcharge by reference to the seller's card charges; "
-                "review New York offers against the actual point-of-sale implementation."
-            ),
-        },
-        {
-            "title": "31 CFR § 1010.100(ff) — Money services business definitions",
-            "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/section-1010.100",
-            "relevance": (
-                "Evaluate the actual services performed against federal definitions "
-                "instead of assuming that every ATM arrangement or added funds-transfer "
-                "service receives the same treatment."
-            ),
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'atm-unit-economics-real-profit-hidden-costs-startup-budget',
+ 'question_prompt': 'What does an independent ATM really earn and cost, and is the business still worth '
+                    'starting?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'ATM Unit Economics: Real Profit, Hidden Costs, and Startup Budget',
+ 'subtitle': 'Where the ATM fee goes; surcharge and interchange revenue; per-machine profit math '
+             '(including $2,182/month and 10-machine breakdowns); hidden costs; real startup costs; ROI; '
+             'operator income claims from $15K to $20K/month; and 2026 honesty checks',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators running from one machine to nearly a hundred agree on one rule: an ATM is '
+                      'a location business, and the surcharge, usually $2.50 to $3.50 and up to $7 to $8 '
+                      'in clubs and bars, is where the money lives. Realistic per-machine startup lands '
+                      'between $4,700 and $8,500 once vault cash, install, formation, and reserves are '
+                      'counted, well above the $3,000 sales pitch. The street math is consistent. A 150 to '
+                      '300 transaction venue nets roughly $280 to $570 a month after location commission, '
+                      'processing, and connectivity, while sub-100 venues bleed. Operators split hard on '
+                      'four points: whether interchange flows to the owner, how big the location share '
+                      'should be (15% to 50%), whether to buy new or used, and whether to sign '
+                      'month-to-month or five-year contracts. Ten-machine route claims range from $3,000 '
+                      'to $7,825 a month net, and every one depends on bank access and vault-cash '
+                      'discipline.',
+ 'key_metrics': [{'label': 'Realistic Per-Machine Startup Budget',
+                  'metric': 'Realistic Per-Machine Startup Budget',
+                  'value': '$5,500 to $8,500 all-in',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'An operator with 55-plus machines rejects both the $20,000-$40,000 and the '
+                             '$500 startup claims and lands on this all-in range.',
+                  'source': 'Juan Jeronimo ([2iQEC3gV3oo @ 00:00:42])'},
+                 {'label': 'Operating Surplus at 200 Withdrawals',
+                  'metric': 'Operating Surplus at 200 Withdrawals',
+                  'value': '$370 surplus from $700 gross',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '200 withdrawals at $3.50, minus $100 network fees, $140 location share and '
+                             '$90 back-end; nearly half of gross vanishes.',
+                  'source': 'MASTER FINANCE TV ([pxfdlwdIz2E @ 00:01:28])'},
+                 {'label': 'Ten-Machine Route Net Profit',
+                  'metric': 'Ten-Machine Route Net Profit',
+                  'value': '$7,825/month net, $93,900/year, 3.6-month payback',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '10 machines at 350 transactions/month and a $3.50 surcharge, after $1 '
+                             'average commissions, 4G, insurance, gas and bank fees, at about 6 '
+                             'hours/week.',
+                  'source': 'Lines & Gains ([-6VRYcYBnSA @ 00:06:40])'},
+                 {'label': 'Working Capital Underestimation',
+                  'metric': 'Working Capital Underestimation',
+                  'value': 'Up to 300%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Students budgeting on the $3,000 pitch get hit by formation, bank fees, '
+                             'strap fees, scouting gas and extra vault cash.',
+                  'source': 'Philip Webb ([nAL1HBqHAl8 @ 00:01:31])'}],
+ 'sections': [{'number': 1,
+               'heading': 'The Practitioner Consensus',
+               'paragraphs': ['Location is the whole game. The Payout puts it bluntly: experienced '
+                              "operators say everything comes down to 'location, location, location,' and "
+                              'a weak placement clearing 50 transactions a month is the first reason '
+                              "machines fail [Q4wB_IBk6ik @ 00:01:40]. Mr.Money2.0 calls an ATM 'a "
+                              "location business disguised as a technology business.' They argue that "
+                              'density beats raw machine count, and that no operator should drive 45 '
+                              'minutes to service a $200-a-month unit [ipAviL3RhFM @ 00:00:53]. Juan '
+                              "Jeronimo runs 55-plus machines and says most people fail 'not because the "
+                              "ATM doesn't work, but because they put an ATM inside of a bad location.' "
+                              'They pin the gap between a $200 month and a $2,000 month on three filters: '
+                              'consistent traffic, cash-paying customers, and limited ATM competition '
+                              '[2iQEC3gV3oo @ 00:02:15]. CAPITAL COACH puts numbers on the range. A '
+                              'machine doing 100 transactions a month is slow, good locations do 300 to '
+                              '1,000, and bad ones do 30. Their instruction before signing anything is to '
+                              'spend two weeks counting [R1wscXZLkbw @ 00:12:27]. CAPITAL COACH also warns '
+                              'that large operators have already locked up the best venues and are paying '
+                              '30% to 50%-plus revenue share to hold them. A newcomer hunting for an open '
+                              'corner should expect to work second-tier, cash-heavy venues harder rather '
+                              'than inherit an easy win, and to walk away from any spot where the math '
+                              'fails.',
+                              'Surcharge is where the money lives, and practitioners agree on the band. '
+                              "The Payout puts a typical surcharge at $3.50 and calls it 'where most of "
+                              "the profit lives.' The operator nets roughly $1 to $2 per transaction after "
+                              'the location owner takes $0.50 to $1-plus and the processor takes a few '
+                              'cents [Q4wB_IBk6ik @ 00:00:37]. Revenue Stacks sets the standard range at '
+                              '$2.50 to $3.50, rising to $4 to $5 at bars and tourist spots [qJ7rTUZZ68c @ '
+                              '00:00:41]. The Business Guy reports clubs and bars charging $7 to $8, with '
+                              'bar hosts sometimes taking a 50/50 split on a raised fee [gaNeKJoK-74 @ '
+                              '00:11:07]. The consensus on gross versus net is just as firm. MASTER '
+                              'FINANCE TV starts with 200 withdrawals at $3.50 for $700 gross. They '
+                              'subtract $100 in network fees, $140 to the location and $90 back-end, which '
+                              "leaves a $370 operating surplus, and they note that 'nearly half' vanishes "
+                              'before the owner sees it [pxfdlwdIz2E @ 00:01:28]. Every one of these '
+                              'operators treats the gross surcharge as a vanity number. The working number '
+                              'is what survives the location split, processing, connectivity, and cash '
+                              'handling. On a mid-volume machine that lands between roughly $1 and $2 per '
+                              'swipe, which is why volume and venue quality matter far more than squeezing '
+                              'an extra fifty cents onto the posted fee.',
+                              "Startup budgets run well above the '$3,000 and you're in' pitch that Philip "
+                              "Webb disputes. Webb's student Tony expected to spend $4,000. Tony then "
+                              'absorbed $500 in corporation setup, $15 a month in bank fees, $1 per strap '
+                              'of cash, $100 a month in scouting gas, and $1,000 a month in extra vault '
+                              "cash. Webb concludes that working capital gets underestimated 'by as much "
+                              "as 300%' and that cash-flow timing beats total profitability [nAL1HBqHAl8 @ "
+                              '00:01:31]. Juan Jeronimo rejects both the $20,000-to-$40,000 scare numbers '
+                              'and the $500 fantasy and lands on $5,500 to $8,500 all-in. That covers '
+                              '$2,500 to $2,800 for a new machine and $1,000 to $3,000 of vault cash '
+                              'depending on the location [2iQEC3gV3oo @ 00:00:42]. The Business Vault '
+                              'insists on sequencing: prove locations, measure volume, track costs, then '
+                              'expand. Profit and available cash are not the same thing, so reserves must '
+                              'be planned before growth [7OKwcgW5-rw @ 00:08:40]. Revenue Stacks turns '
+                              'that into a concrete rule. Put one machine in a bar, barbershop, or '
+                              'cash-heavy retail spot and run it six months. Fund the next machine only '
+                              'once the first clears $250 to $400 a month consistently, and grow the route '
+                              'from proven cash flow rather than from projections [qJ7rTUZZ68c @ '
+                              '00:03:49].'],
+               'table': {'caption': 'Where ATM Operators Agree: Core Business Mechanics and Baseline '
+                                    'Prerequisites',
+                         'headers': ['Consensus Principle',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Location decides whether the machine survives',
+                                   'Weak placements doing 50 transactions a month are the top failure '
+                                   'cause',
+                                   'Scout and verify foot traffic before ordering any hardware at all',
+                                   'The Payout ([Q4wB_IBk6ik @ 00:01:40])'],
+                                  ['Count traffic yourself before signing anything',
+                                   'Spend two weeks counting; good spots run 300 to 1,000 transactions '
+                                   'monthly',
+                                   'Treat venues under 100 transactions a month as slow and marginal',
+                                   'CAPITAL COACH ([R1wscXZLkbw @ 00:12:27])'],
+                                  ['Surcharge is the real profit engine',
+                                   'A $3.50 surcharge leaves the operator roughly $1 to $2 per transaction',
+                                   'Model net per swipe and never project from the gross surcharge',
+                                   'The Payout ([Q4wB_IBk6ik @ 00:00:37])'],
+                                  ['Nearly half of gross revenue disappears',
+                                   '200 withdrawals at $3.50 produce $700 gross but only a $370 surplus',
+                                   'Budget network, location, and back-end fees before forecasting '
+                                   'take-home income',
+                                   'MASTER FINANCE TV ([pxfdlwdIz2E @ 00:01:28])'],
+                                  ['Real startup cost is $5,500 to $8,500',
+                                   'Both the $20,000-plus claims and the $500 claims are wrong',
+                                   'Fund machine, vault cash, and running costs before committing to a '
+                                   'location',
+                                   'Juan Jeronimo ([2iQEC3gV3oo @ 00:00:42])'],
+                                  ['Working capital is chronically underestimated',
+                                   'New operators miss formation, strap fees, gas, and extra vault cash by '
+                                   'up to 300%',
+                                   'Carry reserves because cash-flow timing beats total profitability on '
+                                   'paper',
+                                   'Philip Webb ([nAL1HBqHAl8 @ 00:01:31])'],
+                                  ['Prove one location before expanding the route',
+                                   'Prove locations, measure volume, track costs, then expand deliberately',
+                                   'Do not confuse profit with available cash when funding growth',
+                                   'The Business Vault YT ([7OKwcgW5-rw @ 00:08:40])']]}},
+              {'number': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Hardware pricing clusters tightly among practitioners who buy new. Juan '
+                              'Jeronimo says to buy new and recommends the Genmega G2500, and they flag '
+                              'recent malfunctions on the Hyosung Halo II [eSIQwH_sArI @ 00:12:45]. The '
+                              'Business Guy ran a live vendor call and was quoted $2,450 at cost for a '
+                              "Genmega or 'Halo 2,' plus a $350 install that an operator can drop once "
+                              'they learn to install it themselves. The unit ships from Austin, Texas in '
+                              'about two weeks, needs only power and internet, and bolts to the ground. '
+                              'The paperwork is exhibit two, exhibit three, and a W9. It clears in 24 to '
+                              '48 hours and is payable by credit card [gaNeKJoK-74 @ 00:04:16]. Lines & '
+                              'Gains budgets ten Genmega or Hyosung units at $2,400 each, plus $400 per '
+                              'machine for freight, bolting, and 4G, for $28,000 in hardware before a '
+                              'single dollar of vault cash [-6VRYcYBnSA @ 00:01:29]. Mr.Money2.0 warns '
+                              'that a $1,500 unreliable unit can end up costing more than a $2,500 to '
+                              '$4,000 new machine once downtime and repairs pile up [ipAviL3RhFM @ '
+                              "00:02:20]. The Business Guy's sequencing rule is strict: order a machine "
+                              'only after a location contract is signed. They also say to keep a blank '
+                              'contract in the car so a willing owner can sign on the spot during the '
+                              'pitch.',
+                              'The per-machine P&L is where operators show their work. money guy 2.0 runs '
+                              '150 transactions at $3 for $450 and adds $75 in interchange to reach $525. '
+                              'They subtract a 30% location cut of $157 and $80 in other costs to land '
+                              'around $280 to $300 net, or about $3,000 a month across ten machines '
+                              '[hulU30cthAs @ 00:05:43]. Revenue Stacks models 150 transactions plus '
+                              'interchange at about $480. They subtract $30 to $50 for processing, $15 to '
+                              '$20 for wireless, and a 25% merchant cut of about $112, for roughly $330 '
+                              'net [qJ7rTUZZ68c @ 00:01:45]. Mr.Money2.0 stretches the example to a '
+                              'stronger venue: $3,500 all-in and $6,000 cash. There, 500 transactions '
+                              'produce $1,500, and subtracting $250, $300, and $50 to $100 leaves $850 to '
+                              '$900 a month in contribution [ipAviL3RhFM @ 00:17:22]. The running costs at '
+                              'the bottom of the ledger are small. Juan Jeronimo pegs a modem at $150 to '
+                              '$200 one-time and eight rolls of receipt paper at about $60, enough to last '
+                              'a year and a half. Electricity runs $5 a month or less at 200 transactions '
+                              '[eSIQwH_sArI @ 00:23:01]. Across all four models the pattern repeats: fixed '
+                              'operating costs are trivial, and the location split is the dominant expense '
+                              'line every operator has to negotiate.',
+                              'Cash logistics and banking are the mechanics that break routes. The '
+                              'Business Guy works from a $60 average withdrawal across 24 daily users, '
+                              'which is $1,440 a day going out. At $20 withdrawals the machine needs a '
+                              'refill every four days [gaNeKJoK-74 @ 00:15:32]. The Payout notes that a '
+                              'busy ATM can burn $5,000 to $10,000 a week, and vault-cash providers charge '
+                              'a fee to cover that float [Q4wB_IBk6ik @ 00:01:56]. Juan Jeronimo runs two '
+                              "business accounts, 'one for your surcharge and one for your bulk cash.' "
+                              'They set it up that way after Bank of America froze their account during a '
+                              '$10,000 Friday withdrawal, with a 7-to-14-day hold. They report that Bank '
+                              'of America, Chase, and Wells Fargo will not work with ATM operators because '
+                              'those banks treat the business as high-risk [eSIQwH_sArI @ 00:08:32]. Lines '
+                              '& Gains says big banks flag weekly $15,000 cash pulls as MSB activity. '
+                              'Their fix has three parts: become an ISO affiliate, move to a regional '
+                              'ATM-friendly bank, and switch to armored provisioning once the route passes '
+                              '15 machines. Their rule is that you must never use a retail checking '
+                              'account for vault cash. They also report that half of new operators quit '
+                              'within 90 days, which shows how fast cash-flow and banking friction kill a '
+                              'fresh route [-6VRYcYBnSA @ 00:07:27].'],
+               'table': {'caption': 'Street-Level Line Items: Hardware, Connectivity, Commissions, Cash '
+                                    'and Coverage',
+                         'headers': ['Line Item',
+                                     'Practitioner Figure',
+                                     'Execution Detail',
+                                     'Expert Source'],
+                         'rows': [['New machine plus installation',
+                                   '$2,450 at cost plus a $350 install fee',
+                                   'Install fee can be waived once the operator learns to self-install',
+                                   'The Business Guy | Asset Protection Planners ([gaNeKJoK-74 @ '
+                                   '00:04:16])'],
+                                  ['Vault cash loaded per machine',
+                                   '$1,000 to $3,000 depending on the location',
+                                   'Size the float to venue volume rather than a fixed rule',
+                                   'Juan Jeronimo ([2iQEC3gV3oo @ 00:01:44])'],
+                                  ['Processing plus internet monthly running cost',
+                                   '$10 to $20 per month combined across both services',
+                                   'No contracts, no unnecessary fees, and no inventory to carry',
+                                   'Juan Jeronimo ([2iQEC3gV3oo @ 00:03:02])'],
+                                  ['Internet connection options for the machine',
+                                   "Owner's internet free, vendor at 20 cents per transaction, or own "
+                                   'modem at $20/month',
+                                   'Pick the connection that fits venue volume and the owner relationship',
+                                   'The Business Guy | Asset Protection Planners ([gaNeKJoK-74 @ '
+                                   '00:12:34])'],
+                                  ['Dedicated 4G line per machine',
+                                   '$12 per month per machine on a 4G connection',
+                                   'Never run the machine on store Wi-Fi because of PCI exposure',
+                                   'Lines & Gains ([-6VRYcYBnSA @ 00:05:00])'],
+                                  ['Fallback location commission offer',
+                                   '$0.25 to $1 per transaction or 15% to 20% of surcharge',
+                                   'Use the fallback when the free-placement pitch fails to close',
+                                   'Juan Jeronimo ([eSIQwH_sArI @ 00:22:02])'],
+                                  ['Insurance and theft tracking for ten machines',
+                                   'CGL plus inland marine coverage and GPS or AirTags for $350',
+                                   'Budget coverage and tracking as a fixed monthly route expense',
+                                   'Lines & Gains ([-6VRYcYBnSA @ 00:05:42])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small Moves Operators Use to Protect Margin and Close Placements',
+                           'body': 'These are tactical edges that working operators use while setting up '
+                                   'and pitching their machines.',
+                           'items': ["Keep the word 'ATM' out of your LLC name when forming the entity, "
+                                     'because ATMs are treated as high-risk by major banks [Juan Jeronimo '
+                                     '— eSIQwH_sArI @ 00:02:16]',
+                                     'Pitch merchants around the Square fees they already pay on card '
+                                     'sales, so the ATM reads as a cost-saver rather than a favor [Juan '
+                                     'Jeronimo — eSIQwH_sArI @ 00:21:16]',
+                                     "Project volume from foot traffic: roughly 4% to 8% of a venue's foot "
+                                     'traffic uses the ATM, which lets you sanity-check a spot before '
+                                     'signing [The Business Guy | Asset Protection Planners — gaNeKJoK-74 '
+                                     '@ 00:11:20]',
+                                     'Load circulated bills rather than sequential new ones, and open the '
+                                     'bank account and sign three location contracts before ordering a '
+                                     'single machine [Lines & Gains — -6VRYcYBnSA @ 00:08:57]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Form the Entity and Set Up Split Banking',
+                              'action': 'Form an LLC, get the EIN, and open separate surcharge and '
+                                        'bulk-cash accounts with an ATM-friendly bank.',
+                              'detail': "Use Bizee's $0 basic package with the $300 Texas state fee and "
+                                        'pay $50 to expedite (3 days instead of 4 weeks), then run two '
+                                        'accounts, one for surcharge and one for bulk cash [Juan Jeronimo '
+                                        '— eSIQwH_sArI @ 00:01:49]'},
+                             {'step': 2,
+                              'title': 'Prospect and Count Locations',
+                              'action': 'Pitch five locations for every one or two you expect to close, '
+                                        'and count traffic before committing.',
+                              'detail': 'Aim for 5 locations and count 1 to 2 as a win. One new location a '
+                                        'week compounds to 52 a year [NateCity — d2GxgAYdUig @ 00:02:34]'},
+                             {'step': 3,
+                              'title': 'Sign First, Then Order Hardware',
+                              'action': 'Order a machine only after a signed contract is in hand.',
+                              'detail': 'A roughly $2,200 machine holds $16,000 to $24,000. Order only '
+                                        'after a signed contract, keep a contract in your car, and go '
+                                        'month-to-month [The Business Guy | Asset Protection Planners — '
+                                        'gaNeKJoK-74 @ 00:07:20]'},
+                             {'step': 4,
+                              'title': 'Track Every Machine Against Data',
+                              'action': 'Log monthly transactions, net revenue after costs, and '
+                                        'consistency for each location before adding the next.',
+                              'detail': 'Track whether each location is steady, spiky, or seasonal, along '
+                                        'with monthly transactions, net revenue after cost, and '
+                                        "consistency, because 'a system that can be repeated is the "
+                                        "business' [Philip Webb — y2XZeV3G0YU @ 00:01:46]"}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split on the floor is new iron versus used iron. The Business '
+                              'Guy | Asset Protection Planners tells viewers to buy new, warning that used '
+                              'Craigslist ATMs can carry software that sends card data straight back to '
+                              'the seller [gaNeKJoK-74 @ 00:02:08]. Lines & Gains pushes the liability '
+                              'angle further: no used Craigslist units, because a reader without EMV '
+                              'leaves the operator personally liable, so their 10-machine model prices '
+                              'Genmega or Hyosung units at $2,400 each, plus $400 apiece for freight, '
+                              'bolting and 4G, for $28,000 in hardware [-6VRYcYBnSA @ 00:01:29]. The '
+                              'Business Vault YT adds the quieter cost argument: used machines look '
+                              'cheaper, but repairs can quickly erase those savings [7OKwcgW5-rw @ '
+                              '00:00:52]. NateCity runs the opposite playbook. Operating a little under '
+                              '100 machines, they say the best first move is to buy a used unit on '
+                              'Facebook Marketplace for $1,500 to $1,800 against roughly $2,500 from the '
+                              'factory, then learn the software, restarts and filling head to toe before '
+                              'ever hunting a location or a processor [d2GxgAYdUig @ 00:08:24]. The '
+                              'practical read: the new-machine camp is paying to eliminate data-theft and '
+                              'EMV liability, while NateCity is buying cheap tuition on the hardware '
+                              'itself before committing serious capital to placement and vault cash.',
+                              'How much of the surcharge to hand the host is the second open fight, and '
+                              'the spread is wide. Juan Jeronimo keeps a fallback offer ready of $0.25 to '
+                              '$1 per transaction, or 15 to 20 percent of the surcharge, for hosts who '
+                              'will not take the machine on the first pitch [eSIQwH_sArI @ 00:22:02]. '
+                              'Mr.Money2.0 shows why every point matters: on $2,400 in revenue, a 20 '
+                              'percent split costs $480, while a 40 percent split costs $960 [ipAviL3RhFM '
+                              "@ 00:09:02]. That gap alone is $480 a month off a single machine's top "
+                              'line. CAPITAL COACH paints the harsher market, where the best spots are '
+                              'already locked up by large operators and revenue shares run 30 to 50 '
+                              'percent and higher, leaving the owner about $1 a swipe [R1wscXZLkbw @ '
+                              '00:04:04]. Lines & Gains abandons percentages entirely and tiers a flat '
+                              'commission by volume: $0.50 at 200 swipes, $1 to $1.50 at 400 swipes, '
+                              'averaging $1, which comes to $3,500 a month across a 10-machine, '
+                              '3,500-transaction route [-6VRYcYBnSA @ 00:04:23]. The operator takeaway is '
+                              'that the split is a negotiated number rather than a fixed industry rate, so '
+                              'the deal structure, flat or percentage, has to be decided and signed before '
+                              'the machine ever ships to the address.',
+                              'Contract term and time commitment are the last two fault lines. The '
+                              'Business Guy | Asset Protection Planners tells operators to keep a contract '
+                              'in the car, sign on the spot, and go month-to-month [gaNeKJoK-74 @ '
+                              '00:08:12], while Lines & Gains insists on 5-year contracts and refuses to '
+                              'order a single machine until the bank account is open and 3 contracts are '
+                              'signed [-6VRYcYBnSA @ 00:08:57]. One camp optimizes for speed and easy '
+                              'closes; the other locks in the location before any capital moves. On labor, '
+                              "the passive pitch cracks under the operators' own numbers. NateCity first "
+                              'described running a little under 100 machines solo in a few hours a week, '
+                              "then reversed their earlier 'not full-time' stance, noting that owners with "
+                              '100 to 200 ATMs run it full-time and that doubling their own count would '
+                              'require employees or a system [d2GxgAYdUig @ 00:05:05]. Philip Webb rejects '
+                              "'passive' outright and calls the business predictable, controllable and "
+                              'boring, a model that rewards patience and structure [y2XZeV3G0YU @ '
+                              '00:02:33]. Either way, every hour spent on checks, refills and installs is '
+                              'a real cost that never shows up in the surcharge math, and it compounds as '
+                              'the route grows.'],
+               'table': {'caption': 'Head-to-head playbook conflicts on hardware, fees, splits, contracts, '
+                                    'labor and budget',
+                         'headers': ['Fault Line', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['New versus used ATM hardware purchase',
+                                   'Buy new: used Craigslist units can carry software sending card data to '
+                                   'the seller, and non-EMV readers leave you personally liable',
+                                   'Buy used on Facebook Marketplace for $1,500 to $1,800 versus about '
+                                   '$2,500 factory, then learn it head to toe',
+                                   'The Business Guy | Asset Protection Planners ([gaNeKJoK-74 @ '
+                                   '00:02:08]); Lines & Gains ([-6VRYcYBnSA @ 00:01:29]); NateCity '
+                                   '([d2GxgAYdUig @ 00:08:24])'],
+                                  ['Who actually collects the interchange money',
+                                   "The customer's bank pays the owner about $0.15 to $0.25, or $0.50 to "
+                                   '$1 back to the owner',
+                                   'Interchange is a fee the bank charges, about $1, or processors keep it '
+                                   'under free processing deals',
+                                   'The Payout ([Q4wB_IBk6ik @ 00:00:48]); money guy 2.0 ([hulU30cthAs @ '
+                                   '00:01:44]); CAPITAL COACH ([R1wscXZLkbw @ 00:01:51]); Juan Jeronimo '
+                                   '([eSIQwH_sArI @ 00:11:30])'],
+                                  ['What transaction processing really costs the operator',
+                                   'Free processing with no contract, so 100 transactions at $3.50 is $350 '
+                                   'and 100 percent yours',
+                                   'Budget $0.50 per transaction, or $30 to $50 a month, or a $39 flat fee '
+                                   'plus 25 cents per transaction',
+                                   'Juan Jeronimo ([eSIQwH_sArI @ 00:10:17]); Mr.Money2.0 ([ipAviL3RhFM @ '
+                                   '00:04:15]); Revenue Stacks ([qJ7rTUZZ68c @ 00:01:45]); The Business '
+                                   'Guy | Asset Protection Planners ([gaNeKJoK-74 @ 00:05:36])'],
+                                  ['Location owner share of each surcharge',
+                                   'Fallback offer of $0.25 to $1 per transaction or 15 to 20 percent of '
+                                   'the surcharge',
+                                   'Expect 25 percent up to 35, 50/50 at bars with a raised fee, and 30 to '
+                                   '50 percent plus at prime spots',
+                                   'Juan Jeronimo ([eSIQwH_sArI @ 00:22:02]); The Business Guy | Asset '
+                                   'Protection Planners ([gaNeKJoK-74 @ 00:11:07]); CAPITAL COACH '
+                                   '([R1wscXZLkbw @ 00:04:04])'],
+                                  ['Length of the location placement contract',
+                                   'Keep a contract in your car, sign on the spot, and go month-to-month '
+                                   'with the host',
+                                   'Sign 5-year contracts and have 3 signed plus the bank account open '
+                                   'before ordering any machine',
+                                   'The Business Guy | Asset Protection Planners ([gaNeKJoK-74 @ '
+                                   '00:08:12]); Lines & Gains ([-6VRYcYBnSA @ 00:08:57])'],
+                                  ['Passive side income versus real full-time job',
+                                   'A few hours a week for a little under 100 machines, or about 6 hours a '
+                                   'week for 10',
+                                   'Owners with 100 to 200 ATMs run it full-time; the business is '
+                                   'predictable, controllable and boring',
+                                   'NateCity ([d2GxgAYdUig @ 00:06:19]); Lines & Gains ([-6VRYcYBnSA @ '
+                                   '00:06:40]); NateCity ([d2GxgAYdUig @ 00:05:05]); Philip Webb '
+                                   '([y2XZeV3G0YU @ 00:02:33])'],
+                                  ['Realistic all-in startup budget for one machine',
+                                   '$4,700 to $5,000 including an LLC of about $500 and about $2,000 in '
+                                   'vault cash',
+                                   "$5,500 to $8,500 is realistic, and the '$3,000 and you're in' claim "
+                                   'gets disputed outright',
+                                   'The Business Guy | Asset Protection Planners ([gaNeKJoK-74 @ '
+                                   '00:10:27]); Juan Jeronimo ([2iQEC3gV3oo @ 00:00:42]); Philip Webb '
+                                   '([nAL1HBqHAl8 @ 00:00:00])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Bad placement is the failure every practitioner names first. The Payout '
+                              'lists the three ways operators die: locations doing 50 transactions a '
+                              'month, running out of cash, and giving away too much surcharge [Q4wB_IBk6ik '
+                              '@ 00:02:50]. Juan Jeronimo, who reports owning 55-plus ATMs, puts it '
+                              "bluntly: most people fail not because the ATM doesn't work but because they "
+                              'put it inside a bad location, and location quality is the difference '
+                              'between $200 and $2,000 a month [2iQEC3gV3oo @ 00:02:15]. MASTER FINANCE TV '
+                              'draws the loss line at 75 transactions a month, where the machine operates '
+                              'at a loss, against 400 a month for high gross [pxfdlwdIz2E @ 00:01:45]. The '
+                              'Business Vault YT runs the weak-site math explicitly: 90 transactions at $3 '
+                              'is $270, which may not cover costs, while 300 transactions producing $900 '
+                              'minus $500 in expenses leaves $400 before insurance, travel and taxes '
+                              '[7OKwcgW5-rw @ 00:07:16]. The pattern is consistent across all four: the '
+                              'machine, the processor and the surcharge are commodities, and the '
+                              'transaction count at the specific address decides whether the unit earns or '
+                              "bleeds. The Business Vault YT's rule for that slow address is short: when "
+                              "the math doesn't work, walk away, and redeploy the hardware and vault cash "
+                              'to a site that can carry it.',
+                              'The second killer is cash, both running out of it and parking it in the '
+                              'wrong bank. Juan Jeronimo says ATMs are treated as high-risk and that Bank '
+                              "of America, Chase and Wells Fargo don't work with them; Bank of America "
+                              'froze their account during a $10,000 Friday withdrawal and imposed a '
+                              '7-to-14-day hold [eSIQwH_sArI @ 00:07:11]. Lines & Gains reports the same '
+                              'trap at scale: big banks flag weekly $15,000 cash pulls as MSB activity, so '
+                              'the fix is becoming an ISO affiliate, banking with a regional ATM-friendly '
+                              'bank, and moving to armored provisioning past 15 machines [-6VRYcYBnSA @ '
+                              "00:07:27]. Philip Webb's student who started with $500 in vault cash "
+                              'watched the ATM sit empty 1 to 2 days per cycle, and the instruction was '
+                              "blunt: don't take any more locations until you fix this [nAL1HBqHAl8 @ "
+                              '00:03:14]. The Business Vault YT names the underlying error: profit and '
+                              'available cash are not the same thing, so reserves have to be planned '
+                              'before expanding [7OKwcgW5-rw @ 00:06:03]. An empty machine earns zero '
+                              'surcharge for every hour it sits dark, and a frozen account stalls every '
+                              'refill on the route at once, which is why the banking relationship gets '
+                              'settled before the first box ships.',
+                              "The budget blowups come from line items nobody prices in. Philip Webb's "
+                              'student Tony expected to start for $4,000 and then hit $500 in corporation '
+                              'setup, $15 a month in bank fees, $1 per strap of money, $100 a month in '
+                              'scouting gas and $1,000 a month in extra vault cash, which is why Webb says '
+                              'working capital gets underestimated by as much as 300 percent [nAL1HBqHAl8 '
+                              '@ 00:00:39]. CAPITAL COACH flags the attack side: operators field '
+                              "fake-processor 'test' calls and jackpotting malware aimed at draining the "
+                              'machine [R1wscXZLkbw @ 00:10:45]. money guy 2.0 warns of sellers pushing '
+                              'unplaced machines and pyramid-style selling, and says to demand transaction '
+                              'history before paying for anything [hulU30cthAs @ 00:08:02]. NateCity adds '
+                              'the slow-burn failure: a route that stops expanding declines, because '
+                              'stores close and clients drop the machine [d2GxgAYdUig @ 00:02:04]. Put '
+                              'together, the real startup line is not just the box and the cash; it is '
+                              'formation, bank fees, strap fees, gas, reserves and a prospecting pipeline '
+                              "that never shuts off. Webb's own rule is to wait 6 months and build "
+                              'properly rather than launch underfunded and fail in 90 days.'],
+               'table': {'caption': 'Firsthand losses, traps and the countermeasures operators teach',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Countermeasure Practitioners Teach',
+                                     'Expert Source'],
+                         'rows': [['Dead location bleeding the machine every month',
+                                   'Bad locations clear about 50 transactions a month, alongside running '
+                                   'out of cash and overpaying surcharge',
+                                   'Treat location as the whole game and refuse sites that cannot show '
+                                   'volume',
+                                   'The Payout ([Q4wB_IBk6ik @ 00:02:50])'],
+                                  ['Big-bank account freeze on vault cash withdrawal',
+                                   'Bank of America froze the account during a $10,000 Friday withdrawal '
+                                   'with a 7 to 14 day hold',
+                                   'Bank with an ATM-friendly institution and keep separate surcharge and '
+                                   'bulk cash accounts',
+                                   'Juan Jeronimo ([eSIQwH_sArI @ 00:07:11])'],
+                                  ['Weekly cash pulls flagged as MSB activity',
+                                   'Big banks flag weekly $15,000 cash pulls once the route reaches real '
+                                   'scale',
+                                   'Become an ISO affiliate, use a regional ATM-friendly bank, and go '
+                                   'armored past 15 machines',
+                                   'Lines & Gains ([-6VRYcYBnSA @ 00:07:27])'],
+                                  ['Undercapitalized vault leaves the ATM sitting empty',
+                                   'A student loading only $500 in vault cash saw the ATM empty 1 to 2 '
+                                   'days per cycle',
+                                   'Stop taking any more locations until the cash shortfall is fixed '
+                                   'completely',
+                                   'Philip Webb ([nAL1HBqHAl8 @ 00:03:14])'],
+                                  ['Compromised used machine from an online classified listing',
+                                   'Used Craigslist ATMs can carry software that sends customer card data '
+                                   'to the seller',
+                                   'Buy new hardware from established vendors instead of anonymous used '
+                                   'listings',
+                                   'The Business Guy | Asset Protection Planners ([gaNeKJoK-74 @ '
+                                   '00:02:08])'],
+                                  ['Turnkey seller scams with machines never placed',
+                                   'Sellers push unplaced machines and pyramid-style selling schemes on '
+                                   'new operators',
+                                   'Demand real transaction history before paying for any machine or '
+                                   'placement',
+                                   'money guy 2.0 ([hulU30cthAs @ 00:08:02])'],
+                                  ['Thin-volume machine with a long payback period',
+                                   '150 transactions a month nets about $100 to $200, stretching payback '
+                                   'to 15 to 30 months',
+                                   'Price the payback per site before committing capital to a 40-machine '
+                                   'route',
+                                   'CAPITAL COACH ([R1wscXZLkbw @ 00:09:36])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Do Not Ship a Machine Until These Clear',
+                           'body': 'Every gate below comes from a loss, freeze or empty-machine cycle a '
+                                   'practitioner reported firsthand.',
+                           'items': ['Order hardware only after a signed location contract is in hand [The '
+                                     'Business Guy | Asset Protection Planners — gaNeKJoK-74 @ 00:07:20].',
+                                     'Never park vault cash in a retail checking account; move it to an '
+                                     'ATM-friendly bank before the route scales [Lines & Gains — '
+                                     '-6VRYcYBnSA @ 00:07:45].',
+                                     'Spend 2 weeks counting traffic at the site before committing a '
+                                     'machine to it [CAPITAL COACH — R1wscXZLkbw @ 00:12:27].',
+                                     'Take no new locations while any existing machine is running empty '
+                                     'between refills [Philip Webb — nAL1HBqHAl8 @ 00:03:14].']}}],
+ 'pull_quote': '"This is where most people fail, not because the ATM doesn\'t work, but because they put '
+               'an ATM inside of a bad location." — Juan Jeronimo (2iQEC3gV3oo @ 00:02:15).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Spend 2 weeks counting foot traffic at a prospective site before placing anything '
+                      '[CAPITAL COACH — R1wscXZLkbw @ 00:12:27].',
+                      'Demand actual transaction history before buying any machine, placement or existing '
+                      'location [Mr.Money2.0 — ipAviL3RhFM @ 00:15:29].',
+                      'Open two bank accounts, one for your surcharge and one for your bulk cash [Juan '
+                      'Jeronimo — eSIQwH_sArI @ 00:08:32].',
+                      'Run each machine on its own 4G line at about $12 a month and never on store Wi-Fi '
+                      '[Lines & Gains — -6VRYcYBnSA @ 00:05:00].',
+                      'Pitch 5 locations for every 1 to 2 you expect to close, and aim for one new '
+                      'location a week [NateCity — d2GxgAYdUig @ 00:02:34].',
+                      'Start with one machine in a bar, barbershop or cash-heavy retail spot, run it 6 '
+                      'months, and fund the next only at a consistent $250 to $400 a month [Revenue Stacks '
+                      '— qJ7rTUZZ68c @ 00:03:49].'],
+ 'statutory_citations': [{'title': 'Juan Jeronimo — How Much Does It Cost to Start an ATM Business (Full '
+                                   'Breakdown) [00:00:42]',
+                          'url': 'https://www.youtube.com/watch?v=2iQEC3gV3oo&t=42s',
+                          'relevance': 'Primary practitioner testimony on a realistic $5,500 to $8,500 '
+                                       'startup budget from an operator of 55-plus ATMs.'},
+                         {'title': 'Philip Webb — Everything You Need to Know About Starting an ATM '
+                                   'Business [00:00:39]',
+                          'url': 'https://www.youtube.com/watch?v=nAL1HBqHAl8&t=39s',
+                          'relevance': 'Primary practitioner testimony on hidden startup costs and working '
+                                       'capital underestimated by as much as 300 percent.'},
+                         {'title': 'Lines & Gains — I Analyzed the Real Math of Owning 10 ATMs in America '
+                                   '(2026 Profit Breakdown) [00:07:27]',
+                          'url': 'https://www.youtube.com/watch?v=-6VRYcYBnSA&t=447s',
+                          'relevance': 'Primary practitioner testimony on MSB flags from big banks, ISO '
+                                       'affiliation and armored provisioning past 15 machines.'},
+                         {'title': 'Mr.Money2.0 — How Independent ATM Operators ACTUALLY Make Millions '
+                                   '(Hint: It’s Not Banking Fees) [00:17:22]',
+                          'url': 'https://www.youtube.com/watch?v=ipAviL3RhFM&t=1042s',
+                          'relevance': 'Primary practitioner testimony on per-machine contribution after '
+                                       'processing, location split and running costs.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'Q4wB_IBk6ik',
+                       'title': 'The ATM Business Nobody Talks About 💵 (Explained In 4 Minutes)',
+                       'channel': 'The Payout',
+                       'author': 'The Payout',
+                       'text': "That's why experienced operators say the whole game comes down to one "
+                               'thing: location, location, location.',
+                       'tip': "That's why experienced operators say the whole game comes down to one "
+                              'thing: location, location, location.',
+                       'timestamp': 100,
+                       'timestamp_seconds': 100,
+                       'timestamp_label': '[00:01:40]',
+                       'url': 'https://www.youtube.com/watch?v=Q4wB_IBk6ik&t=100s',
+                       'markdown': '[00:01:40](https://www.youtube.com/watch?v=Q4wB_IBk6ik&t=100s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ipAviL3RhFM',
+                       'title': 'How Independent ATM Operators ACTUALLY Make Millions (Hint: It’s Not '
+                                'Banking Fees)',
+                       'channel': 'Mr.Money2.0',
+                       'author': 'Mr.Money2.0',
+                       'text': 'Good machines multiply your cash flow.',
+                       'tip': 'Good machines multiply your cash flow.',
+                       'timestamp': 393,
+                       'timestamp_seconds': 393,
+                       'timestamp_label': '[00:06:33]',
+                       'url': 'https://www.youtube.com/watch?v=ipAviL3RhFM&t=393s',
+                       'markdown': '[00:06:33](https://www.youtube.com/watch?v=ipAviL3RhFM&t=393s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pxfdlwdIz2E',
+                       'title': 'How Much Money Does Owning an ATM Really Make?',
+                       'channel': 'MASTER FINANCE TV',
+                       'author': 'MASTER FINANCE TV',
+                       'text': 'The owner is left with an operating surplus of $370.',
+                       'tip': 'The owner is left with an operating surplus of $370.',
+                       'timestamp': 88,
+                       'timestamp_seconds': 88,
+                       'timestamp_label': '[00:01:28]',
+                       'url': 'https://www.youtube.com/watch?v=pxfdlwdIz2E&t=88s',
+                       'markdown': '[00:01:28](https://www.youtube.com/watch?v=pxfdlwdIz2E&t=88s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7OKwcgW5-rw',
+                       'title': 'How Much Money Does an ATM Business REALLY Make?',
+                       'channel': 'The Business Vault YT',
+                       'author': 'The Business Vault YT',
+                       'text': 'Profit and available cash are not the same thing.',
+                       'tip': 'Profit and available cash are not the same thing.',
+                       'timestamp': 363,
+                       'timestamp_seconds': 363,
+                       'timestamp_label': '[00:06:03]',
+                       'url': 'https://www.youtube.com/watch?v=7OKwcgW5-rw&t=363s',
+                       'markdown': '[00:06:03](https://www.youtube.com/watch?v=7OKwcgW5-rw&t=363s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'R1wscXZLkbw',
+                       'title': 'The Hidden Costs of Owning an ATM 🏧',
+                       'channel': 'CAPITAL COACH',
+                       'author': 'CAPITAL COACH',
+                       'text': 'Spend 2 weeks counting.',
+                       'tip': 'Spend 2 weeks counting.',
+                       'timestamp': 747,
+                       'timestamp_seconds': 747,
+                       'timestamp_label': '[00:12:27]',
+                       'url': 'https://www.youtube.com/watch?v=R1wscXZLkbw&t=747s',
+                       'markdown': '[00:12:27](https://www.youtube.com/watch?v=R1wscXZLkbw&t=747s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'l2IVnP9Bnwk',
+                       'title': 'Where Does Your $5 ATM Fee Actually Go?',
+                       'channel': 'Future Investor',
+                       'author': 'Future Investor',
+                       'text': '100 transactions at $5 is $500 gross, not $500 of profit.',
+                       'tip': '100 transactions at $5 is $500 gross, not $500 of profit.',
+                       'timestamp': 255,
+                       'timestamp_seconds': 255,
+                       'timestamp_label': '[00:04:15]',
+                       'url': 'https://www.youtube.com/watch?v=l2IVnP9Bnwk&t=255s',
+                       'markdown': '[00:04:15](https://www.youtube.com/watch?v=l2IVnP9Bnwk&t=255s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eSIQwH_sArI',
+                       'title': '6 Years of ATM Business Knowledge in 25 Mins ($15,000 Per Month)',
+                       'channel': 'Juan Jeronimo',
+                       'author': 'Juan Jeronimo',
+                       'text': 'One for your surcharge and one for your bulk cash.',
+                       'tip': 'One for your surcharge and one for your bulk cash.',
+                       'timestamp': 512,
+                       'timestamp_seconds': 512,
+                       'timestamp_label': '[00:08:32]',
+                       'url': 'https://www.youtube.com/watch?v=eSIQwH_sArI&t=512s',
+                       'markdown': '[00:08:32](https://www.youtube.com/watch?v=eSIQwH_sArI&t=512s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hulU30cthAs',
+                       'title': 'The Economics of Owning ATM Machines | Costs, Surcharge Profits & ROI',
+                       'channel': 'money guy 2.0',
+                       'author': 'money guy 2.0',
+                       'text': 'The math simply will not work in your favor long-term.',
+                       'tip': 'The math simply will not work in your favor long-term.',
+                       'timestamp': 893,
+                       'timestamp_seconds': 893,
+                       'timestamp_label': '[00:14:53]',
+                       'url': 'https://www.youtube.com/watch?v=hulU30cthAs&t=893s',
+                       'markdown': '[00:14:53](https://www.youtube.com/watch?v=hulU30cthAs&t=893s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qJ7rTUZZ68c',
+                       'title': "Start an ATM Machine Business. Here's the Real Math + How to do it",
+                       'channel': 'Revenue Stacks',
+                       'author': 'Revenue Stacks',
+                       'text': 'Routes trade at roughly 12 to 24 times the monthly net.',
+                       'tip': 'Routes trade at roughly 12 to 24 times the monthly net.',
+                       'timestamp': 170,
+                       'timestamp_seconds': 170,
+                       'timestamp_label': '[00:02:50]',
+                       'url': 'https://www.youtube.com/watch?v=qJ7rTUZZ68c&t=170s',
+                       'markdown': '[00:02:50](https://www.youtube.com/watch?v=qJ7rTUZZ68c&t=170s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gaNeKJoK-74',
+                       'title': 'How to Start an ATM Business | How Much Can You MAKE?',
+                       'channel': 'The Business Guy | Asset Protection Planners',
+                       'author': 'The Business Guy | Asset Protection Planners',
+                       'text': 'Buy new, because used Craigslist ATMs can carry software that sends card '
+                               'data to the seller.',
+                       'tip': 'Buy new, because used Craigslist ATMs can carry software that sends card '
+                              'data to the seller.',
+                       'timestamp': 128,
+                       'timestamp_seconds': 128,
+                       'timestamp_label': '[00:02:08]',
+                       'url': 'https://www.youtube.com/watch?v=gaNeKJoK-74&t=128s',
+                       'markdown': '[00:02:08](https://www.youtube.com/watch?v=gaNeKJoK-74&t=128s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qUuX7pVlywk',
+                       'title': 'How to Start an ATM Business - $2,182 Profit/Mo. Per Machine',
+                       'channel': 'The Business Guy | Asset Protection Planners',
+                       'author': 'The Business Guy | Asset Protection Planners',
+                       'text': 'So, buy new.',
+                       'tip': 'So, buy new.',
+                       'timestamp': 176,
+                       'timestamp_seconds': 176,
+                       'timestamp_label': '[00:02:56]',
+                       'url': 'https://www.youtube.com/watch?v=qUuX7pVlywk&t=176s',
+                       'markdown': '[00:02:56](https://www.youtube.com/watch?v=qUuX7pVlywk&t=176s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2iQEC3gV3oo',
+                       'title': 'How Much Does It Cost to Start an ATM Business (Full Breakdown)',
+                       'channel': 'Juan Jeronimo',
+                       'author': 'Juan Jeronimo',
+                       'text': "This is where most people fail, not because the ATM doesn't work, but "
+                               'because they put an ATM inside of a bad location.',
+                       'tip': "This is where most people fail, not because the ATM doesn't work, but "
+                              'because they put an ATM inside of a bad location.',
+                       'timestamp': 135,
+                       'timestamp_seconds': 135,
+                       'timestamp_label': '[00:02:15]',
+                       'url': 'https://www.youtube.com/watch?v=2iQEC3gV3oo&t=135s',
+                       'markdown': '[00:02:15](https://www.youtube.com/watch?v=2iQEC3gV3oo&t=135s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'd2GxgAYdUig',
+                       'title': 'Is the ATM Business Still Worth It in 2026? My Honest Breakdown',
+                       'channel': 'NateCity',
+                       'author': 'NateCity',
+                       'text': 'The best thing you can do if you want to start, just go buy a machine and '
+                               'learn how it works from head to toe.',
+                       'tip': 'The best thing you can do if you want to start, just go buy a machine and '
+                              'learn how it works from head to toe.',
+                       'timestamp': 504,
+                       'timestamp_seconds': 504,
+                       'timestamp_label': '[00:08:24]',
+                       'url': 'https://www.youtube.com/watch?v=d2GxgAYdUig&t=504s',
+                       'markdown': '[00:08:24](https://www.youtube.com/watch?v=d2GxgAYdUig&t=504s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'y2XZeV3G0YU',
+                       'title': 'Before You Start an ATM Business, Watch This',
+                       'channel': 'Philip Webb',
+                       'author': 'Philip Webb',
+                       'text': 'ATMs do not work on timelines.',
+                       'tip': 'ATMs do not work on timelines.',
+                       'timestamp': 57,
+                       'timestamp_seconds': 57,
+                       'timestamp_label': '[00:00:57]',
+                       'url': 'https://www.youtube.com/watch?v=y2XZeV3G0YU&t=57s',
+                       'markdown': '[00:00:57](https://www.youtube.com/watch?v=y2XZeV3G0YU&t=57s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'y2XZeV3G0YU',
+                       'title': 'Before You Start an ATM Business, Watch This',
+                       'channel': 'Philip Webb',
+                       'author': 'Philip Webb',
+                       'text': 'ATM business rewards patience and structure.',
+                       'tip': 'ATM business rewards patience and structure.',
+                       'timestamp': 153,
+                       'timestamp_seconds': 153,
+                       'timestamp_label': '[00:02:33]',
+                       'url': 'https://www.youtube.com/watch?v=y2XZeV3G0YU&t=153s',
+                       'markdown': '[00:02:33](https://www.youtube.com/watch?v=y2XZeV3G0YU&t=153s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nAL1HBqHAl8',
+                       'title': 'Everything You Need to Know About Starting an ATM Business',
+                       'channel': 'Philip Webb',
+                       'author': 'Philip Webb',
+                       'text': 'This is why I always say build slowly.',
+                       'tip': 'This is why I always say build slowly.',
+                       'timestamp': 73,
+                       'timestamp_seconds': 73,
+                       'timestamp_label': '[00:01:13]',
+                       'url': 'https://www.youtube.com/watch?v=nAL1HBqHAl8&t=73s',
+                       'markdown': '[00:01:13](https://www.youtube.com/watch?v=nAL1HBqHAl8&t=73s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-6VRYcYBnSA',
+                       'title': 'I Analyzed the Real Math of Owning 10 ATMs in America (2026 Profit '
+                                'Breakdown)',
+                       'channel': 'Lines & Gains',
+                       'author': 'Lines & Gains',
+                       'text': 'To survive and scale in 2026, you must never use a retail checking account '
+                               'for vault cash.',
+                       'tip': 'To survive and scale in 2026, you must never use a retail checking account '
+                              'for vault cash.',
+                       'timestamp': 465,
+                       'timestamp_seconds': 465,
+                       'timestamp_label': '[00:07:45]',
+                       'url': 'https://www.youtube.com/watch?v=-6VRYcYBnSA&t=465s',
+                       'markdown': '[00:07:45](https://www.youtube.com/watch?v=-6VRYcYBnSA&t=465s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

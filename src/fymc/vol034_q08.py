@@ -1,656 +1,851 @@
 from __future__ import annotations
 
-CHAPTER_8 = {
-    "id": "Q8",
-    "chapter_id": "Q8",
-    "chapter_number": 8,
-    "question_number": 8,
-    "slug": "public-records-apis-data-pipelines-operator-tooling",
-    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small nemt & medical courier dispatch arbitrage desk an unfair information edge?",
-    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
-    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
-    "subtitle": "NPPES, CLIA, Medicaid Procurement, RouteGenie, MediRoutes, X12 Remittances & UN3373 Custody Evidence",
-    "layout_template": "resource_directory",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #34, Rank #08 of 36, scores 90/100 by turning fragmented healthcare "
-        "logistics information into repeatable dispatch decisions. This chapter connects nine "
-        "mapped plays: standing-order scouting, laboratory lane prospecting, workers' compensation "
-        "sourcing, credential verification, exclusion screening, dispatch telemetry, claims "
-        "reconciliation, specimen custody, and rank-and-rent call routing. An eighteen-source "
-        "directory separates free discovery records from permissioned operational evidence. "
-        "The canonical annual owner profits are $30,000 Conservative, $166,500 Base, and "
-        "$384,000 Scaled; corresponding retained dispatch revenue is $112,500, $416,250, and "
-        "$720,000 after driver settlements. Build the edge through dated source records, "
-        "contract-specific interfaces, and exception queues, not purchased patient lists. "
-        "Use commercial tooling only when measurable recovery, route density, or collection "
-        "speed covers its full operating cost."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual gross contracted billings; $112,500 retained at 45%",
-            "note": "12% gross-billings net margin; $30,000 owner profit; 2 FT + 2 C; 26.67% retained net margin",
-        },
-        {
-            "label": "Base",
-            "value": "$925,000",
-            "context": "Annual gross contracted billings; $416,250 retained at 45%",
-            "note": "18.0% gross-billings net margin; $166,500 owner profit; 2 FT + 2 C; 40.0% retained net margin",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,600,000",
-            "context": "Annual gross contracted billings; $720,000 retained at 45%",
-            "note": "24% gross-billings net margin; $384,000 owner profit; 3 FT + 3 C; 53.33% retained net margin",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build a dated facility and contracting graph before buying enrichment",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with organizations, service locations, and contracting entities, not patient "
-                    "records. The desk's nine working applications are standing-order scouting, "
-                    "laboratory lane prospecting, workers' compensation sourcing, credential verification, "
-                    "exclusion screening, dispatch telemetry, claims reconciliation, specimen custody, "
-                    "and rank_and_rent_pay_per_call_routing. These labels organize this chapter's "
-                    "workflow; they are not substitutes for a payer's actual authorization rules. "
-                    "Use the NPPES NPI Registry to identify organizational providers, then join CMS "
-                    "facility datasets and CLIA records to physical locations. Store NPI, CLIA "
-                    "identifier where applicable, organization name, service address, source URL, "
-                    "retrieval time, source publication date, and match confidence. Keep an address "
-                    "history because a mailing address can differ from the pickup entrance. An NPI "
-                    "establishes an enumeration record, not Medicaid enrollment, ownership of a "
-                    "vehicle fleet, or demand for transportation. A CLIA certificate establishes "
-                    "a laboratory's certification attributes, not permission to carry every specimen "
-                    "category. For standing-order scouting, forty verified facilities producing "
-                    "eight qualified conversations and two contracts is a testable funnel, not a "
-                    "forecast. At thirty weekly legs per contract and $40 contracted billings per "
-                    "leg, two contracts represent $124,800 annual billings over fifty-two weeks; "
-                    "apply the actual settlement schedule before calling that opportunity revenue."
-                ),
-                (
-                    "Build an enrichment waterfall that stops as soon as the next operating "
-                    "decision becomes supportable. First resolve the legal organization through "
-                    "NPPES and the relevant Secretary of State registry. Second establish facility "
-                    "type through CMS, CLIA, or a state licensing portal. Third confirm service "
-                    "geography and a published business telephone number from the organization's "
-                    "own website. Fourth use SAM.gov, state procurement notices, and public contract "
-                    "awards to identify the buying office and renewal calendar. Finally call the "
-                    "published switchboard to verify the transportation or laboratory logistics "
-                    "contact. Never purchase patient-level demand estimates or append health "
-                    "conditions to business contacts. Twenty laboratory prospects costing twelve "
-                    "minutes each consume four research hours; at an illustrative $30 loaded "
-                    "hourly cost, the batch costs $120 before subscriptions. One verified route "
-                    "opportunity can justify that research, but only after pickup windows and "
-                    "required packaging are confirmed. If a commercial enrichment vendor cannot "
-                    "explain provenance, retain the public switchboard and continue manually. "
-                    "When a portal blocks automated access, use its documented download or request "
-                    "public procurement documents through the agency's records process. Public "
-                    "availability does not establish permission to bypass authentication, scrape "
-                    "restricted pages, or redistribute protected material."
-                ),
-                (
-                    "Separate discovery freshness from eligibility freshness. A quarterly facility "
-                    "file can support territory planning while being too old to clear tomorrow's "
-                    "assignment. Preserve both the date a source published its record and the date "
-                    "the desk retrieved it; these answer different questions. Before bidding, "
-                    "verify that the solicitation remains open, amendments are incorporated, and "
-                    "the contracting organization actually buys the service being offered. Before "
-                    "assignment, verify required provider enrollment, driver qualifications, insurance, "
-                    "and exclusions against the applicable program and contract. OIG's LEIE and "
-                    "SAM exclusions serve different purposes, so a clear result in one cannot "
-                    "replace the other. Resolve possible matches with authorized identifiers through "
-                    "the official process rather than rejecting someone on name similarity alone. "
-                    "For workers' compensation sourcing, six employer or administrator conversations "
-                    "yielding one ten-trip weekly lane at $55 per trip would produce $28,600 "
-                    "annual billings; the fallback is a written spot-service arrangement, not "
-                    "invented standing demand. Assign every source an owner and expiration rule. "
-                    "If the newest registry snapshot cannot be downloaded, retain the last "
-                    "verified version for prospecting, mark its age visibly, and suspend decisions "
-                    "that require current verification until the authoritative check succeeds."
-                ),
-            ],
-            "table": {
-                "caption": "Official Discovery Directory, Sources 1–9: Access, Economics, Freshness, and Recovery",
-                "headers": [
-                    "Named source and exact access",
-                    "Operator decision and record key",
-                    "Cost tier and purchasing boundary",
-                    "Refresh latency and freshness test",
-                    "Rate-limit hygiene and fallback source",
-                ],
-                "rows": [
-                    [
-                        "CMS NPPES NPI Registry: GET https://npiregistry.cms.hhs.gov/api/?version=2.1 with documented search parameters.",
-                        "Resolve organizational NPI and practice location before contacting the facility's published business office.",
-                        "Public searches and CMS dissemination downloads are free; budget staff time for ambiguous identity matches.",
-                        "CMS describes daily registry updates; dissemination files have separate monthly and weekly publication schedules.",
-                        "Use documented bounded result windows and cached queries; use CMS NPPES dissemination files for bulk coverage.",
-                    ],
-                    [
-                        "CMS Provider Data Catalog: select datasets and distribution links at https://data.cms.gov/provider-data/.",
-                        "Identify dialysis facilities and other listed provider categories using dataset identifiers and facility addresses.",
-                        "Public datasets are free to download; storage and address reconciliation remain desk operating expenses.",
-                        "Read each dataset's release metadata; publication cadence and historical coverage differ across provider categories.",
-                        "Prefer published downloads over repeated searches; use facility websites and state licenses to resolve discrepancies.",
-                    ],
-                    [
-                        "CMS CLIA Laboratory Search: use the CLIA search interface at https://qcor.cms.gov/.",
-                        "Check laboratory certificate identifiers, addresses, and certification attributes before discussing specimen pickup requirements.",
-                        "Public lookup access is free; operational confirmation still requires direct conversation with laboratory personnel.",
-                        "Record the displayed record date and query time; reconfirm critical certificate details before onboarding.",
-                        "Use the interactive workflow without bypassing controls; request confirmation from the state CLIA agency when needed.",
-                    ],
-                    [
-                        "SAM.gov Contract Opportunities: browse https://sam.gov/ or request the documented opportunities API with an API key.",
-                        "Track federal courier solicitations, amendments, deadlines, and award-office contacts using the notice identifier.",
-                        "Public opportunity access is free; API registration does not create contracting eligibility or purchasing authority.",
-                        "Check active notices each business day; agency amendments can change requirements between scheduled pipeline runs.",
-                        "Observe current key quotas and server responses; fall back to saved searches and contracting-office notices.",
-                    ],
-                    [
-                        "SAM.gov Entity Information: search entity and exclusion records through the official https://sam.gov/ interface.",
-                        "Confirm federal entity identity and applicable exclusion records without treating them as Medicaid enrollment evidence.",
-                        "Public searches are free; some datasets and API permissions require authenticated accounts or additional access.",
-                        "Recheck at onboarding and applicable contract milestones; preserve query time and the matched entity identifier.",
-                        "Automate only through authorized published interfaces; use official manual searches when entitlement limits block automation.",
-                    ],
-                    [
-                        "HHS OIG LEIE: download exclusion files and use the verification workflow at https://exclusions.oig.hhs.gov/.",
-                        "Screen required individuals and entities, then resolve possible matches through the official identity-verification process.",
-                        "Public search and download access are free; allocate staff effort for potential-match resolution and documentation.",
-                        "The downloadable database is updated monthly; screening frequency must also satisfy state and contract requirements.",
-                        "Download each release once and hash locally; use the official online search when a file cannot be obtained.",
-                    ],
-                    [
-                        "California Cal eProcure: search public bid events and posted documents at https://caleprocure.ca.gov/.",
-                        "Locate state transportation and courier buying events, then capture amendments and the named procurement contact.",
-                        "Public browsing generally carries no search charge; supplier participation can require registration and documented qualifications.",
-                        "Monitor shortlisted events each business day; an amendment can supersede a previously downloaded requirements document.",
-                        "Use saved searches and permitted downloads; obtain inaccessible attachments directly from the listed procurement officer.",
-                    ],
-                    [
-                        "California Secretary of State bizfile: search business entities at https://bizfileonline.sos.ca.gov/.",
-                        "Resolve entity names and filing status before connecting a provider brand to the proposed contracting party.",
-                        "Basic public searches are free; certified records and selected filings can carry published government fees.",
-                        "Capture the displayed filing date and retrieval time; filed records can lag actual operational changes.",
-                        "Use manual searches unless automation is explicitly supported; request official records when name matches remain ambiguous.",
-                    ],
-                    [
-                        "California DWC: access medical provider network and workers' compensation resources through https://www.dir.ca.gov/dwc/.",
-                        "Identify published network organizations and program contacts without treating network inclusion as a transportation purchase order.",
-                        "Published program resources are free; direct commercial outreach and qualification require separate desk labor.",
-                        "Check each document's revision date; verify current network or administrator contacts before proposing a lane.",
-                        "Cache official documents and avoid repeated bulk requests; confirm stale contacts through the administrator's published switchboard.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Find the route constraint that the public record cannot show",
-                "body": "Public records locate prospects; operational interviews establish whether a lane can actually earn its settlement spread.",
-                "items": [
-                    "Ask dialysis centers for recurring chair-start and discharge-window patterns in aggregate; obtain patient details only through the authorized booking workflow.",
-                    "Ask laboratories whether the posted street address is the receiving dock, patient service center, or administrative office before calculating route miles.",
-                    "Capture solicitation amendments as separate hashed documents; compare response deadlines and insurance requirements against the original release.",
-                    "Maintain separate identity and location records so a renamed laboratory does not appear to create a new service lane or duplicate prospect.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Buy interfaces that produce evidence, not dashboards that merely display activity",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Move into permissioned systems only after the public-data graph identifies "
-                    "a qualified opportunity. RouteGenie and MediRoutes can support dispatch and "
-                    "vehicle visibility, but do not assume every subscription exposes the same "
-                    "API, webhook, or broker integration. Obtain written interface documentation, "
-                    "field definitions, export rights, retention terms, and the relevant business "
-                    "associate agreement before transmitting protected health information. Ask "
-                    "whether a trip event represents device capture, server receipt, dispatcher "
-                    "entry, or a later correction. Each timestamp supports a different audit "
-                    "claim. Test an authorized sandbox with a created trip, reassignment, late "
-                    "pickup, cancellation, completed leg, and corrected completion. Require "
-                    "durable event identifiers and preserve original events when corrections "
-                    "arrive. For dispatch telemetry, reducing eight daily status calls by three "
-                    "minutes each saves two hours over five operating days; value that at the "
-                    "desk's actual labor cost rather than promising staff elimination. If the "
-                    "vendor interface fails, retain a secure export and documented telephone "
-                    "dispatch procedure with later reconciliation. Do not quietly switch to "
-                    "personal messaging accounts. A resilient small desk needs one tested "
-                    "manual path, one exception owner, and a clear recovery sequence more "
-                    "than it needs a second live map."
-                ),
-                (
-                    "Treat claims and payments as a contract-specific exchange, not a universal "
-                    "837P pipeline. Some NEMT arrangements use professional claims with payer "
-                    "companion guides; others require a broker portal, proprietary trip file, "
-                    "or invoice. Where authorized, an 837P carries claim submissions, a 999 "
-                    "reports implementation acknowledgments, a 277CA reports claim acceptance "
-                    "status, and an 835 explains remittance adjustments and payment allocation. "
-                    "Neither transport-level delivery nor an accepted claim proves payment. "
-                    "Stedi can support documented healthcare transaction workflows, while "
-                    "Availity access and transaction availability depend on the payer connection "
-                    "and product. Keep payer identifiers, control numbers, trip references, "
-                    "adjustment codes, and bank reconciliation evidence linked without copying "
-                    "full patient details into every table. For claims reconciliation, recovering "
-                    "six payable $45 legs from a missing-document queue restores $270 of "
-                    "billings; under the illustrative 45% retained-share convention, that "
-                    "represents $121.50 before additional overhead, not $270 of profit. A "
-                    "corrected submission still needs duplicate detection. When a clearinghouse "
-                    "connection is unavailable, use the payer's permitted portal or secure "
-                    "file route, retain the submission receipt, and reconcile its identifier "
-                    "before the automated connector resumes. Never resubmit blindly because "
-                    "a local request timed out."
-                ),
-                (
-                    "Keep routing intelligence separate from medical data. Google Maps Platform "
-                    "Routes API can estimate travel times from coordinates without receiving "
-                    "patient names, diagnoses, or specimen identifiers. Review current product "
-                    "terms before storing results or combining them with other map products. "
-                    "For specimen custody, a Zebra scanner can capture a laboratory-issued "
-                    "barcode into an approved application, but the scanner itself does not "
-                    "establish chain of custody. Record the authorized pickup, handoff, "
-                    "temperature evidence where required, receiving acceptance, and exception "
-                    "resolution. One missed $80 STAT collection can also cause a redraw, "
-                    "contract penalty, or lost account; those consequences need their own "
-                    "evidence rather than an invented multiplier. Classification controls "
-                    "packaging: DOT's Category B provisions in 49 CFR 173.199 do not cover "
-                    "every infectious substance or every specimen shipment. Separate commercial "
-                    "acquisition telemetry as well. Twilio or Ringba may meter inbound business "
-                    "calls, but call metadata and recordings can expose sensitive information. "
-                    "Use nonclinical routing scripts, minimize retained content, and verify "
-                    "the specific vendor services eligible for the required agreement. If "
-                    "navigation or scanning fails, use an approved route sheet and numbered "
-                    "custody record, then reconcile the delayed events without fabricating "
-                    "GPS fixes or original scan times."
-                ),
-            ],
-            "table": {
-                "caption": "Permissioned Tool Directory, Sources 10–18: Contracted Interfaces and Operational Fallbacks",
-                "headers": [
-                    "Named tool and exact access",
-                    "Operator decision and evidence produced",
-                    "Cost tier and purchasing boundary",
-                    "Refresh latency and freshness test",
-                    "Rate-limit hygiene and fallback source",
-                ],
-                "rows": [
-                    [
-                        "RouteGenie: request a licensed demonstration and documented integration access through https://routegenie.com/.",
-                        "Connect authorized trip assignments and vehicle events while preserving original timestamps and correction history.",
-                        "Commercial subscription and integration pricing require a written quote; include onboarding and interface support costs.",
-                        "Measure actual device-to-server event delay during acceptance testing; offline devices can upload events much later.",
-                        "Follow the contracted interface limits and retry guidance; fall back to permitted exports and secure dispatcher procedures.",
-                    ],
-                    [
-                        "MediRoutes: obtain licensed access and confirm available integration documentation through https://mediroutes.com/.",
-                        "Verify trip lifecycle events and broker-specific connections instead of assuming dashboard fields are available through automation.",
-                        "Commercial licensing depends on the purchased arrangement; obtain line items for integrations, training, and support.",
-                        "Test event availability against dispatcher timestamps; a displayed vehicle position can be older than the screen refresh.",
-                        "Use only vendor-authorized connectors and bounded polling; maintain a tested secure export and telephone-dispatch fallback.",
-                    ],
-                    [
-                        "Stedi: review healthcare API documentation at https://www.stedi.com/docs/ and obtain authorized payer connectivity.",
-                        "Track supported eligibility, claims, and remittance workflows with payer-specific identifiers and durable transaction receipts.",
-                        "Commercial usage pricing and payer connection requirements vary; calculate charges from the intended transaction mix.",
-                        "Delivery and payer-response latency are separate measurements; acceptance messages do not establish payment timing.",
-                        "Apply documented limits, backoff, and deduplication controls; use the contracted payer portal when that route is permitted.",
-                    ],
-                    [
-                        "Availity Essentials: register through https://www.availity.com/ and verify the specific payer and product connection.",
-                        "Check supported eligibility and claim-status functions without assuming every payer accepts the same electronic transactions.",
-                        "Some payer-sponsored portal functions have no provider charge; premium products and integrations have separate commercial terms.",
-                        "Record payer response timestamps and search time; portal availability does not make an older response current.",
-                        "Respect account permissions and published interface terms; use the payer's own authorized channel for unavailable transactions.",
-                    ],
-                    [
-                        "Google Maps Platform Routes API: enable the product and use documented methods at https://developers.google.com/maps/documentation/routes.",
-                        "Estimate route duration using coordinates while excluding patient identities and clinical details from requests.",
-                        "Usage-based SKU pricing and available allowances change; set billing alerts and compare costs against measured planning savings.",
-                        "Traffic-aware results describe a requested departure context; cache only where current product terms permit storage.",
-                        "Set project quotas and bounded retries; use dispatch-approved route sheets when the service is unavailable.",
-                    ],
-                    [
-                        "Twilio Programmable Voice: use authenticated APIs and signed webhooks documented at https://www.twilio.com/docs/voice.",
-                        "Measure business-line routing and qualifying call durations without placing clinical information in acquisition event records.",
-                        "Usage charges include numbers, minutes, and selected features; validate current rates for the actual call geography.",
-                        "Webhooks arrive asynchronously and can be retried; reconcile event receipt times with final call status.",
-                        "Verify signatures and honor concurrency limits; route failures to a staffed business line and reconcile call records.",
-                    ],
-                    [
-                        "Ringba: configure a licensed account and request supported routing and reporting interfaces through https://www.ringba.com/.",
-                        "Route commercial service calls using buyer availability, duration rules, dispute evidence, and funded buyer balances.",
-                        "Commercial platform and telephony costs depend on the agreement; require explicit pricing for every billable component.",
-                        "Live routing and finalized reporting can differ; reconcile answered duration and reversals before issuing buyer statements.",
-                        "Use documented account limits and duplicate-event controls; suspend buyer routing when balances or reporting become unreliable.",
-                    ],
-                    [
-                        "Zebra DataWedge: configure supported Android scanners using documentation at https://techdocs.zebra.com/datawedge/.",
-                        "Deliver barcode scans into an approved custody application with validated symbologies and authenticated operator identity.",
-                        "Compatible hardware and application development create costs; confirm DataWedge availability for the selected device model.",
-                        "Local scans can occur immediately while synchronization is delayed; preserve device time and server receipt separately.",
-                        "Debounce duplicate scans and queue offline events; use numbered custody forms under the laboratory's approved procedure.",
-                    ],
-                    [
-                        "FMCSA SAFER Company Snapshot: search authorized carrier records through https://safer.fmcsa.dot.gov/.",
-                        "Check applicable USDOT carrier identity and displayed operating information without assuming every NEMT operator needs federal registration.",
-                        "Public snapshot searches are free; insurance and state passenger-carrier requirements need additional authoritative verification.",
-                        "Inspect displayed record and update dates; a snapshot does not establish real-time insurance or operating eligibility.",
-                        "Use permitted searches without bulk scraping; consult FMCSA Licensing and Insurance and applicable state regulator records.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify the evidence path before the first live assignment",
-                "body": "A successful connection test is insufficient unless the desk can prove authorization, event integrity, and recovery.",
-                "items": [
-                    "Confirm the payer or broker accepts the selected submission channel and document required enrollment, companion-guide rules, and submission identifiers.",
-                    "Execute required business associate agreements and verify that the exact purchased services, accounts, and subprocessors fit the protected-data workflow.",
-                    "Replay cancellation, duplicate webhook, reassignment, delayed GPS, and corrected completion cases using synthetic records before loading live trips.",
-                    "Demonstrate secure manual dispatch, numbered specimen custody, credential rechecks, and payment reconciliation during a simulated vendor outage.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Engineer the pipeline around lineage, bounded retries, and auditable exceptions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Implement a narrow pipeline with separate discovery, eligibility, operations, "
-                    "and settlement domains. A small authorized service can use Python's urllib "
-                    "for documented HTTPS endpoints, csv for source exports, sqlite3 for staging, "
-                    "hashlib for content fingerprints, and logging for redacted diagnostics. "
-                    "Those modules do not supply encrypted storage or a complete healthcare "
-                    "security program; deploy them within managed access controls, encrypted "
-                    "storage, backups, and monitored infrastructure appropriate to the records. "
-                    "Keep credentials outside source files and never print authorization headers "
-                    "or patient payloads. Assign internal facility, contract, trip, specimen, "
-                    "and settlement identifiers rather than joining on display names. Preserve "
-                    "raw source snapshots under restricted access, then normalize into versioned "
-                    "records with source lineage. A facility relocation should create a new "
-                    "location version, not silently rewrite historical trip evidence. For "
-                    "credential verification, checking twenty contractors at six minutes each "
-                    "takes two hours; resolving only four changed records can reduce repetitive "
-                    "review, but cannot replace mandated checks. Model valid-from and valid-to "
-                    "dates, reviewer identity, and evidence references. If the authoritative "
-                    "source is unavailable when a required credential expires, prevent assignment "
-                    "under that credential and move the work to an independently verified "
-                    "operator rather than extending the date locally."
-                ),
-                (
-                    "Design ingestion as at-least-once delivery with controlled deduplication. "
-                    "For public files, store the source URL, retrieval timestamp, release date, "
-                    "byte count, checksum, and parser version. Reject a supposed CSV download "
-                    "when its content is an HTML login page. For vendor events, deduplicate "
-                    "by vendor account and event identifier, retaining payload hashes to "
-                    "detect conflicting reuse. Where identifiers are absent, agree a composite "
-                    "key with the vendor; timestamp rounding alone can collapse distinct "
-                    "handoffs. Respect Retry-After when supplied, use exponential backoff with "
-                    "jitter for transient failures, and stop retrying authentication or "
-                    "permission failures until configuration is corrected. A payment submission "
-                    "timeout belongs in a reconciliation queue because retrying a non-idempotent "
-                    "operation can create a duplicate. For exclusion screening, a local monthly "
-                    "LEIE index can narrow candidate matches across fifty roster records, but "
-                    "official identity verification remains necessary for plausible matches. "
-                    "Track match status separately from assignment eligibility. Quarantine "
-                    "schema changes rather than shifting columns by position. If a source "
-                    "adds a new identifier field or changes date formatting, preserve the "
-                    "original file and route a small sample to review. Restart from a "
-                    "committed checkpoint only after counts and identifiers reconcile."
-                ),
-                (
-                    "Make diagnostics operationally legible: each alert needs an affected "
-                    "contract, a last-good timestamp, an owner, and a concrete next action. "
-                    "Track discovery-file age, credential expirations, unmatched trip events, "
-                    "unacknowledged submissions, unpaid accepted claims, and custody exceptions "
-                    "as separate queues. A green HTTP response cannot clear any of them by "
-                    "itself. Use synthetic records to test daylight-saving transitions, "
-                    "time-zone offsets, repeated barcodes, split outbound and return legs, "
-                    "and assignments crossing midnight. Store timestamps with offsets and "
-                    "retain the original device value; do not overwrite an implausible clock "
-                    "reading with a cleaner invented event. For dispatch evidence, compare "
-                    "GPS sample age against the contract's verification requirement rather "
-                    "than declaring a universal tolerance. For specimen custody, link each "
-                    "handoff to an authorized receiving identity and record temperature "
-                    "requirements supplied by the laboratory. OSHA's bloodborne-pathogens "
-                    "standard applies according to occupational exposure, while DOT packaging "
-                    "requirements depend on shipment classification. For independent owner-operators, "
-                    "contract labels alone do not establish worker status; scheduling, control, "
-                    "equipment, and state-specific tests require operational review. When "
-                    "telemetry is missing, document the exception and seek the contract's "
-                    "permitted alternative evidence instead of backfilling a fictional route."
-                ),
-            ],
-            "table": {
-                "caption": "Diagnostic Runbook: Four Failure Classes With Evidence-Preserving Recovery",
-                "headers": [
-                    "Failure class and detection test",
-                    "Specific evidence to retain",
-                    "Bounded response and accountable owner",
-                    "Recovery condition and verification method",
-                ],
-                "rows": [
-                    [
-                        "A public download returns success but contains HTML instead of the expected structured records.",
-                        "Retain response metadata, file checksum, retrieval timestamp, parser version, and a redacted format sample.",
-                        "The data owner pauses publication, checks the official distribution page, and retrieves the permitted replacement.",
-                        "Resume only after expected columns, record counts, and sampled identifiers reconcile against the source release.",
-                    ],
-                    [
-                        "A trip completion arrives twice with the same vendor event identifier but different recorded mileage.",
-                        "Preserve both payload hashes, account identifier, receipt times, original device timestamps, and the vendor correction reference.",
-                        "The dispatch lead quarantines settlement changes and asks the authorized vendor contact to explain event precedence.",
-                        "Release settlement only after the correction chain identifies the accepted mileage and retains the superseded record.",
-                    ],
-                    [
-                        "A submitted claim has no local acknowledgment because the network request timed out after transmission.",
-                        "Retain control numbers, payload fingerprint, transmission timestamp, payer connection, and the transport error without patient logs.",
-                        "The receivables owner queries the authorized status channel before deciding whether any resubmission is necessary.",
-                        "Resume automated submission only when the existing transaction is located or the payer confirms safe corrective handling.",
-                    ],
-                    [
-                        "A specimen reaches the laboratory without a synchronized pickup scan or with an unresolved temperature excursion.",
-                        "Retain the numbered backup record, handler identities, laboratory instructions, temperature evidence, and receiving disposition.",
-                        "The custody lead contacts the laboratory immediately and follows its handling instructions without inventing missing events.",
-                        "Close the exception only after laboratory disposition and reconciled custody evidence are attached to the shipment record.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Register the source and permitted purpose",
-                    "action": "Create a source record before connecting any portal, file feed, or commercial endpoint.",
-                    "detail": "Record the owner, access method, contract authority, data classification, refresh expectation, spending limit, and manual fallback.",
-                },
-                {
-                    "step": 2,
-                    "title": "Land immutable evidence and validate structure",
-                    "action": "Retrieve through an authorized channel, fingerprint the payload, and validate its format before normalization.",
-                    "detail": "Preserve release and retrieval timestamps separately; reject login pages, unexpected columns, duplicate identifiers, and impossible event dates.",
-                },
-                {
-                    "step": 3,
-                    "title": "Resolve identities and publish bounded decisions",
-                    "action": "Join verified identifiers and publish only records that satisfy the specific operating decision's freshness requirement.",
-                    "detail": "Send ambiguous facilities, possible exclusions, expired credentials, and conflicting trip corrections to named reviewers rather than silently accepting matches.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile downstream evidence and exercise recovery",
-                    "action": "Compare assignments, completed events, custody receipts, submissions, remittances, and bank activity on the operating cadence.",
-                    "detail": "Test a vendor outage with synthetic records, document manual actions, and verify that recovery creates neither duplicate claims nor duplicate driver payments.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Price the information edge against retained contribution and cash timing",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Keep the scorecard's denominators visible in every dashboard. Conservative "
-                    "gross billings of $250,000 produce $137,500 of driver settlements and "
-                    "$112,500 retained dispatch revenue at 45%; $82,500 of remaining costs "
-                    "leave $30,000 owner profit. Base billings of $925,000 produce $508,750 "
-                    "of settlements and $416,250 retained revenue; $249,750 of remaining "
-                    "costs leave $166,500 profit. Scaled billings of $1,600,000 produce "
-                    "$880,000 of settlements and $720,000 retained revenue; $336,000 of "
-                    "remaining costs leave $384,000 profit. Those profits equal 12%, 18.0%, "
-                    "and 24% of gross billings, or 26.67%, 40.0%, and 53.33% of retained "
-                    "revenue. Under this scorecard's ASC 606 net-presentation convention, "
-                    "retain the $112,500–$720,000 range as recognized dispatch revenue; "
-                    "actual principal-versus-agent conclusions depend on contractual control. "
-                    "Do not label underlying client collections, medical charges, or all "
-                    "driver pass-throughs as operator revenue. Team counts remain 2 FT + "
-                    "2 C, 2 FT + 2 C, and 3 FT + 3 C. The supplied $3,500–$18,000 "
-                    "monthly operating range is not a replacement for these full annual "
-                    "residual costs; its narrower expense scope must be documented before "
-                    "comparing either figure with a vendor quote."
-                ),
-                (
-                    "Treat acquisition tooling as a separate application with its own economics "
-                    "and healthcare boundaries. The mapped TRACK_2 play "
-                    "rank_and_rent_pay_per_call_routing builds local foundation-repair, water-restoration, "
-                    "probate-liquidation, and commercial-roofing hubs, then routes qualifying "
-                    "calls through Ringba or Twilio. Its supplied price band is $75–$300 "
-                    "per inbound call lasting over ninety seconds. At twenty accepted calls "
-                    "and $125 each, gross call fees are $2,500; an illustrative $650 "
-                    "traffic-and-telephony cost and $250 dispute allowance leave $1,600 "
-                    "before labor, overhead, and taxes. This is a separate acquisition "
-                    "example, not an addition to the canonical NEMT scenarios. For a "
-                    "healthcare logistics desk, reuse the routing instrumentation and business "
-                    "inquiry triage, not an automatic per-patient referral fee. Remuneration "
-                    "for federal healthcare program referrals can implicate 42 U.S.C. "
-                    "1320a-7b(b); a ninety-second call rule does not resolve that issue. "
-                    "Maintain organic city and calculator pages as a traffic fallback "
-                    "independent of a Google Business Profile suspension, while recognizing "
-                    "that organic rankings still fluctuate. Verify Maps listings only with "
-                    "genuine eligible partner locations. Require prepaid auto-refill wallets "
-                    "for the separate commercial buyers and pause routing when a funded "
-                    "balance cannot cover the agreed qualifying-call charge."
-                ),
-                (
-                    "Buy tools against measured cash effects, then stress-test settlement timing. "
-                    "An illustrative $600 monthly integration requires $1,333.33 in additional "
-                    "gross billings to recover its fee at a 45% retained share, before "
-                    "incremental overhead; use $1,334 as a rounded planning threshold. Count "
-                    "recoveries only when they would otherwise have been lost, and do not "
-                    "double-count faster collection as additional revenue. At Base annual "
-                    "billings, a steady-state forty-five-day collection interval represents "
-                    "approximately $114,041 of gross receivables using a 365-day year. "
-                    "Forty-five days of driver settlements alone represent approximately "
-                    "$62,723; weekly payouts, denials, payroll, and reserves determine the "
-                    "actual funding need. That illustrates why the supplied $15,000–$65,000 "
-                    "startup range can become tight before the first two-to-five-month deal "
-                    "cycle produces reliable cash. Negotiate settlement terms and stage route "
-                    "growth instead of financing expansion through overdue driver payments. "
-                    "Review tools after thirty days of measured operation: verified prospect "
-                    "cost, prevented duplicate payments, recovered payable trips, custody "
-                    "exceptions, and days to cash. Keep a tool when attributable retained "
-                    "benefit exceeds its subscription, integration, review labor, and failure "
-                    "recovery costs. Retire it when exports and a controlled manual process "
-                    "produce the same evidence more economically."
-                ),
-            ],
-            "table": {
-                "caption": "Economic Control Matrix: Canonical Cases and a Separate Tool-Purchase Test",
-                "headers": [
-                    "Case and fixed operating scale",
-                    "Gross billings and settlement bridge",
-                    "Retained revenue and residual operating costs",
-                    "Owner profit and decision boundary",
-                ],
-                "rows": [
-                    [
-                        "Conservative case uses two full-time staff and two contractors under the supplied scorecard.",
-                        "$250,000 annual gross billings less $137,500 driver settlements produces the fixed 45% retained share.",
-                        "$112,500 retained dispatch revenue less $82,500 remaining annual costs preserves the canonical operating bridge.",
-                        "$30,000 owner profit equals 12% of gross billings and 26.67% of retained dispatch revenue.",
-                    ],
-                    [
-                        "Base case uses two full-time staff and two contractors without changing the scorecard headcount.",
-                        "$925,000 annual gross billings less $508,750 driver settlements produces the fixed 45% retained share.",
-                        "$416,250 retained dispatch revenue less $249,750 remaining annual costs preserves the canonical operating bridge.",
-                        "$166,500 owner profit equals 18.0% of gross billings and 40.0% of retained dispatch revenue.",
-                    ],
-                    [
-                        "Scaled case uses three full-time staff and three contractors, totaling six people in the scorecard.",
-                        "$1,600,000 annual gross billings less $880,000 driver settlements produces the fixed 45% retained share.",
-                        "$720,000 retained dispatch revenue less $336,000 remaining annual costs preserves the canonical operating bridge.",
-                        "$384,000 owner profit equals 24% of gross billings and 53.33% of retained dispatch revenue.",
-                    ],
-                    [
-                        "Illustrative tool test evaluates one $600 monthly integration separately from the canonical case totals.",
-                        "At 45% retained share, approximately $1,333.33 additional monthly billings covers only the stated subscription expense.",
-                        "Add implementation labor, exception review, storage, and recovery costs before calculating the actual purchasing threshold.",
-                        "Authorize renewal only when attributable retained benefit exceeds total incremental costs without counting existing collections twice.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The information edge is the shortest defensible path from a dated source record to a paid, fully evidenced trip.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Build a forty-facility prospect register joining NPI, CLIA where applicable, physical service location, contracting entity, and dated source evidence.",
-        "Document access, pricing, freshness, permitted automation, and a tested fallback for each of the eighteen directory sources before connecting it.",
-        "Run synthetic trip, custody, cancellation, correction, duplicate-event, and submission-timeout tests through the selected authorized interfaces.",
-        "Separate protected operational records from public prospecting data and verify required agreements, access roles, encryption, and redacted logging.",
-        "Reconcile gross billings, 55% driver settlements, 45% retained dispatch revenue, remaining costs, and owner profit to all three canonical scenarios.",
-        "Measure thirty days of recovered payable work, prevented duplicates, collection timing, and exception labor before renewing commercial tools or expanding routes.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "45 CFR 164.502(e) and 164.504(e) — Business associate arrangements",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504",
-            "relevance": "Define required contractual safeguards for applicable business associate relationships before sharing protected trip, patient, or specimen information.",
-        },
-        {
-            "title": "45 CFR 164.312 — HIPAA technical safeguards",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312",
-            "relevance": "Map applicable access control, audit control, integrity, authentication, and transmission-security requirements to the operational data pipeline.",
-        },
-        {
-            "title": "42 CFR 431.53 — Assurance of transportation",
-            "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-431/subpart-B/section-431.53",
-            "relevance": "Establishes the Medicaid state-plan transportation assurance; it does not replace state enrollment, broker contracting, or trip authorization requirements.",
-        },
-        {
-            "title": "42 CFR 455.436 — Federal database checks",
-            "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-455/subpart-E/section-455.436",
-            "relevance": "Specifies state Medicaid agency database-check obligations, including recurring exclusion checks; operators must also implement applicable state and contractual screening duties.",
-        },
-        {
-            "title": "42 U.S.C. 1320a-7b(b) — Illegal remunerations",
-            "url": "https://www.law.cornell.edu/uscode/text/42/1320a-7b",
-            "relevance": "Explains why commercial pay-per-call acquisition economics cannot automatically be transferred to referrals involving federal healthcare program business.",
-        },
-        {
-            "title": "29 CFR 1910.1030 — Bloodborne pathogens",
-            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-Z/section-1910.1030",
-            "relevance": "Apply exposure controls, training, protective measures, and related employer duties where the work creates occupational exposure.",
-        },
-        {
-            "title": "49 CFR 173.199 — Category B infectious substances",
-            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-I/subchapter-C/part-173/subpart-E/section-173.199",
-            "relevance": "Use the applicable classification, packaging, marking, and handling provisions for Category B shipments rather than treating every specimen as interchangeable.",
-        },
-        {
-            "title": "California Labor Code section 2775 — Worker classification framework",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=2775.",
-            "relevance": "Evaluate the applicable California classification framework and relevant exceptions before assuming an owner-operator agreement establishes independent-contractor status.",
-        },
-        {
-            "title": "42 CFR 493.3 — CLIA applicability",
-            "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-493/subpart-A/section-493.3",
-            "relevance": "Distinguish laboratory certification scope from courier permissions and laboratory-specific specimen transport instructions.",
-        },
-    ],
-}
+CHAPTER_8 = {'id': 'Q8',
+ 'chapter_id': 'Q8',
+ 'chapter_number': 8,
+ 'question_number': 8,
+ 'slug': 'nemt-vehicles-day-to-day-trip-execution',
+ 'question_prompt': 'Which NEMT vehicle should I buy, and how do I run trips day to day, including '
+                    'no-shows and cancellations?',
+ 'kicker': 'Q8 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'NEMT Vehicles and Day-to-Day Trip Execution',
+ 'subtitle': 'Ambulatory vs. wheelchair startup choice, the 7 vehicle types, compliance and fleet '
+             'strategy, 2026 vehicle prices and specs, true cost of a Ford Transit 350 rear-lift van, side '
+             "vs. rear entry, gurney installs, why minivans fail, ride-alongs, a driver's daily routine, "
+             'and handling no-shows and last-minute cancellations',
+ 'layout_template': 'legal_compliance_callout',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators agree the vehicle dictates the book: RouteGenie says a '
+                      'wheelchair-accessible minivan can complete up to 90% of contracts, while NEMT '
+                      'Growth Machine, MJ Business Academy, and Wheelchair & Stretcher Transportation '
+                      'Services push full-cut or full-size vans that multi-load wheelchairs, stretchers, '
+                      'and ambulatory riders. The hard numbers are brutal and specific: an $87,900 Ford '
+                      'Transit 350 XL with $6,000 down runs about $1,600 a month, plus $17,315 a year in '
+                      'commercial insurance, roughly $43,000 to $45,000 annually all in. Used 2019 '
+                      'minivans start around $13,000. Day-to-day execution rests on 4 a.m. pre-trip '
+                      'checks, four-point securement, billable wait time, broker notes on wasted runs, and '
+                      '24-hour cancellation windows. The split: Nemt University says start in your '
+                      'personal car and scale, while the Wheelchair & Stretcher operator says stop buying '
+                      'rear entry Caravans entirely.',
+ 'key_metrics': [{'label': 'Ford Transit 350 XL Rear-Lift Purchase Price',
+                  'metric': 'Ford Transit 350 XL Rear-Lift Purchase Price',
+                  'value': '$87,900 after taxes; $6,000 down; about $1,600 per month financed',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Total price NEMT Growth Machine paid for its Ford Transit 350 XL with a rear '
+                             'loading wheelchair lift, bought from Mobility Works in Charlotte with a '
+                             'warranty.',
+                  'source': 'NEMT Growth Machine ([nSB43YYfRs0 @ 00:00:00])'},
+                 {'label': 'Commercial Insurance on One Wheelchair Van',
+                  'metric': 'Commercial Insurance on One Wheelchair Van',
+                  'value': 'About $17,315 per year (roughly $1,440 per month)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Commercial insurance the operators call a killer; with the van payment it '
+                             'pushes fixed cost above $3,000 per month and the all-in annual run cost to '
+                             'about $43,000 to $45,000.',
+                  'source': 'NEMT Growth Machine ([nSB43YYfRs0 @ 00:00:20])'},
+                 {'label': 'Share of Contracts a Wheelchair Minivan Can Complete',
+                  'metric': 'Share of Contracts a Wheelchair Minivan Can Complete',
+                  'value': 'Up to 90% (63.5% ambulatory plus 30.3% wheelchair requests)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Derived from Indiana Medicaid fee-for-service trip request mix; the minivan '
+                             'is called the minimum recommended vehicle for scalability with brokers.',
+                  'source': 'RouteGenie ([Lh999r_-mi0 @ 00:05:17])'},
+                 {'label': 'Example Late Cancellation Fee',
+                  'metric': 'Example Late Cancellation Fee',
+                  'value': '$25 on a $100 trip canceled inside 24 hours',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Example of a cancellation fee charged when a passenger cancels inside the '
+                             'typical 24-hour obligation-free grace period.',
+                  'source': 'RouteGenie ([d8ocN3ERJag @ 00:04:22])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Operators across the board agree the vehicle is the business: whatever you '
+                              'park in the driveway decides which manifests you can accept. RouteGenie '
+                              'frames the minivan as the workhorse, citing Indiana Medicaid data where '
+                              '63.5% of trip requests are ambulatory and 30.3% are wheelchair, which is '
+                              'why a wheelchair-accessible minivan can complete up to 90% of all contracts '
+                              'and is the minimum recommended platform for scaling with brokers '
+                              "[Lh999r_-mi0 @ 00:05:17]. Nemt University's host maps a six-month path from "
+                              'personal car to wheelchair van and is blunt that adding a wheelchair '
+                              'accessible vehicle on top of ambulatory ramps up revenue and is essential '
+                              'if you want to scale [VGWUx-p8MbM @ 00:12:56]. The Wheelchair & Stretcher '
+                              'Transportation Services operator pushes the logic to the ceiling: a Ford '
+                              'Transit fits a stretcher, two wheelchairs, and one ambulatory passenger in '
+                              'one vehicle, and running Caravans on broker work alone is not how you scale '
+                              '[svdIU5f-6tA @ 00:00:39]. NEMT Growth Machine bought into the same thesis '
+                              'with real money, choosing a van with full ambulatory and wheelchair '
+                              'capability because the owners wanted to shoot for as much revenue as '
+                              'possible [nSB43YYfRs0 @ 00:07:35]. The shared rule: buy capability that '
+                              'matches the highest-value trips in your market.',
+                              'The second consensus point is that cramped wheelchair vans quietly bleed '
+                              'trips. Jasmine and Monica of MJ Business Academy, five years in business in '
+                              'California, report that rehabilitation-center patients often ride with leg '
+                              'extenders, and a smaller wheelchair van like the ProMaster City cannot fit '
+                              'them, so that trip gets turned away; the same tight cabin blocks '
+                              'multi-loading and blocks hauling a husband and wife who are both in '
+                              'wheelchairs [P_pN6quM3G4 @ 00:03:02]. On a live ride-along they watched a '
+                              'competitor load a reclining wheelchair and called it proof that full cut '
+                              'vans are the best, since a typical side entry van likely could not '
+                              'accommodate that client [ohTDpW0zUS8 @ 00:06:54]. Their own full cut Dodge '
+                              'Caravan carries two ambulatory riders plus one wheelchair with the seats '
+                              'out, or two wheelchairs with the fold-away chairs collapsed [rIDRpTROLM8 @ '
+                              '00:00:23]. They also flag a regulatory trap that reinforces the same '
+                              'choice: California has been denying rear entry vehicles, and one of their '
+                              'clients with a rear entry wheelchair van was approved by Medicaid only for '
+                              'ambulatory trips because the van lacked an emergency exit, even with a side '
+                              'door [P_pN6quM3G4 @ 00:11:02]. Size, layout, and exit configuration decide '
+                              'your book before marketing ever does.',
+                              'Baseline equipment is equally settled. RouteGenie lists the non-negotiables '
+                              'as airbags, seat belts, ABS brakes, maintained lights, brakes, and tires, a '
+                              'first aid kit, a fire extinguisher, and GPS tracking, with accessible units '
+                              'needing a 56-inch door opening, ramps or lifts, gear shift interlock, and '
+                              'four tie-downs with lap and shoulder belts; some states bar vehicles older '
+                              'than 15 years from manufacture, and the most common age range cited is 5 to '
+                              '10 years [Lh999r_-mi0 @ 00:01:26]. MJ Business Academy adds that the fire '
+                              'extinguisher must be mounted inside the van and that a carpet-free floor is '
+                              'a plus because clients have accidents and bodily fluids have to be cleaned '
+                              'fast [rIDRpTROLM8 @ 00:01:54]. NEMT Growth Machine carries disposable '
+                              'gloves, N95 masks, a first aid kit, and a bloodborne pathogen and bodily '
+                              'fluid spill kit in a duffel in the back [nSB43YYfRs0 @ 00:04:26]. On the '
+                              "human side, RouteGenie's driver profile demands a valid state-issued "
+                              'license, the ability to operate a wheelchair lift, sometimes lifting 50 '
+                              'pounds or more, and training in HIPAA, CPR, and first aid, because this is '
+                              'not taxi or Uber work [qiZqLls0G-E @ 00:00:50]. Skip any of these and the '
+                              'van is not ready to run a manifest.'],
+               'table': {'caption': 'Where NEMT Operators Agree on Vehicles and Baseline Readiness',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['The wheelchair minivan is the minimum scalable platform',
+                                   'Indiana requests split 63.5% ambulatory and 30.3% wheelchair, so '
+                                   'minivans complete up to 90% of contracts',
+                                   'Buy at least a wheelchair-accessible minivan if broker volume is your '
+                                   'target',
+                                   'RouteGenie ([Lh999r_-mi0 @ 00:05:17])'],
+                                  ['Wheelchair capability multiplies revenue over ambulatory-only service',
+                                   'Adding a wheelchair accessible vehicle on top of ambulatory ramps up '
+                                   'revenue and enables scaling',
+                                   'Plan the upgrade from personal car to wheelchair van about six months '
+                                   'in',
+                                   'Nemt University ([VGWUx-p8MbM @ 00:12:56])'],
+                                  ['A full-size Transit covers every trip class in one vehicle',
+                                   'The Ford Transit fits a stretcher, two wheelchairs, and one ambulatory '
+                                   'passenger at once',
+                                   'Multi-load mixed manifests instead of dispatching separate vans for '
+                                   'each mobility level',
+                                   'Wheelchair & Stretcher Transportation Services ([svdIU5f-6tA @ '
+                                   '00:00:39])'],
+                                  ['Small wheelchair vans turn away rehab and couple trips',
+                                   'Leg extenders, multi-loads, and couples both in wheelchairs cannot fit '
+                                   'compact vans like the ProMaster City',
+                                   'Walk a mobility dealership and test extended-cut cabins before signing '
+                                   'any paperwork',
+                                   'MJ Business Academy ([P_pN6quM3G4 @ 00:03:02])'],
+                                  ['State approval rules can neutralize a rear entry van',
+                                   'A California rear entry wheelchair van was approved only for '
+                                   'ambulatory Medicaid trips over a missing emergency exit',
+                                   'Check state vehicle approval rules before dropping 40 to 60 thousand '
+                                   'on a van',
+                                   'MJ Business Academy ([P_pN6quM3G4 @ 00:11:02])'],
+                                  ['A safety and sanitation kit is standard issue',
+                                   'First aid kit, fire extinguisher, four tie-downs with lap and shoulder '
+                                   'belts, 56-inch accessible door opening',
+                                   'Stock and inspect the full kit before the first trip of every shift',
+                                   'RouteGenie ([Lh999r_-mi0 @ 00:01:44])'],
+                                  ['Local market research decides your vehicle and broker path',
+                                   'Detroit providers are not always required to use brokers, but Medicaid '
+                                   'partnership in certain counties requires one',
+                                   'Research your own county broker rules, insurance quotes, and '
+                                   'application fees before buying',
+                                   'Nemt University ([irqJHXZq5K8 @ 00:04:21])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['NEMT Growth Machine published the cleanest unit economics. Their 2025 Ford '
+                              'Transit 350 XL with a rear loading wheelchair lift cost $87,900 after taxes '
+                              'from Mobility Works in Charlotte, with a warranty; they put $6,000 down and '
+                              'financed the rest at roughly $1,600 a month [nSB43YYfRs0 @ 00:00:00]. '
+                              'Commercial insurance runs about $17,315 a year, or roughly $1,440 a month, '
+                              'pushing fixed cost above $3,000 a month before oil changes, tire rotations, '
+                              'or gas; they offset fuel by charging for mileage, and they peg the all-in '
+                              'annual figure at about $43,000, or around $45,000 once gas and surprise '
+                              "repairs land [nSB43YYfRs0 @ 00:00:20]. RouteGenie's 2026 price sheet, built "
+                              'on 2019 used units under 100,000 miles, gives the cheaper on-ramps: a used '
+                              'Grand Caravan runs $13,000 to $16,000, a used Toyota Sienna $21,000 to '
+                              '$24,000, and a used Ford Transit $25,000 to $30,000, against $50,500 new '
+                              '[uJV2f3MOJbI @ 00:01:06]. Nemt University tells beginners to set a hard '
+                              'budget first, whether $7,500, $10,000, or $20,000, then pick cash, '
+                              'financing, or a lease, paying cash if you can so there is no note, and '
+                              'financing only with decent credit and room to cover the payment plus '
+                              'insurance [VGWUx-p8MbM @ 00:04:37].',
+                              'Inside the box, the mechanics are physical and repeatable. NEMT Growth '
+                              'Machine runs a floor track system: pull a lever and the seats slide to any '
+                              'layout, so a wheelchair rider and caregiver can sit together; every '
+                              'wheelchair gets four track locks, two front and two back, that hook the '
+                              'chair, then two lap belts join in the middle and a shoulder belt completes '
+                              'a full seat belt [nSB43YYfRs0 @ 00:01:44]. Their add-on list is cheap: a '
+                              'roughly $30 windshield phone mount so drivers stay hands-free, a dash cam '
+                              'plus interior camera at about $180 to $200 that records whenever the van is '
+                              'on, Clorox wipes for every high-touch surface after each rider, an umbrella '
+                              'for door-to-door pickups in the rain, a jack and spare, and three '
+                              'reflective triangles set roughly 10, 100, and 200 feet behind a breakdown '
+                              '[nSB43YYfRs0 @ 00:02:40]. MJ Business Academy slides a TJ Maxx or Home '
+                              'Goods storage bin into the limited storage area for driver lunches and '
+                              'equipment [rIDRpTROLM8 @ 00:02:16]. For stretcher work, AMS Vans installs a '
+                              'gurney with a quick release lock in a rear entry long channel: lower the '
+                              'gurney all the way, roll the front casters into the antler cradle, and pin '
+                              'it; unbolt the floor mount with a 9/16 ratchet to flip the van back to '
+                              'wheelchair service [-DCWDiGaTn0 @ 00:01:02].',
+                              "Daily execution starts before dawn. RouteGenie's driver routine begins as "
+                              'early as 4 or 5 a.m. to hit pre-procedure hospital arrivals: clock in '
+                              'through the NEMT app, check fuel, oil, tire pressure, brakes, lights, '
+                              'wheelchair lifts, and securement straps, then run surgery, dialysis, and '
+                              'physical therapy pickups across an 8 to 12 hour shift that closes with a '
+                              'final inspection logged in the app [qiZqLls0G-E @ 00:03:06]. Wait time is '
+                              "billable leverage: on a ride-along, Jasmine and Monica's private client had "
+                              'a 10:30 pickup and had agreed that if the client was not outside at 10:30 '
+                              "the clock starts and wait time gets charged, and they pulled the client's "
+                              'number from the app to call directly [ohTDpW0zUS8 @ 00:05:59]. '
+                              'Cancellations are the bleed. LearnCargo says nine times out of 10 you '
+                              'discover a cancellation on your own at the last minute, sometimes after the '
+                              'broker failed to notify you; the fix is to call the broker and get a note '
+                              'on the client account after a wasted 30-mile run [MOdO2Zzw1wI @ 00:01:02]. '
+                              "RouteGenie's fee model uses a 24-hour free cancellation window, with an "
+                              'example of a $25 fee on a $100 trip canceled inside 24 hours, backed by a '
+                              'written, consistently enforced no-show policy [d8ocN3ERJag @ 00:04:22].'],
+               'table': {'caption': 'Vehicle Price Sheet: New 2026 Starting Prices vs 2019 Used Units '
+                                    'Under 100,000 Miles',
+                         'headers': ['Vehicle',
+                                     'New 2026 Starting Price',
+                                     '2019 Used Price Range',
+                                     'Operator Notes',
+                                     'Expert Source'],
+                         'rows': [['Toyota Prius hybrid hatchback for ambulatory curb-to-curb work',
+                                   'From $28,550 for a new unit',
+                                   '$15,000 to $19,000 for a used unit',
+                                   'Ambulatory only; 58 mpg city and 53 mpg highway with 23.8 cubic feet '
+                                   'of trunk',
+                                   'RouteGenie ([uJV2f3MOJbI @ 00:02:05])'],
+                                  ['Dodge Grand Caravan wheelchair minivan, the longtime fleet favorite',
+                                   'Discontinued after 2020, no new units sold',
+                                   '$13,000 to $16,000 for a used unit',
+                                   'Sold fleet-only in final years; extremely low prices may signal poor '
+                                   'condition',
+                                   'RouteGenie ([uJV2f3MOJbI @ 00:03:21])'],
+                                  ['Toyota Sienna minivan, the close second for wheelchair work',
+                                   'From $40,120 for a new unit',
+                                   '$21,000 to $24,000 for a used unit',
+                                   'Optional all-wheel drive for harsh weather; newer hybrid delivers 36 '
+                                   'mpg',
+                                   'RouteGenie ([uJV2f3MOJbI @ 00:04:06])'],
+                                  ['Chrysler Pacifica minivan, also marketed as Voyager',
+                                   'From $44,460 for a new unit',
+                                   '$18,000 to $20,500 for a used unit',
+                                   'Only compact van with optional plug-in hybrid; 32 miles all-electric '
+                                   'range',
+                                   'RouteGenie ([uJV2f3MOJbI @ 00:05:09])'],
+                                  ['Chevrolet Express and GMC Savanna full-size vans',
+                                   'From $45,000 for a new unit',
+                                   '$20,000 to $25,000 for a used unit',
+                                   'The V6 makes sense at 15.5 mpg versus 12 mpg for the V8',
+                                   'RouteGenie ([uJV2f3MOJbI @ 00:07:23])'],
+                                  ["Ford Transit full-size van, America's best-selling van",
+                                   'From $50,500 for a new unit',
+                                   '$25,000 to $30,000 for a used unit',
+                                   '2020 and newer V6 engines return 16 to 17 mpg; E-Transit has 160-mile '
+                                   'range',
+                                   'RouteGenie ([uJV2f3MOJbI @ 00:08:49])'],
+                                  ['Mercedes-Benz Sprinter, the most expensive platform on the market',
+                                   'From $55,000 for a new unit',
+                                   '$30,000 to $38,000 for a used unit',
+                                   'High initial cost stops many providers; all-wheel drive and very high '
+                                   'reliability',
+                                   'RouteGenie ([uJV2f3MOJbI @ 00:09:57])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Street-Level Moves From Operators Running Vans Daily',
+                           'body': 'Small purchasing and operating habits that keep trips on the board, '
+                                   'keep the van flexible, and keep wasted miles on the record.',
+                           'items': ['Lean on a sharp dealership rep: Jasmine and Monica were set on a '
+                                     'smaller van with a bench seat until a Mobility Works rep showed them '
+                                     'the extended cut and warned they would limit themselves [MJ Business '
+                                     'Academy — P_pN6quM3G4 @ 00:10:25].',
+                                     'Treat a suspiciously cheap Grand Caravan as a red flag, because it '
+                                     'was sold exclusively as a fleet vehicle in its final years and '
+                                     'extremely low prices might signal poor condition [RouteGenie — '
+                                     'uJV2f3MOJbI @ 00:03:21].',
+                                     'Keep the stretcher setup removable: the AMS Vans floor mount sits on '
+                                     'two threaded inserts, so a 9/16 ratchet pulls it out and the van '
+                                     'runs as a wheelchair accessible unit [AMS Vans — -DCWDiGaTn0 @ '
+                                     '00:01:20].',
+                                     'Train riders to call the broker directly when canceling, and when a '
+                                     'broker fails to notify you, call and get a note placed on that '
+                                     'client account [LearnCargo — MOdO2Zzw1wI @ 00:00:32].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Run Local Market Research and Lock a Budget',
+                              'action': 'Research your county broker rules, insurance quotes, vehicle '
+                                        'prices, and application fees, then set a hard purchase budget.',
+                              'detail': 'Market rules differ by city and county, with some counties '
+                                        'requiring a broker for Medicaid work [Nemt University — '
+                                        'irqJHXZq5K8 @ 00:04:21]; set a number such as $7,500, $10,000, or '
+                                        '$20,000 and choose cash, financing, or lease [Nemt University — '
+                                        'VGWUx-p8MbM @ 00:04:37].'},
+                             {'step': 2,
+                              'title': 'Buy the Cut and Configuration Your State Will Approve',
+                              'action': 'Test extended or full cut vans at a mobility dealer and confirm '
+                                        'your state accepts the entry and exit layout.',
+                              'detail': 'Smaller vans cannot fit leg extenders or two wheelchairs, and '
+                                        'California denied a rear entry wheelchair van for lacking an '
+                                        'emergency exit [MJ Business Academy — P_pN6quM3G4 @ 00:11:02].'},
+                             {'step': 3,
+                              'title': 'Load Out the Van Kit',
+                              'action': 'Install the phone mount, dash and interior cameras, spill kit, '
+                                        'gloves, masks, first aid kit, fire extinguisher, triangles, '
+                                        'spare, and brochures.',
+                              'detail': 'NEMT Growth Machine keeps gloves, N95 masks, a first aid kit, and '
+                                        'a bloodborne pathogen spill kit in a rear duffel plus business '
+                                        'cards for networking at facilities [NEMT Growth Machine — '
+                                        'nSB43YYfRs0 @ 00:04:26].'},
+                             {'step': 4,
+                              'title': 'Run the Daily Trip Cycle',
+                              'action': 'Clock in, complete the pre-trip inspection, send automated '
+                                        'reminders, enforce wait time and cancellation policy, and log '
+                                        'end-of-shift issues.',
+                              'detail': 'Pre-trip checks cover fluids, tires, brakes, lights, lifts, and '
+                                        'straps [RouteGenie — qiZqLls0G-E @ 00:03:23]; reminder calls go '
+                                        'out the day prior, the morning of, and when the driver is en '
+                                        'route [RouteGenie — R4q_XZ1pARQ @ 00:04:11].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over the first vehicle. Nemt University argues '
+                              'ambulatory is the easiest door into the business because a driver who '
+                              'already owns a newer sedan, such as a 2017-era Buick, skips the purchase or '
+                              'lease expense entirely. The host started with one vehicle and a small '
+                              'square magnet on the door, and tells operators not to wait for four or five '
+                              'new trucks [irqJHXZq5K8 @ 00:03:06] [irqJHXZq5K8 @ 00:05:18]. Wheelchair & '
+                              'Stretcher Transportation Services takes the opposite line: stop buying rear '
+                              'entry wheelchair vans, stop letting people say you can start with that, and '
+                              'start with the best. The speaker recommends a Ford Transit, calls it '
+                              'actually cheaper than a Caravan, and says it can carry a stretcher, two '
+                              'wheelchairs, and one ambulatory passenger in one run [svdIU5f-6tA @ '
+                              '00:00:23]. NEMT Growth Machine sits on the expensive end by choice. The '
+                              'owners bought an $87,900 Ford Transit 350 XL because they wanted to shoot '
+                              'for as much revenue as possible and run anything and everything. They also '
+                              'admit a sedan could be even cheaper for someone who does not want to deal '
+                              'with wheelchairs [nSB43YYfRs0 @ 00:07:23]. The operator choice comes down '
+                              'to whether cash on hand buys capacity now or the fleet scales later from a '
+                              'personal car.',
+                              'Entry style and cut length produce a second fault line. Nemt University '
+                              'says its own fleet runs rear entry vehicles, while conceding that a rear '
+                              'ramp carries a slight degree of tilt compared with a side ramp. The host '
+                              'frames the choice as whatever accommodations the operator wants to offer, '
+                              'and points buyers toward pricing a used minivan wheelchair vehicle first '
+                              '[VGWUx-p8MbM @ 00:03:24]. MJ Business Academy pushes the conversation '
+                              'toward cut size rather than door position. Jasmine and Monica say full cut '
+                              'vans are the best after watching another provider load a reclining '
+                              'wheelchair that a side entry van likely could not accommodate [ohTDpW0zUS8 '
+                              '@ 00:06:54]. Their own full cut Dodge Caravan takes two ambulatory riders '
+                              'and one wheelchair with the seats out, or two wheelchairs once the folding '
+                              'seats collapse [rIDRpTROLM8 @ 00:00:23]. They also report California '
+                              'refusing rear entry vans that lack an emergency exit. That left one client '
+                              'with a wheelchair van that was approved only for ambulatory Medicaid trips '
+                              '[P_pN6quM3G4 @ 00:11:02]. The live split is whether a full cut minivan with '
+                              'folding seats is the scalable workhorse, or whether door position and state '
+                              'exit rules decide the purchase before cut length ever matters to the buyer.',
+                              'Even the money math splits, sometimes inside the same channel. In its '
+                              'ambulatory-versus-wheelchair breakdown, Nemt University says ambulatory is '
+                              'the way to go to maximize what you make, especially on private pay trips '
+                              'where the operator dictates the rate [irqJHXZq5K8 @ 00:03:25]. Yet in its '
+                              'wheelchair van guide, the same host says wheelchair accessible vehicles '
+                              'make more money because the operator is offering more services, and calls '
+                              'an ambulatory vehicle great but a wheelchair vehicle amazing [VGWUx-p8MbM @ '
+                              '00:02:02]. RouteGenie backs the wheelchair side on volume. It warns that '
+                              'limiting yourself to ambulatory passengers will probably mean fewer '
+                              'available contracts, and cites Indiana figures of 63.5% ambulatory and '
+                              '30.3% wheelchair requests to argue that a minivan can complete up to 90% of '
+                              'contracts [Lh999r_-mi0 @ 00:04:07]. At the premium end of the market, '
+                              "RouteGenie's 2026 buyer guide lists access to higher-paying contracts for "
+                              'full-size stretcher vans. The same guide notes that stretcher transport '
+                              'represents only about 10% of orders, against higher purchase price, fuel '
+                              'consumption, and maintenance costs [uJV2f3MOJbI @ 00:06:25]. The playbook '
+                              "that reconciles these positions is Nemt University's own six-month plan: "
+                              'start on a personal vehicle, then step up to a wheelchair van if business '
+                              'goes well, with market research deciding the timing.'],
+               'table': {'caption': 'Alternative Playbooks: Where NEMT Operators Split on Vehicles and '
+                                    'Money',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['First vehicle for a brand-new NEMT operator',
+                                   'Start on your personal sedan with a door magnet and scale up later',
+                                   'Stop buying rear entry vans and start with a Ford Transit from day one',
+                                   'Nemt University ([irqJHXZq5K8 @ 00:05:18]); Wheelchair & Stretcher '
+                                   'Transportation Services ([svdIU5f-6tA @ 00:00:23])'],
+                                  ['Rear entry versus side entry wheelchair minivan',
+                                   'Own fleet runs rear entry while noting rear ramps carry a slight tilt',
+                                   'California denies rear entry vans lacking an emergency exit for '
+                                   'Medicaid wheelchair trips',
+                                   'Nemt University ([VGWUx-p8MbM @ 00:03:24]); MJ Business Academy '
+                                   '([P_pN6quM3G4 @ 00:11:02])'],
+                                  ['Smaller cut versus full cut or extended van',
+                                   'Smaller van fits a budget-limited private pay operation carrying one '
+                                   'wheelchair at a time',
+                                   'Full cut handles leg extenders, couples in wheelchairs, and reclining '
+                                   'wheelchairs',
+                                   'MJ Business Academy ([P_pN6quM3G4 @ 00:05:17]); MJ Business Academy '
+                                   '([ohTDpW0zUS8 @ 00:06:54])'],
+                                  ['Which service level actually pays the most money',
+                                   'Ambulatory pays more when private pay lets the operator dictate the '
+                                   'rate',
+                                   'Wheelchair makes more money because the operator offers more services '
+                                   'overall',
+                                   'Nemt University ([irqJHXZq5K8 @ 00:03:25]); Nemt University '
+                                   '([VGWUx-p8MbM @ 00:02:02])'],
+                                  ['Building stretcher capability into the fleet',
+                                   'Transit carries a stretcher, two wheelchairs, and one ambulatory rider '
+                                   'together',
+                                   'Stretcher is only about 10% of orders, so verify local demand to avoid '
+                                   'downtime',
+                                   'Wheelchair & Stretcher Transportation Services ([svdIU5f-6tA @ '
+                                   '00:00:39]); RouteGenie ([uJV2f3MOJbI @ 00:06:25])'],
+                                  ['Paying for the wheelchair van',
+                                   'Buy outright with saved cash so there is no note to carry each month',
+                                   'Finance with decent credit, or go top-dog with $6,000 down and roughly '
+                                   '$1,600 monthly',
+                                   'Nemt University ([VGWUx-p8MbM @ 00:05:10]); NEMT Growth Machine '
+                                   '([nSB43YYfRs0 @ 00:00:00])'],
+                                  ['Broker work versus private pay contracts',
+                                   'Some counties require a broker for Medicaid partnership while the '
+                                   'Detroit area does not',
+                                   'Broker-only Caravan operators cannot scale unless they learn to '
+                                   'negotiate their own contracts',
+                                   'Nemt University ([irqJHXZq5K8 @ 00:04:21]); Wheelchair & Stretcher '
+                                   'Transportation Services ([svdIU5f-6tA @ 00:01:01])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first trap is underestimating what a van costs to keep on the road. '
+                              'NEMT Growth Machine bought a Ford Transit 350 XL with a rear wheelchair '
+                              'lift for $87,900 after taxes and put $6,000 down. The van payment now runs '
+                              'about $1,600 a month. The owners call commercial insurance the killer: '
+                              'about $17,315 a year, or roughly $1,440 a month. Together those push fixed '
+                              'costs right above $3,000 a month before oil changes, tire rotations, or gas '
+                              '[nSB43YYfRs0 @ 00:00:20]. Their all-in estimate lands around $43,000 a '
+                              'year, rounded to $45,000 once unexpected maintenance enters. They offset '
+                              'fuel by charging for mileage on longer runs to Matthews and Concord '
+                              '[nSB43YYfRs0 @ 00:06:40]. Nemt University warns financed buyers to confirm '
+                              'during market research that revenue can cover both the note and the '
+                              'insurance, because those can get quite expensive [VGWUx-p8MbM @ 00:05:43]. '
+                              'RouteGenie flags a used-market trap that bites budget buyers. The Dodge '
+                              'Grand Caravan was sold exclusively as a fleet vehicle in its final years, '
+                              'so extremely low prices might signal poor condition; used 2019 units '
+                              'normally run $13,000 to $16,000 [uJV2f3MOJbI @ 00:03:21]. Run the payment, '
+                              'insurance, and mileage math before signing, not after the first slow month.',
+                              'The second trap is the dead mile. LearnCargo says the cancellation call '
+                              'almost never comes. Nine times out of 10, the driver finds out at the last '
+                              'minute on their own, sometimes because the broker never passed the '
+                              'cancellation along. The fix is calling the broker to get a note placed on '
+                              "that client's account after driving 30 miles for nothing [MOdO2Zzw1wI @ "
+                              '00:01:02]. RouteGenie frames the cost as scheduling gaps and lost revenue. '
+                              'It estimates that an operator facing more than one no-show a month could be '
+                              'losing upwards of a thousand dollars monthly, and cites research tying up '
+                              'to 31.5% of no-shows to poor provider communication [R4q_XZ1pARQ @ '
+                              '00:01:59]. Its cancellation playbook asks passengers to cancel at least 24 '
+                              'hours before pickup, and gives the example of a $25 fee on a $100 trip '
+                              'canceled within 24 hours. It warns that disputes over no-show charges are '
+                              'common unless the policy is written, published, and enforced consistently, '
+                              'with fee waivers spelled out in advance [d8ocN3ERJag @ 00:04:22]. MJ '
+                              'Business Academy shows the field version. Their client agreed to pay wait '
+                              'time if not outside at the 10:30 pickup, so the clock starts the moment the '
+                              'van arrives and the client is not ready [ohTDpW0zUS8 @ 00:05:37].',
+                              'The third trap is buying a van that turns trips away or fails mid-run. MJ '
+                              'Business Academy, five years into operating, says rehabilitation center '
+                              'patients often ride with leg extenders that a smaller wheelchair van cannot '
+                              'fit, so that is one trip you will have to turn away. The same tight cabin '
+                              'blocks multi-loading and husband-and-wife wheelchair pairs. It also leaves '
+                              'the wheelchair parked where it takes the brunt of a rear impact '
+                              '[P_pN6quM3G4 @ 00:03:02]. Jasmine and Monica also show how thin punctuality '
+                              'margins are. They rolled up to St. JW Medical Plaza one minute late for a '
+                              '10:30 pickup with a client who likes them on time, blaming a business call '
+                              'that ran long [ohTDpW0zUS8 @ 00:02:34]. Cleanup is another hidden failure '
+                              'point. Their full cut Caravan has no carpet because clients have accidents '
+                              'and leak bodily fluids, so the floor wipes clean [rIDRpTROLM8 @ 00:01:32]. '
+                              'NEMT Growth Machine stocks a duffel with gloves, N95 masks, a first aid '
+                              'kit, and a bloodborne pathogen spill kit. The van also carries a jack, a '
+                              'spare tire, and three reflective triangles set roughly 10, 100, and 200 '
+                              'feet behind a disabled van. They do this even on 2025 Transits they say '
+                              'should not have issues [nSB43YYfRs0 @ 00:04:26].'],
+               'table': {'caption': 'Firsthand Failure Modes and the Economics Behind Them',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics or Fix',
+                                     'Expert Source'],
+                         'rows': [['Insurance and van payment crushing monthly cash flow',
+                                   'Commercial insurance ran about $17,315 a year on a financed Ford '
+                                   'Transit',
+                                   'Van payment plus insurance tops $3,000 monthly before gas and '
+                                   'maintenance',
+                                   'NEMT Growth Machine ([nSB43YYfRs0 @ 00:00:20])'],
+                                  ['Rear entry van rejected for Medicaid wheelchair trips',
+                                   'California client with a rear entry wheelchair van was denied for '
+                                   'lacking an emergency exit',
+                                   'Approved only for ambulatory Medicaid clients despite owning a '
+                                   'wheelchair van',
+                                   'MJ Business Academy ([P_pN6quM3G4 @ 00:11:02])'],
+                                  ['Smaller van forcing operators to turn trips away',
+                                   'Rehab center patients with leg extenders cannot fit inside a smaller '
+                                   'wheelchair van',
+                                   'One trip lost each time, while a full cut or extended van takes them',
+                                   'MJ Business Academy ([P_pN6quM3G4 @ 00:03:02])'],
+                                  ['Silent cancellations and wasted drive miles',
+                                   'The broker never notified the provider and the driver drove 30 miles',
+                                   "Call the broker and get a note placed on that client's account",
+                                   'LearnCargo ([MOdO2Zzw1wI @ 00:01:02])'],
+                                  ['No-shows bleeding revenue out of the schedule',
+                                   'More than one no-show monthly can cost upwards of a thousand dollars',
+                                   'Automated reminder calls go out the day prior, the morning of, and en '
+                                   'route',
+                                   'RouteGenie ([R4q_XZ1pARQ @ 00:01:59]); RouteGenie ([R4q_XZ1pARQ @ '
+                                   '00:04:11])'],
+                                  ['Disputed no-show and late cancellation fees',
+                                   'Passengers dispute no-show charges, claiming they had a valid reason '
+                                   'to miss',
+                                   'Publish a clear, consistent policy and spell out which situations '
+                                   'qualify for waivers',
+                                   'RouteGenie ([d8ocN3ERJag @ 00:05:29])'],
+                                  ['Full-size stretcher van sitting idle',
+                                   'Full-size vans carry a higher price, maintenance, and fuel costs, and '
+                                   'often have exclusive application',
+                                   'Confirm local demand first, or use a modular cabin for wheelchair and '
+                                   'seat swaps',
+                                   'RouteGenie ([Lh999r_-mi0 @ 00:06:44])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before the Van Rolls',
+                           'body': 'Clear these four practitioner-tested checks before committing capital '
+                                   'to a vehicle or dispatching the first trip of the day.',
+                           'items': ['Price the full monthly burn, a payment near $1,600 plus insurance '
+                                     'near $1,440, before signing the note [NEMT Growth Machine — '
+                                     'nSB43YYfRs0 @ 00:00:20].',
+                                     'Confirm your state accepts the entry style, since California denied '
+                                     'a rear entry van without an emergency exit for Medicaid wheelchair '
+                                     'work [MJ Business Academy — P_pN6quM3G4 @ 00:11:02].',
+                                     'Measure the van against your actual client base, including leg '
+                                     'extenders, reclining wheelchairs, and couples who both ride in '
+                                     'wheelchairs [MJ Business Academy — ohTDpW0zUS8 @ 00:06:54].',
+                                     'Publish a written no-show and cancellation policy built on a 24-hour '
+                                     'notice window, and turn on automated trip reminders [RouteGenie — '
+                                     'd8ocN3ERJag @ 00:02:26].']}}],
+ 'pull_quote': "“Please stop buying rear entry wheelchair vans. Like if you're going to take the "
+               'non-emergency medical transportation industry serious, you need to have a serious '
+               'vehicle.” — Wheelchair & Stretcher Transportation Services (svdIU5f-6tA @ 00:00:03)',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Set a hard vehicle budget of $7,500, $10,000, or $20,000, and decide between cash, '
+                      'financing, or a lease before shopping [Nemt University — VGWUx-p8MbM @ 00:04:37].',
+                      'Walk the van at a mobility dealership with a rep who lays out the advantages and '
+                      'disadvantages of extended versus smaller cuts [MJ Business Academy — P_pN6quM3G4 @ '
+                      '00:10:25].',
+                      'Benchmark used pricing before buying, such as $25,000 to $30,000 for a 2019 Ford '
+                      'Transit against new pricing from $50,500 [RouteGenie — uJV2f3MOJbI @ 00:08:49].',
+                      'Stock the van with a phone mount, dash and interior cameras, Clorox wipes, an '
+                      'umbrella, a fire extinguisher, a spill kit, reflective triangles, and business '
+                      'cards [NEMT Growth Machine — nSB43YYfRs0 @ 00:02:25].',
+                      'Run a pre-trip inspection of fluids, tire pressure, brakes, lights, wheelchair '
+                      'lifts, and securement straps before the 4 or 5 a.m. first pickup [RouteGenie — '
+                      'qiZqLls0G-E @ 00:03:23].',
+                      'Tell every rider to call the broker when they will not travel, and log broker '
+                      "notification failures on the client's account [LearnCargo — MOdO2Zzw1wI @ "
+                      '00:00:32].'],
+ 'statutory_citations': [{'title': 'Wheelchair & Stretcher Transportation Services — How to Build a '
+                                   'Private Pay Medical Transportation Company [00:00:03]',
+                          'url': 'https://www.youtube.com/watch?v=svdIU5f-6tA&t=3s',
+                          'relevance': 'Primary practitioner testimony on skipping rear entry Caravans and '
+                                       'starting with a Ford Transit that carries stretcher, wheelchair, '
+                                       'and ambulatory riders together.'},
+                         {'title': 'NEMT Growth Machine — What Our Wheelchair Van Really Costs (and How We '
+                                   'Made It Better) [00:00:00]',
+                          'url': 'https://www.youtube.com/watch?v=nSB43YYfRs0&t=0s',
+                          'relevance': 'Primary practitioner testimony on the $87,900 Transit purchase, '
+                                       'monthly payment, commercial insurance, and the in-van equipment '
+                                       'kit.'},
+                         {'title': 'MJ Business Academy — Smaller Vans May Not Work for NEMT [00:11:02]',
+                          'url': 'https://www.youtube.com/watch?v=P_pN6quM3G4&t=662s',
+                          'relevance': 'Primary practitioner testimony on smaller-van trip losses and '
+                                       'California denying rear entry vans without an emergency exit.'},
+                         {'title': 'RouteGenie — Canceled Trips in NEMT: What Medical Transportation '
+                                   'Providers Need to Do  | RouteGenie [00:02:26]',
+                          'url': 'https://www.youtube.com/watch?v=d8ocN3ERJag&t=146s',
+                          'relevance': 'Primary practitioner testimony on 24-hour cancellation windows, '
+                                       'cancellation fees, and no-show dispute policy.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'svdIU5f-6tA',
+                       'title': 'How to Build a Private Pay Medical Transportation Company',
+                       'channel': 'Wheelchair & Stretcher Transportation Services',
+                       'author': 'Wheelchair & Stretcher Transportation Services',
+                       'text': "It's actually cheaper with a Ford Transit as opposed to a Caravan, and you "
+                               'can get more done; in a Ford Transit van you can fit a stretcher, two '
+                               'wheelchairs, and one ambulatory passenger, all in one vehicle.',
+                       'tip': "It's actually cheaper with a Ford Transit as opposed to a Caravan, and you "
+                              'can get more done; in a Ford Transit van you can fit a stretcher, two '
+                              'wheelchairs, and one ambulatory passenger, all in one vehicle.',
+                       'timestamp': 23,
+                       'timestamp_seconds': 23,
+                       'timestamp_label': '[00:00:23]',
+                       'url': 'https://www.youtube.com/watch?v=svdIU5f-6tA&t=23s',
+                       'markdown': '[00:00:23](https://www.youtube.com/watch?v=svdIU5f-6tA&t=23s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'irqJHXZq5K8',
+                       'title': 'Should I START 🚘AMBULATORY or WHEELCHAIR ♿️ NEMT BUSINESS 2025 edition…',
+                       'channel': 'Nemt University',
+                       'author': 'Nemt University',
+                       'text': "If you're starting off with your personal vehicle, go ahead, by all means "
+                               "start off with your personal vehicle; that's exactly what I did.",
+                       'tip': "If you're starting off with your personal vehicle, go ahead, by all means "
+                              "start off with your personal vehicle; that's exactly what I did.",
+                       'timestamp': 318,
+                       'timestamp_seconds': 318,
+                       'timestamp_label': '[00:05:18]',
+                       'url': 'https://www.youtube.com/watch?v=irqJHXZq5K8&t=318s',
+                       'markdown': '[00:05:18](https://www.youtube.com/watch?v=irqJHXZq5K8&t=318s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Lh999r_-mi0',
+                       'title': 'How to Choose an NEMT Vehicle: Compliance, Costs, and Fleet Strategy',
+                       'channel': 'RouteGenie',
+                       'author': 'RouteGenie',
+                       'text': 'Given these figures, a minivan can complete up to 90% of all medical '
+                               'transportation contracts; this is the minimum recommended vehicle type '
+                               'that provides scalability and satisfies a much larger array of broker '
+                               'requests.',
+                       'tip': 'Given these figures, a minivan can complete up to 90% of all medical '
+                              'transportation contracts; this is the minimum recommended vehicle type that '
+                              'provides scalability and satisfies a much larger array of broker requests.',
+                       'timestamp': 317,
+                       'timestamp_seconds': 317,
+                       'timestamp_label': '[00:05:17]',
+                       'url': 'https://www.youtube.com/watch?v=Lh999r_-mi0&t=317s',
+                       'markdown': '[00:05:17](https://www.youtube.com/watch?v=Lh999r_-mi0&t=317s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VGWUx-p8MbM',
+                       'title': 'Don’t Buy a Wheelchair Van Until You WATCH THIS!!! | NEMT University | '
+                                '2025',
+                       'channel': 'Nemt University',
+                       'author': 'Nemt University',
+                       'text': "Have a budget set, whether it's $10,000, whether it's $7,500, whether it's "
+                               '$20,000, because this will give you a parameter of what you can be looking '
+                               "for when you're searching for these vehicles.",
+                       'tip': "Have a budget set, whether it's $10,000, whether it's $7,500, whether it's "
+                              '$20,000, because this will give you a parameter of what you can be looking '
+                              "for when you're searching for these vehicles.",
+                       'timestamp': 277,
+                       'timestamp_seconds': 277,
+                       'timestamp_label': '[00:04:37]',
+                       'url': 'https://www.youtube.com/watch?v=VGWUx-p8MbM&t=277s',
+                       'markdown': '[00:04:37](https://www.youtube.com/watch?v=VGWUx-p8MbM&t=277s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uJV2f3MOJbI',
+                       'title': 'Best NEMT Vehicles You Can Buy in 2026: Guide with Prices and '
+                                'Specifications',
+                       'channel': 'RouteGenie',
+                       'author': 'RouteGenie',
+                       'text': 'A smaller van completes up to 90% of all contracts; for wheelchair '
+                               "passengers, you'll need ramps, security restraints, and hookups, and "
+                               'stability is non-negotiable.',
+                       'tip': 'A smaller van completes up to 90% of all contracts; for wheelchair '
+                              "passengers, you'll need ramps, security restraints, and hookups, and "
+                              'stability is non-negotiable.',
+                       'timestamp': 163,
+                       'timestamp_seconds': 163,
+                       'timestamp_label': '[00:02:43]',
+                       'url': 'https://www.youtube.com/watch?v=uJV2f3MOJbI&t=163s',
+                       'markdown': '[00:02:43](https://www.youtube.com/watch?v=uJV2f3MOJbI&t=163s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nSB43YYfRs0',
+                       'title': 'What Our Wheelchair Van Really Costs (and How We Made It Better)',
+                       'channel': 'NEMT Growth Machine',
+                       'author': 'NEMT Growth Machine',
+                       'text': 'Our van payment is about 1,600 bucks a month, and the commercial '
+                               'insurance, that is a killer; the commercial insurance is about 17,315 '
+                               'bucks a year.',
+                       'tip': 'Our van payment is about 1,600 bucks a month, and the commercial insurance, '
+                              'that is a killer; the commercial insurance is about 17,315 bucks a year.',
+                       'timestamp': 20,
+                       'timestamp_seconds': 20,
+                       'timestamp_label': '[00:00:20]',
+                       'url': 'https://www.youtube.com/watch?v=nSB43YYfRs0&t=20s',
+                       'markdown': '[00:00:20](https://www.youtube.com/watch?v=nSB43YYfRs0&t=20s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-DCWDiGaTn0',
+                       'title': 'Accessible Van as NEMT | AMS Vans',
+                       'channel': 'AMS Vans',
+                       'author': 'AMS Vans',
+                       'text': 'You just have to take a 9/16 ratchet, take these bolts out, loosen it up, '
+                               'so you are able to take this out of the floor and also use it as a '
+                               'wheelchair accessible van.',
+                       'tip': 'You just have to take a 9/16 ratchet, take these bolts out, loosen it up, '
+                              'so you are able to take this out of the floor and also use it as a '
+                              'wheelchair accessible van.',
+                       'timestamp': 80,
+                       'timestamp_seconds': 80,
+                       'timestamp_label': '[00:01:20]',
+                       'url': 'https://www.youtube.com/watch?v=-DCWDiGaTn0&t=80s',
+                       'markdown': '[00:01:20](https://www.youtube.com/watch?v=-DCWDiGaTn0&t=80s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'P_pN6quM3G4',
+                       'title': 'Smaller Vans May Not Work for NEMT',
+                       'channel': 'MJ Business Academy',
+                       'author': 'MJ Business Academy',
+                       'text': 'The last thing you want to do is go and purchase and drop 40, 50, 60,000 '
+                               "on a van that you can't use with certain organizations.",
+                       'tip': 'The last thing you want to do is go and purchase and drop 40, 50, 60,000 on '
+                              "a van that you can't use with certain organizations.",
+                       'timestamp': 687,
+                       'timestamp_seconds': 687,
+                       'timestamp_label': '[00:11:27]',
+                       'url': 'https://www.youtube.com/watch?v=P_pN6quM3G4&t=687s',
+                       'markdown': '[00:11:27](https://www.youtube.com/watch?v=P_pN6quM3G4&t=687s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'T4M_BMvKM10',
+                       'title': 'NEMT Vehicles: 7 Types of Non-Emergency Medical Transportation Vehicles',
+                       'channel': 'LearnCargo',
+                       'author': 'LearnCargo',
+                       'text': 'If a hospital or a nursing home have patients that have additional '
+                               "requirements for their transportation needs, you're going to need this "
+                               "space, and that's where a transit van comes in handy.",
+                       'tip': 'If a hospital or a nursing home have patients that have additional '
+                              "requirements for their transportation needs, you're going to need this "
+                              "space, and that's where a transit van comes in handy.",
+                       'timestamp': 51,
+                       'timestamp_seconds': 51,
+                       'timestamp_label': '[00:00:51]',
+                       'url': 'https://www.youtube.com/watch?v=T4M_BMvKM10&t=51s',
+                       'markdown': '[00:00:51](https://www.youtube.com/watch?v=T4M_BMvKM10&t=51s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ohTDpW0zUS8',
+                       'title': 'Ride Along with Us: Join Us for a Wheelchair Ride as NEMT Business Owners',
+                       'channel': 'MJ Business Academy',
+                       'author': 'MJ Business Academy',
+                       'text': 'This is why we tell you guys that full cut vans are the best, because this '
+                               'particular wheelchair reclines, so if you just had like a side entry van, '
+                               'chances are you would not be able to accommodate this type of client.',
+                       'tip': 'This is why we tell you guys that full cut vans are the best, because this '
+                              'particular wheelchair reclines, so if you just had like a side entry van, '
+                              'chances are you would not be able to accommodate this type of client.',
+                       'timestamp': 414,
+                       'timestamp_seconds': 414,
+                       'timestamp_label': '[00:06:54]',
+                       'url': 'https://www.youtube.com/watch?v=ohTDpW0zUS8&t=414s',
+                       'markdown': '[00:06:54](https://www.youtube.com/watch?v=ohTDpW0zUS8&t=414s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rIDRpTROLM8',
+                       'title': 'We made over 100,000 with this 30,000 van',
+                       'channel': 'MJ Business Academy',
+                       'author': 'MJ Business Academy',
+                       'text': 'Not having carpet in your van is a plus because our clients have '
+                               'accidents, so if your client may be leaking bodily fluid or urinating, it '
+                               'is easy to clean out.',
+                       'tip': 'Not having carpet in your van is a plus because our clients have accidents, '
+                              'so if your client may be leaking bodily fluid or urinating, it is easy to '
+                              'clean out.',
+                       'timestamp': 92,
+                       'timestamp_seconds': 92,
+                       'timestamp_label': '[00:01:32]',
+                       'url': 'https://www.youtube.com/watch?v=rIDRpTROLM8&t=92s',
+                       'markdown': '[00:01:32](https://www.youtube.com/watch?v=rIDRpTROLM8&t=92s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MOdO2Zzw1wI',
+                       'title': 'How to Handle NEMT Cancelations',
+                       'channel': 'LearnCargo',
+                       'author': 'LearnCargo',
+                       'text': 'You would have to call the broker and get a note put on that account for '
+                               'that client to say you guys got to do a little bit better by notifying me, '
+                               'cuz I just drove 30 miles to pick this person up.',
+                       'tip': 'You would have to call the broker and get a note put on that account for '
+                              'that client to say you guys got to do a little bit better by notifying me, '
+                              'cuz I just drove 30 miles to pick this person up.',
+                       'timestamp': 62,
+                       'timestamp_seconds': 62,
+                       'timestamp_label': '[00:01:02]',
+                       'url': 'https://www.youtube.com/watch?v=MOdO2Zzw1wI&t=62s',
+                       'markdown': '[00:01:02](https://www.youtube.com/watch?v=MOdO2Zzw1wI&t=62s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wHWl2rSRGV0',
+                       'title': 'What Happens if a Passenger is a No Show in NEMT | RouteGenie',
+                       'channel': 'RouteGenie',
+                       'author': 'RouteGenie',
+                       'text': 'This NEMT software can help manage and minimize no shows, and many '
+                               'RouteGenie clients have reduced no shows by up to 30%.',
+                       'tip': 'This NEMT software can help manage and minimize no shows, and many '
+                              'RouteGenie clients have reduced no shows by up to 30%.',
+                       'timestamp': 262,
+                       'timestamp_seconds': 262,
+                       'timestamp_label': '[00:04:22]',
+                       'url': 'https://www.youtube.com/watch?v=wHWl2rSRGV0&t=262s',
+                       'markdown': '[00:04:22](https://www.youtube.com/watch?v=wHWl2rSRGV0&t=262s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'R4q_XZ1pARQ',
+                       'title': 'How to Reduce No-Show Passengers | NEMT Business Education | RouteGenie',
+                       'channel': 'RouteGenie',
+                       'author': 'RouteGenie',
+                       'text': 'Calls can be sent out the day prior, the morning of the ride, and as soon '
+                               'as the driver is en route to reduce the number of no shows you see.',
+                       'tip': 'Calls can be sent out the day prior, the morning of the ride, and as soon '
+                              'as the driver is en route to reduce the number of no shows you see.',
+                       'timestamp': 235,
+                       'timestamp_seconds': 235,
+                       'timestamp_label': '[00:03:55]',
+                       'url': 'https://www.youtube.com/watch?v=R4q_XZ1pARQ&t=235s',
+                       'markdown': '[00:03:55](https://www.youtube.com/watch?v=R4q_XZ1pARQ&t=235s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'd8ocN3ERJag',
+                       'title': 'Canceled Trips in NEMT: What Medical Transportation Providers Need to Do  '
+                                '| RouteGenie',
+                       'channel': 'RouteGenie',
+                       'author': 'RouteGenie',
+                       'text': 'If a provider charges one hundred dollars for a trip and a passenger '
+                               'cancels within 24 hours, the provider may charge a 25 cancellation fee.',
+                       'tip': 'If a provider charges one hundred dollars for a trip and a passenger '
+                              'cancels within 24 hours, the provider may charge a 25 cancellation fee.',
+                       'timestamp': 262,
+                       'timestamp_seconds': 262,
+                       'timestamp_label': '[00:04:22]',
+                       'url': 'https://www.youtube.com/watch?v=d8ocN3ERJag&t=262s',
+                       'markdown': '[00:04:22](https://www.youtube.com/watch?v=d8ocN3ERJag&t=262s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qiZqLls0G-E',
+                       'title': 'A Day in Life of NEMT Driver: Schedule, Responsibilities, and Routine',
+                       'channel': 'RouteGenie',
+                       'author': 'RouteGenie',
+                       'text': 'A typical pre-trip inspection means checking fluid levels like fuel and '
+                               'oil, tire pressure, brakes, lights, and any special equipment like '
+                               'wheelchair lifts or securement straps.',
+                       'tip': 'A typical pre-trip inspection means checking fluid levels like fuel and '
+                              'oil, tire pressure, brakes, lights, and any special equipment like '
+                              'wheelchair lifts or securement straps.',
+                       'timestamp': 203,
+                       'timestamp_seconds': 203,
+                       'timestamp_label': '[00:03:23]',
+                       'url': 'https://www.youtube.com/watch?v=qiZqLls0G-E&t=203s',
+                       'markdown': '[00:03:23](https://www.youtube.com/watch?v=qiZqLls0G-E&t=203s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'}]}

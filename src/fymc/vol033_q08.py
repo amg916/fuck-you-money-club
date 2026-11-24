@@ -1,633 +1,841 @@
 from __future__ import annotations
 
-CHAPTER_8 = {
-    "id": "Q8",
-    "chapter_id": "Q8",
-    "chapter_number": 8,
-    "question_number": 8,
-    "slug": "public-records-apis-data-pipelines-and-operator-tooling",
-    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small insurance housing & corporate rental arbitrage desk an unfair information edge?",
-    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
-    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
-    "subtitle": "County Title Evidence, OpenFEMA, ALE and CRS Portals, Microsoft Graph, Guesty, and Auditable 30-to-270-Day Housing Operations",
-    "layout_template": "resource_directory",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #33, Insurance Housing & Corporate Rental Arbitrage, ranks #07 of 36 "
-        "with a 90/100 Money-to-Manpower Score. This chapter connects 12 mapped plays "
-        "to an eighteen-resource directory, evidence-backed property selection, authorized "
-        "placement feeds, and exception-driven operations. The edge is faster verified "
-        "availability, not indiscriminate scraping: county records establish ownership clues; "
-        "written landlord authority establishes permission; carrier intermediaries establish "
-        "placement demand. Canonical annual owner profit is $21,600 Conservative, $150,100 "
-        "Base, and $364,000 Scaled. Gross billings of $180,000, $790,000, and $1,400,000 "
-        "produce modeled retained revenue of $81,000, $355,500, and $630,000. Build around "
-        "claim-closeout risk, vacancy gaps, utility caps, and dated sublease addenda. Every "
-        "connector needs a source timestamp, commercial-use permission, reconciliation "
-        "method, and human fallback before it earns operational trust."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$180,000",
-            "context": "Annual gross housing billings; $81,000 retained at 45%.",
-            "note": "12% gross-billings net margin; $21,600 owner profit; 1 FT + 3 C; 26.67% retained net margin.",
-        },
-        {
-            "label": "Base",
-            "value": "$790,000",
-            "context": "Annual gross housing billings; $355,500 retained at 45%.",
-            "note": "19.0% gross-billings net margin; $150,100 owner profit; 1 FT + 3 C; 42.22% retained net margin.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,400,000",
-            "context": "Annual gross housing billings; $630,000 retained at 45%.",
-            "note": "26% gross-billings net margin; $364,000 owner profit; 2 FT + 4 C; 57.78% retained net margin.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Establish Property Authority Before Turning Public Signals into Inventory",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a property evidence packet, not a scraped availability list. "
-                    "County assessor records can connect an address to a parcel and assessed "
-                    "owner, but they do not establish current title, signing authority, lawful "
-                    "occupancy, or permission to sublease. For a Los Angeles pilot, join the "
-                    "Assessor parcel record to recorded conveyances, then obtain the landlord's "
-                    "executed corporate-housing addendum and evidence that the signer can bind "
-                    "the owner. Confirm the actual municipality before using a permit portal: "
-                    "a Los Angeles postal address can sit outside Los Angeles city jurisdiction. "
-                    "The chapter's local mapping P01, parcel authority check, and P02, permit "
-                    "viability screen, turn these distinctions into repeatable work. An illustrative "
-                    "funnel of 100 addresses, 70 clean parcel matches, 40 operationally suitable "
-                    "units, and 12 signed addenda yields 12 usable prospects, not 100 units "
-                    "of inventory. Preserve document dates and unresolved discrepancies. If "
-                    "ownership or permit evidence conflicts, stop promising that unit and "
-                    "request the recorded instrument or building-department response. Never "
-                    "substitute an assessor screenshot for contractual authority. Price searches "
-                    "and certified copies separately from free index access, and collect "
-                    "personal owner information only when the transaction requires it."
-                ),
-                (
-                    "OpenFEMA and National Weather Service feeds identify where to investigate "
-                    "demand, not which households have payable insurance claims. FEMA declarations "
-                    "arrive through an administrative process; weather alerts can precede loss "
-                    "verification and expire without producing placements. Local mapping P03, "
-                    "storm-demand watch, therefore creates a geography-level research queue "
-                    "rather than resident outreach. Local mapping P04, address normalization, "
-                    "uses the Census geocoder to standardize candidate addresses and attach "
-                    "geography without treating a successful match as proof of deliverability. "
-                    "For illustration, five affected counties multiplied by twenty verified "
-                    "corporate-housing prospects creates a 100-property review queue; three "
-                    "documented placement requests are still only three requests. Ask ALE "
-                    "Solutions, CRS Temporary Housing, and existing corporate relocation buyers "
-                    "for authorized requirements before acquiring speculative master leases. "
-                    "A weather signal cannot supply a carrier authorization, household budget, "
-                    "pet requirement, accessibility requirement, or expected repair duration. "
-                    "If either public feed fails, retain its last successful snapshot with "
-                    "a visible stale flag and confirm demand directly with the placement "
-                    "coordinator. Do not infer displaced households from public incident "
-                    "addresses or market insurance eligibility to residents from disaster "
-                    "maps alone; use those maps to allocate operator research time."
-                ),
-                (
-                    "Normalize legal requirements at the jurisdiction and contract levels "
-                    "instead of encoding a nationwide thirty-day exemption. Texas Tax Code "
-                    "Section 156.101 addresses permanent-resident hotel occupancy, but the "
-                    "documented right to occupy, duration, local rules, and transaction facts "
-                    "matter. A thirty-night reservation field is insufficient evidence by "
-                    "itself. Store the applicable taxing authority, supporting agreement, "
-                    "qualifying dates, and review date beside the reservation. California "
-                    "Civil Code Section 1941.1 supplies concrete dwelling-condition requirements "
-                    "for California residential inventory; permit records alone do not prove "
-                    "that heating, plumbing, or other conditions remain adequate today. Require "
-                    "a condition inspection and property-specific commercial liability review "
-                    "before offering a unit. An illustrative $4,500 monthly placement with "
-                    "$2,475 of landlord rent and utility pass-throughs leaves $2,025 before "
-                    "desk expenses, consistent with the modeled 45% retained share. An "
-                    "unbudgeted $450 charge reduces that placement's retained amount to "
-                    "$1,575; public-record precision protects real contribution. The directory "
-                    "below distinguishes source publication latency from desk polling targets. "
-                    "Targets are internal operating choices, not provider service promises. "
-                    "Record source-specific usage terms, avoid collecting unnecessary resident "
-                    "details, and retain source documents in access-controlled storage rather "
-                    "than broad sales folders."
-                ),
-            ],
-            "table": {
-                "caption": "Named Resource Directory, Entries 01–06: Public Evidence and Demand Signals",
-                "headers": [
-                    "Named resource and operating purpose",
-                    "Exact access method and evidence",
-                    "Cost tier and refresh discipline",
-                    "Rate-limit hygiene and fallback source",
-                ],
-                "rows": [
-                    [
-                        "01. Los Angeles County Assessor for parcel identity checks",
-                        "Use https://portal.assessor.lacounty.gov/ and search the address or assessor identification number; preserve the matching parcel evidence.",
-                        "Public portal access carries no subscription charge; reassess before contracting because assessment updates do not establish current title.",
-                        "Use permitted manual searches rather than an assumed API; resolve conflicts through recorded deeds and landlord ownership documentation.",
-                    ],
-                    [
-                        "02. Los Angeles County Registrar-Recorder for recorded ownership evidence",
-                        "Enter https://www.lavote.gov/ and follow Real Estate Records to the current search, inspection, or copy-request procedure.",
-                        "Inspection and copy options have different fee schedules; obtain current charges and note recording dates before ordering certified evidence.",
-                        "Batch necessary requests within published procedures; use a licensed title provider when remote access or indexing cannot resolve ownership.",
-                    ],
-                    [
-                        "03. Los Angeles Department of Building and Safety for permit history",
-                        "Open https://www.ladbs.org/ and select Online Services and building records; confirm the parcel falls inside city jurisdiction.",
-                        "Public lookup and document products have distinct charges; review before commitment because record publication can lag field conditions.",
-                        "Do not scrape access-controlled search screens; request records directly or consult the correct municipal building department when jurisdiction differs.",
-                    ],
-                    [
-                        "04. OpenFEMA Disaster Declarations Summaries for regional research queues",
-                        "GET https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries using documented OData filters, selected fields, and paginated results.",
-                        "Public API access has no subscription fee; poll daily locally while treating declaration publication as event-dependent administrative data.",
-                        "Honor current pagination rules and back off after throttling; use https://www.fema.gov/disaster/declarations as the human review fallback.",
-                    ],
-                    [
-                        "05. National Weather Service alerts for event timing",
-                        "GET https://api.weather.gov/alerts/active with documented area filters and a descriptive User-Agent containing operator contact information.",
-                        "Public API access has no subscription fee; a five-minute desk poll is an internal target, not guaranteed publication latency.",
-                        "Cache responses, honor retry instructions, and slow polling after errors; verify conditions through https://www.weather.gov/ and coordinator communication.",
-                    ],
-                    [
-                        "06. Census Geocoder for normalized address geography",
-                        "GET https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress with address, benchmark=Public_AR_Current, vintage=Current_Current, and format=json.",
-                        "Public geocoding access has no subscription fee; benchmark releases govern source currency, while the desk processes new addresses once.",
-                        "Use documented batch facilities for larger jobs and cache matches; resolve unit-level ambiguity with parcel records and landlord documents.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy certainty before buying another data subscription",
-                "body": "The expensive failure is a confidently offered unit with weak authority, stale availability, or unsupported occupancy treatment.",
-                "items": [
-                    "Save the parcel identifier alongside every normalized address; postal spelling changes should not create duplicate master-lease prospects.",
-                    "Ask the placement coordinator for extension-decision timing before negotiating landlord notice deadlines; the timing spread can exceed the nightly-rate spread.",
-                    "Keep FEMA declaration time, weather-alert time, and confirmed placement-request time as separate fields; combining them creates false demand velocity.",
-                    "Request the corporate-housing addendum before paying for furnishing estimates; an unsigned sublease permission is not usable inventory.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Synchronize Placement, Booking, Billing, and Access Without Inventing APIs",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Local mapping P05, authorized placement-feed sync, begins with the vendor "
-                    "relationship rather than a reverse-engineered login flow. ALE Solutions "
-                    "and CRS Temporary Housing can supply requirements through approved "
-                    "supplier workflows, but public websites do not establish universal API "
-                    "availability. Ask each coordinator what the specific supplier agreement "
-                    "permits: portal entry, scheduled exports, structured messages, or a "
-                    "documented integration. Store the placement reference, requested dates, "
-                    "authorized payer, approved amount, decision deadline, and revision number. "
-                    "Local mapping P06, booking-state reconciliation, connects those records "
-                    "to Guesty or the desk's property system through documented access. Use "
-                    "separate states for requested, quoted, approved, occupied, extended, and "
-                    "closed; a portal inquiry must never become committed inventory "
-                    "automatically. In an illustrative batch of forty requests, eight quotes "
-                    "and two approved thirty-night placements produce sixty approved unit "
-                    "nights, not 1,200. Recheck availability before transmitting each acceptance. "
-                    "If a feed fails, mark affected records stale, suspend automatic promises, "
-                    "and reconcile with the coordinator by an approved channel. An exported "
-                    "CSV with a source timestamp is more valuable than an undocumented "
-                    "connector that silently drops cancellations. Retain the original source "
-                    "revision for every material change."
-                ),
-                (
-                    "Local mapping P07, utility-cap extension billing, separates occupancy "
-                    "rights from payer authorization. Track the landlord notice deadline, "
-                    "guest departure expectation, carrier extension approval, utility meter "
-                    "period, included allowance, and collectible excess under the executed "
-                    "agreement. A scheduled reminder cannot extend a lease, and an automated "
-                    "invoice cannot create a contractual utility obligation. For illustration, "
-                    "a ten-night extension at $150 per night creates $1,500 of additional "
-                    "billings only after the responsible payer accepts the extension; applying "
-                    "the scorecard's 45% planning share gives $675 before desk expenses. "
-                    "Actual incremental landlord and utility costs may differ, so record "
-                    "the realized placement contribution separately. Local mapping P08, "
-                    "payment-evidence matching, links Stripe invoices, bank receipts, or "
-                    "approved intermediary remittances to that exact placement revision. "
-                    "Stripe is an optional collection rail, not an assumption that insurers "
-                    "pay by card. Match invoice identifiers, gross amounts, fees, settlement "
-                    "dates, and credits. If remittance lacks a placement reference, hold "
-                    "the receipt in an unapplied queue and request allocation rather than "
-                    "closing the oldest invoice. Never close a claim in the booking system "
-                    "merely because one invoice was paid; repair completion and occupancy "
-                    "closeout require separate evidence."
-                ),
-                (
-                    "Local mapping P09, access-window automation, makes a lock credential "
-                    "a consequence of verified occupancy status, not merely a calendar "
-                    "event. RemoteLock access should follow compatible hardware capabilities, "
-                    "documented account permissions, and property-specific access rules. "
-                    "Issue a unique time-bounded code after confirming move-in details; "
-                    "separate guest, cleaner, and maintenance credentials. Do not automatically "
-                    "revoke access to an occupied dwelling because a payer is late or "
-                    "a claim closes: local possession rules and the actual tenancy govern "
-                    "that situation. Local mapping P10, leak-and-noise exception routing, "
-                    "uses installed devices through their documented dashboards or authorized "
-                    "connectors, with clear guest notice and no interior audio recording. "
-                    "A sensor alert should create an assessment task, not an accusation "
-                    "or automatic utility surcharge. In an illustrative twenty-unit fleet, "
-                    "five alerts requiring six minutes each consume thirty operator minutes; "
-                    "sending every measurement to the operator destroys that efficiency. "
-                    "Deduplicate repeated alerts, preserve device health separately from "
-                    "incident severity, and escalate unresolved water alarms promptly. "
-                    "Twilio can carry approved operational notices, while failed delivery "
-                    "must create a call task or alternate contact attempt. Keep a physical "
-                    "access fallback and a named local responder for every property."
-                ),
-            ],
-            "table": {
-                "caption": "Named Resource Directory, Entries 07–12: Placement and Operating Rails",
-                "headers": [
-                    "Named resource and operating purpose",
-                    "Exact access method and evidence",
-                    "Cost tier and refresh discipline",
-                    "Rate-limit hygiene and fallback source",
-                ],
-                "rows": [
-                    [
-                        "07. ALE Solutions for approved supplier placement workflows",
-                        "Begin at https://www.alesolutions.com/ and request supplier onboarding; use only the account-specific portal or integration supplied under agreement.",
-                        "Commercial supplier terms determine access and economics; review the approved queue each business day and after coordinator notices.",
-                        "Do not automate authenticated screens without permission; use coordinator confirmation and approved exports when no documented integration is available.",
-                    ],
-                    [
-                        "08. CRS Temporary Housing for authorized placement coordination",
-                        "Begin at https://www.crsth.com/ and request the relevant supplier relationship; retain coordinator-issued portal instructions and placement references.",
-                        "Commercial relationship terms determine available access; a fifteen-minute desk review during staffed hours is a local target only.",
-                        "Follow the supplied interface limits and escalation process; reconcile through the coordinator when exports or portal updates become stale.",
-                    ],
-                    [
-                        "09. Guesty Open API for property booking reconciliation",
-                        "Use https://open-api-docs.guesty.com/ and the documented https://open-api.guesty.com/v1 interface with account-authorized credentials and reservation identifiers.",
-                        "Paid product and API entitlements depend on the agreement; prefer available events plus a daily full reservation reconciliation.",
-                        "Honor documented account limits and retry instructions; recover missing changes through supported exports and the account's reservation dashboard.",
-                    ],
-                    [
-                        "10. Stripe API for optional invoice and receipt matching",
-                        "Call https://api.stripe.com/v1/invoices and configured payment webhooks; verify signatures and use idempotency keys for supported write operations.",
-                        "Usage-based payment and optional billing fees vary by plan; webhooks target prompt updates but settlement remains rail-dependent.",
-                        "Read response headers, apply bounded retries, and deduplicate events; reconcile against dashboard exports and bank settlement evidence after failures.",
-                    ],
-                    [
-                        "11. RemoteLock for authorized time-bounded property access",
-                        "Consult https://developer.remotelock.com/ and use documented OAuth access to https://api.remotelock.com/ for compatible devices and approved accounts.",
-                        "Hardware, subscription, and integration costs depend on the deployment; verify command acknowledgments because device connectivity controls actual execution.",
-                        "Follow documented request limits and avoid repeated unlock commands; use the property access procedure and local responder during outages.",
-                    ],
-                    [
-                        "12. Twilio Messaging for approved operational guest notices",
-                        "Use https://api.twilio.com/2010-04-01/Accounts/{AccountSid}/Messages.json with scoped credentials and validate configured status-callback signatures.",
-                        "Usage-based messaging, number, and carrier charges apply; delivery callbacks reflect carrier outcomes rather than a promised arrival time.",
-                        "Queue within sender throughput limits and handle error codes; escalate failed urgent notices through the documented alternate contact procedure.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Capture the source contract",
-                    "action": "Register the connector owner, permitted purpose, credential scope, and current provider documentation.",
-                    "detail": "Record whether access is API, approved export, portal entry, or coordinator communication; attach the agreement and renewal date.",
-                },
-                {
-                    "step": 2,
-                    "title": "Normalize without overwriting evidence",
-                    "action": "Write the original payload and normalize property, placement, reservation, and invoice identifiers.",
-                    "detail": "Retain source_updated_at, observed_at, revision, and payload hash; place unmatched identifiers in a review queue.",
-                },
-                {
-                    "step": 3,
-                    "title": "Reconcile the consequential transition",
-                    "action": "Require current evidence before accepting dates, extending charges, or issuing occupancy credentials.",
-                    "detail": "Check landlord authority, available inventory, approved payer terms, and the latest placement revision before changing committed state.",
-                },
-                {
-                    "step": 4,
-                    "title": "Exercise the human fallback",
-                    "action": "Run a connector outage drill and complete one placement update through the approved manual route.",
-                    "detail": "Measure restoration time, reconcile the backlogged events, and document which automated actions remained suspended during the outage.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Build an Eligibility-First Enrichment Waterfall and Honest Outreach Economics",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Local mapping P11, eligibility-first enrichment, starts with organizations "
-                    "that plausibly buy housing: relocation departments, contracted housing "
-                    "coordinators, and employers with documented temporary assignments. Use "
-                    "a company website and existing relationship records first, a licensed "
-                    "business-contact source second, and verification only for addresses "
-                    "the desk may legitimately process. Hunter's domain search and verifier "
-                    "can support that sequence, but neither proves recipient interest, "
-                    "deliverability, or permission under a mail provider's rules. Store "
-                    "source provenance, role relevance, last verification time, suppression "
-                    "status, and the reason for contact. An illustrative waterfall of "
-                    "1,000 relevant organizations, 600 role matches, 450 usable business "
-                    "addresses, and 300 eligible contacts should report 300 contacts, "
-                    "not 1,000 enriched leads. Catch-all results are inconclusive; hold "
-                    "them for corroboration or omit them instead of treating acceptance "
-                    "of arbitrary SMTP recipients as validation. Never harvest policyholder "
-                    "contacts from claim material for marketing. If enrichment becomes "
-                    "expensive or ambiguous, fall back to an organization's published "
-                    "supplier form or switchboard. Evaluate cost per qualified housing "
-                    "conversation, not cost per address. An inexpensive dataset becomes "
-                    "costly when stale roles cause complaints, suppressions, and wasted "
-                    "coordinator time across a small operating desk."
-                ),
-                (
-                    "The supplied play multi_inbox_free_workspace_outbound_clusters is the "
-                    "twelfth mapping; the other eleven are chapter-local operating mappings, "
-                    "not additional supplied catalog identifiers. Its advertised scale needs "
-                    "explicit arithmetic and entitlement checks. Three hundred inboxes "
-                    "sending twenty messages across twenty-five sending days produce "
-                    "150,000 messages; using twenty business days produces 120,000. Across "
-                    "the stated fifteen-to-twenty-five daily range, 300 inboxes and twenty-five "
-                    "days produce 112,500–187,500 messages. Those are send counts, not primary "
-                    "inbox placements or qualified demand. Microsoft developer subscriptions "
-                    "depend on current eligibility and development-use terms; they are "
-                    "not a general free production outreach entitlement. Partner benefits "
-                    "also require the actual agreement. Cloudflare Email Routing forwards "
-                    "incoming mail and does not provide outbound SMTP mailboxes. Therefore, "
-                    "implement this mapping only with licenses and sending services that "
-                    "expressly permit the intended production use. At the supplied retail "
-                    "comparison of $6–$12 per mailbox monthly, 300 mailboxes imply "
-                    "$1,800–$3,600 monthly before verification, domains, and labor. That "
-                    "comparison is planning arithmetic, not a current vendor quote. "
-                    "If entitlements fail, reduce scope to licensed relationship outreach "
-                    "rather than manufacturing tenants to bypass commercial restrictions."
-                ),
-                (
-                    "Operational controls must protect recipient choice and sender identity, "
-                    "not disguise unwanted traffic. Two or three domains per tenant can "
-                    "be an internal administrative cap, but it does not authorize sending "
-                    "or override platform rules. Remove open pixels and click redirects "
-                    "to minimize unnecessary tracking; the message still needs truthful "
-                    "headers, an accurate subject, required sender information, and a "
-                    "working opt-out under 15 U.S.C. Section 7704. Honor opt-outs within "
-                    "the statutory period and suppress them immediately in the desk's "
-                    "own queue. Do not claim that checking every address through SMTP "
-                    "eliminates catch-all uncertainty. Do not rotate standby domains to "
-                    "evade complaints, blocks, or provider enforcement; pause the affected "
-                    "campaign and repair eligibility, targeting, and authentication instead. "
-                    "A replacement domain belongs in documented outage recovery, with "
-                    "suppression history preserved, not reputation laundering. Use Microsoft "
-                    "Graph for authorized mailbox workflows, Postmark for permitted "
-                    "transactional notices, and Amazon SES only for use approved by "
-                    "its current service policies and account permissions. If the "
-                    "licensed sender cannot support a campaign, use approved supplier "
-                    "introductions and direct account development. A small housing desk "
-                    "wins through credible available inventory and responsive quotes, "
-                    "not an impressive mailbox count."
-                ),
-            ],
-            "table": {
-                "caption": "Named Resource Directory, Entries 13–18: Identity, Enrichment, and Messaging",
-                "headers": [
-                    "Named resource and operating purpose",
-                    "Exact access method and evidence",
-                    "Cost tier and refresh discipline",
-                    "Rate-limit hygiene and fallback source",
-                ],
-                "rows": [
-                    [
-                        "13. Microsoft Graph for licensed shared-workflow mailbox access",
-                        "Use https://graph.microsoft.com/v1.0/ with tenant-approved OAuth scopes; consult https://learn.microsoft.com/graph/ for message and subscription operations.",
-                        "Production mailbox licensing and current API terms govern cost; renew change subscriptions before expiry and run scheduled reconciliation.",
-                        "Honor Retry-After and service-specific throttles; use the licensed mailbox interface during outages without creating bypass tenants.",
-                    ],
-                    [
-                        "14. Cloudflare Email Routing for inbound alias forwarding",
-                        "Use the Cloudflare dashboard or https://api.cloudflare.com/client/v4/accounts/{account_id}/email/routing/addresses for documented destination-address management.",
-                        "Standard Email Routing has a free service tier under current product terms; domain registration and destination mailbox costs remain separate.",
-                        "Respect account API limits and confirm destination verification; receive directly at the destination mailbox when forwarding is disrupted.",
-                    ],
-                    [
-                        "15. Hunter Domain Search for licensed business-role discovery",
-                        "GET https://api.hunter.io/v2/domain-search and the documented email-verifier endpoint with an authorized API key and permitted business addresses.",
-                        "Free and paid credit tiers differ; check current allowances and reverify selected records before use rather than repeatedly buying duplicates.",
-                        "Throttle against endpoint limits and monthly credits; use published company contacts when catch-all results or weak provenance prevent confident matching.",
-                    ],
-                    [
-                        "16. Postmark for permitted transactional placement communications",
-                        "POST https://api.postmarkapp.com/email using a server token and appropriate message stream; configure documented delivery and bounce webhooks.",
-                        "Subscription and volume tiers govern cost; event callbacks support prompt processing but do not establish recipient reading or inbox placement.",
-                        "Follow stream rules and current rate guidance; use approved operational contact channels after failure rather than moving cold campaigns here.",
-                    ],
-                    [
-                        "17. Amazon Simple Email Service for approved sending workloads",
-                        "Use the documented regional SES API with signed AWS requests; inspect account sending status and quotas before submitting messages.",
-                        "Usage-based regional pricing applies; sandbox restrictions and production quotas differ, so obtain account-specific authorization before scheduling volume.",
-                        "Stay inside daily and per-second quotas and process suppression events; pause rejected workloads instead of switching accounts to bypass limits.",
-                    ],
-                    [
-                        "18. Google Admin Toolbox CheckMX for domain setup verification",
-                        "Open https://toolbox.googleapps.com/apps/checkmx/ and inspect the sending domain; corroborate results with authoritative DNS queries.",
-                        "Public diagnostic access has no subscription charge; DNS TTL and resolver caching determine when changed records become observable.",
-                        "Use targeted manual diagnostics rather than bulk scraping; fall back to authoritative DNS answers and the sender's authentication reports.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify the four conditions before enabling a connector or campaign",
-                "body": "A working credential proves technical access; it does not establish permitted use, current facts, or safe operating economics.",
-                "items": [
-                    "Confirm that supplier, mailbox, enrichment, and sending agreements expressly cover the intended production workload and data processing.",
-                    "Verify the signed landlord sublease addendum, municipal jurisdiction, condition inspection, and applicable occupancy-tax evidence for every offered property.",
-                    "Test suppression, truthful sender identity, authentication, bounce handling, and the campaign pause procedure before sending any commercial outreach.",
-                    "Demonstrate stale-data detection, credential revocation, backup restoration, and coordinator-led reconciliation before allowing automatic booking or billing actions.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Instrument Exceptions and Reconcile Every Dashboard to the Scorecard",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use a small evidence architecture before purchasing a large automation "
-                    "stack. A single-writer SQLite database can support an early desk; "
-                    "move to managed PostgreSQL when concurrent workflows justify the "
-                    "operational change. Keep separate property, authority, placement, "
-                    "reservation, invoice, receipt, device, and contact-suppression records. "
-                    "A source identifier is not a universal identifier: retain a mapping "
-                    "table and reject ambiguous joins. For every inbound object, record "
-                    "source_updated_at, observed_at, schema_version, payload_hash, and "
-                    "processing_status. Encrypt sensitive documents, limit household data "
-                    "to staff who need it, and avoid storing claim narratives when dates "
-                    "and approved housing requirements suffice. Design retries around "
-                    "idempotency: a duplicate webhook must not create another invoice "
-                    "or guest credential. For illustration, processing 200 events with "
-                    "ten duplicate deliveries should produce 190 unique effects if those "
-                    "duplicates repeat ten distinct originals. A dead-letter queue holds "
-                    "records needing operator intervention without silently discarding "
-                    "them. Bound retry attempts, log redacted error details, and preserve "
-                    "the original event for investigation. Keep credentials out of "
-                    "spreadsheets and repositories. Test a restore from encrypted backup "
-                    "and verify that suppression records survive it before enabling "
-                    "outbound processing after recovery."
-                ),
-                (
-                    "The scorecard bridge must remain explicit. Conservative gross billings "
-                    "of $180,000 less $99,000 of modeled landlord rent and utility "
-                    "pass-throughs leave $81,000 retained; subtracting $59,400 of remaining "
-                    "modeled expenses yields $21,600 owner profit. Base gross billings "
-                    "of $790,000 less $434,500 leave $355,500 retained; subtracting "
-                    "$205,400 yields $150,100. Scaled gross billings of $1,400,000 "
-                    "less $770,000 leave $630,000 retained; subtracting $266,000 yields "
-                    "$364,000. These produce gross-billings net margins of 12%, "
-                    "19.0%, and 26%, and retained net margins of 26.67%, 42.22%, "
-                    "and 57.78%, respectively. Preserve the teams: one full-time operator "
-                    "plus three contractors in Conservative and Base, then two full-time "
-                    "operators plus four contractors in Scaled. The scorecard uses a "
-                    "45% retained-share presentation associated with ASC 606 analysis; "
-                    "actual gross-versus-net recognition depends on contract-specific "
-                    "principal-versus-agent conclusions. Maintain gross billings, modeled "
-                    "retained revenue, and booked accounting revenue as separate fields. "
-                    "Do not recognize the carrier's claim reserve, underlying property "
-                    "value, or unused housing authorization as operator revenue. The "
-                    "remaining expense envelopes are derived reconciliations, not a "
-                    "new assertion that software, labor, and every cash payment share "
-                    "one monthly timing pattern."
-                ),
-                (
-                    "Measure tooling against contribution and response quality, not record "
-                    "volume. An illustrative $600 monthly software bundle costs $7,200 "
-                    "annually; include it within the existing expense envelope or show "
-                    "an explicit variance rather than silently subtracting it twice. "
-                    "At the illustrative $2,025 retained monthly placement contribution, "
-                    "that bundle requires about 3.56 additional occupied unit-months "
-                    "to cover its annual cost before incremental operating expenses. "
-                    "A vacancy gap of ten nights at $150 per night removes $1,500 "
-                    "of potential billings, but the profit effect depends on unavoidable "
-                    "landlord rent and saved variable costs; applying 45% mechanically "
-                    "would conceal lease exposure. Track quote response time, approval-to-move-in "
-                    "conversion, stale inventory, unpaid approved extensions, failed access "
-                    "issuance, and unresolved water alerts. Establish an owner for each "
-                    "exception and record the next action deadline. Separate startup "
-                    "capital of $12,000–$60,000 from the $3,000–$18,000 monthly opex "
-                    "planning range and the annual scorecard's accounting bridge; cash "
-                    "deposits, payment timing, and pass-through treatment can differ. "
-                    "Keep the one-to-three-month first-deal expectation visible in the "
-                    "cash plan. If a tool cannot demonstrate fewer exceptions, faster "
-                    "verified quotes, or lower collection friction, remove it before "
-                    "adding another subscription."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Operating Controls: Diagnostic Evidence, Exact Economics, and Recovery Actions",
-                "headers": [
-                    "Control and specific operating objective",
-                    "Concrete test or canonical calculation",
-                    "Evidence retained by the operating desk",
-                    "Failure response and responsible human action",
-                ],
-                "rows": [
-                    [
-                        "Conservative bridge protects the smallest team's actual profit",
-                        "$180,000 gross minus $99,000 pass-throughs minus $59,400 remaining expenses equals $21,600 annual owner profit.",
-                        "Retained revenue equals $81,000; gross margin equals 12%; retained net margin rounds to 26.67%.",
-                        "The owner reconciles category errors before comparing actual results with the one-full-time-plus-three-contractor operating case.",
-                    ],
-                    [
-                        "Base bridge separates customer billings from retained contribution",
-                        "$790,000 gross minus $434,500 pass-throughs minus $205,400 remaining expenses equals $150,100 annual owner profit.",
-                        "Retained revenue equals $355,500; gross margin equals 19.0%; retained net margin rounds to 42.22%.",
-                        "The owner traces every unexplained variance to occupancy, pricing, pass-through classification, or remaining expenses before changing targets.",
-                    ],
-                    [
-                        "Scaled bridge preserves six-person small-team operating discipline",
-                        "$1,400,000 gross minus $770,000 pass-throughs minus $266,000 remaining expenses equals $364,000 annual owner profit.",
-                        "Retained revenue equals $630,000; gross margin equals 26%; retained net margin rounds to 57.78%.",
-                        "The two-full-time-plus-four-contractor team reviews workload concentration before allowing added automation to create unowned exception queues.",
-                    ],
-                    [
-                        "curl and Python unittest validate connector behavior safely",
-                        "Replay redacted fixtures containing duplicate events, stale revisions, permission errors, and throttling responses against an isolated test endpoint.",
-                        "Save expected state transitions, request identifiers, redacted response headers, and assertions proving repeated delivery creates no duplicate charge.",
-                        "The connector owner disables consequential writes while preserving read-only visibility and completes the approved manual reconciliation route.",
-                    ],
-                    [
-                        "Authoritative DNS and message headers verify sender configuration",
-                        "Use dig or nslookup to inspect MX, SPF, DKIM selectors, and DMARC, then examine delivered-message authentication results.",
-                        "Retain timestamped DNS answers and redacted headers; distinguish authentication success from recipient interest and inbox placement.",
-                        "The messaging owner pauses affected sending, corrects identity configuration, and preserves recipient suppression across every recovery action.",
-                    ],
-                    [
-                        "Webhook inspection and queue age reveal silent operational loss",
-                        "Validate provider signatures, compare event counts with source exports, and alert when pending placement changes exceed the desk's response target.",
-                        "Keep source timestamps, arrival timestamps, event hashes, retry counts, and documented ownership of every unresolved exception.",
-                        "The duty operator confirms live placement status with the coordinator and prevents stale records from creating new commitments.",
-                    ],
-                    [
-                        "Physical access and sensor drills expose property-level failure",
-                        "Test one authorized credential issuance, one offline-device scenario, and one synthetic water-alert workflow without disturbing occupied units.",
-                        "Record command acknowledgment, actual device response, responder contact, guest notice method, and documented access fallback availability.",
-                        "The property responder follows the access or incident procedure; billing disputes never trigger automatic occupied-dwelling lockout.",
-                    ],
-                    [
-                        "Backup restoration and ledger matching protect continuity and cash",
-                        "Restore an encrypted backup into an isolated environment and match sampled invoices, bank receipts, placement approvals, and suppression records.",
-                        "Document recovery duration, missing-event recovery, unapplied receipts, access restrictions, and comparison against the last reconciled source snapshot.",
-                        "The owner resumes consequential automation only after resolving conflicting states and confirming that restored suppression prevents repeated outreach.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The housing desk with the best information is the one that can prove authority, availability, payer approval, and contribution before promising a single night.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Build ten property evidence packets linking normalized address, parcel identifier, recorded ownership evidence, condition inspection, and signed corporate-housing sublease authority.",
-        "Register all eighteen directory resources with an access owner, permitted purpose, current cost terms, source latency, polling target, and tested fallback.",
-        "Obtain ALE Solutions and CRS Temporary Housing supplier instructions directly; map placement revisions to booking states without assuming public API access.",
-        "Implement extension approval, utility-cap evidence, receipt allocation, and time-bounded access as separate auditable workflows with named exception owners.",
-        "Run an eligibility-first outreach pilot using licensed sending infrastructure, truthful identity, immediate internal suppression, and no domain rotation to bypass enforcement.",
-        "Reconcile the three canonical profit bridges, test duplicate-event handling and backup restoration, and demonstrate a complete manual placement update during an outage drill.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. Section 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Commercial email controls include truthful routing and subject information, required sender identification, a functioning opt-out mechanism, and timely honoring of opt-outs.",
-        },
-        {
-            "title": "Texas Tax Code Section 156.101 — Exception for permanent residents",
-            "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.156.htm#156.101",
-            "relevance": "Evaluate the actual right to occupy and qualifying duration before coding a Texas state hotel-occupancy-tax exception; retain supporting agreements and separately review local treatment.",
-        },
-        {
-            "title": "California Civil Code Section 1941.1 — Tenantable dwelling conditions",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1941.1.",
-            "relevance": "California residential inventory requires property-condition evidence addressing applicable dwelling standards, not merely a clean permit search or a landlord's verbal assurance.",
-        },
-        {
-            "title": "47 U.S.C. Section 227 — Restrictions on telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Assess calling and messaging requirements against the actual technology, content, recipient relationship, and applicable exceptions before enabling automated guest or prospect communications.",
-        },
-        {
-            "title": "42 U.S.C. Section 3604 — Discrimination in housing",
-            "url": "https://www.law.cornell.edu/uscode/text/42/3604",
-            "relevance": "Do not use property enrichment, household requirements, or automated placement rules to make prohibited housing distinctions; review accommodations and placement criteria on their actual facts.",
-        },
-        {
-            "title": "California Civil Code Section 789.3 — Interference with residential occupancy",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=789.3.",
-            "relevance": "Smart-lock and utility workflows must not become prohibited self-help measures to terminate residential occupancy; a claim closure or unpaid invoice does not independently authorize access removal.",
-        },
-    ],
-}
+CHAPTER_8 = {'id': 'Q8',
+ 'chapter_id': 'Q8',
+ 'chapter_number': 8,
+ 'question_number': 8,
+ 'slug': 'pivoting-from-airbnb-models-regulations-taxes',
+ 'question_prompt': 'When should a short-term host pivot to midterm, and which rules, taxes, insurance, '
+                    'and ownership models apply?',
+ 'kicker': 'Q8 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Pivoting From Airbnb: Models, Regulations, and Taxes',
+ 'subtitle': 'STR-to-MTR and hybrid strategies, co-hosting versus arbitrage versus ownership, '
+             'rent-sell-or-pivot math, midterm insurance needs, US and New Jersey STR laws and permits, '
+             "Airbnb's new rules, and IRS treatment (14-day and 7-day rules, Schedule E versus C)",
+ 'layout_template': 'legal_compliance_callout',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators pivoting off Airbnb agree the move is a data call, not an escape. Thanks '
+                      'for Visiting, Tim Hubbard, and The Furnished Rental Strategist all run STR, MTR, '
+                      'and LTR numbers on every door, and they pivot when they see falling occupancy, rate '
+                      'pressure, or burnout. Insurance displacement, relocations, crews, and travel nurses '
+                      'fill the monthly lane. Furnished Finder shows roughly 90-day stays and a 40-day '
+                      "booking window. The street math is tight. In John Racine's $3,000-comp scenario, "
+                      '$4,800 of added costs leaves a net gain of only about $1,800, while $6,000 of '
+                      'furniture pays back in about 10 months. The 30-day line reshapes leases, insurance, '
+                      'and local enforcement. The 14-day and 7-day tax rules decide Schedule E versus '
+                      'Schedule C. The practitioners split on unit size, on arbitrage versus co-hosting, '
+                      'and on whether MTR wins on risk-adjusted returns.',
+ 'key_metrics': [{'label': 'Furnished Finder Average Stay',
+                  'metric': 'Furnished Finder Average Stay',
+                  'value': '90 days average stay, about 4 guests per year, about 40-day book-to-stay '
+                           'window',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Sarah Karakayan and Annette Grant cite Furnished Finder platform figures to '
+                             'explain why the MTR guest search has to start earlier than the STR search.',
+                  'source': 'Landlord Diaries - The Monthly Rentals Podcast ([JtRa4_SzshI @ 00:12:47])'},
+                 {'label': 'MTR Furnishing Payback',
+                  'metric': 'MTR Furnishing Payback',
+                  'value': '$6,000 furnishing cost paid back in a little over 10 months',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Racine's worked illustration converts a $2,000/mo LTR into a $3,500/mo-comp "
+                             "MTR. Allen Duan's personal benchmark is a 6-month payback.",
+                  'source': 'John Racine ([iNwc9csMvTA @ 00:09:08])'},
+                 {'label': 'Co-Hosting Fee Structure',
+                  'metric': 'Co-Hosting Fee Structure',
+                  'value': '15% monthly plus a $1,500 onboarding fee',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Allen Duan charges this for mature rental property management across 38 '
+                             'doors and reports that very few owners object to it.',
+                  'source': 'Allen Duan | Midterm Rental + Co-Hosting Expert ([aDxy2Ei3pfQ @ 00:09:49])'},
+                 {'label': 'Hotel-Style Self-Employment Tax',
+                  'metric': 'Hotel-Style Self-Employment Tax',
+                  'value': '15.3% SE tax on Schedule C when the average stay is 7 days or less with '
+                           'hotel-style services',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Restart Tax Talk says daily maid service, meals, airport rides, and '
+                             'concierge services push a host onto Schedule C. Turnover cleaning and linens '
+                             'do not.',
+                  'source': 'Restart Tax Talk ([SpF7mXFixD8 @ 00:00:59])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus - Pivot on Data, Not Emotion',
+               'paragraphs': ['Across the pivot crowd, the trigger is rarely one bad month. It is a '
+                              'pattern. The Furnished Rental Strategist names three signals in Phoenix. '
+                              'The first is inconsistent occupancy, as distinct from normal seasonality. '
+                              'The second is pricing pressure, where rates keep dropping and margins '
+                              'shrink. The third is burnout, which the channel calls the biggest signal of '
+                              'all [P52IQsnqFe0 @ 00:01:43]. Sarah Karakayan and Annette Grant of Thanks '
+                              'for Visiting describe the same moment from a base of 43 rentals and $5M in '
+                              'revenue. They were matching market occupancy and ADR in slow season, and '
+                              'they pivoted to MTR specifically to beat the market [JtRa4_SzshI @ '
+                              '00:05:06]. Their baseline rule is to know the STR, MTR, and LTR numbers for '
+                              'every property before touching a listing [JtRa4_SzshI @ 00:08:02]. Tim '
+                              'Hubbard manages 200+ properties. Hubbard says regulation pushed some of '
+                              "those doors into MTR and that property fit 'just comes down to data, the "
+                              "numbers' [n77MirHjIVo @ 00:11:54]. NickProRealty's Tampa operator, Ryan, "
+                              'faced registration rules, neighbor complaints, rising insurance and '
+                              'cleaning costs, platform fees, and seasonal swings. Nick frames the problem '
+                              "bluntly: 'Ryan was not losing money, but he was losing control' "
+                              '[JXpAcw_t-CQ @ 00:02:05]. The shared prerequisite is to stop identifying as '
+                              'an Airbnb investor and start treating each strategy as interchangeable for '
+                              'each door.',
+                              'The practitioners agree on who pays the bills in the 30-plus-day lane. John '
+                              'Racine lists insurance displacement, corporate relocation, crews, and '
+                              'people between homes, and adds that third parties often pay [iNwc9csMvTA @ '
+                              '00:04:48]. The Furnished Rental Strategist adds travel nurses and calls the '
+                              'whole pool less price-sensitive than vacation guests [P52IQsnqFe0 @ '
+                              '00:03:09]. Unit selection follows that demand. Thanks for Visiting runs an '
+                              'MTR-only property a 10-minute walk from a hospital and a Ronald McDonald '
+                              'House, and it also pulls contractors. In a 12-unit building, they send the '
+                              'units with a washer/dryer to MTR and the rest to STR [JtRa4_SzshI @ '
+                              '00:09:31]. They call one- and two-bedroom units with a washer/dryer '
+                              "'location agnostic.' They flag third-floor walk-ups without laundry, and "
+                              'larger homes unless the tenant is a relocation or insurance placement '
+                              "[JtRa4_SzshI @ 00:20:15]. In Midwest winters they add the 'Double P' of "
+                              'pets and parking. Winter occupancy also keeps pipes from freezing and '
+                              'removes the stress of shoveling [JtRa4_SzshI @ 00:22:05]. Myka Artis, '
+                              "hosting since 2017 in Arkansas, pushes the other way on size. In Artis's "
+                              'experience, 3-5BR homes with a fenced yard serve insurance, family, and '
+                              "construction tenants. Artis calls the four-bedroom 'the sweet spot' after "
+                              'exiting 1-2BR units in Houston and Dallas that were losing money '
+                              '[vN9xRfDWrWk @ 00:11:35].',
+                              'Nobody in this group treats MTR as a legal shield. Lodge Compliance opens '
+                              "with 'There is no single rulebook.' STR generally means stays under 30 "
+                              'days, but state, city, county, and neighborhood rules each add their own '
+                              'layer of registration, zoning, safety, and occupancy limits [zQI1CpxOnQ0 @ '
+                              "00:00:34]. Christine Matus of The Matus Law Group puts New Jersey's line at "
+                              '30 days or fewer for transient lodging. Longer stays shift the host into '
+                              'landlord-tenant territory. Matus also notes that Asbury Park allows only '
+                              'owner-occupied primary residences, which makes non-compliant listings '
+                              'unlawful however well they are managed [UPCGK8bIfnU @ 00:00:47]. Nick at '
+                              "NickProRealty says flatly that MTR is 'not a magic legal loophole,' because "
+                              'the length-of-stay definitions are written into the regulation itself '
+                              '[JXpAcw_t-CQ @ 00:04:58]. On tax, Restart Tax Talk sets the floor. Renting '
+                              '14 days or fewer is tax-free, and a 15th day makes everything taxable from '
+                              'day one. An average stay over 7 days lands on Schedule E as passive income. '
+                              "'Most hosts belong on Schedule E, with no self-employment tax' [SpF7mXFixD8 "
+                              '@ 00:00:38]. The upshot is that the 30-day mark changes the tax bill, the '
+                              'lease paperwork, and the local enforcement exposure all at once. That makes '
+                              'the pivot a full operating redesign as much as a pricing decision, and '
+                              'every operator here runs it that way.'],
+               'table': {'caption': 'Where pivoting operators agree before converting an Airbnb into a '
+                                    'monthly rental',
+                         'headers': ['Consensus Point', 'What Operators Actually Do', 'Expert Source'],
+                         'rows': [['Pivot only after a measurable pattern appears, not one weak month',
+                                   'Watch for inconsistent occupancy, falling rates, shrinking margins, '
+                                   'and burnout as the pivot triggers',
+                                   'The Furnished Rental Strategist ([P52IQsnqFe0 @ 00:01:43])'],
+                                  ['Know three sets of numbers for every single door',
+                                   'Run STR, MTR, and LTR projections on each property before relisting or '
+                                   'refurnishing anything',
+                                   'Landlord Diaries - The Monthly Rentals Podcast ([JtRa4_SzshI @ '
+                                   '00:08:02])'],
+                                  ['The monthly demand pool is often funded by third parties',
+                                   'Target insurance displacement, corporate relocation, crews, and people '
+                                   'between homes as core guests',
+                                   'John Racine ([iNwc9csMvTA @ 00:04:48])'],
+                                  ['A washer/dryer decides which units go monthly',
+                                   'Send laundry-equipped units to MTR and keep units without laundry on '
+                                   'the STR side',
+                                   'Landlord Diaries - The Monthly Rentals Podcast ([JtRa4_SzshI @ '
+                                   '00:09:31])'],
+                                  ['Thirty days is the line between transient lodging and tenancy',
+                                   'Treat 30 days or fewer as transient lodging and longer stays as '
+                                   'landlord-tenant territory',
+                                   'The Matus Law Group ([UPCGK8bIfnU @ 00:00:47])'],
+                                  ['MTR is not an escape hatch from regulation',
+                                   'Read the length-of-stay definitions in local regulation before relying '
+                                   'on monthly stays for cover',
+                                   'NickProRealty ([JXpAcw_t-CQ @ 00:04:58])'],
+                                  ['The tax line sits at 14 days and a 7-day average stay',
+                                   'Average stays over 7 days go to Schedule E as passive income with no '
+                                   'SE tax',
+                                   'Restart Tax Talk ([SpF7mXFixD8 @ 00:00:38])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Racine's worked illustration is the cleanest unit-economics model in the "
+                              'set. The baseline LTR is $2,000/mo, or $24,000/yr, against a $300/mo cost '
+                              'increase. At $3,000/mo comps and 85% economic occupancy, gross revenue '
+                              'reaches $30,600, or +$6,600. But utilities of $3,600 plus $1,200 of '
+                              'cleaning and maintenance eat $4,800, leaving a net gain of only about '
+                              '$1,800 [iNwc9csMvTA @ 00:07:35]. At $3,500/mo comps, the math becomes '
+                              '$35,700 minus $4,800, or $30,900, which is +$6,900. Furnishing runs $6,000 '
+                              'and pays back in a little over 10 months [iNwc9csMvTA @ 00:09:08]. Allen '
+                              "Duan's personal benchmark is tighter: a 6-month furnishing payback. If "
+                              'payback stretches to 12 months, the estimates were badly off. Duan finances '
+                              'furniture with 0% promo cards, such as 12-month Amazon or IKEA store cards, '
+                              'backed by cash reserves or a balance transfer [aDxy2Ei3pfQ @ 00:06:09]. The '
+                              "Furnished Rental Strategist's framework compares the trailing 6-12-month "
+                              'net, after cleaning, utilities, supplies, management, and maintenance, '
+                              'against a realistic MTR case. One example is a Gilbert 4-bedroom averaging '
+                              '$4,000 a month on Airbnb, versus $3,600 for 3 months as an MTR with no '
+                              'cleanings [P52IQsnqFe0 @ 00:06:54]. Racine stress-tests every deal at both '
+                              '95% and 65% occupancy [iNwc9csMvTA @ 00:12:36].',
+                              'Timing is the mechanic STR hosts miss. Thanks for Visiting says STR guests '
+                              'book 15-30 days out, while MTR guests book 30-45 days out, so the MTR '
+                              'search has to start early. Furnished Finder figures show about a 40-day '
+                              'book-to-stay window and a 90-day average stay, or four guests per year '
+                              '[JtRa4_SzshI @ 00:12:47]. They price off LTR and furnished comps on price '
+                              "per square foot and ignore the '$1,000 cash flow' rule. They set "
+                              'January-March rates separately from June-August rates. They run a PMS plus '
+                              'an Asana pipeline that moves from cold lead to warm lead to leasing to '
+                              "booked [JtRa4_SzshI @ 00:33:27]. Tim Hubbard's reception team already "
+                              'handles leases and deposits. Because MTR inquiries do not instant-book, '
+                              'fast and competitive replies matter, and a VA covers the gap [n77MirHjIVo @ '
+                              '00:14:13]. In Destin, Hubbard raises the winter minimum stay to 30 nights, '
+                              'sets it seasonally in advance, and uses PriceLabs length-of-stay dashboards '
+                              '[n77MirHjIVo @ 00:22:04]. Myka Artis layers step-up minimums, allowing '
+                              '14-night stays when a booking comes in 20 days out, and booked Thanksgiving '
+                              "at 'triple the rates' [vN9xRfDWrWk @ 00:53:31]. Artis also runs a tax "
+                              'sequence. The property runs short-term from August to December to qualify '
+                              'for the STR loophole, then gets a cost seg, then goes mid-term in January, '
+                              'one property per year [vN9xRfDWrWk @ 00:14:30].',
+                              'The lease and coverage stack gets rebuilt once stays cross 28-30 days. '
+                              'Karakayan and Grant, on the Airbnb Hosting and Short Term Rental Tips '
+                              'channel, say stays over 28 days usually require a lease. That turns the '
+                              'host into a landlord with squatter risk, and the lease must grant entry for '
+                              'maintenance [wVmj30HlGcQ @ 00:08:27]. Their fix for heavy turnovers is '
+                              'scheduled mid-stay cleans, with who schedules and who pays agreed upfront. '
+                              'They never attempt a one-day turnover [wVmj30HlGcQ @ 00:06:54]. Hubbard '
+                              'writes an extension-notice deadline into the lease. A light clean at about '
+                              '2 weeks doubles as a check for unauthorized pets, and host Kelly swaps air '
+                              'filters every 1-3 months as a reason to inspect [n77MirHjIVo @ 00:18:28]. '
+                              "Short-Term Stays & Rentals warns that a homeowner's policy assumes owner "
+                              "occupancy and may silently stop covering the operator. The tenant's "
+                              "renter's policy covers only the tenant's own belongings. The operator needs "
+                              'a landlord package that bundles damage, liability, and lost rent and allows '
+                              'furnished short-to-mid occupancy. On top of that comes loss-of-income '
+                              'coverage for an event like a 2-month flood [QIziS47827w @ 00:01:35]. The '
+                              "script is simple: call the insurer and say 'furnished mid-term rental' "
+                              '[QIziS47827w @ 00:02:44].'],
+               'table': {'caption': 'Street numbers and tools operators quote for STR, MTR, arbitrage, and '
+                                    'co-hosting models',
+                         'headers': ['Mechanic', 'Number, Rate, or Tool Quoted', 'Expert Source'],
+                         'rows': [['Co-hosting fee structure for mature rental property management',
+                                   '15% monthly plus a $1,500 onboarding fee, raised only when services '
+                                   'are added',
+                                   'Allen Duan | Midterm Rental + Co-Hosting Expert ([aDxy2Ei3pfQ @ '
+                                   '00:09:49])'],
+                                  ['Co-hosting income range when managing for other operators',
+                                   '10-15% typical, falling to 3-5% for portfolios from large companies',
+                                   'BNB Fastlane ([SGmMixWY7CA @ 00:01:14])'],
+                                  ['Exit valuation for an STR management business',
+                                   'Rent roll businesses sell for 3x-5x yearly revenue, so $200K revenue '
+                                   'is about $600K',
+                                   'BNB Fastlane ([SGmMixWY7CA @ 00:09:10])'],
+                                  ['Arbitrage speed to market versus buying a property',
+                                   'About $10K to furnish and live in roughly 2 weeks, versus months of '
+                                   'rehab',
+                                   'The Fearless Investors ([L48GgPbkHHU @ 00:16:19])'],
+                                  ['Cost segregation example for year-one depreciation',
+                                   '$600K house with a $450K building, about $112K reclassified, about '
+                                   '$40K saved at a 32% bracket',
+                                   'Restart Tax Talk ([SpF7mXFixD8 @ 00:02:02])'],
+                                  ['Material participation threshold for the STR loophole',
+                                   '500 hours, or 100 hours and more than anyone else including the '
+                                   'cleaner, with a log',
+                                   'Restart Tax Talk ([SpF7mXFixD8 @ 00:01:44])'],
+                                  ['Furnished Finder listing economics for monthly rental hosts',
+                                   '0% booking commission, 300,000 listings, and 250M visits claimed by '
+                                   'the sponsor',
+                                   'Landlord Diaries - The Monthly Rentals Podcast ([JtRa4_SzshI @ '
+                                   '00:40:32])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Calendar, Trust, and Turnover Tricks From Operators Running Both '
+                                    'Lanes',
+                           'body': 'These are the small operating moves that separate hosts who make the '
+                                   'pivot stick from hosts who end up with empty gaps and angry reviews.',
+                           'items': ["Block the MTR calendar early to avoid 'polka dot stays,' and never "
+                                     'cancel booked STR guests to make room [Landlord Diaries - The '
+                                     'Monthly Rentals Podcast — JtRa4_SzshI @ 00:39:20].',
+                                     'Replace in-person showings with true-to-property photos and '
+                                     'pre-recorded walkthroughs, then reply to inquiries within minutes '
+                                     '[Landlord Diaries - The Monthly Rentals Podcast — n77MirHjIVo @ '
+                                     '00:26:26].',
+                                     'Make bi-weekly cleans by your own team mandatory for any guest '
+                                     'staying longer than 30 days, and stock extra linens [Landlord '
+                                     'Diaries - The Monthly Rentals Podcast — JtRa4_SzshI @ 00:16:18].',
+                                     'State clearly that consumables are not replenished, or you end up '
+                                     'drop-shipping supplies and absorbing negative reviews [Airbnb '
+                                     'Hosting and Short Term Rental Tips — wVmj30HlGcQ @ 00:17:10].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pull the Trailing STR Net',
+                              'action': 'Calculate the trailing 6-12-month net on the Airbnb after all '
+                                        'operating costs.',
+                              'detail': 'Subtract cleaning, utilities, supplies, management, and '
+                                        'maintenance before comparing against any MTR scenario, and do not '
+                                        'pivot too early [The Furnished Rental Strategist — P52IQsnqFe0 @ '
+                                        '00:04:27].'},
+                             {'step': 2,
+                              'title': 'Build Monthly Comps and Stress-Test',
+                              'action': 'Research comps, demand drivers, and local rules, then run the '
+                                        'numbers at high and low occupancy.',
+                              'detail': 'Pull Furnished Finder comps and Airbnb monthly pricing, map '
+                                        'demand drivers, check ordinances and HOA rules, then test at 95% '
+                                        'versus 65% occupancy [John Racine — iNwc9csMvTA @ 00:11:23].'},
+                             {'step': 3,
+                              'title': 'Package the Unit and Fix Coverage',
+                              'action': 'Bundle the offer into one monthly product and move to a landlord '
+                                        'policy that allows furnished mid-term occupancy.',
+                              'detail': 'Offer the unit furnished with utilities and internet included, '
+                                        'one monthly rate, one deposit, no events, quiet hours, and a '
+                                        'minimum stay [NickProRealty — JXpAcw_t-CQ @ 00:03:21]. Then call '
+                                        "the insurer and say 'furnished mid-term rental' [Short-Term Stays "
+                                        '& Rentals — QIziS47827w @ 00:02:44].'},
+                             {'step': 4,
+                              'title': 'Screen Fairly and Run a Trial',
+                              'action': 'Apply consistent screening to every applicant, then test the MTR '
+                                        'lane before committing permanently.',
+                              'detail': 'Run credit, background, and income checks applied fairly to '
+                                        'everyone [Airbnb Hosting and Short Term Rental Tips — wVmj30HlGcQ '
+                                        '@ 00:16:13], then run a 60-90-day MTR trial first [The Furnished '
+                                        'Rental Strategist — P52IQsnqFe0 @ 00:06:34].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over which business model deserves your capital. '
+                              'Allen Duan ran 25 to 30-plus arbitrage deals with only one landlord '
+                              'problem. Duan then walked away because the deals were breaking even or '
+                              'losing, and now charges 15% monthly plus a $1,500 onboarding fee for '
+                              "co-hosting. Duan's advice is to pick the downside you can live with: rent "
+                              'risk under arbitrage, owner-handling under co-hosting [aDxy2Ei3pfQ @ '
+                              "00:23:18]. BNB Fastlane goes further. They call arbitrage a model 'done to "
+                              "death by YouTube gurus' and pitch it only as a backup offer for leads who "
+                              'reject the 80/20 split. They also warn that co-hosting pays 10-15%, drops '
+                              'to 3-5% when you work for large companies, and is hard to sell [SGmMixWY7CA '
+                              '@ 00:03:12]. Their answer is a full management company, since established '
+                              'rent-roll businesses sell for 3x to 5x yearly revenue. On the Fearless '
+                              'Investors panel, the arbitrage camp pushes back hard. Michael Butler funds '
+                              'units from wholesale fees and nets about $2,000 a month per door, against '
+                              'roughly $300 cash flow on a traditional rental. Rafa runs 23 live units, '
+                              'all arbitrage [L48GgPbkHHU @ 00:04:48]. Kyle splits the difference with '
+                              "'buying is the cheapest, arbitraging is the fastest,' while conceding that "
+                              "co-hosting is 'not the most profitable' [L48GgPbkHHU @ 00:23:00].",
+                              'Practitioners also disagree on how hard to commit once STR numbers sag. The '
+                              'Furnished Rental Strategist names three pivot signals: inconsistent '
+                              'occupancy, pricing pressure, and burnout. The same channel warns against '
+                              'pivoting too early and pushes a 60-90 day MTR trial first. Its Gilbert '
+                              'example compares a $4,000 Airbnb average against $3,600 a month for three '
+                              'months with no cleanings [P52IQsnqFe0 @ 00:06:34]. Sarah Karakayan and '
+                              'Annette Grant of Thanks for Visiting attack the premise itself. Hosts '
+                              'assume midterm is easier, yet guests on contract jobs or medical treatment '
+                              'leave early. Extension holds of 30, 60, or 90 days can end abruptly, and '
+                              "Airbnb alone won't sustain the strategy [wVmj30HlGcQ @ 00:01:45]. Tim "
+                              'Hubbard refuses to choose and runs STR-only, MTR-only, and seasonal hybrid '
+                              'properties. In Destin, Hubbard raises the minimum stay to 30 nights in '
+                              'winter because down-season STR occupancy can sit at 20% [n77MirHjIVo @ '
+                              "00:22:04]. NickProRealty's Ryan landed on a split portfolio of one STR and "
+                              'two MTRs, accepting a lower nightly rate in exchange for less vacancy and '
+                              'turnover. Myka Artis runs the most aggressive hybrid of all. Artis operates '
+                              'short-term from August through December to qualify for the STR loophole and '
+                              'run a cost seg, then switches to midterm in January, repeating one property '
+                              'per year [vN9xRfDWrWk @ 00:14:30].',
+                              'The legal footing of 30-day stays splits the room. Jay on the Fearless '
+                              'Investors panel calls 30-day minimums a non-problem: fewer turns, faster '
+                              'growth, deeper corporate relationships, and a politically sustainable model '
+                              '[L48GgPbkHHU @ 01:49:25]. The Landlord Diaries sponsor segment adds that '
+                              'monthly rentals are rarely hit by bans or hotel tax. NickProRealty counters '
+                              "that regulators write the length-of-stay definitions and that MTR is 'not a "
+                              "magic legal loophole' [JXpAcw_t-CQ @ 00:04:58]. Thanks for Visiting warns "
+                              'that stays past 28 days usually require a lease, which turns the host into '
+                              'a landlord exposed to squatters. They add that some jurisdictions demand a '
+                              'licensed agent or broker who takes a fee share [wVmj30HlGcQ @ 00:08:27]. '
+                              'Unit size is the second fault line. Myka Artis calls four bedrooms the '
+                              "sweet spot, citing a small-town Arkansas 4BR that did '70 K in 11 months.' "
+                              'Artis also exited Houston and Dallas because 1-2BR units were losing money. '
+                              'Vivian Yip pushes back that 3-4BR demand drops. Thanks for Visiting flips '
+                              'the script entirely. They flag larger homes as a red flag unless the tenant '
+                              'is a relocation or insurance placement, and they call one- and two-bedroom '
+                              "units with a washer and dryer 'location agnostic' [JtRa4_SzshI @ "
+                              '00:20:15].'],
+               'table': {'caption': 'Contested Playbooks: Where Named Operators Split on Model, Pivot, '
+                                    'Unit and Legal Strategy',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Arbitrage versus co-hosting as the core model',
+                                   'Duan exited arbitrage after deals broke even or lost, now charges 15% '
+                                   'plus $1,500 onboarding',
+                                   'Butler funds arbitrage from wholesale fees, netting about $2,000 '
+                                   'monthly per unit versus $300 owning',
+                                   'Allen Duan | Midterm Rental + Co-Hosting Expert ([aDxy2Ei3pfQ @ '
+                                   '00:23:18]); The Fearless Investors ([L48GgPbkHHU @ 00:04:48])'],
+                                  ['Where arbitrage fits inside a growing portfolio',
+                                   'BNB Fastlane uses arbitrage only as a backup offer for leads rejecting '
+                                   'the 80/20 split',
+                                   'Rafa runs every one of 23 live Southern California units as arbitrage '
+                                   'since 2017',
+                                   'BNB Fastlane ([SGmMixWY7CA @ 00:05:29]); The Fearless Investors '
+                                   '([L48GgPbkHHU @ 00:02:10])'],
+                                  ['Full pivot versus seasonal hybrid calendar strategy',
+                                   'Ryan settled on one STR and two MTRs, trading nightly rate for control',
+                                   'Hubbard runs STR-only, MTR-only and seasonal hybrids, lifting Destin '
+                                   'winter minimums to 30 nights',
+                                   'NickProRealty ([JXpAcw_t-CQ @ 00:09:11]); Landlord Diaries - The '
+                                   'Monthly Rentals Podcast ([n77MirHjIVo @ 00:22:04])'],
+                                  ['Best bedroom count for midterm guest demand',
+                                   'Myka Artis calls the four bedroom the sweet spot, citing $70K in 11 '
+                                   'months',
+                                   'Thanks for Visiting flags larger homes unless relocation or insurance; '
+                                   '1-2BR with laundry is location agnostic',
+                                   'Vivian Yip ([vN9xRfDWrWk @ 00:12:39]); Landlord Diaries - The Monthly '
+                                   'Rentals Podcast ([JtRa4_SzshI @ 00:20:15])'],
+                                  ['Washer and dryer as a midterm requirement',
+                                   'In a 12-unit building, laundry units go MTR and non-laundry units stay '
+                                   'STR',
+                                   'A host reports units without washer dryers still holding 95% occupancy '
+                                   'year round',
+                                   'Landlord Diaries - The Monthly Rentals Podcast ([JtRa4_SzshI @ '
+                                   '00:09:31]; [JtRa4_SzshI @ 00:32:53])'],
+                                  ['Legal durability of 30-day minimum stays',
+                                   'Jay calls 30-day stays politically sustainable with fewer turns and '
+                                   'deeper corporate relationships',
+                                   'Nick says MTR is no magic legal loophole; stays past 28 days usually '
+                                   'trigger a lease',
+                                   'The Fearless Investors ([L48GgPbkHHU @ 01:49:25]); NickProRealty '
+                                   '([JXpAcw_t-CQ @ 00:04:58]); Airbnb Hosting and Short Term Rental Tips '
+                                   '([wVmj30HlGcQ @ 00:08:27])'],
+                                  ['Keep renting the old house or sell it',
+                                   'Renting nets about $17K yearly, rising to about $35K with 3% '
+                                   'appreciation',
+                                   'Selling frees about $564K tax-free, yielding roughly $28K yearly at 5%',
+                                   'House Math ([8fGpZhTvLQo @ 00:03:12]; [8fGpZhTvLQo @ 00:03:49])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["The arbitrage camp's own war stories show where the model bleeds. Rafa had "
+                              'to reopen 14 units, and every relocation costs a $3,000 deposit plus the '
+                              'first month. Rafa now caps exposure at eight units per building, negotiates '
+                              'a month of free rent, and set up collaboration and NoiseAware after copycat '
+                              'operators moved in [L48GgPbkHHU @ 00:35:17]. Ludarell lost leases when '
+                              'complexes sold and the new owners declined to renew. Norman warns against '
+                              'thin deals such as $2,000 rent for a one-bed. Jenna reports Denver '
+                              'landlords raising rent once they learn the model, a pattern Kenya hit when '
+                              'a landlord who bought five more properties tried to raise rent [L48GgPbkHHU '
+                              "@ 01:48:02]. Allen Duan's only landlord problem across 25 to 30-plus deals "
+                              'came the same way, from a sale to a new owner. For Duan, payback math is '
+                              'the early alarm: six months is the benchmark, and a 12-month payback means '
+                              'the estimates were badly off [aDxy2Ei3pfQ @ 00:06:57]. BNB Fastlane adds '
+                              'that risk amplifies at 5-10-plus units, and that burned owners and '
+                              "cold-call lead generation grind the pipeline. Their reminder is blunt: 'you "
+                              "can't rent an empty house,' so lease obligations and furnishing costs land "
+                              'before the first booking [SGmMixWY7CA @ 00:04:43].',
+                              'Midterm operations break in different places than hosts expect. Thanks for '
+                              'Visiting reports turnovers that take days of deep cleaning, reordering, and '
+                              'full inventory. Guests leave behind plants, mattress toppers, and patio '
+                              'furniture, and the team tells hosts never to attempt a one-day turnover '
+                              '[wVmj30HlGcQ @ 00:07:21]. The same operators admit their own MTR test lost '
+                              "money year over year: 'you don't know unless you test' [JtRa4_SzshI @ "
+                              '00:21:50]. They also flag a member whose tenants are all leaving early. '
+                              'With about four guests a year, steady reviews are hard to build. Tim '
+                              'Hubbard names the top remote-hosting failure bluntly as not having backups, '
+                              "and recommends an 'ammo box' of supplies, an idea credited to Jasper Rivers "
+                              '[n77MirHjIVo @ 00:37:13]. NickProRealty puts the tenant risk in one line: '
+                              "'In midterm, one bad tenant can cost you months.' That is why Nick's "
+                              'screening covers income, background, lease, and ID. Myka Artis shows the '
+                              'platform side cutting both ways. Thanksgiving booked at triple the rates, '
+                              'yet about $7,000 went out under the cancellation policy. Artis also '
+                              "recounts a run of Furnished Finder leads where the 'last eight' traced to a "
+                              "flagged account. On top of that, Airbnb's November 20 rules block hosts "
+                              'from collecting IDs, emails, or deposits [vN9xRfDWrWk @ 00:54:47].',
+                              "The economics checks are where pivots die on paper. John Racine's $3,000 "
+                              'comp scenario at 85% economic occupancy grosses $30,600, a $6,600 lift over '
+                              'the $24,000 long-term baseline. Then $3,600 in utilities and $1,200 in '
+                              'cleaning and maintenance shrink the real gain to about $1,800. Racine adds '
+                              'that a two-month vacancy is $4,000 of lost revenue that was never available '
+                              'cash [iNwc9csMvTA @ 00:07:52]. Short-Term Stays & Rentals warns that a '
+                              "homeowner's policy assumes owner occupancy and may silently stop covering "
+                              "you. Meanwhile, the tenant's renter's policy covers only their own "
+                              'belongings [QIziS47827w @ 00:00:32]. Tax reclassification is the hidden '
+                              'trap. Restart Tax Talk puts stays of seven days or less with hotel-style '
+                              'services on Schedule C, where profit pays 15.3% self-employment tax. Lodge '
+                              'Compliance warns that frequent mid-stay cleaning, tours, meals, or '
+                              'concierge services can push the IRS toward self-employment treatment '
+                              '[zQI1CpxOnQ0 @ 00:01:50]. Restart Tax Talk draws the line at daily maid '
+                              'service, meals, airport rides, and concierge. The loophole has catches too: '
+                              'the hours must be real every year, recapture runs up to 25%, and California '
+                              'disallows bonus depreciation. House Math pegs five years of renting at '
+                              'about $65,000 of recapture and federal tax of $40,000 or more [8fGpZhTvLQo '
+                              '@ 00:04:53].'],
+               'table': {'caption': 'Firsthand Failure Modes and the Economics Check Each Operator Ran',
+                         'headers': ['Failure Mode',
+                                     'What Happened Or Was Measured',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Building sale or forced relocation of arbitrage units',
+                                   'Rafa reopened 14 units; each move cost a $3,000 deposit plus first '
+                                   'month',
+                                   'Cap at eight units per building and negotiate one month of free rent',
+                                   'The Fearless Investors ([L48GgPbkHHU @ 00:35:17])'],
+                                  ['Thin MTR spread after added operating costs',
+                                   "Racine's $3,000 comps at 85% occupancy gross $30,600, only $6,600 "
+                                   'above baseline',
+                                   'Subtract $3,600 utilities and $1,200 cleaning, leaving roughly $1,800 '
+                                   'net gain',
+                                   'John Racine ([iNwc9csMvTA @ 00:07:52])'],
+                                  ['Furnishing payback stretching far past plan',
+                                   'Duan treats a 12-month payback as proof the estimates were badly off',
+                                   "Target six months; Racine's $6,000 furnishing paid back in just over "
+                                   '10 months',
+                                   'Allen Duan | Midterm Rental + Co-Hosting Expert ([aDxy2Ei3pfQ @ '
+                                   '00:06:57]); John Racine ([iNwc9csMvTA @ 00:09:21])'],
+                                  ['Wrong insurance policy on a furnished midterm unit',
+                                   'Homeowner policies assume owner occupancy and may silently stop '
+                                   'covering the landlord',
+                                   'Carry contents, liability and loss-of-income coverage under a landlord '
+                                   'package allowing furnished stays',
+                                   'Short-Term Stays & Rentals ([QIziS47827w @ 00:00:32]; [QIziS47827w @ '
+                                   '00:01:50])'],
+                                  ['Hotel-style services reclassifying rental income as business income',
+                                   'Seven days or less with hotel-style services lands on Schedule C',
+                                   'Profit then pays 15.3% self-employment tax; mid-stay services can '
+                                   'trigger the same treatment',
+                                   'Restart Tax Talk ([SpF7mXFixD8 @ 00:00:59]); Lodge Compliance '
+                                   '([zQI1CpxOnQ0 @ 00:01:50])'],
+                                  ['Depreciation recapture after years of renting out',
+                                   'Five years of renting creates about $65,000 of depreciation recapture '
+                                   'exposure',
+                                   'Federal tax could reach $40,000 or more; recapture applies up to 25%',
+                                   'House Math ([8fGpZhTvLQo @ 00:04:53]); Restart Tax Talk ([SpF7mXFixD8 '
+                                   '@ 00:02:20])'],
+                                  ['Local enforcement and shifting property tax treatment',
+                                   'Asbury Park allows owner-occupied only; Howell fines start at $1,000; '
+                                   'Utah bill limits exemption',
+                                   'HOA bans stay invisible to title searches; one exemption per household '
+                                   'raises landlord taxes',
+                                   'The Matus Law Group ([UPCGK8bIfnU @ 00:01:18]); KSL News Utah '
+                                   '([UvKA-_UlbVU @ 00:00:36])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before You Sign, Furnish, or Block the Calendar',
+                           'body': 'Every one of these gates comes from a loss, reversal, or bottleneck a '
+                                   'named operator hit firsthand. Clear all four before committing capital '
+                                   'to an STR-to-MTR pivot or a new arbitrage lease.',
+                           'items': ['Stress-test the pivot at both 95% and 65% occupancy, and count added '
+                                     'utilities and cleaning before calling it a raise [John Racine — '
+                                     'iNwc9csMvTA @ 00:12:36].',
+                                     "Call the insurer, say 'furnished mid-term rental,' and confirm the "
+                                     'landlord package allows furnished short-to-mid occupancy instead of '
+                                     'assuming a 12-month lease [Short-Term Stays & Rentals — QIziS47827w '
+                                     '@ 00:01:50].',
+                                     'Get a sublet clause or addendum worded by an attorney, and plan for '
+                                     'the building selling to a new owner, the one landlord problem across '
+                                     '25 to 30-plus deals [Allen Duan | Midterm Rental + Co-Hosting Expert '
+                                     '— aDxy2Ei3pfQ @ 00:05:32].',
+                                     "Line up backup contacts and an 'ammo box' of supplies before running "
+                                     'units remotely; not having backups is the named top mistake '
+                                     '[Landlord Diaries - The Monthly Rentals Podcast — n77MirHjIVo @ '
+                                     '00:37:13].']}}],
+ 'pull_quote': '"In midterm, one bad tenant can cost you months." — NickProRealty (JXpAcw_t-CQ @ '
+               '00:06:39).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Calculate trailing 6-12 month net after cleaning, utilities, supplies, management, '
+                      'and maintenance before comparing it against a realistic MTR scenario (The Furnished '
+                      'Rental Strategist, P52IQsnqFe0 @ 00:04:27).',
+                      'Run a 60-90 day MTR trial before committing the property permanently (The Furnished '
+                      'Rental Strategist, P52IQsnqFe0 @ 00:06:34).',
+                      'Pull Furnished Finder comps, Airbnb monthly pricing, demand drivers, ordinances, '
+                      'and HOA rules, then run the numbers (John Racine, iNwc9csMvTA @ 00:11:23).',
+                      'Write an extension-notice deadline and a light mid-stay clean at about two weeks '
+                      'into every MTR lease, and use the clean to check for unauthorized pets (Landlord '
+                      'Diaries - The Monthly Rentals Podcast, n77MirHjIVo @ 00:18:28).',
+                      'Keep a material participation log showing 500 hours, or 100 hours and more than '
+                      'anyone else including the cleaner or co-host (Restart Tax Talk, SpF7mXFixD8 @ '
+                      '00:01:44).',
+                      'Start the MTR guest search early, because MTR guests book 30-45 days out against a '
+                      '15-30 day STR window (Landlord Diaries - The Monthly Rentals Podcast, JtRa4_SzshI @ '
+                      '00:12:12).'],
+ 'statutory_citations': [{'title': 'Restart Tax Talk — R-3 | Airbnb Taxes 2026: Landlord, Business or '
+                                   'Hotel? (14-Day Rule, 7-Day Rule, Schedule E or C) [00:00:38]',
+                          'url': 'https://www.youtube.com/watch?v=SpF7mXFixD8&t=38s',
+                          'relevance': 'Primary practitioner testimony on the 7-day average-stay split '
+                                       'between Schedule E passive, Schedule E non-passive, and Schedule C '
+                                       'with self-employment tax.'},
+                         {'title': "The Matus Law Group — A Legal Guide for Airbnb Hosts: New Jersey's "
+                                   'Short-Term Rental Laws by Christine Matus [00:00:47]',
+                          'url': 'https://www.youtube.com/watch?v=UPCGK8bIfnU&t=47s',
+                          'relevance': 'Primary practitioner testimony on the 30-day transient threshold '
+                                       'and the shift into landlord-tenant territory for longer stays.'},
+                         {'title': 'Lodge Compliance — Airbnb Rules in the USA 2026: STR Laws, Taxes, '
+                                   'Permits & Regulations Explained [00:01:32]',
+                          'url': 'https://www.youtube.com/watch?v=zQI1CpxOnQ0&t=92s',
+                          'relevance': 'Primary practitioner testimony on the 14-day income reporting '
+                                       'threshold and self-employment exposure from hotel-style services.'},
+                         {'title': 'Short-Term Stays & Rentals — What Insurance Do I Need for a Midterm '
+                                   'Rental? [00:00:32]',
+                          'url': 'https://www.youtube.com/watch?v=QIziS47827w&t=32s',
+                          'relevance': 'Primary practitioner testimony on homeowner policies silently '
+                                       'dropping coverage on furnished midterm rentals.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'zQI1CpxOnQ0',
+                       'title': 'Airbnb Rules in the USA 2026: STR Laws, Taxes, Permits & Regulations '
+                                'Explained',
+                       'channel': 'Lodge Compliance',
+                       'author': 'Lodge Compliance',
+                       'text': 'Income generated from short-term rentals in the United States is taxable '
+                               'and generally must be reported if the property is rented for more than 14 '
+                               'days in a calendar year.',
+                       'tip': 'Income generated from short-term rentals in the United States is taxable '
+                              'and generally must be reported if the property is rented for more than 14 '
+                              'days in a calendar year.',
+                       'timestamp': 92,
+                       'timestamp_seconds': 92,
+                       'timestamp_label': '[00:01:32]',
+                       'url': 'https://www.youtube.com/watch?v=zQI1CpxOnQ0&t=92s',
+                       'markdown': '[00:01:32](https://www.youtube.com/watch?v=zQI1CpxOnQ0&t=92s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JtRa4_SzshI',
+                       'title': 'Airbnb Burnout? The MTR Strategy Every STR Host Needs | Ep. 146',
+                       'channel': 'Landlord Diaries - The Monthly Rentals Podcast',
+                       'author': 'Landlord Diaries - The Monthly Rentals Podcast',
+                       'text': "We did lose some money comparing year over year, but you don't know unless "
+                               'you test.',
+                       'tip': "We did lose some money comparing year over year, but you don't know unless "
+                              'you test.',
+                       'timestamp': 1310,
+                       'timestamp_seconds': 1310,
+                       'timestamp_label': '[00:21:50]',
+                       'url': 'https://www.youtube.com/watch?v=JtRa4_SzshI&t=1310s',
+                       'markdown': '[00:21:50](https://www.youtube.com/watch?v=JtRa4_SzshI&t=1310s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'n77MirHjIVo',
+                       'title': 'STR w/ MTR: The Rental Strategy Making Landlords More Money With Less '
+                                'Work | Ep. 160',
+                       'channel': 'Landlord Diaries - The Monthly Rentals Podcast',
+                       'author': 'Landlord Diaries - The Monthly Rentals Podcast',
+                       'text': 'So, I would say not having backups.',
+                       'tip': 'So, I would say not having backups.',
+                       'timestamp': 2233,
+                       'timestamp_seconds': 2233,
+                       'timestamp_label': '[00:37:13]',
+                       'url': 'https://www.youtube.com/watch?v=n77MirHjIVo&t=2233s',
+                       'markdown': '[00:37:13](https://www.youtube.com/watch?v=n77MirHjIVo&t=2233s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JXpAcw_t-CQ',
+                       'title': 'MTR vs. Airbnb: How Savvy Investors Are Pivoting for 2026',
+                       'channel': 'NickProRealty',
+                       'author': 'NickProRealty',
+                       'text': 'In midterm, one bad tenant can cost you months.',
+                       'tip': 'In midterm, one bad tenant can cost you months.',
+                       'timestamp': 399,
+                       'timestamp_seconds': 399,
+                       'timestamp_label': '[00:06:39]',
+                       'url': 'https://www.youtube.com/watch?v=JXpAcw_t-CQ&t=399s',
+                       'markdown': '[00:06:39](https://www.youtube.com/watch?v=JXpAcw_t-CQ&t=399s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QIziS47827w',
+                       'title': 'What Insurance Do I Need for a Midterm Rental?',
+                       'channel': 'Short-Term Stays & Rentals',
+                       'author': 'Short-Term Stays & Rentals',
+                       'text': "Your renter's policy, if they even have one, usually only covers their "
+                               'personal belongings, not your walls, your appliances, or your liability '
+                               'exposure.',
+                       'tip': "Your renter's policy, if they even have one, usually only covers their "
+                              'personal belongings, not your walls, your appliances, or your liability '
+                              'exposure.',
+                       'timestamp': 95,
+                       'timestamp_seconds': 95,
+                       'timestamp_label': '[00:01:35]',
+                       'url': 'https://www.youtube.com/watch?v=QIziS47827w&t=95s',
+                       'markdown': '[00:01:35](https://www.youtube.com/watch?v=QIziS47827w&t=95s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iNwc9csMvTA',
+                       'title': "Rent Can't Go Up? Here's the Midterm Rental Alternative That Pays",
+                       'channel': 'John Racine',
+                       'author': 'John Racine',
+                       'text': "That's exactly why you have to run the numbers.",
+                       'tip': "That's exactly why you have to run the numbers.",
+                       'timestamp': 501,
+                       'timestamp_seconds': 501,
+                       'timestamp_label': '[00:08:21]',
+                       'url': 'https://www.youtube.com/watch?v=iNwc9csMvTA&t=501s',
+                       'markdown': '[00:08:21](https://www.youtube.com/watch?v=iNwc9csMvTA&t=501s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wVmj30HlGcQ',
+                       'title': 'Should You Pivot your Airbnb to a Mid-Term Rental? (not what you think!)',
+                       'channel': 'Airbnb Hosting and Short Term Rental Tips',
+                       'author': 'Airbnb Hosting and Short Term Rental Tips',
+                       'text': 'Hosts often think pivoting to midterm rentals is easier.',
+                       'tip': 'Hosts often think pivoting to midterm rentals is easier.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=wVmj30HlGcQ&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=wVmj30HlGcQ&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aDxy2Ei3pfQ',
+                       'title': 'Rental Arbitrage or Co-Hosting? My 8-Year Journey Reveals Which Is Best '
+                                'For You',
+                       'channel': 'Allen Duan | Midterm Rental + Co-Hosting Expert',
+                       'author': 'Allen Duan | Midterm Rental + Co-Hosting Expert',
+                       'text': 'We charge 15% for mature rental property management.',
+                       'tip': 'We charge 15% for mature rental property management.',
+                       'timestamp': 664,
+                       'timestamp_seconds': 664,
+                       'timestamp_label': '[00:11:04]',
+                       'url': 'https://www.youtube.com/watch?v=aDxy2Ei3pfQ&t=664s',
+                       'markdown': '[00:11:04](https://www.youtube.com/watch?v=aDxy2Ei3pfQ&t=664s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SGmMixWY7CA',
+                       'title': "3 BEST Airbnb Business Models Explained (Pro's and Cons) Co-hosting, "
+                                'Arbitrage, Management Business',
+                       'channel': 'BNB Fastlane',
+                       'author': 'BNB Fastlane',
+                       'text': 'This business model has unfortunately been done to death by YouTube gurus '
+                               'for almost 10 years now.',
+                       'tip': 'This business model has unfortunately been done to death by YouTube gurus '
+                              'for almost 10 years now.',
+                       'timestamp': 192,
+                       'timestamp_seconds': 192,
+                       'timestamp_label': '[00:03:12]',
+                       'url': 'https://www.youtube.com/watch?v=SGmMixWY7CA&t=192s',
+                       'markdown': '[00:03:12](https://www.youtube.com/watch?v=SGmMixWY7CA&t=192s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SGmMixWY7CA',
+                       'title': "3 BEST Airbnb Business Models Explained (Pro's and Cons) Co-hosting, "
+                                'Arbitrage, Management Business',
+                       'channel': 'BNB Fastlane',
+                       'author': 'BNB Fastlane',
+                       'text': 'Established rent roll or property management businesses traditionally sell '
+                               'for a 3X yearly revenue and sometimes as high as 5x yearly revenue.',
+                       'tip': 'Established rent roll or property management businesses traditionally sell '
+                              'for a 3X yearly revenue and sometimes as high as 5x yearly revenue.',
+                       'timestamp': 550,
+                       'timestamp_seconds': 550,
+                       'timestamp_label': '[00:09:10]',
+                       'url': 'https://www.youtube.com/watch?v=SGmMixWY7CA&t=550s',
+                       'markdown': '[00:09:10](https://www.youtube.com/watch?v=SGmMixWY7CA&t=550s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'P52IQsnqFe0',
+                       'title': 'When to Switch from Airbnb to Mid-Term Rentals (Phoenix Investors Need to '
+                                'Hear This)',
+                       'channel': 'The Furnished Rental Strategist',
+                       'author': 'The Furnished Rental Strategist',
+                       'text': 'A smarter approach is to test earlier.',
+                       'tip': 'A smarter approach is to test earlier.',
+                       'timestamp': 394,
+                       'timestamp_seconds': 394,
+                       'timestamp_label': '[00:06:34]',
+                       'url': 'https://www.youtube.com/watch?v=P52IQsnqFe0&t=394s',
+                       'markdown': '[00:06:34](https://www.youtube.com/watch?v=P52IQsnqFe0&t=394s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'L48GgPbkHHU',
+                       'title': 'Clubhouse: AirBnB Arbitrage vs. Co-Hosting vs. Owning',
+                       'channel': 'The Fearless Investors',
+                       'author': 'The Fearless Investors',
+                       'text': "Now I don't open more than eight per location.",
+                       'tip': "Now I don't open more than eight per location.",
+                       'timestamp': 2117,
+                       'timestamp_seconds': 2117,
+                       'timestamp_label': '[00:35:17]',
+                       'url': 'https://www.youtube.com/watch?v=L48GgPbkHHU&t=2117s',
+                       'markdown': '[00:35:17](https://www.youtube.com/watch?v=L48GgPbkHHU&t=2117s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'L48GgPbkHHU',
+                       'title': 'Clubhouse: AirBnB Arbitrage vs. Co-Hosting vs. Owning',
+                       'channel': 'The Fearless Investors',
+                       'author': 'The Fearless Investors',
+                       'text': "I'm all for arbitrage and buying, I always say buying is the cheapest, "
+                               'arbitraging is the fastest.',
+                       'tip': "I'm all for arbitrage and buying, I always say buying is the cheapest, "
+                              'arbitraging is the fastest.',
+                       'timestamp': 1380,
+                       'timestamp_seconds': 1380,
+                       'timestamp_label': '[00:23:00]',
+                       'url': 'https://www.youtube.com/watch?v=L48GgPbkHHU&t=1380s',
+                       'markdown': '[00:23:00](https://www.youtube.com/watch?v=L48GgPbkHHU&t=1380s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vN9xRfDWrWk',
+                       'title': "Airbnb's New Rules: Are Hosts at Risk? | Myka Artis",
+                       'channel': 'Vivian Yip',
+                       'author': 'Vivian Yip',
+                       'text': 'I believe that four bedroom is the sweet spot.',
+                       'tip': 'I believe that four bedroom is the sweet spot.',
+                       'timestamp': 759,
+                       'timestamp_seconds': 759,
+                       'timestamp_label': '[00:12:39]',
+                       'url': 'https://www.youtube.com/watch?v=vN9xRfDWrWk&t=759s',
+                       'markdown': '[00:12:39](https://www.youtube.com/watch?v=vN9xRfDWrWk&t=759s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SpF7mXFixD8',
+                       'title': 'R-3 | Airbnb Taxes 2026: Landlord, Business or Hotel? (14-Day Rule, 7-Day '
+                                'Rule, Schedule E or C)',
+                       'channel': 'Restart Tax Talk',
+                       'author': 'Restart Tax Talk',
+                       'text': 'Seven days or less with hotel-style services: Schedule C, and the profit '
+                               'pays 15.3% self-employment tax.',
+                       'tip': 'Seven days or less with hotel-style services: Schedule C, and the profit '
+                              'pays 15.3% self-employment tax.',
+                       'timestamp': 59,
+                       'timestamp_seconds': 59,
+                       'timestamp_label': '[00:00:59]',
+                       'url': 'https://www.youtube.com/watch?v=SpF7mXFixD8&t=59s',
+                       'markdown': '[00:00:59](https://www.youtube.com/watch?v=SpF7mXFixD8&t=59s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UPCGK8bIfnU',
+                       'title': "A Legal Guide for Airbnb Hosts: New Jersey's Short-Term Rental Laws by "
+                                'Christine Matus',
+                       'channel': 'The Matus Law Group',
+                       'author': 'The Matus Law Group',
+                       'text': 'Asbury Park limits short-term rentals to owner-occupied primary residences '
+                               'only, making non-compliant rentals unlawful regardless of how well-managed '
+                               'the listing may be.',
+                       'tip': 'Asbury Park limits short-term rentals to owner-occupied primary residences '
+                              'only, making non-compliant rentals unlawful regardless of how well-managed '
+                              'the listing may be.',
+                       'timestamp': 78,
+                       'timestamp_seconds': 78,
+                       'timestamp_label': '[00:01:18]',
+                       'url': 'https://www.youtube.com/watch?v=UPCGK8bIfnU&t=78s',
+                       'markdown': '[00:01:18](https://www.youtube.com/watch?v=UPCGK8bIfnU&t=78s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UvKA-_UlbVU',
+                       'title': "Landlord, tenant groups unite to oppose limiting Utah's residential "
+                                'property tax exemption',
+                       'channel': 'KSL News Utah',
+                       'author': 'KSL News Utah',
+                       'text': 'Increasing costs is a bad idea because it will increase rents.',
+                       'tip': 'Increasing costs is a bad idea because it will increase rents.',
+                       'timestamp': 68,
+                       'timestamp_seconds': 68,
+                       'timestamp_label': '[00:01:08]',
+                       'url': 'https://www.youtube.com/watch?v=UvKA-_UlbVU&t=68s',
+                       'markdown': '[00:01:08](https://www.youtube.com/watch?v=UvKA-_UlbVU&t=68s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8fGpZhTvLQo',
+                       'title': 'Should You Rent Out Your House or Sell It?',
+                       'channel': 'House Math',
+                       'author': 'House Math',
+                       'text': 'Sam keeps about $17,000 a year, about 1,400 a month.',
+                       'tip': 'Sam keeps about $17,000 a year, about 1,400 a month.',
+                       'timestamp': 123,
+                       'timestamp_seconds': 123,
+                       'timestamp_label': '[00:02:03]',
+                       'url': 'https://www.youtube.com/watch?v=8fGpZhTvLQo&t=123s',
+                       'markdown': '[00:02:03](https://www.youtube.com/watch?v=8fGpZhTvLQo&t=123s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'}]}

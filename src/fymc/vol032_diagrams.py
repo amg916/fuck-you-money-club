@@ -1,678 +1,539 @@
-from __future__ import annotations
+"""Volume 032 diagrams for ISO Payment Processing and ATM Arbitrage.
 
-VOLUME_032_SUBTITLE = (
-    "The Complete Playbook for ISO Payment Processing & ATM Arbitrage: "
-    "$90,000–$800,000 USD in Annual Retained Revenue, "
-    "Built Around a 1 FT + 3 C (4 People) Pod"
+Every figure, workflow, and source below is drawn from the Vol. 032
+practitioner testimony set (Chapters Q1-Q12).
+"""
+
+from typing import Any, Dict, List
+
+VOLUME_032_SUBTITLE: str = (
+    "Board Merchants on Interchange Plus, Capture Level 3 Savings, Pass Fees "
+    "Through Compliant Dual Pricing, Protect a Vested Residual Book, Defend "
+    "High-Risk Accounts with Chargeback Alerts, and Build Location-First ATM "
+    "Routes on Signed Agreements and Disciplined Vault Cash"
 )
 
-VOLUME_032_POSITIONING_ALTERNATIVES = [
+
+def build_volume_032_diagrams_data() -> List[Dict[str, Any]]:
+    """Return the eight structured diagram dicts for Volume 032."""
+    return [
+        {
+            "diagram_id": "diag-01-merchant-boarding-flow",
+            "chapter_number": 1,
+            "title": "Five Steps to Board a Merchant Without Leaving Money on the Table",
+            "subtitle": "From free cost analysis to clean gateway billing",
+            "chart_type": "process_flow",
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Run a free cost analysis",
+                    "value": "Step 1",
+                    "detail": (
+                        "Transaction Expert says any merchant without a cost analysis "
+                        "in the last 12 months may still be funding a processor's "
+                        "Durbin windfall."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Pull the average ticket",
+                    "value": "Step 2",
+                    "detail": (
+                        "Under $10 the 22-cent per-item fee raises costs, while around "
+                        "$30 and above the Durbin cap actually saves money."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Verify SIC/MCC and card-present setup",
+                    "value": "Step 3",
+                    "detail": (
+                        "Bryan Manning benchmarks about 1.25% to 2% card-present and "
+                        "about 2% to 3.5% card-not-present; miscoding means paying "
+                        "higher rates than the merchant qualifies for."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Board at interchange plus 0.25%",
+                    "value": "Step 4",
+                    "detail": (
+                        "James Shepherd boards every new client at interchange plus "
+                        "0.25% so Durbin cost drops pass through automatically."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Resolve past-due gateway billing",
+                    "value": "Step 5",
+                    "detail": (
+                        "NMI moves past-due merchants to delinquent, and after 6 months "
+                        "of uncollected fees the balance is debited from the affiliate "
+                        "account."
+                    ),
+                },
+            ],
+            "caption": (
+                "Agents who board on interchange plus and verify ticket size and "
+                "coding first keep Durbin savings flowing to the merchant and "
+                "protect their own affiliate account."
+            ),
+            "assumptions_note": (
+                "Step order is an editorial sequence assembled from separate "
+                "practitioner gates; rate bands are general benchmarks, not quotes."
+            ),
+            "note": (
+                "Sources include Transaction Expert, James Shepherd (durbinamendment), "
+                "Bryan Manning of BancardSales, and NMI."
+            ),
+        },
+        {
+            "diagram_id": "diag-02-residual-book-funnel",
+            "chapter_number": 6,
+            "title": "From One Account to a $10,000 Monthly Residual Book",
+            "subtitle": "Merchant-count milestones reported by working agents",
+            "chart_type": "funnel",
+            "stages": [
+                {
+                    "label": "Target book with safety buffer",
+                    "value": 50,
+                    "display": "50 merchants for about $10,000 per month",
+                    "conversion": "35 core clients plus a 15-client buffer",
+                    "detail": (
+                        "Residual Builders adds 15 to 20 clients on top of the raw "
+                        "count to absorb shortfalls and cancels."
+                    ),
+                },
+                {
+                    "label": "Core clients at $400 each",
+                    "value": 35,
+                    "display": "35 clients",
+                    "conversion": "Raw count before the buffer",
+                    "detail": (
+                        "Residual Builders models $300 to $400 per client when "
+                        "planning a $10,000 monthly target."
+                    ),
+                },
+                {
+                    "label": "Twenty-sale milestone",
+                    "value": 20,
+                    "display": "About $600 in new monthly residual",
+                    "conversion": "About $30 per account per month",
+                    "detail": (
+                        "James Shepard's average across agents selling for North "
+                        "American Bank Card and Total Merchant Services."
+                    ),
+                },
+                {
+                    "label": "Ten-sale milestone",
+                    "value": 10,
+                    "display": "About $300 in new monthly residual",
+                    "conversion": "About $30 per account per month",
+                    "detail": (
+                        "Shepard benchmarks an industry-average split of about 50% "
+                        "and about $275 average upfront."
+                    ),
+                },
+                {
+                    "label": "First active account",
+                    "value": 1,
+                    "display": "About $30 per month",
+                    "conversion": "Paid roughly two months behind the sale",
+                    "detail": (
+                        "Electronic Money Company recalls a first residual check of "
+                        "$187; Ryan Anthony pegs accounts at $100 to $500 a month."
+                    ),
+                },
+            ],
+            "caption": (
+                "Residual income compounds one account at a time, and practitioners "
+                "plan for cancels by over-building the merchant count."
+            ),
+            "assumptions_note": (
+                "Per-account figures differ by practitioner, from about $30 (Shepard) "
+                "to $300-$400 (Residual Builders); milestones are not one agent's book."
+            ),
+            "note": (
+                "Sources include Residual Builders, James Shepard of CCSalesPro, "
+                "Ryan Anthony, and Electronic Money Company."
+            ),
+        },
+        {
+            "diagram_id": "diag-03-level-3-rate-waterfall",
+            "chapter_number": 3,
+            "title": "How Enhanced Line Items Pull a Commercial Card Rate Down",
+            "subtitle": "Rate steps in percent of sale for a business-card merchant",
+            "chart_type": "waterfall",
+            "bars": [
+                {
+                    "label": "Unenhanced client rate",
+                    "value": 3.0,
+                    "display": "3%",
+                    "kind": "total",
+                },
+                {
+                    "label": "Pass Level 2 line items",
+                    "value": 1.1,
+                    "display": "-1.1 pts",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Level 2 rate",
+                    "value": 1.9,
+                    "display": "About 1.9%",
+                    "kind": "result",
+                },
+                {
+                    "label": "Qualify Level 3 on large tickets",
+                    "value": 0.45,
+                    "display": "-0.45 pts",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "CEDP participation fee",
+                    "value": -0.05,
+                    "display": "+0.05 pts",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Large-ticket rate after CEDP fee",
+                    "value": 1.5,
+                    "display": "About 1.5%",
+                    "kind": "result",
+                },
+            ],
+            "caption": (
+                "Sean Jones moved an e-commerce client from rates as high as 3% to "
+                "about 1.9% at Level 2 and 1.45% on large tickets, saving $35,000 "
+                "per month."
+            ),
+            "assumptions_note": (
+                "Illustrative overlay of Jones' client rates with TouchSuite's 0.05% "
+                "CEDP fee; the final 1.5% is arithmetic, and CEDP Verified status is "
+                "required for Level 3 rates."
+            ),
+            "note": (
+                "Sources include Sean Jones of Revolution Payments, TouchSuite, and "
+                "PayTrace, which quotes 75 to 120 bps of Visa commercial savings."
+            ),
+        },
+        {
+            "diagram_id": "diag-04-effective-rate-yardsticks",
+            "chapter_number": 2,
+            "title": "Effective Rate Yardsticks for Reading Any Statement",
+            "subtitle": "Benchmarks practitioners use to spot overpaying merchants",
+            "chart_type": "horizontal_bars",
+            "unit": "% of card volume",
+            "bars": [
+                {
+                    "label": "US interchange effective rate",
+                    "min": 1.6,
+                    "max": 1.8,
+                    "typical": 1.7,
+                    "display": "1.6% to 1.8%, about 1.7% average",
+                },
+                {
+                    "label": "Effective rate at $100K monthly volume",
+                    "min": 1.5,
+                    "max": 1.5,
+                    "typical": 1.5,
+                    "display": "Under 1.5%",
+                },
+                {
+                    "label": "Square or Stripe flat rate",
+                    "min": 2.5,
+                    "max": 2.9,
+                    "typical": 2.9,
+                    "display": "2.5% or 2.9%",
+                },
+                {
+                    "label": "Coffee shop flat rate that lost money",
+                    "min": 3.5,
+                    "max": 3.5,
+                    "typical": 3.5,
+                    "display": "3.5% flat",
+                },
+                {
+                    "label": "Uncompetitive markup at $20K to $40K",
+                    "min": 0.7,
+                    "max": 0.7,
+                    "typical": 0.7,
+                    "display": "Above about 0.7% markup",
+                },
+            ],
+            "caption": (
+                "Total interchange divided by volume should land near 1.7%, and "
+                "total fees minus interchange exposes the real markup."
+            ),
+            "assumptions_note": (
+                "The 1.7% average was stated as of May 2019; single-point bars "
+                "reflect thresholds quoted without a range."
+            ),
+            "note": (
+                "Sources include CCSalesPro, Helcim, and Bryan Manning of "
+                "BancardSales, who calls the effective rate the only undisputed "
+                "yardstick."
+            ),
+        },
+        {
+            "diagram_id": "diag-05-fee-pass-through-gates",
+            "chapter_number": 5,
+            "title": "Four Gates Before Passing Card Fees to Customers",
+            "subtitle": "Compliance checks for surcharging, cash discount, and dual pricing",
+            "chart_type": "decision_tree",
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": "Is the merchant's effective rate high enough to justify passing the cost on?",
+                    "pass_next": "G2",
+                    "fail_action": (
+                        "Stay on standard pricing, since a low effective rate may not "
+                        "be worth passing on."
+                    ),
+                },
+                {
+                    "gate": "G2",
+                    "question": "Does the terminal or POS block the fee on every debit card, PIN or signature?",
+                    "pass_next": "G3",
+                    "fail_action": (
+                        "Reprogram before launch, because a debit card is a debit card "
+                        "no matter how it is run."
+                    ),
+                },
+                {
+                    "gate": "G3",
+                    "question": "Does every price exist twice on shelves, menus, the website, and quotes?",
+                    "pass_next": "G4",
+                    "fail_action": (
+                        "Fix signage fast; first fines run $1,000, plus $5,000 if not "
+                        "fixed in about 30 to 45 days."
+                    ),
+                },
+                {
+                    "gate": "G4",
+                    "question": "Is any surcharge credit-only, within 3%, with 30 days notice to the acquirer?",
+                    "pass_next": "Board the program",
+                    "fail_action": (
+                        "Move to dual pricing; a 3.99% card price on $100,000 needs "
+                        "about 3.84% charged to net the merchant zero."
+                    ),
+                },
+            ],
+            "caption": (
+                "The posted price, not the program name, decides which rules apply, "
+                "which is why James Huber and Ryan Anthony rank dual pricing first."
+            ),
+            "assumptions_note": (
+                "Gate order is editorial; cap levels and customer reaction were "
+                "disputed among practitioners."
+            ),
+            "note": (
+                "Sources include Ryan Anthony, POS Nexus, Global Legal Law Firm, "
+                "and CCSalesPro."
+            ),
+        },
+        {
+            "diagram_id": "diag-06-atm-location-deal-map",
+            "chapter_number": 11,
+            "title": "Who the ATM Operator Negotiates With",
+            "subtitle": "The counterparties behind every signed location",
+            "chart_type": "org_architecture",
+            "center": {
+                "role": "ATM route operator",
+                "headcount": "Operators running five machines to 100-plus",
+                "focus": "Signed location agreements and surcharge pricing near the $3 norm",
+            },
+            "spokes": [
+                {
+                    "role": "Location owner",
+                    "type": "Surcharge split partner",
+                    "kpi": "Chad Otsuji held $2 of a $3 surcharge and gave the owner $1",
+                },
+                {
+                    "role": "Real decision maker",
+                    "type": "Agreement signer",
+                    "kpi": "Breach clause bills $4,800 plus a $100 fee on 24 months left",
+                },
+                {
+                    "role": "Incumbent operator",
+                    "type": "Buyout counterparty",
+                    "kpi": "Austin Zaback pays five to ten grand for them to walk",
+                },
+                {
+                    "role": "Cash loader",
+                    "type": "Vault cash partner",
+                    "kpi": "Five self-loaded machines tied up $112,500 for almost 2 years",
+                },
+            ],
+            "caption": (
+                "Philip Webb's rule holds across every spoke: no signed location "
+                "agreement, no machine."
+            ),
+            "assumptions_note": (
+                "Split, buyout, and breach figures come from different operators "
+                "and different sites; terms ranged from one-year caps to five-year "
+                "auto-renewals."
+            ),
+            "note": (
+                "Sources include Philip Webb, Chad Otsuji ATM Business, and Austin "
+                "Zaback."
+            ),
+        },
+        {
+            "diagram_id": "diag-07-cash-discount-ticket-math",
+            "chapter_number": 4,
+            "title": "Average Ticket Decides Whether a Service Fee Stays Above Water",
+            "subtitle": "Signature debit cost as a share of the sale versus the fee charged",
+            "chart_type": "stacked_comparison",
+            "total_range": "Debit cost of about 1% to 6.4% of the sale against a 3% to 3.99% service fee",
+            "buckets": [
+                {
+                    "label": "$5 ticket debit cost",
+                    "low": 6.4,
+                    "high": 6.4,
+                    "notes": "Fixed 30 to 32 cents swamps the fee; quote a per-item fee such as 59 cents.",
+                },
+                {
+                    "label": "$10 ticket debit cost",
+                    "low": 3.2,
+                    "high": 3.2,
+                    "notes": "Shepherd says a $10 ticket goes negative 20 basis points at 3%.",
+                },
+                {
+                    "label": "$30 ticket debit cost",
+                    "low": 1.0,
+                    "high": 1.0,
+                    "notes": "Inside the $25 to $70 sweet spot with the fattest ISO markup.",
+                },
+                {
+                    "label": "Service fee charged",
+                    "low": 3.0,
+                    "high": 3.99,
+                    "notes": "Corporate reward cards near 2.5% interchange squeeze this on high tickets.",
+                },
+            ],
+            "caption": (
+                "Regulated signature debit runs 22 cents plus 5 basis points, roughly "
+                "30 to 32 cents all-in, so small tickets sink a percentage fee."
+            ),
+            "assumptions_note": (
+                "Cost percentages are James Shepherd's examples; FTx POS found over "
+                "80% of its card transactions flagged as debit."
+            ),
+            "note": "Sources include James Shepherd of CCSalesPro and FTx POS.",
+        },
+        {
+            "diagram_id": "diag-08-atm-hardware-launch-roadmap",
+            "chapter_number": 12,
+            "title": "Four-Week Hardware and Vault Cash Launch",
+            "subtitle": "Machine vetting through vaulter controls",
+            "chart_type": "timeline_roadmap",
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Vet the machine",
+                    "deliverable": (
+                        "Model number, manufacture date, software version, both "
+                        "passwords and the combo, with EMV and TLS 1.2 as the floor"
+                    ),
+                    "gate": "Processing company clears the unit before payment",
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Delivery and programming",
+                    "deliverable": (
+                        "Tip indicator checked, clock set to current time, Spanish "
+                        "enabled alongside English where needed"
+                    ),
+                    "gate": "Surcharge setting confirmed enabled",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Vault cash plan",
+                    "deliverable": (
+                        "Budget $4,200 to $6,200 per week for each busy location"
+                    ),
+                    "gate": "$16,000 minimum on hand across three busy locations",
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Vaulter agreement and reconciliation",
+                    "deliverable": (
+                        "Signed terms at 70 cents to $1.25 per transaction with fill "
+                        "levels, response times, penalties, and a lead clause"
+                    ),
+                    "gate": "Daily and monthly reconciliation against settlement deposits",
+                },
+            ],
+            "caption": (
+                "The machine is the business and vault cash is the bottleneck, so "
+                "every step locks down hardware integrity and cash control."
+            ),
+            "assumptions_note": (
+                "Weekly pacing is an editorial sequence; vault cash needs reflect "
+                "locations running 283 to 350 transactions."
+            ),
+            "note": (
+                "Sources include ATMDepot, ATM Connect, Rocket ATM, and Philip Webb."
+            ),
+        },
+    ]
+
+
+VOLUME_032_POSITIONING_ALTERNATIVES: List[Dict[str, Any]] = [
     {
-        "title": "The Residual-First ISO",
-        "subtitle": (
-            "Build a merchant portfolio around auditable Schedule A spreads, "
-            "gateway markups, and durable sponsor relationships."
-        ),
-        "audience": (
-            "Experienced merchant-services sellers operating with one full-time "
-            "principal and three specialist contractors."
-        ),
+        "title": "The Residual Asset Playbook",
+        "subtitle": "Build a merchant book you actually own, then sell it on your terms",
+        "audience": "Independent merchant services agents and sub-agents building recurring income",
         "research_basis": (
-            "12 CFR 235.7 addresses debit-network exclusivity and routing restrictions; "
-            "15 U.S.C. 1693o-2 separately addresses interchange and payment-network "
-            "restrictions. These provisions support a rail-specific operating model, "
-            "not a blanket right to surcharge debit transactions. Sponsor agreements "
-            "establish residual ownership, deductions, portability, and termination rights."
+            "Joe Wagner lost an entire book after 3.5 years over one clause, "
+            "CCSalesPro warns that big splits often hide a raised Schedule A, "
+            "Residual Builders plans 50 merchants for $10,000 a month, and buyouts "
+            "commonly run 20X with earn-outs that nine times out of ten never pay."
         ),
         "sources": [
-            "https://www.ecfr.gov/current/title-12/chapter-II/subchapter-A/part-235/section-235.7",
-            "https://www.law.cornell.edu/uscode/text/15/1693o-2",
+            "https://www.youtube.com/watch?v=Em1hM53SuTA&t=260s",
+            "https://www.youtube.com/watch?v=ruAqtp4NcPA&t=281s",
+            "https://www.youtube.com/watch?v=4z4EyZ1Rkbk&t=305s",
+            "https://www.youtube.com/watch?v=Aqf6gQvEgnw&t=103s",
         ],
-        "validation_status": "Source-informed editorial positioning; not market-tested.",
+        "validation_status": "Grounded strictly in Vol. 032 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Exclusive-Venue ATM Portfolio",
-        "subtitle": (
-            "Turn signed placement rights, dependable cash service, and retained "
-            "withdrawal surcharges into a measurable venue portfolio."
-        ),
-        "audience": (
-            "Local venue-network operators able to coordinate contracted maintenance, "
-            "sponsor processing, and separately documented vault-cash provision."
-        ),
+        "title": "Pass the Fee, Not the Fine",
+        "subtitle": "Compliant dual pricing and cash discount math that holds up at the register",
+        "audience": "Agents selling fee pass-through programs and merchants weighing them",
         "research_basis": (
-            "12 CFR 1005.16 requires covered ATM fee disclosures and consumer election "
-            "before the fee-bearing transfer. 31 CFR 1010.100(ff) defines money-services "
-            "business categories; actual services, rather than an ATM label, determine "
-            "whether a separate registration analysis is necessary. Neither source "
-            "establishes placement profitability or a market conversion rate."
+            "Ryan Anthony reports $1,000 first fines plus $5,000 when uncorrected, "
+            "POS Nexus sets Visa's 3% credit-only surcharge ceiling with 30 days "
+            "notice, CCSalesPro shows a 3.99% card price needs about 3.84% charged, "
+            "and James Shepherd puts the residual sweet spot at a $25 to $70 ticket."
         ),
         "sources": [
-            "https://www.ecfr.gov/current/title-12/chapter-X/part-1005/subpart-A/section-1005.16",
-            "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-A/section-1010.100",
-            "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1022/subpart-C/section-1022.380",
+            "https://www.youtube.com/watch?v=KsqD8Ch93YI&t=674s",
+            "https://www.youtube.com/watch?v=m1nRWuyd4rI&t=36s",
+            "https://www.youtube.com/watch?v=ZRmKamGyTPc&t=187s",
+            "https://www.youtube.com/watch?v=AnhJYbY3ptw&t=90s",
         ],
-        "validation_status": "Source-informed editorial positioning; not market-tested.",
+        "validation_status": "Grounded strictly in Vol. 032 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Price-Integrity Payments Desk",
-        "subtitle": (
-            "Win suitable merchants through transparent credit pricing, accurate "
-            "debit treatment, and disciplined dispute operations."
-        ),
-        "audience": (
-            "Payments operators serving multi-location merchants with documented "
-            "pricing configurations and sponsor-approved business categories."
-        ),
+        "title": "The Location-First ATM Route",
+        "subtitle": "Signed agreements, honest startup budgets, and vault cash discipline",
+        "audience": "New and scaling ATM operators evaluating placements and route economics",
         "research_basis": (
-            "New York General Business Law section 518 requires specific credit-card "
-            "price presentation and limits the surcharge to the merchant's charge. "
-            "15 U.S.C. 1693o-2 distinguishes statutory discount protections from "
-            "other network restrictions. Card-brand surcharge rules remain separate "
-            "contractual requirements; state-specific review precedes configuration."
+            "Philip Webb anchors surcharges near $3 and enforces breach clauses "
+            "worth $4,800, Juan Jeronimo budgets $5,500 to $8,500 per machine "
+            "all-in, Lines & Gains reports $7,825 a month net on ten machines, and "
+            "vaulters earn 70 cents to $1.25 per transaction under written terms."
         ),
         "sources": [
-            "https://www.nysenate.gov/legislation/laws/GBS/518",
-            "https://www.law.cornell.edu/uscode/text/15/1693o-2",
+            "https://www.youtube.com/watch?v=r5NRe-C_aM0&t=486s",
+            "https://www.youtube.com/watch?v=9QGfLH_pm0o&t=95s",
+            "https://www.youtube.com/watch?v=2iQEC3gV3oo&t=42s",
+            "https://www.youtube.com/watch?v=-6VRYcYBnSA&t=400s",
+            "https://www.youtube.com/watch?v=6k0qIHsvs0M&t=306s",
         ],
-        "validation_status": "Source-informed editorial positioning; not market-tested.",
+        "validation_status": "Grounded strictly in Vol. 032 YouTube practitioner transcripts.",
     },
 ]
-
-
-def build_volume_032_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-retained-residual-workflow",
-            "process_flow",
-            "From Signed Merchant to Audited Residual",
-            "Five operating stages separate payment volume from operator earnings.",
-            1,
-            "operating_framework",
-            (
-                "The revenue basis is retained ISO residuals, gateway markups, and "
-                "ATM surcharge shares. Merchant settlement funds and ATM vault cash "
-                "are excluded. ASC 606 principal-versus-agent assessment follows "
-                "the actual contracts; this model uses the specified retained basis."
-            ),
-            (
-                "Own the contract, verify the boarding decision, and reconcile the "
-                "retained payment before treating an account as productive."
-            ),
-            [
-                (
-                    "Source and qualify",
-                    "Verify merchant and venue fit",
-                    1.0,
-                    (
-                        "Capture merchant category, ownership, statements, refund "
-                        "patterns, venue traffic, and placement rights in IRIS CRM; "
-                        "reject prohibited activity before quoting."
-                    ),
-                ),
-                (
-                    "Price the retained spread",
-                    "Model Schedule A and venue shares",
-                    2.0,
-                    (
-                        "Calculate residuals after processor deductions and ATM "
-                        "venue shares; document gateway markup, minimums, clawbacks, "
-                        "reserve exposure, and residual assignment rights."
-                    ),
-                ),
-                (
-                    "Submit transparent underwriting",
-                    "Sponsor decides acceptance and reserves",
-                    3.0,
-                    (
-                        "Submit accurate ownership, merchant category, websites, "
-                        "fulfillment terms, and processing history. Never split "
-                        "transactions across MIDs to conceal risk or thresholds."
-                    ),
-                ),
-                (
-                    "Activate and monitor",
-                    "Test pricing, disclosures, and telemetry",
-                    4.0,
-                    (
-                        "Test debit exclusions and credit-price presentation; "
-                        "configure supported Verifi RDR or Ethoca workflows, ATM "
-                        "fee election, remote telemetry, and vault-cash alerts."
-                    ),
-                ),
-                (
-                    "Audit and retain",
-                    "Tie statements to bank receipts",
-                    5.0,
-                    (
-                        "Reconcile IRIS CRM residual imports against Schedule A "
-                        "and sponsor statements; investigate missing MIDs, rate "
-                        "compression, surcharge deductions, attrition, and cash variances."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-merchant-cohort-conversion",
-            "funnel",
-            "A Nested Merchant Acquisition Cohort",
-            "400 prospects become 25 active merchants over an illustrative 120 days.",
-            6,
-            "illustrative_model",
-            (
-                "Every stage is a subset of the preceding stage; these are planning "
-                "counts, not observed conversion results. First deal timing remains "
-                "1–4 months. The separate ATM portfolio is excluded from this funnel."
-            ),
-            (
-                "At steady state, 25 merchants retaining $15,000 annually each "
-                "contribute $375,000; ten separately sourced ATM venues retaining "
-                "$7,000 each complete the $445,000 Base revenue case."
-            ),
-            [
-                (
-                    "Named prospects",
-                    "400 merchants; 100% starting cohort",
-                    400.0,
-                    (
-                        "Record identifiable businesses with permitted categories, "
-                        "reachable decision-makers, serviceable locations, and an "
-                        "explicit reason to reconsider their existing processing arrangement."
-                    ),
-                ),
-                (
-                    "Qualified statement audits",
-                    "200 merchants; 50% of prior stage",
-                    200.0,
-                    (
-                        "Obtain authorized statements and confirm ownership, "
-                        "processing needs, renewal timing, current pricing, and "
-                        "risk fit before allocating proposal effort."
-                    ),
-                ),
-                (
-                    "Documented proposals",
-                    "100 merchants; 50% of prior stage",
-                    100.0,
-                    (
-                        "Present itemized pricing and service terms; calculate "
-                        "retained contribution after upstream deductions rather "
-                        "than treating interchange or merchant settlement as revenue."
-                    ),
-                ),
-                (
-                    "Complete sponsor submissions",
-                    "40 merchants; 40% of prior stage",
-                    40.0,
-                    (
-                        "Submit complete applications with genuine business "
-                        "activity, required evidence, and disclosed processing history; "
-                        "submission does not imply sponsor acceptance."
-                    ),
-                ),
-                (
-                    "Active retained accounts",
-                    "25 merchants; 62.5% of prior stage",
-                    25.0,
-                    (
-                        "Count only live accounts with reconciled processing. "
-                        "Illustrative annual yield is $500,000 monthly merchant "
-                        "volume times 12 times a 0.25% retained spread, or $15,000."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-owner-profit-waterfall",
-            "waterfall",
-            "Base Case: $445,000 Revenue to $189,125 Owner Profit",
-            "Four expense deductions reconcile exactly to a 42.5% annual net margin.",
-            3,
-            "illustrative_model",
-            (
-                "USD annually. The first and last bars are absolute totals; the "
-                "four intervening bars are negative deltas. Expense allocations "
-                "are illustrative and reconcile to the canonical scorecard. "
-                "Revenue is already net of upstream retained-share deductions."
-            ),
-            (
-                "$445,000 − $110,000 − $78,000 − $59,875 − $8,000 "
-                "= $189,125; $189,125 / $445,000 = 42.5%."
-            ),
-            [
-                (
-                    "Retained operator revenue",
-                    "$445,000 annual starting total",
-                    445000.0,
-                    (
-                        "Base revenue comprises $375,000 retained merchant and "
-                        "gateway income plus $70,000 retained ATM surcharge income. "
-                        "Merchant card volume and vault cash contribute zero revenue."
-                    ),
-                ),
-                (
-                    "Acquisition commissions",
-                    "Subtract $110,000 annual sales expense",
-                    -110000.0,
-                    (
-                        "Pay operator-side referral and sales compensation under "
-                        "documented schedules. These costs are distinct from "
-                        "processor and venue shares already removed from revenue."
-                    ),
-                ),
-                (
-                    "Contract servicing",
-                    "Subtract $78,000 annual delivery expense",
-                    -78000.0,
-                    (
-                        "Fund contractor boarding, residual auditing, dispute "
-                        "operations, and ATM field-service work; the full-time "
-                        "owner's compensation is not deducted again from owner profit."
-                    ),
-                ),
-                (
-                    "Fixed operating overhead",
-                    "Subtract $59,875 annual overhead expense",
-                    -59875.0,
-                    (
-                        "Budget CRM, telemetry, insurance, equipment leases, "
-                        "bookkeeping, and administration. Average fixed overhead "
-                        "is $4,989.58 monthly; total expenses also include variable costs."
-                    ),
-                ),
-                (
-                    "Loss and remediation expense",
-                    "Subtract $8,000 annual risk expense",
-                    -8000.0,
-                    (
-                        "Model operator-borne losses and remediation costs under "
-                        "the relevant contracts. Restricted reserve deposits are "
-                        "not automatically expenses, and recoverable vault cash is excluded."
-                    ),
-                ),
-                (
-                    "Annual owner net profit",
-                    "$189,125 ending total; 42.5% margin",
-                    189125.0,
-                    (
-                        "Canonical checks: Conservative $90,000 times 30% equals "
-                        "$27,000; Base $445,000 times 42.5% equals $189,125; "
-                        "Scaled $800,000 times 55% equals $440,000."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-retained-payment-rail-yields",
-            "horizontal_bars",
-            "Retained Yield by Merchant Segment and Payment Rail",
-            "Illustrative operator dollars retained per 1,000 successful payment events.",
-            2,
-            "illustrative_model",
-            (
-                "Card examples assume a $50 average ticket. Gateway yield is a "
-                "separate component, not an additional merchant cohort. ATM events "
-                "are withdrawals, not purchases; differing event economics prevent "
-                "direct conclusions about account profitability. Bars are not additive."
-            ),
-            (
-                "Price retained yield after upstream splits, then subtract "
-                "operator acquisition, servicing, and loss costs."
-            ),
-            [
-                (
-                    "Card-present retail residual",
-                    "$120 retained per 1,000 purchases",
-                    120.0,
-                    (
-                        "One thousand $50 purchases produce $50,000 merchant "
-                        "volume; a 24-basis-point retained residual produces $120 "
-                        "before operator expenses, without assuming debit surcharges."
-                    ),
-                ),
-                (
-                    "Restaurant processing residual",
-                    "$160 retained per 1,000 purchases",
-                    160.0,
-                    (
-                        "A 32-basis-point retained residual on $50,000 merchant "
-                        "volume produces $160; verify tip adjustments, funding "
-                        "timing, terminal support, and rate-matching exposure."
-                    ),
-                ),
-                (
-                    "Gateway transaction markup",
-                    "$90 retained per 1,000 transactions",
-                    90.0,
-                    (
-                        "A $0.09 retained gateway markup produces $90 across "
-                        "1,000 transactions; deduct the upstream gateway charge "
-                        "before measuring this component and avoid residual double counting."
-                    ),
-                ),
-                (
-                    "Sponsor-approved specialty merchant",
-                    "$250 retained per 1,000 purchases",
-                    250.0,
-                    (
-                        "A 50-basis-point retained residual on $50,000 merchant "
-                        "volume produces $250. Model reserves, disputes, and service "
-                        "burden separately; higher yield does not establish higher profit."
-                    ),
-                ),
-                (
-                    "Exclusive-venue ATM withdrawals",
-                    "$1,750 retained per 1,000 withdrawals",
-                    1750.0,
-                    (
-                        "A $3.00 surcharge less $1.25 combined venue and upstream "
-                        "shares retains $1.75 per withdrawal. Four thousand annual "
-                        "withdrawals retain $7,000 before operator servicing expenses."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-statutory-and-risk-preflight",
-            "decision_tree",
-            "Four Checks Before Account Activation",
-            "Each failed check routes to a specific correction or a stopped submission.",
-            5,
-            "operating_framework",
-            (
-                "Numeric values indicate check order, not risk scores. All four "
-                "checks must pass for the relevant product; statutes, network "
-                "contracts, and sponsor requirements impose distinct obligations."
-            ),
-            (
-                "Document evidence and the decision owner; never use alternate "
-                "MIDs or product labels to bypass an adverse underwriting decision."
-            ),
-            [
-                (
-                    "Credit and debit pricing",
-                    "Pass: configure; fail: reprice and retest",
-                    1.0,
-                    (
-                        "Apply current Visa and Mastercard debit-surcharge prohibitions "
-                        "separately from 15 U.S.C. 1693o-2 and 12 CFR 235.7 routing "
-                        "rules. For New York, test displayed credit prices and surcharge "
-                        "limits against General Business Law section 518."
-                    ),
-                ),
-                (
-                    "ATM fee disclosure",
-                    "Pass: enable; fail: disable fee-bearing service",
-                    2.0,
-                    (
-                        "Under 12 CFR 1005.16, disclose the fee amount on screen "
-                        "or paper before commitment and obtain the consumer's "
-                        "election to continue. Preserve test evidence and confirm "
-                        "that cancellation avoids the fee."
-                    ),
-                ),
-                (
-                    "Service scope and cash custody",
-                    "Pass: document scope; fail: stop added services",
-                    3.0,
-                    (
-                        "Analyze actual services under 31 CFR 1010.100(ff); "
-                        "withdrawal-only operation does not by itself establish "
-                        "money-transmitter status. Added transmission or exchange "
-                        "services require separate classification and any applicable "
-                        "31 CFR 1022.380 registration work."
-                    ),
-                ),
-                (
-                    "Sponsor underwriting and data controls",
-                    "Pass: activate; fail: remediate or decline",
-                    4.0,
-                    (
-                        "Verify sponsor acceptance, merchant category, applicable "
-                        "MATCH screening, reserves, PCI DSS responsibilities, and "
-                        "dispute exposure. Assess 15 U.S.C. 6801 and 16 CFR 314.3 "
-                        "where applicable; use Verifi RDR and Ethoca without "
-                        "suppressing required sponsor reporting."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-four-to-six-person-pod",
-            "org_architecture",
-            "One Accountable Owner, Three Contract Specialists",
-            "The four-person Base pod expands to six people only in the Scaled case.",
-            11,
-            "operating_framework",
-            (
-                "FT means full-time and C means contractor; contractor seats are "
-                "people, not assumed full-time equivalents. Numeric values show "
-                "Base seat occupancy: one for each active seat and zero for each "
-                "Scaled-only addition. Sponsor personnel remain outside the pod."
-            ),
-            (
-                "Conservative and Base use 1 FT + 3 C; Scaled uses 2 FT + 4 C. "
-                "Automation supports accountable operators rather than removing ownership."
-            ),
-            [
-                (
-                    "Owner and sponsor lead",
-                    "Base seat: one full-time principal",
-                    1.0,
-                    (
-                        "Own pricing authority, sponsor relationships, placement "
-                        "contracts, cash controls, attrition review, and the annual "
-                        "owner-profit reconciliation; resolve exceptions raised by contractors."
-                    ),
-                ),
-                (
-                    "Merchant acquisition specialist",
-                    "Base seat: one sales contractor",
-                    1.0,
-                    (
-                        "Maintain qualified cohorts, collect authorized statements, "
-                        "prepare accurate proposals, and negotiate venue introductions "
-                        "without promising sponsor acceptance or unsupported savings."
-                    ),
-                ),
-                (
-                    "Boarding and residual specialist",
-                    "Base seat: one operations contractor",
-                    1.0,
-                    (
-                        "Operate IRIS CRM, reconcile Schedule A residuals, maintain "
-                        "boarding evidence, review Verifi RDR and Ethoca outcomes, "
-                        "and escalate unresolved disputes or reserve changes."
-                    ),
-                ),
-                (
-                    "ATM field-service specialist",
-                    "Base seat: one service contractor",
-                    1.0,
-                    (
-                        "Coordinate authorized replenishment, inspect terminals, "
-                        "respond to telemetry alarms, and reconcile service tickets "
-                        "against cash-custodian records without mixing vault cash and revenue."
-                    ),
-                ),
-                (
-                    "Portfolio operations lead",
-                    "Scaled addition: one full-time operator",
-                    0.0,
-                    (
-                        "Add ownership of daily exception queues, merchant retention, "
-                        "sponsor reporting, and contractor quality when measured "
-                        "workload supports the Scaled six-person operating model."
-                    ),
-                ),
-                (
-                    "Dispute and support specialist",
-                    "Scaled addition: one specialist contractor",
-                    0.0,
-                    (
-                        "Add dedicated case handling, evidence collection, and "
-                        "merchant support; the resulting team totals two full-time "
-                        "people and four contractors, not six full-time employees."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-startup-capital-allocation",
-            "stacked_comparison",
-            "Allocate Startup Cash Without Counting Vault Cash",
-            "Four buckets reconcile to $8,000 lean, $25,000 working, and $45,000 expanded.",
-            4,
-            "illustrative_model",
-            (
-                "Numeric values encode the $25,000 working plan. Each value string "
-                "also specifies lean and expanded allocations, in that order. "
-                "These are alternative budgets, not cumulative spending rounds. "
-                "Leased or venue-owned terminals and separately supplied vault cash "
-                "are assumed; operator-funded cash inventory needs additional capital."
-            ),
-            (
-                "Lean: $2,000 + $1,500 + $2,500 + $2,000 = $8,000. "
-                "Working: $4,500 + $6,000 + $9,000 + $5,500 = $25,000. "
-                "Expanded: $8,000 + $10,000 + $18,000 + $9,000 = $45,000."
-            ),
-            [
-                (
-                    "Contracting and operating setup",
-                    "Lean $2,000; working $4,500; expanded $8,000",
-                    4500.0,
-                    (
-                        "Fund entity setup, insurance deposits, sponsor onboarding, "
-                        "and review of residual ownership, termination, venue "
-                        "exclusivity, equipment responsibility, and cash-custody agreements."
-                    ),
-                ),
-                (
-                    "CRM and terminal deployment",
-                    "Lean $1,500; working $6,000; expanded $10,000",
-                    6000.0,
-                    (
-                        "Fund IRIS CRM configuration, residual import testing, "
-                        "telemetry setup, terminal lease deposits, connectivity, "
-                        "and installation; exclude any assumption of outright fleet purchase."
-                    ),
-                ),
-                (
-                    "Acquisition and pilot execution",
-                    "Lean $2,500; working $9,000; expanded $18,000",
-                    9000.0,
-                    (
-                        "Fund targeted outreach, site surveys, travel, demonstrations, "
-                        "and initial contractor work. Release spending against "
-                        "documented cohort progress rather than unverified transaction forecasts."
-                    ),
-                ),
-                (
-                    "Liquidity and service buffer",
-                    "Lean $2,000; working $5,500; expanded $9,000",
-                    5500.0,
-                    (
-                        "Hold operating cash for service incidents and residual "
-                        "payment lags; keep sponsor collateral separately identified. "
-                        "At Base fixed overhead, $5,500 covers approximately 1.1 months."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-first-thirty-days",
-            "timeline_roadmap",
-            "The First 30 Days: Build Evidence Before Volume",
-            "Four weekly milestones prepare a defensible merchant and ATM pilot.",
-            12,
-            "operating_framework",
-            (
-                "Numeric values indicate the final day of each milestone. "
-                "The 30-day sprint prepares acquisition and operations; first "
-                "deal timing remains 1–4 months, and the funnel spans an "
-                "illustrative 120-day cohort rather than this sprint."
-            ),
-            (
-                "Finish the month with reviewed terms, a nested prospect cohort, "
-                "tested controls, and a reconciled operating model."
-            ),
-            [
-                (
-                    "Days 1-7",
-                    "Select sponsor and inspect contract economics",
-                    7.0,
-                    (
-                        "Owner compares Schedule A schedules, residual ownership, "
-                        "clawbacks, reserve terms, and supported categories. Deliver "
-                        "a written retained-revenue model and an ATM cash-custody plan."
-                    ),
-                ),
-                (
-                    "Days 8-14",
-                    "Build qualified outreach and site evidence",
-                    14.0,
-                    (
-                        "Sales contractor creates the prospect register, requests "
-                        "authorized statements, and surveys suitable venues. Deliver "
-                        "stage definitions, pricing worksheets, and documented placement "
-                        "requirements without counting unsigned prospects as revenue."
-                    ),
-                ),
-                (
-                    "Days 15-21",
-                    "Test boarding, pricing, and service controls",
-                    21.0,
-                    (
-                        "Operations contractor configures IRIS CRM and residual "
-                        "imports; field specialist tests telemetry and ATM fee "
-                        "disclosure. Record debit-pricing tests, dispute escalation "
-                        "ownership, and sponsor submission completeness."
-                    ),
-                ),
-                (
-                    "Days 22-30",
-                    "Submit pilots and reconcile readiness",
-                    30.0,
-                    (
-                        "Submit complete applications and negotiate placement "
-                        "terms. If accepted and installed, verify live results; "
-                        "otherwise record sponsor dependencies. Reconcile startup "
-                        "cash, fixed overhead, and all three canonical profit cases."
-                    ),
-                ),
-            ],
-        ),
-    ]
-
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for (
-            identifier,
-            kind,
-            title,
-            subtitle,
-            chapter,
-            tag,
-            note,
-            caption,
-            stages,
-        ) in specs
-    ]

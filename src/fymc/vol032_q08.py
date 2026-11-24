@@ -1,629 +1,892 @@
 from __future__ import annotations
 
-CHAPTER_8 = {
-    "id": "Q8",
-    "chapter_id": "Q8",
-    "chapter_number": 8,
-    "question_number": 8,
-    "slug": "public-records-apis-data-pipelines-operator-tooling",
-    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small iso payment processing & atm arbitrage desk an unfair information edge?",
-    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
-    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
-    "subtitle": "Secretary of State Records, Census Geocoding, IRIS CRM Residual Audits, Sponsor APIs, and Reg E ATM Telemetry",
-    "layout_template": "resource_directory",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #32, ISO Payment Processing & ATM Arbitrage, ranks #02 of 36 "
-        "with a 94/100 Money-to-Manpower Score. Its information advantage comes "
-        "from joining public operating signals to authorized processor economics, "
-        "not collecting enormous contact lists. This chapter maps 12 operator "
-        "plays across venue discovery, identity resolution, wholesale pricing, "
-        "residual recovery, dispute intervention, permissioned outreach, and ATM "
-        "uptime. A 16-source directory specifies access routes, cost structures, "
-        "refresh practices, throttling, and fallbacks. Formula v2.0 annual owner "
-        "profit remains $27,000 Conservative, $189,125 Base, and $440,000 Scaled. "
-        "Recognized revenue is retained processing residuals, gateway markups, "
-        "and ATM surcharges; merchant settlement volume and vault cash never "
-        "become desk revenue. Build evidence-backed queues that one operator "
-        "can clear before buying more data."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$90,000",
-            "context": "Annual recognized retained residual, gateway, and ATM surcharge revenue",
-            "note": "30% net margin; $27,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$445,000",
-            "context": "Annual recognized retained residual, gateway, and ATM surcharge revenue",
-            "note": "42.5% net margin; $189,125 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$800,000",
-            "context": "Annual recognized retained residual, gateway, and ATM surcharge revenue",
-            "note": "55% net margin; $440,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Turn sixteen named sources into evidence-backed merchant and venue queues",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a source register, not a purchased contact dump. The sixteen directory "
-                    "entries across this section and the next form a deliberately small collection "
-                    "surface: eight discovery and verification sources followed by eight commercial "
-                    "and operational sources. Store source URL, retrieval time, source publication "
-                    "time when available, jurisdiction, permitted use, and evidence identifier beside "
-                    "every extracted field. A municipal license establishes an administrative event; "
-                    "it does not establish that the storefront opened, accepts cards, or wants an ATM. "
-                    "A Secretary of State record establishes an entity filing, not beneficial ownership "
-                    "or authority to sign a merchant agreement. Never treat registered agents as sales "
-                    "contacts merely because their addresses are public. The twelve chapter mappings "
-                    "are new-opening detection, entity resolution, venue-density routing, venue "
-                    "exclusivity verification, Schedule A normalization, residual leakage recovery, "
-                    "gateway attachment, dispute intervention, authorized MID orchestration, ATM cash "
-                    "forecasting, ATM uptime recovery, and high_velocity_dm_outbound_systems. These are "
-                    "workflow mappings, not twelve independently additive profit forecasts. Assign each "
-                    "a measurable input, one accountable owner, and an explicit stop condition before "
-                    "connecting it to outreach or underwriting. Preserve source corrections rather than "
-                    "silently replacing the original evidence."
-                ),
-                (
-                    "For new-opening detection, pull a bounded municipal license increment and compare "
-                    "issue dates, expiration dates, and status changes with the previous snapshot. An "
-                    "illustrative batch of 240 changed records might yield 60 plausible openings, 30 "
-                    "confirmed operating locations, and six requested pricing reviews; that is a 20% "
-                    "review rate on confirmed locations, not on the original feed. Entity resolution "
-                    "then links legal entity, trade name, premises address, and operator contact without "
-                    "collapsing separate franchisees. If 100 candidates produce 20 ambiguous joins and "
-                    "each review takes four minutes, reserve 80 minutes instead of allowing fuzzy matches "
-                    "to auto-board merchants. Venue-density routing uses Census coordinates and verified "
-                    "opening hours: twelve visits grouped into three four-stop routes can replace twelve "
-                    "separate dispatches, but measure actual drive time before claiming savings. For venue "
-                    "exclusivity verification, inspect the venue's existing ATM agreement and landlord "
-                    "authority with permission. A $3 surcharge at 600 monthly withdrawals produces "
-                    "$1,800 in collected surcharges; a 50% retained contractual share yields $900 before "
-                    "desk expenses. Public maps cannot establish that share or terminate another operator's "
-                    "contract. When records conflict, move the location to manual verification and keep "
-                    "the sales queue moving elsewhere."
-                ),
-                (
-                    "Treat refresh cadence as an operator choice constrained by source publication, not "
-                    "a promise of instantaneous government data. The directory distinguishes retrieval "
-                    "schedules from actual freshness; no portal's unverified rate ceiling is invented. "
-                    "Use conditional requests where supported, bounded date windows, saved cursors, and "
-                    "single-worker access for portals without published automation allowances. Honor "
-                    "Retry-After, add exponential backoff with jitter, and stop on repeated authorization "
-                    "failures rather than cycling identities. Check source terms before retaining Google "
-                    "Places content; persistent identifiers and licensed merchant evidence serve different "
-                    "purposes from a copied commercial directory. OFAC screening is an escalation input "
-                    "for sponsor procedures, not an autonomous verdict based on a similar name. FDIC "
-                    "BankFind verifies insured institution identity, not whether a processor has a current "
-                    "sponsorship agreement. State UCC results can reveal financing statements but do not "
-                    "prove lien priority, current debt, or ownership of an ATM. Obtain certified searches "
-                    "or underlying agreements when the decision requires them. FinCEN beneficial ownership "
-                    "information is not an open prospecting feed; public corporate filings must never be "
-                    "represented as a substitute for sponsor-required ownership verification. Record these "
-                    "limits directly in the evidence schema."
-                ),
-            ],
-            "table": {
-                "caption": "Named Source Directory, Entries 1–8: Discovery and Official Verification",
-                "headers": [
-                    "Named source and operational use",
-                    "Exact access method and cost structure",
-                    "Refresh latency and request discipline",
-                    "Fallback evidence and decision boundary",
-                ],
-                "rows": [
-                    [
-                        "California bizfile Online verifies filed entities and registered business names.",
-                        "Use https://bizfileonline.sos.ca.gov/search/business; public searches are free, while document services can carry charges.",
-                        "Review weekly and before contracting; filing visibility varies, and portal automation requires permitted access.",
-                        "Request current formation documents from the merchant; registered agents are not presumed operating contacts.",
-                    ],
-                    [
-                        "New York Department of State UCC search identifies recorded financing statements.",
-                        "Enter through https://dos.ny.gov/uniform-commercial-code; use official search services and published document fees.",
-                        "Search before relevant equipment transactions; index timing varies, so preserve the search timestamp.",
-                        "Obtain certified searches and actual security agreements; search hits alone cannot establish enforceable priority.",
-                    ],
-                    [
-                        "Chicago Business Licenses data supplies issue dates and premises-level operating signals.",
-                        "Use GET https://data.cityofchicago.org/resource/r5kz-chrr.json; public Socrata access has no data purchase charge.",
-                        "Poll daily using bounded filters and an application token; honor throttling and inspect dataset update metadata.",
-                        "Use the city's license lookup and direct venue confirmation when dataset publication trails operational changes.",
-                    ],
-                    [
-                        "Census Geocoder standardizes addresses for compact merchant and ATM service routes.",
-                        "Use https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress with address, benchmark, vintage, and format parameters; access is free.",
-                        "Geocode changed addresses only; select documented benchmarks and batch within currently published service limits.",
-                        "Verify ambiguous coordinates with merchant documents and site visits; geocoding does not establish occupancy.",
-                    ],
-                    [
-                        "FDIC BankFind Suite confirms insured bank identity and institution history.",
-                        "Use GET https://banks.data.fdic.gov/api/institutions?format=json with documented filters; public API access is free.",
-                        "Refresh sponsor reference records monthly and on changes; cache results and inspect returned reporting dates.",
-                        "Request current sponsor confirmation through contracted channels; insurance records do not prove ISO sponsorship.",
-                    ],
-                    [
-                        "OFAC Sanctions List Service supplies official screening files for sponsor-directed review.",
-                        "Download published files through https://ofac.treasury.gov/sanctions-list-service; official list access is free.",
-                        "Check daily and on onboarding events; compare available file metadata and preserve downloaded versions.",
-                        "Use official OFAC search and sponsor escalation; resolve identifiers before treating similar names as matches.",
-                    ],
-                    [
-                        "NYC restaurant inspection data helps verify venue addresses and recent operating evidence.",
-                        "Use GET https://data.cityofnewyork.us/resource/43nn-pn8j.json; public Socrata data access is free.",
-                        "Refresh weekly with filtered requests; inspection dates and dataset publication dates measure different latencies.",
-                        "Confirm current trading status directly; an inspection record does not establish ownership or processor eligibility.",
-                    ],
-                    [
-                        "Google Places API supplies licensed venue discovery and location verification signals.",
-                        "Use POST https://places.googleapis.com/v1/places:searchText with an API key and field mask; billing follows current SKU pricing.",
-                        "Request only necessary fields, configure quotas, and observe current storage restrictions and service responses.",
-                        "Use municipal premises records and merchant confirmation; commercial listings cannot establish ATM exclusivity rights.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "2. Join authorized APIs to retained economics, not merchant settlement volume",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Commercial connectors become useful only after public records resolve to an authorized "
-                    "merchant relationship. Use IRIS CRM for boarding state, relationship ownership, and "
-                    "residual audit workflow, but let executed agreements and processor statements govern "
-                    "the economics. Obtain tenant-specific API documentation and credentials through the "
-                    "contract administrator; a product name does not imply universal endpoint availability. "
-                    "Schedule A normalization translates basis points, per-item fees, monthly minimums, "
-                    "gateway costs, and exception charges into comparable fields. For illustration, "
-                    "$200,000 monthly card volume multiplied by a 15-basis-point eligible spread equals "
-                    "$300. If the contract assigns the desk 60% of that spread, retained monthly processing "
-                    "revenue is $180 before desk expenses, not $200,000 and not $300. Gateway attachment "
-                    "adds a separate example: a $20 monthly merchant charge less an $8 contractual "
-                    "upstream allocation leaves $12 retained contribution. Across 100 active eligible "
-                    "accounts, that is $1,200 monthly or $14,400 annually before desk expenses. These "
-                    "examples isolate mechanics; interchange, assessments, transaction mix, and minimums "
-                    "must be modeled from actual statements before quoting. If the statement lacks a "
-                    "required fee line, request the missing schedule rather than imputing an attractive "
-                    "spread."
-                ),
-                (
-                    "Residual leakage recovery compares the effective-dated contract with paid line items "
-                    "at merchant, month, and fee-code granularity. A recurring $8 shortage across 120 "
-                    "eligible merchants represents $960 monthly, or $11,520 annualized if the same "
-                    "conditions persist; an annualized exception is not booked revenue until recognition "
-                    "and collectability requirements are satisfied. Save the disputed statement, contract "
-                    "version, calculation, and processor case reference as one evidence packet. Dispute "
-                    "intervention uses Verifi RDR and Ethoca only through the processor or enrolled "
-                    "provider's authorized interfaces. If 40 eligible events cost an assumed $15 each "
-                    "and avoid an otherwise applicable $35 fee each, the narrow fee difference is "
-                    "$800, calculated as $1,400 less $600. Refund principal, alert overlap, lost product, "
-                    "and merchant policy can reverse that result; do not count refunded sales as "
-                    "savings. Authorized MID orchestration means allocating activity only among "
-                    "sponsor-approved merchant accounts for the actual business, products, and channels. "
-                    "Two approved MIDs at $25 monthly platform cost each require $50 of eligible "
-                    "retained contribution just to cover those charges. A declined or restricted activity "
-                    "stays stopped; another MID is never a route around underwriting or monitoring."
-                ),
-                (
-                    "Keep the scorecard bridge explicit in every dashboard. Formula v2.0 uses $90,000 "
-                    "recognized annual revenue at 30% margin for $27,000 owner profit, $445,000 at "
-                    "42.5% for $189,125, and $800,000 at 55% for $440,000. Corresponding annual expense "
-                    "envelopes are $63,000, $255,875, and $360,000. Teams remain one full-time operator "
-                    "plus three contractors in Conservative and Base, and two full-time operators plus "
-                    "four contractors in Scaled. The scorecard's gross revenue label refers here to "
-                    "the desk's retained revenue basis, not gross card billings or gross ATM surcharge "
-                    "collections before contractual allocations. Apply retained_share once when the "
-                    "underlying input is gross eligible fees; do not multiply an already net residual "
-                    "statement by the share again. Preserve an ASC 606 principal-versus-agent assessment "
-                    "for each arrangement because a payment flow alone does not determine presentation. "
-                    "The stated $1,500–$10,000 monthly operating range describes operating setup needs, "
-                    "not a replacement for the full scenario expense envelopes including labor and "
-                    "other modeled costs. Reconcile monthly recognized revenue to statements, receivables, "
-                    "and cash receipts with documented timing differences. Pipeline estimates, disputed "
-                    "recoveries, merchant GMV, and vault cash occupy separate ledgers."
-                ),
-            ],
-            "table": {
-                "caption": "Named Source Directory, Entries 9–16: Commercial Enrichment and Authorized Operations",
-                "headers": [
-                    "Named source and operational use",
-                    "Exact access method and cost structure",
-                    "Refresh latency and request discipline",
-                    "Fallback evidence and decision boundary",
-                ],
-                "rows": [
-                    [
-                        "OpenCorporates links company identifiers across jurisdictions for entity resolution.",
-                        "Use https://api.opencorporates.com/v0.4/companies/search under applicable API credentials and licensing; commercial plans require current pricing.",
-                        "Refresh on onboarding and material changes; inspect source dates and obey the licensed request allowance.",
-                        "Return to the originating registry and merchant documents; aggregation can lag official amendments.",
-                    ],
-                    [
-                        "USPS Addresses API validates domestic address components before merchant matching.",
-                        "Use the Addresses API documented at https://developers.usps.com/ under current OAuth enrollment and applicable access terms.",
-                        "Validate changed addresses rather than whole portfolios; follow assigned quotas and confirm current production eligibility.",
-                        "Use Census standardization plus merchant evidence; postal deliverability does not establish business occupancy.",
-                    ],
-                    [
-                        "IRIS CRM coordinates boarding stages, merchant records, and residual audit exceptions.",
-                        "Use https://www.iriscrm.com/ and tenant-issued API documentation; subscription pricing and API entitlements depend on contract.",
-                        "Use supported events or scheduled exports; track delivery delay, paginate requests, and honor tenant-specific limits.",
-                        "Use permissioned CRM exports and processor statements when API access is unavailable or incomplete.",
-                    ],
-                    [
-                        "Fiserv ClientLine Enterprise provides authorized reporting for supported merchant relationships.",
-                        "Access ClientLine Enterprise through the assigned Fiserv reporting portal; reporting and export charges follow the processing agreement.",
-                        "Import each published reporting batch; statements can trail transactions, and automation requires explicitly supported access.",
-                        "Request processor-delivered CSV or SFTP reports; never scrape credentials through unsupported browser automation.",
-                    ],
-                    [
-                        "Verifi Rapid Dispute Resolution supplies eligible pre-dispute resolution outcomes.",
-                        "Enroll through https://www.verifi.com/ or the processor; event feeds and per-event costs require contracted documentation.",
-                        "Consume enabled events promptly; track event timestamps, deduplicate identifiers, and follow provider delivery limits.",
-                        "Use the processor dispute portal and manual rules; eligibility and refund economics must remain visible.",
-                    ],
-                    [
-                        "Ethoca Alerts delivers enrolled dispute signals for supported merchant accounts.",
-                        "Arrange access through https://www.ethoca.com/ or an authorized provider; pricing and integration rights are contract-specific.",
-                        "Process events against provider deadlines; queue retries and reconcile duplicates across every connected alert service.",
-                        "Use provider portal exports and processor escalation; overlapping alerts must not trigger duplicate refunds.",
-                    ],
-                    [
-                        "Hyosung MoniView supports contracted ATM fleet monitoring and service visibility.",
-                        "Request MoniView access through https://hyosungamericas.com/ and the servicing provider; monitoring charges depend on fleet arrangements.",
-                        "Set supported heartbeat intervals and inspect last-seen timestamps; poll only within the contracted telemetry capability.",
-                        "Use processor journals and authorized site checks; stale telemetry must not be treated as healthy equipment.",
-                    ],
-                    [
-                        "Twilio Lookup checks phone formatting and supported line intelligence before contact routing.",
-                        "Use GET https://lookups.twilio.com/v2/PhoneNumbers/{PhoneNumber}; requested intelligence packages follow current per-request pricing.",
-                        "Query only permitted fields for active records; cache within applicable terms and obey account throttling.",
-                        "Use the merchant-provided contact channel; a valid telephone number does not authorize promotional messaging.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Audit the small mismatches that compound across a merchant book",
-                "body": (
-                    "The strongest desk advantage is reliable contract-to-event matching, "
-                    "not an expensive enrichment stack with untraceable fields."
-                ),
-                "items": [
-                    "Version Schedule A by effective date and merchant cohort; retroactive rate edits otherwise erase the evidence behind residual claims.",
-                    "Join dispute feeds using provider event identifiers and transaction references before enabling any refund action across Verifi and Ethoca.",
-                    "Store ATM surcharge splits separately from vault balances; a refill changes cash custody, not earned surcharge revenue.",
-                    "For statement reviews, request a secure upload after the merchant replies; never collect statements or card data inside social-message threads.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Build a replayable pipeline that routes permissioned signals instead of spraying messages",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "A small desk can begin with Python's urllib.request for documented HTTP interfaces, "
-                    "csv for processor exports, sqlite3 for local reconciliation, and hashlib for file "
-                    "integrity checks. Keep production credentials in an approved secret store rather "
-                    "than spreadsheets, command history, or exported notebooks. Separate raw ingestion, "
-                    "normalized entities, contract versions, economic events, and work queues. Each event "
-                    "needs source_system, source_event_id, merchant_key, observed_at, effective_at, and "
-                    "ingestion_version; a unique constraint on the source identifier makes replays "
-                    "idempotent. Do not use a postal address as the merchant primary key because one "
-                    "premises can contain several businesses or successive operators. Normalize currency "
-                    "with integer minor units or decimal.Decimal, preserve original signs, and distinguish "
-                    "statement reversals from deleted records. A daily control compares source row count, "
-                    "accepted row count, quarantined row count, and amount totals. If 1,000 source rows "
-                    "produce 995 accepted and five quarantined rows, the ingestion balances only when "
-                    "those five records remain visible with reasons. Reject silent coercion of blank "
-                    "amounts to zero. Encrypt sensitive business records, restrict contractor access by "
-                    "task, and keep cardholder data out of the prospecting database entirely. Test "
-                    "restoration before relying on the backup."
-                ),
-                (
-                    "Run an enrichment waterfall from cheap, authoritative facts toward paid, conditional "
-                    "lookups. First deduplicate the public feed; then verify jurisdiction and premises; "
-                    "then confirm operating status; finally enrich only records that have a permitted "
-                    "contact purpose. Suppose 500 raw records reduce to 300 distinct premises, 120 "
-                    "active target businesses, and 30 requested follow-ups. At an illustrative $0.10 "
-                    "paid lookup cost, enriching all 500 costs $50 while enriching the final 30 costs "
-                    "$3, a $47 difference before research labor. This is a sensitivity example, not "
-                    "a quoted vendor tariff. Maintain field-level provenance so a Google listing cannot "
-                    "overwrite a legal entity name taken from a formation document. Rate-limit budgets "
-                    "belong to the connector, not to whichever worker happens to call it. Reserve "
-                    "capacity for onboarding and incident checks, use dead-letter queues for exhausted "
-                    "retries, and require an operator to resolve persistent schema changes. If an API "
-                    "fails, replay the last validated snapshot with a visible age label rather than "
-                    "presenting old data as current. A fallback source can support a narrower conclusion; "
-                    "it cannot inherit the authority of the unavailable original. Track match precision "
-                    "from reviewed samples before increasing acquisition spend."
-                ),
-                (
-                    "The mapped play high_velocity_dm_outbound_systems replaces blind mass-DM blasts with "
-                    "comment-to-DM triggers, hand-raiser reaction hooks, and multi-inbox warm signal routing. "
-                    "Use supported Meta messaging interfaces or an authorized messaging provider, and verify "
-                    "the exact platform's current event eligibility, messaging window, and app permissions. "
-                    "A reaction is only usable where the platform permits the resulting automation. "
-                    "Require a user-initiated comment, eligible reaction, or inbound message before automated "
-                    "dispatch; send external links only after the prospect replies. Route the event to "
-                    "the merchant's assigned inbox, not a rotating account pool. For example, 200 eligible "
-                    "hand-raisers with a 30% reply rate produce 60 conversations; a 25% statement-review "
-                    "acceptance rate produces 15 reviews; a 20% close rate produces three merchants. At "
-                    "an assumed $150 retained monthly contribution each, that cohort contributes $450 "
-                    "monthly before desk expenses and attrition. These conditional conversions do not "
-                    "increase the canonical scorecard automatically. PeerFloodError, platform throttling, "
-                    "or silent Message Request delivery failures require a stop and channel review, not "
-                    "proxy rotation or extra accounts. Fall back to the public thread or an inbound "
-                    "contact route. Store trigger evidence, reply time, suppression status, and the "
-                    "authorized next action with every conversation."
-                ),
-            ],
-            "table": {
-                "caption": "Six Pipeline Controls That Keep Evidence, Money, and Messaging Separate",
-                "headers": [
-                    "Control surface and concrete tool",
-                    "Required evidence or diagnostic calculation",
-                    "Failure condition and operator response",
-                    "Measured output and fallback procedure",
-                ],
-                "rows": [
-                    [
-                        "Python urllib.request connector wraps each documented HTTP source independently.",
-                        "Log request identifier, status, retry delay, retrieved timestamp, and permitted response metadata.",
-                        "Repeated authorization failures stop the connector; never rotate identities to defeat restrictions.",
-                        "Report successful batches and freshness age; use a documented manual export when permitted.",
-                    ],
-                    [
-                        "SQLite staging tables preserve raw identifiers and normalized merchant relationships.",
-                        "Enforce unique source-event keys and reconcile accepted plus quarantined rows against source counts.",
-                        "Ambiguous entity joins enter review rather than merging separate franchisees or ownership periods.",
-                        "Measure reviewed match precision and backlog age; retain raw records for corrected replay.",
-                    ],
-                    [
-                        "Python decimal.Decimal reconciles effective-dated fee schedules against processor statements.",
-                        "Compare expected retained amounts with paid residual lines using explicit rounding rules.",
-                        "Missing fee definitions block automated economic conclusions; request the relevant contractual schedule.",
-                        "Produce evidence-backed exception amounts and processor cases; separate estimates from recognized recoveries.",
-                    ],
-                    [
-                        "Meta-supported messaging events initiate assigned-inbox routing for eligible hand-raisers.",
-                        "Preserve trigger evidence, platform eligibility, reply timestamp, suppression status, and responsible operator.",
-                        "Missing trigger authority or expired messaging eligibility stops automated dispatch immediately.",
-                        "Measure replies and accepted reviews rather than sends; offer public-thread or inbound alternatives.",
-                    ],
-                    [
-                        "Provider webhook verification protects dispute and merchant-status event ingestion.",
-                        "Validate documented signatures, timestamps, replay protection, and event identifiers before queueing work.",
-                        "Invalid signatures or duplicate refund intents are quarantined without executing downstream actions.",
-                        "Reconcile event counts against provider reports; recover missed events through supported replay mechanisms.",
-                    ],
-                    [
-                        "Encrypted backups and redacted logs protect merchant operational evidence.",
-                        "Test restoration and inspect samples for exposed credentials, statements, or cardholder details.",
-                        "Excessive access or sensitive logging triggers containment and credential rotation where needed.",
-                        "Track restore success and least-privilege reviews; preserve only the evidence required for operations.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Register and authorize the source",
-                    "action": "Document the access route, permitted purpose, cost owner, and retrieval schedule.",
-                    "detail": "Obtain contractual credentials where required; test one permitted request before creating any scheduled connector.",
-                },
-                {
-                    "step": 2,
-                    "title": "Stage and reconcile the batch",
-                    "action": "Save raw evidence, hash the file, normalize identifiers, and compare control totals.",
-                    "detail": "Quarantine malformed records with reasons; preserve source timestamps and never silently discard economic events.",
-                },
-                {
-                    "step": 3,
-                    "title": "Resolve and route the evidence",
-                    "action": "Join merchant entities conservatively and create a named owner's next-action queue.",
-                    "detail": "Require documented trigger eligibility for automated messages and contracted account authority for operational API actions.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close the measurement loop",
-                    "action": "Reconcile completed actions to retained revenue, service outcomes, and documented exceptions.",
-                    "detail": "Report actual cohorts separately from forecasts; replay corrections without duplicating messages, refunds, or recognized amounts.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Instrument ATM cash, dispute exposure, and operator workload before scaling",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "ATM cash forecasting joins authorized electronic journals, dispense totals, cash "
-                    "loads, reversals, and telemetry timestamps without equating cassette cash with "
-                    "revenue. At 80 withdrawals daily and a $100 average withdrawal, expected daily "
-                    "dispense demand is $8,000. Three days between service visits plus one day of "
-                    "buffer imply $32,000 of usable cash capacity under that simplified assumption; "
-                    "check denomination mix, cassette limits, events, and actual demand dispersion "
-                    "before scheduling loads. If capacity is lower, shorten the replenishment interval "
-                    "rather than assuming the machine can hold the modeled amount. ATM uptime recovery "
-                    "is equally concrete: twelve hours offline at an average five withdrawals per hour "
-                    "means 60 potentially missed transactions. At a $3 surcharge and 50% retained share, "
-                    "the indicated retained opportunity is $90, not the $6,000 of hypothetical customer "
-                    "withdrawals. Demand may shift to another machine, so mark this as an estimate. "
-                    "Monitor heartbeat age, dispenser faults, communications status, receipt capability, "
-                    "and cash alerts through supported provider controls. When telemetry goes stale, "
-                    "compare processor transaction activity and request an authorized site check; never "
-                    "infer that silence means zero demand. Keep physical access, vault funding, and "
-                    "replenishment instructions limited to assigned personnel."
-                ),
-                (
-                    "The diagnostic stack should expose decisions rather than accumulate dashboards. "
-                    "Use IRIS residual exceptions for pricing drift, provider dispute portals for "
-                    "case deadlines, contracted ATM monitoring for service faults, and a simple "
-                    "cohort report for merchant attrition. Twelve lost merchants at $150 retained "
-                    "monthly contribution each remove $1,800 monthly run-rate revenue; a replacement "
-                    "cohort does not erase the loss unless acquisition cost and activation timing "
-                    "also reconcile. Card surcharge controls require separate treatment from ATM "
-                    "surcharges. Credit-card surcharge eligibility, network caps, notices, and state "
-                    "requirements must be checked against the actual merchant configuration; debit "
-                    "and prepaid exclusions under applicable network rules are not cured by selecting "
-                    "a credit button. Do not label an added checkout fee as dual pricing merely "
-                    "because the terminal offers a cash option. Regulation II, 12 CFR Part 235, "
-                    "addresses debit interchange and routing restrictions; it is not a universal "
-                    "authorization for merchant surcharge practices. For ATMs charging covered "
-                    "consumer fees, 12 CFR 1005.16 requires disclosure through the screen or paper "
-                    "before the consumer is committed, with the consumer electing to continue. "
-                    "Test the actual transaction flow, not only a photograph of cabinet signage."
-                ),
-                (
-                    "Scale only after the evidence queue fits the stated team. If the Base desk "
-                    "handles 300 monthly exceptions at six minutes each, triage consumes 30 hours "
-                    "before sales, servicing, and processor follow-up. Reducing the queue to 120 "
-                    "well-deduplicated exceptions saves 18 hours at the same handling time; measure "
-                    "that reduction before assigning more merchants to one operator. Four contractors "
-                    "in the Scaled case are distinct people, not unlimited pooled capacity. Define "
-                    "coverage windows for dispute deadlines, cash alerts, and failed onboarding jobs. "
-                    "The $8,000–$45,000 startup range funds a lean launch, but a vault-cash requirement "
-                    "must be separately identified and funded according to the actual ownership and "
-                    "servicing arrangement. FinCEN's ATM guidance distinguishes limited cash-access "
-                    "operations from additional services that can change the regulatory analysis; "
-                    "do not assume every ATM business has identical obligations. Complete the four "
-                    "pre-flight checks below before adding automated execution. A desk that cannot "
-                    "prove an event's origin, authority, retained economics, and fallback should "
-                    "leave that event in review. The objective is a compact operating system with "
-                    "recoverable failures, traceable decisions, and reconciled owner profit, not a "
-                    "larger collection of loosely connected vendor accounts."
-                ),
-            ],
-            "table": {
-                "caption": "Six Diagnostic Decisions for a Small ISO and ATM Operating Desk",
-                "headers": [
-                    "Diagnostic and accountable operating owner",
-                    "Unit calculation and required evidence",
-                    "Failure mode requiring immediate attention",
-                    "Recovery path and scorecard treatment",
-                ],
-                "rows": [
-                    [
-                        "ATM cash-demand forecast belongs to the assigned cash-service coordinator.",
-                        "Eighty daily withdrawals times $100 average dispense equals $8,000 expected daily cash demand.",
-                        "Forecast demand exceeds usable cassette capacity or the next authorized service window.",
-                        "Arrange approved replenishment or shorter intervals; cash loading never enters recognized revenue.",
-                    ],
-                    [
-                        "ATM outage prioritization belongs to the designated service dispatcher.",
-                        "Sixty potentially missed withdrawals times $3 surcharge times 50% retained share equals $90.",
-                        "Stale heartbeats, dispenser faults, or transaction cessation require corroboration rather than assumptions.",
-                        "Compare processor journals and request authorized site checks; report lost opportunity separately from realized revenue.",
-                    ],
-                    [
-                        "Residual variance review belongs to the named processor relationship operator.",
-                        "One hundred twenty merchants times $8 monthly shortage creates a $960 monthly exception.",
-                        "Effective-date errors, missing statements, or changed fee codes invalidate automated recovery claims.",
-                        "Submit versioned evidence to the processor; recognize recoveries only under the applicable accounting treatment.",
-                    ],
-                    [
-                        "Dispute intervention economics belong to the merchant-authorized dispute operations lead.",
-                        "Forty events times a $20 fee difference gives $800 before refunds and other effects.",
-                        "Duplicate alerts, ineligible transactions, or adverse refund economics can erase apparent benefits.",
-                        "Suspend affected automatic actions and review cases; never treat returned purchase principal as savings.",
-                    ],
-                    [
-                        "Warm-signal acquisition reporting belongs to the assigned merchant relationship inbox.",
-                        "Two hundred triggers times 30% replies times 25% reviews times 20% closes yields three merchants.",
-                        "Missing initiation evidence, delivery restrictions, or suppression requests stop automated messaging.",
-                        "Use permitted public replies or inbound channels; measure activated retained contribution instead of message volume.",
-                    ],
-                    [
-                        "Scenario reconciliation belongs to the owner reviewing monthly operating results.",
-                        "$445,000 recognized annual revenue less $255,875 modeled expenses equals $189,125 Base owner profit.",
-                        "Gross settlement imports, duplicated retained shares, or vault balances distort the scenario bridge.",
-                        "Separate custody balances and gross billing inputs; reconcile actual results without rewriting canonical assumptions.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before enabling automated execution",
-                "body": (
-                    "Each check requires retained evidence and a named operator. "
-                    "A failed check leaves the affected workflow in review while "
-                    "unaffected, authorized work continues."
-                ),
-                "items": [
-                    "Source authority: verify permitted access, account scope, credential ownership, current terms, and the documented fallback for every production connector.",
-                    "Money integrity: reconcile signed Schedule A, retained-share treatment, statement totals, reversals, and recognition timing without importing settlement volume as revenue.",
-                    "Execution authority: verify sponsor-approved MIDs, dispute-action permissions, eligible user-initiated messaging triggers, and a tested suppression mechanism.",
-                    "Service readiness: verify ATM fee-disclosure flow, supported monitoring, cash-service coverage, incident ownership, and recovery from a simulated stale-data event.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The edge is not knowing more names; it is proving which event deserves the next profitable, authorized action.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Register the sixteen named sources with access rights, current cost terms, retrieval cadence, freshness fields, and source-specific fallbacks.",
-        "Build one incremental municipal-license connector and manually validate entity matches before adding commercial enrichment.",
-        "Import an authorized processor statement and reconcile retained revenue against the effective Schedule A using exact decimal arithmetic.",
-        "Configure a user-initiated messaging pilot with trigger evidence, assigned inboxes, suppression checks, and links withheld until the prospect replies.",
-        "Test ATM stale-heartbeat handling, usable-cash forecasting, and the actual fee-disclosure transaction flow with the servicing provider.",
-        "Reconcile the monthly operating report to the three canonical annual scenarios while keeping merchant settlement volume and vault cash outside recognized revenue.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "12 CFR 1005.16 — Disclosures at automated teller machines",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1005/section-1005.16",
-            "relevance": (
-                "Defines covered ATM fee notice timing and the consumer's election "
-                "to continue after on-screen or paper disclosure."
-            ),
-        },
-        {
-            "title": "12 CFR Part 235 — Debit Card Interchange Fees and Routing",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-II/subchapter-A/part-235",
-            "relevance": (
-                "Provides debit interchange and routing requirements; operators must "
-                "separate these rules from card-network surcharge permissions."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 1693o-2 — Reasonable fees and rules for payment card transactions",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1693o-2",
-            "relevance": (
-                "Supplies the statutory framework for debit interchange, routing, "
-                "and specified merchant payment-card practices."
-            ),
-        },
-        {
-            "title": "31 CFR 1010.100(ff) — Money services business definitions",
-            "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/section-1010.100",
-            "relevance": (
-                "Requires examining the actual services performed rather than "
-                "assuming that every ATM operating model has the same classification."
-            ),
-        },
-        {
-            "title": "New York General Business Law Section 518 — Credit card surcharge",
-            "url": "https://www.nysenate.gov/legislation/laws/GBS/518",
-            "relevance": (
-                "Requires New York-specific review of surcharge amounts and total "
-                "price display before configuring merchant checkout pricing."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Applies to commercial email when an acquisition workflow uses "
-                "that channel; social-message permissions remain platform-specific."
-            ),
-        },
-    ],
-}
+CHAPTER_8 = {'id': 'Q8',
+ 'chapter_id': 'Q8',
+ 'chapter_number': 8,
+ 'question_number': 8,
+ 'slug': 'becoming-an-iso-registration-partner-programs-scaling',
+ 'question_prompt': 'How do you move from agent to your own ISO or payment company, and how do you board '
+                    'and scale merchants?',
+ 'kicker': 'Q8 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Becoming an ISO: Registration, Partner Programs, and Scaling',
+ 'subtitle': 'Becoming your own ISO; wholesale vs. retail ISO registration for vertical SaaS; agent and '
+             "ISO programs (Shaw Merchant Group, North American Bancard); a CPA's 2026 processor guide; "
+             'the economics of owning a processor; branding; boarding merchants on the Valor portal; niche '
+             'blue-ocean verticals; and closing 100+ MIDs a month',
+ 'layout_template': 'legal_compliance_callout',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators across the ISO ladder agree the fastest entry is not Visa/Mastercard '
+                      'registration but a 1099 agent or LLC-held agreement under a larger ISO or super '
+                      'ISO, then scaling through branded back-office programs. CCSalesPro prices a '
+                      'registered brand at six months and $30,000-$40,000 with no sales lift; Shaw '
+                      'Merchant Group and North American Bancard pitch per-authorization buy costs of 1.5 '
+                      'and 1.2 cents at zero basis points plus up-front bonuses up to $10,000 per '
+                      "merchant. Finance Blueprint's model shows a $100 sale yields a $2.61 merchant fee "
+                      'but only 32 cents retained before residuals, support and risk. The sharpest split: '
+                      'James Shepherd says outsource support and underwriting to a branded FSP, while '
+                      'Merchant Service Slayers insists any shop scaling past 100 MIDs a month must own '
+                      'tech, customer service and underwriting in-house.',
+ 'key_metrics': [{'label': 'Cost and Time to Become a Registered ISO',
+                  'metric': 'Cost and Time to Become a Registered ISO',
+                  'value': 'About 6 months and $30,000-$40,000',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "CCSalesPro's price tag for getting a registered brand with Visa and "
+                             'Mastercard, which they say will not produce many more sales than selling as '
+                             'an agent.',
+                  'source': 'CCSalesPro ([KFKUpD0sDxk @ 00:04:55])'},
+                 {'label': 'Partner Program Buy Cost per Authorization',
+                  'metric': 'Partner Program Buy Cost per Authorization',
+                  'value': '1.2 cents per authorization at 0 basis points (North American Bancard); 1.5 '
+                           'cents at Shaw Merchant Group',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Advertised agent cost structure, paired with up to $10,000 upfront bonuses '
+                             'per merchant and a $2,000 fast start bonus.',
+                  'source': 'Scott Shaw ([tjdQFiCG9xo @ 00:00:18])'},
+                 {'label': 'Retained Margin on a $100 Card Sale',
+                  'metric': 'Retained Margin on a $100 Card Sale',
+                  'value': '32 cents retained of a $2.61 merchant fee; about 22.4 cents after a 30% agent '
+                           'residual',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Finance Blueprint's illustrative fee waterfall for an independent merchant "
+                             'services provider, before support and risk costs.',
+                  'source': 'Finance Blueprint ([_wQk1Avcku8 @ 00:06:22])'},
+                 {'label': 'Telemarketing Appointment Close Rate',
+                  'metric': 'Telemarketing Appointment Close Rate',
+                  'value': '5-10% for new agents; 20-30% for an experienced closer',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Close rate on call-center-booked appointments in the Go Free Payments sales '
+                             'operation.',
+                  'source': 'Merchant Service Slayers ([pHeumyF-Dw4 @ 00:02:06])'}],
+ 'sections': [{'id': 1,
+               'title': 'The Practitioner Consensus',
+               'paragraphs': ['CCSalesPro lays out the ladder from the top: acquiring banks such as First '
+                              'Data sit at the summit, super ISOs below them run large agent and sub-ISO '
+                              'armies while handling their own customer service, tech support and often '
+                              'risk, then plain ISOs, then the merchant level salesperson working '
+                              'individually [KFKUpD0sDxk @ 00:00:53]. Their core point is that this '
+                              'industry carries very little regulation or certification gating who can '
+                              'build a team, so the only move required to break off from a boss is to '
+                              'break off and sign as a 1099 independent contractor with a larger ISO or '
+                              'super ISO, ideally contracting through your own LLC or corporation so the '
+                              'entity is the agent of record [KFKUpD0sDxk @ 00:02:25]. County Portal '
+                              'reaches the same conclusion from the other direction: of the two models, '
+                              'ISO versus payment facilitator, the ISO route fits 99% of people starting '
+                              'out, because a payfac like Stripe or Square requires millions in startup '
+                              'capital and huge financial risk and compliance burdens, while an ISO simply '
+                              'resells for an established processor, finds and signs merchants, and earns '
+                              'residuals on every transaction [QZSSbXV33jg @ 00:00:33]. Finance Blueprint '
+                              'frames the same independent merchant services model as a distribution and '
+                              'service business bolted onto sponsor-bank and processor rails rather than a '
+                              'bank, network, or switch [_wQk1Avcku8 @ 00:02:15].',
+                              'CCSalesPro defines a registered ISO bluntly: Visa and Mastercard run a deep '
+                              'dive into your financials and criminal background and issue a registered '
+                              'brand, and the only thing that brand buys you is the right to call yourself '
+                              'a credit card processing company. Unregistered, your LLC can still sell for '
+                              "First Data or anyone else, but the website and business cards must read 'LA "
+                              "Business Solutions, an agent of XYZ Processing,' and the merchant agreement "
+                              "carries the processor's logo, not yours [KFKUpD0sDxk @ 00:04:10]. County "
+                              'Portal sequences it the same way: form the LLC, pull an EIN, open a '
+                              'dedicated business account, apply to a processor such as Fiserv, TSYS or '
+                              'Worldpay, survive their vetting, and then the processor helps register you '
+                              'with Visa and Mastercard [QZSSbXV33jg @ 00:01:42]. nexio lays out the '
+                              'formal checklist software companies face: pick a processor on technology, '
+                              'pricing and support, file an ISO application backed by financial '
+                              'statements, marketing materials and business plans, pass background and '
+                              'credit checks on the company and its principals, then sign the ISO '
+                              'agreement [wCnscoBFCKc @ 00:03:25]. On the retail ISO track, that contract '
+                              'is signed with both the processor and the sponsor bank, and setup and '
+                              'registration fees run from a few thousand to tens of thousands of dollars '
+                              '[JCe-IWhyJIk @ 00:04:51].',
+                              'The third point of agreement is that service, not payout, keeps the '
+                              'residual alive. CCSalesPro warns that agents chasing maximum compensation '
+                              'forget that a company with weak support and thin equipment options leaves '
+                              'you putting out fires all day instead of selling, so the right partner '
+                              'balances strong comp with someone servicing your accounts in the background '
+                              '[KFKUpD0sDxk @ 00:05:50]. County Portal puts it in street terms: when a '
+                              "client's terminal goes down on a busy Friday night, you are the person they "
+                              'will call, and fast, reliable support is how you keep merchants for the '
+                              'long haul [QZSSbXV33jg @ 00:02:30]. Jonathan Rich of The Digital Merchant '
+                              "screens every processor through the same lens: if a merchant's terminal is "
+                              'dead, the ISO eats the complaint, so uptime and tech that actually works '
+                              'sit alongside buy rate, residual portability and underwriting flexibility '
+                              'as the four things that matter [kpo2g7o_Ylg @ 00:02:46]. Finance Blueprint '
+                              'closes the loop on the money: a merchant must stay active and keep '
+                              'processing, and if the merchant leaves, the residual leaves too, which is '
+                              'why the merchant portfolio is the asset and maintaining it is the work '
+                              '[_wQk1Avcku8 @ 00:08:09].'],
+               'table': {'caption': 'Where practitioners line up on entering and building an ISO',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Say',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Entry route runs through an existing ISO first',
+                                   'Break off by signing as a 1099 contractor under a larger ISO or super '
+                                   'ISO',
+                                   'Contract through your own LLC or corporation so the entity is the '
+                                   'agent',
+                                   'CCSalesPro ([KFKUpD0sDxk @ 00:02:25])'],
+                                  ['ISO beats payfac for nearly every new operator',
+                                   'Payfacs like Stripe or Square need millions in capital and carry huge '
+                                   'risk',
+                                   'ISO route fits 99% of starters as a lower risk reseller entry point',
+                                   'County Portal ([QZSSbXV33jg @ 00:00:33])'],
+                                  ['Registration is a Visa and Mastercard deep dive',
+                                   'Card brands review financials and criminal background before issuing a '
+                                   'registered brand',
+                                   'Unregistered sellers must present as an agent of the processing '
+                                   'company on cards and websites',
+                                   'CCSalesPro ([KFKUpD0sDxk @ 00:03:54])'],
+                                  ['Processor vetting precedes any partnership or registration step',
+                                   'ISO application needs financial statements, marketing materials, '
+                                   'business plans, plus background and credit checks',
+                                   'Approval ends with a signed ISO agreement outlining partnership terms '
+                                   'and conditions',
+                                   'nexio ([wCnscoBFCKc @ 00:03:25])'],
+                                  ['Support quality matters as much as compensation does',
+                                   'Weak support and thin equipment options leave agents putting out fires '
+                                   'instead of selling',
+                                   'Pick a partner that pays well and also services your accounts',
+                                   'CCSalesPro ([KFKUpD0sDxk @ 00:05:50])'],
+                                  ['The ISO takes the call when terminals fail',
+                                   'A dead terminal sends merchant complaints straight to the ISO, not the '
+                                   'processor',
+                                   'Uptime and working tech are core processor selection criteria for ISOs',
+                                   'The Digital Merchant ([kpo2g7o_Ylg @ 00:02:46])'],
+                                  ['The merchant portfolio is the real business asset',
+                                   'If the merchant leaves, the residual leaves too; maintaining accounts '
+                                   'is the work',
+                                   'Retention is treated as part of the product, not a side activity',
+                                   'Finance Blueprint ([_wQk1Avcku8 @ 00:08:09])']]}},
+              {'id': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The partner-program numbers are concrete. Shaw Merchant Group advertises a '
+                              'cost structure as low as one and a half cents per authorization at zero '
+                              'basis points, customized lifetime residuals you set merchant by merchant, a '
+                              '$20,000 fast start bonus, up to $10,000 in upfront bonuses per merchant, '
+                              'and free PCI-compliant equipment that arrives pre-loaded [dvdrcApxBHo @ '
+                              '00:00:23]. The North American Bancard version of the same pitch quotes 1.2 '
+                              'cents per authorization at zero basis points but a $2,000 fast start bonus, '
+                              'with the same up-to-$10,000 per-merchant upfront ceiling [tjdQFiCG9xo @ '
+                              "00:00:35]. For operators ready to fly their own flag, Shaw's registered DBA "
+                              'program brands applications, statements, tools and the online application '
+                              'to your ISO, hands you a branded sub-agent portal with deal tracking and '
+                              'compensation reporting, lets you pick upfront bonuses or free equipment, '
+                              'lets you choose how much liability you participate in, and even masks its '
+                              'call centers under your name [wOJ4s_5GRDY @ 00:01:40]. James Shepherd of '
+                              'CCSalesPro describes the Maverick Payments version: statement, application, '
+                              'dashboard and support all branded, sometimes without registering the brand, '
+                              'and paid for out of a piece of the residual rather than per-seat or '
+                              'per-agent software fees [-sMJDgFoiSM @ 00:02:26].',
+                              'Finance Blueprint walks a hypothetical $100 card sale through the '
+                              'waterfall: interchange modeled at 1.8% plus 10 cents ($1.90), network '
+                              'assessment 0.13% (13 cents), processor and acquiring cost 0.08% plus 5 '
+                              'cents (13 cents), and the ISO markup 0.35% plus 10 cents (45 cents), for a '
+                              '$2.61 merchant charge [_wQk1Avcku8 @ 00:05:46]. Strip the 13 cents of '
+                              'processor cost and the shop keeps 32 cents; pay a 30% agent residual and '
+                              'another 9.6 cents walks out the door, leaving about 22.4 cents before '
+                              'support and risk [_wQk1Avcku8 @ 00:06:22]. The same model layers a $25 '
+                              'monthly platform fee per active merchant, $750 of direct acquisition spend '
+                              'per new active merchant, $8 per merchant per month for variable support, a '
+                              '1.5 basis point fraud and unrecovered chargeback allowance, and 1.2% '
+                              'monthly churn, roughly 13.5% a year [_wQk1Avcku8 @ 00:12:01]. Natalie at '
+                              'DepositFix attacks the same thin-margin problem by pushing agents upmarket: '
+                              'a pizza shop doing $50,000 a month throws off maybe $50 in residuals, while '
+                              'one B2B introduction processing $2 million a month through invoices can pay '
+                              'over $2,000 a month, and 90% of agents ignore that segment [4idRDNmCnvE @ '
+                              '00:00:16].',
+                              'Scaling to volume is a machine, and Craig of Merchant Service Slayers lays '
+                              'out the build for an ISO closing over 100 MIDs a month, using the Go Free '
+                              'Payments operation as the template. A call center books telemarketing '
+                              'appointments that close at five to ten percent for new agents, while a '
+                              'seasoned closer who can get around the through-the-door objections lands 20 '
+                              'to 30 percent; online funnels close higher but cost more [pHeumyF-Dw4 @ '
+                              '00:02:06]. New agents grind a five-hour training course, then a one-hour '
+                              "'hot seat' role-play on script, product knowledge and the sales process, "
+                              "then a daily 8 a.m. Central training call and a Wednesday 4 p.m. 'Residual "
+                              "Warehouse' Q&A that runs 90 minutes to two hours [pHeumyF-Dw4 @ 00:03:20]. "
+                              'An inside sales team recycles leads that never closed six months or a year '
+                              'ago with a current promo, while outside reps run booked appointments face '
+                              "to face [pHeumyF-Dw4 @ 00:05:29]. On the boarding side, Valor PayTech's "
+                              'portal offers quick board for one store and one device or full board for '
+                              'multiple stores and devices; you enter the MCC, device type, processing '
+                              'platform and VAR details, choose surcharge or cash discount (the demo sets '
+                              'a custom 4% fee), and a serial number triggers auto-boarding of the '
+                              'merchant profile [MVL80SKYNYs @ 00:01:44].'],
+               'table': {'caption': 'Street-level numbers, settings and levers quoted by operators',
+                         'headers': ['Lever',
+                                     'Exact Number or Setting',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Per-authorization buy cost at Shaw Merchant Group',
+                                   'As low as 1.5 cents per authorization, zero basis points',
+                                   'Pricing flexibility to attract merchants while earning maximum returns',
+                                   'Scott Shaw ([dvdrcApxBHo @ 00:00:23])'],
+                                  ['North American Bancard agent program buy cost',
+                                   'As low as 1.2 cents per authorization, $2,000 fast start',
+                                   'Up to $10,000 upfront bonuses per merchant plus free equipment',
+                                   'Scott Shaw ([tjdQFiCG9xo @ 00:00:35])'],
+                                  ['Registered brand with Visa and Mastercard',
+                                   'About six months and $30,000 to $40,000 out of pocket',
+                                   'Skip it; registration alone will not drive many more sales',
+                                   'CCSalesPro ([KFKUpD0sDxk @ 00:04:55])'],
+                                  ['Merchant fee waterfall on a $100 sale',
+                                   '$2.61 charged to merchant; 45-cent markup; 32 cents retained',
+                                   'After a 30% agent residual, about 22.4 cents remains before support '
+                                   'and risk',
+                                   'Finance Blueprint ([_wQk1Avcku8 @ 00:06:22])'],
+                                  ['Telemarketing appointment close rates by agent experience',
+                                   '5-10% for new agents, 20-30% for experienced closers',
+                                   'Feed reps booked appointments so they do not prospect alone and stall',
+                                   'Merchant Service Slayers ([pHeumyF-Dw4 @ 00:02:06])'],
+                                  ['Small merchant versus B2B invoice merchant residual',
+                                   '$50,000 monthly pizza shop about $50; $2 million monthly B2B over '
+                                   '$2,000',
+                                   'Spot B2B targets that use a CRM, send invoices, or run Stripe',
+                                   'DepositFix ([4idRDNmCnvE @ 00:00:16])'],
+                                  ['Valor Portal surcharge or cash discount configuration',
+                                   'Flat fee or custom fee selection, demo uses 4%',
+                                   'Confirm registered surcharge merchant, then auto-board the device by '
+                                   'serial number',
+                                   'Valor PayTech ([MVL80SKYNYs @ 00:01:44])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Insider Pro-Tips from the Desk',
+                           'body': 'Small structural choices that change what an ISO owns, earns, and '
+                                   'carries.',
+                           'items': ["Sign the agent agreement in your LLC or corporation's name from day "
+                                     'one so the entity, not you personally, is the agent [CCSalesPro — '
+                                     'KFKUpD0sDxk @ 00:02:25].',
+                                     'Ask partners whether branded statements, applications, dashboards '
+                                     'and support come bundled into the residual split instead of per-seat '
+                                     'or per-agent fees [CCSalesPro — -sMJDgFoiSM @ 00:02:26].',
+                                     "Under Shaw's registered DBA program you can take bonuses up front or "
+                                     'free equipment and dial how much liability you participate in [Scott '
+                                     'Shaw — wOJ4s_5GRDY @ 00:01:40].',
+                                     'Qualify B2B prospects on three tells: they use a CRM, they send '
+                                     'invoices, or they run complex payment workflows or Stripe '
+                                     '[DepositFix — 4idRDNmCnvE @ 00:01:05].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Stand Up the Entity',
+                              'action': 'Form an LLC or corporation, get an EIN, and open a dedicated '
+                                        'business bank account before signing any agent agreement.',
+                              'detail': 'County Portal calls the LLC, EIN and separate business account '
+                                        'non-negotiable for professionalism and liability protection, and '
+                                        'CCSalesPro has the entity sign as the agent with the ISO or super '
+                                        'ISO [County Portal — QZSSbXV33jg @ 00:01:09].'},
+                             {'step': 2,
+                              'title': 'Screen the Processor Partner',
+                              'action': 'Compare buy rate, residual ownership and portability, '
+                                        'underwriting flexibility, and uptime before committing.',
+                              'detail': 'Jonathan Rich warns an ISO cannot sell if the processor rejects '
+                                        '40% of submitted applications, and that thin buy-rate margins '
+                                        'kill competitiveness [The Digital Merchant — kpo2g7o_Ylg @ '
+                                        '00:02:29].'},
+                             {'step': 3,
+                              'title': 'Board Merchants Through the Portal',
+                              'action': 'Use quick board for one store and one device or full board for '
+                                        'multi-store, multi-device merchants, then auto-board by serial '
+                                        'number.',
+                              'detail': "In Valor's Merchant Management, enter DBA, unique username, MCC, "
+                                        'device type, processing platform and VAR details, set surcharge '
+                                        'or cash discount, then assign user modules and submit [Valor '
+                                        'PayTech — MVL80SKYNYs @ 00:00:19].'},
+                             {'step': 4,
+                              'title': 'Build the Sales Engine',
+                              'action': 'Supply lead generation, run a structured training ladder, and '
+                                        'split inside and outside sales.',
+                              'detail': "Craig's model pairs call-center-booked appointments with a "
+                                        'five-hour course, a one-hour hot seat, a daily 8 a.m. Central '
+                                        'call and a weekly Residual Warehouse Q&A [Merchant Service '
+                                        'Slayers — pHeumyF-Dw4 @ 00:03:20].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether a registered brand is worth paying for. '
+                              "CCSalesPro's veteran tells a rep breaking away from an uncle's shop that a "
+                              'registered ISO only means Visa and Mastercard ran a deep dive into your '
+                              'financials and criminal background, and that the brand costs roughly six '
+                              'months and thirty to forty thousand dollars with no sales lift, so the play '
+                              'is a 1099 agent deal written to your own LLC [KFKUpD0sDxk @ 00:04:55]. '
+                              'County Portal frames the same step as mandatory: once the processor '
+                              'partnership is secured, the processor helps you register with Visa and '
+                              'Mastercard, which it calls the step that legitimizes the business '
+                              "[QZSSbXV33jg @ 00:01:57]. The middle road is rented branding. Scott Shaw's "
+                              'registered DBA program brands applications, statements, tools and '
+                              'instructions to your ISO, plus a custom online application and a branded '
+                              'sub-agent portal [wOJ4s_5GRDY @ 00:00:42]. James Shepherd of CCSalesPro '
+                              'pushes the same logic through Maverick Payments, where your logo lands on '
+                              'statements, applications, dashboards and support, sometimes without '
+                              'registering the brand at all, paid for out of the residual split instead of '
+                              'per-seat software fees [-sMJDgFoiSM @ 00:01:57]. The operator decision is '
+                              'whether your logo on the merchant agreement actually closes more deals than '
+                              'thirty to forty grand left in working capital.',
+                              "Back-office ownership is the second fault line. Shepherd's first ISO, built "
+                              'twelve to thirteen years ago, ended up carrying thirty or forty full-time '
+                              'employees doing support and underwriting, and Shepherd now tells new '
+                              "builders they really don't want to repeat that; pour every hour into "
+                              'selling merchants and outsource everything else [-sMJDgFoiSM @ 00:01:28]. '
+                              'Craig of Merchant Service Slayers runs the opposite playbook for any shop '
+                              'scaling past 100 MIDs a month: stand up an in-house tech team, an in-house '
+                              'customer service team and your own underwriting, and never treat someone '
+                              "else's support as the end-all be-all, or you inherit a ton of issues "
+                              "[pHeumyF-Dw4 @ 00:04:45]. Shaw's registered DBA offer splits the "
+                              'difference, selling everything from customer service and technical support '
+                              'to deployment, underwriting and risk, a la carte or as a full stack, and '
+                              'even masking its call centers under your brand [wOJ4s_5GRDY @ 00:02:20]. '
+                              "The Finance Blueprint model prices Craig's route: loaded payroll covering "
+                              'onboarding, support, account management, engineering, underwriting, risk '
+                              'and compliance staff climbs from $1.35 million in year one to $5.8 million '
+                              "in year five [_wQk1Avcku8 @ 00:12:28]. Shepherd's own filter is blunt: if "
+                              'you are not ready to take on operational responsibility, this is not the '
+                              'right time to build, and staying an agent is a fine answer.',
+                              'Compensation structure and processor fit split the field as well. Shaw '
+                              "Merchant Group's agent pitch advertises a twenty thousand dollar fast start "
+                              'bonus, up to ten thousand dollars in upfront bonuses per merchant and a '
+                              'cost structure as low as one and a half cents per authorization at zero '
+                              'basis points [dvdrcApxBHo @ 00:01:01]. The near-identical North American '
+                              'Bancard script quotes a $2,000 fast start bonus and 1.2 cents per '
+                              'authorization, so verify the actual number on paper before you build a '
+                              'hiring plan around a bonus [tjdQFiCG9xo @ 00:00:35]. Jonathan Rich of The '
+                              'Digital Merchant rates North American Bancard as a volume play built on '
+                              'free terminals and aggressive upfront bonuses, yet warns that agents become '
+                              'a small fish in a big pond whose support is hit or miss unless they push '
+                              'massive volume, and leans toward Lucra for meet-or-beat rates and appetite '
+                              'for riskier deals [kpo2g7o_Ylg @ 00:06:26]. CCSalesPro refuses to rank on '
+                              'payout alone: chase maximum compensation at a company with weak support and '
+                              'few equipment options and you burn your days putting out fires with '
+                              'merchants instead of closing new ones, so the real target is strong comp '
+                              'paired with a shop that services the accounts in the background '
+                              '[KFKUpD0sDxk @ 00:05:50].'],
+               'table': {'caption': 'Competing ISO-building playbooks reported by practitioners',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Whether to pay for a registered Visa and Mastercard brand',
+                                   'Skip registration; six months and thirty to forty thousand dollars '
+                                   'buys no extra sales',
+                                   'Register through your processor partner because that step legitimizes '
+                                   'the business',
+                                   'CCSalesPro ([KFKUpD0sDxk @ 00:04:55]); County Portal ([QZSSbXV33jg @ '
+                                   '00:01:57])'],
+                                  ['How to get your own logo in front of merchants',
+                                   'Rent a registered DBA program branding applications, statements, tools '
+                                   'and the sub-agent portal',
+                                   'Use Maverick Payments branded statements, dashboard and support funded '
+                                   'from the residual share',
+                                   'Scott Shaw ([wOJ4s_5GRDY @ 00:00:42]); CCSalesPro ([-sMJDgFoiSM @ '
+                                   '00:01:57])'],
+                                  ['Who runs support, tech and underwriting as the shop grows',
+                                   'Outsource the back office and focus every hour on selling merchants',
+                                   'Build in-house tech, customer service and underwriting before scaling '
+                                   'past 100 MIDs monthly',
+                                   'CCSalesPro ([-sMJDgFoiSM @ 00:01:28]); Merchant Service Slayers '
+                                   '([pHeumyF-Dw4 @ 00:04:45])'],
+                                  ['How much upfront cash the agent program actually pays',
+                                   'Shaw pitch: $20,000 fast start, up to $10,000 per merchant, 1.5 cents '
+                                   'per authorization',
+                                   'North American Bancard pitch: $2,000 fast start, up to $10,000 per '
+                                   'merchant, 1.2 cents per authorization',
+                                   'Scott Shaw ([dvdrcApxBHo @ 00:01:01]); Scott Shaw ([tjdQFiCG9xo @ '
+                                   '00:00:35])'],
+                                  ['Agile newer processor versus enterprise titan for deal flow',
+                                   'Lucra for modern tech, meet-or-beat rates and riskier deals despite '
+                                   'being newer',
+                                   'Global Payments for national enterprise deals, though custom approvals '
+                                   'take weeks of meetings',
+                                   'The Digital Merchant ([kpo2g7o_Ylg @ 00:03:15]); The Digital Merchant '
+                                   '([kpo2g7o_Ylg @ 00:10:53])'],
+                                  ['Which merchant segment the sales team should chase first',
+                                   'Small restaurants, salons and retail: a crowded red ocean paying about '
+                                   '$50 per pizza shop',
+                                   'B2B invoicing merchants running CRMs, where one introduction can pay '
+                                   'over $2,000 monthly',
+                                   'DepositFix ([4idRDNmCnvE @ 00:00:16]); DepositFix ([4idRDNmCnvE @ '
+                                   '00:01:05])'],
+                                  ['Reseller ISO model versus becoming a payment facilitator',
+                                   'ISO reseller route is the lower-risk entry point for 99% of new '
+                                   'operators',
+                                   'PayFac route like Stripe or Square needs millions in capital and '
+                                   'carries heavier loss exposure',
+                                   'County Portal ([QZSSbXV33jg @ 00:00:33]); Finance Blueprint '
+                                   '([_wQk1Avcku8 @ 00:03:46])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["The hardest economics check comes from Finance Blueprint's ISO model. On a "
+                              "$100 card sale the merchant pays $2.61 and the company's markup is 45 "
+                              'cents, but after 13 cents of processor and acquiring cost only 32 cents is '
+                              'retained; hand a 30% residual to the agent and roughly 22.4 cents is left '
+                              'before support and risk costs [_wQk1Avcku8 @ 00:06:22]. Scale does not '
+                              'rescue that margin quickly. Operating losses run through year four and push '
+                              'peak modeled cash use to about $15.86 million, including the original '
+                              'investment, against a launch budget of only $4 million [_wQk1Avcku8 @ '
+                              '00:21:07]. Year five finally handles nearly $5.6 billion in payments and '
+                              'bills nearly $150 million in gross card fees, yet recognizes only about '
+                              '$20.7 million in net revenue and produces about $1.63 million in EBITDA; '
+                              'the layers between those numbers are the business [_wQk1Avcku8 @ 00:19:46]. '
+                              "nexio's wholesale breakdown lands on the same economics gate from the "
+                              'software side: registration only pays once processing revenue exceeds '
+                              'application, legal, underwriting, PCI and integration costs, which usually '
+                              'means a large established client base already generating significant '
+                              'transaction volume [wCnscoBFCKc @ 00:05:12]. Run your own merchant book '
+                              'through those same layers before walking away from a working agent deal.',
+                              'Retention is where portfolios quietly bleed. Finance Blueprint models 1.2% '
+                              'monthly merchant churn, roughly 13.5% a year, and lists the triggers: a '
+                              'restaurant switching after a terminal outage during a busy shift, a '
+                              'retailer leaving over a confusing statement, an online merchant moving '
+                              'after a gateway integration fails [_wQk1Avcku8 @ 00:14:51]. County Portal '
+                              "puts the same trap in street terms: when a client's terminal goes down on a "
+                              'busy Friday night, you are the person they call, and fast support is how '
+                              'you keep merchants for the long haul [QZSSbXV33jg @ 00:02:30]. Shepherd '
+                              'learned the outsourcing version of that pain firsthand, because anything '
+                              'sent to the upstream full service provider came back unbranded, so '
+                              "merchants calling customer service heard another company's name and asked "
+                              'why underwriting ran through someone else [-sMJDgFoiSM @ 00:00:58]. Sponsor '
+                              'dependency sits underneath all of it. Finance Blueprint flags it as one of '
+                              'the largest risks: the bank or acquiring partner can change requirements, '
+                              'pricing, reserve demands or risk appetite, and if the relationship ends, '
+                              'moving merchants elsewhere may be difficult and is never assured '
+                              '[_wQk1Avcku8 @ 00:22:14]. Every merchant that walks takes its residual with '
+                              'it, so service capacity has to be budgeted before growth, not after.',
+                              'On the sales floor, the traps come down to pipeline and people. Craig of '
+                              'Merchant Service Slayers says telemarketing-booked appointments close only '
+                              'five to ten percent for a new rep against twenty to thirty percent for a '
+                              'seasoned closer who can get around the through-the-door objections, and '
+                              'that online funnel leads close higher but cost more, so the lead promises '
+                              'you make to recruits have to stay brutally real [pHeumyF-Dw4 @ 00:02:06]. '
+                              'Training is the next leak: Craig warns against teaching new hires a pile of '
+                              'elaborate [expletive] they cannot retain before the basics stick, comparing '
+                              'it to dragging a newborn on a ten mile hike, and recommends building reps '
+                              'from crawl to walk to run [pHeumyF-Dw4 @ 00:04:03]. Rich flags the boarding '
+                              'wall: an ISO simply cannot sell if the processor rejects 40% of the '
+                              'applications it submits as high risk or niche, which is why underwriting '
+                              'flexibility and multiple bank relationships sit on the scorecard '
+                              '[kpo2g7o_Ylg @ 00:02:29]. Natalie of DepositFix names the rate-war trap: '
+                              'agents piled onto restaurants, salons and retail shops compete on rates '
+                              'until a pizza shop processing $50,000 a month pays maybe 50 bucks in '
+                              "residuals [4idRDNmCnvE @ 00:00:16]. Natalie's counter is to hunt B2B "
+                              'invoicing merchants instead.'],
+               'table': {'caption': 'Firsthand ISO failure modes and the fixes practitioners teach',
+                         'headers': ['Failure Mode',
+                                     'What Happened or Was Measured',
+                                     'Operator Fix Taught',
+                                     'Expert Source'],
+                         'rows': [['Unbranded outsourcing confuses merchants about who you are',
+                                   "Merchants calling support heard the upstream provider's name instead "
+                                   'of your brand',
+                                   'Use a fully branded outsourced program instead of hiring thirty to '
+                                   'forty staff',
+                                   'CCSalesPro ([-sMJDgFoiSM @ 00:00:58]); CCSalesPro ([-sMJDgFoiSM @ '
+                                   '00:01:57])'],
+                                  ['Chasing maximum compensation at a weak support shop',
+                                   'Thin support and few equipment options leave you putting out fires all '
+                                   'day',
+                                   'Balance compensation against a processor that services accounts in the '
+                                   'background',
+                                   'CCSalesPro ([KFKUpD0sDxk @ 00:05:50])'],
+                                  ['Processor underwriting rejects too many submitted applications',
+                                   'A processor rejecting 40% of applications as high risk or niche kills '
+                                   'selling',
+                                   'Pick processors with underwriting flexibility and multiple bank '
+                                   'relationships behind them',
+                                   'The Digital Merchant ([kpo2g7o_Ylg @ 00:02:29])'],
+                                  ['Square freezes merchant funds with no agent recourse',
+                                   'Square can and will freeze funds, and the signing agent can do nothing',
+                                   'Keep Square to referral-only small shops where you accept having no '
+                                   'control',
+                                   'The Digital Merchant ([kpo2g7o_Ylg @ 00:12:47]); The Digital Merchant '
+                                   '([kpo2g7o_Ylg @ 00:11:28])'],
+                                  ['Merchant churn quietly erodes the residual portfolio',
+                                   '1.2% monthly churn compounds to roughly 13.5% a year of replacement '
+                                   'selling',
+                                   'Fix outages, confusing statements and failed gateway integrations '
+                                   'before they trigger exits',
+                                   'Finance Blueprint ([_wQk1Avcku8 @ 00:14:51])'],
+                                  ['Running a me-too ISO with no differentiation',
+                                   'Hundreds of processors exist; clones throw bodies at the wall and burn '
+                                   'reps out',
+                                   'Define a rallying flag that makes the organization different and '
+                                   'special to recruits',
+                                   'Merchant Service Slayers ([pHeumyF-Dw4 @ 00:06:06])'],
+                                  ['Unreadable residual reports at giant processors',
+                                   'North American Bancard residual reports read like a tax return with '
+                                   'hundreds of lines',
+                                   "Weigh portfolio visibility; Card Connect's CoPilot portal is rated "
+                                   "among the industry's best",
+                                   'The Digital Merchant ([kpo2g7o_Ylg @ 00:05:54]); The Digital Merchant '
+                                   '([kpo2g7o_Ylg @ 00:07:49])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear These Four Checks Before Scaling the ISO',
+                           'body': 'Each check is drawn from losses, bottlenecks and reversals '
+                                   'practitioners reported while converting agent books into branded or '
+                                   'registered ISOs.',
+                           'items': ['Do not file for a registered brand until the logo on the merchant '
+                                     'agreement is worth roughly six months and $30,000 to $40,000, '
+                                     'because registration alone does not lift sales [CCSalesPro — '
+                                     'KFKUpD0sDxk @ 00:04:55].',
+                                     'Before signing, confirm who owns the residuals and whether the '
+                                     'portfolio leaves with you, then test how the processor handles '
+                                     'high-risk or niche files [The Digital Merchant — kpo2g7o_Ylg @ '
+                                     '00:02:08].',
+                                     'Count a merchant only after it is approved, boarded and processing '
+                                     'its first live transaction, since signed applications can fail '
+                                     'underwriting or never process [Finance Blueprint — _wQk1Avcku8 @ '
+                                     '00:08:59].',
+                                     'Stand up your own underwriting, tech and customer service before '
+                                     'pushing past 100 MIDs a month, or expect a ton of issues [Merchant '
+                                     'Service Slayers — pHeumyF-Dw4 @ 00:05:00].']}}],
+ 'pull_quote': '"You are building a business around the movement of money, but the money moving through '
+               'the system is not yours." — Finance Blueprint (_wQk1Avcku8 @ 00:26:06).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Form an LLC or corporation, get an EIN and open a dedicated business bank account '
+                      'before applying to any processor partner [County Portal — QZSSbXV33jg @ 00:01:09].',
+                      'Sign on as a 1099 independent contractor and write the agent agreement to your own '
+                      'LLC so the company, not you personally, is the agent [CCSalesPro — KFKUpD0sDxk @ '
+                      '00:02:25].',
+                      'Score every processor on buy rate, residual ownership and portability, underwriting '
+                      'flexibility and terminal uptime before moving your book [The Digital Merchant — '
+                      'kpo2g7o_Ylg @ 00:01:47].',
+                      'Board merchants on the Valor Portal through Merchant Management and Add New, '
+                      'choosing Quick Board for one store and one device or Full Board for multiple stores '
+                      'and devices [Valor PayTech — MVL80SKYNYs @ 00:00:03].',
+                      'Run a five hour training course, a one hour hot-seat role play, a daily 8 A.M. '
+                      'Central training call and a weekly Wednesday Q&A for every rep [Merchant Service '
+                      'Slayers — pHeumyF-Dw4 @ 00:03:08].',
+                      'Hunt B2B merchants that use a CRM, send invoices and run complex payment workflows, '
+                      'and route them to an invoicing integration partner for larger residuals [DepositFix '
+                      '— 4idRDNmCnvE @ 00:01:05].'],
+ 'statutory_citations': [{'title': 'CCSalesPro — How Do I Become My Own ISO? [00:04:55]',
+                          'url': 'https://www.youtube.com/watch?v=KFKUpD0sDxk&t=295s',
+                          'relevance': 'Primary practitioner testimony on the cost, timeline and sales '
+                                       'value of becoming a registered ISO versus an LLC agent.'},
+                         {'title': 'Finance Blueprint — The Economics of Owning a Payment Processing '
+                                   'Company Explained [00:06:22]',
+                          'url': 'https://www.youtube.com/watch?v=_wQk1Avcku8&t=382s',
+                          'relevance': 'Primary practitioner testimony on retained margin per transaction, '
+                                       'churn, cash burn and five-year ISO economics.'},
+                         {'title': 'Merchant Service  Slayers — How To Build An ISO Closing Over 100 MID’s '
+                                   'A Month [00:04:45]',
+                          'url': 'https://www.youtube.com/watch?v=pHeumyF-Dw4&t=285s',
+                          'relevance': 'Primary practitioner testimony on lead generation, training and '
+                                       'in-house departments for scaling past 100 MIDs a month.'},
+                         {'title': 'CCSalesPro — Building a Payment Processing Business and Promoting Your '
+                                   'Brand [00:01:28]',
+                          'url': 'https://www.youtube.com/watch?v=-sMJDgFoiSM&t=88s',
+                          'relevance': 'Primary practitioner testimony on the failure of a self-built back '
+                                       'office and the branded outsourcing alternative.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'dvdrcApxBHo',
+                       'title': 'Merchant Services ISO Agent - Selling Payment Processing - Become a '
+                                'Credit Card Processing Agent',
+                       'channel': 'Scott Shaw',
+                       'author': 'Scott Shaw',
+                       'text': 'We also offer upfront bonuses including a twenty thousand dollar fast '
+                               'start bonus and up to ten thousand dollars in upfront bonuses per '
+                               'merchant.',
+                       'tip': 'We also offer upfront bonuses including a twenty thousand dollar fast start '
+                              'bonus and up to ten thousand dollars in upfront bonuses per merchant.',
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=dvdrcApxBHo&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=dvdrcApxBHo&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KFKUpD0sDxk',
+                       'title': 'How Do I Become My Own ISO?',
+                       'channel': 'CCSalesPro',
+                       'author': 'CCSalesPro',
+                       'text': 'To get a registered brand takes like six months, thirty forty thousand '
+                               "dollars, and there's no reason to do that; you're not gonna make that many "
+                               "more sales because you're registered.",
+                       'tip': 'To get a registered brand takes like six months, thirty forty thousand '
+                              "dollars, and there's no reason to do that; you're not gonna make that many "
+                              "more sales because you're registered.",
+                       'timestamp': 295,
+                       'timestamp_seconds': 295,
+                       'timestamp_label': '[00:04:55]',
+                       'url': 'https://www.youtube.com/watch?v=KFKUpD0sDxk&t=295s',
+                       'markdown': '[00:04:55](https://www.youtube.com/watch?v=KFKUpD0sDxk&t=295s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wCnscoBFCKc',
+                       'title': 'Integrated Payments: Wholesale ISO Overview for Vertical Software '
+                                'Companies',
+                       'channel': 'nexio',
+                       'author': 'nexio',
+                       'text': 'Wholesale ISO registration makes sense for software companies when the '
+                               'potential revenue from payment processing exceeds the costs associated '
+                               'with becoming and operating as a wholesale ISO.',
+                       'tip': 'Wholesale ISO registration makes sense for software companies when the '
+                              'potential revenue from payment processing exceeds the costs associated with '
+                              'becoming and operating as a wholesale ISO.',
+                       'timestamp': 294,
+                       'timestamp_seconds': 294,
+                       'timestamp_label': '[00:04:54]',
+                       'url': 'https://www.youtube.com/watch?v=wCnscoBFCKc&t=294s',
+                       'markdown': '[00:04:54](https://www.youtube.com/watch?v=wCnscoBFCKc&t=294s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CyITyguICWc',
+                       'title': 'Become a Payment Service Provider - Becoming a Payment Processor Company '
+                                '- Become a Merchant ISO/MSP',
+                       'channel': 'Scott Shaw',
+                       'author': 'Scott Shaw',
+                       'text': 'With a cost structure as low as one and a half cents per authorization in '
+                               'zero basis points, Shaw Merchant Group gives you the pricing flexibility '
+                               'that you need to attract merchants.',
+                       'tip': 'With a cost structure as low as one and a half cents per authorization in '
+                              'zero basis points, Shaw Merchant Group gives you the pricing flexibility '
+                              'that you need to attract merchants.',
+                       'timestamp': 23,
+                       'timestamp_seconds': 23,
+                       'timestamp_label': '[00:00:23]',
+                       'url': 'https://www.youtube.com/watch?v=CyITyguICWc&t=23s',
+                       'markdown': '[00:00:23](https://www.youtube.com/watch?v=CyITyguICWc&t=23s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wOJ4s_5GRDY',
+                       'title': 'Become a Registered ISO for Merchant Services - How to Start Your Own '
+                                'Payment Processing Company',
+                       'channel': 'Scott Shaw',
+                       'author': 'Scott Shaw',
+                       'text': 'From customer service and technical support to deployment, underwriting '
+                               'and risk, we will even mask our call centers to support the building of '
+                               'your individual brand.',
+                       'tip': 'From customer service and technical support to deployment, underwriting and '
+                              'risk, we will even mask our call centers to support the building of your '
+                              'individual brand.',
+                       'timestamp': 140,
+                       'timestamp_seconds': 140,
+                       'timestamp_label': '[00:02:20]',
+                       'url': 'https://www.youtube.com/watch?v=wOJ4s_5GRDY&t=140s',
+                       'markdown': '[00:02:20](https://www.youtube.com/watch?v=wOJ4s_5GRDY&t=140s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-sMJDgFoiSM',
+                       'title': 'Building a Payment Processing Business and Promoting Your Brand',
+                       'channel': 'CCSalesPro',
+                       'author': 'CCSalesPro',
+                       'text': 'Frankly that can be a good thing if your goal is to kind of control '
+                               'everything, but for most of you that are just getting started and building '
+                               "out your brand, you really don't want to do that.",
+                       'tip': 'Frankly that can be a good thing if your goal is to kind of control '
+                              'everything, but for most of you that are just getting started and building '
+                              "out your brand, you really don't want to do that.",
+                       'timestamp': 88,
+                       'timestamp_seconds': 88,
+                       'timestamp_label': '[00:01:28]',
+                       'url': 'https://www.youtube.com/watch?v=-sMJDgFoiSM&t=88s',
+                       'markdown': '[00:01:28](https://www.youtube.com/watch?v=-sMJDgFoiSM&t=88s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tjdQFiCG9xo',
+                       'title': 'North American Bancard - ISO Agent Program - Become a Payment Processor - '
+                                'Selling Merchant Services',
+                       'channel': 'Scott Shaw',
+                       'author': 'Scott Shaw',
+                       'text': 'We also offer upfront bonuses including a $2,000 fast start bonus and up '
+                               'to $10,000 in upfront bonuses per merchant.',
+                       'tip': 'We also offer upfront bonuses including a $2,000 fast start bonus and up to '
+                              '$10,000 in upfront bonuses per merchant.',
+                       'timestamp': 35,
+                       'timestamp_seconds': 35,
+                       'timestamp_label': '[00:00:35]',
+                       'url': 'https://www.youtube.com/watch?v=tjdQFiCG9xo&t=35s',
+                       'markdown': '[00:00:35](https://www.youtube.com/watch?v=tjdQFiCG9xo&t=35s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JCe-IWhyJIk',
+                       'title': 'Integrated Payments: Retail ISO Overview for Vertical SaaS '
+                                '#paymentprocessing #integratedpayments',
+                       'channel': 'nexio',
+                       'author': 'nexio',
+                       'text': 'Setup and registration fees are one-time costs associated with '
+                               'establishing your retail ISO, and fees may range from a few thousand to '
+                               'tens of thousands of dollars.',
+                       'tip': 'Setup and registration fees are one-time costs associated with establishing '
+                              'your retail ISO, and fees may range from a few thousand to tens of '
+                              'thousands of dollars.',
+                       'timestamp': 291,
+                       'timestamp_seconds': 291,
+                       'timestamp_label': '[00:04:51]',
+                       'url': 'https://www.youtube.com/watch?v=JCe-IWhyJIk&t=291s',
+                       'markdown': '[00:04:51](https://www.youtube.com/watch?v=JCe-IWhyJIk&t=291s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kpo2g7o_Ylg',
+                       'title': 'Best Payment Processors for ISOs and Agents: A CPA’s 2026 Guide',
+                       'channel': 'The Digital Merchant',
+                       'author': 'The Digital Merchant',
+                       'text': "An ISO can't sell if the processor is rejecting 40% of the people that "
+                               "they're bringing in under applications just because there might be high "
+                               'risk or niche.',
+                       'tip': "An ISO can't sell if the processor is rejecting 40% of the people that "
+                              "they're bringing in under applications just because there might be high "
+                              'risk or niche.',
+                       'timestamp': 149,
+                       'timestamp_seconds': 149,
+                       'timestamp_label': '[00:02:29]',
+                       'url': 'https://www.youtube.com/watch?v=kpo2g7o_Ylg&t=149s',
+                       'markdown': '[00:02:29](https://www.youtube.com/watch?v=kpo2g7o_Ylg&t=149s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QbpUZX5GSzA',
+                       'title': 'Selling Payment Processing: How to Make Money Selling Merchant Services',
+                       'channel': 'SwipeNow Payments',
+                       'author': 'SwipeNow Payments',
+                       'text': 'This is a people sport, so building strong relationships and delivering '
+                               'exceptional customer service is key to long-term success in this industry.',
+                       'tip': 'This is a people sport, so building strong relationships and delivering '
+                              'exceptional customer service is key to long-term success in this industry.',
+                       'timestamp': 288,
+                       'timestamp_seconds': 288,
+                       'timestamp_label': '[00:04:48]',
+                       'url': 'https://www.youtube.com/watch?v=QbpUZX5GSzA&t=288s',
+                       'markdown': '[00:04:48](https://www.youtube.com/watch?v=QbpUZX5GSzA&t=288s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QZSSbXV33jg',
+                       'title': 'How To Start A Credit Card Processing Company?',
+                       'channel': 'County Portal',
+                       'author': 'County Portal',
+                       'text': 'For 99% of people starting out, the ISO route is the way to go; a payfac '
+                               'like Stripe or Square requires millions in startup capital and involves '
+                               'taking on huge financial risk and compliance burdens.',
+                       'tip': 'For 99% of people starting out, the ISO route is the way to go; a payfac '
+                              'like Stripe or Square requires millions in startup capital and involves '
+                              'taking on huge financial risk and compliance burdens.',
+                       'timestamp': 33,
+                       'timestamp_seconds': 33,
+                       'timestamp_label': '[00:00:33]',
+                       'url': 'https://www.youtube.com/watch?v=QZSSbXV33jg&t=33s',
+                       'markdown': '[00:00:33](https://www.youtube.com/watch?v=QZSSbXV33jg&t=33s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_wQk1Avcku8',
+                       'title': 'The Economics of Owning a Payment Processing Company Explained',
+                       'channel': 'Finance Blueprint',
+                       'author': 'Finance Blueprint',
+                       'text': 'The model deducts 13 cents of processor and acquiring cost, leaving 32 '
+                               'cents of retained processing margin before sales agent residuals, support, '
+                               'and risk.',
+                       'tip': 'The model deducts 13 cents of processor and acquiring cost, leaving 32 '
+                              'cents of retained processing margin before sales agent residuals, support, '
+                              'and risk.',
+                       'timestamp': 382,
+                       'timestamp_seconds': 382,
+                       'timestamp_label': '[00:06:22]',
+                       'url': 'https://www.youtube.com/watch?v=_wQk1Avcku8&t=382s',
+                       'markdown': '[00:06:22](https://www.youtube.com/watch?v=_wQk1Avcku8&t=382s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_wQk1Avcku8',
+                       'title': 'The Economics of Owning a Payment Processing Company Explained',
+                       'channel': 'Finance Blueprint',
+                       'author': 'Finance Blueprint',
+                       'text': 'Sponsor bank dependency is one of the largest risks; the bank or acquiring '
+                               'partner can change requirements, pricing, reserve demands, or risk '
+                               'appetite.',
+                       'tip': 'Sponsor bank dependency is one of the largest risks; the bank or acquiring '
+                              'partner can change requirements, pricing, reserve demands, or risk '
+                              'appetite.',
+                       'timestamp': 1334,
+                       'timestamp_seconds': 1334,
+                       'timestamp_label': '[00:22:14]',
+                       'url': 'https://www.youtube.com/watch?v=_wQk1Avcku8&t=1334s',
+                       'markdown': '[00:22:14](https://www.youtube.com/watch?v=_wQk1Avcku8&t=1334s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MVL80SKYNYs',
+                       'title': 'How to deploy merchants on the Valor Portal | Valor PayTech',
+                       'channel': 'Valor PayTech',
+                       'author': 'Valor PayTech',
+                       'text': 'Quick board will allow for the boarding of one store and one device; full '
+                               'board will allow for multiple stores and multiple devices and allow you to '
+                               'customize the different modules the user can see.',
+                       'tip': 'Quick board will allow for the boarding of one store and one device; full '
+                              'board will allow for multiple stores and multiple devices and allow you to '
+                              'customize the different modules the user can see.',
+                       'timestamp': 3,
+                       'timestamp_seconds': 3,
+                       'timestamp_label': '[00:00:03]',
+                       'url': 'https://www.youtube.com/watch?v=MVL80SKYNYs&t=3s',
+                       'markdown': '[00:00:03](https://www.youtube.com/watch?v=MVL80SKYNYs&t=3s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8r3qQJlNz-E',
+                       'title': 'How to Use Valor Connect to Complete Online Transactions on POS?',
+                       'channel': 'Valor PayTech',
+                       'author': 'Valor PayTech',
+                       'text': 'Set a Valor Connect countdown to limit how long the transaction is active '
+                               'on the terminal, which reduces exposure.',
+                       'tip': 'Set a Valor Connect countdown to limit how long the transaction is active '
+                              'on the terminal, which reduces exposure.',
+                       'timestamp': 24,
+                       'timestamp_seconds': 24,
+                       'timestamp_label': '[00:00:24]',
+                       'url': 'https://www.youtube.com/watch?v=8r3qQJlNz-E&t=24s',
+                       'markdown': '[00:00:24](https://www.youtube.com/watch?v=8r3qQJlNz-E&t=24s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4idRDNmCnvE',
+                       'title': 'Best ISO Partner Program: The $2K Residuals Secret in 2025',
+                       'channel': 'DepositFix',
+                       'author': 'DepositFix',
+                       'text': 'A pizza shop doing $50,000 a month, maybe 50 bucks in residuals, but what '
+                               'if one merchant introduction could earn you over $2,000 a month in '
+                               'residuals.',
+                       'tip': 'A pizza shop doing $50,000 a month, maybe 50 bucks in residuals, but what '
+                              'if one merchant introduction could earn you over $2,000 a month in '
+                              'residuals.',
+                       'timestamp': 16,
+                       'timestamp_seconds': 16,
+                       'timestamp_label': '[00:00:16]',
+                       'url': 'https://www.youtube.com/watch?v=4idRDNmCnvE&t=16s',
+                       'markdown': '[00:00:16](https://www.youtube.com/watch?v=4idRDNmCnvE&t=16s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pHeumyF-Dw4',
+                       'title': 'How To Build An ISO Closing Over 100 MID’s A Month',
+                       'channel': 'Merchant Service  Slayers',
+                       'author': 'Merchant Service  Slayers',
+                       'text': 'Have an in-house tech team, have an in-house customer service team, and do '
+                               "not rely on someone else's customer service or someone else's tech support "
+                               'to be your end-all be-all.',
+                       'tip': 'Have an in-house tech team, have an in-house customer service team, and do '
+                              "not rely on someone else's customer service or someone else's tech support "
+                              'to be your end-all be-all.',
+                       'timestamp': 285,
+                       'timestamp_seconds': 285,
+                       'timestamp_label': '[00:04:45]',
+                       'url': 'https://www.youtube.com/watch?v=pHeumyF-Dw4&t=285s',
+                       'markdown': '[00:04:45](https://www.youtube.com/watch?v=pHeumyF-Dw4&t=285s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pHeumyF-Dw4',
+                       'title': 'How To Build An ISO Closing Over 100 MID’s A Month',
+                       'channel': 'Merchant Service  Slayers',
+                       'author': 'Merchant Service  Slayers',
+                       'text': 'With our telemarketing leads they typically have like a five to ten '
+                               'percent closing ratio, which is really good, and a good agent will '
+                               'probably close 20 to 30 percent of the leads.',
+                       'tip': 'With our telemarketing leads they typically have like a five to ten percent '
+                              'closing ratio, which is really good, and a good agent will probably close '
+                              '20 to 30 percent of the leads.',
+                       'timestamp': 126,
+                       'timestamp_seconds': 126,
+                       'timestamp_label': '[00:02:06]',
+                       'url': 'https://www.youtube.com/watch?v=pHeumyF-Dw4&t=126s',
+                       'markdown': '[00:02:06](https://www.youtube.com/watch?v=pHeumyF-Dw4&t=126s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'}]}

@@ -1,735 +1,883 @@
 from __future__ import annotations
 
-
 def build_volume_032_workbook() -> dict:
-    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
-        return {
-            "name": name,
-            "type": input_type,
-            "prompt": prompt,
-            "example": example,
-        }
-
-    return {
-        "workbook_id": "wb-032-payment-processing-and-atm-arbitrage",
-        "volume_id": "vol-032-payment-processing-and-atm-arbitrage",
-        "title": "ISO Payment Processing & ATM Arbitrage — Operator Companion Workbook",
-        "subtitle": (
-            "6 Printable Operator Worksheets for Schedule A Spread Qualification, "
-            "Merchant Residuals, Venue ATM Economics, Reserve Controls, Payment "
-            "Operations, Statutory Audits, and a Transferable Small-Team Portfolio"
-        ),
-        "worksheets": [
-            {
-                "worksheet_id": "ws-01",
-                "number": 1,
-                "title": "Arbitrage Deal / Counterparty Underwriting & Spread Qualification",
-                "purpose": (
-                    "Qualify the actual spread owner before pursuing merchant accounts or "
-                    "ATM locations. Separate sponsor permissions, merchant economics, venue "
-                    "traffic, and transferable contract rights so apparent payment volume "
-                    "does not conceal thin retained revenue, inaccessible reserves, or "
-                    "counterparty terms that erase the arbitrage."
-                ),
-                "chapter_ref": "Q1, Q2, Q6",
-                "instructions": [
-                    (
-                        "Collect the signed ISO agreement, wholesale Schedule A, residual "
-                        "statement sample, sponsor underwriting matrix, and venue agreement "
-                        "before quoting. Record document versions and effective dates; "
-                        "sales presentations cannot establish your ownership of residuals "
-                        "or permission to board a merchant category."
-                    ),
-                    (
-                        "Underwrite each legal entity separately using formation records, "
-                        "beneficial-owner verification, bank-account confirmation, and actual "
-                        "operating evidence. Map every processor, sponsor, cash provider, "
-                        "and venue to its obligations rather than treating the branded "
-                        "sales organization as the entire payment chain."
-                    ),
-                    (
-                        "Rebuild one merchant statement and one ATM settlement period "
-                        "from source transactions. Separate interchange, assessments, "
-                        "processor charges, gateway markups, venue shares, and operator "
-                        "residuals; measure retained dollars rather than using merchant "
-                        "card volume as the apparent opportunity size."
-                    ),
-                    (
-                        "Stress the candidate with rate matching, lower ATM withdrawals, "
-                        "reserve changes, and termination. Require a named owner for "
-                        "each response, including merchant communication, sponsor escalation, "
-                        "venue renegotiation, and cash-service adjustment before accepting "
-                        "a spread that depends on perfect conditions."
-                    ),
-                    (
-                        "Finish with a written pursue, reprice, or decline decision "
-                        "supported by source evidence. Tie the decision to contract "
-                        "rights and twelve-month retained contribution, and retain the "
-                        "rejected alternatives so the next reviewer can reproduce "
-                        "the underwriting judgment."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Counterparty identity and permission chain",
-                        "textarea",
-                        "Identify each contracting entity, sponsor bank, processor, cash provider, and venue owner. State who verifies ownership, who can authorize boarding, and which current documents establish that authority for the proposed activity.",
-                        "Example: Harbor Payments LLC contracts with the ISO, while its named sponsor bank authorizes merchant boarding. The venue lease is signed by Pier Market LLC, verified against state formation records. Operations stores dated authority evidence and independently confirms the settlement account before any account activation.",
-                    ),
-                    field(
-                        "Schedule A residual waterfall",
-                        "textarea",
-                        "Reconstruct a monthly merchant waterfall using actual processing charges and wholesale deductions. Identify the contractual residual pool, operator split, repricing rights, and any charge that would otherwise be counted twice in the spread.",
-                        "Example: A merchant processes $100,000 monthly and pays $2,700 processing charges. Interchange is $2,000, assessments $150, and processor charges $150, leaving $400 eligible residual. The ISO receives 62.5%, or $250 monthly. Gateway fees remain outside this waterfall and require separate supporting invoices.",
-                    ),
-                    field(
-                        "Merchant operating profile and demand evidence",
-                        "textarea",
-                        "Document the merchant's products, delivery timing, transaction channels, average ticket, refund pattern, and seasonality. Match these facts to sponsor underwriting requirements and explain why observed activity supports the proposed pricing and reserve structure.",
-                        "Example: A bicycle repair shop reports 800 monthly transactions averaging $125, with 92% card-present sales and same-day service completion. Three statements substantiate $100,000 monthly card volume. Refunds average $1,400 monthly; no advance subscription obligations appear in the reviewed invoices or merchant website.",
-                    ),
-                    field(
-                        "Disclosed high-risk MID architecture",
-                        "textarea",
-                        "Describe any elevated-risk product, recurring billing, or delayed fulfillment explicitly. Record sponsor authorization for each MID and descriptor, and explain how routing preserves merchant identity rather than hiding activity across unrelated accounts.",
-                        "Example: A recurring membership merchant uses two sponsor-approved MIDs for separately disclosed product lines. Routing follows documented product identifiers, not dispute ratios or transaction splitting. A third proposed category remains inactive until underwriting accepts its terms, fulfillment evidence, descriptor, and reserve schedule in writing.",
-                    ),
-                    field(
-                        "Venue traffic and exclusive placement rights",
-                        "textarea",
-                        "Measure cash demand using withdrawal records, nearby alternatives, venue hours, and access restrictions. Extract exclusivity boundaries, relocation rights, service windows, and termination remedies so a promising location is supported by enforceable operating access.",
-                        "Example: A market venue supports 500 completed withdrawals monthly from a twelve-week trial. Its agreement grants one exclusive ATM position inside the main entrance, seven-day servicing access, and thirty days to cure outages. Outdoor event areas are excluded and cannot support additional forecast withdrawals.",
-                    ),
-                    field(
-                        "ATM surcharge and retained spread",
-                        "textarea",
-                        "Calculate retained surcharge revenue per completed withdrawal after contractually allocated venue and network amounts. Keep vault cash, withdrawal principal, reversals, and any separately earned interchange outside the surcharge estimate unless independently documented.",
-                        "Example: Each completed withdrawal carries a $3.00 surcharge, allocated $1.00 to the venue, $1.00 to the provider bundle, and $1.00 to the operator. At 500 withdrawals monthly, retained revenue is $500 per device. Withdrawal principal returns through settlement and never becomes operator revenue.",
-                    ),
-                    field(
-                        "Residual ownership and portability",
-                        "textarea",
-                        "Quote the contract language governing residual survival, assignment, merchant solicitation, and sponsor consent. Identify whether sale rights attach to the residual stream, merchant agreement, equipment, or merely a revocable servicing appointment.",
-                        "Example: Section 8 preserves earned residuals after ordinary termination while allowing offsets for documented losses. Section 12 requires processor consent for assignment and gives thirty days for review. The buyer acquires eligible residual rights, not merchant settlement balances; counsel flags unrestricted repricing language for negotiation.",
-                    ),
-                    field(
-                        "Attrition and rate-match stress",
-                        "textarea",
-                        "Quantify merchant loss, residual compression, and venue traffic deterioration separately. Specify the evidence needed before matching a competitor and establish a retained-dollar floor below which retention would destroy the account's contribution.",
-                        "Example: Losing ten of 100 merchants at $250 monthly residual removes $30,000 annual revenue. Matching pricing across twenty retained merchants by $40 monthly removes another $9,600. The account owner offers service remediation first and declines concessions that reduce an account below $120 monthly contribution.",
-                    ),
-                    field(
-                        "Risk evidence and escalation ownership",
-                        "textarea",
-                        "List concrete signs of chargeback deterioration, inconsistent business activity, cash shortages, or settlement delays. Assign a reviewer and response deadline to each signal, distinguishing internal warning thresholds from current sponsor or network program criteria.",
-                        "Example: A merchant's dispute count rises from three to eleven while transaction count falls from 1,000 to 800. Risk reviews the ratio and fulfillment evidence within one business day. Sponsor reporting follows its current program definitions; internal monitoring does not assert that a network threshold was crossed.",
-                    ),
-                    field(
-                        "Qualified deal decision and evidence register",
-                        "textarea",
-                        "Summarize expected retained revenue, required cash, unresolved contractual terms, and the next authorized action. Reference supporting document identifiers and explain which specific change would turn a rejected or repriced candidate into an acceptable deal.",
-                        "Example: Pursue the repair merchant at $250 monthly processing residual, subject to the signed Schedule A and verified settlement account. Defer the venue until access rights include weekend servicing. Evidence register entries U-032-01 through U-032-06 contain statements, traffic counts, entity records, and redlined agreements.",
-                    ),
-                ],
-                "completion_gate": (
-                    "The owner and operations reviewer can reproduce both spreads from "
-                    "source records, verify the permission chain, and identify executable "
-                    "contract rights. Every unresolved material term has an owner and "
-                    "deadline; no unapproved merchant activity is represented as boardable."
-                ),
-            },
-            {
-                "worksheet_id": "ws-02",
-                "number": 2,
-                "title": "Unit Economics, Escrow/Reserve Float & Working-Capital Calculator",
-                "purpose": (
-                    "Translate merchant and ATM activity into recognized operator revenue, "
-                    "cash availability, and canonical owner profit. Reconcile the three "
-                    "Formula v2.0 cases while isolating customer settlement, vault cash, "
-                    "restricted reserves, acquisition spending, and operating expenses "
-                    "that otherwise make liquidity look stronger than it is."
-                ),
-                "chapter_ref": "Q3, Q4",
-                "instructions": [
-                    (
-                        "Start with the canonical annual revenue and owner-profit figures, "
-                        "then build a separate operational driver model. Treat the "
-                        "scorecard revenue label as retained operator revenue for this "
-                        "candidate; do not substitute merchant settlement volume or "
-                        "gross ATM withdrawals."
-                    ),
-                    (
-                        "Classify each revenue stream under the actual principal-versus-agent "
-                        "contract facts before applying retained_share. Document which "
-                        "amounts are already net so provider allocations are not "
-                        "deducted twice, and retain the accounting memo beside the "
-                        "supporting statement exports."
-                    ),
-                    (
-                        "Prepare a thirteen-week cash schedule using receipt dates, "
-                        "not only earned revenue. Separate unrestricted operating cash "
-                        "from sponsor reserves and vault funding, then test delayed "
-                        "residual payments against contractor invoices, lease payments, "
-                        "and cash-service commitments due during the delay."
-                    ),
-                    (
-                        "Build a complete expense bridge rather than forcing every "
-                        "cost into the headline monthly operating range. Include "
-                        "acquisition, contractors, equipment leases, and risk support; "
-                        "identify whether the quoted baseline already contains any "
-                        "item before adding it again."
-                    ),
-                    (
-                        "Reconcile all scenarios to exact annual dollars before rounding "
-                        "monthly displays. Write the funding source beside every reserve "
-                        "and cash requirement, and prohibit distributions that rely "
-                        "on merchant funds, unsettled withdrawals, or receivables that "
-                        "have not become available cash."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Revenue boundary and retained_share policy",
-                        "textarea",
-                        "Define recognized operator revenue by stream and document the ASC 606 principal-versus-agent assessment. State where retained_share applies, where inputs are already retained, and why merchant card volume and vault cash remain excluded.",
-                        "Example: The accounting memo supports net presentation for the illustrated agency streams. An eligible ISO pool of $480,000 multiplied by retained_share of 0.625 produces $300,000 operator revenue. Already retained gateway and ATM figures use 1.0 in the aggregation, preventing a second deduction of allocated counterparty shares.",
-                    ),
-                    field(
-                        "Conservative canonical reconciliation",
-                        "textarea",
-                        "Enter the Conservative annual retained revenue, net margin, owner profit, total implied expenses, and staffing. Explain the monthly rounding convention and identify which funding needs remain outside the profit calculation because they are balance-sheet movements.",
-                        "Example: Conservative revenue is $90,000 and net margin is 30%, producing $27,000 annual owner net profit and $63,000 implied expenses. Staffing is 1 FT + 3 C. Monthly averages are $7,500 revenue and $2,250 profit; vault advances and reserve transfers require separate cash tracking.",
-                    ),
-                    field(
-                        "Base-Case canonical reconciliation",
-                        "textarea",
-                        "Enter the Base-Case annual retained revenue, net margin, owner profit, expenses, and staffing exactly. Connect the annual totals to your operating-driver model without changing the canonical figures to fit a convenient monthly estimate.",
-                        "Example: Base-Case revenue is $445,000 at 42.5% net margin, yielding $189,125 annual owner net profit and $255,875 expenses. Staffing remains 1 FT + 3 C. Monthly averages display $37,083.33 revenue and $15,760.42 profit, while annual reconciliation retains the exact dollar totals.",
-                    ),
-                    field(
-                        "Scaled Small-Team canonical reconciliation",
-                        "textarea",
-                        "Enter the Scaled Small-Team annual retained revenue, net margin, owner profit, implied expenses, and six-person staffing. Describe the operating constraint that must be solved before increasing transaction or account counts to this level.",
-                        "Example: Scaled revenue is $800,000 at 55% net margin, producing $440,000 annual owner net profit and $360,000 expenses. Staffing is 2 FT + 4 C, six people total. Exception queues must remain within staffed capacity; higher volume alone does not establish the required margin.",
-                    ),
-                    field(
-                        "Base revenue driver bridge",
-                        "textarea",
-                        "Build independent annual drivers for processing residuals, gateway markups, and retained ATM surcharges. State eligible units and retained dollars per unit, then verify that the component sum equals the canonical Base-Case revenue without counting any underlying principal.",
-                        "Example: One hundred merchants at $250 monthly retained processing residual produce $300,000 annually. Separately billed gateway activity contributes 250,000 eligible transactions at $0.10 retained, or $25,000. Twenty leased ATMs produce 500 monthly withdrawals each at $1.00 retained, or $120,000. Total operator revenue equals $445,000.",
-                    ),
-                    field(
-                        "Complete expense bridge and baseline range",
-                        "textarea",
-                        "Separate baseline platform and administration spending from acquisition, contractors, leases, and risk support. Reconcile all annual expenses to the selected canonical scenario, and explain why the headline monthly operating range is not a substitute for complete expenses.",
-                        "Example: Base expenses comprise $72,000 platform and administration, $60,000 acquisition, $54,000 contractors, $36,000 device leases, and $33,875 risk support. Total expenses are $255,875. The $6,000 monthly baseline fits the stated $1,500–$10,000 range; all-in average monthly expenses are $21,322.92, with no duplicated provider pass-through charges.",
-                    ),
-                    field(
-                        "Restricted reserve and escrow classification",
-                        "textarea",
-                        "Record reserve ownership, permitted offsets, release timing, and account control. Distinguish sponsor-held merchant reserves from operator-owned restricted assets, and describe the cash consequence without assuming that reserve balances are available revenue or working capital.",
-                        "Example: The sponsor holds a merchant reserve equal to 5% of $100,000 monthly processing, adding $5,000 monthly subject to a 180-day release schedule and contractual offsets. The ISO neither controls nor earns that balance. A separate $6,000 ISO security deposit is tracked as restricted operator cash.",
-                    ),
-                    field(
-                        "Vault cash requirement and funding cost",
-                        "textarea",
-                        "Estimate withdrawal principal between replenishments, safety cash, settlement timing, and funding charges. Identify the actual cash owner and ensure that repayment of vault principal is separated from the funding expense charged to the operator.",
-                        "Example: One ATM dispenses 500 monthly withdrawals averaging $80, or $40,000 principal. A four-day interval at thirty-day average demand requires $5,333.33, increased to $6,400 with 20% safety cash. A vault provider supplies the principal; contractual funding charges are expenses, not deductions from withdrawal principal revenue.",
-                    ),
-                    field(
-                        "Startup allocation and thirteen-week liquidity",
-                        "textarea",
-                        "Allocate startup cash within the stated capital range and prepare weekly unrestricted balances. Show the first-deal timing assumption, sponsor payment lag, minimum cash floor, and explicitly funded response to a slower launch or reserve increase.",
-                        "Example: A $32,000 launch budget assigns $8,000 to deposits and setup, $5,000 to integration, $7,000 to acquisition, and $12,000 to unrestricted liquidity. This fits the $8,000–$45,000 range. With first deals expected in one to four months, spending pauses before forecast cash falls below $6,000.",
-                    ),
-                    field(
-                        "Sensitivity and distribution control",
-                        "textarea",
-                        "Quantify revenue compression, delayed collections, and unexpected cash requirements independently. Specify which result changes profit and which changes timing, then establish a distribution rule that protects operating obligations without treating restricted balances as owner liquidity.",
-                        "Example: A 10% reduction in $300,000 processing residuals removes $30,000 annual revenue before expense responses. A thirty-day delay in $25,000 monthly processing receipts shifts cash timing instead. Distributions require eight weeks of scheduled unrestricted obligations plus the $6,000 floor after all pending invoices and reserve calls.",
-                    ),
-                ],
-                "completion_gate": (
-                    "All three canonical cases reconcile exactly: $27,000, $189,125, "
-                    "and $440,000 annual owner net profit. The Base driver bridge "
-                    "equals $445,000, expenses equal $255,875, and the cash schedule "
-                    "excludes merchant settlement, restricted reserves, and vault principal."
-                ),
-            },
-            {
-                "worksheet_id": "ws-03",
-                "number": 3,
-                "title": "End-to-End Execution, Idempotent Ledger & QA Pre-Flight Sheet",
-                "purpose": (
-                    "Design a repeatable boarding-to-reconciliation workflow that survives "
-                    "duplicate webhooks, delayed files, reversals, and field outages. "
-                    "Establish immutable transaction evidence, explicit accounting ownership, "
-                    "tested exception handling, and release criteria before connecting "
-                    "merchant residuals or ATM activity to live reporting and payouts."
-                ),
-                "chapter_ref": "Q7, Q8",
-                "instructions": [
-                    (
-                        "Map the lifecycle from qualified lead through underwriting, "
-                        "boarding, activation, settlement reporting, residual accrual, and "
-                        "cash receipt. Assign one accountable owner per transition "
-                        "and identify the source record proving completion before "
-                        "a downstream task can start."
-                    ),
-                    (
-                        "Define identifiers before importing production data. Separate "
-                        "merchant tokens, MID references, terminal identifiers, settlement "
-                        "batches, and provider event identifiers; preserve their relationships "
-                        "without placing cardholder secrets or unnecessary personal "
-                        "information into the workbook or automation logs."
-                    ),
-                    (
-                        "Treat every external notification as potentially duplicated, "
-                        "late, reordered, or corrected. Use durable uniqueness constraints "
-                        "and atomic posting, then record reversals as linked entries "
-                        "rather than editing settled history to make the latest "
-                        "dashboard appear clean."
-                    ),
-                    (
-                        "Test approved sandbox paths for sales, refunds, surcharge "
-                        "cancellation, ATM dispense failures, delayed settlement, and "
-                        "duplicate delivery. Save expected ledger effects beside "
-                        "observed results, including proof that retrying an event "
-                        "does not create another payout or revenue accrual."
-                    ),
-                    (
-                        "Run a controlled launch with limited devices and merchant "
-                        "accounts before expanding. Reconcile source activity, provider "
-                        "statements, receivables, and bank deposits daily; unresolved "
-                        "differences remain visible with owners and deadlines rather "
-                        "than being silently absorbed into miscellaneous revenue."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Lifecycle state ownership",
-                        "textarea",
-                        "Define named states, entry evidence, responsible roles, and permitted transitions for merchant and ATM onboarding. Include rejection, suspension, and reactivation paths so sales status cannot override underwriting or technical readiness.",
-                        "Example: IRIS CRM moves a merchant from Submitted to Underwriting Accepted only after the sponsor reference is attached. Operations then records Boarded, Tested, and Active states. Rejected applications retain reasons and evidence. Sales cannot move a rejected MID directly into Active or create a substitute merchant identity.",
-                    ),
-                    field(
-                        "Identifier and data-minimization map",
-                        "textarea",
-                        "Specify stable internal identifiers and external reference mappings used across CRM, processor, gateway, and ATM telemetry. Identify prohibited sensitive data and explain how operators can investigate exceptions without copying payment credentials into worksheets.",
-                        "Example: Merchant M-0102 maps to a processor-issued MID reference, gateway customer token, and contract C-0188. ATM A-0020 maps to terminal T-4402 and venue V-0011. Logs contain provider transaction tokens and masked account references only; full PAN, PIN data, and security codes stay outside these records.",
-                    ),
-                    field(
-                        "Idempotency key and atomic posting",
-                        "textarea",
-                        "Define the uniqueness scope for each event source, the durable enforcement mechanism, and the transaction boundary. Describe retry behavior when an acknowledgment fails after a successful write, including how changed payloads under reused identifiers are handled.",
-                        "Example: The database enforces uniqueness on provider, account, event type, and event ID. Event storage and balanced ledger insertion commit together. A timeout triggers retrieval of the existing result, not another posting. A reused identifier with a different payload hash enters an exception queue for investigation.",
-                    ),
-                    field(
-                        "Balanced ledger and revenue accounts",
-                        "textarea",
-                        "Specify journal accounts for retained residual receivables, operating cash, earned revenue, restricted deposits, and adjustments. Keep merchant settlement and vault principal outside operator revenue, and identify whether off-ledger operational records track third-party balances.",
-                        "Example: An earned $250 merchant residual debits residual receivables and credits processing residual revenue by $250. Collection debits operating cash and credits receivables. The merchant's $100,000 card settlement never enters those revenue accounts; provider-controlled vault balances appear in a separate custody and reconciliation register.",
-                    ),
-                    field(
-                        "ATM dispense and reversal lifecycle",
-                        "textarea",
-                        "Describe how authorization, cash presentation, dispense completion, partial dispense, reversal, and settlement records are matched. State when a surcharge becomes earned under the provider contract and how uncertain outcomes are quarantined from recognized retained revenue.",
-                        "Example: A request for $80 plus a $3 surcharge authorizes successfully, but telemetry reports a dispenser fault. Operations matches the electronic journal with the provider reversal before closing the case. The event contributes no $1 retained surcharge until a completed, billable withdrawal is supported by settlement evidence.",
-                    ),
-                    field(
-                        "Three-way residual reconciliation",
-                        "textarea",
-                        "Define the comparison between merchant-level source activity, processor residual calculations, and bank receipts. Establish tolerances, review timing, and treatment of differences caused by rate changes, missing accounts, prior-period offsets, or contract interpretation.",
-                        "Example: The month contains 100 merchants expected to generate $25,000 retained processing residual. The processor statement shows $24,750 and the bank receives $24,750. Review finds one omitted $250 account; operations opens claim R-0041 and records the disputed receivable separately rather than inventing a cash receipt.",
-                    ),
-                    field(
-                        "Pricing and disclosure pre-flight",
-                        "textarea",
-                        "List evidence required before activating a merchant price program or ATM surcharge. Include terminal configuration, eligible card handling, displayed prices, receipts, fee disclosure, cancellation behavior, and sponsor review of the actual implementation.",
-                        "Example: The test pack contains credit, debit, prepaid, refund, and canceled ATM transactions. Debit and prepaid transactions receive no credit-card surcharge. The ATM displays the $3 fee before commitment and permits cancellation. Receipts, signage photographs, and sponsor configuration confirmation are attached to test pack QA-032-07.",
-                    ),
-                    field(
-                        "Exception severity and rollback procedure",
-                        "textarea",
-                        "Assign severity levels to duplicate postings, incorrect fees, settlement gaps, and device faults. Define the safe operational fallback, notification owner, evidence preservation requirements, and conditions for resuming service after the root cause is corrected.",
-                        "Example: Duplicate revenue postings are severity one: suspend the affected importer, preserve raw events, and reconcile the impacted batch. Incorrect surcharge logic disables that pricing feature through the supported processor configuration. Operations resumes only after corrected test results and a balanced adjustment journal are independently reviewed.",
-                    ),
-                    field(
-                        "Acceptance test matrix and evidence",
-                        "textarea",
-                        "Write concrete expected outcomes for normal processing, retries, out-of-order events, refunds, and failures. Include event counts, ledger balances, and operator notifications so acceptance depends on measurable behavior rather than a general statement that testing succeeded.",
-                        "Example: Replaying event E-882 ten times creates one source-event record and one $250 accrual journal. A later $25 contractual adjustment creates a separate linked journal, leaving $225 receivable. Receiving the adjustment first holds it pending linkage; the test checks balances, alert delivery, and preserved raw payloads.",
-                    ),
-                    field(
-                        "Closeout packet and service handoff",
-                        "textarea",
-                        "Define the records required to hand an activated account or ATM to ongoing operations. Include contacts, access ownership, statement schedules, configuration versions, unresolved exceptions, and the first review date with a named replacement operator.",
-                        "Example: The handoff contains contract C-0188, sponsor boarding reference B-2290, configuration version 4, service contacts, and the first residual review on day thirty. A backup operator demonstrates read-only statement retrieval and fault escalation. Open issue R-0041 remains visible with a named owner and response date.",
-                    ),
-                ],
-                "completion_gate": (
-                    "The launch test pack demonstrates single posting under retries, "
-                    "balanced journals, correct reversals, and verified disclosures. "
-                    "Source activity reconciles to statements and receipts; every open "
-                    "exception has an owner, deadline, and operating containment measure."
-                ),
-            },
-            {
-                "worksheet_id": "ws-04",
-                "number": 4,
-                "title": "Statutory, Licensing, Contract Addendum & Compliance Audit",
-                "purpose": (
-                    "Convert payment rules into observable configuration, contract, and "
-                    "recordkeeping requirements. Distinguish federal law, state pricing "
-                    "rules, sponsor obligations, network standards, and actual funds "
-                    "flows so the portfolio can demonstrate lawful pricing, disclosed "
-                    "ATM fees, accurate underwriting, and appropriately scoped registrations."
-                ),
-                "chapter_ref": "Q5, Q9",
-                "instructions": [
-                    (
-                        "Create a jurisdiction inventory using merchant locations, customer "
-                        "channels, ATM sites, and the actual movement of funds. "
-                        "Assign source links, effective dates, and responsible reviewers "
-                        "to each applicable rule instead of assuming one national "
-                        "pricing template covers every deployment."
-                    ),
-                    (
-                        "Separate statutes and regulations from network contracts and "
-                        "sponsor instructions. When requirements differ, document the "
-                        "configuration that satisfies every applicable restriction; do "
-                        "not describe a card-brand requirement as federal law or "
-                        "a sponsor preference as a universal license."
-                    ),
-                    (
-                        "Inspect implemented behavior, not merely policy documents. Test "
-                        "eligible card identification, advertised prices, fee disclosures, "
-                        "cancellation, receipts, descriptors, and access controls using "
-                        "approved test methods, then retain screenshots and transaction "
-                        "references that demonstrate the rule actually operates."
-                    ),
-                    (
-                        "Review contract addenda for pricing authority, reserve offsets, "
-                        "data responsibilities, venue access, assignment, and termination. "
-                        "Resolve conflicts between sales promises and signed documents "
-                        "before deployment, with amendments executed by parties who "
-                        "have authority to bind the relevant entity."
-                    ),
-                    (
-                        "Schedule recurring reviews around actual change events: new "
-                        "states, merchant categories, sponsors, pricing features, ownership, "
-                        "and funds flows. Record the reviewer, conclusion, corrective "
-                        "action, and retest evidence so a historical checklist "
-                        "does not masquerade as current operating authority."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Jurisdiction and authoritative-source register",
-                        "textarea",
-                        "List each operating state, relevant merchant channel, and ATM location. Attach the actual statutory or regulatory source, effective date, implementation requirement, and reviewer rather than relying on summaries that omit exceptions or later amendments.",
-                        "Example: Register J-01 covers a New York retail merchant under N.Y. General Business Law § 518 and its posted credit-card price requirements. Register J-02 covers a Connecticut merchant under Conn. Gen. Stat. § 42-133ff. Separate reviews determine the permitted price presentation before either terminal configuration is deployed.",
-                    ),
-                    field(
-                        "Credit surcharge eligibility and network limits",
-                        "textarea",
-                        "Document current Visa and Mastercard surcharge conditions, including eligible cards, applicable caps, cost-based limits, notices, and registration requirements. Distinguish these contractual rules from statutes and verify that debit and prepaid transactions cannot inherit credit-only fees.",
-                        "Example: The merchant proposes a 2.5% credit surcharge. Review checks current network limits, the merchant's documented acceptance cost, state restrictions, and required notices before activation. Debit and prepaid cards are excluded even when routed without a PIN; sampled receipts and processor configuration exports substantiate that exclusion.",
-                    ),
-                    field(
-                        "Dual-pricing and displayed-price controls",
-                        "textarea",
-                        "Describe the exact cash and card prices customers see before purchase, including tax and receipt treatment. Explain whether the implementation is genuine dual pricing or an added surcharge, and validate that its label matches its actual behavior.",
-                        "Example: A shop displays a $100.00 cash price and a $102.50 card price wherever the item price appears, subject to the location's applicable rules. The register selects the disclosed price rather than adding an unexplained service fee. Test receipts show the chosen price and correctly computed tax.",
-                    ),
-                    field(
-                        "Durbin and debit-routing implementation",
-                        "textarea",
-                        "Map debit acceptance controls to 15 U.S.C. § 1693o-2 and 12 CFR Part 235. Explain the distinction between debit interchange and routing rules, card-brand surcharge restrictions, and state requirements governing consumer price presentation.",
-                        "Example: The review cites 12 CFR §§ 235.3 and 235.7 for covered interchange and routing requirements. Operations verifies the processor's supported merchant routing choices. The worksheet separately records the network prohibition on debit surcharges; it does not claim that the Durbin provisions alone establish every pricing restriction.",
-                    ),
-                    field(
-                        "ATM fee disclosure and accessibility evidence",
-                        "textarea",
-                        "Specify electronic ATM fee disclosure, affirmative continuation, cancellation, and receipt evidence under Regulation E. Add applicable accessibility checks for physical deployment, identifying which requirements concern transaction disclosures and which concern the installed device and route.",
-                        "Example: Under 12 CFR § 1005.16, the ATM shows the $3.00 fee on screen before the consumer is committed and proceeds only after election to continue. The site inspection separately checks applicable 2010 ADA Standards § 707 features and the accessible route, with photographs and a completed functional test.",
-                    ),
-                    field(
-                        "FinCEN classification and funds-flow analysis",
-                        "textarea",
-                        "Map who accepts, controls, and transmits funds before assigning Bank Secrecy Act obligations. Review 31 CFR § 1010.100(ff), relevant FinCEN ATM guidance, and sponsor requirements, documenting why the actual service does or does not trigger an MSB category.",
-                        "Example: The illustrated operator owns cash-dispensing equipment but does not accept customer deposits, transmit customer funds independently, or offer currency exchange. Review uses FinCEN's 2007 independent ATM owner guidance alongside 31 CFR § 1010.100(ff). A proposed cash-in transfer feature requires fresh classification before activation, not automatic reuse of this conclusion.",
-                    ),
-                    field(
-                        "Sponsor underwriting, sanctions, and MATCH controls",
-                        "textarea",
-                        "Record sponsor-required identity, beneficial ownership, sanctions, prohibited-business, and terminated-merchant screening procedures. Specify who performs each check, how potential matches are resolved, and how material changes reach the sponsor without inventing clearance authority for the ISO.",
-                        "Example: The sponsor's authorized underwriting team performs required MATCH checks and reviews identity evidence before issuing a boarding decision. A potential sanctions match is escalated under the sponsor procedure with reference to applicable 31 CFR Chapter V programs. Sales cannot clear a match or reopen an account under another identity.",
-                    ),
-                    field(
-                        "Payment-data security and incident responsibilities",
-                        "textarea",
-                        "Document PCI DSS responsibilities, applicable validation scope, tokenization boundaries, privileged access, and incident escalation. Identify contractual standards separately from statutes, and require evidence that outsourced services actually cover the systems and tasks assigned to them.",
-                        "Example: The merchant uses a validated payment terminal service, but the responsibility matrix still assigns access reviews, device inspection, and incident reporting. PCI DSS v4.0.1 is recorded as the applicable contractual standard after scope review. Operators store tokens, enforce multifactor access, and never place sensitive authentication data in support tickets.",
-                    ),
-                    field(
-                        "Contract addendum and secured-interest review",
-                        "textarea",
-                        "Draft specific terms for residual survival, reserve offsets, pricing changes, venue exclusivity, cash loss, and assignment. Where receivables are financed or pledged, examine applicable enacted UCC Article 9 requirements instead of assuming contract labels establish priority.",
-                        "Example: The addendum requires itemized loss offsets, thirty-day notice of wholesale repricing, and continued residual payment after ordinary termination. A proposed receivables pledge receives review under the applicable state's enacted UCC §§ 9-203 and 9-310 for attachment and filing. Venue cash-loss allocation is documented separately from residual ownership.",
-                    ),
-                    field(
-                        "Audit findings and corrective-action evidence",
-                        "textarea",
-                        "Record the tested requirement, observed defect, affected population, corrective owner, due date, and retest result. Explain how transactions or devices are contained while remediation occurs, and preserve evidence supporting both the original finding and its closure.",
-                        "Example: Audit A-032-04 finds one ATM displaying an obsolete $2.50 fee while settlement charges $3.00. Operations disables surcharge-bearing service on that device, corrects the configuration, reviews affected transactions with the provider, and retains the remediation record. Closure requires a witnessed $3.00 disclosure and cancellation-path test.",
-                    ),
-                ],
-                "completion_gate": (
-                    "Every deployed state, merchant price program, and ATM configuration "
-                    "has current source-backed requirements and implementation evidence. "
-                    "Material findings are corrected or the affected feature remains "
-                    "inactive; contract authority and any required registrations match "
-                    "the documented funds flow."
-                ),
-            },
-            {
-                "worksheet_id": "ws-05",
-                "number": 5,
-                "title": "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker",
-                "purpose": (
-                    "Build automation that reduces repetitive work without obscuring "
-                    "pricing errors, underwriting decisions, disputes, or cash shortages. "
-                    "Connect qualified acquisition, IRIS CRM records, residual audits, "
-                    "dispute tools, and ATM telemetry to measured queues with "
-                    "explicit human ownership and tested fallback procedures."
-                ),
-                "chapter_ref": "Q6, Q10",
-                "instructions": [
-                    (
-                        "Draw the pipeline from lead source to retained account "
-                        "and ongoing service. Define the event that creates each "
-                        "task, the record that proves completion, and the human "
-                        "owner for exceptions; automated movement must not conceal "
-                        "missing underwriting or contract evidence."
-                    ),
-                    (
-                        "Use IRIS CRM for structured boarding records and residual "
-                        "audit workflows where supported by your configuration. Verify "
-                        "available exports, integrations, and permissions directly; do "
-                        "not design critical controls around an assumed product "
-                        "feature or an undocumented connector behavior."
-                    ),
-                    (
-                        "Configure Verifi RDR and Ethoca workflows against sponsor "
-                        "instructions, provider eligibility, and merchant authorization. "
-                        "Track refund outcomes and duplicate alerts across providers, "
-                        "and compare total resolution costs with measured losses "
-                        "rather than counting every intercepted alert as saved revenue."
-                    ),
-                    (
-                        "Connect ATM telemetry to operationally useful thresholds "
-                        "for cash, communication, tamper events, and dispenser "
-                        "faults. Validate sensor freshness and distinguish stale "
-                        "readings from actual cash depletion before sending "
-                        "service personnel or assuming a venue has stopped producing."
-                    ),
-                    (
-                        "Maintain manual continuity paths for failed webhooks, "
-                        "provider outages, staffing gaps, and suspended merchants. "
-                        "Exercise the fallback with limited controlled records "
-                        "and reconcile the recovery batch before returning "
-                        "to automation, so retries cannot duplicate postings or customer remedies."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Acquisition segment and qualification trigger",
-                        "textarea",
-                        "Define a narrow merchant or venue segment, observable demand, and the evidence required before outreach becomes a qualified opportunity. Track source attribution and avoid treating purchased contact counts as proof of genuine payment-processing demand.",
-                        "Example: The first segment is independent repair shops with $60,000–$150,000 monthly card volume and same-day fulfillment. A qualified opportunity requires a decision-maker conversation and permission to review three redacted statements. Forty targeted introductions yield twelve reviews; bulk contact volume does not enter the qualified-opportunity denominator.",
-                    ),
-                    field(
-                        "IRIS CRM workflow and evidence completeness",
-                        "textarea",
-                        "Map required CRM fields, document references, task owners, and allowed status changes. Explain how incomplete records are held for review and how exported identifiers connect boarded accounts to later residual statements and service activity.",
-                        "Example: IRIS CRM stores merchant token, sponsor reference, Schedule A version, pricing program, and evidence checklist. A workflow creates an operations task when all required references exist; underwriting acceptance remains a recorded sponsor decision. Weekly exports compare Active accounts with the processor list to identify missing or duplicate records.",
-                    ),
-                    field(
-                        "Residual audit automation and tolerance",
-                        "textarea",
-                        "Specify source files, contractual rate versions, expected calculations, and exception thresholds for automated residual review. Distinguish harmless rounding from missing merchants, unauthorized rate changes, and unexplained offsets requiring contractual investigation.",
-                        "Example: A monthly importer compares 100 merchant rows against effective Schedule A terms. Differences above $2 per merchant or $50 portfolio-wide create review tasks, while all differences remain logged. A missing $250 residual is escalated even if aggregate totals appear close because another account has an offsetting overpayment.",
-                    ),
-                    field(
-                        "Verifi RDR policy and refund controls",
-                        "textarea",
-                        "Define authorized dispute-resolution rules, eligible transactions, monetary limits, and expected ledger effects. Include rule ownership, duplicate prevention, refund reconciliation, and a review cadence that detects when automated resolutions cost more than the disputes they address.",
-                        "Example: A merchant authorizes an RDR rule for eligible transactions up to $75 where evidence recovery is poor. Operations records each resolution against the original payment token and verifies provider outcome before posting the refund. Weekly review compares resolved principal, fees, avoided handling work, and remaining disputes without claiming universal prevention.",
-                    ),
-                    field(
-                        "Ethoca alert matching and duplicate prevention",
-                        "textarea",
-                        "Describe alert intake, transaction matching, response deadlines, and confirmation of prior remedies. State how RDR outcomes, merchant refunds, and Ethoca alerts share a common resolution record without assuming all provider events use identical identifiers.",
-                        "Example: An Ethoca alert for a $48 transaction matches the processor token, merchant, amount, and transaction date. The resolution register already shows a completed $48 refund, so operations verifies the provider response instead of refunding again. Ambiguous matches enter manual review before any additional monetary action.",
-                    ),
-                    field(
-                        "ATM telemetry and vault-cash alerting",
-                        "textarea",
-                        "Define cash-level forecasts, fault signals, stale-data thresholds, and service dispatch criteria. Include normal replenishment lead time and explain how telemetry estimates are reconciled with cassette counts, electronic journals, and the cash provider's records.",
-                        "Example: ATM A-0020 averages $1,333.33 daily principal withdrawals and normally needs twenty-four hours for replenishment. An alert triggers below $2,700 forecast cash or after fifteen minutes without telemetry. A stale reading prompts connectivity verification; it does not automatically authorize a cash delivery or alter the vault ledger.",
-                    ),
-                    field(
-                        "Retention flywheel and referral economics",
-                        "textarea",
-                        "Connect recurring service reviews to measurable retention, referral requests, and acquisition cost. Identify the service event that earns the introduction and calculate payback using incremental retained contribution rather than merchant card volume or headline processing charges.",
-                        "Example: After two accurate residual cycles and one documented merchant service review, the account owner requests an introduction. Four introductions produce one boarded merchant at $600 total acquisition cost. At $250 monthly retained revenue less $50 direct servicing expense, contribution is $200 monthly and acquisition payback is three months.",
-                    ),
-                    field(
-                        "Attrition, disputes, and reserve early-warning dashboard",
-                        "textarea",
-                        "Choose leading indicators with explicit denominators, observation windows, and named responders. Separate internal risk signals from sponsor enforcement criteria, and define actions that reduce exposure without concealing merchant identity or rerouting prohibited transactions.",
-                        "Example: The dashboard tracks thirty-day merchant count retention, retained residual per active account, dispute counts by provider definition, and sponsor reserve notices. A 15% residual decline triggers account review within two business days. Suspended merchants remain suspended; operations does not transfer their activity to unrelated MIDs.",
-                    ),
-                    field(
-                        "Provider outage and manual continuity plan",
-                        "textarea",
-                        "Document what stops, what may continue, and which evidence supports manual processing during an integration or provider outage. Define recovery ordering and replay controls so restored automation cannot create duplicate accruals, refunds, or dispatches.",
-                        "Example: During a six-hour CRM connector outage, underwriting decisions remain in the sponsor portal and are logged in a controlled queue with source identifiers. No status is inferred from email subject lines. Recovery imports records once, reconciles counts, and verifies twenty sampled transitions before scheduled automation resumes.",
-                    ),
-                    field(
-                        "Automation ROI and accountable exception capacity",
-                        "textarea",
-                        "Measure hours saved, implementation costs, recurring fees, and unresolved exception workload. Define an expansion ceiling tied to staffed capacity, ensuring that automation success reflects accurate outcomes rather than simply fewer visible tasks in the dashboard.",
-                        "Example: Residual automation reduces monthly review from thirty hours to twelve, saving eighteen hours at a $40 loaded rate, or $720. Recurring tooling costs $250, leaving $470 monthly benefit before setup recovery. Expansion stops when unresolved material exceptions exceed the pod's documented two-business-day handling capacity.",
-                    ),
-                ],
-                "completion_gate": (
-                    "Each automation has verified inputs, a business owner, measurable "
-                    "outputs, duplicate controls, and a rehearsed manual path. Acquisition "
-                    "payback uses retained contribution, dispute remedies reconcile to "
-                    "original transactions, and telemetry alerts reflect current readings "
-                    "with accountable response deadlines."
-                ),
-            },
-            {
-                "worksheet_id": "ws-06",
-                "number": 6,
-                "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
-                "purpose": (
-                    "Turn underwriting and operating controls into a thirty-day launch "
-                    "plan with accountable staffing, cash limits, and evidence-based "
-                    "milestones. Establish portfolio KPIs and transferable records "
-                    "without confusing early pipeline progress with mature annual "
-                    "economics or assuming sponsor consent to an eventual sale."
-                ),
-                "chapter_ref": "Q11, Q12",
-                "instructions": [
-                    (
-                        "Plan the first thirty days around evidence collection, "
-                        "contracts, controlled testing, and qualified pipeline development. "
-                        "Respect the stated one-to-four-month first-deal window; a "
-                        "successful sprint may produce executable opportunities and "
-                        "validated operations before it produces collected residual cash."
-                    ),
-                    (
-                        "Assign a primary and backup owner to each operating "
-                        "function using the canonical team sizes. Specify contractor "
-                        "deliverables and coverage windows rather than assuming "
-                        "three contractors equal three full-time employees or "
-                        "that the owner can absorb every unresolved exception."
-                    ),
-                    (
-                        "Define every KPI with a numerator, denominator, reporting "
-                        "window, and source. Separate leading indicators such as "
-                        "qualified reviews from recognized revenue and collected "
-                        "cash, then preserve cohort history so attrition cannot "
-                        "be hidden by newly boarded merchants."
-                    ),
-                    (
-                        "Use spending checkpoints tied to documented cash availability "
-                        "and completed work. Do not expand ATM leases, acquisition "
-                        "commitments, or cash-service obligations merely because a "
-                        "pipeline forecast resembles the Base scenario; require "
-                        "observed unit economics and supported service capacity."
-                    ),
-                    (
-                        "Build the exit ledger while the portfolio is small. "
-                        "Preserve assignment rights, residual reconciliations, merchant "
-                        "cohorts, venue contracts, equipment obligations, and dispute "
-                        "history in access-controlled records so a later buyer "
-                        "can diligence the actual transferable earnings stream."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Days 1–7: authority and evidence sprint",
-                        "textarea",
-                        "List the first week's deliverables, owners, document dependencies, and spending ceiling. Prioritize sponsor permissions, Schedule A economics, target-segment evidence, and source-backed pricing requirements before committing to equipment deployments or broad acquisition spending.",
-                        "Example: By day seven, the owner collects two sponsor proposals, operations reconstructs three merchant statements, and the contract reviewer marks residual assignment clauses. Spending is capped at $2,000 from the setup allocation. The sprint produces a ranked partner decision, not a claim that any merchant has been approved.",
-                    ),
-                    field(
-                        "Days 8–14: configuration and controlled tests",
-                        "textarea",
-                        "Specify the workflow configuration, ledger tests, price-program checks, and device inspection work scheduled for week two. Identify dependencies that must be satisfied before live activation and assign an accountable reviewer for each evidence packet.",
-                        "Example: Operations configures CRM states and runs ten duplicate-event replays, while the field contractor checks one proposed ATM site. The accounting reviewer validates the $250 residual accrual example. No live surcharge launches until card eligibility, display behavior, receipts, and sponsor configuration confirmation are recorded in QA-032-07.",
-                    ),
-                    field(
-                        "Days 15–21: qualified acquisition and pilot preparation",
-                        "textarea",
-                        "Define outreach volume, qualification criteria, pilot candidates, and fallback work if sponsor decisions remain pending. Measure substantive progress without treating unsigned proposals, expected transaction volume, or installed but inactive equipment as earned revenue.",
-                        "Example: Twenty targeted introductions generate six statement-review permissions and two complete applications. One venue signs a conditional placement agreement with servicing access specified. If boarding remains pending, the pod finishes cash-service arrangements and reversal tests; recognized processing and ATM revenue remain zero until actual earning events occur.",
-                    ),
-                    field(
-                        "Days 22–30: launch review and next-month commitments",
-                        "textarea",
-                        "Specify the evidence reviewed at day thirty, conditions for limited activation, and decisions deferred until real statements arrive. Include cash availability, unresolved defects, service coverage, and the next review date rather than requiring artificial first-month profitability.",
-                        "Example: The day-thirty review examines completed applications, signed agreements, test evidence, $10,500 remaining unrestricted cash, and two open noncritical workflow issues. One sponsor-approved merchant may activate if tests pass. Additional ATM leases wait for funded service coverage; the first residual statement is reviewed when actually issued.",
-                    ),
-                    field(
-                        "Pod roles and canonical staffing",
-                        "textarea",
-                        "Assign sales, underwriting coordination, accounting, field service, and exception handling across the canonical staffing structures. Specify contractor hours and backup coverage, and distinguish headcount from full-time-equivalent capacity when assessing expansion readiness.",
-                        "Example: Conservative and Base use 1 FT + 3 C: the full-time owner handles acquisition and partner management, supported by operations, accounting, and field-service contractors. Scaled uses 2 FT + 4 C, six people total. Contractor scopes specify weekly capacity, response windows, and named backup coverage for critical incidents.",
-                    ),
-                    field(
-                        "KPI definitions and cohort retention",
-                        "textarea",
-                        "Define active merchants, qualified pipeline, boarding conversion, retained revenue, cash collection, and cohort retention using explicit periods. Include denominator exclusions and source systems so different operators cannot improve reported performance merely by changing definitions.",
-                        "Example: Monthly merchant retention equals opening-cohort accounts still active at month-end divided by opening active accounts. Ninety-six of 100 retained accounts yields 96%, even if eight new merchants join. Collected residual cash comes from reconciled bank receipts; recognized residual revenue comes from supported accruals and may differ by timing.",
-                    ),
-                    field(
-                        "Canonical scorecard and stage interpretation",
-                        "textarea",
-                        "Record the portfolio's canonical ranking, score components, and scenario targets. Explain how these planning benchmarks differ from demonstrated launch results, and identify the evidence required before describing the operating portfolio as having achieved a scenario.",
-                        "Example: Volume 032 is pipeline rank #02 of 36 with Money-to-Manpower Score 94/100: revenue 24, margin 24, team 19, startup 14, automation 13. The Elite Small-Team Cash Machine designation is a planning classification. Achieving Base requires supported annual revenue of $445,000 and owner net profit of $189,125.",
-                    ),
-                    field(
-                        "Expansion decision and cash-risk limits",
-                        "textarea",
-                        "Set explicit conditions for adding merchants, devices, contractors, or acquisition spending. Link each decision to retained unit contribution, cash runway, exception capacity, contractual permissions, and observed performance rather than a desired portfolio size.",
-                        "Example: Add a second pilot ATM only after the first location supports verified withdrawal counts, a reconciled settlement cycle, and service response within contract terms. The next commitment must preserve the $6,000 unrestricted floor and funded near-term obligations. Forecast surcharge receipts cannot substitute for signed vault-funding arrangements.",
-                    ),
-                    field(
-                        "Exit-readiness evidence and transfer rights",
-                        "textarea",
-                        "Inventory the records a buyer would need to verify recurring earnings and transferable assets. Identify assignment consents, merchant concentration, device ownership, venue termination rights, contractor dependencies, and liabilities that could reduce the usable residual stream.",
-                        "Example: The controlled data room holds twelve monthly residual reconciliations when available, cohort retention, signed Schedule A versions, venue contracts, lease schedules, and sponsor correspondence. A consent tracker marks which assignments require written processor approval. Restricted reserves and third-party vault cash are excluded from saleable unrestricted cash.",
-                    ),
-                    field(
-                        "Valuation sensitivity and owner transition",
-                        "textarea",
-                        "Build an illustrative valuation bridge from verified transferable earnings, not merchant volume. Separate enterprise value assumptions, debt, working capital, retained liabilities, and transaction costs, then specify the operational evidence needed for an orderly owner handoff.",
-                        "Example: If a buyer accepts $189,125 as normalized transferable annual earnings, an illustrative 2.5-times multiple implies $472,812.50 enterprise value before negotiated adjustments. This is a sensitivity, not a market quote. Sponsor consent, concentration, leases, taxes, transaction costs, and transition support can materially change actual owner proceeds.",
-                    ),
-                ],
-                "completion_gate": (
-                    "The thirty-day review has dated evidence, accountable pod coverage, "
-                    "a funded next-month plan, and reproducible KPI definitions. Canonical "
-                    "targets remain separate from observed results, and the exit ledger "
-                    "identifies transferable rights, required consents, retained liabilities, "
-                    "and records still awaiting an actual operating history."
-                ),
-            },
-        ],
-    }
+    return {'workbook_id': 'wb-032-payment-processing-and-atm-arbitrage',
+ 'volume_id': 'vol-032-payment-processing-and-atm-arbitrage',
+ 'title': 'ISO Payment Processing & ATM Arbitrage — Practitioner Testimony Operator Workbook',
+ 'subtitle': 'Field Worksheets for Card Processing Economics, Interchange Optimization, Fee Pass-Through '
+             'Compliance, and Residual Protection',
+ 'worksheets': [{'worksheet_id': 'ws-01',
+                 'number': 1,
+                 'title': 'Merchant Economics, Pricing Models, and Statement Diagnosis',
+                 'purpose': 'Turn a single merchant statement into a verified picture of fees, card costs, '
+                            'processor markup, and agent residual. This worksheet anchors every later '
+                            'decision in the fee-splitting mechanics of card acceptance, the Durbin debit '
+                            'cap, and the effective rate that lets any pricing model be compared.',
+                 'chapter_ref': 'Q1-Q2',
+                 'instructions': ['Gather at least the most recent full monthly statement and confirm '
+                                  'total card volume, total fees, and the pricing model printed on it.',
+                                  'Work the fields in order, because the gross profit and split math in '
+                                  'the early fields feed the markup and conversion decisions later.',
+                                  'Calculate the effective rate before forming any opinion about the '
+                                  'pricing model; it is the only undisputed yardstick for comparing '
+                                  'providers.',
+                                  'Pull the average ticket and card-present versus card-not-present mix '
+                                  'before quoting, since small tickets and keyed volume change the '
+                                  'economics.',
+                                  'Record every past-due gateway balance and coding issue as an action '
+                                  'item with a date, not a note to revisit later.'],
+                 'fields': [{'name': 'merchant_profile_volume',
+                             'type': 'text',
+                             'prompt': "Record the merchant's business type, monthly card volume, and "
+                                       'current all-in fee percentage, then calculate total monthly fees '
+                                       'the way Mario frames the cafe example so every later field in this '
+                                       'worksheet starts from one verified dollar figure.',
+                             'example': 'Cafe processing $20,000 per month at 2.80% all-in pays $560 in '
+                                        'monthly fees. Card costs at 1.40% take $280, leaving $280 gross '
+                                        'profit to split between agent and partner. Mario uses exactly '
+                                        'this baseline to show how one ordinary storefront becomes '
+                                        'recurring income [Residual Builders — lubvPaxm55o @ 00:04:25]. '
+                                        'Volume confirmed from the last three statements before any split '
+                                        'math.'},
+                            {'name': 'residual_split_projection',
+                             'type': 'textarea',
+                             'prompt': 'Apply your agreed split to the gross profit from the previous '
+                                       'field and project the monthly, annual, and ten-year residual. Note '
+                                       'who receives the remaining share and whether the split percentage '
+                                       'is written into your signed agreement.',
+                             'example': 'At an 80/20 split, 80% of the $280 gross profit pays $224 per '
+                                        'month, $2,688 per year, and $26,880 across ten years, while the '
+                                        'ISO or processor partner keeps the 20% balance [Residual Builders '
+                                        '— lubvPaxm55o @ 00:04:25]. One cafe at this size equals a steady '
+                                        'monthly payment that compounds as more accounts board.'},
+                            {'name': 'iso_vs_direct_role',
+                             'type': 'textarea',
+                             'prompt': 'Describe which role you will play in the payment chain: agent '
+                                       'selling through an ISO, or a party moving funds directly. List '
+                                       'which functions the ISO supplies, such as terminals, onboarding, '
+                                       'and support, so your sales focus stays clear.',
+                             'example': 'Role chosen: agent under an ISO. Joe Wagner says that unless you '
+                                        'want responsibility for moving the money and following strict '
+                                        'regulations, selling through an ISO is how to succeed [Joe Wagner '
+                                        '| Merchant Services & Passive Income — 6dCPtuCCcvw @ 00:01:01]. '
+                                        'The ISO handles terminals, onboarding, and merchant support, so '
+                                        'my week goes to selling, not settlement.'},
+                            {'name': 'pricing_model_audit',
+                             'type': 'text',
+                             'prompt': "Identify the merchant's current pricing model as flat-rate, "
+                                       'tiered, interchange-plus, or subscription, and state the processor '
+                                       'markup over interchange. If tiered or flat on a debit-heavy '
+                                       'account, note the conversion target and the markup you will quote.',
+                             'example': 'Current model: tiered, with no fee review in years, which Joe '
+                                        'Wagner says almost always means overpaying and a prime switch '
+                                        'target [Joe Wagner | Merchant Services & Passive Income — '
+                                        'XXH81AbZQcg @ 00:01:11]. Conversion target: interchange plus '
+                                        '0.25%, the rate Shepherd boards every new client on so Durbin '
+                                        'cost drops pass through automatically [durbinamendment — '
+                                        '_5A2a4Vu7A8 @ 00:09:27].'},
+                            {'name': 'average_ticket_durbin_check',
+                             'type': 'text',
+                             'prompt': "Pull the merchant's average ticket before discussing debit costs. "
+                                       'State whether it sits under $10, where the 22-cent regulated '
+                                       'per-item fee raises costs, or around $30 and above, where the '
+                                       'Durbin cap actually saves the merchant money.',
+                             'example': 'Average ticket: $8.40 at a coffee counter, below the $10 line '
+                                        'where the 22-cent per-item fee raises costs [Transaction Expert — '
+                                        'cL-wn0WX_PA @ 00:02:41]. The regulated cap is 0.05% plus 21 cents '
+                                        'plus one cent for fraud protection, applying only to issuers with '
+                                        '$10 billion or more in assets [All Things Money — F87ku5Df-mA @ '
+                                        '00:01:01].'},
+                            {'name': 'debit_cap_exposure',
+                             'type': 'textarea',
+                             'prompt': 'Assess how the proposed Fed cut to the debit cap changes your '
+                                       'pitch to debit-heavy merchants. Note the current and proposed cap '
+                                       'figures, and record whether the processor contract would pass any '
+                                       'savings through without your intervention.',
+                             'example': 'Kevin Von Holten flags a proposed cut from 21 cents to 14.4 '
+                                        'cents, a 31% revenue hit for banks already over $10 billion '
+                                        '[Cornerstone Advisors — FwB1KshUr5A @ 00:01:15]. Merchant sits on '
+                                        'a flat-rate contract, and a processor holding flat rate will not '
+                                        'hand over the windfall on its own [durbinamendment — _5A2a4Vu7A8 '
+                                        '@ 00:10:36]. Conversion required.'},
+                            {'name': 'effective_rate_calc',
+                             'type': 'text',
+                             'prompt': 'Calculate the interchange effective rate by dividing total '
+                                       'interchange by total volume, then the markup effective rate by '
+                                       'subtracting interchange from total fees and dividing by volume. '
+                                       'Flag any interchange-plus statement that omits a total interchange '
+                                       'figure.',
+                             'example': 'Interchange divided by volume lands at 1.7%, inside the 1.6% to '
+                                        '1.8% band CCSalesPro calls about right [CCSalesPro — 2Sn4XMqpW4I '
+                                        '@ 00:01:46]. Total fees minus interchange leaves a 0.9% markup on '
+                                        '$30,000 monthly volume, above the roughly 0.7% threshold that '
+                                        'signals a savings opportunity at this size [CCSalesPro — '
+                                        '2Sn4XMqpW4I @ 00:06:40].'},
+                            {'name': 'tier_card_mix',
+                             'type': 'textarea',
+                             'prompt': 'For tiered statements, record the share of transactions landing in '
+                                       'qualified, mid-qualified, and non-qualified buckets before '
+                                       'comparing any rates. Note whether the merchant is a physical '
+                                       'location and whether the qualified share meets the expected '
+                                       'storefront benchmark.',
+                             'example': 'Physical retail store showing only 41% qualified, with the rest '
+                                        'piled into mid- and non-qualified buckets. CCSalesPro expects 60 '
+                                        'to 70% qualified for a storefront, with the remainder split '
+                                        'fairly evenly [CCSalesPro — RxgrRsVThx4 @ 00:02:54]. The buckets '
+                                        "are stacked against this merchant, matching Merchant Maverick's "
+                                        'view that tiered is the least transparent model [Merchant '
+                                        'Maverick — h72ua8pD9cU @ 00:16:08].'},
+                            {'name': 'coding_and_entry_mode',
+                             'type': 'text',
+                             'prompt': "Verify the merchant's SIC or MCC code and confirm how much volume "
+                                       'is card-present versus card-not-present. Record the rate band each '
+                                       'channel should fall into and any keyed or virtual-terminal volume '
+                                       'pricing higher than it should.',
+                             'example': 'MCC verified against the business type; miscoding would mean '
+                                        'paying higher rates than the merchant qualifies for [BancardSales '
+                                        '— nLfsn6tUZh4 @ 00:06:37]. Split: 85% card-present, expected near '
+                                        '1.25% to 2%; 15% keyed through a virtual terminal, expected near '
+                                        '2% to 3.5% because of bank risk [BancardSales — nLfsn6tUZh4 @ '
+                                        '00:04:44].'},
+                            {'name': 'gateway_and_opening_plan',
+                             'type': 'textarea',
+                             'prompt': 'Record any past-due gateway balances tied to the account and your '
+                                       'plan to clear them, then write the opening line you will use, '
+                                       'including a free cost analysis offer that gives you a reason to '
+                                       'request the statement.',
+                             'example': 'One merchant is past due on gateway billing; resolving it this '
+                                        'week, since NMI moves past-due accounts to delinquent and debits '
+                                        'uncollected fees from the affiliate account after 6 months [NMI — '
+                                        'WxBDVPgeUYI @ 00:01:43]. Opening: free cost analysis, because '
+                                        'anyone without one in 12 months may be funding a Durbin windfall '
+                                        '[Transaction Expert — cL-wn0WX_PA @ 00:04:53].'}],
+                 'completion_gate': "Worksheet 1 is complete when the merchant's effective rate, markup "
+                                    'effective rate, average ticket, and pricing model are recorded; the '
+                                    'projected agent residual is written out monthly and annually; any '
+                                    'flat-rate or tiered debit-heavy account has an interchange-plus '
+                                    'conversion target; and no past-due gateway balance remains '
+                                    'unresolved.'},
+                {'worksheet_id': 'ws-02',
+                 'number': 2,
+                 'title': 'Interchange Optimization and Cash Discount Program Design',
+                 'purpose': 'Find the savings hidden inside interchange itself and decide whether a cash '
+                            'discount or dual pricing program fits the merchant. The fields walk through '
+                            'commercial card mix, downgrades, Visa CEDP status, honest line-item data, '
+                            'average-ticket modeling, point-of-sale capability, and the words used to '
+                            'present and close the program.',
+                 'chapter_ref': 'Q3-Q4',
+                 'instructions': ['Confirm the share of business, corporate, purchasing, and government '
+                                  'cards before promising any Level 2 or Level 3 savings.',
+                                  'Force daily auto-batching and confirm CEDP verified status before '
+                                  'modeling optimization savings on paper.',
+                                  'Reject any setup that relies on auto-filled or randomized line-item '
+                                  'data, regardless of the savings it appears to produce.',
+                                  'Model the average ticket and card mix before choosing between a '
+                                  'percentage service fee and a per-item fee.',
+                                  'Rehearse the presentation script aloud and stop explaining once the '
+                                  'application is being filled out.'],
+                 'fields': [{'name': 'interchange_share_baseline',
+                             'type': 'text',
+                             'prompt': "Estimate how much of the merchant's total card fees is interchange "
+                                       'rather than processor markup, and state where the realistic '
+                                       'savings pool sits. Use this split to decide whether to lead with '
+                                       'markup reduction or interchange optimization.',
+                             'example': 'Sean Jones puts interchange at 75 to 90 percent of card fees, '
+                                        'spread across more than 400 rates [Sean Jones Revolution Payments '
+                                        '— vVvGM8Rlor8 @ 00:00:15]. On this B2B distributor, interchange '
+                                        'is about 84% of fees, so the lead is optimization, matching '
+                                        "Jeremy Layton's view that interchange drives 80 to 90 percent of "
+                                        'delivered savings.'},
+                            {'name': 'commercial_card_mix',
+                             'type': 'textarea',
+                             'prompt': 'List the share of volume on business, corporate, purchasing, and '
+                                       'government cards, since only those benefit from enhanced data. '
+                                       'Note any cards carrying personal liability and the portion of B2B '
+                                       'transactions expected not to qualify at all.',
+                             'example': 'Commercial card volume is 62% of sales, mostly purchasing and '
+                                        'corporate cards from contractors. CCSalesPro warns thirty percent '
+                                        'of B2B transactions do not qualify and cards carrying personal '
+                                        'liability are excluded [CCSalesPro — tG2nIK3Th4Q @ 00:10:18], so '
+                                        'the model assumes only about 43% of total volume earns the lower '
+                                        'rate after those exclusions.'},
+                            {'name': 'downgrade_and_batch_review',
+                             'type': 'textarea',
+                             'prompt': 'Scan the statement for standard and EIRF downgrades and record the '
+                                       "account's batching schedule. If batching is not daily, document "
+                                       'the downgrade cost and the change you will force before modeling '
+                                       'any optimization savings for the merchant.',
+                             'example': 'Auto shop batching weekly to dodge a 25-cent batch fee. '
+                                        'CCSalesPro documented that this habit downgraded 80% of a similar '
+                                        "shop's tickets and cost about $1,000 a month [CCSalesPro — "
+                                        'mqEQN-xgAAk @ 00:04:03]. Daily auto-batching gets switched on '
+                                        'first, and savings get modeled only after a clean month of '
+                                        'statements without EIRF hits.'},
+                            {'name': 'cedp_status',
+                             'type': 'text',
+                             'prompt': "Confirm the merchant's Visa CEDP verification status and whether "
+                                       'the gateway still sends Level 2-only data on Visa commercial '
+                                       'cards. Record the participation fee exposure and whether Product 3 '
+                                       'rates can be quoted on this account.',
+                             'example': 'Status: not yet verified, so no Level 3 rate regardless of what '
+                                        'gets sent [PayTrace — 5z1bCzU6Luw @ 00:26:40]. The gateway still '
+                                        'pushes Level 2-only data on Visa commercial cards, which can '
+                                        'trigger the 0.05% participation fee with no rate benefit '
+                                        '[TouchSuite — mFDxx7C-_EA @ 00:00:40]. Level 2-only submissions '
+                                        'shut off pending verification.'},
+                            {'name': 'line_item_integrity',
+                             'type': 'textarea',
+                             'prompt': 'Describe how real line-item data will reach the gateway for each '
+                                       'enhanced-data transaction. State whether any auto-filled or '
+                                       'randomized data is currently being inserted, and record the fix '
+                                       'you will require before quoting Level 3 savings.',
+                             'example': 'Current gateway inserts generic placeholder line items on every '
+                                        'invoice. Jeremy Layton reports gateways inserting fake data and '
+                                        'warns of big problems when they get caught [CCSalesPro — '
+                                        'KlaksrooZhw @ 00:22:09]. Fix required: invoices pass real product '
+                                        "descriptions, quantities, and amounts from the merchant's billing "
+                                        'system before any Level 3 savings appear in the proposal.'},
+                            {'name': 'savings_case_math',
+                             'type': 'textarea',
+                             'prompt': "Build the savings case in the merchant's own terms. Show the "
+                                       'spread between current Visa commercial rates and enhanced-data '
+                                       'rates, then translate the integration effort into payroll cost '
+                                       'against annual savings so the decision reads as simple arithmetic.',
+                             'example': 'Visa commercial cards drop from 2.5 to 3 percent down to 1.75 '
+                                        'percent with full data, a 75 to 120 basis point spread [PayTrace '
+                                        '— 5z1bCzU6Luw @ 00:20:53]. Integration pitch: three weeks of '
+                                        'developer time, about $8,000 in payroll, against $70,000 a year '
+                                        'in savings [CCSalesPro — tG2nIK3Th4Q @ 00:18:33].'},
+                            {'name': 'cash_discount_fit',
+                             'type': 'text',
+                             'prompt': "Record the merchant's average ticket and decide whether a "
+                                       'percentage service fee or a per-item fee fits the program. Note '
+                                       'whether the ticket falls inside the residual sweet spot or low '
+                                       'enough that fixed debit costs push the fee underwater.',
+                             'example': 'Average ticket $6 at a bagel shop, far below the $25 to $70 sweet '
+                                        'spot [CCSalesPro — AnhJYbY3ptw @ 00:01:30]. Signature debit runs '
+                                        'about 30 to 32 cents all-in, roughly 6.4% on a $5 sale '
+                                        '[CCSalesPro — AnhJYbY3ptw @ 00:02:07], so the program uses a '
+                                        '59-cent per-item fee instead of a 3.99% service fee.'},
+                            {'name': 'pos_capability_and_display',
+                             'type': 'textarea',
+                             'prompt': "Confirm the merchant's point of sale can actually pass the fee to "
+                                       'customers and display the card price correctly. Record the POS '
+                                       'brand, how cash and card prices appear at checkout, and any setup '
+                                       'that would amount to a disguised surcharge.',
+                             'example': 'Merchant runs Square, which cannot pass the fee, leaving about '
+                                        '$900 a month in fees on $30,000 in sales [Chad The POS Guy — '
+                                        'pNxf7ZuEt5w @ 00:00:48]. Migration required. On the new system '
+                                        'the credit price is displayed, because posting only the cash '
+                                        'price and charging more at checkout is just another surcharge '
+                                        '[FTx POS — YyYXmSsR5as @ 00:01:56].'},
+                            {'name': 'price_presentation_script',
+                             'type': 'textarea',
+                             'prompt': 'Write the exact words you will use to present the program, '
+                                       'including the everyday comparison you will open with, one worked '
+                                       'register example, and the annualized savings figure. Keep the '
+                                       'script short enough to deliver without inviting extra rebuttals.',
+                             'example': 'Open with the gas pump: cash price, card price, customer chooses. '
+                                        'Register example: a $17.66 cash cheeseburger rings $18.37 on card '
+                                        '[PaymentCloud — xRGCXR9kPug @ 00:01:13]. Close on annual figures: '
+                                        'saving $500 a month becomes six thousand dollars a year [Joe '
+                                        'Wagner | Merchant Services & Passive Income — KRZuPsngOLw @ '
+                                        '00:01:14], then ask business or vacation.'},
+                            {'name': 'trial_and_close_plan',
+                             'type': 'text',
+                             'prompt': 'Record the trial period you will offer, the residual you expect '
+                                       'after any per-item adjustments, and how you will behave once the '
+                                       'application is being filled out. Note any card-mix adjustments '
+                                       'needed for high-ticket corporate card merchants.',
+                             'example': 'Trial: 60 days with a switch back to traditional processing if '
+                                        'the program fails [Scott Shaw — hdPpKRl1Bhk @ 00:03:03]. On a '
+                                        'compliant surcharge program, adding a signature-debit per-item '
+                                        'fee lifts the residual from about $40 to $82 [CCSalesPro — '
+                                        'AKvayIEwefA @ 00:22:59]. Once the application starts, explaining '
+                                        'stops, since one extra detail triggers ten more rebuttals.'}],
+                 'completion_gate': 'Worksheet 2 is complete when commercial card share and qualification '
+                                    'exclusions are documented, daily batching and CEDP verified status '
+                                    'are confirmed, line-item data is real, the cash discount fee '
+                                    'structure matches the average ticket, the point of sale is confirmed '
+                                    'able to pass the fee with the credit price displayed, and a written '
+                                    'script with annualized savings is ready.'},
+                {'worksheet_id': 'ws-03',
+                 'number': 3,
+                 'title': 'Fee Pass-Through Compliance and Residual Agreement Protection',
+                 'purpose': 'Keep every fee pass-through program legally clean and every residual '
+                            'contractually yours. The fields cover choosing among surcharging, cash '
+                            'discounting, and dual pricing, testing debit blocks, auditing price displays, '
+                            'calculating offset rates, defusing fine exposure, projecting the residual '
+                            'book, and locking down agreement language before the first merchant signs.',
+                 'chapter_ref': 'Q5-Q6',
+                 'instructions': ['Choose the pass-through method from how prices are actually posted, not '
+                                  'from the program name the processor uses.',
+                                  'Test the debit block on live hardware with both PIN and credit entry '
+                                  'before the program goes live.',
+                                  "Walk the merchant's premises, menus, website, and quotes in person to "
+                                  'confirm every price exists twice.',
+                                  'Project residuals with conservative per-account figures and add a '
+                                  'client buffer for cancels and shortfalls.',
+                                  'Get vesting, residual ownership, and termination terms in writing '
+                                  'before boarding a single merchant under any agreement.'],
+                 'fields': [{'name': 'pass_through_method',
+                             'type': 'text',
+                             'prompt': 'Identify which of the three legal fee-offset methods fits this '
+                                       'specific merchant: surcharging, cash discounting, or dual pricing. '
+                                       'Base the choice on how prices are actually posted, card-present '
+                                       "versus card-not-present mix, and the merchant's debit share.",
+                             'example': 'Storefront with heavy debit volume, so dual pricing ranks first; '
+                                        'Global Legal Law Firm notes almost every business has a problem '
+                                        'otherwise because the surcharge does not cover the spread and '
+                                        'cannot touch debit [Global Legal Law Firm — rj9tjHr1nNo @ '
+                                        '00:10:39]. A 100% card-not-present seller would more likely lean '
+                                        'toward surcharging [CCSalesPro — gBwNpKmRuWY @ 00:23:56].'},
+                            {'name': 'surcharge_rule_checklist',
+                             'type': 'textarea',
+                             'prompt': 'If surcharging, document each requirement: credit-only '
+                                       'application, the percentage cap, notice given to the acquirer, '
+                                       'door and till signage, and a separate receipt line. Record the '
+                                       'date each item was completed and who confirmed it.',
+                             'example': 'Surcharge set at 3%, capped at cost of acceptance and never above '
+                                        '3% under Visa, credit only, with debit and prepaid excluded even '
+                                        'when debit runs as credit [POS Nexus — m1nRWuyd4rI @ 00:00:36]. '
+                                        'Acquirer notified 30 days ahead, signage posted at the door and '
+                                        'till, and the receipt shows the surcharge on its own line.'},
+                            {'name': 'debit_block_test',
+                             'type': 'text',
+                             'prompt': 'Test whether the terminal or POS software stops the surcharge on '
+                                       'every debit card, whether the customer enters a PIN or the card is '
+                                       'run as credit. Record the test cards used, the outcome, and any '
+                                       'configuration change required.',
+                             'example': 'Ran a debit card with PIN and again as credit; the second attempt '
+                                        'fired the surcharge. Reprogrammed the terminal so the fee never '
+                                        'applies to debit, because Ryan Anthony is clear that a debit card '
+                                        'is a debit card no matter how it is run [Ryan Anthony — '
+                                        'KsqD8Ch93YI @ 00:07:07]. Retest passed on both entry methods.'},
+                            {'name': 'dual_price_display_audit',
+                             'type': 'textarea',
+                             'prompt': 'Audit every place a price appears, including shelf labels, menus, '
+                                       'the website, and quotes, and confirm the POS stores two real '
+                                       'prices. Flag any non-cash adjustment fee that is added and then '
+                                       'discounted back off for cash payments.',
+                             'example': 'Menus and website showed one price while the POS added a '
+                                        'percentage at the till; every price must exist twice, with two '
+                                        'real prices stored [POS Nexus — ZAtYPaS2xkA @ 00:01:04]. The old '
+                                        'non-cash adjustment fee was removed, since the brands treat it as '
+                                        'a surcharge under the 3% cap and debit ban [Ryan Anthony — '
+                                        'KsqD8Ch93YI @ 00:12:13].'},
+                            {'name': 'statement_offset_rate',
+                             'type': 'text',
+                             'prompt': 'Calculate the statement rate the processor must charge so a dual '
+                                       'pricing card price nets the merchant zero. Show volume before and '
+                                       'after the card price, the extra revenue amount, and the resulting '
+                                       'offset percentage on the statement.',
+                             'example': 'Card price set at 3.99% on $100,000 in card sales lifts volume to '
+                                        '$103,990. Fees also run on the extra $3,990, so 3,990 divided by '
+                                        '103,990 gives roughly 3.84%, the rate that nets the merchant zero '
+                                        '[CCSalesPro — ZRmKamGyTPc @ 00:03:07]. Quoting 3.99% on the '
+                                        'statement would leave the merchant slightly out of pocket.'},
+                            {'name': 'competitor_statement_check',
+                             'type': 'textarea',
+                             'prompt': "When a competitor's dual pricing statement shows almost no fees, "
+                                       'document where the real cost is hiding. Record any batch pull, '
+                                       'consumer credit line, or daily discount matching a flat rate above '
+                                       '3% before you quote against it.',
+                             'example': 'Competitor statement showed near-zero monthly fees, but each '
+                                        'daily deposit carried a discount matching a flat rate above 3%, '
+                                        'exactly the pattern CCSalesPro tells agents to hunt for before '
+                                        'quoting [CCSalesPro — ZRmKamGyTPc @ 00:04:04]. Effective rate '
+                                        'calculated as total card fees divided by card sales came to 3.6%, '
+                                        'which became the real comparison number [POS Nexus — ZAtYPaS2xkA '
+                                        '@ 00:02:07].'},
+                            {'name': 'fine_exposure_plan',
+                             'type': 'textarea',
+                             'prompt': 'List every legacy program element that could draw a fine, the fine '
+                                       'amounts at stake, and the deadline to fix each one. Note what you '
+                                       'will personally fund, such as menu reprints, to get the merchant '
+                                       'compliant before secret shoppers arrive.',
+                             'example': 'Restaurant on a legacy cash discount program faces a $1,000 first '
+                                        'fine, plus $5,000 more if not fixed within 30 to 45 days [Ryan '
+                                        'Anthony — KsqD8Ch93YI @ 00:11:14]. I am paying for the menu '
+                                        'redesign and reprint myself so the merchant becomes compliant '
+                                        'fast, because secret shoppers are still handing down fines '
+                                        '[Global Legal Law Firm — rj9tjHr1nNo @ 00:10:55].'},
+                            {'name': 'residual_projection',
+                             'type': 'textarea',
+                             'prompt': 'Project your residual book using a realistic per-account figure '
+                                       'and your actual split. Show how many new accounts per month you '
+                                       'expect, the delay before residuals arrive, and the merchant count '
+                                       'needed to hit your monthly income target with a buffer.',
+                             'example': "Shepard's average is about $30 per account monthly, roughly two "
+                                        'months behind the sale, so 10 sales add about $300 [CCSalesPro — '
+                                        'VNId5AUIElE @ 00:05:54]. For a $10,000 target at $400 per client, '
+                                        'the math gives 35 merchants, plus a 15-client buffer for cancels, '
+                                        'landing on 50 [Residual Builders — 4z4EyZ1Rkbk @ 00:05:05].'},
+                            {'name': 'split_vs_schedule_a',
+                             'type': 'textarea',
+                             'prompt': 'Compare competing processor offers by projected residual per month '
+                                       "rather than headline split. Record each processor's split, upfront "
+                                       'bonus, and whether it shared its Schedule A, then note any offer '
+                                       'where a large split hides inflated costs.',
+                             'example': 'Processor A offered an 80% split with an upfront bonus but raised '
+                                        'Schedule A costs, so it pays a big piece of a smaller pie '
+                                        '[CCSalesPro — ruAqtp4NcPA @ 00:04:41]. Processor B shared its '
+                                        'Schedule A at roughly the 50% industry-average split [CCSalesPro '
+                                        '— ruAqtp4NcPA @ 00:03:50] and projected more residual per month '
+                                        'across three merchant sizes.'},
+                            {'name': 'agreement_protection_terms',
+                             'type': 'textarea',
+                             'prompt': 'Before signing a single merchant, record the exact agreement '
+                                       'language on vesting, residual rights after you stop selling, and '
+                                       'what happens on sale or termination of the company. Note how the '
+                                       'processor handles rate increases and support contact.',
+                             'example': 'Joe Wagner lost an entire book after 3.5 years over one sentence '
+                                        'in a clause [Joe Wagner | Merchant Services & Passive Income — '
+                                        'Em1hM53SuTA @ 00:04:20]. Vesting and post-termination residual '
+                                        'rights are now confirmed in writing. The processor commits to no '
+                                        'six-month rate and fee increases, and support keeps me as the '
+                                        "merchants' primary point of trust."}],
+                 'completion_gate': 'Worksheet 3 is complete when the pass-through method is chosen and '
+                                    'documented, surcharge rules or dual price displays are verified, '
+                                    'debit blocking passes retest, the statement offset rate is '
+                                    'calculated, all fine exposures have dated fixes, competing processors '
+                                    'are compared on Schedule A residual, and vesting and residual rights '
+                                    'are confirmed in writing.'},
+                {'worksheet_id': 'ws-04',
+                 'number': 4,
+                 'title': 'Portfolio Asset Audit and ISO Ladder Plan',
+                 'purpose': 'Turn signed merchants into a durable, sellable residual asset. Lock down '
+                            'ownership language, drive activations, and test support. Model attrition and '
+                            'buyout value, then choose the right rung on the ISO ladder before scaling '
+                            'past what your back office can handle.',
+                 'chapter_ref': 'Q7-Q8',
+                 'instructions': ['Pull your current ISO or agent agreement, Schedule A, and latest '
+                                  'residual report before filling in any field.',
+                                  'Complete the ownership field first; if the residual is not yours in '
+                                  'writing, pause all new boarding until it is.',
+                                  'Count only merchants that are approved, boarded, and processing live '
+                                  'transactions when tallying your book.',
+                                  'Price any buyout on the upfront check alone, and obtain an independent '
+                                  'outside bid before responding to your ISO.',
+                                  'Revisit the registration and scaling fields each quarter as your '
+                                  'monthly MID count and support load change.'],
+                 'fields': [{'name': 'residual_ownership_clause',
+                             'type': 'textarea',
+                             'prompt': 'Quote the exact sentence in your ISO or agent agreement that '
+                                       'states who owns the residual, whether the book leaves with you, '
+                                       'and what happens on termination or sale. Note any wording you '
+                                       'could not confirm in writing before boarding merchants.',
+                             'example': 'My draft says residuals survive termination, but the '
+                                        'sale-of-company language is blank. Joe Wagner lost residuals for '
+                                        'four years with the wrong ISO [Joe Wagner | Merchant Services & '
+                                        'Passive Income — 6fKRmYMx0m8 @ 00:04:00], and CCSalesPro says '
+                                        'most agreements deny agents the asset [CCSalesPro — RMbvSJJrPMQ @ '
+                                        '00:01:43], so no merchant gets signed until that blank is '
+                                        'filled.'},
+                            {'name': 'activation_tracker',
+                             'type': 'textarea',
+                             'prompt': 'List every merchant signed in the last 90 days and mark whether '
+                                       'each is approved, boarded, and running live transactions. Flag any '
+                                       'free terminal sitting unactivated and record the date you called '
+                                       'the owner to plug it in.',
+                             'example': 'Twelve deals signed, eleven active, one terminal still boxed at a '
+                                        'cafe; I called the owner Tuesday to plug it in. Wagner says '
+                                        'activations are the most important part [Joe Wagner | Merchant '
+                                        'Services & Passive Income — j2tVhd1OiOw @ 00:00:00], and Finance '
+                                        'Blueprint counts a merchant only after its first live transaction '
+                                        '[Finance Blueprint — _wQk1Avcku8 @ 00:08:59].'},
+                            {'name': 'support_line_test',
+                             'type': 'textarea',
+                             'prompt': "Call the ISO's support line yourself before committing. Record who "
+                                       'merchants actually reach, the support hours, the training offered, '
+                                       'and the escalation path, then note whether support keeps you as '
+                                       "the merchant's primary point of trust and never reprices your "
+                                       'merchants.',
+                             'example': 'Rang the line at 7 p.m.: a live rep answered, offered agent '
+                                        'training, and named a tier-two escalation contact. Wagner warns '
+                                        'weak support turns five signed accounts into three lost [Joe '
+                                        'Wagner | Merchant Services & Passive Income — rStTwQf0M98 @ '
+                                        '00:03:42], and Electronic Money Company flags support that '
+                                        'reprices merchants through the 1-800 line [Electronic Money '
+                                        'Company — HAEcBxhwNkI @ 00:03:03].'},
+                            {'name': 'attrition_and_pricing_model',
+                             'type': 'textarea',
+                             'prompt': 'Enter your active account count, the basis points you price above '
+                                       'cost, and your split. Then project annual attrition at the '
+                                       'industry rate and estimate how your pricing choice changes what '
+                                       'the book would fetch at buyout.',
+                             'example': 'Two hundred accounts on a 50 percent split. At 5 basis points the '
+                                        'book pays about $600 a month and buys out near $5,000; at 15 '
+                                        'basis points the buyout climbs to about $30,000 [CCSalesPro — '
+                                        'iouhW_rMFI0 @ 00:02:48]. At 23 to 24 percent attrition '
+                                        '[CCSalesPro — iouhW_rMFI0 @ 00:02:16], I lose roughly 47 accounts '
+                                        'a year.'},
+                            {'name': 'buyout_offer_review',
+                             'type': 'textarea',
+                             'prompt': 'Break down any residual buyout offer into the upfront multiple and '
+                                       'each earn-out or holdback. Record whether you obtained an '
+                                       'independent third-party bid, whether the ISO holds right of first '
+                                       'refusal, and whether the upfront check alone satisfies you.',
+                             'example': 'My ISO offered 20X on $2,000 a month, split 12X upfront plus two '
+                                        '4X earn-outs. Nine times out of ten those earn-outs never pay '
+                                        '[CCSalesPro — Aqf6gQvEgnw @ 00:01:43], so I am valuing only the '
+                                        '$24,000 upfront, taking an extra week, and requesting an outside '
+                                        'bid since the ISO may match it [CCSalesPro — qaQA_RMy-_c @ '
+                                        '00:01:57].'},
+                            {'name': 'retention_positioning',
+                             'type': 'textarea',
+                             'prompt': 'Describe how you will position yourself beyond rates when '
+                                       'prospecting. Name the merchant pain you lead with, such as unhappy '
+                                       'support or software fit, and explain how that positioning keeps '
+                                       'accounts active long enough to compound the book.',
+                             'example': 'Wagner says if rates is all you are selling you are already way '
+                                        'behind [Joe Wagner | Merchant Services & Passive Income — '
+                                        '3FBYq-eEJOk @ 00:00:00]. I open with service: many owners are '
+                                        'unhappy with Clover support [Electronic Money Company — '
+                                        '4LJj9o_IDnQ @ 00:02:03], so I promise a direct line to me and a '
+                                        'same-day fix.'},
+                            {'name': 'referral_channel',
+                             'type': 'text',
+                             'prompt': 'Identify one software company or vertical partner whose merchants '
+                                       'you could refer into your book. State the revenue cut you would '
+                                       'offer, and list the qualification tells you will use to screen B2B '
+                                       'prospects that partner sends.',
+                             'example': 'A local invoicing software vendor; I will offer a revenue cut for '
+                                        'referrals, the move Nathan made after a restart [Residual Income '
+                                        'for Beginners — GNbDvrGPlnM @ 00:26:26]. Each referred prospect '
+                                        'gets screened on three tells: uses a CRM, sends invoices, or runs '
+                                        'complex workflows or Stripe [DepositFix — 4idRDNmCnvE @ '
+                                        '00:01:05].'},
+                            {'name': 'entity_and_branding_setup',
+                             'type': 'text',
+                             'prompt': 'Record the legal entity that signs your agent agreement, and list '
+                                       'which branded items come bundled into the residual split: '
+                                       'statements, applications, dashboards, and support. Note any '
+                                       'per-seat or per-agent fees the partner charges instead before you '
+                                       'sign.',
+                             'example': 'The agreement is signed by my LLC, not me personally, from day '
+                                        'one [CCSalesPro — KFKUpD0sDxk @ 00:02:25]. Branded statements, '
+                                        'applications and dashboards are included in the split; support is '
+                                        'masked under my brand, which Shaw Merchant Group offers through '
+                                        'its call centers [Scott Shaw — wOJ4s_5GRDY @ 00:02:20]. No '
+                                        'per-seat fees.'},
+                            {'name': 'registration_decision',
+                             'type': 'textarea',
+                             'prompt': 'Decide whether to stay an agent, join a branded partner program, '
+                                       'or register your own ISO. Compare registration cost and time '
+                                       'against expected sales lift, and record the per-authorization buy '
+                                       'cost and upfront bonuses each partner program advertises.',
+                             'example': 'Registration runs about six months and $30,000 to $40,000 with no '
+                                        'real sales lift [CCSalesPro — KFKUpD0sDxk @ 00:04:55], so I am '
+                                        'staying under a partner. North American Bancard quotes 1.2 cents '
+                                        'per authorization at zero basis points, Shaw 1.5 cents, with up '
+                                        'to $10,000 upfront per merchant [Scott Shaw — tjdQFiCG9xo @ '
+                                        '00:00:18].'},
+                            {'name': 'scaling_infrastructure',
+                             'type': 'textarea',
+                             'prompt': 'Estimate your monthly MID target for the next year and state who '
+                                       'owns underwriting, technical support, and customer service at that '
+                                       'pace. Record your retained margin per $100 sale and your '
+                                       'telemarketing appointment close rate assumptions.',
+                             'example': 'Target is 40 MIDs a month, so support stays outsourced; past 100 '
+                                        'a month I must bring underwriting, tech and service in-house '
+                                        '[Merchant Service Slayers — pHeumyF-Dw4 @ 00:05:00]. I plan on '
+                                        '22.4 cents retained per $100 sale after a 30% residual [Finance '
+                                        'Blueprint — _wQk1Avcku8 @ 00:06:22] and a 5-10% new-agent close '
+                                        'rate.'}],
+                 'completion_gate': 'Complete when the agreement confirms in writing that you own the '
+                                    'residual and the book leaves with you, every signed merchant is '
+                                    'activated or has a dated follow-up call, the support line has been '
+                                    'tested personally, and any buyout offer has an independent '
+                                    'third-party bid on file.'},
+                {'worksheet_id': 'ws-05',
+                 'number': 5,
+                 'title': 'High-Risk Defense and ATM Unit Economics Ledger',
+                 'purpose': 'Keep high-risk merchants under card network thresholds with routed processing '
+                            'and pre-dispute alerts. Then apply the same discipline to ATM unit economics: '
+                            'realistic withdrawals, every fee in the waterfall, an all-in startup budget, '
+                            'and bank access for vault cash.',
+                 'chapter_ref': 'Q9-Q10',
+                 'instructions': ["Gather last month's chargeback, fraud report, and dispute counts "
+                                  'alongside card-not-present sales volume.',
+                                  'Never split one business across accounts to mask a ratio; Visa can fine '
+                                  '$25,000 per merchant, per month.',
+                                  'Model ATM revenue from counted foot traffic and realistic withdrawals, '
+                                  'never from the sales pitch.',
+                                  'Order no hardware until a signed location contract is in hand and vault '
+                                  'cash has an ATM-friendly bank.',
+                                  'Recalculate the threshold position and the per-machine waterfall every '
+                                  'month and log what changed.'],
+                 'fields': [{'name': 'risk_classification',
+                             'type': 'textarea',
+                             'prompt': "Describe the merchant's vertical, any prior account closures, and "
+                                       "whether its products appear on the processor's restricted "
+                                       'businesses list. Record the reserve percentage and release window '
+                                       'the acquiring bank proposes, and how you disclosed past issues '
+                                       'honestly.',
+                             'example': 'Supplement brand, closed once by a prior provider; we disclosed '
+                                        'it plainly rather than tweaking the business description '
+                                        '[PaymentProcessorCom — q9nKd4oVwnw @ 00:01:50]. I spent five '
+                                        'minutes on the restricted list first [Funnelish — -G2UpQAf8L0 @ '
+                                        '00:03:22]. The bank wants a reserve released in about 3 to 6 '
+                                        'months if all goes well [PaymentCloud — XwCDjPAfKtY @ 00:03:17].'},
+                            {'name': 'network_threshold_monitor',
+                             'type': 'textarea',
+                             'prompt': "Record last month's card-not-present sales, fraud reports, "
+                                       "disputes, and chargebacks. Calculate the merchant's position "
+                                       'against Visa and Mastercard monitoring thresholds, and note how '
+                                       'many reports or chargebacks remain before either program would '
+                                       'flag the account in the coming month.',
+                             'example': "Visa's VAMP flag hits at 1.5% with at least 1,500 fraud reports "
+                                        'and disputes; Mastercard starts at 100 chargebacks and 1.5% of '
+                                        'prior-month transactions [High-Risk Merchant Accounts | Adaptiv '
+                                        'Payments — NdTgGwtE_N4 @ 00:00:51]. We logged 62 chargebacks on '
+                                        "9,000 transactions, 0.69%, leaving 38 before Mastercard's count "
+                                        'trips. Visa tightening toward 0.5% stays on watch.'},
+                            {'name': 'pre_shipment_fraud_rule',
+                             'type': 'textarea',
+                             'prompt': 'Write the rule that stops suspect orders before shipment rather '
+                                       'than refunding them afterward. Specify the signals that hold an '
+                                       'order, who reviews it, and how fast, so that issuer fraud reports '
+                                       'never reach the network ratio.',
+                             'example': 'Any order our review queue flags as suspect is held unshipped, '
+                                        'and a manager clears it within four hours. Once a bank logs a '
+                                        "fraud report it counts toward Visa's ratio even if we refund "
+                                        'later [High-Risk Merchant Accounts | Adaptiv Payments — '
+                                        'NdTgGwtE_N4 @ 00:02:37], so a refund is never treated as the '
+                                        'fix.'},
+                            {'name': 'routing_stack',
+                             'type': 'textarea',
+                             'prompt': 'Map the multi-processor routing stack: the default processor, '
+                                       'where high-risk SKUs route, where declines retry, and the backup '
+                                       'merchant account. Confirm the gateway and merchant account are not '
+                                       'bundled with one provider that could shut everything down.',
+                             'example': 'Stripe is the default, high-risk SKUs route to Authorize.net, and '
+                                        'declines retry on NMI. Because Stripe and PayPal bundle gateway '
+                                        'and merchant account, one decision can shut everything at once '
+                                        '[Funnelish — -G2UpQAf8L0 @ 00:01:18]. The backup rule is live '
+                                        'before we scale, since a 10X volume jump overnight gets noticed '
+                                        '[Funnelish — -G2UpQAf8L0 @ 00:06:03].'},
+                            {'name': 'alert_enrollment',
+                             'type': 'textarea',
+                             'prompt': 'List each pre-dispute alert service you will enroll in, its '
+                                       'expected go-live time, and its per-alert price. Note any overlap '
+                                       'that could produce double alerts and double fees on the same '
+                                       'dispute, and how you will handle duplicates.',
+                             'example': 'Ethoca at $29 per alert, RDR and CDRN at $15 each, paying only '
+                                        'for alerts received [Chargeback — sH9CslJpDeA @ 00:01:33]. CDRN '
+                                        'and Ethoca can be live in under 24 hours [Scott E. Adams | '
+                                        'Chargeback Expert — gROmfVmEsYs @ 00:02:13]. Banks tied to both '
+                                        'vendors can trigger double fees [Chargeflow — sBnXe7LYFO8 @ '
+                                        '00:06:18], so overlapping alerts get reviewed weekly.'},
+                            {'name': 'rdr_reconciliation',
+                             'type': 'textarea',
+                             'prompt': 'Describe how you reconcile every RDR case against processor '
+                                       'chargeback reports each month. Name who checks for the missing M '
+                                       'flag downstream, and how Verifi Inform descriptor data feeds your '
+                                       'Compelling Evidence 3.0 and Order Insight responses.',
+                             'example': 'Every Friday the ops lead matches RDR resolutions to the '
+                                        'processor report, because downstream ISOs and gateways often miss '
+                                        'the M flag and log a chargeback [Scott E. Adams | Chargeback '
+                                        'Expert — 5mi35dvcRrA @ 00:04:08]. Verifi Inform pulls exact '
+                                        'descriptors per transaction and serves as our Compelling Evidence '
+                                        '3.0 feedback loop [Scott E. Adams | Chargeback Expert — '
+                                        'gJ_2exzq6FA @ 00:03:19].'},
+                            {'name': 'atm_revenue_waterfall',
+                             'type': 'textarea',
+                             'prompt': 'Build the per-machine monthly waterfall: expected withdrawals, '
+                                       'surcharge, gross, network or processing fees, location share, and '
+                                       'back-end or connectivity costs. Show the operating surplus and '
+                                       'what share of gross disappears before it reaches you. Use '
+                                       'realistic transaction counts, not pitch numbers.',
+                             'example': '200 withdrawals at $3.50 gross $700; minus $100 network fees, '
+                                        '$140 location share and $90 back-end leaves a $370 surplus '
+                                        '[MASTER FINANCE TV — pxfdlwdIz2E @ 00:01:28]. Nearly half of '
+                                        'gross vanishes, and 100 transactions at $5 is $500 gross, not '
+                                        '$500 of profit [Future Investor — l2IVnP9Bnwk @ 00:04:15].'},
+                            {'name': 'startup_budget',
+                             'type': 'textarea',
+                             'prompt': 'Itemize the all-in startup cost for one machine: hardware, vault '
+                                       'cash, installation, entity formation, bank and strap fees, '
+                                       'scouting gas, and a cash reserve. Compare your total against the '
+                                       'three-thousand-dollar sales pitch and explain the gap.',
+                             'example': "My itemized total lands at $6,900, inside Juan Jeronimo's $5,500 "
+                                        'to $8,500 all-in range [Juan Jeronimo — 2iQEC3gV3oo @ 00:00:42]. '
+                                        'Philip Webb warns that students budgeting on the $3,000 pitch '
+                                        'underestimate working capital by up to 300% once formation, strap '
+                                        'fees, scouting gas and extra vault cash hit [Philip Webb — '
+                                        'nAL1HBqHAl8 @ 00:01:31].'},
+                            {'name': 'site_traffic_count',
+                             'type': 'textarea',
+                             'prompt': 'Record two weeks of foot-traffic counts at the candidate site, '
+                                       'then project monthly ATM users at four to eight percent of '
+                                       'traffic. State whether the venue clears the volume band where '
+                                       'machines net money or falls into the bleeding zone.',
+                             'example': 'Counted 3,600 visitors over two weeks, about 7,200 a month '
+                                        '[CAPITAL COACH — R1wscXZLkbw @ 00:12:27]. At 4% to 8% usage that '
+                                        'projects 288 to 576 withdrawals [The Business Guy | Asset '
+                                        'Protection Planners — gaNeKJoK-74 @ 00:11:20], comfortably above '
+                                        'the sub-100 venues that bleed and within reach of the $280 to '
+                                        '$570 net band.'},
+                            {'name': 'vault_cash_banking',
+                             'type': 'textarea',
+                             'prompt': 'Name the ATM-friendly bank holding your vault cash, confirm the '
+                                       'entity name avoids the word ATM, and describe how you separate '
+                                       'surcharge funds from bulk cash. Note any machine running empty '
+                                       'between refills before adding locations.',
+                             'example': 'Vault cash sits at an ATM-friendly bank, never a retail checking '
+                                        'account [Lines & Gains — -6VRYcYBnSA @ 00:07:45]. The LLC name '
+                                        "leaves out 'ATM' because major banks treat ATMs as high-risk "
+                                        '[Juan Jeronimo — eSIQwH_sArI @ 00:02:16]. Two accounts: one for '
+                                        'surcharge, one for bulk cash [Juan Jeronimo — eSIQwH_sArI @ '
+                                        '00:08:32]. No machine ran empty last month.'}],
+                 'completion_gate': 'Complete when the merchant sits below every Visa and Mastercard '
+                                    'monitoring threshold with alerts live and reconciled, a backup '
+                                    'account and routing rule are active, and each ATM site shows two '
+                                    'weeks of traffic counts, a positive operating surplus, an itemized '
+                                    'all-in budget, and vault cash held at an ATM-friendly bank.'},
+                {'worksheet_id': 'ws-06',
+                 'number': 6,
+                 'title': 'ATM Placement, Agreements, Hardware, and Vault Control',
+                 'purpose': 'Lock in high-traffic, cash-dependent ATM placements on enforceable '
+                            'agreements, and set surcharges that hold up against competitors. Buy and '
+                            'install hardware that meets the security floor, and control vault cash so no '
+                            'vaulter, location, or breach clause can drain the route.',
+                 'chapter_ref': 'Q11-Q12',
+                 'instructions': ['Scout competitor surcharges nearby and meet the true decision maker '
+                                  'face to face before discussing terms.',
+                                  'Fix your minimum take per transaction in writing before every location '
+                                  'negotiation begins.',
+                                  'No signed location agreement, no machine, with no handshake exceptions '
+                                  'for any owner.',
+                                  'Clear every used machine with your processor before any payment changes '
+                                  'hands with the seller.',
+                                  'Reconcile vaulted machines against settlement deposits daily and '
+                                  'monthly, logging every variance found.'],
+                 'fields': [{'name': 'location_prospect_profile',
+                             'type': 'textarea',
+                             'prompt': 'Profile the target location: business type, cash dependency, foot '
+                                       'traffic, and any existing machine on site. Record the real '
+                                       "decision maker's name, confirm you met them face to face, and note "
+                                       'whether an incumbent box is out of service.',
+                             'example': 'Cash-only barbershop with steady walk-ins; I met the owner in '
+                                        'person, not a relative relaying messages, since a go-between '
+                                        'forces a full restart [Philip Webb — cH26OWh_YDI @ 00:01:40]. The '
+                                        'incumbent machine wears an out-of-service sticker, which Otsuji '
+                                        'used as the main selling point for a swap [Chad Otsuji ATM '
+                                        'Business — pxCV1SkPnK4 @ 00:04:09].'},
+                            {'name': 'surcharge_setting',
+                             'type': 'text',
+                             'prompt': 'Set the surcharge for this location after scouting competitor fees '
+                                       'nearby. State the national norm you anchor to, any event or venue '
+                                       'premium you apply, and whether you leave room to negotiate if the '
+                                       'owner later wants a share.',
+                             'example': 'Competitors two blocks away charge $3, matching the national norm '
+                                        'Webb reports [Philip Webb — r5NRe-C_aM0 @ 00:08:06]. The owner '
+                                        'says they need no money, so I price at $2.50 to keep negotiating '
+                                        'room if they want something later [Philip Webb — r5NRe-C_aM0 @ '
+                                        '00:02:59]. Weekend events nearby could justify $4.50.'},
+                            {'name': 'split_negotiation',
+                             'type': 'textarea',
+                             'prompt': 'Write down your minimum take per transaction before the meeting, '
+                                       "the owner's opening ask, and the final split you agreed. Explain "
+                                       'how you defended your floor and whether you offered volume tiers '
+                                       'instead of a flat percentage.',
+                             'example': 'Floor set at $2 on a $3 surcharge. The owner asked for 50/50; I '
+                                        'countered the way Otsuji did, one dollar to the owner and two to '
+                                        'me, roughly 33 and 66 percent [Chad Otsuji ATM Business — '
+                                        'pxCV1SkPnK4 @ 00:05:22]. Holding at $2 kept the deal profitable '
+                                        '[Chad Otsuji ATM Business — pxCV1SkPnK4 @ 00:04:46].'},
+                            {'name': 'agreement_clauses',
+                             'type': 'textarea',
+                             'prompt': 'List the clauses in your signed location agreement: term length, '
+                                       'auto-renewal, surcharge-raise rights with notice, breach payout '
+                                       'formula, cancellation fee, and any buyout opt-out. Confirm the '
+                                       'machine is not installed until the owner has verified the '
+                                       'agreement.',
+                             'example': 'Five-year auto-renewing term, no trial period, and surcharge '
+                                        'raises allowed with notice. The breach clause bills remaining '
+                                        'surcharge: 100 transactions at $2 with 24 months left is $4,800 '
+                                        'plus a $100 cancellation fee [Philip Webb — 9QGfLH_pm0o @ '
+                                        '00:01:35]. I removed a $5,000 buyout opt-out after Webb called '
+                                        'that a significant risk [Philip Webb — kbluVa_rgsM @ 00:06:33].'},
+                            {'name': 'signing_language_and_raises',
+                             'type': 'textarea',
+                             'prompt': 'Script the words you use to close the agreement and the notice you '
+                                       'will print on monthly statements before any surcharge raise. '
+                                       'Estimate how many owners in your route will push back and what '
+                                       'share of the raise you would offer them.',
+                             'example': 'I never say sign or contract; I ask the owner to verify the '
+                                        'agreement [Philip Webb — OHndNgTdq3Y @ 00:01:17]. Statements '
+                                        'carry a 30 to 60 day raise notice, and Webb sees about five '
+                                        'pushbacks per 100 machines [Philip Webb — FhOgcbeefS0 @ '
+                                        '00:01:47]. An owner wanting a slice moves from 50 cents to 55 on '
+                                        'a fresh five-year agreement.'},
+                            {'name': 'hardware_purchase_check',
+                             'type': 'textarea',
+                             'prompt': 'For any machine you plan to buy, record the brand, model number, '
+                                       'manufacture date, software version, EMV and TLS 1.2 support, and '
+                                       'whether the seller holds both passwords and the combo. Note your '
+                                       "processor's sign-off before payment.",
+                             'example': 'Used Genmega unit: seller supplied model number, manufacture date '
+                                        'and software version, plus both passwords and the combo, and my '
+                                        'processor cleared it before I paid [ATMDepot - Make Money with '
+                                        'ATM Machines — ETBd5FI2JHY @ 00:02:28]. I passed on a Hyosung lot '
+                                        "after Otsuji's warning that those machines are prone to "
+                                        'jackpotting [Chad Otsuji ATM Business — 6zaxeyp07Zg @ 00:02:41].'},
+                            {'name': 'install_and_programming',
+                             'type': 'textarea',
+                             'prompt': 'Document delivery and setup: the tip indicator reading at '
+                                       'delivery, transport orientation, hole caps installed, clock set to '
+                                       'current time, languages enabled, and confirmation the surcharge '
+                                       'setting is enabled so customers are actually charged before the '
+                                       'first transaction.',
+                             'example': 'Tip indicator showed metallic silver, and the unit rode back-down '
+                                        'with the front facing the sky [ATM Connect — ujDLOkqXvfg @ '
+                                        '00:00:13]. Black caps are on every hole to keep rodents off the '
+                                        'wires [ATM Connect — ujDLOkqXvfg @ 00:04:47]. Clock set, Spanish '
+                                        'enabled [Rocket ATM — gS2sjD2NYOU @ 00:12:21], and surcharge '
+                                        'confirmed enabled [Rocket ATM — gS2sjD2NYOU @ 00:04:02].'},
+                            {'name': 'vaulter_agreement',
+                             'type': 'textarea',
+                             'prompt': 'Summarize the signed vaulter agreement: per-transaction pay, '
+                                       'minimum fill level, refill threshold, service response time, '
+                                       'penalties for missed fills, and the lead clause assigning any new '
+                                       'locations the vaulter hears about to you. Attach the signed copy.',
+                             'example': "Vaulter earns 95 cents per transaction, inside Webb's 70 cents to "
+                                        '$1.25 standard [Philip Webb — 6k0qIHsvs0M @ 00:05:06]. Fill '
+                                        'level, refill threshold, response time and penalties are written '
+                                        'in before they touch the machine [Philip Webb — 6k0qIHsvs0M @ '
+                                        '00:04:05], and any lead from my merchant is mine, paid as a '
+                                        'referral fee [Philip Webb — 6k0qIHsvs0M @ 00:06:54].'},
+                            {'name': 'cash_reconciliation',
+                             'type': 'textarea',
+                             'prompt': 'Describe your daily and monthly reconciliation of every vaulted '
+                                       'machine against settlement deposits. Record weekly vault-cash '
+                                       'needs per busy location, total cash committed across the route, '
+                                       'and the months to return on that parked capital. Flag any variance '
+                                       'immediately.',
+                             'example': 'Each morning I match dispensed totals to settlement deposits, '
+                                        'because a vault casher can move money with a click of a mouse '
+                                        '[Philip Webb — zHPWp60QbG4 @ 00:06:39]. Busy locations need '
+                                        '$4,200 to $6,200 a week, $16,000 minimum across three [ATM '
+                                        "Connect — kXEFZM-F90k @ 00:10:13]; Zaback's five self-loaded "
+                                        'machines tied up $112,500 for almost two years [Austin Zaback — '
+                                        'gvvB3u1AMMI @ 00:12:05].'},
+                            {'name': 'cash_vertical_and_card_alternative',
+                             'type': 'textarea',
+                             'prompt': 'For a dispensary or other cash-heavy placement, record the '
+                                       'surcharge split, who loads the cash, and your background-check '
+                                       'status. Then compare any high-risk card account offered as an '
+                                       'alternative, listing rate, per-authorization fee, chargeback fee, '
+                                       'and rolling reserve terms.',
+                             'example': 'Dispensary split is 50/50 since I load cash, at the bottom of the '
+                                        '60 percent to 50/50 range Webb hears [Philip Webb — ZN0dj7u6nmo @ '
+                                        '00:03:11]. Background check cleared [ATMDepot - Make Money with '
+                                        'ATM Machines — Cb9qwLOH7y0 @ 00:02:08]. Durango lists 1.95% to '
+                                        '4.95% plus 15 to 25 cents, $15 to $25 chargebacks, 5 to 10% '
+                                        'reserve [Megalith — lnoavHYKfcI @ 00:01:28].'}],
+                 'completion_gate': 'Complete when every placement has a verified written agreement with '
+                                    'breach and raise clauses, a surcharge set against scouted '
+                                    'competitors, processor-cleared EMV and TLS 1.2 hardware with the '
+                                    'surcharge enabled, a signed vaulter agreement containing a lead '
+                                    'clause, and daily reconciliation against settlement deposits running '
+                                    'without unexplained variances.'}]}

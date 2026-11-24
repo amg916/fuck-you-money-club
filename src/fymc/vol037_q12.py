@@ -1,723 +1,800 @@
 from __future__ import annotations
 
-CHAPTER_12 = {
-    "id": "Q12",
-    "chapter_id": "Q12",
-    "chapter_number": 12,
-    "question_number": 12,
-    "slug": "first-thirty-day-launch-sprint-kill-fix-scale",
-    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching saas discount brokerage & gpo arbitrage, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
-    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
-    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
-    "subtitle": "A Four-Person CSP, VIP Marketplace, Telarus and GPO Sprint With Funded NCE Exposure, ASC 606 Ledgers and Measured Renewal Economics",
-    "layout_template": "thirty_day_plan",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #37, SaaS Discount Brokerage & GPO Arbitrage, holds Rank #04 of 37 "
-        "with a 94/100 Money-to-Manpower Score. This sprint maps 12 operator plays "
-        "into a controlled four-person launch: discover renewal cliffs, establish authorized "
-        "channel economics, verify savings, and collect retained fees without warehousing "
-        "customer subscription risk. Days 1–30 produce evidence and executable offers; "
-        "Days 60 and 90 determine whether acquisition deserves more capital. The canonical "
-        "annual owner-profit cases remain $32,000 Conservative, $225,000 Base, and "
-        "$522,000 Scaled, supported by $100,000, $500,000, and $900,000 of retained "
-        "operator revenue. Launch thresholds below are explicit management assumptions, "
-        "not extrapolated scorecard outputs. A $5,000 startup allocation, bounded contractor "
-        "hours, and zero uncovered annual NCE exposure keep a delayed first deal survivable."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual retained operator revenue; excludes client subscription spend",
-            "note": "32% net margin; $32,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$500,000",
-            "context": "Annual retained operator revenue; excludes client subscription spend",
-            "note": "45.0% net margin; $225,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual retained operator revenue; excludes client subscription spend",
-            "note": "58% net margin; $522,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Days 1–7: Establish Twelve Plays Without Building Twelve Businesses",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a narrow buyer: organizations with 50–250 employees, a named "
-                    "subscription owner, and a documented renewal inside 120 days. Candidate #37 "
-                    "combines brokerage and aggregation, but the launch pod cannot operate twelve "
-                    "independent sales motions. Use this chapter's working map of twelve plays: "
-                    "P01 DNS/MX/SPF account qualification; P02 renewal-cliff discovery; P03 Microsoft "
-                    "CSP authorized procurement; P04 Microsoft CPOR attribution where the applicable "
-                    "program supports it; P05 Adobe VIP Marketplace procurement; P06 Zoom Up "
-                    "partner sourcing; P07 Telarus master-agent residuals; P08 Avant master-agent "
-                    "residuals; P09 private GPO membership aggregation; P10 GPO volume-bracket "
-                    "administrative rebates; P11 benchmark price-floor audits; and P12 contingent "
-                    "renewal shared-savings collection. These are an operating decomposition of the "
-                    "volume's stated mechanisms, rather than twelve asserted vendor entitlements. "
-                    "P01 and P02 feed every route; P11 tests whether an offer creates measurable "
-                    "value. Select one authorized fulfillment route for the first customer and "
-                    "leave alternatives documented but inactive. DNS records can suggest a service "
-                    "provider, not license counts, contract ownership, renewal dates, or purchasing "
-                    "authority. Require customer evidence before quoting. By Day 2, every target "
-                    "record must distinguish observed technographics from customer-confirmed facts, "
-                    "with source dates attached so stale signals never become promises."
-                ),
-                (
-                    "Give the full-time founder ownership of qualification, proposals, partner "
-                    "escalations, and cash decisions. Contractor C1 handles discovery and renewal "
-                    "research; C2 handles authorized channel operations and entitlement checks; "
-                    "C3 handles savings verification, bookkeeping preparation, and collections "
-                    "reconciliation. Reserve 40 founder hours weekly and cap each contractor at "
-                    "eight paid hours across the first month. At illustrative rates of $35, $60, "
-                    "and $55, those contractor commitments total $1,200. This is a four-person "
-                    "pod, not four full-time salaries. Buy additional hours only from collected "
-                    "contribution after the founder documents the bottleneck. Establish a $5,000 "
-                    "startup allocation comprising $1,500 of first-month operating cash, $1,000 "
-                    "of setup work, and $2,500 of untouched contingency. The operating allowance "
-                    "includes contractors, $200 of CRM and document tooling, and $100 of banking "
-                    "and communications costs. The setup allowance covers entity, contract, and "
-                    "accounting configuration within a written scope. Geography-dependent costs "
-                    "that exceed this envelope require a revised allocation before commitments. "
-                    "Keep founder living expenses outside this business budget and disclose that "
-                    "the cash ceiling excludes imputed founder compensation. Record all founder "
-                    "hours nevertheless; otherwise apparently attractive customer economics merely "
-                    "hide unpaid labor and cannot support a later hiring decision."
-                ),
-                (
-                    "Use Days 3–7 to prove that the intended route exists for the actual customer. "
-                    "Obtain written partner economics, applicable program terms, payout timing, "
-                    "reversal provisions, and customer eligibility directly from the chosen "
-                    "distributor or master agent. Pax8 and Ingram offerings depend on territory, "
-                    "product, and enrollment; Telarus and Avant agreements likewise determine "
-                    "which suppliers and residuals the brokerage can access. CPOR attribution "
-                    "does not itself transfer subscription billing or establish reseller rights. "
-                    "Keep attribution evidence separate from any CSP transfer workflow and "
-                    "require the current distributor's procedure for the customer's subscription. "
-                    "For annual Microsoft NCE commitments, default to arrangements where an "
-                    "authorized supplier bills the customer directly and bears the subscription "
-                    "credit exposure. If the brokerage becomes the obligated reseller, require "
-                    "settled funding covering the full noncancelable obligation before ordering; "
-                    "monthly auto-debit alone does not cover an annual liability. Account for "
-                    "payment reversals and reserve requirements before treating funding as usable. "
-                    "For Adobe, verify VIP Marketplace eligibility and permitted migration timing. "
-                    "For GPO activity, execute member authority and rebate disclosure before "
-                    "submitting aggregate volume. Never combine unrelated tenants into an "
-                    "unauthorized pooled license inventory to manufacture a lower price."
-                ),
-            ],
-            "table": {
-                "caption": "Days 1–7 Ownership, Deliverables and Evidence for the Twelve-Play Map",
-                "headers": [
-                    "Scheduled day and accountable operating owner",
-                    "Specific play and executable daily action",
-                    "Concrete deliverable retained in the workspace",
-                    "Measured acceptance test before moving forward",
-                ],
-                "rows": [
-                    [
-                        "Day 1 assigns founder ownership of scope and cash.",
-                        "Map P01–P12 into sourcing, fulfillment, and collection activities.",
-                        "Publish the twelve-play register with one active fulfillment route.",
-                        "Every play has an owner, dependency, and evidence requirement.",
-                    ],
-                    [
-                        "Day 2 assigns C1 tightly bounded account research.",
-                        "Run P01 qualification and prepare P02 renewal interview prompts.",
-                        "Create twenty named target records with dated source evidence.",
-                        "All twenty records separate observations from customer-confirmed facts.",
-                    ],
-                    [
-                        "Day 3 assigns founder and C2 partner verification.",
-                        "Compare P03–P08 access without assuming transferable supplier rights.",
-                        "Archive written enrollment requirements and actual territory-specific economics.",
-                        "One route has documented eligibility; otherwise fulfillment remains inactive.",
-                    ],
-                    [
-                        "Day 4 assigns C3 revenue and payment design.",
-                        "Separate retained fees from customer subscription payment flows.",
-                        "Create agency revenue, supplier payable, and customer funding ledgers.",
-                        "A sample transaction reconciles receipts, liabilities, and earned revenue.",
-                    ],
-                    [
-                        "Day 5 assigns C2 license and credit review.",
-                        "Document permitted CSP, CPOR, and VIP Marketplace procedures.",
-                        "Publish transfer evidence checklist and annual commitment exposure register.",
-                        "Every proposed commitment has zero uncovered contractual cash exposure.",
-                    ],
-                    [
-                        "Day 6 assigns founder contracting and disclosure work.",
-                        "Prepare P09 membership authority and P12 shared-savings engagement.",
-                        "Issue scoped templates showing fees, rebates, baseline, and disputes.",
-                        "Templates distinguish authorization, earned fees, and supplier payment responsibility.",
-                    ],
-                    [
-                        "Day 7 assigns founder the first weekly review.",
-                        "Freeze optional routes and confirm all contractor hour caps.",
-                        "Publish spend ledger, partner blocker list, and next-week calendar.",
-                        "Committed launch spending remains within the approved cash envelope.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Conditions Before Any Customer Commitment",
-                "body": (
-                    "Passing these checks permits the specific transaction, not unrelated "
-                    "products, customers, or payment exposures."
-                ),
-                "items": [
-                    "Verify signed customer authority, tenant ownership, applicable SKU rights, and the documented supplier transfer or procurement procedure.",
-                    "Verify the exact partner agreement covers the product, territory, attribution route, commission basis, and proposed customer.",
-                    "Verify direct supplier billing or settled full-term funding; deduct reversal exposure and reserves before calculating uncovered NCE liability.",
-                    "Verify an approved baseline, disclosed compensation, principal-versus-agent assessment, and separate ledgers for retained revenue and subscription pass-throughs.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Days 8–14: Turn Renewal Evidence Into Auditable Customer Offers",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build a fifty-account research cohort by Day 8, but contact only prospects "
-                    "whose source, outreach channel, and suppression status are documented. Assign "
-                    "the founder manual, individualized email and live-call work; do not spend "
-                    "the launch budget on automated calling infrastructure. Commercial email "
-                    "must satisfy 15 U.S.C. § 7704, including truthful routing, accurate subject "
-                    "lines, a valid postal address, and a functioning opt-out process. Honor "
-                    "opt-outs within the statutory period and suppress them immediately "
-                    "operationally. Business context does not erase TCPA restrictions on certain "
-                    "calls or texts to wireless numbers under 47 U.S.C. § 227 and 47 CFR "
-                    "§ 64.1200. The FTC Telemarketing Sales Rule also reaches specified deceptive "
-                    "B2B practices despite its broader business-call exemption; review the "
-                    "actual calling method and applicable state requirements before expanding. "
-                    "Ask for a renewal conversation, not administrator credentials. Request a "
-                    "redacted invoice, SKU inventory, commitment end date, current quote, and "
-                    "written authority to seek alternatives. A qualified audit requires all "
-                    "five evidence elements plus a decision-maker meeting. Neither a friendly "
-                    "reply nor a visible Microsoft MX record counts as qualification. Track "
-                    "fifty lawful initial contacts, ten substantive replies, and six evidence "
-                    "appointments as experimental funnel targets rather than promised outcomes."
-                ),
-                (
-                    "Price the first audits with an explicit counterfactual. The baseline is the "
-                    "customer's documented renewal quote for equivalent entitlements, quantities, "
-                    "term, service level, payment timing, and currency. Keep avoidable unused "
-                    "seats separate from negotiated unit-price reductions so the customer can "
-                    "approve each savings mechanism. P11 records the best evidenced executable "
-                    "price; it does not invent a universal vendor price floor from an old "
-                    "spreadsheet. P12 charges an agreed 25%–35% share only on the contractually "
-                    "defined, verified savings base. For example, an approved $120,000 annual "
-                    "baseline reduced to $100,000 creates $20,000 of savings; a 30% fee produces "
-                    "$6,000 of operator revenue and leaves $14,000 of customer benefit before "
-                    "any separately identified implementation costs. Neither the $120,000 "
-                    "baseline nor the $100,000 subscription purchase becomes brokerage revenue. "
-                    "Exclude taxes, unrelated credits, scope reductions, and switching costs "
-                    "unless the engagement expressly specifies their treatment. Define the "
-                    "measurement period, evidence deadline, dispute window, and fee collection "
-                    "event before presenting vendor alternatives. If the brokerage also receives "
-                    "a supplier residual or GPO rebate, disclose the arrangement and specify "
-                    "whether it offsets the shared-savings fee. This prevents hidden double "
-                    "charging and makes the retained economics reproducible from customer records."
-                ),
-                (
-                    "Make the proposal packet small enough for the four-person pod to maintain. "
-                    "The founder writes the commercial recommendation; C1 supplies the renewal "
-                    "evidence; C2 confirms the authorized route and actual entitlement match; "
-                    "C3 rebuilds the savings calculation independently. Use a protected Google "
-                    "Sheets or LibreOffice workbook with separate inputs, calculations, and "
-                    "evidence links, then export a versioned PDF for customer acceptance. "
-                    "Configure HubSpot or a lightweight CRM around dated stages: contacted, "
-                    "evidence requested, audit qualified, proposal issued, accepted, fulfilled, "
-                    "and cash collected. Do not mark accepted proposals as paid customers. "
-                    "Record both expected recurring retained revenue and one-time fees, without "
-                    "annualizing contingent amounts before entitlement is established. A $2,000 "
-                    "monthly supplier invoice with a documented 10% agency commission yields "
-                    "$200 monthly retained revenue, not $2,000. Apply the ASC 606 principal-versus-agent "
-                    "assessment to each contract: control before transfer determines presentation, "
-                    "not the label reseller. This chapter's canonical model uses the supplied "
-                    "net retained basis. If a contract requires gross principal presentation, "
-                    "keep a separate bridge to that basis rather than silently changing the "
-                    "scorecard denominator. End Day 14 with four qualified audits and two "
-                    "customer-ready proposals, or identify the specific missing evidence."
-                ),
-            ],
-            "table": {
-                "caption": "Days 8–14 Evidence Collection, Lawful Outreach and Offer Construction",
-                "headers": [
-                    "Scheduled day and accountable operating owner",
-                    "Specific play and executable daily action",
-                    "Concrete deliverable retained in the workspace",
-                    "Measured acceptance test before moving forward",
-                ],
-                "rows": [
-                    [
-                        "Day 8 assigns founder and C1 cohort preparation.",
-                        "Expand P01 and P02 research to fifty relevant accounts.",
-                        "Save source records, renewal hypotheses, and channel suppression checks.",
-                        "Every contacted record has an allowed channel and traceable source.",
-                    ],
-                    [
-                        "Day 9 assigns founder individualized initial outreach.",
-                        "Offer P11 evidence-based audits using accurate, specific savings language.",
-                        "Retain message versions, recipient records, and immediate opt-out suppression.",
-                        "Complete twenty-five individualized contacts without unsupported pricing claims.",
-                    ],
-                    [
-                        "Day 10 assigns founder the remaining cohort outreach.",
-                        "Complete fifty initial contacts and book renewal evidence appointments.",
-                        "Publish replies and appointments against the original cohort denominator.",
-                        "Target ten substantive replies and six dated evidence appointments.",
-                    ],
-                    [
-                        "Day 11 assigns C1 evidence intake and indexing.",
-                        "Collect invoices, SKUs, dates, quotes, and written purchasing authority.",
-                        "Create customer folders with restricted access and redacted artifacts.",
-                        "Four audits meet every evidence requirement before qualification.",
-                    ],
-                    [
-                        "Day 12 assigns C2 supplier quote and entitlement checks.",
-                        "Validate the active P03, P05, P06, P07, or P08 route.",
-                        "Save executable quotes with term, expiry, entitlement, and payment conditions.",
-                        "Two quotes match customer scope without unauthorized seat pooling.",
-                    ],
-                    [
-                        "Day 13 assigns C3 baseline and fee verification.",
-                        "Recalculate P11 savings and the agreed P12 fee treatment.",
-                        "Produce independently checked workbooks identifying every customer cost adjustment.",
-                        "Every proposed fee traces to an accepted measurement formula.",
-                    ],
-                    [
-                        "Day 14 assigns founder customer proposal delivery.",
-                        "Present two offers with supplier compensation and route disclosures.",
-                        "Save versioned proposals and customer decision meetings in CRM.",
-                        "Both proposals identify retained revenue separately from subscription spend.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the Spread Before You Chase the Signature",
-                "body": (
-                    "Experienced brokers remove evidence gaps before negotiating percentage "
-                    "points; missing authority or timing can erase the entire spread."
-                ),
-                "items": [
-                    "Ask for the supplier's renewal quote before suggesting a target discount; last year's invoice may exclude the upcoming price increase.",
-                    "Record CPOR attribution and CSP billing-transfer evidence in separate fields; one successful program action does not establish the other.",
-                    "Ask Telarus or Avant for the actual residual statement format and reversal terms before building automated commission projections.",
-                    "Treat GPO bracket rebates as conditional until membership, eligible volume, payout timing, and clawback provisions are independently evidenced.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Days 15–21: Fulfill One Clean Pilot and Reconcile Every Dollar",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The third week tests execution, not breadth. Select the strongest documented "
-                    "opportunity and prepare a pilot with one customer, one authorized route, "
-                    "and one accountable supplier contact. Acceptance must identify the exact "
-                    "legal customer, purchasing authority, tenant or account identifier, SKUs, "
-                    "quantities, commitment dates, and payment obligations. A contingent audit "
-                    "engagement can begin while vendor onboarding continues, but it cannot "
-                    "promise an unavailable procurement route. If the customer cannot fund an "
-                    "annual commitment safely, offer direct supplier billing where available "
-                    "or a permitted shorter commitment with its actual higher price. Do not "
-                    "conceal credit risk inside a headline discount. C2 verifies service "
-                    "continuity and the permitted transfer sequence; the founder confirms "
-                    "customer communications; C3 records the obligation before any order. "
-                    "Schedule the change outside critical customer operating windows and "
-                    "retain the supplier's escalation path. Obtain customer confirmation of "
-                    "entitlements after fulfillment, not merely a successful portal screen. "
-                    "If no customer is ready, run a clearly labeled internal tabletop using "
-                    "synthetic records and continue evidence collection. The published "
-                    "time-to-first-deal range is one to three months, so a Day 21 simulation "
-                    "is useful process proof but never a substitute for a real paid pilot."
-                ),
-                (
-                    "Measure customer acquisition cost using actual cash spent on sourcing and "
-                    "selling, including allocated contractor effort and outreach tools. Track "
-                    "founder time separately at an illustrative $75 hourly shadow rate for "
-                    "capacity decisions; do not insert that imputed charge into reported cash "
-                    "spend or silently replace the canonical owner-profit scenarios. Before a "
-                    "first paying customer exists, report acquisition spend and conversion "
-                    "counts rather than dividing by zero. For recurring business, calculate "
-                    "cash payback as acquisition cost divided by monthly retained revenue "
-                    "less incremental servicing, processing, and expected reversals. A $600 "
-                    "cash acquisition cost against $200 monthly retained revenue and $50 "
-                    "monthly incremental costs yields $150 monthly contribution and four-month "
-                    "payback. The corresponding $24,000 annual customer subscription purchase "
-                    "is irrelevant to the revenue numerator. For one-time audits, compare "
-                    "collected fees against acquisition and delivery cash costs directly; "
-                    "do not manufacture monthly recurring revenue by spreading a speculative "
-                    "renewal fee over twelve months. A collected $6,000 audit fee less $600 "
-                    "acquisition and $900 delivery costs produces $4,500 deal contribution "
-                    "before fixed overhead and taxes. Neither example establishes the "
-                    "business's annual net margin. Both expose the specific economics "
-                    "that a repeatable route must preserve."
-                ),
-                (
-                    "Reconciliation should begin with a ledger design, not a premature API "
-                    "integration. Match customer acceptance, supplier order, entitlement "
-                    "confirmation, supplier statement, operator invoice, and bank receipt "
-                    "through a single transaction identifier. Stripe or bank ACH receipts "
-                    "prove cash movement, while partner statements establish the actual "
-                    "commission or rebate basis; neither document alone establishes that "
-                    "all revenue conditions are satisfied. C3 records earned retained "
-                    "amounts, deferred collections, reversals, and supplier liabilities "
-                    "separately. If the brokerage receives $10,000 and must remit $9,000 "
-                    "under a genuine agency arrangement, the retained revenue is $1,000 "
-                    "when the applicable recognition conditions are met. The $9,000 belongs "
-                    "in the payable or clearing workflow, not the sales dashboard. Validate "
-                    "the arrangement's substance rather than assuming every margin spread "
-                    "qualifies for agency treatment. Keep GPO administrative rebates separate "
-                    "from customer savings until the agreement determines their allocation. "
-                    "During the pilot, reconcile manually within two business days of "
-                    "receiving each required source document and track missing statements "
-                    "as open items. Automate Pax8, Ingram, or master-agent imports only "
-                    "after two clean statement cycles and confirmed access rights. This "
-                    "avoids spending the founder's scarce launch hours debugging integrations "
-                    "for a route that may never produce repeatable collections."
-                ),
-            ],
-            "table": {
-                "caption": "Days 15–21 Pilot Execution and Retained-Revenue Controls",
-                "headers": [
-                    "Scheduled day and accountable operating owner",
-                    "Specific play and executable daily action",
-                    "Concrete deliverable retained in the workspace",
-                    "Measured acceptance test before moving forward",
-                ],
-                "rows": [
-                    [
-                        "Day 15 assigns founder the pilot selection decision.",
-                        "Choose one evidenced opportunity within the active authorized route.",
-                        "Publish customer scope, route rationale, and remaining dependencies.",
-                        "The pilot has a named buyer and executable supplier terms.",
-                    ],
-                    [
-                        "Day 16 assigns founder customer acceptance collection.",
-                        "Confirm P12 savings terms or the selected procurement engagement.",
-                        "Archive signed authority, compensation disclosures, and dated customer acceptance.",
-                        "Every charged service has explicit scope and fee authority.",
-                    ],
-                    [
-                        "Day 17 assigns C3 funding and exposure verification.",
-                        "Match settled funds or direct supplier billing against commitments.",
-                        "Update full-term obligations, usable funding, and reversal exposure records.",
-                        "Uncovered noncancelable obligation equals zero before any order submission.",
-                    ],
-                    [
-                        "Day 18 assigns C2 authorized fulfillment preparation.",
-                        "Execute permitted supplier procedures only after transaction checks pass.",
-                        "Retain order identifiers, entitlement evidence, and supplier escalation contacts.",
-                        "Customer confirms correct access without cross-tenant license inventory pooling.",
-                    ],
-                    [
-                        "Day 19 assigns founder and C3 collection preparation.",
-                        "Invoice only earned fees under the agreed measurement event.",
-                        "Save fee calculations, invoice terms, and customer evidence acceptance.",
-                        "Every invoiced amount reconciles to an enforceable contractual entitlement.",
-                    ],
-                    [
-                        "Day 20 assigns C3 statement and bank matching.",
-                        "Reconcile retained commissions, audit receipts, rebates, and supplier liabilities.",
-                        "Publish transaction-level reconciliation with aged missing-document follow-up items.",
-                        "Received source documents are reconciled within two business days.",
-                    ],
-                    [
-                        "Day 21 assigns founder the pilot retrospective.",
-                        "Compare actual effort and collections against the planned unit economics.",
-                        "Publish customer status, defect log, and bounded next-week fixes.",
-                        "Report real paid pilots separately from accepted engagements and simulations.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Lock the evidence baseline",
-                    "action": "Version the customer quote, entitlement inventory, and accepted savings formula.",
-                    "detail": "C1 supplies artifacts; C3 checks scope parity and records exclusions before any proposal is finalized.",
-                },
-                {
-                    "step": 2,
-                    "title": "Verify authority and funding",
-                    "action": "Confirm customer authority, supplier permission, and zero uncovered commitment exposure.",
-                    "detail": "The founder signs the transaction record only after C2 verifies the route and C3 verifies usable funds or direct supplier billing.",
-                },
-                {
-                    "step": 3,
-                    "title": "Fulfill and obtain customer confirmation",
-                    "action": "Use the authorized supplier procedure and verify the purchased entitlements.",
-                    "detail": "C2 retains order evidence and customer confirmation; unresolved service defects prevent the transaction from being counted as cleanly fulfilled.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile retained revenue and collections",
-                    "action": "Match contractual earnings, partner statements, invoices, and actual bank receipts.",
-                    "detail": "C3 separates pass-through liabilities, earned retained revenue, and cash collections; the founder reviews every open exception.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Days 22–30 and Reviews at Days 60/90: Allocate Capital Only to Proven Routes",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use Days 22–30 to close evidence gaps and make an explicit allocation "
-                    "decision. The targets below are proposed management thresholds for this "
-                    "launch, not outputs attributed to the scorecard engine. Count each customer "
-                    "once and preserve the original fifty-contact cohort so additional outreach "
-                    "cannot disguise weak conversion. By Day 30, seek six qualified audits, "
-                    "three written proposals, and one accepted engagement. An accepted audit "
-                    "can remain unpaid until its agreed success event; record that distinction. "
-                    "Authorize a bounded next cohort only with one paid customer, at least "
-                    "$1,000 of retained fee cash collected, positive pilot contribution, "
-                    "complete authorization evidence, and zero uncovered annual commitments. "
-                    "Otherwise choose Fix when at least three qualified audits and two dated "
-                    "decision meetings support another thirty days of work. Choose Kill for "
-                    "the tested route when fifty permitted contacts plus ten completed "
-                    "discovery conversations produce zero qualified audits, or no authorized "
-                    "commercial route exists after documented partner follow-up. Insufficient "
-                    "sample size triggers a bounded Fix, not a claim that the market failed. "
-                    "Any unauthorized fulfillment or uncovered commitment stops new orders "
-                    "immediately, regardless of sales momentum. Kill means stop new acquisition "
-                    "for that route while honoring existing customer and supplier obligations."
-                ),
-                (
-                    "Keep Day 1–30 gross operating and setup disbursements at or below $2,500, "
-                    "leaving the original $2,500 reserve untouched. Customer subscription "
-                    "pass-throughs sit outside that operating measure but require their own "
-                    "fully funded ledger; excluding them never permits hidden borrowing. "
-                    "Without collections, cap cumulative business outlay at $4,000 through "
-                    "Day 60 and $5,000 through Day 90. The last interval therefore requires "
-                    "a deliberate slowdown below the normal $1,500 monthly operating floor, "
-                    "with founder-led follow-up and reduced contractor usage. Approve that "
-                    "reduction explicitly rather than budgeting nonexistent cash. Additional "
-                    "growth spending may use collected contribution only after delivery costs, "
-                    "supplier liabilities, and reversals are reserved. At Day 60, Scale requires "
-                    "three cumulative paid customers, $5,000 cumulative retained fee collections, "
-                    "and positive aggregate deal contribution. Recurring routes also need cash "
-                    "payback within six months; audit-only routes instead need at least 50% "
-                    "collected-fee contribution after acquisition and delivery. At Day 90, "
-                    "require five paid customers, $10,000 cumulative retained collections, "
-                    "two clean reconciliation cycles, and no more than 20% of earned retained "
-                    "receivables overdue beyond agreed terms. With no earned receivables, "
-                    "record a zero overdue balance rather than computing a meaningless ratio. "
-                    "Customer concentration and supplier payout delays remain explicit review items."
-                ),
-                (
-                    "Apply decision precedence consistently: authorization or exposure failures "
-                    "override everything; a fully satisfied Scale test permits controlled "
-                    "expansion; evidenced but incomplete progress permits one bounded Fix; "
-                    "repeated failure ends the route. At Day 60, Kill if ten qualified audits "
-                    "have produced no accepted engagements, or three completed deals show "
-                    "nonpositive aggregate contribution with no executable repricing remedy. "
-                    "At Day 90, Kill if two documented Fix cycles still leave zero paid "
-                    "customers or negative aggregate deal contribution without an agreed "
-                    "corrective offer. A viable but slow pipeline can receive one final "
-                    "fourteen-day Fix funded entirely from remaining cash; never order "
-                    "additional commitments to rescue a sunk acquisition cost. Scale first "
-                    "means at most 25% more weekly outreach within current capacity, not "
-                    "immediate hiring. Keep founder workload below 40 scheduled hours "
-                    "weekly and customer servicing below eight hours weekly before "
-                    "increasing the cohort. The canonical annual cases remain $100,000 "
-                    "retained revenue less $68,000 costs for $32,000 profit; $500,000 less "
-                    "$275,000 for $225,000; and $900,000 less $378,000 for $522,000. "
-                    "Their margins are 32%, 45.0%, and 58%. Conservative and Base retain "
-                    "1 FT + 3 C; Scaled requires 2 FT + 4 C. "
-                    "The launch evidence does not itself establish any annual run rate."
-                ),
-            ],
-            "table": {
-                "caption": "Days 22–30 Daily Closeout and Quantitative Day 30/60/90 Decision Matrix",
-                "headers": [
-                    "Scheduled checkpoint and accountable operating owner",
-                    "Required deliverable or quantitative decision evidence",
-                    "Permitted action when the condition holds",
-                    "Cash, capacity, and exposure boundary maintained",
-                ],
-                "rows": [
-                    [
-                        "Day 22 assigns C1 renewal evidence follow-up ownership.",
-                        "Resolve missing documents across the original fifty-contact cohort.",
-                        "Advance only audits meeting all six qualification conditions.",
-                        "Use existing contractor hours before requesting additional paid capacity.",
-                    ],
-                    [
-                        "Day 23 assigns C2 route blocker resolution ownership.",
-                        "Obtain written answers for pricing, permissions, and transfer dependencies.",
-                        "Remove unavailable routes from every live customer proposal.",
-                        "Never purchase inventory while awaiting supplier permission confirmation.",
-                    ],
-                    [
-                        "Day 24 assigns founder the third proposal milestone.",
-                        "Deliver three cumulative proposals with dated customer decision meetings.",
-                        "Prioritize the offer with strongest evidence and lowest exposure.",
-                        "Keep proposal preparation inside the founder's scheduled weekly capacity.",
-                    ],
-                    [
-                        "Day 25 assigns C3 fee and collections follow-up.",
-                        "Confirm earned invoices, bank receipts, and residual statement timing.",
-                        "Collect amounts due without counting unearned prospective commissions.",
-                        "Preserve supplier payables and reversal reserves before growth spending.",
-                    ],
-                    [
-                        "Day 26 assigns founder customer outcome interviews.",
-                        "Record access quality, savings acceptance, and unresolved service defects.",
-                        "Request references only from customers with verified satisfactory outcomes.",
-                        "Count unpaid engagements separately from genuinely collected customer fees.",
-                    ],
-                    [
-                        "Day 27 assigns C3 unit-economics workbook completion.",
-                        "Calculate acquisition cash, delivery cost, contribution, and founder hours.",
-                        "Reprice or stop offers with structurally negative deal contribution.",
-                        "Keep subscription spending outside retained-revenue and contribution numerators.",
-                    ],
-                    [
-                        "Day 28 assigns founder the contractor capacity review.",
-                        "Check eight-hour monthly caps and next-month delivery commitments.",
-                        "Move repetitive work only after documenting instructions and demand.",
-                        "Additional hours require reserved cash and a named bottleneck.",
-                    ],
-                    [
-                        "Day 29 assigns C3 the launch cash close.",
-                        "Verify cumulative operating and setup disbursements stay below $2,500.",
-                        "Return unused purchase commitments to the untouched contingency reserve.",
-                        "Maintain separate fully funded ledgers for customer subscription pass-throughs.",
-                    ],
-                    [
-                        "Day 30 assigns founder the formal allocation decision.",
-                        "Publish cohort counts, paid customers, contribution, and exposure evidence.",
-                        "Apply the decision rows below and assign the next review.",
-                        "No pipeline estimate overrides cash, authorization, or commitment limits.",
-                    ],
-                    [
-                        "Day 30 Scale requires every listed pilot condition.",
-                        "Six audits, three proposals, one paid customer, $1,000 retained collections.",
-                        "Increase weekly outreach by at most twenty-five percent within capacity.",
-                        "Require positive contribution, complete permissions, and zero uncovered commitments.",
-                    ],
-                    [
-                        "Day 30 Fix requires evidenced but incomplete progress.",
-                        "Three qualified audits plus two dated decision meetings support continuation.",
-                        "Run one thirty-day correction focused on the measured bottleneck.",
-                        "Insufficient sample receives a bounded test, never automatic expansion.",
-                    ],
-                    [
-                        "Day 30 Kill applies to the tested route.",
-                        "Fifty contacts and ten discoveries yield zero qualified audits.",
-                        "Stop route acquisition; also stop if authorized access remains unavailable.",
-                        "Honor existing obligations and preserve the remaining business reserve.",
-                    ],
-                    [
-                        "Day 60 Scale requires paid adoption and contribution.",
-                        "Three paid customers, $5,000 retained collections, positive aggregate deal contribution.",
-                        "Expand only with six-month recurring payback or fifty-percent audit contribution.",
-                        "No-collection cumulative outlay remains capped at four thousand dollars.",
-                    ],
-                    [
-                        "Day 60 Fix requires a bounded evidenced remedy.",
-                        "At least one accepted engagement supports a specific dated correction.",
-                        "Repair the failed metric for thirty days without increasing outreach.",
-                        "Fund the correction within existing cash and reserved delivery obligations.",
-                    ],
-                    [
-                        "Day 60 Kill uses observed conversion or contribution failure.",
-                        "Ten audits yield zero acceptances, or three deals remain nonpositive.",
-                        "Stop the route when no executable repricing remedy exists.",
-                        "Do not extend supplier credit to manufacture apparent customer traction.",
-                    ],
-                    [
-                        "Day 90 Scale requires repeatability beyond isolated wins.",
-                        "Five paid customers, $10,000 collections, two clean reconciliation cycles.",
-                        "Expand with positive contribution and the applicable payback test.",
-                        "Limit overdue earned receivables to twenty percent; maintain capacity limits.",
-                    ],
-                    [
-                        "Day 90 Fix requires viable demand and remaining cash.",
-                        "Positive contribution or an agreed corrective offer supports limited continuation.",
-                        "Allow one final fourteen-day correction with explicit customer milestones.",
-                        "Use remaining cash only; no new unsupported annual obligations.",
-                    ],
-                    [
-                        "Day 90 Kill follows two failed correction cycles.",
-                        "Zero paid customers or negative aggregate contribution persists without remedy.",
-                        "Stop new route acquisition and complete the customer wind-down plan.",
-                        "Without collections, cumulative business outlay cannot exceed five thousand dollars.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Scale the route that turns authorized customer savings into collected retained cash, not the pipeline that merely makes subscription spend look large.",
-    "diagram_id": "diag-08",
-    "action_checklist": [
-        "Publish the P01–P12 working map, select one authorized fulfillment route, and assign founder, C1, C2, and C3 responsibilities.",
-        "Approve the $5,000 allocation, $2,500 first-month disbursement ceiling, eight-hour contractor caps, and separate subscription funding ledger.",
-        "Build the fifty-contact cohort with dated sources, lawful channel checks, suppression handling, and evidence-based audit qualification.",
-        "Issue three scope-matched proposals with accepted baselines, disclosed compensation, explicit fee events, and verified supplier permissions.",
-        "Reconcile each pilot from customer authority through entitlement confirmation, earned retained revenue, bank collection, and uncovered commitment exposure.",
-        "Record Day 30/60/90 Kill, Fix, or Scale decisions using paid adoption, contribution, cash limits, reconciliation quality, and the applicable payback test.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Build commercial email outreach with accurate routing and subject lines, "
-                "required sender information, a working opt-out mechanism, and timely suppression."
-            ),
-        },
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Evaluate telephone and text outreach against restrictions tied to the "
-                "equipment, message type, destination number, and required permission."
-            ),
-        },
-        {
-            "title": "47 CFR § 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": (
-                "Determine applicable calling, prerecorded-message, text, consent, and "
-                "do-not-call requirements before introducing automated outreach."
-            ),
-        },
-        {
-            "title": "16 CFR § 310.3 — Deceptive telemarketing acts or practices",
-            "url": "https://www.ecfr.gov/current/title-16/section-310.3",
-            "relevance": (
-                "Keep telemarketing representations about savings, service characteristics, "
-                "price, affiliation, and material terms accurate and evidenced."
-            ),
-        },
-        {
-            "title": "16 CFR § 310.6 — Exemptions",
-            "url": "https://www.ecfr.gov/current/title-16/section-310.6",
-            "relevance": (
-                "Apply the actual scope and exceptions of the business-to-business "
-                "telemarketing exemption rather than treating every business call as exempt."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 45 — Unfair methods of competition and deceptive acts",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": (
-                "Support savings claims with comparable customer evidence and accurately "
-                "describe supplier relationships, compensation, and available procurement authority."
-            ),
-        },
-    ],
-}
+CHAPTER_12 = {'id': 'Q12',
+ 'chapter_id': 'Q12',
+ 'chapter_number': 12,
+ 'question_number': 12,
+ 'slug': 'saas-pricing-architecture-seats-usage-ai-credits-renewal-uplifts',
+ 'question_prompt': 'How do SaaS vendors structure pricing models and metrics, and how is the shift from '
+                    'per-seat to usage and AI pricing changing what buyers pay?',
+ 'kicker': 'Q12 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'SaaS Pricing Architecture: Seats, Usage, AI Credits, and Renewal Uplifts',
+ 'subtitle': 'Pricing structure and packaging, pricing-metric viability, common SaaS pricing models, B2B '
+             'pricing strategies and validation, good-pricing signals, hybrid seat/usage pricing in the AI '
+             'era, Atlassian Rovo credits, Zendesk/HubSpot token pricing, enterprise pushback on AI '
+             'pricing, benchmarking, automated renewal price uplifts, and subscription billing',
+ 'layout_template': 'action_worksheet_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners agree the seat is no longer the whole price; it survives as a base '
+                      'fee wrapped in credits, metered overage, and contractual uplifts. Hybrid models are '
+                      'gaining share, with one Growth Unhinged cut showing hybrid rising from 27% to 41% '
+                      'and posting 105% net revenue retention, while AI drags classical 85% to 95% gross '
+                      'margins toward roughly 50%. The heaviest users drive losses: a P90 user can cost '
+                      'five times a P50 user, and unlimited AI let about 5% of heavy users bleed an '
+                      'image-generation company. Street mechanics include fixed or maximum renewal uplifts '
+                      'enforced in quoting software, 3% to 7% escalators that open at seven, 60% gross '
+                      'margin targets at P50, 90-day repricing, and price-last validation decks. '
+                      'Disagreement centers on repricing cadence, whether outcome pricing works, and '
+                      'whether hybrids simply revive shelfware risk.',
+ 'key_metrics': [{'label': 'Hybrid pricing net revenue retention',
+                  'metric': 'Hybrid pricing net revenue retention',
+                  'value': '105% (vs 102% subscription, 100% outcome, 99% consumption)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Net revenue retention compared across pricing models; hybrid leads, pure '
+                             'consumption trails',
+                  'source': 'The Innovation Attorney ([ubYfOw6FSPA @ 00:09:42])'},
+                 {'label': 'AI-era gross margin compression',
+                  'metric': 'AI-era gross margin compression',
+                  'value': '85% to 95% classical SaaS gross margin falls to about 50% with AI',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Variable inference cost erodes the near-zero marginal cost that classical '
+                             'SaaS margins were built on',
+                  'source': 'Champion Leadership ([jOL79tUtq3o @ 00:06:14])'},
+                 {'label': 'Post-2020 startups on usage or outcome pricing',
+                  'metric': 'Post-2020 startups on usage or outcome pricing',
+                  'value': '56%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Share of companies founded after 2020 using usage or outcome pricing, from '
+                             '160 coded startups',
+                  'source': 'Andrew Garberson ([l1Q6q8yDjTQ @ 00:01:21])'},
+                 {'label': 'Contract price escalator range',
+                  'metric': 'Contract price escalator range',
+                  'value': '3% to 7% per year (Salesforce runs 7%)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Annual uplift founders are told to bake into contracts; uplift outweighs '
+                             'churn by a multiple',
+                  'source': 'Champion Leadership ([jOL79tUtq3o @ 00:29:27])'}],
+ 'sections': [{'section': 1,
+               'title': 'The Practitioner Consensus: The Seat Survives Only as a Base Fee',
+               'paragraphs': ['The loudest agreement in the field is that per-seat pricing has lost its '
+                              'job as the whole price but kept its job as the floor. Soft Learn Hub puts '
+                              'it bluntly: what is ending is the seat as the whole price, and the seat '
+                              'survives as a base fee, backed by a Stripe survey of 200 leaders in which '
+                              'seats as the main model drop from 16% to 11% by 2027 [oDjXoRkYaA0 @ '
+                              '00:00:51]. The Innovation Attorney lands on the same shift with Growth '
+                              'Unhinged data: seat-based pricing fell from 21% to 15% while hybrid jumped '
+                              'from 27% to 41%, a mix where the seat survives inside the bundle rather '
+                              'than disappearing [ubYfOw6FSPA @ 00:10:35]. Andrew Garberson coded 160 '
+                              'startups, reviewed 20 CRM leaders, and found 56% of companies founded after '
+                              '2020 running usage or outcome pricing, with Lightfield on credits and Attio '
+                              'stacking seats plus credits [l1Q6q8yDjTQ @ 00:01:21]. Roland Umlauft of '
+                              'Ultimate CFO names the engine behind the move: an efficiency paradox in '
+                              'which better AI means fewer seats sold, layered on AI compute that is '
+                              'variable instead of near-zero, which has pushed seat pricing down and usage '
+                              'components into contracts over the last 12 to 24 months [xmq83cmzth4 @ '
+                              '00:02:28].',
+                              'The second point of consensus is that the heaviest users are where margin '
+                              'bleeds out, and unlimited AI is the fastest way to find them. Roee Hartuv '
+                              'on Champion Leadership anchors the math: classical SaaS was built on 85% to '
+                              '95% gross margin, and AI drags that toward roughly 50% [jOL79tUtq3o @ '
+                              "00:06:14]. Hartuv's cautionary case is an image-generation company that "
+                              'granted unlimited AI and then bled money from roughly 5% of heavy users '
+                              '[jOL79tUtq3o @ 00:08:45]. The Innovation Attorney quantifies the same tail '
+                              'with a worked unit model: at $0.035 per action, the P50 user costs $4.20 a '
+                              'month while the P90 user costs $21.00, a 5:1 spread against a $29 price '
+                              'point, and the trigger rule is to move to usage or hybrid once inference '
+                              'cost per customer varies by more than roughly 3:1 [ubYfOw6FSPA @ 00:11:51]. '
+                              'Andrew Garberson turns the tail into a dashboard item: track margin on the '
+                              'top 10% of accounts and split expansion revenue out so you can see whether '
+                              'the unit is actually working [l1Q6q8yDjTQ @ 00:06:08]. Three operators, '
+                              'three lenses on the same distribution, one verdict: price the tail '
+                              'deliberately, cap it, or meter it, because a flat seat fee lets a small '
+                              'cohort of power users eat the margin everyone else generates.',
+                              'The third agreement concerns the metric itself and the order in which a '
+                              'buyer sees it. Willingness to Pay insists a metric must be non-arbitrary '
+                              'and countable by a computer, invoiceable against an account in a timely '
+                              'way, and auditable down to showing a customer 1M API calls if challenged; '
+                              'the drill is to generate 50 to 100 candidate metrics and kill every one '
+                              'that fails [rTGrwbYBlXg @ 00:07:31]. Andrew Garberson runs the same filter '
+                              'from the buyer side: does the customer already count this unit, the way Fin '
+                              'counts resolutions, Gorgias counts tickets and Ashby counts headcount, and '
+                              'can you say it in one sentence, a test that vague 50-credit bundles fail '
+                              '[l1Q6q8yDjTQ @ 00:01:56]. On sequencing, Willingness to Pay wants the '
+                              'customer nodding through value proposition, packaging, features and metric '
+                              'logic before any price appears, so friction lands only at the price point, '
+                              'one friction point instead of four [tNlpy7MZ8Vk @ 00:01:02]. The longer '
+                              'validation training makes that order mandatory, with packaging shown only '
+                              "as $/$$/$$$ placeholders and the line 'assume the price is fair' used to "
+                              'isolate reaction to the model itself, because if buyers hate the model it '
+                              'does not matter whether the percentage is 1, 2 or 10 [Ieuyh9RZzvM @ '
+                              '00:18:26].'],
+               'table': {'caption': 'Where the practitioners converge on seats, hybrids, heavy users, and '
+                                    'metric discipline',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['The seat survives only as a base fee',
+                                   'Seats as the main model fall from 16% to 11% by 2027 across 200 '
+                                   'surveyed leaders',
+                                   'Keep a seat floor and layer credits or metered overage on top of it',
+                                   'Soft Learn Hub ([oDjXoRkYaA0 @ 00:00:51])'],
+                                  ['Hybrid models are taking share from pure seats',
+                                   'Seat-based fell from 21% to 15% while hybrid rose from 27% to 41%',
+                                   'Default new AI packaging to a base seat with allotment plus overage',
+                                   'The Innovation Attorney ([ubYfOw6FSPA @ 00:10:35])'],
+                                  ['Newer companies have already moved past per-seat pricing',
+                                   '56% of companies founded after 2020 use usage or outcome pricing '
+                                   'models',
+                                   'Benchmark your unit against Lightfield credits and Attio seats plus '
+                                   'credits',
+                                   'Andrew Garberson ([l1Q6q8yDjTQ @ 00:01:21])'],
+                                  ['AI compresses the classical SaaS gross margin profile',
+                                   'Classical SaaS ran 85% to 95% gross margin; AI pulls it near 50%',
+                                   'Track unit economics per individual user, not just per product line',
+                                   'Champion Leadership ([jOL79tUtq3o @ 00:06:14])'],
+                                  ['The heavy-user tail drives the losses on flat pricing',
+                                   'At $0.035 per action, P90 costs $21.00 monthly versus $4.20 for P50',
+                                   'Move to usage or hybrid once per-customer cost spread passes roughly '
+                                   '3:1',
+                                   'The Innovation Attorney ([ubYfOw6FSPA @ 00:11:51])'],
+                                  ['The pricing metric must be countable and auditable',
+                                   'Non-arbitrary, counted by a computer, invoiceable, and provable down '
+                                   'to 1M API calls',
+                                   'Generate 50 to 100 candidate metrics and drop every one that fails',
+                                   'Willingness to Pay ([rTGrwbYBlXg @ 00:07:31])'],
+                                  ['Price is shown last in every validation conversation',
+                                   'Buyer nods through value, packaging, features and metric; friction '
+                                   'lands at price',
+                                   'Build the five-slide deck with actual prices on the final slide only',
+                                   'Willingness to Pay ([tNlpy7MZ8Vk @ 00:01:02])']]}},
+              {'section': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers: Uplifts, Credit Wallets, and Margin '
+                        'Floors',
+               'paragraphs': ['Renewal uplifts are the cheapest revenue on the table and the easiest to '
+                              "lose. MonetizeNow's workflow launches the quote from the Salesforce "
+                              'opportunity, opens a Renewal Uplift section, and sets a percentage as '
+                              'either fixed or maximum, the maximum acting as a ceiling for negotiation or '
+                              "CPI; in the demo a 5% uplift is saved and the quote prints 'renewal price "
+                              "includes a fixed 5% increase' [x0K0bAATQIA @ 00:00:41]. At renewal the "
+                              "operator picks end-of-term or early 'rip and replace,' accepting the "
+                              'renewal locks out further amendments, and an account-specific rate carries '
+                              'the price from $100 to $105 per user per month automatically [x0K0bAATQIA @ '
+                              '00:03:06]. Roee Hartuv supplies the negotiating posture: Salesforce runs a '
+                              '7% annual escalator, founders should bake 3% to 7% into contracts, and the '
+                              "opening number matters because, in Hartuv's words, start at seven and then "
+                              'procurement will take you down to four [jOL79tUtq3o @ 00:31:08]. IWI '
+                              "Consulting Group's David Apple covers the back office: keep one "
+                              'subscription system of record synced natively with Salesforce and CPQ, so '
+                              'new sale, upsell and renewal sit in one place and post straight into the '
+                              'native general ledger [s-VGS7d821o @ 00:01:05].',
+                              'AI credits and hybrid meters are where the pricing architecture gets '
+                              'mechanical. The Innovation Attorney lists the stack required before '
+                              'shipping any of it: metering, a rating engine, a credit wallet, and '
+                              'invoicing with dunning, with Orb and Metronome named as the vendors '
+                              '[ubYfOw6FSPA @ 00:07:13]. The reference build is Salesforce Agentforce '
+                              'running three models: $2.00 per conversation from October 2024, '
+                              '$0.10-per-action Flex Credits from May 2025, and $125 per user per month '
+                              'AELA seats, with all three live simultaneously, so one buyer can be metered '
+                              'per conversation, per action and per seat inside the same vendor '
+                              'relationship [ubYfOw6FSPA @ 00:08:34]. Soft Learn Hub tracks the '
+                              'seat-plus-credit pattern spreading: from December 3 Atlassian bills Rovo '
+                              'overage at 1 cent per credit with overage on by default, Jira Premium '
+                              'includes 70 credits per user per month, and Monday.com requires an AI '
+                              'credit bundle [oDjXoRkYaA0 @ 00:01:08]. Willingness to Pay reframes the '
+                              'wallet itself: credit-based systems are essentially usage-based pricing '
+                              'paid up front, expiry and churn rules have to be defined before launch, and '
+                              'training credits can roll over, 100 plus 20 for a balance of 120 '
+                              '[BGb6-WKMNN4 @ 00:08:54].',
+                              'Validation and margin control close the loop. The Innovation Attorney sets '
+                              'the margin bar at no less than 60% gross margin at P50 users, inside a 50% '
+                              'to 70% band, and runs repricing on a roughly 90-day cycle rather than '
+                              'treating the price as a one-time launch decision [ubYfOw6FSPA @ 00:21:13]. '
+                              'Willingness to Pay runs pilots as a 100-day sequence: 10 days of '
+                              'integrations, a 60-day trial, and a 30-day KPI workshop with an opt-out, '
+                              'with the customer signing the full subscription on day one, for example EUR '
+                              '10 per employee, and the pitch going to the real buyer rather than a 20K '
+                              'gatekeeper; otherwise, the training warns, the pilot is just internal '
+                              'marketing [BGb6-WKMNN4 @ 00:02:02]. In validation interviews, the same '
+                              "channel's rule after showing the price point is to shut up and wait while "
+                              'the customer self-calculates and reaches for a comparator, pre-calculating '
+                              'only when the math is hard; budget or rival software as the comparator '
+                              'signals friction, while savings signals you are in business [Ieuyh9RZzvM @ '
+                              '00:12:49]. The sample is small by design: 5 to 10 interviews per fence, not '
+                              '50, run by salespeople as narration practice, and the channel says it has '
+                              'never seen a product with green lights at every step fail a sales test '
+                              '[Ieuyh9RZzvM @ 00:19:35].'],
+               'table': {'caption': 'Street mechanics: exact settings, price points, and execution details',
+                         'headers': ['Mechanic',
+                                     'Exact Numbers & Settings',
+                                     'Execution Detail',
+                                     'Expert Source'],
+                         'rows': [['Renewal uplift configured at quote time',
+                                   'Fixed or maximum percentage; the demo saves a fixed 5% uplift',
+                                   'Set it inside the quote launched from the Salesforce opportunity',
+                                   'MonetizeNow ([x0K0bAATQIA @ 00:00:41])'],
+                                  ['Uplift carried forward into the renewal',
+                                   '$100 moves to $105 per user per month via account-specific rate',
+                                   'Accepting the renewal blocks further amendments, so finalize terms '
+                                   'first',
+                                   'MonetizeNow ([x0K0bAATQIA @ 00:03:06])'],
+                                  ['Escalator anchoring against procurement teams',
+                                   'Salesforce runs 7% yearly; bake 3% to 7% into every contract',
+                                   'Open at seven so procurement negotiates you down to four',
+                                   'Champion Leadership ([jOL79tUtq3o @ 00:31:08])'],
+                                  ['Concurrent multi-meter AI agent pricing',
+                                   '$2.00 per conversation, $0.10 per action Flex Credits, $125 per user '
+                                   'AELA',
+                                   'Salesforce Agentforce runs all three pricing models at the same time',
+                                   'The Innovation Attorney ([ubYfOw6FSPA @ 00:08:34])'],
+                                  ['Base fee with included premium request allotment',
+                                   'Copilot charges $10 base, 300 premium requests, then $0.04 each',
+                                   'Include an allotment in the base and meter every request beyond it',
+                                   'The Innovation Attorney ([ubYfOw6FSPA @ 00:19:39])'],
+                                  ['Credit overage switched on by default',
+                                   'Atlassian Rovo overage billed at 1 cent per credit from December 3',
+                                   'Overage runs on by default unless the buyer actively turns it off',
+                                   'Soft Learn Hub ([oDjXoRkYaA0 @ 00:00:00])'],
+                                  ['Flat fee that raises the revenue floor',
+                                   '$1,000 flat plus $10 per user lifts the minimum deal value',
+                                   'Add a usage metric only once ACV clears a couple thousand euros',
+                                   'Willingness to Pay ([BGb6-WKMNN4 @ 00:06:12])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Where the Money Hides in Uplifts, Fees, and Meters',
+                           'body': 'The operators who extract the most from SaaS pricing treat the renewal '
+                                   'clause, the fee lines, and the overage meter as negotiable surfaces in '
+                                   'their own right, not as fine print.',
+                           'items': ['Use the maximum uplift setting as a ceiling for negotiation or CPI '
+                                     'instead of a fixed rate when the buyer is expected to haggle at '
+                                     'renewal [MonetizeNow — x0K0bAATQIA @ 00:00:21].',
+                                     'Open escalator talks at seven percent; procurement will take you '
+                                     'down to four, so the high anchor is what protects the uplift '
+                                     '[Champion Leadership — jOL79tUtq3o @ 00:31:08].',
+                                     'Infrastructure fees moved one insurtech from roughly 60M to 100M DKK '
+                                     'ARR across 30 customers, a 60 raise with no churn [Willingness to '
+                                     'Pay — BGb6-WKMNN4 @ 00:28:52].',
+                                     'On the buying side, find every meter, set alerts at 80% and 100%, '
+                                     'and negotiate rollover, locked overage pricing, and a contractual '
+                                     'cap [Soft Learn Hub — oDjXoRkYaA0 @ 00:02:18].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Map every meter and cap it',
+                              'action': 'Inventory all seat, credit, and overage meters on the account and '
+                                        'set spend caps with alerts.',
+                              'detail': 'Find every meter, set caps with alerts at 80% and 100%, track '
+                                        'cost per outcome by dividing the AI bill by tickets resolved or '
+                                        'tasks done, and negotiate rollover plus locked overage pricing '
+                                        '[Soft Learn Hub — oDjXoRkYaA0 @ 00:02:18].'},
+                             {'step': 2,
+                              'title': 'Model the P50 versus P90 cost spread',
+                              'action': 'Price cost per action against the median and heavy user before '
+                                        'setting the seat price.',
+                              'detail': 'At $0.035 per action a P50 user costs $4.20 monthly and a P90 '
+                                        'user $21.00, a 5:1 spread against a $29 price; move to usage or '
+                                        'hybrid once spread passes roughly 3:1 [The Innovation Attorney — '
+                                        'ubYfOw6FSPA @ 00:11:51].'},
+                             {'step': 3,
+                              'title': 'Lock the renewal uplift into the quote',
+                              'action': 'Configure a fixed or maximum uplift percentage at quote time so '
+                                        'renewals price automatically.',
+                              'detail': 'In the Renewal Uplift section choose fixed or maximum, save the '
+                                        'percentage such as 5%, and let the account-specific rate carry '
+                                        '$100 to $105 per user per month so the uplift is never missed '
+                                        '[MonetizeNow — x0K0bAATQIA @ 00:00:21].'},
+                             {'step': 4,
+                              'title': 'Validate with a price-last deck and silence',
+                              'action': 'Run 5 to 10 interviews per fence, showing prices last, then stop '
+                                        'talking.',
+                              'detail': 'After the price slide, shut up and wait while the customer '
+                                        'self-calculates and picks a comparator; budget or rival software '
+                                        'means friction, savings means you are in business [Willingness to '
+                                        'Pay — Ieuyh9RZzvM @ 00:12:49].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over the billing unit itself. The Innovation Attorney '
+                              'sets a hard trigger: move to usage or hybrid pricing once inference cost '
+                              'per customer varies by more than roughly 3:1, then decide on P90 margin, '
+                              'deal size and forecastability [ubYfOw6FSPA @ 00:00:17]. Their scoreboard '
+                              'has hybrid winning net revenue retention at 105% against subscription at '
+                              '102%, outcome at 100% and consumption at 99%, so the model with the most '
+                              'flexible meter is not the one that keeps customers best [ubYfOw6FSPA @ '
+                              "00:09:42]. Roland Umlauft of Ultimate CFO argues from the buyer's chair: "
+                              'enterprise finance teams treat 40% month-over-month invoice swings as a '
+                              'nightmare and are demanding predictability even at the expense of the '
+                              'theoretical efficiency gains from usage-based pricing [xmq83cmzth4 @ '
+                              '00:04:52]. Soft Learn Hub lands between the camps with the cleanest '
+                              'framing: what is ending is the seat as the whole price, and the seat '
+                              'survives as a base fee sitting under credits, per-resolution charges or '
+                              'multi-year enterprise flat fees [oDjXoRkYaA0 @ 00:02:53]. The operator read '
+                              'is to treat seat versus usage as a false binary: pick a seat floor buyers '
+                              'can budget for, then meter the variable cost on top so heavy users fund '
+                              'their own compute.',
+                              'Outcome pricing is where the practitioners openly contradict each other. '
+                              'The Innovation Attorney logs Salesforce Agentforce running three models at '
+                              'once: $2.00 per conversation from October 2024, $0.10-per-action Flex '
+                              'Credits from May 2025, and $125 per user per month AELA seats [ubYfOw6FSPA '
+                              '@ 00:08:34]. Roee Hartuv on Champion Leadership tells it differently, '
+                              'saying Salesforce tried outcome pricing, it did not work, and it is now '
+                              'back to usage, because outcomes are hard to measure, with ChatGPT recipes '
+                              'versus Excel work as the example [jOL79tUtq3o @ 00:10:27]. Umlauft reports '
+                              "the move as Agentforce shifting from consumption-only to a buyer's choice "
+                              'of consumption, flex credits or per-user [xmq83cmzth4 @ 00:05:52]. '
+                              'Meanwhile outcome prices keep compressing in the market: HubSpot charges 50 '
+                              'cents per resolution with escalations free and Intercom charges 99 cents '
+                              '[oDjXoRkYaA0 @ 00:01:25]. The credit unit splits the room too. Willingness '
+                              'to Pay calls credits usage-based pricing paid up front, workable if expiry '
+                              'and churn rules are defined, while Hartuv warns against made-up token units '
+                              'and Garberson fails credit bundles like 50 credits on the one-sentence '
+                              "test. Hartuv's fallback is a plain hybrid of a base fee plus credits, "
+                              'emails or API calls.',
+                              'Cadence and positioning split the field as well. The Innovation Attorney '
+                              'reprices roughly every 90 days against a target of at least 60% gross '
+                              'margin at P50 users [ubYfOw6FSPA @ 00:22:19], while Hartuv reviews pricing '
+                              'per product version or per sales cycle and insists somebody must own it '
+                              '[jOL79tUtq3o @ 00:28:03]. On price level, Ulrik of Willingness to Pay runs '
+                              'two opposite plays: shrink the market by halving price, turning a $1B '
+                              'market into $0.5B but winning around 30% of it, or go premium, where a '
+                              'price of 20 with triple CAC and triple delivery still leaves 7 in profit '
+                              'versus 5 at a price of 10 [cdQzCVUJybY @ 00:04:53]. The non-negotiable is '
+                              "the closing line: whatever you do, don't try to just be in the middle "
+                              '[cdQzCVUJybY @ 00:11:59]. The same channel also pushes back on '
+                              'recurring-revenue purism, telling founders not to get too married to the '
+                              'idea, because money is money and start, ad-hoc and exit fees can sit beside '
+                              "the subscription. Rob Walling's survey shows where independent founders "
+                              'actually sit: about 47% monthly and 36% annual, with metered at 6.6% and '
+                              'revenue share near 2.3%. Pick an extreme on price, then choose the review '
+                              'cadence your margin volatility demands.'],
+               'table': {'caption': 'Side-by-side playbooks where practitioners split on units, cadence '
+                                    'and price level',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Primary billing unit for AI-heavy products',
+                                   'Move to usage or hybrid once inference cost per customer varies more '
+                                   'than about 3:1',
+                                   'Copilots stay seat-based while automation moves to usage or outcome '
+                                   'pricing',
+                                   'The Innovation Attorney ([ubYfOw6FSPA @ 00:00:17]); Ultimate CFO '
+                                   '([xmq83cmzth4 @ 00:07:42])'],
+                                  ['Salesforce Agentforce pricing history and current state',
+                                   'Three models at once: $2.00 per conversation, $0.10 Flex Credits, $125 '
+                                   'AELA seats',
+                                   'Outcome pricing did not work and Salesforce is now back to usage',
+                                   'The Innovation Attorney ([ubYfOw6FSPA @ 00:08:34]); Champion '
+                                   'Leadership ([jOL79tUtq3o @ 00:10:27])'],
+                                  ['Credits as the metered unit inside a hybrid',
+                                   'Credits are usage-based pricing paid up front, with expiry and churn '
+                                   'rules defined',
+                                   'Ambiguous bundles like 50 credits fail the one-sentence explanation '
+                                   'test',
+                                   'Willingness to Pay ([BGb6-WKMNN4 @ 00:08:54]); Andrew Garberson '
+                                   '([l1Q6q8yDjTQ @ 00:04:43])'],
+                                  ['How often to revisit the price book',
+                                   'Reprice roughly every 90 days against at least 60% gross margin at P50',
+                                   'Review at each product version or each sales cycle, with a named owner',
+                                   'The Innovation Attorney ([ubYfOw6FSPA @ 00:22:19]); Champion '
+                                   'Leadership ([jOL79tUtq3o @ 00:28:03])'],
+                                  ['Price level and market positioning strategy',
+                                   'Shrink the market: halve price, turn $1B into $0.5B, win about 30%',
+                                   'Go premium: price 20 with 3x CAC and 3x delivery still leaves 7 profit',
+                                   'Willingness to Pay ([cdQzCVUJybY @ 00:01:48]); Willingness to Pay '
+                                   '([cdQzCVUJybY @ 00:04:53])'],
+                                  ['Validation sample size before a sales test',
+                                   'Interview 5 to 10 customers per fence, not 50, in 30-45 minute '
+                                   'sessions',
+                                   'Pilot AI features with 5 to 20 customers under a fair-use cap',
+                                   'Willingness to Pay ([Ieuyh9RZzvM @ 00:19:35]); Champion Leadership '
+                                   '([jOL79tUtq3o @ 00:18:01])'],
+                                  ['Recurring subscription versus transactional fee revenue mix',
+                                   'Monthly about 47% and annual about 36% of independent SaaS, annual '
+                                   'often 12 for 10',
+                                   "Don't get too married to recurring revenue; start, ad-hoc and exit "
+                                   'fees count',
+                                   'Rob Walling ([lC6Gpn0ugFI @ 00:01:21]); Willingness to Pay '
+                                   '([BGb6-WKMNN4 @ 00:01:43])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive mistake on record is handing out unlimited AI. Hartuv '
+                              'describes an image-generation company that bled money after granting '
+                              'unlimited usage, with roughly 5% of heavy users driving the losses, against '
+                              'a backdrop where classical SaaS gross margin of 85% to 95% falls to about '
+                              '50% once AI compute enters the stack [jOL79tUtq3o @ 00:08:45]. The '
+                              'Innovation Attorney quantifies the same tail: at $0.035 per action, a P50 '
+                              'user costs $4.20 a month and a P90 user $21.00, a 5:1 spread sitting under '
+                              'a $29 price [ubYfOw6FSPA @ 00:11:51]. Flip the meter onto the customer and '
+                              'the blowups move to their side: a Cursor $7,000 annual plan consumed in one '
+                              'day, and Replit charging $1,000 a week against a usual $180 to $200 '
+                              '[ubYfOw6FSPA @ 00:15:39]. Umlauft adds that actual costs exceed vendor '
+                              'estimates by 30% to 50%, and buyers are pushing back [xmq83cmzth4 @ '
+                              "00:04:03]. Garberson's fix is to watch the top 10% of accounts by margin "
+                              'and split expansion revenue so you can see whether the unit is working. '
+                              "Hartuv's launch discipline is a fair-use policy to cap losses, then a pilot "
+                              'with 5 to 20 customers before measuring value and cost.',
+                              'Renewal uplifts leak quietly. MonetizeNow calls enforcement the tricky part '
+                              'under manual ops and says uplifts that are not automated simply get missed, '
+                              'which is revenue leakage [x0K0bAATQIA @ 00:03:28]. Their fix stores the '
+                              'uplift as a fixed or maximum percentage on the quote, so a $100 per user '
+                              'per month seat rolls to $105 automatically through an account-specific '
+                              'rate, and accepting the renewal blocks further amendments. Hartuv argues '
+                              'that uplift outweighs churn by a multiple, points to Salesforce at 7% a '
+                              'year, and coaches founders to bake 3% to 7% into contracts, with the blunt '
+                              'negotiating line: start at seven and then procurement will take you down to '
+                              'four [jOL79tUtq3o @ 00:31:08]. The price-cut trap runs the other way. '
+                              "Ulrik's warning is Rackspace, whose roughly 33% cut was simply matched by "
+                              'AWS [cdQzCVUJybY @ 00:07:15]. On the fee side, Willingness to Pay reports '
+                              'the upside of getting fairness right: an insurtech went from roughly 60M to '
+                              'roughly 100M DKK ARR on 30 customers by adding infrastructure fees, summed '
+                              'up as raising prices 60 with no churn [BGb6-WKMNN4 @ 00:29:59]. Uplift and '
+                              'fee lines only stick when they are written into the quote and the contract.',
+                              'Packaging and metric errors kill deals before price is ever discussed. '
+                              'Willingness to Pay saw the Lifegen density trap firsthand: 1M cases at a '
+                              '€20 average, but 700K of them were zero-value, which invites sorting of '
+                              'volume worth 1.4M [BGb6-WKMNN4 @ 00:47:11]. The same channel reports a '
+                              'recruitment client whose cost-per-recruiter job-to-be-done was rejected '
+                              'because recruiters wanted volume throughput, and warns that when buyers '
+                              'hate the model it does not matter whether the percentage is one, two or 10% '
+                              '[Ieuyh9RZzvM @ 00:10:41]. Hartuv caught a Claude-built pricing table '
+                              'proposing an $89-a-month tier, about $1K a year, against a $12K ACV, which '
+                              'would cannibalize revenue [jOL79tUtq3o @ 00:34:50]. Umlauft flags the '
+                              'hybrid trap: credit caps and fair-use thresholds bring shelfware risk back, '
+                              'and without process redesign AI software becomes the most expensive '
+                              'shelfware enterprises have ever purchased [xmq83cmzth4 @ 00:07:22]. On the '
+                              'reporting side, The SaaS CFO warns that aggregate benchmarks pooling '
+                              'million-dollar and $10-a-month products mislead, and that an enterprise '
+                              'business cannot be benchmarked against a self-service one. Segment by ACV '
+                              'first, then compare against top, median and bottom quartiles of companies '
+                              'with a similar profile, using data sets like BenchmarkIt.'],
+               'table': {'caption': 'Firsthand failure modes with the economics check practitioners '
+                                    'attached to each',
+                         'headers': ['Failure Mode', 'What Happened', 'Economics Check', 'Expert Source'],
+                         'rows': [['Unlimited AI granted to every single user',
+                                   'An image-generation company bled money from roughly 5% heavy users',
+                                   'AI drags 85-95% classical SaaS gross margin toward about 50%',
+                                   'Champion Leadership ([jOL79tUtq3o @ 00:08:45])'],
+                                  ['Flat price sitting over a wide cost tail',
+                                   'At $0.035 per action, P50 costs $4.20 and P90 costs $21.00 monthly',
+                                   'A 5:1 spread under a $29 price; hold 60% margin at P50',
+                                   'The Innovation Attorney ([ubYfOw6FSPA @ 00:11:51])'],
+                                  ['Bill shock on uncapped customer usage plans',
+                                   'Cursor $7,000 annual plan used in one day; Replit billed $1,000 weekly',
+                                   'Usual Replit spend had been $180 to $200 per week',
+                                   'The Innovation Attorney ([ubYfOw6FSPA @ 00:15:39])'],
+                                  ['Renewal uplifts enforced by manual operations teams',
+                                   'Uplifts get missed at renewal, which means quiet revenue leakage',
+                                   'Automate a fixed 5% so $100 becomes $105 per user per month',
+                                   'MonetizeNow ([x0K0bAATQIA @ 00:03:28])'],
+                                  ['Low-density metric carrying large zero-value volume',
+                                   'Lifegen had 1M cases at a €20 average but 700K were zero-value',
+                                   'Zero-value cases invite sorting of volume worth 1.4M',
+                                   'Willingness to Pay ([BGb6-WKMNN4 @ 00:47:11])'],
+                                  ['Price cut used as a competitive weapon',
+                                   'Rackspace cut price by about 33% and AWS simply matched it',
+                                   "Whatever you do, don't try to just be in the middle",
+                                   'Willingness to Pay ([cdQzCVUJybY @ 00:07:15])'],
+                                  ['Usage invoices swinging beyond buyer budget tolerance',
+                                   'Actual costs exceed vendor estimates by 30% to 50% in practice',
+                                   '40% month-over-month swings are a nightmare for enterprise finance',
+                                   'Ultimate CFO ([xmq83cmzth4 @ 00:04:03])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Close the Leaks Before the New Price Ships',
+                           'body': 'Four gates to clear before launching a seat, usage or credit '
+                                   'architecture, each pulled from a loss or blowup a practitioner '
+                                   'reported.',
+                           'items': ['Cap AI losses with a fair-use policy and pilot with 5 to 20 '
+                                     'customers before opening usage to the full base [Champion Leadership '
+                                     '— jOL79tUtq3o @ 00:18:01].',
+                                     'Store the renewal uplift as a fixed or maximum percentage on the '
+                                     'quote so it is never missed at renewal [MonetizeNow — x0K0bAATQIA @ '
+                                     '00:00:21].',
+                                     'Model P50 and P90 cost per user against the price point and hold at '
+                                     'least 60% gross margin at P50 users [The Innovation Attorney — '
+                                     'ubYfOw6FSPA @ 00:21:13].',
+                                     'Expect buyers to demand caps with alerts at 80% and 100%, rollover, '
+                                     'locked overage pricing and a contractual cap, and price that in '
+                                     '[Soft Learn Hub — oDjXoRkYaA0 @ 00:02:18].']}}],
+ 'pull_quote': '“Start at seven and then procurement will take you down to four.” — Champion Leadership '
+               '(jOL79tUtq3o @ 00:31:08).',
+ 'diagram_id': 'diag-08',
+ 'action_checklist': ['Generate 50 to 100 candidate pricing metrics and drop every one that is not '
+                      'measurable, invoiceable and auditable [Willingness to Pay — rTGrwbYBlXg @ '
+                      '00:07:31].',
+                      'Run the validation deck in strict sequence with price last, then stop talking and '
+                      'let the customer self-calculate and pick a comparator [Willingness to Pay — '
+                      'Ieuyh9RZzvM @ 00:12:49].',
+                      'Bake a 3% to 7% annual escalator into contracts and open at seven so procurement '
+                      'lands at four [Champion Leadership — jOL79tUtq3o @ 00:29:27].',
+                      'Configure the renewal uplift as a fixed or maximum percentage in the quote so the '
+                      'increase carries forward automatically [MonetizeNow — x0K0bAATQIA @ 00:00:21].',
+                      'Build the hybrid as a base seat with an allotment plus metered overage, backed by '
+                      'metering, a rating engine, a credit wallet and invoicing and dunning [The '
+                      'Innovation Attorney — ubYfOw6FSPA @ 00:09:09].',
+                      'Benchmark only against companies in the same ACV segment and read results by top, '
+                      'median and bottom quartile [The SaaS CFO — FvNIaRG9sxI @ 00:01:37].'],
+ 'statutory_citations': [{'title': 'The Innovation Attorney — Seat Pricing or Token Pricing: What Zendesk '
+                                   'and HubSpot Chose [00:00:17]',
+                          'url': 'https://www.youtube.com/watch?v=ubYfOw6FSPA&t=17s',
+                          'relevance': 'Primary practitioner testimony on the 3:1 inference-cost trigger '
+                                       'for moving from seats to usage or hybrid pricing.'},
+                         {'title': "Champion Leadership — The Founder's Guide to SaaS Pricing in the AI "
+                                   'Era: Seat-Based, Usage-Based, or Hybrid? | Roee Hartuv [00:29:27]',
+                          'url': 'https://www.youtube.com/watch?v=jOL79tUtq3o&t=1767s',
+                          'relevance': 'Primary practitioner testimony on contract price escalators of 3% '
+                                       'to 7% and AI margin compression.'},
+                         {'title': 'Willingness to Pay — SaaS Pricing Architecture (Full Training) '
+                                   '[00:11:05]',
+                          'url': 'https://www.youtube.com/watch?v=BGb6-WKMNN4&t=665s',
+                          'relevance': 'Primary practitioner testimony on the four metric criteria, credit '
+                                       'design, fairness tests and wallet structuring.'},
+                         {'title': 'Ultimate CFO — Why Enterprise Buyers Hate AI Pricing Models - The AI '
+                                   'vs. SaaS Pricing War [00:04:52]',
+                          'url': 'https://www.youtube.com/watch?v=xmq83cmzth4&t=292s',
+                          'relevance': 'Primary practitioner testimony on enterprise buyer pushback '
+                                       'against unpredictable usage-based AI invoices.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'x0K0bAATQIA',
+                       'title': 'SaaS Renewal Price Uplifts: Automate Price Increases | MonetizeNow',
+                       'channel': 'MonetizeNow',
+                       'author': 'MonetizeNow',
+                       'text': "Now it's $105, a 5% increase applied automatically.",
+                       'tip': "Now it's $105, a 5% increase applied automatically.",
+                       'timestamp': 186,
+                       'timestamp_seconds': 186,
+                       'timestamp_label': '[00:03:06]',
+                       'url': 'https://www.youtube.com/watch?v=x0K0bAATQIA&t=186s',
+                       'markdown': '[00:03:06](https://www.youtube.com/watch?v=x0K0bAATQIA&t=186s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ubYfOw6FSPA',
+                       'title': 'Seat Pricing or Token Pricing: What Zendesk and HubSpot Chose',
+                       'channel': 'The Innovation Attorney',
+                       'author': 'The Innovation Attorney',
+                       'text': 'Growth is not retention and a company evaluating its own pricing choice '
+                               'needs both figures rather than either alone.',
+                       'tip': 'Growth is not retention and a company evaluating its own pricing choice '
+                              'needs both figures rather than either alone.',
+                       'timestamp': 616,
+                       'timestamp_seconds': 616,
+                       'timestamp_label': '[00:10:16]',
+                       'url': 'https://www.youtube.com/watch?v=ubYfOw6FSPA&t=616s',
+                       'markdown': '[00:10:16](https://www.youtube.com/watch?v=ubYfOw6FSPA&t=616s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 's-VGS7d821o',
+                       'title': 'Sage Intacct Subscription Billing | SaaS Revenue & Reporting',
+                       'channel': 'IWI Consulting Group',
+                       'author': 'IWI Consulting Group',
+                       'text': 'It all posts into the native general ledger as part of the solution.',
+                       'tip': 'It all posts into the native general ledger as part of the solution.',
+                       'timestamp': 125,
+                       'timestamp_seconds': 125,
+                       'timestamp_label': '[00:02:05]',
+                       'url': 'https://www.youtube.com/watch?v=s-VGS7d821o&t=125s',
+                       'markdown': '[00:02:05](https://www.youtube.com/watch?v=s-VGS7d821o&t=125s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KGmwDKTR6fQ',
+                       'title': 'How to Get Your SaaS Pricing Structure Right',
+                       'channel': 'Willingness to Pay',
+                       'author': 'Willingness to Pay',
+                       'text': 'Validate the new pricing internally with finance, customer success, sales '
+                               'and product, and externally with customers.',
+                       'tip': 'Validate the new pricing internally with finance, customer success, sales '
+                              'and product, and externally with customers.',
+                       'timestamp': 59,
+                       'timestamp_seconds': 59,
+                       'timestamp_label': '[00:00:59]',
+                       'url': 'https://www.youtube.com/watch?v=KGmwDKTR6fQ&t=59s',
+                       'markdown': '[00:00:59](https://www.youtube.com/watch?v=KGmwDKTR6fQ&t=59s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rTGrwbYBlXg',
+                       'title': 'SaaS Pricing Metrics Explained: Operational Viability',
+                       'channel': 'Willingness to Pay',
+                       'author': 'Willingness to Pay',
+                       'text': 'The pricing metric must be non-arbitrary, something a computer can count.',
+                       'tip': 'The pricing metric must be non-arbitrary, something a computer can count.',
+                       'timestamp': 170,
+                       'timestamp_seconds': 170,
+                       'timestamp_label': '[00:02:50]',
+                       'url': 'https://www.youtube.com/watch?v=rTGrwbYBlXg&t=170s',
+                       'markdown': '[00:02:50](https://www.youtube.com/watch?v=rTGrwbYBlXg&t=170s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lC6Gpn0ugFI',
+                       'title': 'SaaS Pricing Models Explained in 5 Minutes',
+                       'channel': 'Rob Walling',
+                       'author': 'Rob Walling',
+                       'text': 'Annual plans are often priced as 12 for 10 or 15 to 20 percent off, which '
+                               'brings cash in up front.',
+                       'tip': 'Annual plans are often priced as 12 for 10 or 15 to 20 percent off, which '
+                              'brings cash in up front.',
+                       'timestamp': 81,
+                       'timestamp_seconds': 81,
+                       'timestamp_label': '[00:01:21]',
+                       'url': 'https://www.youtube.com/watch?v=lC6Gpn0ugFI&t=81s',
+                       'markdown': '[00:01:21](https://www.youtube.com/watch?v=lC6Gpn0ugFI&t=81s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cdQzCVUJybY',
+                       'title': 'Pricing for B2B SaaS',
+                       'channel': 'Willingness to Pay',
+                       'author': 'Willingness to Pay',
+                       'text': "And whatever you do, don't try to just be in the middle.",
+                       'tip': "And whatever you do, don't try to just be in the middle.",
+                       'timestamp': 719,
+                       'timestamp_seconds': 719,
+                       'timestamp_label': '[00:11:59]',
+                       'url': 'https://www.youtube.com/watch?v=cdQzCVUJybY&t=719s',
+                       'markdown': '[00:11:59](https://www.youtube.com/watch?v=cdQzCVUJybY&t=719s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tNlpy7MZ8Vk',
+                       'title': 'What Good SaaS Pricing Looks Like: Bechmarks, Signals and Metrics',
+                       'channel': 'Willingness to Pay',
+                       'author': 'Willingness to Pay',
+                       'text': 'Good pricing leaves one friction point instead of four, with the friction '
+                               'arriving only at the price point.',
+                       'tip': 'Good pricing leaves one friction point instead of four, with the friction '
+                              'arriving only at the price point.',
+                       'timestamp': 62,
+                       'timestamp_seconds': 62,
+                       'timestamp_label': '[00:01:02]',
+                       'url': 'https://www.youtube.com/watch?v=tNlpy7MZ8Vk&t=62s',
+                       'markdown': '[00:01:02](https://www.youtube.com/watch?v=tNlpy7MZ8Vk&t=62s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jOL79tUtq3o',
+                       'title': "The Founder's Guide to SaaS Pricing in the AI Era: Seat-Based, "
+                                'Usage-Based, or Hybrid? | Roee Hartuv',
+                       'channel': 'Champion Leadership',
+                       'author': 'Champion Leadership',
+                       'text': 'Start at seven and then procurement will take you down to four.',
+                       'tip': 'Start at seven and then procurement will take you down to four.',
+                       'timestamp': 1868,
+                       'timestamp_seconds': 1868,
+                       'timestamp_label': '[00:31:08]',
+                       'url': 'https://www.youtube.com/watch?v=jOL79tUtq3o&t=1868s',
+                       'markdown': '[00:31:08](https://www.youtube.com/watch?v=jOL79tUtq3o&t=1868s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jOL79tUtq3o',
+                       'title': "The Founder's Guide to SaaS Pricing in the AI Era: Seat-Based, "
+                                'Usage-Based, or Hybrid? | Roee Hartuv',
+                       'channel': 'Champion Leadership',
+                       'author': 'Champion Leadership',
+                       'text': 'Classical SaaS was built on 85% to 95% gross margin.',
+                       'tip': 'Classical SaaS was built on 85% to 95% gross margin.',
+                       'timestamp': 114,
+                       'timestamp_seconds': 114,
+                       'timestamp_label': '[00:01:54]',
+                       'url': 'https://www.youtube.com/watch?v=jOL79tUtq3o&t=114s',
+                       'markdown': '[00:01:54](https://www.youtube.com/watch?v=jOL79tUtq3o&t=114s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'l1Q6q8yDjTQ',
+                       'title': 'SaaS Pricing Strategy: Why Most New Startups Moved Beyond Per-Seat',
+                       'channel': 'Andrew Garberson',
+                       'author': 'Andrew Garberson',
+                       'text': 'The first price that a startup picks is almost always wrong.',
+                       'tip': 'The first price that a startup picks is almost always wrong.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=l1Q6q8yDjTQ&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=l1Q6q8yDjTQ&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ieuyh9RZzvM',
+                       'title': 'Validating Pricing Models in B2B SaaS',
+                       'channel': 'Willingness to Pay',
+                       'author': 'Willingness to Pay',
+                       'text': 'Show the pricing, then you shut up and you wait.',
+                       'tip': 'Show the pricing, then you shut up and you wait.',
+                       'timestamp': 769,
+                       'timestamp_seconds': 769,
+                       'timestamp_label': '[00:12:49]',
+                       'url': 'https://www.youtube.com/watch?v=Ieuyh9RZzvM&t=769s',
+                       'markdown': '[00:12:49](https://www.youtube.com/watch?v=Ieuyh9RZzvM&t=769s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BGb6-WKMNN4',
+                       'title': 'SaaS Pricing Architecture (Full Training)',
+                       'channel': 'Willingness to Pay',
+                       'author': 'Willingness to Pay',
+                       'text': 'Credit based systems are essentially usage-based pricing paid up front.',
+                       'tip': 'Credit based systems are essentially usage-based pricing paid up front.',
+                       'timestamp': 534,
+                       'timestamp_seconds': 534,
+                       'timestamp_label': '[00:08:54]',
+                       'url': 'https://www.youtube.com/watch?v=BGb6-WKMNN4&t=534s',
+                       'markdown': '[00:08:54](https://www.youtube.com/watch?v=BGb6-WKMNN4&t=534s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BGb6-WKMNN4',
+                       'title': 'SaaS Pricing Architecture (Full Training)',
+                       'channel': 'Willingness to Pay',
+                       'author': 'Willingness to Pay',
+                       'text': "It's a concept that I call wallet structuring where you try to break your "
+                               'pricing into components that speak to different parties in the '
+                               'organization.',
+                       'tip': "It's a concept that I call wallet structuring where you try to break your "
+                              'pricing into components that speak to different parties in the '
+                              'organization.',
+                       'timestamp': 2098,
+                       'timestamp_seconds': 2098,
+                       'timestamp_label': '[00:34:58]',
+                       'url': 'https://www.youtube.com/watch?v=BGb6-WKMNN4&t=2098s',
+                       'markdown': '[00:34:58](https://www.youtube.com/watch?v=BGb6-WKMNN4&t=2098s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FvNIaRG9sxI',
+                       'title': 'How to Benchmark Your SaaS Business | SaaS Metrics School | '
+                                'BenchMarkIt.ai | SaaS Business',
+                       'channel': 'The SaaS CFO',
+                       'author': 'The SaaS CFO',
+                       'text': "We can't benchmark an enterprise business against a self-service business "
+                               'and vice versa.',
+                       'tip': "We can't benchmark an enterprise business against a self-service business "
+                              'and vice versa.',
+                       'timestamp': 59,
+                       'timestamp_seconds': 59,
+                       'timestamp_label': '[00:00:59]',
+                       'url': 'https://www.youtube.com/watch?v=FvNIaRG9sxI&t=59s',
+                       'markdown': '[00:00:59](https://www.youtube.com/watch?v=FvNIaRG9sxI&t=59s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xmq83cmzth4',
+                       'title': 'Why Enterprise Buyers Hate AI Pricing Models - The AI vs. SaaS Pricing '
+                                'War',
+                       'channel': 'Ultimate CFO',
+                       'author': 'Ultimate CFO',
+                       'text': 'Without that work, AI software is going to become the most expensive '
+                               'shelfware that enterprises have ever purchased.',
+                       'tip': 'Without that work, AI software is going to become the most expensive '
+                              'shelfware that enterprises have ever purchased.',
+                       'timestamp': 442,
+                       'timestamp_seconds': 442,
+                       'timestamp_label': '[00:07:22]',
+                       'url': 'https://www.youtube.com/watch?v=xmq83cmzth4&t=442s',
+                       'markdown': '[00:07:22](https://www.youtube.com/watch?v=xmq83cmzth4&t=442s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oDjXoRkYaA0',
+                       'title': 'Per Seat Pricing Is Ending? 3 SaaS Pricing Models Replacing It (Atlassian '
+                                'Rovo, Dec 3)',
+                       'channel': 'Soft Learn Hub',
+                       'author': 'Soft Learn Hub',
+                       'text': "What's ending is the seat as the whole price.",
+                       'tip': "What's ending is the seat as the whole price.",
+                       'timestamp': 33,
+                       'timestamp_seconds': 33,
+                       'timestamp_label': '[00:00:33]',
+                       'url': 'https://www.youtube.com/watch?v=oDjXoRkYaA0&t=33s',
+                       'markdown': '[00:00:33](https://www.youtube.com/watch?v=oDjXoRkYaA0&t=33s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ydyjI39LlNw',
+                       'title': '8 SaaS pricing models explained in under 3 minutes',
+                       'channel': 'Binary Stream Software',
+                       'author': 'Binary Stream Software',
+                       'text': 'Pay as you go pricing allows customers to pay only for what they use.',
+                       'tip': 'Pay as you go pricing allows customers to pay only for what they use.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=ydyjI39LlNw&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=ydyjI39LlNw&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'}]}

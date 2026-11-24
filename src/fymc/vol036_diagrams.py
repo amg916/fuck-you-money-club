@@ -1,683 +1,473 @@
-from __future__ import annotations
+"""Volume 036 diagrams: GPU Compute & Telecom Capacity Arbitrage."""
 
-VOLUME_036_SUBTITLE = (
-    "The Complete Playbook for GPU Compute & Telecom Capacity Arbitrage: "
-    "$150,000–$1,200,000 USD in Annual Gross Billings, "
-    "Built Around a 1 FT + 2 C Pod (3 People), Scaling to 5"
+VOLUME_036_SUBTITLE: str = (
+    "Renting VRAM Instead of Hashing, Pricing the Job Instead of the Hour, "
+    "Keeping Neocloud GPUs Busy, Packing Tokens per Weight Read, and "
+    "Clearing 10DLC Vetting and STIR/SHAKEN Before the Carrier Margin Disappears"
 )
-
-VOLUME_036_POSITIONING_ALTERNATIVES = [
-    {
-        "title": "The Reserved-to-On-Demand Compute Desk",
-        "subtitle": (
-            "Turn authorized H100, H200, and B200 capacity reservations into "
-            "metered GPU-hour products with prepaid balances and enforceable limits."
-        ),
-        "audience": (
-            "Infrastructure operators who can negotiate resale rights, isolate "
-            "customer workloads, and manage utilization against fixed supplier commits."
-        ),
-        "research_basis": (
-            "Positioning centers on capacity control rather than hardware ownership. "
-            "Export classification, destination, end-user, and end-use screening "
-            "must follow the current EAR where applicable; GPU model names alone "
-            "do not resolve transaction eligibility. NIST SP 800-190 supplies "
-            "container-security considerations, not proof of tenant isolation."
-        ),
-        "sources": [
-            "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742",
-            "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-744",
-            "https://csrc.nist.gov/pubs/sp/800/190/final",
-        ],
-        "validation_status": "Source-informed editorial positioning; not market-tested.",
-    },
-    {
-        "title": "The Prepaid Inference Routing Desk",
-        "subtitle": (
-            "Sell measured inference outcomes while routing eligible requests "
-            "across providers by effective cost, latency, and retention terms."
-        ),
-        "audience": (
-            "API operators serving repeat inference buyers who need predictable "
-            "spend controls, documented service limits, and verifiable data handling."
-        ),
-        "research_basis": (
-            "LiteLLM and vLLM support the operating concept, while the cited "
-            "materials ground advertising accuracy and access-control practices. "
-            "Under 15 U.S.C. 45, unsupported security or retention representations "
-            "create concrete exposure. NIST SP 800-53 provides control patterns; "
-            "neither source establishes achievable routing savings."
-        ),
-        "sources": [
-            "https://www.law.cornell.edu/uscode/text/15/45",
-            "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
-        ],
-        "validation_status": "Source-informed editorial positioning; not market-tested.",
-    },
-    {
-        "title": "The Screened Wholesale Telecom Desk",
-        "subtitle": (
-            "Broker authorized SIP, registered business messaging, and documented "
-            "IPv4 capacity without letting abuse consume the wholesale spread."
-        ),
-        "audience": (
-            "Telecom operators with carrier relationships, traceback procedures, "
-            "numbering controls, and the ability to classify their actual service role."
-        ),
-        "research_basis": (
-            "47 CFR 64.6301 and 64.6305 establish role-dependent caller "
-            "authentication and robocall-mitigation requirements. 47 CFR 54.711 "
-            "addresses contributor reporting, and 47 U.S.C. 227 governs covered "
-            "calling and messaging conduct. TCR registration is a carrier-ecosystem "
-            "requirement, distinct from statutory permission to contact recipients."
-        ),
-        "sources": [
-            "https://www.law.cornell.edu/cfr/text/47/64.6301",
-            "https://www.law.cornell.edu/cfr/text/47/64.6305",
-            "https://www.law.cornell.edu/cfr/text/47/54.711",
-            "https://www.law.cornell.edu/uscode/text/47/227",
-        ],
-        "validation_status": "Source-informed editorial positioning; not market-tested.",
-    },
-]
 
 
 def build_volume_036_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-reserved-capacity-to-collected-cash",
-            "process_flow",
-            "Broker Capacity Without Losing Control of Consumption",
-            "Five operating stages connect supplier rights to reconciled customer usage.",
-            1,
-            "operating_framework",
-            (
-                "The operator resells only contractually authorized capacity. "
-                "Prepayment controls credit exposure but does not eliminate "
-                "chargebacks, supplier commits, or service-credit obligations."
-            ),
-            (
-                "Keep gross customer billings, upstream supplier charges, and "
-                "retained contribution in separate ledger accounts. A customer's "
-                "wallet deposit is not earned service revenue before delivery."
-            ),
-            [
-                (
-                    "Secure supply rights",
-                    "Document capacity, resale rights, and supplier limits",
-                    1.0,
-                    (
-                        "Negotiate GPU reservation windows, carrier termination rates, "
-                        "IPv4 lease authority, cancellation terms, and measurable SLAs. "
-                        "Track minimum commits separately from consumed units."
-                    ),
-                ),
-                (
-                    "Screen and fund",
-                    "Identify buyers before activating prepaid consumption limits",
-                    2.0,
-                    (
-                        "Verify business identity and intended workloads, enforce "
-                        "the AUP, and fund a Stripe-backed internal credit ledger. "
-                        "Reject abusive mining, spoofing, and unauthorized calling."
-                    ),
-                ),
-                (
-                    "Route and isolate",
-                    "Allocate eligible workloads within explicit spend ceilings",
-                    3.0,
-                    (
-                        "Use LiteLLM or vLLM for supported inference paths and "
-                        "least-cost routing for eligible SIP routes. Apply tenant "
-                        "isolation, destination restrictions, and tested failover limits."
-                    ),
-                ),
-                (
-                    "Meter and reconcile",
-                    "Match customer usage with independent supplier records",
-                    4.0,
-                    (
-                        "Combine request-level token records, scheduler allocation "
-                        "intervals, DCGM health telemetry, and carrier call-detail "
-                        "records. DCGM utilization alone is not a billing ledger."
-                    ),
-                ),
-                (
-                    "Collect and rebalance",
-                    "Recognize delivered service and reset exposure daily",
-                    5.0,
-                    (
-                        "Debit wallets idempotently, recognize delivered units, "
-                        "reconcile supplier invoices, and stop consumption at limits. "
-                        "Reprice expiring GPU reservations before generation-driven "
-                        "price compression erases their spread."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-qualified-buyer-cohort",
-            "funnel",
-            "One Cohort, Five Observable Conversion Steps",
-            "Track qualified demand before increasing noncancelable capacity.",
-            6,
-            "illustrative_model",
-            (
-                "Illustrative 90-day acquisition cohort, not a revenue forecast. "
-                "Every stage is a subset of the preceding stage; all counts "
-                "represent buyer organizations rather than contacts or API keys."
-            ),
-            (
-                "The cohort narrows 200 → 80 → 40 → 20 → 10. Sequential conversion "
-                "is 40%, 50%, 50%, and 50%; overall conversion is 5%. "
-                "Ten repeat buyers do not by themselves establish $675,000 billings."
-            ),
-            [
-                (
-                    "Documented prospects",
-                    "200 organizations with observable recurring capacity needs",
-                    200.0,
-                    (
-                        "Build a named account list from permitted research and "
-                        "existing relationships. Record workload type, buyer role, "
-                        "current supplier arrangement, and likely purchasing window."
-                    ),
-                ),
-                (
-                    "Qualified demand",
-                    "80 organizations with budget and technical fit",
-                    80.0,
-                    (
-                        "Forty percent of the original cohort confirms budget, "
-                        "eligible destinations, expected usage, and acceptable "
-                        "retention terms during a documented discovery conversation."
-                    ),
-                ),
-                (
-                    "Validated economics",
-                    "40 organizations pass workload and spread checks",
-                    40.0,
-                    (
-                        "Half of qualified organizations supplies an authorized "
-                        "benchmark or traffic sample. Compare effective unit costs, "
-                        "p95 latency, retry burden, and minimum-commit exposure."
-                    ),
-                ),
-                (
-                    "Funded pilots",
-                    "20 organizations prepay bounded production pilot balances",
-                    20.0,
-                    (
-                        "Half of validated organizations accepts the service terms "
-                        "and funds a capped pilot. Record wallet liability separately "
-                        "from recognized revenue and enforce hard usage limits."
-                    ),
-                ),
-                (
-                    "Repeat consumption",
-                    "10 organizations complete a second paid cycle",
-                    10.0,
-                    (
-                        "Half of funded pilots consumes delivered service and "
-                        "purchases another cycle. Expand commitments only against "
-                        "observed repeat demand and customer concentration limits."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-case-gross-to-owner-profit",
-            "waterfall",
-            "Base Case: $675,000 Billings to $189,000 Owner Profit",
-            "Separate upstream pass-through economics from retained operating performance.",
-            3,
-            "illustrative_model",
-            (
-                "Annual USD; canonical retained_share is 0.65. The $168,000 "
-                "operating-cost and $81,750 variable-cost allocations are illustrative "
-                "components of the required $249,750 post-upstream cost total. "
-                "Bars 1, 3, and 6 are absolute totals; bars 2, 4, and 5 "
-                "are signed movements. Never add the retained subtotal twice."
-            ),
-            (
-                "$675,000 − $236,250 = $438,750 retained contribution; "
-                "$438,750 − $168,000 − $81,750 = $189,000 owner profit. "
-                "Profit is 28.0% of gross billings and 43.08% of retained "
-                "contribution. The scorecard's ASC 606 net presentation assumes "
-                "an agent arrangement; assess principal-versus-agent status "
-                "separately for each promised service."
-            ),
-            [
-                (
-                    "Gross customer billings",
-                    "$675,000 annual delivered compute and telecom billings",
-                    675000.0,
-                    (
-                        "Opening total equals $56,250 monthly on an annualized "
-                        "basis. These are operator customer billings, not customers' "
-                        "underlying commerce, token resale proceeds, or enterprise revenue."
-                    ),
-                ),
-                (
-                    "Upstream capacity cost",
-                    "Subtract $236,250 for upstream capacity and termination",
-                    -236250.0,
-                    (
-                        "Thirty-five percent of gross billings goes to supplier "
-                        "capacity and carrier termination, including the modeled "
-                        "effect of commits. Do not deduct these charges again below."
-                    ),
-                ),
-                (
-                    "Retained contribution",
-                    "$438,750 remains after the upstream supplier deduction",
-                    438750.0,
-                    (
-                        "Subtotal equals 65% of gross billings and $36,562.50 "
-                        "monthly. Use this denominator for the retained-margin "
-                        "view; it is not the owner's take-home profit."
-                    ),
-                ),
-                (
-                    "Recurring operating costs",
-                    "Subtract $168,000 for recurring pod and platform operations",
-                    -168000.0,
-                    (
-                        "Illustrative expense envelope equals $14,000 monthly, "
-                        "the canonical range ceiling. Allocate it to contractor "
-                        "support, observability, administration, and recurring tooling."
-                    ),
-                ),
-                (
-                    "Variable operating costs",
-                    "Subtract $81,750 for variable fulfillment and collection costs",
-                    -81750.0,
-                    (
-                        "Illustrative annual allocation covers processing fees, "
-                        "chargeback losses, service credits, and non-upstream variable "
-                        "support. Keep these outside the recurring monthly envelope "
-                        "and avoid duplicating supplier capacity charges."
-                    ),
-                ),
-                (
-                    "Annual owner profit",
-                    "$189,000 remains after all modeled operating deductions",
-                    189000.0,
-                    (
-                        "Closing total equals $15,750 monthly on an annualized "
-                        "basis. Preserve the canonical owner-profit convention; "
-                        "personal taxes and an additional imputed owner salary "
-                        "are not separately modeled."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-subniche-retained-yield",
-            "horizontal_bars",
-            "Compare Retained Yield Before Operating Costs",
-            "Five illustrative product spreads reconcile to the 65% retained-share anchor.",
-            2,
-            "illustrative_model",
-            (
-                "Numeric values are retained-contribution percentages, not owner "
-                "profit margins or observed market quotes. Assigning $135,000 "
-                "annual gross billings to each of five niches creates an "
-                "illustrative equal-weight Base mix totaling $675,000."
-            ),
-            (
-                "Retained contributions total $91,800 + $83,700 + $101,250 + "
-                "$74,250 + $87,750 = $438,750. The weighted retained yield is "
-                "65%; payment-processing and other operating costs remain below "
-                "this measure. Actual product mixes require fresh supplier quotes."
-            ),
-            [
-                (
-                    "H100 and H200 reservations",
-                    "68% retained yield on authorized GPU-hour resale",
-                    68.0,
-                    (
-                        "At $135,000 gross billings, upstream cost is $43,200 "
-                        "and retained contribution is $91,800. Prefer prepaid "
-                        "business balances; idle reserved hours still consume cash."
-                    ),
-                ),
-                (
-                    "B200 capacity windows",
-                    "62% retained yield on bounded accelerated-compute windows",
-                    62.0,
-                    (
-                        "At $135,000 gross billings, upstream cost is $51,300 "
-                        "and retained contribution is $83,700. Match customer "
-                        "reservation terms to supply; benchmark before promising throughput."
-                    ),
-                ),
-                (
-                    "Multi-provider inference",
-                    "75% retained yield on normalized delivered inference",
-                    75.0,
-                    (
-                        "At $135,000 gross billings, upstream cost is $33,750 "
-                        "and retained contribution is $101,250. Meter input, output, "
-                        "cache, and retries separately before debiting prepaid credits."
-                    ),
-                ),
-                (
-                    "SIP and business messaging",
-                    "55% retained yield after carrier and messaging charges",
-                    55.0,
-                    (
-                        "At $135,000 gross billings, upstream cost is $60,750 "
-                        "and retained contribution is $74,250. Include carrier "
-                        "surcharges and registration costs consistently; restrict "
-                        "high-cost destinations and abnormal traffic."
-                    ),
-                ),
-                (
-                    "Authorized IPv4 leasing",
-                    "65% retained yield on documented address-capacity leases",
-                    65.0,
-                    (
-                        "At $135,000 gross billings, upstream cost is $47,250 "
-                        "and retained contribution is $87,750. Verify lease authority, "
-                        "routing authorization, abuse history, and return conditions "
-                        "before accepting customer funds."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-preflight-service-eligibility",
-            "decision_tree",
-            "Four Pre-Flight Checks Before Customer Traffic",
-            "Each service follows every applicable branch; unresolved checks block that service.",
-            5,
-            "operating_framework",
-            (
-                "Numeric values indicate check order, not risk probabilities. "
-                "Evaluate the operator's actual role, destination, service, and "
-                "contract terms. Telecom requirements do not automatically apply "
-                "to a compute-only product."
-            ),
-            (
-                "A pass permits movement to the next applicable check. A failed "
-                "check sends the affected service back for remediation, not "
-                "around the control. Recheck changed customers, destinations, "
-                "providers, and product capabilities."
-            ),
-            [
-                (
-                    "Capacity and workload rights",
-                    "Pass only with authorized supply and screened workloads",
-                    1.0,
-                    (
-                        "Verify resale rights and EAR applicability under "
-                        "15 CFR parts 742 and 744, including relevant end-user "
-                        "and end-use restrictions. Test tenant isolation and "
-                        "upstream retention settings; otherwise withhold the "
-                        "affected workload or zero-retention offering."
-                    ),
-                ),
-                (
-                    "Voice provider obligations",
-                    "Pass only after role-specific authentication and mitigation checks",
-                    2.0,
-                    (
-                        "Map the service role to 47 CFR 64.6301 and 64.6305 "
-                        "for applicable STIR/SHAKEN, Robocall Mitigation Database "
-                        "certification, and traffic-acceptance duties. Verify supplier "
-                        "status and traceback procedures; unresolved requirements "
-                        "block voice activation."
-                    ),
-                ),
-                (
-                    "Messaging and calling use",
-                    "Pass only with documented lawful traffic and carrier registration",
-                    3.0,
-                    (
-                        "Apply 47 U.S.C. 227 and 47 CFR 64.1200 to covered "
-                        "traffic, including applicable permission, revocation, and "
-                        "calling restrictions. Complete carrier-required 10DLC TCR "
-                        "brand and campaign registration; registration alone does "
-                        "not establish permission to message."
-                    ),
-                ),
-                (
-                    "Reporting and exposure",
-                    "Pass only after reporting classification and funding controls",
-                    4.0,
-                    (
-                        "Classify telecom contribution and reporting duties under "
-                        "47 CFR 54.706 and 54.711 using current FCC Form 499-A "
-                        "instructions; contribution exemptions do not automatically "
-                        "remove filing duties. Confirm prepaid limits, refund rules, "
-                        "chargeback reserves, and emergency traffic shutoff ownership."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-three-to-five-person-pod",
-            "org_architecture",
-            "Three Seats Launch; Five Seats Support the Scaled Case",
-            "Keep commercial authority, platform execution, and telecom operations explicit.",
-            11,
-            "operating_framework",
-            (
-                "Each numeric value represents one person, not one full-time "
-                "equivalent. Conservative and Base use 1 FT + 2 C; Scaled uses "
-                "2 FT + 3 C. The last two seats are additions, not initial hires."
-            ),
-            (
-                "Conservative: $150,000 gross, $97,500 retained, $27,000 owner "
-                "profit; margins 18% gross and 27.69% retained. Base: $675,000 "
-                "gross, $438,750 retained, $189,000 profit; margins 28.0% and "
-                "43.08%. Scaled: $1,200,000 gross, $780,000 retained, $456,000 "
-                "profit; margins 38% and 58.46%. Retained share stays 65%."
-            ),
-            [
-                (
-                    "Owner and commercial lead",
-                    "Initial full-time seat owns commitments and customer economics",
-                    1.0,
-                    (
-                        "Set pricing floors, negotiate supplier rights, maintain "
-                        "cash forecasts, and resolve customer concentration exposure. "
-                        "Authorize commitment increases only after reviewing "
-                        "utilization, churn, and available operating cash."
-                    ),
-                ),
-                (
-                    "Platform engineering contractor",
-                    "Initial contractor owns routing, isolation, and usage integrity",
-                    1.0,
-                    (
-                        "Maintain LiteLLM or vLLM, tenant controls, DCGM collection, "
-                        "idempotent wallet debits, and usage reconciliation. Publish "
-                        "tested incident runbooks and instrument supplier-cost drift."
-                    ),
-                ),
-                (
-                    "Telecom operations contractor",
-                    "Initial contractor owns carrier provisioning and traffic exceptions",
-                    1.0,
-                    (
-                        "Maintain SIP least-cost routes, carrier limits, 10DLC "
-                        "provisioning records, traceback responses, and applicable "
-                        "filing calendars. Escalate suspicious traffic immediately "
-                        "rather than waiting for monthly settlement."
-                    ),
-                ),
-                (
-                    "Customer operations specialist",
-                    "Scaled addition supplies the second full-time operating seat",
-                    1.0,
-                    (
-                        "Own onboarding, support queues, renewal preparation, and "
-                        "service-credit evidence. Add this seat when measured "
-                        "support load threatens response targets and retained "
-                        "contribution can support the recurring expense."
-                    ),
-                ),
-                (
-                    "Security and reconciliation contractor",
-                    "Scaled addition supplies the third contracted specialist seat",
-                    1.0,
-                    (
-                        "Independently sample access controls, supplier invoices, "
-                        "wallet balances, and abuse investigations. Separate "
-                        "reconciliation review from the person changing rates "
-                        "or issuing customer credits."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-startup-capital-allocation",
-            "stacked_comparison",
-            "Allocate $10,000–$60,000 Before Expanding Commitments",
-            "Four buckets illustrate a $30,000 working launch budget.",
-            4,
-            "illustrative_model",
-            (
-                "Numeric values show the $30,000 reference allocation in USD. "
-                "Each stage also gives low-capital and upper-capital allocations; "
-                "the three complete budgets total $10,000, $30,000, and $60,000. "
-                "These are capital envelopes, not annual expense forecasts."
-            ),
-            (
-                "Low budget: $4,000 + $2,500 + $2,000 + $1,500 = $10,000. "
-                "Reference budget: $12,000 + $8,000 + $6,000 + $4,000 = $30,000. "
-                "Upper budget: $24,000 + $16,000 + $12,000 + $8,000 = $60,000. "
-                "Customer prepaid balances remain service obligations, not free capital."
-            ),
-            [
-                (
-                    "Supplier deposits and first capacity",
-                    "$12,000 reference allocation for bounded upstream supply access",
-                    12000.0,
-                    (
-                        "Allocate $4,000 at the low budget and $24,000 at the "
-                        "upper budget. Favor cancellable pilot capacity; record "
-                        "refundable deposits separately from consumed services and "
-                        "do not treat the deposit as recurring profit expense."
-                    ),
-                ),
-                (
-                    "Settlement and loss reserve",
-                    "$8,000 reference allocation for timing gaps and service losses",
-                    8000.0,
-                    (
-                        "Allocate $2,500 at the low budget and $16,000 at the "
-                        "upper budget. Cover supplier settlement timing, refunds, "
-                        "and chargeback exposure with operator cash rather than "
-                        "assuming card-funded wallets cannot reverse."
-                    ),
-                ),
-                (
-                    "Metering and tenant controls",
-                    "$6,000 reference allocation for instrumentation and containment work",
-                    6000.0,
-                    (
-                        "Allocate $2,000 at the low budget and $12,000 at the "
-                        "upper budget. Implement wallet reconciliation, scoped "
-                        "credentials, routing limits, workload isolation tests, "
-                        "and retention verification before raising usage ceilings."
-                    ),
-                ),
-                (
-                    "Onboarding and operating setup",
-                    "$4,000 reference allocation for qualified pilots and service setup",
-                    4000.0,
-                    (
-                        "Allocate $1,500 at the low budget and $8,000 at the "
-                        "upper budget. Fund supplier diligence, applicable registrations, "
-                        "contract review, and narrowly targeted pilot acquisition. "
-                        "Release spending against completed operating evidence."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-thirty-day-launch-sprint",
-            "timeline_roadmap",
-            "Build the Evidence for a First Deal in 30 Days",
-            "Four weekly milestones prepare a controlled commercial launch.",
-            12,
-            "operating_framework",
-            (
-                "Numeric values are milestone end days. The canonical time to "
-                "first deal remains 1–4 months; this sprint establishes readiness "
-                "and can finish before the first paid customer arrives."
-            ),
-            (
-                "Sequence supply validation, metering, buyer qualification, and "
-                "bounded activation. Do not convert an unfinished test, pending "
-                "registration, or unsigned supplier offer into a completed launch claim."
-            ),
-            [
-                (
-                    "Days 1-7",
-                    "Select one wedge and verify supplier economics",
-                    7.0,
-                    (
-                        "Choose one GPU, inference, or telecom product. Obtain "
-                        "written resale terms and comparable supplier quotes, "
-                        "classify applicable service duties, and model utilization "
-                        "break-even without treating prepaid deposits as revenue."
-                    ),
-                ),
-                (
-                    "Days 8-14",
-                    "Build the wallet, meter, and controlled shutdown path",
-                    14.0,
-                    (
-                        "Connect a Stripe test flow to an internal credit ledger. "
-                        "Replay duplicate events, supplier outages, and exhausted "
-                        "balances; test tenant isolation and retention settings "
-                        "before enabling customer production credentials."
-                    ),
-                ),
-                (
-                    "Days 15-21",
-                    "Qualify buyers and prove a bounded service benchmark",
-                    21.0,
-                    (
-                        "Conduct discovery with named buyers and benchmark "
-                        "authorized workloads or traffic. Complete applicable "
-                        "carrier provisioning and registrations, document service "
-                        "limits, and reject pilots whose effective unit economics "
-                        "fail the price floor."
-                    ),
-                ),
-                (
-                    "Days 22-30",
-                    "Run an eligible pilot or finish readiness evidence",
-                    30.0,
-                    (
-                        "If contracts, funding, and applicable service requirements "
-                        "are complete, activate a capped pilot and reconcile daily. "
-                        "Otherwise finish test evidence and buyer follow-up without "
-                        "buying speculative capacity or claiming a completed deal."
-                    ),
-                ),
-            ],
-        ),
-    ]
     return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(label=label, value=value, numeric_value=float(number), detail=detail)
-                for label, value, number, detail in stages
+        {
+            "diagram_id": "diag-01-mining-rig-to-rental-rig",
+            "chapter_number": 1,
+            "title": "From Mining Rig to AI Rental Rig",
+            "subtitle": "Five operator steps before a card earns rental income",
+            "chart_type": "process_flow",
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Test the used GPU in person",
+                    "value": "Step 1",
+                    "detail": (
+                        "Test before paying, price-check on gpudeals.net, seat "
+                        "the 12V cable fully and run a 14-gauge power cable."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Size power at 80% load",
+                    "value": "Step 2",
+                    "detail": (
+                        "PSUs, PDUs and rack circuits sized to sit at a "
+                        "consistent 80% load."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Stress test 48 hours to a week",
+                    "value": "Step 3",
+                    "detail": (
+                        "Run the C-Payne stress tool and watch for throttling, "
+                        "such as a 4090 dropping from 450 W to 230 W."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Pin the CPU clock and power floor",
+                    "value": "Step 4",
+                    "detail": (
+                        "Locking a 7950X at 1600 MHz cut system draw from 600 W "
+                        "to 318 W; never power-limit below 90% on Salad."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "List on a rental marketplace",
+                    "value": "Step 5",
+                    "detail": (
+                        "Vast takes about 25%, SimplePod 20%, Salad 10% plus 40 "
+                        "cents; a 4090 on Salad nets about $2.92 a day."
+                    ),
+                },
             ],
-        )
-        for identifier, kind, title, subtitle, chapter, tag, note, caption, stages in specs
+            "caption": (
+                "Operators who left crypto mining agree the money now sits in "
+                "renting VRAM, and every step guards that rental income."
+            ),
+            "assumptions_note": (
+                "Step order is an editorial sequence of separate practitioner "
+                "gates; fee splits and the $2.92 daily net are as reported, not "
+                "recomputed."
+            ),
+            "note": (
+                "Sources: Modern Mining (WJnsgbZsg0U), Alec Glover (CgsDEFaGLJ0, "
+                "iuLuDflfEE4), BearMarketMiner (egH5hKD913Y)."
+            ),
+        },
+        {
+            "diagram_id": "diag-02-neocloud-utilization-funnel",
+            "chapter_number": 6,
+            "title": "Neocloud Utilization Thresholds",
+            "subtitle": "Where an H100 fleet stops beating broad stocks",
+            "chart_type": "funnel",
+            "stages": [
+                {
+                    "label": "Full utilization",
+                    "value": 100,
+                    "display": "100%",
+                    "conversion": "28% CAGR on the modeled H100",
+                    "detail": (
+                        "H100 bought for $25K plus $5K opex, rented at $2.30/hr "
+                        "for about 4 years."
+                    ),
+                },
+                {
+                    "label": "Workload-aware scheduler",
+                    "value": 85,
+                    "display": "~85%",
+                    "conversion": "~$150k per day ahead of default scheduling",
+                    "detail": (
+                        "Modeled on a 10,000-GPU fleet costing about $400M "
+                        "across 1,250 hosts in 32 racks."
+                    ),
+                },
+                {
+                    "label": "Break-even against broad stocks",
+                    "value": 55,
+                    "display": "~55%",
+                    "conversion": "At or below this, broad stocks win",
+                    "detail": "Same $25K H100 model at $2.30/hr.",
+                },
+                {
+                    "label": "Commitment gate at a 50% contract discount",
+                    "value": 50,
+                    "display": "50%",
+                    "conversion": "Sign only where utilization clears 1 minus the discount",
+                    "detail": (
+                        "Neocloud contracts run up to 30 to 50% cheaper; the "
+                        "commitment rule applied to the top of that range."
+                    ),
+                },
+                {
+                    "label": "Default Kubernetes scheduler",
+                    "value": 45,
+                    "display": "~45%",
+                    "conversion": "Below the break-even line",
+                    "detail": "Default scheduling on the same 10,000-GPU model fleet.",
+                },
+            ],
+            "caption": (
+                "Idle or stalled GPUs bleed money, so the scheduler decides "
+                "which side of break-even a fleet lands on."
+            ),
+            "assumptions_note": (
+                "The 50% stage applies The Code Notebook's one-minus-discount "
+                "rule to the TMLS 30 to 50% contract range; every other value "
+                "is as reported."
+            ),
+            "note": (
+                "Sources: Caleb Writes Code (9u2hCf8FlW0), Codemia "
+                "(a_zou7QahAo), The Code Notebook (IZtzUfhm8LU), Toronto "
+                "Machine Learning Society (_oWJ0t-RW7o)."
+            ),
+        },
+        {
+            "diagram_id": "diag-03-marketplace-dud-pod-waterfall",
+            "chapter_number": 3,
+            "title": "Pods Launched Versus Pods That Ran",
+            "subtitle": "GPU Battle's rental log on Vast.ai and RunPod",
+            "chart_type": "waterfall",
+            "bars": [
+                {"label": "Vast pods launched", "value": 291, "display": "291", "kind": "total"},
+                {"label": "Vast pods that never ran", "value": -47, "display": "-47 (16%)", "kind": "deduction"},
+                {"label": "Vast pods that ran", "value": 244, "display": "244", "kind": "result"},
+                {"label": "RunPod pods launched", "value": 200, "display": "200", "kind": "total"},
+                {"label": "RunPod pods that never ran", "value": -14, "display": "-14 (about 7%)", "kind": "deduction"},
+                {"label": "RunPod pods that ran", "value": 186, "display": "186", "kind": "result"},
+            ],
+            "caption": (
+                "All 47 Vast duds together cost about one dollar; duds are "
+                "cheap, slow hosts are not, so vet every host in the first minute."
+            ),
+            "assumptions_note": (
+                "Result bars are launched minus duds from the reported counts; "
+                "the log does not separate slow hosts from healthy ones."
+            ),
+            "note": "Source: GPU Battle (kvP__Lh53oM, dWC3n2Bn3r8).",
+        },
+        {
+            "diagram_id": "diag-04-gpu-memory-capacity-bars",
+            "chapter_number": 2,
+            "title": "Memory Prices the Asset",
+            "subtitle": "Reported GPU memory capacities and model footprints",
+            "chart_type": "horizontal_bars",
+            "unit": "GB",
+            "bars": [
+                {
+                    "label": "H100 HBM3 capacity",
+                    "min": 80,
+                    "max": 80,
+                    "typical": 80,
+                    "display": "80 GB at 3.35 TB/s",
+                },
+                {
+                    "label": "Hardware-unlocked CMP 170HX",
+                    "min": 64,
+                    "max": 80,
+                    "typical": 80,
+                    "display": "80 GB, one card stuck at 64 GB",
+                },
+                {
+                    "label": "Llama 3.3 70B at Q4",
+                    "min": 43,
+                    "max": 43,
+                    "typical": 43,
+                    "display": "~43 GB",
+                },
+                {
+                    "label": "Generational on-chip memory jump",
+                    "min": 39,
+                    "max": 39,
+                    "typical": 39,
+                    "display": "+39 GB",
+                },
+                {
+                    "label": "27B model, 4-bit to BF16",
+                    "min": 14,
+                    "max": 54,
+                    "typical": 27,
+                    "display": "14 GB to 54 GB (FP8 at 27 GB)",
+                },
+            ],
+            "caption": (
+                "Decode is memory-bound, so capacity and bandwidth, not headline "
+                "teraflops, decide what a card is worth."
+            ),
+            "assumptions_note": (
+                "Single-value bars use the reported figure for min, max and "
+                "typical; the 27B ladder is reported on an H100 and sits in the "
+                "inference-engine testimony."
+            ),
+            "note": (
+                "Sources: Hitesh C. (fKrvPg4P6KY), LOCKBREAK (k-M24u2WcZw), "
+                "Gimel12 (gD-lTOjHc04), Design Guy (PnUJffgghas), AI WITH "
+                "Rithesh (lasG5MsR-gE)."
+            ),
+        },
+        {
+            "diagram_id": "diag-05-finops-commitment-gates",
+            "chapter_number": 5,
+            "title": "FinOps Gates Before Committing or Repatriating",
+            "subtitle": "Four checks that keep a discount from losing money",
+            "chart_type": "decision_tree",
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": "Is the commitment term no longer than the workload's predicted life?",
+                    "pass_next": "G2",
+                    "fail_action": "Shorten the term; a three-year plan on a two-year app wastes a full year.",
+                },
+                {
+                    "gate": "G2",
+                    "question": "Are existing RIs and savings plans overlaid before right-sizing?",
+                    "pass_next": "G3",
+                    "fail_action": "Overlay first, or the downsized VM leaves the reservation underutilized.",
+                },
+                {
+                    "gate": "G3",
+                    "question": "Does the FinOps agent start read-only or human-in-the-loop, with keys hidden by .gitignore?",
+                    "pass_next": "G4",
+                    "fail_action": "Lock the agent to read-only and confirm .gitignore before code leaves the box.",
+                },
+                {
+                    "gate": "G4",
+                    "question": "For repatriation, is the used server's BMC free of a vendor cloud license, with platform documentation?",
+                    "pass_next": "Proceed and benchmark ESR against the 10.5% average and ~40.5% 98th percentile",
+                    "fail_action": "Pass on the server.",
+                },
+            ],
+            "caption": (
+                "Policy becomes automation and automation becomes guardrails, "
+                "but only after these gates hold."
+            ),
+            "assumptions_note": (
+                "Gate order is an editorial sequence; the ESR benchmark covers "
+                "more than 1,400 data points with up to $2M per month in compute spend."
+            ),
+            "note": (
+                "Sources: Intellipaat (7_L1_3-4kg8), FinOps Foundation "
+                "(b7TiwS4_Ytw), AWS Events (JqwiGt78aOI), Craft Computing "
+                "(JoqFD69bWLw), ProsperOps, a Flexera company (KW_LS_stgvc)."
+            ),
+        },
+        {
+            "diagram_id": "diag-06-10dlc-registration-architecture",
+            "chapter_number": 11,
+            "title": "Who Stands Between a Brand and Delivered SMS",
+            "subtitle": "A2P 10DLC registration, vetting and throughput",
+            "chart_type": "org_architecture",
+            "center": {
+                "role": "Registered brand",
+                "headcount": "1 brand per business; an agency never registers itself as the brand",
+                "focus": "Opt-in call to action a reviewer can actually see, legal name and EIN matched to IRS records",
+            },
+            "spokes": [
+                {
+                    "role": "TCR brand registration",
+                    "type": "Registry",
+                    "kpi": "$4 brand fee; legal name, EIN and DUNS match exactly",
+                },
+                {
+                    "role": "External vetting provider",
+                    "type": "Vetting (WMC Global, Aegis, campaignverify.org)",
+                    "kpi": "$40 one-time; score 80-100 unlocks 4,500 TPM and 200,000 segments/day",
+                },
+                {
+                    "role": "DCA campaign reviewer",
+                    "type": "Campaign vetting",
+                    "kpi": "$15 per attempt; one MSP needed about 15 attempts",
+                },
+                {
+                    "role": "Carriers and CPaaS platform",
+                    "type": "Delivery and throttling",
+                    "kpi": "Default 2,000 segments/day T-Mobile, 75 TPM AT&T; internal caps as low as 60 per minute",
+                },
+            ],
+            "caption": (
+                "Registration lives or dies on the opt-in call to action, and "
+                "throughput is set by the vetting score."
+            ),
+            "assumptions_note": (
+                "Practitioners disagree on whether resubmissions cost money; "
+                "Telgorithm reports $15 per DCA attempt while Austin Marland "
+                "reports no repeat fee."
+            ),
+            "note": (
+                "Sources: Telgorithm (dgkKW0cbz1E), TwilioDevs (KWvbRToRnGg, "
+                "7pXYEARPIwU), RingLogix (gmCqaG2hBKQ), Paradigm Escape "
+                "(wpj7_7cz4Kk), Signal House (sVsWkczKncU), Telecom "
+                "Application Development Summit (SRizDef5BbE)."
+            ),
+        },
+        {
+            "diagram_id": "diag-07-colocation-quote-buckets",
+            "chapter_number": 4,
+            "title": "What a Colocation Quote Hides",
+            "subtitle": "Reported cost ranges beyond the power line",
+            "chart_type": "stacked_comparison",
+            "total_range": "Four cross-connects alone run $2,000 to $6,000 upfront before monthly charges",
+            "buckets": [
+                {
+                    "label": "Cross-connect install (per link)",
+                    "low": 500,
+                    "high": 1500,
+                    "notes": "One-time installation fee per cross-connect.",
+                },
+                {
+                    "label": "Cross-connect monthly (per link)",
+                    "low": 100,
+                    "high": 300,
+                    "notes": "Recurring charge after installation.",
+                },
+                {
+                    "label": "Remote hands (per hour)",
+                    "low": 150,
+                    "high": 350,
+                    "notes": "Billed hourly for on-site work.",
+                },
+                {
+                    "label": "Retail homelab colo quote (per month)",
+                    "low": 350,
+                    "high": 900,
+                    "notes": "Retail quotes that pushed Techno Tim into a split-cost rack.",
+                },
+            ],
+            "caption": (
+                "Power dominates, with colo billing $150+ per provisioned kW-month "
+                "against $50 or less DIY, but the line items around it add up fast."
+            ),
+            "assumptions_note": (
+                "Buckets carry different billing periods and are not summed; "
+                "ranges are as quoted by each practitioner."
+            ),
+            "note": (
+                "Sources: IPTP Networks (3EnjHW-36GI), Techno Tim "
+                "(zbkqRPIUYAo), Alec Glover (TZp1yBea0o4)."
+            ),
+        },
+        {
+            "diagram_id": "diag-08-voice-resale-compliance-roadmap",
+            "chapter_number": 12,
+            "title": "Voice Resale Compliance Before Launch",
+            "subtitle": "Four checks that decide whether traffic gets carried",
+            "chart_type": "timeline_roadmap",
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Confirm your own RMD listing",
+                    "deliverable": "Robocall Mitigation Database listing and certification verified directly",
+                    "gate": "Do not trust the upstream carrier or lawyer; traffic from unlisted providers is refused as of May 28, 2024",
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Verify attestation",
+                    "deliverable": "Call the 920-66-1392 checker from your own trunk; buy DIDs from the carrier that signs your calls",
+                    "gate": "Anything other than A attestation is fixed",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "File state and tax obligations",
+                    "deliverable": "Filed in every state with billing and tax modeled; uncollectibles entered as positive numbers",
+                    "gate": "No launch until filings are complete",
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Cap exposure and check margin",
+                    "deliverable": "Daily spend and per-minute caps on A-Z termination; USF pass-through at four to five dollars a bill",
+                    "gate": "Resale margin holds at 15 to 20 percent",
+                },
+            ],
+            "caption": (
+                "Compliance now decides who survives in voice resale, against a "
+                "margin of only 15 to 20 percent."
+            ),
+            "assumptions_note": (
+                "Weekly sequencing is an editorial ordering of practitioner gates; "
+                "Sangoma, ZCorum and Crosstalk disagree on reseller STIR/SHAKEN obligations."
+            ),
+            "note": (
+                "Sources: Crosstalk Solutions (ycGPHG_ANrE), ZCorum "
+                "(ZLzeR3N0mpc), Sangoma (3XJ9OkK8aFw), The Boon of Wireless "
+                "(Gye5g8KT7Oo), Public Service Commission of Wisconsin (vH9VQq2V9Qw)."
+            ),
+        },
     ]
+
+
+VOLUME_036_POSITIONING_ALTERNATIVES: list[dict] = [
+    {
+        "title": "The VRAM Landlord",
+        "subtitle": "Turning Mining Rigs and Warehouses into GPU Rental Income",
+        "audience": "Former crypto miners and small hosts weighing marketplace GPU rental, colo, or a DIY warehouse",
+        "research_basis": (
+            "Marketplace cuts of about 25% on Vast, 20% on SimplePod and 10% "
+            "plus 40 cents on Salad; a 4090 netting $2.92 a day; a 10x 170HX "
+            "server pulling $36.37; 1,000 warehouse GPUs at $25,000 a month."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=iuLuDflfEE4&t=918s",
+            "https://www.youtube.com/watch?v=WJnsgbZsg0U&t=2271s",
+            "https://www.youtube.com/watch?v=SJbOF9Ufm0Q&t=490s",
+            "https://www.youtube.com/watch?v=TZp1yBea0o4&t=109s",
+        ],
+        "validation_status": "Grounded strictly in Vol. 036 YouTube practitioner transcripts.",
+    },
+    {
+        "title": "Price the Job, Not the Hour",
+        "subtitle": "Marketplace Rentals, Neocloud Utilization, and Rent-Versus-Own Token Math",
+        "audience": "ML engineers and FinOps leads buying GPU time across marketplaces, neoclouds, and gateways",
+        "research_basis": (
+            "16% Vast dud rate versus about 7% on RunPod; 30 to 60% hidden "
+            "Vast uplift; ~55% neocloud break-even utilization; up to 3x "
+            "on-demand and 9x spot spreads; self-host push above £100,000 a month."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=kvP__Lh53oM&t=17s",
+            "https://www.youtube.com/watch?v=Ez2jsa33jFY&t=66s",
+            "https://www.youtube.com/watch?v=9u2hCf8FlW0&t=82s",
+            "https://www.youtube.com/watch?v=3Edw88b1bRg&t=441s",
+            "https://www.youtube.com/watch?v=WiA5Hm6IpZs&t=827s",
+        ],
+        "validation_status": "Grounded strictly in Vol. 036 YouTube practitioner transcripts.",
+    },
+    {
+        "title": "Compliance Is the Margin",
+        "subtitle": "10DLC Vetting, STIR/SHAKEN, and the Economics of Voice and SMS Resale",
+        "audience": "MSPs, SIP resellers, and CPaaS builders running business SMS and voice-AI telephony",
+        "research_basis": (
+            "Vetting score 80-100 unlocking 4,500 TPM and 200,000 segments a "
+            "day; 15 to 20 percent voice resale margin; RMD traffic refusal "
+            "from May 28, 2024; Telnyx sub-200 ms marketed round trip to verify "
+            "with test calls."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=dgkKW0cbz1E&t=1465s",
+            "https://www.youtube.com/watch?v=ycGPHG_ANrE&t=463s",
+            "https://www.youtube.com/watch?v=ZLzeR3N0mpc&t=320s",
+            "https://www.youtube.com/watch?v=kYOdE4uxQXQ&t=342s",
+        ],
+        "validation_status": "Grounded strictly in Vol. 036 YouTube practitioner transcripts.",
+    },
+]

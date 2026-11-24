@@ -1,765 +1,839 @@
 from __future__ import annotations
 
-CHAPTER_9 = {
-    "id": "Q9",
-    "chapter_id": "Q9",
-    "chapter_number": 9,
-    "question_number": 9,
-    "slug": "contracts-statutory-guardrails-licensing-outreach-scripts",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern saas discount brokerage & gpo arbitrage?",
-    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
-    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": "Microsoft CSP and NCE, Adobe VIP Marketplace, Telarus Residuals, GPO Rebates, ASC 606, TCPA, and Documented Savings",
-    "layout_template": "legal_compliance_notes",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #37, SaaS Discount Brokerage & GPO Arbitrage, ranks #04 of 37 "
-        "with a 94/100 Money-to-Manpower Score. This chapter maps 12 operating plays "
-        "to the agreements, licensing boundaries, payment controls, and outreach records "
-        "that protect a small brokerage's economics. Authorized Microsoft CSP and Adobe "
-        "VIP transactions, Telarus or Avant residuals, private GPO rebates, and measured "
-        "renewal savings create retained revenue; client subscription spend does not. "
-        "Formula v2.0 annual owner profit is $32,000 Conservative, $225,000 Base, and "
-        "$522,000 Scaled. The operating priority is simple: establish authority before "
-        "touching licenses, fund annual commitments before ordering, disclose compensation, "
-        "and preserve evidence for every fee. A commercial virtual-card adjacency adds "
-        "settlement economics only through documented issuer and vendor arrangements."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual retained operator revenue; client subscription spend excluded",
-            "note": "32% net margin; $32,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$500,000",
-            "context": "Annual retained operator revenue; client subscription spend excluded",
-            "note": "45.0% net margin; $225,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual retained operator revenue; client subscription spend excluded",
-            "note": "58% net margin; $522,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Establish transaction authority before promising a transfer",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat SaaS brokerage as twelve contract-defined operating lanes, not "
-                    "a license to trade spare seats. The first seven are Microsoft CSP "
-                    "resale, Microsoft CPOR attribution, Microsoft NCE renewal management, "
-                    "Adobe VIP Marketplace migration, Zoom Up partner referral, Telarus "
-                    "or Avant UCaaS residuals, and private GPO membership aggregation. "
-                    "The remaining five are GPO administrative rebates, contingent renewal "
-                    "shared-savings audits, benchmark price-floor reviews, authorized license "
-                    "right-sizing, and the commercial virtual-card settlement adjacency. "
-                    "These are the chapter's twelve mapped plays; separate contracts "
-                    "determine whether each produces a fee. CPOR is a claiming and "
-                    "attribution mechanism for eligible Microsoft activities, not a universal "
-                    "license-transfer permission or substitute for CSP reseller authority. "
-                    "Obtain the customer's written mandate, identify the actual distributor "
-                    "and reseller relationship, and inspect current program eligibility "
-                    "before describing any move as transferable. Pax8 and Ingram workflows "
-                    "can synchronize eligible billing records, but automation cannot expand "
-                    "the underlying agreement. Record tenant identifiers, subscription "
-                    "identifiers, renewal dates, commitment terms, and the person authorized "
-                    "to accept changes. If the vendor cannot confirm an eligible transfer "
-                    "route, retain the incumbent subscription and offer a renewal audit "
-                    "instead of a migration."
-                ),
-                (
-                    "Keep each customer's entitlements inside that customer's authorized "
-                    "tenant or membership structure. Adobe VIP Marketplace transfers "
-                    "require the applicable reseller and distributor process; Zoom "
-                    "referrals and TSD commissions require the correct partner agreement "
-                    "and accepted attribution. A pooled purchasing agreement can aggregate "
-                    "negotiating leverage without pooling user credentials, seats, or "
-                    "prohibited sublicenses. Obtain vendor confirmation for any proposed "
-                    "multi-entity deployment, including affiliates, contractors, and "
-                    "acquired businesses. A price sheet showing a volume bracket does "
-                    "not establish entitlement eligibility. Apply least-privilege delegated "
-                    "administration and separate commercial authority from technical "
-                    "access: permission to inspect billing is not permission to provision "
-                    "licenses or read mailboxes. For a hypothetical $120,000 annual "
-                    "subscription with an authorized 8% retained spread, operator revenue "
-                    "is $9,600 before operating expenses, not $120,000. If the vendor "
-                    "compresses the spread to 5%, revenue becomes $6,000 and the "
-                    "broker must reprice service work or leave the renewal with the "
-                    "incumbent. Never repair that shortfall by selling unauthorized seats. "
-                    "Retain the accepted quote, program version, tenant authorization, "
-                    "order confirmation, and commission statement together so an audit "
-                    "can trace the entire commercial chain without reconstructing it "
-                    "from sales messages."
-                ),
-                (
-                    "There is no single federal SaaS-broker license that authorizes all "
-                    "these activities. Ordinary entity registration, assumed-name rules, "
-                    "foreign qualification, tax registration, and local business licensing "
-                    "depend on where the brokerage operates and what it actually sells. "
-                    "SaaS taxability also varies: New York generally treats access to "
-                    "prewritten software as taxable, while Texas taxes qualifying data "
-                    "processing services with a statutory twenty-percent exemption. "
-                    "Classify the actual deliverable and separately stated services before "
-                    "configuring tax software; do not apply one statewide label to every "
-                    "bundle. Private GPO agreements must identify eligible members, fee "
-                    "recipients, purchasing commitments, and termination rights. Joint "
-                    "purchasing remains subject to Sherman Act scrutiny under 15 U.S.C. "
-                    "1; members should not exchange downstream prices, wage plans, "
-                    "customer allocations, or competitor-specific purchasing strategies. "
-                    "Use aggregated benchmarks with controls against reverse identification. "
-                    "Healthcare purchasing adds a separate issue: arrangements implicating "
-                    "federal healthcare program business require analysis under 42 U.S.C. "
-                    "1320a-7b(b), including the GPO safe harbor where relevant. Merely "
-                    "calling a software club a GPO does not establish protection. "
-                    "If membership eligibility or a sector rule remains unresolved, "
-                    "perform a separately scoped advisory review without placing orders "
-                    "or accepting supplier-funded compensation."
-                ),
-            ],
-            "table": {
-                "caption": "Seven Authorized Distribution and Purchasing Plays: Authority, Unit Economics, and Fallback",
-                "headers": [
-                    "Mapped operating play and commercial purpose",
-                    "Required authority and retained evidence package",
-                    "Illustrative retained economics before operating expenses",
-                    "Specific failure mode and executable fallback",
-                ],
-                "rows": [
-                    [
-                        "Play 1: Microsoft CSP resale through an authorized channel",
-                        "Signed customer mandate plus current distributor reseller agreement",
-                        "Annual subscriptions of $120,000 at 8% retain $9,600",
-                        "If reseller eligibility fails, deliver renewal analysis without ordering",
-                    ],
-                    [
-                        "Play 2: Microsoft CPOR attribution for eligible partner activities",
-                        "Eligible activity evidence and accepted customer attribution documentation",
-                        "Only an accepted $2,000 incentive creates $2,000 revenue",
-                        "Rejected attribution means zero incentive and no transfer authority",
-                    ],
-                    [
-                        "Play 3: Microsoft NCE renewal and commitment management",
-                        "Recorded commitment dates, funded order, and permitted change window",
-                        "A contracted $1,200 renewal service fee retains $1,200",
-                        "Insufficient funding stops the new commitment before order submission",
-                    ],
-                    [
-                        "Play 4: Adobe VIP Marketplace authorized reseller migration",
-                        "Customer authorization and distributor-confirmed eligible migration procedure retained",
-                        "Annual subscriptions of $60,000 at 7% retain $4,200",
-                        "Ineligible transfer stays incumbent until an authorized renewal route",
-                    ],
-                    [
-                        "Play 5: Zoom Up referral through an eligible partner",
-                        "Accepted referral registration and the applicable partner compensation schedule",
-                        "A stated $3,000 accepted referral payment retains $3,000",
-                        "Unaccepted registration receives no assumed commission or customer discount",
-                    ],
-                    [
-                        "Play 6: Telarus or Avant master-agent UCaaS residuals",
-                        "Executed subagent schedule identifying eligible revenue and chargeback conditions",
-                        "Monthly eligible revenue of $10,000 at 10% retains $1,000",
-                        "Carrier chargebacks reduce commissions and trigger contractual reserve review",
-                    ],
-                    [
-                        "Play 7: Private GPO membership and purchasing aggregation",
-                        "Member eligibility agreements with vendor-approved aggregate purchasing terms",
-                        "Twenty members paying $600 annually create $12,000 revenue",
-                        "Ineligible members receive individual quotes without shared license pooling",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Preserve channel evidence before the first commission dispute",
-                "body": (
-                    "The highest-value records are usually created before billing begins. "
-                    "Capture them while the distributor and customer still agree."
-                ),
-                "items": [
-                    "Export the eligible subscription identifiers and renewal calendar before initiating any Microsoft or Adobe change; reconcile the post-change entitlement count against that export.",
-                    "Obtain the master-agent commission schedule and accepted deal-registration identifier before quoting a Telarus or Avant residual-funded discount.",
-                    "Store GPO bracket calculations with the vendor's eligibility language; distinguish purchasing-volume aggregation from prohibited cross-tenant seat aggregation.",
-                    "Model a three-percentage-point spread reduction before signing a fixed support promise; add a renewal repricing right rather than depending on perpetual partner tiers.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Contract for retained revenue, funded commitments, and measurable savings",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use a master services agreement plus transaction schedules that "
-                    "separate advisory work, resale, referral compensation, and supplier "
-                    "rebates. Scope must identify products, tenant boundaries, excluded "
-                    "implementation work, and who can issue purchase instructions. Define "
-                    "the fee trigger precisely: accepted referral, collected supplier "
-                    "commission, completed audit, or realized savings verified against "
-                    "paid invoices. For shared savings, fix the baseline date, eligible "
-                    "SKU population, quantities, currency, taxes, credits, implementation "
-                    "costs, and measurement period. A comparable renewal falling from "
-                    "$100,000 to $80,000 creates $20,000 eligible savings; a 30% "
-                    "contingent fee is $6,000, leaving $14,000 with the client before "
-                    "any separately agreed costs. Rates of 25%–35% therefore yield "
-                    "$5,000–$7,000 on that same savings base. Exclude reductions caused "
-                    "solely by unrelated headcount cuts unless the schedule expressly "
-                    "covers right-sizing. Disclose supplier payments and specify whether "
-                    "they offset the client fee. A narrow anti-circumvention clause "
-                    "should cover documented introductions for a stated period, not "
-                    "every vendor the client already knows. Give disputes a records "
-                    "exchange and correction process before collection escalation, and "
-                    "prevent sales staff from changing the baseline orally after the "
-                    "customer has accepted the proposal."
-                ),
-                (
-                    "For annual NCE commitments, distinguish the customer's payment "
-                    "frequency from the upstream commitment duration. Monthly billing "
-                    "does not convert an annual obligation into a cancellable monthly "
-                    "license. Require prefunded ACH or card collection covering the "
-                    "broker's noncancelable exposure before placing the order, plus "
-                    "authorized automatic replenishment for later charges where applicable. "
-                    "A debit authorization alone does not eliminate insufficient funds, "
-                    "ACH returns, card disputes, or customer insolvency. Define funding "
-                    "deadlines, permitted suspension actions, credit reserves, and who "
-                    "bears upstream charges after default; do not promise cancellation "
-                    "outside the current vendor rules. Liability caps should specify "
-                    "the measurement period and treatment of confidentiality breaches, "
-                    "misuse of data, unpaid charges, and intentional misconduct, subject "
-                    "to enforceability review. Select governing law, venue or arbitration "
-                    "procedure, notice methods, and interim-relief rights. The client "
-                    "retains its data and entitlements; the broker retains preexisting "
-                    "methods while granting the agreed deliverable rights. ASC 606 "
-                    "requires a principal-versus-agent assessment for each promise. The "
-                    "canonical scenarios already use retained operator revenue: $100,000 "
-                    "less $68,000 costs equals $32,000 profit; $500,000 less $275,000 "
-                    "equals $225,000; $900,000 less $378,000 equals $522,000. Do not "
-                    "apply retained_share again to these figures."
-                ),
-                (
-                    "The mapped b2b_commercial_vcc_interchange_rebate_arbitrage play is an "
-                    "adjacent AP service, not software subscription revenue. Offer "
-                    "'Free Automated Accounts Payable / Instant Vendor Settlement' only "
-                    "when the written scope supports both price and settlement timing. "
-                    "Freight brokerages, construction contractors, medical suppliers, "
-                    "property managers, and media agencies can route eligible invoices "
-                    "through issuer-generated single-use Visa or Mastercard commercial "
-                    "cards. Model 140–195 basis points as an agreement-specific rebate "
-                    "range, not an automatic share of all interchange. At $100 million "
-                    "eligible annual settled volume, that range produces $1.40–$1.95 "
-                    "million before contractual splits, reversals, and costs. For a "
-                    "smaller illustration, $1 million monthly volume at 160 basis "
-                    "points creates a $16,000 rebate pool; a 25% retained_share leaves "
-                    "$4,000 operator revenue. Invoice principal never becomes brokerage "
-                    "revenue. Inject accurate Level-3 line-item metadata at card creation "
-                    "where supported, verify vendor acceptance, and prohibit fabricated "
-                    "tax or commodity fields. For card-averse suppliers, offer a "
-                    "separately accepted 1.5%–2% discount for payment within ten days, "
-                    "or ordinary ACH when discount economics fail. Prioritize fragmented "
-                    "long-tail suppliers. Keep funds with the bank or authorized payment "
-                    "provider; possession or control of customer funds requires a "
-                    "separate federal and state money-transmission analysis."
-                ),
-            ],
-            "table": {
-                "caption": "Five Additional Plays and Two Contract Controls: Fee Triggers, Unit Math, and Risk Allocation",
-                "headers": [
-                    "Mapped play or transaction-specific contract control",
-                    "Fee trigger and retained evidence requirement",
-                    "Illustrative unit economics and recognition treatment",
-                    "Failure fallback and required contractual protection",
-                ],
-                "rows": [
-                    [
-                        "Play 8: Supplier-funded GPO administrative rebate collection",
-                        "Vendor statement confirms eligible purchases and disclosed administrative percentage",
-                        "Eligible purchases of $500,000 at 2% generate $10,000",
-                        "Rejected purchases earn zero rebate; reconcile eligibility before distributions",
-                    ],
-                    [
-                        "Play 9: Contingent SaaS renewal shared-savings audit",
-                        "Paid invoices establish comparable savings under the signed baseline",
-                        "Verified savings of $20,000 at 30% generate $6,000",
-                        "Disputed baseline pauses the contested invoice pending documented reconciliation",
-                    ],
-                    [
-                        "Play 10: Benchmark price-floor review with fixed deliverables",
-                        "Delivery acceptance covers normalized benchmark and negotiation recommendation report",
-                        "Four accepted reports at $1,500 generate $6,000 revenue",
-                        "Insufficient comparable observations require narrower findings and documented limitations",
-                    ],
-                    [
-                        "Play 11: Authorized license right-sizing within customer entitlements",
-                        "Named customer administrator approves reductions within permitted change periods",
-                        "Ten avoided $100 seats over twelve months save $12,000",
-                        "Locked commitments defer reductions until the next permitted window",
-                    ],
-                    [
-                        "Play 12: b2b_commercial_vcc_interchange_rebate_arbitrage through authorized issuer settlement",
-                        "Settled eligible invoices earn only the contracted retained rebate",
-                        "Monthly $1,000,000 volume times 1.60% times 25% retains $4,000",
-                        "Card refusal routes to agreed early-pay ACH or ordinary ACH",
-                    ],
-                    [
-                        "Annual NCE commitment funding and default allocation control",
-                        "Cleared prefunding covers exposure before the binding upstream order",
-                        "Annual exposure of $24,000 requires matching funding or documented coverage",
-                        "Failed collection blocks new orders while existing obligations remain enforceable",
-                    ],
-                    [
-                        "Scope, liability, dispute resolution, and data ownership schedule",
-                        "Signed schedule identifies deliverables, authorized contacts, and dispute procedure",
-                        "A twelve-month fee-based cap uses the expressly defined fee base",
-                        "Unresolved exceptions receive explicit allocation before commercial obligations begin",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Classify each commercial promise",
-                    "action": "Separate resale, referral, audit, rebate, and payment-service schedules.",
-                    "detail": "Identify the obligated supplier, the customer beneficiary, the compensation payer, and the evidence supporting principal-versus-agent treatment.",
-                },
-                {
-                    "step": 2,
-                    "title": "Lock authority and measurement",
-                    "action": "Obtain the signed mandate, comparable savings baseline, and program eligibility evidence.",
-                    "detail": "Record tenant identifiers, SKU quantities, renewal dates, permitted transfer mechanics, and the exact supplier-compensation offset rule.",
-                },
-                {
-                    "step": 3,
-                    "title": "Fund the noncancelable exposure",
-                    "action": "Confirm prefunding and authorized collection before submitting an annual commitment.",
-                    "detail": "Reconcile cleared funds against upstream exposure, review return and dispute risk, and retain the vendor's current cancellation terms.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile earned fees separately from spend",
-                    "action": "Match paid invoices and supplier statements to the signed fee trigger.",
-                    "detail": "Record retained revenue once, track reversals and reserves, and exclude customer subscription spend and payment principal from operator revenue.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Apply federal, state, and sector rules to the actual activity",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build the outreach rulebook around channel, recipient, technology, "
-                    "and location rather than the label B2B. Under 16 CFR "
-                    "310.6(b)(7), many business-to-business calls remain exempt from much "
-                    "of the Telemarketing Sales Rule, but specified material "
-                    "misrepresentations and false or misleading statements are outside "
-                    "that exemption. The office and cleaning supplies exception also "
-                    "requires separate treatment. Do not claim that business recipients "
-                    "erase federal restrictions. The TCPA, 47 U.S.C. 227, and "
-                    "47 CFR 64.1200 impose distinct requirements depending on dialing "
-                    "technology, prerecorded or artificial voice, destination, and purpose. "
-                    "A business user's mobile number can still trigger protections "
-                    "applicable to wireless numbers. Use manually dialed live calls "
-                    "as the default and separately assess any automated calling or "
-                    "texting workflow. Screen applicable national and state do-not-call "
-                    "lists, maintain internal suppression, and honor revocation without "
-                    "requiring a sales conversation. Treat AI-generated voice as "
-                    "artificial voice, not a workaround. Preserve consent evidence where "
-                    "required, including the disclosure presented and the number covered. "
-                    "Determine whether TSR recordkeeping provisions apply to the "
-                    "specific campaign instead of blindly assigning every B2B call "
-                    "the same federal retention period. Keep operational evidence under "
-                    "a documented retention schedule even when an exemption applies."
-                ),
-                (
-                    "Commercial email follows CAN-SPAM, 15 U.S.C. 7704, including "
-                    "business-to-business messages. Use accurate routing information, "
-                    "nondeceptive subject lines, required advertising identification where "
-                    "applicable, a valid physical postal address, and a functioning "
-                    "opt-out. Honor opt-outs within ten business days and keep the "
-                    "mechanism available for at least thirty days after transmission. "
-                    "A purchased contact list does not supply permission for prerecorded "
-                    "calls or texts. Map state outreach requirements independently: "
-                    "Florida Statutes 501.059 addresses covered telephonic sales calls, "
-                    "and Florida's telemarketing licensing provisions in Part IV "
-                    "of Chapter 501 require an applicability and exemption review. "
-                    "Washington RCW 80.36.390 supplies another state-specific telephone "
-                    "solicitation framework. Do not assume those consumer-oriented "
-                    "provisions cover every enterprise call, or that an enterprise "
-                    "label defeats them when the recipient and purpose fit. Recording "
-                    "also differs by jurisdiction; California Penal Code 632 protects "
-                    "confidential communications through an all-party consent rule. "
-                    "Use affirmative recording permission as the cross-state operating "
-                    "default, and continue unrecorded if permission is refused. Track "
-                    "recipient local time, number type, suppression status, recording "
-                    "choice, script version, and campaign owner. If jurisdiction cannot "
-                    "be established reliably, use a carefully addressed email rather "
-                    "than escalating to automated telephone outreach."
-                ),
-                (
-                    "Minimize the data collected for benchmarking: invoices, quantities, "
-                    "contract dates, and billing contacts usually suffice without "
-                    "mailbox contents or employee-level usage histories. California's "
-                    "CCPA, as amended, can cover business contact information when "
-                    "the business meets statutory applicability thresholds; the former "
-                    "general B2B exemption has expired. Use the appropriate service "
-                    "provider or contractor terms when the relationship qualifies, "
-                    "and do not sell identified client benchmarks as anonymous "
-                    "market intelligence. For healthcare customers, determine whether "
-                    "the brokerage actually creates, receives, maintains, or transmits "
-                    "protected health information on behalf of a covered entity. "
-                    "If it does, address business-associate obligations under 45 CFR "
-                    "164.502(e) and 164.504(e); buying ordinary SaaS for a clinic "
-                    "does not by itself establish that role. The healthcare GPO "
-                    "safe harbor at 42 CFR 1001.952(j) requires specified written "
-                    "member agreements and disclosures, including its administrative-fee "
-                    "conditions. Financial-sector customers may demand GLBA service-provider "
-                    "safeguards. For AP settlement, 31 CFR 1010.100(ff)(5) and "
-                    "state money-transmitter laws turn on the actual funds flow "
-                    "and applicable exceptions, not a platform's marketing name. "
-                    "Have the issuer or payment provider settle directly, document "
-                    "control boundaries, and suspend any proposed flow that would "
-                    "place client funds under an unassessed brokerage-controlled account."
-                ),
-            ],
-            "table": {
-                "caption": "Federal, State, and Sector Requirements Tied to Concrete Brokerage Activities",
-                "headers": [
-                    "Primary authority and activity requiring classification",
-                    "Concrete operating requirement for the brokerage",
-                    "Evidence retained with the relevant transaction",
-                    "Specific boundary and operational fallback action",
-                ],
-                "rows": [
-                    [
-                        "16 CFR 310.6(b)(7), business-to-business telephone solicitation exemption",
-                        "Prohibit covered misrepresentations despite the partial business-call exemption",
-                        "Approved factual claims, script versions, and substantiating supplier records",
-                        "Escalate ambiguous coverage before activating the proposed calling campaign",
-                    ],
-                    [
-                        "47 U.S.C. 227 and 47 CFR 64.1200, telephone outreach",
-                        "Classify number, dialing method, voice technology, and consent requirements",
-                        "Applicable consent records, suppression checks, and dialing configuration snapshots",
-                        "Replace unassessed automated contact with individually addressed commercial email",
-                    ],
-                    [
-                        "15 U.S.C. 7704, commercial email including business recipients",
-                        "Use truthful headers, postal address, and working unsubscribe processing",
-                        "Message copy, sending identity, opt-out receipt, and suppression timestamp",
-                        "Stop future marketing promptly rather than changing sending domains",
-                    ],
-                    [
-                        "Florida Statutes 501.059 and Washington RCW 80.36.390",
-                        "Assess covered solicitation definitions, exceptions, timing, and recipient protections",
-                        "Recipient location determination and jurisdiction-specific campaign applicability worksheet",
-                        "Withhold telephone contact when state applicability remains materially unresolved",
-                    ],
-                    [
-                        "California Penal Code 632, confidential recorded sales communications",
-                        "Obtain affirmative recording permission under the cross-state operating standard",
-                        "Permission timestamp or documented choice to continue without recording",
-                        "Disable recording immediately when a participant declines the request",
-                    ],
-                    [
-                        "42 CFR 1001.952(j) and 45 CFR 164.504(e)",
-                        "Separate healthcare GPO remuneration analysis from business-associate data duties",
-                        "Member fee disclosures and applicable executed business-associate agreement",
-                        "Avoid protected health information and defer unresolved supplier-funded fees",
-                    ],
-                    [
-                        "31 CFR 1010.100(ff)(5), payment settlement and money transmission",
-                        "Assess actual possession, control, agency, and applicable statutory exceptions",
-                        "Funds-flow diagram, provider agreement, settlement accounts, and role analysis",
-                        "Keep customer funds outside brokerage accounts pending required determinations",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before outreach or a binding order",
-                "body": (
-                    "Assign a named owner to each check and retain the supporting "
-                    "record with the campaign or transaction."
-                ),
-                "items": [
-                    "Verify signed customer authority, current channel eligibility, the permitted tenant or membership structure, and vendor-confirmed transfer mechanics.",
-                    "Verify the exact fee trigger, compensation disclosures, savings baseline, retained-share treatment, and available funding for annual commitments.",
-                    "Verify recipient jurisdiction, telephone technology, required consent, applicable suppression screening, recording choice, and email opt-out operation.",
-                    "Verify sector-specific data duties, healthcare remuneration conditions where implicated, tax treatment, and payment-provider control of settlement funds.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Use scripts that disclose economics and produce usable evidence",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use this first-touch email only with a real brokerage identity "
-                    "and its actual physical postal address in the footer: "
-                    "'Subject: Review your next Microsoft or Adobe renewal before "
-                    "commitment. Hello procurement team. We review renewal dates, "
-                    "licensed quantities, and authorized partner pricing for business "
-                    "software. We cannot determine your savings without your contract "
-                    "and comparable invoices. With your permission, we can prepare "
-                    "a scoped review that leaves existing subscriptions unchanged "
-                    "until you authorize a permitted transaction. We may receive "
-                    "supplier commissions or GPO administrative fees; the proposal "
-                    "will disclose those payments and any client fee. Would a "
-                    "fifteen-minute discussion with the renewal owner be useful? "
-                    "This is a commercial solicitation. Reply stop to end "
-                    "marketing emails from us.' The signature must identify the "
-                    "actual sender rather than implying Microsoft, Adobe, or the "
-                    "incumbent reseller sent the message. Keep the opt-out free "
-                    "and uncomplicated, and route replies to a monitored mailbox. "
-                    "DNS, MX, and SPF observations can suggest a discovery "
-                    "question, but they do not prove license quantities, renewal "
-                    "dates, or the customer's purchasing authority. Do not turn "
-                    "a technographic signal into a claim that the prospect "
-                    "is overpaying or has an expiring contract."
-                ),
-                (
-                    "For a screened, manually dialed live call, say: 'Hello, "
-                    "I am calling from an independent software procurement brokerage. "
-                    "This is a sales call about renewal review services. Are "
-                    "you responsible for software purchasing, and is now a "
-                    "reasonable time for two questions?' If recording is proposed, "
-                    "ask separately: 'May we record this discussion for our "
-                    "transaction notes? We can continue without recording.' Discovery "
-                    "then follows a bounded sequence: 'Which agreement establishes "
-                    "your renewal and commitment dates? Who can authorize access "
-                    "to billing records? Are there affiliate, healthcare, or public-sector "
-                    "restrictions we should account for? Would you prefer a "
-                    "fixed review fee or a proposal tied to verified savings?' "
-                    "Do not request global administrator credentials, patient records, "
-                    "or payment-card details over the call. For a shared-savings "
-                    "proposal, say: 'If comparable annual cost falls from $100,000 "
-                    "to $80,000, a 30% fee would be $6,000 and your "
-                    "retained savings would be $14,000 before separately agreed "
-                    "costs. The signed baseline will define comparability and "
-                    "supplier-compensation offsets.' If the prospect declines, answer: "
-                    "'Understood. I will record your request and stop marketing "
-                    "contact through the channels you identify.' Record the "
-                    "suppression request before scheduling any further sales task."
-                ),
-                (
-                    "For the VCC adjacency, use a vendor-specific acceptance conversation: "
-                    "'We support an issuer-provided single-use commercial card option "
-                    "for approved invoices. Do you accept this payment method, "
-                    "and what processing charges or contractual restrictions apply? "
-                    "Participation is optional. If card payment does not work "
-                    "for you, we can discuss an agreed early-payment ACH "
-                    "discount or retain the existing payment method.' Never "
-                    "promise instant funds before confirming issuer settlement timing, "
-                    "and never imply that Level-3 metadata removes merchant "
-                    "acceptance costs. The buyer-side script is: 'Our compensation "
-                    "depends on eligible settled card volume and the issuer "
-                    "agreement. We will disclose the retained share, reversals, "
-                    "and any platform fees before activation. Your invoice "
-                    "principal remains payable to your vendors, not earned "
-                    "by our brokerage.' A $10,000 invoice paid with a "
-                    "2% early-payment discount becomes a $9,800 payment and "
-                    "$200 buyer savings; it creates no broker fee unless "
-                    "a separate agreement expressly provides one. Close every "
-                    "discovery session with a written recap identifying authority, "
-                    "documents requested, compensation, permitted next action, and "
-                    "opt-out preference. Reconcile that recap with the final "
-                    "schedule before ordering. A polished conversation is useful "
-                    "only when the resulting evidence supports the transaction "
-                    "that operations actually executes."
-                ),
-            ],
-            "table": {
-                "caption": "Verbatim Outreach and Discovery Scripts with Required Evidence and Stop Conditions",
-                "headers": [
-                    "Conversation stage and appropriate recipient context",
-                    "Verbatim language for the authorized sales operator",
-                    "Evidence required before proceeding with transaction",
-                    "Specific stop condition and next action",
-                ],
-                "rows": [
-                    [
-                        "Initial email to the business software renewal owner",
-                        "We review authorized renewal options without changing subscriptions until you authorize a permitted transaction.",
-                        "Actual sender identity, postal address, and functioning unsubscribe route",
-                        "An opt-out suppresses future marketing rather than triggering another pitch",
-                    ],
-                    [
-                        "Live telephone introduction after applicable screening checks",
-                        "This is a sales call about renewal review services. Is now a reasonable time?",
-                        "Recipient location, suppression screening, number classification, and live dialing method",
-                        "A refusal ends the pitch and records the requested suppression",
-                    ],
-                    [
-                        "Recording request before capturing a confidential discovery discussion",
-                        "May we record this discussion? We can continue without recording.",
-                        "Affirmative permission recorded before substantive conversation capture actually begins",
-                        "Refused permission disables recording while allowing an unrecorded discussion",
-                    ],
-                    [
-                        "Authority discovery before requesting customer subscription billing records",
-                        "Who can authorize billing access, and which agreement establishes your commitment dates?",
-                        "Named authorized contact and narrowly scoped document-access permission retained",
-                        "Unverified authority means no tenant changes and no credential requests",
-                    ],
-                    [
-                        "Shared-savings explanation before accepting the proposed contingent fee",
-                        "A $20,000 comparable saving at a 30% fee leaves $14,000 before separately agreed costs.",
-                        "Signed baseline, eligible quantities, measurement period, and compensation offset rule",
-                        "Disputed comparability requires baseline reconciliation before contingent fee billing",
-                    ],
-                    [
-                        "Supplier conversation before activating single-use commercial card settlement",
-                        "Participation is optional. Would commercial card payment or an agreed early-payment ACH arrangement work?",
-                        "Supplier acceptance, verified banking route, issuer terms, and invoice eligibility",
-                        "Card refusal preserves ordinary ACH unless another method is agreed",
-                    ],
-                    [
-                        "Final transaction recap before placing an annual software commitment",
-                        "Please confirm the authorized products, funded commitment, disclosed compensation, and permitted next action.",
-                        "Signed order, cleared funding, current vendor terms, and customer authority",
-                        "Any mismatch stops new ordering until the written records agree",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "Authority makes the transaction permissible; evidence makes the margin collectible."
-    ),
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Build a transaction register separating the twelve mapped operating plays, their contract counterparties, permitted activities, fee triggers, and retained revenue treatment.",
-        "Obtain current Microsoft CSP and CPOR, Adobe VIP Marketplace, Zoom Up, and TSD documentation for the exact proposed activity; preserve customer authorization and accepted attribution records.",
-        "Execute an MSA and transaction schedules covering scope, baseline, supplier compensation, narrow anti-circumvention, liability allocation, dispute resolution, and ownership of data and deliverables.",
-        "Require prefunding against annual NCE exposure, document ACH or card collection authority, and reconcile cleared funds before submitting any binding upstream commitment.",
-        "Configure jurisdiction-aware outreach screening, recording permission, commercial email identity, postal-address insertion, and immediate internal suppression handling.",
-        "Validate healthcare, privacy, tax, antitrust, and payment-settlement boundaries; reconcile retained fees without including client software spend or invoice principal as operator revenue.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "16 CFR 310.6(b)(7) — Telemarketing Sales Rule business-call exemption",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310/section-310.6",
-            "relevance": (
-                "Defines the partial business-to-business exemption and its exceptions, "
-                "including specified misrepresentations and false or misleading statements."
-            ),
-        },
-        {
-            "title": "47 U.S.C. 227 — Restrictions on telephone equipment use",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Supplies TCPA authority for classifying automated, artificial-voice, "
-                "prerecorded, and other covered telephone outreach."
-            ),
-        },
-        {
-            "title": "47 CFR 64.1200 — Telephone solicitation and calling restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": (
-                "Provides operational rules for consent, do-not-call practices, "
-                "revocation, and covered telephone marketing methods."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Governs truthful commercial email, required identification and postal "
-                "address, opt-out availability, and timely suppression."
-            ),
-        },
-        {
-            "title": "Florida Statutes 501.059 — Telephone solicitation",
-            "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.059.html",
-            "relevance": (
-                "Requires a Florida-specific assessment of covered recipients, "
-                "solicitation methods, consent, and statutory exceptions."
-            ),
-        },
-        {
-            "title": "Washington RCW 80.36.390 — Telephone solicitation",
-            "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=80.36.390",
-            "relevance": (
-                "Adds Washington-specific requirements for covered telephone solicitations "
-                "and recipient requests."
-            ),
-        },
-        {
-            "title": "California Penal Code 632 — Confidential communications",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=632.&lawCode=PEN",
-            "relevance": (
-                "Supports an affirmative recording-permission workflow for confidential "
-                "discovery calls involving California participants."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 1 — Sherman Act prohibition on restraints of trade",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1",
-            "relevance": (
-                "Requires GPO purchasing coordination to avoid unlawful agreements "
-                "on downstream prices, customer allocation, and other competitive conduct."
-            ),
-        },
-        {
-            "title": "42 U.S.C. 1320a-7b(b) — Federal healthcare anti-kickback provisions",
-            "url": "https://www.law.cornell.edu/uscode/text/42/1320a-7b",
-            "relevance": (
-                "Requires analysis of remuneration arrangements that implicate "
-                "federal healthcare program business."
-            ),
-        },
-        {
-            "title": "42 CFR 1001.952(j) — Group purchasing organization safe harbor",
-            "url": "https://www.ecfr.gov/current/title-42/chapter-V/subchapter-B/part-1001/subpart-C/section-1001.952",
-            "relevance": (
-                "Specifies written agreement and disclosure conditions for qualifying "
-                "GPO administrative-fee arrangements, including the three-percent framework "
-                "and provisions for other specified fee amounts."
-            ),
-        },
-        {
-            "title": "45 CFR 164.504(e) — Business-associate contract requirements",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504",
-            "relevance": (
-                "Defines contract requirements when the brokerage's actual activities "
-                "establish a business-associate relationship involving protected health information."
-            ),
-        },
-        {
-            "title": "California Civil Code 1798.100 — Personal information obligations",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV",
-            "relevance": (
-                "Supports purpose limitation, data minimization, notice, and contractual "
-                "controls where CCPA applicability requirements are met."
-            ),
-        },
-        {
-            "title": "31 CFR 1010.100(ff)(5) — Money transmitter definition",
-            "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-A/section-1010.100",
-            "relevance": (
-                "Provides the federal activity-based definition and exceptions relevant "
-                "to AP settlement; state licensing analysis remains separate."
-            ),
-        },
-        {
-            "title": "Texas Tax Code 151.351 — Information and data processing services",
-            "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm#151.351",
-            "relevance": (
-                "Provides the twenty-percent exemption for qualifying information "
-                "and data processing services after the transaction is properly classified."
-            ),
-        },
-        {
-            "title": "16 CFR 314.4 — Safeguards Rule requirements",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314/section-314.4",
-            "relevance": (
-                "Explains safeguards and service-provider oversight duties that covered "
-                "financial institutions may implement through brokerage vendor contracts."
-            ),
-        },
-    ],
-}
+CHAPTER_9 = {'id': 'Q9',
+ 'chapter_id': 'Q9',
+ 'chapter_number': 9,
+ 'question_number': 9,
+ 'slug': 'saas-license-audits-shadow-it-rightsizing',
+ 'question_prompt': 'How do I uncover SaaS sprawl, shadow IT, and unused licenses, then rightsize seats '
+                    'before money is wasted?',
+ 'kicker': 'Q9 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'SaaS License Audits, Shadow IT, and Rightsizing',
+ 'subtitle': 'Vendor-count license audits, Airtable audit automation, Zylo, Flexera, and CloudEagle SaaS '
+             'management, shadow IT discovery and cyber-risk assessment, recurring SaaS review cycles, '
+             'third-party vendor risk audits, hidden SaaS waste, shelfware, ServiceNow SAM contract '
+             'tracking, and identity-based license rightsizing',
+ 'layout_template': 'tool_resource_directory',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners agree that leadership underestimates its SaaS estate by two to four '
+                      'times, that shadow IT makes up 15 to 30% of real spend, and that roughly a third of '
+                      'spend is waste, with Zylo measuring 44% of licenses idle in any 30-day window. The '
+                      'street build order is money first (12 months of ERP, invoice and Concur data), '
+                      'identity second (SSO, Entra ID, Okta, HRIS), then cost per active user and a '
+                      'three-band triage that cancels sub-20% tools, right-sizes the middle 90 days before '
+                      'renewal and negotiates the rest. Reclaim runs on Airtable forms, YouAttest manager '
+                      'campaigns, Flexera E5-to-E1 downgrades and help desk ticket mining that saved a '
+                      'MetrixData 360 client over $250K a year. The split: platform vendors sell '
+                      'automation, while Mike Austin insists tools do not equal transformation and '
+                      'Adobe-style assignment history can bite back.',
+ 'key_metrics': [{'label': 'Vendor Count Underestimate',
+                  'metric': 'Vendor Count Underestimate',
+                  'value': '2-4x the 40-70 vendors leaders estimate',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Leaders guess 40 to 70 SaaS vendors; a proper audit finds two to four times '
+                             'more, driven by shadow IT, departmental buys and free trials auto-renewing '
+                             'on a credit card.',
+                  'source': 'SaaS Procurement Insider ([udHdwtjP7yM @ 00:00:00])'},
+                 {'label': 'Licenses Wasted per 30-Day Period',
+                  'metric': 'Licenses Wasted per 30-Day Period',
+                  'value': '44%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Zylo SaaS Management Index figure presented with SAP Concur, alongside '
+                             'average annual software spend of about $50M and 37% of apps bought by '
+                             'employees and expensed.',
+                  'source': 'SAP Concur ([ARjBgExQ3oQ @ 00:09:33])'},
+                 {'label': 'Shadow IT Share of Actual Spend',
+                  'metric': 'Shadow IT Share of Actual Spend',
+                  'value': '15-30%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Shadow IT detected by SaaS management platforms monitoring Azure AD and '
+                             'Google Workspace logins plus browser extensions; first-90-day savings cover '
+                             'platform cost many times over.',
+                  'source': 'SaaS Procurement Insider ([udHdwtjP7yM @ 00:03:10])'},
+                 {'label': 'Help Desk Ticket Reclaim Savings',
+                  'metric': 'Help Desk Ticket Reclaim Savings',
+                  'value': 'Over $250K per year',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Mind-mapping software bought 150 times in 60 days inside an estate of 1,500 '
+                             'licenses with 750 unused for over six months; fixed with a volume agreement, '
+                             '90-day reclaim and shared pool.',
+                  'source': 'MetrixData 360 ([lB5ThkY4hMA @ 00:26:16])'}],
+ 'sections': [{'number': 1,
+               'title': 'The Practitioner Consensus',
+               'paragraphs': ["Every operator who has opened up a client's books reports the same blind "
+                              'spot: leadership undercounts its SaaS footprint by a wide margin. SaaS '
+                              'Procurement Insider says leaders guess 40 to 70 vendors and a proper audit '
+                              'lands two to four times higher, driven by shadow IT, departmental buys, and '
+                              'free trials quietly auto-renewing on a credit card [udHdwtjP7yM @ '
+                              '00:00:00]. Zylo co-founder Ben, presenting with SAP Concur, gives the '
+                              'enterprise version: a financial services firm estimated $100M in spend and '
+                              'discovery surfaced $300M, while a high-growth tech company that believed it '
+                              'ran 70 apps actually had 223, with 118 arriving through expense reports '
+                              "[ARjBgExQ3oQ @ 00:16:23]. Zylo's index adds that 37% of apps are bought by "
+                              'employees and expensed, and IT now buys only about 18% of software, so the '
+                              'purchase trail sits with finance, business units and individual staff '
+                              'rather than one owner [ARjBgExQ3oQ @ 00:10:21]. Mike Austin of MetrixData '
+                              '360 frames the same gap as an ownership failure: shadow IT thrives where '
+                              "nobody owns the category, illustrated by a manager approving a tool at '20 "
+                              "bucks a month' [lB5ThkY4hMA @ 00:34:04]. The baseline prerequisite is an "
+                              'honest master list of who pays for what, built before anyone argues about '
+                              'which tool to buy.',
+                              'The consensus build order starts with money, then identity. SaaS '
+                              'Procurement Insider pulls every vendor payment from the last 12 months out '
+                              'of the ERP and invoices, starting from the SaaS cost category, then '
+                              'cross-references the SSO directory, calling authentication data a '
+                              "'goldmine'; invoices plus SSO get an operator 80% of the way [udHdwtjP7yM @ "
+                              '00:03:50]. CloudEagle teaches the identical sequence for smaller shops: '
+                              'start from accounting records, cross-check the IT admin list, and capture '
+                              "app, owner, license count and renewal date [M0ICfl_2HyY @ 00:01:48]. Zylo's "
+                              "'follow the money' pillar runs across Concur and the ERP with AI "
+                              'normalization, and the Concur integration pulls a full year of history, '
+                              'scans every expense category because miscategorization is common, and '
+                              'tracks spend down to the individual employee [ARjBgExQ3oQ @ 00:22:55]. '
+                              "NinjaOne's review-cycle playbook then layers identity on top, integrating "
+                              'the SaaS management platform with Entra ID or Okta and tracking four '
+                              'metrics: inventory by department, active versus dormant users, allocation '
+                              'versus utilization, and security posture covering MFA, SSO and access '
+                              'controls [ORh7DquM3lY @ 00:01:31]. Across all four, the master list is the '
+                              'asset: vendor, annual cost, cost center, renewal date and contract owner '
+                              'are the fields that later drive every cut and every negotiation.',
+                              'On the size of the prize, practitioners converge on roughly a third of '
+                              "spend. Mike Austin says Gartner's 30% SaaS waste figure is 'conservative,' "
+                              'that he routinely finds 30 to 40% waste in Microsoft 365, and that on a '
+                              "$10M SaaS budget that means $3M burned [lB5ThkY4hMA @ 00:15:17]. Zylo's "
+                              'SaaS Management Index puts license waste at 44% in any 30-day period, '
+                              'against average annual software spend of about $50M, making software the '
+                              'second-largest operating expense after people [ARjBgExQ3oQ @ 00:09:33]. '
+                              'SaaS Procurement Insider expects a first audit to surface 15 to 30% of '
+                              'spend to eliminate or right-size, and opens the right-size conversation '
+                              'with the vendor 90 days before renewal [udHdwtjP7yM @ 00:15:33]. NinjaOne '
+                              'sets the same clock, holding reviews 60 to 90 days ahead of major renewals '
+                              'so there is time to optimize, with quarterly cycles for high-change '
+                              'environments, semi-annual for stable clients, and an annual baseline before '
+                              'renewals, M&A, layoffs or audits [ORh7DquM3lY @ 00:01:07]. The shared logic '
+                              "is blunt: auto-renewal at last year's count is where the money leaks, so "
+                              'the audit has to finish while there is still leverage to cut seats, '
+                              'downgrade tiers, or walk away entirely.'],
+               'table': {'caption': 'Where the practitioners agree before a single license is touched',
+                         'headers': ['Consensus Point',
+                                     'What Operators Agree On',
+                                     'Anchor Number or Signal',
+                                     'Expert Source'],
+                         'rows': [['Leadership undercounts the real SaaS vendor footprint',
+                                   'Shadow IT, departmental buys and auto-renewing free trials inflate the '
+                                   'true count',
+                                   'Leaders guess 40 to 70 vendors; audits find 2 to 4 times more',
+                                   'SaaS Procurement Insider ([udHdwtjP7yM @ 00:00:00])'],
+                                  ['Follow the money through expense and ERP data first',
+                                   'Concur and ERP spend discovery with AI normalization exposes hidden '
+                                   'enterprise outlay',
+                                   'Financial services firm estimated $100M; Zylo discovery found $300M',
+                                   'SAP Concur ([ARjBgExQ3oQ @ 00:16:23])'],
+                                  ['Shadow IT is a material share of total spend',
+                                   'SaaS management platforms watch Azure AD, Google Workspace logins and '
+                                   'browser extensions',
+                                   'Shadow IT runs 15 to 30% of actual SaaS spend',
+                                   'SaaS Procurement Insider ([udHdwtjP7yM @ 00:03:10])'],
+                                  ['Waste is larger than the analyst headline number',
+                                   "Gartner's 30% SaaS waste estimate is called conservative in live "
+                                   'client estates',
+                                   '30 to 40% Microsoft 365 waste found on a routine basis',
+                                   'MetrixData 360 ([lB5ThkY4hMA @ 00:06:44])'],
+                                  ['Reviews must land well before the renewal date',
+                                   'Quarterly for high-change clients, semi-annual for stable ones, annual '
+                                   'baseline otherwise',
+                                   'Reviews held 60 to 90 days before every major renewal',
+                                   'NinjaOne IT Tech Tips ([ORh7DquM3lY @ 00:01:07])'],
+                                  ['Inventory starts in accounting, then the IT admin list',
+                                   'Cross-check accounting records against admin lists for every '
+                                   'subscription found',
+                                   'App, owner, license count and renewal date as the minimum record',
+                                   'CloudEagle ([M0ICfl_2HyY @ 00:01:48])'],
+                                  ['Approved-app lists are always incomplete in practice',
+                                   'Browser-based discovery flags newly connected apps that never passed '
+                                   'security review',
+                                   '160 newly connected apps found; 17 approved, 4 not approved',
+                                   'AppOmni ([EEuTZMr-lgI @ 00:00:39])']]}},
+              {'number': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['SaaS Procurement Insider runs the sharpest usage math. Last login gets '
+                              "tracked, but login frequency is 'most important' and most audits miss it: a "
+                              'user logging in three times a year belongs on a restricted tier, and an '
+                              'average session of 90 seconds signals view-only use [udHdwtjP7yM @ '
+                              '00:05:06]. The killer number is cost per active user, annual cost divided '
+                              'by users with at least four logins in 90 days; in the worked example, a '
+                              '$30,000 contract becomes $1,071 per active user, with 122 people never '
+                              'touching it [udHdwtjP7yM @ 00:09:37]. Triage follows in three bands: below '
+                              '20% usage gets a 30-day justification window and is otherwise cancelled, 20 '
+                              'to 70% gets right-sized with the vendor 90 days out, and above 70% gets '
+                              "negotiated for escalation clauses and a flat renewal. CloudEagle's cut line "
+                              "is blunter: 'cancel any tools with zero logins in the last quarter,' and "
+                              'when only 2 of 20 licenses are live, trim the rest [M0ICfl_2HyY @ '
+                              '00:03:15]. Zylo calibrates the threshold at 90 days of inactivity, shorter '
+                              'for daily-use apps, insists on validating the data source and the logic '
+                              "that defines 'active,' and decides up front whether users get a choice or "
+                              'seats are reclaimed automatically [ftGGihhAn3g @ 00:02:37].',
+                              'For the reclaim itself, the operators push automation hard. Chris of '
+                              'Optimize Information Systems faced an Asana renewal on Friday with 600 '
+                              "licenses allowed and 802 in use, 801 of them real, and says 'I never do "
+                              "this manually anymore' [tex2cNz4vcc @ 00:01:56]. His Airtable build pulls "
+                              'user lists through integrations, scopes the audit to three months unused, '
+                              "messages each user by email or Slack with a yes-or-no 'need continued "
+                              "access?' form plus justification, lets Airtable's native AI judge each "
+                              'answer against admin-supplied valid reasons, auto-confirms the keepers, '
+                              'flags weak answers for admin review, and deactivates denials through the '
+                              "app's API [tex2cNz4vcc @ 00:04:21]. YouAttest takes the manager route: "
+                              'Craig, a senior director of technology and cyber security at a '
+                              "pharmaceutical company, ran a 'Jira licenses' campaign that auto-delegates "
+                              'to managers by email to certify or revoke, fed automatically from Okta, '
+                              'Azure AD or JumpCloud or from a CSV for siloed apps, and reusing his '
+                              "access-review tool for licenses cost 'not a cent more' [NCcXkxFkX8k @ "
+                              '00:03:27]. Flexera wires discovery into Microsoft by opening App '
+                              'registrations in the Azure portal, adding Microsoft Graph permissions, '
+                              'recording tenant ID, client ID and client secret, and configuring the Entra '
+                              'ID connector the same way [PNMNLFBOp7E @ 00:01:31].',
+                              'The biggest single wins come from tier surgery and procurement plumbing. '
+                              "Flexera's rightsizing view shows 4,454 users with no activity in Apps for "
+                              'Enterprise who could drop from E5 to E1, non-Power BI users who could move '
+                              'from E5 to E3, and users holding both E3 and E5, priced at negotiated cost '
+                              'rather than MSRP across an E5 bundle of 39 apps [PNMNLFBOp7E @ 00:03:47]. '
+                              'Mike Austin mined help desk tickets and found mind-mapping software bought '
+                              '150 times in 60 days inside an estate of 1,500 licenses, 750 of them unused '
+                              'for over six months; the fix was a commercial volume agreement instead of '
+                              'web pricing, reclaim after 90 days of non-use with a five-day email '
+                              'warning, and a shared pool for reclaimed seats, worth over $250K a year '
+                              '[lB5ThkY4hMA @ 00:26:16]. SaaS Procurement Insider demands user lists, last '
+                              'login, 90-day login counts and session duration from the vendor in writing, '
+                              'treats refusal as a signal, writes usage-data rights into the contract, and '
+                              'asks for SSO at no extra cost framed as security and compliance '
+                              '[udHdwtjP7yM @ 00:06:24]. Provision Networks brings usage data to the table '
+                              'too, citing downtime or that 40% never adopted premium features '
+                              '[Q3VZHAsymcg @ 00:03:56].'],
+               'table': {'caption': 'Street mechanics, triggers and the numbers practitioners actually '
+                                    'reported',
+                         'headers': ['Mechanic',
+                                     'Exact Setup or Trigger',
+                                     'Reported Number',
+                                     'Expert Source'],
+                         'rows': [['Cost per active user calculation on every contract',
+                                   'Divide annual cost by users with at least four logins in 90 days',
+                                   '$30,000 contract becomes $1,071 per active user; 122 never used it',
+                                   'SaaS Procurement Insider ([udHdwtjP7yM @ 00:09:37])'],
+                                  ['Three-band usage triage before each renewal',
+                                   'Eliminate after 30-day justification, right-size 90 days out, '
+                                   'negotiate flat renewal',
+                                   'Below 20% eliminate, 20 to 70% right-size, above 70% negotiate',
+                                   'SaaS Procurement Insider ([udHdwtjP7yM @ 00:09:58])'],
+                                  ['Airtable automated reclaim with AI-judged justification forms',
+                                   'Pull user lists, scope three months unused, message users, deactivate '
+                                   'via API',
+                                   'Asana: 600 licenses allowed against 802 in use, renewal due Friday',
+                                   'Optimize Information Systems ([tex2cNz4vcc @ 00:00:31])'],
+                                  ['Help desk ticket mining into a shared license pool',
+                                   'Volume agreement replaces web price; reclaim after 90 idle days, '
+                                   'five-day warning',
+                                   '1,500 licenses, 750 unused six months; over $250K saved yearly',
+                                   'MetrixData 360 ([lB5ThkY4hMA @ 00:26:16])'],
+                                  ['Microsoft 365 tier downgrades through Entra ID and Graph connectors',
+                                   'Target unassigned subscriptions and inactive users, priced at '
+                                   'negotiated cost not MSRP',
+                                   '4,454 inactive Apps for Enterprise users could move E5 to E1',
+                                   'Flexera | ITAM, FinOps & SaaS Management ([PNMNLFBOp7E @ 00:03:47])'],
+                                  ['Manual audit versus paid platform break-even point',
+                                   'Spreadsheets work under 500 employees; platforms like Nudge charge per '
+                                   'active user',
+                                   'Nudge at $5 per active user monthly; payback in a quarter above $2M '
+                                   'spend',
+                                   'SaaS Procurement Insider ([udHdwtjP7yM @ 00:12:36])'],
+                                  ['Manager-delegated license certification campaigns via identity '
+                                   'provider',
+                                   'Okta, Azure AD or JumpCloud feed, or CSV upload for siloed apps',
+                                   'Reusing the existing access-review tool for licenses cost not a cent '
+                                   'more',
+                                   'YouAttest ([NCcXkxFkX8k @ 00:02:16])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Shortcuts the operators use to find seats nobody else finds',
+                           'body': 'These are the small moves practitioners use to compress audit time, '
+                                   'catch hidden seats, and stop new spend before it lands.',
+                           'items': ['Upload the 12-month transaction CSV to AI for categorization; a job '
+                                     'that takes two days drops to two hours [SaaS Procurement Insider — '
+                                     'udHdwtjP7yM @ 00:01:50]',
+                                     'Cross-match app user lists against HRIS every quarter to catch '
+                                     'leavers and role-changers still holding paid seats [SaaS Procurement '
+                                     'Insider — udHdwtjP7yM @ 00:07:57]',
+                                     "Hunt default 'birthright' licenses explicitly; they go unflagged in "
+                                     'reviews and quietly add up [YouAttest — NCcXkxFkX8k @ 00:05:05]',
+                                     'Before approving a new tool request, check the shelf: a Kofax '
+                                     'request stuck in a 4 to 20 week approval should have been offered an '
+                                     'idle Adobe license instead [MetrixData 360 — lB5ThkY4hMA @ '
+                                     '00:30:57]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Build the money-first master list',
+                              'action': 'Pull 12 months of vendor payments and expense data into one list.',
+                              'detail': 'Start from the SaaS cost category in the ERP and invoices, '
+                                        'recording vendor, annual cost, cost center, renewal date and '
+                                        'contract owner [SaaS Procurement Insider — udHdwtjP7yM @ '
+                                        '00:01:30]; scan every Concur expense category because '
+                                        'miscategorization is common [SAP Concur — ARjBgExQ3oQ @ '
+                                        '00:22:55].'},
+                             {'step': 2,
+                              'title': 'Overlay identity and usage data',
+                              'action': 'Connect SSO and the identity provider to measure real usage per '
+                                        'seat.',
+                              'detail': 'Integrate the SMP with Entra ID or Okta and track active versus '
+                                        'dormant users and allocation versus utilization [NinjaOne IT Tech '
+                                        'Tips — ORh7DquM3lY @ 00:01:31]; log last login, login frequency '
+                                        'and average session duration, where 90-second sessions mean '
+                                        'view-only use [SaaS Procurement Insider — udHdwtjP7yM @ '
+                                        '00:05:45].'},
+                             {'step': 3,
+                              'title': 'Score and triage every app',
+                              'action': 'Compute cost per active user and sort into eliminate, right-size '
+                                        'or negotiate.',
+                              'detail': 'Below 20% usage gets a 30-day justification window, 20 to 70% is '
+                                        'right-sized with the vendor 90 days out, above 70% is negotiated '
+                                        'for a flat renewal [SaaS Procurement Insider — udHdwtjP7yM @ '
+                                        '00:09:58]; cancel tools with zero logins in the last quarter '
+                                        'outright [CloudEagle — M0ICfl_2HyY @ 00:03:15].'},
+                             {'step': 4,
+                              'title': 'Run the automated reclaim',
+                              'action': 'Message dormant users, collect justifications, deactivate and '
+                                        'pool the seats.',
+                              'detail': 'Airtable sends yes-or-no access forms, AI judges each '
+                                        'justification, weak answers go to admin review, and denials are '
+                                        'deactivated via API [Optimize Information Systems — tex2cNz4vcc @ '
+                                        '00:02:20]; reclaimed seats go to a shared pool after 90 days of '
+                                        'non-use and a five-day email warning [MetrixData 360 — '
+                                        'lB5ThkY4hMA @ 00:26:16].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether an audit needs a platform at all. SaaS '
+                              'Procurement Insider draws a hard line: a manual audit built from invoices '
+                              'plus SSO data works under 500 employees, while above $2M in SaaS spend a '
+                              'platform pays for itself inside a quarter, with Nudge priced at $5 per '
+                              'active user per month [udHdwtjP7yM @ 00:13:16]. Chris at Optimize '
+                              'Information Systems never runs license audits manually anymore, wiring '
+                              'Airtable into the stack so it pulls user lists, messages every inactive '
+                              'user, and deactivates through the API [tex2cNz4vcc @ 00:01:56]. Provision '
+                              'Networks calls manual audits basically extinct in modern IT operations, '
+                              'pointing to platforms that connect through SSO and APIs and scan expense '
+                              'data for shadow IT [Q3VZHAsymcg @ 00:02:15]. Mike Austin of MetrixData 360 '
+                              "pushes hard the other way: you don't need another tool, because tools do "
+                              'not equal transformation, inventories do not show usage, and the biggest '
+                              'win came from mining the help desk tickets a client already had '
+                              '[lB5ThkY4hMA @ 00:21:23]. The operator read is that the tool debate is '
+                              "really a spend-and-headcount threshold question, and Austin's flywheel of "
+                              'intelligence plus ownership plus leverage means a platform bought without '
+                              'an owner does not move the number by itself.',
+                              'Practitioners agree dormant seats must come back, but they split on the '
+                              'trigger and on who makes the final call. Zylo starts at a 90-day inactivity '
+                              'threshold, shorter for daily-use apps, and forces a choice between offering '
+                              'users the option to keep a seat or reclaiming automatically, with owned '
+                              'documents and workspaces transferred first [ftGGihhAn3g @ 00:02:37]. '
+                              'CloudEagle is blunter: cancel any tool with zero logins in the last '
+                              'quarter, then walk into renewal with the trimmed count, as in the case '
+                              'where only 2 of 20 licenses were in use [M0ICfl_2HyY @ 00:03:15]. The '
+                              'judgment layer differs even more. Optimize Information Systems sends every '
+                              'inactive user a yes-or-no continued-access form with a justification box, '
+                              "lets Airtable's native AI grade each answer against admin-supplied valid "
+                              'reasons, and escalates only insufficient responses for admin review and '
+                              'further follow-ups [tex2cNz4vcc @ 00:02:33]. YouAttest puts humans back in '
+                              'the loop, auto-delegating a campaign such as Jira licenses to managers by '
+                              'email so each manager certifies or revokes every seat, at no extra cost for '
+                              'teams already running access reviews on the platform [NCcXkxFkX8k @ '
+                              '00:03:27]. The trade is speed against accountability: AI triage clears a '
+                              '2-day renewal window, while manager certification produces a defensible '
+                              'sign-off trail.',
+                              'Low usage does not mean the same thing to every practitioner. SaaS '
+                              'Procurement Insider runs a hard triage: below 20% usage the app gets a '
+                              '30-day justification window and is otherwise cancelled, 20% to 70% gets '
+                              'right-sized by approaching the vendor 90 days out, and above 70% goes to '
+                              'negotiation for escalation clauses and a flat renewal [udHdwtjP7yM @ '
+                              '00:09:58]. Provision Networks warns that flat usage often signals a '
+                              'training gap, not a bad tool, so the usage number alone does not settle '
+                              'whether to cut [Q3VZHAsymcg @ 00:01:12]. On shadow IT the split is cut '
+                              'versus redirect. Rob Voit at IronEdge Group says full elimination is '
+                              'unlikely and tells teams to ask vendors where data resides, who can access '
+                              'it, and how fast they must disclose a breach, while the panel pushes '
+                              'sanctioned alternatives such as an internal FTP server or Iron AI '
+                              '[nsIixe4EZI0 @ 00:48:04]. Mike Austin of MetrixData 360 makes the same '
+                              'redirect argument on cost: a Kofax request facing a 4-to-20-week approval '
+                              'should have been offered the Adobe license already sitting on the shelf '
+                              '[lB5ThkY4hMA @ 00:30:57]. Elimination wins on dead seats; redirection wins '
+                              'when a real need is driving the rogue purchase in the first place.'],
+               'table': {'caption': 'Competing playbooks on tooling, reclaim triggers, usage triage, '
+                                    'cadence, and review ownership',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Buy a SaaS management platform or audit manually',
+                                   'Manual invoices plus SSO works under 500 employees; a platform pays '
+                                   'back in a quarter above $2M spend',
+                                   'Never audit manually anymore; Airtable pulls user lists, messages '
+                                   'users, and deactivates through the API',
+                                   'SaaS Procurement Insider ([udHdwtjP7yM @ 00:11:57]); Optimize '
+                                   'Information Systems ([tex2cNz4vcc @ 00:01:56])'],
+                                  ['Whether any new tooling is needed at all',
+                                   "You don't need another tool; mine existing help desk tickets for "
+                                   'repeat software purchases',
+                                   'Manual audits are basically extinct; platforms connect through SSO, '
+                                   'APIs, and expense data scans',
+                                   'MetrixData 360 ([lB5ThkY4hMA @ 00:21:23]); Provision Networks '
+                                   '([Q3VZHAsymcg @ 00:02:15])'],
+                                  ['Inactivity threshold that triggers license reclamation',
+                                   'Start at 90 days, shorter for daily-use apps, and transfer owned '
+                                   'documents and workspaces first',
+                                   'Cancel any tool with zero logins in the last quarter before the '
+                                   'renewal conversation starts',
+                                   'Zylo ([ftGGihhAn3g @ 00:02:37]); CloudEagle ([M0ICfl_2HyY @ '
+                                   '00:03:15])'],
+                                  ['Who judges whether a dormant user keeps the seat',
+                                   'Airtable native AI grades user justifications; only insufficient '
+                                   'answers reach admin review',
+                                   'Managers receive auto-delegated email campaigns and certify or revoke '
+                                   'each individual license',
+                                   'Optimize Information Systems ([tex2cNz4vcc @ 00:02:33]); YouAttest '
+                                   '([NCcXkxFkX8k @ 00:03:27])'],
+                                  ['How to read low or flat usage numbers',
+                                   'Below 20% usage gets a 30-day justification window, otherwise the app '
+                                   'is cancelled outright',
+                                   'Flat usage often signals a training gap rather than a bad tool that '
+                                   'needs cutting',
+                                   'SaaS Procurement Insider ([udHdwtjP7yM @ 00:09:58]); Provision '
+                                   'Networks ([Q3VZHAsymcg @ 00:01:12])'],
+                                  ['Review cadence across the whole SaaS portfolio',
+                                   'Annual audit, 90-day pre-renewal review, quarterly top-10 check, '
+                                   'offboarding trigger, top-20 renewal calendar',
+                                   'Quarterly for high-change environments aligned to QBRs, semi-annual '
+                                   'for stable clients, annual baseline',
+                                   'SaaS Procurement Insider ([udHdwtjP7yM @ 00:13:36]); NinjaOne IT Tech '
+                                   'Tips ([ORh7DquM3lY @ 00:00:45])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive trap is cutting seats while the vendor still holds the '
+                              'only usage records. Mike Austin of MetrixData 360 watched a client cut 30% '
+                              'of its Adobe licenses, only for Adobe to use assignment history to demand '
+                              'more: the client was assessed at 250 licenses against 200 actually in use, '
+                              'because Adobe contracts require month-to-month usage records, which Austin '
+                              'calls an unofficial audit [lB5ThkY4hMA @ 00:16:32]. Bad information also '
+                              'comes from the sell side; one client was told by both its Microsoft rep and '
+                              'its reseller that it could not reduce licenses at the anniversary, and '
+                              'Austin says it can [lB5ThkY4hMA @ 00:18:14]. Flexera puts the downside in '
+                              'numbers: two-thirds of enterprises expect an audit within 12 months, and '
+                              '25% of audited organizations pay over $1,000,000 in true-ups [XMooFDnRJEE @ '
+                              '00:00:00]. ITAM Now shows how the paperwork itself bites inside ServiceNow '
+                              'SAM: entitlements must be imported with manufacturer part numbers rather '
+                              'than reseller numbers from CDW, SHI, SoftwareOne or SoftChoice, and the '
+                              'import failed until an agreement type was set, with an enterprise agreement '
+                              'allowing overage until true-up [JLEo4uQ_STM @ 00:05:01]. Clean entitlement '
+                              'and assignment records, kept in-house, are the only real defense when the '
+                              'vendor runs its own recount.',
+                              'The second failure is trusting license data that cannot see real usage. '
+                              "MetrixData 360's Mike Austin says Snow's SaaS connector cannot judge "
+                              'whether a user needs E5 or F5, Adobe Pro versus Reader needs telemetry, and '
+                              "inventories alone never show usage [lB5ThkY4hMA @ 00:19:23]. Flexera's "
+                              'rightsizing demo shows what the telemetry surfaces once connected: 4,454 '
+                              'users with no activity in Apps for Enterprise who could drop from E5 to E1, '
+                              'non-Power BI users who could move from E5 to E3, and users holding both E3 '
+                              'and E5 at once, with savings priced at actual negotiated cost rather than '
+                              'MSRP [PNMNLFBOp7E @ 00:03:47]. YouAttest flags the quieter leak: default '
+                              'birthright licenses handed out automatically go unflagged and add up over '
+                              'time [NCcXkxFkX8k @ 00:05:05]. SaaS Procurement Insider adds that the data '
+                              "itself is gated; SSO sits behind the vendor's top tier because vendors know "
+                              'SSO access gives buyers the data to negotiate against them, so the play is '
+                              'to ask for SSO at no extra cost framed as security and compliance, and to '
+                              'treat any refusal to hand over user lists, last login, 90-day login counts '
+                              'and session duration as a signal [udHdwtjP7yM @ 00:07:20]. Session length '
+                              'matters too: 90-second averages mean view-only use.',
+                              'Shadow IT failures land as breach costs and legal exposure, not just wasted '
+                              "seats. IronEdge Group's panel cites IBM's 2025 Cost of a Data Breach "
+                              'figures: unsanctioned shadow AI adds an average of $670,000 per breach '
+                              'against a stated US average breach cost of about $3.3M [nsIixe4EZI0 @ '
+                              '00:09:02]. The same panel warns that Copilot indexes SharePoint, so without '
+                              'correct permissions and sensitivity labels payroll data can surface to '
+                              'ordinary users [nsIixe4EZI0 @ 00:16:16]. The Tech Compliance Blueprint says '
+                              'over 60% of all breaches originate through third-party SaaS vendors while '
+                              'the enterprise stays legally accountable, and passive questionnaires are '
+                              'unenforceable without contract terms: right to audit, MFA and encryption '
+                              'warranties, 24-to-48-hour incident notice, and standalone cyber insurance '
+                              'for Tier 1 vendors [WiNczR6ugRY @ 00:01:32]. Mike Austin of MetrixData 360 '
+                              'traces the cost side to ownership: shadow IT thrives without an owner, one '
+                              'manager waved through a tool at 20 bucks a month, and help desk tickets '
+                              'showed mind-mapping software bought 150 times in 60 days [lB5ThkY4hMA @ '
+                              '00:34:04]. Small approvals priced at $5 or $20 a month, often never '
+                              'purchased at all because free trials let tools spread, are exactly how '
+                              'waste and attack surface compound together inside the business, one card '
+                              'swipe at a time.'],
+               'table': {'caption': 'Firsthand traps with the economics check and counter-move each '
+                                    'practitioner applied',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check / Counter-Move',
+                                     'Expert Source'],
+                         'rows': [['Vendor recount after cutting Adobe licenses',
+                                   'Client cut 30% of seats; Adobe used assignment history to assess 250 '
+                                   'against 200 in use',
+                                   'Keep month-to-month usage records yourself because Adobe contracts '
+                                   'require them anyway',
+                                   'MetrixData 360 ([lB5ThkY4hMA @ 00:16:32])'],
+                                  ['Rep and reseller misinformation at the contract anniversary',
+                                   'Microsoft rep and reseller told a client licenses could not be reduced '
+                                   'at anniversary',
+                                   'Austin says the client can reduce licenses at the anniversary, so push '
+                                   'back in writing',
+                                   'MetrixData 360 ([lB5ThkY4hMA @ 00:18:14])'],
+                                  ['True-up shock from an unmanaged software license audit',
+                                   '25% of audited organizations end up paying over $1,000,000 in true-ups',
+                                   'Two-thirds of enterprises expect an audit within 12 months, so '
+                                   'normalize the inventory early',
+                                   'Flexera | ITAM, FinOps & SaaS Management ([XMooFDnRJEE @ 00:00:00])'],
+                                  ['Entitlement import failure inside ServiceNow SAM records',
+                                   'The import failed until an agreement type was set on the contract '
+                                   'record',
+                                   'Use manufacturer part numbers, not reseller numbers, and always '
+                                   'download a fresh import template',
+                                   'ITAM Now ([JLEo4uQ_STM @ 00:05:01])'],
+                                  ['Bundle overspend hidden inside Microsoft E5 licensing tiers',
+                                   '4,454 users showed no Apps for Enterprise activity; some users held '
+                                   'both E3 and E5',
+                                   'Move inactive users from E5 to E1 and price savings at negotiated '
+                                   'cost, not MSRP',
+                                   'Flexera | ITAM, FinOps & SaaS Management ([PNMNLFBOp7E @ 00:03:47])'],
+                                  ['Birthright licenses silently accumulating across the user base',
+                                   'Default birthright licenses go unflagged during reviews and keep '
+                                   'adding up over time',
+                                   'Run manager certification campaigns through Okta, Azure AD, JumpCloud, '
+                                   'or a CSV upload',
+                                   'YouAttest ([NCcXkxFkX8k @ 00:05:05])'],
+                                  ['Auto-renewal carrying bundled modules nobody actually uses',
+                                   'A Fortune 100 client was carrying $1.4M of unused ServiceNow modules '
+                                   'before cleanup',
+                                   'Tie negotiations to performance, refuse bundles, and stop auto-renewal '
+                                   'before the date hits',
+                                   'MetrixData 360 ([lB5ThkY4hMA @ 00:37:40])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before any seat is cut or any renewal is signed',
+                           'body': 'Every item below comes from a loss, a reversal, or a blind spot a '
+                                   'practitioner hit firsthand. Clear all four before the reclaim script '
+                                   'runs or the renewal paperwork moves.',
+                           'items': ['Hold your own month-to-month assignment records before cutting Adobe '
+                                     'or Microsoft seats; Adobe assessed one client at 250 against 200 in '
+                                     'use [MetrixData 360 — lB5ThkY4hMA @ 00:16:32].',
+                                     'Demand the user list, last login, 90-day login count and session '
+                                     'duration in writing before renewal, and read a refusal as a signal '
+                                     '[SaaS Procurement Insider — udHdwtjP7yM @ 00:06:44].',
+                                     'Transfer owned documents and workspaces before reclaiming any seat, '
+                                     'starting from a 90-day inactivity threshold [Zylo | The Leader in '
+                                     'Enterprise SaaS Management — ftGGihhAn3g @ 00:02:37].',
+                                     'Lock Tier 1 vendors into right to audit, MFA and encryption '
+                                     'warranties, 24-48 hour incident notice and standalone cyber '
+                                     'insurance, because questionnaires alone are unenforceable [The Tech '
+                                     'Compliance Blueprint — WiNczR6ugRY @ 00:01:32].']}}],
+ 'pull_quote': '"Vendors know that SSO access gives you the data to negotiate against them." Attributed to '
+               'SaaS Procurement Insider (udHdwtjP7yM @ 00:07:20).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Pull every vendor payment from the last 12 months starting from the finance SaaS '
+                      'cost category, AI-categorize the transaction CSV, and build a master list of '
+                      'vendor, annual cost, cost center, renewal date and contract owner [SaaS Procurement '
+                      'Insider — udHdwtjP7yM @ 00:01:13].',
+                      'Calculate cost per active user as annual cost divided by users with 4 or more '
+                      'logins in 90 days, the math that turned $30,000 into $1,071 per active user [SaaS '
+                      'Procurement Insider — udHdwtjP7yM @ 00:09:37].',
+                      'Cross-match the HRIS against app user lists every quarter to catch leavers and '
+                      'role-changers still holding seats [SaaS Procurement Insider — udHdwtjP7yM @ '
+                      '00:07:57].',
+                      'Mine help desk tickets for repeat purchases, move to a commercial volume agreement, '
+                      'reclaim after 90 days of non-use with a 5-day email warning, and send reclaimed '
+                      'seats to a shared pool, the play that saved over $250K a year [MetrixData 360 — '
+                      'lB5ThkY4hMA @ 00:26:16].',
+                      'Ask your Concur client success executive for a spend analysis that follows the '
+                      'money across expense and ERP data [SAP Concur — ARjBgExQ3oQ @ 00:24:34].',
+                      'Keep a decision log of app, decision, justification and follow-ups to create an '
+                      'audit trail, and automate PSA/RMM reminders for the next cycle [NinjaOne IT Tech '
+                      'Tips — ORh7DquM3lY @ 00:03:33].'],
+ 'statutory_citations': [{'title': 'SaaS Procurement Insider — The SaaS Licence Audit: You are Paying for '
+                                   'More Than You Think. [00:09:58]',
+                          'url': 'https://www.youtube.com/watch?v=udHdwtjP7yM&t=598s',
+                          'relevance': 'Primary practitioner testimony on the eliminate, right-size and '
+                                       'negotiate usage triage and the cost-per-active-user calculation.'},
+                         {'title': 'MetrixData 360 — Shadow IT & SaaS Sprawl: Controlling the Hidden '
+                                   'Software Costs Draining Your Budget [00:26:16]',
+                          'url': 'https://www.youtube.com/watch?v=lB5ThkY4hMA&t=1576s',
+                          'relevance': 'Primary practitioner testimony on the help desk ticket reclaim '
+                                       'tactic, Adobe assignment-history recounts, and tooling limits.'},
+                         {'title': 'IronEdge Group — Shadow IT and SaaS Sprawl: Managing Hidden Cyber '
+                                   'Risks [00:09:02]',
+                          'url': 'https://www.youtube.com/watch?v=nsIixe4EZI0&t=542s',
+                          'relevance': 'Primary practitioner testimony on shadow AI breach costs, Copilot '
+                                       'permission exposure, and sanctioned alternatives.'},
+                         {'title': 'Flexera | ITAM, FinOps & SaaS Management — SaaS Licence Rightsizing | '
+                                   'How to Rightsize SaaS Licences, Subscriptions, and Features | Flexera '
+                                   '[00:03:47]',
+                          'url': 'https://www.youtube.com/watch?v=PNMNLFBOp7E&t=227s',
+                          'relevance': 'Primary practitioner testimony on E5 to E1 and E3 rightsizing and '
+                                       'pricing savings at negotiated cost rather than MSRP.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'udHdwtjP7yM',
+                       'title': 'The SaaS Licence Audit: You are Paying for More Than You Think.',
+                       'channel': 'SaaS Procurement Insider',
+                       'author': 'SaaS Procurement Insider',
+                       'text': 'Vendors know that SSO access gives you the data to negotiate against them.',
+                       'tip': 'Vendors know that SSO access gives you the data to negotiate against them.',
+                       'timestamp': 440,
+                       'timestamp_seconds': 440,
+                       'timestamp_label': '[00:07:20]',
+                       'url': 'https://www.youtube.com/watch?v=udHdwtjP7yM&t=440s',
+                       'markdown': '[00:07:20](https://www.youtube.com/watch?v=udHdwtjP7yM&t=440s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tex2cNz4vcc',
+                       'title': 'How to Automate SaaS License Audits Using Airtable',
+                       'channel': 'Optimize Information Systems',
+                       'author': 'Optimize Information Systems',
+                       'text': 'Airtable handles all the messaging, it collects all the responses, it '
+                               'automatically deactivates users using the APIs.',
+                       'tip': 'Airtable handles all the messaging, it collects all the responses, it '
+                              'automatically deactivates users using the APIs.',
+                       'timestamp': 261,
+                       'timestamp_seconds': 261,
+                       'timestamp_label': '[00:04:21]',
+                       'url': 'https://www.youtube.com/watch?v=tex2cNz4vcc&t=261s',
+                       'markdown': '[00:04:21](https://www.youtube.com/watch?v=tex2cNz4vcc&t=261s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ARjBgExQ3oQ',
+                       'title': 'Zylo Overview: Saas Optimization',
+                       'channel': 'SAP Concur',
+                       'author': 'SAP Concur',
+                       'text': "So there was a gap of $200 million that they didn't even know existed.",
+                       'tip': "So there was a gap of $200 million that they didn't even know existed.",
+                       'timestamp': 997,
+                       'timestamp_seconds': 997,
+                       'timestamp_label': '[00:16:37]',
+                       'url': 'https://www.youtube.com/watch?v=ARjBgExQ3oQ&t=997s',
+                       'markdown': '[00:16:37](https://www.youtube.com/watch?v=ARjBgExQ3oQ&t=997s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lB5ThkY4hMA',
+                       'title': 'Shadow IT & SaaS Sprawl: Controlling the Hidden Software Costs Draining '
+                                'Your Budget',
+                       'channel': 'MetrixData 360',
+                       'author': 'MetrixData 360',
+                       'text': "So, the thing is you don't need another tool.",
+                       'tip': "So, the thing is you don't need another tool.",
+                       'timestamp': 1283,
+                       'timestamp_seconds': 1283,
+                       'timestamp_label': '[00:21:23]',
+                       'url': 'https://www.youtube.com/watch?v=lB5ThkY4hMA&t=1283s',
+                       'markdown': '[00:21:23](https://www.youtube.com/watch?v=lB5ThkY4hMA&t=1283s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lB5ThkY4hMA',
+                       'title': 'Shadow IT & SaaS Sprawl: Controlling the Hidden Software Costs Draining '
+                                'Your Budget',
+                       'channel': 'MetrixData 360',
+                       'author': 'MetrixData 360',
+                       'text': "And it's in your own help desk tickets.",
+                       'tip': "And it's in your own help desk tickets.",
+                       'timestamp': 1576,
+                       'timestamp_seconds': 1576,
+                       'timestamp_label': '[00:26:16]',
+                       'url': 'https://www.youtube.com/watch?v=lB5ThkY4hMA&t=1576s',
+                       'markdown': '[00:26:16](https://www.youtube.com/watch?v=lB5ThkY4hMA&t=1576s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ORh7DquM3lY',
+                       'title': 'How to Build Recurring SaaS Review Cycles',
+                       'channel': 'NinjaOne IT Tech Tips',
+                       'author': 'NinjaOne IT Tech Tips',
+                       'text': 'Reviews should occur 60-90 days before major renewals to allow time for '
+                               'optimization.',
+                       'tip': 'Reviews should occur 60-90 days before major renewals to allow time for '
+                              'optimization.',
+                       'timestamp': 67,
+                       'timestamp_seconds': 67,
+                       'timestamp_label': '[00:01:07]',
+                       'url': 'https://www.youtube.com/watch?v=ORh7DquM3lY&t=67s',
+                       'markdown': '[00:01:07](https://www.youtube.com/watch?v=ORh7DquM3lY&t=67s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WiNczR6ugRY',
+                       'title': 'Vendor Risk Management: Auditing Your SaaS Vendors for Cyber Liability',
+                       'channel': 'The Tech Compliance Blueprint',
+                       'author': 'The Tech Compliance Blueprint',
+                       'text': 'Not all software vendors pose equal risk to your organization.',
+                       'tip': 'Not all software vendors pose equal risk to your organization.',
+                       'timestamp': 35,
+                       'timestamp_seconds': 35,
+                       'timestamp_label': '[00:00:35]',
+                       'url': 'https://www.youtube.com/watch?v=WiNczR6ugRY&t=35s',
+                       'markdown': '[00:00:35](https://www.youtube.com/watch?v=WiNczR6ugRY&t=35s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nsIixe4EZI0',
+                       'title': 'Shadow IT and SaaS Sprawl: Managing Hidden Cyber Risks',
+                       'channel': 'IronEdge Group',
+                       'author': 'IronEdge Group',
+                       'text': "I'd say it's a pretty safe number to say 40% of your team is already using "
+                               'this stuff.',
+                       'tip': "I'd say it's a pretty safe number to say 40% of your team is already using "
+                              'this stuff.',
+                       'timestamp': 2404,
+                       'timestamp_seconds': 2404,
+                       'timestamp_label': '[00:40:04]',
+                       'url': 'https://www.youtube.com/watch?v=nsIixe4EZI0&t=2404s',
+                       'markdown': '[00:40:04](https://www.youtube.com/watch?v=nsIixe4EZI0&t=2404s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nsIixe4EZI0',
+                       'title': 'Shadow IT and SaaS Sprawl: Managing Hidden Cyber Risks',
+                       'channel': 'IronEdge Group',
+                       'author': 'IronEdge Group',
+                       'text': 'And then misconfiguration is fuel, and not knowing about it is a slow '
+                               'burn, and then you got a big breach.',
+                       'tip': 'And then misconfiguration is fuel, and not knowing about it is a slow burn, '
+                              'and then you got a big breach.',
+                       'timestamp': 1716,
+                       'timestamp_seconds': 1716,
+                       'timestamp_label': '[00:28:36]',
+                       'url': 'https://www.youtube.com/watch?v=nsIixe4EZI0&t=1716s',
+                       'markdown': '[00:28:36](https://www.youtube.com/watch?v=nsIixe4EZI0&t=1716s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EEuTZMr-lgI',
+                       'title': 'Shadow IT SaaS Usage: Discover and Assess Your Risk',
+                       'channel': 'AppOmni',
+                       'author': 'AppOmni',
+                       'text': 'Most security teams maintain a list of approved apps, but that list is '
+                               'often incomplete.',
+                       'tip': 'Most security teams maintain a list of approved apps, but that list is '
+                              'often incomplete.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=EEuTZMr-lgI&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=EEuTZMr-lgI&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'M0ICfl_2HyY',
+                       'title': 'How to Run a SaaS Audit and Cut Unused Tools Before Renewal',
+                       'channel': 'CloudEagle',
+                       'author': 'CloudEagle',
+                       'text': 'First, cancel any tools with zero logins in the last quarter.',
+                       'tip': 'First, cancel any tools with zero logins in the last quarter.',
+                       'timestamp': 195,
+                       'timestamp_seconds': 195,
+                       'timestamp_label': '[00:03:15]',
+                       'url': 'https://www.youtube.com/watch?v=M0ICfl_2HyY&t=195s',
+                       'markdown': '[00:03:15](https://www.youtube.com/watch?v=M0ICfl_2HyY&t=195s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XMooFDnRJEE',
+                       'title': 'Saving with Software License Optimization | Flexera',
+                       'channel': 'Flexera | ITAM, FinOps & SaaS Management',
+                       'author': 'Flexera | ITAM, FinOps & SaaS Management',
+                       'text': 'Running in 3 to 6 weeks, full payback in 6 to 12 months, and savings of up '
+                               'to 30% of the software budget.',
+                       'tip': 'Running in 3 to 6 weeks, full payback in 6 to 12 months, and savings of up '
+                              'to 30% of the software budget.',
+                       'timestamp': 147,
+                       'timestamp_seconds': 147,
+                       'timestamp_label': '[00:02:27]',
+                       'url': 'https://www.youtube.com/watch?v=XMooFDnRJEE&t=147s',
+                       'markdown': '[00:02:27](https://www.youtube.com/watch?v=XMooFDnRJEE&t=147s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Q3VZHAsymcg',
+                       'title': '**The Hidden IT Tax: 5 Surprising Ways Your SaaS Stack Is Wasting Money**',
+                       'channel': 'Provision Networks',
+                       'author': 'Provision Networks',
+                       'text': 'Manual audits are basically extinct in modern IT operations.',
+                       'tip': 'Manual audits are basically extinct in modern IT operations.',
+                       'timestamp': 135,
+                       'timestamp_seconds': 135,
+                       'timestamp_label': '[00:02:15]',
+                       'url': 'https://www.youtube.com/watch?v=Q3VZHAsymcg&t=135s',
+                       'markdown': '[00:02:15](https://www.youtube.com/watch?v=Q3VZHAsymcg&t=135s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PNMNLFBOp7E',
+                       'title': 'SaaS Licence Rightsizing | How to Rightsize SaaS Licences, Subscriptions, '
+                                'and Features | Flexera',
+                       'channel': 'Flexera | ITAM, FinOps & SaaS Management',
+                       'author': 'Flexera | ITAM, FinOps & SaaS Management',
+                       'text': 'Do note that we do not use MSRP for these prices.',
+                       'tip': 'Do note that we do not use MSRP for these prices.',
+                       'timestamp': 209,
+                       'timestamp_seconds': 209,
+                       'timestamp_label': '[00:03:29]',
+                       'url': 'https://www.youtube.com/watch?v=PNMNLFBOp7E&t=209s',
+                       'markdown': '[00:03:29](https://www.youtube.com/watch?v=PNMNLFBOp7E&t=209s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8klvxfhjzF4',
+                       'title': "How to Stop Renewing SaaS Licenses at Last Year's Count",
+                       'channel': 'CloudEagle',
+                       'author': 'CloudEagle',
+                       'text': 'One audit might save a company tens of thousands.',
+                       'tip': 'One audit might save a company tens of thousands.',
+                       'timestamp': 127,
+                       'timestamp_seconds': 127,
+                       'timestamp_label': '[00:02:07]',
+                       'url': 'https://www.youtube.com/watch?v=8klvxfhjzF4&t=127s',
+                       'markdown': '[00:02:07](https://www.youtube.com/watch?v=8klvxfhjzF4&t=127s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ftGGihhAn3g',
+                       'title': 'SaaS License Management, Explained',
+                       'channel': 'Zylo | The Leader in Enterprise SaaS Management',
+                       'author': 'Zylo | The Leader in Enterprise SaaS Management',
+                       'text': 'Start with a 90-day inactivity threshold, shorter for daily-use apps, and '
+                               'transfer owned documents and workspaces first.',
+                       'tip': 'Start with a 90-day inactivity threshold, shorter for daily-use apps, and '
+                              'transfer owned documents and workspaces first.',
+                       'timestamp': 157,
+                       'timestamp_seconds': 157,
+                       'timestamp_label': '[00:02:37]',
+                       'url': 'https://www.youtube.com/watch?v=ftGGihhAn3g&t=157s',
+                       'markdown': '[00:02:37](https://www.youtube.com/watch?v=ftGGihhAn3g&t=157s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JLEo4uQ_STM',
+                       'title': 'ServiceNow SAM: Software License and Contract Renewal',
+                       'channel': 'ITAM Now',
+                       'author': 'ITAM Now',
+                       'text': 'Import entitlements using manufacturer part numbers, not reseller numbers.',
+                       'tip': 'Import entitlements using manufacturer part numbers, not reseller numbers.',
+                       'timestamp': 81,
+                       'timestamp_seconds': 81,
+                       'timestamp_label': '[00:01:21]',
+                       'url': 'https://www.youtube.com/watch?v=JLEo4uQ_STM&t=81s',
+                       'markdown': '[00:01:21](https://www.youtube.com/watch?v=JLEo4uQ_STM&t=81s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NCcXkxFkX8k',
+                       'title': 'Rightsizing your SAAS licenses w/ YouAttest',
+                       'channel': 'YouAttest',
+                       'author': 'YouAttest',
+                       'text': 'Default birthright licenses go unflagged and add up.',
+                       'tip': 'Default birthright licenses go unflagged and add up.',
+                       'timestamp': 305,
+                       'timestamp_seconds': 305,
+                       'timestamp_label': '[00:05:05]',
+                       'url': 'https://www.youtube.com/watch?v=NCcXkxFkX8k&t=305s',
+                       'markdown': '[00:05:05](https://www.youtube.com/watch?v=NCcXkxFkX8k&t=305s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'}]}

@@ -9,49 +9,49 @@
       "ARBITRAGE"
     ],
     "deck": [
-      "VERIFY THE PLACEMENT. SECURE LEASE RIGHTS.",
-      "CONTROL VACANCY AND PAYMENT FLOAT."
+      "HOW OPERATORS GET LISTED WITH ALE SOLUTIONS, CRS, SEDGWICK, AND THD, AND GET THE FAMILY TO PICK THEIR HOME OVER THE HOTEL",
+      "HOW OPERATORS PRICE AGAINST COVERAGE D, CAP UTILITIES IN CONTRACTS, AND HOLD RESERVES BEFORE ARBITRAGING FOR CLAIMS"
     ],
-    "lead": "Displaced-Policyholder Housing, Corporate Master Leases & Mid-Term Relocation Placements for a Lean Housing Desk",
-    "summary": "Coordinate authorized ALE and corporate placements with suitable furnished inventory, written landlord permissions, documented payer commitments, and reserves for vacancy, damage, and collection delays.",
+    "lead": "Operators show how displaced families stuck in hotels become multi-month house placements: an $8,100 house replaced a roughly $15,000-a-month hotel bill, and 15 insurance families brought in more than $100K in one month.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, from getting booked by insurance relocation companies through leases, lease exits, and insuring the rental operation. Every claim, metric, pro-tip, and operator gate carries timestamped inline attribution to the practitioner who said it.",
     "chapters": [
-      "ALE placements vs corporate rental models",
-      "Housing vendors, adjusters & payer authority",
-      "Nightly spreads, occupancy & collection float",
-      "Furnished inventory & startup reserve budgets",
-      "Vacancy, coverage limits & unpaid extensions",
-      "Relocation referrals & landlord sourcing",
-      "Master leases & written subletting permissions",
-      "Move-in evidence, maintenance & guest support",
-      "Habitability, fair housing & local rental rules",
-      "Extension approvals & invoice reconciliation",
-      "Placement pods & property concentration caps",
-      "First 30-day housing-placement launch sprint"
+      "Getting Booked by Insurance Relocation Companies",
+      "Insurance Housing Case Studies and Operator Playbooks",
+      "The Payer's Side: ALE Coverage, Adjusters, and Relocation Benefits",
+      "Building a Corporate Housing Business",
+      "Pitching Landlords and Launching Rental Arbitrage",
+      "Scaling, Automating, and Stress-Testing Arbitrage",
+      "Midterm Rental Fundamentals",
+      "Pivoting From Airbnb: Models, Regulations, and Taxes",
+      "Housing Travel Nurses and Contract Workers",
+      "Leases, Subleases, and Required Insurance Clauses",
+      "Lease Exits: Early Termination, Non-Renewal, and Tenant Protections",
+      "Insuring the Rental Operation"
     ],
     "flow": [
       [
-        "QUALIFY",
-        "Confirm housing needs & payer authority"
+        "LIST",
+        "Submit the home to ALE Solutions, CRS, Sedgwick, and Temporary Housing Directory forms, then confirm each submission by phone within a week because the forms send no confirmation and can create duplicates."
       ],
       [
-        "SOURCE",
-        "Match suitable inventory & lease rights"
+        "PROSPECT",
+        "Send weekly or biweekly email blasts to relocation specialists with a PS asking them to forward it and a PPS offering referrals in other cities, and add BNI networking and local fire department outreach."
       ],
       [
-        "AUTHORIZE",
-        "Document rates, dates & payment terms"
+        "PRICE",
+        "Ask for the nightly price range instead of the budget, let the agency name a number first, and anchor against the hotel-plus-kennel cost, aiming for about 1.5 to 2x long-term rent."
       ],
       [
-        "PLACE",
-        "Inspect the unit & record move-in"
+        "CONTRACT",
+        "Write electric and water caps into the agreement and notes, keep cleaning, pet, and deposit fees low enough for the family, and remember the contract is with the agency, not the person."
       ],
       [
-        "SERVICE",
-        "Track repairs & approved extensions"
+        "CALENDAR",
+        "Run a duplicate 30-day-minimum Airbnb with an open calendar, open the short-stay window no more than 30 days out, and hold a unit 24 hours pending adjuster approval."
       ],
       [
-        "SETTLE",
-        "Reconcile invoices, deposits & turnover"
+        "RESERVE",
+        "Before arbitraging a home for claims, set aside at least six months of reserves, plan three exit strategies, and confirm you can cover net-30 payment terms."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "INSURANCE HOUSING & CORPORATE RENTAL ARBITRAGE",
-  "subtitle": "The Complete Playbook for Insurance Housing & Corporate Rental Arbitrage: $180,000–$1,400,000 USD in Annual Gross Billings with a 1 FT + 3 C (4 People) Core Pod; Six Seats at Scale",
+  "subtitle": "Getting booked by ALE Solutions, CRS, and Sedgwick, pricing claim homes off Coverage D and hotel bills, pitching landlords as a corporate housing company, lining up demand before the lease, scaling with VAs, and locking sublease, exit, and landlord-policy protections in writing",
   "chapter_count": 12,
-  "total_word_count": 77239,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 73297,
+  "expert_youtube_link_count": 215,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T23:07:52Z"
 }
