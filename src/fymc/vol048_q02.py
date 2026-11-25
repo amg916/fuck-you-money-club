@@ -1,712 +1,883 @@
 from __future__ import annotations
 
-CHAPTER_2 = {
-    "id": "Q2",
-    "chapter_id": "Q2",
-    "chapter_number": 2,
-    "question_number": 2,
-    "slug": "who-pays-whistleblower-analytics-payment-rails",
-    "question_prompt": "Who writes the check in data-mined qui tam, sec & irs whistleblower analytics, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
-    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "Relator-Counsel Retainers, Rule 9(b) Evidence, FCA Seal Controls, and SEC/IRS Award Disbursement",
-    "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #48, Data-Mined Qui Tam, SEC & IRS Whistleblower Analytics, ranks "
-        "#16 of 49 with a 92/100 Money-to-Manpower Score. Across 11 mapped plays, "
-        "the immediate buyer is plaintiff or relator counsel purchasing defensible "
-        "evidence production, not an agency purchasing tips. Separate collectible "
-        "litigation-support retainers from contingent statutory awards that can take "
-        "years or produce nothing. Formula v2.0 annual owner profits are $30,400 "
-        "Conservative, $219,375 Base, and $510,400 Scaled. This chapter connects "
-        "partner authority, firm credit, eight payment rails, evidence acceptance, "
-        "and award eligibility. The commercial edge is a repeatable chain from "
-        "lawful source acquisition to counsel-approved delivery, with paid work "
-        "surviving rejection of the underlying enforcement theory."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$95,000",
-            "context": "Annual operator revenue; retainers plus realized eligible net award shares",
-            "note": "32% net margin; $30,400 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$487,500",
-            "context": "Annual operator revenue; retainers plus realized eligible net award shares",
-            "note": "45.0% net margin; $219,375 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$880,000",
-            "context": "Annual operator revenue; retainers plus realized eligible net award shares",
-            "note": "58% net margin; $510,400 annual owner net profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Sell a bounded evidence result to the person controlling firm cash",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The near-term customer is a plaintiff or relator law firm, usually "
-                    "represented commercially by a managing partner, practice leader, or "
-                    "case-budget partner. That person buys a reduction in expensive "
-                    "uncertainty: whether a suspicious reimbursement pattern supports "
-                    "a provable false claim, whether counsel can plead representative "
-                    "transactions, and whether the prospective recovery justifies attorney "
-                    "time. A research associate can champion the purchase but may lack "
-                    "spending authority. Ask who signs the engagement, who approves "
-                    "invoices, and whether payment comes from firm operating cash, a "
-                    "client-funded expense account, or an identified litigation budget. "
-                    "Record the firm's legal name and actual obligor before collecting "
-                    "sensitive evidence. A signed $3,750 monthly retainer should identify "
-                    "deliverable capacity, acceptance criteria, permitted recipients, and "
-                    "the payment date; it should not promise an enforcement result. "
-                    "Counsel's acute pain is wasted diligence, weak pleading, fragmented "
-                    "source records, and missed evidentiary connections. No statute "
-                    "requires counsel to buy analytics. The purchase becomes rational "
-                    "when a reproducible dossier costs less than the attorney and "
-                    "analyst hours it replaces. Compare a $3,750 package with thirty "
-                    "internal hours at an expressly assumed $175 loaded hourly cost: "
-                    "$5,250 of internal effort, before assessing quality or opportunity cost."
-                ),
-                (
-                    "For this chapter, organize the 11 mapped plays into delivery "
-                    "workstreams without treating every workstream as an independent "
-                    "award pathway: public-record acquisition, CMS Part B analysis, "
-                    "CMS Part D analysis, Open Payments linkage, SAM.gov procurement "
-                    "linkage, import-manifest matching, FOIA corroboration, representative-claim "
-                    "assembly, counsel intake, seal tracking, and payment reconciliation. "
-                    "The supplied play identifier is public_record_api_intelligence. Its "
-                    "county dockets, probate registries, unclaimed-property ledgers, and "
-                    "public APIs can reveal entity relationships or commercial triggers; "
-                    "they do not establish whistleblower eligibility or authorize "
-                    "collection of another person's property. Price an illustrative "
-                    "monthly batch of 2,000 records at $0.15 acquisition cost each, "
-                    "plus twelve analyst hours at $60 and four quality-control hours "
-                    "at $90. Direct production cost is $1,380 against a $3,750 "
-                    "retainer, leaving $2,370 before overhead, sales, and owner compensation "
-                    "treatment. If APIs throttle or licensing changes, switch to scheduled "
-                    "bulk FOIA/public-record exports, official data feeds, and low-frequency "
-                    "cached queues. Specify a smaller refresh frequency rather than "
-                    "bypassing access controls. Use SQLite for reproducible joins and "
-                    "SHA-256 manifests for source integrity. Keep payer, provider, "
-                    "beneficiary, and corporate identifiers distinct so entity-resolution "
-                    "errors never become allegations merely because a dashboard looks persuasive."
-                ),
-                (
-                    "Screen credit before screening a thousand additional leads. Verify "
-                    "the firm through its state bar directory, secretary-of-state record "
-                    "where applicable, independently obtained contact number, and the "
-                    "partner responsible for the expense. Obtain permission for trade "
-                    "references and examine public litigation or insolvency records "
-                    "relevant to payment capacity without spreading confidential case "
-                    "information. A prominent contingency practice can still have "
-                    "severe cash timing pressure. Ask whether vendor invoices remain "
-                    "payable if the client withdraws, DOJ declines intervention, or "
-                    "the court dismisses the complaint. Require the answer in the "
-                    "engagement, not in an optimistic email. Offer a funded monthly "
-                    "retainer and cap unpaid production at one explicitly authorized "
-                    "milestone. A $7,500 exposure ceiling equals two $3,750 invoices; "
-                    "it is a credit limit, not permission to continue indefinitely "
-                    "after default. Route legitimate billing disputes to the responsible "
-                    "partner, suspend new work prospectively under the contract, and "
-                    "preserve counsel's access to materials already paid for. Never "
-                    "threaten disclosure of a sealed matter to collect an invoice. "
-                    "The agency, defendant, and prospective relator are not substitutes "
-                    "for the firm obligor unless a separate, lawful engagement expressly "
-                    "makes one of them responsible for the particular service."
-                ),
-            ],
-            "table": {
-                "caption": "Buyer Psychology, Budget Authority, and Credit Evidence",
-                "headers": [
-                    "Buyer or workstream",
-                    "Specific reason to purchase",
-                    "Authority and payment evidence",
-                    "Bounded commercial test",
-                ],
-                "rows": [
-                    [
-                        "Managing partner controlling the firm's operating cash",
-                        "Avoid funding attorney effort against unsupported enforcement theories",
-                        "Signed engagement names firm entity and authorized partner",
-                        "Collect first monthly retainer before starting production work",
-                    ],
-                    [
-                        "Practice leader sponsoring healthcare false-claim case development",
-                        "Connect reimbursement anomalies with evidence of actual submissions",
-                        "Partner confirms case budget and invoice approval owner",
-                        "Deliver twenty traceable exceptions before expanding dataset coverage",
-                    ],
-                    [
-                        "Litigation associate preparing the representative-claim evidence schedule",
-                        "Reduce document search time without outsourcing legal judgment",
-                        "Budget partner separately signs associate's requested research scope",
-                        "Measure accepted claim records against agreed evidence fields",
-                    ],
-                    [
-                        "Firm controller responsible for vendor payment operations",
-                        "Prevent duplicate invoices and ambiguous trust-account payment requests",
-                        "Verified vendor record matches contract and bank beneficiary",
-                        "Reconcile first transfer before increasing monthly exposure limits",
-                    ],
-                    [
-                        "Relator counsel assessing a prospective whistleblower relationship",
-                        "Separate source credibility from statistically unusual billing patterns",
-                        "Firm accepts service fees independent of case recovery",
-                        "Complete eligibility screen before expensive transaction-level reconstruction",
-                    ],
-                    [
-                        "public_record_api_intelligence supporting counsel's preliminary entity-resolution work package",
-                        "Find relevant connections across fragmented official public datasets",
-                        "Retainer specifies permitted sources and licensed reuse rights",
-                        "Process two thousand records within stated direct-cost budget",
-                    ],
-                    [
-                        "SEC or IRS counsel coordinating specialist submissions",
-                        "Translate supported facts into program-specific evidence packages",
-                        "Engagement identifies applicant separately from paying law firm",
-                        "Bill bounded preparation work without selling award eligibility",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make the firm's purchasing decision smaller than the enforcement decision",
-                "body": (
-                    "Veteran operators sell reproducible evidence work with measurable acceptance, "
-                    "rather than asking counsel to purchase the projected value of a case."
-                ),
-                "items": [
-                    "Attach a sanitized sample containing source URL, acquisition date, extraction method, and one reproducible exception calculation before requesting the retainer.",
-                    "Ask the controller which invoice fields prevent payment rejection; obtain the matter code without placing sealed allegations in bank memos.",
-                    "Separate entity-resolution confidence from misconduct confidence so a strong identity match cannot inflate an unsupported legal inference.",
-                    "Include a priced bulk-export fallback in the scope so an API interruption changes refresh cadence instead of creating unpaid emergency engineering.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Select the payment rail after identifying the obligor and release authority",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "A payment rail moves money; it does not establish who owes "
-                    "the invoice or who may release funds. For recurring analytics, "
-                    "use an invoiced advance service retainer paid through ACH credit "
-                    "or verified wire into the operator's business account. Distinguish "
-                    "that vendor arrangement from a lawyer's client trust deposit, "
-                    "whose ownership and withdrawal rules depend on the applicable "
-                    "professional rules and engagement. Counsel must determine whether "
-                    "a particular expense may be paid from client funds; the vendor "
-                    "cannot authorize that withdrawal. A $3,750 advance covering a "
-                    "defined monthly capacity should have a clear earned-fee schedule "
-                    "and treatment of unused capacity. Do not call every deposit "
-                    "nonrefundable or recognize every advance immediately as revenue. "
-                    "For a disputed one-time dossier, genuine third-party escrow can "
-                    "protect both parties if the agreement states objective release "
-                    "conditions, decision authority, fees, and dispute handling. Escrow "
-                    "is not created by labeling an ordinary bank account accordingly. "
-                    "Keep payment instructions separate from evidence delivery. Confirm "
-                    "new beneficiary details by calling a previously verified number; "
-                    "email-only changes are a familiar invoice-diversion failure mode. "
-                    "Store confirmation records alongside the vendor ledger, not inside "
-                    "a broadly shared litigation folder containing sensitive facts."
-                ),
-                (
-                    "Compare all eight arrangements against reversal risk, settlement "
-                    "timing, confidentiality, and actual collection leverage. Wire is "
-                    "useful for larger funded milestones but demands beneficiary "
-                    "verification. ACH credit supports recurring firm payments; ACH "
-                    "debit requires proper authorization and attention to applicable "
-                    "return rules. Neither an initiation screenshot nor a processor "
-                    "dashboard substitutes for reconciliation to bank activity. Platform "
-                    "checkout through Stripe or PayPal may suit a small non-sensitive "
-                    "pilot, but card disputes, reserve policies, and processor data "
-                    "retention can make it unsuitable for sealed work. Transmit only "
-                    "a neutral service description and invoice reference. Factoring "
-                    "may accelerate an eligible, earned, undisputed B2B receivable, "
-                    "subject to contract restrictions and confidentiality controls; "
-                    "it should not be presented as routine financing against an "
-                    "unfiled tip or contingent federal award. Milestone holds trade "
-                    "collection certainty for acceptance leverage, so cap the held "
-                    "amount. Illustratively, a $10,000 project with $4,000 funded "
-                    "before acquisition, $4,000 after validated delivery, and $2,000 "
-                    "after documented acceptance leaves a defined final exposure. "
-                    "Escrow release, retainer earning, and statutory disbursement are "
-                    "commercial arrangements layered onto transfer mechanisms, not "
-                    "interchangeable bank products. Price their administrative cost "
-                    "into the engagement instead of discovering it during collection."
-                ),
-                (
-                    "Fee protection starts with precise performance obligations, not "
-                    "an aggressive non-circumvention clause. Define the dataset, date "
-                    "range, allowed refreshes, output schema, source licensing, correction "
-                    "window, and acceptance reviewer. Specify that a validated negative "
-                    "finding can satisfy the research assignment; otherwise the firm "
-                    "can confuse an unfavorable case conclusion with defective work. "
-                    "State when invoices become due, how disputed line items are "
-                    "identified, and whether undisputed amounts remain payable. Have "
-                    "counsel assess enforceability of late charges and any narrow "
-                    "non-solicitation or introduction protection. Never charge for "
-                    "suppressing a report, sell protection against reporting, or "
-                    "condition cooperation with authorities on payment. Preserve "
-                    "lawful reporting rights, including protections reflected in "
-                    "17 CFR 240.21F-17. Do not turn the analytics fee into a "
-                    "percentage of the law firm's legal fees without a jurisdiction-specific "
-                    "assessment of professional restrictions. A vendor cannot create "
-                    "a statutory award entitlement by contract with counsel. For "
-                    "confidentiality, restrict permitted use and recipients while "
-                    "preserving required disclosures and counsel-directed production. "
-                    "Deliver an acceptance manifest listing files and hashes, then "
-                    "obtain confirmation from the named reviewer. That evidence "
-                    "supports an ordinary service-invoice collection claim without "
-                    "requiring disclosure of substantive allegations to a processor."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Payment and Settlement Arrangements Compared",
-                "headers": [
-                    "Rail or arrangement",
-                    "Who controls funding or release",
-                    "Best fit and economic consequence",
-                    "Failure mode and operating control",
-                ],
-                "rows": [
-                    [
-                        "Verified domestic wire for larger funded work packages",
-                        "Authorized firm treasury signer instructs its financial institution",
-                        "Useful when project funding exceeds routine card limits",
-                        "Confirm beneficiary independently before accepting changed payment instructions",
-                    ],
-                    [
-                        "Independent escrow with explicit evidence-delivery release conditions",
-                        "Escrow agent follows jointly executed lawful release instructions",
-                        "Protects disputed milestone value while adding administration costs",
-                        "Define objective acceptance and dispute resolution before deposit",
-                    ],
-                    [
-                        "ACH credit or properly authorized business ACH debit",
-                        "Firm initiates credit or authorizes agreed debit collection",
-                        "Supports recurring invoices with lower routine processing friction",
-                        "Track returns and reconcile deposits before marking paid",
-                    ],
-                    [
-                        "Advance service retainer against defined monthly delivery capacity",
-                        "Firm funds vendor under the signed service agreement",
-                        "Reduces working-capital exposure while requiring earned-fee accounting",
-                        "Document unused-capacity treatment and any applicable refund obligations",
-                    ],
-                    [
-                        "Statutory award disbursement following an authorized award determination",
-                        "Responsible agency or authorized settlement process controls release",
-                        "Pays eligible recipients after program-specific recovery and procedures",
-                        "Do not borrow operating liquidity from prospective awards",
-                    ],
-                    [
-                        "Platform checkout for a sanitized fixed-scope pilot engagement",
-                        "Firm cardholder pays through processor-supported merchant checkout",
-                        "Simplifies small purchases while adding fees and dispute risk",
-                        "Exclude case allegations from processor descriptions and attachments",
-                    ],
-                    [
-                        "Factoring of eligible earned undisputed firm service receivables",
-                        "Factor purchases receivable subject to underwriting and assignment",
-                        "Accelerates collection while reducing margin through financing charges",
-                        "Review assignment restrictions and avoid disclosing protected evidence",
-                    ],
-                    [
-                        "Milestone holds tied to documented acceptance of deliverables",
-                        "Named firm reviewer authorizes the final contracted payment",
-                        "Limits buyer performance risk while delaying vendor cash",
-                        "Cap held balances and specify correction-window expiration clearly",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Establish the paying legal entity",
-                    "action": "Match the engagement, invoice account, and authorized firm signer.",
-                    "detail": "Record the budget owner, payment approver, due date, credit ceiling, and permitted source of funds before production.",
-                },
-                {
-                    "step": 2,
-                    "title": "Verify the transfer instructions",
-                    "action": "Confirm beneficiary details through an independently established telephone channel.",
-                    "detail": "Use dual review for beneficiary changes and keep sealed matter descriptions out of payment references.",
-                },
-                {
-                    "step": 3,
-                    "title": "Deliver against objective acceptance fields",
-                    "action": "Send the source manifest, validation report, and agreed output through counsel's secure workspace.",
-                    "detail": "Capture the named reviewer's acceptance or specific correction request within the contractual review period.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile settlement and stop excess exposure",
-                    "action": "Match bank activity to invoices and enforce the contractual unpaid-work ceiling.",
-                    "detail": "Record processor fees, returns, held amounts, and earned revenue separately; suspend new work without threatening disclosure.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Underwrite statutory eligibility before assigning any value to award upside",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The False Claims Act does not pay an analyst merely for "
-                    "detecting an outlier. Under 31 U.S.C. § 3730, an eligible "
-                    "relator may receive a statutory share of recovered proceeds, "
-                    "subject to the statute's conditions, reductions, and exclusions. "
-                    "The usual intervention range is 15%–25%; when the government "
-                    "does not proceed and the relator successfully conducts the "
-                    "action, the usual range is 25%–30%. Those percentages apply "
-                    "to qualifying recovery, not a dataset's estimated billing "
-                    "universe. Counsel must evaluate the public-disclosure bar in "
-                    "§ 3730(e)(4), including whether substantially the same allegations "
-                    "or transactions appeared through enumerated channels and whether "
-                    "an original-source exception applies. Public accessibility alone "
-                    "does not answer that legal test. Original analysis is not "
-                    "automatically an original-source qualification. Rule 9(b) requires "
-                    "particularity for fraud allegations; representative-claim evidence "
-                    "requirements and permissible pleading inferences vary by circuit. "
-                    "Build claim identifiers, dates, amounts, submitting entities, "
-                    "source provenance, and the alleged falsity mechanism, then let "
-                    "counsel assess sufficiency. If records only show high utilization "
-                    "or manufacturer payments, report that limited finding. A lawful "
-                    "pattern can look statistically unusual. Redirect the assignment "
-                    "to paid corroboration or close the lead instead of manufacturing "
-                    "transaction details to support a preferred theory."
-                ),
-                (
-                    "File FCA complaints exclusively through licensed relator counsel "
-                    "under 31 U.S.C. § 3730(b)(2), with the complaint under seal "
-                    "and the required disclosure to the government. The statutory "
-                    "initial seal period is at least sixty days; extensions can "
-                    "produce multi-year investigations. Model the contingent horizon "
-                    "as 2–5+ years, including extended FCA seal periods where "
-                    "ordered, rather than assuming every matter remains sealed "
-                    "for that entire duration. Counsel controls service, recipient "
-                    "access, court-order interpretation, and communications. A seal "
-                    "breach can create serious sanctions and dismissal risk; "
-                    "dismissal is not automatic for every breach. DOJ non-intervention "
-                    "is distinct from dismissal under § 3730(c)(2)(A), sometimes "
-                    "discussed through the Granston policy framework. Track separate "
-                    "rates with explicit denominators and dated primary sources. "
-                    "Without verified cohort data, use labeled sensitivities instead "
-                    "of invented national statistics. An illustrative hundred-lead "
-                    "stress test rejects thirty on disclosure or eligibility and "
-                    "twenty on evidentiary insufficiency. Of fifty filed matters, "
-                    "assume fifteen interventions and thirty-five non-interventions; "
-                    "five of the latter encounter government dismissal. If ten "
-                    "intervened and three non-intervened matters eventually recover, "
-                    "thirty-seven filed matters recover zero. These are planning "
-                    "assumptions, not observed DOJ rates, and none funds this "
-                    "year's payroll."
-                ),
-                (
-                    "SEC, IRS, and CFTC awards have separate statutory triggers "
-                    "and procedures. SEC awards generally range from 10%–30% of "
-                    "monetary sanctions collected in qualifying actions exceeding "
-                    "$1 million, subject to original-information and other eligibility "
-                    "requirements under 15 U.S.C. § 78u-6 and implementing rules. "
-                    "CFTC uses its own 10%–30% framework under 7 U.S.C. "
-                    "§ 26. IRS mandatory awards under 26 U.S.C. § 7623(b) "
-                    "generally range from 15%–30% of collected proceeds when "
-                    "statutory thresholds and conditions apply; the disputed amount "
-                    "must exceed $2 million, and an individual taxpayer generally "
-                    "must have gross income above $200,000 for a relevant year. "
-                    "Public-source and other limitations can reduce or eliminate "
-                    "awards. Route SEC Form TCR and IRS Form 211 through "
-                    "counsel, and identify the actual eligible claimant rather "
-                    "than naming an analytics company by commercial convenience. "
-                    "SEC and CFTC whistleblowers are individuals; program rules "
-                    "govern the relevant applicant elsewhere. A $4 million "
-                    "qualifying SEC collection at an assumed 15% award rate "
-                    "produces $600,000 for the eligible claimant before applicable "
-                    "deductions, not $4 million of operator revenue. The operator "
-                    "books no award merely because it supported the submission. "
-                    "Reconcile any legally payable operator interest with counsel "
-                    "and accounting advice before recognizing realized proceeds."
-                ),
-            ],
-            "table": {
-                "caption": "Eligibility, Pleading, and Zero-Recovery Underwriting Matrix",
-                "headers": [
-                    "Legal or operating issue",
-                    "Evidence counsel must evaluate",
-                    "Economic consequence for the operator",
-                    "Risk fallback preserving paid work",
-                ],
-                "rows": [
-                    [
-                        "FCA public-disclosure analysis under section 3730(e)(4)",
-                        "Compare allegations with enumerated public disclosures and chronology",
-                        "Public-data novelty alone cannot establish statutory award entitlement",
-                        "Deliver a paid source chronology without projecting recovery",
-                    ],
-                    [
-                        "Rule 9(b) particularity and representative-claim pleading support",
-                        "Link concrete transactions to alleged falsity and responsible actors",
-                        "Unsupported aggregate anomalies can terminate the litigation thesis",
-                        "Offer bounded corroboration or close the unsupported lead",
-                    ],
-                    [
-                        "FCA original-source analysis and claimant eligibility requirements",
-                        "Document independent knowledge and required disclosure timing precisely",
-                        "Vendor participation does not automatically create relator status",
-                        "Retain ordinary service compensation independent of claimant eligibility",
-                    ],
-                    [
-                        "Court seal restrictions under section 3730(b)(2)",
-                        "Maintain counsel-approved recipients and current court-order access limits",
-                        "Unauthorized disclosure can threaten proceedings and expected recovery",
-                        "Pause distribution while counsel resolves access and disclosure questions",
-                    ],
-                    [
-                        "DOJ non-intervention and separately measured dismissal exposure",
-                        "Maintain dated cohort denominators and distinguish procedural outcomes",
-                        "Non-intervention can increase private litigation costs without recovery",
-                        "Require funded service scope before continuing post-decision work",
-                    ],
-                    [
-                        "SEC and CFTC original-information and collection requirements",
-                        "Confirm individual eligibility and qualifying collected monetary sanctions",
-                        "Ten-to-thirty percent ranges do not establish vendor receivables",
-                        "Invoice evidence preparation without assigning speculative award value",
-                    ],
-                    [
-                        "IRS section 7623(b) thresholds and proceeds collection",
-                        "Verify disputed amounts and relevant individual income threshold",
-                        "Collections and program exceptions determine actual award economics",
-                        "Use counsel-led Form 211 preparation under fixed service fees",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four facts before advancing a funded evidence package",
-                "body": (
-                    "The commercial engagement and the statutory submission require separate "
-                    "verification records; success in one does not establish the other."
-                ),
-                "items": [
-                    "Confirm the law firm's signed payment obligation survives non-intervention, dismissal, and a zero-recovery outcome.",
-                    "Obtain counsel's documented assessment of public-disclosure exposure, claimant eligibility, and circuit-specific Rule 9(b) needs.",
-                    "Verify the current seal order, approved recipients, secure delivery location, and counsel's instructions before transmitting FCA materials.",
-                    "Record the exact award program, eligible applicant, required form, collection trigger, and zero-dollar operating-budget treatment before assigning contingent value.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Reconcile cash collection, retained contribution, and the three scorecard cases",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Formula v2.0 fixes the annual outcomes: Conservative revenue "
-                    "$95,000 at 32% produces $30,400 owner net profit; Base "
-                    "$487,500 at 45.0% produces $219,375; Scaled $880,000 at "
-                    "58% produces $510,400. The corresponding total cost envelopes "
-                    "are $64,600, $268,125, and $369,600. Preserve those amounts "
-                    "when explaining the model rather than adding speculative awards "
-                    "on top and retaining the same scenario labels. An illustrative "
-                    "fee-only bridge reaches Conservative with five firms paying "
-                    "$1,500 monthly for twelve months plus $5,000 of completed "
-                    "setup work. Base uses ten firms at $3,750 monthly plus "
-                    "$37,500 of completed project work. Scaled uses sixteen firms "
-                    "at $4,375 monthly plus $40,000 of completed project work. "
-                    "These are reconciliation examples, not supplied acquisition "
-                    "forecasts or evidence that every retainer is already sold. "
-                    "They deliberately set awards to zero so operating viability "
-                    "does not depend on a sealed docket. Conservative and Base "
-                    "use 1 FT + 2 C; Scaled uses 2 FT + 3 C, "
-                    "five people in total. Validate contractor hours, employment "
-                    "costs, acquisition expense, and delivery capacity within each "
-                    "cost envelope before calling the corresponding margin "
-                    "achievable. A revenue target cannot repair an underpriced "
-                    "service obligation."
-                ),
-                (
-                    "Keep four ledgers conceptually separate: invoiced service fees, "
-                    "earned service revenue, bank collections, and contingent award "
-                    "interests. A funded retainer can provide cash before the "
-                    "underlying service is earned; an accepted invoice can create "
-                    "earned revenue before cash arrives. Track both differences "
-                    "rather than treating the bank balance as annual profit. "
-                    "For presentation under ASC 606, evaluate principal-versus-agent "
-                    "status for service arrangements; statutory awards require "
-                    "their own accounting assessment and are not automatically "
-                    "customer-contract revenue. Where the operator acts as an "
-                    "agent, recognize only the retained contribution appropriate "
-                    "to that arrangement, not funds collected for another party. "
-                    "Do not invent a retained_share percentage absent a supported "
-                    "contractual allocation. If $20,000 passes through an account "
-                    "and $15,000 belongs to another principal, only the supported "
-                    "$5,000 retained amount is the candidate contribution in "
-                    "that illustration. Medicare billings, contract face values, "
-                    "tax deficiencies, recovered government proceeds, and a "
-                    "claimant's gross award are different bases. Never substitute "
-                    "one for operator revenue. When eligible award cash is "
-                    "actually realized, maintain a separate bridge showing "
-                    "recipient entitlement, deductions, operator ownership, and "
-                    "recognition treatment. Reconcile that bridge to the fixed "
-                    "scorecard totals or identify a separate actual-results "
-                    "variance rather than silently changing the model."
-                ),
-                (
-                    "Run liquidity from collected retainers and conservative renewal "
-                    "assumptions. The supplied startup range is $10,000–$45,000, "
-                    "monthly operating overhead range is $1,500–$9,500, and "
-                    "time to first deal is four to twelve months. Clarify "
-                    "what the overhead range includes: it cannot automatically "
-                    "replace the scenario's full cost envelope, particularly "
-                    "contractor delivery labor and other direct costs. At "
-                    "$9,500 monthly overhead, $45,000 covers about 4.7 months "
-                    "before additional direct costs; at $1,500, $10,000 covers "
-                    "about 6.7 months. A twelve-month sales cycle therefore "
-                    "requires lower burn, other legitimate funding, or staged "
-                    "scope. For Base, the $268,125 annual cost envelope "
-                    "averages $22,343.75 monthly, and three months equals "
-                    "$67,031.25. This illustrative reserve exceeds the startup "
-                    "range and must be built or financed explicitly, not "
-                    "assumed available. Monitor funded backlog, accounts-receivable "
-                    "aging, customer concentration, correction hours, source "
-                    "refresh expense, and the share of production covered "
-                    "by collected advances. Stress one large firm's departure "
-                    "and two months of delayed collections while assigning "
-                    "every pending award zero current cash. If the business "
-                    "fails that test, reduce unfunded delivery, collect smaller "
-                    "milestones sooner, or reprice the retainer. Better anomaly "
-                    "detection does not cure an insolvent payment structure."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 Reconciliation and Cash-Control Tests",
-                "headers": [
-                    "Scenario or control",
-                    "Revenue basis and explicit unit bridge",
-                    "Cost and retained-profit reconciliation",
-                    "Required operating interpretation",
-                ],
-                "rows": [
-                    [
-                        "Conservative case with one full-time worker and two contractors",
-                        "$95,000 equals five $1,500 monthly retainers plus $5,000 projects",
-                        "$64,600 total costs leave $30,400 profit at 32%",
-                        "Fee-only illustration requires no contingent awards for annual viability",
-                    ],
-                    [
-                        "Base case with one full-time worker and two contractors",
-                        "$487,500 equals ten $3,750 monthly retainers plus $37,500 projects",
-                        "$268,125 total costs leave $219,375 profit at 45.0%",
-                        "Validate delivery hours and collection timing before expanding commitments",
-                    ],
-                    [
-                        "Scaled case with two full-time workers and three contractors",
-                        "$880,000 equals sixteen $4,375 monthly retainers plus $40,000 projects",
-                        "$369,600 total costs leave $510,400 profit at 58%",
-                        "Five-person capacity must fit automation and contractor expense assumptions",
-                    ],
-                    [
-                        "Illustrative Base reserve covering three months of full costs",
-                        "Reserve funded from collections or expressly identified working capital",
-                        "$22,343.75 average monthly costs require $67,031.25 reserve funding",
-                        "Reserve exceeds startup range and cannot be presumed available",
-                    ],
-                    [
-                        "Agency-style pass-through presentation for a supported service arrangement",
-                        "$20,000 received includes $15,000 belonging to another principal",
-                        "$5,000 retained contribution requires documented ownership and accounting assessment",
-                        "Do not report the principal's funds as operator revenue",
-                    ],
-                    [
-                        "Zero-recovery stress applied to every unresolved statutory submission",
-                        "Pending FCA SEC and IRS interests contribute zero current cash",
-                        "Existing service costs remain payable despite unsuccessful enforcement outcomes",
-                        "Use collected retainers and bounded milestones to sustain production",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Sell evidence work on a collectible contract, and let statutory upside remain upside until eligible cash clears.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Identify the paying firm entity, authorized budget partner, invoice approver, and independent payment-verification contact before accepting the first assignment.",
-        "Price public_record_api_intelligence with acquisition, analyst, and quality-control unit costs; contract for bulk-export and cached-queue fallbacks.",
-        "Execute a funded service engagement with objective acceptance criteria, a defined credit ceiling, and fees independent of enforcement recovery.",
-        "Have licensed counsel document FCA disclosure-bar exposure, Rule 9(b) evidence needs, claimant eligibility, and current seal restrictions.",
-        "Compare all eight payment arrangements and select the transfer method, release authority, confidentiality controls, and reconciliation evidence for each invoice.",
-        "Reconcile the three canonical profit cases with zero pending-award cash, separate retained contribution from pass-through funds, and stress delayed firm collections.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "31 U.S.C. § 3730(b)(2), (c)(2)(A), (d), and (e)(4)",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3730",
-            "relevance": (
-                "Controls FCA filing under seal, government dismissal authority, "
-                "relator award ranges, and the public-disclosure bar."
-            ),
-        },
-        {
-            "title": "Federal Rule of Civil Procedure 9(b)",
-            "url": "https://www.law.cornell.edu/rules/frcp/rule_9",
-            "relevance": (
-                "Requires particularity when alleging fraud; counsel must apply "
-                "controlling circuit precedent to representative-claim evidence."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 78u-6",
-            "url": "https://www.law.cornell.edu/uscode/text/15/78u-6",
-            "relevance": (
-                "Establishes SEC whistleblower definitions, qualifying action thresholds, "
-                "award percentages, eligibility limitations, and protections."
-            ),
-        },
-        {
-            "title": "17 CFR § 240.21F-9",
-            "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-240/section-240.21F-9",
-            "relevance": (
-                "Specifies SEC information-submission procedures, including Form TCR "
-                "and attorney involvement for anonymous submissions."
-            ),
-        },
-        {
-            "title": "17 CFR § 240.21F-17",
-            "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-240/section-240.21F-17",
-            "relevance": (
-                "Prohibits actions impeding direct communications with SEC staff "
-                "about possible securities-law violations."
-            ),
-        },
-        {
-            "title": "26 U.S.C. § 7623(b)",
-            "url": "https://www.law.cornell.edu/uscode/text/26/7623",
-            "relevance": (
-                "Defines IRS award percentages, monetary and individual-income "
-                "thresholds, collected-proceeds treatment, and award limitations."
-            ),
-        },
-        {
-            "title": "26 CFR § 301.7623-1",
-            "url": "https://www.ecfr.gov/current/title-26/chapter-I/subchapter-F/part-301/section-301.7623-1",
-            "relevance": (
-                "Addresses IRS whistleblower eligibility and submission requirements "
-                "for information supporting an award claim."
-            ),
-        },
-        {
-            "title": "7 U.S.C. § 26",
-            "url": "https://www.law.cornell.edu/uscode/text/7/26",
-            "relevance": (
-                "Establishes the separate CFTC whistleblower framework, qualifying "
-                "sanctions threshold, and statutory award range."
-            ),
-        },
-    ],
-}
+CHAPTER_2 = {'id': 'Q2',
+ 'chapter_id': 'Q2',
+ 'chapter_number': 2,
+ 'question_number': 2,
+ 'slug': 'vol048-q02-relator-intake-selecting-building-filing-qui-tam',
+ 'question_prompt': 'How does a would-be relator build a case strong enough for a whistleblower firm to '
+                    'take on contingency and for DOJ to pursue?',
+ 'kicker': 'Q2 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Relator Intake: Selecting, Building, and Filing a Winning Qui Tam',
+ 'subtitle': 'How firms screen cases, non-employee and participant relators, first-to-file and '
+             'public-disclosure traps, evidence gathering mistakes, contingency fees, sealed complaints '
+             'and partial seal lifts, and how to report Medicare and customs fraud to counsel first',
+ 'layout_template': 'executive_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Qui tam intake practitioners converge on one operating rule: stay silent, get to '
+                      'experienced counsel, and file first. Levin Papantonio and Brown, LLC warn that '
+                      'going public forfeits original-source status and invites a rival filer to block the '
+                      'line. Beasley Allen, Sanford Heisler Sharp McKnight, and Chapman Law Group require '
+                      'firsthand, verifiable knowledge pleaded with who, what, when, where, and how. '
+                      'Brown, LLC underwrites cases above $10 million in actual pre-trebling damages on a '
+                      'sliding scale against proof strength, rejects difficult clients, and scrutinizes '
+                      'outsider data-mining cases built from ProPublica PPP records or competitor customs '
+                      'intelligence harder than insider cases. Relator shares run 15 to 30 percent, fees '
+                      'are contingent, and seals renew 6 months at a time, with Stephen Teller reporting '
+                      'many cases closing two or three years after filing. Teller also warns against '
+                      'running documents through AI before calling counsel.',
+ 'key_metrics': [{'label': 'Case Acceptance Damages Floor',
+                  'metric': 'Case Acceptance Damages Floor',
+                  'value': '$10 million in actual damages, pre-trebling',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Brown, LLC's general rule for fraud size against the government, applied on "
+                             'a sliding scale against liability strength and defendant solvency',
+                  'source': 'Brown, LLC - A Premier Whistleblower Law Firm ([Hb6Ogl9Fm8I @ 00:02:58])'},
+                 {'label': 'Relator Award Share',
+                  'metric': 'Relator Award Share',
+                  'value': "15 to 30 percent of the government's recovery",
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Ron Chapman's stated range for a successful relator, shared with the "
+                             "relator's attorney",
+                  'source': 'Chapman Law Group: Health Care Attorneys ([4cRTBx7ikiY @ 00:01:09])'},
+                 {'label': 'Seal Extension Cadence',
+                  'metric': 'Seal Extension Cadence',
+                  'value': '6 months at a time; total of 8 months, 14 months, or a couple of years',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Stephen Teller's typical seal period while the government investigates, with "
+                             'many cases finishing two or three years after filing',
+                  'source': 'Stephen Teller - Teller Law ([SiATzxJHy2Y @ 00:08:23])'},
+                 {'label': 'Incident-To Billing Spread',
+                  'metric': 'Incident-To Billing Spread',
+                  'value': '100 percent billed versus 85 percent normal reimbursement',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Ron Chapman's example of the extra 15 percent a physician captures by "
+                             'billing nurse practitioner or PA services incident-to, which requires '
+                             'physician presence in the office',
+                  'source': 'Chapman Law Group: Health Care Attorneys ([4cRTBx7ikiY @ 00:03:41])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Silence before filing is the first rule every intake lawyer hammers. James '
+                              'Kaufman at Levin Papantonio tells relators flatly not to go to the '
+                              'newspaper or the press, because publishing the information strips its value '
+                              'to the government and risks blowing the public disclosure bar, at which '
+                              'point the relator is no longer the original source [xH5IpDAiP5c @ '
+                              '00:00:36]. The same team ties that to first-to-file: going public raises '
+                              'the odds someone else files first and blocks the relator in line, and host '
+                              'Peter Muggie calls the urge to shout it from the rooftops the absolute '
+                              'worst thing a relator can do [xH5IpDAiP5c @ 00:01:36]. Jason T. Brown of '
+                              "Brown, LLC repeats the race logic at the close of the firm's case-selection "
+                              'breakdown, warning that the first whistleblower to file generally blocks '
+                              'everyone behind them and that another day someone else may file the case '
+                              '[Hb6Ogl9Fm8I @ 00:09:15]. Brown also says the worst thing a whistleblower '
+                              'can do is act impulsively, talk to the wrong person, or expose themselves '
+                              'before knowing their rights [Cz4DaWsS-xM @ 00:05:25]. The firm extends that '
+                              'discipline to the internet: case-specific questions about a real-life '
+                              'scenario should never be left publicly in comments, because doing so can '
+                              'only compromise the case, so relators should email or call counsel '
+                              'privately instead [N4uuM9uvRYY @ 00:06:35].',
+                              'The second point of agreement is that a relator must hold firsthand, '
+                              'provable knowledge, not a hunch. Beasley Allen states that to be a '
+                              'whistleblower you have to have some first-hand knowledge about what is '
+                              'actually occurring, and notes the typical relator is a bookkeeper, a nurse, '
+                              'or someone dealing directly with services involving the federal government '
+                              '[dnDB-BkTNpk @ 00:01:01]. Sanford Heisler Sharp McKnight frames it as '
+                              'knowledge plus traceability: the whistleblower must trace the wrongdoing in '
+                              'a way that is believable, credible, and verifiable, whether through '
+                              'documents, emails, internal traffic discussing how dangerous the scheme is, '
+                              'or superior knowledge [zvfb6_cVFWg @ 00:02:37]. Brown, LLC asks first '
+                              'whether the caller is an insider or an outsider, defining the insider as '
+                              'someone who saw the meetings, has the emails, and can point to where the '
+                              'bodies are buried, adding that insiders usually clear the public disclosure '
+                              'bar while outsiders often do not [Hb6Ogl9Fm8I @ 00:01:45]. Ron Chapman of '
+                              'Chapman Law Group lands on the same pleading reality: because fraud is so '
+                              'easy to allege, the relator must supply the what, when, where, how, and '
+                              "who, and the relator's most important job is producing enough facts for a "
+                              'disclosure statement [4cRTBx7ikiY @ 00:03:08].',
+                              'Third, every practitioner agrees the economics run on government money, '
+                              'contingency, and secrecy. Tony Munter of Price Benowitz reduces a good case '
+                              'to two elements: it must plainly scream out as fraud, and some government '
+                              'agency must have lost money, because a wild fraud between two securities '
+                              'firms without government money is not a traditional False Claims Act case '
+                              '[IX4WhZTmPRI @ 00:01:07]. Munter also explains why contingency is the only '
+                              'workable fee model: the relator pays nothing up front, even after being '
+                              'fired with no money, and since the sealed case can be discussed with no one '
+                              'except counsel, the relator has to marry the lawyer and cannot be worrying '
+                              'that every phone call costs money [KMtkKgsZzRo @ 00:00:43]. Cohen Milstein '
+                              'confirms the seal mechanics, stating that only the whistleblower, counsel, '
+                              'the court, and the government know a case has been filed, and that the firm '
+                              'works fully contingent, collecting a fee only when the relator receives an '
+                              'award [skGozAS0va8 @ 00:00:39]. Gary Martin Hays walks the same sequence '
+                              'for a Medicare billing specialist being told to bill for services never '
+                              'performed: find a lawyer, have the attorney research the evidence, file '
+                              'under seal so even the defendant is kept in the dark, then let the '
+                              'Department of Justice investigate and decide whether to intervene '
+                              '[64dIGOXUwoc @ 00:05:05].'],
+               'table': {'caption': 'Intake Consensus: What Multiple Qui Tam Practitioners Treat as '
+                                    'Non-Negotiable',
+                         'headers': ['Consensus Principle',
+                                     'Practitioner Position',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Stay out of the press before filing anything',
+                                   'Going public destroys information value and risks the public '
+                                   'disclosure bar',
+                                   'Route every disclosure through experienced qui tam counsel first',
+                                   'Levin Papantonio ([xH5IpDAiP5c @ 00:00:36])'],
+                                  ['First to file wins the place in line',
+                                   'The first filer generally blocks everyone behind them under the FCA',
+                                   'Treat every day of delay as risk of being beaten',
+                                   'Brown, LLC - A Premier Whistleblower Law Firm ([Hb6Ogl9Fm8I @ '
+                                   '00:09:15])'],
+                                  ['Firsthand knowledge is the entry ticket for relators',
+                                   'Relators need first-hand knowledge; typical relators are bookkeepers '
+                                   'and nurses',
+                                   'Screen for direct exposure to government-funded services and billing',
+                                   'Beasley Allen ([dnDB-BkTNpk @ 00:01:01])'],
+                                  ['Proof must be traceable, credible, and verifiable',
+                                   'Documents, emails, or internal traffic must make the claim believable',
+                                   'Map each allegation to a document or credible witness',
+                                   'Sanford Heisler Sharp McKnight ([zvfb6_cVFWg @ 00:02:37])'],
+                                  ['Government money must be at stake in the scheme',
+                                   'Without an identifiable agency losing money there is no traditional '
+                                   'FCA case',
+                                   'Name the specific agency that got ripped off before pitching',
+                                   'Tony Munter Attorney at Law ([IX4WhZTmPRI @ 00:01:26])'],
+                                  ['Contingency fees align the relator and the lawyer',
+                                   'No money up front; counsel takes a share only if the case wins',
+                                   'Fired, broke relators can still bring very large FCA cases',
+                                   'Tony Munter Attorney at Law ([KMtkKgsZzRo @ 00:00:43])'],
+                                  ['Filing under seal is a mandatory statutory requirement',
+                                   'Only the relator, counsel, court, and government know the case exists',
+                                   'Plan for total silence about the case outside your lawyer',
+                                   'Cohen Milstein ([skGozAS0va8 @ 00:00:39])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Brown, LLC runs intake like an underwriting desk. Jason T. Brown says the '
+                              'firm turns down the overwhelming majority of cases and has said no to '
+                              'millions of dollars in offered fees, because a whistleblower case is a '
+                              'years-long war [Hb6Ogl9Fm8I @ 00:00:00]. The damages screen is explicit: as '
+                              'a general rule the firm wants fraud against the government exceeding $10 '
+                              'million in actual damages, measured pre-trebling, against a solvent '
+                              'defendant, but damages and liability sit on a sliding scale, so a '
+                              'billion-dollar fraud can justify hard proof problems while a smaller case '
+                              'with a smoking-gun document can beat a giant case built on inference '
+                              '[Hb6Ogl9Fm8I @ 00:02:58]. The third filter is where most cases die: facts '
+                              "versus theories. 'I think my company is defrauding Medicare' is a call; "
+                              "patient files, billing codes, dates, and the director's email ordering "
+                              'upcoding is a case, because Rule 9B particularity gets complaints dismissed '
+                              'every week [Hb6Ogl9Fm8I @ 00:04:15]. The remaining filters are character, '
+                              'geography, and program: the firm refuses callers who are mean to intake '
+                              'staff or demand to speak only with Brown, weighs circuit splits and how '
+                              'aggressive each United States Attorneys Office is, and concentrates on '
+                              "bounty programs. Stephen Teller's first move is simpler: have the insider "
+                              'describe exactly how the government is getting ripped off [SiATzxJHy2Y @ '
+                              '00:04:16].',
+                              'Building the package is document-driven. Stephen Teller of Teller Law asks '
+                              'the insider to describe the fraud, then gathers whatever paper or '
+                              'electronic records help explain it and drafts a couple of long letters plus '
+                              'a complaint that fits the False Claims Act, all handed to the Department of '
+                              'Justice and filed under seal without serving the defendant [SiATzxJHy2Y @ '
+                              '00:04:32]. Ron Chapman shows what the disclosure statement should carry '
+                              'using incident-to billing: a practice can bill 100 percent for a nurse '
+                              'practitioner or physician assistant who would normally draw 85 percent, but '
+                              'only if the physician is present in the office, so a biller who sees the '
+                              'doctor managing staff by telephone or text message has a scheme worth '
+                              'documenting [4cRTBx7ikiY @ 00:03:41]. The statement then gets built from '
+                              'calendars, billing records, medical records, and a list of people with '
+                              'intimate knowledge who might testify, because the US attorney uses it to '
+                              'decide whether to intervene [4cRTBx7ikiY @ 00:04:34]. Brown, LLC adds the '
+                              'construction rules: build a timeline, separate what you know from what you '
+                              'suspect, identify who directed the conduct, preserve lawful evidence '
+                              'already in your possession, and never destroy, alter, or hide anything or '
+                              'take privileged or unauthorized documents [CZeUV80NaAA @ 00:07:40].',
+                              'Once filed, the clock is slow and the seal is the operating environment. '
+                              'Teller reports the seal typically runs 6 months at a time, with the '
+                              'government asking the judge for more, so cases stay sealed 8 months, 14 '
+                              'months, or a couple of years, and many Teller Law cases finish two or three '
+                              'years after filing; even the fast ones take almost a year [SiATzxJHy2Y @ '
+                              '00:08:23]. During that window the Department of Justice contacts the client '
+                              'agency, issues civil investigative demands for documents, written answers, '
+                              'or depositions, and occasionally has relators wear recording devices '
+                              '[SiATzxJHy2Y @ 00:09:24]. At the end of the seal the government intervenes '
+                              'or declines; frequently it has already negotiated a settlement, intervenes, '
+                              'and the case is dismissed, while a declined case can still be litigated by '
+                              'the relator, sometimes over government opposition. Brown, LLC describes the '
+                              'partial seal lift that often precedes settlement: the government asks the '
+                              'relator and counsel to consent to sharing a redacted complaint with the '
+                              'defendant to hear its position, and even without consent the judge '
+                              'typically defers to the government as the true party of interest '
+                              '[N4uuM9uvRYY @ 00:03:00]. Brown adds that experienced defense counsel start '
+                              'suspecting a hidden case when government demands keep circling the same '
+                              'subject [N4uuM9uvRYY @ 00:05:09].'],
+               'table': {'caption': 'Street Numbers and Tools Practitioners Use From Intake Through Seal',
+                         'headers': ['Mechanic',
+                                     'Number or Tool',
+                                     'How Practitioners Use It',
+                                     'Expert Source'],
+                         'rows': [['Case acceptance damages floor at intake',
+                                   '$10 million in actual damages, measured pre-trebling',
+                                   'Sliding scale against liability; a smoking gun lowers the threshold',
+                                   'Brown, LLC - A Premier Whistleblower Law Firm ([Hb6Ogl9Fm8I @ '
+                                   '00:02:58])'],
+                                  ['Relator award band on successful recovery',
+                                   '15 to 30 percent of the proceeds recovered',
+                                   'Relator shares the award with counsel under contingency terms',
+                                   'Chapman Law Group: Health Care Attorneys ([4cRTBx7ikiY @ 00:01:09])'],
+                                  ['Seal extension cadence while DOJ investigates',
+                                   '6 months at a time, renewed by the judge',
+                                   'Expect 8 months to a couple of years sealed',
+                                   'Stephen Teller - Teller Law ([SiATzxJHy2Y @ 00:08:23])'],
+                                  ['Incident-to billing spread as fraud signal',
+                                   '100 percent billed versus 85 percent normal rate',
+                                   'Physician absent from office flags billing for the disclosure '
+                                   'statement',
+                                   'Chapman Law Group: Health Care Attorneys ([4cRTBx7ikiY @ 00:03:41])'],
+                                  ['PPP outsider data-mining cross-check method',
+                                   'ProPublica loan data compared against corporate filings',
+                                   'Filing claims 10 employees while loan data shows 500',
+                                   'Brown, LLC - A Premier Whistleblower Law Firm ([39Q-yYGWPVg @ '
+                                   '00:07:25])'],
+                                  ['Competitor customs fraud tip from the outside',
+                                   '25 percent China tariff evaded through drop shipping',
+                                   'Undercut competitors file to even the playing field',
+                                   'Brown, LLC - A Premier Whistleblower Law Firm ([39Q-yYGWPVg @ '
+                                   '00:09:52])'],
+                                  ['Relator exposure scoring before any disclosure',
+                                   'Six-level involvement ladder from minimal to obstruction',
+                                   "Rank the relator's own role before reporting or filing",
+                                   'Brown, LLC - A Premier Whistleblower Law Firm ([CZeUV80NaAA @ '
+                                   '00:06:40])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Intake Moves the Practitioners Actually Teach',
+                           'body': 'Four field-level moves that protect the claim and sharpen the pitch '
+                                   'before counsel files under seal.',
+                           'items': ['Do not run your documents through AI or write your own summary '
+                                     'before calling counsel; it raises confidentiality concerns and can '
+                                     'create discovery problems [Stephen Teller - Teller Law — SiATzxJHy2Y '
+                                     '@ 00:06:42]',
+                                     'Do not self-reject because the number feels small: tell the firm the '
+                                     'number, how you got there, and show the proof, and let counsel do '
+                                     'the math [Brown, LLC - A Premier Whistleblower Law Firm — '
+                                     'Hb6Ogl9Fm8I @ 00:04:01]',
+                                     'If you are also being retaliated against, do not settle that case '
+                                     'carelessly, because it can accidentally settle the False Claims Act '
+                                     'case out from under the government [Stephen Teller - Teller Law — '
+                                     'SiATzxJHy2Y @ 00:06:26]',
+                                     'Outsider patients can corroborate with online complaints from '
+                                     'others, top-prescriber status, and public-record proof that the '
+                                     'doctor owns the supply clinic [Brown, LLC - A Premier Whistleblower '
+                                     'Law Firm — 39Q-yYGWPVg @ 00:06:35]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock Down Silence and Privilege',
+                              'action': 'Tell no press, HR, boss, or regulator; call qui tam counsel '
+                                        'first.',
+                              'detail': 'A call to a lawyer is privileged even if you never sign a '
+                                        'retainer, so you can ask whether you are in trouble before taking '
+                                        'any other step [Sanford Heisler Sharp McKnight — zvfb6_cVFWg @ '
+                                        '00:01:55]'},
+                             {'step': 2,
+                              'title': 'Score Your Own Exposure',
+                              'action': 'Answer what you did, what you knew, when you knew it, and which '
+                                        'program applies.',
+                              'detail': 'Brown, LLC flips the strategy to protection the moment the '
+                                        "relator's own conduct could be questioned, using four questions "
+                                        'plus whether the relator received money from the fraud [Brown, '
+                                        'LLC - A Premier Whistleblower Law Firm — CZeUV80NaAA @ 00:01:14]'},
+                             {'step': 3,
+                              'title': 'Assemble the Disclosure Statement',
+                              'action': 'Build who, what, when, where, and how from calendars, billing '
+                                        'records, medical records, and witnesses.',
+                              'detail': "Counsel turns the relator's facts into the disclosure statement "
+                                        'the US attorney uses to decide whether to intervene [Chapman Law '
+                                        'Group: Health Care Attorneys — 4cRTBx7ikiY @ 00:04:34]'},
+                             {'step': 4,
+                              'title': 'File Under Seal and Ride the Extensions',
+                              'action': 'File the complaint with DOJ under seal and plan for repeated '
+                                        '6-month extensions.',
+                              'detail': 'Seals renew 6 months at a time and can run 8 months, 14 months, '
+                                        'or a couple of years while DOJ investigates [Stephen Teller - '
+                                        'Teller Law — SiATzxJHy2Y @ 00:08:23]'}]},
+              {'id': 'section_3',
+               'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split among these practitioners is over who actually gets to '
+                              'be a relator. Jason T. Brown of Brown, LLC opens intake by sorting insiders '
+                              'from outsiders: an employee, billing manager, or compliance officer who saw '
+                              'the meetings and holds the emails usually clears the public disclosure bar, '
+                              'while outsiders often do not and get underwritten far more skeptically '
+                              '[Hb6Ogl9Fm8I @ 00:02:26]. Yet in a separate session the same firm stresses '
+                              'that nowhere in the False Claims Act does a relator need to be an employee, '
+                              'listing board members, consultants, patients, data miners, statistics '
+                              'quants, and competitors as live categories [39Q-yYGWPVg @ 00:01:00]. '
+                              'Beasley Allen draws the line tighter, insisting a relator must hold '
+                              'first-hand knowledge of what is actually occurring, and says the typical '
+                              'relator is a bookkeeper, a nurse, or someone dealing directly with services '
+                              'involving the federal government [dnDB-BkTNpk @ 00:01:01]. The outsider '
+                              'lane stays open but narrow: Brown points to PPP cases built by '
+                              'cross-checking ProPublica headcount and revenue against corporate filings, '
+                              'yet says entities formed solely to litigate on prescribing-propensity data '
+                              'drew backlash, and the firm wants to see a little bit of the flame, not '
+                              'just smoke, before it signs on [39Q-yYGWPVg @ 00:08:24].',
+                              'The second fault line is how much the relator should do before counsel is '
+                              'engaged. Ron Chapman of Chapman Law Group describes the insider actively '
+                              'looking around, gathering information, and assembling calendars, billing '
+                              'records, medical records, and lists of willing witnesses that the attorney '
+                              'turns into a disclosure statement [4cRTBx7ikiY @ 00:04:34]. Brown pushes '
+                              'the opposite way: do not go gather documents on your own, and confirm with '
+                              'an attorney that you have lawful, ethical access before forwarding anything '
+                              '[Hb6Ogl9Fm8I @ 00:04:28]. Elsewhere, Brown warns that the instinct to '
+                              'gather evidence gets people fired for probing around, or criminally charged '
+                              'for touching information they had no lawful right to access [Cz4DaWsS-xM @ '
+                              '00:06:48]. Stephen Teller adds a modern wrinkle: do not run your documents '
+                              'through AI or have it build a summary before calling the lawyer, because it '
+                              'raises confidentiality concerns and can create discovery problems later '
+                              "[SiATzxJHy2Y @ 00:06:42]. The practical synthesis is sequencing. Chapman's "
+                              "document-heavy playbook and Teller's intake, where the client describes the "
+                              'fraud and then starts gathering paper and electronic records with counsel, '
+                              'both work once a lawyer is already steering what is collected and how. Get '
+                              'the order wrong and, as Brown puts it, the wrong first move can make a bad '
+                              'situation worse.',
+                              'Practitioners also split on which cases are worth the war. Brown runs a '
+                              'hard filter: the firm generally wants fraud above $10 million in actual, '
+                              'pre-trebling damages, a solvent defendant, and a sliding scale where a '
+                              'smoking-gun document can carry a smaller case while a billion-dollar fraud '
+                              'can justify hard proof problems [Hb6Ogl9Fm8I @ 00:03:29]. Tony Munter '
+                              'reduces selection to two questions: does the case plainly scream fraud, and '
+                              'can you name the government agency that lost money, with public disclosure, '
+                              'original source, and limitations issues treated as important but secondary '
+                              'to that core [IX4WhZTmPRI @ 00:00:51]. On fees there is no real dispute '
+                              'about structure, only emphasis. Munter calls the contingent fee the only '
+                              'way to run these cases because the seal leaves the relator with one person '
+                              'to call and nobody should ration phone calls to counsel [KMtkKgsZzRo @ '
+                              '00:01:37]. Brown frames the same contingency as the reason for selectivity, '
+                              'since the firm funds every case with its own money and years. Cohen '
+                              'Milstein likewise only receives a fee if the client receives a '
+                              'whistleblower reward. On timing, Teller says the longer the better, because '
+                              'a long seal means the government believes the case is worth the effort, '
+                              'while even fast cases run almost a year [SiATzxJHy2Y @ 00:12:14].'],
+               'table': {'caption': 'Competing relator-intake playbooks taught by qui tam practitioners',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Who qualifies as a viable relator at intake',
+                                   'Brown favors insiders who clear the public disclosure bar; outsiders '
+                                   'carry a much heavier burden',
+                                   'Gary Martin Hays lists former employees, competitors, subcontractors, '
+                                   'state governments, and federal employees as eligible filers',
+                                   'Brown, LLC - A Premier Whistleblower Law Firm ([Hb6Ogl9Fm8I @ '
+                                   '00:02:26]); Gary Martin Hays, LLC ([64dIGOXUwoc @ 00:03:59])'],
+                                  ['Evidence gathering before the lawyer is retained',
+                                   'Chapman has the insider gather calendars, billing records, medical '
+                                   'records, and witness lists for the disclosure statement',
+                                   'Brown says do not gather documents alone; confirm lawful, ethical '
+                                   'access with an attorney before forwarding anything',
+                                   'Chapman Law Group: Health Care Attorneys ([4cRTBx7ikiY @ 00:04:34]); '
+                                   'Brown, LLC - A Premier Whistleblower Law Firm ([Hb6Ogl9Fm8I @ '
+                                   '00:04:28])'],
+                                  ['Case-selection screen applied before filing anything',
+                                   'Brown targets fraud above $10 million in actual damages against a '
+                                   'solvent defendant on a sliding scale',
+                                   'Munter asks whether the case screams fraud and which government agency '
+                                   'actually lost money',
+                                   'Brown, LLC - A Premier Whistleblower Law Firm ([Hb6Ogl9Fm8I @ '
+                                   '00:02:58]); Tony Munter Attorney at Law ([IX4WhZTmPRI @ 00:01:07])'],
+                                  ['How the whistleblower stays anonymous during the case',
+                                   'Sanford Heisler notes Dodd-Frank cases can be brought anonymously, an '
+                                   'added shield against retaliation',
+                                   'Cohen Milstein says the False Claims Act seal gives anonymity only '
+                                   'until the government decides on intervention',
+                                   'Sanford Heisler Sharp McKnight ([zvfb6_cVFWg @ 00:01:26]); Cohen '
+                                   'Milstein ([skGozAS0va8 @ 00:00:39])'],
+                                  ['Raising the fraud internally with the employer first',
+                                   'Teller treats telling the boss as a common real-world path that then '
+                                   'spawns a retaliation claim',
+                                   'Brown says going to HR is typically a one-way street that ends in '
+                                   'getting fired',
+                                   'Stephen Teller - Teller Law ([SiATzxJHy2Y @ 00:06:09]); Brown, LLC - A '
+                                   'Premier Whistleblower Law Firm ([Cz4DaWsS-xM @ 00:07:25])'],
+                                  ['Weight given to stand-alone retaliation claims at intake',
+                                   'Beasley Allen calls the anti-retaliation provision a very important '
+                                   'feature because most people fear coming forward',
+                                   'Brown rarely takes stand-alone retaliation cases and bundles '
+                                   'retaliation with the bounty case instead',
+                                   'Beasley Allen ([dnDB-BkTNpk @ 00:01:17]); Brown, LLC - A Premier '
+                                   'Whistleblower Law Firm ([Hb6Ogl9Fm8I @ 00:08:13])'],
+                                  ['Reading a long seal period and slow case timeline',
+                                   'Teller says the longer the better because a long seal means the '
+                                   'government is still working it',
+                                   'Brown frames every case as a years-long war taken only when the firm '
+                                   'expects to win',
+                                   'Stephen Teller - Teller Law ([SiATzxJHy2Y @ 00:11:56]); Brown, LLC - A '
+                                   'Premier Whistleblower Law Firm ([Hb6Ogl9Fm8I @ 00:00:15])']]}},
+              {'id': 'section_4',
+               'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["The fastest way to kill a qui tam is to go loud. Levin Papantonio's James "
+                              'Kaufman says the urge to get the word out can blow the case: going to the '
+                              'newspaper or press dumps the information into the public, strips its value '
+                              'to the government, and risks the public disclosure bar that ends '
+                              'original-source status [xH5IpDAiP5c @ 00:00:36]. The panel calls it '
+                              'counterintuitive: the instinct to shout it to the rooftops to save people '
+                              "money or get them out of harm's way is the absolute worst thing you could "
+                              'do. Publicity also raises the odds that someone else files first and blocks '
+                              'the relator in line. Brown frames the same clock bluntly: the first '
+                              'whistleblower to file generally blocks everyone behind them, and another '
+                              'day someone else may file your case [Hb6Ogl9Fm8I @ 00:09:15]. Seal '
+                              'discipline continues after filing. Munter warns that once a case is under '
+                              'seal the relator cannot tell anyone except the lawyer, which is why Munter '
+                              'says you have to marry your lawyer at that point [KMtkKgsZzRo @ 00:01:03]. '
+                              'Brown adds that posting case-specific questions in public comments can only '
+                              'compromise the case, and that experienced defense counsel will start '
+                              'suspecting a hidden False Claims Act action once government demands keep '
+                              'circling the same subject [N4uuM9uvRYY @ 00:06:35].',
+                              'Relators with dirty hands face a different failure mode. Brown says big '
+                              "sources bring big problems, and that once a whistleblower's own conduct can "
+                              'be questioned the strategy flips from chasing an award to protection. Under '
+                              'the False Claims Act, a relator who planned and initiated the violation can '
+                              'see the award reduced, and one convicted of criminal conduct arising from '
+                              'it is dismissed from the civil action and receives nothing [CZeUV80NaAA @ '
+                              '00:02:12]. The biggest misconception Brown flags is immunity: a '
+                              'whistleblower submission is not an immunity agreement, and the reward track '
+                              'and the criminal cooperation track are two different things that can '
+                              "overlap and sometimes conflict [CZeUV80NaAA @ 00:05:24]. Brown's six-rung "
+                              'ladder runs from minimal involvement through knowing participant, manager '
+                              'or approver, planner or initiator, and finally obstruction, meaning '
+                              'destroyed evidence, altered records, lies, or interference with '
+                              'investigators, with exposure rising at every rung and with every dollar of '
+                              'direct benefit. Teller flags a quieter version of the trap: settle a '
+                              'related retaliation claim carelessly and the relator might accidentally '
+                              'settle the False Claims Act case out from under the government, though '
+                              'Teller says it is rare [SiATzxJHy2Y @ 00:06:26]. Brown adds that HR will '
+                              'ask why the employee waited a year or two and treat that delay as grounds '
+                              'for termination [Cz4DaWsS-xM @ 00:07:46].',
+                              'Past the publicity trap, cases fail on proof and on the relator. Brown says '
+                              'the facts-versus-theories gap is where most cases die: a caller who thinks '
+                              'the company is defrauding Medicare has a theory, while patient files, '
+                              "billing codes, dates, and the director's email ordering upcoding make a "
+                              'case, and courts dismiss complaints every week under Rule 9B when the '
+                              'relator is strong on suspicion and weak on specifics [Hb6Ogl9Fm8I @ '
+                              '00:04:41]. Chapman makes the same point from the healthcare side, calling '
+                              'the disclosure statement extremely important because the US attorney uses '
+                              'it to decide whether to intervene [4cRTBx7ikiY @ 00:04:48]. Credibility is '
+                              'the second filter. Brown says the government vets the whistleblower before '
+                              'it vets the defendant, that a shifting story or a vendetta will be felt by '
+                              'a jury and by the Department of Justice, and that the firm has walked away '
+                              'from probably hundreds of millions in potential fees over difficult '
+                              'clients, including callers rude to intake staff [Hb6Ogl9Fm8I @ 00:05:56]. '
+                              'The economics are unforgiving. Brown says more cases fail than succeed even '
+                              'after the firm takes them, and Teller says even fast cases take almost a '
+                              "year, with seals renewed six months at a time, and quite a few of Teller's "
+                              'cases finish two or three years after filing [SiATzxJHy2Y @ 00:08:23].'],
+               'table': {'caption': 'Firsthand relator failure modes and the economics check practitioners '
+                                    'apply',
+                         'headers': ['Failure Mode',
+                                     'What Goes Wrong',
+                                     'Economics Or Exposure Check',
+                                     'Expert Source'],
+                         'rows': [['Going to the press before filing the complaint',
+                                   "Public information strips the claim's value and trips the public "
+                                   'disclosure bar on original source',
+                                   'Another relator can file first, block you in line, and take the claim',
+                                   'Levin Papantonio ([xH5IpDAiP5c @ 00:01:24])'],
+                                  ['Pleading on strong suspicion with thin specifics',
+                                   'Courts dismiss whistleblower complaints every week for lacking Rule 9B '
+                                   'who, what, when, where, how',
+                                   'Bring names, dates, amounts, and lawfully possessed documents to the '
+                                   'first intake call',
+                                   'Brown, LLC - A Premier Whistleblower Law Firm ([Hb6Ogl9Fm8I @ '
+                                   '00:04:41])'],
+                                  ['Relator who planned and initiated the fraud scheme',
+                                   'Award gets reduced for planners, and a criminal conviction means '
+                                   'dismissal with nothing',
+                                   'Map your role on the six-level involvement ladder before making any '
+                                   'report',
+                                   'Brown, LLC - A Premier Whistleblower Law Firm ([CZeUV80NaAA @ '
+                                   '00:02:28])'],
+                                  ['Reporting straight to the boss or HR first',
+                                   'Employee probably gets fired, blamed for the whole thing, and legal '
+                                   'recourse may shut',
+                                   'Company counsel will say their loyalty runs to the company every '
+                                   'single time',
+                                   'Brown, LLC - A Premier Whistleblower Law Firm ([Cz4DaWsS-xM @ '
+                                   '00:03:34])'],
+                                  ['Running case documents through AI before calling counsel',
+                                   'Creates concerns about whether confidentiality is maintained and '
+                                   'possible discovery problems later on',
+                                   'Keep raw documents untouched and call the lawyer before making any '
+                                   'summary',
+                                   'Stephen Teller - Teller Law ([SiATzxJHy2Y @ 00:06:59])'],
+                                  ['Patient-only outsider complaint with no wider visibility',
+                                   'One unnecessary neck brace does not show what happened to others or to '
+                                   'what extent',
+                                   'Corroborate through online complaints and public records or the firm '
+                                   'will not take it',
+                                   'Brown, LLC - A Premier Whistleblower Law Firm ([39Q-yYGWPVg @ '
+                                   '00:05:44])'],
+                                  ['Expecting a fast payout after filing under seal',
+                                   'Seal gets renewed six months at a time and many cases run two to three '
+                                   'years',
+                                   'Contingency firms invest their own money and time, so they reject most '
+                                   'cases',
+                                   'Stephen Teller - Teller Law ([SiATzxJHy2Y @ 00:08:23]); Brown, LLC - A '
+                                   'Premier Whistleblower Law Firm ([Hb6Ogl9Fm8I @ 00:01:29])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Kill Switches To Clear Before Any Qui Tam Filing',
+                           'body': 'Every item below is a pitfall practitioners report sinking relators '
+                                   'before the government ever reads the complaint. Clear all four before '
+                                   'moving records, talking to anyone at work, or contacting a regulator.',
+                           'items': ['Silence check: no newspaper, no press, no public posts, no '
+                                     'case-specific questions in comment sections; going public kills '
+                                     'original-source status and invites a first-to-file block [Levin '
+                                     'Papantonio — xH5IpDAiP5c @ 00:00:36].',
+                                     'Exposure check: answer what you actually did, what you knew, when '
+                                     'you knew it, and which program applies, then follow the dough on any '
+                                     'money you received [Brown, LLC - A Premier Whistleblower Law Firm — '
+                                     'CZeUV80NaAA @ 00:01:14].',
+                                     'Lawful access check: the government will ask how you knew and '
+                                     'whether you lawfully accessed the information; you cannot illegally '
+                                     'access information you were not entitled to [Brown, LLC - A Premier '
+                                     'Whistleblower Law Firm — 39Q-yYGWPVg @ 00:03:55].',
+                                     'Government money check: without some element of government money and '
+                                     'an identifiable agency that lost it, you do not have a traditional '
+                                     'False Claims Act case [Tony Munter Attorney at Law — IX4WhZTmPRI @ '
+                                     '00:01:46].']}}],
+ 'pull_quote': "If you can't explain how somebody got ripped off, then there's a good chance the case "
+               "won't work out. Attributed to Tony Munter Attorney at Law (IX4WhZTmPRI @ 00:00:51).",
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Call a whistleblower lawyer before telling anyone at work; the conversation is '
+                      'privileged even if you never sign a retainer, so ask whether you are in trouble '
+                      '[Sanford Heisler Sharp McKnight — zvfb6_cVFWg @ 00:01:55].',
+                      'Build a timeline, separate what you know from what you suspect, identify who '
+                      'directed the conduct and what documents exist, and never destroy, alter, or hide '
+                      'anything [Brown, LLC - A Premier Whistleblower Law Firm — CZeUV80NaAA @ 00:07:40].',
+                      'Assemble the what, when, where, how, and who of the fraud so counsel can draft a '
+                      'disclosure statement with intricate facts and details [Chapman Law Group: Health '
+                      'Care Attorneys — 4cRTBx7ikiY @ 00:03:08].',
+                      'Do not self-reject on size: tell the firm the damages number, how you got there, '
+                      'and show the proof so they can do the math [Brown, LLC - A Premier Whistleblower '
+                      'Law Firm — Hb6Ogl9Fm8I @ 00:04:01].',
+                      'Name the government agency that lost money and be ready to explain in plain terms '
+                      'how it got ripped off [Tony Munter Attorney at Law — IX4WhZTmPRI @ 00:01:46].',
+                      'Retain counsel on contingency and keep every conversation about the sealed case '
+                      'between you and your lawyer only [Tony Munter Attorney at Law — KMtkKgsZzRo @ '
+                      '00:01:03].'],
+ 'statutory_citations': [{'title': 'Brown, LLC - A Premier Whistleblower Law Firm — What Makes a Strong '
+                                   'Whistleblower Case? Brown, LLC Explains [00:02:58]',
+                          'url': 'https://www.youtube.com/watch?v=Hb6Ogl9Fm8I&t=178s',
+                          'relevance': 'Primary practitioner testimony on case-selection thresholds, the '
+                                       '$10 million damages floor, Rule 9B particularity, and relator '
+                                       'credibility.'},
+                         {'title': 'Brown, LLC - A Premier Whistleblower Law Firm — Can You Be a '
+                                   'Whistleblower If You Participated in the Fraud? #whistleblower '
+                                   '[00:02:12]',
+                          'url': 'https://www.youtube.com/watch?v=CZeUV80NaAA&t=132s',
+                          'relevance': 'Primary practitioner testimony on award reduction for planners, '
+                                       'dismissal after conviction, and the immunity misconception.'},
+                         {'title': 'Levin Papantonio — Mistakes Not to Make in a Qui Tam Whistleblower '
+                                   'case [00:01:24]',
+                          'url': 'https://www.youtube.com/watch?v=xH5IpDAiP5c&t=84s',
+                          'relevance': 'Primary practitioner testimony on the public disclosure bar, '
+                                       'original source status, and first-to-file blocking.'},
+                         {'title': 'Stephen Teller - Teller Law — How Qui Tam Lawsuits Actually Work '
+                                   '[00:08:23]',
+                          'url': 'https://www.youtube.com/watch?v=SiATzxJHy2Y&t=503s',
+                          'relevance': 'Primary practitioner testimony on seal duration, government '
+                                       'investigation tools, and intervention outcomes.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'xH5IpDAiP5c',
+                       'title': 'Mistakes Not to Make in a Qui Tam Whistleblower case',
+                       'channel': 'Levin Papantonio',
+                       'author': 'Levin Papantonio',
+                       'text': 'Although there is a motivation to get the word out, that can really blow '
+                               'your case; do not go to the newspaper, do not go to the press.',
+                       'tip': 'Although there is a motivation to get the word out, that can really blow '
+                              'your case; do not go to the newspaper, do not go to the press.',
+                       'timestamp': 36,
+                       'timestamp_seconds': 36,
+                       'timestamp_label': '[00:00:36]',
+                       'url': 'https://www.youtube.com/watch?v=xH5IpDAiP5c&t=36s',
+                       'markdown': '[00:00:36](https://www.youtube.com/watch?v=xH5IpDAiP5c&t=36s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xH5IpDAiP5c',
+                       'title': 'Mistakes Not to Make in a Qui Tam Whistleblower case',
+                       'channel': 'Levin Papantonio',
+                       'author': 'Levin Papantonio',
+                       'text': 'First to file is very important; if you have knowledge of a fraud and you '
+                               'want to bring your case, you should be the first one on file.',
+                       'tip': 'First to file is very important; if you have knowledge of a fraud and you '
+                              'want to bring your case, you should be the first one on file.',
+                       'timestamp': 96,
+                       'timestamp_seconds': 96,
+                       'timestamp_label': '[00:01:36]',
+                       'url': 'https://www.youtube.com/watch?v=xH5IpDAiP5c&t=96s',
+                       'markdown': '[00:01:36](https://www.youtube.com/watch?v=xH5IpDAiP5c&t=96s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zvfb6_cVFWg',
+                       'title': 'Our Whistleblower and Qui Tam Practice',
+                       'channel': 'Sanford Heisler Sharp McKnight',
+                       'author': 'Sanford Heisler Sharp McKnight',
+                       'text': "If you talk to a lawyer, even if you never sign a retainer agreement, it's "
+                               "a privileged communication, so you're allowed to call and ask am I in "
+                               'trouble.',
+                       'tip': "If you talk to a lawyer, even if you never sign a retainer agreement, it's "
+                              "a privileged communication, so you're allowed to call and ask am I in "
+                              'trouble.',
+                       'timestamp': 115,
+                       'timestamp_seconds': 115,
+                       'timestamp_label': '[00:01:55]',
+                       'url': 'https://www.youtube.com/watch?v=zvfb6_cVFWg&t=115s',
+                       'markdown': '[00:01:55](https://www.youtube.com/watch?v=zvfb6_cVFWg&t=115s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zvfb6_cVFWg',
+                       'title': 'Our Whistleblower and Qui Tam Practice',
+                       'channel': 'Sanford Heisler Sharp McKnight',
+                       'author': 'Sanford Heisler Sharp McKnight',
+                       'text': 'Whistleblowers have to have knowledge that something is wrong and then be '
+                               'able to trace it in a way that makes it very believable, credible, and '
+                               'verifiable.',
+                       'tip': 'Whistleblowers have to have knowledge that something is wrong and then be '
+                              'able to trace it in a way that makes it very believable, credible, and '
+                              'verifiable.',
+                       'timestamp': 157,
+                       'timestamp_seconds': 157,
+                       'timestamp_label': '[00:02:37]',
+                       'url': 'https://www.youtube.com/watch?v=zvfb6_cVFWg&t=157s',
+                       'markdown': '[00:02:37](https://www.youtube.com/watch?v=zvfb6_cVFWg&t=157s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dnDB-BkTNpk',
+                       'title': 'Qui Tam - Your Whistleblower Rights',
+                       'channel': 'Beasley Allen',
+                       'author': 'Beasley Allen',
+                       'text': "We have about 20 of these cases going on right now, but they're all filed "
+                               'under seal, which is a requirement under the statute.',
+                       'tip': "We have about 20 of these cases going on right now, but they're all filed "
+                              'under seal, which is a requirement under the statute.',
+                       'timestamp': 92,
+                       'timestamp_seconds': 92,
+                       'timestamp_label': '[00:01:32]',
+                       'url': 'https://www.youtube.com/watch?v=dnDB-BkTNpk&t=92s',
+                       'markdown': '[00:01:32](https://www.youtube.com/watch?v=dnDB-BkTNpk&t=92s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SiATzxJHy2Y',
+                       'title': 'How Qui Tam Lawsuits Actually Work',
+                       'channel': 'Stephen Teller - Teller Law',
+                       'author': 'Stephen Teller - Teller Law',
+                       'text': 'If I settle that retaliation case carelessly, I might accidentally settle '
+                               'the false claims case out from under the government.',
+                       'tip': 'If I settle that retaliation case carelessly, I might accidentally settle '
+                              'the false claims case out from under the government.',
+                       'timestamp': 386,
+                       'timestamp_seconds': 386,
+                       'timestamp_label': '[00:06:26]',
+                       'url': 'https://www.youtube.com/watch?v=SiATzxJHy2Y&t=386s',
+                       'markdown': '[00:06:26](https://www.youtube.com/watch?v=SiATzxJHy2Y&t=386s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SiATzxJHy2Y',
+                       'title': 'How Qui Tam Lawsuits Actually Work',
+                       'channel': 'Stephen Teller - Teller Law',
+                       'author': 'Stephen Teller - Teller Law',
+                       'text': 'It will remain under seal for six months at a time typically while the '
+                               "government investigates, and then they'll ask the judge for another six "
+                               'months.',
+                       'tip': 'It will remain under seal for six months at a time typically while the '
+                              "government investigates, and then they'll ask the judge for another six "
+                              'months.',
+                       'timestamp': 503,
+                       'timestamp_seconds': 503,
+                       'timestamp_label': '[00:08:23]',
+                       'url': 'https://www.youtube.com/watch?v=SiATzxJHy2Y&t=503s',
+                       'markdown': '[00:08:23](https://www.youtube.com/watch?v=SiATzxJHy2Y&t=503s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CZeUV80NaAA',
+                       'title': 'Can You Be a Whistleblower If You Participated in the Fraud? '
+                                '#whistleblower',
+                       'channel': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'author': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'text': "A lot of people think if I blow the whistle, I receive immunity; that's "
+                               'just wrong.',
+                       'tip': "A lot of people think if I blow the whistle, I receive immunity; that's "
+                              'just wrong.',
+                       'timestamp': 324,
+                       'timestamp_seconds': 324,
+                       'timestamp_label': '[00:05:24]',
+                       'url': 'https://www.youtube.com/watch?v=CZeUV80NaAA&t=324s',
+                       'markdown': '[00:05:24](https://www.youtube.com/watch?v=CZeUV80NaAA&t=324s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Hb6Ogl9Fm8I',
+                       'title': 'What Makes a Strong Whistleblower Case? Brown, LLC Explains',
+                       'channel': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'author': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'text': "As a general rule, we're looking for cases where the fraud against the "
+                               'government exceeds $10 million.',
+                       'tip': "As a general rule, we're looking for cases where the fraud against the "
+                              'government exceeds $10 million.',
+                       'timestamp': 178,
+                       'timestamp_seconds': 178,
+                       'timestamp_label': '[00:02:58]',
+                       'url': 'https://www.youtube.com/watch?v=Hb6Ogl9Fm8I&t=178s',
+                       'markdown': '[00:02:58](https://www.youtube.com/watch?v=Hb6Ogl9Fm8I&t=178s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Hb6Ogl9Fm8I',
+                       'title': 'What Makes a Strong Whistleblower Case? Brown, LLC Explains',
+                       'channel': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'author': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'text': 'Courts dismiss whistleblower complaints every week because the relator had '
+                               'just a strong suspicion but is weak on the specifics.',
+                       'tip': 'Courts dismiss whistleblower complaints every week because the relator had '
+                              'just a strong suspicion but is weak on the specifics.',
+                       'timestamp': 281,
+                       'timestamp_seconds': 281,
+                       'timestamp_label': '[00:04:41]',
+                       'url': 'https://www.youtube.com/watch?v=Hb6Ogl9Fm8I&t=281s',
+                       'markdown': '[00:04:41](https://www.youtube.com/watch?v=Hb6Ogl9Fm8I&t=281s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '39Q-yYGWPVg',
+                       'title': 'Does a Whistleblower Need to be an Employee? (Not what you think!) | '
+                                'Brown, LLC',
+                       'channel': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'author': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'text': 'On ProPublica there is information about what companies received PPP '
+                               'loans, including their employee count and revenue.',
+                       'tip': 'On ProPublica there is information about what companies received PPP loans, '
+                              'including their employee count and revenue.',
+                       'timestamp': 445,
+                       'timestamp_seconds': 445,
+                       'timestamp_label': '[00:07:25]',
+                       'url': 'https://www.youtube.com/watch?v=39Q-yYGWPVg&t=445s',
+                       'markdown': '[00:07:25](https://www.youtube.com/watch?v=39Q-yYGWPVg&t=445s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Cz4DaWsS-xM',
+                       'title': 'What’s the #1 Thing a Whistleblower Should Do? #whistleblower',
+                       'channel': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'author': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'text': 'Going to HR typically is a one-way street to getting fired.',
+                       'tip': 'Going to HR typically is a one-way street to getting fired.',
+                       'timestamp': 445,
+                       'timestamp_seconds': 445,
+                       'timestamp_label': '[00:07:25]',
+                       'url': 'https://www.youtube.com/watch?v=Cz4DaWsS-xM&t=445s',
+                       'markdown': '[00:07:25](https://www.youtube.com/watch?v=Cz4DaWsS-xM&t=445s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'N4uuM9uvRYY',
+                       'title': 'What Is a Partial Seal Lift in the False Claims Act Litigation? | Brown, '
+                                'LLC',
+                       'channel': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'author': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'text': "Even if they don't consent, typically the judge is going to give the "
+                               'government deference because they are the true party of interest in the '
+                               'litigation.',
+                       'tip': "Even if they don't consent, typically the judge is going to give the "
+                              'government deference because they are the true party of interest in the '
+                              'litigation.',
+                       'timestamp': 235,
+                       'timestamp_seconds': 235,
+                       'timestamp_label': '[00:03:55]',
+                       'url': 'https://www.youtube.com/watch?v=N4uuM9uvRYY&t=235s',
+                       'markdown': '[00:03:55](https://www.youtube.com/watch?v=N4uuM9uvRYY&t=235s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KMtkKgsZzRo',
+                       'title': 'How Do Attorney Fees Work In a Whistleblower Case? | Tony Munter Attorney '
+                                'at Law',
+                       'channel': 'Tony Munter Attorney at Law',
+                       'author': 'Tony Munter Attorney at Law',
+                       'text': "No matter how complicated the case is, maybe you've been fired and you "
+                               "don't have any money, you can still handle even a very large False Claims "
+                               'Act case on this basis.',
+                       'tip': "No matter how complicated the case is, maybe you've been fired and you "
+                              "don't have any money, you can still handle even a very large False Claims "
+                              'Act case on this basis.',
+                       'timestamp': 43,
+                       'timestamp_seconds': 43,
+                       'timestamp_label': '[00:00:43]',
+                       'url': 'https://www.youtube.com/watch?v=KMtkKgsZzRo&t=43s',
+                       'markdown': '[00:00:43](https://www.youtube.com/watch?v=KMtkKgsZzRo&t=43s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '64dIGOXUwoc',
+                       'title': 'Qui Tam: What steps should you take when dealing with false claims in a '
+                                'qui tam case?',
+                       'channel': 'Gary Martin Hays, LLC',
+                       'author': 'Gary Martin Hays, LLC',
+                       'text': 'The attorney should thoroughly research the evidence to decide whether or '
+                               'not the lawsuit will be successful.',
+                       'tip': 'The attorney should thoroughly research the evidence to decide whether or '
+                              'not the lawsuit will be successful.',
+                       'timestamp': 305,
+                       'timestamp_seconds': 305,
+                       'timestamp_label': '[00:05:05]',
+                       'url': 'https://www.youtube.com/watch?v=64dIGOXUwoc&t=305s',
+                       'markdown': '[00:05:05](https://www.youtube.com/watch?v=64dIGOXUwoc&t=305s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4cRTBx7ikiY',
+                       'title': 'What is QUI TAM Law? Part 1: Relators and Disclosures',
+                       'channel': 'Chapman Law Group: Health Care Attorneys',
+                       'author': 'Chapman Law Group: Health Care Attorneys',
+                       'text': 'If that claim is successful, the relator will receive 15 to 30% of the '
+                               "proceeds that they'll actually share with their attorney.",
+                       'tip': 'If that claim is successful, the relator will receive 15 to 30% of the '
+                              "proceeds that they'll actually share with their attorney.",
+                       'timestamp': 69,
+                       'timestamp_seconds': 69,
+                       'timestamp_label': '[00:01:09]',
+                       'url': 'https://www.youtube.com/watch?v=4cRTBx7ikiY&t=69s',
+                       'markdown': '[00:01:09](https://www.youtube.com/watch?v=4cRTBx7ikiY&t=69s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IX4WhZTmPRI',
+                       'title': 'How Can I Make a Strong False Claims Act Case? | Tony Munter Attorney at '
+                                'Law',
+                       'channel': 'Tony Munter Attorney at Law',
+                       'author': 'Tony Munter Attorney at Law',
+                       'text': 'The False Claims Act and the False Claims Acts of the States only work if '
+                               "somehow the government's money is at stake.",
+                       'tip': 'The False Claims Act and the False Claims Acts of the States only work if '
+                              "somehow the government's money is at stake.",
+                       'timestamp': 67,
+                       'timestamp_seconds': 67,
+                       'timestamp_label': '[00:01:07]',
+                       'url': 'https://www.youtube.com/watch?v=IX4WhZTmPRI&t=67s',
+                       'markdown': '[00:01:07](https://www.youtube.com/watch?v=IX4WhZTmPRI&t=67s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'skGozAS0va8',
+                       'title': 'The Whistleblower Process and the False Claims Act – Cohen Milstein '
+                                'Explains',
+                       'channel': 'Cohen Milstein',
+                       'author': 'Cohen Milstein',
+                       'text': 'Generally whistleblowers can receive awards ranging from 15 to 30 percent '
+                               'of any amount recovered.',
+                       'tip': 'Generally whistleblowers can receive awards ranging from 15 to 30 percent '
+                              'of any amount recovered.',
+                       'timestamp': 71,
+                       'timestamp_seconds': 71,
+                       'timestamp_label': '[00:01:11]',
+                       'url': 'https://www.youtube.com/watch?v=skGozAS0va8&t=71s',
+                       'markdown': '[00:01:11](https://www.youtube.com/watch?v=skGozAS0va8&t=71s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'}]}

@@ -1,632 +1,834 @@
 from __future__ import annotations
 
-CHAPTER_9 = {
-    "id": "Q9",
-    "chapter_id": "Q9",
-    "chapter_number": 9,
-    "question_number": 9,
-    "slug": "contracts-statutory-guardrails-licensing-and-outreach-scripts",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern mass-tort case acquisition, hitech record triage & law-firm msos?",
-    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
-    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": "Rule 5.4 Service Pricing, Arizona ABS Boundaries, HIPAA Access Routes, TCPA Evidence & Defensible Intake Contracts",
-    "layout_template": "legal_compliance_notes",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #46 ranks #13 of 49 with a 93/100 Money-to-Manpower Score across 13 mapped plays. "
-        "Its advantage is administrative throughput, not ownership of settlement proceeds: fixed or cost-plus "
-        "MSO services combine original advertising, supervised intake, authorized record retrieval, and "
-        "evidence-linked chronology production. Conservative annual revenue of $160,000 produces $41,600 "
-        "owner profit; Base revenue of $705,000 produces $267,900; Scaled revenue of $1,250,000 produces "
-        "$625,000. This chapter translates Rule 5.4, state solicitation restrictions, Arizona ABS licensing, "
-        "HIPAA access limits, and TCPA consent evidence into contract clauses and executable scripts. "
-        "The operating discipline is simple: separate lawyer decisions from vendor work, separate patient "
-        "access from third-party retrieval, and collect service fees without making compensation depend "
-        "on retainers, accepted cases, or recoveries."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$160,000",
-            "context": "Annual contracted MSO service revenue; excludes settlements and client trust funds",
-            "note": "26% net margin; $41,600 owner profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$705,000",
-            "context": "Annual contracted MSO service revenue; excludes settlements and client trust funds",
-            "note": "38.0% net margin; $267,900 owner profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,250,000",
-            "context": "Annual contracted MSO service revenue; excludes settlements and client trust funds",
-            "note": "50% net margin; $625,000 owner profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Assign professional authority before buying claimant traffic",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a jurisdiction matrix covering the law firm's offices, each claimant's location, "
-                    "the advertising audience, and the personnel performing intake. ABA Model Rule 5.4 supplies "
-                    "a reference architecture, but the adopted state rule controls; a model rule is not itself "
-                    "a federal statute. Pair the local versions of Rules 5.4, 5.5, 7.2, and 7.3 with runner, "
-                    "barratry, referral-service, and professional-entity restrictions. A fixed price does not "
-                    "sanitize payment for recommending a particular lawyer or improperly soliciting a claimant. "
-                    "The MSO may operate software, schedule appointments, collect factual answers, request records "
-                    "through an authorized route, and prepare source-linked chronologies. The law firm determines "
-                    "eligibility, conflicts, limitations periods, legal strategy, representation, and withdrawal. "
-                    "Its lawyers approve advertising claims and supervise delegated work under applicable "
-                    "professional rules. Contracts must preserve that authority even when the MSO owns the CRM "
-                    "or pays the media invoice. Give the firm an exportable record and the ability to stop "
-                    "communications immediately. Never make access to client information depend on paying a "
-                    "disputed invoice, and never let an intake representative explain expected settlement value "
-                    "as though they were giving the firm's legal opinion."
-                ),
-                (
-                    "An Arizona alternative business structure is a separately licensed operating arrangement, "
-                    "not a label that an ordinary marketing company can attach to its agreement. Arizona Supreme "
-                    "Court Rule 31 and ACJA section 7-209 establish the relevant authorization framework; the "
-                    "licensed entity's ownership, management, designated personnel, and ongoing obligations matter. "
-                    "Arizona removed its former ER 5.4 restriction, but that change does not authorize an "
-                    "unlicensed affiliate to practice law or export Arizona permissions into every claimant's "
-                    "state. Evaluate where legal services are delivered, which lawyers are admitted, and which "
-                    "jurisdiction's professional rules apply to each activity. For the ordinary MSO structure "
-                    "used in this scorecard, retain fair-market fixed or documented cost-plus compensation and "
-                    "exclude percentages of legal fees, settlement awards, or case recoveries. Even lawyer-to-lawyer "
-                    "fee divisions require their own applicable conditions; a licensed lawyer's participation "
-                    "does not automatically validate every payment. Document vendor benchmarks, actual staffing, "
-                    "software allocation, media-management work, and pricing assumptions. A $11,750 monthly "
-                    "administrative scope should be explainable through services and capacity rather than a "
-                    "target number of valuable plaintiffs. Review the structure again when ownership, geography, "
-                    "or the service bundle changes."
-                ),
-                (
-                    "Use sector-specific stop conditions rather than broad promises that every claimant can "
-                    "be acquired nationally. California Business and Professions Code sections 6151 and 6152 "
-                    "address runners and cappers; Texas Penal Code section 38.12 addresses barratry and related "
-                    "solicitation conduct. Florida's lawyer-advertising rules impose detailed content and filing "
-                    "requirements with exemptions that must be checked against the actual campaign. New York "
-                    "Judiciary Law section 479 restricts solicitation connected with legal business. These "
-                    "provisions differ in elements, exceptions, and covered actors, so a single national script "
-                    "cannot establish permission everywhere. Build routing rules that select an approved state "
-                    "script, authorized firm identity, permissible channel, and current advertising version before "
-                    "contact begins. Treat hospital lists, accident reports, purchased diagnosis lists, and "
-                    "recent-disaster audiences as elevated-risk sources requiring specific examination, not cheap "
-                    "inventory. A vendor's representation that traffic is compliant is supporting evidence, not "
-                    "a substitute for inspecting acquisition methods. Suspend the affected source when its "
-                    "methods cannot be established. Finally, federal Rule of Evidence 702 and MDL causation "
-                    "rulings can eliminate demand without changing the contract's professional boundaries. "
-                    "Maintain a campaign-stop procedure and redeployment plan instead of promising replacements "
-                    "for litigation-wide scientific failures."
-                ),
-            ],
-            "table": {
-                "caption": "Jurisdiction and professional-authority matrix for a nonlawyer MSO",
-                "headers": [
-                    "Authority and territorial question",
-                    "Permitted administrative operating boundary",
-                    "Evidence retained before activation",
-                    "Failure response and commercial consequence",
-                ],
-                "rows": [
-                    [
-                        "State-adopted Rule 5.4 governing the contracting firm",
-                        "Charge supported service prices without sharing legal recoveries",
-                        "Retain local rule analysis and market pricing support",
-                        "Remove outcome-linked compensation before any services are invoiced",
-                    ],
-                    [
-                        "State-adopted Rules 5.3 and 5.5 governing delegation",
-                        "Collect facts while lawyers control professional legal judgments",
-                        "Record supervising lawyer assignments and approved escalation instructions",
-                        "Stop unsupervised advice and retrain the affected intake personnel",
-                    ],
-                    [
-                        "Arizona Supreme Court Rule 31 and ACJA 7-209",
-                        "Operate within the licensed entity's actual authorized structure",
-                        "Verify current entity authorization and approved ownership configuration",
-                        "Use ordinary vendor pricing outside verified entity permissions",
-                    ],
-                    [
-                        "California Business and Professions Code sections 6151 and 6152",
-                        "Exclude runner arrangements and prohibited client procurement conduct",
-                        "Inspect source methods and compensation throughout subcontractor chains",
-                        "Terminate prohibited sourcing rather than renaming its referral payment",
-                    ],
-                    [
-                        "Texas Penal Code section 38.12 solicitation restrictions",
-                        "Apply channel-specific restrictions before initiating targeted prospective-client contact",
-                        "Retain reviewed scripts and evidence establishing source provenance",
-                        "Suppress affected audiences while counsel evaluates the conduct",
-                    ],
-                    [
-                        "Florida Bar Rules 4-7.11 through 4-7.23",
-                        "Apply advertising content requirements and applicable filing procedures",
-                        "Archive advertisements and applicable filing or exemption determinations",
-                        "Pause nonconforming advertisements and preserve their publication history",
-                    ],
-                    [
-                        "Federal Rule of Evidence 702 and controlling MDL orders",
-                        "Let litigation counsel define current evidentiary acceptance criteria",
-                        "Version scientific criteria against dated counsel instructions",
-                        "Stop obsolete campaigns without promising interchangeable replacement plaintiffs",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before the first paid impression",
-                "body": "Release a campaign only when the underlying evidence establishes each operating boundary.",
-                "items": [
-                    "Match every targeted state to the contracting firm's authority, approved advertising version, source restrictions, and responsible supervising lawyer.",
-                    "Validate fixed or cost-plus pricing against documented work; remove any payment term driven by retainers, accepted cases, legal fees, or recoveries.",
-                    "If an Arizona ABS participates, verify its current license and entity-specific permissions rather than relying on an affiliate's marketing claim.",
-                    "Test claimant export, communication suppression, source suspension, and lawyer escalation using a synthetic record before importing live health information.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Separate patient access, disclosure authorization, and clinical triage",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat medical-record acquisition as a choice among distinct legal routes. Under 45 CFR "
-                    "164.524, an individual generally may access protected health information in a designated "
-                    "record set, subject to specified exclusions and procedures. The covered entity generally "
-                    "has thirty days to act, with one permitted thirty-day extension supported by the required "
-                    "written notice. Electronic format depends on what is readily producible or otherwise "
-                    "agreed, not on a vendor's preferred export. A patient-directed electronic transmission "
-                    "request must satisfy the applicable requirements, including clear recipient identification "
-                    "and destination. Following Ciox Health, LLC v. Azar, do not assume the HITECH third-party "
-                    "directive covers every record format or that the individual-access fee limitation applies "
-                    "to every third-party delivery. Distinguish electronic health record requests within the "
-                    "remaining statutory directive from ordinary third-party authorization requests. Under "
-                    "45 CFR 164.508, a valid authorization must contain its required elements and statements; "
-                    "it does not automatically import the access timetable or fee restrictions. State access "
-                    "laws may provide additional rights or separate fee schedules. Record the selected route, "
-                    "custodian, scope, signature, delivery instruction, and deadline before automation sends "
-                    "anything. Escalate a custodian's disputed interpretation rather than generating repetitive "
-                    "demands under an inapplicable rule."
-                ),
-                (
-                    "Determine business-associate status from the actual relationship, not from the presence "
-                    "of health information alone. A plaintiff law firm and its intake vendor are not "
-                    "automatically HIPAA covered entities or business associates merely because a patient "
-                    "authorizes disclosure. Conversely, handling protected information on behalf of a covered "
-                    "entity or another business associate can create obligations that require a compliant "
-                    "agreement under 45 CFR 164.504(e). Map the disclosing entity, recipient, purpose, service, "
-                    "and subcontractor chain before deciding which agreement applies. Regardless of HIPAA "
-                    "status, encrypt stored records, restrict access by matter, log exports, and prohibit "
-                    "model training on claimant material. Evaluate state health-data and breach laws separately; "
-                    "Washington's My Health My Data Act can reach consumer health information outside HIPAA, "
-                    "subject to its scope and exemptions. Identify substance-use-disorder records governed by "
-                    "42 CFR Part 2 and other specially protected records before using an ordinary authorization. "
-                    "A signature package must reflect the actual disclosure purpose and applicable restrictions. "
-                    "Use secure upload links rather than inviting diagnoses or identifiers in social-media "
-                    "comments. Keep full Social Security numbers out of advertising platforms and routine "
-                    "analytics, and document why any stronger identifier is necessary before collecting it "
-                    "through a restricted channel."
-                ),
-                (
-                    "Make the chronology parser an evidence-indexing assistant, not a medical expert or "
-                    "an automated case-acceptance authority. Extract encounter dates, medication names, exposure "
-                    "periods, diagnosis text, ICD-10 codes, and page references while preserving the source "
-                    "document and distinguishing patient reports from clinician findings. An ICD-10 match "
-                    "alone does not establish causation, product exposure, or a viable claim. Require human "
-                    "review of conflicting dates, ambiguous abbreviations, OCR failures, and unsupported model "
-                    "statements. TrustedForm certificates can preserve aspects of a lead-submission event; "
-                    "they do not establish claimant identity, medical eligibility, or the legality of every "
-                    "downstream contact. LexisNexis identity tools require an appropriate product, permissible "
-                    "use, contractual access, and a correction path for false matches. Neither product proves "
-                    "whether another law firm already holds a retainer. Combine restricted identity matching, "
-                    "claimant questions, and counsel-controlled conflict review without creating an unrestricted "
-                    "cross-firm claimant database. For a two-hundred-person retrieval cohort, budget $35 per "
-                    "person as an illustrative blended acquisition outlay, or $7,000 total; this is a "
-                    "procurement assumption, not a statutory fee entitlement. If missing pharmacy periods "
-                    "raise the blended cost to $50, the additional $3,000 must come from an identified "
-                    "reserve or an approved service-scope adjustment."
-                ),
-            ],
-            "table": {
-                "caption": "Record-route selection and evidence-quality operating matrix",
-                "headers": [
-                    "Record or processing situation",
-                    "Selected operating rule and boundary",
-                    "Required transaction evidence and controls",
-                    "Exception handling and cost treatment",
-                ],
-                "rows": [
-                    [
-                        "Individual requests access to their designated record set",
-                        "Apply 45 CFR 164.524 access procedures and applicable limits",
-                        "Log verified identity, requested scope, format, and receipt date",
-                        "Track extension notices and escalate overdue responses by route",
-                    ],
-                    [
-                        "Patient directs electronic health records to another recipient",
-                        "Apply the surviving HITECH directive within its actual scope",
-                        "Retain signed direction identifying recipient and delivery destination",
-                        "Evaluate Ciox limitations before asserting access pricing rights",
-                    ],
-                    [
-                        "Law firm requests records using patient disclosure authorization",
-                        "Apply 45 CFR 164.508 and relevant state requirements",
-                        "Check signature, expiration, disclosure scope, and required statements",
-                        "Obtain fee estimates without assuming patient-access price restrictions",
-                    ],
-                    [
-                        "Vendor performs covered-entity work involving protected health information",
-                        "Determine business-associate duties from the actual service relationship",
-                        "Execute required agreements and assess subcontractor security controls",
-                        "Suspend transfers when required contractual protections are absent",
-                    ],
-                    [
-                        "Custodian identifies protected substance-use-disorder treatment record material",
-                        "Evaluate 42 CFR Part 2 before further disclosure",
-                        "Document the applicable consent and proceeding-specific use restrictions",
-                        "Separate restricted material and obtain specialist review when needed",
-                    ],
-                    [
-                        "Chronology parser produces diagnosis and exposure timeline entries",
-                        "Treat extracted findings as reviewable administrative work product",
-                        "Require source pages, confidence flags, and reviewer attribution",
-                        "Return unsupported entries for correction before lawyer assessment",
-                    ],
-                    [
-                        "Identity matching suggests duplicate or synthetic claimant activity",
-                        "Use permitted identity products without assuming retainer visibility",
-                        "Preserve match rationale and provide a factual correction path",
-                        "Quarantine suspect records while counsel resolves representation conflicts",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Reduce record friction without overstating legal rights",
-                "body": "Veteran operators win through route accuracy, traceable evidence, and tightly controlled exceptions.",
-                "items": [
-                    "Maintain separate patient-access and third-party-authorization templates; show the selected route on every retrieval ticket so staff do not cite the wrong fee rule.",
-                    "Request the exact pharmacy date range and product identifiers counsel needs; reconcile dispensing records against exposure narratives before buying another retrieval cycle.",
-                    "Store TrustedForm evidence with the original disclosure text and form version; a certificate detached from the actual screen cannot explain what the person agreed to.",
-                    "Attach page-level citations to every chronology assertion and route contradictory dates into a reviewer queue before exporting a lawyer-facing summary.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Price administrative work and contract for defects, not case outcomes",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Reconcile every proposal to the supplied Formula v2.0 scorecard before discussing "
-                    "acquisition metrics. Conservative revenue is $160,000 with $118,400 total annual costs, "
-                    "leaving $41,600 at 26%; Base revenue is $705,000 with $437,100 costs, leaving $267,900 "
-                    "at 38.0%; Scaled revenue is $1,250,000 with $625,000 costs, leaving $625,000 at 50%. "
-                    "The respective staffing configurations are one full-time person plus three contractors, "
-                    "one plus three, and two plus four. Illustrative service packaging that exactly matches "
-                    "these revenues is four accounts paying $10,000 quarterly, five accounts paying $11,750 "
-                    "monthly, and ten accounts paying $31,250 quarterly. These are administrative scopes, "
-                    "not purchased inventories of retained plaintiffs. The annual cost totals must absorb "
-                    "the modeled delivery burden rather than silently adding retrieval or media expenses "
-                    "outside the margin calculation. Recognized revenue excludes client trust money, settlement "
-                    "awards, and underlying litigation value. Assess principal-versus-agent treatment under "
-                    "ASC 606 for separately arranged media or retrieval purchases; gross vendor billings do "
-                    "not automatically become operator revenue. No additional retained-share multiplier is "
-                    "supplied for these scenarios. Keep the published service-revenue basis intact and document "
-                    "any pass-through presentation separately rather than inflating the scorecard with "
-                    "client-funded advertising."
-                ),
-                (
-                    "Instrument the complete waterfall as raw inquiry -> signed law-firm retainer -> usable "
-                    "HITECH EMR/pharmacy proof -> deficiency-free accepted case -> collected MSO/vendor fee. "
-                    "The final arrow is a cash-reconciliation link, not a contingent entitlement to payment. "
-                    "For an illustrative monthly cohort, start with 1,000 raw inquiries; quarantine 120 "
-                    "duplicates or suspected synthetic submissions, leaving 880 for permitted contact. If "
-                    "200 sign retainers, 140 produce usable records, and counsel accepts 120 without "
-                    "administrative deficiencies, the raw-to-accepted yield is 12%. The 60 unusable retrieval "
-                    "files represent a 30% record-stage rejection rate, while 20 additional files fail "
-                    "the final quality review. At $7,000 retrieval outlay, the internal retrieval cost per "
-                    "accepted case is $58.33, but that metric must not become the vendor's compensation "
-                    "formula. Link delivered services to their fixed invoice and collection date even when "
-                    "the accepted count changes. The Base annual cost envelope averages $36,425 monthly; "
-                    "this cohort's retrieval assumption leaves $29,425 for all other modeled costs. A "
-                    "$3,000 retrieval overrun reduces that remaining envelope to $26,425 unless separately "
-                    "funded. Model a 100-case acceptance result and delayed invoice collection as stress "
-                    "conditions, preserving the distinction between operating yield, contracted revenue, and "
-                    "available cash."
-                ),
-                (
-                    "Write the master services agreement around deliverables the vendor can control. Scope "
-                    "should identify campaign operations, factual intake, retrieval coordination, chronology "
-                    "preparation, security responsibilities, and explicit exclusions for legal advice and "
-                    "representation decisions. The fee trigger should be a calendar period, documented work, "
-                    "or accepted administrative deliverable, never a retainer signature, settlement, or "
-                    "contingency-fee receipt. Define a thirty-day defect-reporting window as an illustrative "
-                    "negotiated term, with correction or service credits for missing contracted fields, "
-                    "broken evidence links, or unperformed retrieval steps. Do not promise substitute "
-                    "plaintiffs when medical evidence fails or a court changes causation standards. "
-                    "Anti-circumvention language may protect introduced vendor relationships or confidential "
-                    "commercial methods, but must not restrict client choice, lawyer duties, or access to "
-                    "claimant records. Allocate background software and original creative ownership separately "
-                    "from matter information, and require usable exports at termination. Negotiate a liability "
-                    "cap against insurance limits with explicit treatment of confidentiality breaches, "
-                    "intentional misconduct, and indemnity obligations. Specify forum, escalation deadlines, "
-                    "injunctive relief, and transition support. Keep the firm's engagement agreement distinct "
-                    "from the MSO contract so vendor disputes cannot rewrite a claimant's representation "
-                    "terms or delay counsel's protective action."
-                ),
-            ],
-            "table": {
-                "caption": "MSO contract clause checklist with measurable performance boundaries",
-                "headers": [
-                    "Clause and controlled business objective",
-                    "Required drafting instruction for the agreement",
-                    "Measurable evidence supporting administration and payment",
-                    "Failure mode and negotiated risk fallback",
-                ],
-                "rows": [
-                    [
-                        "Scope clause separating administrative work from legal representation",
-                        "List permitted tasks and reserve professional decisions to lawyers",
-                        "Attach task ownership, service schedules, and escalation responsibility",
-                        "Reject requests requiring vendor staff to provide legal judgments",
-                    ],
-                    [
-                        "Fee trigger supporting fair-market service compensation rather than referrals",
-                        "Invoice fixed periods or documented cost-plus administrative services",
-                        "Retain time records, capacity assumptions, and comparable vendor pricing",
-                        "Remove retainer counts and recoveries from compensation formulas",
-                    ],
-                    [
-                        "Defect reporting clause allocating correctable administrative service failures",
-                        "Define a thirty-day notice window with specific cure obligations",
-                        "Record missing fields, failed links, and correction completion dates",
-                        "Provide service corrections rather than substitute represented claimants",
-                    ],
-                    [
-                        "Anti-circumvention clause protecting legitimate vendor introductions and methods",
-                        "Limit restrictions by relationship, duration, and protected commercial interest",
-                        "Document introduced suppliers without restricting lawyer or client choices",
-                        "Exclude client records, professional duties, and necessary transition communications",
-                    ],
-                    [
-                        "Liability cap clause matching controllable risks and insurance coverage",
-                        "Specify cap calculation and negotiated exceptions for serious misconduct",
-                        "Confirm policy limits, exclusions, notification duties, and indemnity mechanics",
-                        "Escalate uninsured exposure instead of accepting unlimited generic indemnities",
-                    ],
-                    [
-                        "Dispute resolution clause preserving operational continuity during commercial disagreements",
-                        "Specify escalation, forum, interim remedies, and uninterrupted record access",
-                        "Keep invoice objections and service tickets in separate logs",
-                        "Continue required exports while resolving the disputed payment separately",
-                    ],
-                    [
-                        "Intellectual property and matter-information clause enabling orderly termination",
-                        "Separate background tools, original assets, records, and processing permissions",
-                        "Test export formats, deletion schedules, and subcontractor return obligations",
-                        "Prevent vendor lockout from obstructing the firm's client duties",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Deploy original campaigns, evidence-backed consent, and exact scripts",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Apply ad_library_spend_velocity_arbitrage to research advertising structure, not to "
-                    "appropriate another firm's identity or creative expression. Inspect Meta Ad Library, "
-                    "Google Ads Transparency Center, and TikTok Creative Center through permitted interfaces "
-                    "at a documented cadence. Record observed first-seen dates, continued activity beyond "
-                    "thirty days, geography, available variants, and changes in quiz architecture. Active "
-                    "duration and expanding variant counts are hypotheses about advertiser commitment, not "
-                    "proof of spend, profitability, or legally supportable claims. Availability differs "
-                    "across platforms, so distinguish directly observed fields from analyst inference. "
-                    "Extract the structural hook, quiz flow, and offer positioning while producing entirely "
-                    "original copy, design, and video assets. Do not copy testimonials, imply government "
-                    "affiliation, or suggest that a compensation fund exists without substantiation. An "
-                    "illustrative $6,000 test generating 300 raw inquiries has a $20 raw cost; if 60 "
-                    "sign, 42 produce usable evidence, and 36 receive counsel acceptance, internal media "
-                    "cost per accepted case is $166.67. These diagnostic ratios do not authorize per-case "
-                    "vendor payment. If identity scrubs remove more inquiries than expected, pause the "
-                    "source and preserve evidence before increasing spend. The fallback is an original "
-                    "campaign built from structural insights, with narrower geography and verified contact "
-                    "permissions, not a copied funnel."
-                ),
-                (
-                    "For calls and texts, separate legal requirements from the stricter one-to-one consent "
-                    "policy used by this operation. The FCC's attempted new one-to-one consent restriction "
-                    "was vacated by the Eleventh Circuit in Insurance Marketing Coalition Ltd. v. FCC in "
-                    "January 2025; do not describe that vacated amendment as the operative nationwide rule. "
-                    "Nevertheless, obtain seller-specific permission naming the actual firm as an operational "
-                    "control, especially when lead sellers distribute inquiries. Apply 47 U.S.C. 227 and "
-                    "47 CFR 64.1200 to the actual technology, message purpose, number type, and applicable "
-                    "consent category. Automated dialing, artificial or prerecorded voice, telemarketing, "
-                    "do-not-call rules, and state restrictions require separate analysis; a manually placed "
-                    "call is not a universal exemption. Retain the exact disclosure, affirmative action, "
-                    "timestamp, source URL, form version, and available certificate evidence. Treat consent "
-                    "revocation as a prompt suppression event across relevant systems, following applicable "
-                    "scope and timing rules rather than waiting for a statutory maximum. Apply local calling "
-                    "hours and stricter state requirements through the dialer. Commercial email also needs "
-                    "the applicable CAN-SPAM elements. Before recording a discovery call, apply the relevant "
-                    "state recording-consent rules. Never place medical details in the first voicemail, "
-                    "text preview, or email subject line."
-                ),
-                (
-                    "Use verbatim script templates only after substituting the verified firm identity and "
-                    "campaign facts; a script is not evidence that permission exists. For an inbound "
-                    "inquiry, say, 'I handle administrative intake for the law firm named on your request. "
-                    "I am not a lawyer. May I confirm which firm you intended to contact before we "
-                    "discuss your request?' Then resolve any identity mismatch before collecting health "
-                    "details. For discovery, say, 'Have you already signed a representation agreement about "
-                    "this same product and injury? Please tell us the firm name so our supervising lawyer "
-                    "can review the issue; do not cancel an existing agreement based on this call.' "
-                    "For records, explain the actual authorization route and use a secure channel. For "
-                    "uncertain eligibility, say, 'The lawyer will assess the records and applicable criteria. "
-                    "Completing this questionnaire does not establish representation or an expected recovery.' "
-                    "If contact permission is challenged, stop the discussion, suppress further outreach, "
-                    "and investigate the source without asking the person to prove their objection. "
-                    "A quality reviewer should sample recordings where permitted, compare statements against "
-                    "the approved version, and check suppression propagation. Feed confirmed defects back "
-                    "into source suspension, staff coaching, and contract remedies rather than treating "
-                    "high conversion as proof of proper intake."
-                ),
-            ],
-            "table": {
-                "caption": "Verbatim outreach and discovery script templates with channel controls",
-                "headers": [
-                    "Trigger and permitted communication setting",
-                    "Verbatim administrative script for the operator",
-                    "Evidence and operating boundary to verify",
-                    "Fallback when the prerequisite is absent",
-                ],
-                "rows": [
-                    [
-                        "Inbound inquiry where the intended firm needs confirmation",
-                        "I handle administrative intake for the law firm named on your request. I am not a lawyer. Which firm did you intend to contact?",
-                        "Confirm the displayed firm identity before requesting health details",
-                        "End sensitive intake and resolve any firm identity mismatch",
-                    ],
-                    [
-                        "Outbound contact after checking firm-specific permission and channel rules",
-                        "I am calling from the intake team for the firm identified in your request. Is now a suitable time to discuss that request?",
-                        "State the actual firm name and retain supporting permission evidence",
-                        "Do not initiate contact when the permission record is insufficient",
-                    ],
-                    [
-                        "Duplicate-retainer screening during a permitted factual discovery conversation",
-                        "Have you already signed a representation agreement about this same product and injury? Please provide the firm name for our supervising lawyer's review.",
-                        "Restrict responses to counsel-controlled conflict and representation assessment",
-                        "Pause acceptance rather than encouraging cancellation of existing representation",
-                    ],
-                    [
-                        "Record collection after choosing the appropriate authorization route",
-                        "We will send a secure form identifying the records, recipient, and purpose. Please review its scope before signing, and do not send medical records by text.",
-                        "Ensure the actual form matches the stated disclosure route",
-                        "Resolve authorization defects before transmitting any custodian request",
-                    ],
-                    [
-                        "Eligibility discussion before the lawyer makes a representation decision",
-                        "The lawyer will assess the records and applicable criteria. Completing this questionnaire does not establish representation or an expected recovery.",
-                        "Keep acceptance authority and substantive legal evaluation with counsel",
-                        "Escalate questions about deadlines, causation, or settlement value immediately",
-                    ],
-                    [
-                        "Contact objection or revocation received through an active channel",
-                        "I will stop this outreach and record your request. You do not need to share medical information to ask us to stop.",
-                        "Log the objection and propagate the applicable suppression promptly",
-                        "Investigate source permission without resuming disputed promotional contact",
-                    ],
-                    [
-                        "B2B discovery with a prospective supervising law firm",
-                        "Which states, evidence requirements, source restrictions, and supervision procedures apply to this scope? Our administrative pricing does not depend on retainers or recoveries.",
-                        "Translate answers into scope, jurisdiction routing, and pricing support",
-                        "Decline outcome-linked payment and unresolved prohibited sourcing arrangements",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Classify the campaign and record routes",
-                    "action": "Assign jurisdictions, supervising counsel, approved channels, and the applicable record-request route.",
-                    "detail": "Document local professional rules, solicitation restrictions, dialing technology, recipient identity, and special-record categories before configuring automation.",
-                },
-                {
-                    "step": 2,
-                    "title": "Bind the contract to controllable services",
-                    "action": "Execute the service scope, pricing schedule, data terms, and required relationship-specific agreements.",
-                    "detail": "Reconcile the selected annual scenario and test that no invoice trigger depends on retainer signatures, accepted cases, or settlement proceeds.",
-                },
-                {
-                    "step": 3,
-                    "title": "Test permission, identity, and evidence controls",
-                    "action": "Run synthetic inquiries through consent capture, duplicate screening, suppression, retrieval routing, and chronology review.",
-                    "detail": "Verify source disclosure capture, role-based access, export availability, source-page links, and escalation of medical or legal questions.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile delivery, defects, and cash weekly",
-                    "action": "Review the full conversion waterfall alongside service invoices, retrieval outlays, and collection aging.",
-                    "detail": "Separate accepted-case analytics from fee entitlement; enforce defect windows, suspend problematic sources, and keep canonical revenue and margin assumptions visible.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "Sell documented administrative capacity, preserve the lawyer's judgment, and never turn a claimant's recovery into the vendor's fee formula.",
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Build a state-by-state authority matrix covering professional delegation, advertising, solicitation, recording, health information, and contact restrictions.",
-        "Execute fair-market fixed or cost-plus service terms with explicit scope, fee triggers, defect remedies, liability allocation, dispute procedures, and export rights.",
-        "Separate patient-access requests, surviving HITECH electronic third-party directions, and authorization-based retrieval into distinct templates and tracking queues.",
-        "Capture firm-specific contact permission and original advertising versions, then test revocation suppression across the CRM, dialer, messaging platform, and vendors.",
-        "Instrument raw inquiry, retainer, usable proof, deficiency-free acceptance, and fee collection without conditioning administrative compensation on case outcomes.",
-        "Reconcile the exact $160,000, $705,000, and $1,250,000 annual revenue cases against their cost envelopes, staffing assumptions, retrieval sensitivity, and collection timing.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "45 CFR 164.524 — Access of individuals to protected health information",
-            "url": "https://www.ecfr.gov/current/title-45/section-164.524",
-            "relevance": "Defines individual-access procedures, response periods, formats, and applicable fee limits; select the correct route before asserting these rights.",
-        },
-        {
-            "title": "45 CFR 164.508 — Uses and disclosures requiring authorization",
-            "url": "https://www.ecfr.gov/current/title-45/section-164.508",
-            "relevance": "Supplies required authorization elements and statements for disclosure requests that cannot simply be treated as individual-access requests.",
-        },
-        {
-            "title": "45 CFR 164.504 — Organizational requirements",
-            "url": "https://www.ecfr.gov/current/title-45/section-164.504",
-            "relevance": "Paragraph (e) addresses business-associate contracts when the actual covered-entity service relationship creates that role.",
-        },
-        {
-            "title": "42 U.S.C. 17935(e) — Electronic health record access",
-            "url": "https://www.law.cornell.edu/uscode/text/42/17935",
-            "relevance": "Provides the HITECH electronic-record access and transmission foundation, whose third-party implementation must be read with the Ciox decision.",
-        },
-        {
-            "title": "42 CFR Part 2 — Confidentiality of substance use disorder patient records",
-            "url": "https://www.ecfr.gov/current/title-42/chapter-I/subchapter-A/part-2",
-            "relevance": "Requires separate analysis for covered substance-use-disorder records, including consent, redisclosure, and proceeding-related use restrictions.",
-        },
-        {
-            "title": "47 U.S.C. 227 — Restrictions on telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Establishes the TCPA framework for covered calls, artificial or prerecorded voice communications, and telephone solicitation restrictions.",
-        },
-        {
-            "title": "47 CFR 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": "Provides operational requirements for covered calls and texts, consent, do-not-call practices, and applicable revocation handling.",
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Controls applicable commercial-email identification, routing information, opt-out mechanisms, and suppression duties.",
-        },
-        {
-            "title": "California Business and Professions Code section 6152 — Runners and cappers",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=6152.",
-            "relevance": "Restricts specified runner and capper conduct; a fixed-fee agreement does not erase prohibited procurement methods.",
-        },
-        {
-            "title": "Texas Penal Code section 38.12 — Barratry and solicitation of professional employment",
-            "url": "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.12",
-            "relevance": "Requires source-method and solicitation review before using targeted claimant outreach or third-party procurement arrangements.",
-        },
-        {
-            "title": "Washington RCW Chapter 19.373 — Washington My Health My Data Act",
-            "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=19.373",
-            "relevance": "Requires scope and exemption analysis for consumer health information that may fall outside HIPAA-covered processing.",
-        },
-        {
-            "title": "Federal Rule of Evidence 702 — Testimony by expert witnesses",
-            "url": "https://www.law.cornell.edu/rules/fre/rule_702",
-            "relevance": "Makes scientific admissibility a litigation-demand risk that cannot be cured by promising replacement claimants or expanding administrative screening.",
-        },
-    ],
-}
+CHAPTER_9 = {'id': 'Q9',
+ 'chapter_id': 'Q9',
+ 'chapter_number': 9,
+ 'question_number': 9,
+ 'slug': 'hitech-record-retrieval-ai-review-settlement-administration',
+ 'question_prompt': 'How do firms obtain medical records cheaply under HITECH, review them at scale, and '
+                    'clear liens to get settlements paid?',
+ 'kicker': 'Q9 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'HITECH Record Retrieval, AI Review & Settlement Administration',
+ 'subtitle': 'HITECH Act and HIPAA changes, low-cost electronic record requests, retrieval challenges, AI '
+             'chart review with Supio and Pattern Data, QSF operations, lien resolution, and the processes '
+             'that delay payouts',
+ 'layout_template': 'tool_resource_directory',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Records lawyers, retrieval vendors, AI founders and settlement administrators '
+                      'converge on one thesis: mass tort is a volume game won by whoever controls medical '
+                      'records and structured data. The New York Injury & Malpractice Law Firm demands '
+                      'digital copies under HITECH, citing a $6.50 federal cap against $0.75-per-page '
+                      'paper billing, and targets 24-hour turnaround through records custodians. Pattern '
+                      "Data's Matt Francis reports 7 to 10x review throughput from litigation-specific AI "
+                      'lenses, while Tor Herman Law runs Supio across a 43,000-page NICU chart and 86 '
+                      "depositions. Archer's Gary Goldberg reports 90% of funds cleared in 10 to 14 "
+                      'months, with VA liens as the long poles, and LitPros claims 99% average lien '
+                      'reductions. The fault lines: who may sign a HITECH request, how far to trust OCR '
+                      'and AI, and whether open AI tools leak client health data.',
+ 'key_metrics': [{'label': 'HITECH Digital Copy Fee Cap',
+                  'metric': 'HITECH Digital Copy Fee Cap',
+                  'value': '$6.50 regardless of page volume',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Maximum federal fee for digital medical record copies, set against New York '
+                             'paper copies at up to $0.75 per page that turn a 3,000 to 5,000 page file '
+                             'into thousands of dollars',
+                  'source': 'The New York Injury & Malpractice Law Firm, P.C. ([uJITvDxd4jA @ 00:00:39])'},
+                 {'label': 'AI Case Review Throughput',
+                  'metric': 'AI Case Review Throughput',
+                  'value': '7 to 10x better throughput',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Matt Francis on throughput Pattern Data reliably sees when its litigation '
+                             'lens reviews mass tort cases versus labor-only review',
+                  'source': 'The LegalTech Fund ([_HuCGlH6Wyw @ 00:13:03])'},
+                 {'label': 'Settlement Fund Clearance Window',
+                  'metric': 'Settlement Fund Clearance Window',
+                  'value': '90% of funds within 10 to 14 months',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Gary Goldberg of Archer on how fast mass tort settlement funds are generally '
+                             'cleared and distributed, with VA liens as the long poles',
+                  'source': 'Jon and Marc ([8CBO3CgHLvA @ 00:22:02])'},
+                 {'label': 'Commingled Patient Records Rate',
+                  'metric': 'Commingled Patient Records Rate',
+                  'value': 'At least 2% of every project file',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Jeannie Hennem of ChartFast on files that contain commingled patients from '
+                             'scanning errors, fixed with NPIs plus OCR and actionable feedback to '
+                             'hospitals',
+                  'source': 'CERIS Health ([Coka2u38__k @ 00:25:57])'}],
+ 'sections': [{'section': 1,
+               'heading': 'The Practitioner Consensus',
+               'paragraphs': ['Every operator on this beat starts from the same premise: mass tort is a '
+                              'volume business, and the medical record is the raw material. Bernadette '
+                              'Catalana, defense-side national coordinating counsel at MGM, puts the math '
+                              'bluntly: a typical lawyer carries 20 to 40 cases, while a mass tort lawyer '
+                              'may carry about 4,000, and organization is the only counter to that load, '
+                              'because missing a deadline or disclosure day is the risk [n2icO1gMkN8 @ '
+                              '00:02:07]. Cara Wall watched the HRT litigation run to roughly 14,000 to '
+                              '15,000 plaintiffs and reports current MDLs reaching hundreds of thousands '
+                              '[1O2RKMH06LU @ 00:06:30]. Inside those inventories, Supio CEO Jerry Joe '
+                              'estimates that 70 to 80 percent of all personal injury data is medical, '
+                              'which is why the platform ties that medical data into a knowledge graph '
+                              '[Yq68SC86WTQ @ 00:09:49]. Pattern Data founder Matt Francis frames the same '
+                              'reality as an infrastructure problem: mass tort requires structured data at '
+                              'scale, and the firms still stitching intake, outsourced review, CRMs and '
+                              'spreadsheets together by hand are paying for every data point and skipping '
+                              're-evaluation because of it [_HuCGlH6Wyw @ 00:23:43]. The shared baseline '
+                              'is simple: control the records pipeline, structure what comes out of it, '
+                              'and the rest of the docket becomes manageable.',
+                              'The second point of consensus is that HITECH is a retrieval weapon, not '
+                              'administrative paperwork. The New York Injury & Malpractice Law Firm tells '
+                              'every client to request records in digital form, because the 2009 law hands '
+                              'the patient the choice of format and caps the federal fee for digital '
+                              'copies at $6.50 regardless of page volume, while New York paper copies at '
+                              'up to 75 cents a page turn a 3,000 to 5,000 page file into a bill in the '
+                              'thousands [uJITvDxd4jA @ 00:00:39]. Bernard Nomberg in Birmingham reaches '
+                              'the same number from the preemption angle: federal law overrides state '
+                              'per-page schedules for electronic records, leaving $6.50 or a reasonable '
+                              'cost-based fee covering the labor to make the CD plus postage [_9ZPWIgPW14 '
+                              '@ 00:01:14]. The lawofmedicine breakdown of the HHS OCR rule confirms the '
+                              'access right sits on a reasonable fee for copy labor, and that business '
+                              'associates are now directly bound by HIPAA [n3wWlYBSpfg @ 00:02:00]. The '
+                              "New York firm's second video puts the spread in real dollars: about $6.50 "
+                              'for a CD holding 2,000 pages, versus roughly $1,500 at 75 cents a page and '
+                              'months of waiting [JdDeicrkI-o @ 00:00:23]. Nomberg adds that scanned paper '
+                              'and stored records from non-electronic providers still carry a flat fee '
+                              'with no per-page charge, so paper billing is the trap to refuse up front.',
+                              'The third agreement cuts across vendors, founders and trial lawyers: AI '
+                              'accelerates the record work, but a human signs off. CERIS operations VP '
+                              'James Contes argues that even a 5% error rate applied to billions of '
+                              'dollars in claims at payers like United or HCA is gigantic money, so '
+                              'trained staff double-check OCR output with multiple QC and back-end QA '
+                              'passes, since OCR that misses the H&P triggers a second request '
+                              '[Coka2u38__k @ 00:17:43]. Matt Francis, whose entire company is AI-first, '
+                              'still says human expertise is critical and routes low-confidence calls such '
+                              'as pathology to experts while medical and smoking history come back near '
+                              '100% confident [_HuCGlH6Wyw @ 00:19:24]. Tyler Schneider at Tor Herman Law '
+                              'runs Supio on trial work, yet warns to fact-check everything because '
+                              "blurred records and handwriting can fail OCR, and the firm's science lead "
+                              'Chad still reads every page [Yq68SC86WTQ @ 00:20:26]. Cara Wall uses AI for '
+                              'the first cut of medical chronologies and then puts humans on review, and '
+                              'treats any tool like a paralegal or associate [1O2RKMH06LU @ 00:19:43]. The '
+                              'baseline prerequisite all four share is a human validation layer between '
+                              'machine extraction and anything that reaches a matrix, a special master, or '
+                              'a jury.'],
+               'table': {'caption': 'Where retrieval lawyers, AI founders, vendors and administrators line '
+                                    'up',
+                         'headers': ['Consensus Point',
+                                     'What The Practitioners Report',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Mass tort is a pure volume discipline',
+                                   'A typical lawyer carries 20 to 40 cases while a mass tort lawyer '
+                                   'carries about 4,000',
+                                   'Organization is the counter because a missed deadline or disclosure '
+                                   'day is the risk',
+                                   'Consultwebs ([n2icO1gMkN8 @ 00:02:07])'],
+                                  ['Always demand digital records under HITECH rules',
+                                   'Federal maximum for digital copies is $6.50 regardless of the volume '
+                                   'of pages',
+                                   'Refuse paper copies that run up to 75 cents per page in New York',
+                                   'The New York Injury & Malpractice Law Firm, P.C. ([uJITvDxd4jA @ '
+                                   '00:00:39])'],
+                                  ['Federal law preempts state per-page record fees',
+                                   'Electronic records carry $6.50 or a reasonable cost-based fee for CD '
+                                   'labor plus postage',
+                                   'Discuss fees up front and expect no per-page charge on stored records',
+                                   'The Nomberg Law Firm ([_9ZPWIgPW14 @ 00:01:14])'],
+                                  ['Medical data dominates the personal injury case file',
+                                   'Roughly 70 to 80 percent of all personal injury data is medical in '
+                                   'nature',
+                                   'Build the review stack around medical records tied into a knowledge '
+                                   'graph',
+                                   'LawNext ([Yq68SC86WTQ @ 00:09:49])'],
+                                  ['Human expertise stays in the review loop',
+                                   'Confidence grading routes pathology edge cases to experts while '
+                                   'smoking history runs near 100 percent',
+                                   'Let the machine grade confidence and push low-confidence calls to '
+                                   'human experts',
+                                   'The LegalTech Fund ([_HuCGlH6Wyw @ 00:19:24])'],
+                                  ['AI error rates cost real money at scale',
+                                   'A 5 percent error rate on billions at payers like United or HCA is '
+                                   'gigantic dollars',
+                                   'Run trained staff, multiple QC steps and back-end QA over every OCR '
+                                   'pass',
+                                   'CERIS Health ([Coka2u38__k @ 00:17:43])'],
+                                  ['Collect health insurance data early at intake',
+                                   'Raising liens at intake turns clients off, but insurance information '
+                                   'must be collected early and accurately',
+                                   'Capture insurance details at signup without leading the conversation '
+                                   'with lien talk',
+                                   'The Law Firm Brand Builders ([73xfuxsKsEM @ 00:19:18])']]}},
+              {'section': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The retrieval playbook from The New York Injury & Malpractice Law Firm runs '
+                              'on speed, not patience. Portals are fast but incomplete, and the statutory '
+                              '30-day deadline is almost always ignored, so the firm calls the records '
+                              'custodian directly, cites ongoing medical care, and asks for email delivery '
+                              'or sends a courier at a set time, chasing a 24-hour turnaround with '
+                              'follow-up calls [uJITvDxd4jA @ 00:01:48]. When a provider stonewalls with a '
+                              '$5,000 quote, the move is to narrow the request to the operative or imaging '
+                              'report, roughly 10 to 20 pages instead of 2,000 to 3,000, and if that '
+                              'fails, subpoena the records, since ignoring a subpoena means contempt; the '
+                              "firm has sued just to get records [uJITvDxd4jA @ 00:03:40]. The firm's "
+                              'no-expense routine adds a three-page cover letter citing HITECH that '
+                              'refuses to pay for paper, then a walk-in at Albany Medical Center with a '
+                              'HIPAA power of attorney to pick up a CD the next day, often at no charge, '
+                              'and a $10 Starbucks gift card, then scans the file into case-management '
+                              'software and burns CDs for experts [JdDeicrkI-o @ 00:02:35]. Bernard '
+                              'Nomberg flags one carve-out: X-ray films can carry a charge, so get a quote '
+                              'first because a third-party vendor may be involved [_9ZPWIgPW14 @ '
+                              '00:03:36].',
+                              'On the review side, Matt Francis builds one lens per litigation at Pattern '
+                              'Data and runs three products off it: same-day screening on usage, exposure '
+                              'timelines, diagnosis and evidentiary weight; development work on treatment '
+                              'patterns, severity, risk factors and gaps; and settlement packaging with '
+                              'eligibility, points or matrix valuation, and proof packets for a neutral or '
+                              'claims administrator [_HuCGlH6Wyw @ 00:06:16]. Valuation turns on dosage, '
+                              'duration, latency and cancer-subtype dividing lines, and Francis reliably '
+                              'sees 7 to 10x better throughput on case review, which matters when '
+                              'settlements land with 60, 90 or 120-day windows for thousands of clients '
+                              "[_HuCGlH6Wyw @ 00:13:03]. At Tor Herman Law, a NICU child's file ran 43,000 "
+                              'pages, where even a nurse summary at 10% would still be 4,300 pages; Supio '
+                              'filters by doctor or system and pulls weights and PT notes in real time, '
+                              'and across 86 depositions at seven hours each, or 602 hours, it surfaces '
+                              'contradictions from a witness deposed seven times, plus rebuttals to '
+                              'comparative-fault and preemption defenses [Yq68SC86WTQ @ 00:27:29]. Cara '
+                              "Wall's firm runs an over-20,000-case voluntary census by scraping medical "
+                              'records, then has humans spot-check, and answers show-cause attacks with '
+                              'percentages for proof of use and product ID [1O2RKMH06LU @ 00:18:04].',
+                              "Downstream, the numbers come from administrators. Archer's Gary Goldberg "
+                              'says the term sheet or MOU stage takes several months before the MSA is '
+                              'final, a special master then needs a few additional months to build the '
+                              'matrix, and lien resolution has to clear Medicare, 50 state Medicaid '
+                              'agencies, health plans and military plans, with holdback payments arriving '
+                              "about 6 to 9 months post-allocation. Goldberg's benchmark is that 90% of "
+                              'funds are generally cleared and distributed within 10 to 14 months, with VA '
+                              'liens as the long poles [8CBO3CgHLvA @ 00:22:02]. Michelle Prince reports '
+                              'LitPros has worked thousands of Boy Scouts bankruptcy cases for about a '
+                              'year, cutting liens by 99% on average, around $72,000, after firms opted '
+                              "out of the trustee's vendor, and promises a 24-hour response on every email "
+                              'and call [73xfuxsKsEM @ 00:15:34]. On disbursement, Paige Richardson prices '
+                              "Milestone's Pathway at $200 per claimant, with Zelle, PayPal, ACH, paper "
+                              'check, or a custom prepaid Mastercard so unbanked claimants avoid '
+                              'check-casher fees [Y7FbfNp9_X4 @ 00:38:20]. Michael McCready, whose clients '
+                              'mostly complain about not hearing from the lawyer, sends seven to eight '
+                              'texts over 30 days after the release is mailed to the adjuster, at day 7, '
+                              '10, 12, 14 and 21 [Y7FbfNp9_X4 @ 00:05:14].'],
+               'table': {'caption': 'Street-level tools, tactics and stated numbers from intake records to '
+                                    'disbursement',
+                         'headers': ['Tool Or Tactic', 'Exact Mechanic', 'Stated Number', 'Expert Source'],
+                         'rows': [['Direct records custodian call',
+                                   'Cite ongoing medical care, request email delivery or a courier at a '
+                                   'set time, follow up by phone',
+                                   'Target turnaround of 24 hours against a 30-day deadline almost always '
+                                   'ignored',
+                                   'The New York Injury & Malpractice Law Firm, P.C. ([uJITvDxd4jA @ '
+                                   '00:01:48])'],
+                                  ['Narrowed request after a stonewall',
+                                   'Request only the operative report or imaging report instead of the '
+                                   'full chart',
+                                   '10 to 20 pages instead of 2,000 to 3,000 against a $5,000 quote',
+                                   'The New York Injury & Malpractice Law Firm, P.C. ([uJITvDxd4jA @ '
+                                   '00:03:40])'],
+                                  ['HITECH cover letter and walk-in pickup',
+                                   'Three-page HITECH cover letter plus a HIPAA power of attorney at '
+                                   'Albany Medical Center',
+                                   'CD the next day, often no charge, plus a $10 Starbucks gift card',
+                                   'The New York Injury & Malpractice Law Firm, P.C. ([JdDeicrkI-o @ '
+                                   '00:02:35])'],
+                                  ['Pattern Data litigation lens',
+                                   "Screening, development and settlement products tied to the firm's own "
+                                   'gating criteria',
+                                   'Same-day screening and 7 to 10x better throughput on case review',
+                                   'The LegalTech Fund ([_HuCGlH6Wyw @ 00:13:03])'],
+                                  ['Supio record and deposition analysis',
+                                   'Filters by doctor or system, pulls weights and PT notes, flags '
+                                   'deposition contradictions',
+                                   '43,000-page NICU file; 86 depositions times 7 hours equals 602 hours',
+                                   'LawNext ([Yq68SC86WTQ @ 00:11:08])'],
+                                  ['Archer post-settlement administration',
+                                   'Neutral administrator resolves Medicare, Medicaid, health plan and '
+                                   'military liens before payout',
+                                   '90 percent of funds cleared and distributed within 10 to 14 months',
+                                   'Jon and Marc ([8CBO3CgHLvA @ 00:22:02])'],
+                                  ['Milestone Pathway claimant disbursement',
+                                   'Closing-statement signing plus Zelle, PayPal, ACH, paper check or '
+                                   'prepaid Mastercard payouts',
+                                   '$200 per claimant, described as well below the market standard',
+                                   'Milestone ([Y7FbfNp9_X4 @ 00:38:20])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Four Moves Operators Run That Most Firms Skip',
+                           'body': 'These are the small, repeatable plays the practitioners use to squeeze '
+                                   'more cases, more referrals and cleaner vendor relationships out of the '
+                                   'same intake and records pipeline.',
+                           'items': ["Text every lead, even rejected ones, a vCard saved under 'lawyer' or "
+                                     "'attorney' so the firm sits in the contact list; McCready has run "
+                                     'this for two years [Milestone — Y7FbfNp9_X4 @ 00:46:15]',
+                                     'Data-mine the existing book: SmartAdvocate flags Camp Lejeune '
+                                     'veterans sitting among auto-accident clients and refers them out for '
+                                     'passive income [Milestone — Y7FbfNp9_X4 @ 00:23:46]',
+                                     "Ask every lien or claims vendor 'Who owns you' before handing over "
+                                     'claimant health data [The Law Firm Brand Builders — 73xfuxsKsEM @ '
+                                     '00:24:19]',
+                                     "Ask what the vendor's LLM trains on and reject any vendor that "
+                                     'trains on user prompts [Milestone — 1O2RKMH06LU @ 00:29:03]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock The Digital Request',
+                              'action': 'Send a written HITECH request for the electronic copy and refuse '
+                                        'to pay for paper.',
+                              'detail': 'Use the three-page cover letter citing HITECH and hold the fee to '
+                                        'about $6.50 for a CD of 2,000 pages instead of 75 cents a page '
+                                        '[The New York Injury & Malpractice Law Firm, P.C. — JdDeicrkI-o @ '
+                                        '00:00:23]'},
+                             {'step': 2,
+                              'title': 'Force The 24-Hour Turnaround',
+                              'action': 'Call the records custodian, cite ongoing medical care, and set '
+                                        'email or courier delivery.',
+                              'detail': 'If the provider quotes $5,000, narrow to the operative or imaging '
+                                        'report and subpoena if the stall continues, since ignoring a '
+                                        'subpoena means contempt [The New York Injury & Malpractice Law '
+                                        'Firm, P.C. — uJITvDxd4jA @ 00:03:40]'},
+                             {'step': 3,
+                              'title': 'Run The Lens, Then Validate',
+                              'action': 'Push records through litigation-specific screening and have firm '
+                                        'staff validate the output.',
+                              'detail': "Pattern's intake screening covers product usage, exposure "
+                                        'timelines, diagnosis and diagnostic evidentiary weight in real '
+                                        'time and same day, with firm staff validating [Pattern Data — '
+                                        'PjzhkF1x4xI @ 00:01:41]'},
+                             {'step': 4,
+                              'title': 'Route To Liens And Disbursement',
+                              'action': 'Hand clean, exportable claimant data to the lien resolver and '
+                                        'settlement administrator.',
+                              'detail': 'Goldberg says command of data and exportable, searchable systems '
+                                        'decide how fast a firm moves through programs that can run '
+                                        'first-in-first-out [Jon and Marc — 8CBO3CgHLvA @ 00:23:20]'}]},
+              {'heading': '3. Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Record-access operators split on who pulls the trigger on a HITECH request '
+                              'and through which door. Bernard Nomberg of The Nomberg Law Firm teaches '
+                              'that the request has to be written by the patient, not the attorney, with '
+                              'the patient directing delivery to the lawyer, and that electronic copies '
+                              'carry no per-page fee, only $6.50 or a reasonable cost-based fee covering '
+                              'the labor to make the CD plus postage [_9ZPWIgPW14 @ 00:04:16]. The New '
+                              'York Injury & Malpractice Law Firm runs the opposite play: after a DC '
+                              'federal lower court barred lawyer requests, lawyers could again request '
+                              'digital records as of April 17, 2020, so the firm sends a three-page cover '
+                              'letter citing HITECH, refuses to pay for paper, and walks into Albany '
+                              'Medical Center with a HIPAA power of attorney to collect a CD the next day '
+                              '[JdDeicrkI-o @ 00:01:56]. The same firm writes off patient portals as fast '
+                              "but incomplete and 'not reliable at all,' preferring to call the records "
+                              'custodian, cite ongoing medical care, and push for a 24-hour turnaround '
+                              '[uJITvDxd4jA @ 00:01:15]. Jeannie Hennem of ChartFast, speaking on the '
+                              'CERIS Health panel, is betting the other way, forecasting Amazon-style '
+                              'e-commerce shopping for records riding on interoperability [Coka2u38__k @ '
+                              '00:15:16].',
+                              'The sharpest split among operators is how far to trust machine review. Matt '
+                              'Francis of Pattern Data claims 7 to 10x better throughput on case review '
+                              'and says medical and smoking history come back near 100% confident, with '
+                              'confidence grading routing only edge cases such as pathology to human '
+                              'experts [_HuCGlH6Wyw @ 00:13:03]. James Contes of CERIS Health counters '
+                              "that a 5% error rate on billions at United and HCA scale is 'gigantic "
+                              "dollars,' and that OCR missing the H&P triggers a second request, so "
+                              'trained staff double-check through multiple QC and back-end QA steps '
+                              '[Coka2u38__k @ 00:17:43]. Tyler Schneider of Tor Herman Law sits in the '
+                              'middle: Supio filters a 43,000-page NICU record by doctor or system in real '
+                              "time, yet the firm's science lead Chad still reads every page, and the "
+                              "LawNext line is blunt: 'you still have to be a lawyer' [Yq68SC86WTQ @ "
+                              '00:31:22]. Cara Wall lets AI produce only the first cut of medical '
+                              'chronologies before human review, runs an over-20,000-case voluntary census '
+                              'by scraping records with human spot-checks, and treats Lexis AI strictly as '
+                              "a 'hunting tool' after a Stanford study showed a lower hallucination rate "
+                              'than Westlaw [1O2RKMH06LU @ 00:19:43].',
+                              'On the back end, the timeline fight is stark. Gary Goldberg of Archer says '
+                              '90% of funds are generally cleared and distributed within 10 to 14 months, '
+                              'with holdbacks landing about 6 to 9 months post-allocation and programs '
+                              'able to run first-in-first-out [8CBO3CgHLvA @ 00:22:02]. Paige Richardson '
+                              "of Milestone frames the claimant's reality as 5-plus years to settle and "
+                              "another 2 to distribute, and prices Pathway at $200 per claimant, 'well "
+                              "below the market standard,' with Zelle, PayPal, ACH, paper check or a "
+                              'prepaid Mastercard for unbanked claimants [Y7FbfNp9_X4 @ 00:20:00]. Lien '
+                              'playbooks diverge too: Michelle Prince of LitPros says raising liens at '
+                              'intake is a turn-off, yet pushes collecting health insurance information '
+                              'early and accurately, and pitches single-event lien work only to '
+                              'high-volume, tech-forward firms that integrate [73xfuxsKsEM @ 00:19:34]. On '
+                              'the vendor market, Francis calls the last 12 to 18 months of demand-letter '
+                              "and individual-tort entrants a 'bubble,' while host Gordon answers that "
+                              'competition is good [_HuCGlH6Wyw @ 00:24:25]. Francis insists Pattern is '
+                              'not document review, a general LLM summary or a chronology tool but '
+                              'cross-document inference, and predicts the platform integrating intake '
+                              'through claim forms wins.'],
+               'table': {'caption': 'Fault lines between practitioner playbooks on retrieval, AI review '
+                                    'and payout',
+                         'headers': ['Fault Line', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Who signs the HITECH records request',
+                                   'Patient writes the request personally and directs delivery of records '
+                                   'to the lawyer',
+                                   'Lawyers again request digital records as of April 17, 2020 with a '
+                                   'three-page HITECH cover letter',
+                                   'The Nomberg Law Firm ([_9ZPWIgPW14 @ 00:04:16]); The New York Injury & '
+                                   'Malpractice Law Firm, P.C. ([JdDeicrkI-o @ 00:01:01])'],
+                                  ['Patient portal versus direct custodian pressure',
+                                   'Skip portals as incomplete, call the custodian, cite ongoing care, '
+                                   'target 24 hours',
+                                   'Future is Amazon-style e-commerce shopping for records powered by '
+                                   'interoperability',
+                                   'The New York Injury & Malpractice Law Firm, P.C. ([uJITvDxd4jA @ '
+                                   '00:01:15]); CERIS Health ([Coka2u38__k @ 00:15:16])'],
+                                  ['How far to trust AI record review',
+                                   '7 to 10x throughput with near 100% confidence on medical and smoking '
+                                   'history',
+                                   'A 5% error rate on billions is gigantic dollars, so humans run '
+                                   'multiple QC passes',
+                                   'The LegalTech Fund ([_HuCGlH6Wyw @ 00:13:03]); CERIS Health '
+                                   '([Coka2u38__k @ 00:17:43])'],
+                                  ['Where the human sits in the AI loop',
+                                   'AI drafts first-cut chronologies, humans review, Lexis AI used only as '
+                                   'a hunting tool',
+                                   'Supio filters 43,000 pages in real time but the science lead still '
+                                   'reads every page',
+                                   'Milestone ([1O2RKMH06LU @ 00:19:43]); LawNext ([Yq68SC86WTQ @ '
+                                   '00:31:22])'],
+                                  ['Open versus closed AI for health data',
+                                   'Closed AI trained on millions of manually audited claim lines because '
+                                   'open tools leak',
+                                   'Never upload client documents and reject vendors that train on user '
+                                   'prompts',
+                                   'The Law Firm Brand Builders ([73xfuxsKsEM @ 00:21:01]); Milestone '
+                                   '([1O2RKMH06LU @ 00:29:03])'],
+                                  ['Realistic payout timeline for claimants',
+                                   '90% of funds cleared and distributed within 10 to 14 months, programs '
+                                   'can run first-in-first-out',
+                                   'Settlement takes 5-plus years and distribution can take another 2 '
+                                   'years',
+                                   'Jon and Marc ([8CBO3CgHLvA @ 00:22:02]); Milestone ([Y7FbfNp9_X4 @ '
+                                   '00:20:00])'],
+                                  ['How to handle client communication at volume',
+                                   'Automated texts at days 7, 10, 12, 14 and 21 after the release is '
+                                   'mailed',
+                                   "Communication among key players doesn't sound high tech, run a "
+                                   'play-by-play text chain',
+                                   'Milestone ([Y7FbfNp9_X4 @ 00:05:14]); Consultwebs ([n2icO1gMkN8 @ '
+                                   '00:05:23])']]}},
+              {'heading': '4. Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Record pulls bleed money and time at the request desk. The New York Injury '
+                              "& Malpractice Law Firm says the 30-day deadline is 'almost always' ignored "
+                              'and calls Syax and MRO charging 75 cents a page for digital records a '
+                              "'total scam' that survives because nobody reports it; when stonewalled with "
+                              'a $5,000 quote, the fix is narrowing to the operative or imaging report, '
+                              'roughly 10 to 20 pages instead of 2,000 to 3,000 [uJITvDxd4jA @ 00:02:49]. '
+                              "The firm's own math: 2,000 pages in 24 hours on a CD, versus 75 cents a "
+                              'page, roughly $1,500, and months of waiting [JdDeicrkI-o @ 00:03:17]. On '
+                              'the vendor side, Jeannie Hennem of ChartFast reports a request sent to the '
+                              'wrong person sitting for weeks, 8 points of entry found in one case study, '
+                              "and SFTP deliveries corrupted by the vendor's own tech nearly triggering a "
+                              'takeback; lost requests mean lost revenue [Coka2u38__k @ 00:07:22]. Hennem '
+                              'also puts commingled patients from scanning errors in at least 2% of every '
+                              'project file, patched with NPIs plus OCR and actionable feedback to '
+                              'hospitals, while James Contes adds that systems switch ROI vendors '
+                              'unannounced and some centralize intake for 10 hospitals [Coka2u38__k @ '
+                              '00:25:57].',
+                              'The penalty history is the cautionary tale for any MSO or firm holding PHI '
+                              'in bulk. Dr. Peter Polack and Mike Meikle (Hawkthorne Group) walk through '
+                              "Cignet Health of Prince George's County, Maryland, which denied 41 patients "
+                              'their records between September 2008 and October 2009, stonewalled HHS, '
+                              'then delivered a truck full of thousands of records and ate a $4.3 million '
+                              'civil monetary penalty [CuDhCaHyZnI @ 00:01:51]. Two days later Mass '
+                              'General paid $1 million after an employee left documents on the subway '
+                              'containing PHI for 192 HIV/AIDS patients, never recovered, plus a '
+                              'corrective action plan and policy retooling that added cost. Their fix is '
+                              'process, not technology: train staff, encrypt storage, run asset '
+                              'management, know the laptop count, and enable remote wipe and tracking. '
+                              'lawofmedicine adds that HITECH binds business associates directly to HIPAA, '
+                              'so BA agreements need HIPAA and breach-notification language plus '
+                              'safeguards [n3wWlYBSpfg @ 00:03:04]. Michelle Prince of LitPros carries '
+                              'that into the AI era, warning that open AI tools leak legal and health data '
+                              "[73xfuxsKsEM @ 00:21:01], and Cara Wall's line is flat: don't upload client "
+                              'documents or sensitive things because they are not secure [1O2RKMH06LU @ '
+                              '00:26:20].',
+                              'Inventory and payout traps hit later and harder. Cara Wall warns that '
+                              "lawyers who bring in cases and don't work them hand the defense its "
+                              'meritless-case narrative, that PFS forms went from roughly a 15-page '
+                              'exercise to 60 to 80 pages, and that the Taxotere-style defense pulls '
+                              'social media for every plaintiff through show-cause and deficiency '
+                              'processes; dual representation means losing clients or sharing fees unless '
+                              'the firm keeps up client touches [1O2RKMH06LU @ 00:07:05]. Gary Goldberg of '
+                              'Archer cites a $100,000 lien sitting against a $30,000 settlement, probate '
+                              'and bankruptcy-trustee claims stacking delay, and VA liens as the long '
+                              "poles, noting it's not like going to one central source [8CBO3CgHLvA @ "
+                              '00:19:06]. The Jon and Marc hosts add that bad reviews from waiting mass '
+                              'tort claimants hurt local PI SEO across a 3-to-10-year relationship, and '
+                              'Paige Richardson of Milestone reports Facebook claimant groups forming mini '
+                              'classes that generate bar complaints, while nine of ten callers just need '
+                              'information [Y7FbfNp9_X4 @ 00:13:51]. Matt Francis notes the old labor-only '
+                              'model made every data point a cost, so firms skipped re-evaluation even as '
+                              'criteria shifted mid-litigation [_HuCGlH6Wyw @ 00:04:40]. Bernadette '
+                              'Catalana pegs a mass tort load at about 4,000 cases, where a missed '
+                              'deadline or disclosure day is the risk.'],
+               'table': {'caption': 'Firsthand failure modes with the economics check practitioners run',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Hit',
+                                     'Economics Check or Fix',
+                                     'Expert Source'],
+                         'rows': [['Providers ignore the 30-day records deadline',
+                                   'The 30-day deadline is almost always ignored by providers holding '
+                                   'records',
+                                   'Call the custodian, cite ongoing care, send a courier, subpoena in '
+                                   'litigation',
+                                   'The New York Injury & Malpractice Law Firm, P.C. ([uJITvDxd4jA @ '
+                                   '00:01:30])'],
+                                  ['Per-page billing on digital records',
+                                   'Syax and MRO charge 75 cents per page for digital records nobody '
+                                   'reports',
+                                   'Demand the $6.50 digital cap or narrow a $5,000 quote to 10-20 pages',
+                                   'The New York Injury & Malpractice Law Firm, P.C. ([uJITvDxd4jA @ '
+                                   '00:02:49])'],
+                                  ['Misrouted requests and corrupted file delivery',
+                                   'Request sat for weeks with wrong person, 8 points of entry, SFTP files '
+                                   'corrupted',
+                                   'Lost requests mean lost revenue and a corrupted delivery nearly caused '
+                                   'a takeback',
+                                   'CERIS Health ([Coka2u38__k @ 00:07:22])'],
+                                  ['Commingled patients and OCR misses in record sets',
+                                   'At least 2% of every project file has commingled patients from '
+                                   'scanning errors',
+                                   'Use NPIs plus OCR, actionable hospital feedback, multiple QC and '
+                                   'back-end QA',
+                                   'CERIS Health ([Coka2u38__k @ 00:25:57])'],
+                                  ['Stonewalling access requests or losing PHI',
+                                   'Cignet paid $4.3 million and Mass General paid $1 million plus '
+                                   'corrective action',
+                                   'Train staff, encrypt storage, track laptops, enable remote wipe and '
+                                   'tracking',
+                                   'emedikon ([CuDhCaHyZnI @ 00:01:15])'],
+                                  ['Liens swallowing the settlement value',
+                                   'A $100,000 lien against a $30,000 settlement, with VA liens as long '
+                                   'poles',
+                                   'LitPros reports Boy Scouts liens cut 99% on average, about $72,000',
+                                   'Jon and Marc ([8CBO3CgHLvA @ 00:19:06]); The Law Firm Brand Builders '
+                                   '([73xfuxsKsEM @ 00:15:34])'],
+                                  ['Signing cases and never working the inventory',
+                                   'Unworked cases feed defense meritless claims as PFS forms grow to '
+                                   '60-80 pages',
+                                   'Answer show-cause attacks with proof-of-use and product ID percentages '
+                                   'from records',
+                                   'Milestone ([1O2RKMH06LU @ 00:07:05])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Scaling Retrieval and AI Review',
+                           'body': 'Every item below is a loss or near-miss practitioners hit firsthand; '
+                                   'clear each one before pushing volume through the pipeline.',
+                           'items': ['Refuse per-page billing on digital records: the federal cap is $6.50 '
+                                     'regardless of page count, and 75-cent-per-page digital charges are a '
+                                     "'total scam' [The New York Injury & Malpractice Law Firm, P.C. — "
+                                     'uJITvDxd4jA @ 00:00:39].',
+                                     'Run a commingled-patient and missing-H&P check on every record set, '
+                                     "since at least 2% of project files carry other patients' pages "
+                                     '[CERIS Health — Coka2u38__k @ 00:25:57].',
+                                     'Ask every AI vendor what its LLM trains on and reject any that train '
+                                     'on user prompts; keep client documents out of open tools [Milestone '
+                                     '— 1O2RKMH06LU @ 00:29:03].',
+                                     'Fact-check every AI output against the source pages, because blurred '
+                                     'records and handwriting can fail OCR [LawNext — Yq68SC86WTQ @ '
+                                     '00:20:26].']}}],
+ 'pull_quote': '"The maximum fee under federal law for digital copies, regardless of the volume of pages, '
+               'is $6.50." — The New York Injury & Malpractice Law Firm, P.C. (uJITvDxd4jA @ 00:00:39)',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Send a three-page HITECH cover letter demanding digital records and refusing to pay '
+                      'for paper copies [The New York Injury & Malpractice Law Firm, P.C. — JdDeicrkI-o @ '
+                      '00:01:56].',
+                      'Call the records custodian, cite ongoing medical care, request email delivery or a '
+                      'timed courier pickup, and follow up until the records land within 24 hours [The New '
+                      'York Injury & Malpractice Law Firm, P.C. — uJITvDxd4jA @ 00:01:48].',
+                      'When a provider quotes $5,000, narrow the request to the operative or imaging '
+                      'report, about 10 to 20 pages, and subpoena in litigation [The New York Injury & '
+                      'Malpractice Law Firm, P.C. — uJITvDxd4jA @ 00:03:40].',
+                      'Use AI for the first cut of medical chronologies, then put every output through '
+                      'human review and spot-checks [Milestone — 1O2RKMH06LU @ 00:19:43].',
+                      'Collect health insurance information early and accurately at intake to set up lien '
+                      'resolution [The Law Firm Brand Builders — 73xfuxsKsEM @ 00:19:18].',
+                      'Automate post-release client texts at days 7, 10, 12, 14 and 21 so staff handle '
+                      'only specific issues [Milestone — Y7FbfNp9_X4 @ 00:05:14].'],
+ 'statutory_citations': [{'title': 'The New York Injury & Malpractice Law Firm, P.C. — Lawyer Secrets to '
+                                   'Getting Medical Records FAST [00:00:39]',
+                          'url': 'https://www.youtube.com/watch?v=uJITvDxd4jA&t=39s',
+                          'relevance': 'Primary practitioner testimony on the $6.50 HITECH digital-copy '
+                                       'cap, custodian pressure and vendor per-page overcharging.'},
+                         {'title': 'CERIS Health — The Challenges of Medical Record Retrieval - AHIMA '
+                                   'Fireside Chat [00:17:43]',
+                          'url': 'https://www.youtube.com/watch?v=Coka2u38__k&t=1063s',
+                          'relevance': 'Primary practitioner testimony on AI error rates, OCR misses, '
+                                       'commingled records and retrieval intake failures.'},
+                         {'title': 'Jon and Marc — The Hidden Process That Delays Every Mass Tort Payout '
+                                   '[00:22:02]',
+                          'url': 'https://www.youtube.com/watch?v=8CBO3CgHLvA&t=1322s',
+                          'relevance': 'Primary practitioner testimony on settlement administration '
+                                       'timelines, lien delays and holdback payments.'},
+                         {'title': 'The LegalTech Fund — In Studio with Pattern Data | Mass Tort Rebuilt | '
+                                   'AI, Expertise, and the Future of Litigation | 2026 [00:13:03]',
+                          'url': 'https://www.youtube.com/watch?v=_HuCGlH6Wyw&t=783s',
+                          'relevance': 'Primary practitioner testimony on AI case-review throughput, '
+                                       'confidence grading and settlement valuation.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'GzeUKKWvC0o',
+                       'title': 'The HITECH Act: Electronic Health Records and Meaningful Use',
+                       'channel': 'CaptureBilling',
+                       'author': 'CaptureBilling',
+                       'text': 'In all this means physicians must meet twenty total objectives in order to '
+                               'demonstrate meaningful use.',
+                       'tip': 'In all this means physicians must meet twenty total objectives in order to '
+                              'demonstrate meaningful use.',
+                       'timestamp': 131,
+                       'timestamp_seconds': 131,
+                       'timestamp_label': '[00:02:11]',
+                       'url': 'https://www.youtube.com/watch?v=GzeUKKWvC0o&t=131s',
+                       'markdown': '[00:02:11](https://www.youtube.com/watch?v=GzeUKKWvC0o&t=131s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CuDhCaHyZnI',
+                       'title': 'MPT Podcast 8: HIPAA - Changes in HITECH and the Impact on Your Practice',
+                       'channel': 'emedikon',
+                       'author': 'emedikon',
+                       'text': "It's not a technological solution.",
+                       'tip': "It's not a technological solution.",
+                       'timestamp': 268,
+                       'timestamp_seconds': 268,
+                       'timestamp_label': '[00:04:28]',
+                       'url': 'https://www.youtube.com/watch?v=CuDhCaHyZnI&t=268s',
+                       'markdown': '[00:04:28](https://www.youtube.com/watch?v=CuDhCaHyZnI&t=268s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'n3wWlYBSpfg',
+                       'title': 'HITECH ACT - 2010 Changes in HIPAA Law',
+                       'channel': 'lawofmedicine',
+                       'author': 'lawofmedicine',
+                       'text': 'They can charge a reasonable fee for complying with the request such as a '
+                               'copy labor costs.',
+                       'tip': 'They can charge a reasonable fee for complying with the request such as a '
+                              'copy labor costs.',
+                       'timestamp': 141,
+                       'timestamp_seconds': 141,
+                       'timestamp_label': '[00:02:21]',
+                       'url': 'https://www.youtube.com/watch?v=n3wWlYBSpfg&t=141s',
+                       'markdown': '[00:02:21](https://www.youtube.com/watch?v=n3wWlYBSpfg&t=141s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uJITvDxd4jA',
+                       'title': 'Lawyer Secrets to Getting Medical Records FAST',
+                       'channel': 'The New York Injury & Malpractice Law Firm, P.C.',
+                       'author': 'The New York Injury & Malpractice Law Firm, P.C.',
+                       'text': 'The maximum fee under federal law for digital copies, regardless of the '
+                               'volume of pages, is $6.50.',
+                       'tip': 'The maximum fee under federal law for digital copies, regardless of the '
+                              'volume of pages, is $6.50.',
+                       'timestamp': 39,
+                       'timestamp_seconds': 39,
+                       'timestamp_label': '[00:00:39]',
+                       'url': 'https://www.youtube.com/watch?v=uJITvDxd4jA&t=39s',
+                       'markdown': '[00:00:39](https://www.youtube.com/watch?v=uJITvDxd4jA&t=39s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_9ZPWIgPW14',
+                       'title': 'What is the HITECH Act?',
+                       'channel': 'The Nomberg Law Firm',
+                       'author': 'The Nomberg Law Firm',
+                       'text': 'The request must be written by the patient, not the attorney, but the '
+                               'patient can direct delivery of the records to the lawyer.',
+                       'tip': 'The request must be written by the patient, not the attorney, but the '
+                              'patient can direct delivery of the records to the lawyer.',
+                       'timestamp': 256,
+                       'timestamp_seconds': 256,
+                       'timestamp_label': '[00:04:16]',
+                       'url': 'https://www.youtube.com/watch?v=_9ZPWIgPW14&t=256s',
+                       'markdown': '[00:04:16](https://www.youtube.com/watch?v=_9ZPWIgPW14&t=256s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Coka2u38__k',
+                       'title': 'The Challenges of Medical Record Retrieval - AHIMA Fireside Chat',
+                       'channel': 'CERIS Health',
+                       'author': 'CERIS Health',
+                       'text': 'A five percent error rate on billions is gigantic dollars, so human checks '
+                               'are still needed.',
+                       'tip': 'A five percent error rate on billions is gigantic dollars, so human checks '
+                              'are still needed.',
+                       'timestamp': 1063,
+                       'timestamp_seconds': 1063,
+                       'timestamp_label': '[00:17:43]',
+                       'url': 'https://www.youtube.com/watch?v=Coka2u38__k&t=1063s',
+                       'markdown': '[00:17:43](https://www.youtube.com/watch?v=Coka2u38__k&t=1063s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-8_noUd4xgs',
+                       'title': 'Inside Mass Torts with Lacey Lewis from Trial Lawyers United',
+                       'channel': 'Certum Group',
+                       'author': 'Certum Group',
+                       'text': 'And there is a lot of expert testimony that has to go through to prove up '
+                               'those uh connections.',
+                       'tip': 'And there is a lot of expert testimony that has to go through to prove up '
+                              'those uh connections.',
+                       'timestamp': 765,
+                       'timestamp_seconds': 765,
+                       'timestamp_label': '[00:12:45]',
+                       'url': 'https://www.youtube.com/watch?v=-8_noUd4xgs&t=765s',
+                       'markdown': '[00:12:45](https://www.youtube.com/watch?v=-8_noUd4xgs&t=765s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JdDeicrkI-o',
+                       'title': 'How to get Medical Records at (almost) No Expense',
+                       'channel': 'The New York Injury & Malpractice Law Firm, P.C.',
+                       'author': 'The New York Injury & Malpractice Law Firm, P.C.',
+                       'text': 'Two thousand pages arrive in 24 hours on a CD, versus 75 cents a page, '
+                               'about $1,500, and months of waiting.',
+                       'tip': 'Two thousand pages arrive in 24 hours on a CD, versus 75 cents a page, '
+                              'about $1,500, and months of waiting.',
+                       'timestamp': 197,
+                       'timestamp_seconds': 197,
+                       'timestamp_label': '[00:03:17]',
+                       'url': 'https://www.youtube.com/watch?v=JdDeicrkI-o&t=197s',
+                       'markdown': '[00:03:17](https://www.youtube.com/watch?v=JdDeicrkI-o&t=197s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Y7FbfNp9_X4',
+                       'title': 'Work Smarter Not Harder: Leveraging Tech to Modernize Your Mass Tort '
+                                'Practice',
+                       'channel': 'Milestone',
+                       'author': 'Milestone',
+                       'text': 'Pathway runs $200 per claimant, well below the market standard.',
+                       'tip': 'Pathway runs $200 per claimant, well below the market standard.',
+                       'timestamp': 2300,
+                       'timestamp_seconds': 2300,
+                       'timestamp_label': '[00:38:20]',
+                       'url': 'https://www.youtube.com/watch?v=Y7FbfNp9_X4&t=2300s',
+                       'markdown': '[00:38:20](https://www.youtube.com/watch?v=Y7FbfNp9_X4&t=2300s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_HuCGlH6Wyw',
+                       'title': 'In Studio with Pattern Data | Mass Tort Rebuilt | AI, Expertise, and the '
+                                'Future of Litigation | 2026',
+                       'channel': 'The LegalTech Fund',
+                       'author': 'The LegalTech Fund',
+                       'text': 'And so, reliably we see, you know, 7 to 10 x better throughput on '
+                               'reviewing cases.',
+                       'tip': 'And so, reliably we see, you know, 7 to 10 x better throughput on reviewing '
+                              'cases.',
+                       'timestamp': 783,
+                       'timestamp_seconds': 783,
+                       'timestamp_label': '[00:13:03]',
+                       'url': 'https://www.youtube.com/watch?v=_HuCGlH6Wyw&t=783s',
+                       'markdown': '[00:13:03](https://www.youtube.com/watch?v=_HuCGlH6Wyw&t=783s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PjzhkF1x4xI',
+                       'title': 'How Mass Tort Firms Manage Cases from Intake to Settlement | Matt Francis',
+                       'channel': 'Pattern Data',
+                       'author': 'Pattern Data',
+                       'text': "It's highly tailored and trained to the criteria sets for that litigation "
+                               'at that time as well as looking ahead to the future.',
+                       'tip': "It's highly tailored and trained to the criteria sets for that litigation "
+                              'at that time as well as looking ahead to the future.',
+                       'timestamp': 35,
+                       'timestamp_seconds': 35,
+                       'timestamp_label': '[00:00:35]',
+                       'url': 'https://www.youtube.com/watch?v=PjzhkF1x4xI&t=35s',
+                       'markdown': '[00:00:35](https://www.youtube.com/watch?v=PjzhkF1x4xI&t=35s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '73xfuxsKsEM',
+                       'title': 'Healthcare Liens Explained: Resolving Complex Mass Tort Settlements | Ft. '
+                                'Michelle Prince',
+                       'channel': 'The Law Firm Brand Builders',
+                       'author': 'The Law Firm Brand Builders',
+                       'text': 'Collect health insurance information early and accurately.',
+                       'tip': 'Collect health insurance information early and accurately.',
+                       'timestamp': 1158,
+                       'timestamp_seconds': 1158,
+                       'timestamp_label': '[00:19:18]',
+                       'url': 'https://www.youtube.com/watch?v=73xfuxsKsEM&t=1158s',
+                       'markdown': '[00:19:18](https://www.youtube.com/watch?v=73xfuxsKsEM&t=1158s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8CBO3CgHLvA',
+                       'title': 'The Hidden Process That Delays Every Mass Tort Payout',
+                       'channel': 'Jon and Marc',
+                       'author': 'Jon and Marc',
+                       'text': "I'd say though that 90% of funds are generally cleared and distributed "
+                               'within a 10-to-14-month time frame.',
+                       'tip': "I'd say though that 90% of funds are generally cleared and distributed "
+                              'within a 10-to-14-month time frame.',
+                       'timestamp': 1322,
+                       'timestamp_seconds': 1322,
+                       'timestamp_label': '[00:22:02]',
+                       'url': 'https://www.youtube.com/watch?v=8CBO3CgHLvA&t=1322s',
+                       'markdown': '[00:22:02](https://www.youtube.com/watch?v=8CBO3CgHLvA&t=1322s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8CBO3CgHLvA',
+                       'title': 'The Hidden Process That Delays Every Mass Tort Payout',
+                       'channel': 'Jon and Marc',
+                       'author': 'Jon and Marc',
+                       'text': 'Put them through that vetting, that rigorous vetting.',
+                       'tip': 'Put them through that vetting, that rigorous vetting.',
+                       'timestamp': 1447,
+                       'timestamp_seconds': 1447,
+                       'timestamp_label': '[00:24:07]',
+                       'url': 'https://www.youtube.com/watch?v=8CBO3CgHLvA&t=1447s',
+                       'markdown': '[00:24:07](https://www.youtube.com/watch?v=8CBO3CgHLvA&t=1447s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'n2icO1gMkN8',
+                       'title': 'Leading the Way in Mass Tort Litigation Management',
+                       'channel': 'Consultwebs',
+                       'author': 'Consultwebs',
+                       'text': 'Organization is the key counter to that volume.',
+                       'tip': 'Organization is the key counter to that volume.',
+                       'timestamp': 187,
+                       'timestamp_seconds': 187,
+                       'timestamp_label': '[00:03:07]',
+                       'url': 'https://www.youtube.com/watch?v=n2icO1gMkN8&t=187s',
+                       'markdown': '[00:03:07](https://www.youtube.com/watch?v=n2icO1gMkN8&t=187s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Yq68SC86WTQ',
+                       'title': 'Ep 295 - How One Mass Tort Firm Uses Supio, the AI Platform for PI '
+                                'Lawyers',
+                       'channel': 'LawNext',
+                       'author': 'LawNext',
+                       'text': 'So the truth is is you still have to be a lawyer.',
+                       'tip': 'So the truth is is you still have to be a lawyer.',
+                       'timestamp': 1156,
+                       'timestamp_seconds': 1156,
+                       'timestamp_label': '[00:19:16]',
+                       'url': 'https://www.youtube.com/watch?v=Yq68SC86WTQ&t=1156s',
+                       'markdown': '[00:19:16](https://www.youtube.com/watch?v=Yq68SC86WTQ&t=1156s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1O2RKMH06LU',
+                       'title': 'AI Lawyers and the Evolution of Mass Torts feat. Cara Wall | Law, AI & '
+                                'Money Ep. 12',
+                       'channel': 'Milestone',
+                       'author': 'Milestone',
+                       'text': "First, don't upload client documents or sensitive things, they are not "
+                               "secure, just don't do it.",
+                       'tip': "First, don't upload client documents or sensitive things, they are not "
+                              "secure, just don't do it.",
+                       'timestamp': 1580,
+                       'timestamp_seconds': 1580,
+                       'timestamp_label': '[00:26:20]',
+                       'url': 'https://www.youtube.com/watch?v=1O2RKMH06LU&t=1580s',
+                       'markdown': '[00:26:20](https://www.youtube.com/watch?v=1O2RKMH06LU&t=1580s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'}]}

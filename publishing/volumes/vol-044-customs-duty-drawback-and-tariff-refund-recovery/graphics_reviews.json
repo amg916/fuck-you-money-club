@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-three-lane-recovery-workflow",
-    "diag-02-annual-nested-cohort-funnel",
-    "diag-03-base-case-fee-profit-waterfall",
-    "diag-04-collectible-base-fee-yield",
-    "diag-05-lane-specific-preflight-decision-tree",
-    "diag-06-core-and-scaled-pod-architecture",
-    "diag-07-startup-capital-allocation",
-    "diag-08-thirty-day-launch-roadmap"
+    "diag-01-drawback-claim-launch-sequence",
+    "diag-02-protest-surge-funnel",
+    "diag-03-ieepa-refund-pipeline-walk",
+    "diag-04-drawback-claim-economics-bands",
+    "diag-05-ace-refund-readiness-gates",
+    "diag-06-customs-broker-operating-model",
+    "diag-07-bond-and-adcvd-exposure-bands",
+    "diag-08-settlement-claim-roadmap"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-three-lane-recovery-workflow",
-    "diag-02-annual-nested-cohort-funnel",
-    "diag-03-base-case-fee-profit-waterfall",
-    "diag-04-collectible-base-fee-yield",
-    "diag-05-lane-specific-preflight-decision-tree",
-    "diag-06-core-and-scaled-pod-architecture",
-    "diag-07-startup-capital-allocation",
-    "diag-08-thirty-day-launch-roadmap"
+    "diag-01-drawback-claim-launch-sequence",
+    "diag-02-protest-surge-funnel",
+    "diag-03-ieepa-refund-pipeline-walk",
+    "diag-04-drawback-claim-economics-bands",
+    "diag-05-ace-refund-readiness-gates",
+    "diag-06-customs-broker-operating-model",
+    "diag-07-bond-and-adcvd-exposure-bands",
+    "diag-08-settlement-claim-roadmap"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-three-lane-recovery-workflow": {
+    "diag-01-drawback-claim-launch-sequence": {
       "concept_a": {
-        "graphic_id": "diag-01-three-lane-recovery-workflow",
+        "graphic_id": "diag-01-drawback-claim-launch-sequence",
         "graphic_type": "diagram",
-        "label": "One Evidence Desk, Three Distinct Recovery Lanes",
+        "label": "Five Moves Before the First Drawback Claim",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-three-lane-recovery-workflow",
+        "graphic_id": "diag-01-drawback-claim-launch-sequence",
         "graphic_type": "diagram",
-        "label": "One Evidence Desk, Three Distinct Recovery Lanes",
+        "label": "Five Moves Before the First Drawback Claim",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-three-lane-recovery-workflow",
+        "graphic_id": "diag-01-drawback-claim-launch-sequence",
         "graphic_type": "diagram",
-        "label": "One Evidence Desk, Three Distinct Recovery Lanes",
+        "label": "Five Moves Before the First Drawback Claim",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-annual-nested-cohort-funnel": {
+    "diag-02-protest-surge-funnel": {
       "concept_a": {
-        "graphic_id": "diag-02-annual-nested-cohort-funnel",
+        "graphic_id": "diag-02-protest-surge-funnel",
         "graphic_type": "diagram",
-        "label": "From 240 Screened Accounts to 20 Paid Accounts",
+        "label": "Protest Surge Funnel to the 180-Day Clock",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-annual-nested-cohort-funnel",
+        "graphic_id": "diag-02-protest-surge-funnel",
         "graphic_type": "diagram",
-        "label": "From 240 Screened Accounts to 20 Paid Accounts",
+        "label": "Protest Surge Funnel to the 180-Day Clock",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-annual-nested-cohort-funnel",
+        "graphic_id": "diag-02-protest-surge-funnel",
         "graphic_type": "diagram",
-        "label": "From 240 Screened Accounts to 20 Paid Accounts",
+        "label": "Protest Surge Funnel to the 180-Day Clock",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-case-fee-profit-waterfall": {
+    "diag-03-ieepa-refund-pipeline-walk": {
       "concept_a": {
-        "graphic_id": "diag-03-base-case-fee-profit-waterfall",
+        "graphic_id": "diag-03-ieepa-refund-pipeline-walk",
         "graphic_type": "diagram",
-        "label": "$515,000 Earned Fees to $231,750 Owner Profit",
+        "label": "IEEPA Refund Pipeline Walk",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-case-fee-profit-waterfall",
+        "graphic_id": "diag-03-ieepa-refund-pipeline-walk",
         "graphic_type": "diagram",
-        "label": "$515,000 Earned Fees to $231,750 Owner Profit",
+        "label": "IEEPA Refund Pipeline Walk",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-case-fee-profit-waterfall",
+        "graphic_id": "diag-03-ieepa-refund-pipeline-walk",
         "graphic_type": "diagram",
-        "label": "$515,000 Earned Fees to $231,750 Owner Profit",
+        "label": "IEEPA Refund Pipeline Walk",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-collectible-base-fee-yield": {
+    "diag-04-drawback-claim-economics-bands": {
       "concept_a": {
-        "graphic_id": "diag-04-collectible-base-fee-yield",
+        "graphic_id": "diag-04-drawback-claim-economics-bands",
         "graphic_type": "diagram",
-        "label": "Five Fee Yields on the Same $100,000 Recovery",
+        "label": "Drawback Claim Economics in Percent",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-collectible-base-fee-yield",
+        "graphic_id": "diag-04-drawback-claim-economics-bands",
         "graphic_type": "diagram",
-        "label": "Five Fee Yields on the Same $100,000 Recovery",
+        "label": "Drawback Claim Economics in Percent",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-collectible-base-fee-yield",
+        "graphic_id": "diag-04-drawback-claim-economics-bands",
         "graphic_type": "diagram",
-        "label": "Five Fee Yields on the Same $100,000 Recovery",
+        "label": "Drawback Claim Economics in Percent",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-lane-specific-preflight-decision-tree": {
+    "diag-05-ace-refund-readiness-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-lane-specific-preflight-decision-tree",
+        "graphic_id": "diag-05-ace-refund-readiness-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Valuing a Claim",
+        "label": "ACE Refund Readiness Gates",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-lane-specific-preflight-decision-tree",
+        "graphic_id": "diag-05-ace-refund-readiness-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Valuing a Claim",
+        "label": "ACE Refund Readiness Gates",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-lane-specific-preflight-decision-tree",
+        "graphic_id": "diag-05-ace-refund-readiness-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Valuing a Claim",
+        "label": "ACE Refund Readiness Gates",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-core-and-scaled-pod-architecture": {
+    "diag-06-customs-broker-operating-model": {
       "concept_a": {
-        "graphic_id": "diag-06-core-and-scaled-pod-architecture",
+        "graphic_id": "diag-06-customs-broker-operating-model",
         "graphic_type": "diagram",
-        "label": "Four Core People; Six at Scaled Capacity",
+        "label": "The Customs Broker Operating Model",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-core-and-scaled-pod-architecture",
+        "graphic_id": "diag-06-customs-broker-operating-model",
         "graphic_type": "diagram",
-        "label": "Four Core People; Six at Scaled Capacity",
+        "label": "The Customs Broker Operating Model",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-core-and-scaled-pod-architecture",
+        "graphic_id": "diag-06-customs-broker-operating-model",
         "graphic_type": "diagram",
-        "label": "Four Core People; Six at Scaled Capacity",
+        "label": "The Customs Broker Operating Model",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-allocation": {
+    "diag-07-bond-and-adcvd-exposure-bands": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-bond-and-adcvd-exposure-bands",
         "graphic_type": "diagram",
-        "label": "Allocate $8,000–$35,000 Without Buying Claim Principal",
+        "label": "Bond and AD/CVD Exposure Bands",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-bond-and-adcvd-exposure-bands",
         "graphic_type": "diagram",
-        "label": "Allocate $8,000–$35,000 Without Buying Claim Principal",
+        "label": "Bond and AD/CVD Exposure Bands",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-bond-and-adcvd-exposure-bands",
         "graphic_type": "diagram",
-        "label": "Allocate $8,000–$35,000 Without Buying Claim Principal",
+        "label": "Bond and AD/CVD Exposure Bands",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-thirty-day-launch-roadmap": {
+    "diag-08-settlement-claim-roadmap": {
       "concept_a": {
-        "graphic_id": "diag-08-thirty-day-launch-roadmap",
+        "graphic_id": "diag-08-settlement-claim-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Controlled Recovery Desk",
+        "label": "Settlement Claim Recovery Roadmap",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-thirty-day-launch-roadmap",
+        "graphic_id": "diag-08-settlement-claim-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Controlled Recovery Desk",
+        "label": "Settlement Claim Recovery Roadmap",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-thirty-day-launch-roadmap",
+        "graphic_id": "diag-08-settlement-claim-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Controlled Recovery Desk",
+        "label": "Settlement Claim Recovery Roadmap",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:04Z"
+  "updated_at": "2026-11-25T00:44:08Z"
 }

@@ -1,2179 +1,921 @@
 from __future__ import annotations
 
-
 def build_volume_047_workbook() -> dict:
-    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
-        return {
-            "name": name,
-            "type": input_type,
-            "prompt": prompt,
-            "example": example,
-        }
-
-    return {
-        "workbook_id": "wb-047-ai-data-center-powered-land-and-bess-optioning",
-        "volume_id": "vol-047-ai-data-center-powered-land-and-bess-optioning",
-        "title": (
-            "AI Data-Center Powered Land, Substation Headroom & BESS Site "
-            "Optioning — Operator Companion Workbook"
-        ),
-        "subtitle": (
-            "6 Printable Operator Worksheets for Utility-Validated Powered Land, "
-            "Separate BESS Parcel Underwriting, Assignable Options, Reserve "
-            "Discipline, Evidence-Controlled Execution, and Small-Team Launch"
-        ),
-        "worksheets": [
-            {
-                "worksheet_id": "ws-01",
-                "number": 1,
-                "title": "Arbitrage Deal / Counterparty Underwriting & Spread Qualification",
-                "purpose": (
-                    "Separate attractive map coordinates from transferable, economically "
-                    "defensible site control. Establish counterparty authority, utility "
-                    "evidence, land-use feasibility, and buyer demand before pricing an "
-                    "option assignment. Underwrite standalone storage parcels separately "
-                    "from data-center campuses, with explicit rejection and expiration costs."
-                ),
-                "chapter_ref": "Q1, Q2, Q6",
-                "instructions": [
-                    (
-                        "Create one opportunity record per parcel, use case, and proposed "
-                        "utility service configuration. Preserve source dates and document "
-                        "identifiers; do not combine storage export rights, campus import "
-                        "requests, or neighboring ownership into a single capacity claim."
-                    ),
-                    (
-                        "Classify each power assertion by evidence strength: geographic "
-                        "screen, utility discussion, completed study, executed agreement, "
-                        "or satisfied service conditions. Record the study scope and "
-                        "limitations before assigning any MW-dependent premium to the option."
-                    ),
-                    (
-                        "Contact the owner, utility representative, and prospective buyer "
-                        "through independently verified channels. Confirm signing authority, "
-                        "commercial objectives, funding capacity, and decision deadlines; "
-                        "retain written responses rather than relying on an intermediary's "
-                        "summary of another party's commitments."
-                    ),
-                    (
-                        "Run separate physical screens for storage and computing. Test "
-                        "BESS setbacks, access, drainage, and fire response; test campus "
-                        "fiber diversity, cooling strategy, water availability, noise, and "
-                        "phasing. Record which constraint can independently terminate underwriting."
-                    ),
-                    (
-                        "Price the assignable interest after deducting expected option "
-                        "burn, documented upgrade exposure, specialist costs, and time "
-                        "risk. Set a maximum cash-at-risk amount and a dated rejection "
-                        "decision before negotiating a longer diligence period."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Parcel identity, use case, and ownership chain",
-                        "textarea",
-                        (
-                            "Identify the parcel, legal owner, controlling entity, acreage, "
-                            "proposed use, and ownership evidence. Explain whether adjacent "
-                            "land is essential and identify any missing access or easement "
-                            "interest that prevents independent development."
-                        ),
-                        (
-                            "Opportunity TX-BESS-014 covers an illustrative 12-acre storage "
-                            "parcel owned by Cedar Parcel LLC. The title commitment matches "
-                            "the proposed option grantor; a manager resolution establishes "
-                            "signing authority. A separate recorded access easement is "
-                            "required across the southern tract before any buyer receives "
-                            "an executable assignment package."
-                        ),
-                    ),
-                    field(
-                        "Utility evidence and deliverable capacity classification",
-                        "textarea",
-                        (
-                            "Record utility-authored capacity findings, service voltage, "
-                            "study date, operating assumptions, remaining conditions, and "
-                            "the responsible utility contact. Distinguish requested MW from "
-                            "documented deliverable MW and identify the evidence required "
-                            "before increasing valuation."
-                        ),
-                        (
-                            "The campus requests 40 MW at 138 kV. An illustrative completed "
-                            "utility study supports a conditional 20 MW first phase after "
-                            "specified upgrades, with service targeted for October 2029. "
-                            "Underwriting uses only that conditional 20 MW tranche; the "
-                            "remaining 20 MW receives zero capacity premium pending further study."
-                        ),
-                    ),
-                    field(
-                        "Network-upgrade exposure and restudy sensitivity",
-                        "textarea",
-                        (
-                            "List allocated network upgrades, estimate class, contingency, "
-                            "deposit deadlines, cost responsibility, and restudy triggers. "
-                            "Calculate the economic effect of an adverse revision and "
-                            "identify the contractual right that limits the operator's "
-                            "exposure before assignment."
-                        ),
-                        (
-                            "The utility's preliminary allocation is $2.4 million, funded "
-                            "by the acquiring developer rather than the originator. A "
-                            "40% restudy increase adds $960,000. The buyer's $3 million "
-                            "investment threshold would be exceeded, so the option permits "
-                            "termination before the next $7,500 extension becomes payable."
-                        ),
-                    ),
-                    field(
-                        "Standalone BESS parcel qualification",
-                        "textarea",
-                        (
-                            "Underwrite the storage parcel independently using acreage, "
-                            "import and export limits, duration, fire access, setbacks, "
-                            "drainage, noise, and emergency planning. State which technical "
-                            "findings are preliminary and which require qualified engineering "
-                            "or utility confirmation."
-                        ),
-                        (
-                            "A 12-acre parcel is screened for 20 MW / 80 MWh storage, "
-                            "representing four hours of discharge duration. Engineering "
-                            "must validate usable acreage after drainage and setbacks. "
-                            "The utility must separately establish charging import and "
-                            "discharging export capability; an export queue position does "
-                            "not establish either service entitlement."
-                        ),
-                    ),
-                    field(
-                        "AI campus fiber, cooling, and zoning qualification",
-                        "textarea",
-                        (
-                            "Document campus-specific power phasing, carrier routes, cooling "
-                            "requirements, water sources, wastewater arrangements, zoning, "
-                            "and noise limits. Identify physical dependencies that prevent "
-                            "a storage-qualified parcel from being marketed as a "
-                            "development-ready computing campus."
-                        ),
-                        (
-                            "The illustrative 80-acre campus needs a 20 MW initial phase "
-                            "and two physically diverse carrier entrances. Carrier letters "
-                            "currently show both routes using one bridge. An air-cooled "
-                            "design reduces process-water demand, but civil engineering "
-                            "must still confirm domestic supply, stormwater capacity, and "
-                            "permitted equipment-noise limits."
-                        ),
-                    ),
-                    field(
-                        "Option duration, assignability, and seller authority",
-                        "textarea",
-                        (
-                            "Summarize the proposed option term, extension mechanics, "
-                            "assignment permissions, notice procedure, title obligations, "
-                            "and signature authority. Identify utility or zoning conditions "
-                            "that permit exit without creating an obligation to purchase "
-                            "the underlying property."
-                        ),
-                        (
-                            "The proposed principal-held option runs 18 months, with a "
-                            "$7,000 initial fee and two three-month extensions at $3,500 "
-                            "each. Assignment to a qualified project entity requires "
-                            "notice rather than discretionary seller consent. Utility "
-                            "and zoning termination rights are stated expressly, with "
-                            "fees remaining nonrefundable unless otherwise negotiated."
-                        ),
-                    ),
-                    field(
-                        "Developer counterparty and purchase authority",
-                        "textarea",
-                        (
-                            "Identify the buyer's investment mandate, authorized decision "
-                            "maker, capital source, diligence sequence, and comparable "
-                            "execution history. Establish evidence of ability to fund "
-                            "assignment consideration separately from ability to finance "
-                            "the eventual construction project."
-                        ),
-                        (
-                            "The developer seeks 10–25-acre storage sites and delegates "
-                            "site-control purchases below $150,000 to an investment "
-                            "committee. Request its written mandate, authorized signatory "
-                            "list, and evidence supporting the $95,000 assignment payment. "
-                            "A construction financing discussion alone does not establish "
-                            "cash available for the option acquisition."
-                        ),
-                    ),
-                    field(
-                        "Assignment spread and buyer residual economics",
-                        "textarea",
-                        (
-                            "Calculate assignment consideration less acquisition fees, "
-                            "site diligence, closing expenses, and allocated failed-site "
-                            "burn. Show the buyer's remaining development costs separately "
-                            "and state why the proposed spread survives documented "
-                            "utility and schedule limitations."
-                        ),
-                        (
-                            "A $95,000 assignment produces $62,000 before shared overhead "
-                            "after $7,000 option acquisition, $12,000 successful-site "
-                            "diligence, $8,000 closing services, and $6,000 allocated "
-                            "expired-site fees. The buyer separately funds land purchase "
-                            "and utility upgrades; neither amount becomes operator "
-                            "revenue or inflates the assignment spread."
-                        ),
-                    ),
-                    field(
-                        "Fatal-flaw evidence and rejection thresholds",
-                        "textarea",
-                        (
-                            "List independently decisive rejection conditions, evidence "
-                            "owners, maximum investigation spend, and decision deadlines. "
-                            "Include current land-use restrictions, unresolved title "
-                            "defects, utility timing, environmental constraints, and "
-                            "counterparty behavior that invalidates the original underwriting."
-                        ),
-                        (
-                            "Reject the campus if an enacted data-center moratorium "
-                            "covers the parcel, if utility service moves beyond the "
-                            "buyer's December 2029 deadline, or if no diverse carrier "
-                            "route is commercially available. Limit pre-option screening "
-                            "to $1,200 and preserve the dated ordinance, utility "
-                            "response, and carrier route evidence."
-                        ),
-                    ),
-                    field(
-                        "Investment decision and permitted marketing language",
-                        "textarea",
-                        (
-                            "Record the decision, permitted claims, unresolved conditions, "
-                            "cash-at-risk ceiling, and next evidence milestone. Specify "
-                            "exactly how the buyer package describes capacity so "
-                            "commercial enthusiasm cannot convert conditional findings "
-                            "into unconditional service representations."
-                        ),
-                        (
-                            "Proceed only to a $7,000 contingent option after title "
-                            "and authority checks. Buyer materials state: Utility study "
-                            "supports a conditional 20 MW phase, subject to listed "
-                            "upgrades and service conditions. Materials exclude the "
-                            "unstudied expansion request and show October 2029 as "
-                            "a conditional target rather than an assured energization date."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The principal signs only after parcel identity, seller authority, "
-                    "separate use-case screening, utility evidence classification, "
-                    "buyer qualification, maximum fee burn, and assignment economics "
-                    "are documented. Any unresolved fatal flaw keeps the opportunity "
-                    "in screening rather than funded site control."
-                ),
-            },
-            {
-                "worksheet_id": "ws-02",
-                "number": 2,
-                "title": "Unit Economics, Escrow/Reserve Float & Working-Capital Calculator",
-                "purpose": (
-                    "Reconcile opportunity-level spreads with the canonical annual "
-                    "scorecard while protecting cash during long utility diligence "
-                    "cycles. Separate recognized operator fees, restricted deposits, "
-                    "land consideration, and construction capital. Budget failed "
-                    "options explicitly and expose funding gaps before commitments "
-                    "consume available reserves."
-                ),
-                "chapter_ref": "Q3, Q4",
-                "instructions": [
-                    (
-                        "Copy all three canonical scenarios without changing revenue, "
-                        "margin, owner profit, or team size. Build any transaction mix "
-                        "as a transparent illustrative bridge to those totals, not as "
-                        "a replacement forecast disguised as the published scorecard."
-                    ),
-                    (
-                        "Define the operator's promised service or transferred interest "
-                        "for every fee. Separate payment timing from recognition timing "
-                        "and identify pass-through amounts. Recognize development carry "
-                        "only when the applicable accounting conditions support the "
-                        "reported realized amount."
-                    ),
-                    (
-                        "Prepare a dated cash schedule covering deposits, option "
-                        "extensions, recurring expenses, diligence invoices, and expected "
-                        "closings. Treat escrow and refundable security as unavailable "
-                        "operating cash until released; do not count forecast assignments "
-                        "as current liquidity."
-                    ),
-                    (
-                        "Allocate unsuccessful-site fees to an explicit annual loss "
-                        "budget and retain successful-site costs in their own category. "
-                        "Use mutually exclusive classifications so option acquisition, "
-                        "specialist invoices, and closing charges are never deducted "
-                        "twice in contribution calculations."
-                    ),
-                    (
-                        "Stress the plan for six months without receipts, a delayed "
-                        "milestone, and a failed utility study. Identify the exact "
-                        "funding shortfall and a documented response before increasing "
-                        "burn; an uncommitted investor conversation does not close "
-                        "a cash deficit."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Canonical Conservative scenario reconciliation",
-                        "textarea",
-                        (
-                            "Enter the Conservative revenue, margin, annual owner profit, "
-                            "implied total costs, and staffing. Show the arithmetic and "
-                            "distinguish annual recognized fee revenue from underlying "
-                            "property values, requested power capacity, and project "
-                            "construction budgets."
-                        ),
-                        (
-                            "Conservative revenue is $110,000 with a 30% margin and "
-                            "$33,000 annual owner net profit. Implied annual costs are "
-                            "$77,000 because $110,000 minus $33,000 equals $77,000. "
-                            "Staffing remains 1 FT + 3 C. Land purchase consideration "
-                            "and developer-funded construction spending are excluded "
-                            "from these operator totals."
-                        ),
-                    ),
-                    field(
-                        "Canonical Base scenario revenue bridge",
-                        "textarea",
-                        (
-                            "Reconcile the Base scenario to a clearly labeled "
-                            "illustrative transaction mix. Identify assignment fees, "
-                            "separately earned origination milestones, and realized carry "
-                            "without counting the same contractual payment in more "
-                            "than one revenue category."
-                        ),
-                        (
-                            "Base revenue equals three $95,000 assignments, four "
-                            "separate $40,000 origination milestones, and $60,000 "
-                            "realized development carry: $285,000 + $160,000 + "
-                            "$60,000 = $505,000. Each milestone concerns a distinct "
-                            "earned obligation and is not embedded in an assignment "
-                            "price. A 42.0% margin produces $212,100 owner profit "
-                            "with 1 FT + 3 C."
-                        ),
-                    ),
-                    field(
-                        "Canonical Scaled Small-Team scenario reconciliation",
-                        "textarea",
-                        (
-                            "Record the Scaled revenue, margin, annual owner profit, "
-                            "implied costs, and six-person team. Explain which operational "
-                            "improvements would support the scenario without treating "
-                            "larger project capital requirements as additional "
-                            "operator revenue or unrestricted liquidity."
-                        ),
-                        (
-                            "Scaled Small-Team revenue is $900,000 at a 54% margin, "
-                            "producing $486,000 annual owner net profit and $414,000 "
-                            "implied costs. Staffing is 2 FT + 4 C, six people "
-                            "total. Reusable diligence packages and stronger buyer "
-                            "coverage support throughput; utility deposits and "
-                            "construction capital remain outside operator revenue."
-                        ),
-                    ),
-                    field(
-                        "Base annual cost ledger and classification boundaries",
-                        "textarea",
-                        (
-                            "Allocate Base costs into mutually exclusive categories "
-                            "that reconcile exactly to the canonical profit. State "
-                            "which expenses include recurring operations, successful "
-                            "site control, failed options, external closing support, "
-                            "and separately contracted project specialists."
-                        ),
-                        (
-                            "Base costs total $292,900: recurring operations $100,800, "
-                            "successful option acquisition and diligence $72,000, "
-                            "expired option fees $36,000, external closing services "
-                            "$42,000, and project specialists $42,100. Recurring "
-                            "operations average $8,400 monthly. Specialist invoices "
-                            "exclude work already charged to successful diligence "
-                            "or closing, preserving $505,000 minus $292,900 "
-                            "= $212,100."
-                        ),
-                    ),
-                    field(
-                        "Startup capital allocation and usable liquidity",
-                        "textarea",
-                        (
-                            "Allocate startup cash among option fees, diligence, "
-                            "refundable escrow, setup expenses, and unrestricted reserve. "
-                            "Distinguish initial cash deployment from annual expense "
-                            "recognition and identify which startup items already "
-                            "belong inside the annual operating model."
-                        ),
-                        (
-                            "A $40,000 startup pool allocates $14,000 to option "
-                            "fees, $10,000 to diligence, $6,000 to refundable escrow, "
-                            "$2,000 to setup, and $8,000 to unrestricted reserve. "
-                            "The allocation totals $40,000. Paid expenses enter "
-                            "their corresponding annual cost categories once; "
-                            "refundable escrow remains an asset until released "
-                            "or validly forfeited."
-                        ),
-                    ),
-                    field(
-                        "Escrow controls and release evidence",
-                        "textarea",
-                        (
-                            "Identify the holder, account reference, beneficial owner, "
-                            "release conditions, reconciliation frequency, and permitted "
-                            "uses of each deposit. Explain how the operating cash "
-                            "report excludes restricted funds even when the "
-                            "operator expects eventual reimbursement."
-                        ),
-                        (
-                            "The $6,000 refundable diligence deposit is held by "
-                            "the named title company's escrow department under "
-                            "written instructions. Release requires the specified "
-                            "termination notice or closing documents. The controller "
-                            "reconciles the escrow statement monthly, records the "
-                            "balance separately, and never uses it to cover "
-                            "the $8,400 recurring monthly operating budget."
-                        ),
-                    ),
-                    field(
-                        "Failed-option burn and surviving-deal contribution",
-                        "textarea",
-                        (
-                            "Budget nonrefundable fees lost on utility or zoning "
-                            "failures independently from successful site costs. Show "
-                            "how unsuccessful opportunities affect portfolio contribution "
-                            "and establish a spending threshold that stops "
-                            "repeated extensions on deteriorating projects."
-                        ),
-                        (
-                            "The Base plan reserves $36,000 for expired options, "
-                            "illustratively six failures at $6,000 each. One "
-                            "$95,000 assignment carries a $6,000 analytical loss "
-                            "allocation in its spread worksheet, but the annual "
-                            "ledger books the actual $36,000 only once. No "
-                            "extension proceeds after a documented fatal utility "
-                            "or zoning result."
-                        ),
-                    ),
-                    field(
-                        "Six-month no-receipts runway and funding deficit",
-                        "textarea",
-                        (
-                            "Calculate unrestricted cash needed to sustain the "
-                            "selected burn rate without closings while preserving "
-                            "a minimum reserve. Exclude escrow and forecast fees, "
-                            "then state whether the startup allocation actually "
-                            "finances the proposed operating pace."
-                        ),
-                        (
-                            "After initial deployment, unrestricted cash is $8,000. "
-                            "Six months at the Base $8,400 monthly burn requires "
-                            "$50,400; preserving an $8,000 floor requires $58,400 "
-                            "available cash. The deficit is therefore $50,400. "
-                            "The $40,000 startup plan cannot support that pace "
-                            "without additional committed funding, lower spending, "
-                            "or actual collected receipts."
-                        ),
-                    ),
-                    field(
-                        "Revenue recognition, retained economics, and pass-throughs",
-                        "textarea",
-                        (
-                            "Define gross operator fee revenue and any net "
-                            "presentation required by the actual principal-agent "
-                            "assessment under ASC 606. Identify earned versus "
-                            "contingent amounts and exclude land price, utility "
-                            "deposits, and reimbursable project capital from "
-                            "unsupported revenue claims."
-                        ),
-                        (
-                            "The illustrative $95,000 assignment fee is operator "
-                            "consideration; the developer's $1.8 million land "
-                            "purchase is separate. No retained_share assumption "
-                            "is supplied for this volume, so none is invented. "
-                            "Accounting reviews the transaction's substance and "
-                            "applicable guidance; a projected $60,000 carry remains "
-                            "outside recognized totals until realization and "
-                            "recognition conditions are satisfied."
-                        ),
-                    ),
-                    field(
-                        "Milestone sensitivity and cash commitment decision",
-                        "textarea",
-                        (
-                            "Model a missed milestone and an adverse utility "
-                            "outcome separately from the canonical scorecard. State "
-                            "the resulting revenue and profit change under "
-                            "explicit cost assumptions, then identify which cash "
-                            "commitments should stop before reserves are breached."
-                        ),
-                        (
-                            "If one $40,000 milestone is never earned and Base "
-                            "costs remain $292,900, the sensitivity produces "
-                            "$465,000 revenue and $172,100 profit. This is a "
-                            "downside case, not the canonical Base result. "
-                            "Pause additional options and extension payments "
-                            "when the rolling cash forecast falls below "
-                            "the funded $8,000 minimum reserve."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "All three canonical scenarios reconcile exactly; Base expense "
-                    "categories total $292,900 without duplication. Escrow, purchase "
-                    "price, and project capital are excluded from usable operating "
-                    "cash. Any six-month funding deficit has a documented spending "
-                    "reduction or committed funding response before further obligations."
-                ),
-            },
-            {
-                "worksheet_id": "ws-03",
-                "number": 3,
-                "title": "End-to-End Execution, Idempotent Ledger & QA Pre-Flight Sheet",
-                "purpose": (
-                    "Convert site origination into a reproducible evidence and "
-                    "transaction process. Preserve document lineage, prevent duplicate "
-                    "payments, reconcile signed obligations, and test buyer packages "
-                    "before release. Keep parcel rights, utility conditions, revenue "
-                    "events, and cash movements traceable through assignment "
-                    "and post-closing obligations."
-                ),
-                "chapter_ref": "Q7, Q8",
-                "instructions": [
-                    (
-                        "Define the lifecycle from raw lead through rejected, "
-                        "optioned, studied, marketed, assigned, and archived states. "
-                        "Attach entry requirements and an accountable owner to "
-                        "each transition; never let a marketing label silently "
-                        "upgrade the underlying utility evidence."
-                    ),
-                    (
-                        "Assign stable identifiers to opportunities, parcels, "
-                        "contracts, invoices, and payment events. Store the "
-                        "original source separately from normalized records. "
-                        "Use deterministic duplicate detection so repeated "
-                        "imports update evidence rather than create extra "
-                        "revenue, fees, or obligations."
-                    ),
-                    (
-                        "Build an execution checklist covering title, access, "
-                        "environmental screening, utility correspondence, zoning, "
-                        "option notices, and assignment conditions. Sequence "
-                        "nonrefundable payments after the relevant evidence "
-                        "review whenever the negotiated contract permits "
-                        "that ordering without forfeiting rights."
-                    ),
-                    (
-                        "Reconcile the cash ledger to bank and escrow "
-                        "statements before releasing a buyer package or "
-                        "making a payment. Distinguish authorized commitments, "
-                        "paid expenses, refundable deposits, earned receivables, "
-                        "and contingent fees in separate ledger "
-                        "states and reports."
-                    ),
-                    (
-                        "Perform a second-person pre-flight check on the "
-                        "commercial package and closing instructions. Resolve "
-                        "capacity wording, document dates, signature authority, "
-                        "wire verification, and incomplete obligations before "
-                        "release; record the reviewer, evidence version, "
-                        "and disposition of every exception."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Lifecycle states and evidence-based transitions",
-                        "textarea",
-                        (
-                            "Define the opportunity states, required transition "
-                            "evidence, responsible role, and allowed reversals. "
-                            "Explain how a negative study, expired option, "
-                            "or changed ordinance moves the project out "
-                            "of an active marketing or execution state."
-                        ),
-                        (
-                            "TX-BESS-014 moves from screened to optioned only "
-                            "after countersignature and verified payment. It "
-                            "moves to utility-reviewed after the dated study "
-                            "is indexed, not after a queue submission. "
-                            "A failed export assessment returns the record "
-                            "to rejected, freezes extension reminders, and "
-                            "withdraws the corresponding buyer package "
-                            "from active distribution."
-                        ),
-                    ),
-                    field(
-                        "Stable identifiers and duplicate prevention key",
-                        "textarea",
-                        (
-                            "Specify persistent keys for parcels, option "
-                            "agreements, invoices, and cash events. Define "
-                            "how amended documents relate to originals "
-                            "and how the system distinguishes a repeated "
-                            "delivery from a genuinely new "
-                            "contractual obligation."
-                        ),
-                        (
-                            "Use opportunity TX-BESS-014, contract OPT-014-v1, "
-                            "and event OPT-014-INITIAL-FEE as distinct identifiers. "
-                            "The $7,000 initial fee has one economic-event "
-                            "key regardless of repeated invoice uploads. "
-                            "Amendment OPT-014-v2 references v1 and creates "
-                            "a new extension obligation only when its "
-                            "signed terms actually authorize an "
-                            "additional payment."
-                        ),
-                    ),
-                    field(
-                        "Source provenance and document integrity manifest",
-                        "textarea",
-                        (
-                            "Record document origin, retrieval date, issuer, "
-                            "effective date, revision, integrity hash, and "
-                            "scope limitations. Explain which source controls "
-                            "when a sales presentation conflicts with "
-                            "a utility study, executed agreement, "
-                            "or official land record."
-                        ),
-                        (
-                            "The manifest links the utility-issued PDF, "
-                            "its SHA-256 digest, study revision 3, and "
-                            "the project identifier to the 20 MW "
-                            "conditional campus tranche. A broker's slide "
-                            "claiming 40 MW is retained as correspondence "
-                            "but cannot overwrite the utility finding. "
-                            "The discrepancy receives a named reviewer "
-                            "and a corrected package revision."
-                        ),
-                    ),
-                    field(
-                        "Critical-path sequence and payment dependencies",
-                        "textarea",
-                        (
-                            "List the next execution tasks, dependencies, "
-                            "deadlines, and payment consequences. Distinguish "
-                            "commercial target dates from contractual notice "
-                            "deadlines and utility-controlled schedules, especially "
-                            "where a missed date causes "
-                            "irreversible option-fee burn."
-                        ),
-                        (
-                            "Complete title review by day 7, obtain "
-                            "the zoning response by day 12, and "
-                            "submit the utility information request by "
-                            "day 15. The option notice deadline is "
-                            "day 45 under the illustrative agreement. "
-                            "Send termination by the prescribed method "
-                            "before that deadline if evidence cannot "
-                            "support the next $3,500 extension."
-                        ),
-                    ),
-                    field(
-                        "Idempotent payment state and retry handling",
-                        "textarea",
-                        (
-                            "Define payment authorization, submission, confirmation, "
-                            "failure, and reconciliation states. Specify how "
-                            "a timeout is investigated before retrying "
-                            "and how the ledger prevents duplicate "
-                            "wire instructions from creating "
-                            "duplicate cash disbursements."
-                        ),
-                        (
-                            "Payment OPT-014-INITIAL-FEE enters submitted "
-                            "after the $7,000 wire request is "
-                            "acknowledged. A portal timeout leaves the "
-                            "event awaiting confirmation rather than failed. "
-                            "The coordinator checks the bank reference "
-                            "and title-company receipt before any retry. "
-                            "A database uniqueness constraint blocks "
-                            "a second posted disbursement for "
-                            "the same economic-event key."
-                        ),
-                    ),
-                    field(
-                        "Cash, escrow, receivable, and commitment reconciliation",
-                        "textarea",
-                        (
-                            "Reconcile each financial event to external "
-                            "evidence and classify its accounting and "
-                            "cash status separately. Explain how unpaid "
-                            "milestones, restricted escrow, future extensions, "
-                            "and collected assignment fees appear "
-                            "without inflating available funds."
-                        ),
-                        (
-                            "The ledger shows $6,000 restricted escrow "
-                            "supported by the holder's statement, a "
-                            "$3,500 future extension commitment, and "
-                            "a $40,000 milestone receivable only after "
-                            "its earning condition is documented. "
-                            "Available cash includes neither escrow "
-                            "nor the unpaid receivable. The bank "
-                            "deposit and settlement statement support "
-                            "the collected $95,000 assignment."
-                        ),
-                    ),
-                    field(
-                        "Buyer package technical and commercial pre-flight",
-                        "textarea",
-                        (
-                            "List the required package components and "
-                            "test every headline against its supporting "
-                            "document. Include capacity limitations, estimated "
-                            "upgrade costs, energization assumptions, option "
-                            "expiry, assignability, parcel access, and "
-                            "unresolved physical or "
-                            "land-use constraints."
-                        ),
-                        (
-                            "Package revision 5 contains the option "
-                            "abstract, title exceptions, 20 MW "
-                            "conditional utility study, $2.4 million "
-                            "preliminary upgrade allocation, and October "
-                            "2029 target. The reviewer removes "
-                            "an unsupported 40 MW headline and "
-                            "adds the shared-bridge fiber constraint. "
-                            "The package index identifies every "
-                            "remaining condition beside its "
-                            "source document."
-                        ),
-                    ),
-                    field(
-                        "Closing funds verification and assignment delivery",
-                        "textarea",
-                        (
-                            "Document closing prerequisites, independently "
-                            "verified payment instructions, executed assignment "
-                            "delivery, seller notices, and post-closing "
-                            "recording responsibilities. State how changed "
-                            "wire details or an incomplete "
-                            "signature package stop "
-                            "funds release."
-                        ),
-                        (
-                            "Before the $95,000 assignment closes, "
-                            "the coordinator confirms title-company "
-                            "wire details using a previously "
-                            "verified telephone number. Closing "
-                            "requires the signed assignment, required "
-                            "seller notice, buyer acceptance of "
-                            "remaining utility conditions, and the "
-                            "settlement statement. An emailed bank "
-                            "change stops payment until independent "
-                            "verification and documented authorization "
-                            "are complete."
-                        ),
-                    ),
-                    field(
-                        "Exception repair and immutable correction trail",
-                        "textarea",
-                        (
-                            "Describe how errors are detected, "
-                            "assigned, corrected, and communicated. Preserve "
-                            "original entries and document why "
-                            "the correction occurred, including whether "
-                            "previous recipients need replacement "
-                            "materials or financial "
-                            "records require reversal."
-                        ),
-                        (
-                            "A duplicated $3,500 extension invoice "
-                            "is flagged by contract and "
-                            "milestone matching. The duplicate "
-                            "record is marked void with "
-                            "a reason and reviewer identity; "
-                            "the original remains intact. If "
-                            "a buyer received an outdated "
-                            "utility summary, send the corrected "
-                            "revision directly and record "
-                            "receipt rather than silently "
-                            "replacing the stored file."
-                        ),
-                    ),
-                    field(
-                        "Post-closing obligations and operational acceptance",
-                        "textarea",
-                        (
-                            "Identify obligations surviving assignment, "
-                            "their owners, due dates, evidence "
-                            "requirements, and financial consequences. "
-                            "Separate completed transfers from "
-                            "ongoing milestone services, contingent "
-                            "carry interests, and unresolved "
-                            "escrow or "
-                            "recording matters."
-                        ),
-                        (
-                            "After assignment, the operator "
-                            "must deliver the final utility "
-                            "correspondence archive within five "
-                            "business days and confirm seller "
-                            "notice delivery. A separately "
-                            "contracted $40,000 milestone remains "
-                            "contingent on its specified "
-                            "deliverable. The closing checklist "
-                            "does not mark that payment "
-                            "earned merely because the "
-                            "$95,000 assignment proceeds "
-                            "have arrived."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "A reviewer other than the preparer verifies the current "
-                    "package, unique financial-event keys, reconciled bank and "
-                    "escrow balances, authorized signatures, independently checked "
-                    "wire instructions, and surviving obligations. No unresolved "
-                    "capacity misstatement or duplicate payment event remains "
-                    "in the release package."
-                ),
-            },
-            {
-                "worksheet_id": "ws-04",
-                "number": 4,
-                "title": "Statutory, Licensing, Contract Addendum & Compliance Audit",
-                "purpose": (
-                    "Translate jurisdiction-specific requirements into evidence, "
-                    "contract terms, and operating responsibilities. Distinguish "
-                    "principal trading from brokerage, load service from "
-                    "generation interconnection, and screening from permitting. "
-                    "Identify objective legal triggers without implying that "
-                    "site control alone establishes utility service "
-                    "or development permission."
-                ),
-                "chapter_ref": "Q5, Q9",
-                "instructions": [
-                    (
-                        "Identify the state, county, municipality, "
-                        "utility territory, and applicable market "
-                        "before selecting requirements. Retrieve current "
-                        "primary authorities and adopted local "
-                        "codes; record effective dates rather "
-                        "than assuming a neighboring jurisdiction "
-                        "uses the same rules "
-                        "or exemptions."
-                    ),
-                    (
-                        "Have transaction counsel classify the "
-                        "actual conduct and compensation structure "
-                        "under state real-estate licensing law. "
-                        "Document the operator's genuine option "
-                        "interest or engage a properly "
-                        "licensed broker where required; "
-                        "contract labels alone do "
-                        "not establish "
-                        "an exemption."
-                    ),
-                    (
-                        "Separate federal transmission and "
-                        "interconnection requirements from utility "
-                        "retail-load procedures and state "
-                        "siting rules. Identify the governing "
-                        "tariff and service agreement "
-                        "for each project; a "
-                        "storage market participation rule "
-                        "does not allocate physical "
-                        "substation "
-                        "headroom."
-                    ),
-                    (
-                        "Translate diligence findings into "
-                        "specific option and assignment "
-                        "clauses covering access, testing, "
-                        "notice, extensions, assignment, title "
-                        "cure, utility uncertainty, and "
-                        "termination. Negotiate obligations "
-                        "against actual evidence and "
-                        "deadlines instead of relying "
-                        "on broad commercial "
-                        "assurances."
-                    ),
-                    (
-                        "Maintain a requirement register "
-                        "with citation, applicability rationale, "
-                        "responsible specialist, evidence, and "
-                        "next action. Recheck municipal "
-                        "moratoriums, code amendments, and "
-                        "utility tariff changes before "
-                        "extensions or buyer-package release; "
-                        "retain the dated source "
-                        "supporting each "
-                        "decision."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Principal interest and brokerage licensing analysis",
-                        "textarea",
-                        (
-                            "Describe what the operator "
-                            "owns, whose interests they "
-                            "represent, and how compensation "
-                            "is earned. Identify state "
-                            "licensing provisions and the "
-                            "facts counsel must resolve "
-                            "before owner solicitation, "
-                            "marketing, or "
-                            "assignment."
-                        ),
-                        (
-                            "For an illustrative Texas "
-                            "transaction, counsel reviews Tex. "
-                            "Occ. Code §§ 1101.002, "
-                            "1101.0045, and 1101.351. "
-                            "The operator holds an "
-                            "executed option and discloses "
-                            "the nature of that "
-                            "interest. If actual activities "
-                            "constitute brokerage outside "
-                            "applicable exceptions, a "
-                            "licensed broker performs "
-                            "that work under a "
-                            "written engagement."
-                        ),
-                    ),
-                    field(
-                        "Utility jurisdiction, tariffs, and interconnection pathway",
-                        "textarea",
-                        (
-                            "Identify whether the project "
-                            "needs retail load service, "
-                            "generation interconnection, storage import "
-                            "and export arrangements, or "
-                            "multiple pathways. Cite relevant "
-                            "jurisdictional authority while "
-                            "recording the actual "
-                            "utility tariff "
-                            "and process."
-                        ),
-                        (
-                            "The federal jurisdiction review "
-                            "starts with 16 U.S.C. "
-                            "§ 824(b)(1), with tariff "
-                            "issues assessed under §§ "
-                            "824d and 824e where "
-                            "applicable. FERC Order No. "
-                            "2023 concerns generator "
-                            "interconnection reforms, not "
-                            "automatic campus load "
-                            "entitlement. The utility "
-                            "must identify the "
-                            "specific service pathway "
-                            "and governing agreements."
-                        ),
-                    ),
-                    field(
-                        "Storage market rules versus physical service rights",
-                        "textarea",
-                        (
-                            "Identify applicable storage "
-                            "participation rules, market "
-                            "operator procedures, and "
-                            "utility service requirements. "
-                            "Explain which approvals "
-                            "address market access "
-                            "and which establish "
-                            "physical charging, export, "
-                            "protection, or "
-                            "operating conditions."
-                        ),
-                        (
-                            "FERC Order No. 841 "
-                            "and 18 CFR "
-                            "§ 35.28(g)(9) address "
-                            "electric storage participation "
-                            "in covered organized "
-                            "wholesale markets. They "
-                            "do not grant a "
-                            "12-acre parcel 20 MW "
-                            "of charging or "
-                            "export capacity. The "
-                            "project still requires "
-                            "the applicable utility "
-                            "studies, agreements, "
-                            "protection settings, and "
-                            "operating restrictions."
-                        ),
-                    ),
-                    field(
-                        "Zoning authority, moratorium, and land-use evidence",
-                        "textarea",
-                        (
-                            "Record the current "
-                            "zoning designation, permitted "
-                            "use classification, special "
-                            "approvals, moratorium status, "
-                            "and hearing requirements. "
-                            "Identify the governing "
-                            "local text and "
-                            "distinguish staff interpretation "
-                            "from an enacted "
-                            "ordinance or "
-                            "issued permit."
-                        ),
-                        (
-                            "For a Texas municipal "
-                            "site, Tex. Loc. "
-                            "Gov't Code § 211.003 "
-                            "provides relevant zoning "
-                            "authority, while the "
-                            "adopted ordinance determines "
-                            "parcel-specific use rules. "
-                            "Record the current "
-                            "district, storage classification, "
-                            "setbacks, and hearing "
-                            "schedule. A staff "
-                            "email cannot override "
-                            "an enacted BESS "
-                            "moratorium covering "
-                            "the property."
-                        ),
-                    ),
-                    field(
-                        "Wetlands, floodplain, and environmental review triggers",
-                        "textarea",
-                        (
-                            "Identify environmental screening "
-                            "sources, fieldwork needs, "
-                            "permit triggers, and "
-                            "federal involvement. Separate "
-                            "mapped indicators from "
-                            "jurisdictional determinations and "
-                            "explain which findings "
-                            "require redesign, agency "
-                            "consultation, additional "
-                            "studies, or "
-                            "termination."
-                        ),
-                        (
-                            "A National Wetlands "
-                            "Inventory overlay triggers "
-                            "field review rather "
-                            "than a definitive "
-                            "jurisdiction finding. Proposed "
-                            "discharges into covered "
-                            "waters may require "
-                            "authorization under Clean "
-                            "Water Act § 404, "
-                            "33 U.S.C. § 1344, "
-                            "and 33 CFR "
-                            "Parts 323 and "
-                            "328. FEMA mapping "
-                            "informs separate local "
-                            "floodplain and "
-                            "drainage review."
-                        ),
-                    ),
-                    field(
-                        "Species, cultural resources, and federal nexus",
-                        "textarea",
-                        (
-                            "Record potential protected "
-                            "species, cultural-resource concerns, "
-                            "federal permits, and "
-                            "funding connections. Identify "
-                            "the distinct statutory "
-                            "triggers and responsible "
-                            "specialists without assuming "
-                            "every private option "
-                            "requires the same "
-                            "federal review "
-                            "process."
-                        ),
-                        (
-                            "A potential federal "
-                            "wetlands permit prompts "
-                            "review of Endangered "
-                            "Species Act consultation "
-                            "under 16 U.S.C. "
-                            "§ 1536 and "
-                            "historic-preservation review "
-                            "under 54 U.S.C. "
-                            "§ 306108 where "
-                            "applicable. Separately assess "
-                            "prohibited take under "
-                            "16 U.S.C. § 1538. "
-                            "Specialists define survey "
-                            "scope before the "
-                            "next nonrefundable "
-                            "option extension."
-                        ),
-                    ),
-                    field(
-                        "BESS fire code, emergency access, and adopted standards",
-                        "textarea",
-                        (
-                            "Identify the locally "
-                            "adopted fire-code edition, "
-                            "storage provisions, applicable "
-                            "standards, emergency-access requirements, "
-                            "and reviewing authority. "
-                            "Distinguish enforceable adopted "
-                            "requirements from engineering "
-                            "references and manufacturer "
-                            "test documentation "
-                            "used during "
-                            "design review."
-                        ),
-                        (
-                            "The fire official "
-                            "confirms the jurisdiction's "
-                            "adopted International Fire "
-                            "Code edition and "
-                            "applicable energy-storage provisions, "
-                            "including Section 1207 "
-                            "where adopted. Engineering "
-                            "checks NFPA 855 "
-                            "applicability and UL "
-                            "9540A test documentation. "
-                            "The 12-acre layout "
-                            "reserves verified emergency "
-                            "access and separation "
-                            "distances before "
-                            "usable acreage "
-                            "is marketed."
-                        ),
-                    ),
-                    field(
-                        "Title, mineral rights, access, and recorded notice",
-                        "textarea",
-                        (
-                            "Document title exceptions, "
-                            "surface-use conflicts, mineral "
-                            "rights, legal access, "
-                            "easements, and recording "
-                            "strategy. Identify which "
-                            "rights must be "
-                            "cured or subordinated "
-                            "and whether recording "
-                            "a memorandum is "
-                            "permitted and "
-                            "commercially appropriate."
-                        ),
-                        (
-                            "The title commitment "
-                            "reveals a mineral "
-                            "reservation and a "
-                            "pipeline easement crossing "
-                            "the proposed battery "
-                            "pad. Counsel evaluates "
-                            "surface protections and "
-                            "a revised layout. "
-                            "The option expressly "
-                            "addresses any permitted "
-                            "memorandum recording and "
-                            "release on termination. "
-                            "An equitable option "
-                            "interest does not "
-                            "erase prior liens "
-                            "or access "
-                            "defects."
-                        ),
-                    ),
-                    field(
-                        "Utility contingency and assignment contract addendum",
-                        "textarea",
-                        (
-                            "Draft the commercial "
-                            "instructions for clauses "
-                            "covering evidence standards, "
-                            "utility timing, cost "
-                            "ceilings, assignment, notices, "
-                            "and termination. State "
-                            "which amounts remain "
-                            "nonrefundable and who "
-                            "bears deposits or "
-                            "upgrade obligations "
-                            "after transfer."
-                        ),
-                        (
-                            "Proposed business terms "
-                            "permit termination before "
-                            "the next extension "
-                            "if the utility "
-                            "cannot support the "
-                            "specified 20 MW "
-                            "phase by the "
-                            "buyer's deadline or "
-                            "allocated upgrades exceed "
-                            "$3 million. The "
-                            "$7,000 initial fee "
-                            "remains nonrefundable. "
-                            "Assignment transfers only "
-                            "the rights actually "
-                            "held; utility agreement "
-                            "transfer requirements "
-                            "remain separately "
-                            "applicable."
-                        ),
-                    ),
-                    field(
-                        "Requirement register and dated audit sign-off",
-                        "textarea",
-                        (
-                            "List each applicable "
-                            "requirement with its "
-                            "citation, source date, "
-                            "reviewer, evidence, unresolved "
-                            "action, and next "
-                            "review event. Define "
-                            "which changes require "
-                            "updated underwriting or "
-                            "withdrawal of "
-                            "previous buyer "
-                            "materials."
-                        ),
-                        (
-                            "The register assigns "
-                            "licensing analysis to "
-                            "transaction counsel, utility "
-                            "tariff review to "
-                            "the power consultant, "
-                            "and fire-code confirmation "
-                            "to the engineer. "
-                            "Recheck all three "
-                            "before the $3,500 "
-                            "extension. A new "
-                            "municipal storage restriction "
-                            "immediately pauses marketing "
-                            "and triggers a "
-                            "documented option "
-                            "termination or "
-                            "redesign decision."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "Qualified reviewers resolve jurisdiction, licensing treatment, "
-                    "actual utility pathway, current land-use restrictions, environmental "
-                    "triggers, adopted fire requirements, and title exceptions. The "
-                    "signed option reflects negotiated assignment and termination "
-                    "rights, and every capacity statement preserves the utility's "
-                    "documented conditions."
-                ),
-            },
-            {
-                "worksheet_id": "ws-05",
-                "number": 5,
-                "title": "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker",
-                "purpose": (
-                    "Automate repeatable screening and evidence handling without "
-                    "automating unsupported power claims or irreversible commitments. "
-                    "Connect parcel discovery, utility research, developer demand, "
-                    "and disciplined follow-up. Track stale sources, concentration, "
-                    "failed-site learning, and manual fallbacks so software "
-                    "increases throughput without increasing option-fee losses."
-                ),
-                "chapter_ref": "Q6, Q10",
-                "instructions": [
-                    (
-                        "Define authoritative sources and "
-                        "permitted retrieval methods before "
-                        "building ingestion. Record update "
-                        "cadence, geographic coverage, and "
-                        "field definitions. Treat public "
-                        "queue entries and hosting-capacity "
-                        "maps as screening inputs "
-                        "rather than contracts for "
-                        "deliverable "
-                        "power."
-                    ),
-                    (
-                        "Separate automated ranking from "
-                        "human investment decisions. Let "
-                        "software flag distance, acreage, "
-                        "flood exposure, deadlines, and "
-                        "document gaps; require named "
-                        "reviewers to interpret utility "
-                        "conditions, approve cash commitments, "
-                        "and authorize outward-facing "
-                        "commercial "
-                        "claims."
-                    ),
-                    (
-                        "Build a source-to-decision trail "
-                        "for every scored feature "
-                        "and derived conclusion. Store "
-                        "retrieval timestamps and data "
-                        "versions so a changed "
-                        "utility map, parcel boundary, "
-                        "or municipal ordinance can "
-                        "invalidate affected opportunity "
-                        "records "
-                        "automatically."
-                    ),
-                    (
-                        "Design acquisition around specific "
-                        "developer mandates and owner "
-                        "situations rather than undifferentiated "
-                        "lead volume. Feed rejection "
-                        "reasons back into screening "
-                        "weights while maintaining separate "
-                        "cohorts for BESS parcels "
-                        "and AI campus "
-                        "development "
-                        "requirements."
-                    ),
-                    (
-                        "Test failure handling before "
-                        "expanding automation. Simulate missing "
-                        "feeds, duplicate imports, stale "
-                        "study summaries, changed payment "
-                        "instructions, and overdue options. "
-                        "Assign a manual fallback "
-                        "and recovery deadline to "
-                        "each event that "
-                        "could consume "
-                        "cash."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Source inventory and ingestion schedule",
-                        "textarea",
-                        (
-                            "List parcel, transmission, "
-                            "queue, hosting-capacity, flood, "
-                            "wetland, zoning, and "
-                            "fiber sources. Define "
-                            "retrieval permission, update "
-                            "cadence, coverage limitations, "
-                            "and the source "
-                            "owner responsible for "
-                            "resolving conflicting "
-                            "or stale "
-                            "records."
-                        ),
-                        (
-                            "Use county GIS "
-                            "for parcel geometry, "
-                            "the relevant ISO "
-                            "portal for queue "
-                            "status, utility publications "
-                            "for available screening "
-                            "layers, FEMA for "
-                            "flood mapping, and "
-                            "USFWS for wetland "
-                            "indicators. Refresh queue "
-                            "records weekly where "
-                            "permitted and ordinances "
-                            "before commitments. "
-                            "Carrier route confirmation "
-                            "requires direct provider "
-                            "evidence, not a "
-                            "crowdsourced line "
-                            "alone."
-                        ),
-                    ),
-                    field(
-                        "GIS ranking and voltage-corridor feature definitions",
-                        "textarea",
-                        (
-                            "Define spatial ranking "
-                            "features, distance methods, "
-                            "coordinate reference systems, "
-                            "and exclusions. Explain "
-                            "how the 69kV–345kV "
-                            "screen identifies research "
-                            "candidates without converting "
-                            "line proximity or "
-                            "substation location "
-                            "into an "
-                            "available-MW estimate."
-                        ),
-                        (
-                            "QGIS ranks a "
-                            "12-acre storage parcel "
-                            "0.8 miles from "
-                            "a 138 kV "
-                            "substation using an "
-                            "appropriate projected coordinate "
-                            "system. The score "
-                            "means attractive for "
-                            "utility inquiry only. "
-                            "No MW premium "
-                            "is assigned from "
-                            "distance. Crossing rights, "
-                            "protection design, queue "
-                            "interactions, and utility "
-                            "study results remain "
-                            "separate unresolved "
-                            "features."
-                        ),
-                    ),
-                    field(
-                        "Separate BESS and AI campus scoring models",
-                        "textarea",
-                        (
-                            "Specify distinct feature "
-                            "sets and rejection "
-                            "rules for storage "
-                            "and computing. Identify "
-                            "shared evidence that "
-                            "can be reused "
-                            "and critical constraints "
-                            "that must never "
-                            "be inherited "
-                            "between the "
-                            "two models."
-                        ),
-                        (
-                            "The BESS model "
-                            "screens 5–25-acre parcels "
-                            "for access, setbacks, "
-                            "drainage, import capability, "
-                            "and export pathway. "
-                            "The campus model "
-                            "adds phased load "
-                            "service, diverse dark-fiber "
-                            "routes, cooling resources, "
-                            "and local computing-use "
-                            "rules. A strong "
-                            "storage score does "
-                            "not transfer the "
-                            "parcel into the "
-                            "campus shortlist "
-                            "without those "
-                            "additional findings."
-                        ),
-                    ),
-                    field(
-                        "Automation confidence and human verification rules",
-                        "textarea",
-                        (
-                            "Define which extracted "
-                            "facts software may "
-                            "populate, which require "
-                            "review, and which "
-                            "actions remain manual. "
-                            "Specify confidence thresholds "
-                            "and evidence requirements "
-                            "for utility numbers, "
-                            "contract dates, "
-                            "and monetary "
-                            "obligations."
-                        ),
-                        (
-                            "Document extraction proposes "
-                            "the 20 MW "
-                            "study figure, $2.4 "
-                            "million upgrade estimate, "
-                            "and October 2029 "
-                            "target. A reviewer "
-                            "checks the original "
-                            "pages and conditions "
-                            "before acceptance. Software "
-                            "may schedule reminders, "
-                            "but it cannot "
-                            "sign the option, "
-                            "send a wire, "
-                            "or publish a "
-                            "capacity claim "
-                            "without authorized "
-                            "human action."
-                        ),
-                    ),
-                    field(
-                        "Developer mandate library and buyer matching",
-                        "textarea",
-                        (
-                            "Record each developer's "
-                            "acreage, utility territory, "
-                            "MW range, timing, "
-                            "capital readiness, and "
-                            "technical exclusions. Explain "
-                            "how matching uses "
-                            "documented site attributes "
-                            "rather than optimistic "
-                            "future upgrades "
-                            "or unsupported "
-                            "capacity assumptions."
-                        ),
-                        (
-                            "Buyer B-07 seeks "
-                            "10–25-acre storage parcels "
-                            "with a credible "
-                            "20 MW export "
-                            "pathway and utility "
-                            "timing within its "
-                            "investment window. Buyer "
-                            "D-03 requires 20 MW "
-                            "initial campus service "
-                            "and diverse fiber. "
-                            "The shared-bridge campus "
-                            "fails D-03 matching "
-                            "until carrier evidence "
-                            "establishes genuine "
-                            "route diversity."
-                        ),
-                    ),
-                    field(
-                        "Owner acquisition sequence and contact economics",
-                        "textarea",
-                        (
-                            "Define targeted owner "
-                            "outreach, verified contact "
-                            "sources, follow-up intervals, "
-                            "response tracking, and "
-                            "cost per qualified "
-                            "conversation. Preserve clear "
-                            "principal-interest disclosures and "
-                            "avoid claiming buyer "
-                            "or utility "
-                            "commitments that "
-                            "do not "
-                            "exist."
-                        ),
-                        (
-                            "A pilot reviews "
-                            "100 parcels, identifies "
-                            "30 owners matching "
-                            "current buyer mandates, "
-                            "and sends 20 "
-                            "individualized letters after "
-                            "ownership checks. Four "
-                            "qualified conversations from "
-                            "$400 direct outreach "
-                            "cost equal $100 "
-                            "per qualified conversation. "
-                            "The letter describes "
-                            "an interest in "
-                            "negotiating an option, "
-                            "not an existing "
-                            "utility allocation "
-                            "or committed "
-                            "sale."
-                        ),
-                    ),
-                    field(
-                        "Evidence freshness and invalidation policy",
-                        "textarea",
-                        (
-                            "Set review intervals "
-                            "for each source "
-                            "class and define "
-                            "events that invalidate "
-                            "a prior conclusion. "
-                            "Explain how stale "
-                            "records affect ranking, "
-                            "marketing eligibility, option "
-                            "extensions, and "
-                            "buyer follow-up "
-                            "tasks."
-                        ),
-                        (
-                            "Queue and ordinance "
-                            "checks run before "
-                            "every extension and "
-                            "buyer-package release. A "
-                            "new utility restudy "
-                            "notice marks the "
-                            "20 MW capacity "
-                            "summary for revalidation "
-                            "and pauses affected "
-                            "outreach. The system "
-                            "keeps the earlier "
-                            "study for history "
-                            "but removes it "
-                            "from the current "
-                            "evidence set "
-                            "until a "
-                            "reviewer resolves "
-                            "the change."
-                        ),
-                    ),
-                    field(
-                        "Pipeline fallbacks and outage response",
-                        "textarea",
-                        (
-                            "Describe the manual "
-                            "fallback for unavailable "
-                            "feeds, corrupted geometry, "
-                            "document extraction failures, "
-                            "and missed reminders. "
-                            "Assign an owner "
-                            "and recovery deadline "
-                            "while preserving contractual "
-                            "notice dates "
-                            "and preventing "
-                            "unreviewed spending."
-                        ),
-                        (
-                            "If the utility "
-                            "portal fails for "
-                            "48 hours, the "
-                            "coordinator contacts the "
-                            "known utility representative "
-                            "and records the "
-                            "response. A separate "
-                            "calendar retains the "
-                            "option notice deadline. "
-                            "No extension is "
-                            "paid merely because "
-                            "the feed is "
-                            "unavailable; the principal "
-                            "decides using current "
-                            "evidence, contractual "
-                            "rights, and "
-                            "remaining reserve."
-                        ),
-                    ),
-                    field(
-                        "Concentration limits and correlated failure tracker",
-                        "textarea",
-                        (
-                            "Measure exposure by "
-                            "utility, substation, municipality, "
-                            "developer, and option "
-                            "expiry month. Define "
-                            "a cash-based concentration "
-                            "limit and explain "
-                            "how shared upgrades "
-                            "or zoning actions "
-                            "can cause "
-                            "several opportunities "
-                            "to fail "
-                            "together."
-                        ),
-                        (
-                            "Three options near "
-                            "one substation each "
-                            "require $7,000, creating "
-                            "$21,000 correlated acquisition "
-                            "exposure before diligence. "
-                            "Against $40,000 startup "
-                            "capital, that concentration "
-                            "is 52.5%. The "
-                            "pilot caps initial "
-                            "option fees in "
-                            "one substation area "
-                            "at $14,000 and "
-                            "requires a separate "
-                            "utility territory "
-                            "before adding "
-                            "another correlated "
-                            "commitment."
-                        ),
-                    ),
-                    field(
-                        "Learning loop and automation investment return",
-                        "textarea",
-                        (
-                            "Record rejection reasons, "
-                            "hours saved, verification "
-                            "errors, software costs, "
-                            "and changes in "
-                            "option-fee losses. Define "
-                            "the evidence required "
-                            "to keep an "
-                            "automation feature rather "
-                            "than rewarding "
-                            "lead volume "
-                            "without economic "
-                            "benefit."
-                        ),
-                        (
-                            "A zoning-change monitor "
-                            "costs $180 monthly "
-                            "and saves six "
-                            "review hours valued "
-                            "internally at $50 "
-                            "per hour, yielding "
-                            "$120 monthly net "
-                            "time value. Record "
-                            "avoided $3,500 extensions "
-                            "separately and only "
-                            "when documented. Do "
-                            "not count the "
-                            "same saved labor "
-                            "again as additional "
-                            "cash profit in "
-                            "the canonical "
-                            "scorecard."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "Every automated score has traceable inputs, separate BESS "
-                    "and campus logic, current evidence status, and a manual "
-                    "fallback. Payment, contract execution, and external capacity "
-                    "claims remain controlled actions. The pilot demonstrates "
-                    "measured time savings or loss reduction without increasing "
-                    "unreviewed cash exposure."
-                ),
-            },
-            {
-                "worksheet_id": "ws-06",
-                "number": 6,
-                "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
-                "purpose": (
-                    "Launch a small-team origination operation with measurable "
-                    "evidence production, controlled spending, and realistic closing "
-                    "expectations. Connect the first thirty days to the "
-                    "two-to-six-month first-deal window, canonical staffing, and "
-                    "transfer-ready records. Measure decision quality and collected "
-                    "economics rather than speculative project value."
-                ),
-                "chapter_ref": "Q11, Q12",
-                "instructions": [
-                    (
-                        "Set a thirty-day launch "
-                        "objective around qualified "
-                        "opportunities, verified utility "
-                        "pathways, and executable "
-                        "processes rather than "
-                        "promised closings. The "
-                        "canonical first-deal window "
-                        "is two to six "
-                        "months, so fund "
-                        "the selected operating "
-                        "pace "
-                        "accordingly."
-                    ),
-                    (
-                        "Assign one accountable "
-                        "owner for every "
-                        "deliverable and clarify "
-                        "contractor scopes. Use "
-                        "the Conservative and "
-                        "Base staffing structure "
-                        "of one full-time "
-                        "operator plus three "
-                        "contractors before designing "
-                        "the two-full-time, "
-                        "four-contractor scaled "
-                        "pod "
-                        "structure."
-                    ),
-                    (
-                        "Track both leading "
-                        "indicators and cash "
-                        "outcomes. Separate screened "
-                        "parcels, qualified conversations, "
-                        "utility responses, signed "
-                        "options, assignments, and "
-                        "collected fees; none "
-                        "of these stages "
-                        "can substitute "
-                        "for another in "
-                        "the performance "
-                        "scorecard."
-                    ),
-                    (
-                        "Run a weekly "
-                        "cash and evidence "
-                        "review that examines "
-                        "reserve coverage, upcoming "
-                        "notices, failed-option burn, "
-                        "buyer concentration, and "
-                        "unresolved technical findings. "
-                        "Document stop, continue, "
-                        "or revise decisions "
-                        "before the "
-                        "next nonrefundable "
-                        "commitment becomes "
-                        "due."
-                    ),
-                    (
-                        "Maintain an exit-ready "
-                        "ledger from the "
-                        "first option rather "
-                        "than reconstructing history "
-                        "during a sale. "
-                        "Preserve transfer restrictions, "
-                        "source evidence, accounting "
-                        "support, surviving obligations, "
-                        "and access permissions "
-                        "so another operator "
-                        "can evaluate "
-                        "the business "
-                        "accurately."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Day 1–7 market selection and operating setup",
-                        "textarea",
-                        (
-                            "Choose a narrow "
-                            "initial geography, utility "
-                            "territory, buyer mandate, "
-                            "and use case. "
-                            "List setup deliverables, "
-                            "responsible people, spending "
-                            "limits, and the "
-                            "minimum evidence needed "
-                            "before beginning "
-                            "owner outreach "
-                            "or option "
-                            "negotiation."
-                        ),
-                        (
-                            "During week one, "
-                            "select one utility "
-                            "territory and prioritize "
-                            "5–25-acre BESS sites. "
-                            "Interview three developers, "
-                            "retain transaction counsel, "
-                            "configure the evidence "
-                            "register, and verify "
-                            "the title-company contact. "
-                            "Limit setup spending "
-                            "to the planned "
-                            "$2,000. Do not "
-                            "broaden into campus "
-                            "origination until fiber, "
-                            "cooling, and load-service "
-                            "review capacity "
-                            "is available."
-                        ),
-                    ),
-                    field(
-                        "Day 8–14 sourcing and preliminary qualification",
-                        "textarea",
-                        (
-                            "Set a parcel-screening "
-                            "target, owner-contact target, "
-                            "and buyer-feedback target. "
-                            "Identify the expected "
-                            "output of each "
-                            "activity and distinguish "
-                            "research-qualified prospects from "
-                            "sites with documented "
-                            "utility capacity "
-                            "or executed "
-                            "control."
-                        ),
-                        (
-                            "By day 14, "
-                            "screen 100 parcels, "
-                            "identify 30 mandate-aligned "
-                            "owners, send 20 "
-                            "targeted letters, and "
-                            "hold four qualified "
-                            "conversations. Produce ten "
-                            "desktop summaries and "
-                            "three utility inquiry "
-                            "packages. These targets "
-                            "measure research throughput; "
-                            "none establishes deliverable "
-                            "MW, a signed "
-                            "option, or "
-                            "recognized fee "
-                            "revenue."
-                        ),
-                    ),
-                    field(
-                        "Day 15–21 diligence and conditional site control",
-                        "textarea",
-                        (
-                            "Define the evidence "
-                            "required before negotiating "
-                            "or funding an "
-                            "option. Assign utility, "
-                            "title, zoning, access, "
-                            "and engineering tasks "
-                            "while preserving the "
-                            "startup allocation and "
-                            "the right "
-                            "to reject "
-                            "an unsuitable "
-                            "parcel."
-                        ),
-                        (
-                            "Advance two shortlisted "
-                            "parcels to title "
-                            "and zoning checks "
-                            "and seek written "
-                            "utility process guidance. "
-                            "The $14,000 initial "
-                            "option budget permits "
-                            "two $7,000 fees "
-                            "only after authority "
-                            "and fatal-flaw review. "
-                            "If utility evidence "
-                            "remains inadequate, negotiate "
-                            "a later funding "
-                            "date or decline "
-                            "the option "
-                            "rather than "
-                            "spending to "
-                            "meet a "
-                            "calendar target."
-                        ),
-                    ),
-                    field(
-                        "Day 22–30 package testing and launch decision",
-                        "textarea",
-                        (
-                            "Specify the buyer-package "
-                            "test, operational rehearsal, "
-                            "reserve review, and "
-                            "day-thirty decision. Explain "
-                            "how the team "
-                            "will proceed when "
-                            "studies remain incomplete "
-                            "without converting the "
-                            "launch milestone "
-                            "into a "
-                            "forced closing "
-                            "deadline."
-                        ),
-                        (
-                            "By day 30, "
-                            "complete one reviewed "
-                            "sample package, test "
-                            "duplicate-payment prevention, and "
-                            "reconcile escrow. Obtain "
-                            "feedback from three "
-                            "mandate-matched developers. If "
-                            "utility findings remain "
-                            "pending, label the "
-                            "opportunity accordingly and "
-                            "retain the two-to-six-month "
-                            "first-deal assumption. Continue "
-                            "only at a "
-                            "burn rate supported "
-                            "by actual "
-                            "unrestricted cash "
-                            "and committed "
-                            "funding."
-                        ),
-                    ),
-                    field(
-                        "Pod role charter and contractor capacity",
-                        "textarea",
-                        (
-                            "Allocate sourcing, utility "
-                            "analysis, GIS, transaction "
-                            "documentation, bookkeeping, and "
-                            "review responsibilities across "
-                            "the canonical team. "
-                            "Identify outsourced specialist "
-                            "work, scope boundaries, "
-                            "and capacity limits "
-                            "that trigger "
-                            "a staffing "
-                            "change."
-                        ),
-                        (
-                            "The Base pod "
-                            "uses 1 FT "
-                            "principal and 3 C: "
-                            "a GIS researcher, "
-                            "a power consultant, "
-                            "and transaction counsel. "
-                            "The principal owns "
-                            "cash and buyer "
-                            "decisions; outside title "
-                            "and bookkeeping services "
-                            "are scoped vendors. "
-                            "Scaled staffing becomes "
-                            "2 FT + "
-                            "4 C, six "
-                            "people, without relabeling "
-                            "construction crews "
-                            "as operator "
-                            "headcount."
-                        ),
-                    ),
-                    field(
-                        "Leading indicators and conversion denominator definitions",
-                        "textarea",
-                        (
-                            "Define each KPI "
-                            "with numerator, denominator, "
-                            "time window, evidence "
-                            "source, and accountable "
-                            "owner. Separate initial "
-                            "screening, utility-validated underwriting, "
-                            "option control, buyer "
-                            "acceptance, and closing "
-                            "so conversion "
-                            "figures remain "
-                            "interpretable."
-                        ),
-                        (
-                            "Four qualified owner "
-                            "conversations from 20 "
-                            "targeted letters produce "
-                            "a 20% conversation "
-                            "rate. Two executed "
-                            "options from four "
-                            "qualified conversations produce "
-                            "a 50% option "
-                            "conversion rate if "
-                            "both actually sign. "
-                            "Report utility-study completion "
-                            "separately. A submitted "
-                            "request cannot be "
-                            "counted as "
-                            "utility validation "
-                            "or added "
-                            "to documented "
-                            "MW."
-                        ),
-                    ),
-                    field(
-                        "Cash KPIs, option burn, and canonical performance",
-                        "textarea",
-                        (
-                            "Track collected fees, "
-                            "recognized revenue, reserve "
-                            "coverage, expired option "
-                            "fees, and owner "
-                            "profit against the "
-                            "canonical scenarios. Explain "
-                            "which measures are "
-                            "annual targets and "
-                            "which are "
-                            "current cash "
-                            "facts requiring "
-                            "immediate action."
-                        ),
-                        (
-                            "The Base annual "
-                            "reference remains $505,000 "
-                            "revenue, $212,100 owner "
-                            "profit, and 42.0% "
-                            "margin. The expired-option "
-                            "budget is $36,000. "
-                            "At launch, report "
-                            "actual collected revenue "
-                            "as $0 until "
-                            "a receipt occurs; "
-                            "do not divide "
-                            "the annual target "
-                            "into assumed monthly "
-                            "cash. Show the "
-                            "$8,000 unrestricted "
-                            "reserve beside "
-                            "the funded "
-                            "burn plan."
-                        ),
-                    ),
-                    field(
-                        "Weekly risk review and stop-spend decisions",
-                        "textarea",
-                        (
-                            "Define the weekly "
-                            "review agenda, decision "
-                            "owners, escalation triggers, "
-                            "and documented responses. "
-                            "Include correlated utility "
-                            "risk, municipal restrictions, "
-                            "buyer withdrawal, expiring "
-                            "options, and reserve "
-                            "erosion before "
-                            "authorizing additional "
-                            "cash commitments."
-                        ),
-                        (
-                            "Every Friday, review "
-                            "the next 45 "
-                            "days of notices "
-                            "and cash obligations. "
-                            "A restudy pushing "
-                            "upgrades from $2.4 "
-                            "million to $3.36 "
-                            "million exceeds the "
-                            "buyer's $3 million "
-                            "limit. Pause the "
-                            "$3,500 extension, obtain "
-                            "the buyer's updated "
-                            "decision, and exercise "
-                            "the negotiated exit "
-                            "right before "
-                            "the notice "
-                            "deadline if "
-                            "economics fail."
-                        ),
-                    ),
-                    field(
-                        "Exit-readiness evidence and transferability ledger",
-                        "textarea",
-                        (
-                            "Inventory contracts, option "
-                            "rights, assignments, financial "
-                            "records, utility evidence, "
-                            "buyer mandates, operating "
-                            "procedures, and access "
-                            "permissions. Identify which "
-                            "assets transfer freely "
-                            "and which require "
-                            "counterparty consent, "
-                            "new engagement, "
-                            "or restricted "
-                            "disclosure."
-                        ),
-                        (
-                            "The ledger lists "
-                            "each option's expiry, "
-                            "assignment clause, remaining "
-                            "fees, title status, "
-                            "and utility-study conditions. "
-                            "A buyer of "
-                            "the origination business "
-                            "receives financial support "
-                            "for the $95,000 "
-                            "assignment, not unrestricted "
-                            "access to confidential "
-                            "developer records. Review "
-                            "utility agreement transfer "
-                            "conditions and "
-                            "consultant reliance "
-                            "rights before "
-                            "promising transferable "
-                            "project evidence."
-                        ),
-                    ),
-                    field(
-                        "Day-thirty decision and next-quarter operating mandate",
-                        "textarea",
-                        (
-                            "Record the launch "
-                            "decision, funded spending "
-                            "ceiling, highest-priority evidence "
-                            "gaps, next-quarter objectives, "
-                            "and conditions for "
-                            "scaling. Distinguish the "
-                            "published candidate score "
-                            "from demonstrated operating "
-                            "results and "
-                            "state what "
-                            "must improve "
-                            "before expansion."
-                        ),
-                        (
-                            "Candidate #47 carries "
-                            "a 92/100 Money-to-Manpower "
-                            "Score and pipeline "
-                            "rank #15 of "
-                            "49; these are "
-                            "selection metadata, not "
-                            "collected earnings. The "
-                            "day-thirty decision authorizes "
-                            "only funded activity, "
-                            "prioritizes utility responses "
-                            "and qualified buyer "
-                            "feedback, and defers "
-                            "the scaled pod "
-                            "until repeatable closings, "
-                            "documented margins, "
-                            "and adequate "
-                            "working capital "
-                            "are demonstrated."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The principal records a day-thirty continue, revise, or "
-                    "stop decision supported by actual cash, current evidence, "
-                    "assigned roles, and dated next actions. KPI denominators "
-                    "are auditable, canonical scenario totals remain unchanged, "
-                    "and the transferability ledger distinguishes owned rights "
-                    "from conditional or restricted project information."
-                ),
-            },
-        ],
-    }
+    return {'workbook_id': 'wb-047-ai-data-center-powered-land-and-bess-optioning',
+ 'volume_id': 'vol-047-ai-data-center-powered-land-and-bess-optioning',
+ 'title': 'AI Data-Center Powered Land, Substation Headroom & BESS Site Optioning — Practitioner Testimony '
+          'Operator Workbook',
+ 'subtitle': 'Powered Land Qualification, Large-Load Interconnection Strategy, and Headroom Discovery '
+             'Worksheets for AI Data-Center and BESS Site Optioning',
+ 'worksheets': [{'worksheet_id': 'ws-01',
+                 'number': 1,
+                 'title': 'Powered Land Qualification and Hyperscale Load Economics',
+                 'purpose': 'Screen a candidate parcel against the rule that power is the site and acreage '
+                            'follows. This worksheet tests acreage, utility capacity, run-out costs, '
+                            'redundancy, site control, build economics and long-lead gear before any study '
+                            'fee or option payment leaves the account.',
+                 'chapter_ref': 'Q1-Q2',
+                 'instructions': ['Start from available megawatts and work backward to land, fiber, water '
+                                  'and gas; never begin with the parcel.',
+                                  'Call the utility before spending on studies, and log the department, '
+                                  'the engineer and the exact capacity answer.',
+                                  'Write every cost in dollars with its source citation so the bid model '
+                                  'can be audited line by line.',
+                                  'Model the downside case alongside the base case, including a lost '
+                                  'tenant and a wrong power answer.',
+                                  'Leave no field blank; if a number is unknown, record the step and date '
+                                  'by which it will be obtained.'],
+                 'fields': [{'name': 'target_load_and_acreage',
+                             'type': 'text',
+                             'prompt': 'State the target campus load in megawatts and the buildable '
+                                       'acreage under control. Apply the 1MW per acre rule with a 100-acre '
+                                       'floor, and explain whether the parcel clears the minimum that AI '
+                                       'data center buyers require before they will look.',
+                             'example': 'Candidate parcel holds 140 buildable acres against a 120MW '
+                                        'target, so it clears the floor with 20 acres of margin. Franklin '
+                                        'Andrew Cruz sets the rule at 1MW per acre and warns that without '
+                                        'a minimum of 100 acres buyers are not going to look [Franklin '
+                                        'Andrew Cruz — YrpzmGX0-YM @ 00:00:47]. Status: qualified on '
+                                        'acreage, pending power.'},
+                            {'name': 'utility_large_load_desk',
+                             'type': 'text',
+                             'prompt': 'Record the utility contact and the exact question asked about '
+                                       'supporting 100MW or more. Note which department handled the call, '
+                                       'whether it serves 50MW-plus loads, and what capacity answer, line '
+                                       'name, and timeline the engineers gave in return.',
+                             'example': 'Called the utility and asked directly whether it can support '
+                                        '100MW or more; the call was routed to the large-load department '
+                                        'handling 50MW-plus requests, which is the desk that matters '
+                                        '[Franklin Andrew Cruz — YrpzmGX0-YM @ 00:01:04]. Engineer named a '
+                                        '230 line as the candidate feed. Follow-up logged: request study '
+                                        'scope, fee, and redundancy options in writing.'},
+                            {'name': 'study_fee_and_plan_b',
+                             'type': 'textarea',
+                             'prompt': 'List the non-refundable utility study fees, rezoning budget, and '
+                                       'upfront power security this site could demand. Then name the Plan '
+                                       'B use, such as multifamily or a grocery-anchored commercial deal, '
+                                       'that rescues the entitlement if the power answer comes back wrong.',
+                             'example': 'Study spend budgeted at the high end, since Advanta IRA warns you '
+                                        'could spend 60 to 130, $140,000 just to hear the answer [Advanta '
+                                        'IRA — 3rM3iGzRRUA @ 00:15:17]. Upfront power security reserved '
+                                        'against the $22 million posted on one deal [Advanta IRA — '
+                                        '3rM3iGzRRUA @ 00:47:42]. Plan B: multifamily entitlement or a '
+                                        'Kroger commercial deal [Advanta IRA — 3rM3iGzRRUA @ 00:17:30].'},
+                            {'name': 'powered_land_price_check',
+                             'type': 'text',
+                             'prompt': 'Compare the asking price per acre against unpowered comparables '
+                                       'and against powered-land comparables. State the multiple you are '
+                                       'paying for power, and whether the premium is justified by a '
+                                       'confirmed megawatt answer rather than a speculative hope of future '
+                                       'capacity.',
+                             'example': 'Seller quotes a powered price near 4.5x the unpowered comparable, '
+                                        'inside the 4x to 5x gap datacenterHawk reports in current deals '
+                                        '[datacenterHawk — dTHn2ejpXvM @ 00:18:51]. Premium accepted only '
+                                        'because the utility confirmed capacity in writing; without that '
+                                        'letter, securing land without power is increasingly a speculative '
+                                        'exercise [Environment+Energy Leader — wOKA9jWA8fw @ 00:08:10].'},
+                            {'name': 'power_and_fiber_run_out',
+                             'type': 'text',
+                             'prompt': 'Measure the distance in miles from the parcel to the nearest '
+                                       'usable transmission line and the nearest fiber route. Multiply '
+                                       'each by the practitioner run-out cost per mile and record the '
+                                       'total extension budget before any land price is agreed.',
+                             'example': 'Parcel sits 1.5 miles off the 230 line and 3 miles from the fiber '
+                                        'route. At $20M per mile for power and $2M per mile for fiber, the '
+                                        'run-out budget totals $30M plus $6M, or $36M [Advanta IRA — '
+                                        '3rM3iGzRRUA @ 00:08:27]. That figure now sits in the bid model as '
+                                        'a direct deduction from the land offer.'},
+                            {'name': 'redundancy_source',
+                             'type': 'text',
+                             'prompt': 'Name the redundancy source that backs the primary feed, such as a '
+                                       'gas or coal plant, and describe how a second and third campus '
+                                       'within roughly 50 kilometers could absorb spillover if one '
+                                       'facility fails. Flag any territory lacking redundancy.',
+                             'example': 'Redundancy source identified as a gas plant on the same '
+                                        'transmission corridor, because the cost of downtime is very high '
+                                        "[LandApp by LandGate — 0_owMAznas0 @ 00:08:54]. Embry's Decatur, "
+                                        'Alabama site died for lack of redundancy in TVA territory '
+                                        '[Advanta IRA — 3rM3iGzRRUA @ 00:30:40]. Two sister parcels sit '
+                                        'inside 50 kilometers for spillover [Southern Economic Development '
+                                        'Council — yg9V2befNR0 @ 00:25:19].'},
+                            {'name': 'site_control_option',
+                             'type': 'textarea',
+                             'prompt': 'Describe the site-control instrument, including option term, '
+                                       'consideration paid, extension rights, and how each leg of any put '
+                                       'and call is papered. Confirm the landowner compared multiple '
+                                       'offers and that no developer can tie up the land for years without '
+                                       'paying.',
+                             'example': 'Two-year paid option with annual extension fees; the landowner '
+                                        'compared three offers side by side before signing [US Energy '
+                                        'Weekly — JwCWz91cMQc @ 00:05:01]. Put and call legs carry '
+                                        'separate certificates, because a 66ZF certificate on the call did '
+                                        'not cover the put and let a buyer exit 13 contracts [Maclarens '
+                                        'Lawyers — q09nIjF9s5c @ 00:04:50].'},
+                            {'name': 'build_cost_and_breakeven',
+                             'type': 'textarea',
+                             'prompt': 'Estimate total build cost using a per-megawatt range, then add '
+                                       'engineering fees and contingency. Record the expected rate per '
+                                       'kilowatt per month and the utilization needed to break even, and '
+                                       'model the one-tenant-exit case against that break-even floor.',
+                             'example': '20MW shell priced at $10M per MW, about $200M, before 15-20% '
+                                        'engineering fees and a 15-25% contingency [Your Finance Uncle — '
+                                        'BXuRdYxfF2k @ 00:03:08]. Break-even sits at 60-65% utilization at '
+                                        '$150/kW/month plus 15% ancillary revenue [Your Finance Uncle — '
+                                        'BXuRdYxfF2k @ 00:09:33]. Losing one tenant drops utilization to '
+                                        '50% and puts the site underwater [Your Finance Uncle — '
+                                        'BXuRdYxfF2k @ 00:13:56].'},
+                            {'name': 'rack_density_and_pue',
+                             'type': 'text',
+                             'prompt': 'Record the design rack density in kilowatts per rack and the '
+                                       'target PUE. Convert the IT load into total facility draw, then '
+                                       'price the annual electricity cost of any PUE gap against a '
+                                       'competing site using a stated cost per kilowatt-hour.',
+                             'example': 'Design density set at 130 kW per rack, inside the 120-140 kW '
+                                        'range for AI racks versus about 10 kW a decade ago [The Power '
+                                        'Engineer — BWtk0CSPH6g @ 00:00:18]. On 100 MW of IT, PUE 1.5 '
+                                        'draws 150 MW against 120 MW at PUE 1.2, a gap worth about $26M '
+                                        'per year at $0.10/kWh [BESS Engineer — MnGAkKrZF_I @ 00:01:01].'},
+                            {'name': 'long_lead_gear',
+                             'type': 'textarea',
+                             'prompt': 'List every long-lead electrical item, including large transformers '
+                                       'and grid gear, with its quoted lead time and order status. Note '
+                                       'whether the general contractor joined design for constructability '
+                                       'review, and which prefabricated modular components will compress '
+                                       'the schedule.',
+                             'example': 'Large transformers carry three-to-four-year lead times and grid '
+                                        'gear two-plus years, so both purchase orders are placed now; you '
+                                        "can't download another transformer [BUILT BENEATH — 7L7MfK9coTY @ "
+                                        '00:06:39]. The GC joined design for constructability and value '
+                                        'engineering, with prefabricated modular electrical rooms '
+                                        'tightening quality control [MEP Engineer AJ — lTK_pU1_uFc @ '
+                                        '00:05:15].'}],
+                 'completion_gate': 'Do not pay a study fee or sign an option until the parcel clears 100 '
+                                    'acres, a named line and redundancy source are confirmed, a Plan B use '
+                                    'is documented, and the one-tenant-exit case still covers costs.'},
+                {'worksheet_id': 'ws-02',
+                 'number': 2,
+                 'title': 'Large-Load Interconnection and Cluster Cost Exposure',
+                 'purpose': 'Map the interconnection path in PJM, ERCOT or a cluster-study region, and '
+                            'size the cash, evidence and equipment commitments each path demands. The '
+                            'worksheet forces a priced view of security, forecast discounting, '
+                            'ride-through, registration and withdrawal exposure.',
+                 'chapter_ref': 'Q3-Q4',
+                 'instructions': ['Size every filing in the unit the operator counts, such as UCAP for PJM '
+                                  'expedited requests, never nameplate.',
+                                  'Discount headline queue totals before using them, and record the '
+                                  'adjusted figure next to the original.',
+                                  'Price security, deposits and the full withdrawal ladder in dollars '
+                                  'before any money is posted.',
+                                  'Choose equipment on delivery timeline and record the order date for '
+                                  'every high-voltage transformer and breaker.',
+                                  'Attach the citation for every threshold, deadline and penalty so the '
+                                  'filing team can verify it.'],
+                 'fields': [{'name': 'iso_path_and_threshold',
+                             'type': 'text',
+                             'prompt': 'Identify the ISO or RTO, the requested load in megawatts, and '
+                                       'whether it crosses the ERCOT 75 MW large-load threshold or the PJM '
+                                       '250 MW UCAP expedited threshold. Record the first path you will '
+                                       'enter and the path you will migrate to.',
+                             'example': 'PJM campus enters as non-capacity-backed load accepting '
+                                        'pre-emergency curtailment, then migrates to '
+                                        'bring-your-own-generation, because strategy is about sequencing, '
+                                        'not just selecting [Keentel Engineering — C9tZQM-x_Ho @ '
+                                        '00:05:42]. Expedited track filing sized at 300 MW UCAP, not '
+                                        'nameplate, clearing the more-than-250 MW floor [Keentel '
+                                        'Engineering — C9tZQM-x_Ho @ 00:02:58]. No site, fuel or MW '
+                                        'changes are permitted after filing.'},
+                            {'name': 'entry_security_and_deposit',
+                             'type': 'text',
+                             'prompt': 'Calculate the cash required to enter the queue: ERCOT Batch Zero '
+                                       'security per megawatt or the PJM expedited non-refundable deposit '
+                                       'per megawatt. State the total dollars, the posting deadline, and '
+                                       'who on the team approves releasing that capital.',
+                             'example': 'A 200 MW ERCOT load posts $50,000/MW, or $10M, with the TDSP '
+                                        'submission by July 10, alongside site control, duplicate-request '
+                                        'disclosure and engineering documents [WhyPKD — EvpNriZrrME @ '
+                                        '00:02:47]. The rule exists so only truly capitalized projects can '
+                                        'move forward and other rate payers are protected [WhyPKD — '
+                                        'EvpNriZrrME @ 00:05:03]. CFO signs the release.'},
+                            {'name': 'forecast_discount_evidence',
+                             'type': 'textarea',
+                             'prompt': 'Document the evidence that will keep your megawatts counted in the '
+                                       'operator forecast: milestones, ramp data, utilization evidence, '
+                                       'and duplication disclosure. Estimate the discount the operator '
+                                       'applies to your online year and how your filings beat it.',
+                             'example': 'PJM applies forecast discounting based on when the project comes '
+                                        'online, about 40% in middle years and about 33% later [Keentel '
+                                        'Engineering — C9tZQM-x_Ho @ 00:04:05]. Filing package includes '
+                                        'milestones, ramp data, utilization evidence and duplication '
+                                        'disclosure, because a signed utility contract does not mean the '
+                                        'MW are counted [Keentel Engineering — C9tZQM-x_Ho @ 00:04:21].'},
+                            {'name': 'queue_reality_haircut',
+                             'type': 'text',
+                             'prompt': 'Record the date-stamped headline queue total for the zone, then '
+                                       'apply a reality haircut using adjusted forecasts and '
+                                       'duplicate-request evidence. State how many real megawatts likely '
+                                       'stand ahead of yours and how that changes your energization '
+                                       'assumption.',
+                             'example': 'ERCOT forecasters cut 218 GW of letters, contracts and '
+                                        'third-party forecasts to 148 GW by about 2032 [Data Centers '
+                                        'Technical Info — S8vmSHwFrvE @ 00:04:08]. Duplicate shopping '
+                                        'inflates totals: one 400MW requirement shopped by four to five '
+                                        'developers showed up as 2GW of requests [datacenterHawk — '
+                                        'dTHn2ejpXvM @ 00:15:10]. Planning assumes roughly two-thirds of '
+                                        'headline load is real.'},
+                            {'name': 'ride_through_settings',
+                             'type': 'textarea',
+                             'prompt': 'Describe the backup generator and UPS control sequence during a '
+                                       'voltage sag. Confirm generators start but delay transfer until the '
+                                       'ride-through window expires, that loaded settings are verified, '
+                                       'and that power quality is recorded at the point of service.',
+                             'example': 'Generators programmed to start on sag but hold transfer until the '
+                                        'ride-through window expires; loaded settings verified and sags '
+                                        'included in IST [Keentel Engineering — WN6PtJ3kQDQ @ 00:13:03]. '
+                                        'The risk is real: ERCOT has seen over a dozen events in a year '
+                                        'where hundreds of megawatts unexpectedly left the grid [Data '
+                                        'Centers Technical Info — S8vmSHwFrvE @ 00:21:27].'},
+                            {'name': 'procurement_and_study_validity',
+                             'type': 'text',
+                             'prompt': 'List the high-voltage transformers and breakers purchased, their '
+                                       'quoted lead times, and site preparation started. Explain how these '
+                                       'actions protect the study from invalidation, and pick each item on '
+                                       'delivery timeline rather than technical optimality, with a short '
+                                       'justification.',
+                             'example': 'High-voltage breakers ordered at 125 weeks, up from 77 weeks in '
+                                        '2023 [Profound Studies — dMPUECoTe2M @ 00:01:40]. Transformers '
+                                        'purchased and site prep begun, since otherwise ERCOT invalidates '
+                                        'the study, resets energization to 01/01/2028 and reallocates the '
+                                        'megawatts [James Dickey — 9zpO8wwsfXc @ 02:34:36]. Vendor B '
+                                        'chosen because it lands within a year [The Clean Energy Edge '
+                                        'Podcast — kHFYcexB2dU @ 00:09:25].'},
+                            {'name': 'nerc_registration_check',
+                             'type': 'text',
+                             'prompt': 'Add up every MVA of load and storage at the site, including any '
+                                       'planned battery. State whether the total crosses the 20 MVA and 60 '
+                                       'kV Category 2 registration threshold, and what compliance '
+                                       'obligations follow before the battery is ordered.',
+                             'example': 'Existing site registers 18 MVA; the proposed battery adds 4 MVA '
+                                        'for 22 MVA total, which crosses the 20 MVA and 60 kV Category 2 '
+                                        'threshold [Keentel Engineering — f1C-d4m7OHg @ 00:03:20]. '
+                                        'Registration recount triggers a compliance review before '
+                                        'procurement. Option under study: trim battery inverter rating so '
+                                        'the site stays below the threshold.'},
+                            {'name': 'cluster_cost_allocation',
+                             'type': 'textarea',
+                             'prompt': 'Record the cluster or study your project sits in, the neighbors '
+                                       'sharing upgrades, and the allocated network upgrade cost in '
+                                       'dollars per kilowatt. Flag any estimate above $100/kW as a kill '
+                                       'risk and note how far it moved between studies.',
+                             'example': 'Cluster allocation came back at $140/kW, above the $100/kW line '
+                                        'that makes withdrawal 22 percentage points more likely; 13% of '
+                                        'estimates move more than $100/kW between studies [Environmental '
+                                        'Defense Fund — M62wgLYBKBw @ 00:33:36]. Costs are coupled to '
+                                        'neighbors [Keentel Engineering — gGBYCEdn18o @ 00:04:44], and the '
+                                        'real risk may sit many electrical miles from the POI [Keentel '
+                                        'Engineering — TM7qt8CCWxk @ 00:07:20].'},
+                            {'name': 'withdrawal_ladder',
+                             'type': 'text',
+                             'prompt': 'Price the withdrawal penalty ladder before posting any security. '
+                                       'Using your allocated upgrade cost, calculate the exit cost at each '
+                                       'penalty step, including the 20% step after the LGIA, and name the '
+                                       'decision point at which you would withdraw.',
+                             'example': 'On 200 MW with $178M allocated, exits run $8.9M at 5%, $17.88M at '
+                                        '10% and $35.6M at 20% [Keentel Engineering — TM7qt8CCWxk @ '
+                                        '00:09:17]. Decision point set before the 20% step after the LGIA. '
+                                        'For an arbitrage-focused BESS, the ERIS downgrade option is '
+                                        'modeled to shed deliverability-driven upgrade exposure [Keentel '
+                                        'Engineering — TM7qt8CCWxk @ 00:13:03].'},
+                            {'name': 'poi_screening_and_readiness',
+                             'type': 'textarea',
+                             'prompt': 'Describe how candidate POIs were screened before filing, including '
+                                       'DFAX runs, multiple project sizes, and model readiness. Confirm '
+                                       'site control covers the gen-tie all the way to the POI and explain '
+                                       'whether revenue is booked only after synchronization.',
+                             'example': 'Three POIs screened with DFAX at 150, 200 and 250 MW, PSSE and '
+                                        'PSCAD models ready, and the study shadowed [Keentel Engineering — '
+                                        'TM7qt8CCWxk @ 00:19:45]. Site control locked along the gen-tie to '
+                                        'the POI [WIRES — -BTpIv2G5-0 @ 01:05:27]. No revenue booked at '
+                                        'SGIA signing, since a failed model quality test slips sync a full '
+                                        'quarterly cycle [Keentel Engineering — YabOCr0t9pI @ 00:00:58].'}],
+                 'completion_gate': 'Advance only when entry security is funded, the forecast evidence '
+                                    'package is filed, long-lead gear is purchased, registration '
+                                    'thresholds are recounted, and every upgrade estimate above $100/kW '
+                                    'has a written re-price or withdrawal decision.'},
+                {'worksheet_id': 'ws-03',
+                 'number': 3,
+                 'title': 'Wholesale Market Read, Queue Wait Cost and Headroom Discovery',
+                 'purpose': 'Translate grid-operator rules, nodal prices and queue attrition into a dated '
+                            'cost of waiting, then locate real headroom on hosting capacity and POI heat '
+                            'maps. The worksheet pairs market revenue logic with substation and ground '
+                            'diligence for both load and BESS sites.',
+                 'chapter_ref': 'Q5-Q6',
+                 'instructions': ['Quote every queue number and map value with its snapshot or refresh '
+                                  'date.',
+                                  'Treat every published hosting capacity figure as a screening ceiling, '
+                                  'not a connection right.',
+                                  'Convert upgrade estimates into dollars per kilowatt and compare them '
+                                  'with completed and withdrawn benchmarks.',
+                                  'Stack BESS revenue streams explicitly and model curtailment for hours '
+                                  'when the wires are full.',
+                                  'Check the parent substation, the binding constraint and ground '
+                                  'conditions before freezing a candidate site.'],
+                 'fields': [{'name': 'grid_operator_and_market',
+                             'type': 'text',
+                             'prompt': 'Name the grid operator and market structure governing the site, '
+                                       'whether an energy-only market or a capacity market. Explain how '
+                                       'that structure pays for megawatts versus megawatt-hours and what '
+                                       'it means for firm load and storage revenue.',
+                             'example': 'Site sits in PJM, whose capacity market secures enough power for '
+                                        'consumers three years in the future [pjminterconnection — '
+                                        'ulpPgF6UT1E @ 00:00:23], paying providers regardless of whether '
+                                        'energy is produced [CME Group — dYvEG3uQzsQ @ 00:02:55]. Storage '
+                                        'spec reads 10 MW rated power and 20 MWh stored energy, keeping '
+                                        'the two units separate [Modo Energy — OIAK1RATT9M @ 00:02:06].'},
+                            {'name': 'nodal_price_read',
+                             'type': 'text',
+                             'prompt': 'Record the nodal LMP pattern at the candidate node, including '
+                                       'typical spreads, System Lambda relationship, and scarcity adders. '
+                                       'Explain what the spread says about transmission need and whether '
+                                       'the node favors load siting, storage arbitrage, or both.',
+                             'example': 'Candidate ERCOT node prices well below congested city nodes, '
+                                        'matching the pattern of cheap power near West Texas wind farms; '
+                                        'the spread maps where the grid needs transmission [US Energy '
+                                        'Weekly — sxulqIJRZrM @ 00:03:18]. ORDC adders and the $5,000/MWh '
+                                        'cap set the upside in this energy-only market, so arbitrage value '
+                                        'is modeled at the node.'},
+                            {'name': 'queue_snapshot_and_wait',
+                             'type': 'text',
+                             'prompt': 'Record the date-stamped queue snapshot for the region, the number '
+                                       'of projects and gigawatts ahead, and the median '
+                                       'request-to-operation wait. Translate that wait into an expected '
+                                       'commercial operation date and note how solid the projects ahead '
+                                       'appear.',
+                             'example': 'ERCOT GIS Report snapshot shows nearly 2,000 projects totaling '
+                                        '432 GW, more than five times Texas peak demand [US Energy Weekly '
+                                        '— DzkVggOvJGs @ 00:00:01]; the date is logged because the report '
+                                        'is monthly [US Energy Weekly — DzkVggOvJGs @ 00:04:20]. Median '
+                                        'wait for 2025 builds ran 61 months [THE PHYSICAL LAYER — '
+                                        'v5uOMJOzPbk @ 00:04:02], so COD assumes five years.'},
+                            {'name': 'attrition_and_completion',
+                             'type': 'text',
+                             'prompt': 'Estimate the attrition rate among projects ahead of yours using '
+                                       'historical completion and withdrawal data. State what share of the '
+                                       'headline queue is likely to be built and how that attrition could '
+                                       'shift upgrade costs onto your remaining project.',
+                             'example': 'Only about 13% of 2000-2020 requested capacity was online by '
+                                        'end-2025 and 75% withdrew, with withdrawals above 40% even after '
+                                        'a signed agreement [The Pharos Project — Br7K7fGD4uk @ 00:01:29]. '
+                                        'Attrition is priced into the timeline because only a fraction of '
+                                        'the headline queue will ever get built [US Energy Weekly — '
+                                        'DzkVggOvJGs @ 00:04:41].'},
+                            {'name': 'upgrade_cost_per_kw',
+                             'type': 'text',
+                             'prompt': 'Divide the network upgrade estimate by project kilowatts and '
+                                       'record the dollars per kilowatt. Compare that figure with what '
+                                       'completed projects paid and what withdrawn projects faced, and '
+                                       'state whether the result signals proceed, re-price, or kill.',
+                             'example': 'Upgrade estimate of $12M on a 100 MW project equals $120/kW, well '
+                                        'above the roughly $84/kW completed projects paid and below the '
+                                        'roughly $600 that quitters faced [Wattlore — CDd-hsI3tKQ @ '
+                                        '00:04:31]. Benchmark warning: one 51 MW solar farm drew a $598 '
+                                        'million bill, more than $11,000 per kW [Wattlore — CDd-hsI3tKQ @ '
+                                        '00:04:14]. Verdict: re-price.'},
+                            {'name': 'bess_revenue_stack',
+                             'type': 'textarea',
+                             'prompt': 'List each BESS revenue stream available at the node, such as '
+                                       'arbitrage, balancing, and capacity, and the route-to-market '
+                                       'provider that will trade the asset. Note curtailment exposure on '
+                                       'connect-and-manage sites when the wires are full, and its revenue '
+                                       'impact.',
+                             'example': 'Revenue stack combines arbitrage, balancing and capacity, since a '
+                                        'single stream rarely justifies the investment; one '
+                                        'route-to-market provider trades the asset, carries imbalance and '
+                                        'sells balancing services [learnBESS — m0yVO4ZOmdc @ 00:02:01]. '
+                                        'Connect-and-manage curtailment modeled for hours when the wires '
+                                        'are full, because it hits revenue directly [US Energy Weekly — '
+                                        'DzkVggOvJGs @ 00:04:55].'},
+                            {'name': 'hosting_capacity_map_read',
+                             'type': 'textarea',
+                             'prompt': 'Record the hosting capacity value shown on the utility map for the '
+                                       'candidate feeder or substation, the layer setting used, and the '
+                                       'refresh date. Explain why the figure is treated as a screening '
+                                       'ceiling and not a connection right.',
+                             'example': 'National Grid shows 6.65 MW available on Foxboro 2, with 350 kW '
+                                        'connected and an 8 MVA bank at 75% loaded [National Grid '
+                                        'Distributed Generation — KxAPuQUu_II @ 00:10:39]. Layer switched '
+                                        'to connected plus pending. Value logged as a ceiling, since a '
+                                        'recloser without voltage supervisory control drags downstream '
+                                        'values lower [National Grid Distributed Generation — KxAPuQUu_II '
+                                        '@ 00:14:37].'},
+                            {'name': 'substation_proximity_and_parent',
+                             'type': 'text',
+                             'prompt': 'Record the distance from the site to the nearest substation and '
+                                       'the available capacity at its parent high-voltage substation. Note '
+                                       'any voltage step-downs downstream that reduce hosting capacity, '
+                                       'and any swamps or topography issues visible near the feeder.',
+                             'example': "Nearest LV substation measured at 240 meters, inside ESB's "
+                                        '300-meter rule; parent HV substation clicked and its available '
+                                        'capacity checked [ESB Networks — fqIsW9Rhp48 @ 00:03:29]. '
+                                        'Topography basemap flagged a swamp beside the candidate feeder, '
+                                        'and a 13.8 kV to 4 kV step-down lowers downstream hosting '
+                                        'capacity [National Grid Distributed Generation — KxAPuQUu_II @ '
+                                        '00:12:49].'},
+                            {'name': 'binding_constraint_and_profile',
+                             'type': 'textarea',
+                             'prompt': 'Identify the binding hosting constraint from the power-flow study, '
+                                       'whether line loading or connection-point voltage. Record the '
+                                       'storage operating profile handed to the utility and whether the '
+                                       'feeder penetration level triggers supplementary studies under '
+                                       'local rules.',
+                             'example': 'PowerFactory run shows the maximum voltage limit at the '
+                                        'connection point is the limiting factor [DIgSILENT GmbH – Power '
+                                        'System Solutions — 7iequWeuZTQ @ 00:04:28]. Peak-shaving '
+                                        'operating profile delivered so the utility avoids studying the '
+                                        'conservative frequency-regulation case [Energy Storage Assocation '
+                                        '— Mk3XaANjMd4 @ 00:47:25]. Feeder penetration sits above 15%, so '
+                                        'supplementary studies apply [LUMA — UnmedCjwEb0 @ 00:04:49].'},
+                            {'name': 'ground_and_heatmap_diligence',
+                             'type': 'textarea',
+                             'prompt': 'Summarize ground diligence on geology, karst, sinkholes, water '
+                                       'tables, and baseline deformation, plus the date of the most recent '
+                                       'POI heat map refresh. Price the cost of a one-month delay for the '
+                                       'planned facility size and name who signs off.',
+                             'example': 'Geology, karst, sinkhole, water-table and ground-deformation '
+                                        'screens completed before earthworks, since one month of delay on '
+                                        'a 60 MW facility can cost up to $14 million [KorrAI — MvUw50RZNRQ '
+                                        '@ 00:00:55]. CAISO POI heat map pulled on its post-cluster '
+                                        'refresh, which lands 30 calendar days after each cluster study '
+                                        '[California ISO — YAtPW03BCrY @ 00:00:19].'}],
+                 'completion_gate': 'Shortlist a site only when its queue position is dated, upgrade cost '
+                                    'per kilowatt is benchmarked, a stacked revenue case survives '
+                                    'curtailment, parent substation capacity is confirmed, and ground '
+                                    'diligence is complete before earthworks.'},
+                {'worksheet_id': 'ws-04',
+                 'number': 4,
+                 'title': 'Substation, Transformer and Behind-the-Meter Power Plan',
+                 'purpose': 'Lock the power chain from the transmission bus to the rack before money '
+                            'moves. This worksheet puts the large power transformer, substation topology, '
+                            'ERCOT model package and on-site gas plant into one register so that lead '
+                            'times, redundancy, air permits and the battery buffer are settled before '
+                            'equipment lands on site.',
+                 'chapter_ref': 'Q7-Q8',
+                 'instructions': ['Start with the transformer register, because the large power '
+                                  'transformer is the gating item, with quoted lead times running from 122 '
+                                  'weeks to 3 to 4 years.',
+                                  'Record every lead time with the vendor name and the date of the quote, '
+                                  'and keep grid queue position on a separate line from equipment '
+                                  'delivery.',
+                                  'Treat a radial single-source feed as a defect to be designed out unless '
+                                  'a named redundancy path is documented and owned.',
+                                  'For behind-the-meter plants, never size the fleet to the load; show the '
+                                  'overbuild, the spare units and the battery layer explicitly.',
+                                  "Leave no field blank; write 'unknown' with an owner and a due date "
+                                  'wherever an answer is still pending.'],
+                 'fields': [{'name': 'transformer_lead_time_register',
+                             'type': 'textarea',
+                             'prompt': 'List every large power transformer and high-voltage breaker the '
+                                       'site needs, the lead time each vendor quoted, and the date the '
+                                       'quote was received. State whether the order is placed now or '
+                                       'waiting on design, and name the gating item.',
+                             'example': 'Main power transformer quoted at 122 weeks by APG CEO Dan Girard '
+                                        'after first misspeaking it as 60 months [REsource Labs — '
+                                        'lFIWqD0EAkM @ 00:09:23]. Breakers carried at roughly 40 weeks on '
+                                        'the same fast-track path. The transformer is the gating item, so '
+                                        'the order is released at the 60% design stage rather than at IFC '
+                                        '[Keentel Engineering — GAM0L1fXtiA @ 00:09:23].'},
+                            {'name': 'approved_manufacturer_check',
+                             'type': 'text',
+                             'prompt': "Record whether the transmission operator's approved-manufacturer "
+                                       'list has been obtained before any transformer quote or order. Name '
+                                       'the operator, the date the list was pulled, and any vendor or '
+                                       'country of origin that falls outside the approved set.',
+                             'example': 'Approved-manufacturer list requested from the transmission '
+                                        'operator before any quoting began, because some Chinese units are '
+                                        'not approved [Ryne Ogren — 6_osryMHPf4 @ 00:04:19]. Two quotes '
+                                        'from unlisted factories were struck from the bid tab. Queue '
+                                        'position is tracked on a separate line, since a transformer '
+                                        'delivered early cannot fix missing grid capacity [Critical '
+                                        'Systems Explained — uEz7S-WjHG0 @ 00:07:29].'},
+                            {'name': 'substation_topology',
+                             'type': 'textarea',
+                             'prompt': 'Describe the planned substation layout as radial, tapped, LILO, '
+                                       'interconnected or 2N redundant, and explain how the chosen path '
+                                       'removes single-source failure. State whether the substation is '
+                                       'owned, the design voltage standard, and the products used to build '
+                                       'it.',
+                             'example': 'Owned substation with an interconnected, 2N path instead of a '
+                                        'radial single-source feed, which eliminates the path failure '
+                                        'point [Base Config — giNYYY0DnJw @ 00:02:09]. Designed to the 345 '
+                                        'kV standard but built with 230 kV products to speed delivery '
+                                        '[REsource Labs — lFIWqD0EAkM @ 00:12:41]. Bays are laid out once '
+                                        'in the model so they are only made one time.'},
+                            {'name': 'design_milestone_gates',
+                             'type': 'textarea',
+                             'prompt': 'Log the dates for the 30%, 60%, 90% and issued-for-construction '
+                                       'substation design milestones. Identify which unresolved items sit '
+                                       'in the risk window between 30% and 60%, and which items are '
+                                       'flagged as unspecified before the 30% handoff.',
+                             'example': 'Design is gated at 30-60-90-IFC, with the risk window held '
+                                        'between 30% and 60% [Keentel Engineering — GAM0L1fXtiA @ '
+                                        '00:09:23]. Before the 30% handoff, BOM balloons flag unspecified '
+                                        'items in red and catch stray objects parked at the origin '
+                                        '[primtech solutions — 2FBThdUqgRg @ 00:43:02]. Three red balloons '
+                                        'remain on grounding and PT fusing.'},
+                            {'name': 'ercot_sb6_model_package',
+                             'type': 'textarea',
+                             'prompt': 'For any load above 75 MW in ERCOT, list the PSCAD and '
+                                       'positive-sequence models, ride-through curves, harmonic data and '
+                                       'fault contributions already delivered. Record the post-trip '
+                                       'short-circuit ratio at the bus and whether early EMT screening has '
+                                       'run.',
+                             'example': 'Campus sits above the 75 MW SB6 threshold, so PSCAD and '
+                                        'positive-sequence models, ride-through curves, harmonic data and '
+                                        'fault contributions go in before ordering [Keentel Engineering — '
+                                        'u_aIABsRd0A @ 00:02:11]. On a 1,000 MW campus at a 345 kV bus, '
+                                        'one line trip leaves a short-circuit ratio near 3.9, close to the '
+                                        'instability floor of 3 [Keentel Engineering — u_aIABsRd0A @ '
+                                        '00:03:52].'},
+                            {'name': 'energization_checklist',
+                             'type': 'textarea',
+                             'prompt': 'Record the pre-energization checks for the substation, including '
+                                       'grounding straps on the neutral grounding reactor and fuse ratings '
+                                       'on every potential transformer. Name the person who signed each '
+                                       'check and the date, and note any curtailment exposure if '
+                                       'energization slips.',
+                             'example': 'Factory ground strap removed from the neutral grounding reactor, '
+                                        'because it bypasses the reactor, and every PT confirmed with a 5 '
+                                        'A fuse [SpeedFreakLS1 — -RBp8jOUA1U @ 00:19:13]. Signed by the '
+                                        'commissioning lead before closing in. Curtailment risk is logged '
+                                        'because a 150 MW farm can be cut to 20 or 50 MW within minutes '
+                                        '[SpeedFreakLS1 — -RBp8jOUA1U @ 00:02:45].'},
+                            {'name': 'btm_fleet_sizing',
+                             'type': 'textarea',
+                             'prompt': 'State the firm megawatt target for the behind-the-meter plant, the '
+                                       'unit size and count installed, and the spare units carried for '
+                                       'reliability. Show the reliability target, explain why the fleet is '
+                                       'not sized to the load, and confirm N plus two coverage.',
+                             'example': '250 MW firm islanded campus served by 115 recip units of 2.5 MW, '
+                                        'or 290 MW installed, reaching three nines where 100 base units '
+                                        'give zero statistical reliability [Collicutt Energy Services — '
+                                        'CVfxSDNW3G4 @ 00:26:50]. Fleet is sized N plus two so one unit '
+                                        'can be down for its oil change without missing target [Uintah '
+                                        'County Economic Development (Official) — 169FuRa1T-0 @ '
+                                        '00:14:19].'},
+                            {'name': 'air_permit_path',
+                             'type': 'textarea',
+                             'prompt': 'Name the air district, its attainment status, and whether the '
+                                       'plant stays under the minor new source review 250 tons per year '
+                                       'threshold. Identify the air consultant, the emission controls '
+                                       'proposed, and the plan for emission reduction credit trading and '
+                                       'banking.',
+                             'example': 'Site location checked first, then the plant confirmed under the '
+                                        'minor new source review 250 tons per year threshold [VoltaGrid — '
+                                        'rQu_8zcOaZU @ 00:02:59]. Selective catalytic reduction cutting '
+                                        'NOx 98 percent is the model, after 200 MW was permitted in 21 '
+                                        'days in a severe nonattainment zone [VoltaGrid — rQu_8zcOaZU @ '
+                                        '00:02:16]. Air consultant named; credit banking plan attached.'},
+                            {'name': 'load_buffer_and_protection',
+                             'type': 'textarea',
+                             'prompt': 'Describe the battery layer placed between the generators and the '
+                                       'AI training or inference load, its megawatt and duration sizing, '
+                                       'and the status of compensation, protection and control design for '
+                                       'island mode before generation equipment arrives on site.',
+                             'example': 'Generators never couple directly to AI load; a battery layer '
+                                        'protects the power plant from load swings [Collicutt Energy '
+                                        'Services — CVfxSDNW3G4 @ 00:36:22]. Starting size is about 30 '
+                                        'percent of designed gas capacity at two-hour duration [Uintah '
+                                        'County Economic Development (Official) — 169FuRa1T-0 @ 00:18:34]. '
+                                        'Island-mode protection and control closed out before equipment '
+                                        'lands [The Machine Room Podcast — rED467a2820 @ 00:16:43].'},
+                            {'name': 'fuel_bridge_and_exit',
+                             'type': 'textarea',
+                             'prompt': 'Explain how fuel reaches the plant before the pipeline is built, '
+                                       'who owns the compressors, trucks and trailers, and what happens to '
+                                       'the generation fleet when the grid arrives. State whether the '
+                                       'plant is a bridge or a permanent asset, and price any stranding.',
+                             'example': 'Pipeline gas compressed into CNG and trucked as a virtual '
+                                        'pipeline, with the developer owning compressors, trucks and '
+                                        'trailers [VoltaGrid — rQu_8zcOaZU @ 00:01:10]. Exit planned on '
+                                        'day one: recip units jacked and rolled out or run as a peaker, '
+                                        'and the freed hall converted to data-center space [Collicutt '
+                                        'Energy Services — CVfxSDNW3G4 @ 00:48:27]. Lower utilization is '
+                                        'priced as stranded power.'}],
+                 'completion_gate': 'Worksheet 4 is complete only when the transformer order date and '
+                                    'approved-manufacturer check are recorded, the substation path removes '
+                                    'single-source failure, ERCOT SB6 models are delivered for loads above '
+                                    '75 MW, the behind-the-meter fleet is sized N plus two with a battery '
+                                    'buffer, and island-mode protection and control is closed out before '
+                                    'equipment lands.'},
+                {'worksheet_id': 'ws-05',
+                 'number': 5,
+                 'title': 'BESS Design, Sizing and Revenue Stack',
+                 'purpose': 'Turn the battery from a box of cells into a bankable power plant. This '
+                            'worksheet fixes the power-versus-energy answer, the AC block and skid budget, '
+                            'the EMS setup, commissioning safeguards, grid distance, land, revenue stack '
+                            'and warranty terms before any supply contract is signed.',
+                 'chapter_ref': 'Q9-Q10',
+                 'instructions': ['Answer power or capacity first; chemistry, container format and cost '
+                                  'basis all follow from that single answer.',
+                                  'Fix one revenue application before procurement, because EMS, PCS and '
+                                  'thermal design differ between frequency-response and arbitrage builds.',
+                                  'Measure grid distance in kilometers to the point of connection, using '
+                                  'about 1 km as the target radius and treating anything beyond 5 km as '
+                                  'dead.',
+                                  'Price EMS fees, SCADA and real round-trip efficiency inside the '
+                                  'contract, with the technical specification attached as an annex.',
+                                  'Assume integration, assembly and construction will cause most faults, '
+                                  'and name an accountable party for each commissioning safeguard.'],
+                 'fields': [{'name': 'power_vs_energy_requirement',
+                             'type': 'textarea',
+                             'prompt': 'State whether the site needs power or capacity first, giving the '
+                                       'megawatt swing to buffer and the megawatt-hours to store. Explain '
+                                       'which chemistry and container format matches that answer and how '
+                                       'the footprint changes between the options considered.',
+                             'example': 'Power comes first: a 100 MW site sees GPU swings of 40 to 50 MW '
+                                        '[Energy Institute, University of Texas at Austin — HhLc8bnBSIo @ '
+                                        '00:09:21]. A 20-ft LTO box pushes 3 MW, while an LFP box of the '
+                                        'same footprint holds nearly 10 times the energy but delivers only '
+                                        '2 MW [Energy Institute, University of Texas at Austin — '
+                                        'HhLc8bnBSIo @ 00:10:54].'},
+                            {'name': 'cost_basis_comparison',
+                             'type': 'textarea',
+                             'prompt': 'Compare the shortlisted systems on cost per kilowatt and cost per '
+                                       'kilowatt-hour, and state which basis matters for this application. '
+                                       'Note the chemistry, the vendor quote date, and whether the '
+                                       'procurement route is turnkey or split across separate PCS and '
+                                       'battery vendors.',
+                             'example': 'Energy-priced LFP benchmark at about $550 per kW and roughly $270 '
+                                        'per kWh, against power-priced LTO near $3,500 per kWh but $600 '
+                                        'per kW [Energy Institute, University of Texas at Austin — '
+                                        'HhLc8bnBSIo @ 00:23:14]. Split procurement, with PCS and battery '
+                                        'from different vendors, chosen after turnkey pricing came in '
+                                        'higher [Inel Institute of Technology — 5K3HSEyhIng @ 01:02:58].'},
+                            {'name': 'ac_block_architecture',
+                             'type': 'textarea',
+                             'prompt': 'Lay out the AC block: containers per PCS-transformer skid, energy '
+                                       'per container, C-rate, and cooling method. Break down the '
+                                       'medium-voltage skid budget by PCS, transformer, switchgear and '
+                                       'structure, and flag where an isolation transformer is required for '
+                                       'unstable grid supply.',
+                             'example': 'Four 5 MWh containers per PCS-transformer skid at 0.5C, a 2-hour '
+                                        'charge-discharge rate [Cummins — RRbdgfTqeTA @ 00:03:16]. Skid '
+                                        'budget: PCS 40-50%, transformer 20-30%, switchgear 10-15%, '
+                                        'structure 10-20% [BESS Engineer — H7C34V05QQw @ 00:02:27]. '
+                                        'Isolation transformer placed behind the PCS because site grid '
+                                        'electricity is not stable [ELFBULB Battery — NZa3fz23P5Q @ '
+                                        '00:02:15].'},
+                            {'name': 'ems_configuration',
+                             'type': 'textarea',
+                             'prompt': 'Describe how the EMS is configured to the real site, including '
+                                       'tariff swings, load-shedding pattern and the single revenue '
+                                       'application fixed before procurement. Note whether solar and BESS '
+                                       'share an inverter and the reliability tradeoff that choice '
+                                       'creates.',
+                             'example': 'EMS set to the measured tariff swings and load-shedding pattern, '
+                                        'not to the application the user describes [Gaurav J - '
+                                        'TheElectricalGuy — Bg-6ClEVMSU @ 00:10:13]. Arbitrage is fixed as '
+                                        'the single application before procurement [Gaurav J - '
+                                        'TheElectricalGuy — Bg-6ClEVMSU @ 00:13:38]. Separate solar and '
+                                        'BESS inverters keep one source available during maintenance [Inel '
+                                        'Institute of Technology — 5K3HSEyhIng @ 01:10:40].'},
+                            {'name': 'commissioning_safety_limits',
+                             'type': 'textarea',
+                             'prompt': 'List the commissioning safeguards: monitoring and communication '
+                                       'systems online before racks energize, insulation-loss alarms '
+                                       'routed to a live operator with escalation, and locked limits on '
+                                       'state of charge, voltage, current and temperature. Name the '
+                                       'integration contractor accountable.',
+                             'example': 'Monitoring confirmed online before energizing, after Victoria Big '
+                                        "Battery's coolant leak cascaded across two units [Power System "
+                                        'Operation Slides — 7tln9f5Ak7M @ 00:08:25]. Insulation-loss '
+                                        'alarms escalate to a live operator, since unescalated alarms '
+                                        'preceded fire at Moss Landing by two days [Power System Operation '
+                                        'Slides — 7tln9f5Ak7M @ 00:07:48]. Integration drives 65% of '
+                                        'faults [Power System Operation Slides — Xys0DmLCtVk @ 00:02:08].'},
+                            {'name': 'grid_distance_screen',
+                             'type': 'text',
+                             'prompt': 'Measure the distance from the candidate BESS parcel to the point '
+                                       'of connection, the cable cost per kilometer, and whether '
+                                       'network-upgrade allocations threaten the project. Record the '
+                                       'decision to proceed, re-price or kill before paying for mid-stage '
+                                       'engineering.',
+                             'example': 'Parcel sits 0.8 km from the point of connection, inside the '
+                                        'roughly 1 km radius Harmony uses, where cabling can run up to '
+                                        '£10m per km [Regen — Zmu3gs7y51A @ 00:34:31]. Upgrade allocation '
+                                        'screened before mid-stage engineering, because tens to hundreds '
+                                        'of millions of dollars can kill a project [Modo Energy — '
+                                        'LhT4VVDW7CI @ 00:14:10]. Decision: proceed.'},
+                            {'name': 'land_footprint_and_lease',
+                             'type': 'textarea',
+                             'prompt': 'Record the acreage needed for the planned megawatt-hours, the '
+                                       'energy density assumed per acre, extra acres held for noise '
+                                       'setback, and the lease or purchase terms. Include rent per acre '
+                                       'and any revenue-share percentage offered to the landowner.',
+                             'example': 'Density set at 50 MWh per acre, the lower side of a 100 MWh '
+                                        'ceiling [The Land Department Podcast — bWbMkkvRPWI @ 00:08:20]. '
+                                        'Ten to 20 extra acres bought for noise setback, avoiding a '
+                                        'roughly $2 million sound wall [The Land Department Podcast — '
+                                        'bWbMkkvRPWI @ 00:17:16]. Rent benchmark: £10,000 to £40,000 per '
+                                        'acre per year [Solar Grid Check — 9mZg--94z1I @ 00:00:00].'},
+                            {'name': 'revenue_stack',
+                             'type': 'textarea',
+                             'prompt': 'Break the expected revenue into arbitrage, ancillary or '
+                                       'frequency-response services and capacity, with the share each '
+                                       'stream contributes. Name the route-to-market or EMS provider, its '
+                                       'fee as a share of arbitrage revenue, and SCADA costs written into '
+                                       'the contract.',
+                             'example': 'Stack modeled on arbitrage, ancillary services and capacity, with '
+                                        'location setting the spread, since location is everything for how '
+                                        'batteries make money [Modo Energy — AtMNJWhrmXE @ 00:01:46]. EMS '
+                                        'fees can take 20 to 30 percent of arbitrage, and SCADA can cost '
+                                        'as much as a container [Jerzy Kuzminski — fDBjJyTGWDQ @ '
+                                        '00:22:19]. Both are priced before signing.'},
+                            {'name': 'node_selection_and_timeline',
+                             'type': 'textarea',
+                             'prompt': 'Identify the target node, how many other developers are pursuing '
+                                       'it, and the second- and third-best alternatives evaluated. State '
+                                       'the expected interconnection timeline for the market and any '
+                                       'capacity growth secured inside the same footprint during '
+                                       'development.',
+                             'example': 'Three other developers target the best node, so the second- and '
+                                        'third-best nodes are under evaluation [Clearspot — tFP2z1s7IrM @ '
+                                        '00:06:15]. ERCOT interconnection runs around 3 years against up '
+                                        'to 7 in CAISO. Footprint reserved for growth, following a project '
+                                        'that rose from 200 MW in September 2023 to 300 MW six months '
+                                        'later [Regen — Zmu3gs7y51A @ 00:25:44].'},
+                            {'name': 'warranty_and_supply_contract',
+                             'type': 'textarea',
+                             'prompt': 'Record the warranty state-of-charge window and cycle assumptions, '
+                                       'how dispatch stays inside them, and whether the technical '
+                                       'specification is a contract annex. Note when insurers were brought '
+                                       'in and how battery and transformer suppliers were vetted for '
+                                       'bankability.',
+                             'example': 'Dispatch held between 5% and 95% state of charge and below '
+                                        'warranty cycle assumptions [Clearspot — tFP2z1s7IrM @ 00:32:43]. '
+                                        'Technical specification attached as an annex to the supply '
+                                        'contract [Jerzy Kuzminski — fDBjJyTGWDQ @ 00:23:17]. Insurers '
+                                        'joined before design and supplier choice to vet battery and '
+                                        'transformer bankability [Lockton Europe — UI-9nmVEA9U @ '
+                                        '00:08:38]. Pushing harder wears the battery quicker.'}],
+                 'completion_gate': 'Worksheet 5 is complete only when the power-versus-energy requirement '
+                                    'is stated, the AC block and skid budget are broken down, the EMS is '
+                                    'set to the real site, commissioning limits are locked, the parcel '
+                                    'passes the grid-distance and upgrade-cost screen, and the warranty '
+                                    'window and supplier bankability are documented.'},
+                {'worksheet_id': 'ws-06',
+                 'number': 6,
+                 'title': 'Data Center BESS Integration, Safety and Community Risk',
+                 'purpose': 'Prove the battery can hold an AI campus together at the point of '
+                            'interconnection and that the campus can survive the public hearing. This '
+                            'worksheet covers load swings, islanding, harmonics, fire listing, yard '
+                            'thermal design, incident response, community opposition, noise, water, '
+                            'land-deal signals and the decentralized alternative.',
+                 'chapter_ref': 'Q11-Q12',
+                 'instructions': ['Describe the AI load in milliseconds and in percent of campus load, '
+                                  'never in averages.',
+                                  'Collect validated models, EMT and harmonic studies and UL listing '
+                                  'evidence before any purchase order is released.',
+                                  'Run airflow simulation at 30% and 60% design and test moderate wind '
+                                  'rather than calm air before freezing the container layout.',
+                                  'Treat local opposition as an organized force; record polls, votes, '
+                                  'moratoria and ballot measures with dates and sources.',
+                                  'Document every siting factor in writing, because documentation, not the '
+                                  'score itself, is the legal shield.'],
+                 'fields': [{'name': 'load_swing_profile',
+                             'type': 'textarea',
+                             'prompt': 'Describe the AI training load behavior the battery must absorb, '
+                                       'including step size as a share of campus load, the speed of the '
+                                       'swing, and voltage-dip trip risk. State whether the solution is '
+                                       'software smoothing, hardware, or both.',
+                             'example': 'Training load jumps 30-60% in milliseconds, so a grid-forming '
+                                        'BESS is treated as the price of interconnection. Hardware chosen: '
+                                        "Lyten's mobile system flattened up to 99.5% of load-step "
+                                        'volatility in controlled tests and held voltage within +/-0.4% '
+                                        '[Volta Foundation — 7h6DABJ_xgs @ 00:18:08]. Protection that '
+                                        'makes sense inside the building can create risk outside it [Volta '
+                                        'Foundation — 7h6DABJ_xgs @ 00:05:51].'},
+                            {'name': 'islanding_and_genset_strategy',
+                             'type': 'textarea',
+                             'prompt': 'Record the BESS pickup time at full load, the upstream breaker '
+                                       'opening time, and the total islanding target. State whether the '
+                                       'battery supplements or replaces diesel gensets, the genset-delay '
+                                       'duration sized, and how backup generators handle ride-through '
+                                       'windows.',
+                             'example': 'BESS picks up full load in 20 ms with no bypass, so breaker '
+                                        'opening sets the real limit and the system target is under 0.5 s '
+                                        '[Digital Infrastructure Network — U2apRbTTZuE @ 00:08:45]. '
+                                        'Battery supplements diesel and is sized at 1-2 h of genset delay. '
+                                        'Gensets start but hold transfer until the ride-through window '
+                                        'expires [Keentel Engineering — WN6PtJ3kQDQ @ 00:13:03].'},
+                            {'name': 'harmonics_and_model_validation',
+                             'type': 'textarea',
+                             'prompt': 'List the validated vendor inverter models received, the EMT and '
+                                       'harmonic studies completed, and the total demand distortion '
+                                       'measured at the point of common coupling. Confirm every item was '
+                                       'in hand before the purchase order was released.',
+                             'example': 'Validated inverter models obtained and EMT plus harmonic studies '
+                                        'run, with compliance measured as TDD at the PCC, all before the '
+                                        'purchase order, because a BESS is fundamentally a power '
+                                        'electronic converter with a battery attached [Keentel Engineering '
+                                        '— BTkszCEW7nY @ 00:00:17]. Some of these stability problems can '
+                                        'only be solved at the grid interconnection [Volta Foundation — '
+                                        '7h6DABJ_xgs @ 00:21:07].'},
+                            {'name': 'fire_listing_and_testing',
+                             'type': 'textarea',
+                             'prompt': 'Record the UL 9540 listing, the 9540A edition and '
+                                       'installation-level fire test data, and whether the manufacturer '
+                                       'allows the planned indoor or outdoor installation. Note the energy '
+                                       'and spacing that trigger the large-scale fire test and the local '
+                                       "fire official's stance.",
+                             'example': 'UL 9540 listing and full-scale fire test data confirmed, and the '
+                                        'manufacturer permits outdoor installation [ALL4 Environmental '
+                                        'Consultants — -B0ACVnCSu0 @ 00:18:02]. Units hold 100 kWh at 2 ft '
+                                        'spacing, which triggers the NFPA 855 Chapter 9 test against a 50 '
+                                        'kWh at 3 ft baseline [UL Solutions — TtbHyJ6xzNg @ 00:15:29]. Two '
+                                        'weeks of preparation booked for about one day of testing.'},
+                            {'name': 'container_yard_thermal_layout',
+                             'type': 'textarea',
+                             'prompt': 'Describe the container yard layout, spacing and airflow '
+                                       'assumptions, including exhaust reingestion and intake temperature '
+                                       'limits. Record the dates full-site airflow simulation ran at 30% '
+                                       'and 60% design, the wind case tested, and drainage beneath '
+                                       'high-voltage equipment.',
+                             'example': 'Airflow simulated at 30% and 60% design using worst-case moderate '
+                                        'wind, not calm air [Rand Simulation — LBt7MoTnFFQ @ 00:14:15]. At '
+                                        '50% reingestion, 45C intake climbs to 50C and exhaust to 60C, '
+                                        'nearing the 54C intake threshold [Rand Simulation — LBt7MoTnFFQ @ '
+                                        '00:21:35]. Grading keeps water from gathering beneath '
+                                        'high-voltage equipment [Civil and Structural Engineer — '
+                                        '935Rt3dBZso @ 00:03:10].'},
+                            {'name': 'post_incident_and_scada_plan',
+                             'type': 'textarea',
+                             'prompt': 'Name the cleanup lead and safety person in the post-incident plan, '
+                                       'the handling method for cells holding stranded energy, and the '
+                                       'SCADA data volume and retention specification. Note the '
+                                       'event-transmission tests completed and whether switchgear supports '
+                                       'remote monitoring and control.',
+                             'example': 'Post-incident plan written before energization, naming a cleanup '
+                                        'lead and safety person and covering steel-drum handling of cells '
+                                        'with stranded energy [ALL4 Environmental Consultants — '
+                                        '-B0ACVnCSu0 @ 00:44:47]. SCADA specified for high data volume and '
+                                        'retention, with DNP3 event transmission tested for buffer '
+                                        'overflow [Australian Control Engineering | Smart Utilities — '
+                                        '8eadjA6Pqyo @ 00:00:20]. Digital switchgear supports remote '
+                                        'control.'},
+                            {'name': 'community_opposition_scan',
+                             'type': 'textarea',
+                             'prompt': 'Summarize local sentiment toward the campus, listing the top '
+                                       'grievances raised, any moratoria or ballot measures nearby, and '
+                                       'recent commission votes on comparable projects. Name the '
+                                       "residents' groups active and the meetings where the project could "
+                                       'surface.',
+                             'example': 'Polling shows 65% opposed, with electricity at 72%, water at 64% '
+                                        'and noise at 41% as top grievances [PBS NewsHour — fkB8mt1DEVw @ '
+                                        "00:04:45]. Project Tango's expansion was denied 5-1 by the Palm "
+                                        'Beach County Commission [WPLG Local 10 — iYCYPKhdqcY @ 00:05:09]. '
+                                        'Of 41 Ohio county ballot initiatives, 40 ban sites above 25 MW '
+                                        '[Latitude Media — D7D1CPOoub4 @ 00:50:40].'},
+                            {'name': 'noise_and_water_disclosure',
+                             'type': 'textarea',
+                             'prompt': 'Record the fence-line noise readings in dBC or dBZ for continuous '
+                                       '24/7 operation, not dBA alone, and the cooling water answer. State '
+                                       'whether any closed loop is filled once or draws water daily, and '
+                                       'the indirect water from power generation.',
+                             'example': 'Fence-line noise reported in dBC and dBZ for 24/7 operation '
+                                        'rather than dBA alone [Careers Over Beers Podcast — S_6FoEr75bs @ '
+                                        '00:11:30]. Closed loop confirmed as filled once rather than '
+                                        'drawing water every day [PBS NewsHour — fkB8mt1DEVw @ 00:10:45]. '
+                                        'Indirect water from power generation is estimated at two to three '
+                                        'times direct use [Asianometry — tJYSzc7YkY0 @ 00:05:33].'},
+                            {'name': 'land_deal_and_permit_watch',
+                             'type': 'textarea',
+                             'prompt': 'List any NDA or temporary lease offers tied to the parcel, the '
+                                       'monthly check of diesel-generator air-permit filings, and the '
+                                       'documentation kept for each siting factor. Note any solar pitch '
+                                       'that could pivot to hyperscale after signature.',
+                             'example': 'A temporary solar lease offered under NDA is logged as the '
+                                        'opening move of a data-center deal [Democracy Now! — Ac0-fBK0LVQ '
+                                        '@ 00:03:27]. Diesel-generator air-permit filings are pulled once '
+                                        'a month to catch backup generation before a hearing [Careers Over '
+                                        'Beers Podcast — S_6FoEr75bs @ 01:16:47]. Every siting factor is '
+                                        'documented, since documentation is the legal shield [Jeff Pierson '
+                                        '— CmmE71lfGdw @ 00:06:08].'},
+                            {'name': 'decentralized_alternative',
+                             'type': 'textarea',
+                             'prompt': 'Compare the hyperscale plan against a smaller distributed option '
+                                       'on cost per megawatt, build time, site size and power-queue '
+                                       'position. Note any district-heating pairing, the storage plan for '
+                                       'spiky inference loads on distribution circuits, and the cooling '
+                                       'approach proposed.',
+                             'example': 'Distributed node priced at a claimed $3M per MW and six months, '
+                                        'against $15M per MW and 3-5 years for a 100 MW campus [Latitude '
+                                        'Media — D7D1CPOoub4 @ 00:20:50]. A 20 MW build paired with '
+                                        'district heating gets ahead in power allocation [Data Center '
+                                        'Sales & Marketing Institute (DCSMI) — W92xU-lo1Gc @ 00:02:43]. '
+                                        'Storage covers spiky inference loads.'}],
+                 'completion_gate': 'Worksheet 6 is complete only when the load-swing profile and '
+                                    'islanding timeline are recorded, validated models and TDD at the PCC '
+                                    'are in hand before the purchase order, UL 9540 listing and fire test '
+                                    'data are confirmed, the yard layout passes airflow simulation, a '
+                                    'post-incident plan is written, and community, noise, water and '
+                                    'land-deal risks are documented.'}]}

@@ -1,756 +1,552 @@
-from __future__ import annotations
+"""Volume 046 diagrams: Mass-Tort Case Acquisition, HITECH Record Triage & Law-Firm MSOs."""
 
-VOLUME_046_SUBTITLE = (
-    "The Complete Playbook for Mass-Tort Intake, HITECH Record Triage "
-    "& Law-Firm MSOs: $160,000-$1,250,000 USD in Annual Contracted Revenue; "
-    "Launch with a 1 FT + 3 C Pod (4 People), Scale to 6"
+from typing import Dict, List
+
+VOLUME_046_SUBTITLE: str = (
+    "Pick the tort by timing, sign only records-backed claimants, price every source on "
+    "cost per retained case, demand digital charts at the $6.50 HITECH cap, and wrap the "
+    "firm in a fixed-fee or cost-plus MSO that keeps case selection and settlement with lawyers"
 )
 
-VOLUME_046_POSITIONING_ALTERNATIVES = [
+
+def build_volume_046_diagrams_data() -> List[Dict]:
+    """Return the eight structured diagram specs for Volume 046."""
+    return [
+        {
+            "diagram_id": "diag-01-mass-tort-to-mdl-path",
+            "chapter_number": 1,
+            "title": "From One Injured Family to a Settlement Matrix",
+            "subtitle": "How a mass tort becomes an MDL docket, step by step",
+            "chart_type": "process_flow",
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Mine single-family intake",
+                    "value": "Step 1",
+                    "detail": (
+                        "The baby formula litigation started with one mother who lost a child and "
+                        "went to a firm that did not do mass torts; Stewart & Stewart turned one "
+                        "pressure cooker burn into a known seal-issue pattern."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Front-load the medical records",
+                    "value": "Step 2",
+                    "detail": (
+                        "By the time defendants get medical authorizations, Joseph Lyon's firm has "
+                        "already gathered most of the critical records that substantiate the case."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Clear the JPML numerosity trigger",
+                    "value": "Step 3",
+                    "detail": (
+                        "Searcy Law looks for 20 to 50 cases with hundreds or thousands expected; "
+                        "some MDLs form on fewer than 20, some petitions are denied, and venue "
+                        "cannot be banked on from oral argument."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Fund leadership through a common fund",
+                    "value": "Step 4",
+                    "detail": (
+                        "Executive committee of 4-5 and a steering committee of 2-3 up to 20 "
+                        "self-fund document review, depositions and experts; confirm co-counsel "
+                        "funding before committing."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Bellwether pool sets the settlement matrix",
+                    "value": "Step 5",
+                    "detail": (
+                        "Dolman Law Group describes 50 to 100 claims, maybe a few more, pulled from "
+                        "thousands to gather records and pick representative bellwether cases."
+                    ),
+                },
+            ],
+            "caption": (
+                "A mass tort is the injury; the MDL is the payout vehicle where each plaintiff "
+                "keeps an individual lawsuit after consolidated pretrial work."
+            ),
+            "assumptions_note": (
+                "Thresholds and committee sizes are attributed practitioner claims and vary by "
+                "docket. Roberts tells MDL clients they each get their own trial, while Dolman "
+                "says very few cases are ever tried."
+            ),
+            "note": (
+                "Sources: Searcy Law Video (yIQ0NYXRsmQ), Dolman Law Group (qGQGuFYFCF8), "
+                "Attorney Joseph Lyon (nUl1KZ2z_es), CW33 KDAF (hSl_yaMfnv0), "
+                "Stewart & Stewart Attorneys (4iH4c_z7Iw0), Roberts & Roberts Law Firm (XubmYzsLJEw)."
+            ),
+        },
+        {
+            "diagram_id": "diag-02-raw-lead-leakage-funnel",
+            "chapter_number": 6,
+            "title": "Where the Raw Lead Leaks",
+            "subtitle": "Intake quality versus retainer reality, in percent of raw leads",
+            "chart_type": "funnel",
+            "stages": [
+                {
+                    "label": "Raw leads entering intake",
+                    "value": 100,
+                    "display": "100% baseline",
+                    "conversion": "Starting pool before congruence checks and TrustedForm",
+                    "detail": (
+                        "Case Works runs email and phone congruence checks plus TrustedForm so bad "
+                        "leads die before workup, the largest cost in the chain."
+                    ),
+                },
+                {
+                    "label": "Qualified on a working intake floor",
+                    "value": 70,
+                    "display": "70%, can reach 80-85%",
+                    "conversion": "140 of 200 qualified out of 600 leads",
+                    "detail": (
+                        "Alert Communications benchmark from a 425-staff intake operation that "
+                        "adjusts staffing every 15 minutes."
+                    ),
+                },
+                {
+                    "label": "Qualified on a broken intake floor",
+                    "value": 40,
+                    "display": "Only 20-40%",
+                    "conversion": "Same leads, broken intake",
+                    "detail": (
+                        "Alert Communications contrasts its floor with broken intake that converts "
+                        "only 20% to 40%."
+                    ),
+                },
+                {
+                    "label": "Retainers on one niche tort",
+                    "value": 16,
+                    "display": "16%",
+                    "conversion": "Best-case raw-lead-to-retainer",
+                    "detail": (
+                        "John Casto reports one niche tort converting at 16% with payouts of a "
+                        "couple thousand dollars."
+                    ),
+                },
+                {
+                    "label": "Typical raw-lead retainers",
+                    "value": 4,
+                    "display": "3-4%",
+                    "conversion": "Typical raw-lead-to-retainer, before 20-40% attrition",
+                    "detail": (
+                        "Casto's typical conversion; a DQ filter doubled CPL with no lift. Devin "
+                        "Downey measured about 30% attrition from 2020 to 2024 on signed cases."
+                    ),
+                },
+            ],
+            "caption": (
+                "The signed retainer is the wrong finish line; cost per retained, "
+                "settlement-ready case is the number that matters."
+            ),
+            "assumptions_note": (
+                "Stages combine separate practitioner benchmarks on one percent scale and are not "
+                "a single measured cohort. Signed-case CPA spans $300 to six grand or more."
+            ),
+            "note": (
+                "Sources: Advanced Affiliate with John Casto (Tt2FvNxVuCs), Alert Communications "
+                "(PJEVefyQCxA), Case Works with Devin Downey (My_I0OLHPXc), Blue Sky Legal (n9AQhSIMkNg)."
+            ),
+        },
+        {
+            "diagram_id": "diag-03-numerosity-waterfall",
+            "chapter_number": 3,
+            "title": "Numerosity Math Behind a 10,000-Case Tort",
+            "subtitle": "Joe Fantini's come-forward rate and the Jon and Marc GLP-1 injury split",
+            "chart_type": "waterfall",
+            "bars": [
+                {
+                    "label": "Injured people behind a 10,000-plus tort",
+                    "value": 100000,
+                    "display": "About 100,000",
+                    "kind": "total",
+                },
+                {
+                    "label": "Viable claimants who never come forward",
+                    "value": 90000,
+                    "display": "Only 8-10% step up",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Cases in a 10,000-plus tort",
+                    "value": 10000,
+                    "display": "10,000-plus",
+                    "kind": "result",
+                },
+                {
+                    "label": "Fantini's GLP-1 projection, later doubted",
+                    "value": 10000,
+                    "display": "Past 10,000 projected",
+                    "kind": "total",
+                },
+                {
+                    "label": "GLP-1 vision claims",
+                    "value": 2000,
+                    "display": "A couple thousand",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "GLP-1 gastro claims",
+                    "value": 8000,
+                    "display": "Near 8,000",
+                    "kind": "result",
+                },
+            ],
+            "caption": (
+                "Timing beats raw case strength, and numerosity decides whether a tort ever "
+                "reaches the JPML's more-than-25-case floor."
+            ),
+            "assumptions_note": (
+                "The first three bars show Fantini's generic come-forward math; the last three "
+                "show the GLP-1 injury split. Fantini later doubted GLP-1s would cross 10,000."
+            ),
+            "note": (
+                "Sources: Joe Fantini on LexHive Podcast (jn6XvG1gC9w); Jon and Marc GLP-1 "
+                "power rankings (7TfOtDaTez8)."
+            ),
+        },
+        {
+            "diagram_id": "diag-04-testosterone-bellwether-bars",
+            "chapter_number": 2,
+            "title": "Inside a Bellwether Selection Funnel",
+            "subtitle": "Testosterone MDL pool cuts and post-trial resolution velocity",
+            "chart_type": "horizontal_bars",
+            "unit": "cases",
+            "bars": [
+                {
+                    "label": "Bellwether selection pool",
+                    "min": 600,
+                    "max": 600,
+                    "typical": 600,
+                    "display": "About 600",
+                },
+                {
+                    "label": "Randomized draw",
+                    "min": 100,
+                    "max": 100,
+                    "typical": 100,
+                    "display": "100",
+                },
+                {
+                    "label": "Core discovery cases",
+                    "min": 32,
+                    "max": 32,
+                    "typical": 32,
+                    "display": "32, about four depositions each",
+                },
+                {
+                    "label": "Cases tried",
+                    "min": 8,
+                    "max": 8,
+                    "typical": 8,
+                    "display": "8",
+                },
+                {
+                    "label": "Resolved within a month of a 2020 bellwether",
+                    "min": 700,
+                    "max": 700,
+                    "typical": 700,
+                    "display": "Roughly 700",
+                },
+            ],
+            "caption": (
+                "Bellwethers price the inventory; one trial in February and March 2020 led to "
+                "roughly 700 cases resolving within a month."
+            ),
+            "assumptions_note": (
+                "Selected testosterone cases could be dismissed only with prejudice. More than "
+                "98% of cases never reach trial, per Judge Eduardo Robreno."
+            ),
+            "note": (
+                "Sources: The Federalist Society (vk0M8TfTG9g, LVcpWtomEvU); Upchurch Watson "
+                "White & Max Mediation Group (10ygaMXLKfM)."
+            ),
+        },
+        {
+            "diagram_id": "diag-05-pfas-file-gates",
+            "chapter_number": 5,
+            "title": "Four Gates Before a Toxic-Exposure File Counts",
+            "subtitle": "Proof, exposure, reachability and opt-out paperwork",
+            "chart_type": "decision_tree",
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": "Do medical records ordered across providers and years prove the injury?",
+                    "pass_next": "G2",
+                    "fail_action": (
+                        "Hold the file; belief of exposure or a general PFAS-linked condition is "
+                        "not enough (Napoli Shkolnik)."
+                    ),
+                },
+                {
+                    "gate": "G2",
+                    "question": (
+                        "Is exposure documented via firefighter work history or residency mapped "
+                        "by PWSID or ZIP code?"
+                    ),
+                    "pass_next": "G3",
+                    "fail_action": "Do not count the file; expect deficiency rounds (King Law has seen four).",
+                },
+                {
+                    "gate": "G3",
+                    "question": "Is client contact info current and an estate rep lined up?",
+                    "pass_next": "G4",
+                    "fail_action": (
+                        "Chase moved and deceased claimants now; talc firms are working toward a "
+                        "95% threshold and excluded clients face an uphill fight."
+                    ),
+                },
+                {
+                    "gate": "G4",
+                    "question": "For Roundup opt-outs, is there an original wet signature with ID inside 90 days?",
+                    "pass_next": "Enroll and budget at least 1.5 years to first funds",
+                    "fail_action": "No DocuSign; a missed window sweeps the file into the class.",
+                },
+            ],
+            "caption": (
+                "Toxic-exposure dockets pay only after defendants can count their liability; the "
+                "AFFF MDL drew 131,000 filings and was scrubbed toward 80,000 to 90,000."
+            ),
+            "assumptions_note": (
+                "Gate order is a sequencing of separately reported practitioner checks. Settlement "
+                "lag of at least 1.5 years is Michael Stanisci's rule of thumb."
+            ),
+            "note": (
+                "Sources: King Law (aOm5hBG6t9s), Napoli Shkolnik (S1VC15_WonY), Jon and Marc "
+                "(NHmq2W3F_do, 3Qxw8dtCCns), Steve Smith on Cut to the Chase Network "
+                "(-H3O5pPP-XA), Michael Stanisci (_qBek9AFPiI)."
+            ),
+        },
+        {
+            "diagram_id": "diag-06-law-firm-mso-architecture",
+            "chapter_number": 11,
+            "title": "The Law-Firm MSO Blueprint",
+            "subtitle": "Non-lawyer operations spun out, legal judgment kept inside the firm",
+            "chart_type": "org_architecture",
+            "center": {
+                "role": "MSO (Delaware LLC)",
+                "headcount": "All non-lawyer staff, plus equipment, IP and founder likeness",
+                "focus": (
+                    "Leased back for a fixed monthly or cost-plus fee with 10-15% markups, "
+                    "validated by a third-party fairness opinion"
+                ),
+            },
+            "spokes": [
+                {
+                    "role": "Law firm",
+                    "type": "Licensed practice",
+                    "kpi": (
+                        "Keeps lawyers, engagement letters, trust accounts, hiring, case selection "
+                        "and settlement; mind the UnitedLex improper-control finding"
+                    ),
+                },
+                {
+                    "role": "Fairness opinion provider",
+                    "type": "Third-party validator",
+                    "kpi": "Fee re-priced forward-looking only, on a roughly annual cadence",
+                },
+                {
+                    "role": "PE buyer",
+                    "type": "Equity capital",
+                    "kpi": (
+                        "Buy in at 5x to roll up PI firms at 35% margins; law firms trade at 4-8x "
+                        "versus about 15x for accounting"
+                    ),
+                },
+                {
+                    "role": "Litigation funder",
+                    "type": "Portfolio capital",
+                    "kpi": (
+                        "Burford funds 6-8% of reviewed cases at mid-20s IRRs; 39 funders "
+                        "committed $2.8B in 2025"
+                    ),
+                },
+            ],
+            "caption": (
+                "Spin operations into the MSO, lease them back, and keep every legal decision "
+                "with the lawyers."
+            ),
+            "assumptions_note": (
+                "MSO fees must never be a percentage of profits or revenue. Practitioners disagree "
+                "on mass-tort cash-flow unpredictability and true portfolio diversification."
+            ),
+            "note": (
+                "Sources: Holland & Knight's Trisha Rich and Josh Port on Confido Legal "
+                "(5TjsKzLtyc4), Joe Prencipe, Chris Bogart on TALKSONLAW (1kAfGIkF10g), "
+                "The National Law Review (9teRv9eFpEc), Jon and Marc (U2xFBBUm_IU)."
+            ),
+        },
+        {
+            "diagram_id": "diag-07-device-pharma-dollar-stack",
+            "chapter_number": 4,
+            "title": "Device and Pharma Dockets by the Dollar",
+            "subtitle": "Global deals, inventory settlements and bellwether verdicts",
+            "chart_type": "stacked_comparison",
+            "total_range": "From a $40 million PowerPort verdict to a $1.5 billion Bard hernia mesh deal",
+            "buckets": [
+                {
+                    "label": "Bard hernia mesh global settlement",
+                    "low": 1000000000,
+                    "high": 1500000000,
+                    "notes": (
+                        "About 38,000 cases (about 25,000 MDL plus about 13,000 Rhode Island); "
+                        "administration runs 2 to 3 years."
+                    ),
+                },
+                {
+                    "label": "Abbott NEC inventory settlement",
+                    "low": 675000000,
+                    "high": 675000000,
+                    "notes": (
+                        "Implies about $80,000 per case for about 2,000 cases beyond the "
+                        "$495 million Gill verdict."
+                    ),
+                },
+                {
+                    "label": "Covidien Patterson bellwether verdict",
+                    "low": 88000000,
+                    "high": 88000000,
+                    "notes": "Covidien MDL near 2,500 cases, growing roughly 100 filings a month.",
+                },
+                {
+                    "label": "Bard PowerPort plaintiff verdict",
+                    "low": 40000000,
+                    "high": 40000000,
+                    "notes": "Followed by a record 400 filings in one month; total over 4,000.",
+                },
+            ],
+            "caption": (
+                "Every screen converges on a documented complication, a revision or removal "
+                "surgery, and records naming the exact product."
+            ),
+            "assumptions_note": (
+                "There is no set payout; values vary by brand, injury severity and case details. "
+                "Practitioners split on whether $80,000 NEC cases justify paid acquisition."
+            ),
+            "note": (
+                "Sources: Joe Fantini on Case Works (oc04hOYvUBA) and Jon and Marc (2lQbSEVsxgE, "
+                "P4L_OgCBmDc); Timothy O'Brien on Cut to the Chase Network (JlBWnsNpbyc); "
+                "Drugwatch (y_Jf3JpGO8Y)."
+            ),
+        },
+        {
+            "diagram_id": "diag-08-mso-abs-roadmap",
+            "chapter_number": 12,
+            "title": "Four-Step MSO and ABS Setup Roadmap",
+            "subtitle": "Entity split, fee structure, buyer vetting and Arizona compliance",
+            "chart_type": "timeline_roadmap",
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Split the two companies",
+                    "deliverable": (
+                        "Licensed professional entity owns the practice; an MSO anyone can own is "
+                        "linked by a management service agreement"
+                    ),
+                    "gate": "Non-lawyers never practice law, mirroring the CPOM rule Jackson LLP describes",
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Set the MSA fee",
+                    "deliverable": "Flat monthly fee or cost plus fair margin",
+                    "gate": "Any percentage of law-firm revenue is a no-go (Holt Law)",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Vet the buyer",
+                    "deliverable": "Benchmark offers against 6-8x profit market multiples versus a 4x offer",
+                    "gate": (
+                        "Walk from any pitch that controlling intake means controlling the firm; "
+                        "Shelton rejected about 90% of 70-plus PE-backed MSOs"
+                    ),
+                },
+                {
+                    "week": "Week 4",
+                    "title": "File for the Arizona ABS track",
+                    "deliverable": (
+                        "Compliance lawyer with management experience, 10% ownership disclosure, "
+                        "Arizona-admitted lawyer handling intake and records"
+                    ),
+                    "gate": "Plan for approval of about 4 months, now 6-8 months",
+                },
+            ],
+            "caption": (
+                "Healthcare and law-firm practitioners describe the same split between the "
+                "licensed entity and the management company."
+            ),
+            "assumptions_note": (
+                "Week labels sequence the setup and do not reflect regulator timelines; Rodriguez "
+                "ran March to August while others report 6 to 8 month queues."
+            ),
+            "note": (
+                "Sources: Jackson LLP Healthcare Lawyers (wUqthLNx6Ro), Holt Law (DNk78wbKy5s), "
+                "Frederick Shelton on Ten Golden Rules (I4F5OYZQJuU), Lynda Shely on Law Leaders "
+                "(Tvn12qG9i5s), The Heart of Law Podcast (poe1CAsUc4U, OdPOa3osKC0)."
+            ),
+        },
+    ]
+
+
+VOLUME_046_POSITIONING_ALTERNATIVES: List[Dict] = [
     {
-        "title": "The Fixed-Fee Mass-Tort MSO",
-        "subtitle": (
-            "Build a four-person intake and administration pod around "
-            "documented service costs, independent counsel, and collected invoices."
-        ),
-        "audience": (
-            "Experienced legal-operations managers serving plaintiff firms through "
-            "fair-market fixed or cost-plus administrative service agreements."
-        ),
+        "title": "Docket Underwriting for Mass-Tort Operators",
+        "subtitle": "Timing, numerosity and bellwether math before a dollar moves",
+        "audience": "Mass-tort firm owners and case buyers choosing which torts to enter",
         "research_basis": (
-            "47 U.S.C. 227 and 47 CFR 64.1200 establish relevant telephone "
-            "marketing requirements. State-adopted professional-conduct rules, "
-            "including restrictions corresponding to ABA Model Rule 5.4, determine "
-            "permitted MSO structures. The ABA model text is not itself a "
-            "nationwide statute. Price administrative services independently of "
-            "retainer signatures, legal fees, settlement awards, or litigation outcomes."
+            "Fantini's 8-10% come-forward rate and more-than-25-case JPML floor, Searcy's "
+            "20 to 50 case trigger, Dolman's 50 to 100 claim bellwether pool, and 2x-10x "
+            "purchased-case returns offset by over 20% fake claims."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/47/227",
-            "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "https://www.azcourts.gov/abs",
+            "https://www.youtube.com/watch?v=jn6XvG1gC9w&t=1290s",
+            "https://www.youtube.com/watch?v=yIQ0NYXRsmQ&t=72s",
+            "https://www.youtube.com/watch?v=qGQGuFYFCF8&t=33s",
+            "https://www.youtube.com/watch?v=tjuCUb5CKVY&t=1180s",
+            "https://www.youtube.com/watch?v=hZFw0Dvtfuk&t=618s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 046 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Evidence-Ready Record Desk",
-        "subtitle": (
-            "Turn authorized EMR and pharmacy requests into source-linked "
-            "exposure chronologies, with clinical exceptions routed to qualified staff."
-        ),
-        "audience": (
-            "Medical-record operations specialists supporting mass-tort counsel "
-            "with auditable retrieval, chronology preparation, and deficiency repair."
-        ),
+        "title": "Records-First Acquisition and HITECH Triage",
+        "subtitle": "Cost per retained case, fast intake and $6.50 digital charts",
+        "audience": "Intake directors, records teams and settlement administrators",
         "research_basis": (
-            "45 CFR 164.524 governs individual access to protected health "
-            "information, while 45 CFR 164.508 supplies authorization requirements "
-            "for disclosures requiring authorization. The HHS Ciox notice limits "
-            "how third-party directions and patient-rate fees may be characterized. "
-            "45 CFR 164.504(e) governs business-associate contracts where that "
-            "relationship actually exists; a law-firm vendor is not automatically "
-            "a business associate merely because it handles medical records."
+            "20-40% attrition, 70% qualified-lead conversion on a working floor, the $6.50 "
+            "HITECH digital copy cap, 7 to 10x AI review throughput, and 90% of funds cleared "
+            "in 10 to 14 months."
         ),
         "sources": [
-            "https://www.ecfr.gov/current/title-45/section-164.524",
-            "https://www.ecfr.gov/current/title-45/section-164.508",
-            "https://www.ecfr.gov/current/title-45/section-164.504",
-            "https://www.hhs.gov/hipaa/court-order-right-of-access/index.html",
+            "https://www.youtube.com/watch?v=My_I0OLHPXc&t=203s",
+            "https://www.youtube.com/watch?v=PJEVefyQCxA&t=858s",
+            "https://www.youtube.com/watch?v=uJITvDxd4jA&t=39s",
+            "https://www.youtube.com/watch?v=_HuCGlH6Wyw&t=783s",
+            "https://www.youtube.com/watch?v=8CBO3CgHLvA&t=1322s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 046 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Causation-Aware Intake Platform",
-        "subtitle": (
-            "Separate claimant identity, usable proof, counsel acceptance, "
-            "and vendor collections before expanding campaign exposure."
-        ),
-        "audience": (
-            "Plaintiff-firm operations leaders and separately licensed Arizona "
-            "ABS operators building disciplined claimant acquisition infrastructure."
-        ),
+        "title": "Capital and MSO Structures for Contingency-Fee Firms",
+        "subtitle": "Portfolio funding, cost-plus MSOs and Arizona ABS without losing control",
+        "audience": "Managing partners weighing litigation finance, PE buyers or an ABS license",
         "research_basis": (
-            "Federal Rule of Evidence 702 makes expert reliability central to "
-            "litigation risk; intake acceptance does not resolve general causation. "
-            "Arizona's court-administered ABS licensing framework is a distinct "
-            "ownership pathway, not a blanket exception available to an ordinary "
-            "MSO or to operations in every jurisdiction."
+            "$3,000 per-case workup math, Rocade's $10-50M facilities, 10-15% MSO cost-plus "
+            "markups, about 90% of PE-backed MSOs rejected, the percentage-of-revenue ban, and "
+            "Arizona ABS approval stretching to 6-8 months."
         ),
         "sources": [
-            "https://www.law.cornell.edu/rules/fre/rule_702",
-            "https://www.law.cornell.edu/uscode/text/28/1407",
-            "https://www.azcourts.gov/abs",
+            "https://www.youtube.com/watch?v=gdDT2WSKYs0&t=638s",
+            "https://www.youtube.com/watch?v=Zz1HlCrfQPY&t=446s",
+            "https://www.youtube.com/watch?v=5TjsKzLtyc4&t=1536s",
+            "https://www.youtube.com/watch?v=I4F5OYZQJuU&t=377s",
+            "https://www.youtube.com/watch?v=DNk78wbKy5s&t=171s",
+            "https://www.youtube.com/watch?v=Tvn12qG9i5s&t=745s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 046 YouTube practitioner transcripts.",
     },
 ]
-
-
-def build_volume_046_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-intake-to-collected-service-fee",
-            "process_flow",
-            "Five Handoffs from Inquiry to Collected MSO Fee",
-            "Evidence quality controls delivery; service contracts control compensation.",
-            1,
-            "operating_framework",
-            (
-                "Counsel owns representation decisions and legal advice. The MSO "
-                "performs contracted administrative work at fair-market fixed or "
-                "cost-plus rates. Case milestones measure operations, not a "
-                "percentage interest in legal fees or settlement proceeds."
-            ),
-            (
-                "Maintain separate claimant, evidence, service-delivery, and "
-                "invoice ledgers. A signed retainer is neither usable medical "
-                "proof nor recognized MSO revenue."
-            ),
-            [
-                (
-                    "Raw inquiry",
-                    "Capture provenance and contact permission before routing",
-                    1.0,
-                    (
-                        "Capture source URL, campaign identifier, timestamp, "
-                        "seller-specific contact language, and TrustedForm certificate "
-                        "when available. Use authorized LexisNexis identity checks "
-                        "and restricted identity tokens; a certificate alone proves "
-                        "neither claimant identity nor complete contact eligibility."
-                    ),
-                ),
-                (
-                    "Signed law-firm retainer",
-                    "Counsel accepts representation after duplicate-retainer screening",
-                    2.0,
-                    (
-                        "Route conflict questions, existing representation, and "
-                        "retainer execution to the law firm. Scrub duplicates "
-                        "against authorized firm records and claimant attestations; "
-                        "do not imply access to a universal retainer registry."
-                    ),
-                ),
-                (
-                    "Usable EMR and pharmacy proof",
-                    "Retrieve records through the applicable documented access route",
-                    3.0,
-                    (
-                        "Validate patient identity, recipient, scope, and authority "
-                        "under 45 CFR 164.524 or 164.508 as applicable. Preserve "
-                        "source pages, pharmacy identifiers, service dates, and "
-                        "request receipts; log missing exposure or diagnosis evidence."
-                    ),
-                ),
-                (
-                    "Deficiency-free accepted case",
-                    "Counsel confirms completeness against the current evidence matrix",
-                    4.0,
-                    (
-                        "An LLM may draft ICD-10 and exposure chronologies, but "
-                        "trained reviewers verify every material assertion against "
-                        "the record. Counsel determines legal sufficiency; a "
-                        "qualified clinician resolves clinical interpretation questions."
-                    ),
-                ),
-                (
-                    "Collected MSO vendor fee",
-                    "Match contracted service delivery to invoice and cleared payment",
-                    5.0,
-                    (
-                        "Bill the law firm's operating account for administrative "
-                        "services, not client trust funds. Track ACH settlement, "
-                        "service credits, and replacement-window obligations "
-                        "separately from legal recoveries and claimant cohort counts."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-nested-claimant-quality-cohorts",
-            "funnel",
-            "The Conversion Waterfall That Exposes Acquisition Leakage",
-            "A single illustrative annual cohort, with no entrants added between stages.",
-            6,
-            "illustrative_model",
-            (
-                "Illustrative mature-cohort counts are 1,200, 480, 336, 252, and "
-                "210. Each stage is a strict subset of its predecessor. The final "
-                "count identifies files associated with paid service invoices; "
-                "it is not a count of per-case commissions or settlements."
-            ),
-            (
-                "Conversions are 40.0%, 70.0%, 75.0%, and 83.33% sequentially; "
-                "17.5% of raw inquiries reach the final cohort. Annual Base "
-                "revenue remains $705,000 from contracted services, not 210 "
-                "multiplied by a claimant bounty."
-            ),
-            [
-                (
-                    "Raw inquiry cohort",
-                    "1,200 inquiries enter the same annual measurement cohort",
-                    1200.0,
-                    (
-                        "Illustratively remove 180 duplicate or synthetic inquiries "
-                        "and 540 additional inquiries lacking eligibility, contact, "
-                        "or counsel acceptance before retainer completion. Retain "
-                        "mutually exclusive disposition codes so losses reconcile."
-                    ),
-                ),
-                (
-                    "Signed retainer cohort",
-                    "480 retained claimants represent 40.0% of raw inquiries",
-                    480.0,
-                    (
-                        "Counsel signs only after representation checks. At a "
-                        "fixed 540 other exclusions, increasing duplicate or "
-                        "synthetic losses from 180 to 240 reduces retained "
-                        "claimants to 420 before downstream attrition."
-                    ),
-                ),
-                (
-                    "Usable proof cohort",
-                    "336 usable record packets represent 70.0% of retainers",
-                    336.0,
-                    (
-                        "Reject 144 packets for absent exposure, incompatible "
-                        "dates, missing diagnosis support, or unusable records. "
-                        "The Base retrieval and triage pool is $66,000, equal "
-                        "to $137.50 per retained claimant or $196.43 per usable "
-                        "packet. At 60.0% usability, 288 packets cost $229.17 each."
-                    ),
-                ),
-                (
-                    "Accepted case cohort",
-                    "252 accepted files represent 75.0% of usable packets",
-                    252.0,
-                    (
-                        "Remove 84 files with unresolved firm-defined deficiencies. "
-                        "Define a 30-day contractual service-defect replacement "
-                        "window and charge actual rework to its responsible cost "
-                        "pool. If acceptance falls to 60.0%, expect about 202 files; "
-                        "do not represent rounding as an additional claimant."
-                    ),
-                ),
-                (
-                    "Collected service cohort",
-                    "210 files associate with cleared vendor service invoices",
-                    210.0,
-                    (
-                        "The remaining 42 accepted files associate with invoices "
-                        "still unpaid at the cohort cutoff. Cash status does not "
-                        "reverse properly recognized revenue automatically. Model "
-                        "a 60-day delay on one $58,750 monthly service invoice as "
-                        "a $58,750 working-capital exposure, not lost settlement value."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-case-owner-profit-bridge",
-            "waterfall",
-            "Base Case: $705,000 Revenue to $267,900 Owner Profit",
-            "Six bars reconcile annual service revenue, four cost pools, and the ending total.",
-            3,
-            "illustrative_model",
-            (
-                "Canonical Formula v2.0 totals are fixed; the four expense pools "
-                "are an illustrative allocation of $437,100. The first and last "
-                "bars are totals; the four interior values are signed changes. "
-                "Revenue excludes client trust balances, settlements, and "
-                "pass-through amounts for which the MSO is an agent."
-            ),
-            (
-                "$705,000 - $180,000 - $144,000 - $66,000 - $47,100 = $267,900; "
-                "$267,900 / $705,000 = 38.0%. Conservative: $160,000 revenue, "
-                "$118,400 costs, $41,600 profit at 26%. Scaled: $1,250,000 "
-                "revenue, $625,000 costs, $625,000 profit at 50%."
-            ),
-            [
-                (
-                    "Recognized service revenue",
-                    "$705,000 annual contracted administrative service revenue",
-                    705000.0,
-                    (
-                        "Equivalent to twelve $58,750 monthly service invoices "
-                        "earned through contracted delivery. Apply ASC 606 "
-                        "principal-versus-agent analysis to reimbursed media and "
-                        "retrieval charges; no separate retained-share factor is "
-                        "supplied or invented for this canonical revenue total."
-                    ),
-                ),
-                (
-                    "Acquisition delivery expense",
-                    "Subtract $180,000 for owned campaign delivery costs",
-                    -180000.0,
-                    (
-                        "Allocate $15,000 monthly to media and attributable "
-                        "campaign production where the MSO bears those costs. "
-                        "Audit source quality and vendor credits. Direct "
-                        "law-firm media spend is outside this MSO expense pool."
-                    ),
-                ),
-                (
-                    "Pod delivery labor",
-                    "Subtract $144,000 for contracted and employed delivery capacity",
-                    -144000.0,
-                    (
-                        "Illustrative annual pool: $60,000 employed operations "
-                        "seat, $30,000 intake contractor, $30,000 record contractor, "
-                        "and $24,000 chronology contractor. Treat amounts as loaded "
-                        "planning allowances; contractor seats represent scheduled "
-                        "capacity, not three additional full-time employees."
-                    ),
-                ),
-                (
-                    "Record and triage outlays",
-                    "Subtract $66,000 for retrieval and evidence-processing expenses",
-                    -66000.0,
-                    (
-                        "Illustratively allocate $36,000 to provider and pharmacy "
-                        "retrieval, $18,000 to secure parsing and processing, "
-                        "and $12,000 to external exception work. Keep pod labor "
-                        "outside this pool to prevent double counting."
-                    ),
-                ),
-                (
-                    "Core overhead expense",
-                    "Subtract $47,100 for recurring non-delivery operating support",
-                    -47100.0,
-                    (
-                        "Budget $3,925 monthly for secure systems, insurance, "
-                        "bookkeeping, contract maintenance, and general administration. "
-                        "The supplied $2,500-$14,000 monthly opex range is treated "
-                        "here as core recurring overhead, not total modeled costs "
-                        "of $36,425 monthly."
-                    ),
-                ),
-                (
-                    "Annual owner profit",
-                    "$267,900 ending profit equals a 38.0% net margin",
-                    267900.0,
-                    (
-                        "This is the canonical modeled owner-profit measure "
-                        "after the four expense pools, not a settlement share. "
-                        "Tax treatment, owner distributions, and cash timing "
-                        "remain separate schedules; do not count collections "
-                        "again after recognizing earned service revenue."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-service-rail-contribution-yield",
-            "horizontal_bars",
-            "Compare Service Yield Without Pricing Claimant Outcomes",
-            "Illustrative contribution dollars per delivered hour, before shared overhead.",
-            2,
-            "illustrative_model",
-            (
-                "Hourly equivalents normalize fixed or cost-plus service packages; "
-                "they are neither market quotations nor payments for retaining "
-                "a claimant. Each numeric value equals allocated service revenue "
-                "less direct delivery cost per hour. These unit examples do "
-                "not independently rebuild the canonical annual scorecard."
-            ),
-            (
-                "Choose rails by administrative scope, documented cost, and "
-                "collection reliability. Larger contribution per hour does not "
-                "establish better evidence quality or permit legal fee-sharing."
-            ),
-            [
-                (
-                    "Exposure chronology package",
-                    "$60 contribution per hour through fixed-scope ACH invoices",
-                    60.0,
-                    (
-                        "Allocate $150 service revenue and $90 direct cost per "
-                        "delivered hour for source-linked exposure chronologies. "
-                        "Version the counsel-supplied evidence matrix and reserve "
-                        "clinical interpretation for qualified personnel."
-                    ),
-                ),
-                (
-                    "Pharmacy proof coordination",
-                    "$55 contribution per hour through cost-plus ACH invoices",
-                    55.0,
-                    (
-                        "Allocate $130 service revenue and $75 direct cost per "
-                        "hour coordinating dispensing records and product identifiers. "
-                        "Disclose retrieval charges and price service effort "
-                        "without asserting a universal third-party patient-rate cap."
-                    ),
-                ),
-                (
-                    "Medical device record desk",
-                    "$50 contribution per hour through fixed-scope operating-account payments",
-                    50.0,
-                    (
-                        "Allocate $125 service revenue and $75 direct cost per "
-                        "hour locating implant records, operative reports, and "
-                        "device identifiers. Missing lot numbers trigger a "
-                        "documented deficiency task rather than an invented match."
-                    ),
-                ),
-                (
-                    "Retainer deficiency support",
-                    "$45 contribution per hour through monthly administrative retainers",
-                    45.0,
-                    (
-                        "Allocate $110 service revenue and $65 direct cost per "
-                        "hour resolving incomplete signatures and missing intake "
-                        "fields. Counsel handles conflicts and representation; "
-                        "administrative compensation does not depend on signing."
-                    ),
-                ),
-                (
-                    "Paid-media administration",
-                    "$40 contribution per hour through fixed management invoices",
-                    40.0,
-                    (
-                        "Allocate $100 service revenue and $60 direct cost per "
-                        "hour to campaign administration and source auditing. "
-                        "Exclude direct client advertising spend from these unit "
-                        "figures and do not buy a share of recoveries."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-preflight-statutory-risk-routing",
-            "decision_tree",
-            "Four Pre-Flight Checks Before Contact or Record Processing",
-            "Each failed check routes to a named correction, not automatic case rejection.",
-            5,
-            "operating_framework",
-            (
-                "This is an ordered pass-or-repair decision chain. Apply the "
-                "rules of the operating jurisdiction, communication method, "
-                "record holder, and actual entity structure. A vendor certificate "
-                "or an Arizona affiliation does not replace that analysis."
-            ),
-            (
-                "Proceed only through the permitted service path: independent "
-                "counsel, documented contact authority, valid record access, "
-                "and verified identity and evidence provenance."
-            ),
-            [
-                (
-                    "Entity and compensation",
-                    "Pass fixed or cost-plus scope; otherwise repair the agreement",
-                    1.0,
-                    (
-                        "Check state-adopted Rule 5.4 restrictions, unauthorized "
-                        "practice rules, and attorney-advertising or runner statutes, "
-                        "including California Business and Professions Code "
-                        "sections 6151-6152 where applicable. An Arizona ABS "
-                        "requires actual court licensing and scope verification; "
-                        "do not extend its permissions across unrelated jurisdictions."
-                    ),
-                ),
-                (
-                    "Contact authority",
-                    "Pass documented channel authority; otherwise suppress the contact",
-                    2.0,
-                    (
-                        "Apply 47 U.S.C. 227, 47 CFR 64.1200, applicable state "
-                        "calling rules, revocations, and do-not-call requirements. "
-                        "Use one-to-one seller-specific consent as an operating "
-                        "standard where consent is required; the FCC's 2023 "
-                        "one-to-one amendment was vacated in 2025 and is not "
-                        "a universal federal mandate."
-                    ),
-                ),
-                (
-                    "Record access and security",
-                    "Pass route-specific authority; otherwise correct scope and recipient",
-                    3.0,
-                    (
-                        "Distinguish individual access under 45 CFR 164.524 "
-                        "from authorization under 164.508 and applicable "
-                        "42 CFR Part 2 restrictions. Account for the Ciox "
-                        "limits on third-party directions and fees. Track the "
-                        "access rule's 30-day response period and permitted "
-                        "written extension; assess business-associate duties "
-                        "under 164.504(e) from the actual relationship."
-                    ),
-                ),
-                (
-                    "Identity and causation exposure",
-                    "Pass verified provenance; otherwise quarantine the affected work",
-                    4.0,
-                    (
-                        "Check duplicate identity tokens, existing representation, "
-                        "source-page integrity, and inconsistent exposure dates. "
-                        "Counsel tracks MDL orders under 28 U.S.C. 1407 and "
-                        "expert-admissibility exposure under Federal Rule of "
-                        "Evidence 702. A general-causation dismissal can strand "
-                        "campaign spending even when intake files are complete."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-four-to-six-person-pod",
-            "org_architecture",
-            "Four Core Seats, Two Deliberate Scale Additions",
-            "Base and Conservative use 1 FT + 3 C; Scaled uses 2 FT + 4 C.",
-            11,
-            "operating_framework",
-            (
-                "FT means full-time employee; C means contractor seat with "
-                "explicit scheduled capacity. Numeric values show headcount "
-                "presence: one for each core seat and zero for each scale-only "
-                "seat at Base. The last two stages each add one person at "
-                "Scaled. Client counsel and external advisers are outside this pod."
-            ),
-            (
-                "Base staffing is four people, not four full-time equivalents. "
-                "Add one employee and one contractor only when sustained "
-                "queues, service budgets, and signed contracts support them."
-            ),
-            [
-                (
-                    "Operations lead",
-                    "Core full-time seat owns service scope and invoice reconciliation",
-                    1.0,
-                    (
-                        "Own the service ledger, vendor economics, access "
-                        "permissions, and daily exception queue. Escalate legal "
-                        "decisions to client counsel. Use the Base $60,000 "
-                        "loaded labor allowance without counting owner profit "
-                        "as a second operating expense."
-                    ),
-                ),
-                (
-                    "Intake specialist",
-                    "Core contractor seat verifies provenance and administrative completeness",
-                    1.0,
-                    (
-                        "Maintain contact evidence, identity discrepancies, and "
-                        "duplicate-retainer flags within the $30,000 Base allowance. "
-                        "Do not provide legal advice or independently decide "
-                        "whether the law firm should represent a claimant."
-                    ),
-                ),
-                (
-                    "Record retrieval coordinator",
-                    "Core contractor seat manages authorizations and provider follow-up",
-                    1.0,
-                    (
-                        "Use the $30,000 Base allowance to manage request "
-                        "receipts, scope defects, delivery channels, and provider "
-                        "invoices. Maintain route-specific timers; never assume "
-                        "every provider request shares the individual-access deadline."
-                    ),
-                ),
-                (
-                    "Chronology quality specialist",
-                    "Core contractor seat validates extracted facts against source pages",
-                    1.0,
-                    (
-                        "Use the $24,000 Base allowance for chronology verification "
-                        "and structured deficiency tickets. Restrict LLM access "
-                        "to approved environments; if clinical interpretation is "
-                        "required, assign appropriately qualified personnel."
-                    ),
-                ),
-                (
-                    "Delivery manager",
-                    "Scaled addition creates the second full-time employee seat",
-                    0.0,
-                    (
-                        "Add when sustained record and invoice queues exceed "
-                        "the measured capacity of the four-person pod. Separate "
-                        "daily workload assignment from the lead's contract "
-                        "ownership, and budget within the Scaled $625,000 total "
-                        "expense envelope."
-                    ),
-                ),
-                (
-                    "Evidence exception specialist",
-                    "Scaled addition creates the fourth contractor seat",
-                    0.0,
-                    (
-                        "Add targeted capacity for complex pharmacy histories, "
-                        "missing implant records, and replacement-window rework. "
-                        "The resulting six-person pod is 2 FT + 4 C; "
-                        "do not carry Base labor allocations forward unchanged."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-startup-capital-allocation",
-            "stacked_comparison",
-            "Allocate Startup Capital Before Expanding Acquisition",
-            "Four buckets total $12,000 lean, $30,000 planning, or $50,000 expanded.",
-            4,
-            "illustrative_model",
-            (
-                "Numeric values encode the $30,000 planning stack. Each stage "
-                "also supplies its lean and expanded allocations. The endpoints "
-                "are startup funding envelopes, not annual operating expenses, "
-                "revenue forecasts, or a substitute for receivables funding."
-            ),
-            (
-                "Lean: $3,000 + $2,500 + $2,500 + $4,000 = $12,000. "
-                "Planning: $9,000 + $7,500 + $6,000 + $7,500 = $30,000. "
-                "Expanded: $15,000 + $12,000 + $10,000 + $13,000 = $50,000."
-            ),
-            [
-                (
-                    "Contract and operating design",
-                    "$9,000 planning allocation; $3,000 lean and $15,000 expanded",
-                    9000.0,
-                    (
-                        "Fund jurisdiction-specific service agreements, compensation "
-                        "structure assessment, record-access forms, insurance "
-                        "setup, and initial vendor diligence. Arizona ABS "
-                        "licensing is a separate scoped undertaking, not an "
-                        "assumed deliverable inside this allocation."
-                    ),
-                ),
-                (
-                    "Secure intake and record stack",
-                    "$7,500 planning allocation; $2,500 lean and $12,000 expanded",
-                    7500.0,
-                    (
-                        "Configure restricted CRM roles, MFA, encrypted storage, "
-                        "audit exports, TrustedForm capture, and approved "
-                        "identity-verification integrations. Confirm contractual "
-                        "data handling before connecting an LLM to live records."
-                    ),
-                ),
-                (
-                    "Controlled acquisition pilot",
-                    "$6,000 planning allocation; $2,500 lean and $10,000 expanded",
-                    6000.0,
-                    (
-                        "Purchase a bounded campaign sample with daily spend "
-                        "limits and source-level loss reporting. Require documented "
-                        "contact authority, vendor credit terms, and counsel's "
-                        "current case criteria before increasing campaign exposure."
-                    ),
-                ),
-                (
-                    "Retrieval and cash reserve",
-                    "$7,500 planning allocation; $4,000 lean and $13,000 expanded",
-                    7500.0,
-                    (
-                        "Reserve cash for initial provider charges, contractor "
-                        "timing, and disputed service credits. Even the expanded "
-                        "$13,000 bucket cannot absorb a delayed $58,750 Base "
-                        "monthly invoice; arrange staged billing or additional "
-                        "working capital before committing that delivery volume."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-thirty-day-launch-sprint",
-            "timeline_roadmap",
-            "Thirty Days to a Measured, Contract-Ready Delivery System",
-            "Build the operating evidence before treating acquisition volume as progress.",
-            12,
-            "operating_framework",
-            (
-                "The canonical time to first deal is 1-4 months. This sprint "
-                "establishes readiness and pilot evidence; it does not assume "
-                "a signed customer, completed provider response, or collected "
-                "revenue within thirty days."
-            ),
-            (
-                "Exit with traceable permissions, a reconciled sample cohort, "
-                "a costed service scope, and explicit working-capital needs. "
-                "Expand only against measured capacity and authorized live work."
-            ),
-            [
-                (
-                    "Days 1-7",
-                    "Select one service niche and document the permitted contract structure",
-                    7.0,
-                    (
-                        "Choose one counsel-defined exposure and evidence matrix. "
-                        "Draft fixed or cost-plus scope, jurisdictional rules "
-                        "mapping, defect definitions, and a 30-day contractual "
-                        "replacement window. Record the $705,000 Base revenue "
-                        "and $437,100 expense targets as annual planning figures."
-                    ),
-                ),
-                (
-                    "Days 8-14",
-                    "Configure provenance capture and test record-handling boundaries",
-                    14.0,
-                    (
-                        "Test synthetic intake records through CRM permissions, "
-                        "contact suppression, duplicate checks, and invoice mapping. "
-                        "Verify authorization templates and approved storage. "
-                        "Demonstrate source-page citations and a manual exception "
-                        "route before allowing live record parsing."
-                    ),
-                ),
-                (
-                    "Days 15-21",
-                    "Run a bounded authorized pilot and measure retrieval loss",
-                    21.0,
-                    (
-                        "After customer authorization, launch only the budgeted "
-                        "sample and log every cohort transition. Record provider "
-                        "outlays even when proof fails. If no customer has "
-                        "signed, continue synthetic workflow testing and prospect "
-                        "discussions rather than processing live claimant records."
-                    ),
-                ),
-                (
-                    "Days 22-30",
-                    "Reconcile service economics and publish the next operating decision",
-                    30.0,
-                    (
-                        "Calculate duplicate loss, usable-proof yield, deficiency "
-                        "repair cost, and invoice aging. Keep pending provider "
-                        "requests out of completed-proof counts. Reconcile the "
-                        "six-bar Base bridge, stress one delayed monthly invoice, "
-                        "and set the next month's spend from signed scope and cash."
-                    ),
-                ),
-            ],
-        ),
-    ]
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for (
-            identifier,
-            kind,
-            title,
-            subtitle,
-            chapter,
-            tag,
-            note,
-            caption,
-            stages,
-        ) in specs
-    ]

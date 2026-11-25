@@ -1,719 +1,939 @@
 from __future__ import annotations
 
-CHAPTER_5 = {
-    "id": "Q5",
-    "chapter_id": "Q5",
-    "chapter_number": 5,
-    "question_number": 5,
-    "slug": "beginner-traps-clawbacks-and-asymmetric-failure-modes",
-    "question_prompt": "What kills 80% of newcomers in regulated prediction-market terminals & licensed igaming affiliates, and what forensic metrics detect margin leaks, regulatory landmines, or platform bans before they wipe out capital?",
-    "kicker": "Q5 / THE BIG MONEY PLAYBOOKS",
-    "title": "Beginner Traps, Clawbacks & Asymmetric Failure Modes",
-    "subtitle": "Forensic CPA and NGR Ledgers, CFTC Registration Boundaries, Feed Integrity, and State-Specific Affiliate Circuit Breakers",
-    "layout_template": "expert_insights",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #49, Rank #18 of 49, scores 91/100, but its attractive small-team "
-        "economics depend on separating subscription revenue from contingent gambling "
-        "commissions. This chapter organizes 12 mapped plays into operating controls "
-        "for registration boundaries, feed integrity, attribution, clawbacks, seasonality, "
-        "and platform dependency. The question's 80% figure is a framing device, not "
-        "an established failure statistic. Formula v2.0 annual owner profits remain "
-        "$19,500 Conservative, $137,750 Base, and $325,000 Scaled. Protect those cases "
-        "by reconciling qualified deposits to cash, measuring NGR after contractual "
-        "deductions, suppressing stale probability comparisons, and stopping campaigns "
-        "before acquisition costs exceed collectible commissions. The objective is "
-        "a non-custodial analytics and properly registered affiliate operation, never "
-        "a disguised brokerage, wagering pool, or workaround for restricted venues."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$75,000",
-            "context": "Annual operator revenue; excludes customer deposits and trading volume",
-            "note": "26% net margin; $19,500 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$362,500",
-            "context": "Annual operator revenue; affiliate commissions measured after deductions",
-            "note": "38.0% net margin; $137,750 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$650,000",
-            "context": "Annual operator revenue; separate SaaS, permitted rebates, and affiliate ledgers",
-            "note": "50% net margin; $325,000 annual owner net profit; 2 FT + 3 C (5 people)",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Stop registration drift before a productive feature becomes a different business",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The first fatal trap is treating non-custodial as a universal exemption. "
-                    "A dashboard can avoid possessing customer money yet still cross a "
-                    "registration boundary through solicitation, order handling, individualized "
-                    "advice, or compensation arrangements. Under 7 U.S.C. § 1a and "
-                    "17 CFR § 1.3, activity matters more than the label analytics. "
-                    "An introducing broker can solicit or accept covered orders without "
-                    "accepting the money supporting them; custody is therefore an incomplete "
-                    "test. Evaluate commodity trading adviser status and any applicable "
-                    "publisher exclusion or exemption separately, including 17 CFR § 4.14 "
-                    "where relevant. Keep the initial product read-only: authorized market "
-                    "observations, documented probability calculations, and links whose "
-                    "destination and commercial terms have been checked. Do not accept "
-                    "trading credentials, transmit customer orders, aggregate stakes, or "
-                    "operate pooled accounts. A permitted builder rebate requires a written "
-                    "program and an activity-specific registration assessment, not a "
-                    "marketing representative's reassurance. Record every proposed feature "
-                    "against account access, order influence, compensation, and user "
-                    "interaction. Stop release when any answer changes. This catches the "
-                    "apparently harmless trade button before it converts a subscription "
-                    "product into a materially different operating model."
-                ),
-                (
-                    "The second trap is copying one state's affiliate workflow into every "
-                    "territory. NJ DGE, PA PGCB, and MI MGCB administer distinct supplier "
-                    "and affiliate requirements; classification can depend on services, "
-                    "compensation, and operator relationships. WV and Ontario require "
-                    "their own analysis, and Ontario is a Canadian jurisdiction rather "
-                    "than another American state. The chapter's 21+ access policy is "
-                    "an intentionally restrictive product choice, not a statement that "
-                    "every listed jurisdiction uses the same statutory age. Confirm "
-                    "the audience, operator license, affiliate status, approved advertising "
-                    "terms, responsible-gaming disclosures, and permitted tracking fields "
-                    "for each destination. A visitor's self-declared location is not "
-                    "sufficient evidence for a state-specific acquisition offer. Use "
-                    "lawfully obtained location signals to restrict the portal, while "
-                    "the licensed operator performs its own account, identity, location, "
-                    "and eligibility checks. Suppress offers when signals conflict; "
-                    "never suggest VPN workarounds. Under 16 CFR § 255.5, disclose "
-                    "material affiliate relationships clearly beside recommendations. "
-                    "The third trap is burying that disclosure while calling paid "
-                    "placement an objective ranking. Preserve ranking inputs and "
-                    "creative versions so a complaint can be reconstructed without "
-                    "collecting unnecessary sensitive identity documents."
-                ),
-                (
-                    "Use twelve mapped operating plays as this chapter's control index, "
-                    "not as twelve independently forecast revenue businesses. They are "
-                    "publisher-boundary isolation, jurisdiction-specific offer eligibility, "
-                    "settlement-equivalent probability comparison, stale-feed suppression, "
-                    "free_tier_api_waterfall_multiplexing, signed deposit attribution, "
-                    "cohort-qualified CPA purchasing, deduction-level NGR reconciliation, "
-                    "negative-carryover containment, seasonal acquisition throttling, "
-                    "dependency concentration limits, and evidence-led incident recovery. "
-                    "These descriptive labels organize the chapter; only the waterfall "
-                    "identifier is supplied as an external mapped identifier. The "
-                    "waterfall is the TRACK_1 Multi-Provider Free-Tier API Router & "
-                    "B2B Data-Enrichment Reselling play, applied to authorized business "
-                    "research rather than bettor profiling. Assign an owner and a "
-                    "fallback to every play. For example, if a $300 CPA is conditional "
-                    "on a qualified first deposit, a click and even an account opening "
-                    "are worth zero earned CPA until the contract's conditions hold. "
-                    "If a builder agreement is suspended, disable the compensated "
-                    "link and retain independently licensed subscription analytics. "
-                    "If a jurisdiction becomes uncertain, remove its acquisition "
-                    "offers while preserving permitted read-only material. None of "
-                    "these fallbacks includes offshore crypto routing, unlawful "
-                    "sweepstakes destinations, borrowed accounts, or relabeling "
-                    "compensation to conceal what the operator actually does."
-                ),
-            ],
-            "table": {
-                "caption": "Registration, Advertising, and Destination Controls Before Commercial Exposure",
-                "headers": [
-                    "Failure mechanism",
-                    "Evidence required",
-                    "Early warning threshold",
-                    "Operator circuit breaker",
-                ],
-                "rows": [
-                    [
-                        "Adding order transmission to a read-only terminal",
-                        "Written activity assessment covering solicitation and account access",
-                        "Any feature receives credentials or transmits customer instructions",
-                        "Disable execution features and retain authorized observation tools",
-                    ],
-                    [
-                        "Assuming absence of custody resolves every registration question",
-                        "Separate IB, FCM, and adviser boundary assessments",
-                        "Compensation or personalization changes without an updated assessment",
-                        "Freeze the changed function pending activity-specific classification",
-                    ],
-                    [
-                        "Extending one state registration across unrelated territories",
-                        "Jurisdiction matrix naming operator license and affiliate status",
-                        "Any destination lacks a verified current operating basis",
-                        "Remove that destination from every acquisition offer surface",
-                    ],
-                    [
-                        "Routing restricted visitors through alternative unlicensed gambling destinations",
-                        "Destination allowlist linked to current authorized operator records",
-                        "Any redirect resolves outside the documented destination allowlist",
-                        "Block the redirect and investigate the complete link chain",
-                    ],
-                    [
-                        "Presenting purchased ranking placement as independent editorial selection",
-                        "Visible relationship disclosure and reproducible ranking input history",
-                        "Any compensated recommendation omits its nearby material disclosure",
-                        "Withdraw the recommendation until disclosure and ranking align",
-                    ],
-                    [
-                        "Confusing portal age policy with operator eligibility verification",
-                        "Documented audience policy plus operator-side eligibility responsibility allocation",
-                        "Any acquisition route bypasses the required audience restrictions",
-                        "Suppress offers and repair the affected visitor journey",
-                    ],
-                    [
-                        "Letting informal rebate promises authorize new commercial activity",
-                        "Executed program terms and documented permitted service scope",
-                        "Any payout relies on undocumented eligibility or service assumptions",
-                        "Exclude the rebate forecast and suspend compensated placement",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before the first compensated visitor",
-                "body": (
-                    "A small team can make these checks reproducible without collecting "
-                    "customer funds or imitating the licensed operator's account systems."
-                ),
-                "items": [
-                    "Verify read-only product behavior and document IB, FCM, and adviser boundary analysis against the actual features and compensation.",
-                    "Confirm each operator destination, jurisdiction-specific affiliate classification, required registration, and current contractual permission before publishing its offer.",
-                    "Exercise the 21+ audience restriction, jurisdiction suppression, nearby compensation disclosure, and jurisdiction-appropriate responsible-gaming information.",
-                    "Obtain the precise CPA qualification, reversal, NGR deduction, negative-carryover, reporting, dispute, and payment clauses before assigning acquisition budget.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Make market comparisons and upstream economics survive contact with reality",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The fourth trap is selling apparent cross-venue arbitrage between "
-                    "contracts that do not settle identically. A Kalshi event contract, "
-                    "a ForecastEx contract available through an authorized channel, "
-                    "and a sportsbook proposition can disagree on settlement source, "
-                    "deadline, cancellation, overtime, or exceptional events. An apparent "
-                    "four-cent probability gap is meaningless when one contract counts "
-                    "overtime and another excludes it. Normalize event identifiers, "
-                    "outcome wording, settlement authority, fees, depth, and executable "
-                    "size before presenting a comparison. An illustrative $1 contract "
-                    "bought for $0.48 against an independently estimated 0.51 probability "
-                    "has three cents of modeled gross edge; two cents of transaction "
-                    "cost and one cent of slippage remove it completely. Estimation "
-                    "error can make the result worse. Sportsbook decimal odds of "
-                    "2.10 imply about 47.62% before adjusting for the full market's "
-                    "overround; that is not automatically comparable to a contract's "
-                    "displayed midpoint. Label the observation time and calculation "
-                    "method. Suppress positive-EV labels when matching is incomplete "
-                    "or available depth cannot support the displayed size. The safe "
-                    "fallback is an informational comparison with explicit differences, "
-                    "not an asserted executable hedge or a promised return."
-                ),
-                (
-                    "The fifth trap is mistaking a fast WebSocket connection for a "
-                    "reliable market feed. Transport latency, upstream publication age, "
-                    "sequence gaps, and local processing delay are different measurements. "
-                    "For an illustrative liquid-market service target, flag quote age "
-                    "above one second and suppress actionable comparisons above two "
-                    "seconds; tune both limits to documented venue cadence rather "
-                    "than presenting them as universal rules. A quiet market requires "
-                    "heartbeat evidence, not fabricated price updates. Record monotonic "
-                    "receive time, source timestamps where supplied, sequence identifiers, "
-                    "and snapshot version. On reconnect, rebuild state from the "
-                    "provider's supported snapshot and replay procedure; do not stitch "
-                    "an old order book to new deltas blindly. Separate a genuine "
-                    "empty book from a missing update. The sixth trap is treating "
-                    "accessible feeds as commercially redistributable. Obtain rights "
-                    "for storage, derived displays, attribution, and downstream use "
-                    "from each provider; a public endpoint alone supplies none of "
-                    "those permissions. Use token buckets, bounded retries, and "
-                    "provider-specific budgets. A rate-limit response must reduce "
-                    "traffic rather than trigger account rotation. If authorized "
-                    "live access fails, show clearly timestamped historical analytics "
-                    "or disable the affected instrument instead of silently "
-                    "substituting scraped sportsbook prices."
-                ),
-                (
-                    "The seventh trap sits inside free_tier_api_waterfall_multiplexing: "
-                    "free requests are not free resale rights. Its specified design "
-                    "aggregates 30–60+ B2B data, email-verification, firmographic, DNS, "
-                    "and SERP providers offering roughly 50–1,000 monthly developer "
-                    "lookups each. Forty providers averaging 250 permitted lookups "
-                    "yield 10,000 raw monthly calls, not 10,000 complete enriched "
-                    "records. At two calls per cache miss and an 80% fresh-cache "
-                    "hit rate, 20,000 requested records consume 8,000 calls, leaving "
-                    "2,000 for retries and exceptional fields. Ten customers at "
-                    "$199 monthly produce $1,990 subscription billings; $150 hosting "
-                    "and $400 support leave $1,440 before acquisition, other labor, "
-                    "and overhead. This is a standalone sensitivity example, not "
-                    "additional scorecard revenue. Maintain 40+ interchangeable "
-                    "adapters, Postgres field provenance, expiry rules, and contractual "
-                    "resale flags. Prioritize the local graph cache when quotas "
-                    "tighten, then use permitted direct public-web, DNS, and MX "
-                    "extraction for business records only. MX existence does not "
-                    "prove mailbox deliverability. Exclude providers prohibiting "
-                    "aggregation or resale, honor shared account quotas, and degrade "
-                    "record completeness visibly. Never multiply free accounts, "
-                    "evade blocks, or enrich individual bettors with unrelated "
-                    "personal attributes to rescue unit economics."
-                ),
-            ],
-            "table": {
-                "caption": "Feed Integrity and Free-Tier Waterfall Defects That Manufacture False Margin",
-                "headers": [
-                    "Technical trap",
-                    "Measurement and unit basis",
-                    "Initial operating threshold",
-                    "Fallback preserving product integrity",
-                ],
-                "rows": [
-                    [
-                        "Comparing outcomes with different settlement or cancellation terms",
-                        "Matched settlement fields for every displayed contract pair",
-                        "Any unresolved outcome definition blocks an executable comparison",
-                        "Publish the differences without presenting a synthetic hedge",
-                    ],
-                    [
-                        "Showing an apparent edge before costs and depth",
-                        "Expected payoff less price, fees, and executable slippage",
-                        "Zero or negative modeled net edge suppresses alerts",
-                        "Retain neutral observations with complete calculation input history",
-                    ],
-                    [
-                        "Serving a stale quote through a healthy socket",
-                        "Source age, receive delay, heartbeat age, and sequence continuity",
-                        "Illustrative two-second quote age suspends actionable liquid-market comparisons",
-                        "Display observation time and switch to historical analytics",
-                    ],
-                    [
-                        "Merging old snapshots with unrelated post-reconnect order updates",
-                        "Snapshot version and sequence continuity for each instrument",
-                        "Any unreconciled sequence gap invalidates the reconstructed book",
-                        "Rebuild through the provider's supported recovery and replay",
-                    ],
-                    [
-                        "Redistributing accessible prices without commercially sufficient usage rights",
-                        "Provider terms covering retention, display, attribution, and resale",
-                        "Any missing required permission excludes that commercial feed",
-                        "Remove the affected feed while retaining independently licensed inputs",
-                    ],
-                    [
-                        "Counting free API calls as complete enriched records",
-                        "Calls per miss multiplied by uncached requested records",
-                        "Projected authorized usage above eighty percent triggers capacity planning",
-                        "Prioritize current cache entries and reduce optional enrichment fields",
-                    ],
-                    [
-                        "Treating DNS or MX presence as verified deliverability",
-                        "Field-level provenance and distinct verification confidence classifications",
-                        "Any unsupported deliverability claim blocks the enriched record",
-                        "Return only the narrower technically supported domain finding",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Veteran tactics for preserving evidence and negotiating leverage",
-                "body": (
-                    "The best protection is a reproducible record that survives a "
-                    "provider change, operator dispute, or apparently profitable anomaly."
-                ),
-                "items": [
-                    "Keep a settlement-difference registry for recurring event pairs; one cancellation-rule mismatch should suppress every affected comparison automatically.",
-                    "Replay recorded authorized feed sequences through the exact production normalization version before enabling a revised probability alert.",
-                    "Negotiate deduction definitions, invoice-level reason codes, dispute deadlines, and negative-carryover scope before negotiating a higher headline RevShare.",
-                    "Store provider permission versions beside waterfall adapter versions so quota savings never conceal a changed resale or retention restriction.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Reconcile qualified deposits to collectible commissions, not dashboard celebrations",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The eighth trap is optimizing to raw first-time-depositor events "
-                    "instead of contract-qualified, collectible CPA. An illustrative "
-                    "campaign buys 120 candidate depositors at $180 acquisition "
-                    "cost each, or $21,600. At $300 headline CPA, gross expected "
-                    "commission is $36,000. A 15% invalidation rate removes $5,400, "
-                    "leaving $30,600 before $3,000 servicing costs and $21,600 "
-                    "acquisition costs: only $6,000 contribution. The effective "
-                    "commission per candidate is $255, not $300. Duplicate "
-                    "accounts, existing customers, excluded locations, chargebacks, "
-                    "minimum-deposit failures, and prohibited traffic sources can "
-                    "all defeat qualification, but only the actual contract "
-                    "determines the applicable reasons and timing. Record click, "
-                    "registration, deposit, qualification, reversal, invoice, and "
-                    "cash dates as separate states. Use operator-supported signed "
-                    "S2S callbacks, idempotent event keys, and server-held secrets; "
-                    "never let browser parameters declare an earned commission. "
-                    "Compare mature cohorts rather than yesterday's incomplete "
-                    "traffic. Investigate a five-percentage-point increase in "
-                    "reversals against the mature baseline, and pause a placement "
-                    "if expected contribution per candidate becomes nonpositive. "
-                    "These are initial business triggers, not regulatory limits. "
-                    "Keep reversal reason codes and appeal evidence without "
-                    "retaining raw payment credentials or excess identity records."
-                ),
-                (
-                    "The ninth trap is reading NGR as a universal accounting "
-                    "definition. It is a negotiated commission base whose "
-                    "deductions can include bonuses, taxes, payment charges, "
-                    "administration, jackpot contributions, and adjustments. "
-                    "Start with an illustrative $50,000 gaming gross revenue "
-                    "figure, already distinct from stakes and deposits. Subtract "
-                    "$10,000 bonuses, $5,000 administration, and $5,000 taxes "
-                    "where the agreement permits those deductions: eligible "
-                    "NGR becomes $30,000. A 25% share produces $7,500 before "
-                    "carryover. If the contract carries an $8,000 negative "
-                    "balance at the commission-share level, current cash "
-                    "commission is zero and $500 remains negative. A balance "
-                    "carried at the underlying NGR level would produce a "
-                    "different result; store its level explicitly. This is "
-                    "the tenth trap: assuming each month resets or that losses "
-                    "cannot cross brands, countries, or players. Negotiate "
-                    "ring-fenced balances and a clear expiry or reset where "
-                    "commercially available. Never subtract the same bonus "
-                    "once inside NGR and again from the affiliate invoice. "
-                    "Alert when total deductions rise more than five percentage "
-                    "points against the mature contractual baseline, then "
-                    "reconcile each line before buying further traffic into "
-                    "that cohort."
-                ),
-                (
-                    "Keep the Formula v2.0 scorecard intact while exposing its "
-                    "economic plumbing. Conservative revenue of $75,000 less "
-                    "$55,500 expenses equals $19,500 owner profit, or 26%. "
-                    "Base revenue of $362,500 less $224,750 expenses equals "
-                    "$137,750, or 38.0%. Scaled revenue of $650,000 less "
-                    "$325,000 expenses equals $325,000, or 50%. An illustrative "
-                    "Base allocation is $180,000 subscriptions, $12,500 permitted "
-                    "builder rebates, and $170,000 affiliate commissions after "
-                    "deductions. The affiliate bridge starts at $240,000 "
-                    "provisional commissions and subtracts $40,000 contractual "
-                    "bonus and administration deductions, $18,000 invalidations, "
-                    "and $12,000 share-level carryover absorption. Its $170,000 "
-                    "revenue less $72,000 CAC and $28,000 other affiliate "
-                    "costs contributes $70,000. Subscription and rebate revenue "
-                    "of $192,500 less $124,750 remaining expenses contributes "
-                    "$67,750, reconciling exactly to Base owner profit. These "
-                    "allocations illustrate the supplied totals rather than "
-                    "replace them. Assess principal-versus-agent presentation "
-                    "and variable consideration under ASC 606; neither deposits "
-                    "nor user trading volume become operator revenue. No "
-                    "separate retained_share factor was supplied, so do not "
-                    "invent one or apply another haircut to already net "
-                    "commissions. A cash reserve changes liquidity, not profit "
-                    "again unless a separate expense is actually warranted."
-                ),
-            ],
-            "table": {
-                "caption": "CPA, NGR, and Scorecard Bridges With Explicit Denominators",
-                "headers": [
-                    "Ledger or scenario",
-                    "Revenue bridge and recognition basis",
-                    "Cost or deduction bridge",
-                    "Decision and reconciliation result",
-                ],
-                "rows": [
-                    [
-                        "Illustrative CPA campaign with one hundred twenty candidates",
-                        "One hundred twenty times $300 yields $36,000 provisional commission",
-                        "$5,400 invalidations, $21,600 acquisition, and $3,000 servicing apply",
-                        "$6,000 contribution remains after the complete campaign bridge",
-                    ],
-                    [
-                        "Illustrative NGR agreement before commission-level negative balance",
-                        "$50,000 gaming gross revenue becomes $30,000 eligible NGR",
-                        "$10,000 bonuses plus $5,000 administration plus $5,000 taxes",
-                        "Twenty-five percent share produces $7,500 before carryover absorption",
-                    ],
-                    [
-                        "Illustrative negative balance carried at commission-share level",
-                        "$7,500 current share offsets an $8,000 opening deficit",
-                        "Carryover consumes current commission without creating new deposits",
-                        "Current cash commission is zero with $500 deficit remaining",
-                    ],
-                    [
-                        "Canonical Conservative annual operator scorecard reconciliation basis",
-                        "$75,000 operator revenue excludes deposits and customer trading volume",
-                        "$55,500 total expenses include modeled operating acquisition costs",
-                        "$19,500 owner profit equals a twenty-six percent margin",
-                    ],
-                    [
-                        "Canonical Base annual operator scorecard reconciliation basis",
-                        "$362,500 operator revenue combines separately controlled commercial ledgers",
-                        "$224,750 total expenses reconcile acquisition and remaining operating costs",
-                        "$137,750 owner profit equals a thirty-eight percent margin",
-                    ],
-                    [
-                        "Canonical Scaled annual operator scorecard reconciliation basis",
-                        "$650,000 operator revenue supports the specified five-person operating team",
-                        "$325,000 total expenses remain distinct from customer wagering stakes",
-                        "$325,000 owner profit equals a fifty percent margin",
-                    ],
-                    [
-                        "Illustrative Base affiliate allocation within canonical annual totals",
-                        "$240,000 provisional commissions become $170,000 after specified deductions",
-                        "$72,000 CAC plus $28,000 other affiliate operating costs",
-                        "$70,000 affiliate contribution joins $67,750 subscription and rebate contribution",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the cohort evidence",
-                    "action": "Export authorized event states, contract version, creative identifier, jurisdiction, and operator statement for the same mature cohort.",
-                    "detail": "Preserve event timestamps and stable pseudonymous identifiers; separate reporting delay from actual qualification failure.",
-                },
-                {
-                    "step": 2,
-                    "title": "Rebuild qualification and deduction bridges",
-                    "action": "Match every provisional CPA and NGR line to qualification, reversal, permitted deduction, and carryover records.",
-                    "detail": "Deduplicate callbacks and identify whether each negative balance exists at underlying NGR or commission-share level.",
-                },
-                {
-                    "step": 3,
-                    "title": "Tie accruals to invoices and cash",
-                    "action": "Reconcile earned commission, estimated reversals, invoiced amount, payment timing, and actual bank receipt independently.",
-                    "detail": "Record unresolved differences with owners and contractual dispute deadlines; do not convert delayed cash automatically into a second expense.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reset spend using collectible contribution",
-                    "action": "Calculate cohort contribution after CAC, servicing, contractual deductions, and expected valid reversals before restoring acquisition.",
-                    "detail": "Resume only the supported placement and jurisdiction; preserve the unaffected subscription service throughout the investigation.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Cut spend before seasonality, concentration, and bans turn a leak into insolvency",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The eleventh trap is annualizing NFL-season CPA rates into "
-                    "a twelve-month forecast. Repeat the earlier campaign after "
-                    "budgets tighten: 80 candidate depositors at $220 headline "
-                    "CPA yield $17,600 provisional commission. The same 15% "
-                    "invalidation rate leaves $14,960. Acquisition at $180 per "
-                    "candidate costs $14,400, and $3,000 servicing produces "
-                    "a $2,440 contribution loss. More volume accelerates that "
-                    "loss unless acquisition economics or fixed servicing "
-                    "change. Maintain sport-calendar cohorts, operator budget "
-                    "confirmations, and campaign-level stop dates. Track "
-                    "collectible commission per candidate against fully "
-                    "allocated acquisition and servicing cost, not a blended "
-                    "dashboard return inflated by older profitable cohorts. "
-                    "As an initial policy, stop a placement when its mature "
-                    "expected contribution is nonpositive; investigate sooner "
-                    "when commission per candidate falls 15% against its "
-                    "matched seasonal baseline. Never describe this stress "
-                    "case as a revised canonical forecast. It is a "
-                    "sensitivity test around the supplied Base case. The "
-                    "fallback is to reduce paid affiliate acquisition, "
-                    "retain useful subscription analytics, and renegotiate "
-                    "placement terms. Email reactivation also needs audience "
-                    "permission and suppression handling; repeated messaging "
-                    "to excluded or vulnerable users is not a substitute "
-                    "for a broken CPA spread."
-                ),
-                (
-                    "The twelfth trap is using shortcuts that destroy the "
-                    "underlying distribution account. Fake depositors, self-referral "
-                    "rings, purchased identities, prohibited brand bidding, "
-                    "cloaked landing pages, fabricated testimonials, and "
-                    "unapproved incentivized traffic can trigger commission "
-                    "reversal, termination, and wider liability. Do not "
-                    "experiment with them to discover an operator's tolerance. "
-                    "Store approved traffic sources and creative versions, "
-                    "then reject campaign launches that do not match. "
-                    "Monitor unusual repeated device or payment-linked "
-                    "signals only through operator-authorized, privacy-conscious "
-                    "reporting; shared household patterns alone do not prove "
-                    "fraud. A suspected attribution defect calls for "
-                    "reconciliation, not accusations or concealment. Platform "
-                    "dependency is another asymmetric exposure: a single "
-                    "search account, payment processor, feed license, or "
-                    "affiliate operator can interrupt collections while "
-                    "payroll continues. Treat more than 35% of trailing "
-                    "ninety-day collectible revenue from one commercial "
-                    "counterparty as a concentration alert, not an automatic "
-                    "legal threshold. Maintain exportable customer entitlements, "
-                    "documented recovery procedures, and alternative authorized "
-                    "providers. An alternate account must never be used "
-                    "to evade a suspension. Preserve subscription access "
-                    "where permitted, remove the disputed dependency, and "
-                    "use the provider's documented appeal channel with "
-                    "a complete evidence package."
-                ),
-                (
-                    "Build a daily exception sheet that connects product "
-                    "health to cash survival. Include quote suppression "
-                    "minutes, callback signature failures, unmatched qualified "
-                    "events, mature reversal percentage, deduction ratio, "
-                    "negative balances, receivable aging, and available "
-                    "cash after committed obligations. For an illustrative "
-                    "policy, investigate unmatched events above 1% after "
-                    "the contracted reporting window, quarantine every "
-                    "invalidly signed callback, and escalate invoices "
-                    "fifteen days beyond their contractual due date. "
-                    "Compare unrestricted cash with the next ninety "
-                    "days of payroll, hosting, acquisition commitments, "
-                    "and plausible contractual repayment exposure. The "
-                    "published $1,500–$10,000 monthly opex range is "
-                    "a planning input, not permission to omit CAC "
-                    "or contractor costs from the canonical expense "
-                    "bridge. Stress the largest counterparty's delayed "
-                    "payment and one season of reduced CPA together. "
-                    "If that combined stress consumes the operating "
-                    "buffer, stop discretionary acquisition before "
-                    "cutting monitoring or reconciliation. During an "
-                    "incident, preserve signed event evidence, revoke "
-                    "compromised credentials, disable only the affected "
-                    "surface, and notify contractual counterparts as "
-                    "required. Restore service after replay tests "
-                    "and cash-ledger reconciliation demonstrate that "
-                    "the original defect is closed. A profitable "
-                    "screen is insufficient evidence; collectibility "
-                    "and recoverability are the operating standard."
-                ),
-            ],
-            "table": {
-                "caption": "Seasonality, Platform Dependency, and Cash-Survival Circuit Breakers",
-                "headers": [
-                    "Asymmetric exposure",
-                    "Forensic measurement",
-                    "Initial response threshold",
-                    "Containment and recovery action",
-                ],
-                "rows": [
-                    [
-                        "Post-NFL acquisition spending retains peak-season commission assumptions",
-                        "Mature collectible commission per candidate versus complete acquisition cost",
-                        "Nonpositive expected contribution immediately stops the affected placement",
-                        "Reduce paid acquisition and preserve independently useful subscription analytics",
-                    ],
-                    [
-                        "Campaign quality deterioration hides inside blended historical returns",
-                        "Reversal percentage measured against matched mature seasonal cohorts",
-                        "Five-percentage-point deterioration starts a documented cohort investigation",
-                        "Hold incremental spend while qualification reasons are reconciled",
-                    ],
-                    [
-                        "Unapproved traffic tactics expose every related affiliate payout",
-                        "Traffic-source allowlist matched to creative and destination versions",
-                        "Any prohibited source prevents that campaign from launching",
-                        "Remove the source and preserve evidence for contractual resolution",
-                    ],
-                    [
-                        "Single commercial counterparty controls too much collectible revenue",
-                        "Trailing ninety-day collectible revenue concentration by commercial counterparty",
-                        "Above thirty-five percent prompts diversification and liquidity stress testing",
-                        "Add authorized alternatives without evading account restrictions or suspensions",
-                    ],
-                    [
-                        "Callback defects inflate deposit attribution and expected receivables",
-                        "Signature validity, event uniqueness, and mature unmatched event percentage",
-                        "Invalid signatures quarantine immediately; unmatched events above one percent investigate",
-                        "Replay authenticated records and rebuild the affected qualification cohort",
-                    ],
-                    [
-                        "Delayed invoices consume cash reserved for committed operating obligations",
-                        "Contractual due dates compared with actual unrestricted cash receipts",
-                        "Fifteen days past contractual due date triggers payment escalation",
-                        "Pause discretionary spending and pursue documented collection procedures",
-                    ],
-                    [
-                        "Largest counterparty delay coincides with an off-season commission decline",
-                        "Combined ninety-day cash stress including plausible contractual repayment exposure",
-                        "Projected operating-buffer exhaustion suspends discretionary acquisition before further commitments",
-                        "Protect monitoring, reconciliation, essential service delivery, and recovery capacity",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "An affiliate dashboard reports possibilities; a reconciled cohort ledger proves what the business can keep.",
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Create separate subscription, permitted builder-rebate, CPA, and NGR ledgers, then reconcile the three canonical revenue, expense, and owner-profit cases.",
-        "Document activity-specific IB, FCM, and adviser boundary assessments, and verify affiliate eligibility for every jurisdiction and licensed destination.",
-        "Implement settlement matching, source-age measurement, sequence-gap recovery, and automatic suppression of unsupported positive-EV comparisons.",
-        "Version provider permissions and maintain 40+ authorized waterfall adapters with Postgres provenance, shared-quota accounting, and visibly degraded fallback results.",
-        "Reconcile mature S2S deposit cohorts through qualification, reversals, contractual NGR deductions, carryover balances, invoices, and actual cash receipts.",
-        "Run the off-season CPA and largest-counterparty delay stress together, assigning explicit spend stops, incident owners, and evidence-backed restoration criteria.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "7 U.S.C. § 1a — Commodity Exchange Act definitions",
-            "url": "https://www.law.cornell.edu/uscode/text/7/1a",
-            "relevance": (
-                "Defines relevant regulated roles, including introducing broker, "
-                "futures commission merchant, and commodity trading adviser; "
-                "supports activity-based analysis rather than reliance on product labels."
-            ),
-        },
-        {
-            "title": "7 U.S.C. § 6d — Futures commission merchants and introducing brokers",
-            "url": "https://www.law.cornell.edu/uscode/text/7/6d",
-            "relevance": (
-                "Provides registration and related requirements for covered "
-                "intermediary activity; absence of customer custody does not "
-                "alone resolve introducing-broker status."
-            ),
-        },
-        {
-            "title": "7 U.S.C. § 6m — Registration of commodity trading advisers and commodity pool operators",
-            "url": "https://www.law.cornell.edu/uscode/text/7/6m",
-            "relevance": (
-                "Supports separate evaluation of adviser registration requirements "
-                "and statutory exceptions when analytics become advice concerning "
-                "covered commodity interests."
-            ),
-        },
-        {
-            "title": "17 CFR § 1.3 — Definitions",
-            "url": "https://www.ecfr.gov/current/title-17/chapter-I/part-1/section-1.3",
-            "relevance": (
-                "Supplies regulatory definitions used to assess solicitation, "
-                "order handling, advisory activity, and intermediary classifications "
-                "against the actual product workflow."
-            ),
-        },
-        {
-            "title": "17 CFR § 4.14 — Exemption from registration as a commodity trading adviser",
-            "url": "https://www.ecfr.gov/current/title-17/chapter-I/part-4/section-4.14",
-            "relevance": (
-                "Identifies conditional adviser-registration exemptions that must "
-                "be evaluated on their precise facts; the word publisher is "
-                "not a universal exemption."
-            ),
-        },
-        {
-            "title": "16 CFR § 255.5 — Disclosure of material connections",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
-            "relevance": (
-                "Explains material-connection disclosure principles for endorsements, "
-                "including compensated recommendations and affiliate relationships "
-                "that audiences would not reasonably expect."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 45 — Unfair methods of competition and unfair or deceptive acts or practices",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": (
-                "Provides the statutory basis for addressing deceptive commercial "
-                "representations, including unsupported performance claims, misleading "
-                "rankings, and concealed material commercial relationships."
-            ),
-        },
-    ],
-}
+CHAPTER_5 = {'id': 'Q5',
+ 'chapter_id': 'Q5',
+ 'chapter_number': 5,
+ 'question_number': 5,
+ 'slug': 'event-contract-rulebook-cftc-vs-the-states',
+ 'question_prompt': 'How is the CFTC regulating event contracts, and how are the legal fights between '
+                    'federal regulators, states, Kalshi and Polymarket playing out?',
+ 'kicker': 'Q5 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'The Event-Contract Rulebook: CFTC vs the States',
+ 'subtitle': "The 267-page event-contract proposal, Kalshi's court win over the CFTC, state suits from "
+             'Nevada and Massachusetts, sports-contract cases, no-action letters and mention contracts, '
+             "Chair Selig's first moves and congressional grilling, enforcement views, and on-chain "
+             'DCM/DCO approval',
+ 'layout_template': 'case_study',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners across the CFTC bench, the defense bar, and the exchange side '
+                      'converge on one operating rule: event contracts are swaps or futures, so anything '
+                      'offered to US retail must list on a registered DCM that polices insider trading, '
+                      'manipulation, and contract design itself. Street mechanics are concrete: binary '
+                      'contracts priced 1 to 99 cents, fully collateralized $100 notionals that won '
+                      'Railbird reporting relief, self-certifications that now need heightened '
+                      'manipulation showings, rulebooks around 100 pages, and enforcement that priced a '
+                      "former White House teleprompter operator's roughly 50 mention-market trades at a "
+                      '$65,000 penalty under the up-to-25% cooperation tier. The fault line is '
+                      'jurisdiction: the prediction-market side rides the broad swap definition and '
+                      'federal preemption, while Nevada, Massachusetts, and tribal-gaming advocates in '
+                      'Congress argue sports wagering never left state control, and states now sue '
+                      'directly in state court.',
+ 'key_metrics': [{'label': 'Aggregate Prediction-Market Trading Volume',
+                  'metric': 'Aggregate Prediction-Market Trading Volume',
+                  'value': '$64 billion in 2025; projected to exceed $300 billion in 2026',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Cited as a core reason the CFTC is paying close attention to prediction '
+                             'markets, alongside growth in contract diversity and DCM applications.',
+                  'source': '🎓Profeissor.com🚀Digital Assets, AI & FinTech ([G-sfCPFFZ5o @ 00:02:09])'},
+                 {'label': 'Sports Share of Prediction-Market Volume',
+                  'metric': 'Sports Share of Prediction-Market Volume',
+                  'value': 'About 90% of volume, policed by an enforcement division reported at under 100 '
+                           'people',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Former CFTC enforcement director now at Sidley Austin sizing sports '
+                             'contracts against enforcement headcount.',
+                  'source': 'CNBC Television ([oEiVp7yDA6s @ 00:02:23])'},
+                 {'label': 'Teleprompter Operator Mention-Market Penalty',
+                  'metric': 'Teleprompter Operator Mention-Market Penalty',
+                  'value': '$65,000 penalty on roughly 50 trades, after disgorging a gain of about '
+                           '$100,000 to $107,000',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'CFTC settlement for breaching a duty of trust to the US government; penalty '
+                             'discounted under the third cooperation tier, which allows up to 25% off.',
+                  'source': 'NEXTPredict ([uh3GgMs9ha8 @ 00:19:18])'},
+                 {'label': 'DCM Statutory Core Principles',
+                  'metric': 'DCM Statutory Core Principles',
+                  'value': '23 core principles',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Every prediction market registered as a DCM must comply, covering '
+                             'manipulation prevention, position limits, governance, conflicts, and system '
+                             'safeguards.',
+                  'source': '🎓Profeissor.com🚀Digital Assets, AI & FinTech ([G-sfCPFFZ5o @ 00:05:19])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['The jurisdictional plumbing is not contested among the people building or '
+                              'policing these venues. Profeissor walks through the base layer: event '
+                              'contracts are derivatives that settle on whether a future event occurs, '
+                              'they are mostly structured as binary payouts, and any prediction market '
+                              'offering them to the public generally registers as a designated contract '
+                              'market, the CFTC-regulated exchange layer [4Vqws7tSo8E @ 00:01:37]. Andrew '
+                              'Kim, an appellate and gambling litigator at Goodwin, keeps hammering the '
+                              'same lever from the courtroom side: the statutory definition of a swap '
+                              "turns on the words 'associated with' and 'potential,' which are written so "
+                              'broadly that sports contracts start every case with a structural advantage, '
+                              'which is why he calls the swaps fight a trap for the states [7na4n6_OBK0 @ '
+                              '00:09:54]. Chair Michael Selig closes the escape hatch for crypto builders, '
+                              'stating flatly that derivatives offered to retail must sit on a registered '
+                              'exchange, so there is no option to skip registration and offer product '
+                              "'through the ether'; you either obtain your own exchange or partner with "
+                              'one [0Yj5x9uwKAE @ 00:00:32]. Money Blueprint frames the payoff in business '
+                              "terms: Kalshi's slow, expensive years of federal authorization and "
+                              'litigation built a regulatory moat that geographically restricted rivals '
+                              'cannot copy overnight [IrZSO1sh3ME @ 00:05:32].',
+                              'Every enforcement voice agrees that insider-trading law follows the money '
+                              'onto event contracts. CFTC enforcement director David Miller says there was '
+                              'real confusion before his appointment over whether insider trading and '
+                              'manipulation rules applied to prediction markets; his short answer is that '
+                              'they do, and the division brought its first prediction-market insider case '
+                              'in April alongside SDNY, followed weeks later by a Google-linked case, plus '
+                              'further insider and manipulation actions [uh3GgMs9ha8 @ 00:02:09]. His '
+                              'mechanism is the misappropriation theory: anyone who owes a duty to the '
+                              'source of material nonpublic information, whether an employer, a campaign, '
+                              'or the US government, commits insider trading by trading or tipping on it, '
+                              'and even a trader using their own information can still be charged with '
+                              'manipulation if they move prices with false public statements [uh3GgMs9ha8 '
+                              '@ 00:07:42]. Selig told the House Agriculture Committee the agency runs a '
+                              'zero-tolerance policy on fraud, manipulation, and insider trading against '
+                              'whoever engages in it [e6Xc_HIIRbQ @ 00:07:52]. The former enforcement '
+                              'director now at Sidley Austin adds that the CFTC has regulated and policed '
+                              "event contracts and DCMs for years, with 'will gold hit 5,000' yes/no "
+                              'contracts as the decades-old template, where sellers of gold hedged their '
+                              'downside by taking the no side [oEiVp7yDA6s @ 00:01:49].',
+                              'On contract design, regulators, ex-regulators, and analysts converge on a '
+                              'single risk factor: settlement that a small group of people can steer. '
+                              'Profeissor reads the staff advisory as flagging sports contracts because a '
+                              'handful of athletes hold concentrated control over outcomes, so DCMs must '
+                              'keep settlement objectively determinable, monitor actively, and work with '
+                              'leagues on their integrity frameworks and information asymmetries '
+                              '[G-sfCPFFZ5o @ 00:11:09]. The same channel breaks down the mention-market '
+                              "advisory: because settlement turns on one named person's discrete speech or "
+                              'conduct, staff may treat these contracts as presumptively readily '
+                              'susceptible to manipulation under core principle three, which bars any DCM '
+                              'from listing contracts readily susceptible to manipulation, forcing a '
+                              'heightened showing to list [YIkTrxNRVlc @ 00:02:59]. Dorothy DeWitt, who '
+                              'led the team that designated Kalshi, says she always thought mention '
+                              'markets may be inconsistent with that core principle, and she points to the '
+                              'pullback already underway: Kalshi agreed to pause sports mention markets, '
+                              'Polymarket US does not list them, and Robinhood blocks its customers from '
+                              'trading them [9aHX4chc8YY @ 00:15:06]. Miller adds that the advisory was '
+                              'pretty specific about the risks, that the agency has been concerned about '
+                              'mention markets, and that it is watching [uh3GgMs9ha8 @ 00:29:33].'],
+               'table': {'caption': 'Where the CFTC bench, the litigators, and the analysts agree',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Say',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Event contracts are swaps or futures',
+                                   'Depending on structure, an event contract qualifies as a swap or a '
+                                   'futures contract inside CFTC jurisdiction',
+                                   'Build every product as a listed derivative on a registered DCM, framed '
+                                   'for hedging and price discovery',
+                                   '🎓Profeissor.com🚀Digital Assets, AI & FinTech ([G-sfCPFFZ5o @ '
+                                   '00:03:05])'],
+                                  ['Retail access requires a registered exchange',
+                                   'Selig says derivatives offered to retail must sit on a registered '
+                                   'exchange, never offered through the ether',
+                                   'Either obtain your own DCM license or partner with an existing '
+                                   'registrant before touching US retail',
+                                   'Backpack Exchange Official ([0Yj5x9uwKAE @ 00:00:32])'],
+                                  ['The swap definition is extremely broad',
+                                   "Kim says 'associated with' and 'potential' cover enormous ground, "
+                                   'giving sports contracts a head start',
+                                   'States attacking the swap definition start on weaker footing; '
+                                   'operators lean into that breadth',
+                                   'PredictionNews ([7na4n6_OBK0 @ 00:09:54])'],
+                                  ['Insider trading law fully applies',
+                                   'Miller says the misappropriation theory reaches anyone breaching a '
+                                   'duty to the information source',
+                                   'Screen employees, campaign staff, and government insiders before they '
+                                   'trade on related contracts',
+                                   'NEXTPredict ([uh3GgMs9ha8 @ 00:07:42])'],
+                                  ['Sports contracts carry concentrated integrity risk',
+                                   'Small athlete groups hold concentrated control, so settlement must be '
+                                   'objectively determinable',
+                                   'Wire league integrity frameworks and active trade surveillance into '
+                                   'every sports listing from day one',
+                                   '🎓Profeissor.com🚀Digital Assets, AI & FinTech ([G-sfCPFFZ5o @ '
+                                   '00:11:09])'],
+                                  ['Mention markets are presumptively manipulable',
+                                   'Staff may view mention contracts as presumptively readily susceptible '
+                                   'to manipulation under core principle three',
+                                   'Expect a heightened showing with contract-specific analysis and engage '
+                                   'staff early in design',
+                                   '🎓Profeissor.com🚀Digital Assets, AI & FinTech ([YIkTrxNRVlc @ '
+                                   '00:02:59])'],
+                                  ['Regulatory strategy works as a durable moat',
+                                   'Kalshi spent years on federal authorization and litigation rather than '
+                                   'running offshore',
+                                   'A license plus a favorable ruling is an advantage competitors cannot '
+                                   'copy overnight',
+                                   'Money Blueprint ([IrZSO1sh3ME @ 00:05:32])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["The ticket math is plain. Money Blueprint describes Kalshi's core "
+                              'instrument as a yes-or-no contract on a real-world event, from Fed rate '
+                              'cuts to elections, priced anywhere between 1 cent and 99 cents [IrZSO1sh3ME '
+                              '@ 00:00:50]. R. Capital Intelligence translates that price directly into '
+                              'odds: a contract trading at 70 cents implies a 70% probability, turning '
+                              'opinions into tradable assets [BP1ZGlo9HqM @ 00:01:40]. The former CFTC '
+                              'lawyer behind A Lawyer In Finance Explains walks through the collateral '
+                              'structure on a $100 contract: at 60/40 odds one side posts $60, the other '
+                              'posts $40, and the winner collects the full $100, with everything paid up '
+                              'front instead of initial margin and later top-ups [gpIcoaEPb7Q @ 00:02:20]. '
+                              'That full-collateral design, defined under regulation 39.2 as holding '
+                              'enough to cover the maximum possible loss at liquidation or expiration, is '
+                              'what won Railbird its no-action relief. Railbird plans standard binaries '
+                              'plus variable-payout contracts that might split 10/90 or 20/80, clears '
+                              'through QC Clearing, bars trading through third-party clearing members, '
+                              'publishes timestamp, quantity, and price on its own website instead of '
+                              'reporting to a swap data repository, and keeps records open to the CFTC, '
+                              'SEC, and DOJ; in exchange it skips the unique alphanumeric swap identifiers '
+                              'and the Part 43 and 45 reporting stack [gpIcoaEPb7Q @ 00:05:39].',
+                              'Getting a contract live runs through a fixed pipeline. Profeissor lays out '
+                              'the baseline: DCMs answer to 23 statutory core principles covering '
+                              'manipulation prevention, position limits, governance, conflicts, and system '
+                              'safeguards, and every new event contract goes through either '
+                              'self-certification or CFTC approval, with the staff advisory urging DCMs to '
+                              'engage staff early on novel contract types [G-sfCPFFZ5o @ 00:05:38]. DeWitt '
+                              'says the self-certification package is where the work is: exchanges must '
+                              'run a full manipulation analysis, the CFTC just signaled it is not getting '
+                              'enough information to evaluate filings, and staff has also told DCMs that '
+                              'rulebook changes around incentive programs were insufficient or '
+                              'non-compliant, in rulebooks that typically run about 100 pages [9aHX4chc8YY '
+                              '@ 00:15:41]. For vertically integrated stacks, meaning an affiliated DCM, '
+                              'FCM, DCO, and sometimes a market maker, her firm builds a conflicts matrix, '
+                              'walks each conflict one by one, layers information barriers and procedures, '
+                              'and documents equal treatment, because complaints from rival FCMs or '
+                              'customers land at the CFTC [9aHX4chc8YY @ 00:20:13]. Selig points to '
+                              'Backpack as the full-stack template: the first on-chain DCM and DCO, paired '
+                              'with an FCM registered through the NFA, while other protocols are instead '
+                              'partnering with existing registrants [0Yj5x9uwKAE @ 00:00:16].',
+                              'The contract-design screen comes straight from the special rule. '
+                              "Profeissor's breakdown of the 267-page proposal shows the CFTC's tests for "
+                              'sports: aggregate outcomes of professional or collegiate sports are less '
+                              'concerning, settlement on publicly reported or league-verified data helps, '
+                              'and contracts on player injuries, physical altercations, referee judgment '
+                              "calls, or a single player's discrete actions draw public-interest concern "
+                              'because one player or official could swing settlement [4Vqws7tSo8E @ '
+                              '00:13:28]. Facially neutral contracts get a drafting trap: a contract on '
+                              'whether a foreign government facility stays functional involves war unless '
+                              'its terms expressly exclude the war pathway [4Vqws7tSo8E @ 00:08:04]. For '
+                              "mention markets, the staff's four non-exhaustive factors are whether the "
+                              'speaker faces legal, contractual, or fiduciary duties that deter steering '
+                              'the outcome, exposure to external pressure campaigns, independent '
+                              "verification under public scrutiny, and the DCM's own surveillance, insider "
+                              'identification, and position limits [YIkTrxNRVlc @ 00:03:36]. When '
+                              'settlement goes wrong, DeWitt maps the dispute chain: Kalshi gives a narrow '
+                              'complaint window to an outcome resolution committee that may make a trader '
+                              'whole or settle for half, arbitration follows under member agreements, and '
+                              "she flags the American Arbitration Association's AI product as a "
+                              'cost-efficient fit for $10 to $200 tickets [9aHX4chc8YY @ 00:28:12].'],
+               'table': {'caption': 'Street-level numbers and specs for running a CFTC-regulated '
+                                    'event-contract venue',
+                         'headers': ['Mechanic',
+                                     'Exact Numbers / Specs',
+                                     'Execution Detail',
+                                     'Expert Source'],
+                         'rows': [['Binary contract price band',
+                                   'Every Kalshi yes-or-no contract trades between 1 cent and 99 cents',
+                                   'Contracts span Fed rate cuts, inflation, weather, and election '
+                                   'outcomes on one regulated exchange',
+                                   'Money Blueprint ([IrZSO1sh3ME @ 00:00:50])'],
+                                  ['Price-to-probability conversion',
+                                   'A contract trading at 70 cents implies a 70% market probability',
+                                   'Price reflects collective belief, letting businesses hedge exposures '
+                                   'like rising interest rates',
+                                   'R. Capital Intelligence ([BP1ZGlo9HqM @ 00:01:40])'],
+                                  ['Full up-front collateral',
+                                   '$100 contract at 60/40 odds means $60 and $40 posted at entry',
+                                   'No initial margin or later top-ups, so counterparty default risk '
+                                   'largely disappears',
+                                   'A Lawyer In Finance Explains  1.1M views ([gpIcoaEPb7Q @ 00:02:20])'],
+                                  ['Railbird no-action relief conditions',
+                                   'QC Clearing, no third-party clearing members, website publication of '
+                                   'timestamp, quantity, and price',
+                                   'Relief from unique swap identifiers plus Part 43 and Part 45 swap data '
+                                   'reporting',
+                                   'A Lawyer In Finance Explains  1.1M views ([gpIcoaEPb7Q @ 00:05:39])'],
+                                  ['DCM listing obligations',
+                                   '23 statutory core principles; self-certification or CFTC approval per '
+                                   'new contract',
+                                   'DCMs act as frontline self-regulators that establish trading rules and '
+                                   'monitor activity',
+                                   '🎓Profeissor.com🚀Digital Assets, AI & FinTech ([G-sfCPFFZ5o @ '
+                                   '00:05:38])'],
+                                  ['Rulebook and incentive programs',
+                                   'Typical DCM rulebook runs about 100 pages covering discipline, '
+                                   'trading, and incentives',
+                                   'Staff flagged incentive-program rule filings as insufficient or '
+                                   'non-compliant and issued guidance',
+                                   'PredictionNews ([9aHX4chc8YY @ 00:16:39])'],
+                                  ['Enforcement pricing benchmark',
+                                   'About 50 trades, roughly $100,000 to $107,000 gained, disgorgement '
+                                   'plus $65,000 penalty',
+                                   'Third cooperation tier allows up to 25% off for cooperation and '
+                                   'remediation without self-reporting',
+                                   'NEXTPredict ([uh3GgMs9ha8 @ 00:19:18])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Insider Pro-Tips From the Bench and the Bar',
+                           'body': 'Four plays the practitioners describe for drafting, litigating, and '
+                                   'structuring event contracts under live state-versus-federal pressure.',
+                           'items': ['Draft war-pathway exclusions into any facially neutral geopolitical '
+                                     "contract; under the proposal, a 'facility remains functional' "
+                                     'contract involves war unless its terms expressly carve that pathway '
+                                     'out [🎓Profeissor.com🚀Digital Assets, AI & FinTech — 4Vqws7tSo8E @ '
+                                     '00:08:04].',
+                                     'Keep the fight on the swap definition: Andrew Kim estimates swaps '
+                                     'took roughly 65% of the Third Circuit briefing and 90% of the air '
+                                     'time, a framing he says hands prediction markets an easy win '
+                                     '[PredictionNews — 7na4n6_OBK0 @ 00:28:37].',
+                                     'Expect states to skip the cease-and-desist letter: Nevada sued '
+                                     'Polymarket and Massachusetts sued Kalshi directly in state court, so '
+                                     'operators lose the chance to file first in federal court [A Lawyer '
+                                     'In Finance Explains  1.1M views — MHeX-gRNpCE @ 00:00:36].',
+                                     'Use perpetual structures to kill liquidity cliffs: DeWitt says '
+                                     "liquidity vanishes once an event resolves, while perpetuals' "
+                                     'continuous funding keeps liquidity in place and helps '
+                                     'institutionalize prediction markets [PredictionNews — 9aHX4chc8YY @ '
+                                     '00:23:34].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pick the registration route',
+                              'action': 'Decide between a full-stack license and partnering with an '
+                                        'existing registrant.',
+                              'detail': 'Backpack came in with its own exchange and clearing house as the '
+                                        'first on-chain DCM and DCO, plus an FCM registered with the NFA; '
+                                        'others partner with registrants instead [Backpack Exchange '
+                                        'Official — 0Yj5x9uwKAE @ 00:00:16].'},
+                             {'step': 2,
+                              'title': 'Run the three-step special-rule screen',
+                              'action': 'Test every contract: is it an event contract, does its reference '
+                                        'event involve an enumerated activity, and is it contrary to the '
+                                        'public interest.',
+                              'detail': 'The CFTC asks whether the reference event itself is unlawful '
+                                        'activity, terrorism, assassination, war, or gaming, not whether '
+                                        'trading the contract is gaming; elections and economic indicators '
+                                        'fall out of scope [🎓Profeissor.com🚀Digital Assets, AI & FinTech — '
+                                        '4Vqws7tSo8E @ 00:03:25].'},
+                             {'step': 3,
+                              'title': 'Build a heavy self-certification file',
+                              'action': 'Submit a full manipulation analysis under core principle three '
+                                        'with every self-certified contract.',
+                              'detail': 'DeWitt says the CFTC just signaled it is not getting enough '
+                                        'information in self-certifications, and mention markets in '
+                                        'particular face a presumption of manipulability that demands a '
+                                        'heightened showing [PredictionNews — 9aHX4chc8YY @ 00:15:41].'},
+                             {'step': 4,
+                              'title': 'Stand up surveillance and conflicts controls',
+                              'action': 'Identify known insiders and controllers, calibrate position '
+                                        'limits and surveillance, and document a conflicts matrix.',
+                              'detail': 'Staff expects DCMs to identify potential controllers and known '
+                                        'insiders and calibrate position limits, accountability, '
+                                        'reporting, record keeping, and surveillance to the risks those '
+                                        'persons present [🎓Profeissor.com🚀Digital Assets, AI & FinTech — '
+                                        'YIkTrxNRVlc @ 00:05:20].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The deepest fault line is whether a sports event contract is a derivative '
+                              'or a bet wearing a federal wrapper. The CFTC position, laid out by '
+                              'Profeissor.com, is that event contracts serve price discovery and risk '
+                              'management on centralized exchanges, gambling is entertainment with no real '
+                              'economic purpose, and only the CFTC regulates the space [G-sfCPFFZ5o @ '
+                              '00:04:25]. At a House Agriculture hearing a lawmaker put two betting lines '
+                              'in front of Chair Michael Selig, argued consumers cannot tell the '
+                              'sportsbook from the prediction market, and branded a contract on whether '
+                              'Jose Altuve homers tonight a bet rather than a hedge; Selig answered that '
+                              'these markets must be well-functioning and comprehensively regulated by the '
+                              'CFTC [e6Xc_HIIRbQ @ 00:02:41]. The former CFTC lawyer behind A Lawyer In '
+                              'Finance Explains goes after the commodity hook itself: the commodity '
+                              'definition is broad, but whether it reaches the Giants beating the Cowboys '
+                              'is an even bigger stretch than the motion-picture receipt futures '
+                              'Commissioner Summers dissented on in 2010 [MHeX-gRNpCE @ 00:07:33]. '
+                              "Goodwin's Andrew Kim reads the same statute the opposite way: the swap "
+                              "definition, built on 'associated with' and 'potential', is so broad that "
+                              'attacking it is a trap for the states, and the only question that matters '
+                              'is whether Congress left the states any room [7na4n6_OBK0 @ 00:06:54].',
+                              'Practitioners also split on where the jurisdiction war gets won. A Lawyer '
+                              'In Finance Explains reports the states rewrote their playbook: '
+                              'cease-and-desist letters let Kalshi run to federal court and win '
+                              'injunctions, so Nevada sued Polymarket and Massachusetts sued Kalshi '
+                              "straight in state court, forcing any removal fight onto the states' terms "
+                              '[MHeX-gRNpCE @ 00:00:36]. Andrew Kim calls the scoreboard even: the states '
+                              'hold Maryland and the Crypto.com Nevada ruling, while Kalshi beat the '
+                              'California tribes at the preliminary-injunction stage and looks headed for '
+                              'a win in the Third Circuit appeal against New Jersey [7na4n6_OBK0 @ '
+                              '00:00:50]. The second split is over how the public-interest screen should '
+                              'run. Dorothy DeWitt, who led the CFTC team that designated Kalshi, says the '
+                              "agency's 2011-2012 rule bans enumerated categories like war, terrorism and "
+                              'gaming wholesale, while the statute contemplates contract-by-contract '
+                              'review, and that mismatch has never been fixed; a later Biden-era proposal '
+                              'to patch it was withdrawn under the new administration [9aHX4chc8YY @ '
+                              '00:06:41]. The 267-page proposal unpacked by Profeissor.com answers with a '
+                              'three-step test: is it an event contract, does the reference event itself '
+                              'involve an enumerated activity, and only then a case-by-case, multi-factor '
+                              'public-interest analysis [4Vqws7tSo8E @ 00:04:18].',
+                              'The go-to-market split is onshore registration versus offshore speed. Money '
+                              "Blueprint frames Kalshi's founders as taking the painfully slow, high-risk "
+                              'route of years knocking on CFTC doors, DCM status in late 2020, then suing '
+                              'their own regulator, while Polymarket set up offshore and leaned on crypto '
+                              'to stay outside American borders [IrZSO1sh3ME @ 00:02:14]. Selig argues the '
+                              'onshore path is the only one that holds: without a regulated U.S. route '
+                              'these markets will develop offshore anyway, and U.S. persons with true '
+                              'demand will find ways to reach them [SYcmPpHGHIo @ 00:07:40]. On Backpack, '
+                              'Selig lays out two onshore plays, either building a full-stack exchange and '
+                              'clearinghouse plus an NFA-registered FCM or partnering with existing '
+                              'registrants, and warns there is no lighter on-chain rulebook, because that '
+                              'would be unfair to incumbents who already comply [0Yj5x9uwKAE @ 00:00:32]. '
+                              'Mention markets split the camp a third way: the staff advisory explained by '
+                              'Profeissor.com treats them as presumptively readily susceptible to '
+                              'manipulation, yet stops short of a ban, letting a well-designed contract '
+                              'with DCM trading rules, surveillance and controls rebut the presumption, '
+                              "judged on four factors running from the controller's legal and "
+                              'confidentiality duties to independent verification and public scrutiny '
+                              '[YIkTrxNRVlc @ 00:03:18].'],
+               'table': {'caption': 'Practitioner fault lines on the CFTC-versus-states event-contract '
+                                    'rulebook',
+                         'headers': ['Fault Line',
+                                     "One Camp's Playbook",
+                                     "Opposing Camp's Playbook",
+                                     'Expert Source'],
+                         'rows': [['Enforcement staffing versus the size of the market',
+                                   'Former enforcement director says the Division of Enforcement is '
+                                   'reportedly under 100 people while sports is about 90% of volume',
+                                   'Selig tells lawmakers the agency is adequately staffed, is adding AI '
+                                   'and surveillance tools, and calls under-resourced claims fake news',
+                                   'CNBC Television ([oEiVp7yDA6s @ 00:02:06]); Congress Clips '
+                                   '([e6Xc_HIIRbQ @ 00:07:03])'],
+                                  ['Mention markets: fixable design problem or structurally broken',
+                                   'Staff advisory sets a rebuttable presumption of manipulation that '
+                                   'strong contract design, trading rules and surveillance can overcome',
+                                   'DeWitt has always viewed mention markets as maybe inconsistent with '
+                                   'Core Principle Three; Kalshi paused sports mentions and Robinhood '
+                                   'blocks them',
+                                   '🎓Profeissor.com🚀Digital Assets, AI & FinTech ([YIkTrxNRVlc @ '
+                                   '00:03:18]); PredictionNews ([9aHX4chc8YY @ 00:15:23])'],
+                                  ['Whether the industry needs a formal contract taxonomy',
+                                   'Industry voices at the Innovation Advisory Committee said a taxonomy '
+                                   'freezes a snapshot in time and blocks flexible innovation',
+                                   'DeWitt says a taxonomy unlocks correlated liquidity for hedge funds '
+                                   'and sharpens insider-trading surveillance for exchanges and the CFTC',
+                                   'PredictionNews ([9aHX4chc8YY @ 00:34:02])'],
+                                  ['Whether perpetuals legally count as futures contracts',
+                                   "CME's Terry Duffy argues no expiration date means no futures contract "
+                                   'and only Congress can change futurity',
+                                   'Selig says the Commodity Exchange Act never defines futures contract '
+                                   'and courts read futurity as future price with daily funding payments',
+                                   'CNBC Television ([SYcmPpHGHIo @ 00:01:28])'],
+                                  ['Categorical bans versus contract-by-contract public interest review',
+                                   'DeWitt says the 2011-2012 rule bans war, terrorism and gaming '
+                                   'categories outright with no clear public interest review',
+                                   'Kim says a standing policy is fine but the statute anticipates '
+                                   'individualized determinations for each particular contract',
+                                   'PredictionNews ([9aHX4chc8YY @ 00:06:41]); PredictionNews '
+                                   '([7na4n6_OBK0 @ 00:15:48])'],
+                                  ['Regulated exchange model versus crypto platform model',
+                                   'Kalshi operates inside U.S. regulatory law, trades in U.S. dollars and '
+                                   'fought legal battles for political event contracts',
+                                   'Polymarket runs on crypto rails for global users, operating outside '
+                                   'the traditional U.S. regulatory framework like an unpermitted lemonade '
+                                   'stand',
+                                   'R. Capital Intelligence ([BP1ZGlo9HqM @ 00:03:28]); R. Capital '
+                                   'Intelligence ([BP1ZGlo9HqM @ 00:04:36])'],
+                                  ['State litigation strategy: attack swaps or argue preemption',
+                                   'Nevada and New Jersey push hard on whether contracts are swaps tied to '
+                                   'any potential economic consequence',
+                                   'Kim says that fight starts on weak footing and the real contest is '
+                                   'field, obstacle and impossibility preemption',
+                                   'PredictionNews ([7na4n6_OBK0 @ 00:11:56])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive trap is assuming insider-trading law stops at the stock '
+                              'market. CFTC Enforcement Director David Miller says the confusion is over: '
+                              'insider trading and manipulation rules apply to prediction markets, the '
+                              'Maduro raid case brought in April with SDNY was the first prediction-market '
+                              'insider case, and a Google-linked case followed weeks later [uh3GgMs9ha8 @ '
+                              '00:01:47]. The theory is misappropriation, a duty owed to the source of the '
+                              'information, whether employer or government. White House teleprompter '
+                              'operator Gabriel Perez breached that duty with roughly 50 trades on mention '
+                              "markets tied to the president's speeches, gained about $100,000 to "
+                              '$107,000, disgorged it, and paid a $65,000 penalty pegged to a one-time '
+                              'gain and cut under the new cooperation tiers [uh3GgMs9ha8 @ 00:22:00]. '
+                              'Going offshore does not cover you: in the Van Dyke and Google-linked cases '
+                              "the alleged trades ran on Polymarket's international platform, yet the CFTC "
+                              'still established venue in the Southern District of New York [uh3GgMs9ha8 @ '
+                              '00:26:14]. Political heat compounds the exposure: a lawmaker cited '
+                              'suspicious, well-timed trading ahead of the US-Iran ceasefire and sent '
+                              'Polymarket a letter demanding it preserve and share data on suspicious '
+                              'national-security bets [e6Xc_HIIRbQ @ 00:08:28].',
+                              'Litigation is where balance sheets bleed. R. Capital Intelligence lays out '
+                              'the sequence: in 2022 the CFTC charged Polymarket for running an '
+                              'unregistered derivatives platform open to Americans and Polymarket paid a '
+                              "civil penalty, then in 2023 the CFTC blocked Kalshi's congressional-control "
+                              "contracts [BP1ZGlo9HqM @ 00:05:40]. Money Blueprint calls Kalshi's November "
+                              '2023 suit against its own regulator a bet-the-company move; for months the '
+                              'company bled cash on legal fees until a September 2024 ruling and the D.C. '
+                              "Circuit's October 2, 2024 refusal of an emergency stay let the contracts "
+                              'list [IrZSO1sh3ME @ 00:03:44]. The election win did not travel to sports '
+                              'contracts or into state court. A Lawyer In Finance Explains notes that '
+                              'Nevada, the only case to reach trial, went against Kalshi, which guts the '
+                              'likelihood-of-success prong needed for injunctions elsewhere, and '
+                              'Massachusetts left open whether existing positions with residents get '
+                              'frozen or cancelled [MHeX-gRNpCE @ 00:01:46]. Andrew Kim warns judicial '
+                              "reversals are a live risk on both sides: Judge Gordon granted Kalshi's "
+                              "first injunction, then signaled a 'what have I done' turn, and an opinion "
+                              'built on thin outcome-versus-occurrence reasoning sets itself up for Ninth '
+                              'Circuit reversal [7na4n6_OBK0 @ 00:02:45].',
+                              'Inside the exchange, the traps are operational. Dorothy DeWitt says the '
+                              'CFTC just told DCMs their self-certifications lack enough information to '
+                              'judge compliance with the core principles, and that rulebook filings on '
+                              'incentive programs and affiliated market makers have been insufficient or '
+                              'non-compliant [9aHX4chc8YY @ 00:15:58]. DeWitt also flags a sleeper '
+                              'liability: KPI contracts on whether a company beats its numbers may be '
+                              'unregistered security-based swaps, and a civil judge could hand any losing '
+                              'trader a rescission right against the exchange, which is class-action '
+                              "territory [9aHX4chc8YY @ 00:32:33]. Andrew Kim adds that the CFTC's core "
+                              'principles were never written for app-based retail trading or sports '
+                              'integrity, the PredictionNews host recalls the 2019 Robinhood tragedy as '
+                              'the kind of scandal that sticks, and Kim points to the 18-versus-21 age '
+                              'conflict as a classic impossibility-preemption paper cut [7na4n6_OBK0 @ '
+                              '00:24:24]. The economics check runs the other way for fully collateralized '
+                              'products: the Railbird no-action letter, decoded by A Lawyer In Finance '
+                              'Explains, drops swap-reporting duties because both sides post the full $100 '
+                              'up front, removing counterparty-default risk, provided trades are published '
+                              'on the website with timestamp, quantity and price and no third-party '
+                              'clearing members are allowed [gpIcoaEPb7Q @ 00:04:23].'],
+               'table': {'caption': 'Firsthand traps, what practitioners saw, and the economics behind '
+                                    'each',
+                         'headers': ['Trap',
+                                     'What Practitioners Saw Firsthand',
+                                     'Operator Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Trading on information sourced from your own job',
+                                   "Perez placed about 50 mention-market trades on the president's "
+                                   'speeches and gained roughly $100,000 to $107,000',
+                                   'Full disgorgement plus a $65,000 penalty after an up to 25% '
+                                   'cooperation discount for exemplary cooperation',
+                                   'NEXTPredict ([uh3GgMs9ha8 @ 00:23:08])'],
+                                  ['Candidates and campaign staff betting on their own races',
+                                   'Exchanges punished candidates who bet on themselves; Miller cites '
+                                   'staff trading on knowledge of internal polling',
+                                   'A signed confidentiality agreement makes it misappropriation, and the '
+                                   'CFTC says it will come after you',
+                                   'NEXTPredict ([uh3GgMs9ha8 @ 00:13:55])'],
+                                  ['Assuming offshore venues sit beyond U.S. enforcement reach',
+                                   'Van Dyke and Google-linked trades allegedly ran on the Polymarket '
+                                   'international platform, not the U.S. entity',
+                                   'The CFTC still established jurisdiction and venue in the Southern '
+                                   'District of New York',
+                                   'NEXTPredict ([uh3GgMs9ha8 @ 00:26:14])'],
+                                  ['Listing mention markets without a heightened manipulation showing',
+                                   'Kalshi paused sports mention markets, Polymarket US lists none, and '
+                                   'Robinhood blocks customers from trading them',
+                                   'Expect Core Principle Three scrutiny and self-certifications judged as '
+                                   'lacking enough supporting information',
+                                   'PredictionNews ([9aHX4chc8YY @ 00:14:47])'],
+                                  ['Facially neutral or single-player-controlled contract terms',
+                                   'A facility-remains-functional contract involves war unless the '
+                                   'contract terms expressly exclude the war pathway',
+                                   'Injury, physical altercation, referee judgment call and discrete '
+                                   'player-action contracts draw public-interest concern',
+                                   '🎓Profeissor.com🚀Digital Assets, AI & FinTech ([4Vqws7tSo8E @ '
+                                   '00:08:04]); 🎓Profeissor.com🚀Digital Assets, AI & FinTech ([4Vqws7tSo8E '
+                                   '@ 00:13:43])'],
+                                  ['Relying on federal injunctions after a state-court ambush',
+                                   'Nevada sued Polymarket and Massachusetts sued Kalshi directly in state '
+                                   'court with no cease-and-desist first',
+                                   "Nevada's trial loss weakens the likelihood-of-success showing needed "
+                                   'to keep trading while cases play out',
+                                   'A Lawyer In Finance Explains  1.1M views ([MHeX-gRNpCE @ 00:05:25])'],
+                                  ['Listing company KPI contracts under only a CFTC license',
+                                   'Cboe lists KPIs under SEC registration while Kalshi has listed similar '
+                                   'KPI contracts for several years',
+                                   'A civil judge could find an unregistered security, opening rescission '
+                                   'rights and class-action style exposure',
+                                   'PredictionNews ([9aHX4chc8YY @ 00:32:33])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear These Four Checks Before You List or Trade',
+                           'body': 'Each check below maps to a pitfall that practitioners watched turn '
+                                   'into an enforcement action, a lost injunction or a regulator '
+                                   'complaint. Clear all four before a contract goes live or a position '
+                                   'goes on.',
+                           'items': ['Kill any trade on a contract premised on your job, your campaign or '
+                                     'your employer: Miller says a signed confidentiality agreement turns '
+                                     'it into misappropriation and the CFTC will come after you '
+                                     '[NEXTPredict — uh3GgMs9ha8 @ 00:14:13].',
+                                     'Even when trading your own information, never push public '
+                                     'misstatements to move price; Miller treats that as market '
+                                     'manipulation with or without insider-trading liability [NEXTPredict '
+                                     '— uh3GgMs9ha8 @ 00:09:44].',
+                                     'Before listing a mention contract, identify potential controllers '
+                                     'and known insiders and calibrate position limits, position '
+                                     'accountability, reporting and surveillance to the risks they present '
+                                     '[🎓Profeissor.com🚀Digital Assets, AI & FinTech — YIkTrxNRVlc @ '
+                                     '00:05:20].',
+                                     'If you run an affiliated DCM, FCM, DCO and market maker, build a '
+                                     'conflicts matrix and document equal treatment of every member during '
+                                     'incidents, because complaints from rival FCMs go straight to the '
+                                     'CFTC [PredictionNews — 9aHX4chc8YY @ 00:20:43].']}}],
+ 'pull_quote': '"To the extent that people think that the Division of Enforcement or myself are shrinking '
+               'violets and we\'re not doing our job, they are sorely mistaken." — NEXTPredict '
+               '(uh3GgMs9ha8 @ 00:18:02).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Engage CFTC staff early in contract design and submit contract-specific analysis '
+                      'plus every relevant safeguard before listing any mention market '
+                      '[🎓Profeissor.com🚀Digital Assets, AI & FinTech — YIkTrxNRVlc @ 00:05:55].',
+                      'Settle sports contracts on publicly reported, league-verified or objectively '
+                      'determinable data and favor sports with recognized governing bodies, published '
+                      'rules and disciplinary procedures [🎓Profeissor.com🚀Digital Assets, AI & FinTech — '
+                      '4Vqws7tSo8E @ 00:13:28].',
+                      'Work with sports leagues and governing bodies to map their integrity frameworks and '
+                      'information asymmetries, and run active monitoring on outcomes a small group of '
+                      'athletes can control [🎓Profeissor.com🚀Digital Assets, AI & FinTech — G-sfCPFFZ5o @ '
+                      '00:11:26].',
+                      'Rework rulebook filings on incentive programs and market makers to match the staff '
+                      'guidance flagging prior changes as insufficient or non-compliant [PredictionNews — '
+                      '9aHX4chc8YY @ 00:16:55].',
+                      'For fully collateralized $100 binary contracts, copy the Railbird conditions: clear '
+                      'through a separate clearinghouse, publish timestamp, quantity and price on the '
+                      'website, bar third-party clearing members, and keep records open to the CFTC, SEC '
+                      'and DOJ [A Lawyer In Finance Explains  1.1M views — gpIcoaEPb7Q @ 00:06:08].',
+                      'Choose the registration path up front: a full-stack DCM plus DCO plus '
+                      'NFA-registered FCM like Backpack, or a partnership with existing registrants, '
+                      'because retail derivatives must sit on a registered exchange [Backpack Exchange '
+                      'Official — 0Yj5x9uwKAE @ 00:00:16].'],
+ 'statutory_citations': [{'title': 'NEXTPredict — View from the CFTC ft. CFTC Director of Enforcement '
+                                   'David Miller & CNN | NEXTPredict NYC 2026 [00:01:47]',
+                          'url': 'https://www.youtube.com/watch?v=uh3GgMs9ha8&t=107s',
+                          'relevance': 'Primary practitioner testimony on insider trading, manipulation '
+                                       'enforcement and cooperation discounts in prediction markets.'},
+                         {'title': '🎓Profeissor.com🚀Digital Assets, AI & FinTech — 🔮How will CFTC regulate '
+                                   'Event Contracts⚽️ and 🇺🇸Prediction Markets? 📦Unpacking new 267-page '
+                                   'rule 📖 [00:03:43]',
+                          'url': 'https://www.youtube.com/watch?v=4Vqws7tSo8E&t=223s',
+                          'relevance': 'Primary practitioner testimony on the three-step special rule '
+                                       'analysis and public interest factors for event contracts.'},
+                         {'title': 'PredictionNews — Andrew Kim on Kalshi Cases, Sports Contracts & '
+                                   'Prediction Markets | Prediction Market Movers [00:06:54]',
+                          'url': 'https://www.youtube.com/watch?v=7na4n6_OBK0&t=414s',
+                          'relevance': 'Primary practitioner testimony on the swaps definition, preemption '
+                                       'theories and appellate outlook in the Kalshi state cases.'},
+                         {'title': 'A Lawyer In Finance Explains  1.1M views — Prediction Market Legal '
+                                   'War: Why States are Suing Kalshi & Polymarket. Former CFTC Lawyer '
+                                   'Explains [00:00:36]',
+                          'url': 'https://www.youtube.com/watch?v=MHeX-gRNpCE&t=36s',
+                          'relevance': "Primary practitioner testimony on the states' shift to state-court "
+                                       'filings and the limits of CFTC exclusive jurisdiction.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '4Vqws7tSo8E',
+                       'title': '🔮How will CFTC regulate Event Contracts⚽️ and 🇺🇸Prediction Markets? '
+                                '📦Unpacking new 267-page rule 📖',
+                       'channel': '🎓Profeissor.com🚀Digital Assets, AI & FinTech',
+                       'author': '🎓Profeissor.com🚀Digital Assets, AI & FinTech',
+                       'text': "One of the most important points in the CFTC's proposal is how the CFTC "
+                               'interprets the word involve; the focus is on whether the reference event '
+                               'in the event contract is an enumerated activity.',
+                       'tip': "One of the most important points in the CFTC's proposal is how the CFTC "
+                              'interprets the word involve; the focus is on whether the reference event in '
+                              'the event contract is an enumerated activity.',
+                       'timestamp': 276,
+                       'timestamp_seconds': 276,
+                       'timestamp_label': '[00:04:36]',
+                       'url': 'https://www.youtube.com/watch?v=4Vqws7tSo8E&t=276s',
+                       'markdown': '[00:04:36](https://www.youtube.com/watch?v=4Vqws7tSo8E&t=276s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oEiVp7yDA6s',
+                       'title': 'Former CFTC enforcement director on regulating prediction markets',
+                       'channel': 'CNBC Television',
+                       'author': 'CNBC Television',
+                       'text': 'By some reports, the Division of Enforcement, which I used to lead at the '
+                               'CFTC, is under 100 people.',
+                       'tip': 'By some reports, the Division of Enforcement, which I used to lead at the '
+                              'CFTC, is under 100 people.',
+                       'timestamp': 126,
+                       'timestamp_seconds': 126,
+                       'timestamp_label': '[00:02:06]',
+                       'url': 'https://www.youtube.com/watch?v=oEiVp7yDA6s&t=126s',
+                       'markdown': '[00:02:06](https://www.youtube.com/watch?v=oEiVp7yDA6s&t=126s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'G-sfCPFFZ5o',
+                       'title': 'Prediction Markets🔮& Events Contracts🏈: how will 🇺🇸CFTC regulate them?',
+                       'channel': '🎓Profeissor.com🚀Digital Assets, AI & FinTech',
+                       'author': '🎓Profeissor.com🚀Digital Assets, AI & FinTech',
+                       'text': 'The CFTC staff advisory specifically calls out sports-related event '
+                               'contracts as something that warrants special attention by DCMs, because '
+                               'often a small group of athletes can have concentrated control over '
+                               'outcomes.',
+                       'tip': 'The CFTC staff advisory specifically calls out sports-related event '
+                              'contracts as something that warrants special attention by DCMs, because '
+                              'often a small group of athletes can have concentrated control over '
+                              'outcomes.',
+                       'timestamp': 651,
+                       'timestamp_seconds': 651,
+                       'timestamp_label': '[00:10:51]',
+                       'url': 'https://www.youtube.com/watch?v=G-sfCPFFZ5o&t=651s',
+                       'markdown': '[00:10:51](https://www.youtube.com/watch?v=G-sfCPFFZ5o&t=651s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SYcmPpHGHIo',
+                       'title': 'CFTC Chair Michael Selig tackles perpetual futures ‘misconceptions’',
+                       'channel': 'CNBC Television',
+                       'author': 'CNBC Television',
+                       'text': "We recognize that these products are available offshore, and if we don't "
+                               'create a regulated path here in the US, then the markets will just flood '
+                               'offshore.',
+                       'tip': "We recognize that these products are available offshore, and if we don't "
+                              'create a regulated path here in the US, then the markets will just flood '
+                              'offshore.',
+                       'timestamp': 460,
+                       'timestamp_seconds': 460,
+                       'timestamp_label': '[00:07:40]',
+                       'url': 'https://www.youtube.com/watch?v=SYcmPpHGHIo&t=460s',
+                       'markdown': '[00:07:40](https://www.youtube.com/watch?v=SYcmPpHGHIo&t=460s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uh3GgMs9ha8',
+                       'title': 'View from the CFTC ft. CFTC Director of Enforcement David Miller & CNN | '
+                                'NEXTPredict NYC 2026',
+                       'channel': 'NEXTPredict',
+                       'author': 'NEXTPredict',
+                       'text': 'Prior to this year there was a lot of confusion as to whether or not '
+                               'insider trading and market manipulation rules and laws applied in the '
+                               'prediction markets; short answer, they do.',
+                       'tip': 'Prior to this year there was a lot of confusion as to whether or not '
+                              'insider trading and market manipulation rules and laws applied in the '
+                              'prediction markets; short answer, they do.',
+                       'timestamp': 107,
+                       'timestamp_seconds': 107,
+                       'timestamp_label': '[00:01:47]',
+                       'url': 'https://www.youtube.com/watch?v=uh3GgMs9ha8&t=107s',
+                       'markdown': '[00:01:47](https://www.youtube.com/watch?v=uh3GgMs9ha8&t=107s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uh3GgMs9ha8',
+                       'title': 'View from the CFTC ft. CFTC Director of Enforcement David Miller & CNN | '
+                                'NEXTPredict NYC 2026',
+                       'channel': 'NEXTPredict',
+                       'author': 'NEXTPredict',
+                       'text': 'If you cooperate and remediate, then you can have up to a 25% discount '
+                               'absent extenuating circumstances.',
+                       'tip': 'If you cooperate and remediate, then you can have up to a 25% discount '
+                              'absent extenuating circumstances.',
+                       'timestamp': 1388,
+                       'timestamp_seconds': 1388,
+                       'timestamp_label': '[00:23:08]',
+                       'url': 'https://www.youtube.com/watch?v=uh3GgMs9ha8&t=1388s',
+                       'markdown': '[00:23:08](https://www.youtube.com/watch?v=uh3GgMs9ha8&t=1388s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IrZSO1sh3ME',
+                       'title': 'How 2 MIT Grads Took the CFTC to Court—and Won',
+                       'channel': 'Money Blueprint',
+                       'author': 'Money Blueprint',
+                       'text': 'For months, Kalshi bled cash on legal fees while federal lawyers tried to '
+                               'dismiss the case.',
+                       'tip': 'For months, Kalshi bled cash on legal fees while federal lawyers tried to '
+                              'dismiss the case.',
+                       'timestamp': 224,
+                       'timestamp_seconds': 224,
+                       'timestamp_label': '[00:03:44]',
+                       'url': 'https://www.youtube.com/watch?v=IrZSO1sh3ME&t=224s',
+                       'markdown': '[00:03:44](https://www.youtube.com/watch?v=IrZSO1sh3ME&t=224s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tgQX7NOuUyk',
+                       'title': 'CFTC Chair Selig’s First Big Move',
+                       'channel': 'Braeden Anderson',
+                       'author': 'Braeden Anderson',
+                       'text': 'Prediction markets are not waiting for the law to catch up, sportsbooks '
+                               'and state regulators are not waiting either, and the system is going to '
+                               'settle around whoever builds the most coherent, defensible structure.',
+                       'tip': 'Prediction markets are not waiting for the law to catch up, sportsbooks and '
+                              'state regulators are not waiting either, and the system is going to settle '
+                              'around whoever builds the most coherent, defensible structure.',
+                       'timestamp': 471,
+                       'timestamp_seconds': 471,
+                       'timestamp_label': '[00:07:51]',
+                       'url': 'https://www.youtube.com/watch?v=tgQX7NOuUyk&t=471s',
+                       'markdown': '[00:07:51](https://www.youtube.com/watch?v=tgQX7NOuUyk&t=471s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BP1ZGlo9HqM',
+                       'title': 'Unpacking Prediction Markets: Kalshi (CFTC-regulated) and Polymarket '
+                                '(crypto-based)',
+                       'channel': 'R. Capital Intelligence',
+                       'author': 'R. Capital Intelligence',
+                       'text': 'In 2022, the Commodity Futures Trading Commission charged Polymarket for '
+                               'operating an unregistered derivatives platform accessible to US users, and '
+                               'Polymarket settled the case and paid a civil penalty.',
+                       'tip': 'In 2022, the Commodity Futures Trading Commission charged Polymarket for '
+                              'operating an unregistered derivatives platform accessible to US users, and '
+                              'Polymarket settled the case and paid a civil penalty.',
+                       'timestamp': 340,
+                       'timestamp_seconds': 340,
+                       'timestamp_label': '[00:05:40]',
+                       'url': 'https://www.youtube.com/watch?v=BP1ZGlo9HqM&t=340s',
+                       'markdown': '[00:05:40](https://www.youtube.com/watch?v=BP1ZGlo9HqM&t=340s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MHeX-gRNpCE',
+                       'title': 'Prediction Market Legal War: Why States are Suing Kalshi & Polymarket. '
+                                'Former CFTC Lawyer Explains',
+                       'channel': 'A Lawyer In Finance Explains  1.1M views',
+                       'author': 'A Lawyer In Finance Explains  1.1M views',
+                       'text': 'Now instead of sending a cease and desist letter and having somebody file '
+                               'in federal court, Nevada filed in state court against Polymarket without '
+                               'giving them a cease and desist notice.',
+                       'tip': 'Now instead of sending a cease and desist letter and having somebody file '
+                              'in federal court, Nevada filed in state court against Polymarket without '
+                              'giving them a cease and desist notice.',
+                       'timestamp': 36,
+                       'timestamp_seconds': 36,
+                       'timestamp_label': '[00:00:36]',
+                       'url': 'https://www.youtube.com/watch?v=MHeX-gRNpCE&t=36s',
+                       'markdown': '[00:00:36](https://www.youtube.com/watch?v=MHeX-gRNpCE&t=36s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'e6Xc_HIIRbQ',
+                       'title': 'CFTC Chair Faces Tough Questions on Fast-Growing Prediction Markets',
+                       'channel': 'Congress Clips',
+                       'author': 'Congress Clips',
+                       'text': 'Airlines hedge fuel costs, farmers hedge crop prices; that is very '
+                               'different from putting money on the outcome of a baseball game.',
+                       'tip': 'Airlines hedge fuel costs, farmers hedge crop prices; that is very '
+                              'different from putting money on the outcome of a baseball game.',
+                       'timestamp': 125,
+                       'timestamp_seconds': 125,
+                       'timestamp_label': '[00:02:05]',
+                       'url': 'https://www.youtube.com/watch?v=e6Xc_HIIRbQ&t=125s',
+                       'markdown': '[00:02:05](https://www.youtube.com/watch?v=e6Xc_HIIRbQ&t=125s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7na4n6_OBK0',
+                       'title': 'Andrew Kim on Kalshi Cases, Sports Contracts & Prediction Markets | '
+                                'Prediction Market Movers',
+                       'channel': 'PredictionNews',
+                       'author': 'PredictionNews',
+                       'text': "This is why I've been calling it a trap, because for the states it is "
+                               'absolutely a trap because the definition is incredibly broad.',
+                       'tip': "This is why I've been calling it a trap, because for the states it is "
+                              'absolutely a trap because the definition is incredibly broad.',
+                       'timestamp': 414,
+                       'timestamp_seconds': 414,
+                       'timestamp_label': '[00:06:54]',
+                       'url': 'https://www.youtube.com/watch?v=7na4n6_OBK0&t=414s',
+                       'markdown': '[00:06:54](https://www.youtube.com/watch?v=7na4n6_OBK0&t=414s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7na4n6_OBK0',
+                       'title': 'Andrew Kim on Kalshi Cases, Sports Contracts & Prediction Markets | '
+                                'Prediction Market Movers',
+                       'channel': 'PredictionNews',
+                       'author': 'PredictionNews',
+                       'text': 'Even if there is a hostile administration that comes into power in 2029, I '
+                               'still think the contracts that are being offered at the time will have a '
+                               'runway of at least a couple of years.',
+                       'tip': 'Even if there is a hostile administration that comes into power in 2029, I '
+                              'still think the contracts that are being offered at the time will have a '
+                              'runway of at least a couple of years.',
+                       'timestamp': 2474,
+                       'timestamp_seconds': 2474,
+                       'timestamp_label': '[00:41:14]',
+                       'url': 'https://www.youtube.com/watch?v=7na4n6_OBK0&t=2474s',
+                       'markdown': '[00:41:14](https://www.youtube.com/watch?v=7na4n6_OBK0&t=2474s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9aHX4chc8YY',
+                       'title': 'The CFTC’s Vision for Prediction Markets with Dorothy DeWitt | Prediction '
+                                'Market Movers',
+                       'channel': 'PredictionNews',
+                       'author': 'PredictionNews',
+                       'text': 'I have always thought mention markets are maybe inconsistent with core '
+                               'principle three.',
+                       'tip': 'I have always thought mention markets are maybe inconsistent with core '
+                              'principle three.',
+                       'timestamp': 923,
+                       'timestamp_seconds': 923,
+                       'timestamp_label': '[00:15:23]',
+                       'url': 'https://www.youtube.com/watch?v=9aHX4chc8YY&t=923s',
+                       'markdown': '[00:15:23](https://www.youtube.com/watch?v=9aHX4chc8YY&t=923s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9aHX4chc8YY',
+                       'title': 'The CFTC’s Vision for Prediction Markets with Dorothy DeWitt | Prediction '
+                                'Market Movers',
+                       'channel': 'PredictionNews',
+                       'author': 'PredictionNews',
+                       'text': "If an exchange lists an unregistered security that hasn't been registered, "
+                               "there's a rescission right by anyone who loses money against the exchange.",
+                       'tip': "If an exchange lists an unregistered security that hasn't been registered, "
+                              "there's a rescission right by anyone who loses money against the exchange.",
+                       'timestamp': 1953,
+                       'timestamp_seconds': 1953,
+                       'timestamp_label': '[00:32:33]',
+                       'url': 'https://www.youtube.com/watch?v=9aHX4chc8YY&t=1953s',
+                       'markdown': '[00:32:33](https://www.youtube.com/watch?v=9aHX4chc8YY&t=1953s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gpIcoaEPb7Q',
+                       'title': "The CFTC's No-Action Letter on Binary Options and Event Markets Railbird "
+                                'and Letter 25-26 Kalshi',
+                       'channel': 'A Lawyer In Finance Explains  1.1M views',
+                       'author': 'A Lawyer In Finance Explains  1.1M views',
+                       'text': 'Fully collateralized means that at all times you hold enough to cover the '
+                               'maximum possible loss that somebody could incur at liquidation or '
+                               'expiration of the contract.',
+                       'tip': 'Fully collateralized means that at all times you hold enough to cover the '
+                              'maximum possible loss that somebody could incur at liquidation or '
+                              'expiration of the contract.',
+                       'timestamp': 320,
+                       'timestamp_seconds': 320,
+                       'timestamp_label': '[00:05:20]',
+                       'url': 'https://www.youtube.com/watch?v=gpIcoaEPb7Q&t=320s',
+                       'markdown': '[00:05:20](https://www.youtube.com/watch?v=gpIcoaEPb7Q&t=320s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YIkTrxNRVlc',
+                       'title': "🔮What are @mention contracts? 🇺🇸CFTC staff's guidance to this new type of "
+                                'event contract 📈',
+                       'channel': '🎓Profeissor.com🚀Digital Assets, AI & FinTech',
+                       'author': '🎓Profeissor.com🚀Digital Assets, AI & FinTech',
+                       'text': "It's important to note that the CFTC staff advisory is not imposing an "
+                               'absolute ban on the listing of mentioned market contracts.',
+                       'tip': "It's important to note that the CFTC staff advisory is not imposing an "
+                              'absolute ban on the listing of mentioned market contracts.',
+                       'timestamp': 198,
+                       'timestamp_seconds': 198,
+                       'timestamp_label': '[00:03:18]',
+                       'url': 'https://www.youtube.com/watch?v=YIkTrxNRVlc&t=198s',
+                       'markdown': '[00:03:18](https://www.youtube.com/watch?v=YIkTrxNRVlc&t=198s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0Yj5x9uwKAE',
+                       'title': 'CFTC Chairman on Backpack: "The First On-Chain DCO/DCM"',
+                       'channel': 'Backpack Exchange Official',
+                       'author': 'Backpack Exchange Official',
+                       'text': 'At the end of the day, our requirements are very clear: derivatives have '
+                               "to be offered, if they're offered to retail, on a registered exchange.",
+                       'tip': 'At the end of the day, our requirements are very clear: derivatives have to '
+                              "be offered, if they're offered to retail, on a registered exchange.",
+                       'timestamp': 32,
+                       'timestamp_seconds': 32,
+                       'timestamp_label': '[00:00:32]',
+                       'url': 'https://www.youtube.com/watch?v=0Yj5x9uwKAE&t=32s',
+                       'markdown': '[00:00:32](https://www.youtube.com/watch?v=0Yj5x9uwKAE&t=32s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'}]}

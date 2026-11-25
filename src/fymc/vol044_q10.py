@@ -1,576 +1,814 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 1 FT + 3 C (4 people) customs duty drawback, tariff refund & antitrust claim recovery team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python Evidence Pipelines, ACE Entry Matching, HTS Substitution Controls, SEC Triggers, and Court-Directed Claim Distribution",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #44, Customs Duty Drawback, Tariff Refund & Antitrust Claim Recovery, "
-        "ranks #03 of 49 with a 95/100 Money-to-Manpower Score. This chapter maps 12 "
-        "operator plays into an evidence-first automation system: SEC triggers source prospects, "
-        "manifest and export matching qualify recoveries, and controlled claim packaging compounds "
-        "broker and accountant referrals. Keep drawback, tariff corrections or protests, and settled "
-        "antitrust distributions in separate eligibility and cash ledgers. The canonical annual owner "
-        "profit cases are $35,200 Conservative, $231,750 Base, and $533,600 Scaled. Automating more "
-        "than 70% of repetitive minutes is a measured operating target, not permission for autonomous "
-        "filing. Human specialists retain classification, deadline, claimant-authority, submission, "
-        "and cash-release decisions; deterministic checks and replayable evidence keep scale defensible."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$110,000",
-            "context": "Annual earned contingency fees on realized recoveries",
-            "note": "32% net margin; $35,200 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$515,000",
-            "context": "Annual earned contingency fees on realized recoveries",
-            "note": "45.0% net margin; $231,750 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$920,000",
-            "context": "Annual earned contingency fees on realized recoveries",
-            "note": "58% net margin; $533,600 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Separate the three recovery lanes before automating evidence",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build a case ledger before buying another prospecting subscription. One full-time operator owns client intake, "
-                    "commercial decisions, and cash reconciliation; three contractors cover licensed customs brokerage, trade-counsel "
-                    "exceptions, and evidence engineering. These are capacity assignments, not interchangeable professional permissions. "
-                    "Give every matter a client identifier, lane identifier, authority record, source-document inventory, deadline record, "
-                    "and immutable event history. Python can normalize authorized ACE exports and CBP Form 7501 records into SQLite "
-                    "for a single-worker pilot; a managed relational database becomes appropriate when concurrent reviewers require "
-                    "transaction isolation and durable access controls. Store original documents separately with SHA-256 digests, "
-                    "versioned extraction output, and page coordinates. ImportGenius and Panjiva support discovery and shipment "
-                    "cross-checking, but a manifest is neither proof of paid duty nor authority to file. Request client-authorized "
-                    "entry summaries, payment evidence, commercial invoices, inventory records, and export evidence before promoting "
-                    "a lead into an eligible case. Restrict the LLM to extraction, document grouping, and draft explanations grounded "
-                    "in those records. Treat instructions found inside PDFs, spreadsheets, and email attachments as document content, "
-                    "never executable instructions. Keep credentials outside prompts and give each contractor only the assigned "
-                    "client workspace. The operator should always be able to reproduce a match without the model."
-                ),
-                (
-                    "The drawback lane begins with 19 U.S.C. § 1313 and the applicable subsection, not an eight-digit tariff-code "
-                    "coincidence. For unused-merchandise substitution under subsection (j)(2), evaluate the statutory classification "
-                    "conditions, applicable descriptive limitations, possession and use facts, export or destruction evidence, and "
-                    "the lesser-of calculation where required. Matching HTS codes merely proposes candidates. Exclude antidumping "
-                    "and countervailing duties from drawback; inspect the governing authority for each additional tariff component "
-                    "instead of assuming every surcharge qualifies. Section 232 restrictions require separate treatment from "
-                    "otherwise eligible Section 301 duties. Calendar the five-year claim-completion limit under subsection (r) "
-                    "alongside the relevant export and evidence requirements. A $100,000 eligible duty amount can support up to "
-                    "$99,000 of drawback where the 99% rule applies; at a 30% contingency, that produces $29,700 of operator fees, "
-                    "not $100,000 of revenue. Budget an illustrative $1,200 for document reconstruction and broker preparation "
-                    "against that matter. Accelerated payment introduces approval, bond sufficiency, and repayment exposure under "
-                    "19 CFR Part 190; ordinary processing should remain available when acceleration is unavailable. Do not invent "
-                    "one universal bond amount. Obtain the broker's case-specific requirement and surety pricing before forecasting "
-                    "cash, and retain records for the applicable regulatory period."
-                ),
-                (
-                    "The tariff-refund lane separates an ACE Post-Summary Correction from a protest under 19 U.S.C. § 1514. "
-                    "A PSC generally addresses an eligible unliquidated entry within ACE timing rules, commonly 300 days after "
-                    "entry or 15 days before scheduled liquidation, whichever comes first; confirm the operative program rules "
-                    "and entry-specific status. A protest generally has a 180-day statutory window after liquidation or another "
-                    "protestable decision. Neither workflow inherits drawback's five-year calendar. An illustrative $40,000 realized "
-                    "refund yields $12,000 at 30%, with $900 of document and specialist preparation reserved separately. Existing "
-                    "entry-bond obligations remain relevant, but do not price a new drawback accelerated-payment bond into every "
-                    "protest. The settlement lane instead follows the court-approved class definition, purchase period, release, "
-                    "allocation method, and administrator instructions. AP invoices or merchant-processing statements establish "
-                    "eligible activity; they do not establish the eventual distribution. An illustrative $20,000 actual distribution "
-                    "yields $6,000 at 30%, with $300 of preparation cost and no customs surety bond. Use planning ranges of "
-                    "6–18 months for ordinary drawback, 3–12 months for tariff refunds, and 12–36 months for settlement distributions. "
-                    "These are sensitivity assumptions, not agency schedules; accelerated payment and litigation can materially "
-                    "change timing. Disclose direct, zero-cost claimant filing and any court-required third-party filer information."
-                ),
-            ],
-            "table": {
-                "caption": "Three-Lane Eligibility, Collectible Base, and Cash-Control Matrix",
-                "headers": [
-                    "Lane and operational decision being controlled",
-                    "Evidence and eligibility required before commitment",
-                    "Illustrative collectible base and preparation economics",
-                    "Bond treatment and cash timing assumption",
-                ],
-                "rows": [
-                    [
-                        "Drawback eligibility starts with the applicable statutory subsection",
-                        "Paid duties, traceable exports, inventory evidence, and statutory eligibility",
-                        "$100,000 eligible duty amount supports up to $99,000 recovery",
-                        "Ordinary processing modeled at six to eighteen months",
-                    ],
-                    [
-                        "Drawback acceleration requires a separate broker capacity assessment",
-                        "Approved accelerated-payment privileges and adequate case-specific bond coverage",
-                        "$99,000 realized recovery produces $29,700 fees at thirty percent",
-                        "$1,200 preparation reserve excludes separately quoted surety premiums",
-                    ],
-                    [
-                        "Tariff correction selects PSC or protest using entry status",
-                        "Liquidation events, governing tariff authority, entry documents, and deadline",
-                        "$40,000 realized refund produces $12,000 fees at thirty percent",
-                        "Three to twelve months assumed; entry obligations remain relevant",
-                    ],
-                    [
-                        "Tariff refund preparation excludes unsupported speculative classification changes",
-                        "Broker or counsel documents the correction and refund calculation",
-                        "$900 preparation reserve covers document reconstruction and specialist review",
-                        "No automatic new accelerated-drawback bond charge for protest work",
-                    ],
-                    [
-                        "Settlement eligibility follows the specific court-approved class definition",
-                        "Eligible purchase records, claimant authority, releases, and duplicate-claim checks",
-                        "$20,000 actual distribution produces $6,000 fees at thirty percent",
-                        "Twelve to thirty-six months assumed; customs bond not required",
-                    ],
-                    [
-                        "Settlement preparation separates claimed purchases from actual cash awards",
-                        "Administrator forms, required filer disclosures, and direct-filing cost explanation",
-                        "$300 preparation reserve excludes unusually contested ownership reconstruction",
-                        "Final distribution depends on court orders and administrator processing",
-                    ],
-                    [
-                        "Shared controls prevent the same recovery entering two ledgers",
-                        "Client-specific authority, linked evidence, independent review, and submission receipt",
-                        "Only earned operator fees enter the recognized revenue ledger",
-                        "Pause disputed ownership cases without promising a payment date",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before any consequential submission",
-                "body": "Automation may prepare a packet; the authorized specialist must resolve these checks before transmission.",
-                "items": [
-                    "Confirm the importer or claimant owns the recovery right, the engagement identifies the fee base, and the broker holds a valid Customs Power of Attorney where required.",
-                    "Have the broker or counsel verify the applicable tariff component, drawback subsection or protest theory, authoritative dates, and any statutory exclusion.",
-                    "Reconcile entry lines, export quantities, claimed purchases, and prior submissions; unresolved duplicate allocations block packet release.",
-                    "Verify required settlement filer disclosures, applicable bond capacity, destination account instructions through an independent channel, and the named human submitting the packet.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Implement seven acquisition and evidence plays with deterministic checks",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Map the supplied sec_edgar_8k_vendor_trigger_arbitrage play to an acquisition queue, not an eligibility engine. "
-                    "Consume SEC EDGAR latest-filings feeds and supported JSON endpoints; use Form D notices to identify private "
-                    "Regulation D raises and Form 8-K Items 5.02, 1.01, and 2.01 to flag leadership changes, material agreements, "
-                    "and completed acquisitions. Company submissions JSON is useful for monitored issuers but is not a universal "
-                    "real-time feed. Normalize accession numbers, issuer CIKs, filing timestamps, items, and source links. A Python "
-                    "worker can score whether an issuer has a plausible importer, exporter, or eligible purchasing footprint, "
-                    "then draft a source-linked message for human review. A raise or acquisition proves no recoverable duty "
-                    "or class membership. Target sub-hour preparation during staffed hours; do not promise outreach before every "
-                    "commercial database. For an illustrative daily batch, 100 filings at $0.02 extraction cost plus ten three-minute "
-                    "reviews at $60 hourly cost equals $32, or $3.20 per reviewed prospect. Enforce an aggregate token bucket "
-                    "of five requests per second, identify the requester, honor SEC access guidance, and back off on throttling. "
-                    "Mirror available SEC bulk ZIP releases and index archives nightly for historical lookbacks; those archives "
-                    "do not replace the live-feed freshness check."
-                ),
-                (
-                    "The next six plays turn discovery into defensible packets: manifest_entry_match, export_bol_trace, "
-                    "hts8_substitution_reconcile, psc_protest_router, ap_settlement_packager, and duplicate_recovery_guard. These are "
-                    "chapter-local implementation identifiers, not additional supplied catalog identifiers. Match authorized "
-                    "ImportGenius or Panjiva exports to ACE entry lines using importer identity, shipment dates, bill references, "
-                    "quantities, and product attributes. Licensing and available export interfaces determine ingestion; do not "
-                    "assume either vendor grants unrestricted API access. Normalize HTS values as text so leading zeros survive. "
-                    "Use decimal.Decimal for duty and fee arithmetic, preserving currency and unit conversions in separate fields. "
-                    "The export reconciler joins bills of lading, invoices, departure evidence, and inventory movement; it should "
-                    "expose missing links rather than manufacture a continuous trace. The substitution worker proposes eight-digit "
-                    "matches and calculates quantity allocations, while the broker evaluates legal eligibility and claim methodology. "
-                    "For settlements, QuickBooks or NetSuite exports identify purchases; interchange matters may require acquirer "
-                    "statements and merchant identifiers instead. Record excluded credits, refunds, unrelated entities, and purchases "
-                    "outside the class period. Allocate each entry quantity or purchase row to a recovery ledger with explicit "
-                    "status. A second proposed claim against the same source becomes an exception, not another forecast win. "
-                    "Retain unmatched records for targeted client questions."
-                ),
-                (
-                    "Implement webhooks as authenticated intake events with a replay-safe queue. Verify the provider's documented "
-                    "signature over the raw request body, check timestamps where supported, and reject oversized or unexpected "
-                    "payload types. Calculate an idempotency key from client identifier, source identifier, source digest, and "
-                    "workflow version; enforce uniqueness inside the same database transaction that creates the job. A changed "
-                    "document must generate a new version without erasing its predecessor. Acknowledge receipt only after durable "
-                    "enqueueing, then let a worker extract, normalize, validate, and route the result. Python's hashlib, hmac, "
-                    "json, sqlite3, decimal, and urllib modules support a modest prototype without a sprawling dependency chain. "
-                    "For an illustrative 100-document batch, budget $0.80 for OCR, $0.20 for bounded LLM extraction, $0.50 for "
-                    "compute and storage, $2.00 for allocated data access, and $3.00 for average retry overhead: $6.50 machine "
-                    "cost. Ten minutes of human QA at $60 hourly adds $10, giving $16.50 before substantive case preparation. "
-                    "These are adjustable planning inputs rather than vendor quotes. Maintain source spans for extracted amounts, "
-                    "reject malformed structured output, and route low-confidence documents to manual entry. Never retry an "
-                    "external filing merely because the network timed out; reconcile its receipt first."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped Plays 1–7: Trigger Discovery, Evidence Reconstruction, and Duplicate Prevention",
-                "headers": [
-                    "Mapped play and narrowly assigned operational purpose",
-                    "Deterministic output and evidence required for acceptance",
-                    "Illustrative unit economics or operator capacity calculation",
-                    "Human review boundary and concrete recovery fallback",
-                ],
-                "rows": [
-                    [
-                        "sec_edgar_8k_vendor_trigger_arbitrage identifies timely issuer changes for outreach",
-                        "Accession-linked Form D and relevant Form 8-K event records",
-                        "One hundred filings plus ten reviews cost $32 daily",
-                        "Human qualifies outreach; throttling switches historical work to archives",
-                    ],
-                    [
-                        "manifest_entry_match proposes shipment links to authorized ACE entries",
-                        "Matched importer identity, bill references, quantities, and entry documents",
-                        "One hundred documents share the $6.50 machine batch budget",
-                        "Ambiguous importer matches route to manual identity resolution",
-                    ],
-                    [
-                        "export_bol_trace reconstructs physical departure and inventory evidence chains",
-                        "Export bill, departure evidence, invoice, and allocated inventory movement",
-                        "Ten reviewer minutes add $10 per completed batch",
-                        "Missing departure evidence triggers a client document request",
-                    ],
-                    [
-                        "hts8_substitution_reconcile proposes candidates without deciding statutory eligibility",
-                        "Eight-digit codes, descriptive limitations, quantities, and lesser-of calculation inputs",
-                        "$100,000 eligible duties can produce up to $99,000 drawback",
-                        "Broker rejects excluded tariffs and unsupported substitution relationships",
-                    ],
-                    [
-                        "psc_protest_router selects the correction channel from authoritative events",
-                        "Entry status, liquidation date, deadline basis, and specialist review",
-                        "$40,000 actual refund yields $12,000 fees at thirty percent",
-                        "Disputed dates suspend automation and prompt broker escalation",
-                    ],
-                    [
-                        "ap_settlement_packager groups eligible purchases under settlement-specific rules",
-                        "Class period, legal entity, invoices, credits, and claimant authorization",
-                        "$20,000 actual distribution yields $6,000 fees at thirty percent",
-                        "Administrator-specific conflicts route to claimant and counsel resolution",
-                    ],
-                    [
-                        "duplicate_recovery_guard prevents repeated allocation across submitted claim packets",
-                        "Source-level allocation ledger with submitted and reversed status history",
-                        "One duplicated $10,000 fee forecast overstates pipeline by $10,000",
-                        "Conflicting allocations block submission until ownership is reconciled",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Authenticate and preserve the source",
-                    "action": "Validate the intake event and durably store its original evidence.",
-                    "detail": "Apply client access boundaries, retain the raw payload digest, and create a versioned source record before acknowledging delivery.",
-                },
-                {
-                    "step": 2,
-                    "title": "Extract and reconcile deterministically",
-                    "action": "Generate structured fields, then reconcile identities, quantities, dates, and money.",
-                    "detail": "Use source spans, Decimal arithmetic, explicit unit conversions, and allocation uniqueness checks; treat model output as proposed data.",
-                },
-                {
-                    "step": 3,
-                    "title": "Resolve professional judgment exceptions",
-                    "action": "Route eligibility, deadline, authority, and disclosure decisions to the responsible specialist.",
-                    "detail": "Record the reviewer, reviewed source versions, decision basis, and release time; changed evidence invalidates the previous release.",
-                },
-                {
-                    "step": 4,
-                    "title": "Submit once and reconcile receipts",
-                    "action": "Have the authorized filer transmit the packet and attach the external receipt.",
-                    "detail": "For timeouts, inspect portal status or contact the receiving party before retransmission; preserve the final packet digest and subsequent cash events.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Add five distribution and control plays without automating judgment",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Complete the twelve-play map with deadline_receipt_monitor, evidence_packet_builder, broker_accountant_referral_loop, "
-                    "programmatic_eligibility_content, and cash_fee_reconciler. These five chapter-local identifiers connect operational "
-                    "quality to repeatable distribution. The deadline monitor stores both the legally significant event and its "
-                    "documented source, then computes internal checkpoints at 60, 30, 14, and seven days before the controlling "
-                    "date when that lead time exists. The broker or counsel confirms the actual deadline; a scheduler cannot "
-                    "resolve an ambiguous liquidation event. The packet builder produces a manifest of evidence, calculations, "
-                    "missing-document exceptions, and signed authority without silently submitting anything. The referral loop "
-                    "sends authorized status summaries to introducing brokers or accountants, showing documents obtained, qualified "
-                    "matters, and realized outcomes without exposing another client's records. Programmatic content publishes "
-                    "carefully reviewed explanations of recurring documentation problems, each linking to a narrow intake worksheet. "
-                    "The cash reconciler matches actual agency or administrator payments to fee terms and invoices. Each play "
-                    "must have one accountable owner and a measurable completion event. Separate drafted, reviewed, submitted, "
-                    "accepted, paid, and invoiced states; treating an uploaded packet as collected revenue is the quickest way "
-                    "to manufacture a misleading dashboard. Preserve revisions when an administrator changes forms or a broker "
-                    "changes the claim calculation."
-                ),
-                (
-                    "Measure the automation target in repetitive labor minutes rather than document counts. Time a representative "
-                    "weekly cohort before deployment: assume 1,000 minutes spent on research, normalization, matching, follow-up "
-                    "drafting, packet assembly, and routine status checks. After deployment, suppose those same tasks require "
-                    "250 human minutes, including exception handling. The reduction is 750 divided by 1,000, or 75%; retain "
-                    "a separate 120-minute consequential-review budget that the automation target does not erase. Total human "
-                    "time then falls from 1,120 to 370 minutes, a smaller 67.0% reduction across all work. This distinction "
-                    "prevents a headline efficiency claim from hiding broker review. Segment measurements by lane, document "
-                    "quality, and matter complexity; a clean recurring importer should not conceal a difficult inherited "
-                    "settlement ledger. Require complete packet review during the pilot, then reduce only low-risk extraction "
-                    "sampling after measured error rates support it. Always review eligibility, deadline calculations, claimant "
-                    "authority, payment instructions, and external submission. Track material error rate, rejected packets, "
-                    "review minutes, and collected fees per reviewed case together. A model that saves two minutes but creates "
-                    "one additional $300 reconstruction task every ten cases destroys $28 of value per case at a $60 hourly "
-                    "labor rate. Rework belongs in the efficiency denominator."
-                ),
-                (
-                    "Design failure recovery before allowing unattended overnight processing. Keep source ingestion, extraction, "
-                    "reconciliation, review, and transmission in separate states with explicit retry policies. Retry transient "
-                    "vendor failures with bounded exponential backoff and jitter; move repeated failures into a visible dead-letter "
-                    "queue rather than dropping them. If a data subscription expires, continue processing already licensed client "
-                    "records and suspend enrichment instead of scraping around access restrictions. If the LLM endpoint fails, "
-                    "use deterministic CSV ingestion and manual document entry for deadline-sensitive matters. If OCR quality "
-                    "deteriorates, request original electronic records rather than repeatedly paying to interpret an unreadable scan. "
-                    "Store money fields as strings until validated Decimal conversion, and reject unsupported currency assumptions. "
-                    "A daily exception digest should identify the responsible person, earliest controlling date, missing evidence, "
-                    "and next action. Reserve capacity for urgent manual cases rather than scheduling the team at full theoretical "
-                    "utilization. Test restore procedures using a permitted sample workspace, including document hashes and allocation "
-                    "history; a database backup without its evidence objects cannot reconstruct the claim. For example, one "
-                    "two-hour outage at $60 hourly costs $120 in direct recovery labor. Compare that with the exposure from "
-                    "a missed filing window, not merely the monthly hosting charge."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped Plays 8–12 and the Two Controls That Keep Automation Measurable",
-                "headers": [
-                    "Mapped play or control with accountable ownership",
-                    "Output required before the next operational state",
-                    "Concrete capacity calculation or illustrative unit value",
-                    "Fallback that preserves evidence and human responsibility",
-                ],
-                "rows": [
-                    [
-                        "deadline_receipt_monitor assigns every dated exception to its owner",
-                        "Verified controlling event, internal reminders, and external receipt linkage",
-                        "Four checkpoints use sixty, thirty, fourteen, and seven days",
-                        "Ambiguous dates receive specialist review rather than automatic inference",
-                    ],
-                    [
-                        "evidence_packet_builder assembles versioned records for the authorized filer",
-                        "Evidence manifest, reconciled calculations, signed authority, and resolved exceptions",
-                        "One hundred documents cost $16.50 including routine batch QA",
-                        "Changed source evidence invalidates the prior packet release",
-                    ],
-                    [
-                        "broker_accountant_referral_loop distributes client-authorized progress and outcome summaries",
-                        "Introducer-specific status report without unrelated client records or identities",
-                        "Ten partners producing two introductions create twenty monthly leads",
-                        "Pause partner distribution when client authorization is withdrawn",
-                    ],
-                    [
-                        "programmatic_eligibility_content turns recurring evidence questions into reviewed worksheets",
-                        "Dated source-linked explanation, narrow intake form, and editorial review",
-                        "Five hundred visits at two percent yield ten inquiries",
-                        "Retire outdated pages when statutes or settlement instructions change",
-                    ],
-                    [
-                        "cash_fee_reconciler links actual recovery payments to earned fees",
-                        "Bank-confirmed recovery, engagement fee calculation, invoice, and ledger posting",
-                        "$100,000 actual recovery yields $30,000 fees at thirty percent",
-                        "Disputed payment ownership pauses invoicing and triggers reconciliation",
-                    ],
-                    [
-                        "Repetitive-minute measurement excludes protected professional judgment from savings claims",
-                        "Comparable cohorts with exception handling and rework counted consistently",
-                        "One thousand minutes reduced to 250 demonstrates seventy-five percent",
-                        "Revert low-quality automation when review costs erase labor savings",
-                    ],
-                    [
-                        "Dead-letter recovery keeps failed events visible and replayable",
-                        "Bounded retries, source digests, assigned owner, and replay history",
-                        "Two recovery hours cost $120 at sixty dollars hourly",
-                        "Use manual preparation before deadlines when automated services fail",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Veteran tactics that protect small-team throughput",
-                "body": "The best automation advantage is reducing evidence friction before the specialist opens the matter.",
-                "items": [
-                    "Ask recurring importers for stable SKU-to-HTS mappings and original entry-line exports; preserve historical mapping versions because current classifications cannot silently rewrite earlier entries.",
-                    "Maintain separate clocks for importation, export, liquidation, protestable decisions, and settlement deadlines; never label a single spreadsheet column simply deadline.",
-                    "Ask the broker to preflight accelerated-payment privileges and bond headroom before selling faster cash conversion; model ordinary processing when capacity is constrained.",
-                    "For interchange claims, reconcile merchant identifiers across acquirers and ownership changes before summing statements; duplicate identifiers and predecessor entities regularly distort purchase bases.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Compound qualified distribution while reconciling every dollar",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use three distribution loops with distinct attribution: timely outbound, programmatic education, and trusted "
-                    "introductions. SEC-triggered outbound should reference the actual filing event and offer a bounded evidence "
-                    "assessment, not assert that the issuer is owed money. Follow 15 U.S.C. § 7704 for commercial email, including "
-                    "accurate routing information, a valid postal address, a working opt-out mechanism, and timely suppression. "
-                    "Maintain suppression centrally across contractors and sending accounts. The content loop turns repeated client "
-                    "questions into source-linked pages about export trace gaps, PSC timing, or settlement documentation, with "
-                    "human review before publication. Avoid bulk-generated pages that invent eligibility or reproduce confidential "
-                    "purchase records. The referral loop begins after an actual operational win: a clean packet, a resolved "
-                    "evidence defect, or a collected recovery. Obtain permission before sharing even an anonymized case example "
-                    "when commercial facts could identify the client. As an illustrative monthly funnel, ten partners each "
-                    "produce two introductions; 20 introductions at 40% qualified become eight opportunities, and eight at "
-                    "25% signed become two engagements. At $12,000 expected earned fees each, the cohort contains $24,000 "
-                    "of potential fees before recovery risk and delay. Do not annualize this pipeline into recognized revenue. "
-                    "Track signed, collectible, and collected cohorts separately."
-                ),
-                (
-                    "Reconcile the scorecard using earned contingency fees, never importer duty principal or gross settlement "
-                    "pools. Conservative revenue is $110,000 with $74,800 of annual costs, leaving $35,200 at 32% for 1 FT "
-                    "+ 3 C. Base revenue is $515,000 with $283,250 of costs, leaving $231,750 at 45.0% for the same "
-                    "four-person structure. Scaled revenue is $920,000 with $386,400 of costs, leaving $533,600 at 58% for "
-                    "2 FT + 4 C. An illustrative Base mix at a uniform 30% contingency comprises $900,000 of realized "
-                    "drawback recoveries generating $270,000 fees, $400,000 of realized tariff refunds generating $120,000 fees, "
-                    "and $416,666.67 of actual settlement distributions generating $125,000 fees after cent rounding. Together "
-                    "the fees equal exactly $515,000. The $1,716,666.67 underlying recoveries are client money, not operator "
-                    "sales. The contractual 25%–35% range changes required recovery volume; it does not authorize changing "
-                    "the canonical cases. Where the operator is an agent under ASC 606, assess net presentation using the "
-                    "actual service obligations; do not add gross client proceeds or invent a retained-share multiplier. "
-                    "Treat the scorecard fee basis as fixed and avoid deducting partner compensation twice. Reconcile illustrative "
-                    "automation expenses inside the annual cost envelope rather than adding them again."
-                ),
-                (
-                    "Make each distribution experiment purchase measurable evidence, not vanity traffic. At 500 monthly visits "
-                    "and a 2% inquiry rate, a reviewed content cluster yields ten inquiries; if 30% qualify and one-third "
-                    "of those sign, it yields one engagement before recovery uncertainty. Spending $300 on editorial maintenance "
-                    "therefore implies $300 per signed engagement under those assumptions. For the referral example, $200 of "
-                    "monthly partner-support labor divided by two signed engagements equals $100 acquisition labor per engagement, "
-                    "excluding case fulfillment. These channels overlap, so deduplicate contacts and assign one primary source "
-                    "before adding results. Run 100 automated batches monthly at $16.50 including routine QA and the monthly "
-                    "processing budget is $1,650; at twelve months it is $19,800, already contained within the relevant annual "
-                    "cost scenario. Substantive broker preparation, counsel exceptions, surety charges, and operator compensation "
-                    "remain separate cost lines. Keep a thirteen-week cash forecast for expenses and a longer recovery-cohort "
-                    "forecast for delayed receipts. The $8,000–$35,000 startup range and $1,500–$9,500 monthly operating range "
-                    "describe launch planning, not the complete scaled annual cost base. Expand only when measured reviewer "
-                    "capacity, evidence quality, and collected cohort economics support another intake stream. A signed engagement "
-                    "within one to three months is not equivalent to cash collected in that period."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Scorecard Reconciliation and Illustrative Distribution Unit Economics",
-                "headers": [
-                    "Scenario or experiment with its measurement boundary",
-                    "Recognized fee revenue or observable funnel output",
-                    "Explicit cost calculation within the relevant budget",
-                    "Owner result or operating interpretation after reconciliation",
-                ],
-                "rows": [
-                    [
-                        "Conservative canonical annual case with one full-time operator",
-                        "$110,000 earned fee revenue excludes all client recovery principal",
-                        "$74,800 annual costs include the relevant operating expense lines",
-                        "$35,200 owner profit; 32% margin; 1 FT + 3 C",
-                    ],
-                    [
-                        "Base canonical annual case with the same four-person structure",
-                        "$515,000 earned fee revenue excludes all client recovery principal",
-                        "$283,250 annual costs reconcile exactly to the canonical case",
-                        "$231,750 owner profit; 45.0% margin; 1 FT + 3 C",
-                    ],
-                    [
-                        "Scaled canonical annual case with six total team members",
-                        "$920,000 earned fee revenue excludes all client recovery principal",
-                        "$386,400 annual costs reconcile exactly to the canonical case",
-                        "$533,600 owner profit; 58% margin; 2 FT + 4 C",
-                    ],
-                    [
-                        "Base illustrative lane mix using thirty-percent contingency engagements",
-                        "$270,000 drawback fees plus $120,000 tariff plus $125,000 settlement",
-                        "Preparation and processing costs remain inside $283,250 annual costs",
-                        "$1,716,666.67 client recoveries produce $515,000 rounded operator fees",
-                    ],
-                    [
-                        "Partner introduction experiment measures signed engagements before recovery",
-                        "Twenty introductions yield eight qualified opportunities and two engagements",
-                        "$200 partner-support labor divided by two equals $100 acquisition",
-                        "$24,000 potential fees remain pipeline until earned through recovery",
-                    ],
-                    [
-                        "Reviewed content experiment measures one deduplicated signed engagement",
-                        "Five hundred visits yield ten inquiries and three qualified",
-                        "$300 editorial maintenance divided by one equals $300 acquisition",
-                        "One signed engagement still carries eligibility and collection risk",
-                    ],
-                    [
-                        "Automated processing experiment includes routine QA but excludes preparation",
-                        "One hundred monthly batches preserve source-linked extraction and review",
-                        "$16.50 per batch produces $1,650 monthly and $19,800 annually",
-                        "Annual processing spend is included once within scenario costs",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Automate the evidence trail, not the judgment that makes a recovery collectible.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Create separate drawback, tariff-refund, and settlement ledgers with source-linked eligibility, authority, deadline, bond, and cash fields.",
-        "Implement signed webhook intake, versioned document hashes, transactional idempotency keys, and a visible dead-letter queue before enabling unattended runs.",
-        "Deploy the SEC trigger play with five-request-per-second aggregate limiting, source-linked human-reviewed outreach, and permitted bulk-archive lookbacks.",
-        "Pilot manifest-to-entry matching, export trace reconstruction, eight-digit HTS proposals, and settlement purchase packaging on authorized historical cases.",
-        "Measure repetitive minutes before and after automation, include exception rework, and retain human decisions for eligibility, deadlines, submissions, and payment changes.",
-        "Reconcile the three canonical profit cases, attribute distribution cohorts without duplicates, and expand only against collected fees and demonstrated reviewer capacity.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "19 U.S.C. § 1313 — Drawback and refunds",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1313",
-            "relevance": "Defines drawback pathways, substitution conditions, applicable recovery limitations, and the claim-completion deadline; the selected subsection determines the evidence model.",
-        },
-        {
-            "title": "19 U.S.C. § 1514 — Finality of decisions; protests",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1514",
-            "relevance": "Identifies protestable customs decisions and statutory protest timing; protest deadlines must remain separate from drawback and PSC calendars.",
-        },
-        {
-            "title": "19 CFR Part 111 — Customs brokers",
-            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-111",
-            "relevance": "Governs customs broker licensing, customs business, duties, and powers of attorney; this operating model routes formal customs work through properly authorized specialists.",
-        },
-        {
-            "title": "19 CFR § 190.3 — Duties, taxes, and fees subject or not subject to drawback",
-            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-190/section-190.3",
-            "relevance": "Requires separating potentially recoverable charges from excluded charges, including antidumping and countervailing duties.",
-        },
-        {
-            "title": "19 CFR § 190.15 — Recordkeeping",
-            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-190/section-190.15",
-            "relevance": "Establishes drawback recordkeeping obligations that shape source retention, traceability, and the ability to reconstruct submitted claims.",
-        },
-        {
-            "title": "19 CFR § 190.92 — Accelerated payment",
-            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-190/section-190.92",
-            "relevance": "Addresses accelerated drawback payment procedures and conditions; payment acceleration must be modeled separately from ordinary processing and case-specific bond capacity.",
-        },
-        {
-            "title": "Federal Rule of Civil Procedure 23 — Class actions",
-            "url": "https://www.law.cornell.edu/rules/frcp/rule_23",
-            "relevance": "Provides the class-action framework, including court oversight of settlements; the particular court order and administrator instructions supply claim-specific eligibility and filer-disclosure requirements.",
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Sets commercial-email requirements relevant to SEC-triggered outreach, including accurate transmission information, opt-out handling, and a valid physical postal address.",
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'compliance-audits-penalties-recovering-money-without-triggering-risk',
+ 'question_prompt': 'How do I stay audit-ready, protect my importer of record status, and limit penalties '
+                    'when pursuing refunds?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Compliance, Audits and Penalties: Recovering Money Without Triggering Risk',
+ 'subtitle': 'Entry auditing essentials, audit risk before filing refund claims, compliance manuals, '
+             'recordkeeping and prior disclosures, customs-ready versus audit-ready, binding rulings, IOR '
+             'database cleanup and Form 5106, the CTPAT rule for foreign IORs, seizure notices, penalty '
+             'mitigation negotiation, and evolving CBP enforcement',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners converge on one rule: the importer of record owns the liability, and '
+                      "a broker cannot absorb it. Shapiro's compliance director targets a 95% entry-audit "
+                      'pass rate, audits monthly or quarterly in a spreadsheet, and pulls free ACE reports '
+                      'plus a $250 to $300 ITRA to expose unauthorized filers. Grassi and CargoTrans treat '
+                      'IEEPA refunds as a test of the whole entry: the CAPE checkbox attests to '
+                      'classification, origin and value, and a CSV upload pushes entries into liquidation, '
+                      'killing further PSCs, so file the cleanest entries first and spend the 6% interest '
+                      'on an audit. TRG and GHY push 5106 hygiene, bond queries and an IRS 147C before CBP '
+                      'voids an IOR. The split: IEEPA Tariff Watch sells counsel-led refund routes with '
+                      'privilege and cash advances in weeks, versus 1 to 3 year broker waits, while '
+                      "Grassi's team files directly through ACE.",
+ 'key_metrics': [{'label': 'Entry audit pass-rate target',
+                  'metric': 'Entry audit pass-rate target',
+                  'value': 'At least 95%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Minimum pass rate Shapiro's Director of Compliance sets for an internal "
+                             'customs entry audit program.',
+                  'source': 'Shapiro ([cjNgBgUI1As @ 00:02:32])'},
+                 {'label': 'CAPE Phase 1 declaration pass rate',
+                  'metric': 'CAPE Phase 1 declaration pass rate',
+                  'value': '47,000 of 75,000 declarations passed (about 63%)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Phase 1 IEEPA refund data: ACE logins up 70%, 11.2M entries accepted, 2.1M '
+                             'rejected, 1.74M liquidated for refund.',
+                  'source': 'Grassi ([xA8LxqtatDo @ 00:18:21])'},
+                 {'label': 'ITRA report cost',
+                  'metric': 'ITRA report cost',
+                  'value': '$250 to $300',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Paid report that reveals unauthorized filers using the importer number; '
+                             'standard ACE reports are free.',
+                  'source': 'Shapiro ([cjNgBgUI1As @ 00:31:13])'},
+                 {'label': 'Penalty mitigation outcome',
+                  'metric': 'Penalty mitigation outcome',
+                  'value': '$4M penalty reduced to $4,000',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Mitigation result Jennifer Diaz reports, using arguments such as inability '
+                             "to pay, first offense and CBP's own errors.",
+                  'source': 'Meaningful Mediation ([OFX0_mQm-Qo @ 00:15:49])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['The loudest point of agreement is that liability sits with the importer of '
+                              "record and never transfers to the broker. Shapiro's Director of Compliance "
+                              'puts it bluntly: “you can Outsource the entry responsibility but not the '
+                              'liability,” and flags over-reliance on brokers as the core weakness, '
+                              'prescribing an SOP kept on file with the broker [cjNgBgUI1As @ 00:04:11]. '
+                              'How Stuff Moves lays out the same structure: the IOR answers for '
+                              'classification, value, origin, duties and fees, must hold records for five '
+                              'years, and hiring a broker “does not move the liability” [GGGUB13U6vk @ '
+                              "00:01:00]. GHY International's Corey extends that ownership to the identity "
+                              'itself, listing legal name, EIN or importer number, physical and mailing '
+                              'addresses, phone, email and an authorized signer, and stressing that the '
+                              'identity “belongs to you, not the broker” [pyMQL8u25fU @ 00:09:21]. Trade '
+                              'Counsel supplies the contract angle: under FOB the buyer is the IOR, under '
+                              'DDP the seller usually is, and whoever holds the role is liable for duty '
+                              'and accuracy [-WXoF_u08g0 @ 00:00:35]. The operator reading is simple: the '
+                              'FOB-or-DDP choice decides who carries the exposure, the broker is a vendor '
+                              'to be supervised rather than a shield, and the IOR profile in ACE is an '
+                              'asset the importer has to own and police.',
+                              'Every compliance voice here pushes proactive self-auditing over waiting for '
+                              "CBP to arrive. Shapiro's guidance is to “be proactive and audit your "
+                              "entries so that little problems don't turn into big problems” [cjNgBgUI1As "
+                              '@ 00:02:16]. Jen Diaz of Diaz Trade Law calls the “hide and hope Customs '
+                              "doesn't notice me” posture “not a strategy” and “a huge liability,” and "
+                              'defines pre-compliance as reviewing classification, valuation, origin, FTA '
+                              'and special-program usage, AD/CVD exposure, forced-labor risk and '
+                              'partner-agency rules such as FDA and consumer product safety before a '
+                              'seizure, penalty or audit lands [j_DJeCw3cCw @ 00:00:58]. The manual is the '
+                              "shared backbone, but only if it runs. JSJ International's Hame Salazar "
+                              'frames a written compliance manual as proof of reasonable care and lists '
+                              'the failure pattern as generic templates, no compliance officer, no '
+                              'updates, no training and no broker oversight [n4YfLCDwg1M @ 00:04:25]. '
+                              'Former CBP auditor Kathy August reports finding identical internet-bought '
+                              'manuals at different companies and insists on “executable documents” such '
+                              "as CF-28 logs, closing with “It's not enough to have a manual, you have to "
+                              'execute” [Q8n9OOAYZ8s @ 00:27:18]. The consensus deliverable is a tailored, '
+                              'living manual tied to an actual review cadence and a named owner, not a '
+                              'template binder that sits untouched on a shelf until CBP calls.',
+                              'On tariff refunds, the practitioners agree the money is real but the claim '
+                              'itself is a spotlight. IEEPA Tariff Watch stresses that refunds are not '
+                              'automatic, “You have to step up and actively file a formal claim to get '
+                              'your money,” and warns that a refund claim can trigger an audit, citing a '
+                              'claim that 85% of entries are misclassified [V9_1adwF1c8 @ 00:02:55]. '
+                              "Grassi's Michael Violano and CargoTrans' Nunzio Di Filippo size the pool at "
+                              'about $170B but note that the CAPE checkbox attests to classification, '
+                              'origin and value, turning every refund filing into a representation about '
+                              'the underlying entries [xA8LxqtatDo @ 00:14:02]. Their closing instruction '
+                              'is to move with urgency while making sure “every step can stand up to an '
+                              'audit” [xA8LxqtatDo @ 00:28:02]. Former CBP auditor Kathy August supplies '
+                              'the enforcement backdrop: roughly 450,000 IORs, active CBP targeting, and '
+                              'CF-28 requests that are rising and now cover whole entries [Q8n9OOAYZ8s @ '
+                              '00:03:48]. August also notes that every company has internal controls, but '
+                              'they are often undocumented. The shared conclusion is to scrub entries '
+                              'before filing, because a refund request invites scrutiny of everything '
+                              'behind it, and an importer who cannot defend classification, origin and '
+                              'value on those entries is effectively volunteering for a review.'],
+               'table': {'caption': 'Where the practitioners agree on liability, pre-compliance and refund '
+                                    'exposure',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['IOR liability cannot be outsourced to the broker',
+                                   'Entry responsibility can be outsourced but liability stays with the '
+                                   'importer; keep an SOP on file with the broker',
+                                   'Supervise and audit the broker instead of treating the broker as cover',
+                                   'Shapiro ([cjNgBgUI1As @ 00:04:11])'],
+                                  ['Hiring a broker does not move legal exposure',
+                                   'The IOR answers for classification, value, origin, duties and fees and '
+                                   'keeps records five years',
+                                   'Map every product line to an accountable internal owner before filing '
+                                   'entries',
+                                   'How Stuff Moves ([GGGUB13U6vk @ 00:01:00])'],
+                                  ['The importer identity belongs to the importer itself',
+                                   'Legal name, EIN, addresses, phone, email and authorized signer form '
+                                   "the IOR identity, not the broker's",
+                                   'Assign internal ownership of the ACE importer profile and review it on '
+                                   'schedule',
+                                   'GHY International ([pyMQL8u25fU @ 00:09:21])'],
+                                  ['Proactive pre-compliance beats a hide-and-hope posture',
+                                   'Hiding and hoping Customs ignores you is not a strategy and is a huge '
+                                   'liability',
+                                   'Run classification, valuation, origin and FTA reviews before any '
+                                   'audit, seizure or penalty arrives',
+                                   'Diaz Trade Law ([j_DJeCw3cCw @ 00:00:00])'],
+                                  ['Manuals must be tailored and actually executed day to day',
+                                   'Identical internet-bought manuals turn up at different companies; '
+                                   'build executable documents such as CF-28 logs',
+                                   'Replace template binders with working logs tied to real entry activity '
+                                   'and CBP requests',
+                                   'Simply Trade Podcast ([Q8n9OOAYZ8s @ 00:07:54])'],
+                                  ['A written manual demonstrates reasonable care to CBP',
+                                   'Cover import profile, broker selection and audits, HTS, valuation, '
+                                   'origin, FTA use and internal audits',
+                                   'Name a compliance officer, update the manual regularly and train staff '
+                                   'on it',
+                                   'JSJ INTERNATIONAL LCB ([n4YfLCDwg1M @ 00:01:14])'],
+                                  ['Refund claims must survive an audit of the entries',
+                                   'Refunds are not automatic, and filing a refund claim can trigger an '
+                                   'audit of the entries',
+                                   'Scrub classification, origin and value on every entry before filing '
+                                   'any refund claim',
+                                   'IEEPA Tariff Watch ([V9_1adwF1c8 @ 00:02:55])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Shapiro's entry-audit program is the most granular build on offer. Cadence: "
+                              '“monthly is ideal but quarterly is fine” [cjNgBgUI1As @ 00:27:37]. Audit '
+                              'data goes into a spreadsheet or database rather than a hard-copy sheet in '
+                              'the file, so reports and statistics can be extracted, and the target is at '
+                              'least a 95% pass rate; routing reviews through a law firm carries '
+                              'privilege. To benchmark against CBP, Shapiro explains focused-assessment '
+                              'sampling: 10% of entries if under 250, otherwise 25 to 50, pulled by line '
+                              'item [cjNgBgUI1As @ 00:30:16]. Data is cheap: ACE reports are free, and an '
+                              'ITRA costs $250 to $300 and reveals unauthorized filers. The line-level '
+                              'checks are concrete: reconcile payables against the 7501, never take origin '
+                              'from the ISF sheet, and report even non-revenue errors through a quarterly '
+                              'PE or PSC, escalating systemic errors to an attorney for prior disclosure. '
+                              'Diaz Trade Law sequences the same engine as an ACE data risk assessment, '
+                              'entry review with an “ACE report card,” a tailored manual, employee '
+                              'training, periodic internal ACE audits and an error plan pairing prior '
+                              'disclosure with an internal escalation chain [j_DJeCw3cCw @ 00:01:36]. Jen '
+                              'Diaz is categorical on access: “There is zero zero reason any company '
+                              'should not have access to their ACE data” [j_DJeCw3cCw @ 00:01:53].',
+                              'The second mechanic is defending the IOR record itself, because a voided or '
+                              'stale record blocks ACE access and the refund workflow that runs through '
+                              "it. Trade Risk Guaranty's Colette Lane lays out step one: ask the broker or "
+                              'bond provider for a bond query showing IOR, physical and mailing address, '
+                              'bond size, bond number and active or sufficient status; TRG runs it free '
+                              'for non-clients, usually within a day, through a QR code or its Eagle Eye '
+                              'ACE dashboard [PymimTwXXVM @ 00:04:25]. The fix package is a paper 5106, a '
+                              'POA executed by an officer such as the CEO, COO, treasurer, secretary, '
+                              'managing member or owner, and an IRS 147C letter preferred over a 1040, '
+                              "because “CBP won't have any questions if you're using a 147C” [PymimTwXXVM "
+                              '@ 00:06:30]. The street trick for getting the 147C is calling '
+                              "1-800-829-0115, pressing 3, around 6:30 Central. GHY's Corey routes the "
+                              'self-check through ACE: Accounts tab, Importer view, then review records '
+                              'and change history [pyMQL8u25fU @ 00:17:21], grades the result green for '
+                              'matching, yellow for stale or red for unsubstantiated, and tells importers '
+                              'to log in monthly. Grassi adds the refund link: stale ACE emails get fixed '
+                              'with a 5106, and refund bank details sit in a separate ACE module '
+                              '[xA8LxqtatDo @ 00:16:58].',
+                              "Refund sequencing is where Grassi's team gets tactical. A CAPE CSV upload "
+                              'pushes entries into liquidation, which bars further PSCs, so corrections '
+                              'must happen before the upload, not after [xA8LxqtatDo @ 00:13:07]. Phase 1 '
+                              'excludes warehouse, recon and AD entries; the reported numbers were a 70% '
+                              'rise in ACE logins, 75,000 declarations filed with 47,000 passing, 11.2M '
+                              'entries accepted, 2.1M rejected and 1.74M liquidated for refund '
+                              '[xA8LxqtatDo @ 00:18:21]. The play: put the 6% interest toward an audit, '
+                              'file the cleanest entries first, sequence the rest, and expect money 60 to '
+                              '90 days after reliquidation; the panel even suggests working ACE after '
+                              'hours. The downside math frames every decision. Shapiro lists negligence at '
+                              '2x lost duties or 20% of dutiable value if duty-free, gross negligence at '
+                              '4x or 40%, and fraud at 8x or 80% [cjNgBgUI1As @ 00:06:43]. Jennifer Diaz, '
+                              'interviewed on Meaningful Mediation, prices prior disclosure at duties plus '
+                              'interest against penalty exposure listed as 2x, 4x and 5x for fraud, valid '
+                              'only before CBP opens an investigation, under a 5-year statute of '
+                              'limitations, and warns that an unpayable disclosure becomes “exhibit A” in '
+                              'a criminal case [OFX0_mQm-Qo @ 00:18:36].'],
+               'table': {'caption': 'Audit, IOR-record and refund mechanics with the exact numbers '
+                                    'practitioners use',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Tool',
+                                     'How Operators Run It',
+                                     'Expert Source'],
+                         'rows': [['Entry audit cadence and pass-rate target',
+                                   'Monthly is ideal, quarterly is fine, targeting at least a 95% pass '
+                                   'rate',
+                                   'Log every audited entry electronically so statistics and reports can '
+                                   'be extracted',
+                                   'Shapiro ([cjNgBgUI1As @ 00:27:37])'],
+                                  ['CBP focused-assessment sampling benchmark',
+                                   '10% of entries if under 250 entries, otherwise 25 to 50, by line item',
+                                   'Size internal samples to mirror how CBP pulls line items in an FA',
+                                   'Shapiro ([cjNgBgUI1As @ 00:30:16])'],
+                                  ['Unauthorized-filer detection report for the importer number',
+                                   'ACE reports are free; an ITRA report costs $250 to $300',
+                                   'Pull the ITRA to expose filers using the importer number without '
+                                   'authority',
+                                   'Shapiro ([cjNgBgUI1As @ 00:31:13])'],
+                                  ['Bond query snapshot of the IOR record',
+                                   'Shows IOR, physical and mailing address, bond size, bond number and '
+                                   'active status',
+                                   'Request it free from TRG, typically within a day, via QR code or Eagle '
+                                   'Eye',
+                                   'Trade Risk Guaranty ([PymimTwXXVM @ 00:04:25])'],
+                                  ['IOR record repair package for voided or wrong data',
+                                   'Paper 5106, officer-executed POA and an IRS 147C letter preferred over '
+                                   'a 1040',
+                                   'Have a CEO, COO, treasurer, secretary, managing member or owner sign '
+                                   'the POA',
+                                   'Trade Risk Guaranty ([PymimTwXXVM @ 00:05:49])'],
+                                  ['CAPE refund upload liquidation consequence',
+                                   'A CSV upload pushes entries into liquidation, barring any further PSCs',
+                                   'Finish every PSC correction before uploading entries to CAPE for '
+                                   'refund',
+                                   'Grassi ([xA8LxqtatDo @ 00:13:07])'],
+                                  ['Phase 1 refund throughput and acceptance numbers',
+                                   '75,000 declarations filed, 47,000 passed; 11.2M entries accepted, 2.1M '
+                                   'rejected',
+                                   'File the cleanest entries first and expect funds 60 to 90 days after '
+                                   'reliquidation',
+                                   'Grassi ([xA8LxqtatDo @ 00:18:21])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Moves the Practitioners Make Before CBP Looks',
+                           'body': 'Small, cheap checks that close the gaps CBP finds first and keep '
+                                   'refund filings defensible.',
+                           'items': ['Never take country of origin from the ISF sheet, and check payables '
+                                     'against the 7501 on every audited entry [Shapiro — cjNgBgUI1As @ '
+                                     '00:40:59].',
+                                     'Call 1-800-829-0115, press 3, around 6:30 Central to get the IRS '
+                                     '147C letter, and get it now because even correct IOR data may be '
+                                     'voided [Trade Risk Guaranty — PymimTwXXVM @ 00:07:27].',
+                                     'A broker bond query cannot show email or phone, so log into ACE '
+                                     'yourself monthly and confirm the red-asterisk required fields [GHY '
+                                     'International — pyMQL8u25fU @ 00:35:13].',
+                                     'Put the 6% refund interest toward an audit and go after the '
+                                     'low-hanging fruit, filing the cleanest entries first and sequencing '
+                                     'the rest [Grassi — xA8LxqtatDo @ 00:23:40].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pull your own ACE data',
+                              'action': 'Get ACE access, run the free ACE reports and order an ITRA to '
+                                        'surface unauthorized filers.',
+                              'detail': 'ACE reports cost nothing and the ITRA runs $250 to $300 [Shapiro '
+                                        '— cjNgBgUI1As @ 00:31:13]; Diaz Trade Law starts every engagement '
+                                        'with a risk assessment of ACE data and an ACE report card [Diaz '
+                                        'Trade Law — j_DJeCw3cCw @ 00:01:36].'},
+                             {'step': 2,
+                              'title': 'Run an IOR record health check',
+                              'action': 'Confirm ACE access, review the profile against corporate data, '
+                                        'fix discrepancies, review POAs and assign internal ownership.',
+                              'detail': "GHY's health check sequence covers access, profile, corporate "
+                                        'comparison, discrepancies, POAs and ownership [GHY International '
+                                        '— pyMQL8u25fU @ 00:29:42]; back it with a bond query from the '
+                                        'broker or bond provider [Trade Risk Guaranty — PymimTwXXVM @ '
+                                        '00:04:25].'},
+                             {'step': 3,
+                              'title': 'Audit entries on a fixed cadence',
+                              'action': 'Audit entries monthly or quarterly into a spreadsheet or '
+                                        'database, checking payables against the 7501 and origin against '
+                                        'real documents.',
+                              'detail': 'Monthly is ideal and quarterly is fine, with data recorded '
+                                        'electronically [Shapiro — cjNgBgUI1As @ 00:27:37]; check payables '
+                                        'against the 7501 and never take origin from the ISF sheet '
+                                        '[Shapiro — cjNgBgUI1As @ 00:40:15].'},
+                             {'step': 4,
+                              'title': 'Sequence the refund filing',
+                              'action': 'Complete PSC corrections, then upload the cleanest entries to '
+                                        'CAPE first and stage the rest behind them.',
+                              'detail': 'A CAPE CSV upload pushes entries into liquidation and bars '
+                                        'further PSCs [Grassi — xA8LxqtatDo @ 00:13:07]; file the cleanest '
+                                        'entries first and fund an audit with the 6% interest [Grassi — '
+                                        'xA8LxqtatDo @ 00:23:40].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is who files the refund claim. IEEPA Tariff Watch pushes '
+                              'the counsel route hard: a broker filing gives you no privilege, cannot '
+                              'reopen liquidated entries, and leaves you waiting one to three years, while '
+                              'counsel can arrange a cash advance in "a couple of weeks" [V9_1adwF1c8 @ '
+                              '00:03:27]. The channel\'s framing is blunt: "A broker can file paperwork. '
+                              'An attorney can protect your rights" [V9_1adwF1c8 @ 00:04:52]. It quotes '
+                              'Court of International Trade suits as recovering 30-40% of refunds '
+                              '[V9_1adwF1c8 @ 00:04:36], and its description links out to attorneys, so '
+                              'the pitch carries a referral motive. Grassi and CargoTrans run the opposite '
+                              'playbook. They file through CAPE in ACE, put the 6% interest toward an '
+                              'audit, file the cleanest entries first and sequence the rest [xA8LxqtatDo @ '
+                              '00:23:40], all under a "hurry up and slow down" mindset [xA8LxqtatDo @ '
+                              "00:13:45]. Shapiro's Jane Tager sits between them on privilege. Law firm "
+                              'reviews carry privilege [cjNgBgUI1As @ 00:29:28], but the core rule is that '
+                              'you can outsource the entry responsibility but not the liability '
+                              '[cjNgBgUI1As @ 00:04:11]. Operator read: whichever channel files, the '
+                              'importer of record owns every attestation, so privilege matters most when '
+                              'your entry data is dirty.',
+                              'Practitioners do not agree on the fraud ceiling, and the spread matters '
+                              "when you price a disclosure. Shapiro's Tager teaches a multiplier ladder. "
+                              'Negligence runs 2x lost duties, or 20% of dutiable value if duty-free '
+                              '[cjNgBgUI1As @ 00:06:43]. Gross negligence runs 4x or 40%, and fraud runs '
+                              '8x or 80% [cjNgBgUI1As @ 00:07:20]. VoraPrep matches 2x and 4x but says '
+                              'fraud "can be up to the entire domestic value of the merchandise itself, '
+                              'not the lost duties, the value of the goods" [xq7kXAXH3GQ @ 00:03:47]. '
+                              'Jennifer Diaz, on Meaningful Mediation, puts fraud exposure at 5x when '
+                              'comparing a prior disclosure against a penalty case [OFX0_mQm-Qo @ '
+                              '00:18:36]. The cost of disclosing also differs by culpability. VoraPrep '
+                              'says negligence or gross negligence disclosures pay duties plus interest, '
+                              'while fraud disclosures pay 1x lost duties [xq7kXAXH3GQ @ 00:04:54]. On the '
+                              'back end, Diaz quotes mitigation guidelines of 10-30% and expects stricter '
+                              'guidelines for repeat offenders. Diaz also describes three bites: petition, '
+                              'supplemental petition, court [OFX0_mQm-Qo @ 00:43:14]. Diaz reports a $4M '
+                              "penalty reduced to $4,000 using inability to pay, first offense, and CBP's "
+                              'own errors [OFX0_mQm-Qo @ 00:15:49]. Operator read: model your worst case '
+                              'on the harshest number any of these practitioners quotes, then decide '
+                              'whether disclosure is cheaper.',
+                              'Practitioners also split on what a compliance manual is for. JSJ '
+                              "International's Hame Salazar treats a written manual as proof of reasonable "
+                              'care under 19 USC 1484 [n4YfLCDwg1M @ 00:01:14]. Salazar lists the failure '
+                              'set as generic templates, no compliance officer, no updates, and no '
+                              'training or broker oversight [n4YfLCDwg1M @ 00:04:25]. Former CBP auditor '
+                              'Kathy August, on Simply Trade Podcast, goes further. Identical '
+                              'internet-bought manuals turn up at different companies [Q8n9OOAYZ8s @ '
+                              '00:07:54], so August says to build executable documents such as CF-28 logs '
+                              '[Q8n9OOAYZ8s @ 00:08:10], because "It\'s not enough to have a manual, you '
+                              'have to execute" [Q8n9OOAYZ8s @ 00:27:18]. Diaz Trade Law puts the manual '
+                              'third in the workflow. First comes an ACE data risk assessment, then an '
+                              'entry review with an ACE report card, then the manual. Training, periodic '
+                              'internal ACE audits, and an error plan with a prior disclosure route follow '
+                              "[j_DJeCw3cCw @ 00:01:36]. Audit cadence also varies. Shapiro's Tager says "
+                              'monthly is ideal but quarterly is fine [cjNgBgUI1As @ 00:27:37], and wants '
+                              'audit data recorded electronically so reports and statistics can be '
+                              "extracted [cjNgBgUI1As @ 00:28:07]. Operator read: Salazar's manual earns "
+                              "the reasonable-care defense on paper, while August's and Diaz's playbooks "
+                              'make that paper survive a CF-28 with live logs, ACE pulls, and an '
+                              'escalation chain.'],
+               'table': {'caption': 'Side-by-side playbooks where practitioners diverge on refunds, '
+                                    'penalties, manuals, and seizures',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Who should file the IEEPA tariff refund claim',
+                                   'Self-file through CAPE in ACE, cleanest entries first, then sequence '
+                                   'the rest',
+                                   'Route through counsel for privilege and a cash advance in a couple of '
+                                   'weeks',
+                                   'Grassi ([xA8LxqtatDo @ 00:23:40]); IEEPA Tariff Watch ([V9_1adwF1c8 @ '
+                                   '00:03:27])'],
+                                  ['Ceiling on a fraud penalty under the customs penalty statute',
+                                   '8x lost duties, or 80% of dutiable value if the goods are duty-free',
+                                   'Up to the entire domestic value of the goods; Diaz quotes 5x lost '
+                                   'duties',
+                                   'Shapiro ([cjNgBgUI1As @ 00:07:20]); VoraPrep ([xq7kXAXH3GQ @ '
+                                   '00:03:47]); Meaningful Mediation ([OFX0_mQm-Qo @ 00:18:36])'],
+                                  ['Size of the IEEPA refund pool importers are chasing',
+                                   'About $170B in refunds, per the Grassi and CargoTrans count',
+                                   '$166B on the line, with Diaz putting roughly $100B already refunded',
+                                   'Grassi ([xA8LxqtatDo @ 00:04:06]); IEEPA Tariff Watch ([V9_1adwF1c8 @ '
+                                   '00:00:00]); Meaningful Mediation ([OFX0_mQm-Qo @ 00:47:40])'],
+                                  ['What a customs compliance manual actually buys the importer',
+                                   'Tailored written manual demonstrates reasonable care under 19 USC 1484',
+                                   'Manual is worthless without execution; build CF-28 logs and executable '
+                                   'documents',
+                                   'JSJ INTERNATIONAL LCB ([n4YfLCDwg1M @ 00:01:14]); Simply Trade Podcast '
+                                   '([Q8n9OOAYZ8s @ 00:27:18])'],
+                                  ['How often and how to run internal entry audits',
+                                   'Monthly is ideal, quarterly is fine, data kept in a spreadsheet or '
+                                   'database',
+                                   'Periodic internal ACE audits after an ACE risk assessment and report '
+                                   'card',
+                                   'Shapiro ([cjNgBgUI1As @ 00:27:37]); Diaz Trade Law ([j_DJeCw3cCw @ '
+                                   '00:01:36])'],
+                                  ['How to fight back after a CBP seizure notice arrives',
+                                   'Petition inside the government administrative process the seizure '
+                                   'notice opens',
+                                   'Claim and cost bond, a more adversarial approach that Diaz says gets '
+                                   'faster results',
+                                   'Clark-Esposito Law Firm P.C. ([pwhkHF1ttlo @ 00:00:51]); Meaningful '
+                                   'Mediation ([OFX0_mQm-Qo @ 00:25:42])'],
+                                  ['How to correct errors found in your own entry audit',
+                                   'Non-revenue errors still get reported through a quarterly PE or a PSC',
+                                   'Systemic errors go to an attorney for a voluntary, timely, complete '
+                                   'prior disclosure',
+                                   'Shapiro ([cjNgBgUI1As @ 00:45:47]); VoraPrep ([xq7kXAXH3GQ @ '
+                                   '00:04:03])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The quietest money-killer is a voided or hijacked importer of record. Trade '
+                              'Risk Guaranty reports that brokers sometimes entered their own address or '
+                              'phone on the 5106, which was "never intended," and that CBP scheduled a '
+                              '30-day scrub starting September 18 [PymimTwXXVM @ 00:02:23]. Fixes that '
+                              'normally took five business days now run 10-plus days because CBP is "at '
+                              'capacity" [PymimTwXXVM @ 00:03:19], and even correct data may be voided '
+                              "[PymimTwXXVM @ 00:07:27]. GHY International's Corey adds that CBP "
+                              'deactivated 5.3 million IOR numbers earlier in 2026 [pyMQL8u25fU @ '
+                              '00:06:04]. Corey also says unknown filer codes are "symptoms of fraud" '
+                              '[pyMQL8u25fU @ 00:12:19], and that pre-2019 records without an email block '
+                              "ACE signup [pyMQL8u25fU @ 00:16:15]. This collides with refunds. Grassi's "
+                              'team tells claimants to fix stale ACE emails with a 5106 before filing, and '
+                              'notes that refund bank details live in a separate ACE module [xA8LxqtatDo @ '
+                              '00:16:58]. Economics check: a refund claim is only as good as the IOR '
+                              "record it lands on. Trade Risk Guaranty's fix kit is a paper 5106, a POA "
+                              'executed by an officer, and an IRS 147C letter, because "CBP won\'t have '
+                              'any questions if you\'re using a 147C" [PymimTwXXVM @ 00:06:30].',
+                              'Refund filings carry their own reversal risk. Grassi and CargoTrans warn '
+                              'that a CAPE CSV upload pushes entries into liquidation, which bars further '
+                              'PSCs [xA8LxqtatDo @ 00:13:07]. The upload checkbox also attests to '
+                              'classification, origin and value [xA8LxqtatDo @ 00:14:02]. Phase 1 numbers '
+                              'show the friction: 75,000 declarations filed, 47,000 passed, 11.2M entries '
+                              'accepted and 2.1M rejected [xA8LxqtatDo @ 00:18:21]. IEEPA Tariff Watch '
+                              'claims 85% of entries are misclassified, so the refund claim itself can '
+                              'trigger an audit [V9_1adwF1c8 @ 00:02:55]. The channel also flags a 180-day '
+                              "protest window after liquidation [V9_1adwF1c8 @ 00:05:55]. Kathy August's "
+                              'case shows how CBP reads timing. A declared value dropped 40%, from $100 to '
+                              '$60, right as tariffs changed, and a disclosure was filed [Q8n9OOAYZ8s @ '
+                              '00:12:12]. August\'s warning is that "Customs is a a worthy chess player" '
+                              '[Q8n9OOAYZ8s @ 00:12:50]. Economics check: a refund attestation over dirty '
+                              "entries trades a known refund for unknown penalty exposure. Grassi's answer "
+                              'is to go after the low-hanging fruit first and spend the 6% interest on an '
+                              'audit [xA8LxqtatDo @ 00:24:14]. The closing line: "Move with urgency, but '
+                              'you need to make sure that every step can stand up to an audit" '
+                              '[xA8LxqtatDo @ 00:28:02].',
+                              'The foreign IOR rule makes DDP setups a failure mode on a fixed date. How '
+                              'Stuff Moves models that 16% of importers are foreign and that 32% of those '
+                              'will lose their path, about 5.4% of all importers [GGGUB13U6vk @ 00:07:25]. '
+                              'A wrong status declaration triggers live entry, and broker violations '
+                              'become reachable under 1592, with possible False Claims Act treble damages '
+                              '[GGGUB13U6vk @ 00:09:10]. Ask The Customs Manager confirms the risks '
+                              'include live entry and loss of immediate delivery [44NIfUvkQRo @ 00:04:30], '
+                              'and expects brokers to fully comply by May 6, 2027 [44NIfUvkQRo @ '
+                              '00:04:47]. Recordkeeping traps are just as mechanical. VoraPrep notes that '
+                              'archiving records offline after four years is a violation [xq7kXAXH3GQ @ '
+                              '00:07:11], because "just having the record isn\'t enough. You have to be '
+                              'able to find it" [xq7kXAXH3GQ @ 00:02:26]. Trade Counsel prices a single '
+                              'ISF slip: "If it\'s late, wrong or missing, customs can claim $5,000 per '
+                              'violation against your bond" [-WXoF_u08g0 @ 00:03:34]. Economics check: on '
+                              "Trade Counsel's $10,000 bin order the duty is $2,340 [-WXoF_u08g0 @ "
+                              '00:02:19], so one ISF violation costs more than double the duty bill. DDP '
+                              'shippers who never confirmed the IOR in writing face the steepest cliff '
+                              '[GGGUB13U6vk @ 00:11:36].'],
+               'table': {'caption': 'Firsthand traps, what broke, and the economics practitioners attach '
+                                    'to each',
+                         'headers': ['Trap', 'What Went Wrong', 'Economics Check', 'Expert Source'],
+                         'rows': [["Broker contact data sitting on the importer's 5106 record",
+                                   'Brokers entered their own address or phone on the 5106, which was '
+                                   'never intended',
+                                   'Fixes now take 10-plus business days with CBP at capacity, stalling '
+                                   'refund access',
+                                   'Trade Risk Guaranty ([PymimTwXXVM @ 00:02:23])'],
+                                  ['Unknown filer codes showing up against your importer number',
+                                   'Someone is using your importer number illegally and filing under your '
+                                   'identity',
+                                   'ACE reports are free and an ITRA at $250-$300 reveals unauthorized '
+                                   'filers',
+                                   'GHY International ([pyMQL8u25fU @ 00:12:56]); Shapiro ([cjNgBgUI1As @ '
+                                   '00:31:13])'],
+                                  ['Uploading a CAPE CSV before entries are cleaned up',
+                                   'The upload pushes entries into liquidation, which bars any further PSC '
+                                   'corrections',
+                                   'Phase 1 saw 2.1M entries rejected against 11.2M accepted on first pass',
+                                   'Grassi ([xA8LxqtatDo @ 00:13:07])'],
+                                  ['Pulling country of origin straight from the ISF sheet',
+                                   'Origin taken from ISF data instead of verified documents goes into the '
+                                   'entry',
+                                   'Payables that do not match the 7501 are low hanging fruit for Customs',
+                                   'Shapiro ([cjNgBgUI1As @ 00:40:59])'],
+                                  ['Ignoring a CBP seizure notice and never filing a response',
+                                   'Alleged violations stay on the electronic record as a red flag over '
+                                   'the identity',
+                                   'A seizure case can take anywhere from 6 months to 2 years to resolve',
+                                   'Clark-Esposito Law Firm P.C. ([pwhkHF1ttlo @ 00:01:07]); Meaningful '
+                                   'Mediation ([OFX0_mQm-Qo @ 00:25:57])'],
+                                  ['Filing a prior disclosure the company cannot actually pay',
+                                   'An unpayable disclosure becomes exhibit A in a criminal case against '
+                                   'the filer',
+                                   'A paid disclosure costs duties plus interest versus 2x to 5x penalty '
+                                   'exposure',
+                                   'Meaningful Mediation ([OFX0_mQm-Qo @ 00:18:36])'],
+                                  ['Claiming USMCA preference on a weak certificate of origin',
+                                   'Failed preference claims mean lost privileges plus the duties and '
+                                   'interest owed',
+                                   "Have the producer sign the certificate, not the importer's trade "
+                                   'compliance manager',
+                                   'JSJ INTERNATIONAL LCB ([n4YfLCDwg1M @ 00:05:10]); Simply Trade Podcast '
+                                   '([Q8n9OOAYZ8s @ 00:23:32])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear These Four Before You Touch a Refund Claim',
+                           'body': 'Every refund dollar depends on a clean IOR record, clean entries, and '
+                                   'correct disclosure timing. Practitioners report that skipping any of '
+                                   'these turns a recovery into an audit, a void, or a penalty case.',
+                           'items': ['Pull a bond query and review the ACE importer view first. Confirm '
+                                     'the IOR, physical and mailing addresses, bond number, and active or '
+                                     'sufficient status before any refund filing [Trade Risk Guaranty — '
+                                     'PymimTwXXVM @ 00:04:25].',
+                                     'Do not upload a CAPE CSV until the entries are clean. The upload '
+                                     'pushes entries into liquidation and bars further PSCs, and the '
+                                     'checkbox attests to classification, origin and value [Grassi — '
+                                     'xA8LxqtatDo @ 00:13:07].',
+                                     'Get any prior disclosure on file before CBP issues a notice. No '
+                                     'prior disclosure is possible once a notice has been issued [VoraPrep '
+                                     '— xq7kXAXH3GQ @ 00:06:20].',
+                                     'Confirm in writing who the IOR is on every DDP lane before the '
+                                     'January 5 effective date. The filing date controls, not the ship '
+                                     'date [How Stuff Moves — GGGUB13U6vk @ 00:13:03].']}}],
+ 'pull_quote': '"You can outsource the entry responsibility but not the liability." — Shapiro (cjNgBgUI1As '
+               '@ 00:04:11)',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Run a risk assessment on your own ACE data and build an ACE report card, because '
+                      'ACE is a free program and every company should have access to its data [Diaz Trade '
+                      'Law — j_DJeCw3cCw @ 00:01:53].',
+                      'Order an ITRA for $250-$300 to expose unauthorized filers, then check payables '
+                      'against the 7501 on every audited entry [Shapiro — cjNgBgUI1As @ 00:31:13].',
+                      'Get the IRS 147C letter now by calling 1-800-829-0115, pressing 3, around 6:30 '
+                      'Central, so a 5106 fix goes through without questions [Trade Risk Guaranty — '
+                      'PymimTwXXVM @ 00:07:27].',
+                      'Log into ACE monthly, review records and change history under Accounts and then the '
+                      'Importer view, and assign internal ownership of the IOR profile [GHY International '
+                      '— pyMQL8u25fU @ 00:31:32].',
+                      'File the cleanest refund entries first, sequence the rest, and put the 6% interest '
+                      'toward an audit of the remaining entries [Grassi — xA8LxqtatDo @ 00:23:40].',
+                      'Submit binding ruling requests with complete product information and a proposed '
+                      'solution. Expect about four months, with refunds possible 1-4 years retroactively '
+                      'if goods are ruled duty-free [Cole International — _6C6KJQrxII @ 00:01:47].'],
+ 'statutory_citations': [{'title': 'Shapiro — Essentials of Customs Entry Auditing [00:06:43]',
+                          'url': 'https://www.youtube.com/watch?v=cjNgBgUI1As&t=403s',
+                          'relevance': 'Primary practitioner testimony on the penalty multiplier ladder, '
+                                       'recordkeeping penalties, and entry audit sampling.'},
+                         {'title': 'Grassi — IEEPA Tariff Refunds: What Phase 1 Means for Importers and '
+                                   'How to Prepare Without Triggering Risk [00:13:07]',
+                          'url': 'https://www.youtube.com/watch?v=xA8LxqtatDo&t=787s',
+                          'relevance': 'Primary practitioner testimony on CAPE upload liquidation risk, '
+                                       'attestations, and Phase 1 pass and reject data.'},
+                         {'title': 'Meaningful Mediation — Customs Penalty Mitigation: Negotiating with '
+                                   'CBP | Jennifer Diaz [00:18:36]',
+                          'url': 'https://www.youtube.com/watch?v=OFX0_mQm-Qo&t=1116s',
+                          'relevance': 'Primary practitioner testimony on prior disclosure economics, '
+                                       'mitigation ranges, and seizure strategy.'},
+                         {'title': 'GHY International — Is Your Importer of Record Status at Risk - '
+                                   'Validating Your CBP Records   Understanding Form 5106 [00:12:56]',
+                          'url': 'https://www.youtube.com/watch?v=pyMQL8u25fU&t=776s',
+                          'relevance': 'Primary practitioner testimony on IOR voids, unknown filer codes, '
+                                       'and 5106 record hygiene.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'cjNgBgUI1As',
+                       'title': 'Essentials of Customs Entry Auditing',
+                       'channel': 'Shapiro',
+                       'author': 'Shapiro',
+                       'text': 'You can outsource the entry responsibility but not the liability.',
+                       'tip': 'You can outsource the entry responsibility but not the liability.',
+                       'timestamp': 251,
+                       'timestamp_seconds': 251,
+                       'timestamp_label': '[00:04:11]',
+                       'url': 'https://www.youtube.com/watch?v=cjNgBgUI1As&t=251s',
+                       'markdown': '[00:04:11](https://www.youtube.com/watch?v=cjNgBgUI1As&t=251s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xA8LxqtatDo',
+                       'title': 'IEEPA Tariff Refunds: What Phase 1 Means for Importers and How to Prepare '
+                                'Without Triggering Risk',
+                       'channel': 'Grassi',
+                       'author': 'Grassi',
+                       'text': 'Move with urgency, but you need to make sure that every step can stand up '
+                               'to an audit.',
+                       'tip': 'Move with urgency, but you need to make sure that every step can stand up '
+                              'to an audit.',
+                       'timestamp': 1682,
+                       'timestamp_seconds': 1682,
+                       'timestamp_label': '[00:28:02]',
+                       'url': 'https://www.youtube.com/watch?v=xA8LxqtatDo&t=1682s',
+                       'markdown': '[00:28:02](https://www.youtube.com/watch?v=xA8LxqtatDo&t=1682s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'V9_1adwF1c8',
+                       'title': 'Before You File for a Section 301 Tariff Refund: The Audit Risk Every '
+                                'Importer Needs to Understand',
+                       'channel': 'IEEPA Tariff Watch',
+                       'author': 'IEEPA Tariff Watch',
+                       'text': 'A broker can file paperwork. An attorney can protect your rights.',
+                       'tip': 'A broker can file paperwork. An attorney can protect your rights.',
+                       'timestamp': 292,
+                       'timestamp_seconds': 292,
+                       'timestamp_label': '[00:04:52]',
+                       'url': 'https://www.youtube.com/watch?v=V9_1adwF1c8&t=292s',
+                       'markdown': '[00:04:52](https://www.youtube.com/watch?v=V9_1adwF1c8&t=292s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'n4YfLCDwg1M',
+                       'title': 'Step-by-Step: Build a CBP Compliance Manual That Protects You from Fines '
+                                '& Audits',
+                       'channel': 'JSJ INTERNATIONAL LCB',
+                       'author': 'JSJ INTERNATIONAL LCB',
+                       'text': 'Build a customs compliance manual tailored to your operations.',
+                       'tip': 'Build a customs compliance manual tailored to your operations.',
+                       'timestamp': 344,
+                       'timestamp_seconds': 344,
+                       'timestamp_label': '[00:05:44]',
+                       'url': 'https://www.youtube.com/watch?v=n4YfLCDwg1M&t=344s',
+                       'markdown': '[00:05:44](https://www.youtube.com/watch?v=n4YfLCDwg1M&t=344s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xq7kXAXH3GQ',
+                       'title': '[CBLE] CBLE3: Recordkeeping, Prior Disclosures, and Penalties (19 CFR '
+                                'Part 163, 171 & 19 U.S.C. §...',
+                       'channel': 'VoraPrep',
+                       'author': 'VoraPrep',
+                       'text': "It's the system's way of encouraging people to come clean and fix their "
+                               'own mistakes.',
+                       'tip': "It's the system's way of encouraging people to come clean and fix their own "
+                              'mistakes.',
+                       'timestamp': 310,
+                       'timestamp_seconds': 310,
+                       'timestamp_label': '[00:05:10]',
+                       'url': 'https://www.youtube.com/watch?v=xq7kXAXH3GQ&t=310s',
+                       'markdown': '[00:05:10](https://www.youtube.com/watch?v=xq7kXAXH3GQ&t=310s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Q8n9OOAYZ8s',
+                       'title': 'Customs Ready vs. Audit Ready: There’s a BIG Difference',
+                       'channel': 'Simply Trade Podcast',
+                       'author': 'Simply Trade Podcast',
+                       'text': "It's not enough to have a manual, you have to execute.",
+                       'tip': "It's not enough to have a manual, you have to execute.",
+                       'timestamp': 1638,
+                       'timestamp_seconds': 1638,
+                       'timestamp_label': '[00:27:18]',
+                       'url': 'https://www.youtube.com/watch?v=Q8n9OOAYZ8s&t=1638s',
+                       'markdown': '[00:27:18](https://www.youtube.com/watch?v=Q8n9OOAYZ8s&t=1638s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '44NIfUvkQRo',
+                       'title': 'US Imports The New CTPAT Rule for Foreign Importers of Record',
+                       'channel': 'Ask The Customs Manager',
+                       'author': 'Ask The Customs Manager',
+                       'text': "The broker's validation and the company's own status are separate matters.",
+                       'tip': "The broker's validation and the company's own status are separate matters.",
+                       'timestamp': 201,
+                       'timestamp_seconds': 201,
+                       'timestamp_label': '[00:03:21]',
+                       'url': 'https://www.youtube.com/watch?v=44NIfUvkQRo&t=201s',
+                       'markdown': '[00:03:21](https://www.youtube.com/watch?v=44NIfUvkQRo&t=201s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'j_DJeCw3cCw',
+                       'title': 'Why CBP Pre-Compliance Is More Important Than Ever',
+                       'channel': 'Diaz Trade Law',
+                       'author': 'Diaz Trade Law',
+                       'text': 'There is zero zero reason any company should not have access to their ACE '
+                               'data.',
+                       'tip': 'There is zero zero reason any company should not have access to their ACE '
+                              'data.',
+                       'timestamp': 113,
+                       'timestamp_seconds': 113,
+                       'timestamp_label': '[00:01:53]',
+                       'url': 'https://www.youtube.com/watch?v=j_DJeCw3cCw&t=113s',
+                       'markdown': '[00:01:53](https://www.youtube.com/watch?v=j_DJeCw3cCw&t=113s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GGGUB13U6vk',
+                       'title': 'Who Can Import Into America? The January 5 Rule Rewriting the Answer',
+                       'channel': 'How Stuff Moves',
+                       'author': 'How Stuff Moves',
+                       'text': 'In short, an address is no longer enough.',
+                       'tip': 'In short, an address is no longer enough.',
+                       'timestamp': 380,
+                       'timestamp_seconds': 380,
+                       'timestamp_label': '[00:06:20]',
+                       'url': 'https://www.youtube.com/watch?v=GGGUB13U6vk&t=380s',
+                       'markdown': '[00:06:20](https://www.youtube.com/watch?v=GGGUB13U6vk&t=380s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pwhkHF1ttlo',
+                       'title': "What to Do If You've Received a U.S. Customs & Border Protection (CBP) "
+                                'Seizure Notice',
+                       'channel': 'Clark-Esposito Law Firm P.C.',
+                       'author': 'Clark-Esposito Law Firm P.C.',
+                       'text': 'CBP sends this notification so that an interested party can try and '
+                               'recover the merchandise through a government administrative process.',
+                       'tip': 'CBP sends this notification so that an interested party can try and recover '
+                              'the merchandise through a government administrative process.',
+                       'timestamp': 51,
+                       'timestamp_seconds': 51,
+                       'timestamp_label': '[00:00:51]',
+                       'url': 'https://www.youtube.com/watch?v=pwhkHF1ttlo&t=51s',
+                       'markdown': '[00:00:51](https://www.youtube.com/watch?v=pwhkHF1ttlo&t=51s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_6C6KJQrxII',
+                       'title': 'Customs & Binding Rulings - The ABCs',
+                       'channel': 'Cole International',
+                       'author': 'Cole International',
+                       'text': 'Inaccurate trade data can lead to seizure and penalties, and predetermined '
+                               'rulings are the best proactive approach.',
+                       'tip': 'Inaccurate trade data can lead to seizure and penalties, and predetermined '
+                              'rulings are the best proactive approach.',
+                       'timestamp': 88,
+                       'timestamp_seconds': 88,
+                       'timestamp_label': '[00:01:28]',
+                       'url': 'https://www.youtube.com/watch?v=_6C6KJQrxII&t=88s',
+                       'markdown': '[00:01:28](https://www.youtube.com/watch?v=_6C6KJQrxII&t=88s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PymimTwXXVM',
+                       'title': "CBP's database Clean Up May Void Your IOR | TRG Talks Trade | EP 13",
+                       'channel': 'Trade Risk Guaranty',
+                       'author': 'Trade Risk Guaranty',
+                       'text': "So, CBP won't have any questions if you're using a 147C.",
+                       'tip': "So, CBP won't have any questions if you're using a 147C.",
+                       'timestamp': 390,
+                       'timestamp_seconds': 390,
+                       'timestamp_label': '[00:06:30]',
+                       'url': 'https://www.youtube.com/watch?v=PymimTwXXVM&t=390s',
+                       'markdown': '[00:06:30](https://www.youtube.com/watch?v=PymimTwXXVM&t=390s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pyMQL8u25fU',
+                       'title': 'Is Your Importer of Record Status at Risk - Validating Your CBP Records   '
+                                'Understanding Form 5106',
+                       'channel': 'GHY International',
+                       'author': 'GHY International',
+                       'text': "So, someone's using your importer number illegally.",
+                       'tip': "So, someone's using your importer number illegally.",
+                       'timestamp': 776,
+                       'timestamp_seconds': 776,
+                       'timestamp_label': '[00:12:56]',
+                       'url': 'https://www.youtube.com/watch?v=pyMQL8u25fU&t=776s',
+                       'markdown': '[00:12:56](https://www.youtube.com/watch?v=pyMQL8u25fU&t=776s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OFX0_mQm-Qo',
+                       'title': 'Customs Penalty Mitigation: Negotiating with CBP | Jennifer Diaz',
+                       'channel': 'Meaningful Mediation',
+                       'author': 'Meaningful Mediation',
+                       'text': "Now it's a more adversarial approach, but we are getting faster results.",
+                       'tip': "Now it's a more adversarial approach, but we are getting faster results.",
+                       'timestamp': 1542,
+                       'timestamp_seconds': 1542,
+                       'timestamp_label': '[00:25:42]',
+                       'url': 'https://www.youtube.com/watch?v=OFX0_mQm-Qo&t=1542s',
+                       'markdown': '[00:25:42](https://www.youtube.com/watch?v=OFX0_mQm-Qo&t=1542s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rPXhFei7M1M',
+                       'title': 'CBP ENFORCEMENT IS EVOLVING — AND CUSTOMS BROKERS AND IMPORTERS NEED TO '
+                                'PAY ATTENTION.',
+                       'channel': 'Simply Trade Podcast',
+                       'author': 'Simply Trade Podcast',
+                       'text': 'CBP may audit that certification and you will have 30 days to produce your '
+                               'records.',
+                       'tip': 'CBP may audit that certification and you will have 30 days to produce your '
+                              'records.',
+                       'timestamp': 615,
+                       'timestamp_seconds': 615,
+                       'timestamp_label': '[00:10:15]',
+                       'url': 'https://www.youtube.com/watch?v=rPXhFei7M1M&t=615s',
+                       'markdown': '[00:10:15](https://www.youtube.com/watch?v=rPXhFei7M1M&t=615s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-WXoF_u08g0',
+                       'title': "What Importers Get Wrong About US Customs (And It's Expensive) | Expert's "
+                                'Guide for Beginner',
+                       'channel': 'Trade Counsel',
+                       'author': 'Trade Counsel',
+                       'text': "If it's late, wrong or missing, customs can claim $5,000 per violation "
+                               'against your bond.',
+                       'tip': "If it's late, wrong or missing, customs can claim $5,000 per violation "
+                              'against your bond.',
+                       'timestamp': 214,
+                       'timestamp_seconds': 214,
+                       'timestamp_label': '[00:03:34]',
+                       'url': 'https://www.youtube.com/watch?v=-WXoF_u08g0&t=214s',
+                       'markdown': '[00:03:34](https://www.youtube.com/watch?v=-WXoF_u08g0&t=214s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

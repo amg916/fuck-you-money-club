@@ -1,746 +1,898 @@
 from __future__ import annotations
 
-CHAPTER_5 = {
-    "id": "Q5",
-    "chapter_id": "Q5",
-    "chapter_number": 5,
-    "question_number": 5,
-    "slug": "beginner-traps-clawbacks-and-asymmetric-failure-modes",
-    "question_prompt": "What kills 80% of newcomers in ai data-center powered land, substation headroom & bess site optioning, and what forensic metrics detect margin leaks, regulatory landmines, or platform bans before they wipe out capital?",
-    "kicker": "Q5 / THE BIG MONEY PLAYBOOKS",
-    "title": "Beginner Traps, Clawbacks & Asymmetric Failure Modes",
-    "subtitle": "Utility-Evidenced Megawatts, Restudy Exposure, Option Expiry, BESS Defects, and DOT-Controlled Alternative Uses",
-    "layout_template": "expert_insights",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #47, ranked #15 of 49 with a Money-to-Manpower Score of "
-        "92/100, rewards evidence control rather than speculative acreage accumulation. "
-        "Across the volume's 11 mapped plays, this chapter isolates the failures that "
-        "turn cheap options into expensive obligations: imaginary power, restudies, "
-        "unassignable interests, zoning freezes, contaminated parcels, buyer clawbacks, "
-        "and unauthorized data acquisition. The canonical annual owner profits remain "
-        "$33,000 Conservative, $212,100 Base, and $486,000 Scaled. Treat the prompt's "
-        "80% as a diagnostic framing, not a measured newcomer failure rate. Separate "
-        "standalone BESS underwriting from campus underwriting, reserve for expired "
-        "option fees, and require dated utility evidence before pricing megawatts. "
-        "Billboard and industrial outdoor storage alternatives earn their place only "
-        "through independent permits, transferable rights, and actual operating cash flow."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$110,000",
-            "context": "Annual realized operator revenue; excludes land purchase price and capex",
-            "note": "30% net margin; $33,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$505,000",
-            "context": "Annual realized operator revenue; excludes land purchase price and capex",
-            "note": "42.0% net margin; $212,100 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual realized operator revenue; excludes land purchase price and capex",
-            "note": "54% net margin; $486,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Kill Imaginary Megawatts Before They Consume Option Capital",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The first fatal trap is buying a power narrative instead of a "
-                    "documented service pathway. A parcel beside a 230 kV line has "
-                    "geographic proximity, not reserved capacity, a permissible tap, "
-                    "transformer availability, or an energization commitment. Screen "
-                    "69kV–345kV corridors in QGIS, then attach the utility's dated "
-                    "response, applicable study scope, requested load shape, service "
-                    "voltage, and outstanding conditions to each parcel record. Label "
-                    "public hosting maps and ISO queue entries as screening evidence; "
-                    "neither establishes deliverable load. Generation interconnection "
-                    "procedures under 18 CFR 35.28 do not automatically establish a "
-                    "data center's retail service rights. Separate the utility's "
-                    "documented quantity from the buyer's requested quantity and from "
-                    "any quantity merely assumed in marketing. If a buyer discusses "
-                    "$4,000 per MW for a requested 100 MW campus, the tempting fee "
-                    "is $400,000. If utility documentation supports only a conditional "
-                    "20 MW first phase, the same illustrative rate supports at most "
-                    "$80,000 of conditional milestone consideration, subject to the "
-                    "actual agreement. Unresolved upgrades or dates can reduce present "
-                    "assignable value further. Never sell the unsupported 80 MW as "
-                    "inventory; obtain additional evidence or reprice the opportunity "
-                    "around the smaller phase before spending another extension dollar."
-                ),
-                (
-                    "The second and third traps are treating storage as ordinary "
-                    "load and interpreting a queue position as protection from "
-                    "restudies. A standalone BESS option on 5–25 acres needs separate "
-                    "import and export assumptions, charging restrictions, discharge "
-                    "duration, and interconnection cost allocation. A 50 MW, 200 MWh "
-                    "proposal describes four hours of nominal discharge, not 50 MW "
-                    "of continuously available campus supply. Ask whether charging "
-                    "requires a separate service arrangement and whether export "
-                    "limitations alter dispatch economics. Obtain the current study "
-                    "agreement and distinguish deposits, withdrawal exposure, "
-                    "security postings, and potentially refundable balances. Suppose "
-                    "a buyer's underwriting initially assigns $3 million of upgrades "
-                    "to a project, then a restudy identifies $11 million. The "
-                    "$8 million increase can erase the buyer's development spread "
-                    "without creating any additional fee for the originator. Maintain "
-                    "a change register keyed to study revisions, affected facilities, "
-                    "and cost responsibility. As an illustrative house threshold, "
-                    "pause discretionary parcel spending when estimated upgrades "
-                    "rise more than 20% or the utility withdraws the prior service "
-                    "schedule. Resume only after the buyer updates its economics "
-                    "and accepts the revised exposure in writing. If that acceptance "
-                    "fails, use the option's negotiated exit rather than funding a "
-                    "queue obligation outside the origination mandate."
-                ),
-                (
-                    "The fourth trap is underwriting a campus as if it were a "
-                    "larger battery parcel. AI facilities can require diverse fiber "
-                    "entrances, carrier route verification, cooling-water capacity "
-                    "or a viable alternative cooling design, acoustic treatment, "
-                    "backup generation permissions, and staged load acceptance. Two "
-                    "carrier brands sharing one conduit are not physical diversity. "
-                    "A nearby water main is not an allocation letter. Use carrier "
-                    "route evidence and utility correspondence rather than broker "
-                    "maps to establish each critical dependency. Align a 12–24 month "
-                    "diligence-contingent option with realistic service milestones; "
-                    "a nominal 18-month option does not solve a four-year "
-                    "energization schedule unless extension rights and the eventual "
-                    "buyer's holding economics support that mismatch. Track option "
-                    "days remaining, termination notice deadlines, next study "
-                    "delivery, and estimated service date as separate fields. Flag "
-                    "fewer than 120 days to expiry when material utility or zoning "
-                    "questions remain; this is a house intervention threshold, not "
-                    "a statutory period. A $3,000 monthly extension for six months "
-                    "costs $18,000 before surveys, consultants, or legal work. Require "
-                    "a named buyer sponsor and a documented next evidence event "
-                    "before authorizing that spend. Otherwise terminate on time, "
-                    "preserve reusable diligence, and stop describing the parcel "
-                    "as powered land in outbound materials."
-                ),
-            ],
-            "table": {
-                "caption": "Power-Evidence Failure Matrix and Illustrative Spending Circuit Breakers",
-                "headers": [
-                    "Failure mechanism and exposed operating assumption",
-                    "Evidence required before additional capital deployment",
-                    "Early warning metric and intervention threshold",
-                    "Specific containment action and recovery path",
-                ],
-                "rows": [
-                    [
-                        "Transmission adjacency becomes a fabricated deliverable capacity claim",
-                        "Dated utility correspondence identifies service conditions and limitations",
-                        "Any marketed megawatts exceed currently supported utility quantities",
-                        "Remove unsupported quantities and reprice the documented phase",
-                    ],
-                    [
-                        "Public hosting maps substitute for project specific studies",
-                        "Applicable utility study identifies scope and remaining dependencies",
-                        "Marketing evidence predates the latest material network change",
-                        "Refresh utility evidence before renewing costly parcel control",
-                    ],
-                    [
-                        "Storage charging assumptions conflict with available import service",
-                        "Separate import and export pathways document applicable restrictions",
-                        "Charging limitations invalidate the buyer's required dispatch profile",
-                        "Resize storage or exit before additional study exposure",
-                    ],
-                    [
-                        "Restudy reallocations destroy the buyer's original development spread",
-                        "Revision register reconciles facilities and assigned upgrade costs",
-                        "Illustrative twenty percent upgrade increase triggers spending review",
-                        "Obtain revised buyer economics before spending extension money",
-                    ],
-                    [
-                        "Two branded carriers conceal one shared physical conduit",
-                        "Carrier route evidence establishes genuinely separate physical entrances",
-                        "Both service routes traverse the same critical segment",
-                        "Price a separate route or reject campus underwriting",
-                    ],
-                    [
-                        "Option expiry arrives before essential utility evidence delivery",
-                        "Notice calendar reconciles study dates and extension mechanics",
-                        "Fewer than one hundred twenty days remain unresolved",
-                        "Negotiate affordable extensions or serve timely termination notice",
-                    ],
-                    [
-                        "Cooling assumptions exceed available water allocation or infrastructure",
-                        "Provider capacity letter matches the proposed cooling design",
-                        "Cooling demand lacks a documented feasible supply pathway",
-                        "Commission alternative cooling economics before advancing campus pricing",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Veteran Tactics for Preserving the Evidence Premium",
-                "body": (
-                    "Sell the quality and transferability of the diligence package, "
-                    "not an unsupported impression of electrical abundance."
-                ),
-                "items": [
-                    "Maintain separate GIS layers for public screening estimates, utility-supported quantities, and executed service commitments; prevent automatic promotion between layers.",
-                    "Request the assumptions behind each utility response, including coincident load, phasing, voltage, and excluded upgrades, before quoting any per-MW milestone.",
-                    "Negotiate extension payments that credit against exercise consideration where obtainable, while recording the full cash burn if the option expires.",
-                    "Ask each prospective BESS buyer for its import, export, duration, and upgrade ceiling before paying for parcel-specific studies that the buyer cannot use.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Expose Title Defects, Licensing Risk, and Municipal Stop Orders",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The fifth trap is assuming every signed option creates "
-                    "transferable inventory. Read assignment, change-of-control, "
-                    "access, exclusivity, extension, and termination provisions "
-                    "together. A seller's discretionary consent can make a nominally "
-                    "assignable interest commercially unusable; a nonrefundable "
-                    "extension payable before the next study arrives can create "
-                    "forced speculation. Obtain the owner's authority documents, "
-                    "title commitment, legal description, and negotiated memorandum "
-                    "recording rights where appropriate. Recording is not a cure "
-                    "for defective ownership or an unenforceable agreement. Have "
-                    "local counsel and the title company reconcile lien releases, "
-                    "existing leases, access easements, restrictive covenants, and "
-                    "mineral interests. A mineral waiver must cover the relevant "
-                    "parties and surface impacts; a seller cannot waive rights "
-                    "they do not own. Model a simple loss ledger: three rejected "
-                    "options at $5,000 each plus three $2,000 diligence packages "
-                    "consume $21,000 before a successful assignment. That leakage "
-                    "belongs in the origination portfolio, not in an abandoned "
-                    "spreadsheet. If assignability depends on consent, obtain the "
-                    "consent before promising an unconditional transfer. If the "
-                    "seller refuses workable language, stop paying for portable "
-                    "studies whose commercial benefit may accrue entirely to "
-                    "the seller or a competing buyer after your option expires."
-                ),
-                (
-                    "The sixth trap is confusing principal dealing with brokerage "
-                    "immunity. Operate through a genuine owned option interest or "
-                    "use an appropriately licensed state broker when the activity "
-                    "requires one. The legal analysis follows the actual conduct, "
-                    "compensation, disclosures, and jurisdiction, not a spreadsheet "
-                    "label saying assignment fee. Texas Occupations Code "
-                    "Sections 1101.002 and 1101.004 illustrate why equitable-interest "
-                    "transactions require fact-specific review and appropriate "
-                    "written disclosure rather than an assumed nationwide "
-                    "exception. Marketing another owner's parcel for a contingent "
-                    "fee without the necessary authority can create licensing "
-                    "exposure and jeopardize collection. The seventh trap is "
-                    "accepting a zoning map as an operational permit. Obtain the "
-                    "ordinance text, current amendments, hearing calendar, use "
-                    "classification, and written planning response addressing the "
-                    "actual battery or campus design. Track moratorium proposals "
-                    "alongside enacted restrictions, and distinguish existing "
-                    "entitlements from hoped-for approvals. A parcel zoned "
-                    "industrial may still require special treatment for battery "
-                    "storage, diesel generation, height, setbacks, or noise. "
-                    "Stop new nonrecoverable spending when a proposed local "
-                    "restriction would defeat the specific use unless counsel "
-                    "identifies a credible path and the buyer funds that risk. "
-                    "Do not quietly substitute a different use in the same "
-                    "marketing package."
-                ),
-                (
-                    "The eighth and ninth traps are trusting desktop environmental "
-                    "screens and dismissing emergency-access geometry. FEMA flood "
-                    "maps, USFWS wetland mapping, and aerial imagery identify "
-                    "questions; they do not establish buildable acreage or permit "
-                    "eligibility. Under Clean Water Act Section 404, 33 U.S.C. "
-                    "1344, discharges of dredged or fill material into jurisdictional "
-                    "waters can require authorization. Have qualified specialists "
-                    "evaluate jurisdiction and project impacts rather than treating "
-                    "every mapped wet area as either automatically prohibited or "
-                    "automatically harmless. Historic industrial use also warrants "
-                    "environmental assessment: CERCLA liability under 42 U.S.C. "
-                    "9607 and the all appropriate inquiries framework in 40 CFR "
-                    "Part 312 matter when structuring acquisition and evaluating "
-                    "available defenses. An option does not eliminate every "
-                    "liability created by site activities or later ownership. "
-                    "For BESS, verify locally adopted fire requirements, apparatus "
-                    "access, separation distances, drainage, and emergency response "
-                    "expectations with the authority having jurisdiction. NFPA "
-                    "855 and UL 9540A can inform that discussion but are not "
-                    "universal parcel approvals. If a ten-acre site loses four "
-                    "acres to constraints, recalculate the equipment layout and "
-                    "economic capacity on six usable acres. Terminate when the "
-                    "revised design cannot meet the buyer's minimum capacity "
-                    "within its accepted cost envelope."
-                ),
-            ],
-            "table": {
-                "caption": "Transferability, Land-Use, and Physical-Defect Verification Matrix",
-                "headers": [
-                    "Defect that can destroy assignment proceeds",
-                    "Primary verification package and responsible reviewer",
-                    "Trigger requiring immediate underwriting model revision",
-                    "Contractual or operational containment before further spending",
-                ],
-                "rows": [
-                    [
-                        "Seller consent remains discretionary after buyer commitment",
-                        "Local counsel reconciles assignment and change-of-control language",
-                        "Buyer transfer cannot close without additional seller discretion",
-                        "Secure written consent before representing unconditional transfer rights",
-                    ],
-                    [
-                        "Seller signature does not bind every necessary owner",
-                        "Title company verifies ownership and authorized signing capacity",
-                        "Recorded ownership differs from parties executing the option",
-                        "Cure authority defects before releasing additional option consideration",
-                    ],
-                    [
-                        "Severed mineral rights undermine planned surface development",
-                        "Title specialist identifies reservations and relevant mineral owners",
-                        "Surface interference rights remain outside the seller's control",
-                        "Obtain adequate waivers or reject the affected layout",
-                    ],
-                    [
-                        "Origination conduct crosses applicable state brokerage licensing boundaries",
-                        "State counsel reviews actual conduct and compensation structure",
-                        "Compensation depends on arranging another party's property transaction",
-                        "Use properly licensed brokerage or restructure permissible principal activity",
-                    ],
-                    [
-                        "Municipal restrictions invalidate the intended campus or battery",
-                        "Planning response addresses current ordinances and proposed amendments",
-                        "Pending restriction directly defeats the proposed operating use",
-                        "Freeze discretionary spend and evaluate negotiated termination rights",
-                    ],
-                    [
-                        "Wetlands and drainage constraints reduce economically usable acreage",
-                        "Qualified delineation and engineering establish credible development boundaries",
-                        "Usable area cannot accommodate the buyer's minimum layout",
-                        "Redesign within permitted limits or terminate before expiry",
-                    ],
-                    [
-                        "Emergency access requirements displace essential storage equipment rows",
-                        "Fire authority feedback informs equipment separation and circulation",
-                        "Revised geometry reduces capacity below buyer acceptance criteria",
-                        "Reprice the smaller project or discontinue parcel control",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Pre-Flight Checks Before a Nonrecoverable Payment",
-                "body": (
-                    "These checks are internal spending controls. Each requires "
-                    "a dated artifact, an accountable reviewer, and a recorded decision."
-                ),
-                "items": [
-                    "Verify that the option binds the necessary owners and that assignment, access, extension, notice, and refund provisions match the planned transaction.",
-                    "Verify that utility evidence supports the marketed quantity and conditions, with import and export treatment separated for storage projects.",
-                    "Verify that current zoning, proposed restrictions, environmental constraints, and fire-access geometry leave a commercially usable project footprint.",
-                    "Verify that licensing analysis, required interest disclosures, buyer funding evidence, and the maximum authorized loss are documented before payment.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Reconcile Clawbacks, Burn, and Alternative-Use Economics",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The tenth trap is counting an assignment headline as collected, "
-                    "unrestricted profit. Build a waterfall separating signed "
-                    "consideration, contingent milestones, cash received, escrow "
-                    "holdbacks, recognized revenue, direct costs, and remaining "
-                    "recourse. A $150,000 agreement with $90,000 payable at transfer "
-                    "and $60,000 payable after a service milestone is not $150,000 "
-                    "of immediately spendable cash. If $20,000 of the first "
-                    "payment remains in escrow, available cash is $70,000 before "
-                    "costs. Determine revenue recognition under the applicable "
-                    "contract and ASC 606 performance obligations and variable "
-                    "consideration constraints; cash timing alone does not settle "
-                    "recognition. A buyer may demand repayment for title defects, "
-                    "inaccurate study representations, missed transfer conditions, "
-                    "or expressly negotiated post-closing failures. Distinguish "
-                    "those clauses from a buyer's ordinary development risk. "
-                    "Negotiate clear triggers, claim periods, liability allocation, "
-                    "and limits appropriate to the transaction. Never describe "
-                    "a broad refund covenant as harmless boilerplate. As an "
-                    "illustrative circuit breaker, reserve the full reasonably "
-                    "exposed amount of a disputed payment and suspend owner "
-                    "distributions while the claim remains unresolved. A large "
-                    "bank balance can coexist with negative free cash when "
-                    "refund obligations, unpaid consultants, and near-term "
-                    "extension commitments sit outside the headline deal tracker."
-                ),
-                (
-                    "Keep the canonical scenarios unchanged while testing failure "
-                    "sensitivity outside them. Conservative revenue of $110,000 "
-                    "less $77,000 of aggregate costs leaves $33,000, a 30% "
-                    "margin with 1 FT + 3 C. Base revenue of $505,000 less "
-                    "$292,900 leaves $212,100, a 42.0% margin with 1 FT + 3 C. "
-                    "Scaled revenue of $900,000 less $414,000 leaves $486,000, "
-                    "a 54% margin with 2 FT + 4 C. These revenues represent "
-                    "realized option assignment fees, origination milestones, "
-                    "and development carry, excluding underlying land purchase "
-                    "price, construction capex, and buyer project value. Where "
-                    "the operator acts as agent, assess principal-versus-agent "
-                    "presentation and recognize the retained operator consideration "
-                    "rather than routing third-party receipts into revenue. "
-                    "No separate retained-share factor is supplied here, so "
-                    "do not invent one. Explicitly allocate expired option "
-                    "fees within the aggregate cost budget: the illustrative "
-                    "$21,000 failed-site cohort must fit inside those costs "
-                    "unless identified as incremental stress. If incremental "
-                    "to Base, unchanged revenue and $313,900 costs produce "
-                    "$191,100 profit, approximately 37.84% margin; that is "
-                    "a stress test, not a replacement scorecard. Maintain "
-                    "a rolling thirteen-week cash forecast because the "
-                    "$10,000–$50,000 startup range and $1,800–$11,000 monthly "
-                    "opex range leave little room for uncontrolled extension chains."
-                ),
-                (
-                    "The eleventh trap is treating alternative uses as free "
-                    "downside insurance. Apply "
-                    "dot_digital_billboard_and_ios_master_lease_flip only through "
-                    "separate, independently viable underwriting. Digital billboard "
-                    "options require Highway Beautification Act review under "
-                    "23 U.S.C. 131, applicable state DOT spacing and digital "
-                    "operation rules, and local zoning permission. A battery "
-                    "setback does not establish a billboard entitlement. For "
-                    "a separate three- to ten-acre truck or equipment drop-yard "
-                    "IOS site, obtain explicit permitted use, assignment, and "
-                    "subletting rights. Illustratively, $8,000 monthly ground "
-                    "rent and $16,000–$22,400 monthly NNN sublease receipts "
-                    "produce the targeted 2.0x–2.8x ratio only if local demand "
-                    "supports occupancy and pricing. At the low end, annual "
-                    "receipts of $192,000 less $96,000 ground rent and $24,000 "
-                    "retained costs leave $72,000 before transaction-specific "
-                    "capital requirements. One vacant quarter removes $48,000 "
-                    "of receipts if no replacement tenant pays. A 16x–22x "
-                    "headline applied to $192,000 suggests $3.072–$4.224 "
-                    "million, but that is a gross-rent arithmetic illustration, "
-                    "not a supported sale price. An infrastructure REIT or "
-                    "other qualified buyer must evaluate actual net cash "
-                    "flow, transferable rights, remaining lease term, and "
-                    "renewal exposure. Exercise negotiated termination rights "
-                    "before conditions expire; avoid unfunded construction "
-                    "commitments and pursue only consented alternatives."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Profit Reconciliation, Clawback Exposure, and TRACK_2 Stress Tests",
-                "headers": [
-                    "Scenario or contractual cash exposure being evaluated",
-                    "Specific revenue basis and arithmetic input assumptions",
-                    "Cost treatment and resulting operator economic outcome",
-                    "Required interpretation before making a capital decision",
-                ],
-                "rows": [
-                    [
-                        "Conservative canonical case with one employee and three contractors",
-                        "Annual realized operator revenue equals exactly one hundred ten thousand dollars",
-                        "Seventy seven thousand dollars costs leave thirty three thousand profit",
-                        "Thirty percent margin excludes underlying land and construction consideration",
-                    ],
-                    [
-                        "Base canonical case with one employee and three contractors",
-                        "Annual realized operator revenue equals five hundred five thousand dollars",
-                        "Costs equal $292,900 and annual owner profit equals $212,100",
-                        "Exactly 42.0 percent margin remains the canonical Base outcome",
-                    ],
-                    [
-                        "Scaled canonical case with two employees and four contractors",
-                        "Annual realized operator revenue equals exactly nine hundred thousand dollars",
-                        "Costs equal $414,000 and annual owner profit equals $486,000",
-                        "Fifty four percent margin describes six total team members",
-                    ],
-                    [
-                        "Failed parcel cohort creates additional uncovered origination losses",
-                        "Three options and three diligence packages consume $21,000 combined",
-                        "Incremental Base stress reduces owner profit to exactly $191,100",
-                        "Keep this stress outside the unchanged canonical scorecard",
-                    ],
-                    [
-                        "Assignment consideration includes conditional payment and escrow restrictions",
-                        "Signed consideration totals $150,000 with $60,000 still milestone contingent",
-                        "Initial $90,000 payment less $20,000 escrow leaves $70,000 cash",
-                        "Recognition and refund exposure require separate contract analysis",
-                    ],
-                    [
-                        "IOS low end lease spread faces vacancy exposure",
-                        "Monthly $16,000 receipts divided by $8,000 rent equal 2.0x",
-                        "Annual retained costs of $24,000 reduce spread to $72,000",
-                        "One vacant quarter removes $48,000 before replacement leasing costs",
-                    ],
-                    [
-                        "Billboard and IOS rights cannot share assumed entitlements",
-                        "Gross rent multiple illustration yields $3.072–$4.224 million headline",
-                        "Actual valuation depends on net income and remaining term",
-                        "Verify DOT controls and independent use permissions before commitments",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Instrument the Pipeline and Stop Trust-Destroying Shortcuts",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The twelfth trap is manufacturing confidence through "
-                    "unauthorized data access or altered evidence. Shared utility "
-                    "portal credentials, scraped private developer rooms, "
-                    "fabricated study letters, misleading ownership claims, "
-                    "and paid permit promises can cause account termination, "
-                    "contract rescission, civil claims, or criminal exposure "
-                    "depending on the conduct. Never bypass access restrictions "
-                    "or present another applicant's study as transferable "
-                    "capacity. Public information can still carry reuse limits, "
-                    "and a buyer's confidentiality agreement may restrict "
-                    "redistribution of route maps or commercial terms. Use "
-                    "authorized utility channels, permitted bulk downloads, "
-                    "and a controlled data room with named recipients. "
-                    "Record source, acquisition date, usage restrictions, "
-                    "document version, and the person who validated each "
-                    "material assertion. If a portal denies access, stop "
-                    "automated requests and resolve access through its "
-                    "published support process rather than rotating accounts. "
-                    "If evidence is challenged, freeze the affected claim, "
-                    "preserve the original artifact, and notify recipients "
-                    "of the correction. Maintain separate internal and "
-                    "buyer-facing fields so a tentative analyst estimate "
-                    "cannot silently become a marketing fact. The recovery "
-                    "path is an accurate corrected package with permission "
-                    "to distribute it, not a replacement identity or a "
-                    "more aggressive outreach sequence designed to outrun "
-                    "the original defect."
-                ),
-                (
-                    "Build telemetry around loss mechanisms rather than "
-                    "dashboard decoration. Define utility-validation rate "
-                    "as sites receiving a documented viable next service "
-                    "step divided by sites completing utility screening; "
-                    "do not include untouched leads in the denominator. "
-                    "Define expired-option burn as forfeited option and "
-                    "extension payments divided by collected operator fees "
-                    "over the same trailing period, while retaining cohort "
-                    "views for long-cycle deals. If collected fees are "
-                    "zero, display the dollar burn and liquidity runway "
-                    "instead of manufacturing a percentage. Illustrative "
-                    "house thresholds include expired-option burn above "
-                    "15%, a service-date slip exceeding six months, "
-                    "upgrade exposure beyond the buyer's written ceiling, "
-                    "or any missed contractual notice deadline. Each "
-                    "threshold must name an action: freeze new options, "
-                    "reprice milestones, obtain funded extensions, or "
-                    "terminate. Track assignment-consent completion, refund "
-                    "exposure by buyer, and concentration in one utility "
-                    "territory. A cohort of ten screened sites with two "
-                    "documented viable paths has a 20% validation rate; "
-                    "that informs sourcing quality but does not establish "
-                    "a universal benchmark. Review adverse changes weekly "
-                    "and source-system changes daily where authorized "
-                    "feeds support that cadence. Count stale documents "
-                    "as exceptions requiring review, not automatically "
-                    "as proof that capacity has disappeared."
-                ),
-                (
-                    "Run a weekly exception meeting with the owner, "
-                    "transaction counsel, utility specialist, and relevant "
-                    "contractor; the small team does not justify blurred "
-                    "decision rights. Every active option needs a maximum "
-                    "additional loss, a next evidence event, an accountable "
-                    "person, and a termination date that includes delivery "
-                    "requirements. Reconcile option notices against executed "
-                    "documents rather than relying solely on a calendar "
-                    "import. Consider a twelve-month option with $6,000 "
-                    "already spent, $4,000 of pending studies, and a "
-                    "$3,000 extension due next week. The immediate decision "
-                    "concerns $7,000 of incremental exposure, not defending "
-                    "the sunk $6,000. If the next study cannot answer "
-                    "the buyer's decisive service question, declining "
-                    "that spend may preserve more value than another "
-                    "month of nominal control. For disputed assignments, "
-                    "reconcile the factual record with counsel before "
-                    "accepting or rejecting a refund demand, and preserve "
-                    "all relevant communications. After termination, "
-                    "confirm notice receipt, cancel revocable vendor "
-                    "orders, remove stale marketing, and document "
-                    "continuing confidentiality or indemnity obligations. "
-                    "Retain only independently viable permitted operations "
-                    "and buyer-consented alternative uses. The operating "
-                    "objective is not maximum acreage controlled; it "
-                    "is collectible, defensible operator consideration "
-                    "per dollar and hour exposed across the entire "
-                    "origination portfolio."
-                ),
-            ],
-            "table": {
-                "caption": "Weekly Forensic Telemetry with Explicit Escalation and Shutdown Actions",
-                "headers": [
-                    "Metric or trust failure requiring active surveillance",
-                    "Precisely defined evidence source or measurement denominator",
-                    "Illustrative exception threshold requiring a named decision",
-                    "Immediate operator action and evidence of completion",
-                ],
-                "rows": [
-                    [
-                        "Expired option burn consumes collected operator fee proceeds",
-                        "Forfeited option payments divided by same-period collected fees",
-                        "Trailing ratio exceeds the illustrative fifteen percent threshold",
-                        "Freeze new options and review losses by sourcing cohort",
-                    ],
-                    [
-                        "Utility validation rate deteriorates within a sourcing cohort",
-                        "Documented viable paths divided by completed utility screenings",
-                        "Two viable paths among ten screens yield twenty percent",
-                        "Reassess sourcing filters before committing additional option money",
-                    ],
-                    [
-                        "Updated service schedule destroys the buyer's development timing",
-                        "Latest utility schedule compared with accepted underwriting schedule",
-                        "Illustrative delay exceeds six months beyond accepted timing",
-                        "Reprice milestones and obtain funded extensions or terminate",
-                    ],
-                    [
-                        "Refund exposure exceeds readily available unrestricted operating cash",
-                        "Contract claims ledger reconciled against cash and escrow balances",
-                        "Reasonably exposed repayment exceeds immediately available unrestricted funds",
-                        "Suspend distributions and negotiate documented resolution with counsel",
-                    ],
-                    [
-                        "Unauthorized portal activity threatens access and counterparty trust",
-                        "Access logs and provider notices identify denied requests",
-                        "Any explicit access denial or credential authorization defect",
-                        "Stop requests and resolve permissions through official support",
-                    ],
-                    [
-                        "Marketing materials repeat unsupported capacity or ownership assertions",
-                        "Buyer package compared with source documents and executed interests",
-                        "Any material assertion lacks accurate supporting dated evidence",
-                        "Withdraw affected claims and deliver traceable recipient corrections",
-                    ],
-                    [
-                        "Contractual notice failures turn optional spending into binding exposure",
-                        "Executed notice provisions reconciled with delivery confirmation records",
-                        "Any approaching deadline lacks verified preparation and ownership",
-                        "Prepare required notice and retain timely delivery evidence",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Reconcile the Evidence Ledger",
-                    "action": "Compare each marketed assertion with its current source artifact.",
-                    "detail": (
-                        "Record utility quantities, conditions, study revisions, "
-                        "permit status, interest ownership, and authorized distribution "
-                        "rights; flag every unsupported assertion for immediate correction."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Calculate the Next-Dollar Exposure",
-                    "action": "Separate sunk costs from avoidable payments and binding obligations.",
-                    "detail": (
-                        "Update the thirteen-week cash forecast with extensions, "
-                        "study invoices, potential refunds, escrow restrictions, "
-                        "and expired-option reserves before considering another site."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Assign the Circuit-Breaker Decision",
-                    "action": "Choose a documented continuation, repricing, funded extension, or exit.",
-                    "detail": (
-                        "Name the responsible decision maker and the evidence "
-                        "required to reopen spending; record buyer acceptance "
-                        "of any revised quantity, cost, schedule, or transfer condition."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Close the Operational Loop",
-                    "action": "Deliver notices, update recipients, and verify the resulting obligations.",
-                    "detail": (
-                        "Retain delivery receipts, cancel revocable orders, "
-                        "remove obsolete marketing, reconcile remaining liabilities, "
-                        "and feed the loss reason back into parcel screening."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": (
-        "An option earns its spread from transferable evidence, not from acreage "
-        "beside a transmission line."
-    ),
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Create separate evidence fields for requested MW, utility-supported MW, outstanding upgrades, and realistic service dates before issuing another buyer package.",
-        "Audit every active option for owner authority, assignment consent, termination delivery requirements, extension pricing, and the maximum additional loss.",
-        "Separate 5–25 acre BESS layouts from campus models, then verify import and export pathways, usable acreage, fire access, fiber routes, and cooling dependencies as applicable.",
-        "Reconcile the canonical $33,000, $212,100, and $486,000 annual profit cases while explicitly allocating failed-option costs and tracking incremental stress separately.",
-        "Underwrite billboard and IOS alternatives independently using DOT and local permissions, actual lease rights, achievable occupancy, retained costs, and remaining term.",
-        "Activate weekly burn, restudy, deadline, refund, and evidence exceptions; stop unauthorized access and distribute traceable corrections whenever a material claim changes.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "18 CFR 35.28 — Non-discriminatory open access transmission tariff",
-            "url": "https://www.ecfr.gov/current/title-18/chapter-I/subchapter-C/part-35/section-35.28",
-            "relevance": (
-                "Provides the federal transmission tariff and interconnection "
-                "framework; evaluate the applicable tariff rather than treating "
-                "a generation queue filing as a campus load-service commitment."
-            ),
-        },
-        {
-            "title": "33 U.S.C. 1344 — Permits for dredged or fill material",
-            "url": "https://www.law.cornell.edu/uscode/text/33/1344",
-            "relevance": (
-                "Requires evaluation of authorization for covered discharges "
-                "into jurisdictional waters when grading, access roads, or "
-                "equipment pads affect wetlands or other aquatic features."
-            ),
-        },
-        {
-            "title": "42 U.S.C. 9607 — CERCLA liability",
-            "url": "https://www.law.cornell.edu/uscode/text/42/9607",
-            "relevance": (
-                "Establishes specified categories of environmental liability; "
-                "historic contamination can alter acquisition structure, "
-                "diligence requirements, and the economics of assignment."
-            ),
-        },
-        {
-            "title": "40 CFR Part 312 — Standards and practices for all appropriate inquiries",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-J/part-312",
-            "relevance": (
-                "Defines the federal inquiry framework relevant to specified "
-                "CERCLA landowner protections; timing, professional evaluation, "
-                "and continuing obligations require transaction-specific review."
-            ),
-        },
-        {
-            "title": "23 U.S.C. 131 — Control of outdoor advertising",
-            "url": "https://www.law.cornell.edu/uscode/text/23/131",
-            "relevance": (
-                "Supplies the Highway Beautification Act framework for covered "
-                "outdoor advertising; proposed digital installations also "
-                "require applicable state DOT and local land-use review."
-            ),
-        },
-        {
-            "title": "Texas Occupations Code Sections 1101.002 and 1101.004 — Brokerage definitions and equitable interests",
-            "url": "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1101.htm",
-            "relevance": (
-                "Illustrates state-specific treatment of brokerage conduct "
-                "and equitable interests, including disclosure requirements; "
-                "a principal assignment label does not replace analysis "
-                "of the operator's actual activity."
-            ),
-        },
-    ],
-}
+CHAPTER_5 = {'id': 'Q5',
+ 'chapter_id': 'Q5',
+ 'chapter_number': 5,
+ 'question_number': 5,
+ 'slug': 'q05-grid-operators-wholesale-markets-cost-of-waiting',
+ 'question_prompt': 'How do US grid operators and wholesale power markets work, and how do queue delays '
+                    'and upgrade costs flow through to prices?',
+ 'kicker': 'Q5 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Grid Operators, Wholesale Markets and the Cost of Waiting',
+ 'subtitle': 'The three US grids and nine operators, PJM market basics, ERCOT nodal pricing, LMP, SCED and '
+             "system lambda, ERCOT's energy-only market, MW vs. MWh, BESS revenue streams in markets, "
+             '5-year queue waits, and the $598M upgrade bill',
+ 'layout_template': 'case_study',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Grid-side operators converge on one brutal fact: the plug, not the panel or the '
+                      'chip, sets the clock. Berkeley Lab figures cited by THE PHYSICAL LAYER, The Pharos '
+                      'Project and Wattlore put the median 2025 build at 61 months from request to '
+                      'commercial operation, with only 13% of 2000-2020 requested capacity ever switching '
+                      "on. US Energy Weekly walks ERCOT's GIS Report, GINR tracking and a roughly 19-month "
+                      'on-paper study path, while Keentel, Modo Energy and US Energy Weekly break down '
+                      'nodal LMP, System Lambda, ORDC adders and the $5,000/MWh cap that set revenue in an '
+                      'energy-only market. PJM and CME Group frame the capacity-market alternative. '
+                      'Speakers split on queue counts, node counts, cost allocation and whether Order 2023 '
+                      "has sped anything up, and Wattlore's $598 million upgrade bill shows what waiting "
+                      'can cost.',
+ 'key_metrics': [{'label': 'Median request-to-operation wait for projects built in 2025',
+                  'metric': 'Median request-to-operation wait for projects built in 2025',
+                  'value': '61 months (vs 36 months in 2015 and 22 months in 2008)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Berkeley Lab data summarized for regions with available data; the median has '
+                             'roughly doubled since the early 2000s.',
+                  'source': 'THE PHYSICAL LAYER ([v5uOMJOzPbk @ 00:04:02])'},
+                 {'label': 'Share of 2000-2020 requested capacity online by end-2025',
+                  'metric': 'Share of 2000-2020 requested capacity online by end-2025',
+                  'value': 'About 13% online; 75% withdrawn',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Berkeley Lab tracking of all capacity requesting interconnection from 2000 '
+                             'to 2020; withdrawal rates exceed 40% even after a signed agreement.',
+                  'source': 'The Pharos Project ([Br7K7fGD4uk @ 00:01:29])'},
+                 {'label': 'ERCOT generation interconnection queue size',
+                  'metric': 'ERCOT generation interconnection queue size',
+                  'value': 'Nearly 2,000 projects totaling 432 GW',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "More than five times Texas's all-time peak demand, drawn from the System "
+                             'Planning Update in ERCOT board materials.',
+                  'source': 'US Energy Weekly ([DzkVggOvJGs @ 00:00:01])'},
+                 {'label': 'Network upgrade bill assigned to one 51 MW solar farm',
+                  'metric': 'Network upgrade bill assigned to one 51 MW solar farm',
+                  'value': '$598 million total, more than $11,000 per kW',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'PJM study for a Cumberland County, New Jersey project in August 2021: $6.4 '
+                             'million for its own connection, about $592 million for grid upgrades.',
+                  'source': 'Wattlore ([CDd-hsI3tKQ @ 00:04:14])'}],
+ 'sections': [{'section_number': 1,
+               'heading': 'The Practitioner Consensus',
+               'paragraphs': ['Every speaker starts from the same map: there is no single American grid. '
+                              'Infrastructure explained counts three interconnections and nine operators '
+                              'that do not coordinate in real time [Cym8njcfsfQ @ 00:00:00]. Avangrid '
+                              'Renewables calls that balkanization an obstacle for less experienced '
+                              'developers, because each project from California to New England needs its '
+                              'own rules assessment, and it splits the FERC-regulated world into organized '
+                              'ISO/RTO markets, which it rates as more attractive to renewable developers, '
+                              'and regulated bilateral markets where vertically integrated utilities '
+                              'control transmission and pick dispatch [T_Y5rMNtBVs @ 00:00:43]. Modo '
+                              'Energy pins down why Texas sits outside that split: ERCOT has no '
+                              'synchronous AC ties to the Eastern and Western interconnections, so FERC '
+                              'has no jurisdiction and the Public Utility Commission of Texas holds final '
+                              'say on ERCOT rules and protocols [ijPF1Cwm0wA @ 00:01:50]. Infrastructure '
+                              'explained fills in the last zone, the non-RTO Southeast, where Southern '
+                              'Company and Duke Energy own generation, transmission and distribution, skip '
+                              'open-market competition and get rates approved by state regulators, trading '
+                              'price competition and faster integration of new sources for stability and '
+                              'long-term planning [Cym8njcfsfQ @ 00:07:29]. For anyone optioning powered '
+                              'land, the operator footprint is the rulebook: it decides who studies a '
+                              'connection, who pays for upgrades, and whether capacity payments exist at '
+                              'all.',
+                              'The queue verdict is unanimous and ugly. THE PHYSICAL LAYER, quoting '
+                              "Berkeley Lab's Queued Up 2026 edition, counts about 8,200 projects and "
+                              'roughly 2,061 GW of requested generation and storage at the end of 2025, '
+                              'and puts the median project built in 2025 at 61 months from request to '
+                              'commercial operation, up from 36 months in 2015 and 22 months in 2008 '
+                              '[v5uOMJOzPbk @ 00:04:02]. The Pharos Project adds the earlier milestone: a '
+                              '45-month median just to reach a signed interconnection agreement, and '
+                              'withdrawal rates above 40% even after signing [Br7K7fGD4uk @ 00:01:07]. '
+                              'Wattlore frames the scale against what already runs, roughly 2,060 GW '
+                              'waiting versus about 1,370 GW of operating plants in the United States, so '
+                              'the line is one and a half times bigger than everything built [CDd-hsI3tKQ '
+                              '@ 00:01:28]. On survival odds the three agree: of capacity requested from '
+                              '2000 to 2020, only 13% had switched on by end-2025 and 75% had walked. US '
+                              'Energy Weekly lands the same point for Texas, warning that nearly 2,000 '
+                              'ERCOT projects totaling 432 GW is a headline, not supply, and that fewer '
+                              'than one in five queued projects nationally reaches commercial operation '
+                              "[DzkVggOvJGs @ 00:03:34]. THE PHYSICAL LAYER's rule is blunt: never add up "
+                              'queue capacity and call it future supply.',
+                              'On market plumbing, the speakers agree on the menu even where they disagree '
+                              'on the recipe. CME Group says each ISO/RTO typically runs four markets, '
+                              'energy, capacity, financial transmission rights and ancillary services, '
+                              'with the energy market split into a day-ahead auction and a real-time '
+                              'market cleared in five-minute to half-hour increments and priced by LMP at '
+                              "each node [dYvEG3uQzsQ @ 00:01:31]. PJM's own channel describes its "
+                              'version: a daily least-cost pick of resources using weather forecasts, '
+                              'generator availability and transmission outages, a capacity market that '
+                              'secures power three years forward, and regulation plus synchronized and '
+                              'non-synchronized reserves for short-notice shocks [ulpPgF6UT1E @ 00:00:23]. '
+                              'Keentel Engineering confirms ERCOT runs the same day-ahead and real-time '
+                              'pair, with four ancillary services holding frequency at 60 hertz, but no '
+                              'capacity market, so generators are paid only for power produced '
+                              '[AgfRaZtdbh8 @ 00:00:31]. The demand pressure behind all of it is not '
+                              'disputed. THE PHYSICAL LAYER cites a Department of Energy report by '
+                              'Berkeley Lab showing US data centers used 176 TWh in 2023, about 4.4% of '
+                              'national electricity and up from 58 TWh in 2014, with 325 to 580 TWh '
+                              'modeled for 2028, and warns that when demand outruns new supply, existing '
+                              'capacity becomes more valuable [v5uOMJOzPbk @ 00:06:17].'],
+               'table': {'caption': 'Where the grid-operator and market practitioners line up',
+                         'headers': ['Consensus Point',
+                                     'What The Practitioners State',
+                                     'Figures On Record',
+                                     'Expert Source'],
+                         'rows': [['The US runs three separate interconnections, not one grid',
+                                   'Power flows freely within each AC interconnection but only limited '
+                                   'connections exist between them',
+                                   'Eastern Interconnection covers roughly two-thirds of the country and '
+                                   'about 250 million people',
+                                   'Infrastructure explained ([Cym8njcfsfQ @ 00:00:38])'],
+                                  ['ERCOT answers to Texas regulators, not to FERC',
+                                   'No synchronous AC ties to the Eastern or Western interconnections, so '
+                                   'the PUCT holds final say',
+                                   'One of nine ISOs and RTOs as of early 2024, the only US operator '
+                                   'outside FERC',
+                                   'Modo Energy ([ijPF1Cwm0wA @ 00:01:29])'],
+                                  ['Interconnection waits have nearly tripled since 2008',
+                                   'The median project built in 2025 spent 61 months between request and '
+                                   'commercial operation',
+                                   '36 months for projects built in 2015 and 22 months for projects built '
+                                   'in 2008',
+                                   'THE PHYSICAL LAYER ([v5uOMJOzPbk @ 00:04:02])'],
+                                  ['Most queued capacity never becomes a running plant',
+                                   'Of capacity requested from 2000 to 2020, only a small fraction had '
+                                   'switched on by end-2025',
+                                   '13% online, 75% withdrawn, and withdrawal above 40% even after signing '
+                                   'an agreement',
+                                   'The Pharos Project ([Br7K7fGD4uk @ 00:01:51])'],
+                                  ['Grid upgrades, not the plant itself, drive the connection bill',
+                                   "A 51 MW New Jersey solar farm's own wire cost $6.4 million against "
+                                   'about $592 million in upgrades',
+                                   '$598 million total from a PJM study, more than $11,000 per kilowatt of '
+                                   'capacity',
+                                   'Wattlore ([CDd-hsI3tKQ @ 00:00:19])'],
+                                  ['ISOs and RTOs run layered wholesale markets in parallel',
+                                   'Energy, capacity, financial transmission rights and ancillary '
+                                   'services, with day-ahead and real-time energy',
+                                   'Real-time increments range from five minutes up to half an hour across '
+                                   'operators',
+                                   'CME Group ([dYvEG3uQzsQ @ 00:01:31])'],
+                                  ['Capacity markets pay generators for standing ready, outside ERCOT',
+                                   'PJM secures enough power three years ahead to stimulate investment in '
+                                   'existing and new generation',
+                                   'Delivery horizon set three years into the future for consumer '
+                                   'reliability needs',
+                                   'pjminterconnection ([ulpPgF6UT1E @ 00:00:23])']]}},
+              {'section_number': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Start the queue work in the files. US Energy Weekly's workflow for Texas: "
+                              'every application to ERCOT gets a GINR, the Generation Interconnection '
+                              'Request number, which tracks capacity, fuel and technology, point of '
+                              'interconnection and stage for the life of the project [DzkVggOvJGs @ '
+                              '00:00:39]. ERCOT publishes the GIS Report, Generator Interconnection '
+                              'Status, monthly as a spreadsheet; each row is one project, and status reads '
+                              'Active, Inactive (usually missed information deadlines) or Withdrawn. The '
+                              "same files sit in ERCOT's Market Information System report library, and the "
+                              'System Planning Update in board materials carries total queue size and fuel '
+                              'mix; always quote the date with any number [DzkVggOvJGs @ 00:01:03]. The '
+                              "stage clock on paper: ERCOT's own Screening Study targets about three "
+                              'months, an SSR stability review follows if needed, the transmission service '
+                              "provider's Full Interconnection Study targets about ten months, the "
+                              'Interconnection Agreement about six, and ERCOT compliance review about '
+                              'three, roughly 19 months of studies and agreements before construction, and '
+                              'usually more in practice [DzkVggOvJGs @ 00:02:31]. THE PHYSICAL LAYER gives '
+                              'the three questions to ask of any queue figure: how much has a signed '
+                              'agreement, how much has actually been built, and how long the survivors '
+                              'took [v5uOMJOzPbk @ 00:07:44].',
+                              'The revenue math in ERCOT runs on nodal LMP. Modo Energy counts around '
+                              '17,000 nodes, of which just under 900 carry a unique LMP as Settlement '
+                              'Points, mostly single resource nodes such as a battery or wind farm, plus '
+                              'aggregated load zones and trading hubs, all repriced every five minutes '
+                              '[xZ1P-4F8Jf8 @ 00:00:23]. The first price component is System Lambda, the '
+                              'cost of the next cheapest unit of energy across the whole system; when '
+                              'solar drops off at sunset and gas gets turned up, Lambda climbs. Keentel '
+                              'Engineering lays out the full stack: System Lambda plus a congestion '
+                              'component plus a reserve price adder, with SCED dispatching every five '
+                              'minutes and settlements every 15 minutes on the average of three '
+                              'five-minute prices [AgfRaZtdbh8 @ 00:01:54]. US Energy Weekly gives the '
+                              'ORDC numbers that fire the adder: a $10 minimum adder below 7,000 MW of '
+                              'reserves, $20 below 6,500 MW, and a climb to the Value of Lost Load, capped '
+                              'at $5,000 per MWh, when reserves hit the roughly 3,000 MW minimum '
+                              'contingency level [sxulqIJRZrM @ 00:02:58]. Meanwhile, a 2019 study found '
+                              'simple-cycle gas peakers earned about 90% of real-time market value in just '
+                              '1% of hours, and every generator and retailer must trade through a '
+                              'collateral-posting QSE [sxulqIJRZrM @ 00:01:01].',
+                              'The cost-of-waiting mechanics are now written into federal rules. Under the '
+                              "old first-come, first-served line, Wattlore's example project posted a "
+                              '$10,000 deposit it got back on exit, and FERC found no meaningful money at '
+                              'stake, so developers filed several requests at several grid spots to shop '
+                              'for the lowest upgrade bill and went ahead with that one [CDd-hsI3tKQ @ '
+                              '00:05:28]. Order 2023, issued July 28, 2023, swaps that for first-ready, '
+                              'first-served cluster studies: The Pharos Project lists 90% site control at '
+                              'application, deposits rising toward 20% of estimated network upgrade costs, '
+                              'and a withdrawal penalty reaching 20% of upgrade cost once the agreement is '
+                              'signed [Br7K7fGD4uk @ 00:05:48]. Wattlore adds the operator side: a 150-day '
+                              'cluster study deadline, $1,000 per working day late, and up to $2,500 per '
+                              'day on the last study, the one that works out what gets built [CDd-hsI3tKQ '
+                              '@ 00:07:17]. Pharos maps who eats upgrades: MISO, PJM, ISO-NE, NYISO and '
+                              'SPP make the generator pay, CAISO credits, and Texas connect-and-manage '
+                              'charges generators nothing for network upgrades. For storage sizing, Modo '
+                              "Energy's unit rule holds: a 10 MW, 20 MWh battery imports or exports at up "
+                              'to 10 MW and fills from empty in two hours, a two-hour duration asset '
+                              '[OIAK1RATT9M @ 00:02:06].'],
+               'table': {'caption': 'Queue, pricing and storage mechanics with the exact numbers '
+                                    'practitioners use',
+                         'headers': ['Mechanic',
+                                     'Exact Number Or Step',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['ERCOT GIS Report monthly queue spreadsheet',
+                                   'One row per project with point of interconnection, fuel, capacity, '
+                                   'in-service date and status',
+                                   'Track who sits at the front of the line and who dropped out each month',
+                                   'US Energy Weekly ([DzkVggOvJGs @ 00:01:03])'],
+                                  ['ERCOT interconnection study and agreement clock',
+                                   'Screening about 3 months, FIS about 10, IA about 6, compliance review '
+                                   'about 3 months',
+                                   'Roughly 19 months on paper before construction, and usually longer in '
+                                   'practice',
+                                   'US Energy Weekly ([DzkVggOvJGs @ 00:02:31])'],
+                                  ['ORDC automatic scarcity price adder in ERCOT',
+                                   '$10 below 7,000 MW of reserves, $20 below 6,500 MW, VOLL near 3,000 MW',
+                                   'Turns tightening reserves into a real-time price signal before anyone '
+                                   'has to intervene',
+                                   'US Energy Weekly ([sxulqIJRZrM @ 00:02:58])'],
+                                  ['ERCOT real-time dispatch and settlement cadence',
+                                   'SCED dispatch every 5 minutes; settlement every 15 minutes on a '
+                                   'three-price average',
+                                   'Real-time is where the action truly happens for every ERCOT resource',
+                                   'Keentel Engineering ([AgfRaZtdbh8 @ 00:01:54])'],
+                                  ['Order 2023 developer entry and exit costs',
+                                   '90% site control, deposits rising toward 20% of upgrades, 20% penalty '
+                                   'after signing',
+                                   'Replaces the cheap speculative ticket FERC tied to interconnection '
+                                   'study backlogs',
+                                   'The Pharos Project ([Br7K7fGD4uk @ 00:05:48])'],
+                                  ['Order 2023 grid operator study deadlines and fines',
+                                   '150-day cluster deadline, $1,000 per late working day, up to $2,500 on '
+                                   'the final study',
+                                   'Puts deadline money at risk on the operator side as well as the '
+                                   'developer side',
+                                   'Wattlore ([CDd-hsI3tKQ @ 00:07:17])'],
+                                  ['Battery rated power versus stored energy units',
+                                   '10 MW rated power with 20 MWh stored energy equals a two-hour duration '
+                                   'battery',
+                                   'Size the import and export rate separately from the energy the site '
+                                   'can hold',
+                                   'Modo Energy ([OIAK1RATT9M @ 00:02:06])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Reading the Line and the Price Before You Commit',
+                           'body': 'Shortcuts the speakers use to read queues and price signals faster '
+                                   'than the headline numbers.',
+                           'items': ["Always quote a queue number with its date; ERCOT's GIS Report is a "
+                                     'monthly snapshot as projects enter and drop out [US Energy Weekly — '
+                                     'DzkVggOvJGs @ 00:04:20]',
+                                     "Watch ERCOT's gas queue as a demand signal for firm, dispatchable "
+                                     'capacity: it nearly doubled from 26 GW to 48 GW between October 2024 '
+                                     'and October 2025 [US Energy Weekly — DzkVggOvJGs @ 00:04:55]',
+                                     'Read nodal price spreads as a map of where the grid needs '
+                                     'transmission: power is cheap near West Texas wind farms and '
+                                     'expensive in congested cities [US Energy Weekly — sxulqIJRZrM @ '
+                                     '00:03:18]',
+                                     'Stack BESS revenue across arbitrage, balancing and capacity because '
+                                     'a single stream rarely justifies the investment; one route-to-market '
+                                     'provider usually trades the asset, carries imbalance and sells '
+                                     'balancing services [learnBESS — m0yVO4ZOmdc @ 00:02:01]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pull the queue file',
+                              'action': "Download ERCOT's monthly GIS Report and log each project's GINR, "
+                                        'point of interconnection, capacity, in-service date and status.',
+                              'detail': 'Search GIS Report on ercot.com or the Market Information System '
+                                        'report library, then cross-check totals and fuel mix against the '
+                                        'System Planning Update in ERCOT board materials [US Energy Weekly '
+                                        '— DzkVggOvJGs @ 00:03:53].'},
+                             {'step': 2,
+                              'title': 'Discount the headline',
+                              'action': 'Price attrition into the projects ahead of you at your point of '
+                                        'interconnection.',
+                              'detail': 'ERCOT studies projects one at a time, a withdrawal ahead of you '
+                                        'can trigger restudies, and the security deposit is set only after '
+                                        'the study lands; post it or you are out of line [US Energy Weekly '
+                                        '— DzkVggOvJGs @ 00:03:12].'},
+                             {'step': 3,
+                              'title': 'Split the upgrade exposure',
+                              'action': 'Separate your own interconnection facilities from network upgrade '
+                                        'costs in every study result.',
+                              'detail': 'Recent projects that cleared every study averaged about $84/kW in '
+                                        'connection costs versus about $600/kW for those that withdrew, '
+                                        "with wider-grid upgrades at 94% of the withdrawn projects' cost "
+                                        '[Wattlore — CDd-hsI3tKQ @ 00:04:31].'},
+                             {'step': 4,
+                              'title': 'Map the nodal revenue',
+                              'action': 'Price the target node as System Lambda plus congestion plus '
+                                        'reserve adder, and budget for curtailment under '
+                                        'connect-and-manage.',
+                              'detail': 'LMPs recalculate every 5 minutes at roughly 900 points and can '
+                                        'hit the $5,000/MWh cap when reserves drop below 3 GW [Keentel '
+                                        'Engineering — AgfRaZtdbh8 @ 00:01:22]; connection may be fast, '
+                                        'but output gets curtailed when the wires are full [US Energy '
+                                        'Weekly — DzkVggOvJGs @ 00:04:55].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over how a megawatt gets paid while it waits for '
+                              'scarcity. pjminterconnection pitches its capacity market as the long-term '
+                              'backstop, securing enough power to meet consumer needs three years in the '
+                              'future and paying incentives that stimulate investment in existing '
+                              'generation and new capacity [ulpPgF6UT1E @ 00:00:23]. CME Group states the '
+                              'mechanism bluntly: capacity revenues are paid to providers regardless of '
+                              'whether energy is produced or not [dYvEG3uQzsQ @ 00:02:55]. Texas rejects '
+                              'the whole model. US Energy Weekly says PJM, MISO, New York, and New England '
+                              'all pay generators twice, once for energy and once for standing by, while '
+                              'ERCOT pays only for production, so plants sell cheap most of the year and '
+                              'must earn the bulk of annual revenue in a handful of high-demand hours; '
+                              'simple-cycle gas peakers in 2019 earned about 90 percent of their real-time '
+                              'market value in just 1 percent of hours [sxulqIJRZrM @ 00:01:01]. Keentel '
+                              'Engineering calls the energy-only nodal design elegant in theory, with '
+                              'prices reflecting real-time scarcity and investment following value, but '
+                              'flags built-in volatility, since tight supply can send prices to $5,000 per '
+                              'megawatt-hour almost instantly [AgfRaZtdbh8 @ 00:03:15]. The operator '
+                              'choice is between availability money contracted years ahead and a revenue '
+                              'stack that pays mainly when reserves run short.',
+                              'The second fault line is who eats the upgrade bill, and the regions answer '
+                              'differently. The Pharos Project lays out the map: in MISO, PJM, ISO New '
+                              'England, the New York ISO, and the Southwest Power Pool the generator pays '
+                              'for network upgrades, CAISO uses a crediting approach, and Texas, under '
+                              'connect and manage, does not charge generators for network upgrades at all '
+                              '[Br7K7fGD4uk @ 00:03:25]. US Energy Weekly flags the catch in the Texas '
+                              'playbook: ERCOT leans toward letting projects connect and managing '
+                              'congestion operationally, so connection may be fast, but output can be '
+                              'curtailed when the wires are full, and that hits revenue directly '
+                              '[DzkVggOvJGs @ 00:04:55]. ERCOT also studies projects one at a time in '
+                              'application order rather than in clusters, which US Energy Weekly calls '
+                              'relatively fast, while warning that a withdrawal ahead of you can shift '
+                              'results and trigger restudies for everyone behind [DzkVggOvJGs @ 00:02:52]. '
+                              'Wattlore lands on the same scoreboard from the other side, noting that '
+                              'Texas and the regions without a big grid operator tend to connect plants '
+                              'sooner, while PJM handed one New Jersey solar farm a bill dominated by '
+                              'network upgrades [CDd-hsI3tKQ @ 00:08:48]. The operator trade is plain: pay '
+                              'network upgrades up front in generator-pays regions, or connect faster in '
+                              'ERCOT and carry curtailment and congestion exposure at the node.',
+                              'Practitioners also split on whether queue reform is working. Wattlore '
+                              'describes FERC Order 2023 as replacing first come, first served with first '
+                              'ready, first served, studying projects in clusters where nobody is ahead of '
+                              'anybody and splitting each upgrade by how much each plant adds to the need, '
+                              'then layering on land-control proof, deposits that grow as you advance, and '
+                              'a 20 percent penalty for walking after signing [CDd-hsI3tKQ @ 00:06:43]. '
+                              'THE PHYSICAL LAYER says the method should help over time but cannot '
+                              'instantly clear a decade-old backlog, manufacture transformers, build '
+                              'lines, or decide who pays for upgrades, and that Berkeley Lab calls it too '
+                              'early to measure full impact [v5uOMJOzPbk @ 00:05:43]. The alternative '
+                              'playbook is the fast lane. The Pharos Project reports PJM picked 51 of 94 '
+                              'applications for a one-time track for shovel-ready resources, about 11.8 '
+                              'gigawatts of selected capacity, roughly 69 percent natural gas, with 90 '
+                              'percent expected running by 2030, and asks the obvious follow-up: who gets '
+                              'in [Br7K7fGD4uk @ 00:07:20]. On grid-enhancing shortcuts, The Pharos '
+                              'Project quotes Commissioner Christie warning that some technologies work '
+                              'somewhere but not everywhere, and if one fails to fix a reliability '
+                              'problem, a later network upgrade, potentially more costly, will be required '
+                              '[Br7K7fGD4uk @ 00:10:31].'],
+               'table': {'caption': 'Competing playbooks for market structure, upgrade costs, and queue '
+                                    'strategy',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Revenue model for standing capacity versus production-only pay',
+                                   'PJM capacity market secures power three years ahead with investment '
+                                   'incentives',
+                                   'ERCOT energy-only: gas peakers earned about 90 percent of value in 1 '
+                                   'percent of hours',
+                                   'pjminterconnection ([ulpPgF6UT1E @ 00:00:23]); US Energy Weekly '
+                                   '([sxulqIJRZrM @ 00:01:01])'],
+                                  ['Who pays for network upgrades triggered by a new connection',
+                                   'Generator pays network upgrades in MISO, PJM, ISO New England, NYISO '
+                                   'and SPP',
+                                   'Texas connect and manage: generators skip network upgrade charges; '
+                                   'CAISO uses crediting',
+                                   'The Pharos Project ([Br7K7fGD4uk @ 00:03:25])'],
+                                  ['How the grid operator sequences interconnection studies for projects',
+                                   'ERCOT studies one at a time in application order, relatively fast',
+                                   'Order 2023 clusters studied together on a first-ready, first-served '
+                                   'basis',
+                                   'US Energy Weekly ([DzkVggOvJGs @ 00:02:52]); Wattlore ([CDd-hsI3tKQ @ '
+                                   '00:06:43])'],
+                                  ['Connection speed traded against curtailment and congestion revenue '
+                                   'exposure',
+                                   'Fast ERCOT connection, but output curtailed when the wires are full',
+                                   'Texas and regions without a big grid operator connect plants sooner',
+                                   'US Energy Weekly ([DzkVggOvJGs @ 00:04:55]); Wattlore ([CDd-hsI3tKQ @ '
+                                   '00:08:48])'],
+                                  ['Verdict on whether recent queue reforms are actually delivering speed',
+                                   'Grid Strategies found all seven regions made meaningful progress in 18 '
+                                   'months',
+                                   'Berkeley Lab says too early to measure; agreement wait rose to 45 '
+                                   'months',
+                                   'The Pharos Project ([Br7K7fGD4uk @ 00:07:02]); THE PHYSICAL LAYER '
+                                   '([v5uOMJOzPbk @ 00:05:26])'],
+                                  ['Fast lane versus standard cluster entry for shovel-ready resources',
+                                   'PJM one-time fast track picked 51 of 94 applications, about 11.8 GW',
+                                   'PJM first new round admitted 715 projects over 200 GW, one to two '
+                                   'years of study',
+                                   'The Pharos Project ([Br7K7fGD4uk @ 00:07:20]); Wattlore ([CDd-hsI3tKQ '
+                                   '@ 00:07:51])'],
+                                  ['Organized competitive markets versus vertically integrated utility '
+                                   'territories',
+                                   'ISO and RTO markets with competitive offers, generally more attractive '
+                                   'to renewable developers',
+                                   'Southeast utilities offer stability and long-term planning but less '
+                                   'price competition',
+                                   'Avangrid Renewables ([T_Y5rMNtBVs @ 00:02:03]); Infrastructure '
+                                   'explained ([Cym8njcfsfQ @ 00:07:49])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The headline trap is the upgrade bill that dwarfs the project. Wattlore '
+                              'walks through a 51-megawatt Cumberland County, New Jersey solar farm that a '
+                              'PJM study in August 2021 said would owe $598 million to plug in, of which '
+                              'only $6.4 million was its own connection and about $592 million was network '
+                              "upgrades [CDd-hsI3tKQ @ 00:00:00]. Split over the farm's size, that is more "
+                              'than $11,000 per kilowatt, against about $84 per kilowatt for recent '
+                              'projects that cleared every study and about $600 for those that quit, where '
+                              'wider-grid upgrades made up 94 percent of the cost and were likely the key '
+                              'reason they left [CDd-hsI3tKQ @ 00:04:31]. The Pharos Project confirms the '
+                              'pattern nationally: Berkeley Lab ties limited available transmission '
+                              'capacity to high interconnection upgrade costs, which contribute to high '
+                              'withdrawals and may deter developers from submitting new requests '
+                              '[Br7K7fGD4uk @ 00:04:03]. The economics check is to divide any study '
+                              'estimate by your kilowatts before posting security, because US Energy '
+                              'Weekly notes ERCOT studies first, then sets the deposit, and if you cannot '
+                              'post it you are out of the line [DzkVggOvJGs @ 00:03:12]. Wattlore adds '
+                              'that the New Jersey study warned in plain words that its cost could still '
+                              'change.',
+                              'The second failure mode is the domino exit. Wattlore explains that under '
+                              'the old order-based rules the cost of an upgrade starts with the first '
+                              'project in line that makes it needed, so if a project ahead of you leaves, '
+                              'its share of the bill can land on you, a restudy can push costs way up and '
+                              'dates back, and the bigger bill can make the next project quit [CDd-hsI3tKQ '
+                              '@ 00:05:47]. Signing does not end the exposure: The Pharos Project cites '
+                              'Berkeley Lab that withdrawal rates exceed 40 percent even after a developer '
+                              'signs an interconnection agreement, and that only about 13 percent of '
+                              'capacity requested from 2000 to 2020 had come online by the end of 2025 '
+                              '[Br7K7fGD4uk @ 00:01:51]. THE PHYSICAL LAYER counts about 549 gigawatts '
+                              'holding draft or signed agreements without reaching commercial operation, '
+                              'including 256 gigawatts of solar and 161 of storage [v5uOMJOzPbk @ '
+                              '00:02:52]. Wattlore reports that PJM itself has 51 gigawatts of plants with '
+                              'signed deals, many not being built at all or slowed by state permits and '
+                              'supply chain backlogs [CDd-hsI3tKQ @ 00:08:31]. The underwriting rule that '
+                              'follows: treat both the projects ahead of you and your own signed deal as '
+                              'live withdrawal risk, not a settled position.',
+                              'Price and hardware traps finish the list. US Energy Weekly reports that '
+                              'during Winter Storm Uri regulators directed ERCOT to hold prices at $9,000, '
+                              'so retail providers bought power at $9,000 per megawatt-hour and sold it at '
+                              'around $90, and several went bankrupt; the system-wide offer cap was then '
+                              'cut to $5,000 effective January 2022 [sxulqIJRZrM @ 00:01:51]. '
+                              'Infrastructure explained warns that high-voltage transformers, the '
+                              'equipment that steps power up for long-distance transmission, take 12 to 18 '
+                              'months to manufacture and cannot be quickly replaced, a lead time that sits '
+                              'underneath every substation upgrade a study can demand [Cym8njcfsfQ @ '
+                              '00:08:46]. For storage sites, learnBESS says a single revenue stream rarely '
+                              'justifies the investment, so arbitrage, balancing, and capacity have to be '
+                              'stacked and executed by a route-to-market provider, and identical hardware '
+                              'earns different revenue in different countries because pre-qualification, '
+                              'imbalance pricing, and network tariffs are set nationally [m0yVO4ZOmdc @ '
+                              '00:02:01]. Modo Energy supplies the unit check every bid depends on: a 10 '
+                              'megawatt, 20 megawatt-hour battery has 10 megawatts of rated power, the '
+                              'highest rate it can import or export, and 20 megawatt-hours of storable '
+                              'energy, which makes it a 2-hour asset [OIAK1RATT9M @ 00:02:06].'],
+               'table': {'caption': 'Firsthand interconnection and market traps with the economics check '
+                                    'practitioners apply',
+                         'headers': ['Trap', 'What Happened', 'Economics Check', 'Expert Source'],
+                         'rows': [["Network upgrade bill dwarfing the project's own connection cost",
+                                   'PJM study billed a 51 MW farm $598 million, only $6.4 million its own '
+                                   'wire',
+                                   'More than $11,000 per kilowatt versus about $84 for completed projects',
+                                   'Wattlore ([CDd-hsI3tKQ @ 00:04:14])'],
+                                  ['Restudy cascade after a project ahead of you withdraws',
+                                   "The departing project's upgrade share can land on the next project in "
+                                   'line',
+                                   'Check how solid the projects ahead are and price in the attrition',
+                                   'Wattlore ([CDd-hsI3tKQ @ 00:05:47]); US Energy Weekly ([DzkVggOvJGs @ '
+                                   '00:04:41])'],
+                                  ['Failing to post financial security once the study lands',
+                                   'ERCOT studies first, then sets the deposit; no security means you are '
+                                   'out',
+                                   'Hold capital ready to post before the study result arrives',
+                                   'US Energy Weekly ([DzkVggOvJGs @ 00:03:12])'],
+                                  ['Studies running late and stretching the total time to power',
+                                   'In 2022, 68 percent of interconnection studies came out late',
+                                   'Typical project built in 2025 took 61 months from request to operation',
+                                   'Wattlore ([CDd-hsI3tKQ @ 00:02:51])'],
+                                  ['Scarcity price squeeze on retail buyers during an emergency event',
+                                   'Uri retailers bought at $9,000 per MWh and sold at about $90; several '
+                                   'went bankrupt',
+                                   'Offer cap now $5,000 per MWh, with ORDC adder reaching it near 3,000 '
+                                   'MW reserves',
+                                   'US Energy Weekly ([sxulqIJRZrM @ 00:01:51]); US Energy Weekly '
+                                   '([sxulqIJRZrM @ 00:02:35])'],
+                                  ['Treating signed agreements as guaranteed future supply on the grid',
+                                   'About 549 GW held draft or signed agreements without reaching '
+                                   'commercial operation',
+                                   'Ask how much is signed, how much is built, and how long it took',
+                                   'THE PHYSICAL LAYER ([v5uOMJOzPbk @ 00:07:44])'],
+                                  ['Project slipping to inactive status in the ERCOT generation queue',
+                                   'Projects pause when required information is not submitted in time',
+                                   'Track your GINR monthly in the GIS Report and quote its date',
+                                   'US Energy Weekly ([DzkVggOvJGs @ 00:01:29])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Pre-Security Interconnection Gate',
+                           'body': 'Clear these four checks before posting interconnection security or '
+                                   'committing land and capital to a node.',
+                           'items': ['Divide the network upgrade estimate by project kilowatts and compare '
+                                     'it to the roughly $84 per kilowatt completed projects paid versus '
+                                     'about $600 for projects that quit [Wattlore — CDd-hsI3tKQ @ '
+                                     '00:04:31].',
+                                     'Look at how solid the projects ahead of you are and price in '
+                                     'attrition, since only a fraction of the headline queue will ever get '
+                                     'built [US Energy Weekly — DzkVggOvJGs @ 00:04:41].',
+                                     'On an ERCOT connect-and-manage site, model curtailment when the '
+                                     'wires are full, because it hits revenue directly [US Energy Weekly — '
+                                     'DzkVggOvJGs @ 00:04:55].',
+                                     'For BESS, confirm arbitrage, balancing, and capacity can be stacked '
+                                     'through a route-to-market provider, since a single stream rarely '
+                                     'justifies the investment [learnBESS — m0yVO4ZOmdc @ 00:02:01].']}}],
+ 'pull_quote': '"Never add up queue capacity and call it future supply. It is a pipeline with a very high '
+               'dropout rate, not a warehouse waiting to be switched on." — THE PHYSICAL LAYER '
+               '(v5uOMJOzPbk @ 00:04:55).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ["Download ERCOT's monthly GIS Report spreadsheet, track each project by its GINR "
+                      'number, and always quote the date alongside any queue figure [US Energy Weekly — '
+                      'DzkVggOvJGs @ 00:03:53].',
+                      'Screen any queue headline with three questions: how much has a signed agreement, '
+                      'how much has actually been built, and how long did the projects that made it take '
+                      '[THE PHYSICAL LAYER — v5uOMJOzPbk @ 00:07:44].',
+                      'Map the site to one of the just-under-900 ERCOT settlement points with a unique LMP '
+                      'out of roughly 17,000 nodes before underwriting nodal revenue [Modo Energy — '
+                      'xZ1P-4F8Jf8 @ 00:00:23].',
+                      'Line up a qualified scheduling entity that has passed ERCOT qualification and posts '
+                      'settlement collateral, since every generator must trade through a QSE [US Energy '
+                      'Weekly — sxulqIJRZrM @ 00:04:02].',
+                      'Run data-center load requests on a separate track from generation, because the '
+                      'ERCOT large-load queue moves to batch studies starting in 2026 [US Energy Weekly — '
+                      'DzkVggOvJGs @ 00:03:34].',
+                      'Under Order 2023 cluster rules, secure 90 percent site control before applying and '
+                      'budget deposits rising toward 20 percent of estimated network upgrade costs [The '
+                      'Pharos Project — Br7K7fGD4uk @ 00:05:30].'],
+ 'statutory_citations': [{'title': 'Wattlore — One solar farm was handed a $598 million bill to plug in '
+                                   '[00:04:14]',
+                          'url': 'https://www.youtube.com/watch?v=CDd-hsI3tKQ&t=254s',
+                          'relevance': 'Primary practitioner testimony on network upgrade cost per '
+                                       'kilowatt, restudy cascades, and Order 2023 penalties.'},
+                         {'title': 'US Energy Weekly — A 5-Year Wait to Connect? ERCOT Queue Explained | '
+                                   'US Energy ESSENTIALS [00:03:12]',
+                          'url': 'https://www.youtube.com/watch?v=DzkVggOvJGs&t=192s',
+                          'relevance': 'Primary practitioner testimony on ERCOT sequential studies, '
+                                       'security posting, and connect-and-manage curtailment.'},
+                         {'title': 'US Energy Weekly — Why No Capacity Market? ERCOT Market Explained | US '
+                                   'Energy ESSENTIALS [00:01:51]',
+                          'url': 'https://www.youtube.com/watch?v=sxulqIJRZrM&t=111s',
+                          'relevance': 'Primary practitioner testimony on energy-only scarcity pricing, '
+                                       'the Uri retail bankruptcies, and the ORDC.'},
+                         {'title': 'The Pharos Project — Waiting for Power  Why New Electricity Gets Stuck '
+                                   'Before It Reaches the Grid [00:03:25]',
+                          'url': 'https://www.youtube.com/watch?v=Br7K7fGD4uk&t=205s',
+                          'relevance': 'Primary practitioner testimony on regional upgrade cost '
+                                       'allocation, withdrawal rates, and the PJM fast track.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'T_Y5rMNtBVs',
+                       'title': 'PJM Interconnection: U.S. Energy Markets',
+                       'channel': 'Avangrid Renewables',
+                       'author': 'Avangrid Renewables',
+                       'text': 'For the less sophisticated and experienced developers, this balkanization '
+                               'is an obstacle to business, as each project from California to New '
+                               'England, from North Dakota to Texas, requires a unique assessment of rules '
+                               'and regulations to operate successfully.',
+                       'tip': 'For the less sophisticated and experienced developers, this balkanization '
+                              'is an obstacle to business, as each project from California to New England, '
+                              'from North Dakota to Texas, requires a unique assessment of rules and '
+                              'regulations to operate successfully.',
+                       'timestamp': 43,
+                       'timestamp_seconds': 43,
+                       'timestamp_label': '[00:00:43]',
+                       'url': 'https://www.youtube.com/watch?v=T_Y5rMNtBVs&t=43s',
+                       'markdown': '[00:00:43](https://www.youtube.com/watch?v=T_Y5rMNtBVs&t=43s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'T_Y5rMNtBVs',
+                       'title': 'PJM Interconnection: U.S. Energy Markets',
+                       'channel': 'Avangrid Renewables',
+                       'author': 'Avangrid Renewables',
+                       'text': 'Organized competitive markets operated by independent system operators or '
+                               'regional transmission organizations are generally more attractive to '
+                               'renewable power developers.',
+                       'tip': 'Organized competitive markets operated by independent system operators or '
+                              'regional transmission organizations are generally more attractive to '
+                              'renewable power developers.',
+                       'timestamp': 123,
+                       'timestamp_seconds': 123,
+                       'timestamp_label': '[00:02:03]',
+                       'url': 'https://www.youtube.com/watch?v=T_Y5rMNtBVs&t=123s',
+                       'markdown': '[00:02:03](https://www.youtube.com/watch?v=T_Y5rMNtBVs&t=123s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ulpPgF6UT1E',
+                       'title': 'Markets In A Minute: A Brief Overview of PJM Markets',
+                       'channel': 'pjminterconnection',
+                       'author': 'pjminterconnection',
+                       'text': "PJM's capacity market provides longer-term reliability by securing enough "
+                               'power to meet the needs of electricity consumers three years in the '
+                               'future.',
+                       'tip': "PJM's capacity market provides longer-term reliability by securing enough "
+                              'power to meet the needs of electricity consumers three years in the future.',
+                       'timestamp': 23,
+                       'timestamp_seconds': 23,
+                       'timestamp_label': '[00:00:23]',
+                       'url': 'https://www.youtube.com/watch?v=ulpPgF6UT1E&t=23s',
+                       'markdown': '[00:00:23](https://www.youtube.com/watch?v=ulpPgF6UT1E&t=23s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Cym8njcfsfQ',
+                       'title': 'Every US Power Grid Explained',
+                       'channel': 'Infrastructure explained',
+                       'author': 'Infrastructure explained',
+                       'text': 'High voltage transformers, the critical equipment that steps power up for '
+                               "long-distance transmission, take 12 to 18 months to manufacture and can't "
+                               'be quickly replaced.',
+                       'tip': 'High voltage transformers, the critical equipment that steps power up for '
+                              "long-distance transmission, take 12 to 18 months to manufacture and can't "
+                              'be quickly replaced.',
+                       'timestamp': 526,
+                       'timestamp_seconds': 526,
+                       'timestamp_label': '[00:08:46]',
+                       'url': 'https://www.youtube.com/watch?v=Cym8njcfsfQ&t=526s',
+                       'markdown': '[00:08:46](https://www.youtube.com/watch?v=Cym8njcfsfQ&t=526s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Cym8njcfsfQ',
+                       'title': 'Every US Power Grid Explained',
+                       'channel': 'Infrastructure explained',
+                       'author': 'Infrastructure explained',
+                       'text': 'This older model has advantages, stability and long-term planning, and it '
+                               'has disadvantages too: less price competition, slower integration of new '
+                               'energy sources, and a grid that is less interconnected with its neighbors.',
+                       'tip': 'This older model has advantages, stability and long-term planning, and it '
+                              'has disadvantages too: less price competition, slower integration of new '
+                              'energy sources, and a grid that is less interconnected with its neighbors.',
+                       'timestamp': 469,
+                       'timestamp_seconds': 469,
+                       'timestamp_label': '[00:07:49]',
+                       'url': 'https://www.youtube.com/watch?v=Cym8njcfsfQ&t=469s',
+                       'markdown': '[00:07:49](https://www.youtube.com/watch?v=Cym8njcfsfQ&t=469s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dYvEG3uQzsQ',
+                       'title': 'Understanding Basics of the Power Market',
+                       'channel': 'CME Group',
+                       'author': 'CME Group',
+                       'text': 'This market incentivizes long term capital investment in generation '
+                               'resources, and revenues are paid to the capacity providers regardless of '
+                               'whether energy is produced or not.',
+                       'tip': 'This market incentivizes long term capital investment in generation '
+                              'resources, and revenues are paid to the capacity providers regardless of '
+                              'whether energy is produced or not.',
+                       'timestamp': 175,
+                       'timestamp_seconds': 175,
+                       'timestamp_label': '[00:02:55]',
+                       'url': 'https://www.youtube.com/watch?v=dYvEG3uQzsQ&t=175s',
+                       'markdown': '[00:02:55](https://www.youtube.com/watch?v=dYvEG3uQzsQ&t=175s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OIAK1RATT9M',
+                       'title': "Megawatts (MW) vs. megawatt hours (MWh): what's the difference?",
+                       'channel': 'Modo Energy',
+                       'author': 'Modo Energy',
+                       'text': '10 megawatt refers to the rated power of the site, the highest rate at '
+                               'which the battery can import or export electrical energy, and 20 megawatt '
+                               'hours refer to the amount of energy the battery can store.',
+                       'tip': '10 megawatt refers to the rated power of the site, the highest rate at '
+                              'which the battery can import or export electrical energy, and 20 megawatt '
+                              'hours refer to the amount of energy the battery can store.',
+                       'timestamp': 126,
+                       'timestamp_seconds': 126,
+                       'timestamp_label': '[00:02:06]',
+                       'url': 'https://www.youtube.com/watch?v=OIAK1RATT9M&t=126s',
+                       'markdown': '[00:02:06](https://www.youtube.com/watch?v=OIAK1RATT9M&t=126s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DzkVggOvJGs',
+                       'title': 'A 5-Year Wait to Connect? ERCOT Queue Explained | US Energy ESSENTIALS',
+                       'channel': 'US Energy Weekly',
+                       'author': 'US Energy Weekly',
+                       'text': 'ERCOT studies first, then sets the deposit amount; once the study lands, '
+                               "you post security to move forward, and if you can't, you're out of the "
+                               'line.',
+                       'tip': 'ERCOT studies first, then sets the deposit amount; once the study lands, '
+                              "you post security to move forward, and if you can't, you're out of the "
+                              'line.',
+                       'timestamp': 192,
+                       'timestamp_seconds': 192,
+                       'timestamp_label': '[00:03:12]',
+                       'url': 'https://www.youtube.com/watch?v=DzkVggOvJGs&t=192s',
+                       'markdown': '[00:03:12](https://www.youtube.com/watch?v=DzkVggOvJGs&t=192s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DzkVggOvJGs',
+                       'title': 'A 5-Year Wait to Connect? ERCOT Queue Explained | US Energy ESSENTIALS',
+                       'channel': 'US Energy Weekly',
+                       'author': 'US Energy Weekly',
+                       'text': 'ERCOT leans toward letting projects connect and managing congestion '
+                               'operationally; connection may be fast, but your output can be curtailed '
+                               'when the wires are full, and that hits revenue directly.',
+                       'tip': 'ERCOT leans toward letting projects connect and managing congestion '
+                              'operationally; connection may be fast, but your output can be curtailed '
+                              'when the wires are full, and that hits revenue directly.',
+                       'timestamp': 295,
+                       'timestamp_seconds': 295,
+                       'timestamp_label': '[00:04:55]',
+                       'url': 'https://www.youtube.com/watch?v=DzkVggOvJGs&t=295s',
+                       'markdown': '[00:04:55](https://www.youtube.com/watch?v=DzkVggOvJGs&t=295s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ijPF1Cwm0wA',
+                       'title': 'Understanding the Basics of the Power System (The Energy Academy: ERCOT - '
+                                'E1)',
+                       'channel': 'Modo Energy',
+                       'author': 'Modo Energy',
+                       'text': 'ERCOT has no synchronous AC ties to the Eastern and Western '
+                               'interconnections, so it is overseen by the Public Utility Commission of '
+                               "Texas, which has final say on changes to ERCOT's rules and protocols.",
+                       'tip': 'ERCOT has no synchronous AC ties to the Eastern and Western '
+                              'interconnections, so it is overseen by the Public Utility Commission of '
+                              "Texas, which has final say on changes to ERCOT's rules and protocols.",
+                       'timestamp': 110,
+                       'timestamp_seconds': 110,
+                       'timestamp_label': '[00:01:50]',
+                       'url': 'https://www.youtube.com/watch?v=ijPF1Cwm0wA&t=110s',
+                       'markdown': '[00:01:50](https://www.youtube.com/watch?v=ijPF1Cwm0wA&t=110s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'AgfRaZtdbh8',
+                       'title': 'ERCOT Explained: How the Texas Power Grid Actually Works (LMP, SCED & '
+                                'Markets)',
+                       'channel': 'Keentel Engineering',
+                       'author': 'Keentel Engineering',
+                       'text': 'The price is made up of three components: system lambda, a congestion '
+                               'component that adjusts for transmission bottlenecks, and a price adder '
+                               'that kicks in when reserves get tight.',
+                       'tip': 'The price is made up of three components: system lambda, a congestion '
+                              'component that adjusts for transmission bottlenecks, and a price adder that '
+                              'kicks in when reserves get tight.',
+                       'timestamp': 82,
+                       'timestamp_seconds': 82,
+                       'timestamp_label': '[00:01:22]',
+                       'url': 'https://www.youtube.com/watch?v=AgfRaZtdbh8&t=82s',
+                       'markdown': '[00:01:22](https://www.youtube.com/watch?v=AgfRaZtdbh8&t=82s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sxulqIJRZrM',
+                       'title': 'Why No Capacity Market? ERCOT Market Explained | US Energy ESSENTIALS',
+                       'channel': 'US Energy Weekly',
+                       'author': 'US Energy Weekly',
+                       'text': 'Texas generators earn money only when they actually produce electricity, '
+                               'and a study of 2019 found that simple-cycle gas peakers earned about '
+                               'ninety percent of their real-time market value in just one percent of the '
+                               'hours that year.',
+                       'tip': 'Texas generators earn money only when they actually produce electricity, '
+                              'and a study of 2019 found that simple-cycle gas peakers earned about ninety '
+                              'percent of their real-time market value in just one percent of the hours '
+                              'that year.',
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=sxulqIJRZrM&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=sxulqIJRZrM&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sxulqIJRZrM',
+                       'title': 'Why No Capacity Market? ERCOT Market Explained | US Energy ESSENTIALS',
+                       'channel': 'US Energy Weekly',
+                       'author': 'US Energy Weekly',
+                       'text': 'Retail providers were buying power at nine thousand dollars a '
+                               'megawatt-hour and selling it to customers at around ninety dollars.',
+                       'tip': 'Retail providers were buying power at nine thousand dollars a megawatt-hour '
+                              'and selling it to customers at around ninety dollars.',
+                       'timestamp': 111,
+                       'timestamp_seconds': 111,
+                       'timestamp_label': '[00:01:51]',
+                       'url': 'https://www.youtube.com/watch?v=sxulqIJRZrM&t=111s',
+                       'markdown': '[00:01:51](https://www.youtube.com/watch?v=sxulqIJRZrM&t=111s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xZ1P-4F8Jf8',
+                       'title': 'Price formation in ERCOT - System Lambda (The Energy Academy: ERCOT - E5)',
+                       'channel': 'Modo Energy',
+                       'author': 'Modo Energy',
+                       'text': 'As of early 2024, there are around 17,000 nodes in ERCOT, and just under '
+                               '900 of these have a unique LMP.',
+                       'tip': 'As of early 2024, there are around 17,000 nodes in ERCOT, and just under '
+                              '900 of these have a unique LMP.',
+                       'timestamp': 23,
+                       'timestamp_seconds': 23,
+                       'timestamp_label': '[00:00:23]',
+                       'url': 'https://www.youtube.com/watch?v=xZ1P-4F8Jf8&t=23s',
+                       'markdown': '[00:00:23](https://www.youtube.com/watch?v=xZ1P-4F8Jf8&t=23s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'v5uOMJOzPbk',
+                       'title': 'The 5-Year Queue Behind Your Chatbot',
+                       'channel': 'THE PHYSICAL LAYER',
+                       'author': 'THE PHYSICAL LAYER',
+                       'text': 'Never add up queue capacity and call it future supply; it is a pipeline '
+                               'with a very high dropout rate, not a warehouse waiting to be switched on.',
+                       'tip': 'Never add up queue capacity and call it future supply; it is a pipeline '
+                              'with a very high dropout rate, not a warehouse waiting to be switched on.',
+                       'timestamp': 295,
+                       'timestamp_seconds': 295,
+                       'timestamp_label': '[00:04:55]',
+                       'url': 'https://www.youtube.com/watch?v=v5uOMJOzPbk&t=295s',
+                       'markdown': '[00:04:55](https://www.youtube.com/watch?v=v5uOMJOzPbk&t=295s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Br7K7fGD4uk',
+                       'title': 'Waiting for Power  Why New Electricity Gets Stuck Before It Reaches the '
+                                'Grid',
+                       'channel': 'The Pharos Project',
+                       'author': 'The Pharos Project',
+                       'text': 'In MISO, PJM, ISO New England, the New York ISO, and the Southwest Power '
+                               'Pool, the generator pays for network upgrades, while in Texas, under a '
+                               'connect and manage approach, generators do not pay for network upgrades.',
+                       'tip': 'In MISO, PJM, ISO New England, the New York ISO, and the Southwest Power '
+                              'Pool, the generator pays for network upgrades, while in Texas, under a '
+                              'connect and manage approach, generators do not pay for network upgrades.',
+                       'timestamp': 205,
+                       'timestamp_seconds': 205,
+                       'timestamp_label': '[00:03:25]',
+                       'url': 'https://www.youtube.com/watch?v=Br7K7fGD4uk&t=205s',
+                       'markdown': '[00:03:25](https://www.youtube.com/watch?v=Br7K7fGD4uk&t=205s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CDd-hsI3tKQ',
+                       'title': 'One solar farm was handed a $598 million bill to plug in',
+                       'channel': 'Wattlore',
+                       'author': 'Wattlore',
+                       'text': "Split the bill over the farm's size and it comes to more than eleven "
+                               'thousand dollars for every kilowatt.',
+                       'tip': "Split the bill over the farm's size and it comes to more than eleven "
+                              'thousand dollars for every kilowatt.',
+                       'timestamp': 254,
+                       'timestamp_seconds': 254,
+                       'timestamp_label': '[00:04:14]',
+                       'url': 'https://www.youtube.com/watch?v=CDd-hsI3tKQ&t=254s',
+                       'markdown': '[00:04:14](https://www.youtube.com/watch?v=CDd-hsI3tKQ&t=254s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'm0yVO4ZOmdc',
+                       'title': 'How Battery Storage Makes Money in EU Electricity Markets — BESS '
+                                'Explained',
+                       'channel': 'learnBESS',
+                       'author': 'learnBESS',
+                       'text': 'A single stream rarely justifies the investment on its own; arbitrage, '
+                               'balancing, and capacity are stacked, and the RTM provider is the one that '
+                               'executes it.',
+                       'tip': 'A single stream rarely justifies the investment on its own; arbitrage, '
+                              'balancing, and capacity are stacked, and the RTM provider is the one that '
+                              'executes it.',
+                       'timestamp': 121,
+                       'timestamp_seconds': 121,
+                       'timestamp_label': '[00:02:01]',
+                       'url': 'https://www.youtube.com/watch?v=m0yVO4ZOmdc&t=121s',
+                       'markdown': '[00:02:01](https://www.youtube.com/watch?v=m0yVO4ZOmdc&t=121s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'}]}

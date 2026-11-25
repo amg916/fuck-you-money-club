@@ -9,49 +9,49 @@
       "FIRM MSOS"
     ],
     "deck": [
-      "QUALIFIED INTAKE. VERIFIED RECORDS.",
-      "NONLEGAL SERVICES. CLEAR BOUNDARIES."
+      "DOCKET SELECTION, MDL MECHANICS, BELLWETHER POOLS & CASE ACQUISITION ECONOMICS",
+      "HITECH RECORD TRIAGE, CASE-MANAGEMENT STACKS, LITIGATION FINANCE & LAW-FIRM MSO STRUCTURES"
     ],
-    "lead": "Build the compliant intake, medical-record, and operating infrastructure that helps law firms evaluate cases faster.",
-    "summary": "Measure acquisition cost per attorney-accepted, evidence-supported matter rather than per raw lead, including advertising, consent verification, record retrieval, triage, and rejection costs. Separate permissible marketing and intake services, HIPAA/HITECH-compliant record support, and nonlegal MSO administration, with jurisdiction-specific review of solicitation, referral compensation, fee splitting, ownership, and attorney independence.",
+    "lead": "Twelve chapters of practitioner testimony trace how mass-tort firms separate the injury from its payout vehicle, pick and underwrite dockets, acquire and convert claimants, front-load HITECH medical record retrieval, and fund the work through litigation finance, private equity, and law-firm MSO and ABS structures.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, each carrying timestamped inline attribution to its source video. Together they map the mass-tort pipeline from MDL consolidation, bellwether pools, and settlement matrices to record retrieval, case-management automation, and the capital structures now reaching into law firms.",
     "chapters": [
-      "Q1: The Legal-Services Infrastructure Thesis",
-      "Q2: Tort Criteria & Firm Demand",
-      "Q3: Cost per Qualified Matter",
-      "Q4: Ethics, Consent & MSO Boundaries",
-      "Q5: Build Compliant Acquisition Channels",
-      "Q6: Verify Intake & Record Authority",
-      "Q7: Retrieve & Triage Medical Records",
-      "Q8: Price Three Nonlegal Service Lanes",
-      "Q9: Win & Retain Firm Accounts",
-      "Q10: Operate Intake, QA & Handoffs",
-      "Q11: Control Fraud & Privacy Exposure",
-      "Q12: Scale Without Owning Legal Judgment"
+      "Mass Tort, Class Action, or MDL? The Core Distinctions",
+      "Inside the MDL Machine: From Consolidation to Global Resolution",
+      "Picking the Tort: Lifecycles, Power Rankings & Docket Underwriting",
+      "Medical Device & Pharma Dockets: Hernia Mesh, PowerPort, NEC and More",
+      "Toxic Exposure, Consumer & Emerging Dockets",
+      "Mass-Tort Lead Generation & Acquisition Economics",
+      "Intake, Conversion & Client Communication",
+      "The Case-Management Stack: Filevine, Litify & Automation",
+      "HITECH Record Retrieval, AI Review & Settlement Administration",
+      "Litigation Finance Fundamentals for Mass-Tort Firms",
+      "Capital Markets Meet the Law Firm: Portfolio Funding, PE & Law-Firm MSOs",
+      "MSO & ABS Structures: Healthcare Models, Fee Traps & Arizona's Experiment"
     ],
     "flow": [
       [
-        "ATTRACT",
-        "Use accurate, jurisdiction-reviewed advertising without outcome promises or prohibited solicitation."
+        "DISTINGUISH",
+        "Treat the mass tort as the injury and pick the payout vehicle: class actions for small uniform harms, MDLs for serious injury claims where each plaintiff keeps an individual lawsuit"
       ],
       [
-        "CONSENT",
-        "Document contact consent, privacy disclosures, and valid authority for medical-record requests."
+        "UNDERWRITE",
+        "Pick the tort by lifecycle and power ranking, price every inventory against the Daubert outcome, and confirm leadership common-fund financing before committing to a docket"
       ],
       [
-        "SCREEN",
-        "Apply attorney-defined intake criteria while leaving legal advice and case acceptance to counsel."
-      ],
-      [
-        "RETRIEVE",
-        "Obtain records through applicable access or authorization pathways without assuming universal fee caps."
+        "ACQUIRE",
+        "Run lead generation and intake, mine single-family cases for the next docket, and screen each claimant's individual injury profile before conversion"
       ],
       [
         "TRIAGE",
-        "Organize source-linked medical timelines and flag gaps for qualified clinical or attorney review."
+        "Front-load HITECH record retrieval and AI review so critical medical records and pharmacy proof are gathered before plaintiff fact sheets and defense authorizations"
       ],
       [
-        "SERVICE",
-        "Deliver contracted nonlegal support while preserving professional independence and lawful compensation structures."
+        "MANAGE",
+        "Run the inventory on Filevine, Litify and automation, calendaring every sworn plaintiff fact sheet deadline and auditing files for trial-readiness certification"
+      ],
+      [
+        "RESOLVE & FUND",
+        "Feed 50 to 100 claim bellwether pools into settlement matrices and administration, financed through litigation finance, portfolio funding, PE and law-firm MSO or ABS structures"
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "MASS-TORT CASE ACQUISITION, HITECH RECORD TRIAGE & LAW-FIRM MSOS",
-  "subtitle": "The Complete Playbook for Mass-Tort Intake, HITECH Record Triage & Law-Firm MSOs: $160,000-$1,250,000 USD in Annual Contracted Revenue; Launch with a 1 FT + 3 C Pod (4 People), Scale to 6",
+  "subtitle": "Pick the tort by timing, sign only records-backed claimants, price every source on cost per retained case, demand digital charts at the $6.50 HITECH cap, and wrap the firm in a fixed-fee or cost-plus MSO that keeps case selection and settlement with lawyers",
   "chapter_count": 12,
-  "total_word_count": 79428,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 71989,
+  "expert_youtube_link_count": 206,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:04Z"
+  "updated_at": "2026-11-25T00:44:08Z"
 }

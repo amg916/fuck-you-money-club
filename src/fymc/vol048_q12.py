@@ -1,785 +1,841 @@
 from __future__ import annotations
 
-CHAPTER_12 = {
-    "id": "Q12",
-    "chapter_id": "Q12",
-    "chapter_number": 12,
-    "question_number": 12,
-    "slug": "thirty-day-whistleblower-analytics-launch-and-decision-thresholds",
-    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching data-mined qui tam, sec & irs whistleblower analytics, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
-    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
-    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
-    "subtitle": "A Three-Person CMS, Procurement, SEC TCR, and IRS Form 211 Sprint Built Around Paid Counsel Retainers, Claim Particularity, and Restricted Case Evidence",
-    "layout_template": "thirty_day_plan",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #48, Data-Mined Qui Tam, SEC & IRS Whistleblower Analytics, ranks "
-        "#16 of 49 with a 92/100 Money-to-Manpower Score. This sprint converts its "
-        "11 mapped plays into a three-person operating sequence: acquire permitted "
-        "records, test anomalies, corroborate representative claims, and sell scoped "
-        "litigation-support work to qualified counsel. Day 30 proves process quality, "
-        "not an award pipeline. Day 60 tests buyer commitment; Day 90 tests collected "
-        "retainer economics before capacity expands. Canonical annual owner profit "
-        "remains $30,400 Conservative, $219,375 Base, and $510,400 Scaled. A separate "
-        "cash ledger excludes every uncollected award, while explicit public-disclosure, "
-        "particularity, non-intervention, dismissal, and zero-recovery branches prevent "
-        "speculative claims from underwriting payroll."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$95,000",
-            "context": "Annual gross operator revenue; paid support plus realized net award shares",
-            "note": "32% net margin; $30,400 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$487,500",
-            "context": "Annual gross operator revenue; paid support plus realized net award shares",
-            "note": "45.0% net margin; $219,375 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$880,000",
-            "context": "Annual gross operator revenue; paid support plus realized net award shares",
-            "note": "58% net margin; $510,400 annual owner net profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Days 1–7: Bound the eleven plays, staff the pod, and cap exposure",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a narrow buyer and one testable fraud theory, not a "
-                    "warehouse of accusations. Candidate #48 uses one full-time operator "
-                    "and two contractors: a data engineer and a forensic reviewer. "
-                    "The founder owns sales, collection, scope, and counsel coordination; "
-                    "the engineer owns reproducible acquisition and joins; the reviewer "
-                    "owns source interpretation and contradiction testing. For this launch, "
-                    "map the eleven plays as P1 CMS Part B utilization, P2 CMS Part D "
-                    "prescribing, P3 Open Payments relationships, P4 SAM.gov award context, "
-                    "P5 permitted import-manifest comparisons, P6 entity resolution, P7 "
-                    "FOIA corroboration, P8 representative-claim reconstruction, P9 counsel "
-                    "retainers, P10 counsel-routed FCA, SEC, and IRS submission support, "
-                    "and P11 restricted-matter tracking. These are working execution "
-                    "labels, not eleven simultaneous product launches. Activate P1, P3, "
-                    "and P6 against one specialty during week one; retain the other "
-                    "lanes as documented adapters. CMS aggregates can indicate a "
-                    "question but cannot independently establish a knowingly false "
-                    "claim. SAM.gov registration is not evidence of a procurement "
-                    "payment, and manifest inconsistencies require shipment-level "
-                    "explanations before escalation. Reserve contractor capacity "
-                    "explicitly: twelve engineering hours and eight reviewer hours "
-                    "weekly, with no case-specific production outside a written scope."
-                ),
-                (
-                    "Adopt a $25,000 startup-capital assumption within the canonical "
-                    "$10,000–$45,000 range. Authorize no more than $10,000 of cumulative "
-                    "cash disbursements through Day 30: $6,000 for initial counsel "
-                    "consultation, access controls, equipment, and permitted source "
-                    "acquisition, plus $4,000 of operating expense. The monthly operating "
-                    "envelope allocates $1,800 to engineering, $1,200 to forensic review, "
-                    "$300 to storage and tools, $300 to buyer development, and $400 "
-                    "to contingency. Quoted contractor hours must fit those amounts; "
-                    "otherwise reduce scope before committing work. Maintain the same "
-                    "$4,000 monthly ceiling through Day 90, producing an $18,000 "
-                    "cumulative spend ceiling and $7,000 untouched reserve. These are "
-                    "launch controls, not the annual scorecard expense forecast. Founder "
-                    "living costs and tax reserves need separate funding; do not hide "
-                    "them inside supposed free labor. The stated monthly operating "
-                    "range is $1,500–$9,500, but its upper bound is inappropriate before "
-                    "retainers validate demand. Pay no source for stolen records and "
-                    "buy no access whose permitted uses exclude litigation support. "
-                    "On Day 2, record every recurring charge, cancellation date, "
-                    "contractor commitment, and maximum remaining liability in a "
-                    "cash register that the founder reconciles each Friday."
-                ),
-                (
-                    "Build evidence controls before downloading production material. "
-                    "Use Python, SQLite, and SHA-256 manifests for acquisition and "
-                    "transformations, with encrypted storage, individual accounts, "
-                    "multifactor authentication, and a separate workspace per matter. "
-                    "Every extract needs publisher, retrieval timestamp, release "
-                    "version, permitted-use basis, query parameters, and digest. Keep "
-                    "original bytes immutable and log corrections as new versions. "
-                    "Use synthetic examples for sales demonstrations; never expose "
-                    "a prospective client's allegations to another buyer. Counsel "
-                    "must determine privilege arrangements, preservation duties, "
-                    "conflicts, and appropriate disclosure paths before sensitive "
-                    "intake. Under 31 U.S.C. § 3730(b)(2), an FCA complaint is "
-                    "filed in camera and remains under seal for at least sixty "
-                    "days, with government extensions possible; it is not served "
-                    "on the defendant until ordered. A matter may remain under "
-                    "seal for 2–5+ years, while award collection can take equally "
-                    "long or longer. That planning horizon does not describe SEC "
-                    "or IRS procedures as court-seal systems. Seal violations can "
-                    "imperil a case and its economics, although dismissal is not "
-                    "automatic for every violation. Require counsel's written "
-                    "distribution instructions, restrict matter identifiers, and "
-                    "disable outbound demonstrations using restricted evidence "
-                    "before the first substantive interview."
-                ),
-            ],
-            "table": {
-                "caption": "Week One Daily Ownership, Source Boundaries, and Cash Controls",
-                "headers": [
-                    "Execution day and accountable operating owner",
-                    "Required work product before daily close",
-                    "Evidence supporting acceptance of the work",
-                    "Cost or access boundary enforced immediately",
-                ],
-                "rows": [
-                    [
-                        "Day 1: founder defines the initial buyer",
-                        "One specialty, one alleged mechanism, eleven mapped plays",
-                        "Written buyer hypothesis distinguishes anomalies from actionable claims",
-                        "No source purchases before permitted uses are documented",
-                    ],
-                    [
-                        "Day 2: founder establishes the cash register",
-                        "Twenty-five-thousand-dollar capital plan with dated liability entries",
-                        "Initial spending commitments remain below ten thousand dollars",
-                        "Monthly operating commitments remain below four thousand dollars",
-                    ],
-                    [
-                        "Day 3: engineer configures controlled evidence storage",
-                        "Individual accounts, encrypted originals, and reproducible digest manifests",
-                        "Second user reproduces one digest from original bytes",
-                        "Production access requires multifactor authentication and named ownership",
-                    ],
-                    [
-                        "Day 4: reviewer defines the specialty cohort",
-                        "CMS denominator definitions and documented suppression handling rules",
-                        "Ten sampled records reconcile against publisher field definitions",
-                        "No patient reidentification or inference from suppressed cells",
-                    ],
-                    [
-                        "Day 5: engineer implements initial entity resolution",
-                        "NPI joins and organization aliases with ambiguity flags",
-                        "Twenty sampled joins receive independent human identity checks",
-                        "Ambiguous corporate ownership remains unresolved until corroborated evidence",
-                    ],
-                    [
-                        "Day 6: founder briefs prospective specialist counsel",
-                        "Procedural questions covering disclosure, particularity, conflicts, and intake",
-                        "Written issue register separates counsel decisions from analytics",
-                        "No complaint filing or restricted disclosure without counsel",
-                    ],
-                    [
-                        "Day 7: entire pod reviews sprint readiness",
-                        "Versioned source manifest and first weekly cash reconciliation",
-                        "One complete reconstruction succeeds without undocumented manual edits",
-                        "Stop acquisition immediately when permissions cannot be established",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four verifications before sensitive evidence enters the workflow",
-                "body": (
-                    "The founder records each result and assigns unresolved items "
-                    "to counsel or the source owner before further handling."
-                ),
-                "items": [
-                    "Verify lawful acquisition, permitted downstream uses, and source identity for every incoming file; quarantine material with unresolved provenance.",
-                    "Obtain counsel's written intake and distribution instructions before receiving restricted allegations or materials associated with a sealed matter.",
-                    "Test individual access, multifactor authentication, immutable originals, and a successful restoration using a synthetic matter.",
-                    "Confirm the $10,000 Day-30 spend ceiling, contractor liability limits, and separate founder living-cost funding before signing recurring commitments.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Days 8–14: Turn anomalies into reproducible, falsifiable dossiers",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Week two converts raw variation into an auditable shortlist. "
-                    "Run P1 and P2 only within comparable specialties, geographies, "
-                    "and reporting periods; payment totals without beneficiary and "
-                    "service denominators create misleading rankings. Join P3 "
-                    "Open Payments using provider identifiers and explicit reporting "
-                    "years, then test whether a relationship predates the relevant "
-                    "conduct. Use P4 procurement records to identify actual award "
-                    "identifiers and modifications rather than treating registration "
-                    "as a contract. P5 manifest comparisons require documented "
-                    "coverage limitations, consignee identity checks, and alternative "
-                    "explanations such as transshipment or classification changes. "
-                    "The engineer produces twenty ranked anomalies, but the "
-                    "reviewer must reject at least every unsupported causal "
-                    "inference rather than satisfy an arbitrary accusation quota. "
-                    "Check a stratified sample of twenty entity joins and require "
-                    "at least nineteen correct matches before producing client "
-                    "materials. Record source completeness separately from anomaly "
-                    "precision: a complete extract can still yield useless leads. "
-                    "Preserve negative controls, such as comparable providers "
-                    "without the flagged relationship, and publish the exact "
-                    "SQL and parameters behind each chart. An operator who "
-                    "cannot reproduce yesterday's ranking should repair the "
-                    "pipeline before contacting any law firm about its findings."
-                ),
-                (
-                    "P7 and P8 supply the bridge between a pattern and a "
-                    "counsel-reviewable theory. Submit two narrowly framed FOIA "
-                    "requests for identifiable agency records, tracking request "
-                    "numbers, fee limits, and responses; do not assume statutory "
-                    "response periods mean records arrive during this sprint. "
-                    "For each of three candidate dossiers, identify the asserted "
-                    "representation, actor, relevant date, payment pathway, and "
-                    "primary record that supports or contradicts each element. "
-                    "Federal Rule of Civil Procedure 9(b) requires particularity "
-                    "for fraud allegations; representative claims are a strong "
-                    "operating target, but circuit standards and reliable-indicia "
-                    "arguments differ. Counsel decides whether the evidence "
-                    "satisfies the applicable pleading standard. Separately "
-                    "inventory disclosures under 31 U.S.C. § 3730(e)(4), "
-                    "including relevant federal proceedings, federal reports "
-                    "and investigations, and news media. Publicly accessible "
-                    "material is not automatically a qualifying public "
-                    "disclosure, yet a clever recombination of public records "
-                    "does not automatically establish original-source status. "
-                    "Document independent knowledge, timing, and material "
-                    "additions for counsel's assessment. Mark a dossier "
-                    "unqualified when the public-disclosure issue remains "
-                    "unresolved; a high anomaly score cannot erase that defect. "
-                    "Treat corroboration spending as bounded discovery of "
-                    "facts, never as permission to reconstruct missing evidence."
-                ),
-                (
-                    "Route each theory into the appropriate program rather "
-                    "than recycling one generic whistleblower packet. FCA "
-                    "relator shares generally run 15%–25% when the government "
-                    "proceeds and 25%–30% when it does not, subject to "
-                    "statutory qualifications and reductions. SEC awards "
-                    "generally range from 10%–30% of qualifying monetary "
-                    "sanctions collected in covered actions exceeding "
-                    "$1 million; original-information and submission rules "
-                    "matter. IRS section 7623(b) generally provides 15%–30% "
-                    "of collected proceeds when its statutory conditions "
-                    "apply, including the amount-in-dispute threshold and "
-                    "the individual taxpayer income condition. CFTC referrals "
-                    "need their own 7 U.S.C. § 26 analysis and are outside "
-                    "this sprint's active filing lanes. Thus the shelf's "
-                    "15%–30% shorthand cannot substitute for program-specific "
-                    "calculations. P10 prepares counsel-routed Form TCR or "
-                    "Form 211 support, or FCA complaint exhibits; the "
-                    "analytics pod does not submit a qui tam complaint "
-                    "itself. Being a support vendor creates no automatic "
-                    "right to a statutory share. Only a legally eligible "
-                    "claimant's actual entitlement belongs in an award "
-                    "model, and counsel must assess any proposed assignment "
-                    "or compensation arrangement. Sell defined analytical "
-                    "services, not a percentage of a law firm's legal fees."
-                ),
-            ],
-            "table": {
-                "caption": "Week Two Daily Evidence Production and Rejection Tests",
-                "headers": [
-                    "Execution day and activated operator plays",
-                    "Concrete deliverable produced by the assigned contractor",
-                    "Acceptance test applied before counsel review",
-                    "Failure response preserving money and evidence quality",
-                ],
-                "rows": [
-                    [
-                        "Day 8: engineer activates CMS comparison plays",
-                        "Specialty-adjusted rankings with denominators and reporting periods",
-                        "Twenty candidates retain source links and reproducible queries",
-                        "Repair missing denominators before ranking payment outliers again",
-                    ],
-                    [
-                        "Day 9: engineer tests Open Payments joins",
-                        "Relationship chronology linked through checked provider identifiers",
-                        "At least nineteen of twenty sampled joins match",
-                        "Quarantine ambiguous identities rather than forcing convenient matches",
-                    ],
-                    [
-                        "Day 10: reviewer checks procurement and manifest adapters",
-                        "Coverage notes separating award evidence from registration context",
-                        "Each allegation distinguishes observed records from inferred conduct",
-                        "Deactivate adapters lacking permitted sources or usable coverage",
-                    ],
-                    [
-                        "Day 11: founder submits focused FOIA requests",
-                        "Two requests with agency destinations and spending limits",
-                        "Request receipts and fee ceilings enter the register",
-                        "Continue public-source testing without assuming immediate agency production",
-                    ],
-                    [
-                        "Day 12: reviewer reconstructs representative claim elements",
-                        "Three dossiers organize dates, representations, payments, and contradictions",
-                        "Every asserted fact links to preserved primary evidence",
-                        "Remove unsupported assertions and label unresolved factual questions",
-                    ],
-                    [
-                        "Day 13: counsel reviews public-disclosure exposure",
-                        "Disclosure chronology and original-source issue list for candidates",
-                        "Qualifying disclosure categories receive matter-specific legal assessment",
-                        "Exclude unresolved theories from projected award eligibility counts",
-                    ],
-                    [
-                        "Day 14: entire pod performs reproducibility review",
-                        "Versioned dossiers with separate FCA, SEC, IRS routing",
-                        "Independent reviewer recreates findings from original source files",
-                        "Hold external circulation until restricted-material instructions are satisfied",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four habits that make forensic work useful to relator counsel",
-                "body": (
-                    "Counsel buys evidence that survives contradiction, provenance "
-                    "questions, and procedural scrutiny, not the largest anomaly count."
-                ),
-                "items": [
-                    "Save CMS release notes beside each extract; changed suppression or aggregation rules can explain an apparent year-over-year billing jump.",
-                    "Maintain a separate public-disclosure chronology so counsel can evaluate source status without searching through the anomaly narrative.",
-                    "Put the strongest innocent explanation on the first dossier page, then identify the exact record needed to test it.",
-                    "Quote FOIA requests by agency record series, date range, and identifier; cap search fees and preserve every request acknowledgment.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Preserve the source",
-                    "action": "Capture original bytes, publisher details, permissions, and SHA-256 digest.",
-                    "detail": "Assign a source identifier before any transformation and retain retrieval parameters.",
-                },
-                {
-                    "step": 2,
-                    "title": "Reproduce the signal",
-                    "action": "Run versioned SQL with documented cohorts, denominators, and exclusion rules.",
-                    "detail": "Have the second contractor reproduce the ranking and inspect twenty entity joins.",
-                },
-                {
-                    "step": 3,
-                    "title": "Attempt to disprove the theory",
-                    "action": "Test coding changes, identity errors, timing differences, and innocent explanations.",
-                    "detail": "Attach contrary evidence and distinguish observed facts from analytical conclusions.",
-                },
-                {
-                    "step": 4,
-                    "title": "Route through counsel",
-                    "action": "Deliver a restricted dossier with disclosure chronology and program-specific questions.",
-                    "detail": "Counsel determines pleading sufficiency, claimant eligibility, submission method, and authorized recipients.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Days 15–21: Sell bounded retainers and isolate contingent award risk",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "P9 turns validated analytical capability into a service "
-                    "that plaintiff and relator firms can purchase without "
-                    "waiting for government action. Build a list of twenty "
-                    "firms with relevant practice experience, identify eight "
-                    "suitable buyers, and seek four substantive discovery "
-                    "conversations by Day 30. Offer a $3,000 pilot for one "
-                    "defined dataset, one reproducible anomaly analysis, and "
-                    "one counsel-facing evidence memo, followed by a "
-                    "$4,000 monthly retainer capped at twenty delivery "
-                    "hours. These are illustrative prices, not canonical "
-                    "scorecard inputs or expected first-month receipts. "
-                    "Specify acceptance criteria, revision limits, permitted "
-                    "recipients, source costs, and invoice timing. A "
-                    "commercially qualified conversation includes a responsible "
-                    "buyer, recurring analytical need, procurement path, and "
-                    "budget discussion; an enthusiastic reply alone does "
-                    "not count. Demand advance payment for the pilot "
-                    "before case-specific delivery where the firm's process "
-                    "permits it. Do not buy leads containing confidential "
-                    "allegations or promise access to sealed matters. "
-                    "Measure time spent on proposals separately from "
-                    "delivery so apparent service margins do not conceal "
-                    "unpaid selling effort. The canonical first-deal "
-                    "window remains four to twelve months, so a "
-                    "thirty-day sprint can validate demand without producing "
-                    "a signed retainer or an invoice."
-                ),
-                (
-                    "Keep the annual scorecard intact and the launch "
-                    "forecast separate. Conservative revenue of $95,000 "
-                    "minus $64,600 of total costs yields $30,400 owner "
-                    "profit at 32%; Base revenue of $487,500 minus "
-                    "$268,125 yields $219,375 at 45.0%; Scaled revenue "
-                    "of $880,000 minus $369,600 yields $510,400 at "
-                    "58%. Conservative and Base use one full-time "
-                    "operator plus two contractors; Scaled uses two "
-                    "full-time operators plus three contractors. No "
-                    "supplied allocation divides those totals between "
-                    "retainers and awards, so do not invent one. "
-                    "The revenue label refers to operator revenue, "
-                    "not government recoveries, client damages, sanctions, "
-                    "tax deficiencies, or claimed overpayments. Maintain "
-                    "separate ledger accounts for earned support fees "
-                    "and realized operator-entitled award amounts. Apply "
-                    "ASC 606 principal-versus-agent analysis where "
-                    "relevant to support arrangements and retain only "
-                    "the operator's recognized share when acting as "
-                    "agent; counsel and the accountant determine "
-                    "appropriate treatment of award rights and receipts. "
-                    "Collected cash and recognized revenue need "
-                    "separate columns. A $3,000 advance for unfinished "
-                    "work improves liquidity but is not automatically "
-                    "earned revenue. Every runway calculation assigns "
-                    "zero dollars to uncollected awards and zero "
-                    "dollars to unsigned service proposals, regardless "
-                    "of their perceived probability."
-                ),
-                (
-                    "Explicitly stress the award funnel without presenting "
-                    "invented national rates as observed facts. For an "
-                    "illustrative cohort of one hundred theories, assume "
-                    "60% survive counsel's public-disclosure and source-status "
-                    "screen, and 50% of those satisfy the applicable "
-                    "particularity assessment. Of thirty remaining theories, "
-                    "assume 20% intervention and 80% non-intervention. "
-                    "Apply hypothetical government-dismissal rates of "
-                    "10% to the intervention branch and 25% to "
-                    "the non-intervention branch, then recovery rates "
-                    "of 50% and 15% to their respective survivors. "
-                    "The result is 2.7 recovery equivalents in each "
-                    "branch, or 5.4 overall; the remaining 94.6 "
-                    "produce no recovery in this model. These "
-                    "conditional assumptions are sensitivity inputs, not "
-                    "current DOJ statistics, and fractional counts "
-                    "represent expected outcomes across repeated cohorts. "
-                    "Granston refers to a DOJ dismissal-policy framework, "
-                    "not a standalone statutory dismissal rate. "
-                    "Government dismissal authority comes from "
-                    "31 U.S.C. § 3730(c)(2)(A), subject to applicable "
-                    "procedure; non-intervention itself does not terminate "
-                    "a case. Recalculate with zero recovery and "
-                    "a five-year collection delay before considering "
-                    "any award exposure. Only retainers fund operating "
-                    "commitments. Record source, period, denominator, "
-                    "and intervention definitions before replacing "
-                    "hypothetical rates with published DOJ observations."
-                ),
-            ],
-            "table": {
-                "caption": "Week Three Daily Commercial Deliverables and Award-Ledger Separation",
-                "headers": [
-                    "Execution day and responsible commercial owner",
-                    "Required buyer or accounting work product",
-                    "Measured evidence supporting the commercial hypothesis",
-                    "Boundary preventing speculative awards from funding operations",
-                ],
-                "rows": [
-                    [
-                        "Day 15: founder builds the counsel account list",
-                        "Twenty firms segmented by subject expertise and practice",
-                        "Eight buyers have documented relevance and reachable contacts",
-                        "Use public professional contacts without circulating sensitive allegations",
-                    ],
-                    [
-                        "Day 16: reviewer prepares synthetic demonstration materials",
-                        "One example memo showing provenance and contradictory evidence",
-                        "Every demonstration record is synthetic or cleared public material",
-                        "Restricted matter identifiers never enter reusable sales collateral",
-                    ],
-                    [
-                        "Day 17: founder conducts structured discovery conversations",
-                        "Buyer notes covering workload, procurement, budget, and urgency",
-                        "Count only discussions establishing an actual purchasing pathway",
-                        "No award projections substitute for a service budget",
-                    ],
-                    [
-                        "Day 18: founder drafts the scoped pilot",
-                        "Three-thousand-dollar proposal with deliverables and acceptance criteria",
-                        "Delivery hours and purchased sources fit quoted economics",
-                        "No percentage of legal fees appears in compensation",
-                    ],
-                    [
-                        "Day 19: founder creates separated accounting ledgers",
-                        "Earned fees, customer advances, award receipts, and expenses",
-                        "Canonical annual profit arithmetic reconciles without invented allocations",
-                        "Exclude every uncollected award from available operating cash",
-                    ],
-                    [
-                        "Day 20: reviewer models adverse award branches",
-                        "Conditional disclosure, particularity, intervention, dismissal, and recovery tree",
-                        "Illustrative assumptions produce five-point-four expected recovery outcomes",
-                        "Zero recovery leaves all operating commitments independently funded",
-                    ],
-                    [
-                        "Day 21: entire pod reviews delivery capacity",
-                        "Pilot effort estimate and twenty-hour monthly retainer limit",
-                        "Two simultaneous matters fit documented contractor hour availability",
-                        "Decline extra matters before purchasing speculative additional capacity",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Days 22–30: Run the acceptance test and schedule Day 60/90 decisions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use the final nine days to prove "
-                    "repeatability, not to manufacture a filing deadline. "
-                    "On Day 22, freeze a candidate dossier and "
-                    "ask the reviewer to reproduce it without "
-                    "the engineer's verbal assistance. Day 23 "
-                    "checks every material assertion against its "
-                    "source; Day 24 resolves counsel's distribution "
-                    "and program-routing questions. Day 25 presents "
-                    "the scoped service to qualified buyers, "
-                    "and Day 26 records proposal objections "
-                    "without exposing restricted material. Day 27 "
-                    "reconciles cash, contractor hours, and remaining "
-                    "liabilities. Day 28 tests backup restoration "
-                    "and a simulated misdirected-message response; "
-                    "Day 29 compiles the decision packet; "
-                    "Day 30 records Kill, Fix, or Scale "
-                    "with an owner and deadline. Define "
-                    "dossier completeness as the percentage of "
-                    "required fields containing a supported fact "
-                    "or an explicit, assigned research question; "
-                    "it does not measure legal merit. "
-                    "Require every material factual assertion "
-                    "to have a source regardless of "
-                    "the completeness score. Track reviewer "
-                    "rework as corrective hours divided "
-                    "by total delivery hours. Track "
-                    "join accuracy on a documented "
-                    "sample, not a convenient handpicked "
-                    "subset. A missing representative claim "
-                    "remains a substantive limitation even "
-                    "when every dashboard metric is green."
-                ),
-                (
-                    "Decision precedence is simple: a hard "
-                    "stop overrides every commercial metric, "
-                    "and Scale requires every threshold "
-                    "in its row. Kill means terminate "
-                    "the affected acquisition route or "
-                    "business hypothesis while preserving records "
-                    "and honoring existing duties; it "
-                    "never means delete evidence. Stop "
-                    "immediately for unlawful sourcing, inability "
-                    "to protect restricted material, or "
-                    "spending beyond the authorized ceiling. "
-                    "Day-30 Scale means only authorize "
-                    "the next bounded experiment: three "
-                    "reproducible dossiers, 95% sampled join "
-                    "accuracy, 90% dossier completeness, four "
-                    "qualified buyer conversations, and spend "
-                    "within $10,000. With adequate controls "
-                    "but weaker demand, Fix one "
-                    "specialty, offer, or source for "
-                    "fourteen days rather than expanding "
-                    "all three. By Day 60, "
-                    "require eight cumulative qualified "
-                    "conversations, two written scoped "
-                    "proposals, and one buyer-confirmed "
-                    "evaluation timetable for continued "
-                    "commercial expansion. Zero proposals "
-                    "after eight qualified conversations "
-                    "kills the current offer, not "
-                    "necessarily the entire market. "
-                    "The cumulative spending limit "
-                    "becomes $14,000. No award "
-                    "count, filed complaint, or "
-                    "promising counsel reaction can "
-                    "replace those thresholds. Track "
-                    "buyer-confirmed timing in writing "
-                    "and distinguish procurement delay "
-                    "from an offer that solves "
-                    "no funded operational problem."
-                ),
-                (
-                    "At Day 90, true delivery Scale "
-                    "requires two paying retainers totaling "
-                    "at least $8,000 monthly, two "
-                    "consecutive months with collected "
-                    "retainer cash covering cash operating "
-                    "expense by at least 1.25 times, "
-                    "and at least 50% delivery "
-                    "contribution margin. Calculate that "
-                    "margin after contractor labor, "
-                    "matter-specific tools, and founder "
-                    "delivery hours valued at $75 "
-                    "per hour; it is not "
-                    "the canonical annual net margin. "
-                    "Require rework of 10% or "
-                    "less and at least three "
-                    "months of unrestricted cash runway "
-                    "after proposed commitments. Under "
-                    "the full-spend, zero-receipt launch "
-                    "case, $7,000 remaining against "
-                    "$4,000 monthly expense gives "
-                    "only 1.75 months of runway "
-                    "and fails that test. If "
-                    "two buyers document viable "
-                    "evaluation dates within ninety "
-                    "more days but receipts "
-                    "lag, choose Fix: reduce "
-                    "monthly spending to $1,500 "
-                    "and reassess without hiring. "
-                    "The remaining $7,000 then "
-                    "covers about 4.67 months, "
-                    "subject to outstanding liabilities. "
-                    "If neither paid demand "
-                    "nor documented evaluation survives, "
-                    "pause the commercial hypothesis. "
-                    "Even when Scale passes, "
-                    "retain the three-person pod "
-                    "until delivery utilization and "
-                    "contracted cash justify expansion; "
-                    "the five-person Scaled scorecard "
-                    "is an annual operating "
-                    "case, not a Day-90 "
-                    "staffing entitlement."
-                ),
-            ],
-            "table": {
-                "caption": "Final Sprint Deliverables and Quantitative Day 30/60/90 Decision Matrix",
-                "headers": [
-                    "Day or decision horizon under evaluation",
-                    "Required output or complete Scale threshold",
-                    "Fix condition and bounded corrective response",
-                    "Kill condition or nonnegotiable stop boundary",
-                ],
-                "rows": [
-                    [
-                        "Day 22: independently reproduce the frozen dossier",
-                        "Reviewer recreates every displayed result from preserved inputs",
-                        "Repair undocumented transformations within two working delivery days",
-                        "Stop circulation when material results cannot be reproduced",
-                    ],
-                    [
-                        "Day 23: inspect every material factual assertion",
-                        "All asserted facts link directly to preserved sources",
-                        "Convert unsupported statements into assigned research questions immediately",
-                        "Remove theories requiring fabricated evidence or unauthorized records",
-                    ],
-                    [
-                        "Day 24: resolve routing and distribution instructions",
-                        "Counsel confirms recipients and appropriate program-specific support scope",
-                        "Hold the packet while procedural questions remain unresolved",
-                        "Stop distribution when court restrictions cannot be protected",
-                    ],
-                    [
-                        "Day 25: present the bounded analytical service",
-                        "Buyer receives priced scope and measurable acceptance criteria",
-                        "Narrow deliverables when effort exceeds the quoted budget",
-                        "Reject compensation structures requiring prohibited legal-fee sharing arrangements",
-                    ],
-                    [
-                        "Day 26: classify objections from qualified buyers",
-                        "Record budget, usefulness, timing, and procurement objections separately",
-                        "Revise one offer variable during the next experiment",
-                        "Abandon features attracting interest without a purchasing pathway",
-                    ],
-                    [
-                        "Day 27: reconcile all cash and liabilities",
-                        "Paid amounts and binding commitments fit authorized limits",
-                        "Cancel optional renewals before their next commitment dates",
-                        "Stop new commitments when authorized spending limits fail",
-                    ],
-                    [
-                        "Day 28: test restoration and incident handling",
-                        "Restore synthetic evidence and rehearse restricted-message containment steps",
-                        "Repair access controls before returning to production handling",
-                        "Suspend sensitive intake when confidentiality controls remain ineffective",
-                    ],
-                    [
-                        "Day 29: prepare the signed decision packet",
-                        "Include accuracy, completeness, buyer activity, rework, and runway",
-                        "Recalculate metrics lacking stable denominators or source evidence",
-                        "Reject award expectations as substitutes for collected cash",
-                    ],
-                    [
-                        "Day 30: record ownership of the next experiment",
-                        "Founder assigns decision, budget, milestone, and reassessment date",
-                        "Select one fourteen-day repair with explicit success criteria",
-                        "Preserve records while terminating any disallowed acquisition route",
-                    ],
-                    [
-                        "Day 30 decision: authorize bounded research continuation only",
-                        "Three dossiers; 95% joins; 90% completeness; four qualified conversations; $10,000 ceiling",
-                        "Repair weaker metrics for fourteen days without expanding spending",
-                        "Stop unsafe sourcing or spending beyond authorized cash ceiling",
-                    ],
-                    [
-                        "Day 60 decision: authorize bounded commercial continuation only",
-                        "Eight conversations; two proposals; one evaluation timetable; $14,000 ceiling",
-                        "Revise one offer when buyer feedback supports a specific correction",
-                        "Kill current offer after eight qualified conversations produce zero proposals",
-                    ],
-                    [
-                        "Day 90 decision: expand delivery only after collected-cash validation",
-                        "Two $4,000 retainers; two months 1.25x coverage; 50% contribution; 10% maximum rework; three-month runway; $18,000 ceiling",
-                        "With two dated buyer evaluations, reduce spending to $1,500 monthly",
-                        "Pause hypothesis without paid demand, viable evaluations, or funded runway",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Sell reproducible evidence on a retainer; never spend a recovery that exists only inside a theory.",
-    "diagram_id": "diag-08",
-    "action_checklist": [
-        "Assign the eleven launch plays across one founder, one data engineer, and one forensic reviewer; cap weekly contractor hours before acquisition begins.",
-        "Fund the $25,000 launch assumption, enforce the $10,000 Day-30 ceiling, and reconcile cash plus binding liabilities every Friday.",
-        "Produce three reproducible dossiers with sampled entity-join checks, primary-source support, contrary evidence, and counsel-reviewed public-disclosure questions.",
-        "Approach twenty relevant firms, secure four qualified Day-30 conversations, and offer a $3,000 pilot leading to a scoped $4,000 monthly retainer.",
-        "Separate earned support fees, customer advances, realized award receipts, and speculative award models; assign uncollected awards zero runway value.",
-        "Record Day-30, Day-60, and Day-90 decisions using the stated precedence, cash ceilings, buyer thresholds, and restricted-material preservation requirements.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "31 U.S.C. § 3730(b)(2)–(3), sealed FCA complaints and extensions",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3730",
-            "relevance": "Counsel files the complaint in camera and under seal, serves the government as required, and controls defendant service and extension-related handling.",
-        },
-        {
-            "title": "31 U.S.C. § 3730(e)(4), public-disclosure bar and original source",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3730",
-            "relevance": "Requires matter-specific assessment of qualifying disclosures, substantially similar allegations, government opposition to dismissal, and original-source status.",
-        },
-        {
-            "title": "31 U.S.C. § 3730(c)(2)(A) and (d), dismissal authority and relator shares",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3730",
-            "relevance": "Separates government dismissal risk from non-intervention and anchors intervention-dependent award ranges and statutory reductions.",
-        },
-        {
-            "title": "Federal Rule of Civil Procedure 9(b), pleading fraud with particularity",
-            "url": "https://www.law.cornell.edu/rules/frcp/rule_9",
-            "relevance": "Directs claim-level evidence organization while leaving circuit-specific pleading sufficiency and reliable-indicia arguments to counsel.",
-        },
-        {
-            "title": "15 U.S.C. § 78u-6, SEC whistleblower incentives and protection",
-            "url": "https://www.law.cornell.edu/uscode/text/15/78u-6",
-            "relevance": "Establishes covered-action conditions, original-information requirements, and the 10%–30% SEC award range rather than the FCA percentage bands.",
-        },
-        {
-            "title": "17 CFR § 240.21F-9, SEC procedures for submitting original information",
-            "url": "https://www.ecfr.gov/current/title-17/section-240.21F-9",
-            "relevance": "Supports counsel-routed Form TCR procedures, required declarations, and special handling for anonymous submissions.",
-        },
-        {
-            "title": "26 U.S.C. § 7623(b), IRS whistleblower awards",
-            "url": "https://www.law.cornell.edu/uscode/text/26/7623",
-            "relevance": "Anchors collected-proceeds awards, the general 15%–30% range, the $2 million amount-in-dispute threshold, and applicable individual-income conditions.",
-        },
-        {
-            "title": "26 CFR § 301.7623-1, information submissions to the IRS",
-            "url": "https://www.ecfr.gov/current/title-26/section-301.7623-1",
-            "relevance": "Provides operational requirements for counsel-supported Form 211 submissions and information identifying alleged tax noncompliance.",
-        },
-        {
-            "title": "5 U.S.C. § 552, Freedom of Information Act",
-            "url": "https://www.law.cornell.edu/uscode/text/5/552",
-            "relevance": "Supports focused federal-record requests while distinguishing agency determination periods, exemptions, fees, and actual record-production timing.",
-        },
-        {
-            "title": "7 U.S.C. § 26, commodity whistleblower incentives and protection",
-            "url": "https://www.law.cornell.edu/uscode/text/7/26",
-            "relevance": "Identifies the separate CFTC pathway and its 10%–30% award framework without treating it as an active launch filing lane.",
-        },
-    ],
-}
+CHAPTER_12 = {'id': 'Q12',
+ 'chapter_id': 'Q12',
+ 'chapter_number': 12,
+ 'question_number': 12,
+ 'slug': 'signal-vs-noise-internal-detection-acronym-collisions-fringe-claims',
+ 'question_prompt': 'How do internal detection programs and forensic analytics complement external bounty '
+                    "programs—and which 'whistleblower' claims and channels are noise rather than signal?",
+ 'kicker': 'Q12 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Signal vs. Noise: Internal Detection, Acronym Collisions, and Fringe Claims',
+ 'subtitle': 'Building an internal whistleblower hotline, forensic analytics software, proactive '
+             'investigations without waiting for a tipster, avoiding bias in workplace investigations, UK '
+             'protected disclosures and the UK Financial Conduct Authority, data-harvesting '
+             'whistleblowing, and tax-protester Form 211 and IRS-insider narratives',
+ 'layout_template': 'action_worksheet_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners converge on one rule: detection starts with data you already hold, '
+                      'and the hotline is a supplement. Workman Forensics runs monthly tests and macros on '
+                      'bank feeds and warns that hotline-only shops are already behind. GRF CPAs & '
+                      'Advisors reports hotlines up 16% over ten years but says mail-and-fax intake leaves '
+                      "you behind the eight-ball. Mercia's CSS cut a 30-phone Yorkshire case from a "
+                      'six-month manual estimate to 12 minutes. Koegle Law Group pushes outside '
+                      'investigators because in-house HR carries a shadow of bias, while Protect routes UK '
+                      'reporters to the employer first. The noise is loud. FCA here means the UK Financial '
+                      "Conduct Authority. The IRS whistleblower label is claimed by Joe Banister's no-file "
+                      "argument and by SovereignProductions369's Form 211 court filings. Against both "
+                      "stands Sherry Peel Jackson's four-year sentence for willful failure to file.",
+ 'key_metrics': [{'label': 'Yorkshire 30-Phone Case Processing Time',
+                  'metric': 'Yorkshire 30-Phone Case Processing Time',
+                  'value': '12 minutes vs. a six-month manual estimate',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Mercia's CSS software processed a 30-phone Yorkshire conspiracy case that "
+                             'was estimated at six months of manual work.',
+                  'source': 'Mercia Asset Management PLC ([5LeNkCDistY @ 00:01:35])'},
+                 {'label': 'Hotline Growth Over 10 Years',
+                  'metric': 'Hotline Growth Over 10 Years',
+                  'value': '16%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'GRF reports that hotline usage rose 16% over a ten-year span as '
+                             'organizations built out reporting programs.',
+                  'source': 'GRF CPAs & Advisors ([bPsS_B4v7Dw @ 00:23:29])'},
+                 {'label': 'Fraud Perpetrators With Prior Convictions',
+                  'metric': 'Fraud Perpetrators With Prior Convictions',
+                  'value': '6%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'GRF states that only 6% of fraud perpetrators had prior convictions.',
+                  'source': 'GRF CPAs & Advisors ([bPsS_B4v7Dw @ 00:22:07])'},
+                 {'label': 'Audited H&R Block Returns With Adjustments',
+                  'metric': 'Audited H&R Block Returns With Adjustments',
+                  'value': '99.9%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Former IRS field agent Sherry Peel Jackson says 99.9% of the H&R Block '
+                             'returns she audited had adjustments, and names round-number expenses as the '
+                             'biggest red flag.',
+                  'source': 'The Brad Weisman Show ([_ehHXyRo6fI @ 00:18:13])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Signal comes from data you already hold, not from waiting for someone to '
+                              "call the hotline. Workman Forensics calls its practice the 'data sleuth' "
+                              'method. It fuses data analytics with fraud investigation and carries a '
+                              'matter from first complaint through to prosecution, a discipline that grew '
+                              "out of the speaker's FBI experience [4CnIVLSoe2o @ 00:02:40]. The admission "
+                              'is blunt: tips find fraud most often, but an operation that relies only on '
+                              'a hotline is already behind. The person calling may also have been part of '
+                              'the scam until they were cut out [4CnIVLSoe2o @ 00:04:12]. GRF CPAs & '
+                              'Advisors reaches the same point from the compliance side. Hotlines are up '
+                              '16% over ten years, yet if your only channels outside direct reporting are '
+                              "mail and fax, you are 'behind the eight-ball' [bPsS_B4v7Dw @ 00:23:29] "
+                              '[bPsS_B4v7Dw @ 00:35:52]. Mercia Asset Management shows what the data-first '
+                              'path looks like at police scale. Its CSS product is used in two-thirds of '
+                              'all UK police forces. A typical case of 20,000 to 30,000 records takes a '
+                              'day or a couple of days by hand, and CSS does it in three or four seconds '
+                              '[5LeNkCDistY @ 00:01:18]. The consensus is not anti-hotline, though. '
+                              'Workman says having a fraud hotline is not bad, and that data plus a '
+                              "hotline is 'gold' [4CnIVLSoe2o @ 00:05:22].",
+                              'The second point of agreement is that the intake and investigation layer '
+                              'has to be clean enough to survive scrutiny. Koegle Law Group works mostly '
+                              'discrimination, harassment, and retaliation claims under FEHA and '
+                              'California whistleblower law. The firm says a lawsuit is often the first '
+                              'time an employer hears about the complaint at all [nM5JZ33rgDk @ 00:00:14]. '
+                              "Best practice is an outside investigator, but that is 'almost never' done "
+                              "because of cost and time. Meanwhile, in-house HR carries a 'shadow of bias' "
+                              "because 'HR is there for the corporation' [nM5JZ33rgDk @ 00:00:28] "
+                              '[nM5JZ33rgDk @ 00:00:45]. Protect explains why the internal route also '
+                              'matters to the reporter. A protected disclosure gives a right not to be '
+                              'dismissed or treated badly, and disclosure to the employer is the easiest '
+                              'route, with the fewest tests to pass [VXSmJlGNKIw @ 00:00:21] [VXSmJlGNKIw '
+                              '@ 00:01:33]. The reporter needs specific information, a reasonable belief '
+                              'in one of six wrongdoing types, and a public-interest angle. The wrongdoing '
+                              'can be past or likely future, and being wrong is acceptable if the belief '
+                              'was reasonable [VXSmJlGNKIw @ 00:02:29]. GRF ties this to program design. '
+                              'It recommends a good-faith certification checkbox on every report and '
+                              "relabeling reporters as an 'ethics champion' or an 'integrity advocate' to "
+                              'strip away the snitch stigma [bPsS_B4v7Dw @ 00:45:14] [bPsS_B4v7Dw @ '
+                              '00:14:07].',
+                              "The third consensus is about noise. A search for 'FCA' or 'IRS "
+                              "whistleblower' pulls up a large volume of material that has nothing to do "
+                              'with collecting a reward. FinCrime Intelligence and FinCrime Agent both '
+                              'treat FCA as the UK Financial Conduct Authority. They describe two pillars, '
+                              'consumer protection and market integrity, and a rules, supervision, and '
+                              'intervention cycle. The FCA is one of three UK regulators alongside the FPC '
+                              'and PRA, and it oversees 51,000 businesses [Mi3ALpKg17s @ 00:02:23] '
+                              "[md699NsaAZg @ 00:01:05] [md699NsaAZg @ 00:04:08]. The 'IRS whistleblower' "
+                              'label collides the same way. Joe Banister was an IRS criminal-division '
+                              'special agent for 5.5 years. He uses the label to front a tax-code argument '
+                              "and says he has not paid federal income tax for '25 26 years.' He also "
+                              'reports a November 2004 four-felony indictment that ended in acquittal on '
+                              'all four counts in June 2005 [xtocXbDnCkg @ 00:00:18] [xtocXbDnCkg @ '
+                              '00:23:59]. SovereignProductions369 goes further. He files a Form 211, the '
+                              "'application for award' for 'original information,' into court as evidence "
+                              "and names the judge as 'taxpayer.' He promises 'your case is gonna just "
+                              "disappear' but offers no case, number, or outcome to back it [Q2EMaQHpNPM @ "
+                              '00:01:17] [Q2EMaQHpNPM @ 00:02:55]. Operators who screen by keyword alone '
+                              'will drown in acronym collisions and fringe filings.'],
+               'table': {'caption': 'Practitioner Consensus: Where Detection Signal Actually Comes From',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Data first, hotline as the second layer',
+                                   'Tips find fraud most often, but hotline-only shops are already behind',
+                                   'Run analytics on bank feeds and pair the results with hotline intake',
+                                   'Workman Forensics ([4CnIVLSoe2o @ 00:04:12])'],
+                                  ['Tipsters may be former insiders in the scheme',
+                                   'Whistleblowers may have been part of the scam until they were cut out',
+                                   "Weigh every tip against the tipster's own role in the money flow",
+                                   'Workman Forensics ([4CnIVLSoe2o @ 00:04:12])'],
+                                  ['Mail and fax intake alone is obsolete',
+                                   'Only mail and fax outside direct reporting leaves you behind the '
+                                   'eight-ball',
+                                   'Open digital intake channels beyond the legacy postal and fax routes',
+                                   'GRF CPAs & Advisors ([bPsS_B4v7Dw @ 00:35:52])'],
+                                  ['Outside investigators beat in-house HR on bias',
+                                   'Almost never done due to cost and time, and HR carries a shadow of '
+                                   'bias',
+                                   'Budget for an outside investigator before the lawsuit becomes the '
+                                   'first notice',
+                                   'Koegle Law Group ([nM5JZ33rgDk @ 00:00:28])'],
+                                  ['Internal disclosure is the easiest protected route',
+                                   'Disclosure to the employer has the fewest tests under UK '
+                                   'whistleblowing law',
+                                   'Route UK reporters internally first to lock in protection against '
+                                   'dismissal',
+                                   'Protect ([VXSmJlGNKIw @ 00:01:33])'],
+                                  ['FCA means the UK regulator in this cluster',
+                                   'Two pillars, consumer protection and market integrity, enforced '
+                                   'through rules, supervision, and intervention',
+                                   'Tag every FCA hit as the UK Financial Conduct Authority before any '
+                                   'scoring',
+                                   'FinCrime Intelligence ([Mi3ALpKg17s @ 00:01:21])'],
+                                  ['Fringe Form 211 court filings are pure noise',
+                                   'Form 211 is filed into court as evidence and names the judge as '
+                                   'taxpayer, with no results cited',
+                                   'Quarantine sovereign-style Form 211 court filings away from the reward '
+                                   'pipeline',
+                                   'SovereignProductions369 ([Q2EMaQHpNPM @ 00:00:21])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Workman Forensics runs detection as a recurring service, not a one-off '
+                              "audit. The team runs 'tests and macros' against bank feeds on a monthly or "
+                              'quarterly cycle. It also reconciles systems that do not talk to each other, '
+                              "for example a doctor's billing software checked against QuickBooks "
+                              '[4CnIVLSoe2o @ 00:08:03]. The raw material is digital bank and credit-card '
+                              'statements, worked across three fraud zones: revenue, expenses, and payroll '
+                              '[4CnIVLSoe2o @ 00:06:00]. One line captures why they go to the bank '
+                              "statement instead of the ledger: 'accounting entries don't cash at the "
+                              "casino' [4CnIVLSoe2o @ 00:10:09]. Two hard rules follow. If your payroll "
+                              "provider 'cannot export your information to excel change providers.' And "
+                              'owners must be named on business bank accounts [4CnIVLSoe2o @ 00:11:12] '
+                              "[4CnIVLSoe2o @ 00:11:31]. Sherry Peel Jackson's audit tradecraft from "
+                              'inside the IRS points at the same pattern-level signal. She calls '
+                              "round-number expenses the biggest red flag because 'they know that that's a "
+                              "guess.' She says 99.9% of the H&R Block returns she audited had "
+                              'adjustments, and she also flags missing receipts, home businesses, and '
+                              'excessive travel and mileage [_ehHXyRo6fI @ 00:18:13]. Without kept '
+                              "records, she says, it becomes a 'gotcha situation' [_ehHXyRo6fI @ "
+                              '00:18:47]. Round numbers and missing paper are the cheapest anomaly filters '
+                              'in the stack, and both run on data the business already holds.',
+                              "At investigative scale, Mercia's numbers set the benchmark. A typical case "
+                              'runs 20,000 to 30,000 records. That takes a day or a couple of days by hand '
+                              'and three or four seconds in CSS [5LeNkCDistY @ 00:01:18]. On a Yorkshire '
+                              'conspiracy case with 30 phones, the manual estimate was six months, and the '
+                              'job was done in 12 minutes. A second product links data across all cases at '
+                              'once, so connections surface across separate investigations [5LeNkCDistY @ '
+                              '00:01:35] [5LeNkCDistY @ 00:01:50]. The biggest impact lands on county '
+                              "lines, human trafficking, and fraud, in what the company calls a 'war of "
+                              "attrition' against evasion [5LeNkCDistY @ 00:02:24]. The funding and growth "
+                              'mechanics run as follows: a plan drafted in December 2020; market '
+                              'engagement from April; 13 roadshow meetings that produced 10 finance '
+                              'offers, with Mercia chosen; a move of everything to Amazon AWS cloud in '
+                              'early 2021; a US push from Washington DC targeting the FBI and DEA, with '
+                              'CGI and Deloitte as partners [5LeNkCDistY @ 00:03:00] [5LeNkCDistY @ '
+                              '00:04:25]. GRF supplies the program-side numbers. Organizations under 50 '
+                              'million see the highest share of fraud, and only 6% of perpetrators had '
+                              'prior convictions. GRF also says 15 to 45 minutes of anti-fraud training '
+                              'can be added to existing annual meetings, so no new calendar slot is '
+                              'required [bPsS_B4v7Dw @ 00:20:08] [bPsS_B4v7Dw @ 00:22:07] [bPsS_B4v7Dw @ '
+                              '00:25:00].',
+                              'Program plumbing comes with hard deadlines and price tags. GRF points to '
+                              'the new COSO fraud risk guide at about $60, the first update since 2016. It '
+                              'cites a SOX filing window of 180 days. It also cites an EU Directive clock '
+                              'of acknowledgement within 7 days and feedback within 3 months [bPsS_B4v7Dw '
+                              '@ 00:09:12] [bPsS_B4v7Dw @ 00:16:42] [bPsS_B4v7Dw @ 00:17:58]. Nonprofits '
+                              'face a trap on the 990. The whistleblower disclosure feeds watchdog '
+                              "ratings, and checking 'yes' without an actual policy creates liability "
+                              '[bPsS_B4v7Dw @ 00:17:14]. Vendor screening focuses on the critical top 10% '
+                              'of vendors. It checks past breaches, financial viability, ISO 27001, ISAE '
+                              '3000, pen testing, and an IT demo, and two-factor authentication is '
+                              "'non-negotiable' [bPsS_B4v7Dw @ 00:38:26] [bPsS_B4v7Dw @ 00:41:47]. "
+                              'Licensing is annual and priced by employee count, with unlimited users and '
+                              "regions, at 'less than a few thousand dollars' [bPsS_B4v7Dw @ 00:54:10]. "
+                              "Once a report lands, Koegle's investigation sequence is to interview the "
+                              'complainant, the accused, and others, then pull emails, Teams, and Slack '
+                              '[nM5JZ33rgDk @ 00:01:15]. For retail investors feeding the regulator, HJ '
+                              'Collection Investors lays out the FCA evidence pack: loan notes, payment '
+                              'records, promotions, and correspondence in date order. Keep what you know '
+                              'separate from what you suspect [4O3914yuhv0 @ 00:01:01].'],
+               'table': {'caption': 'Street Mechanics: Tools, Specs, and Hard Numbers',
+                         'headers': ['Tool / Mechanic',
+                                     'Exact Number or Spec',
+                                     'How It Is Used',
+                                     'Expert Source'],
+                         'rows': [['Tests and macros on live bank feeds',
+                                   'Monthly or quarterly runs on bank and card data',
+                                   'Reconcile mismatched systems such as billing software against '
+                                   'QuickBooks',
+                                   'Workman Forensics ([4CnIVLSoe2o @ 00:08:03])'],
+                                  ['Payroll provider export check',
+                                   'Provider must export your information to Excel',
+                                   'If the provider cannot export to Excel, change providers immediately',
+                                   'Workman Forensics ([4CnIVLSoe2o @ 00:11:12])'],
+                                  ['CSS forensic analytics on case records',
+                                   '20,000 to 30,000 records processed in three or four seconds',
+                                   'Replaces a day or two of manual record processing per case',
+                                   'Mercia Asset Management PLC ([5LeNkCDistY @ 00:01:18])'],
+                                  ['Round-number expense red flag screen',
+                                   '99.9% of audited H&R Block returns had adjustments',
+                                   'Flag round numbers, missing receipts, home businesses, and excessive '
+                                   'mileage',
+                                   'The Brad Weisman Show ([_ehHXyRo6fI @ 00:18:13])'],
+                                  ['EU Directive response clock for reports',
+                                   'Acknowledge within 7 days and give feedback within 3 months',
+                                   'Build case-management deadlines around the acknowledgement and '
+                                   'feedback windows',
+                                   'GRF CPAs & Advisors ([bPsS_B4v7Dw @ 00:17:58])'],
+                                  ['Whistleblower platform annual license pricing',
+                                   'Priced by employee count at less than a few thousand dollars',
+                                   'Unlimited users and regions under one annual license fee',
+                                   'GRF CPAs & Advisors ([bPsS_B4v7Dw @ 00:54:10])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Cheap Filters That Separate Signal From Noise',
+                           'body': 'These are the fastest moves practitioners use to raise detection '
+                                   'signal before any tip arrives, and to keep evidence clean once one '
+                                   'does.',
+                           'items': ['If your payroll provider cannot export your information to Excel, '
+                                     'change providers, and make sure owners are named on every business '
+                                     'bank account [Workman Forensics — 4CnIVLSoe2o @ 00:11:12].',
+                                     'Treat round-number expenses as a guess signal, since 99.9% of the '
+                                     'H&R Block returns Jackson audited had adjustments [The Brad Weisman '
+                                     'Show — _ehHXyRo6fI @ 00:18:13].',
+                                     'Add a good-faith certification checkbox to every intake report to '
+                                     'filter bad-faith submissions at the door [GRF CPAs & Advisors — '
+                                     'bPsS_B4v7Dw @ 00:45:14].',
+                                     'Never post sensitive data publicly. Contact your bank and the '
+                                     'insolvency practitioner as well, because contacting the FCA is not '
+                                     'itself a compensation application [HJ Collection Investors – '
+                                     'Independent Community — 4O3914yuhv0 @ 00:02:16].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pull Digital Statements',
+                              'action': 'Collect digital bank and credit-card statements covering revenue, '
+                                        'expenses, and payroll.',
+                              'detail': 'Work from digital bank and card statements across the revenue, '
+                                        'expense, and payroll fraud zones, because accounting entries '
+                                        "don't cash at the casino [Workman Forensics — 4CnIVLSoe2o @ "
+                                        '00:06:00].'},
+                             {'step': 2,
+                              'title': 'Run Recurring Tests and Macros',
+                              'action': 'Schedule monthly or quarterly test runs and reconcile mismatched '
+                                        'systems.',
+                              'detail': 'Run tests and macros on bank feeds monthly or quarterly, and '
+                                        "reconcile systems such as a doctor's billing software against "
+                                        'QuickBooks [Workman Forensics — 4CnIVLSoe2o @ 00:08:03].'},
+                             {'step': 3,
+                              'title': 'Triage Acronyms and Fringe Filings',
+                              'action': 'Tag FCA hits as the UK regulator and quarantine sovereign-style '
+                                        'Form 211 court filings.',
+                              'detail': 'Read FCA as the UK Financial Conduct Authority, built on consumer '
+                                        'protection and market integrity, before scoring any lead '
+                                        '[FinCrime Intelligence — Mi3ALpKg17s @ 00:01:21]. Separate Form '
+                                        '211 filings that name the judge as taxpayer '
+                                        '[SovereignProductions369 — Q2EMaQHpNPM @ 00:01:17].'},
+                             {'step': 4,
+                              'title': 'Investigate and Build the Evidence Pack',
+                              'action': 'Interview all parties, pull digital communications, and order '
+                                        'evidence by date.',
+                              'detail': 'Interview the complainant, the accused, and others, then pull '
+                                        'emails, Teams, and Slack [Koegle Law Group — nM5JZ33rgDk @ '
+                                        '00:01:15]. Arrange loan notes, payment records, promotions, and '
+                                        'correspondence in date order, and keep known facts separate from '
+                                        'suspicions [HJ Collection Investors – Independent Community — '
+                                        '4O3914yuhv0 @ 00:01:01].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Workman Forensics and GRF CPAs & Advisors split on where detection should '
+                              'start. Workman concedes that tips find fraud most often, but argues that a '
+                              'shop relying only on a hotline is already "behind," because the '
+                              'whistleblower may have been "part of the scam until" they were "cut out," '
+                              'which means the tip arrives late and from a compromised insider '
+                              '[4CnIVLSoe2o @ 00:04:12]. Their fix is a data-first engine: tests and '
+                              'macros run on digital bank and credit-card feeds monthly or quarterly, with '
+                              'the concession that "having a fraud hotline is not bad" and that data plus '
+                              'a hotline is "gold" [4CnIVLSoe2o @ 00:05:22]. GRF builds from the opposite '
+                              'end and treats the reporting channel itself as the product. Hotlines are up '
+                              '16% over 10 years, and any program whose only mechanisms are "mail and fax '
+                              'outside of direct reporting" is "behind the eight-ball" [bPsS_B4v7Dw @ '
+                              '00:35:52]. GRF also pushes a cultural rebrand, swapping the reporter label '
+                              'for "ethics champion, an integrity advocate," and bolts 15 to 45 minutes of '
+                              'anti-fraud training onto annual meetings already on the calendar '
+                              '[bPsS_B4v7Dw @ 00:14:07]. The operator read is simple: Workman wants the '
+                              'ledger to talk before a human does, while GRF wants more humans talking '
+                              'through better pipes, and both camps end up running the two side by side.',
+                              'Koegle Law Group and Protect pull in different directions on whether the '
+                              "employer's own house is a safe venue. Koegle, who works mostly FEHA and "
+                              'California whistleblower claims and "very rarely" federal ones, says best '
+                              'practice is an outside investigator, but that it is "almost never" done '
+                              'because of cost and time, and that in-house HR carries a "shadow of bias" '
+                              'because "HR is there for the corporation" [nM5JZ33rgDk @ 00:00:45]. Protect '
+                              "flips the angle to the worker's side: disclosure to the employer is the "
+                              'easiest route because it carries the fewest tests, namely specific '
+                              'information, a reasonable belief in one of six wrongdoing types, and public '
+                              'interest, and being wrong is acceptable if the belief was reasonable '
+                              '[VXSmJlGNKIw @ 00:01:33]. GRF splits the difference with process timers '
+                              'taken from the EU Directive, acknowledgement within 7 days and feedback '
+                              'within 3 months, plus a good-faith certification checkbox on every report '
+                              '[bPsS_B4v7Dw @ 00:17:58]. The friction point is trust in the intake desk. '
+                              'Koegle warns that a lawsuit is often the first notice a company gets of a '
+                              "complaint at all, which is exactly the blind spot that GRF's response "
+                              "timers and Protect's low-friction internal route are both designed to close "
+                              'before outside counsel ever gets involved [nM5JZ33rgDk @ 00:00:14].',
+                              'The loudest "whistleblower" voices in this chapter are not award claimants '
+                              'at all. SovereignProductions369 tells viewers to file Form 211, the '
+                              '"application for award" for "original information," into court as evidence '
+                              'naming the judge as "taxpayer," to pair it with a Form 56 fiduciary filing, '
+                              'and predicts "your case is gonna just disappear," without citing a single '
+                              'case, number, or result [Q2EMaQHpNPM @ 00:02:55]. Joe Banister, the former '
+                              'IRS criminal-division special agent, argues a signed 1040 is a sworn '
+                              'self-assessment that hands the IRS collection authority, and says he has '
+                              'not paid federal income tax for "25 26 years" [xtocXbDnCkg @ 00:17:46]. Dr. '
+                              "Sherry Peel Jackson came up through the same material, citing Banister's "
+                              "report and Tommy Cryer's acquittal on a 109-page memo, then received a "
+                              'four-year federal sentence on four misdemeanor failure-to-file counts run '
+                              "consecutively with an upward departure [_ehHXyRo6fI @ 00:28:10]. Jackson's "
+                              'current playbook is different: she and her circle "made a pack to never '
+                              'tell people to file or not to file," and she now teaches record keeping, '
+                              'home businesses for high W-2 earners, and real estate professional status. '
+                              'Banister closes with his own line, "not to tell you what to do," so even '
+                              'the fringe camp now separates the theory from the instruction [xtocXbDnCkg '
+                              '@ 00:40:43].'],
+               'table': {'caption': 'Competing playbooks on detection, intake, analytics, data rights, and '
+                                    'label collisions',
+                         'headers': ['Fault Line', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Where fraud detection should start first',
+                                   'Run tests and macros on bank and card feeds monthly or quarterly; '
+                                   'hotline-only means you are behind',
+                                   'Build the reporting channel; hotlines are up 16% over 10 years and '
+                                   'mail-and-fax-only programs sit behind the eight-ball',
+                                   'Workman Forensics ([4CnIVLSoe2o @ 00:05:22]); GRF CPAs & Advisors '
+                                   '([bPsS_B4v7Dw @ 00:35:52])'],
+                                  ['Who should run the internal investigation',
+                                   'Outside investigator is best practice but almost never used because of '
+                                   'cost and time',
+                                   'In-house HR carries a shadow of bias because HR is there for the '
+                                   'corporation',
+                                   'Koegle Law Group ([nM5JZ33rgDk @ 00:00:28]); Koegle Law Group '
+                                   '([nM5JZ33rgDk @ 00:00:45])'],
+                                  ['Where the worker should disclose first',
+                                   'Disclosure to the employer is the easiest route with the fewest legal '
+                                   'tests to pass',
+                                   'Program owner sets the clock: acknowledge within 7 days and give '
+                                   'feedback within 3 months',
+                                   'Protect ([VXSmJlGNKIw @ 00:01:33]); GRF CPAs & Advisors ([bPsS_B4v7Dw '
+                                   '@ 00:17:58])'],
+                                  ['Speed and cadence of forensic analytics',
+                                   'CSS processes 20 or 30 000 records in three or four seconds; a '
+                                   '30-phone case took 12 minutes, not six months',
+                                   "Periodic monthly or quarterly bank-feed tests reconciling a doctor's "
+                                   'billing software against QuickBooks',
+                                   'Mercia Asset Management PLC ([5LeNkCDistY @ 00:01:35]); Workman '
+                                   'Forensics ([4CnIVLSoe2o @ 00:08:03])'],
+                                  ['Whether users get paid for their data',
+                                   'Kaiser: Airbnb-style model with transparency, an agreed price, and '
+                                   'payment before handing over the keys',
+                                   'Wernick: no compensation for in-house use, but ad sales or '
+                                   'cross-selling should require compensation',
+                                   'CNBC ([CctRGUwjm7k @ 00:06:45]); CNBC ([CctRGUwjm7k @ 00:03:16])'],
+                                  ['What the IRS whistleblower label actually means',
+                                   'Banister and Jackson are ex-IRS agents attacking the income tax '
+                                   'itself, not award claimants',
+                                   'SovereignProductions369 repurposes the Form 211 award application as '
+                                   'court evidence naming the judge as taxpayer',
+                                   'Freedom Law School ([xtocXbDnCkg @ 00:00:00]); SovereignProductions369 '
+                                   '([Q2EMaQHpNPM @ 00:01:17])'],
+                                  ['What FCA stands for in this chapter',
+                                   'FCA is one of three UK regulators alongside FPC and PRA, overseeing '
+                                   '51,000 businesses',
+                                   'FCA runs two pillars, consumer protection and market integrity, '
+                                   'through rules, supervision, and intervention',
+                                   'FinCrime Agent ([md699NsaAZg @ 00:01:05]); FinCrime Intelligence '
+                                   '([Mi3ALpKg17s @ 00:02:23])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The firsthand cost of the tax-protester track is measured in indictments, '
+                              'not refunds. Banister says that after he resigned in 1999 he was put on a '
+                              'week of administrative leave and stripped of his firearm and credentials, '
+                              'and that preparing 3 amended returns for a client in 2001 and 2002 led to a '
+                              'November 2004 indictment on 4 felonies, three false-return counts plus '
+                              'conspiracy [xtocXbDnCkg @ 00:21:32]. He was acquitted on all four counts in '
+                              'June 2005 after the trials were severed, but only after being held 3 hours '
+                              'before bail, and a later non-filing investigation ran about 7 months and '
+                              '700 hours before it was terminated, a figure he pulled through a FOIA '
+                              'request [xtocXbDnCkg @ 00:29:12]. Jackson, running the same thesis, did not '
+                              'walk: USA v. Jackson, 11th Circuit 2008, ended in a four-year sentence on '
+                              'four willful failure-to-file misdemeanors covering four six-figure years '
+                              '[_ehHXyRo6fI @ 00:12:18]. SovereignProductions369 offers the opposite '
+                              'promise, a discharged or settled case, with zero outcomes documented '
+                              '[Q2EMaQHpNPM @ 00:02:42]. The economics check for any operator is blunt: '
+                              'the one acquittal still cost an arrest, a bail hold, a full trial, and a '
+                              '700-hour follow-up probe, and the convicted practitioner now refuses to '
+                              'tell anyone whether to file at all.',
+                              'Inside the company, the traps are mostly data plumbing. Workman Forensics '
+                              'warns that if a payroll provider "cannot export your information to excel," '
+                              'the fix is to change providers, because their tests and macros depend on '
+                              "raw exports and on reconciling mismatched systems such as a doctor's "
+                              'billing software against QuickBooks [4CnIVLSoe2o @ 00:11:12]. They add that '
+                              'owners must be named on business bank accounts, and that "accounting '
+                              'entries don\'t cash at the casino." GRF CPAs & Advisors flags a paperwork '
+                              'trap specific to nonprofits: the 990 whistleblower disclosure affects '
+                              'watchdog ratings, and checking "yes" without an actual policy creates '
+                              'liability [bPsS_B4v7Dw @ 00:17:14]. GRF also maps where the losses land: '
+                              'organizations under 50 million see the highest share of fraud, only 6% of '
+                              'perpetrators had prior convictions, and the critical-vendor tier, roughly '
+                              'the top 10%, needs a review of past breaches, financial viability, ISO '
+                              '27001, ISAE 3000, pen testing, and an IT demo, with two-factor '
+                              'authentication "non-negotiable" [bPsS_B4v7Dw @ 00:22:07]. Business with Mr. '
+                              'G compresses the whole category into one line for boards signing off the '
+                              'annual Consumer Duty assessment under SMCR accountability: "If you don\'t '
+                              'have the data, you simply don\'t have a defense" [g-_DOtTZkIM @ 00:14:31].',
+                              'Investors reporting outward hit a different set of traps. HJ Collection '
+                              "Investors, covering the FCA's High Court proceedings against Osborne "
+                              'Baldwin Ltd (Hunter Jones) announced on 21 September 2026, stresses that '
+                              '"these are allegations, not findings by the court," and the address as '
+                              'given, avilconsumers@fca.org.uk, conflicts with the spoken spelling "a v i '
+                              'l l," so it has to be matched against the FCA\'s own announcement before '
+                              'anything is sent [4O3914yuhv0 @ 00:00:38]. Their evidence pack is loan '
+                              'notes, payment records, promotions, and correspondence in date order, with '
+                              'what you know split from what you suspect, plus two hard warnings: do not '
+                              'post sensitive data publicly, and "contacting the FCA is not itself a '
+                              'compensation application," so the bank and the insolvency practitioner need '
+                              'separate contact [4O3914yuhv0 @ 00:02:16]. FinCrime Agent sets the stakes '
+                              'on the firm side: operating without FCA permission is illegal, breaches '
+                              'risk prison, and penalties run from license suspension to '
+                              'multi-million-pound fines and imprisonment [md699NsaAZg @ 00:06:00]. Koegle '
+                              "Law Group's closing point applies at every tier of this chapter, from HR "
+                              'desks to regulator inboxes: liability only gets mitigated when the client '
+                              'is honest with counsel from the very first interview [nM5JZ33rgDk @ '
+                              '00:01:43].'],
+               'table': {'caption': 'Firsthand failure modes with the damage practitioners actually '
+                                    'reported',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics or Damage Check',
+                                     'Expert Source'],
+                         'rows': [['Preparing returns on the tax-protester theory',
+                                   'Banister prepared 3 amended returns for a client and was indicted in '
+                                   'November 2004 on 4 felonies',
+                                   'Acquitted on all four counts in June 2005 after being held 3 hours '
+                                   'before bail and a full trial',
+                                   'Freedom Law School ([xtocXbDnCkg @ 00:23:59])'],
+                                  ['Not filing across six-figure income years',
+                                   'Jackson convicted on four misdemeanor willful failure-to-file counts '
+                                   'in USA v. Jackson, 11th Circuit 2008',
+                                   'Sentences ran consecutively with an upward departure for a 4-year '
+                                   'total',
+                                   'The Brad Weisman Show ([_ehHXyRo6fI @ 00:28:40])'],
+                                  ['Follow-up non-filing probe after an acquittal',
+                                   'Banister faced a later SCI investigation for non-filing, documented '
+                                   'through his own FOIA request',
+                                   'Roughly 7 months and 700 hours of investigation before the IRS '
+                                   'terminated it',
+                                   'Freedom Law School ([xtocXbDnCkg @ 00:29:12])'],
+                                  ['Round-number expenses and missing receipts on audit',
+                                   'Jackson says 99.9% of H&R Block returns she audited had adjustments; '
+                                   'no records means a gotcha',
+                                   'Host faced $4,000 of exposure and paid $9,000 in CPA fees to fight it',
+                                   'The Brad Weisman Show ([_ehHXyRo6fI @ 00:23:59])'],
+                                  ['Payroll provider that locks up the raw data',
+                                   'Provider cannot export payroll information to Excel, so forensic tests '
+                                   'and macros cannot run',
+                                   "Workman's instruction is to change providers rather than work around "
+                                   'the gap',
+                                   'Workman Forensics ([4CnIVLSoe2o @ 00:11:12])'],
+                                  ['Nonprofit ticking yes on the 990 disclosure',
+                                   'Organization reports a whistleblower policy on the 990 without '
+                                   'actually having one in place',
+                                   'Creates liability and drags on the watchdog ratings that donors read',
+                                   'GRF CPAs & Advisors ([bPsS_B4v7Dw @ 00:17:14])'],
+                                  ['Treating an FCA report as a refund claim',
+                                   'Investors email the regulator and assume it starts compensation, using '
+                                   'a conflicting address spelling',
+                                   'Contacting the FCA is not a compensation application; bank and '
+                                   'insolvency practitioner need separate contact',
+                                   'HJ Collection Investors – Independent Community ([4O3914yuhv0 @ '
+                                   '00:02:16])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Acting on Any Signal',
+                           'body': 'Each gate below is a pitfall a named practitioner hit or warned about '
+                                   'directly; clear all four before trusting a tip, a filing theory, or a '
+                                   'dashboard.',
+                           'items': ['Never run hotline-only detection: tips arrive late and the reporter '
+                                     'may have been part of the scam until cut out, so pair the hotline '
+                                     'with monthly or quarterly bank-feed tests [Workman Forensics — '
+                                     '4CnIVLSoe2o @ 00:04:12].',
+                                     'Confirm payroll exports to Excel and owners are named on every '
+                                     'business bank account; if the provider cannot export, change '
+                                     'providers [Workman Forensics — 4CnIVLSoe2o @ 00:11:12].',
+                                     'Do not tick yes on the 990 whistleblower disclosure until a written '
+                                     'policy exists, because a false yes creates liability and hits '
+                                     'watchdog ratings [GRF CPAs & Advisors — bPsS_B4v7Dw @ 00:17:14].',
+                                     'Strip round-number expenses and keep receipts, because round numbers '
+                                     'are the biggest audit red flag and missing records turn into a '
+                                     'gotcha [The Brad Weisman Show — _ehHXyRo6fI @ 00:18:13].']}}],
+ 'pull_quote': '"Accounting entries don\'t cash at the casino." — Workman Forensics (4CnIVLSoe2o @ '
+               '00:10:09).',
+ 'diagram_id': 'diag-08',
+ 'action_checklist': ['Run tests and macros on digital bank and credit-card feeds monthly or quarterly, '
+                      'reconciling billing software against QuickBooks [Workman Forensics — 4CnIVLSoe2o @ '
+                      '00:08:03].',
+                      'Add 15 to 45 minutes of anti-fraud training to annual meetings already on the '
+                      'calendar [GRF CPAs & Advisors — bPsS_B4v7Dw @ 00:25:00].',
+                      'Add a good-faith certification checkbox to every report and hold to 7-day '
+                      'acknowledgement and 3-month feedback timers [GRF CPAs & Advisors — bPsS_B4v7Dw @ '
+                      '00:45:14].',
+                      'Interview the complainant, the accused, and others, then pull emails, Teams, and '
+                      'Slack before drawing conclusions [Koegle Law Group — nM5JZ33rgDk @ 00:01:15].',
+                      'Build the evidence pack from loan notes, payment records, promotions, and '
+                      'correspondence in date order, separating what you know from what you suspect [HJ '
+                      'Collection Investors – Independent Community — 4O3914yuhv0 @ 00:01:01].',
+                      'Document home-office measurements and utilities as a percentage of the house so the '
+                      'deduction survives audit [The Brad Weisman Show — _ehHXyRo6fI @ 00:21:47].'],
+ 'statutory_citations': [{'title': "Workman Forensics — Don't Wait On a Whistleblower [00:04:12]",
+                          'url': 'https://www.youtube.com/watch?v=4CnIVLSoe2o&t=252s',
+                          'relevance': 'Primary practitioner testimony on why hotline-only detection '
+                                       'leaves operators behind and how data tests close the gap.'},
+                         {'title': 'GRF CPAs & Advisors — Part 1: How to Set Up a World-Class '
+                                   'Whistleblower Program [00:35:52]',
+                          'url': 'https://www.youtube.com/watch?v=bPsS_B4v7Dw&t=2152s',
+                          'relevance': 'Primary practitioner testimony on reporting-channel design, 990 '
+                                       'liability, and vendor due diligence.'},
+                         {'title': 'Freedom Law School — IRS WHISTLEBLOWER Joe Banister Exposes the '
+                                   'Federal Income Tax FRAUD with Marjorie Taylor Greene [00:21:32]',
+                          'url': 'https://www.youtube.com/watch?v=xtocXbDnCkg&t=1292s',
+                          'relevance': 'Primary practitioner testimony on the indictment, acquittal, and '
+                                       '700-hour follow-up probe faced by a former IRS special agent.'},
+                         {'title': 'The Brad Weisman Show — IRS Whistleblower to Financial Empowerment: '
+                                   "Dr. Sherry Peel Jackson's Journey #irs #tbws2024 [00:28:10]",
+                          'url': 'https://www.youtube.com/watch?v=_ehHXyRo6fI&t=1690s',
+                          'relevance': 'Primary practitioner testimony on a four-year failure-to-file '
+                                       'sentence and the audit red flags that follow.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'Q2EMaQHpNPM',
+                       'title': 'FORM 211 Treasury Notice of Breach of trust fraud on court case.',
+                       'channel': 'SovereignProductions369',
+                       'author': 'SovereignProductions369',
+                       'text': 'File the Form 211 application for award for original information in court '
+                               'as evidence and also send it to the Treasury.',
+                       'tip': 'File the Form 211 application for award for original information in court '
+                              'as evidence and also send it to the Treasury.',
+                       'timestamp': 21,
+                       'timestamp_seconds': 21,
+                       'timestamp_label': '[00:00:21]',
+                       'url': 'https://www.youtube.com/watch?v=Q2EMaQHpNPM&t=21s',
+                       'markdown': '[00:00:21](https://www.youtube.com/watch?v=Q2EMaQHpNPM&t=21s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Q2EMaQHpNPM',
+                       'title': 'FORM 211 Treasury Notice of Breach of trust fraud on court case.',
+                       'channel': 'SovereignProductions369',
+                       'author': 'SovereignProductions369',
+                       'text': 'Your case is gonna just disappear.',
+                       'tip': 'Your case is gonna just disappear.',
+                       'timestamp': 175,
+                       'timestamp_seconds': 175,
+                       'timestamp_label': '[00:02:55]',
+                       'url': 'https://www.youtube.com/watch?v=Q2EMaQHpNPM&t=175s',
+                       'markdown': '[00:02:55](https://www.youtube.com/watch?v=Q2EMaQHpNPM&t=175s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5LeNkCDistY',
+                       'title': "Forensic Analytics | Software that's revolutionising police "
+                                'investigations',
+                       'channel': 'Mercia Asset Management PLC',
+                       'author': 'Mercia Asset Management PLC',
+                       'text': 'A Yorkshire conspiracy case with 30 phones, estimated at six months '
+                               'manually, was done in 12 minutes.',
+                       'tip': 'A Yorkshire conspiracy case with 30 phones, estimated at six months '
+                              'manually, was done in 12 minutes.',
+                       'timestamp': 95,
+                       'timestamp_seconds': 95,
+                       'timestamp_label': '[00:01:35]',
+                       'url': 'https://www.youtube.com/watch?v=5LeNkCDistY&t=95s',
+                       'markdown': '[00:01:35](https://www.youtube.com/watch?v=5LeNkCDistY&t=95s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4CnIVLSoe2o',
+                       'title': "Don't Wait On a Whistleblower",
+                       'channel': 'Workman Forensics',
+                       'author': 'Workman Forensics',
+                       'text': 'Having a fraud hotline is not bad, but data plus a hotline is gold.',
+                       'tip': 'Having a fraud hotline is not bad, but data plus a hotline is gold.',
+                       'timestamp': 322,
+                       'timestamp_seconds': 322,
+                       'timestamp_label': '[00:05:22]',
+                       'url': 'https://www.youtube.com/watch?v=4CnIVLSoe2o&t=322s',
+                       'markdown': '[00:05:22](https://www.youtube.com/watch?v=4CnIVLSoe2o&t=322s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4CnIVLSoe2o',
+                       'title': "Don't Wait On a Whistleblower",
+                       'channel': 'Workman Forensics',
+                       'author': 'Workman Forensics',
+                       'text': "Accounting entries don't cash at the casino.",
+                       'tip': "Accounting entries don't cash at the casino.",
+                       'timestamp': 609,
+                       'timestamp_seconds': 609,
+                       'timestamp_label': '[00:10:09]',
+                       'url': 'https://www.youtube.com/watch?v=4CnIVLSoe2o&t=609s',
+                       'markdown': '[00:10:09](https://www.youtube.com/watch?v=4CnIVLSoe2o&t=609s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4CnIVLSoe2o',
+                       'title': "Don't Wait On a Whistleblower",
+                       'channel': 'Workman Forensics',
+                       'author': 'Workman Forensics',
+                       'text': 'If your payroll provider cannot export your information to Excel, change '
+                               'providers.',
+                       'tip': 'If your payroll provider cannot export your information to Excel, change '
+                              'providers.',
+                       'timestamp': 672,
+                       'timestamp_seconds': 672,
+                       'timestamp_label': '[00:11:12]',
+                       'url': 'https://www.youtube.com/watch?v=4CnIVLSoe2o&t=672s',
+                       'markdown': '[00:11:12](https://www.youtube.com/watch?v=4CnIVLSoe2o&t=672s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nM5JZ33rgDk',
+                       'title': 'Why Workplace Investigations Matter: Avoiding Bias in Employee Claims | '
+                                'California Employment Law',
+                       'channel': 'Koegle Law Group',
+                       'author': 'Koegle Law Group',
+                       'text': 'HR is there for the corporation.',
+                       'tip': 'HR is there for the corporation.',
+                       'timestamp': 45,
+                       'timestamp_seconds': 45,
+                       'timestamp_label': '[00:00:45]',
+                       'url': 'https://www.youtube.com/watch?v=nM5JZ33rgDk&t=45s',
+                       'markdown': '[00:00:45](https://www.youtube.com/watch?v=nM5JZ33rgDk&t=45s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bPsS_B4v7Dw',
+                       'title': 'Part 1: How to Set Up a World-Class Whistleblower Program',
+                       'channel': 'GRF CPAs & Advisors',
+                       'author': 'GRF CPAs & Advisors',
+                       'text': 'Checking yes on the 990 whistleblower disclosure without having a policy '
+                               'creates liability.',
+                       'tip': 'Checking yes on the 990 whistleblower disclosure without having a policy '
+                              'creates liability.',
+                       'timestamp': 1034,
+                       'timestamp_seconds': 1034,
+                       'timestamp_label': '[00:17:14]',
+                       'url': 'https://www.youtube.com/watch?v=bPsS_B4v7Dw&t=1034s',
+                       'markdown': '[00:17:14](https://www.youtube.com/watch?v=bPsS_B4v7Dw&t=1034s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bPsS_B4v7Dw',
+                       'title': 'Part 1: How to Set Up a World-Class Whistleblower Program',
+                       'channel': 'GRF CPAs & Advisors',
+                       'author': 'GRF CPAs & Advisors',
+                       'text': 'If your only mechanisms are mail and fax outside of direct reporting, I '
+                               "would definitely say that you're behind the eight-ball on this.",
+                       'tip': 'If your only mechanisms are mail and fax outside of direct reporting, I '
+                              "would definitely say that you're behind the eight-ball on this.",
+                       'timestamp': 2152,
+                       'timestamp_seconds': 2152,
+                       'timestamp_label': '[00:35:52]',
+                       'url': 'https://www.youtube.com/watch?v=bPsS_B4v7Dw&t=2152s',
+                       'markdown': '[00:35:52](https://www.youtube.com/watch?v=bPsS_B4v7Dw&t=2152s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VXSmJlGNKIw',
+                       'title': 'Protected Disclosures & Whistleblowing',
+                       'channel': 'Protect',
+                       'author': 'Protect',
+                       'text': 'The easiest route is disclosure to the employer, which has the fewest '
+                               'tests.',
+                       'tip': 'The easiest route is disclosure to the employer, which has the fewest '
+                              'tests.',
+                       'timestamp': 93,
+                       'timestamp_seconds': 93,
+                       'timestamp_label': '[00:01:33]',
+                       'url': 'https://www.youtube.com/watch?v=VXSmJlGNKIw&t=93s',
+                       'markdown': '[00:01:33](https://www.youtube.com/watch?v=VXSmJlGNKIw&t=93s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'g-_DOtTZkIM',
+                       'title': 'FCA Consumer Duty Explained | Delivering Good Outcomes for Customers!',
+                       'channel': 'Business with Mr. G',
+                       'author': 'Business with Mr. G',
+                       'text': "If you don't have the data, you simply don't have a defense.",
+                       'tip': "If you don't have the data, you simply don't have a defense.",
+                       'timestamp': 871,
+                       'timestamp_seconds': 871,
+                       'timestamp_label': '[00:14:31]',
+                       'url': 'https://www.youtube.com/watch?v=g-_DOtTZkIM&t=871s',
+                       'markdown': '[00:14:31](https://www.youtube.com/watch?v=g-_DOtTZkIM&t=871s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Mi3ALpKg17s',
+                       'title': 'Financial Conduct Authority - Financial Crime Acronyms and Definitions',
+                       'channel': 'FinCrime Intelligence',
+                       'author': 'FinCrime Intelligence',
+                       'text': 'AI is being used for risk detection, with concern about gaps in the '
+                               'perimeter.',
+                       'tip': 'AI is being used for risk detection, with concern about gaps in the '
+                              'perimeter.',
+                       'timestamp': 253,
+                       'timestamp_seconds': 253,
+                       'timestamp_label': '[00:04:13]',
+                       'url': 'https://www.youtube.com/watch?v=Mi3ALpKg17s&t=253s',
+                       'markdown': '[00:04:13](https://www.youtube.com/watch?v=Mi3ALpKg17s&t=253s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'md699NsaAZg',
+                       'title': 'The Role of the FCA - Free Regulatory Compliance Trainings',
+                       'channel': 'FinCrime Agent',
+                       'author': 'FinCrime Agent',
+                       'text': 'Operating without FCA permission is illegal, and breaches risk prison.',
+                       'tip': 'Operating without FCA permission is illegal, and breaches risk prison.',
+                       'timestamp': 148,
+                       'timestamp_seconds': 148,
+                       'timestamp_label': '[00:02:28]',
+                       'url': 'https://www.youtube.com/watch?v=md699NsaAZg&t=148s',
+                       'markdown': '[00:02:28](https://www.youtube.com/watch?v=md699NsaAZg&t=148s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4O3914yuhv0',
+                       'title': 'HJ Collection Investors: How to Contact the FCA & Submit Evidence',
+                       'channel': 'HJ Collection Investors – Independent Community',
+                       'author': 'HJ Collection Investors – Independent Community',
+                       'text': 'Contacting the FCA is not itself a compensation application.',
+                       'tip': 'Contacting the FCA is not itself a compensation application.',
+                       'timestamp': 136,
+                       'timestamp_seconds': 136,
+                       'timestamp_label': '[00:02:16]',
+                       'url': 'https://www.youtube.com/watch?v=4O3914yuhv0&t=136s',
+                       'markdown': '[00:02:16](https://www.youtube.com/watch?v=4O3914yuhv0&t=136s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xtocXbDnCkg',
+                       'title': 'IRS WHISTLEBLOWER Joe Banister Exposes the Federal Income Tax FRAUD with '
+                                'Marjorie Taylor Greene',
+                       'channel': 'Freedom Law School',
+                       'author': 'Freedom Law School',
+                       'text': 'It lasted about 7 months and then they terminated the investigation.',
+                       'tip': 'It lasted about 7 months and then they terminated the investigation.',
+                       'timestamp': 1752,
+                       'timestamp_seconds': 1752,
+                       'timestamp_label': '[00:29:12]',
+                       'url': 'https://www.youtube.com/watch?v=xtocXbDnCkg&t=1752s',
+                       'markdown': '[00:29:12](https://www.youtube.com/watch?v=xtocXbDnCkg&t=1752s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_ehHXyRo6fI',
+                       'title': "IRS Whistleblower to Financial Empowerment: Dr. Sherry Peel Jackson's "
+                                'Journey #irs #tbws2024',
+                       'channel': 'The Brad Weisman Show',
+                       'author': 'The Brad Weisman Show',
+                       'text': 'The biggest red flag that people have I believe is using round numbers on '
+                               "your expenses, they know that that's a guess.",
+                       'tip': 'The biggest red flag that people have I believe is using round numbers on '
+                              "your expenses, they know that that's a guess.",
+                       'timestamp': 1093,
+                       'timestamp_seconds': 1093,
+                       'timestamp_label': '[00:18:13]',
+                       'url': 'https://www.youtube.com/watch?v=_ehHXyRo6fI&t=1093s',
+                       'markdown': '[00:18:13](https://www.youtube.com/watch?v=_ehHXyRo6fI&t=1093s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_ehHXyRo6fI',
+                       'title': "IRS Whistleblower to Financial Empowerment: Dr. Sherry Peel Jackson's "
+                                'Journey #irs #tbws2024',
+                       'channel': 'The Brad Weisman Show',
+                       'author': 'The Brad Weisman Show',
+                       'text': 'We made a pack to never tell people to file or not to file or pay or not '
+                               'to pay.',
+                       'tip': 'We made a pack to never tell people to file or not to file or pay or not to '
+                              'pay.',
+                       'timestamp': 1752,
+                       'timestamp_seconds': 1752,
+                       'timestamp_label': '[00:29:12]',
+                       'url': 'https://www.youtube.com/watch?v=_ehHXyRo6fI&t=1752s',
+                       'markdown': '[00:29:12](https://www.youtube.com/watch?v=_ehHXyRo6fI&t=1752s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CctRGUwjm7k',
+                       'title': 'Cambridge Analytica Whistleblower Brittany Kaiser: Lack Of Transparency '
+                                'In Data Gathering | CNBC',
+                       'channel': 'CNBC',
+                       'author': 'CNBC',
+                       'text': "I'm only giving them the right to park my car not to sell my car.",
+                       'tip': "I'm only giving them the right to park my car not to sell my car.",
+                       'timestamp': 574,
+                       'timestamp_seconds': 574,
+                       'timestamp_label': '[00:09:34]',
+                       'url': 'https://www.youtube.com/watch?v=CctRGUwjm7k&t=574s',
+                       'markdown': '[00:09:34](https://www.youtube.com/watch?v=CctRGUwjm7k&t=574s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'}]}

@@ -1,968 +1,884 @@
 from __future__ import annotations
 
-CHAPTER_7 = {
-    "id": "Q7",
-    "chapter_id": "Q7",
-    "chapter_number": 7,
-    "question_number": 7,
-    "slug": "complete-operating-process-production-blueprint-90-day-cohort-walk",
-    "question_prompt": "How does an operator execute data-mined qui tam, sec & irs whistleblower analytics end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
-    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
-    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
-    "subtitle": "CMS Evidence Lineage, Counsel-Controlled Filing, Transactional SQLite Journals, and a Retainer-Funded Cash Bridge",
-    "layout_template": "research_exhibit",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #48 ranks #16 of 49 with a 92/100 Money-to-Manpower Score. "
-        "Its 11 mapped plays become executable only when evidence production, counsel decisions, "
-        "and collected operating revenue remain separate. This chapter supplies a six-module "
-        "SQLite reference, immutable intake fingerprints, verification controls, balanced journals, "
-        "and a worked 90-day cohort. The supplied medical-receivables play illustrates adjacent "
-        "recovery economics without misclassifying provider collections as operator revenue. "
-        "Conservative, Base, and Scaled annual owner profits are $30,400, $219,375, and $510,400. "
-        "The Base walkthrough earns $121,875 quarterly from delivered retainers and generates "
-        "$54,843.75 operating cash after expenses. No pending complaint, speculative award, "
-        "or government recovery funds payroll. Public-disclosure screening, representative-claim "
-        "evidence, dismissal sensitivity, and restricted evidence custody determine what proceeds."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$95,000",
-            "context": "Annual recognized operator revenue from retainers and realized eligible award shares",
-            "note": "32% margin; $30,400 owner profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$487,500",
-            "context": "Annual recognized operator revenue; walkthrough uses collected-service economics without awards",
-            "note": "45.0% margin; $219,375 owner profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$880,000",
-            "context": "Annual recognized operator revenue, excluding government recoveries and client custodial funds",
-            "note": "58% margin; $510,400 owner profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Contract for evidence production before opening a recovery pipeline",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with the customer, not the allegation. The paying customer is a plaintiff or relator "
-                    "law firm purchasing defined forensic work: source acquisition, entity resolution, claim "
-                    "testing, chronology construction, and reproducible exhibits. Record the contracting firm, "
-                    "authorized matter contact, permitted sources, delivery milestones, invoice schedule, and "
-                    "restricted recipients before ingesting records. The Base package contains five documented "
-                    "work blocks at $1,625 each, producing an $8,125 monthly engagement. Five concurrent "
-                    "engagements yield $40,625 monthly recognized service revenue when all twenty-five blocks "
-                    "are delivered. A block ends with a reproducible query, source manifest, exception explanation, "
-                    "and counsel acceptance record; it does not promise a complaint or recovery. Price revisions "
-                    "follow additional records or analytical complexity rather than the size of an alleged "
-                    "government loss. Separate the services agreement from any eligible individual's award "
-                    "claim. An analytics company does not acquire statutory whistleblower eligibility merely "
-                    "by buying public records or signing a percentage contract. Counsel determines eligible "
-                    "claimants and permissible arrangements; the accountant determines recognition and principal "
-                    "versus agent presentation. Funds belonging to a client, relator, provider, or government "
-                    "remain outside operator revenue, even when the operator prepares the calculations."
-                ),
-                (
-                    "Build intake from CMS Part B and Part D releases, Open Payments, SAM.gov procurement "
-                    "records, and lawfully obtained import manifests. Preserve release date, retrieval time, "
-                    "source URL, license restrictions, content digest, and the exact transformation version. "
-                    "Aggregate billing variation is a lead, not a false claim. Compare specialty, geography, "
-                    "patient mix, billing year, ownership, and reporting thresholds before assigning analyst "
-                    "time. A high percentile becomes actionable only after a plausible innocent explanation "
-                    "has been tested and primary records support the relevant payment representation. Counsel "
-                    "then evaluates 31 U.S.C. § 3730(e)(4), including whether qualifying public disclosures "
-                    "and original-source facts defeat or preserve the proposed action. Public datasets neither "
-                    "automatically establish that bar nor automatically satisfy its exception. For Rule 9(b), "
-                    "build representative-claim packets with dates, actors, statements, payment context, and "
-                    "supporting documents, applying the controlling circuit's pleading standard. Track missing "
-                    "claim-level evidence as a reason to pause, not permission to manufacture specificity. "
-                    "The operator produces a referenced analytical hypothesis; licensed counsel controls the "
-                    "legal theory, investigation demands, and any filing. Keep rejected hypotheses and "
-                    "counterevidence so later reviewers can distinguish a tested allegation from selection bias."
-                ),
-                (
-                    "The supplied mapped play, hospital_lien_medical_receivables_arbitrage, requires a separate "
-                    "commercial-claims lane. Assume one hundred denied or underpaid claims contain $2,000 "
-                    "each in potentially recoverable differences: the review pool is $200,000, not revenue. "
-                    "If a recovery partner collects forty percent, provider collections equal $80,000. A "
-                    "twenty-five percent contingency produces $20,000 of that partner's fee revenue, leaving "
-                    "$60,000 for the provider before other agreed charges. The usual twenty-to-thirty-five "
-                    "percent range would produce $16,000 to $28,000 on the same collections. Our forensic "
-                    "operator recognizes only its separately contracted $8,125 service package, where earned, "
-                    "rather than also counting the partner's fee. Federal No Surprises Act IDR covers eligible "
-                    "out-of-network disputes, not every denial; ground ambulance services are generally outside "
-                    "its federal surprise-billing protections. Check service eligibility, the thirty-business-day "
-                    "open-negotiation period, and the subsequent four-business-day initiation window under "
-                    "45 CFR § 149.510, including applicable extensions. For lapsed or ineligible disputes, "
-                    "evaluate timely ERISA administrative appeals, plan terms, standing, and state remedies. "
-                    "ERISA group-health procedures generally provide at least 180 days to appeal an adverse "
-                    "benefit determination. Signed BAAs, encrypted EDI transport, access logging, and minimum "
-                    "necessary datasets precede protected-health-information processing."
-                ),
-            ],
-            "table": {
-                "caption": "Intake-to-Mandate Matrix for Counsel-Paid Forensic Production",
-                "headers": [
-                    "Workstream and commercial boundary",
-                    "Required evidence before analyst allocation",
-                    "Concrete unit economics and acceptance test",
-                    "Failure response and accountable operating owner",
-                ],
-                "rows": [
-                    [
-                        "Counsel retainer establishes the actual purchasing customer",
-                        "Executed scope identifies permitted recipients and delivery milestones",
-                        "Five accepted work blocks produce one $8,125 engagement",
-                        "Account lead stops expansion until scope pricing changes",
-                    ],
-                    [
-                        "CMS Part B and Part D anomaly detection",
-                        "Versioned releases preserve specialty denominators and reporting limitations",
-                        "Twenty prospects receive reproducible screens before five assignments",
-                        "Analyst rejects differences explained by population or coding",
-                    ],
-                    [
-                        "Open Payments relationships support corroboration rather than conclusions",
-                        "Match ownership dates and identifiers before asserting relationships",
-                        "One verified relationship enters one referenced evidence packet",
-                        "Counsel evaluates relevance and documents contrary relationship evidence",
-                    ],
-                    [
-                        "SAM.gov procurement and import records establish investigative leads",
-                        "Contract clauses and shipment records require primary-source corroboration",
-                        "Each proposed discrepancy receives a separate reproducible calculation",
-                        "Research contractor pauses records lacking lawful acquisition provenance",
-                    ],
-                    [
-                        "Public-disclosure and representative-claim screening precede filing recommendations",
-                        "Counsel records disclosure categories and claim-specific evidentiary support",
-                        "Unresolved pleading defects produce zero assumed award revenue",
-                        "Matter attorney closes unsupported theories without deleting counterevidence",
-                    ],
-                    [
-                        "hospital_lien_medical_receivables_arbitrage separates provider collections from analytical service revenue",
-                        "Eligibility worksheet records plan terms and disputed service",
-                        "$80,000 collections support $20,000 partner fees at 25%",
-                        "Recovery partner uses timely appeals when IDR fails",
-                    ],
-                    [
-                        "Protected health records remain inside an authorized processing boundary",
-                        "Signed BAAs accompany encrypted EDI and named access",
-                        "One approved dataset replaces unnecessary full patient exports",
-                        "Security owner quarantines improperly transmitted records before analysis",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make the negative evidence as reproducible as the anomaly",
-                "body": (
-                    "Experienced forensic teams sell a defensible investigation process, including the "
-                    "ability to explain why an attractive allegation did not survive."
-                ),
-                "items": [
-                    "Freeze the CMS release and denominator alongside each ranking; a later refreshed dataset must create a new fingerprint rather than silently changing an exhibit.",
-                    "Ask counsel for a representative-claim checklist before purchasing another bulk dataset; additional rows cannot repair missing payment representations.",
-                    "Deliver a counterevidence appendix with every hypothesis, including specialty mix, ownership timing, and legitimate coding explanations.",
-                    "Keep IDR deadline calculations outside the general lead score; a high anomaly score cannot revive an expired procedural window.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Install an idempotent ledger with evidence holds and atomic posting",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The six reference modules below form one executable Python namespace when their code "
-                    "cells are concatenated in order. They use only SQLite and Python standard-library "
-                    "components. Provision one database per contracting firm on a supported local filesystem; "
-                    "do not place the live journal on a shared network mount. Initialize once, then allow "
-                    "separate worker processes to open independent connections. Every business mutation begins "
-                    "with BEGIN IMMEDIATE, checks its command fingerprint inside that transaction, and commits "
-                    "the journal, state transition, and replay result together. SQLite serializes writers, "
-                    "eliminating read-check-write races within this interface. A crash before commit leaves "
-                    "nothing posted; a crash after commit permits the same command to return its stored result. "
-                    "Reusing a command key with different arguments raises an error rather than accepting a "
-                    "second interpretation. A busy timeout may still expire; retry the identical command "
-                    "after bounded delay, never invent a replacement key. UNIQUE constraints protect source "
-                    "fingerprints, evidence attestations, journal identities, and transition identities. The "
-                    "reference deliberately excludes bank transfers and court submissions: database atomicity "
-                    "cannot make an external service execute exactly once. Those actions require their own "
-                    "provider identifiers and independently reconciled acknowledgments."
-                ),
-                (
-                    "Intake accepts an immutable source snapshot and derives its fingerprint from the source "
-                    "locator plus content digest. Scoring combines anomaly, corroboration, and provenance "
-                    "inputs on a transparent hundred-point scale; it ranks work rather than estimating legal "
-                    "success. Store full source material in encrypted object storage and put only digests, "
-                    "opaque identifiers, and verification events in this demonstration database. The evidence "
-                    "function records hashes of signed review artifacts. Its caller must already be "
-                    "authenticated and authorized by the surrounding application; a hash proves consistency, "
-                    "not truth or professional status. Verification requires both source and counsel "
-                    "attestations. The escrow_hold state means documentary release restrictions on a potential "
-                    "award, not permission for this business to hold client money. Release requires award "
-                    "payment evidence, an allocation worksheet, and an accounting review. Ordinary retainer "
-                    "billing can continue during that award hold because its consideration comes from "
-                    "delivered services. Keep statutory filing decisions outside the scoring function. Counsel "
-                    "handles FCA complaints under seal, SEC Form TCR, and IRS Form 211. Store sealed materials "
-                    "in separately restricted counsel-controlled repositories; ordinary customer dashboards "
-                    "receive only authorized operational status and no restricted allegations or docket attachments."
-                ),
-                (
-                    "Use integer cents throughout the ledger. An invoice debits receivables and credits "
-                    "service revenue only after the corresponding work is delivered; a collection debits "
-                    "cash and credits receivables without creating revenue again. A credit reverses an "
-                    "uncollected invoice amount, while a paid expense debits operating expense and credits "
-                    "cash. The example forbids collections or credits above the matter's outstanding balance "
-                    "and posts eligible award receipts only after documentary release. It does not implement "
-                    "advance deposits, taxes, payroll liabilities, refunds, or client trust accounting; add "
-                    "their complete balanced-entry paths before using those transaction types. Access to "
-                    "direct database writes must remain restricted because SQL privileges can bypass "
-                    "application invariants. The reconciliation view separately exposes earned fees, received "
-                    "awards, cash receipts, paid expenses, receivable movement, and operating cash movement. "
-                    "QA checks journal balance, minimum posting completeness, foreign keys, and negative "
-                    "matter receivables within one consistent transaction. Reconcile cash postings to "
-                    "imported bank statement identifiers and actual bank balances outside this compact "
-                    "reference. Run restored-backup tests and independent access reviews before production. "
-                    "The technical objective is narrow and testable: repeated authorized requests cannot "
-                    "duplicate postings, and concurrent requests cannot overspend an outstanding receivable."
-                ),
-            ],
-            "table": {
-                "caption": "Six-Module Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
-                "headers": [
-                    "Module and execution order",
-                    "Copy-pasteable reference implementation",
-                    "Invariant protected by the implementation",
-                    "Production boundary and required operating control",
-                ],
-                "rows": [
-                    [
-                        "Module one initializes schema and atomic command execution",
-                        '''import hashlib
-import json
-import sqlite3
-
-DATABASE = "cohort.sqlite3"
-
-SCHEMA = """
-CREATE TABLE IF NOT EXISTS lead (
-    id TEXT PRIMARY KEY,
-    fingerprint TEXT NOT NULL UNIQUE,
-    source_hash TEXT NOT NULL,
-    score INTEGER NOT NULL CHECK(score BETWEEN 0 AND 100),
-    state TEXT NOT NULL DEFAULT 'new'
-        CHECK(state IN ('new','verified','escrow_hold','released','rejected'))
-);
-CREATE TABLE IF NOT EXISTS evidence (
-    lead_id TEXT NOT NULL REFERENCES lead(id),
-    kind TEXT NOT NULL,
-    digest TEXT NOT NULL CHECK(length(digest) = 64),
-    PRIMARY KEY(lead_id, kind)
-);
-CREATE TABLE IF NOT EXISTS command (
-    command_key TEXT PRIMARY KEY,
-    payload_hash TEXT NOT NULL,
-    result_json TEXT NOT NULL
-);
-CREATE TABLE IF NOT EXISTS transition (
-    event_key TEXT PRIMARY KEY,
-    lead_id TEXT NOT NULL REFERENCES lead(id),
-    old_state TEXT NOT NULL,
-    new_state TEXT NOT NULL
-);
-CREATE TABLE IF NOT EXISTS journal (
-    id TEXT PRIMARY KEY,
-    posted_on TEXT NOT NULL,
-    period TEXT NOT NULL CHECK(length(period) = 7),
-    kind TEXT NOT NULL
-        CHECK(kind IN ('invoice','collection','credit','expense','award')),
-    lead_id TEXT REFERENCES lead(id)
-);
-CREATE TABLE IF NOT EXISTS entry (
-    journal_id TEXT NOT NULL REFERENCES journal(id),
-    line_number INTEGER NOT NULL CHECK(line_number > 0),
-    account TEXT NOT NULL
-        CHECK(account IN ('cash','ar','service_income','award_income','expense')),
-    cents INTEGER NOT NULL CHECK(cents <> 0),
-    PRIMARY KEY(journal_id, line_number)
-);
-"""
-
-def connect():
-    db = sqlite3.connect(DATABASE, timeout=30, isolation_level=None)
-    db.execute("PRAGMA foreign_keys = ON")
-    db.execute("PRAGMA busy_timeout = 30000")
-    db.execute("PRAGMA synchronous = FULL")
-    return db
-
-def initialize():
-    db = connect()
-    try:
-        db.execute("PRAGMA journal_mode = WAL")
-        db.executescript(SCHEMA)
-    finally:
-        db.close()
-
-def digest_bytes(content):
-    return hashlib.sha256(content).hexdigest()
-
-def canonical(value):
-    return json.dumps(value, sort_keys=True, separators=(",", ":"))
-
-def apply(command_key, payload, operation):
-    if not isinstance(command_key, str) or not command_key:
-        raise ValueError("A stable command identity is required")
-    payload_hash = digest_bytes(canonical(payload).encode("utf-8"))
-    db = connect()
-    try:
-        db.execute("BEGIN IMMEDIATE")
-        existing = db.execute(
-            "SELECT payload_hash, result_json FROM command WHERE command_key = ?",
-            (command_key,),
-        ).fetchone()
-        if existing:
-            if existing[0] != payload_hash:
-                raise ValueError("Command identity conflicts with its recorded payload")
-            result = json.loads(existing[1])
-        else:
-            result = operation(db)
-            db.execute(
-                "INSERT INTO command VALUES (?, ?, ?)",
-                (command_key, payload_hash, canonical(result)),
-            )
-        db.commit()
-        return result
-    except BaseException:
-        if db.in_transaction:
-            db.rollback()
-        raise
-    finally:
-        db.close()
-''',
-                        "One committed command identity always returns one recorded result",
-                        "Initialize serially and restrict database access to authorized services",
-                    ],
-                    [
-                        "Module two scores immutable intake and records evidence attestations",
-                        '''def intake(command_key, lead_id, source_locator, content,
-           anomaly, corroboration, provenance):
-    values = (anomaly, corroboration, provenance)
-    if any(type(value) is not int or not 0 <= value <= 100 for value in values):
-        raise ValueError("Scoring inputs must be integers from zero through one hundred")
-    if not lead_id or not source_locator or not isinstance(content, bytes):
-        raise ValueError("Intake requires identifiers and an immutable byte snapshot")
-    source_hash = digest_bytes(content)
-    fingerprint = digest_bytes(
-        canonical([source_locator, source_hash]).encode("utf-8")
-    )
-    score = (50 * anomaly + 30 * corroboration + 20 * provenance) // 100
-    payload = ["intake", lead_id, fingerprint, score]
-
-    def operation(db):
-        prior = db.execute(
-            "SELECT id, score FROM lead WHERE fingerprint = ?", (fingerprint,)
-        ).fetchone()
-        if prior:
-            return {"lead_id": prior[0], "score": prior[1], "deduplicated": True}
-        db.execute(
-            "INSERT INTO lead(id, fingerprint, source_hash, score) VALUES (?, ?, ?, ?)",
-            (lead_id, fingerprint, source_hash, score),
-        )
-        return {"lead_id": lead_id, "score": score, "deduplicated": False}
-
-    return apply(command_key, payload, operation)
-
-def attest(command_key, lead_id, kind, artifact):
-    permitted = {
-        "source_verified", "counsel_verified", "award_paid",
-        "award_allocation", "accounting_review"
-    }
-    if kind not in permitted or not isinstance(artifact, bytes):
-        raise ValueError("Evidence requires a supported kind and signed artifact bytes")
-    artifact_hash = digest_bytes(artifact)
-
-    def operation(db):
-        prior = db.execute(
-            "SELECT digest FROM evidence WHERE lead_id = ? AND kind = ?",
-            (lead_id, kind),
-        ).fetchone()
-        if prior and prior[0] != artifact_hash:
-            raise ValueError("Immutable attestation requires a separately versioned matter")
-        if not prior:
-            db.execute(
-                "INSERT INTO evidence VALUES (?, ?, ?)",
-                (lead_id, kind, artifact_hash),
-            )
-        return {"lead_id": lead_id, "kind": kind, "digest": artifact_hash}
-
-    return apply(command_key, ["attest", lead_id, kind, artifact_hash], operation)
-''',
-                        "Identical source snapshots cannot silently become duplicate scored leads",
-                        "Authenticate attestors and keep protected source documents outside SQLite",
-                    ],
-                    [
-                        "Module three enforces verification and documentary escrow state transitions",
-                        '''TRANSITIONS = {
-    "new": {"verified", "rejected"},
-    "verified": {"escrow_hold", "rejected"},
-    "escrow_hold": {"released", "rejected"},
-    "released": set(),
-    "rejected": set(),
-}
-
-def move(command_key, lead_id, target):
-    def operation(db):
-        row = db.execute(
-            "SELECT state FROM lead WHERE id = ?", (lead_id,)
-        ).fetchone()
-        if row is None:
-            raise ValueError("Matter identity does not exist")
-        old = row[0]
-        if target not in TRANSITIONS[old]:
-            raise ValueError("Requested state transition is prohibited")
-        required = set()
-        if target == "verified":
-            required = {"source_verified", "counsel_verified"}
-        elif target == "released":
-            required = {"award_paid", "award_allocation", "accounting_review"}
-        present = {
-            row[0] for row in db.execute(
-                "SELECT kind FROM evidence WHERE lead_id = ?", (lead_id,)
-            )
-        }
-        if not required.issubset(present):
-            raise ValueError("Required signed evidence is incomplete")
-        db.execute("UPDATE lead SET state = ? WHERE id = ?", (target, lead_id))
-        db.execute(
-            "INSERT INTO transition VALUES (?, ?, ?, ?)",
-            (command_key, lead_id, old, target),
-        )
-        return {"lead_id": lead_id, "state": target}
-
-    return apply(command_key, ["move", lead_id, target], operation)
-''',
-                        "Evidence requirements and state changes share one serialized transaction",
-                        "Documentary escrow holds never authorize custody of client funds",
-                    ],
-                    [
-                        "Module four posts balanced invoices collections credits expenses and awards",
-                        '''import datetime
-
-def post(command_key, kind, posted_on, cents, lead_id=None):
-    if type(cents) is not int or cents <= 0:
-        raise ValueError("Posting amounts must be positive integer cents")
-    date_value = datetime.date.fromisoformat(posted_on)
-    if date_value.isoformat() != posted_on:
-        raise ValueError("Use a canonical calendar date")
-    pairs = {
-        "invoice": ("ar", "service_income"),
-        "collection": ("cash", "ar"),
-        "credit": ("service_income", "ar"),
-        "expense": ("expense", "cash"),
-        "award": ("cash", "award_income"),
-    }
-    if kind not in pairs:
-        raise ValueError("Unsupported posting kind")
-    if kind != "expense" and not lead_id:
-        raise ValueError("Matter identity is required for this posting")
-
-    def operation(db):
-        if lead_id:
-            row = db.execute(
-                "SELECT state FROM lead WHERE id = ?", (lead_id,)
-            ).fetchone()
-            if row is None:
-                raise ValueError("Matter identity does not exist")
-            state = row[0]
-            if kind == "invoice" and state not in {
-                "verified", "escrow_hold", "released"
-            }:
-                raise ValueError("Matter is not verified for earned service billing")
-            if kind == "award" and state != "released":
-                raise ValueError("Award documentation has not been released")
-        if kind in {"collection", "credit"}:
-            outstanding = db.execute(
-                """SELECT COALESCE(SUM(e.cents), 0)
-                   FROM entry e JOIN journal j ON j.id = e.journal_id
-                   WHERE j.lead_id = ? AND e.account = 'ar'""",
-                (lead_id,),
-            ).fetchone()[0]
-            if cents > outstanding:
-                raise ValueError("Posting exceeds outstanding matter receivables")
-        debit, credit = pairs[kind]
-        lines = [(debit, cents), (credit, -cents)]
-        if sum(amount for account, amount in lines) != 0:
-            raise ValueError("Journal must balance")
-        db.execute(
-            "INSERT INTO journal VALUES (?, ?, ?, ?, ?)",
-            (command_key, posted_on, posted_on[:7], kind, lead_id),
-        )
-        db.executemany(
-            "INSERT INTO entry VALUES (?, ?, ?, ?)",
-            [
-                (command_key, number, account, amount)
-                for number, (account, amount) in enumerate(lines, 1)
-            ],
-        )
-        return {"journal_id": command_key, "kind": kind, "cents": cents}
-
-    return apply(
-        command_key, ["post", kind, posted_on, cents, lead_id], operation
-    )
-''',
-                        "Collections and credits cannot exceed concurrently checked matter receivables",
-                        "Use bank transaction identities and post only actually earned invoices",
-                    ],
-                    [
-                        "Module five installs the monthly revenue and cash reconciliation view",
-                        '''RECONCILIATION = """
-CREATE VIEW IF NOT EXISTS monthly_reconciliation AS
-SELECT
-    j.period,
-    -SUM(CASE WHEN e.account = 'service_income' THEN e.cents ELSE 0 END)
-        AS service_revenue_cents,
-    -SUM(CASE WHEN e.account = 'award_income' THEN e.cents ELSE 0 END)
-        AS award_revenue_cents,
-    SUM(CASE WHEN e.account = 'ar' THEN e.cents ELSE 0 END)
-        AS receivable_change_cents,
-    SUM(CASE WHEN e.account = 'cash' AND j.kind = 'collection'
-             THEN e.cents ELSE 0 END) AS service_receipts_cents,
-    SUM(CASE WHEN e.account = 'cash' AND j.kind = 'award'
-             THEN e.cents ELSE 0 END) AS award_receipts_cents,
-    SUM(CASE WHEN e.account = 'expense' THEN e.cents ELSE 0 END)
-        AS paid_opex_cents,
-    SUM(CASE WHEN e.account = 'cash' THEN e.cents ELSE 0 END)
-        AS operating_cash_change_cents,
-    -SUM(CASE WHEN e.account IN ('service_income','award_income','expense')
-              THEN e.cents ELSE 0 END) AS operating_profit_cents
-FROM journal j JOIN entry e ON e.journal_id = j.id
-GROUP BY j.period;
-"""
-
-def install_reconciliation():
-    db = connect()
-    try:
-        db.executescript(RECONCILIATION)
-    finally:
-        db.close()
-
-def monthly_rows():
-    db = connect()
-    try:
-        cursor = db.execute(
-            "SELECT * FROM monthly_reconciliation ORDER BY period"
-        )
-        columns = [item[0] for item in cursor.description]
-        return [dict(zip(columns, row)) for row in cursor.fetchall()]
-    finally:
-        db.close()
-''',
-                        "Collected receivables never masquerade as a second earned fee",
-                        "Bridge opening balances separately and reconcile actual bank statements",
-                    ],
-                    [
-                        "Module six performs ledger QA inside one consistent transaction",
-                        '''def qa():
-    db = connect()
-    try:
-        db.execute("BEGIN IMMEDIATE")
-        if db.execute("PRAGMA integrity_check").fetchone()[0] != "ok":
-            raise AssertionError("Database integrity check failed")
-        if db.execute("PRAGMA foreign_key_check").fetchall():
-            raise AssertionError("Foreign key verification failed")
-        unbalanced = db.execute(
-            """SELECT j.id
-               FROM journal j LEFT JOIN entry e ON e.journal_id = j.id
-               GROUP BY j.id
-               HAVING COUNT(e.line_number) < 2
-                  OR COALESCE(SUM(e.cents), 0) <> 0"""
-        ).fetchall()
-        if unbalanced:
-            raise AssertionError(("Incomplete or unbalanced journals", unbalanced))
-        negative = db.execute(
-            """SELECT j.lead_id
-               FROM journal j JOIN entry e ON e.journal_id = j.id
-               WHERE e.account = 'ar'
-               GROUP BY j.lead_id HAVING SUM(e.cents) < 0"""
-        ).fetchall()
-        if negative:
-            raise AssertionError(("Negative matter receivables", negative))
-        orphaned = db.execute(
-            """SELECT j.id FROM journal j
-               LEFT JOIN command c ON c.command_key = j.id
-               WHERE c.command_key IS NULL"""
-        ).fetchall()
-        if orphaned:
-            raise AssertionError(("Journals lack committed commands", orphaned))
-        db.commit()
-        return {"integrity": "passed", "journal_balance": "passed"}
-    except BaseException:
-        if db.in_transaction:
-            db.rollback()
-        raise
-    finally:
-        db.close()
-
-if __name__ == "__main__":
-    initialize()
-    install_reconciliation()
-    print(qa())
-''',
-                        "A consistent snapshot detects incomplete journals and broken linkage",
-                        "Add replay concurrency restore and bank-matching tests before deployment",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Provision the restricted ledger",
-                    "action": "Concatenate the six implementation cells in order and initialize a dedicated firm database.",
-                    "detail": "Use encrypted storage, controlled filesystem permissions, tested backups, and a local filesystem with supported SQLite locking.",
-                },
-                {
-                    "step": 2,
-                    "title": "Intake and verify immutable evidence",
-                    "action": "Call intake, preserve its returned matter identity, and record authenticated source and counsel attestations.",
-                    "detail": "Replay identical command keys after interrupted requests; conflicting arguments must fail rather than create replacement events.",
-                },
-                {
-                    "step": 3,
-                    "title": "Post earned work and matched receipts",
-                    "action": "Move the matter to verified, invoice delivered blocks, and post collections using stable bank transaction identities.",
-                    "detail": "Use a bank account identifier plus statement transaction identifier as the collection command key; retain the bank evidence outside the ledger.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close the period against external evidence",
-                    "action": "Run qa, export monthly_rows, and reconcile every receipt and expense against the bank statement.",
-                    "detail": "Test two processes collecting the same outstanding amount with different keys; only the first may commit once receivables are exhausted.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Price legal attrition explicitly and keep award upside outside payroll",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use a probability tree to expose attrition without dressing assumptions as observed DOJ "
-                    "rates. For sensitivity testing, begin with one hundred investigative prospects. Assume "
-                    "sixty fail counsel's combined public-disclosure and original-source assessment, leaving "
-                    "forty; assume half of those lack sufficient representative-claim support, leaving twenty "
-                    "potential filings. These are planning assumptions, not published dismissal frequencies. "
-                    "Among filed matters, assume forty percent intervention and sixty percent non-intervention. "
-                    "Apply an additional ten percent government-dismissal assumption within the non-intervened "
-                    "branch, then assume recoveries in fifty percent of intervened matters and twenty percent "
-                    "of surviving non-intervened matters. Conditional recovery probability becomes "
-                    "0.40 × 0.50 + 0.60 × 0.90 × 0.20 = 30.8 percent per filed matter. "
-                    "Consequently, 69.2 percent of filed matters and 93.84 percent of initial prospects "
-                    "produce no modeled recovery. Expected branch counts may be fractional because this is "
-                    "a sensitivity model, not an actual docket inventory. Replace assumptions with the "
-                    "operator's observed cohorts and dated DOJ statistics where comparable denominators "
-                    "exist. Granston-style dismissal consideration is distinct from non-intervention: "
-                    "declining intervention does not itself dismiss an action. Track dismissal motions, "
-                    "orders, withdrawals, settlements, and judgments separately."
-                ),
-                (
-                    "Award percentages require program-specific arithmetic. Under 31 U.S.C. § 3730(d), an "
-                    "ordinary eligible FCA relator generally receives fifteen to twenty-five percent when "
-                    "the government proceeds and twenty-five to thirty percent when it does not, subject "
-                    "to statutory qualifications and reductions. A $1 million qualifying recovery therefore "
-                    "supports illustrative gross relator ranges of $150,000 to $250,000 or $250,000 to "
-                    "$300,000, not an automatic analytics-company entitlement. SEC awards generally range "
-                    "from ten to thirty percent of monetary sanctions collected in qualifying actions "
-                    "exceeding $1 million; CFTC percentages also generally run ten to thirty percent. "
-                    "IRS section 7623(b) generally provides fifteen to thirty percent of collected proceeds "
-                    "when its eligibility and amount thresholds apply, including the individual-taxpayer "
-                    "income condition. Thus fifteen to thirty percent is not a universal cross-program "
-                    "rate. Maintain a separate allocation worksheet showing the statutory recipient, "
-                    "collected award, permissible deductions, other owners' interests, and operator amount "
-                    "actually earned. Where the operator acts as agent, ASC 606 presentation reflects "
-                    "the retained service consideration rather than gross custodial receipts. Have the "
-                    "accountant identify the applicable recognition framework for each award; do not "
-                    "assume every statutory payment is customer-contract revenue."
-                ),
-                (
-                    "Plan for FCA investigations that may remain under seal for two to five or more "
-                    "years through extensions, while recognizing that SEC and IRS processes have different "
-                    "confidentiality structures rather than an identical court-seal mechanism. Section "
-                    "3730(b)(2) establishes the initial FCA seal and government service requirements; "
-                    "counsel manages extensions, permitted disclosures, and court directions. A seal breach "
-                    "can cause severe sanctions or dismissal and destroy economic upside, but automatic "
-                    "dismissal is not the universal rule after State Farm Fire & Casualty Co. v. "
-                    "United States ex rel. Rigsby. Keep deadline alerts free of sealed allegations and "
-                    "restrict contractor access to the minimum authorized material. Model a zero-award "
-                    "year as the ordinary operating budget. The Base business remains viable because "
-                    "$487,500 of delivered retainer work covers $268,125 of annual operating costs and "
-                    "leaves $219,375 owner profit. A delayed complaint, declined intervention, or failed "
-                    "award application therefore changes the contingent register rather than payroll "
-                    "funding. If a firm stops purchasing analytical work, reduce its next service allocation "
-                    "and replace that commercial demand independently of litigation outcomes. Never "
-                    "discount invoices against an anticipated relator share or borrow against a probability "
-                    "tree presented as if it were an enforceable receivable."
-                ),
-            ],
-            "table": {
-                "caption": "Statutory Attrition, Award Allocation, and Zero-Recovery Control Matrix",
-                "headers": [
-                    "Decision branch and controlling operating distinction",
-                    "Explicit denominator and worked numerical assumption",
-                    "Cash recognition and allocation treatment",
-                    "Fallback when the branch fails",
-                ],
-                "rows": [
-                    [
-                        "Public disclosure requires fact-specific counsel analysis before proceeding",
-                        "Illustrative screening retains forty of one hundred prospects",
-                        "All unfiled prospects carry zero booked award receivables",
-                        "Continue contracted research only where independent service value exists",
-                    ],
-                    [
-                        "Rule 9(b) particularity requires supported claim-level factual allegations",
-                        "Twenty of forty screened prospects survive illustrative evidence testing",
-                        "Pleading readiness creates no collected revenue or cash",
-                        "Seek authorized primary records or close unsupported hypotheses",
-                    ],
-                    [
-                        "DOJ non-intervention differs from dismissal and private continuation",
-                        "Twelve of twenty filings follow assumed non-intervention branch",
-                        "Government participation changes litigation strategy rather than retainer recognition",
-                        "Counsel reassesses prosecution resources without presuming award collection",
-                    ],
-                    [
-                        "Government dismissal requires separate statutory and procedural analysis",
-                        "Ten percent of twelve means 1.2 expected dismissals",
-                        "Dismissed matters contribute zero assumed statutory recovery proceeds",
-                        "Record the actual order and preserve restricted workpapers",
-                    ],
-                    [
-                        "FCA recovery percentages depend on government participation and qualifications",
-                        "$1 million recovery yields illustrative $150,000–$300,000 gross relator ranges",
-                        "Only eligible earned operator amounts enter applicable revenue accounts",
-                        "Keep other recipients' money outside operator income calculations",
-                    ],
-                    [
-                        "SEC CFTC and IRS awards have distinct eligibility thresholds",
-                        "SEC and CFTC generally use ten-to-thirty percent award ranges",
-                        "Record actual collections and lawful allocations rather than headlines",
-                        "Counsel routes submissions and documents program-specific eligibility failures",
-                    ],
-                    [
-                        "Zero-recovery budget funds all ordinary operating commitments independently",
-                        "$487,500 retainer revenue less $268,125 costs leaves $219,375",
-                        "Pending awards remain outside payroll and receivables forecasts",
-                        "Reduce discretionary research when contracted service demand weakens",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before any matter advances",
-                "body": (
-                    "Each check produces a dated artifact owned by a named role. A failed check "
-                    "pauses the relevant activity without concealing the reason."
-                ),
-                "items": [
-                    "Evidence lead confirms lawful source access, immutable hashes, relevant denominators, and preserved counterevidence before scoring is distributed.",
-                    "Matter attorney records public-disclosure analysis, original-source facts where relevant, and the controlling Rule 9(b) pleading requirements before recommending an FCA filing.",
-                    "Counsel confirms seal instructions, authorized recipients, and the correct FCA, SEC, IRS, or CFTC submission route before information leaves the restricted workspace.",
-                    "Accounting owner verifies delivered work, bank-matched collections, recipient allocations, and sufficient retainer-funded cash before posting revenue or committing operating spend.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Walk three monthly cohorts from screened leads to reconciled cash",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "This ninety-day cohort begins with an established firm roster, not a cold launch. "
-                    "The four-to-twelve-month first-deal range remains the acquisition planning assumption; "
-                    "startup capital of $10,000 to $45,000 funds that separate ramp. Begin this walk "
-                    "with $20,000 unrestricted cash and $20,312.50 opening receivables from delivered "
-                    "Month 0 work. Five ongoing law-firm customers each commission one $8,125 monthly "
-                    "package. Each month produces twenty screened investigative prospects: twelve are "
-                    "scrubbed for weak evidence or innocent explanations, three enter unresolved research "
-                    "holds, and five become paid evidence-production assignments. These counts are "
-                    "illustrative service-selection decisions, not the separate statutory probability "
-                    "tree. Deliver twenty-five blocks by the monthly acceptance date, recognize $40,625, "
-                    "and invoice the five firms. Contracts schedule half of each invoice for payment "
-                    "within that month and half during the following month. Both installments follow "
-                    "delivery, so no advance-deposit liability is needed in this example. The first "
-                    "month collects $20,312.50 from Month 0 and $20,312.50 from Month 1. Each "
-                    "subsequent month repeats that timing, maintaining $20,312.50 closing receivables "
-                    "without treating opening receivables as new current-period revenue."
-                ),
-                (
-                    "Allocate $22,343.75 monthly operating costs to the actual production model: $12,000 "
-                    "for two contractors, $4,000 for data acquisition and research infrastructure, $2,500 "
-                    "for security, insurance, and professional administration, $2,000 for business development, "
-                    "and $1,843.75 for other delivery expenses. Contractor labor totals $144,000 annually; "
-                    "the remaining $124,125 brings annual costs to $268,125. For this cohort, all expenses "
-                    "are paid in the month incurred, and the one full-time owner takes profit rather "
-                    "than an additional salary charged on top of the modeled costs. The supplied "
-                    "$1,500-to-$9,500 monthly opex range is an early operating reference, not a ceiling "
-                    "on the mature Base case's fully loaded costs. The example's non-contractor costs "
-                    "are $10,343.75 monthly, making that distinction explicit rather than forcing "
-                    "incompatible budgets together. Retainer receipts of $40,625 minus $22,343.75 paid "
-                    "costs generate $18,281.25 monthly operating cash. No statutory award is collected. "
-                    "Owner distributions, income taxes, capital expenditure, and financing movements are "
-                    "excluded from this operating bridge and must be added separately to an actual "
-                    "bank reconciliation. Opening cash therefore reaches $38,281.25, $56,562.50, and "
-                    "$74,843.75 after Months 1, 2, and 3."
-                ),
-                (
-                    "Close each monthly cohort with four reconciliations: accepted blocks to invoices, "
-                    "invoices and credits to receivables, bank transactions to collections and expenses, "
-                    "and ledger totals to the scenario workbook. Across ninety days, fifteen paid "
-                    "assignments produce seventy-five accepted blocks and $121,875 recognized service "
-                    "revenue. Thirty-six prospects were scrubbed and nine remain research holds; neither "
-                    "category generates invoices merely for appearing in the pipeline. Receipts total "
-                    "$121,875 because opening and closing receivables are equal, not because all "
-                    "quarterly invoices have already cleared. Expenses total $67,031.25, leaving "
-                    "$54,843.75 profit and operating cash generation. Multiplying these quarterly "
-                    "figures by four reproduces the Base scorecard exactly: $487,500 revenue, "
-                    "$268,125 costs, $219,375 profit, and a 45.0 percent margin. A missed "
-                    "$20,312.50 installment would reduce cash by that amount and increase receivables "
-                    "equally, before any collectability adjustment; it would not create a statutory "
-                    "award funding source. Suspend new discretionary blocks when overdue balances "
-                    "exceed the contract's credit terms. Reprice or reduce the next cohort if "
-                    "delivery cost rises. The repeatable asset is a verified, paid production "
-                    "system, not a larger inventory of allegations awaiting a distant government decision."
-                ),
-            ],
-            "table": {
-                "caption": "Worked 90-Day Cohort Walk",
-                "headers": [
-                    "Cohort period and screened assignment movement",
-                    "Earned revenue and scheduled service cash receipts",
-                    "Scrubs losses and fully loaded operating costs",
-                    "Receivables and cumulative operating cash reconciliation",
-                ],
-                "rows": [
-                    [
-                        "Opening bridge starts after the separate customer-acquisition ramp",
-                        "Month 0 contributes $20,312.50 receivables but no current revenue",
-                        "Initial unrestricted cash equals $20,000 before cohort expenses",
-                        "Opening cash $20,000; opening receivables $20,312.50 remain distinct",
-                    ],
-                    [
-                        "Month 1 screens twenty prospects and completes five assignments",
-                        "Earn $40,625; collect $20,312.50 prior plus $20,312.50 current",
-                        "Twelve scrubs; three holds; zero credit losses; $22,343.75 costs",
-                        "Receivables $20,312.50; cumulative generated cash $18,281.25; balance $38,281.25",
-                    ],
-                    [
-                        "Month 2 screens twenty prospects and completes five assignments",
-                        "Earn $40,625; collect $20,312.50 prior plus $20,312.50 current",
-                        "Twelve scrubs; three holds; zero credit losses; $22,343.75 costs",
-                        "Receivables $20,312.50; cumulative generated cash $36,562.50; balance $56,562.50",
-                    ],
-                    [
-                        "Month 3 screens twenty prospects and completes five assignments",
-                        "Earn $40,625; collect $20,312.50 prior plus $20,312.50 current",
-                        "Twelve scrubs; three holds; zero credit losses; $22,343.75 costs",
-                        "Receivables $20,312.50; cumulative generated cash $54,843.75; balance $74,843.75",
-                    ],
-                    [
-                        "Quarter totals sixty screened prospects and fifteen delivered assignments",
-                        "Recognized fees $121,875; service receipts $121,875; awards collected $0",
-                        "Thirty-six scrubs; nine holds; zero credit losses; $67,031.25 costs",
-                        "Equal opening and closing receivables explain matched quarterly receipts",
-                    ],
-                    [
-                        "Base annualization repeats four identical operating quarters without awards",
-                        "Annual recognized service revenue equals $121,875 multiplied by four",
-                        "Annual costs $268,125 leave exactly $219,375 owner net profit",
-                        "45.0% margin reconciles to the canonical $487,500 revenue case",
-                    ],
-                    [
-                        "Collection stress delays one scheduled installment beyond quarter close",
-                        "Service receipts fall $20,312.50 without automatic revenue reversal",
-                        "Evaluate collectability separately and suspend discretionary unpaid production",
-                        "Closing cash becomes $54,531.25; receivables rise to $40,625",
-                    ],
-                    [
-                        "Canonical boundary checks retain all three supplied annual scenarios",
-                        "Conservative $95,000; Base $487,500; Scaled $880,000 recognized operator revenue",
-                        "Corresponding costs equal $64,600; $268,125; and $369,600 respectively",
-                        "Profits equal $30,400; $219,375; and $510,400 at specified margins",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Fund the investigation with delivered evidence work, and let an award become money only when its lawful allocation and collection are real.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Execute five scoped $8,125 service packages only against actual customer demand, with delivery acceptance and two-installment collection terms documented.",
-        "Freeze source snapshots, transformation versions, counterevidence, and signed counsel attestations before moving matters from intake to verified production.",
-        "Extract the six reference modules, restrict database access, and test command replay, conflicting keys, simultaneous collections, and backup restoration.",
-        "Keep FCA seal materials in counsel-controlled storage and route FCA, SEC Form TCR, IRS Form 211, and any CFTC submissions through the designated attorney.",
-        "Reconcile each monthly $40,625 revenue cohort to accepted blocks, $22,343.75 operating costs, bank-matched receipts, and the receivables roll-forward.",
-        "Maintain zero-award operating forecasts and a separate contingent register with program eligibility, dismissal assumptions, recipient allocations, and actual collection evidence.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "31 U.S.C. § 3730(b)(2), (c)(2)(A), (d), and (e)(4)",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3730",
-            "relevance": "Controls FCA seal procedures, government dismissal authority, relator award ranges, and the public-disclosure and original-source framework.",
-        },
-        {
-            "title": "Federal Rule of Civil Procedure 9(b)",
-            "url": "https://www.law.cornell.edu/rules/frcp/rule_9",
-            "relevance": "Requires particularity when alleging fraud; counsel applies controlling circuit requirements to representative-claim evidence.",
-        },
-        {
-            "title": "15 U.S.C. § 78u-6",
-            "url": "https://www.law.cornell.edu/uscode/text/15/78u-6",
-            "relevance": "Establishes SEC whistleblower eligibility, qualifying monetary-sanction thresholds, and the ten-to-thirty percent award framework.",
-        },
-        {
-            "title": "7 U.S.C. § 26",
-            "url": "https://www.law.cornell.edu/uscode/text/7/26",
-            "relevance": "Establishes the CFTC whistleblower program and its distinct award eligibility and percentage provisions.",
-        },
-        {
-            "title": "26 U.S.C. § 7623(b)",
-            "url": "https://www.law.cornell.edu/uscode/text/26/7623",
-            "relevance": "Defines IRS whistleblower award percentages, collected-proceeds requirements, amount thresholds, and the individual-taxpayer income condition.",
-        },
-        {
-            "title": "45 CFR § 149.510",
-            "url": "https://www.ecfr.gov/current/title-45/section-149.510",
-            "relevance": "Sets federal independent dispute resolution requirements for eligible out-of-network disputes, including negotiation and initiation timing.",
-        },
-        {
-            "title": "45 CFR § 149.520",
-            "url": "https://www.ecfr.gov/current/title-45/section-149.520",
-            "relevance": "Addresses federal payment and dispute-resolution treatment for covered out-of-network air ambulance services.",
-        },
-        {
-            "title": "29 CFR § 2560.503-1(h)(3)(i)",
-            "url": "https://www.ecfr.gov/current/title-29/section-2560.503-1",
-            "relevance": "Requires qualifying group-health claims procedures to provide at least 180 days for appeals of adverse benefit determinations.",
-        },
-        {
-            "title": "45 CFR § 164.504(e)",
-            "url": "https://www.ecfr.gov/current/title-45/section-164.504",
-            "relevance": "Specifies business associate contract requirements relevant to authorized protected-health-information processing.",
-        },
-        {
-            "title": "45 CFR § 164.312",
-            "url": "https://www.ecfr.gov/current/title-45/section-164.312",
-            "relevance": "Defines technical safeguards for electronic protected health information, including access controls, audit controls, integrity, authentication, and transmission security.",
-        },
-        {
-            "title": "State Farm Fire & Casualty Co. v. United States ex rel. Rigsby, 580 U.S. 39 (2016)",
-            "url": "https://www.supremecourt.gov/opinions/16pdf/15-513_43j7.pdf",
-            "relevance": "Explains why an FCA seal violation does not require automatic dismissal while leaving meaningful sanctions and dismissal risk.",
-        },
-    ],
-}
+CHAPTER_7 = {'id': 'Q7',
+ 'chapter_id': 'Q7',
+ 'chapter_number': 7,
+ 'question_number': 7,
+ 'slug': 'government-contracts-cyber-fraud-fca-exposure',
+ 'question_prompt': 'How do government contractors face FCA exposure from procurement conduct and '
+                    'cybersecurity noncompliance, and what triggers those investigations?',
+ 'kicker': 'Q7 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Government Contracts and Cyber-Fraud: FCA Exposure for Contractors',
+ 'subtitle': "DOJ's Civil Cyber-Fraud Initiative, CMMC and NIST attestation risk, whistleblower triggers "
+             'in defense contracting, GSA procurement-integrity and leaked-pricing cases, common contract '
+             'FCA scenarios, risk prevention, defense counsel strategy, and UAP-program FCA theories',
+ 'layout_template': 'thirty_day_roadmap',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Relator counsel, a former EDVA U.S. Attorney, a DOJ fraud-section alumna and '
+                      "contractor-side defense firms converge on one point: since DOJ's October 2021 Civil "
+                      'Cyber-Fraud Initiative, a cybersecurity gap stops being a fixable contract defect '
+                      'and becomes a knowing false claim the moment an invoice goes out. Three theories '
+                      'drive the cases: deficient cyber products or services, misrepresented controls such '
+                      'as NIST 800-171 and SPRS certifications, and late incident reporting. The economics '
+                      'are brutal: treble damages, per-claim penalties quoted from about $11,665 to '
+                      "$28,619, relator shares of 15-30%, and settlements ranging from Georgia Tech's "
+                      "roughly $1M to Aerojet Rocketdyne's $9M. The pipeline is insider-fed, led by "
+                      'overworked security officers who say nobody listened. Practitioners split on '
+                      'whether a misrepresented security posture is automatically material, whether a '
+                      'breach is needed to prove materiality, and how hard relator counsel should push the '
+                      'government during the seal period.',
+ 'key_metrics': [{'label': 'Relator Share of Government Recovery',
+                  'metric': 'Relator Share of Government Recovery',
+                  'value': '15% to 30%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Julie Bracker's stated range for the whistleblower's cut; even at one-third, "
+                             'the government still nets double damages and the defendant also pays '
+                             "attorney's fees.",
+                  'source': 'ClearanceJobs ([j_QEFJG-ON4 @ 00:05:12])'},
+                 {'label': 'Per-Claim Civil Penalty (July 2025)',
+                  'metric': 'Per-Claim Civil Penalty (July 2025)',
+                  'value': '$14,308 to $28,619 per claim',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Inflation-adjusted penalty range stacked on top of treble damages, applied '
+                             'to each false claim submitted.',
+                  'source': 'UAP Legion ([Y9DOny35SW0 @ 00:03:15])'},
+                 {'label': 'Aerojet Rocketdyne Cyber Settlement',
+                  'metric': 'Aerojet Rocketdyne Cyber Settlement',
+                  'value': '$9M',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'DOJ declined to intervene; the relator case settled in April 2022 after '
+                             'summary judgment was denied.',
+                  'source': 'Thompson Coburn LLP ([CNlX3Qfdluw @ 00:31:43])'},
+                 {'label': 'Average Qui Tam Lifecycle',
+                  'metric': 'Average Qui Tam Lifecycle',
+                  'value': '2 to 3 years from filing to resolution',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Bracker's average across relator-side cases, against a 60-day statutory "
+                             'investigation window; the longest seal ran over 10 years.',
+                  'source': 'ClearanceJobs ([j_QEFJG-ON4 @ 00:15:32])'}],
+ 'sections': [{'section_number': 1,
+               'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every practitioner starts from the same premise: the False Claims Act is, '
+                              "in Julie Bracker's words, the federal government's 'primary tool for "
+                              "addressing the knowing misuse of taxpayer funds,' and since October 2021 "
+                              'DOJ has pointed that tool straight at contractor cybersecurity [j_QEFJG-ON4 '
+                              "@ 00:01:33]. Thompson Coburn's panel dates the Civil Cyber-Fraud Initiative "
+                              'to that October 2021 announcement, enforcing 31 USC 3729 against knowing '
+                              'cybersecurity violations, in a year when FCA recoveries topped $5.6B, more '
+                              "than $5B of it from healthcare [CNlX3Qfdluw @ 00:05:25]. PilieroMazza's "
+                              'cyber team is blunt about the design: the initiative does not invent any '
+                              'new cybersecurity requirements; it uses the FCA to enforce the ones already '
+                              'sitting in your contracts and to deter noncompliance [OqheRWaihEo @ '
+                              '01:08:36]. Blue Ocean Law Group frames the before-and-after in operator '
+                              'terms: before 2021 a vulnerability was a fixable fine, after 2021 it is '
+                              "fraud, because 'the crime is the lie' [4mXSodsYqr4 @ 00:03:00]. The "
+                              'consensus takeaway is that cyber exposure now rides on representations '
+                              'rather than on incidents. A contractor that certifies controls it does not '
+                              'actually run, then keeps billing against those certifications, has handed '
+                              'both DOJ and any disgruntled insider a ready-made theory that requires no '
+                              'stolen data and no breach report. That is the baseline every speaker builds '
+                              'on.',
+                              'On the theories of liability, the speakers are unanimous. Jones Day lays '
+                              'out the three uses DOJ announced: knowingly failing to comply with '
+                              'cybersecurity standards, knowingly misrepresenting controls such as '
+                              'encryption claims or incident-response plans, and knowingly failing to '
+                              'timely report cyber incidents [ah8GhXnbe-8 @ 00:00:57]. Bracker maps the '
+                              'same trio onto contractor paperwork, treating every NIST and DFARS '
+                              'certification made since January 1, 2018 as a potential misrepresentation '
+                              'and arguing that an inaccurate SPRS score carries a duty to correct, with '
+                              "'no patience' for riding out the three-year recertification cycle "
+                              '[j_QEFJG-ON4 @ 00:08:40]. The scienter line is equally settled. Thompson '
+                              'Coburn stresses that the knowledge standard means actual knowledge, '
+                              'deliberate ignorance or reckless disregard, a lower bar than the CFAA '
+                              'hacking statute, yet one that still excludes innocent mistake, mere error '
+                              "or negligence [CNlX3Qfdluw @ 00:12:17]. PilieroMazza's Matt Feinberg and "
+                              "Camilla Hundley compress it into one line: 'a mere mistake or accident' is "
+                              'not enough, but recklessness is [ZyG_Zu7OvIg @ 00:04:45]. For an operator, '
+                              'the practical read is that ignorance stops being a shelter once warning '
+                              'signs exist. Deliberate ignorance and reckless disregard sit inside the '
+                              'definition, so a company that declines to look at its own security posture, '
+                              'then invoices on the strength of that posture, has walked into the standard '
+                              'rather than around it.',
+                              'The third pillar of consensus is that the invoice, not the breach, is the '
+                              'trigger. Daniel Strauss of Cordatus LLP, speaking on CMMC LaunchPad, '
+                              'describes two liability paths: representations made at proposal or award, '
+                              'covering 8(a) status, 51% veteran ownership and cyber status, and an '
+                              'implied re-certification riding on every invoice, which the government '
+                              'reads as a license to claw back every contract dollar [GkIQylusGaw @ '
+                              '00:05:21]. Blue Ocean Law Group lands in the same place, warning that '
+                              'simply sending an invoice while noncompliant can be a false claim and '
+                              "calling the Act 'the government's number one weapon for fighting fraud' "
+                              '[4mXSodsYqr4 @ 00:01:21]. The speakers also agree on who pulls the trigger. '
+                              'Jones Day flags the overworked, under-resourced information security '
+                              "officer as 'somebody who could legitimately turn out to be a whistleblower' "
+                              '[ah8GhXnbe-8 @ 00:03:26]. Former DOJ fraud-section assistant director Sarah '
+                              'Mlan, interviewed by Federal News Network, confirms the pattern from the '
+                              'government side: in cyber matters it is in-house cybersecurity '
+                              'professionals with extensive information who come forward, typically '
+                              'because nobody listened to them [ovf7HOfeGQ0 @ 00:06:38]. The baseline '
+                              'prerequisite is therefore cultural as much as technical. The internal '
+                              'security complaint that management shrugs off is effectively the first '
+                              'draft of a sealed qui tam complaint, written by the person who knows '
+                              'exactly where the gaps sit.'],
+               'table': {'caption': 'Where the practitioners agree: the baseline mechanics of cyber-driven '
+                                    'FCA exposure',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Agree On',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['FCA is the primary enforcement weapon',
+                                   "The Act is DOJ's primary tool against knowing misuse of taxpayer "
+                                   'funds, now aimed at cyber',
+                                   'Treat every cybersecurity certification as fraud exposure rather than '
+                                   'a routine IT ticket',
+                                   'ClearanceJobs ([j_QEFJG-ON4 @ 00:01:33])'],
+                                  ['No new rules, only new enforcement',
+                                   'The initiative enforces cyber requirements already in contracts '
+                                   'instead of creating new ones',
+                                   'Your exposure already lives inside clauses incorporated into your '
+                                   'current contract portfolio',
+                                   'PilieroMazza PLLC ([OqheRWaihEo @ 01:08:36])'],
+                                  ['Three announced theories of liability',
+                                   'Knowing noncompliance, misrepresented security controls, and knowing '
+                                   'failure to timely report incidents',
+                                   'Audit standards, representations and notification windows as three '
+                                   'separate exposure lanes',
+                                   'Jones Day ([ah8GhXnbe-8 @ 00:00:57])'],
+                                  ['Scienter floor excludes honest mistakes',
+                                   'Actual knowledge, deliberate ignorance or reckless disregard count; '
+                                   'innocent mistake and negligence do not',
+                                   'Documented good-faith effort is what separates a contract dispute from '
+                                   'fraud liability',
+                                   'Thompson Coburn LLP ([CNlX3Qfdluw @ 00:12:55])'],
+                                  ['Every invoice re-certifies compliance',
+                                   'Implied re-certification rides on each invoice, letting the government '
+                                   'seek every contract dollar back',
+                                   'Never keep billing a contract while knowingly carrying unreported '
+                                   'cybersecurity gaps on file',
+                                   'CMMC LaunchPad ([GkIQylusGaw @ 00:05:21])'],
+                                  ['No breach needs to be proven',
+                                   'Promising security and failing to deliver it is fraud even when no '
+                                   'data is stolen',
+                                   'A clean incident history provides zero cover for false certifications '
+                                   'already submitted',
+                                   'Blue Ocean Law Group. innovative Counsel [iC] ([4mXSodsYqr4 @ '
+                                   '00:00:32])'],
+                                  ['Insiders are the relator pipeline',
+                                   'In-house cybersecurity professionals holding extensive information are '
+                                   'the people actually coming forward',
+                                   'Unresolved internal security complaints are the leading indicator of '
+                                   'incoming qui tam risk',
+                                   'Federal News Network ([ovf7HOfeGQ0 @ 00:06:38])']]}},
+              {'section_number': 2,
+               'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The unit economics are where contractors get blindsided. Zack Trilliger, '
+                              "the former EDVA U.S. Attorney who now runs a firm's DC office, walks the "
+                              'math: damages triple, so $5M becomes $15M, and penalties of $14K to $28K '
+                              'attach to each claim, including every invoice on an IDIQ, before suspension '
+                              'and debarment even enter the picture [-2BTi30xXrA @ 00:07:24]. Daniel '
+                              'Strauss pushes the base number higher, explaining that on a $1M contract '
+                              "carrying $100K of profit the government's position is that the full $1M is "
+                              'owed regardless of profit, and treble damages turn it into $3M [GkIQylusGaw '
+                              "@ 00:49:01]. PilieroMazza's cyber panel runs the same multiplier on a $10M "
+                              'contract to reach a $30M recovery claim [OqheRWaihEo @ 01:07:40]. Matt '
+                              'Feinberg then layers the per-invoice penalty on top: 60 invoices means 60 '
+                              'violations, a $150K billing error balloons to roughly $475K at about '
+                              "'23,000 a pop,' and a $7M HUBZone contract can generate a whistleblower "
+                              "share of roughly $7M on its own [ZyG_Zu7OvIg @ 00:46:22]. Trilliger's own "
+                              "label for this exposure is 'extinction level events for certain companies.' "
+                              'The operator lesson is to model risk per invoice rather than per contract, '
+                              'because the penalty count scales directly with billing frequency, and '
+                              'monthly invoicing on a multi-year IDIQ quietly stacks dozens of separate '
+                              'violations onto a single underlying compliance gap.',
+                              'The procedural clock is long and lopsided. Bracker notes that the statute '
+                              'gives the government 60 days to investigate, which is barely enough to '
+                              'assemble a team and interview the relator; extensions run from three months '
+                              'to a year, the longest seal Bracker has carried lasted over ten years, and '
+                              'the average case runs two to three years from filing to resolution '
+                              "[j_QEFJG-ON4 @ 00:14:44]. On the government's investigative toolkit, "
+                              'Trilliger reports civil investigative demands for both documents and '
+                              'testimony, one of them reaching back seven years across all records, with '
+                              '30-day or 14-day turnarounds and a public motion to compel waiting for '
+                              'anyone who ignores them [-2BTi30xXrA @ 00:14:47]. The relator economics run '
+                              'on a sliding scale. UAP Legion breaks out 15-25% when DOJ intervenes and '
+                              '25-30% when it declines, so a $300M recovery pays the relator between $45M '
+                              'and $90M, with the first-to-file rule rewarding whoever reaches the '
+                              'courthouse first [Y9DOny35SW0 @ 00:13:09]. Sarah Mlan adds that relators '
+                              "collect up to 30% plus attorney's fees and that 'you don't actually have to "
+                              "have a lot of information' to qualify [ovf7HOfeGQ0 @ 00:06:04]. Low "
+                              'evidentiary entry cost, a first-to-file race and a percentage-of-recovery '
+                              'payout mean the relator pipeline stays full, and a contractor should assume '
+                              'any known gap is already being documented by someone inside the building.',
+                              'The live-fire mechanics center on SPRS scores, notification windows and '
+                              'self-disclosure. Strauss gives the concrete play for a score that collapses '
+                              'from 110 to -200: update SPRS and fire an FYI email to the contracting '
+                              'officer now, then move to formal notice once a minimum score becomes '
+                              'mandatory, partly so a competitor cannot report you first [GkIQylusGaw @ '
+                              '00:14:03]. On incident reporting, Jones Day tells contractors to pull the '
+                              'actual notification timeframe from each contract, because it may be vague, '
+                              "such as 'reasonable time' or 'without undue delay,' or hard, like the "
+                              "GDPR's 72-hour deadline [ah8GhXnbe-8 @ 00:02:05]. Thompson Coburn adds the "
+                              'DFARS overlay: rapid incident reporting tied to NIST 800-171, plus '
+                              'preservation of anything related to the incident for at least 90 days '
+                              '[CNlX3Qfdluw @ 00:22:47]. Self-disclosure carries a measurable discount; '
+                              'Bracker cites Verizon coming forward on its own and settling at a '
+                              'multiplier of roughly 1.5 rather than the full treble [j_QEFJG-ON4 @ '
+                              '00:12:07]. Strauss reports the same dynamic from the defense chair, where '
+                              'going first let the client control the narrative and lowered the '
+                              'settlement. The working rule is to treat SPRS as a living certification, '
+                              "pre-map every contract's reporting deadline, and assume that whoever tells "
+                              'the contracting officer first sets the terms of the conversation.'],
+               'table': {'caption': 'Street numbers: penalties, clocks, splits and retention windows '
+                                    'quoted by practitioners',
+                         'headers': ['Mechanic',
+                                     'Stated Number or Tool',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Per-claim civil penalty range',
+                                   '$14,308 to $28,619 per claim as of July 2025, on top of treble damages',
+                                   'Multiply by total invoice count across the contract life to size '
+                                   'worst-case exposure',
+                                   'UAP Legion ([Y9DOny35SW0 @ 00:03:15])'],
+                                  ['Civil investigative demand turnaround',
+                                   '30-day or 14-day response windows; one CID demanded seven years of all '
+                                   'records',
+                                   'Pre-stage document collection so a CID never forces a public motion to '
+                                   'compel',
+                                   'Cape Endeavors, Inc. ([-2BTi30xXrA @ 00:14:47])'],
+                                  ['Seal period and case lifecycle',
+                                   '60 statutory days, extensions of three months to one year, longest '
+                                   'seal over ten years',
+                                   'Budget legal spend and management attention for a two-to-three-year '
+                                   'campaign, not weeks',
+                                   'ClearanceJobs ([j_QEFJG-ON4 @ 00:14:44])'],
+                                  ['Relator share sliding scale',
+                                   '15-25% if DOJ intervenes, 25-30% if declined; $300M recovery pays '
+                                   '$45M-$90M',
+                                   'Recognize that declination does not end the case and actually raises '
+                                   'the relator payout',
+                                   'UAP Legion ([Y9DOny35SW0 @ 00:13:09])'],
+                                  ['Incident data preservation window',
+                                   'Anything related to a cyber incident must be maintained for at least '
+                                   '90 days',
+                                   'Lock incident artifacts immediately so destruction never becomes a '
+                                   'second false-claim theory',
+                                   'Thompson Coburn LLP ([CNlX3Qfdluw @ 00:22:47])'],
+                                  ['POA&M gap closure deadline',
+                                   'Open plan-of-action-and-milestones items must close within 180 days',
+                                   'Track every open POA&M item against the clock before the next SPRS '
+                                   'update',
+                                   'CMMC LaunchPad ([GkIQylusGaw @ 00:36:35])'],
+                                  ['Statute of limitations',
+                                   'Six years, or three years from discovery, capped at a ten-year maximum',
+                                   'Keep certification and invoice records retrievable for the full '
+                                   'ten-year tail of exposure',
+                                   'PilieroMazza PLLC ([ZyG_Zu7OvIg @ 00:50:18])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Moves the defense and relator bar actually make',
+                           'body': 'These are the small, specific habits practitioners say separate a '
+                                   'contract dispute from a sealed qui tam: who gets notified, how '
+                                   'contracts get read, how subpoenas get narrowed, and what the insurance '
+                                   'policy actually says.',
+                           'items': ['Route every material change to the contracting officer, not just the '
+                                     'project manager: an email for minor changes, a formal letter for an '
+                                     'organizational conflict of interest [CMMC LaunchPad — GkIQylusGaw @ '
+                                     '00:09:44]',
+                                     "On award, 'read that thing front to back and highlight the actual "
+                                     "requirements that you're responsible for' so no certification is "
+                                     'made blind [PilieroMazza PLLC — OqheRWaihEo @ 00:46:52]',
+                                     'Negotiate subpoena date ranges down hard; one demand reaching back '
+                                     'to 2006 was narrowed to 2009-2013 [WilliamsMullen — NdqYGSN5BYc @ '
+                                     '00:57:16]',
+                                     "Demand explicit FCA coverage in D&O and E&O policies: 'it costs "
+                                     "something but if you don't ask for it you're not going to get "
+                                     "covered' [WilliamsMullen — NdqYGSN5BYc @ 01:00:31]"]},
+               'sop_steps': [{'step': 1,
+                              'title': 'Map every certification you are making',
+                              'action': 'Build a contract-specific checklist of every cyber clause and '
+                                        'representation tied to each award.',
+                              'detail': 'Pull FAR 52.204-21 and its roughly 26 safeguards, the DFARS '
+                                        'clause requiring NIST 800-171, and DFARS 252.204-7021 CMMC tiers '
+                                        'into one register [Thompson Coburn LLP — CNlX3Qfdluw @ 00:17:58]; '
+                                        'then designate a compliance employee, run internal audits and '
+                                        'keep contract-specific checklists [PilieroMazza PLLC — '
+                                        'ZyG_Zu7OvIg @ 00:39:01].'},
+                             {'step': 2,
+                              'title': 'Keep SPRS live and tell the contracting officer',
+                              'action': 'Update SPRS the moment the score moves and notify the contracting '
+                                        'officer in writing.',
+                              'detail': 'On a drop from 110 to -200, update SPRS and send an FYI email to '
+                                        'the contracting officer, escalating to formal notice once a '
+                                        'minimum score is mandatory, and close POA&M gaps inside 180 days '
+                                        '[CMMC LaunchPad — GkIQylusGaw @ 00:14:03].'},
+                             {'step': 3,
+                              'title': 'Clock every incident against the contract',
+                              'action': "Pre-map each contract's notification window and lock incident "
+                                        'data on discovery.',
+                              'detail': "Identify whether the contract says 'reasonable time,' 'without "
+                                        "undue delay' or a hard 72-hour deadline [Jones Day — ah8GhXnbe-8 "
+                                        '@ 00:02:05], and preserve everything tied to the incident for at '
+                                        'least 90 days [Thompson Coburn LLP — CNlX3Qfdluw @ 00:22:47].'},
+                             {'step': 4,
+                              'title': 'Run the CID and subpoena playbook',
+                              'action': 'Freeze destruction, engage outside counsel and open a channel '
+                                        'with DOJ early.',
+                              'detail': "On a subpoena or CID, don't panic, call counsel and halt document "
+                                        'destruction [PilieroMazza PLLC — ZyG_Zu7OvIg @ 00:44:22]; '
+                                        'designate a point of contact, issue a litigation hold and line up '
+                                        'IT resources [WilliamsMullen — NdqYGSN5BYc @ 00:54:27]; then stop '
+                                        'any ongoing problem, investigate internally and engage DOJ early '
+                                        '[Cape Endeavors, Inc. — -2BTi30xXrA @ 00:29:21].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is when to fix a bad SPRS number. Julie Bracker, a '
+                              'relator-side attorney on ClearanceJobs who has practiced only FCA work '
+                              'since 2005, asserts a duty to correct an inaccurate SPRS score now, has “no '
+                              'patience” for waiting, and expects the defense bar to lean on the 3-year '
+                              'recertification cycle instead [j_QEFJG-ON4 @ 00:08:40]. The CMMC LaunchPad '
+                              "panel with Cordatus LLP's Daniel Strauss runs a tiered play: when a score "
+                              'drops from 110 to -200, update SPRS and send the contracting officer an FYI '
+                              'email, then switch to formal notice once a minimum score becomes mandatory, '
+                              'partly so a competitor cannot report you first [GkIQylusGaw @ 00:14:36]. '
+                              'Strauss adds that voluntary disclosure has been eliminated, disclosure is '
+                              'now mandatory, and going first let the client control the narrative and '
+                              'lowered the settlement [GkIQylusGaw @ 00:55:12]. Theodore Watson goes '
+                              'further, telling contractors who spot a potential FCA issue during '
+                              'performance to report it immediately, “over and beyond any mandatory '
+                              'disclosure requirements,” because paying counsel beats a tarnished '
+                              "reputation [uJurzK0qLLU @ 00:01:55]. Bracker's own scoreboard backs the "
+                              'early-mover camp: Verizon self-disclosed and received a multiplier of about '
+                              '1.5 rather than the full treble every speaker describes.',
+                              'The second fault line is whether a cyber gap is fraud or just a contract '
+                              "problem. Blue Ocean Law Group's narrator takes the hard line: promising "
+                              'security and failing to deliver is fraud even if no data is stolen, no '
+                              'breach needs to be proven, and “the crime is the lie” [4mXSodsYqr4 @ '
+                              "00:00:48]. WilliamsMullen's defense panel runs the opposite playbook: a "
+                              'mere breach of contract is not a False Claims Act violation, so the civil '
+                              'defense goal is to convert the claim into a breach of contract and win '
+                              'summary judgment, and after Escobar, years of payment despite known '
+                              'noncompliance is a strong materiality defense [NdqYGSN5BYc @ 00:30:12]. '
+                              "PilieroMazza PLLC's Part 1 panel sits between them: defective glue is not "
+                              'an FCA violation but falsified testing is, and some product disputes look '
+                              'like “a contract dispute question, not a false claim question,” yet DOJ in '
+                              'certain regions has started to “grasp at those issues” [OqheRWaihEo @ '
+                              '00:54:52]. On CMMC LaunchPad the split played out live: Strauss ties '
+                              'materiality to what the contract says, while attendee Joe and law student '
+                              'Leslie argued a misrepresented security posture is material, even though '
+                              'Leslie reports contracting officers treat CMMC as a “check in the box” '
+                              '[GkIQylusGaw @ 00:22:27].',
+                              'Practitioners also read the enforcement machine differently. Bracker openly '
+                              "opposes relator counsel who want to hold the government's “feet to the "
+                              "fire” on investigations that, by Bracker's count, average 2 to 3 years from "
+                              'filing to resolution [j_QEFJG-ON4 @ 00:35:03]. Former EDVA U.S. Attorney '
+                              'Zack Trilliger, on Cape Endeavors, frames DOJ as reloading rather than '
+                              'retreating: a May Criminal Division memo lists procurement fraud as a top '
+                              'priority, Inspectors General carry on DOGE work, and the whistleblower '
+                              'pipeline is unaffected by resource reallocation [-2BTi30xXrA @ 00:34:02]. '
+                              "Federal News Network's guest, a former assistant director in DOJ's fraud "
+                              'section, undercuts the idea of a dedicated cyber squad: there is no '
+                              'separate cyber fraud unit, just a civil fraud section of about 130 lawyers '
+                              "partnering with U.S. Attorney's offices and agency cyber experts who are "
+                              "“essentially the clients” [ovf7HOfeGQ0 @ 00:07:48]. ASI Education's hosts "
+                              'attack the compliance regime itself, floating a “hot take” that incumbents '
+                              'want CMMC kept as a barrier to entry and arguing the fix is to make CMMC a '
+                              'CLIN so contractors simply price to it, while phase two sits paused since '
+                              'July [95bEAYfWTiY @ 00:12:20].'],
+               'table': {'caption': 'Contested Calls on Cyber-FCA Exposure: Side-by-Side Practitioner '
+                                    'Positions',
+                         'headers': ['Contested Question',
+                                     'Practitioner Position',
+                                     'Counter-Position or Alternative Playbook',
+                                     'Expert Source'],
+                         'rows': [['Deadline for correcting an inaccurate SPRS score after discovery',
+                                   'Bracker asserts a present duty to correct and has no patience for '
+                                   'waiting',
+                                   'Defense bar expected to argue the 3-year recertification cycle allows '
+                                   'delay',
+                                   'ClearanceJobs ([j_QEFJG-ON4 @ 00:08:40])'],
+                                  ['How far to go on disclosure after finding a problem',
+                                   'Strauss: disclosure is now mandatory, and going first lowered the '
+                                   "client's settlement",
+                                   'Watson: report immediately, over and beyond any mandatory disclosure '
+                                   'requirements at all',
+                                   'CMMC LaunchPad ([GkIQylusGaw @ 00:55:12]); Theodore Watson '
+                                   '([uJurzK0qLLU @ 00:01:55])'],
+                                  ['Whether a cybersecurity gap with no breach is already fraud',
+                                   'Blue Ocean: promising security and failing to deliver is fraud without '
+                                   'stolen data',
+                                   'WilliamsMullen: a mere breach of contract is not a False Claims Act '
+                                   'violation',
+                                   'Blue Ocean Law Group. innovative Counsel [iC] ([4mXSodsYqr4 @ '
+                                   '00:00:48]); WilliamsMullen ([NdqYGSN5BYc @ 00:11:38])'],
+                                  ['Whether a misrepresented security posture is material to payment '
+                                   'decisions',
+                                   'Strauss ties materiality to what the specific contract actually says '
+                                   'on paper',
+                                   'Joe and Leslie argue posture is material although officers treat CMMC '
+                                   'as check-the-box',
+                                   'CMMC LaunchPad ([GkIQylusGaw @ 00:22:27])'],
+                                  ['Working per-claim penalty number to use when modeling total exposure',
+                                   'UAP Legion cites $14,308 to $28,619 per claim as of July 2025',
+                                   'Jones Day models a maximum of about $23,000 for each false claim',
+                                   'UAP Legion ([Y9DOny35SW0 @ 00:03:15]); Jones Day ([ah8GhXnbe-8 @ '
+                                   '00:02:24])'],
+                                  ['How the relator share splits depending on the DOJ intervention '
+                                   'decision',
+                                   'UAP Legion: 15 to 25% with intervention, 25 to 30% after declination',
+                                   'Bracker quotes a single band of 15 to 30% of the government recovery',
+                                   'UAP Legion ([Y9DOny35SW0 @ 00:13:09]); ClearanceJobs ([j_QEFJG-ON4 @ '
+                                   '00:05:12])'],
+                                  ['Whether CMMC functions as protection or as a market entry barrier',
+                                   'ASI hosts float a hot take that incumbents want CMMC kept as a barrier',
+                                   'Their fix is to make CMMC a CLIN so contractors simply price to it',
+                                   'ASI Education ([95bEAYfWTiY @ 00:12:20])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first economics check is that resolution costs can dwarf whatever the '
+                              "gap saved. Thompson Coburn's panel walked through CHS, which paid $930,000 "
+                              "plus $531,691 toward the relators' fees, while the relators themselves "
+                              'collected $172,050 against $474,018 in reimbursements [CNlX3Qfdluw @ '
+                              '00:28:02]. Their verdict: “the cost of the settlement far exceeded the '
+                              'original benefit to CHS” [CNlX3Qfdluw @ 00:31:03]. Aerojet Rocketdyne shows '
+                              'the declined-case trap: DOJ declined to intervene, the case kept going, '
+                              'summary judgment was denied, and the company settled for $9 million on the '
+                              'first day of trial, which Daniel Strauss on CMMC LaunchPad guesses compares '
+                              'to a possible $100 million ask [GkIQylusGaw @ 01:01:14]. Strauss also pegs '
+                              'Georgia Tech at about $1 million for having no SSP, and Trilliger notes the '
+                              'investigation alone can run years and cost millions while the government '
+                              'offers no settlement number upfront. Trilliger has seen defendants '
+                              'fabricate SPRS scores and submit blank documents, and warns “this is '
+                              'something you do not want to screw around with” [-2BTi30xXrA @ 00:29:06]. '
+                              "Thompson Coburn's defense menu reflects that math: run an internal "
+                              'investigation, seek declination, offer refunds, avoid parallel proceedings, '
+                              'and push for the broadest release.',
+                              'The second trap is assuming exposure tracks profit. The CMMC LaunchPad '
+                              'panel walks the math: on a $1 million contract with $100,000 of profit, the '
+                              "government's position is that the contractor owes the full $1 million, or "
+                              '$3 million once trebled, “regardless of profit” [GkIQylusGaw @ 00:49:01]. '
+                              "PilieroMazza's Matt Feinberg and Camilla Hundley show how fast that "
+                              'compounds: 60 invoices are 60 violations at roughly $23,000 “a pop,” a '
+                              '$150,000 error becomes about $475,000, and a $7 million HUBZone contract '
+                              'produces a whistleblower share of about $7 million [ZyG_Zu7OvIg @ '
+                              '00:46:22]. Small-business status claims carry their own multiplier: '
+                              "PilieroMazza's Part 1 panel explains that deemed-certification and "
+                              'presumed-loss rules set damages at three times the gross contract value '
+                              'plus about $25,000 per invoice, with settlements of $48.5 million for a '
+                              'pass-through and $1.75 million for failing to recertify after an '
+                              'acquisition [OqheRWaihEo @ 00:20:46]. Trilliger converts the abstraction '
+                              'into extinction risk: $5 million in damages becomes $15 million, penalties '
+                              'of $14,000 to $28,000 attach to each claim including every IDIQ invoice, '
+                              'and suspension and debarment can follow, “massive penalties like extinction '
+                              'level events for certain companies” [-2BTi30xXrA @ 00:07:24].',
+                              'The third failure mode is the ignored insider. Jones Day flags the '
+                              'overworked, under-resourced information security officer as someone who '
+                              '“could legitimately turn out to be a whistleblower” [ah8GhXnbe-8 @ '
+                              "00:03:26]. Federal News Network's former DOJ fraud official confirms the "
+                              'pattern from the inside: in cyber cases, in-house security professionals '
+                              'holding extensive information are the ones coming forward saying “nobody '
+                              'listened to me,” and a relator does not need much information to qualify '
+                              "for up to 30% plus fees [ovf7HOfeGQ0 @ 00:06:38]. PilieroMazza's Feinberg "
+                              'and Hundley tell contractors to take every internal complaint seriously '
+                              'because the complainer can become a qui tam relator and competitors can '
+                              'file too, while Bracker urges giving complainants a written resolution '
+                              '[ZyG_Zu7OvIg @ 00:06:20]. Process mistakes compound the damage once DOJ '
+                              'arrives. Trilliger has seen a CID demand seven years of all records, '
+                              'turnaround runs 30 or 14 days, and ignoring one draws a public motion to '
+                              "compel [-2BTi30xXrA @ 00:14:47]. WilliamsMullen's panel adds that people "
+                              'must preserve documents and not destroy or modify them, and that D&O and '
+                              'E&O coverage costs something but only exists if you ask for it.'],
+               'table': {'caption': 'Firsthand Losses, Reversals and Bottlenecks Reported by Cyber-FCA '
+                                    'Practitioners',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Saw Happen',
+                                     'Economics or Consequence',
+                                     'Expert Source'],
+                         'rows': [['Resolving a cyber certification gap only after relators surface it',
+                                   "CHS paid $930,000 plus $531,691 toward the relators' attorney fees",
+                                   'The cost of the settlement far exceeded the original benefit to CHS',
+                                   'Thompson Coburn LLP ([CNlX3Qfdluw @ 00:31:03])'],
+                                  ['Riding a declined qui tam all the way to the trial date',
+                                   'Aerojet saw summary judgment denied and settled on the first day of '
+                                   'trial',
+                                   "Paid $9 million against a possible $100 million ask by Strauss's "
+                                   'estimate',
+                                   'CMMC LaunchPad ([GkIQylusGaw @ 01:01:14]); Thompson Coburn LLP '
+                                   '([CNlX3Qfdluw @ 00:31:43])'],
+                                  ['Fabricating cyber scores to stay eligible for defense awards',
+                                   'Some defendants fabricated SPRS scores outright and submitted blank '
+                                   'documents',
+                                   'Trilliger warns this is something you do not want to screw around with',
+                                   'Cape Endeavors, Inc. ([-2BTi30xXrA @ 00:29:06])'],
+                                  ['Treating each recurring invoice as harmless back-office paperwork',
+                                   'Sixty invoices become sixty separate violations at roughly $23,000 a '
+                                   'pop',
+                                   'A $150,000 billing error grows to about $475,000 in total exposure',
+                                   'PilieroMazza PLLC ([ZyG_Zu7OvIg @ 00:46:22])'],
+                                  ['Ignoring or slow-walking a civil investigative demand from DOJ',
+                                   'CIDs carry 30 or 14 day turnarounds and can reach seven years of '
+                                   'records',
+                                   'Ignoring one draws a public motion to compel from the government',
+                                   'Cape Endeavors, Inc. ([-2BTi30xXrA @ 00:14:47])'],
+                                  ['Leaving D&O and E&O insurance policies silent on FCA coverage',
+                                   "PF Chang's stands as the cautionary tale on unclear insurance coverage "
+                                   'terms',
+                                   'Coverage costs something, but if you do not ask you are not covered',
+                                   'WilliamsMullen ([NdqYGSN5BYc @ 00:59:51])'],
+                                  ["Brushing off the overworked information security officer's repeated "
+                                   'warnings',
+                                   'Under-resourced security staff and in-house cyber professionals come '
+                                   'forward saying nobody listened',
+                                   "Relators qualify for up to 30% of recovery plus attorney's fees",
+                                   'Jones Day ([ah8GhXnbe-8 @ 00:02:55]); Federal News Network '
+                                   '([ovf7HOfeGQ0 @ 00:06:38])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Stop-Work Checks Before the Next Invoice, CID Response, or SPRS '
+                                    'Filing',
+                           'body': 'Each check below maps to a loss, reversal, or bottleneck practitioners '
+                                   'hit firsthand; clear all four before the next invoice goes out the '
+                                   'door.',
+                           'items': ['Halt document destruction the moment a subpoena or CID lands, call '
+                                     'counsel, and do not panic [PilieroMazza PLLC — ZyG_Zu7OvIg @ '
+                                     '00:44:22].',
+                                     'Calendar the CID return date on its 30- or 14-day clock; ignoring it '
+                                     'triggers a public motion to compel [Cape Endeavors, Inc. — '
+                                     '-2BTi30xXrA @ 00:14:47].',
+                                     'Route every SPRS score change and material change to the contracting '
+                                     'officer, not only the project manager [CMMC LaunchPad — GkIQylusGaw '
+                                     '@ 00:09:44].',
+                                     'Do not retaliate against a potential whistleblower; retaliation '
+                                     'claims carry double back pay, attorney fees, and a 3-year '
+                                     'limitations window [WilliamsMullen — NdqYGSN5BYc @ 00:15:39].']}}],
+ 'pull_quote': '“So, massive penalties like extinction level events for certain companies.” — Cape '
+               'Endeavors, Inc. (-2BTi30xXrA @ 00:07:24).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Read every awarded contract front to back and highlight the actual requirements you '
+                      'are responsible for [PilieroMazza PLLC — OqheRWaihEo @ 00:46:52].',
+                      'When your SPRS score drops, update SPRS and send the contracting officer an FYI '
+                      'email, then move to formal notice once a minimum score is mandatory [CMMC LaunchPad '
+                      '— GkIQylusGaw @ 00:14:03].',
+                      'Pull the incident notification timeframe from each contract and flag vague terms '
+                      "like “reasonable time” versus hard windows like the GDPR's 72 hours [Jones Day — "
+                      'ah8GhXnbe-8 @ 00:02:05].',
+                      'Retain all data tied to a cyber incident for at least 90 days under the DFARS '
+                      'reporting clause [Thompson Coburn LLP — CNlX3Qfdluw @ 00:22:47].',
+                      'Pre-build a search warrant and subpoena plan: one point of contact, employee '
+                      'training on agent interviews, outside counsel, a litigation hold, and IT resources '
+                      '[WilliamsMullen — NdqYGSN5BYc @ 00:54:27].',
+                      'Commission an outside 360-degree compliance review, stop chasing contracts you '
+                      'cannot perform, and build a speak-up culture [Cape Endeavors, Inc. — -2BTi30xXrA @ '
+                      '00:29:21].'],
+ 'statutory_citations': [{'title': 'ClearanceJobs — Defense TechCast: False Claims Act with Julie Bracker '
+                                   '[00:08:40]',
+                          'url': 'https://www.youtube.com/watch?v=j_QEFJG-ON4&t=520s',
+                          'relevance': 'Primary practitioner testimony on the three Civil Cyber Fraud '
+                                       'Initiative theories and the duty to correct an inaccurate SPRS '
+                                       'score.'},
+                         {'title': 'Thompson Coburn LLP — DOJ Cyber Fraud Initiative - Cyber Faces the FCA '
+                                   'Hammer [00:28:02]',
+                          'url': 'https://www.youtube.com/watch?v=CNlX3Qfdluw&t=1682s',
+                          'relevance': 'Primary practitioner testimony on CHS settlement economics and '
+                                       'relator fee exposure.'},
+                         {'title': 'CMMC LaunchPad — False Claims Act and Other Risks of Non Compliance '
+                                   '[00:55:12]',
+                          'url': 'https://www.youtube.com/watch?v=GkIQylusGaw&t=3312s',
+                          'relevance': 'Primary practitioner testimony on mandatory disclosure and going '
+                                       'first to lower settlement value.'},
+                         {'title': 'Cape Endeavors, Inc. — Whistleblowers, CMMC & the DOJ: The Hidden '
+                                   'Triggers Behind False Claims Act Investigations [00:13:07]',
+                          'url': 'https://www.youtube.com/watch?v=-2BTi30xXrA&t=787s',
+                          'relevance': 'Primary practitioner testimony on CID scope, turnaround deadlines, '
+                                       'and front-end counsel investment.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'j_QEFJG-ON4',
+                       'title': 'Defense TechCast: False Claims Act with Julie Bracker',
+                       'channel': 'ClearanceJobs',
+                       'author': 'ClearanceJobs',
+                       'text': 'The statute gives the US 60 days to investigate, which is exactly the '
+                               'right amount of time to get a team together, maybe enough time to '
+                               'interview the relator.',
+                       'tip': 'The statute gives the US 60 days to investigate, which is exactly the right '
+                              'amount of time to get a team together, maybe enough time to interview the '
+                              'relator.',
+                       'timestamp': 884,
+                       'timestamp_seconds': 884,
+                       'timestamp_label': '[00:14:44]',
+                       'url': 'https://www.youtube.com/watch?v=j_QEFJG-ON4&t=884s',
+                       'markdown': '[00:14:44](https://www.youtube.com/watch?v=j_QEFJG-ON4&t=884s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'j_QEFJG-ON4',
+                       'title': 'Defense TechCast: False Claims Act with Julie Bracker',
+                       'channel': 'ClearanceJobs',
+                       'author': 'ClearanceJobs',
+                       'text': "I always say the first defense is we didn't do anything wrong and the "
+                               "second is if we did we didn't mean to.",
+                       'tip': "I always say the first defense is we didn't do anything wrong and the "
+                              "second is if we did we didn't mean to.",
+                       'timestamp': 1144,
+                       'timestamp_seconds': 1144,
+                       'timestamp_label': '[00:19:04]',
+                       'url': 'https://www.youtube.com/watch?v=j_QEFJG-ON4&t=1144s',
+                       'markdown': '[00:19:04](https://www.youtube.com/watch?v=j_QEFJG-ON4&t=1144s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-2BTi30xXrA',
+                       'title': 'Whistleblowers, CMMC & the DOJ: The Hidden Triggers Behind False Claims '
+                                'Act Investigations',
+                       'channel': 'Cape Endeavors, Inc.',
+                       'author': 'Cape Endeavors, Inc.',
+                       'text': 'This is something you do not want to screw around with.',
+                       'tip': 'This is something you do not want to screw around with.',
+                       'timestamp': 1701,
+                       'timestamp_seconds': 1701,
+                       'timestamp_label': '[00:28:21]',
+                       'url': 'https://www.youtube.com/watch?v=-2BTi30xXrA&t=1701s',
+                       'markdown': '[00:28:21](https://www.youtube.com/watch?v=-2BTi30xXrA&t=1701s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '95bEAYfWTiY',
+                       'title': 'Can a Contract Award Survive When Competitors’ Prices Are Leaked? The FAR '
+                                'is Lava Ep. 9',
+                       'channel': 'ASI Education',
+                       'author': 'ASI Education',
+                       'text': 'The solution to me still is just make it a CLIN in the contract.',
+                       'tip': 'The solution to me still is just make it a CLIN in the contract.',
+                       'timestamp': 1018,
+                       'timestamp_seconds': 1018,
+                       'timestamp_label': '[00:16:58]',
+                       'url': 'https://www.youtube.com/watch?v=95bEAYfWTiY&t=1018s',
+                       'markdown': '[00:16:58](https://www.youtube.com/watch?v=95bEAYfWTiY&t=1018s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CNlX3Qfdluw',
+                       'title': 'DOJ Cyber Fraud Initiative - Cyber Faces the FCA Hammer',
+                       'channel': 'Thompson Coburn LLP',
+                       'author': 'Thompson Coburn LLP',
+                       'text': 'Defense attorneys handling these cases must know that the requisite '
+                               'knowledge of a civil FCA defendant does not include an innocent mistake, '
+                               'mere error, or negligence.',
+                       'tip': 'Defense attorneys handling these cases must know that the requisite '
+                              'knowledge of a civil FCA defendant does not include an innocent mistake, '
+                              'mere error, or negligence.',
+                       'timestamp': 775,
+                       'timestamp_seconds': 775,
+                       'timestamp_label': '[00:12:55]',
+                       'url': 'https://www.youtube.com/watch?v=CNlX3Qfdluw&t=775s',
+                       'markdown': '[00:12:55](https://www.youtube.com/watch?v=CNlX3Qfdluw&t=775s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CNlX3Qfdluw',
+                       'title': 'DOJ Cyber Fraud Initiative - Cyber Faces the FCA Hammer',
+                       'channel': 'Thompson Coburn LLP',
+                       'author': 'Thompson Coburn LLP',
+                       'text': 'So you can see that the cost of the settlement far exceeded the original '
+                               'benefit to CHS.',
+                       'tip': 'So you can see that the cost of the settlement far exceeded the original '
+                              'benefit to CHS.',
+                       'timestamp': 1863,
+                       'timestamp_seconds': 1863,
+                       'timestamp_label': '[00:31:03]',
+                       'url': 'https://www.youtube.com/watch?v=CNlX3Qfdluw&t=1863s',
+                       'markdown': '[00:31:03](https://www.youtube.com/watch?v=CNlX3Qfdluw&t=1863s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ah8GhXnbe-8',
+                       'title': "What is the Department of Justice's Civil Cyber-Fraud Initiative?",
+                       'channel': 'Jones Day',
+                       'author': 'Jones Day',
+                       'text': 'So, that number can grow quite exponentially, even when the government '
+                               "hasn't shown that they have suffered any losses at all.",
+                       'tip': 'So, that number can grow quite exponentially, even when the government '
+                              "hasn't shown that they have suffered any losses at all.",
+                       'timestamp': 159,
+                       'timestamp_seconds': 159,
+                       'timestamp_label': '[00:02:39]',
+                       'url': 'https://www.youtube.com/watch?v=ah8GhXnbe-8&t=159s',
+                       'markdown': '[00:02:39](https://www.youtube.com/watch?v=ah8GhXnbe-8&t=159s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GkIQylusGaw',
+                       'title': 'False Claims Act and Other Risks of Non Compliance',
+                       'channel': 'CMMC LaunchPad',
+                       'author': 'CMMC LaunchPad',
+                       'text': 'But the safest and most compliant approach will always be open and '
+                               'transparent communication.',
+                       'tip': 'But the safest and most compliant approach will always be open and '
+                              'transparent communication.',
+                       'timestamp': 675,
+                       'timestamp_seconds': 675,
+                       'timestamp_label': '[00:11:15]',
+                       'url': 'https://www.youtube.com/watch?v=GkIQylusGaw&t=675s',
+                       'markdown': '[00:11:15](https://www.youtube.com/watch?v=GkIQylusGaw&t=675s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GkIQylusGaw',
+                       'title': 'False Claims Act and Other Risks of Non Compliance',
+                       'channel': 'CMMC LaunchPad',
+                       'author': 'CMMC LaunchPad',
+                       'text': 'So technically anytime you have a reasonable basis to believe that your '
+                               'company has committed some sort of false claim you are, in contract by '
+                               'contract, required to report it.',
+                       'tip': 'So technically anytime you have a reasonable basis to believe that your '
+                              'company has committed some sort of false claim you are, in contract by '
+                              'contract, required to report it.',
+                       'timestamp': 3173,
+                       'timestamp_seconds': 3173,
+                       'timestamp_label': '[00:52:53]',
+                       'url': 'https://www.youtube.com/watch?v=GkIQylusGaw&t=3173s',
+                       'markdown': '[00:52:53](https://www.youtube.com/watch?v=GkIQylusGaw&t=3173s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4mXSodsYqr4',
+                       'title': 'How the False Claims Act transforms CyberSecurity Non-compliance Risks '
+                                'into Fraud against the US Gov',
+                       'channel': 'Blue Ocean Law Group. innovative Counsel [iC]',
+                       'author': 'Blue Ocean Law Group. innovative Counsel [iC]',
+                       'text': 'The crime is the lie.',
+                       'tip': 'The crime is the lie.',
+                       'timestamp': 48,
+                       'timestamp_seconds': 48,
+                       'timestamp_label': '[00:00:48]',
+                       'url': 'https://www.youtube.com/watch?v=4mXSodsYqr4&t=48s',
+                       'markdown': '[00:00:48](https://www.youtube.com/watch?v=4mXSodsYqr4&t=48s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OqheRWaihEo',
+                       'title': 'Common Scenarios Triggering False Claims Act Violations, Part 1: Gov. '
+                                'Contracts and Cybersecurity',
+                       'channel': 'PilieroMazza PLLC',
+                       'author': 'PilieroMazza PLLC',
+                       'text': "That seems to me like that's a contract dispute question, not a false "
+                               "claim question, but I'm pointing it out because we've started to see DOJ "
+                               'in certain regions grasp at those issues.',
+                       'tip': "That seems to me like that's a contract dispute question, not a false claim "
+                              "question, but I'm pointing it out because we've started to see DOJ in "
+                              'certain regions grasp at those issues.',
+                       'timestamp': 3292,
+                       'timestamp_seconds': 3292,
+                       'timestamp_label': '[00:54:52]',
+                       'url': 'https://www.youtube.com/watch?v=OqheRWaihEo&t=3292s',
+                       'markdown': '[00:54:52](https://www.youtube.com/watch?v=OqheRWaihEo&t=3292s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ovf7HOfeGQ0',
+                       'title': 'Trump administration looks to False Claims Act to curb cybersecurity '
+                                'violations',
+                       'channel': 'Federal News Network',
+                       'author': 'Federal News Network',
+                       'text': 'There is a section of the Justice Department, the civil fraud section, '
+                               'that is sort of the mothership for False Claims Act cases.',
+                       'tip': 'There is a section of the Justice Department, the civil fraud section, that '
+                              'is sort of the mothership for False Claims Act cases.',
+                       'timestamp': 468,
+                       'timestamp_seconds': 468,
+                       'timestamp_label': '[00:07:48]',
+                       'url': 'https://www.youtube.com/watch?v=ovf7HOfeGQ0&t=468s',
+                       'markdown': '[00:07:48](https://www.youtube.com/watch?v=ovf7HOfeGQ0&t=468s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uJurzK0qLLU',
+                       'title': 'False Claims Act Defense Lawyers for Government Contractors',
+                       'channel': 'Theodore Watson',
+                       'author': 'Theodore Watson',
+                       'text': "Immediately assess the strengths and weaknesses of the government's case, "
+                               'which can save you tens of thousands in unnecessary attorney fees.',
+                       'tip': "Immediately assess the strengths and weaknesses of the government's case, "
+                              'which can save you tens of thousands in unnecessary attorney fees.',
+                       'timestamp': 30,
+                       'timestamp_seconds': 30,
+                       'timestamp_label': '[00:00:30]',
+                       'url': 'https://www.youtube.com/watch?v=uJurzK0qLLU&t=30s',
+                       'markdown': '[00:00:30](https://www.youtube.com/watch?v=uJurzK0qLLU&t=30s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rZEktgyZwgk',
+                       'title': 'False Claims Act Training',
+                       'channel': 'Changing Options',
+                       'author': 'Changing Options',
+                       'text': 'Reporting suspected false claims is mandatory, and regular training is '
+                               'required.',
+                       'tip': 'Reporting suspected false claims is mandatory, and regular training is '
+                              'required.',
+                       'timestamp': 191,
+                       'timestamp_seconds': 191,
+                       'timestamp_label': '[00:03:11]',
+                       'url': 'https://www.youtube.com/watch?v=rZEktgyZwgk&t=191s',
+                       'markdown': '[00:03:11](https://www.youtube.com/watch?v=rZEktgyZwgk&t=191s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Y9DOny35SW0',
+                       'title': 'UAP Whistleblowers: The False Claims Act',
+                       'channel': 'UAP Legion',
+                       'author': 'UAP Legion',
+                       'text': 'The government has 60 days to investigate, though extensions are common.',
+                       'tip': 'The government has 60 days to investigate, though extensions are common.',
+                       'timestamp': 573,
+                       'timestamp_seconds': 573,
+                       'timestamp_label': '[00:09:33]',
+                       'url': 'https://www.youtube.com/watch?v=Y9DOny35SW0&t=573s',
+                       'markdown': '[00:09:33](https://www.youtube.com/watch?v=Y9DOny35SW0&t=573s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZyG_Zu7OvIg',
+                       'title': 'Risk Prevention Strategies: FCA Risk Prevention for Government '
+                                'Contractors',
+                       'channel': 'PilieroMazza PLLC',
+                       'author': 'PilieroMazza PLLC',
+                       'text': 'Take every internal complaint seriously, because the person complaining '
+                               'could become a qui tam relator, and competitors can file too.',
+                       'tip': 'Take every internal complaint seriously, because the person complaining '
+                              'could become a qui tam relator, and competitors can file too.',
+                       'timestamp': 380,
+                       'timestamp_seconds': 380,
+                       'timestamp_label': '[00:06:20]',
+                       'url': 'https://www.youtube.com/watch?v=ZyG_Zu7OvIg&t=380s',
+                       'markdown': '[00:06:20](https://www.youtube.com/watch?v=ZyG_Zu7OvIg&t=380s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NdqYGSN5BYc',
+                       'title': 'The “Risky Business” of the Federal False Claims Act:  Strategic Thinking '
+                                'for 2017',
+                       'channel': 'WilliamsMullen',
+                       'author': 'WilliamsMullen',
+                       'text': "It's important to keep in mind that a mere breach of contract is not a "
+                               'False Claims Act [violation].',
+                       'tip': "It's important to keep in mind that a mere breach of contract is not a "
+                              'False Claims Act [violation].',
+                       'timestamp': 698,
+                       'timestamp_seconds': 698,
+                       'timestamp_label': '[00:11:38]',
+                       'url': 'https://www.youtube.com/watch?v=NdqYGSN5BYc&t=698s',
+                       'markdown': '[00:11:38](https://www.youtube.com/watch?v=NdqYGSN5BYc&t=698s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NdqYGSN5BYc',
+                       'title': 'The “Risky Business” of the Federal False Claims Act:  Strategic Thinking '
+                                'for 2017',
+                       'channel': 'WilliamsMullen',
+                       'author': 'WilliamsMullen',
+                       'text': "You can get that coverage, it costs something, but if you don't ask for it "
+                               "you're not going to get covered.",
+                       'tip': "You can get that coverage, it costs something, but if you don't ask for it "
+                              "you're not going to get covered.",
+                       'timestamp': 3631,
+                       'timestamp_seconds': 3631,
+                       'timestamp_label': '[01:00:31]',
+                       'url': 'https://www.youtube.com/watch?v=NdqYGSN5BYc&t=3631s',
+                       'markdown': '[01:00:31](https://www.youtube.com/watch?v=NdqYGSN5BYc&t=3631s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'}]}

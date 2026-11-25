@@ -1,1161 +1,793 @@
 from __future__ import annotations
 
-CHAPTER_7 = {
-    "id": "Q7",
-    "chapter_id": "Q7",
-    "chapter_number": 7,
-    "question_number": 7,
-    "slug": "mass-tort-mso-production-ledger-and-90-day-cohort-walk",
-    "question_prompt": "How does an operator execute mass-tort case acquisition, hitech record triage & law-firm msos end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
-    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
-    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
-    "subtitle": "Counsel-Controlled Intake, 45 CFR 164.524 Retrieval, SQLite Idempotency, Fixed-Fee MSO Billing, and a Cash-Reconciled Cohort",
-    "layout_template": "research_exhibit",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #46, Rank #13 of 49, scores 93/100 across a shelf mapping of 13 "
-        "plays. Execution depends on separating claimant evidence, attorney decisions, "
-        "administrative service delivery, and collected cash. This chapter turns that "
-        "separation into a production waterfall, six-module SQLite reference, and "
-        "worked 90-day operating cohort. The canonical annual owner-profit cases are "
-        "$41,600 Conservative, $267,900 Base, and $625,000 Scaled; none counts settlement "
-        "awards or client trust funds as operator revenue. The Base illustration delivers "
-        "$58,750 monthly contracted MSO revenue against $36,425 operating costs, then "
-        "exposes the working-capital effect of split collections. Duplicate scrubs, "
-        "record failures, replacement labor, and privacy-claim evidence receive explicit "
-        "owners, stop conditions, and ledger treatment."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$160,000",
-            "context": "Annual contracted administrative and marketing MSO revenue",
-            "note": "26% net margin; $41,600 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$705,000",
-            "context": "Annual contracted administrative and marketing MSO revenue",
-            "note": "38.0% net margin; $267,900 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,250,000",
-            "context": "Annual contracted administrative and marketing MSO revenue",
-            "note": "50% net margin; $625,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Bind every intake transition to evidence, authority, and a named owner",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with two separate agreements: the claimant's engagement with the "
-                    "law firm and the firm's administrative services agreement with the MSO. "
-                    "Counsel controls conflicts, representation, claim selection, litigation "
-                    "strategy, and termination; the MSO supplies documented marketing, intake "
-                    "coordination, retrieval, and chronology production. Price those services "
-                    "at supported fair-market fixed or cost-plus rates, never a percentage "
-                    "of recoveries or an accepted-case bounty disguised as administration. "
-                    "ABA Model Rule 5.4 is a model rather than a nationwide statute: confirm "
-                    "each relevant jurisdiction's adopted professional-conduct rules and "
-                    "advertising restrictions. An Arizona alternative business structure "
-                    "requires the applicable license and operating conditions; another "
-                    "state's matters do not automatically inherit that permission. Build "
-                    "the contractual service schedule before buying traffic, including "
-                    "capacity, deliverables, provider charges, rejection reasons, and a "
-                    "30-day administrative correction window. Replacement work repairs "
-                    "deficient services; it does not promise a different plaintiff or a "
-                    "successful claim. Keep settlement proceeds, trust balances, and loan "
-                    "principal outside the MSO ledger entirely. Assign one full-time "
-                    "operator to scheduling and reconciliation, three contractors to intake, "
-                    "record handling, and evidence quality, and a separately retained "
-                    "law-firm reviewer to legal decisions. This allocation matches the Base "
-                    "team without treating outside counsel as MSO-controlled labor."
-                ),
-                (
-                    "Instrument the complete waterfall before optimizing advertisements: "
-                    "raw inquiry, signed law-firm retainer, usable HITECH EMR or pharmacy "
-                    "proof, deficiency-free accepted case, and collected MSO fee. The worked "
-                    "monthly cohort starts with 1,000 inquiries, removes 200 duplicate or "
-                    "invalid submissions, signs 320 of 800 remaining contacts, obtains usable "
-                    "proof for 224, and finishes 200 counsel-accepted files after 24 further "
-                    "deficiencies. Those are operational counts, not invoice triggers. "
-                    "TrustedForm can preserve a submission's consent artifact; it cannot "
-                    "establish identity, erase contradictory contact instructions, or prove "
-                    "that another firm lacks a retainer. Use an authorized LexisNexis "
-                    "identity workflow where appropriate, claimant confirmation, and the "
-                    "firm's own conflict records rather than claiming a universal retainer "
-                    "database exists. Generate a firm-scoped keyed identity token only after "
-                    "verification, and manually examine probable matches before linking "
-                    "records. Keep raw SSNs outside the administrative ledger. Capture the "
-                    "specific firm's contact permission, disclosure version, source URL, "
-                    "timestamp, and revocation history. Firm-specific permission is the "
-                    "operating standard here, not an assertion that a vacated FCC "
-                    "one-to-one rule remains effective. Apply 47 U.S.C. 227 and "
-                    "47 CFR 64.1200 to the actual calling technology, purpose, and "
-                    "recipient, including applicable written-consent and suppression duties."
-                ),
-                (
-                    "Separate a patient's access request under 45 CFR 164.524 from a "
-                    "third-party disclosure authorization under 45 CFR 164.508. Confirm "
-                    "identity, signer authority, requested dates, provider, delivery "
-                    "destination, and the electronic record source before transmission. "
-                    "Patient access generally requires action within 30 days, with one "
-                    "additional 30-day extension accompanied by the required written "
-                    "explanation and completion date. Do not sell automatic low-cost "
-                    "law-firm delivery: the Ciox decision and subsequent HHS guidance "
-                    "limit assumptions about third-party directions and patient-rate "
-                    "charges. Classify each request's route, obtain provider pricing, and "
-                    "escalate disputed charges through counsel instead of repeatedly "
-                    "submitting altered authorizations. Determine HIPAA roles from the "
-                    "actual relationship; a law firm is not automatically a covered entity, "
-                    "and an MSO label does not create a business-associate relationship. "
-                    "When the relationship requires one, execute the appropriate business "
-                    "associate agreement before handling protected information. Retrieve "
-                    "into an access-controlled document store, retain source hashes, and "
-                    "give any approved language-model processor only the necessary "
-                    "material under suitable contractual safeguards. Extract dates, "
-                    "drug identifiers, ICD-10 codes, and page citations as evidence "
-                    "candidates. A human reviewer resolves contradictions, and counsel "
-                    "determines whether those facts satisfy the matter's legal and "
-                    "medical eligibility criteria."
-                ),
-            ],
-            "table": {
-                "caption": "Intake-to-Cash Ownership, Evidence, and Failure-Disposition Matrix",
-                "headers": [
-                    "Production transition and assigned operating owner",
-                    "Evidence required before advancing the record",
-                    "Concrete unit control and measured output",
-                    "Failure disposition and authorized recovery action",
-                ],
-                "rows": [
-                    [
-                        "Media contractor registers each raw inquiry source",
-                        "Preserve advertisement version, source attribution, and contact permission",
-                        "Receive 1,000 monthly inquiries into the raw queue",
-                        "Suppress prohibited contact immediately and preserve the reason",
-                    ],
-                    [
-                        "Intake contractor performs duplicate and identity screening",
-                        "Match verified firm-scoped tokens against existing matter identifiers",
-                        "Remove 200 duplicate or invalid inquiries before outreach",
-                        "Route probable matches to human adjudication without automatic merging",
-                    ],
-                    [
-                        "Law-firm reviewer controls conflict clearance and engagement",
-                        "Store engagement evidence and counsel-confirmed authority to proceed",
-                        "Sign 320 retainers from 800 screened monthly contacts",
-                        "Close declined engagements while preserving required suppression records",
-                    ],
-                    [
-                        "Records contractor chooses the appropriate retrieval route",
-                        "Validate patient access instructions or the required disclosure authorization",
-                        "Budget 320 initial retrieval packages at eighteen dollars",
-                        "Escalate provider pricing disputes and defective signer authority",
-                    ],
-                    [
-                        "Clinical reviewer validates source-linked electronic record proof",
-                        "Attach provider documents, page references, and contradiction resolutions",
-                        "Produce 224 usable packets after 96 proof failures",
-                        "Stop unsupported clinical inference and return incomplete source material",
-                    ],
-                    [
-                        "Law-firm reviewer decides deficiency-free case acceptance",
-                        "Record matter-specific eligibility decision and supporting evidence references",
-                        "Accept 200 files after correcting or rejecting 24 deficiencies",
-                        "Open the contracted correction window without promising replacement claimants",
-                    ],
-                    [
-                        "MSO operator documents completed administrative service milestones",
-                        "Attach capacity reports, service acceptance, and fixed-fee contract reference",
-                        "Recognize $58,750 monthly only when contracted services are earned",
-                        "Hold disputed service invoices separately from claimant eligibility decisions",
-                    ],
-                    [
-                        "Bookkeeping contractor matches collections against service invoices",
-                        "Use bank-origin transaction identifiers and independent statement evidence",
-                        "Collect administrative fees without receiving client settlement proceeds",
-                        "Investigate unmatched credits without assigning them to claimant recoveries",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before the first paid inquiry enters production",
-                "body": (
-                    "The operator records evidence for each check; counsel retains the "
-                    "decisions involving representation, solicitation, and professional duties."
-                ),
-                "items": [
-                    "Confirm the executed fixed or cost-plus MSO scope, jurisdiction-specific fee-sharing analysis, and separate law-firm engagement workflow.",
-                    "Verify advertisement versions, firm-specific contact permission, suppression propagation, and an accountable owner for revocations.",
-                    "Test signer authority, provider request routing, document-store permissions, and any required business associate agreements using a synthetic record.",
-                    "Prove that duplicate submissions, repeated bank imports, and simultaneous state transitions cannot create duplicate services or receipts in the reference ledger.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Build a six-module ledger with serialized writes and replay-safe transitions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use the six reference modules below as one concatenated Python script, "
-                    "in table order. They implement the transactional core, not a public "
-                    "API or a medical-document repository. SQLite is suitable for this "
-                    "small team when the database resides on one local host and every "
-                    "writer follows the same transaction functions. Enable foreign keys, "
-                    "a busy timeout, write-ahead logging, and full synchronous commits; "
-                    "use one connection per worker. Each mutation acquires BEGIN IMMEDIATE "
-                    "before checking event identity or balances, so competing workers "
-                    "cannot both spend the same remaining receivable or advance one case "
-                    "from the same state. Database uniqueness independently blocks duplicate "
-                    "claimant identities, service invoices, and bank references. Store "
-                    "amounts as integer cents, never floating-point values. A repeated "
-                    "event with identical content returns without changing balances; "
-                    "reusing its key with different content raises an error. Event "
-                    "recording and business mutations commit together or roll back "
-                    "together. The included concurrency check exercises competing receipt "
-                    "allocations against one invoice. These local guarantees depend on "
-                    "the stated deployment boundary; do not place SQLite on a shared "
-                    "network filesystem or advertise distributed exactly-once delivery. "
-                    "The examples are supplied for execution and review, not reported "
-                    "as tests already run."
-                ),
-                (
-                    "Keep three authorities distinct in application code: the authenticated "
-                    "actor, the preserved evidence reference, and the ledger transition. "
-                    "The reference assumes a trusted service adapter has already checked "
-                    "actor permissions and verified evidence references before calling "
-                    "its functions. Never expose those functions directly as unauthenticated "
-                    "endpoints. Intake scoring measures administrative completeness only; "
-                    "it does not predict recoveries or substitute for counsel's assessment. "
-                    "Advance cases through RAW, SIGNED, PROOF, and ACCEPTED using an "
-                    "expected-state comparison, with CLOSED as an explicit terminal "
-                    "alternative. SIGNED requires valid engagement evidence, PROOF requires "
-                    "reviewed source material, and ACCEPTED requires counsel's recorded "
-                    "decision. An invoice instead moves from HELD to BILLED after "
-                    "documented completion of its contractual service milestone. There "
-                    "is no operator escrow: any trust-account activity remains external "
-                    "with the law firm and cannot be posted through these functions. "
-                    "The held state is an administrative billing hold, not custody of "
-                    "claimant money. Revenue credits the MSO revenue account only when "
-                    "the service invoice is released; receipts debit bank cash and "
-                    "credit receivables. Operating payments debit expense and credit "
-                    "cash. Do not derive invoices from accepted-case counts, settle "
-                    "client claims through the ledger, or silently net provider "
-                    "refunds against previously recorded expenses."
-                ),
-                (
-                    "Separate cohort attribution from posting month. A February receipt "
-                    "for January services belongs to January's operating cohort but "
-                    "February's bank reconciliation. The cohort view therefore explains "
-                    "earned revenue, operating expense, receivables, and collected cash "
-                    "by service cohort, while the monthly cash view explains actual "
-                    "cash movement. Record only reconciled bank transaction identifiers, "
-                    "namespaced by bank account, and retain the original statement in "
-                    "the protected evidence store. The reference accepts positive service "
-                    "invoices, receipts, and operating payments; it deliberately rejects "
-                    "overpayments rather than inventing a refund mechanism. Route "
-                    "credit notes, refunds, foreign currencies, and partial write-offs "
-                    "to a separately designed accounting integration with reviewed "
-                    "reversing entries before using those features in production. "
-                    "Never edit historical postings: immutable-entry triggers protect "
-                    "the journal, and reconciliation exceptions become assigned work "
-                    "items. For outbound provider requests, use a durable dispatch "
-                    "queue and the provider's idempotency facility when available; "
-                    "where it is absent, require a human check after an uncertain "
-                    "send instead of blindly retrying. The reference makes no external "
-                    "calls inside a transaction. Back up the database and document "
-                    "store under separate access controls, restore them into an "
-                    "isolated environment, and compare journal totals before declaring "
-                    "the recovery exercise complete."
-                ),
-            ],
-            "table": {
-                "caption": "Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
-                "headers": [
-                    "Module and bounded production responsibility",
-                    "Copy-pasteable Python implementation in execution order",
-                    "Invariant enforced by the implementation boundary",
-                    "Required operational verification before live use",
-                ],
-                "rows": [
-                    [
-                        "Module one creates the database and atomic event boundary",
-                        r'''import json
-import sqlite3
-from contextlib import contextmanager
-
-DDL = """
-CREATE TABLE IF NOT EXISTS events (
-    firm TEXT NOT NULL,
-    event_key TEXT NOT NULL,
-    payload TEXT NOT NULL,
-    PRIMARY KEY (firm, event_key)
-);
-CREATE TABLE IF NOT EXISTS cases (
-    case_id TEXT PRIMARY KEY,
-    firm TEXT NOT NULL,
-    person_token TEXT NOT NULL,
-    tort TEXT NOT NULL,
-    completeness INTEGER NOT NULL CHECK (completeness BETWEEN 0 AND 100),
-    state TEXT NOT NULL CHECK (
-        state IN ('RAW', 'SIGNED', 'PROOF', 'ACCEPTED', 'CLOSED')
-    ),
-    UNIQUE (firm, person_token, tort)
-);
-CREATE TABLE IF NOT EXISTS invoices (
-    invoice_id TEXT PRIMARY KEY,
-    firm TEXT NOT NULL,
-    cohort TEXT NOT NULL,
-    contract_ref TEXT NOT NULL,
-    cents INTEGER NOT NULL CHECK (cents > 0),
-    state TEXT NOT NULL CHECK (state IN ('HELD', 'BILLED')),
-    UNIQUE (firm, cohort, contract_ref)
-);
-CREATE TABLE IF NOT EXISTS entries (
-    entry_id INTEGER PRIMARY KEY,
-    kind TEXT NOT NULL CHECK (kind IN ('REVENUE', 'RECEIPT', 'OPEX')),
-    reference TEXT NOT NULL,
-    firm TEXT NOT NULL,
-    cohort TEXT NOT NULL,
-    posted_month TEXT NOT NULL,
-    invoice_id TEXT REFERENCES invoices(invoice_id),
-    debit_account TEXT NOT NULL,
-    credit_account TEXT NOT NULL,
-    cents INTEGER NOT NULL CHECK (cents > 0),
-    UNIQUE (kind, reference),
-    CHECK (
-        (kind = 'REVENUE' AND invoice_id IS NOT NULL
-         AND debit_account = 'AR' AND credit_account = 'MSO_REVENUE')
-        OR
-        (kind = 'RECEIPT' AND invoice_id IS NOT NULL
-         AND debit_account = 'CASH' AND credit_account = 'AR')
-        OR
-        (kind = 'OPEX' AND invoice_id IS NULL
-         AND debit_account = 'OPERATING_EXPENSE' AND credit_account = 'CASH')
-    )
-);
-CREATE TRIGGER IF NOT EXISTS entries_no_update
-BEFORE UPDATE ON entries BEGIN
-    SELECT RAISE(ABORT, 'Journal entries are immutable');
-END;
-CREATE TRIGGER IF NOT EXISTS entries_no_delete
-BEFORE DELETE ON entries BEGIN
-    SELECT RAISE(ABORT, 'Journal entries are immutable');
-END;
-CREATE TRIGGER IF NOT EXISTS events_no_update
-BEFORE UPDATE ON events BEGIN
-    SELECT RAISE(ABORT, 'Event records are immutable');
-END;
-CREATE TRIGGER IF NOT EXISTS events_no_delete
-BEFORE DELETE ON events BEGIN
-    SELECT RAISE(ABORT, 'Event records are immutable');
-END;
-"""
-
-def open_ledger(path):
-    db = sqlite3.connect(path, timeout=30, isolation_level=None)
-    db.execute("PRAGMA busy_timeout=30000")
-    db.execute("PRAGMA foreign_keys=ON")
-    db.execute("PRAGMA journal_mode=WAL")
-    db.execute("PRAGMA synchronous=FULL")
-    db.executescript(DDL)
-    return db
-
-@contextmanager
-def transaction(db):
-    db.execute("BEGIN IMMEDIATE")
-    try:
-        yield
-        db.execute("COMMIT")
-    except BaseException:
-        if db.in_transaction:
-            db.execute("ROLLBACK")
-        raise
-
-def require_text(value):
-    if not isinstance(value, str) or not value.strip():
-        raise ValueError("A substantive reference is required")
-
-def once(db, firm, event_key, payload, change):
-    require_text(firm)
-    require_text(event_key)
-    encoded = json.dumps(payload, sort_keys=True, separators=(",", ":"))
-    with transaction(db):
-        prior = db.execute(
-            "SELECT payload FROM events WHERE firm=? AND event_key=?",
-            (firm, event_key),
-        ).fetchone()
-        if prior is not None:
-            if prior[0] != encoded:
-                raise ValueError("Event key was reused with different content")
-            return False
-        change()
-        db.execute(
-            "INSERT INTO events(firm,event_key,payload) VALUES(?,?,?)",
-            (firm, event_key, encoded),
-        )
-    return True
-''',
-                        "Unique identities and event payloads commit inside serialized transactions",
-                        "Confirm local storage, restricted writers, backup restoration, and connection isolation",
-                    ],
-                    [
-                        "Module two scores administrative completeness and registers verified identities",
-                        r'''def intake(db, firm, event_key, case_id, person_token, tort, checks):
-    for value in (case_id, person_token, tort):
-        require_text(value)
-    weights = {
-        "contact_permission": 25,
-        "identity_verified": 35,
-        "exposure_reported": 40,
-    }
-    if set(checks) != set(weights):
-        raise ValueError("Supply the complete administrative checklist")
-    if any(type(value) is not bool for value in checks.values()):
-        raise ValueError("Checklist values must be explicit booleans")
-    if not checks["identity_verified"]:
-        raise ValueError("Resolve identity before entering the case ledger")
-    score = sum(weight for name, weight in weights.items() if checks[name])
-    payload = {
-        "operation": "intake",
-        "case_id": case_id,
-        "person_token": person_token,
-        "tort": tort,
-        "checks": dict(checks),
-    }
-
-    def change():
-        db.execute(
-            """INSERT INTO cases
-               (case_id,firm,person_token,tort,completeness,state)
-               VALUES(?,?,?,?,?,'RAW')""",
-            (case_id, firm, person_token, tort, score),
-        )
-
-    return once(db, firm, event_key, payload, change)
-''',
-                        "Firm-scoped identity uniqueness blocks duplicate matter registration during concurrent intake",
-                        "Derive tokens outside this ledger and manually resolve probable identity matches",
-                    ],
-                    [
-                        "Module three enforces evidence-backed verification without operating claimant escrow",
-                        r'''def advance(db, firm, event_key, case_id, expected, target, evidence_ref):
-    allowed = {
-        "RAW": {"SIGNED", "CLOSED"},
-        "SIGNED": {"PROOF", "CLOSED"},
-        "PROOF": {"ACCEPTED", "CLOSED"},
-        "ACCEPTED": {"CLOSED"},
-        "CLOSED": set(),
-    }
-    require_text(evidence_ref)
-    if target not in allowed.get(expected, set()):
-        raise ValueError("Transition is outside the permitted case workflow")
-    payload = {
-        "operation": "advance",
-        "case_id": case_id,
-        "expected": expected,
-        "target": target,
-        "evidence_ref": evidence_ref,
-    }
-
-    def change():
-        result = db.execute(
-            """UPDATE cases SET state=?
-               WHERE firm=? AND case_id=? AND state=?""",
-            (target, firm, case_id, expected),
-        )
-        if result.rowcount != 1:
-            raise ValueError("Case state changed or the case belongs elsewhere")
-
-    return once(db, firm, event_key, payload, change)
-''',
-                        "Expected-state updates permit only one competing transition to succeed",
-                        "Authenticate reviewers upstream and keep every trust-account action outside this system",
-                    ],
-                    [
-                        "Module four releases earned invoices and allocates authoritative cash transactions",
-                        r'''def bill_action(
-    db, firm, event_key, action, invoice_id, cohort,
-    posted_month, reference, cents=0
-):
-    for value in (cohort, posted_month, reference):
-        require_text(value)
-    if action not in {"hold", "release", "receipt", "cost"}:
-        raise ValueError("Unsupported accounting operation")
-    if type(cents) is not int:
-        raise ValueError("Amounts must use integer cents")
-    if action == "release":
-        if cents != 0:
-            raise ValueError("Release uses the stored invoice amount")
-    elif cents <= 0:
-        raise ValueError("Positive accounting amounts are required")
-    if action == "cost":
-        if invoice_id is not None:
-            raise ValueError("Operating payments cannot carry a service invoice")
-    else:
-        require_text(invoice_id)
-    payload = {
-        "operation": action,
-        "invoice_id": invoice_id,
-        "cohort": cohort,
-        "posted_month": posted_month,
-        "reference": reference,
-        "cents": cents,
-    }
-
-    def post(kind, ref, amount, debit, credit):
-        db.execute(
-            """INSERT INTO entries
-               (kind,reference,firm,cohort,posted_month,invoice_id,
-                debit_account,credit_account,cents)
-               VALUES(?,?,?,?,?,?,?,?,?)""",
-            (
-                kind, ref, firm, cohort, posted_month, invoice_id,
-                debit, credit, amount,
-            ),
-        )
-
-    def change():
-        if action == "hold":
-            db.execute(
-                """INSERT INTO invoices
-                   (invoice_id,firm,cohort,contract_ref,cents,state)
-                   VALUES(?,?,?,?,?,'HELD')""",
-                (invoice_id, firm, cohort, reference, cents),
-            )
-            return
-        if action == "cost":
-            post("OPEX", reference, cents, "OPERATING_EXPENSE", "CASH")
-            return
-        invoice = db.execute(
-            """SELECT cents,state FROM invoices
-               WHERE invoice_id=? AND firm=? AND cohort=?""",
-            (invoice_id, firm, cohort),
-        ).fetchone()
-        if invoice is None:
-            raise ValueError("Invoice ownership or cohort does not match")
-        amount, state = invoice
-        if action == "release":
-            if state != "HELD":
-                raise ValueError("Invoice has already been released")
-            changed = db.execute(
-                """UPDATE invoices SET state='BILLED'
-                   WHERE invoice_id=? AND firm=? AND state='HELD'""",
-                (invoice_id, firm),
-            )
-            if changed.rowcount != 1:
-                raise ValueError("Invoice release lost its expected state")
-            post("REVENUE", invoice_id, amount, "AR", "MSO_REVENUE")
-            return
-        if state != "BILLED":
-            raise ValueError("Collections require an earned service invoice")
-        collected = db.execute(
-            """SELECT COALESCE(SUM(cents),0) FROM entries
-               WHERE invoice_id=? AND kind='RECEIPT'""",
-            (invoice_id,),
-        ).fetchone()[0]
-        if collected + cents > amount:
-            raise ValueError("Receipt exceeds the remaining receivable")
-        post("RECEIPT", reference, cents, "CASH", "AR")
-
-    return once(db, firm, event_key, payload, change)
-''',
-                        "Invoice release and receipt caps remain atomic under competing worker calls",
-                        "Use bank-account-qualified references and evidence-backed service release permissions",
-                    ],
-                    [
-                        "Module five separates earned cohort economics from calendar cash movement",
-                        r'''REPORT_DDL = """
-CREATE VIEW IF NOT EXISTS cohort_reconciliation AS
-SELECT firm, cohort,
-       SUM(CASE WHEN kind='REVENUE' THEN cents ELSE 0 END) AS revenue_cents,
-       SUM(CASE WHEN kind='RECEIPT' THEN cents ELSE 0 END) AS receipts_cents,
-       SUM(CASE WHEN kind='OPEX' THEN cents ELSE 0 END) AS opex_cents,
-       SUM(CASE
-           WHEN kind='REVENUE' THEN cents
-           WHEN kind='RECEIPT' THEN -cents
-           ELSE 0 END) AS receivable_cents,
-       SUM(CASE
-           WHEN kind='REVENUE' THEN cents
-           WHEN kind='OPEX' THEN -cents
-           ELSE 0 END) AS profit_cents,
-       SUM(CASE
-           WHEN kind='RECEIPT' THEN cents
-           WHEN kind='OPEX' THEN -cents
-           ELSE 0 END) AS operating_cash_cents
-FROM entries
-GROUP BY firm, cohort;
-
-CREATE VIEW IF NOT EXISTS monthly_cash AS
-SELECT firm, posted_month,
-       SUM(CASE WHEN kind='RECEIPT' THEN cents ELSE 0 END) AS receipts_cents,
-       SUM(CASE WHEN kind='OPEX' THEN cents ELSE 0 END) AS payments_cents,
-       SUM(CASE
-           WHEN kind='RECEIPT' THEN cents
-           WHEN kind='OPEX' THEN -cents
-           ELSE 0 END) AS operating_cash_cents
-FROM entries
-GROUP BY firm, posted_month;
-"""
-
-def install_reports(db):
-    db.executescript(REPORT_DDL)
-
-def unresolved_invoice_balances(db):
-    return db.execute(
-        """SELECT i.invoice_id, i.firm, i.cohort,
-                  i.cents - COALESCE(SUM(e.cents),0) AS remaining_cents
-           FROM invoices AS i
-           LEFT JOIN entries AS e
-             ON e.invoice_id=i.invoice_id AND e.kind='RECEIPT'
-           WHERE i.state='BILLED'
-           GROUP BY i.invoice_id, i.firm, i.cohort, i.cents
-           HAVING i.cents - COALESCE(SUM(e.cents),0) > 0
-           ORDER BY i.cohort, i.invoice_id"""
-    ).fetchall()
-''',
-                        "Cohort profit and posting-month cash cannot be mistaken for each other",
-                        "Match outstanding invoice balances to statements and investigate every unexplained difference",
-                    ],
-                    [
-                        "Module six supplies replay, reconciliation, and competing-receipt regression checks",
-                        r'''def qa():
-    import os
-    import tempfile
-    from concurrent.futures import ThreadPoolExecutor
-
-    db = open_ledger(":memory:")
-    install_reports(db)
-    months = ["2026-01", "2026-02", "2026-03"]
-    for index, month in enumerate(months):
-        invoice_id = "invoice-" + month
-        bill_action(
-            db, "firm-a", "hold-" + month, "hold", invoice_id,
-            month, month, "contract-admin", 5875000,
-        )
-        bill_action(
-            db, "firm-a", "release-" + month, "release", invoice_id,
-            month, month, "service-evidence-" + month,
-        )
-        bill_action(
-            db, "firm-a", "cost-" + month, "cost", None,
-            month, month, "bank-operating:cost-" + month, 3642500,
-        )
-        receipt_args = (
-            db, "firm-a", "current-" + month, "receipt", invoice_id,
-            month, month, "bank-operating:current-" + month, 2937500,
-        )
-        assert bill_action(*receipt_args) is True
-        assert bill_action(*receipt_args) is False
-        if index < 2:
-            bill_action(
-                db, "firm-a", "balance-" + month, "receipt", invoice_id,
-                month, months[index + 1],
-                "bank-operating:balance-" + month, 2937500,
-            )
-
-    totals = db.execute(
-        """SELECT SUM(revenue_cents),SUM(receipts_cents),SUM(opex_cents),
-                  SUM(receivable_cents),SUM(profit_cents),
-                  SUM(operating_cash_cents)
-           FROM cohort_reconciliation"""
-    ).fetchone()
-    assert totals == (
-        17625000, 14687500, 10927500, 2937500, 6697500, 3760000
-    )
-    cash = db.execute(
-        "SELECT operating_cash_cents FROM monthly_cash ORDER BY posted_month"
-    ).fetchall()
-    assert cash == [(-705000,), (2232500,), (2232500,)]
-    assert unresolved_invoice_balances(db) == [
-        ("invoice-2026-03", "firm-a", "2026-03", 2937500)
-    ]
-
-    checks = {
-        "contact_permission": True,
-        "identity_verified": True,
-        "exposure_reported": True,
-    }
-    assert intake(
-        db, "firm-a", "intake-one", "case-one", "verified-token-one",
-        "counsel-tort-code", checks,
-    )
-    assert not intake(
-        db, "firm-a", "intake-one", "case-one", "verified-token-one",
-        "counsel-tort-code", checks,
-    )
-    for expected, target in [
-        ("RAW", "SIGNED"), ("SIGNED", "PROOF"), ("PROOF", "ACCEPTED")
-    ]:
-        assert advance(
-            db, "firm-a", "transition-" + target, "case-one",
-            expected, target, "verified-evidence-" + target,
-        )
-
-    before = db.execute("SELECT COUNT(*) FROM entries").fetchone()[0]
-    try:
-        bill_action(
-            db, "firm-a", "overpayment", "receipt", "invoice-2026-03",
-            "2026-03", "2026-03", "bank-operating:excess", 3000000,
-        )
-    except ValueError:
-        pass
-    else:
-        raise AssertionError("Overpayment was accepted")
-    try:
-        bill_action(
-            db, "firm-a", "current-2026-03", "receipt", "invoice-2026-03",
-            "2026-03", "2026-03", "bank-operating:changed-content", 1,
-        )
-    except ValueError:
-        pass
-    else:
-        raise AssertionError("Conflicting event replay was accepted")
-    try:
-        bill_action(
-            db, "firm-a", "duplicate-bank-event", "receipt",
-            "invoice-2026-03", "2026-03", "2026-03",
-            "bank-operating:current-2026-03", 1,
-        )
-    except sqlite3.IntegrityError:
-        pass
-    else:
-        raise AssertionError("Duplicate bank reference was accepted")
-    assert db.execute("SELECT COUNT(*) FROM entries").fetchone()[0] == before
-    assert db.execute("PRAGMA integrity_check").fetchone() == ("ok",)
-    assert db.execute("PRAGMA foreign_key_check").fetchall() == []
-    db.close()
-
-    with tempfile.TemporaryDirectory() as directory:
-        path = os.path.join(directory, "ledger.sqlite")
-        setup = open_ledger(path)
-        bill_action(
-            setup, "firm-r", "hold", "hold", "race-invoice",
-            "2026-01", "2026-01", "race-contract", 500,
-        )
-        bill_action(
-            setup, "firm-r", "release", "release", "race-invoice",
-            "2026-01", "2026-01", "race-service-evidence",
-        )
-        setup.close()
-
-        def competing_receipt(number):
-            worker = open_ledger(path)
-            try:
-                bill_action(
-                    worker, "firm-r", "receipt-" + str(number), "receipt",
-                    "race-invoice", "2026-01", "2026-01",
-                    "bank-race:transaction-" + str(number), 400,
-                )
-                return True
-            except ValueError:
-                return False
-            finally:
-                worker.close()
-
-        with ThreadPoolExecutor(max_workers=2) as executor:
-            results = list(executor.map(competing_receipt, [1, 2]))
-        assert sorted(results) == [False, True]
-        verified = open_ledger(path)
-        assert verified.execute(
-            "SELECT SUM(cents) FROM entries WHERE kind='RECEIPT'"
-        ).fetchone()[0] == 400
-        verified.close()
-    print("Reference ledger QA passed")
-
-if __name__ == "__main__":
-    qa()
-''',
-                        "Assertions cover canonical totals, conflicting replays, duplicate receipts, and concurrency",
-                        "Execute these supplied checks locally before adapting the trusted service interface",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Provision the trusted transaction boundary",
-                    "action": "Concatenate the six implementations and run the included QA function.",
-                    "detail": "Use Python 3.9 or later, local SQLite storage, one connection per worker, and synthetic evidence references before introducing real records.",
-                },
-                {
-                    "step": 2,
-                    "title": "Connect authorized evidence producers",
-                    "action": "Implement authenticated adapters for intake, document review, and counsel decisions.",
-                    "detail": "Verify actor permissions and evidence ownership before calling ledger functions; keep clinical files and direct identifiers in the protected document store.",
-                },
-                {
-                    "step": 3,
-                    "title": "Release service revenue separately from case acceptance",
-                    "action": "Create a held contract invoice and release it against an earned service milestone.",
-                    "detail": "Require authorized service acceptance, preserve the evidence reference, and exclude settlement receipts and client trust activity from every posting route.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close the month against the bank",
-                    "action": "Import uniquely identified receipts and payments, then reconcile both reporting views.",
-                    "detail": "Tie cohort receivables to invoice balances and posting-month cash to statements; investigate mismatches without editing immutable journal entries.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Walk three monthly cohorts from acquisition spend to reconciled cash",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The Base illustration is an earned-service model with flat monthly "
-                    "administrative revenue of $58,750, not 200 contingent referral fees. "
-                    "The monthly statement of work buys defined staffing capacity, "
-                    "marketing operations, record coordination, and reporting; its "
-                    "price must independently survive jurisdiction-specific review. "
-                    "The conversion waterfall is a capacity assumption used to test "
-                    "delivery, not the contractual unit of compensation. Monthly "
-                    "operating costs are $15,000 media, $10,000 contractor delivery, "
-                    "$5,760 retrieval outlays, $2,500 software and protected storage, "
-                    "and $3,165 other operating overhead. These sum to $36,425, "
-                    "leaving $22,325 owner net profit under the scorecard convention. "
-                    "Twelve identical earned months produce exactly $705,000 revenue, "
-                    "$437,100 costs, and $267,900 profit at 38.0%. Retrieval assumes "
-                    "320 packages averaging $18 each; this is an illustrative "
-                    "vendor-cost assumption, not a statutory price entitlement. "
-                    "The annual Conservative case separately remains $160,000 "
-                    "revenue and $41,600 profit at 26%; the Scaled case remains "
-                    "$1,250,000 revenue and $625,000 profit at 50%. Do not extrapolate "
-                    "either case from this cohort's conversion rate. The $12,000 "
-                    "to $50,000 startup range funds setup and working capital; "
-                    "capital contributions are neither service revenue nor operating profit."
-                ),
-                (
-                    "Assume each service month is completed and invoiced before its "
-                    "first collection, with half collected within that month and half "
-                    "the following month. This negotiated collection convention is "
-                    "deliberately separate from advance deposits, which would require "
-                    "a liability workflow before revenue recognition. Month 1 earns "
-                    "$58,750, collects $29,375, pays $36,425, and consumes $7,050 "
-                    "of working capital. Month 2 collects $29,375 from Month 1 "
-                    "and $29,375 from Month 2, producing $22,325 positive operating "
-                    "cash. Month 3 repeats that pattern. Across the 90 days, "
-                    "earned revenue is $176,250, operating costs are $109,275, "
-                    "accounting profit is $66,975, receipts are $146,875, and "
-                    "cumulative operating cash is $37,600. The $29,375 difference "
-                    "between profit and operating cash is the outstanding Month 3 "
-                    "receivable, collectible in Month 4 under the assumption. "
-                    "Starting with $25,000 available working cash produces month-end "
-                    "balances of $17,950, $40,275, and $62,600 before distributions "
-                    "or separate setup expenditures. Daily timing still matters: "
-                    "a positive month-end balance cannot fund an earlier payment "
-                    "unless the opening balance or actual intervening collections "
-                    "cover it. Maintain a weekly payment calendar alongside this "
-                    "monthly management presentation."
-                ),
-                (
-                    "Stress the conversion system without quietly rewriting the "
-                    "canonical Base case. If duplicate and invalid inquiries rise "
-                    "from 20% to 30%, 1,000 raw contacts yield 700 screened "
-                    "contacts, 280 retainers at the same 40% screened conversion, "
-                    "196 usable proof packets at 70%, and 175 accepted files "
-                    "at the original 200-of-224 acceptance ratio. Retrieval "
-                    "spend falls to $5,040 if only retained matters incur "
-                    "the assumed $18 package cost, but that saving does not "
-                    "repair lost capacity or protect renewal revenue. Independently, "
-                    "a 45% proof-rejection rate on 320 retainers leaves 176 "
-                    "usable packets and approximately 157 accepted files at "
-                    "the same downstream ratio. Report that estimate as a "
-                    "stress result, not an observed cohort count. If 20 "
-                    "additional retrieval packages are required during the "
-                    "30-day correction window, their $360 incremental cost "
-                    "reduces monthly profit to $21,965 when all other "
-                    "assumptions remain unchanged. Exhausted staffing capacity "
-                    "adds further cost. Pause weak sources, obtain provider "
-                    "quotes, and change scope prospectively rather than "
-                    "billing per accepted case to recover the shortfall. "
-                    "The stated $2,500 to $14,000 monthly operating range "
-                    "is a launch footprint, not the fully loaded Base "
-                    "delivery budget; paid media and scaled service delivery "
-                    "must remain visible."
-                ),
-            ],
-            "table": {
-                "caption": "Worked 90-Day Cohort Walk",
-                "headers": [
-                    "Cohort or reconciliation checkpoint being measured",
-                    "Lead waterfall, scrubs, and service-delivery result",
-                    "Earned service revenue and actual collection timing",
-                    "Operating outlays and resulting earned owner profit",
-                    "Cumulative operating cash and closing receivable",
-                ],
-                "rows": [
-                    [
-                        "Month 1 starts the first fully delivered service cohort",
-                        "1,000 raw; 200 scrubbed; 320 signed; 224 proven; 200 accepted",
-                        "$58,750 earned; collect $29,375 now and $29,375 during Month 2",
-                        "$36,425 paid operating costs leave $22,325 earned owner profit",
-                        "Operating cash totals negative $7,050; outstanding receivable totals $29,375",
-                    ],
-                    [
-                        "Month 2 repeats delivery while collecting the preceding balance",
-                        "1,000 raw; 200 scrubbed; 96 proof failures; 24 final deficiencies",
-                        "$58,750 earned; collect $29,375 prior balance plus $29,375 current",
-                        "$36,425 paid operating costs leave another $22,325 earned profit",
-                        "Cumulative operating cash reaches $15,275; receivable remains $29,375",
-                    ],
-                    [
-                        "Month 3 closes the observation period with one balance outstanding",
-                        "1,000 raw; 320 signed; 224 usable packets; 200 accepted files",
-                        "$58,750 earned; collect $29,375 prior balance plus $29,375 current",
-                        "$36,425 paid operating costs leave another $22,325 earned profit",
-                        "Cumulative operating cash reaches $37,600; receivable remains $29,375",
-                    ],
-                    [
-                        "Ninety-day totals reconcile all three independent service cohorts",
-                        "3,000 raw; 600 scrubbed; 960 signed; 672 proven; 600 accepted",
-                        "$176,250 earned service revenue reconciles to $146,875 actual receipts",
-                        "$109,275 operating costs reconcile to $66,975 earned owner profit",
-                        "$37,600 operating cash plus $29,375 receivable equals earned profit",
-                    ],
-                    [
-                        "Collection bridge attributes each receipt to its original service cohort",
-                        "Accepted files remain operating evidence rather than payable referral units",
-                        "Months 1 and 2 collect fully; Month 3 collects half",
-                        "All illustrated operating invoices are paid within their service month",
-                        "Month 4 collects the final $29,375 without adding prior-period revenue",
-                    ],
-                    [
-                        "Working-capital overlay starts with $25,000 available operating bank cash",
-                        "Opening capital supports timing gaps without changing any conversion counts",
-                        "Capital injection stays outside earned revenue and customer receipt totals",
-                        "Setup expenditures and owner distributions require separate cash-budget additions",
-                        "Closing cash moves through $17,950, $40,275, and finally $62,600",
-                    ],
-                    [
-                        "Steady-state annualization reconciles exactly to the canonical Base scenario",
-                        "Twelve monthly cohorts imply 12,000 raw inquiries and 2,400 accepted files",
-                        "Twelve earned months at $58,750 produce $705,000 annual revenue",
-                        "Annual costs total $437,100; annual owner profit totals $267,900",
-                        "Stable receivables preserve timing differences without altering the 38.0% margin",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect delivery margin before purchasing another lead batch",
-                "body": (
-                    "Measure source quality at proof and correction completion, while keeping "
-                    "contract compensation independent of individual claim outcomes."
-                ),
-                "items": [
-                    "Compare each source's duplicate rate and usable-proof rate weekly; a cheaper raw inquiry can consume more retrieval labor than an expensive verified submission.",
-                    "Request provider-specific format and pricing details before sending large batches; an $18 average retrieval assumption cannot absorb unlimited specialist processing charges.",
-                    "Start the correction-window clock from the contractually defined service acceptance event, not a vendor's undocumented upload timestamp.",
-                    "Maintain separate cohort and calendar dashboards so a slow-paying law firm cannot appear profitable merely because unpaid invoices are absent from a bank-only report.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Contain privacy-claim pilots, evidentiary failure, and renewal risk",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The mapped play cipa_vppa_wiretap_pixel_settlement_arbitrage belongs "
-                    "inside a counsel-led evidence process, not an automated demand "
-                    "factory. For a genuine tracking-related inquiry, preserve the "
-                    "claimant's account of events, the relevant disclosure and consent "
-                    "versions, authorized browser evidence, timestamps, and the actual "
-                    "information allegedly transmitted. Counsel determines applicability, "
-                    "standing, defendant identity, statutory exceptions, limitations "
-                    "periods, and recoverable damages. California Penal Code 631 "
-                    "addresses specified communications interception conduct; it does "
-                    "not make every third-party analytics request an actionable wiretap. "
-                    "The Video Privacy Protection Act, 18 U.S.C. 2710, requires "
-                    "analysis of the statutory provider, consumer, disclosure, and "
-                    "personally identifiable information elements. Do not assume a "
-                    "URL, ordinary page visit, or pseudonymous identifier alone "
-                    "establishes every element. Preserve existing evidence rather "
-                    "than manufacturing plaintiffs, accessing another person's "
-                    "account, or capturing communications beyond the authorized "
-                    "scope. Keep original captures read-only, hash exports, "
-                    "record tool versions, and explain collection limitations. "
-                    "A browser HAR export can contain credentials and sensitive "
-                    "content, so restrict access and produce a reviewed "
-                    "derivative for routine analysis. Retain the original only "
-                    "under the documented preservation and retention policy. "
-                    "Close unsupported matters rather than escalating them "
-                    "to generate administrative volume."
-                ),
-                (
-                    "Price the privacy pilot as a distinct administrative research "
-                    "assignment. An illustrative 40 inquiries at $25 screening "
-                    "cost each consume $1,000; eight authorized evidence "
-                    "reconstructions at $75 each add $600. A supported "
-                    "$2,400 fixed service fee therefore leaves $800 contribution "
-                    "before any additional overhead. Counsel might accept three "
-                    "matters, eight matters, or none; the agreed fee remains "
-                    "tied to the completed research scope rather than demands, "
-                    "settlements, or percentages of statutory damages. This "
-                    "pilot is outside the canonical Base cohort and must "
-                    "not be added to its $267,900 annual profit without "
-                    "a separate revised budget. If the evidence fails, "
-                    "the fallback is to close unsupported matters and "
-                    "offer authorized privacy-remediation audits under a new "
-                    "scope. Obtain permission from the relevant site owner "
-                    "before technical testing; claimant authorization alone "
-                    "does not authorize intrusive testing of someone "
-                    "else's systems. An audit can inventory deployed tags, "
-                    "compare observed transmission with disclosures, and "
-                    "verify agreed engineering changes using approved test "
-                    "accounts. Do not condition closing a weak claim "
-                    "on purchasing remediation. Preserve separation between "
-                    "the firm's legal judgment and the MSO's interest "
-                    "in new administrative work, including conflicts "
-                    "arising from serving a prospective opposing party."
-                ),
-                (
-                    "Run a weekly exception meeting with four queues: identity "
-                    "and contact authority, provider retrieval, counsel eligibility, "
-                    "and service collections. Give each item an owner, "
-                    "evidence reference, next action, and due date; a "
-                    "dashboard count without a responsible person is not "
-                    "a control. Duplicate clusters trigger source suspension "
-                    "and a preserved vendor dispute file. Medical "
-                    "contradictions trigger human review, never an instruction "
-                    "for the parser to invent missing exposure dates. "
-                    "A material general-causation ruling or Rule 702 "
-                    "expert-evidence exclusion triggers counsel's reassessment "
-                    "of affected campaigns, statements of work, and "
-                    "open intake commitments. Stop incremental acquisition "
-                    "where the approved factual premise has changed, "
-                    "while preserving existing files and communicating "
-                    "through the responsible firm. Collection exceptions "
-                    "trigger invoice-evidence review and contractual "
-                    "follow-up, not movement of client trust funds "
-                    "into the operating account. At day 90, reconcile "
-                    "every accepted file to its evidence trail, "
-                    "every earned invoice to delivered services, and "
-                    "every receipt to a bank transaction. Renew "
-                    "only the capacity that measured proof throughput "
-                    "and payment behavior support. Scaling to two "
-                    "full-time staff and four contractors requires "
-                    "retested queues, coverage, and unit costs; "
-                    "the canonical $625,000 Scaled profit is a "
-                    "separate scenario, not permission to multiply "
-                    "the Base pipeline without examining bottlenecks."
-                ),
-            ],
-            "table": {
-                "caption": "Privacy-Pilot Economics and Production Exception Disposition Matrix",
-                "headers": [
-                    "Specific play or exception requiring an owner",
-                    "Evidence and economic measurement required for disposition",
-                    "Authorized response and concrete operating boundary",
-                    "Fallback that protects service quality and cash",
-                ],
-                "rows": [
-                    [
-                        "cipa_vppa_wiretap_pixel_settlement_arbitrage starts with genuine claimant evidence preservation",
-                        "Screen forty inquiries at twenty-five dollars each for $1,000",
-                        "Counsel evaluates actual statutory elements before any claim advances",
-                        "Close unsupported matters and document the reason without generating demands",
-                    ],
-                    [
-                        "Authorized privacy reconstruction evaluates eight sufficiently supported evidence packages",
-                        "Eight reconstructions at seventy-five dollars each consume another $600",
-                        "Use scoped browser captures and preserve restricted original evidence",
-                        "Stop collection when authorization or technical scope becomes insufficient",
-                    ],
-                    [
-                        "Fixed-scope privacy research billing remains independent of claim outcomes",
-                        "$2,400 service revenue less $1,600 direct costs leaves $800",
-                        "Recognize completed administrative research rather than hypothetical settlement proceeds",
-                        "Offer separately authorized remediation audits without conditioning claim closure",
-                    ],
-                    [
-                        "Duplicate-source deterioration reduces monthly production before provider retrieval begins",
-                        "Thirty-percent scrubs imply 280 retainers and 175 accepted files",
-                        "Suspend problematic sources and preserve evidence supporting vendor disputes",
-                        "Reallocate approved media spending without promising replacement plaintiffs",
-                    ],
-                    [
-                        "Clinical proof failure consumes resources without producing usable eligibility evidence",
-                        "Forty-five-percent proof rejection leaves 176 usable packets before final review",
-                        "Request missing source material and prohibit invented clinical chronology",
-                        "Close unsupported files when authorized retrieval cannot resolve deficiencies",
-                    ],
-                    [
-                        "Administrative correction requests consume the contracted thirty-day replacement window",
-                        "Twenty extra retrieval packages add $360 to monthly operating costs",
-                        "Track correction labor separately and enforce the agreed service scope",
-                        "Revise future capacity pricing rather than imposing accepted-case compensation",
-                    ],
-                    [
-                        "Expert-evidence developments and unpaid invoices require different decision owners",
-                        "Counsel assesses Rule 702 effects; bookkeeping verifies the $29,375 receivable",
-                        "Pause affected acquisition while independently pursuing valid service invoice collection",
-                        "Preserve files, reduce unearned commitments, and keep trust funds external",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A case moves on evidence, an invoice moves on delivered services, and cash moves only on a matched bank transaction.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Execute the jurisdiction-reviewed fixed or cost-plus MSO scope and keep engagement, legal decisions, and trust-account handling under the law firm's control.",
-        "Instrument the five-stage waterfall with verified identity tokens, preserved contact permission, reviewed source evidence, and reason-coded closures.",
-        "Concatenate the six reference modules, execute their QA checks, and validate authenticated adapters before processing real claimant information.",
-        "Fund a weekly working-capital calendar using the $58,750 revenue, $36,425 cost, and split-collection assumptions rather than settlement expectations.",
-        "Run the privacy pilot only under an independently priced scope, preserve genuine evidence, and close unsupported matters before considering separately authorized audits.",
-        "At day 90, reconcile $176,250 earned revenue, $109,275 costs, $146,875 receipts, $29,375 receivables, and $37,600 cumulative operating cash.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "45 CFR 164.524 — Access of individuals to protected health information",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.524",
-            "relevance": "Defines patient-access obligations, response timing, form and format requirements, and applicable fee provisions; retrieval workflows must classify the actual request route.",
-        },
-        {
-            "title": "45 CFR 164.508 — Uses and disclosures for which an authorization is required",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.508",
-            "relevance": "Supplies authorization requirements relevant to third-party disclosures, including required elements, expiration, and revocation-related controls.",
-        },
-        {
-            "title": "42 U.S.C. 17935(e) — Access to certain information in electronic format",
-            "url": "https://www.law.cornell.edu/uscode/text/42/17935",
-            "relevance": "Provides the HITECH electronic-access framework; apply it alongside current regulations and the limits affecting third-party record directions.",
-        },
-        {
-            "title": "45 CFR 164.504(e) — Business associate contracts and other arrangements",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504",
-            "relevance": "Governs required contractual protections when the actual covered-entity and business-associate relationship makes the provision applicable.",
-        },
-        {
-            "title": "47 U.S.C. 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Establishes statutory restrictions relevant to telephone and text outreach; consent and suppression controls must reflect the actual communication method.",
-        },
-        {
-            "title": "47 CFR 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": "Details applicable calling restrictions, consent standards, and do-not-call requirements without treating a vacated one-to-one rule as an operative mandate.",
-        },
-        {
-            "title": "California Penal Code 631 — Communications interception restrictions",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=631.&lawCode=PEN",
-            "relevance": "Provides a primary statutory basis for counsel's evaluation of genuine California tracking-related interception allegations and applicable exceptions.",
-        },
-        {
-            "title": "18 U.S.C. 2710 — Wrongful disclosure of video tape rental or sale records",
-            "url": "https://www.law.cornell.edu/uscode/text/18/2710",
-            "relevance": "Defines VPPA actors, protected information, disclosure restrictions, exceptions, and civil remedies requiring individual legal and factual evaluation.",
-        },
-        {
-            "title": "Federal Rule of Evidence 702 — Testimony by expert witnesses",
-            "url": "https://www.law.cornell.edu/rules/fre/rule_702",
-            "relevance": "Supplies the federal expert-admissibility framework relevant to counsel-led reassessment of general-causation evidence and affected acquisition campaigns.",
-        },
-    ],
-}
+CHAPTER_7 = {'id': 'Q7',
+ 'chapter_id': 'Q7',
+ 'chapter_number': 7,
+ 'question_number': 7,
+ 'slug': 'mass-tort-intake-conversion-client-communication',
+ 'question_prompt': 'How do firms convert leads into signed clients and keep them informed throughout a '
+                    'mass tort?',
+ 'kicker': 'Q7 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Intake, Conversion & Client Communication',
+ 'subtitle': 'Intake scripts and call patching, AI voice agents and Intake EQ, Litify questionnaires and '
+             'qualification, converting mass-tort leads, the client journey, MDL communication '
+             'expectations, and shared-cost explanations',
+ 'layout_template': 'thirty_day_roadmap',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Mass tort intake operators agree the money leaks at the phone, not the ad. Saad '
+                      'Khan says missing a 60-second callback cuts conversion by over 70%. Alert '
+                      'Communications wants outbound contact within 1 to 3 minutes and reports a 5x drop '
+                      "inside 5 minutes for injured callers. K'Lee Terrazas cites a Google report showing "
+                      "28% of Google Business Profile calls missed on the first attempt. Alert's floor "
+                      'converts 70% of leads into qualified leads and says broken intake converts only 20% '
+                      'to 40%. The mechanics include 3-ring overflow ladders, redials at varied times that '
+                      'lift contact to 75% to 80%, tort-specific questionnaires that grew from 4 to 50 '
+                      'questions, and retainers e-signed while the caller is still on the line. '
+                      'Practitioners split on AI agents at $1 per minute versus 24/7 human answering. They '
+                      "also split on Harvard's one-hour response window, which Alert calls too long.",
+ 'key_metrics': [{'label': 'Qualified Lead Conversion Rate',
+                  'metric': 'Qualified Lead Conversion Rate',
+                  'value': '140 of 200 qualified out of 600 leads = 70%, can reach 80-85%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Alert Communications conversion benchmark from its 425-staff, 55,000 sq ft '
+                             'mass tort intake operation, which adjusts staffing every 15 minutes.',
+                  'source': 'Alert Communications ([PJEVefyQCxA @ 00:14:18])'},
+                 {'label': 'Injured-Caller Speed Decay',
+                  'metric': 'Injured-Caller Speed Decay',
+                  'value': '5x drop within 5 minutes',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Contact-rate decay for injured callers, cited alongside InsideSales/MIT data '
+                             'showing 12,700 reached in the first hour versus 1,190 later.',
+                  'source': 'Alert Communications ([PJEVefyQCxA @ 00:23:15])'},
+                 {'label': 'AI Intake Agent Per-Minute Price',
+                  'metric': 'AI Intake Agent Per-Minute Price',
+                  'value': '$1/minute at 1,000 minutes or less vs. $2-$5/minute for call centers',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Price of the AI voice agent compared with traditional legal call centers, '
+                             'which the speaker calls subpar service after 3 years in the industry.',
+                  'source': "Legal Lead Sharks Podcast | K'Lee Terrazas ([e67Bx9d5FBc @ 00:00:46])"},
+                 {'label': 'Lost-Client Reconnection Rate',
+                  'metric': 'Lost-Client Reconnection Rate',
+                  'value': '20-30% connection rate',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Rate at which Aylstock Witkin Kreis & Overholtz reconnected with signed mass '
+                             'tort clients after every other channel had failed; thousands were brought '
+                             'back and paid through settlements.',
+                  'source': 'Kayse AI ([kjUaKK45Ahg @ 00:01:00])'}],
+ 'sections': [{'number': 1,
+               'title': 'The Practitioner Consensus',
+               'paragraphs': ['Every operator in this chapter lands on the same diagnosis: the money leaks '
+                              'at the phone, not the ad. Saad Khan prices one mass tort lead at up to '
+                              '$3,000 against a $4,000 signed retainer. Khan says missing a 60-second '
+                              'callback drops conversion by over 70%, so the problem is speed to lead, not '
+                              'bad ads [ZkN7hMCBwmQ @ 00:00:00]. Alert Communications runs a 425-seat '
+                              'intake floor and sets the bar at an outbound call within 1 to 3 minutes. '
+                              'Alert says the loss turns significant after 5 minutes, and that injured '
+                              'callers show a fivefold drop inside that window [PJEVefyQCxA @ 00:22:15]. '
+                              "K'Lee Terrazas backs the same point with a Google report showing 28% of "
+                              'Google Business Profile calls go unanswered on the first attempt '
+                              '[XcpDdsuGoEY @ 00:03:27]. Terrazas is blunt about what happens next: those '
+                              'callers are not going to leave a voicemail [j80F3HgdRAw @ 00:03:15]. All '
+                              'three treat round-the-clock coverage as the baseline prerequisite. Khan '
+                              'sells an always-on workflow that answers every channel, Alert staffs around '
+                              'the clock, and Terrazas pitches an agent that never burns out at 5 p.m. A '
+                              'firm that buys TV, radio, or paid search traffic without that coverage pays '
+                              'full price for leads it will never reach, and then blames the media vendor.',
+                              'The second point of agreement is that intake is a sales function and should '
+                              'be judged like one. Tony Prito and Nick Worker of Answering Legal say '
+                              'marketers take the blame when the P&L shows no cases, even though intake is '
+                              'the real gap. They state flatly that the first consultation with a '
+                              'prospective client is a sales call, and that the motive is helping the '
+                              'caller, not chasing money [2az9KaozXKQ @ 00:16:30]. Alert Communications '
+                              'goes further. Alert says the intake manager is really a sales manager, and '
+                              'that firms with broken intake convert 20% to 40% of leads instead of the '
+                              '70% to 80% a tuned operation delivers [PJEVefyQCxA @ 00:16:47]. Andrew '
+                              "Picket's Melbourne and Titusville firm has recovered about $38 million at a "
+                              '95% settlement rate. Picket tells operators to record every call, honoring '
+                              'two-party consent where it applies, and to audit intake before spending '
+                              "another dollar on marketing [lW3uPdauQrA @ 00:29:07]. Host K'Lee Terrazas "
+                              'underlines the cost of skipping that audit with the story of a $500 click '
+                              'that could have been a million-dollar case, lost at intake [lW3uPdauQrA @ '
+                              '00:30:22]. The shared rule: the intake desk is the conversion engine for '
+                              'the whole acquisition budget. Staff it with closers, script it like a sales '
+                              'floor, and measure it before blaming the media buy.',
+                              'The third consensus is that client communication does not stop at the '
+                              'signed retainer, because the long middle of a mass tort is where clients '
+                              'drift. Lawsuit Tracker explains that once the attorney submits the very '
+                              'detailed case information sheet, little happens on an individual MDL case '
+                              'until bellwethers, settlement, or remand. That is why the question asked '
+                              'most often is what is going on with my individual case [WmvLnQq2ZuY @ '
+                              '00:00:29]. Chaffin Luhana answers it with a deliberate client journey. The '
+                              'firm assigns each client a team of lawyers, paralegals, and assistants, '
+                              'then walks the client through case development, record review, litigation, '
+                              'settlement, and an itemized disbursement of every penny, so there are no '
+                              'surprises [5cou1UWhrYw @ 00:00:02]. Maury Goldstein of Aylstock Witkin '
+                              'Kreis & Overholtz frames the stakes in money terms: staying connected '
+                              'through settlement is how clients get paid and how the firm earns a return '
+                              'on its acquisition spend [kjUaKK45Ahg @ 00:00:04]. Answering Legal adds '
+                              'that lack of communication is the number one bar complaint, and positions a '
+                              '24/7 human answering service as the reassurance layer [2az9KaozXKQ @ '
+                              '00:20:09]. Silence during the MDL is predictable, so operators agree the '
+                              'communication system has to be built before the silence starts.'],
+               'table': {'caption': 'Where mass tort intake practitioners agree on conversion and client '
+                                    'communication',
+                         'headers': ['Consensus Point',
+                                     'Practitioner Evidence',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Speed to lead matters more than ad quality',
+                                   'Missing a 60-second callback drops conversion by over 70 percent',
+                                   'Fix response time before touching creative or media budgets',
+                                   'Saad Khan | AI Automation ([ZkN7hMCBwmQ @ 00:00:00])'],
+                                  ['Web leads need an instant multi-channel response',
+                                   'Send an instant text, then a call and email; a next-day callback kills '
+                                   'conversions',
+                                   'Wire every form fill to trigger the text and the dial automatically',
+                                   'Alert Communications ([PJEVefyQCxA @ 00:11:27])'],
+                                  ['Missed calls rarely come back as voicemails',
+                                   '28 percent of Google Business Profile calls are missed on the first '
+                                   'attempt',
+                                   'Cover every ring, because callers move on instead of leaving a '
+                                   'voicemail',
+                                   "Legal Lead Sharks Podcast | K'Lee Terrazas ([XcpDdsuGoEY @ 00:03:27])"],
+                                  ['Intake is sales and must be managed as sales',
+                                   'The first consultation with a prospective client is a sales call',
+                                   'Hire and coach intake staff against explicit conversion targets',
+                                   'Answering Legal, Inc. ([2az9KaozXKQ @ 00:16:30])'],
+                                  ['Audit intake before increasing marketing spend',
+                                   'Record all calls under two-party consent and review intake first',
+                                   'Pull call recordings before approving the next media budget',
+                                   "Legal Lead Sharks Podcast | K'Lee Terrazas ([lW3uPdauQrA @ 00:29:07])"],
+                                  ['Signed clients need structured contact through settlement',
+                                   'Staying connected across the case lifecycle lets the firm recover its '
+                                   'acquisition investment',
+                                   'Budget retention communication as part of the true acquisition cost',
+                                   'Kayse AI ([kjUaKK45Ahg @ 00:00:04])'],
+                                  ['MDL silence must be explained to clients up front',
+                                   'Little happens on an individual case after the case information sheet '
+                                   'until settlement or remand',
+                                   'Send monthly or bi-monthly newsletters to keep clients from drifting',
+                                   'Lawsuit Tracker ([WmvLnQq2ZuY @ 00:00:29])']]}},
+              {'number': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Alert Communications runs a specific response ladder. An inbound call rings '
+                              'no more than 3 times, then plays a recorded message, holds for no longer '
+                              'than 15 seconds, and rolls to the overflow center. Alert built the ladder '
+                              'this way because abandonment climbs after 3 rings and after a 15-second '
+                              'hold. One firm had callers waiting on hold for 6 minutes [PJEVefyQCxA @ '
+                              '00:21:02]. Web leads get an instant text, then a call and an email. On '
+                              'callbacks, Alert reports that immediate dials reach 37% to 40% of leads, '
+                              'while repeating attempts at varied times of day lifts contact to 75% to 80% '
+                              '[PJEVefyQCxA @ 00:35:45]. Saad Khan automates the first rung with '
+                              'event-driven injection, which fires an outbound call within milliseconds of '
+                              'a form fill. Khan claims a 391% boost from first-minute contact and runs '
+                              'ingestion, routing, qualification, data structuring, and CRM sync with no '
+                              'human in the loop [ZkN7hMCBwmQ @ 00:01:09]. Inside the CRM, Litify trainers '
+                              'show how to catch leads that slip through. Build a party list view filtered '
+                              'by last-called date so unreachable intakes surface for another attempt, '
+                              'then pin and clone that view for daily cleanup [5eCAkl3wUBg @ 00:19:48]. '
+                              'Every tool here applies the same rule: no lead sits untouched, and every '
+                              'missed contact goes back into a queue.',
+                              'Screening scripts start short when a tort is new and get longer as it '
+                              'matures. Alert Communications says its 3M earplug intake started at 4 '
+                              'questions in early 2019 and grew to 50 by the late stage, and that intake '
+                              "should be re-customized monthly [PJEVefyQCxA @ 00:30:58]. Saad Khan's AI "
+                              'agent applies MDL screens automatically: a jurisdictional baseline, a '
+                              '30-day exposure minimum, and a 1953 to 1987 date range. Non-qualifiers are '
+                              'auto-rejected with no paralegal needed, and complex cases go to a human '
+                              'review queue [ZkN7hMCBwmQ @ 00:01:27]. Litify builds one questionnaire per '
+                              'case type, branching like a Choose Your Own Adventure book. CQC rules '
+                              'auto-turn-down cases that fail, answers auto-map to record fields, and '
+                              'output can be downloaded as a PDF or emailed [5eCAkl3wUBg @ 00:39:38]. '
+                              "K'Lee Terrazas's demo agent, Kim, walks a personal injury caller through "
+                              'eleven steps in a fixed order: name and phone, callback permission, self or '
+                              'someone else, accident date, treatment, other attorney, city and state, '
+                              'fault, description, injuries, and ER or clinic. Kim then pitches no fees '
+                              'upfront and offers a live transfer [XcpDdsuGoEY @ 00:00:47]. In every '
+                              'version, screening produces structured, reportable fields that drive '
+                              'auto-rejection, routing, and CRM sync, instead of free-text notes someone '
+                              'has to re-read later.',
+                              'Closing and unit economics are where the numbers get hard. Alert '
+                              'Communications closes in a strict order. First, stay on the call and text '
+                              'the retainer for e-signature. Next, email it. Only then mail packets, which '
+                              'older hernia mesh claimants needed but 3M military claimants almost never '
+                              "did [PJEVefyQCxA @ 00:37:21]. Alert's cost model puts cost per acquisition "
+                              'at $2,000, with $500 to $1,750 going to marketing and $250 to $500 to '
+                              'intake, and each lost lead costing up to $750 [PJEVefyQCxA @ 00:17:17]. On '
+                              "answering cost, K'Lee Terrazas quotes AI agents at $1 per minute for 1,000 "
+                              'minutes or less, against $2 to $5 per minute for call centers. After 3 '
+                              'years in the industry, Terrazas calls that call-center service subpar '
+                              '[e67Bx9d5FBc @ 00:00:46]. Modern Legal Ops split its pipeline into open, '
+                              'working, under review, and retainer response. The team then tracked '
+                              'time-to-touch, open-to-offer, time under review, and open-to-close, '
+                              'segmented by investor claims, class action, mass tort, and assigned '
+                              'attorney. The slowdown turned out to be internal attorney workup, not the '
+                              'intake agent [jycz9TsdE9w @ 00:01:16]. The takeaway is to price every rung '
+                              'of the funnel and time every handoff, because the bottleneck often sits '
+                              'after intake has already done its job.'],
+               'table': {'caption': 'Street-level intake mechanics, settings, and prices taught by '
+                                    'practitioners',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Setting',
+                                     'How It Is Run',
+                                     'Expert Source'],
+                         'rows': [['Inbound overflow ladder for live calls',
+                                   '3 rings, recorded message, 15-second hold, then the overflow center',
+                                   'Route unanswered calls to overflow before abandonment spikes',
+                                   'Alert Communications ([PJEVefyQCxA @ 00:21:02])'],
+                                  ['Redial cadence for unreached leads',
+                                   'Immediate calls reach 37-40 percent; varied times reach 75-80 percent',
+                                   'Schedule repeat attempts across different times of day',
+                                   'Alert Communications ([PJEVefyQCxA @ 00:35:45])'],
+                                  ['Automated MDL qualification screen',
+                                   '30-day exposure minimum plus a 1953-1987 date range check',
+                                   'Auto-reject non-qualifiers without spending paralegal review time',
+                                   'Saad Khan | AI Automation ([ZkN7hMCBwmQ @ 00:01:27])'],
+                                  ['Callback permission question in scripts',
+                                   'Required A2P step; inbound leads from Google Ads and SEO always permit '
+                                   'callback',
+                                   'Ask for permission early in every script that may lead to outbound '
+                                   'contact',
+                                   "Legal Lead Sharks Podcast | K'Lee Terrazas ([e67Bx9d5FBc @ 00:00:15])"],
+                                  ['AI voice agent pricing versus call centers',
+                                   '$1 per minute at 1,000 minutes or less versus $2-$5 for call centers',
+                                   'Compare per-minute cost against current answering vendor invoices',
+                                   "Legal Lead Sharks Podcast | K'Lee Terrazas ([e67Bx9d5FBc @ 00:00:46])"],
+                                  ['Pipeline stage KPIs for intake',
+                                   'Time-to-touch, open-to-offer, time under review, and open-to-close',
+                                   'Segment by practice type and assigned attorney to find delays',
+                                   'Modern Legal Ops | Building a tech forward firm ([jycz9TsdE9w @ '
+                                   '00:00:31])'],
+                                  ['Post-signing follow-up service level',
+                                   'Pre-suit paralegal within 24 hours and attorney within 48 hours',
+                                   'Hand each signed client to the pre-suit team on fixed deadlines',
+                                   "Legal Lead Sharks Podcast | K'Lee Terrazas ([lW3uPdauQrA @ "
+                                   '00:22:47])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Conversion levers operators actually pull',
+                           'body': 'Small operational moves that practitioners say recover signed cases '
+                                   'and keep data clean after the first call.',
+                           'items': ['Track every retainer packet after it goes out. Alert reports packet '
+                                     'tracking alone adds about 15% to conversion [Alert Communications — '
+                                     'PJEVefyQCxA @ 00:41:10]',
+                                     'Push every lead to the CRM with daily reports and compare vendors '
+                                     'head to head. Alert contrasts a vendor at 12:1 with one at 6:1 '
+                                     '[Alert Communications — PJEVefyQCxA @ 00:48:26]',
+                                     'Make the fields in the Litify highlights panel required, and limit '
+                                     'banners, because too many banners slow the intake page [Litify — '
+                                     '5eCAkl3wUBg @ 00:23:03]',
+                                     'Give intake specialists an incentive to earn five-star Google '
+                                     'reviews, which feed the review channel that brings in the next leads '
+                                     "[Legal Lead Sharks Podcast | K'Lee Terrazas — lW3uPdauQrA @ "
+                                     '00:22:05]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Answer within the ring limit',
+                              'action': 'Configure inbound routing so no call rings more than 3 times or '
+                                        'holds more than 15 seconds before overflow.',
+                              'detail': 'Run 3 rings, then a recorded message, then a hold of no more than '
+                                        '15 seconds, then the overflow center, because abandonment climbs '
+                                        'after each threshold [Alert Communications — PJEVefyQCxA @ '
+                                        '00:21:02]'},
+                             {'step': 2,
+                              'title': 'Text first, dial fast, redial at varied times',
+                              'action': 'Fire an instant text on every web lead, call within 1 to 3 '
+                                        'minutes, and keep redialing at different times of day.',
+                              'detail': 'Immediate calls reach 37-40% of leads; varied-time redials lift '
+                                        'contact to 75-80%. Pull unreached leads from a last-called list '
+                                        'view [Alert Communications — PJEVefyQCxA @ 00:35:45]'},
+                             {'step': 3,
+                              'title': 'Screen with a tort-specific questionnaire',
+                              'action': 'Run one branching questionnaire per case type, with '
+                                        'auto-turn-down rules and answers mapped to record fields.',
+                              'detail': 'Use CQC rules to auto-turn-down cases that fail, and download or '
+                                        'email the output as a PDF. Update the script monthly as the tort '
+                                        'matures [Litify — 5eCAkl3wUBg @ 00:39:38]'},
+                             {'step': 4,
+                              'title': 'Close on the call and hand off on a deadline',
+                              'action': 'Text the retainer for e-signature while the caller is still on '
+                                        'the line, then hand the signed client to pre-suit staff.',
+                              'detail': 'After signing, a pre-suit paralegal contacts the client within 24 '
+                                        'hours and a pre-suit attorney within 48 hours, and phase changes '
+                                        "trigger automated update texts [Legal Lead Sharks Podcast | K'Lee "
+                                        'Terrazas — lW3uPdauQrA @ 00:22:47]'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over how fast is fast enough. Saad Khan frames the '
+                              'whole mass tort leak as a speed-to-lead problem, not a bad-ads problem: a '
+                              'lead can run up to $3,000, a signed retainer $4,000, and missing a '
+                              '60-second callback drops conversion by over 70% [ZkN7hMCBwmQ @ 00:00:00]. '
+                              'The Khan build fires an outbound call within milliseconds through '
+                              'event-driven injection and claims a 391% boost from first-minute contact '
+                              '[ZkN7hMCBwmQ @ 00:01:09]. Alert Communications runs a human floor and sets '
+                              'a looser but still brutal bar: outbound dial within one to three minutes, '
+                              'with significant loss after five [PJEVefyQCxA @ 00:22:15]. Alert cites the '
+                              'InsideSales/MIT numbers, 12,700 reached in the first hour versus 1,190 '
+                              'later, and a 5x drop within five minutes for injured callers [PJEVefyQCxA @ '
+                              '00:23:00]. Where Alert breaks openly with the research is the Harvard '
+                              'finding that leads are 7x more likely to qualify within one hour; the '
+                              "speaker's verdict is that one hour is too long because the claimant signs "
+                              'elsewhere [PJEVefyQCxA @ 00:23:57]. So the operator choice is between a '
+                              'sub-second machine dial and a one-to-three-minute human dial, and nobody on '
+                              'either side defends a sixty-minute window.',
+                              "The second fight is machine versus human on the phones. K'Lee Terrazas "
+                              'pitches AI intake agents at $1 a minute for a thousand minutes or less, '
+                              'against the $2 to $5 a minute that call centers charge for what Terrazas '
+                              'calls subpar service, based on three years in the industry [e67Bx9d5FBc @ '
+                              '00:00:46]. Terrazas argues traditional centers never learned the Google Ads '
+                              'cadence, while AI runs 24/7 with unlimited concurrent calls, no payroll, no '
+                              'training, no turnover, and never hits the 5:00 p.m. burnout that human '
+                              'intake does [e67Bx9d5FBc @ 00:01:16]. Answering Legal takes the opposite '
+                              'position: the top bar complaint is lack of communication, and a live 24/7 '
+                              'human answering service reassures callers in a way the hosts explicitly '
+                              'contrast with AI automation [2az9KaozXKQ @ 00:20:09]. Alert Communications '
+                              'stakes out the scaled-human version, with all agents US-based, 65% '
+                              'bilingual, and pricing by the minute in tenth increments, flat '
+                              'cost-per-lead, or flat rates [PJEVefyQCxA @ 00:55:20]. On the retention '
+                              'side, Maury Goldstein of Aylstock Witkin Kreis & Overholtz says Kayse lets '
+                              'two to three people handle tens of thousands of clients weekly, where the '
+                              'alternative was an entire department or an entire offshore development '
+                              '[kjUaKK45Ahg @ 00:00:47]. The trade is per-minute cost and concurrency on '
+                              'the AI side against human reassurance and bilingual staff on the '
+                              'call-center side.',
+                              'After the retainer is signed, the camps split again on how much the client '
+                              'should hear. Lawsuit Tracker tells MDL clients bluntly that once the '
+                              'attorney submits the very detailed case information sheet, little happens '
+                              'on an individual case, and the client should track the internet, YouTube '
+                              'channels, and monthly or bi-monthly attorney newsletters instead '
+                              '[WmvLnQq2ZuY @ 00:00:29]. Andrew Picket runs the opposite playbook: every '
+                              'phase change in Hona triggers an automated text carrying a Picket video '
+                              'explaining investigation, treatment, or negotiation and settlement '
+                              '[lW3uPdauQrA @ 00:23:39]. On top of that, the firm ships a welcome box '
+                              'around day 14 with a blanket and power bank for comfort and connection, '
+                              'mails birthday cards, and asks outright for referrals [lW3uPdauQrA @ '
+                              '00:25:26]. Chaffin Luhana builds an intentional client journey so there are '
+                              'no surprises, assigning each client a team of lawyers, paralegals, and '
+                              'assistants who learn the story, the injuries, and the life impact '
+                              '[5cou1UWhrYw @ 00:00:21]. Kayse users treat silence as a money problem, not '
+                              'a courtesy problem: Goldstein ties lifecycle contact directly to clients '
+                              'getting paid and the firm earning a return on its acquisition investment '
+                              '[kjUaKK45Ahg @ 00:00:04]. The low-touch MDL model saves staff hours; the '
+                              'high-touch model protects the docket from client drift.'],
+               'table': {'caption': 'Competing intake and client-communication playbooks, side by side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Callback speed standard for fresh mass tort leads',
+                                   'Human outbound dial within one to three minutes; the Harvard one-hour '
+                                   'window is too long',
+                                   'Event-driven AI call within milliseconds; missing a 60-second callback '
+                                   'cuts conversion over 70%',
+                                   'Alert Communications ([PJEVefyQCxA @ 00:23:57]); Saad Khan | AI '
+                                   'Automation ([ZkN7hMCBwmQ @ 00:00:00])'],
+                                  ['Who answers the inbound phone line around the clock',
+                                   'AI agent at $1 per minute under 1,000 minutes with unlimited '
+                                   'concurrent calls',
+                                   'Live 24/7 human answering service that reassures callers, positioned '
+                                   'against AI automation',
+                                   "Legal Lead Sharks Podcast | K'Lee Terrazas ([e67Bx9d5FBc @ 00:00:46]); "
+                                   'Answering Legal, Inc. ([2az9KaozXKQ @ 00:20:09])'],
+                                  ['Who screens MDL qualification criteria on each lead',
+                                   'AI checks jurisdiction, 30-day exposure, 1953-1987 window and '
+                                   'auto-rejects with no paralegal',
+                                   'Intake manager runs it as a sales manager; 3M screener grew from 4 to '
+                                   '50 questions',
+                                   'Saad Khan | AI Automation ([ZkN7hMCBwmQ @ 00:01:27]); Alert '
+                                   'Communications ([PJEVefyQCxA @ 00:28:56])'],
+                                  ['Branded versus unbranded mass tort advertising strategy',
+                                   'Branded ads double dip into PI cases and some states require branding',
+                                   'Unbranded remains the majority, with national MDL ads run without bar '
+                                   'admission everywhere',
+                                   'Alert Communications ([PJEVefyQCxA @ 00:07:34])'],
+                                  ['How much the signed client hears during the MDL',
+                                   'Little individual activity after the case information sheet; clients '
+                                   'follow newsletters and YouTube',
+                                   'Hona phase-change texts with attorney videos, day-14 welcome box, '
+                                   'birthday cards, referral asks',
+                                   'Lawsuit Tracker ([WmvLnQq2ZuY @ 00:01:11]); Legal Lead Sharks Podcast '
+                                   "| K'Lee Terrazas ([lW3uPdauQrA @ 00:23:39])"],
+                                  ['Reaching signed clients who have gone completely dark',
+                                   'Kayse outreach run by two to three people reaching 20-30% of hopeless '
+                                   'contacts',
+                                   'A large call center with an entire department or an offshore '
+                                   'development behind it',
+                                   'Kayse AI ([kjUaKK45Ahg @ 00:00:32])'],
+                                  ['How the intake pipeline stages are defined in CRM',
+                                   'Qualified null, sales qualified, intake-qualified, attorney '
+                                   'consultation, then retainer or contingency',
+                                   'Open, working, under review, retainer response, each timed with its '
+                                   'own KPI',
+                                   'Answering Legal, Inc. ([2az9KaozXKQ @ 00:06:26]); Modern Legal Ops | '
+                                   'Building a tech forward firm ([jycz9TsdE9w @ 00:00:16])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive failure is paying for leads that intake then wastes. '
+                              'Saad Khan cites one firm that burned $24,000 in payroll processing 800 '
+                              'rejected leads, the exact cost the auto-reject screening is built to kill '
+                              '[ZkN7hMCBwmQ @ 00:00:15]. Alert Communications puts numbers on the '
+                              'conversion gap: firms with broken intake convert 20% to 40% of leads '
+                              "instead of 70% to 80% [PJEVefyQCxA @ 00:16:47]. Alert's worked example runs "
+                              'a $2,000 cost per acquisition built from $500 to $1,750 of marketing and '
+                              '$250 to $500 of intake, with a single lost lead costing up to $750 '
+                              '[PJEVefyQCxA @ 00:17:17]. The trap that hides this is an undersized funnel: '
+                              'a firm reporting 70 out of 100 looks healthy while the leads it never '
+                              'captured stay invisible, against an Alert campaign running at 70% qualified '
+                              "that can reach 80% to 85% [PJEVefyQCxA @ 00:14:18]. K'Lee Terrazas adds the "
+                              "paid-media version of the same loss: another attorney's $30,000 in Facebook "
+                              "ads was a 100% loss [lW3uPdauQrA @ 00:13:28]. Andrew Picket's fix is "
+                              'procedural, not budgetary: record every call, honoring two-party consent '
+                              'where it applies, and check intake before spending another dollar on '
+                              'marketing [lW3uPdauQrA @ 00:29:07].',
+                              'The phone itself is where leads bleed out. Alert Communications measured '
+                              'abandonment rising after three rings and again after a 15-second hold, and '
+                              'reported one firm running six-minute holds [PJEVefyQCxA @ 00:19:14]. The '
+                              'overflow sequence Alert prescribes is three rings, a recorded message, a '
+                              '15-second hold, then roll to the overflow center [PJEVefyQCxA @ 00:21:02]. '
+                              'Alert also found voicemail or no answer on 35% of calls, and flags '
+                              'paralegals juggling intake alongside other work as a weak point '
+                              '[PJEVefyQCxA @ 00:28:06]. Repeat-attempt data shows why one dial is never '
+                              'enough: immediate calls reach 37% to 40%, and varying call times lifts '
+                              "contact to 75% to 80% [PJEVefyQCxA @ 00:35:45]. K'Lee Terrazas cites a "
+                              'Google report that 28% of GBP calls were missed on the first attempt '
+                              '[XcpDdsuGoEY @ 00:03:27], and is blunt about what happens next: those '
+                              'callers are not going to leave a voicemail [j80F3HgdRAw @ 00:03:15]. '
+                              'Terrazas built Intake EQ after watching a $500 click that could have been a '
+                              'million-dollar case get lost [lW3uPdauQrA @ 00:30:22]. Even the AI fix '
+                              'shows seams: in the live demo, the agent Kim misnamed the caller Kaitlin '
+                              'versus Caitlyn while running the eleven-question PI screen.',
+                              'Some failures sit downstream of the phone. Modern Legal Ops watched volume '
+                              'roughly double from 2024 to 2026 with a single intake agent, Lisa, while '
+                              'conversion lagged because three to four hidden steps sat between open and '
+                              'close [jycz9TsdE9w @ 00:00:00]. After splitting the pipeline into open, '
+                              'working, under review, and retainer response, and timing each stage, the '
+                              'culprit turned out to be internal attorney workup, not intake [jycz9TsdE9w '
+                              "@ 00:01:16]. Litify's trainer flags quieter CRM traps: a list-view search "
+                              'only covers that filtered list, so staff can miss intakes that exist '
+                              'elsewhere [5eCAkl3wUBg @ 00:11:34], and stacking too many banners on a '
+                              "record slows the page [5eCAkl3wUBg @ 00:23:03]. Litify's answer to the "
+                              'unreachable lead is a party list view filtered by last-called date '
+                              '[5eCAkl3wUBg @ 00:19:48]. The late-stage failure is client drift after '
+                              'signing. Goldstein describes thousands of Aylstock clients the firm had '
+                              'absolutely no hope of connecting with after exhausting every other channel, '
+                              'until Kayse reached 20% to 30% of them and brought them back to get paid '
+                              'through settlements [kjUaKK45Ahg @ 00:01:00]. Alert adds that screeners '
+                              'never sit still: the 3M intake grew from four questions in early 2019 to '
+                              'fifty late-stage, and intake gets customized monthly [PJEVefyQCxA @ '
+                              '00:33:14].'],
+               'table': {'caption': 'Firsthand intake failures and the economics practitioners attached to '
+                                    'them',
+                         'headers': ['Failure Mode', 'What Happened', 'Economics Check', 'Expert Source'],
+                         'rows': [['Paying human staff to process junk leads',
+                                   'One firm burned $24,000 in payroll processing 800 rejected leads',
+                                   'Leads cost up to $3,000 and a signed retainer costs $4,000',
+                                   'Saad Khan | AI Automation ([ZkN7hMCBwmQ @ 00:00:15])'],
+                                  ['Broken intake hiding behind a healthy-looking marketing budget',
+                                   'Firms with broken intake convert 20-40% instead of 70-80% of leads',
+                                   '$2,000 CPA example where a single lost lead costs up to $750',
+                                   'Alert Communications ([PJEVefyQCxA @ 00:17:17])'],
+                                  ['Slow pickup and long holds on inbound TV and radio calls',
+                                   'Abandonment rises after three rings and 15-second holds; one firm ran '
+                                   'six-minute holds',
+                                   'Overflow sequence: three rings, recorded message, 15-second hold, then '
+                                   'overflow center',
+                                   'Alert Communications ([PJEVefyQCxA @ 00:21:02])'],
+                                  ['Missed Google Business Profile calls that never leave voicemail',
+                                   '28% of GBP calls were missed on the first attempt per a Google report',
+                                   'A $500 click that could have been a million-dollar case was lost',
+                                   "Legal Lead Sharks Podcast | K'Lee Terrazas ([XcpDdsuGoEY @ 00:03:27]); "
+                                   "Legal Lead Sharks Podcast | K'Lee Terrazas ([lW3uPdauQrA @ 00:30:22])"],
+                                  ['Hidden attorney workup stalling retainers after intake qualifies them',
+                                   'Volume roughly doubled across 2024-2026 while conversion lagged with '
+                                   'one intake agent',
+                                   'Track time-to-touch, open-to-offer, time under review, and '
+                                   'open-to-close separately',
+                                   'Modern Legal Ops | Building a tech forward firm ([jycz9TsdE9w @ '
+                                   '00:01:16])'],
+                                  ['Scaling paid ads before anyone audits the intake desk',
+                                   "Another attorney's $30,000 in Facebook ads ended as a 100% loss",
+                                   'Record all calls and check intake before spending more on marketing',
+                                   "Legal Lead Sharks Podcast | K'Lee Terrazas ([lW3uPdauQrA @ 00:13:28])"],
+                                  ['Dialing each lead once and then giving up on it',
+                                   'Immediate calls alone reach only 37-40% of leads on the list',
+                                   'Varying call times across attempts raises contact to 75-80%',
+                                   'Alert Communications ([PJEVefyQCxA @ 00:35:45])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four intake leaks to close before buying another lead',
+                           'body': 'Each gate below comes from a loss or bottleneck a practitioner hit '
+                                   'firsthand. Clear all four before scaling spend.',
+                           'items': ['Freeze new ad spend until every intake call is recorded and the desk '
+                                     'has been audited; a $30,000 Facebook run ended as a 100% loss [Legal '
+                                     "Lead Sharks Podcast | K'Lee Terrazas — lW3uPdauQrA @ 00:29:07].",
+                                     'Cap pickup at three rings and holds at 15 seconds before calls roll '
+                                     'to a recorded message and overflow center; one firm was running '
+                                     'six-minute holds [Alert Communications — PJEVefyQCxA @ 00:21:02].',
+                                     'Auto-reject non-qualifiers on jurisdiction, 30-day exposure, and the '
+                                     '1953-1987 window before paid staff touch them; one firm burned '
+                                     '$24,000 processing 800 rejected leads [Saad Khan | AI Automation — '
+                                     'ZkN7hMCBwmQ @ 00:01:27].',
+                                     'Time every stage from time-to-touch through open-to-close and '
+                                     'segment by mass tort, class action, and assigned attorney; attorney '
+                                     'workup was the hidden slowdown [Modern Legal Ops | Building a tech '
+                                     'forward firm — jycz9TsdE9w @ 00:00:31].']}}],
+ 'pull_quote': '"That first consultation with a prospective client is a sales call." — Answering Legal, '
+               'Inc. (2az9KaozXKQ @ 00:16:30).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Fire an instant text to every web lead, then call and email; a lead at 8 pm called '
+                      'the next day means conversions just die (Alert Communications, PJEVefyQCxA @ '
+                      '00:11:27).',
+                      'Close on the live call by texting the retainer for e-sign, then email it, and mail '
+                      'packets only for older claimants such as hernia mesh (Alert Communications, '
+                      'PJEVefyQCxA @ 00:37:21).',
+                      'Track every mailed packet, which adds about 15% to conversion (Alert '
+                      'Communications, PJEVefyQCxA @ 00:41:10).',
+                      'Set a follow-up SLA of pre-suit paralegal contact within 24 hours and pre-suit '
+                      "attorney contact within 48 hours (Legal Lead Sharks Podcast | K'Lee Terrazas, "
+                      'lW3uPdauQrA @ 00:22:47).',
+                      'Build one branching questionnaire per case type with CQC rules that auto-turn-down '
+                      'non-qualifying cases and auto-map answers to fields (Litify, 5eCAkl3wUBg @ '
+                      '00:39:38).',
+                      'Push every lead to CRM, send daily reports, and compare vendors separately on '
+                      'ratios such as 12:1 versus 6:1 (Alert Communications, PJEVefyQCxA @ 00:48:26).'],
+ 'statutory_citations': [{'title': 'Alert Communications — Alert Communications Webinar - Converting Mass '
+                                   'Tort Leads - May 2020 [00:38:52]',
+                          'url': 'https://www.youtube.com/watch?v=PJEVefyQCxA&t=2332s',
+                          'relevance': 'Primary practitioner testimony on 24/7/365 response, '
+                                       'rings-and-hold abandonment, cost splits, and retainer close '
+                                       'order.'},
+                         {'title': 'Saad Khan | AI Automation — How Mass Tort Law Firms save $30,000+ / '
+                                   'month Using AI Voice Agents | Blueprint Explained [00:01:09]',
+                          'url': 'https://www.youtube.com/watch?v=ZkN7hMCBwmQ&t=69s',
+                          'relevance': 'Primary practitioner testimony on event-driven AI callbacks, '
+                                       'automated MDL screening, and CRM sync.'},
+                         {'title': 'Kayse AI — Why Aylstock Witkin Kreis & Overholtz, a Top Mass Tort Firm '
+                                   'Runs on Kayse | Maury Goldstein [00:01:00]',
+                          'url': 'https://www.youtube.com/watch?v=kjUaKK45Ahg&t=60s',
+                          'relevance': 'Primary practitioner testimony on re-engaging unreachable signed '
+                                       'clients at 20-30% connection rates.'},
+                         {'title': "Legal Lead Sharks Podcast | K'Lee Terrazas — Scaling a Personal Injury "
+                                   'Law Firm with Systems, Intake, and $38M in Wins | Lawyer Up [00:23:39]',
+                          'url': 'https://www.youtube.com/watch?v=lW3uPdauQrA&t=1419s',
+                          'relevance': 'Primary practitioner testimony on intake SLAs, automated '
+                                       'phase-change texts, and client retention touches.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'ZkN7hMCBwmQ',
+                       'title': 'How Mass Tort Law Firms save $30,000+ / month Using AI Voice Agents | '
+                                'Blueprint Explained',
+                       'channel': 'Saad Khan | AI Automation',
+                       'author': 'Saad Khan | AI Automation',
+                       'text': "This is the operational bottleneck that's silently destroying your ROI.",
+                       'tip': "This is the operational bottleneck that's silently destroying your ROI.",
+                       'timestamp': 34,
+                       'timestamp_seconds': 34,
+                       'timestamp_label': '[00:00:34]',
+                       'url': 'https://www.youtube.com/watch?v=ZkN7hMCBwmQ&t=34s',
+                       'markdown': '[00:00:34](https://www.youtube.com/watch?v=ZkN7hMCBwmQ&t=34s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lW3uPdauQrA',
+                       'title': 'Scaling a Personal Injury Law Firm with Systems, Intake, and $38M in Wins '
+                                '| Lawyer Up',
+                       'channel': "Legal Lead Sharks Podcast | K'Lee Terrazas",
+                       'author': "Legal Lead Sharks Podcast | K'Lee Terrazas",
+                       'text': "And what we've also done at the intake level is we have incentivized our "
+                               'intake specialists to try to get five star Google reviews.',
+                       'tip': "And what we've also done at the intake level is we have incentivized our "
+                              'intake specialists to try to get five star Google reviews.',
+                       'timestamp': 1325,
+                       'timestamp_seconds': 1325,
+                       'timestamp_label': '[00:22:05]',
+                       'url': 'https://www.youtube.com/watch?v=lW3uPdauQrA&t=1325s',
+                       'markdown': '[00:22:05](https://www.youtube.com/watch?v=lW3uPdauQrA&t=1325s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kjUaKK45Ahg',
+                       'title': 'Why Aylstock Witkin Kreis & Overholtz, a Top Mass Tort Firm Runs on Kayse '
+                                '| Maury Goldstein',
+                       'channel': 'Kayse AI',
+                       'author': 'Kayse AI',
+                       'text': 'It has been a absolute game-changer in our ability to communicate with our '
+                               'clients.',
+                       'tip': 'It has been a absolute game-changer in our ability to communicate with our '
+                              'clients.',
+                       'timestamp': 78,
+                       'timestamp_seconds': 78,
+                       'timestamp_label': '[00:01:18]',
+                       'url': 'https://www.youtube.com/watch?v=kjUaKK45Ahg&t=78s',
+                       'markdown': '[00:01:18](https://www.youtube.com/watch?v=kjUaKK45Ahg&t=78s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5cou1UWhrYw',
+                       'title': 'What happens during my Mass Tort case? | Chaffin Luhana',
+                       'channel': 'Chaffin Luhana LLP Injury Lawyers',
+                       'author': 'Chaffin Luhana LLP Injury Lawyers',
+                       'text': 'An intentional client journey sets expectations so there are no surprises.',
+                       'tip': 'An intentional client journey sets expectations so there are no surprises.',
+                       'timestamp': 2,
+                       'timestamp_seconds': 2,
+                       'timestamp_label': '[00:00:02]',
+                       'url': 'https://www.youtube.com/watch?v=5cou1UWhrYw&t=2s',
+                       'markdown': '[00:00:02](https://www.youtube.com/watch?v=5cou1UWhrYw&t=2s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5eCAkl3wUBg',
+                       'title': 'Litify Intake Training: Manage Leads, Questionnaires, and Case '
+                                'Qualification',
+                       'channel': 'Litify',
+                       'author': 'Litify',
+                       'text': 'Every intake ends in one of three exits: open a matter, turn it down, or '
+                               'refer it through the LRN.',
+                       'tip': 'Every intake ends in one of three exits: open a matter, turn it down, or '
+                              'refer it through the LRN.',
+                       'timestamp': 2775,
+                       'timestamp_seconds': 2775,
+                       'timestamp_label': '[00:46:15]',
+                       'url': 'https://www.youtube.com/watch?v=5eCAkl3wUBg&t=2775s',
+                       'markdown': '[00:46:15](https://www.youtube.com/watch?v=5eCAkl3wUBg&t=2775s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WmvLnQq2ZuY',
+                       'title': "You won't hear much from your lawyer in an MDL and here's why",
+                       'channel': 'Lawsuit Tracker',
+                       'author': 'Lawsuit Tracker',
+                       'text': "A question I get all the time is what's going on with my individual case.",
+                       'tip': "A question I get all the time is what's going on with my individual case.",
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=WmvLnQq2ZuY&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=WmvLnQq2ZuY&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jycz9TsdE9w',
+                       'title': 'The Intake Bottleneck We Were Missing #legaloperations #lawfirmmarketing',
+                       'channel': 'Modern Legal Ops | Building a tech forward firm',
+                       'author': 'Modern Legal Ops | Building a tech forward firm',
+                       'text': "And once you're measuring those things, you can start trying to improve "
+                               'them.',
+                       'tip': "And once you're measuring those things, you can start trying to improve "
+                              'them.',
+                       'timestamp': 88,
+                       'timestamp_seconds': 88,
+                       'timestamp_label': '[00:01:28]',
+                       'url': 'https://www.youtube.com/watch?v=jycz9TsdE9w&t=88s',
+                       'markdown': '[00:01:28](https://www.youtube.com/watch?v=jycz9TsdE9w&t=88s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PJEVefyQCxA',
+                       'title': 'Alert Communications Webinar - Converting Mass Tort Leads - May 2020',
+                       'channel': 'Alert Communications',
+                       'author': 'Alert Communications',
+                       'text': 'So converting qualified leads requires lively response 24/7/365.',
+                       'tip': 'So converting qualified leads requires lively response 24/7/365.',
+                       'timestamp': 2332,
+                       'timestamp_seconds': 2332,
+                       'timestamp_label': '[00:38:52]',
+                       'url': 'https://www.youtube.com/watch?v=PJEVefyQCxA&t=2332s',
+                       'markdown': '[00:38:52](https://www.youtube.com/watch?v=PJEVefyQCxA&t=2332s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'e67Bx9d5FBc',
+                       'title': 'Why Traditional Call Centers Are Failing Law Firms 2026',
+                       'channel': "Legal Lead Sharks Podcast | K'Lee Terrazas",
+                       'author': "Legal Lead Sharks Podcast | K'Lee Terrazas",
+                       'text': 'Currently, as of this recording, at least, if you are taking anywhere from '
+                               'a thousand minutes or less, that would be a dollar a minute.',
+                       'tip': 'Currently, as of this recording, at least, if you are taking anywhere from '
+                              'a thousand minutes or less, that would be a dollar a minute.',
+                       'timestamp': 46,
+                       'timestamp_seconds': 46,
+                       'timestamp_label': '[00:00:46]',
+                       'url': 'https://www.youtube.com/watch?v=e67Bx9d5FBc&t=46s',
+                       'markdown': '[00:00:46](https://www.youtube.com/watch?v=e67Bx9d5FBc&t=46s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XcpDdsuGoEY',
+                       'title': 'Intake EQ For Law Firms Because a Missed Call is a Missed Case! Live '
+                                'Demo....',
+                       'channel': "Legal Lead Sharks Podcast | K'Lee Terrazas",
+                       'author': "Legal Lead Sharks Podcast | K'Lee Terrazas",
+                       'text': 'A Google report says 28% of GBP calls were missed on the first attempt.',
+                       'tip': 'A Google report says 28% of GBP calls were missed on the first attempt.',
+                       'timestamp': 207,
+                       'timestamp_seconds': 207,
+                       'timestamp_label': '[00:03:27]',
+                       'url': 'https://www.youtube.com/watch?v=XcpDdsuGoEY&t=207s',
+                       'markdown': '[00:03:27](https://www.youtube.com/watch?v=XcpDdsuGoEY&t=207s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'B8jUBO9DY0k',
+                       'title': 'Legal Intake Receptionist Call Patching',
+                       'channel': 'Answering Legal, Inc.',
+                       'author': 'Answering Legal, Inc.',
+                       'text': 'There is no charge for non-business calls, and a text and email summary is '
+                               'sent after the call.',
+                       'tip': 'There is no charge for non-business calls, and a text and email summary is '
+                              'sent after the call.',
+                       'timestamp': 134,
+                       'timestamp_seconds': 134,
+                       'timestamp_label': '[00:02:14]',
+                       'url': 'https://www.youtube.com/watch?v=B8jUBO9DY0k&t=134s',
+                       'markdown': '[00:02:14](https://www.youtube.com/watch?v=B8jUBO9DY0k&t=134s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2az9KaozXKQ',
+                       'title': 'Legal Intake 101: Scripts, Strategy & Sales You’re Ignoring',
+                       'channel': 'Answering Legal, Inc.',
+                       'author': 'Answering Legal, Inc.',
+                       'text': 'That first consultation with a prospective client is a sales call.',
+                       'tip': 'That first consultation with a prospective client is a sales call.',
+                       'timestamp': 990,
+                       'timestamp_seconds': 990,
+                       'timestamp_label': '[00:16:30]',
+                       'url': 'https://www.youtube.com/watch?v=2az9KaozXKQ&t=990s',
+                       'markdown': '[00:16:30](https://www.youtube.com/watch?v=2az9KaozXKQ&t=990s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_OyhC_G4cFw',
+                       'title': 'Legal Intake Receptionist - Attorney Not Able to Take the Call',
+                       'channel': 'Answering Legal, Inc.',
+                       'author': 'Answering Legal, Inc.',
+                       'text': "When the attorney is entering court, the receptionist takes the caller's "
+                               'best callback time so the caller does not hang up.',
+                       'tip': "When the attorney is entering court, the receptionist takes the caller's "
+                              'best callback time so the caller does not hang up.',
+                       'timestamp': 104,
+                       'timestamp_seconds': 104,
+                       'timestamp_label': '[00:01:44]',
+                       'url': 'https://www.youtube.com/watch?v=_OyhC_G4cFw&t=104s',
+                       'markdown': '[00:01:44](https://www.youtube.com/watch?v=_OyhC_G4cFw&t=104s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'j80F3HgdRAw',
+                       'title': 'Law Firms & Attorneys A Missed Call = A Missed Case. This AI Agent Fixes '
+                                'That (LIVE Demo)',
+                       'channel': "Legal Lead Sharks Podcast | K'Lee Terrazas",
+                       'author': "Legal Lead Sharks Podcast | K'Lee Terrazas",
+                       'text': 'I promise you guys, they are not going to leave a voicemail.',
+                       'tip': 'I promise you guys, they are not going to leave a voicemail.',
+                       'timestamp': 195,
+                       'timestamp_seconds': 195,
+                       'timestamp_label': '[00:03:15]',
+                       'url': 'https://www.youtube.com/watch?v=j80F3HgdRAw&t=195s',
+                       'markdown': '[00:03:15](https://www.youtube.com/watch?v=j80F3HgdRAw&t=195s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FDvupUZzCbU',
+                       'title': 'Personal Injury & Mass Tort Attorneys at Lieff Cabraser',
+                       'channel': 'Lieff Cabraser',
+                       'author': 'Lieff Cabraser',
+                       'text': 'Our clients are people, not numbers.',
+                       'tip': 'Our clients are people, not numbers.',
+                       'timestamp': 78,
+                       'timestamp_seconds': 78,
+                       'timestamp_label': '[00:01:18]',
+                       'url': 'https://www.youtube.com/watch?v=FDvupUZzCbU&t=78s',
+                       'markdown': '[00:01:18](https://www.youtube.com/watch?v=FDvupUZzCbU&t=78s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_VOICzBABYw',
+                       'title': 'Mass Tort Litigation Costs: Shared Expenses Can Save Thousands | The '
+                                'Carlson Law Firm',
+                       'channel': 'The Carlson Law Firm',
+                       'author': 'The Carlson Law Firm',
+                       'text': 'This is a great way to mitigate those costs of litigation, which we know '
+                               'can be high.',
+                       'tip': 'This is a great way to mitigate those costs of litigation, which we know '
+                              'can be high.',
+                       'timestamp': 17,
+                       'timestamp_seconds': 17,
+                       'timestamp_label': '[00:00:17]',
+                       'url': 'https://www.youtube.com/watch?v=_VOICzBABYw&t=17s',
+                       'markdown': '[00:00:17](https://www.youtube.com/watch?v=_VOICzBABYw&t=17s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'}]}

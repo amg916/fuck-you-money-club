@@ -9,49 +9,49 @@
       "OPTIONING"
     ],
     "deck": [
-      "CONTROL THE SITE. VERIFY THE POWER.",
-      "OPTIONS BEFORE LAND OWNERSHIP."
+      "POWER IS THE SITE: START FROM AVAILABLE MEGAWATTS AND WORK BACKWARD TO LAND, FIBER, WATER AND GAS",
+      "OPTION THE DIRT, PAY FOR THE UTILITY STUDY, DISCOUNT THE QUEUE AND ORDER LONG-LEAD GEAR BEFORE THE BUILDING"
     ],
-    "lead": "Secure conditional control of promising data-center and battery-storage sites before committing capital to unverified power stories.",
-    "summary": "Site-option economics depend on option premiums, extension payments, diligence burn, assignment rights, and the probability of securing a buyer before expiry; nearby transmission or a substation does not establish available capacity. Distinct revenue lanes include negotiated option assignments, development-stage site sales, and permitted siting or development services, with data-center load service and BESS interconnection underwritten separately.",
+    "lead": "Practitioners from Thor Equities, datacenterHawk, CBRE, LandBridge, Foley & Lardner and Zego show why powered land trades at 4-5x unpowered ground, why AI buyers will not look below 100 acres, and how developers lock sites through option contracts, utility studies and long-lead transformer orders while buildings wait 4-5 years for grid connection.",
+    "summary": "All 12 chapters synthesize 171 verbatim YouTube practitioner testimonies on powered land, large-load interconnection, substation headroom, behind-the-meter generation and BESS site optioning for AI data centers. Every claim, metric, pro-tip and operator gate carries timestamped inline attribution back to the practitioner who said it.",
     "chapters": [
-      "Q1: The Power-Constrained Land Thesis",
-      "Q2: Data-Center & Storage Buyer Maps",
-      "Q3: Option Carry & Exit Economics",
-      "Q4: Land Rights, Zoning & Brokerage",
-      "Q5: Map Parcels & Power Signals",
-      "Q6: Verify Utility & Site Constraints",
-      "Q7: Negotiate Conditional Site Control",
-      "Q8: Package Assignments & Development Fees",
-      "Q9: Reach Qualified Project Buyers",
-      "Q10: Manage Diligence & Milestones",
-      "Q11: Stress-Test Power, Permits & Expiry",
-      "Q12: Scale a Stage-Gated Site Portfolio"
+      "Powered Land: Site Qualification and Data Center Land Deals",
+      "Hyperscale AI Load: Scale, Build Economics and Power Scarcity",
+      "Large-Load Interconnection in PJM and ERCOT",
+      "Interconnection Queues and FERC Order 2023 Cluster Reform",
+      "Grid Operators, Wholesale Markets and the Cost of Waiting",
+      "Finding Headroom: Hosting Capacity Maps and POI Heatmaps",
+      "Substations, Transformers and the Data Center Power Chain",
+      "Behind-the-Meter Power: Building Your Own Plant",
+      "BESS Fundamentals: Components and System Design",
+      "BESS Sizing, Revenue Stacking and Greenfield Development",
+      "BESS at the Data Center: Power Quality, Safety and Integration",
+      "Community Pushback and Decentralized Alternatives"
     ],
     "flow": [
       [
-        "MAP",
-        "Screen parcels for utility territory, network proximity, zoning, access, fiber, and environmental constraints."
+        "START FROM MEGAWATTS",
+        "Call the utility and ask directly whether it can support 100MW or more, then work backward to land, fiber, water and gas at 1MW per acre with a 100-acre floor."
       ],
       [
-        "VERIFY",
-        "Seek utility-backed load-service or interconnection information; treat mapped headroom as an unconfirmed signal."
+        "GATE THE STUDY FEE",
+        "Pin the concept plan to a specific line such as a 230, name the redundancy source, and keep a Plan B like multifamily or a Kroger commercial deal ready before paying a $30-100k non-refundable utility study."
       ],
       [
-        "CONTROL",
-        "Negotiate counsel-reviewed options with diligence access, milestones, and explicit assignment provisions."
+        "CONTROL THE DIRT",
+        "Tie up acreage through option contracts, from 2-3 year solar options to Stargate's $1 option, and paper each leg of a put and call on its own."
       ],
       [
-        "DILIGENCE",
-        "Evaluate title, engineering, permitting, utility costs, and project-specific operating constraints."
+        "DISCOUNT THE QUEUE",
+        "Treat announced load and queue totals skeptically; one 400MW requirement shopped by four to five developers showed up as 2GW of requests."
       ],
       [
-        "MATCH",
-        "Present a source-documented package to qualified buyers without describing speculative capacity as secured."
+        "ORDER LONG-LEAD GEAR",
+        "Place electrical orders immediately: large transformers run three to four years and grid gear two-plus years, so the building finishes long before the power does."
       ],
       [
-        "EXIT",
-        "Close an authorized assignment or development transaction, or terminate before additional carry destroys the margin."
+        "UNDERWRITE THE LOAD",
+        "Budget $7-12M per MW for the build, price capacity at $100-150/kW/month, lock 10-15 year take-or-pay leases, and model the one-tenant-exit case and behind-the-meter stranding risk."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "AI DATA-CENTER POWERED LAND, SUBSTATION HEADROOM & BESS SITE OPTIONING",
-  "subtitle": "The Complete Playbook for AI Powered-Land, Substation Headroom & BESS Site Optioning: $110,000–$900,000 USD in Annual Operator Revenue, Built Around a 1 FT + 3 C (4 People) Pod",
+  "subtitle": "Power Is the Site: Megawatt-First Land Control, Paper-Queue Haircuts, Hosting-Capacity Ceilings, Long-Lead Gear Locks, Behind-the-Meter Bridges, Grid-Forming BESS and Community-Proofed Siting for AI Campuses",
   "chapter_count": 12,
-  "total_word_count": 79611,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 73693,
+  "expert_youtube_link_count": 215,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:04Z"
+  "updated_at": "2026-11-25T00:44:08Z"
 }

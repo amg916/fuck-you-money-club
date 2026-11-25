@@ -1,662 +1,861 @@
 from __future__ import annotations
 
-CHAPTER_3 = {
-    "id": "Q3",
-    "chapter_id": "Q3",
-    "chapter_number": 3,
-    "question_number": 3,
-    "slug": "unit-economics-margin-waterfall-working-capital-float",
-    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for data-mined qui tam, sec & irs whistleblower analytics?",
-    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
-    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
-    "subtitle": "Counsel Retainers, ASC 606 Revenue Bridges, Rule 9(b) Evidence Costs, and Multi-Year Award Liquidity",
-    "layout_template": "financial_breakdown",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #48, Data-Mined Qui Tam, SEC & IRS Whistleblower Analytics, ranks "
-        "#16 of 49 with a 92/100 Money-to-Manpower Score and 11 mapped plays. The "
-        "economic engine is paid forensic work for plaintiff and relator counsel, "
-        "not government recoveries booked before collection. Formula v2.0 produces "
-        "$30,400 Conservative, $219,375 Base, and $510,400 Scaled annual owner net "
-        "profit on $95,000, $487,500, and $880,000 recognized revenue. This chapter "
-        "reconciles those outcomes through delivery labor, acquisition, credits, "
-        "rework, and collection losses; then prices the receivables bridge separately. "
-        "Public-disclosure defects, weak representative claims, government dismissal, "
-        "and zero awards belong in explicit rejection branches. Recurring retainers "
-        "must finance the business while statutory award opportunities remain "
-        "unfunded upside on a separate ledger."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$95,000",
-            "context": "Annual recognized forensic-retainer revenue; realized award contribution modeled at zero",
-            "note": "32% net margin; $30,400 owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$487,500",
-            "context": "Annual recognized forensic-retainer revenue; realized award contribution modeled at zero",
-            "note": "45.0% net margin; $219,375 owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$880,000",
-            "context": "Annual recognized forensic-retainer revenue; realized award contribution modeled at zero",
-            "note": "58% net margin; $510,400 owner net profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Price accepted forensic cohorts, not allegations or government recoveries",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build the revenue ledger around an accepted delivery cohort: a bounded "
-                    "dataset, reproducible anomaly calculation, primary-source corroboration, and "
-                    "a counsel-facing evidence memorandum. The illustrative annual mix is twenty "
-                    "cohorts billed at $5,000, fifty at $10,000, or eighty at $11,250. These "
-                    "produce $100,000, $500,000, and $900,000 before contractual credits. Deduct "
-                    "$5,000, $12,500, and $20,000 for expected scope concessions and service "
-                    "credits to reach the canonical $95,000, $487,500, and $880,000 gross revenue "
-                    "figures. Here, gross revenue means operator revenue before operating "
-                    "expenses, not the larger invoice face value. Accepted revenue per cohort "
-                    "is therefore $4,750, $9,750, and $11,000. The credit assumptions are 5%, "
-                    "2.5%, and approximately 2.222% of invoice face value; they are explicit "
-                    "model inputs rather than measured industry averages. A monthly retainer "
-                    "can purchase several milestones, but the same delivered milestone cannot "
-                    "be counted again as a separate project sale. Use a contract identifier, "
-                    "service period, delivery identifier, and credit reason on every ledger "
-                    "entry. Recognize advance payments as contract liabilities until the "
-                    "promised service is performed; receiving cash does not itself establish "
-                    "earned revenue. Credit adjustments belong against their originating cohort."
-                ),
-                (
-                    "Separate three economic objects before calculating any margin: the law "
-                    "firm's service purchase, the government's underlying recovery, and the "
-                    "eligible whistleblower's eventual award. Only the first supports the "
-                    "recurring forecast here. All three canonical scenarios assume zero "
-                    "realized award contribution, making their operating profitability independent "
-                    "of uncollected filings. If an eligible individual eventually receives an "
-                    "award, establish the actual recipient, contractual obligations, and accounting "
-                    "treatment before attributing anything to the analytics business. Do not "
-                    "presume an award is assignable, that a company is an eligible claimant "
-                    "under every program, or that a nonlawyer may share counsel's fees. "
-                    "For illustration, a $2,000,000 FCA recovery multiplied by an actual 20% "
-                    "relator award produces $400,000 payable to the eligible relator. A "
-                    "hypothetical 35% counsel deduction on that award and $20,000 of "
-                    "unreimbursed case expenses leave $240,000 before recipient taxes. Neither "
-                    "$2,000,000 nor $400,000 becomes analytics revenue automatically. ASC 606 "
-                    "principal-versus-agent analysis applies to customer service arrangements; "
-                    "it does not automatically classify a statutory award. Where a service "
-                    "arrangement is an agency arrangement, record only its retained share. "
-                    "Confirm gross-versus-net presentation and award treatment with the "
-                    "accountant before combining separate income streams in management reporting."
-                ),
-                (
-                    "Price the mapped sec_edgar_8k_vendor_trigger_arbitrage play as a counsel "
-                    "intelligence service, not as evidence that an executive committed fraud. "
-                    "Parse SEC EDGAR RSS and JSON sources for Form D capital raises and "
-                    "Form 8-K Items 5.02, 1.01, and 2.01. An illustrative monthly pilot "
-                    "screens 120 issuer events, retains twelve relevant changes, and sells "
-                    "two $1,250 source-linked briefs. At eight analyst hours costing $100 "
-                    "each and $100 of allocated infrastructure, its $2,500 billing contributes "
-                    "$1,600 before acquisition, credits, overhead, and collection losses. "
-                    "Those briefs are components of annual cohorts, never additional revenue "
-                    "stacked onto the scorecard. Trigger sub-hour executive outreach only "
-                    "for an authorized commercial intelligence assignment; route whistleblower "
-                    "matters to counsel before contacting potential subjects or witnesses. "
-                    "An executive departure is a selection signal, not a fraud conclusion. "
-                    "Enforce a five-request-per-second token bucket across workers, identify "
-                    "the requester appropriately, honor current SEC access requirements, and "
-                    "back off on throttling. Mirror available SEC nightly bulk ZIP archives "
-                    "for historical lookbacks. If freshness fails, sell a dated historical "
-                    "brief rather than falsely promising real-time coverage. Suspend this "
-                    "pilot when accepted briefs cannot cover their fully loaded delivery cost."
-                ),
-            ],
-            "table": {
-                "caption": "Annual Cohort Revenue Bridge: Invoice Face Value to Canonical Recognized Revenue",
-                "headers": [
-                    "Economic quantity and operator measurement rule",
-                    "Conservative annual operating case",
-                    "Base annual operating case",
-                    "Scaled annual operating case",
-                ],
-                "rows": [
-                    [
-                        "Completed delivery cohorts accepted under written scope",
-                        "Twenty completed cohorts support the annual service model.",
-                        "Fifty completed cohorts support the annual service model.",
-                        "Eighty completed cohorts support the annual service model.",
-                    ],
-                    [
-                        "Average invoice face value before contractual credits",
-                        "$5,000 per cohort before expected contractual service credits.",
-                        "$10,000 per cohort before expected contractual service credits.",
-                        "$11,250 per cohort before expected contractual service credits.",
-                    ],
-                    [
-                        "Annual invoice face value before revenue adjustments",
-                        "$100,000 equals twenty cohorts multiplied by $5,000 each.",
-                        "$500,000 equals fifty cohorts multiplied by $10,000 each.",
-                        "$900,000 equals eighty cohorts multiplied by $11,250 each.",
-                    ],
-                    [
-                        "Contractual credits reducing revenue rather than expenses",
-                        "$5,000 deducted once for expected contractual service credits.",
-                        "$12,500 deducted once for expected contractual service credits.",
-                        "$20,000 deducted once for expected contractual service credits.",
-                    ],
-                    [
-                        "Recognized service revenue matching the canonical scorecard",
-                        "$95,000 remains after invoice credits and before operating expenses.",
-                        "$487,500 remains after invoice credits and before operating expenses.",
-                        "$880,000 remains after invoice credits and before operating expenses.",
-                    ],
-                    [
-                        "Realized award contribution included in this operating forecast",
-                        "$0 award contribution; service revenue funds ordinary operations.",
-                        "$0 award contribution; service revenue funds ordinary operations.",
-                        "$0 award contribution; service revenue funds ordinary operations.",
-                    ],
-                    [
-                        "Recognized revenue per accepted and completed delivery cohort",
-                        "$4,750 recognized per cohort after the modeled credits.",
-                        "$9,750 recognized per cohort after the modeled credits.",
-                        "$11,000 recognized per cohort after the modeled credits.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the paid evidence product from speculative award economics",
-                "body": (
-                    "Experienced operators sell reproducibility and counsel time saved. "
-                    "They keep possible recovery percentages outside ordinary service pricing."
-                ),
-                "items": [
-                    "Attach a versioned dataset manifest and reproducible SQL output to each milestone so counsel can accept delivery without relying on the analyst's narrative.",
-                    "Deduplicate Form 8-K amendments by accession number and material event; charge for a corrected brief only when the contract permits additional work.",
-                    "Put public-source weaknesses in the first paid memorandum, not a later discovery surprise; counsel can stop a weak matter before expensive claim reconstruction.",
-                    "Quote historical EDGAR briefs separately from live monitoring and document retrieval timestamps, preserving a sellable fallback when fresh-feed access slows.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Reconcile every deduction and distinguish reserves from trapped cash",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The expense waterfall deducts seven separately owned cost pools from "
-                    "recognized revenue. Delivery labor is $30,000, $125,000, and $180,000; "
-                    "data and infrastructure cost $6,000, $24,000, and $36,000; acquisition "
-                    "costs $8,000, $35,000, and $44,000. External legal and accounting support "
-                    "costs $7,000, $25,000, and $32,000, while insurance, administration, and "
-                    "other overhead cost $8,000, $32,000, and $44,000. Rework provisions add "
-                    "$3,600, $15,000, and $18,000, and modeled collection-loss expenses add "
-                    "$2,000, $12,125, and $15,600. Total expenses are exactly $64,600, "
-                    "$268,125, and $369,600. Subtracting them yields $30,400, $219,375, and "
-                    "$510,400 of owner net profit: precisely 32%, 45.0%, and 58% of "
-                    "recognized revenue. These allocations illustrate one reconciled cost "
-                    "structure, not additional canonical scorecard inputs. The first full-time "
-                    "position is the working owner; owner profit compensates that labor "
-                    "and invested capital rather than sitting above a second owner salary. "
-                    "Scaled delivery expense includes the second full-time employee's loaded "
-                    "cost and three contractors. Figures are before owner-level income taxes "
-                    "and discretionary distributions. If the owner requires a separate "
-                    "market salary, subtract it in an additional economic-profit view."
-                ),
-                (
-                    "Express the same waterfall per cohort before promising capacity. At "
-                    "twenty, fifty, and eighty cohorts, allocated expenses are $3,230, "
-                    "$5,362.50, and $4,620 each, leaving $1,520, $4,387.50, and $6,380 "
-                    "owner profit per accepted unit. Delivery budgets imply $1,500, $2,500, "
-                    "and $2,250 of labor per unit. At a planning conversion of $100 "
-                    "per productive hour, those budgets buy fifteen, twenty-five, and "
-                    "twenty-two-and-a-half productive hours. This conversion is a capacity "
-                    "yardstick, not an employee wage quote; reconcile actual salaries, "
-                    "contractor invoices, and available productive hours monthly. Acquisition "
-                    "assumes ten, twenty, and twenty-five newly acquired firm relationships, "
-                    "giving fully loaded CAC of $800, $1,750, and $1,760. Assign conference "
-                    "fees, outbound research, proposal labor, and founder selling time "
-                    "consistently; disclose imputed founder time separately when it is not "
-                    "a booked expense. Multiple cohorts per firm explain why customer "
-                    "counts differ from delivery counts. Avoid claiming lifetime value "
-                    "from one successful matter. Track repeat purchases, client concentration, "
-                    "and contribution after direct labor. A $10,000 Base invoice can "
-                    "look attractive while repeated free revisions consume the entire "
-                    "twenty-five-hour delivery allowance before acquisition and overhead are paid."
-                ),
-                (
-                    "Maintain distinct treatments for price credits, evidentiary scrubs, bad "
-                    "debts, and liquidity buffers. Contractual credits reduce transaction price "
-                    "and are already deducted above revenue. The rework provision funds "
-                    "expected replacement analysis, failed source joins, and necessary correction "
-                    "work inside accepted service obligations; it is not a second deduction "
-                    "for the same credit. Collection-loss expense addresses earned receivables "
-                    "that may not be paid, using the applicable receivables impairment "
-                    "policy. A bank balance earmarked for delayed payments is neither "
-                    "an expense nor a second loss allowance. Maintain an issue code "
-                    "and originating cohort for each adjustment so a rejected CMS match "
-                    "cannot generate both an unsupported full refund and duplicate labor "
-                    "reserves. Evidence scrubbing should test National Provider Identifier changes, "
-                    "billing entity relationships, geographic denominators, Open Payments recipient "
-                    "matching, and import-manifest consignee normalization. Document why an "
-                    "outlier survives each check. When a client disputes acceptance, review "
-                    "whether revenue was earned at all before recording merely a credit "
-                    "loss. Reconcile opening provision, new provision, actual utilization, and "
-                    "closing balance monthly. Unused earmarked cash stays on the balance "
-                    "sheet; a released accounting estimate needs documented evidence rather "
-                    "than a convenient quarter-end margin target."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 Reconciled Expense Waterfall After Contractual Revenue Credits",
-                "headers": [
-                    "Deduction with explicit accounting or operating treatment",
-                    "Conservative annual dollars and allocation",
-                    "Base annual dollars and allocation",
-                    "Scaled annual dollars and allocation",
-                ],
-                "rows": [
-                    [
-                        "Delivery labor including contractors and eligible employee costs",
-                        "$30,000 funds contractor delivery alongside the working owner.",
-                        "$125,000 funds contractor delivery alongside the working owner.",
-                        "$180,000 funds employee and contractor delivery capacity together.",
-                    ],
-                    [
-                        "Source acquisition hosting storage and processing infrastructure",
-                        "$6,000 funds source access and reproducible analysis infrastructure.",
-                        "$24,000 funds source access and reproducible analysis infrastructure.",
-                        "$36,000 funds source access and reproducible analysis infrastructure.",
-                    ],
-                    [
-                        "Customer acquisition spending attributed to acquired firm relationships",
-                        "$8,000 supports ten relationships at $800 acquisition cost.",
-                        "$35,000 supports twenty relationships at $1,750 acquisition cost.",
-                        "$44,000 supports twenty-five relationships at $1,760 acquisition cost.",
-                    ],
-                    [
-                        "External business legal support and accounting services",
-                        "$7,000 covers business support rather than speculative case funding.",
-                        "$25,000 covers business support rather than speculative case funding.",
-                        "$32,000 covers business support rather than speculative case funding.",
-                    ],
-                    [
-                        "Insurance administration and remaining recurring overhead allocation",
-                        "$8,000 supports insurance administration and remaining recurring overhead.",
-                        "$32,000 supports insurance administration and remaining recurring overhead.",
-                        "$44,000 supports insurance administration and remaining recurring overhead.",
-                    ],
-                    [
-                        "Expected rework expense excluding previously deducted service credits",
-                        "$3,600 funds correction work without duplicating revenue credits.",
-                        "$15,000 funds correction work without duplicating revenue credits.",
-                        "$18,000 funds correction work without duplicating revenue credits.",
-                    ],
-                    [
-                        "Collection loss expense against earned customer receivables",
-                        "$2,000 provides for earned receivables expected to fail collection.",
-                        "$12,125 provides for earned receivables expected to fail collection.",
-                        "$15,600 provides for earned receivables expected to fail collection.",
-                    ],
-                    [
-                        "Total operating expenses after all seven modeled deductions",
-                        "$64,600 total expenses equal $3,230 per accepted cohort.",
-                        "$268,125 total expenses equal $5,362.50 per accepted cohort.",
-                        "$369,600 total expenses equal $4,620 per accepted cohort.",
-                    ],
-                    [
-                        "Residual owner profit before owner level income taxes",
-                        "$30,400 owner profit equals 32% of recognized revenue.",
-                        "$219,375 owner profit equals 45.0% of recognized revenue.",
-                        "$510,400 owner profit equals 58% of recognized revenue.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Finance receivables and refuse to finance sealed award expectations",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Model liquidity with two clocks: contractual collection time for services "
-                    "and legal realization time for awards. The illustrative service DSO "
-                    "assumptions are forty-five, sixty, and seventy-five days. On level annual "
-                    "recognized revenue, the revenue-times-DSO-over-365 proxy produces approximately "
-                    "$11,712, $80,137, and $180,822 of receivables. This is a planning "
-                    "proxy after contractual credits and before the credit-loss allowance, "
-                    "not a reconstruction of invoice-level aging. The corresponding operating-cost "
-                    "bridge, using annual expenses times DSO divided by 365, is $7,964, "
-                    "$44,075, and $75,945. That deliberately conservative bridge treats modeled "
-                    "provisions as funded spending capacity and assumes no supplier credit "
-                    "or customer advances. Do not add receivables and the cost bridge "
-                    "together; they describe different views of the same collection lag. "
-                    "Add a separate three-month fixed-cost safety buffer of $5,250, "
-                    "$20,250, and $28,000. The resulting minimum planning liquidity is "
-                    "approximately $13,214, $64,325, and $103,945, before setup expenditure, "
-                    "tax payments, owner draws, or litigation funding. Use a thirteen-week "
-                    "cash calendar to replace annual smoothing when contracts cluster "
-                    "around trial dates. A profitable year can still fail when three "
-                    "large clients all pay after contractors require settlement."
-                ),
-                (
-                    "The supplied $10,000–$45,000 startup capital range can support a "
-                    "carefully staged launch, but it does not automatically finance the "
-                    "Base or Scaled receivables bridge. Likewise, $1,500–$9,500 monthly "
-                    "opex is not the full expense burden at higher volume. In this "
-                    "illustrative allocation, data, external business support, and overhead "
-                    "total $1,750, $6,750, and approximately $9,333 monthly; delivery, "
-                    "acquisition, rework, and collection losses sit outside that fixed "
-                    "stack. Total modeled monthly expense is approximately $5,383, $22,344, "
-                    "and $30,800. The stated four-to-twelve-month time to first deal "
-                    "requires pre-revenue runway in addition to steady-state float. Twelve "
-                    "months of Conservative fixed costs consume $21,000 before setup "
-                    "and prospect-specific work. Request a service deposit, milestone "
-                    "billing, and explicit acceptance dates rather than a promise of "
-                    "payment after litigation succeeds. A 40% deposit against a $10,000 "
-                    "cohort provides $4,000 of cash before its $2,500 direct labor "
-                    "budget is spent. Recognize the deposit only as performance occurs. "
-                    "Count deposit benefits in the cash calendar once, and do not "
-                    "also assume the original full-invoice DSO benefit. Negotiate contractor "
-                    "milestones that follow actual delivery without withholding payment "
-                    "for unrelated award outcomes."
-                ),
-                (
-                    "Keep a separate award-duration schedule with two-, three-, five-, "
-                    "and longer-year scenarios and a permanent zero-recovery branch. "
-                    "FCA matters can remain under seal through extended investigations; "
-                    "the statutory initial seal period is not a promised payout date. "
-                    "SEC and IRS matters also have long administrative timelines, but "
-                    "they do not inherit the FCA court-seal procedure. Route FCA "
-                    "complaints through licensed relator counsel under 31 U.S.C. "
-                    "§ 3730(b)(2), and route SEC Form TCR and IRS Form 211 work "
-                    "through counsel under this operating model. Do not pledge an "
-                    "uncollected award to routine payroll or treat a filed submission "
-                    "as a trade receivable. For a duration illustration, $50,000 "
-                    "advanced for case work and held for four years at a 12% "
-                    "annual planning cost consumes approximately $28,676 in compounded "
-                    "capital cost, before any recovery risk. This is a decision "
-                    "metric, not an automatically deductible accounting expense. If "
-                    "the matter returns nothing, the full $50,000 remains lost. "
-                    "Keep such optional funding outside the canonical operating model "
-                    "and obtain separate authorization before committing it. Seal "
-                    "restrictions also prevent using protected case details to reassure "
-                    "prospective financiers or sell another client an exciting example."
-                ),
-            ],
-            "table": {
-                "caption": "Working-Capital Planning With No Award Receivable, Supplier Credit, or Customer Advance",
-                "headers": [
-                    "Liquidity measure and explicit calculation basis",
-                    "Conservative service collection model",
-                    "Base service collection model",
-                    "Scaled service collection model",
-                ],
-                "rows": [
-                    [
-                        "Collection interval used for level annual service activity",
-                        "Forty-five days assumed between earned service revenue and collection.",
-                        "Sixty days assumed between earned service revenue and collection.",
-                        "Seventy-five days assumed between earned service revenue and collection.",
-                    ],
-                    [
-                        "Receivables proxy using recognized revenue multiplied by DSO",
-                        "$11,712 approximates revenue multiplied by forty-five over 365.",
-                        "$80,137 approximates revenue multiplied by sixty over 365.",
-                        "$180,822 approximates revenue multiplied by seventy-five over 365.",
-                    ],
-                    [
-                        "Operating cost bridge before customer or supplier financing",
-                        "$7,964 funds modeled expenses across the collection interval.",
-                        "$44,075 funds modeled expenses across the collection interval.",
-                        "$75,945 funds modeled expenses across the collection interval.",
-                    ],
-                    [
-                        "Three month safety buffer using the fixed cost stack",
-                        "$5,250 equals three months of $1,750 fixed spending.",
-                        "$20,250 equals three months of $6,750 fixed spending.",
-                        "$28,000 equals one quarter of $112,000 fixed spending.",
-                    ],
-                    [
-                        "Minimum planning liquidity combining cost bridge and buffer",
-                        "$13,214 combines cost bridge and fixed spending buffer.",
-                        "$64,325 combines cost bridge and fixed spending buffer.",
-                        "$103,945 combines cost bridge and fixed spending buffer.",
-                    ],
-                    [
-                        "Additional bridge required when collections slip thirty days",
-                        "$5,310 additional liquidity covers thirty extra expense days.",
-                        "$22,038 additional liquidity covers thirty extra expense days.",
-                        "$30,378 additional liquidity covers thirty extra expense days.",
-                    ],
-                    [
-                        "Award funding assumed available to support ordinary payroll",
-                        "$0 available because uncollected awards cannot support payroll.",
-                        "$0 available because uncollected awards cannot support payroll.",
-                        "$0 available because uncollected awards cannot support payroll.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Separate the ledgers",
-                    "action": "Create service, receivables, provision, cash, and contingent-award schedules.",
-                    "detail": "Identify the legal payee and contractual revenue basis; leave uncollected awards outside recognized service revenue and available liquidity.",
-                },
-                {
-                    "step": 2,
-                    "title": "Reconcile each accepted cohort",
-                    "action": "Tie invoice face value, service credits, acceptance, and actual collections.",
-                    "detail": "Match contractor invoices and correction hours to the same delivery identifier, preventing duplicated credits and reserve utilization.",
-                },
-                {
-                    "step": 3,
-                    "title": "Refresh the thirteen-week cash calendar",
-                    "action": "Schedule deposits, collections, payroll, contractor payments, and fixed expenses.",
-                    "detail": "Stress every major client by thirty additional collection days; exclude award estimates and prevent double counting customer advances.",
-                },
-                {
-                    "step": 4,
-                    "title": "Authorize growth from collected service economics",
-                    "action": "Release additional delivery capacity only against funded backlog and sufficient liquidity.",
-                    "detail": "Compare minimum cash with the safety buffer after owner draws and setup spending; defer optional case funding when service obligations are exposed.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Stress legal attrition, acquisition failure, and margin compression",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use an explicit rejection funnel instead of applying a single recovery "
-                    "percentage to public anomalies. An illustrative batch starts with one "
-                    "hundred flags; data scrubbing removes forty, public-disclosure analysis "
-                    "removes thirty more, representative-claim development removes fifteen, "
-                    "and counsel declines five of the remaining fifteen. Ten proceed "
-                    "to potential filings. At screening allocations of one-tenth hour "
-                    "for each initial flag, one-quarter hour for each of sixty "
-                    "survivors, one-half hour for each of thirty evidence candidates, "
-                    "and one hour for each of fifteen counsel packets, labor totals "
-                    "fifty-five hours, or $5,500 at $100 per hour. Charge that work "
-                    "within the existing delivery budget rather than deducting it again. "
-                    "Under 31 U.S.C. § 3730(e)(4), qualifying public disclosures "
-                    "can require dismissal unless the government opposes or an exception "
-                    "applies; original-source analysis matters. Public datasets do not "
-                    "automatically defeat every claim, but anomalies alone are insufficient. "
-                    "Rule 9(b) pleading requirements vary by circuit; counsel must "
-                    "identify the representative claims or other sufficiently particular "
-                    "facts required locally. Maintain claim identifiers, dates, submission "
-                    "mechanics, source provenance, and payment linkage where lawfully "
-                    "available. A statistically unusual provider is not automatically "
-                    "a provable false-claim defendant."
-                ),
-                (
-                    "For the ten illustrative filings, assume four government interventions "
-                    "and six non-interventions. Assume one of those six is dismissed "
-                    "on the government's motion, leaving five non-intervened matters. "
-                    "If three intervened matters and one surviving non-intervened matter "
-                    "recover, four filings pay and six return zero. These are "
-                    "explicit stress assumptions: 60% non-intervention, 10% government "
-                    "dismissal across filings, 75% recovery among intervened matters, "
-                    "and 20% among surviving non-intervened matters. They are not "
-                    "reported DOJ or Granston dismissal rates. Replace them with "
-                    "dated, denominator-matched evidence before presenting a forecast "
-                    "as empirically calibrated. The historical Granston memorandum "
-                    "does not replace 31 U.S.C. § 3730(c)(2)(A), which provides "
-                    "notice and an opportunity for a hearing; applicable Supreme "
-                    "Court authority also governs government intervention and dismissal. "
-                    "Non-intervention is not itself dismissal or a finding that "
-                    "the allegations lack merit. FCA award ranges generally differ "
-                    "between intervened and non-intervened actions, while SEC and "
-                    "CFTC awards generally use 10%–30%, and qualifying IRS awards "
-                    "generally use 15%–30% under their respective rules. Do not "
-                    "apply one universal 15%–30% multiplier. Model program eligibility, "
-                    "collected proceeds, reductions, and recipient-specific deductions "
-                    "before estimating any eventual net award."
-                ),
-                (
-                    "Stress service economics independently of that litigation tree. Holding "
-                    "expenses fixed, a 10% reduction in recognized service revenue "
-                    "cuts owner profit to $20,900, $170,625, and $422,400. A "
-                    "20% delivery-labor overrun instead reduces profit to $24,400, "
-                    "$194,375, and $474,400. Doubling the rework provision reduces "
-                    "profit to $26,800, $204,375, and $492,400. An incremental "
-                    "bad-debt shock equal to 5% of recognized revenue, beyond "
-                    "the existing allowance, leaves $25,650, $195,000, and $466,400. "
-                    "Keep these isolated shocks separate; the combined revenue and "
-                    "labor shock yields $14,900, $145,625, and $386,400. A "
-                    "thirty-day DSO extension changes the liquidity requirement, not "
-                    "profit, unless financing costs or additional losses arise. "
-                    "Finally, zero statutory recoveries leave all three canonical "
-                    "service profits unchanged because none was included initially. "
-                    "Apply fallback actions to the relevant failure: reduce "
-                    "unpaid exploratory scope when CAC rises, replace fragile "
-                    "joins when scrub hours rise, and collect deposits when "
-                    "DSO lengthens. Do not compensate for weak collections by "
-                    "increasing hypothetical award probabilities. Counsel controls "
-                    "filing and seal decisions; the operator controls evidence "
-                    "quality, delivery pricing, collection discipline, and the "
-                    "amount of cash committed before a client pays."
-                ),
-            ],
-            "table": {
-                "caption": "Isolated Sensitivities and One Combined Shock Against the Canonical Annual Profit Cases",
-                "headers": [
-                    "Stress assumption with expenses otherwise held constant",
-                    "Conservative resulting profit or liquidity effect",
-                    "Base resulting profit or liquidity effect",
-                    "Scaled resulting profit or liquidity effect",
-                ],
-                "rows": [
-                    [
-                        "Recognized service revenue falls ten percent without expense relief",
-                        "$20,900 annual profit remains after the isolated revenue reduction.",
-                        "$170,625 annual profit remains after the isolated revenue reduction.",
-                        "$422,400 annual profit remains after the isolated revenue reduction.",
-                    ],
-                    [
-                        "Delivery labor costs rise twenty percent without repricing",
-                        "$24,400 annual profit remains after the isolated labor overrun.",
-                        "$194,375 annual profit remains after the isolated labor overrun.",
-                        "$474,400 annual profit remains after the isolated labor overrun.",
-                    ],
-                    [
-                        "Expected rework provision doubles without additional customer credits",
-                        "$26,800 annual profit remains after doubling expected rework expense.",
-                        "$204,375 annual profit remains after doubling expected rework expense.",
-                        "$492,400 annual profit remains after doubling expected rework expense.",
-                    ],
-                    [
-                        "Incremental credit losses consume five percent of recognized revenue",
-                        "$25,650 annual profit remains after incremental credit loss expense.",
-                        "$195,000 annual profit remains after incremental credit loss expense.",
-                        "$466,400 annual profit remains after incremental credit loss expense.",
-                    ],
-                    [
-                        "Ten percent revenue decline combines with twenty percent labor inflation",
-                        "$14,900 annual profit remains under both simultaneous adverse changes.",
-                        "$145,625 annual profit remains under both simultaneous adverse changes.",
-                        "$386,400 annual profit remains under both simultaneous adverse changes.",
-                    ],
-                    [
-                        "Collections slow thirty days without new borrowing or losses",
-                        "$5,310 extra liquidity needed; annual profit is otherwise unchanged.",
-                        "$22,038 extra liquidity needed; annual profit is otherwise unchanged.",
-                        "$30,378 extra liquidity needed; annual profit is otherwise unchanged.",
-                    ],
-                    [
-                        "Every contingent award opportunity produces zero statutory recovery",
-                        "$30,400 canonical profit remains because awards were excluded initially.",
-                        "$219,375 canonical profit remains because awards were excluded initially.",
-                        "$510,400 canonical profit remains because awards were excluded initially.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify economics and evidence before accepting another matter",
-                "body": (
-                    "Complete these four checks before committing delivery hours or "
-                    "counting an engagement toward funded backlog."
-                ),
-                "items": [
-                    "Confirm that signed service scope, acceptance rules, and deposit terms identify a paying law-firm customer independently of any litigation recovery.",
-                    "Obtain counsel's documented public-disclosure and Rule 9(b) assessment; reject dossiers whose statistical pattern lacks the necessary claim-level support.",
-                    "Verify restricted access, distribution lists, and counsel instructions for every sealed matter; exclude protected material from marketing, reusable samples, and investor updates.",
-                    "Reconcile invoice credits, seven expense pools, aged receivables, and the thirteen-week minimum cash balance; authorize capacity only when service cash covers the downside case.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Fund payroll with accepted forensic work, and let collected awards remain upside rather than oxygen.",
-    "diagram_id": "diag-03",
-    "action_checklist": [
-        "Build the twenty-, fifty-, and eighty-cohort revenue bridges, deduct contractual credits once, and reconcile recognized revenue to $95,000, $487,500, and $880,000.",
-        "Assign every delivery invoice, acquisition expense, correction hour, and collection loss to its cohort or documented overhead pool.",
-        "Create a separate contingent-award ledger identifying program, eligible recipient, counsel deductions, duration assumptions, and a zero-recovery branch.",
-        "Run the EDGAR trigger pilot with accession deduplication, five-request-per-second aggregate throttling, source timestamps, and a historical bulk-archive fallback.",
-        "Have counsel assess public-disclosure exposure, local Rule 9(b) requirements, government-dismissal risk, and restrictions on each matter's evidence distribution.",
-        "Update the thirteen-week cash calendar weekly and finance the thirty-day DSO stress before adding contractors, owner distributions, or optional case funding.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "31 U.S.C. § 3730(b)(2) — Qui tam filing under seal",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3730",
-            "relevance": "Requires an in-camera complaint initially under seal for at least sixty days and prescribed government service; supports counsel-controlled filing and restricted evidence distribution.",
-        },
-        {
-            "title": "31 U.S.C. § 3730(c)(2)(A), (d), and (e)(4) — Dismissal, award shares, and public disclosures",
-            "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title31-section3730&num=0&edition=prelim",
-            "relevance": "Supplies the government-dismissal procedure, differentiated relator-share ranges, and public-disclosure framework used in separate attrition and net-award calculations.",
-        },
-        {
-            "title": "Federal Rule of Civil Procedure 9(b) — Particularity in pleading fraud",
-            "url": "https://www.law.cornell.edu/rules/frcp/rule_9",
-            "relevance": "Requires particularity for fraud allegations; counsel must translate anomalies into facts sufficient under the governing circuit's pleading standards.",
-        },
-        {
-            "title": "15 U.S.C. § 78u-6 — SEC securities whistleblower incentives",
-            "url": "https://www.law.cornell.edu/uscode/text/15/78u-6",
-            "relevance": "Defines SEC award eligibility and the generally applicable 10%–30% award range for qualifying covered actions, preventing use of an FCA percentage across all programs.",
-        },
-        {
-            "title": "17 CFR § 240.21F-9 — SEC submission procedures",
-            "url": "https://www.ecfr.gov/current/title-17/section-240.21F-9",
-            "relevance": "Specifies information-submission procedures and requirements relevant to Form TCR and anonymous submissions through an attorney.",
-        },
-        {
-            "title": "26 U.S.C. § 7623 — IRS whistleblower awards",
-            "url": "https://www.law.cornell.edu/uscode/text/26/7623",
-            "relevance": "Provides the qualifying 15%–30% award framework, eligibility thresholds, and potential reductions that must be evaluated separately from service-retainer revenue.",
-        },
-        {
-            "title": "7 U.S.C. § 26 — CFTC whistleblower incentives",
-            "url": "https://www.law.cornell.edu/uscode/text/7/26",
-            "relevance": "Establishes the CFTC program's generally applicable 10%–30% award range and eligibility structure, distinct from FCA and IRS economics.",
-        },
-    ],
-}
+CHAPTER_3 = {'id': 'Q3',
+ 'chapter_id': 'Q3',
+ 'chapter_number': 3,
+ 'question_number': 3,
+ 'slug': 'inside-the-qui-tam-lifecycle-intervention-litigation-settlement-dismissal',
+ 'question_prompt': 'What actually happens to a qui tam after filing—through intervention, litigation, '
+                    'settlement, or dismissal—and what do relators experience along the way?',
+ 'kicker': 'Q3 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Inside the Qui Tam Lifecycle: Intervention, Litigation, Settlement, and Dismissal',
+ 'subtitle': 'Post-Escobar materiality fights, recurring litigation issues, ethics of relator '
+             'investigations and interviews, multi-relator and competitor/analyst/Doe relators, settlement '
+             'negotiation, the spike in government 4731(c)(2)(A) dismissals, constitutionality challenges, '
+             'and the USIS dumping case study',
+ 'layout_template': 'financial_analysis',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners agree the qui tam lifecycle is won or lost under seal. The '
+                      '60-to-90-day statutory window routinely stretches past 120 days and sometimes to '
+                      'about five years. DOJ intervenes in only 21 to 24 percent of cases, and a '
+                      'declination reflects cost rather than merits. Street mechanics center on a '
+                      'privilege screen before any document reaches the government, targeted evidence '
+                      "instead of folder grabs, and 'boxed fruit' packages of evidence, draft subpoenas, "
+                      'and org charts. The numbers are concrete: $11,665 to $22,331 per claim on top of '
+                      'treble damages, 15 to 30 percent relator shares, and DOJ dismissals climbing from '
+                      'about 6 to about 25 a year. Mediators settle release scope before money and keep '
+                      'fees out of lump-sum offers. Relator counsel split roughly 50/50 on whether to '
+                      'negotiate fees alongside the merits.',
+ 'key_metrics': [{'label': 'DOJ Qui Tam Dismissals Per Year',
+                  'metric': 'DOJ Qui Tam Dismissals Per Year',
+                  'value': 'About 6 per year rising to about 25 last year',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Husch Blackwell's Jonathan Porter and Tanner Cook tracked the spike in DOJ "
+                             'motions to dismiss relator suits',
+                  'source': 'Husch Blackwell ([XAVzMsuvKNE @ 00:00:18])'},
+                 {'label': 'DOJ Intervention Rate',
+                  'metric': 'DOJ Intervention Rate',
+                  'value': '21 to 24 percent of qui tam cases',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "McGuireWoods FCA Insider team's figure for how often the government joins a "
+                             "relator's case",
+                  'source': 'McGuireWoods LLP ([J3hHvouRce8 @ 00:09:07])'},
+                 {'label': 'Real-World Seal Duration',
+                  'metric': 'Real-World Seal Duration',
+                  'value': 'Never less than 120 days; one seal ran about 5 years',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Mary Ann Hamilton compared the 90-day statutory seal with the seals she has '
+                             'seen in relator practice',
+                  'source': 'Against The Fraud ([H0ay64A0XXA @ 00:09:43])'},
+                 {'label': 'USIS Relator Payout',
+                  'metric': 'USIS Relator Payout',
+                  'value': '20 percent of an about $30M settlement, about $6M',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Blake Percival's share of the intervened USIS dumping settlement, inside a "
+                             '10-to-30 percent range',
+                  'source': 'Whistleblower Heroes ([FopC1sCa2y8 @ 00:56:47])'}],
+ 'sections': [{'section_number': 1,
+               'heading': 'The Practitioner Consensus',
+               'paragraphs': ['Every practitioner treats the seal as the opening battlefield of the qui '
+                              "tam lifecycle. Amanda Roach of the Colorado U.S. Attorney's Office "
+                              'describes a seal of at least 60 days that serves three purposes. Partial '
+                              'lifts are available, and under a Fourth Circuit rule a relator may discuss '
+                              'the allegations but not the action [JN4iipJiHZM @ 00:40:25]. Rich Hayes, '
+                              "EDNY Civil Deputy Chief, says 60 days is 'not a lot of time to figure out "
+                              "whether there's been a multi-billion dollar fraud perpetrated against the "
+                              "government.' He also reports that courts are allowing less time to decide "
+                              'intervention [kcNFrNC2BIg @ 00:46:46]. Bill Nettles, U.S. Attorney for '
+                              'South Carolina, works the 90 days under seal hard. His office issues CIDs '
+                              'and takes depositions while it decides whether it wants to get in the case '
+                              '[yiUS5Zf9HRI @ 00:19:18]. On the relator side, Mary Ann Hamilton of Miller '
+                              'Law Group says the statutory seal reads 90 days but in practice is never '
+                              'under 120 days. She has watched seals run a year or two, and in one matter '
+                              'about five years [H0ay64A0XXA @ 00:09:43]. The operator consensus is blunt. '
+                              'Budget for a multi-year sealed phase, treat every extension as routine, and '
+                              'package the case so the government can act inside a compressed window that '
+                              'keeps getting tighter.',
+                              'The second point of agreement is that the relator pool has widened far '
+                              "beyond the disgruntled insider. McGuireWoods' FCA Insider team lists "
+                              'insiders, competitors, and CMS data miners as live relator categories. The '
+                              "team also notes that courts threw out suits brought by a defendant's former "
+                              'counsel [J3hHvouRce8 @ 00:02:59]. Allison Hawthorne of Beasley Allen '
+                              'previews panels on corporations and professional data miners, including the '
+                              "split between 'true corporate relator versus corporate fiction.' Her panel "
+                              'also covers drug manufacturers suing competitors and the relator coalitions '
+                              "formed because these cases 'can be very expensive' [ujkR1nAOen8 @ "
+                              '00:00:42]. The 2024 FBA panel featuring DOJ Civil Fraud assistant director '
+                              "Ed Crook and Constantine Cannon's Michael Roniker widens the list further. "
+                              'It adds customers, patients, clients, third-party vendors, consultants, and '
+                              "industry experts who mine publicly available data in ways DOJ 'may not have "
+                              "the capability or or means to do' [aZd6GqRekxQ @ 00:03:21]. Hamilton "
+                              'confirms that the insider requirement bends in customs cases brought by '
+                              'competitors [H0ay64A0XXA @ 00:17:52]. Every one of these channels still '
+                              'runs through the same qualifying hurdles: first-to-file, public disclosure, '
+                              'and anonymity, including Doe relators. For an analytics-driven operator, '
+                              'outsider data mining is a recognized relator lane, but it lives or dies on '
+                              'clearing those bars.',
+                              'Third, practitioners agree that intervention is the lever that moves money, '
+                              'and that neither declination nor dismissal is a merits verdict. '
+                              'McGuireWoods puts intervention at 21 to 24 percent of cases. Over the same '
+                              'period, qui tam filings doubled from the 350-to-400 range in 2008 to 782 '
+                              'last year [J3hHvouRce8 @ 00:09:07]. Hayes insists declinations reflect cost '
+                              'and recoverable dollars rather than merits. He notes that some complaints '
+                              "are 'three pieces of paper' alleging billion-dollar fraud, and that "
+                              'relators have won large judgments after declination [kcNFrNC2BIg @ '
+                              "00:42:21]. Husch Blackwell's Tanner Cook and Jonathan Porter stress that "
+                              'DOJ dismisses cases for abuse that undermines the purpose of the False '
+                              'Claims Act, not for bad facts or weak pleading. Weak cases are left for '
+                              'courts to resolve at the pleading stage or at summary judgment [XAVzMsuvKNE '
+                              '@ 00:02:08]. The Phillips & Cohen panel anchors the stakes: 85 percent of '
+                              'recoveries come from whistleblower cases and only 15 percent from '
+                              'government-initiated matters [5twGfbHBnJs @ 00:19:33]. The baseline '
+                              "prerequisite follows directly. The relator's package has to be strong "
+                              'enough to win intervention, or the relator and counsel must be resourced '
+                              'enough to survive a declination and litigate the case themselves through '
+                              'discovery.'],
+               'table': {'caption': 'Qui Tam Lifecycle Consensus: Seal, Intervention, Declination, and '
+                                    'Dismissal',
+                         'headers': ['Lifecycle Stage',
+                                     'Consensus Position',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Sealed filing and the opening 60-day government clock',
+                                   'Seal runs at least 60 days, with partial lifts available on request',
+                                   'Plan for extensions and never discuss the action while it stays sealed',
+                                   'ABA Criminal Justice Section ([JN4iipJiHZM @ 00:40:25])'],
+                                  ['Seal duration in real relator practice',
+                                   'Statutory seal reads 90 days but never runs under 120 days',
+                                   'Budget for seals lasting one to two years, and sometimes about five',
+                                   'Against The Fraud ([H0ay64A0XXA @ 00:09:43])'],
+                                  ['Government investigation during the sealed window',
+                                   'Prosecutors issue CIDs and take depositions during the 90 days under '
+                                   'seal',
+                                   'Feed investigators names and documents early so the sealed period is '
+                                   'productive',
+                                   'Emory School of Law ([yiUS5Zf9HRI @ 00:19:18])'],
+                                  ['Intervention decision and the realistic odds',
+                                   'DOJ intervenes in roughly 21 to 24 percent of filed qui tam cases',
+                                   'Assume declination is likely and build a litigation plan that can '
+                                   'survive it',
+                                   'McGuireWoods LLP ([J3hHvouRce8 @ 00:09:07])'],
+                                  ['Meaning of a government declination',
+                                   'Declinations reflect cost and recoverable dollars, not the underlying '
+                                   'merits',
+                                   'Relators have won large judgments after declination, so keep pressing '
+                                   'the case',
+                                   'ABA Criminal Justice Section ([kcNFrNC2BIg @ 00:42:21])'],
+                                  ['DOJ motion to dismiss under the Granston memo',
+                                   'DOJ dismissals rose from about six to about 25 per year',
+                                   'Dismissal targets abuse of the statute, not weak facts or thin '
+                                   'pleading',
+                                   'Husch Blackwell ([XAVzMsuvKNE @ 00:00:18])'],
+                                  ['First-to-file race among multiple relators',
+                                   'The bar stops copycat suits, but the seal hides who filed first',
+                                   'File fast because no relator can see whether someone beat them to '
+                                   'court',
+                                   'The Employment Law Group, P.C. ([ukz2VRmDQIs @ 00:01:51])']]}},
+              {'section_number': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["The unit economics start with the penalty stack. McGuireWoods' FCA Insider "
+                              'team prices each false claim at $11,665 to $22,331 on top of trebled '
+                              'damages, which makes claim count the first input in any exposure model '
+                              '[J3hHvouRce8 @ 00:04:29]. The payout curve then depends on who carries the '
+                              "case. Husch Blackwell's Tanner Cook notes that relators can collect up to "
+                              'one-third of the recovery in non-intervened cases. That pull is strong '
+                              'enough that some interviewees in existing investigations file duplicate '
+                              "suits of their own, which is the conduct targeted by the Granston memo's "
+                              "'parasitic' dismissal category [XAVzMsuvKNE @ 00:09:49]. In intervened "
+                              'cases, relator counsel Sarah Frazier explains that a share of 20 percent or '
+                              'more requires extraordinary measures, such as wearing a wire for the '
+                              "government [vHZhDg8Ml14 @ 00:12:18]. Blake Percival's USIS case shows the "
+                              'result. The background-investigation dumping fraud against OPM ended in a '
+                              'settlement of about $30 million, and Percival collected 20 percent, about '
+                              '$6 million, within a statutory range of 10 to 30 percent [FopC1sCa2y8 @ '
+                              '00:56:47]. The working sequence is to count the claims, multiply by the '
+                              'per-claim penalty, treble the damages, and then discount the total for the '
+                              'years the case will spend under seal before any check clears.',
+                              'Evidence intake is where the craft lives. Leslie Skillin of Getnick & '
+                              'Getnick runs a three-step screen. First, ask whether any document was sent '
+                              'to, from, or copied to an attorney, and whether an attorney was present on '
+                              'a recording. Second, segregate those materials and hire outside ethics '
+                              'counsel to review them. Third, leave crime-fraud determinations to the '
+                              "court on in-camera review [JN4iipJiHZM @ 00:05:30]. Hamilton's rule is "
+                              'never to take documents a client would not normally access and to stay '
+                              'targeted. She also tells clients to avoid work email and work machines, and '
+                              'to fall back on detailed notes when the only access runs through company '
+                              'systems [H0ay64A0XXA @ 00:10:36]. The Phillips & Cohen panel says the '
+                              "winning delivery is 'boxed fruit': evidence, a draft subpoena, and an org "
+                              "chart handed to the government [5twGfbHBnJs @ 00:44:29]. Percival's proof "
+                              'was a single flash drive of spreadsheets. It showed that USIS reviewer '
+                              'headcount could not physically process the volume of investigations '
+                              'submitted, and that capacity-versus-throughput analysis exposed the dumping '
+                              'scheme [FopC1sCa2y8 @ 00:36:36]. Taken together, the mechanic is surgical '
+                              'extraction plus a government-ready roadmap, never a bulk folder grab. A '
+                              'clean, narrow package arrives faster and survives the privilege fights that '
+                              'follow.',
+                              'Settlement is a sequencing game. Mediator Steve Altman, a veteran of more '
+                              'than 40 FCA mediations, settles the scope of the release before any money '
+                              'talk. He tells parties not to offer a lump sum that includes fees, '
+                              'exchanges mediation memos with the other side, and notes that DOJ may allow '
+                              '60 days to resolve administrative remedies [vHZhDg8Ml14 @ 00:46:04]. King & '
+                              "Spalding's Mike Paulus shows why the fee rule matters. In a $10 million pot "
+                              'carrying $1.5 million in fees, the client might have settled at $8.5 '
+                              'million. He also reports that relator counsel split about 50/50 on '
+                              'negotiating fees alongside the merits [JN4iipJiHZM @ 00:50:12]. Kristen '
+                              'Nedwick of the Texas Medicaid Fraud Control Unit warns that multistate '
+                              'deals can require up to 53 separate state agreements. States take up to 60 '
+                              'days to return signed agreements, and states with §1909-compliant statutes '
+                              'pocket an extra 10 percent of the Medicaid share [vHZhDg8Ml14 @ 00:34:31]. '
+                              "DOJ's Sarah McLean adds that cooperation credit is likely to mean about a "
+                              '1.5x multiplier [vHZhDg8Ml14 @ 00:56:59]. The operator order of operations '
+                              'is release scope, then damages, then fees, then the state paperwork. Mixing '
+                              'those steps is how two-day mediations collapse over whether a number '
+                              'included fees.'],
+               'table': {'caption': 'Street Numbers: Penalties, Shares, Paperwork, and Enforcement '
+                                    'Capacity',
+                         'headers': ['Mechanic or Number',
+                                     'Exact Figure or Rule',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Per-claim civil penalty under the False Claims Act',
+                                   '$11,665 to $22,331 per claim on top of treble damages',
+                                   'Model claim volume first, then layer trebled damages over the total',
+                                   'McGuireWoods LLP ([J3hHvouRce8 @ 00:04:29])'],
+                                  ['Relator share range set by the 1986 amendments',
+                                   '15 to 30 percent share, plus treble damages and retaliation protection',
+                                   'Anchor every share negotiation inside this statutory band from day one',
+                                   'Phillips & Cohen LLP ([5twGfbHBnJs @ 00:13:37])'],
+                                  ['Relator share in non-intervened cases',
+                                   'Relators collect up to one-third of recovery when DOJ stays out',
+                                   'Weigh the bigger share against carrying the litigation cost alone',
+                                   'Husch Blackwell ([XAVzMsuvKNE @ 00:09:49])'],
+                                  ['Pushing a share to 20 percent or more',
+                                   'Requires extraordinary measures such as wearing a wire for the '
+                                   'government',
+                                   'Treat extraordinary cooperation as the price of a top-tier share',
+                                   'ABA Criminal Justice Section ([vHZhDg8Ml14 @ 00:12:18])'],
+                                  ['Multistate Medicaid settlement paperwork',
+                                   'Up to 53 state agreements, with up to 60 days for signatures',
+                                   'Start state paperwork early so signatures do not stall the deal',
+                                   'ABA Criminal Justice Section ([vHZhDg8Ml14 @ 00:34:31])'],
+                                  ['U.S. Attorney FCA staffing build-out in South Carolina',
+                                   'FCA lawyers grew from 2 to 7 in one district office',
+                                   'District moved from the bottom to the top ten nationally in recovery',
+                                   'Emory School of Law ([yiUS5Zf9HRI @ 00:07:43])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'What the Veterans Do Differently',
+                           'body': 'Four moves practitioners on both sides of the bar use to keep a case '
+                                   'clean, funded, and alive through the lifecycle.',
+                           'items': ['Do not rummage. The CFAA criminalizes unauthorized access, so tell '
+                                     'the government where the documents sit and let it subpoena them [ABA '
+                                     'Criminal Justice Section — JN4iipJiHZM @ 00:09:12].',
+                                     "Read severance paperwork before signing. Percival's $42,000 "
+                                     'severance carried a fine-print waiver of whistleblower rights, and '
+                                     "their lawyer's advice was 'don't sign anything' [Whistleblower "
+                                     'Heroes — FopC1sCa2y8 @ 00:33:04].',
+                                     'Keep case facts out of AI tools. Hamilton warns AI is not '
+                                     'privileged, can be subpoenaed, and gives wrong legal answers, while '
+                                     'a Google search is fine [Against The Fraud — H0ay64A0XXA @ '
+                                     '00:26:51].',
+                                     'When asking DOJ to dismiss, fit the request into a Granston memo '
+                                     "category, because arguing 'we're right' to DOJ fails [Husch "
+                                     'Blackwell — XAVzMsuvKNE @ 00:05:18].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Story-and-Goal Intake',
+                              'action': "Open with the whistleblower's story, then pin down their goal and "
+                                        'prune facts with no government money attached.',
+                              'detail': "Hamilton starts with 'tell me your story,' then asks 'what's your "
+                                        "goal?' Some matters go the employment route instead of qui tam, "
+                                        'and facts with no government money attached are reduced to '
+                                        'supporting facts [Against The Fraud — H0ay64A0XXA @ 00:06:36].'},
+                             {'step': 2,
+                              'title': 'Privilege Segregation Screen',
+                              'action': 'Flag every attorney-touched document or recording, segregate it, '
+                                        'and route it to outside ethics counsel.',
+                              'detail': 'Skillin segregates materials sent to, from, or copied to an '
+                                        'attorney and hires outside ethics counsel to review them. Wiseman '
+                                        'warns that privileged productions delay DOJ, force taint review, '
+                                        'and can disqualify the assigned attorneys [ABA Criminal Justice '
+                                        'Section — JN4iipJiHZM @ 00:06:51].'},
+                             {'step': 3,
+                              'title': 'Build the Boxed-Fruit Package',
+                              'action': 'Deliver evidence, a draft subpoena, and an org chart so the '
+                                        'government can move inside the seal window.',
+                              'detail': 'The Phillips & Cohen panel tells relators to bring the government '
+                                        "'boxed fruit': evidence, a draft subpoena, and an org chart "
+                                        '[Phillips & Cohen LLP — 5twGfbHBnJs @ 00:44:29].'},
+                             {'step': 4,
+                              'title': 'Partner Through the Seal',
+                              'action': "Work alongside the U.S. Attorney's office during the sealed "
+                                        'investigation rather than waiting on the sidelines.',
+                              'detail': "Nettles rejects the 'we'll call you when it's over' model. "
+                                        "Relators' counsel share the burden as partners, and his office "
+                                        'advocates for a larger relator share in return [Emory School of '
+                                        'Law — yiUS5Zf9HRI @ 00:26:21].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The seal clock is the first fault line, and practitioners read it '
+                              'differently depending on which side of the docket they sit. Bill Nettles, '
+                              'U.S. Attorney for South Carolina, treats the seal as a working window: "we '
+                              'have 90 days under seal to decide whether we want to get in the case or '
+                              'not," and inside that window the office issues CIDs and takes depositions '
+                              '[yiUS5Zf9HRI @ 00:19:18]. Mary Ann Hamilton of Miller Law Group calls the '
+                              'statutory number a fiction: the seal is never under 120 days, has run a '
+                              'year or two, and in one matter ran about five years [H0ay64A0XXA @ '
+                              '00:09:43]. Rich Hayes, EDNY Civil Deputy Chief, attacks the clock from '
+                              'inside government, calling 60 days "not a lot of time" to figure out '
+                              'whether a multi-billion dollar fraud occurred [kcNFrNC2BIg @ 00:46:46]. '
+                              'Hayes adds that courts are allowing less time to decide intervention, which '
+                              'squeezes the government further. Amanda Roach of USAO-Colorado frames the '
+                              'seal as at least 60 days serving three purposes, with partial lifts '
+                              'available and a Fourth Circuit rule that a relator may discuss the '
+                              'allegations but not the action [JN4iipJiHZM @ 00:40:25]. Budget for '
+                              "Hamilton's reality, not the statute's headline number.",
+                              'The second split is over what DOJ dismissals and declinations actually '
+                              'signal. Jonathan Porter and Tanner Cook of Husch Blackwell report DOJ '
+                              'dismissals jumping from around six a year to around 25, yet insist "DOJ '
+                              'isn\'t looking to dismiss weak cases"; dismissal targets abuse that '
+                              'undermines the statute, and weak cases are left for pleading or summary '
+                              'judgment [XAVzMsuvKNE @ 00:22:44]. The McGuireWoods team hears a different '
+                              'story on the ground: DOJ attorneys say the Granston memo "didn\'t change '
+                              'anything," but in practice DOJ has told relators\' counsel to dismiss '
+                              '[J3hHvouRce8 @ 00:42:18]. Rich Hayes rejects reading declination as a '
+                              'merits verdict at all: declinations reflect cost and recoverable dollars, '
+                              'some complaints are "three pieces of paper" alleging billion-dollar fraud, '
+                              'and relators have won large judgments after the government walked away '
+                              '[kcNFrNC2BIg @ 00:42:21]. The Phillips & Cohen panel describes a far '
+                              'harsher funnel, about 700 cases filed a year with the government '
+                              'intervening in about 15, well below the 21 to 24 percent intervention rate '
+                              'McGuireWoods reports [5twGfbHBnJs @ 00:44:44]. Porter and Cook add a '
+                              'tactical warning for defendants who want DOJ to kill a case: arguing '
+                              '"we\'re right" fails, and the request has to fit one of the seven Granston '
+                              'categories.',
+                              'Fee handling inside global settlements splits the bar almost down the '
+                              'middle. Mike Paulus of King & Spalding reports relator counsel split about '
+                              '50/50 on negotiating fees alongside the merits, and runs the math: a $10M '
+                              'pot with $1.5M in fees means the client might have settled at $8.5M '
+                              '[JN4iipJiHZM @ 00:50:12]. Leslie Skillin of Getnick & Getnick, on the '
+                              'relator side, pushes back that this is not an issue in intervened cases '
+                              '[JN4iipJiHZM @ 00:54:51]. Mediator Steve Altman, with more than 40 FCA '
+                              'mediations on the books, takes a hard line the other way: do not offer a '
+                              'lump sum that includes fees, and settle the scope of the release before '
+                              'agreeing on money [vHZhDg8Ml14 @ 00:47:11]. Paulus floats the opposite fix, '
+                              'saying that putting fees into the shared pot "might" resolve the conflict, '
+                              "while DOJ's David Wiseman recalls a two-day mediation that ended in a "
+                              'dispute over whether the number included fees [JN4iipJiHZM @ 00:59:21]. '
+                              'Paulus ties the conflict to Rules 1.2, 1.4, 1.5, 1.7 informed written '
+                              'consent, and 1.8, plus written allocation among multiple relators, with the '
+                              'panel stressing that any offer from opposing counsel must be promptly '
+                              'relayed to the client. Pick a lane before mediation, not during it.'],
+               'table': {'caption': 'Side-by-side playbooks where qui tam practitioners split on lifecycle '
+                                    'tactics',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['How long the seal actually holds the case',
+                                   'Nettles treats 90 days under seal as the working window to decide '
+                                   'intervention',
+                                   'Hamilton says seals never run under 120 days and have reached about '
+                                   'five years',
+                                   'Emory School of Law ([yiUS5Zf9HRI @ 00:19:18]); Against The Fraud '
+                                   '([H0ay64A0XXA @ 00:09:43])'],
+                                  ['What a rising DOJ dismissal count really means',
+                                   'Husch Blackwell says DOJ dismisses abusive suits and leaves weak cases '
+                                   'to the courts',
+                                   "McGuireWoods reports DOJ has told relators' counsel to dismiss despite "
+                                   'claiming nothing changed',
+                                   'Husch Blackwell ([XAVzMsuvKNE @ 00:22:44]); McGuireWoods LLP '
+                                   '([J3hHvouRce8 @ 00:42:18])'],
+                                  ['What a government declination says about case merits',
+                                   'Hayes says declinations reflect cost and recoverable dollars, not the '
+                                   'merits of the case',
+                                   'Vogel says that after Escobar courts treat government intervention as '
+                                   'significant',
+                                   'ABA Criminal Justice Section ([kcNFrNC2BIg @ 00:42:21]); ABA Criminal '
+                                   'Justice Section ([kcNFrNC2BIg @ 00:24:44])'],
+                                  ['Whether attorney fees ride inside the global settlement number',
+                                   'Paulus says relator counsel split about 50/50 on negotiating fees '
+                                   'alongside the merits',
+                                   'Altman says never offer a lump sum that includes fees during the '
+                                   'mediation',
+                                   'ABA Criminal Justice Section ([JN4iipJiHZM @ 00:50:12]); ABA Criminal '
+                                   'Justice Section ([vHZhDg8Ml14 @ 00:47:11])'],
+                                  ['Whether relators should record targets to build the case',
+                                   'Frazier says a share of 20 percent or more requires extraordinary '
+                                   'measures like wearing a wire',
+                                   'Roach says Colorado is one-party consent, but the office stays away '
+                                   'from recordings',
+                                   'ABA Criminal Justice Section ([vHZhDg8Ml14 @ 00:12:18]); ABA Criminal '
+                                   'Justice Section ([JN4iipJiHZM @ 00:27:37])'],
+                                  ['How to handle several relators alleging one scheme',
+                                   'The first-to-file bar aims to stop copycat litigation so defendants '
+                                   'pay one relator',
+                                   'DOJ now works with all relators because later filers may equitably '
+                                   'make the pie bigger',
+                                   'The Employment Law Group, P.C. ([ukz2VRmDQIs @ 00:00:56]); The '
+                                   'Employment Law Group, P.C. ([ukz2VRmDQIs @ 00:02:27])'],
+                                  ['Whether the qui tam device survives constitutional attack',
+                                   'Recent cases claim the qui tam provisions violate Article II of the '
+                                   'Constitution',
+                                   'Opposing panelists filed amicus briefs, with Zafirov argument set '
+                                   'before the 2026 conference',
+                                   'The Employment Law Group, P.C. ([Okv3G2wwiCA @ 00:01:08]); The '
+                                   'Employment Law Group, P.C. ([Okv3G2wwiCA @ 00:01:42])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive self-inflicted wound is the evidence grab. In Cafasso, '
+                              'the relator took 11 GB, the NDA counterclaim was upheld, and $300,000 in '
+                              'fees was awarded; the account of how it happened is damning on its own: "i '
+                              "just grabbed the whole folder um she didn't read the files she just read "
+                              'the file names" [JN4iipJiHZM @ 00:11:12]. Mike Paulus confirms defense '
+                              'clients pursue counterclaims for improper access, and the panel flags that '
+                              '"rummaging" is a factor and that the CFAA criminalizes unauthorized access, '
+                              'so the better play is telling the government where documents sit so it can '
+                              'subpoena them [JN4iipJiHZM @ 00:09:12]. Privilege is the second trap: David '
+                              'Wiseman warns that privileged productions delay DOJ, force taint review, '
+                              'and can disqualify the attorneys assigned [JN4iipJiHZM @ 00:07:36]. Mary '
+                              'Ann Hamilton draws the same line from the relator side: never take '
+                              'documents you would not normally access, be targeted, avoid work email and '
+                              'work machines, and never feed case data to AI because it is not privileged, '
+                              'can be subpoenaed, and gives wrong legal answers [H0ay64A0XXA @ 00:10:52]. '
+                              'Hamilton\'s verdict on overreach: it "can very quickly undermine the '
+                              'legitimacy of a case and it can get you in trouble all on its own."',
+                              'Seal breaches and settlement paperwork are where money leaks after the case '
+                              'is already won. The ABA panel stresses that "it\'s not an automatic '
+                              'dismissal if the relator breaches the seal," but the bill still comes due: '
+                              'in Bibi v. Wells Fargo, DOJ recommended $2.7M, the share above the 25 '
+                              'percent minimum, and the court ordered $1.6M [JN4iipJiHZM @ 00:48:18]. '
+                              'Defendants hit the seal problem too; Mike Paulus says insurers create a '
+                              'catch-22, so Paulus seeks an extra partial lift. Sarah Frazier warns that a '
+                              'common reason for a government veto is too much of the settlement allocated '
+                              'to the retaliation claim, and the panel says to tell DOJ about any '
+                              'retaliation claim in advance [vHZhDg8Ml14 @ 00:06:14]. Exit paperwork is '
+                              'the employee-side trap: the McGuireWoods team notes FCA claims cannot be '
+                              'released, but the recovery can, meaning a departing employee who signs can '
+                              'lose the right to share in any recovery [J3hHvouRce8 @ 00:55:28]. Blake '
+                              'Percival lived that trap: severance was $42,000 with a fine-print waiver of '
+                              'whistleblower rights, and their lawyer\'s advice was "don\'t sign anything" '
+                              '[FopC1sCa2y8 @ 00:31:22]. Refusing that $42,000 kept the path open to the '
+                              'roughly $6M, 20 percent share Percival later received.',
+                              'The economics check is time, and every practitioner who has lived a case '
+                              'reports it running longer than planned. Blake Percival filed a sealed qui '
+                              'tam on July 1, 2011 through Beasley Allen after being fired in May 2011, '
+                              'then sat through 60-to-90-day continuances for years; a June 2013 hardship '
+                              'settlement attempt was derailed by the Snowden hearings, and DOJ intervened '
+                              'only on October 30, 2013 [FopC1sCa2y8 @ 00:38:39]. The firing alone cost '
+                              'six figures in pay, a $20K bonus, an SUV and an Amex. The settlement came '
+                              'to about $30M, with Percival taking 20 percent, about $6M, against fraud '
+                              'that ran across 665,000 investigations and a Wall Street Journal estimate '
+                              'of seven point six billion dollars if fully prosecuted, and Percival '
+                              'reports being blackballed in the industry afterward [FopC1sCa2y8 @ '
+                              '00:56:47]. On the litigation side, a DC Circuit case ran 12 years, with '
+                              'three years of discovery and a million documents, before dismissal at '
+                              'summary judgment [kcNFrNC2BIg @ 00:06:14]. The McGuireWoods team tracks '
+                              'Ruckh, where a $340M verdict was vacated before $85M was reinstated in June '
+                              "2020 [J3hHvouRce8 @ 00:24:35]. The defendants' lever there was materiality: "
+                              'they "moved for judgment as a matter of law arguing that none of their uh '
+                              'purported misstatements were material."'],
+               'table': {'caption': 'Firsthand failure modes and their measured cost across the qui tam '
+                                    'lifecycle',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Saw Happen',
+                                     'Cost Or Consequence',
+                                     'Expert Source'],
+                         'rows': [['Bulk document grab instead of targeted collection',
+                                   'Cafasso relator took 11 GB, grabbing the whole folder and reading only '
+                                   'file names',
+                                   'NDA counterclaim upheld and $300,000 in fees awarded against the '
+                                   'relator',
+                                   'ABA Criminal Justice Section ([JN4iipJiHZM @ 00:11:12])'],
+                                  ['Privileged material slipped into the government production',
+                                   'Relator hands DOJ documents copied to attorneys or recordings with '
+                                   'counsel present',
+                                   'DOJ delay, forced taint review, and possible disqualification of the '
+                                   'assigned attorneys',
+                                   'ABA Criminal Justice Section ([JN4iipJiHZM @ 00:07:36])'],
+                                  ['Relator breaches the seal during the investigation',
+                                   'Dismissal is not automatic, and the sanction sits within district '
+                                   'court discretion',
+                                   'Bibi v. Wells Fargo: DOJ recommended $2.7M and the court ordered $1.6M',
+                                   'ABA Criminal Justice Section ([JN4iipJiHZM @ 00:48:18])'],
+                                  ['Signing severance or exit paperwork after the firing',
+                                   'Percival was offered $42,000 severance with a fine-print waiver of '
+                                   'whistleblower rights',
+                                   'Releasing the recovery upside means the employee cannot share in any '
+                                   'later recovery',
+                                   'Whistleblower Heroes ([FopC1sCa2y8 @ 00:31:22]); McGuireWoods LLP '
+                                   '([J3hHvouRce8 @ 00:56:02])'],
+                                  ['Loading the settlement onto the retaliation claim',
+                                   'Parties allocate too much of the settlement money to the retaliation '
+                                   'claim',
+                                   'Government vetoes the dismissal because written consent from the AG is '
+                                   'required',
+                                   'ABA Criminal Justice Section ([vHZhDg8Ml14 @ 00:06:14])'],
+                                  ['Underestimating multistate Medicaid settlement drag at closing',
+                                   'Up to 53 separate state agreements, with states taking up to 60 days '
+                                   'to sign',
+                                   'Closing slips while signatures return, and managed care claims must be '
+                                   'modeled into damages',
+                                   'ABA Criminal Justice Section ([vHZhDg8Ml14 @ 00:34:31])'],
+                                  ['Feeding case facts and documents into AI tools',
+                                   'Clients run their whistleblower facts through AI before or during '
+                                   'representation',
+                                   'AI is not privileged, can be subpoenaed, and gives wrong legal answers',
+                                   'Against The Fraud ([H0ay64A0XXA @ 00:26:51])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Stop Before You Copy, Sign, Breach or Settle',
+                           'body': 'Every item below is a loss practitioners watched happen: fee awards '
+                                   'against relators, forfeited shares, vetoed deals and waived '
+                                   'recoveries. Clear all four before moving to the next lifecycle stage.',
+                           'items': ['Before taking any document, confirm it is one you normally access '
+                                     'and that it targets the fraud; the Cafasso 11 GB folder grab ended '
+                                     'in a $300,000 fee award [ABA Criminal Justice Section — JN4iipJiHZM '
+                                     '@ 00:11:12].',
+                                     'Ask whether any document or recording involved an attorney, '
+                                     'segregate those materials, and route them to outside ethics counsel '
+                                     'before DOJ sees them [ABA Criminal Justice Section — JN4iipJiHZM @ '
+                                     '00:06:51].',
+                                     'Do not sign severance or exit paperwork that waives whistleblower '
+                                     "rights; Percival turned down $42,000 on the advice 'don't sign "
+                                     "anything' [Whistleblower Heroes — FopC1sCa2y8 @ 00:33:04].",
+                                     'Under seal, defendants consult the AUSA before disclosing to the '
+                                     'SEC, insurers or buyers, and seek a partial lift rather than risk a '
+                                     'breach [ABA Criminal Justice Section — JN4iipJiHZM @ 00:40:25].']}}],
+ 'pull_quote': '"A false claims act claim is a lie attached to a dollar." — Against The Fraud (H0ay64A0XXA '
+               '@ 00:25:38)',
+ 'diagram_id': 'diag-03',
+ 'action_checklist': ["Open intake with 'tell me your story,' then ask 'what's your goal?' and route "
+                      'matters with no government money to the employment track [Against The Fraud — '
+                      'H0ay64A0XXA @ 00:06:36].',
+                      "Bring the government 'boxed fruit': the evidence, a draft subpoena and an org "
+                      'chart, so investigators can move inside the seal window [Phillips & Cohen LLP — '
+                      '5twGfbHBnJs @ 00:44:29].',
+                      'Ask whether any document was sent to, from or copied to an attorney, or whether an '
+                      'attorney was on a recording, and segregate those items for outside ethics counsel '
+                      '[ABA Criminal Justice Section — JN4iipJiHZM @ 00:05:30].',
+                      'On the defense side, answer a CID with open DOJ communication, document '
+                      'preservation and custodial interviews, because slow-rolling invites a search '
+                      'warrant or unsealing [McGuireWoods LLP — J3hHvouRce8 @ 00:47:29].',
+                      'In mediation, settle the scope of the release before agreeing on money, and '
+                      'exchange mediation memos with the other side [ABA Criminal Justice Section — '
+                      'vHZhDg8Ml14 @ 00:46:04].',
+                      'Coordinate with co-relators early, since DOJ wants cooperation and may give its '
+                      'opinion on who provided the first information [The Employment Law Group, P.C. — '
+                      'ukz2VRmDQIs @ 00:04:41].'],
+ 'statutory_citations': [{'title': 'ABA Criminal Justice Section — Settling an FCA Case [00:03:54]',
+                          'url': 'https://www.youtube.com/watch?v=vHZhDg8Ml14&t=234s',
+                          'relevance': 'Primary practitioner testimony on dismissal consent, government '
+                                       'vetoes, fairness hearings, relator share and multistate settlement '
+                                       'mechanics.'},
+                         {'title': 'Husch Blackwell — Qui Tam Dismissals Are Spiking: What That Means for '
+                                   'FCA Enforcement [00:03:50]',
+                          'url': 'https://www.youtube.com/watch?v=XAVzMsuvKNE&t=230s',
+                          'relevance': 'Primary practitioner testimony on the seven Granston memo '
+                                       'dismissal categories and the jump in DOJ dismissals.'},
+                         {'title': 'ABA Criminal Justice Section — Ethical Issues in Qui Tam '
+                                   'Investigations [00:40:25]',
+                          'url': 'https://www.youtube.com/watch?v=JN4iipJiHZM&t=2425s',
+                          'relevance': 'Primary practitioner testimony on seal duration, partial lifts, '
+                                       'seal-breach sanctions and fee conflicts in global settlements.'},
+                         {'title': 'Emory School of Law — A Conversation on Whistleblowers and the False '
+                                   'Claims Act [00:19:18]',
+                          'url': 'https://www.youtube.com/watch?v=yiUS5Zf9HRI&t=1158s',
+                          'relevance': 'Primary practitioner testimony on the 90-day seal decision window, '
+                                       'CIDs under seal and the relator partnership model.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'JN4iipJiHZM',
+                       'title': 'Ethical Issues in Qui Tam Investigations',
+                       'channel': 'ABA Criminal Justice Section',
+                       'author': 'ABA Criminal Justice Section',
+                       'text': "so just because there's a lawyer on the document doesn't make it "
+                               'privileged.',
+                       'tip': "so just because there's a lawyer on the document doesn't make it "
+                              'privileged.',
+                       'timestamp': 311,
+                       'timestamp_seconds': 311,
+                       'timestamp_label': '[00:05:11]',
+                       'url': 'https://www.youtube.com/watch?v=JN4iipJiHZM&t=311s',
+                       'markdown': '[00:05:11](https://www.youtube.com/watch?v=JN4iipJiHZM&t=311s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JN4iipJiHZM',
+                       'title': 'Ethical Issues in Qui Tam Investigations',
+                       'channel': 'ABA Criminal Justice Section',
+                       'author': 'ABA Criminal Justice Section',
+                       'text': "it's not an automatic dismissal if the relator breaches the seal.",
+                       'tip': "it's not an automatic dismissal if the relator breaches the seal.",
+                       'timestamp': 2863,
+                       'timestamp_seconds': 2863,
+                       'timestamp_label': '[00:47:43]',
+                       'url': 'https://www.youtube.com/watch?v=JN4iipJiHZM&t=2863s',
+                       'markdown': '[00:47:43](https://www.youtube.com/watch?v=JN4iipJiHZM&t=2863s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kcNFrNC2BIg',
+                       'title': 'The False Claims Act Post-Escobar | Part 1',
+                       'channel': 'ABA Criminal Justice Section',
+                       'author': 'ABA Criminal Justice Section',
+                       'text': 'provides for 60 days which is not a lot of time to figure out whether '
+                               "there's been a multi-billion dollar fraud perpetrated against the "
+                               'government.',
+                       'tip': 'provides for 60 days which is not a lot of time to figure out whether '
+                              "there's been a multi-billion dollar fraud perpetrated against the "
+                              'government.',
+                       'timestamp': 2806,
+                       'timestamp_seconds': 2806,
+                       'timestamp_label': '[00:46:46]',
+                       'url': 'https://www.youtube.com/watch?v=kcNFrNC2BIg&t=2806s',
+                       'markdown': '[00:46:46](https://www.youtube.com/watch?v=kcNFrNC2BIg&t=2806s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'J3hHvouRce8',
+                       'title': 'Recent Developments in False Claims Act Litigation',
+                       'channel': 'McGuireWoods LLP',
+                       'author': 'McGuireWoods LLP',
+                       'text': 'I think the biggest takeaway is really a simple one which is take every '
+                               'complaint seriously.',
+                       'tip': 'I think the biggest takeaway is really a simple one which is take every '
+                              'complaint seriously.',
+                       'timestamp': 3031,
+                       'timestamp_seconds': 3031,
+                       'timestamp_label': '[00:50:31]',
+                       'url': 'https://www.youtube.com/watch?v=J3hHvouRce8&t=3031s',
+                       'markdown': '[00:50:31](https://www.youtube.com/watch?v=J3hHvouRce8&t=3031s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'J3hHvouRce8',
+                       'title': 'Recent Developments in False Claims Act Litigation',
+                       'channel': 'McGuireWoods LLP',
+                       'author': 'McGuireWoods LLP',
+                       'text': "you can't require an employee to release false claims act claims.",
+                       'tip': "you can't require an employee to release false claims act claims.",
+                       'timestamp': 3291,
+                       'timestamp_seconds': 3291,
+                       'timestamp_label': '[00:54:51]',
+                       'url': 'https://www.youtube.com/watch?v=J3hHvouRce8&t=3291s',
+                       'markdown': '[00:54:51](https://www.youtube.com/watch?v=J3hHvouRce8&t=3291s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ujkR1nAOen8',
+                       'title': '"Qui Tam 2022" Panel Preview  - The Modern Relator',
+                       'channel': 'The Employment Law Group, P.C.',
+                       'author': 'The Employment Law Group, P.C.',
+                       'text': 'we know that you know these ketem cases can be very expensive.',
+                       'tip': 'we know that you know these ketem cases can be very expensive.',
+                       'timestamp': 113,
+                       'timestamp_seconds': 113,
+                       'timestamp_label': '[00:01:53]',
+                       'url': 'https://www.youtube.com/watch?v=ujkR1nAOen8&t=113s',
+                       'markdown': '[00:01:53](https://www.youtube.com/watch?v=ujkR1nAOen8&t=113s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ukz2VRmDQIs',
+                       'title': '"Qui Tam 2020" Panel Preview: Multi-Relator Cases',
+                       'channel': 'The Employment Law Group, P.C.',
+                       'author': 'The Employment Law Group, P.C.',
+                       'text': "you don't know when you file your case because it's under seal if anyone "
+                               'has beaten you at the courthouse.',
+                       'tip': "you don't know when you file your case because it's under seal if anyone "
+                              'has beaten you at the courthouse.',
+                       'timestamp': 111,
+                       'timestamp_seconds': 111,
+                       'timestamp_label': '[00:01:51]',
+                       'url': 'https://www.youtube.com/watch?v=ukz2VRmDQIs&t=111s',
+                       'markdown': '[00:01:51](https://www.youtube.com/watch?v=ukz2VRmDQIs&t=111s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ukz2VRmDQIs',
+                       'title': '"Qui Tam 2020" Panel Preview: Multi-Relator Cases',
+                       'channel': 'The Employment Law Group, P.C.',
+                       'author': 'The Employment Law Group, P.C.',
+                       'text': 'they may not be on the best legal ground but yet equitably they made the '
+                               'pie bigger.',
+                       'tip': 'they may not be on the best legal ground but yet equitably they made the '
+                              'pie bigger.',
+                       'timestamp': 147,
+                       'timestamp_seconds': 147,
+                       'timestamp_label': '[00:02:27]',
+                       'url': 'https://www.youtube.com/watch?v=ukz2VRmDQIs&t=147s',
+                       'markdown': '[00:02:27](https://www.youtube.com/watch?v=ukz2VRmDQIs&t=147s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XAVzMsuvKNE',
+                       'title': 'Qui Tam Dismissals Are Spiking: What That Means for FCA Enforcement',
+                       'channel': 'Husch Blackwell',
+                       'author': 'Husch Blackwell',
+                       'text': 'And Jonathan, to your question about closing us out here, the big thing '
+                               "that I think is the takeaway here is that DOJ isn't looking to dismiss "
+                               'weak cases.',
+                       'tip': 'And Jonathan, to your question about closing us out here, the big thing '
+                              "that I think is the takeaway here is that DOJ isn't looking to dismiss weak "
+                              'cases.',
+                       'timestamp': 1364,
+                       'timestamp_seconds': 1364,
+                       'timestamp_label': '[00:22:44]',
+                       'url': 'https://www.youtube.com/watch?v=XAVzMsuvKNE&t=1364s',
+                       'markdown': '[00:22:44](https://www.youtube.com/watch?v=XAVzMsuvKNE&t=1364s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XAVzMsuvKNE',
+                       'title': 'Qui Tam Dismissals Are Spiking: What That Means for FCA Enforcement',
+                       'channel': 'Husch Blackwell',
+                       'author': 'Husch Blackwell',
+                       'text': 'You got to fit your request into one of these categories.',
+                       'tip': 'You got to fit your request into one of these categories.',
+                       'timestamp': 329,
+                       'timestamp_seconds': 329,
+                       'timestamp_label': '[00:05:29]',
+                       'url': 'https://www.youtube.com/watch?v=XAVzMsuvKNE&t=329s',
+                       'markdown': '[00:05:29](https://www.youtube.com/watch?v=XAVzMsuvKNE&t=329s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5twGfbHBnJs',
+                       'title': 'The False Claims Act: What makes a whistleblower law so powerful | '
+                                'Berkeley Boosts',
+                       'channel': 'Phillips & Cohen LLP',
+                       'author': 'Phillips & Cohen LLP',
+                       'text': 'they came to us and said we need 22 full-time equivalent lawyers for this '
+                               "case that's how big it is and we can only provide two okay we'll provide "
+                               '20.',
+                       'tip': 'they came to us and said we need 22 full-time equivalent lawyers for this '
+                              "case that's how big it is and we can only provide two okay we'll provide "
+                              '20.',
+                       'timestamp': 1832,
+                       'timestamp_seconds': 1832,
+                       'timestamp_label': '[00:30:32]',
+                       'url': 'https://www.youtube.com/watch?v=5twGfbHBnJs&t=1832s',
+                       'markdown': '[00:30:32](https://www.youtube.com/watch?v=5twGfbHBnJs&t=1832s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vHZhDg8Ml14',
+                       'title': 'Settling an FCA Case',
+                       'channel': 'ABA Criminal Justice Section',
+                       'author': 'ABA Criminal Justice Section',
+                       'text': 'he has mediated over 40 false claims act cases and before going into the '
+                               'mediation business himself he was an assistant director in the fraud '
+                               'section at the main justice where i work um and uh he uh retired from '
+                               'there in 2004.',
+                       'tip': 'he has mediated over 40 false claims act cases and before going into the '
+                              'mediation business himself he was an assistant director in the fraud '
+                              'section at the main justice where i work um and uh he uh retired from there '
+                              'in 2004.',
+                       'timestamp': 56,
+                       'timestamp_seconds': 56,
+                       'timestamp_label': '[00:00:56]',
+                       'url': 'https://www.youtube.com/watch?v=vHZhDg8Ml14&t=56s',
+                       'markdown': '[00:00:56](https://www.youtube.com/watch?v=vHZhDg8Ml14&t=56s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Okv3G2wwiCA',
+                       'title': '"Qui Tam 2026" Panel Preview - The Constitutionality of the Federal False '
+                                'Claims Act',
+                       'channel': 'The Employment Law Group, P.C.',
+                       'author': 'The Employment Law Group, P.C.',
+                       'text': 'There have been a number of cases filed recently claiming that the Queton '
+                               'provisions violate article two of the constitution and the panel will '
+                               'examine these cases and the important issues that they raise.',
+                       'tip': 'There have been a number of cases filed recently claiming that the Queton '
+                              'provisions violate article two of the constitution and the panel will '
+                              'examine these cases and the important issues that they raise.',
+                       'timestamp': 68,
+                       'timestamp_seconds': 68,
+                       'timestamp_label': '[00:01:08]',
+                       'url': 'https://www.youtube.com/watch?v=Okv3G2wwiCA&t=68s',
+                       'markdown': '[00:01:08](https://www.youtube.com/watch?v=Okv3G2wwiCA&t=68s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yiUS5Zf9HRI',
+                       'title': 'A Conversation on Whistleblowers and the False Claims Act',
+                       'channel': 'Emory School of Law',
+                       'author': 'Emory School of Law',
+                       'text': 'we have 90 days under seal to decide whether we want to get in the case or '
+                               'not.',
+                       'tip': 'we have 90 days under seal to decide whether we want to get in the case or '
+                              'not.',
+                       'timestamp': 1158,
+                       'timestamp_seconds': 1158,
+                       'timestamp_label': '[00:19:18]',
+                       'url': 'https://www.youtube.com/watch?v=yiUS5Zf9HRI&t=1158s',
+                       'markdown': '[00:19:18](https://www.youtube.com/watch?v=yiUS5Zf9HRI&t=1158s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aZd6GqRekxQ',
+                       'title': '"Qui Tam 2024" Panel Preview - Insider, Competitor, Analyst, Doe: Who\'s '
+                                'Your Whistleblower?',
+                       'channel': 'The Employment Law Group, P.C.',
+                       'author': 'The Employment Law Group, P.C.',
+                       'text': 'issues that one may have to confront um known as first defile public '
+                               'disclosure and anonymity.',
+                       'tip': 'issues that one may have to confront um known as first defile public '
+                              'disclosure and anonymity.',
+                       'timestamp': 239,
+                       'timestamp_seconds': 239,
+                       'timestamp_label': '[00:03:59]',
+                       'url': 'https://www.youtube.com/watch?v=aZd6GqRekxQ&t=239s',
+                       'markdown': '[00:03:59](https://www.youtube.com/watch?v=aZd6GqRekxQ&t=239s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'm7bKdhkfWEE',
+                       'title': '"Qui Tam 2023" Panel Preview - Interviewing Whistleblowers: Techniques '
+                                'and Cautions',
+                       'channel': 'The Employment Law Group, P.C.',
+                       'author': 'The Employment Law Group, P.C.',
+                       'text': 'was lowers are obviously often very nervous and sometimes they may have '
+                               'done things wrong themselves.',
+                       'tip': 'was lowers are obviously often very nervous and sometimes they may have '
+                              'done things wrong themselves.',
+                       'timestamp': 122,
+                       'timestamp_seconds': 122,
+                       'timestamp_label': '[00:02:02]',
+                       'url': 'https://www.youtube.com/watch?v=m7bKdhkfWEE&t=122s',
+                       'markdown': '[00:02:02](https://www.youtube.com/watch?v=m7bKdhkfWEE&t=122s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'H0ay64A0XXA',
+                       'title': 'The Truth About Whistleblower Cases Nobody Tells You',
+                       'channel': 'Against The Fraud',
+                       'author': 'Against The Fraud',
+                       'text': "It's never less than 120 days and I've had seals go for a year or two or "
+                               'in this one other case like five.',
+                       'tip': "It's never less than 120 days and I've had seals go for a year or two or in "
+                              'this one other case like five.',
+                       'timestamp': 583,
+                       'timestamp_seconds': 583,
+                       'timestamp_label': '[00:09:43]',
+                       'url': 'https://www.youtube.com/watch?v=H0ay64A0XXA&t=583s',
+                       'markdown': '[00:09:43](https://www.youtube.com/watch?v=H0ay64A0XXA&t=583s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FopC1sCa2y8',
+                       'title': 'Blake Percival: whistleblower and successful qui tam plaintiff on USIS '
+                                'dumping fraud',
+                       'channel': 'Whistleblower Heroes',
+                       'author': 'Whistleblower Heroes',
+                       'text': 'a scheme called dumping to where near the end of the month they would just '
+                               'send that number of investigations that they needed to to send to make X '
+                               'amount of dollars which was what had been projected that they needed to '
+                               'make that month.',
+                       'tip': 'a scheme called dumping to where near the end of the month they would just '
+                              'send that number of investigations that they needed to to send to make X '
+                              'amount of dollars which was what had been projected that they needed to '
+                              'make that month.',
+                       'timestamp': 1465,
+                       'timestamp_seconds': 1465,
+                       'timestamp_label': '[00:24:25]',
+                       'url': 'https://www.youtube.com/watch?v=FopC1sCa2y8&t=1465s',
+                       'markdown': '[00:24:25](https://www.youtube.com/watch?v=FopC1sCa2y8&t=1465s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'}]}

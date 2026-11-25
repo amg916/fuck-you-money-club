@@ -1,693 +1,869 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($10,000–$45,000 USD) and configure a lean, low-opex ($1,500–$9,500 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Reserve-First Funding, DuckDB Evidence Pipelines, Counsel-Controlled Matter Rooms, and Claim-Level Readiness Under 31 U.S.C. § 3730",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #48, ranked #16 of 49 with a 92/100 Money-to-Manpower Score, "
-        "supports 11 mapped plays through a small forensic analytics operation, "
-        "not a warehouse of speculative lawsuits. Allocate at least half of "
-        "$10,000–$45,000 to untouched working capital; buy reproducibility, "
-        "restricted evidence access, and counsel capacity before subscriptions. "
-        "The canonical annual owner-profit cases are $30,400 Conservative, "
-        "$219,375 Base, and $510,400 Scaled. Those outcomes are scenarios, not "
-        "permission to fund payroll with anticipated awards. This chapter "
-        "specifies twelve infrastructure layers, reconciles retainers against "
-        "long-tail statutory proceeds, and connects customs valuation evidence "
-        "to disciplined investigation. Launch only after source rights, "
-        "representative-claim evidence, restore tests, and a zero-award cash "
-        "forecast survive documented review."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$95,000",
-            "context": "Annual operator revenue from retainers and realized eligible award shares",
-            "note": "32% net margin; $30,400 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$487,500",
-            "context": "Annual operator revenue from retainers and realized eligible award shares",
-            "note": "45.0% net margin; $219,375 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$880,000",
-            "context": "Annual operator revenue from retainers and realized eligible award shares",
-            "note": "58% net margin; $510,400 annual owner net profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Protect Half the Capital Before Buying the First Subscription",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Treat startup capital as a survival allocation, not an equipment shopping list. "
-                    "The three budgets below preserve exactly 50% as working capital: $5,000 "
-                    "from $10,000, $12,500 from $25,000, and $22,500 from $45,000. Keep "
-                    "that money in a separate business deposit account, reconcile it weekly, and "
-                    "release it only against the thirteen-week cash forecast. The remaining half "
-                    "buys five bounded deliverables: entity and engagement documents, a secured "
-                    "workstation, insurance, narrowly scoped source access, and initial delivery "
-                    "capacity. These are planning envelopes, not vendor quotations; reallocate "
-                    "within the deployment half when a bindable insurance quote or counsel "
-                    "estimate differs. Do not reduce the reserve percentage to accommodate an "
-                    "annual data contract. The $10,000 configuration assumes an existing usable "
-                    "computer, home-office operation, and a founder who performs extraction and "
-                    "analysis personally. Contractors receive task budgets rather than open-ended "
-                    "availability retainers. The $45,000 configuration purchases deeper source "
-                    "corroboration and delivery capacity, not executive furniture or additional "
-                    "management. Separate personal living reserves from business float: owner "
-                    "withdrawals consume cash even when an income statement classifies them "
-                    "outside operating expense. Record every committed annual renewal in the "
-                    "forecast on its actual payment date rather than smoothing it into an "
-                    "imaginary monthly invoice."
-                ),
-                (
-                    "Construct three monthly cash envelopes before opening a matter. A $1,500 "
-                    "lean envelope contains $100 for software and storage, $150 for insurance "
-                    "accruals, $200 for bookkeeping and administrative services, $250 for source "
-                    "acquisition, $300 for counsel consultation, and $500 for contractor work. "
-                    "A $4,500 delivery envelope allocates those categories $200, $250, $350, "
-                    "$700, $1,000, and $2,000 respectively. A $9,500 capacity envelope allocates "
-                    "$350, $450, $700, $1,500, $2,000, and $4,500. Actual policies may require "
-                    "upfront premiums, so distinguish the expense accrual from the payment "
-                    "schedule and avoid counting an initial premium twice. These envelopes "
-                    "exclude founder living costs, income taxes, and incremental payroll; they "
-                    "are operating controls rather than complete annual scenario expenses. At "
-                    "the lean burn, the three reserves last approximately 3.33, 8.33, and "
-                    "15 months without receipts. At $4,500, they last 1.11, 2.78, and five "
-                    "months. Because first deals can take four to twelve months, the smallest "
-                    "budget cannot support even the earliest expected close without additional "
-                    "funding or lower burn. Use fractional paid engagements, phased purchases, "
-                    "or additional owner capital; never replace the missing runway with an "
-                    "estimated relator award. Stop discretionary acquisition when projected "
-                    "unrestricted cash falls below eight weeks of committed payments."
-                ),
-                (
-                    "Establish an entity whose contracts describe forensic data analysis and "
-                    "litigation support rather than legal representation or guaranteed recoveries. "
-                    "Obtain an EIN directly from the IRS without paying an intermediary, open "
-                    "an entity-owned bank account, and maintain a separate tax reserve. Have "
-                    "counsel review the operating agreement, confidentiality terms, contractor "
-                    "invention assignments, and applicable restrictions on sharing legal fees. "
-                    "A services entity does not automatically acquire an individual's statutory "
-                    "award rights. Bill law firms for defined analytical deliverables using "
-                    "ordinary fees; do not disguise an impermissible referral payment as a "
-                    "success-based consulting charge. Request professional liability and cyber "
-                    "coverage that expressly addresses litigation support, sensitive records, "
-                    "subcontractors, and incident response. Compare exclusions for intentional "
-                    "acts, contractual liability, regulatory investigations, and prior-known "
-                    "circumstances before binding. Maintain vendor payment verification through "
-                    "a known telephone number, not a changed bank account in an email thread. "
-                    "Require two-person verification for material transfers even when the second "
-                    "person is an external bookkeeper. Keep client funds out of operating "
-                    "accounts; if an engagement requires custodial handling, route that "
-                    "arrangement through the appropriate licensed professional. The operating "
-                    "objective is simple: every dollar has an owner, purpose, authorization "
-                    "record, and cash date before it leaves the reserve."
-                ),
-            ],
-            "table": {
-                "caption": "Reserve-First Startup Allocation Across Three Deployment Budgets",
-                "headers": [
-                    "Capital purpose and purchasing boundary",
-                    "$10,000 startup allocation",
-                    "$25,000 startup allocation",
-                    "$45,000 startup allocation",
-                ],
-                "rows": [
-                    [
-                        "Working capital held separately from discretionary deployment purchases",
-                        "$5,000 reserve remains available for documented operating shortfalls",
-                        "$12,500 reserve remains available for documented operating shortfalls",
-                        "$22,500 reserve remains available for documented operating shortfalls",
-                    ],
-                    [
-                        "Entity setup and counsel-reviewed engagement documentation before delivery",
-                        "$1,500 funds formation costs and narrowly scoped contract review",
-                        "$3,000 funds engagement terms and initial matter-screening consultation",
-                        "$5,000 funds expanded contracts and specialist jurisdictional consultation",
-                    ],
-                    [
-                        "Endpoint security and equipment purchased against actual capability gaps",
-                        "$1,200 supplements an existing workstation with secure backup equipment",
-                        "$2,500 funds a dedicated encrypted workstation and recovery media",
-                        "$4,000 funds two secured endpoints and documented recovery capability",
-                    ],
-                    [
-                        "Insurance placement supported by written scope and exclusion review",
-                        "$800 provides an initial premium envelope subject to quotations",
-                        "$1,500 provides broader placement capacity subject to actual quotations",
-                        "$2,500 provides higher-limit placement capacity subject to actual quotations",
-                    ],
-                    [
-                        "Source acquisition restricted to identified evidence questions and rights",
-                        "$500 funds targeted records requests and limited document acquisition",
-                        "$1,500 funds bounded source licenses and primary-record retrieval",
-                        "$3,500 funds specialist source access with documented reuse rights",
-                    ],
-                    [
-                        "Initial delivery capacity released only against scoped analytical milestones",
-                        "$1,000 funds discrete contractor tasks and initial delivery tooling",
-                        "$4,000 funds specialist corroboration tasks and initial delivery tooling",
-                        "$7,500 funds expanded corroboration capacity and initial delivery tooling",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy Evidence Throughput, Not the Appearance of a Large Firm",
-                "body": (
-                    "Experienced operators spend on source preservation, bounded expert questions, "
-                    "and demonstrable delivery capacity before broad research subscriptions."
-                ),
-                "items": [
-                    "Buy one representative import-document bundle before licensing a national manifest feed; stop if invoice lineage cannot support the intended comparison.",
-                    "Ask counsel to price a bounded public-disclosure and claim-particularity assessment before funding a full dossier.",
-                    "Negotiate a paid two-week analytical pilot with a stated record count and acceptance test instead of an unpaid speculative investigation.",
-                    "Retain source hashes and retrieval receipts when dropping a subscription so an expired license does not erase the audit trail or obscure reuse restrictions.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Assemble Twelve Replaceable Layers Around Reproducible Evidence",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build the first production pipeline on Python, DuckDB, and immutable source "
-                    "files. CMS Part B and Part D aggregates identify unusual utilization, "
-                    "prescribing, and reimbursement patterns; Open Payments contributes reported "
-                    "manufacturer relationships; SAM.gov contributes entity and procurement "
-                    "context. None independently proves a false claim, knowledge, or materiality. "
-                    "Store a retrieval manifest containing dataset release, original URL, "
-                    "retrieval time, license terms, byte count, SHA-256 digest, and transformation "
-                    "commit. Preserve raw downloads unchanged and write normalized outputs to "
-                    "new versioned locations. Resolve entities with NPI, UEI, addresses, and "
-                    "documented name aliases rather than names alone. Record suppressed cells, "
-                    "lagged publication periods, and population differences before calculating "
-                    "outlier scores. Use DuckDB locally until concurrent workloads justify "
-                    "PostgreSQL; a server is not a prerequisite for credible evidence. Keep "
-                    "public-source analytics separate from privileged or sealed matter storage "
-                    "so a developer cannot accidentally publish a confidential attachment with "
-                    "a harmless-looking benchmark. A GitHub repository contains code, synthetic "
-                    "fixtures, and schemas only. Configure automated secret scanning where "
-                    "available, but do not mistake scanning for permission to upload client "
-                    "material. Every analytical result should reproduce from its source manifest "
-                    "and pinned environment without relying on an analyst's memory."
-                ),
-                (
-                    "The twelve-layer matrix gives exact planning tiers and usage rates, not a "
-                    "claim that every supplier will preserve today's terms. Verify regional "
-                    "availability, checkout pricing, taxes, contract duration, and supported "
-                    "security controls before purchase. Microsoft 365 Business Basic is budgeted "
-                    "at $6 per user monthly on an annual commitment; two users therefore consume "
-                    "$12 monthly equivalent, with the payment schedule separately recorded. "
-                    "Bitwarden Teams is budgeted at $4 per user monthly when billed annually, "
-                    "adding $8 for two users. For Amazon S3 Standard in US East, budget $0.023 "
-                    "per GB-month for the first storage tier: 200 GB costs $4.60 before requests, "
-                    "retrieval traffic, replication, and tax. One customer-managed AWS KMS key "
-                    "adds $1 monthly, with eligible symmetric requests budgeted at $0.03 per "
-                    "10,000 before allowances. The resulting $25.60 monthly subtotal is only "
-                    "a software-and-storage floor, not total operating cost. The remaining "
-                    "$74.40 within the lean $100 envelope absorbs modest usage, domain costs, "
-                    "and recovery media accruals. Requote rather than silently exceeding the "
-                    "envelope. Free software still consumes patching, configuration, monitoring, "
-                    "and recovery labor; assign that work explicitly to the owner."
-                ),
-                (
-                    "Design evidence custody around distinct public, confidential, privileged, "
-                    "and sealed classifications, with counsel deciding the last two. Encryption "
-                    "does not make a storage location suitable for a court-restricted matter. "
-                    "Before uploading, document authorized users, permissible jurisdiction, "
-                    "retention instructions, subcontractor access, and the applicable order. "
-                    "Use individual identities, multifactor authentication, device encryption, "
-                    "automatic locking, and time-bounded access. Microsoft 365 Business Basic "
-                    "does not supply every advanced conditional-access or endpoint-management "
-                    "capability; upgrade deliberately when a matter requires controls outside "
-                    "the selected tier. Disable public links and keep subject identifiers out "
-                    "of task titles and email subjects. Back up approved evidence repositories "
-                    "with restic using a separately protected recovery key. Test restoration "
-                    "to an isolated device, validate source digests, and record elapsed time. "
-                    "S3 versioning is useful but does not replace a separately administered "
-                    "backup; an attacker with broad permissions can destroy multiple versions. "
-                    "Apply immutable retention only after reconciling counsel's hold instructions "
-                    "with deletion and access obligations. A confidentiality footer does not "
-                    "create privilege, and copying counsel does not automatically protect an "
-                    "ordinary business analysis. Budget for these distinctions through "
-                    "restricted workflows and documented ownership rather than an expensive "
-                    "all-purpose platform."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Layer Infrastructure Matrix With Explicit Budget Tiers and Lean Substitutes",
-                "headers": [
-                    "Infrastructure layer and accountable function",
-                    "Named product and exact planning tier",
-                    "Production role and evidence handling boundary",
-                    "Cheaper or simpler substitute with tradeoff",
-                    "Condition that justifies additional recurring spend",
-                ],
-                "rows": [
-                    [
-                        "Layer 01 handles repeatable extraction and transformation execution",
-                        "Python Software Foundation CPython distribution costs $0 in license fees",
-                        "Run pinned extraction scripts against authorized public source releases",
-                        "Use existing system Python only when dependencies remain reproducible",
-                        "Purchase orchestration only after scheduled jobs exceed owner capacity",
-                    ],
-                    [
-                        "Layer 02 handles local analytical joins and aggregation",
-                        "DuckDB open-source engine costs $0 in software license fees",
-                        "Query Parquet snapshots without maintaining a permanent database server",
-                        "Use Python sqlite3 for smaller relational datasets and simpler queries",
-                        "Purchase additional compute only after measured memory bottlenecks appear",
-                    ],
-                    [
-                        "Layer 03 handles shared matter metadata and status",
-                        "PostgreSQL community distribution costs $0 in software license fees",
-                        "Track source manifests and authorized matter status without attachments",
-                        "Keep metadata in SQLite while one writer remains sufficient",
-                        "Deploy shared hosting only when concurrent updates create conflicts",
-                    ],
-                    [
-                        "Layer 04 handles auditable entity normalization and cleanup",
-                        "OpenRefine desktop distribution costs $0 in software license fees",
-                        "Review organization aliases while retaining reversible transformation histories",
-                        "Use Python normalization scripts when rules are already stable",
-                        "Buy specialist matching services only after measured false matches",
-                    ],
-                    [
-                        "Layer 05 handles review spreadsheets and counsel exports",
-                        "LibreOffice community distribution costs $0 in software license fees",
-                        "Prepare reviewed schedules without embedding confidential external data connections",
-                        "Export CSV files when counsel accepts plain structured schedules",
-                        "Purchase desktop compatibility only after actual document fidelity failures",
-                    ],
-                    [
-                        "Layer 06 handles code versioning without matter evidence",
-                        "GitHub Free plan costs $0 for the selected repository tier",
-                        "Store synthetic fixtures and transformation code without client records",
-                        "Keep local Git repositories with separately encrypted repository backups",
-                        "Upgrade when required administrative controls exceed the selected tier",
-                    ],
-                    [
-                        "Layer 07 handles business identity and routine communications",
-                        "Microsoft 365 Business Basic budgets $6 per user-month annually",
-                        "Provide named business mailboxes while respecting matter-specific storage restrictions",
-                        "Use the client's approved portal for sensitive matter communications",
-                        "Upgrade when required identity controls exceed Business Basic capabilities",
-                    ],
-                    [
-                        "Layer 08 handles controlled object storage for approved records",
-                        "Amazon S3 Standard US East budgets $0.023 per GB-month",
-                        "Preserve versioned objects with restrictive policies and monitored access",
-                        "Use encrypted local storage when remote access is unnecessary",
-                        "Expand storage only against approved retention and active matters",
-                    ],
-                    [
-                        "Layer 09 handles storage encryption key administration separately",
-                        "AWS KMS budgets $1 per key-month plus eligible request charges",
-                        "Separate key permissions; budget $0.03 per 10,000 symmetric requests",
-                        "Use local encryption keys where cloud custody is unnecessary",
-                        "Add separate keys when matters require distinct administrative boundaries",
-                    ],
-                    [
-                        "Layer 10 handles encrypted backup and restoration verification",
-                        "Restic open-source distribution costs $0 in software license fees",
-                        "Create encrypted backups and verify restored source-file digest matches",
-                        "Use encrypted offline drives with scheduled manual verification procedures",
-                        "Buy remote backup capacity when recovery objectives require duplication",
-                    ],
-                    [
-                        "Layer 11 handles individual credentials and controlled secret sharing",
-                        "Bitwarden Teams budgets $4 per user-month with annual billing",
-                        "Share approved operational secrets without placing passwords in tickets",
-                        "Use KeePassXC locally for a single operator without shared vaults",
-                        "Expand seats only for named workers requiring continuing access",
-                    ],
-                    [
-                        "Layer 12 handles public domain resolution without evidence hosting",
-                        "Cloudflare Free DNS tier costs $0 excluding domain registration",
-                        "Publish ordinary business records without exposing confidential matter endpoints",
-                        "Use registrar-provided DNS when basic records meet operational needs",
-                        "Purchase extra features only against measured public-site operational requirements",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Reconcile the Scorecard Without Borrowing Against a Sealed Docket",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Maintain separate ledgers for contracted analytical services, earned service "
-                    "revenue, collected service cash, and realized statutory awards. The "
-                    "Conservative scorecard reconciles $95,000 revenue less $64,600 expense to "
-                    "$30,400 owner net profit at 32%. Base reconciles $487,500 less $268,125 "
-                    "to $219,375 at 45.0%. Scaled reconciles $880,000 less $369,600 to "
-                    "$510,400 at 58%. Preserve the stated teams of one full-time operator "
-                    "plus two contractors for Conservative and Base, and two full-time workers "
-                    "plus three contractors for Scaled. Those labels describe headcount, not "
-                    "contractor utilization or invented salary assumptions. The monthly "
-                    "infrastructure envelopes are subsets of these expense totals, not substitutes "
-                    "for delivery costs, compensation, and other scenario expenses. An "
-                    "illustrative retainer-only Base bridge is five clients paying $8,125 "
-                    "monthly for twelve months, which equals $487,500; it demonstrates "
-                    "arithmetic, not an established sales pipeline. Specify hours, deliverables, "
-                    "and overage rules before selling that capacity. Advance collections "
-                    "remain contract liabilities until performance supports recognition. Where "
-                    "the operator is an agent rather than principal, apply the ASC 606 "
-                    "principal-agent assessment to service revenue. The supplied scorecard "
-                    "contains no numerical retained_share factor, so do not invent one or "
-                    "treat client recoveries as operator billings."
-                ),
-                (
-                    "Use a zero-award operating forecast as the default treasury view. A "
-                    "separate upside schedule can track two-to-five-plus-year recoveries, but "
-                    "FCA court seals do not describe every SEC or IRS proceeding. The "
-                    "statutory recipient, eligibility rules, deductions, and actual collection "
-                    "determine what belongs in operator revenue; a filed tip or complaint "
-                    "creates neither cash nor an automatic receivable. Under 31 U.S.C. "
-                    "§ 3730(d), qualifying FCA shares generally run 15%–25% with government "
-                    "intervention and 25%–30% without, subject to statutory qualifications "
-                    "and reductions. SEC and CFTC qualifying awards generally range from "
-                    "10%–30%; qualifying IRS awards under 26 U.S.C. § 7623(b) generally "
-                    "range from 15%–30%. Do not apply a universal 15%–30% multiplier "
-                    "across all programs. A hypothetical $2 million FCA recovery at a "
-                    "20% recipient share produces $400,000 before applicable reductions, "
-                    "fees, and other adjustments, not $2 million of operator revenue. "
-                    "If the analytics firm has no lawful entitlement to that award, its "
-                    "award revenue is zero regardless of its contribution to the dossier. "
-                    "Counsel should document ownership and permissible arrangements before "
-                    "any upside appears in an internal model. Keep speculative proceeds "
-                    "outside borrowing capacity, contractor commitments, and minimum cash "
-                    "coverage calculations."
-                ),
-                (
-                    "Model legal attrition before ranking anomaly leads. In an explicitly "
-                    "illustrative cohort of 100 leads, reject 40 after counsel's public-disclosure "
-                    "assessment and another 30 after representative-claim evidence review, "
-                    "leaving 30 for further development. Section 3730(e)(4) requires analysis "
-                    "of the disclosure source, substantially similar allegations, and any "
-                    "applicable original-source exception; a public dataset alone does not "
-                    "resolve that inquiry. Rule 9(b) requires particularity, with controlling "
-                    "circuit standards determining whether identified claims or reliable "
-                    "indicia suffice. Stress the remaining cohort with a hypothetical 70% "
-                    "DOJ non-intervention rate: 21 non-intervened and nine intervened matters. "
-                    "Apply a separate hypothetical 20% government-dismissal stress to that "
-                    "30-matter cohort, producing six expected dismissals, not six observed "
-                    "cases. These assumptions are sensitivity inputs, not reported DOJ or "
-                    "Granston-era rates; dismissal powers predate that memorandum, and "
-                    "non-intervention itself is not dismissal. Track observed rates by "
-                    "closed decision cohort, decision date, intervention status, and motion "
-                    "denominator rather than copying a headline percentage. Government "
-                    "dismissal under § 3730(c)(2)(A) involves procedural protections and "
-                    "the intervention framework addressed in Polansky. Finally run complete "
-                    "zero recovery across every surviving matter. If that branch cannot "
-                    "pay committed expenses from service collections and reserves, reduce "
-                    "spending before accepting another investigation."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Earnings Reconciliation and Separate Evidence-Risk Controls",
-                "headers": [
-                    "Scenario or operating ledger under review",
-                    "Exact arithmetic or explicit modeling input",
-                    "Recognition and cash treatment required operationally",
-                    "Failure response before committing additional capital",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual case uses one full-time operator and two contractors",
-                        "$95,000 revenue minus $64,600 expenses equals $30,400 profit",
-                        "Preserve 32% margin without counting underlying government recoveries",
-                        "Reduce discretionary delivery spending when collected retainers miss forecast",
-                    ],
-                    [
-                        "Base annual case uses one full-time operator and two contractors",
-                        "$487,500 revenue minus $268,125 expenses equals $219,375 profit",
-                        "Preserve 45.0% margin with earned revenue separated from deposits",
-                        "Reject additional fixed capacity until service collections support commitments",
-                    ],
-                    [
-                        "Scaled annual case uses two full-time workers and three contractors",
-                        "$880,000 revenue minus $369,600 expenses equals $510,400 profit",
-                        "Preserve 58% margin while recording all incremental delivery costs",
-                        "Reprice scope or defer hiring when actual utilization disappoints",
-                    ],
-                    [
-                        "Illustrative Base service bridge excludes every possible statutory award",
-                        "Five clients times $8,125 monthly times twelve equals $487,500",
-                        "Recognize completed service obligations and separately forecast collection timing",
-                        "Replace lost clients or cut spend without assuming litigation proceeds",
-                    ],
-                    [
-                        "Illustrative legal attrition screen begins with one hundred leads",
-                        "Forty disclosure exclusions plus thirty evidence exclusions leave thirty",
-                        "Record counsel reasoning and avoid treating exclusions as empirical rates",
-                        "Stop dossier expansion when admissible claim support remains insufficient",
-                    ],
-                    [
-                        "Illustrative DOJ decision stress separates non-intervention from dismissal",
-                        "Seventy percent non-intervention and twenty percent dismissal are assumptions",
-                        "Track real decision cohorts separately from hypothetical sensitivity inputs",
-                        "Run all remaining awards at zero before approving operating commitments",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Test the Customs Edge and Complete the Pre-Flight Evidence Chain",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "For customs_first_sale_rule_valuation_arbitrage, distinguish lawful valuation "
-                    "design from evidence of an actionable false declaration. Under 19 CFR "
-                    "§ 152.103 and the Nissho Iwai framework, an eligible first sale requires "
-                    "substantiation of a bona fide sale, export destination, and the applicable "
-                    "transaction-value conditions; an inexpensive factory invoice is insufficient. "
-                    "At 100,000 units, an $18 middleman invoice yields $1.8 million of "
-                    "declared value, while a qualifying $8 factory transaction yields $800,000 "
-                    "before required additions. At a uniform illustrative 25% ad valorem "
-                    "duty, the amounts are $450,000 and $200,000, a $250,000 difference "
-                    "or 55.56%. That simple endpoint is slightly above the mapped "
-                    "35%–55% annual savings range; adjustments and partial eligibility must "
-                    "be modeled rather than rounding away the difference. If only 80% of "
-                    "those units qualify, mixed duty becomes $250,000 and savings become "
-                    "$200,000, or 44.44%. Do not project those percentages indiscriminately "
-                    "across $10 million–$250 million import portfolios. Tariff classification, "
-                    "origin, additional duties, assists, royalties, freight treatment, and "
-                    "related-party conditions change the result. Importer duty savings are "
-                    "client economics, not analytics revenue. A separately scoped $6,000 "
-                    "invoice-reconciliation engagement produces $6,000 of service consideration "
-                    "as the contracted work is performed, regardless of the importer saving "
-                    "$200,000."
-                ),
-                (
-                    "Build the customs proof packet from purchase orders, payment records, "
-                    "factory invoices, middleman invoices, shipping documents, entry summaries, "
-                    "and the applicable valuation adjustments. Public manifests can support "
-                    "shipment linkage but rarely establish the full price, payment, or "
-                    "arm's-length evidence required for first-sale treatment. Preserve the "
-                    "difference between a missing public record and a contradictory primary "
-                    "record. The mapped fallback is an encrypted, confidential customs-broker "
-                    "escrow vault that protects the middleman's margin from routine buyer "
-                    "access while allowing CBP auditors full authorized access. Document "
-                    "retention, release authority, audit response timing, and chain of "
-                    "custody; the importer remains responsible for required substantiation "
-                    "and reasonable care. Obtain a formal customs-counsel opinion addressing "
-                    "the actual transaction chain, not a template referring only to the "
-                    "rule's name. If adequate evidence cannot be produced, abandon first-sale "
-                    "treatment and use the otherwise supportable valuation method. For "
-                    "whistleblower analytics, counsel must separately evaluate whether "
-                    "conduct supports an FCA theory involving a government payment or "
-                    "obligation; a lawful duty reduction is not fraud. Never promise "
-                    "confidentiality arrangements that obstruct an audit or conceal records "
-                    "the importer must obtain. Quote document extraction separately from "
-                    "legal analysis, and prohibit the analyst from signing a customs "
-                    "opinion or directing unsupported entry changes."
-                ),
-                (
-                    "Before launch, run one complete matter simulation using synthetic records "
-                    "and one authorized public-source sample. Demonstrate retrieval, digest "
-                    "verification, transformation, entity matching, exception annotation, "
-                    "counsel export, access revocation, and restoration. Require a second "
-                    "person to reproduce a claimed anomaly without verbal instructions. "
-                    "The evidence packet should identify the alleged conduct, relevant "
-                    "period, responsible entities, source limitations, and the specific "
-                    "missing facts needed for legal assessment. For FCA matters, licensed "
-                    "relator counsel files the complaint under the seal procedures of "
-                    "31 U.S.C. § 3730(b)(2), including the initial statutory period "
-                    "and any extensions ordered by the court. Calendar court-specific "
-                    "instructions and prohibit public case references, sales anecdotes, "
-                    "or publication of sealed allegations. Seal violations can bring "
-                    "serious consequences, including dismissal in appropriate circumstances; "
-                    "do not represent loss of a share as automatic in every case. "
-                    "Route SEC Form TCR and IRS Form 211 submissions through counsel "
-                    "under this operating design, while respecting their distinct procedures. "
-                    "Finally, collect a signed services agreement, confirm insurer scope, "
-                    "verify the receiving account independently, and show a thirteen-week "
-                    "forecast with every statutory award set to zero. Launch a bounded "
-                    "paid pilot only when these artifacts are complete and named owners "
-                    "have accepted ongoing monitoring responsibilities."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Launch Verification Matrix for Counsel-Facing Analytics and Customs Evidence",
-                "headers": [
-                    "Verification workstream and responsible operating owner",
-                    "Specific evidence required before paid production",
-                    "Measurable acceptance condition for the first engagement",
-                    "Fallback when the condition cannot be satisfied",
-                ],
-                "rows": [
-                    [
-                        "Owner and bookkeeper verify unrestricted cash and payment commitments",
-                        "Thirteen-week forecast includes signed commitments and zero statutory awards",
-                        "Reserve remains at least half of initial startup allocation",
-                        "Delay discretionary purchases and secure paid work before expansion",
-                    ],
-                    [
-                        "Lead analyst verifies source rights and transformation reproducibility",
-                        "Source manifest contains retrieval details and verified SHA-256 digests",
-                        "Second reviewer reproduces the selected anomaly without verbal assistance",
-                        "Quarantine unsupported outputs and rebuild from authorized source snapshots",
-                    ],
-                    [
-                        "Relator counsel assesses disclosure exposure and pleading evidence quality",
-                        "Written assessment addresses section 3730(e)(4) and applicable Rule 9(b)",
-                        "Representative evidence supports the jurisdiction-specific theory counsel intends pursuing",
-                        "Limit work to scoped corroboration rather than drafting unsupported allegations",
-                    ],
-                    [
-                        "Security owner verifies matter access and tested recovery capability",
-                        "Named access roster accompanies a successful isolated restoration record",
-                        "Revoked test identity loses access and restored digests match",
-                        "Keep sensitive records offline until access and recovery defects close",
-                    ],
-                    [
-                        "Customs counsel and broker verify first-sale transaction substantiation",
-                        "Escrow packet includes invoices and transaction-specific customs opinion letter",
-                        "CBP can obtain required records through documented authorized procedures",
-                        "Use otherwise supportable valuation when qualifying evidence remains unavailable",
-                    ],
-                    [
-                        "Engagement owner verifies contract scope and court-specific handling instructions",
-                        "Executed service agreement accompanies counsel-approved filing and disclosure procedures",
-                        "Staff can identify authorized recipients and applicable disclosure restrictions",
-                        "Pause sensitive delivery and obtain written counsel instructions first",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Pre-Flight Checks That Must Produce Artifacts",
-                "body": (
-                    "Each check requires a named owner and a retained result. A verbal assurance "
-                    "does not establish cash coverage, evidentiary sufficiency, or access control."
-                ),
-                "items": [
-                    "Cash check: preserve at least 50% of startup capital as reserve and reconcile the thirteen-week zero-award forecast to bank balances.",
-                    "Evidence check: obtain counsel's disclosure and particularity assessment, plus a reproducible source-to-output manifest.",
-                    "Custody check: verify individual access, revoke a test identity, restore an approved backup, and compare the restored file digests.",
-                    "Delivery check: execute the paid scope, verify insurance coverage, and record counsel-specific instructions for filings and restricted materials.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Ring-fence the reserve and document the spending envelope",
-                    "action": "Move at least half of initial startup cash into a separately tracked business reserve.",
-                    "detail": "Record deployment allocations, actual payment dates, owner withdrawals, and thirteen weeks of commitments with statutory proceeds set to zero.",
-                },
-                {
-                    "step": 2,
-                    "title": "Build the reproducible public-source pipeline",
-                    "action": "Ingest an authorized sample with Python and DuckDB while preserving immutable source files.",
-                    "detail": "Capture retrieval rights, release versions, SHA-256 digests, transformation commits, suppression rules, and entity-matching exceptions.",
-                },
-                {
-                    "step": 3,
-                    "title": "Validate legal relevance and evidence custody",
-                    "action": "Submit the bounded dossier to retained counsel and complete an access-and-restore exercise.",
-                    "detail": "Record disclosure analysis, pleading requirements, authorized recipients, retention instructions, backup results, and transaction-specific customs limitations where relevant.",
-                },
-                {
-                    "step": 4,
-                    "title": "Launch a scoped paid pilot with cash-based expansion rules",
-                    "action": "Execute the service agreement, collect the agreed deposit, and deliver against written acceptance criteria.",
-                    "detail": "Recognize services as earned, monitor collection dates, and expand capacity only when recurring service cash supports the additional commitments.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "Fund the evidence engine with collected service fees, and let statutory upside arrive without holding payroll hostage.",
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Allocate the chosen $10,000–$45,000 startup budget with at least 50% preserved as working-capital reserve.",
-        "Price the twelve infrastructure layers at checkout and document annual commitments, usage charges, and controls absent from selected tiers.",
-        "Open entity-owned operating and reserve accounts, verify payment-change procedures, and bind appropriately scoped professional liability and cyber coverage.",
-        "Reconcile all three canonical earnings cases while keeping service recognition, cash collections, client recoveries, and eligible realized awards separate.",
-        "Have counsel assess public-disclosure exposure, Rule 9(b) evidence, filing procedures, and customs transaction substantiation before expanding a dossier.",
-        "Complete a reproducibility, access-revocation, and backup-restoration test, then launch only a bounded paid pilot supported by a zero-award cash forecast.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "31 U.S.C. § 3730(b)(2), (c)(2)(A), (d), and (e)(4)",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3730",
-            "relevance": "Controls FCA filing under seal, government dismissal procedures, relator award ranges, and the public-disclosure analysis required before funding case development.",
-        },
-        {
-            "title": "Federal Rule of Civil Procedure 9(b)",
-            "url": "https://www.law.cornell.edu/rules/frcp/rule_9",
-            "relevance": "Requires particularity for allegations of fraud or mistake; counsel must apply controlling circuit standards to representative claims and supporting evidence.",
-        },
-        {
-            "title": "19 CFR § 152.103 — Transaction Value",
-            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-152/subpart-E/section-152.103",
-            "relevance": "Defines transaction-value requirements and adjustments relevant to evaluating substantiated first-sale customs valuation.",
-        },
-        {
-            "title": "19 U.S.C. § 1484 — Entry of Merchandise",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1484",
-            "relevance": "Establishes importer entry responsibilities and reasonable-care obligations that remain relevant when documents are held in broker escrow.",
-        },
-        {
-            "title": "19 U.S.C. § 1508 — Recordkeeping",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1508",
-            "relevance": "Supports documented customs record retention and production procedures rather than treating a confidential vault as an exemption from recordkeeping.",
-        },
-        {
-            "title": "15 U.S.C. § 78u-6 — Securities Whistleblower Incentives and Protection",
-            "url": "https://www.law.cornell.edu/uscode/text/15/78u-6",
-            "relevance": "Sets SEC award eligibility and the qualifying 10%–30% award range; analyst service fees remain separate from statutory recipient rights.",
-        },
-        {
-            "title": "17 CFR § 240.21F-9 — Procedures for Submitting Original Information",
-            "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-240/section-240.21F-9",
-            "relevance": "Provides SEC submission procedures relevant to counsel-routed Form TCR workflows and anonymous submissions.",
-        },
-        {
-            "title": "26 U.S.C. § 7623 — Expenses of Detection and Whistleblower Awards",
-            "url": "https://www.law.cornell.edu/uscode/text/26/7623",
-            "relevance": "Distinguishes qualifying IRS award treatment, thresholds, and percentage rules from ordinary analytics-service revenue.",
-        },
-        {
-            "title": "7 U.S.C. § 26 — Commodity Whistleblower Incentives and Protection",
-            "url": "https://www.law.cornell.edu/uscode/text/7/26",
-            "relevance": "Establishes CFTC award conditions and the qualifying 10%–30% range rather than a universal award percentage across programs.",
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'data-mined-enforcement-doj-algorithms-fca-cases',
+ 'question_prompt': 'How is DOJ using data analytics and shifting enforcement priorities to find FCA '
+                    'fraud, and where is that enforcement headed?',
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Data-Mined Enforcement: How DOJ Algorithms and Priorities Drive FCA Cases',
+ 'subtitle': "Claims-data mining and statistical sampling, DOJ's National Fraud Enforcement Division and "
+             'early seizures, the DOJ–HHS FCA task force and national healthcare fraud takedown, Medicare '
+             'Advantage risk-adjustment cases, COVID-relief fraud, and annual FCA enforcement trend '
+             'reviews',
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners from Foley & Lardner, Seyfarth Shaw, Epstein Becker Green, Reed Smith '
+                      'and Analysis Group converge on one picture: DOJ is centralizing FCA enforcement, '
+                      'healthcare dominates the money, and data miners now drive a large slice of the '
+                      'docket. FY2025 recoveries topped $6.8B, with $5.7B from healthcare, roughly 1,300 '
+                      'qui tams filed, and data miners behind more than 45% of qui tams since FY2024. The '
+                      'street mechanics are concrete: the FOCUS initiative demands correlations tethered '
+                      'to falsity and scienter, Rule 9(b) is the first motion-to-dismiss weapon against '
+                      'algorithmic complaints, CID signatures reveal case value, and a civil '
+                      'self-disclosure pilot prices repayment at 1.25-1.6x. Disagreement centers on filing '
+                      'counts, cyber recovery totals, relator share ranges, and whether DOJ will actually '
+                      'use its dismissal power against weak declined cases.',
+ 'key_metrics': [{'label': 'FY2025 Total FCA Recoveries',
+                  'metric': 'FY2025 Total FCA Recoveries',
+                  'value': 'More than $6.8B, with $5.7B+ from healthcare',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Foley & Lardner panel called it the highest amount recovered in a single '
+                             'year in the history of the statute.',
+                  'source': 'Foley & Lardner LLP ([J1-aE0W1Eu8 @ 00:02:11])'},
+                 {'label': 'Data-Miner Share of Qui Tam Filings',
+                  'metric': 'Data-Miner Share of Qui Tam Filings',
+                  'value': 'More than 45% of qui tams since FY2024',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Epstein Becker Green reported data-miner relators as a dominant filing class '
+                             'alongside the FOCUS Initiative launch.',
+                  'source': 'Epstein Becker Green ([rxUll524o5w @ 00:16:24])'},
+                 {'label': '2025 Qui Tam Filings vs Prior Record',
+                  'metric': '2025 Qui Tam Filings vs Prior Record',
+                  'value': '1,297 filings against a prior record of 979',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Robert Salcido described a huge uptick in qui tam actions and said '
+                             'recoveries more than doubled.',
+                  'source': 'American Health Law Association ([U_YfcwE9PJk @ 00:28:50])'},
+                 {'label': 'Civil Self-Disclosure Pilot Repayment Multiplier',
+                  'metric': 'Civil Self-Disclosure Pilot Repayment Multiplier',
+                  'value': '1.25-1.6x, deadline April 22, 2027',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Tori Young contrasted the pilot with typical FCA settlements running about '
+                             '2x, and noted no factual admissions, CIA, CMPs, or revocations.',
+                  'source': 'Seyfarth Shaw LLP ([QLVKZRh_ArE @ 00:30:43])'}],
+ 'sections': [{'heading': '1. The Practitioner Consensus: Central Command, Healthcare Money and the Rise '
+                          'of Data Miners',
+               'paragraphs': ['Enforcement is being pulled toward Main Justice and pointed at healthcare. '
+                              'Erica Sibley Bondson and Leah Brownlee Taylor of Epstein Becker Green walk '
+                              'through the new National Fraud Enforcement Division, which absorbed the '
+                              'criminal Tax section, the Health Care Fraud Unit and MGCF, with civil '
+                              'components possibly added later; Leah expects top-down, centralized, '
+                              'hands-on control from Main Justice rather than scattered U.S. Attorney '
+                              'discretion [rxUll524o5w @ 00:03:00]. Jennifer Seraphin of Seyfarth Shaw '
+                              'confirms that Directive 26-12 makes healthcare the top priority, backed by '
+                              'strike forces in New England and on the West Coast and a dedicated fraud '
+                              "division inside the DC U.S. Attorney's Office [QLVKZRh_ArE @ 00:16:20]. "
+                              'Jonathan Porter of Husch Blackwell, a DOJ alum, reports staff being moved '
+                              'off antitrust and securities work and onto healthcare files, and the '
+                              'episode closes with the blunt line that healthcare enforcement is coming '
+                              '[FO7NfNf-r0k @ 00:00:30]. The money backs the staffing: the Foley & Lardner '
+                              'panel says 84% of the dollars the government recovered last fiscal year '
+                              'came from healthcare, inside a record-breaking $6.8B year [J1-aE0W1Eu8 @ '
+                              '00:09:37]. For an operator, the baseline assumption is simple: healthcare '
+                              'claims sit at the center of the target map, and the decisions about them '
+                              'increasingly come from a central command that sets targets before local '
+                              'offices ever touch a file.',
+                              'Every serious panel agrees the docket is being fed by data, not just '
+                              "insiders. Analysis Group's panel reports that almost all FCA cases "
+                              'historically came from insider whistleblowers, then DOJ officials from 2019 '
+                              'through 2022 started saying they were using big data to find payment '
+                              'anomalies, with an ultrasound statistical-outlier case and four PEMF '
+                              'electro-acupuncture cases cited as proof [y9nEr_YUXBY @ 00:08:09]. Epstein '
+                              'Becker Green puts a number on the relator side: data miners have filed more '
+                              'than 45% of qui tams since FY2024, and a new whistleblower program pays '
+                              '$10-30,000 per tip [rxUll524o5w @ 00:16:24]. Tom Sutis and David Bender of '
+                              'Reed Smith describe an upsurge of non-insider whistleblowers using public '
+                              'data and AI tools, driven by DOJ priority, newly public data and the '
+                              "relator's share of the recovery, with healthcare as the main hunting ground "
+                              '[mNX2NY20ks0 @ 00:03:44]. Relator counsel Shawna Itri of Seeger Weiss '
+                              'traces the fuel back to CMS releasing claims data in 2011, and lists '
+                              'data-driven settlements of $280M and $98M plus Integra settlements of $61M '
+                              'and $188M [SKjmFHwe2Rk @ 00:33:33]. The consensus mechanic: public claims '
+                              'data plus AI tools plus a 15-30% relator share turns outsiders into '
+                              'relators who never worked a day inside the target company.',
+                              'The same practitioners agree on the ceiling: data flags anomalies, but it '
+                              'does not prove fraud. The Reed Smith pair put it flatly, correlation does '
+                              'not equate to causation, and the scienter or knowing element is what '
+                              'separates an overpayment from fraud [mNX2NY20ks0 @ 00:11:53]. Analysis '
+                              "Group's panel adds that data cannot prove scienter under the FCA knowingly "
+                              'standard, let alone the higher anti-kickback intent standard, and that '
+                              'outputs are vulnerable to the data-generating process, such as how '
+                              'clinicians order tests [y9nEr_YUXBY @ 00:23:24]. The proof is the Integra '
+                              'Med Analytics line: Epstein Becker Green notes the Fifth Circuit dismissed '
+                              'the Baylor Scott & White suit in 2020 because obvious alternative '
+                              'explanations existed, and Analysis Group adds the Ninth Circuit did the '
+                              'same to the Providence suit, even though DOJ did intervene in an Integra '
+                              'nursing-home RUGs case [rxUll524o5w @ 00:18:26]. On the defense side, Josh '
+                              'Drew holds that traditional compliance still works, with an effective '
+                              'reporting line, internal investigations and remediation at the top of the '
+                              'list, because whistleblowers usually raise concerns internally first '
+                              '[zF0bNkCTI_Q @ 00:10:23]. The baseline prerequisite for anyone mining '
+                              'claims or defending against miners is identical: a statistical outlier must '
+                              'be married to a falsity theory and hard evidence of knowledge.'],
+               'table': {'caption': 'Where the practitioners line up on data-mined FCA enforcement',
+                         'headers': ['Consensus Signal',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Record recoveries driven overwhelmingly by healthcare dollars',
+                                   'FY2025 recoveries exceeded $6.8B, the highest single year in statute '
+                                   'history, with $5.7B+ from healthcare',
+                                   'Expect healthcare billing to draw the heaviest scrutiny and the '
+                                   'biggest settlement numbers',
+                                   'Foley & Lardner LLP ([J1-aE0W1Eu8 @ 00:02:11])'],
+                                  ['Qui tam filings sitting at an all-time high',
+                                   '1,297 qui tams filed in 2025 against a prior record of 979 '
+                                   'whistleblower cases',
+                                   'More relators means more sealed complaints already pending against '
+                                   'active market players',
+                                   'American Health Law Association ([U_YfcwE9PJk @ 00:28:50])'],
+                                  ['Data miners are now a major relator class',
+                                   'Data miners have filed more than 45% of qui tams since FY2024',
+                                   'Outsiders with public claims data can build cases without any inside '
+                                   'access',
+                                   'Epstein Becker Green ([rxUll524o5w @ 00:16:24])'],
+                                  ['Central command over healthcare fraud priorities and targets',
+                                   'Directive 26-12 makes healthcare the top priority, with strike forces '
+                                   'in New England and West Coast',
+                                   'Local U.S. Attorney discretion shrinks as Main Justice sets the target '
+                                   'list',
+                                   'Seyfarth Shaw LLP ([QLVKZRh_ArE @ 00:16:20])'],
+                                  ['Declined qui tam cases still generate serious money',
+                                   '$2.3B of $5.3B in qui tam settlements came from declined cases; a '
+                                   'declination is not a pass',
+                                   'Never treat a DOJ declination as the end of exposure from a relator',
+                                   'Foley & Lardner LLP ([J1-aE0W1Eu8 @ 00:07:51])'],
+                                  ['Statistics alone cannot carry the scienter element',
+                                   'Data cannot prove the FCA knowingly standard or the higher '
+                                   'anti-kickback intent standard',
+                                   'Every algorithmic flag needs documents and witnesses showing actual '
+                                   'knowledge behind billing',
+                                   'Analysis Group ([y9nEr_YUXBY @ 00:23:24])'],
+                                  ['Internal reporting remains the first line of defense',
+                                   'Whistleblowers usually raise concerns internally first and go outside '
+                                   'when the response fails',
+                                   'An effective reporting line and real remediation can keep complaints '
+                                   'from going external',
+                                   'ComplianceVideos ([zF0bNkCTI_Q @ 00:10:23])']]}},
+              {'heading': '2. Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["The newest rulebook for algorithmic cases is DOJ's FOCUS initiative, "
+                              'announced at the end of April 2026, short for fraud oversight through '
+                              'careful use of statistics, which sets guardrails on FCA data mining '
+                              '[mNX2NY20ks0 @ 00:03:06]. The Reed Smith team explains why it exists: '
+                              'reduced DOJ staff are facing record 2026 filings, so FOCUS is meant to '
+                              'winnow the pile, and what DOJ will accept is a reliable correlation '
+                              'tethered to legal analysis of falsity and scienter rather than a raw '
+                              'statistical spike [mNX2NY20ks0 @ 00:16:39]. Speed is built into the review: '
+                              'Jennifer Seraphin reports the Shumate memo sets a 60-day seal review with a '
+                              '120-day maximum, and describes two intake tracks, vetted data miners on one '
+                              'side and interagency or OIG referrals on the other [QLVKZRh_ArE @ '
+                              '00:23:51]. On the pleading battlefield, Rule 9(b) heightened particularity '
+                              'is the first motion-to-dismiss defense against data-built complaints, a '
+                              'higher bar than an ordinary nonfraud civil case, and the AHLA panel points '
+                              'to Hanagan v. Amazon in the Second Circuit as requiring scienter facts '
+                              'under Rule 9(b), offsetting the subjective-knowledge standard of SuperValu '
+                              'that otherwise makes cases harder to kill early [U_YfcwE9PJk @ 00:20:16]. '
+                              'The street read: a miner who files a bare outlier chart is feeding a '
+                              'dismissal motion.',
+                              "The modeling playbook comes from Analysis Group's panel. Builders choose "
+                              'between supervised machine learning trained on known fraud and unsupervised '
+                              'outlier and association-rule detection, while deep learning and tree '
+                              'ensembles are flagged as black boxes that raise bias concerns [y9nEr_YUXBY '
+                              '@ 00:15:28]. Models are screening tools followed by deeper human review; '
+                              'the panel urges CRISP-DM as the workflow, treating model flags like '
+                              'whistleblower complaints, and balancing false positives against false '
+                              "negatives with an F1 score [y9nEr_YUXBY @ 00:44:42]. The panel's sharpest "
+                              'line is to start with simple things first and not get cute with machine '
+                              'learning, which tracks with how Integra Med Analytics built its cases on '
+                              'simple statistics claiming 1 in 100,000 odds [y9nEr_YUXBY @ 00:27:54]. AI '
+                              'now runs on both sides of the caption: Sutis and Bender report relators '
+                              'using AI to draft complaints, defendants using AI to dig up counterexamples '
+                              'showing a pattern of compliance, and some courts requiring counsel to '
+                              'certify AI use [mNX2NY20ks0 @ 00:20:36]. The compliance flip is the same '
+                              'toolkit pointed inward: pharma should mine call patterns, HCP payments and '
+                              'prescriptions for outliers, and DOJ in the Walmart opioid matter pointed at '
+                              "the company's own wealth of dispensing information.",
+                              'The response numbers are where operators make or lose money. Michael '
+                              'Podberesky of McGuireWoods, ex-DOJ Civil Fraud, reads the signature first: '
+                              'a local U.S. Attorney signals a matter under $10M, while the Civil Fraud '
+                              'Director in Washington signals $10M or more, and the statutory clock runs '
+                              '20 days for documents and as little as 7 days for oral testimony '
+                              '[JXEl43HAAuo @ 00:09:41]. Tori Young of Seyfarth Shaw prices the exit: the '
+                              'civil self-disclosure pilot runs to April 22, 2027 with repayment at '
+                              '1.25-1.6x and no factual admissions, CIA, CMPs or revocations, against '
+                              'typical settlements near 2x, with the AKS repayment base set at '
+                              'remuneration rather than claims paid [QLVKZRh_ArE @ 00:30:43]. On the '
+                              'bounty side, relators take 15-30% plus a new tipster track of $10-30,000, '
+                              'while Evan Gotlab of DarrowEverett puts the share upwards of 35% and walks '
+                              'a $20M claim to roughly $6-7M before attorneys take about a third; Gotlab '
+                              'adds that once DOJ is involved, settlements come within 6 months, which '
+                              'compresses the whole fight [5LsJY2Ss1SI @ 00:09:30]. Penalty math is the '
+                              'multiplier that makes mining pay: per-claim penalties stack across '
+                              'thousands or millions of claims, and as Reed Smith puts it, a lot of claims '
+                              'means a lot of penalty [mNX2NY20ks0 @ 00:09:35].'],
+               'table': {'caption': 'The numbers and rules practitioners actually work from',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Rule',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['CID or subpoena signer as a value signal',
+                                   'Local U.S. Attorney signals under $10M; Civil Fraud Director signals '
+                                   '$10M or more',
+                                   'Read the signature first to size the matter before calling the '
+                                   'prosecutor',
+                                   'McGuireWoods LLP ([JXEl43HAAuo @ 00:09:41])'],
+                                  ['Statutory response deadlines on government demands',
+                                   '20 days for documents and information, as little as 7 days for oral '
+                                   'testimony',
+                                   'Retain counsel and contact the prosecutor within one to two days',
+                                   'McGuireWoods LLP ([JXEl43HAAuo @ 00:09:59])'],
+                                  ['Civil self-disclosure pilot pricing and hard deadline',
+                                   'Repayment at 1.25-1.6x, deadline April 22, 2027, with no factual '
+                                   'admissions',
+                                   'Compare the pilot multiplier against typical 2x settlements before '
+                                   'deciding to disclose',
+                                   'Seyfarth Shaw LLP ([QLVKZRh_ArE @ 00:30:43])'],
+                                  ['Seal review timing under the Shumate memo',
+                                   '60-day seal review with a maximum of 120 days',
+                                   'Expect faster DOJ decisions on whether a data-mined case moves forward',
+                                   'Seyfarth Shaw LLP ([QLVKZRh_ArE @ 00:23:51])'],
+                                  ['NFED criminal charging factors for fraud cases',
+                                   '$25M loss threshold or 25+ victims, though conduct below the factors '
+                                   'is not safe',
+                                   'Do not assume small-dollar conduct escapes the new criminal division '
+                                   'entirely',
+                                   'Epstein Becker Green ([rxUll524o5w @ 00:10:13])'],
+                                  ['Relator share and tipster reward economics combined',
+                                   '15-30% relator share plus $10-30,000 per tip under the new program',
+                                   'Outside data miners now have two paid routes to bring fraud to DOJ',
+                                   'Seyfarth Shaw LLP ([QLVKZRh_ArE @ 00:25:07])'],
+                                  ['Model performance scoring for internal data mining',
+                                   'Balance false positives against false negatives using an F1 score',
+                                   'Tune compliance models so every flag gets worked like a whistleblower '
+                                   'complaint',
+                                   'Analysis Group ([y9nEr_YUXBY @ 00:48:43])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'What the Defense and Relator Bars Actually Do When Data Drives the '
+                                    'Case',
+                           'body': 'Former DOJ lawyers and data experts converge on a short list of moves '
+                                   'that change outcomes once an algorithm, a relator, or a CID lands on '
+                                   'the table.',
+                           'items': ['Call the prosecutor within one to two days of a subpoena or CID to '
+                                     'narrow scope and set up rolling production; a mud-throwing posture '
+                                     'toward DOJ is ineffective because the standard is only preponderance '
+                                     'of the evidence [McGuireWoods LLP — JXEl43HAAuo @ 00:09:02].',
+                                     'Self-mine your own claims data and take corrective action, because '
+                                     'corrective action undercuts the scienter a data-mining relator needs '
+                                     '[HB Litigation News — mNX2NY20ks0 @ 00:29:13].',
+                                     "Hunt for the obvious alternative explanation: Integra's DRG suits "
+                                     'died in the Fifth and Ninth Circuits on exactly that ground '
+                                     '[Analysis Group — y9nEr_YUXBY @ 00:29:43].',
+                                     'Document why each internal red flag was not a violation, because '
+                                     'emails and text messages will be scrutinized no matter how ambiguous '
+                                     'the statute is [American Health Law Association — U_YfcwE9PJk @ '
+                                     '00:29:51].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Triage the Government Demand',
+                              'action': 'Read the subpoena or CID, identify the signer, and calendar the '
+                                        '20-day and 7-day clocks.',
+                              'detail': "Podberesky's sequence is read it, check the signer for the $10M "
+                                        'signal, retain counsel, contact the prosecutor within one to two '
+                                        'days to narrow scope, then run a rapid internal investigation '
+                                        '[McGuireWoods LLP — JXEl43HAAuo @ 00:09:02].'},
+                             {'step': 2,
+                              'title': 'Lock Down People and Data',
+                              'action': 'Bring in counsel early, control who knows about the '
+                                        'investigation, and preserve IT data.',
+                              'detail': 'The AHLA CID workflow is counsel early, only truthful statements, '
+                                        'controlled knowledge of the investigation, IT preservation, '
+                                        'internal investigation and remediation [American Health Law '
+                                        'Association — U_YfcwE9PJk @ 00:22:01].'},
+                             {'step': 3,
+                              'title': 'Run the Data Back at Yourself',
+                              'action': 'Mine call patterns, HCP payments and prescriptions for outliers, '
+                                        'then review flags by hand.',
+                              'detail': "Analysis Group's panel treats models as screening tools followed "
+                                        'by deeper review, with strong human intervention rather than '
+                                        'reliance on machine learning alone [Analysis Group — y9nEr_YUXBY '
+                                        '@ 00:35:20].'},
+                             {'step': 4,
+                              'title': 'Price Disclosure Against the Fight',
+                              'action': 'Compare the 1.25-1.6x pilot repayment against roughly 2x '
+                                        'settlements and forfeiture exposure.',
+                              'detail': 'Tori Young prices the civil pilot at 1.25-1.6x with an April 22, '
+                                        '2027 deadline, while Epstein Becker Green notes pre-charge '
+                                        'seizure risk now factors into the disclosure decision [Seyfarth '
+                                        'Shaw LLP — QLVKZRh_ArE @ 00:30:43].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'title': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The loudest split on the defense side is whether DOJ will actually cull '
+                              'weak qui tams before they reach a courtroom. Foley & Lardner relays Brenna '
+                              'Jenny signaling that DOJ will lean on its dismissal authority more often '
+                              "[J1-aE0W1Eu8 @ 00:08:46]. Reed Smith's Tom Sutis, speaking three months "
+                              'into the FOCUS initiative, calls it too early to tell but still expects DOJ '
+                              'to use the dismissal power more, while fellow panelist David Bender bets on '
+                              'a wave of declinations instead, which leaves relators litigating without '
+                              "the government at the table [mNX2NY20ks0 @ 00:25:19]. Seyfarth Shaw's Teddy "
+                              'Arnold reads the new Justice Manual language, that DOJ will in each case '
+                              'assess dismissal of declined qui tams against the seven Granston factors, '
+                              'and advises clients to temper expectations rather than plan around a '
+                              'government rescue [QLVKZRh_ArE @ 00:06:49]. The ABA Criminal Justice '
+                              'Section panel names the political brake behind that caution, pointing to '
+                              'Grassley as a reason DOJ stays reluctant to dismiss relator suits '
+                              '[w2SmaDc-C4M @ 01:15:11]. The operating split is stark: one camp budgets '
+                              'for DOJ clearing out weak, data-mined filings at the gate, while the other '
+                              'camp budgets for declined cases grinding forward with relator counsel in '
+                              'control.',
+                              'Practitioners also split hard on whether data-mined relators are a durable '
+                              "business or a niche that courts keep swatting down. Epstein Becker Green's "
+                              'panel reports that data miners have filed more than 45 percent of qui tams '
+                              'since FY2024, while a FOCUS initiative launched April 30 now puts '
+                              'guardrails on statistical cases [rxUll524o5w @ 00:16:24]. The American '
+                              'Health Law Association panel frames the same docket very differently, '
+                              'listing data-mining cases as only a sliver of current activity next to '
+                              'medical necessity, Stark, anti-kickback and PPP matters [U_YfcwE9PJk @ '
+                              "00:27:48]. Analysis Group's panel walks through Integra Med Analytics, "
+                              'which built one-in-100,000 simple-statistics claims, only to see its DRG '
+                              'suits dismissed by the Fifth Circuit against Baylor Scott & White and the '
+                              'Ninth Circuit against Providence over an obvious alternative explanation, '
+                              'yet DOJ intervened for the first time in an Integra nursing-home RUGs case '
+                              "[y9nEr_YUXBY @ 00:29:43]. First Healthcare Compliance's Shawna Itri, "
+                              'relator counsel at Seeger Weiss, cites data-driven settlements of $280 '
+                              'million and $98 million plus Integra settlements of $61 million and $188 '
+                              'million [SKjmFHwe2Rk @ 00:33:33]. The working takeaway from both camps: raw '
+                              'outliers die at the pleading stage, while statistics paired with facts on '
+                              'the ground get paid.',
+                              'The third fault line is posture once a CID or subpoena lands: cooperate '
+                              "fast, fight on the merits, or settle early. McGuireWoods' Michael "
+                              'Podberesky, ex-DOJ Civil Fraud, warns that the standard is a preponderance '
+                              'of the evidence and that a mud-throwing style toward DOJ is ineffective, '
+                              'and pushes contacting the prosecutor within one to two days to narrow scope '
+                              'and arrange rolling production [JXEl43HAAuo @ 00:13:04]. The ABA Criminal '
+                              'Justice Section panel openly disagrees on litigation tactics, debating '
+                              'whether to depose government witnesses at all, summed up in one line: you '
+                              "don't know what they're gonna say [w2SmaDc-C4M @ 00:17:42]. On DEI "
+                              "certification exposure, Epstein Becker Green's Leah Brownlee Taylor rejects "
+                              'the reflex to fold, telling defendants to assess scienter and materiality '
+                              'first and that they need not rush to settle [rxUll524o5w @ 00:26:38]. '
+                              "DarrowEverett's Evan Gotlab, ex-DOJ and a white-collar chair, frames the "
+                              'trial threat from the other direction: in more than 15 years, Gotlab has '
+                              'never seen a False Claims Act trial, settlements typically land within six '
+                              'months of DOJ involvement, and no settlement closes without the '
+                              "whistleblower's sign-off [5LsJY2Ss1SI @ 00:21:08]. The split is less about "
+                              'law than about leverage: who controls timing, witnesses and the final '
+                              'number.'],
+               'table': {'caption': 'Contested Calls: Where Named FCA Practitioners Take Opposite '
+                                    'Positions',
+                         'headers': ['Contested Question',
+                                     'Practitioner Position A',
+                                     'Practitioner Position B',
+                                     'Expert Source'],
+                         'rows': [['How much a relator actually walks away with',
+                                   'Gotlab says shares run upwards of 35 percent, so a $20M claim pays '
+                                   'roughly $6-7M before counsel takes about a third',
+                                   'Itri puts shares at 15-25 percent if intervened and 25-30 percent if '
+                                   'declined; Drew cites 15-30 percent',
+                                   'DarrowEverett LLP ([5LsJY2Ss1SI @ 00:09:30]); First Healthcare '
+                                   'Compliance ([SKjmFHwe2Rk @ 00:16:13])'],
+                                  ['How big the 2025 qui tam filing surge really was',
+                                   'Wolf counts about 1,300 qui tams in 2025, up from roughly 700 in prior '
+                                   'years',
+                                   'Salcido counts 1,297 filings against a prior record of 979; Seraphin '
+                                   'tracks 980 rising to about 1,300',
+                                   'American Health Law Association ([U_YfcwE9PJk @ 00:28:50]); Seyfarth '
+                                   'Shaw LLP ([QLVKZRh_ArE @ 00:24:30])'],
+                                  ['What cyber FCA recoveries totaled in the latest year',
+                                   'Seraphin cites 16 cyber settlements worth more than $50M in FY2025 '
+                                   'with annual executive affirmations',
+                                   'Arnold puts 2025 cyber recoveries closer to about $60M; Foley reports '
+                                   'cyber recoveries of $52M-plus',
+                                   'Seyfarth Shaw LLP ([QLVKZRh_ArE @ 00:53:23]); Foley & Lardner LLP '
+                                   '([J1-aE0W1Eu8 @ 00:04:45])'],
+                                  ['Whether qui tam survives the Appointments Clause attack',
+                                   'Foley flags the M.D. Fla. ruling holding the qui tam provisions '
+                                   'unconstitutional, with oral argument already heard',
+                                   'Seyfarth reports the Eleventh Circuit reversed, leaving no circuit '
+                                   'split and Supreme Court review less likely soon',
+                                   'Foley & Lardner LLP ([J1-aE0W1Eu8 @ 00:49:34]); Seyfarth Shaw LLP '
+                                   '([QLVKZRh_ArE @ 00:56:12])'],
+                                  ['Whether NFED changes enforcement or just relabels it',
+                                   'Leah Brownlee Taylor expects top-down, centralized, hands-on control '
+                                   'coming directly out of Main Justice',
+                                   'Erica Sibley Bondson calls it rebranding so far, noting the June '
+                                   'takedown predates NFED entirely',
+                                   'Epstein Becker Green ([rxUll524o5w @ 00:06:17])'],
+                                  ['Whether SuperValu makes FCA cases harder to kill early',
+                                   'Salcido says subjective knowledge makes it much more difficult to get '
+                                   'rid of cases at pleading',
+                                   'Hanagan v. Amazon in the Second Circuit still requires pleaded '
+                                   'scienter facts under Rule 9(b)',
+                                   'American Health Law Association ([U_YfcwE9PJk @ 00:19:13])'],
+                                  ['Whether statistical sampling can prove liability across claims',
+                                   'Life Care allowed sampling to establish liability across a large '
+                                   'universe of claims',
+                                   'Michaels left the sampling question unresolved, and Vista Care '
+                                   'rejected sampling to prove liability',
+                                   'ABA Criminal Justice Section ([w2SmaDc-C4M @ 01:05:02])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'title': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The costliest trap practitioners report is treating a DOJ declination as a '
+                              'win. Foley & Lardner puts FY2025 qui tam settlements at $5.3 billion, with '
+                              '$2.3 billion of that coming out of declined cases, and states flatly that a '
+                              "declination is not a pass [J1-aE0W1Eu8 @ 00:07:51]. McGuireWoods' panel "
+                              'frames the other side of the ledger: the government declines three-quarters '
+                              'of the time but recovers the vast majority, 90 percent of its money, from '
+                              'the 25 percent it joins, so the intervened minority is where the real '
+                              'hammer falls [JXEl43HAAuo @ 00:16:24]. The penalty math compounds either '
+                              "way. Reed Smith's panel on HB Litigation News warns that data-mined "
+                              'complaints stack per-claim penalties across thousands or millions of '
+                              'claims, and a lot of claims means a lot of penalty [mNX2NY20ks0 @ '
+                              "00:09:00]. DarrowEverett's Evan Gotlab supplies the small-company endgame: "
+                              'treble damages turn $100,000 into $300,000, and an engineering firm billing '
+                              'false hours settled for $4 million, closed its doors, and left the relator '
+                              "with roughly $900,000; in Gotlab's words, if it's a smaller business, it "
+                              'could lead to the business closing [5LsJY2Ss1SI @ 00:11:28]. Declined, '
+                              'intervened or settled, the bill arrives; the only variable is how many '
+                              'claims sit underneath it.',
+                              'Data-driven and sampling cases also fail in ways that cost the government '
+                              'and relators real money. The ABA Criminal Justice Section panel catalogs '
+                              'judgment reversals: a $347 million Salas rehab judgment vacated after more '
+                              'than 1,000 surveys turned up few violations, alongside roughly $1 billion '
+                              'in judgments reversed overall [w2SmaDc-C4M @ 00:14:54]. In AseraCare, a '
+                              'sample of 233 patients found 124 unsupported, but after an eight-week '
+                              'trial, a new trial and summary judgment entered sua sponte, the defense '
+                              'won, and the government put up no clinicians to counter a 5 to 10 percent '
+                              'normal rate of clinical disagreement [w2SmaDc-C4M @ 00:35:42]. Analysis '
+                              "Group's panel explains the mechanics: prediction is not causation, models "
+                              'are hostage to the data-generating process such as clinician test-ordering, '
+                              'and data alone cannot prove scienter under the FCA knowingly standard, let '
+                              'alone the higher anti-kickback intent standard [y9nEr_YUXBY @ 00:23:24]. '
+                              "First Healthcare Compliance's Shawna Itri reports the harshest reversal for "
+                              "data-mining relators: DOJ dismissed an LLC's suits against 38 pharma "
+                              "companies because of its false pretenses calls, and Integra's case was "
+                              'dismissed in May 2020 and affirmed by the Fifth Circuit [SKjmFHwe2Rk @ '
+                              '00:34:16].',
+                              'The remaining failure modes are self-inflicted by targets. DarshanTalks '
+                              'warns that a partial or reactive disclosure handed DOJ a road map, and '
+                              'tells deal teams to check targets for unresolved OIG audits and just dig '
+                              "deeper [BXNGLzF0b-E @ 00:05:34]. McGuireWoods' panel describes private "
+                              'equity exposure that barely existed three to four years ago and now rises '
+                              'when a sponsor takes a purchase-price concession for a known problem '
+                              "without remediating it, with a coordinated relators' bar targeting deep "
+                              "pockets [JXEl43HAAuo @ 00:03:30]. Husch Blackwell's Jonathan Porter and "
+                              'Brandon Hall shut down a common compliance shortcut: reporting a payment '
+                              'through Open Payments does not cure an anti-kickback willfulness problem, '
+                              'while some reps still tried creative perks like whiskey tastings and '
+                              "lakehouse weekends [FO7NfNf-r0k @ 00:08:08]. Seyfarth Shaw's Teddy Arnold "
+                              'flags the newest trap: under the draft GSA AI clause the government owns '
+                              "prompts and outputs, contractors must certify deletion, and Arnold's fix is "
+                              'human review of AI outputs, because leaning on the tool is just not going '
+                              'to be a defense [QLVKZRh_ArE @ 00:46:37]. Each of these traps converts an '
+                              'ordinary business decision into evidence a prosecutor can read as knowledge '
+                              'rather than compliance.'],
+               'table': {'caption': 'Firsthand Traps, Reversals and Exposure Math Reported by FCA '
+                                    'Practitioners',
+                         'headers': ['Trap',
+                                     'What Practitioners Saw Go Wrong',
+                                     'Exposure or Economics',
+                                     'Expert Source'],
+                         'rows': [['Reactive or partial self-disclosure to DOJ',
+                                   'A partial, reactive disclosure handed DOJ a road map to the rest of '
+                                   'the problem',
+                                   'Clinical trials, promotion, pharmacies and M&A now sit inside joint '
+                                   'DOJ-HHS working group targets',
+                                   'DarshanTalks ([BXNGLzF0b-E @ 00:05:34])'],
+                                  ['Relator over-collecting company documents before filing',
+                                   'Whistleblowers face countersuits for taking more documents than '
+                                   'needed, and severance releases operate as a trap',
+                                   'Most relator settlements land around $2 million, with retaliation and '
+                                   'blackballing risk attached',
+                                   'First Healthcare Compliance ([SKjmFHwe2Rk @ 00:27:08])'],
+                                  ['Assuming relator anonymity will hold through the case',
+                                   'Anonymity is never promised, and DOJ policy is to move to unseal the '
+                                   "relator's identity",
+                                   'Seal runs 60 days by statute, typically extended to one to two years, '
+                                   'once up to 10',
+                                   'First Healthcare Compliance ([SKjmFHwe2Rk @ 00:59:01])'],
+                                  ['Blowing tight CID and subpoena response deadlines',
+                                   'Statutory clocks run 20 days for documents and as little as seven days '
+                                   'for oral testimony',
+                                   'A Civil Fraud Director signature signals DOJ values the matter at $10 '
+                                   'million or more',
+                                   'McGuireWoods LLP ([JXEl43HAAuo @ 00:09:59])'],
+                                  ['Risk adjustment codes without medical record support',
+                                   'A former risk adjustment coding auditor filed qui tam, and the '
+                                   'government chose to pursue it',
+                                   'The whistleblower received about $2 million; Medicare Advantage spend '
+                                   'tops $530 billion every year',
+                                   'SkillAcquire ([NsOogB7kLRQ @ 00:00:22])'],
+                                  ['Ignoring pre-charge asset seizure risk under NFED',
+                                   'Directive 2613 targets accounts, crypto wallets and securities for '
+                                   'seizure before any charges are filed',
+                                   'Forfeiture risk now factors into disclosure; defenses include innocent '
+                                   'owner claims, TROs and PIs',
+                                   'Epstein Becker Green ([rxUll524o5w @ 00:11:44])'],
+                                  ['Overlooking cybersecurity gaps sitting with vendors',
+                                   'Vendor deficiencies can create liability for the contractor, and no '
+                                   'data breach is required to sue',
+                                   "FY2025 cyber FCA recoveries exceeded $52 million according to Foley's "
+                                   'year-end count',
+                                   'Foley & Lardner LLP ([J1-aE0W1Eu8 @ 00:29:00])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Treating Any FCA Matter as Closed',
+                           'body': 'Every item below comes from a trap a named practitioner watched a '
+                                   'company or relator walk into. Clear all four before booking a matter '
+                                   'as resolved or a risk as contained.',
+                           'items': ['Never book a declination as a win: $2.3 billion of FY2025 qui tam '
+                                     'settlements came out of declined cases, and a declination is not a '
+                                     'pass [Foley & Lardner LLP — J1-aE0W1Eu8 @ 00:07:51].',
+                                     'Never disclose partially or reactively; a half disclosure handed DOJ '
+                                     'a road map to the rest of the conduct [DarshanTalks — BXNGLzF0b-E @ '
+                                     '00:05:34].',
+                                     'Document why each internal red flag was not a violation, because '
+                                     'emails and text messages will be scrutinized no matter how ambiguous '
+                                     'the statute is [American Health Law Association — U_YfcwE9PJk @ '
+                                     '00:29:51].',
+                                     'Put human review on every AI output headed to the government, '
+                                     'because relying on the tool alone is just not going to be a defense '
+                                     '[Seyfarth Shaw LLP — QLVKZRh_ArE @ 00:46:37].']}}],
+ 'pull_quote': '"Correlation does not equate to causation." — HB Litigation News (mNX2NY20ks0 @ 00:16:16).',
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ['Read every subpoena or CID the day it lands, check the signer (local U.S. Attorney '
+                      'signals under $10M, Civil Fraud Director signals $10M or more), and contact the '
+                      'prosecutor within one to two days to narrow scope and set rolling production '
+                      '[McGuireWoods LLP — JXEl43HAAuo @ 00:09:02].',
+                      'Self-mine your own claims data the way relators do and take corrective action on '
+                      'what surfaces, because corrective action undercuts scienter [HB Litigation News — '
+                      'mNX2NY20ks0 @ 00:29:13].',
+                      'Run models as screening tools, start with simple statistics, and treat every model '
+                      'flag like a whistleblower complaint routed into deeper review [Analysis Group — '
+                      'y9nEr_YUXBY @ 00:44:42].',
+                      'Audit risk adjustment coding so every diagnosis code is supported by the medical '
+                      'record, and run chart reviews bidirectionally [SkillAcquire — NsOogB7kLRQ @ '
+                      '00:02:11].',
+                      'Stand up an effective internal reporting line with real investigations and '
+                      'remediation, since whistleblowers usually raise concerns internally first '
+                      '[ComplianceVideos — zF0bNkCTI_Q @ 00:10:23].',
+                      'In healthcare deals, check for unresolved OIG audits and use the six-month window '
+                      'to disclose problems found in diligence [DarshanTalks — BXNGLzF0b-E @ 00:02:33].'],
+ 'statutory_citations': [{'title': 'Analysis Group — Data Mining and the False Claims Act: Key Takeaways '
+                                   '[00:08:09]',
+                          'url': 'https://www.youtube.com/watch?v=y9nEr_YUXBY&t=489s',
+                          'relevance': "Primary practitioner testimony on DOJ's shift from insider "
+                                       'whistleblowers to big-data anomaly detection in FCA cases.'},
+                         {'title': 'HB Litigation News — Can an Algorithm Find Fraud? The New False Claims '
+                                   'Act #falseclaims  #healthcarefraud #legaltech [00:03:06]',
+                          'url': 'https://www.youtube.com/watch?v=mNX2NY20ks0&t=186s',
+                          'relevance': 'Primary practitioner testimony on the FOCUS initiative and its '
+                                       'guardrails for FCA data mining.'},
+                         {'title': 'Epstein Becker Green — Speaking of Litigation - DOJ’s National Fraud '
+                                   'Enforcement Division: Early Seizures and Data Mining [00:16:24]',
+                          'url': 'https://www.youtube.com/watch?v=rxUll524o5w&t=984s',
+                          'relevance': 'Primary practitioner testimony on data-miner relators filing more '
+                                       'than 45 percent of qui tams since FY2024.'},
+                         {'title': 'Seyfarth Shaw LLP — False Claims Act Enforcement: The Developments '
+                                   'Reshaping Risk for 2027 - November 10, 2026 [00:26:04]',
+                          'url': 'https://www.youtube.com/watch?v=QLVKZRh_ArE&t=1564s',
+                          'relevance': "Primary practitioner testimony on DOJ's two-track intake of vetted "
+                                       'data miners and interagency OIG referrals.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'J1-aE0W1Eu8',
+                       'title': 'False Claims Act Enforcement in 2026',
+                       'channel': 'Foley & Lardner LLP',
+                       'author': 'Foley & Lardner LLP',
+                       'text': 'That was the highest amount recovered in a single year in the history of '
+                               'the statute.',
+                       'tip': 'That was the highest amount recovered in a single year in the history of '
+                              'the statute.',
+                       'timestamp': 131,
+                       'timestamp_seconds': 131,
+                       'timestamp_label': '[00:02:11]',
+                       'url': 'https://www.youtube.com/watch?v=J1-aE0W1Eu8&t=131s',
+                       'markdown': '[00:02:11](https://www.youtube.com/watch?v=J1-aE0W1Eu8&t=131s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'J1-aE0W1Eu8',
+                       'title': 'False Claims Act Enforcement in 2026',
+                       'channel': 'Foley & Lardner LLP',
+                       'author': 'Foley & Lardner LLP',
+                       'text': 'A key point when it comes to these kinds of cases is there does not need '
+                               'to be a data breach for these cases to be brought.',
+                       'tip': 'A key point when it comes to these kinds of cases is there does not need to '
+                              'be a data breach for these cases to be brought.',
+                       'timestamp': 1577,
+                       'timestamp_seconds': 1577,
+                       'timestamp_label': '[00:26:17]',
+                       'url': 'https://www.youtube.com/watch?v=J1-aE0W1Eu8&t=1577s',
+                       'markdown': '[00:26:17](https://www.youtube.com/watch?v=J1-aE0W1Eu8&t=1577s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BXNGLzF0b-E',
+                       'title': 'DOJ and HHS Launch FCA Fraud Task Force',
+                       'channel': 'DarshanTalks',
+                       'author': 'DarshanTalks',
+                       'text': 'Just dig deeper.',
+                       'tip': 'Just dig deeper.',
+                       'timestamp': 301,
+                       'timestamp_seconds': 301,
+                       'timestamp_label': '[00:05:01]',
+                       'url': 'https://www.youtube.com/watch?v=BXNGLzF0b-E&t=301s',
+                       'markdown': '[00:05:01](https://www.youtube.com/watch?v=BXNGLzF0b-E&t=301s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w2SmaDc-C4M',
+                       'title': 'Healthcare Enforcement and the False Claims Act: Trends and Developments',
+                       'channel': 'ABA Criminal Justice Section',
+                       'author': 'ABA Criminal Justice Section',
+                       'text': 'Government programs become aware of the fraud and they do nothing, then it '
+                               "becomes difficult for the plaintiff at that point to satisfy Escobar's "
+                               'test, at least without blushing.',
+                       'tip': 'Government programs become aware of the fraud and they do nothing, then it '
+                              "becomes difficult for the plaintiff at that point to satisfy Escobar's "
+                              'test, at least without blushing.',
+                       'timestamp': 772,
+                       'timestamp_seconds': 772,
+                       'timestamp_label': '[00:12:52]',
+                       'url': 'https://www.youtube.com/watch?v=w2SmaDc-C4M&t=772s',
+                       'markdown': '[00:12:52](https://www.youtube.com/watch?v=w2SmaDc-C4M&t=772s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w2SmaDc-C4M',
+                       'title': 'Healthcare Enforcement and the False Claims Act: Trends and Developments',
+                       'channel': 'ABA Criminal Justice Section',
+                       'author': 'ABA Criminal Justice Section',
+                       'text': 'Yes, they put up no clinicians.',
+                       'tip': 'Yes, they put up no clinicians.',
+                       'timestamp': 2376,
+                       'timestamp_seconds': 2376,
+                       'timestamp_label': '[00:39:36]',
+                       'url': 'https://www.youtube.com/watch?v=w2SmaDc-C4M&t=2376s',
+                       'markdown': '[00:39:36](https://www.youtube.com/watch?v=w2SmaDc-C4M&t=2376s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mNX2NY20ks0',
+                       'title': 'Can an Algorithm Find Fraud? The New False Claims Act #falseclaims  '
+                                '#healthcarefraud #legaltech',
+                       'channel': 'HB Litigation News',
+                       'author': 'HB Litigation News',
+                       'text': 'Correlation does not equate to causation.',
+                       'tip': 'Correlation does not equate to causation.',
+                       'timestamp': 976,
+                       'timestamp_seconds': 976,
+                       'timestamp_label': '[00:16:16]',
+                       'url': 'https://www.youtube.com/watch?v=mNX2NY20ks0&t=976s',
+                       'markdown': '[00:16:16](https://www.youtube.com/watch?v=mNX2NY20ks0&t=976s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'U_YfcwE9PJk',
+                       'title': 'False Claims Act: Latest Trends and Developments',
+                       'channel': 'American Health Law Association',
+                       'author': 'American Health Law Association',
+                       'text': "So, what that means is it's much more difficult to get rid of cases at the "
+                               'pleading stage.',
+                       'tip': "So, what that means is it's much more difficult to get rid of cases at the "
+                              'pleading stage.',
+                       'timestamp': 1153,
+                       'timestamp_seconds': 1153,
+                       'timestamp_label': '[00:19:13]',
+                       'url': 'https://www.youtube.com/watch?v=U_YfcwE9PJk&t=1153s',
+                       'markdown': '[00:19:13](https://www.youtube.com/watch?v=U_YfcwE9PJk&t=1153s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JXEl43HAAuo',
+                       'title': 'Healthcare Headlines: Episode 3 - Stay Ready: Trends in Healthcare False '
+                                'Claims Act Investigations',
+                       'channel': 'McGuireWoods LLP',
+                       'author': 'McGuireWoods LLP',
+                       'text': 'So the government is declining three-quarters of the time but recovering '
+                               'the vast majority, 90 percent of its money, from that 25.',
+                       'tip': 'So the government is declining three-quarters of the time but recovering '
+                              'the vast majority, 90 percent of its money, from that 25.',
+                       'timestamp': 984,
+                       'timestamp_seconds': 984,
+                       'timestamp_label': '[00:16:24]',
+                       'url': 'https://www.youtube.com/watch?v=JXEl43HAAuo&t=984s',
+                       'markdown': '[00:16:24](https://www.youtube.com/watch?v=JXEl43HAAuo&t=984s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JXEl43HAAuo',
+                       'title': 'Healthcare Headlines: Episode 3 - Stay Ready: Trends in Healthcare False '
+                                'Claims Act Investigations',
+                       'channel': 'McGuireWoods LLP',
+                       'author': 'McGuireWoods LLP',
+                       'text': "If it's signed by the director of the civil fraud section at DOJ in "
+                               'Washington then that is a clue that they have concluded the matter is '
+                               'worth 10 million or more.',
+                       'tip': "If it's signed by the director of the civil fraud section at DOJ in "
+                              'Washington then that is a clue that they have concluded the matter is worth '
+                              '10 million or more.',
+                       'timestamp': 581,
+                       'timestamp_seconds': 581,
+                       'timestamp_label': '[00:09:41]',
+                       'url': 'https://www.youtube.com/watch?v=JXEl43HAAuo&t=581s',
+                       'markdown': '[00:09:41](https://www.youtube.com/watch?v=JXEl43HAAuo&t=581s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FO7NfNf-r0k',
+                       'title': 'Trump DOJ Sharpens Its Focus on Healthcare Fraud',
+                       'channel': 'Husch Blackwell',
+                       'author': 'Husch Blackwell',
+                       'text': "That's what is clear is that healthcare enforcement is coming.",
+                       'tip': "That's what is clear is that healthcare enforcement is coming.",
+                       'timestamp': 1474,
+                       'timestamp_seconds': 1474,
+                       'timestamp_label': '[00:24:34]',
+                       'url': 'https://www.youtube.com/watch?v=FO7NfNf-r0k&t=1474s',
+                       'markdown': '[00:24:34](https://www.youtube.com/watch?v=FO7NfNf-r0k&t=1474s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rxUll524o5w',
+                       'title': 'Speaking of Litigation - DOJ’s National Fraud Enforcement Division: Early '
+                                'Seizures and Data Mining',
+                       'channel': 'Epstein Becker Green',
+                       'author': 'Epstein Becker Green',
+                       'text': 'They may even want to consider having their own robust kind of '
+                               'whistleblowing reporting system and platform to get out ahead of these '
+                               'whistleblowers and our authorities.',
+                       'tip': 'They may even want to consider having their own robust kind of '
+                              'whistleblowing reporting system and platform to get out ahead of these '
+                              'whistleblowers and our authorities.',
+                       'timestamp': 1057,
+                       'timestamp_seconds': 1057,
+                       'timestamp_label': '[00:17:37]',
+                       'url': 'https://www.youtube.com/watch?v=rxUll524o5w&t=1057s',
+                       'markdown': '[00:17:37](https://www.youtube.com/watch?v=rxUll524o5w&t=1057s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NsOogB7kLRQ',
+                       'title': '2026 False Claims Act Enforcement: DOJ Guidelines & Whistleblower Risk | '
+                                'SkillAcquire',
+                       'channel': 'SkillAcquire',
+                       'author': 'SkillAcquire',
+                       'text': 'So, the lessons here are every diagnosis code must be supported by the '
+                               'medical record.',
+                       'tip': 'So, the lessons here are every diagnosis code must be supported by the '
+                              'medical record.',
+                       'timestamp': 93,
+                       'timestamp_seconds': 93,
+                       'timestamp_label': '[00:01:33]',
+                       'url': 'https://www.youtube.com/watch?v=NsOogB7kLRQ&t=93s',
+                       'markdown': '[00:01:33](https://www.youtube.com/watch?v=NsOogB7kLRQ&t=93s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QLVKZRh_ArE',
+                       'title': 'False Claims Act Enforcement: The Developments Reshaping Risk for 2027 - '
+                                'November 10, 2026',
+                       'channel': 'Seyfarth Shaw LLP',
+                       'author': 'Seyfarth Shaw LLP',
+                       'text': "Just because you say it's material doesn't actually mean it's material.",
+                       'tip': "Just because you say it's material doesn't actually mean it's material.",
+                       'timestamp': 536,
+                       'timestamp_seconds': 536,
+                       'timestamp_label': '[00:08:56]',
+                       'url': 'https://www.youtube.com/watch?v=QLVKZRh_ArE&t=536s',
+                       'markdown': '[00:08:56](https://www.youtube.com/watch?v=QLVKZRh_ArE&t=536s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QLVKZRh_ArE',
+                       'title': 'False Claims Act Enforcement: The Developments Reshaping Risk for 2027 - '
+                                'November 10, 2026',
+                       'channel': 'Seyfarth Shaw LLP',
+                       'author': 'Seyfarth Shaw LLP',
+                       'text': "That's just not going to be a defense.",
+                       'tip': "That's just not going to be a defense.",
+                       'timestamp': 2797,
+                       'timestamp_seconds': 2797,
+                       'timestamp_label': '[00:46:37]',
+                       'url': 'https://www.youtube.com/watch?v=QLVKZRh_ArE&t=2797s',
+                       'markdown': '[00:46:37](https://www.youtube.com/watch?v=QLVKZRh_ArE&t=2797s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'y9nEr_YUXBY',
+                       'title': 'Data Mining and the False Claims Act: Key Takeaways',
+                       'channel': 'Analysis Group',
+                       'author': 'Analysis Group',
+                       'text': "Don't get cute with machine learning. Start with simple things first.",
+                       'tip': "Don't get cute with machine learning. Start with simple things first.",
+                       'timestamp': 1674,
+                       'timestamp_seconds': 1674,
+                       'timestamp_label': '[00:27:54]',
+                       'url': 'https://www.youtube.com/watch?v=y9nEr_YUXBY&t=1674s',
+                       'markdown': '[00:27:54](https://www.youtube.com/watch?v=y9nEr_YUXBY&t=1674s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SKjmFHwe2Rk',
+                       'title': 'Fraud, Healthcare, COVID 19, and the False Claims Act',
+                       'channel': 'First Healthcare Compliance',
+                       'author': 'First Healthcare Compliance',
+                       'text': 'Today the trends in the False Claims Act including data mining and any '
+                               'sort of fraud related to COVID-19.',
+                       'tip': 'Today the trends in the False Claims Act including data mining and any sort '
+                              'of fraud related to COVID-19.',
+                       'timestamp': 354,
+                       'timestamp_seconds': 354,
+                       'timestamp_label': '[00:05:54]',
+                       'url': 'https://www.youtube.com/watch?v=SKjmFHwe2Rk&t=354s',
+                       'markdown': '[00:05:54](https://www.youtube.com/watch?v=SKjmFHwe2Rk&t=354s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5LsJY2Ss1SI',
+                       'title': 'The DOJ’s New Agenda: What Every Business Should Know About the False '
+                                'Claims Act',
+                       'channel': 'DarrowEverett LLP',
+                       'author': 'DarrowEverett LLP',
+                       'text': "And I'll tell you, I've never seen a False Claims Act trial in my career "
+                               'over 15 plus years.',
+                       'tip': "And I'll tell you, I've never seen a False Claims Act trial in my career "
+                              'over 15 plus years.',
+                       'timestamp': 1268,
+                       'timestamp_seconds': 1268,
+                       'timestamp_label': '[00:21:08]',
+                       'url': 'https://www.youtube.com/watch?v=5LsJY2Ss1SI&t=1268s',
+                       'markdown': '[00:21:08](https://www.youtube.com/watch?v=5LsJY2Ss1SI&t=1268s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zF0bNkCTI_Q',
+                       'title': 'Josh Drew on What’s New with the False Claims Act [Podcast]',
+                       'channel': 'ComplianceVideos',
+                       'author': 'ComplianceVideos',
+                       'text': "And it's often when their employer company's internal response is not "
+                               'effective that they seek other avenues to raise their complaints.',
+                       'tip': "And it's often when their employer company's internal response is not "
+                              'effective that they seek other avenues to raise their complaints.',
+                       'timestamp': 646,
+                       'timestamp_seconds': 646,
+                       'timestamp_label': '[00:10:46]',
+                       'url': 'https://www.youtube.com/watch?v=zF0bNkCTI_Q&t=646s',
+                       'markdown': '[00:10:46](https://www.youtube.com/watch?v=zF0bNkCTI_Q&t=646s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

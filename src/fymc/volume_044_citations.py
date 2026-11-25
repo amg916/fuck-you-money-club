@@ -1,4837 +1,3287 @@
-"""Curated 180-citation Customs Duty Drawback, Tariff Refund & Antitrust Claim Recovery baseline (15 per chapter across Q1-Q12) mined strictly from verified Customs Duty Drawback, Tariff Refund & Antitrust Claim Recovery YouTube transcripts."""
+"""100% verbatim YouTube practitioner citations selected directly by Claude across Chapters Q1-Q12 of Volume 044 (Customs Duty Drawback, Tariff Refund & Antitrust Claim Recovery)."""
 from __future__ import annotations
 
-CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'111',
-     '1313',
-     '1514',
-     '1520',
-     '190',
-     '301',
-     '7501',
-     '7553',
-     '9801',
-     'accelerated',
-     'ace',
-     'action',
-     'administration',
-     'agreement',
-     'amazon',
-     'antidumping',
-     'antitrust',
-     'apparel',
-     'attorney',
-     'audit',
-     'auditing',
-     'auto',
-     'automated',
-     'automating',
-     'avoidance',
-     'b2b',
-     'bill',
-     'binding',
-     'bond',
-     'brands',
-     'business',
-     'client',
-     'clients',
-     'firm',
-     'margin',
-     'market',
-     'model',
-     'niche',
-     'operator',
-     'revenue',
-     'service',
-     'value'},
- 2: {'111',
-     '1313',
-     '1514',
-     '1520',
-     '190',
-     '301',
-     '7501',
-     '7553',
-     '9801',
-     'accelerated',
-     'ace',
-     'action',
-     'administration',
-     'agreement',
-     'amazon',
-     'antidumping',
-     'antitrust',
-     'apparel',
-     'attorney',
-     'audit',
-     'auditing',
-     'auto',
-     'automated',
-     'automating',
-     'avoidance',
-     'b2b',
-     'bill',
-     'binding',
-     'bond',
-     'brands',
-     'budget',
-     'buyer',
-     'contract',
-     'customer',
-     'decision',
-     'escrow',
-     'fee',
-     'fees',
-     'invoice',
-     'pay',
-     'payment',
-     'pays',
-     'retainer'},
- 3: {'111',
-     '1313',
-     '1514',
-     '1520',
-     '190',
-     '301',
-     '7501',
-     '7553',
-     '9801',
-     'accelerated',
-     'ace',
-     'action',
-     'administration',
-     'agreement',
-     'amazon',
-     'antidumping',
-     'antitrust',
-     'apparel',
-     'attorney',
-     'audit',
-     'auditing',
-     'auto',
-     'automated',
-     'automating',
-     'avoidance',
-     'b2b',
-     'bill',
-     'binding',
-     'bond',
-     'brands',
-     'cash',
-     'cashflow',
-     'commission',
-     'cost',
-     'costs',
-     'economics',
-     'margin',
-     'margins',
-     'price',
-     'pricing',
-     'profit',
-     'roi',
-     'unit'},
- 4: {'111',
-     '1313',
-     '1514',
-     '1520',
-     '190',
-     '301',
-     '7501',
-     '7553',
-     '9801',
-     'accelerated',
-     'ace',
-     'action',
-     'administration',
-     'agreement',
-     'amazon',
-     'antidumping',
-     'antitrust',
-     'apparel',
-     'attorney',
-     'audit',
-     'auditing',
-     'auto',
-     'automated',
-     'automating',
-     'avoidance',
-     'b2b',
-     'bill',
-     'binding',
-     'bond',
-     'brands',
-     'budget',
-     'capital',
-     'entity',
-     'insurance',
-     'lean',
-     'license',
-     'llc',
-     'setup',
-     'software',
-     'stack',
-     'startup',
-     'tools'},
- 5: {'111',
-     '1313',
-     '1514',
-     '1520',
-     '190',
-     '301',
-     '7501',
-     '7553',
-     '9801',
-     'accelerated',
-     'ace',
-     'action',
-     'administration',
-     'agreement',
-     'amazon',
-     'antidumping',
-     'antitrust',
-     'apparel',
-     'attorney',
-     'audit',
-     'auditing',
-     'auto',
-     'automated',
-     'automating',
-     'avoid',
-     'avoidance',
-     'b2b',
-     'bill',
-     'binding',
-     'bond',
-     'brands',
-     'clawback',
-     'dispute',
-     'edge',
-     'fail',
-     'mistake',
-     'mistakes',
-     'problem',
-     'risk',
-     'risks',
-     'trap',
-     'traps'},
- 6: {'111',
-     '1313',
-     '1514',
-     '1520',
-     '190',
-     '301',
-     '7501',
-     '7553',
-     '9801',
-     'accelerated',
-     'ace',
-     'action',
-     'administration',
-     'agreement',
-     'amazon',
-     'antidumping',
-     'antitrust',
-     'apparel',
-     'attorney',
-     'audit',
-     'auditing',
-     'auto',
-     'automated',
-     'automating',
-     'avoidance',
-     'b2b',
-     'bill',
-     'binding',
-     'bond',
-     'brands',
-     'client',
-     'data',
-     'deal',
-     'find',
-     'first',
-     'lead',
-     'leads',
-     'list',
-     'outbound',
-     'prospect',
-     'qualify',
-     'search',
-     'sourcing'},
- 7: {'111',
-     '1313',
-     '1514',
-     '1520',
-     '190',
-     '301',
-     '7501',
-     '7553',
-     '9801',
-     'accelerated',
-     'ace',
-     'action',
-     'administration',
-     'agreement',
-     'amazon',
-     'antidumping',
-     'antitrust',
-     'apparel',
-     'attorney',
-     'audit',
-     'auditing',
-     'auto',
-     'automated',
-     'automating',
-     'avoidance',
-     'b2b',
-     'bill',
-     'binding',
-     'bond',
-     'brands',
-     'checklist',
-     'delivery',
-     'execution',
-     'process',
-     'quality',
-     'sop',
-     'step',
-     'steps',
-     'system',
-     'underwriting',
-     'verify',
-     'workflow'},
- 8: {'111',
-     '1313',
-     '1514',
-     '1520',
-     '190',
-     '301',
-     '7501',
-     '7553',
-     '9801',
-     'accelerated',
-     'ace',
-     'action',
-     'administration',
-     'agreement',
-     'amazon',
-     'antidumping',
-     'antitrust',
-     'api',
-     'apparel',
-     'attorney',
-     'audit',
-     'auditing',
-     'auto',
-     'automated',
-     'automating',
-     'avoidance',
-     'b2b',
-     'bill',
-     'binding',
-     'bond',
-     'brands',
-     'crm',
-     'data',
-     'database',
-     'platform',
-     'portal',
-     'scraper',
-     'search',
-     'software',
-     'tool',
-     'tools',
-     'tracking'},
- 9: {'111',
-     '1313',
-     '1514',
-     '1520',
-     '190',
-     '301',
-     '7501',
-     '7553',
-     '9801',
-     'accelerated',
-     'ace',
-     'action',
-     'administration',
-     'agreement',
-     'amazon',
-     'antidumping',
-     'antitrust',
-     'apparel',
-     'attorney',
-     'audit',
-     'auditing',
-     'auto',
-     'automated',
-     'automating',
-     'avoidance',
-     'b2b',
-     'bill',
-     'binding',
-     'bond',
-     'brands',
-     'compliance',
-     'contract',
-     'disclosure',
-     'law',
-     'legal',
-     'license',
-     'outreach',
-     'rules',
-     'script',
-     'state',
-     'terms'},
- 10: {'111',
-      '1313',
-      '1514',
-      '1520',
-      '190',
-      '301',
-      '7501',
-      '7553',
-      '9801',
-      'accelerated',
-      'ace',
-      'action',
-      'administration',
-      'agent',
-      'agreement',
-      'ai',
-      'amazon',
-      'antidumping',
-      'antitrust',
-      'apparel',
-      'attorney',
-      'audit',
-      'auditing',
-      'auto',
-      'automate',
-      'automated',
-      'automating',
-      'automation',
-      'avoidance',
-      'b2b',
-      'bill',
-      'binding',
-      'bond',
-      'brands',
-      'dashboard',
-      'leverage',
-      'pipeline',
-      'scale',
-      'script',
-      'speed',
-      'template',
-      'workflow'},
- 11: {'111',
-      '1313',
-      '1514',
-      '1520',
-      '190',
-      '301',
-      '7501',
-      '7553',
-      '9801',
-      'accelerated',
-      'ace',
-      'action',
-      'administration',
-      'agreement',
-      'amazon',
-      'antidumping',
-      'antitrust',
-      'apparel',
-      'attorney',
-      'audit',
-      'auditing',
-      'auto',
-      'automated',
-      'automating',
-      'avoidance',
-      'b2b',
-      'bill',
-      'binding',
-      'bond',
-      'brands',
-      'contractor',
-      'exit',
-      'hire',
-      'hiring',
-      'kpi',
-      'manager',
-      'operations',
-      'pod',
-      'scale',
-      'scaling',
-      'team',
-      'valuation'},
- 12: {'111',
-      '1313',
-      '1514',
-      '1520',
-      '190',
-      '301',
-      '7501',
-      '7553',
-      '9801',
-      'accelerated',
-      'ace',
-      'action',
-      'administration',
-      'agreement',
-      'amazon',
-      'antidumping',
-      'antitrust',
-      'apparel',
-      'attorney',
-      'audit',
-      'auditing',
-      'auto',
-      'automated',
-      'automating',
-      'avoidance',
-      'b2b',
-      'bill',
-      'binding',
-      'bond',
-      'brands',
-      'day',
-      'days',
-      'launch',
-      'milestone',
-      'month',
-      'plan',
-      'roadmap',
-      'sprint',
-      'start',
-      'thirty',
-      'week'}}
+CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'duty', 'refund', 'fundamentals', 'drawback', 'importers', 'leave', 'unclaimed', 'most'},
+ 2: {'optimization', 'claim', 'documentation', 'refund', 'drawback', 'types', 'execution'},
+ 3: {'tariff', 'claiming', 'gets', 'billion', 'refunds', 'ieepa'},
+ 4: {'traps', 'bond', 'refund', 'liability', 'exposure', 'paths', 'section'},
+ 5: {'reports', 'working', 'refunds', 'corrections', 'portal'},
+ 6: {'duty', 'entries', 'entry', 'summaries', 'challenging', 'decisions'},
+ 7: {'right', 'getting', 'before', 'classification', 'costs', 'code'},
+ 8: {'intelligence', 'first', 'valuation', 'record', 'customs', 'import', 'sale'},
+ 9: {'duty', 'ftzs', 'tariff', 'returned', 'goods', 'engineering', 'structural', 'mitigation'},
+ 10: {'audits', 'compliance', 'penalties', 'without', 'recovering', 'money', 'triggering', 'risk'},
+ 11: {'broker', 'economics', 'attorney', 'power', 'regulation', 'licensing', 'customs'},
+ 12: {'class', 'settlement', 'antitrust', 'recovery', 'action'}}
 
-BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'Trade Risk Guaranty',
-      'channel': 'Trade Risk Guaranty',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:08](https://www.youtube.com/watch?v=PymimTwXXVM&t=308s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'ll get back to you within, typically it's really quick, but within a day with "
-              "your bond query. You don't have to be a current TRG bond client to get that "
-              'information. Um all TRG bond clients can always access your bond information '
-              'through our Eagle Eye ACE bond dashboard.',
-      'timestamp': 308,
-      'timestamp_label': '[00:05:08]',
-      'timestamp_seconds': 308,
-      'tip': "'ll get back to you within, typically it's really quick, but within a day with "
-             "your bond query. You don't have to be a current TRG bond client to get that "
-             'information. Um all TRG bond clients can always access your bond information '
-             'through our Eagle Eye ACE bond dashboard.',
-      'title': "CBP's database Clean Up May Void Your IOR | TRG Talks Trade | EP 13 (Trade "
-               'Risk Guaranty)',
-      'url': 'https://www.youtube.com/watch?v=PymimTwXXVM&t=308s',
-      'video_id': 'PymimTwXXVM'},
-     {'author': 'Ask The Customs Manager',
-      'channel': 'Ask The Customs Manager',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:18](https://www.youtube.com/watch?v=Ze1pOvT4KsI&t=78s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'They impose penalty duties that can range from 50% to over 300% of the '
-              'commercial value of the goods. Imagine buying a container of aluminum parts for '
-              '$50,000 and customs sends you a bill for $150,000 in taxes. It destroys your '
-              'business model instantly.',
-      'timestamp': 78,
-      'timestamp_label': '[00:01:18]',
-      'timestamp_seconds': 78,
-      'tip': 'They impose penalty duties that can range from 50% to over 300% of the '
-             'commercial value of the goods. Imagine buying a container of aluminum parts for '
-             '$50,000 and customs sends you a bill for $150,000 in taxes. It destroys your '
-             'business model instantly.',
-      'title': 'Anti-Dumping Duties (ADD & CVD): The Hidden Customs Trap That Bankrupts '
-               'Importers (Ask The Customs Manager)',
-      'url': 'https://www.youtube.com/watch?v=Ze1pOvT4KsI&t=78s',
-      'video_id': 'Ze1pOvT4KsI'},
-     {'author': 'Scarbrough Global',
-      'channel': 'Scarbrough Global',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:23:39](https://www.youtube.com/watch?v=P1YIRCE3BPQ&t=1419s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Midwest nice and oftent times paid duties on behalf of their clients and then '
-              'turned around and waited to get reimbursed. Now, that has while that was great, '
-              "um not the best business model for a broker at the end of the day. Um it's a "
-              'lot of cash flow.',
-      'timestamp': 1419,
-      'timestamp_label': '[00:23:39]',
-      'timestamp_seconds': 1419,
-      'tip': 'Midwest nice and oftent times paid duties on behalf of their clients and then '
-             'turned around and waited to get reimbursed. Now, that has while that was great, '
-             "um not the best business model for a broker at the end of the day. Um it's a lot "
-             'of cash flow.',
-      'title': "Freight Expectations: CBP's ACE Portal (Scarbrough Global)",
-      'url': 'https://www.youtube.com/watch?v=P1YIRCE3BPQ&t=1419s',
-      'video_id': 'P1YIRCE3BPQ'},
-     {'author': 'Great Lakes Customs Law',
-      'channel': 'Great Lakes Customs Law',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:03](https://www.youtube.com/watch?v=kBvWPMXLLgs&t=303s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Clients so please reach out and ask us any questions you like about the section '
-              '301 status and the availability of refunds to you and your business thank you '
-              'and have a great day.',
-      'timestamp': 303,
-      'timestamp_label': '[00:05:03]',
-      'timestamp_seconds': 303,
-      'tip': 'Clients so please reach out and ask us any questions you like about the section '
-             '301 status and the availability of refunds to you and your business thank you '
-             'and have a great day.',
-      'title': '🆘 Section 301 Duty Refund (China Tariffs) via Protest or Post Summary '
-               'Correction CBP/customs (Great Lakes Customs Law)',
-      'url': 'https://www.youtube.com/watch?v=kBvWPMXLLgs&t=303s',
-      'video_id': 'kBvWPMXLLgs'},
-     {'author': 'CNBC',
-      'channel': 'CNBC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:13:48](https://www.youtube.com/watch?v=KFKpVuWoQLU&t=828s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'But the Trump administration has upended that business model. We are not '
-              'allowed to invert that tariff to our finished product. Now our costs are no '
-              "longer where we thought they'd be. Now we're a lot higher because we're not "
-              'getting the benefit of the FTZ.',
-      'timestamp': 828,
-      'timestamp_label': '[00:13:48]',
-      'timestamp_seconds': 828,
-      'tip': 'But the Trump administration has upended that business model. We are not allowed '
-             'to invert that tariff to our finished product. Now our costs are no longer where '
-             "we thought they'd be. Now we're a lot higher because we're not getting the "
-             'benefit of the FTZ.',
-      'title': 'How U.S. Companies Are Mitigating Trump Tariffs With Foreign Trade Zones '
-               '(CNBC)',
-      'url': 'https://www.youtube.com/watch?v=KFKpVuWoQLU&t=828s',
-      'video_id': 'KFKpVuWoQLU'},
-     {'author': 'Trade Risk Guaranty',
-      'channel': 'Trade Risk Guaranty',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:59](https://www.youtube.com/watch?v=38zRYvMd5Ps&t=59s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Customs broker or a Freight Forwarder. Our business model has us selling '
-              "directly to importers and exporters. And over the past 25 years we've worked "
-              'with over 13,000 companies just like yours to help them grow and save money on '
-              'some of these very niche insurance products.',
-      'timestamp': 59,
-      'timestamp_label': '[00:00:59]',
-      'timestamp_seconds': 59,
-      'tip': 'Customs broker or a Freight Forwarder. Our business model has us selling '
-             "directly to importers and exporters. And over the past 25 years we've worked "
-             'with over 13,000 companies just like yours to help them grow and save money on '
-             'some of these very niche insurance products.',
-      'title': 'Learn the Basics of Antidumping and Countervailing Duties [Full Webinar] '
-               '(Trade Risk Guaranty)',
-      'url': 'https://www.youtube.com/watch?v=38zRYvMd5Ps&t=59s',
-      'video_id': '38zRYvMd5Ps'},
-     {'author': 'Simply Trade Podcast',
-      'channel': 'Simply Trade Podcast',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:06](https://www.youtube.com/watch?v=Q8n9OOAYZ8s&t=486s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So, they really need a custom plan for their business. But, I take it a step '
-              'further with my clients at Global Trade Advisors is I make executable '
-              'documents. That means checklists, Excel files, databases, things that they can '
-              'actually use based on procedures.',
-      'timestamp': 486,
-      'timestamp_label': '[00:08:06]',
-      'timestamp_seconds': 486,
-      'tip': 'So, they really need a custom plan for their business. But, I take it a step '
-             'further with my clients at Global Trade Advisors is I make executable documents. '
-             'That means checklists, Excel files, databases, things that they can actually use '
-             'based on procedures.',
-      'title': 'Customs Ready vs. Audit Ready: There’s a BIG Difference (Simply Trade Podcast)',
-      'url': 'https://www.youtube.com/watch?v=Q8n9OOAYZ8s&t=486s',
-      'video_id': 'Q8n9OOAYZ8s'},
-     {'author': 'CITTA Brokerage',
-      'channel': 'CITTA Brokerage',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:51](https://www.youtube.com/watch?v=fzs6ZIUot2s&t=531s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I want to touch on something that you mentioned earlier. You talked about '
-              "interfacing with your clients existing brokers. So, you're not in competition "
-              "with those other brokers. You're just providing a very targeted service when it "
-              'comes to duty drawback.',
-      'timestamp': 531,
-      'timestamp_label': '[00:08:51]',
-      'timestamp_seconds': 531,
-      'tip': 'I want to touch on something that you mentioned earlier. You talked about '
-             "interfacing with your clients existing brokers. So, you're not in competition "
-             "with those other brokers. You're just providing a very targeted service when it "
-             'comes to duty drawback.',
-      'title': 'What is Duty Drawback? (CITTA Brokerage)',
-      'url': 'https://www.youtube.com/watch?v=fzs6ZIUot2s&t=531s',
-      'video_id': 'fzs6ZIUot2s'},
-     {'author': 'KPMG US',
-      'channel': 'KPMG US',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:25](https://www.youtube.com/watch?v=uQ6wwWd5plE&t=85s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Optimizer recovery and also having the right process so in our drawback service '
-              "line we've actually developed a mock audit process where we're actually going.",
-      'timestamp': 85,
-      'timestamp_label': '[00:01:25]',
-      'timestamp_seconds': 85,
-      'tip': 'Optimizer recovery and also having the right process so in our drawback service '
-             "line we've actually developed a mock audit process where we're actually going.",
-      'title': 'KPMG Trade & Customs – Duty Drawback (KPMG US)',
-      'url': 'https://www.youtube.com/watch?v=uQ6wwWd5plE&t=85s',
-      'video_id': 'uQ6wwWd5plE'},
-     {'author': 'ISF Customs Broker',
+BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'ISF Customs Broker',
       'channel': 'ISF Customs Broker',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:45](https://www.youtube.com/watch?v=eBt-U9nEjH0&t=105s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q1 operational '
-                   'verification).',
+      'markdown': '[00:00:57](https://www.youtube.com/watch?v=eBt-U9nEjH0&t=57s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "A consultant if needed and take a step towards reclaiming what's rightfully "
-              'yours remember in the realm of international trade every detail matters and '
-              'every saving counts thank you for watching Empower your business venture with '
-              'knowledge and let the journey to savings.',
-      'timestamp': 105,
-      'timestamp_label': '[00:01:45]',
-      'timestamp_seconds': 105,
-      'tip': "A consultant if needed and take a step towards reclaiming what's rightfully "
-             'yours remember in the realm of international trade every detail matters and '
-             'every saving counts thank you for watching Empower your business venture with '
-             'knowledge and let the journey to savings.',
-      'title': 'Maximizing Returns: Mastering the USA Import Duty Drawback Process (ISF '
-               'Customs Broker)',
-      'url': 'https://www.youtube.com/watch?v=eBt-U9nEjH0&t=105s',
+      'text': 'The key lies in meticulous recordkeeping, understanding applicable goods and '
+              'meeting the regulatory deadlines.',
+      'timestamp': 57,
+      'timestamp_label': '[00:00:57]',
+      'timestamp_seconds': 57,
+      'tip': 'The key lies in meticulous recordkeeping, understanding applicable goods and meeting '
+             'the regulatory deadlines.',
+      'title': 'Maximizing Returns: Mastering the USA Import Duty Drawback Process',
+      'url': 'https://www.youtube.com/watch?v=eBt-U9nEjH0&t=57s',
       'video_id': 'eBt-U9nEjH0'},
-     {'author': 'CH Powell Company',
-      'channel': 'CH Powell Company',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:49](https://www.youtube.com/watch?v=6WwWug6ygqQ&t=109s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Old remote location filing and it's really centralizing um how Brokers can can "
-              "do business under a national permit so it's it's it's a very very well received "
-              'moving to this National permit.',
-      'timestamp': 109,
-      'timestamp_label': '[00:01:49]',
-      'timestamp_seconds': 109,
-      'tip': "Old remote location filing and it's really centralizing um how Brokers can can "
-             "do business under a national permit so it's it's it's a very very well received "
-             'moving to this National permit.',
-      'title': 'Customs Broker Modernization Regulations (CH Powell Company)',
-      'url': 'https://www.youtube.com/watch?v=6WwWug6ygqQ&t=109s',
-      'video_id': '6WwWug6ygqQ'},
-     {'author': 'NCBFAA Educational Institute',
-      'channel': 'NCBFAA Educational Institute',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:35:38](https://www.youtube.com/watch?v=CGsvr1SDN8s&t=2138s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Importing what their business practices are so you don't get um associated with "
-              'a uh potential like violative situa violative um enforcement.',
-      'timestamp': 2138,
-      'timestamp_label': '[00:35:38]',
-      'timestamp_seconds': 2138,
-      'tip': "Importing what their business practices are so you don't get um associated with "
-             'a uh potential like violative situa violative um enforcement.',
-      'title': 'Best Practices for Anti Dumping and Countervailing Duty AD CVD (NCBFAA '
-               'Educational Institute)',
-      'url': 'https://www.youtube.com/watch?v=CGsvr1SDN8s&t=2138s',
-      'video_id': 'CGsvr1SDN8s'},
-     {'author': 'Star USA, Inc.',
-      'channel': 'Star USA, Inc.',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:12:53](https://www.youtube.com/watch?v=NK99CBNOeJA&t=773s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'They do not have to be the same value on the import and the export and they but '
-              'they get counted against each other in quantity so if you imported five items '
-              'and you exported six items you would only claim drawback on the five that you '
-              'imported.',
-      'timestamp': 773,
-      'timestamp_label': '[00:12:53]',
-      'timestamp_seconds': 773,
-      'tip': 'They do not have to be the same value on the import and the export and they but '
-             'they get counted against each other in quantity so if you imported five items '
-             'and you exported six items you would only claim drawback on the five that you '
-             'imported.',
-      'title': 'Drawback - Opportunities, Requirements, & Insights (Star USA, Inc.)',
-      'url': 'https://www.youtube.com/watch?v=NK99CBNOeJA&t=773s',
-      'video_id': 'NK99CBNOeJA'},
-     {'author': 'U.S. Customs and Border Protection',
-      'channel': 'U.S. Customs and Border Protection',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:22](https://www.youtube.com/watch?v=lGkujBtNI0A&t=22s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Open protests that meaning uh in open or suspen suspended status uh in our '
-              'protest module so again well over 100 000 protests currently with cbp in an '
-              'open status.',
-      'timestamp': 22,
-      'timestamp_label': '[00:00:22]',
-      'timestamp_seconds': 22,
-      'tip': 'Open protests that meaning uh in open or suspen suspended status uh in our '
-             'protest module so again well over 100 000 protests currently with cbp in an open '
-             'status.',
-      'title': 'CBP Protest Webinar (U.S. Customs and Border Protection)',
-      'url': 'https://www.youtube.com/watch?v=lGkujBtNI0A&t=22s',
-      'video_id': 'lGkujBtNI0A'},
-     {'author': 'VoraPrep',
-      'channel': 'VoraPrep',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:48](https://www.youtube.com/watch?v=2rbdaN1Swhk&t=288s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "You go into ACE, you populate the CBP Form 7501 with the importer's info, the "
-              'HTS code, the value of $2,000, the origin of China, and you calculate the duty '
-              'based on the rate for that specific code.',
-      'timestamp': 288,
-      'timestamp_label': '[00:04:48]',
-      'timestamp_seconds': 288,
-      'tip': "You go into ACE, you populate the CBP Form 7501 with the importer's info, the "
-             'HTS code, the value of $2,000, the origin of China, and you calculate the duty '
-             'based on the rate for that specific code.',
-      'title': '[CBLE] CBLE1: Entry Summary Documentation and Data Elements (CBP Form 7501) '
-               '(VoraPrep)',
-      'url': 'https://www.youtube.com/watch?v=2rbdaN1Swhk&t=288s',
-      'video_id': '2rbdaN1Swhk'}],
- 2: [{'author': 'Quantum Leap with Coach Toyin',
-      'channel': 'Quantum Leap with Coach Toyin',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:38](https://www.youtube.com/watch?v=595qylDVQzM&t=158s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Documents such as a customs bond which is a contract between customs and an '
-              'importer for any given import transaction to guarantee payment of import duties '
-              'taxes and fees to the u.s.',
-      'timestamp': 158,
-      'timestamp_label': '[00:02:38]',
-      'timestamp_seconds': 158,
-      'tip': 'Documents such as a customs bond which is a contract between customs and an '
-             'importer for any given import transaction to guarantee payment of import duties '
-             'taxes and fees to the u.s.',
-      'title': 'U.S. Import Process by Customs and Border Protection - CBP (Quantum Leap with '
-               'Coach Toyin)',
-      'url': 'https://www.youtube.com/watch?v=595qylDVQzM&t=158s',
-      'video_id': '595qylDVQzM'},
-     {'author': 'Horty Springer & Mattern, P.C.',
-      'channel': 'Horty Springer & Mattern, P.C.',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:41](https://www.youtube.com/watch?v=jgkO88qEcMs&t=461s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "On the other hand, it's in our opinion pretty much found money because if you "
-              "opted out, you're going to have to pay for attorney's fees to pursue Blue "
-              'Cross. You might be more successful in the end.',
-      'timestamp': 461,
-      'timestamp_label': '[00:07:41]',
-      'timestamp_seconds': 461,
-      'tip': "On the other hand, it's in our opinion pretty much found money because if you "
-             "opted out, you're going to have to pay for attorney's fees to pursue Blue Cross. "
-             'You might be more successful in the end.',
-      'title': 'The Blue Cross Antitrust Class Action Settlement: Show Me the Money (Horty '
-               'Springer & Mattern, P.C.)',
-      'url': 'https://www.youtube.com/watch?v=jgkO88qEcMs&t=461s',
-      'video_id': 'jgkO88qEcMs'},
-     {'author': 'Star USA, Inc.',
-      'channel': 'Star USA, Inc.',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:36](https://www.youtube.com/watch?v=kmZ2NsZtdPA&t=516s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "December 19th and you'll find that in 111.96 the exam fee remains 390 a lot of "
-              "brokerages are going to see their annual fees go down because they're only "
-              'paying.',
-      'timestamp': 516,
-      'timestamp_label': '[00:08:36]',
-      'timestamp_seconds': 516,
-      'tip': "December 19th and you'll find that in 111.96 the exam fee remains 390 a lot of "
-             "brokerages are going to see their annual fees go down because they're only "
-             'paying.',
-      'title': 'Modernized Customs Broker Regulations (Star USA, Inc.)',
-      'url': 'https://www.youtube.com/watch?v=kmZ2NsZtdPA&t=516s',
-      'video_id': 'kmZ2NsZtdPA'},
-     {'author': 'Receipts',
-      'channel': 'Receipts',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:53](https://www.youtube.com/watch?v=UvphNI0Wxog&t=353s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "You paid a fee there that your bank didn't fully pay you back for. That's "
-              'almost 19 years of gas station withdrawals. If your bank refunds every ATM fee, '
-              "those don't count. For scale, 167 and a half million dollars is about 52 "
-              "million ATM fees at today's average by our math.",
-      'timestamp': 353,
-      'timestamp_label': '[00:05:53]',
-      'timestamp_seconds': 353,
-      'tip': "You paid a fee there that your bank didn't fully pay you back for. That's almost "
-             '19 years of gas station withdrawals. If your bank refunds every ATM fee, those '
-             "don't count. For scale, 167 and a half million dollars is about 52 million ATM "
-             "fees at today's average by our math.",
-      'title': 'Paid an ATM Fee? Visa and Mastercard Will Pay (Receipts)',
-      'url': 'https://www.youtube.com/watch?v=UvphNI0Wxog&t=353s',
-      'video_id': 'UvphNI0Wxog'},
-     {'author': 'News4JAX The Local Station',
-      'channel': 'News4JAX The Local Station',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:50](https://www.youtube.com/watch?v=kOG09tYsDhM&t=50s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'PAY SOMETHING IN A CLASS ACTION, THAT’S A SCAM. REAL CLASS ACTION, THAT’S A '
-              'SCAM. REAL CLASS ACTION CLAIMS DO NOT REQUIRE RULE NUMBER ONE. REAL CLASS '
-              'ACTION CLAIMS DO NOT REQUIRE AN UPFRONT FEE. ACTION CLAIMS DO NOT REQUIRE AN '
-              'UPFRONT FEE.',
-      'timestamp': 50,
-      'timestamp_label': '[00:00:50]',
-      'timestamp_seconds': 50,
-      'tip': 'PAY SOMETHING IN A CLASS ACTION, THAT’S A SCAM. REAL CLASS ACTION, THAT’S A '
-             'SCAM. REAL CLASS ACTION CLAIMS DO NOT REQUIRE RULE NUMBER ONE. REAL CLASS ACTION '
-             'CLAIMS DO NOT REQUIRE AN UPFRONT FEE. ACTION CLAIMS DO NOT REQUIRE AN UPFRONT '
-             'FEE.',
-      'title': 'Consumer Alert: How to tell a legit class action settlement notice from a scam '
-               '(News4JAX The Local Station)',
-      'url': 'https://www.youtube.com/watch?v=kOG09tYsDhM&t=50s',
-      'video_id': 'kOG09tYsDhM'},
-     {'author': 'Trade Risk Guaranty',
-      'channel': 'Trade Risk Guaranty',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:50](https://www.youtube.com/watch?v=P-dHB1oQLCI&t=110s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'If the principle of the bond is unable or unwilling to pay these duties, taxes, '
-              'and fees the bond ensures the surety that wrote the bond will pay up to the '
-              'bond amount to CBP on behalf of the principle.',
-      'timestamp': 110,
-      'timestamp_label': '[00:01:50]',
-      'timestamp_seconds': 110,
-      'tip': 'If the principle of the bond is unable or unwilling to pay these duties, taxes, '
-             'and fees the bond ensures the surety that wrote the bond will pay up to the bond '
-             'amount to CBP on behalf of the principle.',
-      'title': 'What is a U.S. Customs Import Bond? (Trade Risk Guaranty)',
-      'url': 'https://www.youtube.com/watch?v=P-dHB1oQLCI&t=110s',
-      'video_id': 'P-dHB1oQLCI'},
-     {'author': 'Ask The Customs Manager',
-      'channel': 'Ask The Customs Manager',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:45](https://www.youtube.com/watch?v=DHSVYPVM3bA&t=105s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Other agency approvals. Not every broker charges compliance fees separately. '
-              'Some build it into the entry fee. continuous bond  $400 to5 to $500 per year.',
-      'timestamp': 105,
-      'timestamp_label': '[00:01:45]',
-      'timestamp_seconds': 105,
-      'tip': 'Other agency approvals. Not every broker charges compliance fees separately. '
-             'Some build it into the entry fee. continuous bond  $400 to5 to $500 per year.',
-      'title': 'Customs Broker Fees EXPOSED The TRUTH About Import Costs (Ask The Customs '
-               'Manager)',
-      'url': 'https://www.youtube.com/watch?v=DHSVYPVM3bA&t=105s',
-      'video_id': 'DHSVYPVM3bA'},
-     {'author': 'Imports Academy',
-      'channel': 'Imports Academy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:17](https://www.youtube.com/watch?v=lrbVg-_LnTI&t=197s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Fees become familiar with the CBP 7501 form if you have not had much real-world '
-              'experience with this form it can be a little messy to understand.',
-      'timestamp': 197,
-      'timestamp_label': '[00:03:17]',
-      'timestamp_seconds': 197,
-      'tip': 'Fees become familiar with the CBP 7501 form if you have not had much real-world '
-             'experience with this form it can be a little messy to understand.',
-      'title': '7 Tips for the US Customs Broker Exam (Imports Academy)',
-      'url': 'https://www.youtube.com/watch?v=lrbVg-_LnTI&t=197s',
-      'video_id': 'lrbVg-_LnTI'},
-     {'author': 'Law Office of Yuri Starikov, LLC',
-      'channel': 'Law Office of Yuri Starikov, LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=X9jTs5vL-ZM&t=20s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'We are ready to roll and topic of today would be the duty duty drawback. So, '
-              'what about duty drawback in general? Uh the concept is very very simple. And '
-              'once you bring in and you pay your duty, taxes, fees, etc.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': 'We are ready to roll and topic of today would be the duty duty drawback. So, '
-             'what about duty drawback in general? Uh the concept is very very simple. And '
-             'once you bring in and you pay your duty, taxes, fees, etc.',
-      'title': 'Duty Drawback Part 1 (Oct. 2017 CBLE Class) (Law Office of Yuri Starikov, LLC)',
-      'url': 'https://www.youtube.com/watch?v=X9jTs5vL-ZM&t=20s',
-      'video_id': 'X9jTs5vL-ZM'},
-     {'author': 'Braumiller Law Group, PLLC',
-      'channel': 'Braumiller Law Group, PLLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:56](https://www.youtube.com/watch?v=9rfRsbrSbPw&t=416s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Other words if you're a customer's broker and you got a bunch of employees out "
-              'there doing entries and that kind of stuff.',
-      'timestamp': 416,
-      'timestamp_label': '[00:06:56]',
-      'timestamp_seconds': 416,
-      'tip': "Other words if you're a customer's broker and you got a bunch of employees out "
-             'there doing entries and that kind of stuff.',
-      'title': 'Hot Topics In International Trade: Customs Broker Modernization Regulations 19 '
-               'CFR 111 (Braumiller Law Group, PLLC)',
-      'url': 'https://www.youtube.com/watch?v=9rfRsbrSbPw&t=416s',
-      'video_id': '9rfRsbrSbPw'},
-     {'author': 'International Trade Administration',
-      'channel': 'International Trade Administration',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:51](https://www.youtube.com/watch?v=F9HNfhO6S9U&t=51s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'What are the benefits of conducting your business in an FTZ? There are plenty '
-              "of benefits! First, when you bring components into your FTZ, you don't have to "
-              'pay U. FTZ approval can also allow streamlined customs procedures.',
-      'timestamp': 51,
-      'timestamp_label': '[00:00:51]',
-      'timestamp_seconds': 51,
-      'tip': 'What are the benefits of conducting your business in an FTZ? There are plenty of '
-             "benefits! First, when you bring components into your FTZ, you don't have to pay "
-             'U. FTZ approval can also allow streamlined customs procedures.',
-      'title': 'Introduction to Foreign Trade Zones (International Trade Administration)',
-      'url': 'https://www.youtube.com/watch?v=F9HNfhO6S9U&t=51s',
-      'video_id': 'F9HNfhO6S9U'},
-     {'author': 'engage fi',
-      'channel': 'engage fi',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:02](https://www.youtube.com/watch?v=PVmbAAdWXfg&t=122s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "That's why Engage FI is here to help. The payment game has changed and let's "
-              "make sure that we're ready to play it differently.",
-      'timestamp': 122,
-      'timestamp_label': '[00:02:02]',
-      'timestamp_seconds': 122,
-      'tip': "That's why Engage FI is here to help. The payment game has changed and let's "
-             "make sure that we're ready to play it differently.",
-      'title': 'The Visa–Mastercard Interchange Settlement: What It Means for Payments (engage '
-               'fi)',
-      'url': 'https://www.youtube.com/watch?v=PVmbAAdWXfg&t=122s',
-      'video_id': 'PVmbAAdWXfg'},
-     {'author': 'Scarbrough Global',
-      'channel': 'Scarbrough Global',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:55](https://www.youtube.com/watch?v=Cif7o8T-mG4&t=115s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'On any of your products you can set up this program now to mitigate the effects '
-              "of any to 32 or 301 duties and then when they go away you'll still be "
-              'realizing.',
-      'timestamp': 115,
-      'timestamp_label': '[00:01:55]',
-      'timestamp_seconds': 115,
-      'tip': 'On any of your products you can set up this program now to mitigate the effects '
-             "of any to 32 or 301 duties and then when they go away you'll still be realizing.",
-      'title': 'First Sale Rule – U.S. Customs and Imports (Scarbrough Global)',
-      'url': 'https://www.youtube.com/watch?v=Cif7o8T-mG4&t=115s',
-      'video_id': 'Cif7o8T-mG4'},
-     {'author': 'GlobalTech Infosystems',
-      'channel': 'GlobalTech Infosystems',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=wUiK6YAEFs8&t=15s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'जरूरी और ऑनेस्टली काफी मुनाफे वाले कांसेप्ट पर बात करने वाले हैं। यूएस कस्टम्स '
-              'ड्यूटी ड्रॉबैक। हम इसके पूरे वर्क फ्लो और रिफंड्स क्लेम करने की.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'जरूरी और ऑनेस्टली काफी मुनाफे वाले कांसेप्ट पर बात करने वाले हैं। यूएस कस्टम्स '
-             'ड्यूटी ड्रॉबैक। हम इसके पूरे वर्क फ्लो और रिफंड्स क्लेम करने की.',
-      'title': 'USA Customs Duty Drawback 🇺🇸 | Import Duty Refund After Export | Complete '
-               'Practical Guide in Hindi (GlobalTech Infosystems)',
-      'url': 'https://www.youtube.com/watch?v=wUiK6YAEFs8&t=15s',
-      'video_id': 'wUiK6YAEFs8'},
-     {'author': 'Commercial Funding Marketplace',
-      'channel': 'Commercial Funding Marketplace',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:39](https://www.youtube.com/watch?v=LaWXf8aLv1o&t=279s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s official system for this stuff, the automated commercial environment. For a "
-              "buyer, this report is the one and only source of truth. It's what they use to "
-              'confirm every single tariff payment you made. Any other reports you have have '
-              'to match this government data exactly.',
-      'timestamp': 279,
-      'timestamp_label': '[00:04:39]',
-      'timestamp_seconds': 279,
-      'tip': "'s official system for this stuff, the automated commercial environment. For a "
-             "buyer, this report is the one and only source of truth. It's what they use to "
-             'confirm every single tariff payment you made. Any other reports you have have to '
-             'match this government data exactly.',
-      'title': 'IEEPA Tariff Refund Buyout: The Process (Commercial Funding Marketplace)',
-      'url': 'https://www.youtube.com/watch?v=LaWXf8aLv1o&t=279s',
-      'video_id': 'LaWXf8aLv1o'}],
- 3: [{'author': "Finn's Fine Print",
-      'channel': "Finn's Fine Print",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:23](https://www.youtube.com/watch?v=Pf2fDVQXfmk&t=203s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So does the refund at least show up as a price cut somewhere? In the filings, '
-              'it shows up as lower costs, and lower costs mean higher profit. The importer '
-              'paid the bill, so the refund goes back to the importer. The system just never '
-              'asks who paid the importer.',
-      'timestamp': 203,
-      'timestamp_label': '[00:03:23]',
-      'timestamp_seconds': 203,
-      'tip': 'So does the refund at least show up as a price cut somewhere? In the filings, it '
-             'shows up as lower costs, and lower costs mean higher profit. The importer paid '
-             'the bill, so the refund goes back to the importer. The system just never asks '
-             'who paid the importer.',
-      'title': "You Paid the Tariffs. Target Just Got the Refund. (Finn's Fine Print)",
-      'url': 'https://www.youtube.com/watch?v=Pf2fDVQXfmk&t=203s',
-      'video_id': 'Pf2fDVQXfmk'},
-     {'author': 'USA Customs Clearance',
-      'channel': 'USA Customs Clearance',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:54](https://www.youtube.com/watch?v=khfmXSwD3DE&t=294s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "If you've been absorbing section 301 costs on China origin imports, don't "
-              'simply write them off. A properly executed duty drawback can put real money '
-              'back into your business and improve your cost structure without having to '
-              'change your supply chain.',
-      'timestamp': 294,
-      'timestamp_label': '[00:04:54]',
-      'timestamp_seconds': 294,
-      'tip': "If you've been absorbing section 301 costs on China origin imports, don't simply "
-             'write them off. A properly executed duty drawback can put real money back into '
-             'your business and improve your cost structure without having to change your '
-             'supply chain.',
-      'title': 'Section 301 Duty Drawback Explained (USA Customs Clearance)',
-      'url': 'https://www.youtube.com/watch?v=khfmXSwD3DE&t=294s',
-      'video_id': 'khfmXSwD3DE'},
-     {'author': 'Flexport',
-      'channel': 'Flexport',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:34](https://www.youtube.com/watch?v=yR_RXKhapxo&t=634s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'An invoice price of $100 per unit the duties owed uh per unit now becomes $30 '
-              'so or $6 per unit uh cost of of good so you can quickly see that if you take.',
-      'timestamp': 634,
-      'timestamp_label': '[00:10:34]',
-      'timestamp_seconds': 634,
-      'tip': 'An invoice price of $100 per unit the duties owed uh per unit now becomes $30 so '
-             'or $6 per unit uh cost of of good so you can quickly see that if you take.',
-      'title': 'Flexport Customs: Mastering the First Sale Rule (Flexport)',
-      'url': 'https://www.youtube.com/watch?v=yR_RXKhapxo&t=634s',
-      'video_id': 'yR_RXKhapxo'},
-     {'author': 'Ask The Customs Manager',
-      'channel': 'Ask The Customs Manager',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:52](https://www.youtube.com/watch?v=5fk-EKpR8Zw&t=52s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The factory ships the goods, they arrive at your border, and your broker '
-              'declares the value at $10. You pay your import duty on that $10 price. But '
-              'think about what just happened. 3 of that invoice is simply the trading '
-              "company's profit margin.",
-      'timestamp': 52,
-      'timestamp_label': '[00:00:52]',
-      'timestamp_seconds': 52,
-      'tip': 'The factory ships the goods, they arrive at your border, and your broker '
-             'declares the value at $10. You pay your import duty on that $10 price. But think '
-             "about what just happened. 3 of that invoice is simply the trading company's "
-             'profit margin.',
-      'title': 'Save Thousands on Import Duties With This Strategy (Ask The Customs Manager)',
-      'url': 'https://www.youtube.com/watch?v=5fk-EKpR8Zw&t=52s',
-      'video_id': '5fk-EKpR8Zw'},
      {'author': 'Evana',
       'channel': 'Evana',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:37](https://www.youtube.com/watch?v=1m5HmGyCEvw&t=37s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q3 operational '
-                   'verification).',
+      'markdown': '[00:03:06](https://www.youtube.com/watch?v=6bp1bi4-zH4&t=186s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "The duty was still paid on that entry. It's simply buried in the price that the "
-              "buyer actually paid. The question is who's on the 7501 and whether you can "
-              'actually get their cooperation.',
-      'timestamp': 37,
-      'timestamp_label': '[00:00:37]',
-      'timestamp_seconds': 37,
-      'tip': "The duty was still paid on that entry. It's simply buried in the price that the "
-             "buyer actually paid. The question is who's on the 7501 and whether you can "
-             'actually get their cooperation.',
-      'title': '6 Hidden Duty Refunds Most Importers Miss (Evana)',
-      'url': 'https://www.youtube.com/watch?v=1m5HmGyCEvw&t=37s',
-      'video_id': '1m5HmGyCEvw'},
+      'text': 'Without accelerated payment privileges with Customs, you have to wait for that '
+              'claim to liquidate, which can take up to a year to actually get paid.',
+      'timestamp': 186,
+      'timestamp_label': '[00:03:06]',
+      'timestamp_seconds': 186,
+      'tip': 'With the accelerated program and proper bonds in place, you can actually get your '
+             'refund within four to six weeks after submitting a drawback claim.',
+      'title': 'What Is Duty Drawback? Get Up to 99% of Your Import Duties Back (Explained)',
+      'url': 'https://www.youtube.com/watch?v=6bp1bi4-zH4&t=186s',
+      'video_id': '6bp1bi4-zH4'},
+     {'author': 'Ask The Customs Manager',
+      'channel': 'Ask The Customs Manager',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:07](https://www.youtube.com/watch?v=Pso0Iq3i3Xk&t=307s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'While the idea is simple, the execution is meticulous. One tiny mistake on your '
+              'paperwork can get your whole claim thrown out.',
+      'timestamp': 307,
+      'timestamp_label': '[00:05:07]',
+      'timestamp_seconds': 307,
+      'tip': 'Do not try to do this on your own, especially not the first time.',
+      'title': 'Duty Drawback Explained | How to Claim a 99% Refund on Customs Duties',
+      'url': 'https://www.youtube.com/watch?v=Pso0Iq3i3Xk&t=307s',
+      'video_id': 'Pso0Iq3i3Xk'},
+     {'author': 'International Trade Council',
+      'channel': 'International Trade Council',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:43:11](https://www.youtube.com/watch?v=O5a8FOALaXk&t=2591s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'We rarely see full blown audits; normally they are conducting spot checks or what '
+              'are called desk reviews, and typically companies get caught up on proof of '
+              'exportation.',
+      'timestamp': 2591,
+      'timestamp_label': '[00:43:11]',
+      'timestamp_seconds': 2591,
+      'tip': 'During the assessment we ask whether you control your export transactions, because '
+             'there can be different buckets of risk on the export side depending on your terms of '
+             'sale.',
+      'title': 'WEBINAR: Duty Drawback 101 - Receiving refunds on import duties',
+      'url': 'https://www.youtube.com/watch?v=O5a8FOALaXk&t=2591s',
+      'video_id': 'O5a8FOALaXk'},
+     {'author': 'International Trade Council',
+      'channel': 'International Trade Council',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:59:22](https://www.youtube.com/watch?v=O5a8FOALaXk&t=3562s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'The vast majority of providers operate on a percentage of the recovery, and 10 '
+              'percent is probably a good starting point.',
+      'timestamp': 3562,
+      'timestamp_label': '[00:59:22]',
+      'timestamp_seconds': 3562,
+      'tip': 'The higher the recovery, the lower the fee structure.',
+      'title': 'WEBINAR: Duty Drawback 101 - Receiving refunds on import duties',
+      'url': 'https://www.youtube.com/watch?v=O5a8FOALaXk&t=3562s',
+      'video_id': 'O5a8FOALaXk'},
+     {'author': 'USA Customs Clearance',
+      'channel': 'USA Customs Clearance',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:18](https://www.youtube.com/watch?v=QX8vx-rrO4A&t=258s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "Once you establish a history of error-free claims you'll become eligible for the "
+              "accelerated payment privilege, and until you get to that point it's typical for "
+              'refunds to take one or two years.',
+      'timestamp': 258,
+      'timestamp_label': '[00:04:18]',
+      'timestamp_seconds': 258,
+      'tip': 'By providing a bond to protect against potential overpayment, claimants can receive '
+             'their refund within as little as 4 to 6 weeks.',
+      'title': 'How to Get Cash Refunds Through Duty Drawbacks',
+      'url': 'https://www.youtube.com/watch?v=QX8vx-rrO4A&t=258s',
+      'video_id': 'QX8vx-rrO4A'},
+     {'author': 'Scarbrough Global',
+      'channel': 'Scarbrough Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:06](https://www.youtube.com/watch?v=VcD4-UlsOzk&t=186s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "Where we see a lot of people start to miss on this is they're not really looking to "
+              'tie the import record back out to the export record.',
+      'timestamp': 186,
+      'timestamp_label': '[00:03:06]',
+      'timestamp_seconds': 186,
+      'tip': "They're just saying I know I imported this product some time last year, I don't even "
+             'necessarily know what entry it came in on, and now I exported it.',
+      'title': 'When is Duty Drawback beneficial?  Recover U.S. Customs duty',
+      'url': 'https://www.youtube.com/watch?v=VcD4-UlsOzk&t=186s',
+      'video_id': 'VcD4-UlsOzk'},
+     {'author': 'Gallagher Transport International Inc.',
+      'channel': 'Gallagher Transport International Inc.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:22](https://www.youtube.com/watch?v=k2CbBPEtqNI&t=82s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'The process requires detailed documentation including import and export dates, '
+              'product descriptions, and tariff classification numbers.',
+      'timestamp': 82,
+      'timestamp_label': '[00:01:22]',
+      'timestamp_seconds': 82,
+      'tip': 'You have 5 years from the import date to submit your claim.',
+      'title': 'Understanding Duty Drawback: Recover Duties & Reduce Trade Costs',
+      'url': 'https://www.youtube.com/watch?v=k2CbBPEtqNI&t=82s',
+      'video_id': 'k2CbBPEtqNI'},
      {'author': 'Connecticut District Export Council',
       'channel': 'Connecticut District Export Council',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:24:00](https://www.youtube.com/watch?v=bOFLeOBOaF0&t=1440s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q3 operational '
-                   'verification).',
+      'markdown': '[00:52:42](https://www.youtube.com/watch?v=bOFLeOBOaF0&t=3162s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Compare that value to the unit cost of the component used in the manufacturing '
-              "process, and use the value that is lesser in the drawback claim. Again, ITM's "
-              'drawback software determines which is lesser of the two. Now, there are some '
-              'limitations with NAFTA.',
-      'timestamp': 1440,
-      'timestamp_label': '[00:24:00]',
-      'timestamp_seconds': 1440,
-      'tip': 'Compare that value to the unit cost of the component used in the manufacturing '
-             "process, and use the value that is lesser in the drawback claim. Again, ITM's "
-             'drawback software determines which is lesser of the two. Now, there are some '
-             'limitations with NAFTA.',
-      'title': 'Duty Drawback (Connecticut District Export Council)',
-      'url': 'https://www.youtube.com/watch?v=bOFLeOBOaF0&t=1440s',
+      'text': "After 30 years it's not simple, and our rule of thumb is if you can get back 20 to "
+              "40,000 dollars in drawback, it's probably worth looking into.",
+      'timestamp': 3162,
+      'timestamp_label': '[00:52:42]',
+      'timestamp_seconds': 3162,
+      'tip': "If your program is a couple thousand dollars or even less than that, it's probably "
+             'not worth the hassle to pursue it.',
+      'title': 'Duty Drawback',
+      'url': 'https://www.youtube.com/watch?v=bOFLeOBOaF0&t=3162s',
       'video_id': 'bOFLeOBOaF0'},
-     {'author': 'Casually Capital',
-      'channel': 'Casually Capital',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:54](https://www.youtube.com/watch?v=yHFIXvO5siM&t=114s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Translation, the refund follows the Customs form. The cost followed the supply '
-              "chain. Those are not the same trail. And wherever there's a gap between who's "
-              'owed money and who needs cash today, somebody builds a market.',
-      'timestamp': 114,
-      'timestamp_label': '[00:01:54]',
-      'timestamp_seconds': 114,
-      'tip': 'Translation, the refund follows the Customs form. The cost followed the supply '
-             "chain. Those are not the same trail. And wherever there's a gap between who's "
-             'owed money and who needs cash today, somebody builds a market.',
-      'title': 'Who Actually Gets The $126 Billion Tariff Refund? (Casually Capital)',
-      'url': 'https://www.youtube.com/watch?v=yHFIXvO5siM&t=114s',
-      'video_id': 'yHFIXvO5siM'},
      {'author': 'Law Office of Yuri Starikov, LLC',
       'channel': 'Law Office of Yuri Starikov, LLC',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[01:55:56](https://www.youtube.com/watch?v=1DFXItS5lCQ&t=6956s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q3 operational '
-                   'verification).',
+      'markdown': '[00:03:13](https://www.youtube.com/watch?v=X9jTs5vL-ZM&t=193s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'You must know what this uh number represents and one of the things they test '
-              "unit is they give you the Visa number and ask you what's the country of origin "
-              "so let's go back this is a vis number right.",
-      'timestamp': 6956,
-      'timestamp_label': '[01:55:56]',
-      'timestamp_seconds': 6956,
-      'tip': 'You must know what this uh number represents and one of the things they test '
-             "unit is they give you the Visa number and ask you what's the country of origin "
-             "so let's go back this is a vis number right.",
-      'title': 'CBP Form 7501 Discussion (Law Office of Yuri Starikov, LLC)',
-      'url': 'https://www.youtube.com/watch?v=1DFXItS5lCQ&t=6956s',
-      'video_id': '1DFXItS5lCQ'},
-     {'author': 'Steve Fodor',
-      'channel': 'Steve Fodor',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:45](https://www.youtube.com/watch?v=NXnGUZwargM&t=345s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Duty checks this form was designed a number of years ago and since that time '
-              'many importers are paying their duties directly to u. ACH debit system and we '
-              "can help you set that up it's a cost free way of making sure your payments that "
-              'are owed to US Customs get into u.',
-      'timestamp': 345,
-      'timestamp_label': '[00:05:45]',
-      'timestamp_seconds': 345,
-      'tip': 'Duty checks this form was designed a number of years ago and since that time '
-             'many importers are paying their duties directly to u. ACH debit system and we '
-             "can help you set that up it's a cost free way of making sure your payments that "
-             'are owed to US Customs get into u.',
-      'title': 'The Customs  Power of Attorney (Steve Fodor)',
-      'url': 'https://www.youtube.com/watch?v=NXnGUZwargM&t=345s',
-      'video_id': 'NXnGUZwargM'},
-     {'author': 'CustomsDeclarationsUK',
-      'channel': 'CustomsDeclarationsUK',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:01](https://www.youtube.com/watch?v=6Fco88JHSNg&t=61s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Transaction value refers to the price paid or payable for the products sold for '
-              'export to the uk this principle way of determining transaction value accounts '
-              'for approximately 90 of transactions in the uk.',
-      'timestamp': 61,
-      'timestamp_label': '[00:01:01]',
-      'timestamp_seconds': 61,
-      'tip': 'Transaction value refers to the price paid or payable for the products sold for '
-             'export to the uk this principle way of determining transaction value accounts '
-             'for approximately 90 of transactions in the uk.',
-      'title': 'A Quick Guide to Customs Valuation Methods to Determine the Value of Goods | '
-               'Customs-Declarations.uk (CustomsDeclarationsUK)',
-      'url': 'https://www.youtube.com/watch?v=6Fco88JHSNg&t=61s',
-      'video_id': '6Fco88JHSNg'},
+      'text': 'There is old rules, and then there is new rules, and it has been the position of '
+              'customs to test you on the old rules while the new rules are being in effect.',
+      'timestamp': 193,
+      'timestamp_label': '[00:03:13]',
+      'timestamp_seconds': 193,
+      'tip': 'Be equipped with knowledge of both the old and the new rules under the Trade '
+             'Facilitation and Trade Enforcement Act.',
+      'title': 'Duty Drawback Part 1 (Oct. 2017 CBLE Class)',
+      'url': 'https://www.youtube.com/watch?v=X9jTs5vL-ZM&t=193s',
+      'video_id': 'X9jTs5vL-ZM'},
      {'author': 'Shipping Solutions',
       'channel': 'Shipping Solutions',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:08](https://www.youtube.com/watch?v=zDnjfsml-j4&t=128s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q3 operational '
-                   'verification).',
+      'markdown': '[00:02:33](https://www.youtube.com/watch?v=_FcXk0dsq98&t=153s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'The United States relies on 10-digit codes, or HTSUS numbers. I’ll put a link '
-              'below to the International Trade Commission website where you can search for '
-              'the HTSUS code for your product.',
-      'timestamp': 128,
-      'timestamp_label': '[00:02:08]',
-      'timestamp_seconds': 128,
-      'tip': 'The United States relies on 10-digit codes, or HTSUS numbers. I’ll put a link '
-             'below to the International Trade Commission website where you can search for the '
-             'HTSUS code for your product.',
-      'title': 'How to Use the Harmonized Tariff Schedule of the United States (Shipping '
-               'Solutions)',
-      'url': 'https://www.youtube.com/watch?v=zDnjfsml-j4&t=128s',
-      'video_id': 'zDnjfsml-j4'},
-     {'author': 'CONECT Recorded Webinars',
-      'channel': 'CONECT Recorded Webinars',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:30:22](https://www.youtube.com/watch?v=jMlTHY21lng&t=1822s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Um this is really important to remember right I think this will be very very '
-              "occurrencies now um what could be some examples of fraud um actually I'm going "
-              'a little too far here let me just go back.',
-      'timestamp': 1822,
-      'timestamp_label': '[00:30:22]',
-      'timestamp_seconds': 1822,
-      'tip': 'Um this is really important to remember right I think this will be very very '
-             "occurrencies now um what could be some examples of fraud um actually I'm going a "
-             'little too far here let me just go back.',
-      'title': 'Recording Part 111 Modernization of Customs Broker Regulations (CONECT '
-               'Recorded Webinars)',
-      'url': 'https://www.youtube.com/watch?v=jMlTHY21lng&t=1822s',
-      'video_id': 'jMlTHY21lng'},
-     {'author': 'Afleo',
-      'channel': 'Afleo',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=oHJLWqKNzU4&t=15s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'बताएंगे कि कैसे हमने हमारे क्लाइंट्स के लिए 50 लै टू 1 करोड़ का एडिशनल एनुअल '
-              'बेनिफिट जनरेट करके दिया। जो वह पहले लूज़ कर रहे थे जस्ट बाय सेलेक्टिंग द राइट.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'बताएंगे कि कैसे हमने हमारे क्लाइंट्स के लिए 50 लै टू 1 करोड़ का एडिशनल एनुअल '
-             'बेनिफिट जनरेट करके दिया। जो वह पहले लूज़ कर रहे थे जस्ट बाय सेलेक्टिंग द राइट.',
-      'title': 'Duty Drawback Scheme: Hidden Profit Most Exporters MISS! (AIR vs Brand Rate '
-               'Explained) (Afleo)',
-      'url': 'https://www.youtube.com/watch?v=oHJLWqKNzU4&t=15s',
-      'video_id': 'oHJLWqKNzU4'},
-     {'author': 'ImportGenius',
-      'channel': 'ImportGenius',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:19](https://www.youtube.com/watch?v=edLGoh8OTiQ&t=79s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': '"ميجا ديستريبيوشن"، دعونا نلقي نظرة على أحدث ميزات موقع importgenius. Import '
-              'Genius بإنشاء خريطة لعلاقات تلك الشركة التجارية.',
-      'timestamp': 79,
-      'timestamp_label': '[00:01:19]',
-      'timestamp_seconds': 79,
-      'tip': '"ميجا ديستريبيوشن"، دعونا نلقي نظرة على أحدث ميزات موقع importgenius. Import '
-             'Genius بإنشاء خريطة لعلاقات تلك الشركة التجارية.',
-      'title': "Track your competitors' imports with Import Genius (ImportGenius)",
-      'url': 'https://www.youtube.com/watch?v=edLGoh8OTiQ&t=79s',
-      'video_id': 'edLGoh8OTiQ'},
-     {'author': 'TrackIQ',
-      'channel': 'TrackIQ',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:46](https://www.youtube.com/watch?v=Q8jgNmiJNZg&t=286s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'ACoS and how aggressively you can bid on sponsored ads. If you can negotiate '
-              'lower wholesale pricing that reflects the removal of IEPA tariffs, your unit '
-              'economics improve.',
-      'timestamp': 286,
-      'timestamp_label': '[00:04:46]',
-      'timestamp_seconds': 286,
-      'tip': 'ACoS and how aggressively you can bid on sponsored ads. If you can negotiate '
-             'lower wholesale pricing that reflects the removal of IEPA tariffs, your unit '
-             'economics improve.',
-      'title': "Supreme Court Tariff Ruling: Why Most Amazon Sellers Won't See Refunds "
-               '(TrackIQ)',
-      'url': 'https://www.youtube.com/watch?v=Q8jgNmiJNZg&t=286s',
-      'video_id': 'Q8jgNmiJNZg'}],
- 4: [{'author': 'TrackIQ',
-      'channel': 'TrackIQ',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:59](https://www.youtube.com/watch?v=Q8jgNmiJNZg&t=59s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Amazon's third-party ecosystem. Electronics, apparel, home goods, industrial "
-              "components. Here's the catch that's crushing Amazon sellers right now. Refunds "
-              'go exclusively to the importer of record, the entity listed on customs entry '
-              'documents, form 7501.',
-      'timestamp': 59,
-      'timestamp_label': '[00:00:59]',
-      'timestamp_seconds': 59,
-      'tip': "Amazon's third-party ecosystem. Electronics, apparel, home goods, industrial "
-             "components. Here's the catch that's crushing Amazon sellers right now. Refunds "
-             'go exclusively to the importer of record, the entity listed on customs entry '
-             'documents, form 7501.',
-      'title': "Supreme Court Tariff Ruling: Why Most Amazon Sellers Won't See Refunds "
-               '(TrackIQ)',
-      'url': 'https://www.youtube.com/watch?v=Q8jgNmiJNZg&t=59s',
-      'video_id': 'Q8jgNmiJNZg'},
-     {'author': 'Shipping Solutions',
-      'channel': 'Shipping Solutions',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:59](https://www.youtube.com/watch?v=_FcXk0dsq98&t=179s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'File electronically in CBP’s Automated Commercial Environment, or ACE, and '
-              'expect processing times to vary. CBP expects a solid audit trail.',
-      'timestamp': 179,
-      'timestamp_label': '[00:02:59]',
-      'timestamp_seconds': 179,
-      'tip': 'File electronically in CBP’s Automated Commercial Environment, or ACE, and '
-             'expect processing times to vary. CBP expects a solid audit trail.',
-      'title': 'Duty Drawback on Exports: What You Need to Know (Shipping Solutions)',
-      'url': 'https://www.youtube.com/watch?v=_FcXk0dsq98&t=179s',
+      'text': 'You need to submit a drawback entry with all the supporting documents within three '
+              'years from the date you exported or destroyed the merchandise.',
+      'timestamp': 153,
+      'timestamp_label': '[00:02:33]',
+      'timestamp_seconds': 153,
+      'tip': "File electronically in CBP's Automated Commercial Environment and expect processing "
+             'times to vary.',
+      'title': 'Duty Drawback on Exports: What You Need to Know',
+      'url': 'https://www.youtube.com/watch?v=_FcXk0dsq98&t=153s',
       'video_id': '_FcXk0dsq98'},
-     {'author': 'Factory Floor Economics',
-      'channel': 'Factory Floor Economics',
+     {'author': 'CITTA Brokerage',
+      'channel': 'CITTA Brokerage',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:15](https://www.youtube.com/watch?v=YhiuYAa1Byw&t=495s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q4 operational '
-                   'verification).',
+      'markdown': '[00:05:41](https://www.youtube.com/watch?v=fzs6ZIUot2s&t=341s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'You charge for minutes of work, but you get paid for being right. The cost side '
-              'is people, software and liability. Every entry is touched by classifiers and '
-              'entry writers, and US law puts their supervision on the license holder.',
-      'timestamp': 495,
-      'timestamp_label': '[00:08:15]',
-      'timestamp_seconds': 495,
-      'tip': 'You charge for minutes of work, but you get paid for being right. The cost side '
-             'is people, software and liability. Every entry is touched by classifiers and '
-             'entry writers, and US law puts their supervision on the license holder.',
-      'title': 'The Economics of a Customs Broker (Factory Floor Economics)',
-      'url': 'https://www.youtube.com/watch?v=YhiuYAa1Byw&t=495s',
-      'video_id': 'YhiuYAa1Byw'},
-     {'author': 'Leyton USA',
-      'channel': 'Leyton USA',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:15:44](https://www.youtube.com/watch?v=JL0JHTlUx4I&t=944s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': '45-day period that again will be deposited to your bank account via ACH and '
-              'visible through the ACE portal. Um again, as I mentioned right there, no no '
-              'more paper checks. You have to uh make sure your banking information is entered '
-              'in the ACE portal uh after setup.',
-      'timestamp': 944,
-      'timestamp_label': '[00:15:44]',
-      'timestamp_seconds': 944,
-      'tip': '45-day period that again will be deposited to your bank account via ACH and '
-             'visible through the ACE portal. Um again, as I mentioned right there, no no more '
-             'paper checks. You have to uh make sure your banking information is entered in '
-             'the ACE portal uh after setup.',
-      'title': 'WEBINAR - IEEPA Tariff Refunds: Recover Overpaid Duties and Maximize '
-               'Cross-Border Savings (Leyton USA)',
-      'url': 'https://www.youtube.com/watch?v=JL0JHTlUx4I&t=944s',
-      'video_id': 'JL0JHTlUx4I'},
+      'text': "There are times when they may not have the information that they need, or it's just "
+              'too difficult to collect, going back historically.',
+      'timestamp': 341,
+      'timestamp_label': '[00:05:41]',
+      'timestamp_seconds': 341,
+      'tip': 'With those clients we talk about going forward and make sure they are capturing '
+             'these funds and collecting these documents on a regular basis.',
+      'title': 'What is Duty Drawback?',
+      'url': 'https://www.youtube.com/watch?v=fzs6ZIUot2s&t=341s',
+      'video_id': 'fzs6ZIUot2s'},
      {'author': 'Scarbrough Global',
       'channel': 'Scarbrough Global',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:26:32](https://www.youtube.com/watch?v=wEYqdvTPaqM&t=1592s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q4 operational '
-                   'verification).',
+      'markdown': '[00:01:28](https://www.youtube.com/watch?v=GDJSfFVXx1M&t=88s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Attorney do I have to have a license broker you know who do I need to contact '
-              'to kind of get that process going you know a claim is free to file.',
-      'timestamp': 1592,
-      'timestamp_label': '[00:26:32]',
-      'timestamp_seconds': 1592,
-      'tip': 'Attorney do I have to have a license broker you know who do I need to contact to '
-             'kind of get that process going you know a claim is free to file.',
-      'title': 'Duty Drawback - Full Version (Scarbrough Global)',
-      'url': 'https://www.youtube.com/watch?v=wEYqdvTPaqM&t=1592s',
-      'video_id': 'wEYqdvTPaqM'},
-     {'author': 'TEU Global',
-      'channel': 'TEU Global',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:14](https://www.youtube.com/watch?v=lKk16DmiedE&t=134s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Once you've entered that information, click submit. You're now all set for your "
-              'CBP electronic refund. If you do not have a US bank account, then you can '
-              'designate any trustworthy US entity to receive the refunds on your behalf.',
-      'timestamp': 134,
-      'timestamp_label': '[00:02:14]',
-      'timestamp_seconds': 134,
-      'tip': "Once you've entered that information, click submit. You're now all set for your "
-             'CBP electronic refund. If you do not have a US bank account, then you can '
-             'designate any trustworthy US entity to receive the refunds on your behalf.',
-      'title': 'How to Set Up the CBP ACE Secure Data Portal & ACH Refunds | Step-by-Step '
-               'Guide for Importers (TEU Global)',
-      'url': 'https://www.youtube.com/watch?v=lKk16DmiedE&t=134s',
-      'video_id': 'lKk16DmiedE'},
-     {'author': 'Cole International',
-      'channel': 'Cole International',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=_6C6KJQrxII&t=21s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'May seem innocent enough however a cbsa or cbp verification request otherwise '
-              "referred to as an audit is a serious matter so let's look at a proactive "
-              'approach to help minimize the impact of a dreaded call from customs.',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': 'May seem innocent enough however a cbsa or cbp verification request otherwise '
-             "referred to as an audit is a serious matter so let's look at a proactive "
-             'approach to help minimize the impact of a dreaded call from customs.',
-      'title': 'Customs & Binding Rulings - The ABCs (Cole International)',
-      'url': 'https://www.youtube.com/watch?v=_6C6KJQrxII&t=21s',
-      'video_id': '_6C6KJQrxII'},
-     {'author': 'The Class Action Attorney',
-      'channel': 'The Class Action Attorney',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:09](https://www.youtube.com/watch?v=wR6-BeiQppQ&t=129s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Whether or not that check is legitimate so hopefully this answers your '
-              'questions about whether or not a class action settlement you get in the mail or '
-              "a class action settlement check is real or if it's a scam thanks so much for "
-              'watching.',
-      'timestamp': 129,
-      'timestamp_label': '[00:02:09]',
-      'timestamp_seconds': 129,
-      'tip': 'Whether or not that check is legitimate so hopefully this answers your questions '
-             'about whether or not a class action settlement you get in the mail or a class '
-             "action settlement check is real or if it's a scam thanks so much for watching.",
-      'title': 'Is my class action settlement check a scam? (The Class Action Attorney)',
-      'url': 'https://www.youtube.com/watch?v=wR6-BeiQppQ&t=129s',
-      'video_id': 'wR6-BeiQppQ'},
-     {'author': 'Radial',
-      'channel': 'Radial',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:32](https://www.youtube.com/watch?v=p-c3zl1yoVk&t=92s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s additional benefits to an FTZ as well, including order processing and "
-              'fulfillment from the same warehouse. Now, some brands are exploring owning and '
-              'operating their own FTZ warehouse, but you can also work with 3PLs that operate '
-              'these facilities and their networks.',
-      'timestamp': 92,
-      'timestamp_label': '[00:01:32]',
-      'timestamp_seconds': 92,
-      'tip': "'s additional benefits to an FTZ as well, including order processing and "
-             'fulfillment from the same warehouse. Now, some brands are exploring owning and '
-             'operating their own FTZ warehouse, but you can also work with 3PLs that operate '
-             'these facilities and their networks.',
-      'title': 'Radial: What is a Foreign Trade Zone (FTZ) Warehouse? (Radial)',
-      'url': 'https://www.youtube.com/watch?v=p-c3zl1yoVk&t=92s',
-      'video_id': 'p-c3zl1yoVk'},
+      'text': "It's when you start playing games and you get caught that's when you'll start to "
+              'see more scrutiny.',
+      'timestamp': 88,
+      'timestamp_label': '[00:01:28]',
+      'timestamp_seconds': 88,
+      'tip': 'Customs only has limited resources and will focus them on known bad actors more so '
+             'than random checks on a good faith importer or drawback filer.',
+      'title': 'Do Duty Drawback claims open you up for US  Customs scrutiny ?',
+      'url': 'https://www.youtube.com/watch?v=GDJSfFVXx1M&t=88s',
+      'video_id': 'GDJSfFVXx1M'},
      {'author': 'Scarlett Jones',
       'channel': 'Scarlett Jones',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:38](https://www.youtube.com/watch?v=Vy2s1ZdQcnQ&t=278s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q4 operational '
-                   'verification).',
+      'markdown': '[00:04:51](https://www.youtube.com/watch?v=Vy2s1ZdQcnQ&t=291s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Processes can streamline claim submissions and enhance overall efficiency these '
-              'tools can automate calculations maintain accurate records.',
-      'timestamp': 278,
-      'timestamp_label': '[00:04:38]',
-      'timestamp_seconds': 278,
-      'tip': 'Processes can streamline claim submissions and enhance overall efficiency these '
-             'tools can automate calculations maintain accurate records.',
-      'title': 'Navigating Duty Drawback Claims for Exported Goods (Scarlett Jones)',
-      'url': 'https://www.youtube.com/watch?v=Vy2s1ZdQcnQ&t=278s',
+      'text': 'Exporters should also evaluate the cost benefit analysis of duty drawback claims, '
+              'assessing the potential recovery or refund of duties against the administrative '
+              'expenses involved in filing the claims.',
+      'timestamp': 291,
+      'timestamp_label': '[00:04:51]',
+      'timestamp_seconds': 291,
+      'tip': 'Make sure the process is viable and provides a positive impact on overall operations '
+             'before filing.',
+      'title': 'Navigating Duty Drawback Claims for Exported Goods',
+      'url': 'https://www.youtube.com/watch?v=Vy2s1ZdQcnQ&t=291s',
       'video_id': 'Vy2s1ZdQcnQ'},
-     {'author': 'Shapiro',
-      'channel': 'Shapiro',
+     {'author': 'KPMG US',
+      'channel': 'KPMG US',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:21:59](https://www.youtube.com/watch?v=605kfE-oUPM&t=1319s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q4 operational '
-                   'verification).',
+      'markdown': '[00:01:31](https://www.youtube.com/watch?v=uQ6wwWd5plE&t=91s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'This PLC indicator between the columns and put in there and if you have any PLC '
-              "any entries with PSC it's going to show the information in this report ok.",
-      'timestamp': 1319,
-      'timestamp_label': '[00:21:59]',
-      'timestamp_seconds': 1319,
-      'tip': 'This PLC indicator between the columns and put in there and if you have any PLC '
-             "any entries with PSC it's going to show the information in this report ok.",
-      'title': 'Automated Commercial Environment ACE Import Workshop (Shapiro)',
-      'url': 'https://www.youtube.com/watch?v=605kfE-oUPM&t=1319s',
-      'video_id': '605kfE-oUPM'},
-     {'author': 'Ask The Customs Manager',
-      'channel': 'Ask The Customs Manager',
+      'text': "We've actually developed a mock audit process where we're doing an actual audit of "
+              'our clients documentation to ensure that they know where that documentation is '
+              "housed and everything's tying out.",
+      'timestamp': 91,
+      'timestamp_label': '[00:01:31]',
+      'timestamp_seconds': 91,
+      'tip': 'If we find any issues we work through those with the client, because this is all '
+             'stuff that customs will request in a desk review or regulatory audit.',
+      'title': 'KPMG Trade & Customs – Duty Drawback',
+      'url': 'https://www.youtube.com/watch?v=uQ6wwWd5plE&t=91s',
+      'video_id': 'uQ6wwWd5plE'},
+     {'author': 'Simply Trade Podcast',
+      'channel': 'Simply Trade Podcast',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:30](https://www.youtube.com/watch?v=2H7zdtUvSDA&t=150s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q4 operational '
-                   'verification).',
+      'markdown': '[00:22:10](https://www.youtube.com/watch?v=3N8L-IKPY4A&t=1330s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "One more thing, you're responsible for accuracy. If you put the wrong bank "
-              "account, that's on you. CBP won't chase you down, and you must notify them if "
-              'anything changes. New bank, new account number, anything. Update it in ACE '
-              'immediately.',
-      'timestamp': 150,
-      'timestamp_label': '[00:02:30]',
-      'timestamp_seconds': 150,
-      'tip': "One more thing, you're responsible for accuracy. If you put the wrong bank "
-             "account, that's on you. CBP won't chase you down, and you must notify them if "
-             'anything changes. New bank, new account number, anything. Update it in ACE '
-             'immediately.',
-      'title': 'CBP Ends Paper Checks February 6 – Enroll in ACH for Refunds NOW (Ask The '
-               'Customs Manager)',
-      'url': 'https://www.youtube.com/watch?v=2H7zdtUvSDA&t=150s',
-      'video_id': '2H7zdtUvSDA'},
-     {'author': 'Montana World Trade Center',
-      'channel': 'Montana World Trade Center',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:23:16](https://www.youtube.com/watch?v=xWFmdLRN9Ro&t=1396s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Electronics machinery electrical machinery and finished vehicles being made in '
-              'production zones so all of these products are being made in foreign trade zones '
-              'and then you know shipped out of the foreign trade zone for consumption in the '
-              'us or for export.',
-      'timestamp': 1396,
-      'timestamp_label': '[00:23:16]',
-      'timestamp_seconds': 1396,
-      'tip': 'Electronics machinery electrical machinery and finished vehicles being made in '
-             'production zones so all of these products are being made in foreign trade zones '
-             'and then you know shipped out of the foreign trade zone for consumption in the '
-             'us or for export.',
-      'title': 'Foreign Trade Zone training (Montana World Trade Center)',
-      'url': 'https://www.youtube.com/watch?v=xWFmdLRN9Ro&t=1396s',
-      'video_id': 'xWFmdLRN9Ro'},
-     {'author': 'USA Customs Clearance',
-      'channel': 'USA Customs Clearance',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:44](https://www.youtube.com/watch?v=MfmhZLeMz2w&t=104s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'This is the broad family your product belongs to. For example, machinery, '
-              'furniture, textiles, vehicles, chemicals. The next two digits create the '
-              "heading. Now we're narrowing the product into a smaller category within that "
-              'chapter.',
-      'timestamp': 104,
-      'timestamp_label': '[00:01:44]',
-      'timestamp_seconds': 104,
-      'tip': 'This is the broad family your product belongs to. For example, machinery, '
-             'furniture, textiles, vehicles, chemicals. The next two digits create the '
-             "heading. Now we're narrowing the product into a smaller category within that "
-             'chapter.',
-      'title': 'HTS Codes Explained (USA Customs Clearance)',
-      'url': 'https://www.youtube.com/watch?v=MfmhZLeMz2w&t=104s',
-      'video_id': 'MfmhZLeMz2w'},
-     {'author': 'SKUio',
-      'channel': 'SKUio',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:48](https://www.youtube.com/watch?v=WLDwLas6IOI&t=108s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Here the customs value is lower than the order value, so check that with your '
-              'broker. Below, each line shows its HTS code, entered value, and the duty '
-              'charged. The stack lists every tariff that applied, such as a Section 301 duty '
-              'on top of the base rate.',
-      'timestamp': 108,
-      'timestamp_label': '[00:01:48]',
-      'timestamp_seconds': 108,
-      'tip': 'Here the customs value is lower than the order value, so check that with your '
-             'broker. Below, each line shows its HTS code, entered value, and the duty '
-             'charged. The stack lists every tariff that applied, such as a Section 301 duty '
-             'on top of the base rate.',
-      'title': 'Split a Customs Duty Bill by Product with CBP 7501 Entry Summaries | SKU.io '
-               '(SKUio)',
-      'url': 'https://www.youtube.com/watch?v=WLDwLas6IOI&t=108s',
-      'video_id': 'WLDwLas6IOI'}],
- 5: [{'author': 'NextGen CPA',
-      'channel': 'NextGen CPA',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:08](https://www.youtube.com/watch?v=sMBX0ZlgJRY&t=68s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Second, the no mistakes rule. You file a Cape declaration in the ACE portal. '
-              'But be warned, once you submit, you cannot amend it. If you miss a 7501 form, '
-              'you have to start a new declaration, which can push you to the back of the '
-              'queue.',
-      'timestamp': 68,
-      'timestamp_label': '[00:01:08]',
-      'timestamp_seconds': 68,
-      'tip': 'Second, the no mistakes rule. You file a Cape declaration in the ACE portal. But '
-             'be warned, once you submit, you cannot amend it. If you miss a 7501 form, you '
-             'have to start a new declaration, which can push you to the back of the queue.',
-      'title': 'CBP Refund Portal is LIVE - Claim Your 2025 Tariff Money Now! (NextGen CPA)',
-      'url': 'https://www.youtube.com/watch?v=sMBX0ZlgJRY&t=68s',
-      'video_id': 'sMBX0ZlgJRY'},
-     {'author': 'VoraPrep',
-      'channel': 'VoraPrep',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:54](https://www.youtube.com/watch?v=xq7kXAXH3GQ&t=54s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "If you can't, that's a problem. Now, imagine you realize you accidentally "
-              'damaged a book. Say you made a mistake on an entry. You can wait for the '
-              "librarian to find it and they'll send you a big bill. Or you can go to them "
-              'before they notice.',
-      'timestamp': 54,
-      'timestamp_label': '[00:00:54]',
-      'timestamp_seconds': 54,
-      'tip': "If you can't, that's a problem. Now, imagine you realize you accidentally "
-             'damaged a book. Say you made a mistake on an entry. You can wait for the '
-             "librarian to find it and they'll send you a big bill. Or you can go to them "
-             'before they notice.',
-      'title': '[CBLE] CBLE3: Recordkeeping, Prior Disclosures, and Penalties (19 CFR Part '
-               '163, 171 & 19 U.S.C. §... (VoraPrep)',
-      'url': 'https://www.youtube.com/watch?v=xq7kXAXH3GQ&t=54s',
-      'video_id': 'xq7kXAXH3GQ'},
-     {'author': 'Grassi',
-      'channel': 'Grassi',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:18](https://www.youtube.com/watch?v=xA8LxqtatDo&t=618s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "We have our bunch of acronyms, too. It's a whole 'nother language, uh logistics "
-              'language, as well. Um and we love adding new ones. So, CAPES is the '
-              'consolidated administration and processing of entries, which basic And CAPES, '
-              'by the way, lives in ACE.',
-      'timestamp': 618,
-      'timestamp_label': '[00:10:18]',
-      'timestamp_seconds': 618,
-      'tip': "We have our bunch of acronyms, too. It's a whole 'nother language, uh logistics "
-             'language, as well. Um and we love adding new ones. So, CAPES is the consolidated '
-             'administration and processing of entries, which basic And CAPES, by the way, '
-             'lives in ACE.',
-      'title': 'IEEPA Tariff Refunds: What Phase 1 Means for Importers and How to Prepare '
-               'Without Triggering Risk (Grassi)',
-      'url': 'https://www.youtube.com/watch?v=xA8LxqtatDo&t=618s',
-      'video_id': 'xA8LxqtatDo'},
-     {'author': 'The Procurement Lens',
-      'channel': 'The Procurement Lens',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:33](https://www.youtube.com/watch?v=4IEk0Lxmf1c&t=213s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "To avoid those compliance nightmares, there are a few super common traps you've "
-              'got to watch out for. First off, relying on incorrect or overly generic codes '
-              "just because they're, you know, easier to find.",
-      'timestamp': 213,
-      'timestamp_label': '[00:03:33]',
-      'timestamp_seconds': 213,
-      'tip': "To avoid those compliance nightmares, there are a few super common traps you've "
-             'got to watch out for. First off, relying on incorrect or overly generic codes '
-             "just because they're, you know, easier to find.",
-      'title': 'HS Code Explained | How Customs Classify Goods Made Simple (The Procurement '
-               'Lens)',
-      'url': 'https://www.youtube.com/watch?v=4IEk0Lxmf1c&t=213s',
-      'video_id': '4IEk0Lxmf1c'},
-     {'author': 'Frontier Report',
-      'channel': 'Frontier Report',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:06](https://www.youtube.com/watch?v=FICFEFAPgi0&t=606s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'That is his argument as reported, critics dispute it. The administration has '
-              'also been fighting in court to narrow who is paid, as we covered earlier. What '
-              'supports this version?',
-      'timestamp': 606,
-      'timestamp_label': '[00:10:06]',
-      'timestamp_seconds': 606,
-      'tip': 'That is his argument as reported, critics dispute it. The administration has '
-             'also been fighting in court to narrow who is paid, as we covered earlier. What '
-             'supports this version?',
-      'title': 'Who Actually Gets the $166B Tariff Refund? (Frontier Report)',
-      'url': 'https://www.youtube.com/watch?v=FICFEFAPgi0&t=606s',
-      'video_id': 'FICFEFAPgi0'},
-     {'author': 'Freight & Trade',
-      'channel': 'Freight & Trade',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:29](https://www.youtube.com/watch?v=wDQlwDFTfuE&t=269s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'If everything is acceptable and the applicable requirements have been '
-              'satisfied, the cargo can be released and continue to its final destination. '
-              "That's the basic idea of a customs entry. For beginners, there are a few "
-              'important mistakes to avoid.',
-      'timestamp': 269,
-      'timestamp_label': '[00:04:29]',
-      'timestamp_seconds': 269,
-      'tip': 'If everything is acceptable and the applicable requirements have been satisfied, '
-             "the cargo can be released and continue to its final destination. That's the "
-             'basic idea of a customs entry. For beginners, there are a few important mistakes '
-             'to avoid.',
-      'title': 'What Is a Customs Entry  A Beginner’s Guide to U S  Imports (Freight & Trade)',
-      'url': 'https://www.youtube.com/watch?v=wDQlwDFTfuE&t=269s',
-      'video_id': 'wDQlwDFTfuE'},
-     {'author': 'Clark-Esposito Law Firm P.C.',
-      'channel': 'Clark-Esposito Law Firm P.C.',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:46](https://www.youtube.com/watch?v=8Lpn0Ae59QU&t=106s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'If you’re uncertain about a classification, consider requesting a binding '
-              'ruling from CBP to gain clarity and avoid potential errors.',
-      'timestamp': 106,
-      'timestamp_label': '[00:01:46]',
-      'timestamp_seconds': 106,
-      'tip': 'If you’re uncertain about a classification, consider requesting a binding ruling '
-             'from CBP to gain clarity and avoid potential errors.',
-      'title': 'Tariffs & Classification Explained: Stay Compliant & Avoid Penalties '
-               '(Clark-Esposito Law Firm P.C.)',
-      'url': 'https://www.youtube.com/watch?v=8Lpn0Ae59QU&t=106s',
-      'video_id': '8Lpn0Ae59QU'},
-     {'author': 'Freightos',
-      'channel': 'Freightos',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:34](https://www.youtube.com/watch?v=cIMBwZ9J60I&t=34s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Um did they underpay and we send them a bill or did they overpay and we send '
-              "them a refund? And that's called liquidation. And the argument basically is "
-              "that the CBP is processing $80 billion in refunds for goods that hadn't been "
-              'liquidated before the Supreme Court ruling.',
-      'timestamp': 34,
-      'timestamp_label': '[00:00:34]',
-      'timestamp_seconds': 34,
-      'tip': 'Um did they underpay and we send them a bill or did they overpay and we send '
-             "them a refund? And that's called liquidation. And the argument basically is that "
-             "the CBP is processing $80 billion in refunds for goods that hadn't been "
-             'liquidated before the Supreme Court ruling.',
-      'title': 'The $166B Refund Liquidation Trap #tariffs (Freightos)',
-      'url': 'https://www.youtube.com/watch?v=cIMBwZ9J60I&t=34s',
-      'video_id': 'cIMBwZ9J60I'},
-     {'author': 'Star USA, Inc.',
-      'channel': 'Star USA, Inc.',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:18:04](https://www.youtube.com/watch?v=-v_-OQnVlxE&t=1084s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': '301 and 232 and the other special tariff measures, those are being incorporated '
-              "into the HTSUS. In chapter 99 of the HTSUS, you'll see the HTSUS on your "
-              'customs documents.',
-      'timestamp': 1084,
-      'timestamp_label': '[00:18:04]',
-      'timestamp_seconds': 1084,
-      'tip': '301 and 232 and the other special tariff measures, those are being incorporated '
-             "into the HTSUS. In chapter 99 of the HTSUS, you'll see the HTSUS on your customs "
-             'documents.',
-      'title': 'HTS Classification: Catching Mistakes Before They Become Costly (Star USA, '
-               'Inc.)',
-      'url': 'https://www.youtube.com/watch?v=-v_-OQnVlxE&t=1084s',
-      'video_id': '-v_-OQnVlxE'},
-     {'author': 'LionSky',
-      'channel': 'LionSky',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:55](https://www.youtube.com/watch?v=7ocNjGWsJHw&t=55s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Government create this loophole for manufacturers because it's good for the "
-              "country manufacturers don't have to offshore to avoid tariffs and increases in "
-              'US exports bring new money into the economy creating high-paying jobs for '
-              'Americans.',
-      'timestamp': 55,
-      'timestamp_label': '[00:00:55]',
-      'timestamp_seconds': 55,
-      'tip': "Government create this loophole for manufacturers because it's good for the "
-             "country manufacturers don't have to offshore to avoid tariffs and increases in "
-             'US exports bring new money into the economy creating high-paying jobs for '
-             'Americans.',
-      'title': 'What is an FTZ? (LionSky)',
-      'url': 'https://www.youtube.com/watch?v=7ocNjGWsJHw&t=55s',
-      'video_id': '7ocNjGWsJHw'},
-     {'author': 'JSJ INTERNATIONAL LCB',
-      'channel': 'JSJ INTERNATIONAL LCB',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:17:42](https://www.youtube.com/watch?v=W-f4Ah72J_I&t=1062s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I had a problem a few months ago uh, where a client, obviously I say, with the '
-              'experience one has over the years, one immediately detects or manages to read, '
-              "honestly, manages to read a client's attitude. In this case, we are talking "
-              'about me dealing with an exporter, right?',
-      'timestamp': 1062,
-      'timestamp_label': '[00:17:42]',
-      'timestamp_seconds': 1062,
-      'tip': 'I had a problem a few months ago uh, where a client, obviously I say, with the '
-             'experience one has over the years, one immediately detects or manages to read, '
-             "honestly, manages to read a client's attitude. In this case, we are talking "
-             'about me dealing with an exporter, right?',
-      'title': 'Master Class Requisitos Regimen 9801| Mercancías Estadounidenses y Extranjeras '
-               'Devueltas (JSJ INTERNATIONAL LCB)',
-      'url': 'https://www.youtube.com/watch?v=W-f4Ah72J_I&t=1062s',
-      'video_id': 'W-f4Ah72J_I'},
-     {'author': 'Ask The Customs Manager',
-      'channel': 'Ask The Customs Manager',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:07](https://www.youtube.com/watch?v=GdCve47uHF8&t=67s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'They are returned within 3 years. They have not been modified or upgraded while '
-              'abroad. The mistake happens when your carrier clears the return as a standard '
-              "import because they didn't see the proof. The computer just charges the tax "
-              'automatically.',
-      'timestamp': 67,
-      'timestamp_label': '[00:01:07]',
-      'timestamp_seconds': 67,
-      'tip': 'They are returned within 3 years. They have not been modified or upgraded while '
-             'abroad. The mistake happens when your carrier clears the return as a standard '
-             "import because they didn't see the proof. The computer just charges the tax "
-             'automatically.',
-      'title': 'Returned Goods Relief (RGR): How to Avoid Import Duty on Returned '
-               'International Shipments (Ask The Customs Manager)',
-      'url': 'https://www.youtube.com/watch?v=GdCve47uHF8&t=67s',
-      'video_id': 'GdCve47uHF8'},
-     {'author': 'Scarlett Jones',
-      'channel': 'Scarlett Jones',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:42](https://www.youtube.com/watch?v=AJga0mQ31Vo&t=222s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The notification Bell to stay updated with our upcoming videos disclaimer note '
-              'below until next time happy importing and exporting.',
-      'timestamp': 222,
-      'timestamp_label': '[00:03:42]',
-      'timestamp_seconds': 222,
-      'tip': 'The notification Bell to stay updated with our upcoming videos disclaimer note '
-             'below until next time happy importing and exporting.',
-      'title': 'Demystifying the Customs Power of Attorney: Key Role in International Trade! '
-               '(Scarlett Jones)',
-      'url': 'https://www.youtube.com/watch?v=AJga0mQ31Vo&t=222s',
-      'video_id': 'AJga0mQ31Vo'},
-     {'author': 'Law Office of Yuri Starikov, LLC',
-      'channel': 'Law Office of Yuri Starikov, LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:48](https://www.youtube.com/watch?v=B4gRBWbdUqo&t=408s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Classes I I I decided not to put the stress upon you with all this practice '
-              'quiz questions at the beginning uh having said that that that that will that is '
-              'rather an exception in the general rule.',
-      'timestamp': 408,
-      'timestamp_label': '[00:06:48]',
-      'timestamp_seconds': 408,
-      'tip': 'Classes I I I decided not to put the stress upon you with all this practice quiz '
-             'questions at the beginning uh having said that that that that will that is '
-             'rather an exception in the general rule.',
-      'title': 'Product Classification Under HTSUS Part 1 (Law Office of Yuri Starikov, LLC)',
-      'url': 'https://www.youtube.com/watch?v=B4gRBWbdUqo&t=408s',
-      'video_id': 'B4gRBWbdUqo'},
-     {'author': 'Shipping Solutions',
-      'channel': 'Shipping Solutions',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:05](https://www.youtube.com/watch?v=_FcXk0dsq98&t=185s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'CBP’s Automated Commercial Environment, or ACE, and expect processing times to '
-              'vary. CBP expects a solid audit trail.',
-      'timestamp': 185,
-      'timestamp_label': '[00:03:05]',
-      'timestamp_seconds': 185,
-      'tip': 'CBP’s Automated Commercial Environment, or ACE, and expect processing times to '
-             'vary. CBP expects a solid audit trail.',
-      'title': 'Duty Drawback on Exports: What You Need to Know (Shipping Solutions)',
-      'url': 'https://www.youtube.com/watch?v=_FcXk0dsq98&t=185s',
-      'video_id': '_FcXk0dsq98'}],
- 6: [{'author': 'VoraPrep',
-      'channel': 'VoraPrep',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:05](https://www.youtube.com/watch?v=2rbdaN1Swhk&t=245s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "The invoice says they're $2 each. First, you gather the documents, the "
-              'commercial invoice, the packing list, the bill of lading. Then, you put on your '
-              'detective hat. You have to classify those mugs.',
-      'timestamp': 245,
-      'timestamp_label': '[00:04:05]',
-      'timestamp_seconds': 245,
-      'tip': "The invoice says they're $2 each. First, you gather the documents, the "
-             'commercial invoice, the packing list, the bill of lading. Then, you put on your '
-             'detective hat. You have to classify those mugs.',
-      'title': '[CBLE] CBLE1: Entry Summary Documentation and Data Elements (CBP Form 7501) '
-               '(VoraPrep)',
-      'url': 'https://www.youtube.com/watch?v=2rbdaN1Swhk&t=245s',
-      'video_id': '2rbdaN1Swhk'},
-     {'author': 'IEEPA Tariff Watch',
-      'channel': 'IEEPA Tariff Watch',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:02](https://www.youtube.com/watch?v=V9_1adwF1c8&t=242s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The first and maybe the most powerful tool here is attorney client privilege. '
-              "Now, this isn't just some fancy legal term. It's a real world shield for your "
-              'company.',
-      'timestamp': 242,
-      'timestamp_label': '[00:04:02]',
-      'timestamp_seconds': 242,
-      'tip': 'The first and maybe the most powerful tool here is attorney client privilege. '
-             "Now, this isn't just some fancy legal term. It's a real world shield for your "
-             'company.',
-      'title': 'Before You File for a Section 301 Tariff Refund: The Audit Risk Every Importer '
-               'Needs to Understand (IEEPA Tariff Watch)',
-      'url': 'https://www.youtube.com/watch?v=V9_1adwF1c8&t=242s',
-      'video_id': 'V9_1adwF1c8'},
-     {'author': 'Supplyia Sourcing',
-      'channel': 'Supplyia Sourcing',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:16:13](https://www.youtube.com/watch?v=ff_P7M6LKEo&t=973s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'First, we find our regular duty rate by looking up our hts code step. Second, '
-              'we find out if this hts code has additional tariffs attached to it, by looking '
-              'up the full list so far.',
-      'timestamp': 973,
-      'timestamp_label': '[00:16:13]',
-      'timestamp_seconds': 973,
-      'tip': 'First, we find our regular duty rate by looking up our hts code step. Second, we '
-             'find out if this hts code has additional tariffs attached to it, by looking up '
-             'the full list so far.',
-      'title': 'HTS code lookup:  How to Calculate Duties & Tariffs for U.S Imports? (Supplyia '
-               'Sourcing)',
-      'url': 'https://www.youtube.com/watch?v=ff_P7M6LKEo&t=973s',
-      'video_id': 'ff_P7M6LKEo'},
-     {'author': 'Shipping Solutions',
-      'channel': 'Shipping Solutions',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:50](https://www.youtube.com/watch?v=_I3v11oKRLA&t=50s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You can search for the HTS code by entering the first few digits of the '
-              '10-digit code or by entering a short description of the goods. I am going to '
-              'use the Product Classification Software to find the code for some semiconductor '
-              'devices.',
-      'timestamp': 50,
-      'timestamp_label': '[00:00:50]',
-      'timestamp_seconds': 50,
-      'tip': 'You can search for the HTS code by entering the first few digits of the 10-digit '
-             'code or by entering a short description of the goods. I am going to use the '
-             'Product Classification Software to find the code for some semiconductor devices.',
-      'title': 'How to Calculate U.S. Import Tariffs (HTS Codes & Duties Explained) (Shipping '
-               'Solutions)',
-      'url': 'https://www.youtube.com/watch?v=_I3v11oKRLA&t=50s',
-      'video_id': '_I3v11oKRLA'},
-     {'author': 'emily p',
-      'channel': 'emily p',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:49](https://www.youtube.com/watch?v=X6G27vQXOic&t=229s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "On page two, you'll be asked a few questions. First, it will ask you whether "
-              'you purchased any of the listed beef products for personal use. Next, it will '
-              'ask you if those purchases were made in one or more of the states shown on '
-              'their list.',
-      'timestamp': 229,
-      'timestamp_label': '[00:03:49]',
-      'timestamp_seconds': 229,
-      'tip': "On page two, you'll be asked a few questions. First, it will ask you whether you "
-             'purchased any of the listed beef products for personal use. Next, it will ask '
-             'you if those purchases were made in one or more of the states shown on their '
-             'list.',
-      'title': 'Beef Class Action Lawsuit 2026: Step-By-Step Instructions To Claim YOUR Money '
-               '! (emily p)',
-      'url': 'https://www.youtube.com/watch?v=X6G27vQXOic&t=229s',
-      'video_id': 'X6G27vQXOic'},
-     {'author': 'ImportGenius',
-      'channel': 'ImportGenius',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:04](https://www.youtube.com/watch?v=XuTLIlW6tdk&t=424s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So, I've done all field search imports for Walmart over the last 5 years. And "
-              'so, what the data tells us if we scroll down to this little like Excel '
-              'file-looking uh piece over here, we can see that Walmart sourced pretty '
-              'significantly from China and Hong Kong.',
-      'timestamp': 424,
-      'timestamp_label': '[00:07:04]',
-      'timestamp_seconds': 424,
-      'tip': "So, I've done all field search imports for Walmart over the last 5 years. And "
-             'so, what the data tells us if we scroll down to this little like Excel '
-             'file-looking uh piece over here, we can see that Walmart sourced pretty '
-             'significantly from China and Hong Kong.',
-      'title': 'Trade secrets exposed: how to see what your competitors are importing, '
-               'selling, and sourcing (ImportGenius)',
-      'url': 'https://www.youtube.com/watch?v=XuTLIlW6tdk&t=424s',
-      'video_id': 'XuTLIlW6tdk'},
-     {'author': 'Opscale Exchange',
-      'channel': 'Opscale Exchange',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:24:22](https://www.youtube.com/watch?v=t98WTC5Cm9o&t=1462s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And so, you really be find yourself in that position where uh the recovery is '
-              'going to require filing an action in court or or if you do the protest route, '
-              "which is okay, you just don't know what's going to happen. Could you elaborate "
-              'on that 80-day liquidation period?',
-      'timestamp': 1462,
-      'timestamp_label': '[00:24:22]',
-      'timestamp_seconds': 1462,
-      'tip': 'And so, you really be find yourself in that position where uh the recovery is '
-             'going to require filing an action in court or or if you do the protest route, '
-             "which is okay, you just don't know what's going to happen. Could you elaborate "
-             'on that 80-day liquidation period?',
-      'title': 'IEEPA Tariff Refunds: How Importers Get Their Money Back | Thompson Coburn x '
-               'Opscale (Opscale Exchange)',
-      'url': 'https://www.youtube.com/watch?v=t98WTC5Cm9o&t=1462s',
-      'video_id': 't98WTC5Cm9o'},
-     {'author': 'American Association of Exporters & Importers',
-      'channel': 'American Association of Exporters & Importers',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:24:42](https://www.youtube.com/watch?v=g_ANnE2CVcU&t=1482s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So data elements are all over the place, you know, among entities. We have ERP '
-              'information, classification information, value information. Then you have ACE '
-              'data, which is what customs sees, right?',
-      'timestamp': 1482,
-      'timestamp_label': '[00:24:42]',
-      'timestamp_seconds': 1482,
-      'tip': 'So data elements are all over the place, you know, among entities. We have ERP '
-             'information, classification information, value information. Then you have ACE '
-             'data, which is what customs sees, right?',
-      'title': 'Beyond the Customs Entry: Identifying Tariff Recovery Opportunities in '
-               'Supplier Costs (American Association of Exporters & Importers)',
-      'url': 'https://www.youtube.com/watch?v=g_ANnE2CVcU&t=1482s',
-      'video_id': 'g_ANnE2CVcU'},
-     {'author': 'Scarbrough Global',
-      'channel': 'Scarbrough Global',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:52](https://www.youtube.com/watch?v=E-PQ2z_UoCM&t=52s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Accounting method first in a warehouse for data warehouse for example but you '
-              'need to be able to do that you need to be able to track that have.',
-      'timestamp': 52,
-      'timestamp_label': '[00:00:52]',
-      'timestamp_seconds': 52,
-      'tip': 'Accounting method first in a warehouse for data warehouse for example but you '
-             'need to be able to do that you need to be able to track that have.',
-      'title': 'What is Unused Merchandise Drawback when claiming duty drawback ? (Scarbrough '
-               'Global)',
-      'url': 'https://www.youtube.com/watch?v=E-PQ2z_UoCM&t=52s',
-      'video_id': 'E-PQ2z_UoCM'},
-     {'author': 'Ask The Customs Manager',
-      'channel': 'Ask The Customs Manager',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:45](https://www.youtube.com/watch?v=Pso0Iq3i3Xk&t=105s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Two, are you leaving money on the table? Way more businesses qualify for '
-              'drawback than they think. You could be eligible right now and not even know it. '
-              "Let's see if any of these scenarios ring a bell. First you have manufacturing "
-              'drawback.',
-      'timestamp': 105,
-      'timestamp_label': '[00:01:45]',
-      'timestamp_seconds': 105,
-      'tip': 'Two, are you leaving money on the table? Way more businesses qualify for '
-             'drawback than they think. You could be eligible right now and not even know it. '
-             "Let's see if any of these scenarios ring a bell. First you have manufacturing "
-             'drawback.',
-      'title': 'Duty Drawback Explained | How to Claim a 99% Refund on Customs Duties (Ask The '
-               'Customs Manager)',
-      'url': 'https://www.youtube.com/watch?v=Pso0Iq3i3Xk&t=105s',
-      'video_id': 'Pso0Iq3i3Xk'},
-     {'author': '💎Kiona 職場 x 行銷筆記💎',
-      'channel': '💎Kiona 職場 x 行銷筆記💎',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:50](https://www.youtube.com/watch?v=i3e313EJJPE&t=410s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Hardware chemicals gardening plastick textiles home appliance and medical if '
-              'you want to know what information custom data can provide for your industry '
-              'please scan the WhatsApp QR code on the screen or fill out the Forum below to '
-              'schedule an online demo.',
-      'timestamp': 410,
-      'timestamp_label': '[00:06:50]',
-      'timestamp_seconds': 410,
-      'tip': 'Hardware chemicals gardening plastick textiles home appliance and medical if you '
-             'want to know what information custom data can provide for your industry please '
-             'scan the WhatsApp QR code on the screen or fill out the Forum below to schedule '
-             'an online demo.',
-      'title': 'How AI Finds Global Buyers 10X FASTER Than Manual Search! #I-Power #panjiva '
-               '#importgenius (💎Kiona 職場 x 行銷筆記💎)',
-      'url': 'https://www.youtube.com/watch?v=i3e313EJJPE&t=410s',
-      'video_id': 'i3e313EJJPE'},
-     {'author': 'ImportGenius',
-      'channel': 'ImportGenius',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:20](https://www.youtube.com/watch?v=NmWdt9dMzjM&t=140s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Help you find qualified sales leads never go into another cold call blind with '
-              "our database at your fingertips you'll know exactly what kinds of services an "
-              "importer's business demands sign up for instant access at w w w import or call "
-              'today 1-888-843-0272.',
-      'timestamp': 140,
-      'timestamp_label': '[00:02:20]',
-      'timestamp_seconds': 140,
-      'tip': 'Help you find qualified sales leads never go into another cold call blind with '
-             "our database at your fingertips you'll know exactly what kinds of services an "
-             "importer's business demands sign up for instant access at w w w import or call "
-             'today 1-888-843-0272.',
-      'title': 'Identify High-Value Sales Prospects with Import Genius (ImportGenius)',
-      'url': 'https://www.youtube.com/watch?v=NmWdt9dMzjM&t=140s',
-      'video_id': 'NmWdt9dMzjM'},
-     {'author': 'USA Customs Clearance',
-      'channel': 'USA Customs Clearance',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:37](https://www.youtube.com/watch?v=QX8vx-rrO4A&t=277s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Overpayment claimants can receive their refund within as little as 4 to 6 weeks '
-              'ready to get started at USA Customs clearance we offer drawback Services Guided '
-              'by experienced import agents find a direct link to our services in the '
-              'description until next time.',
-      'timestamp': 277,
-      'timestamp_label': '[00:04:37]',
-      'timestamp_seconds': 277,
-      'tip': 'Overpayment claimants can receive their refund within as little as 4 to 6 weeks '
-             'ready to get started at USA Customs clearance we offer drawback Services Guided '
-             'by experienced import agents find a direct link to our services in the '
-             'description until next time.',
-      'title': 'How to Get Cash Refunds Through Duty Drawbacks (USA Customs Clearance)',
-      'url': 'https://www.youtube.com/watch?v=QX8vx-rrO4A&t=277s',
-      'video_id': 'QX8vx-rrO4A'},
-     {'author': 'Law Office of Yuri Starikov, LLC',
-      'channel': 'Law Office of Yuri Starikov, LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:25](https://www.youtube.com/watch?v=d6omeUFeZfA&t=205s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Transportation without appraisement entry we talked about about importation and '
-              'exportation entry we talked about drawback entry first first class when I was '
-              'talking about this circumvention.',
-      'timestamp': 205,
-      'timestamp_label': '[00:03:25]',
-      'timestamp_seconds': 205,
-      'tip': 'Transportation without appraisement entry we talked about about importation and '
-             'exportation entry we talked about drawback entry first first class when I was '
-             'talking about this circumvention.',
-      'title': 'U.S. Customs (CBP) Bonds Webcast Preview (Law Office of Yuri Starikov, LLC)',
-      'url': 'https://www.youtube.com/watch?v=d6omeUFeZfA&t=205s',
-      'video_id': 'd6omeUFeZfA'},
-     {'author': 'Trade Risk Guaranty',
-      'channel': 'Trade Risk Guaranty',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:21](https://www.youtube.com/watch?v=PymimTwXXVM&t=321s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Eagle Eye ACE bond dashboard. Um but first, get that bond query information. '
-              "Happy to provide it from TRG whether you're a client or not or your service "
-              "provider. And if you see it's wrong, what do you do, Colette?",
-      'timestamp': 321,
-      'timestamp_label': '[00:05:21]',
-      'timestamp_seconds': 321,
-      'tip': 'Eagle Eye ACE bond dashboard. Um but first, get that bond query information. '
-             "Happy to provide it from TRG whether you're a client or not or your service "
-             "provider. And if you see it's wrong, what do you do, Colette?",
-      'title': "CBP's database Clean Up May Void Your IOR | TRG Talks Trade | EP 13 (Trade "
-               'Risk Guaranty)',
-      'url': 'https://www.youtube.com/watch?v=PymimTwXXVM&t=321s',
-      'video_id': 'PymimTwXXVM'}],
- 7: [{'author': 'Tariffs Lawsuit',
-      'channel': 'Tariffs Lawsuit',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:37](https://www.youtube.com/watch?v=DOHCXtY_zI0&t=97s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Here's why the refund system is failing businesses. To process refunds, CBP "
-              'built a new system inside of its ACE portal called CAPE, the Consolidated '
-              'Administration and Processing of Entries System. It opened on April 20th of '
-              '2026 and importers started falling immediately.',
-      'timestamp': 97,
-      'timestamp_label': '[00:01:37]',
-      'timestamp_seconds': 97,
-      'tip': "Here's why the refund system is failing businesses. To process refunds, CBP "
-             'built a new system inside of its ACE portal called CAPE, the Consolidated '
-             'Administration and Processing of Entries System. It opened on April 20th of 2026 '
-             'and importers started falling immediately.',
-      'title': 'Tariff Refunds for Importers: Your Business May Be Owed Money After Supreme '
-               'Court Ruling (Tariffs Lawsuit)',
-      'url': 'https://www.youtube.com/watch?v=DOHCXtY_zI0&t=97s',
-      'video_id': 'DOHCXtY_zI0'},
-     {'author': 'Commercial Funding Marketplace',
-      'channel': 'Commercial Funding Marketplace',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:30](https://www.youtube.com/watch?v=LaWXf8aLv1o&t=270s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Let's quickly cover the two most important documents you'll need to get "
-              "started. First thing is your ACE portal report. ACE is the government's "
-              'official system for this stuff, the automated commercial environment. For a '
-              'buyer, this report is the one and only source of truth.',
-      'timestamp': 270,
-      'timestamp_label': '[00:04:30]',
-      'timestamp_seconds': 270,
-      'tip': "Let's quickly cover the two most important documents you'll need to get started. "
-             "First thing is your ACE portal report. ACE is the government's official system "
-             'for this stuff, the automated commercial environment. For a buyer, this report '
-             'is the one and only source of truth.',
-      'title': 'IEEPA Tariff Refund Buyout: The Process (Commercial Funding Marketplace)',
-      'url': 'https://www.youtube.com/watch?v=LaWXf8aLv1o&t=270s',
-      'video_id': 'LaWXf8aLv1o'},
-     {'author': 'Freight & Trade',
-      'channel': 'Freight & Trade',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:12](https://www.youtube.com/watch?v=ez065LeX6vE&t=252s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'CBP releases the shipment, the cargo can continue through the normal delivery '
-              'process. The important thing to remember is that the bond supports the customs '
-              "process. It doesn't replace the customs process.",
-      'timestamp': 252,
-      'timestamp_label': '[00:04:12]',
-      'timestamp_seconds': 252,
-      'tip': 'CBP releases the shipment, the cargo can continue through the normal delivery '
-             'process. The important thing to remember is that the bond supports the customs '
-             "process. It doesn't replace the customs process.",
-      'title': 'What Is a Customs Bond  A Beginner’s Guide to Importing into the US (Freight & '
-               'Trade)',
-      'url': 'https://www.youtube.com/watch?v=ez065LeX6vE&t=252s',
-      'video_id': 'ez065LeX6vE'},
-     {'author': 'Shipping Solutions',
-      'channel': 'Shipping Solutions',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:00](https://www.youtube.com/watch?v=uEeZIcpmUfw&t=60s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Step 2 Contact your customs broker. Discuss the import process for repairs with '
-              'your broker. They can advise on using a Temporary Importation Bond, or TIB, or '
-              'if they are eligible for import using the Harmonized Tariff Schedule of the U.',
-      'timestamp': 60,
-      'timestamp_label': '[00:01:00]',
-      'timestamp_seconds': 60,
-      'tip': 'Step 2 Contact your customs broker. Discuss the import process for repairs with '
-             'your broker. They can advise on using a Temporary Importation Bond, or TIB, or '
-             'if they are eligible for import using the Harmonized Tariff Schedule of the U.',
-      'title': 'Repaired Goods: Import and Re-export (Shipping Solutions)',
-      'url': 'https://www.youtube.com/watch?v=uEeZIcpmUfw&t=60s',
-      'video_id': 'uEeZIcpmUfw'},
-     {'author': 'Steve Fodor',
-      'channel': 'Steve Fodor',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:35:05](https://www.youtube.com/watch?v=Exy48YwwPtk&t=2105s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Customs attorney or trade logic International as a consultant to help you in '
-              "that process you need to document the fact that you've reviewed your harmonized "
-              'tariff classifications and that helps you be able to prove that you have '
-              'exercised due diligence and reasonable.',
-      'timestamp': 2105,
-      'timestamp_label': '[00:35:05]',
-      'timestamp_seconds': 2105,
-      'tip': 'Customs attorney or trade logic International as a consultant to help you in '
-             "that process you need to document the fact that you've reviewed your harmonized "
-             'tariff classifications and that helps you be able to prove that you have '
-             'exercised due diligence and reasonable.',
-      'title': 'HTS Classification The Most Important Step 062016 (Steve Fodor)',
-      'url': 'https://www.youtube.com/watch?v=Exy48YwwPtk&t=2105s',
-      'video_id': 'Exy48YwwPtk'},
+      'text': "If I'm keying in a quantity or a value and it's wrong, and I process a duty "
+              "drawback claim based on that, now I have asked customs for more money than I'm "
+              'entitled to.',
+      'timestamp': 1330,
+      'timestamp_label': '[00:22:10]',
+      'timestamp_seconds': 1330,
+      'tip': 'You really want tools that extract data directly from documents and directly from '
+             "ACE so that you're not having someone re-key.",
+      'title': 'Tariffs Killing Your Profit Margins? Duty Drawback Explained by Ariana Cox',
+      'url': 'https://www.youtube.com/watch?v=3N8L-IKPY4A&t=1330s',
+      'video_id': '3N8L-IKPY4A'},
      {'author': 'Alliance Duty Drawback Services',
       'channel': 'Alliance Duty Drawback Services',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:25](https://www.youtube.com/watch?v=mkogoOMopss&t=85s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q7 operational '
-                   'verification).',
+      'markdown': '[00:05:55](https://www.youtube.com/watch?v=UEMZ8mxHAnA&t=355s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "The item maintains its identity throughout the process, and that's what we call "
-              "explicit matching. But what about retail apparel? Clothing doesn't come with "
-              'serial numbers. In cases like this, customs allows companies to use a drawback '
-              'accounting method.',
-      'timestamp': 85,
-      'timestamp_label': '[00:01:25]',
-      'timestamp_seconds': 85,
-      'tip': "The item maintains its identity throughout the process, and that's what we call "
-             "explicit matching. But what about retail apparel? Clothing doesn't come with "
-             'serial numbers. In cases like this, customs allows companies to use a drawback '
-             'accounting method.',
-      'title': 'Unused Merchandise Drawback (Alliance Duty Drawback Services)',
-      'url': 'https://www.youtube.com/watch?v=mkogoOMopss&t=85s',
+      'text': 'If you import a duty paid item valued at $100 and export a substitute valued at '
+              '$50, you would only receive drawback on the $50 value.',
+      'timestamp': 355,
+      'timestamp_label': '[00:05:55]',
+      'timestamp_seconds': 355,
+      'tip': "It's important to substitute similar value exports, otherwise you can leave "
+             'significant recovery opportunity on the table.',
+      'title': 'What is Duty Drawback',
+      'url': 'https://www.youtube.com/watch?v=UEMZ8mxHAnA&t=355s',
+      'video_id': 'UEMZ8mxHAnA'}],
+ 2: [{'author': 'Scarbrough Global',
+      'channel': 'Scarbrough Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:30:38](https://www.youtube.com/watch?v=wEYqdvTPaqM&t=1838s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'The biggest pitfall is missing CBP information requests inside the 5-year window.',
+      'timestamp': 1838,
+      'timestamp_label': '[00:30:38]',
+      'timestamp_seconds': 1838,
+      'tip': 'The biggest pitfall is missing CBP information requests inside the 5-year window.',
+      'title': 'Duty Drawback - Full Version',
+      'url': 'https://www.youtube.com/watch?v=wEYqdvTPaqM&t=1838s',
+      'video_id': 'wEYqdvTPaqM'},
+     {'author': 'Star USA, Inc.',
+      'channel': 'Star USA, Inc.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:34:14](https://www.youtube.com/watch?v=NK99CBNOeJA&t=2054s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'With accelerated payment the refund comes in about three weeks; otherwise you wait '
+              'for liquidation, which can take up to four or five years.',
+      'timestamp': 2054,
+      'timestamp_label': '[00:34:14]',
+      'timestamp_seconds': 2054,
+      'tip': 'With accelerated payment the refund comes in about three weeks; otherwise you wait '
+             'for liquidation, which can take up to four or five years.',
+      'title': 'Drawback - Opportunities, Requirements, & Insights',
+      'url': 'https://www.youtube.com/watch?v=NK99CBNOeJA&t=2054s',
+      'video_id': 'NK99CBNOeJA'},
+     {'author': 'Evana',
+      'channel': 'Evana',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:30](https://www.youtube.com/watch?v=1m5HmGyCEvw&t=30s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "DDP doesn't kill a drawback program.",
+      'timestamp': 30,
+      'timestamp_label': '[00:00:30]',
+      'timestamp_seconds': 30,
+      'tip': "DDP doesn't kill a drawback program.",
+      'title': '6 Hidden Duty Refunds Most Importers Miss',
+      'url': 'https://www.youtube.com/watch?v=1m5HmGyCEvw&t=30s',
+      'video_id': '1m5HmGyCEvw'},
+     {'author': 'Alliance Duty Drawback Services',
+      'channel': 'Alliance Duty Drawback Services',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:26](https://www.youtube.com/watch?v=mkogoOMopss&t=206s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'When substituting merchandise, you can only claim drawback on the lesser of the '
+              'import or export value.',
+      'timestamp': 206,
+      'timestamp_label': '[00:03:26]',
+      'timestamp_seconds': 206,
+      'tip': 'When substituting merchandise, you can only claim drawback on the lesser of the '
+             'import or export value.',
+      'title': 'Unused Merchandise Drawback',
+      'url': 'https://www.youtube.com/watch?v=mkogoOMopss&t=206s',
       'video_id': 'mkogoOMopss'},
-     {'author': 'Customs Directory',
-      'channel': 'Customs Directory',
+     {'author': 'Scarbrough Global',
+      'channel': 'Scarbrough Global',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:47](https://www.youtube.com/watch?v=3WCCVWQIggA&t=407s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q7 operational '
-                   'verification).',
+      'markdown': '[00:00:25](https://www.youtube.com/watch?v=E-PQ2z_UoCM&t=25s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'The system is fair, but the responsibility is all on you, the importer. So, the '
-              "final question you've got to ask yourself is this: When that audit comes, are "
-              'you ready?',
-      'timestamp': 407,
-      'timestamp_label': '[00:06:47]',
-      'timestamp_seconds': 407,
-      'tip': 'The system is fair, but the responsibility is all on you, the importer. So, the '
-             "final question you've got to ask yourself is this: When that audit comes, are "
-             'you ready?',
-      'title': 'Customs Valuation Explained – How Customs Calculate Import Duty (Customs '
-               'Directory)',
-      'url': 'https://www.youtube.com/watch?v=3WCCVWQIggA&t=407s',
-      'video_id': '3WCCVWQIggA'},
-     {'author': 'ISF Solution',
-      'channel': 'ISF Solution',
+      'text': 'Unused merchandise drawback covers imported goods that are exported or destroyed '
+              'without being used, traced to the export by direct identification.',
+      'timestamp': 25,
+      'timestamp_label': '[00:00:25]',
+      'timestamp_seconds': 25,
+      'tip': 'Unused merchandise drawback covers imported goods that are exported or destroyed '
+             'without being used, traced to the export by direct identification.',
+      'title': 'What is Unused Merchandise Drawback when claiming duty drawback ?',
+      'url': 'https://www.youtube.com/watch?v=E-PQ2z_UoCM&t=25s',
+      'video_id': 'E-PQ2z_UoCM'},
+     {'author': 'International Tariff Management',
+      'channel': 'International Tariff Management',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:11](https://www.youtube.com/watch?v=KnedznhIyEs&t=311s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q7 operational '
-                   'verification).',
+      'markdown': '[00:08:37](https://www.youtube.com/watch?v=gf35xQR8Lz0&t=517s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'Relationships or import requirements May necessitate updating the document '
-              'importers should verify that the power of attorney remains current and reflects '
-              'the most accurate arrangement with the customs.',
-      'timestamp': 311,
-      'timestamp_label': '[00:05:11]',
-      'timestamp_seconds': 311,
-      'tip': 'Relationships or import requirements May necessitate updating the document '
-             'importers should verify that the power of attorney remains current and reflects '
-             'the most accurate arrangement with the customs.',
-      'title': 'Empowering Compliance: Customs POA and ISF Relationship (ISF Solution)',
-      'url': 'https://www.youtube.com/watch?v=KnedznhIyEs&t=311s',
-      'video_id': 'KnedznhIyEs'},
+      'text': 'And unfortunately, that company, even though they had an approval and went beyond '
+              'the five years, that company lost $1,000,000 in recovery.',
+      'timestamp': 517,
+      'timestamp_label': '[00:08:37]',
+      'timestamp_seconds': 517,
+      'tip': 'And unfortunately, that company, even though they had an approval and went beyond '
+             'the five years, that company lost $1,000,000 in recovery.',
+      'title': 'ITM How to receive drawback on destroyed merchandise',
+      'url': 'https://www.youtube.com/watch?v=gf35xQR8Lz0&t=517s',
+      'video_id': 'gf35xQR8Lz0'},
+     {'author': 'Scarbrough Global',
+      'channel': 'Scarbrough Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:29](https://www.youtube.com/watch?v=lsd6_oB4p00&t=149s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Customs often denies destruction claims when there is no proof that the destruction '
+              'was supervised.',
+      'timestamp': 149,
+      'timestamp_label': '[00:02:29]',
+      'timestamp_seconds': 149,
+      'tip': 'Customs often denies destruction claims when there is no proof that the destruction '
+             'was supervised.',
+      'title': 'Are there different documents required for destroyed merchandise on duty drawback '
+               '?',
+      'url': 'https://www.youtube.com/watch?v=lsd6_oB4p00&t=149s',
+      'video_id': 'lsd6_oB4p00'},
+     {'author': 'Scarbrough Global',
+      'channel': 'Scarbrough Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:02](https://www.youtube.com/watch?v=m4ePKta6BXo&t=122s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Goods that go zone-in and zone-out never pay duty, but a duty-paid import exported '
+              'into a zone still earns drawback.',
+      'timestamp': 122,
+      'timestamp_label': '[00:02:02]',
+      'timestamp_seconds': 122,
+      'tip': 'Goods that go zone-in and zone-out never pay duty, but a duty-paid import exported '
+             'into a zone still earns drawback.',
+      'title': 'Duty Drawback and Foreign Trade Zone FTZ',
+      'url': 'https://www.youtube.com/watch?v=m4ePKta6BXo&t=122s',
+      'video_id': 'm4ePKta6BXo'},
+     {'author': 'Adriel Miller',
+      'channel': 'Adriel Miller',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:56](https://www.youtube.com/watch?v=wL00BhzuPec&t=116s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'ISF failures can forfeit your drawback and draw penalties.',
+      'timestamp': 116,
+      'timestamp_label': '[00:01:56]',
+      'timestamp_seconds': 116,
+      'tip': 'ISF failures can forfeit your drawback and draw penalties.',
+      'title': 'Mastering ISF Compliance for Duty Drawbacks',
+      'url': 'https://www.youtube.com/watch?v=wL00BhzuPec&t=116s',
+      'video_id': 'wL00BhzuPec'},
+     {'author': 'Flexport',
+      'channel': 'Flexport',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:37](https://www.youtube.com/watch?v=1_L7fnmAAU0&t=157s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'It is only 99% because 1% is kept in customs for administrative fees.',
+      'timestamp': 157,
+      'timestamp_label': '[00:02:37]',
+      'timestamp_seconds': 157,
+      'tip': 'It is only 99% because 1% is kept in customs for administrative fees.',
+      'title': 'Optimizing Duty Drawback for Maximum Refunds',
+      'url': 'https://www.youtube.com/watch?v=1_L7fnmAAU0&t=157s',
+      'video_id': '1_L7fnmAAU0'},
+     {'author': 'Flexport',
+      'channel': 'Flexport',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:36:06](https://www.youtube.com/watch?v=1_L7fnmAAU0&t=2166s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'The advance fees of 2 to 10% is dependent on whether a claim has been approved for '
+              'accelerated payment or not.',
+      'timestamp': 2166,
+      'timestamp_label': '[00:36:06]',
+      'timestamp_seconds': 2166,
+      'tip': 'The advance fees of 2 to 10% is dependent on whether a claim has been approved for '
+             'accelerated payment or not.',
+      'title': 'Optimizing Duty Drawback for Maximum Refunds',
+      'url': 'https://www.youtube.com/watch?v=1_L7fnmAAU0&t=2166s',
+      'video_id': '1_L7fnmAAU0'},
+     {'author': 'Scarbrough Global',
+      'channel': 'Scarbrough Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:57](https://www.youtube.com/watch?v=fI28fmPlbPA&t=177s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "If the 10 digit HTS is also an other provision there's no substitution drawback "
+              'allowed.',
+      'timestamp': 177,
+      'timestamp_label': '[00:02:57]',
+      'timestamp_seconds': 177,
+      'tip': "If the 10 digit HTS is also an other provision there's no substitution drawback "
+             'allowed.',
+      'title': 'What is Substitution Drawback when claiming duty drawback ?',
+      'url': 'https://www.youtube.com/watch?v=fI28fmPlbPA&t=177s',
+      'video_id': 'fI28fmPlbPA'},
+     {'author': 'Flexport',
+      'channel': 'Flexport',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:30:57](https://www.youtube.com/watch?v=A7RUPXhyx4M&t=1857s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "We're putting the same data through our software as opposed to the legacy software.",
+      'timestamp': 1857,
+      'timestamp_label': '[00:30:57]',
+      'timestamp_seconds': 1857,
+      'tip': "We're putting the same data through our software as opposed to the legacy software.",
+      'title': 'Maximizing Duty Drawback with Flexport',
+      'url': 'https://www.youtube.com/watch?v=A7RUPXhyx4M&t=1857s',
+      'video_id': 'A7RUPXhyx4M'},
      {'author': 'TalkingLogistics',
       'channel': 'TalkingLogistics',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:36](https://www.youtube.com/watch?v=BCWMDlUCSx4&t=636s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q7 operational '
-                   'verification).',
+      'markdown': '[00:07:43](https://www.youtube.com/watch?v=BCWMDlUCSx4&t=463s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'Filing process had been implemented as in that system it was basically you know '
-              'you file and you create a drawback header sort of where you just had the.',
-      'timestamp': 636,
-      'timestamp_label': '[00:10:36]',
-      'timestamp_seconds': 636,
-      'tip': 'Filing process had been implemented as in that system it was basically you know '
-             'you file and you create a drawback header sort of where you just had the.',
-      'title': 'Why Duty Drawback is Making a Comeback (TalkingLogistics)',
-      'url': 'https://www.youtube.com/watch?v=BCWMDlUCSx4&t=636s',
+      'text': "It's estimated that I think around five to six hundred million is recovered "
+              'annually.',
+      'timestamp': 463,
+      'timestamp_label': '[00:07:43]',
+      'timestamp_seconds': 463,
+      'tip': "It's estimated that I think around five to six hundred million is recovered "
+             'annually.',
+      'title': 'Why Duty Drawback is Making a Comeback',
+      'url': 'https://www.youtube.com/watch?v=BCWMDlUCSx4&t=463s',
       'video_id': 'BCWMDlUCSx4'},
      {'author': 'Scarbrough Global',
       'channel': 'Scarbrough Global',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:34](https://www.youtube.com/watch?v=52Q7Sv1KF4Q&t=334s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q7 operational '
-                   'verification).',
+      'markdown': '[00:32:19](https://www.youtube.com/watch?v=6Ogi9iKVSTE&t=1939s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'System into Ace um import truck Manifest this is important because cargo that '
-              "moves into the United States especially if we're talking Mexico um gets a "
-              'truck.',
-      'timestamp': 334,
-      'timestamp_label': '[00:05:34]',
-      'timestamp_seconds': 334,
-      'tip': 'System into Ace um import truck Manifest this is important because cargo that '
-             "moves into the United States especially if we're talking Mexico um gets a truck.",
-      'title': 'ACE Question/Answer Forum: Session One Introduction (Scarbrough Global)',
-      'url': 'https://www.youtube.com/watch?v=52Q7Sv1KF4Q&t=334s',
-      'video_id': '52Q7Sv1KF4Q'},
-     {'author': 'Emran Hossin',
-      'channel': 'Emran Hossin',
+      'text': 'Almost every time you file your first claim you are going to get hit with a full '
+              'desk review.',
+      'timestamp': 1939,
+      'timestamp_label': '[00:32:19]',
+      'timestamp_seconds': 1939,
+      'tip': 'Almost every time you file your first claim you are going to get hit with a full '
+             'desk review.',
+      'title': 'Duty Drawback - Live Webinar',
+      'url': 'https://www.youtube.com/watch?v=6Ogi9iKVSTE&t=1939s',
+      'video_id': '6Ogi9iKVSTE'},
+     {'author': 'Thompson Hine LLP',
+      'channel': 'Thompson Hine LLP',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:45](https://www.youtube.com/watch?v=8Em9en9nPzQ&t=165s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q7 operational '
-                   'verification).',
+      'markdown': '[00:27:58](https://www.youtube.com/watch?v=WqGvMD-AOqg&t=1678s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'Act now contact the person who shared this video with you to start your claim '
-              "they'll guide you through the entire process to ensure your business gets what "
-              "it's entitled to remember the deadline is February 4th 2025 don't wait cards "
-              "settlement. org recover what's yours.",
-      'timestamp': 165,
-      'timestamp_label': '[00:02:45]',
-      'timestamp_seconds': 165,
-      'tip': 'Act now contact the person who shared this video with you to start your claim '
-             "they'll guide you through the entire process to ensure your business gets what "
-             "it's entitled to remember the deadline is February 4th 2025 don't wait cards "
-             "settlement. org recover what's yours.",
-      'title': 'Claim Your Share of the $5.54 Billion Visa/Mastercard Settlement (Emran '
-               'Hossin)',
-      'url': 'https://www.youtube.com/watch?v=8Em9en9nPzQ&t=165s',
-      'video_id': '8Em9en9nPzQ'},
-     {'author': 'Clark-Esposito Law Firm P.C.',
-      'channel': 'Clark-Esposito Law Firm P.C.',
+      'text': "So to state that differently you're only getting refunded the smaller of the two "
+              'duty amounts which prevents over refunds when substituted goods are used.',
+      'timestamp': 1678,
+      'timestamp_label': '[00:27:58]',
+      'timestamp_seconds': 1678,
+      'tip': "So to state that differently you're only getting refunded the smaller of the two "
+             'duty amounts which prevents over refunds when substituted goods are used.',
+      'title': '11 19 2025 SmarTrade Fundamentals 2 25 Duty Drawback Opportunities',
+      'url': 'https://www.youtube.com/watch?v=WqGvMD-AOqg&t=1678s',
+      'video_id': 'WqGvMD-AOqg'},
+     {'author': 'World Trade Center Denver',
+      'channel': 'World Trade Center Denver',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:51](https://www.youtube.com/watch?v=pwhkHF1ttlo&t=51s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q7 operational '
-                   'verification).',
+      'markdown': '[00:08:26](https://www.youtube.com/watch?v=SO9sA-x5K0k&t=506s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'S customs intends to keep it and sets worth its reasons for having decided this '
-              'way. CBP sends this notification so that an interested party can try and '
-              'recover the merchandise through a government administrative process.',
-      'timestamp': 51,
-      'timestamp_label': '[00:00:51]',
-      'timestamp_seconds': 51,
-      'tip': 'S customs intends to keep it and sets worth its reasons for having decided this '
-             'way. CBP sends this notification so that an interested party can try and recover '
-             'the merchandise through a government administrative process.',
-      'title': "What to Do If You've Received a U.S. Customs & Border Protection (CBP) Seizure "
-               'Notice (Clark-Esposito Law Firm P.C.)',
-      'url': 'https://www.youtube.com/watch?v=pwhkHF1ttlo&t=51s',
-      'video_id': 'pwhkHF1ttlo'},
-     {'author': 'Star USA, Inc.',
-      'channel': 'Star USA, Inc.',
+      'text': "So we don't get paid until you do.",
+      'timestamp': 506,
+      'timestamp_label': '[00:08:26]',
+      'timestamp_seconds': 506,
+      'tip': "So we don't get paid until you do.",
+      'title': 'Duty Drawback-Beyond the Basics',
+      'url': 'https://www.youtube.com/watch?v=SO9sA-x5K0k&t=506s',
+      'video_id': 'SO9sA-x5K0k'},
+     {'author': 'World Trade Center Denver',
+      'channel': 'World Trade Center Denver',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:13:00](https://www.youtube.com/watch?v=BwGDeEGn1Wg&t=780s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q7 operational '
-                   'verification).',
+      'markdown': '[00:44:09](https://www.youtube.com/watch?v=SO9sA-x5K0k&t=2649s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': "There's the hs or a harmonized system that the wco publishes this is the same "
-              "across all 180 some members of the wco and it's what each individual country's "
-              'basis is for making their hts or h s or h c.',
-      'timestamp': 780,
-      'timestamp_label': '[00:13:00]',
-      'timestamp_seconds': 780,
-      'tip': "There's the hs or a harmonized system that the wco publishes this is the same "
-             "across all 180 some members of the wco and it's what each individual country's "
-             'basis is for making their hts or h s or h c.',
-      'title': 'HTSUS Classification Webinar (Star USA, Inc.)',
-      'url': 'https://www.youtube.com/watch?v=BwGDeEGn1Wg&t=780s',
-      'video_id': 'BwGDeEGn1Wg'},
-     {'author': 'Scarbrough Global',
-      'channel': 'Scarbrough Global',
+      'text': 'A majority of the 232s are not eligible for duty drawback.',
+      'timestamp': 2649,
+      'timestamp_label': '[00:44:09]',
+      'timestamp_seconds': 2649,
+      'tip': 'A majority of the 232s are not eligible for duty drawback.',
+      'title': 'Duty Drawback-Beyond the Basics',
+      'url': 'https://www.youtube.com/watch?v=SO9sA-x5K0k&t=2649s',
+      'video_id': 'SO9sA-x5K0k'}],
+ 3: [{'author': 'Evana',
+      'channel': 'Evana',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:34](https://www.youtube.com/watch?v=Bse6lVDGA_U&t=94s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q7 operational '
-                   'verification).',
+      'markdown': '[00:02:18](https://www.youtube.com/watch?v=YVqE1V68BkI&t=138s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': "Products but there are specific customs requirements that are out there there's "
-              "a list I can't remember how many was on it but I do have that list and I'm "
-              'happy to send that to to you and we can put that out there with with this '
-              'presentation on our website as well.',
-      'timestamp': 94,
-      'timestamp_label': '[00:01:34]',
-      'timestamp_seconds': 94,
-      'tip': "Products but there are specific customs requirements that are out there there's "
-             "a list I can't remember how many was on it but I do have that list and I'm happy "
-             'to send that to to you and we can put that out there with with this presentation '
-             'on our website as well.',
-      'title': 'Post Summary Corrections and 7501 (Scarbrough Global)',
-      'url': 'https://www.youtube.com/watch?v=Bse6lVDGA_U&t=94s',
-      'video_id': 'Bse6lVDGA_U'},
-     {'author': 'USA Customs Clearance',
-      'channel': 'USA Customs Clearance',
+      'text': "The ACE portal is CBP's system and every importer can have their own account. It is "
+              "free and it's basically a window into everything that CBP knows about your imports.",
+      'timestamp': 138,
+      'timestamp_label': '[00:02:18]',
+      'timestamp_seconds': 138,
+      'tip': "The ACE portal is CBP's system and every importer can have their own account. It is "
+             "free and it's basically a window into everything that CBP knows about your imports.",
+      'title': 'IEEPA Tariff Refunds vs. Duty Drawback: What Importers Need to Know (2026)',
+      'url': 'https://www.youtube.com/watch?v=YVqE1V68BkI&t=138s',
+      'video_id': 'YVqE1V68BkI'},
+     {'author': 'Tariffs Lawsuit',
+      'channel': 'Tariffs Lawsuit',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:04](https://www.youtube.com/watch?v=khfmXSwD3DE&t=184s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q7 operational '
-                   'verification).',
+      'markdown': '[00:02:08](https://www.youtube.com/watch?v=DOHCXtY_zI0&t=128s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': "Step one, identify your eligible imports. You'll need to pull your entry "
-              'records, specifically CBP form 7501, to find shipments where you paid section '
-              '301 duties. Step two, match those imports to your exports or to products you '
-              'manufactured for export.',
-      'timestamp': 184,
-      'timestamp_label': '[00:03:04]',
-      'timestamp_seconds': 184,
-      'tip': "Step one, identify your eligible imports. You'll need to pull your entry "
-             'records, specifically CBP form 7501, to find shipments where you paid section '
-             '301 duties. Step two, match those imports to your exports or to products you '
-             'manufactured for export.',
-      'title': 'Section 301 Duty Drawback Explained (USA Customs Clearance)',
-      'url': 'https://www.youtube.com/watch?v=khfmXSwD3DE&t=184s',
-      'video_id': 'khfmXSwD3DE'}],
- 8: [{'author': 'Trade Risk Guaranty',
-      'channel': 'Trade Risk Guaranty',
+      'text': "By CBP's own reporting, only about 70% of the declarations passed even the initial "
+              'validation. That means roughly one in three failed at the door.',
+      'timestamp': 128,
+      'timestamp_label': '[00:02:08]',
+      'timestamp_seconds': 128,
+      'tip': "By CBP's own reporting, only about 70% of the declarations passed even the initial "
+             'validation. That means roughly one in three failed at the door.',
+      'title': 'Tariff Refunds for Importers: Your Business May Be Owed Money After Supreme Court '
+               'Ruling',
+      'url': 'https://www.youtube.com/watch?v=DOHCXtY_zI0&t=128s',
+      'video_id': 'DOHCXtY_zI0'},
+     {'author': 'Tariffs Lawsuit',
+      'channel': 'Tariffs Lawsuit',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:56:06](https://www.youtube.com/watch?v=M68ZVWdgp9I&t=3366s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:02:26](https://www.youtube.com/watch?v=DOHCXtY_zI0&t=146s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'Eagle I Ace software, that bond dashboard, getting the information directly to '
-              "you, and it it's not necessarily as full or complete as importer Ace data.",
-      'timestamp': 3366,
-      'timestamp_label': '[00:56:06]',
-      'timestamp_seconds': 3366,
-      'tip': 'Eagle I Ace software, that bond dashboard, getting the information directly to '
-             "you, and it it's not necessarily as full or complete as importer Ace data.",
-      'title': 'Managing Open U.S. Customs Bond Liability [Full Webinar] (Trade Risk Guaranty)',
-      'url': 'https://www.youtube.com/watch?v=M68ZVWdgp9I&t=3366s',
-      'video_id': 'M68ZVWdgp9I'},
-     {'author': 'CustomsPrep — Customs Broker License Exam',
-      'channel': 'CustomsPrep — Customs Broker License Exam',
+      'text': 'Once a CAPE declaration is accepted, it cannot be amended. If bad data slips '
+              "through, you don't get to fix that submission.",
+      'timestamp': 146,
+      'timestamp_label': '[00:02:26]',
+      'timestamp_seconds': 146,
+      'tip': 'Once a CAPE declaration is accepted, it cannot be amended. If bad data slips '
+             "through, you don't get to fix that submission.",
+      'title': 'Tariff Refunds for Importers: Your Business May Be Owed Money After Supreme Court '
+               'Ruling',
+      'url': 'https://www.youtube.com/watch?v=DOHCXtY_zI0&t=146s',
+      'video_id': 'DOHCXtY_zI0'},
+     {'author': 'Tariffs Lawsuit',
+      'channel': 'Tariffs Lawsuit',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:21](https://www.youtube.com/watch?v=qORXZ_TDyKg&t=261s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:00:35](https://www.youtube.com/watch?v=dWEik4YquEE&t=35s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'ACE Entry Summary Instructions, version 2. 4A, describes each data element by '
-              'name, not by block number. Learn the fields by what they hold, and a '
-              "renumbering cannot touch you. Every past exam with CBP's answer key and the "
-              'exhibits, this 7501 included, is at customsprep.',
-      'timestamp': 261,
-      'timestamp_label': '[00:04:21]',
-      'timestamp_seconds': 261,
-      'tip': 'ACE Entry Summary Instructions, version 2. 4A, describes each data element by '
-             'name, not by block number. Learn the fields by what they hold, and a renumbering '
-             "cannot touch you. Every past exam with CBP's answer key and the exhibits, this "
-             '7501 included, is at customsprep.',
-      'title': 'CBP Form 7501 Entry Summary Explained, Block by Block — and What Changed in '
-               '2026 (CustomsPrep — Customs Broker License Exam)',
-      'url': 'https://www.youtube.com/watch?v=qORXZ_TDyKg&t=261s',
-      'video_id': 'qORXZ_TDyKg'},
-     {'author': 'KYG Trade',
-      'channel': 'KYG Trade',
+      'text': "We're encouraging our clients to allow us to file a claim or a lawsuit in the Court "
+              'of International Trade so that you are a party in front of Judge Eaton and he has '
+              'the power to order the refund immediately.',
+      'timestamp': 35,
+      'timestamp_label': '[00:00:35]',
+      'timestamp_seconds': 35,
+      'tip': "We're encouraging our clients to allow us to file a claim or a lawsuit in the Court "
+             'of International Trade so that you are a party in front of Judge Eaton and he has '
+             'the power to order the refund immediately.',
+      'title': 'Tariff Refund Update: Why Importers May Need To File Now',
+      'url': 'https://www.youtube.com/watch?v=dWEik4YquEE&t=35s',
+      'video_id': 'dWEik4YquEE'},
+     {'author': "Finn's Fine Print",
+      'channel': "Finn's Fine Print",
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:50](https://www.youtube.com/watch?v=myOI9hprs0c&t=470s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:03:45](https://www.youtube.com/watch?v=Pf2fDVQXfmk&t=225s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': '2022 uh the brokerage rules were made much firmer requiring direct powers of '
-              'attorney between a broker and an importer. So this platform had some other '
-              'services. It also allowed an AI tool for classification.',
-      'timestamp': 470,
-      'timestamp_label': '[00:07:50]',
-      'timestamp_seconds': 470,
-      'tip': '2022 uh the brokerage rules were made much firmer requiring direct powers of '
-             'attorney between a broker and an importer. So this platform had some other '
-             'services. It also allowed an AI tool for classification.',
-      'title': 'CBP Ruling HQ 350722 & Guardrails for AI in Trade Compliance (KYG Trade)',
-      'url': 'https://www.youtube.com/watch?v=myOI9hprs0c&t=470s',
-      'video_id': 'myOI9hprs0c'},
-     {'author': 'Ask The Customs Manager',
-      'channel': 'Ask The Customs Manager',
+      'text': "About $737 million was still trapped, because the importers hadn't given Customs "
+              'their bank details. The coat check only hands coats to people who show up.',
+      'timestamp': 225,
+      'timestamp_label': '[00:03:45]',
+      'timestamp_seconds': 225,
+      'tip': "About $737 million was still trapped, because the importers hadn't given Customs "
+             'their bank details. The coat check only hands coats to people who show up.',
+      'title': 'You Paid the Tariffs. Target Just Got the Refund.',
+      'url': 'https://www.youtube.com/watch?v=Pf2fDVQXfmk&t=225s',
+      'video_id': 'Pf2fDVQXfmk'},
+     {'author': "Finn's Fine Print",
+      'channel': "Finn's Fine Print",
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:40](https://www.youtube.com/watch?v=NRCd8c6t8rY&t=100s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:08:29](https://www.youtube.com/watch?v=Pf2fDVQXfmk&t=509s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'Processing paper checks costs money and time. Electronic transfers are cheaper '
-              "and faster for them. Either way, it's happening. February 6th is the cutoff. Go "
-              "to the AC secure data portal. That's CBP's automated commercial environment "
-              'system.',
-      'timestamp': 100,
-      'timestamp_label': '[00:01:40]',
-      'timestamp_seconds': 100,
-      'tip': 'Processing paper checks costs money and time. Electronic transfers are cheaper '
-             "and faster for them. Either way, it's happening. February 6th is the cutoff. Go "
-             "to the AC secure data portal. That's CBP's automated commercial environment "
-             'system.',
-      'title': 'CBP ACH Refund Deadline 2026: Importers Must Enroll by February 6 or Lose '
-               'Tariff Refunds (Ask The Customs Manager)',
-      'url': 'https://www.youtube.com/watch?v=NRCd8c6t8rY&t=100s',
-      'video_id': 'NRCd8c6t8rY'},
-     {'author': 'International Trade Council',
-      'channel': 'International Trade Council',
+      'text': 'If you paid one at your door back then, that email is your ticket stub, the '
+              'clearest path to a refund with your name on it. Because a refund follows the '
+              'ticket, not the wallet.',
+      'timestamp': 509,
+      'timestamp_label': '[00:08:29]',
+      'timestamp_seconds': 509,
+      'tip': 'If you paid one at your door back then, that email is your ticket stub, the clearest '
+             'path to a refund with your name on it. Because a refund follows the ticket, not the '
+             'wallet.',
+      'title': 'You Paid the Tariffs. Target Just Got the Refund.',
+      'url': 'https://www.youtube.com/watch?v=Pf2fDVQXfmk&t=509s',
+      'video_id': 'Pf2fDVQXfmk'},
+     {'author': 'PolitiClash',
+      'channel': 'PolitiClash',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:47:38](https://www.youtube.com/watch?v=O5a8FOALaXk&t=2858s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:09:01](https://www.youtube.com/watch?v=uhEb06Zt2cw&t=541s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'Number level um because part number level detail is not always available either '
-              'through the customs broker through the ace portal aces custom system.',
-      'timestamp': 2858,
-      'timestamp_label': '[00:47:38]',
-      'timestamp_seconds': 2858,
-      'tip': 'Number level um because part number level detail is not always available either '
-             'through the customs broker through the ace portal aces custom system.',
-      'title': 'WEBINAR: Duty Drawback 101 - Receiving refunds on import duties (International '
-               'Trade Council)',
-      'url': 'https://www.youtube.com/watch?v=O5a8FOALaXk&t=2858s',
-      'video_id': 'O5a8FOALaXk'},
-     {'author': 'ImportGenius Korea',
-      'channel': 'ImportGenius Korea',
+      'text': 'The refund belongs to the importer of record, full stop. No court order, and no '
+              'Customs rule, requires a cent of it to be passed through.',
+      'timestamp': 541,
+      'timestamp_label': '[00:09:01]',
+      'timestamp_seconds': 541,
+      'tip': 'The refund belongs to the importer of record, full stop. No court order, and no '
+             'Customs rule, requires a cent of it to be passed through.',
+      'title': 'The $166 Billion Tariff Refund: Who Actually Gets It, Checked',
+      'url': 'https://www.youtube.com/watch?v=uhEb06Zt2cw&t=541s',
+      'video_id': 'uhEb06Zt2cw'},
+     {'author': 'Who Pays For It',
+      'channel': 'Who Pays For It',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:46](https://www.youtube.com/watch?v=HLvI3nZIlT4&t=46s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:06:47](https://www.youtube.com/watch?v=q4JXW2PbDBk&t=407s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': "Products search by the name of the Importer name of the supplier Etc so let's "
-              'select the product and then just search the table and then we are going to see '
-              'the import data of table uh from USA for the last 12 months click search.',
-      'timestamp': 46,
-      'timestamp_label': '[00:00:46]',
-      'timestamp_seconds': 46,
-      'tip': "Products search by the name of the Importer name of the supplier Etc so let's "
-             'select the product and then just search the table and then we are going to see '
-             'the import data of table uh from USA for the last 12 months click search.',
-      'title': 'How to use the ImportGenius Application_Eng Ver (ImportGenius Korea)',
-      'url': 'https://www.youtube.com/watch?v=HLvI3nZIlT4&t=46s',
-      'video_id': 'HLvI3nZIlT4'},
+      'text': 'Dana paid it, her customers paid it, and supplier C still gets the full refund with '
+              'interest. All three get the same check.',
+      'timestamp': 407,
+      'timestamp_label': '[00:06:47]',
+      'timestamp_seconds': 407,
+      'tip': 'Dana paid it, her customers paid it, and supplier C still gets the full refund with '
+             'interest. All three get the same check.',
+      'title': 'Who Gets the $166 Billion Tariff Refund? (Not You)',
+      'url': 'https://www.youtube.com/watch?v=q4JXW2PbDBk&t=407s',
+      'video_id': 'q4JXW2PbDBk'},
+     {'author': 'Casually Capital',
+      'channel': 'Casually Capital',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:30](https://www.youtube.com/watch?v=yHFIXvO5siM&t=150s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'A fund offers 300,000 for the claim. The fund takes on the form filling, the '
+              'waiting, and the risk that the government appeals.',
+      'timestamp': 150,
+      'timestamp_label': '[00:02:30]',
+      'timestamp_seconds': 150,
+      'tip': 'A fund offers 300,000 for the claim. The fund takes on the form filling, the '
+             'waiting, and the risk that the government appeals.',
+      'title': 'Who Actually Gets The $126 Billion Tariff Refund?',
+      'url': 'https://www.youtube.com/watch?v=yHFIXvO5siM&t=150s',
+      'video_id': 'yHFIXvO5siM'},
+     {'author': 'Frontier Report',
+      'channel': 'Frontier Report',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:55](https://www.youtube.com/watch?v=FICFEFAPgi0&t=655s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'It found at least nine companies that disclosed using their refunds for bonuses '
+              'rather than paying consumers back.',
+      'timestamp': 655,
+      'timestamp_label': '[00:10:55]',
+      'timestamp_seconds': 655,
+      'tip': 'It found at least nine companies that disclosed using their refunds for bonuses '
+             'rather than paying consumers back.',
+      'title': 'Who Actually Gets the $166B Tariff Refund?',
+      'url': 'https://www.youtube.com/watch?v=FICFEFAPgi0&t=655s',
+      'video_id': 'FICFEFAPgi0'},
+     {'author': 'Lutz',
+      'channel': 'Lutz',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:25:09](https://www.youtube.com/watch?v=6Y30Cf9AeYE&t=1509s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "For phase three, I've still got 5,000 sitting out there. But let's say that 5,000 "
+              'is going to cost me $4,000 to recover. I may decide at that point not to go '
+              'forward.',
+      'timestamp': 1509,
+      'timestamp_label': '[00:25:09]',
+      'timestamp_seconds': 1509,
+      'tip': "For phase three, I've still got 5,000 sitting out there. But let's say that 5,000 is "
+             'going to cost me $4,000 to recover. I may decide at that point not to go forward.',
+      'title': 'IEEPA Tariff Refund Opportunities: What Businesses Need to Know',
+      'url': 'https://www.youtube.com/watch?v=6Y30Cf9AeYE&t=1509s',
+      'video_id': '6Y30Cf9AeYE'},
+     {'author': 'Opscale Exchange',
+      'channel': 'Opscale Exchange',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:25:42](https://www.youtube.com/watch?v=t98WTC5Cm9o&t=1542s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Customs played some dirty tricks actually; at some point they liquidated entries '
+              'before the 314-day expiration.',
+      'timestamp': 1542,
+      'timestamp_label': '[00:25:42]',
+      'timestamp_seconds': 1542,
+      'tip': 'Customs played some dirty tricks actually; at some point they liquidated entries '
+             'before the 314-day expiration.',
+      'title': 'IEEPA Tariff Refunds: How Importers Get Their Money Back | Thompson Coburn x '
+               'Opscale',
+      'url': 'https://www.youtube.com/watch?v=t98WTC5Cm9o&t=1542s',
+      'video_id': 't98WTC5Cm9o'},
      {'author': 'Freightos',
       'channel': 'Freightos',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:10](https://www.youtube.com/watch?v=bZWPrOasGFY&t=130s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:01:55](https://www.youtube.com/watch?v=bZWPrOasGFY&t=115s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': "It's at that point where things might get a little bit more complicated, where "
-              "you're going to want the assistance of a customs broker. But effectively, you "
-              "just have to either if you have access to ACE, you'll go into the CAPE portal "
-              'when it opens.',
-      'timestamp': 130,
-      'timestamp_label': '[00:02:10]',
-      'timestamp_seconds': 130,
-      'tip': "It's at that point where things might get a little bit more complicated, where "
-             "you're going to want the assistance of a customs broker. But effectively, you "
-             "just have to either if you have access to ACE, you'll go into the CAPE portal "
-             'when it opens.',
-      'title': 'IEEPA Tariff Refunds: How, What, When...And Interest! #tradewar #tariffs '
-               '#customs (Freightos)',
-      'url': 'https://www.youtube.com/watch?v=bZWPrOasGFY&t=130s',
+      'text': "Once CAPE has reviewed what you've submitted, and this is automated, it's then "
+              'going to a manual review. And US CBP is going to be scrutinizing this, for sure.',
+      'timestamp': 115,
+      'timestamp_label': '[00:01:55]',
+      'timestamp_seconds': 115,
+      'tip': "Once CAPE has reviewed what you've submitted, and this is automated, it's then going "
+             'to a manual review. And US CBP is going to be scrutinizing this, for sure.',
+      'title': 'IEEPA Tariff Refunds: How, What, When...And Interest! #tradewar #tariffs #customs',
+      'url': 'https://www.youtube.com/watch?v=bZWPrOasGFY&t=115s',
       'video_id': 'bZWPrOasGFY'},
-     {'author': 'Evana',
-      'channel': 'Evana',
+     {'author': 'Leyton USA',
+      'channel': 'Leyton USA',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:04](https://www.youtube.com/watch?v=YVqE1V68BkI&t=124s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:24:39](https://www.youtube.com/watch?v=JL0JHTlUx4I&t=1479s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': "'s happening with your inventory. There's no better place to be than at the "
-              'beginning of a runway. Do you have an ACE portal set up? The ACE portal is '
-              "CBC's system and every [clears throat] importer can have their own account.",
-      'timestamp': 124,
-      'timestamp_label': '[00:02:04]',
-      'timestamp_seconds': 124,
-      'tip': "'s happening with your inventory. There's no better place to be than at the "
-             "beginning of a runway. Do you have an ACE portal set up? The ACE portal is CBC's "
-             'system and every [clears throat] importer can have their own account.',
-      'title': 'IEEPA Tariff Refunds vs. Duty Drawback: What Importers Need to Know (2026) '
-               '(Evana)',
-      'url': 'https://www.youtube.com/watch?v=YVqE1V68BkI&t=124s',
-      'video_id': 'YVqE1V68BkI'},
-     {'author': 'ImportGenius',
-      'channel': 'ImportGenius',
+      'text': 'It is mandatory to have a US bank account, and in particular in ACH, it must be a '
+              'USD account.',
+      'timestamp': 1479,
+      'timestamp_label': '[00:24:39]',
+      'timestamp_seconds': 1479,
+      'tip': 'It is mandatory to have a US bank account, and in particular in ACH, it must be a '
+             'USD account.',
+      'title': 'WEBINAR - IEEPA Tariff Refunds: Recover Overpaid Duties and Maximize Cross-Border '
+               'Savings',
+      'url': 'https://www.youtube.com/watch?v=JL0JHTlUx4I&t=1479s',
+      'video_id': 'JL0JHTlUx4I'},
+     {'author': 'Commercial Funding Marketplace',
+      'channel': 'Commercial Funding Marketplace',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:59](https://www.youtube.com/watch?v=Zdmg7G-W9_Q&t=119s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:03:29](https://www.youtube.com/watch?v=LaWXf8aLv1o&t=209s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'Back over to to the search uh shipment search in import genius and it shows me '
-              'the last uh last one year of data for that company now in some cases you may.',
-      'timestamp': 119,
-      'timestamp_label': '[00:01:59]',
-      'timestamp_seconds': 119,
-      'tip': 'Back over to to the search uh shipment search in import genius and it shows me '
-             'the last uh last one year of data for that company now in some cases you may.',
-      'title': 'Import Genius Visual Mapping Instruction (ImportGenius)',
-      'url': 'https://www.youtube.com/watch?v=Zdmg7G-W9_Q&t=119s',
-      'video_id': 'Zdmg7G-W9_Q'},
-     {'author': 'Flexport',
-      'channel': 'Flexport',
+      'text': "We're now seeing offers in the range of 55% to as high as 75% of the total claim "
+              'value.',
+      'timestamp': 209,
+      'timestamp_label': '[00:03:29]',
+      'timestamp_seconds': 209,
+      'tip': "We're now seeing offers in the range of 55% to as high as 75% of the total claim "
+             'value.',
+      'title': 'IEEPA Tariff Refund Buyout: The Process',
+      'url': 'https://www.youtube.com/watch?v=LaWXf8aLv1o&t=209s',
+      'video_id': 'LaWXf8aLv1o'},
+     {'author': 'Border & Bench',
+      'channel': 'Border & Bench',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:21:52](https://www.youtube.com/watch?v=A7RUPXhyx4M&t=1312s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:08:45](https://www.youtube.com/watch?v=Zq36LwbWWJc&t=525s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': "'re able to generate results within our software but then took the same data "
-              "and spent unfortunately it takes a lot longer otherwise we'd have a lot more "
-              'case studies.',
-      'timestamp': 1312,
-      'timestamp_label': '[00:21:52]',
-      'timestamp_seconds': 1312,
-      'tip': "'re able to generate results within our software but then took the same data and "
-             "spent unfortunately it takes a lot longer otherwise we'd have a lot more case "
-             'studies.',
-      'title': 'Maximizing Duty Drawback with Flexport (Flexport)',
-      'url': 'https://www.youtube.com/watch?v=A7RUPXhyx4M&t=1312s',
-      'video_id': 'A7RUPXhyx4M'},
-     {'author': 'ImportGenius',
-      'channel': 'ImportGenius',
+      'text': 'Anyone who offers to get your tariff refund for an upfront fee is a red flag. Never '
+              'pay to get a refund.',
+      'timestamp': 525,
+      'timestamp_label': '[00:08:45]',
+      'timestamp_seconds': 525,
+      'tip': 'Anyone who offers to get your tariff refund for an upfront fee is a red flag. Never '
+             'pay to get a refund.',
+      'title': '$126 Billion Tariff Refund — Will YOU Get Any Money?',
+      'url': 'https://www.youtube.com/watch?v=Zq36LwbWWJc&t=525s',
+      'video_id': 'Zq36LwbWWJc'},
+     {'author': 'Plainly Public',
+      'channel': 'Plainly Public',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:36](https://www.youtube.com/watch?v=irUncYGL5Jg&t=156s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:05:17](https://www.youtube.com/watch?v=h-PcJgVckuw&t=317s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'Data by by their name you can do all kinds of things you can merge this into '
-              'another database for each of them you have the contact.',
-      'timestamp': 156,
-      'timestamp_label': '[00:02:36]',
-      'timestamp_seconds': 156,
-      'tip': 'Data by by their name you can do all kinds of things you can merge this into '
-             'another database for each of them you have the contact.',
-      'title': 'Marble Imports (ImportGenius)',
-      'url': 'https://www.youtube.com/watch?v=irUncYGL5Jg&t=156s',
-      'video_id': 'irUncYGL5Jg'},
-     {'author': '💎Kiona 職場 x 行銷筆記💎',
-      'channel': '💎Kiona 職場 x 行銷筆記💎',
+      'text': 'The Cato Institute estimated that while the money waited, interest was piling up at '
+              'about $700 million a month.',
+      'timestamp': 317,
+      'timestamp_label': '[00:05:17]',
+      'timestamp_seconds': 317,
+      'tip': 'The Cato Institute estimated that while the money waited, interest was piling up at '
+             'about $700 million a month.',
+      'title': '$126 BILLION in Tariff Refunds Are Going Out. Not to You.',
+      'url': 'https://www.youtube.com/watch?v=h-PcJgVckuw&t=317s',
+      'video_id': 'h-PcJgVckuw'},
+     {'author': 'DownstreamDaily',
+      'channel': 'DownstreamDaily',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:43](https://www.youtube.com/watch?v=LggBClCtXNY&t=523s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:04:44](https://www.youtube.com/watch?v=GngE-xXnI_g&t=284s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'Viewing and also oneon-one Human Assistance the after service is very important '
-              'and we will have real person and not robot to serve you for more information on '
-              'our custom data please scan this WhatsApp on the screen and reach us as soon as '
-              'possible.',
-      'timestamp': 523,
-      'timestamp_label': '[00:08:43]',
-      'timestamp_seconds': 523,
-      'tip': 'Viewing and also oneon-one Human Assistance the after service is very important '
-             'and we will have real person and not robot to serve you for more information on '
-             'our custom data please scan this WhatsApp on the screen and reach us as soon as '
-             'possible.',
-      'title': 'Top 3 Customs Data Suppliers Compared: Panjiva vs. ImportGenius vs. I-POWER '
-               '(💎Kiona 職場 x 行銷筆記💎)',
-      'url': 'https://www.youtube.com/watch?v=LggBClCtXNY&t=523s',
-      'video_id': 'LggBClCtXNY'},
-     {'author': 'Scarbrough Global',
+      'text': 'If you paid a carrier a duty fee on an international order, look up that shipment '
+              "on the carrier's refund page.",
+      'timestamp': 284,
+      'timestamp_label': '[00:04:44]',
+      'timestamp_seconds': 284,
+      'tip': 'If you paid a carrier a duty fee on an international order, look up that shipment on '
+             "the carrier's refund page.",
+      'title': 'Tariff Refunds Are Going to Companies. Will You See Any of It?',
+      'url': 'https://www.youtube.com/watch?v=GngE-xXnI_g&t=284s',
+      'video_id': 'GngE-xXnI_g'}],
+ 4: [{'author': 'USA Customs Clearance',
+      'channel': 'USA Customs Clearance',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:20](https://www.youtube.com/watch?v=khfmXSwD3DE&t=260s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Drawback claims generally must be filed within 5 years of the import date.',
+      'timestamp': 260,
+      'timestamp_label': '[00:04:20]',
+      'timestamp_seconds': 260,
+      'tip': 'Drawback claims generally must be filed within 5 years of the import date.',
+      'title': 'Section 301 Duty Drawback Explained',
+      'url': 'https://www.youtube.com/watch?v=khfmXSwD3DE&t=260s',
+      'video_id': 'khfmXSwD3DE'},
+     {'author': 'Great Lakes Customs Law',
+      'channel': 'Great Lakes Customs Law',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:29](https://www.youtube.com/watch?v=kBvWPMXLLgs&t=209s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Protests are filed entry by entry, and while one protest can cover multiple '
+              'entries, there is no blanket claim.',
+      'timestamp': 209,
+      'timestamp_label': '[00:03:29]',
+      'timestamp_seconds': 209,
+      'tip': 'Protests are filed entry by entry, and while one protest can cover multiple entries, '
+             'there is no blanket claim.',
+      'title': '🆘 Section 301 Duty Refund (China Tariffs) via Protest or Post Summary Correction '
+               'CBP/customs',
+      'url': 'https://www.youtube.com/watch?v=kBvWPMXLLgs&t=209s',
+      'video_id': 'kBvWPMXLLgs'},
+     {'author': 'Center for Strategic & International Studies',
+      'channel': 'Center for Strategic & International Studies',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:26:15](https://www.youtube.com/watch?v=PJpF0M_rjYs&t=1575s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "I think the Justice Department is banking on the thought that a lot of people won't "
+              "bother, especially the small guys, because it's too much effort.",
+      'timestamp': 1575,
+      'timestamp_label': '[00:26:15]',
+      'timestamp_seconds': 1575,
+      'tip': "I think the Justice Department is banking on the thought that a lot of people won't "
+             "bother, especially the small guys, because it's too much effort.",
+      'title': "China's Retaliatory Tariffs, Section 301 Authorities, and Tariff Refund Litigation",
+      'url': 'https://www.youtube.com/watch?v=PJpF0M_rjYs&t=1575s',
+      'video_id': 'PJpF0M_rjYs'},
+     {'author': 'International Housewares Association',
+      'channel': 'International Housewares Association',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:30:08](https://www.youtube.com/watch?v=RaySaQSBqfE&t=1808s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'We may have seen peak tariff that may be in our rear view mirrors now.',
+      'timestamp': 1808,
+      'timestamp_label': '[00:30:08]',
+      'timestamp_seconds': 1808,
+      'tip': 'We may have seen peak tariff that may be in our rear view mirrors now.',
+      'title': 'Update on new “Forced Labor” Tariffs and other Tariff-Related Developments',
+      'url': 'https://www.youtube.com/watch?v=RaySaQSBqfE&t=1808s',
+      'video_id': 'RaySaQSBqfE'},
+     {'author': 'Freightos',
+      'channel': 'Freightos',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:58](https://www.youtube.com/watch?v=cIMBwZ9J60I&t=58s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'For liquidated entries, CBP says it needs an entry-specific court order.',
+      'timestamp': 58,
+      'timestamp_label': '[00:00:58]',
+      'timestamp_seconds': 58,
+      'tip': 'For liquidated entries, CBP says it needs an entry-specific court order.',
+      'title': 'The $166B Refund Liquidation Trap #tariffs',
+      'url': 'https://www.youtube.com/watch?v=cIMBwZ9J60I&t=58s',
+      'video_id': 'cIMBwZ9J60I'},
+     {'author': 'Law Office of Yuri Starikov, LLC',
+      'channel': 'Law Office of Yuri Starikov, LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:54](https://www.youtube.com/watch?v=d6omeUFeZfA&t=294s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Poor customs credit can trigger a cash deposit requirement.',
+      'timestamp': 294,
+      'timestamp_label': '[00:04:54]',
+      'timestamp_seconds': 294,
+      'tip': 'Poor customs credit can trigger a cash deposit requirement.',
+      'title': 'U.S. Customs (CBP) Bonds Webcast Preview',
+      'url': 'https://www.youtube.com/watch?v=d6omeUFeZfA&t=294s',
+      'video_id': 'd6omeUFeZfA'},
+     {'author': 'Trade Risk Guaranty',
+      'channel': 'Trade Risk Guaranty',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:12](https://www.youtube.com/watch?v=P-dHB1oQLCI&t=132s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'The surety pays up to the bond amount, and the importer remains liable to the '
+              'surety.',
+      'timestamp': 132,
+      'timestamp_label': '[00:02:12]',
+      'timestamp_seconds': 132,
+      'tip': 'The surety pays up to the bond amount, and the importer remains liable to the '
+             'surety.',
+      'title': 'What is a U.S. Customs Import Bond?',
+      'url': 'https://www.youtube.com/watch?v=P-dHB1oQLCI&t=132s',
+      'video_id': 'P-dHB1oQLCI'},
+     {'author': 'Freight & Trade',
+      'channel': 'Freight & Trade',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:37](https://www.youtube.com/watch?v=ez065LeX6vE&t=277s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "It is not insurance that eliminates the importer's responsibility.",
+      'timestamp': 277,
+      'timestamp_label': '[00:04:37]',
+      'timestamp_seconds': 277,
+      'tip': "It is not insurance that eliminates the importer's responsibility.",
+      'title': 'What Is a Customs Bond  A Beginner’s Guide to Importing into the US',
+      'url': 'https://www.youtube.com/watch?v=ez065LeX6vE&t=277s',
+      'video_id': 'ez065LeX6vE'},
+     {'author': 'Trade Risk Guaranty',
+      'channel': 'Trade Risk Guaranty',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:27:52](https://www.youtube.com/watch?v=M68ZVWdgp9I&t=1672s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "It is not a good idea to change your bond size mid-term unless you're required to "
+              'by customs.',
+      'timestamp': 1672,
+      'timestamp_label': '[00:27:52]',
+      'timestamp_seconds': 1672,
+      'tip': "It is not a good idea to change your bond size mid-term unless you're required to by "
+             'customs.',
+      'title': 'Managing Open U.S. Customs Bond Liability [Full Webinar]',
+      'url': 'https://www.youtube.com/watch?v=M68ZVWdgp9I&t=1672s',
+      'video_id': 'M68ZVWdgp9I'},
+     {'author': 'Trade Risk Guaranty',
+      'channel': 'Trade Risk Guaranty',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:59:35](https://www.youtube.com/watch?v=M68ZVWdgp9I&t=3575s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "Don't forget 301's coming.",
+      'timestamp': 3575,
+      'timestamp_label': '[00:59:35]',
+      'timestamp_seconds': 3575,
+      'tip': "Don't forget 301's coming.",
+      'title': 'Managing Open U.S. Customs Bond Liability [Full Webinar]',
+      'url': 'https://www.youtube.com/watch?v=M68ZVWdgp9I&t=3575s',
+      'video_id': 'M68ZVWdgp9I'},
+     {'author': 'U.S. Customs and Border Protection',
+      'channel': 'U.S. Customs and Border Protection',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:26](https://www.youtube.com/watch?v=CXFkPqsyXnI&t=266s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'It is important to include as much information as possible pertaining to the '
+              'evasion scheme.',
+      'timestamp': 266,
+      'timestamp_label': '[00:04:26]',
+      'timestamp_seconds': 266,
+      'tip': 'It is important to include as much information as possible pertaining to the evasion '
+             'scheme.',
+      'title': 'Steps to Submitting an Allegation - Enforce and Protect Act (EAPA) | Office of '
+               'Trade | CBP',
+      'url': 'https://www.youtube.com/watch?v=CXFkPqsyXnI&t=266s',
+      'video_id': 'CXFkPqsyXnI'},
+     {'author': 'Ask The Customs Manager',
+      'channel': 'Ask The Customs Manager',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:47](https://www.youtube.com/watch?v=Ze1pOvT4KsI&t=227s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'A formal ruling is legally binding and protects you from surprise audits.',
+      'timestamp': 227,
+      'timestamp_label': '[00:03:47]',
+      'timestamp_seconds': 227,
+      'tip': 'A formal ruling is legally binding and protects you from surprise audits.',
+      'title': 'Anti-Dumping Duties (ADD & CVD): The Hidden Customs Trap That Bankrupts Importers',
+      'url': 'https://www.youtube.com/watch?v=Ze1pOvT4KsI&t=227s',
+      'video_id': 'Ze1pOvT4KsI'},
+     {'author': 'NCBFAA Educational Institute',
+      'channel': 'NCBFAA Educational Institute',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:24:39](https://www.youtube.com/watch?v=CGsvr1SDN8s&t=1479s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "While HTS numbers are provided for guidance purposes, they're not dispositive; the "
+              'written scope of the order is dispositive.',
+      'timestamp': 1479,
+      'timestamp_label': '[00:24:39]',
+      'timestamp_seconds': 1479,
+      'tip': "While HTS numbers are provided for guidance purposes, they're not dispositive; the "
+             'written scope of the order is dispositive.',
+      'title': 'Best Practices for Anti Dumping and Countervailing Duty AD CVD',
+      'url': 'https://www.youtube.com/watch?v=CGsvr1SDN8s&t=1479s',
+      'video_id': 'CGsvr1SDN8s'},
+     {'author': 'Trade Risk Guaranty',
+      'channel': 'Trade Risk Guaranty',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:18:04](https://www.youtube.com/watch?v=38zRYvMd5Ps&t=1084s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Administrative reviews must be requested in the anniversary month, and if no review '
+              'is requested, the deposit rate becomes final.',
+      'timestamp': 1084,
+      'timestamp_label': '[00:18:04]',
+      'timestamp_seconds': 1084,
+      'tip': 'Administrative reviews must be requested in the anniversary month, and if no review '
+             'is requested, the deposit rate becomes final.',
+      'title': 'Learn the Basics of Antidumping and Countervailing Duties [Full Webinar]',
+      'url': 'https://www.youtube.com/watch?v=38zRYvMd5Ps&t=1084s',
+      'video_id': '38zRYvMd5Ps'},
+     {'author': 'Trade Winds Report',
+      'channel': 'Trade Winds Report',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:58](https://www.youtube.com/watch?v=xJrKO4dLXJ4&t=418s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Watch what gets exempted, not what gets announced.',
+      'timestamp': 418,
+      'timestamp_label': '[00:06:58]',
+      'timestamp_seconds': 418,
+      'tip': 'Watch what gets exempted, not what gets announced.',
+      'title': 'After the Midterms, Can Congress Undo Tariffs? Follow One Toy',
+      'url': 'https://www.youtube.com/watch?v=xJrKO4dLXJ4&t=418s',
+      'video_id': 'xJrKO4dLXJ4'},
+     {'author': 'Ask The Customs Manager',
+      'channel': 'Ask The Customs Manager',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:38](https://www.youtube.com/watch?v=xq8bHfr9ke8&t=278s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "Liquidation is CBP's final determination of duties owed on an import entry.",
+      'timestamp': 278,
+      'timestamp_label': '[00:04:38]',
+      'timestamp_seconds': 278,
+      'tip': "Liquidation is CBP's final determination of duties owed on an import entry.",
+      'title': "IEEPA Tariff Refunds: Unliquidated vs Liquidated Entry Status—What's the "
+               'Difference?',
+      'url': 'https://www.youtube.com/watch?v=xq8bHfr9ke8&t=278s',
+      'video_id': 'xq8bHfr9ke8'},
+     {'author': 'Simply Trade Podcast',
+      'channel': 'Simply Trade Podcast',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:51](https://www.youtube.com/watch?v=GSPaDDm0OVQ&t=651s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'However, strictly looking at that from a customs law perspective, the importers are '
+              'the right refund recipients.',
+      'timestamp': 651,
+      'timestamp_label': '[00:10:51]',
+      'timestamp_seconds': 651,
+      'tip': 'However, strictly looking at that from a customs law perspective, the importers are '
+             'the right refund recipients.',
+      'title': 'Sad, Beautiful, Tragic: New Section 301 Tariffs | Cindy’s Version',
+      'url': 'https://www.youtube.com/watch?v=GSPaDDm0OVQ&t=651s',
+      'video_id': 'GSPaDDm0OVQ'}],
+ 5: [{'author': 'Scarbrough Global',
       'channel': 'Scarbrough Global',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:06](https://www.youtube.com/watch?v=ZzvKR65Oyuw&t=366s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:04:08](https://www.youtube.com/watch?v=GuV2m_XHyd0&t=248s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'In the portal as well so that way even if it gets mailed out to another branch '
-              'of yours you at least can see access from a corporate level.',
-      'timestamp': 366,
-      'timestamp_label': '[00:06:06]',
-      'timestamp_seconds': 366,
-      'tip': 'In the portal as well so that way even if it gets mailed out to another branch '
-             'of yours you at least can see access from a corporate level.',
-      'title': 'ACE Portal Transition (Scarbrough Global)',
-      'url': 'https://www.youtube.com/watch?v=ZzvKR65Oyuw&t=366s',
-      'video_id': 'ZzvKR65Oyuw'},
-     {'author': 'Scarbrough Global',
-      'channel': 'Scarbrough Global',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=lsd6_oB4p00&t=15s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "That you've destroyed merchandise or if you've just exported the merchandise "
-              'that is that is an itty gritty question I used to work at a brokerage firm but.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': "That you've destroyed merchandise or if you've just exported the merchandise "
-             'that is that is an itty gritty question I used to work at a brokerage firm but.',
-      'title': 'Are there different documents required for destroyed merchandise on duty '
-               'drawback ? (Scarbrough Global)',
-      'url': 'https://www.youtube.com/watch?v=lsd6_oB4p00&t=15s',
-      'video_id': 'lsd6_oB4p00'},
-     {'author': 'Tariffs Lawsuit',
-      'channel': 'Tariffs Lawsuit',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:43](https://www.youtube.com/watch?v=DOHCXtY_zI0&t=103s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'To process refunds, CBP built a new system inside of its ACE portal called '
-              'CAPE, the Consolidated Administration and Processing of Entries System. It '
-              'opened on April 20th of 2026 and importers started falling immediately.',
-      'timestamp': 103,
-      'timestamp_label': '[00:01:43]',
-      'timestamp_seconds': 103,
-      'tip': 'To process refunds, CBP built a new system inside of its ACE portal called CAPE, '
-             'the Consolidated Administration and Processing of Entries System. It opened on '
-             'April 20th of 2026 and importers started falling immediately.',
-      'title': 'Tariff Refunds for Importers: Your Business May Be Owed Money After Supreme '
-               'Court Ruling (Tariffs Lawsuit)',
-      'url': 'https://www.youtube.com/watch?v=DOHCXtY_zI0&t=103s',
-      'video_id': 'DOHCXtY_zI0'}],
- 9: [{'author': 'VoraPrep',
-      'channel': 'VoraPrep',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:14](https://www.youtube.com/watch?v=8NkJbs7UVvY&t=494s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Which brings us to the final step, compliance and consequences. The conclusion '
-              'is that Global Trade Solutions is non-compliant. They face potential '
-              'disciplinary action from CBP for the RSC failure up to license revocation.',
-      'timestamp': 494,
-      'timestamp_label': '[00:08:14]',
-      'timestamp_seconds': 494,
-      'tip': 'Which brings us to the final step, compliance and consequences. The conclusion '
-             'is that Global Trade Solutions is non-compliant. They face potential '
-             'disciplinary action from CBP for the RSC failure up to license revocation.',
-      'title': '[CBLE] CBLE3: Broker Licensing, Supervision, and Power of Attorney (19 CFR '
-               'Part 111 & 141) (VoraPrep)',
-      'url': 'https://www.youtube.com/watch?v=8NkJbs7UVvY&t=494s',
-      'video_id': '8NkJbs7UVvY'},
-     {'author': 'Clark-Esposito Law Firm P.C.',
-      'channel': 'Clark-Esposito Law Firm P.C.',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:42](https://www.youtube.com/watch?v=yXBLHYkmz0A&t=42s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Ensuring your goods are valued correctly not only avoids penalties but also '
-              'ensures compliance with U. Customs and Border Protection, or CBP, regulations. '
-              'In simple terms, Customs Value is the price of your goods as determined by '
-              'specific rules set by CBP.',
-      'timestamp': 42,
-      'timestamp_label': '[00:00:42]',
-      'timestamp_seconds': 42,
-      'tip': 'Ensuring your goods are valued correctly not only avoids penalties but also '
-             'ensures compliance with U. Customs and Border Protection, or CBP, regulations. '
-             'In simple terms, Customs Value is the price of your goods as determined by '
-             'specific rules set by CBP.',
-      'title': 'U.S. Customs Value Explained (Clark-Esposito Law Firm P.C.)',
-      'url': 'https://www.youtube.com/watch?v=yXBLHYkmz0A&t=42s',
-      'video_id': 'yXBLHYkmz0A'},
-     {'author': 'NBC4 Washington',
-      'channel': 'NBC4 Washington',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:13](https://www.youtube.com/watch?v=ZitEpVz3Zgg&t=193s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Contact the law firm that is listed on that paperwork. Make sure it is legit, '
-              'or contact the company itself to ask them what law firm is working with them '
-              "for the settlement. And of course, the local attorney general's office as well. "
-              'Thank you very much, Susan.',
-      'timestamp': 193,
-      'timestamp_label': '[00:03:13]',
-      'timestamp_seconds': 193,
-      'tip': 'Contact the law firm that is listed on that paperwork. Make sure it is legit, or '
-             'contact the company itself to ask them what law firm is working with them for '
-             "the settlement. And of course, the local attorney general's office as well. "
-             'Thank you very much, Susan.',
-      'title': "How to know if you're entitled to a class action settlement | NBC4 Washington "
-               '(NBC4 Washington)',
-      'url': 'https://www.youtube.com/watch?v=ZitEpVz3Zgg&t=193s',
-      'video_id': 'ZitEpVz3Zgg'},
-     {'author': 'JSJ INTERNATIONAL LCB',
-      'channel': 'JSJ INTERNATIONAL LCB',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:37](https://www.youtube.com/watch?v=2cuZPxRLr1E&t=397s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': '11362 custodian bond 1363 carries bond FCC operated 1364 or an ISF specify '
-              "specific bond which is appendix D to part 113. So there's a bond for that. "
-              'Obviously agents uh must have a signed power of attorney in English uh retained '
-              'for 5 years after revocation.',
-      'timestamp': 397,
-      'timestamp_label': '[00:06:37]',
-      'timestamp_seconds': 397,
-      'tip': '11362 custodian bond 1363 carries bond FCC operated 1364 or an ISF specify '
-             "specific bond which is appendix D to part 113. So there's a bond for that. "
-             'Obviously agents uh must have a signed power of attorney in English uh retained '
-             'for 5 years after revocation.',
-      'title': 'ISF “10+2” Filing Explained | Importer Requirements under 19 CFR Part 149 | '
-               'CBP Compliance Guide (JSJ INTERNATIONAL LCB)',
-      'url': 'https://www.youtube.com/watch?v=2cuZPxRLr1E&t=397s',
-      'video_id': '2cuZPxRLr1E'},
-     {'author': 'Shapiro',
-      'channel': 'Shapiro',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:41](https://www.youtube.com/watch?v=cjNgBgUI1As&t=521s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Issue do you have a procedure where the commercial invoice is to be reviewed '
-              'when received from the supplier auditing will help your overall compliance '
-              'program including broker.',
-      'timestamp': 521,
-      'timestamp_label': '[00:08:41]',
-      'timestamp_seconds': 521,
-      'tip': 'Issue do you have a procedure where the commercial invoice is to be reviewed '
-             'when received from the supplier auditing will help your overall compliance '
-             'program including broker.',
-      'title': 'Essentials of Customs Entry Auditing (Shapiro)',
-      'url': 'https://www.youtube.com/watch?v=cjNgBgUI1As&t=521s',
-      'video_id': 'cjNgBgUI1As'},
-     {'author': 'Diaz Trade Law',
-      'channel': 'Diaz Trade Law',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:17](https://www.youtube.com/watch?v=j_DJeCw3cCw&t=137s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'How do you file your prior disclosure? What happens when issues are uncovered? '
-              "Who contacts whom within your company? Done right, pre-compliance doesn't just "
-              "avoid problems. It can also save you money. Cuz maybe you'll find a "
-              'misclassification.',
-      'timestamp': 137,
-      'timestamp_label': '[00:02:17]',
-      'timestamp_seconds': 137,
-      'tip': 'How do you file your prior disclosure? What happens when issues are uncovered? '
-             "Who contacts whom within your company? Done right, pre-compliance doesn't just "
-             "avoid problems. It can also save you money. Cuz maybe you'll find a "
-             'misclassification.',
-      'title': 'Why CBP Pre-Compliance Is More Important Than Ever (Diaz Trade Law)',
-      'url': 'https://www.youtube.com/watch?v=j_DJeCw3cCw&t=137s',
-      'video_id': 'j_DJeCw3cCw'},
-     {'author': 'News of the World',
-      'channel': 'News of the World',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:26](https://www.youtube.com/watch?v=vk_vF0qgIAg&t=26s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Supply of chicken in violation of state and federal consumer antitrust laws if '
-              'you purchase chicken from january 1st 2009 through december 31st 2020 from.',
-      'timestamp': 26,
-      'timestamp_label': '[00:00:26]',
-      'timestamp_seconds': 26,
-      'tip': 'Supply of chicken in violation of state and federal consumer antitrust laws if '
-             'you purchase chicken from january 1st 2009 through december 31st 2020 from.',
-      'title': 'If you’ve bought chicken in the last 10 years, you may be eligible for payment '
-               '(News of the World)',
-      'url': 'https://www.youtube.com/watch?v=vk_vF0qgIAg&t=26s',
-      'video_id': 'vk_vF0qgIAg'},
-     {'author': 'Harry F. Long, Inc. - U.S. Customs Brokers',
-      'channel': 'Harry F. Long, Inc. - U.S. Customs Brokers',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:06](https://www.youtube.com/watch?v=oOC1WI_WDJs&t=126s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'An auto parts importer buys from a supplier for $180,000. The supplier '
-              'purchased those parts from a Mexican factory with US export terms for $120,000. '
-              'By declaring $120,000 as the value versus $180,000 reduces the tariffs that '
-              'will be assessed on those parts.',
-      'timestamp': 126,
-      'timestamp_label': '[00:02:06]',
-      'timestamp_seconds': 126,
-      'tip': 'An auto parts importer buys from a supplier for $180,000. The supplier purchased '
-             'those parts from a Mexican factory with US export terms for $120,000. By '
-             'declaring $120,000 as the value versus $180,000 reduces the tariffs that will be '
-             'assessed on those parts.',
-      'title': 'Customs Quick Tips - First Sale Rule (Harry F. Long, Inc. - U.S. Customs '
-               'Brokers)',
-      'url': 'https://www.youtube.com/watch?v=oOC1WI_WDJs&t=126s',
-      'video_id': 'oOC1WI_WDJs'},
-     {'author': 'JSJ INTERNATIONAL LCB',
-      'channel': 'JSJ INTERNATIONAL LCB',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:41](https://www.youtube.com/watch?v=OyJAzze4KyY&t=281s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Now how to implement engineering legally? Um understand the uh general rules of '
-              'interpretation and how CBP classifies goods. Use binding ruling request uh '
-              'under title 19 code of federal relations part 177 to confirm your strategy with '
-              'the CBP.',
-      'timestamp': 281,
-      'timestamp_label': '[00:04:41]',
-      'timestamp_seconds': 281,
-      'tip': 'Now how to implement engineering legally? Um understand the uh general rules of '
-             'interpretation and how CBP classifies goods. Use binding ruling request uh under '
-             'title 19 code of federal relations part 177 to confirm your strategy with the '
-             'CBP.',
-      'title': 'Tariff Engineering & Duty Reduction (JSJ INTERNATIONAL LCB)',
-      'url': 'https://www.youtube.com/watch?v=OyJAzze4KyY&t=281s',
-      'video_id': 'OyJAzze4KyY'},
-     {'author': 'Adriel Miller',
-      'channel': 'Adriel Miller',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:36](https://www.youtube.com/watch?v=wL00BhzuPec&t=36s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Specifics of ISF compliance for Duty drawback programs let's first understand "
-              'what Duty drawback is all about Duty drawback refers to a refund or rebate on.',
-      'timestamp': 36,
-      'timestamp_label': '[00:00:36]',
-      'timestamp_seconds': 36,
-      'tip': "Specifics of ISF compliance for Duty drawback programs let's first understand "
-             'what Duty drawback is all about Duty drawback refers to a refund or rebate on.',
-      'title': 'Mastering ISF Compliance for Duty Drawbacks (Adriel Miller)',
-      'url': 'https://www.youtube.com/watch?v=wL00BhzuPec&t=36s',
-      'video_id': 'wL00BhzuPec'},
-     {'author': 'Daily Q&A',
-      'channel': 'Daily Q&A',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:55](https://www.youtube.com/watch?v=8IcVk3YXDoM&t=55s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The settlement approval means these businesses can now finally seek '
-              'compensation. The legal process started with a court approval of the damages '
-              'portion back in 2019, allowing merchants to send in claims.',
-      'timestamp': 55,
-      'timestamp_label': '[00:00:55]',
-      'timestamp_seconds': 55,
-      'tip': 'The settlement approval means these businesses can now finally seek '
-             'compensation. The legal process started with a court approval of the damages '
-             'portion back in 2019, allowing merchants to send in claims.',
-      'title': 'What Is the Visa Mastercard Settlement Judge Approval Case About? | 2026 '
-               '(Daily Q&A)',
-      'url': 'https://www.youtube.com/watch?v=8IcVk3YXDoM&t=55s',
-      'video_id': '8IcVk3YXDoM'},
-     {'author': 'ImportGenius',
-      'channel': 'ImportGenius',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:20](https://www.youtube.com/watch?v=9IaKZ1JUPmU&t=200s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Another really important thing to do is to leave off terms like Inc or limited '
-              "so for example I'm going to search Sky High unlimited which is one of the "
-              'results that I see right now and if I type.',
-      'timestamp': 200,
-      'timestamp_label': '[00:03:20]',
-      'timestamp_seconds': 200,
-      'tip': 'Another really important thing to do is to leave off terms like Inc or limited '
-             "so for example I'm going to search Sky High unlimited which is one of the "
-             'results that I see right now and if I type.',
-      'title': 'Import Genius Advanced Search Techniques Help Video (ImportGenius)',
-      'url': 'https://www.youtube.com/watch?v=9IaKZ1JUPmU&t=200s',
-      'video_id': '9IaKZ1JUPmU'},
-     {'author': 'Vmani International',
-      'channel': 'Vmani International',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:36](https://www.youtube.com/watch?v=WyZnXlLGG-o&t=216s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'International for more valuable insights let me know in the comments what topic '
-              "you'd like me to cover next see you in the next.",
-      'timestamp': 216,
-      'timestamp_label': '[00:03:36]',
-      'timestamp_seconds': 216,
-      'tip': 'International for more valuable insights let me know in the comments what topic '
-             "you'd like me to cover next see you in the next.",
-      'title': 'USA CBP Rules Explained! Import-Export Compliance Made Easy (Vmani '
-               'International)',
-      'url': 'https://www.youtube.com/watch?v=WyZnXlLGG-o&t=216s',
-      'video_id': 'WyZnXlLGG-o'},
-     {'author': 'Scarbrough Global',
-      'channel': 'Scarbrough Global',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:40](https://www.youtube.com/watch?v=fI28fmPlbPA&t=340s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Chain as a whole in your import compliance program as a whole you know there's "
-              'obviously some things out there that that would maybe make you rethink that are '
-              "kind of look to say maybe there's something a little bit better right.",
-      'timestamp': 340,
-      'timestamp_label': '[00:05:40]',
-      'timestamp_seconds': 340,
-      'tip': "Chain as a whole in your import compliance program as a whole you know there's "
-             'obviously some things out there that that would maybe make you rethink that are '
-             "kind of look to say maybe there's something a little bit better right.",
-      'title': 'What is Substitution Drawback when claiming duty drawback ? (Scarbrough '
-               'Global)',
-      'url': 'https://www.youtube.com/watch?v=fI28fmPlbPA&t=340s',
-      'video_id': 'fI28fmPlbPA'},
-     {'author': 'Tariffs Lawsuit',
-      'channel': 'Tariffs Lawsuit',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:08](https://www.youtube.com/watch?v=dWEik4YquEE&t=248s)',
-      'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                   'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                   'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                   'Post-Summary Correction tariff protests, and settled B2B '
-                   'antitrust/interchange class-action pools (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Section 301 tariffs are knocked down through final United States Supreme Court '
-              'decisions, there may be another $200 billion in new tariffs levied by the Trump '
-              'administration throughout the rest of his terms.',
+      'text': 'We always encourage signing up for the ACE portal regardless of size, because it is '
+              'a central hub across all brokers that holds an electronic 7501.',
       'timestamp': 248,
       'timestamp_label': '[00:04:08]',
       'timestamp_seconds': 248,
-      'tip': 'Section 301 tariffs are knocked down through final United States Supreme Court '
-             'decisions, there may be another $200 billion in new tariffs levied by the Trump '
-             'administration throughout the rest of his terms.',
-      'title': 'Tariff Refund Update: Why Importers May Need To File Now (Tariffs Lawsuit)',
-      'url': 'https://www.youtube.com/watch?v=dWEik4YquEE&t=248s',
-      'video_id': 'dWEik4YquEE'}],
- 10: [{'author': 'ImageSearch for HS classification',
-       'channel': 'ImageSearch for HS classification',
+      'tip': 'We always encourage signing up for the ACE portal regardless of size, because it is '
+             'a central hub across all brokers that holds an electronic 7501.',
+      'title': 'What is CBP ACE Automated Commercial Environment?',
+      'url': 'https://www.youtube.com/watch?v=GuV2m_XHyd0&t=248s',
+      'video_id': 'GuV2m_XHyd0'},
+     {'author': 'SKUio',
+      'channel': 'SKUio',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:23](https://www.youtube.com/watch?v=WLDwLas6IOI&t=23s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'The blue banner totals the IEEPA duty you paid, which may be refundable.',
+      'timestamp': 23,
+      'timestamp_label': '[00:00:23]',
+      'timestamp_seconds': 23,
+      'tip': 'The blue banner totals the IEEPA duty you paid, which may be refundable.',
+      'title': 'Split a Customs Duty Bill by Product with CBP 7501 Entry Summaries | SKU.io',
+      'url': 'https://www.youtube.com/watch?v=WLDwLas6IOI&t=23s',
+      'video_id': 'WLDwLas6IOI'},
+     {'author': 'Shapiro',
+      'channel': 'Shapiro',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:23](https://www.youtube.com/watch?v=605kfE-oUPM&t=323s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Three failed attempts lock the account, and a locked-out TAO calls the ACE helpdesk '
+              'with the shared secret.',
+      'timestamp': 323,
+      'timestamp_label': '[00:05:23]',
+      'timestamp_seconds': 323,
+      'tip': 'Three failed attempts lock the account, and a locked-out TAO calls the ACE helpdesk '
+             'with the shared secret.',
+      'title': 'Automated Commercial Environment ACE Import Workshop',
+      'url': 'https://www.youtube.com/watch?v=605kfE-oUPM&t=323s',
+      'video_id': '605kfE-oUPM'},
+     {'author': 'Scarbrough Global',
+      'channel': 'Scarbrough Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:14:18](https://www.youtube.com/watch?v=52Q7Sv1KF4Q&t=858s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Importers cannot file a post summary correction without an ABI connection, and the '
+              'PSC filer does not have to be the entry filer.',
+      'timestamp': 858,
+      'timestamp_label': '[00:14:18]',
+      'timestamp_seconds': 858,
+      'tip': 'Importers cannot file a post summary correction without an ABI connection, and the '
+             'PSC filer does not have to be the entry filer.',
+      'title': 'ACE Question/Answer Forum: Session One Introduction',
+      'url': 'https://www.youtube.com/watch?v=52Q7Sv1KF4Q&t=858s',
+      'video_id': '52Q7Sv1KF4Q'},
+     {'author': 'Harry F. Long, Inc. - U.S. Customs Brokers',
+      'channel': 'Harry F. Long, Inc. - U.S. Customs Brokers',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:15](https://www.youtube.com/watch?v=bD2cV_iBUpU&t=75s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'The IEEPA tariffs ended on February 23rd, 2026.',
+      'timestamp': 75,
+      'timestamp_label': '[00:01:15]',
+      'timestamp_seconds': 75,
+      'tip': 'The IEEPA tariffs ended on February 23rd, 2026.',
+      'title': 'ACE ES 001 and ES 003 Report',
+      'url': 'https://www.youtube.com/watch?v=bD2cV_iBUpU&t=75s',
+      'video_id': 'bD2cV_iBUpU'},
+     {'author': 'Scarbrough Global',
+      'channel': 'Scarbrough Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:45](https://www.youtube.com/watch?v=ZzvKR65Oyuw&t=285s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "Why wouldn't you want the same information that customs has.",
+      'timestamp': 285,
+      'timestamp_label': '[00:04:45]',
+      'timestamp_seconds': 285,
+      'tip': "Why wouldn't you want the same information that customs has.",
+      'title': 'ACE Portal Transition',
+      'url': 'https://www.youtube.com/watch?v=ZzvKR65Oyuw&t=285s',
+      'video_id': 'ZzvKR65Oyuw'},
+     {'author': 'TEU Global',
+      'channel': 'TEU Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:28](https://www.youtube.com/watch?v=lKk16DmiedE&t=148s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can choose one of the type 10, 20, 23, and 34.',
+      'timestamp': 148,
+      'timestamp_label': '[00:02:28]',
+      'timestamp_seconds': 148,
+      'tip': 'You can choose one of the type 10, 20, 23, and 34.',
+      'title': 'How to Set Up the CBP ACE Secure Data Portal & ACH Refunds | Step-by-Step Guide '
+               'for Importers',
+      'url': 'https://www.youtube.com/watch?v=lKk16DmiedE&t=148s',
+      'video_id': 'lKk16DmiedE'},
+     {'author': 'Ask The Customs Manager',
+      'channel': 'Ask The Customs Manager',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:13](https://www.youtube.com/watch?v=NRCd8c6t8rY&t=133s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'A wrong account number means the refund goes into the void for months.',
+      'timestamp': 133,
+      'timestamp_label': '[00:02:13]',
+      'timestamp_seconds': 133,
+      'tip': 'A wrong account number means the refund goes into the void for months.',
+      'title': 'CBP ACH Refund Deadline 2026: Importers Must Enroll by February 6 or Lose Tariff '
+               'Refunds',
+      'url': 'https://www.youtube.com/watch?v=NRCd8c6t8rY&t=133s',
+      'video_id': 'NRCd8c6t8rY'},
+     {'author': 'NextGen CPA',
+      'channel': 'NextGen CPA',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:10](https://www.youtube.com/watch?v=sMBX0ZlgJRY&t=70s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you miss a 7501 form, you have to start a new declaration, which can push you to '
+              'the back of the queue.',
+      'timestamp': 70,
+      'timestamp_label': '[00:01:10]',
+      'timestamp_seconds': 70,
+      'tip': 'If you miss a 7501 form, you have to start a new declaration, which can push you to '
+             'the back of the queue.',
+      'title': 'CBP Refund Portal is LIVE - Claim Your 2025 Tariff Money Now!',
+      'url': 'https://www.youtube.com/watch?v=sMBX0ZlgJRY&t=70s',
+      'video_id': 'sMBX0ZlgJRY'},
+     {'author': 'CBC News',
+      'channel': 'CBC News',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:45](https://www.youtube.com/watch?v=qVk8ygNZbS8&t=45s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'CBP cites more than 330,000 importers and $166 billion in refunds, with processing '
+              'that would take 4.4 million man-hours.',
+      'timestamp': 45,
+      'timestamp_label': '[00:00:45]',
+      'timestamp_seconds': 45,
+      'tip': 'CBP cites more than 330,000 importers and $166 billion in refunds, with processing '
+             'that would take 4.4 million man-hours.',
+      'title': 'Tariff refund system will be ready in 45 days, U.S. customs agency says',
+      'url': 'https://www.youtube.com/watch?v=qVk8ygNZbS8&t=45s',
+      'video_id': 'qVk8ygNZbS8'},
+     {'author': 'Ask The Customs Manager',
+      'channel': 'Ask The Customs Manager',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:33](https://www.youtube.com/watch?v=2H7zdtUvSDA&t=153s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "If you put the wrong bank account, that's on you.",
+      'timestamp': 153,
+      'timestamp_label': '[00:02:33]',
+      'timestamp_seconds': 153,
+      'tip': "If you put the wrong bank account, that's on you.",
+      'title': 'CBP Ends Paper Checks February 6 – Enroll in ACH for Refunds NOW',
+      'url': 'https://www.youtube.com/watch?v=2H7zdtUvSDA&t=153s',
+      'video_id': '2H7zdtUvSDA'},
+     {'author': 'Scarbrough Global',
+      'channel': 'Scarbrough Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:03](https://www.youtube.com/watch?v=P1YIRCE3BPQ&t=63s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you are not set up on the ACE portal with your bank information set up to '
+              "receive that via AC, you won't get your money.",
+      'timestamp': 63,
+      'timestamp_label': '[00:01:03]',
+      'timestamp_seconds': 63,
+      'tip': 'If you are not set up on the ACE portal with your bank information set up to receive '
+             "that via AC, you won't get your money.",
+      'title': "Freight Expectations: CBP's ACE Portal",
+      'url': 'https://www.youtube.com/watch?v=P1YIRCE3BPQ&t=63s',
+      'video_id': 'P1YIRCE3BPQ'},
+     {'author': 'Scarbrough Global',
+      'channel': 'Scarbrough Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:28:53](https://www.youtube.com/watch?v=P1YIRCE3BPQ&t=1733s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "It's a $1,000 per entry that you forget.",
+      'timestamp': 1733,
+      'timestamp_label': '[00:28:53]',
+      'timestamp_seconds': 1733,
+      'tip': "It's a $1,000 per entry that you forget.",
+      'title': "Freight Expectations: CBP's ACE Portal",
+      'url': 'https://www.youtube.com/watch?v=P1YIRCE3BPQ&t=1733s',
+      'video_id': 'P1YIRCE3BPQ'},
+     {'author': 'BGI Worldwide Logistics, Inc.',
+      'channel': 'BGI Worldwide Logistics, Inc.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:26](https://www.youtube.com/watch?v=zVrENO4RtLw&t=146s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Review the HTS column to identify IEEPA duties, plus liquidation status and '
+              'liquidation date to track the 180-day protest deadline.',
+      'timestamp': 146,
+      'timestamp_label': '[00:02:26]',
+      'timestamp_seconds': 146,
+      'tip': 'Review the HTS column to identify IEEPA duties, plus liquidation status and '
+             'liquidation date to track the 180-day protest deadline.',
+      'title': 'Unlock Duty Refunds: ACE IEEPA Report in 3 Minutes!',
+      'url': 'https://www.youtube.com/watch?v=zVrENO4RtLw&t=146s',
+      'video_id': 'zVrENO4RtLw'},
+     {'author': 'Scarbrough Global',
+      'channel': 'Scarbrough Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:37](https://www.youtube.com/watch?v=FcsTuxrd4SM&t=37s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Whereas a protest by law they have to respond to.',
+      'timestamp': 37,
+      'timestamp_label': '[00:00:37]',
+      'timestamp_seconds': 37,
+      'tip': 'Whereas a protest by law they have to respond to.',
+      'title': 'Post Summary Correction in ACE',
+      'url': 'https://www.youtube.com/watch?v=FcsTuxrd4SM&t=37s',
+      'video_id': 'FcsTuxrd4SM'},
+     {'author': 'Scarbrough Global',
+      'channel': 'Scarbrough Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:58](https://www.youtube.com/watch?v=LqV0KsoyRVw&t=58s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'The very first time your shared secret is your user ID.',
+      'timestamp': 58,
+      'timestamp_label': '[00:00:58]',
+      'timestamp_seconds': 58,
+      'tip': 'The very first time your shared secret is your user ID.',
+      'title': 'How long will it take for CBP to complete my ACE application?',
+      'url': 'https://www.youtube.com/watch?v=LqV0KsoyRVw&t=58s',
+      'video_id': 'LqV0KsoyRVw'},
+     {'author': 'BorderConnect',
+      'channel': 'BorderConnect',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:04](https://www.youtube.com/watch?v=o__9Gebfyq4&t=64s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Unfortunately, failure to do so could result in a monetary penalty issued by CBP.',
+      'timestamp': 64,
+      'timestamp_label': '[00:01:04]',
+      'timestamp_seconds': 64,
+      'tip': 'Unfortunately, failure to do so could result in a monetary penalty issued by CBP.',
+      'title': 'BorderConnect Virtual Workshop - ACE eManifest',
+      'url': 'https://www.youtube.com/watch?v=o__9Gebfyq4&t=64s',
+      'video_id': 'o__9Gebfyq4'}],
+ 6: [{'author': 'U.S. Customs and Border Protection',
+      'channel': 'U.S. Customs and Border Protection',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:50:18](https://www.youtube.com/watch?v=lGkujBtNI0A&t=3018s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'What is probably a best practice that we would like to put forth is that you group '
+              'entries that have similar exclusions.',
+      'timestamp': 3018,
+      'timestamp_label': '[00:50:18]',
+      'timestamp_seconds': 3018,
+      'tip': 'What is probably a best practice that we would like to put forth is that you group '
+             'entries that have similar exclusions.',
+      'title': 'CBP Protest Webinar',
+      'url': 'https://www.youtube.com/watch?v=lGkujBtNI0A&t=3018s',
+      'video_id': 'lGkujBtNI0A'},
+     {'author': 'U.S. Customs and Border Protection',
+      'channel': 'U.S. Customs and Border Protection',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:05:49](https://www.youtube.com/watch?v=lGkujBtNI0A&t=3949s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'You will need to separately file by registered or certified mail that request for '
+              'accelerated disposition.',
+      'timestamp': 3949,
+      'timestamp_label': '[01:05:49]',
+      'timestamp_seconds': 3949,
+      'tip': 'You will need to separately file by registered or certified mail that request for '
+             'accelerated disposition.',
+      'title': 'CBP Protest Webinar',
+      'url': 'https://www.youtube.com/watch?v=lGkujBtNI0A&t=3949s',
+      'video_id': 'lGkujBtNI0A'},
+     {'author': 'JSJ INTERNATIONAL LCB',
+      'channel': 'JSJ INTERNATIONAL LCB',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:42](https://www.youtube.com/watch?v=2cuZPxRLr1E&t=462s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Filing the ISF correctly and on time is not optional.',
+      'timestamp': 462,
+      'timestamp_label': '[00:07:42]',
+      'timestamp_seconds': 462,
+      'tip': 'Filing the ISF correctly and on time is not optional.',
+      'title': 'ISF “10+2” Filing Explained | Importer Requirements under 19 CFR Part 149 | CBP '
+               'Compliance Guide',
+      'url': 'https://www.youtube.com/watch?v=2cuZPxRLr1E&t=462s',
+      'video_id': '2cuZPxRLr1E'},
+     {'author': 'VoraPrep',
+      'channel': 'VoraPrep',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:04](https://www.youtube.com/watch?v=2rbdaN1Swhk&t=304s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'You have to keep a copy of every single one of these documents for 5 years.',
+      'timestamp': 304,
+      'timestamp_label': '[00:05:04]',
+      'timestamp_seconds': 304,
+      'tip': 'You have to keep a copy of every single one of these documents for 5 years.',
+      'title': '[CBLE] CBLE1: Entry Summary Documentation and Data Elements (CBP Form 7501)',
+      'url': 'https://www.youtube.com/watch?v=2rbdaN1Swhk&t=304s',
+      'video_id': '2rbdaN1Swhk'},
+     {'author': 'Law Office of Yuri Starikov, LLC',
+      'channel': 'Law Office of Yuri Starikov, LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:24](https://www.youtube.com/watch?v=aNG7o_BW3k8&t=24s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Some of the fill in the blanks on this form are pretty much self-explanatory, some '
+              'of them require more deliberation, more thinking, they require your knowledge of '
+              'law, of regulation.',
+      'timestamp': 24,
+      'timestamp_label': '[00:00:24]',
+      'timestamp_seconds': 24,
+      'tip': 'Some of the fill in the blanks on this form are pretty much self-explanatory, some '
+             'of them require more deliberation, more thinking, they require your knowledge of '
+             'law, of regulation.',
+      'title': 'U.S. Customs (CBP) Entry Summary: General Overview Webcast Preview',
+      'url': 'https://www.youtube.com/watch?v=aNG7o_BW3k8&t=24s',
+      'video_id': 'aNG7o_BW3k8'},
+     {'author': 'Docxster | Document-First Automation',
+      'channel': 'Docxster | Document-First Automation',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:39](https://www.youtube.com/watch?v=bsk4ScOMz_o&t=219s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "It's not going to get posted as is.",
+      'timestamp': 219,
+      'timestamp_label': '[00:03:39]',
+      'timestamp_seconds': 219,
+      'tip': "It's not going to get posted as is.",
+      'title': 'How to Automate CBP Form 7512 Inbond Entries in NetCHB (Docxster Demo)',
+      'url': 'https://www.youtube.com/watch?v=bsk4ScOMz_o&t=219s',
+      'video_id': 'bsk4ScOMz_o'},
+     {'author': 'CustomsPrep — Customs Broker License Exam',
+      'channel': 'CustomsPrep — Customs Broker License Exam',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:43](https://www.youtube.com/watch?v=qORXZ_TDyKg&t=103s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The April 2026 exam still printed the old layout.',
+      'timestamp': 103,
+      'timestamp_label': '[00:01:43]',
+      'timestamp_seconds': 103,
+      'tip': 'The April 2026 exam still printed the old layout.',
+      'title': 'CBP Form 7501 Entry Summary Explained, Block by Block — and What Changed in 2026',
+      'url': 'https://www.youtube.com/watch?v=qORXZ_TDyKg&t=103s',
+      'video_id': 'qORXZ_TDyKg'},
+     {'author': 'Law Office of Yuri Starikov, LLC',
+      'channel': 'Law Office of Yuri Starikov, LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:20:14](https://www.youtube.com/watch?v=1DFXItS5lCQ&t=1214s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Customs has been known to ask a lot of questions especially with the entry type '
+              'code, so keep that in mind.',
+      'timestamp': 1214,
+      'timestamp_label': '[00:20:14]',
+      'timestamp_seconds': 1214,
+      'tip': 'Customs has been known to ask a lot of questions especially with the entry type '
+             'code, so keep that in mind.',
+      'title': 'CBP Form 7501 Discussion',
+      'url': 'https://www.youtube.com/watch?v=1DFXItS5lCQ&t=1214s',
+      'video_id': '1DFXItS5lCQ'},
+     {'author': 'Law Office of Yuri Starikov, LLC',
+      'channel': 'Law Office of Yuri Starikov, LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:48:18](https://www.youtube.com/watch?v=1DFXItS5lCQ&t=6498s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The actual country of origin shall be specified rather than a country of invoice or '
+              'exportation.',
+      'timestamp': 6498,
+      'timestamp_label': '[01:48:18]',
+      'timestamp_seconds': 6498,
+      'tip': 'The actual country of origin shall be specified rather than a country of invoice or '
+             'exportation.',
+      'title': 'CBP Form 7501 Discussion',
+      'url': 'https://www.youtube.com/watch?v=1DFXItS5lCQ&t=6498s',
+      'video_id': '1DFXItS5lCQ'},
+     {'author': 'Freight & Trade',
+      'channel': 'Freight & Trade',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:38](https://www.youtube.com/watch?v=wDQlwDFTfuE&t=278s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "First, don't assume that the customs broker is responsible for everything.",
+      'timestamp': 278,
+      'timestamp_label': '[00:04:38]',
+      'timestamp_seconds': 278,
+      'tip': "First, don't assume that the customs broker is responsible for everything.",
+      'title': 'What Is a Customs Entry  A Beginner’s Guide to U S  Imports',
+      'url': 'https://www.youtube.com/watch?v=wDQlwDFTfuE&t=278s',
+      'video_id': 'wDQlwDFTfuE'},
+     {'author': 'Vmani International',
+      'channel': 'Vmani International',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:43](https://www.youtube.com/watch?v=WyZnXlLGG-o&t=163s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Common mistakes are a wrong HTS code, under- or overvaluing goods, missing '
+              'paperwork, safety non-compliance and late duty payments.',
+      'timestamp': 163,
+      'timestamp_label': '[00:02:43]',
+      'timestamp_seconds': 163,
+      'tip': 'Common mistakes are a wrong HTS code, under- or overvaluing goods, missing '
+             'paperwork, safety non-compliance and late duty payments.',
+      'title': 'USA CBP Rules Explained! Import-Export Compliance Made Easy',
+      'url': 'https://www.youtube.com/watch?v=WyZnXlLGG-o&t=163s',
+      'video_id': 'WyZnXlLGG-o'},
+     {'author': 'Mandy Wu',
+      'channel': 'Mandy Wu',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:19](https://www.youtube.com/watch?v=l9SdxEh635U&t=139s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Address lines are limited to 32 characters, so move any overflow to the next line.',
+      'timestamp': 139,
+      'timestamp_label': '[00:02:19]',
+      'timestamp_seconds': 139,
+      'tip': 'Address lines are limited to 32 characters, so move any overflow to the next line.',
+      'title': 'How to fulfill the CBP form',
+      'url': 'https://www.youtube.com/watch?v=l9SdxEh635U&t=139s',
+      'video_id': 'l9SdxEh635U'},
+     {'author': 'Scarbrough Global',
+      'channel': 'Scarbrough Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=Bse6lVDGA_U&t=0s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'If the receiving report does not match the 7501, file a post summary correction, '
+              'and ACE made that easier.',
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': 'If the receiving report does not match the 7501, file a post summary correction, and '
+             'ACE made that easier.',
+      'title': 'Post Summary Corrections and 7501',
+      'url': 'https://www.youtube.com/watch?v=Bse6lVDGA_U&t=0s',
+      'video_id': 'Bse6lVDGA_U'},
+     {'author': 'Quantum Leap with Coach Toyin',
+      'channel': 'Quantum Leap with Coach Toyin',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:09](https://www.youtube.com/watch?v=595qylDVQzM&t=249s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'File the 7501 entry summary within 10 working days of release.',
+      'timestamp': 249,
+      'timestamp_label': '[00:04:09]',
+      'timestamp_seconds': 249,
+      'tip': 'File the 7501 entry summary within 10 working days of release.',
+      'title': 'U.S. Import Process by Customs and Border Protection - CBP',
+      'url': 'https://www.youtube.com/watch?v=595qylDVQzM&t=249s',
+      'video_id': '595qylDVQzM'},
+     {'author': 'TestMyself',
+      'channel': 'TestMyself',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:10](https://www.youtube.com/watch?v=TDiFTjun7-4&t=370s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Add 1000 first, then look.',
+      'timestamp': 370,
+      'timestamp_label': '[00:06:10]',
+      'timestamp_seconds': 370,
+      'tip': 'Add 1000 first, then look.',
+      'title': 'What is 19 USC — The U.S. Customs Code Explained',
+      'url': 'https://www.youtube.com/watch?v=TDiFTjun7-4&t=370s',
+      'video_id': 'TDiFTjun7-4'},
+     {'author': 'FDAImports.com, LLC',
+      'channel': 'FDAImports.com, LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:22](https://www.youtube.com/watch?v=vv45EYjpwXM&t=442s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'So your protest defines the fight.',
+      'timestamp': 442,
+      'timestamp_label': '[00:07:22]',
+      'timestamp_seconds': 442,
+      'tip': 'So your protest defines the fight.',
+      'title': 'How To SUE Customs When They Overcharge Your Business!',
+      'url': 'https://www.youtube.com/watch?v=vv45EYjpwXM&t=442s',
+      'video_id': 'vv45EYjpwXM'},
+     {'author': 'Scarbrough Global',
+      'channel': 'Scarbrough Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:00:42](https://www.youtube.com/watch?v=c50k-4phw2w&t=3642s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "If customs can't determine that then you're likely going to see a hold.",
+      'timestamp': 3642,
+      'timestamp_label': '[01:00:42]',
+      'timestamp_seconds': 3642,
+      'tip': "If customs can't determine that then you're likely going to see a hold.",
+      'title': 'U.S. Customs Brokerage and Classification - Full Version',
+      'url': 'https://www.youtube.com/watch?v=c50k-4phw2w&t=3642s',
+      'video_id': 'c50k-4phw2w'},
+     {'author': 'Scarbrough Global',
+      'channel': 'Scarbrough Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:38:06](https://www.youtube.com/watch?v=heA5dQMIcKY&t=2286s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "So, it's a better deal to just go ahead and get the continuous bond if nothing else "
+              'just to save money.',
+      'timestamp': 2286,
+      'timestamp_label': '[00:38:06]',
+      'timestamp_seconds': 2286,
+      'tip': "So, it's a better deal to just go ahead and get the continuous bond if nothing else "
+             'just to save money.',
+      'title': 'US Customs Brokerage Training – Import Process',
+      'url': 'https://www.youtube.com/watch?v=heA5dQMIcKY&t=2286s',
+      'video_id': 'heA5dQMIcKY'}],
+ 7: [{'author': 'USA Customs Clearance',
+      'channel': 'USA Customs Clearance',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:33](https://www.youtube.com/watch?v=MfmhZLeMz2w&t=153s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'A single-wall stainless steel bottle is about 2.9% duty, while a vacuum-insulated '
+              'flask is 7.2%.',
+      'timestamp': 153,
+      'timestamp_label': '[00:02:33]',
+      'timestamp_seconds': 153,
+      'tip': 'A single-wall stainless steel bottle is about 2.9% duty, while a vacuum-insulated '
+             'flask is 7.2%.',
+      'title': 'HTS Codes Explained',
+      'url': 'https://www.youtube.com/watch?v=MfmhZLeMz2w&t=153s',
+      'video_id': 'MfmhZLeMz2w'},
+     {'author': 'The Procurement Lens',
+      'channel': 'The Procurement Lens',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:28](https://www.youtube.com/watch?v=4IEk0Lxmf1c&t=208s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'One digit can blow up your profit margins.',
+      'timestamp': 208,
+      'timestamp_label': '[00:03:28]',
+      'timestamp_seconds': 208,
+      'tip': 'One digit can blow up your profit margins.',
+      'title': 'HS Code Explained | How Customs Classify Goods Made Simple',
+      'url': 'https://www.youtube.com/watch?v=4IEk0Lxmf1c&t=208s',
+      'video_id': '4IEk0Lxmf1c'},
+     {'author': 'Cole International',
+      'channel': 'Cole International',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:26](https://www.youtube.com/watch?v=x-SDVKIzJdI&t=146s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Before importing, have a professional request a binding ruling, which is the '
+              'definitive assessment.',
+      'timestamp': 146,
+      'timestamp_label': '[00:02:26]',
+      'timestamp_seconds': 146,
+      'tip': 'Before importing, have a professional request a binding ruling, which is the '
+             'definitive assessment.',
+      'title': 'Tariff Classification - A Step by Step Guide',
+      'url': 'https://www.youtube.com/watch?v=x-SDVKIzJdI&t=146s',
+      'video_id': 'x-SDVKIzJdI'},
+     {'author': 'Steve Fodor',
+      'channel': 'Steve Fodor',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:35:38](https://www.youtube.com/watch?v=Exy48YwwPtk&t=2138s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Broker liability is limited to the entry fee, often $100 or less.',
+      'timestamp': 2138,
+      'timestamp_label': '[00:35:38]',
+      'timestamp_seconds': 2138,
+      'tip': 'Broker liability is limited to the entry fee, often $100 or less.',
+      'title': 'HTS Classification The Most Important Step 062016',
+      'url': 'https://www.youtube.com/watch?v=Exy48YwwPtk&t=2138s',
+      'video_id': 'Exy48YwwPtk'},
+     {'author': 'Star USA, Inc.',
+      'channel': 'Star USA, Inc.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:48:03](https://www.youtube.com/watch?v=ygZWIWKWe4w&t=2883s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'But always keep a log of the headings you considered, why you eliminated them and '
+              'the details that made you select the heading that you did.',
+      'timestamp': 2883,
+      'timestamp_label': '[00:48:03]',
+      'timestamp_seconds': 2883,
+      'tip': 'But always keep a log of the headings you considered, why you eliminated them and '
+             'the details that made you select the heading that you did.',
+      'title': 'HTS Classification',
+      'url': 'https://www.youtube.com/watch?v=ygZWIWKWe4w&t=2883s',
+      'video_id': 'ygZWIWKWe4w'},
+     {'author': 'Star USA, Inc.',
+      'channel': 'Star USA, Inc.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:00:17](https://www.youtube.com/watch?v=BwGDeEGn1Wg&t=3617s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "Don't take the first CROSS hit.",
+      'timestamp': 3617,
+      'timestamp_label': '[01:00:17]',
+      'timestamp_seconds': 3617,
+      'tip': "Don't take the first CROSS hit.",
+      'title': 'HTSUS Classification Webinar',
+      'url': 'https://www.youtube.com/watch?v=BwGDeEGn1Wg&t=3617s',
+      'video_id': 'BwGDeEGn1Wg'},
+     {'author': 'Supplyia Sourcing',
+      'channel': 'Supplyia Sourcing',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:34](https://www.youtube.com/watch?v=ff_P7M6LKEo&t=154s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "If you are the importer of the record, you're still legally responsible for "
+              'whatever the amount you should pay.',
+      'timestamp': 154,
+      'timestamp_label': '[00:02:34]',
+      'timestamp_seconds': 154,
+      'tip': "If you are the importer of the record, you're still legally responsible for whatever "
+             'the amount you should pay.',
+      'title': 'HTS code lookup:  How to Calculate Duties & Tariffs for U.S Imports?',
+      'url': 'https://www.youtube.com/watch?v=ff_P7M6LKEo&t=154s',
+      'video_id': 'ff_P7M6LKEo'},
+     {'author': 'Law Office of Yuri Starikov, LLC',
+      'channel': 'Law Office of Yuri Starikov, LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:19:27](https://www.youtube.com/watch?v=B4gRBWbdUqo&t=1167s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "If you're wrong it's okay you can always go back see that's the strategy.",
+      'timestamp': 1167,
+      'timestamp_label': '[00:19:27]',
+      'timestamp_seconds': 1167,
+      'tip': "If you're wrong it's okay you can always go back see that's the strategy.",
+      'title': 'Product Classification Under HTSUS Part 1',
+      'url': 'https://www.youtube.com/watch?v=B4gRBWbdUqo&t=1167s',
+      'video_id': 'B4gRBWbdUqo'},
+     {'author': 'Shipping Solutions',
+      'channel': 'Shipping Solutions',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:09](https://www.youtube.com/watch?v=_I3v11oKRLA&t=129s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'There are 8 additional Chapter 99 tariffs that may apply to my product depending on '
+              "the source and material composition of my goods and where I'm shipping to.",
+      'timestamp': 129,
+      'timestamp_label': '[00:02:09]',
+      'timestamp_seconds': 129,
+      'tip': 'There are 8 additional Chapter 99 tariffs that may apply to my product depending on '
+             "the source and material composition of my goods and where I'm shipping to.",
+      'title': 'How to Calculate U.S. Import Tariffs (HTS Codes & Duties Explained)',
+      'url': 'https://www.youtube.com/watch?v=_I3v11oKRLA&t=129s',
+      'video_id': '_I3v11oKRLA'},
+     {'author': 'Star USA, Inc.',
+      'channel': 'Star USA, Inc.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:23:36](https://www.youtube.com/watch?v=-v_-OQnVlxE&t=1416s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'There is only one correct classification for any given import.',
+      'timestamp': 1416,
+      'timestamp_label': '[00:23:36]',
+      'timestamp_seconds': 1416,
+      'tip': 'There is only one correct classification for any given import.',
+      'title': 'HTS Classification: Catching Mistakes Before They Become Costly',
+      'url': 'https://www.youtube.com/watch?v=-v_-OQnVlxE&t=1416s',
+      'video_id': '-v_-OQnVlxE'},
+     {'author': 'Star USA, Inc.',
+      'channel': 'Star USA, Inc.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:11:16](https://www.youtube.com/watch?v=-v_-OQnVlxE&t=4276s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'I always assume that a change will trigger review.',
+      'timestamp': 4276,
+      'timestamp_label': '[01:11:16]',
+      'timestamp_seconds': 4276,
+      'tip': 'I always assume that a change will trigger review.',
+      'title': 'HTS Classification: Catching Mistakes Before They Become Costly',
+      'url': 'https://www.youtube.com/watch?v=-v_-OQnVlxE&t=4276s',
+      'video_id': '-v_-OQnVlxE'},
+     {'author': 'KYG Trade',
+      'channel': 'KYG Trade',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:22:12](https://www.youtube.com/watch?v=myOI9hprs0c&t=1332s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'There still has to be human intervention.',
+      'timestamp': 1332,
+      'timestamp_label': '[00:22:12]',
+      'timestamp_seconds': 1332,
+      'tip': 'There still has to be human intervention.',
+      'title': 'CBP Ruling HQ 350722 & Guardrails for AI in Trade Compliance',
+      'url': 'https://www.youtube.com/watch?v=myOI9hprs0c&t=1332s',
+      'video_id': 'myOI9hprs0c'},
+     {'author': 'KYG Trade',
+      'channel': 'KYG Trade',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:45:13](https://www.youtube.com/watch?v=myOI9hprs0c&t=2713s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "We're charging a flat fee to do it because the important thing is to get into "
+              'court.',
+      'timestamp': 2713,
+      'timestamp_label': '[00:45:13]',
+      'timestamp_seconds': 2713,
+      'tip': "We're charging a flat fee to do it because the important thing is to get into court.",
+      'title': 'CBP Ruling HQ 350722 & Guardrails for AI in Trade Compliance',
+      'url': 'https://www.youtube.com/watch?v=myOI9hprs0c&t=2713s',
+      'video_id': 'myOI9hprs0c'},
+     {'author': 'ImageSearch for HS classification',
+      'channel': 'ImageSearch for HS classification',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:27](https://www.youtube.com/watch?v=Z20K9hWki3Q&t=87s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'General six digit HS codes are completely fine.',
+      'timestamp': 87,
+      'timestamp_label': '[00:01:27]',
+      'timestamp_seconds': 87,
+      'tip': 'General six digit HS codes are completely fine.',
+      'title': 'The US CBP declaring an AI-based HS classification tool illegal.',
+      'url': 'https://www.youtube.com/watch?v=Z20K9hWki3Q&t=87s',
+      'video_id': 'Z20K9hWki3Q'},
+     {'author': 'Shipping Solutions',
+      'channel': 'Shipping Solutions',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:55](https://www.youtube.com/watch?v=zDnjfsml-j4&t=55s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'The HTS is a 10-digit code designed so that each article falls into only one '
+              'category.',
+      'timestamp': 55,
+      'timestamp_label': '[00:00:55]',
+      'timestamp_seconds': 55,
+      'tip': 'The HTS is a 10-digit code designed so that each article falls into only one '
+             'category.',
+      'title': 'How to Use the Harmonized Tariff Schedule of the United States',
+      'url': 'https://www.youtube.com/watch?v=zDnjfsml-j4&t=55s',
+      'video_id': 'zDnjfsml-j4'},
+     {'author': 'Clark-Esposito Law Firm P.C.',
+      'channel': 'Clark-Esposito Law Firm P.C.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:16](https://www.youtube.com/watch?v=8Lpn0Ae59QU&t=76s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Incorrect classification can lead to underpayment or overpayment of duties, fines, '
+              'or even seizure of your goods.',
+      'timestamp': 76,
+      'timestamp_label': '[00:01:16]',
+      'timestamp_seconds': 76,
+      'tip': 'Incorrect classification can lead to underpayment or overpayment of duties, fines, '
+             'or even seizure of your goods.',
+      'title': 'Tariffs & Classification Explained: Stay Compliant & Avoid Penalties',
+      'url': 'https://www.youtube.com/watch?v=8Lpn0Ae59QU&t=76s',
+      'video_id': '8Lpn0Ae59QU'},
+     {'author': 'Straightforward ITC',
+      'channel': 'Straightforward ITC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:35](https://www.youtube.com/watch?v=CcVyqKoA9dY&t=35s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'You do not classify a product simply by searching for the description that sounds '
+              'closest.',
+      'timestamp': 35,
+      'timestamp_label': '[00:00:35]',
+      'timestamp_seconds': 35,
+      'tip': 'You do not classify a product simply by searching for the description that sounds '
+             'closest.',
+      'title': 'What Is an HTS Code? | U.S. Tariff Classification Explained',
+      'url': 'https://www.youtube.com/watch?v=CcVyqKoA9dY&t=35s',
+      'video_id': 'CcVyqKoA9dY'},
+     {'author': 'Star USA, Inc.',
+      'channel': 'Star USA, Inc.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:56:12](https://www.youtube.com/watch?v=HbhpILTp9v0&t=3372s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "Customs doesn't care if the vendor gave you the wrong HTS, they care that you use "
+              'the right HTS.',
+      'timestamp': 3372,
+      'timestamp_label': '[00:56:12]',
+      'timestamp_seconds': 3372,
+      'tip': "Customs doesn't care if the vendor gave you the wrong HTS, they care that you use "
+             'the right HTS.',
+      'title': 'HTSUS Classification',
+      'url': 'https://www.youtube.com/watch?v=HbhpILTp9v0&t=3372s',
+      'video_id': 'HbhpILTp9v0'}],
+ 8: [{'author': 'ImportGenius Korea',
+      'channel': 'ImportGenius Korea',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:40](https://www.youtube.com/watch?v=HLvI3nZIlT4&t=160s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can get 25 contact information of the companies per month because our research '
+              'team searched the contact information manually.',
+      'timestamp': 160,
+      'timestamp_label': '[00:02:40]',
+      'timestamp_seconds': 160,
+      'tip': 'You can get 25 contact information of the companies per month because our research '
+             'team searched the contact information manually.',
+      'title': 'How to use the ImportGenius Application_Eng Ver',
+      'url': 'https://www.youtube.com/watch?v=HLvI3nZIlT4&t=160s',
+      'video_id': 'HLvI3nZIlT4'},
+     {'author': '💎Kiona 職場 x 行銷筆記💎',
+      'channel': '💎Kiona 職場 x 行銷筆記💎',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:54](https://www.youtube.com/watch?v=LggBClCtXNY&t=294s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Plan B is 399 per month, this plan allows you to access the data for the past 17 '
+              'months and include 50 searches.',
+      'timestamp': 294,
+      'timestamp_label': '[00:04:54]',
+      'timestamp_seconds': 294,
+      'tip': 'Plan B is 399 per month, this plan allows you to access the data for the past 17 '
+             'months and include 50 searches.',
+      'title': 'Top 3 Customs Data Suppliers Compared: Panjiva vs. ImportGenius vs. I-POWER',
+      'url': 'https://www.youtube.com/watch?v=LggBClCtXNY&t=294s',
+      'video_id': 'LggBClCtXNY'},
+     {'author': 'ImportGenius',
+      'channel': 'ImportGenius',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:25:05](https://www.youtube.com/watch?v=XuTLIlW6tdk&t=1505s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'They found out that Home Depot also labels their containers with a special '
+              'container number, and it always starts with the same four digits.',
+      'timestamp': 1505,
+      'timestamp_label': '[00:25:05]',
+      'timestamp_seconds': 1505,
+      'tip': 'They found out that Home Depot also labels their containers with a special container '
+             'number, and it always starts with the same four digits.',
+      'title': 'Trade secrets exposed: how to see what your competitors are importing, selling, '
+               'and sourcing',
+      'url': 'https://www.youtube.com/watch?v=XuTLIlW6tdk&t=1505s',
+      'video_id': 'XuTLIlW6tdk'},
+     {'author': 'ImportGenius',
+      'channel': 'ImportGenius',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:29:01](https://www.youtube.com/watch?v=XuTLIlW6tdk&t=1741s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "When it comes to the US ocean freight data, they don't share the price with us.",
+      'timestamp': 1741,
+      'timestamp_label': '[00:29:01]',
+      'timestamp_seconds': 1741,
+      'tip': "When it comes to the US ocean freight data, they don't share the price with us.",
+      'title': 'Trade secrets exposed: how to see what your competitors are importing, selling, '
+               'and sourcing',
+      'url': 'https://www.youtube.com/watch?v=XuTLIlW6tdk&t=1741s',
+      'video_id': 'XuTLIlW6tdk'},
+     {'author': '💎Kiona 職場 x 行銷筆記💎',
+      'channel': '💎Kiona 職場 x 行銷筆記💎',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:13](https://www.youtube.com/watch?v=i3e313EJJPE&t=73s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'In some specific countries, for example Indonesia, Philippines and Vietnam, you can '
+              'see the price on the bills of lading.',
+      'timestamp': 73,
+      'timestamp_label': '[00:01:13]',
+      'timestamp_seconds': 73,
+      'tip': 'In some specific countries, for example Indonesia, Philippines and Vietnam, you can '
+             'see the price on the bills of lading.',
+      'title': 'How AI Finds Global Buyers 10X FASTER Than Manual Search! #I-Power #panjiva '
+               '#importgenius',
+      'url': 'https://www.youtube.com/watch?v=i3e313EJJPE&t=73s',
+      'video_id': 'i3e313EJJPE'},
+     {'author': 'ImportGenius',
+      'channel': 'ImportGenius',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:32](https://www.youtube.com/watch?v=9IaKZ1JUPmU&t=332s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "If you see a shipment that's hidden behind a freight forwarder, scroll all the way "
+              "down to the bottom and you've got related bills of lading.",
+      'timestamp': 332,
+      'timestamp_label': '[00:05:32]',
+      'timestamp_seconds': 332,
+      'tip': "If you see a shipment that's hidden behind a freight forwarder, scroll all the way "
+             "down to the bottom and you've got related bills of lading.",
+      'title': 'Import Genius Advanced Search Techniques Help Video',
+      'url': 'https://www.youtube.com/watch?v=9IaKZ1JUPmU&t=332s',
+      'video_id': '9IaKZ1JUPmU'},
+     {'author': 'ImportGenius',
+      'channel': 'ImportGenius',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:25](https://www.youtube.com/watch?v=NmWdt9dMzjM&t=85s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "Visual mapping gives you a graphical representation of this company's supply chain "
+              'showing all of their trading partners as nodes on the web of trade connections.',
+      'timestamp': 85,
+      'timestamp_label': '[00:01:25]',
+      'timestamp_seconds': 85,
+      'tip': "Visual mapping gives you a graphical representation of this company's supply chain "
+             'showing all of their trading partners as nodes on the web of trade connections.',
+      'title': 'Identify High-Value Sales Prospects with Import Genius',
+      'url': 'https://www.youtube.com/watch?v=NmWdt9dMzjM&t=85s',
+      'video_id': 'NmWdt9dMzjM'},
+     {'author': 'ImportGenius',
+      'channel': 'ImportGenius',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:59](https://www.youtube.com/watch?v=Zdmg7G-W9_Q&t=179s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "Enterprise subscribers get all of our data, so it's almost five years worth of "
+              'shipment data, where standard subscribers only get one year of data.',
+      'timestamp': 179,
+      'timestamp_label': '[00:02:59]',
+      'timestamp_seconds': 179,
+      'tip': "Enterprise subscribers get all of our data, so it's almost five years worth of "
+             'shipment data, where standard subscribers only get one year of data.',
+      'title': 'Import Genius Visual Mapping Instruction',
+      'url': 'https://www.youtube.com/watch?v=Zdmg7G-W9_Q&t=179s',
+      'video_id': 'Zdmg7G-W9_Q'},
+     {'author': 'ImportGenius',
+      'channel': 'ImportGenius',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:01](https://www.youtube.com/watch?v=irUncYGL5Jg&t=61s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "There's the phone number for that factory, I'm sure I can google them very quickly "
+              'and find out exactly their email address and start a dialogue with them.',
+      'timestamp': 61,
+      'timestamp_label': '[00:01:01]',
+      'timestamp_seconds': 61,
+      'tip': "There's the phone number for that factory, I'm sure I can google them very quickly "
+             'and find out exactly their email address and start a dialogue with them.',
+      'title': 'Marble Imports',
+      'url': 'https://www.youtube.com/watch?v=irUncYGL5Jg&t=61s',
+      'video_id': 'irUncYGL5Jg'},
+     {'author': 'Ask The Customs Manager',
+      'channel': 'Ask The Customs Manager',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=5fk-EKpR8Zw&t=0s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'If your company buys imported goods through a trading company, a middleman, or a '
+              'foreign vendor rather than buying directly from the factory, you are voluntarily '
+              "paying the government extra taxes on another company's profit margin.",
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': 'If your company buys imported goods through a trading company, a middleman, or a '
+             'foreign vendor rather than buying directly from the factory, you are voluntarily '
+             "paying the government extra taxes on another company's profit margin.",
+      'title': 'Save Thousands on Import Duties With This Strategy',
+      'url': 'https://www.youtube.com/watch?v=5fk-EKpR8Zw&t=0s',
+      'video_id': '5fk-EKpR8Zw'},
+     {'author': 'Ask The Customs Manager',
+      'channel': 'Ask The Customs Manager',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:49](https://www.youtube.com/watch?v=5fk-EKpR8Zw&t=169s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'They use a blind trust or a third-party trade compliance auditor, and the middleman '
+              'hands the highly confidential factory pricing data directly to the independent '
+              'auditor.',
+      'timestamp': 169,
+      'timestamp_label': '[00:02:49]',
+      'timestamp_seconds': 169,
+      'tip': 'They use a blind trust or a third-party trade compliance auditor, and the middleman '
+             'hands the highly confidential factory pricing data directly to the independent '
+             'auditor.',
+      'title': 'Save Thousands on Import Duties With This Strategy',
+      'url': 'https://www.youtube.com/watch?v=5fk-EKpR8Zw&t=169s',
+      'video_id': '5fk-EKpR8Zw'},
+     {'author': 'Harry F. Long, Inc. - U.S. Customs Brokers',
+      'channel': 'Harry F. Long, Inc. - U.S. Customs Brokers',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:28](https://www.youtube.com/watch?v=oOC1WI_WDJs&t=88s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "With the tariff stacking that's going on with general tariffs and now reciprocal "
+              'tariffs on top of it, that lower duty valuation is going to save a lot of money.',
+      'timestamp': 88,
+      'timestamp_label': '[00:01:28]',
+      'timestamp_seconds': 88,
+      'tip': "With the tariff stacking that's going on with general tariffs and now reciprocal "
+             'tariffs on top of it, that lower duty valuation is going to save a lot of money.',
+      'title': 'Customs Quick Tips - First Sale Rule',
+      'url': 'https://www.youtube.com/watch?v=oOC1WI_WDJs&t=88s',
+      'video_id': 'oOC1WI_WDJs'},
+     {'author': 'Scarbrough Global',
+      'channel': 'Scarbrough Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:53](https://www.youtube.com/watch?v=Cif7o8T-mG4&t=233s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "If your supply chain is set up to take advantage of this and you're not taking "
+              "advantage of it, it's just money sitting out there that you could be saving.",
+      'timestamp': 233,
+      'timestamp_label': '[00:03:53]',
+      'timestamp_seconds': 233,
+      'tip': "If your supply chain is set up to take advantage of this and you're not taking "
+             "advantage of it, it's just money sitting out there that you could be saving.",
+      'title': 'First Sale Rule – U.S. Customs and Imports',
+      'url': 'https://www.youtube.com/watch?v=Cif7o8T-mG4&t=233s',
+      'video_id': 'Cif7o8T-mG4'},
+     {'author': 'CustomsDeclarationsUK',
+      'channel': 'CustomsDeclarationsUK',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:03](https://www.youtube.com/watch?v=6Fco88JHSNg&t=63s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'This principal way of determining transaction value accounts for approximately 90% '
+              'of transactions in the UK.',
+      'timestamp': 63,
+      'timestamp_label': '[00:01:03]',
+      'timestamp_seconds': 63,
+      'tip': 'This principal way of determining transaction value accounts for approximately 90% '
+             'of transactions in the UK.',
+      'title': 'A Quick Guide to Customs Valuation Methods to Determine the Value of Goods | '
+               'Customs-Declarations.uk',
+      'url': 'https://www.youtube.com/watch?v=6Fco88JHSNg&t=63s',
+      'video_id': '6Fco88JHSNg'},
+     {'author': 'Customs Directory',
+      'channel': 'Customs Directory',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:42](https://www.youtube.com/watch?v=3WCCVWQIggA&t=162s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'A staggering 95% of all global imports are valued using this one single method.',
+      'timestamp': 162,
+      'timestamp_label': '[00:02:42]',
+      'timestamp_seconds': 162,
+      'tip': 'A staggering 95% of all global imports are valued using this one single method.',
+      'title': 'Customs Valuation Explained – How Customs Calculate Import Duty',
+      'url': 'https://www.youtube.com/watch?v=3WCCVWQIggA&t=162s',
+      'video_id': '3WCCVWQIggA'},
+     {'author': 'Clark-Esposito Law Firm P.C.',
+      'channel': 'Clark-Esposito Law Firm P.C.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:58](https://www.youtube.com/watch?v=yXBLHYkmz0A&t=118s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "If you're unsure about your valuation method, CBP allows importers to request "
+              'binding rulings for added certainty.',
+      'timestamp': 118,
+      'timestamp_label': '[00:01:58]',
+      'timestamp_seconds': 118,
+      'tip': "If you're unsure about your valuation method, CBP allows importers to request "
+             'binding rulings for added certainty.',
+      'title': 'U.S. Customs Value Explained',
+      'url': 'https://www.youtube.com/watch?v=yXBLHYkmz0A&t=118s',
+      'video_id': 'yXBLHYkmz0A'},
+     {'author': 'Flexport',
+      'channel': 'Flexport',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:15:27](https://www.youtube.com/watch?v=yR_RXKhapxo&t=927s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'A flash title is when the transaction in the two sales happen at the same time, so '
+              "there's really not a clear distinction of when that middleman company actually owns "
+              'the goods.',
+      'timestamp': 927,
+      'timestamp_label': '[00:15:27]',
+      'timestamp_seconds': 927,
+      'tip': 'A flash title is when the transaction in the two sales happen at the same time, so '
+             "there's really not a clear distinction of when that middleman company actually owns "
+             'the goods.',
+      'title': 'Flexport Customs: Mastering the First Sale Rule',
+      'url': 'https://www.youtube.com/watch?v=yR_RXKhapxo&t=927s',
+      'video_id': 'yR_RXKhapxo'},
+     {'author': 'Chartered Inst. of Export & International Trade',
+      'channel': 'Chartered Inst. of Export & International Trade',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:48](https://www.youtube.com/watch?v=mimI2zifsUA&t=708s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'If customs asked whether you get a cheaper price because of the intercompany '
+              "relationship and you answered yes, then immediately you're disqualifying yourself "
+              'from using method one.',
+      'timestamp': 708,
+      'timestamp_label': '[00:11:48]',
+      'timestamp_seconds': 708,
+      'tip': 'If customs asked whether you get a cheaper price because of the intercompany '
+             "relationship and you answered yes, then immediately you're disqualifying yourself "
+             'from using method one.',
+      'title': 'Customs 101: Methods of valuation for import duty',
+      'url': 'https://www.youtube.com/watch?v=mimI2zifsUA&t=708s',
+      'video_id': 'mimI2zifsUA'}],
+ 9: [{'author': 'JSJ INTERNATIONAL LCB',
+      'channel': 'JSJ INTERNATIONAL LCB',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:39](https://www.youtube.com/watch?v=OyJAzze4KyY&t=339s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Misdeclaring or reclassifying after entry is fraud, and splitting products '
+              'artificially or assuming one ruling covers other products must be avoided.',
+      'timestamp': 339,
+      'timestamp_label': '[00:05:39]',
+      'timestamp_seconds': 339,
+      'tip': 'Misdeclaring or reclassifying after entry is fraud, and splitting products '
+             'artificially or assuming one ruling covers other products must be avoided.',
+      'title': 'Tariff Engineering & Duty Reduction',
+      'url': 'https://www.youtube.com/watch?v=OyJAzze4KyY&t=339s',
+      'video_id': 'OyJAzze4KyY'},
+     {'author': 'CNBC',
+      'channel': 'CNBC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:52](https://www.youtube.com/watch?v=KFKpVuWoQLU&t=712s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'And we believe the tariff that we will pay on that is 30%, not the 125%.',
+      'timestamp': 712,
+      'timestamp_label': '[00:11:52]',
+      'timestamp_seconds': 712,
+      'tip': 'And we believe the tariff that we will pay on that is 30%, not the 125%.',
+      'title': 'How U.S. Companies Are Mitigating Trump Tariffs With Foreign Trade Zones',
+      'url': 'https://www.youtube.com/watch?v=KFKpVuWoQLU&t=712s',
+      'video_id': 'KFKpVuWoQLU'},
+     {'author': 'CNBC',
+      'channel': 'CNBC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:14:02](https://www.youtube.com/watch?v=KFKpVuWoQLU&t=842s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "Now we're a lot higher because we're not getting the benefit of the FTZ.",
+      'timestamp': 842,
+      'timestamp_label': '[00:14:02]',
+      'timestamp_seconds': 842,
+      'tip': "Now we're a lot higher because we're not getting the benefit of the FTZ.",
+      'title': 'How U.S. Companies Are Mitigating Trump Tariffs With Foreign Trade Zones',
+      'url': 'https://www.youtube.com/watch?v=KFKpVuWoQLU&t=842s',
+      'video_id': 'KFKpVuWoQLU'},
+     {'author': 'Greater Cincinnati Foreign Trade Zones',
+      'channel': 'Greater Cincinnati Foreign Trade Zones',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:24](https://www.youtube.com/watch?v=8TKnN_7QZFw&t=84s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'FTZs best fit high-volume importers, especially those importing from non-FTA '
+              'countries, with duty deferred, reduced, or eliminated and entry fees paid weekly '
+              'instead of per entry.',
+      'timestamp': 84,
+      'timestamp_label': '[00:01:24]',
+      'timestamp_seconds': 84,
+      'tip': 'FTZs best fit high-volume importers, especially those importing from non-FTA '
+             'countries, with duty deferred, reduced, or eliminated and entry fees paid weekly '
+             'instead of per entry.',
+      'title': 'How FTZs Work | Benefits, Process & Key Facts',
+      'url': 'https://www.youtube.com/watch?v=8TKnN_7QZFw&t=84s',
+      'video_id': '8TKnN_7QZFw'},
+     {'author': 'Radial',
+      'channel': 'Radial',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:40](https://www.youtube.com/watch?v=p-c3zl1yoVk&t=100s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Operators can use 3PL FTZ networks instead of owning an FTZ, avoiding the capital '
+              'and compliance burden.',
+      'timestamp': 100,
+      'timestamp_label': '[00:01:40]',
+      'timestamp_seconds': 100,
+      'tip': 'Operators can use 3PL FTZ networks instead of owning an FTZ, avoiding the capital '
+             'and compliance burden.',
+      'title': 'Radial: What is a Foreign Trade Zone (FTZ) Warehouse?',
+      'url': 'https://www.youtube.com/watch?v=p-c3zl1yoVk&t=100s',
+      'video_id': 'p-c3zl1yoVk'},
+     {'author': 'OSV FTWZ',
+      'channel': 'OSV FTWZ',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:57](https://www.youtube.com/watch?v=gKGLwtinJk8&t=417s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "The most common misconception about FTWZs is that they're only for large "
+              'multinational corporations.',
+      'timestamp': 417,
+      'timestamp_label': '[00:06:57]',
+      'timestamp_seconds': 417,
+      'tip': "The most common misconception about FTWZs is that they're only for large "
+             'multinational corporations.',
+      'title': 'What Is Free Trade Warehousing Zone (FTWZ)? How It Solves Customs Duty & Cash Flow '
+               'Problems in India',
+      'url': 'https://www.youtube.com/watch?v=gKGLwtinJk8&t=417s',
+      'video_id': 'gKGLwtinJk8'},
+     {'author': 'LionSky',
+      'channel': 'LionSky',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:01](https://www.youtube.com/watch?v=7ocNjGWsJHw&t=1s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'FTZs were created so exporters could avoid tariffs on imported raw materials.',
+      'timestamp': 1,
+      'timestamp_label': '[00:00:01]',
+      'timestamp_seconds': 1,
+      'tip': 'FTZs were created so exporters could avoid tariffs on imported raw materials.',
+      'title': 'What is an FTZ?',
+      'url': 'https://www.youtube.com/watch?v=7ocNjGWsJHw&t=1s',
+      'video_id': '7ocNjGWsJHw'},
+     {'author': 'International Trade Administration',
+      'channel': 'International Trade Administration',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:26](https://www.youtube.com/watch?v=F9HNfhO6S9U&t=26s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'FTZs exist in all 50 states and Puerto Rico, and a company does not need to '
+              'relocate to use one.',
+      'timestamp': 26,
+      'timestamp_label': '[00:00:26]',
+      'timestamp_seconds': 26,
+      'tip': 'FTZs exist in all 50 states and Puerto Rico, and a company does not need to relocate '
+             'to use one.',
+      'title': 'Introduction to Foreign Trade Zones',
+      'url': 'https://www.youtube.com/watch?v=F9HNfhO6S9U&t=26s',
+      'video_id': 'F9HNfhO6S9U'},
+     {'author': 'Montana World Trade Center',
+      'channel': 'Montana World Trade Center',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:38:53](https://www.youtube.com/watch?v=xWFmdLRN9Ro&t=2333s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'On $50M of imports with a $2M baseline duty, inverted tariff saves $800K, one-time '
+              'deferral $460K, weekly entry $187K, exports $100K, and scrap $60K.',
+      'timestamp': 2333,
+      'timestamp_label': '[00:38:53]',
+      'timestamp_seconds': 2333,
+      'tip': 'On $50M of imports with a $2M baseline duty, inverted tariff saves $800K, one-time '
+             'deferral $460K, weekly entry $187K, exports $100K, and scrap $60K.',
+      'title': 'Foreign Trade Zone training',
+      'url': 'https://www.youtube.com/watch?v=xWFmdLRN9Ro&t=2333s',
+      'video_id': 'xWFmdLRN9Ro'},
+     {'author': 'Brandon M. Young',
+      'channel': 'Brandon M. Young',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:26](https://www.youtube.com/watch?v=nWH_1DtEHoA&t=206s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Tariff rates could be 45% today and 50% tomorrow.',
+      'timestamp': 206,
+      'timestamp_label': '[00:03:26]',
+      'timestamp_seconds': 206,
+      'tip': 'Tariff rates could be 45% today and 50% tomorrow.',
+      'title': 'WARNING Amazon FBA Sellers Are Losing THOUSANDS to Tariff Expenses',
+      'url': 'https://www.youtube.com/watch?v=nWH_1DtEHoA&t=206s',
+      'video_id': 'nWH_1DtEHoA'},
+     {'author': 'TrackIQ',
+      'channel': 'TrackIQ',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:21](https://www.youtube.com/watch?v=Q8jgNmiJNZg&t=21s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Those refunds flow exclusively to the importer of record, not the marketplace '
+              'seller who actually absorbed the costs.',
+      'timestamp': 21,
+      'timestamp_label': '[00:00:21]',
+      'timestamp_seconds': 21,
+      'tip': 'Those refunds flow exclusively to the importer of record, not the marketplace seller '
+             'who actually absorbed the costs.',
+      'title': "Supreme Court Tariff Ruling: Why Most Amazon Sellers Won't See Refunds",
+      'url': 'https://www.youtube.com/watch?v=Q8jgNmiJNZg&t=21s',
+      'video_id': 'Q8jgNmiJNZg'},
+     {'author': 'JSJ INTERNATIONAL LCB',
+      'channel': 'JSJ INTERNATIONAL LCB',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:31:18](https://www.youtube.com/watch?v=W-f4Ah72J_I&t=5478s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "If you don't have all the paperwork, don't get into trouble and don't claim 9801.",
+      'timestamp': 5478,
+      'timestamp_label': '[01:31:18]',
+      'timestamp_seconds': 5478,
+      'tip': "If you don't have all the paperwork, don't get into trouble and don't claim 9801.",
+      'title': 'Master Class Requisitos Regimen 9801| Mercancías Estadounidenses y Extranjeras '
+               'Devueltas',
+      'url': 'https://www.youtube.com/watch?v=W-f4Ah72J_I&t=5478s',
+      'video_id': 'W-f4Ah72J_I'},
+     {'author': 'JSJ INTERNATIONAL LCB',
+      'channel': 'JSJ INTERNATIONAL LCB',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:52:36](https://www.youtube.com/watch?v=W-f4Ah72J_I&t=3156s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "The USMCA doesn't have full validity; the rest of the documentation we have here is "
+              "required, so don't think that just the USMCA alone is saving you and that's it.",
+      'timestamp': 3156,
+      'timestamp_label': '[00:52:36]',
+      'timestamp_seconds': 3156,
+      'tip': "The USMCA doesn't have full validity; the rest of the documentation we have here is "
+             "required, so don't think that just the USMCA alone is saving you and that's it.",
+      'title': 'Master Class Requisitos Regimen 9801| Mercancías Estadounidenses y Extranjeras '
+               'Devueltas',
+      'url': 'https://www.youtube.com/watch?v=W-f4Ah72J_I&t=3156s',
+      'video_id': 'W-f4Ah72J_I'},
+     {'author': 'Ask The Customs Manager',
+      'channel': 'Ask The Customs Manager',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:41](https://www.youtube.com/watch?v=GdCve47uHF8&t=101s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'If the serial number on the export paperwork matches the return paperwork, customs '
+              'will grant the relief.',
+      'timestamp': 101,
+      'timestamp_label': '[00:01:41]',
+      'timestamp_seconds': 101,
+      'tip': 'If the serial number on the export paperwork matches the return paperwork, customs '
+             'will grant the relief.',
+      'title': 'Returned Goods Relief (RGR): How to Avoid Import Duty on Returned International '
+               'Shipments',
+      'url': 'https://www.youtube.com/watch?v=GdCve47uHF8&t=101s',
+      'video_id': 'GdCve47uHF8'},
+     {'author': 'Shipping Solutions',
+      'channel': 'Shipping Solutions',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:11](https://www.youtube.com/watch?v=uEeZIcpmUfw&t=191s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "As the importer, you'll need to submit either the Importer's Declaration or "
+              "Manufacturer's Affidavit to your broker to avoid duty payments.",
+      'timestamp': 191,
+      'timestamp_label': '[00:03:11]',
+      'timestamp_seconds': 191,
+      'tip': "As the importer, you'll need to submit either the Importer's Declaration or "
+             "Manufacturer's Affidavit to your broker to avoid duty payments.",
+      'title': 'Repaired Goods: Import and Re-export',
+      'url': 'https://www.youtube.com/watch?v=uEeZIcpmUfw&t=191s',
+      'video_id': 'uEeZIcpmUfw'},
+     {'author': 'American Association of Exporters & Importers',
+      'channel': 'American Association of Exporters & Importers',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:14:08](https://www.youtube.com/watch?v=g_ANnE2CVcU&t=848s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Sharing the formula, the amount, and all the supporting data with a calendar invite '
+              'for a meeting in two weeks raised the supplier response rate from the low 60s to '
+              '92%.',
+      'timestamp': 848,
+      'timestamp_label': '[00:14:08]',
+      'timestamp_seconds': 848,
+      'tip': 'Sharing the formula, the amount, and all the supporting data with a calendar invite '
+             'for a meeting in two weeks raised the supplier response rate from the low 60s to '
+             '92%.',
+      'title': 'Beyond the Customs Entry: Identifying Tariff Recovery Opportunities in Supplier '
+               'Costs',
+      'url': 'https://www.youtube.com/watch?v=g_ANnE2CVcU&t=848s',
+      'video_id': 'g_ANnE2CVcU'},
+     {'author': 'Flexport',
+      'channel': 'Flexport',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:17:23](https://www.youtube.com/watch?v=2Z2HUuGsrFI&t=1043s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Tariff engineering is the legal and proactive way to minimize customs duties.',
+      'timestamp': 1043,
+      'timestamp_label': '[00:17:23]',
+      'timestamp_seconds': 1043,
+      'tip': 'Tariff engineering is the legal and proactive way to minimize customs duties.',
+      'title': 'Duty Optimization Through Tariff Engineering and HTS Classification',
+      'url': 'https://www.youtube.com/watch?v=2Z2HUuGsrFI&t=1043s',
+      'video_id': '2Z2HUuGsrFI'},
+     {'author': 'ImportGenius',
+      'channel': 'ImportGenius',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:15:21](https://www.youtube.com/watch?v=nPc88yLuFVQ&t=921s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you go out of stock with a product in a supermarket in the United States and '
+              "you're out of stock, you're off the shelf.",
+      'timestamp': 921,
+      'timestamp_label': '[00:15:21]',
+      'timestamp_seconds': 921,
+      'tip': 'If you go out of stock with a product in a supermarket in the United States and '
+             "you're out of stock, you're off the shelf.",
+      'title': 'The New Procurement Playbook [Webinar - October 29, 2026]',
+      'url': 'https://www.youtube.com/watch?v=nPc88yLuFVQ&t=921s',
+      'video_id': 'nPc88yLuFVQ'}],
+ 10: [{'author': 'Shapiro',
+       'channel': 'Shapiro',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:25](https://www.youtube.com/watch?v=Z20K9hWki3Q&t=145s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q10 operational '
-                    'verification).',
+       'markdown': '[00:04:11](https://www.youtube.com/watch?v=cjNgBgUI1As&t=251s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Powers of attorney must be executed directly between the broker and importer, '
-               'and platforms must strictly safeguard client record confidentiality under 19 '
-               'CFR 111. So this ruling makes it crystal clear. Automation must respect legal '
-               'boundaries.',
-       'timestamp': 145,
-       'timestamp_label': '[00:02:25]',
-       'timestamp_seconds': 145,
-       'tip': 'Powers of attorney must be executed directly between the broker and importer, '
-              'and platforms must strictly safeguard client record confidentiality under 19 '
-              'CFR 111. So this ruling makes it crystal clear. Automation must respect legal '
-              'boundaries.',
-       'title': 'The US CBP declaring an AI-based HS classification tool illegal. (ImageSearch '
-                'for HS classification)',
-       'url': 'https://www.youtube.com/watch?v=Z20K9hWki3Q&t=145s',
-       'video_id': 'Z20K9hWki3Q'},
-      {'author': 'Center for Strategic & International Studies',
-       'channel': 'Center for Strategic & International Studies',
+       'text': 'You can outsource the entry responsibility but not the liability.',
+       'timestamp': 251,
+       'timestamp_label': '[00:04:11]',
+       'timestamp_seconds': 251,
+       'tip': 'You can outsource the entry responsibility but not the liability.',
+       'title': 'Essentials of Customs Entry Auditing',
+       'url': 'https://www.youtube.com/watch?v=cjNgBgUI1As&t=251s',
+       'video_id': 'cjNgBgUI1As'},
+      {'author': 'Grassi',
+       'channel': 'Grassi',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:11:59](https://www.youtube.com/watch?v=PJpF0M_rjYs&t=719s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q10 operational '
-                    'verification).',
+       'markdown': '[00:28:02](https://www.youtube.com/watch?v=xA8LxqtatDo&t=1682s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Reliable suppliers are hard to find. Reliable customers are treated like gold '
-               'by most companies who are customer-facing. So, there is work to be done in '
-               "that area. And when you're dealing with China's retaliation, first of all, as "
-               "Bill pointed out, it's large in scale.",
-       'timestamp': 719,
-       'timestamp_label': '[00:11:59]',
-       'timestamp_seconds': 719,
-       'tip': 'Reliable suppliers are hard to find. Reliable customers are treated like gold '
-              'by most companies who are customer-facing. So, there is work to be done in that '
-              "area. And when you're dealing with China's retaliation, first of all, as Bill "
-              "pointed out, it's large in scale.",
-       'title': "China's Retaliatory Tariffs, Section 301 Authorities, and Tariff Refund "
-                'Litigation (Center for Strategic & International Studies)',
-       'url': 'https://www.youtube.com/watch?v=PJpF0M_rjYs&t=719s',
-       'video_id': 'PJpF0M_rjYs'},
-      {'author': 'PolitiClash',
-       'channel': 'PolitiClash',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:58](https://www.youtube.com/watch?v=uhEb06Zt2cw&t=358s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q10 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'His economic adviser later said a proposal would go to Congress. Here is the '
-               'record since: no administration bill was ever formally sent. Three rebate '
-               'bills from members of Congress — none of them for the full $2,000 — sit in '
-               'committee. None has passed either chamber.',
-       'timestamp': 358,
-       'timestamp_label': '[00:05:58]',
-       'timestamp_seconds': 358,
-       'tip': 'His economic adviser later said a proposal would go to Congress. Here is the '
-              'record since: no administration bill was ever formally sent. Three rebate bills '
-              'from members of Congress — none of them for the full $2,000 — sit in committee. '
-              'None has passed either chamber.',
-       'title': 'The $166 Billion Tariff Refund: Who Actually Gets It, Checked (PolitiClash)',
-       'url': 'https://www.youtube.com/watch?v=uhEb06Zt2cw&t=358s',
-       'video_id': 'uhEb06Zt2cw'},
-      {'author': 'Who Pays For It',
-       'channel': 'Who Pays For It',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:10:20](https://www.youtube.com/watch?v=q4JXW2PbDBk&t=620s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q10 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "A tax that one person pays and another person carries is easy to collect. It's "
-               'a lot harder to give back. Next time power companies are building new plants '
-               'and power lines to feed AI data centers. Somebody has to pay for that. Is it '
-               'the tech companies or your electric bill?',
-       'timestamp': 620,
-       'timestamp_label': '[00:10:20]',
-       'timestamp_seconds': 620,
-       'tip': "A tax that one person pays and another person carries is easy to collect. It's "
-              'a lot harder to give back. Next time power companies are building new plants '
-              'and power lines to feed AI data centers. Somebody has to pay for that. Is it '
-              'the tech companies or your electric bill?',
-       'title': 'Who Gets the $166 Billion Tariff Refund? (Not You) (Who Pays For It)',
-       'url': 'https://www.youtube.com/watch?v=q4JXW2PbDBk&t=620s',
-       'video_id': 'q4JXW2PbDBk'},
-      {'author': 'U.S. Customs and Border Protection',
-       'channel': 'U.S. Customs and Border Protection',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:10](https://www.youtube.com/watch?v=CXFkPqsyXnI&t=130s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q10 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'In the interested party field use the dropdown arrow and select the '
-               'appropriate category. In the “Are You a Small Business? For more information, '
-               'click the link to the “Small business Administration” In the "Are You a Lawyer '
-               'or Agent Representing an Interested Party?".',
-       'timestamp': 130,
-       'timestamp_label': '[00:02:10]',
-       'timestamp_seconds': 130,
-       'tip': 'In the interested party field use the dropdown arrow and select the appropriate '
-              'category. In the “Are You a Small Business? For more information, click the '
-              'link to the “Small business Administration” In the "Are You a Lawyer or Agent '
-              'Representing an Interested Party?".',
-       'title': 'Steps to Submitting an Allegation - Enforce and Protect Act (EAPA) | Office '
-                'of Trade | CBP (U.S. Customs and Border Protection)',
-       'url': 'https://www.youtube.com/watch?v=CXFkPqsyXnI&t=130s',
-       'video_id': 'CXFkPqsyXnI'},
-      {'author': 'Scarbrough Global',
-       'channel': 'Scarbrough Global',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:55](https://www.youtube.com/watch?v=GuV2m_XHyd0&t=115s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q10 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "'ve gotta be able to provide the commercial invoice and the packing slip and a "
-               'copy of the bill of lading and the the purpose of that is because we need to '
-               'be able to file our customs entry by the time it docks in the u.',
-       'timestamp': 115,
-       'timestamp_label': '[00:01:55]',
-       'timestamp_seconds': 115,
-       'tip': "'ve gotta be able to provide the commercial invoice and the packing slip and a "
-              'copy of the bill of lading and the the purpose of that is because we need to be '
-              'able to file our customs entry by the time it docks in the u.',
-       'title': 'What is CBP ACE Automated Commercial Environment? (Scarbrough Global)',
-       'url': 'https://www.youtube.com/watch?v=GuV2m_XHyd0&t=115s',
-       'video_id': 'GuV2m_XHyd0'},
-      {'author': 'Docxster | Document-First Automation',
-       'channel': 'Docxster | Document-First Automation',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:59](https://www.youtube.com/watch?v=bsk4ScOMz_o&t=59s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q10 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "So, I'm going to go ahead and collect this box and head into my inbox here, "
-               'there we go, and quickly attach that file. So, what that actually looks like '
-               'is I have a house airway bill number right here. And, as you can see, we have '
-               'all of the details.',
-       'timestamp': 59,
-       'timestamp_label': '[00:00:59]',
-       'timestamp_seconds': 59,
-       'tip': "So, I'm going to go ahead and collect this box and head into my inbox here, "
-              'there we go, and quickly attach that file. So, what that actually looks like is '
-              'I have a house airway bill number right here. And, as you can see, we have all '
-              'of the details.',
-       'title': 'How to Automate CBP Form 7512 Inbond Entries in NetCHB (Docxster Demo) '
-                '(Docxster | Document-First Automation)',
-       'url': 'https://www.youtube.com/watch?v=bsk4ScOMz_o&t=59s',
-       'video_id': 'bsk4ScOMz_o'},
-      {'author': 'Chartered Inst. of Export & International Trade',
-       'channel': 'Chartered Inst. of Export & International Trade',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:12:54](https://www.youtube.com/watch?v=mimI2zifsUA&t=774s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q10 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Company that is selling a product and it pays an agent to market that product '
-               "on its behalf to to improve its sales then those selling Commission's must be "
-               'added.',
-       'timestamp': 774,
-       'timestamp_label': '[00:12:54]',
-       'timestamp_seconds': 774,
-       'tip': 'Company that is selling a product and it pays an agent to market that product '
-              "on its behalf to to improve its sales then those selling Commission's must be "
-              'added.',
-       'title': 'Customs 101: Methods of valuation for import duty (Chartered Inst. of Export '
-                '& International Trade)',
-       'url': 'https://www.youtube.com/watch?v=mimI2zifsUA&t=774s',
-       'video_id': 'mimI2zifsUA'},
-      {'author': 'Mandy Wu',
-       'channel': 'Mandy Wu',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:03](https://www.youtube.com/watch?v=l9SdxEh635U&t=243s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q10 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Name here too then the date okay that's all the field the phone is already "
-               'finished okay lesson template which fulfilled by one of our customers you see '
-               'the company and his IRS number.',
-       'timestamp': 243,
-       'timestamp_label': '[00:04:03]',
-       'timestamp_seconds': 243,
-       'tip': "Name here too then the date okay that's all the field the phone is already "
-              'finished okay lesson template which fulfilled by one of our customers you see '
-              'the company and his IRS number.',
-       'title': 'How to fulfill the CBP form (Mandy Wu)',
-       'url': 'https://www.youtube.com/watch?v=l9SdxEh635U&t=243s',
-       'video_id': 'l9SdxEh635U'},
-      {'author': 'Cole International',
-       'channel': 'Cole International',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:58](https://www.youtube.com/watch?v=x-SDVKIzJdI&t=118s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q10 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Recommended that companies seek help from a professionally licensed customs '
-               'broker or customs attorney to ensure proper classification of products you.',
-       'timestamp': 118,
-       'timestamp_label': '[00:01:58]',
-       'timestamp_seconds': 118,
-       'tip': 'Recommended that companies seek help from a professionally licensed customs '
-              'broker or customs attorney to ensure proper classification of products you.',
-       'title': 'Tariff Classification - A Step by Step Guide (Cole International)',
-       'url': 'https://www.youtube.com/watch?v=x-SDVKIzJdI&t=118s',
-       'video_id': 'x-SDVKIzJdI'},
-      {'author': 'Flexport',
-       'channel': 'Flexport',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:34:18](https://www.youtube.com/watch?v=1_L7fnmAAU0&t=2058s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q10 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Visibility to your drawback claims this automation truly helps streamline the '
-               'administrative process for all parties involved.',
-       'timestamp': 2058,
-       'timestamp_label': '[00:34:18]',
-       'timestamp_seconds': 2058,
-       'tip': 'Visibility to your drawback claims this automation truly helps streamline the '
-              'administrative process for all parties involved.',
-       'title': 'Optimizing Duty Drawback for Maximum Refunds (Flexport)',
-       'url': 'https://www.youtube.com/watch?v=1_L7fnmAAU0&t=2058s',
-       'video_id': '1_L7fnmAAU0'},
-      {'author': 'GlobalTech Infosystems',
-       'channel': 'GlobalTech Infosystems',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=cxXp_4blJrQ&t=15s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q10 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'होना होता है। यूएस कस्टम्स एंड बॉर्डर प्रोटेक्शन यानी सीबीपी इस पूरे इंटरनेशनल '
-               'कॉमर्स का एब्सोल्यूट गेटकीपर है। कोई भी कमर्शियल गुड्स सीबीपी के अप्रूवल के '
-               'बिना.',
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': 'होना होता है। यूएस कस्टम्स एंड बॉर्डर प्रोटेक्शन यानी सीबीपी इस पूरे इंटरनेशनल '
-              'कॉमर्स का एब्सोल्यूट गेटकीपर है। कोई भी कमर्शियल गुड्स सीबीपी के अप्रूवल के '
-              'बिना.',
-       'title': 'USA Customs Broker Power of Attorney (POA) 🇺🇸 | Importer & Broker '
-                'Relationship Explained (GlobalTech Infosystems)',
-       'url': 'https://www.youtube.com/watch?v=cxXp_4blJrQ&t=15s',
-       'video_id': 'cxXp_4blJrQ'},
-      {'author': 'Sachin Kharatmal',
-       'channel': 'Sachin Kharatmal',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=pokSeGRFDUs&t=15s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q10 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'समथिंग एस सिंपल एस डॉक्यूमेंटेशन मिसमैच। यस समटाइम्स द प्रॉब्लम इज नॉट योर '
-               'शिपमेंट। द प्रॉब्लम [नाक से की जाने वाली आवाज़] इज पेपर वर्क.',
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': 'समथिंग एस सिंपल एस डॉक्यूमेंटेशन मिसमैच। यस समटाइम्स द प्रॉब्लम इज नॉट योर '
-              'शिपमेंट। द प्रॉब्लम [नाक से की जाने वाली आवाज़] इज पेपर वर्क.',
-       'title': 'How To Claim Duty Drawback Benefits: Import Licenses & COO Explained '
-                '@Sachin.Kharatmal (Sachin Kharatmal)',
-       'url': 'https://www.youtube.com/watch?v=pokSeGRFDUs&t=15s',
-       'video_id': 'pokSeGRFDUs'},
-      {'author': 'Scarbrough Global',
-       'channel': 'Scarbrough Global',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:39](https://www.youtube.com/watch?v=m4ePKta6BXo&t=39s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q10 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "'t that go in duty-free exactly no it's just a question a it's it's some of "
-               "those stuff that's coming in I just want to make sure that we're all kind of "
-               'on the same page is that with the Foreign Trade Zone as things do come into '
-               'the u.',
-       'timestamp': 39,
-       'timestamp_label': '[00:00:39]',
-       'timestamp_seconds': 39,
-       'tip': "'t that go in duty-free exactly no it's just a question a it's it's some of "
-              "those stuff that's coming in I just want to make sure that we're all kind of on "
-              'the same page is that with the Foreign Trade Zone as things do come into the u.',
-       'title': 'Duty Drawback and Foreign Trade Zone FTZ (Scarbrough Global)',
-       'url': 'https://www.youtube.com/watch?v=m4ePKta6BXo&t=39s',
-       'video_id': 'm4ePKta6BXo'},
+       'text': 'Move with urgency, but you need to make sure that every step can stand up to an '
+               'audit.',
+       'timestamp': 1682,
+       'timestamp_label': '[00:28:02]',
+       'timestamp_seconds': 1682,
+       'tip': 'Move with urgency, but you need to make sure that every step can stand up to an '
+              'audit.',
+       'title': 'IEEPA Tariff Refunds: What Phase 1 Means for Importers and How to Prepare Without '
+                'Triggering Risk',
+       'url': 'https://www.youtube.com/watch?v=xA8LxqtatDo&t=1682s',
+       'video_id': 'xA8LxqtatDo'},
       {'author': 'IEEPA Tariff Watch',
        'channel': 'IEEPA Tariff Watch',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:07](https://www.youtube.com/watch?v=V9_1adwF1c8&t=187s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q10 operational '
-                    'verification).',
+       'markdown': '[00:04:52](https://www.youtube.com/watch?v=V9_1adwF1c8&t=292s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "And if you've got some of those common errors, well, your refund claim could "
-               "easily become the trigger for a painful and very expensive audit. So, let's "
-               "lay out these three gaps side by side. Think of it as the broker's reality "
-               "versus the attorney's advantage.",
-       'timestamp': 187,
-       'timestamp_label': '[00:03:07]',
-       'timestamp_seconds': 187,
-       'tip': "And if you've got some of those common errors, well, your refund claim could "
-              "easily become the trigger for a painful and very expensive audit. So, let's lay "
-              "out these three gaps side by side. Think of it as the broker's reality versus "
-              "the attorney's advantage.",
-       'title': 'Before You File for a Section 301 Tariff Refund: The Audit Risk Every '
-                'Importer Needs to Understand (IEEPA Tariff Watch)',
-       'url': 'https://www.youtube.com/watch?v=V9_1adwF1c8&t=187s',
-       'video_id': 'V9_1adwF1c8'}],
- 11: [{'author': 'JSJ INTERNATIONAL LCB',
+       'text': 'A broker can file paperwork. An attorney can protect your rights.',
+       'timestamp': 292,
+       'timestamp_label': '[00:04:52]',
+       'timestamp_seconds': 292,
+       'tip': 'A broker can file paperwork. An attorney can protect your rights.',
+       'title': 'Before You File for a Section 301 Tariff Refund: The Audit Risk Every Importer '
+                'Needs to Understand',
+       'url': 'https://www.youtube.com/watch?v=V9_1adwF1c8&t=292s',
+       'video_id': 'V9_1adwF1c8'},
+      {'author': 'JSJ INTERNATIONAL LCB',
        'channel': 'JSJ INTERNATIONAL LCB',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:47](https://www.youtube.com/watch?v=n4YfLCDwg1M&t=347s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q11 operational '
-                    'verification).',
+       'markdown': '[00:05:44](https://www.youtube.com/watch?v=n4YfLCDwg1M&t=344s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Okay, so make sure you have everything um to reduce audit risk and um '
-               'demonstrate reasonable care. Build a customs compliance manual tailored to '
-               'your operations. Cover all key regulatory areas. Train your team and update uh '
-               'regularly. Okay, you got to do training.',
-       'timestamp': 347,
-       'timestamp_label': '[00:05:47]',
-       'timestamp_seconds': 347,
-       'tip': 'Okay, so make sure you have everything um to reduce audit risk and um '
-              'demonstrate reasonable care. Build a customs compliance manual tailored to your '
-              'operations. Cover all key regulatory areas. Train your team and update uh '
-              'regularly. Okay, you got to do training.',
-       'title': 'Step-by-Step: Build a CBP Compliance Manual That Protects You from Fines & '
-                'Audits (JSJ INTERNATIONAL LCB)',
-       'url': 'https://www.youtube.com/watch?v=n4YfLCDwg1M&t=347s',
+       'text': 'Build a customs compliance manual tailored to your operations.',
+       'timestamp': 344,
+       'timestamp_label': '[00:05:44]',
+       'timestamp_seconds': 344,
+       'tip': 'Build a customs compliance manual tailored to your operations.',
+       'title': 'Step-by-Step: Build a CBP Compliance Manual That Protects You from Fines & Audits',
+       'url': 'https://www.youtube.com/watch?v=n4YfLCDwg1M&t=344s',
        'video_id': 'n4YfLCDwg1M'},
-      {'author': 'SKUio',
-       'channel': 'SKUio',
+      {'author': 'VoraPrep',
+       'channel': 'VoraPrep',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:55](https://www.youtube.com/watch?v=WLDwLas6IOI&t=55s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q11 operational '
-                    'verification).',
+       'markdown': '[00:05:10](https://www.youtube.com/watch?v=xq7kXAXH3GQ&t=310s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'An entry filed for another company is then flagged, and is never applied. To '
-               'bring an entry in, click the Import entries button. Choose 7501 PDF for one '
-               'entry from your broker, or ACE ES-003 report for many at once. Drop the file '
-               'here, or click to browse your computer.',
-       'timestamp': 55,
-       'timestamp_label': '[00:00:55]',
-       'timestamp_seconds': 55,
-       'tip': 'An entry filed for another company is then flagged, and is never applied. To '
-              'bring an entry in, click the Import entries button. Choose 7501 PDF for one '
-              'entry from your broker, or ACE ES-003 report for many at once. Drop the file '
-              'here, or click to browse your computer.',
-       'title': 'Split a Customs Duty Bill by Product with CBP 7501 Entry Summaries | SKU.io '
-                '(SKUio)',
-       'url': 'https://www.youtube.com/watch?v=WLDwLas6IOI&t=55s',
-       'video_id': 'WLDwLas6IOI'},
-      {'author': 'International Housewares Association',
-       'channel': 'International Housewares Association',
+       'text': "It's the system's way of encouraging people to come clean and fix their own "
+               'mistakes.',
+       'timestamp': 310,
+       'timestamp_label': '[00:05:10]',
+       'timestamp_seconds': 310,
+       'tip': "It's the system's way of encouraging people to come clean and fix their own "
+              'mistakes.',
+       'title': '[CBLE] CBLE3: Recordkeeping, Prior Disclosures, and Penalties (19 CFR Part 163, '
+                '171 & 19 U.S.C. §...',
+       'url': 'https://www.youtube.com/watch?v=xq7kXAXH3GQ&t=310s',
+       'video_id': 'xq7kXAXH3GQ'},
+      {'author': 'Simply Trade Podcast',
+       'channel': 'Simply Trade Podcast',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:01](https://www.youtube.com/watch?v=RaySaQSBqfE&t=361s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q11 operational '
-                    'verification).',
+       'markdown': '[00:27:18](https://www.youtube.com/watch?v=Q8n9OOAYZ8s&t=1638s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': '301 is much more defensible for the administration than some of these other '
-               "sections trade statutes that they've tried to use.",
-       'timestamp': 361,
-       'timestamp_label': '[00:06:01]',
-       'timestamp_seconds': 361,
-       'tip': '301 is much more defensible for the administration than some of these other '
-              "sections trade statutes that they've tried to use.",
-       'title': 'Update on new “Forced Labor” Tariffs and other Tariff-Related Developments '
-                '(International Housewares Association)',
-       'url': 'https://www.youtube.com/watch?v=RaySaQSBqfE&t=361s',
-       'video_id': 'RaySaQSBqfE'},
-      {'author': 'OSV FTWZ',
-       'channel': 'OSV FTWZ',
+       'text': "It's not enough to have a manual, you have to execute.",
+       'timestamp': 1638,
+       'timestamp_label': '[00:27:18]',
+       'timestamp_seconds': 1638,
+       'tip': "It's not enough to have a manual, you have to execute.",
+       'title': 'Customs Ready vs. Audit Ready: There’s a BIG Difference',
+       'url': 'https://www.youtube.com/watch?v=Q8n9OOAYZ8s&t=1638s',
+       'video_id': 'Q8n9OOAYZ8s'},
+      {'author': 'Ask The Customs Manager',
+       'channel': 'Ask The Customs Manager',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:08:51](https://www.youtube.com/watch?v=gKGLwtinJk8&t=531s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q11 operational '
-                    'verification).',
+       'markdown': '[00:03:21](https://www.youtube.com/watch?v=44NIfUvkQRo&t=201s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "'re not navigating that alone. Real-time inventory tracking through our "
-               'warehouse management system. Support for foreign companies operating in India '
-               'without a local entity. Multi-scale operations from mid-size traders to '
-               'enterprise level multinationals.',
-       'timestamp': 531,
-       'timestamp_label': '[00:08:51]',
-       'timestamp_seconds': 531,
-       'tip': "'re not navigating that alone. Real-time inventory tracking through our "
-              'warehouse management system. Support for foreign companies operating in India '
-              'without a local entity. Multi-scale operations from mid-size traders to '
-              'enterprise level multinationals.',
-       'title': 'What Is Free Trade Warehousing Zone (FTWZ)? How It Solves Customs Duty & Cash '
-                'Flow Problems in India (OSV FTWZ)',
-       'url': 'https://www.youtube.com/watch?v=gKGLwtinJk8&t=531s',
-       'video_id': 'gKGLwtinJk8'},
-      {'author': 'Crazy Deals and Steals',
-       'channel': 'Crazy Deals and Steals',
+       'text': "The broker's validation and the company's own status are separate matters.",
+       'timestamp': 201,
+       'timestamp_label': '[00:03:21]',
+       'timestamp_seconds': 201,
+       'tip': "The broker's validation and the company's own status are separate matters.",
+       'title': 'US Imports The New CTPAT Rule for Foreign Importers of Record',
+       'url': 'https://www.youtube.com/watch?v=44NIfUvkQRo&t=201s',
+       'video_id': '44NIfUvkQRo'},
+      {'author': 'Diaz Trade Law',
+       'channel': 'Diaz Trade Law',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:46](https://www.youtube.com/watch?v=IP9zniHMMKM&t=166s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q11 operational '
-                    'verification).',
+       'markdown': '[00:01:53](https://www.youtube.com/watch?v=j_DJeCw3cCw&t=113s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Vinmo and through the automated system, they said that my personal Vinmo '
-               'credit card was lost or stolen. So, that one was cancelled and they sent a new '
-               'one out. Every time a new one was sent out, I would get an email. So, I would '
-               'have to call Vinmo and cancel that one.',
+       'text': 'There is zero zero reason any company should not have access to their ACE data.',
+       'timestamp': 113,
+       'timestamp_label': '[00:01:53]',
+       'timestamp_seconds': 113,
+       'tip': 'There is zero zero reason any company should not have access to their ACE data.',
+       'title': 'Why CBP Pre-Compliance Is More Important Than Ever',
+       'url': 'https://www.youtube.com/watch?v=j_DJeCw3cCw&t=113s',
+       'video_id': 'j_DJeCw3cCw'},
+      {'author': 'How Stuff Moves',
+       'channel': 'How Stuff Moves',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:06:20](https://www.youtube.com/watch?v=GGGUB13U6vk&t=380s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'In short, an address is no longer enough.',
+       'timestamp': 380,
+       'timestamp_label': '[00:06:20]',
+       'timestamp_seconds': 380,
+       'tip': 'In short, an address is no longer enough.',
+       'title': 'Who Can Import Into America? The January 5 Rule Rewriting the Answer',
+       'url': 'https://www.youtube.com/watch?v=GGGUB13U6vk&t=380s',
+       'video_id': 'GGGUB13U6vk'},
+      {'author': 'Clark-Esposito Law Firm P.C.',
+       'channel': 'Clark-Esposito Law Firm P.C.',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:51](https://www.youtube.com/watch?v=pwhkHF1ttlo&t=51s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'CBP sends this notification so that an interested party can try and recover the '
+               'merchandise through a government administrative process.',
+       'timestamp': 51,
+       'timestamp_label': '[00:00:51]',
+       'timestamp_seconds': 51,
+       'tip': 'CBP sends this notification so that an interested party can try and recover the '
+              'merchandise through a government administrative process.',
+       'title': "What to Do If You've Received a U.S. Customs & Border Protection (CBP) Seizure "
+                'Notice',
+       'url': 'https://www.youtube.com/watch?v=pwhkHF1ttlo&t=51s',
+       'video_id': 'pwhkHF1ttlo'},
+      {'author': 'Cole International',
+       'channel': 'Cole International',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:28](https://www.youtube.com/watch?v=_6C6KJQrxII&t=88s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'Inaccurate trade data can lead to seizure and penalties, and predetermined rulings '
+               'are the best proactive approach.',
+       'timestamp': 88,
+       'timestamp_label': '[00:01:28]',
+       'timestamp_seconds': 88,
+       'tip': 'Inaccurate trade data can lead to seizure and penalties, and predetermined rulings '
+              'are the best proactive approach.',
+       'title': 'Customs & Binding Rulings - The ABCs',
+       'url': 'https://www.youtube.com/watch?v=_6C6KJQrxII&t=88s',
+       'video_id': '_6C6KJQrxII'},
+      {'author': 'Trade Risk Guaranty',
+       'channel': 'Trade Risk Guaranty',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:06:30](https://www.youtube.com/watch?v=PymimTwXXVM&t=390s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': "So, CBP won't have any questions if you're using a 147C.",
+       'timestamp': 390,
+       'timestamp_label': '[00:06:30]',
+       'timestamp_seconds': 390,
+       'tip': "So, CBP won't have any questions if you're using a 147C.",
+       'title': "CBP's database Clean Up May Void Your IOR | TRG Talks Trade | EP 13",
+       'url': 'https://www.youtube.com/watch?v=PymimTwXXVM&t=390s',
+       'video_id': 'PymimTwXXVM'},
+      {'author': 'GHY International',
+       'channel': 'GHY International',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:12:56](https://www.youtube.com/watch?v=pyMQL8u25fU&t=776s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': "So, someone's using your importer number illegally.",
+       'timestamp': 776,
+       'timestamp_label': '[00:12:56]',
+       'timestamp_seconds': 776,
+       'tip': "So, someone's using your importer number illegally.",
+       'title': 'Is Your Importer of Record Status at Risk - Validating Your CBP Records   '
+                'Understanding Form 5106',
+       'url': 'https://www.youtube.com/watch?v=pyMQL8u25fU&t=776s',
+       'video_id': 'pyMQL8u25fU'},
+      {'author': 'Meaningful Mediation',
+       'channel': 'Meaningful Mediation',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:25:42](https://www.youtube.com/watch?v=OFX0_mQm-Qo&t=1542s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': "Now it's a more adversarial approach, but we are getting faster results.",
+       'timestamp': 1542,
+       'timestamp_label': '[00:25:42]',
+       'timestamp_seconds': 1542,
+       'tip': "Now it's a more adversarial approach, but we are getting faster results.",
+       'title': 'Customs Penalty Mitigation: Negotiating with CBP | Jennifer Diaz',
+       'url': 'https://www.youtube.com/watch?v=OFX0_mQm-Qo&t=1542s',
+       'video_id': 'OFX0_mQm-Qo'},
+      {'author': 'Simply Trade Podcast',
+       'channel': 'Simply Trade Podcast',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:10:15](https://www.youtube.com/watch?v=rPXhFei7M1M&t=615s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'CBP may audit that certification and you will have 30 days to produce your '
+               'records.',
+       'timestamp': 615,
+       'timestamp_label': '[00:10:15]',
+       'timestamp_seconds': 615,
+       'tip': 'CBP may audit that certification and you will have 30 days to produce your records.',
+       'title': 'CBP ENFORCEMENT IS EVOLVING — AND CUSTOMS BROKERS AND IMPORTERS NEED TO PAY '
+                'ATTENTION.',
+       'url': 'https://www.youtube.com/watch?v=rPXhFei7M1M&t=615s',
+       'video_id': 'rPXhFei7M1M'},
+      {'author': 'Trade Counsel',
+       'channel': 'Trade Counsel',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:34](https://www.youtube.com/watch?v=-WXoF_u08g0&t=214s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': "If it's late, wrong or missing, customs can claim $5,000 per violation against "
+               'your bond.',
+       'timestamp': 214,
+       'timestamp_label': '[00:03:34]',
+       'timestamp_seconds': 214,
+       'tip': "If it's late, wrong or missing, customs can claim $5,000 per violation against your "
+              'bond.',
+       'title': "What Importers Get Wrong About US Customs (And It's Expensive) | Expert's Guide "
+                'for Beginner',
+       'url': 'https://www.youtube.com/watch?v=-WXoF_u08g0&t=214s',
+       'video_id': '-WXoF_u08g0'}],
+ 11: [{'author': 'Imports Academy',
+       'channel': 'Imports Academy',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:55](https://www.youtube.com/watch?v=lrbVg-_LnTI&t=115s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Classification is the largest section with 15 to 20 questions, and missing it all '
+               'is almost a guarantee of failing.',
+       'timestamp': 115,
+       'timestamp_label': '[00:01:55]',
+       'timestamp_seconds': 115,
+       'tip': 'Classification is the largest section with 15 to 20 questions, and missing it all '
+              'is almost a guarantee of failing.',
+       'title': '7 Tips for the US Customs Broker Exam',
+       'url': 'https://www.youtube.com/watch?v=lrbVg-_LnTI&t=115s',
+       'video_id': 'lrbVg-_LnTI'},
+      {'author': 'Braumiller Law Group, PLLC',
+       'channel': 'Braumiller Law Group, PLLC',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:07:01](https://www.youtube.com/watch?v=9rfRsbrSbPw&t=421s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'The permit application must prove responsible supervision training already '
+               'conducted, with topics and hours, not just a plan.',
+       'timestamp': 421,
+       'timestamp_label': '[00:07:01]',
+       'timestamp_seconds': 421,
+       'tip': 'The permit application must prove responsible supervision training already '
+              'conducted, with topics and hours, not just a plan.',
+       'title': 'Hot Topics In International Trade: Customs Broker Modernization Regulations 19 '
+                'CFR 111',
+       'url': 'https://www.youtube.com/watch?v=9rfRsbrSbPw&t=421s',
+       'video_id': '9rfRsbrSbPw'},
+      {'author': 'VoraPrep',
+       'channel': 'VoraPrep',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:07:18](https://www.youtube.com/watch?v=8NkJbs7UVvY&t=438s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Exceeding the scope of a POA is a major compliance failure.',
+       'timestamp': 438,
+       'timestamp_label': '[00:07:18]',
+       'timestamp_seconds': 438,
+       'tip': 'Exceeding the scope of a POA is a major compliance failure.',
+       'title': '[CBLE] CBLE3: Broker Licensing, Supervision, and Power of Attorney (19 CFR Part '
+                '111 & 141)',
+       'url': 'https://www.youtube.com/watch?v=8NkJbs7UVvY&t=438s',
+       'video_id': '8NkJbs7UVvY'},
+      {'author': 'CONECT Recorded Webinars',
+       'channel': 'CONECT Recorded Webinars',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:57:18](https://www.youtube.com/watch?v=jMlTHY21lng&t=3438s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'A broker is better off with no manual than with a manual that is not followed.',
+       'timestamp': 3438,
+       'timestamp_label': '[00:57:18]',
+       'timestamp_seconds': 3438,
+       'tip': 'A broker is better off with no manual than with a manual that is not followed.',
+       'title': 'Recording Part 111 Modernization of Customs Broker Regulations',
+       'url': 'https://www.youtube.com/watch?v=jMlTHY21lng&t=3438s',
+       'video_id': 'jMlTHY21lng'},
+      {'author': 'CONECT Recorded Webinars',
+       'channel': 'CONECT Recorded Webinars',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:46:26](https://www.youtube.com/watch?v=jMlTHY21lng&t=2786s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Sharing corrective advice with the client shows reasonable care.',
+       'timestamp': 2786,
+       'timestamp_label': '[00:46:26]',
+       'timestamp_seconds': 2786,
+       'tip': 'Sharing corrective advice with the client shows reasonable care.',
+       'title': 'Recording Part 111 Modernization of Customs Broker Regulations',
+       'url': 'https://www.youtube.com/watch?v=jMlTHY21lng&t=2786s',
+       'video_id': 'jMlTHY21lng'},
+      {'author': 'Factory Floor Economics',
+       'channel': 'Factory Floor Economics',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:08:01](https://www.youtube.com/watch?v=YhiuYAa1Byw&t=481s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'You charge for minutes of work, but you get paid for being right.',
+       'timestamp': 481,
+       'timestamp_label': '[00:08:01]',
+       'timestamp_seconds': 481,
+       'tip': 'You charge for minutes of work, but you get paid for being right.',
+       'title': 'The Economics of a Customs Broker',
+       'url': 'https://www.youtube.com/watch?v=YhiuYAa1Byw&t=481s',
+       'video_id': 'YhiuYAa1Byw'},
+      {'author': 'Star USA, Inc.',
+       'channel': 'Star USA, Inc.',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:09:59](https://www.youtube.com/watch?v=kmZ2NsZtdPA&t=599s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Direct POAs were due February 17, 2023, with no grandfathering, so confirm the '
+               'relationship in writing.',
+       'timestamp': 599,
+       'timestamp_label': '[00:09:59]',
+       'timestamp_seconds': 599,
+       'tip': 'Direct POAs were due February 17, 2023, with no grandfathering, so confirm the '
+              'relationship in writing.',
+       'title': 'Modernized Customs Broker Regulations',
+       'url': 'https://www.youtube.com/watch?v=kmZ2NsZtdPA&t=599s',
+       'video_id': 'kmZ2NsZtdPA'},
+      {'author': 'CH Powell Company',
+       'channel': 'CH Powell Company',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:12](https://www.youtube.com/watch?v=6WwWug6ygqQ&t=132s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'There is no staffing ratio, and CBP will judge each operation case by case.',
+       'timestamp': 132,
+       'timestamp_label': '[00:02:12]',
+       'timestamp_seconds': 132,
+       'tip': 'There is no staffing ratio, and CBP will judge each operation case by case.',
+       'title': 'Customs Broker Modernization Regulations',
+       'url': 'https://www.youtube.com/watch?v=6WwWug6ygqQ&t=132s',
+       'video_id': '6WwWug6ygqQ'},
+      {'author': 'Ask The Customs Manager',
+       'channel': 'Ask The Customs Manager',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:15](https://www.youtube.com/watch?v=DHSVYPVM3bA&t=255s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "If they can't, find a new broker.",
+       'timestamp': 255,
+       'timestamp_label': '[00:04:15]',
+       'timestamp_seconds': 255,
+       'tip': "If they can't, find a new broker.",
+       'title': 'Customs Broker Fees EXPOSED The TRUTH About Import Costs',
+       'url': 'https://www.youtube.com/watch?v=DHSVYPVM3bA&t=255s',
+       'video_id': 'DHSVYPVM3bA'},
+      {'author': 'Steve Fodor',
+       'channel': 'Steve Fodor',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:07:31](https://www.youtube.com/watch?v=NXnGUZwargM&t=451s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'That can be a great cost savings for you, gives you some free float time on your '
+               'money.',
+       'timestamp': 451,
+       'timestamp_label': '[00:07:31]',
+       'timestamp_seconds': 451,
+       'tip': 'That can be a great cost savings for you, gives you some free float time on your '
+              'money.',
+       'title': 'The Customs  Power of Attorney',
+       'url': 'https://www.youtube.com/watch?v=NXnGUZwargM&t=451s',
+       'video_id': 'NXnGUZwargM'},
+      {'author': 'Scarlett Jones',
+       'channel': 'Scarlett Jones',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:35](https://www.youtube.com/watch?v=AJga0mQ31Vo&t=155s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Noncompliance risks delays, penalties and seizure, and the client is responsible '
+               'for the accuracy of the information it gives the broker.',
+       'timestamp': 155,
+       'timestamp_label': '[00:02:35]',
+       'timestamp_seconds': 155,
+       'tip': 'Noncompliance risks delays, penalties and seizure, and the client is responsible '
+              'for the accuracy of the information it gives the broker.',
+       'title': 'Demystifying the Customs Power of Attorney: Key Role in International Trade!',
+       'url': 'https://www.youtube.com/watch?v=AJga0mQ31Vo&t=155s',
+       'video_id': 'AJga0mQ31Vo'},
+      {'author': 'Scarbrough Global',
+       'channel': 'Scarbrough Global',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:25](https://www.youtube.com/watch?v=m-RN8tPLnPk&t=85s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'So I need that power of attorney long before your shipment ever sails from origin.',
+       'timestamp': 85,
+       'timestamp_label': '[00:01:25]',
+       'timestamp_seconds': 85,
+       'tip': 'So I need that power of attorney long before your shipment ever sails from origin.',
+       'title': 'Why do I need a Customs Power of Attorney (POA)? #scarbroughsnippets',
+       'url': 'https://www.youtube.com/watch?v=m-RN8tPLnPk&t=85s',
+       'video_id': 'm-RN8tPLnPk'},
+      {'author': 'ISF Solution',
+       'channel': 'ISF Solution',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:13](https://www.youtube.com/watch?v=KnedznhIyEs&t=193s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'The POA is valid until revoked or replaced, so review and update it when brokers '
+               'or relationships change.',
+       'timestamp': 193,
+       'timestamp_label': '[00:03:13]',
+       'timestamp_seconds': 193,
+       'tip': 'The POA is valid until revoked or replaced, so review and update it when brokers or '
+              'relationships change.',
+       'title': 'Empowering Compliance: Customs POA and ISF Relationship',
+       'url': 'https://www.youtube.com/watch?v=KnedznhIyEs&t=193s',
+       'video_id': 'KnedznhIyEs'},
+      {'author': 'Vinh Ho',
+       'channel': 'Vinh Ho',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:46](https://www.youtube.com/watch?v=UkLdhIiiF_k&t=166s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Entry level is about 50 to $60,000 and it really depends on your company, the size '
+               'of your company and the location.',
        'timestamp': 166,
        'timestamp_label': '[00:02:46]',
        'timestamp_seconds': 166,
-       'tip': 'Vinmo and through the automated system, they said that my personal Vinmo credit '
-              'card was lost or stolen. So, that one was cancelled and they sent a new one '
-              'out. Every time a new one was sent out, I would get an email. So, I would have '
-              'to call Vinmo and cancel that one.',
+       'tip': 'Entry level is about 50 to $60,000 and it really depends on your company, the size '
+              'of your company and the location.',
+       'title': 'Here are the job prospects and expected pay',
+       'url': 'https://www.youtube.com/watch?v=UkLdhIiiF_k&t=166s',
+       'video_id': 'UkLdhIiiF_k'},
+      {'author': 'Kenvic Pathways',
+       'channel': 'Kenvic Pathways',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:57](https://www.youtube.com/watch?v=fv-WEXg5TJQ&t=117s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Why is it important? Different versions have a different duty rate.',
+       'timestamp': 117,
+       'timestamp_label': '[00:01:57]',
+       'timestamp_seconds': 117,
+       'tip': 'Why is it important? Different versions have a different duty rate.',
+       'title': 'What books and materials are required to take U.S. Customs Broker Licensing Exam?',
+       'url': 'https://www.youtube.com/watch?v=fv-WEXg5TJQ&t=117s',
+       'video_id': 'fv-WEXg5TJQ'},
+      {'author': 'Nadeem Virk',
+       'channel': 'Nadeem Virk',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:34:45](https://www.youtube.com/watch?v=HpYKRw5D1YQ&t=2085s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'You cannot keep on doing exam and hoping you will improve.',
+       'timestamp': 2085,
+       'timestamp_label': '[00:34:45]',
+       'timestamp_seconds': 2085,
+       'tip': 'You cannot keep on doing exam and hoping you will improve.',
+       'title': 'CBLE (2023) -  How to Prepare for the Exam',
+       'url': 'https://www.youtube.com/watch?v=HpYKRw5D1YQ&t=2085s',
+       'video_id': 'HpYKRw5D1YQ'},
+      {'author': 'Rolando Giron',
+       'channel': 'Rolando Giron',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:36:17](https://www.youtube.com/watch?v=OWsbVstikWQ&t=2177s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Replacing the database file erases the tests you made locally.',
+       'timestamp': 2177,
+       'timestamp_label': '[00:36:17]',
+       'timestamp_seconds': 2177,
+       'tip': 'Replacing the database file erases the tests you made locally.',
+       'title': 'Customs Broker Exam Training',
+       'url': 'https://www.youtube.com/watch?v=OWsbVstikWQ&t=2177s',
+       'video_id': 'OWsbVstikWQ'}],
+ 12: [{'author': 'Receipts',
+       'channel': 'Receipts',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:06:33](https://www.youtube.com/watch?v=UvphNI0Wxog&t=393s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'The form asks you to estimate how many times you paid one of these fees and you '
+               'sign it under penalty of perjury. The administrator can come back later and ask '
+               'for bank statements.',
+       'timestamp': 393,
+       'timestamp_label': '[00:06:33]',
+       'timestamp_seconds': 393,
+       'tip': 'The form asks you to estimate how many times you paid one of these fees and you '
+              'sign it under penalty of perjury. The administrator can come back later and ask for '
+              'bank statements.',
+       'title': 'Paid an ATM Fee? Visa and Mastercard Will Pay',
+       'url': 'https://www.youtube.com/watch?v=UvphNI0Wxog&t=393s',
+       'video_id': 'UvphNI0Wxog'},
+      {'author': 'Receipts',
+       'channel': 'Receipts',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:07:45](https://www.youtube.com/watch?v=UvphNI0Wxog&t=465s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "Lawyers' fees and costs come out first once the judge approves them. What's left "
+               'gets split across every valid claim based on how many fees each person listed.',
+       'timestamp': 465,
+       'timestamp_label': '[00:07:45]',
+       'timestamp_seconds': 465,
+       'tip': "Lawyers' fees and costs come out first once the judge approves them. What's left "
+              'gets split across every valid claim based on how many fees each person listed.',
+       'title': 'Paid an ATM Fee? Visa and Mastercard Will Pay',
+       'url': 'https://www.youtube.com/watch?v=UvphNI0Wxog&t=465s',
+       'video_id': 'UvphNI0Wxog'},
+      {'author': 'Emran Hossin',
+       'channel': 'Emran Hossin',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:15](https://www.youtube.com/watch?v=8Em9en9nPzQ&t=75s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'No upfront costs, you pay only if we secure a recovery for you with a competitive '
+               'fee of 25% of the gross recovery.',
+       'timestamp': 75,
+       'timestamp_label': '[00:01:15]',
+       'timestamp_seconds': 75,
+       'tip': 'No upfront costs, you pay only if we secure a recovery for you with a competitive '
+              'fee of 25% of the gross recovery.',
+       'title': 'Claim Your Share of the $5.54 Billion Visa/Mastercard Settlement',
+       'url': 'https://www.youtube.com/watch?v=8Em9en9nPzQ&t=75s',
+       'video_id': '8Em9en9nPzQ'},
+      {'author': 'The Class Action Attorney',
+       'channel': 'The Class Action Attorney',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:12](https://www.youtube.com/watch?v=wR6-BeiQppQ&t=72s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Sometimes there have been scams out there where people get checks in the mail and '
+               'they want them to be cashed so that they can access your bank account information.',
+       'timestamp': 72,
+       'timestamp_label': '[00:01:12]',
+       'timestamp_seconds': 72,
+       'tip': 'Sometimes there have been scams out there where people get checks in the mail and '
+              'they want them to be cashed so that they can access your bank account information.',
+       'title': 'Is my class action settlement check a scam?',
+       'url': 'https://www.youtube.com/watch?v=wR6-BeiQppQ&t=72s',
+       'video_id': 'wR6-BeiQppQ'},
+      {'author': 'News4JAX The Local Station',
+       'channel': 'News4JAX The Local Station',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:46](https://www.youtube.com/watch?v=kOG09tYsDhM&t=46s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "If any time you're asked to pay something in a class action, that's a scam. That's "
+               'rule number one.',
+       'timestamp': 46,
+       'timestamp_label': '[00:00:46]',
+       'timestamp_seconds': 46,
+       'tip': "If any time you're asked to pay something in a class action, that's a scam. That's "
+              'rule number one.',
+       'title': 'Consumer Alert: How to tell a legit class action settlement notice from a scam',
+       'url': 'https://www.youtube.com/watch?v=kOG09tYsDhM&t=46s',
+       'video_id': 'kOG09tYsDhM'},
+      {'author': 'The Class Action Attorney',
+       'channel': 'The Class Action Attorney',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:31](https://www.youtube.com/watch?v=EDXGiD2K8sY&t=31s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "If you don't submit a claim and you don't exclude or opt out from the class you're "
+               'still a part of the class action but you receive no payment and you give up '
+               'certain rights to sue that company.',
+       'timestamp': 31,
+       'timestamp_label': '[00:00:31]',
+       'timestamp_seconds': 31,
+       'tip': "If you don't submit a claim and you don't exclude or opt out from the class you're "
+              'still a part of the class action but you receive no payment and you give up certain '
+              'rights to sue that company.',
+       'title': 'Should I make a claim in a class action settlement?',
+       'url': 'https://www.youtube.com/watch?v=EDXGiD2K8sY&t=31s',
+       'video_id': 'EDXGiD2K8sY'},
+      {'author': 'NBC4 Washington',
+       'channel': 'NBC4 Washington',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:02](https://www.youtube.com/watch?v=ZitEpVz3Zgg&t=62s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'They will charge you a 15% fee when they recover, and if they recover any money '
+               'and 40% fee for any new cases as well.',
+       'timestamp': 62,
+       'timestamp_label': '[00:01:02]',
+       'timestamp_seconds': 62,
+       'tip': 'They will charge you a 15% fee when they recover, and if they recover any money and '
+              '40% fee for any new cases as well.',
+       'title': "How to know if you're entitled to a class action settlement | NBC4 Washington",
+       'url': 'https://www.youtube.com/watch?v=ZitEpVz3Zgg&t=62s',
+       'video_id': 'ZitEpVz3Zgg'},
+      {'author': 'Crazy Deals and Steals',
+       'channel': 'Crazy Deals and Steals',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:43](https://www.youtube.com/watch?v=IP9zniHMMKM&t=223s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "When you submit your claim form, upload as much proof that you can find cuz that's "
+               'going to increase your chances of getting more money.',
+       'timestamp': 223,
+       'timestamp_label': '[00:03:43]',
+       'timestamp_seconds': 223,
+       'tip': "When you submit your claim form, upload as much proof that you can find cuz that's "
+              'going to increase your chances of getting more money.',
        'title': '$177 MILLION AT&T Class Action Lawsuit! How To Class Action Settlement '
-                '#classaction (Crazy Deals and Steals)',
-       'url': 'https://www.youtube.com/watch?v=IP9zniHMMKM&t=166s',
+                '#classaction',
+       'url': 'https://www.youtube.com/watch?v=IP9zniHMMKM&t=223s',
        'video_id': 'IP9zniHMMKM'},
       {'author': 'ABC15 Arizona',
        'channel': 'ABC15 Arizona',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:06](https://www.youtube.com/watch?v=Ef-vxIV8GSg&t=126s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q11 operational '
-                    'verification).',
+       'markdown': '[00:01:17](https://www.youtube.com/watch?v=Ef-vxIV8GSg&t=77s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'Abc15.com click on sections and let Joe know and we need your help if you can '
-               'volunteer to help others as part of the Assistance League team call us email '
-               "find me on Facebook or Twitter I'm investigator Joe Ducey if you've got a "
-               'problem let me know.',
-       'timestamp': 126,
-       'timestamp_label': '[00:02:06]',
-       'timestamp_seconds': 126,
-       'tip': 'Abc15.com click on sections and let Joe know and we need your help if you can '
-              'volunteer to help others as part of the Assistance League team call us email '
-              "find me on Facebook or Twitter I'm investigator Joe Ducey if you've got a "
-              'problem let me know.',
-       'title': 'Class action settlements could mean money back for you (ABC15 Arizona)',
-       'url': 'https://www.youtube.com/watch?v=Ef-vxIV8GSg&t=126s',
+       'text': 'Hardy says most people affected are automatically part of this class action '
+               "settlement, and they estimate you'll get back 9% of those fees you paid.",
+       'timestamp': 77,
+       'timestamp_label': '[00:01:17]',
+       'timestamp_seconds': 77,
+       'tip': 'Hardy says most people affected are automatically part of this class action '
+              "settlement, and they estimate you'll get back 9% of those fees you paid.",
+       'title': 'Class action settlements could mean money back for you',
+       'url': 'https://www.youtube.com/watch?v=Ef-vxIV8GSg&t=77s',
        'video_id': 'Ef-vxIV8GSg'},
-      {'author': 'Gallagher Transport International Inc.',
-       'channel': 'Gallagher Transport International Inc.',
+      {'author': 'emily p',
+       'channel': 'emily p',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:05](https://www.youtube.com/watch?v=k2CbBPEtqNI&t=65s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q11 operational '
-                    'verification).',
+       'markdown': '[00:01:39](https://www.youtube.com/watch?v=X6G27vQXOic&t=99s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "There's also a waiver of prior notice that lets you file future claims without "
-               'asking permission each time. You can apply for accelerated payment to get your '
-               'refunds faster once you submit your claims. You have 5 years from the import '
-               'date to submit your claim.',
-       'timestamp': 65,
-       'timestamp_label': '[00:01:05]',
-       'timestamp_seconds': 65,
-       'tip': "There's also a waiver of prior notice that lets you file future claims without "
-              'asking permission each time. You can apply for accelerated payment to get your '
-              'refunds faster once you submit your claims. You have 5 years from the import '
-              'date to submit your claim.',
-       'title': 'Understanding Duty Drawback: Recover Duties & Reduce Trade Costs (Gallagher '
-                'Transport International Inc.)',
-       'url': 'https://www.youtube.com/watch?v=k2CbBPEtqNI&t=65s',
-       'video_id': 'k2CbBPEtqNI'},
-      {'author': 'Greater Cincinnati Foreign Trade Zones',
-       'channel': 'Greater Cincinnati Foreign Trade Zones',
+       'text': 'In most cases, receipts are not required. Claimants are usually allowed to provide '
+               'a reasonable estimate of their beef purchases during the eligible time period.',
+       'timestamp': 99,
+       'timestamp_label': '[00:01:39]',
+       'timestamp_seconds': 99,
+       'tip': 'In most cases, receipts are not required. Claimants are usually allowed to provide '
+              'a reasonable estimate of their beef purchases during the eligible time period.',
+       'title': 'Beef Class Action Lawsuit 2026: Step-By-Step Instructions To Claim YOUR Money !',
+       'url': 'https://www.youtube.com/watch?v=X6G27vQXOic&t=99s',
+       'video_id': 'X6G27vQXOic'},
+      {'author': 'Horty Springer & Mattern, P.C.',
+       'channel': 'Horty Springer & Mattern, P.C.',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:50](https://www.youtube.com/watch?v=8TKnN_7QZFw&t=110s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q11 operational '
-                    'verification).',
+       'markdown': '[00:03:38](https://www.youtube.com/watch?v=jgkO88qEcMs&t=218s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'Together, these advantages mean lower costs, streamlined customs and stronger '
-               'competitiveness. And remember the greater Cincinnati Northern Kentucky FTZ '
-               'team is always here to guide and connect you with experts, making your '
-               'application process smooth and successful.',
-       'timestamp': 110,
-       'timestamp_label': '[00:01:50]',
-       'timestamp_seconds': 110,
-       'tip': 'Together, these advantages mean lower costs, streamlined customs and stronger '
-              'competitiveness. And remember the greater Cincinnati Northern Kentucky FTZ team '
-              'is always here to guide and connect you with experts, making your application '
-              'process smooth and successful.',
-       'title': 'How FTZs Work | Benefits, Process & Key Facts (Greater Cincinnati Foreign '
-                'Trade Zones)',
-       'url': 'https://www.youtube.com/watch?v=8TKnN_7QZFw&t=110s',
-       'video_id': '8TKnN_7QZFw'},
-      {'author': 'How Stuff Moves',
-       'channel': 'How Stuff Moves',
+       'text': 'About 24% of it or so will go to the attorneys for the plaintiffs in the class '
+               'action, as is often the case in any kind of class action litigation.',
+       'timestamp': 218,
+       'timestamp_label': '[00:03:38]',
+       'timestamp_seconds': 218,
+       'tip': 'About 24% of it or so will go to the attorneys for the plaintiffs in the class '
+              'action, as is often the case in any kind of class action litigation.',
+       'title': 'The Blue Cross Antitrust Class Action Settlement: Show Me the Money',
+       'url': 'https://www.youtube.com/watch?v=jgkO88qEcMs&t=218s',
+       'video_id': 'jgkO88qEcMs'},
+      {'author': 'Horty Springer & Mattern, P.C.',
+       'channel': 'Horty Springer & Mattern, P.C.',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:59](https://www.youtube.com/watch?v=GGGUB13U6vk&t=119s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q11 operational '
-                    'verification).',
+       'markdown': '[00:13:57](https://www.youtube.com/watch?v=jgkO88qEcMs&t=837s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'Hiring a does not move the liability. The broker files the paperwork as your '
-               'agent. Customs comes after the importer of record. So the importer of record '
-               'is the name on the line where the money and the law meet.',
-       'timestamp': 119,
-       'timestamp_label': '[00:01:59]',
-       'timestamp_seconds': 119,
-       'tip': 'Hiring a does not move the liability. The broker files the paperwork as your '
-              'agent. Customs comes after the importer of record. So the importer of record is '
-              'the name on the line where the money and the law meet.',
-       'title': 'Who Can Import Into America? The January 5 Rule Rewriting the Answer (How '
-                'Stuff Moves)',
-       'url': 'https://www.youtube.com/watch?v=GGGUB13U6vk&t=119s',
-       'video_id': 'GGGUB13U6vk'},
-      {'author': 'Law Office of Yuri Starikov, LLC',
-       'channel': 'Law Office of Yuri Starikov, LLC',
+       'text': 'The rider form itself recommends to include any Excel spreadsheets with all this '
+               'information just in case the administrators have any kind of questions.',
+       'timestamp': 837,
+       'timestamp_label': '[00:13:57]',
+       'timestamp_seconds': 837,
+       'tip': 'The rider form itself recommends to include any Excel spreadsheets with all this '
+              'information just in case the administrators have any kind of questions.',
+       'title': 'The Blue Cross Antitrust Class Action Settlement: Show Me the Money',
+       'url': 'https://www.youtube.com/watch?v=jgkO88qEcMs&t=837s',
+       'video_id': 'jgkO88qEcMs'},
+      {'author': 'News of the World',
+       'channel': 'News of the World',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=aNG7o_BW3k8&t=15s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q11 operational '
-                    'verification).',
+       'markdown': '[00:01:51](https://www.youtube.com/watch?v=vk_vF0qgIAg&t=111s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': '7501 and uh now we uh get to the point where we are ready to discuss how to '
-               'really fill in those blanks what goes in what goes in into this into this '
-               'into.',
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': '7501 and uh now we uh get to the point where we are ready to discuss how to '
-              'really fill in those blanks what goes in what goes in into this into this into.',
-       'title': 'U.S. Customs (CBP) Entry Summary: General Overview Webcast Preview (Law '
-                'Office of Yuri Starikov, LLC)',
-       'url': 'https://www.youtube.com/watch?v=aNG7o_BW3k8&t=15s',
-       'video_id': 'aNG7o_BW3k8'},
-      {'author': 'Scarbrough Global',
-       'channel': 'Scarbrough Global',
+       'text': 'The court will hold a hearing to decide whether to approve the settlements on '
+               'December 20th and this must occur before any money can be paid out.',
+       'timestamp': 111,
+       'timestamp_label': '[00:01:51]',
+       'timestamp_seconds': 111,
+       'tip': 'The court will hold a hearing to decide whether to approve the settlements on '
+              'December 20th and this must occur before any money can be paid out.',
+       'title': 'If you’ve bought chicken in the last 10 years, you may be eligible for payment',
+       'url': 'https://www.youtube.com/watch?v=vk_vF0qgIAg&t=111s',
+       'video_id': 'vk_vF0qgIAg'},
+      {'author': 'engage fi',
+       'channel': 'engage fi',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=m-RN8tPLnPk&t=15s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q11 operational '
-                    'verification).',
+       'markdown': '[00:00:17](https://www.youtube.com/watch?v=PVmbAAdWXfg&t=17s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "Hi I'm Adam Hill with Scarborough International I'm the Vice President of "
-               "Operations here um often we're asked what is a power of.",
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': "Hi I'm Adam Hill with Scarborough International I'm the Vice President of "
-              "Operations here um often we're asked what is a power of.",
-       'title': 'Why do I need a Customs Power of Attorney (POA)? #scarbroughsnippets '
-                '(Scarbrough Global)',
-       'url': 'https://www.youtube.com/watch?v=m-RN8tPLnPk&t=15s',
-       'video_id': 'm-RN8tPLnPk'},
-      {'author': 'The Class Action Attorney',
-       'channel': 'The Class Action Attorney',
+       'text': 'Merchants finally have the freedom to choose which cards they accept, skip high '
+               'fee premium ones, and even use surcharges to offset processing cost.',
+       'timestamp': 17,
+       'timestamp_label': '[00:00:17]',
+       'timestamp_seconds': 17,
+       'tip': 'Merchants finally have the freedom to choose which cards they accept, skip high fee '
+              'premium ones, and even use surcharges to offset processing cost.',
+       'title': 'The Visa–Mastercard Interchange Settlement: What It Means for Payments',
+       'url': 'https://www.youtube.com/watch?v=PVmbAAdWXfg&t=17s',
+       'video_id': 'PVmbAAdWXfg'},
+      {'author': 'Daily Q&A',
+       'channel': 'Daily Q&A',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:41](https://www.youtube.com/watch?v=EDXGiD2K8sY&t=101s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q11 operational '
-                    'verification).',
+       'markdown': '[00:01:30](https://www.youtube.com/watch?v=8IcVk3YXDoM&t=90s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'Like that but each case is different so what you should do is look at the '
-               'settlement website um see if you want to pursue a claim on your own and if you '
-               "don't and you have no issues with the settlement then typically you should "
-               'submit a claim thanks so much for watching.',
-       'timestamp': 101,
-       'timestamp_label': '[00:01:41]',
-       'timestamp_seconds': 101,
-       'tip': 'Like that but each case is different so what you should do is look at the '
-              'settlement website um see if you want to pursue a claim on your own and if you '
-              "don't and you have no issues with the settlement then typically you should "
-              'submit a claim thanks so much for watching.',
-       'title': 'Should I make a claim in a class action settlement? (The Class Action '
-                'Attorney)',
-       'url': 'https://www.youtube.com/watch?v=EDXGiD2K8sY&t=101s',
-       'video_id': 'EDXGiD2K8sY'},
-      {'author': 'Ask The Customs Manager',
-       'channel': 'Ask The Customs Manager',
+       'text': 'Stores displaying their logos can now decline certain types of credit cards, since '
+               'interchange fees vary by card.',
+       'timestamp': 90,
+       'timestamp_label': '[00:01:30]',
+       'timestamp_seconds': 90,
+       'tip': 'Stores displaying their logos can now decline certain types of credit cards, since '
+              'interchange fees vary by card.',
+       'title': 'What Is the Visa Mastercard Settlement Judge Approval Case About? | 2026',
+       'url': 'https://www.youtube.com/watch?v=8IcVk3YXDoM&t=90s',
+       'video_id': '8IcVk3YXDoM'},
+      {'author': 'The Wax Seal',
+       'channel': 'The Wax Seal',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:07](https://www.youtube.com/watch?v=44NIfUvkQRo&t=367s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q11 operational '
-                    'verification).',
+       'markdown': '[00:02:28](https://www.youtube.com/watch?v=mL-p627SkkI&t=148s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "For the full regulatory text, consult CBP's interim final rule, Heightened "
-               'Requirements for Foreign Importers of Record, published in the Federal '
-               'Register on 6 November 2026. Thank you for watching Ask the Customs Manager.',
-       'timestamp': 367,
-       'timestamp_label': '[00:06:07]',
-       'timestamp_seconds': 367,
-       'tip': "For the full regulatory text, consult CBP's interim final rule, Heightened "
-              'Requirements for Foreign Importers of Record, published in the Federal Register '
-              'on 6 November 2026. Thank you for watching Ask the Customs Manager.',
-       'title': 'US Imports The New CTPAT Rule for Foreign Importers of Record (Ask The '
-                'Customs Manager)',
-       'url': 'https://www.youtube.com/watch?v=44NIfUvkQRo&t=367s',
-       'video_id': '44NIfUvkQRo'},
-      {'author': 'Scarbrough Global',
-       'channel': 'Scarbrough Global',
+       'text': 'Only the importer of record or an authorized customs broker that filed the entries '
+               'can file a request.',
+       'timestamp': 148,
+       'timestamp_label': '[00:02:28]',
+       'timestamp_seconds': 148,
+       'tip': 'Only the importer of record or an authorized customs broker that filed the entries '
+              'can file a request.',
+       'title': 'Why Tariff Refunds Go to Importers, Not Shoppers',
+       'url': 'https://www.youtube.com/watch?v=mL-p627SkkI&t=148s',
+       'video_id': 'mL-p627SkkI'},
+      {'author': 'WKYC Channel 3',
+       'channel': 'WKYC Channel 3',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:16](https://www.youtube.com/watch?v=GDJSfFVXx1M&t=16s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q11 operational '
-                    'verification).',
+       'markdown': '[00:01:21](https://www.youtube.com/watch?v=nTBClLo28V8&t=81s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'Scrutiny and targeting by US Customs no not in the sense of a bad thing if you '
-               'file the drug that claimed anything that you file.',
-       'timestamp': 16,
-       'timestamp_label': '[00:00:16]',
-       'timestamp_seconds': 16,
-       'tip': 'Scrutiny and targeting by US Customs no not in the sense of a bad thing if you '
-              'file the drug that claimed anything that you file.',
-       'title': 'Do Duty Drawback claims open you up for US  Customs scrutiny ? (Scarbrough '
-                'Global)',
-       'url': 'https://www.youtube.com/watch?v=GDJSfFVXx1M&t=16s',
-       'video_id': 'GDJSfFVXx1M'},
-      {'author': 'Center for Strategic & International Studies',
-       'channel': 'Center for Strategic & International Studies',
+       'text': 'The payment card settlement.com website is in fact legitimate and is the only '
+               'official court approved website for the settlement.',
+       'timestamp': 81,
+       'timestamp_label': '[00:01:21]',
+       'timestamp_seconds': 81,
+       'tip': 'The payment card settlement.com website is in fact legitimate and is the only '
+              'official court approved website for the settlement.',
+       'title': 'Is PaymentCardSettlement.com is a legitimate website for lawsuit settlement '
+                'claims?',
+       'url': 'https://www.youtube.com/watch?v=nTBClLo28V8&t=81s',
+       'video_id': 'nTBClLo28V8'},
+      {'author': 'The Wax Seal',
+       'channel': 'The Wax Seal',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:21](https://www.youtube.com/watch?v=PJpF0M_rjYs&t=21s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q11 operational '
-                    'verification).',
+       'markdown': '[00:16:35](https://www.youtube.com/watch?v=z1HTf2bl72M&t=995s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "Thanks for listening to The Trade Guys. On today's episode, we examine the "
-               "impact of China's retaliatory tariffs, take a look at the Trump "
-               "administration's new use of Section 301 authorities, and unpack the latest "
-               'litigation around tariff refunds.',
-       'timestamp': 21,
-       'timestamp_label': '[00:00:21]',
-       'timestamp_seconds': 21,
-       'tip': "Thanks for listening to The Trade Guys. On today's episode, we examine the "
-              "impact of China's retaliatory tariffs, take a look at the Trump "
-              "administration's new use of Section 301 authorities, and unpack the latest "
-              'litigation around tariff refunds.',
-       'title': "China's Retaliatory Tariffs, Section 301 Authorities, and Tariff Refund "
-                'Litigation (Center for Strategic & International Studies)',
-       'url': 'https://www.youtube.com/watch?v=PJpF0M_rjYs&t=21s',
-       'video_id': 'PJpF0M_rjYs'}],
- 12: [{'author': 'Tariffs Lawsuit',
-       'channel': 'Tariffs Lawsuit',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:37](https://www.youtube.com/watch?v=dWEik4YquEE&t=97s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Section 122 and we'll aim to get that back for you as well. And then finally, "
-               "knowing that his 150 days is almost up in August, President Trump's "
-               "administration has already come up with plan C. And that's so-called Section "
-               '301 tariffs under the Trade Act.',
-       'timestamp': 97,
-       'timestamp_label': '[00:01:37]',
-       'timestamp_seconds': 97,
-       'tip': "Section 122 and we'll aim to get that back for you as well. And then finally, "
-              "knowing that his 150 days is almost up in August, President Trump's "
-              "administration has already come up with plan C. And that's so-called Section "
-              '301 tariffs under the Trade Act.',
-       'title': 'Tariff Refund Update: Why Importers May Need To File Now (Tariffs Lawsuit)',
-       'url': 'https://www.youtube.com/watch?v=dWEik4YquEE&t=97s',
-       'video_id': 'dWEik4YquEE'},
-      {'author': 'GHY International',
-       'channel': 'GHY International',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:27:15](https://www.youtube.com/watch?v=pyMQL8u25fU&t=1635s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Everything that we've seen was a recommended five-day minimum of action. So, "
-               "um, that part is five days is a long time if you're trying to ship your stuff. "
-               "Let me see if there's anything else that I had written down for this one.",
-       'timestamp': 1635,
-       'timestamp_label': '[00:27:15]',
-       'timestamp_seconds': 1635,
-       'tip': "Everything that we've seen was a recommended five-day minimum of action. So, "
-              "um, that part is five days is a long time if you're trying to ship your stuff. "
-              "Let me see if there's anything else that I had written down for this one.",
-       'title': 'Is Your Importer of Record Status at Risk - Validating Your CBP Records   '
-                'Understanding Form 5106 (GHY International)',
-       'url': 'https://www.youtube.com/watch?v=pyMQL8u25fU&t=1635s',
-       'video_id': 'pyMQL8u25fU'},
-      {'author': 'Simply Trade Podcast',
-       'channel': 'Simply Trade Podcast',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:21:50](https://www.youtube.com/watch?v=3N8L-IKPY4A&t=1310s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "I've been doing this for about 17 years, back in the old days, we were all on "
-               "paper, a lot of the stuff had to be re keyed as you're sitting there typing in "
-               "all of the data that's on a 7501 entry summary. But now it's so much more "
-               'automated.',
-       'timestamp': 1310,
-       'timestamp_label': '[00:21:50]',
-       'timestamp_seconds': 1310,
-       'tip': "I've been doing this for about 17 years, back in the old days, we were all on "
-              "paper, a lot of the stuff had to be re keyed as you're sitting there typing in "
-              "all of the data that's on a 7501 entry summary. But now it's so much more "
-              'automated.',
-       'title': 'Tariffs Killing Your Profit Margins? Duty Drawback Explained by Ariana Cox '
-                '(Simply Trade Podcast)',
-       'url': 'https://www.youtube.com/watch?v=3N8L-IKPY4A&t=1310s',
-       'video_id': '3N8L-IKPY4A'},
-      {'author': 'Brandon M. Young',
-       'channel': 'Brandon M. Young',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:18](https://www.youtube.com/watch?v=nWH_1DtEHoA&t=258s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'All of them are being bombarded by sellers right now and brands right now. '
-               "It's a multi month process for a warehouse to become bonded in The United "
-               'States. Now Steve Simonson spoke a little bit about this at BDSS.',
-       'timestamp': 258,
-       'timestamp_label': '[00:04:18]',
-       'timestamp_seconds': 258,
-       'tip': "All of them are being bombarded by sellers right now and brands right now. It's "
-              'a multi month process for a warehouse to become bonded in The United States. '
-              'Now Steve Simonson spoke a little bit about this at BDSS.',
-       'title': 'WARNING Amazon FBA Sellers Are Losing THOUSANDS to Tariff Expenses (Brandon '
-                'M. Young)',
-       'url': 'https://www.youtube.com/watch?v=nWH_1DtEHoA&t=258s',
-       'video_id': 'nWH_1DtEHoA'},
-      {'author': 'Harry F. Long, Inc. - U.S. Customs Brokers',
-       'channel': 'Harry F. Long, Inc. - U.S. Customs Brokers',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:26](https://www.youtube.com/watch?v=bD2cV_iBUpU&t=26s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Then click on the word entry summary below. The first report you want to run '
-               'is the ES001 entry summary header details. Start by choosing your ACE trade '
-               'account ID number.',
-       'timestamp': 26,
-       'timestamp_label': '[00:00:26]',
-       'timestamp_seconds': 26,
-       'tip': 'Then click on the word entry summary below. The first report you want to run is '
-              'the ES001 entry summary header details. Start by choosing your ACE trade '
-              'account ID number.',
-       'title': 'ACE ES 001 and ES 003 Report (Harry F. Long, Inc. - U.S. Customs Brokers)',
-       'url': 'https://www.youtube.com/watch?v=bD2cV_iBUpU&t=26s',
-       'video_id': 'bD2cV_iBUpU'},
-      {'author': 'Lutz',
-       'channel': 'Lutz',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:25:49](https://www.youtube.com/watch?v=6Y30Cf9AeYE&t=1549s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Let's look at your ACE account. Let's look at your import forms and actually "
-               'make a determination as to whether or not this is something that you should '
-               'start exploring.',
-       'timestamp': 1549,
-       'timestamp_label': '[00:25:49]',
-       'timestamp_seconds': 1549,
-       'tip': "Let's look at your ACE account. Let's look at your import forms and actually "
-              'make a determination as to whether or not this is something that you should '
-              'start exploring.',
-       'title': 'IEEPA Tariff Refund Opportunities: What Businesses Need to Know (Lutz)',
-       'url': 'https://www.youtube.com/watch?v=6Y30Cf9AeYE&t=1549s',
-       'video_id': '6Y30Cf9AeYE'},
-      {'author': 'Meaningful Mediation',
-       'channel': 'Meaningful Mediation',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:09:27](https://www.youtube.com/watch?v=OFX0_mQm-Qo&t=567s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'The government instead could say, thanks so much for telling me what you '
-               "screwed up, but because you can't pay me, I'm going to start penalty "
-               'proceedings against you. And then maybe we can work out a payment plan, for '
-               'example.',
-       'timestamp': 567,
-       'timestamp_label': '[00:09:27]',
-       'timestamp_seconds': 567,
-       'tip': 'The government instead could say, thanks so much for telling me what you '
-              "screwed up, but because you can't pay me, I'm going to start penalty "
-              'proceedings against you. And then maybe we can work out a payment plan, for '
-              'example.',
-       'title': 'Customs Penalty Mitigation: Negotiating with CBP | Jennifer Diaz (Meaningful '
-                'Mediation)',
-       'url': 'https://www.youtube.com/watch?v=OFX0_mQm-Qo&t=567s',
-       'video_id': 'OFX0_mQm-Qo'},
-      {'author': 'Evana',
-       'channel': 'Evana',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:59](https://www.youtube.com/watch?v=6bp1bi4-zH4&t=119s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "For every export, that means you're going to have to prove that the goods left "
-               'with either a bill of lading, an airway bill, uh B3 or a CAD, or even proof of '
-               "deliveries with express carriers. If you're not collecting your proof of "
-               'exports, the time to start is now.',
-       'timestamp': 119,
-       'timestamp_label': '[00:01:59]',
-       'timestamp_seconds': 119,
-       'tip': "For every export, that means you're going to have to prove that the goods left "
-              'with either a bill of lading, an airway bill, uh B3 or a CAD, or even proof of '
-              "deliveries with express carriers. If you're not collecting your proof of "
-              'exports, the time to start is now.',
-       'title': 'What Is Duty Drawback? Get Up to 99% of Your Import Duties Back (Explained) '
-                '(Evana)',
-       'url': 'https://www.youtube.com/watch?v=6bp1bi4-zH4&t=119s',
-       'video_id': '6bp1bi4-zH4'},
-      {'author': 'CBC News',
-       'channel': 'CBC News',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:33](https://www.youtube.com/watch?v=qVk8ygNZbS8&t=33s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Donald Trump's double digit tariffs illegal, but didn't specifically rule on "
-               'refunds. This past Wednesday, a federal judge with the US Court of '
-               'International Trade ordered Customs and Border Protection to start paying '
-               'importers back for the tariffs they paid with interest.',
-       'timestamp': 33,
-       'timestamp_label': '[00:00:33]',
-       'timestamp_seconds': 33,
-       'tip': "Donald Trump's double digit tariffs illegal, but didn't specifically rule on "
-              'refunds. This past Wednesday, a federal judge with the US Court of '
-              'International Trade ordered Customs and Border Protection to start paying '
-              'importers back for the tariffs they paid with interest.',
-       'title': 'Tariff refund system will be ready in 45 days, U.S. customs agency says (CBC '
-                'News)',
-       'url': 'https://www.youtube.com/watch?v=qVk8ygNZbS8&t=33s',
-       'video_id': 'qVk8ygNZbS8'},
-      {'author': 'International Tariff Management',
-       'channel': 'International Tariff Management',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:35](https://www.youtube.com/watch?v=gf35xQR8Lz0&t=35s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "If you're engaged in international trade, you can expect to learn actionable "
-               'tips and strategies that you can implement in your business to become a more '
-               "profitable importer and or exporter. Now let's dive into this month's episode. "
-               'Thank you for tuning in with us today.',
-       'timestamp': 35,
-       'timestamp_label': '[00:00:35]',
-       'timestamp_seconds': 35,
-       'tip': "If you're engaged in international trade, you can expect to learn actionable "
-              'tips and strategies that you can implement in your business to become a more '
-              "profitable importer and or exporter. Now let's dive into this month's episode. "
-              'Thank you for tuning in with us today.',
-       'title': 'ITM How to receive drawback on destroyed merchandise (International Tariff '
-                'Management)',
-       'url': 'https://www.youtube.com/watch?v=gf35xQR8Lz0&t=35s',
-       'video_id': 'gf35xQR8Lz0'},
-      {'author': 'Star USA, Inc.',
-       'channel': 'Star USA, Inc.',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:31:32](https://www.youtube.com/watch?v=ygZWIWKWe4w&t=1892s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'If you look back here, you would only compare things that are the same spacing '
-               'aircraft or marine propulsion, for use in civil aircraft or other, outboard '
-               'motors or other, you have to compare at the same level of indentation. I '
-               'always start with headings.',
-       'timestamp': 1892,
-       'timestamp_label': '[00:31:32]',
-       'timestamp_seconds': 1892,
-       'tip': 'If you look back here, you would only compare things that are the same spacing '
-              'aircraft or marine propulsion, for use in civil aircraft or other, outboard '
-              'motors or other, you have to compare at the same level of indentation. I always '
-              'start with headings.',
-       'title': 'HTS Classification (Star USA, Inc.)',
-       'url': 'https://www.youtube.com/watch?v=ygZWIWKWe4w&t=1892s',
-       'video_id': 'ygZWIWKWe4w'},
-      {'author': 'Scarbrough Global',
-       'channel': 'Scarbrough Global',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:31](https://www.youtube.com/watch?v=VcD4-UlsOzk&t=211s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Necessarily know what entry came in on and now I exported it and I think '
-               "that's where we see a lot of people maybe start to fall down on their ability "
-               'to get into and really start to recover and use this program well.',
-       'timestamp': 211,
-       'timestamp_label': '[00:03:31]',
-       'timestamp_seconds': 211,
-       'tip': "Necessarily know what entry came in on and now I exported it and I think that's "
-              'where we see a lot of people maybe start to fall down on their ability to get '
-              'into and really start to recover and use this program well.',
-       'title': 'When is Duty Drawback beneficial?  Recover U.S. Customs duty (Scarbrough '
-                'Global)',
-       'url': 'https://www.youtube.com/watch?v=VcD4-UlsOzk&t=211s',
-       'video_id': 'VcD4-UlsOzk'},
-      {'author': 'Vinod Parakh',
-       'channel': 'Vinod Parakh',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=rgakhzqSlRc&t=15s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'इन मॉर्निंग। तो हम शुरू करते हैं चैप्टर ड्यूटी ड्रॉबैक हमारे कस्टम रिवीजनरी '
-               'सीरीज का। द टर्म ड्रॉबैक सिंपली मींस व्हाट दैट यू कैन ड्रॉबैक द ड्यूटी व्हिच.',
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': 'इन मॉर्निंग। तो हम शुरू करते हैं चैप्टर ड्यूटी ड्रॉबैक हमारे कस्टम रिवीजनरी '
-              'सीरीज का। द टर्म ड्रॉबैक सिंपली मींस व्हाट दैट यू कैन ड्रॉबैक द ड्यूटी व्हिच.',
-       'title': 'Duty Drawback in Just 39 Minutes- VPJ Customs Revisionary Series (Vinod '
-                'Parakh)',
-       'url': 'https://www.youtube.com/watch?v=rgakhzqSlRc&t=15s',
-       'video_id': 'rgakhzqSlRc'},
-      {'author': 'NextGen CPA',
-       'channel': 'NextGen CPA',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:13](https://www.youtube.com/watch?v=sMBX0ZlgJRY&t=73s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'But be warned, once you submit, you cannot amend it. If you miss a 7501 form, '
-               'you have to start a new declaration, which can push you to the back of the '
-               'queue. CBP is saying 60 to 90 days for the cash to hit your account, but you '
-               'must have an ACH account set up in ACE.',
-       'timestamp': 73,
-       'timestamp_label': '[00:01:13]',
-       'timestamp_seconds': 73,
-       'tip': 'But be warned, once you submit, you cannot amend it. If you miss a 7501 form, '
-              'you have to start a new declaration, which can push you to the back of the '
-              'queue. CBP is saying 60 to 90 days for the cash to hit your account, but you '
-              'must have an ACH account set up in ACE.',
-       'title': 'CBP Refund Portal is LIVE - Claim Your 2025 Tariff Money Now! (NextGen CPA)',
-       'url': 'https://www.youtube.com/watch?v=sMBX0ZlgJRY&t=73s',
-       'video_id': 'sMBX0ZlgJRY'},
-      {'author': 'Trade Risk Guaranty',
-       'channel': 'Trade Risk Guaranty',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:11:12](https://www.youtube.com/watch?v=M68ZVWdgp9I&t=672s)',
-       'relevance': 'Attributed practitioner commentary on zero-upfront `25%–35%` contingency '
-                    'recovery across `5`-year CBP `19 U.S.C. § 1313` duty drawbacks (via '
-                    'licensed `19 CFR Part 111` customs brokers), `19 U.S.C. § 1514` / '
-                    'Post-Summary Correction tariff protests, and settled B2B '
-                    'antitrust/interchange class-action pools (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': '30 days to terminate to to place a larger bond. So, you have 30 days to place '
-               'a larger bond. Um to go a step further than that, your existing bond that '
-               'needs to be increased must be terminated at least 15 days prior to that 30-day '
-               'mark.',
-       'timestamp': 672,
-       'timestamp_label': '[00:11:12]',
-       'timestamp_seconds': 672,
-       'tip': '30 days to terminate to to place a larger bond. So, you have 30 days to place a '
-              'larger bond. Um to go a step further than that, your existing bond that needs '
-              'to be increased must be terminated at least 15 days prior to that 30-day mark.',
-       'title': 'Managing Open U.S. Customs Bond Liability [Full Webinar] (Trade Risk '
-                'Guaranty)',
-       'url': 'https://www.youtube.com/watch?v=M68ZVWdgp9I&t=672s',
-       'video_id': 'M68ZVWdgp9I'}]}
+       'text': 'Importers who have not yet sued, they wrote, are free to do so within the statute '
+               'of limitations.',
+       'timestamp': 995,
+       'timestamp_label': '[00:16:35]',
+       'timestamp_seconds': 995,
+       'tip': 'Importers who have not yet sued, they wrote, are free to do so within the statute '
+              'of limitations.',
+       'title': 'Why Tariff Refunds Go to Importers, Not Shoppers',
+       'url': 'https://www.youtube.com/watch?v=z1HTf2bl72M&t=995s',
+       'video_id': 'z1HTf2bl72M'}]}

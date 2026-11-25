@@ -1,688 +1,839 @@
 from __future__ import annotations
 
-CHAPTER_11 = {
-    "id": "Q11",
-    "chapter_id": "Q11",
-    "chapter_number": 11,
-    "question_number": 11,
-    "slug": "pod-architecture-contractor-kpis-exit-valuation",
-    "question_prompt": "How do you structure a lean 1 FT + 3 C (4 people) -> 2 FT + 4 C (6 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
-    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
-    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
-    "subtitle": "Four-to-Six-Person MSO Pods, HITECH Evidence SLAs, Rule 5.4 Pricing, and Transferable Contract Earnings",
-    "layout_template": "action_checklist",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #46, ranked #13 of 49 with a 93/100 Money-to-Manpower Score, "
-        "turns 13 mapped plays into a disciplined administrative-services business "
-        "rather than a wager on settlement proceeds. Start with one full-time "
-        "operator and three contractors; expand to two full-time seats and four "
-        "contractors only when measured workload supports the additional capacity. "
-        "The canonical annual owner profits are $41,600 Conservative, $267,900 Base, "
-        "and $625,000 Scaled. Preserve those economics through fixed or cost-plus "
-        "contracts, duplicate screening, evidence-quality controls, cohort accounting, "
-        "and collected-cash reconciliation. Cap customer and critical-counterparty "
-        "concentration at 25%, document contractor IP ownership, and separate "
-        "administrative acceptance from legal judgment. Buyers pay for replaceable "
-        "management, assignable contracts, and repeatable earnings; they discount "
-        "founder dependence, undocumented record access, and settlement-linked compensation."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$160,000",
-            "context": "Annual gross contracted MSO administrative-service revenue",
-            "note": "26% net margin; $41,600 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$705,000",
-            "context": "Annual gross contracted MSO administrative-service revenue",
-            "note": "38.0% net margin; $267,900 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,250,000",
-            "context": "Annual gross contracted MSO administrative-service revenue",
-            "note": "50% net margin; $625,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Assign thirteen plays to four accountable seats before adding capacity",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Organize the pod around deliverables, not a miniature law firm. "
-                    "For this chapter, the thirteen-play operating map is an explicit "
-                    "task decomposition: campaign procurement, advertising review coordination, "
-                    "inquiry intake, contact-permission evidence, identity and duplicate screening, "
-                    "law-firm retainer routing, record-request preparation, EMR retrieval, pharmacy "
-                    "retrieval, chronology extraction, deficiency resolution, MSO billing, and "
-                    "buyer-ready reporting. These labels allocate work; they do not establish "
-                    "thirteen separate revenue streams. The full-time operator owns pricing, "
-                    "client relationships, scope control, billing, reporting, and exception "
-                    "escalation. Contractor one owns campaign operations and permission "
-                    "artifacts; contractor two owns intake, identity checks, and retainer "
-                    "routing; contractor three owns record retrieval, chronology production, "
-                    "and administrative deficiency work. Each play receives one accountable "
-                    "seat, one backup, and a documented handoff. The client firm's lawyers "
-                    "retain advertising decisions, representation decisions, legal qualification, "
-                    "and advice. They are counterparties, not hidden employees in the "
-                    "four-person staffing claim. External accounting and security services "
-                    "remain purchased overhead with explicit expense lines. If those services "
-                    "become recurring production labor, revise the staffing disclosure rather "
-                    "than preserving an attractive headcount by relabeling workers. Record "
-                    "weekly hours by play so the claimed automation advantage can actually "
-                    "be measured."
-                ),
-                (
-                    "Use written statements of work that price hours or defined administrative "
-                    "deliverables at supportable market rates. An illustrative starting schedule "
-                    "is $45 per hour for campaign operations, $30 for intake administration, "
-                    "and $40 for record operations, each with a separately negotiated monthly "
-                    "hours ceiling. These are budgeting assumptions, not additions to the "
-                    "canonical profit figures. A contractor invoice must identify work period, "
-                    "deliverable IDs, authorized hours, and accepted corrections without exposing "
-                    "medical details in the accounting ledger. Pay for completed administrative "
-                    "work, never a percentage of attorney fees or claimant recovery. Avoid "
-                    "bonuses per signed claimant or accepted legal case; those incentives "
-                    "encourage steering and can implicate referral restrictions even when "
-                    "labeled marketing. Quality incentives should instead reward auditable "
-                    "accuracy, timely handoffs, and reduced operator rework within a fixed "
-                    "services arrangement. Contractor status depends on actual working "
-                    "conditions under applicable tests, not the invoice heading. Define "
-                    "service windows and output standards without pretending that a tightly "
-                    "controlled employee becomes independent through contract language. "
-                    "Require confidentiality, appropriate data-processing terms, and signed "
-                    "IP assignments before access. Under 17 U.S.C. section 204(a), a "
-                    "copyright ownership transfer generally requires a signed writing; "
-                    "payment alone does not transfer every script or template."
-                ),
-                (
-                    "Scale by splitting bottlenecks rather than duplicating the founder. "
-                    "The second full-time seat becomes delivery and quality lead, while "
-                    "the original operator retains commercial management and cash control. "
-                    "The fourth contractor becomes a dedicated records and pharmacy "
-                    "specialist, allowing the existing records contractor to concentrate "
-                    "on chronology QA and deficiency resolution. That is exactly two "
-                    "full-time seats plus four contractors, not six full-time equivalents. "
-                    "Schedule the expansion only after eight consecutive weeks show "
-                    "sustained utilization above the internally selected 80% planning "
-                    "threshold, acceptable rework, and sufficient contracted contribution "
-                    "to cover the added cost. Maintain a capacity sheet converting "
-                    "volume into minutes for intake, request preparation, follow-up, "
-                    "extraction review, and correction. Automation reduces a measured "
-                    "task duration; it does not erase exception handling. A non-clinical "
-                    "reviewer can check source citations and field completeness but "
-                    "must escalate medical interpretation to appropriately qualified "
-                    "reviewers retained within the disclosed budget. Every production "
-                    "play needs a tested substitute who can resume from the queue "
-                    "without contacting the founder. Test that promise with a five-day "
-                    "operator absence, read-only cash dashboards, and documented escalation "
-                    "authority. If customer service collapses during that exercise, the "
-                    "business still sells the owner's availability rather than transferable "
-                    "operating capacity."
-                ),
-            ],
-            "table": {
-                "caption": "Thirteen-Play Seat Allocation and Four-to-Six-Person Capacity Design",
-                "headers": [
-                    "Seat or operating boundary",
-                    "Assigned plays and accountable output",
-                    "Compensation or capacity control",
-                    "Evidence supporting a transferable operation",
-                ],
-                "rows": [
-                    [
-                        "Full-time owner managing commercial operations and exceptions",
-                        "Own MSO billing, buyer reporting, and contractual scope",
-                        "Track owner hours separately from canonical owner profit",
-                        "Monthly close package and delegated exception authority register",
-                    ],
-                    [
-                        "Campaign contractor managing procurement and permission evidence",
-                        "Own campaign procurement, advertising coordination, and contact evidence",
-                        "Illustrative $45 hourly rate with authorized monthly ceiling",
-                        "Firm-approved creative versions and timestamped source permission artifacts",
-                    ],
-                    [
-                        "Intake contractor handling identity and administrative retainer routing",
-                        "Own inquiry intake, duplicate screening, and retainer routing",
-                        "Illustrative $30 hourly rate without claimant conversion bonuses",
-                        "Source-linked disposition records and lawyer escalation event history",
-                    ],
-                    [
-                        "Records contractor coordinating retrieval and evidence production",
-                        "Own request preparation, EMR, pharmacy, chronology, and deficiencies",
-                        "Illustrative $40 hourly rate with separately budgeted outlays",
-                        "Authorization register and source-cited chronology correction history",
-                    ],
-                    [
-                        "Second full-time seat introduced at sustained delivery pressure",
-                        "Assume delivery scheduling, quality sampling, and exception coordination",
-                        "Require funded capacity and eight weeks of utilization evidence",
-                        "Independent queue management demonstrated during founder absence testing",
-                    ],
-                    [
-                        "Fourth contractor splitting retrieval from chronology quality work",
-                        "Take EMR and pharmacy retrieval from existing records seat",
-                        "Fund approved workload without inflating undisclosed production staffing",
-                        "Provider follow-up logs and backup specialist handoff checklist",
-                    ],
-                    [
-                        "Client lawyers remaining outside the disclosed MSO pod",
-                        "Retain representation decisions, advertising decisions, and legal assessment",
-                        "Separate legal authority from administrative contractor compensation arrangements",
-                        "Written responsibility schedule distinguishing legal and administrative decisions",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make the founder replaceable before a buyer asks",
-                "body": "Transferability starts with ordinary production evidence, not a polished sale presentation.",
-                "items": [
-                    "Attach each TrustedForm certificate to the exact source event and creative version; a certificate alone does not establish every required calling permission.",
-                    "Maintain provider-specific request instructions and rejection reasons so a substitute records specialist can resume work without rebuilding institutional knowledge.",
-                    "Give every chronology assertion a source page or structured-record pointer; measure unsupported assertions separately from formatting defects.",
-                    "Run a five-day founder absence using actual queues, then price the labor needed to repair every escalation that reached the founder.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Score the complete evidence waterfall without pricing legal outcomes",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The weekly scorecard must preserve the entire waterfall: raw inquiry "
-                    "to signed law-firm retainer to usable HITECH EMR or pharmacy proof "
-                    "to deficiency-free accepted case to collected MSO or vendor fee. "
-                    "Tag each event with acquisition cohort, customer, source vendor, "
-                    "matter identifier, timestamp, and responsible seat. A retainer is "
-                    "a law-firm event, not permission for the MSO to practice law; "
-                    "an accepted case means the firm's documented intake standard was "
-                    "satisfied, not that causation or recovery is established. Consider "
-                    "an illustrative monthly cohort of 1,000 inquiries. Exclude 120 "
-                    "duplicates or identity exceptions, route 220 of the remaining "
-                    "880 into signed retainers, obtain usable proof for 154, and "
-                    "deliver 132 deficiency-free files. Report 25% clean-inquiry-to-retainer "
-                    "conversion, 70% retainer-to-proof yield, and 60% retainer-to-acceptance "
-                    "yield. Record duplicates by reason rather than silently deleting "
-                    "them. A LexisNexis product or another authorized identity service "
-                    "can assist matching, but product permissions, permissible uses, "
-                    "and manual false-positive review remain necessary. Never treat "
-                    "an SSN match or a vendor's exclusive-lead promise as proof "
-                    "that the claimant has no other retainer. Ask the firm to "
-                    "resolve representation conflicts through its own procedures."
-                ),
-                (
-                    "Connect that cohort to a services ledger without turning the waterfall "
-                    "into a bounty schedule. The Base scenario averages $58,750 monthly "
-                    "recognized MSO revenue, derived from $705,000 divided by twelve. "
-                    "For a steady-state illustration, allocate that month's service revenue "
-                    "across 132 accepted files: $445.08 per file is an analytical cost-recovery "
-                    "ratio, not a contractual case price. If 90% of the corresponding "
-                    "invoiced amount has been collected by the measurement date, cash "
-                    "receipts are $52,875 and the remaining $5,875 stays receivable "
-                    "subject to collectibility assessment. Do not multiply $445.08 by "
-                    "future cases to rewrite a fixed-fee contract. At an illustrative "
-                    "$45 external retrieval outlay for each of 220 retainers, retrieval "
-                    "spend is $9,900 before internal labor. If non-qualifying evidence "
-                    "rises from 30% to 50%, usable proof falls from 154 to 110. "
-                    "Holding the earlier proof-to-acceptance ratio approximately constant "
-                    "produces about 94 accepted files, raising retrieval outlay per "
-                    "accepted file from $75 to approximately $105.32. The service "
-                    "fee may remain fixed while rework grows; capacity, credits, "
-                    "and renewal economics absorb the shock. Show this stress "
-                    "separately from the unchanged canonical annual scorecard. Repeat "
-                    "the test with duplicate exclusions at 20% and slower provider "
-                    "responses before increasing paid-media commitments."
-                ),
-                (
-                    "Define clocks precisely. Intake acknowledgments can target one business "
-                    "day, complete request packets two business days after required "
-                    "documents arrive, and administrative defect correction five business "
-                    "days after a valid notice. These are negotiated MSO targets, "
-                    "not promises that a provider will release records on that "
-                    "schedule. Under 45 CFR section 164.524, covered entities generally "
-                    "have thirty days to act on an access request, with one "
-                    "permitted thirty-day extension subject to the regulation's conditions. "
-                    "Distinguish individual access requests from authorization-based disclosures; "
-                    "patient-rate restrictions and third-party delivery rules do not attach "
-                    "identically to every retrieval route. Track EMR and pharmacy "
-                    "requests separately, including request authority, provider receipt, "
-                    "missing identifiers, lawful charges, and follow-up dates. Use a "
-                    "negotiated thirty-day administrative replacement window measured from "
-                    "delivery, limited to specified vendor-caused defects and documented "
-                    "remedies. A firm's later legal rejection, changed MDL criteria, "
-                    "or Rule 702 causation decision should not automatically create "
-                    "an unlimited replacement obligation. Score first-pass accuracy "
-                    "alongside correction time, and sample high-risk files completely "
-                    "until defects stabilize. Keep medical information out of generic "
-                    "task boards, and use LLM chronology tools only within approved "
-                    "data arrangements, access controls, and human verification workflows."
-                ),
-            ],
-            "table": {
-                "caption": "Weekly Cohort Scorecard with Explicit Denominators and Administrative Remedies",
-                "headers": [
-                    "Metric and defined measurement population",
-                    "Illustrative calculation or operating target",
-                    "Required evidence and accountable seat",
-                    "Response when the measure deteriorates",
-                ],
-                "rows": [
-                    [
-                        "Duplicate exclusions divided by all raw cohort inquiries",
-                        "120 exclusions from 1,000 inquiries equals twelve percent",
-                        "Intake contractor preserves match reasons and manual dispositions",
-                        "Pause disputed vendor batches and challenge documented duplicate charges",
-                    ],
-                    [
-                        "Signed firm retainers divided by scrubbed eligible inquiries",
-                        "220 signed retainers from 880 inquiries equals twenty-five percent",
-                        "Intake contractor links firm-confirmed signatures to source cohorts",
-                        "Inspect contact failures without pressuring claimants into representation",
-                    ],
-                    [
-                        "Usable proof divided by signed cohort retainers",
-                        "154 supported files from 220 retainers equals seventy percent",
-                        "Records contractor identifies source pages and qualifying fields",
-                        "Separate absent exposure evidence from unfinished provider retrieval",
-                    ],
-                    [
-                        "Deficiency-free files divided by signed cohort retainers",
-                        "132 accepted files from 220 retainers equals sixty percent",
-                        "Delivery owner retains firm's dated administrative acceptance evidence",
-                        "Apply bounded correction remedies for documented vendor-caused defects",
-                    ],
-                    [
-                        "Retrieval outlays divided by accepted cohort files",
-                        "$9,900 divided by 132 accepted files equals $75",
-                        "Records contractor reconciles provider invoices to request identifiers",
-                        "Reforecast workload when evidence rejection raises unit expense",
-                    ],
-                    [
-                        "Collected cash divided by associated invoiced service amount",
-                        "$52,875 collected against $58,750 invoiced equals ninety percent",
-                        "Operator matches bank receipts to invoice aging records",
-                        "Escalate disputed invoices before expanding the customer's scope",
-                    ],
-                    [
-                        "Correction elapsed time measured from valid defect notice",
-                        "Target five business days for vendor-controlled administrative corrections",
-                        "Delivery owner retains notice, ownership, remedy, and completion",
-                        "Separate provider delays from contractor-controlled correction performance",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the weekly cohort",
-                    "action": "Export timestamped inquiry, retainer, request, acceptance, and invoice events.",
-                    "detail": "Use a fixed weekly cutoff and retain later adjustments as dated entries rather than rewriting the original snapshot.",
-                },
-                {
-                    "step": 2,
-                    "title": "Reconcile exceptions before celebrating conversion",
-                    "action": "Review duplicate flags, permission gaps, missing records, and unsupported chronology assertions.",
-                    "detail": "Assign each exception to a seat and distinguish administrative repairs from decisions reserved to the client firm's lawyers.",
-                },
-                {
-                    "step": 3,
-                    "title": "Match work to invoices and receipts",
-                    "action": "Tie service periods, approved outlays, customer credits, and bank receipts to the accounting ledger.",
-                    "detail": "Keep cash collection separate from recognized revenue and keep per-file analytical allocations separate from contractual pricing.",
-                },
-                {
-                    "step": 4,
-                    "title": "Publish decisions with named owners",
-                    "action": "Approve the next week's capacity, correction priorities, and vendor allocation.",
-                    "detail": "Record the chosen action, accountable seat, due date, and expected effect; verify completion at the following weekly review.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Protect the canonical margins with accrual books and concentration limits",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Keep the Formula v2.0 scorecard intact: Conservative revenue of "
-                    "$160,000 less $118,400 in total modeled costs produces $41,600 "
-                    "owner net profit at 26%; Base revenue of $705,000 less "
-                    "$437,100 produces $267,900 at 38.0%; Scaled revenue of "
-                    "$1,250,000 less $625,000 produces $625,000 at 50%. "
-                    "The first two cases use one full-time seat and three "
-                    "contractors; Scaled uses two full-time seats and four contractors. "
-                    "These are complete annual outcomes, not incremental margins "
-                    "to which an additional labor budget can casually be appended. "
-                    "The listed $2,500 to $14,000 monthly operating range is "
-                    "not a substitute for the complete scenario expense envelope; "
-                    "the case totals also require all modeled delivery and acquisition "
-                    "costs to reconcile. Revenue consists of contracted administrative, "
-                    "marketing, intake, and record-triage services. Client trust balances, "
-                    "settlement awards, claimant damages, and law-firm contingency fees "
-                    "never enter the MSO revenue line. Where the MSO arranges "
-                    "third-party services, assess principal-versus-agent presentation "
-                    "under ASC 606 from the actual control facts. If only "
-                    "a retained service share qualifies as revenue, record that "
-                    "share rather than gross pass-through billings. Do not invent "
-                    "a retained-share percentage or silently alter the canonical "
-                    "figures; identify the accounting difference and reconcile it "
-                    "explicitly for the actual business."
-                ),
-                (
-                    "Build the ledger around customer, service period, acquisition cohort, "
-                    "vendor, and delivery activity. Accrue contractor work when performed, "
-                    "record retrieval charges when incurred, and recognize fixed monthly "
-                    "services over the period in which the contractual performance "
-                    "obligation is satisfied. Customer deposits may create contract "
-                    "liabilities rather than immediate revenue. Track credits and "
-                    "bounded replacement obligations using a documented accounting "
-                    "policy that reflects the contract and applicable standards. "
-                    "Maintain separate schedules for invoiced receivables, unbilled "
-                    "amounts, advance collections, disputed invoices, and aging. "
-                    "A cash receipt against last quarter's invoice improves "
-                    "liquidity without increasing this quarter's service revenue. "
-                    "Close monthly within ten business days using bank "
-                    "reconciliations, vendor accruals, cohort cost allocations, and "
-                    "a bridge from operating income to owner distributions. "
-                    "Allocate shared overhead consistently rather than moving "
-                    "unprofitable acquisition costs into an invisible corporate "
-                    "bucket. Reconcile the cohort waterfall to the ledger "
-                    "through service periods and customer identifiers; do not "
-                    "force each accepted file to generate a separate invoice. "
-                    "Preserve both invoice-level detail and an aggregated buyer "
-                    "view stripped of claimant identifiers. A quality-of-earnings "
-                    "review should reproduce monthly margin from source records "
-                    "without requiring unrestricted access to sensitive medical "
-                    "files or the founder's private spreadsheet formulas."
-                ),
-                (
-                    "Set concentration limits before a dominant firm or vendor becomes "
-                    "indispensable. Cap each customer group at 25% of trailing-twelve-month "
-                    "recognized revenue and separately at 25% of receivables; aggregate "
-                    "affiliated firms under common economic control. Target five balanced "
-                    "customers so ordinary churn does not immediately breach the ceiling. "
-                    "A simple Base allocation is five customers paying $141,000 annually "
-                    "each, or $11,750 monthly, for an aggregate $705,000. Equivalent "
-                    "illustrative allocations are five annual contracts of $32,000 "
-                    "for Conservative and $250,000 for Scaled, with scope adjusted "
-                    "to the actual labor budget. These are capacity illustrations, "
-                    "not claims that five customers will buy identical packages. "
-                    "For critical acquisition and retrieval counterparties, measure "
-                    "both spend share and routed-volume share, with each economic "
-                    "group capped at 25%. Multiple vendor names do not diversify "
-                    "a common upstream lead supplier. Foundational software needs "
-                    "documented exports and recovery substitutes rather than a "
-                    "fictional four-way split of every application. During initial "
-                    "customer acquisition, disclose any unavoidable concentration "
-                    "breach and make diversification a dated priority; never "
-                    "present an immature book as already diversified. Separately "
-                    "monitor exposure to a single tort thesis because four "
-                    "firms can all lose demand after the same general-causation "
-                    "ruling under Federal Rule of Evidence 702."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Annual Reconciliation and Concentration-Control Ledger",
-                "headers": [
-                    "Scenario or accounting control area",
-                    "Required dollars or concentration measurement",
-                    "Bookkeeping treatment and supporting evidence",
-                    "Management response and operating boundary",
-                ],
-                "rows": [
-                    [
-                        "Conservative services business with four disclosed pod members",
-                        "$160,000 revenue less $118,400 costs yields $41,600 profit",
-                        "Preserve twenty-six percent margin across the annual close",
-                        "Scope contractor hours within the complete expense envelope",
-                    ],
-                    [
-                        "Base services business with four disclosed pod members",
-                        "$705,000 revenue less $437,100 costs yields $267,900 profit",
-                        "Preserve 38.0% margin with documented customer service periods",
-                        "Reconcile every cost allocation before increasing campaign commitments",
-                    ],
-                    [
-                        "Scaled services business with six disclosed pod members",
-                        "$1,250,000 revenue less $625,000 costs yields $625,000 profit",
-                        "Preserve fifty percent margin with all delivery labor included",
-                        "Fund the second employee and fourth contractor explicitly",
-                    ],
-                    [
-                        "Customer economic groups measured across affiliated firm entities",
-                        "Cap each group at twenty-five percent revenue and receivables",
-                        "Reconcile trailing annual revenue and current invoice balances",
-                        "Diversify signed service contracts rather than dividing invoices artificially",
-                    ],
-                    [
-                        "Critical vendors measured through their common upstream ownership",
-                        "Cap each group at twenty-five percent spend and volume",
-                        "Retain supplier ownership records and routed cohort counts",
-                        "Maintain tested substitutes before shifting another acquisition batch",
-                    ],
-                    [
-                        "Pass-through purchases assessed under principal versus agent treatment",
-                        "Recognize only the amount supported by actual control facts",
-                        "Document ASC 606 conclusions against executed customer contracts",
-                        "Exclude trust balances and settlement proceeds from service revenue",
-                    ],
-                    [
-                        "Monthly close distinguishing earned revenue from collected cash",
-                        "Complete bank reconciliation and accrual review within ten days",
-                        "Retain service evidence, contractor accruals, and customer credit schedules",
-                        "Publish a reproducible bridge from earnings to owner distributions",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before expanding scope or presenting a sale book",
-                "body": "Treat unresolved evidence as an operating task with an owner, not as a presentation problem.",
-                "items": [
-                    "Verify every MSO agreement uses supportable fixed or cost-plus administrative pricing, preserves lawyer independence, and contains no disguised recovery participation.",
-                    "Verify the record-request route, disclosure authority, access permissions, and applicable business-associate arrangements before moving medical information into any new tool.",
-                    "Verify customer revenue, receivables, and critical-vendor routing against the 25% concentration limits, documenting temporary launch-stage breaches and corrective dates.",
-                    "Verify twelve monthly closes, signed contractor IP transfers, assignment restrictions, and a tested founder-replacement plan before circulating buyer materials.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Value transferable service earnings, not the settlement narrative",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "A buyer acquires enforceable service economics, documented systems, "
-                    "and an organization capable of continuing without the seller. "
-                    "Owner net profit is therefore the starting point for "
-                    "normalization, not automatically EBITDA or seller's discretionary "
-                    "earnings. Reconcile taxes, interest, depreciation, amortization, "
-                    "owner compensation, recurring replacement labor, and defensible "
-                    "one-time adjustments from actual books. For illustration only, "
-                    "assume the Base $267,900 owner profit contains no owner "
-                    "replacement salary and otherwise requires no EBITDA adjustments. "
-                    "Deduct an $80,000 fully loaded replacement seat to obtain "
-                    "$187,900 normalized annual earnings. A negotiated two-to-three-and-a-half "
-                    "times multiple would imply enterprise value of $375,800 "
-                    "to $657,650. For Scaled, assume $100,000 replacement cost "
-                    "for the remaining owner role, leaving $525,000; a "
-                    "two-and-a-half-to-four times range implies $1,312,500 to "
-                    "$2,100,000. These are illustrative negotiation ranges, not "
-                    "observed transaction comparables or promised clearing prices. "
-                    "The Conservative $41,600 cannot support an $80,000 "
-                    "replacement role on those assumptions, making an owner-operated "
-                    "cash-flow purchase or asset transaction more plausible than "
-                    "a management-independent earnings multiple. If owner labor "
-                    "is already expensed, do not deduct it twice. Support "
-                    "any premium with evidence of renewal durability, stable "
-                    "gross contribution, low rework, and customer continuity through "
-                    "an actual operator transition."
-                ),
-                (
-                    "Prepare a transfer package that separates ordinary business assets "
-                    "from restricted information and professional relationships. Include "
-                    "executed customer contracts, service descriptions, renewal history, "
-                    "assignment and change-of-control provisions, vendor agreements, "
-                    "employee documents, contractor statements of work, and signed "
-                    "copyright transfers covering scripts, parsers, templates, and "
-                    "documentation. Inventory third-party and open-source components "
-                    "so the buyer knows which rights can transfer and which "
-                    "require fresh licensing. A contractor's preexisting toolkit "
-                    "needs an express license broad enough for continued operation; "
-                    "an assignment cannot convey rights the contractor never owned. "
-                    "Provide de-identified operating samples initially and stage "
-                    "sensitive disclosures according to the transaction structure "
-                    "and applicable permissions. HIPAA protections and business-associate "
-                    "contract duties do not disappear when an acquisition "
-                    "agreement is signed. Customer contracts may require consent "
-                    "before assignment, and law-firm clients remain free to "
-                    "make representation decisions independently of the MSO sale. "
-                    "Deliver administrator access through controlled account "
-                    "transfers, rotate credentials after closing, and verify "
-                    "exports with a restoration test. The buyer should receive "
-                    "a working service organization, not the seller's personal "
-                    "logins or an unrestricted copy of every claimant record. "
-                    "Keep a transaction issue register with remediation owner, "
-                    "required counterparty action, and evidence of completion."
-                ),
-                (
-                    "Negotiate enterprise value separately from equity proceeds. Debt, "
-                    "cash treatment, transaction costs, escrow, working-capital adjustments, "
-                    "and contingent consideration can materially change what the "
-                    "seller receives at closing. Base any earnout on clearly "
-                    "defined MSO service revenue or normalized service earnings, "
-                    "with rules for customer allocation, buyer-imposed overhead, "
-                    "and collection disputes; keep settlement percentages and "
-                    "attorney-fee participation out of the mechanism. ABA Model "
-                    "Rule 5.4 is a model rule whose binding implementation "
-                    "depends on jurisdiction, so contract review must follow "
-                    "the applicable state rules. Arizona's licensed alternative "
-                    "business structure framework is a specific authorization "
-                    "path, not a portable exception for ordinary MSOs elsewhere. "
-                    "Maintain a one-seller-specific contact-permission policy for "
-                    "campaign operations and separately assess the current "
-                    "TCPA requirements under 47 U.S.C. section 227 and "
-                    "47 CFR section 64.1200; do not describe the vacated "
-                    "FCC one-to-one lead-generator rule as operative federal "
-                    "law. If offers underprice durable service earnings, "
-                    "retain the business with the same controls: delegated "
-                    "delivery, quarterly concentration testing, documented distributions, "
-                    "and funded correction reserves. A cash cow still "
-                    "requires replacement labor and disciplined renewal work. "
-                    "Sell only when risk-adjusted net proceeds compare "
-                    "favorably with realistic retained distributions and the "
-                    "owner's desired future involvement."
-                ),
-            ],
-            "table": {
-                "caption": "Illustrative Buyer Valuation Bridge and Transferability Evidence",
-                "headers": [
-                    "Valuation item or transfer requirement",
-                    "Illustrative calculation or buyer concern",
-                    "Evidence required before relying on value",
-                    "Effect on negotiation or retained ownership",
-                ],
-                "rows": [
-                    [
-                        "Base owner earnings converted into replacement-managed operating earnings",
-                        "$267,900 less $80,000 replacement labor leaves $187,900",
-                        "Verify owner compensation treatment and all EBITDA reconciliation adjustments",
-                        "Avoid deducting replacement labor already included in expenses",
-                    ],
-                    [
-                        "Base illustrative enterprise valuation before balance-sheet settlement adjustments",
-                        "$187,900 multiplied by 2.0–3.5 produces $375,800–$657,650",
-                        "Support assumptions with renewals, margins, and independent operator performance",
-                        "Treat the range as negotiation modeling rather than comparables",
-                    ],
-                    [
-                        "Scaled illustrative enterprise valuation with remaining owner replacement",
-                        "$625,000 less $100,000 yields $525,000; 2.5–4.0 implies $1,312,500–$2,100,000",
-                        "Confirm the second employee remains fully expensed throughout normalization",
-                        "Require stronger transferability evidence before arguing the upper multiple",
-                    ],
-                    [
-                        "Conservative owner-operated business lacking funded management replacement capacity",
-                        "$41,600 owner profit falls below $80,000 replacement assumption",
-                        "Document actual owner workload and achievable replacement staffing costs",
-                        "Consider owner-operator or asset pricing instead of independent earnings",
-                    ],
-                    [
-                        "Contract and software rights needed for continued service delivery",
-                        "Assignment restrictions and missing IP transfers can impair continuity",
-                        "Collect executed assignments, licenses, consents, and source documentation",
-                        "Resolve transfer defects before accepting price reductions or escrow",
-                    ],
-                    [
-                        "Equity proceeds calculated after transaction-specific balance-sheet and deal adjustments",
-                        "Subtract debt, agreed costs, escrow, and adverse working-capital adjustments",
-                        "Reconcile closing statement definitions against the signed purchase agreement",
-                        "Compare actual closing cash rather than headline enterprise value",
-                    ],
-                    [
-                        "Retained ownership supported by delegated work and measured customer durability",
-                        "Recurring service earnings must still fund labor and correction reserves",
-                        "Review renewals, concentration, utilization, collections, and founder absence results",
-                        "Retain distributions when offers underprice realistic operating durability",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A transferable MSO sells repeatable administrative earnings, not the founder's availability or a share of somebody else's settlement.",
-    "diagram_id": "diag-06",
-    "action_checklist": [
-        "Assign all thirteen mapped plays to the four initial seats, name a backup for each handoff, and disclose any purchased recurring production labor.",
-        "Execute contractor scopes with hourly or administrative-deliverable pricing, bounded correction SLAs, signed IP assignments, and appropriate medical-information access terms.",
-        "Publish the complete weekly inquiry-to-cash waterfall with cohort denominators, duplicate exclusions, evidence rejection, retrieval outlays, and replacement-window exposure.",
-        "Reconcile the three canonical annual cases to complete expense envelopes and close service revenue, accruals, receivables, credits, and cash separately.",
-        "Measure affiliated-customer revenue and receivables plus critical-vendor spend and routing against 25% caps, then test substitutes and founder absence.",
-        "Build a buyer-ready transfer package and replacement-labor valuation bridge; compare adjusted closing proceeds with realistic retained owner distributions.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "17 U.S.C. section 204(a) — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": "Require signed writings for copyright transfers covering contractor-created scripts, templates, parsers, and documentation; distinguish assigned work from licensed preexisting components.",
-        },
-        {
-            "title": "45 CFR section 164.524 — Access of individuals to protected health information",
-            "url": "https://www.ecfr.gov/current/title-45/section-164.524",
-            "relevance": "Design individual-access request procedures around the applicable timing, format, fee, and delivery provisions while distinguishing other disclosure routes.",
-        },
-        {
-            "title": "45 CFR section 164.508 — Uses and disclosures for which an authorization is required",
-            "url": "https://www.ecfr.gov/current/title-45/section-164.508",
-            "relevance": "Validate authorization elements and scope when obtaining medical records through authorization-based disclosures rather than assuming every request follows individual-access rules.",
-        },
-        {
-            "title": "45 CFR section 164.504(e) — Business associate contracts",
-            "url": "https://www.ecfr.gov/current/title-45/section-164.504",
-            "relevance": "Specify applicable permitted uses, safeguards, subcontractor duties, and return or destruction provisions when the operating relationship creates business-associate obligations.",
-        },
-        {
-            "title": "47 U.S.C. section 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Assess campaign calling and messaging practices against applicable statutory restrictions rather than treating vendor permission certificates as complete authorization.",
-        },
-        {
-            "title": "47 CFR section 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": "Maintain calling and messaging controls matched to the actual technology, purpose, permission requirements, revocations, and applicable solicitation restrictions.",
-        },
-        {
-            "title": "Federal Rule of Evidence 702 — Testimony by expert witnesses",
-            "url": "https://www.law.cornell.edu/rules/fre/rule_702",
-            "relevance": "Stress-test concentration in a single tort thesis because adverse expert-admissibility decisions can disrupt multiple customer firms simultaneously.",
-        },
-        {
-            "title": "Arizona Supreme Court — Alternative Business Structures",
-            "url": "https://www.azcourts.gov/abs",
-            "relevance": "Use the court's official licensing framework when evaluating an Arizona ABS structure; ordinary MSO contracts do not acquire that authorization by adopting similar terminology.",
-        },
-    ],
-}
+CHAPTER_11 = {'id': 'Q11',
+ 'chapter_id': 'Q11',
+ 'chapter_number': 11,
+ 'question_number': 11,
+ 'slug': 'capital-markets-law-firm-portfolio-funding-pe-msos',
+ 'question_prompt': 'How are investors and private equity treating lawsuits and law firms as assets, and '
+                    'what deal structures result?',
+ 'kicker': 'Q11 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Capital Markets Meet the Law Firm: Portfolio Funding, PE & Law-Firm MSOs',
+ 'subtitle': 'Litigation as an asset class, funding market process, portfolio and law-firm financing, '
+             'investor perspectives, ethics of non-lawyer capital, PE consolidation, and MSOs for '
+             'contingency-fee firms',
+ 'layout_template': 'chapter_opener',
+ 'reading_time_minutes': 15,
+ 'executive_summary': "Holland & Knight's Trisha Rich and Josh Port, Lucian Pera, Tim Mackey and the "
+                      'Esquire Bank panel converge on one blueprint. Spin non-lawyer staff, equipment, IP '
+                      'and founder likeness into a Delaware LLC MSO. Lease it back for a fixed monthly or '
+                      'cost-plus fee, with 10-15% markups, validated by a third-party fairness opinion. '
+                      'Keep lawyers, engagement letters, trust accounts, hiring, case selection and '
+                      'settlement inside the firm. Accounting trades near 15x EBITDA versus 4-8x for law '
+                      'firms, and Joe Prencipe pitches buying in at 5x to roll up PI firms running 35% '
+                      'margins. On the funding side, Burford funds 6-8% of reviewed cases at mid-20s IRRs, '
+                      'and 39 funders committed $2.8B in 2025. Disagreements center on mass-tort cash-flow '
+                      'unpredictability, the timing of Am Law deals, securitization, and whether portfolio '
+                      'deals are truly diversified.',
+ 'key_metrics': [{'label': 'Typical MSO cost-plus markup',
+                  'metric': 'Typical MSO cost-plus markup',
+                  'value': '10-15%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Holland & Knight team describing cost-plus markups on MSO services fees, '
+                             'which must be fixed monthly or cost-plus and never a percentage of profits '
+                             'or revenue',
+                  'source': 'Confido Legal ([5TjsKzLtyc4 @ 00:25:36])'},
+                 {'label': 'Law firm vs accounting EBITDA multiples',
+                  'metric': 'Law firm vs accounting EBITDA multiples',
+                  'value': "Law firms 4-8x EBITDA vs accounting about 15x 'table stakes'",
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Valuation multiples for accounting firm MSO deals compared with what law '
+                             'firms currently trade at',
+                  'source': 'Confido Legal ([5TjsKzLtyc4 @ 00:11:15])'},
+                 {'label': 'Burford case acceptance rate',
+                  'metric': 'Burford case acceptance rate',
+                  'value': '6-8% of cases reviewed',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Chris Bogart on Burford's selectivity, against a portfolio of about $7-7.5B "
+                             'and over $10B deployed',
+                  'source': 'TALKSONLAW ([1kAfGIkF10g @ 00:22:54])'},
+                 {'label': '2025 litigation finance commitments',
+                  'metric': '2025 litigation finance commitments',
+                  'value': '$2.8B across 346 deals by 39 active funders',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'About 22% above 2024, with averages of 4.5M per single-case deal and 19.6M '
+                             'per portfolio',
+                  'source': 'The National Law Review ([9teRv9eFpEc @ 00:02:07])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ["Holland & Knight's Trisha Rich frames the MSO bluntly: it is 'simply a "
+                              "vendor,' and nobody is buying law firms [5TjsKzLtyc4 @ 00:03:09]. Every "
+                              'practitioner describing the build lands on the same split. Tim Mackey of '
+                              'Vista Consulting spins all non-lawyer staff, leases and the licensed brand '
+                              'out of the law firm into the managed service organization, which leases '
+                              'them back while the firm makes a lease payment [lgURVgZL9IY @ 00:01:14]. On '
+                              "Mattern LLC, Holland & Knight's Josh and Trish add equipment, IP and the "
+                              "founders' name, image and likeness to the transfer list, while lawyers, "
+                              'engagement letters and trust accounts stay inside the firm [8wwcTCIWOXM @ '
+                              '00:05:26]. HR and accounting can migrate to the management company; hiring '
+                              'and firing, case selection and settlement authority never do. On The '
+                              "LegalTech Fund, Rich calls the vehicle a 'two company model' or LSO, a "
+                              'parallel management company that handles administrative and business '
+                              'functions and that anyone, including non-lawyers, can own, provided it '
+                              'never owns or controls the lawyers and is never paid in a way that amounts '
+                              'to a fee split [kF2XWwBObZ8 @ 00:04:08]. The operator takeaway is '
+                              'consistent across these speakers: the investor buys the business chassis, '
+                              'never the practice, and every dollar of value has to be engineered on that '
+                              'boundary.',
+                              'The second consensus point is payment. Rich is categorical that no '
+                              'percentage of profits or revenue is allowed: the fee must be a fixed '
+                              'monthly number or cost-plus, backed by a third-party fairness opinion '
+                              '[5TjsKzLtyc4 @ 00:23:21]. The Esquire Bank panel with Chad Dudley and Tim '
+                              'Mackey describes the same discipline, with the valuation done by outside '
+                              "professionals and 'not tied to the revenue of the law firm,' run through "
+                              'licensing agreements or cost-plus arrangements [epFmlanyChw @ 00:01:28]. '
+                              'Lucian Pera of Adams and Reese says MSOs are legal and, structured '
+                              'correctly, trigger no Rule 5.4 problem, even though ethics opinions are the '
+                              'thinnest precedent and Texas only blesses the pieces rather than the whole '
+                              "[wXttJe-HCVM @ 00:05:40]. Rich dismisses the common owner fear of 'anybody "
+                              "coming in here and telling me what to do' as 'a little bit overblown,' "
+                              'because the two ethical pillars, no control and no fee-splitting, wall the '
+                              'investor off from the lawyering [kF2XWwBObZ8 @ 00:10:08]. Every state '
+                              'except Arizona carries a version of Rule 5.4, and the concern is control as '
+                              'well as ownership, so the fee mechanism and the control map are where every '
+                              'deal is judged. The Mattern walkthrough adds that regulators elevate '
+                              "'substance over form,' so a cost-plus label will not rescue a fee that "
+                              'behaves like a revenue share.',
+                              'The third consensus thread is that outside capital only works with a plan '
+                              "attached. Pera calls the MSO 'a tool... not for everyone,' rejects "
+                              "'management by inflight magazine,' and insists the business plan comes "
+                              'first, citing an AI tool for construction clients as the example, and says '
+                              "a bank or 'uncle Jim' may be easier [wXttJe-HCVM @ 00:07:22]. Rich runs the "
+                              'same fit test from the deal desk: if the capital would just sit in savings, '
+                              "an MSO 'might not be for you' [kF2XWwBObZ8 @ 00:08:10]. On the "
+                              'litigation-finance side of the capital stack, the funders agree on the '
+                              "terms that make the money palatable. GLS Capital's Hannah Sadler explains "
+                              "that funding is non-recourse, so if the case is lost or dismissed 'the "
+                              "litigant doesn't owe anything to the funder,' and that funders do not "
+                              "control the litigation [9teRv9eFpEc @ 00:05:13]. Bentham's Dave Kirstine "
+                              'says the only rights retained after investing are to be kept informed, to '
+                              "weigh in on settlement and to be paid, and Drumcliff's Jim Little and "
+                              'Michael Weiss likewise exercise no control [rQPZlRgHcfE @ 00:56:12]. '
+                              'Whether the money arrives as MSO equity or case funding, the common '
+                              'denominator is passive capital backing a firm that keeps running its own '
+                              'cases.'],
+               'table': {'caption': 'Where MSO and funding practitioners line up on structure, fees and '
+                                    'control',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioners Say',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['MSO is a vendor, not a firm purchase',
+                                   'Rich says an MSO is simply a vendor and nobody is buying law firms',
+                                   'Paper the deal as a services relationship, never as a practice '
+                                   'acquisition',
+                                   'Confido Legal ([5TjsKzLtyc4 @ 00:03:09])'],
+                                  ['Legal decision rights stay inside the law firm',
+                                   'HR and accounting move over; hiring, firing, case selection and '
+                                   'settlement stay with lawyers',
+                                   'Map every function before signing and keep all decision rights on the '
+                                   'firm side',
+                                   'Confido Legal ([5TjsKzLtyc4 @ 00:18:14])'],
+                                  ['Trust accounts and engagement letters never transfer',
+                                   'Lawyers, engagement letters and trust accounts remain in the firm '
+                                   'while non-legal assets move',
+                                   'Keep client money and client contracts entirely outside the MSO '
+                                   'perimeter',
+                                   'Mattern LLC ([8wwcTCIWOXM @ 00:04:40])'],
+                                  ['MSO fee is fixed or cost-plus, never revenue-based',
+                                   'A third-party valuation sets a fixed monthly fee not tied to law firm '
+                                   'revenue',
+                                   'Commission an outside valuation and re-evaluate it as MSO headcount '
+                                   'grows',
+                                   'Esquire Bank ([epFmlanyChw @ 00:01:28])'],
+                                  ['Correct structure avoids Rule 5.4 exposure entirely',
+                                   'Pera says MSOs are legal and, structured correctly, trigger no Rule '
+                                   '5.4 problem',
+                                   'Treat ethics opinions as thin precedent and build each piece of the '
+                                   'structure defensibly',
+                                   'The Future Is Bright Podcast ([wXttJe-HCVM @ 00:05:40])'],
+                                  ['Capital needs a deployment plan before it arrives',
+                                   'If the capital would just sit in savings, an MSO might not be for you',
+                                   'Write the deployment plan for AI, laterals and pensions before talking '
+                                   'to investors',
+                                   'The LegalTech Fund ([kF2XWwBObZ8 @ 00:08:10])'],
+                                  ['Litigation funding is non-recourse and passive after investment',
+                                   'If the case is lost the litigant owes nothing, and funders do not '
+                                   'control the litigation',
+                                   'Expect information and settlement input rights from funders, not '
+                                   'strategy control over cases',
+                                   'The National Law Review ([9teRv9eFpEc @ 00:05:13])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The Mattern LLC walkthrough gives the build order. Step one is forming the '
+                              "MSO, 'typically just a Delaware LLC' [8wwcTCIWOXM @ 00:04:03]. Non-legal "
+                              'assets then move across, and the MSO licenses or leases them back under a '
+                              'business services agreement for a monthly fee, with an accounting firm '
+                              'validating fairness; the stated goal is to move as much economics as is '
+                              'defensible, net of attorney compensation [8wwcTCIWOXM @ 00:06:30]. Only '
+                              'then does the investor buy all or part of the MSO, either for partner '
+                              'liquidity or growth capital. Valuation is built vertical by vertical, '
+                              'marketing, HR and so on, and the rules do not require fair market value; it '
+                              'functions as a defense. On fee levels, Rich puts typical cost-plus markups '
+                              'at 10-15%, and says fee changes should be forward-looking only, with the '
+                              "fairness analysis refreshed; an annual cadence 'seems more or less "
+                              "sensible,' though there are no hard and fast rules [5TjsKzLtyc4 @ "
+                              '00:25:36]. The Esquire Bank panel structures the agreement by defining the '
+                              'services, the MSO-owned IP and the resources used, then paying a fixed '
+                              'monthly amount like any vendor, re-evaluated as MSO headcount grows, '
+                              'usually yearly and sometimes sooner [epFmlanyChw @ 00:01:08]. Annual '
+                              're-pricing is the shared default across both camps.',
+                              'Because lawyers cannot be bound by non-competes, even in an asset sale, and '
+                              "Josh Port warns there are 'no silver bullets,' the deal paper has to do the "
+                              'retention work. The Mattern walkthrough lists the levers: rollover equity, '
+                              'equity forfeiture, and five-year vesting of cash, for example returning 60% '
+                              'if a lawyer quits in year two [8wwcTCIWOXM @ 00:19:20]. Name, image and '
+                              'likeness licenses are another lever, and the Jon and Marc panel reports '
+                              "these run 'in perpetuity' and can permit AI versions of the founder "
+                              '[U2xFBBUm_IU @ 00:20:06]. Rich flags two drafting traps that show up in '
+                              'investor paper. First, personal liability for unpaid MSO fees should be '
+                              'rewritten as deferred fees [5TjsKzLtyc4 @ 00:42:21]. Second, '
+                              'non-solicitation covenants that reach lawyers or clients violate Rule 5.6 '
+                              'and have to come out. Plans cut both ways: an investor that arrives without '
+                              "a performance plan is a 'yellow flag,' and a firm that takes money without "
+                              "its own plan faces 'a tremendous amount of pressure' from equity partners "
+                              'to pay it out in compensation [8wwcTCIWOXM @ 00:42:49]. On the exit side, '
+                              'the Jon and Marc panelists say less founder reliance earns a higher EBITDA '
+                              'multiple and that a couple of years of track record matters.',
+                              "Litigation funding has its own mechanics on the same capital map. Bentham's "
+                              'Dave Kirstine sets a $1-1.5M minimum with a $5-15M wheelhouse, wants case '
+                              'value at 8-10x the commitment, and runs intake, NDA, an in-person meeting, '
+                              'a non-binding term sheet within about a week, then binding 30-45 day '
+                              "exclusivity [rQPZlRgHcfE @ 00:11:07]. Much Shelist's Jonathan Friedland "
+                              'lays out the formal market process: rifled rather than shotgun outreach, an '
+                              'anonymized teaser, CA, CIM, term sheet, diligence, then the funding '
+                              'agreement [9teRv9eFpEc @ 00:26:04]. Selectivity is brutal: Hannah Sadler '
+                              "reports about 4 funded per hundreds reviewed, and Statera's Stewart Ackerly "
+                              'prices on a multiple of capital actually drawn, often less than the '
+                              "commitment. Burford's Chris Bogart says Burford funds only 6-8% of the "
+                              'cases it reviews and describes the default waterfall: capital back first, '
+                              'then a time-based multiple starting around 0.5x and rising, then a share of '
+                              "net recovery; on $10 million deployed, Burford looks for '$10 million back "
+                              "and then another $5 million' on the time-based leg [1kAfGIkF10g @ "
+                              '00:27:53]. Bogart reports mid-20s IRRs, ROIC in the 80s and a per-case loss '
+                              'rate under 10%, with appeal-stage SDNY cases priced cheap and '
+                              'multi-jurisdiction arbitrations priced expensive.'],
+               'table': {'caption': 'Street-level numbers for MSO fees, retention, roll-ups and funding '
+                                    'terms',
+                         'headers': ['Lever',
+                                     'Number or Mechanic',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Cost-plus markup on the MSO services fee',
+                                   'Typical cost-plus markups run 10-15%, backed by a third-party fairness '
+                                   'opinion',
+                                   'Set the services fee inside that band and change it only going forward',
+                                   'Confido Legal ([5TjsKzLtyc4 @ 00:25:36])'],
+                                  ['Valuation gap between accounting and law firms',
+                                   'Accounting trades near 15x EBITDA as table stakes; law firms trade at '
+                                   '4-8x',
+                                   'Benchmark seller expectations against the 4-8x range law firms '
+                                   'currently trade at',
+                                   'Confido Legal ([5TjsKzLtyc4 @ 00:11:15])'],
+                                  ['Cash vesting as the non-compete substitute',
+                                   'Five-year vesting of cash, e.g., returning 60% if a lawyer quits in '
+                                   'year two',
+                                   'Tie partner liquidity to staying power since non-competes cannot bind '
+                                   'lawyers',
+                                   'Mattern LLC ([8wwcTCIWOXM @ 00:19:20])'],
+                                  ['Roll-up entry price for PI firms',
+                                   'Buy in at 5x EBITDA, then expand to nearby cities at low cost',
+                                   "Prencipe's roll-up thesis targets PI niches running 35% margins with "
+                                   'AI-driven cost cuts',
+                                   'The PE Podcast ([R60PdSP1C24 @ 00:02:16])'],
+                                  ['Funder ticket size and coverage test',
+                                   '$1-1.5M minimum, $5-15M wheelhouse, case value 8-10x the commitment',
+                                   "Size the ask so the claim value clears the funder's coverage multiple",
+                                   'OffshoreAlert ([rQPZlRgHcfE @ 00:11:07])'],
+                                  ['Mass-tort secured note spread for investors',
+                                   'Funder charges 15 and passes 12 to investors, secured against attorney '
+                                   'fees',
+                                   'Valiant writes 24-month late-stage post-bellwether notes targeting '
+                                   'about 1.5x collateral',
+                                   'Alt Funds Network ([FQLjhMdShl0 @ 00:12:03])'],
+                                  ['Burford default return waterfall structure',
+                                   'Capital back first, time-based multiple from about 0.5x, then share of '
+                                   'net recovery',
+                                   'On $10M deployed, model $10M back plus roughly $5M time-based before '
+                                   'the back end',
+                                   'TALKSONLAW ([1kAfGIkF10g @ 00:27:21])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Deal-Desk Edges From the Practitioners',
+                           'body': 'Small drafting and process choices that the speakers say separate '
+                                   'clean closings from stalled ones.',
+                           'items': ['Re-price the MSO fee forward-looking only and refresh the fairness '
+                                     "analysis each time; an annual cadence 'seems more or less sensible' "
+                                     '[Confido Legal — 5TjsKzLtyc4 @ 00:24:35]',
+                                     'Build the MSO valuation vertical by vertical, marketing, HR and so '
+                                     'on; fair market value is not required by the rules but works as a '
+                                     'defense [Mattern LLC — 8wwcTCIWOXM @ 00:29:10]',
+                                     'With only about 10 commercial funders and repeat business '
+                                     "dominating, deals are won at 'step two' on speed, reliability and "
+                                     'lack of control [The National Law Review — 9teRv9eFpEc @ 00:32:40]',
+                                     'Demand worked payout examples at different outcomes in the funding '
+                                     'contract, since low-but-positive results like a $7M verdict on a '
+                                     '$100M case are the problem scenario [TALKSONLAW — 1kAfGIkF10g @ '
+                                     '00:55:54]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Form the MSO and move non-legal assets',
+                              'action': 'Stand up a Delaware LLC and transfer non-lawyer staff, equipment, '
+                                        'IP and founder name, image and likeness.',
+                              'detail': "The Mattern walkthrough starts with 'typically just a Delaware "
+                                        "LLC,' then moves non-legal assets across before any investor buys "
+                                        'in [Mattern LLC — 8wwcTCIWOXM @ 00:04:03]'},
+                             {'step': 2,
+                              'title': 'Ring-fence the legal functions',
+                              'action': 'Keep lawyers, engagement letters, trust accounts, hiring and '
+                                        'firing, case selection and settlement inside the firm.',
+                              'detail': 'Rich: HR and accounting can move to the MSO, while hiring and '
+                                        'firing, case selection and settlement stay with the firm [Confido '
+                                        'Legal — 5TjsKzLtyc4 @ 00:18:14]'},
+                             {'step': 3,
+                              'title': 'Set a fixed or cost-plus services fee',
+                              'action': 'Price the business services agreement as a fixed monthly fee or '
+                                        'cost-plus, validated by a third-party fairness opinion.',
+                              'detail': 'Typical cost-plus markups are 10-15%, and no percentage of '
+                                        'profits or revenue is allowed [Confido Legal — 5TjsKzLtyc4 @ '
+                                        '00:25:36]'},
+                             {'step': 4,
+                              'title': 'Sell MSO equity with retention hooks and a plan',
+                              'action': 'Layer rollover equity, forfeiture and five-year cash vesting, and '
+                                        'arrive with a deployment plan for the capital.',
+                              'detail': 'Rollover equity and vesting substitute for unenforceable '
+                                        "non-competes, and a missing performance plan is a 'yellow flag' "
+                                        '[Mattern LLC — 8wwcTCIWOXM @ 00:15:04]'}]},
+              {'heading': '3. Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over what an investor actually buys. Trisha Rich of '
+                              "Holland & Knight calls an MSO 'simply a vendor' and says nobody is buying "
+                              'law firms; the MSO cannot hire or fire lawyers, set settlement parameters, '
+                              'or control client intake [5TjsKzLtyc4 @ 00:03:09]. Law firm owner Joe '
+                              'Prencipe pitches the same vehicle to PE, strategic acquirers, and family '
+                              "offices as the opportunity 'to buy all or part of a law firm,' backed by "
+                              'partners averaging $4M, PI niches running 35% margins, and a roll-up thesis '
+                              'of buying in at 5x EBITDA and expanding into nearby cities [R60PdSP1C24 @ '
+                              '00:00:28]. The healthcare precedent splits the room too. Tim Mackey of '
+                              'Vista Consulting, sell-side advisor on the biggest public deal, warns that '
+                              'PE in medicine 15 to 20 years ago degraded service and that the fear is '
+                              "'profits over plaintiffs,' while insisting lawyers retain all legal control "
+                              'and Vista will demand alignment [lgURVgZL9IY @ 00:11:11]. Rich answers that '
+                              "critics cite medical MSOs 'on purpose' as the worst case and that "
+                              'accounting, where deals trade around 15x EBITDA against 4 to 8x for law '
+                              'firms, is the honest analog [5TjsKzLtyc4 @ 00:09:49]. Same legal skeleton, '
+                              'two sales pitches: vendor contract on one side, ownership stake with a '
+                              'growth mandate on the other.',
+                              'Capital providers split just as hard on whether to lend or to own. Alex '
+                              'Garnier of North Wall Capital wants downside protection: a loan to the law '
+                              'firm, debt repaid before any profit share, diversification, and '
+                              'near-settlement cases to offset duration, and warns that single-case '
+                              'funding tempts firms to run up costs [QpKDhqASBqM @ 00:03:31]. On '
+                              'securitization the same Brown Rudnick panel fractured: Garnier says yes '
+                              'eventually, at hundreds of millions minimum with North Wall taking the '
+                              "junior tranche, while Burford's Leo disagrees, citing disclosure, size, and "
+                              'the point that capital is not the problem [QpKDhqASBqM @ 00:56:17]. Josh '
+                              'Meltzer of Infinitive, who runs an IP Finance group, attacks the comfort of '
+                              'law-firm lending from another angle: PIK interest erodes LTV and '
+                              "over-collateralization every year until the loan is 'Equity like' "
+                              '[l-KmnCtiBMg @ 00:13:12]. David Perla, after about 8 years at Burford, goes '
+                              "further and says litigation finance already 'behaves like an equity "
+                              "investment,' and Burford takes minority, passive law-firm stakes with no "
+                              'mandate to sell and pitches itself as a permanent partner rather than a 3 '
+                              'to 6 year PE seller [CdJKmwCQvOw @ 00:25:26]. Lender, quasi-equity, or '
+                              'permanent partner: that is the real choice buried in the term sheet.',
+                              'Nobody agrees on how far up-market this goes or who should bother. Lucian '
+                              "Pera calls an MSO 'a tool… not for everyone,' rejects 'management by "
+                              "inflight magazine,' demands a business plan first, and says a bank or "
+                              "'uncle Jim' may be the easier money [wXttJe-HCVM @ 00:08:47]. Rich runs the "
+                              'same filter from the deal desk: if the capital would just sit in savings, '
+                              "an MSO 'might not be for you,' even though about two-thirds of the roughly "
+                              '50 live deals on that Holland & Knight team are consumer-facing SSDI and '
+                              'plaintiff PI shops [kF2XWwBObZ8 @ 00:08:10]. On scale, the Jon and Marc '
+                              'panel predicts hourly and Am Law 100 MSOs, then hundreds of deals followed '
+                              'by thousands, and flags that an MSO exit sells a service provider while an '
+                              'ABS exit sells a law firm [U2xFBBUm_IU @ 00:39:41]. David Perla pushes back '
+                              'on the big-firm hype: boutiques are the early movers over 3 to 5 years, big '
+                              'checks need firms with 1 to 5 owners, there is no critical mass of Am Law '
+                              "100/200 PE deals, and Perla rejects a podcast guest's call for 3 to 5 Am "
+                              'Law 200 equity deals in 2026 backed by sovereign wealth funds [CdJKmwCQvOw '
+                              '@ 00:47:06]. Pera reduces the ABS-versus-MSO fork to a single question: how '
+                              'much control do you want.'],
+               'table': {'caption': 'Side-by-side playbooks where named practitioners openly split on '
+                                    'MSOs, PE, and portfolio funding.',
+                         'headers': ['Fault Line', 'Camp A Playbook', 'Camp B Playbook', 'Expert Source'],
+                         'rows': [['What the investor is actually buying in an MSO deal',
+                                   'Rich: the MSO is simply a vendor and nobody is buying law firms or '
+                                   'controlling lawyers',
+                                   'Prencipe: the MSO is the opportunity to buy all or part of a law firm, '
+                                   'then roll up nearby cities',
+                                   'Confido Legal ([5TjsKzLtyc4 @ 00:03:09]); The PE Podcast ([R60PdSP1C24 '
+                                   '@ 00:00:28])'],
+                                  ['Which industry precedent predicts how law-firm MSOs will behave',
+                                   'Mackey: PE in medicine degraded service 15 to 20 years ago, so the '
+                                   'fear is profits over plaintiffs',
+                                   'Rich: critics cite medical MSOs on purpose; accounting at about 15x '
+                                   'EBITDA is the real analog',
+                                   'Optimize My Firm ([lgURVgZL9IY @ 00:11:11]); Confido Legal '
+                                   '([5TjsKzLtyc4 @ 00:09:49])'],
+                                  ['How the MSO service fee gets set and later reset',
+                                   'Holland & Knight: business services agreement at a monthly fee, '
+                                   'fairness validated, moving as much economics as defensible',
+                                   'Esquire Bank panel: outside valuation, fixed monthly amount, '
+                                   're-evaluated yearly or sooner as MSO headcount grows',
+                                   'Mattern LLC ([8wwcTCIWOXM @ 00:06:30]); Esquire Bank ([epFmlanyChw @ '
+                                   '00:01:08])'],
+                                  ['Lending to law firms versus taking equity-like exposure',
+                                   'Garnier: loan to the firm, debt repaid before profit share, '
+                                   'near-settlement cases to offset duration',
+                                   'Perla: litigation finance already behaves like equity; Burford takes '
+                                   'minority passive stakes as a permanent partner',
+                                   'Brown Rudnick LLP ([QpKDhqASBqM @ 00:03:31]); The Future Is Bright '
+                                   'Podcast ([CdJKmwCQvOw @ 00:25:26])'],
+                                  ['Whether portfolios of legal assets will ever be securitized',
+                                   'Garnier: yes eventually, hundreds of millions minimum, with North Wall '
+                                   'willing to take the junior tranche',
+                                   'Leo of Burford: no, citing disclosure, deal size, and the fact that '
+                                   'capital is not the problem',
+                                   'Brown Rudnick LLP ([QpKDhqASBqM @ 00:56:17])'],
+                                  ['How far up-market PE money reaches in the next cycle',
+                                   'Jon and Marc panel: hourly and Am Law 100 MSOs are coming, hundreds of '
+                                   'deals then thousands',
+                                   'Perla: boutiques move first and there is no critical mass of Am Law '
+                                   '100/200 PE deals yet',
+                                   'Jon and Marc ([U2xFBBUm_IU @ 00:39:41]); The Future Is Bright Podcast '
+                                   '([CdJKmwCQvOw @ 00:47:06])'],
+                                  ['Whether funders should accept court disclosure of their funding',
+                                   'Emily Slater of Burford accepts disclosure with work-product '
+                                   'protection and notes the UK treats it as routine',
+                                   'Dave Kirstine of Bentham stays in the shadows because of discovery; '
+                                   'Michael Weiss calls the push posturing',
+                                   'OffshoreAlert ([rQPZlRgHcfE @ 00:40:25]); OffshoreAlert ([rQPZlRgHcfE '
+                                   '@ 00:43:10])']]}},
+              {'heading': '4. Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first trap is assuming the money locks the lawyers in place. Josh Port '
+                              'of Holland & Knight says lawyers cannot be bound by non-competes, even in '
+                              "an asset sale, the risk cannot be eliminated, and there are 'no silver "
+                              "bullets' [5TjsKzLtyc4 @ 00:06:46]. On the Mattern LLC session, the Holland "
+                              '& Knight workaround stack is rollover equity, equity forfeiture, and 5-year '
+                              'vesting of cash, with a lawyer who quits in year two returning 60%, plus '
+                              "name/image/likeness licenses that keep the founder's brand inside the MSO "
+                              "[8wwcTCIWOXM @ 00:19:20]. Rich's red-flag list for deal drafts catches the "
+                              'overreach: personal liability for unpaid MSO fees should be restructured as '
+                              'deferred fees, and non-solicitation covenants covering lawyers or clients '
+                              'violate Rule 5.6 [5TjsKzLtyc4 @ 00:42:21]. The fee itself is the second '
+                              'tripwire. No percentage of profits or revenue is allowed; fees must be '
+                              'fixed monthly or cost-plus, typically at 10 to 15% markups, backed by a '
+                              'third-party fairness opinion, and any change should be forward-looking with '
+                              'the fairness analysis refreshed [5TjsKzLtyc4 @ 00:23:21]. Rich says there '
+                              "are no hard and fast rules on cadence, but annual resets seem 'more or less "
+                              "sensible.' Each clause is where a sloppy draft breaks the ethics rules the "
+                              'whole structure leans on.',
+                              'Control and cash discipline produce the war stories. The Jon and Marc panel '
+                              'points to the UnitedLex bankruptcy, where the court found the MSO exerted '
+                              'improper control, and insists majority and minority rights be contracted up '
+                              'front rather than improvised later [U2xFBBUm_IU @ 00:17:08]. On the Mattern '
+                              'LLC session, Holland & Knight warns that taking the money without a plan '
+                              "invites 'a tremendous amount of pressure' from equity partners to pay it "
+                              'out in compensation, and an investor arriving without a performance plan is '
+                              "a 'yellow flag' [8wwcTCIWOXM @ 00:39:23]. Mass torts carry their own "
+                              'cash-flow problem: the same Jon and Marc panel says the challenge for PE is '
+                              "'the unpredictability of cash flow,' compounded by fund duration, so far "
+                              "only 'bucket B' deals, PI firms with systematic mass-tort programs, are "
+                              'getting done, with one closing within weeks [U2xFBBUm_IU @ 00:08:35]. '
+                              'Marketing economics can sink the roll-up thesis from below: the panel '
+                              'reports $300-per-click bidding pricing out small firms, cost per case '
+                              'rising, and almost no PI clients still running traditional Google Ads '
+                              '[U2xFBBUm_IU @ 00:38:11]. The squeeze runs both ways, because regional '
+                              "firms also face 'Death Star' capital as Morgan & Morgan and Sweet James "
+                              "enter markets, and the panel calls PE money 'an accelerant' for that "
+                              'pressure.',
+                              'On the litigation finance side, the failures are pricing and duration '
+                              'errors. Judgment preservation insurance was born in 2021 and gone by 2023, '
+                              "mispriced because appellate risk runs about 50/50; 'So the product is now "
+                              "in my view gone,' says a National Law Review panelist, while Stewart "
+                              'Ackerly of Statera warns post-judgment collection is riskier than litigants '
+                              'assume [9teRv9eFpEc @ 01:01:19]. Josh Meltzer runs the IRR check: making '
+                              "two times your money over more than 10 years is 'less good on an irr basis' "
+                              '[l-KmnCtiBMg @ 00:09:32]. Chris Bogart of Burford flags low-but-positive '
+                              'outcomes, such as a $7M verdict or $11M settlement on a case expected to be '
+                              "worth $100M, as the problem case, and Burford's contracts carry worked "
+                              'payout examples at different outcome levels; Bogart also concedes $5M SME '
+                              'claims are effectively squeezed out [1kAfGIkF10g @ 00:55:54]. Sean Campbell '
+                              'of Valiant, selling 24-month notes at 15% per year secured at roughly 1.5x '
+                              'collateral against post-bellwether mass-tort fees, has not yet found a '
+                              "post-bellwether loss, but says that if one happens it is 'game over,' and "
+                              "investor statements simply rise 'a little over a percent' a month with no "
+                              'mark-to-market [FQLjhMdShl0 @ 00:24:22].'],
+               'table': {'caption': 'Firsthand traps, reversals, and economics checks reported by named '
+                                    'MSO and litigation finance practitioners.',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Reported',
+                                     'Economics or Deal Check',
+                                     'Expert Source'],
+                         'rows': [['Assuming the MSO deal locks departing lawyers in place',
+                                   'No non-competes for lawyers even in an asset sale, and no silver '
+                                   'bullets exist',
+                                   'Use rollover equity, forfeiture, and 5-year cash vesting with 60% '
+                                   'returned in year two',
+                                   'Confido Legal ([5TjsKzLtyc4 @ 00:06:46]); Mattern LLC ([8wwcTCIWOXM @ '
+                                   '00:19:20])'],
+                                  ['MSO exerting control over the law firm itself',
+                                   'In the UnitedLex bankruptcy the court found the MSO exerted improper '
+                                   'control',
+                                   'Contract majority and minority rights up front; hiring, case '
+                                   'selection, and settlement stay with the firm',
+                                   'Jon and Marc ([U2xFBBUm_IU @ 00:17:08]); Confido Legal ([5TjsKzLtyc4 @ '
+                                   '00:18:14])'],
+                                  ['MSO fee pegged to firm revenue or profits',
+                                   'Percentage fees are barred, and fee-splitting limits cap how much '
+                                   'value the MSO extracts',
+                                   'Fixed monthly or cost-plus at 10 to 15%, third-party fairness opinion, '
+                                   'forward-looking changes only',
+                                   'Confido Legal ([5TjsKzLtyc4 @ 00:23:21]); Jon and Marc ([U2xFBBUm_IU @ '
+                                   '00:14:41])'],
+                                  ['Taking investor capital without an operating plan',
+                                   'Equity partners apply tremendous pressure to pay the money out as '
+                                   'compensation',
+                                   'An investor arriving without a performance plan is a yellow flag '
+                                   'before signing',
+                                   'Mattern LLC ([8wwcTCIWOXM @ 00:39:23]); Mattern LLC ([8wwcTCIWOXM @ '
+                                   '00:42:49])'],
+                                  ['PIK loans against squishy contingency fee inventory',
+                                   'PIK interest erodes LTV and over-collateralization every year until '
+                                   'loans turn equity-like',
+                                   'Motor-vehicle PI underwrites on historical revenue; mass-tort '
+                                   'marketing firms may have no revenue',
+                                   'Slarskey LLC ([l-KmnCtiBMg @ 00:13:12]); Slarskey LLC ([l-KmnCtiBMg @ '
+                                   '00:11:54])'],
+                                  ['Insuring appellate risk that the market could not price',
+                                   'Judgment preservation insurance was born in 2021 and gone by 2023 at '
+                                   'roughly 50/50 appellate odds',
+                                   'Price post-judgment collection as riskier than litigants usually '
+                                   'assume it to be',
+                                   'The National Law Review ([9teRv9eFpEc @ 01:00:15]); The National Law '
+                                   'Review ([9teRv9eFpEc @ 00:43:58])'],
+                                  ['Low-but-positive outcomes on big-ticket funded cases',
+                                   'A $7M verdict or $11M settlement on a case expected to be worth $100M',
+                                   'Burford writes worked payout examples at different outcomes into its '
+                                   'funding contracts',
+                                   'TALKSONLAW ([1kAfGIkF10g @ 00:55:54])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Kill These Before Anyone Signs',
+                           'body': 'Every item below is a clause or condition practitioners flagged in '
+                                   'live MSO and funding deals. Clear all four or the deal goes back for '
+                                   'redraft.',
+                           'items': ['Strip non-competes, lawyer or client non-solicits, and personal '
+                                     'liability for unpaid MSO fees; convert unpaid fees into deferred '
+                                     'fees [Confido Legal — 5TjsKzLtyc4 @ 00:42:21].',
+                                     'Confirm the MSO fee is fixed monthly or cost-plus with a third-party '
+                                     'fairness opinion and no percentage of revenue or profits [Confido '
+                                     'Legal — 5TjsKzLtyc4 @ 00:23:21].',
+                                     'Write the capital deployment plan before closing, because no plan '
+                                     'means equity partners push to pay the money out as compensation '
+                                     '[Mattern LLC — 8wwcTCIWOXM @ 00:39:23].',
+                                     'Contract majority and minority rights up front and keep hiring, '
+                                     'firing, case selection, and settlement inside the firm, remembering '
+                                     'the UnitedLex improper-control finding [Jon and Marc — U2xFBBUm_IU @ '
+                                     '00:17:08].']}}],
+ 'pull_quote': "'There's no magic structure that makes the capital cheaper.' — attributed to Brown Rudnick "
+               'LLP (QpKDhqASBqM @ 00:43:22).',
+ 'diagram_id': 'diag-06',
+ 'action_checklist': ['Map which assets move: non-lawyer staff, equipment, IP, and founder '
+                      'name/image/likeness go into a Delaware LLC MSO, while lawyers, engagement letters, '
+                      'and trust accounts stay in the firm [Mattern LLC — 8wwcTCIWOXM @ 00:05:26].',
+                      'Commission an outside valuation, set a fixed monthly or cost-plus fee not tied to '
+                      'firm revenue, and re-evaluate it yearly or sooner as MSO headcount grows [Esquire '
+                      'Bank — epFmlanyChw @ 00:01:08].',
+                      'Build the departure defense with rollover equity, equity forfeiture, and 5-year '
+                      'cash vesting before the investor wires money [Mattern LLC — 8wwcTCIWOXM @ '
+                      '00:19:20].',
+                      'Prep the exit by cutting founder reliance, logging a couple of years of track '
+                      'record, moving to cloud CMS, and setting key-person succession [Jon and Marc — '
+                      'U2xFBBUm_IU @ 00:21:38].',
+                      'Run funder outreach as a rifle, not a shotgun: anonymized teaser, CA, CIM, term '
+                      'sheet, diligence, then funding agreement [The National Law Review — 9teRv9eFpEc @ '
+                      '00:26:04].',
+                      "Size the ask to the funder's floor: Bentham's minimum is $1 to 1.5M with a $5 to "
+                      '15M wheelhouse and case value at 8 to 10x the commitment [OffshoreAlert — '
+                      'rQPZlRgHcfE @ 00:11:07].'],
+ 'statutory_citations': [{'title': 'Confido Legal — Ep 70 - Private Equity, MSOs, and the Ethics of Law '
+                                   'Firm Ownership [00:23:21]',
+                          'url': 'https://www.youtube.com/watch?v=5TjsKzLtyc4&t=1401s',
+                          'relevance': 'Primary practitioner testimony on MSO fee structures, fixed and '
+                                       'cost-plus pricing, and fairness opinions.'},
+                         {'title': 'Mattern LLC — Law Firm MSOs 101: How Private Equity and Managed '
+                                   'Services Drive Legal Growth [00:19:20]',
+                          'url': 'https://www.youtube.com/watch?v=8wwcTCIWOXM&t=1160s',
+                          'relevance': 'Primary practitioner testimony on equity forfeiture, cash vesting, '
+                                       'and lawyer departure risk in MSO deals.'},
+                         {'title': 'Jon and Marc — The Private Equity Shift: Turning Your Law Firm From a '
+                                   'Founder-Led Practice to a Scalable Asset [00:17:08]',
+                          'url': 'https://www.youtube.com/watch?v=U2xFBBUm_IU&t=1028s',
+                          'relevance': 'Primary practitioner testimony on the UnitedLex improper-control '
+                                       'finding and contracting control rights up front.'},
+                         {'title': 'TALKSONLAW — Is a Lawsuit a Financial Asset? Inside Litigation Finance '
+                                   '[00:27:21]',
+                          'url': 'https://www.youtube.com/watch?v=1kAfGIkF10g&t=1641s',
+                          'relevance': "Primary practitioner testimony on Burford's default deal "
+                                       'waterfall, time-based multiples, and outcome-based payouts.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '5TjsKzLtyc4',
+                       'title': 'Ep 70 - Private Equity, MSOs, and the Ethics of Law Firm Ownership',
+                       'channel': 'Confido Legal',
+                       'author': 'Confido Legal',
+                       'text': "We're still doing deals in Colorado.",
+                       'tip': "We're still doing deals in Colorado.",
+                       'timestamp': 1667,
+                       'timestamp_seconds': 1667,
+                       'timestamp_label': '[00:27:47]',
+                       'url': 'https://www.youtube.com/watch?v=5TjsKzLtyc4&t=1667s',
+                       'markdown': '[00:27:47](https://www.youtube.com/watch?v=5TjsKzLtyc4&t=1667s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8wwcTCIWOXM',
+                       'title': 'Law Firm MSOs 101: How Private Equity and Managed Services Drive Legal '
+                                'Growth',
+                       'channel': 'Mattern LLC',
+                       'author': 'Mattern LLC',
+                       'text': "Because for one thing, if you take the money in and you don't have a plan, "
+                               "there's going to be a tremendous amount of pressure on you from your "
+                               'equity partners to pay that out in compensation.',
+                       'tip': "Because for one thing, if you take the money in and you don't have a plan, "
+                              "there's going to be a tremendous amount of pressure on you from your equity "
+                              'partners to pay that out in compensation.',
+                       'timestamp': 2363,
+                       'timestamp_seconds': 2363,
+                       'timestamp_label': '[00:39:23]',
+                       'url': 'https://www.youtube.com/watch?v=8wwcTCIWOXM&t=2363s',
+                       'markdown': '[00:39:23](https://www.youtube.com/watch?v=8wwcTCIWOXM&t=2363s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wXttJe-HCVM',
+                       'title': 'Law Firms, PE, and MSOs: A Legal Ethics Conversation with Lucian Pera',
+                       'channel': 'The Future Is Bright Podcast',
+                       'author': 'The Future Is Bright Podcast',
+                       'text': "We're going through a slow motion revolution.",
+                       'tip': "We're going through a slow motion revolution.",
+                       'timestamp': 1435,
+                       'timestamp_seconds': 1435,
+                       'timestamp_label': '[00:23:55]',
+                       'url': 'https://www.youtube.com/watch?v=wXttJe-HCVM&t=1435s',
+                       'markdown': '[00:23:55](https://www.youtube.com/watch?v=wXttJe-HCVM&t=1435s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9teRv9eFpEc',
+                       'title': 'Litigation Finance Market Process',
+                       'channel': 'The National Law Review',
+                       'author': 'The National Law Review',
+                       'text': 'So the product is now in my view gone.',
+                       'tip': 'So the product is now in my view gone.',
+                       'timestamp': 3679,
+                       'timestamp_seconds': 3679,
+                       'timestamp_label': '[01:01:19]',
+                       'url': 'https://www.youtube.com/watch?v=9teRv9eFpEc&t=3679s',
+                       'markdown': '[01:01:19](https://www.youtube.com/watch?v=9teRv9eFpEc&t=3679s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9teRv9eFpEc',
+                       'title': 'Litigation Finance Market Process',
+                       'channel': 'The National Law Review',
+                       'author': 'The National Law Review',
+                       'text': "But if you don't get court approval for it, then you don't have a deal at "
+                               'all.',
+                       'tip': "But if you don't get court approval for it, then you don't have a deal at "
+                              'all.',
+                       'timestamp': 3826,
+                       'timestamp_seconds': 3826,
+                       'timestamp_label': '[01:03:46]',
+                       'url': 'https://www.youtube.com/watch?v=9teRv9eFpEc&t=3826s',
+                       'markdown': '[01:03:46](https://www.youtube.com/watch?v=9teRv9eFpEc&t=3826s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rQPZlRgHcfE',
+                       'title': 'How Litigation Funding Is Shaking Up The Legal Industry',
+                       'channel': 'OffshoreAlert',
+                       'author': 'OffshoreAlert',
+                       'text': 'Litigation funding is even if you get lucky is a slow burn at best.',
+                       'tip': 'Litigation funding is even if you get lucky is a slow burn at best.',
+                       'timestamp': 2017,
+                       'timestamp_seconds': 2017,
+                       'timestamp_label': '[00:33:37]',
+                       'url': 'https://www.youtube.com/watch?v=rQPZlRgHcfE&t=2017s',
+                       'markdown': '[00:33:37](https://www.youtube.com/watch?v=rQPZlRgHcfE&t=2017s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FQLjhMdShl0',
+                       'title': 'Litigation Finance Demystified: Investment Trends & Future Outlook | '
+                                'Interview with Sean Campbell',
+                       'channel': 'Alt Funds Network',
+                       'author': 'Alt Funds Network',
+                       'text': "We shoot for 1.5, one and a half times, to secure that; typically it's "
+                               'somewhere right in that area, and the one I was looking at this morning '
+                               'was 1.54.',
+                       'tip': "We shoot for 1.5, one and a half times, to secure that; typically it's "
+                              'somewhere right in that area, and the one I was looking at this morning was '
+                              '1.54.',
+                       'timestamp': 1300,
+                       'timestamp_seconds': 1300,
+                       'timestamp_label': '[00:21:40]',
+                       'url': 'https://www.youtube.com/watch?v=FQLjhMdShl0&t=1300s',
+                       'markdown': '[00:21:40](https://www.youtube.com/watch?v=FQLjhMdShl0&t=1300s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QpKDhqASBqM',
+                       'title': 'Portfolio and Law Firm Financing - European Litigation Funding Conference '
+                                '2023',
+                       'channel': 'Brown Rudnick LLP',
+                       'author': 'Brown Rudnick LLP',
+                       'text': "There's no magic structure that makes the capital cheaper.",
+                       'tip': "There's no magic structure that makes the capital cheaper.",
+                       'timestamp': 2602,
+                       'timestamp_seconds': 2602,
+                       'timestamp_label': '[00:43:22]',
+                       'url': 'https://www.youtube.com/watch?v=QpKDhqASBqM&t=2602s',
+                       'markdown': '[00:43:22](https://www.youtube.com/watch?v=QpKDhqASBqM&t=2602s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lgURVgZL9IY',
+                       'title': 'MSOs, Your Market, And Your Choice - PIMM 151',
+                       'channel': 'Optimize My Firm',
+                       'author': 'Optimize My Firm',
+                       'text': 'And again, all that being said, an MSA structure is not right for every '
+                               'practitioner.',
+                       'tip': 'And again, all that being said, an MSA structure is not right for every '
+                              'practitioner.',
+                       'timestamp': 872,
+                       'timestamp_seconds': 872,
+                       'timestamp_label': '[00:14:32]',
+                       'url': 'https://www.youtube.com/watch?v=lgURVgZL9IY&t=872s',
+                       'markdown': '[00:14:32](https://www.youtube.com/watch?v=lgURVgZL9IY&t=872s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'R60PdSP1C24',
+                       'title': 'What is a law firm MSO? | Joe Prencipe',
+                       'channel': 'The PE Podcast',
+                       'author': 'The PE Podcast',
+                       'text': 'You can see a lot of personal injury niches are 35% profitability.',
+                       'tip': 'You can see a lot of personal injury niches are 35% profitability.',
+                       'timestamp': 107,
+                       'timestamp_seconds': 107,
+                       'timestamp_label': '[00:01:47]',
+                       'url': 'https://www.youtube.com/watch?v=R60PdSP1C24&t=107s',
+                       'markdown': '[00:01:47](https://www.youtube.com/watch?v=R60PdSP1C24&t=107s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'l-KmnCtiBMg',
+                       'title': 'Litigation Funding Pt.1: The Investor Perspective',
+                       'channel': 'Slarskey LLC',
+                       'author': 'Slarskey LLC',
+                       'text': 'But you know by definition a law firm portfolio deal is not diversified by '
+                               'law firm.',
+                       'tip': 'But you know by definition a law firm portfolio deal is not diversified by '
+                              'law firm.',
+                       'timestamp': 1162,
+                       'timestamp_seconds': 1162,
+                       'timestamp_label': '[00:19:22]',
+                       'url': 'https://www.youtube.com/watch?v=l-KmnCtiBMg&t=1162s',
+                       'markdown': '[00:19:22](https://www.youtube.com/watch?v=l-KmnCtiBMg&t=1162s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tAaeP6Z-hK0',
+                       'title': '2015 Fall Conference: Litigation Funding: Panel 3',
+                       'channel': 'NYU School of Law',
+                       'author': 'NYU School of Law',
+                       'text': 'Also and importantly, you will only reimburse in case of success, which '
+                               'means that the fund essentially assumes the risk of litigation.',
+                       'tip': 'Also and importantly, you will only reimburse in case of success, which '
+                              'means that the fund essentially assumes the risk of litigation.',
+                       'timestamp': 1153,
+                       'timestamp_seconds': 1153,
+                       'timestamp_label': '[00:19:13]',
+                       'url': 'https://www.youtube.com/watch?v=tAaeP6Z-hK0&t=1153s',
+                       'markdown': '[00:19:13](https://www.youtube.com/watch?v=tAaeP6Z-hK0&t=1153s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'U2xFBBUm_IU',
+                       'title': 'The Private Equity Shift: Turning Your Law Firm From a Founder-Led '
+                                'Practice to a Scalable Asset',
+                       'channel': 'Jon and Marc',
+                       'author': 'Jon and Marc',
+                       'text': 'The challenge I think for private equity with mass tort firms is the '
+                               'unpredictability of cash flow.',
+                       'tip': 'The challenge I think for private equity with mass tort firms is the '
+                              'unpredictability of cash flow.',
+                       'timestamp': 515,
+                       'timestamp_seconds': 515,
+                       'timestamp_label': '[00:08:35]',
+                       'url': 'https://www.youtube.com/watch?v=U2xFBBUm_IU&t=515s',
+                       'markdown': '[00:08:35](https://www.youtube.com/watch?v=U2xFBBUm_IU&t=515s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CdJKmwCQvOw',
+                       'title': 'David Perla on Litigation Finance, Law Firm Investment, and the Future of '
+                                'Legal Talent',
+                       'channel': 'The Future Is Bright Podcast',
+                       'author': 'The Future Is Bright Podcast',
+                       'text': "So, on a litigation finance deal, we really don't do much smaller than 5 "
+                               'to 10 million.',
+                       'tip': "So, on a litigation finance deal, we really don't do much smaller than 5 to "
+                              '10 million.',
+                       'timestamp': 1599,
+                       'timestamp_seconds': 1599,
+                       'timestamp_label': '[00:26:39]',
+                       'url': 'https://www.youtube.com/watch?v=CdJKmwCQvOw&t=1599s',
+                       'markdown': '[00:26:39](https://www.youtube.com/watch?v=CdJKmwCQvOw&t=1599s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1kAfGIkF10g',
+                       'title': 'Is a Lawsuit a Financial Asset? Inside Litigation Finance',
+                       'channel': 'TALKSONLAW',
+                       'author': 'TALKSONLAW',
+                       'text': 'All of the capital that we put out is non-recourse.',
+                       'tip': 'All of the capital that we put out is non-recourse.',
+                       'timestamp': 2120,
+                       'timestamp_seconds': 2120,
+                       'timestamp_label': '[00:35:20]',
+                       'url': 'https://www.youtube.com/watch?v=1kAfGIkF10g&t=2120s',
+                       'markdown': '[00:35:20](https://www.youtube.com/watch?v=1kAfGIkF10g&t=2120s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kF2XWwBObZ8',
+                       'title': 'The MSO Boom |  Featuring Carly Levin and Trisha Rich | Legal(tech) '
+                                'Briefs 2026',
+                       'channel': 'The LegalTech Fund',
+                       'author': 'The LegalTech Fund',
+                       'text': 'The good news is is nobody has to do it right.',
+                       'tip': 'The good news is is nobody has to do it right.',
+                       'timestamp': 1050,
+                       'timestamp_seconds': 1050,
+                       'timestamp_label': '[00:17:30]',
+                       'url': 'https://www.youtube.com/watch?v=kF2XWwBObZ8&t=1050s',
+                       'markdown': '[00:17:30](https://www.youtube.com/watch?v=kF2XWwBObZ8&t=1050s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'epFmlanyChw',
+                       'title': 'How MSOs Work for Contingency Fee Law Firms',
+                       'channel': 'Esquire Bank',
+                       'author': 'Esquire Bank',
+                       'text': "So, you know, using a third-party service at a rate is what it's all "
+                               'about.',
+                       'tip': "So, you know, using a third-party service at a rate is what it's all about.",
+                       'timestamp': 104,
+                       'timestamp_seconds': 104,
+                       'timestamp_label': '[00:01:44]',
+                       'url': 'https://www.youtube.com/watch?v=epFmlanyChw&t=104s',
+                       'markdown': '[00:01:44](https://www.youtube.com/watch?v=epFmlanyChw&t=104s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'}]}

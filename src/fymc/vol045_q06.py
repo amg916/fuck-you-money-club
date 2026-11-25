@@ -1,677 +1,827 @@
 from __future__ import annotations
 
-CHAPTER_6 = {
-    "id": "Q6",
-    "chapter_id": "Q6",
-    "chapter_number": 6,
-    "question_number": 6,
-    "slug": "sourcing-demand-mining-and-first-idr-recovery-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in no surprises act (idr) medical arbitration & out-of-network recovery, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (1–4 months)?",
-    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
-    "title": "Sourcing, Demand Mining & Landing Your First Deals",
-    "subtitle": "Mine NPPES, CMS Dispute Reports and Practice Transitions; Qualify ERISA Jurisdiction; Convert Protected Remittance Audits into Cash-Based Recovery Mandates",
-    "layout_template": "step_by_step_sop",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #45, No Surprises Act (IDR) Medical Arbitration & Out-of-Network Recovery, "
-        "holds Rank #09 of 49 and a 94/100 Money-to-Manpower Score. This chapter maps 12 "
-        "sourcing plays into one disciplined acquisition system: identify exposed physician groups, "
-        "verify timely eligible claims, demonstrate recoverable economics, and secure narrow paid "
-        "mandates. Public records establish account-level intent; authorized remittance audits "
-        "establish actual opportunity. The first 3–10 wins mean signed, operationally accepted "
-        "mandates within 1–4 months, not promised arbitration collections. Canonical annual owner "
-        "profit is $33,000 Conservative, $217,150 Base, and $504,000 Scaled. Revenue consists "
-        "only of earned contingency shares on incremental cash after specified deductions. "
-        "Deadline discipline, jurisdiction screening, and payer cash reconciliation protect the "
-        "spread better than indiscriminate filing volume."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$110,000",
-            "context": "Annual earned contingency revenue; excludes baseline provider collections",
-            "note": "30% net margin; $33,000 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$505,000",
-            "context": "Annual earned contingency revenue; excludes baseline provider collections",
-            "note": "43.0% net margin; $217,150 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual earned contingency revenue; excludes baseline provider collections",
-            "note": "56% net margin; $504,000 annual owner net profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Mine account-level intent without confusing public signals with eligible claims",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with independent emergency medicine, anesthesiology, radiology, pathology, "
-                    "and neonatology groups serving facilities where federal surprise-billing protections "
-                    "may apply. Build an account universe from the CMS National Plan and Provider "
-                    "Enumeration System downloadable files and NPI Registry API, then resolve organization "
-                    "names against practice websites and state business registries. An NPI taxonomy identifies "
-                    "a prospect category; it does not establish network status, coverage, standing, or a "
-                    "recoverable dispute. Store organization NPI, specialty, operating states, facility "
-                    "relationships, public business contact, source URL, and retrieval date. Treat the billing "
-                    "manager, revenue-cycle director, and practice administrator as separate buying roles "
-                    "rather than buying three copies of the same lead. Use CMS federal IDR public-use "
-                    "reports to prioritize broad service and payer patterns, never to infer a specific "
-                    "practice's unpaid award. A public hiring notice for an arbitration analyst, a new "
-                    "facility staffing contract, or a billing-vendor transition is a stronger conversation "
-                    "trigger than generic specialty membership. Screen each trigger manually before outreach. "
-                    "A practice that recently moved entirely in-network can look attractive in stale directories "
-                    "while having almost no new federal IDR inventory. Refresh high-priority accounts monthly "
-                    "and preserve historical source snapshots."
-                ),
-                (
-                    "Implement public_record_api_intelligence as a modest, auditable collection pipeline, not "
-                    "an indiscriminate scrape. A scheduled Python urllib job can fetch permitted official "
-                    "feeds, while sqlite3 retains source hashes, timestamps, and deduplication keys. Use "
-                    "county civil dockets for public practice ownership disputes or billing-vendor litigation "
-                    "that indicates operational change; use probate registries only when a publicly documented "
-                    "practice succession creates a legitimate business contact. Unclaimed property ledgers "
-                    "can reveal a provider entity's stale payment address, but those assets are a separate "
-                    "recovery category and must never enter the IDR revenue forecast. Do not extract patient "
-                    "details from court exhibits or assume that public accessibility authorizes unrestricted "
-                    "reuse. A practical research budget is 100 accounts at 12 minutes each, or 20 hours; "
-                    "at an illustrative $40 hourly research cost, account discovery costs $800 before "
-                    "outreach. If access restrictions, unstable interfaces, or missing coverage undermine "
-                    "an API, switch to scheduled bulk FOIA/public-record exports, official data feeds, and "
-                    "low-frequency cached queues. Respect access terms and request only business-level "
-                    "fields. The fallback preserves research continuity, not filing timeliness: statutory "
-                    "clocks must come from authorized claim records, never delayed public-record responses."
-                ),
-                (
-                    "The twelve plays below are a chapter-local sourcing map; only "
-                    "public_record_api_intelligence is a supplied cross-series identifier. Combine them "
-                    "into three queues: immediately contactable practice triggers, partner-introduced accounts, "
-                    "and inbound education requests. Every queue feeds the same qualification process. "
-                    "An HFMA chapter presentation can generate permission-based introductions, while an "
-                    "RBMA educational session may surface radiology groups with fragmented remittance "
-                    "workflows. A billing company is valuable because it can introduce several authorized "
-                    "clients, not because it can disclose every client's records. Require each provider's "
-                    "authorization and the appropriate HIPAA arrangements before receiving protected "
-                    "information. Do not offer percentage referral payments to clinicians or billing vendors "
-                    "without evaluating the actual federal and state restrictions; unpaid introductions "
-                    "avoid making referral compensation the acquisition thesis. At an illustrative 20 "
-                    "accounts per weekly research batch, four batches produce 80 distinct accounts, not "
-                    "80 qualified mandates. Deduplicate across partner lists and events using organization "
-                    "identity rather than contact email. Measure qualified meetings per source and subsequent "
-                    "cash contribution per cohort. Retire a channel after two completed test cohorts if "
-                    "it produces meetings but no timely, eligible, economically workable inventory."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve Mapped Sourcing Plays with Evidence, Unit Tests and Fallbacks",
-                "headers": [
-                    "Mapped sourcing play and intended buyer",
-                    "Observable trigger and evidence to retain",
-                    "Illustrative unit test before expanding spend",
-                    "Failure mode and concrete fallback action",
-                ],
-                "rows": [
-                    [
-                        "public_record_api_intelligence targets physician groups experiencing documented operating changes",
-                        "Retain official docket identifiers and business registry source dates",
-                        "Research 100 accounts for $800 before outreach expense",
-                        "Replace unstable interfaces with scheduled exports and cached queues",
-                    ],
-                    [
-                        "NPPES specialty clustering identifies independent facility-based physician organizations",
-                        "Match organization taxonomy against current practice and facility websites",
-                        "Review 200 records to retain 80 verified organizations",
-                        "Discard stale directory matches after direct organization verification",
-                    ],
-                    [
-                        "CMS dispute-pattern mining prioritizes service categories for account research",
-                        "Retain report period and distinguish disputes from unique providers",
-                        "Test two specialty cohorts with 25 accounts apiece",
-                        "Use aggregate patterns only when provider attribution remains unavailable",
-                    ],
-                    [
-                        "Practice-transition monitoring reaches administrators during billing-system or ownership changes",
-                        "Archive public staffing announcements and named business transition dates",
-                        "Contact ten verified transitions before purchasing additional monitoring",
-                        "Stop outreach when transition leaves no eligible recent inventory",
-                    ],
-                    [
-                        "RCM employment-trigger monitoring identifies groups expanding recovery operations",
-                        "Capture current job advertisements mentioning arbitration or payer disputes",
-                        "Test fifteen hiring triggers against fifteen ordinary specialty leads",
-                        "Offer overflow capacity when internal hiring reduces outsourcing demand",
-                    ],
-                    [
-                        "Billing-vendor introductions reach existing clients through authorized relationship owners",
-                        "Obtain provider-approved introductions without transferring protected claim records",
-                        "Ask three vendors for two appropriate introductions each",
-                        "Use unpaid introductions when proposed referral compensation requires review",
-                    ],
-                    [
-                        "Healthcare counsel introductions surface unresolved payer payment process problems",
-                        "Request business introductions without privileged documents or patient details",
-                        "Hold five counsel meetings seeking two relevant practice introductions",
-                        "Keep counsel independent and separate representation from recovery operations",
-                    ],
-                    [
-                        "Specialty-association teaching attracts administrators seeking deadline-control workflow improvements",
-                        "Use opt-in registrations tied to a practical deadline worksheet",
-                        "Invite thirty administrators and seek five requested follow-up meetings",
-                        "Replace broad webinars with smaller specialty-specific working sessions",
-                    ],
-                    [
-                        "Facility staffing-contract monitoring detects newly responsible physician billing groups",
-                        "Verify announced contract dates and the actual billing organization",
-                        "Research ten contract changes before opening individual account campaigns",
-                        "Reject facility announcements that identify no relevant provider counterparty",
-                    ],
-                    [
-                        "Secure remittance micro-audits convert permission into evidence-based recovery mandates",
-                        "Receive authorized 835 files through contracted protected transfer systems",
-                        "Inspect twenty recent lines before expanding the review scope",
-                        "Stop immediately when deadlines or jurisdiction eliminate workable inventory",
-                    ],
-                    [
-                        "Deadline-calculator inbound captures administrators researching federal dispute timing mechanics",
-                        "Collect business contacts without patient identifiers or uploaded remittances",
-                        "Measure qualified meetings from the first hundred relevant visits",
-                        "Replace calculator conclusions with human verification of source dates",
-                    ],
-                    [
-                        "Existing-client introductions extend trusted operating results to peer practices",
-                        "Request introductions only after verified service and cash reconciliation",
-                        "Ask five satisfied clients for one relevant introduction each",
-                        "Use process references without disclosing another provider's protected records",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Find the operational leak before pitching arbitration volume",
-                "body": (
-                    "Experienced operators prospect for recoverable workflow failures and documented "
-                    "business changes, not merely large out-of-network balances."
-                ),
-                "items": [
-                    "Ask who reconciles initial payment receipt dates; an unowned date field often explains missed initiation windows.",
-                    "Compare organization NPI and contracting entity before merging accounts; one staffing brand can contain several distinct billing groups.",
-                    "Use public IDR reports to select a specialty conversation, then require authorized claim evidence before estimating recoveries.",
-                    "Keep a separate ledger for unclaimed property and ordinary receivables leads so unrelated assets never inflate the federal IDR pipeline.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Score eligibility, deadline runway and collectible contribution before accepting inventory",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Qualification begins with a protected evidence package, not a spreadsheet of billed "
-                    "charges. Execute the service agreement, HIPAA Business Associate Agreement, and access "
-                    "instructions before handling protected health information; extend appropriate obligations "
-                    "to subcontractors. Request a limited recent sample containing the 835 remittance, "
-                    "underlying claim, service date, initial payment or denial receipt evidence, provider "
-                    "and facility identifiers, plan information, and prior negotiation correspondence. "
-                    "An 835 CARC/RARC classifier can identify adjustment patterns, but cannot conclusively "
-                    "determine federal jurisdiction or plan funding. A commercial payer logo does not "
-                    "distinguish its insured products from self-funded administrative-services business. "
-                    "Confirm coverage, applicable state law, service setting, network relationships, and "
-                    "the payment-determination method before calculating an opportunity. Some self-funded "
-                    "plans can opt into specified state arrangements; some services follow an applicable "
-                    "All-Payer Model Agreement. Exclude Medicare and Medicaid inventory from this commercial "
-                    "federal IDR sourcing model and route ordinary contractual disputes elsewhere. The "
-                    "federal mechanism is not a universal underpayment remedy. Record the basis for each "
-                    "eligibility decision and its reviewer. If a missing document could change the "
-                    "jurisdictional result, put the claim in a document-request queue rather than purchasing "
-                    "an arbitration filing on an assumption."
-                ),
-                (
-                    "Build separate states for initial-payment receipt, open-negotiation initiation, negotiation "
-                    "completion, IDR initiation, entity selection, submissions, determination, and cash receipt. "
-                    "Under the federal framework, the open-negotiation notice generally must be initiated "
-                    "within 30 business days after receipt of the initial payment or denial; the negotiation "
-                    "period itself then runs for 30 business days. IDR initiation generally occurs during "
-                    "the four-business-day period beginning after negotiation ends. The four days are an "
-                    "initiation window, not permission to batch unrelated claims. Verify current CMS "
-                    "instructions, applicable extensions, litigation effects, and the rule version governing "
-                    "the particular dispute before scheduling action. Keep service dates distinct from "
-                    "receipt dates and retain proof of notice transmission. The 90-calendar-day restriction "
-                    "following a determination requires party and same-or-similar-service tracking, with "
-                    "the applicable later initiation window handled explicitly. Do not reduce it to "
-                    "a single universal payer/CPT timer. Batching requires its own current-rule eligibility "
-                    "check; a shared payer brand alone is insufficient. Assign an accountable human to "
-                    "each imminent deadline and an escalation backup. A nightly exception report should "
-                    "surface missing receipt evidence, disputed plan classification, expired clocks, and "
-                    "cooling-off conflicts before staff prepare an offer."
-                ),
-                (
-                    "Use a 100-point account score only after mandatory eligibility checks pass: verified "
-                    "federal inventory earns 25 points, deadline runway 20, evidence completeness 20, "
-                    "collectible contribution 20, and administrator access 15. Seventy-five points qualifies "
-                    "a practice for a bounded pilot; no score rescues an ineligible claim. Define the "
-                    "contractual fee base as incremental cash collected above the actual initial payer "
-                    "payment, less non-refundable administrative fees, unrecovered entity fees, and agreed "
-                    "casework costs, floored at zero. QPA and initial allowed payment are distinct fields; "
-                    "never replace the actual baseline with an assumed QPA payment. Illustratively, "
-                    "$20,000 initially collected plus $10,000 subsequently collected creates $10,000 of "
-                    "incremental cash. Deduct $1,500 of administrative and unrecovered entity fees and "
-                    "$1,000 of casework costs: the distributable recovery is $7,500 and a 30% operator "
-                    "share is $2,250. These are aggregate sample costs, not published fee quotes. A "
-                    "$12,000 paper uplift with only $10,000 collected still supports only that $2,250 "
-                    "fee. Track entity-fee deposits separately: recognize a refund only when supported "
-                    "by actual disposition and receipt, and conservatively reserve losing or ineligible "
-                    "cases for full forfeiture unless the governing refund process establishes otherwise."
-                ),
-            ],
-            "table": {
-                "caption": "Qualification Scorecard and Non-Negotiable Evidence Checks",
-                "headers": [
-                    "Qualification component and assigned scoring weight",
-                    "Evidence required before awarding the available points",
-                    "Acceptance standard tied to operational execution",
-                    "Failure response that preserves cash and deadlines",
-                ],
-                "rows": [
-                    [
-                        "Verified federal inventory contributes twenty-five available account scoring points",
-                        "Review plan funding evidence and applicable state payment method",
-                        "Document why federal dispute resolution governs the sampled services",
-                        "Route state-governed inventory to an appropriate separate recovery workflow",
-                    ],
-                    [
-                        "Deadline runway contributes twenty available account scoring points",
-                        "Preserve initial remittance receipt and negotiation notice transmission evidence",
-                        "Require sufficient verified runway for documented timely procedural action",
-                        "Reject expired claims unless a supported exception actually applies",
-                    ],
-                    [
-                        "Evidence completeness contributes twenty available account scoring points",
-                        "Match claim records with remittances and relevant clinical support",
-                        "Require retrievable materials supporting eligibility and permissible offer factors",
-                        "Request missing records before incurring avoidable dispute filing costs",
-                    ],
-                    [
-                        "Collectible contribution contributes twenty available account scoring points",
-                        "Model incremental receipts after administrative fees and casework deductions",
-                        "Require positive expected contribution under a delayed collection stress",
-                        "Narrow inventory when fees consume the plausible recovery spread",
-                    ],
-                    [
-                        "Administrator access contributes fifteen available account scoring points",
-                        "Identify authorized signatory and responsible revenue-cycle operating contact",
-                        "Confirm access instructions and a workable weekly exception meeting",
-                        "Pause onboarding when nobody owns documents or deadline escalation",
-                    ],
-                    [
-                        "Mandatory eligibility checks override every numerical account scoring result",
-                        "Verify protected transfer arrangements and provider representation authority",
-                        "Require jurisdiction and timing checks before each filing commitment",
-                        "Decline unsupported filings regardless of prospect size or score",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before any paid filing commitment",
-                "body": (
-                    "A signed mandate authorizes scoped work; it does not establish that every "
-                    "submitted claim belongs in federal IDR."
-                ),
-                "items": [
-                    "Verify service eligibility, plan funding, specified state law, and any applicable alternative payment-determination method.",
-                    "Reconstruct receipt and notice dates from retained evidence; calculate both negotiation periods and the separate IDR initiation window.",
-                    "Validate current batching requirements and any same-party, same-or-similar-service cooling-off restriction before combining disputes.",
-                    "Confirm authority, protected data handling, current fees, loss reserves, and positive cash-based economics after every agreed deduction.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Run a narrow outbound cadence that converts evidence into signed mandates",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Run a five-touch, fifteen-business-day sequence around one documented business trigger. "
-                    "On day one, email the practice administrator a short observation and offer a "
-                    "twenty-line eligibility-and-deadline review, without requesting patient information by "
-                    "email. On day three, place a manual call to the published business number and ask "
-                    "who owns out-of-network recovery operations. On day six, send a permission-respecting "
-                    "professional-network message with a one-page explanation of the cash-based fee "
-                    "waterfall. On day ten, send a useful deadline-control worksheet; on day fifteen, "
-                    "close the loop and stop unless they invite further contact. Commercial email must "
-                    "use accurate routing and subject information, the required sender identification "
-                    "and postal address, a functioning opt-out, and timely suppression under 15 U.S.C. "
-                    "§ 7704. Manual business outreach does not justify automated texts or prerecorded "
-                    "calls; evaluate the actual channel under 47 U.S.C. § 227 and applicable state "
-                    "rules before adding automation. Maintain one suppression list across email and "
-                    "partner campaigns. Never claim to represent CMS, a payer, or a certified IDR "
-                    "entity. The useful promise is a bounded assessment with documented exclusions, "
-                    "not an expected award or a guaranteed collection date."
-                ),
-                (
-                    "Use explicit planning assumptions rather than fabricated industry conversion benchmarks. "
-                    "A starter cohort of 300 raw organization records might yield 180 verified eligible-profile "
-                    "accounts, a 60% research yield. If 30 engage in a relevant conversation, that is "
-                    "16.7% of verified accounts; 15 discovery meetings represent 50% of conversations. "
-                    "Eight authorized sample reviews represent 53.3% of meetings, and three accepted "
-                    "mandates represent 37.5% of sample reviews, or 1% of raw records. These are "
-                    "test targets, not observed performance. Review source quality if the first 60 verified "
-                    "accounts produce fewer than six relevant conversations; review qualification or "
-                    "positioning if ten meetings produce fewer than two authorized samples. Do not "
-                    "compensate for poor conversion by filing marginal claims. If total acquisition "
-                    "spend is $4,500 and three mandates sign, acquisition cost is $1,500 per mandate. "
-                    "At an illustrative $2,250 earned fee per completed recovery cohort and $750 "
-                    "of additional operator delivery overhead, one collected cohort contributes $1,500 "
-                    "before acquisition expense, merely recovering that acquisition cost. Require evidence "
-                    "of repeat eligible inventory before paying for scale. Ten mandates at the same "
-                    "raw conversion would require 1,000 records and enough delivery capacity to "
-                    "service them without missing deadlines."
-                ),
-                (
-                    "The discovery call should establish authority, inventory, process failure, and economics "
-                    "in that order. Ask who can authorize representation, how many recent potentially "
-                    "covered claims exist, which person owns receipt-date evidence, and whether another "
-                    "vendor already controls the same disputes. When the administrator says their billing "
-                    "company handles appeals, distinguish contractual appeals from timely federal open "
-                    "negotiation and IDR, then request a scoped coordination discussion rather than "
-                    "attacking the incumbent. When they cite a high published prevailing-offer percentage, "
-                    "explain that selection outcomes are not cash realization rates and request actual "
-                    "remittance history. When they demand a recovery guarantee, offer a fixed sample "
-                    "scope, documented eligibility findings, and cash-contingent compensation instead. "
-                    "When they resist data access, begin with aggregate counts and move to a minimum "
-                    "necessary protected sample only after contracting. The pilot mandate should identify "
-                    "the authorized provider entities, service-date range, payer scope, fee waterfall, "
-                    "expense funding, dispute authority, termination treatment, and reconciliation process. "
-                    "Require affirmative instructions about settlement authority; a contingency agreement "
-                    "alone should not imply unlimited discretion. Send the diagnostic findings within "
-                    "five business days of receiving complete records, while escalating any nearer "
-                    "statutory deadline immediately rather than waiting for the scheduled presentation."
-                ),
-            ],
-            "table": {
-                "caption": "Outreach Cadence, Conversion Controls and Concrete Objection Responses",
-                "headers": [
-                    "Touchpoint or objection requiring a precise response",
-                    "Operator language grounded in an observable business issue",
-                    "Requested next action and evidence of conversion",
-                    "Stop condition or practical fallback for the prospect",
-                ],
-                "rows": [
-                    [
-                        "Day one email follows a verified practice operating trigger",
-                        "Your staffing expansion may warrant checking recent recovery deadlines",
-                        "Request a short administrator discussion without exchanging patient records",
-                        "Suppress immediately when the recipient declines further commercial contact",
-                    ],
-                    [
-                        "Day three manual call identifies the actual workflow owner",
-                        "Who maintains initial payment receipt evidence for disputed services",
-                        "Record the responsible person's business role and requested follow-up",
-                        "Leave one concise message rather than repeatedly interrupting staff",
-                    ],
-                    [
-                        "Day six professional message explains the incremental cash waterfall",
-                        "Our fee excludes your baseline collections and unrecovered expenses",
-                        "Offer a protected sample review after authority is established",
-                        "Provide aggregate workflow education when protected access remains premature",
-                    ],
-                    [
-                        "Day ten worksheet answers the incumbent billing vendor objection",
-                        "We can inspect deadlines without replacing your existing billing team",
-                        "Request a coordinated meeting with the authorized billing relationship owner",
-                        "Decline duplicate representation when dispute ownership cannot be resolved",
-                    ],
-                    [
-                        "Published success statistics trigger a cash realization evidence discussion",
-                        "Selected offers and collected dollars measure different operating outcomes",
-                        "Request anonymized aggregate collection timing before estimating acquisition economics",
-                        "Use conservative cash assumptions when collection history lacks support",
-                    ],
-                    [
-                        "Day fifteen closeout addresses delay without manufacturing artificial urgency",
-                        "We will pause outreach unless a scoped review becomes useful",
-                        "Record explicit permission before scheduling any later commercial follow-up",
-                        "Retain suppression preferences and remove unnecessary prospect information promptly",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Land three mandates, prove the cash waterfall and scale only repeatable cohorts",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Sequence the first four months around evidence delivery, not a premature filing target. "
-                    "During weeks one and two, configure the CRM, source register, suppression list, secure "
-                    "transfer environment, service agreement, and Business Associate Agreement. During weeks "
-                    "three and four, complete the first account cohort, run discovery calls, and accept "
-                    "only samples with adequate procedural runway. During weeks five through eight, "
-                    "deliver diagnostics, sign the first three bounded mandates, and initiate authorized "
-                    "negotiations on eligible inventory. During weeks nine through sixteen, expand toward "
-                    "ten mandates only if staffing and deadline coverage remain adequate. Count a sourcing "
-                    "win when the provider signs and the operating team accepts a viable scoped inventory; "
-                    "count a collected recovery separately. Fresh negotiations and subsequent arbitration "
-                    "can push cash beyond the acquisition window. Maintain distinct dashboard columns "
-                    "for signed mandates, accepted claims, negotiations initiated, disputes initiated, "
-                    "determinations, incremental collections, and earned fees. Existing disputes inherited "
-                    "from another vendor require explicit authority and procedural verification before "
-                    "any handoff. Never advertise a first-month collection timetable simply because one "
-                    "prospect has an old unpaid award. The acquisition plan must survive a slower cash "
-                    "cycle than the sales cycle."
-                ),
-                (
-                    "Turn the diagnostic into a concise operating exhibit: eligible inventory, rejected "
-                    "inventory with reasons, next procedural dates, permitted evidence gaps, projected "
-                    "expenses, and a cash-waterfall example. Separate QPA-related information from prohibited "
-                    "pricing evidence. FAIR Health products may assist internal research where permitted, "
-                    "but a usual-and-customary charge benchmark must not be repackaged as permissible "
-                    "federal IDR valuation evidence. The federal framework excludes usual and customary "
-                    "charges, billed charges, and public payer reimbursement rates as determination factors. "
-                    "Use documented patient acuity, provider training and experience, facility characteristics, "
-                    "market share where relevant, and other permitted credible information without counting "
-                    "a factor twice through QPA and supplemental evidence. Assign submission drafting "
-                    "and eligibility review to different people when possible. After determination, "
-                    "track the statutory payment timetable, payment exceptions, and actual bank or "
-                    "remittance evidence; unpaid awards remain receivables rather than collected contingency "
-                    "revenue. Escalate delayed payment through the appropriate payer and CMS processes "
-                    "using retained records. Never transfer a protected patient balance to the patient "
-                    "to finance the dispute. Keep administrative fees, entity deposits, returned deposits, "
-                    "casework costs, baseline receipts, and incremental receipts in separate ledger fields "
-                    "so a provider can reproduce every invoice."
-                ),
-                (
-                    "Reconcile scale to the canonical scorecard, not to physician collections. Conservative "
-                    "annual operator revenue is $110,000, with $77,000 of operator expenses and $33,000 "
-                    "owner profit at 30% margin using one full-time worker and two contractors. Base "
-                    "revenue is $505,000, expenses $287,850, and owner profit $217,150 at 43.0%, with "
-                    "the same team structure. Scaled revenue is $900,000, expenses $396,000, and owner "
-                    "profit $504,000 at 56%, using two full-time workers and three contractors. An "
-                    "illustrative $2,500 average earned fee requires 44, 202, and 360 collected recovery "
-                    "cohorts annually, respectively; cohort size is a modeling unit, not an authorized "
-                    "batching rule. Provider cash, paper awards, and refunded deposits are not substitutes "
-                    "for those fee totals. Costs already reimbursed or deducted in determining the "
-                    "contingency base must not be charged again as unreimbursed operator expenses. "
-                    "Use separate settlement and operator ledgers to prevent that duplication. Before "
-                    "hiring or buying another lead list, stress collection timing by an additional "
-                    "60 days, reduce expected cash realization, and include losing or ineligible-case "
-                    "fee exposure. Pause expansion if the resulting working-capital requirement exceeds "
-                    "funded reserves, even when the mandate pipeline looks strong. High margin comes "
-                    "from disciplined selection and repeatable execution, not from celebrating uncollected awards."
-                ),
-            ],
-            "table": {
-                "caption": "First-Deal Operating Milestones and Canonical Annual Reconciliation",
-                "headers": [
-                    "Milestone or canonical annual operating scenario",
-                    "Evidence and volume required to substantiate progress",
-                    "Cash or expense treatment used in reporting",
-                    "Capacity decision and corresponding risk containment action",
-                ],
-                "rows": [
-                    [
-                        "Weeks one through four establish the protected acquisition foundation",
-                        "Complete account research and identify responsible provider operating contacts",
-                        "Track research and outreach spend before expecting earned fees",
-                        "Limit samples to records the team can review promptly",
-                    ],
-                    [
-                        "Weeks five through eight target three accepted provider mandates",
-                        "Require signed authority and a documented viable claim inventory",
-                        "Separate signed mandates from actual incremental cash collection events",
-                        "Assign deadline ownership before initiating any authorized dispute action",
-                    ],
-                    [
-                        "Weeks nine through sixteen permit expansion toward ten mandates",
-                        "Verify adequate staffing and repeatable evidence retrieval across accounts",
-                        "Maintain funded reserves while awards and payer receipts diverge",
-                        "Pause new intake when deadline exceptions exceed available coverage",
-                    ],
-                    [
-                        "Conservative scenario uses one full-time worker and two contractors",
-                        "$110,000 earned fees equal 44 illustrative $2,500 collected cohorts",
-                        "$77,000 expenses leave $33,000 owner profit at 30% margin",
-                        "Protect cash by selecting timely eligible inventory before expansion",
-                    ],
-                    [
-                        "Base scenario retains one full-time worker and two contractors",
-                        "$505,000 earned fees equal 202 illustrative $2,500 collected cohorts",
-                        "$287,850 expenses leave $217,150 owner profit at 43.0% margin",
-                        "Automate exception detection while preserving individual human deadline accountability",
-                    ],
-                    [
-                        "Scaled scenario uses two full-time workers and three contractors",
-                        "$900,000 earned fees equal 360 illustrative $2,500 collected cohorts",
-                        "$396,000 expenses leave $504,000 owner profit at 56% margin",
-                        "Add delivery capacity before accepting additional deadline-sensitive provider inventories",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Build one evidence-backed account cohort",
-                    "action": "Resolve 100 specialty practice accounts from official sources and documented operating triggers.",
-                    "detail": (
-                        "Deduplicate provider organizations, retain source dates, identify business contacts, "
-                        "and exclude patient information from the prospecting database."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Qualify a protected twenty-line sample",
-                    "action": "Secure authority and HIPAA arrangements before reviewing claim-level records.",
-                    "detail": (
-                        "Verify jurisdiction, receipt dates, negotiation status, batching constraints, "
-                        "permitted evidence, and the incremental cash waterfall for each sampled line."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Convert diagnostics into three bounded mandates",
-                    "action": "Present exclusions, deadlines, expense funding, fee mechanics, and explicit settlement authority.",
-                    "detail": (
-                        "Count a mandate only after signature and operational acceptance; coordinate with "
-                        "existing vendors and avoid duplicate representation of the same disputes."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile collections before increasing acquisition spend",
-                    "action": "Match payer remittances and deposits to baseline receipts, incremental receipts, expenses, and earned fees.",
-                    "detail": (
-                        "Compare acquisition cost and delivery contribution by source cohort, stress "
-                        "a 60-day collection delay, and expand only within funded capacity."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": "The best IDR lead is a timely, eligible claim with a documented cash path, not the largest unpaid balance.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Build a deduplicated 100-account specialty cohort using NPPES, verified practice websites, and dated public operating triggers.",
-        "Configure the five-touch cadence, shared suppression list, source attribution, and explicit raw-record-to-mandate conversion targets.",
-        "Execute provider authority and HIPAA Business Associate Agreements before accepting protected remittance samples.",
-        "Score each account only after jurisdiction, receipt evidence, negotiation timing, batching, and cooling-off checks pass.",
-        "Sign three bounded mandates with explicit expense funding, settlement authority, and fees based on net incremental cash collected.",
-        "Reconcile every collection and fee refund, compare source-level acquisition contribution, and stress cash timing before pursuing ten mandates.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "42 U.S.C. § 300gg-111 — Preventing surprise medical bills",
-            "url": "https://www.law.cornell.edu/uscode/text/42/300gg-111",
-            "relevance": (
-                "Establishes federal surprise-billing protections and the negotiation and IDR framework, "
-                "including relevant determination factors, excluded factors, and payment requirements."
-            ),
-        },
-        {
-            "title": "45 CFR § 149.510 — Federal independent dispute resolution process",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-B/part-149/subpart-F/section-149.510",
-            "relevance": (
-                "Governs open negotiation, IDR initiation, batching, subsequent disputes, fees, and "
-                "determinations; apply operative requirements alongside controlling judicial decisions "
-                "and current agency instructions."
-            ),
-        },
-        {
-            "title": "45 CFR § 149.30 — Definitions",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-B/part-149/subpart-A/section-149.30",
-            "relevance": (
-                "Defines concepts including the out-of-network rate and specified state law, supporting "
-                "claim-specific screening before selecting the federal process."
-            ),
-        },
-        {
-            "title": "45 CFR § 164.504(e) — Business associate contracts",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504",
-            "relevance": (
-                "Supports required contractual controls for protected information handled by recovery "
-                "operators and their business-associate subcontractors."
-            ),
-        },
-        {
-            "title": "45 CFR § 164.502(b) — Minimum necessary standard",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.502",
-            "relevance": (
-                "Supports limiting protected claim samples and access to the information reasonably "
-                "necessary for the authorized recovery function, subject to applicable exceptions."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Governs commercial email routing, subject accuracy, required disclosures, opt-out "
-                "mechanisms, and suppression practices in prospecting campaigns."
-            ),
-        },
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Requires channel-specific review before introducing automated calls, prerecorded "
-                "messages, or texts into the business acquisition sequence."
-            ),
-        },
-        {
-            "title": "42 U.S.C. § 1320a-7b(b) — Illegal remunerations",
-            "url": "https://www.law.cornell.edu/uscode/text/42/1320a-7b",
-            "relevance": (
-                "Requires evaluating referral remuneration where federal healthcare program business "
-                "is implicated; it does not make every ordinary business introduction prohibited."
-            ),
-        },
-        {
-            "title": "29 U.S.C. § 1144 — ERISA preemption and state-law interaction",
-            "url": "https://www.law.cornell.edu/uscode/text/29/1144",
-            "relevance": (
-                "Explains why plan funding and applicable state insurance rules require substantive "
-                "review rather than classification from a payer brand or adjustment code alone."
-            ),
-        },
-    ],
-}
+CHAPTER_6 = {'id': 'Q6',
+ 'chapter_id': 'Q6',
+ 'chapter_number': 6,
+ 'question_number': 6,
+ 'slug': 'reading-the-idr-scoreboard-volume-win-rates-award-levels-premium-fallout',
+ 'question_prompt': 'What does the CMS public use file data show about IDR volume, win rates, and award '
+                    'levels, and how are those outcomes affecting employer plans and premiums?',
+ 'kicker': 'Q6 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Reading the IDR Scoreboard: Volume, Win Rates, Award Levels, and the Premium Fallout',
+ 'subtitle': '2024 CMS public use file trends, provider win rates and awards vs. QPA, financial viability '
+             'of IDR for radiology, the $15 billion arbitration year, employer-sponsored plan cost impact, '
+             'the 2027 premium spike argument, IDR-driven consolidation, and competing myth-vs-reality '
+             'data narratives',
+ 'layout_template': 'step_by_step_blueprint',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners across employer, payer-analytics, policy and provider-filer camps '
+                      'read the same IDR scoreboard. Volume blew far past the 17,000-22,000 annual cases '
+                      'regulators expected, reaching 1.4M disputes in 2024 and 2.2M-2.6M in 2025, and one '
+                      'anesthesia operator cites a 5M run rate. Providers win roughly 80-90% of '
+                      'baseball-style decisions. Awards cluster around 4-4.5x QPA, and in one Texas pool '
+                      'they spiked to 25x the in-network average for assistant surgeons and 65x for '
+                      'path/lab. A handful of filers (Radiology Partners, TeamHealth, SCP, HaloMD) drive '
+                      'half or more of volume. Employers report broken budgets, stop-loss exposure and '
+                      'premium pressure. HaloMD counters that only 6.1% of eligible claims reach IDR, that '
+                      'insurers defaulted on 24% of their losses, and that QPA itself is set too low. The '
+                      'admin fee has now dropped to $15, and operators expect another filing surge.',
+ 'key_metrics': [{'label': 'Provider Win Rate in IDR',
+                  'metric': 'Provider Win Rate in IDR',
+                  'value': '85%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Share of 2024 federal IDR disputes won by providers in the CMS public use '
+                             'file analyzed by Zelis',
+                  'source': 'Zelis Healthcare ([lhoUoQSpOCg @ 00:01:25])'},
+                 {'label': 'Average Award Level vs QPA',
+                  'metric': 'Average Award Level vs QPA',
+                  'value': '445% of QPA',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Average provider award in 2024 disputes relative to the qualifying payment '
+                             'amount',
+                  'source': 'Zelis Healthcare ([lhoUoQSpOCg @ 00:01:25])'},
+                 {'label': '2025 Provider-Filed Disputes',
+                  'metric': '2025 Provider-Filed Disputes',
+                  'value': '2.6 million',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Disputes filed in 2025 against roughly 17,000 expected per year; providers '
+                             'trigger more than 99% of them',
+                  'source': 'Long Reads, Explained ([cSaC2n-3r9o @ 00:06:58])'},
+                 {'label': 'Total 2025 IDR Awards',
+                  'metric': 'Total 2025 IDR Awards',
+                  'value': '$14.85B',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Total awarded through IDR in 2025, more than three times the $4.08B awarded '
+                             'in 2024',
+                  'source': 'Top Hospitals USA ([eDCqqjk5fqk @ 00:00:00])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus — Volume Exploded, Providers Win, Employers '
+                        'Pay',
+               'paragraphs': ['Every camp reading the scoreboard agrees on the first line: volume '
+                              'exploded. Regulators planned for roughly 17,000 to 22,000 disputes a year. '
+                              'Chris Keyser of the Texas Business Group on Health counts more than 7 '
+                              'million cases opened since 2022, adding about $22B to the system '
+                              '[8zjJbZyS2j8 @ 00:05:50]. Zelis counts 1.4M disputes in 2024, up 115%. More '
+                              'than 600,000 were still pending going into 2025, and 69% of open disputes '
+                              'were older than 30 days. Its blunt verdict is that the system is broken '
+                              '[lhoUoQSpOCg @ 00:00:23]. The Atlantic reporting narrated by Long Reads, '
+                              'Explained puts 2025 at 2.6 million provider-filed disputes. Providers '
+                              'trigger more than 99% of them, and first-half 2026 volume is running '
+                              'another 50% higher [cSaC2n-3r9o @ 00:06:58]. Dr. Eric Bricker tracks the '
+                              'quarterly climb from 200,000 to 250,000 to over 300,000 disputes. He frames '
+                              'the original problem plainly: out-of-network radiology, ER, anesthesiology, '
+                              'pathology and surgical-assistant groups were billing patients who had '
+                              'walked into in-network hospitals [6E_HRECi-t8 @ 00:02:04]. The volume '
+                              'figures disagree at the edges, and every speaker reports the curve still '
+                              'climbing. Operators should treat dispute count as a rising baseline rather '
+                              'than a one-time spike that will fade on its own.',
+                              'The second line of consensus is the win rate. IDR is baseball-style '
+                              'arbitration. Each side submits one best offer, and the arbitrator picks one '
+                              'without splitting the difference. Under that format, Bricker reports '
+                              'physician groups winning 80 to 85% of the time. Carriers offer the QPA, the '
+                              'median in-network rate, while providers average about 4.5x QPA. Radiology '
+                              'lands near 6x QPA and neurosurgery at 11x QPA, roughly 16x Medicare '
+                              '[6E_HRECi-t8 @ 00:02:19]. Dr. Tia Sawhney is an FSA and NYU adjunct who '
+                              'previously worked prepayment recovery. She puts the provider win rate above '
+                              '85% and calls the system statistically biased toward providers. Offers are '
+                              'not disclosed, and there is no rebuttal and no appeal [lqE3aZxq024 @ '
+                              '00:11:42]. The anesthesia-side operator at About The Rest says '
+                              'sophisticated groups running baseball-style arbitration win 85 to 88% '
+                              "[x35n4T9CppE @ 00:01:03]. HaloMD's Becker's panel cites the latest CMS "
+                              "report at 86%, up from 84% [g2udecJ21bI @ 00:07:21]. Bricker's sharpest "
+                              'single example is a surgical assistant awarded $200,000 for one operation, '
+                              'which left that employer running over budget. The read for any plan '
+                              'operator is that once the counterparty files, the base case is a loss at a '
+                              "multiple of the plan's own benchmark rather than a negotiated middle.",
+                              'The third consensus point is that a small number of filers run the '
+                              'scoreboard and employers absorb the bill. Sawhney counts 2.2M disputes in '
+                              '2025, with about half coming from five vendors. HaloMD alone filed more '
+                              'than 400,000 and is paid a percentage of the uplift [lqE3aZxq024 @ '
+                              '00:09:31]. The Atlantic reporting assigns half of filings to Radiology '
+                              'Partners and TeamHealth combined and 27% to HaloMD. It names IDR the '
+                              "largest single driver of next year's premium increase, at 25 to 40%, ahead "
+                              'of GLP-1s and AI coding. National IDR cost ran $1.6B a year from 2022 '
+                              'through 2024 and hit $16.6B in 2025 [cSaC2n-3r9o @ 00:15:45]. Texas '
+                              'employers put the damage in budget terms. The Texas Health Benefits Pool '
+                              'spent more than $20M in added claims and fees, and the panel states that '
+                              'self-funded employers bear about 90% of IDR costs [8zjJbZyS2j8 @ 00:51:59]. '
+                              'Loren Adler of Brookings confirms the pass-through. These awards do not '
+                              'just come out of insurer margins; they flow into premiums and cost-sharing, '
+                              'with the hit showing in 2026 and more in 2027 [c7whA-tTpq4 @ 00:04:30]. For '
+                              'an employer or plan operator, the consensus is that IDR is now a recurring '
+                              'premium line item rather than a rounding error buried in claims.'],
+               'table': {'caption': 'The IDR Scoreboard: Consensus Lines Every Operator Should Track',
+                         'headers': ['Scoreboard Line',
+                                     'What Practitioners Report',
+                                     'Operator Read',
+                                     'Expert Source'],
+                         'rows': [['Annual dispute volume versus original projection',
+                                   '17,000 a year expected; 2.6 million provider-filed disputes in 2025',
+                                   'Budget for a rising baseline, with first-half 2026 volume up another '
+                                   '50%',
+                                   'Long Reads, Explained ([cSaC2n-3r9o @ 00:06:58])'],
+                                  ['Provider win rate in baseball-style arbitration',
+                                   'Physician groups win 80 to 85% of the time when the arbitrator picks '
+                                   'one offer',
+                                   'Assume the plan loses most disputes the counterparty chooses to file',
+                                   'AHealthcareZ - Healthcare Finance Explained ([6E_HRECi-t8 @ '
+                                   '00:02:19])'],
+                                  ['Average award relative to the QPA benchmark',
+                                   'Providers win 85% of 2024 disputes and average 445% of QPA',
+                                   "Price disputed claims at well over four times the plan's own benchmark",
+                                   'Zelis Healthcare ([lhoUoQSpOCg @ 00:01:25])'],
+                                  ['Filer concentration among staffing and RCM firms',
+                                   'Top 10 groups filed about 75% of early disputes, and 81% came from ER '
+                                   'visits',
+                                   'Focus monitoring on the few staffing and revenue-cycle filers driving '
+                                   'volume',
+                                   'HealthWatch Wisconsin ([qM_Np937JnY @ 00:01:06])'],
+                                  ['Who ultimately carries the IDR bill',
+                                   'Self-funded employers bear about 90% of IDR costs, per the Texas panel',
+                                   'Self-funded sponsors should model IDR as a direct claims spend line',
+                                   'Texas Business group on Health ([8zjJbZyS2j8 @ 00:51:59])'],
+                                  ['Premium pass-through timing',
+                                   'Awards flow into premiums and cost-sharing, showing in 2026 and more '
+                                   'in 2027',
+                                   'Expect IDR-driven renewal pressure to compound over several plan years',
+                                   'Health Tech Nerds ([c7whA-tTpq4 @ 00:04:30])'],
+                                  ['Total national award dollars',
+                                   '2025 awards totaled $14.85B, more than triple the $4.08B awarded in '
+                                   '2024',
+                                   'National award pool is tripling, so per-plan exposure is not standing '
+                                   'still',
+                                   'Top Hospitals USA ([eDCqqjk5fqk @ 00:00:00])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers — Ticket Cost, Filing Engines, '
+                        'Payer Countermoves',
+               'paragraphs': ['The street math starts with the cost of a ticket. Eric Christensen of the '
+                              'Neiman Health Policy Institute lays out the fee ladder. The administrative '
+                              'fee was $50 in 2022 and $350 in 2023, until a court vacated it back to $50, '
+                              'and then $115 in 2024. On top of that sits a loser-pays entity fee that '
+                              'climbed from $200-$500 to $200-$1,173, which puts the expected cost to '
+                              'enter IDR at $173 to $455 [rYqWvbw_kGo @ 00:02:41]. Under the 2023 batching '
+                              'rules, claims could ride together if they shared billing code and '
+                              'modifiers, health plan and a 30-business-day window. Even so, the average '
+                              'batch held only 3.1 claims, or 2.2 for radiology. His viability math is '
+                              'brutal for small tickets. Recovering a quarter of the charge-minus-QPA gap '
+                              'makes IDR worth it on only 35 to 52% of claims overall and 11 to 22% of '
+                              'radiology claims [rYqWvbw_kGo @ 00:04:54]. The ticket price has since '
+                              'collapsed. HaloMD confirms the $15 admin fee is already in effect, '
+                              'alongside a 50-line batch cap from November 1 and a cooling-off period cut '
+                              'to 30 business days [oEWBNDsvXOQ @ 00:49:59]. The About The Rest operator '
+                              'reads the drop from $115 to $15 bluntly: now you are going to have a tidal '
+                              'wave of new filings [x35n4T9CppE @ 00:01:40].',
+                              "The filer side runs IDR as a production line, and HaloMD's leadership walks "
+                              'through the engine. Alla Laro ranks win ratio only about fifth when '
+                              'choosing an IDR entity. Refund speed matters most: entities have 30 '
+                              'business days to refund, and the good ones do it in 5. Next come '
+                              'eligibility accuracy, flexible batching and award timeliness, and 4 '
+                              'entities routinely beat the 30-business-day award deadline [g2udecJ21bI @ '
+                              "00:28:04]. Megan Roush's back-office rule is equally mechanical: enroll in "
+                              'ACH refunds with all 11 IDR entities and expect some of them to demand '
+                              'verbal bank authentication before money moves [g2udecJ21bI @ 00:21:09]. '
+                              'Nutex Health shows the payoff curve. Revenue across its 24 hospitals in 11 '
+                              'states fell 35% when the NSA started. Nutex began IDR in Q2/Q3 2024 with 60 '
+                              'to 70% of visits eligible and an 80 to 90% win rate. Results took 4 to 5 '
+                              'months to arrive, and revenue then rose 270% year over year [g2udecJ21bI @ '
+                              "00:38:19]. HaloMD's data session adds the payer-side weakness the engine "
+                              'leans on. 24% of insurer losses were outright defaults, where the insurer '
+                              'submitted no offer at all and could not have been named the prevailing '
+                              'party, and 8.2% involved insurer offers of $1 or less [oEWBNDsvXOQ @ '
+                              '00:30:43].',
+                              'On the payer and employer side, the mechanics start with finding the '
+                              "disputes at all. Sawhney's detection tell is a claim payment reversed two "
+                              'to six months later and then repaid at a much higher amount. Reason codes '
+                              'exist, but they are often not shared with the employer [lqE3aZxq024 @ '
+                              '00:39:40]. Bricker tells employers to demand their claims with IDR claims '
+                              "flagged and to expect a we-can't-or-we-won't answer. In his view, not "
+                              'knowing which claims went through IDR is almost de facto not being an '
+                              'adequate fiduciary [6E_HRECi-t8 @ 00:07:36]. The Texas Health Benefits '
+                              "Pool's Jennifer Hoff measured awards against the in-network average: 5x for "
+                              'ER facility, 10x for ER physician, 16x for anesthesia, 25x for assistant '
+                              'surgeon, 30x for neuromonitoring and 65x for path and lab. The pool '
+                              'countered with Green Imaging, Tap telehealth putting an ER physician on '
+                              'screen within 2 minutes, DPC, and opting into the state IDR [8zjJbZyS2j8 @ '
+                              "00:19:34]. San Antonio's Renee Freda tracked freestanding ER visits costing "
+                              '138% more, rising from $732 to $1,742. She found informal settlements '
+                              'landing at 200 to 240% of Medicare versus roughly 400% through IDR, a '
+                              'spread that makes direct settlement the cheaper exit whenever a filer will '
+                              'take the call [8zjJbZyS2j8 @ 00:32:15].'],
+               'table': {'caption': 'IDR Street Mechanics: Numbers, Levers and How Operators Use Them',
+                         'headers': ['Mechanic',
+                                     'Exact Number Reported',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Cost to enter an IDR dispute',
+                                   '$173 to $455 expected cost, with the loser-pays entity fee up to '
+                                   '$1,173',
+                                   'Run the quarter-recovery viability test before filing small-dollar '
+                                   'claims',
+                                   'AJR Radiology ([rYqWvbw_kGo @ 00:02:41])'],
+                                  ['Current admin fee and batching rules',
+                                   '$15 admin fee in effect and a 50-line batch cap from November 1',
+                                   'Cooling-off period cut to 30 business days, so filers can refile '
+                                   'faster',
+                                   'HaloMD ([oEWBNDsvXOQ @ 00:49:59])'],
+                                  ['IDR entity selection criteria',
+                                   'Refund speed ranks first; win ratio sits around fifth on the list',
+                                   'Good entities refund in 5 days against the 30 business days allowed',
+                                   'HaloMD ([g2udecJ21bI @ 00:28:04])'],
+                                  ['Collecting on won awards',
+                                   '95% of payment failures stem from a missing EOB or award letter',
+                                   'Send documents proactively and net out recoup and repay remittances',
+                                   'HaloMD ([g2udecJ21bI @ 00:23:45])'],
+                                  ['Detecting IDR claims inside plan data',
+                                   'Payment reversed 2 to 6 months later, then repaid much higher',
+                                   'Mine your own claims data, because reason codes often go unshared',
+                                   'Payerset ([lqE3aZxq024 @ 00:39:40])'],
+                                  ['Specialty award multiples in a Texas pool',
+                                   'Assistant surgeon 25x, neuromonitoring 30x, path and lab 65x the '
+                                   'in-network average',
+                                   'Rank specialties by multiple to see where IDR exposure concentrates in '
+                                   'the pool',
+                                   'Texas Business group on Health ([8zjJbZyS2j8 @ 00:19:34])'],
+                                  ['Informal settlement versus IDR award',
+                                   'Informal deals ran 200 to 240% of Medicare versus about 400% via IDR',
+                                   'Direct settlement talks can land far below the IDR award level',
+                                   'Texas Business group on Health ([8zjJbZyS2j8 @ 00:32:15])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'What the Operators Running IDR Volume Actually Do',
+                           'body': 'These are the levers named by filers and plan-side analysts who handle '
+                                   'IDR at scale. They cover which entity to pick, how to get paid, where '
+                                   'to find hidden IDR claims, and how to build an objection record '
+                                   '[HaloMD — g2udecJ21bI @ 00:28:04].',
+                           'items': ['Rank IDR entities on refund speed and eligibility accuracy before '
+                                     'win ratio; good entities refund in 5 days against a 30-business-day '
+                                     'allowance [HaloMD — g2udecJ21bI @ 00:28:04]',
+                                     'Enroll in ACH refunds with all 11 IDR entities and be ready for some '
+                                     'to require verbal bank authentication [HaloMD — g2udecJ21bI @ '
+                                     '00:21:09]',
+                                     'Hunt hidden IDR claims by flagging payments reversed 2 to 6 months '
+                                     'after the original payment and repaid much higher [Payerset — '
+                                     'lqE3aZxq024 @ 00:39:40]',
+                                     'Document every eligibility objection: payers get six or more chances '
+                                     'to object, and IDREs found 19% ineligible versus the 42% '
+                                     'non-initiating parties claimed [HaloMD — oEWBNDsvXOQ @ 00:21:37]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pull and Flag the IDR Claims',
+                              'action': 'Demand claims data with IDR claims flagged, then scan for '
+                                        'reversed-and-repaid payments.',
+                              'detail': "Request claims with IDR flags and expect a we-can't-or-we-won't "
+                                        'answer from the carrier [AHealthcareZ - Healthcare Finance '
+                                        'Explained — 6E_HRECi-t8 @ 00:07:36]. Then search for payments '
+                                        'reversed 2 to 6 months later and repaid much higher [Payerset — '
+                                        'lqE3aZxq024 @ 00:39:40].'},
+                             {'step': 2,
+                              'title': 'Price the Ticket Before Filing or Defending',
+                              'action': 'Compare the expected fee load against the realistic recovery on '
+                                        'each claim or batch.',
+                              'detail': 'The expected cost to enter is $173 to $455, with a loser-pays '
+                                        'entity fee of $200 to $1,173. At quarter recovery, only 35 to 52% '
+                                        'of claims clear the bar, and only 11 to 22% in radiology [AJR '
+                                        'Radiology — rYqWvbw_kGo @ 00:02:41].'},
+                             {'step': 3,
+                              'title': 'Lock the IDR Entity Selection',
+                              'action': 'Select the entity on refund speed, eligibility accuracy, batching '
+                                        'and timeliness, then hold the deadline.',
+                              'detail': 'If the health plan does not agree with the selection by midnight, '
+                                        'the dispute goes into a random pool of entities, so make the call '
+                                        'fast [HaloMD — g2udecJ21bI @ 00:28:42].'},
+                             {'step': 4,
+                              'title': 'Chase the Award Payment',
+                              'action': 'Send the EOB and award letter proactively and escalate payments '
+                                        'that miss the 30-calendar-day window.',
+                              'detail': 'About 70% of disputes are paid late against a 30-calendar-day '
+                                        'deadline [HaloMD — g2udecJ21bI @ 00:16:53]. 95% of payment '
+                                        'failures stem from missing data, so send the EOB and award letter '
+                                        'up front [HaloMD — g2udecJ21bI @ 00:23:45].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The loudest split is over whether the dispute flood is abuse or arithmetic. '
+                              "The narration of Roge Karma's Atlantic piece sets the critic baseline: "
+                              'regulators budgeted for 17,000 disputes a year, providers filed 2.6 million '
+                              'in 2025, providers trigger more than 99% of them, and first-half 2026 '
+                              'volume is running up 50% [cSaC2n-3r9o @ 00:06:58]. The anesthesia-side '
+                              'operator at About The Rest goes further, calling the real run rate 5 '
+                              'million against the 17,000 prediction, and reads the fee drop from $115 to '
+                              '$15 as the trigger for a tidal wave of new filings [x35n4T9CppE @ '
+                              "00:01:40]. HaloMD's Patrick attacks the premise itself: the 17,000 estimate "
+                              'was built on New York data that excluded emergency medicine, and re-running '
+                              'the projection on Texas data produces 1.54 million disputes in year one and '
+                              '2.69 million by year four, against roughly 2.5 million actually filed '
+                              '[oEWBNDsvXOQ @ 00:09:18]. The same HaloMD deck argues the system is '
+                              'under-used rather than abused, because only 6.1% of 19.7 million eligible '
+                              'claims ever reach arbitration [oEWBNDsvXOQ @ 00:12:15]. Volume figures '
+                              'quoted across these speakers range from 1.4 million to 5 million disputes, '
+                              'so the number that lands on a board slide depends entirely on whose count '
+                              'is used, which year is measured, and whether the speaker is filing disputes '
+                              'or paying the resulting awards.',
+                              'The second fault line is who is gaming whom. Provider-side figures quoted '
+                              'in the Atlantic narration say 8% of insurer offers were $1 or less and 25% '
+                              'of disputes drew no counteroffer at all, while Hoadley counters that 90% of '
+                              'insurer offers sit at or above the QPA and that HCSC alone staffs more than '
+                              '400 people on IDR [cSaC2n-3r9o @ 00:11:39]. HaloMD presses the provider '
+                              'case with public-use-file math: 24% of insurer losses were defaults where '
+                              'the payer submitted no offer at all and could not have been named the '
+                              'prevailing party, and 8.2% involved offers of $1 or less [oEWBNDsvXOQ @ '
+                              '00:30:43]. Chris Keyser, speaking to Texas employers, estimates that about '
+                              '40% of disputes should never have been filed, yet refuses to pick a side, '
+                              'blaming plans for low offers and providers for flooding the system with '
+                              'roughly 15 entities paid only when a case is filed [8zjJbZyS2j8 @ '
+                              '00:10:12]. Eligibility is the sharpest numeric clash: non-initiating '
+                              'parties claimed 42% of disputes were ineligible, but the arbitration '
+                              'entities themselves found only 19% ineligible [oEWBNDsvXOQ @ 00:17:20]. The '
+                              'street read for payers is blunt: skipping the offer step is a free win '
+                              'handed to the filer, and for providers, junk filings feed the 40% narrative '
+                              'that employers and their lobbyists now carry into every hearing.',
+                              'The third disagreement is whether the benchmark or the award is the broken '
+                              'number. Dr. Tia Sawhney says pricing fails at both ends: the QPA is too low '
+                              'because it is a 2019 median trended by CPI-U, padded with ghost rates and '
+                              'weighting providers equally, yet awards land at 10 to 100 times market '
+                              'value [lqE3aZxq024 @ 00:08:45]. HaloMD argues only the first half, citing '
+                              'the TMA3 ruling that found the QPA methodology unlawful, claiming that '
+                              'stripping ghost rates can lift the in-network figure up to 600%, and '
+                              'quoting NDP work showing 60% of QPAs mismatched with the true median about '
+                              '290% higher [oEWBNDsvXOQ @ 00:33:10]. The same HaloMD team claims roughly '
+                              '$3 billion in emergency-medicine savings versus pre-NSA, a direct collision '
+                              'with the Texas Health Benefits Pool, which reports more than $20 million in '
+                              'added claims and fees and says half of a 16.5% three-year rate rise traces '
+                              'to the NSA [8zjJbZyS2j8 @ 00:14:40]. On fixes, Loren Adler of Brookings '
+                              'prefers a hard benchmark such as 250% of Medicare or an in-network '
+                              'guarantee that matches networks, while HaloMD urges its audience to back '
+                              'the Murphy bill and critics point to a House proposal that would scrap IDR '
+                              'outright [c7whA-tTpq4 @ 00:12:00].'],
+               'table': {'caption': 'Contested IDR scoreboard questions: provider-side versus payer-side '
+                                    'and employer-side readings',
+                         'headers': ['Contested Question',
+                                     'Critic or Payer-Side Position',
+                                     'Provider-Side or Alternative Position',
+                                     'Expert Source'],
+                         'rows': [['Why dispute volume exploded far past forecasts',
+                                   'Regulators expected 17,000 disputes yearly, providers filed 2.6 '
+                                   'million in 2025',
+                                   'The 17,000 forecast used New York data excluding emergency medicine '
+                                   'entirely',
+                                   'Long Reads, Explained ([cSaC2n-3r9o @ 00:06:58]); HaloMD ([oEWBNDsvXOQ '
+                                   '@ 00:09:18])'],
+                                  ['How large the real annual run rate is',
+                                   'Anesthesia operator calls the actual run rate 5 million disputes '
+                                   'yearly',
+                                   'Sawhney counts 2.2 million disputes in 2025 with half from five '
+                                   'vendors',
+                                   'About The Rest ([x35n4T9CppE @ 00:01:40]); Payerset ([lqE3aZxq024 @ '
+                                   '00:09:31])'],
+                                  ['Whether insurers or providers are lowballing the process',
+                                   'Hoadley says 90% of insurer offers sit at or above the QPA',
+                                   '24% of insurer losses were defaults and 8.2% offered $1 or less',
+                                   'Long Reads, Explained ([cSaC2n-3r9o @ 00:11:39]); HaloMD ([oEWBNDsvXOQ '
+                                   '@ 00:30:43])'],
+                                  ['Whether the QPA benchmark itself is fair',
+                                   'Sawhney says QPA is too low but awards run 10x to 100x market',
+                                   'HaloMD says ghost-rate removal lifts rates up to 600% and medians 290% '
+                                   'higher',
+                                   'Payerset ([lqE3aZxq024 @ 00:08:45]); HaloMD ([oEWBNDsvXOQ @ '
+                                   '00:37:04])'],
+                                  ['Whether the NSA saved money or added cost',
+                                   'Texas pool spent over $20 million extra in claims and fees',
+                                   'HaloMD claims about $3 billion emergency-medicine savings versus '
+                                   'pre-NSA levels',
+                                   'Texas Business group on Health ([8zjJbZyS2j8 @ 00:14:40]); HaloMD '
+                                   '([oEWBNDsvXOQ @ 00:40:23])'],
+                                  ['How to choose an IDR entity for disputes',
+                                   'Bricker says provider win rates range 90% to 33% across roughly 15 '
+                                   'contractors',
+                                   'HaloMD ranks win ratio about fifth and prioritizes refund speed above '
+                                   'everything',
+                                   'AHealthcareZ - Healthcare Finance Explained ([6E_HRECi-t8 @ '
+                                   '00:05:53]); HaloMD ([g2udecJ21bI @ 00:28:04])'],
+                                  ['Which legislative fix should replace the current system',
+                                   'Adler prefers a 250% of Medicare benchmark or an in-network guarantee',
+                                   'HaloMD urges support for the Murphy bill while Pallone would end IDR '
+                                   'in 2028',
+                                   'Health Tech Nerds ([c7whA-tTpq4 @ 00:12:00]); Top Hospitals USA '
+                                   '([eDCqqjk5fqk @ 00:04:55])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first trap is filing claims that cannot pay for themselves. Eric '
+                              'Christensen of the Neiman Health Policy Institute puts the expected cost to '
+                              'enter IDR at $173 to $455 once the administrative fee and the loser-pays '
+                              'entity fee are blended, with entity fees climbing as high as $1,173 in 2024 '
+                              '[rYqWvbw_kGo @ 00:02:41]. At a realistic recovery of one quarter of the '
+                              'charge-minus-QPA gap, IDR pencils out for only 11% to 22% of radiology '
+                              'claims, leaving three-quarters to nine-tenths of radiology claims '
+                              'underwater, and the average radiology batch held just 2.2 claims under the '
+                              "2023 batching rules [rYqWvbw_kGo @ 00:04:54]. HaloMD's Alla Laro confirms "
+                              "the pain from the filer side, flagging the fee burden that radiology's "
+                              'small claims carry into every dispute [g2udecJ21bI @ 00:17:45]. Then the '
+                              'economics flipped: the About The Rest operator reports the fee falling from '
+                              '$115 to $15 and predicts that groups running an IDR engine will thrive '
+                              'while everyone else gets screwed [x35n4T9CppE @ 00:01:40]. The pre-filing '
+                              'check is plain arithmetic on fee exposure against a quarter-share of the '
+                              'delta, and Christensen adds a structural warning on top: because the QPA '
+                              'sits below in-network rates, clinicians lose bargaining leverage, so a lost '
+                              'dispute costs more than the entity fee alone.',
+                              'The second trap is winning on paper and never getting paid. Laro says about '
+                              '70% of disputes are paid late even though payment is due within 30 calendar '
+                              'days, and that payers raise objections after awards despite a 3-day '
+                              'statutory objection window and award finality [g2udecJ21bI @ 00:16:53]. '
+                              'Megan Roush traces 95% of payment failures to missing data such as the EOB '
+                              'and award letter, tells filers to send that packet proactively, net out '
+                              'recoup-and-repay remittances, and stop trusting CARC and RARC codes '
+                              "[g2udecJ21bI @ 00:23:45]. HaloMD's employer-facing webinar claims one in "
+                              'four or more awards are withheld, pushes employers to grill their TPAs with '
+                              'uncomfortable questions, and flags anecdotal shared-savings fees charged on '
+                              'the award delta [oEWBNDsvXOQ @ 00:44:51]. Enforcement is thin on every side '
+                              'of the table. Loren Adler notes there is no clear private right of action, '
+                              'courts are split, and the government can fine insurers but has not done so '
+                              '[c7whA-tTpq4 @ 00:08:12]. The Crowell litigator at the Texas webinar adds '
+                              'that courts have dismissed nearly all IDR process cases, which matches the '
+                              'About The Rest report that payers suing everyone have lost or been '
+                              'dismissed. An award is a receivable, and the collection workflow decides '
+                              'realized yield.',
+                              'The third set of failures lands on self-funded plans. The Texas Health '
+                              'Benefits Pool pushed 9,000-plus claims through review, found 370 ineligible '
+                              'worth about $200,000, and could not appeal any of them [8zjJbZyS2j8 @ '
+                              '00:17:00]. The City of San Antonio watched IDR claims climb from $18 '
+                              'million in FY25 to a projected $43 million in FY26, with fees jumping from '
+                              '$1.4 million to $10.5 million, until 24% of medical claims spend went to '
+                              "IDR [8zjJbZyS2j8 @ 00:28:17]. Sawhney's elective-surgery warning is the "
+                              'nastiest leak: an unsigned consent form lets a physician file, assistant '
+                              'surgeons, anesthesiologists, and neuromonitoring providers are interlinked, '
+                              'and a $20,000 to $40,000 surgery can turn into $500,000 to $800,000 '
+                              '[lqE3aZxq024 @ 00:20:47]. Detection is the bottleneck because reason codes '
+                              'exist but are often not shared; the tell Sawhney teaches is a payment '
+                              'reversed two to six months later and repaid much higher [lqE3aZxq024 @ '
+                              '00:39:40]. Jennifer Hoff adds that plans with lower stop-loss attachment '
+                              'points are the exposed ones, and Sawhney notes there is no appeal, with the '
+                              'only recourse a CMS web gripe. Plans that cannot see these claims, in Dr. '
+                              "Eric Bricker's words, are almost de facto not adequate fiduciaries."],
+               'table': {'caption': 'Firsthand IDR failure modes with the economics check each '
+                                    'practitioner reported',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Filing small radiology claims that cannot cover fees',
+                                   'Quarter recovery makes IDR viable for only 11% to 22% of radiology '
+                                   'claims',
+                                   'Expected entry cost runs $173 to $455 per dispute before any award',
+                                   'AJR Radiology ([rYqWvbw_kGo @ 00:04:54])'],
+                                  ['Winning awards that payers pay late or never pay',
+                                   'Market-wide 60% of awards are paid late and 25% to 30% unpaid',
+                                   'HaloMD clients report 80% to 85% paid on time with proactive follow-up',
+                                   'HaloMD ([g2udecJ21bI @ 00:51:33])'],
+                                  ['Employer pool unable to contest ineligible claims already paid',
+                                   'Texas pool found 370 ineligible claims worth about $200,000 with no '
+                                   'appeal',
+                                   'Ineligible awards become sunk cost once the arbitration entity rules',
+                                   'Texas Business group on Health ([8zjJbZyS2j8 @ 00:17:00])'],
+                                  ['Low stop-loss attachment points exposed to IDR award spikes',
+                                   'Hoff warns lower attachment points are where IDR awards hit hardest',
+                                   'Assistant surgeon awards reach 25x and path or lab 65x in-network '
+                                   'averages',
+                                   'Texas Business group on Health ([8zjJbZyS2j8 @ 00:18:48])'],
+                                  ['Provider revenue collapse before an IDR program matures',
+                                   'Nutex revenue fell 35% when the NSA started across 24 hospitals',
+                                   'IDR results took four to five months, then revenue rose 270% year over '
+                                   'year',
+                                   'HaloMD ([g2udecJ21bI @ 00:38:19])'],
+                                  ['Payers suing to overturn awards and losing in court',
+                                   'Payers appear to have lost or had all suits dismissed by courts',
+                                   'Courts redirect payers back to the regulatory process instead of '
+                                   'relief',
+                                   'About The Rest ([x35n4T9CppE @ 00:02:13])'],
+                                  ['Resubmission chaos after closures and eligibility errors',
+                                   'Zelis calls resubmission chaotic, leaving payers in a gray zone',
+                                   'CMS resubmission links take three to six months to arrive for filers',
+                                   'Zelis Healthcare ([lhoUoQSpOCg @ 00:02:49]); HaloMD ([g2udecJ21bI @ '
+                                   '00:18:50])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Filing or Paying Another IDR Dispute',
+                           'body': 'Each check below comes straight from a practitioner who lost money, '
+                                   'lost time, or lost a dispute on the point. Run all four before the '
+                                   'next batch goes out or the next award gets paid.',
+                           'items': ['Verify benefits before filing, because 20 states run bifurcated '
+                                     'state and NSA rules, deadlines fall at 3, 4, and 10 days, and '
+                                     'open-negotiation notices sent to wrong addresses such as MultiPlan '
+                                     'or Zelis sink disputes [HaloMD — g2udecJ21bI @ 00:44:00].',
+                                     'Enroll in ACH refunds with all 11 IDR entities, including those that '
+                                     'require verbal bank authentication, and request custom reports '
+                                     'weekly from the 6 entities that offer them [HaloMD — g2udecJ21bI @ '
+                                     '00:21:09].',
+                                     'Price every claim against the fee load first, since a one-quarter '
+                                     'recovery of the charge-minus-QPA gap leaves only 11% to 22% of '
+                                     'radiology claims viable [AJR Radiology — rYqWvbw_kGo @ 00:04:54].',
+                                     'On the plan side, demand claims data with IDR claims flagged and '
+                                     "expect the carrier to say it can't or won't, because not knowing "
+                                     'which claims went through IDR is almost de facto inadequate '
+                                     'fiduciary conduct [AHealthcareZ - Healthcare Finance Explained — '
+                                     '6E_HRECi-t8 @ 00:07:50].']}}],
+ 'pull_quote': '"Today, 24% of our medical claims spend is just on IDR." — Renee Freda, City of San '
+               'Antonio, attributed to Texas Business group on Health (8zjJbZyS2j8 @ 00:28:17).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Demand your claims file from the carrier with every IDR claim flagged, and document '
+                      "the refusal when the answer is that they can't or won't (AHealthcareZ - Healthcare "
+                      'Finance Explained, 6E_HRECi-t8 @ 00:07:36).',
+                      'Scan payment history for claims paid, reversed two to six months later, and repaid '
+                      'at a much higher amount, since IDR reason codes are often withheld (Payerset, '
+                      'lqE3aZxq024 @ 00:39:40).',
+                      'Put your TPA through a set of uncomfortable questions on withheld awards and '
+                      'shared-savings fees charged on the delta (HaloMD, oEWBNDsvXOQ @ 00:44:51).',
+                      'Select IDR entities on refund speed, eligibility accuracy, batching flexibility, '
+                      'and timeliness first, ranking win ratio around fifth, and lock agreement before '
+                      'midnight to avoid the random pool (HaloMD, g2udecJ21bI @ 00:28:04).',
+                      'Send the EOB and award letter to the payer proactively on every win, since 95% of '
+                      'payment failures trace to missing data (HaloMD, g2udecJ21bI @ 00:23:45).',
+                      'Steer members to Green Imaging, Tap telehealth, and DPC, and opt into the state IDR '
+                      'where available, to shrink exposure at the source (Texas Business group on Health, '
+                      '8zjJbZyS2j8 @ 00:20:25).'],
+ 'statutory_citations': [{'title': 'Zelis Healthcare — Trends & Insights from 2024 CMS IDR Data | What’s '
+                                   'Changing in No Surprises Act Disputes [00:01:25]',
+                          'url': 'https://www.youtube.com/watch?v=lhoUoQSpOCg&t=85s',
+                          'relevance': 'Primary practitioner testimony on 2024 provider win rates of 85%, '
+                                       'average awards of 445% of QPA, and filer concentration.'},
+                         {'title': 'Texas Business group on Health — No Surprises Act IDR Challenge '
+                                   'Webinar [00:28:17]',
+                          'url': 'https://www.youtube.com/watch?v=8zjJbZyS2j8&t=1697s',
+                          'relevance': 'Primary practitioner testimony on self-funded employer losses, '
+                                       'ineligible claims, and IDR share of medical spend.'},
+                         {'title': 'HaloMD — The Truth Is in the Data: Myths, Reality & What’s Next in IDR '
+                                   'Under the NSA | Becker’s x HaloMD [00:30:43]',
+                          'url': 'https://www.youtube.com/watch?v=oEWBNDsvXOQ&t=1843s',
+                          'relevance': 'Primary practitioner testimony on the provider-side rebuttal '
+                                       'covering volume forecasts, insurer defaults, and QPA accuracy.'},
+                         {'title': 'Long Reads, Explained — No Surprises Act arbitration is driving 2027 '
+                                   'premium spike [00:15:45]',
+                          'url': 'https://www.youtube.com/watch?v=cSaC2n-3r9o&t=945s',
+                          'relevance': 'Primary practitioner testimony on IDR as the largest driver of the '
+                                       'projected premium rise.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '6E_HRECi-t8',
+                       'title': 'No Surprises Act Independent Dispute Resolution Drives Up Healthcare '
+                                'Costs in America',
+                       'channel': 'AHealthcareZ - Healthcare Finance Explained',
+                       'author': 'AHealthcareZ - Healthcare Finance Explained',
+                       'text': 'The provider, the physician groups win 80 to 85% of the time.',
+                       'tip': 'The provider, the physician groups win 80 to 85% of the time.',
+                       'timestamp': 139,
+                       'timestamp_seconds': 139,
+                       'timestamp_label': '[00:02:19]',
+                       'url': 'https://www.youtube.com/watch?v=6E_HRECi-t8&t=139s',
+                       'markdown': '[00:02:19](https://www.youtube.com/watch?v=6E_HRECi-t8&t=139s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rYqWvbw_kGo',
+                       'title': 'Financial Viability of the No Surprises Act Independent Dispute '
+                                'Resolution Process',
+                       'channel': 'AJR Radiology',
+                       'author': 'AJR Radiology',
+                       'text': 'Recovering one quarter of the difference makes the IDR process viable for '
+                               'only 11 to 22 percent of radiology claims.',
+                       'tip': 'Recovering one quarter of the difference makes the IDR process viable for '
+                              'only 11 to 22 percent of radiology claims.',
+                       'timestamp': 294,
+                       'timestamp_seconds': 294,
+                       'timestamp_label': '[00:04:54]',
+                       'url': 'https://www.youtube.com/watch?v=rYqWvbw_kGo&t=294s',
+                       'markdown': '[00:04:54](https://www.youtube.com/watch?v=rYqWvbw_kGo&t=294s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lqE3aZxq024',
+                       'title': 'How the No Surprises Act Impacts Employers + Navigating the IDR Payment '
+                                'System with Tia Goss Sawhney',
+                       'channel': 'Payerset',
+                       'author': 'Payerset',
+                       'text': 'So, therefore, ignorance is expensive.',
+                       'tip': 'So, therefore, ignorance is expensive.',
+                       'timestamp': 2306,
+                       'timestamp_seconds': 2306,
+                       'timestamp_label': '[00:38:26]',
+                       'url': 'https://www.youtube.com/watch?v=lqE3aZxq024&t=2306s',
+                       'markdown': '[00:38:26](https://www.youtube.com/watch?v=lqE3aZxq024&t=2306s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lhoUoQSpOCg',
+                       'title': 'Trends & Insights from 2024 CMS IDR Data | What’s Changing in No '
+                                'Surprises Act Disputes',
+                       'channel': 'Zelis Healthcare',
+                       'author': 'Zelis Healthcare',
+                       'text': 'Furthermore entities are inconsistent in their decisions.',
+                       'tip': 'Furthermore entities are inconsistent in their decisions.',
+                       'timestamp': 148,
+                       'timestamp_seconds': 148,
+                       'timestamp_label': '[00:02:28]',
+                       'url': 'https://www.youtube.com/watch?v=lhoUoQSpOCg&t=148s',
+                       'markdown': '[00:02:28](https://www.youtube.com/watch?v=lhoUoQSpOCg&t=148s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cSaC2n-3r9o',
+                       'title': 'No Surprises Act arbitration is driving 2027 premium spike',
+                       'channel': 'Long Reads, Explained',
+                       'author': 'Long Reads, Explained',
+                       'text': 'In twenty twenty-five, providers filed two point six million disputes.',
+                       'tip': 'In twenty twenty-five, providers filed two point six million disputes.',
+                       'timestamp': 418,
+                       'timestamp_seconds': 418,
+                       'timestamp_label': '[00:06:58]',
+                       'url': 'https://www.youtube.com/watch?v=cSaC2n-3r9o&t=418s',
+                       'markdown': '[00:06:58](https://www.youtube.com/watch?v=cSaC2n-3r9o&t=418s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'x35n4T9CppE',
+                       'title': 'The No Surprises Act Created a Monster',
+                       'channel': 'About The Rest',
+                       'author': 'About The Rest',
+                       'text': "So, now you're going to have a tidal wave.",
+                       'tip': "So, now you're going to have a tidal wave.",
+                       'timestamp': 116,
+                       'timestamp_seconds': 116,
+                       'timestamp_label': '[00:01:56]',
+                       'url': 'https://www.youtube.com/watch?v=x35n4T9CppE&t=116s',
+                       'markdown': '[00:01:56](https://www.youtube.com/watch?v=x35n4T9CppE&t=116s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8zjJbZyS2j8',
+                       'title': 'No Surprises Act IDR Challenge Webinar',
+                       'channel': 'Texas Business group on Health',
+                       'author': 'Texas Business group on Health',
+                       'text': 'Self-funded employers bear about 90% of these IDR costs.',
+                       'tip': 'Self-funded employers bear about 90% of these IDR costs.',
+                       'timestamp': 3119,
+                       'timestamp_seconds': 3119,
+                       'timestamp_label': '[00:51:59]',
+                       'url': 'https://www.youtube.com/watch?v=8zjJbZyS2j8&t=3119s',
+                       'markdown': '[00:51:59](https://www.youtube.com/watch?v=8zjJbZyS2j8&t=3119s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8zjJbZyS2j8',
+                       'title': 'No Surprises Act IDR Challenge Webinar',
+                       'channel': 'Texas Business group on Health',
+                       'author': 'Texas Business group on Health',
+                       'text': 'Today, 24% of our medical claims spend is just on IDR.',
+                       'tip': 'Today, 24% of our medical claims spend is just on IDR.',
+                       'timestamp': 1697,
+                       'timestamp_seconds': 1697,
+                       'timestamp_label': '[00:28:17]',
+                       'url': 'https://www.youtube.com/watch?v=8zjJbZyS2j8&t=1697s',
+                       'markdown': '[00:28:17](https://www.youtube.com/watch?v=8zjJbZyS2j8&t=1697s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eDCqqjk5fqk',
+                       'title': 'Surprise Bills Are Illegal — So Why Did Arbitration Just Hit $15 Billion?',
+                       'channel': 'Top Hospitals USA',
+                       'author': 'Top Hospitals USA',
+                       'text': 'The arbitration firms themselves collected about $1.3 billion in fees.',
+                       'tip': 'The arbitration firms themselves collected about $1.3 billion in fees.',
+                       'timestamp': 155,
+                       'timestamp_seconds': 155,
+                       'timestamp_label': '[00:02:35]',
+                       'url': 'https://www.youtube.com/watch?v=eDCqqjk5fqk&t=155s',
+                       'markdown': '[00:02:35](https://www.youtube.com/watch?v=eDCqqjk5fqk&t=155s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oEWBNDsvXOQ',
+                       'title': 'The Truth Is in the Data: Myths, Reality & What’s Next in IDR Under the '
+                                'NSA | Becker’s x HaloMD',
+                       'channel': 'HaloMD',
+                       'author': 'HaloMD',
+                       'text': 'The public use files will show you that 24% of insurer losses were related '
+                               'to default in which the insurer did not submit any offer at all in the '
+                               'process.',
+                       'tip': 'The public use files will show you that 24% of insurer losses were related '
+                              'to default in which the insurer did not submit any offer at all in the '
+                              'process.',
+                       'timestamp': 1843,
+                       'timestamp_seconds': 1843,
+                       'timestamp_label': '[00:30:43]',
+                       'url': 'https://www.youtube.com/watch?v=oEWBNDsvXOQ&t=1843s',
+                       'markdown': '[00:30:43](https://www.youtube.com/watch?v=oEWBNDsvXOQ&t=1843s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nJ_2pYeUX80',
+                       'title': 'IDR Payment Count Hack',
+                       'channel': 'Jan Miller - Student Loan Consultant',
+                       'author': 'Jan Miller - Student Loan Consultant',
+                       'text': 'So, it came available in January and then it disappeared in March.',
+                       'tip': 'So, it came available in January and then it disappeared in March.',
+                       'timestamp': 55,
+                       'timestamp_seconds': 55,
+                       'timestamp_label': '[00:00:55]',
+                       'url': 'https://www.youtube.com/watch?v=nJ_2pYeUX80&t=55s',
+                       'markdown': '[00:00:55](https://www.youtube.com/watch?v=nJ_2pYeUX80&t=55s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'p0ekuvIETYc',
+                       'title': 'IDR Account Adjustment',
+                       'channel': 'NextChapter',
+                       'author': 'NextChapter',
+                       'text': 'This has been around since 1993.',
+                       'tip': 'This has been around since 1993.',
+                       'timestamp': 359,
+                       'timestamp_seconds': 359,
+                       'timestamp_label': '[00:05:59]',
+                       'url': 'https://www.youtube.com/watch?v=p0ekuvIETYc&t=359s',
+                       'markdown': '[00:05:59](https://www.youtube.com/watch?v=p0ekuvIETYc&t=359s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'l05EHgbqGQ8',
+                       'title': 'New IDR Plans (Income-Driven Repayment) for Student Debt | Student Loan '
+                                'Webinar 2026 Recap',
+                       'channel': 'Strategic Wealth Design',
+                       'author': 'Strategic Wealth Design',
+                       'text': "And so it's the most costly monthly payment.",
+                       'tip': "And so it's the most costly monthly payment.",
+                       'timestamp': 153,
+                       'timestamp_seconds': 153,
+                       'timestamp_label': '[00:02:33]',
+                       'url': 'https://www.youtube.com/watch?v=l05EHgbqGQ8&t=153s',
+                       'markdown': '[00:02:33](https://www.youtube.com/watch?v=l05EHgbqGQ8&t=153s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wAiC4TUQNvs',
+                       'title': 'IDR Scenarios- Title I, Part C',
+                       'channel': 'Identification and Recruitment Consortium',
+                       'author': 'Identification and Recruitment Consortium',
+                       'text': 'Um, and also we always want to remind you that whatever your state says is '
+                               'what you do.',
+                       'tip': 'Um, and also we always want to remind you that whatever your state says is '
+                              'what you do.',
+                       'timestamp': 50,
+                       'timestamp_seconds': 50,
+                       'timestamp_label': '[00:00:50]',
+                       'url': 'https://www.youtube.com/watch?v=wAiC4TUQNvs&t=50s',
+                       'markdown': '[00:00:50](https://www.youtube.com/watch?v=wAiC4TUQNvs&t=50s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'c7whA-tTpq4',
+                       'title': 'How the No Surprises Act solved balance billing but created a pricing '
+                                'problem | Loren Adler',
+                       'channel': 'Health Tech Nerds',
+                       'author': 'Health Tech Nerds',
+                       'text': "Those don't just come out of insurer margins.",
+                       'tip': "Those don't just come out of insurer margins.",
+                       'timestamp': 270,
+                       'timestamp_seconds': 270,
+                       'timestamp_label': '[00:04:30]',
+                       'url': 'https://www.youtube.com/watch?v=c7whA-tTpq4&t=270s',
+                       'markdown': '[00:04:30](https://www.youtube.com/watch?v=c7whA-tTpq4&t=270s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qM_Np937JnY',
+                       'title': 'No Surprises Act: Dispute Resolution Data',
+                       'channel': 'HealthWatch Wisconsin',
+                       'author': 'HealthWatch Wisconsin',
+                       'text': '81 percent of the disputes originated from emergency room visits.',
+                       'tip': '81 percent of the disputes originated from emergency room visits.',
+                       'timestamp': 50,
+                       'timestamp_seconds': 50,
+                       'timestamp_label': '[00:00:50]',
+                       'url': 'https://www.youtube.com/watch?v=qM_Np937JnY&t=50s',
+                       'markdown': '[00:00:50](https://www.youtube.com/watch?v=qM_Np937JnY&t=50s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'g2udecJ21bI',
+                       'title': "Becker's Healthcare Webinar: Navigating Headwinds and Tailwinds in IDR "
+                                'under NSA',
+                       'channel': 'HaloMD',
+                       'author': 'HaloMD',
+                       'text': 'You can see based on the most recent report from CMS, providers are '
+                               "winning 86% of the time and that's a 2% increase from last time CMS "
+                               'reported which was 84% of the time.',
+                       'tip': 'You can see based on the most recent report from CMS, providers are winning '
+                              "86% of the time and that's a 2% increase from last time CMS reported which "
+                              'was 84% of the time.',
+                       'timestamp': 441,
+                       'timestamp_seconds': 441,
+                       'timestamp_label': '[00:07:21]',
+                       'url': 'https://www.youtube.com/watch?v=g2udecJ21bI&t=441s',
+                       'markdown': '[00:07:21](https://www.youtube.com/watch?v=g2udecJ21bI&t=441s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'g2udecJ21bI',
+                       'title': "Becker's Healthcare Webinar: Navigating Headwinds and Tailwinds in IDR "
+                                'under NSA',
+                       'channel': 'HaloMD',
+                       'author': 'HaloMD',
+                       'text': 'CMS is incredibly backlogged.',
+                       'tip': 'CMS is incredibly backlogged.',
+                       'timestamp': 3362,
+                       'timestamp_seconds': 3362,
+                       'timestamp_label': '[00:56:02]',
+                       'url': 'https://www.youtube.com/watch?v=g2udecJ21bI&t=3362s',
+                       'markdown': '[00:56:02](https://www.youtube.com/watch?v=g2udecJ21bI&t=3362s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'}]}

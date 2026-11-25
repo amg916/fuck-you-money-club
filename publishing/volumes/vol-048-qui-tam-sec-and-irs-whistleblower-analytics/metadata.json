@@ -9,49 +9,49 @@
       "ANALYTICS"
     ],
     "deck": [
-      "FIND ANOMALIES. BUILD EVIDENCE.",
-      "SEPARATE SIGNAL FROM ALLEGATION."
+      "INSIDERS WITH DOCUMENTS WIN: SEALED COMPLAINTS, WRITTEN DISCLOSURES, AND 15 TO 30 PERCENT RELATOR SHARES",
+      "CASE SCREENS BUILT ON $10 MILLION DAMAGES FLOORS, FIRST-TO-FILE TIMING, AND STRICT SILENCE DISCIPLINE"
     ],
-    "lead": "Turn lawfully obtained data into counsel-ready investigative leads without mistaking anomalies for proven misconduct.",
-    "summary": "False Claims Act, SEC, and IRS matters have different standing, original-information, procedure, and award requirements, with uncertain outcomes and potentially multiyear collection timelines. Keep eligible whistleblower awards separate from lawful research retainers and counsel-directed analytics services, underwriting service work on its own margin rather than treating contingent awards as recurring revenue.",
+    "lead": "Insider relators who stay silent, gather documents lawfully, and file a sealed complaint through experienced counsel turn a lie connected to a federal dollar into treble damages, per-claim penalties, and a 15 to 30 percent share of the government's recovery.",
+    "summary": "All 12 chapters synthesize 166 verbatim YouTube practitioner testimonies, with every claim carrying timestamped inline attribution to its source channel and video. Coverage runs from False Claims Act origins and relator intake through the qui tam lifecycle, data-mined DOJ enforcement, healthcare, contractor, customs, and relief-loan fraud, and the SEC and IRS whistleblower programs.",
     "chapters": [
-      "Q1: The Evidence-First Analytics Thesis",
-      "Q2: FCA, SEC & IRS Pathways",
-      "Q3: Research Burn & Award Uncertainty",
-      "Q4: Lawful Access, Seals & Privilege",
-      "Q5: Source Public & Authorized Data",
-      "Q6: Test Anomalies & Alternative Explanations",
-      "Q7: Build a Traceable Evidence Record",
-      "Q8: Separate Awards from Service Revenue",
-      "Q9: Engage Qualified Whistleblower Counsel",
-      "Q10: Operate Secure Case Workflows",
-      "Q11: Control Disclosure & Retaliation Risk",
-      "Q12: Scale Research Without Speculative Claims"
+      "The False Claims Act Engine: Origins, Elements, and Economics",
+      "Relator Intake: Selecting, Building, and Filing a Winning Qui Tam",
+      "Inside the Qui Tam Lifecycle: Intervention, Litigation, Settlement, and Dismissal",
+      "Data-Mined Enforcement: How DOJ Algorithms and Priorities Drive FCA Cases",
+      "Medicare and Medicaid Billing Fraud: Schemes, Red Flags, and Reporting Paths",
+      "Stark and Anti-Kickback: Referral Arrangements as FCA Triggers",
+      "Government Contracts and Cyber-Fraud: FCA Exposure for Contractors",
+      "Beyond Healthcare: Customs Evasion, Relief Loans, Grants, and State FCAs",
+      "The SEC Whistleblower Program: Tips, Awards, and Denials",
+      "Dodd-Frank Protections and the Expanding Financial Bounty Programs",
+      "The IRS Whistleblower Program: Form 211 to Award Check",
+      "Signal vs. Noise: Internal Detection, Acronym Collisions, and Fringe Claims"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Use public records and lawfully accessible information without unauthorized access or data exfiltration."
+        "STAY SILENT",
+        "No press, public posts, or comment-section questions; public information kills original-source status and invites a first-to-file block"
       ],
       [
-        "ANALYZE",
-        "Identify reproducible patterns and test innocent explanations, data errors, and materiality."
+        "AUDIT EXPOSURE",
+        "Answer what you did, what you knew, and when; masterminding, profiting, or delaying the report drastically reduces the award"
       ],
       [
-        "CORROBORATE",
-        "Preserve provenance and distinguish direct evidence, analytical inference, and unresolved questions."
+        "GATHER LAWFULLY",
+        "Photograph documents instead of removing them, confirm lawful access, and skip AI summaries before calling counsel"
       ],
       [
-        "REVIEW",
-        "Have qualified counsel assess eligibility, public-disclosure issues, privilege, deadlines, and reporting duties."
+        "TEST MATERIALITY",
+        "Confirm the payer would refuse to pay for the defect, tie it to government money, and plead who, what, when, where, and how"
       ],
       [
-        "REPORT",
-        "Follow the chosen program's submission requirements and any applicable court-seal restrictions."
+        "SERVE DISCLOSURE",
+        "Serve the written disclosure statement with all material evidence before filing, pleading the full 10-year window and parallel state claims"
       ],
       [
-        "TRACK",
-        "Support authorized follow-up and record outcomes without booking speculative awards as earned revenue."
+        "FILE UNDER SEAL",
+        "The seal starts at 60 days and renews 6 months at a time; DOJ averages about 11 months to decide intervention"
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "DATA-MINED QUI TAM, SEC & IRS WHISTLEBLOWER ANALYTICS",
-  "subtitle": "The Complete Playbook for Forensic Whistleblower Analytics: $95,000–$880,000 USD Annual Operator Revenue, a 1 FT + 2 C Core Pod (3 People), and a 5-Person Scaled Team",
+  "subtitle": "Silence, Seal Discipline, and First-to-File Speed: How Relators, Data Miners, and Bounty Counsel Turn Lawfully Held Evidence Into 15 to 30 Percent Awards Across the False Claims Act, SEC, CFTC, and IRS Form 211 Programs",
   "chapter_count": 12,
-  "total_word_count": 80147,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 75245,
+  "expert_youtube_link_count": 213,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:04Z"
+  "updated_at": "2026-11-25T00:44:08Z"
 }

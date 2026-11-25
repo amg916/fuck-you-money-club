@@ -1,4654 +1,3321 @@
-"""Curated 180-citation No Surprises Act (IDR) Medical Arbitration & Out-of-Network Recovery baseline (15 per chapter across Q1-Q12) mined strictly from verified No Surprises Act (IDR) Medical Arbitration & Out-of-Network Recovery YouTube transcripts."""
+"""100% verbatim YouTube practitioner citations selected directly by Claude across Chapters Q1-Q12 of Volume 045 (No Surprises Act (IDR) Medical Arbitration & Out-of-Network Recovery)."""
 from __future__ import annotations
 
-CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'835',
-     'above',
-     'act',
-     'acuity',
-     'adding',
-     'administrative',
-     'after',
-     'against',
-     'agreement',
-     'air',
-     'ambulance',
-     'amount',
-     'anesthesia',
-     'api',
-     'arbitration',
-     'asc',
-     'assist',
-     'associate',
-     'association',
-     'auditing',
-     'automating',
-     'automation',
-     'avoiding',
-     'award',
-     'awards',
-     'baa',
-     'baseball',
-     'based',
-     'batching',
-     'behavioral',
-     'business',
-     'client',
-     'clients',
-     'firm',
-     'margin',
-     'market',
-     'model',
-     'niche',
-     'operator',
-     'revenue',
-     'service',
-     'value'},
- 2: {'835',
-     'above',
-     'act',
-     'acuity',
-     'adding',
-     'administrative',
-     'after',
-     'against',
-     'agreement',
-     'air',
-     'ambulance',
-     'amount',
-     'anesthesia',
-     'api',
-     'arbitration',
-     'asc',
-     'assist',
-     'associate',
-     'association',
-     'auditing',
-     'automating',
-     'automation',
-     'avoiding',
-     'award',
-     'awards',
-     'baa',
-     'baseball',
-     'based',
-     'batching',
-     'behavioral',
-     'budget',
-     'buyer',
-     'contract',
-     'customer',
-     'decision',
-     'escrow',
-     'fee',
-     'fees',
-     'invoice',
-     'pay',
-     'payment',
-     'pays',
-     'retainer'},
- 3: {'835',
-     'above',
-     'act',
-     'acuity',
-     'adding',
-     'administrative',
-     'after',
-     'against',
-     'agreement',
-     'air',
-     'ambulance',
-     'amount',
-     'anesthesia',
-     'api',
-     'arbitration',
-     'asc',
-     'assist',
-     'associate',
-     'association',
-     'auditing',
-     'automating',
-     'automation',
-     'avoiding',
-     'award',
-     'awards',
-     'baa',
-     'baseball',
-     'based',
-     'batching',
-     'behavioral',
-     'cash',
-     'cashflow',
-     'commission',
-     'cost',
-     'costs',
-     'economics',
-     'margin',
-     'margins',
-     'price',
-     'pricing',
-     'profit',
-     'roi',
-     'unit'},
- 4: {'835',
-     'above',
-     'act',
-     'acuity',
-     'adding',
-     'administrative',
-     'after',
-     'against',
-     'agreement',
-     'air',
-     'ambulance',
-     'amount',
-     'anesthesia',
-     'api',
-     'arbitration',
-     'asc',
-     'assist',
-     'associate',
-     'association',
-     'auditing',
-     'automating',
-     'automation',
-     'avoiding',
-     'award',
-     'awards',
-     'baa',
-     'baseball',
-     'based',
-     'batching',
-     'behavioral',
-     'budget',
-     'capital',
-     'entity',
-     'insurance',
-     'lean',
-     'license',
-     'llc',
-     'setup',
-     'software',
-     'stack',
-     'startup',
-     'tools'},
- 5: {'835',
-     'above',
-     'act',
-     'acuity',
-     'adding',
-     'administrative',
-     'after',
-     'against',
-     'agreement',
-     'air',
-     'ambulance',
-     'amount',
-     'anesthesia',
-     'api',
-     'arbitration',
-     'asc',
-     'assist',
-     'associate',
-     'association',
-     'audit',
-     'auditing',
-     'automating',
-     'automation',
-     'avoid',
-     'avoiding',
-     'award',
-     'awards',
-     'baa',
-     'baseball',
-     'based',
-     'batching',
-     'behavioral',
-     'clawback',
-     'dispute',
-     'edge',
-     'fail',
-     'mistake',
-     'mistakes',
-     'problem',
-     'risk',
-     'risks',
-     'trap',
-     'traps'},
- 6: {'835',
-     'above',
-     'act',
-     'acuity',
-     'adding',
-     'administrative',
-     'after',
-     'against',
-     'agreement',
-     'air',
-     'ambulance',
-     'amount',
-     'anesthesia',
-     'api',
-     'arbitration',
-     'asc',
-     'assist',
-     'associate',
-     'association',
-     'auditing',
-     'automating',
-     'automation',
-     'avoiding',
-     'award',
-     'awards',
-     'baa',
-     'baseball',
-     'based',
-     'batching',
-     'behavioral',
-     'client',
-     'data',
-     'deal',
-     'find',
-     'first',
-     'lead',
-     'leads',
-     'list',
-     'outbound',
-     'prospect',
-     'qualify',
-     'search',
-     'sourcing'},
- 7: {'835',
-     'above',
-     'act',
-     'acuity',
-     'adding',
-     'administrative',
-     'after',
-     'against',
-     'agreement',
-     'air',
-     'ambulance',
-     'amount',
-     'anesthesia',
-     'api',
-     'arbitration',
-     'asc',
-     'assist',
-     'associate',
-     'association',
-     'auditing',
-     'automating',
-     'automation',
-     'avoiding',
-     'award',
-     'awards',
-     'baa',
-     'baseball',
-     'based',
-     'batching',
-     'behavioral',
-     'checklist',
-     'delivery',
-     'execution',
-     'process',
-     'quality',
-     'sop',
-     'step',
-     'steps',
-     'system',
-     'underwriting',
-     'verify',
+CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'scope', 'balance', 'protected', 'foundations', 'surprises', 'billing', 'services'},
+ 2: {'bills', 'ground', 'disputes', 'surprise', 'wild', 'loopholes', 'ambulance', 'patient'},
+ 3: {'compliance',
+     'erisa',
+     'estimates',
+     'faith',
+     'good',
+     'laws',
+     'layer',
+     'methodology',
+     'preemption',
+     'state'},
+ 4: {'eligibility',
+     'federal',
+     'filing',
+     'initiation',
+     'negotiation',
+     'open',
+     'screening',
      'workflow'},
- 8: {'835',
-     'above',
-     'act',
-     'acuity',
-     'adding',
-     'administrative',
-     'after',
-     'against',
-     'agreement',
-     'air',
-     'ambulance',
-     'amount',
-     'anesthesia',
-     'api',
-     'arbitration',
-     'asc',
-     'assist',
-     'associate',
-     'association',
-     'auditing',
-     'automating',
-     'automation',
-     'avoiding',
-     'award',
-     'awards',
-     'baa',
-     'baseball',
-     'based',
-     'batching',
-     'behavioral',
-     'crm',
-     'data',
-     'database',
-     'platform',
-     'portal',
-     'scraper',
-     'search',
-     'software',
-     'tool',
-     'tools',
-     'tracking'},
- 9: {'835',
-     'above',
-     'act',
-     'acuity',
-     'adding',
-     'administrative',
-     'after',
-     'against',
-     'agreement',
-     'air',
-     'ambulance',
-     'amount',
-     'anesthesia',
-     'api',
-     'arbitration',
-     'asc',
-     'assist',
-     'associate',
-     'association',
-     'auditing',
-     'automating',
-     'automation',
-     'avoiding',
-     'award',
-     'awards',
-     'baa',
-     'baseball',
-     'based',
-     'batching',
-     'behavioral',
-     'compliance',
-     'contract',
-     'disclosure',
-     'law',
-     'legal',
-     'license',
-     'outreach',
-     'rules',
-     'script',
-     'state',
-     'terms'},
- 10: {'835',
-      'above',
-      'act',
-      'acuity',
-      'adding',
-      'administrative',
-      'after',
-      'against',
-      'agent',
-      'agreement',
-      'ai',
-      'air',
-      'ambulance',
-      'amount',
-      'anesthesia',
-      'api',
-      'arbitration',
-      'asc',
-      'assist',
-      'associate',
-      'association',
-      'auditing',
-      'automate',
-      'automating',
-      'automation',
-      'avoiding',
-      'award',
-      'awards',
-      'baa',
-      'baseball',
-      'based',
-      'batching',
-      'behavioral',
-      'dashboard',
-      'leverage',
-      'pipeline',
-      'scale',
-      'script',
-      'speed',
-      'template',
-      'workflow'},
- 11: {'835',
-      'above',
-      'act',
-      'acuity',
-      'adding',
-      'administrative',
-      'after',
-      'against',
-      'agreement',
-      'air',
-      'ambulance',
-      'amount',
-      'anesthesia',
-      'api',
-      'arbitration',
-      'asc',
-      'assist',
-      'associate',
-      'association',
-      'auditing',
-      'automating',
-      'automation',
-      'avoiding',
-      'award',
-      'awards',
-      'baa',
-      'baseball',
-      'based',
-      'batching',
-      'behavioral',
-      'contractor',
-      'exit',
-      'hire',
-      'hiring',
-      'kpi',
-      'manager',
-      'operations',
-      'pod',
-      'scale',
-      'scaling',
-      'team',
-      'valuation'},
- 12: {'835',
-      'above',
-      'act',
-      'action',
-      'acuity',
-      'adding',
-      'administrative',
-      'after',
-      'against',
-      'agreement',
-      'air',
-      'ambulance',
-      'amount',
-      'anesthesia',
-      'api',
-      'arbitration',
-      'asc',
-      'assist',
-      'associate',
-      'association',
-      'auditing',
-      'automating',
-      'automation',
-      'avoiding',
-      'award',
-      'awards',
-      'baa',
-      'baseball',
-      'based',
-      'batching',
-      'behavioral',
-      'day',
-      'days',
-      'launch',
-      'milestone',
-      'month',
-      'plan',
-      'roadmap',
-      'sprint',
-      'start',
-      'thirty',
-      'week'}}
+ 5: {'operations', 'final', 'shifting', 'congressional', 'rule', 'rulebook', 'fixes', 'litigation'},
+ 6: {'rates', 'levels', 'award', 'fallout', 'scoreboard', 'premium', 'reading', 'volume'},
+ 7: {'paid', 'battlegrounds', 'unpaid', 'specialty', 'getting', 'winning', 'awards'},
+ 8: {'behavioral', 'claim', 'revenue', 'facility', 'network', 'complex', 'recovery', 'health'},
+ 9: {'reimbursement', 'benefits', 'cash', 'practices', 'superbills', 'submitted', 'patient'},
+ 10: {'revenue', 'back', 'engine', 'cycle', 'workflow', 'front'},
+ 11: {'claims', 'decoding', 'eobs', 'codes', 'eras', 'carc', '1500', 'rarc', 'remittances'},
+ 12: {'kpis', 'back', 'denials', 'recovery', 'scaling', 'automation'}}
 
-BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'MedConsults',
-      'channel': 'MedConsults',
+BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'Jentry Harris',
+      'channel': 'Jentry Harris',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:20:01](https://www.youtube.com/watch?v=YlcvgGZT9eQ&t=1201s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q1 operational verification).',
+      'markdown': '[00:02:13](https://www.youtube.com/watch?v=LNSPlo2_U3c&t=133s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Automation and analytics are finally viable at scale. Value-based care ties '
-              'reimbursement increasingly to outcomes and cost reduction. Eliminating '
-              'administrative waste frees capital to reinvest in care itself.',
-      'timestamp': 1201,
-      'timestamp_label': '[00:20:01]',
-      'timestamp_seconds': 1201,
-      'tip': 'Automation and analytics are finally viable at scale. Value-based care ties '
-             'reimbursement increasingly to outcomes and cost reduction. Eliminating '
-             'administrative waste frees capital to reinvest in care itself.',
-      'title': 'Revenue Cycle Management in Healthcare (Full Course) (MedConsults)',
-      'url': 'https://www.youtube.com/watch?v=YlcvgGZT9eQ&t=1201s',
-      'video_id': 'YlcvgGZT9eQ'},
-     {'author': 'Radiology Partners',
-      'channel': 'Radiology Partners',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:01](https://www.youtube.com/watch?v=q1qFNKqrEcs&t=241s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And the first one was benchmarking. The idea of benchmarking was really, how '
-              'are we going to value that service? Well, people were quickly moved off using '
-              'Medicare as a benchmark. Medicare is not a market based rate, nor was it '
-              'intended to be a market based rate.',
-      'timestamp': 241,
-      'timestamp_label': '[00:04:01]',
-      'timestamp_seconds': 241,
-      'tip': 'And the first one was benchmarking. The idea of benchmarking was really, how are '
-             'we going to value that service? Well, people were quickly moved off using '
-             'Medicare as a benchmark. Medicare is not a market based rate, nor was it '
-             'intended to be a market based rate.',
-      'title': 'Part 1 - Surprise Medical Billing & The No Surprises Act: More Surprises Than '
-               "You'd Think (Radiology Partners)",
-      'url': 'https://www.youtube.com/watch?v=q1qFNKqrEcs&t=241s',
-      'video_id': 'q1qFNKqrEcs'},
-     {'author': 'CMSHHSgov',
-      'channel': 'CMSHHSgov',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:24:39](https://www.youtube.com/watch?v=Sp7aK2UsmlE&t=1479s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Geraldine Doetzer: For air ambulance services that are furnished during 2023 or '
-              'a subsequent year using the service codes on the slide.',
-      'timestamp': 1479,
-      'timestamp_label': '[00:24:39]',
-      'timestamp_seconds': 1479,
-      'tip': 'Geraldine Doetzer: For air ambulance services that are furnished during 2023 or '
-             'a subsequent year using the service codes on the slide.',
-      'title': 'No Surprises Act: Qualifying Payment Amount Calculation Methodology '
-               '(CMSHHSgov)',
-      'url': 'https://www.youtube.com/watch?v=Sp7aK2UsmlE&t=1479s',
-      'video_id': 'Sp7aK2UsmlE'},
-     {'author': 'Apex IONM Solutions',
-      'channel': 'Apex IONM Solutions',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:08](https://www.youtube.com/watch?v=QRrun6dHMIY&t=308s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'re they're going to price it according to the average in network amount for "
-              'that service. But then you can push back on that. You can say, "Hey, this '
-              'amount is too low. " And the insurance company has to negotiate with you or be '
-              'pushed into an arbitration setting.',
-      'timestamp': 308,
-      'timestamp_label': '[00:05:08]',
-      'timestamp_seconds': 308,
-      'tip': "'re they're going to price it according to the average in network amount for "
-             'that service. But then you can push back on that. You can say, "Hey, this amount '
-             'is too low. " And the insurance company has to negotiate with you or be pushed '
-             'into an arbitration setting.',
-      'title': 'Unlocking Hidden Revenue: The No Surprises Act Strategy Providers Are Missing '
-               '(Apex IONM Solutions)',
-      'url': 'https://www.youtube.com/watch?v=QRrun6dHMIY&t=308s',
-      'video_id': 'QRrun6dHMIY'},
-     {'author': 'Medical Billing Education | Behavioral Billing',
-      'channel': 'Medical Billing Education | Behavioral Billing',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:08](https://www.youtube.com/watch?v=yYlBBM1kBMU&t=248s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "She might have to stop coming altogether. This isn't just a client's problem. "
-              "It's a threat to your practice's cash flow. Cash flow is the movement of money "
-              "into and out of your business. If your clients can't afford to continue care, "
-              'your income becomes unstable.',
-      'timestamp': 248,
-      'timestamp_label': '[00:04:08]',
-      'timestamp_seconds': 248,
-      'tip': "She might have to stop coming altogether. This isn't just a client's problem. "
-             "It's a threat to your practice's cash flow. Cash flow is the movement of money "
-             "into and out of your business. If your clients can't afford to continue care, "
-             'your income becomes unstable.',
-      'title': 'The Hidden Costs of Your Out-of-Network Behavioral Health Practice (Medical '
-               'Billing Education | Behavioral Billing)',
-      'url': 'https://www.youtube.com/watch?v=yYlBBM1kBMU&t=248s',
-      'video_id': 'yYlBBM1kBMU'},
-     {'author': 'Outpatient Endovascular & Interventional Society',
-      'channel': 'Outpatient Endovascular & Interventional Society',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[01:00:05](https://www.youtube.com/watch?v=5aFK91a1KPY&t=3605s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I was talking to had no clue what value-based care was. And then higher patient '
-              'satisfaction, long-term follow-up care. Many times people leave the hospital '
-              'after procedure and their they may not get any follow-up. And then little '
-              'things like free parking.',
-      'timestamp': 3605,
-      'timestamp_label': '[01:00:05]',
-      'timestamp_seconds': 3605,
-      'tip': 'I was talking to had no clue what value-based care was. And then higher patient '
-             'satisfaction, long-term follow-up care. Many times people leave the hospital '
-             'after procedure and their they may not get any follow-up. And then little things '
-             'like free parking.',
-      'title': 'Revenue Cycle for OBLs: Payer Contracts, 2026 Coding and Denials | OEIS Annual '
-               'Meeting (Outpatient Endovascular & Interventional Society)',
-      'url': 'https://www.youtube.com/watch?v=5aFK91a1KPY&t=3605s',
-      'video_id': '5aFK91a1KPY'},
-     {'author': 'CMSHHSgov',
-      'channel': 'CMSHHSgov',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:23:53](https://www.youtube.com/watch?v=7lzQt8aAlG0&t=1433s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And there are specific rules that must be filed in order for a party to batch '
-              'items and services together. So, the first is that they must be billed by the '
-              'same provider or group of providers, or the same facility or the same provider '
-              'of air ambulance service.',
-      'timestamp': 1433,
-      'timestamp_label': '[00:23:53]',
-      'timestamp_seconds': 1433,
-      'tip': 'And there are specific rules that must be filed in order for a party to batch '
-             'items and services together. So, the first is that they must be billed by the '
-             'same provider or group of providers, or the same facility or the same provider '
-             'of air ambulance service.',
-      'title': 'An Overview of the Independent Dispute Resolution Process for Disputing '
-               'Parties, Part II (CMSHHSgov)',
-      'url': 'https://www.youtube.com/watch?v=7lzQt8aAlG0&t=1433s',
-      'video_id': '7lzQt8aAlG0'},
-     {'author': 'FOX 26 Houston',
-      'channel': 'FOX 26 Houston',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:38](https://www.youtube.com/watch?v=9dOW3txIHG0&t=98s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Urgent care facilities are not included unless the facilities licensed for '
-              'emergency care If your doctor sends your test results to an out of network lab '
-              ', the lab can still balanced bill. You Also very important is ground ambulance '
-              'service.',
-      'timestamp': 98,
-      'timestamp_label': '[00:01:38]',
-      'timestamp_seconds': 98,
-      'tip': 'Urgent care facilities are not included unless the facilities licensed for '
-             'emergency care If your doctor sends your test results to an out of network lab , '
-             'the lab can still balanced bill. You Also very important is ground ambulance '
-             'service.',
-      'title': 'Loopholes in No Surprises Act can leave some patients with high bills (FOX 26 '
-               'Houston)',
-      'url': 'https://www.youtube.com/watch?v=9dOW3txIHG0&t=98s',
-      'video_id': '9dOW3txIHG0'},
-     {'author': 'Reimbursify',
-      'channel': 'Reimbursify',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:47](https://www.youtube.com/watch?v=of48SgwvfiI&t=647s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Not required on that type of service but if you jump down two sections here '
-              'applied behavioral analysis you can see that this does require '
-              'pre-authorization.',
-      'timestamp': 647,
-      'timestamp_label': '[00:10:47]',
-      'timestamp_seconds': 647,
-      'tip': 'Not required on that type of service but if you jump down two sections here '
-             'applied behavioral analysis you can see that this does require '
-             'pre-authorization.',
-      'title': 'Benefit Verifications 101 - Let your clients check their own out-of-network '
-               'coverage! (Reimbursify)',
-      'url': 'https://www.youtube.com/watch?v=of48SgwvfiI&t=647s',
-      'video_id': 'of48SgwvfiI'},
-     {'author': 'Practical Data Solutions - Healthcare Analytics',
-      'channel': 'Practical Data Solutions - Healthcare Analytics',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:32](https://www.youtube.com/watch?v=4SW5Ihdk8ps&t=512s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Succeed under value-based contracts a big area that i think we're going to get "
-              "into in a little bit is around the risk scoring it's around hcc capture.",
-      'timestamp': 512,
-      'timestamp_label': '[00:08:32]',
-      'timestamp_seconds': 512,
-      'tip': "Succeed under value-based contracts a big area that i think we're going to get "
-             "into in a little bit is around the risk scoring it's around hcc capture.",
-      'title': '5 Best Practices of Revenue Cycle Analytics and Denials Management (Practical '
-               'Data Solutions - Healthcare Analytics)',
-      'url': 'https://www.youtube.com/watch?v=4SW5Ihdk8ps&t=512s',
-      'video_id': '4SW5Ihdk8ps'},
-     {'author': 'Private Practice Skills',
-      'channel': 'Private Practice Skills',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:01](https://www.youtube.com/watch?v=JT1pxEvMFxw&t=421s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Because there's no way of guaranteeing that our clients are actually going to "
-              'submit that out of network super bill now once a new client or an existing.',
-      'timestamp': 421,
-      'timestamp_label': '[00:07:01]',
-      'timestamp_seconds': 421,
-      'tip': "Because there's no way of guaranteeing that our clients are actually going to "
-             'submit that out of network super bill now once a new client or an existing.',
-      'title': 'How the No Surprises Act Impacts your Practice | Good Faith Estimate (Private '
-               'Practice Skills)',
-      'url': 'https://www.youtube.com/watch?v=JT1pxEvMFxw&t=421s',
-      'video_id': 'JT1pxEvMFxw'},
-     {'author': 'IDR Law',
-      'channel': 'IDR Law',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:59](https://www.youtube.com/watch?v=ikQ6l3STH18&t=479s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'As an executive will want to see what advice they gave to the client and this '
-              'was one that came up recently this was in a a firm standard client care letter.',
-      'timestamp': 479,
-      'timestamp_label': '[00:07:59]',
-      'timestamp_seconds': 479,
-      'tip': 'As an executive will want to see what advice they gave to the client and this '
-             'was one that came up recently this was in a a firm standard client care letter.',
-      'title': 'Contentious Clinic: Executor and Administrator Removal Disputes (IDR Law)',
-      'url': 'https://www.youtube.com/watch?v=ikQ6l3STH18&t=479s',
-      'video_id': 'ikQ6l3STH18'},
-     {'author': 'JobRath',
-      'channel': 'JobRath',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:24](https://www.youtube.com/watch?v=I__wJbnhlTw&t=324s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And finally, boxes 25 to 33 contain tax ID, patient account number, total '
-              'charges, amount paid, provider signature information, service facility details, '
-              "and billing provider information. So, while handling denials, you don't need to "
-              'read the complete CMS 1500 form.',
-      'timestamp': 324,
-      'timestamp_label': '[00:05:24]',
-      'timestamp_seconds': 324,
-      'tip': 'And finally, boxes 25 to 33 contain tax ID, patient account number, total '
-             'charges, amount paid, provider signature information, service facility details, '
-             "and billing provider information. So, while handling denials, you don't need to "
-             'read the complete CMS 1500 form.',
-      'title': 'What Is CMS-1500 Form in Medical Billing? How to Read It for Denial Handling? '
-               '#medicalbilling #rcm (JobRath)',
-      'url': 'https://www.youtube.com/watch?v=I__wJbnhlTw&t=324s',
-      'video_id': 'I__wJbnhlTw'},
-     {'author': 'Ensemble',
-      'channel': 'Ensemble',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:12:40](https://www.youtube.com/watch?v=EREvBniyM5c&t=760s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Then rule number two everybody is your neighbor very nice love it thank you '
-              "thank you all right well Beth thanks for joining us today and why don't you do "
-              'the outro for us sure thanks for joining us be on the lookout for additional '
-              'operator insights.',
-      'timestamp': 760,
-      'timestamp_label': '[00:12:40]',
-      'timestamp_seconds': 760,
-      'tip': 'Then rule number two everybody is your neighbor very nice love it thank you '
-             "thank you all right well Beth thanks for joining us today and why don't you do "
-             'the outro for us sure thanks for joining us be on the lookout for additional '
-             'operator insights.',
-      'title': 'Healthcare Revenue Recovery | OPERATOR INSIGHTS | Healthcare Revenue Cycle '
-               'Management, RCM (Ensemble)',
-      'url': 'https://www.youtube.com/watch?v=EREvBniyM5c&t=760s',
-      'video_id': 'EREvBniyM5c'},
-     {'author': 'Patriot Group',
-      'channel': 'Patriot Group',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:16:08](https://www.youtube.com/watch?v=dUdxVBDLf5w&t=968s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Adda Network providers could really maximize their revenue so um it was a '
-              'pleasure speaking with you today thanks likewise merid take care have a nice '
-              'day okay take care.',
-      'timestamp': 968,
-      'timestamp_label': '[00:16:08]',
-      'timestamp_seconds': 968,
-      'tip': 'Adda Network providers could really maximize their revenue so um it was a '
-             'pleasure speaking with you today thanks likewise merid take care have a nice day '
-             'okay take care.',
-      'title': 'How to Generate Revenue for Out-of-Network Medical Claims: Insights with '
-               'Thomas J. Force (Patriot Group)',
-      'url': 'https://www.youtube.com/watch?v=dUdxVBDLf5w&t=968s',
-      'video_id': 'dUdxVBDLf5w'}],
- 2: [{'author': 'MediBill Pro',
-      'channel': 'MediBill Pro',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:54](https://www.youtube.com/watch?v=JpGm6Pmzrk8&t=54s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Fixed amount patient pays at the visit. So, this is basically a fixed amount, '
-              'or we can say that this is a checking fees. Whenever we are just going to visit '
-              'any kind of a doctor, we are going to pay a certain fee at the time of getting '
-              'service.',
-      'timestamp': 54,
-      'timestamp_label': '[00:00:54]',
-      'timestamp_seconds': 54,
-      'tip': 'Fixed amount patient pays at the visit. So, this is basically a fixed amount, or '
-             'we can say that this is a checking fees. Whenever we are just going to visit any '
-             'kind of a doctor, we are going to pay a certain fee at the time of getting '
-             'service.',
-      'title': 'Medical Billing Jobs Interview Q&A | Rejection vs Copay vs Deductible '
-               'Explained (2026 Guide) (MediBill Pro)',
-      'url': 'https://www.youtube.com/watch?v=JpGm6Pmzrk8&t=54s',
-      'video_id': 'JpGm6Pmzrk8'},
-     {'author': 'HealthWatch Wisconsin',
-      'channel': 'HealthWatch Wisconsin',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:47](https://www.youtube.com/watch?v=XZ1MNlkWu4Y&t=47s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Didn't fully determine how much insurers had to pay providers in this situation "
-              'the original rule set a qualifying payment amount based on average.',
-      'timestamp': 47,
-      'timestamp_label': '[00:00:47]',
-      'timestamp_seconds': 47,
-      'tip': "Didn't fully determine how much insurers had to pay providers in this situation "
-             'the original rule set a qualifying payment amount based on average.',
-      'title': 'New Final Rule on No Surprises Act - Explained (HealthWatch Wisconsin)',
-      'url': 'https://www.youtube.com/watch?v=XZ1MNlkWu4Y&t=47s',
-      'video_id': 'XZ1MNlkWu4Y'},
-     {'author': 'CMSHHSgov',
-      'channel': 'CMSHHSgov',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:52:24](https://www.youtube.com/watch?v=RRI2VT8QiiI&t=3144s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'PPDR process to settle payment disputes with providers and facilities. HHS will '
-              'assess the $25 administrative fee in 2022 on the non-prevailing party providers '
-              'facilities and uninsured or self-pay individual to the PPDR process.',
-      'timestamp': 3144,
-      'timestamp_label': '[00:52:24]',
-      'timestamp_seconds': 3144,
-      'tip': 'PPDR process to settle payment disputes with providers and facilities. HHS will '
-             'assess the $25 administrative fee in 2022 on the non-prevailing party providers '
-             'facilities and uninsured or self-pay individual to the PPDR process.',
-      'title': 'No Surprises Act: Understanding Good Faith Estimates & Patient Provider '
-               'Dispute Resolution Reqs (CMSHHSgov)',
-      'url': 'https://www.youtube.com/watch?v=RRI2VT8QiiI&t=3144s',
-      'video_id': 'RRI2VT8QiiI'},
-     {'author': 'Craft Your Practice',
-      'channel': 'Craft Your Practice',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:29](https://www.youtube.com/watch?v=tkUfu8WA56U&t=209s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So let's do it once with round numbers. Say your fee is a hundred and fifty "
-              'dollars. The plan decides that the allowed amount for that session is a '
-              "hundred, and the client's out-of-network benefit pays sixty percent after the "
-              'deductible.',
-      'timestamp': 209,
-      'timestamp_label': '[00:03:29]',
-      'timestamp_seconds': 209,
-      'tip': "So let's do it once with round numbers. Say your fee is a hundred and fifty "
-             'dollars. The plan decides that the allowed amount for that session is a hundred, '
-             "and the client's out-of-network benefit pays sixty percent after the deductible.",
-      'title': 'Superbills for Therapists: How Out-of-Network Reimbursement Actually Works '
-               '(Craft Your Practice)',
-      'url': 'https://www.youtube.com/watch?v=tkUfu8WA56U&t=209s',
-      'video_id': 'tkUfu8WA56U'},
-     {'author': 'MD Clarity',
-      'channel': 'MD Clarity',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:08](https://www.youtube.com/watch?v=wnXpxS7_cqA&t=608s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "This means digitizing your contracts and fee schedules, replicating the payer's "
-              'adjudication math, and comparing every payment that comes in against what the '
-              'contract says it should have been at the claim line level.',
-      'timestamp': 608,
-      'timestamp_label': '[00:10:08]',
-      'timestamp_seconds': 608,
-      'tip': "This means digitizing your contracts and fee schedules, replicating the payer's "
-             'adjudication math, and comparing every payment that comes in against what the '
-             'contract says it should have been at the claim line level.',
-      'title': 'Healthcare Underpayments Explained: Causes, Costs, and How to Recover (MD '
-               'Clarity)',
-      'url': 'https://www.youtube.com/watch?v=wnXpxS7_cqA&t=608s',
-      'video_id': 'wnXpxS7_cqA'},
-     {'author': 'Michael Roberts',
-      'channel': 'Michael Roberts',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:36](https://www.youtube.com/watch?v=HolIPG8-TV8&t=96s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'CO45 means $60 over the contracted fee, and the practice writes it off. PR2 is '
-              '$20 of coinsurance that the patient owes. AMT B6 is the allowed amount, $140. '
-              'That is what the payer says the visit is worth under your contract. 200 charged '
-              '60 contractual leaves 140 allowed.',
-      'timestamp': 96,
-      'timestamp_label': '[00:01:36]',
-      'timestamp_seconds': 96,
-      'tip': 'CO45 means $60 over the contracted fee, and the practice writes it off. PR2 is '
-             '$20 of coinsurance that the patient owes. AMT B6 is the allowed amount, $140. '
-             'That is what the payer says the visit is worth under your contract. 200 charged '
-             '60 contractual leaves 140 allowed.',
-      'title': '835 ERA Line by Line    and introducing Professor Remit (Michael Roberts)',
-      'url': 'https://www.youtube.com/watch?v=HolIPG8-TV8&t=96s',
-      'video_id': 'HolIPG8-TV8'},
-     {'author': 'Insured and Informed',
-      'channel': 'Insured and Informed',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:59](https://www.youtube.com/watch?v=wySlaLru-l4&t=179s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Instead of immediately assuming you have to pay the full amount, or even before '
-              "looking into asking your doctor's office for  a reduced payment, a payment.",
-      'timestamp': 179,
-      'timestamp_label': '[00:02:59]',
-      'timestamp_seconds': 179,
-      'tip': 'Instead of immediately assuming you have to pay the full amount, or even before '
-             "looking into asking your doctor's office for  a reduced payment, a payment.",
-      'title': 'My In-Network Doctor Sent My Labs Out-of-Network… Now I Owe $2,000? (Insured '
-               'and Informed)',
-      'url': 'https://www.youtube.com/watch?v=wySlaLru-l4&t=179s',
-      'video_id': 'wySlaLru-l4'},
-     {'author': 'InfiMed Health',
-      'channel': 'InfiMed Health',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:16](https://www.youtube.com/watch?v=uO7nW5fy5Y4&t=76s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '835 remittance parser reads each payment, adjustment and reason code. ERA '
-              'matching ties each remittance line to the right claim and patient account. '
-              'Contract variance detection compares what was paid with what the contract '
-              'allows, and flags any gap.',
-      'timestamp': 76,
-      'timestamp_label': '[00:01:16]',
-      'timestamp_seconds': 76,
-      'tip': '835 remittance parser reads each payment, adjustment and reason code. ERA '
-             'matching ties each remittance line to the right claim and patient account. '
-             'Contract variance detection compares what was paid with what the contract '
-             'allows, and flags any gap.',
-      'title': 'Payment Posting and Reconciliation Explained: From 835 to Bank Deposit '
-               '(InfiMed Health)',
-      'url': 'https://www.youtube.com/watch?v=uO7nW5fy5Y4&t=76s',
-      'video_id': 'uO7nW5fy5Y4'},
-     {'author': 'Vikash Learning',
-      'channel': 'Vikash Learning',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:34](https://www.youtube.com/watch?v=MWf66u11yb8&t=334s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Control number for this specific service line this segment is vital for '
-              'healthcare providers to match payments and comprehend which policy or contract '
-              'is being referred to for the payment information of each service line thank you '
-              'for watching.',
-      'timestamp': 334,
-      'timestamp_label': '[00:05:34]',
-      'timestamp_seconds': 334,
-      'tip': 'Control number for this specific service line this segment is vital for '
-             'healthcare providers to match payments and comprehend which policy or contract '
-             'is being referred to for the payment information of each service line thank you '
-             'for watching.',
-      'title': 'What is CARC, RARC, & 835 Healthcare Policy Identification Segment? (Vikash '
-               'Learning)',
-      'url': 'https://www.youtube.com/watch?v=MWf66u11yb8&t=334s',
-      'video_id': 'MWf66u11yb8'},
-     {'author': 'Plano Texas',
-      'channel': 'Plano Texas',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:23:55](https://www.youtube.com/watch?v=w387XkK0lkk&t=1435s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So you provided a service to that patient. The patient pays for those benefits '
-              'and therefore they need to pay you according to those benefits.',
-      'timestamp': 1435,
-      'timestamp_label': '[00:23:55]',
-      'timestamp_seconds': 1435,
-      'tip': 'So you provided a service to that patient. The patient pays for those benefits '
-             'and therefore they need to pay you according to those benefits.',
-      'title': 'ASC Billing - The Top 5 Ways to Increase Out of Network Revenue - MediGain '
-               '(Plano Texas)',
-      'url': 'https://www.youtube.com/watch?v=w387XkK0lkk&t=1435s',
-      'video_id': 'w387XkK0lkk'},
-     {'author': 'Ask The Biller',
-      'channel': 'Ask The Biller',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:45](https://www.youtube.com/watch?v=SdYPzcQPWOw&t=405s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So they pay zero dollars for the remainder of their benefit year and the '
-              'insurance company is going to cover the allowed amount 100 percent so insurance '
-              'reimbursement is going to be 8605 dollars.',
-      'timestamp': 405,
-      'timestamp_label': '[00:06:45]',
-      'timestamp_seconds': 405,
-      'tip': 'So they pay zero dollars for the remainder of their benefit year and the '
-             'insurance company is going to cover the allowed amount 100 percent so insurance '
-             'reimbursement is going to be 8605 dollars.',
-      'title': 'How to Calculate Patient and Payer Responsibility (Copay vs Coinsurance vs '
-               'Deductible) (Ask The Biller)',
-      'url': 'https://www.youtube.com/watch?v=SdYPzcQPWOw&t=405s',
-      'video_id': 'SdYPzcQPWOw'},
-     {'author': 'The Medical Bill Whisperer ',
-      'channel': 'The Medical Bill Whisperer ',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:58](https://www.youtube.com/watch?v=TXjn5syXueM&t=178s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Insurance would pay 100% % but it's 100% of the very low allowance and that "
-              'allowance never amounts to the full amount build and that difference does.',
-      'timestamp': 178,
-      'timestamp_label': '[00:02:58]',
-      'timestamp_seconds': 178,
-      'tip': "Insurance would pay 100% % but it's 100% of the very low allowance and that "
-             'allowance never amounts to the full amount build and that difference does.',
-      'title': 'SHOCKING Truth: How to Get Out-of-Network Providers Paid at In-Network Rates '
-               '(Legally!) (The Medical Bill Whisperer )',
-      'url': 'https://www.youtube.com/watch?v=TXjn5syXueM&t=178s',
-      'video_id': 'TXjn5syXueM'},
-     {'author': 'Inlera University',
-      'channel': 'Inlera University',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:07](https://www.youtube.com/watch?v=-zx82Gn2h04&t=367s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Or CPT code $145 versus $85 so each code has its own fee Associated and I '
-              'noticed I have an allowed amount so noticing the differences between a buildt '
-              'amount.',
-      'timestamp': 367,
-      'timestamp_label': '[00:06:07]',
-      'timestamp_seconds': 367,
-      'tip': 'Or CPT code $145 versus $85 so each code has its own fee Associated and I '
-             'noticed I have an allowed amount so noticing the differences between a buildt '
-             'amount.',
-      'title': 'How to Read an Explanation of Benefits (EOB) & Electronic Remittance Advice '
-               '(ERA) in US Healthcare (Inlera University)',
-      'url': 'https://www.youtube.com/watch?v=-zx82Gn2h04&t=367s',
-      'video_id': '-zx82Gn2h04'},
-     {'author': 'Medical Billing Maven',
-      'channel': 'Medical Billing Maven',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:16](https://www.youtube.com/watch?v=GhRz1M9lxtc&t=76s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Insurance companies sending us information about what happened as far as the '
-              "provider sending them claims we don't really pay attention to.",
-      'timestamp': 76,
-      'timestamp_label': '[00:01:16]',
-      'timestamp_seconds': 76,
-      'tip': 'Insurance companies sending us information about what happened as far as the '
-             "provider sending them claims we don't really pay attention to.",
-      'title': 'ELECTRONIC REMITTANCE ADVICE IN MEDICAL BILLING |WHAT ARE EOBs, RAs AND ERAs | '
-               'BACK TO BASICS PART 3 (Medical Billing Maven)',
-      'url': 'https://www.youtube.com/watch?v=GhRz1M9lxtc&t=76s',
-      'video_id': 'GhRz1M9lxtc'},
-     {'author': 'Collect Rx',
-      'channel': 'Collect Rx',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:16:10](https://www.youtube.com/watch?v=jW7NdP3R2Lc&t=970s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Rates contracted and fee schedule rates are already fixed so out of network is '
-              'the only area where you can really increase rates and improve the bottom.',
-      'timestamp': 970,
-      'timestamp_label': '[00:16:10]',
-      'timestamp_seconds': 970,
-      'tip': 'Rates contracted and fee schedule rates are already fixed so out of network is '
-             'the only area where you can really increase rates and improve the bottom.',
-      'title': "Collect Rx's 6 Keys to Success in Revenue Cycle Management for Out of Network "
-               'Providers (Collect Rx)',
-      'url': 'https://www.youtube.com/watch?v=jW7NdP3R2Lc&t=970s',
-      'video_id': 'jW7NdP3R2Lc'}],
- 3: [{'author': 'Top Hospitals USA',
-      'channel': 'Top Hospitals USA',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:39](https://www.youtube.com/watch?v=eDCqqjk5fqk&t=219s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'It has closed 15,145 of them. Almost all of those, 14,799, were about the No '
-              'Surprises Act. 11,417 were filed against providers, facilities, or air '
-              'ambulance services.',
-      'timestamp': 219,
-      'timestamp_label': '[00:03:39]',
-      'timestamp_seconds': 219,
-      'tip': 'It has closed 15,145 of them. Almost all of those, 14,799, were about the No '
-             'Surprises Act. 11,417 were filed against providers, facilities, or air ambulance '
-             'services.',
-      'title': 'Surprise Bills Are Illegal — So Why Did Arbitration Just Hit $15 Billion? (Top '
-               'Hospitals USA)',
-      'url': 'https://www.youtube.com/watch?v=eDCqqjk5fqk&t=219s',
-      'video_id': 'eDCqqjk5fqk'},
-     {'author': 'Vee Healthtek',
-      'channel': 'Vee Healthtek',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:10](https://www.youtube.com/watch?v=s3194z7bdwY&t=130s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Finally, follow the award through payment. Compare the determination with the '
-              'amount received, escalate unresolved differences, and reconcile the final cash. '
-              'Keep eligible dollars, submitted disputes, awards, and posted payments separate '
-              'in reporting.',
-      'timestamp': 130,
-      'timestamp_label': '[00:02:10]',
-      'timestamp_seconds': 130,
-      'tip': 'Finally, follow the award through payment. Compare the determination with the '
-             'amount received, escalate unresolved differences, and reconcile the final cash. '
-             'Keep eligible dollars, submitted disputes, awards, and posted payments separate '
-             'in reporting.',
-      'title': 'How to Improve Out-of-Network Reimbursement and IDR Recovery (Vee Healthtek)',
-      'url': 'https://www.youtube.com/watch?v=s3194z7bdwY&t=130s',
-      'video_id': 's3194z7bdwY'},
-     {'author': 'Welcome to The Patient Blueprint.',
-      'channel': 'Welcome to The Patient Blueprint.',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:58](https://www.youtube.com/watch?v=tNSTH4Y29D8&t=118s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Surprise billing simply Since 2022, the No Surprises Act bans balance bills for '
-              'emergency care, out-of-network providers at in-network facilities, and air '
-              "ambulance. You owe only your in-network cost sharing. Don't pay a surprise "
-              "balance bill you don't actually owe.",
-      'timestamp': 118,
-      'timestamp_label': '[00:01:58]',
-      'timestamp_seconds': 118,
-      'tip': 'Surprise billing simply Since 2022, the No Surprises Act bans balance bills for '
-             'emergency care, out-of-network providers at in-network facilities, and air '
-             "ambulance. You owe only your in-network cost sharing. Don't pay a surprise "
-             "balance bill you don't actually owe.",
-      'title': 'Surprise Billing & the No Surprises Act Explained (Welcome to The Patient '
-               'Blueprint.)',
-      'url': 'https://www.youtube.com/watch?v=tNSTH4Y29D8&t=118s',
-      'video_id': 'tNSTH4Y29D8'},
-     {'author': 'Payerset',
-      'channel': 'Payerset',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:28](https://www.youtube.com/watch?v=lqE3aZxq024&t=508s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "And so QPA's tend to be too low. So the starting price is too low. The flip "
-              'side though is that providers and their vendors have been very effective at um '
-              'at putting forth and winning arbitration awards that are much much too high.',
-      'timestamp': 508,
-      'timestamp_label': '[00:08:28]',
-      'timestamp_seconds': 508,
-      'tip': "And so QPA's tend to be too low. So the starting price is too low. The flip side "
-             'though is that providers and their vendors have been very effective at um at '
-             'putting forth and winning arbitration awards that are much much too high.',
-      'title': 'How the No Surprises Act Impacts Employers + Navigating the IDR Payment System '
-               'with Tia Goss Sawhney (Payerset)',
-      'url': 'https://www.youtube.com/watch?v=lqE3aZxq024&t=508s',
-      'video_id': 'lqE3aZxq024'},
-     {'author': 'Coalition for Affordable Hospitals',
-      'channel': 'Coalition for Affordable Hospitals',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:13](https://www.youtube.com/watch?v=9SCzxZp8uAE&t=133s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'t agree they go to what's a winner takes all arbitration similar to what major "
-              'league baseball uses for salaries. The doctor and an the insurer each propose a '
-              'price.',
+      'text': "The plan's QPA was roughly $18,000.",
       'timestamp': 133,
       'timestamp_label': '[00:02:13]',
       'timestamp_seconds': 133,
-      'tip': "'t agree they go to what's a winner takes all arbitration similar to what major "
-             'league baseball uses for salaries. The doctor and an the insurer each propose a '
-             'price.',
-      'title': 'Panel - Fixing the No Surprises Act’s Independent Dispute Resolution (IDR) '
-               'Process (Coalition for Affordable Hospitals)',
-      'url': 'https://www.youtube.com/watch?v=9SCzxZp8uAE&t=133s',
-      'video_id': '9SCzxZp8uAE'},
-     {'author': 'Law & Business',
-      'channel': 'Law & Business',
+      'tip': "The plan's QPA was roughly $18,000.",
+      'title': 'The No Surprises Act (NSA) and Independent Dispute Resolution (IDR)',
+      'url': 'https://www.youtube.com/watch?v=LNSPlo2_U3c&t=133s',
+      'video_id': 'LNSPlo2_U3c'},
+     {'author': 'Audio Webinars',
+      'channel': 'Audio Webinars',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:16](https://www.youtube.com/watch?v=88cpe80FbyY&t=376s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q3 operational verification).',
+      'markdown': '[00:03:06](https://www.youtube.com/watch?v=T6j0qhLPruk&t=186s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'The California statute caps patient out-of-pocket costs at the exact rate they '
-              'would pay for an equivalent in-network medical service and prohibits ambulance '
-              'companies from reporting delinquent bills to credit bureaus for at least 12 '
-              'months after billing.',
-      'timestamp': 376,
-      'timestamp_label': '[00:06:16]',
-      'timestamp_seconds': 376,
-      'tip': 'The California statute caps patient out-of-pocket costs at the exact rate they '
-             'would pay for an equivalent in-network medical service and prohibits ambulance '
-             'companies from reporting delinquent bills to credit bureaus for at least 12 '
-             'months after billing.',
-      'title': 'Are Ambulances Covered Under Surprise Billing Laws? (Law & Business)',
-      'url': 'https://www.youtube.com/watch?v=88cpe80FbyY&t=376s',
-      'video_id': '88cpe80FbyY'},
-     {'author': 'Modern Healthcare Finance & RCM',
-      'channel': 'Modern Healthcare Finance & RCM',
+      'text': 'The QPA is presumed correct and equals the median in-network rate, which is not '
+              'good for out of network providers.',
+      'timestamp': 186,
+      'timestamp_label': '[00:03:06]',
+      'timestamp_seconds': 186,
+      'tip': 'The QPA is presumed correct and equals the median in-network rate, which is not good '
+             'for out of network providers.',
+      'title': 'Federal No Surprises Act – The IDR Process, Good Faith Estimates, and What '
+               'Providers Need to Know',
+      'url': 'https://www.youtube.com/watch?v=T6j0qhLPruk&t=186s',
+      'video_id': 'T6j0qhLPruk'},
+     {'author': 'PYA, PC',
+      'channel': 'PYA, PC',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:54](https://www.youtube.com/watch?v=nQA0SW59EWQ&t=234s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q3 operational verification).',
+      'markdown': '[00:33:30](https://www.youtube.com/watch?v=j1DGgPw1__E&t=2010s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "'re more efficient, you're getting your patients discharged sooner, which is "
-              'limiting your cost and preserving your profit margin from that payment that '
-              "you're getting for that patient's stay.",
-      'timestamp': 234,
-      'timestamp_label': '[00:03:54]',
-      'timestamp_seconds': 234,
-      'tip': "'re more efficient, you're getting your patients discharged sooner, which is "
-             'limiting your cost and preserving your profit margin from that payment that '
-             "you're getting for that patient's stay.",
-      'title': 'Hospital Metrics Explained: Patient Days, ADC, ALOS, Adjusted Discharges, Case '
-               'Mix Index (8 Minutes) (Modern Healthcare Finance & RCM)',
-      'url': 'https://www.youtube.com/watch?v=nQA0SW59EWQ&t=234s',
-      'video_id': 'nQA0SW59EWQ'},
-     {'author': 'AJR Radiology',
-      'channel': 'AJR Radiology',
+      'text': 'IDR is a very high risk strategy.',
+      'timestamp': 2010,
+      'timestamp_label': '[00:33:30]',
+      'timestamp_seconds': 2010,
+      'tip': 'IDR is a very high risk strategy.',
+      'title': '“No Surprises Act  The New Independent Dispute Resolution Process”   CPE Webinar',
+      'url': 'https://www.youtube.com/watch?v=j1DGgPw1__E&t=2010s',
+      'video_id': 'j1DGgPw1__E'},
+     {'author': 'PYA, PC',
+      'channel': 'PYA, PC',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:50](https://www.youtube.com/watch?v=rYqWvbw_kGo&t=350s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q3 operational verification).',
+      'markdown': '[00:26:37](https://www.youtube.com/watch?v=j1DGgPw1__E&t=1597s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Final our study can serve as a benchmark when considering the efficacy of '
-              'future IDR cost and batching rules and how they play out for the financial '
-              'viability the process for clinicians.',
-      'timestamp': 350,
-      'timestamp_label': '[00:05:50]',
-      'timestamp_seconds': 350,
-      'tip': 'Final our study can serve as a benchmark when considering the efficacy of future '
-             'IDR cost and batching rules and how they play out for the financial viability '
-             'the process for clinicians.',
-      'title': 'Financial Viability of the No Surprises Act Independent Dispute Resolution '
-               'Process (AJR Radiology)',
-      'url': 'https://www.youtube.com/watch?v=rYqWvbw_kGo&t=350s',
-      'video_id': 'rYqWvbw_kGo'},
-     {'author': 'Etactics',
-      'channel': 'Etactics',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:05](https://www.youtube.com/watch?v=M-Mz0m1tdrQ&t=185s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Imagine how your patients must feel offering Insight on cost estimation and '
-              'coverage can prevent payment surprises and reduce the amount of bills sent to.',
-      'timestamp': 185,
-      'timestamp_label': '[00:03:05]',
-      'timestamp_seconds': 185,
-      'tip': 'Imagine how your patients must feel offering Insight on cost estimation and '
-             'coverage can prevent payment surprises and reduce the amount of bills sent to.',
-      'title': '[ANSWERED] What is Front-End Revenue Cycle Management? (Etactics)',
-      'url': 'https://www.youtube.com/watch?v=M-Mz0m1tdrQ&t=185s',
-      'video_id': 'M-Mz0m1tdrQ'},
-     {'author': 'Collect Rx',
-      'channel': 'Collect Rx',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:37](https://www.youtube.com/watch?v=Pqx2hpp_cLU&t=277s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Well it's important to point out here is that during John's time there he would "
-              'work on cases that would act as cost containment measures for the insurance.',
-      'timestamp': 277,
-      'timestamp_label': '[00:04:37]',
-      'timestamp_seconds': 277,
-      'tip': "Well it's important to point out here is that during John's time there he would "
-             'work on cases that would act as cost containment measures for the insurance.',
-      'title': '6 Keys to Success in Out of Network Reimbursement (Collect Rx)',
-      'url': 'https://www.youtube.com/watch?v=Pqx2hpp_cLU&t=277s',
-      'video_id': 'Pqx2hpp_cLU'},
-     {'author': 'Vee Healthtek',
-      'channel': 'Vee Healthtek',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:13](https://www.youtube.com/watch?v=GpHExH5dquQ&t=73s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The qualifying payment amount or QPA is an important reference point, but it '
-              'does not provide a complete view of potential recovery. Claim evidence, the '
-              'applicable recovery pathway, and collection economics still matter.',
-      'timestamp': 73,
-      'timestamp_label': '[00:01:13]',
-      'timestamp_seconds': 73,
-      'tip': 'The qualifying payment amount or QPA is an important reference point, but it '
-             'does not provide a complete view of potential recovery. Claim evidence, the '
-             'applicable recovery pathway, and collection economics still matter.',
-      'title': 'Out-of-Network Reimbursement: Why Paid Claims Can Still Hide Lost Revenue (Vee '
-               'Healthtek)',
-      'url': 'https://www.youtube.com/watch?v=GpHExH5dquQ&t=73s',
-      'video_id': 'GpHExH5dquQ'},
-     {'author': 'Brown University Health',
-      'channel': 'Brown University Health',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:55](https://www.youtube.com/watch?v=g18RP2cQe_s&t=55s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Pierce] One of the exciting things we're doing at Brown, to innovate in the "
-              'area of regional anesthesia, is using these nerve blocks for rib fractures.',
-      'timestamp': 55,
-      'timestamp_label': '[00:00:55]',
-      'timestamp_seconds': 55,
-      'tip': "Pierce] One of the exciting things we're doing at Brown, to innovate in the area "
-             'of regional anesthesia, is using these nerve blocks for rib fractures.',
-      'title': 'In the Emergency Department: Ultrasound-Guided Anesthetic Blocks (Brown '
-               'University Health)',
-      'url': 'https://www.youtube.com/watch?v=g18RP2cQe_s&t=55s',
-      'video_id': 'g18RP2cQe_s'},
-     {'author': 'FAIR Health',
-      'channel': 'FAIR Health',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:09](https://www.youtube.com/watch?v=WuZrwo-Qxww&t=189s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Also may pay more or less than the estimates on this site review your health '
-              'insurance plan documents for details on your coverage or call your insurer if '
-              'you have any questions see the next video for some additional features of your '
-              'cost estimate page.',
-      'timestamp': 189,
-      'timestamp_label': '[00:03:09]',
-      'timestamp_seconds': 189,
-      'tip': 'Also may pay more or less than the estimates on this site review your health '
-             'insurance plan documents for details on your coverage or call your insurer if '
-             'you have any questions see the next video for some additional features of your '
-             'cost estimate page.',
-      'title': 'Understand Your Medical Cost Estimate — FAIRHealthConsumer.org (Part 1) (FAIR '
-               'Health)',
-      'url': 'https://www.youtube.com/watch?v=WuZrwo-Qxww&t=189s',
-      'video_id': 'WuZrwo-Qxww'},
-     {'author': 'Beckers ASC',
-      'channel': 'Beckers ASC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:07](https://www.youtube.com/watch?v=KkjI85NtmNE&t=67s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Forrest's has specialized in providing cost containment services to health "
-              'insurers and various products and services to hospitals health systems and '
-              'other health care providers previously mr.',
-      'timestamp': 67,
-      'timestamp_label': '[00:01:07]',
-      'timestamp_seconds': 67,
-      'tip': "Forrest's has specialized in providing cost containment services to health "
-             'insurers and various products and services to hospitals health systems and other '
-             'health care providers previously mr.',
-      'title': 'Top 10 Best Practices to Maximize Complex Out-of-Network Reimbursements and '
-               'More (Beckers ASC)',
-      'url': 'https://www.youtube.com/watch?v=KkjI85NtmNE&t=67s',
-      'video_id': 'KkjI85NtmNE'},
-     {'author': 'AHealthcareZ - Healthcare Finance Explained',
-      'channel': 'AHealthcareZ - Healthcare Finance Explained',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:22](https://www.youtube.com/watch?v=NFJaCM_6M_Y&t=622s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'People are not gonna get the bills okay but as far as the behind the the scenes '
-              "negotiation that has not been worked out yet and that's the point I wanted to "
-              'make today thank you for watching a healthcare z.',
-      'timestamp': 622,
-      'timestamp_label': '[00:10:22]',
-      'timestamp_seconds': 622,
-      'tip': 'People are not gonna get the bills okay but as far as the behind the the scenes '
-             "negotiation that has not been worked out yet and that's the point I wanted to "
-             'make today thank you for watching a healthcare z.',
-      'title': 'No Surprises Act Explained (AHealthcareZ - Healthcare Finance Explained)',
-      'url': 'https://www.youtube.com/watch?v=NFJaCM_6M_Y&t=622s',
-      'video_id': 'NFJaCM_6M_Y'}],
- 4: [{'author': 'Welcome to The Patient Blueprint.',
-      'channel': 'Welcome to The Patient Blueprint.',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:57](https://www.youtube.com/watch?v=3OCpShEAIJs&t=117s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '72 hours ahead and your informed consent. It can never be used for emergency, '
-              'anesthesia, radiology, or pathology. Simply, the No Surprises Act bans balance '
-              'bills for emergency care, out-of-network providers at in-network facilities, '
-              'and air ambulance.',
-      'timestamp': 117,
-      'timestamp_label': '[00:01:57]',
-      'timestamp_seconds': 117,
-      'tip': '72 hours ahead and your informed consent. It can never be used for emergency, '
-             'anesthesia, radiology, or pathology. Simply, the No Surprises Act bans balance '
-             'bills for emergency care, out-of-network providers at in-network facilities, and '
-             'air ambulance.',
-      'title': 'Surprise Medical Bills: No Surprises Act Protections Explained (Welcome to The '
-               'Patient Blueprint.)',
-      'url': 'https://www.youtube.com/watch?v=3OCpShEAIJs&t=117s',
-      'video_id': '3OCpShEAIJs'},
-     {'author': 'Law Unpacked',
-      'channel': 'Law Unpacked',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:56](https://www.youtube.com/watch?v=0NouMpFWLHI&t=176s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So what should you do if you get a surprise bill? First, don't rush to pay it. "
-              "Check whether it's an emergency, an in-network facility, or an air ambulance. "
-              "Second, compare it to your insurance's explanation of benefits. Your share "
-              'should match your in-network costs.',
-      'timestamp': 176,
-      'timestamp_label': '[00:02:56]',
-      'timestamp_seconds': 176,
-      'tip': "So what should you do if you get a surprise bill? First, don't rush to pay it. "
-             "Check whether it's an emergency, an in-network facility, or an air ambulance. "
-             "Second, compare it to your insurance's explanation of benefits. Your share "
-             'should match your in-network costs.',
-      'title': 'Do You Have to Pay a Surprise Medical Bill? (The No Surprises Act Explained) '
-               '(Law Unpacked)',
-      'url': 'https://www.youtube.com/watch?v=0NouMpFWLHI&t=176s',
-      'video_id': '0NouMpFWLHI'},
-     {'author': 'The Medical Bill Whisperer ',
-      'channel': 'The Medical Bill Whisperer ',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:54](https://www.youtube.com/watch?v=fq0_XVnPWnI&t=294s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Also covered by the no surprise act and last Air transport air ambulance is '
-              'also covered under the no surprise act what to do if you get a bill call your.',
-      'timestamp': 294,
-      'timestamp_label': '[00:04:54]',
-      'timestamp_seconds': 294,
-      'tip': 'Also covered by the no surprise act and last Air transport air ambulance is also '
-             'covered under the no surprise act what to do if you get a bill call your.',
-      'title': 'How to Get Your Insurance to PAY for Out-of-Network Care | The Medical Bill '
-               'Whisperer  (The Medical Bill Whisperer )',
-      'url': 'https://www.youtube.com/watch?v=fq0_XVnPWnI&t=294s',
-      'video_id': 'fq0_XVnPWnI'},
-     {'author': 'Evolutio Labs',
-      'channel': 'Evolutio Labs',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=HwCCcS3hQls&t=21s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'In 2022, a federal law called the No Surprises Act went into effect. It was '
-              'designed specifically for situations like yours. If you go to an emergency '
-              'room, even an out-of-network one, your insurance company cannot make you pay '
-              'more than your in-network cost-sharing amount.',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': 'In 2022, a federal law called the No Surprises Act went into effect. It was '
-             'designed specifically for situations like yours. If you go to an emergency room, '
-             'even an out-of-network one, your insurance company cannot make you pay more than '
-             'your in-network cost-sharing amount.',
-      'title': 'ER Bill Denied? Do NOT Pay Until You Watch This (The No Surprises Act) '
-               '(Evolutio Labs)',
-      'url': 'https://www.youtube.com/watch?v=HwCCcS3hQls&t=21s',
-      'video_id': 'HwCCcS3hQls'},
-     {'author': 'Holland & Hart LLP',
-      'channel': 'Holland & Hart LLP',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:44:18](https://www.youtube.com/watch?v=aaDjROGKKC0&t=2658s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'t get effective consent in advance in air ambulance cases. Um of course, you "
-              'may still bill and recover from the plan or the insurance for the covered '
-              'services, and you may still bill self-pay patients.',
-      'timestamp': 2658,
-      'timestamp_label': '[00:44:18]',
-      'timestamp_seconds': 2658,
-      'tip': "'t get effective consent in advance in air ambulance cases. Um of course, you "
-             'may still bill and recover from the plan or the insurance for the covered '
-             'services, and you may still bill self-pay patients.',
-      'title': 'No Surprise Billing Rules (Holland & Hart LLP)',
-      'url': 'https://www.youtube.com/watch?v=aaDjROGKKC0&t=2658s',
-      'video_id': 'aaDjROGKKC0'},
-     {'author': 'About The Rest',
-      'channel': 'About The Rest',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:19:54](https://www.youtube.com/watch?v=WdSfoeegaaI&t=1194s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Um, I mean, that's, that's billions of dollars, uh, uh, of payments that are "
-              'coming from, from the insurance companies. So, um, you know, I, I think we '
-              'swung the way of No Surprises Act, which really put us all in a bad position as '
-              'anesthesia providers.',
-      'timestamp': 1194,
-      'timestamp_label': '[00:19:54]',
-      'timestamp_seconds': 1194,
-      'tip': "Um, I mean, that's, that's billions of dollars, uh, uh, of payments that are "
-             'coming from, from the insurance companies. So, um, you know, I, I think we swung '
-             'the way of No Surprises Act, which really put us all in a bad position as '
-             'anesthesia providers.',
-      'title': 'Anesthesia IDR Is a Knife Fight. Who Walks Away? (About The Rest)',
-      'url': 'https://www.youtube.com/watch?v=WdSfoeegaaI&t=1194s',
-      'video_id': 'WdSfoeegaaI'},
-     {'author': 'MediBill Pro',
-      'channel': 'MediBill Pro',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:30](https://www.youtube.com/watch?v=dta7Y_d4nYA&t=30s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "80% or 90% or 70% depending on the patient's benefit plan. And rest of the 10%, "
-              '20% or 30% basically is going to be paid by the patient. So, basically the '
-              'percentage that the patient is going to pay after that specific deductibles is '
-              'called as co-insurance amount.',
-      'timestamp': 30,
-      'timestamp_label': '[00:00:30]',
-      'timestamp_seconds': 30,
-      'tip': "80% or 90% or 70% depending on the patient's benefit plan. And rest of the 10%, "
-             '20% or 30% basically is going to be paid by the patient. So, basically the '
-             'percentage that the patient is going to pay after that specific deductibles is '
-             'called as co-insurance amount.',
-      'title': 'Top Medical Billing Interview Questions & Answers | Coinsurance vs Eligibility '
-               'vs Preauthorization (MediBill Pro)',
-      'url': 'https://www.youtube.com/watch?v=dta7Y_d4nYA&t=30s',
-      'video_id': 'dta7Y_d4nYA'},
-     {'author': 'Grand Rounds in Urology',
-      'channel': 'Grand Rounds in Urology',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:01](https://www.youtube.com/watch?v=_42GJfeJNw4&t=121s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And the amount covered by his or her insurance often these can be large amounts '
-              'of money that are a.',
-      'timestamp': 121,
-      'timestamp_label': '[00:02:01]',
-      'timestamp_seconds': 121,
-      'tip': 'And the amount covered by his or her insurance often these can be large amounts '
-             'of money that are a.',
-      'title': 'No More Surprises: An Overview of the No Surprises Act (Grand Rounds in '
-               'Urology)',
-      'url': 'https://www.youtube.com/watch?v=_42GJfeJNw4&t=121s',
-      'video_id': '_42GJfeJNw4'},
-     {'author': 'Kym Tolson The Traveling Therapist',
-      'channel': 'Kym Tolson The Traveling Therapist',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:30](https://www.youtube.com/watch?v=FpNL1YIlvD0&t=210s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s got everything you need. It's got address, um the insurance company, the "
-              "client's information. Since you already had it in there, it's going to populate "
-              "that. It's got your phone number, your contact information, your NPI, your "
-              'license number, tax ID.',
-      'timestamp': 210,
-      'timestamp_label': '[00:03:30]',
-      'timestamp_seconds': 210,
-      'tip': "'s got everything you need. It's got address, um the insurance company, the "
-             "client's information. Since you already had it in there, it's going to populate "
-             "that. It's got your phone number, your contact information, your NPI, your "
-             'license number, tax ID.',
-      'title': 'Out Of Network Billing Via Filing Claims Through an EHR and a Superbill (Kym '
-               'Tolson The Traveling Therapist)',
-      'url': 'https://www.youtube.com/watch?v=FpNL1YIlvD0&t=210s',
-      'video_id': 'FpNL1YIlvD0'},
-     {'author': 'PKR Vibes Career & Growth',
-      'channel': 'PKR Vibes Career & Growth',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:12:10](https://www.youtube.com/watch?v=72PuS1BX6_s&t=730s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'They are concluded that it is related to the patient. You may bill to patient '
-              'or other entity. If other insurance is there okay you can bill it not otherwise '
-              'then it is not related to the uh I mean it is related to the payer.',
-      'timestamp': 730,
-      'timestamp_label': '[00:12:10]',
-      'timestamp_seconds': 730,
-      'tip': 'They are concluded that it is related to the patient. You may bill to patient or '
-             'other entity. If other insurance is there okay you can bill it not otherwise '
-             'then it is not related to the uh I mean it is related to the payer.',
-      'title': '#DENIALCODE AND REMARK CODE IN MEDICAL BILLING #ushealthcare #REMARKCODES '
-               '#CARC #RARC #denialcodes (PKR Vibes Career & Growth)',
-      'url': 'https://www.youtube.com/watch?v=72PuS1BX6_s&t=730s',
-      'video_id': '72PuS1BX6_s'},
-     {'author': 'Alicia Murray | The Therapist HQ \U0001faa9',
-      'channel': 'Alicia Murray | The Therapist HQ \U0001faa9',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:17:32](https://www.youtube.com/watch?v=eXrZnEwRRH4&t=1052s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '" Although I have a group practice, I just use my personal NPI as the NPI for '
-              "folks to check for their insurance. It doesn't bother me if they're using my "
-              'NPI to check against those things.',
-      'timestamp': 1052,
-      'timestamp_label': '[00:17:32]',
-      'timestamp_seconds': 1052,
-      'tip': '" Although I have a group practice, I just use my personal NPI as the NPI for '
-             "folks to check for their insurance. It doesn't bother me if they're using my NPI "
-             'to check against those things.',
-      'title': 'Out-of-network 101 for therapists (Alicia Murray | The Therapist HQ '
-               '\U0001faa9)',
-      'url': 'https://www.youtube.com/watch?v=eXrZnEwRRH4&t=1052s',
-      'video_id': 'eXrZnEwRRH4'},
-     {'author': 'US Healthcare Insights by Shiva',
-      'channel': 'US Healthcare Insights by Shiva',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:54](https://www.youtube.com/watch?v=V7EGu84Chfc&t=54s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Any authorization is needed or not which called registration and insurance '
-              "verification. Next, after verification of the patient's details, the patient "
-              'visits the healthcare provider and receives treatment.',
-      'timestamp': 54,
-      'timestamp_label': '[00:00:54]',
-      'timestamp_seconds': 54,
-      'tip': 'Any authorization is needed or not which called registration and insurance '
-             "verification. Next, after verification of the patient's details, the patient "
-             'visits the healthcare provider and receives treatment.',
-      'title': "What is Revenue Cycle Management (RCM)? Complete Beginner's Guide by Shiva Rao "
-               '(US Healthcare Insights by Shiva)',
-      'url': 'https://www.youtube.com/watch?v=V7EGu84Chfc&t=54s',
-      'video_id': 'V7EGu84Chfc'},
-     {'author': 'Cedar',
-      'channel': 'Cedar',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:28](https://www.youtube.com/watch?v=U7ayI8K_Ggw&t=28s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Ultra focused on the insurance side of payments so what we've done is um really "
-              'look at what impacts patients um and looking at Patients as consumers as well.',
-      'timestamp': 28,
-      'timestamp_label': '[00:00:28]',
-      'timestamp_seconds': 28,
-      'tip': "Ultra focused on the insurance side of payments so what we've done is um really "
-             'look at what impacts patients um and looking at Patients as consumers as well.',
-      'title': 'Insights into Healthcare Finance: PFX Benchmarks (Cedar)',
-      'url': 'https://www.youtube.com/watch?v=U7ayI8K_Ggw&t=28s',
-      'video_id': 'U7ayI8K_Ggw'},
-     {'author': 'Inlera University',
-      'channel': 'Inlera University',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:55](https://www.youtube.com/watch?v=XyBNgMnFz0Y&t=355s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So you can certainly benefit from utilizing these real-time tools because if '
-              'you have that patient that just walked in and you have a batch.',
-      'timestamp': 355,
-      'timestamp_label': '[00:05:55]',
-      'timestamp_seconds': 355,
-      'tip': 'So you can certainly benefit from utilizing these real-time tools because if you '
-             'have that patient that just walked in and you have a batch.',
-      'title': '5 Ways to verify patient Insurance Eligibility | Medical Billing Terms (Inlera '
-               'University)',
-      'url': 'https://www.youtube.com/watch?v=XyBNgMnFz0Y&t=355s',
-      'video_id': 'XyBNgMnFz0Y'},
-     {'author': 'AHealthcareZ - Healthcare Finance Explained',
-      'channel': 'AHealthcareZ - Healthcare Finance Explained',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:57](https://www.youtube.com/watch?v=8NDnQoTkjb4&t=57s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Anesthesiologists and pathologists which is why many health insurance plans '
-              "have what's called a wraps policy which means that these physicians even though "
-              'the.',
-      'timestamp': 57,
-      'timestamp_label': '[00:00:57]',
-      'timestamp_seconds': 57,
-      'tip': 'Anesthesiologists and pathologists which is why many health insurance plans have '
-             "what's called a wraps policy which means that these physicians even though the.",
-      'title': 'Healthcare In-Network / Out-of-Network Bait and Switch (AHealthcareZ - '
-               'Healthcare Finance Explained)',
-      'url': 'https://www.youtube.com/watch?v=8NDnQoTkjb4&t=57s',
-      'video_id': '8NDnQoTkjb4'}],
- 5: [{'author': 'The Phia Group, LLC',
-      'channel': 'The Phia Group, LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:30](https://www.youtube.com/watch?v=ksxW878eWWk&t=690s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Um just a little context and background. So, as most people here listening '
-              'know, uh the No Surprises Act includes a baseball arbitration um style process. '
-              'So, both parties to a dispute uh have an opportunity to submit an offer.',
-      'timestamp': 690,
-      'timestamp_label': '[00:11:30]',
-      'timestamp_seconds': 690,
-      'tip': 'Um just a little context and background. So, as most people here listening know, '
-             'uh the No Surprises Act includes a baseball arbitration um style process. So, '
-             'both parties to a dispute uh have an opportunity to submit an offer.',
-      'title': 'Empowering Plans: P235 – The Latest No Surprises Act Developments: A 2026 '
-               'Reality Check for TPAs (The Phia Group, LLC)',
-      'url': 'https://www.youtube.com/watch?v=ksxW878eWWk&t=690s',
-      'video_id': 'ksxW878eWWk'},
-     {'author': 'Health Tech Nerds',
-      'channel': 'Health Tech Nerds',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:11](https://www.youtube.com/watch?v=c7whA-tTpq4&t=671s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'AEI who I had had worked with were sort of advi- explaining that arbitration '
-              "had a lot of risk to it in part because it is very opaque. You you don't really "
-              "know what's going to happen in the process. It risks being captured by "
-              'providers.',
-      'timestamp': 671,
-      'timestamp_label': '[00:11:11]',
-      'timestamp_seconds': 671,
-      'tip': 'AEI who I had had worked with were sort of advi- explaining that arbitration had '
-             "a lot of risk to it in part because it is very opaque. You you don't really know "
-             "what's going to happen in the process. It risks being captured by providers.",
-      'title': 'How the No Surprises Act solved balance billing but created a pricing problem '
-               '| Loren Adler (Health Tech Nerds)',
-      'url': 'https://www.youtube.com/watch?v=c7whA-tTpq4&t=671s',
-      'video_id': 'c7whA-tTpq4'},
-     {'author': 'Share My Lesson',
-      'channel': 'Share My Lesson',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:11](https://www.youtube.com/watch?v=Q11eG-8d-Hw&t=311s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Step four, if you're uninsured, use the $400 rule. If your bill is $400 above "
-              'the good faith estimate, file a dispute. Step five, document everything. '
-              "Screenshots, bills, EOBS, call logs, all of it. Healthcare shouldn't be a "
-              'financial trap.',
-      'timestamp': 311,
-      'timestamp_label': '[00:05:11]',
-      'timestamp_seconds': 311,
-      'tip': "Step four, if you're uninsured, use the $400 rule. If your bill is $400 above "
-             'the good faith estimate, file a dispute. Step five, document everything. '
-             "Screenshots, bills, EOBS, call logs, all of it. Healthcare shouldn't be a "
-             'financial trap.',
-      'title': 'The No Surprises Act Explained: How to Fight Surprise Medical Bills (Share My '
-               'Lesson)',
-      'url': 'https://www.youtube.com/watch?v=Q11eG-8d-Hw&t=311s',
-      'video_id': 'Q11eG-8d-Hw'},
-     {'author': 'The Phia Group, LLC',
-      'channel': 'The Phia Group, LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:09](https://www.youtube.com/watch?v=8QIP4F1EGTA&t=549s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You know, we have factors that are completely detached from like the amount of '
-              'money that uh that should be paid for a particular dispute or for for a '
-              'particular claim. For example, I mean, you know, patient acuity or the quality '
-              'of the provider or whatever.',
-      'timestamp': 549,
-      'timestamp_label': '[00:09:09]',
-      'timestamp_seconds': 549,
-      'tip': 'You know, we have factors that are completely detached from like the amount of '
-             'money that uh that should be paid for a particular dispute or for for a '
-             'particular claim. For example, I mean, you know, patient acuity or the quality '
-             'of the provider or whatever.',
-      'title': 'Empowering Plans: P254 – Fixing the No Surprises Act: Will Congress Repair '
-               'IDR? (The Phia Group, LLC)',
-      'url': 'https://www.youtube.com/watch?v=8QIP4F1EGTA&t=549s',
-      'video_id': '8QIP4F1EGTA'},
-     {'author': 'Medical Economics TV',
-      'channel': 'Medical Economics TV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:13:33](https://www.youtube.com/watch?v=K4eVTdf3xa0&t=813s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So, as long as it's you know, fair and reasonable proposal in the arbitration "
-              'the baseball style arbitration process that IDR provides. I think the IDR '
-              'arbiters often rule in favor of the of the provider.',
-      'timestamp': 813,
-      'timestamp_label': '[00:13:33]',
-      'timestamp_seconds': 813,
-      'tip': "So, as long as it's you know, fair and reasonable proposal in the arbitration "
-             'the baseball style arbitration process that IDR provides. I think the IDR '
-             'arbiters often rule in favor of the of the provider.',
-      'title': "S1 Ep161: The No Surprises Act's new payment dispute rule, with Anders Gilberg "
-               'of MGMA (Medical Economics TV)',
-      'url': 'https://www.youtube.com/watch?v=K4eVTdf3xa0&t=813s',
-      'video_id': 'K4eVTdf3xa0'},
-     {'author': 'Apex IONM Solutions',
-      'channel': 'Apex IONM Solutions',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:26](https://www.youtube.com/watch?v=gbhlBlDLViQ&t=86s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'t release the funds, then you're left with no recourse after that, cuz "
-              'Congress just presumed that the insurance companies would actually follow the '
-              'law. So, that that has become a significant problem.',
-      'timestamp': 86,
-      'timestamp_label': '[00:01:26]',
-      'timestamp_seconds': 86,
-      'tip': "'t release the funds, then you're left with no recourse after that, cuz Congress "
-             'just presumed that the insurance companies would actually follow the law. So, '
-             'that that has become a significant problem.',
-      'title': 'You Won Arbitration – So Why Is the Money Still Missing? | Enforcement Push '
-               'for No Surprises Act (Apex IONM Solutions)',
-      'url': 'https://www.youtube.com/watch?v=gbhlBlDLViQ&t=86s',
-      'video_id': 'gbhlBlDLViQ'},
-     {'author': 'The On-Air Advocate',
-      'channel': 'The On-Air Advocate',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:39](https://www.youtube.com/watch?v=1tAnAfBQ9O8&t=39s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'It also protects uninsured patients by requiring a good faith estimate before '
-              'you get care. And if the final bill ends up to be more than $400 above what was '
-              "estimated, you have the right to dispute the charges. Now, here's something "
-              'important to know.',
-      'timestamp': 39,
-      'timestamp_label': '[00:00:39]',
-      'timestamp_seconds': 39,
-      'tip': 'It also protects uninsured patients by requiring a good faith estimate before '
-             'you get care. And if the final bill ends up to be more than $400 above what was '
-             "estimated, you have the right to dispute the charges. Now, here's something "
-             'important to know.',
-      'title': 'Unexpected Medical Bill? Know Your Rights Under the No Surprises Act (The '
-               'On-Air Advocate)',
-      'url': 'https://www.youtube.com/watch?v=1tAnAfBQ9O8&t=39s',
-      'video_id': '1tAnAfBQ9O8'},
-     {'author': 'The Center for Medical Education',
-      'channel': 'The Center for Medical Education',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:23](https://www.youtube.com/watch?v=uqsbhH3wss0&t=563s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You know, the risks are roughly equal. Um, discuss with the patient risk '
-              'benefits benefits alternatives, potential risks include, you know, uh, the '
-              'potential risks of a CT to a pregnant patient. Um, discussed, uh, the risks on '
-              'both sides.',
-      'timestamp': 563,
-      'timestamp_label': '[00:09:23]',
-      'timestamp_seconds': 563,
-      'tip': 'You know, the risks are roughly equal. Um, discuss with the patient risk '
-             'benefits benefits alternatives, potential risks include, you know, uh, the '
-             'potential risks of a CT to a pregnant patient. Um, discussed, uh, the risks on '
-             'both sides.',
-      'title': 'Ten Most Important Legal Questions Asked | The High Risk Emergency Medicine '
-               'Course (The Center for Medical Education)',
-      'url': 'https://www.youtube.com/watch?v=uqsbhH3wss0&t=563s',
-      'video_id': 'uqsbhH3wss0'},
-     {'author': 'One80 Physical Therapy',
-      'channel': 'One80 Physical Therapy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:54](https://www.youtube.com/watch?v=GVdiKSs4kvU&t=54s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "And on that first visit, we're going to get to the root cause of your problem "
-              'using our patented techniques and get you back to what you want to do, possibly '
-              'after one visit, usually between 1 to three visits.',
-      'timestamp': 54,
-      'timestamp_label': '[00:00:54]',
-      'timestamp_seconds': 54,
-      'tip': "And on that first visit, we're going to get to the root cause of your problem "
-             'using our patented techniques and get you back to what you want to do, possibly '
-             'after one visit, usually between 1 to three visits.',
-      'title': 'Insurance Pay vs Out-of-Network: Why One80 Physical Therapy is Different '
-               '(One80 Physical Therapy)',
-      'url': 'https://www.youtube.com/watch?v=GVdiKSs4kvU&t=54s',
-      'video_id': 'GVdiKSs4kvU'},
-     {'author': 'AR Specialist',
-      'channel': 'AR Specialist',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:32](https://www.youtube.com/watch?v=OLFRzRe0L2A&t=332s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The sheer amount of payroll hours wasted just listening to hold music is '
-              'staggering. And make no mistake, this is by design. It is meant to discourage '
-              'facilities from fighting for their rightful revenue.',
-      'timestamp': 332,
-      'timestamp_label': '[00:05:32]',
-      'timestamp_seconds': 332,
-      'tip': 'The sheer amount of payroll hours wasted just listening to hold music is '
-             'staggering. And make no mistake, this is by design. It is meant to discourage '
-             'facilities from fighting for their rightful revenue.',
-      'title': 'SCA 2027 Blueprint: Protect Out-of-Network Revenue Before It Gets Recouped (AR '
-               'Specialist)',
-      'url': 'https://www.youtube.com/watch?v=OLFRzRe0L2A&t=332s',
-      'video_id': 'OLFRzRe0L2A'},
-     {'author': 'Contempo Coding',
-      'channel': 'Contempo Coding',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:25](https://www.youtube.com/watch?v=pG2R1NwUlro&t=325s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'A lot of large organizations providers will capture a good amount of like '
-              "office visit charges because there's just so many of them uh and the risk.",
-      'timestamp': 325,
-      'timestamp_label': '[00:05:25]',
-      'timestamp_seconds': 325,
-      'tip': 'A lot of large organizations providers will capture a good amount of like office '
-             "visit charges because there's just so many of them uh and the risk.",
-      'title': 'What is the Revenue Cycle in Medical Billing and Coding? (RCM Basics '
-               'Explained) (Contempo Coding)',
-      'url': 'https://www.youtube.com/watch?v=pG2R1NwUlro&t=325s',
-      'video_id': 'pG2R1NwUlro'},
-     {'author': 'Dr. Glaucomflecken',
-      'channel': 'Dr. Glaucomflecken',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:37](https://www.youtube.com/watch?v=FqwonCk1DK8&t=37s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Hey anesthesia oh hey emergency hey we just had a big trauma come in can you '
-              "help us out real quick oh yeah of course yeah let's go all right the tube is in "
-              "I'll let you guys take it from here.",
-      'timestamp': 37,
-      'timestamp_label': '[00:00:37]',
-      'timestamp_seconds': 37,
-      'tip': 'Hey anesthesia oh hey emergency hey we just had a big trauma come in can you '
-             "help us out real quick oh yeah of course yeah let's go all right the tube is in "
-             "I'll let you guys take it from here.",
-      'title': 'Anesthesia Helps Out Emergency Medicine (Dr. Glaucomflecken)',
-      'url': 'https://www.youtube.com/watch?v=FqwonCk1DK8&t=37s',
-      'video_id': 'FqwonCk1DK8'},
-     {'author': 'NextChapter',
-      'channel': 'NextChapter',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:24:37](https://www.youtube.com/watch?v=p0ekuvIETYc&t=1477s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Paid they're not going to take out FICA and taxes and Social Security so that "
-              "is the risk of not using the tax return you don't get any of those later but "
-              'there are other reasons.',
-      'timestamp': 1477,
-      'timestamp_label': '[00:24:37]',
-      'timestamp_seconds': 1477,
-      'tip': "Paid they're not going to take out FICA and taxes and Social Security so that is "
-             "the risk of not using the tax return you don't get any of those later but there "
-             'are other reasons.',
-      'title': 'IDR Account Adjustment (NextChapter)',
-      'url': 'https://www.youtube.com/watch?v=p0ekuvIETYc&t=1477s',
-      'video_id': 'p0ekuvIETYc'},
-     {'author': 'Talisman Solutions',
-      'channel': 'Talisman Solutions',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:41](https://www.youtube.com/watch?v=Zf9f4f3lmAw&t=101s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'That turns a static aging list into a managed action list. Book a free Talisman '
-              'AR audit to turn a sample aging list into an action list.',
-      'timestamp': 101,
-      'timestamp_label': '[00:01:41]',
-      'timestamp_seconds': 101,
-      'tip': 'That turns a static aging list into a managed action list. Book a free Talisman '
-             'AR audit to turn a sample aging list into an action list.',
-      'title': '3 Unpaid Claims, 3 Different Next Actions | A/R Audit Walkthrough (Talisman '
-               'Solutions)',
-      'url': 'https://www.youtube.com/watch?v=Zf9f4f3lmAw&t=101s',
-      'video_id': 'Zf9f4f3lmAw'},
-     {'author': 'WFAA',
-      'channel': 'WFAA',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=_ofpUW91u8o&t=20s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'IT IS CALLED SURPRISE THE MIDDLE. IT IS CALLED SURPRISE MEDICAL IT IS CALLED '
-              'SURPRISE MEDICAL IT IS CALLED SURPRISE MEDICAL BUILDING. EXPERT SAYS IT HAPPENS '
-              'BUILDING. EXPERT SAYS IT HAPPENS TO BUILDING.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': 'IT IS CALLED SURPRISE THE MIDDLE. IT IS CALLED SURPRISE MEDICAL IT IS CALLED '
-             'SURPRISE MEDICAL IT IS CALLED SURPRISE MEDICAL BUILDING. EXPERT SAYS IT HAPPENS '
-             'BUILDING. EXPERT SAYS IT HAPPENS TO BUILDING.',
-      'title': 'Surprise medical billing will be banished in Texas starting Jan. 1 (WFAA)',
-      'url': 'https://www.youtube.com/watch?v=_ofpUW91u8o&t=20s',
-      'video_id': '_ofpUW91u8o'}],
- 6: [{'author': 'HaloMD',
-      'channel': 'HaloMD',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:47:30](https://www.youtube.com/watch?v=oEWBNDsvXOQ&t=2850s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Uh, a great example is that if a a build charge of $1,000 uh is is first '
-              'assessed and uh the arbitration award uh actually goes in in favor of the '
-              "physician, but is for $800. Well, that's still an amount less than the original "
-              'bill charge.',
-      'timestamp': 2850,
-      'timestamp_label': '[00:47:30]',
-      'timestamp_seconds': 2850,
-      'tip': 'Uh, a great example is that if a a build charge of $1,000 uh is is first '
-             'assessed and uh the arbitration award uh actually goes in in favor of the '
-             "physician, but is for $800. Well, that's still an amount less than the original "
-             'bill charge.',
-      'title': 'The Truth Is in the Data: Myths, Reality & What’s Next in IDR Under the NSA | '
-               'Becker’s x HaloMD (HaloMD)',
-      'url': 'https://www.youtube.com/watch?v=oEWBNDsvXOQ&t=2850s',
-      'video_id': 'oEWBNDsvXOQ'},
-     {'author': 'AS DESIGNED | Risk & Insurance Stories',
-      'channel': 'AS DESIGNED | Risk & Insurance Stories',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:19](https://www.youtube.com/watch?v=w_lpas-cNkc&t=319s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'That was the 6th of January. Ordinary life followed, work, school runs, the '
-              'mortgage. Then, in the week of the 10th of February, two envelopes arrived in '
-              'the same week, six weeks after the ambulance had gone. Start with the first of '
-              'the three reasons, a list.',
-      'timestamp': 319,
-      'timestamp_label': '[00:05:19]',
-      'timestamp_seconds': 319,
-      'tip': 'That was the 6th of January. Ordinary life followed, work, school runs, the '
-             'mortgage. Then, in the week of the 10th of February, two envelopes arrived in '
-             'the same week, six weeks after the ambulance had gone. Start with the first of '
-             'the three reasons, a list.',
-      'title': 'The Law Stops Surprise Medical Bills. Why Not the Ambulance? (AS DESIGNED | '
-               'Risk & Insurance Stories)',
-      'url': 'https://www.youtube.com/watch?v=w_lpas-cNkc&t=319s',
-      'video_id': 'w_lpas-cNkc'},
-     {'author': 'Center on Health Insurance Reforms',
-      'channel': 'Center on Health Insurance Reforms',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:33:47](https://www.youtube.com/watch?v=wJkWOgxZj6k&t=2027s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So 6% of claims are adding that much to healthcare trend. 5 million in IDR '
-              'awards in all of 2025. It paid more than $6 million in the first half of 2026 '
-              'alone and is on pace for $12 million. And all of that mostly comes from one '
-              'single ER operator.',
-      'timestamp': 2027,
-      'timestamp_label': '[00:33:47]',
-      'timestamp_seconds': 2027,
-      'tip': 'So 6% of claims are adding that much to healthcare trend. 5 million in IDR '
-             'awards in all of 2025. It paid more than $6 million in the first half of 2026 '
-             'alone and is on pace for $12 million. And all of that mostly comes from one '
-             'single ER operator.',
-      'title': 'Runaway Costs: Getting the No Surprises Act Back on Track (Center on Health '
-               'Insurance Reforms)',
-      'url': 'https://www.youtube.com/watch?v=wJkWOgxZj6k&t=2027s',
-      'video_id': 'wJkWOgxZj6k'},
-     {'author': 'TopMedTalk',
-      'channel': 'TopMedTalk',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:13:37](https://www.youtube.com/watch?v=0BcGdvWG_UI&t=817s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Elevance Health to their employer sponsors in which they disclosed to their '
-              "employer sponsors, apparently for the first time, it it seems, that they've "
-              'been withholding payment for arbitration awards on behalf of their employer '
-              'sponsors.',
-      'timestamp': 817,
-      'timestamp_label': '[00:13:37]',
-      'timestamp_seconds': 817,
-      'tip': 'Elevance Health to their employer sponsors in which they disclosed to their '
-             "employer sponsors, apparently for the first time, it it seems, that they've been "
-             'withholding payment for arbitration awards on behalf of their employer sponsors.',
-      'title': 'ANESTHESIOLOGY 2026: No Surprises Act, IDR, and Out-of-Network Spending '
-               '(TopMedTalk)',
-      'url': 'https://www.youtube.com/watch?v=0BcGdvWG_UI&t=817s',
-      'video_id': '0BcGdvWG_UI'},
-     {'author': 'Health Weave RCM LLC',
-      'channel': 'Health Weave RCM LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:19](https://www.youtube.com/watch?v=bPFE9F4Y_Y4&t=559s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'First, match the money to the explanation. The total deposited should match the '
-              "total on the remittance. If it doesn't, find out why before you close the "
-              'batch. Second, post each amount to the right bucket.',
-      'timestamp': 559,
-      'timestamp_label': '[00:09:19]',
-      'timestamp_seconds': 559,
-      'tip': 'First, match the money to the explanation. The total deposited should match the '
-             "total on the remittance. If it doesn't, find out why before you close the batch. "
-             'Second, post each amount to the right bucket.',
-      'title': 'EOB vs ERA CARC RARC Codes Explained | Medical Billing Class 4 (Health Weave '
-               'RCM LLC)',
-      'url': 'https://www.youtube.com/watch?v=bPFE9F4Y_Y4&t=559s',
-      'video_id': 'bPFE9F4Y_Y4'},
-     {'author': 'RCM Mastery',
-      'channel': 'RCM Mastery',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:29](https://www.youtube.com/watch?v=okx8geMd-gU&t=269s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The game is only truly won when that account balance hits zero. So after all '
-              "that, what's the game plan to win? Accurate data is your absolute superpower. "
-              'Always, always get approval first. Clean coding means fast cash. Think of every '
-              'denial as a lesson.',
-      'timestamp': 269,
-      'timestamp_label': '[00:04:29]',
-      'timestamp_seconds': 269,
-      'tip': 'The game is only truly won when that account balance hits zero. So after all '
-             "that, what's the game plan to win? Accurate data is your absolute superpower. "
-             'Always, always get approval first. Clean coding means fast cash. Think of every '
-             'denial as a lesson.',
-      'title': 'Part 1 || Complete RCM Workflow Explained | From Patient Registration to '
-               'Payment (RCM Mastery)',
-      'url': 'https://www.youtube.com/watch?v=okx8geMd-gU&t=269s',
-      'video_id': 'okx8geMd-gU'},
-     {'author': 'CMSHHSgov',
-      'channel': 'CMSHHSgov',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:11](https://www.youtube.com/watch?v=cw4MI_h6Gns&t=371s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'When selecting a batched dispute, a modal will appear with a list of criteria '
-              'that will help determine if the disputes qualify for the batching process. '
-              'Select Yes or No to make your selection.',
-      'timestamp': 371,
-      'timestamp_label': '[00:06:11]',
-      'timestamp_seconds': 371,
-      'tip': 'When selecting a batched dispute, a modal will appear with a list of criteria '
-             'that will help determine if the disputes qualify for the batching process. '
-             'Select Yes or No to make your selection.',
-      'title': 'Notice of IDR Initiation Web Form Demo (CMSHHSgov)',
-      'url': 'https://www.youtube.com/watch?v=cw4MI_h6Gns&t=371s',
-      'video_id': 'cw4MI_h6Gns'},
-     {'author': 'The Doctors Lounge',
-      'channel': 'The Doctors Lounge',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:15:42](https://www.youtube.com/watch?v=QITUqT322Iw&t=942s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I mean there there was no prohibition. So California, like I say, in 2008 2009 '
-              'was one of the first states to address it. The Supreme Court in a case called '
-              'the prospect decision addressed balance billing in the context of emergency '
-              'medicine.',
-      'timestamp': 942,
-      'timestamp_label': '[00:15:42]',
-      'timestamp_seconds': 942,
-      'tip': 'I mean there there was no prohibition. So California, like I say, in 2008 2009 '
-             'was one of the first states to address it. The Supreme Court in a case called '
-             'the prospect decision addressed balance billing in the context of emergency '
-             'medicine.',
-      'title': 'Ed Gaines: How Independent Physicians Finally Got Leverage Against Insurance '
-               'Companies (The Doctors Lounge)',
-      'url': 'https://www.youtube.com/watch?v=QITUqT322Iw&t=942s',
-      'video_id': 'QITUqT322Iw'},
-     {'author': 'Ryan Downs',
-      'channel': 'Ryan Downs',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:56](https://www.youtube.com/watch?v=0BGnlP4Q71M&t=176s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "You're about to get surgery. For all intents and purposes, you thought you were "
-              'in network, but the anesthesiologist just happens to be out. Happens more '
-              "frequently than we know. So, yeah, you're you're not getting in an air "
-              'ambulance by choice.',
-      'timestamp': 176,
-      'timestamp_label': '[00:02:56]',
-      'timestamp_seconds': 176,
-      'tip': "You're about to get surgery. For all intents and purposes, you thought you were "
-             'in network, but the anesthesiologist just happens to be out. Happens more '
-             "frequently than we know. So, yeah, you're you're not getting in an air ambulance "
-             'by choice.',
-      'title': 'Mini Episode: Explaining What Accounts Qualify for the IDR Process with Adam '
-               'Cartabiano (Ryan Downs)',
-      'url': 'https://www.youtube.com/watch?v=0BGnlP4Q71M&t=176s',
-      'video_id': '0BGnlP4Q71M'},
-     {'author': 'UtreatiBill LLC',
-      'channel': 'UtreatiBill LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:51](https://www.youtube.com/watch?v=_0Dt6rewEvU&t=111s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Everything we do is fully HIPAA compliant, so patient data stays protected. '
-              'Pricing starts at just 2% with no heavy overhead or extra staff. Find [snorts] '
-              "where you're losing revenue. Book your free consultation at utreatibil.",
-      'timestamp': 111,
-      'timestamp_label': '[00:01:51]',
-      'timestamp_seconds': 111,
-      'tip': 'Everything we do is fully HIPAA compliant, so patient data stays protected. '
-             'Pricing starts at just 2% with no heavy overhead or extra staff. Find [snorts] '
-             "where you're losing revenue. Book your free consultation at utreatibil.",
-      'title': 'Stop Losing Money! Revenue Cycle Management (UtreatiBill LLC)',
-      'url': 'https://www.youtube.com/watch?v=_0Dt6rewEvU&t=111s',
-      'video_id': '_0Dt6rewEvU'},
-     {'author': 'MBC RCM',
-      'channel': 'MBC RCM',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:45](https://www.youtube.com/watch?v=VoQc5Oh8ot4&t=405s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'First, a paid claim in the same episode of care is your absolute strongest '
-              'evidence when disputing a records request. Second, your authorization and '
-              'single case agreement details should be on file and cited on every call.',
-      'timestamp': 405,
-      'timestamp_label': '[00:06:45]',
-      'timestamp_seconds': 405,
-      'tip': 'First, a paid claim in the same episode of care is your absolute strongest '
-             'evidence when disputing a records request. Second, your authorization and single '
-             'case agreement details should be on file and cited on every call.',
-      'title': 'Medical Billing Denials: The 45-Minute Strategy That Gets Results (MBC RCM)',
-      'url': 'https://www.youtube.com/watch?v=VoQc5Oh8ot4&t=405s',
-      'video_id': 'VoQc5Oh8ot4'},
-     {'author': 'Inlera University',
-      'channel': 'Inlera University',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:15](https://www.youtube.com/watch?v=3JOMCnMqhvI&t=75s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Company might have a full very detailed a comprehensive list of what they would '
-              'pay for a service but that is only if the patients benefits actually will.',
-      'timestamp': 75,
-      'timestamp_label': '[00:01:15]',
-      'timestamp_seconds': 75,
-      'tip': 'Company might have a full very detailed a comprehensive list of what they would '
-             'pay for a service but that is only if the patients benefits actually will.',
-      'title': 'What is the Allowed Amount? | Healthcare Medical Billing (Inlera University)',
-      'url': 'https://www.youtube.com/watch?v=3JOMCnMqhvI&t=75s',
-      'video_id': '3JOMCnMqhvI'},
-     {'author': 'Nate Page',
-      'channel': 'Nate Page',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:17](https://www.youtube.com/watch?v=rdwGJdKffpI&t=497s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Exactly what to expect with payment best of luck to you in your journey as you '
-              "find a therapist and please let us know if there's any way that we can help you "
-              'in that process take care.',
-      'timestamp': 497,
-      'timestamp_label': '[00:08:17]',
-      'timestamp_seconds': 497,
-      'tip': 'Exactly what to expect with payment best of luck to you in your journey as you '
-             "find a therapist and please let us know if there's any way that we can help you "
-             'in that process take care.',
-      'title': 'Out of Network Therapist | Superbills and Health Insurance (Nate Page)',
-      'url': 'https://www.youtube.com/watch?v=rdwGJdKffpI&t=497s',
-      'video_id': 'rdwGJdKffpI'},
-     {'author': 'Amazing Charts',
-      'channel': 'Amazing Charts',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:03](https://www.youtube.com/watch?v=eKRUeJa5ZzQ&t=183s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The stresses off of your office and allow somebody else that this is all they '
-              "do and they're experts at it to follow up on your bills to make sure that the "
-              "claims get paid on the first submission so you're not chasing things.",
-      'timestamp': 183,
-      'timestamp_label': '[00:03:03]',
-      'timestamp_seconds': 183,
-      'tip': 'The stresses off of your office and allow somebody else that this is all they do '
-             "and they're experts at it to follow up on your bills to make sure that the "
-             "claims get paid on the first submission so you're not chasing things.",
-      'title': 'Webinar: Amazing Charts Revenue Cycle Management (RCM) (Amazing Charts)',
-      'url': 'https://www.youtube.com/watch?v=eKRUeJa5ZzQ&t=183s',
-      'video_id': 'eKRUeJa5ZzQ'},
-     {'author': 'AR Sid',
-      'channel': 'AR Sid',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=3ny6SM1xecc&t=15s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'फर्स्ट वीडियो एंड हियर इज दी स्टेप ऑफ आरसीएम साइकिल। इन दिस वीडियो वी आर लुकिंग '
-              'फॉर दी स्टेप्स एंड दी ब्लॉक। आई मीन हम लोग इसको स्टेप्स नहीं ब्लॉक्स की.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'फर्स्ट वीडियो एंड हियर इज दी स्टेप ऑफ आरसीएम साइकिल। इन दिस वीडियो वी आर लुकिंग '
-             'फॉर दी स्टेप्स एंड दी ब्लॉक। आई मीन हम लोग इसको स्टेप्स नहीं ब्लॉक्स की.',
-      'title': 'Learn Complete RCM Cycle in 5 Minutes | US Healthcare | Appointment to Payment '
-               '& Denials (AR Sid)',
-      'url': 'https://www.youtube.com/watch?v=3ny6SM1xecc&t=15s',
-      'video_id': '3ny6SM1xecc'}],
- 7: [{'author': 'Ben Martin',
-      'channel': 'Ben Martin',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:35](https://www.youtube.com/watch?v=dTrA6r3pGyE&t=35s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The new IDR process levels the playing field with binding arbitration, allowing '
-              'providers to submit their own payment offers and contest rates based on factors '
-              'beyond just the qualifying payment amount.',
-      'timestamp': 35,
-      'timestamp_label': '[00:00:35]',
-      'timestamp_seconds': 35,
-      'tip': 'The new IDR process levels the playing field with binding arbitration, allowing '
-             'providers to submit their own payment offers and contest rates based on factors '
-             'beyond just the qualifying payment amount.',
-      'title': 'CoGenetix & ANS Solutions- OON IDR Webinar (Ben Martin)',
-      'url': 'https://www.youtube.com/watch?v=dTrA6r3pGyE&t=35s',
-      'video_id': 'dTrA6r3pGyE'},
-     {'author': 'KLGatesLaw',
-      'channel': 'KLGatesLaw',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:34](https://www.youtube.com/watch?v=NwapzBNojY0&t=94s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And since its implementation in 2022, out-of-network providers have submitted '
-              'hundreds of thousands of claims under the current baseball style arbitration '
-              'process, which is significantly higher than the agencies originally '
-              'anticipated.',
-      'timestamp': 94,
-      'timestamp_label': '[00:01:34]',
-      'timestamp_seconds': 94,
-      'tip': 'And since its implementation in 2022, out-of-network providers have submitted '
-             'hundreds of thousands of claims under the current baseball style arbitration '
-             'process, which is significantly higher than the agencies originally anticipated.',
-      'title': 'No Surprises Act Check-In: The Latest Changes to the IDR Process (KLGatesLaw)',
-      'url': 'https://www.youtube.com/watch?v=NwapzBNojY0&t=94s',
-      'video_id': 'NwapzBNojY0'},
+      'text': 'Missing a deadline by a day or two can invalidate the IDR, so use trackers.',
+      'timestamp': 1597,
+      'timestamp_label': '[00:26:37]',
+      'timestamp_seconds': 1597,
+      'tip': 'Missing a deadline by a day or two can invalidate the IDR, so use trackers.',
+      'title': '“No Surprises Act  The New Independent Dispute Resolution Process”   CPE Webinar',
+      'url': 'https://www.youtube.com/watch?v=j1DGgPw1__E&t=1597s',
+      'video_id': 'j1DGgPw1__E'},
      {'author': 'American Medical Association (AMA)',
       'channel': 'American Medical Association (AMA)',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:29:08](https://www.youtube.com/watch?v=6_ODgJ97UtA&t=1748s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q7 operational verification).',
+      'markdown': '[00:07:24](https://www.youtube.com/watch?v=YJ1Bgt_KIyw&t=444s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'ADR process is proceeding under the rule established by Texas Medical '
-              'association, which is that this rule, that deference to Cuba is not on the '
-              'books anymore, that the entire process will be determined based solely on the '
-              'factors outlined in the statute.',
-      'timestamp': 1748,
-      'timestamp_label': '[00:29:08]',
-      'timestamp_seconds': 1748,
-      'tip': 'ADR process is proceeding under the rule established by Texas Medical '
-             'association, which is that this rule, that deference to Cuba is not on the books '
-             'anymore, that the entire process will be determined based solely on the factors '
-             'outlined in the statute.',
-      'title': 'Out-of-network payment process under the No Surprises Act (American Medical '
-               'Association (AMA))',
-      'url': 'https://www.youtube.com/watch?v=6_ODgJ97UtA&t=1748s',
-      'video_id': '6_ODgJ97UtA'},
-     {'author': 'Paragon Health Institute',
-      'channel': 'Paragon Health Institute',
+      'text': "The arbiter now must select the party's offer that best represents the value of the "
+              'service after considering the QPA and information submitted by the parties.',
+      'timestamp': 444,
+      'timestamp_label': '[00:07:24]',
+      'timestamp_seconds': 444,
+      'tip': "The arbiter now must select the party's offer that best represents the value of the "
+             'service after considering the QPA and information submitted by the parties.',
+      'title': 'What physicians need to know about the No Surprises Act with Emily Carroll, JD & '
+               'George Cox, JD',
+      'url': 'https://www.youtube.com/watch?v=YJ1Bgt_KIyw&t=444s',
+      'video_id': 'YJ1Bgt_KIyw'},
+     {'author': 'Remodel Health',
+      'channel': 'Remodel Health',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:57:00](https://www.youtube.com/watch?v=PpfXacIXrAc&t=3420s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q7 operational verification).',
+      'markdown': '[00:03:39](https://www.youtube.com/watch?v=tNA4dmumP8o&t=219s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Pilgrim mentioned, this does not represent a majority of the IDR disputes. But '
-              "these high award outliers are driving up costs, and they're distorting the "
-              'system. And they could be an incentive for some to use arbitration as as the '
-              'sort of payment of first resort.',
-      'timestamp': 3420,
-      'timestamp_label': '[00:57:00]',
-      'timestamp_seconds': 3420,
-      'tip': 'Pilgrim mentioned, this does not represent a majority of the IDR disputes. But '
-             "these high award outliers are driving up costs, and they're distorting the "
-             'system. And they could be an incentive for some to use arbitration as as the '
-             'sort of payment of first resort.',
-      'title': 'Fixing the No Surprises Act: Scaling Back and Reforming the Federal '
-               'Arbitration System (Paragon Health Institute)',
-      'url': 'https://www.youtube.com/watch?v=PpfXacIXrAc&t=3420s',
-      'video_id': 'PpfXacIXrAc'},
+      'text': 'There is no benchmark, and it is not medicare plus 125.',
+      'timestamp': 219,
+      'timestamp_label': '[00:03:39]',
+      'timestamp_seconds': 219,
+      'tip': 'There is no benchmark, and it is not medicare plus 125.',
+      'title': 'No Surprises Act: New Law to Protect Against Surprise Medical Bills',
+      'url': 'https://www.youtube.com/watch?v=tNA4dmumP8o&t=219s',
+      'video_id': 'tNA4dmumP8o'},
+     {'author': 'IndeMed',
+      'channel': 'IndeMed',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:00](https://www.youtube.com/watch?v=YSVbYfiNgWE&t=60s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'In the last 5 years, we have saved hundreds of dollars for every patient, $567 in a '
+              'recent study, given to every patient every year as a result of this action.',
+      'timestamp': 60,
+      'timestamp_label': '[00:01:00]',
+      'timestamp_seconds': 60,
+      'tip': 'In the last 5 years, we have saved hundreds of dollars for every patient, $567 in a '
+             'recent study, given to every patient every year as a result of this action.',
+      'title': "The No Surprises Act Is Working — Here's How",
+      'url': 'https://www.youtube.com/watch?v=YSVbYfiNgWE&t=60s',
+      'video_id': 'YSVbYfiNgWE'},
+     {'author': 'American Medical Association (AMA)',
+      'channel': 'American Medical Association (AMA)',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:55:25](https://www.youtube.com/watch?v=zyTkKRTBBEg&t=3325s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Technically, the QPA is the basis for cost sharing, not a minimum payment.',
+      'timestamp': 3325,
+      'timestamp_label': '[00:55:25]',
+      'timestamp_seconds': 3325,
+      'tip': 'Technically, the QPA is the basis for cost sharing, not a minimum payment.',
+      'title': 'AMA Advocacy Insights webinar series: Implementing the No Surprises Act',
+      'url': 'https://www.youtube.com/watch?v=zyTkKRTBBEg&t=3325s',
+      'video_id': 'zyTkKRTBBEg'},
+     {'author': 'AHealthcareZ - Healthcare Finance Explained',
+      'channel': 'AHealthcareZ - Healthcare Finance Explained',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:35](https://www.youtube.com/watch?v=NFJaCM_6M_Y&t=395s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'So the key to all of the no surprises act is the qpa.',
+      'timestamp': 395,
+      'timestamp_label': '[00:06:35]',
+      'timestamp_seconds': 395,
+      'tip': 'So the key to all of the no surprises act is the qpa.',
+      'title': 'No Surprises Act Explained',
+      'url': 'https://www.youtube.com/watch?v=NFJaCM_6M_Y&t=395s',
+      'video_id': 'NFJaCM_6M_Y'},
+     {'author': 'Welcome to The Patient Blueprint.',
+      'channel': 'Welcome to The Patient Blueprint.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:00](https://www.youtube.com/watch?v=tNSTH4Y29D8&t=60s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'The $2,800 difference is banned.',
+      'timestamp': 60,
+      'timestamp_label': '[00:01:00]',
+      'timestamp_seconds': 60,
+      'tip': 'The $2,800 difference is banned.',
+      'title': 'Surprise Billing & the No Surprises Act Explained',
+      'url': 'https://www.youtube.com/watch?v=tNSTH4Y29D8&t=60s',
+      'video_id': 'tNSTH4Y29D8'},
+     {'author': 'Grand Rounds in Urology',
+      'channel': 'Grand Rounds in Urology',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:48](https://www.youtube.com/watch?v=_42GJfeJNw4&t=288s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'The losing party has to pay the cost of the independent dispute resolution '
+              'arbitrator.',
+      'timestamp': 288,
+      'timestamp_label': '[00:04:48]',
+      'timestamp_seconds': 288,
+      'tip': 'The losing party has to pay the cost of the independent dispute resolution '
+             'arbitrator.',
+      'title': 'No More Surprises: An Overview of the No Surprises Act',
+      'url': 'https://www.youtube.com/watch?v=_42GJfeJNw4&t=288s',
+      'video_id': '_42GJfeJNw4'},
+     {'author': 'Radiology Partners',
+      'channel': 'Radiology Partners',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:58](https://www.youtube.com/watch?v=q1qFNKqrEcs&t=418s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Benchmarking at the median in-network rate is a powerful way to take the top 50% of '
+              'rates, cut them off, throw them away and recalibrate everything downward.',
+      'timestamp': 418,
+      'timestamp_label': '[00:06:58]',
+      'timestamp_seconds': 418,
+      'tip': 'Benchmarking at the median in-network rate is a powerful way to take the top 50% of '
+             'rates, cut them off, throw them away and recalibrate everything downward.',
+      'title': 'Part 1 - Surprise Medical Billing & The No Surprises Act: More Surprises Than '
+               "You'd Think",
+      'url': 'https://www.youtube.com/watch?v=q1qFNKqrEcs&t=418s',
+      'video_id': 'q1qFNKqrEcs'},
+     {'author': 'First Healthcare Compliance',
+      'channel': 'First Healthcare Compliance',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:04:14](https://www.youtube.com/watch?v=uQSw1Ucy6L4&t=3854s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "Within 30 business days after the IDR entity's selection, the IDR entity must "
+              'select one of the offers submitted and is required to choose the offer closest to '
+              'the QPA.',
+      'timestamp': 3854,
+      'timestamp_label': '[01:04:14]',
+      'timestamp_seconds': 3854,
+      'tip': "Within 30 business days after the IDR entity's selection, the IDR entity must select "
+             'one of the offers submitted and is required to choose the offer closest to the QPA.',
+      'title': 'The No Surprises Act - What You Need to Know',
+      'url': 'https://www.youtube.com/watch?v=uQSw1Ucy6L4&t=3854s',
+      'video_id': 'uQSw1Ucy6L4'},
+     {'author': 'U.S. Department of Health and Human Services',
+      'channel': 'U.S. Department of Health and Human Services',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:24](https://www.youtube.com/watch?v=eKJscqVwYls&t=24s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'First, we have banned surprise billing for emergency and certain non-emergency '
+              'services.',
+      'timestamp': 24,
+      'timestamp_label': '[00:00:24]',
+      'timestamp_seconds': 24,
+      'tip': 'First, we have banned surprise billing for emergency and certain non-emergency '
+             'services.',
+      'title': 'No More Surprise Medical Bills: 5 Things To Know about the No Surprises Act Taking '
+               'Effect in 2022',
+      'url': 'https://www.youtube.com/watch?v=eKJscqVwYls&t=24s',
+      'video_id': 'eKJscqVwYls'},
+     {'author': 'Holland & Hart LLP',
+      'channel': 'Holland & Hart LLP',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:46:53](https://www.youtube.com/watch?v=aaDjROGKKC0&t=2813s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "Just remember it's going to be likely very difficult to obtain the patient consent.",
+      'timestamp': 2813,
+      'timestamp_label': '[00:46:53]',
+      'timestamp_seconds': 2813,
+      'tip': "Just remember it's going to be likely very difficult to obtain the patient consent.",
+      'title': 'No Surprise Billing Rules',
+      'url': 'https://www.youtube.com/watch?v=aaDjROGKKC0&t=2813s',
+      'video_id': 'aaDjROGKKC0'},
+     {'author': 'PracticeForces',
+      'channel': 'PracticeForces',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:02](https://www.youtube.com/watch?v=s5b-Kz13ecw&t=62s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "We're currently using the Medicare fee schedule in order to bill the patients "
+              'according to the no surprise billing act.',
+      'timestamp': 62,
+      'timestamp_label': '[00:01:02]',
+      'timestamp_seconds': 62,
+      'tip': "We're currently using the Medicare fee schedule in order to bill the patients "
+             'according to the no surprise billing act.',
+      'title': 'Facts of No Surprise Billing Act',
+      'url': 'https://www.youtube.com/watch?v=s5b-Kz13ecw&t=62s',
+      'video_id': 's5b-Kz13ecw'},
+     {'author': 'CMSHHSgov',
+      'channel': 'CMSHHSgov',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:39:57](https://www.youtube.com/watch?v=aQ87InetyaA&t=2397s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "This is true, even if the provider or facility gets the individual's signed "
+              'consent.',
+      'timestamp': 2397,
+      'timestamp_label': '[00:39:57]',
+      'timestamp_seconds': 2397,
+      'tip': "This is true, even if the provider or facility gets the individual's signed consent.",
+      'title': 'The No Surprises Act’s Prohibitions on Balance Billing for Providers and '
+               'Facilities',
+      'url': 'https://www.youtube.com/watch?v=aQ87InetyaA&t=2397s',
+      'video_id': 'aQ87InetyaA'}],
+ 2: [{'author': 'Evolutio Labs',
+      'channel': 'Evolutio Labs',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:03](https://www.youtube.com/watch?v=HwCCcS3hQls&t=63s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Under federal law, the standard is the prudent layperson standard, meaning if a '
+              'reasonable person in your situation would have gone to the ER, it qualifies.',
+      'timestamp': 63,
+      'timestamp_label': '[00:01:03]',
+      'timestamp_seconds': 63,
+      'tip': 'Under federal law, the standard is the prudent layperson standard, meaning if a '
+             'reasonable person in your situation would have gone to the ER, it qualifies.',
+      'title': 'ER Bill Denied? Do NOT Pay Until You Watch This (The No Surprises Act)',
+      'url': 'https://www.youtube.com/watch?v=HwCCcS3hQls&t=63s',
+      'video_id': 'HwCCcS3hQls'},
+     {'author': 'Law Unpacked',
+      'channel': 'Law Unpacked',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:12](https://www.youtube.com/watch?v=0NouMpFWLHI&t=132s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Air ambulances, meaning helicopters and planes, are covered by the law. But ground '
+              'ambulances generally are not.',
+      'timestamp': 132,
+      'timestamp_label': '[00:02:12]',
+      'timestamp_seconds': 132,
+      'tip': 'Air ambulances, meaning helicopters and planes, are covered by the law. But ground '
+             'ambulances generally are not.',
+      'title': 'Do You Have to Pay a Surprise Medical Bill? (The No Surprises Act Explained)',
+      'url': 'https://www.youtube.com/watch?v=0NouMpFWLHI&t=132s',
+      'video_id': '0NouMpFWLHI'},
+     {'author': 'Covered USA',
+      'channel': 'Covered USA',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:39](https://www.youtube.com/watch?v=zDmKmfxl84c&t=159s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Ground ambulance services are not covered by the No Surprises Act at all.',
+      'timestamp': 159,
+      'timestamp_label': '[00:02:39]',
+      'timestamp_seconds': 159,
+      'tip': 'Ground ambulance services are not covered by the No Surprises Act at all.',
+      'title': 'The Surprise Bill Ban: What the No Surprises Act Actually Covers — and the One '
+               'Ambulance It Does Not',
+      'url': 'https://www.youtube.com/watch?v=zDmKmfxl84c&t=159s',
+      'video_id': 'zDmKmfxl84c'},
+     {'author': 'Problem Solved Lab',
+      'channel': 'Problem Solved Lab',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:46](https://www.youtube.com/watch?v=ofqIwNzp8lA&t=226s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'A payment plan can be read as acceptance of the full amount.',
+      'timestamp': 226,
+      'timestamp_label': '[00:03:46]',
+      'timestamp_seconds': 226,
+      'tip': 'A payment plan can be read as acceptance of the full amount.',
+      'title': 'The No Surprises Act Cut Your ER Bill Already — Did You Pay $1,300 Too Much? '
+               '(2026)',
+      'url': 'https://www.youtube.com/watch?v=ofqIwNzp8lA&t=226s',
+      'video_id': 'ofqIwNzp8lA'},
+     {'author': 'FOX 26 Houston',
+      'channel': 'FOX 26 Houston',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:07](https://www.youtube.com/watch?v=9dOW3txIHG0&t=127s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Consumers will often ask if a provider accepts or takes their insurance, and that '
+              'is not the question; you want to ask whether you are in network.',
+      'timestamp': 127,
+      'timestamp_label': '[00:02:07]',
+      'timestamp_seconds': 127,
+      'tip': 'Consumers will often ask if a provider accepts or takes their insurance, and that is '
+             'not the question; you want to ask whether you are in network.',
+      'title': 'Loopholes in No Surprises Act can leave some patients with high bills',
+      'url': 'https://www.youtube.com/watch?v=9dOW3txIHG0&t=127s',
+      'video_id': '9dOW3txIHG0'},
+     {'author': 'Share My Lesson',
+      'channel': 'Share My Lesson',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:22](https://www.youtube.com/watch?v=Q11eG-8d-Hw&t=262s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Step two, call the collection agency and say this bill appears to violate the No '
+              'Surprises Act, please stop collection and reprocess through my insurance company as '
+              'an in network claim.',
+      'timestamp': 262,
+      'timestamp_label': '[00:04:22]',
+      'timestamp_seconds': 262,
+      'tip': 'Step two, call the collection agency and say this bill appears to violate the No '
+             'Surprises Act, please stop collection and reprocess through my insurance company as '
+             'an in network claim.',
+      'title': 'The No Surprises Act Explained: How to Fight Surprise Medical Bills',
+      'url': 'https://www.youtube.com/watch?v=Q11eG-8d-Hw&t=262s',
+      'video_id': 'Q11eG-8d-Hw'},
+     {'author': 'AS DESIGNED | Risk & Insurance Stories',
+      'channel': 'AS DESIGNED | Risk & Insurance Stories',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:05](https://www.youtube.com/watch?v=w_lpas-cNkc&t=365s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Air ambulance is covered. The helicopter is protected, the road is not.',
+      'timestamp': 365,
+      'timestamp_label': '[00:06:05]',
+      'timestamp_seconds': 365,
+      'tip': 'Air ambulance is covered. The helicopter is protected, the road is not.',
+      'title': 'The Law Stops Surprise Medical Bills. Why Not the Ambulance?',
+      'url': 'https://www.youtube.com/watch?v=w_lpas-cNkc&t=365s',
+      'video_id': 'w_lpas-cNkc'},
+     {'author': 'AS DESIGNED | Risk & Insurance Stories',
+      'channel': 'AS DESIGNED | Risk & Insurance Stories',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:27](https://www.youtube.com/watch?v=w_lpas-cNkc&t=507s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'The state insurance department never had jurisdiction. The state had a ground '
+              'ambulance law of its own. It reached fully insured plans.',
+      'timestamp': 507,
+      'timestamp_label': '[00:08:27]',
+      'timestamp_seconds': 507,
+      'tip': 'The state insurance department never had jurisdiction. The state had a ground '
+             'ambulance law of its own. It reached fully insured plans.',
+      'title': 'The Law Stops Surprise Medical Bills. Why Not the Ambulance?',
+      'url': 'https://www.youtube.com/watch?v=w_lpas-cNkc&t=507s',
+      'video_id': 'w_lpas-cNkc'},
+     {'author': 'Law & Business',
+      'channel': 'Law & Business',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:04](https://www.youtube.com/watch?v=88cpe80FbyY&t=484s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Approximately 60% of commercially insured workers are enrolled in these self-funded '
+              'employer plans, completely exempting them from any state-level ambulance '
+              'protections.',
+      'timestamp': 484,
+      'timestamp_label': '[00:08:04]',
+      'timestamp_seconds': 484,
+      'tip': 'Approximately 60% of commercially insured workers are enrolled in these self-funded '
+             'employer plans, completely exempting them from any state-level ambulance '
+             'protections.',
+      'title': 'Are Ambulances Covered Under Surprise Billing Laws?',
+      'url': 'https://www.youtube.com/watch?v=88cpe80FbyY&t=484s',
+      'video_id': '88cpe80FbyY'},
+     {'author': 'Bill Fighter',
+      'channel': 'Bill Fighter',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:45](https://www.youtube.com/watch?v=1VtIU2oIxEY&t=285s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "You do not have to sign it. If you don't sign that form, the provider cannot "
+              'balance bill you.',
+      'timestamp': 285,
+      'timestamp_label': '[00:04:45]',
+      'timestamp_seconds': 285,
+      'tip': "You do not have to sign it. If you don't sign that form, the provider cannot balance "
+             'bill you.',
+      'title': 'No Surprises Act Exposed - How to Kill an $8,472 Surprise Bill',
+      'url': 'https://www.youtube.com/watch?v=1VtIU2oIxEY&t=285s',
+      'video_id': '1VtIU2oIxEY'},
+     {'author': 'HealthWatch Wisconsin',
+      'channel': 'HealthWatch Wisconsin',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:53](https://www.youtube.com/watch?v=MsP7ttGr9OA&t=113s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "The emergency services protections don't apply to all of the follow-up or ancillary "
+              'treatment that individuals might get after that emergency has concluded.',
+      'timestamp': 113,
+      'timestamp_label': '[00:01:53]',
+      'timestamp_seconds': 113,
+      'tip': "The emergency services protections don't apply to all of the follow-up or ancillary "
+             'treatment that individuals might get after that emergency has concluded.',
+      'title': 'Quick Take: No Surprises Act: Out of Network Charges',
+      'url': 'https://www.youtube.com/watch?v=MsP7ttGr9OA&t=113s',
+      'video_id': 'MsP7ttGr9OA'},
+     {'author': 'Insured and Informed',
+      'channel': 'Insured and Informed',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:17](https://www.youtube.com/watch?v=wySlaLru-l4&t=137s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'CMS guidance states that the notice and consent exception cannot be applied to '
+              'ancillary services, which includes laboratory services.',
+      'timestamp': 137,
+      'timestamp_label': '[00:02:17]',
+      'timestamp_seconds': 137,
+      'tip': 'CMS guidance states that the notice and consent exception cannot be applied to '
+             'ancillary services, which includes laboratory services.',
+      'title': 'My In-Network Doctor Sent My Labs Out-of-Network… Now I Owe $2,000?',
+      'url': 'https://www.youtube.com/watch?v=wySlaLru-l4&t=137s',
+      'video_id': 'wySlaLru-l4'},
+     {'author': 'Capital Autopsy',
+      'channel': 'Capital Autopsy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:06](https://www.youtube.com/watch?v=PVUGwjJg-VI&t=486s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Federal regulators estimated the system would handle about seventeen thousand '
+              'disputes a year. Instead, providers filed about six hundred and fifty thousand in '
+              'twenty twenty-three.',
+      'timestamp': 486,
+      'timestamp_label': '[00:08:06]',
+      'timestamp_seconds': 486,
+      'tip': 'Federal regulators estimated the system would handle about seventeen thousand '
+             'disputes a year. Instead, providers filed about six hundred and fifty thousand in '
+             'twenty twenty-three.',
+      'title': 'In-Network Hospital, Out-of-Network Doctor: The Private Equity Trap',
+      'url': 'https://www.youtube.com/watch?v=PVUGwjJg-VI&t=486s',
+      'video_id': 'PVUGwjJg-VI'},
+     {'author': 'AHealthcareZ - Healthcare Finance Explained',
+      'channel': 'AHealthcareZ - Healthcare Finance Explained',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:50](https://www.youtube.com/watch?v=8NDnQoTkjb4&t=110s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'The in-network physician bill might only be like $250 but the out of network '
+              'facility bill could be upwards of like $20,000.',
+      'timestamp': 110,
+      'timestamp_label': '[00:01:50]',
+      'timestamp_seconds': 110,
+      'tip': 'The in-network physician bill might only be like $250 but the out of network '
+             'facility bill could be upwards of like $20,000.',
+      'title': 'Healthcare In-Network / Out-of-Network Bait and Switch',
+      'url': 'https://www.youtube.com/watch?v=8NDnQoTkjb4&t=110s',
+      'video_id': '8NDnQoTkjb4'},
+     {'author': 'Welcome to The Patient Blueprint.',
+      'channel': 'Welcome to The Patient Blueprint.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:25](https://www.youtube.com/watch?v=3OCpShEAIJs&t=85s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "That $1,340 comes from $3,500 minus $1,800 minus $360, and it's prohibited under "
+              'the No Surprises Act. Mark pays only $360.',
+      'timestamp': 85,
+      'timestamp_label': '[00:01:25]',
+      'timestamp_seconds': 85,
+      'tip': "That $1,340 comes from $3,500 minus $1,800 minus $360, and it's prohibited under the "
+             'No Surprises Act. Mark pays only $360.',
+      'title': 'Surprise Medical Bills: No Surprises Act Protections Explained',
+      'url': 'https://www.youtube.com/watch?v=3OCpShEAIJs&t=85s',
+      'video_id': '3OCpShEAIJs'},
+     {'author': 'The On-Air Advocate',
+      'channel': 'The On-Air Advocate',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:12](https://www.youtube.com/watch?v=1tAnAfBQ9O8&t=72s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'If your rights are violated, you still file your complaint with CMS. You have 120 '
+              "days to take action, and it's completely free to file.",
+      'timestamp': 72,
+      'timestamp_label': '[00:01:12]',
+      'timestamp_seconds': 72,
+      'tip': 'If your rights are violated, you still file your complaint with CMS. You have 120 '
+             "days to take action, and it's completely free to file.",
+      'title': 'Unexpected Medical Bill? Know Your Rights Under the No Surprises Act',
+      'url': 'https://www.youtube.com/watch?v=1tAnAfBQ9O8&t=72s',
+      'video_id': '1tAnAfBQ9O8'},
+     {'author': 'Bill Fighter',
+      'channel': 'Bill Fighter',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:11](https://www.youtube.com/watch?v=OWN7CBskcIQ&t=431s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Pro tip on your opening offer. Start at about 25% of the original bill.',
+      'timestamp': 431,
+      'timestamp_label': '[00:07:11]',
+      'timestamp_seconds': 431,
+      'tip': 'Pro tip on your opening offer. Start at about 25% of the original bill.',
+      'title': 'Out-of-Network Bill Shock? Negotiate It Down 60% With This Script',
+      'url': 'https://www.youtube.com/watch?v=OWN7CBskcIQ&t=431s',
+      'video_id': 'OWN7CBskcIQ'}],
+ 3: [{'author': 'American Medical Association (AMA)',
+      'channel': 'American Medical Association (AMA)',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:54:45](https://www.youtube.com/watch?v=6_ODgJ97UtA&t=3285s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'There should be one process that applies to any given claim, either the state or '
+              'the federal process.',
+      'timestamp': 3285,
+      'timestamp_label': '[00:54:45]',
+      'timestamp_seconds': 3285,
+      'tip': 'There should be one process that applies to any given claim, either the state or the '
+             'federal process.',
+      'title': 'Out-of-network payment process under the No Surprises Act',
+      'url': 'https://www.youtube.com/watch?v=6_ODgJ97UtA&t=3285s',
+      'video_id': '6_ODgJ97UtA'},
+     {'author': 'American Medical Association (AMA)',
+      'channel': 'American Medical Association (AMA)',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:20:13](https://www.youtube.com/watch?v=6_ODgJ97UtA&t=1213s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "As we're going to discuss, the providers are really in the driver's seat about "
+              'initiating the process.',
+      'timestamp': 1213,
+      'timestamp_label': '[00:20:13]',
+      'timestamp_seconds': 1213,
+      'tip': "As we're going to discuss, the providers are really in the driver's seat about "
+             'initiating the process.',
+      'title': 'Out-of-network payment process under the No Surprises Act',
+      'url': 'https://www.youtube.com/watch?v=6_ODgJ97UtA&t=1213s',
+      'video_id': '6_ODgJ97UtA'},
+     {'author': 'CMSHHSgov',
+      'channel': 'CMSHHSgov',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:58](https://www.youtube.com/watch?v=Sp7aK2UsmlE&t=658s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'The rate negotiated under a contract constitutes a single contracted rate '
+              'regardless of the number of claims paid at that contracted rate.',
+      'timestamp': 658,
+      'timestamp_label': '[00:10:58]',
+      'timestamp_seconds': 658,
+      'tip': 'The rate negotiated under a contract constitutes a single contracted rate regardless '
+             'of the number of claims paid at that contracted rate.',
+      'title': 'No Surprises Act: Qualifying Payment Amount Calculation Methodology',
+      'url': 'https://www.youtube.com/watch?v=Sp7aK2UsmlE&t=658s',
+      'video_id': 'Sp7aK2UsmlE'},
+     {'author': 'CMSHHSgov',
+      'channel': 'CMSHHSgov',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:31:54](https://www.youtube.com/watch?v=Sp7aK2UsmlE&t=1914s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Additionally, plans and issuers are responsible for the cost associated with using '
+              'an eligible database to determine the QPA.',
+      'timestamp': 1914,
+      'timestamp_label': '[00:31:54]',
+      'timestamp_seconds': 1914,
+      'tip': 'Additionally, plans and issuers are responsible for the cost associated with using '
+             'an eligible database to determine the QPA.',
+      'title': 'No Surprises Act: Qualifying Payment Amount Calculation Methodology',
+      'url': 'https://www.youtube.com/watch?v=Sp7aK2UsmlE&t=1914s',
+      'video_id': 'Sp7aK2UsmlE'},
+     {'author': 'CMSHHSgov',
+      'channel': 'CMSHHSgov',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:53:43](https://www.youtube.com/watch?v=RRI2VT8QiiI&t=3223s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Provider or facility must also suspend the accrual of any late fees on unpaid bill '
+              'amounts until after the PPDR process is completed.',
+      'timestamp': 3223,
+      'timestamp_label': '[00:53:43]',
+      'timestamp_seconds': 3223,
+      'tip': 'Provider or facility must also suspend the accrual of any late fees on unpaid bill '
+             'amounts until after the PPDR process is completed.',
+      'title': 'No Surprises Act: Understanding Good Faith Estimates & Patient Provider Dispute '
+               'Resolution Reqs',
+      'url': 'https://www.youtube.com/watch?v=RRI2VT8QiiI&t=3223s',
+      'video_id': 'RRI2VT8QiiI'},
+     {'author': 'WFAA',
+      'channel': 'WFAA',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:37](https://www.youtube.com/watch?v=_ofpUW91u8o&t=37s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Most ER doctors in Texas do not actually work for the hospital.',
+      'timestamp': 37,
+      'timestamp_label': '[00:00:37]',
+      'timestamp_seconds': 37,
+      'tip': 'Most ER doctors in Texas do not actually work for the hospital.',
+      'title': 'Surprise medical billing will be banished in Texas starting Jan. 1',
+      'url': 'https://www.youtube.com/watch?v=_ofpUW91u8o&t=37s',
+      'video_id': '_ofpUW91u8o'},
+     {'author': "Becker's Hospital Review",
+      'channel': "Becker's Hospital Review",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:53:01](https://www.youtube.com/watch?v=RJps0omOazk&t=3181s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Carrier databases are unverified, a black box.',
+      'timestamp': 3181,
+      'timestamp_label': '[00:53:01]',
+      'timestamp_seconds': 3181,
+      'tip': 'Carrier databases are unverified, a black box.',
+      'title': 'Surprise Billing Legislation - Overview, Response, and Future Implications',
+      'url': 'https://www.youtube.com/watch?v=RJps0omOazk&t=3181s',
+      'video_id': 'RJps0omOazk'},
+     {'author': 'Miller Johnson',
+      'channel': 'Miller Johnson',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:27:15](https://www.youtube.com/watch?v=EwlPyAVGU8k&t=1635s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "You're not supposed to be adding additional information by the time you get to "
+              'arbitration so you want to make sure you do it right the first time when arguing '
+              'with the plan.',
+      'timestamp': 1635,
+      'timestamp_label': '[00:27:15]',
+      'timestamp_seconds': 1635,
+      'tip': "You're not supposed to be adding additional information by the time you get to "
+             'arbitration so you want to make sure you do it right the first time when arguing '
+             'with the plan.',
+      'title': 'Michigan’s Surprise Billing Law:  What Providers and Health Plans Need to Know',
+      'url': 'https://www.youtube.com/watch?v=EwlPyAVGU8k&t=1635s',
+      'video_id': 'EwlPyAVGU8k'},
+     {'author': 'Compliancy Group',
+      'channel': 'Compliancy Group',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:27](https://www.youtube.com/watch?v=yI1fsZFZPwY&t=87s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Some examples of business associates include medical billing companies, IT service '
+              'providers and cloud storage vendors.',
+      'timestamp': 87,
+      'timestamp_label': '[00:01:27]',
+      'timestamp_seconds': 87,
+      'tip': 'Some examples of business associates include medical billing companies, IT service '
+             'providers and cloud storage vendors.',
+      'title': 'What is a Business Associate Agreement',
+      'url': 'https://www.youtube.com/watch?v=yI1fsZFZPwY&t=87s',
+      'video_id': 'yI1fsZFZPwY'},
+     {'author': 'Orion Billing - Medical Billing Basics',
+      'channel': 'Orion Billing - Medical Billing Basics',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:52](https://www.youtube.com/watch?v=_z9Vfv0D6_4&t=112s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "If the policy says that the timely filing deadline is a year then it's a year even "
+              "if the doctor's contract says it's three months.",
+      'timestamp': 112,
+      'timestamp_label': '[00:01:52]',
+      'timestamp_seconds': 112,
+      'tip': "If the policy says that the timely filing deadline is a year then it's a year even "
+             "if the doctor's contract says it's three months.",
+      'title': 'ERISA explained (and Why it Matters)',
+      'url': 'https://www.youtube.com/watch?v=_z9Vfv0D6_4&t=112s',
+      'video_id': '_z9Vfv0D6_4'},
+     {'author': 'New Hampshire Insurance Department',
+      'channel': 'New Hampshire Insurance Department',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:25](https://www.youtube.com/watch?v=C6hIoQuEWeA&t=205s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "Each party pays half of the IDR entity's fee rather than the loser paying the full "
+              'fee.',
+      'timestamp': 205,
+      'timestamp_label': '[00:03:25]',
+      'timestamp_seconds': 205,
+      'tip': "Each party pays half of the IDR entity's fee rather than the loser paying the full "
+             'fee.',
+      'title': 'Explaining the Independent Dispute Resolution Process in New Hampshire',
+      'url': 'https://www.youtube.com/watch?v=C6hIoQuEWeA&t=205s',
+      'video_id': 'C6hIoQuEWeA'},
+     {'author': 'Private Practice Skills',
+      'channel': 'Private Practice Skills',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:54](https://www.youtube.com/watch?v=JT1pxEvMFxw&t=534s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "Fortunately we don't have to create a new good faith estimate for every single "
+              'therapy session, we can create a recurring good faith estimate for up to 12 months.',
+      'timestamp': 534,
+      'timestamp_label': '[00:08:54]',
+      'timestamp_seconds': 534,
+      'tip': "Fortunately we don't have to create a new good faith estimate for every single "
+             'therapy session, we can create a recurring good faith estimate for up to 12 months.',
+      'title': 'How the No Surprises Act Impacts your Practice | Good Faith Estimate',
+      'url': 'https://www.youtube.com/watch?v=JT1pxEvMFxw&t=534s',
+      'video_id': 'JT1pxEvMFxw'},
+     {'author': 'HIPAA TV',
+      'channel': 'HIPAA TV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:21:37](https://www.youtube.com/watch?v=T99RB14fdY4&t=1297s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "I'm recommending that everybody get with their EMR company to do these.",
+      'timestamp': 1297,
+      'timestamp_label': '[00:21:37]',
+      'timestamp_seconds': 1297,
+      'tip': "I'm recommending that everybody get with their EMR company to do these.",
+      'title': 'No Surprises Act  Provider Training',
+      'url': 'https://www.youtube.com/watch?v=T99RB14fdY4&t=1297s',
+      'video_id': 'T99RB14fdY4'},
+     {'author': 'DAS Health',
+      'channel': 'DAS Health',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:42:00](https://www.youtube.com/watch?v=e5b1ICVPSZs&t=2520s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'You have to suspend all collections and accrual late fees on any unpaid amounts '
+              'while this resolution process is pending.',
+      'timestamp': 2520,
+      'timestamp_label': '[00:42:00]',
+      'timestamp_seconds': 2520,
+      'tip': 'You have to suspend all collections and accrual late fees on any unpaid amounts '
+             'while this resolution process is pending.',
+      'title': 'Don’t Be Surprised by the No Surprises Act!',
+      'url': 'https://www.youtube.com/watch?v=e5b1ICVPSZs&t=2520s',
+      'video_id': 'e5b1ICVPSZs'},
+     {'author': 'Ziegler Diamond Law: Debt Fighters',
+      'channel': 'Ziegler Diamond Law: Debt Fighters',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:06](https://www.youtube.com/watch?v=UVJoOmtBD-s&t=66s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Any out of network provider has to give at least 72 hours notice to the patient of '
+              'the out of network rates and the patient must agree prior to the procedure to pay '
+              'those rates.',
+      'timestamp': 66,
+      'timestamp_label': '[00:01:06]',
+      'timestamp_seconds': 66,
+      'tip': 'Any out of network provider has to give at least 72 hours notice to the patient of '
+             'the out of network rates and the patient must agree prior to the procedure to pay '
+             'those rates.',
+      'title': 'No Surprises Act - Take Control of your Medical Bills!',
+      'url': 'https://www.youtube.com/watch?v=UVJoOmtBD-s&t=66s',
+      'video_id': 'UVJoOmtBD-s'},
+     {'author': 'NSCHBC Edge Podcast',
+      'channel': 'NSCHBC Edge Podcast',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:19](https://www.youtube.com/watch?v=uUBAmK-bcwg&t=679s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'And so the No Surprises Act, while I get it, I understand why they passed this '
+              'federal law to protect consumers, it only applies in very limited circumstances.',
+      'timestamp': 679,
+      'timestamp_label': '[00:11:19]',
+      'timestamp_seconds': 679,
+      'tip': 'And so the No Surprises Act, while I get it, I understand why they passed this '
+             'federal law to protect consumers, it only applies in very limited circumstances.',
+      'title': 'No Surprises Act for 2026',
+      'url': 'https://www.youtube.com/watch?v=uUBAmK-bcwg&t=679s',
+      'video_id': 'uUBAmK-bcwg'},
+     {'author': 'WJHL',
+      'channel': 'WJHL',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:49](https://www.youtube.com/watch?v=OtQr6GmQzSY&t=109s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'It has always been our policy regardless of what the federal law is.',
+      'timestamp': 109,
+      'timestamp_label': '[00:01:49]',
+      'timestamp_seconds': 109,
+      'tip': 'It has always been our policy regardless of what the federal law is.',
+      'title': "'No Surprises Act' meant to protect patients from surprise medical bills takes "
+               'effect Jan. 1',
+      'url': 'https://www.youtube.com/watch?v=OtQr6GmQzSY&t=109s',
+      'video_id': 'OtQr6GmQzSY'},
+     {'author': 'Matthiesen, Wickert & Lehrer, S.C.',
+      'channel': 'Matthiesen, Wickert & Lehrer, S.C.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:42:33](https://www.youtube.com/watch?v=M-sP3O4XgCs&t=2553s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "We see far too many claims just being abandoned because they're non-ERISA or "
+              "they're fully insured.",
+      'timestamp': 2553,
+      'timestamp_label': '[00:42:33]',
+      'timestamp_seconds': 2553,
+      'tip': "We see far too many claims just being abandoned because they're non-ERISA or they're "
+             'fully insured.',
+      'title': 'Fully Insured and Non ERISA Plans  Advanced Topics in Preemption and Anti '
+               'Subrogation Exceptions',
+      'url': 'https://www.youtube.com/watch?v=M-sP3O4XgCs&t=2553s',
+      'video_id': 'M-sP3O4XgCs'}],
+ 4: [{'author': 'KLGatesLaw',
+      'channel': 'KLGatesLaw',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:00](https://www.youtube.com/watch?v=VbqFYBvnpas&t=780s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'The court did not vacate the October final rule in its entirety, just the portion '
+              'that dealt with the QPA presumption, so the IDR process remains in effect today.',
+      'timestamp': 780,
+      'timestamp_label': '[00:13:00]',
+      'timestamp_seconds': 780,
+      'tip': 'The court did not vacate the October final rule in its entirety, just the portion '
+             'that dealt with the QPA presumption, so the IDR process remains in effect today.',
+      'title': 'Navigating the Independent Dispute Resolution Process Under the No Surprises Act',
+      'url': 'https://www.youtube.com/watch?v=VbqFYBvnpas&t=780s',
+      'video_id': 'VbqFYBvnpas'},
+     {'author': 'CMSHHSgov',
+      'channel': 'CMSHHSgov',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:25:17](https://www.youtube.com/watch?v=7lzQt8aAlG0&t=1517s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'An offer will not be considered received by the certified IDR entity until the '
+              'certified IDR entity fee and the administrative fee have been paid.',
+      'timestamp': 1517,
+      'timestamp_label': '[00:25:17]',
+      'timestamp_seconds': 1517,
+      'tip': 'An offer will not be considered received by the certified IDR entity until the '
+             'certified IDR entity fee and the administrative fee have been paid.',
+      'title': 'An Overview of the Independent Dispute Resolution Process for Disputing Parties, '
+               'Part II',
+      'url': 'https://www.youtube.com/watch?v=7lzQt8aAlG0&t=1517s',
+      'video_id': '7lzQt8aAlG0'},
+     {'author': 'Lido',
+      'channel': 'Lido',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:51](https://www.youtube.com/watch?v=NHWPEtUOyK0&t=51s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "You don't always want to go the IDR route; the first thing you need to do is "
+              'determine if a claim is NSA eligible.',
+      'timestamp': 51,
+      'timestamp_label': '[00:00:51]',
+      'timestamp_seconds': 51,
+      'tip': "You don't always want to go the IDR route; the first thing you need to do is "
+             'determine if a claim is NSA eligible.',
+      'title': 'Is This Claim Eligible for IDR? How to Check Before You File (No Surprises Act)',
+      'url': 'https://www.youtube.com/watch?v=NHWPEtUOyK0&t=51s',
+      'video_id': 'NHWPEtUOyK0'},
+     {'author': 'Ben Martin',
+      'channel': 'Ben Martin',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:11](https://www.youtube.com/watch?v=dTrA6r3pGyE&t=131s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'IDR filing fees are a necessary component, but because our win rate is so high, '
+              'these costs are typically reimbursed by the payer.',
+      'timestamp': 131,
+      'timestamp_label': '[00:02:11]',
+      'timestamp_seconds': 131,
+      'tip': 'IDR filing fees are a necessary component, but because our win rate is so high, '
+             'these costs are typically reimbursed by the payer.',
+      'title': 'CoGenetix & ANS Solutions- OON IDR Webinar',
+      'url': 'https://www.youtube.com/watch?v=dTrA6r3pGyE&t=131s',
+      'video_id': 'dTrA6r3pGyE'},
+     {'author': 'Vee Healthtek',
+      'channel': 'Vee Healthtek',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:54](https://www.youtube.com/watch?v=s3194z7bdwY&t=54s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Keep evidence preparation upstream; waiting until a filing decision can leave too '
+              'little time to assemble a defensible submission.',
+      'timestamp': 54,
+      'timestamp_label': '[00:00:54]',
+      'timestamp_seconds': 54,
+      'tip': 'Keep evidence preparation upstream; waiting until a filing decision can leave too '
+             'little time to assemble a defensible submission.',
+      'title': 'How to Improve Out-of-Network Reimbursement and IDR Recovery',
+      'url': 'https://www.youtube.com/watch?v=s3194z7bdwY&t=54s',
+      'video_id': 's3194z7bdwY'},
+     {'author': 'P3Fusion',
+      'channel': 'P3Fusion',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:33](https://www.youtube.com/watch?v=IQXlcicB37I&t=33s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Once a dispute is initiated in the NSA portal the system automatically tracks '
+              'emails, reads the notice of IDR initiation and manages the entire process from that '
+              'point forward.',
+      'timestamp': 33,
+      'timestamp_label': '[00:00:33]',
+      'timestamp_seconds': 33,
+      'tip': 'Once a dispute is initiated in the NSA portal the system automatically tracks '
+             'emails, reads the notice of IDR initiation and manages the entire process from that '
+             'point forward.',
+      'title': 'No Surprises Act Dispute Management Solution | IDR | P3Fusion',
+      'url': 'https://www.youtube.com/watch?v=IQXlcicB37I&t=33s',
+      'video_id': 'IQXlcicB37I'},
+     {'author': 'CMSHHSgov',
+      'channel': 'CMSHHSgov',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:24](https://www.youtube.com/watch?v=Vy31vkzfNBE&t=264s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'It is the responsibility of the initiating party to review all line items in a '
+              'particular grouping and ensure that any line items being resubmitted together are '
+              'compliant with federal IDR batching and bundling criteria.',
+      'timestamp': 264,
+      'timestamp_label': '[00:04:24]',
+      'timestamp_seconds': 264,
+      'tip': 'It is the responsibility of the initiating party to review all line items in a '
+             'particular grouping and ensure that any line items being resubmitted together are '
+             'compliant with federal IDR batching and bundling criteria.',
+      'title': 'No Surprises Act: Notice of IDR Initiation - Resubmission Web Form Demo',
+      'url': 'https://www.youtube.com/watch?v=Vy31vkzfNBE&t=264s',
+      'video_id': 'Vy31vkzfNBE'},
+     {'author': 'CMSHHSgov',
+      'channel': 'CMSHHSgov',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:03](https://www.youtube.com/watch?v=cw4MI_h6Gns&t=303s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'If surprise billing protections were waived, the dispute will not be eligible.',
+      'timestamp': 303,
+      'timestamp_label': '[00:05:03]',
+      'timestamp_seconds': 303,
+      'tip': 'If surprise billing protections were waived, the dispute will not be eligible.',
+      'title': 'Notice of IDR Initiation Web Form Demo',
+      'url': 'https://www.youtube.com/watch?v=cw4MI_h6Gns&t=303s',
+      'video_id': 'cw4MI_h6Gns'},
      {'author': 'Staffingly, Inc',
       'channel': 'Staffingly, Inc',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:10](https://www.youtube.com/watch?v=ASHyX7v13Eo&t=70s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q7 operational verification).',
+      'markdown': '[00:02:33](https://www.youtube.com/watch?v=ASHyX7v13Eo&t=153s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': '300 times its designed capacity. Yet, wrapped inside this broken system is a '
-              'mathematical reality that practice owners cannot ignore. Participating in this '
-              'process yields massive financial returns. This chart compares baseline payments '
-              'to arbitration outcomes.',
-      'timestamp': 70,
-      'timestamp_label': '[00:01:10]',
-      'timestamp_seconds': 70,
-      'tip': '300 times its designed capacity. Yet, wrapped inside this broken system is a '
-             'mathematical reality that practice owners cannot ignore. Participating in this '
-             'process yields massive financial returns. This chart compares baseline payments '
-             'to arbitration outcomes.',
-      'title': 'NSA IDR Dispute Filing Services for Medical Practices | Recover What Insurers '
-               'Owe (Staffingly, Inc)',
-      'url': 'https://www.youtube.com/watch?v=ASHyX7v13Eo&t=70s',
+      'text': 'CMS allows claims to be grouped to save fees, but batching rules are complex, and '
+              'improperly grouped claims are immediately rejected.',
+      'timestamp': 153,
+      'timestamp_label': '[00:02:33]',
+      'timestamp_seconds': 153,
+      'tip': 'CMS allows claims to be grouped to save fees, but batching rules are complex, and '
+             'improperly grouped claims are immediately rejected.',
+      'title': 'NSA IDR Dispute Filing Services for Medical Practices | Recover What Insurers Owe',
+      'url': 'https://www.youtube.com/watch?v=ASHyX7v13Eo&t=153s',
       'video_id': 'ASHyX7v13Eo'},
      {'author': 'Ryan Downs',
       'channel': 'Ryan Downs',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:51](https://www.youtube.com/watch?v=7lqb5ev54mA&t=171s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q7 operational verification).',
+      'markdown': '[00:01:32](https://www.youtube.com/watch?v=0BGnlP4Q71M&t=92s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': 'And you have 30 days to kind of go through that settlement process. You have to '
-              'go through that process because you have to show proof that you went through '
-              'that process in order to get to the official arbitration step.',
+      'text': 'Most of the volume comes from an out of network charge on an in-network event, such '
+              'as your anesthesiologist, your ED docs, your hospitalists and pathologists.',
+      'timestamp': 92,
+      'timestamp_label': '[00:01:32]',
+      'timestamp_seconds': 92,
+      'tip': 'Most of the volume comes from an out of network charge on an in-network event, such '
+             'as your anesthesiologist, your ED docs, your hospitalists and pathologists.',
+      'title': 'Mini Episode: Explaining What Accounts Qualify for the IDR Process with Adam '
+               'Cartabiano',
+      'url': 'https://www.youtube.com/watch?v=0BGnlP4Q71M&t=92s',
+      'video_id': '0BGnlP4Q71M'},
+     {'author': 'Ryan Downs',
+      'channel': 'Ryan Downs',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:51](https://www.youtube.com/watch?v=7lqb5ev54mA&t=171s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you skip that step up front, the arbitration organization will reject the claim '
+              "because you didn't take that first step as outlined by CMS.",
       'timestamp': 171,
       'timestamp_label': '[00:02:51]',
       'timestamp_seconds': 171,
-      'tip': 'And you have 30 days to kind of go through that settlement process. You have to '
-             'go through that process because you have to show proof that you went through '
-             'that process in order to get to the official arbitration step.',
-      'title': 'Mini Episode: Breaking Down The IDR Process with Adam Cartabiano (Ryan Downs)',
+      'tip': 'If you skip that step up front, the arbitration organization will reject the claim '
+             "because you didn't take that first step as outlined by CMS.",
+      'title': 'Mini Episode: Breaking Down The IDR Process with Adam Cartabiano',
       'url': 'https://www.youtube.com/watch?v=7lqb5ev54mA&t=171s',
       'video_id': '7lqb5ev54mA'},
-     {'author': 'Zelis Healthcare',
+     {'author': 'Federal Student Aid',
+      'channel': 'Federal Student Aid',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:43](https://www.youtube.com/watch?v=9TnGgGAGY8c&t=103s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "Every year, you're required to recertify your income-driven repayment plan by "
+              'providing your updated income and family size information.',
+      'timestamp': 103,
+      'timestamp_label': '[00:01:43]',
+      'timestamp_seconds': 103,
+      'tip': "Every year, you're required to recertify your income-driven repayment plan by "
+             'providing your updated income and family size information.',
+      'title': 'Intro to IDR: What To Know About Income-Driven Repayment (IDR) Plans for Student '
+               'Loans',
+      'url': 'https://www.youtube.com/watch?v=9TnGgGAGY8c&t=103s',
+      'video_id': '9TnGgGAGY8c'},
+     {'author': 'Unfiltered Money Labs',
+      'channel': 'Unfiltered Money Labs',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:21](https://www.youtube.com/watch?v=oP8xNI1bG3E&t=321s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Missing your annual income recertification or paying scam companies are massive '
+              'financial pitfalls you just have to avoid.',
+      'timestamp': 321,
+      'timestamp_label': '[00:05:21]',
+      'timestamp_seconds': 321,
+      'tip': 'Missing your annual income recertification or paying scam companies are massive '
+             'financial pitfalls you just have to avoid.',
+      'title': 'Income-Driven Repayment Explained: How to Lower Your Student Loan Payments (2026)',
+      'url': 'https://www.youtube.com/watch?v=oP8xNI1bG3E&t=321s',
+      'video_id': 'oP8xNI1bG3E'},
+     {'author': 'Vee Healthtek',
+      'channel': 'Vee Healthtek',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=GpHExH5dquQ&t=0s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'A paid out of network claim can still leave recoverable reimbursement behind, '
+              'because payment status confirms that money moved, not that the amount was accurate.',
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': 'A paid out of network claim can still leave recoverable reimbursement behind, '
+             'because payment status confirms that money moved, not that the amount was accurate.',
+      'title': 'Out-of-Network Reimbursement: Why Paid Claims Can Still Hide Lost Revenue',
+      'url': 'https://www.youtube.com/watch?v=GpHExH5dquQ&t=0s',
+      'video_id': 'GpHExH5dquQ'},
+     {'author': 'IDR Law',
+      'channel': 'IDR Law',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:52:59](https://www.youtube.com/watch?v=ikQ6l3STH18&t=3179s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Engage reasonably with initial correspondence, look at the reasons why you were '
+              'appointed in the first place in your file notes, and remember the personal risk as '
+              'to cost.',
+      'timestamp': 3179,
+      'timestamp_label': '[00:52:59]',
+      'timestamp_seconds': 3179,
+      'tip': 'Engage reasonably with initial correspondence, look at the reasons why you were '
+             'appointed in the first place in your file notes, and remember the personal risk as '
+             'to cost.',
+      'title': 'Contentious Clinic: Executor and Administrator Removal Disputes',
+      'url': 'https://www.youtube.com/watch?v=ikQ6l3STH18&t=3179s',
+      'video_id': 'ikQ6l3STH18'},
+     {'author': 'CoGenetix Wellness',
+      'channel': 'CoGenetix Wellness',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:25](https://www.youtube.com/watch?v=m8zdt3GQSjY&t=265s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'IDR determinations are legally binding; payers cannot initiate clawbacks and they '
+              'are required to pay awarded amounts within 30 days.',
+      'timestamp': 265,
+      'timestamp_label': '[00:04:25]',
+      'timestamp_seconds': 265,
+      'tip': 'IDR determinations are legally binding; payers cannot initiate clawbacks and they '
+             'are required to pay awarded amounts within 30 days.',
+      'title': 'CoGenetix & ANS Solutions  OON IDR Webinar',
+      'url': 'https://www.youtube.com/watch?v=m8zdt3GQSjY&t=265s',
+      'video_id': 'm8zdt3GQSjY'}],
+ 5: [{'author': 'Zelis Healthcare',
       'channel': 'Zelis Healthcare',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:04](https://www.youtube.com/watch?v=D63N2KsthY8&t=304s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q7 operational verification).',
+      'markdown': '[00:05:52](https://www.youtube.com/watch?v=D63N2KsthY8&t=352s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'Talk a little bit about the technical assistant assistance later on. It looks '
-              'like another layer on top of uh the R process which is not in the regulations. '
-              "It's not in the statute but seems to allow for a resubmission of claims based "
-              'on errors.',
-      'timestamp': 304,
-      'timestamp_label': '[00:05:04]',
-      'timestamp_seconds': 304,
-      'tip': 'Talk a little bit about the technical assistant assistance later on. It looks '
-             'like another layer on top of uh the R process which is not in the regulations. '
-             "It's not in the statute but seems to allow for a resubmission of claims based on "
-             'errors.',
-      'title': 'No Surprises Act & IDR Updates | What Healthcare Payers & Providers Need to '
-               'Know (Zelis Healthcare)',
-      'url': 'https://www.youtube.com/watch?v=D63N2KsthY8&t=304s',
+      'text': 'So, litigation continues to kind of steer the policy.',
+      'timestamp': 352,
+      'timestamp_label': '[00:05:52]',
+      'timestamp_seconds': 352,
+      'tip': 'So, litigation continues to kind of steer the policy.',
+      'title': 'No Surprises Act & IDR Updates | What Healthcare Payers & Providers Need to Know',
+      'url': 'https://www.youtube.com/watch?v=D63N2KsthY8&t=352s',
       'video_id': 'D63N2KsthY8'},
-     {'author': 'RCM Navigator',
-      'channel': 'RCM Navigator',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:05](https://www.youtube.com/watch?v=ETPWERdn_jE&t=125s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Denied claims are a major financial hurdle. Reviewing and addressing denials '
-              'promptly through appeal processes helps recover lost revenue. Step 10, patient '
-              'billing and collections. After insurance payments, patients are build for any '
-              'remaining balances.',
-      'timestamp': 125,
-      'timestamp_label': '[00:02:05]',
-      'timestamp_seconds': 125,
-      'tip': 'Denied claims are a major financial hurdle. Reviewing and addressing denials '
-             'promptly through appeal processes helps recover lost revenue. Step 10, patient '
-             'billing and collections. After insurance payments, patients are build for any '
-             'remaining balances.',
-      'title': 'Break down of 13 steps of US Medical RCM (Revenue Cycle Management) (RCM '
-               'Navigator)',
-      'url': 'https://www.youtube.com/watch?v=ETPWERdn_jE&t=125s',
-      'video_id': 'ETPWERdn_jE'},
-     {'author': 'American Medical Association (AMA)',
-      'channel': 'American Medical Association (AMA)',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:45](https://www.youtube.com/watch?v=Ie5ARcGEY1g&t=225s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "And we'll go through each of these steps in the next slides. Step one is "
-              'patient registration. And this is when the practice collects the basic patient '
-              'demographic information and inputs that into the system.',
-      'timestamp': 225,
-      'timestamp_label': '[00:03:45]',
-      'timestamp_seconds': 225,
-      'tip': "And we'll go through each of these steps in the next slides. Step one is patient "
-             'registration. And this is when the practice collects the basic patient '
-             'demographic information and inputs that into the system.',
-      'title': 'Revenue Cycle Management (American Medical Association (AMA))',
-      'url': 'https://www.youtube.com/watch?v=Ie5ARcGEY1g&t=225s',
-      'video_id': 'Ie5ARcGEY1g'},
-     {'author': 'JobRath',
-      'channel': 'JobRath',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:38](https://www.youtube.com/watch?v=WCjl2ZOU1ec&t=98s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "AR aging, and revenue loss. That's why every department in the revenue cycle is "
-              'connected. If one step fails, it impacts the entire reimbursement process.',
-      'timestamp': 98,
-      'timestamp_label': '[00:01:38]',
-      'timestamp_seconds': 98,
-      'tip': "AR aging, and revenue loss. That's why every department in the revenue cycle is "
-             'connected. If one step fails, it impacts the entire reimbursement process.',
-      'title': 'What Is Revenue Cycle Management (RCM)? Interview Answer That Gets You Hired '
-               '(JobRath)',
-      'url': 'https://www.youtube.com/watch?v=WCjl2ZOU1ec&t=98s',
-      'video_id': 'WCjl2ZOU1ec'},
-     {'author': 'Bill Fighter',
-      'channel': 'Bill Fighter',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:48](https://www.youtube.com/watch?v=OWN7CBskcIQ&t=468s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Step four, get it in writing. This is huge. Before you pay one penny, get the '
-              'agreement in writing, usually by email.',
-      'timestamp': 468,
-      'timestamp_label': '[00:07:48]',
-      'timestamp_seconds': 468,
-      'tip': 'Step four, get it in writing. This is huge. Before you pay one penny, get the '
-             'agreement in writing, usually by email.',
-      'title': 'Out-of-Network Bill Shock? Negotiate It Down 60% With This Script (Bill '
-               'Fighter)',
-      'url': 'https://www.youtube.com/watch?v=OWN7CBskcIQ&t=468s',
-      'video_id': 'OWN7CBskcIQ'},
-     {'author': 'Fulcrum Strategies',
-      'channel': 'Fulcrum Strategies',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:33](https://www.youtube.com/watch?v=f9Q5ImwNeS0&t=213s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Texas Medical Association representing Physicians all over the country and some '
-              'guidance that was put out by CMS.',
-      'timestamp': 213,
-      'timestamp_label': '[00:03:33]',
-      'timestamp_seconds': 213,
-      'tip': 'Texas Medical Association representing Physicians all over the country and some '
-             'guidance that was put out by CMS.',
-      'title': 'Ep. 61 - Breaking down the impacts of the TMA 3 ruling (Fulcrum Strategies)',
-      'url': 'https://www.youtube.com/watch?v=f9Q5ImwNeS0&t=213s',
-      'video_id': 'f9Q5ImwNeS0'},
-     {'author': 'Dr. Tamir, MD',
-      'channel': 'Dr. Tamir, MD',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:40](https://www.youtube.com/watch?v=dfcTAfDPDqw&t=100s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I thought I was going to go into but eventually I changed my mind and that's "
-              'really how I landed on anesthesia which is to me the perfect specialty.',
-      'timestamp': 100,
-      'timestamp_label': '[00:01:40]',
-      'timestamp_seconds': 100,
-      'tip': "I thought I was going to go into but eventually I changed my mind and that's "
-             'really how I landed on anesthesia which is to me the perfect specialty.',
-      'title': 'The three specialties I couldn’t do #anesthesia #doctor #medschool #medicine '
-               '#premed (Dr. Tamir, MD)',
-      'url': 'https://www.youtube.com/watch?v=dfcTAfDPDqw&t=100s',
-      'video_id': 'dfcTAfDPDqw'},
-     {'author': 'Audio Webinars',
-      'channel': 'Audio Webinars',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:17](https://www.youtube.com/watch?v=T6j0qhLPruk&t=77s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Uh there's going to be a lot of uh there are a lot of unanswered questions I "
-              'would recommend strongly that at the end of this presentation if I cannot '
-              'answer any questions uh to email me or to webinar planet and within 24 hours I '
-              'will get you an answer.',
-      'timestamp': 77,
-      'timestamp_label': '[00:01:17]',
-      'timestamp_seconds': 77,
-      'tip': "Uh there's going to be a lot of uh there are a lot of unanswered questions I "
-             'would recommend strongly that at the end of this presentation if I cannot answer '
-             'any questions uh to email me or to webinar planet and within 24 hours I will get '
-             'you an answer.',
-      'title': 'Federal No Surprises Act – The IDR Process, Good Faith Estimates, and What '
-               'Providers Need to Know (Audio Webinars)',
-      'url': 'https://www.youtube.com/watch?v=T6j0qhLPruk&t=77s',
-      'video_id': 'T6j0qhLPruk'},
-     {'author': 'Azeem khan Watanyar Official',
-      'channel': 'Azeem khan Watanyar Official',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:00](https://www.youtube.com/watch?v=PPo7dGhm69c&t=480s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '40 مليار مطالبة رعاية صحية لأكثر من 10,000 خدمة في جميع أنحاء الولايات المتحدة. '
-              '"Fair Health" معدلاً تقديرياً في الولايات المتحدة لأكثر من 10,000 خدمة.',
-      'timestamp': 480,
-      'timestamp_label': '[00:08:00]',
-      'timestamp_seconds': 480,
-      'tip': '40 مليار مطالبة رعاية صحية لأكثر من 10,000 خدمة في جميع أنحاء الولايات المتحدة. '
-             '"Fair Health" معدلاً تقديرياً في الولايات المتحدة لأكثر من 10,000 خدمة.',
-      'title': 'Ch # 3- What is Out-of-Network Billing | How to resolve Out-of-Network denial '
-               'in medical billing (Azeem khan Watanyar Official)',
-      'url': 'https://www.youtube.com/watch?v=PPo7dGhm69c&t=480s',
-      'video_id': 'PPo7dGhm69c'}],
- 8: [{'author': 'Long Reads, Explained',
-      'channel': 'Long Reads, Explained',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:52](https://www.youtube.com/watch?v=nJ5Tz7G_LA8&t=712s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The law does give the government a tool. It authorizes the Trump administration '
-              'to fine health insurers one hundred dollars for each day they do not pay an '
-              'arbitration award. So far, it has not issued a single penalty.',
-      'timestamp': 712,
-      'timestamp_label': '[00:11:52]',
-      'timestamp_seconds': 712,
-      'tip': 'The law does give the government a tool. It authorizes the Trump administration '
-             'to fine health insurers one hundred dollars for each day they do not pay an '
-             'arbitration award. So far, it has not issued a single penalty.',
-      'title': 'No Surprises Act: Nearly 30% of Awards Unpaid by Insurers (Long Reads, '
-               'Explained)',
-      'url': 'https://www.youtube.com/watch?v=nJ5Tz7G_LA8&t=712s',
-      'video_id': 'nJ5Tz7G_LA8'},
-     {'author': 'Lido',
-      'channel': 'Lido',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:54](https://www.youtube.com/watch?v=NHWPEtUOyK0&t=354s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'IDR route, we also take it through negotiation, batching, we do all the admin '
-              'and operational paperwork and filing work, including pushing data and '
-              'documentation to the new centralized IDR gateway, which no longer offers an API '
-              'infrastructure.',
-      'timestamp': 354,
-      'timestamp_label': '[00:05:54]',
-      'timestamp_seconds': 354,
-      'tip': 'IDR route, we also take it through negotiation, batching, we do all the admin '
-             'and operational paperwork and filing work, including pushing data and '
-             'documentation to the new centralized IDR gateway, which no longer offers an API '
-             'infrastructure.',
-      'title': 'Is This Claim Eligible for IDR? How to Check Before You File (No Surprises '
-               'Act) (Lido)',
-      'url': 'https://www.youtube.com/watch?v=NHWPEtUOyK0&t=354s',
-      'video_id': 'NHWPEtUOyK0'},
-     {'author': 'HIPAA TV',
-      'channel': 'HIPAA TV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:17:44](https://www.youtube.com/watch?v=T99RB14fdY4&t=1064s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The actual amount exceeds the expected amount by 400 or more so 400 or more in '
-              'excess of the good faith estimate will trigger the arbitration provision of the '
-              'no surprises act.',
-      'timestamp': 1064,
-      'timestamp_label': '[00:17:44]',
-      'timestamp_seconds': 1064,
-      'tip': 'The actual amount exceeds the expected amount by 400 or more so 400 or more in '
-             'excess of the good faith estimate will trigger the arbitration provision of the '
-             'no surprises act.',
-      'title': 'No Surprises Act  Provider Training (HIPAA TV)',
-      'url': 'https://www.youtube.com/watch?v=T99RB14fdY4&t=1064s',
-      'video_id': 'T99RB14fdY4'},
-     {'author': 'Idea Usher',
-      'channel': 'Idea Usher',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:19](https://www.youtube.com/watch?v=zULb0Uazje4&t=79s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Integrated medical billing software combined with EHR systems, allowing '
-              'seamless data flow between clinical and billing operations. Cloud-based billing '
-              'software accessible from anywhere with automatic updates, lower upfront costs, '
-              'and improved scalability.',
-      'timestamp': 79,
-      'timestamp_label': '[00:01:19]',
-      'timestamp_seconds': 79,
-      'tip': 'Integrated medical billing software combined with EHR systems, allowing seamless '
-             'data flow between clinical and billing operations. Cloud-based billing software '
-             'accessible from anywhere with automatic updates, lower upfront costs, and '
-             'improved scalability.',
-      'title': 'How to Build Medical Billing & Claim Software [2026] | Medical Billing '
-               'Software Development (Idea Usher)',
-      'url': 'https://www.youtube.com/watch?v=zULb0Uazje4&t=79s',
-      'video_id': 'zULb0Uazje4'},
-     {'author': 'Bill Fighter',
-      'channel': 'Bill Fighter',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:08](https://www.youtube.com/watch?v=1VtIU2oIxEY&t=188s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Happens to be out-of-network, they cannot bill you at out-of-network rates. '
-              'Number three,  air ambulance services.',
-      'timestamp': 188,
-      'timestamp_label': '[00:03:08]',
-      'timestamp_seconds': 188,
-      'tip': 'Happens to be out-of-network, they cannot bill you at out-of-network rates. '
-             'Number three,  air ambulance services.',
-      'title': 'No Surprises Act Exposed - How to Kill an $8,472 Surprise Bill (Bill Fighter)',
-      'url': 'https://www.youtube.com/watch?v=1VtIU2oIxEY&t=188s',
-      'video_id': '1VtIU2oIxEY'},
-     {'author': 'Compliancy Group',
-      'channel': 'Compliancy Group',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:49](https://www.youtube.com/watch?v=yI1fsZFZPwY&t=229s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Business associate agreements create a framework for secure data sharing while '
-              'ensuring that Healthcare organizations take complete accountability for more '
-              'information contact us at compliance e-group today.',
-      'timestamp': 229,
-      'timestamp_label': '[00:03:49]',
-      'timestamp_seconds': 229,
-      'tip': 'Business associate agreements create a framework for secure data sharing while '
-             'ensuring that Healthcare organizations take complete accountability for more '
-             'information contact us at compliance e-group today.',
-      'title': 'What is a Business Associate Agreement (Compliancy Group)',
-      'url': 'https://www.youtube.com/watch?v=yI1fsZFZPwY&t=229s',
-      'video_id': 'yI1fsZFZPwY'},
-     {'author': 'Xpert Billing Talk',
-      'channel': 'Xpert Billing Talk',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:21](https://www.youtube.com/watch?v=CwSXrQBZiOg&t=201s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "CMS didn't just lower the barriers to entry without tightening the operational "
-              'screws. The workflow is actually substantially stricter now. It prevents '
-              'exactly that kind of spamming. You see, the 30-day open negotiation clock now '
-              'strictly starts based on portal date stamps.',
-      'timestamp': 201,
-      'timestamp_label': '[00:03:21]',
-      'timestamp_seconds': 201,
-      'tip': "CMS didn't just lower the barriers to entry without tightening the operational "
-             'screws. The workflow is actually substantially stricter now. It prevents exactly '
-             'that kind of spamming. You see, the 30-day open negotiation clock now strictly '
-             'starts based on portal date stamps.',
-      'title': 'Federal IDR Gateway Rules 2026: New Portal, Fees & Batching Changes (Xpert '
-               'Billing Talk)',
-      'url': 'https://www.youtube.com/watch?v=CwSXrQBZiOg&t=201s',
-      'video_id': 'CwSXrQBZiOg'},
-     {'author': 'HealthLeaders Media',
-      'channel': 'HealthLeaders Media',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:38](https://www.youtube.com/watch?v=BKBNIfZ081U&t=578s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I said Epic has a tool other independent vendors have tools out there some '
-              'clinical some more focused on the technical some both. Take advantage of it '
-              "while you're focusing on the strategic because it is your bloodstream.",
-      'timestamp': 578,
-      'timestamp_label': '[00:09:38]',
-      'timestamp_seconds': 578,
-      'tip': 'I said Epic has a tool other independent vendors have tools out there some '
-             'clinical some more focused on the technical some both. Take advantage of it '
-             "while you're focusing on the strategic because it is your bloodstream.",
-      'title': 'Revenue Cycle NOW: Strengthening Back-End Performance (HealthLeaders Media)',
-      'url': 'https://www.youtube.com/watch?v=BKBNIfZ081U&t=578s',
-      'video_id': 'BKBNIfZ081U'},
-     {'author': 'RCMOpsPro',
-      'channel': 'RCMOpsPro',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:05](https://www.youtube.com/watch?v=Y-cwIjpRq9w&t=65s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'If a doctor bills a CMS 1500 with an inpatient POS code, but the hospital '
-              'forgets to bill the matching UB-04, the payer will flag the mismatch and deny '
-              'both claims instantly. A basic data entry clerk relies on the software to catch '
-              'these errors.',
-      'timestamp': 65,
-      'timestamp_label': '[00:01:05]',
-      'timestamp_seconds': 65,
-      'tip': 'If a doctor bills a CMS 1500 with an inpatient POS code, but the hospital '
-             'forgets to bill the matching UB-04, the payer will flag the mismatch and deny '
-             'both claims instantly. A basic data entry clerk relies on the software to catch '
-             'these errors.',
-      'title': 'CMS-1500 vs. UB-04 Explained: Mastering the Architecture of Billing | Created '
-               'by Diego Samson (RCMOpsPro)',
-      'url': 'https://www.youtube.com/watch?v=Y-cwIjpRq9w&t=65s',
-      'video_id': 'Y-cwIjpRq9w'},
-     {'author': 'The Claim Game X Practice Solutions',
-      'channel': 'The Claim Game X Practice Solutions',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:09](https://www.youtube.com/watch?v=FE6Ns41GFH0&t=429s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And this brings us to the second tool. And we have this exclusive to our '
-              "Hourglass members and it's called the guide to the components of an ERRA. The "
-              'technical name for an ERRA is an 835 file.',
-      'timestamp': 429,
-      'timestamp_label': '[00:07:09]',
-      'timestamp_seconds': 429,
-      'tip': 'And this brings us to the second tool. And we have this exclusive to our '
-             "Hourglass members and it's called the guide to the components of an ERRA. The "
-             'technical name for an ERRA is an 835 file.',
-      'title': 'Episode 29: Revenue Cycle Management Explained: Remittances, ERAs, and Portals '
-               '(The Claim Game X Practice Solutions)',
-      'url': 'https://www.youtube.com/watch?v=FE6Ns41GFH0&t=429s',
-      'video_id': 'FE6Ns41GFH0'},
-     {'author': 'P3Fusion',
-      'channel': 'P3Fusion',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:40](https://www.youtube.com/watch?v=IQXlcicB37I&t=100s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Compliant with NSA regulations and gain powerful insights through our reporting '
-              'tools ready to transform your NSA dispute Management contact us today to learn '
-              'how our solution can improve efficiency ensure compliance and give you full '
-              'control over your dispute processes.',
-      'timestamp': 100,
-      'timestamp_label': '[00:01:40]',
-      'timestamp_seconds': 100,
-      'tip': 'Compliant with NSA regulations and gain powerful insights through our reporting '
-             'tools ready to transform your NSA dispute Management contact us today to learn '
-             'how our solution can improve efficiency ensure compliance and give you full '
-             'control over your dispute processes.',
-      'title': 'No Surprises Act Dispute Management Solution | IDR | P3Fusion (P3Fusion)',
-      'url': 'https://www.youtube.com/watch?v=IQXlcicB37I&t=100s',
-      'video_id': 'IQXlcicB37I'},
-     {'author': 'David Hood -- Practical AI Engineering',
-      'channel': 'David Hood -- Practical AI Engineering',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:31](https://www.youtube.com/watch?v=A7ARXTSHAk0&t=331s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Comes to like data processing and and data analysis and data processing means a '
-              'bunch of different things you can get a 100x 10,000x the value the the.',
-      'timestamp': 331,
-      'timestamp_label': '[00:05:31]',
-      'timestamp_seconds': 331,
-      'tip': 'Comes to like data processing and and data analysis and data processing means a '
-             'bunch of different things you can get a 100x 10,000x the value the the.',
-      'title': 'RCM Revenue Cycle Management Medical AI LLM Case Studies (David Hood -- '
-               'Practical AI Engineering)',
-      'url': 'https://www.youtube.com/watch?v=A7ARXTSHAk0&t=331s',
-      'video_id': 'A7ARXTSHAk0'},
-     {'author': 'Athelas',
-      'channel': 'Athelas',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:20](https://www.youtube.com/watch?v=6p7H4Wqe_xQ&t=200s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Power your practice with healthcare's leading AI powered RCM platform and "
-              'tenacious group of In-House billing experts discover how a FIS RCM can help you '
-              'supercharge your workflows remove Band-Aid fixes and drive Revenue schedule a '
-              'demo today.',
-      'timestamp': 200,
-      'timestamp_label': '[00:03:20]',
-      'timestamp_seconds': 200,
-      'tip': "Power your practice with healthcare's leading AI powered RCM platform and "
-             'tenacious group of In-House billing experts discover how a FIS RCM can help you '
-             'supercharge your workflows remove Band-Aid fixes and drive Revenue schedule a '
-             'demo today.',
-      'title': 'Athelas | Revenue Cycle Management Demo (Athelas)',
-      'url': 'https://www.youtube.com/watch?v=6p7H4Wqe_xQ&t=200s',
-      'video_id': '6p7H4Wqe_xQ'},
-     {'author': 'PYA, PC',
-      'channel': 'PYA, PC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:01](https://www.youtube.com/watch?v=j1DGgPw1__E&t=601s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You have to go through you would get on the other services at a waiver that is '
-              'signed it has to be documented and they have to retain a copy of that notice '
-              'and consent if we could have the next slide please.',
-      'timestamp': 601,
-      'timestamp_label': '[00:10:01]',
-      'timestamp_seconds': 601,
-      'tip': 'You have to go through you would get on the other services at a waiver that is '
-             'signed it has to be documented and they have to retain a copy of that notice and '
-             'consent if we could have the next slide please.',
-      'title': '“No Surprises Act  The New Independent Dispute Resolution Process”   CPE '
-               'Webinar (PYA, PC)',
-      'url': 'https://www.youtube.com/watch?v=j1DGgPw1__E&t=601s',
-      'video_id': 'j1DGgPw1__E'},
-     {'author': "Becker's Hospital Review",
-      'channel': "Becker's Hospital Review",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:55](https://www.youtube.com/watch?v=RJps0omOazk&t=655s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Time the legislator lands and comes through National Airport they're reminded "
-              'of this issue so it is a front and center of everyone out in Washington DC.',
-      'timestamp': 655,
-      'timestamp_label': '[00:10:55]',
-      'timestamp_seconds': 655,
-      'tip': "Time the legislator lands and comes through National Airport they're reminded of "
-             'this issue so it is a front and center of everyone out in Washington DC.',
-      'title': 'Surprise Billing Legislation - Overview, Response, and Future Implications '
-               "(Becker's Hospital Review)",
-      'url': 'https://www.youtube.com/watch?v=RJps0omOazk&t=655s',
-      'video_id': 'RJps0omOazk'}],
- 9: [{'author': 'Covered USA',
-      'channel': 'Covered USA',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:37](https://www.youtube.com/watch?v=zDmKmfxl84c&t=157s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Ground ambulance services are not covered by the No Surprises Act at all. That '
-              'is stated plainly in the federal guidance. So, a helicopter ride can be '
-              'protected, while a ground ambulance ride may not be, depending on your state '
-              'law and your plan.',
-      'timestamp': 157,
-      'timestamp_label': '[00:02:37]',
-      'timestamp_seconds': 157,
-      'tip': 'Ground ambulance services are not covered by the No Surprises Act at all. That '
-             'is stated plainly in the federal guidance. So, a helicopter ride can be '
-             'protected, while a ground ambulance ride may not be, depending on your state law '
-             'and your plan.',
-      'title': 'The Surprise Bill Ban: What the No Surprises Act Actually Covers — and the One '
-               'Ambulance It Does Not (Covered USA)',
-      'url': 'https://www.youtube.com/watch?v=zDmKmfxl84c&t=157s',
-      'video_id': 'zDmKmfxl84c'},
-     {'author': 'CollectionPro Services LLC',
-      'channel': 'CollectionPro Services LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:40](https://www.youtube.com/watch?v=Ahr00pn-Tiw&t=40s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Win, it ends when you collect. We review unpaid awards, pursue payers '
-              'relentlessly, escalate compliance issues, and coordinate legal.',
-      'timestamp': 40,
-      'timestamp_label': '[00:00:40]',
-      'timestamp_seconds': 40,
-      'tip': 'Win, it ends when you collect. We review unpaid awards, pursue payers '
-             'relentlessly, escalate compliance issues, and coordinate legal.',
-      'title': 'Winning your IDR arbitration is only half the battle. Collecting your award is '
-               'what really matters! (CollectionPro Services LLC)',
-      'url': 'https://www.youtube.com/watch?v=Ahr00pn-Tiw&t=40s',
-      'video_id': 'Ahr00pn-Tiw'},
-     {'author': 'Problem Solved Lab',
-      'channel': 'Problem Solved Lab',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:41](https://www.youtube.com/watch?v=ofqIwNzp8lA&t=101s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Third, air ambulance transport. A helicopter or airplane medical flight from an '
-              'out-of-network provider is covered and you owe only your in-network cost share. '
-              'Now, the gaps and these matter. Ground ambulances are not covered by the '
-              'federal law.',
-      'timestamp': 101,
-      'timestamp_label': '[00:01:41]',
-      'timestamp_seconds': 101,
-      'tip': 'Third, air ambulance transport. A helicopter or airplane medical flight from an '
-             'out-of-network provider is covered and you owe only your in-network cost share. '
-             'Now, the gaps and these matter. Ground ambulances are not covered by the federal '
-             'law.',
-      'title': 'The No Surprises Act Cut Your ER Bill Already — Did You Pay $1,300 Too Much? '
-               '(2026) (Problem Solved Lab)',
-      'url': 'https://www.youtube.com/watch?v=ofqIwNzp8lA&t=101s',
-      'video_id': 'ofqIwNzp8lA'},
-     {'author': 'Texas Business group on Health',
-      'channel': 'Texas Business group on Health',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:39:35](https://www.youtube.com/watch?v=8zjJbZyS2j8&t=2375s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Um uh but uh they're the they're not bringing claims under the federal No "
-              "Surprises Act itself. They're bringing claims sort of under these using these "
-              'state law theories. And courts have dealt with these claims in a couple '
-              'different ways.',
-      'timestamp': 2375,
-      'timestamp_label': '[00:39:35]',
-      'timestamp_seconds': 2375,
-      'tip': "Um uh but uh they're the they're not bringing claims under the federal No "
-             "Surprises Act itself. They're bringing claims sort of under these using these "
-             'state law theories. And courts have dealt with these claims in a couple '
-             'different ways.',
-      'title': 'No Surprises Act IDR Challenge Webinar (Texas Business group on Health)',
-      'url': 'https://www.youtube.com/watch?v=8zjJbZyS2j8&t=2375s',
-      'video_id': '8zjJbZyS2j8'},
-     {'author': 'Capital Autopsy',
-      'channel': 'Capital Autopsy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:35](https://www.youtube.com/watch?v=PVUGwjJg-VI&t=575s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'To protect your family from healthcare billing arbitrage, here are three rules. '
-              'Rule number one: Never pay an out-of-network emergency room, anesthesiology or '
-              'air-ambulance bill at face value.',
-      'timestamp': 575,
-      'timestamp_label': '[00:09:35]',
-      'timestamp_seconds': 575,
-      'tip': 'To protect your family from healthcare billing arbitrage, here are three rules. '
-             'Rule number one: Never pay an out-of-network emergency room, anesthesiology or '
-             'air-ambulance bill at face value.',
-      'title': 'In-Network Hospital, Out-of-Network Doctor: The Private Equity Trap (Capital '
-               'Autopsy)',
-      'url': 'https://www.youtube.com/watch?v=PVUGwjJg-VI&t=575s',
-      'video_id': 'PVUGwjJg-VI'},
-     {'author': 'Hospital Decoded',
-      'channel': 'Hospital Decoded',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:21:28](https://www.youtube.com/watch?v=kXzE5L4StBs&t=1288s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '73% of all the air ambulance helicopters in the country. Many of them are for '
-              "profit. Some fly under contract to hospitals, wearing the hospital's brand. The "
-              'logo on the tail then does not always tell you who owns the aircraft or who '
-              'sends the bill.',
-      'timestamp': 1288,
-      'timestamp_label': '[00:21:28]',
-      'timestamp_seconds': 1288,
-      'tip': '73% of all the air ambulance helicopters in the country. Many of them are for '
-             "profit. Some fly under contract to hospitals, wearing the hospital's brand. The "
-             'logo on the tail then does not always tell you who owns the aircraft or who '
-             'sends the bill.',
-      'title': 'How Air Ambulances Actually Work (Hospital Decoded)',
-      'url': 'https://www.youtube.com/watch?v=kXzE5L4StBs&t=1288s',
-      'video_id': 'kXzE5L4StBs'},
-     {'author': 'AHealthcareZ - Healthcare Finance Explained',
-      'channel': 'AHealthcareZ - Healthcare Finance Explained',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:20](https://www.youtube.com/watch?v=6E_HRECi-t8&t=80s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '"Okay, well, what what amount are we going to pay here for you?" You know, the '
-              'law didn\'t force them to be in network, but it said, "Okay, listen.',
-      'timestamp': 80,
-      'timestamp_label': '[00:01:20]',
-      'timestamp_seconds': 80,
-      'tip': '"Okay, well, what what amount are we going to pay here for you?" You know, the '
-             'law didn\'t force them to be in network, but it said, "Okay, listen.',
-      'title': 'No Surprises Act Independent Dispute Resolution Drives Up Healthcare Costs in '
-               'America (AHealthcareZ - Healthcare Finance Explained)',
-      'url': 'https://www.youtube.com/watch?v=6E_HRECi-t8&t=80s',
-      'video_id': '6E_HRECi-t8'},
-     {'author': 'IndeMed',
-      'channel': 'IndeMed',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=YSVbYfiNgWE&t=21s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Been in contract with the insurance carrier. To no fault of the patient, the No '
-              'Surprises Act ended  all of those concerns, ended the concerns that.',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': 'Been in contract with the insurance carrier. To no fault of the patient, the No '
-             'Surprises Act ended  all of those concerns, ended the concerns that.',
-      'title': "The No Surprises Act Is Working — Here's How (IndeMed)",
-      'url': 'https://www.youtube.com/watch?v=YSVbYfiNgWE&t=21s',
-      'video_id': 'YSVbYfiNgWE'},
-     {'author': 'Miller Johnson',
-      'channel': 'Miller Johnson',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:17](https://www.youtube.com/watch?v=EwlPyAVGU8k&t=257s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Federal and the state law and the answer was no and it said because the state '
-              'law is going to govern state regulated plans where um.',
-      'timestamp': 257,
-      'timestamp_label': '[00:04:17]',
-      'timestamp_seconds': 257,
-      'tip': 'Federal and the state law and the answer was no and it said because the state '
-             'law is going to govern state regulated plans where um.',
-      'title': 'Michigan’s Surprise Billing Law:  What Providers and Health Plans Need to Know '
-               '(Miller Johnson)',
-      'url': 'https://www.youtube.com/watch?v=EwlPyAVGU8k&t=257s',
-      'video_id': 'EwlPyAVGU8k'},
-     {'author': 'RCMPRO',
-      'channel': 'RCMPRO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:04](https://www.youtube.com/watch?v=6Lc5iQMx35E&t=544s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Field 27, accept assignment. Indicate whether the provider accepts assignment '
-              "according to the payer's rules. Enter the total of all the service line charges "
-              'from field 24. Enter any amount already paid, if applicable. Field 30, reserved '
-              'for NUCC use.',
-      'timestamp': 544,
-      'timestamp_label': '[00:09:04]',
-      'timestamp_seconds': 544,
-      'tip': 'Field 27, accept assignment. Indicate whether the provider accepts assignment '
-             "according to the payer's rules. Enter the total of all the service line charges "
-             'from field 24. Enter any amount already paid, if applicable. Field 30, reserved '
-             'for NUCC use.',
-      'title': 'CMS-1500 Claim Form Explained | Complete Guide to Medical Billing | RCMPRO '
-               '(RCMPRO)',
-      'url': 'https://www.youtube.com/watch?v=6Lc5iQMx35E&t=544s',
-      'video_id': '6Lc5iQMx35E'},
      {'author': 'KLGatesLaw',
       'channel': 'KLGatesLaw',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:30](https://www.youtube.com/watch?v=VbqFYBvnpas&t=390s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q9 operational verification).',
+      'markdown': '[00:04:19](https://www.youtube.com/watch?v=NwapzBNojY0&t=259s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'That the ACT had already established multiple factors that an arbitrator shall '
-              'consider before the rules were prated those were the items that Steve.',
-      'timestamp': 390,
-      'timestamp_label': '[00:06:30]',
-      'timestamp_seconds': 390,
-      'tip': 'That the ACT had already established multiple factors that an arbitrator shall '
-             'consider before the rules were prated those were the items that Steve.',
-      'title': 'Navigating the Independent Dispute Resolution Process Under the No Surprises '
-               'Act (KLGatesLaw)',
-      'url': 'https://www.youtube.com/watch?v=VbqFYBvnpas&t=390s',
-      'video_id': 'VbqFYBvnpas'},
-     {'author': 'American Medical Association (AMA)',
-      'channel': 'American Medical Association (AMA)',
+      'text': 'In light of that, the final rule actually requires the non-initiating party, which '
+              'is often the payer, to issue a response by the 15th business day of the open '
+              'negotiation period.',
+      'timestamp': 259,
+      'timestamp_label': '[00:04:19]',
+      'timestamp_seconds': 259,
+      'tip': 'In light of that, the final rule actually requires the non-initiating party, which '
+             'is often the payer, to issue a response by the 15th business day of the open '
+             'negotiation period.',
+      'title': 'No Surprises Act Check-In: The Latest Changes to the IDR Process',
+      'url': 'https://www.youtube.com/watch?v=NwapzBNojY0&t=259s',
+      'video_id': 'NwapzBNojY0'},
+     {'author': 'Coalition for Affordable Hospitals',
+      'channel': 'Coalition for Affordable Hospitals',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:30:50](https://www.youtube.com/watch?v=zyTkKRTBBEg&t=1850s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q9 operational verification).',
+      'markdown': '[00:14:17](https://www.youtube.com/watch?v=9SCzxZp8uAE&t=857s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': "Voluntary compliance in the boxes there we see you know if it's an insurer "
-              'issue most likely the insurance departments well in every state the insurance.',
-      'timestamp': 1850,
-      'timestamp_label': '[00:30:50]',
-      'timestamp_seconds': 1850,
-      'tip': "Voluntary compliance in the boxes there we see you know if it's an insurer issue "
-             'most likely the insurance departments well in every state the insurance.',
-      'title': 'AMA Advocacy Insights webinar series: Implementing the No Surprises Act '
-               '(American Medical Association (AMA))',
-      'url': 'https://www.youtube.com/watch?v=zyTkKRTBBEg&t=1850s',
-      'video_id': 'zyTkKRTBBEg'},
-     {'author': 'RCMOpsPro',
-      'channel': 'RCMOpsPro',
+      'text': "There's literally no transparency as to why arbitrators are selecting one offer "
+              'over another.',
+      'timestamp': 857,
+      'timestamp_label': '[00:14:17]',
+      'timestamp_seconds': 857,
+      'tip': "There's literally no transparency as to why arbitrators are selecting one offer over "
+             'another.',
+      'title': 'Panel - Fixing the No Surprises Act’s Independent Dispute Resolution (IDR) Process',
+      'url': 'https://www.youtube.com/watch?v=9SCzxZp8uAE&t=857s',
+      'video_id': '9SCzxZp8uAE'},
+     {'author': 'HealthWatch Wisconsin',
+      'channel': 'HealthWatch Wisconsin',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:33](https://www.youtube.com/watch?v=RddJn-tA3OM&t=33s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q9 operational verification).',
+      'markdown': '[00:01:09](https://www.youtube.com/watch?v=XZ1MNlkWu4Y&t=69s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'They are establishing the legal and financial framework for the entire '
-              'encounter. Over 80% of all claim denials originate right here. A missed middle '
-              'initial will sit silently in the system until it triggers a hard denial 30 days '
-              'later.',
-      'timestamp': 33,
-      'timestamp_label': '[00:00:33]',
-      'timestamp_seconds': 33,
-      'tip': 'They are establishing the legal and financial framework for the entire '
-             'encounter. Over 80% of all claim denials originate right here. A missed middle '
-             'initial will sit silently in the system until it triggers a hard denial 30 days '
-             'later.',
-      'title': 'Revenue Cycle Management (RCM) Explained: Front, Mid & Back End | Created by '
-               'Diego Samson (RCMOpsPro)',
-      'url': 'https://www.youtube.com/watch?v=RddJn-tA3OM&t=33s',
-      'video_id': 'RddJn-tA3OM'},
+      'text': "They don't dictate which offer needs to be accepted but instead help spell out the "
+              'process.',
+      'timestamp': 69,
+      'timestamp_label': '[00:01:09]',
+      'timestamp_seconds': 69,
+      'tip': "They don't dictate which offer needs to be accepted but instead help spell out the "
+             'process.',
+      'title': 'New Final Rule on No Surprises Act - Explained',
+      'url': 'https://www.youtube.com/watch?v=XZ1MNlkWu4Y&t=69s',
+      'video_id': 'XZ1MNlkWu4Y'},
+     {'author': 'Center on Health Insurance Reforms',
+      'channel': 'Center on Health Insurance Reforms',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:27:49](https://www.youtube.com/watch?v=wJkWOgxZj6k&t=1669s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'This makes providers functionally customers of the IDRs or IDREs.',
+      'timestamp': 1669,
+      'timestamp_label': '[00:27:49]',
+      'timestamp_seconds': 1669,
+      'tip': 'This makes providers functionally customers of the IDRs or IDREs.',
+      'title': 'Runaway Costs: Getting the No Surprises Act Back on Track',
+      'url': 'https://www.youtube.com/watch?v=wJkWOgxZj6k&t=1669s',
+      'video_id': 'wJkWOgxZj6k'},
+     {'author': 'HaloMD',
+      'channel': 'HaloMD',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:30:03](https://www.youtube.com/watch?v=of6CD7esHY0&t=1803s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Do not miss this particular change because you will expire cases.',
+      'timestamp': 1803,
+      'timestamp_label': '[00:30:03]',
+      'timestamp_seconds': 1803,
+      'tip': 'Do not miss this particular change because you will expire cases.',
+      'title': 'Decoding The Federal IDR Operations Final Rule: Access, Process and Timing',
+      'url': 'https://www.youtube.com/watch?v=of6CD7esHY0&t=1803s',
+      'video_id': 'of6CD7esHY0'},
      {'author': 'Gottlieb and Greenspan, LLC',
       'channel': 'Gottlieb and Greenspan, LLC',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:22](https://www.youtube.com/watch?v=HTDpgKwIfRg&t=22s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q9 operational verification).',
+      'markdown': '[00:00:33](https://www.youtube.com/watch?v=HTDpgKwIfRg&t=33s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'This is something he proposed before back in 2019 when the parties were '
-              'negotiating as to how the NSA itself would be structured.',
-      'timestamp': 22,
-      'timestamp_label': '[00:00:22]',
-      'timestamp_seconds': 22,
-      'tip': 'This is something he proposed before back in 2019 when the parties were '
-             'negotiating as to how the NSA itself would be structured.',
-      'title': 'No Surprises Act Update - October 2026: Pallone, Cassidy, CMS Meeting '
-               '(Gottlieb and Greenspan, LLC)',
-      'url': 'https://www.youtube.com/watch?v=HTDpgKwIfRg&t=22s',
+      'text': "From what I'm hearing, there's not a lot of appetite on the Hill to support this "
+              'bill.',
+      'timestamp': 33,
+      'timestamp_label': '[00:00:33]',
+      'timestamp_seconds': 33,
+      'tip': "From what I'm hearing, there's not a lot of appetite on the Hill to support this "
+             'bill.',
+      'title': 'No Surprises Act Update - October 2026: Pallone, Cassidy, CMS Meeting',
+      'url': 'https://www.youtube.com/watch?v=HTDpgKwIfRg&t=33s',
       'video_id': 'HTDpgKwIfRg'},
+     {'author': 'Fulcrum Strategies',
+      'channel': 'Fulcrum Strategies',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:18:07](https://www.youtube.com/watch?v=f9Q5ImwNeS0&t=1087s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Right now almost 60 percent of all practicing anesthesiologists are over the age of '
+              '55.',
+      'timestamp': 1087,
+      'timestamp_label': '[00:18:07]',
+      'timestamp_seconds': 1087,
+      'tip': 'Right now almost 60 percent of all practicing anesthesiologists are over the age of '
+             '55.',
+      'title': 'Ep. 61 - Breaking down the impacts of the TMA 3 ruling',
+      'url': 'https://www.youtube.com/watch?v=f9Q5ImwNeS0&t=1087s',
+      'video_id': 'f9Q5ImwNeS0'},
+     {'author': 'Paragon Health Institute',
+      'channel': 'Paragon Health Institute',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:26:13](https://www.youtube.com/watch?v=PpfXacIXrAc&t=1573s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "That's how arbitrators make money is by the volume of disputes.",
+      'timestamp': 1573,
+      'timestamp_label': '[00:26:13]',
+      'timestamp_seconds': 1573,
+      'tip': "That's how arbitrators make money is by the volume of disputes.",
+      'title': 'Fixing the No Surprises Act: Scaling Back and Reforming the Federal Arbitration '
+               'System',
+      'url': 'https://www.youtube.com/watch?v=PpfXacIXrAc&t=1573s',
+      'video_id': 'PpfXacIXrAc'},
+     {'author': 'Paragon Health Institute',
+      'channel': 'Paragon Health Institute',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:53:49](https://www.youtube.com/watch?v=PpfXacIXrAc&t=3229s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'We are actually making less dollars after the No Surprises Act has been implemented '
+              'than we did before.',
+      'timestamp': 3229,
+      'timestamp_label': '[00:53:49]',
+      'timestamp_seconds': 3229,
+      'tip': 'We are actually making less dollars after the No Surprises Act has been implemented '
+             'than we did before.',
+      'title': 'Fixing the No Surprises Act: Scaling Back and Reforming the Federal Arbitration '
+               'System',
+      'url': 'https://www.youtube.com/watch?v=PpfXacIXrAc&t=3229s',
+      'video_id': 'PpfXacIXrAc'},
+     {'author': 'The Phia Group, LLC',
+      'channel': 'The Phia Group, LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:06](https://www.youtube.com/watch?v=8QIP4F1EGTA&t=426s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Some IDREs have dismissed disputes, some are letting them go through, some we '
+              "haven't heard back from.",
+      'timestamp': 426,
+      'timestamp_label': '[00:07:06]',
+      'timestamp_seconds': 426,
+      'tip': 'Some IDREs have dismissed disputes, some are letting them go through, some we '
+             "haven't heard back from.",
+      'title': 'Empowering Plans: P254 – Fixing the No Surprises Act: Will Congress Repair IDR?',
+      'url': 'https://www.youtube.com/watch?v=8QIP4F1EGTA&t=426s',
+      'video_id': '8QIP4F1EGTA'},
+     {'author': 'Xpert Billing Talk',
+      'channel': 'Xpert Billing Talk',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:36](https://www.youtube.com/watch?v=g3C-DoM_9CI&t=156s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'So, they just get dumped right into your denial management queues as permanent '
+              'losses.',
+      'timestamp': 156,
+      'timestamp_label': '[00:02:36]',
+      'timestamp_seconds': 156,
+      'tip': 'So, they just get dumped right into your denial management queues as permanent '
+             'losses.',
+      'title': 'Federal IDR Changes Nov. 1, 2026: Radiology Batching & Deadlines',
+      'url': 'https://www.youtube.com/watch?v=g3C-DoM_9CI&t=156s',
+      'video_id': 'g3C-DoM_9CI'},
+     {'author': 'Xpert Billing Talk',
+      'channel': 'Xpert Billing Talk',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:54](https://www.youtube.com/watch?v=CwSXrQBZiOg&t=234s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Missing a deadline now has zero margin for error.',
+      'timestamp': 234,
+      'timestamp_label': '[00:03:54]',
+      'timestamp_seconds': 234,
+      'tip': 'Missing a deadline now has zero margin for error.',
+      'title': 'Federal IDR Gateway Rules 2026: New Portal, Fees & Batching Changes',
+      'url': 'https://www.youtube.com/watch?v=CwSXrQBZiOg&t=234s',
+      'video_id': 'CwSXrQBZiOg'},
+     {'author': 'Medical Economics TV',
+      'channel': 'Medical Economics TV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:28](https://www.youtube.com/watch?v=K4eVTdf3xa0&t=268s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'And that is a significant reduction and for smaller practices that is a huge '
+              'improvement and something that we advocated for as part of this rule.',
+      'timestamp': 268,
+      'timestamp_label': '[00:04:28]',
+      'timestamp_seconds': 268,
+      'tip': 'And that is a significant reduction and for smaller practices that is a huge '
+             'improvement and something that we advocated for as part of this rule.',
+      'title': "S1 Ep161: The No Surprises Act's new payment dispute rule, with Anders Gilberg of "
+               'MGMA',
+      'url': 'https://www.youtube.com/watch?v=K4eVTdf3xa0&t=268s',
+      'video_id': 'K4eVTdf3xa0'},
+     {'author': 'The Phia Group, LLC',
+      'channel': 'The Phia Group, LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:14:13](https://www.youtube.com/watch?v=ksxW878eWWk&t=853s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'The IDR awards have to be paid within 30 calendar days of the date that a '
+              'determination is rendered.',
+      'timestamp': 853,
+      'timestamp_label': '[00:14:13]',
+      'timestamp_seconds': 853,
+      'tip': 'The IDR awards have to be paid within 30 calendar days of the date that a '
+             'determination is rendered.',
+      'title': 'Empowering Plans: P235 – The Latest No Surprises Act Developments: A 2026 Reality '
+               'Check for TPAs',
+      'url': 'https://www.youtube.com/watch?v=ksxW878eWWk&t=853s',
+      'video_id': 'ksxW878eWWk'},
+     {'author': 'American Benefits Council',
+      'channel': 'American Benefits Council',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:55](https://www.youtube.com/watch?v=d6dlKYRPJTA&t=55s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Also, we are seeing much higher volumes of claims being sent to arbitration than '
+              'expected, many of which have been found ineligible for arbitration.',
+      'timestamp': 55,
+      'timestamp_label': '[00:00:55]',
+      'timestamp_seconds': 55,
+      'tip': 'Also, we are seeing much higher volumes of claims being sent to arbitration than '
+             'expected, many of which have been found ineligible for arbitration.',
+      'title': 'Just a Minute! on The Unsurprising Flaw in the No Surprises Act',
+      'url': 'https://www.youtube.com/watch?v=d6dlKYRPJTA&t=55s',
+      'video_id': 'd6dlKYRPJTA'},
+     {'author': 'American Benefits Council',
+      'channel': 'American Benefits Council',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:59](https://www.youtube.com/watch?v=30BDiubQ0cg&t=59s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "Last week, federal regulators attempted to respond to some of the IDR system's "
+              'problems by issuing final rules governing the IDR process.',
+      'timestamp': 59,
+      'timestamp_label': '[00:00:59]',
+      'timestamp_seconds': 59,
+      'tip': "Last week, federal regulators attempted to respond to some of the IDR system's "
+             'problems by issuing final rules governing the IDR process.',
+      'title': 'Just a Minute! on New No Surprises Act Arbitration Rules',
+      'url': 'https://www.youtube.com/watch?v=30BDiubQ0cg&t=59s',
+      'video_id': '30BDiubQ0cg'},
+     {'author': 'HaloMD',
+      'channel': 'HaloMD',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:20:52](https://www.youtube.com/watch?v=of6CD7esHY0&t=1252s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'It is forward-looking only.',
+      'timestamp': 1252,
+      'timestamp_label': '[00:20:52]',
+      'timestamp_seconds': 1252,
+      'tip': 'It is forward-looking only.',
+      'title': 'Decoding The Federal IDR Operations Final Rule: Access, Process and Timing',
+      'url': 'https://www.youtube.com/watch?v=of6CD7esHY0&t=1252s',
+      'video_id': 'of6CD7esHY0'}],
+ 6: [{'author': 'AHealthcareZ - Healthcare Finance Explained',
+      'channel': 'AHealthcareZ - Healthcare Finance Explained',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:19](https://www.youtube.com/watch?v=6E_HRECi-t8&t=139s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The provider, the physician groups win 80 to 85% of the time.',
+      'timestamp': 139,
+      'timestamp_label': '[00:02:19]',
+      'timestamp_seconds': 139,
+      'tip': 'The provider, the physician groups win 80 to 85% of the time.',
+      'title': 'No Surprises Act Independent Dispute Resolution Drives Up Healthcare Costs in '
+               'America',
+      'url': 'https://www.youtube.com/watch?v=6E_HRECi-t8&t=139s',
+      'video_id': '6E_HRECi-t8'},
+     {'author': 'AJR Radiology',
+      'channel': 'AJR Radiology',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:54](https://www.youtube.com/watch?v=rYqWvbw_kGo&t=294s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Recovering one quarter of the difference makes the IDR process viable for only 11 '
+              'to 22 percent of radiology claims.',
+      'timestamp': 294,
+      'timestamp_label': '[00:04:54]',
+      'timestamp_seconds': 294,
+      'tip': 'Recovering one quarter of the difference makes the IDR process viable for only 11 to '
+             '22 percent of radiology claims.',
+      'title': 'Financial Viability of the No Surprises Act Independent Dispute Resolution Process',
+      'url': 'https://www.youtube.com/watch?v=rYqWvbw_kGo&t=294s',
+      'video_id': 'rYqWvbw_kGo'},
+     {'author': 'Payerset',
+      'channel': 'Payerset',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:38:26](https://www.youtube.com/watch?v=lqE3aZxq024&t=2306s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'So, therefore, ignorance is expensive.',
+      'timestamp': 2306,
+      'timestamp_label': '[00:38:26]',
+      'timestamp_seconds': 2306,
+      'tip': 'So, therefore, ignorance is expensive.',
+      'title': 'How the No Surprises Act Impacts Employers + Navigating the IDR Payment System '
+               'with Tia Goss Sawhney',
+      'url': 'https://www.youtube.com/watch?v=lqE3aZxq024&t=2306s',
+      'video_id': 'lqE3aZxq024'},
+     {'author': 'Zelis Healthcare',
+      'channel': 'Zelis Healthcare',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:28](https://www.youtube.com/watch?v=lhoUoQSpOCg&t=148s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Furthermore entities are inconsistent in their decisions.',
+      'timestamp': 148,
+      'timestamp_label': '[00:02:28]',
+      'timestamp_seconds': 148,
+      'tip': 'Furthermore entities are inconsistent in their decisions.',
+      'title': 'Trends & Insights from 2024 CMS IDR Data | What’s Changing in No Surprises Act '
+               'Disputes',
+      'url': 'https://www.youtube.com/watch?v=lhoUoQSpOCg&t=148s',
+      'video_id': 'lhoUoQSpOCg'},
+     {'author': 'Long Reads, Explained',
+      'channel': 'Long Reads, Explained',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:58](https://www.youtube.com/watch?v=cSaC2n-3r9o&t=418s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'In twenty twenty-five, providers filed two point six million disputes.',
+      'timestamp': 418,
+      'timestamp_label': '[00:06:58]',
+      'timestamp_seconds': 418,
+      'tip': 'In twenty twenty-five, providers filed two point six million disputes.',
+      'title': 'No Surprises Act arbitration is driving 2027 premium spike',
+      'url': 'https://www.youtube.com/watch?v=cSaC2n-3r9o&t=418s',
+      'video_id': 'cSaC2n-3r9o'},
+     {'author': 'About The Rest',
+      'channel': 'About The Rest',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:56](https://www.youtube.com/watch?v=x35n4T9CppE&t=116s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "So, now you're going to have a tidal wave.",
+      'timestamp': 116,
+      'timestamp_label': '[00:01:56]',
+      'timestamp_seconds': 116,
+      'tip': "So, now you're going to have a tidal wave.",
+      'title': 'The No Surprises Act Created a Monster',
+      'url': 'https://www.youtube.com/watch?v=x35n4T9CppE&t=116s',
+      'video_id': 'x35n4T9CppE'},
+     {'author': 'Texas Business group on Health',
+      'channel': 'Texas Business group on Health',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:51:59](https://www.youtube.com/watch?v=8zjJbZyS2j8&t=3119s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Self-funded employers bear about 90% of these IDR costs.',
+      'timestamp': 3119,
+      'timestamp_label': '[00:51:59]',
+      'timestamp_seconds': 3119,
+      'tip': 'Self-funded employers bear about 90% of these IDR costs.',
+      'title': 'No Surprises Act IDR Challenge Webinar',
+      'url': 'https://www.youtube.com/watch?v=8zjJbZyS2j8&t=3119s',
+      'video_id': '8zjJbZyS2j8'},
+     {'author': 'Texas Business group on Health',
+      'channel': 'Texas Business group on Health',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:28:17](https://www.youtube.com/watch?v=8zjJbZyS2j8&t=1697s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Today, 24% of our medical claims spend is just on IDR.',
+      'timestamp': 1697,
+      'timestamp_label': '[00:28:17]',
+      'timestamp_seconds': 1697,
+      'tip': 'Today, 24% of our medical claims spend is just on IDR.',
+      'title': 'No Surprises Act IDR Challenge Webinar',
+      'url': 'https://www.youtube.com/watch?v=8zjJbZyS2j8&t=1697s',
+      'video_id': '8zjJbZyS2j8'},
+     {'author': 'Top Hospitals USA',
+      'channel': 'Top Hospitals USA',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:35](https://www.youtube.com/watch?v=eDCqqjk5fqk&t=155s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The arbitration firms themselves collected about $1.3 billion in fees.',
+      'timestamp': 155,
+      'timestamp_label': '[00:02:35]',
+      'timestamp_seconds': 155,
+      'tip': 'The arbitration firms themselves collected about $1.3 billion in fees.',
+      'title': 'Surprise Bills Are Illegal — So Why Did Arbitration Just Hit $15 Billion?',
+      'url': 'https://www.youtube.com/watch?v=eDCqqjk5fqk&t=155s',
+      'video_id': 'eDCqqjk5fqk'},
+     {'author': 'HaloMD',
+      'channel': 'HaloMD',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:30:43](https://www.youtube.com/watch?v=oEWBNDsvXOQ&t=1843s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The public use files will show you that 24% of insurer losses were related to '
+              'default in which the insurer did not submit any offer at all in the process.',
+      'timestamp': 1843,
+      'timestamp_label': '[00:30:43]',
+      'timestamp_seconds': 1843,
+      'tip': 'The public use files will show you that 24% of insurer losses were related to '
+             'default in which the insurer did not submit any offer at all in the process.',
+      'title': 'The Truth Is in the Data: Myths, Reality & What’s Next in IDR Under the NSA | '
+               'Becker’s x HaloMD',
+      'url': 'https://www.youtube.com/watch?v=oEWBNDsvXOQ&t=1843s',
+      'video_id': 'oEWBNDsvXOQ'},
+     {'author': 'Jan Miller - Student Loan Consultant',
+      'channel': 'Jan Miller - Student Loan Consultant',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:55](https://www.youtube.com/watch?v=nJ_2pYeUX80&t=55s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'So, it came available in January and then it disappeared in March.',
+      'timestamp': 55,
+      'timestamp_label': '[00:00:55]',
+      'timestamp_seconds': 55,
+      'tip': 'So, it came available in January and then it disappeared in March.',
+      'title': 'IDR Payment Count Hack',
+      'url': 'https://www.youtube.com/watch?v=nJ_2pYeUX80&t=55s',
+      'video_id': 'nJ_2pYeUX80'},
+     {'author': 'NextChapter',
+      'channel': 'NextChapter',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:59](https://www.youtube.com/watch?v=p0ekuvIETYc&t=359s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'This has been around since 1993.',
+      'timestamp': 359,
+      'timestamp_label': '[00:05:59]',
+      'timestamp_seconds': 359,
+      'tip': 'This has been around since 1993.',
+      'title': 'IDR Account Adjustment',
+      'url': 'https://www.youtube.com/watch?v=p0ekuvIETYc&t=359s',
+      'video_id': 'p0ekuvIETYc'},
+     {'author': 'Strategic Wealth Design',
+      'channel': 'Strategic Wealth Design',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:33](https://www.youtube.com/watch?v=l05EHgbqGQ8&t=153s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "And so it's the most costly monthly payment.",
+      'timestamp': 153,
+      'timestamp_label': '[00:02:33]',
+      'timestamp_seconds': 153,
+      'tip': "And so it's the most costly monthly payment.",
+      'title': 'New IDR Plans (Income-Driven Repayment) for Student Debt | Student Loan Webinar '
+               '2026 Recap',
+      'url': 'https://www.youtube.com/watch?v=l05EHgbqGQ8&t=153s',
+      'video_id': 'l05EHgbqGQ8'},
+     {'author': 'Identification and Recruitment Consortium',
+      'channel': 'Identification and Recruitment Consortium',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:50](https://www.youtube.com/watch?v=wAiC4TUQNvs&t=50s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Um, and also we always want to remind you that whatever your state says is what you '
+              'do.',
+      'timestamp': 50,
+      'timestamp_label': '[00:00:50]',
+      'timestamp_seconds': 50,
+      'tip': 'Um, and also we always want to remind you that whatever your state says is what you '
+             'do.',
+      'title': 'IDR Scenarios- Title I, Part C',
+      'url': 'https://www.youtube.com/watch?v=wAiC4TUQNvs&t=50s',
+      'video_id': 'wAiC4TUQNvs'},
+     {'author': 'Health Tech Nerds',
+      'channel': 'Health Tech Nerds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:30](https://www.youtube.com/watch?v=c7whA-tTpq4&t=270s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "Those don't just come out of insurer margins.",
+      'timestamp': 270,
+      'timestamp_label': '[00:04:30]',
+      'timestamp_seconds': 270,
+      'tip': "Those don't just come out of insurer margins.",
+      'title': 'How the No Surprises Act solved balance billing but created a pricing problem | '
+               'Loren Adler',
+      'url': 'https://www.youtube.com/watch?v=c7whA-tTpq4&t=270s',
+      'video_id': 'c7whA-tTpq4'},
+     {'author': 'HealthWatch Wisconsin',
+      'channel': 'HealthWatch Wisconsin',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:50](https://www.youtube.com/watch?v=qM_Np937JnY&t=50s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': '81 percent of the disputes originated from emergency room visits.',
+      'timestamp': 50,
+      'timestamp_label': '[00:00:50]',
+      'timestamp_seconds': 50,
+      'tip': '81 percent of the disputes originated from emergency room visits.',
+      'title': 'No Surprises Act: Dispute Resolution Data',
+      'url': 'https://www.youtube.com/watch?v=qM_Np937JnY&t=50s',
+      'video_id': 'qM_Np937JnY'},
+     {'author': 'HaloMD',
+      'channel': 'HaloMD',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:21](https://www.youtube.com/watch?v=g2udecJ21bI&t=441s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can see based on the most recent report from CMS, providers are winning 86% of '
+              "the time and that's a 2% increase from last time CMS reported which was 84% of the "
+              'time.',
+      'timestamp': 441,
+      'timestamp_label': '[00:07:21]',
+      'timestamp_seconds': 441,
+      'tip': 'You can see based on the most recent report from CMS, providers are winning 86% of '
+             "the time and that's a 2% increase from last time CMS reported which was 84% of the "
+             'time.',
+      'title': "Becker's Healthcare Webinar: Navigating Headwinds and Tailwinds in IDR under NSA",
+      'url': 'https://www.youtube.com/watch?v=g2udecJ21bI&t=441s',
+      'video_id': 'g2udecJ21bI'},
+     {'author': 'HaloMD',
+      'channel': 'HaloMD',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:56:02](https://www.youtube.com/watch?v=g2udecJ21bI&t=3362s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'CMS is incredibly backlogged.',
+      'timestamp': 3362,
+      'timestamp_label': '[00:56:02]',
+      'timestamp_seconds': 3362,
+      'tip': 'CMS is incredibly backlogged.',
+      'title': "Becker's Healthcare Webinar: Navigating Headwinds and Tailwinds in IDR under NSA",
+      'url': 'https://www.youtube.com/watch?v=g2udecJ21bI&t=3362s',
+      'video_id': 'g2udecJ21bI'}],
+ 7: [{'author': 'Long Reads, Explained',
+      'channel': 'Long Reads, Explained',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:46](https://www.youtube.com/watch?v=nJ5Tz7G_LA8&t=286s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'A major medical billing firm called HaloMD gave The Times an analysis of four '
+              'hundred thousand arbitration awards.',
+      'timestamp': 286,
+      'timestamp_label': '[00:04:46]',
+      'timestamp_seconds': 286,
+      'tip': 'A major medical billing firm called HaloMD gave The Times an analysis of four '
+             'hundred thousand arbitration awards.',
+      'title': 'No Surprises Act: Nearly 30% of Awards Unpaid by Insurers',
+      'url': 'https://www.youtube.com/watch?v=nJ5Tz7G_LA8&t=286s',
+      'video_id': 'nJ5Tz7G_LA8'},
+     {'author': 'Long Reads, Explained',
+      'channel': 'Long Reads, Explained',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:00](https://www.youtube.com/watch?v=nJ5Tz7G_LA8&t=720s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'So far, it has not issued a single penalty.',
+      'timestamp': 720,
+      'timestamp_label': '[00:12:00]',
+      'timestamp_seconds': 720,
+      'tip': 'So far, it has not issued a single penalty.',
+      'title': 'No Surprises Act: Nearly 30% of Awards Unpaid by Insurers',
+      'url': 'https://www.youtube.com/watch?v=nJ5Tz7G_LA8&t=720s',
+      'video_id': 'nJ5Tz7G_LA8'},
+     {'author': 'Apex IONM Solutions',
+      'channel': 'Apex IONM Solutions',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:00](https://www.youtube.com/watch?v=gbhlBlDLViQ&t=120s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "So, you as a provider group don't technically have the right to sue the insurance "
+              'company for unpaid arbitrated awards.',
+      'timestamp': 120,
+      'timestamp_label': '[00:02:00]',
+      'timestamp_seconds': 120,
+      'tip': "So, you as a provider group don't technically have the right to sue the insurance "
+             'company for unpaid arbitrated awards.',
+      'title': 'You Won Arbitration – So Why Is the Money Still Missing? | Enforcement Push for No '
+               'Surprises Act',
+      'url': 'https://www.youtube.com/watch?v=gbhlBlDLViQ&t=120s',
+      'video_id': 'gbhlBlDLViQ'},
+     {'author': 'Apex IONM Solutions',
+      'channel': 'Apex IONM Solutions',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:57](https://www.youtube.com/watch?v=EE3aFeVfLnk&t=57s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Those tests take 15 minutes.',
+      'timestamp': 57,
+      'timestamp_label': '[00:00:57]',
+      'timestamp_seconds': 57,
+      'tip': 'Those tests take 15 minutes.',
+      'title': 'Insurers Say the No Surprises Act Is Paying Providers Too Much',
+      'url': 'https://www.youtube.com/watch?v=EE3aFeVfLnk&t=57s',
+      'video_id': 'EE3aFeVfLnk'},
+     {'author': 'TopMedTalk',
+      'channel': 'TopMedTalk',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:17:28](https://www.youtube.com/watch?v=0BcGdvWG_UI&t=1048s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Nonpayment of IDR awards is running at about 35%.',
+      'timestamp': 1048,
+      'timestamp_label': '[00:17:28]',
+      'timestamp_seconds': 1048,
+      'tip': 'Nonpayment of IDR awards is running at about 35%.',
+      'title': 'ANESTHESIOLOGY 2026: No Surprises Act, IDR, and Out-of-Network Spending',
+      'url': 'https://www.youtube.com/watch?v=0BcGdvWG_UI&t=1048s',
+      'video_id': '0BcGdvWG_UI'},
+     {'author': 'Brown University Health',
+      'channel': 'Brown University Health',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:31](https://www.youtube.com/watch?v=g18RP2cQe_s&t=31s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "It's very effective, and we're seeing a lot of interests grow very fast in this "
+              'space.',
+      'timestamp': 31,
+      'timestamp_label': '[00:00:31]',
+      'timestamp_seconds': 31,
+      'tip': "It's very effective, and we're seeing a lot of interests grow very fast in this "
+             'space.',
+      'title': 'In the Emergency Department: Ultrasound-Guided Anesthetic Blocks',
+      'url': 'https://www.youtube.com/watch?v=g18RP2cQe_s&t=31s',
+      'video_id': 'g18RP2cQe_s'},
+     {'author': 'Dr. Glaucomflecken',
+      'channel': 'Dr. Glaucomflecken',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:29](https://www.youtube.com/watch?v=FqwonCk1DK8&t=89s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "It's a trap.",
+      'timestamp': 89,
+      'timestamp_label': '[00:01:29]',
+      'timestamp_seconds': 89,
+      'tip': "It's a trap.",
+      'title': 'Anesthesia Helps Out Emergency Medicine',
+      'url': 'https://www.youtube.com/watch?v=FqwonCk1DK8&t=89s',
+      'video_id': 'FqwonCk1DK8'},
+     {'author': 'About The Rest',
+      'channel': 'About The Rest',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:20:44](https://www.youtube.com/watch?v=WdSfoeegaaI&t=1244s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'You know, you might get $50 a unit as a QPA initially, but then you have to spend '
+              '$1,000 per dispute to the IDRE.',
+      'timestamp': 1244,
+      'timestamp_label': '[00:20:44]',
+      'timestamp_seconds': 1244,
+      'tip': 'You know, you might get $50 a unit as a QPA initially, but then you have to spend '
+             '$1,000 per dispute to the IDRE.',
+      'title': 'Anesthesia IDR Is a Knife Fight. Who Walks Away?',
+      'url': 'https://www.youtube.com/watch?v=WdSfoeegaaI&t=1244s',
+      'video_id': 'WdSfoeegaaI'},
+     {'author': 'About The Rest',
+      'channel': 'About The Rest',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:23:46](https://www.youtube.com/watch?v=WdSfoeegaaI&t=1426s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "And so if you have a company that's going out and they're winning contracts, and "
+              "they're gonna IDR 100% of their claims so they can maximize their revenue, at some "
+              "point in time, the music's gonna stop.",
+      'timestamp': 1426,
+      'timestamp_label': '[00:23:46]',
+      'timestamp_seconds': 1426,
+      'tip': "And so if you have a company that's going out and they're winning contracts, and "
+             "they're gonna IDR 100% of their claims so they can maximize their revenue, at some "
+             "point in time, the music's gonna stop.",
+      'title': 'Anesthesia IDR Is a Knife Fight. Who Walks Away?',
+      'url': 'https://www.youtube.com/watch?v=WdSfoeegaaI&t=1426s',
+      'video_id': 'WdSfoeegaaI'},
+     {'author': 'The Center for Medical Education',
+      'channel': 'The Center for Medical Education',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:57:43](https://www.youtube.com/watch?v=uqsbhH3wss0&t=3463s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Federal surprise-billing bills set a median rate, carriers may terminate contracts, '
+              'and that is an existential threat with cuts of 50% or at least 30%.',
+      'timestamp': 3463,
+      'timestamp_label': '[00:57:43]',
+      'timestamp_seconds': 3463,
+      'tip': 'Federal surprise-billing bills set a median rate, carriers may terminate contracts, '
+             'and that is an existential threat with cuts of 50% or at least 30%.',
+      'title': 'Ten Most Important Legal Questions Asked | The High Risk Emergency Medicine Course',
+      'url': 'https://www.youtube.com/watch?v=uqsbhH3wss0&t=3463s',
+      'video_id': 'uqsbhH3wss0'},
+     {'author': 'Bethel Law',
+      'channel': 'Bethel Law',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:17](https://www.youtube.com/watch?v=q3heX6QnFfo&t=317s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'However, as of June of last year, only 39% of submitted disputes have been '
+              'resolved, leaving 61% unresolved, which comes out to around 300,000 disputes, so '
+              'not a fast process by any stretch of the imagination.',
+      'timestamp': 317,
+      'timestamp_label': '[00:05:17]',
+      'timestamp_seconds': 317,
+      'tip': 'However, as of June of last year, only 39% of submitted disputes have been resolved, '
+             'leaving 61% unresolved, which comes out to around 300,000 disputes, so not a fast '
+             'process by any stretch of the imagination.',
+      'title': 'How the No Surprises Act is Saving You From Billing Shocks!',
+      'url': 'https://www.youtube.com/watch?v=q3heX6QnFfo&t=317s',
+      'video_id': 'q3heX6QnFfo'},
+     {'author': 'Apex IONM Solutions',
+      'channel': 'Apex IONM Solutions',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:02](https://www.youtube.com/watch?v=QRrun6dHMIY&t=182s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'We have doubled, tripled, and quadrupled revenue for many of our clients.',
+      'timestamp': 182,
+      'timestamp_label': '[00:03:02]',
+      'timestamp_seconds': 182,
+      'tip': 'We have doubled, tripled, and quadrupled revenue for many of our clients.',
+      'title': 'Unlocking Hidden Revenue: The No Surprises Act Strategy Providers Are Missing',
+      'url': 'https://www.youtube.com/watch?v=QRrun6dHMIY&t=182s',
+      'video_id': 'QRrun6dHMIY'},
+     {'author': 'Andrea Austin',
+      'channel': 'Andrea Austin',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:53](https://www.youtube.com/watch?v=8o10JCNK6n8&t=713s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Corporate employment is not safe, because a distant owner can cut you regardless of '
+              'performance.',
+      'timestamp': 713,
+      'timestamp_label': '[00:11:53]',
+      'timestamp_seconds': 713,
+      'tip': 'Corporate employment is not safe, because a distant owner can cut you regardless of '
+             'performance.',
+      'title': 'Autonomy in Medicine: The Path to Fulfillment and Innovation',
+      'url': 'https://www.youtube.com/watch?v=8o10JCNK6n8&t=713s',
+      'video_id': '8o10JCNK6n8'},
+     {'author': 'CollectionPro Services LLC',
+      'channel': 'CollectionPro Services LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:16](https://www.youtube.com/watch?v=Ahr00pn-Tiw&t=76s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Our fee is just 8% of the amount recovered, payable only after the money has '
+              'actually reached your account.',
+      'timestamp': 76,
+      'timestamp_label': '[00:01:16]',
+      'timestamp_seconds': 76,
+      'tip': 'Our fee is just 8% of the amount recovered, payable only after the money has '
+             'actually reached your account.',
+      'title': 'Winning your IDR arbitration is only half the battle. Collecting your award is '
+               'what really matters!',
+      'url': 'https://www.youtube.com/watch?v=Ahr00pn-Tiw&t=76s',
+      'video_id': 'Ahr00pn-Tiw'},
+     {'author': 'The Doctors Lounge',
+      'channel': 'The Doctors Lounge',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:41:32](https://www.youtube.com/watch?v=QITUqT322Iw&t=2492s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "I can look up any TIN in the country and know exactly what they're getting paid.",
+      'timestamp': 2492,
+      'timestamp_label': '[00:41:32]',
+      'timestamp_seconds': 2492,
+      'tip': "I can look up any TIN in the country and know exactly what they're getting paid.",
+      'title': 'Ed Gaines: How Independent Physicians Finally Got Leverage Against Insurance '
+               'Companies',
+      'url': 'https://www.youtube.com/watch?v=QITUqT322Iw&t=2492s',
+      'video_id': 'QITUqT322Iw'},
+     {'author': 'Dr. Tamir, MD',
+      'channel': 'Dr. Tamir, MD',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:06](https://www.youtube.com/watch?v=dfcTAfDPDqw&t=66s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'I could tell very quickly why they have such a high burnout rate.',
+      'timestamp': 66,
+      'timestamp_label': '[00:01:06]',
+      'timestamp_seconds': 66,
+      'tip': 'I could tell very quickly why they have such a high burnout rate.',
+      'title': 'The three specialties I couldn’t do #anesthesia #doctor #medschool #medicine '
+               '#premed',
+      'url': 'https://www.youtube.com/watch?v=dfcTAfDPDqw&t=66s',
+      'video_id': 'dfcTAfDPDqw'},
+     {'author': 'Hospital Decoded',
+      'channel': 'Hospital Decoded',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:52:17](https://www.youtube.com/watch?v=kXzE5L4StBs&t=3137s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Remember, June did not choose this company, neither did the paramedic.',
+      'timestamp': 3137,
+      'timestamp_label': '[00:52:17]',
+      'timestamp_seconds': 3137,
+      'tip': 'Remember, June did not choose this company, neither did the paramedic.',
+      'title': 'How Air Ambulances Actually Work',
+      'url': 'https://www.youtube.com/watch?v=kXzE5L4StBs&t=3137s',
+      'video_id': 'kXzE5L4StBs'},
+     {'author': 'Fine Print Files',
+      'channel': 'Fine Print Files',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:43](https://www.youtube.com/watch?v=qo0CHDEWdi4&t=343s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Providers won about 85% of disputes, with total payouts of about $15 billion in '
+              '2025.',
+      'timestamp': 343,
+      'timestamp_label': '[00:05:43]',
+      'timestamp_seconds': 343,
+      'tip': 'Providers won about 85% of disputes, with total payouts of about $15 billion in '
+             '2025.',
+      'title': 'Got a Medical Bill From a Doctor You Never Chose? Read This First',
+      'url': 'https://www.youtube.com/watch?v=qo0CHDEWdi4&t=343s',
+      'video_id': 'qo0CHDEWdi4'}],
+ 8: [{'author': 'The Medical Bill Whisperer',
+      'channel': 'The Medical Bill Whisperer',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:15](https://www.youtube.com/watch?v=TXjn5syXueM&t=255s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'In such cases your insurance must pay those emergency services at the higher '
+              'in-network rate.',
+      'timestamp': 255,
+      'timestamp_label': '[00:04:15]',
+      'timestamp_seconds': 255,
+      'tip': 'In such cases your insurance must pay those emergency services at the higher '
+             'in-network rate.',
+      'title': 'SHOCKING Truth: How to Get Out-of-Network Providers Paid at In-Network Rates '
+               '(Legally!)',
+      'url': 'https://www.youtube.com/watch?v=TXjn5syXueM&t=255s',
+      'video_id': 'TXjn5syXueM'},
+     {'author': 'The Medical Bill Whisperer',
+      'channel': 'The Medical Bill Whisperer',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:04](https://www.youtube.com/watch?v=fq0_XVnPWnI&t=304s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Call your insurance first, let them know that these were emergency services.',
+      'timestamp': 304,
+      'timestamp_label': '[00:05:04]',
+      'timestamp_seconds': 304,
+      'tip': 'Call your insurance first, let them know that these were emergency services.',
+      'title': 'How to Get Your Insurance to PAY for Out-of-Network Care | The Medical Bill '
+               'Whisperer',
+      'url': 'https://www.youtube.com/watch?v=fq0_XVnPWnI&t=304s',
+      'video_id': 'fq0_XVnPWnI'},
+     {'author': 'Cedar',
+      'channel': 'Cedar',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:08](https://www.youtube.com/watch?v=U7ayI8K_Ggw&t=128s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Four out of 10 patients have changed providers because of bad financial '
+              'experiences.',
+      'timestamp': 128,
+      'timestamp_label': '[00:02:08]',
+      'timestamp_seconds': 128,
+      'tip': 'Four out of 10 patients have changed providers because of bad financial experiences.',
+      'title': 'Insights into Healthcare Finance: PFX Benchmarks',
+      'url': 'https://www.youtube.com/watch?v=U7ayI8K_Ggw&t=128s',
+      'video_id': 'U7ayI8K_Ggw'},
+     {'author': 'Patriot Group',
+      'channel': 'Patriot Group',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:10](https://www.youtube.com/watch?v=dUdxVBDLf5w&t=370s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Medicare is the floor, not the ceiling.',
+      'timestamp': 370,
+      'timestamp_label': '[00:06:10]',
+      'timestamp_seconds': 370,
+      'tip': 'Medicare is the floor, not the ceiling.',
+      'title': 'How to Generate Revenue for Out-of-Network Medical Claims: Insights with Thomas J. '
+               'Force',
+      'url': 'https://www.youtube.com/watch?v=dUdxVBDLf5w&t=370s',
+      'video_id': 'dUdxVBDLf5w'},
+     {'author': 'Patriot Group',
+      'channel': 'Patriot Group',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:15](https://www.youtube.com/watch?v=dUdxVBDLf5w&t=795s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Keep your appeal to two pages; the carriers have short attention spans.',
+      'timestamp': 795,
+      'timestamp_label': '[00:13:15]',
+      'timestamp_seconds': 795,
+      'tip': 'Keep your appeal to two pages; the carriers have short attention spans.',
+      'title': 'How to Generate Revenue for Out-of-Network Medical Claims: Insights with Thomas J. '
+               'Force',
+      'url': 'https://www.youtube.com/watch?v=dUdxVBDLf5w&t=795s',
+      'video_id': 'dUdxVBDLf5w'},
+     {'author': 'Plano Texas',
+      'channel': 'Plano Texas',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:47](https://www.youtube.com/watch?v=w387XkK0lkk&t=587s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Never accept the first negotiation offer.',
+      'timestamp': 587,
+      'timestamp_label': '[00:09:47]',
+      'timestamp_seconds': 587,
+      'tip': 'Never accept the first negotiation offer.',
+      'title': 'ASC Billing - The Top 5 Ways to Increase Out of Network Revenue - MediGain',
+      'url': 'https://www.youtube.com/watch?v=w387XkK0lkk&t=587s',
+      'video_id': 'w387XkK0lkk'},
+     {'author': 'Plano Texas',
+      'channel': 'Plano Texas',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:19:18](https://www.youtube.com/watch?v=w387XkK0lkk&t=1158s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'We collected 1.8 million additional revenue in that year and that was a project '
+              'that I was personally part of.',
+      'timestamp': 1158,
+      'timestamp_label': '[00:19:18]',
+      'timestamp_seconds': 1158,
+      'tip': 'We collected 1.8 million additional revenue in that year and that was a project that '
+             'I was personally part of.',
+      'title': 'ASC Billing - The Top 5 Ways to Increase Out of Network Revenue - MediGain',
+      'url': 'https://www.youtube.com/watch?v=w387XkK0lkk&t=1158s',
+      'video_id': 'w387XkK0lkk'},
+     {'author': 'AR Specialist',
+      'channel': 'AR Specialist',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:34](https://www.youtube.com/watch?v=OLFRzRe0L2A&t=394s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'You only have exactly 180 days from that day zero EOB notice date to file an out of '
+              'network appeal.',
+      'timestamp': 394,
+      'timestamp_label': '[00:06:34]',
+      'timestamp_seconds': 394,
+      'tip': 'You only have exactly 180 days from that day zero EOB notice date to file an out of '
+             'network appeal.',
+      'title': 'SCA 2027 Blueprint: Protect Out-of-Network Revenue Before It Gets Recouped',
+      'url': 'https://www.youtube.com/watch?v=OLFRzRe0L2A&t=394s',
+      'video_id': 'OLFRzRe0L2A'},
+     {'author': 'Ensemble',
+      'channel': 'Ensemble',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:42](https://www.youtube.com/watch?v=EREvBniyM5c&t=402s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'The process runs from assessment to pursuit to a monthly operational review with '
+              'root-cause analysis, and we share the playbook.',
+      'timestamp': 402,
+      'timestamp_label': '[00:06:42]',
+      'timestamp_seconds': 402,
+      'tip': 'The process runs from assessment to pursuit to a monthly operational review with '
+             'root-cause analysis, and we share the playbook.',
+      'title': 'Healthcare Revenue Recovery | OPERATOR INSIGHTS | Healthcare Revenue Cycle '
+               'Management, RCM',
+      'url': 'https://www.youtube.com/watch?v=EREvBniyM5c&t=402s',
+      'video_id': 'EREvBniyM5c'},
+     {'author': 'Collect Rx',
+      'channel': 'Collect Rx',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:16:58](https://www.youtube.com/watch?v=jW7NdP3R2Lc&t=1018s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Pre-payment negotiation gets 90 to 100 percent of charges on 8 of 10 facility '
+              'bills.',
+      'timestamp': 1018,
+      'timestamp_label': '[00:16:58]',
+      'timestamp_seconds': 1018,
+      'tip': 'Pre-payment negotiation gets 90 to 100 percent of charges on 8 of 10 facility bills.',
+      'title': "Collect Rx's 6 Keys to Success in Revenue Cycle Management for Out of Network "
+               'Providers',
+      'url': 'https://www.youtube.com/watch?v=jW7NdP3R2Lc&t=1018s',
+      'video_id': 'jW7NdP3R2Lc'},
+     {'author': 'Beckers ASC',
+      'channel': 'Beckers ASC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:17:03](https://www.youtube.com/watch?v=KkjI85NtmNE&t=1023s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Out of network represents the last great opportunity for many providers to improve '
+              'their reimbursement levels overall.',
+      'timestamp': 1023,
+      'timestamp_label': '[00:17:03]',
+      'timestamp_seconds': 1023,
+      'tip': 'Out of network represents the last great opportunity for many providers to improve '
+             'their reimbursement levels overall.',
+      'title': 'Top 10 Best Practices to Maximize Complex Out-of-Network Reimbursements and More',
+      'url': 'https://www.youtube.com/watch?v=KkjI85NtmNE&t=1023s',
+      'video_id': 'KkjI85NtmNE'},
+     {'author': 'Medical Billing Education | Behavioral Billing',
+      'channel': 'Medical Billing Education | Behavioral Billing',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:27](https://www.youtube.com/watch?v=yYlBBM1kBMU&t=207s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "You're beginning to understand that a clean claim is what matters.",
+      'timestamp': 207,
+      'timestamp_label': '[00:03:27]',
+      'timestamp_seconds': 207,
+      'tip': "You're beginning to understand that a clean claim is what matters.",
+      'title': 'The Hidden Costs of Your Out-of-Network Behavioral Health Practice',
+      'url': 'https://www.youtube.com/watch?v=yYlBBM1kBMU&t=207s',
+      'video_id': 'yYlBBM1kBMU'},
+     {'author': 'MD Clarity',
+      'channel': 'MD Clarity',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:25](https://www.youtube.com/watch?v=wnXpxS7_cqA&t=505s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "The remedy isn't an appeal, it's renegotiation at the next contract update.",
+      'timestamp': 505,
+      'timestamp_label': '[00:08:25]',
+      'timestamp_seconds': 505,
+      'tip': "The remedy isn't an appeal, it's renegotiation at the next contract update.",
+      'title': 'Healthcare Underpayments Explained: Causes, Costs, and How to Recover',
+      'url': 'https://www.youtube.com/watch?v=wnXpxS7_cqA&t=505s',
+      'video_id': 'wnXpxS7_cqA'},
+     {'author': 'Collect Rx',
+      'channel': 'Collect Rx',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:52](https://www.youtube.com/watch?v=Pqx2hpp_cLU&t=712s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Our average on these types of claims is 90 to 100 percent of the overall bill '
+              'charges.',
+      'timestamp': 712,
+      'timestamp_label': '[00:11:52]',
+      'timestamp_seconds': 712,
+      'tip': 'Our average on these types of claims is 90 to 100 percent of the overall bill '
+             'charges.',
+      'title': '6 Keys to Success in Out of Network Reimbursement',
+      'url': 'https://www.youtube.com/watch?v=Pqx2hpp_cLU&t=712s',
+      'video_id': 'Pqx2hpp_cLU'},
+     {'author': "Becker's Hospital Review",
+      'channel': "Becker's Hospital Review",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:22:53](https://www.youtube.com/watch?v=7h4H8g1S01E&t=1373s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "Unfortunately these signed settlement offers, they're not binding.",
+      'timestamp': 1373,
+      'timestamp_label': '[00:22:53]',
+      'timestamp_seconds': 1373,
+      'tip': "Unfortunately these signed settlement offers, they're not binding.",
+      'title': 'Out-of-Network: Frequently Asked Questions',
+      'url': 'https://www.youtube.com/watch?v=7h4H8g1S01E&t=1373s',
+      'video_id': '7h4H8g1S01E'},
+     {'author': 'Talisman Solutions',
+      'channel': 'Talisman Solutions',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:28](https://www.youtube.com/watch?v=Zf9f4f3lmAw&t=88s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Avoid promising a recovery rate before reviewing the portfolio.',
+      'timestamp': 88,
+      'timestamp_label': '[00:01:28]',
+      'timestamp_seconds': 88,
+      'tip': 'Avoid promising a recovery rate before reviewing the portfolio.',
+      'title': '3 Unpaid Claims, 3 Different Next Actions | A/R Audit Walkthrough',
+      'url': 'https://www.youtube.com/watch?v=Zf9f4f3lmAw&t=88s',
+      'video_id': 'Zf9f4f3lmAw'},
+     {'author': 'Outpatient Endovascular & Interventional Society',
+      'channel': 'Outpatient Endovascular & Interventional Society',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:04:03](https://www.youtube.com/watch?v=5aFK91a1KPY&t=3843s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'The first offer is never the final offer.',
+      'timestamp': 3843,
+      'timestamp_label': '[01:04:03]',
+      'timestamp_seconds': 3843,
+      'tip': 'The first offer is never the final offer.',
+      'title': 'Revenue Cycle for OBLs: Payer Contracts, 2026 Coding and Denials | OEIS Annual '
+               'Meeting',
+      'url': 'https://www.youtube.com/watch?v=5aFK91a1KPY&t=3843s',
+      'video_id': '5aFK91a1KPY'},
+     {'author': 'The Auctus Group',
+      'channel': 'The Auctus Group',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:17](https://www.youtube.com/watch?v=Hd2UT1OUlA0&t=17s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'You will not be seeing reimbursement in 30 days like you often can within network.',
+      'timestamp': 17,
+      'timestamp_label': '[00:00:17]',
+      'timestamp_seconds': 17,
+      'tip': 'You will not be seeing reimbursement in 30 days like you often can within network.',
+      'title': 'Top 5 Things to Think About Before Going Out-of-Network (OON / IDR / NSA Billing)',
+      'url': 'https://www.youtube.com/watch?v=Hd2UT1OUlA0&t=17s',
+      'video_id': 'Hd2UT1OUlA0'}],
+ 9: [{'author': 'Jarod Carter',
+      'channel': 'Jarod Carter',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:06](https://www.youtube.com/watch?v=cA7tBJf4KyY&t=366s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'One of my coaching clients has a self-pay rate of about 179, and there are a couple '
+              'of popular payers that pay over two hundred dollars for actual charges, coming out '
+              'to about 220 dollars a visit.',
+      'timestamp': 366,
+      'timestamp_label': '[00:06:06]',
+      'timestamp_seconds': 366,
+      'tip': 'One of my coaching clients has a self-pay rate of about 179, and there are a couple '
+             'of popular payers that pay over two hundred dollars for actual charges, coming out '
+             'to about 220 dollars a visit.',
+      'title': 'Top 4 Out-of-Network Billing & Superbill Tips',
+      'url': 'https://www.youtube.com/watch?v=cA7tBJf4KyY&t=366s',
+      'video_id': 'cA7tBJf4KyY'},
+     {'author': 'Jarod Carter',
+      'channel': 'Jarod Carter',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:57](https://www.youtube.com/watch?v=cA7tBJf4KyY&t=657s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'As a general rule, if the package is less than four figures in cost, then I do not '
+              'split those up into payments.',
+      'timestamp': 657,
+      'timestamp_label': '[00:10:57]',
+      'timestamp_seconds': 657,
+      'tip': 'As a general rule, if the package is less than four figures in cost, then I do not '
+             'split those up into payments.',
+      'title': 'Top 4 Out-of-Network Billing & Superbill Tips',
+      'url': 'https://www.youtube.com/watch?v=cA7tBJf4KyY&t=657s',
+      'video_id': 'cA7tBJf4KyY'},
+     {'author': 'Inlera University',
+      'channel': 'Inlera University',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:27](https://www.youtube.com/watch?v=3JOMCnMqhvI&t=87s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "It takes a combination of the patient's benefit plan along with the insurance "
+              "company's fee schedule, and that is what makes the allowed amount, so the allowed "
+              'amount is not the same thing as a fee schedule.',
+      'timestamp': 87,
+      'timestamp_label': '[00:01:27]',
+      'timestamp_seconds': 87,
+      'tip': "It takes a combination of the patient's benefit plan along with the insurance "
+             "company's fee schedule, and that is what makes the allowed amount, so the allowed "
+             'amount is not the same thing as a fee schedule.',
+      'title': 'What is the Allowed Amount? | Healthcare Medical Billing',
+      'url': 'https://www.youtube.com/watch?v=3JOMCnMqhvI&t=87s',
+      'video_id': '3JOMCnMqhvI'},
+     {'author': 'Kym Tolson The Traveling Therapist',
+      'channel': 'Kym Tolson The Traveling Therapist',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:12](https://www.youtube.com/watch?v=FpNL1YIlvD0&t=132s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you select no on accept assignment, they are not going to send the money to you; '
+              'they are going to send the money to the client.',
+      'timestamp': 132,
+      'timestamp_label': '[00:02:12]',
+      'timestamp_seconds': 132,
+      'tip': 'If you select no on accept assignment, they are not going to send the money to you; '
+             'they are going to send the money to the client.',
+      'title': 'Out Of Network Billing Via Filing Claims Through an EHR and a Superbill',
+      'url': 'https://www.youtube.com/watch?v=FpNL1YIlvD0&t=132s',
+      'video_id': 'FpNL1YIlvD0'},
+     {'author': 'FAIR Health',
+      'channel': 'FAIR Health',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:13](https://www.youtube.com/watch?v=WuZrwo-Qxww&t=133s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can use your estimate to manage your deductible, negotiate costs with your '
+              'providers, or appeal a payment from your insurer.',
+      'timestamp': 133,
+      'timestamp_label': '[00:02:13]',
+      'timestamp_seconds': 133,
+      'tip': 'You can use your estimate to manage your deductible, negotiate costs with your '
+             'providers, or appeal a payment from your insurer.',
+      'title': 'Understand Your Medical Cost Estimate — FAIRHealthConsumer.org (Part 1)',
+      'url': 'https://www.youtube.com/watch?v=WuZrwo-Qxww&t=133s',
+      'video_id': 'WuZrwo-Qxww'},
+     {'author': 'Reimbursify',
+      'channel': 'Reimbursify',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:50](https://www.youtube.com/watch?v=of48SgwvfiI&t=410s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'The amounts can range between maybe 60 or 70 percent of what someone is charging up '
+              'to 100 percent of what they are charging.',
+      'timestamp': 410,
+      'timestamp_label': '[00:06:50]',
+      'timestamp_seconds': 410,
+      'tip': 'The amounts can range between maybe 60 or 70 percent of what someone is charging up '
+             'to 100 percent of what they are charging.',
+      'title': 'Benefit Verifications 101 - Let your clients check their own out-of-network '
+               'coverage!',
+      'url': 'https://www.youtube.com/watch?v=of48SgwvfiI&t=410s',
+      'video_id': 'of48SgwvfiI'},
+     {'author': 'Dr. Lauren Baker',
+      'channel': 'Dr. Lauren Baker',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:48](https://www.youtube.com/watch?v=zsaby8gJNmg&t=828s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'As an out-of-network provider you are absolutely going to want to have the NPI '
+              'number, because they are never able to locate me by tax ID number, but with my NPI '
+              'number they find me right away.',
+      'timestamp': 828,
+      'timestamp_label': '[00:13:48]',
+      'timestamp_seconds': 828,
+      'tip': 'As an out-of-network provider you are absolutely going to want to have the NPI '
+             'number, because they are never able to locate me by tax ID number, but with my NPI '
+             'number they find me right away.',
+      'title': 'How To Fill Out A Claims Form For Out of Network Reimbursement | PT Out of Network '
+               'Claim',
+      'url': 'https://www.youtube.com/watch?v=zsaby8gJNmg&t=828s',
+      'video_id': 'zsaby8gJNmg'},
+     {'author': 'The Private Practice Outsider',
+      'channel': 'The Private Practice Outsider',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:58](https://www.youtube.com/watch?v=TNKYk9V0ty8&t=118s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'The patient will owe you 35 percent of the 100, which is 35 dollars, plus the '
+              'balance bill amount of 150 dollars, so 185 dollars total.',
+      'timestamp': 118,
+      'timestamp_label': '[00:01:58]',
+      'timestamp_seconds': 118,
+      'tip': 'The patient will owe you 35 percent of the 100, which is 35 dollars, plus the '
+             'balance bill amount of 150 dollars, so 185 dollars total.',
+      'title': 'Out of Network Billing [Coinsurance plus Balance Billing] Amount Explained',
+      'url': 'https://www.youtube.com/watch?v=TNKYk9V0ty8&t=118s',
+      'video_id': 'TNKYk9V0ty8'},
+     {'author': 'Nate Page',
+      'channel': 'Nate Page',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:50](https://www.youtube.com/watch?v=rdwGJdKffpI&t=50s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Some get 50 percent, a lot get 60 to 80 percent, and we even have some clients that '
+              'say they get a hundred percent back from their health insurance.',
+      'timestamp': 50,
+      'timestamp_label': '[00:00:50]',
+      'timestamp_seconds': 50,
+      'tip': 'Some get 50 percent, a lot get 60 to 80 percent, and we even have some clients that '
+             'say they get a hundred percent back from their health insurance.',
+      'title': 'Out of Network Therapist | Superbills and Health Insurance',
+      'url': 'https://www.youtube.com/watch?v=rdwGJdKffpI&t=50s',
+      'video_id': 'rdwGJdKffpI'},
      {'author': 'Private Practice Skills',
       'channel': 'Private Practice Skills',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:41](https://www.youtube.com/watch?v=HqCQhe8wbVM&t=341s)',
-      'relevance': 'Attributed practitioner commentary on contingency out-of-network physician '
-                   'underpayment recovery under the federal No Surprises Act (`42 U.S.C. § '
-                   '300gg-111`), automating `30`-business-day Open Negotiation, '
-                   '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                   'arbitration briefs (Chapter Q9 operational verification).',
+      'markdown': '[00:04:17](https://www.youtube.com/watch?v=HqCQhe8wbVM&t=257s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': 'Well I hope you found this video about super bills helpful and until next time '
-              'from one therapist to another I wish you well but if you change your mind you '
-              'can just interrupt at any point.',
-      'timestamp': 341,
-      'timestamp_label': '[00:05:41]',
-      'timestamp_seconds': 341,
-      'tip': 'Well I hope you found this video about super bills helpful and until next time '
-             'from one therapist to another I wish you well but if you change your mind you '
-             'can just interrupt at any point.',
-      'title': 'Superbills in Private Practice | Out-of-Network Billing (Private Practice '
-               'Skills)',
-      'url': 'https://www.youtube.com/watch?v=HqCQhe8wbVM&t=341s',
-      'video_id': 'HqCQhe8wbVM'}],
- 10: [{'author': 'KandR BILLING & AI RCM SOFTWARE',
-       'channel': 'KandR BILLING & AI RCM SOFTWARE',
+      'text': 'Once you get into the swing of things with super bills, it really only takes like a '
+              'minute and a half to complete per client.',
+      'timestamp': 257,
+      'timestamp_label': '[00:04:17]',
+      'timestamp_seconds': 257,
+      'tip': 'Once you get into the swing of things with super bills, it really only takes like a '
+             'minute and a half to complete per client.',
+      'title': 'Superbills in Private Practice | Out-of-Network Billing',
+      'url': 'https://www.youtube.com/watch?v=HqCQhe8wbVM&t=257s',
+      'video_id': 'HqCQhe8wbVM'},
+     {'author': 'Craft Your Practice',
+      'channel': 'Craft Your Practice',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:32](https://www.youtube.com/watch?v=tkUfu8WA56U&t=572s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Plans give members a limited window to submit, sometimes as short as ninety days, '
+              'sometimes a year.',
+      'timestamp': 572,
+      'timestamp_label': '[00:09:32]',
+      'timestamp_seconds': 572,
+      'tip': 'Plans give members a limited window to submit, sometimes as short as ninety days, '
+             'sometimes a year.',
+      'title': 'Superbills for Therapists: How Out-of-Network Reimbursement Actually Works',
+      'url': 'https://www.youtube.com/watch?v=tkUfu8WA56U&t=572s',
+      'video_id': 'tkUfu8WA56U'},
+     {'author': 'Alicia Murray | The Therapist HQ \U0001faa9',
+      'channel': 'Alicia Murray | The Therapist HQ \U0001faa9',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:26:08](https://www.youtube.com/watch?v=eXrZnEwRRH4&t=1568s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Adjustment disorders on their own do not get reimbursed for out of network '
+              'benefits.',
+      'timestamp': 1568,
+      'timestamp_label': '[00:26:08]',
+      'timestamp_seconds': 1568,
+      'tip': 'Adjustment disorders on their own do not get reimbursed for out of network benefits.',
+      'title': 'Out-of-network 101 for therapists',
+      'url': 'https://www.youtube.com/watch?v=eXrZnEwRRH4&t=1568s',
+      'video_id': 'eXrZnEwRRH4'},
+     {'author': 'One80 Physical Therapy',
+      'channel': 'One80 Physical Therapy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:02](https://www.youtube.com/watch?v=GVdiKSs4kvU&t=242s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'We are non-participating with Medicare, which means we cannot give you a super '
+              'bill.',
+      'timestamp': 242,
+      'timestamp_label': '[00:04:02]',
+      'timestamp_seconds': 242,
+      'tip': 'We are non-participating with Medicare, which means we cannot give you a super bill.',
+      'title': 'Insurance Pay vs Out-of-Network: Why One80 Physical Therapy is Different',
+      'url': 'https://www.youtube.com/watch?v=GVdiKSs4kvU&t=242s',
+      'video_id': 'GVdiKSs4kvU'},
+     {'author': 'MediBill Pro',
+      'channel': 'MediBill Pro',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:48](https://www.youtube.com/watch?v=dta7Y_d4nYA&t=48s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'The percentage that the patient is going to pay after that specific deductible is '
+              'called the co-insurance amount.',
+      'timestamp': 48,
+      'timestamp_label': '[00:00:48]',
+      'timestamp_seconds': 48,
+      'tip': 'The percentage that the patient is going to pay after that specific deductible is '
+             'called the co-insurance amount.',
+      'title': 'Top Medical Billing Interview Questions & Answers | Coinsurance vs Eligibility vs '
+               'Preauthorization',
+      'url': 'https://www.youtube.com/watch?v=dta7Y_d4nYA&t=48s',
+      'video_id': 'dta7Y_d4nYA'},
+     {'author': 'Ask The Biller',
+      'channel': 'Ask The Biller',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:57](https://www.youtube.com/watch?v=SdYPzcQPWOw&t=117s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "Everyone's deductible does not reset on January 1st, so verify whether the benefits "
+              'are based on a calendar year or a plan year.',
+      'timestamp': 117,
+      'timestamp_label': '[00:01:57]',
+      'timestamp_seconds': 117,
+      'tip': "Everyone's deductible does not reset on January 1st, so verify whether the benefits "
+             'are based on a calendar year or a plan year.',
+      'title': 'How to Calculate Patient and Payer Responsibility (Copay vs Coinsurance vs '
+               'Deductible)',
+      'url': 'https://www.youtube.com/watch?v=SdYPzcQPWOw&t=117s',
+      'video_id': 'SdYPzcQPWOw'},
+     {'author': 'Inlera University',
+      'channel': 'Inlera University',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:58](https://www.youtube.com/watch?v=XyBNgMnFz0Y&t=418s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Talking to a human at an insurance company is last on the list because it takes an '
+              'enormous amount of time, and hold times are incredibly long right now.',
+      'timestamp': 418,
+      'timestamp_label': '[00:06:58]',
+      'timestamp_seconds': 418,
+      'tip': 'Talking to a human at an insurance company is last on the list because it takes an '
+             'enormous amount of time, and hold times are incredibly long right now.',
+      'title': '5 Ways to verify patient Insurance Eligibility | Medical Billing Terms',
+      'url': 'https://www.youtube.com/watch?v=XyBNgMnFz0Y&t=418s',
+      'video_id': 'XyBNgMnFz0Y'},
+     {'author': 'Jarod Carter',
+      'channel': 'Jarod Carter',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:02](https://www.youtube.com/watch?v=heiuukmxgss&t=242s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'It would be insurance fraud if you let them send in something that said they paid '
+              '200 dollars when they only paid 190 dollars for that session.',
+      'timestamp': 242,
+      'timestamp_label': '[00:04:02]',
+      'timestamp_seconds': 242,
+      'tip': 'It would be insurance fraud if you let them send in something that said they paid '
+             '200 dollars when they only paid 190 dollars for that session.',
+      'title': 'Superbill Secrets for Cash Practice Packages - Out-of-Network Billing '
+               'Reimbursement Tips',
+      'url': 'https://www.youtube.com/watch?v=heiuukmxgss&t=242s',
+      'video_id': 'heiuukmxgss'}],
+ 10: [{'author': 'AHealthcareZ - Healthcare Finance Explained',
+       'channel': 'AHealthcareZ - Healthcare Finance Explained',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:20](https://www.youtube.com/watch?v=-yVkokS2iaE&t=320s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q10 operational verification).',
+       'markdown': '[00:10:33](https://www.youtube.com/watch?v=rqdWr9ynZ_o&t=633s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'The routing is system-driven and fully logged. This ensures structured '
-               'workload distribution, accountability, and operational efficiency at scale. '
-               'After a claim is worked, the system automatically triggers the AI quality '
-               'audit agent.',
-       'timestamp': 320,
-       'timestamp_label': '[00:05:20]',
-       'timestamp_seconds': 320,
-       'tip': 'The routing is system-driven and fully logged. This ensures structured workload '
-              'distribution, accountability, and operational efficiency at scale. After a '
-              'claim is worked, the system automatically triggers the AI quality audit agent.',
-       'title': 'RCM Software Workflow Demo | AI-Powered AR Automation for Healthcare (KandR '
-                'BILLING & AI RCM SOFTWARE)',
-       'url': 'https://www.youtube.com/watch?v=-yVkokS2iaE&t=320s',
-       'video_id': '-yVkokS2iaE'},
-      {'author': 'About The Rest',
-       'channel': 'About The Rest',
+       'text': 'AR days typically run in a range of 30 to 70 days, and that range has not changed '
+               'in 26 years.',
+       'timestamp': 633,
+       'timestamp_label': '[00:10:33]',
+       'timestamp_seconds': 633,
+       'tip': 'AR days typically run in a range of 30 to 70 days, and that range has not changed '
+              'in 26 years.',
+       'title': 'Revenue Cycle Management in Healthcare Explained',
+       'url': 'https://www.youtube.com/watch?v=rqdWr9ynZ_o&t=633s',
+       'video_id': 'rqdWr9ynZ_o'},
+      {'author': 'Etactics',
+       'channel': 'Etactics',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:21](https://www.youtube.com/watch?v=x35n4T9CppE&t=21s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q10 operational verification).',
+       'markdown': '[00:00:16](https://www.youtube.com/watch?v=M-Mz0m1tdrQ&t=16s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'And Tracy I think did a very good job of describing how their behaviors '
-               'changed after these rules were promulgated. They have all this leverage and '
-               "they're driving down rates. This has had a seismic impact in the anesthesia "
-               'community, business community, seismic.',
-       'timestamp': 21,
-       'timestamp_label': '[00:00:21]',
-       'timestamp_seconds': 21,
-       'tip': 'And Tracy I think did a very good job of describing how their behaviors changed '
-              "after these rules were promulgated. They have all this leverage and they're "
-              'driving down rates. This has had a seismic impact in the anesthesia community, '
-              'business community, seismic.',
-       'title': 'The No Surprises Act Created a Monster (About The Rest)',
-       'url': 'https://www.youtube.com/watch?v=x35n4T9CppE&t=21s',
-       'video_id': 'x35n4T9CppE'},
+       'text': 'Revenue cycle management has three parts, the front, mid, and back end, and like a '
+               'gear in a watch, if one part fails the whole cycle suffers.',
+       'timestamp': 16,
+       'timestamp_label': '[00:00:16]',
+       'timestamp_seconds': 16,
+       'tip': 'Revenue cycle management has three parts, the front, mid, and back end, and like a '
+              'gear in a watch, if one part fails the whole cycle suffers.',
+       'title': '[ANSWERED] What is Front-End Revenue Cycle Management?',
+       'url': 'https://www.youtube.com/watch?v=M-Mz0m1tdrQ&t=16s',
+       'video_id': 'M-Mz0m1tdrQ'},
+      {'author': 'JobRath',
+       'channel': 'JobRath',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:45](https://www.youtube.com/watch?v=WCjl2ZOU1ec&t=105s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'If one step fails, it impacts the entire reimbursement process.',
+       'timestamp': 105,
+       'timestamp_label': '[00:01:45]',
+       'timestamp_seconds': 105,
+       'tip': 'If one step fails, it impacts the entire reimbursement process.',
+       'title': 'What Is Revenue Cycle Management (RCM)? Interview Answer That Gets You Hired',
+       'url': 'https://www.youtube.com/watch?v=WCjl2ZOU1ec&t=105s',
+       'video_id': 'WCjl2ZOU1ec'},
       {'author': 'Medicalbillingz',
        'channel': 'Medicalbillingz',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:05](https://www.youtube.com/watch?v=LBZTRJRtZ54&t=65s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q10 operational verification).',
+       'markdown': '[00:01:54](https://www.youtube.com/watch?v=LBZTRJRtZ54&t=114s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Happier patients with transparent billing and fewer surprises. Reduced '
-               "administrative burden for providers. It's a win-win for clinics and patients "
-               'alike. AI predicts claim denials before submission while automation handles '
-               'repetitive tasks like coding and payment posting.',
-       'timestamp': 65,
-       'timestamp_label': '[00:01:05]',
-       'timestamp_seconds': 65,
-       'tip': 'Happier patients with transparent billing and fewer surprises. Reduced '
-              "administrative burden for providers. It's a win-win for clinics and patients "
-              'alike. AI predicts claim denials before submission while automation handles '
-              'repetitive tasks like coding and payment posting.',
-       'title': 'End to End Revenue Cycle Management in Healthcare | Full RCM Workflow '
-                '(Medicalbillingz)',
-       'url': 'https://www.youtube.com/watch?v=LBZTRJRtZ54&t=65s',
+       'text': 'Prevention is always cheaper than cure.',
+       'timestamp': 114,
+       'timestamp_label': '[00:01:54]',
+       'timestamp_seconds': 114,
+       'tip': 'Prevention is always cheaper than cure.',
+       'title': 'End to End Revenue Cycle Management in Healthcare | Full RCM Workflow',
+       'url': 'https://www.youtube.com/watch?v=LBZTRJRtZ54&t=114s',
        'video_id': 'LBZTRJRtZ54'},
-      {'author': 'Innobot Health',
-       'channel': 'Innobot Health',
+      {'author': 'MedConsults',
+       'channel': 'MedConsults',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:54](https://www.youtube.com/watch?v=uMy2M4PPrMU&t=54s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q10 operational verification).',
+       'markdown': '[00:04:18](https://www.youtube.com/watch?v=YlcvgGZT9eQ&t=258s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'API connections to over 1,800 payers, agentic UI automation that navigates '
-               'payer portals the way a person would, conversational AI bots that can call a '
-               'payer directly, and InoChat with an optional human in the loop when needed.',
-       'timestamp': 54,
-       'timestamp_label': '[00:00:54]',
-       'timestamp_seconds': 54,
-       'tip': 'API connections to over 1,800 payers, agentic UI automation that navigates '
-              'payer portals the way a person would, conversational AI bots that can call a '
-              'payer directly, and InoChat with an optional human in the loop when needed.',
-       'title': 'Inside IRIS: A Full Tour of the Platform That Runs Your Revenue Cycle '
-                '(Innobot Health)',
-       'url': 'https://www.youtube.com/watch?v=uMy2M4PPrMU&t=54s',
-       'video_id': 'uMy2M4PPrMU'},
-      {'author': 'Guidehouse',
-       'channel': 'Guidehouse',
+       'text': 'Money collected now never becomes a receivable.',
+       'timestamp': 258,
+       'timestamp_label': '[00:04:18]',
+       'timestamp_seconds': 258,
+       'tip': 'Money collected now never becomes a receivable.',
+       'title': 'Revenue Cycle Management in Healthcare (Full Course)',
+       'url': 'https://www.youtube.com/watch?v=YlcvgGZT9eQ&t=258s',
+       'video_id': 'YlcvgGZT9eQ'},
+      {'author': 'Inlera University',
+       'channel': 'Inlera University',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:09](https://www.youtube.com/watch?v=VQBtuhx0a5U&t=69s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q10 operational verification).',
+       'markdown': '[00:22:06](https://www.youtube.com/watch?v=RvLjKE1S1eU&t=1326s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'That will then be submitted and the agent will follow up on that to ensure '
-               'that we receive a proper response and generate maximum revenue. The thing '
-               "that's a little bit different about what we do than a typical reviewer one is "
-               'the speed and the capacity.',
-       'timestamp': 69,
-       'timestamp_label': '[00:01:09]',
-       'timestamp_seconds': 69,
-       'tip': 'That will then be submitted and the agent will follow up on that to ensure that '
-              "we receive a proper response and generate maximum revenue. The thing that's a "
-              'little bit different about what we do than a typical reviewer one is the speed '
-              'and the capacity.',
-       'title': 'AI Agents for Revenue Cycle: Medical Necessity Appeal Agent — RCM Denial '
-                'Recovery Automation (Guidehouse)',
-       'url': 'https://www.youtube.com/watch?v=VQBtuhx0a5U&t=69s',
-       'video_id': 'VQBtuhx0a5U'},
-      {'author': 'NTT DATA North America',
-       'channel': 'NTT DATA North America',
+       'text': "I don't like going beyond 90 days.",
+       'timestamp': 1326,
+       'timestamp_label': '[00:22:06]',
+       'timestamp_seconds': 1326,
+       'tip': "I don't like going beyond 90 days.",
+       'title': 'Revenue Cycle Management & Recommended Workflow Part 3 | Medical Billers Network '
+                'Live',
+       'url': 'https://www.youtube.com/watch?v=RvLjKE1S1eU&t=1326s',
+       'video_id': 'RvLjKE1S1eU'},
+      {'author': 'RCM Navigator',
+       'channel': 'RCM Navigator',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:03](https://www.youtube.com/watch?v=xJZ_wqqTQhY&t=63s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q10 operational verification).',
+       'markdown': '[00:01:13](https://www.youtube.com/watch?v=ETPWERdn_jE&t=73s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'The initial authorization request is denied by insurance provider for medical '
-               'necessity. Our AI appeal agent drafts an overturn letter, referencing NCCN and '
-               'insurance-specific guidelines, which is reviewed by the oncologist and '
-               'submitted.',
+       'text': 'Charge capture ensures no service is left unbilled.',
+       'timestamp': 73,
+       'timestamp_label': '[00:01:13]',
+       'timestamp_seconds': 73,
+       'tip': 'Charge capture ensures no service is left unbilled.',
+       'title': 'Break down of 13 steps of US Medical RCM (Revenue Cycle Management)',
+       'url': 'https://www.youtube.com/watch?v=ETPWERdn_jE&t=73s',
+       'video_id': 'ETPWERdn_jE'},
+      {'author': 'UtreatiBill LLC',
+       'channel': 'UtreatiBill LLC',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:58](https://www.youtube.com/watch?v=_0Dt6rewEvU&t=118s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'Pricing starts at just 2% with no heavy overhead or extra staff.',
+       'timestamp': 118,
+       'timestamp_label': '[00:01:58]',
+       'timestamp_seconds': 118,
+       'tip': 'Pricing starts at just 2% with no heavy overhead or extra staff.',
+       'title': 'Stop Losing Money! Revenue Cycle Management',
+       'url': 'https://www.youtube.com/watch?v=_0Dt6rewEvU&t=118s',
+       'video_id': '_0Dt6rewEvU'},
+      {'author': 'American Medical Association (AMA)',
+       'channel': 'American Medical Association (AMA)',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:06:29](https://www.youtube.com/watch?v=Ie5ARcGEY1g&t=389s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'So after digging in, we eventually did get the problem fixed, but not before many '
+               'thousands of dollars were lost.',
+       'timestamp': 389,
+       'timestamp_label': '[00:06:29]',
+       'timestamp_seconds': 389,
+       'tip': 'So after digging in, we eventually did get the problem fixed, but not before many '
+              'thousands of dollars were lost.',
+       'title': 'Revenue Cycle Management',
+       'url': 'https://www.youtube.com/watch?v=Ie5ARcGEY1g&t=389s',
+       'video_id': 'Ie5ARcGEY1g'},
+      {'author': 'PayerWatch',
+       'channel': 'PayerWatch',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:12:00](https://www.youtube.com/watch?v=cePrn8Rhav8&t=720s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': "Smart work, smart content: fight what you can win, don't fight what you can't.",
+       'timestamp': 720,
+       'timestamp_label': '[00:12:00]',
+       'timestamp_seconds': 720,
+       'tip': "Smart work, smart content: fight what you can win, don't fight what you can't.",
+       'title': 'Revenue Cycle 101',
+       'url': 'https://www.youtube.com/watch?v=cePrn8Rhav8&t=720s',
+       'video_id': 'cePrn8Rhav8'},
+      {'author': 'PayerWatch',
+       'channel': 'PayerWatch',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:45:29](https://www.youtube.com/watch?v=cePrn8Rhav8&t=2729s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'I can make AR days be whatever you want it to be, it can be zero tomorrow, I just '
+               'got to write off all my AR.',
+       'timestamp': 2729,
+       'timestamp_label': '[00:45:29]',
+       'timestamp_seconds': 2729,
+       'tip': 'I can make AR days be whatever you want it to be, it can be zero tomorrow, I just '
+              'got to write off all my AR.',
+       'title': 'Revenue Cycle 101',
+       'url': 'https://www.youtube.com/watch?v=cePrn8Rhav8&t=2729s',
+       'video_id': 'cePrn8Rhav8'},
+      {'author': 'RCMOpsPro',
+       'channel': 'RCMOpsPro',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:40](https://www.youtube.com/watch?v=RddJn-tA3OM&t=40s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'A missed middle initial will sit silently in the system until it triggers a hard '
+               'denial 30 days later.',
+       'timestamp': 40,
+       'timestamp_label': '[00:00:40]',
+       'timestamp_seconds': 40,
+       'tip': 'A missed middle initial will sit silently in the system until it triggers a hard '
+              'denial 30 days later.',
+       'title': 'Revenue Cycle Management (RCM) Explained: Front, Mid & Back End | Created by '
+                'Diego Samson',
+       'url': 'https://www.youtube.com/watch?v=RddJn-tA3OM&t=40s',
+       'video_id': 'RddJn-tA3OM'},
+      {'author': 'US Healthcare Insights by Shiva',
+       'channel': 'US Healthcare Insights by Shiva',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:40](https://www.youtube.com/watch?v=V7EGu84Chfc&t=100s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'If there are errors or missing information, the claim may be denied or rejected.',
+       'timestamp': 100,
+       'timestamp_label': '[00:01:40]',
+       'timestamp_seconds': 100,
+       'tip': 'If there are errors or missing information, the claim may be denied or rejected.',
+       'title': "What is Revenue Cycle Management (RCM)? Complete Beginner's Guide by Shiva Rao",
+       'url': 'https://www.youtube.com/watch?v=V7EGu84Chfc&t=100s',
+       'video_id': 'V7EGu84Chfc'},
+      {'author': 'Contempo Coding',
+       'channel': 'Contempo Coding',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:29](https://www.youtube.com/watch?v=pG2R1NwUlro&t=149s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'Denials are not all about coding, they can happen at any point.',
+       'timestamp': 149,
+       'timestamp_label': '[00:02:29]',
+       'timestamp_seconds': 149,
+       'tip': 'Denials are not all about coding, they can happen at any point.',
+       'title': 'What is the Revenue Cycle in Medical Billing and Coding? (RCM Basics Explained)',
+       'url': 'https://www.youtube.com/watch?v=pG2R1NwUlro&t=149s',
+       'video_id': 'pG2R1NwUlro'},
+      {'author': 'RCM Mastery',
+       'channel': 'RCM Mastery',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:32](https://www.youtube.com/watch?v=okx8geMd-gU&t=212s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'About 65% get paid in full, but a quarter are only partially paid, and a solid 10% '
+               'are just denied.',
+       'timestamp': 212,
+       'timestamp_label': '[00:03:32]',
+       'timestamp_seconds': 212,
+       'tip': 'About 65% get paid in full, but a quarter are only partially paid, and a solid 10% '
+              'are just denied.',
+       'title': 'Part 1 || Complete RCM Workflow Explained | From Patient Registration to Payment',
+       'url': 'https://www.youtube.com/watch?v=okx8geMd-gU&t=212s',
+       'video_id': 'okx8geMd-gU'},
+      {'author': 'Amazing Charts',
+       'channel': 'Amazing Charts',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:33:11](https://www.youtube.com/watch?v=eKRUeJa5ZzQ&t=1991s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'Will you chase a $10 claim? The answer is yes, we absolutely will.',
+       'timestamp': 1991,
+       'timestamp_label': '[00:33:11]',
+       'timestamp_seconds': 1991,
+       'tip': 'Will you chase a $10 claim? The answer is yes, we absolutely will.',
+       'title': 'Webinar: Amazing Charts Revenue Cycle Management (RCM)',
+       'url': 'https://www.youtube.com/watch?v=eKRUeJa5ZzQ&t=1991s',
+       'video_id': 'eKRUeJa5ZzQ'},
+      {'author': 'Advanced Coding Services',
+       'channel': 'Advanced Coding Services',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:52](https://www.youtube.com/watch?v=SSnnU_haYdA&t=52s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'Revenue cycle management starts earlier and ends later.',
+       'timestamp': 52,
+       'timestamp_label': '[00:00:52]',
+       'timestamp_seconds': 52,
+       'tip': 'Revenue cycle management starts earlier and ends later.',
+       'title': 'Medical Billing vs Revenue Cycle Management',
+       'url': 'https://www.youtube.com/watch?v=SSnnU_haYdA&t=52s',
+       'video_id': 'SSnnU_haYdA'}],
+ 11: [{'author': 'EDI PowerTools by EMS Healthcare Informatics',
+       'channel': 'EDI PowerTools by EMS Healthcare Informatics',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:53](https://www.youtube.com/watch?v=JfPjIRaIz-o&t=113s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "Because it's a text file you can open them with any text editor, but do not try to "
+               'edit using a Microsoft Word type document editor because they are formatters as '
+               'well and these need to be kept pure.',
+       'timestamp': 113,
+       'timestamp_label': '[00:01:53]',
+       'timestamp_seconds': 113,
+       'tip': "Because it's a text file you can open them with any text editor, but do not try to "
+              'edit using a Microsoft Word type document editor because they are formatters as '
+              'well and these need to be kept pure.',
+       'title': 'How to read an 835 Electronic Remittance File',
+       'url': 'https://www.youtube.com/watch?v=JfPjIRaIz-o&t=113s',
+       'video_id': 'JfPjIRaIz-o'},
+      {'author': 'PKR Vibes Career & Growth',
+       'channel': 'PKR Vibes Career & Growth',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:16:03](https://www.youtube.com/watch?v=72PuS1BX6_s&t=963s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Remark code is a priority; by seeing the remark code we can find out the exact '
+               'potential cause of the claim.',
+       'timestamp': 963,
+       'timestamp_label': '[00:16:03]',
+       'timestamp_seconds': 963,
+       'tip': 'Remark code is a priority; by seeing the remark code we can find out the exact '
+              'potential cause of the claim.',
+       'title': '#DENIALCODE AND REMARK CODE IN MEDICAL BILLING #ushealthcare #REMARKCODES #CARC '
+                '#RARC #denialcodes',
+       'url': 'https://www.youtube.com/watch?v=72PuS1BX6_s&t=963s',
+       'video_id': '72PuS1BX6_s'},
+      {'author': 'Vikash Learning',
+       'channel': 'Vikash Learning',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:00](https://www.youtube.com/watch?v=MWf66u11yb8&t=120s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'CARC code CO45, RARC code M15: the CO45 code signifies that the procedure is not '
+               "covered by the patient's insurance policy.",
+       'timestamp': 120,
+       'timestamp_label': '[00:02:00]',
+       'timestamp_seconds': 120,
+       'tip': 'CARC code CO45, RARC code M15: the CO45 code signifies that the procedure is not '
+              "covered by the patient's insurance policy.",
+       'title': 'What is CARC, RARC, & 835 Healthcare Policy Identification Segment?',
+       'url': 'https://www.youtube.com/watch?v=MWf66u11yb8&t=120s',
+       'video_id': 'MWf66u11yb8'},
+      {'author': 'Health Weave RCM LLC',
+       'channel': 'Health Weave RCM LLC',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:18](https://www.youtube.com/watch?v=bPFE9F4Y_Y4&t=198s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'If you remember only one thing from this section, remember CO versus PR; getting '
+               'those two confused is how patients end up billed for write-offs.',
+       'timestamp': 198,
+       'timestamp_label': '[00:03:18]',
+       'timestamp_seconds': 198,
+       'tip': 'If you remember only one thing from this section, remember CO versus PR; getting '
+              'those two confused is how patients end up billed for write-offs.',
+       'title': 'EOB vs ERA CARC RARC Codes Explained | Medical Billing Class 4',
+       'url': 'https://www.youtube.com/watch?v=bPFE9F4Y_Y4&t=198s',
+       'video_id': 'bPFE9F4Y_Y4'},
+      {'author': 'Health Weave RCM LLC',
+       'channel': 'Health Weave RCM LLC',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:08:25](https://www.youtube.com/watch?v=bPFE9F4Y_Y4&t=505s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'If you bill the patient too early, you may collect money that the secondary '
+               'insurance would have paid, and then have to refund it.',
+       'timestamp': 505,
+       'timestamp_label': '[00:08:25]',
+       'timestamp_seconds': 505,
+       'tip': 'If you bill the patient too early, you may collect money that the secondary '
+              'insurance would have paid, and then have to refund it.',
+       'title': 'EOB vs ERA CARC RARC Codes Explained | Medical Billing Class 4',
+       'url': 'https://www.youtube.com/watch?v=bPFE9F4Y_Y4&t=505s',
+       'video_id': 'bPFE9F4Y_Y4'},
+      {'author': 'AarkNine Healthcare',
+       'channel': 'AarkNine Healthcare',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:09:24](https://www.youtube.com/watch?v=3HP5mg0UdCw&t=564s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'If a claim is submitted even one day after that deadline, the payer will deny it, '
+               'and CARC 29 is the flag for that denial.',
+       'timestamp': 564,
+       'timestamp_label': '[00:09:24]',
+       'timestamp_seconds': 564,
+       'tip': 'If a claim is submitted even one day after that deadline, the payer will deny it, '
+              'and CARC 29 is the flag for that denial.',
+       'title': 'CARC & RARC Adjustment and Denial codes ll Medical claim denial & management ll '
+                'adjustment #rcm',
+       'url': 'https://www.youtube.com/watch?v=3HP5mg0UdCw&t=564s',
+       'video_id': '3HP5mg0UdCw'},
+      {'author': 'Inlera University',
+       'channel': 'Inlera University',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:01](https://www.youtube.com/watch?v=-zx82Gn2h04&t=241s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Very often when we see the paid amount of zero we make the assumption that the '
+               "claim has been denied, but in today's examples these claims are actually applying "
+               "towards the patient's deductibles.",
+       'timestamp': 241,
+       'timestamp_label': '[00:04:01]',
+       'timestamp_seconds': 241,
+       'tip': 'Very often when we see the paid amount of zero we make the assumption that the '
+              "claim has been denied, but in today's examples these claims are actually applying "
+              "towards the patient's deductibles.",
+       'title': 'How to Read an Explanation of Benefits (EOB) & Electronic Remittance Advice (ERA) '
+                'in US Healthcare',
+       'url': 'https://www.youtube.com/watch?v=-zx82Gn2h04&t=241s',
+       'video_id': '-zx82Gn2h04'},
+      {'author': 'JobRath',
+       'channel': 'JobRath',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:24](https://www.youtube.com/watch?v=I__wJbnhlTw&t=144s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Imagine the CPT code is correct, but the diagnosis pointer is incorrect, or the '
+               'rendering provider NPI is missing or invalid.',
+       'timestamp': 144,
+       'timestamp_label': '[00:02:24]',
+       'timestamp_seconds': 144,
+       'tip': 'Imagine the CPT code is correct, but the diagnosis pointer is incorrect, or the '
+              'rendering provider NPI is missing or invalid.',
+       'title': 'What Is CMS-1500 Form in Medical Billing? How to Read It for Denial Handling? '
+                '#medicalbilling #rcm',
+       'url': 'https://www.youtube.com/watch?v=I__wJbnhlTw&t=144s',
+       'video_id': 'I__wJbnhlTw'},
+      {'author': 'InfiMed Health',
+       'channel': 'InfiMed Health',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:06](https://www.youtube.com/watch?v=uO7nW5fy5Y4&t=126s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'First: posted means proven. A payment only counts as reconciled once the '
+               'remittance, the account and the deposit agree.',
+       'timestamp': 126,
+       'timestamp_label': '[00:02:06]',
+       'timestamp_seconds': 126,
+       'tip': 'First: posted means proven. A payment only counts as reconciled once the '
+              'remittance, the account and the deposit agree.',
+       'title': 'Payment Posting and Reconciliation Explained: From 835 to Bank Deposit',
+       'url': 'https://www.youtube.com/watch?v=uO7nW5fy5Y4&t=126s',
+       'video_id': 'uO7nW5fy5Y4'},
+      {'author': 'MediBill Pro',
+       'channel': 'MediBill Pro',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:52](https://www.youtube.com/watch?v=JpGm6Pmzrk8&t=52s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Claim not accepted due to errors, this is basically a rejection.',
+       'timestamp': 52,
+       'timestamp_label': '[00:00:52]',
+       'timestamp_seconds': 52,
+       'tip': 'Claim not accepted due to errors, this is basically a rejection.',
+       'title': 'Medical Billing Jobs Interview Q&A | Rejection vs Copay vs Deductible Explained '
+                '(2026 Guide)',
+       'url': 'https://www.youtube.com/watch?v=JpGm6Pmzrk8&t=52s',
+       'video_id': 'JpGm6Pmzrk8'},
+      {'author': 'Medical Billing Maven',
+       'channel': 'Medical Billing Maven',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:10:22](https://www.youtube.com/watch?v=GhRz1M9lxtc&t=622s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'When I get those remittance advice that are kind of off from these smaller '
+               "insurance companies, sometimes it's hard to read and I have to call a "
+               "representative for them to explain to me what's going on.",
+       'timestamp': 622,
+       'timestamp_label': '[00:10:22]',
+       'timestamp_seconds': 622,
+       'tip': 'When I get those remittance advice that are kind of off from these smaller '
+              "insurance companies, sometimes it's hard to read and I have to call a "
+              "representative for them to explain to me what's going on.",
+       'title': 'ELECTRONIC REMITTANCE ADVICE IN MEDICAL BILLING |WHAT ARE EOBs, RAs AND ERAs | '
+                'BACK TO BASICS PART 3',
+       'url': 'https://www.youtube.com/watch?v=GhRz1M9lxtc&t=622s',
+       'video_id': 'GhRz1M9lxtc'},
+      {'author': 'Michael Roberts',
+       'channel': 'Michael Roberts',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:04](https://www.youtube.com/watch?v=HolIPG8-TV8&t=124s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Watch for PLB near the end; it takes money from the whole payment, like this $25 '
+               'overpayment recovery, and it is easy to miss and it is why a check can be smaller '
+               'than its claims.',
+       'timestamp': 124,
+       'timestamp_label': '[00:02:04]',
+       'timestamp_seconds': 124,
+       'tip': 'Watch for PLB near the end; it takes money from the whole payment, like this $25 '
+              'overpayment recovery, and it is easy to miss and it is why a check can be smaller '
+              'than its claims.',
+       'title': '835 ERA Line by Line    and introducing Professor Remit',
+       'url': 'https://www.youtube.com/watch?v=HolIPG8-TV8&t=124s',
+       'video_id': 'HolIPG8-TV8'},
+      {'author': 'RCMOpsPro',
+       'channel': 'RCMOpsPro',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:10](https://www.youtube.com/watch?v=Y-cwIjpRq9w&t=70s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'If a doctor bills a CMS 1500 with an inpatient POS code, but the hospital forgets '
+               'to bill the matching UB-04, the payer will flag the mismatch and deny both claims '
+               'instantly.',
+       'timestamp': 70,
+       'timestamp_label': '[00:01:10]',
+       'timestamp_seconds': 70,
+       'tip': 'If a doctor bills a CMS 1500 with an inpatient POS code, but the hospital forgets '
+              'to bill the matching UB-04, the payer will flag the mismatch and deny both claims '
+              'instantly.',
+       'title': 'CMS-1500 vs. UB-04 Explained: Mastering the Architecture of Billing | Created by '
+                'Diego Samson',
+       'url': 'https://www.youtube.com/watch?v=Y-cwIjpRq9w&t=70s',
+       'video_id': 'Y-cwIjpRq9w'},
+      {'author': 'RCMPRO',
+       'channel': 'RCMPRO',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:08:32](https://www.youtube.com/watch?v=6Lc5iQMx35E&t=512s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Field 21 lists the diagnoses, field 24D lists the procedures, and field 24E '
+               'connects them; getting this connection right is critical for clean claims.',
+       'timestamp': 512,
+       'timestamp_label': '[00:08:32]',
+       'timestamp_seconds': 512,
+       'tip': 'Field 21 lists the diagnoses, field 24D lists the procedures, and field 24E '
+              'connects them; getting this connection right is critical for clean claims.',
+       'title': 'CMS-1500 Claim Form Explained | Complete Guide to Medical Billing | RCMPRO',
+       'url': 'https://www.youtube.com/watch?v=6Lc5iQMx35E&t=512s',
+       'video_id': '6Lc5iQMx35E'},
+      {'author': 'The Claim Game X Practice Solutions',
+       'channel': 'The Claim Game X Practice Solutions',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:08:18](https://www.youtube.com/watch?v=FE6Ns41GFH0&t=498s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "That missing $10 is usually buried in something called a PLB segment; it's a "
+               'provider level adjustment at the bottom of the ERA.',
+       'timestamp': 498,
+       'timestamp_label': '[00:08:18]',
+       'timestamp_seconds': 498,
+       'tip': "That missing $10 is usually buried in something called a PLB segment; it's a "
+              'provider level adjustment at the bottom of the ERA.',
+       'title': 'Episode 29: Revenue Cycle Management Explained: Remittances, ERAs, and Portals',
+       'url': 'https://www.youtube.com/watch?v=FE6Ns41GFH0&t=498s',
+       'video_id': 'FE6Ns41GFH0'},
+      {'author': 'The Claim Game X Practice Solutions',
+       'channel': 'The Claim Game X Practice Solutions',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:13:53](https://www.youtube.com/watch?v=b2mkUKtTWnE&t=833s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "When you're dealing with the kind of volume that some of you are doing, 75 cents "
+               'or a dollar makes a giant difference.',
+       'timestamp': 833,
+       'timestamp_label': '[00:13:53]',
+       'timestamp_seconds': 833,
+       'tip': "When you're dealing with the kind of volume that some of you are doing, 75 cents or "
+              'a dollar makes a giant difference.',
+       'title': 'Revenue Cycle Management Explained: Remittances, ERAs, and Portals',
+       'url': 'https://www.youtube.com/watch?v=b2mkUKtTWnE&t=833s',
+       'video_id': 'b2mkUKtTWnE'},
+      {'author': 'RCMOpsPro',
+       'channel': 'RCMOpsPro',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:03](https://www.youtube.com/watch?v=0ElxFXefBcA&t=63s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'If the system mapping is not perfectly configured, clean clinical data instantly '
+               'turns into garbage electronic data.',
        'timestamp': 63,
        'timestamp_label': '[00:01:03]',
        'timestamp_seconds': 63,
-       'tip': 'The initial authorization request is denied by insurance provider for medical '
-              'necessity. Our AI appeal agent drafts an overturn letter, referencing NCCN and '
-              'insurance-specific guidelines, which is reviewed by the oncologist and '
-              'submitted.',
-       'title': 'How 9 AI Agents Automate the Entire Revenue Cycle | RCM by NTT DATA Demo (NTT '
-                'DATA North America)',
-       'url': 'https://www.youtube.com/watch?v=xJZ_wqqTQhY&t=63s',
+       'tip': 'If the system mapping is not perfectly configured, clean clinical data instantly '
+              'turns into garbage electronic data.',
+       'title': 'The Claim Drop: Translating the EHR to the 837 Claim File | Created by Diego '
+                'Samson',
+       'url': 'https://www.youtube.com/watch?v=0ElxFXefBcA&t=63s',
+       'video_id': '0ElxFXefBcA'}],
+ 12: [{'author': 'Modern Healthcare Finance & RCM',
+       'channel': 'Modern Healthcare Finance & RCM',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:08](https://www.youtube.com/watch?v=nQA0SW59EWQ&t=248s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Now, if your average length of stay is too short, that can be an indicator of '
+               'quality problems, which you would likely see reflected in other measures such as '
+               'avoidable readmissions.',
+       'timestamp': 248,
+       'timestamp_label': '[00:04:08]',
+       'timestamp_seconds': 248,
+       'tip': 'Now, if your average length of stay is too short, that can be an indicator of '
+              'quality problems, which you would likely see reflected in other measures such as '
+              'avoidable readmissions.',
+       'title': 'Hospital Metrics Explained: Patient Days, ADC, ALOS, Adjusted Discharges, Case '
+                'Mix Index (8 Minutes)',
+       'url': 'https://www.youtube.com/watch?v=nQA0SW59EWQ&t=248s',
+       'video_id': 'nQA0SW59EWQ'},
+      {'author': 'Guidehouse',
+       'channel': 'Guidehouse',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:22](https://www.youtube.com/watch?v=VQBtuhx0a5U&t=82s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'We can generate 25 to 3500 appeals in a week which is phenomenally greater than a '
+               'human reviewer.',
+       'timestamp': 82,
+       'timestamp_label': '[00:01:22]',
+       'timestamp_seconds': 82,
+       'tip': 'We can generate 25 to 3500 appeals in a week which is phenomenally greater than a '
+              'human reviewer.',
+       'title': 'AI Agents for Revenue Cycle: Medical Necessity Appeal Agent — RCM Denial Recovery '
+                'Automation',
+       'url': 'https://www.youtube.com/watch?v=VQBtuhx0a5U&t=82s',
+       'video_id': 'VQBtuhx0a5U'},
+      {'author': 'KandR BILLING & AI RCM SOFTWARE',
+       'channel': 'KandR BILLING & AI RCM SOFTWARE',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:25](https://www.youtube.com/watch?v=-yVkokS2iaE&t=205s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'This eliminates manual denial interpretation and reduces processing time '
+               'significantly.',
+       'timestamp': 205,
+       'timestamp_label': '[00:03:25]',
+       'timestamp_seconds': 205,
+       'tip': 'This eliminates manual denial interpretation and reduces processing time '
+              'significantly.',
+       'title': 'RCM Software Workflow Demo | AI-Powered AR Automation for Healthcare',
+       'url': 'https://www.youtube.com/watch?v=-yVkokS2iaE&t=205s',
+       'video_id': '-yVkokS2iaE'},
+      {'author': 'NTT DATA North America',
+       'channel': 'NTT DATA North America',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:14](https://www.youtube.com/watch?v=xJZ_wqqTQhY&t=74s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'The appeal is approved in just 10 days, as documented step-by-step in the '
+               'platform.',
+       'timestamp': 74,
+       'timestamp_label': '[00:01:14]',
+       'timestamp_seconds': 74,
+       'tip': 'The appeal is approved in just 10 days, as documented step-by-step in the platform.',
+       'title': 'How 9 AI Agents Automate the Entire Revenue Cycle | RCM by NTT DATA Demo',
+       'url': 'https://www.youtube.com/watch?v=xJZ_wqqTQhY&t=74s',
        'video_id': 'xJZ_wqqTQhY'},
       {'author': 'AGS Health',
        'channel': 'AGS Health',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:57](https://www.youtube.com/watch?v=x0zeGvoXqsc&t=237s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q10 operational verification).',
+       'markdown': '[00:06:15](https://www.youtube.com/watch?v=x0zeGvoXqsc&t=375s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'And so this AI agent is navigating the IVR, inputting all the right '
-               'information like claim ID and others, listening to Mozart and Bach for like 35 '
-               "minutes while they're there on the while it's on the whole time.",
-       'timestamp': 237,
-       'timestamp_label': '[00:03:57]',
-       'timestamp_seconds': 237,
-       'tip': 'And so this AI agent is navigating the IVR, inputting all the right information '
-              'like claim ID and others, listening to Mozart and Bach for like 35 minutes '
-              "while they're there on the while it's on the whole time.",
-       'title': "Agentic Automation And Why It's Transforming Healthcare RCM - AGS Health (AGS "
-                'Health)',
-       'url': 'https://www.youtube.com/watch?v=x0zeGvoXqsc&t=237s',
+       'text': "They've made good money, it's given productivity, it's given good quality, but "
+               'that kind of automation usually is not repeatable and scalable.',
+       'timestamp': 375,
+       'timestamp_label': '[00:06:15]',
+       'timestamp_seconds': 375,
+       'tip': "They've made good money, it's given productivity, it's given good quality, but that "
+              'kind of automation usually is not repeatable and scalable.',
+       'title': "Agentic Automation And Why It's Transforming Healthcare RCM - AGS Health",
+       'url': 'https://www.youtube.com/watch?v=x0zeGvoXqsc&t=375s',
        'video_id': 'x0zeGvoXqsc'},
-      {'author': 'Jan Miller - Student Loan Consultant',
-       'channel': 'Jan Miller - Student Loan Consultant',
+      {'author': 'Innobot Health',
+       'channel': 'Innobot Health',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:03](https://www.youtube.com/watch?v=nJ_2pYeUX80&t=123s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q10 operational verification).',
+       'markdown': '[00:22:36](https://www.youtube.com/watch?v=uMy2M4PPrMU&t=1356s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "'s been there and um you know most people don't stay at the same loan serer "
-               'through the duration of their payment. So that information will likely only be '
-               "at studentaid. 're the people forgive the loan after a certain amount of time "
-               'anyway.',
-       'timestamp': 123,
-       'timestamp_label': '[00:02:03]',
-       'timestamp_seconds': 123,
-       'tip': "'s been there and um you know most people don't stay at the same loan serer "
-              'through the duration of their payment. So that information will likely only be '
-              "at studentaid. 're the people forgive the loan after a certain amount of time "
-              'anyway.',
-       'title': 'IDR Payment Count Hack (Jan Miller - Student Loan Consultant)',
-       'url': 'https://www.youtube.com/watch?v=nJ_2pYeUX80&t=123s',
-       'video_id': 'nJ_2pYeUX80'},
-      {'author': "Becker's Hospital Review",
-       'channel': "Becker's Hospital Review",
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:23:21](https://www.youtube.com/watch?v=7h4H8g1S01E&t=1401s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Amount in this case you cannot bail two patients for the discounted amount '
-               'because you have come to an agreement with a vendor but I also want to '
-               'mention.',
-       'timestamp': 1401,
-       'timestamp_label': '[00:23:21]',
-       'timestamp_seconds': 1401,
-       'tip': 'Amount in this case you cannot bail two patients for the discounted amount '
-              'because you have come to an agreement with a vendor but I also want to mention.',
-       'title': "Out-of-Network: Frequently Asked Questions (Becker's Hospital Review)",
-       'url': 'https://www.youtube.com/watch?v=7h4H8g1S01E&t=1401s',
-       'video_id': '7h4H8g1S01E'},
-      {'author': 'The Claim Game X Practice Solutions',
-       'channel': 'The Claim Game X Practice Solutions',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:07:35](https://www.youtube.com/watch?v=b2mkUKtTWnE&t=455s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'And in our guide to the components of an ERRA, we break down how this file '
-               'differs from the paper version. The biggest difference between an electronic '
-               "remittance advice and an explanation of benefits is speed. Then there's the "
-               'component of automation.',
-       'timestamp': 455,
-       'timestamp_label': '[00:07:35]',
-       'timestamp_seconds': 455,
-       'tip': 'And in our guide to the components of an ERRA, we break down how this file '
-              'differs from the paper version. The biggest difference between an electronic '
-              "remittance advice and an explanation of benefits is speed. Then there's the "
-              'component of automation.',
-       'title': 'Revenue Cycle Management Explained: Remittances, ERAs, and Portals (The Claim '
-                'Game X Practice Solutions)',
-       'url': 'https://www.youtube.com/watch?v=b2mkUKtTWnE&t=455s',
-       'video_id': 'b2mkUKtTWnE'},
-      {'author': 'LandingAI',
-       'channel': 'LandingAI',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:07:44](https://www.youtube.com/watch?v=SE4fu2hvD94&t=464s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Um the manual review burden. Uh I think we see a lot of automation pipelines '
-               'where folks are still needing to do a ton of manual review. So again this '
-               'comes back to um accuracy of the extraction um and then inefficiency as well.',
-       'timestamp': 464,
-       'timestamp_label': '[00:07:44]',
-       'timestamp_seconds': 464,
-       'tip': 'Um the manual review burden. Uh I think we see a lot of automation pipelines '
-              'where folks are still needing to do a ton of manual review. So again this comes '
-              'back to um accuracy of the extraction um and then inefficiency as well.',
-       'title': 'How AI Is Transforming High-Volume Document Workflows at Scale in Healthcare '
-                'RCM (LandingAI)',
-       'url': 'https://www.youtube.com/watch?v=SE4fu2hvD94&t=464s',
-       'video_id': 'SE4fu2hvD94'},
-      {'author': 'PayerWatch',
-       'channel': 'PayerWatch',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:54:58](https://www.youtube.com/watch?v=cePrn8Rhav8&t=3298s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Said there was a September study from last year that's more relevant that's "
-               'what you need to be using great the next question is going to be what are your '
-               'thoughts on us utilizing AI to work denials and write appeal.',
-       'timestamp': 3298,
-       'timestamp_label': '[00:54:58]',
-       'timestamp_seconds': 3298,
-       'tip': "Said there was a September study from last year that's more relevant that's "
-              'what you need to be using great the next question is going to be what are your '
-              'thoughts on us utilizing AI to work denials and write appeal.',
-       'title': 'Revenue Cycle 101 (PayerWatch)',
-       'url': 'https://www.youtube.com/watch?v=cePrn8Rhav8&t=3298s',
-       'video_id': 'cePrn8Rhav8'},
-      {'author': 'Jarod Carter',
-       'channel': 'Jarod Carter',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:00](https://www.youtube.com/watch?v=cA7tBJf4KyY&t=240s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Needed information so again download that free template and make sure that '
-               'your super bills are set up for success or setting your patients up for '
-               'Success.',
-       'timestamp': 240,
-       'timestamp_label': '[00:04:00]',
-       'timestamp_seconds': 240,
-       'tip': 'Needed information so again download that free template and make sure that your '
-              'super bills are set up for success or setting your patients up for Success.',
-       'title': 'Top 4 Out-of-Network Billing & Superbill Tips (Jarod Carter)',
-       'url': 'https://www.youtube.com/watch?v=cA7tBJf4KyY&t=240s',
-       'video_id': 'cA7tBJf4KyY'},
-      {'author': 'Bethel Law',
-       'channel': 'Bethel Law',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:21](https://www.youtube.com/watch?v=q3heX6QnFfo&t=381s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Waters and medical billing I'm attorney Andrew bethl and I'm here to help you "
-               "make sense of the laws that impact your life I'll catch you in the next video.",
-       'timestamp': 381,
-       'timestamp_label': '[00:06:21]',
-       'timestamp_seconds': 381,
-       'tip': "Waters and medical billing I'm attorney Andrew bethl and I'm here to help you "
-              "make sense of the laws that impact your life I'll catch you in the next video.",
-       'title': 'How the No Surprises Act is Saving You From Billing Shocks! (Bethel Law)',
-       'url': 'https://www.youtube.com/watch?v=q3heX6QnFfo&t=381s',
-       'video_id': 'q3heX6QnFfo'},
-      {'author': 'Azeem khan Watanyar Official',
-       'channel': 'Azeem khan Watanyar Official',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=RhNPFe6U8iU&t=15s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'व्हेन अ पेयर और पेशेंट पेज़ मोर देन द बिल्ट और अलाउड अमाउंट। ओवरपेमेंट क्या है? '
-               'जब इंश्योरेंस या पेशेंट जो अलाउड अमाउंट होती है उनसे अगर ज्यादा अमाउंट पे.',
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': 'व्हेन अ पेयर और पेशेंट पेज़ मोर देन द बिल्ट और अलाउड अमाउंट। ओवरपेमेंट क्या है? '
-              'जब इंश्योरेंस या पेशेंट जो अलाउड अमाउंट होती है उनसे अगर ज्यादा अमाउंट पे.',
-       'title': 'What is the difference between overpayment and underpayment in medical '
-                'billing (Azeem khan Watanyar Official)',
-       'url': 'https://www.youtube.com/watch?v=RhNPFe6U8iU&t=15s',
-       'video_id': 'RhNPFe6U8iU'}],
- 11: [{'author': 'Xpert Billing Talk',
-       'channel': 'Xpert Billing Talk',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:53](https://www.youtube.com/watch?v=g3C-DoM_9CI&t=233s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Which just proves your team actually needs a robust calendar-based tool to '
-               'calculate exact business days, not manual counting. Manual counting is a '
-               'recipe for disaster. And there is a secondary deadline coming up fast after '
-               'this, right? Keep your eye on January 15, 2027.',
-       'timestamp': 233,
-       'timestamp_label': '[00:03:53]',
-       'timestamp_seconds': 233,
-       'tip': 'Which just proves your team actually needs a robust calendar-based tool to '
-              'calculate exact business days, not manual counting. Manual counting is a recipe '
-              'for disaster. And there is a secondary deadline coming up fast after this, '
-              'right? Keep your eye on January 15, 2027.',
-       'title': 'Federal IDR Changes Nov. 1, 2026: Radiology Batching & Deadlines (Xpert '
-                'Billing Talk)',
-       'url': 'https://www.youtube.com/watch?v=g3C-DoM_9CI&t=233s',
-       'video_id': 'g3C-DoM_9CI'},
-      {'author': 'Jentry Harris',
-       'channel': 'Jentry Harris',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:21](https://www.youtube.com/watch?v=LNSPlo2_U3c&t=21s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'The No Surprises Act protects members from balance billing when they receive '
-               'emergency care or unknowingly receive out of network services at an in-et '
-               'network facility. Think ER visits, air ambulance, or an anesthesiologist at an '
-               'in-et network hospital.',
-       'timestamp': 21,
-       'timestamp_label': '[00:00:21]',
-       'timestamp_seconds': 21,
-       'tip': 'The No Surprises Act protects members from balance billing when they receive '
-              'emergency care or unknowingly receive out of network services at an in-et '
-              'network facility. Think ER visits, air ambulance, or an anesthesiologist at an '
-              'in-et network hospital.',
-       'title': 'The No Surprises Act (NSA) and Independent Dispute Resolution (IDR) (Jentry '
-                'Harris)',
-       'url': 'https://www.youtube.com/watch?v=LNSPlo2_U3c&t=21s',
-       'video_id': 'LNSPlo2_U3c'},
-      {'author': 'HealthWatch Wisconsin',
-       'channel': 'HealthWatch Wisconsin',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:32](https://www.youtube.com/watch?v=MsP7ttGr9OA&t=32s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "'re at an out-of-network facility. There is a notable exception and that is "
-               'ground ambulances. The No Surprises Act included some new protections for '
-               'folks getting air ambulance bills, but it did not include protection for '
-               'ground ambulance bills.',
-       'timestamp': 32,
-       'timestamp_label': '[00:00:32]',
-       'timestamp_seconds': 32,
-       'tip': "'re at an out-of-network facility. There is a notable exception and that is "
-              'ground ambulances. The No Surprises Act included some new protections for folks '
-              'getting air ambulance bills, but it did not include protection for ground '
-              'ambulance bills.',
-       'title': 'Quick Take: No Surprises Act: Out of Network Charges (HealthWatch Wisconsin)',
-       'url': 'https://www.youtube.com/watch?v=MsP7ttGr9OA&t=32s',
-       'video_id': 'MsP7ttGr9OA'},
-      {'author': 'Long Reads, Explained',
-       'channel': 'Long Reads, Explained',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:10:17](https://www.youtube.com/watch?v=cSaC2n-3r9o&t=617s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'And it says the average award is more than five times the qualifying payment '
-               'amount, which is the benchmark rate used in these disputes. Individual cases '
-               'make those multiples concrete.',
-       'timestamp': 617,
-       'timestamp_label': '[00:10:17]',
-       'timestamp_seconds': 617,
-       'tip': 'And it says the average award is more than five times the qualifying payment '
-              'amount, which is the benchmark rate used in these disputes. Individual cases '
-              'make those multiples concrete.',
-       'title': 'No Surprises Act arbitration is driving 2027 premium spike (Long Reads, '
-                'Explained)',
-       'url': 'https://www.youtube.com/watch?v=cSaC2n-3r9o&t=617s',
-       'video_id': 'cSaC2n-3r9o'},
-      {'author': 'American Medical Association (AMA)',
-       'channel': 'American Medical Association (AMA)',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:10:11](https://www.youtube.com/watch?v=YJ1Bgt_KIyw&t=611s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Congress and still place a thumb on the scale in favor of health plans. So on '
-               'September 22, the Texas Medical Association filed a new lawsuit in the same '
-               'federal court in Texas arguing that the final rules still suffer from the same '
-               'problems as the interim final rules.',
-       'timestamp': 611,
-       'timestamp_label': '[00:10:11]',
-       'timestamp_seconds': 611,
-       'tip': 'Congress and still place a thumb on the scale in favor of health plans. So on '
-              'September 22, the Texas Medical Association filed a new lawsuit in the same '
-              'federal court in Texas arguing that the final rules still suffer from the same '
-              'problems as the interim final rules.',
-       'title': 'What physicians need to know about the No Surprises Act with Emily Carroll, '
-                'JD & George Cox, JD (American Medical Association (AMA))',
-       'url': 'https://www.youtube.com/watch?v=YJ1Bgt_KIyw&t=611s',
-       'video_id': 'YJ1Bgt_KIyw'},
-      {'author': 'Apex IONM Solutions',
-       'channel': 'Apex IONM Solutions',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:34](https://www.youtube.com/watch?v=EE3aFeVfLnk&t=34s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'This ignores all kinds of context. The qualified payment amount or QPA in an '
-               'arbitration setting is supposed to be the median contracted rate for a given '
-               "service that's identified by its billing code.",
-       'timestamp': 34,
-       'timestamp_label': '[00:00:34]',
-       'timestamp_seconds': 34,
-       'tip': 'This ignores all kinds of context. The qualified payment amount or QPA in an '
-              'arbitration setting is supposed to be the median contracted rate for a given '
-              "service that's identified by its billing code.",
-       'title': 'Insurers Say the No Surprises Act Is Paying Providers Too Much (Apex IONM '
-                'Solutions)',
-       'url': 'https://www.youtube.com/watch?v=EE3aFeVfLnk&t=34s',
-       'video_id': 'EE3aFeVfLnk'},
+       'text': 'For example, it flagged an auth not obtained denial spike of 18% for Aetna in July '
+               'compared to the prior three-month average.',
+       'timestamp': 1356,
+       'timestamp_label': '[00:22:36]',
+       'timestamp_seconds': 1356,
+       'tip': 'For example, it flagged an auth not obtained denial spike of 18% for Aetna in July '
+              'compared to the prior three-month average.',
+       'title': 'Inside IRIS: A Full Tour of the Platform That Runs Your Revenue Cycle',
+       'url': 'https://www.youtube.com/watch?v=uMy2M4PPrMU&t=1356s',
+       'video_id': 'uMy2M4PPrMU'},
       {'author': 'OpenBots',
        'channel': 'OpenBots',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:41](https://www.youtube.com/watch?v=ZpELLvKSrF8&t=101s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q11 operational verification).',
+       'markdown': '[00:36:03](https://www.youtube.com/watch?v=ZpELLvKSrF8&t=2163s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "So yeah, I'm very excited once again to give a quick introduction about "
-               "myself. Like Gabe said, uh my name is Ronaldo Banerjee. I'm the associate "
-               'director of healthcare automation solutions at Openbots.',
-       'timestamp': 101,
-       'timestamp_label': '[00:01:41]',
-       'timestamp_seconds': 101,
-       'tip': "So yeah, I'm very excited once again to give a quick introduction about myself. "
-              "Like Gabe said, uh my name is Ronaldo Banerjee. I'm the associate director of "
-              'healthcare automation solutions at Openbots.',
+       'text': 'And the stat that I read is that it takes $118 for every single denial to be '
+               'reworked upon.',
+       'timestamp': 2163,
+       'timestamp_label': '[00:36:03]',
+       'timestamp_seconds': 2163,
+       'tip': 'And the stat that I read is that it takes $118 for every single denial to be '
+              'reworked upon.',
        'title': 'Eligibility Verification in Healthcare with Agentic AI | #RCM #AIinHealthcare '
-                '#HealthcareAutomation (OpenBots)',
-       'url': 'https://www.youtube.com/watch?v=ZpELLvKSrF8&t=101s',
+                '#HealthcareAutomation',
+       'url': 'https://www.youtube.com/watch?v=ZpELLvKSrF8&t=2163s',
        'video_id': 'ZpELLvKSrF8'},
-      {'author': 'Jarod Carter',
-       'channel': 'Jarod Carter',
+      {'author': 'OpenBots',
+       'channel': 'OpenBots',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:18](https://www.youtube.com/watch?v=heiuukmxgss&t=138s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q11 operational verification).',
+       'markdown': '[00:25:41](https://www.youtube.com/watch?v=ZpELLvKSrF8&t=1541s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "Discount from based on our standard operating procedures you know whether it's "
-               'for packages for sliding scale for mates rates for the difference between a.',
-       'timestamp': 138,
-       'timestamp_label': '[00:02:18]',
-       'timestamp_seconds': 138,
-       'tip': "Discount from based on our standard operating procedures you know whether it's "
-              'for packages for sliding scale for mates rates for the difference between a.',
-       'title': 'Superbill Secrets for Cash Practice Packages - Out-of-Network Billing '
-                'Reimbursement Tips (Jarod Carter)',
-       'url': 'https://www.youtube.com/watch?v=heiuukmxgss&t=138s',
-       'video_id': 'heiuukmxgss'},
-      {'author': 'CMSHHSgov',
-       'channel': 'CMSHHSgov',
+       'text': "So, the reason specifically eligibility is that it's the easiest to automate and "
+               'the hardest to ignore.',
+       'timestamp': 1541,
+       'timestamp_label': '[00:25:41]',
+       'timestamp_seconds': 1541,
+       'tip': "So, the reason specifically eligibility is that it's the easiest to automate and "
+              'the hardest to ignore.',
+       'title': 'Eligibility Verification in Healthcare with Agentic AI | #RCM #AIinHealthcare '
+                '#HealthcareAutomation',
+       'url': 'https://www.youtube.com/watch?v=ZpELLvKSrF8&t=1541s',
+       'video_id': 'ZpELLvKSrF8'},
+      {'author': 'David Hood -- Practical AI Engineering',
+       'channel': 'David Hood -- Practical AI Engineering',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:32](https://www.youtube.com/watch?v=Vy31vkzfNBE&t=92s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q11 operational verification).',
+       'markdown': '[00:10:22](https://www.youtube.com/watch?v=A7ARXTSHAk0&t=622s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'After reviewing the information at the top of this page, the initiating party '
-               'should read this warning message and the security and privacy agreement. At '
-               'the bottom of this page, select the checkbox next to the Security and Privacy '
-               'Agreement.',
-       'timestamp': 92,
-       'timestamp_label': '[00:01:32]',
-       'timestamp_seconds': 92,
-       'tip': 'After reviewing the information at the top of this page, the initiating party '
-              'should read this warning message and the security and privacy agreement. At the '
-              'bottom of this page, select the checkbox next to the Security and Privacy '
-              'Agreement.',
-       'title': 'No Surprises Act: Notice of IDR Initiation - Resubmission Web Form Demo '
-                '(CMSHHSgov)',
-       'url': 'https://www.youtube.com/watch?v=Vy31vkzfNBE&t=92s',
-       'video_id': 'Vy31vkzfNBE'},
-      {'author': 'EDI PowerTools by EMS Healthcare Informatics',
-       'channel': 'EDI PowerTools by EMS Healthcare Informatics',
+       'text': 'I want to point out again the objective here is not 100% automation.',
+       'timestamp': 622,
+       'timestamp_label': '[00:10:22]',
+       'timestamp_seconds': 622,
+       'tip': 'I want to point out again the objective here is not 100% automation.',
+       'title': 'RCM Revenue Cycle Management Medical AI LLM Case Studies',
+       'url': 'https://www.youtube.com/watch?v=A7ARXTSHAk0&t=622s',
+       'video_id': 'A7ARXTSHAk0'},
+      {'author': 'Practical Data Solutions - Healthcare Analytics',
+       'channel': 'Practical Data Solutions - Healthcare Analytics',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:07:41](https://www.youtube.com/watch?v=JfPjIRaIz-o&t=461s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q11 operational verification).',
+       'markdown': '[00:18:40](https://www.youtube.com/watch?v=4SW5Ihdk8ps&t=1120s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "Secondary Claim by the payer so that's what that two means now let's just walk "
-               'through the rest o cpo3 is the total claim charged amount on the whole claim.',
-       'timestamp': 461,
-       'timestamp_label': '[00:07:41]',
-       'timestamp_seconds': 461,
-       'tip': "Secondary Claim by the payer so that's what that two means now let's just walk "
-              'through the rest o cpo3 is the total claim charged amount on the whole claim.',
-       'title': 'How to read an 835 Electronic Remittance File (EDI PowerTools by EMS '
-                'Healthcare Informatics)',
-       'url': 'https://www.youtube.com/watch?v=JfPjIRaIz-o&t=461s',
-       'video_id': 'JfPjIRaIz-o'},
-      {'author': 'First Healthcare Compliance',
-       'channel': 'First Healthcare Compliance',
+       'text': 'So if you have a 10 percent or 15 or 20 rejection rate or denial rate on that '
+               "claim you're actually paying the physicians more than you are collecting.",
+       'timestamp': 1120,
+       'timestamp_label': '[00:18:40]',
+       'timestamp_seconds': 1120,
+       'tip': 'So if you have a 10 percent or 15 or 20 rejection rate or denial rate on that claim '
+              "you're actually paying the physicians more than you are collecting.",
+       'title': '5 Best Practices of Revenue Cycle Analytics and Denials Management',
+       'url': 'https://www.youtube.com/watch?v=4SW5Ihdk8ps&t=1120s',
+       'video_id': '4SW5Ihdk8ps'},
+      {'author': 'HealthLeaders Media',
+       'channel': 'HealthLeaders Media',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:30:56](https://www.youtube.com/watch?v=uQSw1Ucy6L4&t=1856s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q11 operational verification).',
+       'markdown': '[01:00:19](https://www.youtube.com/watch?v=BKBNIfZ081U&t=3619s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'Would encourage you and your clients to reach out to their mac their medicare '
-               'audit contractor or a.',
-       'timestamp': 1856,
-       'timestamp_label': '[00:30:56]',
-       'timestamp_seconds': 1856,
-       'tip': 'Would encourage you and your clients to reach out to their mac their medicare '
-              'audit contractor or a.',
-       'title': 'The No Surprises Act - What You Need to Know (First Healthcare Compliance)',
-       'url': 'https://www.youtube.com/watch?v=uQSw1Ucy6L4&t=1856s',
-       'video_id': 'uQSw1Ucy6L4'},
-      {'author': 'Identification and Recruitment Consortium',
-       'channel': 'Identification and Recruitment Consortium',
+       'text': "If you are working with vendors, make sure they're providing that feedback loop to "
+               'you because their relationship with you should not be an annuity.',
+       'timestamp': 3619,
+       'timestamp_label': '[01:00:19]',
+       'timestamp_seconds': 3619,
+       'tip': "If you are working with vendors, make sure they're providing that feedback loop to "
+              'you because their relationship with you should not be an annuity.',
+       'title': 'Revenue Cycle NOW: Strengthening Back-End Performance',
+       'url': 'https://www.youtube.com/watch?v=BKBNIfZ081U&t=3619s',
+       'video_id': 'BKBNIfZ081U'},
+      {'author': 'HealthLeaders Media',
+       'channel': 'HealthLeaders Media',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:19:02](https://www.youtube.com/watch?v=wAiC4TUQNvs&t=1142s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q11 operational verification).',
+       'markdown': '[00:33:32](https://www.youtube.com/watch?v=BKBNIfZ081U&t=2012s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'Amacholi, Florida to Pit County, North Carolina on April 4th, 2026 to plant '
-               'tobacco. She got work planning tobacco and after the planting season ended in '
-               'June, Rosa heard of strawberry work in Tennessee and moved her family there '
-               'July 12th, 2026.',
-       'timestamp': 1142,
-       'timestamp_label': '[00:19:02]',
-       'timestamp_seconds': 1142,
-       'tip': 'Amacholi, Florida to Pit County, North Carolina on April 4th, 2026 to plant '
-              'tobacco. She got work planning tobacco and after the planting season ended in '
-              'June, Rosa heard of strawberry work in Tennessee and moved her family there '
-              'July 12th, 2026.',
-       'title': 'IDR Scenarios- Title I, Part C (Identification and Recruitment Consortium)',
-       'url': 'https://www.youtube.com/watch?v=wAiC4TUQNvs&t=1142s',
-       'video_id': 'wAiC4TUQNvs'},
-      {'author': 'Remodel Health',
-       'channel': 'Remodel Health',
+       'text': "AI can't be the solver of all the problems if your processes aren't standardized.",
+       'timestamp': 2012,
+       'timestamp_label': '[00:33:32]',
+       'timestamp_seconds': 2012,
+       'tip': "AI can't be the solver of all the problems if your processes aren't standardized.",
+       'title': 'Revenue Cycle NOW: Strengthening Back-End Performance',
+       'url': 'https://www.youtube.com/watch?v=BKBNIfZ081U&t=2012s',
+       'video_id': 'BKBNIfZ081U'},
+      {'author': 'Athelas',
+       'channel': 'Athelas',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:36](https://www.youtube.com/watch?v=tNA4dmumP8o&t=336s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q11 operational verification).',
+       'markdown': '[00:02:00](https://www.youtube.com/watch?v=6p7H4Wqe_xQ&t=120s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "The course of time but we wanted to make sure it's on your radar be thinking "
-               "like a consumer when you're interacting with your health care because the time "
-               "is now when you're going to be able to have much better choices.",
-       'timestamp': 336,
-       'timestamp_label': '[00:05:36]',
-       'timestamp_seconds': 336,
-       'tip': "The course of time but we wanted to make sure it's on your radar be thinking "
-              "like a consumer when you're interacting with your health care because the time "
-              "is now when you're going to be able to have much better choices.",
-       'title': 'No Surprises Act: New Law to Protect Against Surprise Medical Bills (Remodel '
-                'Health)',
-       'url': 'https://www.youtube.com/watch?v=tNA4dmumP8o&t=336s',
-       'video_id': 'tNA4dmumP8o'},
-      {'author': 'The Private Practice Outsider',
-       'channel': 'The Private Practice Outsider',
+       'text': 'Meanwhile our rules engine is constantly ingesting and applying payment and '
+               'provider guidelines to prevent rejections and denials in the first place.',
+       'timestamp': 120,
+       'timestamp_label': '[00:02:00]',
+       'timestamp_seconds': 120,
+       'tip': 'Meanwhile our rules engine is constantly ingesting and applying payment and '
+              'provider guidelines to prevent rejections and denials in the first place.',
+       'title': 'Athelas | Revenue Cycle Management Demo',
+       'url': 'https://www.youtube.com/watch?v=6p7H4Wqe_xQ&t=120s',
+       'video_id': '6p7H4Wqe_xQ'},
+      {'author': 'MBC RCM',
+       'channel': 'MBC RCM',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:32](https://www.youtube.com/watch?v=TNKYk9V0ty8&t=152s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q11 operational verification).',
+       'markdown': '[00:06:43](https://www.youtube.com/watch?v=VoQc5Oh8ot4&t=403s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "That's when you choose not to balance bill your patient so I hope that cleared "
-               'it up if you have questions I can always do this on the computer so you can '
-               "see the actual numbers on a spreadsheet but best of luck I'll catch you on the "
-               'next video.',
-       'timestamp': 152,
-       'timestamp_label': '[00:02:32]',
-       'timestamp_seconds': 152,
-       'tip': "That's when you choose not to balance bill your patient so I hope that cleared "
-              'it up if you have questions I can always do this on the computer so you can see '
-              "the actual numbers on a spreadsheet but best of luck I'll catch you on the next "
-              'video.',
-       'title': 'Out of Network Billing [Coinsurance plus Balance Billing] Amount Explained '
-                '(The Private Practice Outsider)',
-       'url': 'https://www.youtube.com/watch?v=TNKYk9V0ty8&t=152s',
-       'video_id': 'TNKYk9V0ty8'},
-      {'author': 'The Phia Group, LLC',
-       'channel': 'The Phia Group, LLC',
+       'text': 'First, a paid claim in the same episode of care is your absolute strongest '
+               'evidence when disputing a records request.',
+       'timestamp': 403,
+       'timestamp_label': '[00:06:43]',
+       'timestamp_seconds': 403,
+       'tip': 'First, a paid claim in the same episode of care is your absolute strongest evidence '
+              'when disputing a records request.',
+       'title': 'Medical Billing Denials: The 45-Minute Strategy That Gets Results',
+       'url': 'https://www.youtube.com/watch?v=VoQc5Oh8ot4&t=403s',
+       'video_id': 'VoQc5Oh8ot4'},
+      {'author': 'Idea Usher',
+       'channel': 'Idea Usher',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:11:57](https://www.youtube.com/watch?v=ksxW878eWWk&t=717s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q11 operational verification).',
+       'markdown': '[00:03:41](https://www.youtube.com/watch?v=zULb0Uazje4&t=221s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'Um, Guardian Flight uh brought suit in federal court uh against the payor to '
-               'enforce a payment award that it was granted in arbitration.',
-       'timestamp': 717,
-       'timestamp_label': '[00:11:57]',
-       'timestamp_seconds': 717,
-       'tip': 'Um, Guardian Flight uh brought suit in federal court uh against the payor to '
-              'enforce a payment award that it was granted in arbitration.',
-       'title': 'Empowering Plans: P235 – The Latest No Surprises Act Developments: A 2026 '
-                'Reality Check for TPAs (The Phia Group, LLC)',
-       'url': 'https://www.youtube.com/watch?v=ksxW878eWWk&t=717s',
-       'video_id': 'ksxW878eWWk'}],
- 12: [{'author': 'Inlera University',
-       'channel': 'Inlera University',
+       'text': 'Overall, a basic system can cost you between $10,000 and $30,000.',
+       'timestamp': 221,
+       'timestamp_label': '[00:03:41]',
+       'timestamp_seconds': 221,
+       'tip': 'Overall, a basic system can cost you between $10,000 and $30,000.',
+       'title': 'How to Build Medical Billing & Claim Software [2026] | Medical Billing Software '
+                'Development',
+       'url': 'https://www.youtube.com/watch?v=zULb0Uazje4&t=221s',
+       'video_id': 'zULb0Uazje4'},
+      {'author': 'LandingAI',
+       'channel': 'LandingAI',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:47:57](https://www.youtube.com/watch?v=RvLjKE1S1eU&t=2877s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q12 operational verification).',
+       'markdown': '[00:28:10](https://www.youtube.com/watch?v=SE4fu2hvD94&t=1690s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "'re going to start seeing a really smooth revenue cycle if you're touching "
-               "those rejections daily. So, when we're looking at reconciling, we are "
-               "balancing our day, our week, and our month. We're looking at the totals of all "
-               'of those things.',
-       'timestamp': 2877,
-       'timestamp_label': '[00:47:57]',
-       'timestamp_seconds': 2877,
-       'tip': "'re going to start seeing a really smooth revenue cycle if you're touching "
-              "those rejections daily. So, when we're looking at reconciling, we are balancing "
-              "our day, our week, and our month. We're looking at the totals of all of those "
-              'things.',
-       'title': 'Revenue Cycle Management & Recommended Workflow Part 3 | Medical Billers '
-                'Network Live (Inlera University)',
-       'url': 'https://www.youtube.com/watch?v=RvLjKE1S1eU&t=2877s',
-       'video_id': 'RvLjKE1S1eU'},
-      {'author': 'New Hampshire Insurance Department',
-       'channel': 'New Hampshire Insurance Department',
+       'text': 'The key element there is the zero data retention.',
+       'timestamp': 1690,
+       'timestamp_label': '[00:28:10]',
+       'timestamp_seconds': 1690,
+       'tip': 'The key element there is the zero data retention.',
+       'title': 'How AI Is Transforming High-Volume Document Workflows at Scale in Healthcare RCM',
+       'url': 'https://www.youtube.com/watch?v=SE4fu2hvD94&t=1690s',
+       'video_id': 'SE4fu2hvD94'},
+      {'author': 'RCM Pulse Academy',
+       'channel': 'RCM Pulse Academy',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:18:35](https://www.youtube.com/watch?v=C6hIoQuEWeA&t=1115s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q12 operational verification).',
+       'markdown': '[00:18:57](https://www.youtube.com/watch?v=Ut5VjfFul68&t=1137s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'You mentioned that the IDR initiation needs to take place within four days '
-               'following the close of the open negotiation process or four days before the '
-               'end of the open negotiation process. So you tack on those four days after the '
-               '20th day you start counting.',
-       'timestamp': 1115,
-       'timestamp_label': '[00:18:35]',
-       'timestamp_seconds': 1115,
-       'tip': 'You mentioned that the IDR initiation needs to take place within four days '
-              'following the close of the open negotiation process or four days before the end '
-              'of the open negotiation process. So you tack on those four days after the 20th '
-              'day you start counting.',
-       'title': 'Explaining the Independent Dispute Resolution Process in New Hampshire (New '
-                'Hampshire Insurance Department)',
-       'url': 'https://www.youtube.com/watch?v=C6hIoQuEWeA&t=1115s',
-       'video_id': 'C6hIoQuEWeA'},
-      {'author': 'Unfiltered Money Labs',
-       'channel': 'Unfiltered Money Labs',
+       'text': 'Nobody releases a held claim just because a deadline feels close.',
+       'timestamp': 1137,
+       'timestamp_label': '[00:18:57]',
+       'timestamp_seconds': 1137,
+       'tip': 'Nobody releases a held claim just because a deadline feels close.',
+       'title': 'U.S. Prior Authorization Denials: MRI Order to Claim (CARC 197, 302, 296, 284)',
+       'url': 'https://www.youtube.com/watch?v=Ut5VjfFul68&t=1137s',
+       'video_id': 'Ut5VjfFul68'},
+      {'author': 'Modern Healthcare Finance & RCM',
+       'channel': 'Modern Healthcare Finance & RCM',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:38](https://www.youtube.com/watch?v=oP8xNI1bG3E&t=38s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q12 operational verification).',
+       'markdown': '[00:14:36](https://www.youtube.com/watch?v=2fda29sEg6M&t=876s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'Borrower A owes $40,000 and makes $35,000 a year. Borrower B also owes '
-               "$40,000, but they're pulling in $90,000. Under a traditional fixed payment "
-               "plan, they'd both be forced to pay the exact same amount every month based "
-               'purely on the loan balance.',
-       'timestamp': 38,
-       'timestamp_label': '[00:00:38]',
-       'timestamp_seconds': 38,
-       'tip': 'Borrower A owes $40,000 and makes $35,000 a year. Borrower B also owes $40,000, '
-              "but they're pulling in $90,000. Under a traditional fixed payment plan, they'd "
-              'both be forced to pay the exact same amount every month based purely on the '
-              'loan balance.',
-       'title': 'Income-Driven Repayment Explained: How to Lower Your Student Loan Payments '
-                '(2026) (Unfiltered Money Labs)',
-       'url': 'https://www.youtube.com/watch?v=oP8xNI1bG3E&t=38s',
-       'video_id': 'oP8xNI1bG3E'},
-      {'author': 'Strategic Wealth Design',
-       'channel': 'Strategic Wealth Design',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:07](https://www.youtube.com/watch?v=l05EHgbqGQ8&t=187s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "You'll get a notice July 1st. You'll start getting 90-day notices if you "
-               "haven't already. When you get that, it's important to be looking at what "
-               "income based repayment plan is the best for you. It's a case- byase situation.",
-       'timestamp': 187,
-       'timestamp_label': '[00:03:07]',
-       'timestamp_seconds': 187,
-       'tip': "You'll get a notice July 1st. You'll start getting 90-day notices if you "
-              "haven't already. When you get that, it's important to be looking at what income "
-              "based repayment plan is the best for you. It's a case- byase situation.",
-       'title': 'New IDR Plans (Income-Driven Repayment) for Student Debt | Student Loan '
-                'Webinar 2026 Recap (Strategic Wealth Design)',
-       'url': 'https://www.youtube.com/watch?v=l05EHgbqGQ8&t=187s',
-       'video_id': 'l05EHgbqGQ8'},
-      {'author': 'HaloMD',
-       'channel': 'HaloMD',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:53](https://www.youtube.com/watch?v=of6CD7esHY0&t=293s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': '120 days after plan registry. You will not be able to rebatch any disputes '
-               "moving forward if you made an error. It's something that CMS has already "
-               'reported back in the day.',
-       'timestamp': 293,
-       'timestamp_label': '[00:04:53]',
-       'timestamp_seconds': 293,
-       'tip': '120 days after plan registry. You will not be able to rebatch any disputes '
-              "moving forward if you made an error. It's something that CMS has already "
-              'reported back in the day.',
-       'title': 'Decoding The Federal IDR Operations Final Rule: Access, Process and Timing '
-                '(HaloMD)',
-       'url': 'https://www.youtube.com/watch?v=of6CD7esHY0&t=293s',
-       'video_id': 'of6CD7esHY0'},
-      {'author': 'U.S. Department of Health and Human Services',
-       'channel': 'U.S. Department of Health and Human Services',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:30](https://www.youtube.com/watch?v=eKJscqVwYls&t=90s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Fourth, we are here to help. We have created a consumer-friendly complaint '
-               'help desk to guide patients through the dispute process. The help desk is open '
-               'from 8am - 8pm Eastern time, 7 days a week to help you with the payment '
-               'arbitration process or other questions.',
-       'timestamp': 90,
-       'timestamp_label': '[00:01:30]',
-       'timestamp_seconds': 90,
-       'tip': 'Fourth, we are here to help. We have created a consumer-friendly complaint help '
-              'desk to guide patients through the dispute process. The help desk is open from '
-              '8am - 8pm Eastern time, 7 days a week to help you with the payment arbitration '
-              'process or other questions.',
-       'title': 'No More Surprise Medical Bills: 5 Things To Know about the No Surprises Act '
-                'Taking Effect in 2022 (U.S. Department of Health and Human Services)',
-       'url': 'https://www.youtube.com/watch?v=eKJscqVwYls&t=90s',
-       'video_id': 'eKJscqVwYls'},
-      {'author': 'Federal Student Aid',
-       'channel': 'Federal Student Aid',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:50](https://www.youtube.com/watch?v=9TnGgGAGY8c&t=170s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'If paying the same amount every month throughout your repayment period works '
-               'better for your goals, then adjustable payments on an income-driven repayment '
-               'plan might not be the best choice for you. Consider instead enrolling in one '
-               'of the fixed payment repayment plans.',
-       'timestamp': 170,
-       'timestamp_label': '[00:02:50]',
-       'timestamp_seconds': 170,
-       'tip': 'If paying the same amount every month throughout your repayment period works '
-              'better for your goals, then adjustable payments on an income-driven repayment '
-              'plan might not be the best choice for you. Consider instead enrolling in one of '
-              'the fixed payment repayment plans.',
-       'title': 'Intro to IDR: What To Know About Income-Driven Repayment (IDR) Plans for '
-                'Student Loans (Federal Student Aid)',
-       'url': 'https://www.youtube.com/watch?v=9TnGgGAGY8c&t=170s',
-       'video_id': '9TnGgGAGY8c'},
-      {'author': 'DAS Health',
-       'channel': 'DAS Health',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:51:28](https://www.youtube.com/watch?v=e5b1ICVPSZs&t=3088s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Known its actions violated the rule or the facility or provider reimburses the '
-               'health plan insurer or patient as applicable within 30 days of the violation.',
-       'timestamp': 3088,
-       'timestamp_label': '[00:51:28]',
-       'timestamp_seconds': 3088,
-       'tip': 'Known its actions violated the rule or the facility or provider reimburses the '
-              'health plan insurer or patient as applicable within 30 days of the violation.',
-       'title': 'Don’t Be Surprised by the No Surprises Act! (DAS Health)',
-       'url': 'https://www.youtube.com/watch?v=e5b1ICVPSZs&t=3088s',
-       'video_id': 'e5b1ICVPSZs'},
-      {'author': 'Zelis Healthcare',
-       'channel': 'Zelis Healthcare',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:59](https://www.youtube.com/watch?v=lhoUoQSpOCg&t=59s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Um at the start of 2025, more than 600,000 disputes still awaited '
-               'determinations. Um, additionally, providers and payers face significant delays '
-               'in that dispute resolution, um, with 69% of open disputes being more than 30 '
-               "days old. Now, let's talk about outcomes.",
-       'timestamp': 59,
-       'timestamp_label': '[00:00:59]',
-       'timestamp_seconds': 59,
-       'tip': 'Um at the start of 2025, more than 600,000 disputes still awaited '
-              'determinations. Um, additionally, providers and payers face significant delays '
-              'in that dispute resolution, um, with 69% of open disputes being more than 30 '
-              "days old. Now, let's talk about outcomes.",
-       'title': 'Trends & Insights from 2024 CMS IDR Data | What’s Changing in No Surprises '
-                'Act Disputes (Zelis Healthcare)',
-       'url': 'https://www.youtube.com/watch?v=lhoUoQSpOCg&t=59s',
-       'video_id': 'lhoUoQSpOCg'},
-      {'author': 'AarkNine Healthcare',
-       'channel': 'AarkNine Healthcare',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:39:47](https://www.youtube.com/watch?v=3HP5mg0UdCw&t=2387s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Another key metric they track is reduced AR days. AR stands for accounts '
-               "receivable days. It's basically the average time it takes for a service to be "
-               "paid for after it's been provided.",
-       'timestamp': 2387,
-       'timestamp_label': '[00:39:47]',
-       'timestamp_seconds': 2387,
-       'tip': 'Another key metric they track is reduced AR days. AR stands for accounts '
-              "receivable days. It's basically the average time it takes for a service to be "
-              "paid for after it's been provided.",
-       'title': 'CARC & RARC Adjustment and Denial codes ll Medical claim denial & management '
-                'll adjustment #rcm (AarkNine Healthcare)',
-       'url': 'https://www.youtube.com/watch?v=3HP5mg0UdCw&t=2387s',
-       'video_id': '3HP5mg0UdCw'},
-      {'author': 'Andrea Austin',
-       'channel': 'Andrea Austin',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:16](https://www.youtube.com/watch?v=8o10JCNK6n8&t=316s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "'re living it doing it every day. And also seeing again the the people around "
-               "us enjoying their days. And that's not something a lot of us in medicine can "
-               'see anymore.',
-       'timestamp': 316,
-       'timestamp_label': '[00:05:16]',
-       'timestamp_seconds': 316,
-       'tip': "'re living it doing it every day. And also seeing again the the people around "
-              "us enjoying their days. And that's not something a lot of us in medicine can "
-              'see anymore.',
-       'title': 'Autonomy in Medicine: The Path to Fulfillment and Innovation (Andrea Austin)',
-       'url': 'https://www.youtube.com/watch?v=8o10JCNK6n8&t=316s',
-       'video_id': '8o10JCNK6n8'},
-      {'author': 'AHealthcareZ - Healthcare Finance Explained',
-       'channel': 'AHealthcareZ - Healthcare Finance Explained',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:11:00](https://www.youtube.com/watch?v=rqdWr9ynZ_o&t=660s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'By 365 days in a year that means on average the hospital bills out 8.2 million '
-               'a day like a medium-sized hospital system.',
-       'timestamp': 660,
-       'timestamp_label': '[00:11:00]',
-       'timestamp_seconds': 660,
-       'tip': 'By 365 days in a year that means on average the hospital bills out 8.2 million '
-              'a day like a medium-sized hospital system.',
-       'title': 'Revenue Cycle Management in Healthcare Explained (AHealthcareZ - Healthcare '
-                'Finance Explained)',
-       'url': 'https://www.youtube.com/watch?v=rqdWr9ynZ_o&t=660s',
-       'video_id': 'rqdWr9ynZ_o'},
-      {'author': 'Dr. Lauren Baker',
-       'channel': 'Dr. Lauren Baker',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:18:20](https://www.youtube.com/watch?v=zsaby8gJNmg&t=1100s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Provide really great care for kiddos so anything I can do to make your lives '
-               'easier I am totally gameless have a good day guys bye.',
-       'timestamp': 1100,
-       'timestamp_label': '[00:18:20]',
-       'timestamp_seconds': 1100,
-       'tip': 'Provide really great care for kiddos so anything I can do to make your lives '
-              'easier I am totally gameless have a good day guys bye.',
-       'title': 'How To Fill Out A Claims Form For Out of Network Reimbursement | PT Out of '
-                'Network Claim (Dr. Lauren Baker)',
-       'url': 'https://www.youtube.com/watch?v=zsaby8gJNmg&t=1100s',
-       'video_id': 'zsaby8gJNmg'},
-      {'author': 'Orion Billing - Medical Billing Basics',
-       'channel': 'Orion Billing - Medical Billing Basics',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:42](https://www.youtube.com/watch?v=_z9Vfv0D6_4&t=162s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'I will make another video or two about how you can use it how to appeal those '
-               'things and give some more information about erisa at Orion billing we work '
-               'hard to appeal all the things that need to be appealed and get one ready in '
-               'the door have an awesome day.',
-       'timestamp': 162,
-       'timestamp_label': '[00:02:42]',
-       'timestamp_seconds': 162,
-       'tip': 'I will make another video or two about how you can use it how to appeal those '
-              'things and give some more information about erisa at Orion billing we work hard '
-              'to appeal all the things that need to be appealed and get one ready in the door '
-              'have an awesome day.',
-       'title': 'ERISA explained (and Why it Matters) (Orion Billing - Medical Billing Basics)',
-       'url': 'https://www.youtube.com/watch?v=_z9Vfv0D6_4&t=162s',
-       'video_id': '_z9Vfv0D6_4'},
-      {'author': 'Long Reads, Explained',
-       'channel': 'Long Reads, Explained',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:13:49](https://www.youtube.com/watch?v=nJ5Tz7G_LA8&t=829s)',
-       'relevance': 'Attributed practitioner commentary on contingency out-of-network '
-                    'physician underpayment recovery under the federal No Surprises Act (`42 '
-                    'U.S.C. § 300gg-111`), automating `30`-business-day Open Negotiation, '
-                    '`4`-business-day Certified `IDR` Entity batching, and `QPA`-uplift '
-                    'arbitration briefs (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'It won one thousand thirty-two arbitration cases in twenty twenty-five. Its '
-               'average award was around four times what insurers typically pay. And in '
-               'January, the practice had to take out a line of credit to make payroll.',
-       'timestamp': 829,
-       'timestamp_label': '[00:13:49]',
-       'timestamp_seconds': 829,
-       'tip': 'It won one thousand thirty-two arbitration cases in twenty twenty-five. Its '
-              'average award was around four times what insurers typically pay. And in '
-              'January, the practice had to take out a line of credit to make payroll.',
-       'title': 'No Surprises Act: Nearly 30% of Awards Unpaid by Insurers (Long Reads, '
-                'Explained)',
-       'url': 'https://www.youtube.com/watch?v=nJ5Tz7G_LA8&t=829s',
-       'video_id': 'nJ5Tz7G_LA8'}]}
+       'text': 'A benchmark for total denials is less than 5%.',
+       'timestamp': 876,
+       'timestamp_label': '[00:14:36]',
+       'timestamp_seconds': 876,
+       'tip': 'A benchmark for total denials is less than 5%.',
+       'title': '18 Healthcare Revenue Cycle Management KPIs To Know (In Under 22 Min)',
+       'url': 'https://www.youtube.com/watch?v=2fda29sEg6M&t=876s',
+       'video_id': '2fda29sEg6M'}]}

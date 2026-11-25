@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-evidence-to-paid-support",
-    "diag-02-nested-retainer-conversion",
-    "diag-03-base-case-owner-profit",
-    "diag-04-service-rail-yield",
-    "diag-05-statutory-and-recovery-tree",
-    "diag-06-core-and-scaled-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-thirty-day-operating-sprint"
+    "diag-01-fca-relator-filing-sequence",
+    "diag-02-stark-aks-settlement-exposure-ladder",
+    "diag-03-usis-recovery-walk",
+    "diag-04-seal-and-decision-clocks",
+    "diag-05-medicare-billing-reporting-gates",
+    "diag-06-irs-whistleblower-office-architecture",
+    "diag-07-fca-repayment-multiplier-bands",
+    "diag-08-internal-detection-four-week-build"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-evidence-to-paid-support",
-    "diag-02-nested-retainer-conversion",
-    "diag-03-base-case-owner-profit",
-    "diag-04-service-rail-yield",
-    "diag-05-statutory-and-recovery-tree",
-    "diag-06-core-and-scaled-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-thirty-day-operating-sprint"
+    "diag-01-fca-relator-filing-sequence",
+    "diag-02-stark-aks-settlement-exposure-ladder",
+    "diag-03-usis-recovery-walk",
+    "diag-04-seal-and-decision-clocks",
+    "diag-05-medicare-billing-reporting-gates",
+    "diag-06-irs-whistleblower-office-architecture",
+    "diag-07-fca-repayment-multiplier-bands",
+    "diag-08-internal-detection-four-week-build"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-evidence-to-paid-support": {
+    "diag-01-fca-relator-filing-sequence": {
       "concept_a": {
-        "graphic_id": "diag-01-evidence-to-paid-support",
+        "graphic_id": "diag-01-fca-relator-filing-sequence",
         "graphic_type": "diagram",
-        "label": "Build Evidence, Sell Support, Separate Award Exposure",
+        "label": "From Federal Dollar to Sealed Complaint",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-evidence-to-paid-support",
+        "graphic_id": "diag-01-fca-relator-filing-sequence",
         "graphic_type": "diagram",
-        "label": "Build Evidence, Sell Support, Separate Award Exposure",
+        "label": "From Federal Dollar to Sealed Complaint",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-evidence-to-paid-support",
+        "graphic_id": "diag-01-fca-relator-filing-sequence",
         "graphic_type": "diagram",
-        "label": "Build Evidence, Sell Support, Separate Award Exposure",
+        "label": "From Federal Dollar to Sealed Complaint",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-nested-retainer-conversion": {
+    "diag-02-stark-aks-settlement-exposure-ladder": {
       "concept_a": {
-        "graphic_id": "diag-02-nested-retainer-conversion",
+        "graphic_id": "diag-02-stark-aks-settlement-exposure-ladder",
         "graphic_type": "diagram",
-        "label": "A Screening Funnel, Not an Award Forecast",
+        "label": "Referral Arrangements Priced in Settlements and Per-Claim Penalties",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-nested-retainer-conversion",
+        "graphic_id": "diag-02-stark-aks-settlement-exposure-ladder",
         "graphic_type": "diagram",
-        "label": "A Screening Funnel, Not an Award Forecast",
+        "label": "Referral Arrangements Priced in Settlements and Per-Claim Penalties",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-nested-retainer-conversion",
+        "graphic_id": "diag-02-stark-aks-settlement-exposure-ladder",
         "graphic_type": "diagram",
-        "label": "A Screening Funnel, Not an Award Forecast",
+        "label": "Referral Arrangements Priced in Settlements and Per-Claim Penalties",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-case-owner-profit": {
+    "diag-03-usis-recovery-walk": {
       "concept_a": {
-        "graphic_id": "diag-03-base-case-owner-profit",
+        "graphic_id": "diag-03-usis-recovery-walk",
         "graphic_type": "diagram",
-        "label": "Base Case: $487,500 Revenue to $219,375 Owner Profit",
+        "label": "USIS Dumping Case Recovery Walk",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-case-owner-profit",
+        "graphic_id": "diag-03-usis-recovery-walk",
         "graphic_type": "diagram",
-        "label": "Base Case: $487,500 Revenue to $219,375 Owner Profit",
+        "label": "USIS Dumping Case Recovery Walk",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-case-owner-profit",
+        "graphic_id": "diag-03-usis-recovery-walk",
         "graphic_type": "diagram",
-        "label": "Base Case: $487,500 Revenue to $219,375 Owner Profit",
+        "label": "USIS Dumping Case Recovery Walk",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-service-rail-yield": {
+    "diag-04-seal-and-decision-clocks": {
       "concept_a": {
-        "graphic_id": "diag-04-service-rail-yield",
+        "graphic_id": "diag-04-seal-and-decision-clocks",
         "graphic_type": "diagram",
-        "label": "Five Paid Research Niches Fund the Base Case",
+        "label": "Seal and Decision Clocks Relators Should Expect",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-service-rail-yield",
+        "graphic_id": "diag-04-seal-and-decision-clocks",
         "graphic_type": "diagram",
-        "label": "Five Paid Research Niches Fund the Base Case",
+        "label": "Seal and Decision Clocks Relators Should Expect",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-service-rail-yield",
+        "graphic_id": "diag-04-seal-and-decision-clocks",
         "graphic_type": "diagram",
-        "label": "Five Paid Research Niches Fund the Base Case",
+        "label": "Seal and Decision Clocks Relators Should Expect",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-statutory-and-recovery-tree": {
+    "diag-05-medicare-billing-reporting-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-statutory-and-recovery-tree",
+        "graphic_id": "diag-05-medicare-billing-reporting-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before a Filing Strategy",
+        "label": "Medicare and Medicaid Billing Fraud Reporting Gates",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-statutory-and-recovery-tree",
+        "graphic_id": "diag-05-medicare-billing-reporting-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before a Filing Strategy",
+        "label": "Medicare and Medicaid Billing Fraud Reporting Gates",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-statutory-and-recovery-tree",
+        "graphic_id": "diag-05-medicare-billing-reporting-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before a Filing Strategy",
+        "label": "Medicare and Medicaid Billing Fraud Reporting Gates",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-core-and-scaled-pod": {
+    "diag-06-irs-whistleblower-office-architecture": {
       "concept_a": {
-        "graphic_id": "diag-06-core-and-scaled-pod",
+        "graphic_id": "diag-06-irs-whistleblower-office-architecture",
         "graphic_type": "diagram",
-        "label": "Three Core People, Five at Scale",
+        "label": "Who Touches a Form 211 Claim",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-core-and-scaled-pod",
+        "graphic_id": "diag-06-irs-whistleblower-office-architecture",
         "graphic_type": "diagram",
-        "label": "Three Core People, Five at Scale",
+        "label": "Who Touches a Form 211 Claim",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-core-and-scaled-pod",
+        "graphic_id": "diag-06-irs-whistleblower-office-architecture",
         "graphic_type": "diagram",
-        "label": "Three Core People, Five at Scale",
+        "label": "Who Touches a Form 211 Claim",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-allocation": {
+    "diag-07-fca-repayment-multiplier-bands": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-fca-repayment-multiplier-bands",
         "graphic_type": "diagram",
-        "label": "Allocate $30,000 Before Expanding the Pod",
+        "label": "What Repayment Costs at Each Exit",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-fca-repayment-multiplier-bands",
         "graphic_type": "diagram",
-        "label": "Allocate $30,000 Before Expanding the Pod",
+        "label": "What Repayment Costs at Each Exit",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-fca-repayment-multiplier-bands",
         "graphic_type": "diagram",
-        "label": "Allocate $30,000 Before Expanding the Pod",
+        "label": "What Repayment Costs at Each Exit",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-thirty-day-operating-sprint": {
+    "diag-08-internal-detection-four-week-build": {
       "concept_a": {
-        "graphic_id": "diag-08-thirty-day-operating-sprint",
+        "graphic_id": "diag-08-internal-detection-four-week-build",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Counsel-Ready Research Operation",
+        "label": "Detection Starts With Records You Already Hold",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-thirty-day-operating-sprint",
+        "graphic_id": "diag-08-internal-detection-four-week-build",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Counsel-Ready Research Operation",
+        "label": "Detection Starts With Records You Already Hold",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-thirty-day-operating-sprint",
+        "graphic_id": "diag-08-internal-detection-four-week-build",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Counsel-Ready Research Operation",
+        "label": "Detection Starts With Records You Already Hold",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:04Z"
+  "updated_at": "2026-11-25T00:44:08Z"
 }

@@ -1,754 +1,840 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "automation-ai-leverage-scalable-idr-distribution-flywheels",
-    "question_prompt": "How does a 1 FT + 2 C (3 people) no surprises act (idr) medical arbitration & out-of-network recovery team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python 835 Intake, ERISA Evidence Routing, Business-Day Deadline Engines, Permitted QPA Evidence, and Cash-Reconciled Provider Acquisition",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #45, Rank #09 of 49, scores 94/100 by converting specialized "
-        "No Surprises Act recovery into a small-team evidence and collections operation. "
-        "This chapter maps 12 operator plays across intake, jurisdiction, deadlines, "
-        "brief production, cash reconciliation, and permission-led distribution. "
-        "Python handles deterministic work; bounded language models draft and extract; "
-        "people decide jurisdiction, offers, filing readiness, and exceptions. The "
-        "70%+ automation objective applies to measured repetitive tasks, not legal "
-        "judgment or guaranteed recoveries. Formula v2.0 annual owner profit remains "
-        "$33,000 Conservative, $217,150 Base, and $504,000 Scaled. Revenue means "
-        "earned contingency shares on incremental collected cash after the specified "
-        "case deductions, never provider baseline payments, award face values, or "
-        "uncollected payer promises."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$110,000",
-            "context": "Annual earned contingency revenue on eligible incremental collected cash",
-            "note": "30% net margin; $33,000 owner profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$505,000",
-            "context": "Annual earned contingency revenue on eligible incremental collected cash",
-            "note": "43.0% net margin; $217,150 owner profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual earned contingency revenue on eligible incremental collected cash",
-            "note": "56% net margin; $504,000 owner profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build an evidence-first intake spine before adding language models",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a tenant-isolated intake spine, not a chatbot attached "
-                    "to a clearinghouse export. Receive authorized 835 ERA files, "
-                    "associated 837 claim records, payer correspondence, and plan "
-                    "documents through an authenticated transfer channel. Execute "
-                    "HIPAA Business Associate Agreements with covered-entity clients "
-                    "and applicable downstream service providers before transmitting "
-                    "protected health information. Python parses transaction envelopes, "
-                    "CLP claim records, SVC service lines, CAS adjustments, and "
-                    "remark-code references into a versioned claim ledger. Match "
-                    "CARC and RARC combinations against dated code dictionaries; "
-                    "never interpret every contractual adjustment as recoverable "
-                    "underpayment. Preserve original bytes, source hashes, parser "
-                    "version, receipt timestamp, and the relationship between claim "
-                    "and service line. A PostgreSQL record stores operational state; "
-                    "encrypted object storage holds evidence with access logging "
-                    "and tested retention controls. Signed webhooks enqueue identifiers "
-                    "rather than clinical narratives. Duplicate files produce the "
-                    "same ingestion key, while corrected remittances create linked "
-                    "versions instead of silently overwriting evidence. The employee "
-                    "owns exceptions and client authority; one contractor reconciles "
-                    "claims; the other prepares evidence. This division lets machines "
-                    "normalize thousands of lines without giving a model discretion "
-                    "to classify disputed jurisdiction or authorize an external filing."
-                ),
-                (
-                    "Treat the ERISA classifier as an evidence router with an "
-                    "abstention state. An employer name, insurer logo, or 835 payer "
-                    "identifier cannot establish whether a plan is self-funded, "
-                    "fully insured, subject to a specified state law, or affected "
-                    "by an applicable All-Payer Model Agreement. Collect the summary "
-                    "plan description, funding evidence, service location, service "
-                    "date, provider status, and the relevant emergency or "
-                    "nonemergency service facts. Record state opt-in evidence when "
-                    "that mechanism matters. ERISA section 514, codified at "
-                    "29 U.S.C. § 1144, supplies a framework rather than a shortcut "
-                    "that sends every employer claim to federal IDR. A rules engine "
-                    "proposes a route and names missing documents; a reviewer signs "
-                    "the route before fees are exposed. Maintain separate queues "
-                    "for federal candidates, state-process candidates, ordinary "
-                    "payment disputes, and unresolved evidence. For language-model "
-                    "extraction, require a structured object containing source page, "
-                    "quoted support, proposed field, and uncertainty reason. Reject "
-                    "unsupported values instead of filling gaps with plausible "
-                    "answers. Claims containing instructions inside attachments "
-                    "remain evidence, never executable workflow commands. A "
-                    "low-confidence result returns to document collection, not "
-                    "directly to the arbitration portal."
-                ),
-                (
-                    "The chapter's 12-play map uses eleven local implementation "
-                    "labels plus the supplied distribution play identifier; the "
-                    "local labels are operating modules, not additional canonical "
-                    "catalog claims. Plays one through four are "
-                    "era_evidence_normalization, jurisdiction_evidence_router, "
-                    "deadline_event_ledger, and idempotent_work_dispatch. Each "
-                    "module owns a measurable input, output, exception queue, and "
-                    "human override record. Measure the automation objective using "
-                    "a frozen catalog of repetitive task instances. In an "
-                    "illustrative thousand-task week, 740 tasks complete without "
-                    "manual rework and 260 require intervention: 740 divided by "
-                    "1,000 equals 74%. Do not inflate the numerator with retries "
-                    "or split one extraction into dozens of trivial events. If "
-                    "those tasks previously required four minutes each, automated "
-                    "completion removes 2,960 gross minutes, before quality "
-                    "sampling, maintenance, and exception handling. Audit 10% of "
-                    "automated completions initially, with heavier sampling for "
-                    "new payers and changed formats. Any material jurisdiction "
-                    "error pauses that rule version and replays affected records "
-                    "into review. Track minutes as a second measure because "
-                    "automating many cheap classifications can conceal expensive "
-                    "brief corrections. The target becomes credible only when "
-                    "rework-adjusted labor and missed-deadline rates improve together."
-                ),
-            ],
-            "table": {
-                "caption": "Evidence Spine: Inputs, Deterministic Outputs, and Recovery Paths",
-                "headers": [
-                    "Operational component and assigned play",
-                    "Required evidence entering the component",
-                    "Machine output with retained provenance",
-                    "Human decision and failure recovery",
-                ],
-                "rows": [
-                    [
-                        "Play one: era_evidence_normalization parses remittance service lines",
-                        "Original 835 bytes plus linked claim submission identifiers",
-                        "Versioned adjustment records retaining source segments and hashes",
-                        "Quarantine malformed envelopes and reconcile against clearinghouse exports",
-                    ],
-                    [
-                        "Play two: jurisdiction_evidence_router proposes supported processing routes",
-                        "Plan funding documents plus service location and coverage facts",
-                        "Evidence-linked route proposal identifying every missing decisive fact",
-                        "Reviewer confirms federal jurisdiction or selects the state process",
-                    ],
-                    [
-                        "Play three: deadline_event_ledger preserves legally relevant receipt events",
-                        "Dated remittance receipt evidence and delivered negotiation communications",
-                        "Immutable event history with calculated business-day deadline candidates",
-                        "Reviewer resolves conflicting dates using retained delivery evidence",
-                    ],
-                    [
-                        "Play four: idempotent_work_dispatch prevents repeated consequential actions",
-                        "Tenant identifier plus claim version and intended action",
-                        "Unique dispatch record with retry count and current ownership",
-                        "Reconcile remote status before repeating any external submission",
-                    ],
-                    [
-                        "Protected document storage separates clinical evidence by client",
-                        "Executed client authority plus applicable business associate agreements",
-                        "Encrypted objects with scoped access and attributable retrieval",
-                        "Revoke access promptly and investigate unexpected cross-client reads",
-                    ],
-                    [
-                        "Structured extraction produces field suggestions without filing authority",
-                        "Minimum necessary document excerpts inside approved processing environments",
-                        "Source-linked fields containing quoted support and uncertainty reasons",
-                        "Return unsupported conclusions to the missing-document work queue",
-                    ],
-                    [
-                        "Weekly automation sampling measures completed work rather than activity",
-                        "Stable task catalog plus completion and correction histories",
-                        "Rework-adjusted automation percentage alongside actual human minutes saved",
-                        "Pause defective rule versions and review affected claim cohorts",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four intake habits that prevent expensive false positives",
-                "body": (
-                    "The strongest automation advantage is refusing weak evidence "
-                    "before an ineligible dispute consumes fees and reviewer time."
-                ),
-                "items": [
-                    "Keep corrected 835 transactions linked to their predecessors; a replacement remittance must not create a second recovery opportunity.",
-                    "Request plan funding evidence during onboarding, because an insurer's administrative-services role can resemble ordinary insured coverage.",
-                    "Store negotiation delivery evidence separately from the drafted letter; a generated PDF proves preparation, not receipt or timely initiation.",
-                    "Sample CARC/RARC patterns by payer and service class, because one global underpayment rule can multiply a coding mistake across every client.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Turn statutory clocks into tested state transitions and controlled dispatch",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build the deadline engine around distinct events rather than "
-                    "a single thirty-day timer. Under the applicable federal "
-                    "framework, the initiating party generally must start open "
-                    "negotiation within thirty business days after receiving the "
-                    "initial payment or notice of denial. The open-negotiation "
-                    "period itself runs thirty business days beginning on its "
-                    "initiation date. A federal IDR initiation generally follows "
-                    "within four business days after that period ends. These are "
-                    "different clocks, and the four-day window is not a universal "
-                    "deadline for choosing the certified entity or assembling "
-                    "every batch. Encode each requirement from the effective "
-                    "version of 45 CFR § 149.510 and applicable official "
-                    "implementation instructions. Preserve the source receipt "
-                    "date, counting convention, holiday calendar version, local "
-                    "time context, computed deadline, and reviewer confirmation. "
-                    "Use states such as received, evidence_pending, route_confirmed, "
-                    "negotiation_sent, negotiation_elapsed, initiation_ready, "
-                    "initiated, offer_pending, determination_received, and "
-                    "cash_reconciled. A clock continues while evidence is missing; "
-                    "moving a claim into a document queue does not suspend a "
-                    "statutory deadline. Escalate approaching deadlines to two "
-                    "people and show the exact missing action, not a generic "
-                    "red badge."
-                ),
-                (
-                    "Plays five through eight are batch_eligibility_matcher, "
-                    "permitted_evidence_builder, offer_packet_validator, and "
-                    "award_cash_reconciler. Batch matching must evaluate the "
-                    "effective legal criteria, not simply combine claims sharing "
-                    "a payer and CPT family. Store the initiating and opposing "
-                    "parties, qualified items or services, service dates, and "
-                    "every criterion supporting aggregation. The same-party, "
-                    "same-or-similar-item cooling-off restriction generally spans "
-                    "ninety calendar days after a determination; affected claims "
-                    "require separate tracking, including the applicable "
-                    "post-suspension initiation opportunity. Do not stop "
-                    "negotiation preparation merely because initiation is "
-                    "temporarily restricted. Version rules against current "
-                    "agency implementation and operative court decisions before "
-                    "using them on live claims. A scheduled Python worker "
-                    "queries due actions, acquires a transactional lease, writes "
-                    "an outbox event, and dispatches only approved actions. "
-                    "Webhook acknowledgments update delivery state, while "
-                    "official portal confirmations establish submission status. "
-                    "A timeout means status unresolved, not permission to file "
-                    "again. If portal access fails, preserve screenshots, "
-                    "timestamps, and support correspondence; follow the "
-                    "official extension process when available. An outage "
-                    "does not itself extend a deadline, and a model must "
-                    "never invent that relief."
-                ),
-                (
-                    "Budget the machine layer by completed run and separate "
-                    "it from reviewer labor. An illustrative intake run costs "
-                    "$0.003 in parsing compute, $0.004 in queue and database "
-                    "usage, $0.006 in OCR, and $0.015 in bounded extraction: "
-                    "$0.028 total under the assumed allocation. Ten thousand "
-                    "runs therefore cost $280 before storage, fixed "
-                    "subscriptions, and human review. If 5% require one full "
-                    "retry, 500 additional runs add $14, producing $294 or "
-                    "$0.0294 per original record. Vendor prices, document "
-                    "lengths, and OCR incidence must replace these planning "
-                    "assumptions during measurement. A three-minute review at "
-                    "$45 per hour costs $2.25, so preventing unnecessary "
-                    "review matters far more than shaving a fraction of "
-                    "a cent from tokens. Apply bounded retries only to "
-                    "transient technical failures. Invalid jurisdiction, "
-                    "missing authorization, contradictory receipts, and "
-                    "unsupported clinical assertions require people. A "
-                    "dead-letter queue carries the source hash, failed "
-                    "operation, next deadline, and named owner. Run "
-                    "nightly reconciliation between queue records and "
-                    "portal receipts. Test holidays, duplicate callbacks, "
-                    "out-of-order messages, daylight-saving transitions, "
-                    "corrected remittances, and worker crashes before "
-                    "expanding the automated population. Keep a manual "
-                    "deadline register ready for infrastructure outages."
-                ),
-            ],
-            "table": {
-                "caption": "Deadline and Dispatch Controls for Consequential IDR Actions",
-                "headers": [
-                    "Clock or operational transition being controlled",
-                    "Evidence required before calculating or dispatching",
-                    "Deterministic implementation and retained control record",
-                    "Recovery behavior when normal execution fails",
-                ],
-                "rows": [
-                    [
-                        "Initial payment receipt starts negotiation initiation timing analysis",
-                        "Actual receipt evidence for payment or notice of denial",
-                        "Calculate applicable thirty-business-day initiation window with versioned calendar",
-                        "Escalate conflicting timestamps immediately without resetting the underlying clock",
-                    ],
-                    [
-                        "Open negotiation initiation establishes its separate negotiation period",
-                        "Completed notice plus evidence supporting timely delivery or transmission",
-                        "Preserve initiation date and calculate thirty-business-day negotiation period",
-                        "Reviewer resolves disputed initiation facts before subsequent filing decisions",
-                    ],
-                    [
-                        "Negotiation expiration opens the federal IDR initiation window",
-                        "Confirmed negotiation dates plus supported federal eligibility determination",
-                        "Calculate four-business-day initiation deadline separately from entity-selection milestones",
-                        "Escalate readiness failures while preserving every official receipt",
-                    ],
-                    [
-                        "Play five: batch_eligibility_matcher tests current aggregation requirements",
-                        "Parties and service records supporting every applicable batching criterion",
-                        "Produce criterion-by-criterion evidence before grouping proposed disputed items",
-                        "Separate unsupported groups rather than risking collective ineligibility dismissal",
-                    ],
-                    [
-                        "Cooling-off tracking prevents premature same-party similar-item dispute initiation",
-                        "Prior determination date plus affected party and service relationships",
-                        "Track applicable ninety-calendar-day restriction and post-suspension initiation opportunity",
-                        "Continue evidence preparation while reviewer confirms permissible filing timing",
-                    ],
-                    [
-                        "Transactional outbox coordinates authorized external action dispatch records",
-                        "Reviewer authorization plus unique action key and current state",
-                        "Acquire lease and persist dispatch intent before sending requests",
-                        "Check remote status before retrying uncertain external submissions",
-                    ],
-                    [
-                        "Dead-letter recovery protects deadlines during technical service interruptions",
-                        "Failed operation record with source hash and next deadline",
-                        "Assign named owner and preserve timestamped technical failure evidence",
-                        "Use manual register and applicable official extension request procedures",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before money or filing authority leaves the system",
-                "body": (
-                    "Automation prepares the action package. A named reviewer "
-                    "records these decisions before the external action proceeds."
-                ),
-                "items": [
-                    "Confirm federal eligibility using plan funding, service facts, state-law analysis, and current implementation rules; do not accept a payer logo as evidence.",
-                    "Recalculate negotiation and initiation windows from retained receipt records, then inspect cooling-off and batching constraints for the actual disputed items.",
-                    "Verify client authority, offer amount, permitted evidence, opposing-party identifiers, current fees, and the absence of duplicate submissions.",
-                    "Confirm minimum necessary disclosure, approved recipient, complete attachments, and an explicit manual recovery owner before transmitting the final package.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the event evidence",
-                    "action": "Hash source records and record the actual receipt and initiation events.",
-                    "detail": "Retain document versions and delivery artifacts so a reviewer can reconstruct every deadline calculation.",
-                },
-                {
-                    "step": 2,
-                    "title": "Calculate and independently inspect",
-                    "action": "Run the versioned calendar engine and compare its output with the review register.",
-                    "detail": "Resolve jurisdiction, batching, and cooling-off questions before making any fee-bearing submission.",
-                },
-                {
-                    "step": 3,
-                    "title": "Authorize and dispatch once",
-                    "action": "Record reviewer authorization and dispatch through a unique transactional outbox action.",
-                    "detail": "Treat missing acknowledgments as unresolved status and inspect the destination before attempting another submission.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile and recover",
-                    "action": "Match the official receipt to the case ledger and assign the next obligation.",
-                    "detail": "Send failures to a named owner with the deadline, evidence bundle, and documented manual fallback.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Generate permitted evidence, then reconcile awards to actual incremental cash",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The brief builder should resemble a cited evidence compiler, "
-                    "not an advocate allowed to invent facts. Play six retrieves "
-                    "the QPA supplied for the disputed service, documented "
-                    "clinical acuity, provider training and experience where "
-                    "relevant, facility characteristics where applicable, and "
-                    "supported contracting history. A language model drafts "
-                    "only from approved excerpts and returns a source map "
-                    "for every factual assertion. Licensed FAIR Health "
-                    "material requires especially careful separation: its "
-                    "usual-and-customary charge benchmarks cannot become "
-                    "an arbitration anchor merely because the data are "
-                    "commercially reputable. Federal IDR excludes specified "
-                    "considerations, including usual and customary charges, "
-                    "billed charges, and public-payer reimbursement rates. "
-                    "Use any licensed product only for a permitted purpose "
-                    "consistent with its terms and the governing evidentiary "
-                    "rules; otherwise exclude it from the offer packet. "
-                    "Distinguish operational opportunity screening from "
-                    "evidence actually submitted. Do not assume the QPA "
-                    "carries a conclusive presumption or automatically "
-                    "determines the result. Current operative rules and "
-                    "court decisions govern consideration of permissible "
-                    "information. Human reviewers test whether each "
-                    "acuity assertion explains this service and avoids "
-                    "double counting factors already reflected in the "
-                    "QPA."
-                ),
-                (
-                    "Play seven validates the final-offer packet because "
-                    "baseball arbitration selects between party offers "
-                    "rather than inviting the model to manufacture a "
-                    "compromise award. Keep the requested amount, initial "
-                    "payment, service identifiers, offer rationale, and "
-                    "supporting exhibits mutually consistent. A clinical "
-                    "reviewer confirms acuity and service facts; the "
-                    "authorized case lead approves the offer and submission. "
-                    "Generate a PDF with stable exhibit numbers and "
-                    "verify that every cited page exists. Use a "
-                    "bounded model for extraction and a stronger "
-                    "model only for complex drafting, both inside "
-                    "appropriately contracted environments with documented "
-                    "retention and training controls. An illustrative "
-                    "packet costs $0.18 for extraction, $0.42 for "
-                    "drafting, and $0.10 for rendering and validation: "
-                    "$0.70 in variable machine spend. Twelve minutes "
-                    "of review at $60 per hour adds $12, making "
-                    "$12.70 before allocated subscriptions and filing "
-                    "costs. If two of twenty packets require ten "
-                    "extra review minutes each, the cohort adds $20 "
-                    "and averages $13.70 per packet. Reject "
-                    "unsupported citations, contradictory amounts, and "
-                    "missing exhibits automatically. After repeated "
-                    "drafting failure, switch to the approved template "
-                    "and human completion rather than sending a "
-                    "weaker packet to preserve throughput."
-                ),
-                (
-                    "Play eight reconciles determinations to bank-confirmed "
-                    "incremental collections, because a favorable offer "
-                    "statistic is not a cash conversion rate. Suppose "
-                    "matched claims originally paid $100,000 and "
-                    "eventually show $160,000 in cumulative payer "
-                    "collections. Incremental cash is $60,000, not "
-                    "$160,000 and not an unpaid award balance. "
-                    "Deduct $10,000 of non-refundable CMS administrative "
-                    "fees, unrecovered certified-entity fees, and "
-                    "direct casework costs to obtain a $50,000 "
-                    "eligible fee pool. At a contracted 25% "
-                    "contingency, operator revenue is $12,500. "
-                    "Track prevailing-party entity-fee refunds as "
-                    "receivables until returned; losing or ineligibility-"
-                    "dismissed disputes retain their forfeited fees "
-                    "in cost reconciliation under the applicable "
-                    "rules. CMS administrative fees remain separate "
-                    "and non-refundable. Do not deduct the same "
-                    "casework expense again in company profit if "
-                    "it was borne and recorded as a provider-level "
-                    "fee-base deduction; operator-borne expenses "
-                    "still belong in the operator ledger. Age "
-                    "awarded-but-unpaid balances and pursue documented "
-                    "payment follow-up, including the applicable "
-                    "thirty-calendar-day payment requirement. Never "
-                    "invoice an earned cash contingency merely "
-                    "because a determination arrived. Reverse "
-                    "or adjust invoices for linked recoupments "
-                    "according to the signed engagement terms."
-                ),
-            ],
-            "table": {
-                "caption": "Evidence Compiler and Cash Waterfall: What the Operator May Count",
-                "headers": [
-                    "Evidence or economic component under inspection",
-                    "Permitted operating treatment and required support",
-                    "Illustrative unit calculation or validation method",
-                    "Failure mode and concrete recovery response",
-                ],
-                "rows": [
-                    [
-                        "Play six: permitted_evidence_builder assembles source-linked factual assertions",
-                        "Use documented service facts and permissible statutory considerations",
-                        "Every factual assertion resolves to an actual exhibit page",
-                        "Remove unsupported assertions and obtain missing clinical source records",
-                    ],
-                    [
-                        "FAIR Health licensing does not override prohibited evidentiary considerations",
-                        "Exclude usual-and-customary charge anchors from federal IDR submissions",
-                        "Review each proposed benchmark for purpose and legal admissibility",
-                        "Discard prohibited benchmarks even when commercially licensed and accurate",
-                    ],
-                    [
-                        "Play seven: offer_packet_validator checks final-offer consistency before submission",
-                        "Authorized reviewer approves offer amount and complete exhibit inventory",
-                        "Extraction drafting and rendering total seventy cents per packet",
-                        "Replace failed model drafting with controlled human-completed packet templates",
-                    ],
-                    [
-                        "Human packet review remains the dominant variable production expense",
-                        "Clinical facts and requested amounts receive attributable reviewer confirmation",
-                        "Twelve minutes at sixty dollars hourly adds twelve dollars",
-                        "Increase review allocation when source contradictions or exceptions multiply",
-                    ],
-                    [
-                        "Play eight: award_cash_reconciler matches incremental recovery to bank evidence",
-                        "Cumulative collected payments must exclude duplicated or reversed transactions",
-                        "Collected $160,000 less initial $100,000 yields $60,000 incremental cash",
-                        "Hold invoices when remittances cannot be matched to deposits",
-                    ],
-                    [
-                        "Direct case deductions reduce the contracted eligible contingency pool",
-                        "Include administrative fees unrecovered entity fees and casework costs",
-                        "Incremental $60,000 less $10,000 deductions creates $50,000 eligible pool",
-                        "Reconcile fee refunds and prevent duplicate expense deductions",
-                    ],
-                    [
-                        "Earned contingency revenue differs from provider collections and awards",
-                        "Apply the signed contingency percentage to reconciled eligible cash",
-                        "Eligible $50,000 multiplied by twenty-five percent earns $12,500 revenue",
-                        "Keep unpaid determinations outside earned cash-contingency invoice totals",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Compound permission-led distribution without breaking the cash model",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Plays nine through twelve are high_velocity_dm_outbound_systems, "
-                    "provider_referral_loop, jurisdiction_content_engine, and "
-                    "cohort_margin_feedback. Implement the supplied TRACK_2 "
-                    "high-velocity play with user-initiated comment, reaction, "
-                    "or inbound-message triggers rather than blind mass "
-                    "DM campaigns. Publish a practical negotiation-deadline "
-                    "worksheet and invite practice administrators to "
-                    "request it. Use only platform-supported messaging "
-                    "features and permitted integrations; where an "
-                    "automated response is unsupported, queue a human "
-                    "reply. Route warm signals among authorized inboxes "
-                    "by territory and existing relationship, never "
-                    "to bypass platform restrictions. Require an "
-                    "actual prospect reply before sending external "
-                    "links, and move claim documents to the "
-                    "approved secure intake channel. In an "
-                    "illustrative monthly cohort, 120 qualifying "
-                    "triggers produce 72 replies, 24 discovery "
-                    "calls, eight authorized samples, and two "
-                    "engagements. With $480 in content and "
-                    "messaging spend plus twelve hours at "
-                    "$45, acquisition cost is $1,020 divided "
-                    "by two, or $510 per signed engagement. "
-                    "These are planning conversions, not measured "
-                    "results. PeerFloodError, delivery suppression, "
-                    "or repeated message-request silence stops "
-                    "automated dispatch and returns the team "
-                    "to permission capture rather than account "
-                    "rotation. Honor opt-outs across every "
-                    "authorized inbox and client-acquisition list."
-                ),
-                (
-                    "The referral loop distributes operational proof, "
-                    "not patient stories. Give billing firms, "
-                    "practice-management consultants, and specialty "
-                    "associations a shareable worksheet explaining "
-                    "receipt evidence, jurisdiction documents, and "
-                    "incremental-cash accounting. Referral compensation "
-                    "is not required for this loop; any proposed "
-                    "payment arrangement needs separate assessment "
-                    "under the rules applicable to its parties "
-                    "and services. Programmatic pages should "
-                    "answer narrow operator questions such as "
-                    "how to distinguish a negotiation clock "
-                    "from an initiation clock, with human-checked "
-                    "primary citations and an update date. "
-                    "Publish no payer-specific recovery claim "
-                    "without a defensible denominator and "
-                    "actual collection data. Aggregate reporting "
-                    "still requires a disclosure-risk assessment; "
-                    "remove identifying details using an "
-                    "appropriate HIPAA de-identification method "
-                    "rather than merely deleting patient names. "
-                    "One approved worksheet can generate an "
-                    "association presentation, a search landing "
-                    "page, and an inbound request sequence. "
-                    "Track source, qualified sample, signed "
-                    "engagement, first collected contingency, "
-                    "and retained contribution as separate "
-                    "events. A signed client that supplies "
-                    "only ineligible claims is acquisition "
-                    "failure, not growth. Feed disqualification "
-                    "reasons back into page copy and intake "
-                    "questions, then preserve useful pages "
-                    "instead of generating hundreds of "
-                    "thin specialty variants."
-                ),
-                (
-                    "Close the flywheel with the exact Formula "
-                    "v2.0 scorecard rather than optimistic award "
-                    "multiples. At an illustrative uniform 25% "
-                    "contingency, eligible annual cash pools "
-                    "after the specified direct deductions "
-                    "of $440,000, $2,020,000, and $3,600,000 "
-                    "produce operator revenue of $110,000, "
-                    "$505,000, and $900,000. These pools "
-                    "are reverse-engineered planning requirements, "
-                    "not forecasts of claim eligibility or "
-                    "collection success. Conservative company "
-                    "expenses of $77,000 leave $33,000 "
-                    "owner profit at 30%; Base expenses "
-                    "of $287,850 leave $217,150 at "
-                    "43.0%; Scaled expenses of $396,000 "
-                    "leave $504,000 at 56%. Conservative "
-                    "and Base each use one full-time "
-                    "employee plus two contractors; Scaled "
-                    "uses two full-time employees plus "
-                    "three contractors. Reconcile every "
-                    "expense category to this company-level "
-                    "bridge without double counting provider-"
-                    "borne deductions. The $1,800–$10,500 "
-                    "monthly operating range is an "
-                    "operating-budget reference, not the "
-                    "entire annual expense denominator "
-                    "for all scenarios. Budget $10,000–$45,000 "
-                    "startup capital and a one-to-four-month "
-                    "first-deal interval, while separately "
-                    "funding fee advances and delayed "
-                    "collections. Increase distribution "
-                    "only when deadline reliability, "
-                    "review capacity, and collected "
-                    "cohort contribution remain healthy. "
-                    "Additional leads cannot repair "
-                    "a cash-starved recovery operation."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Play Completion and Formula v2.0 Cash-Based Scaling Bridge",
-                "headers": [
-                    "Distribution play or canonical operating scenario",
-                    "Measured input and economic conversion basis",
-                    "Concrete output with substantive operating interpretation",
-                    "Risk fallback or capacity protection mechanism",
-                ],
-                "rows": [
-                    [
-                        "Play nine: high_velocity_dm_outbound_systems uses permission-led TRACK_2 triggers",
-                        "User initiates contact before supported automated message dispatch",
-                        "Two engagements from $1,020 spend imply $510 acquisition cost",
-                        "Stop restricted messaging and resume only through permitted interaction",
-                    ],
-                    [
-                        "Play ten: provider_referral_loop distributes useful partner-facing operating worksheets",
-                        "Partners share educational assets without transmitting identifiable claim details",
-                        "Attribute qualified samples and collected contribution to referring sources",
-                        "Stop weak referral sources producing repeatedly ineligible claim inventories",
-                    ],
-                    [
-                        "Play eleven: jurisdiction_content_engine publishes reviewed narrow operational answers",
-                        "Primary authorities and current effective rules support every page",
-                        "One approved worksheet supports presentation search and inbound distribution",
-                        "Withdraw stale pages and replace unsupported performance assertions",
-                    ],
-                    [
-                        "Play twelve: cohort_margin_feedback connects acquisition to collected operating contribution",
-                        "Source-linked engagements retain eligibility cost and cash conversion histories",
-                        "Scale only cohorts supporting reviewer capacity and positive contribution",
-                        "Reduce acquisition spend when fee advances outpace incremental collections",
-                    ],
-                    [
-                        "Conservative scenario retains one full-time employee and two contractors",
-                        "Eligible $440,000 cash pool at twenty-five percent yields $110,000 revenue",
-                        "$77,000 company expenses leave $33,000 profit at thirty-percent margin",
-                        "Preserve working capital before adding new fee-bearing dispute volume",
-                    ],
-                    [
-                        "Base scenario retains one full-time employee and two contractors",
-                        "Eligible $2,020,000 cash pool at twenty-five percent yields $505,000 revenue",
-                        "$287,850 company expenses leave $217,150 profit at 43.0% margin",
-                        "Inspect reviewer utilization and payer collection aging each week",
-                    ],
-                    [
-                        "Scaled scenario uses two full-time employees and three contractors",
-                        "Eligible $3,600,000 cash pool at twenty-five percent yields $900,000 revenue",
-                        "$396,000 company expenses leave $504,000 profit at fifty-six-percent margin",
-                        "Expand only after exception queues and cash reserves remain stable",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Automate the evidence trail, keep people accountable for consequential decisions, and count the money only when incremental cash clears.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Execute client authority and applicable HIPAA Business Associate Agreements, then configure tenant-isolated evidence storage with minimum necessary access.",
-        "Implement versioned 835 parsing, CARC/RARC mapping, and an evidence-linked jurisdiction router that abstains when plan funding or service facts remain unresolved.",
-        "Test separate negotiation-initiation, negotiation-period, and IDR-initiation clocks, including holidays, batching constraints, cooling-off restrictions, and uncertain delivery receipts.",
-        "Build a source-cited offer compiler that excludes prohibited benchmarks and requires attributable human confirmation of clinical facts, offer amounts, and final attachments.",
-        "Reconcile incremental bank-confirmed collections, administrative fees, entity-fee refunds, direct casework deductions, and earned contingencies before updating owner-profit reporting.",
-        "Launch a permission-led worksheet campaign, measure acquisition through collected cohort contribution, and audit the 70%+ automation target using stable task definitions and rework-adjusted labor.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "42 U.S.C. § 300gg-111 — Preventing surprise medical bills",
-            "url": "https://www.law.cornell.edu/uscode/text/42/300gg-111",
-            "relevance": (
-                "Primary federal authority for covered surprise-billing protections, "
-                "open negotiation, IDR, permissible and prohibited considerations, "
-                "batching, subsequent disputes, and payment obligations."
-            ),
-        },
-        {
-            "title": "45 CFR § 149.510 — Independent dispute resolution process",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-B/part-149/subpart-F/section-149.510",
-            "relevance": (
-                "Operational framework for federal negotiation and IDR timing, "
-                "certified entities, offers, batching, fees, determinations, "
-                "and post-determination obligations; apply operative provisions "
-                "with current official implementation and controlling decisions."
-            ),
-        },
-        {
-            "title": "29 U.S.C. § 1144 — Other laws and ERISA preemption",
-            "url": "https://www.law.cornell.edu/uscode/text/29/1144",
-            "relevance": (
-                "Supports plan-funding and state-law jurisdiction analysis, "
-                "including the insurance savings and deemer provisions; "
-                "employer association alone does not establish a federal IDR route."
-            ),
-        },
-        {
-            "title": "45 CFR § 164.504 — Uses and disclosures: organizational requirements",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504",
-            "relevance": (
-                "Defines business-associate contractual requirements relevant "
-                "to provider engagements and downstream services handling "
-                "protected health information."
-            ),
-        },
-        {
-            "title": "45 CFR § 164.312 — Technical safeguards",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312",
-            "relevance": (
-                "Anchors access control, audit controls, integrity, authentication, "
-                "and transmission-security design for the evidence pipeline."
-            ),
-        },
-        {
-            "title": "45 CFR § 164.514 — Other requirements relating to uses and disclosures",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.514",
-            "relevance": (
-                "Provides de-identification standards and minimum necessary "
-                "requirements relevant to model inputs, partner materials, "
-                "and public acquisition content."
-            ),
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'vol045-q10-revenue-cycle-engine-front-mid-back-rcm-workflow',
+ 'question_prompt': 'What is the end-to-end revenue cycle workflow that every out-of-network claim and IDR '
+                    'dispute depends on?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'The Revenue Cycle Engine: Front-, Mid-, and Back-End RCM Workflow',
+ 'subtitle': 'Registration through final payment, the 13-step RCM workflow, front-end RCM, medical billing '
+             'vs. RCM, the AMA private-practice RCM playbook, recommended billing workflows, '
+             'practice-management RCM programs, and how denials and deductions originate',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners converge on one model: RCM is a front-to-back line from scheduling to '
+                      'a zero balance, not a billing function, and the front desk is where it breaks '
+                      'first. RCMOpsPro claims over 80% of denials originate in registration. The AMA ties '
+                      'unresolved denials to an average $5M annual loss, about 5% of net patient revenue, '
+                      'with initial denial rates climbing from 9% to 12%. The street mechanics are '
+                      'concrete: verify the night before, scrub per payer, drop claims within 24 to 48 '
+                      'hours, post to the deposit date, skip claims under three weeks old on AR calls, and '
+                      "work 40 to 60 accounts a day. The disagreements are sharp. PayerWatch's Ryan O'Hara "
+                      'calls AR days a silly benchmark and fights only winnable denials, while Amazing '
+                      'Charts chases $10 claims. Vendors also split on outsourcing versus keeping an '
+                      'in-house biller.',
+ 'key_metrics': [{'label': 'Front-End Share of Claim Denials',
+                  'metric': 'Front-End Share of Claim Denials',
+                  'value': 'Over 80%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Diego Samson claims over 80% of all claim denials originate in registration '
+                             'and financial clearance. He says a missed middle initial triggers a hard '
+                             'denial 30 days later.',
+                  'source': 'RCMOpsPro ([RddJn-tA3OM @ 00:00:40])'},
+                 {'label': 'Average Annual Loss From Unresolved Denials',
+                  'metric': 'Average Annual Loss From Unresolved Denials',
+                  'value': '$5M per year, about 5% of net patient revenue',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The AMA team reports that unresolved denials average a $5M annual loss. They '
+                             'also report that initial denial rates rose from 9% to 12% between 2016 and '
+                             'early 2022.',
+                  'source': 'American Medical Association (AMA) ([Ie5ARcGEY1g @ 00:20:23])'},
+                 {'label': 'Cash Flow Gap Between 30 and 70 AR Days',
+                  'metric': 'Cash Flow Gap Between 30 and 70 AR Days',
+                  'value': '$328M on $3B annual revenue',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '$3B divided by 365 is $8.2M per day. That puts $246M outstanding at 30 days '
+                             'and $574M at 70 days, a $328M cash flow difference.',
+                  'source': 'AHealthcareZ - Healthcare Finance Explained ([rqdWr9ynZ_o @ 00:12:07])'},
+                 {'label': 'Collections Lift After Vendor Takeover',
+                  'metric': 'Collections Lift After Vendor Takeover',
+                  'value': '15-20% within the first months',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Greg of PGM/ACRCM says new clients commonly see collections rise 15 to 20% '
+                             'over the first few months, within six months, on a contingency-fee model.',
+                  'source': 'Amazing Charts ([eKRUeJa5ZzQ @ 00:14:57])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every practitioner who defines the engine rejects the idea that it is just '
+                              'billing. JobRath calls equating RCM with medical billing the biggest '
+                              'interview mistake. JobRath frames the cycle as running from scheduling to '
+                              'reimbursement and a zero balance, through registration, verification, '
+                              'eligibility, charge capture, coding, submission, posting, denials, AR '
+                              'follow-up, appeals, and collections [WCjl2ZOU1ec @ 00:00:39]. Advanced '
+                              'Coding Services makes the same cut with a workshop analogy. Billing is the '
+                              "hammer, focused on paperwork after care is delivered, while RCM 'starts "
+                              "earlier and ends later' and wires the front desk, clinical billing, and "
+                              'finance into one flow of money and information [SSnnU_haYdA @ 00:00:52]. '
+                              'AHealthcareZ pushes back on the word itself, saying it is not really a '
+                              'cycle but more like a line. That line runs from pre-registration and '
+                              'registration through charge capture, utilization review, coding, and CDI '
+                              'before a claim leaves the building [rqdWr9ynZ_o @ 00:01:19]. Etactics '
+                              'splits the line into front, mid, and back segments and compares them to '
+                              'gears in a watch: when one gear fails, the whole cycle suffers. Etactics '
+                              'warns that attention skews toward coding, billing, denials, and posting, '
+                              'while the patient-access front end gets far less focus than its impact '
+                              'deserves [M-Mz0m1tdrQ @ 00:00:16].',
+                              'The sharpest consensus is that money is won or lost at the front desk. '
+                              "RCMOpsPro's Diego Samson claims that 'over 80% of all claim denials "
+                              "originate right here,' in registration and financial clearance. He warns "
+                              'that a missed middle initial sits silently in the system until it triggers '
+                              'a hard denial 30 days later, and his remedy is front-desk quality assurance '
+                              '[RddJn-tA3OM @ 00:00:40]. Dr. C Chen and Taylor Johnson of the AMA list the '
+                              'same registration errors: wrong DOB, wrong insurance ID, nicknames instead '
+                              'of legal names, a missing group number, a missing middle initial, and '
+                              'missing guarantor information [Ie5ARcGEY1g @ 00:04:10]. RCM Mastery is '
+                              "blunter. One wrong birth-date digit means a 'guaranteed claim denial,' and "
+                              'skipping pre-authorization on an MRI produces a 100% denial [okx8geMd-gU @ '
+                              "00:01:27]. Contempo Coding's Victoria, a coder and auditor since 2007, "
+                              'attacks the old saying that all roads lead back to coding. She insists '
+                              "denials 'can happen at any point,' including when a registered name fails "
+                              'to match the insurance card [pG2R1NwUlro @ 00:02:29]. All four voices lead '
+                              'to the same conclusion. Registration accuracy, eligibility, and '
+                              'authorization are the first revenue-protection layer, not clerical chores. '
+                              'Errors made there surface weeks later as back-end denials and AR aging, '
+                              'long after the patient has left.',
+                              'Practitioners also agree that the phases are interlocked, so a break '
+                              "anywhere becomes a cash problem everywhere. Samson describes a 'fragile "
+                              "continuous pipeline' in which a patient-access failure cascades into "
+                              'mid-cycle coding problems and then a back-end cash flow crisis. He calls '
+                              'that awareness the difference between a billing clerk and an RCM operations '
+                              'expert [RddJn-tA3OM @ 00:01:52]. UtreatiBill runs its flow from '
+                              'registration and eligibility through certified coding, which it calls the '
+                              "point 'where many denials begin.' From there it moves through clean claims, "
+                              'posting, root-cause denial work, AR follow-up, clear statements, and '
+                              'reporting. UtreatiBill reports that when any step breaks, cash slows and '
+                              'staff burn out [_0Dt6rewEvU @ 00:01:20]. Medicalbillingz contrasts '
+                              'end-to-end RCM with traditional RCM that focuses on fragments. Its front '
+                              'end is scheduling, eligibility, and verification; its mid cycle is '
+                              'submission, denial prevention, and coding; its back end is posting, '
+                              "denials, and patient billing. It closes with 'Prevention is always cheaper "
+                              "than cure' [LBZTRJRtZ54 @ 00:01:54]. MedConsults frames the same three "
+                              'segments as patient access, revenue integrity, and patient financial '
+                              'services. It treats the roughly 50-day collection lag as an interest-free '
+                              'loan to the payer [YlcvgGZT9eQ @ 00:02:47]. The baseline prerequisite is to '
+                              'own the whole line, not one department of it.'],
+               'table': {'caption': 'Where the practitioners agree on how the revenue cycle engine works',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Says',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['RCM is far bigger than medical billing alone',
+                                   'Runs from scheduling through appeals and collections to a zero account '
+                                   'balance',
+                                   'Own every step from the appointment call to final reimbursement',
+                                   'JobRath ([WCjl2ZOU1ec @ 00:00:39])'],
+                                  ['The front end is the main denial factory',
+                                   'Over 80% of denials originate here; a missed middle initial '
+                                   'hard-denies 30 days later',
+                                   'Install front-desk quality assurance before any claim gets built',
+                                   'RCMOpsPro ([RddJn-tA3OM @ 00:00:40])'],
+                                  ['Registration errors follow a predictable, repeatable pattern',
+                                   'Wrong DOB, wrong ID, nicknames, missing group number, middle initial, '
+                                   'and guarantor',
+                                   'Check each of those fields on every single patient intake',
+                                   'American Medical Association (AMA) ([Ie5ARcGEY1g @ 00:04:10])'],
+                                  ['Prior authorization is a hard payment gate',
+                                   'Skipping pre-authorization for an MRI produces a 100% claim denial',
+                                   'Confirm authorization status before the service is ever delivered',
+                                   'RCM Mastery ([okx8geMd-gU @ 00:01:27])'],
+                                  ['Denials are not only a coding problem',
+                                   'Denials happen at any point, including a name mismatch with the '
+                                   'insurance card',
+                                   'Hunt revenue leaks across registration, verification, and charge '
+                                   'capture too',
+                                   'Contempo Coding ([pG2R1NwUlro @ 00:02:29])'],
+                                  ['Front, mid, and back end mesh like gears',
+                                   'If one gear in the watch fails, the entire revenue cycle suffers',
+                                   'Rebalance attention toward patient access, not only coding and posting',
+                                   'Etactics ([M-Mz0m1tdrQ @ 00:00:16])'],
+                                  ['Prevention beats rework on the back end',
+                                   'Prevention is always cheaper than cure; AI predicts denials before '
+                                   'submission',
+                                   'Fund denial prevention upstream instead of only appeals downstream',
+                                   'Medicalbillingz ([LBZTRJRtZ54 @ 00:01:54])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['On the front end, the mechanics come down to timing and collecting cash at '
+                              'the point of service. MedConsults teaches a sequence: verify insurance '
+                              'right after scheduling, obtain pre-certification, counsel the patient, '
+                              're-verify at the time of service, and collect co-pays on the spot. The '
+                              "reason it gives is that 'money collected now never becomes a receivable' "
+                              "[YlcvgGZT9eQ @ 00:04:18]. Contempo Coding's Victoria runs verification the "
+                              'night before or days ahead to catch terminated coverage and wrong payer '
+                              'order. She notes that Medicaid is usually the last payer and does not like '
+                              'to pay anything before everyone else does [pG2R1NwUlro @ 00:05:00]. As a '
+                              'supervisor, Victoria also trained front-desk staff on incident-to and '
+                              'advanced-practitioner billing. Billing under the provider can earn 100% of '
+                              'the fee schedule, while many payers reduce pay on visits handled only by an '
+                              "APP. The AMA team adds a hard fix drawn from Chen's own loss. After a "
+                              "centralized business office relied on a 'payer matrix' instead of obtaining "
+                              'real prior auth, denied claims were charged off silently. The fix is a '
+                              'communication workflow between the front desk and prior-auth/referral '
+                              'staff, plus a triage list of upcoming appointments [Ie5ARcGEY1g @ '
+                              '00:06:52]. Etactics folds financial counseling and pre-visit estimates into '
+                              'the same layer, saying they cut the number of bills sent to collections '
+                              '[M-Mz0m1tdrQ @ 00:03:38].',
+                              'Mid-cycle and claim submission run on scrubbers, clearinghouses, and speed. '
+                              'Samson describes claims going out as an 837 EDI transmission through '
+                              'scrubber edits and clearinghouse logic. Analysts then read the 835 '
+                              "remittance to find the root cause and 'legally force' payment [RddJn-tA3OM "
+                              "@ 00:01:25]. The AMA defines a clean claim as 'one with all the information "
+                              "on it, free of errors and nothing missing.' It tells practices to set "
+                              'required-field edits for each payer with their vendor and fix every error '
+                              'before batch submission. The common gaps it lists are unchecked boxes, '
+                              'missing prior-auth numbers, and missing taxonomy or NPI. It also requires '
+                              'every CPT code to link to a diagnosis code, with no code changes made '
+                              "without clinician approval [Ie5ARcGEY1g @ 00:19:04]. Amazing Charts' Greg "
+                              'layers a second clearinghouse scrub on top of the PM scrub and works '
+                              'first-pass rejections within about an hour. His target is claims at '
+                              'carriers within 24 to 48 hours of receipt. An HL7 feed sweeps chart data on '
+                              'a set interval, so nobody pushes charges manually at day-end [eKRUeJa5ZzQ @ '
+                              "00:21:14]. RCM Mastery's adjudication split shows why the scrub matters. "
+                              'About 65% of claims are paid in full, a quarter are paid only partially, '
+                              "and 'a solid 10% are just denied.' It calls claim scrubbing an automated "
+                              'final check that massively boosts first-try payment [okx8geMd-gU @ '
+                              '00:03:32].',
+                              'The back end is a disciplined sequence, and Inlera University gives the '
+                              'most granular playbook. Post payments using the EFT or bank-deposit date, '
+                              'not whenever is convenient. Reconcile with the bookkeeper, request '
+                              'deposit-only bank access, and run everything through one revenue account. '
+                              "Work denials to zero, push unclear denials to the top of that payer's AR "
+                              "list, and leave 'breadcrumbs' in the account notes. For AR, pivot by payer "
+                              'and work the highest volume first. Exclude claims under three weeks old, '
+                              'because payers pay in 7 to 14 days. Scan for odd amounts or codes before '
+                              'calling, and never work AR before posting is caught up [RvLjKE1S1eU @ '
+                              "00:06:32]. MedConsults sets the productivity bar: 'Work 40 to 60 accounts a "
+                              "day and document every effort in the system notes' [YlcvgGZT9eQ @ "
+                              "00:10:20]. On triage, PayerWatch's Ryan O'Hara rejects working denials in "
+                              "reverse gross-charge order. He preaches 'smart work': fight what you can "
+                              'win, even if that means writing off a $200,000 account you cannot win '
+                              '[cePrn8Rhav8 @ 00:12:00]. Amazing Charts takes the opposite line on small '
+                              'balances. Greg says they absolutely will chase a $10 claim, and they status '
+                              'every claim in the 60-plus day bucket by phone or payer portal, all '
+                              'documented [eKRUeJa5ZzQ @ 00:33:11]. That split between selective and '
+                              'exhaustive AR work shapes staffing math.'],
+               'table': {'caption': 'Hard numbers, formulas, and tools the practitioners use to run the '
+                                    'engine',
+                         'headers': ['Mechanic or Metric',
+                                     'Exact Figure or Tool Stated',
+                                     'How the Operator Uses It',
+                                     'Expert Source'],
+                         'rows': [['Gross-to-net-to-cash revenue model',
+                                   '$1B gross becomes $400M net and $380M cash; $20M in deductions, about '
+                                   '5%',
+                                   'Track gross, net, and cash separately; gross alone misleads on '
+                                   'performance',
+                                   'PayerWatch ([cePrn8Rhav8 @ 00:19:17])'],
+                                  ['Daily cash value of AR days',
+                                   '$3B divided by 365 equals $8.2M per day; 30 versus 70 days is $328M',
+                                   'Price every AR day as trapped cash in management reporting',
+                                   'AHealthcareZ - Healthcare Finance Explained ([rqdWr9ynZ_o @ '
+                                   '00:12:07])'],
+                                  ['Expected collections forecasting formula',
+                                   '$100K in claims times a 75% gross collection rate gives $75K expected',
+                                   'Reconcile daily, weekly, and monthly against the forecast and '
+                                   'first-pass rate',
+                                   'Inlera University ([RvLjKE1S1eU @ 00:42:33])'],
+                                  ['Core KPI targets for a hospital revenue cycle',
+                                   'Bad debt under 3%, net AR days about 50, and DNFB about 4 days',
+                                   'Benchmark monthly dashboards against these targets and escalate the '
+                                   'gaps',
+                                   'MedConsults ([YlcvgGZT9eQ @ 00:11:34])'],
+                                  ['Denial rate by payer class',
+                                   'Public payers 4-5%, private payers about 6.5%, managed care over 9%',
+                                   'Staff denial work heavier where the managed care payer mix '
+                                   'concentrates',
+                                   'MedConsults ([YlcvgGZT9eQ @ 00:15:10])'],
+                                  ['Outsourced RCM vendor pricing claim',
+                                   'Pricing starts at just 2%; 99.9% acceptance claimed across 1,500-plus '
+                                   'practices',
+                                   'Compare percentage fees against the full cost of in-house billing '
+                                   'staff',
+                                   'UtreatiBill LLC ([_0Dt6rewEvU @ 00:01:58])'],
+                                  ['Cost structure of in-house billing',
+                                   'Salaries and benefits are about 77% of cost; statements cost about 50 '
+                                   'cents plus labor',
+                                   "Model in-house versus contingency fees on the practice's actual "
+                                   'collections',
+                                   'Amazing Charts ([eKRUeJa5ZzQ @ 00:12:28])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Field moves the billers actually run',
+                           'body': 'Small workflow habits from working billers and denial researchers. '
+                                   'Each one cuts repeat calls, speeds up appeals, or stops a payer from '
+                                   'hiding in the wrong bucket.',
+                           'items': ['Leave breadcrumbs: note every denial action in the account so the '
+                                     'next follow-up caller picks up without re-researching, and push '
+                                     'unclear denials to the top of the same-payer AR list [Inlera '
+                                     'University — RvLjKE1S1eU @ 00:14:20]',
+                                     'Save any payer request that took more than 10 minutes as a reusable '
+                                     'template in Google Docs or OneNote, so the second one takes seconds '
+                                     '[Inlera University — RvLjKE1S1eU @ 00:34:32]',
+                                     'Give Medicare Advantage its own payer bucket. Traditional Medicare '
+                                     'pays in about 14 days, but MA behaves like commercial, and its share '
+                                     'of AR over 90 days rose from 19% to 36% [PayerWatch — cePrn8Rhav8 @ '
+                                     '00:49:55]',
+                                     'Work zero-pays by reason code: deductible, out-of-network, maxed '
+                                     'benefits, or termed policy. On termed policies, call the patient and '
+                                     'update both the PM and the EHR [Amazing Charts — eKRUeJa5ZzQ @ '
+                                     '00:25:53]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Clear the patient before the visit',
+                              'action': 'Run eligibility and authorization checks the night before or days '
+                                        'ahead.',
+                              'detail': 'Verify ahead of the visit to catch terminated coverage and wrong '
+                                        'payer order, with Medicaid billed last [Contempo Coding — '
+                                        'pG2R1NwUlro @ 00:04:33]. Confirm pre-authorization on imaging '
+                                        'such as MRI, because skipping it means a 100% denial [RCM Mastery '
+                                        '— okx8geMd-gU @ 00:01:27].'},
+                             {'step': 2,
+                              'title': 'Scrub per payer and drop claims fast',
+                              'action': 'Set required-field edits for each payer and clear every error '
+                                        'before batch submission.',
+                              'detail': 'Build per-payer edits with the vendor for taxonomy, NPI, and '
+                                        'prior-auth numbers [American Medical Association (AMA) — '
+                                        'Ie5ARcGEY1g @ 00:19:04]. Run a second clearinghouse scrub, work '
+                                        'first-pass rejections within about an hour, and land claims at '
+                                        'carriers in 24 to 48 hours [Amazing Charts — eKRUeJa5ZzQ @ '
+                                        '00:21:14].'},
+                             {'step': 3,
+                              'title': 'Post to the bank date, then kill denials',
+                              'action': 'Post payments using the EFT or deposit date and work every denial '
+                                        'to zero.',
+                              'detail': 'Post using the EFT or bank-deposit date, reconcile with the '
+                                        'bookkeeper, and run one revenue account [Inlera University — '
+                                        'RvLjKE1S1eU @ 00:06:32]. Work denials to zero and leave '
+                                        'breadcrumb notes for the follow-up caller [Inlera University — '
+                                        'RvLjKE1S1eU @ 00:14:20].'},
+                             {'step': 4,
+                              'title': 'Work AR by payer volume and age',
+                              'action': 'Pivot AR by payer, skip fresh claims, and chase the 60-plus day '
+                                        'bucket.',
+                              'detail': 'Pivot by payer, work the highest volume first, and exclude claims '
+                                        'under three weeks old because payers pay in 7 to 14 days [Inlera '
+                                        'University — RvLjKE1S1eU @ 00:18:58]. Status every claim in the '
+                                        '60-plus day bucket by phone or portal and document it [Amazing '
+                                        'Charts — eKRUeJa5ZzQ @ 00:32:51].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over where denials are born. RCMOpsPro plants the '
+                              'flag at the front desk, stating that "over 80% of all claim denials '
+                              'originate right here" in registration and financial clearance, where a '
+                              'missed middle initial sits silently until it fires a hard denial 30 days '
+                              'later [RddJn-tA3OM @ 00:00:40]. The AMA team of Dr. C Chen and Taylor '
+                              'Johnson points the other way, naming coding errors as the most common cause '
+                              'of denials and insisting that every CPT code be linked to a diagnosis code '
+                              '[Ie5ARcGEY1g @ 00:08:32]. UtreatiBill splits the difference, framing '
+                              'certified coding as the stage "where many denials begin" while still '
+                              'running registration and eligibility ahead of it [_0Dt6rewEvU @ 00:00:26]. '
+                              'Victoria at Contempo Coding, a coder and auditor since 2007, openly rejects '
+                              'the old saying that all roads lead back to coding: denials "can happen at '
+                              'any point," including a name that does not match the insurance card at '
+                              'registration [pG2R1NwUlro @ 00:02:29]. The operator read is that the denial '
+                              'source depends on which seat you sit in. A front-desk QA program attacks '
+                              'the RCMOpsPro failure point, a clinician-approval lock on codes attacks the '
+                              'AMA failure point, and neither replaces the other when both leaks run at '
+                              'once.',
+                              'AR days is the second fault line. AHealthcareZ treats it as the master cash '
+                              'lever: on a $3 billion system booking $8.2 million a day, the gap between '
+                              '30 and 70 days is $328 million of cash flow, and the typical 30-to-70 range '
+                              'has not moved in 26 years [rqdWr9ynZ_o @ 00:10:33]. MedConsults runs the '
+                              'same playbook with a target of roughly 50 net AR days, citing a turnaround '
+                              'from 60 to 48 days over six quarters [YlcvgGZT9eQ @ 00:13:29]. Inlera '
+                              'University sets a monthly AR cycle, calls 60 days acceptable, and draws a '
+                              'personal line: "I don\'t like going beyond 90 days" [RvLjKE1S1eU @ '
+                              "00:22:06]. Ryan O'Hara of Denial Research Group, speaking on PayerWatch, "
+                              'calls the whole benchmark silly and proves it with a single sentence: "I '
+                              'can make AR days be whatever you want it to be it can be zero tomorrow I '
+                              'just got to write off all my AR" [cePrn8Rhav8 @ 00:45:29]. The alternative '
+                              'playbook is to read AR days only alongside write-offs and deductions, '
+                              'because a falling number can hide a bleeding write-off ledger. Operators '
+                              'who report AR days to owners without the matching adjustment totals are '
+                              'handing over a figure that can be engineered at will.',
+                              "The third split is how hard to chase. O'Hara on PayerWatch attacks the "
+                              'habit of working denials in reverse gross-charge order and preaches "smart '
+                              'work": fight what you can win, even if that means writing off a $200,000 '
+                              'account that cannot be won [cePrn8Rhav8 @ 00:12:00]. Victoria at Contempo '
+                              'Coding prioritizes denials by high dollar value and by aging, a ranking '
+                              "that stays closer to the dollar-first habit O'Hara criticizes [pG2R1NwUlro "
+                              '@ 00:10:17]. Inlera University takes the opposite pole, working denials to '
+                              'zero, pushing unclear denials to the top of the same-payer AR list, and '
+                              'leaving "breadcrumbs" in the account notes for the follow-up caller '
+                              '[RvLjKE1S1eU @ 00:14:20]. Greg at Amazing Charts goes furthest on the '
+                              'chase-everything side, answering the small-balance question flatly: "will '
+                              'you chase a $10 claim the answer is yes we absolutely will," with AR '
+                              'follow-up hitting every claim in the 60-plus-day bucket [eKRUeJa5ZzQ @ '
+                              '00:33:11]. Greg ties that zeal to the contingency fee: "don\'t get you paid '
+                              'we don\'t get paid so we are aligned with your practice." The operator '
+                              'choice is between a winnability filter that protects staff hours and a '
+                              'zero-balance sweep that captures every small dollar.'],
+               'table': {'caption': 'Side-by-side playbooks where practitioners split on denial origin, '
+                                    'benchmarks, chase depth, and ownership',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Where denials are actually born in the cycle',
+                                   'RCMOpsPro says over 80% of denials originate in registration and '
+                                   'financial clearance, fixed with front-desk QA',
+                                   'AMA names coding errors the most common denial cause and bars staff '
+                                   'from changing codes without clinician approval',
+                                   'RCMOpsPro ([RddJn-tA3OM @ 00:00:40]); American Medical Association '
+                                   '(AMA) ([Ie5ARcGEY1g @ 00:09:31])'],
+                                  ['Whether coding is the root of every denial',
+                                   'Victoria rejects the saying that all roads lead back to coding, since '
+                                   'denials happen at any point',
+                                   'UtreatiBill frames certified coding as the stage where many denials '
+                                   'begin in the workflow',
+                                   'Contempo Coding ([pG2R1NwUlro @ 00:02:29]); UtreatiBill LLC '
+                                   '([_0Dt6rewEvU @ 00:00:26])'],
+                                  ['AR days as the primary owner scorecard',
+                                   'MedConsults targets about 50 net AR days and AHealthcareZ prices the '
+                                   '30-to-70-day gap at $328 million',
+                                   "O'Hara calls AR days silly because writing off all AR can push the "
+                                   'number to zero tomorrow',
+                                   'MedConsults ([YlcvgGZT9eQ @ 00:13:29]); PayerWatch ([cePrn8Rhav8 @ '
+                                   '00:45:29])'],
+                                  ['How hard to chase small and unwinnable balances',
+                                   'Greg at Amazing Charts chases every 60-plus-day claim and says yes to '
+                                   'chasing a $10 claim',
+                                   "O'Hara fights only winnable denials, even writing off a $200,000 "
+                                   'account that cannot be won',
+                                   'Amazing Charts ([eKRUeJa5ZzQ @ 00:33:11]); PayerWatch ([cePrn8Rhav8 @ '
+                                   '00:12:00])'],
+                                  ['How avoidable denials really are in practice',
+                                   'HFMA claims 85% of denials are avoidable, and Medicalbillingz says AI '
+                                   'cuts denial rates 30% or more',
+                                   "O'Hara says that only holds if payers were predictable, and Carla "
+                                   'notes many denials get overturned',
+                                   'PayerWatch ([cePrn8Rhav8 @ 00:42:07]); Medicalbillingz ([LBZTRJRtZ54 @ '
+                                   '00:01:20])'],
+                                  ['In-house billing versus handing off full ownership',
+                                   'Medicalbillingz says in-house keeps control but needs costly training; '
+                                   'Amazing Charts calls PM-only a DIY toolbox',
+                                   'Outsourcing gives scale but demands a trusted partner; full RCM moves '
+                                   'ownership of claims to the vendor',
+                                   'Medicalbillingz ([LBZTRJRtZ54 @ 00:01:20]); Amazing Charts '
+                                   '([eKRUeJa5ZzQ @ 00:02:05])'],
+                                  ['Where the RCM perimeter actually starts',
+                                   'Advanced Coding Services says RCM starts earlier and ends later, from '
+                                   'the appointment call to final reporting',
+                                   'Amazing Charts takes RCM responsibility only once the chart is signed '
+                                   'off and moved to the billing queue',
+                                   'Advanced Coding Services ([SSnnU_haYdA @ 00:00:52]); Amazing Charts '
+                                   '([eKRUeJa5ZzQ @ 00:07:04])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["The costliest failure reported is the AMA's own war story. After Dr. C "
+                              "Chen's practice moved to a centralized regional business office, accounts "
+                              'receivable lagged expected volumes; digging with the practice manager '
+                              'revealed the office was leaning on a "payer matrix" instead of obtaining '
+                              'prior authorizations, and denied claims were being charged off with no '
+                              'notification. "We eventually did get the problem fixed, but not before many '
+                              'thousands of dollars were lost," and the only signal that caught it was the '
+                              'AR report [Ie5ARcGEY1g @ 00:06:29]. RCM Mastery puts hard edges on the same '
+                              'trap: one wrong digit in a birth date is a guaranteed claim denial, and '
+                              'skipping pre-authorization on an MRI means a 100% denial [okx8geMd-gU @ '
+                              '00:01:27]. Etactics warns that attention skews toward coding, billing, '
+                              'denials and posting, which leaves the front end that feeds them '
+                              'under-watched [M-Mz0m1tdrQ @ 00:00:33]. RCMOpsPro closes the loop on the '
+                              'cascade: a patient-access failure turns into a mid-cycle coding problem and '
+                              'then a back-end cash-flow crisis [RddJn-tA3OM @ 00:01:52]. The lesson from '
+                              "Chen's office is blunt. Centralizing the business office did not centralize "
+                              'accountability, and the write-offs ran silently until someone read the '
+                              'receivables.',
+                              'The back-end traps are about sequence and integrity. Inlera University '
+                              'refuses to let anyone work AR before payment posting is caught up, posts by '
+                              'the EFT or bank-deposit date rather than whenever convenient, and '
+                              'reconciles daily, weekly and monthly with the bookkeeper [RvLjKE1S1eU @ '
+                              '00:25:58]. The same session flags charge-poster bonuses as a fraud risk, '
+                              'sets audits at a 10% sample, and calls a modifier slapped on as a fix '
+                              '"abuse" [RvLjKE1S1eU @ 01:02:44]. Victoria at Contempo Coding warns that a '
+                              'paid claim is not a clean bill of health: "oh well the claim got paid so '
+                              'that must mean it\'s okay because the insurance paid it not necessarily," '
+                              'with high volumes, high-dollar claims and modifier 25 drawing audits that '
+                              'can claw money back [pG2R1NwUlro @ 00:09:31]. Greg at Amazing Charts '
+                              'describes the owner-side version of the same blindness: physicians who do '
+                              "not know their own biller's software and review no reports at all "
+                              '[eKRUeJa5ZzQ @ 00:18:21]. The common failure is trusting the payment line. '
+                              'Posting lag, bonus-driven charge entry and modifier fixes all look like '
+                              'revenue until reconciliation or a payer audit shows otherwise. Inlera also '
+                              'warns against fee schedules set at 600% of Medicare.',
+                              'The economics checks start with three numbers that PayerWatch keeps apart. '
+                              "Ryan O'Hara defines gross as what you charge, net as what you expect and "
+                              'cash as what you actually get, then walks a $1 billion gross model down to '
+                              '$400 million net and $380 million cash; shifting just 2% of volume from '
+                              'commercial to uninsured is, in O\'Hara\'s words, "over a million dollar a '
+                              "month impact to a place that's probably operating on pretty slim if not "
+                              'some month negative margins" [cePrn8Rhav8 @ 00:23:23]. The AMA puts the '
+                              'denial tax on the same ledger: unresolved denials average a $5 million '
+                              'annual loss, about 5% of net patient revenue, and initial denial rates '
+                              'climbed from 9% to 12% between 2016 and early 2022 [Ie5ARcGEY1g @ '
+                              '00:20:23]. On the cost side, Greg at Amazing Charts prices in-house billing '
+                              'for an internal medicine practice collecting about $310,000 a year, with '
+                              'salaries and benefits running about 77% of the billing cost and each '
+                              'statement costing about 50 cents plus labor [eKRUeJa5ZzQ @ 00:12:28]. '
+                              'UtreatiBill counters with outsourced pricing that "starts at just 2% with '
+                              'no heavy overhead or extra staff" [_0Dt6rewEvU @ 00:01:58]. Run payer mix, '
+                              'denial leakage and staffing cost before picking a vendor.'],
+               'table': {'caption': 'Firsthand failure modes and the economics check each one demands',
+                         'headers': ['Failure Mode',
+                                     'What The Practitioner Reported',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Payer matrix used instead of real prior authorization',
+                                   'Regional business office skipped prior auth and charged off denied '
+                                   'claims with no notification',
+                                   'Many thousands of dollars lost, and only the AR report exposed the lag',
+                                   'American Medical Association (AMA) ([Ie5ARcGEY1g @ 00:06:29])'],
+                                  ['Missed middle initial at front-desk registration',
+                                   'The error sits silently in the system until it triggers a hard denial',
+                                   'Hard denial lands 30 days later, and over 80% of denials start '
+                                   'front-end',
+                                   'RCMOpsPro ([RddJn-tA3OM @ 00:00:40])'],
+                                  ['Late charges and drifting AR at a large hospital',
+                                   'MedConsults lists late charges over 3 days among the core revenue '
+                                   'cycle pitfalls',
+                                   'Big City Medical Center sat at 60 versus 50 AR days at $2.7M per day',
+                                   'MedConsults ([YlcvgGZT9eQ @ 00:15:31]); MedConsults ([YlcvgGZT9eQ @ '
+                                   '00:16:46])'],
+                                  ['Working AR before payment posting is caught up',
+                                   'Inlera forbids AR calls until posting is current and claims are '
+                                   'pivoted by payer',
+                                   'Exclude claims under 3 weeks old because payers typically pay in 7 to '
+                                   '14 days',
+                                   'Inlera University ([RvLjKE1S1eU @ 00:25:58]); Inlera University '
+                                   '([RvLjKE1S1eU @ 00:18:58])'],
+                                  ['Assuming a paid claim is a compliant claim',
+                                   'High volumes, high-dollar claims and modifier 25 can trigger payer '
+                                   'audits after payment',
+                                   'Money already collected can be taken back, so paid revenue is not '
+                                   'banked revenue',
+                                   'Contempo Coding ([pG2R1NwUlro @ 00:09:31])'],
+                                  ['Treating Medicare Advantage like traditional Medicare',
+                                   'Traditional Medicare pays in about 14 days, but MA behaves like a '
+                                   'commercial payer',
+                                   'MA AR over 90 days rose from 19% to 36%, so give MA its own bucket',
+                                   'PayerWatch ([cePrn8Rhav8 @ 00:40:01]); PayerWatch ([cePrn8Rhav8 @ '
+                                   '00:49:55])'],
+                                  ['Owners who never look at billing software or reports',
+                                   "Greg describes physicians who do not know their biller's software and "
+                                   'review no reports',
+                                   'New clients commonly see collections rise 15 to 20% in the first '
+                                   'months after takeover',
+                                   'Amazing Charts ([eKRUeJa5ZzQ @ 00:18:21]); Amazing Charts '
+                                   '([eKRUeJa5ZzQ @ 00:14:57])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before You Trust the Cash Line',
+                           'body': 'Each gate below comes from a loss, clawback, or blind spot the '
+                                   'practitioners reported firsthand. Clear all four before scaling volume '
+                                   'or signing a vendor.',
+                           'items': ["Read the AR report monthly against expected volume, because Chen's "
+                                     'office lost many thousands of dollars before the AR lag exposed the '
+                                     'payer-matrix shortcut and silent charge-offs [American Medical '
+                                     'Association (AMA) — Ie5ARcGEY1g @ 00:16:47].',
+                                     'Block all AR follow-up calls until payment posting is current to the '
+                                     'EFT or bank-deposit date and reconciled with the bookkeeper [Inlera '
+                                     'University — RvLjKE1S1eU @ 00:25:58].',
+                                     'Never treat a paid claim as compliant; review modifier 25, '
+                                     'high-volume, and high-dollar patterns because payers can audit and '
+                                     'take the money back [Contempo Coding — pG2R1NwUlro @ 00:09:31].',
+                                     'Report gross, net, and cash separately and model payer-mix shifts, '
+                                     'because the IHS flu season sent gross revenue off the charts while '
+                                     'net revenue plummeted [PayerWatch — cePrn8Rhav8 @ 00:26:11].']}}],
+ 'pull_quote': '"I can make AR days be whatever you want it to be it can be zero tomorrow I just got to '
+               'write off all my AR." — attributed to PayerWatch (cePrn8Rhav8 @ 00:45:29).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Verify insurance right after scheduling, get pre-certification, then re-verify at '
+                      'the point of service and collect co-pays before the patient leaves [MedConsults — '
+                      'YlcvgGZT9eQ @ 00:03:25].',
+                      'Set per-payer required-field edits with the software vendor and fix every error '
+                      'before batch submission so each claim goes out clean [American Medical Association '
+                      '(AMA) — Ie5ARcGEY1g @ 00:19:04].',
+                      'Work claim monitoring in strict order: unsubmitted claims first, then denied or '
+                      'rejected, then claims accepted more than 30 days ago, oldest first [American '
+                      'Medical Association (AMA) — Ie5ARcGEY1g @ 00:12:24].',
+                      'Pivot AR by payer, work the highest-volume payer first, exclude claims under 3 '
+                      'weeks old, and scan for odd amounts or codes before calling [Inlera University — '
+                      'RvLjKE1S1eU @ 00:18:58].',
+                      'Save any payer request that took over 10 minutes as a reusable template in Google '
+                      'Docs or OneNote [Inlera University — RvLjKE1S1eU @ 00:34:32].',
+                      'Work zero-pays by reason code (deductible, out-of-network, maxed benefits, termed '
+                      'policy), and on a termed policy call the patient and update both PM and EHR '
+                      '[Amazing Charts — eKRUeJa5ZzQ @ 00:25:53].'],
+ 'statutory_citations': [{'title': 'American Medical Association (AMA) — Revenue Cycle Management '
+                                   '[00:05:34]',
+                          'url': 'https://www.youtube.com/watch?v=Ie5ARcGEY1g&t=334s',
+                          'relevance': 'Primary practitioner testimony on the centralized business office '
+                                       'that used a payer matrix instead of prior authorization and '
+                                       'silently charged off denied claims.'},
+                         {'title': 'PayerWatch — Revenue Cycle 101 [00:12:00]',
+                          'url': 'https://www.youtube.com/watch?v=cePrn8Rhav8&t=720s',
+                          'relevance': 'Primary practitioner testimony on smart-work denial triage, '
+                                       'gross-to-net-to-cash modeling, and the case against AR days as a '
+                                       'benchmark.'},
+                         {'title': 'Amazing Charts — Webinar: Amazing Charts Revenue Cycle Management '
+                                   '(RCM) [00:14:39]',
+                          'url': 'https://www.youtube.com/watch?v=eKRUeJa5ZzQ&t=879s',
+                          'relevance': 'Primary practitioner testimony on contingency-fee outsourced RCM, '
+                                       'in-house billing cost structure, and chase-every-claim AR '
+                                       'follow-up.'},
+                         {'title': 'RCMOpsPro — Revenue Cycle Management (RCM) Explained: Front, Mid & '
+                                   'Back End | Created by Diego Samson [00:00:40]',
+                          'url': 'https://www.youtube.com/watch?v=RddJn-tA3OM&t=40s',
+                          'relevance': 'Primary practitioner testimony on front-end denial origin and the '
+                                       'cascade from patient access failure to back-end cash crisis.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'rqdWr9ynZ_o',
+                       'title': 'Revenue Cycle Management in Healthcare Explained',
+                       'channel': 'AHealthcareZ - Healthcare Finance Explained',
+                       'author': 'AHealthcareZ - Healthcare Finance Explained',
+                       'text': 'AR days typically run in a range of 30 to 70 days, and that range has not '
+                               'changed in 26 years.',
+                       'tip': 'AR days typically run in a range of 30 to 70 days, and that range has not '
+                              'changed in 26 years.',
+                       'timestamp': 633,
+                       'timestamp_seconds': 633,
+                       'timestamp_label': '[00:10:33]',
+                       'url': 'https://www.youtube.com/watch?v=rqdWr9ynZ_o&t=633s',
+                       'markdown': '[00:10:33](https://www.youtube.com/watch?v=rqdWr9ynZ_o&t=633s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'M-Mz0m1tdrQ',
+                       'title': '[ANSWERED] What is Front-End Revenue Cycle Management?',
+                       'channel': 'Etactics',
+                       'author': 'Etactics',
+                       'text': 'Revenue cycle management has three parts, the front, mid, and back end, '
+                               'and like a gear in a watch, if one part fails the whole cycle suffers.',
+                       'tip': 'Revenue cycle management has three parts, the front, mid, and back end, and '
+                              'like a gear in a watch, if one part fails the whole cycle suffers.',
+                       'timestamp': 16,
+                       'timestamp_seconds': 16,
+                       'timestamp_label': '[00:00:16]',
+                       'url': 'https://www.youtube.com/watch?v=M-Mz0m1tdrQ&t=16s',
+                       'markdown': '[00:00:16](https://www.youtube.com/watch?v=M-Mz0m1tdrQ&t=16s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WCjl2ZOU1ec',
+                       'title': 'What Is Revenue Cycle Management (RCM)? Interview Answer That Gets You '
+                                'Hired',
+                       'channel': 'JobRath',
+                       'author': 'JobRath',
+                       'text': 'If one step fails, it impacts the entire reimbursement process.',
+                       'tip': 'If one step fails, it impacts the entire reimbursement process.',
+                       'timestamp': 105,
+                       'timestamp_seconds': 105,
+                       'timestamp_label': '[00:01:45]',
+                       'url': 'https://www.youtube.com/watch?v=WCjl2ZOU1ec&t=105s',
+                       'markdown': '[00:01:45](https://www.youtube.com/watch?v=WCjl2ZOU1ec&t=105s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LBZTRJRtZ54',
+                       'title': 'End to End Revenue Cycle Management in Healthcare | Full RCM Workflow',
+                       'channel': 'Medicalbillingz',
+                       'author': 'Medicalbillingz',
+                       'text': 'Prevention is always cheaper than cure.',
+                       'tip': 'Prevention is always cheaper than cure.',
+                       'timestamp': 114,
+                       'timestamp_seconds': 114,
+                       'timestamp_label': '[00:01:54]',
+                       'url': 'https://www.youtube.com/watch?v=LBZTRJRtZ54&t=114s',
+                       'markdown': '[00:01:54](https://www.youtube.com/watch?v=LBZTRJRtZ54&t=114s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YlcvgGZT9eQ',
+                       'title': 'Revenue Cycle Management in Healthcare (Full Course)',
+                       'channel': 'MedConsults',
+                       'author': 'MedConsults',
+                       'text': 'Money collected now never becomes a receivable.',
+                       'tip': 'Money collected now never becomes a receivable.',
+                       'timestamp': 258,
+                       'timestamp_seconds': 258,
+                       'timestamp_label': '[00:04:18]',
+                       'url': 'https://www.youtube.com/watch?v=YlcvgGZT9eQ&t=258s',
+                       'markdown': '[00:04:18](https://www.youtube.com/watch?v=YlcvgGZT9eQ&t=258s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RvLjKE1S1eU',
+                       'title': 'Revenue Cycle Management & Recommended Workflow Part 3 | Medical Billers '
+                                'Network Live',
+                       'channel': 'Inlera University',
+                       'author': 'Inlera University',
+                       'text': "I don't like going beyond 90 days.",
+                       'tip': "I don't like going beyond 90 days.",
+                       'timestamp': 1326,
+                       'timestamp_seconds': 1326,
+                       'timestamp_label': '[00:22:06]',
+                       'url': 'https://www.youtube.com/watch?v=RvLjKE1S1eU&t=1326s',
+                       'markdown': '[00:22:06](https://www.youtube.com/watch?v=RvLjKE1S1eU&t=1326s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ETPWERdn_jE',
+                       'title': 'Break down of 13 steps of US Medical RCM (Revenue Cycle Management)',
+                       'channel': 'RCM Navigator',
+                       'author': 'RCM Navigator',
+                       'text': 'Charge capture ensures no service is left unbilled.',
+                       'tip': 'Charge capture ensures no service is left unbilled.',
+                       'timestamp': 73,
+                       'timestamp_seconds': 73,
+                       'timestamp_label': '[00:01:13]',
+                       'url': 'https://www.youtube.com/watch?v=ETPWERdn_jE&t=73s',
+                       'markdown': '[00:01:13](https://www.youtube.com/watch?v=ETPWERdn_jE&t=73s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_0Dt6rewEvU',
+                       'title': 'Stop Losing Money! Revenue Cycle Management',
+                       'channel': 'UtreatiBill LLC',
+                       'author': 'UtreatiBill LLC',
+                       'text': 'Pricing starts at just 2% with no heavy overhead or extra staff.',
+                       'tip': 'Pricing starts at just 2% with no heavy overhead or extra staff.',
+                       'timestamp': 118,
+                       'timestamp_seconds': 118,
+                       'timestamp_label': '[00:01:58]',
+                       'url': 'https://www.youtube.com/watch?v=_0Dt6rewEvU&t=118s',
+                       'markdown': '[00:01:58](https://www.youtube.com/watch?v=_0Dt6rewEvU&t=118s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ie5ARcGEY1g',
+                       'title': 'Revenue Cycle Management',
+                       'channel': 'American Medical Association (AMA)',
+                       'author': 'American Medical Association (AMA)',
+                       'text': 'So after digging in, we eventually did get the problem fixed, but not '
+                               'before many thousands of dollars were lost.',
+                       'tip': 'So after digging in, we eventually did get the problem fixed, but not '
+                              'before many thousands of dollars were lost.',
+                       'timestamp': 389,
+                       'timestamp_seconds': 389,
+                       'timestamp_label': '[00:06:29]',
+                       'url': 'https://www.youtube.com/watch?v=Ie5ARcGEY1g&t=389s',
+                       'markdown': '[00:06:29](https://www.youtube.com/watch?v=Ie5ARcGEY1g&t=389s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cePrn8Rhav8',
+                       'title': 'Revenue Cycle 101',
+                       'channel': 'PayerWatch',
+                       'author': 'PayerWatch',
+                       'text': "Smart work, smart content: fight what you can win, don't fight what you "
+                               "can't.",
+                       'tip': "Smart work, smart content: fight what you can win, don't fight what you "
+                              "can't.",
+                       'timestamp': 720,
+                       'timestamp_seconds': 720,
+                       'timestamp_label': '[00:12:00]',
+                       'url': 'https://www.youtube.com/watch?v=cePrn8Rhav8&t=720s',
+                       'markdown': '[00:12:00](https://www.youtube.com/watch?v=cePrn8Rhav8&t=720s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cePrn8Rhav8',
+                       'title': 'Revenue Cycle 101',
+                       'channel': 'PayerWatch',
+                       'author': 'PayerWatch',
+                       'text': 'I can make AR days be whatever you want it to be, it can be zero tomorrow, '
+                               'I just got to write off all my AR.',
+                       'tip': 'I can make AR days be whatever you want it to be, it can be zero tomorrow, '
+                              'I just got to write off all my AR.',
+                       'timestamp': 2729,
+                       'timestamp_seconds': 2729,
+                       'timestamp_label': '[00:45:29]',
+                       'url': 'https://www.youtube.com/watch?v=cePrn8Rhav8&t=2729s',
+                       'markdown': '[00:45:29](https://www.youtube.com/watch?v=cePrn8Rhav8&t=2729s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RddJn-tA3OM',
+                       'title': 'Revenue Cycle Management (RCM) Explained: Front, Mid & Back End | Created '
+                                'by Diego Samson',
+                       'channel': 'RCMOpsPro',
+                       'author': 'RCMOpsPro',
+                       'text': 'A missed middle initial will sit silently in the system until it triggers '
+                               'a hard denial 30 days later.',
+                       'tip': 'A missed middle initial will sit silently in the system until it triggers a '
+                              'hard denial 30 days later.',
+                       'timestamp': 40,
+                       'timestamp_seconds': 40,
+                       'timestamp_label': '[00:00:40]',
+                       'url': 'https://www.youtube.com/watch?v=RddJn-tA3OM&t=40s',
+                       'markdown': '[00:00:40](https://www.youtube.com/watch?v=RddJn-tA3OM&t=40s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'V7EGu84Chfc',
+                       'title': "What is Revenue Cycle Management (RCM)? Complete Beginner's Guide by "
+                                'Shiva Rao',
+                       'channel': 'US Healthcare Insights by Shiva',
+                       'author': 'US Healthcare Insights by Shiva',
+                       'text': 'If there are errors or missing information, the claim may be denied or '
+                               'rejected.',
+                       'tip': 'If there are errors or missing information, the claim may be denied or '
+                              'rejected.',
+                       'timestamp': 100,
+                       'timestamp_seconds': 100,
+                       'timestamp_label': '[00:01:40]',
+                       'url': 'https://www.youtube.com/watch?v=V7EGu84Chfc&t=100s',
+                       'markdown': '[00:01:40](https://www.youtube.com/watch?v=V7EGu84Chfc&t=100s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pG2R1NwUlro',
+                       'title': 'What is the Revenue Cycle in Medical Billing and Coding? (RCM Basics '
+                                'Explained)',
+                       'channel': 'Contempo Coding',
+                       'author': 'Contempo Coding',
+                       'text': 'Denials are not all about coding, they can happen at any point.',
+                       'tip': 'Denials are not all about coding, they can happen at any point.',
+                       'timestamp': 149,
+                       'timestamp_seconds': 149,
+                       'timestamp_label': '[00:02:29]',
+                       'url': 'https://www.youtube.com/watch?v=pG2R1NwUlro&t=149s',
+                       'markdown': '[00:02:29](https://www.youtube.com/watch?v=pG2R1NwUlro&t=149s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'okx8geMd-gU',
+                       'title': 'Part 1 || Complete RCM Workflow Explained | From Patient Registration to '
+                                'Payment',
+                       'channel': 'RCM Mastery',
+                       'author': 'RCM Mastery',
+                       'text': 'About 65% get paid in full, but a quarter are only partially paid, and a '
+                               'solid 10% are just denied.',
+                       'tip': 'About 65% get paid in full, but a quarter are only partially paid, and a '
+                              'solid 10% are just denied.',
+                       'timestamp': 212,
+                       'timestamp_seconds': 212,
+                       'timestamp_label': '[00:03:32]',
+                       'url': 'https://www.youtube.com/watch?v=okx8geMd-gU&t=212s',
+                       'markdown': '[00:03:32](https://www.youtube.com/watch?v=okx8geMd-gU&t=212s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eKRUeJa5ZzQ',
+                       'title': 'Webinar: Amazing Charts Revenue Cycle Management (RCM)',
+                       'channel': 'Amazing Charts',
+                       'author': 'Amazing Charts',
+                       'text': 'Will you chase a $10 claim? The answer is yes, we absolutely will.',
+                       'tip': 'Will you chase a $10 claim? The answer is yes, we absolutely will.',
+                       'timestamp': 1991,
+                       'timestamp_seconds': 1991,
+                       'timestamp_label': '[00:33:11]',
+                       'url': 'https://www.youtube.com/watch?v=eKRUeJa5ZzQ&t=1991s',
+                       'markdown': '[00:33:11](https://www.youtube.com/watch?v=eKRUeJa5ZzQ&t=1991s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SSnnU_haYdA',
+                       'title': 'Medical Billing vs Revenue Cycle Management',
+                       'channel': 'Advanced Coding Services',
+                       'author': 'Advanced Coding Services',
+                       'text': 'Revenue cycle management starts earlier and ends later.',
+                       'tip': 'Revenue cycle management starts earlier and ends later.',
+                       'timestamp': 52,
+                       'timestamp_seconds': 52,
+                       'timestamp_label': '[00:00:52]',
+                       'url': 'https://www.youtube.com/watch?v=SSnnU_haYdA&t=52s',
+                       'markdown': '[00:00:52](https://www.youtube.com/watch?v=SSnnU_haYdA&t=52s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

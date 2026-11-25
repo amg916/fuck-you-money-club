@@ -1,540 +1,838 @@
 from __future__ import annotations
 
-CHAPTER_2 = {
-    "id": "Q2",
-    "chapter_id": "Q2",
-    "chapter_number": 2,
-    "question_number": 2,
-    "slug": "who-pays-and-how-recovery-payments-clear",
-    "question_prompt": "Who writes the check in customs duty drawback, tariff refund & antitrust claim recovery, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
-    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "Importer Treasury, CBP Refund Authority, Settlement Administrators, Contingency Contracts & Verified Cash Reconciliation",
-    "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #44, Rank #03 of 49, scores 95/100 by converting neglected recovery rights into earned contingency fees without counting importer principal as revenue. "
-        "Across 12 mapped plays, this chapter separates the economic buyer, authorized claimant, government or settlement payer, and person releasing your invoice. "
-        "Drawback depends on eligible duties and export evidence; tariff refunds depend on the correct procedural window; antitrust distributions depend on settlement-specific purchase eligibility and administrator acceptance. "
-        "The payment architecture combines independently verified beneficiary instructions, explicit fee bases, direct professional engagements, and evidence-linked collection. "
-        "Conservative, Base, and Scaled annual owner profits are $35,200, $231,750, and $533,600. "
-        "Protect those economics by contracting before substantive work, preserving deadlines, and billing only the recoveries actually realized under the agreed earning trigger."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$110,000",
-            "context": "Annual earned contingency-fee revenue; excludes claimant recovery principal",
-            "note": "32% net margin; $35,200 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$515,000",
-            "context": "Annual earned contingency-fee revenue; excludes claimant recovery principal",
-            "note": "45.0% net margin; $231,750 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$920,000",
-            "context": "Annual earned contingency-fee revenue; excludes claimant recovery principal",
-            "note": "58% net margin; $533,600 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Sell recovered cash to the person who can authorize the fee",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The importer or eligible settlement claimant buys the service; CBP and settlement administrators ordinarily pay the claimant, not your operating company. "
-                    "An importer CFO values a documented receivable because duties have already consumed working capital, while the controller fears reopening historical entries without a defensible audit trail. "
-                    "The trade director controls classification evidence and broker relationships but may lack authority to approve a contingency contract. "
-                    "Procurement can approve a supplier yet still leave treasury unable to release payment. "
-                    "Identify all four functions before promising a start date: economic sponsor, records owner, contract signatory, and treasury approver. "
-                    "For a $200,000 realized recovery with a 30% fee and no deductible adjustments, the commercial decision is whether retaining $140,000 justifies releasing $60,000 for work the internal team cannot prioritize. "
-                    "Do not describe the entire $200,000 as your revenue. "
-                    "Ask the sponsor to explain the purchase internally using expired-rights exposure, evidence workload, and incremental cash rather than a speculative savings multiple. "
-                    "A signed engagement from a purchasing analyst is insufficient when the entity's delegation schedule reserves contingent liabilities to the CFO. "
-                    "Verify authority against an actual delegation record or written confirmation from an authorized officer."
-                ),
-                (
-                    "Acute pain differs across the three lanes, so discovery must establish the actual deadline before discussing upside. "
-                    "Drawback rights generally require completion within the applicable five-year framework under 19 U.S.C. § 1313; the particular subsection controls qualifying exports, destruction, substitutions, and filing requirements. "
-                    "A classification refund may instead turn on an unliquidated entry's PSC availability, the generally 180-day protest period under § 1514, or an agreement-specific § 1520(d) claim generally due within one year of importation. "
-                    "Settlement recovery follows the court-approved notice, class definition, exclusions, and submission date, not customs deadlines. "
-                    "Translate each into a dated decision memo identifying the last actionable event and who owns the missing evidence. "
-                    "An importer with $80,000 of supportable refunds has a different buying problem from a distributor with $8 million of settlement-class purchases: the latter figure is purchase volume, not an expected distribution. "
-                    "Present the buyer with separate eligibility, valuation, and timing conclusions. "
-                    "Never use a filing deadline to imply that government approval is certain. "
-                    "When records are incomplete, quote a bounded evidence-retrieval task and preserve independently supportable claims through the authorized professional rather than inflating the recovery forecast."
-                ),
-                (
-                    "The twelve mapped operating applications below use the two supplied play identifiers exactly; the other ten labels describe this chapter's recovery workflows rather than asserting additional catalog identifiers. "
-                    "The first six establish commercial demand and customs evidence; the second six develop claims, authority, and collection protection. "
-                    "For high_velocity_dm_outbound_systems, use a prospect's comment, reaction, or inbound question as the trigger, then route genuine hand-raisers to staff-owned inboxes within platform permissions. "
-                    "An illustrative funnel of 100 triggers, 30 substantive replies, 12 qualified importer calls, and three signed engagements costs $1,500 at $500 per engagement; none of those signatures is collected fee revenue. "
-                    "Do not respond to PeerFloodError or silent Message Request delivery by rotating accounts or increasing unsolicited volume. "
-                    "Fallback to user-initiated conversations and send external links only after a reply. "
-                    "For each resulting lead, screen the claimant's legal identity, operating status, accounts-payable process, and competing recovery engagements before accessing sensitive records. "
-                    "Request W-9 and entity documentation through a controlled channel, not public messages. "
-                    "Keep prospecting claims narrow: identify a reviewable transaction pattern and ask permission to investigate, rather than announcing an entitlement before a broker, counsel, or administrator has assessed the evidence."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped Plays 1–6: Buyer Authority, Acquisition Economics, and Customs Evidence",
-                "headers": [
-                    "Mapped operating application",
-                    "Buyer and collectible economic unit",
-                    "Required evidence and decision authority",
-                    "Failure condition and practical fallback",
-                ],
-                "rows": [
-                    [
-                        "Play 1: hts_cross_ruling_reclassification_and_psc_recovery, the supported historical overpayment review desk",
-                        "Importer CFO sponsors $100,000 net collectible recovery producing $30,000 at thirty percent",
-                        "Licensed broker or trade counsel validates classification, origin evidence, procedural route, and signatory authority",
-                        "Withdraw unsupported positions while preserving independently valid timely claims and supported future classifications",
-                    ],
-                    [
-                        "Play 2: high_velocity_dm_outbound_systems, the permission-based importer hand-raiser acquisition workflow",
-                        "Three signed engagements from $1,500 campaign spending imply $500 acquisition cost per engagement",
-                        "Recorded user trigger precedes automated contact; prospect reply precedes external link delivery",
-                        "Stop unsolicited dispatch and use inbound conversations when platform delivery restrictions appear",
-                    ],
-                    [
-                        "Play 3: Direct-identification drawback evidence assembly for traceable imported and exported merchandise",
-                        "Eligible $100,000 duty base supports up to $99,000 before case-specific adjustments",
-                        "Importer records owner supplies entry lines, inventory links, export evidence, and claimant authority",
-                        "Remove unmatched quantities and retain only independently traced eligible imports and exports",
-                    ],
-                    [
-                        "Play 4: Substitution drawback reconciliation using qualifying classifications and statutory transaction limits",
-                        "Broker-supported $50,000 refundable base produces $15,000 fee at thirty percent before agreed adjustments",
-                        "Broker tests statutory comparability, valuation limits, exclusions, and required classification detail for each pairing",
-                        "Reject mechanical eight-digit matches when additional statutory conditions or product restrictions fail",
-                    ],
-                    [
-                        "Play 5: Accelerated drawback payment preparation with separate surety underwriting and repayment planning",
-                        "A $200,000 accelerated refund remains exposed to later adjustment rather than becoming unconditional profit",
-                        "Claimant treasury approves bond application, indemnity exposure, premium treatment, and adjustment reserve",
-                        "Use ordinary payment processing when surety capacity or accelerated-payment eligibility is unavailable",
-                    ],
-                    [
-                        "Play 6: Export-document repair and quantity reconciliation before unsupported drawback lines are excluded",
-                        "A $4,000 retrieval project supporting $40,000 additional net recovery requires explicit spending authorization",
-                        "Records owner links carrier evidence, invoices, inventory movements, and timely qualifying export events",
-                        "Exclude unverifiable shipments instead of fabricating traceability or treating manifests as sufficient proof",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Find the signature, the records, and the payable before building the claim",
-                "body": (
-                    "A recovery sponsor can enthusiastically support the project while lacking the authority, evidence, or vendor setup needed to pay it."
-                ),
-                "items": [
-                    "Ask treasury for its supplier onboarding checklist during discovery; obtain the purchase-order requirement before the first substantial evidence sprint.",
-                    "Request a small ACE entry-line sample plus one linked export packet before pricing a full drawback portfolio; manifest intelligence alone does not establish eligibility.",
-                    "Put the existing broker and trade counsel on the first technical call so classification history and prior claims are surfaced before duplicate work begins.",
-                    "Have the settlement claimant identify previous recovery vendors and submitted claim numbers; reconcile overlaps before creating another administrator submission.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Separate eligibility, collectible principal, and conversion time across three lanes",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Drawback starts with eligible paid duties, taxes, and fees, not sales value or gross imported merchandise value. "
-                    "Section 1313 commonly permits recovery of 99% of qualifying amounts, subject to the specific provision, exclusions, quantity limits, and evidence requirements. "
-                    "Build the ledger from ACE entry data and CBP Form 7501 records, then reconcile exports using bills of lading, commercial invoices, inventory movements, and applicable substitution support. "
-                    "ImportGenius or Panjiva can surface trading patterns, but neither replaces claimant records. "
-                    "An eight-digit HTS match is a screening signal, not a universal substitution entitlement. "
-                    "For illustration, $1,000,000 of eligible duties yields $990,000 before $20,000 of offsets and $10,000 of agreed professional and documentation deductions; the net fee base is $960,000. "
-                    "A 30% fee is $288,000, leaving $672,000 after those deductions and the fee. "
-                    "Screen each tariff component for statutory or proclamation-based exclusions rather than assuming every additional duty qualifies. "
-                    "Accelerated payment requires applicable approval and bond arrangements; ordinary drawback does not automatically require that accelerated-payment bond. "
-                    "Budget an illustrative six-to-eighteen-month ordinary collection interval, with longer cases possible, and replace that planning assumption with the broker's case-specific assessment before forecasting liquidity."
-                ),
-                (
-                    "The hts_cross_ruling_reclassification_and_psc_recovery play begins with historical entry lines, product composition and function, HTSUS text, explanatory analysis, CROSS rulings, and agreement-specific origin support. "
-                    "Another importer's published ruling is persuasive only where facts and legal reasoning fit; it does not itself bind CBP for this importer. "
-                    "Licensed brokers and trade counsel choose among an eligible unliquidated-entry PSC, a timely § 1514 protest of a protestable decision, and a qualifying § 1520(d) post-importation preference claim, including covered USMCA claims. "
-                    "A PSC is not a protest, and filing one does not create an unlimited extension of other deadlines. "
-                    "Check current ACE business rules and scheduled liquidation rather than relying on a generic calendar. "
-                    "A supported $120,000 historical overpayment, reduced by $10,000 offsets and $10,000 professional and documentation costs, produces a $100,000 collectible fee base and $30,000 fee at 30%. "
-                    "Keep projected future landed-cost reductions outside that calculation. "
-                    "Allow an illustrative three-to-twelve-month or longer conversion interval depending on route and dispute complexity; no separate drawback accelerated-payment bond attaches merely because this is a refund engagement. "
-                    "If technical support fails, withdraw the unsupported position, preserve valid timely claims, and seek additional evidence or a prospective binding ruling."
-                ),
-                (
-                    "Antitrust recovery begins with the settlement's class definition, covered products, purchase channels, dates, exclusions, and claims protocol. "
-                    "An AP ledger establishes purchases only when invoices, vendor normalization, credits, and entity history support it; $2,000,000 of purchases does not imply a $2,000,000 award. "
-                    "Use a purely illustrative 2% distribution assumption to test economics: a $40,000 actual distribution less $2,000 agreed documentation costs leaves a $38,000 fee base, an $11,400 fee at 30%, and $26,600 to the claimant. "
-                    "The administrator's eventual allocation can differ materially because accepted claims, deductions, appeals, and distribution orders change the denominator and timing. "
-                    "Planning may require six-to-twenty-four months after submission or longer; verify the case docket and administrator updates rather than representing this interval as a service commitment. "
-                    "There is no CBP surety requirement in this lane, although the settlement may impose its own authorization and verification conditions. "
-                    "Provide every court-required third-party filer disclosure and plainly explain that eligible claimants can file directly at zero cost. "
-                    "Do not impersonate class counsel or the administrator. "
-                    "Screen acquisitions, dissolved entities, prior assignments, and duplicate filings before submission; contested ownership goes to counsel, while uncontested eligible records proceed separately where the protocol permits."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped Plays 7–12: Procedural Recovery, Distribution Evidence, and Payment Protection",
-                "headers": [
-                    "Mapped operating application",
-                    "Economic unit and cost discipline",
-                    "Authority, documentation, and conversion constraint",
-                    "Risk fallback preserving legitimate collection",
-                ],
-                "rows": [
-                    [
-                        "Play 7: Liquidation protest management for properly supported protestable customs decisions",
-                        "A $75,000 net realized recovery earns $22,500 at the agreed thirty-percent rate",
-                        "Authorized broker or counsel verifies protestability, standing, liquidation event, and generally 180-day filing deadline",
-                        "Do not relabel an expired protest as a PSC; investigate only independently available remedies",
-                    ],
-                    [
-                        "Play 8: Post-importation preference recovery under qualifying agreement-specific statutory requirements",
-                        "A $60,000 refund less $3,000 agreed documentation costs supports a $17,100 contingency fee",
-                        "Counsel verifies covered agreement, generally one-year filing requirement, origin support, and required declarations",
-                        "Reject unsupported preference assertions and retain defensible classification and duty treatment",
-                    ],
-                    [
-                        "Play 9: B2B antitrust purchase-ledger packaging for settlement-specific claimant eligibility",
-                        "A $40,000 distribution less $2,000 agreed costs supports an $11,400 contingency fee",
-                        "Claimant authorizes submission supported by covered invoices, credits, normalized vendors, and settlement definitions",
-                        "Remove excluded purchases and resolve duplicate submissions with administrator instructions before distribution",
-                    ],
-                    [
-                        "Play 10: Interchange settlement record reconstruction using qualifying merchant and processor evidence",
-                        "A $25,000 distribution with no deductions supports $7,500 earned at thirty percent",
-                        "Merchant supplies processor statements and business identities matching the particular court-approved settlement",
-                        "Use administrator-authorized alternatives when processor history is incomplete; never substitute invented transaction totals",
-                    ],
-                    [
-                        "Play 11: Claimant authority and counterparty credit screening before contingent work begins",
-                        "Twenty screening hours at $50 cost $1,000 and protect against uncollectible fee exposure",
-                        "Officer authority, entity status, bankruptcy checks, vendor onboarding, and existing engagements determine acceptance",
-                        "Decline unclear ownership or require counsel resolution and a permitted payment arrangement before work",
-                    ],
-                    [
-                        "Play 12: Realized-recovery reconciliation and earned-fee collection with evidence-linked invoices",
-                        "A verified $100,000 fee base creates a $30,000 invoice rather than $100,000 operator revenue",
-                        "Treasury matches payer remittance, cleared bank receipt, approved deductions, and contractual fee trigger",
-                        "Suspend disputed increments while collecting undisputed earned amounts through the agreed resolution process",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight tests before a claim enters production",
-                "body": (
-                    "Document a separate pass or remediation decision for each lane; strength in one lane cannot cure a defect in another."
-                ),
-                "items": [
-                    "Verify claimant standing, officer authority, existing recovery contracts, and the licensed broker or counsel engagement before transmitting customs instructions.",
-                    "Calendar the actual importation, exportation, liquidation, PSC eligibility, preference-claim, protest, and settlement dates applicable to the selected route.",
-                    "Reconcile the proposed fee base to recoverable principal after identified exclusions, offsets, and contractually defined professional and documentation deductions.",
-                    "Confirm beneficiary identity, permitted disbursement instructions, accelerated-payment bond capacity where applicable, and a written later-adjustment allocation.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Choose a payment rail that preserves claimant ownership and invoice enforceability",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Separate the recovery rail from the service-fee rail. "
-                    "CBP refund procedures and settlement distribution instructions determine how principal reaches the authorized claimant; your engagement determines how an earned invoice is paid afterward. "
-                    "A bank wire cannot expand claimant standing, an escrow account cannot override an administrator's payee rules, and a checkout link cannot establish ownership of a federal claim. "
-                    "Record beneficiary legal name, bank verification method, payer reference, claim identifier, and the reason every deduction is allowed. "
-                    "For a $100,000 fee base received by the claimant, an ordinary arrangement is a $30,000 invoice paid by authorized ACH or wire after treasury matches cleared funds to the claim. "
-                    "If escrow is considered, first verify that the payer permits the proposed payee and that the escrow provider can legally hold these particular funds. "
-                    "Use a written waterfall allocating approved costs, claimant proceeds, earned fees, and disputed amounts. "
-                    "Do not operate an informal pooled client-money account simply because it is convenient. "
-                    "Holding or transmitting other parties' funds can trigger licensing, fiduciary, and safeguarding obligations; the practical default is direct claimant receipt and a separately authorized fee payment through the claimant's existing treasury controls."
-                ),
-                (
-                    "The eight mechanisms in the matrix solve different problems; several are commercial structures rather than payment networks. "
-                    "Wire provides traceable high-value settlement but limited practical recovery after misdirection. "
-                    "ACH supports repeatable collections but requires authorization and remains subject to applicable return rules. "
-                    "Escrow segregates disputed allocations only when the provider, instructions, and underlying payer permit it. "
-                    "Retainers finance work but change the zero-upfront offer, so they belong only in a separately accepted scope rather than a hidden condition. "
-                    "Statutory disbursement identifies the government's prescribed payment process, not a shortcut around entitlement. "
-                    "Platform checkout can collect an already-earned invoice, while factoring advances cash against an eligible receivable and reduces proceeds through financing charges. "
-                    "Milestone holds defer release until objective evidence arrives, without turning submission into a realized refund. "
-                    "On a $30,000 earned fee, an illustrative 3% checkout charge consumes $900; a flat $25 transfer charge consumes far less, although availability and risk differ. "
-                    "Compare actual provider quotes and contract terms rather than assuming those illustrative prices. "
-                    "For federal claims, counsel must assess 31 U.S.C. § 3727 before any purported assignment; directing payment is not automatically a valid transfer of the claim."
-                ),
-                (
-                    "Payment instructions deserve a separate control path from claim preparation. "
-                    "A compromised mailbox can deliver a plausible beneficiary change immediately before a large refund or fee transfer. "
-                    "Require a callback to a previously verified number, a second approver, and independent confirmation of account ownership for every beneficiary amendment. "
-                    "Do not accept the telephone number printed in the suspicious change request as verification. "
-                    "For ACH fee collection, retain the business authorization and invoice schedule, and reconcile returns rather than treating an initiated debit as cash. "
-                    "For settlement checks, track issuance, custody, deposit, and clearance; an administrator portal status alone is not bank evidence. "
-                    "Escrow release instructions should distinguish an undisputed $24,000 fee from a contested $6,000 increment so a narrow dispute does not freeze the entire transaction. "
-                    "Specify who pays bank fees and whether foreign-currency amounts are converted using the bank's realized rate or another agreed method. "
-                    "Preserve remittance documents alongside the claim ledger and restrict editing permissions. "
-                    "When payer instructions prohibit split payments, accept claimant receipt followed by ordinary invoicing; do not reroute funds through an affiliate or misstate the beneficiary to force an arrangement the payer does not support."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Payment and Settlement Rails Compared for Recovery Principal and Earned Fees",
-                "headers": [
-                    "Rail or commercial payment structure",
-                    "Permitted operating use and authorized controller",
-                    "Illustrative cost or cash-conversion treatment",
-                    "Primary failure mode and recovery control",
-                ],
-                "rows": [
-                    [
-                        "Wire transfer for a separately earned operator invoice",
-                        "Claimant treasury releases payment after matching cleared recovery and contractual fee calculation",
-                        "Illustrative $25 transfer charge on $30,000 invoice; confirm actual bank pricing before quoting",
-                        "Beneficiary substitution causes irreversible loss; verify account changes through independent callbacks",
-                    ],
-                    [
-                        "Independent escrow with an expressly permitted distribution waterfall",
-                        "Qualified provider holds authorized funds under documented claimant, payer, and release instructions",
-                        "Provider charges and holding periods require written allocation before any money is deposited",
-                        "Payer rejects escrow beneficiary; revert to direct claimant receipt and separate fee payment",
-                    ],
-                    [
-                        "Business ACH credit or properly authorized invoice debit",
-                        "Claimant treasury initiates credit or grants specific business debit authority for earned fees",
-                        "Treat initiated transfers as pending until bank reconciliation addresses settlement and applicable returns",
-                        "Unauthorized debit disputes impair collection; retain authorization and reconcile every returned transaction",
-                    ],
-                    [
-                        "Separately negotiated retainer for a distinct evidence-reconstruction engagement",
-                        "Authorized claimant officer approves upfront scope outside the standard zero-upfront contingency offer",
-                        "Illustrative $2,000 retainer receives explicit credit treatment without counting unearned deposits as revenue",
-                        "Hidden upfront charges undermine acceptance; keep the core recovery offer genuinely zero-upfront",
-                    ],
-                    [
-                        "Statutory disbursement through the government-prescribed claimant payment process",
-                        "CBP and applicable Treasury procedures control refund payee, offsets, and disbursement instructions",
-                        "Government payment timing remains external; operator records only contractually earned recovery-related fees",
-                        "Unauthorized assignment or payee alteration fails; preserve lawful claimant receipt and invoice separately",
-                    ],
-                    [
-                        "Platform checkout for an earned and documented service invoice",
-                        "Claimant's authorized payer uses a provider supporting the merchant's actual service category",
-                        "Illustrative three-percent processing charge reduces a $30,000 invoice by $900 before other costs",
-                        "Chargebacks or provider restrictions delay cash; retain evidence and offer an approved bank-payment alternative",
-                    ],
-                    [
-                        "Factoring an eligible earned fee receivable after entitlement verification",
-                        "Receivable owner and factor assess assignment restrictions, debtor acknowledgment, and recourse allocation",
-                        "Illustrative five-percent discount on $30,000 reduces proceeds by $1,500 before additional charges",
-                        "Recourse survives debtor default; avoid treating uncertain claimant awards as ordinary earned invoices",
-                    ],
-                    [
-                        "Milestone holds tied to objectively defined post-receipt release evidence",
-                        "Claimant treasury or permitted escrow provider releases undisputed amounts under signed instructions",
-                        "Illustrative $6,000 disputed hold leaves $24,000 payable from a $30,000 earned invoice",
-                        "Vague milestones enable indefinite delay; define evidence, response periods, and dispute escalation explicitly",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Verify the claimant and the beneficiary",
-                    "action": "Match entity records, engagement authority, payer requirements, and bank ownership.",
-                    "detail": "Use a previously verified callback channel and a second approver for new accounts or changed instructions.",
-                },
-                {
-                    "step": 2,
-                    "title": "Reconcile principal before calculating compensation",
-                    "action": "Match the payer remittance to cleared funds, claim identifiers, offsets, and approved deductions.",
-                    "detail": "Keep import value, purchase volume, refundable principal, claimant proceeds, and operator fees in separate ledger fields.",
-                },
-                {
-                    "step": 3,
-                    "title": "Issue the evidence-linked earned invoice",
-                    "action": "Apply the signed contingency percentage to the defined net fee base and attach the calculation.",
-                    "detail": "Identify the receipt date, cost treatment, adjustment terms, due date, and authorized ACH or wire instructions.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close the collection and retain adjustment evidence",
-                    "action": "Confirm fee clearance, resolve returns, and update reserves for any later recovery adjustment.",
-                    "detail": "Archive the complete packet under the applicable customs, settlement, contract, and accounting retention requirements.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Protect the earned fee without confusing collections with operator revenue",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Fee protection starts before analysis creates an identifiable recovery, not after the claimant receives money. "
-                    "Define covered entities, entries or purchases, recovery lanes, excluded existing claims, contingency percentage, approved deductions, and the event that earns compensation. "
-                    "A zero-upfront 25%–35% offer needs an equally explicit provision for outside professional expenses: identify who authorizes them, who pays them, and whether they reduce the fee base. "
-                    "Use a claim schedule and documented work history to support a reasonable, legally reviewed post-termination fee provision for recoveries attributable to completed work. "
-                    "Avoid blanket ownership of every future refund or settlement the customer might receive. "
-                    "Require prompt notice of relevant receipts and proportionate access to remittance evidence, with confidentiality controls and a defined invoice-dispute period. "
-                    "Do not condition return of customer records or deadline-critical cooperation on payment of a contested fee. "
-                    "Engage licensed customs brokers and trade counsel directly for formal customs work under valid authority. "
-                    "A data-services contract does not authorize unlicensed customs business or prohibited brokerage fee arrangements under 19 CFR Part 111. "
-                    "Keep professional compensation, recovery-operations compensation, and any referral arrangement separately documented and reviewed for the rules governing the actual participants."
-                ),
-                (
-                    "Credit screening matters even when the government or settlement fund ultimately supplies the cash, because the customer may spend the recovery before paying your invoice. "
-                    "Check Secretary of State records, authorized signatories, bankruptcy filings through PACER, material litigation, payment references, and the customer's existing AP terms. "
-                    "UCC searches can reveal competing liens but do not establish a complete priority opinion; counsel should assess any proposed security interest under the applicable state's Article 9. "
-                    "A distressed importer with $300,000 expected recovery and $90,000 prospective fees can still be a poor engagement if lender controls, insolvency proceedings, or government offsets absorb the proceeds. "
-                    "Request permission to verify treasury arrangements rather than contacting banks under a misleading pretext. "
-                    "Use shorter evidence-linked invoicing intervals after each partial receipt instead of waiting for the whole portfolio to close. "
-                    "If a customer disputes $5,000 of a $45,000 invoice, preserve an agreed route to collect the undisputed $40,000 without prejudging the disputed portion. "
-                    "When ownership or authority is genuinely contested, pause the affected work and seek a permitted resolution. "
-                    "Do not solve weak credit by secretly diverting claimant principal, manufacturing an assignment, or describing an unearned estimate as an existing receivable."
-                ),
-                (
-                    "Formula v2.0 fixes the annual operating outcomes: Conservative revenue of $110,000 less $74,800 expenses yields $35,200 owner profit; Base revenue of $515,000 less $283,250 yields $231,750; Scaled revenue of $920,000 less $386,400 yields $533,600. "
-                    "The corresponding margins are 32%, 45.0%, and 58%, with teams of one full-time worker plus three contractors, one plus three, and two plus four. "
-                    "At a simplifying uniform 30% fee, these revenue levels require approximately $366,666.67, $1,716,666.67, and $3,066,666.67 of realized net fee bases, respectively; actual lane mix and contract rates change those denominators. "
-                    "This is a reconciliation, not an additional forecast of government awards. "
-                    "Under ASC 606 principal-versus-agent analysis, assess the promised services and contractual control before presenting professional pass-through amounts gross; claimant refund principal never becomes operator revenue merely because a payment account briefly receives it. "
-                    "Do not apply an invented retained-share haircut to the canonical earned-fee figures. "
-                    "Maintain a cash calendar separate from recognized revenue because filing, approval, disbursement, invoice issuance, and fee clearance occur on different dates. "
-                    "The one-to-three-month first-deal target measures signed business, not refund collection; working capital must cover the longer conversion cycle and any subsequent adjustment obligations."
-                ),
-            ],
-            "table": {
-                "caption": "Fee Protection and Formula v2.0 Reconciliation for a Small Recovery Team",
-                "headers": [
-                    "Control or canonical operating scenario",
-                    "Documented calculation and operator revenue treatment",
-                    "Authority and evidence required for execution",
-                    "Downside response and collection protection",
-                ],
-                "rows": [
-                    [
-                        "Conservative scenario with one full-time worker and three contractors",
-                        "$110,000 earned-fee revenue less $74,800 expenses equals $35,200 owner profit at 32%",
-                        "Reconcile each earned fee to covered claims, realized receipts, authorized deductions, and signed terms",
-                        "Limit unreimbursed evidence work and monitor collection delays against available operating cash",
-                    ],
-                    [
-                        "Base scenario with one full-time worker and three contractors",
-                        "$515,000 earned-fee revenue less $283,250 expenses equals $231,750 owner profit at 45.0%",
-                        "Controller reconciles lane-level invoices and professional costs without importing claimant principal into revenue",
-                        "Investigate aging invoices promptly and separate operational margin variance from delayed fee collection",
-                    ],
-                    [
-                        "Scaled scenario with two full-time workers and four contractors",
-                        "$920,000 earned-fee revenue less $386,400 expenses equals $533,600 owner profit at 58%",
-                        "Separate preparer, reviewer, beneficiary approver, and collector permissions across the six-person team",
-                        "Throttle intake when technical review, surety capacity, or collection workload exceeds documented capacity",
-                    ],
-                    [
-                        "Written contingency scope and attributable recovery schedule",
-                        "Thirty percent of a $100,000 agreed net fee base produces a $30,000 earned fee",
-                        "Authorized signatory accepts covered claims, earning trigger, expense deductions, and later-adjustment treatment",
-                        "Use evidence-linked dispute resolution instead of broad future-recovery claims or withholding customer records",
-                    ],
-                    [
-                        "Counterparty credit and competing rights assessment before acceptance",
-                        "A $90,000 prospective fee remains unearned when based on a $300,000 expected recovery",
-                        "Review entity status, treasury authority, bankruptcy exposure, existing vendors, and relevant lender restrictions",
-                        "Decline unclear ownership or use a specifically permitted payment arrangement after professional review",
-                    ],
-                    [
-                        "Later-adjustment allocation for accelerated or revised recovery payments",
-                        "A $10,000 fee-base reduction changes a thirty-percent fee by $3,000 under matching adjustment terms",
-                        "Contract identifies repayment responsibility, evidence requirements, reserve policy, and invoice-credit timing",
-                        "Maintain a documented adjustment reserve rather than distributing every provisional receipt immediately",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The payer supplies the recovery, the claimant owns the principal, and your contract earns only the fee.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Build a three-lane opportunity register separating drawback, tariff refund, and settlement eligibility, deadlines, collectible bases, evidence costs, bond exposure, and cash timing.",
-        "Identify the economic sponsor, records owner, authorized contract signatory, and treasury approver for every proposed claimant entity.",
-        "Execute scoped service terms and direct licensed-professional engagements before substantive customs analysis or formal filing work begins.",
-        "Verify beneficiary identity independently, document permitted payment instructions, and default to direct claimant receipt followed by a separately authorized fee payment.",
-        "Attach a cleared-receipt reconciliation to every contingency invoice, excluding merchant purchase volume, imported merchandise value, and prospective savings.",
-        "Reconcile earned-fee revenue, expenses, owner profit, aging receivables, and adjustment reserves against the exact Conservative, Base, and Scaled scorecard.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "19 U.S.C. § 1313 — Drawback and refunds",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1313",
-            "relevance": (
-                "Establishes drawback categories, qualifying conditions, recovery limits, and the applicable exportation and claim-completion framework."
-            ),
-        },
-        {
-            "title": "19 CFR Part 190 — Modernized drawback",
-            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-190",
-            "relevance": (
-                "Provides operational rules for modernized drawback, supporting records, claims, verification, and specialized procedures."
-            ),
-        },
-        {
-            "title": "19 CFR § 190.92 — Accelerated payment",
-            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-190/subpart-I/section-190.92",
-            "relevance": (
-                "Governs accelerated drawback payment applications and related conditions, including bond requirements and continuing adjustment exposure."
-            ),
-        },
-        {
-            "title": "19 U.S.C. § 1514 — Protest against decisions of Customs Service",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1514",
-            "relevance": (
-                "Identifies protestable decisions, eligible protestants, and the generally applicable 180-day filing period."
-            ),
-        },
-        {
-            "title": "19 U.S.C. § 1520(d) — Post-importation preferential treatment claims",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1520",
-            "relevance": (
-                "Authorizes qualifying post-importation preference claims under covered agreements, subject to statutory timing and evidentiary requirements."
-            ),
-        },
-        {
-            "title": "19 CFR Part 111 — Customs brokers",
-            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-111",
-            "relevance": (
-                "Defines customs business and regulates licensing, professional duties, powers of attorney, and relationships involving unlicensed persons."
-            ),
-        },
-        {
-            "title": "19 CFR § 177.9 — Effect of ruling letters",
-            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-177/section-177.9",
-            "relevance": (
-                "Explains the effect and factual limits of CBP rulings; another party's published ruling does not automatically bind CBP for a different importer."
-            ),
-        },
-        {
-            "title": "31 U.S.C. § 3727 — Assignments of claims",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3727",
-            "relevance": (
-                "Restricts assignments of claims against the United States and requires separate analysis before factoring or redirecting federal recovery rights."
-            ),
-        },
-        {
-            "title": "Federal Rule of Civil Procedure 23(e) — Settlement of class actions",
-            "url": "https://www.law.cornell.edu/rules/frcp/rule_23",
-            "relevance": (
-                "Supplies the federal class-settlement approval framework; the particular court orders, notice, and claims protocol control claimant submissions and required filer disclosures."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 15 — Private antitrust actions",
-            "url": "https://www.law.cornell.edu/uscode/text/15/15",
-            "relevance": (
-                "Provides a federal private antitrust remedy; a settled claimant's actual distribution remains governed by the applicable settlement and allocation process."
-            ),
-        },
-    ],
-}
+CHAPTER_2 = {'id': 'Q2',
+ 'chapter_id': 'Q2',
+ 'chapter_number': 2,
+ 'question_number': 2,
+ 'slug': 'drawback-claim-execution-types-documentation-refund-optimization',
+ 'question_prompt': 'How do I execute and optimize drawback claims across unused, substitution, destroyed, '
+                    'DDP, packaging and FTZ scenarios?',
+ 'kicker': 'Q2 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Drawback Claim Execution: Types, Documentation and Refund Optimization',
+ 'subtitle': 'Direct-identification and substitution unused merchandise drawback, destroyed-merchandise '
+             'documentation, DDP and packaging drawback, FTZ zone-status interplay, ISF linkage, and '
+             'advanced claim-maximization practices from broker and Flexport webinars',
+ 'layout_template': 'executive_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Brokers, attorneys and software teams agree on the core math. Drawback returns 99% '
+                      'of eligible duties, taxes and fees, including Section 301 and 201. Section 232, '
+                      'AD/CVD and over-quota duties are not recoverable. Substitution now depends on an '
+                      "8-digit HTS match. 'Other' lines get pushed to 10 digits, 'other other' lines are "
+                      'barred, and the lesser-of rule caps every substituted claim. Execution runs through '
+                      'the 7553 notice, the 7551 claim, exact ACE data matching, and a privilege '
+                      'application filed on a chosen day to lock the 5-year look-back. Flexport reports '
+                      'optimal matching beating greedy logic 70 to 11 and averaging roughly 35% more on '
+                      'substitution. Practitioners split on notice periods, record retention, accelerated '
+                      'payment speed, liquidation delays and the minimum claim worth filing, which ranges '
+                      "from a $10-20k lookback to CEDA's $250K floor.",
+ 'key_metrics': [{'label': 'Refund Rate on Eligible Duties, Taxes and Fees',
+                  'metric': 'Refund Rate on Eligible Duties, Taxes and Fees',
+                  'value': '99% refunded; 1% kept by customs for administrative fees',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Thompson Hine's Aaron Mandelbaum states the 99% refund on duties, fees and "
+                             "taxes. Flexport's Monica Pascarella explains that the missing 1% is retained "
+                             'by customs for administrative fees.',
+                  'source': 'Thompson Hine LLP ([WqGvMD-AOqg @ 00:05:44])'},
+                 {'label': 'Share of Eligible Drawback Left Unclaimed',
+                  'metric': 'Share of Eligible Drawback Left Unclaimed',
+                  'value': 'About 70% unclaimed; $3.9B filed in 2023',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Flexport's drawback team sizes the untapped pool. TalkingLogistics' Matt "
+                             'Robison separately estimates $500-600M recovered annually, roughly 15-20% of '
+                             'the total.',
+                  'source': 'Flexport ([1_L7fnmAAU0 @ 00:02:37])'},
+                 {'label': 'Optimized Substitution Matching Uplift',
+                  'metric': 'Optimized Substitution Matching Uplift',
+                  'value': '10-400% more recovery, about 35% average on substitution claims',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Flexport compares its matching engine against legacy software by running the '
+                             'same claim data through both systems.',
+                  'source': 'Flexport ([A7RUPXhyx4M @ 00:20:38])'},
+                 {'label': 'Contingency Provider Minimum Engagement',
+                  'metric': 'Contingency Provider Minimum Engagement',
+                  'value': '$250K in recoverable duties',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "CEDA Brokerage's intake floor for its contingency drawback work. Smaller "
+                             'cases are referred to other providers.',
+                  'source': 'World Trade Center Denver ([SO9sA-x5K0k @ 00:28:03])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every practitioner opens with the same number. Drawback refunds 99% of '
+                              "eligible duties, taxes and fees, and in Monica Pascarella's words it is "
+                              'only 99% because 1% is kept in customs for administrative fees [1_L7fnmAAU0 '
+                              '@ 00:02:37]. The eligible bucket is consistent across brokers and counsel. '
+                              'Joe Harper of Star USA lists ordinary duty, Section 301, HMF, MPF, marking '
+                              'duties, IRS taxes and 201 duties. Harper also flags that MPF minimums and '
+                              'maximums require special math [NK99CBNOeJA @ 00:06:34]. The Scarbrough '
+                              'webinar team adds voluntary tender and prior disclosure duties to the list, '
+                              "and describes Section 301 recovery as getting 'that 25 percent back' "
+                              '[6Ogi9iKVSTE @ 00:19:43]. The exclusion list is just as uniform: AD/CVD, '
+                              'Section 232 and over-quota agricultural duties do not come back. Aaron '
+                              'Mandelbaum of Thompson Hine extends the line into the newest tariffs. IEEPA '
+                              'reciprocal duties fall on the eligible side and IEEPA fentanyl tariffs on '
+                              'the ineligible side, while some 232 carve-outs are starting to emerge '
+                              '[WqGvMD-AOqg @ 00:11:23]. The operating consensus is blunt. Before modeling '
+                              'any refund, strip 232, AD/CVD and over-quota lines out of the duty base, '
+                              'because no claim structure recovers them. The 301, 201, MPF and HMF lines '
+                              'stay in the recoverable pool that the rest of the program is built around.',
+                              'Substitution is where the consensus sharpens into hard classification '
+                              "rules. Scarbrough Global describes the old 'commercially interchangeable' "
+                              'test, which weighed four factors: government or industry standards, part '
+                              'numbers, tariff classifications and relative value. They call it unwieldy '
+                              'and subjective, while the TFTEA standard is a much more objective 8-digit '
+                              'HTS match [fI28fmPlbPA @ 00:01:39]. Their commingled-bin customer '
+                              'illustrates the upside. That customer sources the same item from four '
+                              'countries plus a domestic supplier and still substitutes, as long as it is '
+                              'not an other provision. The rule set repeats everywhere. If the 8-digit '
+                              "line is an 'other' provision, drop to the 10-digit code, and if the "
+                              "10-digit code is also 'other', substitution is barred [6Ogi9iKVSTE @ "
+                              '00:14:47]. Alliance Duty Drawback Services confirms that part numbers are '
+                              'ignored under the HTS match. Substitution is barred for exports to Canada, '
+                              'Mexico, Chile and US territories. The lesser-of rule caps recovery, so a '
+                              '$100 import matched to a $50 export recovers half [mkogoOMopss @ 00:03:26]. '
+                              "Mandelbaum states the cap plainly: claimants are 'only getting refunded the "
+                              'smaller of the two duty amounts which prevents over refunds when '
+                              "substituted goods are used' [WqGvMD-AOqg @ 00:27:58]. Alliance's operator "
+                              'takeaway is to substitute exports of similar value so the cap does not eat '
+                              'the claim.',
+                              'The third point of agreement is the clock and the privilege structure built '
+                              'around it. Matt Robison of Amber Road credits TFTEA 2015 with two changes. '
+                              'It brought 8-digit substitution, and it collapsed the old 3-years-to-export '
+                              'plus 3-years-to-file timeline into a single 5-year clock. Robison also '
+                              "credits ACE's fully electronic filing, live in 2019, with replacing mailed "
+                              'PDFs [BCWMDlUCSx4 @ 00:08:19]. Pat Caulfield of Scarbrough explains how to '
+                              "use the one-time retroactive waiver. Operators should 'pick a day' for the "
+                              'Notice of Intent first, or lose three to six months of claimable imports '
+                              'while paperwork drifts [wEYqdvTPaqM @ 00:32:45]. The Scarbrough webinar '
+                              "calls the look-back 'your one-time get out of jail free card that allows "
+                              "you to look back five years', and sets the clock by the submission date "
+                              '[6Ogi9iKVSTE @ 00:09:10]. Tisha Paige of CEDA operationalizes the same '
+                              'logic. CEDA files claims the same day the privilege application goes in, '
+                              'locking the 5-year window from each import date. It then waits 3 to 18 '
+                              'months for CBP approval and about 45 days per claim for payment '
+                              '[SO9sA-x5K0k @ 00:33:40]. ITM and CEDA both call drawback a privilege, not '
+                              'a right. Every month the submission slips, the oldest entries age out of '
+                              'the five-year window.'],
+               'table': {'caption': 'Where brokers, counsel and software teams agree on drawback baselines',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Agree On',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Refund rate on eligible duty dollars',
+                                   'Drawback returns 99% of eligible duties, taxes and fees, with 1% kept '
+                                   'by customs',
+                                   'Model every claim at 99 cents back per eligible duty dollar paid',
+                                   'Flexport ([1_L7fnmAAU0 @ 00:02:37])'],
+                                  ['Duties and fees that are recoverable',
+                                   'Ordinary duty, Section 301, 201, HMF, MPF, marking duties and IRS '
+                                   'taxes all qualify',
+                                   'Pull 301 and 201 lines into the claim base first, then add fees',
+                                   'Star USA, Inc. ([NK99CBNOeJA @ 00:06:34])'],
+                                  ['Duties that never come back',
+                                   'AD/CVD, most Section 232, over-quota duties and IEEPA fentanyl tariffs '
+                                   'are ineligible',
+                                   'Strip these lines out before estimating so the refund model stays '
+                                   'honest',
+                                   'Thompson Hine LLP ([WqGvMD-AOqg @ 00:11:23])'],
+                                  ['Substitution classification test under TFTEA',
+                                   "Same 8-digit HTS required; 'other' lines drop to 10 digits; 'other "
+                                   "other' is barred",
+                                   "Audit every 'other' classification before building any substitution "
+                                   'match',
+                                   'Scarbrough Global ([fI28fmPlbPA @ 00:02:57])'],
+                                  ['Destination bars and the lesser-of cap',
+                                   'No unused substitution to Canada, Mexico, Chile or US territories; '
+                                   'lesser value wins',
+                                   'Route substitution exports elsewhere and pair imports with '
+                                   'similar-value exports',
+                                   'Alliance Duty Drawback Services ([mkogoOMopss @ 00:03:08])'],
+                                  ['Single five-year filing window',
+                                   'Claims must be complete within 5 years of the designated import date',
+                                   'Pick a submission day early, because expiring entries are lost every '
+                                   'month',
+                                   'Scarbrough Global ([wEYqdvTPaqM @ 00:32:45])'],
+                                  ['Desk review on the very first claim',
+                                   'Almost every first claim gets hit with a full desk review by CBP',
+                                   'Assemble the full document chain before filing the first claim, not '
+                                   'after',
+                                   'Scarbrough Global ([6Ogi9iKVSTE @ 00:32:19])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The filing mechanics run on a fixed form sequence. The Scarbrough one-time '
+                              'workflow starts with a CBP 7553 carrying the import documents, a pro forma '
+                              'invoice, booking information and the port of export. Customs takes about a '
+                              'week to review and then waives or examines, so examination time has to be '
+                              'built into ship dates. The 7551 goes in after export with proof of export '
+                              "[6Ogi9iKVSTE @ 00:02:41]. Joe Harper's electronic rules are exact: file in "
+                              'ACE using the 10-digit HTS and matching units of measure, and upload '
+                              'supporting documents within 24 hours [NK99CBNOeJA @ 00:30:49]. The '
+                              'Scarbrough team reports a claim rejected over a PSC nobody had seen. They '
+                              'insist that PSCs and protests be resolved, and the 21-month Recon cycle '
+                              'completed, before any drawback filing [6Ogi9iKVSTE @ 00:22:48]. Tisha Paige '
+                              'lists the full packet for an unused-merchandise privilege application. The '
+                              'import side needs the commercial invoice, packing slip and 7501. The export '
+                              'side needs the invoice, packing slip and proof of export: a bill of lading, '
+                              'B3/CAD, pedimento, airway bill or seaway bill. Inventory receipt and '
+                              'withdrawal dates complete the packet, and a manufacturing application adds '
+                              'production in/out dates and the bill of materials [SO9sA-x5K0k @ 00:29:46]. '
+                              'CEDA accepts paper records and has flown staff to clients to collect them.',
+                              'Refund size is engineered through accounting method and matching logic, not '
+                              'just paperwork. Monica Pascarella walks through six accounting methods: '
+                              'FIFO, LIFO, low-to-high, low-to-high average inventory turnover, '
+                              'low-to-high blanket and average. Low-to-high blanket is the most common, '
+                              "but 'not always' the highest recovery [1_L7fnmAAU0 @ 00:11:41]. The "
+                              'Flexport team adds two levers. Grouping entry lines lowers per-unit duty, '
+                              'and importers who moved sourcing out of China should switch from '
+                              'low-to-high to FIFO [1_L7fnmAAU0 @ 00:32:02]. On substitution, J2 matching '
+                              'runs HTS-to-HTS off ACE data, claiming the highest duty first. Alex '
+                              'Neutloff shows why the matching engine matters. A greedy algorithm yields '
+                              '11 where the optimal match yields 70. A 10-by-10 matching problem carries '
+                              'more possible combinations than there are sand grains on 170 billion Earths '
+                              '[A7RUPXhyx4M @ 00:12:52]. Flexport ran the same data through its software '
+                              'instead of legacy software in head-to-head comparisons. Apparel moved from '
+                              '$1.58M to $1.88M, and consumer goods from $3.9M to $5.7M. Automotive '
+                              'manufacturing rose from $2.6M to $3.6M while consuming $9.9M of imports '
+                              'instead of $18.8M, a drop of 47% [A7RUPXhyx4M @ 00:28:14]. Flexport also '
+                              'tells claimants that a higher duty rate does not always produce a higher '
+                              'refund, because the lesser-of rule bites.',
+                              'The unit economics are simple, and the practitioners publish them. Flexport '
+                              'offers two sizing methods: duty spend multiplied by export share of sales, '
+                              'or export COGS multiplied by average duty rate [1_L7fnmAAU0 @ 00:26:28]. '
+                              "Robison's version is annual duty times export percentage, chasing a "
+                              'five-digit-plus ROI. Cash timing is the second variable. Accelerated '
+                              'payment lands in 4 to 6 weeks but requires a bond. Without it, refunds take '
+                              "6 months to almost 3 years, because 'there are only like 25 drawback "
+                              "Specialists across the country and they are super backed up' [6Ogi9iKVSTE @ "
+                              '00:10:52]. A drawback bond is dollar-for-dollar, so a $300k claim needs a '
+                              '$300k bond. A continuous bond, by contrast, covers 10% of the amount. '
+                              "Flexport's instant drawback advances 70% in one day for a 2 to 10% advance "
+                              'fee. That fee depends on whether the claim has been approved for '
+                              'accelerated payment [1_L7fnmAAU0 @ 00:36:06]. Fees run on contingency, and '
+                              "CEDA's pitch is 'we don't get paid until you do'. CEDA sets a $250K "
+                              'recoverable-duty minimum and refers smaller files out [SO9sA-x5K0k @ '
+                              '00:28:03]. Caulfield calls a first lookback under $10-20k probably not '
+                              'worth it. The Scarbrough webinar adds that a $250 refund may not justify '
+                              'service fees and staff hours, while a $15k refund is worthwhile for many '
+                              'firms.'],
+               'table': {'caption': 'Exact numbers practitioners use to size, fund and file drawback '
+                                    'claims',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Rule',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Refund sizing formula before engagement',
+                                   'Duty spend times export percent of sales, or export COGS times average '
+                                   'duty rate',
+                                   'Run both formulas to bracket the prize before signing any provider',
+                                   'Flexport ([1_L7fnmAAU0 @ 00:26:28])'],
+                                  ['Instant drawback cash advance',
+                                   '70% advanced in one day for a 2 to 10% advance fee',
+                                   'Buy speed when cash matters more than the advance fee haircut',
+                                   'Flexport ([1_L7fnmAAU0 @ 00:35:25])'],
+                                  ['Accelerated payment versus waiting for liquidation',
+                                   '4 to 6 weeks with a bond, otherwise 6 months to almost 3 years',
+                                   'Post the bond if refunds would otherwise sit in the CBP backlog',
+                                   'Scarbrough Global ([6Ogi9iKVSTE @ 00:10:09])'],
+                                  ['Drawback bond sizing compared with continuous bond',
+                                   'Dollar-for-dollar, so a $300k claim needs a $300k bond, renewed '
+                                   'annually',
+                                   'Size the bond to claim volume and adjust it at annual renewal',
+                                   'Scarbrough Global ([6Ogi9iKVSTE @ 00:28:18])'],
+                                  ['Substitution matching algorithm quality',
+                                   'Greedy matching produced 11 while optimal matching produced 70 on the '
+                                   'same set',
+                                   'Demand optimal matching logic rather than greedy legacy matching from '
+                                   'providers',
+                                   'Flexport ([A7RUPXhyx4M @ 00:12:52])'],
+                                  ['Contingency provider intake threshold',
+                                   'CEDA requires $250K in recoverable duties and refers smaller cases '
+                                   'elsewhere',
+                                   'Match program size to the provider tier before pitching anyone',
+                                   'World Trade Center Denver ([SO9sA-x5K0k @ 00:28:03])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Street-level levers practitioners use to protect and grow claims',
+                           'body': 'These are the small operational moves that keep claims eligible, '
+                                   'documented and paid.',
+                           'items': ['Commingled open retail returns disqualify unused drawback and '
+                                     'Canada/Mexico exports. Physically separate them with red stickers, '
+                                     "separate zones or an '-R' SKU suffix [Flexport — 1_L7fnmAAU0 @ "
+                                     '00:29:29]',
+                                     'Courier proof-of-delivery records expire, so archive them as '
+                                     'shipments move rather than trying to retrieve them at claim time '
+                                     '[Flexport — 1_L7fnmAAU0 @ 00:27:04]',
+                                     "Run partner cooperation through an NDA'd middleman so neither party "
+                                     "sees the other's documents, and consider incentivizing partners with "
+                                     'something like 10% per claim [World Trade Center Denver — '
+                                     'SO9sA-x5K0k @ 00:39:02]',
+                                     'On a denial, first pivot to an alternative 1313 subsection, such as '
+                                     'from rejected to unused, before protesting [Thompson Hine LLP — '
+                                     'WqGvMD-AOqg @ 00:40:40]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Size the prize',
+                              'action': 'Estimate recoverable duty and confirm the program clears provider '
+                                        'thresholds.',
+                              'detail': 'Multiply annual duty by export percentage and seek a '
+                                        'five-digit-plus ROI. Confirm exporter-of-record and importer '
+                                        'rights, and get officer and CFO sign-off [TalkingLogistics — '
+                                        'BCWMDlUCSx4 @ 00:15:10]'},
+                             {'step': 2,
+                              'title': 'Lock rights and pull the data',
+                              'action': 'Collect the power of attorney, ACE O3 report and AES report, plus '
+                                        'endorsements or waivers.',
+                              'detail': "An IOR-only claimant needs the exporter's letter of endorsement, "
+                                        "and an exporter-only claimant needs the importer's waivers. CEDA "
+                                        'pulls documents through client portal access [World Trade Center '
+                                        'Denver — SO9sA-x5K0k @ 00:25:22]'},
+                             {'step': 3,
+                              'title': 'Pick the submission day',
+                              'action': 'File the privilege application and the first claims together, on '
+                                        'a fixed date.',
+                              'detail': 'Pick a day for the Notice of Intent first, or lose 3 to 6 months '
+                                        'of claimable imports under the one-time retroactive waiver '
+                                        '[Scarbrough Global — wEYqdvTPaqM @ 00:32:45]'},
+                             {'step': 4,
+                              'title': 'Scrub against ACE and file',
+                              'action': 'Match claim data to ACE exactly, clear open PSCs and protests, '
+                                        'then transmit.',
+                              'detail': 'Claim data must match ACE down to unit of measure. One claim was '
+                                        'rejected over an unseen PSC, so resolve PSCs, protests and Recon '
+                                        'before filing [Scarbrough Global — 6Ogi9iKVSTE @ 00:21:06]'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Advance notice to CBP is where the playbooks split hardest. Pat Caulfield '
+                              'and Adam at Scarbrough Global teach that an export notice gives CBP 72 '
+                              'hours, and that destruction is usually supervised, with bottles broken and '
+                              'textiles cut [wEYqdvTPaqM @ 00:37:24]. Aaron Mandelbaum at Thompson Hine '
+                              'LLP breaks the Form 7553 clock into pieces. CBP decides within 2 working '
+                              'days and examines within 5. Manufacturing exports need no notice, '
+                              'rejected-merchandise exports need 5 days, and destruction needs 7 days '
+                              '[WqGvMD-AOqg @ 00:36:54]. Jill La Madeleine at International Tariff '
+                              "Management runs destruction as a live event with 5 days' notice to CBP, "
+                              'carried out by a third party with affidavits [gf35xQR8Lz0 @ 00:06:15]. '
+                              'Allison Shower at Scarbrough Global budgets about one week for Customs to '
+                              'review a one-time 7553 before it waives or examines the goods, and tells '
+                              'operators to build examination time into shipping deadlines [6Ogi9iKVSTE @ '
+                              "00:03:01]. Shower adds that Customs wants to witness destruction '98 of the "
+                              "time,' so destruction slots are scheduled events rather than ad hoc "
+                              'disposals. The common thread across all four is that notice periods differ '
+                              'by drawback type and by who is talking. Set 7553 timing per claim type, '
+                              'with examination time built into the ship date.',
+                              'Refund speed is the second big split, and it drives cash-flow planning. Joe '
+                              'Harper at Star USA, Inc. quotes about 3 weeks with accelerated payment. '
+                              "Without it, the money waits for liquidation, which can take 'up to four or "
+                              "five years' [NK99CBNOeJA @ 00:34:14]. Allison Shower at Scarbrough Global "
+                              'puts accelerated payment at 4 to 6 weeks and notes it requires a bond. '
+                              "Without it, refunds run 6 months to almost 3 years because, in Shower's "
+                              "words, there are 'only like 25 drawback specialists across the country and "
+                              "they are super backed up' [6Ogi9iKVSTE @ 00:10:52]. Aaron Mandelbaum at "
+                              'Thompson Hine LLP quotes 45 to 60 days and calls 45 days a floor that CBP '
+                              'itself describes as ambitious [WqGvMD-AOqg @ 00:39:45]. Flexport sidesteps '
+                              'the wait entirely. Monica Pascarella describes an instant drawback product '
+                              'that advances 70% of the claim in 1 day for a 2 to 10% advance fee. The fee '
+                              'level depends on whether the claim is already approved for accelerated '
+                              'payment [1_L7fnmAAU0 @ 00:35:25]. The alternative playbooks, then, are to '
+                              'trade a slice of the refund for speed, or to post a dollar-for-dollar '
+                              'drawback bond and wait weeks instead of years.',
+                              'Section 232 eligibility and the FTZ-versus-drawback choice produce the '
+                              'sharpest strategic splits. Allison Shower at Scarbrough Global states '
+                              "flatly that 'section 232 we can't claim' [6Ogi9iKVSTE @ 00:20:06]. Aaron "
+                              'Mandelbaum at Thompson Hine LLP counters with a live exception: Section 232 '
+                              'auto parts now qualify for manufacturing drawback through the medium- and '
+                              'heavy-duty vehicle action [WqGvMD-AOqg @ 00:52:18]. The CEDA team, '
+                              'presenting for World Trade Center Denver, goes further. Their carve-out '
+                              'list covers lumber, some automotive, copper and aluminum in some '
+                              "manufacturing instances, and some pharmaceuticals, though they concede 'a "
+                              "majority of the 232s are not eligible' [SO9sA-x5K0k @ 00:44:09]. On zones, "
+                              "Scarbrough Global frames the choice as a cost contest: a 'twenty percent "
+                              "recovery' contingency fee against the cost of standing up a zone, decided "
+                              'case by case [m4ePKta6BXo @ 00:02:58]. CEDA rejects the either-or framing. '
+                              'An FTZ is forward-only and suits duties drawback cannot touch, a drawback '
+                              'privilege approval is permanent, and the retroactive 5-year claim can run '
+                              'while the zone is still being built. Don adds that eligibility tends to '
+                              'expand rather than shrink, so operators who wrote off 232 categories should '
+                              're-screen them against the current carve-out list.'],
+               'table': {'caption': 'Contested Drawback Execution Points: Side-by-Side Practitioner '
+                                    'Playbooks',
+                         'headers': ['Contested Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Advance notice period before export or destruction',
+                                   'Scarbrough Global: export notice gives CBP 72 hours before the goods '
+                                   'ship',
+                                   'Star USA: rejected merchandise needs 5 working days of notice to CBP',
+                                   'Scarbrough Global ([wEYqdvTPaqM @ 00:37:24]); Star USA, Inc. '
+                                   '([NK99CBNOeJA @ 00:16:51])'],
+                                  ['Accelerated payment turnaround once privileges are granted',
+                                   'Star USA reports roughly 3 weeks once accelerated payment is approved',
+                                   'Thompson Hine quotes 45 to 60 days and calls 45 days a floor',
+                                   'Star USA, Inc. ([NK99CBNOeJA @ 00:34:14]); Thompson Hine LLP '
+                                   '([WqGvMD-AOqg @ 00:39:45])'],
+                                  ['Record retention clock for drawback documentation',
+                                   'Scarbrough Global: keep at least 3 years, with 5 years recommended',
+                                   'Flexport: 3 years after liquidation, which can stretch to about 12 '
+                                   'years total',
+                                   'Scarbrough Global ([wEYqdvTPaqM @ 00:45:43]); Flexport ([1_L7fnmAAU0 @ '
+                                   '00:07:56])'],
+                                  ['Section 232 duty eligibility for drawback refunds',
+                                   'Scarbrough Global live webinar: Section 232 duties cannot be claimed '
+                                   'at all',
+                                   'CEDA: exceptions for lumber, some automotive, copper, aluminum, and '
+                                   'some pharmaceuticals',
+                                   'Scarbrough Global ([6Ogi9iKVSTE @ 00:20:06]); World Trade Center '
+                                   'Denver ([SO9sA-x5K0k @ 00:44:09])'],
+                                  ['Substitution matching engine and recovery yield',
+                                   "Legacy greedy matching produced only 11 in Flexport's worked matching "
+                                   'example',
+                                   'Optimal matching produced 70 in that example, 10 to 400% more on '
+                                   'substitution claims',
+                                   'Flexport ([A7RUPXhyx4M @ 00:12:52]); Flexport ([A7RUPXhyx4M @ '
+                                   '00:20:38])'],
+                                  ['Foreign Trade Zone versus drawback program design',
+                                   'Scarbrough Global: weigh a twenty percent recovery fee against zone '
+                                   'setup cost, case by case',
+                                   'CEDA: run both in parallel, since FTZ is forward-only and drawback is '
+                                   'retroactive',
+                                   'Scarbrough Global ([m4ePKta6BXo @ 00:02:58]); World Trade Center '
+                                   'Denver ([SO9sA-x5K0k @ 00:47:50])'],
+                                  ['Minimum program size worth pursuing at all',
+                                   'Scarbrough Global live webinar: a $15,000 refund is worthwhile for '
+                                   'many firms',
+                                   'CEDA sets a $250,000 recoverable-duty minimum and refers smaller cases '
+                                   'elsewhere',
+                                   'Scarbrough Global ([6Ogi9iKVSTE @ 00:30:59]); World Trade Center '
+                                   'Denver ([SO9sA-x5K0k @ 00:28:03])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive failures are clock failures. Jill La Madeleine at '
+                              'International Tariff Management describes a wine company that held an '
+                              "approved privilege, went beyond the five years, and 'lost $1,000,000' in "
+                              "recovery [gf35xQR8Lz0 @ 00:08:37]. Scarbrough Global's Pat Caulfield and "
+                              'Adam name the single biggest pitfall: missing CBP information requests '
+                              'inside the 5-year window, which sinks claims that were otherwise filed on '
+                              'time [wEYqdvTPaqM @ 00:30:38]. The same Scarbrough team warns that the '
+                              "one-time retroactive waiver forces a decision. You have to 'pick a day' for "
+                              'the Notice of Intent before anything else, or bleed 3 to 6 months of '
+                              'eligible imports off the back end of the look-back [wEYqdvTPaqM @ '
+                              "00:32:45]. CEDA's countermeasure, presented at World Trade Center Denver, "
+                              'is to file claims the same day the privilege application is submitted. That '
+                              'locks the 5-year window counted from each import date. CEDA targets 90 days '
+                              'from contract signing to first claim, then 3 to 18 months for CBP approval '
+                              'and about 45 days per claim to payment afterward [SO9sA-x5K0k @ 00:33:40]. '
+                              'CEDA also reports that CBP kept working during the government shutdown but '
+                              'Treasury refund payments paused, so a perfectly timed claim can still sit '
+                              'unpaid.',
+                              'Data mismatches are the second failure cluster, and they surface at filing '
+                              'rather than at audit. Allison Shower at Scarbrough Global reports that '
+                              'claim data must match ACE exactly, down to unit of measure. Shower recounts '
+                              'a claim rejected over a post-summary correction nobody on the drawback side '
+                              "had seen [6Ogi9iKVSTE @ 00:21:06]. Shower's rule is to resolve PSCs and "
+                              'protests, and let Reconciliation run its 21 months, before filing. Shower '
+                              "also warns that 'almost every time you file your first claim you are going "
+                              "to get hit with a full desk review.' Joe Harper at Star USA, Inc. adds the "
+                              'mechanical checks: use the 10-digit HTS with matching units of measure, and '
+                              'upload supporting documents within 24 hours [NK99CBNOeJA @ 00:30:49]. '
+                              'Classification is the deeper trap. Scarbrough Global warns that '
+                              "'other/other/other' lines are a 'big swath of lots of potential issues' and "
+                              "exactly where importers 'get in trouble,' even when the duty-free result "
+                              "'looks great' [fI28fmPlbPA @ 00:04:40]. Scarbrough's Caulfield and Adam tie "
+                              'audit risk to the same root: filing drawback does not itself raise '
+                              'scrutiny, but misclassification does [wEYqdvTPaqM @ 00:57:30]. A drawback '
+                              'program inherits every unresolved entry error sitting in the import '
+                              'history.',
+                              'Economics checks cut both ways: some claims are too small to pay for '
+                              'themselves, and penalties can be large enough to erase a program. Allison '
+                              'Shower at Scarbrough Global warns that a $250 refund may not justify '
+                              'service fees and staff hours, while a $15,000 refund is worthwhile for many '
+                              "firms [6Ogi9iKVSTE @ 00:06:23]. Scarbrough Global's Caulfield and Adam set "
+                              'the first look-back bar higher, calling anything under $10,000 to $20,000 '
+                              "'probably not worth it' [wEYqdvTPaqM @ 00:56:21]. CEDA, presenting at World "
+                              'Trade Center Denver, will not take a client below $250,000 in recoverable '
+                              'duties and refers smaller cases to other providers [SO9sA-x5K0k @ '
+                              '00:28:03]. On the downside, Aaron Mandelbaum at Thompson Hine LLP lays out '
+                              '§1593a negligence penalties of 20%, 50%, then 100% of the loss of revenue '
+                              'for first, second, and subsequent violations, with fraud at 3 times. §1592 '
+                              'can apply concurrently, and prior disclosure cuts negligence to interest if '
+                              'the overpayment is tendered within 30 days [WqGvMD-AOqg @ 00:42:34]. Joe '
+                              'Harper at Star USA, Inc. adds $10,000 per recordkeeping violation, plus '
+                              "criminal exposure under 18 USC 550 and 1001. Flexport's drawback team adds "
+                              'that courier proof-of-delivery records expire, so they must be archived '
+                              'before CBP asks for them.'],
+               'table': {'caption': 'Firsthand Drawback Failure Modes and Their Cost',
+                         'headers': ['Failure Mode',
+                                     'What Went Wrong',
+                                     'Cost or Consequence',
+                                     'Expert Source'],
+                         'rows': [['Filing claims past the 5-year window',
+                                   'A wine company held an approved privilege but let claims run beyond '
+                                   'five years',
+                                   'Lost $1,000,000 in recovery despite having CBP approval already in '
+                                   'place',
+                                   'International Tariff Management ([gf35xQR8Lz0 @ 00:08:37])'],
+                                  ['Unanswered CBP information requests',
+                                   'Requests arriving inside the 5-year window go missed or unanswered by '
+                                   'the claimant',
+                                   'Named the single biggest pitfall in drawback, killing claims during '
+                                   'CBP review',
+                                   'Scarbrough Global ([wEYqdvTPaqM @ 00:30:38])'],
+                                  ['Unwitnessed or undocumented destruction',
+                                   'Goods destroyed without CBP supervision, a disinterested third party, '
+                                   'or a certificate',
+                                   'CBP often denies destruction claims when proof of the destruction is '
+                                   'missing',
+                                   'Scarbrough Global ([lsd6_oB4p00 @ 00:02:29]); Evana ([1m5HmGyCEvw @ '
+                                   '00:01:30])'],
+                                  ['Commingled open retail returns in inventory',
+                                   'Returned retail units mixed back into new stock in the same warehouse '
+                                   'location',
+                                   'Disqualifies unused drawback and Canada/Mexico exports unless flagged '
+                                   "with red stickers or '-R' SKUs",
+                                   'Flexport ([1_L7fnmAAU0 @ 00:29:29])'],
+                                  ['Lesser-of value mismatch on substitution',
+                                   'A $100 import was matched against a $50 export in a substitution claim',
+                                   'Only half the duty comes back, so substitute similar-value exports '
+                                   'instead',
+                                   'Alliance Duty Drawback Services ([mkogoOMopss @ 00:03:26])'],
+                                  ['Zero-duty exports to Canada and Mexico',
+                                   'Manufactured goods exported to Canada or Mexico frequently enter at '
+                                   'zero duty',
+                                   'The claim gets wiped out; Mexico 3% versus US 5% caps recovery at 3%',
+                                   'Flexport ([1_L7fnmAAU0 @ 00:19:21]); Star USA, Inc. ([NK99CBNOeJA @ '
+                                   '00:21:39])'],
+                                  ['ISF data gaps on the import side',
+                                   'Missing or wrong 10+2 elements such as manufacturer, consolidator, or '
+                                   'stuffing location',
+                                   'Speaker warns ISF failures can forfeit drawback eligibility and draw '
+                                   'penalties',
+                                   'Adriel Miller ([wL00BhzuPec @ 00:01:56])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Failure Points to Close Before the First Claim Goes Out',
+                           'body': 'Each gate below maps to a loss, denial, or rejection the speakers saw '
+                                   'firsthand. Hold the first claim until all four are closed.',
+                           'items': ['Lock the 5-year clock on day one: file claims the same day the '
+                                     'privilege application is submitted, and assign an owner to every CBP '
+                                     'information request [World Trade Center Denver — SO9sA-x5K0k @ '
+                                     '00:33:40] [Scarbrough Global — wEYqdvTPaqM @ 00:30:38].',
+                                     'Reconcile every claim line to ACE down to unit of measure, and clear '
+                                     'open PSCs, protests and Recon before filing [Scarbrough Global — '
+                                     '6Ogi9iKVSTE @ 00:21:06].',
+                                     'Do not destroy goods without a scheduled, witnessed event, a '
+                                     'disinterested third party and a certificate, because CBP often '
+                                     'denies unproven destruction [Scarbrough Global — lsd6_oB4p00 @ '
+                                     '00:02:29] [Evana — 1m5HmGyCEvw @ 00:01:30].',
+                                     'Segregate open retail returns with red stickers, separate zones or '
+                                     "an '-R' SKU suffix before they contaminate unused drawback and "
+                                     'Canada/Mexico exports [Flexport — 1_L7fnmAAU0 @ 00:29:29].']}}],
+ 'pull_quote': '"It is your one-time get out of jail free card that allows you to look back five years." — '
+               'Scarbrough Global (6Ogi9iKVSTE @ 00:09:10).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Size the opportunity before hiring anyone: multiply annual duty spend by your '
+                      'export percentage, or export COGS by your average duty rate [TalkingLogistics — '
+                      'BCWMDlUCSx4 @ 00:15:10] [Flexport — 1_L7fnmAAU0 @ 00:26:43].',
+                      'Pick a day for the Notice of Intent and privilege application before anything else, '
+                      'so the retroactive waiver does not bleed 3 to 6 months of imports [Scarbrough '
+                      'Global — wEYqdvTPaqM @ 00:32:45].',
+                      'Pull the ACE O3 report, the AES report and a power of attorney, and build one '
+                      'start-to-finish sample shipment for the privilege application [World Trade Center '
+                      'Denver — SO9sA-x5K0k @ 00:25:22].',
+                      'Screen every substitution pair at the 8-digit HTS level, drop to 10 digits on '
+                      "'other' lines, and discard 'other other' lines entirely [Scarbrough Global — "
+                      'fI28fmPlbPA @ 00:02:57].',
+                      'Resolve PSCs, protests and Reconciliation before filing, and match claim data to '
+                      'ACE down to unit of measure [Scarbrough Global — 6Ogi9iKVSTE @ 00:22:48].',
+                      "Segregate retail returns with red stickers, separate zones or an '-R' SKU suffix, "
+                      'and archive courier proof-of-delivery records before they expire [Flexport — '
+                      '1_L7fnmAAU0 @ 00:29:29].'],
+ 'statutory_citations': [{'title': 'Scarbrough Global — Duty Drawback - Full Version [00:30:38]',
+                          'url': 'https://www.youtube.com/watch?v=wEYqdvTPaqM&t=1838s',
+                          'relevance': 'Primary practitioner testimony on the 5-year window, missed CBP '
+                                       'information requests and Notice of Intent timing.'},
+                         {'title': 'Scarbrough Global — Duty Drawback - Live Webinar [00:21:06]',
+                          'url': 'https://www.youtube.com/watch?v=6Ogi9iKVSTE&t=1266s',
+                          'relevance': 'Primary practitioner testimony on exact ACE data matching, unseen '
+                                       'PSC rejections and first-claim desk reviews.'},
+                         {'title': 'Thompson Hine LLP — 11 19 2025 SmarTrade Fundamentals 2 25 Duty '
+                                   'Drawback Opportunities [00:42:34]',
+                          'url': 'https://www.youtube.com/watch?v=WqGvMD-AOqg&t=2554s',
+                          'relevance': 'Primary practitioner testimony on negligence and fraud penalty '
+                                       'tiers, prior disclosure and denial pivots.'},
+                         {'title': 'Flexport — Optimizing Duty Drawback for Maximum Refunds [00:29:29]',
+                          'url': 'https://www.youtube.com/watch?v=1_L7fnmAAU0&t=1769s',
+                          'relevance': 'Primary practitioner testimony on commingled retail returns, '
+                                       'proof-of-delivery archiving and accounting method choices.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'wEYqdvTPaqM',
+                       'title': 'Duty Drawback - Full Version',
+                       'channel': 'Scarbrough Global',
+                       'author': 'Scarbrough Global',
+                       'text': 'The biggest pitfall is missing CBP information requests inside the 5-year '
+                               'window.',
+                       'tip': 'The biggest pitfall is missing CBP information requests inside the 5-year '
+                              'window.',
+                       'timestamp': 1838,
+                       'timestamp_seconds': 1838,
+                       'timestamp_label': '[00:30:38]',
+                       'url': 'https://www.youtube.com/watch?v=wEYqdvTPaqM&t=1838s',
+                       'markdown': '[00:30:38](https://www.youtube.com/watch?v=wEYqdvTPaqM&t=1838s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NK99CBNOeJA',
+                       'title': 'Drawback - Opportunities, Requirements, & Insights',
+                       'channel': 'Star USA, Inc.',
+                       'author': 'Star USA, Inc.',
+                       'text': 'With accelerated payment the refund comes in about three weeks; otherwise '
+                               'you wait for liquidation, which can take up to four or five years.',
+                       'tip': 'With accelerated payment the refund comes in about three weeks; otherwise '
+                              'you wait for liquidation, which can take up to four or five years.',
+                       'timestamp': 2054,
+                       'timestamp_seconds': 2054,
+                       'timestamp_label': '[00:34:14]',
+                       'url': 'https://www.youtube.com/watch?v=NK99CBNOeJA&t=2054s',
+                       'markdown': '[00:34:14](https://www.youtube.com/watch?v=NK99CBNOeJA&t=2054s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1m5HmGyCEvw',
+                       'title': '6 Hidden Duty Refunds Most Importers Miss',
+                       'channel': 'Evana',
+                       'author': 'Evana',
+                       'text': "DDP doesn't kill a drawback program.",
+                       'tip': "DDP doesn't kill a drawback program.",
+                       'timestamp': 30,
+                       'timestamp_seconds': 30,
+                       'timestamp_label': '[00:00:30]',
+                       'url': 'https://www.youtube.com/watch?v=1m5HmGyCEvw&t=30s',
+                       'markdown': '[00:00:30](https://www.youtube.com/watch?v=1m5HmGyCEvw&t=30s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mkogoOMopss',
+                       'title': 'Unused Merchandise Drawback',
+                       'channel': 'Alliance Duty Drawback Services',
+                       'author': 'Alliance Duty Drawback Services',
+                       'text': 'When substituting merchandise, you can only claim drawback on the lesser '
+                               'of the import or export value.',
+                       'tip': 'When substituting merchandise, you can only claim drawback on the lesser of '
+                              'the import or export value.',
+                       'timestamp': 206,
+                       'timestamp_seconds': 206,
+                       'timestamp_label': '[00:03:26]',
+                       'url': 'https://www.youtube.com/watch?v=mkogoOMopss&t=206s',
+                       'markdown': '[00:03:26](https://www.youtube.com/watch?v=mkogoOMopss&t=206s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'E-PQ2z_UoCM',
+                       'title': 'What is Unused Merchandise Drawback when claiming duty drawback ?',
+                       'channel': 'Scarbrough Global',
+                       'author': 'Scarbrough Global',
+                       'text': 'Unused merchandise drawback covers imported goods that are exported or '
+                               'destroyed without being used, traced to the export by direct '
+                               'identification.',
+                       'tip': 'Unused merchandise drawback covers imported goods that are exported or '
+                              'destroyed without being used, traced to the export by direct '
+                              'identification.',
+                       'timestamp': 25,
+                       'timestamp_seconds': 25,
+                       'timestamp_label': '[00:00:25]',
+                       'url': 'https://www.youtube.com/watch?v=E-PQ2z_UoCM&t=25s',
+                       'markdown': '[00:00:25](https://www.youtube.com/watch?v=E-PQ2z_UoCM&t=25s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gf35xQR8Lz0',
+                       'title': 'ITM How to receive drawback on destroyed merchandise',
+                       'channel': 'International Tariff Management',
+                       'author': 'International Tariff Management',
+                       'text': 'And unfortunately, that company, even though they had an approval and went '
+                               'beyond the five years, that company lost $1,000,000 in recovery.',
+                       'tip': 'And unfortunately, that company, even though they had an approval and went '
+                              'beyond the five years, that company lost $1,000,000 in recovery.',
+                       'timestamp': 517,
+                       'timestamp_seconds': 517,
+                       'timestamp_label': '[00:08:37]',
+                       'url': 'https://www.youtube.com/watch?v=gf35xQR8Lz0&t=517s',
+                       'markdown': '[00:08:37](https://www.youtube.com/watch?v=gf35xQR8Lz0&t=517s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lsd6_oB4p00',
+                       'title': 'Are there different documents required for destroyed merchandise on duty '
+                                'drawback ?',
+                       'channel': 'Scarbrough Global',
+                       'author': 'Scarbrough Global',
+                       'text': 'Customs often denies destruction claims when there is no proof that the '
+                               'destruction was supervised.',
+                       'tip': 'Customs often denies destruction claims when there is no proof that the '
+                              'destruction was supervised.',
+                       'timestamp': 149,
+                       'timestamp_seconds': 149,
+                       'timestamp_label': '[00:02:29]',
+                       'url': 'https://www.youtube.com/watch?v=lsd6_oB4p00&t=149s',
+                       'markdown': '[00:02:29](https://www.youtube.com/watch?v=lsd6_oB4p00&t=149s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'm4ePKta6BXo',
+                       'title': 'Duty Drawback and Foreign Trade Zone FTZ',
+                       'channel': 'Scarbrough Global',
+                       'author': 'Scarbrough Global',
+                       'text': 'Goods that go zone-in and zone-out never pay duty, but a duty-paid import '
+                               'exported into a zone still earns drawback.',
+                       'tip': 'Goods that go zone-in and zone-out never pay duty, but a duty-paid import '
+                              'exported into a zone still earns drawback.',
+                       'timestamp': 122,
+                       'timestamp_seconds': 122,
+                       'timestamp_label': '[00:02:02]',
+                       'url': 'https://www.youtube.com/watch?v=m4ePKta6BXo&t=122s',
+                       'markdown': '[00:02:02](https://www.youtube.com/watch?v=m4ePKta6BXo&t=122s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wL00BhzuPec',
+                       'title': 'Mastering ISF Compliance for Duty Drawbacks',
+                       'channel': 'Adriel Miller',
+                       'author': 'Adriel Miller',
+                       'text': 'ISF failures can forfeit your drawback and draw penalties.',
+                       'tip': 'ISF failures can forfeit your drawback and draw penalties.',
+                       'timestamp': 116,
+                       'timestamp_seconds': 116,
+                       'timestamp_label': '[00:01:56]',
+                       'url': 'https://www.youtube.com/watch?v=wL00BhzuPec&t=116s',
+                       'markdown': '[00:01:56](https://www.youtube.com/watch?v=wL00BhzuPec&t=116s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1_L7fnmAAU0',
+                       'title': 'Optimizing Duty Drawback for Maximum Refunds',
+                       'channel': 'Flexport',
+                       'author': 'Flexport',
+                       'text': 'It is only 99% because 1% is kept in customs for administrative fees.',
+                       'tip': 'It is only 99% because 1% is kept in customs for administrative fees.',
+                       'timestamp': 157,
+                       'timestamp_seconds': 157,
+                       'timestamp_label': '[00:02:37]',
+                       'url': 'https://www.youtube.com/watch?v=1_L7fnmAAU0&t=157s',
+                       'markdown': '[00:02:37](https://www.youtube.com/watch?v=1_L7fnmAAU0&t=157s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1_L7fnmAAU0',
+                       'title': 'Optimizing Duty Drawback for Maximum Refunds',
+                       'channel': 'Flexport',
+                       'author': 'Flexport',
+                       'text': 'The advance fees of 2 to 10% is dependent on whether a claim has been '
+                               'approved for accelerated payment or not.',
+                       'tip': 'The advance fees of 2 to 10% is dependent on whether a claim has been '
+                              'approved for accelerated payment or not.',
+                       'timestamp': 2166,
+                       'timestamp_seconds': 2166,
+                       'timestamp_label': '[00:36:06]',
+                       'url': 'https://www.youtube.com/watch?v=1_L7fnmAAU0&t=2166s',
+                       'markdown': '[00:36:06](https://www.youtube.com/watch?v=1_L7fnmAAU0&t=2166s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fI28fmPlbPA',
+                       'title': 'What is Substitution Drawback when claiming duty drawback ?',
+                       'channel': 'Scarbrough Global',
+                       'author': 'Scarbrough Global',
+                       'text': "If the 10 digit HTS is also an other provision there's no substitution "
+                               'drawback allowed.',
+                       'tip': "If the 10 digit HTS is also an other provision there's no substitution "
+                              'drawback allowed.',
+                       'timestamp': 177,
+                       'timestamp_seconds': 177,
+                       'timestamp_label': '[00:02:57]',
+                       'url': 'https://www.youtube.com/watch?v=fI28fmPlbPA&t=177s',
+                       'markdown': '[00:02:57](https://www.youtube.com/watch?v=fI28fmPlbPA&t=177s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'A7RUPXhyx4M',
+                       'title': 'Maximizing Duty Drawback with Flexport',
+                       'channel': 'Flexport',
+                       'author': 'Flexport',
+                       'text': "We're putting the same data through our software as opposed to the legacy "
+                               'software.',
+                       'tip': "We're putting the same data through our software as opposed to the legacy "
+                              'software.',
+                       'timestamp': 1857,
+                       'timestamp_seconds': 1857,
+                       'timestamp_label': '[00:30:57]',
+                       'url': 'https://www.youtube.com/watch?v=A7RUPXhyx4M&t=1857s',
+                       'markdown': '[00:30:57](https://www.youtube.com/watch?v=A7RUPXhyx4M&t=1857s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BCWMDlUCSx4',
+                       'title': 'Why Duty Drawback is Making a Comeback',
+                       'channel': 'TalkingLogistics',
+                       'author': 'TalkingLogistics',
+                       'text': "It's estimated that I think around five to six hundred million is "
+                               'recovered annually.',
+                       'tip': "It's estimated that I think around five to six hundred million is recovered "
+                              'annually.',
+                       'timestamp': 463,
+                       'timestamp_seconds': 463,
+                       'timestamp_label': '[00:07:43]',
+                       'url': 'https://www.youtube.com/watch?v=BCWMDlUCSx4&t=463s',
+                       'markdown': '[00:07:43](https://www.youtube.com/watch?v=BCWMDlUCSx4&t=463s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6Ogi9iKVSTE',
+                       'title': 'Duty Drawback - Live Webinar',
+                       'channel': 'Scarbrough Global',
+                       'author': 'Scarbrough Global',
+                       'text': 'Almost every time you file your first claim you are going to get hit with '
+                               'a full desk review.',
+                       'tip': 'Almost every time you file your first claim you are going to get hit with a '
+                              'full desk review.',
+                       'timestamp': 1939,
+                       'timestamp_seconds': 1939,
+                       'timestamp_label': '[00:32:19]',
+                       'url': 'https://www.youtube.com/watch?v=6Ogi9iKVSTE&t=1939s',
+                       'markdown': '[00:32:19](https://www.youtube.com/watch?v=6Ogi9iKVSTE&t=1939s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WqGvMD-AOqg',
+                       'title': '11 19 2025 SmarTrade Fundamentals 2 25 Duty Drawback Opportunities',
+                       'channel': 'Thompson Hine LLP',
+                       'author': 'Thompson Hine LLP',
+                       'text': "So to state that differently you're only getting refunded the smaller of "
+                               'the two duty amounts which prevents over refunds when substituted goods '
+                               'are used.',
+                       'tip': "So to state that differently you're only getting refunded the smaller of "
+                              'the two duty amounts which prevents over refunds when substituted goods are '
+                              'used.',
+                       'timestamp': 1678,
+                       'timestamp_seconds': 1678,
+                       'timestamp_label': '[00:27:58]',
+                       'url': 'https://www.youtube.com/watch?v=WqGvMD-AOqg&t=1678s',
+                       'markdown': '[00:27:58](https://www.youtube.com/watch?v=WqGvMD-AOqg&t=1678s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SO9sA-x5K0k',
+                       'title': 'Duty Drawback-Beyond the Basics',
+                       'channel': 'World Trade Center Denver',
+                       'author': 'World Trade Center Denver',
+                       'text': "So we don't get paid until you do.",
+                       'tip': "So we don't get paid until you do.",
+                       'timestamp': 506,
+                       'timestamp_seconds': 506,
+                       'timestamp_label': '[00:08:26]',
+                       'url': 'https://www.youtube.com/watch?v=SO9sA-x5K0k&t=506s',
+                       'markdown': '[00:08:26](https://www.youtube.com/watch?v=SO9sA-x5K0k&t=506s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SO9sA-x5K0k',
+                       'title': 'Duty Drawback-Beyond the Basics',
+                       'channel': 'World Trade Center Denver',
+                       'author': 'World Trade Center Denver',
+                       'text': 'A majority of the 232s are not eligible for duty drawback.',
+                       'tip': 'A majority of the 232s are not eligible for duty drawback.',
+                       'timestamp': 2649,
+                       'timestamp_seconds': 2649,
+                       'timestamp_label': '[00:44:09]',
+                       'url': 'https://www.youtube.com/watch?v=SO9sA-x5K0k&t=2649s',
+                       'markdown': '[00:44:09](https://www.youtube.com/watch?v=SO9sA-x5K0k&t=2649s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'}]}

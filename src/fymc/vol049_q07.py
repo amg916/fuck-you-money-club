@@ -1,990 +1,822 @@
 from __future__ import annotations
 
-_MODULE_1 = '''# Module 1: schema and connection factory.
-import hashlib
-import json
-import sqlite3
-
-SCHEMA = """
-CREATE TABLE IF NOT EXISTS events (
-    event_id TEXT PRIMARY KEY,
-    digest TEXT NOT NULL,
-    result TEXT NOT NULL
-);
-CREATE TABLE IF NOT EXISTS cases (
-    case_id TEXT PRIMARY KEY,
-    partner TEXT NOT NULL,
-    external_id TEXT NOT NULL,
-    rail TEXT NOT NULL CHECK (rail IN ('saas','builder','cpa','ngr')),
-    cents INTEGER NOT NULL CHECK (cents > 0),
-    state TEXT NOT NULL CHECK (
-        state IN ('intake','verified','released','rejected')
-    ),
-    evidence TEXT NOT NULL,
-    UNIQUE (partner, external_id)
-);
-CREATE TABLE IF NOT EXISTS journal (
-    entry_id INTEGER PRIMARY KEY,
-    event_id TEXT NOT NULL UNIQUE REFERENCES events(event_id),
-    case_id TEXT REFERENCES cases(case_id),
-    rail TEXT NOT NULL CHECK (rail IN ('saas','builder','cpa','ngr','shared')),
-    debit TEXT NOT NULL CHECK (debit IN ('receivable','cash','expense')),
-    credit TEXT NOT NULL CHECK (credit IN ('revenue','receivable','cash')),
-    cents INTEGER NOT NULL CHECK (cents > 0),
-    receipt_key TEXT UNIQUE,
-    CHECK (
-        (debit='receivable' AND credit='revenue') OR
-        (debit='cash' AND credit='receivable') OR
-        (debit='expense' AND credit='cash')
-    ),
-    CHECK (debit <> 'cash' OR receipt_key IS NOT NULL)
-);
-CREATE TRIGGER IF NOT EXISTS journal_no_update
-BEFORE UPDATE ON journal
-BEGIN
-    SELECT RAISE(ABORT, 'Journal entries are immutable');
-END;
-CREATE TRIGGER IF NOT EXISTS journal_no_delete
-BEFORE DELETE ON journal
-BEGIN
-    SELECT RAISE(ABORT, 'Journal entries are immutable');
-END;
-CREATE TRIGGER IF NOT EXISTS case_amount_fixed
-BEFORE UPDATE OF cents, rail, partner, external_id ON cases
-BEGIN
-    SELECT RAISE(ABORT, 'Case economics are immutable');
-END;
-CREATE VIEW IF NOT EXISTS reconciliation AS
-SELECT
-    rail,
-    SUM(CASE WHEN credit='revenue' THEN cents ELSE 0 END)
-        AS revenue_cents,
-    SUM(CASE WHEN debit='expense' THEN cents ELSE 0 END)
-        AS expense_cents,
-    SUM(CASE WHEN debit='receivable' THEN cents
-             WHEN credit='receivable' THEN -cents ELSE 0 END)
-        AS receivable_cents,
-    SUM(CASE WHEN debit='cash' THEN cents
-             WHEN credit='cash' THEN -cents ELSE 0 END)
-        AS cash_change_cents
-FROM journal
-GROUP BY rail;
-"""
-
-def connect(path):
-    connection = sqlite3.connect(
-        str(path), timeout=30.0, isolation_level=None
-    )
-    connection.execute("PRAGMA foreign_keys=ON")
-    connection.execute("PRAGMA synchronous=FULL")
-    connection.execute("PRAGMA busy_timeout=30000")
-    return connection
-
-def initialize(path):
-    connection = connect(path)
-    try:
-        connection.execute("PRAGMA journal_mode=WAL")
-        connection.executescript(SCHEMA)
-    finally:
-        connection.close()
-'''
-
-_MODULE_2 = '''# Module 2: atomic idempotency envelope.
-def canonical(value):
-    return json.dumps(value, sort_keys=True, separators=(",", ":"))
-
-def positive_cents(value):
-    if type(value) is not int or value <= 0:
-        raise ValueError("Money must be positive integer cents")
-
-def atomic(connection, event_id, payload, operation):
-    if not isinstance(event_id, str) or not event_id.strip():
-        raise ValueError("A stable namespaced event identifier is required")
-    digest = hashlib.sha256(canonical(payload).encode("utf-8")).hexdigest()
-    connection.execute("BEGIN IMMEDIATE")
-    try:
-        previous = connection.execute(
-            "SELECT digest, result FROM events WHERE event_id=?",
-            (event_id,),
-        ).fetchone()
-        if previous is not None:
-            if previous[0] != digest:
-                raise ValueError("Event identifier reused with altered payload")
-            result = json.loads(previous[1])
-            connection.commit()
-            return result
-        connection.execute(
-            "INSERT INTO events(event_id,digest,result) VALUES(?,?,?)",
-            (event_id, digest, "{}"),
-        )
-        result = operation()
-        connection.execute(
-            "UPDATE events SET result=? WHERE event_id=?",
-            (canonical(result), event_id),
-        )
-        connection.commit()
-        return result
-    except BaseException:
-        connection.rollback()
-        raise
-'''
-
-_MODULE_3 = '''# Module 3: eligibility intake and deterministic routing score.
-def intake(connection, event_id, record):
-    # Evidence is resolved by trusted adapters, never public form fields.
-    record = json.loads(canonical(record))
-    positive_cents(record["cents"])
-    rail = record["rail"]
-    if rail not in ("saas", "builder", "cpa", "ngr"):
-        raise ValueError("Unsupported revenue rail")
-    for name in ("case_id", "partner", "external_id", "evidence"):
-        if not isinstance(record[name], str) or not record[name].strip():
-            raise ValueError("Required identifier or evidence reference missing")
-    checks = ["noncustodial", "rights_verified", "territory_verified"]
-    if rail in ("cpa", "ngr"):
-        checks += ["age_21_verified", "vendor_verified", "operator_verified"]
-    if rail == "builder":
-        checks += ["builder_contract_verified", "registration_scope_verified"]
-    if rail == "saas":
-        checks += ["publisher_scope_verified"]
-    eligible = all(record.get(name) is True for name in checks)
-    score = 100 if eligible else 0
-
-    def operation():
-        state = "intake" if eligible else "rejected"
-        connection.execute(
-            "INSERT INTO cases VALUES(?,?,?,?,?,?,?)",
-            (
-                record["case_id"], record["partner"], record["external_id"],
-                rail, record["cents"], state, record["evidence"],
-            ),
-        )
-        return {"case_id": record["case_id"], "state": state, "score": score}
-
-    return atomic(
-        connection, event_id, {"operation": "intake", "record": record},
-        operation,
-    )
-'''
-
-_MODULE_4 = '''# Module 4: verification reserve, with no customer-money escrow.
-def verify(connection, event_id, case_id, earned_evidence):
-    if not isinstance(earned_evidence, str) or not earned_evidence.strip():
-        raise ValueError("Earned-revenue evidence reference is required")
-
-    def operation():
-        row = connection.execute(
-            "SELECT rail,cents,state FROM cases WHERE case_id=?",
-            (case_id,),
-        ).fetchone()
-        if row is None or row[2] != "intake":
-            raise ValueError("Case is absent or cannot enter verified state")
-        connection.execute(
-            "UPDATE cases SET state='verified',evidence=? WHERE case_id=?",
-            (earned_evidence, case_id),
-        )
-        connection.execute(
-            """INSERT INTO journal(
-                event_id,case_id,rail,debit,credit,cents,receipt_key
-            ) VALUES(?,?,?,'receivable','revenue',?,NULL)""",
-            (event_id, case_id, row[0], row[1]),
-        )
-        return {"case_id": case_id, "state": "verified", "cents": row[1]}
-
-    return atomic(
-        connection, event_id,
-        {"operation": "verify", "case_id": case_id,
-         "earned_evidence": earned_evidence},
-        operation,
-    )
-
-def reject(connection, event_id, case_id, reason_evidence):
-    if not reason_evidence:
-        raise ValueError("Rejection evidence is required")
-
-    def operation():
-        changed = connection.execute(
-            """UPDATE cases SET state='rejected',evidence=?
-               WHERE case_id=? AND state='intake'""",
-            (reason_evidence, case_id),
-        ).rowcount
-        if changed != 1:
-            raise ValueError("Only unearned intake cases can be rejected")
-        return {"case_id": case_id, "state": "rejected"}
-
-    return atomic(
-        connection, event_id,
-        {"operation": "reject", "case_id": case_id,
-         "reason_evidence": reason_evidence},
-        operation,
-    )
-'''
-
-_MODULE_5 = '''# Module 5: full-invoice cash matching and paid operating expenses.
-def settle(connection, event_id, case_id, receipt_id, cents):
-    positive_cents(cents)
-    if not isinstance(receipt_id, str) or not receipt_id.strip():
-        raise ValueError("A bank-backed receipt allocation is required")
-
-    def operation():
-        row = connection.execute(
-            "SELECT partner,rail,cents,state FROM cases WHERE case_id=?",
-            (case_id,),
-        ).fetchone()
-        if row is None or row[3] != "verified" or row[2] != cents:
-            raise ValueError("Settlement must match one verified invoice")
-        receipt_key = canonical([row[0], receipt_id])
-        connection.execute(
-            """INSERT INTO journal(
-                event_id,case_id,rail,debit,credit,cents,receipt_key
-            ) VALUES(?,?,?,'cash','receivable',?,?)""",
-            (event_id, case_id, row[1], cents, receipt_key),
-        )
-        connection.execute(
-            "UPDATE cases SET state='released' WHERE case_id=?",
-            (case_id,),
-        )
-        return {"case_id": case_id, "state": "released", "cents": cents}
-
-    return atomic(
-        connection, event_id,
-        {"operation": "settle", "case_id": case_id,
-         "receipt_id": receipt_id, "cents": cents},
-        operation,
-    )
-
-def expense(connection, event_id, rail, payment_id, cents, evidence):
-    positive_cents(cents)
-    if rail not in ("saas", "builder", "cpa", "ngr", "shared"):
-        raise ValueError("Expense rail is invalid")
-    if not payment_id or not evidence:
-        raise ValueError("Paid expense needs payment and evidence identifiers")
-
-    def operation():
-        connection.execute(
-            """INSERT INTO journal(
-                event_id,case_id,rail,debit,credit,cents,receipt_key
-            ) VALUES(?,NULL,?,'expense','cash',?,?)""",
-            (event_id, rail, cents, canonical(["expense", payment_id])),
-        )
-        return {"payment_id": payment_id, "cents": cents}
-
-    return atomic(
-        connection, event_id,
-        {"operation": "expense", "rail": rail, "payment_id": payment_id,
-         "cents": cents, "evidence": evidence},
-        operation,
-    )
-
-def report(connection):
-    return connection.execute(
-        "SELECT * FROM reconciliation ORDER BY rail"
-    ).fetchall()
-'''
-
-_MODULE_6 = '''# Module 6: executable replay, contention, and reconciliation checks.
-def self_test():
-    from concurrent.futures import ThreadPoolExecutor
-    from pathlib import Path
-    from tempfile import TemporaryDirectory
-
-    with TemporaryDirectory() as directory:
-        path = Path(directory) / "ledger.sqlite"
-        initialize(path)
-        connection = connect(path)
-        record = {
-            "case_id": "cohort-01",
-            "partner": "licensed-partner-01",
-            "external_id": "accepted-ftd-01",
-            "rail": "cpa",
-            "cents": 20000,
-            "evidence": "restricted-evidence/intake-01",
-            "noncustodial": True,
-            "rights_verified": True,
-            "territory_verified": True,
-            "age_21_verified": True,
-            "vendor_verified": True,
-            "operator_verified": True,
-        }
-        intake(connection, "partner-01/intake/01", record)
-        intake(connection, "partner-01/intake/01", record)
-
-        def worker(index):
-            local = connect(path)
-            try:
-                return verify(
-                    local, "partner-01/verify/01", "cohort-01",
-                    "restricted-evidence/earned-01",
-                )
-            finally:
-                local.close()
-
-        with ThreadPoolExecutor(max_workers=8) as executor:
-            results = list(executor.map(worker, range(16)))
-        assert all(result == results[0] for result in results)
-        assert connection.execute(
-            "SELECT COUNT(*) FROM journal"
-        ).fetchone()[0] == 1
-
-        changed = dict(record, cents=30000)
-        try:
-            intake(connection, "partner-01/intake/01", changed)
-        except ValueError:
-            pass
-        else:
-            raise AssertionError("Altered replay was accepted")
-
-        try:
-            settle(connection, "partner-01/cash/bad", "cohort-01",
-                   "bank-01/allocation-01", 19999)
-        except ValueError:
-            pass
-        else:
-            raise AssertionError("Amount mismatch was accepted")
-        assert connection.execute(
-            "SELECT COUNT(*) FROM events WHERE event_id=?",
-            ("partner-01/cash/bad",),
-        ).fetchone()[0] == 0
-
-        settle(connection, "partner-01/cash/01", "cohort-01",
-               "bank-01/allocation-01", 20000)
-        settle(connection, "partner-01/cash/01", "cohort-01",
-               "bank-01/allocation-01", 20000)
-        expense(connection, "operator/expense/01", "cpa",
-                "bank-out-01", 5000, "restricted-evidence/invoice-01")
-        assert report(connection) == [("cpa", 20000, 5000, 0, 15000)]
-        assert connection.execute(
-            "PRAGMA integrity_check"
-        ).fetchone()[0] == "ok"
-        assert connection.execute(
-            "PRAGMA foreign_key_check"
-        ).fetchall() == []
-        connection.close()
-
-# Run self_test() explicitly after joining Modules 1 through 6.
-'''
-
-CHAPTER_7 = {
-    "id": "Q7",
-    "chapter_id": "Q7",
-    "chapter_number": 7,
-    "question_number": 7,
-    "slug": "complete-operating-process-production-blueprint-90-day-cohort",
-    "question_prompt": (
-        "How does an operator execute regulated prediction-market terminals & "
-        "licensed igaming affiliates end-to-end from intake to reconciled cash, "
-        "backed by an auditable technical/ledger blueprint and a worked 90-day "
-        "cohort walk?"
-    ),
-    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
-    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
-    "subtitle": (
-        "Non-Custodial DCM Analytics, Licensed CPA/NGR Attribution, "
-        "SQLite Replay Safety, and Bank-Matched Cohorts Under CEA and State Rules"
-    ),
-    "layout_template": "research_exhibit",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #49, ranked #18 of 49 with a 91/100 Money-to-Manpower Score, "
-        "requires two distinct businesses sharing one disciplined operating system: "
-        "non-custodial analytics software and licensed gaming-affiliate media. This "
-        "chapter connects 12 mapped plays to eligibility intake, evidence-backed "
-        "recognition, immutable ledger entries, and actual bank receipts. Six "
-        "copy-pasteable engineering modules establish serialized SQLite transactions "
-        "and replay-safe workflows; a worked three-month cohort separates earned "
-        "revenue from delayed partner cash. Canonical annual owner profit remains "
-        "$19,500 Conservative, $137,750 Base, and $325,000 Scaled. The Base walk "
-        "earns $90,625 quarterly revenue and $34,437.50 operating profit while "
-        "exposing $15,208.34 of closing receivables, sportsbook scrubs, NGR "
-        "deductions, acquisition costs, and seasonal replacement requirements."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$75,000",
-            "context": "Annual recognized operator revenue; excludes customer trading volume",
-            "note": "26% net margin; $19,500 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$362,500",
-            "context": "Annual recognized operator revenue; net affiliate commissions included",
-            "note": "38.0% net margin; $137,750 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$650,000",
-            "context": "Annual recognized operator revenue; excludes gaming handle and deposits",
-            "note": "50% net margin; $325,000 annual owner net profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Qualify the territory, contract, and revenue rail before publishing",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start each property with a signed operating manifest containing its legal entity, "
-                    "approved territories, partner identifiers, data entitlements, monetization method, "
-                    "and accountable owner. Separate the analytics subscription agreement from every "
-                    "sportsbook affiliate agreement; a common website does not merge their permissions. "
-                    "For Kalshi or ForecastEx coverage, document the actual authorized distributor, "
-                    "available endpoints, refresh limits, redistribution rights, and contract identifiers. "
-                    "Do not assume both venues expose interchangeable public WebSocket feeds. Normalize "
-                    "event settlement terms before comparing probabilities, because superficially similar "
-                    "contracts can settle on different sources or deadlines. An alert remains analytics: "
-                    "the subscriber decides whether to trade through their own authorized account. The "
-                    "operator never receives customer deposits, pools capital, stores trading credentials, "
-                    "or submits orders under this blueprint. Evaluate the actual activity against the "
-                    "introducing-broker and futures-commission-merchant definitions in 7 U.S.C. 1a, the "
-                    "registration provisions in 7 U.S.C. 6d, and the commodity-trading-adviser perimeter "
-                    "where recommendations become personalized. A publisher label cannot override those "
-                    "facts. Until scope is resolved, disable transaction-linked compensation and retain "
-                    "only separately reviewed, impersonal research subscriptions. Record that decision "
-                    "with the product version so later feature changes reopen the analysis."
-                ),
-                (
-                    "Gaming intake uses a different manifest: destination operator license, relevant "
-                    "affiliate or supplier registration determination, state targeting rules, approved "
-                    "creative, permitted incentive wording, and responsible-gaming resources. Treat New "
-                    "Jersey DGE, Pennsylvania PGCB, Michigan MGCB, and West Virginia Lottery requirements "
-                    "as separate work queues rather than one national permission. Ontario is a separate "
-                    "country-level operating configuration with AGCO and iGaming Ontario requirements, "
-                    "not another American state. This blueprint uses a conservative 21-plus audience "
-                    "policy throughout; that product restriction does not describe every territory's "
-                    "statutory minimum. Before displaying a monetized destination, resolve the visitor's "
-                    "territory through an approved geolocation service, suppress uncertain results, and "
-                    "apply the partner's eligibility rules. The licensed operator still performs its "
-                    "own identity, age, exclusion, and wagering-location checks. Preserve a pseudonymous "
-                    "click identifier and creative version, never a copy of identity documents merely "
-                    "for attribution. Clearly disclose the affiliate relationship beside recommendations "
-                    "under 16 CFR 255.5. Reject offshore, unauthorized crypto, and unlawful sweepstakes "
-                    "destinations even when their advertised commissions exceed licensed offers. Maintain "
-                    "a tested link-removal procedure and show current responsible-gaming contacts "
-                    "appropriate to the visitor's territory, including 1-800-GAMBLER where applicable."
-                ),
-                (
-                    "Map twelve operating plays without pretending that twelve catalog identifiers were "
-                    "supplied. The named catalog play is serverless_edge_free_tier_empire_hosting; the "
-                    "other eleven are chapter-local implementation labels enumerated in the matrix. "
-                    "Use Cloudflare Pages for permitted static bundles and Workers only where dynamic "
-                    "functions are necessary. Evaluate Vercel, Netlify, GitHub Pages, and Supabase against "
-                    "their current commercial-use restrictions and quotas rather than assuming every "
-                    "free allocation permits this business. A conditional hosting experiment is 100 "
-                    "approved properties times $0.00 hosting per month, with locally compiled HTML and "
-                    "JSON uploaded as artifacts. That calculation excludes domains, licensed feeds, "
-                    "monitoring, labor, and acquisition; it never establishes zero business costs. Stop "
-                    "at a small number of genuinely useful comparison tools until each has distinct "
-                    "content and eligible traffic. Do not multiply accounts or properties to bypass "
-                    "provider limits. If an allocation becomes unsuitable, consolidate the sites, "
-                    "disable expensive dynamic paths, or pay for an appropriate plan from the existing "
-                    "software budget. The operating edge is reusable evidence and predictable delivery, "
-                    "not indiscriminate page production. Assign one owner to every play and attach "
-                    "its unit denominator, stop condition, and recovery action to the manifest."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve Mapped Operating Plays, Unit Denominators, and Risk Fallbacks",
-                "headers": [
-                    "Mapped play and accountable operating scope",
-                    "Concrete unit calculation and production artifact",
-                    "Failure condition that changes the economics",
-                    "Specific fallback and retained evidence record",
-                ],
-                "rows": [
-                    [
-                        "Play 1: serverless_edge_free_tier_empire_hosting; publisher owns deployment eligibility",
-                        "100 approved static properties times $0.00 conditional monthly hosting",
-                        "Commercial restrictions, quota exhaustion, or duplicate-content acquisition failure",
-                        "Compile locally, upload artifacts, consolidate properties, or fund paid hosting",
-                    ],
-                    [
-                        "Plays 2–3: entitled feed normalization and settlement-equivalence matching",
-                        "Two entitled venue sources produce one comparable contract-pair record",
-                        "Different settlement sources make apparent probability spreads economically misleading",
-                        "Suppress unmatched contracts and retain original terms plus source timestamps",
-                    ],
-                    [
-                        "Plays 4–5: freshness-bounded alert delivery and paid analytics subscriptions",
-                        "300 active monthly subscriptions times $50 equals $15,000 earned revenue",
-                        "Stale quotes, feed outages, or subscriber churn destroy product usefulness",
-                        "Mark stale instruments unavailable and replace churn before counting renewals",
-                    ],
-                    [
-                        "Plays 6–7: permitted builder referrals and territory-qualified comparison publishing",
-                        "250 eligible builder units times $100 equals $25,000 annual revenue",
-                        "Rebate permissions lapse or destination eligibility changes by territory",
-                        "Disable affected compensation and links while preserving reviewed subscription service",
-                    ],
-                    [
-                        "Plays 8–9: server-to-server attribution and evidence-backed CPA acceptance",
-                        "60 submitted monthly FTDs less 10 scrubs yield 50 payable conversions",
-                        "Duplicate customers, excluded traffic, or qualification-window failures erase commissions",
-                        "Reject unsupported conversions and dispute only with contract-matched evidence packets",
-                    ],
-                    [
-                        "Plays 10–11: NGR waterfall accounting and seasonal acquisition replacement",
-                        "$25,000 less $12,500 deductions times 25% equals $3,125 commission",
-                        "Negative carryover and off-season budgets reduce expected affiliate contribution",
-                        "Track each partner waterfall separately and reduce uneconomic paid acquisition",
-                    ],
-                    [
-                        "Play 12: replay-safe invoice recognition and bank-receipt reconciliation",
-                        "$30,208.33 typical monthly earnings split between immediate and delayed cash",
-                        "Duplicate callbacks or missing remittances inflate revenue and usable cash",
-                        "Serialize ledger writes, quarantine mismatches, and chase aged partner balances",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before any monetized destination goes live",
-                "body": (
-                    "The release owner records affirmative evidence for every check; "
-                    "missing evidence keeps the affected feature or destination disabled."
-                ),
-                "items": [
-                    "Verify the actual publisher, adviser, IB, and FCM activity analysis; remove order entry, customer-fund handling, and unresolved transaction compensation.",
-                    "Verify territory-specific operator authorization and the affiliate registration determination; test that disallowed and uncertain locations receive no monetized link.",
-                    "Verify feed entitlements, contract-equivalence rules, stale-data behavior, and licensed usage limits against the deployed build.",
-                    "Verify age restrictions, affiliate disclosures, responsible-gaming contacts, signed attribution terms, and an owner-operated emergency link-removal control.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Build a serialized evidence ledger before connecting partner callbacks",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The six modules below form one small executable SQLite reference when copied in "
-                    "order into a Python file. They deliberately implement a narrow workflow: approved "
-                    "positive-value invoices, full settlement, paid operating expenses, and one currency "
-                    "per database. Initialize the database once before starting workers; each worker "
-                    "then opens its own connection on a local disk with reliable locking. Do not deploy "
-                    "this file on an object store or an unsuitable network filesystem. The single "
-                    "writer acquires BEGIN IMMEDIATE before reading mutable state, and every state "
-                    "change, journal entry, and idempotency result commits together. Concurrent replay "
-                    "therefore cannot double-recognize a case through these functions. A busy timeout "
-                    "fails the request without acknowledging success; the caller retries the same "
-                    "event identifier and identical payload. The unique partner/external identifier "
-                    "also stops a duplicate intake disguised with another event identifier. Authentication, "
-                    "authorization, signature validation, payload size limits, and secret storage belong "
-                    "in the adapter before these functions. Treat their absence from this compact "
-                    "reference as integration work, not as permission to expose a database operation "
-                    "directly to an unauthenticated browser or partner callback."
-                ),
-                (
-                    "Intake scoring is an eligibility switch, not a speculative estimate of player "
-                    "value. The trusted adapter resolves rights, territory, registration scope, and "
-                    "operator eligibility from maintained evidence; user-supplied booleans cannot satisfy "
-                    "those checks. The immutable amount represents an approved commercial unit, such "
-                    "as a $200 accepted CPA, not the customer's deposit. Verification requires earned "
-                    "revenue evidence: delivered subscription service, an approved builder statement, "
-                    "an accepted first-time-depositor qualification, or a finalized NGR waterfall. "
-                    "The requested verification/escrow state machine is implemented as an evidence "
-                    "reserve only. Intake can become rejected or verified; verified can become released "
-                    "after a bank-backed match. No state holds customer funds, and released means "
-                    "the operator's invoice was collected. Prepaid annual subscriptions need deferred "
-                    "revenue and monthly service recognition, so they remain outside this monthly "
-                    "earned-service example. Similarly, refunds, partial payments, currency conversion, "
-                    "and later clawbacks require explicit compensating-entry extensions before those "
-                    "features are enabled. Never edit an earned amount to hide a dispute. Preserve "
-                    "the original record and add a separately authorized adjustment workflow with "
-                    "its own replay key, evidence, and balancing entries when extending the reference."
-                ),
-                (
-                    "Every journal row specifies equal debit and credit cents, giving the reconciliation "
-                    "view a transparent bridge between revenue, expense, receivables, and cash change. "
-                    "Integer cents avoid binary floating-point drift; rounding occurs once when the "
-                    "contractual invoice is prepared. A settlement references a canonical bank receipt "
-                    "allocation, and its unique key prevents that allocation from funding two cases. "
-                    "For a bulk remittance, the adapter must first construct immutable allocation "
-                    "lines whose sum equals the bank receipt; this reference accepts only those "
-                    "prevalidated full-invoice lines. Store bank and partner evidence in restricted "
-                    "storage and retain references rather than sensitive raw payloads in the ledger. "
-                    "The supplied test exercises concurrent identical verification, altered replay "
-                    "rejection, settlement mismatch rollback, duplicate settlement suppression, and "
-                    "accounting totals. It is included as executable QA, not represented as having "
-                    "been run here. Before production, add process-crash recovery tests, duplicate "
-                    "receipt tests across separate cases, restoration drills, and authenticated adapter "
-                    "tests. All outward financial actions remain outside these modules: they record "
-                    "observed receipts and expenses rather than initiating transfers. That separation "
-                    "avoids pretending a database transaction can atomically commit an unrelated "
-                    "bank or partner API action."
-                ),
-            ],
-            "table": {
-                "caption": "6-Module Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
-                "headers": [
-                    "Module and bounded production responsibility",
-                    "Copy-pasteable Python reference in execution order",
-                    "Concurrency invariant and required integration evidence",
-                ],
-                "rows": [
-                    [
-                        "Module 1 establishes constrained tables, immutable journal entries, and reconciliation view",
-                        _MODULE_1,
-                        "Initialize before workers; use local reliable storage and restrict direct database access",
-                    ],
-                    [
-                        "Module 2 serializes writes and binds event identifiers to immutable payload digests",
-                        _MODULE_2,
-                        "All workflow writes use the same transaction envelope; failed attempts remain unacknowledged",
-                    ],
-                    [
-                        "Module 3 records trusted eligibility evidence and deterministic zero-or-100 intake scores",
-                        _MODULE_3,
-                        "Server adapters resolve evidence; public forms cannot assert eligibility or approved amounts",
-                    ],
-                    [
-                        "Module 4 recognizes earned invoices through a non-monetary verification reserve",
-                        _MODULE_4,
-                        "State checks and journal creation share one lock; no customer-money escrow exists",
-                    ],
-                    [
-                        "Module 5 matches full invoice allocations and records actual paid operating expenses",
-                        _MODULE_5,
-                        "Canonical bank allocation identifiers remain stable across retries and alternative callback deliveries",
-                    ],
-                    [
-                        "Module 6 supplies concurrent replay checks and exact ledger reconciliation assertions",
-                        _MODULE_6,
-                        "Run supplied checks locally, then add crash recovery and authenticated integration suites",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Authenticate and normalize the source event",
-                    "action": "Verify the partner signature, resolve territory evidence, and assign a stable namespaced event identifier.",
-                    "detail": "Preserve the original restricted payload and derive deterministic invoice or conversion identifiers before calling intake.",
-                },
-                {
-                    "step": 2,
-                    "title": "Approve earned economics inside one transaction",
-                    "action": "Match delivered service or accepted qualification evidence, then call verify with the approved integer-cent amount already fixed.",
-                    "detail": "Rejected leads produce no revenue; the same case cannot be recognized again under a fresh event identifier.",
-                },
-                {
-                    "step": 3,
-                    "title": "Allocate the observed bank remittance",
-                    "action": "Match the remittance advice to bank cash and assign immutable full-invoice allocation identifiers before calling settle.",
-                    "detail": "Quarantine partial, duplicate, foreign-currency, or unmatched allocations rather than forcing them through this bounded workflow.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close, inspect, and restore",
-                    "action": "Compare the reconciliation view with partner statements, paid expense evidence, and the bank statement; test backup restoration.",
-                    "detail": "Require revenue minus expenses to equal cash change plus receivable change for this no-opening-balance reference.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Price accepted units and close each revenue rail independently",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The Base bridge below is an illustrative composition of the supplied $362,500 "
-                    "annual operator-revenue target, not a claim about current partner offers. Analytics "
-                    "contributes 300 active monthly subscriptions at $50, or $180,000 annually. Builder "
-                    "software contributes 250 contractually permitted annual eligible units at $100, "
-                    "or $25,000; monthly amounts are accounting allocations, not fractional customer "
-                    "counts. CPA contributes 60 submitted monthly qualifications less ten rejected "
-                    "qualifications, leaving 50 accepted units at $200 and $120,000 annually. NGR "
-                    "contributes $37,500 annually after the explicit deduction waterfall. These streams "
-                    "sum to $362,500 without including wagers, event-contract turnover, deposits, "
-                    "account balances, or any customer's principal. Use separate invoice series and "
-                    "ledger rail values so a strong subscription month cannot hide an affiliate "
-                    "shortfall. The scorecard's gross-revenue label refers to the operator's earned "
-                    "revenue, not gross gaming activity. Apply the ASC 606 principal-versus-agent "
-                    "assessment to the actual arrangements: affiliate revenue here is the contractual "
-                    "commission retained, and the NGR example already applies its 25% retained share. "
-                    "Do not multiply that recognized commission by the share again. Record SaaS "
-                    "subscription fees separately from transaction-linked builder compensation throughout."
-                ),
-                (
-                    "For NGR, assume one monthly partner statement begins with $25,000 of contract-defined "
-                    "gaming revenue attributable to the eligible cohort. Deduct $5,000 administration "
-                    "charges, $5,000 bonus charges, and $2,500 brought-forward negative carryover, leaving "
-                    "$12,500 commissionable NGR. At a 25% share, operator revenue is $3,125. The "
-                    "$25,000 starting balance is neither the operator's revenue nor the customer's "
-                    "total wagering handle. Actual agreements vary on taxes, processing charges, "
-                    "jackpots, fraud, high-roller policies, and carryover across products; map each "
-                    "deduction to a named statement field before forecasting. Never assume a negative "
-                    "balance disappears at month-end. The CPA example loses ten of 60 submissions, "
-                    "a 16.67% rejection rate, before recognition. Its $6,000 monthly acquisition "
-                    "budget therefore costs $100 per submitted qualification and $120 per accepted "
-                    "qualification, leaving $80 per accepted CPA before shared affiliate operations. "
-                    "Use separate eligible cohorts for CPA and NGR unless a signed hybrid contract "
-                    "explicitly permits both. Without that distinction, a spreadsheet can count the "
-                    "same player twice while a partner pays only once. Keep rejection reason codes "
-                    "and evidence deadlines visible to the acquisition owner."
-                ),
-                (
-                    "Allocate monthly operating costs of $8,000 to analytics, $1,000 to builder "
-                    "software, and approximately $9,729.17 to the combined affiliate operation. The "
-                    "affiliate amount comprises $6,000 acquisition and approximately $3,729.17 of "
-                    "content, attribution, registration maintenance, contractor work, and allocated "
-                    "operations. Against $13,125 affiliate revenue, contribution is approximately "
-                    "$3,395.83, or 25.87%, after the NGR deductions and the stated acquisition "
-                    "expense. Annual total costs are $224,750, leaving the canonical $137,750 "
-                    "owner profit and 38.0% margin. This run-rate cost envelope exceeds the supplied "
-                    "$1,500–$10,000 monthly opex range; treat that range as an initial fixed-overhead "
-                    "planning envelope, not the full Base operating-cost total. Do not silently "
-                    "discard acquisition or contractor spending to force agreement. Post-NFL "
-                    "seasonality is a separate stress: six months at 60 accepted CPAs and six "
-                    "at 40 produce the same 600 annual accepted units, while a flat 50-per-month "
-                    "walk merely smooths timing. If commissions fall 20% for three months without "
-                    "replacement, annual profit falls $6,000 to $131,750 at unchanged cost. Reduce "
-                    "uneconomic acquisition, diversify eligible partners, or rebuild the target explicitly."
-                ),
-            ],
-            "table": {
-                "caption": "Base-Case Revenue Recognition, Deduction Waterfall, and Operating-Cost Bridge",
-                "headers": [
-                    "Rail or accounting control being reconciled",
-                    "Monthly unit economics and recognized revenue",
-                    "Annual recognized amount or operating cost",
-                    "Required evidence and economic failure response",
-                ],
-                "rows": [
-                    [
-                        "Analytics subscription rail remains separate from all gaming commissions",
-                        "300 active accounts times $50 equals $15,000 earned monthly revenue",
-                        "$180,000 revenue less $96,000 allocated costs yields $84,000 contribution",
-                        "Match delivered service to invoices; replace churn before claiming steady revenue",
-                    ],
-                    [
-                        "Permitted builder software rail uses separately reviewed compensation terms",
-                        "Annual $25,000 allocated as $2,083.33, $2,083.33, then $2,083.34",
-                        "$25,000 revenue less $12,000 allocated costs yields $13,000 contribution",
-                        "Require permitted unit evidence; remove compensation when scope or permission changes",
-                    ],
-                    [
-                        "CPA affiliate rail recognizes only accepted first-time-depositor qualifications",
-                        "60 submissions less ten scrubs times $200 yields $10,000 revenue",
-                        "$120,000 annual revenue from 600 accepted units after 120 rejected submissions",
-                        "Retain partner acceptance evidence; submit supported disputes before contractual deadlines",
-                    ],
-                    [
-                        "NGR affiliate rail recognizes only the retained commission share",
-                        "($25,000 minus $5,000 minus $5,000 minus $2,500) times 25% yields $3,125",
-                        "$37,500 annual commission revenue already reflects all modeled statement deductions",
-                        "Audit administration, bonus, and carryover fields; keep CPA cohorts economically separate",
-                    ],
-                    [
-                        "Combined affiliate costs include acquisition and allocated operating work",
-                        "$13,125 revenue less approximately $9,729.17 costs leaves approximately $3,395.83",
-                        "$157,500 revenue less $116,750 costs yields $40,750 affiliate contribution",
-                        "Include $72,000 annual acquisition plus $44,750 annual affiliate operating expense",
-                    ],
-                    [
-                        "Quarterly rounding schedule preserves exact annual scorecard totals",
-                        "Revenue follows $30,208.33, $30,208.33, $30,208.34; costs follow $18,729.17, $18,729.17, $18,729.16",
-                        "Four identical accounting quarters yield $362,500 revenue and $224,750 costs",
-                        "Round invoice allocations once; never sum independently rounded percentage forecasts",
-                    ],
-                    [
-                        "Total Base operator earnings reconcile without customer-volume inflation",
-                        "$90,625 quarterly revenue less $56,187.50 quarterly costs yields $34,437.50",
-                        "$362,500 annual revenue less $224,750 costs yields $137,750 profit at 38.0%",
-                        "Reconcile operator invoices only; exclude deposits, trading volume, and wagering handle",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four tactics that preserve collectible contribution",
-                "body": (
-                    "Optimize for accepted, collectible units rather than dashboard clicks "
-                    "or headline commission rates."
-                ),
-                "items": [
-                    "Version NGR contracts and calculate each deduction waterfall independently; a larger headline share can produce less retained commission after bundled charges.",
-                    "Preserve contract settlement text alongside price snapshots; suppress cross-venue alerts when the underlying resolution rules differ.",
-                    "Ask partners for rejection codes and remittance allocation identifiers before buying traffic; otherwise disputes and cash matching become manual reconstruction.",
-                    "Upload precompiled static artifacts and monitor provider quotas; free hosting savings disappear quickly when licensed feeds or paid acquisition are misallocated.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Walk three earned cohorts through scrubs, operating costs, and bank cash",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Begin the walk with zero opening receivables and a fully provisioned monthly "
-                    "service cohort, not with a newly launched site acquiring 300 subscribers overnight. "
-                    "Each month contains 300 active subscription-month units, 60 submitted CPA "
-                    "qualifications, 50 accepted CPAs, and a separately attributed NGR statement. "
-                    "Subscriber counts represent active service units, not 900 distinct people over "
-                    "the quarter. Builder revenue uses the annual allocation established above. "
-                    "Subscriptions are earned and collected within the service month; all builder, "
-                    "CPA, and NGR amounts are finalized at month-end and collected in the next "
-                    "month. No chargebacks, additional bad debts, taxes, capital purchases, or owner "
-                    "distributions enter this operating bridge. All modeled operating costs are paid "
-                    "in the month incurred. Those assumptions isolate the difference between profit "
-                    "and collection timing while retaining the supplied Base economics. A real startup "
-                    "still faces the stated two-to-six-month first-deal interval and $8,000–$45,000 "
-                    "capital range. Treat the walk as a steady operating cohort entering a new "
-                    "ledger, not as evidence that launch revenue arrives immediately. Maintain a "
-                    "separate startup cash schedule for development, registration work, deposits paid "
-                    "to vendors, and the acquisition ramp."
-                ),
-                (
-                    "Month 1 earns $30,208.33 but collects only $15,000 of subscription cash. "
-                    "After $18,729.17 operating costs, cash change is negative $3,729.17 while "
-                    "earned operating profit is positive $11,479.16. The difference is $15,208.33 "
-                    "of partner receivables. Month 2 collects its own $15,000 subscriptions plus "
-                    "Month 1 partner invoices of $15,208.33, creating $30,208.33 receipts and "
-                    "$11,479.16 cash generation after the same expense amount. Cumulative cash "
-                    "change becomes $7,749.99. Month 3 again collects $30,208.33 because the "
-                    "previous cohort's builder allocation was $2,083.33; its own earned revenue "
-                    "is $30,208.34 because the rounding penny belongs to the current cohort. "
-                    "Expenses of $18,729.16 produce $11,479.17 cash generation and $11,479.18 "
-                    "earned profit. Quarter-end cumulative cash change is $19,229.16, and "
-                    "uncollected Month 3 partner invoices total $15,208.34. Adding those "
-                    "receivables to cash generation gives exactly $34,437.50 quarterly operating "
-                    "profit. The scrubs already reduced CPA recognition, and NGR deductions "
-                    "already reduced commission revenue; neither should be subtracted again "
-                    "during cash reconciliation. The receipt schedule records collection lag, "
-                    "not a second revenue-recognition event."
-                ),
-                (
-                    "Use the closing review to turn variances into specific actions. An accepted "
-                    "CPA missing from the next remittance becomes an aged invoice assigned to the "
-                    "partner manager, not a new lead. An NGR discrepancy becomes a statement-field "
-                    "dispute with the contract version and carryover opening balance attached. "
-                    "A subscriber decline becomes a retention and replacement task before paid "
-                    "acquisition is increased. The reference's largest modeled operating cash "
-                    "drawdown is $3,729.17, but that is not sufficient launch capitalization: "
-                    "one extra month of partner delay would deepen cumulative cash drawdown to "
-                    "$7,458.34 before startup expenditures. Maintain at least the modeled exposure "
-                    "plus a documented delay reserve and the actual setup budget. Annualize the "
-                    "earned quarter, not its initial cash receipts: $90,625 times four is "
-                    "$362,500 revenue, $56,187.50 times four is $224,750 costs, and "
-                    "$34,437.50 times four is $137,750 owner profit. Conservative and Scaled "
-                    "remain distinct scorecard cases rather than multipliers applied to traffic "
-                    "volume. Close the first 90 days by proving the ledger bridge, replay "
-                    "behavior, territory exclusions, partner collectability, and restoration "
-                    "procedure before adding properties or expanding the team."
-                ),
-            ],
-            "table": {
-                "caption": "Worked 90-Day Cohort Walk",
-                "headers": [
-                    "Cohort period and accepted operating units",
-                    "Earned revenue and explicit scrubs or deductions",
-                    "Observed collection timing and paid operating costs",
-                    "Period result and cumulative cash reconciliation",
-                ],
-                "rows": [
-                    [
-                        "Month 1: 300 subscription-month units; 60 CPA submissions yield 50 accepted",
-                        "$30,208.33 earned; ten CPA scrubs; $12,500 NGR waterfall deductions before share",
-                        "$15,000 subscriptions collected; partner receipts deferred; $18,729.17 operating costs paid",
-                        "$11,479.16 earned profit; cash change and cumulative cash both negative $3,729.17",
-                    ],
-                    [
-                        "Month 2: 300 subscription-month units; 60 CPA submissions yield 50 accepted",
-                        "$30,208.33 earned; ten CPA scrubs; $12,500 NGR waterfall deductions before share",
-                        "$15,000 current subscriptions plus $15,208.33 prior partner cash; $18,729.17 costs paid",
-                        "$11,479.16 earned profit and cash generation; cumulative cash change reaches $7,749.99",
-                    ],
-                    [
-                        "Month 3: 300 subscription-month units; 60 CPA submissions yield 50 accepted",
-                        "$30,208.34 earned; ten CPA scrubs; $12,500 NGR waterfall deductions before share",
-                        "$15,000 current subscriptions plus $15,208.33 prior partner cash; $18,729.16 costs paid",
-                        "$11,479.18 earned profit; $11,479.17 cash generation; cumulative cash change reaches $19,229.16",
-                    ],
-                    [
-                        "Quarter total: 900 subscription-month units; 180 submissions produce 150 accepted CPAs",
-                        "$90,625 earned revenue; 30 rejected CPAs removed before recognition",
-                        "$75,416.66 total receipts less $56,187.50 paid costs produces $19,229.16 cash",
-                        "$34,437.50 profit equals $19,229.16 cash change plus $15,208.34 closing receivables",
-                    ],
-                    [
-                        "Closing Month 3 partner receivables belong to the next collection month",
-                        "$2,083.34 builder plus $10,000 CPA plus $3,125 NGR remains collectible",
-                        "$15,208.34 expected next-month cash requires bank matching before released state",
-                        "Opening receivables were zero; closing balance explains the entire profit-cash difference",
-                    ],
-                    [
-                        "Annual Base run rate repeats earned economics, not startup collection lag",
-                        "$90,625 quarterly earned revenue times four equals $362,500 annual operator revenue",
-                        "$56,187.50 quarterly costs times four equals $224,750 annual operating expense",
-                        "$137,750 annual owner profit divided by $362,500 revenue equals exactly 38.0%",
-                    ],
-                    [
-                        "Working-capital stress delays every partner payment by one additional month",
-                        "Earned cohort revenue remains unchanged while invoices age and collection risk increases",
-                        "First two months collect $30,000 subscriptions against $37,458.34 paid operating costs",
-                        "$7,458.34 cumulative operating drawdown requires reserves beyond startup expenditures and distributions",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "A conversion becomes a business result only when its eligibility, earned commission, and bank receipt survive the same reconciliation."
-    ),
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Create separate SaaS, builder, CPA, and NGR manifests with named owners, approved territories, signed commercial terms, and evidence references.",
-        "Document publisher, adviser, IB, and FCM scope; disable custody, pooled capital, order submission, and unresolved transaction-linked compensation.",
-        "Join the six reference modules, run self_test(), and add authenticated adapter, crash-recovery, duplicate-allocation, and restoration tests before deployment.",
-        "Configure 21-plus targeting, jurisdiction suppression, licensed destination checks, affiliate disclosures, and territory-appropriate responsible-gaming contacts.",
-        "Load the Base unit bridge using integer cents, separate CPA and NGR cohorts, contractual deductions, $72,000 annual acquisition, and $224,750 total annual costs.",
-        "Close the three-month cohort to $90,625 revenue, $34,437.50 earned profit, $19,229.16 cash change, and $15,208.34 receivables; fund delayed collections separately.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "7 U.S.C. 1a — Commodity Exchange Act definitions",
-            "url": "https://www.law.cornell.edu/uscode/text/7/1a",
-            "relevance": (
-                "Defines futures commission merchant, introducing broker, and commodity "
-                "trading adviser; actual product conduct controls the registration analysis."
-            ),
-        },
-        {
-            "title": "7 U.S.C. 6d — Registration and customer-fund requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/7/6d",
-            "relevance": (
-                "Supports separating publisher software from activities requiring FCM "
-                "or IB registration and from handling customer funds."
-            ),
-        },
-        {
-            "title": "17 CFR 1.3 — CFTC definitions",
-            "url": "https://www.ecfr.gov/current/title-17/chapter-I/part-1/section-1.3",
-            "relevance": (
-                "Provides regulatory definitions used when assessing solicitation, "
-                "order-related conduct, and intermediary status."
-            ),
-        },
-        {
-            "title": "16 CFR 255.5 — Disclosure of material connections",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
-            "relevance": (
-                "Requires clear disclosure of relevant material connections in endorsements; "
-                "affiliate compensation must be visible beside applicable recommendations."
-            ),
-        },
-        {
-            "title": "31 U.S.C. 5363 — Prohibition on acceptance of restricted transactions",
-            "url": "https://www.law.cornell.edu/uscode/text/31/5363",
-            "relevance": (
-                "Addresses knowing acceptance of specified payments in connection with "
-                "unlawful internet gambling; this blueprint never accepts gambling funds."
-            ),
-        },
-        {
-            "title": "58 Pa. Code Chapter 437a — Sports Wagering Suppliers",
-            "url": "https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/058/chapter437a/chap437atoc.html",
-            "relevance": (
-                "Provides Pennsylvania supplier requirements to examine when classifying "
-                "affiliate arrangements; determine applicability from the actual services and contract."
-            ),
-        },
-    ],
-}
+CHAPTER_7 = {'id': 'Q7',
+ 'chapter_id': 'Q7',
+ 'chapter_number': 7,
+ 'question_number': 7,
+ 'slug': 'affiliate-unit-economics-cpa-revshare-ggr-ngr',
+ 'question_prompt': 'How do iGaming affiliate programs actually pay, and what are the unit economics of '
+                    'starting and choosing a casino or sportsbook affiliate business?',
+ 'kicker': 'Q7 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Affiliate Unit Economics: CPA, RevShare & GGR/NGR',
+ 'subtitle': 'How casino affiliate programs work with numbers, CPA vs revenue share vs hybrid, GGR vs NGR, '
+             'affiliate software and tracking, picking RevShare projects, realistic earnings, starting an '
+             'affiliate business, white-label casino ownership, and operator field-guide margin leaks',
+ 'layout_template': 'thirty_day_roadmap',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners from Trackdesk, Christian Strutt, CASINOAFFMASTERY, 15M iGaming and '
+                      'Anton Konvertov converge on one rule: the headline commission rate means nothing '
+                      "until the contract's NGR definition, admin fees, negative carryover and "
+                      'qualification terms are run through the math. Benchmarks on the table: tier-1 CPA '
+                      'of $150-$400 with a $250 median, revshare of 25-45% of NGR with a 30% median, and '
+                      'hybrids making up about 45% of new tier-1 deals. A $1,000 GGR month walks down to '
+                      '$700 NGR and a $245 payout at 35%, an effective 24.5% of gross. Strutt shows a $400 '
+                      'CPA collapsing to $20 when only 5% of players qualify. Splits remain: Crestani and '
+                      'Strutt chase lifetime revshare upside, CPA buys faster liquidity, and Konvertov and '
+                      'Puolakka insist retention, RTP and withdrawal policy at the operator decide whether '
+                      'any model pays.',
+ 'key_metrics': [{'label': 'Tier-1 CPA Median',
+                  'metric': 'Tier-1 CPA Median',
+                  'value': '$250 (range $150-$400)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Track360 2026 tier-1 CPA benchmark, flagged by the speaker as indicative '
+                             'rather than universal; tier-2 runs $80-$200 and tier-3 $25-$90.',
+                  'source': '15M iGaming Media & Dealflow Platform ([WaWQNIAchz0 @ 00:02:27])'},
+                 {'label': 'Effective Revshare After NGR Deductions',
+                  'metric': 'Effective Revshare After NGR Deductions',
+                  'value': '24.5% of GGR ($245 on $1,000 GGR at a 35% deal)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '$1,000 GGR minus $150 bonuses, $100 tax and $50 processing leaves $700 NGR; '
+                             '35% of that is $245, which is why a 30% deal can beat a 35% deal.',
+                  'source': '15M iGaming Media & Dealflow Platform ([WaWQNIAchz0 @ 00:04:55])'},
+                 {'label': 'CPA Qualification Erosion',
+                  'metric': 'CPA Qualification Erosion',
+                  'value': '$400 CPA becomes an effective $20 CPA',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'When the CPA requires a $400 deposit and wager and only 5% of referred '
+                             'players qualify, the per-player value collapses to $20.',
+                  'source': 'iGaming Marketing Agency Tips by Christian Strutt ([_puyhQJIomQ @ 00:06:35])'},
+                 {'label': 'Modeled Monthly Commission Per Site',
+                  'metric': 'Modeled Monthly Commission Per Site',
+                  'value': '€2,450 on €6,000 of player deposits',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '30 FTDs a month split across revshare (€750), hybrid (€900) and CPA (€800) '
+                             'groups of 10 casinos each; scaled to about 2.5K per site and roughly 10K '
+                             'across 3-4 sites.',
+                  'source': 'CASINOAFFMASTERY ([JUjTzv8yGw4 @ 00:14:52])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every speaker works the same three levers: CPA, revenue share and hybrid, '
+                              "and every serious one starts the math at the casino's own ledger. iGaming "
+                              'Express defines GGR as total bets minus total wins, $1M wagered against '
+                              '$800K won for $200K top line, then strips out bonuses, processing, '
+                              'affiliate commissions, licensing and taxes to reach NGR, the money the '
+                              'operator actually keeps [zEJgRn6SLjs @ 00:01:23]. Lou 1win runs a thinner '
+                              'example, $1,000,000 wagered and $950,000 paid back for only $50,000 GGR, '
+                              'and hammers the point that NGR has no universal formula: each operator and '
+                              'each contract defines which deductions apply, so the NGR clause in your '
+                              'agreement directly sets your revshare check [d_2br4amklI @ 00:01:54]. '
+                              'Affnook adds the trap that matters for affiliates: heavy bonusing can lift '
+                              'GGR while cutting NGR, so a brand that looks hot on wagering can still pay '
+                              'you less [Wzz58pqo-ag @ 00:01:49]. Trackdesk, speaking from the program '
+                              'side, says pay on NGR and never on gross, because a strong deposit month '
+                              'can be erased by withdrawals, and a platform that cannot calculate NGR '
+                              'natively has an infrastructure problem that gets more expensive the bigger '
+                              'the program grows [zjkFJJ0rAJ0 @ 00:02:07]. Consensus baseline: read the '
+                              'revenue definition before the percentage.',
+                              "Trackdesk frames model choice as fraud exposure: 'It's actually a risk "
+                              "management decision' [zjkFJJ0rAJ0 @ 00:01:09]. CPA paid on FTDs in "
+                              'bonus-heavy markets rewards the player who deposits once, grabs the bonus '
+                              'and vanishes; revshare on NGR ties the affiliate to real outcomes; and CPA '
+                              'only holds up when tight terms filter behavior before the payout fires, '
+                              'because loose CPA terms attract the wrong affiliates. Christian Strutt '
+                              'states the trade from the affiliate chair: CPA means less money, paid '
+                              'faster, with deals running $50 to $700, while revshare in a 20-60% band has '
+                              'paid them over 1,000 per player [6jlPOcl5CnI @ 00:03:06]. In a separate '
+                              'breakdown Strutt calls revshare passive income that compounds but decays '
+                              'without fresh players, noting some programs paid 100 months straight while '
+                              'others paid nothing roughly one month in six [_puyhQJIomQ @ 00:02:40]. Paul '
+                              'Puolakka, working mainly hybrid deals, says LTV has always been the number '
+                              'one metric even though some affiliates still chase FTD counts, and warns '
+                              'that when operators fail to look after players, affiliates waste their own '
+                              "traffic [TzU_M6ldezQ @ 00:03:19]. The shared baseline: the player's "
+                              'lifetime behavior after the first deposit, not the deposit itself, is what '
+                              'makes any model profitable, and that behavior lives inside the operator, '
+                              'not the affiliate.',
+                              'The second point of agreement: the operator is the real product, and it '
+                              "gets vetted like an investment before any traffic moves. Christian Strutt's "
+                              'third rule is to work only with licensed operators, and their Australian '
+                              "portfolio built on unlicensed, grey-market brands became 'worth nothing "
+                              "overnight' when those operators lost the market [_puyhQJIomQ @ 00:12:39]. "
+                              "In the program-selection walkthrough Strutt calls unlicensed brands 'like "
+                              "gangsters,' names GPWA and Affiliate Guard Dog as reputation checks, and "
+                              'recommends depositing £5-10 of your own money to test the site before '
+                              'sending a player [6jlPOcl5CnI @ 00:05:43]. Adam at CASINOAFFMASTERY is '
+                              'blunt: you only make money once it is received, because casinos can go '
+                              'bankrupt or simply not pay [JUjTzv8yGw4 @ 00:06:04]. Anton Konvertov '
+                              'rejects percentage-only shopping: the KPIs that decide revshare income are '
+                              "player return rate and retention rate, and both are set by the project's "
+                              'own policies on RTP, bonuses, withdrawal limits and reputation [GRpptuPlok4 '
+                              '@ 00:00:39]. Across all four, the prerequisite list converges: a brand '
+                              'licensed in your region, a reputation check on the forums, a small live '
+                              'deposit to see the cashier from the player side, and every term read line '
+                              'by line before a single tracking link goes live.'],
+               'table': {'caption': 'Where the practitioners agree on affiliate unit economics',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Pay and get paid on NGR, not gross',
+                                   'Strong deposit months get erased by withdrawals, so gross figures '
+                                   'mislead everyone',
+                                   'Demand native NGR reporting before signing any revshare contract',
+                                   'Trackdesk ([zjkFJJ0rAJ0 @ 00:02:07])'],
+                                  ['GGR is the top line, NGR is money kept',
+                                   'Bonuses, processing, commissions, licensing and taxes come off GGR '
+                                   'before NGR',
+                                   'Model your payout from NGR, never from wagering volume headlines',
+                                   'iGaming Express ([zEJgRn6SLjs @ 00:01:23])'],
+                                  ['No universal NGR formula exists across operators or contracts',
+                                   'Each operator and contract defines which deductions hit the revenue '
+                                   'figure',
+                                   'The NGR clause in your contract directly sets your revshare payout',
+                                   'Lou 1win ([d_2br4amklI @ 00:01:36])'],
+                                  ['CPA is faster cash, revshare is bigger long-term money',
+                                   'CPA means less money paid faster; revshare has paid over 1,000 per '
+                                   'player',
+                                   'Match the model to bankroll needs and traffic quality before '
+                                   'negotiating',
+                                   'iGaming Marketing Agency Tips by Christian Strutt ([6jlPOcl5CnI @ '
+                                   '00:03:06])'],
+                                  ['Retention at the operator decides revshare income',
+                                   'Player return rate and retention rate depend on the project, not the '
+                                   'affiliate',
+                                   'Audit RTP, bonus policy, withdrawals and reputation before sending '
+                                   'traffic',
+                                   'Traffic Cardinal EN — Affiliate Press ([GRpptuPlok4 @ 00:00:39])'],
+                                  ['LTV beats FTD counts as the real scoreboard',
+                                   'LTV has always been number one, though some affiliates still chase '
+                                   'FTDs',
+                                   'Prioritize trusted long-term operator partners as traffic costs keep '
+                                   'rising',
+                                   'iGaming Real Talk Podcast ([TzU_M6ldezQ @ 00:03:19])'],
+                                  ['Licensed operators only, or the portfolio can vanish',
+                                   'Grey-market operators lost their market and an Australian portfolio '
+                                   'went to zero',
+                                   'Restrict promotions to brands licensed in the geo you target',
+                                   'iGaming Marketing Agency Tips by Christian Strutt ([_puyhQJIomQ @ '
+                                   '00:12:57])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Start with the CPA tape, because every hybrid and revshare comparison is '
+                              "priced against it. The 15M iGaming breakdown, using Track360's 2026 "
+                              'benchmarks, puts tier-1 CPA at $150-$400 with a $250 median, tier-2 at '
+                              '$80-$200 and tier-3 at $25-$90, flags all three as indicative rather than '
+                              'universal, and runs the funnel at 6.4% click-to-registration and 41% '
+                              'registration-to-deposit, so 1,000 clicks yield 64 registrations and 26 FTDs '
+                              '[WaWQNIAchz0 @ 00:01:35]. Twenty FTDs at $250 is $5,000 gross, and that '
+                              'commission is not profit, because content, staff, technology, SEO and ads '
+                              'all come out of it. Christian Strutt shows how terms gut the headline: if a '
+                              "CPA requires a $400 deposit and wager and only 5% of players qualify, 'your "
+                              "$400 CPA is actually a $20 CPA,' and caps bite too: Strutt was capped at "
+                              '10, delivered 25 and was paid for 10 [_puyhQJIomQ @ 00:06:35]. Adam at '
+                              'CASINOAFFMASTERY models a small comparison site at 50 visits a day, 5 '
+                              'signups and 20% depositing, or about one FTD daily and 30 a month, then '
+                              "assumes 8 of every 10 FTDs qualify [JUjTzv8yGw4 @ 00:10:03]. Strutt's "
+                              'benchmark for a healthy funnel: 1 to 5% conversion from click to depositing '
+                              'player is good [6jlPOcl5CnI @ 00:07:53].',
+                              'Revshare is where the contract math hides. The 15M iGaming walk takes '
+                              '$1,000 GGR, subtracts $150 in bonuses, $100 in tax and $50 in processing to '
+                              'land at $700 NGR, then pays 35% for $245, which equals 24.5% of the '
+                              'original GGR; negative carryover and admin charges can push it further, so '
+                              'a 30% deal can beat a 35% deal and comparing revshare offers by percentage '
+                              'alone misleads [WaWQNIAchz0 @ 00:04:55]. Adam at CASINOAFFMASTERY prices '
+                              'the same leak from the affiliate side: admin fees run 0-35% and turn a 50% '
+                              "deal into something 'more like... 35' effective [JUjTzv8yGw4 @ 00:05:48]. "
+                              "Negative carryover is the bigger killer. Strutt's example is a 10k loss "
+                              'against a 100k win that leaves a 90k deficit, so they insist on terms where '
+                              'it does not roll forward [_puyhQJIomQ @ 00:04:19]. In the program-selection '
+                              'walkthrough Strutt calls monthly resets a must and tells the story of a '
+                              'player who won about 20,000, the balance reset, the player then lost about '
+                              '10,000, and Strutt was paid 4-5,000; the punchline is that a 25-30% deal '
+                              'with clean terms can beat a 60% deal [6jlPOcl5CnI @ 00:14:13]. Read every '
+                              'clause that touches the revenue figure before you look at the percentage.',
+                              'Hybrids and the deal sheet itself close the loop on unit economics. The 15M '
+                              'iGaming data puts hybrids at about 45% of new tier-1 deals, typically '
+                              '$75-$150 CPA plus 15% revshare, with a worked example of 10 players at $100 '
+                              "plus 20% of $2,000 for $1,400 [WaWQNIAchz0 @ 00:03:37]. Adam's template "
+                              'deal is 50% revshare, €50 CPA, no negative carryover, separate funds, a '
+                              'cumulative €20 baseline and a €500 payout threshold, with bank-wire '
+                              'thresholds running higher than crypto; ladder deals like Video Slots paying '
+                              '€5 per player at 1-5 players and €25 at 48+ with 5% revshare get a flat no '
+                              "[JUjTzv8yGw4 @ 00:06:56]. On the tracking side, Strutt's workflow explainer "
+                              'says cookies last 30-90 days and anti-fraud filters block click spam and '
+                              'black-hat traffic [FnNlK_XZ270 @ 00:02:03], while Trackdesk recommends '
+                              'putting conversions on hold and only releasing them after checking whether '
+                              'the player kept playing past the bonus and produced positive NGR '
+                              '[zjkFJJ0rAJ0 @ 00:05:40]. Trackdesk also puts a hard number on payouts: '
+                              'manual processing works at 20 affiliates and fails well before 200, so '
+                              'automation is a scaling prerequisite. Program-side and affiliate-side '
+                              'operators are reading the same sheet: hold periods, thresholds and '
+                              'carryover terms move more money than the headline percentage.'],
+               'table': {'caption': 'Deal mechanics and the exact numbers practitioners quote',
+                         'headers': ['Deal Mechanic',
+                                     'Exact Numbers Reported',
+                                     'How To Use It',
+                                     'Expert Source'],
+                         'rows': [['Tier-1, tier-2 and tier-3 CPA benchmarks',
+                                   '$150-$400 tier-1 (median $250), $80-$200 tier-2, $25-$90 tier-3',
+                                   'Anchor CPA negotiations to geo tier, treating the figures as '
+                                   'indicative',
+                                   '15M iGaming Media & Dealflow Platform ([WaWQNIAchz0 @ 00:02:46])'],
+                                  ['Revshare benchmark paid on NGR',
+                                   '25-45% of NGR with a 30% median across 2026 deals',
+                                   "Compare offers only after applying each contract's NGR deductions",
+                                   '15M iGaming Media & Dealflow Platform ([WaWQNIAchz0 @ 00:03:19])'],
+                                  ['CPA qualification erosion on deposit and wager terms',
+                                   '$400 CPA with only 5% qualifying pays the equivalent of $20',
+                                   'Ask what share of your players will actually trigger the CPA',
+                                   'iGaming Marketing Agency Tips by Christian Strutt ([_puyhQJIomQ @ '
+                                   '00:06:35])'],
+                                  ['Admin fee drag on the headline revshare rate',
+                                   '0-35% admin fees turn a 50% deal into roughly 35% effective',
+                                   'Negotiate admin fees to zero or price them into every comparison',
+                                   'CASINOAFFMASTERY ([JUjTzv8yGw4 @ 00:05:48])'],
+                                  ['Listing fees and monthly flat fees on top of commission',
+                                   'Listing fees €200-2,000; monthly flat fees €500-10,000 per placement',
+                                   'Layer flat fees on top of commission once traffic justifies them',
+                                   'CASINOAFFMASTERY ([JUjTzv8yGw4 @ 00:04:59])'],
+                                  ['Modeled income for one comparison site',
+                                   '€2,450 commission on €6,000 deposits; about 2.5K per site monthly',
+                                   'Scale by adding sites, since 3-4 sites approach 10K a month',
+                                   'CASINOAFFMASTERY ([JUjTzv8yGw4 @ 00:16:20])'],
+                                  ['Revshare payback period on paid advertising traffic',
+                                   'Paid traffic on revshare takes 3-6 months to recoup the spend',
+                                   'Fund paid revshare campaigns with bankroll or lean on free traffic',
+                                   'John Crestani ([rEP2Pyna6UA @ 00:15:35])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Squeezing more out of every deal and every player',
+                           'body': 'Street-level moves the practitioners use to protect effective '
+                                   'commission before and after the first deposit.',
+                           'items': ['Never accept the first deal an operator offers; move the negotiation '
+                                     'onto Teams, Telegram or WhatsApp and push the terms up. '
+                                     '[CASINOAFFMASTERY — _cAwM5AXvUE @ 00:16:24]',
+                                     'Check the RTP a project actually runs: Playing go RTP can be read by '
+                                     'inspecting network requests, and one project showed 91% against 96% '
+                                     'elsewhere; checking Pragmatic and Playing go is enough. [Traffic '
+                                     'Cardinal EN — Affiliate Press — GRpptuPlok4 @ 00:06:31]',
+                                     "Avoid 'combined wager' bonuses: a 1,000-ruble deposit plus a "
+                                     '1,000-ruble bonus at x40 applied to both becomes effectively x80, '
+                                     'almost unplayable, and it kills return rate. [Traffic Cardinal EN — '
+                                     'Affiliate Press — GRpptuPlok4 @ 00:11:00]',
+                                     'Use separate tracking links per channel so you know which source '
+                                     'produces depositing players, then scale while it works, because gaps '
+                                     'saturate. [iGaming Marketing Agency Tips by Christian Strutt — '
+                                     '3ZUgO2w5vfU @ 00:13:50]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Normalize every offer to NGR',
+                              'action': "Rebuild each offer's payout from GGR down through the contract's "
+                                        'own deductions and fees.',
+                              'detail': 'Run the walk: $1,000 GGR minus $150 bonuses, $100 tax and $50 '
+                                        'processing equals $700 NGR, so 35% pays $245, or 24.5% of GGR '
+                                        '[15M iGaming Media & Dealflow Platform — WaWQNIAchz0 @ 00:04:55]; '
+                                        'then apply any admin fee, which can turn a 50% deal into about '
+                                        '35% effective [CASINOAFFMASTERY — JUjTzv8yGw4 @ 00:05:48].'},
+                             {'step': 2,
+                              'title': 'Stress-test CPA qualification and caps',
+                              'action': 'Find out what deposit and wager trigger the CPA, what share of '
+                                        'your players hit it, and whether volume is capped.',
+                              'detail': 'At 5% qualifying, a $400 CPA becomes a $20 CPA, and caps must be '
+                                        'confirmed in writing after Strutt delivered 25 players on a cap '
+                                        'of 10 and was paid for 10 [iGaming Marketing Agency Tips by '
+                                        'Christian Strutt — _puyhQJIomQ @ 00:06:35].'},
+                             {'step': 3,
+                              'title': 'Lock the deal sheet',
+                              'action': 'Negotiate carryover, baseline, threshold and payment method '
+                                        'before any traffic goes live.',
+                              'detail': 'Push for the template of 50% revshare, €50 CPA, no negative '
+                                        'carryover, separate funds, a cumulative €20 baseline and a €500 '
+                                        'threshold, and refuse ladder deals [CASINOAFFMASTERY — '
+                                        'JUjTzv8yGw4 @ 00:06:56]; insist on monthly resets of negative '
+                                        'balances [iGaming Marketing Agency Tips by Christian Strutt — '
+                                        '6jlPOcl5CnI @ 00:14:13].'},
+                             {'step': 4,
+                              'title': 'Audit the operator before sending players',
+                              'action': 'Check RTP, bonus wager structure, withdrawal limits and payment '
+                                        'reputation, then test the cashier yourself.',
+                              'detail': 'Some projects cap withdrawals around 50,000 rubles per day, which '
+                                        'drives off whales, and Konvertov found only 1 of 12 casinos met '
+                                        'all requirements [Traffic Cardinal EN — Affiliate Press — '
+                                        'GRpptuPlok4 @ 00:12:51]; deposit £5-10 of your own money to test '
+                                        'the site [iGaming Marketing Agency Tips by Christian Strutt — '
+                                        '6jlPOcl5CnI @ 00:13:58].'}]},
+              {'section_number': 3,
+               'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over which commission model to take in the first '
+                              'place. Christian Strutt maps the choice to traffic type: an SEO site goes '
+                              'revshare, social or influencer volume goes CPA, paid ads stacked on a '
+                              'content site go hybrid, and a new affiliate still testing programs should '
+                              'sit on CPA or hybrid until they own real traffic data [_puyhQJIomQ @ '
+                              '00:08:57]. Trackdesk argues from the program side and calls the model '
+                              'choice a risk management decision. CPA on FTDs in bonus-heavy markets '
+                              'rewards players who deposit once, take the bonus and leave. Revshare on NGR '
+                              'ties the affiliate to real outcomes, and CPA only survives with tight terms '
+                              'that filter behavior before the payout fires [zjkFJJ0rAJ0 @ 00:01:09]. The '
+                              '15M benchmark shows the market drifting to the middle, with hybrids at '
+                              'roughly 45% of new tier-1 deals, typically $75-$150 CPA plus 15% revshare '
+                              '[WaWQNIAchz0 @ 00:03:37]. Paul Puolakka works mainly on hybrid deals and '
+                              'will not call the end state. Puolakka says LTV has always been the number '
+                              'one thing, while some affiliates still fixate on FTD counts [TzU_M6ldezQ @ '
+                              "00:03:19]. Strutt's own caution on hybrids is that both sides get paid less "
+                              'and the terms can shift mid-deal.',
+                              'Practitioners disagree on what a fair revshare number even is, and they '
+                              'agree that the headline number lies. Strutt quotes a 20-60% band '
+                              '[6jlPOcl5CnI @ 00:01:18]. CASINOAFFMASTERY quotes 20-50% and calls 20 very '
+                              'low, then shows admin fees of 0-35% turning a 50% deal into something more '
+                              'like 35 effective [JUjTzv8yGw4 @ 00:05:48]. Anton Konvertov treats 40-50% '
+                              'as standard. Konvertov reports a large program cutting from about 50% to '
+                              '35%, sometimes 15%, which left webmasters unable to recoup their investment '
+                              '[GRpptuPlok4 @ 00:15:21]. The 15M walk shows why the percentage alone '
+                              'misleads. $1,000 GGR minus $150 bonuses, $100 tax and $50 processing leaves '
+                              '$700 NGR, so a 35% deal pays $245, an effective 24.5% of GGR. Once negative '
+                              'carryover and admin charges enter the contract, a 30% deal can beat 35% '
+                              '[WaWQNIAchz0 @ 00:05:47]. Strutt lands in the same place from the other '
+                              'end: monthly negative-carryover resets are a must, and a 25-30% deal with '
+                              'clean terms can outpay a 60% deal that drags losses forward. The working '
+                              'rule across all four is to price the deduction stack and the carryover '
+                              "clause before looking at the percentage, because the contract's definition "
+                              'of NGR sets the check, not the rate.',
+                              'Traffic playbooks split hard. John Crestani pushes free traffic for '
+                              'revshare because paid ads on revshare take 3-6 months to recoup and need a '
+                              'bankroll to survive the gap. Crestani also prefers programs that have been '
+                              'around for a longer period of time [rEP2Pyna6UA @ 00:15:35]. Adam at '
+                              'CASINOAFFMASTERY runs SEO comparison sites as the main channel and launches '
+                              'for under $100 in hosting, template and domain. Adam tells beginners not to '
+                              'start with PPC, because margins are thin, calibration spend is high, and '
+                              'many who try it quit [_cAwM5AXvUE @ 00:08:12]. The deepest split is on who '
+                              'to monetize. Crestani openly steers toward whales and what Crestani calls '
+                              'the one percent of problem gamblers, maximizing player losses. Konvertov '
+                              'argues the opposite economics from the product side. Low RTP only wins in '
+                              'the short term, players drift away, and the return rate that feeds revshare '
+                              "erodes over millions of spins [GRpptuPlok4 @ 00:08:00]. Puolakka's line is "
+                              'that when the operator does not take care of the players, the affiliate '
+                              'wastes traffic too [TzU_M6ldezQ @ 00:03:36]. That puts long-term player '
+                              'value, not one-month extraction, at the center of the revshare bet for both '
+                              'of them.'],
+               'table': {'caption': 'Side-by-side playbooks on commission model, rates, traffic and '
+                                    'program selection',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Choosing a commission model by traffic type',
+                                   'SEO sites take revshare while social and influencer volume takes CPA',
+                                   'Paid ads plus content site take hybrid; new affiliates take CPA or '
+                                   'hybrid',
+                                   'iGaming Marketing Agency Tips by Christian Strutt ([_puyhQJIomQ @ '
+                                   '00:08:57])'],
+                                  ['How the program side frames CPA versus revshare',
+                                   'CPA on FTDs in bonus-heavy markets rewards deposit-once bonus takers',
+                                   'Revshare on NGR aligns affiliates with real player outcomes over time',
+                                   'Trackdesk ([zjkFJJ0rAJ0 @ 00:01:09])'],
+                                  ['What a fair revshare percentage looks like',
+                                   'Strutt quotes a 20 to 60 percent band and prefers clean terms',
+                                   'CASINOAFFMASTERY quotes 20 to 50 percent and calls 20 very low',
+                                   'iGaming Marketing Agency Tips by Christian Strutt ([6jlPOcl5CnI @ '
+                                   '00:01:18]); CASINOAFFMASTERY ([JUjTzv8yGw4 @ 00:03:25])'],
+                                  ['Headline percentage versus the effective payout received',
+                                   'A 35 percent deal on $700 NGR pays $245, or 24.5 percent of GGR',
+                                   'A 30 percent deal can beat 35 percent once carryover and admin charges '
+                                   'apply',
+                                   '15M iGaming Media & Dealflow Platform ([WaWQNIAchz0 @ 00:05:47])'],
+                                  ['Paid traffic versus free organic traffic on revshare',
+                                   'Crestani favors free traffic because paid revshare takes 3 to 6 months '
+                                   'to recoup',
+                                   'Adam runs SEO comparison sites and tells beginners not to start with '
+                                   'PPC',
+                                   'John Crestani ([rEP2Pyna6UA @ 00:15:35]); CASINOAFFMASTERY '
+                                   '([_cAwM5AXvUE @ 00:08:12])'],
+                                  ['How to pick which program to promote first',
+                                   'Crestani prefers programs that have been around for a longer period of '
+                                   'time',
+                                   'Konvertov checks RTP, bonus policy, withdrawal limits and reputation '
+                                   'project by project',
+                                   'John Crestani ([rEP2Pyna6UA @ 00:05:55]); Traffic Cardinal EN — '
+                                   'Affiliate Press ([GRpptuPlok4 @ 00:02:17])'],
+                                  ['Where the deal structure market is heading next',
+                                   'Puolakka runs mainly hybrid deals and says LTV has always been number '
+                                   'one',
+                                   'Hybrids already make up about 45 percent of new tier-1 deals in the '
+                                   'benchmark',
+                                   'iGaming Real Talk Podcast ([TzU_M6ldezQ @ 00:03:19]); 15M iGaming '
+                                   'Media & Dealflow Platform ([WaWQNIAchz0 @ 00:03:37])']]}},
+              {'section_number': 4,
+               'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive losses came from contract fine print, not traffic. '
+                              'Strutt describes negative carryover as a 10k player loss sitting against a '
+                              '100k win, leaving the affiliate a 90k deficit to burn through before '
+                              'earning again, and insists on terms where that deficit does not roll '
+                              '[_puyhQJIomQ @ 00:04:19]. On CPA, Strutt shows how qualification rules gut '
+                              'the headline: if the CPA requires a $400 deposit and wager and only 5% of '
+                              'referred players qualify, the $400 CPA is actually a $20 CPA [_puyhQJIomQ @ '
+                              '00:06:53]. Caps bite the same way. Strutt had a deal capped at 10 players, '
+                              'delivered 25, and was paid for 10 [_puyhQJIomQ @ 00:07:14]. '
+                              'CASINOAFFMASTERY flags ladder deals as a trap. One Video Slots structure '
+                              'paid €5 per player at 1-5 players, €25 only at 48+, plus 5% revshare, and '
+                              'the rule is never to agree to ladders [JUjTzv8yGw4 @ 00:08:04]. Add listing '
+                              'fees of €200-2,000 and loss clauses like a $300 CPA that only fires after '
+                              'the player loses $300, and the gap between quoted and banked commission '
+                              'becomes the real unit economics. The counter-template CASINOAFFMASTERY uses '
+                              'is 50% revshare, €50 CPA, no negative carryover, separate funds, a '
+                              'cumulative €20 baseline and a €500 threshold.',
+                              'The second failure class is the operator itself going bad after the traffic '
+                              'is already sent. Strutt had a program terminate payments on hundreds or '
+                              'thousands of players. Strutt also warns that programs may hide or refuse a '
+                              'large loss, using a $20,000 whale as the example [6jlPOcl5CnI @ 00:13:28]. '
+                              'Strutt watched an Australian portfolio built on unlicensed operators become '
+                              'worth nothing overnight when those operators lost the market, and reports '
+                              'programs that close the account once traffic stops [_puyhQJIomQ @ '
+                              '00:12:57]. Konvertov saw play a talk, an outfit running 4-6 casinos, delay '
+                              'payments and then shut down within 2 days. Of 12 casinos Konvertov checked, '
+                              'only one met 100% of the requirements, and Konvertov admits affiliates '
+                              'simply trust the partner by default [GRpptuPlok4 @ 00:16:06]. '
+                              "CASINOAFFMASTERY's blunt check is that commission only counts once it is "
+                              'received, since casinos can go bankrupt or simply not pay [JUjTzv8yGw4 @ '
+                              '00:06:04]. The product side kills revshare quietly too. Withdrawal caps '
+                              'around 50,000 rubles per day drive off whales, and one project blocks '
+                              "withdrawals until 3 days after deposit. Strutt's retention tell is only 1-2 "
+                              'of 5-10 players redepositing, which signals poor retention or possible '
+                              'de-tagging.',
+                              'Dashboard health is the trap that hides everything else. Trackdesk '
+                              'describes fraud that looks exactly like performance: high clicks, solid '
+                              'FTDs, then players who deposit once, trigger a bonus, produce negative NGR '
+                              'and leave. On the same program side, manual payouts hold at 20 affiliates '
+                              'and fail well before 200 [zjkFJJ0rAJ0 @ 00:04:11]. The 15M funnel math is '
+                              'the sanity check. 6.4% of clicks register and 41% of registrations deposit, '
+                              'so 1,000 clicks yield about 26 FTDs, and commission is not profit because '
+                              'content, staff, technology, SEO and ads all come out of it [WaWQNIAchz0 @ '
+                              "00:01:51]. Crestani's bankroll warning lands here as well: paid ads on "
+                              'revshare take 3-6 months to recoup, so the affiliate needs bankroll to '
+                              'carry the gap [rEP2Pyna6UA @ 00:15:35]. The iGaming Real Talk host cites '
+                              'data that roughly 60-70% of new-acquisition traffic drops after 1 month, '
+                              "likely from poor operator retention, so a cohort's first month is a weak "
+                              'read on its revshare value [TzU_M6ldezQ @ 00:02:20]. CASINOAFFMASTERY adds '
+                              'concentration risk: a friend who runs a casino says 95% of revenue comes '
+                              'from 5% of players. The 15M briefing also flags that the UK Gambling '
+                              'Commission holds operators responsible for third-party marketing breaches.'],
+               'table': {'caption': 'Firsthand traps with the economics check each practitioner applies',
+                         'headers': ['Trap', 'What Happened Firsthand', 'Economics Check', 'Expert Source'],
+                         'rows': [['Rolling negative carryover on a revshare deal',
+                                   'A 10k loss against a 100k win left a 90k deficit before earning '
+                                   'resumed',
+                                   'Insist on monthly resets so one winning player cannot freeze the '
+                                   'account',
+                                   'iGaming Marketing Agency Tips by Christian Strutt ([_puyhQJIomQ @ '
+                                   '00:04:19])'],
+                                  ['CPA qualification rules that shrink the headline payout',
+                                   'A $400 deposit-and-wager CPA with 5 percent qualifying became a $20 '
+                                   'CPA',
+                                   'Divide the headline CPA by the realistic qualification rate before '
+                                   'signing anything',
+                                   'iGaming Marketing Agency Tips by Christian Strutt ([_puyhQJIomQ @ '
+                                   '00:06:53])'],
+                                  ['CPA caps that silently cut paid volume',
+                                   'Capped at 10 players, delivered 25 players, and was paid for only 10',
+                                   'Look out for the caps on every CPA deal before scaling any volume',
+                                   'iGaming Marketing Agency Tips by Christian Strutt ([_puyhQJIomQ @ '
+                                   '00:07:14])'],
+                                  ['Ladder deals that pay pennies at low volume',
+                                   'Video Slots paid €5 per player at 1 to 5 players and €25 only at 48+',
+                                   'Never agree to ladder structures; counter with a flat template deal '
+                                   'instead',
+                                   'CASINOAFFMASTERY ([JUjTzv8yGw4 @ 00:08:04])'],
+                                  ['Program terminating payments on an existing player book',
+                                   'A program terminated payments on hundreds or thousands of referred '
+                                   'players',
+                                   'Deposit £5 to £10 yourself and check GPWA, Affiliate Guard Dog and '
+                                   'Casinomeister',
+                                   'iGaming Marketing Agency Tips by Christian Strutt ([6jlPOcl5CnI @ '
+                                   '00:13:28])'],
+                                  ['Operator collapse after traffic has already been sent',
+                                   'play a talk delayed payments across 4 to 6 casinos, then shut within 2 '
+                                   'days',
+                                   'Only money actually received counts, because casinos can go bankrupt '
+                                   'or not pay',
+                                   'Traffic Cardinal EN — Affiliate Press ([GRpptuPlok4 @ 00:16:06]); '
+                                   'CASINOAFFMASTERY ([JUjTzv8yGw4 @ 00:06:04])'],
+                                  ['Bonus fraud that looks like strong performance',
+                                   'High clicks and solid FTDs, then deposit-once bonus players with '
+                                   'negative NGR',
+                                   'Hold conversions on a review window and confirm positive post-bonus '
+                                   'NGR first',
+                                   'Trackdesk ([zjkFJJ0rAJ0 @ 00:04:11])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear these four before sending a single click',
+                           'body': 'Every gate below comes from a loss or reversal a practitioner took '
+                                   'firsthand. If a deal or operator fails one, the commission rate on '
+                                   'paper is irrelevant.',
+                           'items': ['Reject rolling negative carryover and demand monthly resets, the '
+                                     'term Strutt calls a must after a player won about 20,000 and later '
+                                     'lost about 10,000 [iGaming Marketing Agency Tips by Christian Strutt '
+                                     '— 6jlPOcl5CnI @ 00:14:13].',
+                                     'Recompute every CPA against its qualification rule and its cap '
+                                     'before scaling, because a $400 CPA with 5% qualifying is a $20 CPA '
+                                     '[iGaming Marketing Agency Tips by Christian Strutt — _puyhQJIomQ @ '
+                                     '00:06:53].',
+                                     'Hold CPA conversions on-hold and release only after checking the '
+                                     'player kept playing past the bonus and produced positive NGR '
+                                     '[Trackdesk — zjkFJJ0rAJ0 @ 00:05:40].',
+                                     "Check the project's RTP on Pragmatic and Playing go plus its "
+                                     'withdrawal limits and speed before promoting, since that is enough '
+                                     'to expose short-term RTP plays [Traffic Cardinal EN — Affiliate '
+                                     'Press — GRpptuPlok4 @ 00:08:55].']}}],
+ 'pull_quote': '"So your $400 CPA is actually a $20 CPA." — iGaming Marketing Agency Tips by Christian '
+               'Strutt (_puyhQJIomQ @ 00:06:53).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ["Walk GGR down to NGR using the contract's own deduction list, because the NGR "
+                      'definition in the contract directly sets the revshare payout [Lou 1win — '
+                      'd_2br4amklI @ 00:01:54].',
+                      'Counter every opening offer with the template of 50% revshare, €50 CPA, no negative '
+                      'carryover, separate funds, a cumulative €20 baseline and a €500 threshold '
+                      '[CASINOAFFMASTERY — JUjTzv8yGw4 @ 00:06:56].',
+                      'Never accept the first deal from an operator and move negotiations onto Teams, '
+                      'Telegram or WhatsApp to push it up [CASINOAFFMASTERY — _cAwM5AXvUE @ 00:16:24].',
+                      "Spend 5-10 minutes researching each operator's reputation on Google and work only "
+                      'with licensed operators before sending traffic [iGaming Marketing Agency Tips by '
+                      'Christian Strutt — _puyhQJIomQ @ 00:13:33].',
+                      'Run separate tracking links per channel, then scale hard while a gap works because '
+                      'gaps saturate [iGaming Marketing Agency Tips by Christian Strutt — 3ZUgO2w5vfU @ '
+                      '00:13:50].',
+                      "Compare the same Pragmatic slot's RTP across projects, flagging gaps like 96.5% "
+                      'versus 94.2%, before committing revshare traffic [Traffic Cardinal EN — Affiliate '
+                      'Press — GRpptuPlok4 @ 00:05:09].'],
+ 'statutory_citations': [{'title': 'iGaming Marketing Agency Tips by Christian Strutt — Gambling Affiliate '
+                                   'Programs Explained - iGaming Affiliate Program Terms, Advice, '
+                                   'Strategy, Tips [00:04:19]',
+                          'url': 'https://www.youtube.com/watch?v=_puyhQJIomQ&t=259s',
+                          'relevance': 'Primary practitioner testimony on negative carryover, CPA '
+                                       'qualification math, CPA caps and model choice by traffic type.'},
+                         {'title': '15M iGaming Media & Dealflow Platform — How a Casino Affiliate Program '
+                                   'Actually Works – With Numbers [00:04:55]',
+                          'url': 'https://www.youtube.com/watch?v=WaWQNIAchz0&t=295s',
+                          'relevance': 'Primary practitioner testimony on the GGR-to-NGR walk, effective '
+                                       'commission and why headline revshare percentages mislead.'},
+                         {'title': 'Traffic Cardinal EN — Affiliate Press — How To Choose The Right '
+                                   'iGaming Project To Work On The RevShare by Anton Konvertov [00:02:17]',
+                          'url': 'https://www.youtube.com/watch?v=GRpptuPlok4&t=137s',
+                          'relevance': 'Primary practitioner testimony on vetting revshare projects by '
+                                       'RTP, bonus policy, withdrawal limits and reputation.'},
+                         {'title': 'Trackdesk — iGaming Affiliate Marketing in 2026: A Senior Operator’s '
+                                   'Field Guide [00:01:09]',
+                          'url': 'https://www.youtube.com/watch?v=zjkFJJ0rAJ0&t=69s',
+                          'relevance': 'Primary practitioner testimony on commission model as fraud '
+                                       'exposure, NGR-based payouts and on-hold conversion buffering.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'zjkFJJ0rAJ0',
+                       'title': 'iGaming Affiliate Marketing in 2026: A Senior Operator’s Field Guide',
+                       'channel': 'Trackdesk',
+                       'author': 'Trackdesk',
+                       'text': "It's actually a risk management decision.",
+                       'tip': "It's actually a risk management decision.",
+                       'timestamp': 69,
+                       'timestamp_seconds': 69,
+                       'timestamp_label': '[00:01:09]',
+                       'url': 'https://www.youtube.com/watch?v=zjkFJJ0rAJ0&t=69s',
+                       'markdown': '[00:01:09](https://www.youtube.com/watch?v=zjkFJJ0rAJ0&t=69s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zjkFJJ0rAJ0',
+                       'title': 'iGaming Affiliate Marketing in 2026: A Senior Operator’s Field Guide',
+                       'channel': 'Trackdesk',
+                       'author': 'Trackdesk',
+                       'text': "The fix isn't a fraud detection tool bolted on after the fact.",
+                       'tip': "The fix isn't a fraud detection tool bolted on after the fact.",
+                       'timestamp': 268,
+                       'timestamp_seconds': 268,
+                       'timestamp_label': '[00:04:28]',
+                       'url': 'https://www.youtube.com/watch?v=zjkFJJ0rAJ0&t=268s',
+                       'markdown': '[00:04:28](https://www.youtube.com/watch?v=zjkFJJ0rAJ0&t=268s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WaWQNIAchz0',
+                       'title': 'How a Casino Affiliate Program Actually Works – With Numbers',
+                       'channel': '15M iGaming Media & Dealflow Platform',
+                       'author': '15M iGaming Media & Dealflow Platform',
+                       'text': 'This is why comparing revshare offers by percentage alone can be '
+                               'misleading.',
+                       'tip': 'This is why comparing revshare offers by percentage alone can be '
+                              'misleading.',
+                       'timestamp': 347,
+                       'timestamp_seconds': 347,
+                       'timestamp_label': '[00:05:47]',
+                       'url': 'https://www.youtube.com/watch?v=WaWQNIAchz0&t=347s',
+                       'markdown': '[00:05:47](https://www.youtube.com/watch?v=WaWQNIAchz0&t=347s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WaWQNIAchz0',
+                       'title': 'How a Casino Affiliate Program Actually Works – With Numbers',
+                       'channel': '15M iGaming Media & Dealflow Platform',
+                       'author': '15M iGaming Media & Dealflow Platform',
+                       'text': 'In this example, the effective commission equals 24.5% of the original '
+                               'gross gaming revenue.',
+                       'tip': 'In this example, the effective commission equals 24.5% of the original '
+                              'gross gaming revenue.',
+                       'timestamp': 331,
+                       'timestamp_seconds': 331,
+                       'timestamp_label': '[00:05:31]',
+                       'url': 'https://www.youtube.com/watch?v=WaWQNIAchz0&t=331s',
+                       'markdown': '[00:05:31](https://www.youtube.com/watch?v=WaWQNIAchz0&t=331s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZnwZv3TNdv0',
+                       'title': 'iGaming Affiliate Software Explained | Everything You Need to Know',
+                       'channel': 'Affnook',
+                       'author': 'Affnook',
+                       'text': 'You move from guesswork to datadriven decisions.',
+                       'tip': 'You move from guesswork to datadriven decisions.',
+                       'timestamp': 91,
+                       'timestamp_seconds': 91,
+                       'timestamp_label': '[00:01:31]',
+                       'url': 'https://www.youtube.com/watch?v=ZnwZv3TNdv0&t=91s',
+                       'markdown': '[00:01:31](https://www.youtube.com/watch?v=ZnwZv3TNdv0&t=91s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3ZUgO2w5vfU',
+                       'title': 'How To Start an iGaming Affiliate Business in 2026 - Starting a Gambling '
+                                'Affiliate Marketing Company',
+                       'channel': 'iGaming Marketing Agency Tips by Christian Strutt',
+                       'author': 'iGaming Marketing Agency Tips by Christian Strutt',
+                       'text': 'But follow the money is my best advice.',
+                       'tip': 'But follow the money is my best advice.',
+                       'timestamp': 811,
+                       'timestamp_seconds': 811,
+                       'timestamp_label': '[00:13:31]',
+                       'url': 'https://www.youtube.com/watch?v=3ZUgO2w5vfU&t=811s',
+                       'markdown': '[00:13:31](https://www.youtube.com/watch?v=3ZUgO2w5vfU&t=811s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6jlPOcl5CnI',
+                       'title': 'How To Choose The Right Gambling Affiliate Program - Finding The Best '
+                                'iGaming Affiliate Programs',
+                       'channel': 'iGaming Marketing Agency Tips by Christian Strutt',
+                       'author': 'iGaming Marketing Agency Tips by Christian Strutt',
+                       'text': 'Typically 1 to 5% conversion rates from click to depositing player is '
+                               'good.',
+                       'tip': 'Typically 1 to 5% conversion rates from click to depositing player is good.',
+                       'timestamp': 473,
+                       'timestamp_seconds': 473,
+                       'timestamp_label': '[00:07:53]',
+                       'url': 'https://www.youtube.com/watch?v=6jlPOcl5CnI&t=473s',
+                       'markdown': '[00:07:53](https://www.youtube.com/watch?v=6jlPOcl5CnI&t=473s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FnNlK_XZ270',
+                       'title': 'How do casino affiliate programs work? How do the best iGaming affiliates '
+                                'programs operate?',
+                       'channel': 'iGaming Marketing Agency Tips by Christian Strutt',
+                       'author': 'iGaming Marketing Agency Tips by Christian Strutt',
+                       'text': 'CPA deals pay roughly $50 to $200 per player with no residual income after '
+                               'the payout.',
+                       'tip': 'CPA deals pay roughly $50 to $200 per player with no residual income after '
+                              'the payout.',
+                       'timestamp': 80,
+                       'timestamp_seconds': 80,
+                       'timestamp_label': '[00:01:20]',
+                       'url': 'https://www.youtube.com/watch?v=FnNlK_XZ270&t=80s',
+                       'markdown': '[00:01:20](https://www.youtube.com/watch?v=FnNlK_XZ270&t=80s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zEJgRn6SLjs',
+                       'title': 'GGR vs NGR: Understanding key metrics in iGaming',
+                       'channel': 'iGaming Express',
+                       'author': 'iGaming Express',
+                       'text': 'GGR is the money coming in, while NGR is the money that is actually kept.',
+                       'tip': 'GGR is the money coming in, while NGR is the money that is actually kept.',
+                       'timestamp': 173,
+                       'timestamp_seconds': 173,
+                       'timestamp_label': '[00:02:53]',
+                       'url': 'https://www.youtube.com/watch?v=zEJgRn6SLjs&t=173s',
+                       'markdown': '[00:02:53](https://www.youtube.com/watch?v=zEJgRn6SLjs&t=173s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Wzz58pqo-ag',
+                       'title': 'Gross Gaming Revenue (GGR) Explained | How iGaming Revenue Really Works',
+                       'channel': 'Affnook',
+                       'author': 'Affnook',
+                       'text': 'High bonuses can raise GGR while cutting NGR.',
+                       'tip': 'High bonuses can raise GGR while cutting NGR.',
+                       'timestamp': 109,
+                       'timestamp_seconds': 109,
+                       'timestamp_label': '[00:01:49]',
+                       'url': 'https://www.youtube.com/watch?v=Wzz58pqo-ag&t=109s',
+                       'markdown': '[00:01:49](https://www.youtube.com/watch?v=Wzz58pqo-ag&t=109s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JUjTzv8yGw4',
+                       'title': 'How Much Can You ACTUALLY Make From Casino Affiliate Marketing?',
+                       'channel': 'CASINOAFFMASTERY',
+                       'author': 'CASINOAFFMASTERY',
+                       'text': 'You only make money once it is received, because casinos can go bankrupt '
+                               'or simply not pay.',
+                       'tip': 'You only make money once it is received, because casinos can go bankrupt or '
+                              'simply not pay.',
+                       'timestamp': 364,
+                       'timestamp_seconds': 364,
+                       'timestamp_label': '[00:06:04]',
+                       'url': 'https://www.youtube.com/watch?v=JUjTzv8yGw4&t=364s',
+                       'markdown': '[00:06:04](https://www.youtube.com/watch?v=JUjTzv8yGw4&t=364s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rEP2Pyna6UA',
+                       'title': 'Own an Online Casino | Gambling Affiliate Marketing Strategy',
+                       'channel': 'John Crestani',
+                       'author': 'John Crestani',
+                       'text': "Spamming the internet here doesn't help as much because we're on a rev "
+                               "share and we don't just want the sign up and the deposit, we want their "
+                               'continued activity.',
+                       'tip': "Spamming the internet here doesn't help as much because we're on a rev "
+                              "share and we don't just want the sign up and the deposit, we want their "
+                              'continued activity.',
+                       'timestamp': 1631,
+                       'timestamp_seconds': 1631,
+                       'timestamp_label': '[00:27:11]',
+                       'url': 'https://www.youtube.com/watch?v=rEP2Pyna6UA&t=1631s',
+                       'markdown': '[00:27:11](https://www.youtube.com/watch?v=rEP2Pyna6UA&t=1631s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GRpptuPlok4',
+                       'title': 'How To Choose The Right iGaming Project To Work On The RevShare by Anton '
+                                'Konvertov',
+                       'channel': 'Traffic Cardinal EN — Affiliate Press',
+                       'author': 'Traffic Cardinal EN — Affiliate Press',
+                       'text': 'However the problem is that with the lowered RTP we only win in the short '
+                               'term.',
+                       'tip': 'However the problem is that with the lowered RTP we only win in the short '
+                              'term.',
+                       'timestamp': 480,
+                       'timestamp_seconds': 480,
+                       'timestamp_label': '[00:08:00]',
+                       'url': 'https://www.youtube.com/watch?v=GRpptuPlok4&t=480s',
+                       'markdown': '[00:08:00](https://www.youtube.com/watch?v=GRpptuPlok4&t=480s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TzU_M6ldezQ',
+                       'title': 'Are CPA and RevShare Models Starting to Change? | Paul Puolakka',
+                       'channel': 'iGaming Real Talk Podcast',
+                       'author': 'iGaming Real Talk Podcast',
+                       'text': "But for us operator doesn't take care of the players like we also waste "
+                               'traffic.',
+                       'tip': "But for us operator doesn't take care of the players like we also waste "
+                              'traffic.',
+                       'timestamp': 216,
+                       'timestamp_seconds': 216,
+                       'timestamp_label': '[00:03:36]',
+                       'url': 'https://www.youtube.com/watch?v=TzU_M6ldezQ&t=216s',
+                       'markdown': '[00:03:36](https://www.youtube.com/watch?v=TzU_M6ldezQ&t=216s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_puyhQJIomQ',
+                       'title': 'Gambling Affiliate Programs Explained - iGaming Affiliate Program Terms, '
+                                'Advice, Strategy, Tips',
+                       'channel': 'iGaming Marketing Agency Tips by Christian Strutt',
+                       'author': 'iGaming Marketing Agency Tips by Christian Strutt',
+                       'text': 'So your $400 CPA is actually a $20 CPA.',
+                       'tip': 'So your $400 CPA is actually a $20 CPA.',
+                       'timestamp': 413,
+                       'timestamp_seconds': 413,
+                       'timestamp_label': '[00:06:53]',
+                       'url': 'https://www.youtube.com/watch?v=_puyhQJIomQ&t=413s',
+                       'markdown': '[00:06:53](https://www.youtube.com/watch?v=_puyhQJIomQ&t=413s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_cAwM5AXvUE',
+                       'title': 'Beginner’s Guide to Casino Affiliate Marketing in 2025',
+                       'channel': 'CASINOAFFMASTERY',
+                       'author': 'CASINOAFFMASTERY',
+                       'text': 'Never just accept the first deal that you get from an operator because you '
+                               'can always negotiate it up.',
+                       'tip': 'Never just accept the first deal that you get from an operator because you '
+                              'can always negotiate it up.',
+                       'timestamp': 984,
+                       'timestamp_seconds': 984,
+                       'timestamp_label': '[00:16:24]',
+                       'url': 'https://www.youtube.com/watch?v=_cAwM5AXvUE&t=984s',
+                       'markdown': '[00:16:24](https://www.youtube.com/watch?v=_cAwM5AXvUE&t=984s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'd_2br4amklI',
+                       'title': 'How iGaming Revenue Works',
+                       'channel': 'Lou 1win',
+                       'author': 'Lou 1win',
+                       'text': "There isn't one universal formula that applies to every business "
+                               'relationship.',
+                       'tip': "There isn't one universal formula that applies to every business "
+                              'relationship.',
+                       'timestamp': 96,
+                       'timestamp_seconds': 96,
+                       'timestamp_label': '[00:01:36]',
+                       'url': 'https://www.youtube.com/watch?v=d_2br4amklI&t=96s',
+                       'markdown': '[00:01:36](https://www.youtube.com/watch?v=d_2br4amklI&t=96s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'}]}

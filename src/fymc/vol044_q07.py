@@ -1,1065 +1,814 @@
 from __future__ import annotations
 
-CHAPTER_7 = {
-    "id": "Q7",
-    "chapter_id": "Q7",
-    "chapter_number": 7,
-    "question_number": 7,
-    "slug": "complete-operating-process-production-blueprint-90-day-cohort",
-    "question_prompt": "How does an operator execute customs duty drawback, tariff refund & antitrust claim recovery end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
-    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
-    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
-    "subtitle": "ACE Entry Evidence, Part 190 Drawback, Section 1514 Protests, Settlement Distributions, and an Idempotent SQLite Cash Ledger",
-    "layout_template": "research_exhibit",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #44, Rank #03 of 49, scores 95/100 by converting documented "
-        "customs and settlement entitlements into earned contingency fees rather "
-        "than treating recovered client principal as operator revenue. This chapter "
-        "turns 12 mapped plays into three separately controlled recovery lanes, "
-        "a six-module SQLite reference, and a worked cash-cohort bridge. Licensed "
-        "brokers or trade counsel handle formal customs filings; settlement "
-        "administrators determine distributions under controlling court documents. "
-        "The annual owner-profit cases remain $35,200 Conservative, $231,750 Base, "
-        "and $533,600 Scaled. The illustrative quarter earns $128,750 against "
-        "$70,812.50 of operating costs, producing $57,937.50 of owner profit. "
-        "Opening inventory, evidence losses, actual payment timing, and fee recognition "
-        "are exposed rather than hidden inside a recovery forecast."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$110,000",
-            "context": "Annual earned contingency-fee revenue; recovered client principal excluded",
-            "note": "32% margin; $35,200 owner profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$515,000",
-            "context": "Annual earned contingency-fee revenue; recovered client principal excluded",
-            "note": "45.0% margin; $231,750 owner profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$920,000",
-            "context": "Annual earned contingency-fee revenue; recovered client principal excluded",
-            "note": "58% margin; $533,600 owner profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Separate entitlement, filing authority, and collectible economics before scoring",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with three queues, not one refund spreadsheet. The drawback queue "
-                    "requires import entries, duty components, export or destruction evidence, "
-                    "claimant rights, and a qualifying route under 19 U.S.C. § 1313. "
-                    "Unused merchandise, manufacturing, and rejected merchandise have different "
-                    "conditions; an eight-digit HTS match alone never establishes substitution "
-                    "eligibility. For a qualifying 99% recovery, $100,000 of eligible paid "
-                    "duties produces a $99,000 collectible base and a $29,700 fee at "
-                    "30%, before documentation and broker costs. Antidumping and countervailing "
-                    "duties are excluded under 19 U.S.C. § 1677h; other tariff measures "
-                    "require measure-specific eligibility research. The tariff-correction queue "
-                    "distinguishes an eligible pre-liquidation Post-Summary Correction from a "
-                    "post-liquidation protest under § 1514. A $50,000 supported overpayment "
-                    "produces a $15,000 fee only if the correction or protest yields that "
-                    "refund. The settlement queue starts with the certified class definition, "
-                    "covered purchases, release provisions, administrator instructions, and "
-                    "claim deadline. A client's $2 million purchase ledger is evidence, not "
-                    "a distribution estimate. A realized $20,000 distribution produces a "
-                    "$6,000 fee at 30%. Never add those purchases, refunded duties, or "
-                    "settlement pools to operating revenue. Score each lane on eligible "
-                    "dollars, evidence completeness, deadline slack, and expected collection "
-                    "delay before assigning scarce contractor hours."
-                ),
-                (
-                    "Build twelve mapped workstreams around those queues: unused-merchandise "
-                    "drawback identification; manufacturing drawback linkage; rejected-merchandise "
-                    "drawback screening; export-document reconstruction; substitution eligibility "
-                    "reconciliation; classification correction; valuation correction; origin and "
-                    "preference correction; timely liquidation protest preparation; B2B antitrust "
-                    "purchase reconstruction; interchange settlement claim packaging; and "
-                    "freight_detention_audit_contingency. These are operating mappings, not twelve "
-                    "independent entitlements to the same dollars. The last identifier is the "
-                    "supplied TRACK_1 play, Automated Parcel, LTL Freight & Tariff Overcharge "
-                    "Contingency Auditing. Treat it as a shared ingestion and referral engine "
-                    "while preserving separate carrier and customs contracts. For example, "
-                    "10,000 invoices at $0.08 automated processing cost require $800 of "
-                    "processing; 200 exceptions at six minutes each require 20 analyst hours. "
-                    "At an illustrative $45 hourly rate, that adds $900 before senior "
-                    "review. Twenty recovered $250 carrier errors generate $5,000 of recovery "
-                    "and $2,000 of fees at 40%. That carrier split sits within the play's "
-                    "35%–50% range, not the core volume's 25%–35% customs and settlement "
-                    "range. If a shipper has waived service guarantees, stop forecasting "
-                    "late-delivery credits and redirect effort to supported dimensional-weight, "
-                    "duplicate-charge, freight-class, and contract-rate errors. Contract terms "
-                    "still control whether any particular charge can be challenged."
-                ),
-                (
-                    "Price documentation before accepting an apparently lucrative file. A "
-                    "$29,700 drawback fee can absorb an illustrative $1,200 evidence "
-                    "reconstruction assignment and $2,000 broker engagement; a $900 fee "
-                    "cannot absorb that same work. These are per-file budgeting assumptions, "
-                    "not published vendor tariffs. ImportGenius and Panjiva help identify "
-                    "trade activity, but their manifests do not replace ACE entry records, "
-                    "proof of duty payment, or admissible export evidence. Obtain importer "
-                    "authorization and use licensed Part 111 brokers or authorized trade "
-                    "counsel for formal customs filings under valid powers of attorney. "
-                    "The administrative operator organizes evidence and exceptions without "
-                    "selling unlicensed customs business. Record whether accelerated drawback "
-                    "payment requires an approved privilege and sufficient drawback bond "
-                    "capacity; ordinary payment does not become accelerated merely because "
-                    "a forecast needs faster cash. A tariff refund does not automatically "
-                    "require a new drawback bond, although existing import-bond obligations "
-                    "remain relevant. Settlement claims ordinarily have no customs surety "
-                    "requirement, but distributions can wait for court approval, appeals, "
-                    "allocation, and deficiency resolution. Every engagement identifies who "
-                    "pays outside costs, when the fee becomes enforceable, and what happens "
-                    "after denial or repayment. Required third-party-filer disclosures must "
-                    "also explain that claimants may file directly at zero cost."
-                ),
-            ],
-            "table": {
-                "caption": "Three-Lane Entitlement, Documentation, Surety, and Collection Matrix",
-                "headers": [
-                    "Lane or control and collectible base",
-                    "Eligibility and authoritative evidence",
-                    "Documentation cost and surety treatment",
-                    "Cash timing and failure response",
-                ],
-                "rows": [
-                    [
-                        "Unused-merchandise drawback models $99,000 from $100,000 eligible duties",
-                        "Section 1313 route requires qualifying merchandise and supported exports",
-                        "Budget $1,200 reconstruction plus $2,000 broker work illustratively",
-                        "Plan several months or longer; accelerated payment needs separate qualification",
-                    ],
-                    [
-                        "Manufacturing drawback uses eligible input duties and supported attribution",
-                        "Document manufacturing records, wastage treatment, exports, and applicable authorization",
-                        "Budget analyst hours separately; assess accelerated-payment bond headroom",
-                        "Pause unsupported yield allocations rather than extrapolating undocumented consumption",
-                    ],
-                    [
-                        "Tariff correction models $50,000 refunded overpayment and $15,000 fees",
-                        "Confirm classification, valuation, origin, entry status, and correction route",
-                        "Budget $800 evidence work plus $1,500 licensed review illustratively",
-                        "Use current ACE correction limits; otherwise assess timely protest eligibility",
-                    ],
-                    [
-                        "Liquidation protest pursues only disputed duties supported by entry evidence",
-                        "Section 1514 generally requires filing within 180 days",
-                        "Budget counsel analysis separately; drawback bonding does not automatically apply",
-                        "Calendar decision-specific deadlines; contested matters may require lengthy proceedings",
-                    ],
-                    [
-                        "B2B antitrust recovery models $20,000 distribution and $6,000 fees",
-                        "Court documents determine covered buyers, products, periods, and exclusions",
-                        "Budget $450 ledger cleanup plus $300 supervised packaging illustratively",
-                        "Expect administrator-specific timing; purchases never establish a guaranteed distribution",
-                    ],
-                    [
-                        "Interchange recovery counts actual distributions rather than merchant processing volume",
-                        "Reconcile legal entities, merchant identifiers, covered periods, and administrator requirements",
-                        "Budget processor retrieval costs; ordinary claims require no customs surety",
-                        "Resolve competing submissions and deficiencies before anticipating available cash",
-                    ],
-                    [
-                        "Carrier audit produces $2,000 fees from $5,000 recovered charges",
-                        "UPS, FedEx, and LTL contracts determine dispute rights",
-                        "Separate carrier work orders prevent blending incompatible contingency percentages",
-                        "Replace waived SLA claims with contract-supported billing-error recovery",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect scarce review hours with entitlement-level evidence",
-                "body": (
-                    "Optimize for supported collectible dollars per reviewer hour, "
-                    "not for the largest spreadsheet of apparent overpayments."
-                ),
-                "items": [
-                    "Reserve the original entry-line duty bucket before testing a second recovery theory; subtract any prior refund from the remaining eligible base.",
-                    "Request export transport records and merchandise identifiers together, so missing physical trace appears before broker fees are committed.",
-                    "Run separate service-guarantee and billing-error rules against carrier contracts; a waived guarantee does not settle every other billing dispute.",
-                    "Ask settlement administrators about third-party access and competing claims before requesting a client's entire accounts-payable archive.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Implement six ledger modules with serialized writes and immutable evidence",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The reference below uses Python's sqlite3 module, integer cents, and "
-                    "a single local SQLite database. Execute the six cells in order in "
-                    "one Python namespace; later cells define functions rather than inventing "
-                    "sample receipts. Each worker opens its own connection through connect(), "
-                    "and every mutable business operation acquires BEGIN IMMEDIATE before "
-                    "reading state. SQLite therefore serializes competing writers, while "
-                    "unique economic keys, receipt references, and event keys reject duplicate "
-                    "economic effects. A busy timeout produces an explicit retryable failure, "
-                    "not an unlocked fallback. Keep the database on supported local storage; "
-                    "do not share its file over a network filesystem. For multiple application "
-                    "hosts, port the same invariants to PostgreSQL transactions with row locks "
-                    "and unique indexes. The source digest represents actual supplied bytes, "
-                    "while the economic key represents the underlying entitlement rather than "
-                    "a filename. A corrected document needs a controlled amendment process, "
-                    "not a fresh case that reserves the same dollars twice. The compact "
-                    "reference intentionally freezes intake records. Production amendments "
-                    "should preserve prior versions, reviewer identity, reason, and a new "
-                    "digest. This design prevents duplicate writes within its transaction "
-                    "boundary; it does not turn an external customs portal into a transactional "
-                    "database participant."
-                ),
-                (
-                    "Separate administrative state from money movement. A new case becomes "
-                    "verified only after an authorized reviewer records a complete evidence "
-                    "decision; it becomes filed only after a broker acknowledgment or "
-                    "administrator receipt is captured. The operator never treats an attempted "
-                    "upload as an accepted claim. External submission remains a supervised "
-                    "adapter boundary: before retrying after a timeout, search the broker "
-                    "or administrator system using the stable claim reference. If acceptance "
-                    "cannot be established, suspend submission and obtain confirmation instead "
-                    "of blindly transmitting again. This avoids promising exactly-once delivery "
-                    "to systems that offer no idempotency contract. The verification and "
-                    "escrow state machine records receipts as held until independent payment "
-                    "evidence establishes release; held is an informational restriction, "
-                    "not an instruction to open an operator-controlled escrow account. "
-                    "Client distributions remain with the payer, administrator, or client "
-                    "as the engagement specifies. The reference assumes one recovery receipt "
-                    "per independently identified payer transaction. Split batch payments "
-                    "upstream using a separately reconciled allocation register before "
-                    "adopting this model; do not manufacture reference suffixes to defeat "
-                    "uniqueness. A reviewer digest proves document linkage only. Application "
-                    "authentication, signing authority, and reviewer separation remain "
-                    "required controls around these callable functions and their database."
-                ),
-                (
-                    "Revenue posts only when the contract's contingent fee is earned and "
-                    "the associated fee collection is evidenced under this example's "
-                    "cash-triggered terms. Gross recovery remains a memorandum amount, "
-                    "with operator fees and client allocation displayed separately. Assess "
-                    "ASC 606 principal-versus-agent presentation against actual contractual "
-                    "control; this scorecard uses earned operator fees, never underlying "
-                    "duties or settlement proceeds. Broker and contractor charges are "
-                    "expenses when the operator bears them, rather than an invented "
-                    "retained-share reduction to the canonical revenue figures. Fee rounding "
-                    "uses each case's cumulative released recovery, so splitting one "
-                    "payment into installments cannot create extra cents of revenue. "
-                    "The monthly view includes expense-only months and returns both owner "
-                    "profit and cumulative cash contribution. Its cost input must include "
-                    "all scenario costs, not merely recurring software subscriptions. "
-                    "Module six checks foreign keys, storage integrity, held-payment "
-                    "exclusion, allocation equality, and cumulative fee arithmetic. Add "
-                    "two-connection concurrency tests, duplicate replay tests, interrupted "
-                    "transaction tests, and restore drills before deployment. The snippets "
-                    "are a bounded reference, not an executed test report. Payment reversals "
-                    "and amended claims require explicit compensating-entry extensions; "
-                    "until those exist, stop automated processing of those exceptions and "
-                    "reconcile them in a separately controlled ledger."
-                ),
-            ],
-            "table": {
-                "caption": "Production Engineering / SQLite-or-Postgres Ledger & Idempotent Workflow Reference Table",
-                "headers": [
-                    "Module and execution contract",
-                    "Copy-pasteable Python reference implementation",
-                    "Invariant and deployment boundary",
-                ],
-                "rows": [
-                    [
-                        "Module one creates the local schema and transaction boundary",
-                        '''import hashlib
-import re
-import sqlite3
-from contextlib import contextmanager
-from datetime import date
-
-DB = "recovery_ledger.sqlite3"
-
-def connect():
-    connection = sqlite3.connect(
-        DB, timeout=30, isolation_level=None
-    )
-    connection.row_factory = sqlite3.Row
-    connection.execute("PRAGMA foreign_keys = ON")
-    connection.execute("PRAGMA busy_timeout = 30000")
-    connection.execute("PRAGMA synchronous = FULL")
-    return connection
-
-db = connect()
-db.execute("PRAGMA journal_mode = WAL")
-db.executescript("""
-CREATE TABLE IF NOT EXISTS claims (
-    claim_id TEXT PRIMARY KEY,
-    economic_key TEXT NOT NULL UNIQUE,
-    lane TEXT NOT NULL CHECK (
-        lane IN ('drawback', 'tariff', 'settlement')
-    ),
-    eligible_cents INTEGER NOT NULL CHECK (
-        typeof(eligible_cents) = 'integer' AND eligible_cents > 0
-    ),
-    fee_bps INTEGER NOT NULL CHECK (
-        typeof(fee_bps) = 'integer'
-        AND fee_bps BETWEEN 2500 AND 3500
-    ),
-    source_digest TEXT NOT NULL,
-    status TEXT NOT NULL DEFAULT 'new' CHECK (
-        status IN ('new', 'verified', 'filed', 'paid', 'rejected')
-    ),
-    submission_ref TEXT UNIQUE
-);
-CREATE TABLE IF NOT EXISTS events (
-    event_key TEXT PRIMARY KEY,
-    claim_id TEXT NOT NULL REFERENCES claims(claim_id),
-    target TEXT NOT NULL,
-    evidence_digest TEXT NOT NULL,
-    external_ref TEXT NOT NULL,
-    UNIQUE (claim_id, target)
-);
-CREATE TABLE IF NOT EXISTS receipts (
-    receipt_key TEXT PRIMARY KEY,
-    payer_reference TEXT NOT NULL UNIQUE,
-    claim_id TEXT NOT NULL REFERENCES claims(claim_id),
-    recovered_cents INTEGER NOT NULL CHECK (
-        typeof(recovered_cents) = 'integer' AND recovered_cents > 0
-    ),
-    bank_digest TEXT NOT NULL,
-    state TEXT NOT NULL DEFAULT 'held' CHECK (
-        state IN ('held', 'released')
-    )
-);
-CREATE TABLE IF NOT EXISTS postings (
-    posting_id INTEGER PRIMARY KEY,
-    receipt_key TEXT NOT NULL UNIQUE REFERENCES receipts(receipt_key),
-    booked_on TEXT NOT NULL,
-    release_digest TEXT NOT NULL,
-    fee_cents INTEGER NOT NULL CHECK (
-        typeof(fee_cents) = 'integer' AND fee_cents >= 0
-    ),
-    client_cents INTEGER NOT NULL CHECK (
-        typeof(client_cents) = 'integer' AND client_cents >= 0
-    )
-);
-CREATE TABLE IF NOT EXISTS costs (
-    month TEXT PRIMARY KEY,
-    amount_cents INTEGER NOT NULL CHECK (
-        typeof(amount_cents) = 'integer' AND amount_cents >= 0
-    ),
-    evidence_digest TEXT NOT NULL
-);
-""")
-
-@contextmanager
-def transaction(connection):
-    connection.execute("BEGIN IMMEDIATE")
-    try:
-        yield
-        connection.execute("COMMIT")
-    except BaseException:
-        connection.execute("ROLLBACK")
-        raise
-
-def digest(value):
-    return hashlib.sha256(value).hexdigest()
-
-def check_digest(value):
-    if not isinstance(value, str) or not re.fullmatch(
-        r"[0-9a-f]{64}", value
-    ):
-        raise ValueError("Supply a SHA-256 evidence digest")
-
-def require_text(value):
-    if not isinstance(value, str) or not value.strip():
-        raise ValueError("Supply a stable nonempty reference")
-
-def require_integer(value, minimum=0):
-    if type(value) is not int or value < minimum:
-        raise ValueError("Supply integer cents or basis points")
-''',
-                        "Unique entitlement reservations and immediate transactions serialize concurrent mutations",
-                    ],
-                    [
-                        "Module two freezes intake evidence and returns deterministic scoring",
-                        '''def intake(connection, claim_id, economic_key, lane,
-           eligible_cents, fee_bps, source_bytes):
-    require_text(claim_id)
-    require_text(economic_key)
-    require_integer(eligible_cents, 1)
-    require_integer(fee_bps, 2500)
-    if lane not in ('drawback', 'tariff', 'settlement'):
-        raise ValueError("Select a supported recovery lane")
-    if fee_bps > 3500 or not isinstance(source_bytes, bytes):
-        raise ValueError("Check fee rate and source bytes")
-    source_digest = digest(source_bytes)
-    proposed = (
-        claim_id, economic_key, lane, eligible_cents,
-        fee_bps, source_digest
-    )
-    with transaction(connection):
-        existing = connection.execute(
-            "SELECT * FROM claims WHERE economic_key = ? "
-            "OR claim_id = ?", (economic_key, claim_id)
-        ).fetchall()
-        if existing:
-            fields = (
-                'claim_id', 'economic_key', 'lane',
-                'eligible_cents', 'fee_bps', 'source_digest'
-            )
-            if len(existing) != 1 or tuple(
-                existing[0][field] for field in fields
-            ) != proposed:
-                raise ValueError("Conflicting intake replay")
-        else:
-            connection.execute(
-                "INSERT INTO claims "
-                "(claim_id, economic_key, lane, eligible_cents, "
-                "fee_bps, source_digest) VALUES (?, ?, ?, ?, ?, ?)",
-                proposed
-            )
-    return {
-        "claim_id": claim_id,
-        "fee_ceiling_cents": (
-            eligible_cents * fee_bps + 5000
-        ) // 10000,
-        "evidence_score": 25,
-        "next_action": "Human entitlement and deadline assessment"
-    }
-''',
-                        "Scoring measures intake completeness only and never establishes legal eligibility",
-                    ],
-                    [
-                        "Module three records reviewed verification and acknowledged filing transitions",
-                        '''def advance(connection, claim_id, target, event_key,
-            evidence_digest, external_ref=""):
-    require_text(event_key)
-    check_digest(evidence_digest)
-    if target not in ('verified', 'filed', 'rejected', 'paid'):
-        raise ValueError("Unsupported transition")
-    if target == 'filed':
-        require_text(external_ref)
-    signature = (
-        claim_id, target, evidence_digest, external_ref
-    )
-    with transaction(connection):
-        prior = connection.execute(
-            "SELECT claim_id, target, evidence_digest, external_ref "
-            "FROM events WHERE event_key = ?", (event_key,)
-        ).fetchone()
-        if prior:
-            if tuple(prior) != signature:
-                raise ValueError("Conflicting transition replay")
-            return
-        claim = connection.execute(
-            "SELECT * FROM claims WHERE claim_id = ?", (claim_id,)
-        ).fetchone()
-        if claim is None:
-            raise ValueError("Claim must exist before transition")
-        allowed = {
-            'new': {'verified', 'rejected'},
-            'verified': {'filed', 'rejected'},
-            'filed': {'paid', 'rejected'},
-            'paid': set(),
-            'rejected': set(),
-        }
-        if target not in allowed[claim['status']]:
-            raise ValueError("Transition violates case state")
-        receipt_count = connection.execute(
-            "SELECT COUNT(*) FROM receipts WHERE claim_id = ?",
-            (claim_id,)
-        ).fetchone()[0]
-        held_count = connection.execute(
-            "SELECT COUNT(*) FROM receipts "
-            "WHERE claim_id = ? AND state = 'held'", (claim_id,)
-        ).fetchone()[0]
-        if target == 'rejected' and receipt_count:
-            raise ValueError("Receipt-bearing case needs exception handling")
-        if target == 'paid' and (not receipt_count or held_count):
-            raise ValueError("Release all receipts before final closure")
-        connection.execute(
-            "INSERT INTO events VALUES (?, ?, ?, ?, ?)",
-            (event_key,) + signature
-        )
-        if target == 'filed':
-            connection.execute(
-                "UPDATE claims SET status = ?, submission_ref = ? "
-                "WHERE claim_id = ?",
-                (target, external_ref, claim_id)
-            )
-        else:
-            connection.execute(
-                "UPDATE claims SET status = ? WHERE claim_id = ?",
-                (target, claim_id)
-            )
-''',
-                        "Reviewer evidence precedes transitions; external submission remains separately supervised",
-                    ],
-                    [
-                        "Module four holds receipts and atomically releases evidenced fee allocations",
-                        '''def hold_receipt(connection, receipt_key, payer_reference,
-                 claim_id, recovered_cents, bank_digest):
-    require_text(receipt_key)
-    require_text(payer_reference)
-    require_integer(recovered_cents, 1)
-    check_digest(bank_digest)
-    proposed = (
-        receipt_key, payer_reference, claim_id,
-        recovered_cents, bank_digest
-    )
-    with transaction(connection):
-        prior = connection.execute(
-            "SELECT receipt_key, payer_reference, claim_id, "
-            "recovered_cents, bank_digest FROM receipts "
-            "WHERE receipt_key = ? OR payer_reference = ?",
-            (receipt_key, payer_reference)
-        ).fetchall()
-        if prior:
-            if len(prior) != 1 or tuple(prior[0]) != proposed:
-                raise ValueError("Conflicting receipt replay")
-            return
-        claim = connection.execute(
-            "SELECT status FROM claims WHERE claim_id = ?",
-            (claim_id,)
-        ).fetchone()
-        if claim is None or claim['status'] != 'filed':
-            raise ValueError("Receipt requires an acknowledged open claim")
-        connection.execute(
-            "INSERT INTO receipts "
-            "(receipt_key, payer_reference, claim_id, "
-            "recovered_cents, bank_digest) VALUES (?, ?, ?, ?, ?)",
-            proposed
-        )
-
-def release_receipt(connection, receipt_key, booked_on,
-                    release_digest):
-    check_digest(release_digest)
-    if date.fromisoformat(booked_on).isoformat() != booked_on:
-        raise ValueError("Use a canonical calendar date")
-    with transaction(connection):
-        prior = connection.execute(
-            "SELECT booked_on, release_digest FROM postings "
-            "WHERE receipt_key = ?", (receipt_key,)
-        ).fetchone()
-        if prior:
-            if tuple(prior) != (booked_on, release_digest):
-                raise ValueError("Conflicting release replay")
-            return
-        receipt = connection.execute(
-            "SELECT r.*, c.fee_bps, c.status FROM receipts r "
-            "JOIN claims c ON c.claim_id = r.claim_id "
-            "WHERE r.receipt_key = ?", (receipt_key,)
-        ).fetchone()
-        if receipt is None:
-            raise ValueError("Record the held receipt first")
-        if receipt['state'] != 'held' or receipt['status'] != 'filed':
-            raise ValueError("Receipt cannot be released in current state")
-        totals = connection.execute(
-            "SELECT COALESCE(SUM(r.recovered_cents), 0), "
-            "COALESCE(SUM(p.fee_cents), 0) "
-            "FROM receipts r JOIN postings p "
-            "ON p.receipt_key = r.receipt_key WHERE r.claim_id = ?",
-            (receipt['claim_id'],)
-        ).fetchone()
-        cumulative = totals[0] + receipt['recovered_cents']
-        fee_total = (
-            cumulative * receipt['fee_bps'] + 5000
-        ) // 10000
-        fee_delta = fee_total - totals[1]
-        connection.execute(
-            "INSERT INTO postings "
-            "(receipt_key, booked_on, release_digest, fee_cents, "
-            "client_cents) VALUES (?, ?, ?, ?, ?)",
-            (
-                receipt_key, booked_on, release_digest, fee_delta,
-                receipt['recovered_cents'] - fee_delta
-            )
-        )
-        connection.execute(
-            "UPDATE receipts SET state = 'released' "
-            "WHERE receipt_key = ?", (receipt_key,)
-        )
-''',
-                        "Release evidence covers actual recovery and fee collection without custody",
-                    ],
-                    [
-                        "Module five reconciles monthly fees, complete costs, and cumulative cash",
-                        '''db.executescript("""
-CREATE VIEW IF NOT EXISTS monthly_reconciliation AS
-WITH income AS (
-    SELECT substr(p.booked_on, 1, 7) AS month,
-           SUM(r.recovered_cents) AS recovered_cents,
-           SUM(p.fee_cents) AS fee_cents,
-           SUM(p.client_cents) AS client_cents
-    FROM postings p
-    JOIN receipts r ON r.receipt_key = p.receipt_key
-    WHERE r.state = 'released'
-    GROUP BY substr(p.booked_on, 1, 7)
-),
-months AS (
-    SELECT month FROM income
-    UNION
-    SELECT month FROM costs
-),
-result AS (
-    SELECT m.month,
-           COALESCE(i.recovered_cents, 0) AS recovered_cents,
-           COALESCE(i.fee_cents, 0) AS fee_cents,
-           COALESCE(i.client_cents, 0) AS client_cents,
-           COALESCE(c.amount_cents, 0) AS cost_cents,
-           COALESCE(i.fee_cents, 0)
-             - COALESCE(c.amount_cents, 0) AS owner_profit_cents
-    FROM months m
-    LEFT JOIN income i ON i.month = m.month
-    LEFT JOIN costs c ON c.month = m.month
-)
-SELECT *,
-       SUM(owner_profit_cents) OVER (
-           ORDER BY month ROWS UNBOUNDED PRECEDING
-       ) AS cumulative_cash_cents
-FROM result;
-""")
-
-def record_costs(connection, month, amount_cents, evidence_digest):
-    if not re.fullmatch(r"[0-9]{4}-[0-9]{2}", month):
-        raise ValueError("Use a year-month accounting period")
-    date.fromisoformat(month + "-01")
-    require_integer(amount_cents)
-    check_digest(evidence_digest)
-    proposed = (amount_cents, evidence_digest)
-    with transaction(connection):
-        prior = connection.execute(
-            "SELECT amount_cents, evidence_digest "
-            "FROM costs WHERE month = ?", (month,)
-        ).fetchone()
-        if prior:
-            if tuple(prior) != proposed:
-                raise ValueError("Closed cost period requires an amendment")
-            return
-        connection.execute(
-            "INSERT INTO costs VALUES (?, ?, ?)",
-            (month, amount_cents, evidence_digest)
-        )
-''',
-                        "Reconciliation excludes held recoveries and separates client principal from fees",
-                    ],
-                    [
-                        "Module six verifies ledger arithmetic inside a consistent transaction",
-                        '''def run_qa(connection):
-    with transaction(connection):
-        integrity = connection.execute(
-            "PRAGMA integrity_check"
-        ).fetchall()
-        if [row[0] for row in integrity] != ['ok']:
-            raise ValueError("Storage integrity check failed")
-        if connection.execute("PRAGMA foreign_key_check").fetchall():
-            raise ValueError("Foreign key integrity check failed")
-        broken = connection.execute(
-            "SELECT r.receipt_key FROM receipts r "
-            "LEFT JOIN postings p ON p.receipt_key = r.receipt_key "
-            "WHERE (r.state = 'released' AND p.posting_id IS NULL) "
-            "OR (r.state = 'held' AND p.posting_id IS NOT NULL) "
-            "OR (p.posting_id IS NOT NULL AND "
-            "p.fee_cents + p.client_cents != r.recovered_cents)"
-        ).fetchall()
-        if broken:
-            raise ValueError("Receipt allocation or holding check failed")
-        totals = connection.execute(
-            "SELECT c.claim_id, c.fee_bps, "
-            "SUM(r.recovered_cents) AS recovered, "
-            "SUM(p.fee_cents) AS fees "
-            "FROM claims c JOIN receipts r ON r.claim_id = c.claim_id "
-            "JOIN postings p ON p.receipt_key = r.receipt_key "
-            "GROUP BY c.claim_id, c.fee_bps"
-        ).fetchall()
-        for row in totals:
-            expected = (
-                row['recovered'] * row['fee_bps'] + 5000
-            ) // 10000
-            if row['fees'] != expected:
-                raise ValueError("Cumulative fee rounding check failed")
-    return {
-        "storage": "passed",
-        "allocation": "passed",
-        "cumulative_fee_arithmetic": "passed"
-    }
-''',
-                        "Checks detect stored inconsistency but do not replace evidence authentication",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Run evidence-to-cash production with explicit human handoffs",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Run intake as a controlled document acquisition job. The owner signs "
-                    "a lane-specific engagement, records the client entity and authorized "
-                    "representative, and delegates extraction to a contractor with read-only "
-                    "access. Pull Form 7501 entry summaries, entry-line duty amounts, "
-                    "commercial invoices, export bills of lading, and inventory movements "
-                    "for customs work. Pull covered-period accounts-payable detail, supplier "
-                    "identifiers, invoices, and merchant processor statements for settlement "
-                    "work. Carrier files use EDI billing feeds or authorized exports, "
-                    "with customer contracts attached before any service-level rule runs. "
-                    "Normalize dates, currencies, units, entry numbers, and entity names "
-                    "without overwriting the originals. Hash raw bytes before transformation "
-                    "and record parser version, row counts, rejected rows, and control "
-                    "totals. For a 2,000-entry customs extract, reconcile total duty by "
-                    "entry against the client's source report before testing eligibility. "
-                    "If 40 records lack line-level duty breakdown, quarantine those records "
-                    "rather than applying an average rate. Aggregate exception totals "
-                    "still remain visible to the client. A second reviewer samples source "
-                    "images against parsed values, then expands review when systematic "
-                    "errors appear. Reserve entitlement keys only after identifying "
-                    "duplicate submissions, predecessor entities, prior agents, and earlier "
-                    "refunds that could consume the same recoverable amount."
-                ),
-                (
-                    "The licensed reviewer next converts documentary potential into a "
-                    "filing decision. For drawback, verify the statutory route, import "
-                    "and export dates, merchandise trace, substitution restrictions, "
-                    "transfer rights, and required certifications. Section 1313 and "
-                    "19 CFR Part 190 impose claim-specific conditions; the five-year "
-                    "window is not permission to replace missing export evidence with "
-                    "a shipping forecast. For tariff corrections, inspect liquidation "
-                    "status immediately before submission, apply current PSC program "
-                    "limits, and separately calendar the applicable § 1514 protest "
-                    "deadline. A missed protest deadline is not repaired by renaming "
-                    "the file as drawback. For settlements, reconcile claimed purchases "
-                    "to the relevant class period and entities, check exclusions and "
-                    "prior releases, and follow the controlling court-approved claim "
-                    "form. Third-party filing permissions and disclosures vary by "
-                    "proceeding; never reuse another settlement's authorization language "
-                    "without checking it. Each reviewer returns accepted amounts, "
-                    "excluded amounts, reasons, and documentary citations. The owner "
-                    "then updates the fee forecast and work budget. A prospective "
-                    "$15,000 tariff fee with $2,300 of outside costs remains attractive "
-                    "only if the claim is timely and supported. Remove unsupported "
-                    "principal before calculating the contingency, rather than booking "
-                    "a full fee and hiding the defect in a generalized reserve."
-                ),
-                (
-                    "After submission, manage exceptions as dated tasks with accountable "
-                    "owners. Store the broker transaction reference, administrator claim "
-                    "identifier, submission timestamp, attachments, and acknowledgment "
-                    "digest. A rejection is a new evidence task, not a successful "
-                    "filing event. Track CBP information requests, settlement deficiencies, "
-                    "bond headroom, and payment notices separately from marketing "
-                    "activity. A weekly aging report distinguishes evidence preparation, "
-                    "accepted filing, adjudication, payment announced, client credited, "
-                    "and fee collected. For accelerated drawback, model possible "
-                    "repayment exposure and audit holds instead of treating provisional "
-                    "cash as final adjudication. The owner matches each recovery "
-                    "notice to the client's bank evidence and the fee invoice; "
-                    "a contractor independently checks amount, entity, currency, "
-                    "and duplicate references. Only then release the ledger posting "
-                    "under the stated revenue policy. Close the file after final "
-                    "distribution status is established and every held receipt is "
-                    "resolved. Preserve drawback records under 19 CFR § 190.15 "
-                    "and applicable related requirements, with a documented retention "
-                    "clock and deletion hold for unresolved matters. Monthly review "
-                    "compares realized fees per analyst hour across the three lanes. "
-                    "Shift acquisition toward better evidence quality, not toward "
-                    "claims whose principal looks large but whose collection path "
-                    "remains speculative."
-                ),
-            ],
-            "table": {
-                "caption": "Evidence-to-Cash Handoff and Exception Ownership Matrix",
-                "headers": [
-                    "Production handoff and accountable role",
-                    "Required evidence and acceptance test",
-                    "Concrete unit calculation or control",
-                    "Failure response and next action",
-                ],
-                "rows": [
-                    [
-                        "Owner accepts engagement and confirms client authorization scope",
-                        "Signed terms identify fee trigger, external costs, and filing permissions",
-                        "A 30% contingency produces $6,000 from $20,000 realized recovery",
-                        "Stop access requests until entity authority and engagement terms match",
-                    ],
-                    [
-                        "Extraction contractor acquires authorized source records without write access",
-                        "Preserve original files, content digests, row counts, and extraction timestamps",
-                        "Reconcile 2,000 entry records before evaluating individual recovery theories",
-                        "Quarantine forty incomplete entries instead of estimating their duty components",
-                    ],
-                    [
-                        "Evidence analyst reserves entitlement keys across overlapping recovery theories",
-                        "Compare prior claims, refunds, assignments, and predecessor entity relationships",
-                        "Subtract $10,000 previously refunded before estimating remaining eligible duties",
-                        "Resolve competing agents and assignments before proposing another submission",
-                    ],
-                    [
-                        "Licensed broker or trade counsel determines formal customs filing route",
-                        "Verify Part 190 evidence and current liquidation or correction status",
-                        "A $50,000 supported refund supports $15,000 fees before outside costs",
-                        "Exclude barred duties and stop filings after an unrecoverable deadline",
-                    ],
-                    [
-                        "Settlement specialist packages purchases under the controlling court documents",
-                        "Match class definition, covered period, claimant identity, and filer disclosures",
-                        "Covered purchase dollars establish evidence rather than recognized operator revenue",
-                        "Resolve deficiency notices without inventing purchase records or distribution estimates",
-                    ],
-                    [
-                        "Owner tracks external acknowledgments and assigns dated deficiency responses",
-                        "Capture broker references, administrator identifiers, and accepted submission evidence",
-                        "An attempted upload contributes zero dollars to collected fee revenue",
-                        "Investigate ambiguous acceptance before retrying any outward-facing submission",
-                    ],
-                    [
-                        "Independent reviewer matches recovery, client credit, and fee collection evidence",
-                        "Tie payer notice and bank records to one unique recovery receipt",
-                        "Allocate $20,000 recovery into $6,000 fees and $14,000 client share",
-                        "Hold unmatched receipts and investigate duplicates before releasing ledger postings",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before external submission",
-                "body": (
-                    "The filing packet advances only when the designated reviewer "
-                    "has documented each of these four checks."
-                ),
-                "items": [
-                    "Confirm the exact § 1313 route or § 1514/PSC procedure, live deadline, duty exclusions, and absence of overlapping recovery.",
-                    "Confirm licensed customs representation, valid powers of attorney, required claimant rights, and any accelerated-payment bond capacity.",
-                    "Confirm court-specific settlement eligibility, authorized filer access, required third-party disclosures, and the direct-filing zero-cost option.",
-                    "Confirm source control totals, original-document digests, entitlement uniqueness, external submission reference policy, and independent payment matching.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Acquire and reconcile evidence",
-                    "action": "Extract authorized source files and reconcile control totals before scoring.",
-                    "detail": "Preserve raw bytes, hash each packet, quarantine incomplete rows, and reserve the economic entitlement once.",
-                },
-                {
-                    "step": 2,
-                    "title": "Verify the correct recovery route",
-                    "action": "Send the prepared packet to the appropriately authorized specialist.",
-                    "detail": "Record accepted principal, excluded components, controlling authority, deadlines, fee economics, and reviewer evidence.",
-                },
-                {
-                    "step": 3,
-                    "title": "Submit and resolve deficiencies",
-                    "action": "Capture actual broker or administrator acceptance before advancing filing state.",
-                    "detail": "Assign response owners and dates; investigate ambiguous external acceptance before permitting another submission.",
-                },
-                {
-                    "step": 4,
-                    "title": "Match payment and close the ledger",
-                    "action": "Independently reconcile recovery notices, client credit, and earned fee collection.",
-                    "detail": "Release held receipts atomically, verify cumulative rounding, post complete period costs, and preserve the required record trail.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Walk a mature 90-day cohort without disguising opening inventory",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The worked quarter represents a mature Base operation, not a "
-                    "promise that a new firm collects a full year's economics in "
-                    "ninety days. It opens with $75,000 of supported contingent fees "
-                    "in an existing collection pipeline, none previously recognized "
-                    "under the example's cash-triggered terms. That inventory pays "
-                    "$30,000 in Month 1, $30,000 in Month 2, and $15,000 in "
-                    "Month 3. Three new lead cohorts each begin with 24 prospects, "
-                    "produce eight signed engagements, and lose two engagements during "
-                    "eligibility and evidence scrubs, leaving six accepted files. "
-                    "Each accepted cohort contains two drawback files, two tariff "
-                    "files, and two settlement files. Accepted estimated fees total "
-                    "$42,916.67, $42,916.67, and $42,916.66 respectively; these are "
-                    "pipeline estimates rather than receivables. At a uniform illustrative "
-                    "30% contingency, the combined $128,750 fee potential corresponds "
-                    "to $429,166.67 of estimated client recovery, subject to "
-                    "claim-level cent rounding. Every rejected file retains its "
-                    "exclusion reason. The quarter's $24,000 of scrubbed fee potential "
-                    "is removed before these accepted totals, and it creates no "
-                    "recognized revenue reversal. This opening inventory distinction "
-                    "is essential because ordinary customs and settlement timelines "
-                    "can extend well beyond the cohort observation period."
-                ),
-                (
-                    "Month 1 collects only the $30,000 opening-pipeline payment; "
-                    "newly signed Month 1 files contribute nothing immediately. "
-                    "Month 2 collects another $30,000 from opening inventory "
-                    "plus $12,000 from Month 1's already-actionable tariff and "
-                    "settlement files. Month 3 collects the remaining $15,000 "
-                    "opening balance, $20,000 from Month 1, and $21,750 from "
-                    "Month 2. The new-cohort receipts therefore total $53,750, "
-                    "while opening inventory supplies $75,000. No Month 3 "
-                    "engagement pays inside the quarter. Fast-paying files "
-                    "assume existing eligible correction opportunities or settlement "
-                    "distributions already approaching payment; they do not assume "
-                    "newly filed litigation or ordinary drawback claims settle "
-                    "within weeks. Accepted fee potential remaining at day "
-                    "ninety is $10,916.67 from Month 1, $21,166.67 from "
-                    "Month 2, and $42,916.66 from Month 3, totaling "
-                    "$75,000. That closing pipeline replaces the opening "
-                    "amount, but comparable dollars alone do not establish "
-                    "comparable quality. Compare lane mix, deadline slack, "
-                    "document completeness, bond restrictions, and expected "
-                    "payment dates before using it as next quarter's starting "
-                    "assumption. Delayed claims stay in aging inventory; "
-                    "denied claims leave the forecast with an explicit "
-                    "reason and without imaginary fee collections."
-                ),
-                (
-                    "Quarterly cash fees are $128,750, exactly one quarter "
-                    "of the $515,000 Base annual revenue. Costs are "
-                    "$23,604.17, $23,604.17, and $23,604.16, totaling "
-                    "$70,812.50 and annualizing to $283,250. Owner profit "
-                    "is consequently $57,937.50 for the quarter and "
-                    "$231,750 annually, maintaining the canonical 45.0% "
-                    "margin. For planning, allocate quarterly costs to "
-                    "$18,000 recurring operating overhead, $36,000 broker "
-                    "and specialist production, $12,000 acquisition, and "
-                    "$4,812.50 evidence retrieval, insurance, and closing "
-                    "support. These illustrative buckets are mutually "
-                    "exclusive; the $6,000 monthly recurring overhead fits "
-                    "the supplied $1,500–$9,500 monthly opex range, whereas "
-                    "total scorecard costs also include variable delivery "
-                    "and acquisition spending. The Base team remains one "
-                    "full-time owner plus three contractors, with broker "
-                    "and specialist invoices included rather than silently "
-                    "adding employees. Cumulative operating cash contribution "
-                    "is $6,395.83, $24,791.66, and $57,937.50. These "
-                    "balances exclude startup capital, financing, owner "
-                    "draws, and personal taxes. Losing the entire opening "
-                    "pipeline would reduce quarter fees to $53,750 and "
-                    "produce a $17,062.50 operating shortfall at unchanged "
-                    "costs. Do not annualize Month 3's $56,750 receipt "
-                    "spike; annualize the reconciled quarter only under "
-                    "an explicit repeatability assumption."
-                ),
-            ],
-            "table": {
-                "caption": "Worked 90-Day Cohort Walk",
-                "headers": [
-                    "Cohort or reconciliation component",
-                    "Month 1 operating movement and cash",
-                    "Month 2 operating movement and cash",
-                    "Month 3 operating movement and quarter bridge",
-                ],
-                "rows": [
-                    [
-                        "Opening pipeline contains $75,000 contingent fees, previously unrecognized",
-                        "Collect $30,000 fees; retain $45,000 opening inventory",
-                        "Collect $30,000 fees; retain $15,000 opening inventory",
-                        "Collect $15,000 fees; opening inventory finishes fully collected",
-                    ],
-                    [
-                        "Month 1 cohort begins with 24 prospects and eight engagements",
-                        "Scrub two files and $8,000 potential; accept six files totaling $42,916.67",
-                        "Collect $12,000 fees; accepted cohort balance becomes $30,916.67",
-                        "Collect $20,000 fees; cohort closes with $10,916.67 potential",
-                    ],
-                    [
-                        "Month 2 cohort begins with 24 prospects and eight engagements",
-                        "Acquisition preparation only; this cohort contributes zero collected fees",
-                        "Scrub two files and $7,500 potential; accept six files totaling $42,916.67",
-                        "Collect $21,750 fees; cohort closes with $21,166.67 potential",
-                    ],
-                    [
-                        "Month 3 cohort begins with 24 prospects and eight engagements",
-                        "This future cohort contributes zero engagements or fee collections",
-                        "Prepare target accounts; this future cohort contributes zero fee collections",
-                        "Scrub two files and $8,500 potential; accept six files totaling $42,916.66, collecting zero",
-                    ],
-                    [
-                        "Fee collections exclude all client recovery principal and uncollected estimates",
-                        "Total collected operator fees equal exactly $30,000",
-                        "Total collected operator fees equal exactly $42,000",
-                        "Collect $56,750; quarterly $128,750 multiplied by four equals $515,000",
-                    ],
-                    [
-                        "Complete operating costs include recurring overhead and variable production",
-                        "Pay $23,604.17 costs, including allocated specialist and acquisition spending",
-                        "Pay $23,604.17 costs, including allocated specialist and acquisition spending",
-                        "Pay $23,604.16; quarterly $70,812.50 multiplied by four equals $283,250",
-                    ],
-                    [
-                        "Owner profit equals fee collections less complete operating costs",
-                        "Earn $6,395.83; cumulative operating cash contribution equals $6,395.83",
-                        "Earn $18,395.83; cumulative operating cash contribution equals $24,791.66",
-                        "Earn $33,145.84; cumulative $57,937.50 annualizes to $231,750",
-                    ],
-                    [
-                        "Closing accepted pipeline tracks potential fees without recognizing revenue",
-                        "Carry $87,916.67 across opening inventory and accepted Month 1 files",
-                        "Carry $88,833.34 after collections and accepted Month 2 additions",
-                        "Carry $75,000; six scrubbed files removed $24,000 prospective fees",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Reserve the entitlement once, prove the recovery twice, and recognize only the fee you have actually earned.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Create separate drawback, tariff-correction/protest, and settlement queues with lane-specific evidence, deadlines, costs, and payment assumptions.",
-        "Execute lane-specific engagements and required customs powers of attorney, then document licensed filing responsibility and court-specific third-party disclosures.",
-        "Normalize authorized entry, export, carrier, and purchase records while retaining original bytes, hashes, control totals, and globally reserved entitlement keys.",
-        "Implement the six ledger modules in a controlled project, then test concurrent writers, duplicate replays, ambiguous submissions, and backup restoration before live use.",
-        "Match each recovery to client credit and fee collection evidence, release ledger postings atomically, and reconcile complete period costs against earned fees.",
-        "Reproduce the $128,750 quarterly fee bridge, $70,812.50 cost bridge, and $75,000 closing pipeline without counting client principal or speculative distributions as revenue.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "19 U.S.C. § 1313 — Drawback and refunds",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1313",
-            "relevance": "Defines drawback routes, recovery limitations, substitution conditions, and applicable timing requirements; eligibility is route-specific.",
-        },
-        {
-            "title": "19 U.S.C. § 1514 — Protest against decisions of Customs Service",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1514",
-            "relevance": "Controls protestable customs decisions and generally requires protests within 180 days of the relevant liquidation or decision.",
-        },
-        {
-            "title": "19 U.S.C. § 1677h — Drawback treatment",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1677h",
-            "relevance": "Bars drawback of antidumping and countervailing duties imposed under the relevant statutory provisions.",
-        },
-        {
-            "title": "19 CFR § 111.2 — License and permit requirements",
-            "url": "https://www.ecfr.gov/current/title-19/section-111.2",
-            "relevance": "Establishes customs-broker license and permit requirements and exceptions; the operating model routes formal customs work through authorized professionals.",
-        },
-        {
-            "title": "19 CFR § 141.46 — Power of attorney retained by customhouse broker",
-            "url": "https://www.ecfr.gov/current/title-19/section-141.46",
-            "relevance": "Addresses broker retention of powers of attorney supporting authorized customs transactions.",
-        },
-        {
-            "title": "19 CFR § 190.15 — Recordkeeping",
-            "url": "https://www.ecfr.gov/current/title-19/section-190.15",
-            "relevance": "Sets drawback recordkeeping requirements that determine evidence preservation and the applicable retention clock.",
-        },
-        {
-            "title": "19 CFR § 190.51 — Completion of drawback claims",
-            "url": "https://www.ecfr.gov/current/title-19/section-190.51",
-            "relevance": "Specifies drawback claim completion requirements and the filing period measured from importation, subject to the regulation's provisions.",
-        },
-        {
-            "title": "19 CFR § 190.92 — Accelerated payment",
-            "url": "https://www.ecfr.gov/current/title-19/section-190.92",
-            "relevance": "Governs accelerated drawback payment, including application, bonding, and related operating conditions.",
-        },
-        {
-            "title": "Federal Rule of Civil Procedure 23(e) — Settlement, voluntary dismissal, or compromise",
-            "url": "https://www.law.cornell.edu/rules/frcp/rule_23",
-            "relevance": "Provides the class-settlement approval framework; the controlling court orders and administrator instructions supply proceeding-specific claim and filer requirements.",
-        },
-    ],
-}
+CHAPTER_7 = {'id': 'Q7',
+ 'chapter_id': 'Q7',
+ 'chapter_number': 7,
+ 'question_number': 7,
+ 'slug': 'hts-classification-getting-the-code-right',
+ 'question_prompt': 'How do I classify goods correctly under the HTSUS so I pay the right duty and avoid '
+                    'costly errors?',
+ 'kicker': 'Q7 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'HTS Classification: Getting the Code Right Before It Costs You',
+ 'subtitle': 'HS/HTSUS structure, GRI-based step-by-step classification, calculating duties from HTS '
+             "codes, recent CBP rulings, catching classification mistakes, why supplier codes can't be "
+             'trusted, and CBP Ruling HQ 350722 on AI classification tools',
+ 'layout_template': 'thirty_day_roadmap',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners converge on one rule: customs classifies by material, function, '
+                      'construction, and use, never by product name, and the importer of record owns the '
+                      'code and the penalty exposure no matter who supplied it. The mechanics are '
+                      'concrete: duty is set at the 8th digit, the last two are statistical, GRIs are '
+                      'applied in order with legal notes read first, and at least three candidate headings '
+                      "are logged with reasons for elimination. Supplyia's worked umbrella math lands "
+                      '$697.14 duty on 5,000 units at $2, while Shipping Solutions shows a 0% base line '
+                      'carrying eight possible Chapter 99 overlays. The friction points: Supplyia treats '
+                      'Google and supplier codes as starting leads, while Star USA calls CROSS-first '
+                      "research a fool's errand and vendor codes no excuse, and KYG Trade flags CBP "
+                      'treating 10-digit AI output as licensed customs business.',
+ 'key_metrics': [{'label': 'Duty-Setting Digit Position',
+                  'metric': 'Duty-Setting Digit Position',
+                  'value': '8th digit of a 10-digit HTSUS code',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Form 7501 carries all 10 digits, but the duty rate is set at the 8th digit; '
+                             'the last two are statistical.',
+                  'source': 'Star USA, Inc. ([-v_-OQnVlxE @ 01:01:37])'},
+                 {'label': 'Worked Umbrella Duty Total',
+                  'metric': 'Worked Umbrella Duty Total',
+                  'value': '$697.14 on 5,000 umbrellas at $2 each',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Total duty calculated in a live lookup walkthrough, including MPF and HMF.',
+                  'source': 'Supplyia Sourcing ([ff_P7M6LKEo @ 00:14:41])'},
+                 {'label': 'Merchandise Processing Fee Range',
+                  'metric': 'Merchandise Processing Fee Range',
+                  'value': '.3464%, minimum about $26, maximum $508',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'MPF stated as applying to both air and ocean shipments on top of base duty.',
+                  'source': 'Supplyia Sourcing ([ff_P7M6LKEo @ 00:04:24])'},
+                 {'label': 'One-Detail Duty Swing',
+                  'metric': 'One-Detail Duty Swing',
+                  'value': 'About 2.9% vs 7.2%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'A single-wall stainless steel bottle versus a vacuum-insulated flask, '
+                             'showing how one construction detail moves the rate.',
+                  'source': 'USA Customs Clearance ([MfmhZLeMz2w @ 00:02:33])'}],
+ 'sections': [{'section': 1,
+               'title': 'The Practitioner Consensus',
+               'paragraphs': ['Every practitioner who touched the question lands in the same place: '
+                              'customs does not classify a product by what you call it. USA Customs '
+                              'Clearance says customs looks at material, function, manufacture, complete '
+                              'or unfinished state, packaging, and intended use rather than the product '
+                              'name, and that one small detail can flip the code [MfmhZLeMz2w @ 00:01:04]. '
+                              'The Procurement Lens is blunter, saying customs ignores marketing '
+                              'descriptions and brand names, so the first job is locking down an accurate '
+                              'product description because a material difference changes both the code and '
+                              'the duty [4IEk0Lxmf1c @ 00:04:30]. Straightforward ITC lists the facts that '
+                              'actually move the needle as materials, construction, function, design, '
+                              'components, principal use, and presentation, and warns that small factual '
+                              'differences can change classification [CcVyqKoA9dY @ 00:00:52]. Joe Harper '
+                              'of Star USA builds the whole workflow on that foundation: know the product '
+                              'through composition, function, use, drawings, bill of materials, and '
+                              'in-house experts before listing a single candidate heading, then read the '
+                              'notes and only then apply the GRIs [HbhpILTp9v0 @ 00:41:08]. The operator '
+                              'takeaway is that the spec sheet comes before the search bar, and anyone '
+                              'classifying from a product title is guessing.',
+                              'The second point of agreement is that the code is not a label, it is the '
+                              'switchboard for every cost and control on the entry. USA Customs Clearance '
+                              'ties it to agency requirements, special programs, quotas, and AD/CVD, and '
+                              'warns that underpaying creates larger problems later than overpaying does '
+                              '[MfmhZLeMz2w @ 00:02:50]. Steve Fodor, a broker for more than 30 years, '
+                              'puts the liability squarely on the importer of record, with civil and '
+                              'criminal exposure, and calls misclassification the most frequent import '
+                              'error [Exy48YwwPtk @ 00:05:14]. Michael D. Eastston of Star USA states it '
+                              'in one line, importers are responsible for classifying their goods, and '
+                              'frames the duty rate as a result of the classification rather than the '
+                              'starting point [-v_-OQnVlxE @ 00:40:34]. Joe Harper closes the escape hatch '
+                              'everyone reaches for: customs does not care if the vendor gave you the '
+                              'wrong HTS, it cares that you use the right one [HbhpILTp9v0 @ 00:56:12]. '
+                              'Put together, the consensus is that there is no one to hide behind. The '
+                              'broker, the supplier, and the software vendor all hand you a number, but '
+                              'the importer owns the number, the duty math attached to it, and the penalty '
+                              'exposure when an audit lands.',
+                              'Third, the practitioners agree on what does not work as a method. '
+                              'Straightforward ITC opens with the supplier-provided code and answers '
+                              'whether you can use it with "not necessarily," then lists the pitfalls: '
+                              "relying on the supplier's code, reusing stale codes, picking by keyword "
+                              'search, and assuming lookalike products classify the same [CcVyqKoA9dY @ '
+                              '00:00:00]. The Procurement Lens flags the same traps, adding generic codes '
+                              'chosen because they are easy to find and ignoring tariff updates '
+                              '[4IEk0Lxmf1c @ 00:03:44]. What does work is the legal sequence: Eastston '
+                              'says apply the GRIs in order and read section and chapter notes first '
+                              '[-v_-OQnVlxE @ 00:26:14]. Cole International adds the endgame: understand '
+                              'the HS notes, then have a licensed broker or customs attorney request a '
+                              'binding ruling before importing, which the firm calls "the definitive '
+                              'assessment" [x-SDVKIzJdI @ 00:02:26]. Nobody in this group treats a '
+                              'search-engine hit or a supplier invoice as an answer; at best they are '
+                              "leads to be tested against the schedule's own legal text. The baseline "
+                              'prerequisites are therefore a full product fact file, the GRIs and legal '
+                              'notes applied in order, a current tariff version, and a ruling in hand '
+                              'whenever the heading is genuinely in doubt.'],
+               'table': {'caption': 'Where the practitioners agree: the baseline rules of HTS '
+                                    'classification',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Say',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Classify on product facts, never on product names',
+                                   'Customs weighs material, function, manufacture, finished state, '
+                                   'packaging, and intended use',
+                                   'Build the full spec sheet before opening any tariff search tool',
+                                   'USA Customs Clearance ([MfmhZLeMz2w @ 00:01:04])'],
+                                  ['Marketing copy and brand names carry zero classification weight',
+                                   'Customs ignores marketing descriptions; a material difference changes '
+                                   'both code and duty',
+                                   'Lock down an accurate technical product description as step one',
+                                   'The Procurement Lens ([4IEk0Lxmf1c @ 00:04:30])'],
+                                  ['The importer of record carries the legal liability for the code',
+                                   'Civil and criminal exposure; misclassification is the most frequent '
+                                   'import error',
+                                   'Ownership of the code cannot be outsourced to a broker or supplier',
+                                   'Steve Fodor ([Exy48YwwPtk @ 00:05:14])'],
+                                  ['Vendor-supplied codes are never a valid defense when customs reviews',
+                                   'Customs does not care if the vendor gave you the wrong HTS',
+                                   'Verify every supplier code independently before it reaches an entry',
+                                   'Star USA, Inc. ([HbhpILTp9v0 @ 00:56:12])'],
+                                  ['Keyword search and stale codes are recognized classification traps',
+                                   'Supplier codes, reused stale codes, keyword picks, and lookalike '
+                                   'assumptions all fail',
+                                   'Re-run the classification whenever product facts or tariff versions '
+                                   'change',
+                                   'Straightforward ITC ([CcVyqKoA9dY @ 00:00:52])'],
+                                  ['GRIs and legal notes govern the analysis in strict order',
+                                   'Apply the GRIs in order and read section and chapter notes first',
+                                   'Treat legal notes as binding text that overrides loose word matching',
+                                   'Star USA, Inc. ([-v_-OQnVlxE @ 00:26:14])'],
+                                  ['Binding rulings settle genuinely uncertain classifications before '
+                                   'goods ship',
+                                   'A professionally requested binding ruling is the definitive assessment '
+                                   'before importing',
+                                   'Request rulings for new products where materials or function are '
+                                   'borderline',
+                                   'Cole International ([x-SDVKIzJdI @ 00:02:26])']]}},
+              {'section': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Start with the anatomy, because that is where duty actually lives. USA '
+                              'Customs Clearance describes the code as an address: the first six digits '
+                              'are international, the US adds more, and most products use 10 digits '
+                              "[MfmhZLeMz2w @ 00:02:03]. Steve Fodor walks a men's polyester woven shirt "
+                              'through it at 6205.30.2030, reading digits five through eight as the '
+                              'subheading and treating the last two as statistical with no duty impact '
+                              '[Exy48YwwPtk @ 00:28:23]. Joe Harper of Star USA puts the same point in '
+                              'operator terms: the 8th digit is the tariff item that carries the duty '
+                              'rate, while the 10th digit is statistical [HbhpILTp9v0 @ 00:14:13]. Michael '
+                              'D. Eastston confirms how that plays out on paper, with Form 7501 carrying '
+                              'all 10 digits but duty set at the 8th [-v_-OQnVlxE @ 01:01:37]. The '
+                              'practical consequence is a two-stage check. The first eight digits decide '
+                              'what you pay, so that is where the hardest research belongs, and a wrong '
+                              'call there flows straight into the duty bill. The last two digits still '
+                              'have to be right because the entry carries the full code, but an error '
+                              'there will not change the rate you are assessed on the line.',
+                              'For the lookup itself, Supplyia Sourcing runs an umbrella through a '
+                              'four-source funnel, using Google, the supplier, the freight forwarder, or '
+                              'the ITC database to find chapter and heading, then matching descriptions on '
+                              'material, construction, performance, and function; a travel umbrella at '
+                              '66032030 comes back free while a garden umbrella sits at 6.5% [ff_P7M6LKEo '
+                              '@ 00:10:43]. The same walkthrough stacks the fees: MPF at .3464% on air and '
+                              'ocean with a minimum of about $26 and a maximum of $508, plus HMF at 0.125% '
+                              'on ocean only, and the worked result of 5,000 umbrellas at $2 lands at a '
+                              'total duty of $697.14 including MPF and HMF [ff_P7M6LKEo @ 00:14:41]. '
+                              'Shipping Solutions shows why the base rate misleads: a semiconductor line '
+                              'shows a default 0%, but eight Chapter 99 tariffs may apply depending on '
+                              'source, material, and destination [_I3v11oKRLA @ 00:02:09]. On the '
+                              'China-to-US pull, that tool flagged Section 122 at 10% additional for all '
+                              'countries and Section 301 at 50% on China, with 9903.91.02 declared on top '
+                              'of the base code [_I3v11oKRLA @ 00:03:45]. The operator rule: never quote a '
+                              'landed cost off the default rate alone; stack the Chapter 99 overlays and '
+                              'the port fees first.',
+                              'Research discipline is where the senior brokers spend their airtime. Jo '
+                              "Harper's method is to consider at least three headings and document the "
+                              'reasoning, keeping a log of the headings considered, why each was '
+                              'eliminated, and the details that drove the final pick [ygZWIWKWe4w @ '
+                              '00:48:03]. Eastston adds a version-control step: record the HTSUS revision '
+                              'number used for each analysis, so the file shows which schedule the call '
+                              "was made against [-v_-OQnVlxE @ 00:39:58]. Harper's earlier webinar adds "
+                              'program controls: defined roles, sales-team escalation, periodic audits, '
+                              'vendor HTS checks, a central database, and involvement in engineering, '
+                              'along with a flat warning not to take the first CROSS hit [BwGDeEGn1Wg @ '
+                              '00:57:31]. Steve Fodor backs the paper trail from the liability side, '
+                              'telling importers to document everything, audit their classifications, and '
+                              "get rulings [Exy48YwwPtk @ 00:37:10]. Fodor's framing is that the importer "
+                              'of record cannot simply hand the job to a broker; reasonable care means the '
+                              "importer's own file has to show the work. The working system is a central "
+                              'product database, a written heading-elimination log, the tariff revision '
+                              'stamped on every file, periodic audits, and a ruling wherever the call is '
+                              'close. When customs asks why, that log is the answer.'],
+               'table': {'caption': 'Street numbers and tools operators run on every classification',
+                         'headers': ['Mechanic or Tool',
+                                     'Exact Number or Rule Stated',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Merchandise Processing Fee (MPF) on formal entries',
+                                   '.3464% on air and ocean, minimum about $26, maximum $508',
+                                   'Add to every landed-cost model alongside the base duty rate',
+                                   'Supplyia Sourcing ([ff_P7M6LKEo @ 00:04:24])'],
+                                  ['Harbor Maintenance Fee (HMF) on ocean freight',
+                                   '0.125% applied to ocean shipments only, never to air',
+                                   'Layer onto ocean entries and leave off air shipment calculations',
+                                   'Supplyia Sourcing ([ff_P7M6LKEo @ 00:04:45])'],
+                                  ['De minimis threshold on commercial invoice value',
+                                   'A $500 sample paid no duty; invoices over $800 pay duty',
+                                   'Check invoice value before assuming a shipment clears duty free',
+                                   'Supplyia Sourcing ([ff_P7M6LKEo @ 00:03:41])'],
+                                  ['Chapter 99 overlay check on a 0% base line',
+                                   'Default 0% semiconductor line showed eight possible Chapter 99 tariffs',
+                                   'Run the import-controls lookup by origin before quoting any rate',
+                                   'Shipping Solutions ([_I3v11oKRLA @ 00:02:09])'],
+                                  ['Section 301 and Section 122 stacking from China',
+                                   'Section 301 at 50% on China via 9903.91.02; Section 122 adds 10%',
+                                   'Declare the Chapter 99 number in addition to the base code',
+                                   'Shipping Solutions ([_I3v11oKRLA @ 00:03:45])'],
+                                  ['Duty-bearing digit versus statistical digits on the entry',
+                                   'Duty is set at the 8th digit; Form 7501 carries all 10',
+                                   'Concentrate the hardest research on the first eight digits',
+                                   'Star USA, Inc. ([-v_-OQnVlxE @ 01:01:37])'],
+                                  ['One construction detail swinging the duty rate',
+                                   'Single-wall stainless bottle about 2.9% versus vacuum-insulated flask '
+                                   '7.2%',
+                                   'Confirm construction details on the spec sheet before locking the code',
+                                   'USA Customs Clearance ([MfmhZLeMz2w @ 00:02:33])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Reading the Schedule Like a Broker',
+                           'body': 'The schedule punishes sloppy reading. These are the page-level habits '
+                                   'the veteran brokers use to avoid landing in the wrong line.',
+                           'items': ['Hold a ruler to the page: indentation shows the hierarchy, and you '
+                                     'never classify straight from the alphabetical index [Steve Fodor — '
+                                     'Exy48YwwPtk @ 00:13:24]',
+                                     'Treat a semicolon in the tariff text as a full stop, and read the '
+                                     'legal notes as mandatory text that must be followed [Star USA, Inc. '
+                                     '— HbhpILTp9v0 @ 00:24:50]',
+                                     'USITC search uses British wording such as "seat" and "anorak", so a '
+                                     'keyword like "chair" can miss the right line entirely [Star USA, '
+                                     'Inc. — HbhpILTp9v0 @ 00:11:19]',
+                                     'A "slash and underscore" after the rate on the lookup means added '
+                                     'tariffs apply, so run the tariff check before trusting the base '
+                                     'number [Supplyia Sourcing — ff_P7M6LKEo @ 00:11:47]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Build the Product Fact File',
+                              'action': 'Assemble composition, function, use, drawings, bill of materials, '
+                                        'and expert input before any search.',
+                              'detail': "Harper's workflow opens with knowing the product through "
+                                        'composition, function, use, drawings, BOM, and experts, then '
+                                        'listing candidate headings [Star USA, Inc. — HbhpILTp9v0 @ '
+                                        '00:41:08]'},
+                             {'step': 2,
+                              'title': 'List and Eliminate Candidate Headings',
+                              'action': 'Consider at least three headings, read section and chapter notes, '
+                                        'and apply the GRIs in order.',
+                              'detail': 'Consider at least three headings and document the reasoning for '
+                                        'each elimination [Star USA, Inc. — ygZWIWKWe4w @ 00:46:16]'},
+                             {'step': 3,
+                              'title': 'Stack the Real Duty Bill',
+                              'action': 'Pull the base rate, run the Chapter 99 overlay check by origin, '
+                                        'then add MPF and HMF.',
+                              'detail': 'A 0% default line can carry eight Chapter 99 tariffs depending on '
+                                        'source, material, and destination [Shipping Solutions — '
+                                        '_I3v11oKRLA @ 00:02:09]; MPF and HMF fold into the total, as in '
+                                        'the $697.14 umbrella result [Supplyia Sourcing — ff_P7M6LKEo @ '
+                                        '00:14:41]'},
+                             {'step': 4,
+                              'title': 'Lock and Document the Call',
+                              'action': 'Record the HTSUS revision used, file the heading log, and request '
+                                        'a ruling where the call is close.',
+                              'detail': 'Record the HTSUS revision number used for each analysis so the '
+                                        'file shows which schedule the decision was made against [Star '
+                                        'USA, Inc. — -v_-OQnVlxE @ 00:39:58]'}]},
+              {'title': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is where the hunt for a code begins. Supplyia Sourcing '
+                              'runs a fast street playbook: pull the chapter and heading from Google, the '
+                              'supplier, the freight forwarder, or the ITC database, then validate inside '
+                              'the ITC search, exactly how they landed an umbrella in 6601 and confirmed '
+                              'it [ff_P7M6LKEo @ 00:08:49] [ff_P7M6LKEo @ 00:09:37]. They pitch the whole '
+                              'lookup at about 10 minutes. Michael D. Eastston of Star USA rejects that '
+                              "foundation outright: a competitor's code is no excuse, and starting a "
+                              "novice inside CROSS is a 'fool's errand' because HQ rulings outrank NY "
+                              'rulings [-v_-OQnVlxE @ 00:08:45] [-v_-OQnVlxE @ 00:35:37]. Straightforward '
+                              'ITC sides with Eastston, warning that a code handed over by the supplier is '
+                              "'not necessarily' usable and listing reliance on the supplier's code, "
+                              'keyword-search picking, and assuming lookalike products classify the same '
+                              'as the core pitfalls [CcVyqKoA9dY @ 00:00:00] [CcVyqKoA9dY @ 00:00:52]. Joe '
+                              'Harper of Star USA supplies the alternative playbook: know the product '
+                              'through composition, function, use, drawings, BOM, and outside experts, '
+                              'list candidate headings, read the notes, then apply the GRIs [HbhpILTp9v0 @ '
+                              "00:41:08]. Harper's bottom line on vendor codes is blunt: 'Customs doesn't "
+                              'care if the vendor gave you the wrong HTS, they care that you use the right '
+                              "HTS' [HbhpILTp9v0 @ 00:56:12].",
+                              'The second fault line is who actually owns the classification. Cole '
+                              'International tells importers to put a licensed customs broker or customs '
+                              'attorney on the product and have that professional request a binding '
+                              "ruling, 'the definitive assessment,' before the goods move [x-SDVKIzJdI @ "
+                              '00:01:47] [x-SDVKIzJdI @ 00:02:26]. Steve Fodor, a broker for over 30 '
+                              "years, pushes back from inside the trade: don't just hand everything to a "
+                              "broker, read CBP's 18-page Reasonable Care checklist, and remember that the "
+                              'importer of record carries civil and criminal exposure while broker '
+                              'liability is limited to the entry fee, often $100 or less [Exy48YwwPtk @ '
+                              '00:08:30] [Exy48YwwPtk @ 00:35:38]. Eastston goes further, reporting that '
+                              'brokers are exiting classification work, that importers are responsible for '
+                              'classifying their goods, and that reasonable care is measured by procedure, '
+                              'not result [-v_-OQnVlxE @ 00:40:53] [-v_-OQnVlxE @ 00:37:54]. The KYG Trade '
+                              'panel adds a counterintuitive staffing call: importers do not need a '
+                              'licensed broker on staff, and putting one there may actually raise their '
+                              'reasonable-care bar [myOI9hprs0c @ 00:19:22]. The live choice is between '
+                              "Cole's model, where a Canada/US broker handles everything from initial "
+                              'assessment through the ruling, and the Fodor-Eastston model, where the '
+                              'importer builds and documents its own procedure, audits its '
+                              'classifications, and uses the broker as one input rather than the owner of '
+                              'the answer.',
+                              'Automated classification is the newest fight. The KYG Trade panel reads CBP '
+                              'ruling HQ 350722 as drawing a digit line: 6-digit output is acceptable, but '
+                              'CBP presumes 10-digit output is customs business that requires a license, '
+                              'and filing CF 5106 counts too [myOI9hprs0c @ 00:12:00]. Richard Wartman of '
+                              "Grunfeld Desiderio dissents on tone, saying CBP 'went a little overboard' "
+                              "on 'bad facts' involving a non-US, unlicensed platform, while the same "
+                              "panel flags that ChatGPT and Gemini are 'at least today violating this "
+                              "ruling' [myOI9hprs0c @ 00:12:47] [myOI9hprs0c @ 00:18:19]. ImageSearch for "
+                              'HS classification takes the hard line, calling prediction of 10-digit codes '
+                              "'strictly forbidden without a broker license,' arguing that hedging "
+                              'language attached to tool output fails under HQ H290535 because the '
+                              "10-digit code determines duty, and pitching the ruling as a 'global "
+                              "blueprint' [Z20K9hWki3Q @ 00:01:27] [Z20K9hWki3Q @ 00:02:56]. Their lawful "
+                              "alternative is the 'mere conduit' exemption: a neutral pipeline connecting "
+                              'importers to brokers, with POAs executed directly and confidentiality kept '
+                              'under 19 CFR 111.24. Eastston stays pragmatic: customs requires a human '
+                              'classifier, and AI is a tool rather than a substitute [-v_-OQnVlxE @ '
+                              "00:36:14]. Harper's verdict lands in the same place: 'It's a tool it's not "
+                              "the answer' [HbhpILTp9v0 @ 00:58:19]."],
+               'table': {'caption': 'Side-by-Side Playbooks Where Practitioners Split',
+                         'headers': ['Fault Line',
+                                     'Playbook A (As Argued)',
+                                     'Playbook B (As Argued)',
+                                     'Expert Source'],
+                         'rows': [['Where to source the first candidate code',
+                                   'Pull a starting code from Google, supplier, forwarder, or ITC '
+                                   'database, then validate it',
+                                   'Supplier and competitor codes are no excuse; start from tariff '
+                                   'language, notes, and GRIs',
+                                   'Supplyia Sourcing ([ff_P7M6LKEo @ 00:08:49]); Straightforward ITC '
+                                   '([CcVyqKoA9dY @ 00:00:35])'],
+                                  ['Broker as owner of the classification answer',
+                                   'Hand it to a licensed broker or customs attorney who also requests the '
+                                   'ruling',
+                                   'Never hand everything over; broker liability stops at the entry fee, '
+                                   'often $100 or less',
+                                   'Cole International ([x-SDVKIzJdI @ 00:01:47]); Steve Fodor '
+                                   '([Exy48YwwPtk @ 00:35:38])'],
+                                  ['Software predicting full 10-digit codes for importers',
+                                   'CBP went a little overboard on bad facts in HQ 350722',
+                                   'Predicting 10-digit codes is strictly forbidden without a broker '
+                                   'license, full stop',
+                                   'KYG Trade ([myOI9hprs0c @ 00:12:47]); ImageSearch for HS '
+                                   'classification ([Z20K9hWki3Q @ 00:01:27])'],
+                                  ['Number of chapters in the US tariff schedule',
+                                   'Fodor counts 22 sections and 98 chapters in the US schedule',
+                                   'Jo Harper counts 99 chapters; Joe Harper counts 21 sections and 97 '
+                                   'chapters',
+                                   'Steve Fodor ([Exy48YwwPtk @ 00:24:04]); Star USA, Inc. ([ygZWIWKWe4w @ '
+                                   '00:09:19]); Star USA, Inc. ([HbhpILTp9v0 @ 00:06:28])'],
+                                  ['Countries stuck paying the Column 2 rate',
+                                   'Only Cuba and North Korea, paying 20% in the 2021 example',
+                                   'Cuba, North Korea, Russia, and Belarus all sit in Column 2 now',
+                                   'Star USA, Inc. ([BwGDeEGn1Wg @ 00:23:49]); Star USA, Inc. '
+                                   '([ygZWIWKWe4w @ 00:25:18])'],
+                                  ['Which code goes on outbound export paperwork',
+                                   'Importers who also export can use HTS codes in both directions',
+                                   'Exports run on Schedule B, with 6 digits on commercial documents',
+                                   'Shipping Solutions ([zDnjfsml-j4 @ 00:03:24]); Star USA, Inc. '
+                                   '([HbhpILTp9v0 @ 00:59:20])'],
+                                  ['Reacting when two authorities disagree on code',
+                                   'Assume any change triggers review; change only for a foreign customs '
+                                   'ruling',
+                                   'Importer facing conflicting US and Korean rulings used dual codes '
+                                   'instead',
+                                   'Star USA, Inc. ([-v_-OQnVlxE @ 01:15:09]); Star USA, Inc. '
+                                   '([HbhpILTp9v0 @ 00:44:11])']]}},
+              {'title': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first money trap is a product detail nobody flagged. USA Customs '
+                              'Clearance shows a single-wall stainless steel bottle at about 2.9% duty '
+                              'while a vacuum-insulated flask lands at 7.2%, and warns that underpaying '
+                              'creates larger problems later than overpaying does [MfmhZLeMz2w @ 00:02:33] '
+                              '[MfmhZLeMz2w @ 00:03:07]. Supplyia Sourcing hit the same cliff with '
+                              'umbrellas: a travel umbrella under 66032030 came up free, a garden umbrella '
+                              'at 6.5%, and a slash-and-underscore after the rate signals added tariffs '
+                              'stacked on top [ff_P7M6LKEo @ 00:11:25] [ff_P7M6LKEo @ 00:11:47]. Shipping '
+                              'Solutions demonstrated how a 0% base rate misleads: the semiconductor code '
+                              'showed a default duty of 0%, yet eight Chapter 99 tariffs could apply '
+                              'depending on source, material, and destination, including a Section 122 10% '
+                              'additional duty for all countries and Section 301 at 50% on China, declared '
+                              'as 9903.91.02 on top of the base code [_I3v11oKRLA @ 00:01:24] [_I3v11oKRLA '
+                              '@ 00:03:45]. Even that demo drifted: the code chosen was 8541430010, but '
+                              'the code entered into the import-controls lookup was 8541.43.0080, and a '
+                              "Section 201 duty surfaced only if the item counted as a 'module.' The check "
+                              'Shipping Solutions models is pulling every Chapter 99 line and every Import '
+                              'Controls flag, including the Xinjiang prohibition, before quoting a landed '
+                              'cost.',
+                              'Enforcement traps hit importers who outsourced the paperwork. Supplyia '
+                              'Sourcing warns that on DDP terms suppliers may deliberately declare a lower '
+                              'invoice value, yet the importer of record stays legally responsible, and '
+                              "once audited 'you will still pay all the duty plus you will have to pay the "
+                              "fine' [ff_P7M6LKEo @ 00:02:34] [ff_P7M6LKEo @ 00:14:20]. Eastston reports "
+                              "CBP dropping 'facilitation' for 'enforcement,' a DOJ trade fraud task force "
+                              "operating on 'zero trust,' and False Claims Act reach where 'knowingly' "
+                              'covers deliberate ignorance, willful blindness, and reckless disregard '
+                              '[-v_-OQnVlxE @ 00:08:10]. On DDP undervaluation specifically, DOJ targets '
+                              'the beneficiaries, and prior disclosure covers five years of civil '
+                              'penalties but not DOJ fraud [-v_-OQnVlxE @ 00:53:26] [-v_-OQnVlxE @ '
+                              '00:50:53]. Steve Fodor calls misclassification the most frequent import '
+                              'error, notes CBP uses classification to target high-risk shipments, and '
+                              'warns that ignoring a binding ruling carries penalties [Exy48YwwPtk @ '
+                              '00:05:55] [Exy48YwwPtk @ 00:32:50]. Clark-Esposito Law Firm lists the '
+                              'downstream damage: underpayment or overpayment, fines, even seizure of the '
+                              'goods, lost preferences, and added scrutiny [8Lpn0Ae59QU @ 00:01:16]. '
+                              'Eastston plays reclassification defensively, assuming any change will '
+                              'trigger review and expecting a CBP28 request to follow.',
+                              'Search tools fail in specific, repeatable ways. Jo Harper found that a '
+                              "'chair' is listed as 'seats,' so plain-English searches miss [ygZWIWKWe4w @ "
+                              '00:26:57], and in a separate session Harper flagged British wording such as '
+                              "'seat' and 'anorak' inside USITC search [HbhpILTp9v0 @ 00:11:19]. The 2021 "
+                              'Star USA webinar adds that ad blockers can break HTS website search and '
+                              'that the first CROSS hit should never be taken as the answer [BwGDeEGn1Wg @ '
+                              '00:19:33] [BwGDeEGn1Wg @ 01:00:17]. The same session logged about 30 HTS '
+                              'updates in a year against a historical two or three, driven by Section 301 '
+                              'and 232 actions, which is why Eastston records the HTSUS revision number '
+                              'used for every analysis [BwGDeEGn1Wg @ 00:06:30] [-v_-OQnVlxE @ 00:39:58]. '
+                              'Eastston names the three biggest problems at importers as no conversations, '
+                              'no documented method, and no reviews, and notes that ACE lacks part '
+                              'numbers, so ACE reports have to be paired with broker reports that carry '
+                              "them [-v_-OQnVlxE @ 01:04:29] [-v_-OQnVlxE @ 01:08:54]. Eastston's poll "
+                              'found 69% of attendees saying they had adequate measures. Post-summary '
+                              'corrections belong inside roughly a year, a file with none looks '
+                              'suspicious, and Eastston recommends quarterly reviews, especially lately.'],
+               'table': {'caption': 'Failure Modes With Real Dollars and Penalties Attached',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Saw Go Wrong',
+                                     'Economics Or Penalty Check',
+                                     'Expert Source'],
+                         'rows': [['DDP supplier undervalues the commercial invoice',
+                                   'Supplier declares a lower invoice value on purpose under DDP terms',
+                                   'Audit brings all the duty plus a fine; DOJ targets the beneficiaries',
+                                   'Supplyia Sourcing ([ff_P7M6LKEo @ 00:02:34]); Star USA, Inc. '
+                                   '([-v_-OQnVlxE @ 00:53:26])'],
+                                  ['Forgetting processing fees in landed cost math',
+                                   'MPF runs .3464% on air and ocean; HMF 0.125% ocean only',
+                                   '5,000 umbrellas at $2 produced $697.14 total duty including MPF and '
+                                   'HMF',
+                                   'Supplyia Sourcing ([ff_P7M6LKEo @ 00:14:41])'],
+                                  ['Assuming the HTS number defines anti-dumping scope',
+                                   'AD scope turns on what the item is, not on the number',
+                                   'Check what the item physically is against scope, not just its HTS',
+                                   'Star USA, Inc. ([BwGDeEGn1Wg @ 00:10:29])'],
+                                  ['Claiming an actual-use provision without the proof',
+                                   'Actual-use classifications require proof of the use after entry',
+                                   'Proof must be shown within 3 years under 19 CFR 10.131-10.139',
+                                   'Star USA, Inc. ([BwGDeEGn1Wg @ 00:52:11])'],
+                                  ['Letting an AI platform prepare or file entries',
+                                   'Non-US unlicensed platform ran POAs, AI classification, OCR '
+                                   'population, and CF 5106',
+                                   'CBP held platforms may transmit information but not prepare or file '
+                                   'documents',
+                                   'KYG Trade ([myOI9hprs0c @ 00:09:35]); ImageSearch for HS '
+                                   'classification ([Z20K9hWki3Q @ 00:00:34])'],
+                                  ['Misclassification consequences that reach beyond the duty bill',
+                                   'Wrong code triggers fines, seizure, lost preferences, and more '
+                                   'scrutiny',
+                                   'Underpayment or overpayment of duties both cost money either way',
+                                   'Clark-Esposito Law Firm P.C. ([8Lpn0Ae59QU @ 00:01:16])'],
+                                  ['Leaving IEEPA refund money sitting uncollected at CBP',
+                                   '$166B potential refunds across 53M entries and 330,000 importers',
+                                   'Set up ACE with ACH refund, which requires a US bank account',
+                                   'KYG Trade ([myOI9hprs0c @ 00:36:26]); KYG Trade ([myOI9hprs0c @ '
+                                   '00:46:57])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Any Code Touches an Entry',
+                           'body': 'Each check traces to a loss, reversal, or enforcement action '
+                                   'practitioners reported firsthand. Clear all four before the 10-digit '
+                                   'code goes onto Form 7501, where duty is set at the 8th digit.',
+                           'items': ['Re-derive every supplier or vendor code from the tariff language, '
+                                     'notes, and GRIs, because customs only cares that you use the right '
+                                     'HTS [Star USA, Inc. — HbhpILTp9v0 @ 00:56:12].',
+                                     'On DDP shipments, verify the declared invoice value yourself, '
+                                     'because the importer of record pays all the duty plus the fine after '
+                                     'audit [Supplyia Sourcing — ff_P7M6LKEo @ 00:14:20].',
+                                     'Pull every Chapter 99 line before trusting a 0% base rate, including '
+                                     'Section 122, 301, and 201 exposure [Shipping Solutions — _I3v11oKRLA '
+                                     '@ 00:03:45].',
+                                     'Log the headings considered, why each was eliminated, and the '
+                                     'details that decided the final heading [Star USA, Inc. — ygZWIWKWe4w '
+                                     '@ 00:48:03].']}}],
+ 'pull_quote': '"Customs doesn\'t care if the vendor gave you the wrong HTS, they care that you use the '
+               'right HTS." Star USA, Inc. (HbhpILTp9v0 @ 00:56:12).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Lock down an accurate product description covering material, construction, '
+                      'function, and intended use before searching any code [The Procurement Lens — '
+                      '4IEk0Lxmf1c @ 00:04:30].',
+                      'Consider at least three candidate headings and keep a written log of why each was '
+                      'eliminated [Star USA, Inc. — ygZWIWKWe4w @ 00:46:16].',
+                      'Apply the GRIs in order, read section and chapter notes first, and follow the '
+                      'indents instead of matching words [Star USA, Inc. — -v_-OQnVlxE @ 00:26:14].',
+                      'Check every Chapter 99 tariff that may stack on the base rate by source, material, '
+                      'and destination [Shipping Solutions — _I3v11oKRLA @ 00:02:09].',
+                      'Request a CBP binding ruling whenever a classification is uncertain, before the '
+                      'goods ship [Clark-Esposito Law Firm P.C. — 8Lpn0Ae59QU @ 00:01:52].',
+                      'Run quarterly reviews pairing ACE reports with broker reports that carry part '
+                      'numbers [Star USA, Inc. — -v_-OQnVlxE @ 00:51:45].'],
+ 'statutory_citations': [{'title': 'Star USA, Inc. — HTS Classification: Catching Mistakes Before They '
+                                   'Become Costly [00:08:10]',
+                          'url': 'https://www.youtube.com/watch?v=-v_-OQnVlxE&t=490s',
+                          'relevance': 'Primary practitioner testimony on False Claims Act reach, DOJ '
+                                       'targeting, and classification process failures.'},
+                         {'title': 'KYG Trade — CBP Ruling HQ 350722 & Guardrails for AI in Trade '
+                                   'Compliance [00:12:00]',
+                          'url': 'https://www.youtube.com/watch?v=myOI9hprs0c&t=720s',
+                          'relevance': 'Primary practitioner testimony on the 6-digit versus 10-digit line '
+                                       'for AI classification platforms.'},
+                         {'title': 'Steve Fodor — HTS Classification The Most Important Step 062016 '
+                                   '[00:35:38]',
+                          'url': 'https://www.youtube.com/watch?v=Exy48YwwPtk&t=2138s',
+                          'relevance': 'Primary practitioner testimony on importer liability versus broker '
+                                       'liability capped at the entry fee.'},
+                         {'title': 'Supplyia Sourcing — HTS code lookup:  How to Calculate Duties & '
+                                   'Tariffs for U.S Imports? [00:02:34]',
+                          'url': 'https://www.youtube.com/watch?v=ff_P7M6LKEo&t=154s',
+                          'relevance': 'Primary practitioner testimony on DDP undervaluation exposure for '
+                                       'the importer of record.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'MfmhZLeMz2w',
+                       'title': 'HTS Codes Explained',
+                       'channel': 'USA Customs Clearance',
+                       'author': 'USA Customs Clearance',
+                       'text': 'A single-wall stainless steel bottle is about 2.9% duty, while a '
+                               'vacuum-insulated flask is 7.2%.',
+                       'tip': 'A single-wall stainless steel bottle is about 2.9% duty, while a '
+                              'vacuum-insulated flask is 7.2%.',
+                       'timestamp': 153,
+                       'timestamp_seconds': 153,
+                       'timestamp_label': '[00:02:33]',
+                       'url': 'https://www.youtube.com/watch?v=MfmhZLeMz2w&t=153s',
+                       'markdown': '[00:02:33](https://www.youtube.com/watch?v=MfmhZLeMz2w&t=153s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4IEk0Lxmf1c',
+                       'title': 'HS Code Explained | How Customs Classify Goods Made Simple',
+                       'channel': 'The Procurement Lens',
+                       'author': 'The Procurement Lens',
+                       'text': 'One digit can blow up your profit margins.',
+                       'tip': 'One digit can blow up your profit margins.',
+                       'timestamp': 208,
+                       'timestamp_seconds': 208,
+                       'timestamp_label': '[00:03:28]',
+                       'url': 'https://www.youtube.com/watch?v=4IEk0Lxmf1c&t=208s',
+                       'markdown': '[00:03:28](https://www.youtube.com/watch?v=4IEk0Lxmf1c&t=208s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'x-SDVKIzJdI',
+                       'title': 'Tariff Classification - A Step by Step Guide',
+                       'channel': 'Cole International',
+                       'author': 'Cole International',
+                       'text': 'Before importing, have a professional request a binding ruling, which is '
+                               'the definitive assessment.',
+                       'tip': 'Before importing, have a professional request a binding ruling, which is '
+                              'the definitive assessment.',
+                       'timestamp': 146,
+                       'timestamp_seconds': 146,
+                       'timestamp_label': '[00:02:26]',
+                       'url': 'https://www.youtube.com/watch?v=x-SDVKIzJdI&t=146s',
+                       'markdown': '[00:02:26](https://www.youtube.com/watch?v=x-SDVKIzJdI&t=146s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Exy48YwwPtk',
+                       'title': 'HTS Classification The Most Important Step 062016',
+                       'channel': 'Steve Fodor',
+                       'author': 'Steve Fodor',
+                       'text': 'Broker liability is limited to the entry fee, often $100 or less.',
+                       'tip': 'Broker liability is limited to the entry fee, often $100 or less.',
+                       'timestamp': 2138,
+                       'timestamp_seconds': 2138,
+                       'timestamp_label': '[00:35:38]',
+                       'url': 'https://www.youtube.com/watch?v=Exy48YwwPtk&t=2138s',
+                       'markdown': '[00:35:38](https://www.youtube.com/watch?v=Exy48YwwPtk&t=2138s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ygZWIWKWe4w',
+                       'title': 'HTS Classification',
+                       'channel': 'Star USA, Inc.',
+                       'author': 'Star USA, Inc.',
+                       'text': 'But always keep a log of the headings you considered, why you eliminated '
+                               'them and the details that made you select the heading that you did.',
+                       'tip': 'But always keep a log of the headings you considered, why you eliminated '
+                              'them and the details that made you select the heading that you did.',
+                       'timestamp': 2883,
+                       'timestamp_seconds': 2883,
+                       'timestamp_label': '[00:48:03]',
+                       'url': 'https://www.youtube.com/watch?v=ygZWIWKWe4w&t=2883s',
+                       'markdown': '[00:48:03](https://www.youtube.com/watch?v=ygZWIWKWe4w&t=2883s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BwGDeEGn1Wg',
+                       'title': 'HTSUS Classification Webinar',
+                       'channel': 'Star USA, Inc.',
+                       'author': 'Star USA, Inc.',
+                       'text': "Don't take the first CROSS hit.",
+                       'tip': "Don't take the first CROSS hit.",
+                       'timestamp': 3617,
+                       'timestamp_seconds': 3617,
+                       'timestamp_label': '[01:00:17]',
+                       'url': 'https://www.youtube.com/watch?v=BwGDeEGn1Wg&t=3617s',
+                       'markdown': '[01:00:17](https://www.youtube.com/watch?v=BwGDeEGn1Wg&t=3617s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ff_P7M6LKEo',
+                       'title': 'HTS code lookup:  How to Calculate Duties & Tariffs for U.S Imports?',
+                       'channel': 'Supplyia Sourcing',
+                       'author': 'Supplyia Sourcing',
+                       'text': "If you are the importer of the record, you're still legally responsible "
+                               'for whatever the amount you should pay.',
+                       'tip': "If you are the importer of the record, you're still legally responsible for "
+                              'whatever the amount you should pay.',
+                       'timestamp': 154,
+                       'timestamp_seconds': 154,
+                       'timestamp_label': '[00:02:34]',
+                       'url': 'https://www.youtube.com/watch?v=ff_P7M6LKEo&t=154s',
+                       'markdown': '[00:02:34](https://www.youtube.com/watch?v=ff_P7M6LKEo&t=154s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'B4gRBWbdUqo',
+                       'title': 'Product Classification Under HTSUS Part 1',
+                       'channel': 'Law Office of Yuri Starikov, LLC',
+                       'author': 'Law Office of Yuri Starikov, LLC',
+                       'text': "If you're wrong it's okay you can always go back see that's the strategy.",
+                       'tip': "If you're wrong it's okay you can always go back see that's the strategy.",
+                       'timestamp': 1167,
+                       'timestamp_seconds': 1167,
+                       'timestamp_label': '[00:19:27]',
+                       'url': 'https://www.youtube.com/watch?v=B4gRBWbdUqo&t=1167s',
+                       'markdown': '[00:19:27](https://www.youtube.com/watch?v=B4gRBWbdUqo&t=1167s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_I3v11oKRLA',
+                       'title': 'How to Calculate U.S. Import Tariffs (HTS Codes & Duties Explained)',
+                       'channel': 'Shipping Solutions',
+                       'author': 'Shipping Solutions',
+                       'text': 'There are 8 additional Chapter 99 tariffs that may apply to my product '
+                               "depending on the source and material composition of my goods and where I'm "
+                               'shipping to.',
+                       'tip': 'There are 8 additional Chapter 99 tariffs that may apply to my product '
+                              "depending on the source and material composition of my goods and where I'm "
+                              'shipping to.',
+                       'timestamp': 129,
+                       'timestamp_seconds': 129,
+                       'timestamp_label': '[00:02:09]',
+                       'url': 'https://www.youtube.com/watch?v=_I3v11oKRLA&t=129s',
+                       'markdown': '[00:02:09](https://www.youtube.com/watch?v=_I3v11oKRLA&t=129s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-v_-OQnVlxE',
+                       'title': 'HTS Classification: Catching Mistakes Before They Become Costly',
+                       'channel': 'Star USA, Inc.',
+                       'author': 'Star USA, Inc.',
+                       'text': 'There is only one correct classification for any given import.',
+                       'tip': 'There is only one correct classification for any given import.',
+                       'timestamp': 1416,
+                       'timestamp_seconds': 1416,
+                       'timestamp_label': '[00:23:36]',
+                       'url': 'https://www.youtube.com/watch?v=-v_-OQnVlxE&t=1416s',
+                       'markdown': '[00:23:36](https://www.youtube.com/watch?v=-v_-OQnVlxE&t=1416s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-v_-OQnVlxE',
+                       'title': 'HTS Classification: Catching Mistakes Before They Become Costly',
+                       'channel': 'Star USA, Inc.',
+                       'author': 'Star USA, Inc.',
+                       'text': 'I always assume that a change will trigger review.',
+                       'tip': 'I always assume that a change will trigger review.',
+                       'timestamp': 4276,
+                       'timestamp_seconds': 4276,
+                       'timestamp_label': '[01:11:16]',
+                       'url': 'https://www.youtube.com/watch?v=-v_-OQnVlxE&t=4276s',
+                       'markdown': '[01:11:16](https://www.youtube.com/watch?v=-v_-OQnVlxE&t=4276s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'myOI9hprs0c',
+                       'title': 'CBP Ruling HQ 350722 & Guardrails for AI in Trade Compliance',
+                       'channel': 'KYG Trade',
+                       'author': 'KYG Trade',
+                       'text': 'There still has to be human intervention.',
+                       'tip': 'There still has to be human intervention.',
+                       'timestamp': 1332,
+                       'timestamp_seconds': 1332,
+                       'timestamp_label': '[00:22:12]',
+                       'url': 'https://www.youtube.com/watch?v=myOI9hprs0c&t=1332s',
+                       'markdown': '[00:22:12](https://www.youtube.com/watch?v=myOI9hprs0c&t=1332s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'myOI9hprs0c',
+                       'title': 'CBP Ruling HQ 350722 & Guardrails for AI in Trade Compliance',
+                       'channel': 'KYG Trade',
+                       'author': 'KYG Trade',
+                       'text': "We're charging a flat fee to do it because the important thing is to get "
+                               'into court.',
+                       'tip': "We're charging a flat fee to do it because the important thing is to get "
+                              'into court.',
+                       'timestamp': 2713,
+                       'timestamp_seconds': 2713,
+                       'timestamp_label': '[00:45:13]',
+                       'url': 'https://www.youtube.com/watch?v=myOI9hprs0c&t=2713s',
+                       'markdown': '[00:45:13](https://www.youtube.com/watch?v=myOI9hprs0c&t=2713s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Z20K9hWki3Q',
+                       'title': 'The US CBP declaring an AI-based HS classification tool illegal.',
+                       'channel': 'ImageSearch for HS classification',
+                       'author': 'ImageSearch for HS classification',
+                       'text': 'General six digit HS codes are completely fine.',
+                       'tip': 'General six digit HS codes are completely fine.',
+                       'timestamp': 87,
+                       'timestamp_seconds': 87,
+                       'timestamp_label': '[00:01:27]',
+                       'url': 'https://www.youtube.com/watch?v=Z20K9hWki3Q&t=87s',
+                       'markdown': '[00:01:27](https://www.youtube.com/watch?v=Z20K9hWki3Q&t=87s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zDnjfsml-j4',
+                       'title': 'How to Use the Harmonized Tariff Schedule of the United States',
+                       'channel': 'Shipping Solutions',
+                       'author': 'Shipping Solutions',
+                       'text': 'The HTS is a 10-digit code designed so that each article falls into only '
+                               'one category.',
+                       'tip': 'The HTS is a 10-digit code designed so that each article falls into only '
+                              'one category.',
+                       'timestamp': 55,
+                       'timestamp_seconds': 55,
+                       'timestamp_label': '[00:00:55]',
+                       'url': 'https://www.youtube.com/watch?v=zDnjfsml-j4&t=55s',
+                       'markdown': '[00:00:55](https://www.youtube.com/watch?v=zDnjfsml-j4&t=55s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8Lpn0Ae59QU',
+                       'title': 'Tariffs & Classification Explained: Stay Compliant & Avoid Penalties',
+                       'channel': 'Clark-Esposito Law Firm P.C.',
+                       'author': 'Clark-Esposito Law Firm P.C.',
+                       'text': 'Incorrect classification can lead to underpayment or overpayment of '
+                               'duties, fines, or even seizure of your goods.',
+                       'tip': 'Incorrect classification can lead to underpayment or overpayment of duties, '
+                              'fines, or even seizure of your goods.',
+                       'timestamp': 76,
+                       'timestamp_seconds': 76,
+                       'timestamp_label': '[00:01:16]',
+                       'url': 'https://www.youtube.com/watch?v=8Lpn0Ae59QU&t=76s',
+                       'markdown': '[00:01:16](https://www.youtube.com/watch?v=8Lpn0Ae59QU&t=76s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CcVyqKoA9dY',
+                       'title': 'What Is an HTS Code? | U.S. Tariff Classification Explained',
+                       'channel': 'Straightforward ITC',
+                       'author': 'Straightforward ITC',
+                       'text': 'You do not classify a product simply by searching for the description that '
+                               'sounds closest.',
+                       'tip': 'You do not classify a product simply by searching for the description that '
+                              'sounds closest.',
+                       'timestamp': 35,
+                       'timestamp_seconds': 35,
+                       'timestamp_label': '[00:00:35]',
+                       'url': 'https://www.youtube.com/watch?v=CcVyqKoA9dY&t=35s',
+                       'markdown': '[00:00:35](https://www.youtube.com/watch?v=CcVyqKoA9dY&t=35s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HbhpILTp9v0',
+                       'title': 'HTSUS Classification',
+                       'channel': 'Star USA, Inc.',
+                       'author': 'Star USA, Inc.',
+                       'text': "Customs doesn't care if the vendor gave you the wrong HTS, they care that "
+                               'you use the right HTS.',
+                       'tip': "Customs doesn't care if the vendor gave you the wrong HTS, they care that "
+                              'you use the right HTS.',
+                       'timestamp': 3372,
+                       'timestamp_seconds': 3372,
+                       'timestamp_label': '[00:56:12]',
+                       'url': 'https://www.youtube.com/watch?v=HbhpILTp9v0&t=3372s',
+                       'markdown': '[00:56:12](https://www.youtube.com/watch?v=HbhpILTp9v0&t=3372s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'}]}

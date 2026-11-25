@@ -1,627 +1,882 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 1 FT + 2 C (3 people) data-mined qui tam, sec & irs whistleblower analytics team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python Evidence Pipelines, CMS and Open Payments Joins, Counsel-Controlled Seal Tracking, and Retainer-Funded Distribution",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #48, Data-Mined Qui Tam, SEC & IRS Whistleblower Analytics, ranks "
-        "#16 of 49 with a 92/100 Money-to-Manpower Score. This chapter maps 11 operator "
-        "plays into a counsel-facing evidence factory: conditional startup credits, "
-        "three anomaly engines, corroboration, extraction, qualification, seal tracking, "
-        "and three distribution loops. Python handles repeatable transformations; people "
-        "decide identity, evidentiary sufficiency, confidentiality, and release. The "
-        "Conservative, Base, and Scaled annual owner-profit cases remain $30,400, "
-        "$219,375, and $510,400. Retainers fund operations while contingent awards stay "
-        "outside spendable cash until realized. A timed batch model targets 74% repetitive-work "
-        "automation without removing reviewer accountability. Public-disclosure screening, "
-        "representative-claim gaps, non-intervention, dismissal, and zero recovery determine "
-        "which promising anomalies never become filings."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$95,000",
-            "context": "Annual operator revenue from paid retainers and support deliverables",
-            "note": "32% net margin; $30,400 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$487,500",
-            "context": "Annual operator revenue from paid retainers and support deliverables",
-            "note": "45.0% net margin; $219,375 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$880,000",
-            "context": "Annual operator revenue from paid retainers and support deliverables",
-            "note": "58% net margin; $510,400 annual owner net profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build a replayable anomaly engine before adding model capacity",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat the business as a reproducible research service, not an allegation generator. "
-                    "Map eleven chapter operating plays to owned queues; the credit play retains its supplied "
-                    "identifier, while the other ten names describe this chapter's implementation rather than "
-                    "additional catalog identifiers. Plays two through four are CMS anomaly detection, Open "
-                    "Payments relationship resolution, and procurement/import corroboration. A Python scheduler "
-                    "downloads authorized CMS Part B and Part D releases, Open Payments bulk files, SAM.gov "
-                    "records, and lawfully licensed manifest extracts. Use urllib.request for bounded downloads, "
-                    "csv and gzip for streaming, hashlib for fingerprints, and sqlite3 for job state. Write each "
-                    "source into an immutable landing directory with acquisition time, release date, license "
-                    "reference, schema version, and SHA-256 digest. Never interpret an absent or suppressed CMS "
-                    "cell as zero activity. Separate provider identifiers from names, preserve historical "
-                    "addresses, and attach a confidence score to every proposed join. Partition records by "
-                    "reporting period before calculating peer comparisons so revised releases cannot silently "
-                    "rewrite an earlier dossier. The owner reviews exceptional joins; one contractor maintains "
-                    "ingestion, while another reconstructs source evidence. A failed download produces a stale-source "
-                    "warning and pauses dependent scoring rather than recycling yesterday's results as fresh evidence."
-                ),
-                (
-                    "The first mapped play, cloud_ai_startup_credit_aggregation_arbitrage, belongs in the "
-                    "capacity budget, not the revenue forecast. A genuine Delaware or Wyoming operating company "
-                    "may apply through verified incubator, venture-partner, or founder-perk channels to AWS Activate, "
-                    "Microsoft's startup programs, Google Cloud for Startups, Cloudflare, OpenAI, and Anthropic "
-                    "where current eligibility permits. The supplied $25,000–$350,000 opportunity range describes "
-                    "potential programs and combinations, not an entitlement or an additive balance every applicant "
-                    "receives. Record actual award letters, expiration dates, service exclusions, affiliation rules, "
-                    "and restrictions on overlapping benefits. Do not manufacture shell entities to repeat an offer, "
-                    "resell API keys, or move a client dossier merely to consume credits. Budget the illustrative "
-                    "batch at $12 undiscounted machine expense; if $8 is eligible and valid credits cover it, cash "
-                    "machine expense becomes $4 until exhaustion. Maintain the $12 shadow cost for pricing. Each "
-                    "entity must operate a genuine standalone vertical product with defensible separation. A "
-                    "preprovisioned local open-weight service using an appropriately licensed Llama or DeepSeek "
-                    "model behind vLLM can preserve extraction capacity, but memory limits, licenses, and benchmark "
-                    "results determine suitability. Tested failover reduces interruption; it does not make migration "
-                    "instantaneous or eliminate hardware expense."
-                ),
-                (
-                    "Score behavior within relevant peer groups rather than ranking raw billing totals. CMS "
-                    "features might include procedure mix, beneficiary-adjusted intensity, and year-over-year "
-                    "changes, with specialty and geography held constant where the source permits. Open Payments "
-                    "features identify relationships for review, not proof that a payment induced a claim. "
-                    "Procurement and manifest features compare award timing, shipping descriptions, country fields, "
-                    "and contract requirements; a consignee name alone cannot establish importer responsibility "
-                    "or domestic-origin misrepresentation. Price these three engines as one reusable batch: "
-                    "40 candidates consume the illustrative $12 machine budget, or $0.30 each, before human work. "
-                    "Deduplicate on source identifiers and reporting windows, then attach explanations showing "
-                    "which records changed the score. Implement signed incoming webhooks with hmac, timestamp "
-                    "checks, idempotency keys, payload limits, and replay rejection; the webhook only enqueues "
-                    "work. Use a durable outbox for notifications so a restarted worker cannot issue duplicate "
-                    "client messages. Missing schemas move to quarantine, suspicious entity matches require "
-                    "review, and rate-limit responses trigger bounded exponential backoff with jitter. When a "
-                    "vendor feed disappears, retain the dated last-good snapshot for historical comparison, "
-                    "label its age prominently, and stop generating claims about current conduct."
-                ),
-            ],
-            "table": {
-                "caption": "Source-to-Queue Controls for the First Four Mapped Plays",
-                "headers": [
-                    "Operating component and concrete scope",
-                    "Automated transformation and unit basis",
-                    "Required reviewer decision before use",
-                    "Failure recovery and retained evidence",
-                ],
-                "rows": [
-                    [
-                        "Play one aggregates eligible startup compute benefits",
-                        "Track twelve dollar undiscounted machine batch expense",
-                        "Owner verifies actual awards and overlapping restrictions",
-                        "Restore paid capacity before valid benefits expire",
-                    ],
-                    [
-                        "Play two examines CMS procedure utilization patterns",
-                        "Normalize reporting periods before specialty peer comparisons",
-                        "Reviewer distinguishes suppression from genuine zero activity",
-                        "Quarantine changed schemas and replay preserved inputs",
-                    ],
-                    [
-                        "Play three resolves Open Payments recipient relationships",
-                        "Join identifiers while retaining competing name matches",
-                        "Reviewer checks entity identity and relevant chronology",
-                        "Detach uncertain relationships instead of forcing matches",
-                    ],
-                    [
-                        "Play four combines procurement and manifest evidence",
-                        "Compare dated shipments against specific contract requirements",
-                        "Reviewer establishes what each source actually proves",
-                        "Suspend unsupported origin allegations pending primary records",
-                    ],
-                    [
-                        "Authorized download workers preserve original source releases",
-                        "Stream compressed records without loading entire archives",
-                        "Owner approves licenses and permitted acquisition methods",
-                        "Resume bounded transfers using validated content fingerprints",
-                    ],
-                    [
-                        "Signed webhook intake queues only authenticated events",
-                        "Reject replays using timestamps and idempotency records",
-                        "Maintainer inspects unusual senders and signature failures",
-                        "Hold failed events without publishing duplicate notifications",
-                    ],
-                    [
-                        "Local model service supplies tested extraction continuity",
-                        "Benchmark representative documents before routing production workloads",
-                        "Reviewer compares citations against the original documents",
-                        "Use deterministic extraction when model quality declines",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make every attractive anomaly cheap to disprove",
-                "body": (
-                    "The durable asset is a repeatable evidence trail that survives a skeptical "
-                    "counsel review, not a large pile of model-generated suspicions."
-                ),
-                "items": [
-                    "Preserve both original and revised CMS releases; a revision can explain an apparent utilization discontinuity before counsel spends interview time.",
-                    "Keep separate observed, inferred, and disputed relationship fields in Open Payments joins; never let a confidence score overwrite the source identity.",
-                    "Buy manifest coverage only after testing whether the required shipper, consignee, date, and commodity fields exist for the selected trade lane.",
-                    "Set credit-expiration alerts at sixty and thirty days, then test the paid and local routes using public documents before protected work depends on them.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Automate corroboration and dossiers without manufacturing evidence",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Play five is the FOIA and primary-source corroboration builder. Convert each candidate "
-                    "into a question ledger: alleged mechanism, relevant period, missing records, possible "
-                    "innocent explanation, and the exact record that could resolve the uncertainty. FOIA under "
-                    "5 U.S.C. § 552 provides access procedures and exemptions, not an immediate production "
-                    "promise or a substitute for discovery. Generate draft requests naming custodians, date "
-                    "ranges, record types, and preferred electronic formats; a person approves scope and "
-                    "submission because the request itself communicates information outside the firm. Track "
-                    "acknowledgment, tracking number, fee correspondence, production batches, and appeal dates "
-                    "without treating the statutory determination period as a delivery deadline. For each "
-                    "produced file, preserve the original, extract text into a separate derivative, and log "
-                    "redactions and missing attachments. Budget $2 of the $12 machine batch for retrieval "
-                    "orchestration and indexing; fees and licensed records are separately authorized expenses "
-                    "inside the engagement budget. If an agency withholds documents, record the asserted "
-                    "exemption and route the decision to counsel. Switch to accessible primary sources, "
-                    "narrow the hypothesis, or close the candidate rather than filling evidentiary holes "
-                    "with an LLM's plausible reconstruction of records it has never seen."
-                ),
-                (
-                    "Play six is citation-bound extraction and dossier assembly. A model receives only "
-                    "approved document excerpts, a constrained field schema, and instructions to return "
-                    "quoted spans with page or row locators. Treat embedded document instructions as hostile "
-                    "content: they cannot request secrets, change destinations, invoke tools, or amend the "
-                    "extraction contract. Parse returned JSON with strict size and type checks; validate "
-                    "every quoted span against stored text before it enters the evidence ledger. Python's "
-                    "stdlib handles orchestration, JSON, and hashing; PDF parsing and OCR require separately "
-                    "selected services or local executables rather than pretending they exist in the stdlib. "
-                    "Budget $4 for model extraction, $3 for approved OCR or parsing, and $3 for storage, "
-                    "scoring, and orchestration, including the $2 corroboration allocation already described. "
-                    "Those categories total $12 rather than adding a second retrieval charge. Prepare an "
-                    "evidence packet containing source inventory, chronology, entity map, competing explanations, "
-                    "and unresolved questions. A deterministic template supplies headings and source links "
-                    "when the model fails. No model invents missing invoices, beneficiary details, contract "
-                    "clauses, interviews, or representative claims. Counsel receives an explicitly incomplete "
-                    "packet when decisive documents remain unavailable, with each unsupported proposition "
-                    "removed from the factual narrative."
-                ),
-                (
-                    "Play seven is counsel-fit qualification, with an explicit separation between statistical "
-                    "interest and filing sufficiency. The full-time owner checks practice focus, jurisdiction, "
-                    "conflicts routing, available evidence, engagement economics, and willingness to pay for "
-                    "bounded support work. Counsel assesses the FCA public-disclosure bar under 31 U.S.C. "
-                    "§ 3730(e)(4), including the statutory channels of disclosure, substantially similar "
-                    "allegations, original-source requirements, and the government's ability to oppose dismissal. "
-                    "Publicly accessible data does not automatically create a viable relator, and neither "
-                    "does it automatically resolve the statutory analysis. Build a Rule 9(b) matrix linking "
-                    "who, what, when, where, and how to actual source passages; representative-claim demands "
-                    "and acceptable alternatives vary by circuit and factual context. Aggregate CMS summaries "
-                    "often cannot establish claim submission, falsity, or knowledge. The model flags missing "
-                    "elements but never declares them satisfied. For four accepted packets from forty candidates, "
-                    "the illustrative $272 fully loaded batch costs $68 per accepted packet; rejection of all "
-                    "forty is a valid outcome, not permission to lower standards. If counsel declines, retain "
-                    "the reason, stop external circulation, and reuse only nonconfidential method lessons "
-                    "rather than shopping an identifiable allegation across a mailing list."
-                ),
-            ],
-            "table": {
-                "caption": "Corroboration, Extraction, and Counsel Qualification Evidence Matrix",
-                "headers": [
-                    "Question requiring a concrete answer",
-                    "Automated packet component and source",
-                    "Human examination that remains mandatory",
-                    "Stop condition and practical fallback",
-                ],
-                "rows": [
-                    [
-                        "Which primary record could disprove the hypothesis",
-                        "Question ledger links missing records to propositions",
-                        "Analyst identifies plausible innocent explanations before escalation",
-                        "Close candidates supported only by unexplained correlations",
-                    ],
-                    [
-                        "Which agency records warrant a bounded request",
-                        "FOIA draft specifies custodians dates and formats",
-                        "Counsel checks request content before external submission",
-                        "Narrow requests when burdens or exemptions dominate",
-                    ],
-                    [
-                        "Which exact passage supports each factual statement",
-                        "Extraction schema requires quotations and stable locators",
-                        "Reviewer checks quotations against preserved source files",
-                        "Remove statements whose quoted support cannot validate",
-                    ],
-                    [
-                        "Which entity actually appears in the source",
-                        "Entity map retains identifiers and alternative matches",
-                        "Reviewer resolves names using independent primary records",
-                        "Keep ambiguous parties separate until identity resolves",
-                    ],
-                    [
-                        "Which allegations face the public disclosure bar",
-                        "Disclosure timeline records channels dates and similarities",
-                        "Counsel applies statutory exceptions to actual facts",
-                        "Stop relator positioning when counsel finds disqualification",
-                    ],
-                    [
-                        "Which claim particulars remain absent from evidence",
-                        "Rule 9(b) worksheet indexes available claim particulars",
-                        "Counsel evaluates circuit requirements and pleading sufficiency",
-                        "Request specific records instead of inventing particulars",
-                    ],
-                    [
-                        "Which firm can responsibly evaluate this engagement",
-                        "Practice fit score uses public professional information",
-                        "Owner checks conflicts routing and engagement boundaries",
-                        "Send generic capabilities before sharing sensitive allegations",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the authorized evidence inputs",
-                    "action": "Create a batch manifest and hash every acquired source.",
-                    "detail": "Record acquisition authority, reporting period, source version, and permitted recipients before extraction begins.",
-                },
-                {
-                    "step": 2,
-                    "title": "Generate bounded factual derivatives",
-                    "action": "Run deterministic joins, constrained extraction, and quotation validation.",
-                    "detail": "Quarantine schema changes, suspicious document instructions, uncertain identities, and unsupported factual propositions.",
-                },
-                {
-                    "step": 3,
-                    "title": "Conduct adversarial human examination",
-                    "action": "Review alternative explanations, disclosure history, and claim-specific gaps.",
-                    "detail": "The analyst verifies sources; licensed counsel evaluates filing sufficiency and program eligibility.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release only the authorized packet",
-                    "action": "Approve the named recipient and export a versioned evidence dossier.",
-                    "detail": "Log the export digest and decision, reconcile delivery, and preserve a replayable record without placing matter content in general telemetry.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Fund the service with retainers and isolate contingent recovery",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Play eight is the counsel-controlled litigation-support and seal tracker. Store matter "
-                    "identifiers, named access holders, counsel instructions, deadlines, and authorized export "
-                    "history in a separate protected workspace. Under 31 U.S.C. § 3730(b)(2), FCA complaints "
-                    "are filed by licensed relator counsel under seal, initially for at least sixty days, "
-                    "with statutory government service and disclosure requirements; extensions can continue "
-                    "far longer. Do not synchronize protected matter titles into ordinary CRM records, public "
-                    "issue trackers, shared calendars, model telemetry, or marketing analytics. A reminder "
-                    "uses an opaque identifier and points authorized counsel to the protected record. "
-                    "Retain the actual sealing order because restrictions are matter-specific. A seal "
-                    "breach creates serious litigation and recovery risk, but dismissal or share loss is "
-                    "not mechanically automatic in every case. Route SEC Form TCR and IRS Form 211 through "
-                    "counsel under this operating model, with separate program-specific intake and deadline "
-                    "rules. Never transplant the FCA seal process onto those programs. The often-cited "
-                    "2–5+ year horizon describes possible investigation and recovery delays, not a universal "
-                    "seal duration or an expected payment date. If instructions conflict or access fails, "
-                    "suspend exports and seek counsel's clarification while preserving the audit trail."
-                ),
-                (
-                    "Reconcile the canonical Formula v2.0 cases using a retainer-only cash planning bridge "
-                    "with zero realized awards. Conservative revenue is five firms at $1,500 monthly for "
-                    "twelve months, plus $5,000 of separately scoped support: $95,000 revenue less $64,600 "
-                    "costs equals $30,400 owner profit and 32% margin. Base revenue is eight firms at "
-                    "$4,500 monthly plus $55,500 support: $487,500 less $268,125 equals $219,375 and 45.0%. "
-                    "Scaled revenue is ten firms at $6,500 monthly plus $100,000 support: $880,000 less "
-                    "$369,600 equals $510,400 and 58%. These illustrative contract mixes reproduce the "
-                    "supplied totals; they do not assert an observed customer roster. The first two cases "
-                    "use 1 FT + 2 C; Scaled uses 2 FT + 3 C. Costs include contractor delivery, "
-                    "research, infrastructure, acquisition, insurance, and other operating expenses rather "
-                    "than merely cloud invoices. Recognize support revenue as services are delivered under "
-                    "the applicable contract treatment. Client recoveries, healthcare payments, shipment values, "
-                    "and government loss estimates are not operator revenue. Only a lawfully entitled, "
-                    "realized net award share belongs in the award ledger; principal-versus-agent assessment "
-                    "under ASC 606 prevents presenting another party's gross recovery as the operator's sales. "
-                    "A service contract cannot manufacture statutory whistleblower eligibility."
-                ),
-                (
-                    "Stress-test the award pipeline independently of that operating bridge. In an illustrative "
-                    "cohort of one hundred leads, remove thirty after public-disclosure analysis and twenty "
-                    "more for unresolved particularity defects, leaving fifty counsel-selected matters. Assume "
-                    "80% non-intervention, leaving forty such matters and ten interventions. Apply a 25% "
-                    "government-dismissal sensitivity to the forty, leaving thirty; assume recovery in 20% "
-                    "of those thirty and 60% of the ten interventions. Only twelve original leads recover; "
-                    "eighty-eight produce zero recovery. These are deliberately hypothetical sensitivity inputs, "
-                    "not measured DOJ non-intervention or Granston dismissal rates. The historical Granston "
-                    "memorandum concerns government dismissal practice; operative authority is 31 U.S.C. "
-                    "§ 3730(c)(2)(A), subject to governing procedure and case law. Counsel should replace "
-                    "assumptions with dated, relevant evidence without conflating non-intervention with dismissal. "
-                    "FCA shares generally range from 15%–25% with intervention and 25%–30% without, subject "
-                    "to statutory qualifications. SEC and CFTC awards generally use 10%–30% ranges subject "
-                    "to qualifying conditions, while IRS section 7623(b) generally uses 15%–30% with its "
-                    "own thresholds and reductions. Thus one universal 15%–30% multiplier is wrong. Even "
-                    "eligible awards remain zero in spendable cash until collection; test the entire year "
-                    "with no awards and delayed retainer receipts before hiring."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 Revenue Bridge and Recovery-Risk Separation",
-                "headers": [
-                    "Case or control with operating boundary",
-                    "Revenue construction or factual decision basis",
-                    "Cost and profit or recovery treatment",
-                    "Staffing requirement or cash protection rule",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual service case excludes contingent receipts",
-                        "Five monthly retainers produce $90,000 plus $5,000 support",
-                        "$95,000 less $64,600 yields $30,400 at 32%",
-                        "One full-time owner and two contractors deliver",
-                    ],
-                    [
-                        "Base annual service case excludes contingent receipts",
-                        "Eight monthly retainers produce $432,000 plus $55,500 support",
-                        "$487,500 less $268,125 yields $219,375 at 45.0%",
-                        "One full-time owner and two contractors deliver",
-                    ],
-                    [
-                        "Scaled annual service case excludes contingent receipts",
-                        "Ten monthly retainers produce $780,000 plus $100,000 support",
-                        "$880,000 less $369,600 yields $510,400 at 58%",
-                        "Two full-time staff and three contractors deliver",
-                    ],
-                    [
-                        "Award ledger records only legally entitled receipts",
-                        "Counsel documents eligibility allocation and collection status",
-                        "Recognize applicable net share rather than gross recovery",
-                        "Uncollected awards fund neither payroll nor subscriptions",
-                    ],
-                    [
-                        "Public disclosure review precedes relator case positioning",
-                        "Counsel evaluates statutory channels and original-source facts",
-                        "Illustrative cohort removes thirty of one hundred",
-                        "Continue paid research only within legitimate engagement scope",
-                    ],
-                    [
-                        "Particularity review identifies missing representative claim support",
-                        "Counsel evaluates available detail against circuit requirements",
-                        "Illustrative cohort removes twenty additional deficient leads",
-                        "Suspend filing preparation until essential factual gaps resolve",
-                    ],
-                    [
-                        "Government decisions remain distinct modeled recovery risks",
-                        "Hypothetical eighty percent non-intervention leaves forty matters",
-                        "Twenty-five percent dismissal sensitivity removes ten matters",
-                        "Keep all contingent outcomes outside operating cash coverage",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before a consequential release",
-                "body": (
-                    "An automated score can open a review task. Only accountable people may "
-                    "authorize an allegation-bearing export, filing instruction, or protected disclosure."
-                ),
-                "items": [
-                    "Verify source hashes, entity identities, exact quotation support, and the unresolved-evidence register before releasing any factual dossier.",
-                    "Obtain counsel's documented assessment of public-disclosure exposure, Rule 9(b) gaps, program eligibility, and the proper filing channel.",
-                    "Match each recipient and export to the engagement, current sealing order, confidentiality instructions, and approved processing environment.",
-                    "Confirm the engagement remains solvent with zero award receipts and that no external message exposes protected matter details or promises recovery.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Compound safe distribution and measure automation net of rework",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Play nine is programmatic methods publishing, not automated accusation publishing. Produce "
-                    "pages explaining dataset coverage, reporting lags, suppression, entity resolution, and "
-                    "reproducible validation techniques using synthetic examples or carefully selected public "
-                    "material cleared for reuse. Python can generate static pages, sitemaps, and structured "
-                    "download manifests; a reviewer approves every new template and checks sampled outputs "
-                    "for accidental identifiers. Play ten is permission-aware counsel outbound: build a small "
-                    "list from public professional directories, score practice fit, and draft individualized "
-                    "capability messages without attaching case allegations. Apply 15 U.S.C. § 7704 requirements "
-                    "where applicable, including accurate headers, required sender information, a functioning "
-                    "opt-out, and timely suppression. Do not scrape restricted directories or evade sending "
-                    "limits. Play eleven is the counsel referral and reusable-tool loop: a useful source-coverage "
-                    "worksheet travels between practitioners and links back to a booking page, without "
-                    "exporting client matters. Price the distribution experiment at $240 monthly tools plus "
-                    "six human hours at $60, or $600 total. If one paying engagement results, acquisition "
-                    "cost is $600 before additional sales work; if none results, record the full loss "
-                    "and change the audience or offer rather than inflating lead quality with automated volume."
-                ),
-                (
-                    "Measure the 70%+ target against a frozen repetitive-work baseline, not against all "
-                    "professional judgment. In one illustrative forty-candidate batch, manual collection takes "
-                    "300 minutes, normalization 180, initial qualification 160, packet drafting 220, and "
-                    "routing preparation 140: 1,000 minutes total. Automation removes 250, 160, 110, 180, "
-                    "and 40 minutes respectively, totaling 740 minutes or 74%. The remaining 260 minutes "
-                    "include verification, exceptions, and recipient checks; at $60 per hour they cost "
-                    "$260, plus $12 machine expense, or $272 per batch. That is $6.80 per candidate "
-                    "and $68 per accepted packet if four qualify. The timed scope excludes attorney "
-                    "pleading work, specialist interviews, and bespoke investigations, which require separate "
-                    "pricing. Counsel-fit software assists rather than replacing the attorney's statutory "
-                    "analysis. At one hundred, one hundred fifty, and two hundred annual batches, direct "
-                    "batch expense is $27,200, $40,800, and $54,400 respectively, already included within "
-                    "the scenario cost envelopes. These volumes are capacity illustrations, not additional "
-                    "revenue assumptions. Require two successive measured cycles above 70% after corrections; "
-                    "if identity errors or packet rework consume saved time, report the lower achieved "
-                    "rate and restrict automation to the transformations that remain reliable."
-                ),
-                (
-                    "Close the flywheel with quality signals that cannot leak case strategy. Store channel "
-                    "source, broad practice category, booked consultation, signed retainer, renewal, and "
-                    "reviewer rework minutes in the commercial CRM; keep allegation text and evidence "
-                    "inside the protected matter workspace. A client-approved, nonidentifying methods improvement "
-                    "can become a worksheet update, which attracts another counsel conversation and supplies "
-                    "better qualification questions. Never describe a live sealed matter as a success story "
-                    "or circulate a supposedly anonymous pattern that identifies the parties. Define operational "
-                    "service objectives for data freshness, replay completion, citation validity, and access "
-                    "revocation. Test restoration using synthetic dossiers, rotate webhook secrets, and rehearse "
-                    "a queue backlog with outbound delivery disabled. When an API, model, or source changes, "
-                    "pin the last validated pipeline, route uncertain packets to manual review, and communicate "
-                    "revised delivery dates rather than silently degrading accuracy. Startup capital of "
-                    "$10,000–$45,000 and monthly opex of $1,500–$9,500 are planning ranges, not substitutes "
-                    "for the fully loaded annual scorecard costs; delivery intensity and contractor expense "
-                    "can make those totals much larger. With first deals potentially four to twelve months "
-                    "away, size runway from actual cash commitments. Scale reviewers before increasing "
-                    "outreach whenever the exception queue exceeds contracted turnaround capacity."
-                ),
-            ],
-            "table": {
-                "caption": "Distribution Flywheels, Measured Automation, and Recovery Fallbacks",
-                "headers": [
-                    "Loop or workload with defined scope",
-                    "Specific production math and measurement basis",
-                    "Human responsibility before consequential external use",
-                    "Recovery action when economics or quality fails",
-                ],
-                "rows": [
-                    [
-                        "Play nine publishes reusable public methods pages",
-                        "Measure consultations per approved worksheet download cohort",
-                        "Reviewer checks examples for identifiable protected facts",
-                        "Remove affected pages and investigate disclosure scope",
-                    ],
-                    [
-                        "Play ten develops targeted counsel capability outreach",
-                        "Monthly tools cost $240 before six review hours",
-                        "Owner approves recipients messaging and suppression handling",
-                        "Pause sending when objections or delivery failures rise",
-                    ],
-                    [
-                        "Play eleven encourages practitioner sharing of worksheets",
-                        "Six review hours at $60 add $360",
-                        "Counsel clears any client-derived material before reuse",
-                        "Replace sensitive examples with independently created synthetic records",
-                    ],
-                    [
-                        "Repetitive research baseline contains one thousand minutes",
-                        "Automated transformations remove seven hundred forty minutes",
-                        "Reviewers retain two hundred sixty accountable minutes",
-                        "Recalculate achieved savings after errors and rework",
-                    ],
-                    [
-                        "Forty candidate batch carries fully loaded expense",
-                        "$260 human expense plus $12 machine equals $272",
-                        "Owner validates contractor rates and actual run invoices",
-                        "Use undiscounted costs when startup benefits expire",
-                    ],
-                    [
-                        "Four accepted packets allocate the complete batch",
-                        "$272 divided by four yields $68 each",
-                        "Reviewer rejects weak packets despite sunk processing costs",
-                        "Record zero acceptance without manufacturing substitute evidence",
-                    ],
-                    [
-                        "Annual capacity examples remain inside canonical costs",
-                        "One hundred fifty batches consume $40,800 directly",
-                        "Owner reconciles remaining expenses against Base cost envelope",
-                        "Limit acquisition when delivery queues exceed safe capacity",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Automate the search for evidence, never the decision that an allegation is ready to travel.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Create an immutable source manifest for CMS, Open Payments, SAM.gov, and authorized manifest inputs, then test schema quarantine and replay.",
-        "Implement all eleven mapped operating plays with named owners, undiscounted unit costs, permitted inputs, and documented failure fallbacks.",
-        "Benchmark a forty-candidate batch against the 1,000-minute baseline and count reviewer corrections before reporting automation above 70%.",
-        "Require source-bound quotations, public-disclosure analysis, Rule 9(b) gap review, and counsel-authorized recipients before dossier release.",
-        "Reconcile $95,000, $487,500, and $880,000 annual revenue cases to their exact costs and profits while holding uncollected awards at zero cash.",
-        "Launch one cleared methods worksheet, a narrowly targeted counsel outreach cohort, and a referral loop that excludes protected matter details.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "31 U.S.C. § 3730(b)(2) — Qui tam filing, government disclosure, and seal",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3730",
-            "relevance": "Licensed relator counsel controls complaint filing, government service, supporting disclosure, and compliance with the initial seal and subsequent orders.",
-        },
-        {
-            "title": "31 U.S.C. § 3730(e)(4) — Public-disclosure bar and original-source definition",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3730",
-            "relevance": "Counsel evaluates statutory disclosure channels, substantially similar allegations, original-source facts, and government opposition before advancing a public-data lead.",
-        },
-        {
-            "title": "Federal Rule of Civil Procedure 9(b) — Particularity for fraud or mistake",
-            "url": "https://www.law.cornell.edu/rules/frcp/rule_9",
-            "relevance": "The evidence worksheet identifies claim particulars and factual gaps without assuming that aggregate statistical anomalies satisfy pleading requirements.",
-        },
-        {
-            "title": "31 U.S.C. § 3730(c)(2)(A) and (d) — Dismissal authority and relator awards",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3730",
-            "relevance": "Model government dismissal separately from non-intervention and apply the relevant award range, qualifications, and reductions rather than a universal multiplier.",
-        },
-        {
-            "title": "5 U.S.C. § 552 — Freedom of Information Act",
-            "url": "https://www.law.cornell.edu/uscode/text/5/552",
-            "relevance": "Track requests, determinations, fees, exemptions, productions, and appeals without assuming that statutory determination periods promise immediate record delivery.",
-        },
-        {
-            "title": "15 U.S.C. § 78u-6 and 17 CFR § 240.21F-9 — SEC whistleblower awards and submission procedures",
-            "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-240/section-240.21F-9",
-            "relevance": "Counsel applies SEC submission procedures and award eligibility, including the statutory framework's qualifying enforcement threshold and general 10%–30% award range.",
-        },
-        {
-            "title": "26 U.S.C. § 7623(b) — IRS whistleblower awards",
-            "url": "https://www.law.cornell.edu/uscode/text/26/7623",
-            "relevance": "Counsel evaluates the general 15%–30% range, reductions, proceeds exceeding $2 million, and the individual-taxpayer gross-income condition exceeding $200,000 in a relevant year.",
-        },
-        {
-            "title": "7 U.S.C. § 26 — CFTC whistleblower incentives and protection",
-            "url": "https://www.law.cornell.edu/uscode/text/7/26",
-            "relevance": "Keep CFTC eligibility and its general 10%–30% award framework separate from FCA and IRS assumptions.",
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Apply accurate routing information, applicable identification and address requirements, functional opt-out mechanisms, and timely suppression to commercial counsel outreach.",
-        },
-        {
-            "title": "State Farm Fire & Casualty Co. v. United States ex rel. Rigsby, 580 U.S. 26 (2016)",
-            "url": "https://www.supremecourt.gov/opinions/16pdf/15-513_43j7.pdf",
-            "relevance": "The Supreme Court held that an FCA seal violation does not require automatic dismissal, while leaving serious consequences and case-specific judicial assessment.",
-        },
-        {
-            "title": "United States ex rel. Polansky v. Executive Health Resources, Inc., 599 U.S. 419 (2023)",
-            "url": "https://www.supremecourt.gov/opinions/22pdf/21-1052_fd9g.pdf",
-            "relevance": "Government dismissal after intervention, including later intervention, must be assessed under the governing procedural framework rather than treated as identical to initial non-intervention.",
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'dodd-frank-protections-expanding-financial-bounty-programs',
+ 'question_prompt': 'What anti-retaliation protections exist for financial whistleblowers, and how do the '
+                    'CFTC, AML/FinCEN, DOJ, and Treasury reward programs pay tipsters?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Dodd-Frank Protections and the Expanding Financial Bounty Programs',
+ 'subtitle': "SOX and Dodd-Frank anti-retaliation, the SEC's first retaliation action, CFTC "
+             "derivatives-fraud rewards, AML/sanctions whistleblower awards and FinCEN's proposed rules, "
+             "DOJ's corporate whistleblower incentive pilot, and Treasury's $30,000 tip rewards",
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Bounty lawyers, former agency insiders and defense counsel converge on one formula. '
+                      'Voluntary, original information that leads to more than $1 million in sanctions '
+                      'pays 10 to 30 percent across the SEC, CFTC and AML programs, and related-action '
+                      'awards stack on top. CFTC whistleblower office director Raagnee Beri reports that '
+                      'roughly 42 percent of FY2024 CFTC enforcement matters involved whistleblowers. The '
+                      'street mechanics turn on clocks and channels: a 120-day window for compliance '
+                      "staff, Sarbanes-Oxley's 180-day retaliation deadline versus Dodd-Frank's six years, "
+                      'anonymity only through counsel, and a FinCEN maximum-award presumption proposed at '
+                      "$15 million. Newer lanes include DOJ's tiered pilot and Treasury's flat $30,000 "
+                      'fraud portal. Practitioners split on reporting internally first, on company '
+                      "counter-incentives, on Treasury's discretionary payouts, and on FinCEN's "
+                      'confidentiality and bankruptcy loopholes.',
+ 'key_metrics': [{'label': 'CFTC award band and collection floor',
+                  'metric': 'CFTC award band and collection floor',
+                  'value': '10% to 30% of collections exceeding $1 million',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Share of government collections paid to a CFTC whistleblower whose '
+                             'information drives the recovery; collections from the wrongdoer must exceed '
+                             '$1 million.',
+                  'source': 'Whistleblowers International ([nGZvKSKSh-Y @ 00:01:48])'},
+                 {'label': 'Whistleblower share of CFTC enforcement matters',
+                  'metric': 'Whistleblower share of CFTC enforcement matters',
+                  'value': 'About 42% in fiscal year 2024',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The CFTC whistleblower office director reported that about 42 percent of all '
+                             'FY2024 CFTC enforcement matters involved whistleblowers, and that one third '
+                             'of FY2025 enforcement leads came from tips.',
+                  'source': 'National Whistleblower Center ([OVyUfacfmsk @ 00:01:24])'},
+                 {'label': 'Retaliation filing window, SOX versus Dodd-Frank',
+                  'metric': 'Retaliation filing window, SOX versus Dodd-Frank',
+                  'value': '180 days (SOX) versus up to 6 years (Dodd-Frank)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Time an employee has to file a retaliation complaint. Dodd-Frank also offers '
+                             'potentially double damages, but only when the concern was reported directly '
+                             'to the SEC.',
+                  'source': 'Garrison, Levin-Epstein, Fitzgerald & Pirrotti ([ft81gWsFd2M @ 00:01:46])'},
+                 {'label': 'FinCEN maximum-award presumption threshold',
+                  'metric': 'FinCEN maximum-award presumption threshold',
+                  'value': '$15 million (versus $5 million at the SEC)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "FinCEN's proposed presumption of the maximum 30 percent award. The CFTC "
+                             'estimated that roughly 80 percent of its historic awards would have fallen '
+                             'under its similar proposal.',
+                  'source': 'Fraud in America ([R3h4J-EAtro @ 00:12:18])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['The payout math is the one thing every bounty lawyer on the circuit repeats '
+                              'without variation. Whistleblowers International pitches the CFTC program as '
+                              'paying anywhere between 10 and 30 percent of whatever the government '
+                              "collects off a tipster's information. The collections must exceed $1 "
+                              'million [nGZvKSKSh-Y @ 00:01:48]. Chris Erman of Phillips & Cohen is the '
+                              'former director of the CFTC whistleblower office and a 14-year veteran of '
+                              'SEC enforcement. Erman adds the related-action kicker: if a second agency '
+                              'brings a successful case on the same information, the tipster is eligible '
+                              "for another 10 to 30 percent of that agency's sanctions [dyn9ni2HPDU @ "
+                              "00:00:23]. Foley & Lardner's Ken Weiner traces the SEC side to Section 21F "
+                              'of the Exchange Act. Dodd-Frank added that section in July 2010, and it '
+                              'forces the SEC to pay awards on voluntary, original information that leads '
+                              'to collections of at least $1 million [7vp44tFe6hs @ 00:14:27]. Robert '
+                              'Eckard maps the same 10-to-30-percent band onto the money-laundering '
+                              'program. There, Treasury pays on collected sanctions from Bank Secrecy Act '
+                              'actions exceeding $1 million [tLBsvqESK6o @ 00:01:51]. Four separate shops '
+                              'give one formula: original tip, million-dollar floor, ten-to-thirty cut.',
+                              'The second point of agreement is that the money dies on paperwork. '
+                              'Whistleblowers International tells tipsters to file a Form TCR (tip, '
+                              'complaint or referral) and to strictly follow every CFTC filing procedure. '
+                              'Mistakes lead to a denial of the reward [nGZvKSKSh-Y @ 00:02:08]. Brian '
+                              'Mahany of Mahany Law is blunter. His firm constantly hears from people who '
+                              'wrote a letter to an agency or called a hotline and never got paid. If you '
+                              'fail to follow the procedural rules, there are no rewards and no exceptions '
+                              '[BueLAsaxhHM @ 00:03:40]. The asset being sold is original information. '
+                              'Weiner breaks the SEC definition into three tests: the information must '
+                              'come from independent knowledge or independent analysis, must not already '
+                              'be known to the SEC, and must not come exclusively from public sources '
+                              '[7vp44tFe6hs @ 00:18:34]. Tony Munter frames what the tipster actually '
+                              "gets. In a False Claims Act qui tam, the relator stands in the government's "
+                              'shoes and files in court. The SEC program gives no independent right of '
+                              'action: you hand the agency a tip, the Commission decides whether to pursue '
+                              'it, and the harm runs to defrauded investors rather than the government '
+                              '[tW8oVBiMkLg @ 00:00:45]. Packaging the tip is the whole game.',
+                              'Anonymity runs through counsel, and the bar agrees on that structure. '
+                              'Whistleblowers International says the CFTC grants anonymity to '
+                              'whistleblowers represented by a lawyer [nGZvKSKSh-Y @ 00:02:56]. Eckard '
+                              'confirms that a represented AML tipster may submit anonymously to FinCEN. '
+                              'Treasury and DOJ staff are barred from disclosing information that could '
+                              "reasonably reveal the tipster's identity, except to a defendant in a public "
+                              'proceeding [tLBsvqESK6o @ 00:04:13]. Poppy Alexander of Whistleblower '
+                              'Partners explains why counsel is required. Lawyers carry ethical '
+                              'obligations and certify to the agency that the filer is who they say they '
+                              'are. That certification is a backstop against AI-generated spam, stolen '
+                              'identities, and filers who think they know more than they do [R3h4J-EAtro @ '
+                              '00:33:47]. On retaliation, the Garrison, Levin-Epstein team draws the '
+                              'baseline every employee needs. Sarbanes-Oxley protects internal reports to '
+                              'a supervisor or compliance department under a contributing-factor standard. '
+                              'Dodd-Frank protection attaches only when the concern goes directly to the '
+                              'SEC, and reporting internally to a manager or compliance is not enough '
+                              '[ft81gWsFd2M @ 00:02:02]. The consensus prerequisite is sequencing: get '
+                              'counsel, pick the reporting channel deliberately, and only then move. The '
+                              'Garrison team warns that early choices about who to report to and when '
+                              'decide which protections attach.'],
+               'table': {'caption': 'Where practitioners agree: the baseline rules of the financial bounty '
+                                    'programs',
+                         'headers': ['Consensus Point',
+                                     'Practitioner Position',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Award band and million-dollar collection floor',
+                                   'The CFTC pays 10 to 30 percent when government collections from the '
+                                   'wrongdoer exceed $1 million',
+                                   'Screen every tip for a realistic seven-figure sanctions ceiling before '
+                                   'investing time',
+                                   'Whistleblowers International ([nGZvKSKSh-Y @ 00:01:48])'],
+                                  ['Related-action awards from a second agency',
+                                   'A second agency acting on the same information triggers another 10 to '
+                                   '30 percent of its sanctions',
+                                   'Map every agency that could act on the identical evidence package',
+                                   'Foundation Digital Media ([dyn9ni2HPDU @ 00:00:23])'],
+                                  ['Original information has a three-part definition',
+                                   'Independent knowledge or analysis, not already known to the SEC, and '
+                                   'not exclusively from public sources',
+                                   'Document exactly how the information was personally learned or '
+                                   'independently analyzed',
+                                   'Foley & Lardner LLP ([7vp44tFe6hs @ 00:18:34])'],
+                                  ['Procedural mistakes kill reward claims',
+                                   'Letters and hotline calls made outside the formal procedures produce '
+                                   'no reward, with no exceptions',
+                                   'File through the formal TCR channel rather than informal letters or '
+                                   'phone calls',
+                                   'Mahany Law ([BueLAsaxhHM @ 00:03:40])'],
+                                  ['The SEC program is a tip, not a lawsuit',
+                                   'There is no independent right of action; the Commission alone decides '
+                                   'whether to pursue the allegations',
+                                   'Package the tip so the agency wants to spend its scarce resources on '
+                                   'it',
+                                   'Tony Munter Attorney at Law ([tW8oVBiMkLg @ 00:01:06])'],
+                                  ['Anonymity requires a lawyer',
+                                   'Represented AML tipsters may file anonymously with FinCEN, and agency '
+                                   'staff have confidentiality duties',
+                                   'Retain counsel before filing whenever protecting identity matters to '
+                                   'the tipster',
+                                   'Robert Eckard Law ([tLBsvqESK6o @ 00:04:13])'],
+                                  ['Whistleblowers drive agency enforcement pipelines',
+                                   'About 42 percent of FY2024 CFTC enforcement matters involved '
+                                   'whistleblowers',
+                                   'Agencies depend on tipsters, so specific and credible tips get real '
+                                   'traction',
+                                   'National Whistleblower Center ([OVyUfacfmsk @ 00:01:24])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Timing is where the money is won or lost, and the clocks are specific. '
+                              'Weiner walks through the SEC carve-out for compliance officers. People '
+                              'whose principal duties are compliance or internal audit are normally '
+                              'excluded from awards. Once 120 days have passed since a supervisor, the '
+                              'chief compliance officer, the chief legal officer or the audit committee '
+                              'received the information, they are free to go to the SEC and stay '
+                              'bounty-eligible [7vp44tFe6hs @ 00:23:52]. A second clock protects internal '
+                              'reporters. If an employee reports through company channels and contacts the '
+                              'SEC within 120 days, the SEC credits the employee when the company later '
+                              'hands over the same information or its investigation results [7vp44tFe6hs @ '
+                              '00:25:13]. Weiner also reports what the plaintiff side actually tells '
+                              'clients. On a substantial issue, most whistleblower attorneys would not '
+                              'advise reporting to the company first, though some advise reporting '
+                              'internally and to the SEC at the same time [7vp44tFe6hs @ 00:27:50]. The '
+                              'retaliation clocks run differently. Sarbanes-Oxley gives only 180 days from '
+                              'the retaliation to file. Dodd-Frank allows up to six years and potentially '
+                              'double damages, but only if the report went directly to the SEC '
+                              '[ft81gWsFd2M @ 00:01:32].',
+                              'The money-laundering lane has been rebuilt from scratch. Mahany notes that '
+                              'the old Bank Secrecy Act rewards were capped at $150,000 and were '
+                              'completely discretionary, which is why very few AML rewards were ever paid '
+                              '[BueLAsaxhHM @ 00:00:40]. Eckard lays out the fix. The Anti-Money '
+                              'Laundering Whistleblower Improvement Act, signed December 23, 2022, sets a '
+                              '10 percent minimum award. It extends coverage to sanctions violations under '
+                              'IEEPA, the Trading with the Enemy Act and the Kingpin Act. It also '
+                              'expressly lets compliance and audit staff and non-US citizens collect '
+                              '[tLBsvqESK6o @ 00:01:15]. Poppy Alexander describes how FinCEN routes tips. '
+                              'They arrive by email or online form and get farmed out to OFAC for '
+                              'sanctions, to the OCC and Federal Reserve for bank issues, and to DOJ. '
+                              "FinCEN's whistleblower office still controls the award, so the tipster must "
+                              'keep FinCEN informed of every conversation with OFAC or anyone else '
+                              '[R3h4J-EAtro @ 00:21:08]. Andrew Feller adds the speed lever. FinCEN '
+                              'proposed a presumption of the maximum 30 percent award with a $15 million '
+                              'threshold, against $5 million at the SEC. The CFTC estimated that roughly '
+                              '80 percent of its historic awards would have qualified under its own '
+                              'similar proposal [R3h4J-EAtro @ 00:12:18].',
+                              'The newest bounty lanes stack on top. Matt Kelly explains that the DOJ '
+                              'Criminal Division pilot pays up to 30 percent of net proceeds after asset '
+                              'forfeiture. In his example, a $300 million settlement with $100 million '
+                              "going to victim restitution leaves the tipster's 30 percent calculated on "
+                              'the remaining $200 million [bFRmUwE-_F4 @ 00:01:27]. Tom Fox flags the '
+                              'tiers: 30 percent of the first $100 million, 5 percent of anything between '
+                              '$100 million and $500 million, and nothing clear above that. The pilot is '
+                              'scheduled to run three years [bFRmUwE-_F4 @ 00:18:25]. Kelly also names the '
+                              'targets: FEPA bribery of foreign officials, FCPA cases at non-public '
+                              'companies outside SEC reach, and health care fraud. These are the gaps '
+                              'where no awards program existed before [bFRmUwE-_F4 @ 00:02:07]. At the '
+                              'retail end, Treasury Secretary Bessent announced a $25 million fraud '
+                              'whistleblower incentive fund. It offers a $30,000 reward for information '
+                              'leading to a conviction or enforcement action, submitted through a single '
+                              'centralized portal at america.gov/fraud that replaces scattered agency tip '
+                              'lines [FnUiQJNaMn8 @ 00:04:10]. The spread is enormous: one lane pays a '
+                              'flat $30,000, while the others pay percentages of nine-figure settlements.'],
+               'table': {'caption': 'Street mechanics: clocks, thresholds, tiers and payout math by '
+                                    'program',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Rule',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['SEC compliance-officer waiting window',
+                                   '120 days after the supervisor, CCO, CLO or audit committee received '
+                                   'the information',
+                                   'Calendar the internal report date and file with the SEC once day 120 '
+                                   'passes',
+                                   'Foley & Lardner LLP ([7vp44tFe6hs @ 00:23:52])'],
+                                  ['Retaliation filing deadlines compared',
+                                   'SOX allows 180 days; Dodd-Frank allows up to six years with potential '
+                                   'double damages',
+                                   'Report directly to the SEC to unlock the longer Dodd-Frank window and '
+                                   'remedies',
+                                   'Garrison, Levin-Epstein, Fitzgerald & Pirrotti ([ft81gWsFd2M @ '
+                                   '00:01:46])'],
+                                  ['AMLA minimum award after the 2022 amendment',
+                                   'A 10 percent floor on collected monetary sanctions, with sanctions '
+                                   'violations now covered',
+                                   'Treat AML and sanctions-evasion tips as bankable percentage plays '
+                                   'rather than discretionary gifts',
+                                   'Robert Eckard Law ([tLBsvqESK6o @ 00:00:59])'],
+                                  ['Financial Integrity Fund for AML awards',
+                                   'Collected sanctions are deposited until the fund balance exceeds $300 '
+                                   'million',
+                                   'Expect AML awards to come from a dedicated fund rather than '
+                                   'discretionary budgets',
+                                   'Robert Eckard Law ([tLBsvqESK6o @ 00:05:34])'],
+                                  ['Maximum-award presumption thresholds',
+                                   "FinCEN proposed a $15 million threshold, compared with the SEC's $5 "
+                                   'million rule',
+                                   'Smaller qualifying cases may move faster toward the full 30 percent '
+                                   'payout',
+                                   'Fraud in America ([R3h4J-EAtro @ 00:12:18])'],
+                                  ['DOJ pilot tiered percentages',
+                                   '30 percent of the first $100 million; 5 percent from $100 million to '
+                                   '$500 million',
+                                   'Model the expected payout on net proceeds after restitution and '
+                                   'forfeiture',
+                                   'Compliance Podcast Network ([bFRmUwE-_F4 @ 00:18:25])'],
+                                  ['Treasury centralized fraud portal',
+                                   'A $25 million fund paying a $30,000 reward through america.gov/fraud',
+                                   'Route smaller domestic program-fraud tips through the single portal '
+                                   'instead of scattered hotlines',
+                                   'APT ([FnUiQJNaMn8 @ 00:04:30])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'How the bounty bar actually packages a winning tip',
+                           'body': 'Former agency insiders and whistleblower counsel converge on curation, '
+                                   'proof of what leadership knew, contemporaneous notes, and sustained '
+                                   'cooperation as the levers that move an award.',
+                           'items': ['Do not dump terabytes on the agency. The government wants the good '
+                                     'material, and anything potentially attorney-client privileged should '
+                                     'be held back until a taint process or segregation is set up, because '
+                                     'it can taint the whole investigative team [Fraud in America — '
+                                     'R3h4J-EAtro @ 00:31:26].',
+                                     'Point FinCEN at data it already holds. Banks self-report so much '
+                                     'that the agency often lacks only the key showing where to look, and '
+                                     'showing that senior leadership knew about the problem is what '
+                                     'tipsters most often leave out [Fraud in America — R3h4J-EAtro @ '
+                                     '00:14:54].',
+                                     'Write down what you saw and when, and talk to an employment lawyer '
+                                     'before making the whistleblower complaint. Early choices about who '
+                                     'to report to and when dictate which protections apply [Garrison, '
+                                     'Levin-Epstein, Fitzgerald & Pirrotti — ft81gWsFd2M @ 00:02:17].',
+                                     'Keep feeding the agency after the first tip. In a $37 million SEC '
+                                     "award, the whistleblower's ongoing, extensive and timely assistance "
+                                     "exposed the full context that the company's own self-disclosure left "
+                                     'out [Compliance Podcast Network — bFRmUwE-_F4 @ 00:14:00].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock the record and retain counsel',
+                              'action': 'Write down what was seen and when, then retain whistleblower or '
+                                        'employment counsel before any report goes out.',
+                              'detail': 'The Garrison team tells employees to document what they saw and '
+                                        'when and to talk to an employment lawyer before the complaint '
+                                        '[Garrison, Levin-Epstein, Fitzgerald & Pirrotti — ft81gWsFd2M @ '
+                                        '00:02:17]. Counsel also unlocks anonymous filing at the CFTC '
+                                        '[Whistleblowers International — nGZvKSKSh-Y @ 00:02:56].'},
+                             {'step': 2,
+                              'title': 'Pick the channel and start the clocks',
+                              'action': 'Decide between internal, direct-to-agency or simultaneous '
+                                        'reporting, and calendar the 120-day and retaliation deadlines.',
+                              'detail': 'Compliance staff become eligible 120 days after leadership '
+                                        'receives the information, and internal reporters keep credit if '
+                                        'they reach the SEC within 120 days. Most whistleblower attorneys '
+                                        'skip reporting internally first on substantial issues [Foley & '
+                                        'Lardner LLP — 7vp44tFe6hs @ 00:27:50].'},
+                             {'step': 3,
+                              'title': 'File the formal tip with a curated package',
+                              'action': "Submit through the formal channel (Form TCR, or FinCEN's email "
+                                        'address or online form) with targeted evidence rather than a data '
+                                        'dump.',
+                              'detail': 'Whistleblowers need to file a Form TCR and strictly follow the '
+                                        "CFTC's filing procedures, because mistakes lead to denial of the "
+                                        'reward [Whistleblowers International — nGZvKSKSh-Y @ 00:02:08]. '
+                                        'Privileged material is held back until a taint process exists '
+                                        '[Fraud in America — R3h4J-EAtro @ 00:31:26].'},
+                             {'step': 4,
+                              'title': 'Cooperate, keep the award office informed, then claim',
+                              'action': 'Assist every agency that picks up the tip, keep the award office '
+                                        'informed of each contact, and file the award submission after the '
+                                        'enforcement action.',
+                              'detail': 'After an enforcement action, the whistleblower submits an award '
+                                        'claim to FinCEN, which manages the award even when OFAC or other '
+                                        'agencies ran the case, so the tipster keeps FinCEN informed of '
+                                        'every contact [Fraud in America — R3h4J-EAtro @ 00:22:24].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over where the first report goes. Josh at Garrison, '
+                              'Levin-Epstein lays out the fork: Sarbanes-Oxley protects a purely internal '
+                              'report to a supervisor or compliance department, but the employee gets only '
+                              '180 days to file a retaliation complaint, while Dodd-Frank offers more '
+                              'damages, potentially double, and a six-year window, yet only kicks in when '
+                              'the concern goes directly to the SEC [ft81gWsFd2M @ 00:01:32]. Ken Weiner '
+                              'at Foley & Lardner reports that most whistleblower attorneys he talks to '
+                              'would not advise a client sitting on a substantial issue to tell the '
+                              'company before the SEC, though some would advise reporting to both '
+                              'simultaneously [7vp44tFe6hs @ 00:27:50]. Tom Fox and Matt Kelly argue '
+                              'internal reporting is far from dead: Fox puts the share of SEC '
+                              'whistleblowers who reported internally first at 85 to 90 percent, and Kelly '
+                              'says a solid majority of employees want to report inside because they want '
+                              'the company to do well [bFRmUwE-_F4 @ 00:10:39]. Andrew Feller calls '
+                              "FinCEN's proposed handling of internal reporting a mixed bag, flagging the "
+                              'operator reality that the internal mechanism may be flawed or the person '
+                              'receiving the report may be complicit in the wrongdoing [R3h4J-EAtro @ '
+                              '00:17:20].',
+                              'Steve Pearlman and Ruben Guttman go head to head on what bounties do to the '
+                              'workforce. Pearlman expects two types of whistleblowers to come out of the '
+                              'woodwork: the private-attorney-general type acting in good faith with '
+                              'religious zeal, and the disgruntled employee who sees the writing on the '
+                              'wall, holds dirt on a supervisor, and wants leverage for a sweeter deal or '
+                              'a richer severance package [eSiH7Rgnhe4 @ 00:03:30]. Pearlman reports '
+                              'companies responding by developing mechanisms to compete with the 10 to 30 '
+                              'percent bounties, some trying to monetize an incentive to keep the '
+                              'complaint internal and others enhancing performance evaluations for '
+                              'good-faith fraud reduction [eSiH7Rgnhe4 @ 00:05:40]. Guttman calls that a '
+                              'stunning admission, arguing that where a company like Pfizer went through '
+                              'three integrity agreements and kept violating the law, or an Enron-style '
+                              'situation, there is no viable internal compliance program to work with, so '
+                              'the call is case by case [eSiH7Rgnhe4 @ 00:06:47]. On the corporate defense '
+                              'side, Lisa Noler at Foley tells companies to use the internal investigation '
+                              "to build a credibility file on the whistleblower, the government's primary "
+                              'witness, and to tell prosecutors the witness will get killed on '
+                              'cross-examination [7vp44tFe6hs @ 00:38:27].',
+                              'The program rulebooks themselves split on who gets paid and how. Ken Weiner '
+                              "walks through the SEC's exclusion of employees whose principal duties "
+                              'involve compliance or internal audit, escapable mainly through a time '
+                              'exception: once 120 days have passed since the supervisor, chief compliance '
+                              'officer, chief legal officer, or audit committee received the information, '
+                              'the compliance official is free to go to the SEC and stay bounty-eligible '
+                              '[7vp44tFe6hs @ 00:23:52]. Robert Eckard counters that the AMLA reward '
+                              'program imposes no limitation on people who learn through compliance or '
+                              'audit duties and expressly authorizes compliance personnel, with non-US '
+                              'citizens eligible too [tLBsvqESK6o @ 00:03:53]. The newest tier splits '
+                              'hardest. Bessent, speaking for Treasury, pitches a $25 million fund paying '
+                              'up to $30,000 to anyone whose information leads to a conviction or '
+                              'enforcement action, filed through a single portal at america.gov/fraud '
+                              "instead of a maze of tip lines [FnUiQJNaMn8 @ 00:04:10]. Vincent Romo's "
+                              'crew questions the 1 percent commission framing, notes Trump said he would '
+                              'personally decide who gets paid when several people claim the same tip, '
+                              'calls the setup subjective rather than clear-cut, and asks how many cases '
+                              'have actually been prosecuted after the photo ops [G7YHankdf9E @ '
+                              '00:01:22].'],
+               'table': {'caption': 'Competing Playbooks Across the Dodd-Frank, CFTC, AMLA, DOJ and '
+                                    'Treasury Bounty Programs',
+                         'headers': ['Fault Line', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Internal report versus going straight to the SEC',
+                                   'Sarbanes-Oxley protects internal reports to supervisors but allows '
+                                   'only 180 days to file',
+                                   'Dodd-Frank requires reporting directly to the SEC but allows six years '
+                                   'and potentially double damages',
+                                   'Garrison, Levin-Epstein, Fitzgerald & Pirrotti ([ft81gWsFd2M @ '
+                                   '00:01:32])'],
+                                  ['Advising clients on internal reporting before the agency',
+                                   'Most whistleblower attorneys Weiner talks to will not advise reporting '
+                                   'internally first on substantial issues',
+                                   'Fox cites 85 to 90 percent of SEC whistleblowers reporting internally '
+                                   'first anyway',
+                                   'Foley & Lardner LLP ([7vp44tFe6hs @ 00:27:50]); Compliance Podcast '
+                                   'Network ([bFRmUwE-_F4 @ 00:10:39])'],
+                                  ['Companies competing with government bounty money for internal '
+                                   'complaints',
+                                   'Pearlman reports companies monetizing incentives to keep complaints '
+                                   'internal and enhancing performance evaluations',
+                                   'Guttman calls companies paying to compete with SEC bounties a stunning '
+                                   'admission',
+                                   'Bloomberg Originals ([eSiH7Rgnhe4 @ 00:05:40])'],
+                                  ['Minimum award floor for anti-money laundering whistleblower tips',
+                                   'Mahany flagged the 2020 AML law as lacking any minimum reward at all',
+                                   'Eckard reports the Improvement Act established a 10 percent minimum '
+                                   'award of collected sanctions',
+                                   'Mahany Law ([BueLAsaxhHM @ 00:02:21]); Robert Eckard Law ([tLBsvqESK6o '
+                                   '@ 00:00:59])'],
+                                  ['Compliance and internal audit staff eligibility for bounty awards',
+                                   'SEC excludes compliance and internal audit staff except after 120 days '
+                                   'or harm exceptions',
+                                   'AMLA expressly authorizes compliance personnel and non-US citizens to '
+                                   'collect whistleblower awards',
+                                   'Foley & Lardner LLP ([7vp44tFe6hs @ 00:23:52]); Robert Eckard Law '
+                                   '([tLBsvqESK6o @ 00:03:53])'],
+                                  ['What counts as original information for a single insider',
+                                   'SEC standard demands independent knowledge or analysis not already '
+                                   'known to the agency',
+                                   'FinCEN draft accepts one piece of the mosaic pointing investigators to '
+                                   'data already held',
+                                   'Foley & Lardner LLP ([7vp44tFe6hs @ 00:18:34]); Fraud in America '
+                                   '([R3h4J-EAtro @ 00:14:20])'],
+                                  ['Credibility of the new $30,000 Treasury fraud tip program',
+                                   'Bessent touts a $25 million fund and a single portal at '
+                                   'america.gov/fraud',
+                                   'Romo questions Trump personally deciding contested payouts and whether '
+                                   'prosecutions ever follow',
+                                   'APT ([FnUiQJNaMn8 @ 00:04:10]); Vincent Romo ([G7YHankdf9E @ '
+                                   '00:00:41])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most common kill shot is procedural. Brian Mahany says his firm '
+                              'constantly hears from people who wrote a letter to an agency or called a '
+                              'hotline and never got paid, and the rule is blunt: fail the procedural '
+                              'rules and there are no rewards and no exceptions [BueLAsaxhHM @ 00:03:40]. '
+                              'Whistleblowers International gives the same warning for the CFTC: file a '
+                              'Form TCR, strictly follow every filing procedure, because mistakes lead to '
+                              'denial, and anonymity is available only to whistleblowers represented by a '
+                              'lawyer [nGZvKSKSh-Y @ 00:02:33]. Poppy Alexander of Whistleblower Partners '
+                              "attacks the FinCEN draft's demand that the first tip be certified complete, "
+                              'since nobody knows what complete means; the playbook is to bring the good '
+                              'stuff instead of terabytes, hold back anything possibly attorney-client '
+                              'privileged until a taint process is set up, and expect gaps when filers '
+                              'work without counsel, such as missing proof that the CEO knew [R3h4J-EAtro '
+                              '@ 00:31:39]. Chris Erman of Phillips & Cohen adds the capacity constraint: '
+                              'the CFTC has limited resources and can only pursue a limited number of '
+                              'investigations, which is why packaging the information the best way '
+                              'possible matters [dyn9ni2HPDU @ 00:02:24].',
+                              'Collection risk is the economics check most filers skip. Andrew Feller '
+                              'reports that the SEC does not define collected proceeds to include amounts '
+                              'distributed in bankruptcy, so if the company goes bankrupt before the SEC '
+                              "collects its sanctions, in all likelihood there is no payout, and FinCEN's "
+                              'draft left that same loophole open [R3h4J-EAtro @ 00:24:19]. Feller warns '
+                              'the risk clusters in companies and industries with a higher likelihood of '
+                              'bankruptcy after an enforcement action, exactly the targets FinCEN should '
+                              'want reported, and it will get fewer of those reports unless the hole is '
+                              'fixed [R3h4J-EAtro @ 00:25:00]. Poppy Alexander flags the million-dollar '
+                              'covered-action threshold: actions can be combined only if they resolve at '
+                              'substantially the same time, yet civil, criminal, individual, and corporate '
+                              "resolutions are sometimes separated by years, and she points to the SEC's "
+                              'approach as the fix [R3h4J-EAtro @ 00:36:33]. Matt Kelly delivers the '
+                              'hardest number: the process is arduous and long-drawn-out at the best of '
+                              'times, you probably will not get $37 million, and Kelly has seen people '
+                              'whose careers went into the ditch collect about 800 grand six years later, '
+                              'not much to carry someone in their mid-40s or 50s into retirement, which is '
+                              'why Kelly calls this a high-risk thing people do [bFRmUwE-_F4 @ 00:17:32].',
+                              'Identity exposure and evidence-gathering are where filers get burned. Sandy '
+                              'Wier at Foley warns that once a whistleblower is debriefed, the information '
+                              "becomes subject to the SEC's routine uses, including sharing with other "
+                              'agencies and Freedom of Information Act responses, so it is probably not '
+                              'going to stay confidential [7vp44tFe6hs @ 00:04:13]. Feller calls language '
+                              'in the FinCEN draft allowing whistleblower information to be shared with '
+                              'defendants to facilitate settlement one of the biggest concerns, and says '
+                              'if it stays in the final rule, the whistleblower bar will have very '
+                              'interesting conversations about whether to use the program at all '
+                              "[R3h4J-EAtro @ 00:26:08]. The draft's disqualification for evidence "
+                              'obtained in violation of any state or federal law is the other trap: Poppy '
+                              'Alexander points to one-party versus two-party recording laws and '
+                              "California's civil action for illegal recordings, which gives companies an "
+                              'incentive to push a DA toward charges [R3h4J-EAtro @ 00:28:53]. Feller '
+                              'cites a software engineer who left Goldman Sachs with code, not as a '
+                              'whistleblower, yet the firm apparently convinced New York prosecutors to '
+                              'bring a criminal trade secret case, showing the incentives companies have '
+                              'to press trade-secret and intellectual-property theories [R3h4J-EAtro @ '
+                              '00:30:03].'],
+               'table': {'caption': 'Firsthand Traps That Zero Out or Shrink a Whistleblower Payout',
+                         'headers': ['Trap', 'What Went Wrong', 'Operator Counter-Move', 'Expert Source'],
+                         'rows': [['Informal letters and hotline calls sent to agencies',
+                                   'People who skipped formal procedures never received a reward, with no '
+                                   'exceptions',
+                                   'Retain a whistleblower lawyer and file through the formal Form TCR '
+                                   'process',
+                                   'Mahany Law ([BueLAsaxhHM @ 00:03:40]); Whistleblowers International '
+                                   '([nGZvKSKSh-Y @ 00:02:08])'],
+                                  ['Target company enters bankruptcy before sanctions are collected',
+                                   'SEC excludes bankruptcy distributions from collected proceeds, so the '
+                                   'whistleblower likely gets nothing',
+                                   'Whistleblower bar comments urge FinCEN to close the bankruptcy '
+                                   'loophole in its final rule',
+                                   'Fraud in America ([R3h4J-EAtro @ 00:24:19])'],
+                                  ['Settlement-driven sharing of whistleblower information with defendants',
+                                   'FinCEN draft language could let agencies share whistleblower '
+                                   'information to facilitate settlement talks',
+                                   'Feller says counsel may rethink using the program at all if that '
+                                   'language survives',
+                                   'Fraud in America ([R3h4J-EAtro @ 00:26:08])'],
+                                  ['Gathering evidence through secret recordings or taking company code',
+                                   'Any state or federal law violation while gathering evidence risks '
+                                   'total award disqualification',
+                                   'Recognize one-party and two-party recording splits, including '
+                                   'California civil actions over recordings',
+                                   'Fraud in America ([R3h4J-EAtro @ 00:28:53])'],
+                                  ['Missing the short Sarbanes-Oxley retaliation filing deadline after '
+                                   'adverse action',
+                                   'Only 180 days run from the retaliation to file a formal complaint',
+                                   'Write down what you saw and when, then talk to an employment lawyer '
+                                   'immediately',
+                                   'Garrison, Levin-Epstein, Fitzgerald & Pirrotti ([ft81gWsFd2M @ '
+                                   '00:02:17])'],
+                                  ['Losing the FinCEN award trail across multiple overlapping agencies',
+                                   'Tips get farmed out to OFAC, the OCC, the Federal Reserve, and DOJ',
+                                   'Keep the FinCEN whistleblower office apprised of every communication '
+                                   'with other agencies',
+                                   'Fraud in America ([R3h4J-EAtro @ 00:22:54])'],
+                                  ['Corporate credibility attack on the whistleblower during government '
+                                   'meetings',
+                                   'Company counsel investigates whistleblower credibility and pitches '
+                                   'that the witness fails cross-examination',
+                                   "Expect the company to present the whistleblower's characteristics "
+                                   'directly to prosecutors',
+                                   'Foley & Lardner LLP ([7vp44tFe6hs @ 00:38:27])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Kill Switches to Clear Before Filing',
+                           'body': 'Each gate below comes from a failure, denial, or deadline '
+                                   'practitioners reported firsthand. Miss one and the payout or the '
+                                   'retaliation claim can disappear.',
+                           'items': ['Never treat a letter or hotline call as your tip; if you fail the '
+                                     'procedural rules there are no rewards and no exceptions [Mahany Law '
+                                     '— BueLAsaxhHM @ 00:03:59].',
+                                     'If you need anonymity at the CFTC, file through a lawyer, because '
+                                     'the program ties anonymity to legal representation [Whistleblowers '
+                                     'International — nGZvKSKSh-Y @ 00:02:56].',
+                                     'If you want Dodd-Frank damages and the six-year window, the report '
+                                     'must reach the SEC directly; an internal report to a manager or '
+                                     'compliance department is not enough [Garrison, Levin-Epstein, '
+                                     'Fitzgerald & Pirrotti — ft81gWsFd2M @ 00:02:02].',
+                                     "If you went through the company's internal channel first under the "
+                                     'SEC program, get to the SEC within 120 days to keep credit for the '
+                                     'original information [Foley & Lardner LLP — 7vp44tFe6hs @ '
+                                     '00:25:52].']}}],
+ 'pull_quote': '"I have seen people who\'ve gone the whistleblower route and their career goes into the '
+               'ditch and six years later they get like 800 grand." — Matt Kelly, Compliance Podcast '
+               'Network (bFRmUwE-_F4 @ 00:17:32).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Write down what you saw and when, and talk to an employment lawyer before making '
+                      'the whistleblower complaint, because who you report to and when dictates which '
+                      'protections you keep [Garrison, Levin-Epstein, Fitzgerald & Pirrotti — ft81gWsFd2M '
+                      '@ 00:02:31].',
+                      'File a Form TCR for CFTC matters, strictly follow every filing procedure, and '
+                      'confirm the government collection will exceed $1 million [Whistleblowers '
+                      'International — nGZvKSKSh-Y @ 00:02:08].',
+                      'Track related actions by other agencies, since a CFTC whistleblower can also '
+                      'collect 10 to 30 percent of sanctions another agency recovers on the same '
+                      'information [Foundation Digital Media — dyn9ni2HPDU @ 00:00:23].',
+                      'Submit the good stuff rather than terabytes, and segregate anything possibly '
+                      'attorney-client privileged until a taint process is worked out with the government '
+                      '[Fraud in America — R3h4J-EAtro @ 00:31:53].',
+                      'Keep the FinCEN whistleblower office apprised of every communication with OFAC, the '
+                      'OCC, DOJ, or other agencies handling your tip, because FinCEN manages the award '
+                      'submission [Fraud in America — R3h4J-EAtro @ 00:22:54].',
+                      'Stay engaged after filing: the SEC credited a $37 million award to the '
+                      "whistleblower's ongoing, extensive and timely assistance that exposed what the "
+                      'company left out [Compliance Podcast Network — bFRmUwE-_F4 @ 00:14:00].'],
+ 'statutory_citations': [{'title': 'Foley & Lardner LLP — Whistleblower Provisions of the Dodd-Frank Act '
+                                   '[00:23:52]',
+                          'url': 'https://www.youtube.com/watch?v=7vp44tFe6hs&t=1432s',
+                          'relevance': 'Primary practitioner testimony on the SEC compliance-personnel '
+                                       'exclusion and the 120-day window to go to the SEC.'},
+                         {'title': 'Fraud in America — FinCEN Proposed Regulations [00:24:19]',
+                          'url': 'https://www.youtube.com/watch?v=R3h4J-EAtro&t=1459s',
+                          'relevance': 'Primary practitioner testimony on the bankruptcy collection '
+                                       'loophole and FinCEN draft rule traps.'},
+                         {'title': 'Garrison, Levin-Epstein, Fitzgerald & Pirrotti — Sarbanes-Oxley and '
+                                   'Dodd-Frank Whistleblower Protections [00:02:02]',
+                          'url': 'https://www.youtube.com/watch?v=ft81gWsFd2M&t=122s',
+                          'relevance': 'Primary practitioner testimony on the Sarbanes-Oxley versus '
+                                       'Dodd-Frank reporting fork and limitation periods.'},
+                         {'title': 'Mahany Law — Anti-Money Laundering Whistleblower Reward Program | 2021 '
+                                   'SEC AML Whistleblower Program Summary [00:03:40]',
+                          'url': 'https://www.youtube.com/watch?v=BueLAsaxhHM&t=220s',
+                          'relevance': 'Primary practitioner testimony on procedural failures that '
+                                       'eliminate whistleblower rewards.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'nGZvKSKSh-Y',
+                       'title': 'CFTC Whistleblower Rewards Program - Whistleblowers International',
+                       'channel': 'Whistleblowers International',
+                       'author': 'Whistleblowers International',
+                       'text': 'The CFTC whistleblower rewards program pays whistleblowers anywhere '
+                               'between 10 to 30 percent of any money the government collects as a result '
+                               "of the whistleblower's information.",
+                       'tip': 'The CFTC whistleblower rewards program pays whistleblowers anywhere between '
+                              '10 to 30 percent of any money the government collects as a result of the '
+                              "whistleblower's information.",
+                       'timestamp': 108,
+                       'timestamp_seconds': 108,
+                       'timestamp_label': '[00:01:48]',
+                       'url': 'https://www.youtube.com/watch?v=nGZvKSKSh-Y&t=108s',
+                       'markdown': '[00:01:48](https://www.youtube.com/watch?v=nGZvKSKSh-Y&t=108s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nGZvKSKSh-Y',
+                       'title': 'CFTC Whistleblower Rewards Program - Whistleblowers International',
+                       'channel': 'Whistleblowers International',
+                       'author': 'Whistleblowers International',
+                       'text': "Be careful, mistakes can lead to a denial of a reward, which is why it's "
+                               'important to have a whistleblower lawyer on your side.',
+                       'tip': "Be careful, mistakes can lead to a denial of a reward, which is why it's "
+                              'important to have a whistleblower lawyer on your side.',
+                       'timestamp': 153,
+                       'timestamp_seconds': 153,
+                       'timestamp_label': '[00:02:33]',
+                       'url': 'https://www.youtube.com/watch?v=nGZvKSKSh-Y&t=153s',
+                       'markdown': '[00:02:33](https://www.youtube.com/watch?v=nGZvKSKSh-Y&t=153s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tW8oVBiMkLg',
+                       'title': 'What Should I Know About the SEC and CFTC Whistleblower Programs? | Tony '
+                                'Munter Attorney at Law',
+                       'channel': 'Tony Munter Attorney at Law',
+                       'author': 'Tony Munter Attorney at Law',
+                       'text': "There's no independent right of action under the SEC whistleblower "
+                               'program, but it allows an individual to file an allegation with that '
+                               'agency on an anonymous basis.',
+                       'tip': "There's no independent right of action under the SEC whistleblower program, "
+                              'but it allows an individual to file an allegation with that agency on an '
+                              'anonymous basis.',
+                       'timestamp': 66,
+                       'timestamp_seconds': 66,
+                       'timestamp_label': '[00:01:06]',
+                       'url': 'https://www.youtube.com/watch?v=tW8oVBiMkLg&t=66s',
+                       'markdown': '[00:01:06](https://www.youtube.com/watch?v=tW8oVBiMkLg&t=66s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dyn9ni2HPDU',
+                       'title': 'Washington DC Whistleblower Program Explainer | Phillips & Cohen',
+                       'channel': 'Foundation Digital Media',
+                       'author': 'Foundation Digital Media',
+                       'text': 'If another agency brings an action based on that same information, a '
+                               'whistleblower is also eligible to receive between 10 and 30% of monetary '
+                               'sanctions collected by that agency.',
+                       'tip': 'If another agency brings an action based on that same information, a '
+                              'whistleblower is also eligible to receive between 10 and 30% of monetary '
+                              'sanctions collected by that agency.',
+                       'timestamp': 23,
+                       'timestamp_seconds': 23,
+                       'timestamp_label': '[00:00:23]',
+                       'url': 'https://www.youtube.com/watch?v=dyn9ni2HPDU&t=23s',
+                       'markdown': '[00:00:23](https://www.youtube.com/watch?v=dyn9ni2HPDU&t=23s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OVyUfacfmsk',
+                       'title': 'How Whistleblowers Power CFTC Enforcement | Raagnee Beri at National '
+                                'Whistleblower Day 2026',
+                       'channel': 'National Whistleblower Center',
+                       'author': 'National Whistleblower Center',
+                       'text': 'In fiscal year 2024, about 42% of all CFTC enforcement matters involved '
+                               'whistleblowers.',
+                       'tip': 'In fiscal year 2024, about 42% of all CFTC enforcement matters involved '
+                              'whistleblowers.',
+                       'timestamp': 84,
+                       'timestamp_seconds': 84,
+                       'timestamp_label': '[00:01:24]',
+                       'url': 'https://www.youtube.com/watch?v=OVyUfacfmsk&t=84s',
+                       'markdown': '[00:01:24](https://www.youtube.com/watch?v=OVyUfacfmsk&t=84s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OVyUfacfmsk',
+                       'title': 'How Whistleblowers Power CFTC Enforcement | Raagnee Beri at National '
+                                'Whistleblower Day 2026',
+                       'channel': 'National Whistleblower Center',
+                       'author': 'National Whistleblower Center',
+                       'text': 'The CFTC has issued a proposed 30% presumption which we expect will '
+                               'expedite claims processing for a significant subset of our claims.',
+                       'tip': 'The CFTC has issued a proposed 30% presumption which we expect will '
+                              'expedite claims processing for a significant subset of our claims.',
+                       'timestamp': 216,
+                       'timestamp_seconds': 216,
+                       'timestamp_label': '[00:03:36]',
+                       'url': 'https://www.youtube.com/watch?v=OVyUfacfmsk&t=216s',
+                       'markdown': '[00:03:36](https://www.youtube.com/watch?v=OVyUfacfmsk&t=216s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BueLAsaxhHM',
+                       'title': 'Anti-Money Laundering Whistleblower Reward Program | 2021 SEC AML '
+                                'Whistleblower Program Summary',
+                       'channel': 'Mahany Law',
+                       'author': 'Mahany Law',
+                       'text': 'If you fail to follow the procedural rules there are no rewards, there are '
+                               'no exceptions.',
+                       'tip': 'If you fail to follow the procedural rules there are no rewards, there are '
+                              'no exceptions.',
+                       'timestamp': 220,
+                       'timestamp_seconds': 220,
+                       'timestamp_label': '[00:03:40]',
+                       'url': 'https://www.youtube.com/watch?v=BueLAsaxhHM&t=220s',
+                       'markdown': '[00:03:40](https://www.youtube.com/watch?v=BueLAsaxhHM&t=220s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BueLAsaxhHM',
+                       'title': 'Anti-Money Laundering Whistleblower Reward Program | 2021 SEC AML '
+                                'Whistleblower Program Summary',
+                       'channel': 'Mahany Law',
+                       'author': 'Mahany Law',
+                       'text': 'A flaw in the legislation is the lack of a minimum reward; the SEC, IRS '
+                               'and CFTC all pay a minimum reward of 10 percent.',
+                       'tip': 'A flaw in the legislation is the lack of a minimum reward; the SEC, IRS and '
+                              'CFTC all pay a minimum reward of 10 percent.',
+                       'timestamp': 141,
+                       'timestamp_seconds': 141,
+                       'timestamp_label': '[00:02:21]',
+                       'url': 'https://www.youtube.com/watch?v=BueLAsaxhHM&t=141s',
+                       'markdown': '[00:02:21](https://www.youtube.com/watch?v=BueLAsaxhHM&t=141s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tLBsvqESK6o',
+                       'title': 'Rewarding Whistleblowers Regarding Money Laundering',
+                       'channel': 'Robert Eckard Law',
+                       'author': 'Robert Eckard Law',
+                       'text': 'The AMLA whistleblower law expressly authorizes compliance personnel to '
+                               'obtain AMLA whistleblower awards.',
+                       'tip': 'The AMLA whistleblower law expressly authorizes compliance personnel to '
+                              'obtain AMLA whistleblower awards.',
+                       'timestamp': 233,
+                       'timestamp_seconds': 233,
+                       'timestamp_label': '[00:03:53]',
+                       'url': 'https://www.youtube.com/watch?v=tLBsvqESK6o&t=233s',
+                       'markdown': '[00:03:53](https://www.youtube.com/watch?v=tLBsvqESK6o&t=233s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ft81gWsFd2M',
+                       'title': 'Sarbanes-Oxley and Dodd-Frank Whistleblower Protections',
+                       'channel': 'Garrison, Levin-Epstein, Fitzgerald & Pirrotti',
+                       'author': 'Garrison, Levin-Epstein, Fitzgerald & Pirrotti',
+                       'text': 'Reporting a concern internally to your employer, to your manager, to the '
+                               "compliance department isn't enough to implicate the protections of "
+                               'Dodd-Frank.',
+                       'tip': 'Reporting a concern internally to your employer, to your manager, to the '
+                              "compliance department isn't enough to implicate the protections of "
+                              'Dodd-Frank.',
+                       'timestamp': 122,
+                       'timestamp_seconds': 122,
+                       'timestamp_label': '[00:02:02]',
+                       'url': 'https://www.youtube.com/watch?v=ft81gWsFd2M&t=122s',
+                       'markdown': '[00:02:02](https://www.youtube.com/watch?v=ft81gWsFd2M&t=122s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7vp44tFe6hs',
+                       'title': 'Whistleblower Provisions of the Dodd-Frank Act',
+                       'channel': 'Foley & Lardner LLP',
+                       'author': 'Foley & Lardner LLP',
+                       'text': 'A compliance official, after 120 days have elapsed since the supervisors '
+                               'or the chief compliance officer or the chief legal officer or the audit '
+                               'committee has received information, is then free to contact the SEC.',
+                       'tip': 'A compliance official, after 120 days have elapsed since the supervisors or '
+                              'the chief compliance officer or the chief legal officer or the audit '
+                              'committee has received information, is then free to contact the SEC.',
+                       'timestamp': 1432,
+                       'timestamp_seconds': 1432,
+                       'timestamp_label': '[00:23:52]',
+                       'url': 'https://www.youtube.com/watch?v=7vp44tFe6hs&t=1432s',
+                       'markdown': '[00:23:52](https://www.youtube.com/watch?v=7vp44tFe6hs&t=1432s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bH6nph-3JKQ',
+                       'title': 'Steve Pearlman explains the SEC bringing its first Dodd-Frank '
+                                'whistleblower action',
+                       'channel': 'LexBlog',
+                       'author': 'LexBlog',
+                       'text': 'The level of recovery that the SEC received was particularly high, it was '
+                               'over $2 million.',
+                       'tip': 'The level of recovery that the SEC received was particularly high, it was '
+                              'over $2 million.',
+                       'timestamp': 104,
+                       'timestamp_seconds': 104,
+                       'timestamp_label': '[00:01:44]',
+                       'url': 'https://www.youtube.com/watch?v=bH6nph-3JKQ&t=104s',
+                       'markdown': '[00:01:44](https://www.youtube.com/watch?v=bH6nph-3JKQ&t=104s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eSiH7Rgnhe4',
+                       'title': 'Guttman, Pearlman Debate Dodd-Frank Whistleblower Rules',
+                       'channel': 'Bloomberg Originals',
+                       'author': 'Bloomberg Originals',
+                       'text': 'An employee who sees the writing on the wall may say I have some dirt on '
+                               'the company or on my supervisor, so I want some sort of leverage.',
+                       'tip': 'An employee who sees the writing on the wall may say I have some dirt on '
+                              'the company or on my supervisor, so I want some sort of leverage.',
+                       'timestamp': 227,
+                       'timestamp_seconds': 227,
+                       'timestamp_label': '[00:03:47]',
+                       'url': 'https://www.youtube.com/watch?v=eSiH7Rgnhe4&t=227s',
+                       'markdown': '[00:03:47](https://www.youtube.com/watch?v=eSiH7Rgnhe4&t=227s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'R3h4J-EAtro',
+                       'title': 'FinCEN Proposed Regulations',
+                       'channel': 'Fraud in America',
+                       'author': 'Fraud in America',
+                       'text': "The SEC's program does not define collected proceeds of an enforcement "
+                               'matter to include amounts distributed in bankruptcy.',
+                       'tip': "The SEC's program does not define collected proceeds of an enforcement "
+                              'matter to include amounts distributed in bankruptcy.',
+                       'timestamp': 1459,
+                       'timestamp_seconds': 1459,
+                       'timestamp_label': '[00:24:19]',
+                       'url': 'https://www.youtube.com/watch?v=R3h4J-EAtro&t=1459s',
+                       'markdown': '[00:24:19](https://www.youtube.com/watch?v=R3h4J-EAtro&t=1459s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bFRmUwE-_F4',
+                       'title': 'Compliance into the Weeds: The DOJ Whistleblower Incentive Program',
+                       'channel': 'Compliance Podcast Network',
+                       'author': 'Compliance Podcast Network',
+                       'text': "I have seen people who've gone the whistleblower route and their career "
+                               'goes into the ditch and six years later they get like 800 grand.',
+                       'tip': "I have seen people who've gone the whistleblower route and their career "
+                              'goes into the ditch and six years later they get like 800 grand.',
+                       'timestamp': 1052,
+                       'timestamp_seconds': 1052,
+                       'timestamp_label': '[00:17:32]',
+                       'url': 'https://www.youtube.com/watch?v=bFRmUwE-_F4&t=1052s',
+                       'markdown': '[00:17:32](https://www.youtube.com/watch?v=bFRmUwE-_F4&t=1052s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'G7YHankdf9E',
+                       'title': 'Whistleblower Incentive Program: $30,000 Tips and Tough Questions #shorts',
+                       'channel': 'Vincent Romo',
+                       'author': 'Vincent Romo',
+                       'text': 'This is the whistleblower incentive program, a $25 million fund paying up '
+                               'to $30,000 to tipsters whose information leads to a fraud conviction.',
+                       'tip': 'This is the whistleblower incentive program, a $25 million fund paying up '
+                              'to $30,000 to tipsters whose information leads to a fraud conviction.',
+                       'timestamp': 20,
+                       'timestamp_seconds': 20,
+                       'timestamp_label': '[00:00:20]',
+                       'url': 'https://www.youtube.com/watch?v=G7YHankdf9E&t=20s',
+                       'markdown': '[00:00:20](https://www.youtube.com/watch?v=G7YHankdf9E&t=20s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FnUiQJNaMn8',
+                       'title': 'Bessent Unveils $30,000 Whistleblower Reward as Trump Escalates Fraud '
+                                'Crackdown | APT',
+                       'channel': 'APT',
+                       'author': 'APT',
+                       'text': "For the first time, we've created a single centralized portal at "
+                               'america.gov/fraud.',
+                       'tip': "For the first time, we've created a single centralized portal at "
+                              'america.gov/fraud.',
+                       'timestamp': 250,
+                       'timestamp_seconds': 250,
+                       'timestamp_label': '[00:04:10]',
+                       'url': 'https://www.youtube.com/watch?v=FnUiQJNaMn8&t=250s',
+                       'markdown': '[00:04:10](https://www.youtube.com/watch?v=FnUiQJNaMn8&t=250s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

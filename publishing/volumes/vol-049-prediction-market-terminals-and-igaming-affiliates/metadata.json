@@ -9,49 +9,49 @@
       "IGAMING CPA"
     ],
     "deck": [
-      "SELL DECISION TOOLS. QUALIFY REFERRALS.",
-      "REGULATED VENUES. LICENSED PARTNERS."
+      "KALSHI AND POLYMARKET API TERMINALS, CROSS-VENUE ARBITRAGE SCANNERS AND LATENCY-BOUND TRADING BOTS",
+      "CPA, REVSHARE AND GGR/NGR AFFILIATE ECONOMICS BUILT INSIDE CFTC AND STATE EVENT-CONTRACT RULES"
     ],
-    "lead": "Build subscription-grade prediction-market tools and compliant gaming referral funnels without blurring their regulatory boundaries.",
-    "summary": "Prediction-market terminal economics depend on subscription retention after market-data licensing, infrastructure, support, and acquisition costs, while brokerage, execution, or advisory functions may introduce separate obligations. Licensed iGaming affiliate economics depend on approved jurisdictions, qualified-player CPA or permitted revenue share, fraud reversals, and operator terms, so gross signups and customer deposits are not earned affiliate revenue.",
+    "lead": "Practitioners wire Kalshi and Polymarket into normalized terminals, re-price every scanner gap against real order-book depth, and treat latency, contract rules, and settlement lag as the true limits on profit.",
+    "summary": "All 12 chapters synthesize 177 verbatim YouTube practitioner testimonies from Regulated Prediction-Market Terminals & Licensed iGaming Affiliates, spanning prediction-market APIs, cross-venue arbitrage, event-contract regulation, affiliate unit economics, +EV workflows, and casino traffic acquisition. Every claim, metric, pro-tip, and operator gate carries timestamped inline attribution to the practitioner and video it came from.",
     "chapters": [
-      "Q1: The Two-Lane Distribution Thesis",
-      "Q2: Permitted Venues & Licensed Operators",
-      "Q3: Subscription Margin & Qualified CPA",
-      "Q4: Licensing, Data Rights & Disclosures",
-      "Q5: Source Data & Build Audience",
-      "Q6: Validate Access & User Eligibility",
-      "Q7: Launch Terminals & Referral Funnels",
-      "Q8: Price Seats & Negotiate Affiliate Terms",
-      "Q9: Acquire Users Without Misleading Claims",
-      "Q10: Reconcile Usage & Qualified Conversions",
-      "Q11: Control Fraud & Gambling Harm",
-      "Q12: Scale by Approved Jurisdiction"
+      "Wiring the Terminal: Prediction-Market APIs, Dashboards & AI Bots",
+      "Cross-Venue Arbitrage & the Latency Problem",
+      "Inside the Pro Prediction-Market Desk",
+      "The Venue Map: Kalshi, ForecastEx & Brokered Event Contracts",
+      "The Event-Contract Rulebook: CFTC vs the States",
+      "Data Pipes & Secure Connectivity for Odds Operations",
+      "Affiliate Unit Economics: CPA, RevShare & GGR/NGR",
+      "Affiliate–Operator Partnerships & Market Portfolios",
+      "Launching Within the Rules: Platforms, Licensing & Compliance",
+      "The +EV Workflow: OddsJam, Sharp Books & Player Props",
+      "Traffic Wars: Casino SEO, AI Search & Ad Creatives",
+      "CFTC Machinery: Brokers, Customer Protection & AI Agents"
     ],
     "flow": [
       [
-        "SCOPE",
-        "Define separate terminal and affiliate offerings, approved markets, and activities requiring legal review."
+        "SOURCE",
+        "Pull Kalshi and Polymarket catalogs through their APIs in 200-event cursor pages, cache scrapes in SQLite or Streamlit, and keep RSA keys in .env files outside the code"
       ],
       [
-        "CONTRACT",
-        "Secure necessary data rights, venue permissions, operator agreements, and affiliate approvals."
+        "NORMALIZE",
+        "Map venues that share almost no IDs, field names, or order-book shapes through a normalization layer such as Predictify's 16-venue API"
       ],
       [
-        "BUILD",
-        "Deliver reliable analytics and clearly disclosed referrals without guaranteed-return claims."
+        "VERIFY",
+        "Run every cross-venue pair through the equivalence verdict, read the contract rules, and re-price each scanner gap on the compare tab before funding it"
       ],
       [
-        "GATE",
-        "Apply required access and marketing controls; never bypass operator age, identity, location, or self-exclusion checks."
+        "SIZE",
+        "Walk order-book depth at your actual stake and net out fees; a $100 two-leg pair showed $7.75 net after roughly 94 cents in fees"
       ],
       [
-        "CONVERT",
-        "Measure paid subscriptions and operator-validated qualifying customers rather than clicks or unverified registrations."
+        "DRY RUN",
+        "Run the bot dry with a $10 cap and read the logs for the snapshot, the estimate, and the trade-or-skip reason before enabling live trades"
       ],
       [
-        "RECONCILE",
-        "Net revenue against data costs, acquisition spend, cancellations, reversals, and compliance overhead."
+        "EXECUTE & SETTLE",
+        "Mimic market orders with fill-or-kill at an aggressive price, hedge any unfilled leg at the calculated size, and budget an hour to more than 12 hours for Kalshi settlement"
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "REGULATED PREDICTION-MARKET TERMINALS & LICENSED IGAMING AFFILIATES",
-  "subtitle": "The Complete Playbook for Regulated Prediction-Market Terminals and Licensed iGaming Affiliates: $75,000-$650,000 USD in Annual Operator Revenue, Starting with a 1 FT + 2 C Pod of 3 People",
+  "subtitle": "Cache the catalog, normalize Kalshi and Polymarket, gate every cross-venue pair on equivalence and book depth, make markets where retail buys longshots, read the rules before the first order, and run every affiliate deal through NGR math, FTD-first traffic and registration checks",
   "chapter_count": 12,
-  "total_word_count": 78941,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 73077,
+  "expert_youtube_link_count": 213,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:04Z"
+  "updated_at": "2026-11-25T00:44:08Z"
 }

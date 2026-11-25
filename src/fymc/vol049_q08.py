@@ -1,721 +1,854 @@
 from __future__ import annotations
 
-CHAPTER_8 = {
-    "id": "Q8",
-    "chapter_id": "Q8",
-    "chapter_number": 8,
-    "question_number": 8,
-    "slug": "public-records-apis-data-pipelines-operator-tooling",
-    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small regulated prediction-market terminals & licensed igaming affiliates desk an unfair information edge?",
-    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
-    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
-    "subtitle": "CFTC and NFA Records, State Gaming Registers, Permissioned Market Feeds, and Auditable CPA/NGR Attribution",
-    "layout_template": "resource_directory",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #49, Regulated Prediction-Market Terminals & Licensed iGaming "
-        "Affiliates, ranks #18 of 49 with a 91/100 score. This chapter maps 12 "
-        "operator plays onto an eighteen-source directory spanning CFTC records, "
-        "state gaming registers, permissioned market feeds, attribution systems, "
-        "and diagnostic tools. The edge comes from matching contract rules, "
-        "license scope, quote freshness, and payable commission evidence before "
-        "publishing a comparison or buying traffic. Keep subscription and permitted "
-        "builder revenue separate from licensed affiliate CPA and NGR earnings. "
-        "The scorecard produces annual owner profits of $19,500 Conservative, "
-        "$137,750 Base, and $325,000 Scaled. Build source provenance, replayable "
-        "events, and deduction-aware settlement first; add faster alerts only "
-        "where access rights and measured retention justify their cost."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$75,000",
-            "context": "Annual operator revenue; excludes customer deposits and trading volume",
-            "note": "26% net margin; $19,500 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$362,500",
-            "context": "Annual operator revenue; affiliate commissions measured after contractual deductions",
-            "note": "38.0% net margin; $137,750 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$650,000",
-            "context": "Annual operator revenue; excludes sportsbook handle and merchant proceeds",
-            "note": "50% net margin; $325,000 annual owner net profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Establish the legal entity, product, territory, and permission graph",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a permission graph, not a list of attractive odds. "
-                    "Represent every destination as a legal entity, consumer brand, "
-                    "approved domain, product class, territory, registration category, "
-                    "effective date, and evidence URL. The CFTC designated contract "
-                    "market list establishes exchange status; NFA BASIC helps check "
-                    "registrant identities and disciplinary history. Neither establishes "
-                    "that your particular referral arrangement is permitted. Read the "
-                    "exchange agreement and compare actual conduct with the introducing "
-                    "broker and futures commission merchant definitions in 7 U.S.C. "
-                    "1a and 17 CFR 1.3. Never accept customer funds, pool capital, "
-                    "collect brokerage credentials, or transmit orders through an "
-                    "analytics product without separately resolving the applicable "
-                    "registration framework. A paid publisher also needs a documented "
-                    "assessment of commodity trading adviser rules; a publication "
-                    "label alone does not settle the question. Assign one evidence "
-                    "owner and one backup for each destination. Capture the official "
-                    "page, retrieval time, effective date, and a SHA-256 digest. "
-                    "A dated screenshot supports a review trail but cannot replace "
-                    "the operative order or license record. Recheck before activating "
-                    "a destination and whenever an official notice changes its scope."
-                ),
-                (
-                    "Build a separate state gaming graph because a CFTC exchange "
-                    "record says nothing about sportsbook affiliate permissions. "
-                    "Consult New Jersey DGE, Pennsylvania PGCB, Michigan MGCB, and "
-                    "West Virginia Lottery records for the operator, approved brand, "
-                    "and relevant supplier or vendor treatment. Determine your own "
-                    "registration obligations from the compensation arrangement and "
-                    "activities rather than assuming every publisher uses one category. "
-                    "For Ontario, reconcile AGCO registration with iGaming Ontario's "
-                    "operator directory; Ontario is a separate jurisdiction, not an "
-                    "extension of a United States license. This chapter adopts a "
-                    "21+ affiliate publishing floor even where the local minimum "
-                    "differs, including Ontario's 19+ threshold. Apply destination "
-                    "eligibility before presenting outbound promotional links, and "
-                    "use jurisdiction-specific responsible-gaming resources. IP location "
-                    "is an imperfect publishing filter, not a replacement for the "
-                    "operator's regulated identity and location checks. Do not route "
-                    "United States readers to unlicensed offshore or crypto venues "
-                    "or unlawful sweepstakes casinos. If a register is inaccessible, "
-                    "preserve the last verified record for investigation, suppress "
-                    "affected acquisition links, and request current written evidence "
-                    "from the operator rather than treating silence as continued "
-                    "authorization. Record who restored the destination and why."
-                ),
-                (
-                    "The first nine directory entries are public evidence sources, "
-                    "not promised machine interfaces. Their no-charge access does not "
-                    "include engineering labor, bulk redistribution rights, or a "
-                    "service-level commitment. Use an official download when offered; "
-                    "otherwise conduct a modest scheduled page check consistent with "
-                    "published access conditions. Daily retrieval is an internal "
-                    "target for registers, while live launch decisions require a "
-                    "fresh check of the relevant record. Store publication time "
-                    "separately from retrieval time because a newly fetched page can "
-                    "still contain an old decision. Use conditional requests where "
-                    "supported, one outstanding request per host, bounded retries, "
-                    "and a circuit breaker after repeated failures. Treat an empty "
-                    "parser result as an incident, not proof that every license "
-                    "disappeared. Route structural changes to a human evidence queue. "
-                    "An enrichment waterfall should move from official entity record "
-                    "to official approved domain, then executed partner agreement, "
-                    "then internal campaign identifier. Reject fuzzy brand matches "
-                    "that join unrelated subsidiaries. This sequence prevents a "
-                    "cheap directory shortcut from creating expensive misdirected "
-                    "traffic. The practical output is a versioned destination manifest "
-                    "that both the publishing system and attribution service can "
-                    "read without independently interpreting license scope."
-                ),
-            ],
-            "table": {
-                "caption": "Official Evidence Directory, Entries 1–9: Access, Cadence, and Failure Recovery",
-                "headers": [
-                    "Named source and exact entry point",
-                    "Access method and cost tier",
-                    "Refresh target and request hygiene",
-                    "Fallback evidence and operator use",
-                ],
-                "rows": [
-                    [
-                        "CFTC Trading Organizations at cftc.gov; navigate Industry Oversight, Trading Organizations, Designated Contract Markets.",
-                        "Open official organization pages manually or through permitted retrieval; public access carries no subscription charge.",
-                        "Check relevant records daily and before launch; serialize requests and honor published access restrictions.",
-                        "Inspect the underlying CFTC designation order and exchange rulebook; suspend destinations with unresolved entity mismatches.",
-                    ],
-                    [
-                        "NFA BASIC at basic.nfa.futures.org; search the exact legal entity and available NFA identifier.",
-                        "Use the public browser search without bypassing interactive controls; basic record access is free.",
-                        "Review during onboarding and weekly thereafter; use human searches when automation permission is absent.",
-                        "Request the entity's registration details and verify against official records; do not substitute a marketing biography.",
-                    ],
-                    [
-                        "New Jersey Division of Gaming Enforcement at nj.gov/oag/ge; open internet gaming and vendor information.",
-                        "Read official operator, platform, and vendor materials; public pages and posted documents require no subscription.",
-                        "Check daily before New Jersey acquisition campaigns; cache documents and avoid repeated full-site retrieval.",
-                        "Use DGE orders and direct regulator clarification; compare approved domains against the executed affiliate agreement.",
-                    ],
-                    [
-                        "Pennsylvania Gaming Control Board at gamingcontrolboard.pa.gov; inspect interactive gaming and sports wagering license materials.",
-                        "Use official license pages, public meeting records, and downloads; public evidence access is free.",
-                        "Review daily and after board decisions; fetch changed documents rather than replaying every archived request.",
-                        "Consult the operative board order and operator contact; withhold Pennsylvania links while scope remains unresolved.",
-                    ],
-                    [
-                        "Michigan Gaming Control Board at michigan.gov/mgcb; open internet gaming and internet sports betting resources.",
-                        "Read authorized operator and provider information through official pages; public retrieval has no subscription fee.",
-                        "Check daily during active Michigan campaigns; use conditional retrieval and bounded retries where supported.",
-                        "Review MGCB notices and the relevant authorization record; pause links when brand-to-license mapping conflicts.",
-                    ],
-                    [
-                        "West Virginia Lottery at wvlottery.com; inspect sports wagering, interactive wagering, and licensing resources.",
-                        "Use official public pages and published documents; request clarification when the needed vendor detail is absent.",
-                        "Check weekly plus immediately before campaign activation; limit polling because public pages offer no latency commitment.",
-                        "Obtain current written status from the Lottery or operator; retain the response beside the destination record.",
-                    ],
-                    [
-                        "Alcohol and Gaming Commission of Ontario at agco.ca; follow iGaming Ontario market registration resources.",
-                        "Use official public information and available registry search; public browsing requires no commercial data subscription.",
-                        "Review Ontario destinations daily; respect search controls and avoid automated enumeration of registry records.",
-                        "Confirm the exact registrant and registration scope directly; AGCO evidence does not replace operator agreement checks.",
-                    ],
-                    [
-                        "iGaming Ontario at igamingontario.ca; open the official directory of regulated operators and gaming sites.",
-                        "Read the public operator directory and linked approved sites; access is free through an ordinary browser.",
-                        "Compare domains daily and before publishing Ontario promotions; save changed records with retrieval timestamps.",
-                        "Cross-check AGCO registration and current operator correspondence; remove links when the approved domain cannot be reconciled.",
-                    ],
-                    [
-                        "eCFR at ecfr.gov and Federal Register at federalregister.gov; retrieve cited sections, rules, and effective dates.",
-                        "Use official browser pages or documented public interfaces; access is free subject to published usage terms.",
-                        "Monitor relevant notices daily; paginate incrementally, cache responses, and obey each interface's published limits.",
-                        "Compare the official published rule and historical effective version; flag proposals separately from operative requirements.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four independent permissions before publishing an earning link",
-                "body": (
-                    "A valid operator record is only one component. The destination, "
-                    "your activity, the data rights, and the payable campaign must all match."
-                ),
-                "items": [
-                    "Match legal entity, approved domain, product, territory, and current status to dated primary evidence before enabling a destination.",
-                    "Document publisher, CTA, IB, and FCM boundary analysis for actual features and compensation; block custody, pooling, and unresolved order-routing features.",
-                    "Confirm affiliate registration requirements, 21+ publishing controls, territory filtering, responsible-gaming text, and permitted promotional language for each campaign.",
-                    "Verify display and redistribution rights, signed commercial terms, payable event definitions, reversal windows, and support contacts before assigning revenue expectations.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Acquire permissioned feeds and normalize contracts before measuring speed",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Separate discovery, quotation, and settlement into different "
-                    "pipelines. Kalshi documents market-data interfaces, including "
-                    "WebSocket access, but current authentication, account tiers, "
-                    "subscription limits, and redistribution terms must be verified "
-                    "in its official documentation and agreement. ForecastEx access "
-                    "may come through Interactive Brokers or another authorized "
-                    "distribution arrangement; do not invent a public ForecastEx "
-                    "WebSocket endpoint or assume a brokerage account permits "
-                    "commercial display. A commercial sportsbook feed such as "
-                    "Sportradar or The Odds API can accelerate coverage, yet feed "
-                    "availability does not establish affiliate permission or execution "
-                    "availability. Store provider identifier, venue identifier, "
-                    "contract identifier, source event time, receipt time, sequence "
-                    "number when supplied, and rights classification on every "
-                    "normalized record. Design for at-least-once delivery and deduplicate "
-                    "by stable identifiers rather than arrival order. The next nine "
-                    "directory entries distinguish public documentation from paid "
-                    "entitlements and self-hosted software. Their stated refresh "
-                    "cadences are operating targets, not vendor promises. Obtain "
-                    "written quotes for commercial access instead of embedding "
-                    "transient list prices into the business model. Keep a cheaper "
-                    "read-only fallback, but never silently replace a licensed "
-                    "real-time stream with scraped consumer screens."
-                ),
-                (
-                    "Cross-venue normalization is a contract interpretation problem "
-                    "before it is a probability calculation. Two election contracts "
-                    "can reference different certification authorities, deadlines, "
-                    "recount treatment, cancellation rules, or payout conditions. "
-                    "Sportsbook prices introduce overtime rules, pushes, voided "
-                    "legs, stake limits, and location-dependent availability. Attach "
-                    "a versioned settlement-rule fingerprint to each comparison "
-                    "pair and require an exact reviewed mapping before calling "
-                    "prices comparable. For an illustrative binary contract bought "
-                    "at $0.54 with an estimated $0.02 transaction cost, a research "
-                    "probability of 0.60 produces expected profit of $0.04 per "
-                    "contract before slippage and model error. That is analytics "
-                    "output, not operator revenue or an executable riskless spread. "
-                    "A sportsbook decimal price of 1.90 implies approximately "
-                    "52.63% before removing the bookmaker margin; it does not "
-                    "directly equal a clean probability estimate. Show displayed "
-                    "size, applicable fee assumptions, rule differences, and source "
-                    "timestamps alongside every comparison. If either quote is "
-                    "stale or a rule mapping changes, suppress the positive-edge "
-                    "badge and retain a historical chart. This fallback protects "
-                    "subscriber trust without manufacturing certainty from mismatched "
-                    "contracts or unavailable liquidity."
-                ),
-                (
-                    "Instrument the feed path before marketing sub-second alerts. "
-                    "Measure provider event time to receipt, receipt to normalization, "
-                    "and normalization to rendered alert separately; clock skew can "
-                    "otherwise make a slow system appear fast. An illustrative "
-                    "internal budget of 300 milliseconds for transport, 200 for "
-                    "normalization, and 300 for delivery totals 800 milliseconds "
-                    "only where the source genuinely supplies timely events. "
-                    "Polling every five seconds cannot support that claim. Apply "
-                    "token buckets per credential and endpoint, honor Retry-After, "
-                    "and reconnect with capped exponential backoff plus jitter. "
-                    "After a disconnect, recover from a documented snapshot and "
-                    "resume sequence only where the provider supports that method. "
-                    "Otherwise mark the interval incomplete and rebuild current "
-                    "state without claiming tick-perfect history. Use PostgreSQL "
-                    "for normalized facts, append-only object storage for permitted "
-                    "raw payloads, and Prometheus with Grafana for lag and gap "
-                    "metrics. Store secrets outside logs and redact partner click "
-                    "identifiers from broad dashboards. Diagnostic bundles should "
-                    "contain schema versions, request identifiers, and sanitized "
-                    "samples, not customer credentials. When the source fails, "
-                    "degrade visibly to delayed research and stop time-sensitive "
-                    "notifications until freshness and sequence checks recover."
-                ),
-            ],
-            "table": {
-                "caption": "Technical Directory, Entries 10–18: Commercial Entitlements, Data Interfaces, and Diagnostic Tools",
-                "headers": [
-                    "Named source and exact entry point",
-                    "Access method and cost tier",
-                    "Latency target and rate-limit hygiene",
-                    "Fallback source and recovery behavior",
-                ],
-                "rows": [
-                    [
-                        "Kalshi official API documentation at docs.kalshi.com; inspect market data, authentication, WebSocket, and rate-limit sections.",
-                        "Use documented REST and streaming interfaces under current entitlements; verify commercial display rights and any negotiated charges.",
-                        "Target sub-second processing only for supported live streams; obey account-specific limits and resynchronize after connection gaps.",
-                        "Use permitted REST snapshots with delayed labels; stop actionable alerts when source freshness cannot be established.",
-                    ],
-                    [
-                        "ForecastEx at forecastex.com and Interactive Brokers documentation at interactivebrokers.com/campus; identify authorized market-data access.",
-                        "Obtain approved broker or distributor access; account, market-data, and commercial rights costs depend on the executed arrangement.",
-                        "Measure the actual entitled interface cadence; obey broker pacing restrictions rather than assuming exchange-native streaming access.",
-                        "Use official contract specifications and permitted delayed information; remove live comparisons when authorized quotations are unavailable.",
-                    ],
-                    [
-                        "Sportradar developer portal at developer.sportradar.com; select the licensed odds product and documented coverage package.",
-                        "Request trial access where offered, then a production quote; commercial redistribution rights require explicit contractual coverage.",
-                        "Use product-specific push or polling cadence; respect purchased request allowances and handle quota exhaustion without repeated retries.",
-                        "Switch only to another licensed feed with equivalent mappings; otherwise display delayed research without current-price claims.",
-                    ],
-                    [
-                        "The Odds API documentation at the-odds-api.com; inspect supported sports, markets, regions, and quota accounting.",
-                        "Use a documented API key and current plan; trial or entry access and paid tiers have changing allowances.",
-                        "Poll within purchased credits and returned usage indicators; align cadence with the provider's actual market update interval.",
-                        "Use a separately licensed backup source or cached historical prices; mark missing markets rather than inventing coverage.",
-                    ],
-                    [
-                        "Executed affiliate partner portal and its S2S specification; obtain the exact hostname from the signed operator agreement.",
-                        "Access operator-issued credentials and documented callbacks; portal access is contractual, while tracking integration consumes staff time.",
-                        "Process callbacks immediately and reconcile daily exports; enforce signatures, replay protection, deduplication, and partner-specific retry limits.",
-                        "Use signed settlement exports and partner case references; keep disputed events outside collected commission totals.",
-                    ],
-                    [
-                        "MaxMind GeoIP documentation at dev.maxmind.com; evaluate GeoLite2 and GeoIP2 database or service access.",
-                        "Use licensed local databases or a paid service; free GeoLite2 access still requires applicable account and license terms.",
-                        "Refresh databases on the vendor's published schedule; cache local lookups and limit paid requests by campaign need.",
-                        "Suppress restricted acquisition links when location confidence is insufficient; operator-side regulated geolocation remains a separate requirement.",
-                    ],
-                    [
-                        "PostgreSQL at postgresql.org/docs; use SQL, constraints, transaction logs, and supported backup procedures.",
-                        "Self-host the open-source database or purchase managed hosting; software license cost is separate from storage and operations.",
-                        "Commit normalized events promptly and batch reports; bound connection pools and test recovery against measured ingestion volume.",
-                        "Replay permitted immutable payloads into a restored instance; preserve idempotency keys to prevent duplicated commission claims.",
-                    ],
-                    [
-                        "Prometheus at prometheus.io/docs and Grafana at grafana.com/docs; configure metrics collection and service dashboards.",
-                        "Self-host available open-source editions or buy hosted plans; budget compute, retention, and alert delivery separately.",
-                        "Scrape internal metrics every fifteen seconds as an initial target; control label cardinality and alert on stale collection.",
-                        "Use structured application logs and direct health probes; do not infer healthy feeds from a silent dashboard.",
-                    ],
-                    [
-                        "mitmproxy at docs.mitmproxy.org and curl at curl.se/docs; inspect authorized integration traffic and HTTP behavior.",
-                        "Use open-source tools on your own test clients; capture only traffic and accounts explicitly authorized for inspection.",
-                        "Run targeted diagnostic sessions rather than continuous broad capture; honor endpoint limits and redact credentials before sharing evidence.",
-                        "Reproduce failures with sanitized request fixtures and provider request identifiers; never intercept unrelated customer sessions.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four techniques that prevent attractive dashboards from hiding weak evidence",
-                "body": (
-                    "The highest-value optimizations make a disputed number explainable "
-                    "without asking the founder to reconstruct an entire session."
-                ),
-                "items": [
-                    "Hash settlement-rule text and alert on changes; identical event names can conceal incompatible payout definitions.",
-                    "Keep source timestamps beside receipt timestamps; provider-side batching can defeat an otherwise fast alert engine.",
-                    "Attach the partner's original event identifier to every payable FTD; duplicate callbacks must never create duplicate receivables.",
-                    "Separate stale-price suppression from historical-chart availability; subscribers can retain useful research while live alerts remain disabled.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Turn verified evidence into comparison content and measurable subscriber value",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The chapter's twelve mapped plays connect evidence acquisition "
-                    "to revenue, with six infrastructure plays below and six "
-                    "commercial plays in the final matrix. The required "
-                    "competitor_intent_comparison_hijacking play belongs to TRACK_2: "
-                    "build useful pages for '[Competitor] pricing', '[Competitor] "
-                    "cancel', and '[Competitor] vs [Offer]' queries. Treat the name "
-                    "as an internal acquisition label, not permission to impersonate "
-                    "a competitor or interfere with cancellation. Publish text-only "
-                    "brand references, timestamped public pricing citations, honest "
-                    "feature matrices, and direct links to the competitor's own "
-                    "cancellation instructions. Nominative fair use is context-dependent; "
-                    "keep references necessary, accurate, and free of implied "
-                    "endorsement. Do not copy logos, fabricate affiliations, or "
-                    "describe a paid placement as an independent ranking. Disclose "
-                    "material affiliate relationships clearly near relevant recommendations "
-                    "under 16 CFR 255.5. If a fee cannot be verified, remove "
-                    "that calculation and show the source-check date instead. "
-                    "Programmatic publishing should require a complete evidence "
-                    "record for each claim, not merely a template and a keyword. "
-                    "A broken source should automatically retire affected factual "
-                    "claims while preserving genuinely useful explanatory material "
-                    "that remains supported."
-                ),
-                (
-                    "Use the proposed 10–18% conversion range as a test hypothesis "
-                    "for qualified comparison visitors, not an assumed sitewide "
-                    "result. At 1,000 qualified visits, a 10% paid conversion "
-                    "produces 100 subscribers; 18% produces 180. At an illustrative "
-                    "$40 monthly subscription, those cohorts create $4,000 or "
-                    "$7,200 of first-month billed subscription value before refunds, "
-                    "payment costs, churn, and tax treatment. With $6 variable "
-                    "service cost per paid subscriber, first-month contribution "
-                    "before acquisition and shared overhead is $3,400 or $6,120. "
-                    "If traffic costs $2,500, the remaining amounts are $900 "
-                    "and $3,620. These cohort examples are not additional scorecard "
-                    "revenue and cannot be annualized without retention evidence. "
-                    "Measure completed paid starts separately from free account "
-                    "creation, then reconcile paid starts against processor "
-                    "settlements. Segment direct SaaS buyers from sportsbook "
-                    "affiliate referrals so one click does not receive two "
-                    "incompatible revenue assumptions. A cancellation guide can "
-                    "convert by solving an urgent user problem, but it must "
-                    "never obstruct the original cancellation. When paid traffic "
-                    "misses its contribution threshold, stop buying that segment "
-                    "and retain the evidence-backed organic page."
-                ),
-                (
-                    "Design calculators around reproducible inputs rather than "
-                    "persuasive output. A fee calculator should expose contract "
-                    "quantity, quoted price, applicable fee schedule, subscription "
-                    "charge, and the timestamp of every external assumption. "
-                    "Retain a calculation version so support can reproduce what "
-                    "a reader saw. An enrichment waterfall for comparison content "
-                    "starts with the venue's official rulebook and pricing page, "
-                    "then a permissioned market feed, then an executed partner "
-                    "schedule, and finally an editor-confirmed exception. Do not "
-                    "enrich individual readers with purchased gambling propensity "
-                    "or vulnerability indicators. Use campaign-level attribution "
-                    "and the minimum identifiers required for reconciliation. "
-                    "For migration guides, accept only customer-authorized exports "
-                    "and document which watchlists or research settings can "
-                    "actually move; never request brokerage passwords. Subscription "
-                    "retention should be earned through reliable alerts, transparent "
-                    "methodology, and fast defect resolution. At 400 active "
-                    "subscribers, reducing monthly voluntary churn from 5% to "
-                    "4% retains four additional subscribers for that month, "
-                    "worth $160 in billed value at $40 each before costs. "
-                    "That unit math supports a small reliability project, not "
-                    "an unlimited engineering budget. If retention does not "
-                    "improve, revert the experiment and examine cohort-specific "
-                    "failure reports."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped Plays 1–6: Evidence and Market-Data Infrastructure",
-                "headers": [
-                    "Mapped implementation play",
-                    "Concrete evidence-to-product workflow",
-                    "Illustrative unit math and decision",
-                    "Risk trigger and operating fallback",
-                ],
-                "rows": [
-                    [
-                        "Play 1, registry_change_monitoring, maintains the versioned approved-destination manifest.",
-                        "Compare official entity and domain evidence against current campaign destinations before each activation.",
-                        "Checking twenty destinations for three minutes each requires sixty minutes per review cycle.",
-                        "A changed license scope suppresses affected links until a documented review resolves the discrepancy.",
-                    ],
-                    [
-                        "Play 2, contract_rule_diffing, detects settlement changes before comparison claims persist.",
-                        "Hash retrieved rule text and route material differences to an editor with source evidence.",
-                        "Reviewing ten flagged mappings for six minutes each consumes one hour of specialist attention.",
-                        "A material rule mismatch removes the comparison pair while preserving separately labeled historical charts.",
-                    ],
-                    [
-                        "Play 3, licensed_destination_verification, separates territory eligibility from commercial preference.",
-                        "Join approved domains to executed partner agreements and territory-specific promotional requirements.",
-                        "Four territories multiplied by five approved brands creates twenty destination records requiring explicit ownership.",
-                        "Missing domain evidence disables outbound promotion rather than substituting an offshore or unlicensed destination.",
-                    ],
-                    [
-                        "Play 4, cross_venue_probability_normalization, compares reviewed contract definitions rather than similar event names.",
-                        "Normalize payout conditions, market prices, fees, and quoted size before displaying probability differences.",
-                        "A 0.60 estimate less 0.54 price and 0.02 costs yields 0.04 expected dollars per contract.",
-                        "Different settlement conditions or missing fee inputs remove the positive-edge badge pending revalidation.",
-                    ],
-                    [
-                        "Play 5, stale_quote_suppression, enforces source freshness before sending paid alerts.",
-                        "Measure event age and sequence integrity independently from application uptime and subscriber delivery success.",
-                        "An 800-millisecond internal budget combines 300 transport, 200 processing, and 300 delivery milliseconds.",
-                        "Polling-only sources or stream gaps switch the product to explicitly delayed research without live alerts.",
-                    ],
-                    [
-                        "Play 6, net_fee_calculator, makes displayed comparisons independently reproducible by subscribers.",
-                        "Version fee schedules and record quantity, quote time, subscription assumptions, and applicable transaction charges.",
-                        "Ten contracts priced at 0.54 plus 0.02 each require an illustrative total outlay of $5.60.",
-                        "An inaccessible pricing source removes the affected calculation until current fee evidence is restored.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Capture and classify primary evidence",
-                    "action": "Create a source record with entity, territory, URL, retrieval time, effective date, rights category, and content digest.",
-                    "detail": "Assign a named owner and review cadence; distinguish proposed rules, operative requirements, commercial terms, and measured observations.",
-                },
-                {
-                    "step": 2,
-                    "title": "Normalize with replayable identifiers",
-                    "action": "Join contract identifiers and partner campaign identifiers through reviewed mappings rather than fuzzy brand text.",
-                    "detail": "Preserve source event identifiers, schema versions, and permitted raw payloads so duplicates and corrections can be replayed safely.",
-                },
-                {
-                    "step": 3,
-                    "title": "Publish only supported comparisons",
-                    "action": "Check source freshness, settlement equivalence, fee versions, territory eligibility, and adjacent affiliate disclosures before rendering.",
-                    "detail": "Suppress affected claims or links when checks fail; retain clearly labeled historical material that still has adequate evidence.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile value and retire weak experiments",
-                    "action": "Compare paid subscriber settlements and approved partner commissions against campaign costs and source operating costs.",
-                    "detail": "Record reversal windows, collection status, churn, and off-season performance; stop spend when collected contribution misses the documented threshold.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Reconcile attribution, deductions, and seasonality to the exact scorecard",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Keep three ledgers: subscriptions, permitted builder arrangements, "
-                    "and licensed gaming affiliates. The first records your SaaS "
-                    "service revenue; the second records only contractually earned "
-                    "software or referral consideration after boundary review; "
-                    "the third records payable CPA and NGR commissions after "
-                    "contractual adjustments. Under an ASC 606 principal-versus-agent "
-                    "assessment, an affiliate generally reports its earned "
-                    "commission rather than customer deposits, sportsbook handle, "
-                    "or the operator's gaming revenue. Where retained_share "
-                    "applies to pass-through billings, multiply by that share "
-                    "once; never apply another haircut to a commission already "
-                    "reported net. An illustrative Base bridge is 400 average "
-                    "paid subscribers times $40 times twelve months, or $192,000, "
-                    "plus $20,500 of permitted builder consideration and $150,000 "
-                    "of net affiliate commissions, totaling $362,500. The affiliate "
-                    "component can comprise 1,000 finally approved CPA events "
-                    "at $120, yielding $120,000, plus $30,000 of NGR commissions "
-                    "from a separate eligible cohort. An NGR example starts "
-                    "with $200,000 gaming revenue, subtracts $50,000 contractual "
-                    "deductions, applies a 25% share to $150,000, and subtracts "
-                    "$7,500 carried losses from $37,500. The resulting $30,000 "
-                    "is operator affiliate revenue, not $200,000."
-                ),
-                (
-                    "The Base scorecard allows $224,750 of total annual operating "
-                    "costs because $362,500 less $137,750 equals $224,750. An "
-                    "illustrative allocation is $60,000 acquisition, $74,000 staffed "
-                    "engineering and editorial work, $24,000 hosting and feeds, "
-                    "$21,750 verification and support, and $45,000 other operating "
-                    "costs, including remaining staff and administration. These "
-                    "amounts sum exactly to the allowed cost envelope; owner "
-                    "distributions are not an additional operating deduction. "
-                    "Deduct NGR bonuses and administration charges in the "
-                    "commission bridge, not again in overhead. The Conservative "
-                    "case remains $75,000 revenue less $55,500 costs, producing "
-                    "$19,500 at 26%. The Scaled case remains $650,000 less "
-                    "$325,000, producing $325,000 at 50%; Base remains 38.0%. "
-                    "Keep teams at 1 FT + 2 C for Conservative and Base, "
-                    "and 2 FT + 3 C for Scaled. Model sportsbook seasonality "
-                    "monthly without changing these annual totals silently. "
-                    "For example, four off-season months losing twenty payable "
-                    "FTDs each at $120 reduce expected CPA revenue by $9,600 "
-                    "unless other earned revenue replaces it. Treat that as "
-                    "a downside forecast variance, reduce marginal acquisition "
-                    "spend, and preserve the canonical scenario as the comparison "
-                    "baseline rather than pretending the gap disappeared."
-                ),
-                (
-                    "S2S attribution needs a state machine, not a counter that "
-                    "increments whenever a callback arrives. Record click accepted, "
-                    "registration reported, first deposit reported, eligibility "
-                    "reviewed, commission approved, commission reversed, and cash "
-                    "collected as separate events. The operator determines the "
-                    "payable FTD under its contract, including age, territory, "
-                    "duplicate-account, minimum-deposit, and promotional conditions. "
-                    "Your publishing filter does not certify those conditions. "
-                    "Verify callback signatures, enforce timestamp windows, "
-                    "deduplicate partner event identifiers, and reconcile daily "
-                    "against exports. Reconcile monthly against settlement "
-                    "statements and bank receipts. Track negative carryover "
-                    "by partner and contractual cohort; do not spread it "
-                    "across unrelated partners to flatter performance. For "
-                    "a campaign costing $6,000 that produces eighty approved "
-                    "FTDs at $120, gross commission is $9,600 and contribution "
-                    "before shared costs is $3,600. Ten later reversals reduce "
-                    "those figures to $8,400 and $2,400. Maintain a reserve "
-                    "policy based on observed reversal timing and payment "
-                    "disputes. Pause spend when collected contribution falls "
-                    "below the acquisition threshold, when a partner reduces "
-                    "its CPA budget, or when evidence cannot support attribution. "
-                    "The final dashboard should explain every dollar from source "
-                    "event to collected cash."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped Plays 7–12: Conversion, Retention, Attribution, and Net Commission Protection",
-                "headers": [
-                    "Mapped commercial play",
-                    "Exact operating implementation",
-                    "Illustrative unit math and decision",
-                    "Risk fallback and evidence requirement",
-                ],
-                "rows": [
-                    [
-                        "Play 7, competitor_intent_comparison_hijacking, applies the TRACK_2 comparison-content acquisition method.",
-                        "Publish text-only pricing, cancellation, and alternative pages with timestamped official citations and clear relationship disclosures.",
-                        "One thousand qualified visits at 10–18% paid conversion produce 100–180 subscribers before churn and refunds.",
-                        "Rely strictly on necessary nominative references; remove unsupported claims and avoid logos, spoofing, or implied endorsement.",
-                    ],
-                    [
-                        "Play 8, permissioned_migration_guides, converts research friction into a documented subscriber onboarding workflow.",
-                        "Import only customer-authorized watchlists or research settings, and link directly to genuine cancellation instructions.",
-                        "Saving fifteen minutes across forty migrations returns ten customer hours while keeping credential handling outside scope.",
-                        "When export rights or compatibility fail, offer a manual checklist instead of requesting brokerage passwords.",
-                    ],
-                    [
-                        "Play 9, subscription_cohort_retention, ties reliability improvements to measured subscriber contribution.",
-                        "Compare churn, alert defects, support contacts, and settled subscription receipts across explicitly defined cohorts.",
-                        "Reducing monthly churn from 5% to 4% across 400 subscribers retains four accounts worth $160 billed.",
-                        "Stop expanding the experiment when measured retention does not improve; inspect actual defect reports before rebuilding.",
-                    ],
-                    [
-                        "Play 10, geofenced_s2s_ftd_reconciliation, separates location filtering from operator-confirmed payable conversions.",
-                        "Join signed callbacks, approved destination records, partner exports, reversal events, and collected settlement receipts.",
-                        "Eighty approved FTDs at $120 yield $9,600; subtracting $6,000 acquisition leaves $3,600 before shared costs.",
-                        "Ten reversed events reduce contribution to $2,400; pause campaigns when collected results breach the acquisition threshold.",
-                    ],
-                    [
-                        "Play 11, ngr_deduction_audit, reconstructs payable share after contractually specified reductions and carryover.",
-                        "Reconcile gaming revenue, bonuses, administration charges, share percentage, historical losses, and current settlement adjustments.",
-                        "A $150,000 adjusted basis at 25% yields $37,500; subtracting $7,500 carryover leaves $30,000 payable.",
-                        "Dispute unsupported deduction lines with statement evidence; keep contested amounts outside collected commission reporting.",
-                    ],
-                    [
-                        "Play 12, seasonality_budget_reallocation, protects contribution when sportsbook acquisition budgets contract after peak seasons.",
-                        "Forecast payable events monthly and move acquisition only toward channels with observed positive collected contribution.",
-                        "Losing twenty monthly FTDs for four months at $120 creates a $9,600 annual revenue shortfall.",
-                        "Reduce marginal spend and publish the downside variance; never fill missing revenue with customer handle or deposits.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "The information edge is the shortest auditable path from an official "
-        "permission and a fresh quote to a collected dollar."
-    ),
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Build the destination manifest from CFTC, NFA, and applicable gaming records; attach entity, domain, territory, effective date, evidence URL, and review owner.",
-        "Document publisher, CTA, IB, and FCM boundaries for the actual product and compensation; keep custody, pooled capital, and unresolved order transmission outside the service.",
-        "Obtain feed entitlements and display rights, then instrument source age, processing latency, sequence gaps, endpoint quotas, and visible degraded-mode behavior.",
-        "Publish one evidence-backed comparison cluster with text-only brand references, live fee assumptions, direct cancellation instructions, and adjacent affiliate disclosures.",
-        "Implement signed S2S event ingestion and reconcile approved FTDs, NGR deductions, negative carryover, reversals, and cash receipts without duplicate commission recognition.",
-        "Reconcile the exact $75,000, $362,500, and $650,000 revenue cases to $19,500, $137,750, and $325,000 owner profits; track seasonality as an explicit forecast variance.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "7 U.S.C. 1a — Commodity Exchange Act definitions",
-            "url": "https://www.law.cornell.edu/uscode/text/7/1a",
-            "relevance": (
-                "Defines commodity trading adviser, introducing broker, futures "
-                "commission merchant, and other relevant categories; assess actual "
-                "services and compensation rather than relying on a publisher label."
-            ),
-        },
-        {
-            "title": "17 CFR 1.3 — Definitions",
-            "url": "https://www.ecfr.gov/current/title-17/chapter-I/part-1/section-1.3",
-            "relevance": (
-                "Supports activity-based review of intermediary status and the "
-                "distinction between analytics publishing, solicitation, order "
-                "handling, and customer-fund activity."
-            ),
-        },
-        {
-            "title": "17 CFR 4.14 — Exemption from registration as a commodity trading adviser",
-            "url": "https://www.ecfr.gov/current/title-17/chapter-I/part-4/section-4.14",
-            "relevance": (
-                "Provides specific exemption conditions requiring fact-sensitive "
-                "review; a non-custodial dashboard is not automatically outside "
-                "all adviser registration requirements."
-            ),
-        },
-        {
-            "title": "17 CFR 38.251 — General requirements for prevention of market disruption",
-            "url": "https://www.ecfr.gov/current/title-17/chapter-I/part-38/subpart-E/section-38.251",
-            "relevance": (
-                "Addresses designated contract market risk controls and market "
-                "disruption safeguards; supports monitoring exchange notices "
-                "without mischaracterizing exchange duties as affiliate permission."
-            ),
-        },
-        {
-            "title": "16 CFR 255.5 — Disclosure of material connections",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
-            "relevance": (
-                "Explains disclosure expectations for material connections in "
-                "endorsements; place clear affiliate relationship disclosures "
-                "where readers evaluate recommendations."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 1125 — False designations of origin and false descriptions",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1125",
-            "relevance": (
-                "Provides the statutory context for avoiding misleading "
-                "affiliation and false comparative claims; necessary text-only "
-                "brand references still require context-sensitive review."
-            ),
-        },
-        {
-            "title": "18 U.S.C. 1084 — Transmission of wagering information",
-            "url": "https://www.law.cornell.edu/uscode/text/18/1084",
-            "relevance": (
-                "Relevant to assessing sports-wagering communications and "
-                "interstate activity; do not infer that an affiliate agreement "
-                "authorizes accepting or transmitting customer wagers."
-            ),
-        },
-    ],
-}
+CHAPTER_8 = {'id': 'Q8',
+ 'chapter_id': 'Q8',
+ 'chapter_number': 8,
+ 'question_number': 8,
+ 'slug': 'affiliate-operator-partnerships-market-portfolios',
+ 'question_prompt': 'How do affiliates build durable partnerships and portfolios across regulated and '
+                    'emerging markets?',
+ 'kicker': 'Q8 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Affiliate–Operator Partnerships & Market Portfolios',
+ 'subtitle': 'Building strong operator partnerships, burning budget on wrong pitches, diversifying '
+             "portfolios around regulation, LatAm after Brazil's ban, US state-by-state sports betting, "
+             "sports-betting affiliate niches, affiliate networks, Catena Media's view, SlotCatalog "
+             'marketplace, and creating value for studios',
+ 'layout_template': 'legal_compliance_callout',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners from AffPapa, Mr Gamble, Income Access, Pin-Up Partners, SlotCatalog, '
+                      'and Catena Media agree affiliates are the permanent acquisition layer: over 74% of '
+                      'operators use them and they bring 30 to 50% of new depositors. Consensus has '
+                      "shifted from volume to relevance, with FTD no longer treated as the funnel's end. "
+                      "Street mechanics are concrete: test deposits as a player, demand an operator's top "
+                      '10 GEOs and conversion data, require local payments like Interac, geo-target US '
+                      'state pages, and slow or stop traffic when EPC shifts. Pricing spans US CPAs from '
+                      '$250 to $1,000, with one source citing over $3000. Disagreements run on deal '
+                      'models, where Nikoghosyan says no CPA or rev-share model is best, and on GEO '
+                      "strategy, from Klosa's tier-2/3 rotation to Nikoghosyan's single-GEO focus.",
+ 'key_metrics': [{'label': 'Operators Using Affiliates',
+                  'metric': 'Operators Using Affiliates',
+                  'value': '74%+ of operators; affiliates bring 30 to 50% of all new depositing players',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "CasinoRank+Insider sizing of the affiliate channel's share of operator "
+                             'acquisition, a channel valued at over $7B in 2025.',
+                  'source': 'CasinoRank+Insider ([XU9tdzKAxdU @ 00:00:33])'},
+                 {'label': 'Revenue Burned Without GEO Segmentation',
+                  'metric': 'Revenue Burned Without GEO Segmentation',
+                  'value': '10K earned and 90K burned out of a 100K-a-month potential',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Levon Nikoghosyan on affiliates who fail to segment traffic by GEO (Morocco, '
+                             'US, LatAm) and leak most of their earning potential.',
+                  'source': 'Odys Podcast: The High Stakes Growth Show ([ohEZ5-gHckQ @ 00:20:12])'},
+                 {'label': 'US Sports Betting CPA Range',
+                  'metric': 'US Sports Betting CPA Range',
+                  'value': 'Well up from $250 to as high as $1,000, hybrid deals included',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'CPA levels quoted for mobile-first, high-value US sports bettors in strictly '
+                             'regulated states.',
+                  'source': 'iGaming Marketing Agency Tips by Christian Strutt ([MKTk-Y-xt1I @ 00:02:12])'},
+                 {'label': 'Ad Accounts: Regulated vs Grey Markets',
+                  'metric': 'Ad Accounts: Regulated vs Grey Markets',
+                  'value': 'One optimized ad account instead of 100 to 300',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Alexander Klosa of Pin-Up Partners on why regulated markets perform better '
+                             'than grey zones that burn through blocked accounts.',
+                  'source': 'Revpanda Group ([qOL8mMQPJyI @ 00:07:53])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus — Affiliates Are the Permanent '
+                          'Acquisition Layer and Relevance Beats Volume',
+               'paragraphs': ['Every operator-side and affiliate-side voice starts from the same premise: '
+                              'the affiliate channel is structural, not optional. Levon Nikoghosyan, CEO '
+                              'of AffPapa, says flatly that running the industry without affiliates is '
+                              '“impossible” because they hold the largest share of traffic [ohEZ5-gHckQ @ '
+                              '00:03:37]. CasinoRank+Insider puts hard numbers on it: over 74% of '
+                              'operators use affiliates, those partners bring in 30 to 50% of all new '
+                              'depositing players, and the channel is worth over $7B in 2025 [XU9tdzKAxdU '
+                              '@ 00:00:33]. The SlotCatalog team says the affiliate model will stay a '
+                              'large part of its revenue but is no longer enough on its own [GM2_yRmV_Bw @ '
+                              '00:03:19]. Erica, VP of Marketing at Income Access, frames the whole game '
+                              "in one line, “It's a relationship built industry,” and the follow-up advice "
+                              'is to find what performs, then ask affiliates directly what they need from '
+                              'the operator [H4Pub14VDXA @ 00:03:49]. The operator takeaway is blunt. '
+                              'Affiliates are the acquisition backbone, but the partnership is a living, '
+                              'day-to-day relationship, not a tracking link handed over and forgotten. '
+                              'Erica names that exact pattern, setting affiliates up, handing them data, '
+                              "and never engaging on what isn't working, as the single biggest mistake "
+                              'operators make.',
+                              'The second point of agreement is that raw volume is finished as a selling '
+                              'point; relevance and downstream value are the new currency. Nikoghosyan '
+                              'says tier-1 affiliates choose brands on traffic relevance, conversion, and '
+                              "fairness with no shaving, summed up as “It's about how relevant your "
+                              'traffic is to them” [ohEZ5-gHckQ @ 00:07:57]. On the Affnook webinar, Joe '
+                              'Hatches argues an FTD is no longer the end of the funnel and that '
+                              'affiliates must own their data and attribution across the whole pipeline, '
+                              'while Brendan adds that big publishers now maximize value per FTD instead '
+                              'of pushing CPA volume [jE9PBJOzw_E @ 00:00:17]. Daniel, on the same panel, '
+                              'agrees with both and says regulation shifted attention to click-to-deposit '
+                              'drop-off, because it is “not... just a volume game” [jE9PBJOzw_E @ '
+                              '00:01:39]. Erica reports the identical shift from the Income Access side: '
+                              'quality versus quantity is the hot topic, operators entering new markets do '
+                              'not want “mass traffic,” and they want partnerships balanced around “high '
+                              'value KPIs” [H4Pub14VDXA @ 00:00:43]. Put together, the consensus brief for '
+                              'an operator is simple. Buy relevance per GEO, measure past the first '
+                              'deposit, and judge every partner on what converts after the click rather '
+                              'than how many clicks arrive.',
+                              'The baseline prerequisites for a partnership are just as consistent across '
+                              'speakers. Paul, CMO at Mr Gamble, works with licensed casinos only, tests '
+                              'deposits and landing pages as a player, checks forums for late payments, '
+                              'and treats localized payments as mandatory: Canada without Interac is a “no '
+                              'go” [R-_FHgwDEFQ @ 00:12:03]. Paul runs this screen across the UK, Canada, '
+                              "New Zealand, and the Nordics. Nikoghosyan's first red-flag check is "
+                              'operating history. Ask how long the brand has been live and confirm with '
+                              'other affiliates, because operators running only a couple of months can '
+                              'vanish [ohEZ5-gHckQ @ 00:12:00]. On the Peaky Ads episode, Nikoghosyan '
+                              'lists why deals actually die: a mismatch on payments, localization, '
+                              'language, games, or odds, followed by term changes or shaving, and finally '
+                              'a plain lack of trust [JCr5X66vWg4 @ 00:08:51]. The sharpest single tell is '
+                              'an operator pitching “we work worldwide” with no defined GEO; those brands '
+                              'pay listing fees, fail to convert, and get delisted [JCr5X66vWg4 @ '
+                              '00:15:02]. Stack those together and the shared checklist writes itself: a '
+                              'licensed brand, local payment rails, a track record other affiliates will '
+                              'vouch for, a defined GEO list, and terms that are never rewritten or shaved '
+                              'once the traffic starts flowing.'],
+               'table': {'caption': 'Practitioner consensus on affiliate-operator partnerships and the '
+                                    'operator move each point implies',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Said',
+                                     'Operator Move',
+                                     'Expert Source'],
+                         'rows': [['Affiliates are a permanent, structural acquisition channel for '
+                                   'operators',
+                                   'Running the industry without affiliates is impossible; they hold the '
+                                   'largest traffic share',
+                                   'Budget affiliate partnerships as core acquisition, never as a side '
+                                   'experiment',
+                                   'Odys Podcast: The High Stakes Growth Show ([ohEZ5-gHckQ @ 00:03:37])'],
+                                  ['Affiliates deliver a large share of new depositing players',
+                                   'Over 74% of operators use affiliates, who bring 30 to 50% of new '
+                                   'depositors',
+                                   'Plan for affiliates to supply a large slice of first-time depositing '
+                                   'players',
+                                   'CasinoRank+Insider ([XU9tdzKAxdU @ 00:00:33])'],
+                                  ['Traffic relevance decides which brands tier-1 affiliates accept',
+                                   'Tier-1 affiliates pick brands on relevance, conversion, and fairness '
+                                   'with zero shaving',
+                                   'Pitch partners only with GEO-relevant offers and clean, unshaved '
+                                   'player reporting',
+                                   'Odys Podcast: The High Stakes Growth Show ([ohEZ5-gHckQ @ 00:07:57])'],
+                                  ['The first deposit is no longer the end of the funnel',
+                                   'Own data and attribution across the pipeline; maximize value per FTD '
+                                   'over volume',
+                                   'Track click-to-deposit drop-off and post-FTD value for every single '
+                                   'partner',
+                                   'Affnook ([jE9PBJOzw_E @ 00:00:17])'],
+                                  ['Operators entering new markets reject mass traffic from partners',
+                                   'Quality versus quantity is the hot topic, balanced around high value '
+                                   'KPIs',
+                                   'Set high value KPIs before signing any media or affiliate partner',
+                                   'Ace Alliance ([H4Pub14VDXA @ 00:00:43])'],
+                                  ['Vet every operator as a real player before sending traffic',
+                                   'Licensed casinos only, test deposits, forum checks for late payments, '
+                                   'localized payments',
+                                   'Run deposit tests and forum checks before listing any operator brand '
+                                   'anywhere',
+                                   'Ace Alliance ([R-_FHgwDEFQ @ 00:12:03])'],
+                                  ['Broken trust and mismatched fundamentals kill affiliate-operator deals',
+                                   'Deals fail on payment, localization, language, games, or odds '
+                                   'mismatch, shaving, and distrust',
+                                   'Keep terms stable and never shave affiliate numbers after traffic '
+                                   'starts landing',
+                                   'Peaky Ads – Marketing Podcasts & Interviews ([JCr5X66vWg4 @ '
+                                   '00:08:51])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers — Vetting Scripts, Deal '
+                          'Pricing, GEO Segmentation & Execution Controls',
+               'paragraphs': ['The vetting script Paul runs at Mr Gamble is concrete. Ask the operator for '
+                              'its top 10 GEOs and its conversion numbers, then benchmark those figures '
+                              'against data on “100 thousand casinos” before committing a single click of '
+                              'traffic [R-_FHgwDEFQ @ 00:12:03]. The tool stack is deliberately basic; '
+                              'Paul names “Sim rush or offers” as the plain SEO tools in use at Mr Gamble '
+                              '[R-_FHgwDEFQ @ 00:15:34]. Nikoghosyan puts a price on skipping that '
+                              'homework: spending 10K to 20K on listings is wasted when the traffic is not '
+                              'relevant [ohEZ5-gHckQ @ 00:16:36]. Segmentation by GEO is the next lever. '
+                              'Nikoghosyan tells affiliates to split traffic by GEO, naming Morocco, the '
+                              'US, and LatAm, because without it a business that should earn 100K a month '
+                              'ends up “earning like ten K and burning the other 90 K” [ohEZ5-gHckQ @ '
+                              "00:20:12]. The working sequence follows directly. Pull the operator's "
+                              'top-GEO and conversion data, benchmark it against an existing operator '
+                              'dataset, accept listing spend only where the GEO matches, and report '
+                              'results country by country so a leak shows up before it compounds. The 90K '
+                              'figure is what running that sequence loosely, without GEO splits, costs '
+                              'every month.',
+                              'Deal pricing in the US runs hot and the figures conflict. The Christian '
+                              'Strutt channel quotes US sports-betting CPAs running “well up from $250” to '
+                              'as high as “$1,000,” hybrid deals included, for mobile-first, high-value '
+                              'players under very strict regulation [MKTk-Y-xt1I @ 00:02:12]. '
+                              'CasinoRank+Insider reports US sports CPAs “over $3000,” three times '
+                              "Strutt's ceiling, and lists LatAm as rising through Brazil and Mexico "
+                              '[XU9tdzKAxdU @ 00:01:27]. Daniel at Push House lays out the full menu for '
+                              'sports betting: CPA is “safest but not the most profitable,” CPL comes as '
+                              'SOI or DOI and is rare in the niche, CPS pays a preset percentage once per '
+                              'unique user after first deposit, RevShare pays on every deposit, and '
+                              'hybrids pair CPA with RevShare or CPL with CPA, with payouts scaling on '
+                              'traffic volume and quality [Qygo77RCGlw @ 00:03:12]. Nikoghosyan refuses to '
+                              'crown a winner: no CPA or rev-share model is best, the match is what '
+                              'matters, rev share is less risky for operators, and both models can be '
+                              'swindled with bonus-abuser traffic [ohEZ5-gHckQ @ 00:04:43]. The practical '
+                              'rule is to price each deal to its traffic, not to a template, and to treat '
+                              'bonus-abuse exposure as a risk that no payout structure removes on its own.',
+                              'Execution on the page and inside the ad account is where the margin is '
+                              'protected. For US state traffic, the Strutt playbook is to geo-target so '
+                              'only licensed books show in each state, using pages such as /NY and /NJ, '
+                              'with 18+ notices, gambling-aware links, RG messaging, and T&Cs in place '
+                              '[MKTk-Y-xt1I @ 00:03:51]. The attached warning is severe: showing a bonus '
+                              'in a state where it is not offered “will just completely kill it,” so state '
+                              'promo codes are mandatory [MKTk-Y-xt1I @ 00:04:46]. On paid traffic, '
+                              'Alexander Klosa of Pin-Up Partners runs no fixed 70/30 portfolio split; EPC '
+                              'is the trigger. When EPC shifts, ask the offer owner, slow or stop traffic, '
+                              'and move volume into tier-2 and tier-3 GEOs while tier 1 recovers '
+                              '[qOL8mMQPJyI @ 00:11:01]. Relationship mechanics are timed just as tightly. '
+                              'Paul books 30-minute meetings at conferences, keeps ad hoc ones to 10 to 15 '
+                              'minutes, expects affiliate managers to send memos after every meeting, and '
+                              'caps attendance at 3 to 4 conferences a year [R-_FHgwDEFQ @ 00:27:32]. Each '
+                              'of these is a small, repeatable control an operator or affiliate can '
+                              'install: per-state landing pages, state-specific codes, an EPC tripwire '
+                              'with a tier-2 fallback, and a written memo after every face-to-face '
+                              'meeting.'],
+               'table': {'caption': 'Street mechanics, exact numbers, and execution rules quoted by '
+                                    'practitioners',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Rule',
+                                     'How It Is Executed',
+                                     'Expert Source'],
+                         'rows': [['Operator benchmarking before any traffic is committed',
+                                   'Top 10 GEOs and conversion numbers benchmarked against 100 thousand '
+                                   'casinos',
+                                   "Request the operator's GEO and conversion data, then compare against "
+                                   'internal records',
+                                   'Ace Alliance ([R-_FHgwDEFQ @ 00:12:03])'],
+                                  ['GEO segmentation of all incoming affiliate traffic',
+                                   'Earning 10K and burning 90K out of a 100K monthly potential',
+                                   'Split reporting by GEO such as Morocco, the US, and LatAm',
+                                   'Odys Podcast: The High Stakes Growth Show ([ohEZ5-gHckQ @ 00:20:12])'],
+                                  ['Listing spend screened strictly against traffic relevance',
+                                   'Spending 10K to 20K on listings is wasted without relevance',
+                                   "Approve listing spend only where the operator's GEO matches the "
+                                   'traffic',
+                                   'Odys Podcast: The High Stakes Growth Show ([ohEZ5-gHckQ @ 00:16:36])'],
+                                  ['US sports betting CPA pricing for regulated states',
+                                   'CPAs well up from $250 to as high as $1,000 including hybrids',
+                                   'Price mobile-first, high-value state traffic at the top of the range',
+                                   'iGaming Marketing Agency Tips by Christian Strutt ([MKTk-Y-xt1I @ '
+                                   '00:02:12])'],
+                                  ['High-end US sports CPA figure reported by a second source',
+                                   'US sports CPAs quoted at over $3000 per acquired player',
+                                   'Use as the ceiling when comparing competing US sports CPA offers',
+                                   'CasinoRank+Insider ([XU9tdzKAxdU @ 00:01:27])'],
+                                  ['Ad account consolidation in regulated versus grey markets',
+                                   'One optimized ad account instead of 100 to 300 blocked accounts',
+                                   'Run paid traffic in regulated markets to optimize a single stable '
+                                   'account',
+                                   'Revpanda Group ([qOL8mMQPJyI @ 00:07:53])'],
+                                  ['Lobby planning cycle and GEO-specific lobbies for operators',
+                                   'Plan on roughly a one-month cycle; stop building one global lobby',
+                                   'Match lobby visibility planning to how casino managers actually '
+                                   'schedule positions',
+                                   'Ace Alliance ([W_qH_fC6vPE @ 00:20:10])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small Moves Practitioners Use to Protect Partnerships and Margin',
+                           'body': 'Four field-level habits named by the speakers that sit outside the '
+                                   'headline deal terms but decide whether a partnership holds.',
+                           'items': ["Treat free-spin keywords on an affiliate's site as a red flag, and "
+                                     "watch a couple of hours of any streamer's content before signing, "
+                                     'since influencers must not reach minors [Ace Alliance — R-_FHgwDEFQ '
+                                     '@ 00:17:28].',
+                                     'Never sell star ratings: Paul refuses operator requests for a '
+                                     'five-star score, keeps negative reviews visible, and bases the stars '
+                                     'on user reviews [Ace Alliance — R-_FHgwDEFQ @ 00:23:35].',
+                                     'Keep multiple traffic sources live and stay in constant contact with '
+                                     'your affiliate manager, because that is where forward-looking '
+                                     'information on offers comes from [Revpanda Group — qOL8mMQPJyI @ '
+                                     '00:12:42].',
+                                     'For studio-side data, a slot theme only counts as a category once it '
+                                     'holds more than 20 games, a rule SlotCatalog applies across its game '
+                                     'data [Ace Alliance — W_qH_fC6vPE @ 00:14:16].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Vet the Operator as a Player',
+                              'action': 'Confirm the license, make test deposits, walk the landing pages, '
+                                        'and check forums for late payments before any listing.',
+                              'detail': 'Paul works with licensed casinos only, checks forums for late '
+                                        'payments, and rejects any brand lacking localized payments, such '
+                                        'as Canada without Interac [Ace Alliance — R-_FHgwDEFQ @ '
+                                        '00:12:03].'},
+                             {'step': 2,
+                              'title': 'Demand Defined GEO Data',
+                              'action': "Get the operator's top GEOs and conversion numbers and walk away "
+                                        'from any brand that claims to work worldwide.',
+                              'detail': 'Nikoghosyan reports that operators with no defined GEO pay '
+                                        'listing fees, fail to convert, and end up delisted [Peaky Ads – '
+                                        'Marketing Podcasts & Interviews — JCr5X66vWg4 @ 00:15:02].'},
+                             {'step': 3,
+                              'title': 'Match the Deal Model to the Traffic',
+                              'action': 'Choose CPA, rev share, or a hybrid based on the traffic profile '
+                                        'rather than a default template.',
+                              'detail': 'Nikoghosyan says no model is best, rev share is less risky for '
+                                        'operators, and both can be swindled with bonus-abuser traffic '
+                                        '[Odys Podcast: The High Stakes Growth Show — ohEZ5-gHckQ @ '
+                                        '00:04:43].'},
+                             {'step': 4,
+                              'title': 'Segment by GEO and Set an EPC Tripwire',
+                              'action': 'Report results per GEO, and when EPC shifts, ask the offer owner, '
+                                        'slow or stop traffic, and rotate into tier-2/3 GEOs.',
+                              'detail': 'Klosa runs no fixed 70/30 split and moves to tier-2/3 GEOs while '
+                                        'tier 1 recovers once EPC shifts [Revpanda Group — qOL8mMQPJyI @ '
+                                        '00:11:01].'}]},
+              {'title': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['There is no single correct deal structure, and the people living inside '
+                              'these contracts say so bluntly. Levon Nikoghosyan of AffPapa refuses to '
+                              'crown either CPA or revenue share: the right match between affiliate and '
+                              'brand is what matters, rev share carries less risk for the operator, and '
+                              'both models can be swindled by an affiliate pushing bonus-abuser traffic '
+                              '[ohEZ5-gHckQ @ 00:04:43]. Daniel at Push House argues from the media '
+                              "buyer's seat instead, calling CPA the safest model but not the most "
+                              'profitable, with RevShare paying on every deposit and hybrids such as CPA '
+                              'plus RevShare or CPL plus CPA scaling with traffic volume and quality '
+                              '[Qygo77RCGlw @ 00:03:12]. The number fight gets sharper on US sports. '
+                              'Christian Strutt quotes CPAs running well up from $250 and reaching around '
+                              '$1,000, hybrid deals included, while pitching US players as mobile-first '
+                              'and high value [MKTk-Y-xt1I @ 00:02:12]. CasinoRank+Insider puts US sports '
+                              'CPAs over $3,000 in the same market and says some US casinos already pay '
+                              'over $300 per player [XU9tdzKAxdU @ 00:01:27]. Same country, same year, a '
+                              'threefold gap between two published ceilings: whichever figure lands on the '
+                              "table in a negotiation is one camp's number, and the other camp's number "
+                              'contradicts it.',
+                              'The regulated-versus-grey split is where playbooks diverge hardest. '
+                              'Alexander Klosa of Pin-Up Partners argues regulated markets simply perform '
+                              'better because a team can optimize one ad account instead of burning '
+                              'through 100 to 300, while admitting some teams skip regulated markets '
+                              "entirely to work grey zones [qOL8mMQPJyI @ 00:07:53]. Klosa's trade-off "
+                              'line: clear rules raise costs but avoid bans. Daniel at Push House lays out '
+                              'the grey side without apology: unofficial offers carry better odds, get '
+                              'blocked, and survive on mirror domains, while official offers hold Curaçao '
+                              'or Malta licences [Qygo77RCGlw @ 00:05:25]. Erica, VP of Marketing at '
+                              'Income Access, reports the buy side moving the other way, with operators '
+                              'demanding regulated partners who stay out of unregulated markets and '
+                              'refusing mass traffic when entering new countries [H4Pub14VDXA @ 00:01:11]. '
+                              'Power dynamics flip by continent too. Levon Nikoghosyan says that in the US '
+                              'only licensed brands are in play, so affiliates chase operators and make '
+                              'the compromises, whereas in Europe operators chase affiliates [JCr5X66vWg4 '
+                              '@ 00:20:03]. That single fact changes negotiating posture: a European '
+                              'publisher can hold out for terms, while a US publisher fighting for a slot '
+                              'with a licensed sportsbook is the one making the compromises Levon '
+                              'describes.',
+                              'Practitioners also split on how wide a portfolio should spread. Michael '
+                              'Daly, CEO of Catena Media, names an ideal geographic split of 40% Europe '
+                              'and 40% US while building into the Netherlands, LatAm, Japan, and Australia '
+                              '[DmXIrgbAw-Y @ 00:10:27]. Alexander Klosa rejects fixed ratios outright: '
+                              'there is no set 70/30 split, the affiliate watches EPC shifts, asks the '
+                              'offer owner what is happening, slows or stops traffic, and moves to tier-2 '
+                              'and tier-3 GEOs while tier 1 recovers [qOL8mMQPJyI @ 00:11:01]. Klosa adds '
+                              'that survival means running multiple traffic sources and staying in contact '
+                              'with the affiliate manager for forward-looking information. Levon '
+                              'Nikoghosyan pushes the opposite extreme for LatAm entry, telling newcomers '
+                              'to pick Chile, Peru, Colombia, or Mexico, avoid Brazil, and focus on a '
+                              'single GEO like sunlight concentrated through a lens [JCr5X66vWg4 @ '
+                              '00:42:32]. On product scope, SlotCatalog says the affiliate model will '
+                              'remain a large part of revenue but is not enough on its own anymore, which '
+                              'is why the company now sells an intelligence layer to operators and studios '
+                              'on top of its B2C listings [GM2_yRmV_Bw @ 00:03:32]. The resulting choice '
+                              "is concrete: Daly's continental balance, Klosa's EPC-triggered rotation, or "
+                              "Levon's single-market focus, each defended by someone running real "
+                              'traffic.'],
+               'table': {'caption': 'Contested Playbooks: Where Named Practitioners Take Opposite '
+                                    'Positions',
+                         'headers': ['Contested Question', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Which commission model should a partnership run on',
+                                   'No model is best; rev share is less risky for operators, and both get '
+                                   'swindled by bonus abusers',
+                                   'CPA is the safest but not the most profitable; RevShare pays out on '
+                                   'every single deposit',
+                                   'Odys Podcast: The High Stakes Growth Show ([ohEZ5-gHckQ @ 00:04:43]); '
+                                   'Push House | Advertising Network ([Qygo77RCGlw @ 00:03:12])'],
+                                  ['What a US sports CPA actually pays per player',
+                                   'CPAs run well up from $250 and reach around $1,000, hybrid deals '
+                                   'included',
+                                   'US sports CPAs run over $3,000, and some US casinos pay over $300 per '
+                                   'player',
+                                   'iGaming Marketing Agency Tips by Christian Strutt ([MKTk-Y-xt1I @ '
+                                   '00:02:12]); CasinoRank+Insider ([XU9tdzKAxdU @ 00:01:27])'],
+                                  ['Whether to work regulated markets or grey zones',
+                                   'Regulated markets perform better because one ad account gets optimized '
+                                   'instead of 100 to 300',
+                                   'Some teams skip regulated markets for grey zones; unofficial offers '
+                                   'pay better odds and run mirror domains',
+                                   'Revpanda Group ([qOL8mMQPJyI @ 00:07:53]); Push House | Advertising '
+                                   'Network ([Qygo77RCGlw @ 00:05:25])'],
+                                  ['Who holds negotiating leverage in the partnership itself',
+                                   'In the US only licensed brands operate, so affiliates chase operators '
+                                   'and make the compromises',
+                                   'In Europe the leverage flips and operators are the ones chasing the '
+                                   'affiliates for traffic',
+                                   'Peaky Ads – Marketing Podcasts & Interviews ([JCr5X66vWg4 @ '
+                                   '00:20:03])'],
+                                  ['Which traffic channels deserve investment going forward',
+                                   'Twitch and influencer channels are unproven except perhaps YouTube; '
+                                   'organic SEO plus content comes first',
+                                   'Gemini and ChatGPT answers are cutting SEO traffic while TikTok and '
+                                   'Instagram reel channels rise; Mr Gamble itself started on Twitch',
+                                   'NEXT ([DmXIrgbAw-Y @ 00:32:02]); Odys Podcast: The High Stakes Growth '
+                                   'Show ([ohEZ5-gHckQ @ 00:17:43]); Ace Alliance ([R-_FHgwDEFQ @ '
+                                   '00:04:49])'],
+                                  ['How concentrated the GEO portfolio should be',
+                                   'Hold an ideal 40% Europe and 40% US split while building new regions',
+                                   'Focus on a single GEO like sunlight through a lens, or rotate tiers on '
+                                   'EPC shifts with no fixed ratio',
+                                   'NEXT ([DmXIrgbAw-Y @ 00:10:27]); Peaky Ads – Marketing Podcasts & '
+                                   'Interviews ([JCr5X66vWg4 @ 00:42:32]); Revpanda Group ([qOL8mMQPJyI @ '
+                                   '00:11:01])'],
+                                  ['Whether scale beats agility for affiliate publishers',
+                                   'Big publishers now maximize value per FTD rather than pushing raw CPA '
+                                   'volume',
+                                   'Small affiliates are more agile, while big ones resort to M&A and '
+                                   'sometimes fail',
+                                   'Affnook ([jE9PBJOzw_E @ 00:00:52]); Odys Podcast: The High Stakes '
+                                   'Growth Show ([ohEZ5-gHckQ @ 00:23:51])']]}},
+              {'title': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive trap is partnering with an operator that disappears. '
+                              'Levon Nikoghosyan warns that scam brands drain affiliates within 6 to 12 '
+                              'months, even as spend campaigns and upfront, listing, and annual fees keep '
+                              'growing across deals [JCr5X66vWg4 @ 00:48:53]. On the Odys podcast the same '
+                              'practitioner gives the screening rule: check how long the operator has been '
+                              'live and confirm with other affiliates, because brands running only a '
+                              'couple of months can vanish [ohEZ5-gHckQ @ 00:12:00]. A second red flag is '
+                              "the operator who says 'we work worldwide' with no defined GEO; those brands "
+                              'pay listing fees, fail to convert, and end up delisted [JCr5X66vWg4 @ '
+                              '00:15:02]. Paul, CMO of Mr Gamble, runs the affiliate-side due diligence as '
+                              'a player would: licensed casinos only, test deposits and landing pages '
+                              'personally, search forums for late-payment complaints, and demand localized '
+                              'payments, with Canada minus Interac treated as a flat no-go [R-_FHgwDEFQ @ '
+                              '00:12:03]. Paul also asks operators for their top ten GEOs and conversion '
+                              'numbers and benchmarks them against the wider casino set before listing '
+                              'anything. Every one of these checks costs hours; skipping them is how '
+                              "affiliates end up inside Levon's 6-to-12-month drain.",
+                              'The economics checks are blunt. Levon Nikoghosyan says an affiliate that '
+                              'fails to segment traffic by GEO, separating Morocco, the US, and LatAm, '
+                              'ends up instead of earning 100K a month, earning like ten K and burning the '
+                              'other 90K [ohEZ5-gHckQ @ 00:20:12]. Michael Daly exposes a margin trap '
+                              "inside Catena Media's own books: sport delivered 28% of revenue but only 9% "
+                              'of EBITDA, the company had under-invested in sport, and casino carries the '
+                              'higher lifetime value [DmXIrgbAw-Y @ 00:27:02]. Daly also calls paid search '
+                              'low-margin and best avoided by affiliates, with organic SEO plus content '
+                              'coming first. On the publishing side, Christian Strutt warns that showing a '
+                              'bonus in a state where it is not offered will just completely kill it, so '
+                              'every state page needs its own promo codes and geo-targeting so only '
+                              'licensed books appear [MKTk-Y-xt1I @ 00:04:46]. Operators burn money too: '
+                              'Levon says spending 10K to 20K on listings is wasted without traffic '
+                              'relevance [ohEZ5-gHckQ @ 00:16:36]. The common thread is that headline '
+                              'volume hides the leak, whether the leak is an unsegmented GEO, a low-margin '
+                              'vertical, a mismatched state bonus, or a listing fee paid to the wrong '
+                              'audience.',
+                              'Regulatory reversals wipe out whole books overnight. Levon Nikoghosyan '
+                              'calls the Brazil ban a business killer: an SEO site with 10,000 players a '
+                              'day has no legal outlet, rerouting that traffic risks jail, and switching '
+                              'players to gray brands will also be banned, while Brazil-only operators '
+                              'shut down [JCr5X66vWg4 @ 00:27:51]. When the Curaçao files broke, brands '
+                              'stripped license details from their footers within a day [JCr5X66vWg4 @ '
+                              '00:31:35]. Michael Daly watched Germany fall 50% year on year to well under '
+                              '10% of Catena Media revenue once the new tax took effect and revenue share '
+                              'was cut off [DmXIrgbAw-Y @ 00:04:19]. The softer failure is self-inflicted. '
+                              'Erica at Income Access names the biggest operator mistake as setting up '
+                              'affiliates, handing them data, and then never engaging on what is not '
+                              'working, and warns that large traffic sources carry risk when the operator '
+                              'does not understand their models [H4Pub14VDXA @ 00:03:34]. The fix offered '
+                              'is a day-to-day relationship: find what performs, then ask affiliates what '
+                              'they need. Combine a market that can close in a day with a partner nobody '
+                              'talks to, and the operator learns about the damage from the revenue report '
+                              'rather than from the affiliate.'],
+               'table': {'caption': 'Firsthand Failure Modes and the Economics Check Each One Demands',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Saw Happen',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Scam or short-lived operator drains the affiliate',
+                                   'Scam brands drain affiliates within 6 to 12 months while upfront, '
+                                   'listing, and annual fees keep growing',
+                                   'Check how long the operator has run and confirm payment history with '
+                                   'other affiliates first',
+                                   'Peaky Ads – Marketing Podcasts & Interviews ([JCr5X66vWg4 @ '
+                                   '00:48:53]); Odys Podcast: The High Stakes Growth Show ([ohEZ5-gHckQ @ '
+                                   '00:12:00])'],
+                                  ['Traffic data left unsegmented across different GEOs',
+                                   'Instead of earning 100K a month the affiliate earns like ten K and '
+                                   'burns the other 90K',
+                                   'Split reporting by GEO such as Morocco, the US, and LatAm before '
+                                   'scaling spend',
+                                   'Odys Podcast: The High Stakes Growth Show ([ohEZ5-gHckQ @ 00:20:12])'],
+                                  ['Revenue share that never converts into margin',
+                                   'Sport delivered 28% of Catena Media revenue but only 9% of EBITDA '
+                                   'after under-investment',
+                                   "Weigh casino's higher lifetime value and avoid low-margin paid search "
+                                   'as an affiliate',
+                                   'NEXT ([DmXIrgbAw-Y @ 00:27:02])'],
+                                  ['Bonus shown in a state where it is not offered',
+                                   'Displaying a bonus a state does not offer will just completely kill '
+                                   'the conversion',
+                                   'Geo-target /NY and /NJ style pages so only licensed books and state '
+                                   'promo codes appear',
+                                   'iGaming Marketing Agency Tips by Christian Strutt ([MKTk-Y-xt1I @ '
+                                   '00:04:46])'],
+                                  ['Regulatory reversal closes a core market overnight',
+                                   'Brazil ban left a 10,000-players-a-day SEO site with no legal outlet; '
+                                   'Germany fell 50% year on year',
+                                   'Brazil-only operators shut down, and rerouting traffic to gray brands '
+                                   'risks jail and will also be banned',
+                                   'Peaky Ads – Marketing Podcasts & Interviews ([JCr5X66vWg4 @ '
+                                   '00:27:51]); NEXT ([DmXIrgbAw-Y @ 00:04:19])'],
+                                  ['New operator buys tracking but has no acquisition plan',
+                                   'New operators buy a tracking platform but have no plan to actually '
+                                   'acquire players',
+                                   'Site creation is easy, so budget for the real work that starts the day '
+                                   'you go live',
+                                   'Affnook ([jE9PBJOzw_E @ 00:02:27])'],
+                                  ['Cheap hidden-gem auction flips without any warning',
+                                   'Cheap auctions in hidden-gem GEOs can change in one single day',
+                                   'Keep a plan B and plan C GEO ready, because running without one in '
+                                   '2026 is the wrong approach',
+                                   'Revpanda Group ([qOL8mMQPJyI @ 00:10:18])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Partnership Kill-Switches Practitioners Learned the Hard Way',
+                           'body': 'Run every new operator or affiliate partnership through these four '
+                                   'checks before traffic or listing fees move; each one comes from a loss '
+                                   'or warning reported firsthand by a named practitioner.',
+                           'items': ['Block any operator that has been live only a couple of months until '
+                                     'other affiliates confirm it pays, because these brands can vanish '
+                                     '[Odys Podcast: The High Stakes Growth Show — ohEZ5-gHckQ @ '
+                                     '00:12:00].',
+                                     "Reject operators who pitch 'we work worldwide' with no defined GEO, "
+                                     'since they pay listing fees, fail to convert, and get delisted '
+                                     '[Peaky Ads – Marketing Podcasts & Interviews — JCr5X66vWg4 @ '
+                                     '00:15:02].',
+                                     'Refuse to list a casino without localized payments, treating Canada '
+                                     'without Interac as a no-go, and test deposits as a player first [Ace '
+                                     'Alliance — R-_FHgwDEFQ @ 00:12:03].',
+                                     'Never hand affiliates data and walk away; keep a day-to-day '
+                                     'relationship with large traffic sources whose models you must '
+                                     'understand [Ace Alliance — H4Pub14VDXA @ 00:04:04].']}}],
+ 'pull_quote': '"In the US, it\'s the affiliates chasing the operators to work with them." — Levon '
+               'Nikoghosyan, attributed to Peaky Ads – Marketing Podcasts & Interviews (JCr5X66vWg4 @ '
+               '00:20:03).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Vet every operator as a player: licensed casinos only, test deposits and landing '
+                      'pages, and search forums for late-payment complaints before listing [Ace Alliance — '
+                      'R-_FHgwDEFQ @ 00:12:03].',
+                      'Segment all traffic reporting by GEO such as Morocco, the US, and LatAm so you are '
+                      'not earning ten K and burning 90K [Odys Podcast: The High Stakes Growth Show — '
+                      'ohEZ5-gHckQ @ 00:20:12].',
+                      'Monitor EPC shifts, ask the offer owner what changed, slow or stop traffic, and '
+                      'rotate to tier-2 and tier-3 GEOs while tier 1 recovers [Revpanda Group — '
+                      'qOL8mMQPJyI @ 00:11:01].',
+                      'Build geo-targeted state pages such as /NY and /NJ so only licensed books and '
+                      'state-specific promo codes appear [iGaming Marketing Agency Tips by Christian '
+                      'Strutt — MKTk-Y-xt1I @ 00:03:51].',
+                      'Find what performs, set your KPIs, then ask affiliates directly what they need from '
+                      'you [Ace Alliance — H4Pub14VDXA @ 00:03:49].',
+                      'Own your data and attribution across the full pipeline, because an FTD is no longer '
+                      'the end of the funnel [Affnook — jE9PBJOzw_E @ 00:00:17].'],
+ 'statutory_citations': [{'title': "Peaky Ads – Marketing Podcasts & Interviews — After Brazil's Ban - "
+                                   'Where LatAm iGaming Money Goes | Levon Nikoghosyan [00:27:51]',
+                          'url': 'https://www.youtube.com/watch?v=JCr5X66vWg4&t=1671s',
+                          'relevance': 'Primary practitioner testimony on the Brazil ban, scam-brand '
+                                       'drain, worldwide-GEO red flags, and US versus Europe partnership '
+                                       'leverage.'},
+                         {'title': 'Odys Podcast: The High Stakes Growth Show — iGaming Affiliate '
+                                   "Strategies: You're Burning 90K Monthly, Levon Nikoghosyan, AffPapa CEO "
+                                   'Reveals Why [00:20:12]',
+                          'url': 'https://www.youtube.com/watch?v=ohEZ5-gHckQ&t=1212s',
+                          'relevance': 'Primary practitioner testimony on GEO data segmentation, CPA '
+                                       'versus rev share matching, and operator screening.'},
+                         {'title': 'NEXT — Podcast by Pierre Lindh #69 - Michael Daly, CEO, Catena Media '
+                                   '[00:27:02]',
+                          'url': 'https://www.youtube.com/watch?v=DmXIrgbAw-Y&t=1622s',
+                          'relevance': 'Primary practitioner testimony on sport versus casino margins, '
+                                       'German revenue collapse, and portfolio geographic splits.'},
+                         {'title': 'Ace Alliance — iGaming Affiliate Marketing in 2027: What Operators '
+                                   'Need to Get Right | SiGMA Rome [00:03:34]',
+                          'url': 'https://www.youtube.com/watch?v=H4Pub14VDXA&t=214s',
+                          'relevance': 'Primary practitioner testimony on operator-side partnership '
+                                       'neglect and the shift to quality traffic KPIs.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'R-_FHgwDEFQ',
+                       'title': 'Building Strong iGaming Affiliate and Operator Partnerships',
+                       'channel': 'Ace Alliance',
+                       'author': 'Ace Alliance',
+                       'text': 'Only licensed casinos get listed, deposits and landing pages are tested as '
+                               'a player, and forums are checked for late payments, with Canada without '
+                               'Interac a no go.',
+                       'tip': 'Only licensed casinos get listed, deposits and landing pages are tested as '
+                              'a player, and forums are checked for late payments, with Canada without '
+                              'Interac a no go.',
+                       'timestamp': 723,
+                       'timestamp_seconds': 723,
+                       'timestamp_label': '[00:12:03]',
+                       'url': 'https://www.youtube.com/watch?v=R-_FHgwDEFQ&t=723s',
+                       'markdown': '[00:12:03](https://www.youtube.com/watch?v=R-_FHgwDEFQ&t=723s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'R-_FHgwDEFQ',
+                       'title': 'Building Strong iGaming Affiliate and Operator Partnerships',
+                       'channel': 'Ace Alliance',
+                       'author': 'Ace Alliance',
+                       'text': 'Negative reviews stay visible, and requests for a five-star rating are '
+                               'refused because the stars are based on user reviews.',
+                       'tip': 'Negative reviews stay visible, and requests for a five-star rating are '
+                              'refused because the stars are based on user reviews.',
+                       'timestamp': 1415,
+                       'timestamp_seconds': 1415,
+                       'timestamp_label': '[00:23:35]',
+                       'url': 'https://www.youtube.com/watch?v=R-_FHgwDEFQ&t=1415s',
+                       'markdown': '[00:23:35](https://www.youtube.com/watch?v=R-_FHgwDEFQ&t=1415s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ohEZ5-gHckQ',
+                       'title': "iGaming Affiliate Strategies: You're Burning 90K Monthly, Levon "
+                                'Nikoghosyan, AffPapa CEO Reveals Why',
+                       'channel': 'Odys Podcast: The High Stakes Growth Show',
+                       'author': 'Odys Podcast: The High Stakes Growth Show',
+                       'text': "It's about how relevant your traffic is to them.",
+                       'tip': "It's about how relevant your traffic is to them.",
+                       'timestamp': 477,
+                       'timestamp_seconds': 477,
+                       'timestamp_label': '[00:07:57]',
+                       'url': 'https://www.youtube.com/watch?v=ohEZ5-gHckQ&t=477s',
+                       'markdown': '[00:07:57](https://www.youtube.com/watch?v=ohEZ5-gHckQ&t=477s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ohEZ5-gHckQ',
+                       'title': "iGaming Affiliate Strategies: You're Burning 90K Monthly, Levon "
+                                'Nikoghosyan, AffPapa CEO Reveals Why',
+                       'channel': 'Odys Podcast: The High Stakes Growth Show',
+                       'author': 'Odys Podcast: The High Stakes Growth Show',
+                       'text': 'Without segmenting traffic by GEO, instead of earning 100 K a month you '
+                               'end up earning like ten K and burning the other 90 K.',
+                       'tip': 'Without segmenting traffic by GEO, instead of earning 100 K a month you end '
+                              'up earning like ten K and burning the other 90 K.',
+                       'timestamp': 1212,
+                       'timestamp_seconds': 1212,
+                       'timestamp_label': '[00:20:12]',
+                       'url': 'https://www.youtube.com/watch?v=ohEZ5-gHckQ&t=1212s',
+                       'markdown': '[00:20:12](https://www.youtube.com/watch?v=ohEZ5-gHckQ&t=1212s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qOL8mMQPJyI',
+                       'title': 'How to Build an Unbreakable iGaming Affiliate Portfolio in 2026',
+                       'channel': 'Revpanda Group',
+                       'author': 'Revpanda Group',
+                       'text': "When you don't have any plan B, plan C, I think that in 2026 it's wrong "
+                               'approach.',
+                       'tip': "When you don't have any plan B, plan C, I think that in 2026 it's wrong "
+                              'approach.',
+                       'timestamp': 618,
+                       'timestamp_seconds': 618,
+                       'timestamp_label': '[00:10:18]',
+                       'url': 'https://www.youtube.com/watch?v=qOL8mMQPJyI&t=618s',
+                       'markdown': '[00:10:18](https://www.youtube.com/watch?v=qOL8mMQPJyI&t=618s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jE9PBJOzw_E',
+                       'title': 'What’s Changing in iGaming Affiliate Marketing? | Affnook Webinar',
+                       'channel': 'Affnook',
+                       'author': 'Affnook',
+                       'text': 'But the real work starts the day you go live.',
+                       'tip': 'But the real work starts the day you go live.',
+                       'timestamp': 195,
+                       'timestamp_seconds': 195,
+                       'timestamp_label': '[00:03:15]',
+                       'url': 'https://www.youtube.com/watch?v=jE9PBJOzw_E&t=195s',
+                       'markdown': '[00:03:15](https://www.youtube.com/watch?v=jE9PBJOzw_E&t=195s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6l_ci8Pi0jI',
+                       'title': 'How to Build an Unbreakable iGaming Affiliate Portfolio in 2026',
+                       'channel': 'Revpanda Group',
+                       'author': 'Revpanda Group',
+                       'text': 'In regulated markets one ad account can be optimized instead of running '
+                               '100 to 300 ad accounts.',
+                       'tip': 'In regulated markets one ad account can be optimized instead of running 100 '
+                              'to 300 ad accounts.',
+                       'timestamp': 383,
+                       'timestamp_seconds': 383,
+                       'timestamp_label': '[00:06:23]',
+                       'url': 'https://www.youtube.com/watch?v=6l_ci8Pi0jI&t=383s',
+                       'markdown': '[00:06:23](https://www.youtube.com/watch?v=6l_ci8Pi0jI&t=383s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JCr5X66vWg4',
+                       'title': "After Brazil's Ban - Where LatAm iGaming Money Goes | Levon Nikoghosyan",
+                       'channel': 'Peaky Ads – Marketing Podcasts & Interviews',
+                       'author': 'Peaky Ads – Marketing Podcasts & Interviews',
+                       'text': "In the US, it's the affiliates chasing the operators to work with them.",
+                       'tip': "In the US, it's the affiliates chasing the operators to work with them.",
+                       'timestamp': 1203,
+                       'timestamp_seconds': 1203,
+                       'timestamp_label': '[00:20:03]',
+                       'url': 'https://www.youtube.com/watch?v=JCr5X66vWg4&t=1203s',
+                       'markdown': '[00:20:03](https://www.youtube.com/watch?v=JCr5X66vWg4&t=1203s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JCr5X66vWg4',
+                       'title': "After Brazil's Ban - Where LatAm iGaming Money Goes | Levon Nikoghosyan",
+                       'channel': 'Peaky Ads – Marketing Podcasts & Interviews',
+                       'author': 'Peaky Ads – Marketing Podcasts & Interviews',
+                       'text': 'The Brazil ban is a business killer, because an SEO site with 10,000 '
+                               'players a day has no legal outlet and rerouting that traffic risks jail.',
+                       'tip': 'The Brazil ban is a business killer, because an SEO site with 10,000 '
+                              'players a day has no legal outlet and rerouting that traffic risks jail.',
+                       'timestamp': 1671,
+                       'timestamp_seconds': 1671,
+                       'timestamp_label': '[00:27:51]',
+                       'url': 'https://www.youtube.com/watch?v=JCr5X66vWg4&t=1671s',
+                       'markdown': '[00:27:51](https://www.youtube.com/watch?v=JCr5X66vWg4&t=1671s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Jdm7YPGRFSk',
+                       'title': 'Advertise.net - iGaming Affiliate Network | iGaming Reviews by '
+                                'AffPapa.com',
+                       'channel': 'AffPapa Media',
+                       'author': 'AffPapa Media',
+                       'text': 'Publishers get CPA, CPL, CPI, CPS, and rev share models with real-time '
+                               'tracking, postbacks, and flexible payments.',
+                       'tip': 'Publishers get CPA, CPL, CPI, CPS, and rev share models with real-time '
+                              'tracking, postbacks, and flexible payments.',
+                       'timestamp': 22,
+                       'timestamp_seconds': 22,
+                       'timestamp_label': '[00:00:22]',
+                       'url': 'https://www.youtube.com/watch?v=Jdm7YPGRFSk&t=22s',
+                       'markdown': '[00:00:22](https://www.youtube.com/watch?v=Jdm7YPGRFSk&t=22s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'H4Pub14VDXA',
+                       'title': 'iGaming Affiliate Marketing in 2027: What Operators Need to Get Right | '
+                                'SiGMA Rome',
+                       'channel': 'Ace Alliance',
+                       'author': 'Ace Alliance',
+                       'text': "It's a relationship built industry.",
+                       'tip': "It's a relationship built industry.",
+                       'timestamp': 229,
+                       'timestamp_seconds': 229,
+                       'timestamp_label': '[00:03:49]',
+                       'url': 'https://www.youtube.com/watch?v=H4Pub14VDXA&t=229s',
+                       'markdown': '[00:03:49](https://www.youtube.com/watch?v=H4Pub14VDXA&t=229s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MKTk-Y-xt1I',
+                       'title': '🎯 The US Sports Betting Boom 2025 Affiliate Marketing Opportunities & '
+                                'State-by-State Strategy Guide',
+                       'channel': 'iGaming Marketing Agency Tips by Christian Strutt',
+                       'author': 'iGaming Marketing Agency Tips by Christian Strutt',
+                       'text': "It's very strict regulation and so you got to be compliant.",
+                       'tip': "It's very strict regulation and so you got to be compliant.",
+                       'timestamp': 132,
+                       'timestamp_seconds': 132,
+                       'timestamp_label': '[00:02:12]',
+                       'url': 'https://www.youtube.com/watch?v=MKTk-Y-xt1I&t=132s',
+                       'markdown': '[00:02:12](https://www.youtube.com/watch?v=MKTk-Y-xt1I&t=132s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Qygo77RCGlw',
+                       'title': 'How to Earn on Sports Betting Affiliate Programs? Complete Guide to Niche '
+                                '| Push.House',
+                       'channel': 'Push House | Advertising Network',
+                       'author': 'Push House | Advertising Network',
+                       'text': 'CPA is the safest payment model but not the most profitable one.',
+                       'tip': 'CPA is the safest payment model but not the most profitable one.',
+                       'timestamp': 192,
+                       'timestamp_seconds': 192,
+                       'timestamp_label': '[00:03:12]',
+                       'url': 'https://www.youtube.com/watch?v=Qygo77RCGlw&t=192s',
+                       'markdown': '[00:03:12](https://www.youtube.com/watch?v=Qygo77RCGlw&t=192s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XU9tdzKAxdU',
+                       'title': 'How iGaming Affiliates Drive Billions in 2025 (And Why It Works)',
+                       'channel': 'CasinoRank+Insider',
+                       'author': 'CasinoRank+Insider',
+                       'text': 'Over 74% of operators use affiliates, and these partners bring in 30 to '
+                               '50% of all new depositing players.',
+                       'tip': 'Over 74% of operators use affiliates, and these partners bring in 30 to 50% '
+                              'of all new depositing players.',
+                       'timestamp': 33,
+                       'timestamp_seconds': 33,
+                       'timestamp_label': '[00:00:33]',
+                       'url': 'https://www.youtube.com/watch?v=XU9tdzKAxdU&t=33s',
+                       'markdown': '[00:00:33](https://www.youtube.com/watch?v=XU9tdzKAxdU&t=33s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GM2_yRmV_Bw',
+                       'title': 'The Future of Affiliate Marketing in iGaming: SlotCatalog’s New '
+                                'Marketplace | SBC Summit Lisbon 26',
+                       'channel': 'Ace Alliance',
+                       'author': 'Ace Alliance',
+                       'text': "I don't think that's enough anymore.",
+                       'tip': "I don't think that's enough anymore.",
+                       'timestamp': 212,
+                       'timestamp_seconds': 212,
+                       'timestamp_label': '[00:03:32]',
+                       'url': 'https://www.youtube.com/watch?v=GM2_yRmV_Bw&t=212s',
+                       'markdown': '[00:03:32](https://www.youtube.com/watch?v=GM2_yRmV_Bw&t=212s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DmXIrgbAw-Y',
+                       'title': 'Podcast by Pierre Lindh #69 - Michael Daly, CEO, Catena Media',
+                       'channel': 'NEXT',
+                       'author': 'NEXT',
+                       'text': 'Sport is 28% of revenue but only 9% of EBITDA, and the company '
+                               'under-invested in sport.',
+                       'tip': 'Sport is 28% of revenue but only 9% of EBITDA, and the company '
+                              'under-invested in sport.',
+                       'timestamp': 1622,
+                       'timestamp_seconds': 1622,
+                       'timestamp_label': '[00:27:02]',
+                       'url': 'https://www.youtube.com/watch?v=DmXIrgbAw-Y&t=1622s',
+                       'markdown': '[00:27:02](https://www.youtube.com/watch?v=DmXIrgbAw-Y&t=1622s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'W_qH_fC6vPE',
+                       'title': 'How iGaming Affiliates Can Create Value for Operators and Studios',
+                       'channel': 'Ace Alliance',
+                       'author': 'Ace Alliance',
+                       'text': 'Classic affiliate deal, you shake hands and deal done.',
+                       'tip': 'Classic affiliate deal, you shake hands and deal done.',
+                       'timestamp': 633,
+                       'timestamp_seconds': 633,
+                       'timestamp_label': '[00:10:33]',
+                       'url': 'https://www.youtube.com/watch?v=W_qH_fC6vPE&t=633s',
+                       'markdown': '[00:10:33](https://www.youtube.com/watch?v=W_qH_fC6vPE&t=633s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cxhsS1A2A4I',
+                       'title': 'How iGaming Affiliates Can Create Value for Operators and Studios',
+                       'channel': 'Ace Alliance',
+                       'author': 'Ace Alliance',
+                       'text': 'Players in Nigeria are very different from players from the Philippines.',
+                       'tip': 'Players in Nigeria are very different from players from the Philippines.',
+                       'timestamp': 1209,
+                       'timestamp_seconds': 1209,
+                       'timestamp_label': '[00:20:09]',
+                       'url': 'https://www.youtube.com/watch?v=cxhsS1A2A4I&t=1209s',
+                       'markdown': '[00:20:09](https://www.youtube.com/watch?v=cxhsS1A2A4I&t=1209s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'}]}

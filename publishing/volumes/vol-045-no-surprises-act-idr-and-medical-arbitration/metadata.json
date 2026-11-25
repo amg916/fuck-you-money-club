@@ -9,49 +9,49 @@
       "ARBITRATION"
     ],
     "deck": [
-      "RECOVER ELIGIBLE UNDERPAYMENTS.",
-      "UNDERWRITE EVERY DISPUTE."
+      "HOW 192 PRACTITIONERS SCREEN CLAIMS, AUDIT SURPRISE BILLS, AND RUN 30-BUSINESS-DAY OPEN NEGOTIATION INTO BASEBALL-STYLE IDR ANCHORED TO THE QPA",
+      "THE DEADLINE TRACKERS, DOWN-CODING CHALLENGES, HELP DESK COMPLAINTS, AND RCM WORKFLOWS THEY BUILD TO TURN OUT-OF-NETWORK CLAIMS INTO COLLECTED REVENUE"
     ],
-    "lead": "Turn eligible out-of-network underpayments into disciplined recovery cases, not a volume-driven arbitration gamble.",
-    "summary": "Federal No Surprises Act IDR economics depend on eligibility, applicable state processes, timely open negotiation, evidence quality, and expected incremental collections after administrative, entity, and servicing costs. Keep IDR case administration distinct from contractual underpayment appeals and other lawful out-of-network recovery work, using permitted fixed or collection-based fees without shifting prohibited balances to patients.",
+    "lead": "Practitioners show how the No Surprises Act bans balance billing for emergency care, air ambulance, and out-of-network care at in-network facilities, then routes payment fights through open negotiation into a winner-takes-all IDR where one missed deadline can sink the dispute.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies covering No Surprises Act scope, federal IDR filing and outcomes, out-of-network facility and superbill recovery, and the revenue cycle workflows behind claims, remittances, and denials. Every claim, metric, pro-tip, and operator gate is tied to its source through timestamped inline attribution so readers can verify each point against the original session.",
     "chapters": [
-      "Q1: The Provider Recovery Thesis",
-      "Q2: Specialties, Plans & Dispute Routes",
-      "Q3: Expected Recovery per Case",
-      "Q4: Federal IDR & State Boundaries",
-      "Q5: Source Authorized Provider Accounts",
-      "Q6: Screen Claims & Filing Clocks",
-      "Q7: Negotiate & Prepare the Record",
-      "Q8: Price IDR & Appeals Separately",
-      "Q9: Provider & RCM Partnerships",
-      "Q10: Operate the Dispute Calendar",
-      "Q11: Control Fees, PHI & Denials",
-      "Q12: Scale Profitable Claim Cohorts"
+      "No Surprises Act Foundations: Scope, Protected Services, and the Balance-Billing Ban",
+      "Surprise Bills in the Wild: Patient Disputes, Loopholes, and the Ground Ambulance Gap",
+      "The Compliance Layer: QPA Methodology, Good Faith Estimates, State Laws, and ERISA Preemption",
+      "Filing Federal IDR: Eligibility Screening, Open Negotiation, and Initiation Workflow",
+      "The Shifting Rulebook: IDR Operations Final Rule, TMA Litigation, and Congressional Fixes",
+      "Reading the IDR Scoreboard: Volume, Win Rates, Award Levels, and the Premium Fallout",
+      "Winning vs. Getting Paid: Unpaid Awards and the Specialty IDR Battlegrounds",
+      "Out-of-Network Facility Revenue: ASC, Behavioral Health, and Complex Claim Recovery",
+      "Superbills and OON Benefits: Patient-Submitted Reimbursement for Cash Practices",
+      "The Revenue Cycle Engine: Front-, Mid-, and Back-End RCM Workflow",
+      "Decoding Claims and Remittances: CMS-1500, 837, 835 ERAs, EOBs, and CARC/RARC Codes",
+      "Denials, KPIs, and AI Automation: Scaling Back-End Recovery"
     ],
     "flow": [
       [
-        "INGEST",
-        "Receive authorized claim, remittance, and plan data through HIPAA-compliant workflows."
+        "SCREEN",
+        "Bill the plan directly to learn whether No Surprises Act protections apply, confirm in writing whether the plan is fully insured or self-funded, and never rely on notice-and-consent for emergency medicine, anesthesiology, pathology, radiology, neonatology, hospitalists, diagnostics, or air ambulance."
       ],
       [
-        "ROUTE",
-        "Determine federal IDR eligibility, applicable state processes, and alternative appeal rights."
+        "AUDIT",
+        "Freeze every payment and payment plan, pull the itemized bill with CPT codes, and write down each disputed line with its reason before any money moves."
       ],
       [
-        "UNDERWRITE",
-        "Estimate incremental collections net of current fees, labor, loss exposure, and payment delay."
+        "TRACK",
+        "Load every open-negotiation, initiation, and offer deadline into a tracker before the first dispute and calendar the 120-day appeal clock the day a denial arrives, because missing a deadline by a day or two can invalidate the IDR."
       ],
       [
         "NEGOTIATE",
-        "Complete required open negotiation and preserve the evidence and statutory deadlines."
+        "Run the 30-business-day open negotiation armed with the provider's prior in-network rates from the past 4 years and challenge any payer down-coding, which must be explained."
       ],
       [
-        "SUBMIT",
-        "Present a supported offer through the applicable dispute process using current evidentiary and batching rules."
+        "ARBITRATE",
+        "Initiate with the standard federal notice, reject an IDR entity you have used before if needed, and price the final offer against baseball-style winner-takes-all selection anchored to the QPA."
       ],
       [
-        "RECONCILE",
-        "Track determinations and payments, pursue appropriate enforcement, and measure realized contribution margin."
+        "ESCALATE",
+        "Push improper bills through insurer reprocessing and a No Surprises Help Desk complaint at 1-800-985-3059, use the $25 uninsured dispute when a bill beats the good faith estimate by $400, and keep every notice-and-consent document for 7 years."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "NO SURPRISES ACT (IDR) MEDICAL ARBITRATION & OUT-OF-NETWORK RECOVERY",
-  "subtitle": "The Complete Playbook for No Surprises Act Recovery: $110,000–$900,000 USD in Annual Earned Fees, a 1 FT + 2 C Launch Pod, and Five-Person Scale",
+  "subtitle": "Screen eligibility before filing, hard-calendar the 30-business-day negotiation and 4-business-day IDR windows, price every final offer against the QPA and the fee load, collect the award before booking it, and reconcile every remittance to the deposit",
   "chapter_count": 12,
-  "total_word_count": 79807,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 74004,
+  "expert_youtube_link_count": 209,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:04Z"
+  "updated_at": "2026-11-25T00:44:08Z"
 }

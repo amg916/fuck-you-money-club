@@ -1,1498 +1,939 @@
 from __future__ import annotations
 
-
 def build_volume_046_workbook() -> dict:
-    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
-        return {
-            "name": name,
-            "type": input_type,
-            "prompt": prompt,
-            "example": example,
-        }
-
-    return {
-        "workbook_id": "wb-046-mass-tort-intake-hitech-triage-and-law-firm-msos",
-        "volume_id": "vol-046-mass-tort-intake-hitech-triage-and-law-firm-msos",
-        "title": "Mass-Tort Case Acquisition, HITECH Record Triage & Law-Firm MSOs — Operator Companion Workbook",
-        "subtitle": (
-            "6 Printable Operator Worksheets for Fixed-Fee MSO Underwriting, "
-            "Claimant-to-Collection Economics, HITECH Record Evidence, Law-Firm "
-            "Contract Controls, Human-Supervised Automation, and Small-Team Launch Execution"
-        ),
-        "worksheets": [
-            {
-                "worksheet_id": "ws-01",
-                "number": 1,
-                "title": "Arbitrage Deal / Counterparty Underwriting & Spread Qualification",
-                "purpose": (
-                    "Underwrite the law-firm customer, acquisition supplier, and administrative "
-                    "service spread before committing media or retrieval cash. Separate the "
-                    "firm's legal judgment from MSO production duties, establish evidence "
-                    "quality thresholds, and reject arrangements that monetize settlements "
-                    "or disguise paid claimant recommendations."
-                ),
-                "chapter_ref": "Q1, Q2, Q6",
-                "instructions": [
-                    (
-                        "Identify the contracting firm, supervising attorney, payment entity, "
-                        "and every acquisition subcontractor. Verify licenses and ownership "
-                        "against primary registries, then record who controls advertising, "
-                        "client acceptance, legal strategy, record access, and payment authorization "
-                        "before evaluating the projected spread."
-                    ),
-                    (
-                        "Describe deliverables as administrative work with fair-market fixed "
-                        "or documented cost-plus pricing. Test whether compensation changes "
-                        "with retained clients, accepted cases, legal fees, or recoveries; "
-                        "remove those dependencies from the ordinary nonlawyer MSO agreement "
-                        "before purchasing traffic."
-                    ),
-                    (
-                        "Build one dated inquiry cohort through signed retainers, usable "
-                        "record proof, attorney acceptance, and collection of administrative "
-                        "invoices. Keep duplicate exclusions and missing evidence visible "
-                        "rather than improving conversion rates by silently deleting rejected "
-                        "or incomplete records."
-                    ),
-                    (
-                        "Price an adverse cohort using increased duplicates, unusable "
-                        "records, slower provider responses, and customer rework demands. "
-                        "Require the firm to own medical and legal eligibility criteria, "
-                        "while the MSO measures production capacity, evidence provenance, "
-                        "and contractual payment exposure."
-                    ),
-                    (
-                        "Approve the opportunity only after confirming a funded customer, "
-                        "a credible cash runway, and a signed scope with bounded rework. "
-                        "Document reasons for rejection as carefully as acceptance so "
-                        "future acquisition teams cannot revive a structurally defective arrangement."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Counterparty identity and attorney authority",
-                        "textarea",
-                        (
-                            "Identify the firm entity, bar jurisdictions, supervising attorney, "
-                            "accounts-payable contact, and administrative decision maker. Explain "
-                            "how primary-source verification and delegated authority will be "
-                            "documented before onboarding any acquisition supplier."
-                        ),
-                        (
-                            "Illustrative customer Harbor Trial Group PLLC supplies its formation "
-                            "record, W-9, operating address, and two attorney bar records. The "
-                            "engagement partner signs the scope; accounts payable confirms a "
-                            "$58,750 monthly service budget. The MSO retains dated verification "
-                            "evidence and repeats license checks quarterly."
-                        ),
-                    ),
-                    field(
-                        "Purchased service and fair-market pricing thesis",
-                        "textarea",
-                        (
-                            "Define the actual administrative service being purchased, its "
-                            "capacity limits, and its pricing evidence. Distinguish procurement "
-                            "of advertising and support labor from selling recommendations, "
-                            "representation decisions, or ownership interests in recoveries."
-                        ),
-                        (
-                            "The firm purchases campaign administration, intake staffing, "
-                            "authorized record coordination, and chronology production for "
-                            "$58,750 monthly. Three comparable service proposals support the "
-                            "rate. The contract promises staffing and documented tasks, not "
-                            "108 accepted claims, and never changes compensation with settlement "
-                            "value or attorney fee receipts."
-                        ),
-                    ),
-                    field(
-                        "Canonical opportunity classification",
-                        "textarea",
-                        (
-                            "Record the candidate's canonical score, staffing, startup range, "
-                            "and time horizon. Explain which assumptions require validation "
-                            "locally rather than treating the published ranking as evidence "
-                            "of counterparty quality or immediate demand."
-                        ),
-                        (
-                            "Candidate 46 ranks 13 of 49 and scores 93/100, comprising "
-                            "25 revenue, 23 margin, 19 team efficiency, 13 startup accessibility, "
-                            "and 13 automation points. Budget $12,000–$50,000 startup capital "
-                            "and 1–4 months to first deal; the base pod has one full-time "
-                            "operator and three contractors."
-                        ),
-                    ),
-                    field(
-                        "Inquiry ownership and provenance",
-                        "textarea",
-                        (
-                            "Specify the evidence required for every incoming inquiry, including "
-                            "publisher identity, source page, notice version, collection time, "
-                            "authorized recipient, and contact permission. State how rejected "
-                            "provenance affects vendor payment and downstream handling."
-                        ),
-                        (
-                            "A 1,000-inquiry monthly cohort includes publisher IDs, landing-page "
-                            "versions, source timestamps, and TrustedForm certificate references. "
-                            "The firm receives only records supported by its approved contact "
-                            "language. Twenty inquiries lacking retrievable permission evidence "
-                            "enter quarantine, remain in raw-volume reporting, and receive no "
-                            "automated outbound contact."
-                        ),
-                    ),
-                    field(
-                        "Duplicate and identity-risk screen",
-                        "textarea",
-                        (
-                            "Define exact-match and fuzzy-match signals, authorized identity "
-                            "checks, escalation ownership, and evidence retention. Avoid "
-                            "assuming that a certificate, identity score, or database match "
-                            "proves claim validity or permits sharing another firm's confidential information."
-                        ),
-                        (
-                            "Of 1,000 inquiries, 100 are suppressed as duplicate or unresolved "
-                            "identity-risk records, leaving 900 unique candidates. Phone, date "
-                            "of birth, and normalized address support internal matching. "
-                            "Authorized LexisNexis checks supplement manual review; a full SSN "
-                            "is neither routinely collected nor exposed in the intake dashboard."
-                        ),
-                    ),
-                    field(
-                        "Retainer and evidence conversion waterfall",
-                        "textarea",
-                        (
-                            "Enter raw inquiries, unique candidates, signed firm retainers, "
-                            "usable EMR or pharmacy proof, and deficiency-free attorney "
-                            "acceptances. Show stage denominators and distinguish operational "
-                            "outcomes from the contractual event that earns administrative revenue."
-                        ),
-                        (
-                            "The planning cohort moves from 1,000 raw inquiries to 900 unique "
-                            "candidates, 180 signed retainers, 126 usable evidence files, and "
-                            "108 accepted cases. Stage rates are 90%, 20%, 70%, and 85.71%. "
-                            "Collection means payment of the separate $58,750 service invoice, "
-                            "not monetization of individual accepted claims."
-                        ),
-                    ),
-                    field(
-                        "Exposure and injury evidence definition",
-                        "textarea",
-                        (
-                            "Ask the supervising attorney to define the dated eligibility "
-                            "matrix, acceptable exposure sources, injury documentation, and "
-                            "contradiction handling. Record evidence requirements without "
-                            "allowing intake staff or language models to diagnose injury or promise eligibility."
-                        ),
-                        (
-                            "The firm's matrix requires a dated dispensing history, identified "
-                            "product, documented diagnosis, and counsel's timing assessment. "
-                            "Of 180 retained clients, 54 lack usable proof at the cutoff. "
-                            "Staff identify missing pages and contradictions; only the attorney "
-                            "decides whether further investigation, another theory, or closure is appropriate."
-                        ),
-                    ),
-                    field(
-                        "Replacement window and supplier remedies",
-                        "textarea",
-                        (
-                            "Define the difference between correcting defective administrative "
-                            "work and replacing a claimant. Specify notice periods, included "
-                            "labor, evidence needed for supplier credits, and limits preventing "
-                            "open-ended service costs or promises about representation outcomes."
-                        ),
-                        (
-                            "The firm has 30 days after packet delivery to report missing "
-                            "index pages or transcription defects. Up to 20 corrective labor "
-                            "hours are included monthly. The MSO does not replace rejected "
-                            "clients or refund fees because a case fails; publisher credits "
-                            "address documented duplicate or fabricated submissions only."
-                        ),
-                    ),
-                    field(
-                        "Customer credit and concentration exposure",
-                        "textarea",
-                        (
-                            "Assess payment authority, receivable aging, customer concentration, "
-                            "and the source of operating funds. Describe protections against "
-                            "funding services from client trust balances or waiting for "
-                            "settlements before the firm pays ordinary administrative invoices."
-                        ),
-                        (
-                            "The first customer represents 100% of projected revenue, so the "
-                            "operator obtains trade references and a $15,000 service advance "
-                            "from the firm's operating account. Invoices mature in 30 days, "
-                            "independent of litigation results. Client trust money is excluded; "
-                            "overdue balances trigger a prospective spending pause."
-                        ),
-                    ),
-                    field(
-                        "Underwriting decision and adverse-case spread",
-                        "textarea",
-                        (
-                            "State the proceed, renegotiate, or decline decision using measured "
-                            "conversion, contractual protections, and stressed cost exposure. "
-                            "Name the person who can stop spending when evidence quality, "
-                            "customer liquidity, or lawful operating structure deteriorates."
-                        ),
-                        (
-                            "Proceed with the $58,750 fixed scope only after counsel approves "
-                            "advertising and payment terms. Base monthly costs are $36,425, "
-                            "leaving $22,325. A $6,000 rework shock reduces contribution to "
-                            "$16,325. The operator stops new media commitments if unpaid "
-                            "invoices exceed $58,750 or provenance defects exceed 5%."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The operator and supervising attorney sign a dated underwriting record "
-                    "with verified entities, fair-market pricing support, the complete cohort "
-                    "waterfall, a funded payment plan, and explicit rejection of recovery-linked "
-                    "compensation under the ordinary MSO structure."
-                ),
-            },
-            {
-                "worksheet_id": "ws-02",
-                "number": 2,
-                "title": "Unit Economics, Escrow/Reserve Float & Working-Capital Calculator",
-                "purpose": (
-                    "Reconcile the three canonical annual scenarios and translate the base "
-                    "case into cohort costs, invoice timing, and cash requirements. Keep "
-                    "law-firm trust balances outside the model, distinguish revenue from "
-                    "cash collection, and stress duplicate attrition, record rejection, "
-                    "retrieval spending, and bounded rework."
-                ),
-                "chapter_ref": "Q3, Q4",
-                "instructions": [
-                    (
-                        "Enter annual revenue, total operating cost, margin, owner net profit, "
-                        "and staffing for all three canonical scenarios. Preserve exact "
-                        "annual values, label monthly rounding, and do not substitute "
-                        "settlement awards or client medical expenses for recognized MSO revenue."
-                    ),
-                    (
-                        "Separate standing overhead from campaign media, record charges, "
-                        "delivery labor, and allocated costs. Reconcile every base-case "
-                        "dollar to the annual model so the published monthly overhead "
-                        "range is not misrepresented as the complete expense burden."
-                    ),
-                    (
-                        "Calculate stage conversion and cost per operational outcome from "
-                        "one cohort. Keep those ratios as diagnostic measures rather "
-                        "than contractual prices per retained client or accepted case, "
-                        "and retain raw inquiries as the top-of-funnel denominator."
-                    ),
-                    (
-                        "Model invoice recognition, payment timing, service advances, "
-                        "supplier terms, and unrestricted reserves separately. Use a "
-                        "daily cash calendar after the initial run-rate estimate, and "
-                        "never count customer trust balances or future settlement receipts "
-                        "as available working capital."
-                    ),
-                    (
-                        "Stress each major driver independently before combining shocks. "
-                        "Document which costs are already committed, which can be "
-                        "reduced prospectively, and which require a signed scope amendment "
-                        "so collection delays do not produce hidden reductions in service quality."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Conservative scenario reconciliation",
-                        "textarea",
-                        (
-                            "Record conservative annual revenue, operating costs, net margin, "
-                            "owner net profit, and team composition. Explain the monthly "
-                            "equivalent and identify whether any cash reserve movement "
-                            "has incorrectly been recorded as an operating expense."
-                        ),
-                        (
-                            "Conservative recognized service revenue is $160,000; total annual "
-                            "costs are $118,400; owner net profit is $41,600 at 26%. Staffing "
-                            "is one full-time operator plus three contractors. Monthly "
-                            "equivalents are approximately $13,333.33 revenue, $9,866.67 costs, "
-                            "and $3,466.67 profit; annual amounts control rounding."
-                        ),
-                    ),
-                    field(
-                        "Base scenario reconciliation",
-                        "textarea",
-                        (
-                            "Enter the base annual and monthly income statement using only "
-                            "contracted administrative service revenue. Identify the exact "
-                            "cost ceiling needed to preserve the canonical margin and "
-                            "distinguish owner net profit from additional owner withdrawals."
-                        ),
-                        (
-                            "Base revenue is $705,000 annually, or $58,750 monthly. Annual "
-                            "costs of $437,100 equal $36,425 monthly, leaving $267,900 annual "
-                            "owner net profit and $22,325 monthly at 38.0%. The team remains "
-                            "one full-time operator plus three contractors; owner distributions "
-                            "do not become a second operating expense."
-                        ),
-                    ),
-                    field(
-                        "Scaled small-team reconciliation",
-                        "textarea",
-                        (
-                            "Record the scaled revenue, margin, total costs, owner net "
-                            "profit, and six-person staffing constraint. Explain how process "
-                            "capacity and customer diversification must support the scenario "
-                            "without assuming settlement participation or a larger hidden team."
-                        ),
-                        (
-                            "Scaled service revenue is $1,250,000, annual costs are $625,000, "
-                            "and annual owner net profit is $625,000 at 50%. Staffing is "
-                            "two full-time people plus four contractors. Approximate monthly "
-                            "revenue is $104,166.67; monthly cost and profit are each "
-                            "$52,083.33, with annual totals authoritative."
-                        ),
-                    ),
-                    field(
-                        "Revenue recognition and retained-share boundary",
-                        "textarea",
-                        (
-                            "Describe the promised service, performance period, principal "
-                            "versus agent assessment, and treatment of customer advances. "
-                            "Identify amounts excluded from operator revenue and explain "
-                            "how gross billings would be adjusted if pass-through agency facts apply."
-                        ),
-                        (
-                            "The illustrative base assumes the MSO controls and delivers "
-                            "the contracted service, recognizing $58,750 over each service "
-                            "month under ASC 606. A $15,000 advance is initially a contract "
-                            "liability. Settlement awards and trust funds contribute zero; "
-                            "an agency arrangement would require net presentation and explicit reconciliation."
-                        ),
-                    ),
-                    field(
-                        "Base monthly cost bridge",
-                        "textarea",
-                        (
-                            "Allocate the complete monthly expense budget to media, record "
-                            "outlays, delivery labor, systems, and remaining overhead. Explain "
-                            "which costs sit inside the published standing-overhead range "
-                            "and which variable costs must be added separately."
-                        ),
-                        (
-                            "Budget $18,000 media, $4,500 record outlays, $8,000 delivery "
-                            "contractors, $2,500 systems, and $3,425 allocated overhead, totaling "
-                            "$36,425. Standing overhead is $5,925, within the $2,500–$14,000 "
-                            "reference range. Campaign spending, retrieval, and delivery labor "
-                            "explain why complete base expenses exceed that standing range."
-                        ),
-                    ),
-                    field(
-                        "Waterfall cost per operational outcome",
-                        "textarea",
-                        (
-                            "Calculate media cost per raw inquiry and total cost per "
-                            "signed retainer, usable evidence file, and accepted case. "
-                            "State the relevant denominators and explain why these "
-                            "management ratios do not establish lawful compensation terms."
-                        ),
-                        (
-                            "With $18,000 media and $36,425 total cost, 1,000 inquiries "
-                            "cost $18 each in media. Total cost is $202.36 per 180 "
-                            "retainers, $289.09 per 126 usable files, and $337.27 per "
-                            "108 acceptances. These are cohort diagnostics; the fixed monthly "
-                            "service invoice remains $58,750."
-                        ),
-                    ),
-                    field(
-                        "Duplicate and nonqualifying-proof sensitivity",
-                        "textarea",
-                        (
-                            "Stress duplicate prevalence and unusable-record rates while "
-                            "holding the raw cohort and media budget constant. Recalculate "
-                            "downstream counts, state whether fractions represent expectations, "
-                            "and identify costs that do not fall automatically with conversion."
-                        ),
-                        (
-                            "At 20% duplicate suppression, 1,000 inquiries produce 800 unique "
-                            "candidates and 160 retainers at 20%. If only 60% yield usable "
-                            "proof, 96 files remain; using the baseline 108/126 acceptance "
-                            "ratio, expected acceptances are approximately 82.29. Media stays "
-                            "$18,000, and lower throughput does not automatically reduce fixed staffing commitments."
-                        ),
-                    ),
-                    field(
-                        "Retrieval outlay and corrective-service stress",
-                        "textarea",
-                        (
-                            "Model provider charges, request frequency, and labor needed "
-                            "for incomplete packets. Separate lawful provider fees from "
-                            "MSO handling costs, and state whether the customer contract "
-                            "absorbs overruns or permits prospective documented scope changes."
-                        ),
-                        (
-                            "The $4,500 retrieval budget assumes 180 files averaging $25 "
-                            "in permitted external outlays, not a statutory fee schedule. "
-                            "An $8 increase per file adds $1,440; 40 extra labor hours "
-                            "at $35 add $1,400. Monthly cost becomes $39,265, leaving "
-                            "$19,485 profit and approximately 33.17% margin."
-                        ),
-                    ),
-                    field(
-                        "Working-capital runway and reserve float",
-                        "textarea",
-                        (
-                            "Estimate cash needed for the collection cycle, add an "
-                            "unrestricted operating reserve, and compare available funding. "
-                            "Keep service advances, credit facilities, restricted money, "
-                            "and founder capital separate so the model cannot double-count liquidity."
-                        ),
-                        (
-                            "At $36,425 monthly cost, a simplified 45-day cycle consumes "
-                            "$54,637.50; adding a $15,000 reserve requires $69,637.50. "
-                            "Founder capital of $35,000 plus a $35,000 committed line "
-                            "provides $70,000. This excludes any service advance; actual "
-                            "daily disbursements and line charges require separate cash-calendar validation."
-                        ),
-                    ),
-                    field(
-                        "Collection shock and cash-stop threshold",
-                        "textarea",
-                        (
-                            "Extend the collection cycle and calculate the resulting "
-                            "funding shortfall without altering earned revenue. Specify "
-                            "which spending pauses first, how customer continuity is "
-                            "protected, and who authorizes any additional committed borrowing."
-                        ),
-                        (
-                            "A 60-day cycle requires $72,850 operating cash plus the "
-                            "$15,000 reserve, totaling $87,850. Against $70,000 committed "
-                            "funding, the shortfall is $17,850. The operator pauses new "
-                            "media purchases before exhausting reserves, preserves existing "
-                            "record follow-up, and seeks revised payment terms rather than settlement-linked compensation."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "All three annual scenarios reconcile exactly; base monthly costs total "
-                    "$36,425; the five-stage waterfall is visible; and a dated cash calendar "
-                    "demonstrates funding without client trust money, settlement proceeds, "
-                    "or duplicated service advances."
-                ),
-            },
-            {
-                "worksheet_id": "ws-03",
-                "number": 3,
-                "title": "End-to-End Execution, Idempotent Ledger & QA Pre-Flight Sheet",
-                "purpose": (
-                    "Turn each authorized inquiry into a traceable administrative workflow "
-                    "without duplicate contacts, duplicate record charges, or unsupported "
-                    "clinical summaries. Establish stable identifiers, evidence lineage, "
-                    "human legal decisions, reconciled invoice events, and controlled "
-                    "exception handling from intake receipt through collected service fees."
-                ),
-                "chapter_ref": "Q7, Q8",
-                "instructions": [
-                    (
-                        "Assign separate identifiers to people, matters, source inquiries, "
-                        "record requests, document versions, and invoices. Preserve "
-                        "their relationships without treating a phone number as a "
-                        "permanent identity or assuming one person can have only one matter."
-                    ),
-                    (
-                        "Define each state transition with its authorized actor, "
-                        "required evidence, timestamp, and retry behavior. Capture "
-                        "rejection and correction events rather than overwriting "
-                        "history, and keep production state distinct from the firm's "
-                        "legal representation and case-acceptance decisions."
-                    ),
-                    (
-                        "Verify the applicable record-access route before generating "
-                        "requests. Check signatures, recipient instructions, identity "
-                        "evidence, provider destinations, and deadlines; then reconcile "
-                        "received pages against requested date ranges before sending "
-                        "anything to a chronology parser or attorney reviewer."
-                    ),
-                    (
-                        "Test automation with duplicate deliveries, timeouts, partial "
-                        "documents, incorrect identity matches, and withdrawn permissions. "
-                        "Require deterministic event keys and human exception handling "
-                        "so retries cannot create additional invoices, unauthorized "
-                        "contacts, or requests to an obsolete recipient."
-                    ),
-                    (
-                        "Reconcile the operational ledger to provider outlays, supplier "
-                        "credits, the monthly administrative invoice, and actual bank "
-                        "receipts. Review a sample of completed packets against source "
-                        "pages, and record the supervising attorney's acceptance independently "
-                        "from the accounting close."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Identifier map and minimum-data design",
-                        "textarea",
-                        (
-                            "Define the identifiers linking inquiry, person, matter, request, "
-                            "document, and invoice records. Specify where sensitive identity "
-                            "attributes reside and how authorized staff resolve collisions "
-                            "without exposing medical content in general operational logs."
-                        ),
-                        (
-                            "Inquiry INQ-24001 links to person PER-810, matter MAT-430, "
-                            "request REQ-990, and document DOC-771 version 2. The service "
-                            "invoice is INV-046-07. Restricted identity storage holds birth "
-                            "date and address; ordinary logs show tokens only. A second "
-                            "matter receives its own identifier after attorney confirmation."
-                        ),
-                    ),
-                    field(
-                        "Idempotency key and delivery semantics",
-                        "textarea",
-                        (
-                            "Specify stable event keys, uniqueness enforcement, transaction "
-                            "boundaries, and safe retry behavior. Explain how the workflow "
-                            "handles an external provider that cannot support idempotency "
-                            "rather than assuming every successful network call is observable."
-                        ),
-                        (
-                            "The request key combines matter ID, provider ID, request "
-                            "scope, and authorization version. A PostgreSQL unique constraint "
-                            "blocks duplicate creation; an outbox records pending delivery. "
-                            "If a portal submission times out after possible receipt, staff "
-                            "check provider status before resubmission, preventing a second "
-                            "charge for the same request."
-                        ),
-                    ),
-                    field(
-                        "State machine and decision authority",
-                        "textarea",
-                        (
-                            "List operational states and required evidence for advancing "
-                            "between them. Identify the attorney-owned transitions and "
-                            "describe how a failed identity match, missing permission, "
-                            "or incomplete source record suspends the affected activity."
-                        ),
-                        (
-                            "States are received, provenance checked, duplicate screened, "
-                            "firm retainer signed, access request authorized, records received, "
-                            "proof indexed, attorney accepted, and service period reconciled. "
-                            "Only firm counsel marks representation and acceptance. Missing "
-                            "contact permission blocks outbound calls; missing record authority "
-                            "blocks retrieval without deleting the inquiry's audit trail."
-                        ),
-                    ),
-                    field(
-                        "Access request pre-flight",
-                        "textarea",
-                        (
-                            "Record the chosen HIPAA access or authorization route, "
-                            "requester identity, signature requirements, exact recipient, "
-                            "provider destination, and requested scope. Explain how an "
-                            "incorrect route or superseded authorization is detected before transmission."
-                        ),
-                        (
-                            "For a patient-directed electronic copy, staff verify the "
-                            "written signed instruction, designated recipient, and relevant "
-                            "electronic-record scope under 45 CFR 164.524. A broader "
-                            "third-party release uses a valid 164.508 authorization when "
-                            "appropriate. The checklist records route selection; it does "
-                            "not treat all signed documents as interchangeable."
-                        ),
-                    ),
-                    field(
-                        "Provider clock and follow-up schedule",
-                        "textarea",
-                        (
-                            "Track the provider's receipt date, applicable response period, "
-                            "documented extension, and escalation owner. Distinguish an "
-                            "internal follow-up target from a statutory deadline and "
-                            "record when another applicable rule requires faster handling."
-                        ),
-                        (
-                            "A covered provider receives an individual access request "
-                            "on day 0. Staff check status on day 10 and escalate "
-                            "on day 25. Under 45 CFR 164.524(b)(2), the baseline "
-                            "is 30 days, with one qualifying 30-day extension supported "
-                            "by timely written reasons and a completion date."
-                        ),
-                    ),
-                    field(
-                        "Document receipt and provenance manifest",
-                        "textarea",
-                        (
-                            "Specify checks for patient identity, requested dates, page "
-                            "counts, file integrity, and source attribution. Explain how "
-                            "partial production, corrupted files, and unrelated patients' "
-                            "pages are isolated before routine staff or models can process them."
-                        ),
-                        (
-                            "A 142-page production contains 137 matching pages, three "
-                            "blank pages, and two pages for another patient. The "
-                            "reviewer restricts the mixed file, records the incident, "
-                            "requests corrected production, and creates a controlled "
-                            "working copy. SHA-256 digests and receipt timestamps "
-                            "identify every source and derivative version."
-                        ),
-                    ),
-                    field(
-                        "Chronology extraction and clinical QA",
-                        "textarea",
-                        (
-                            "Define the structured chronology fields, source-page citations, "
-                            "uncertainty handling, and human review sample. Require the "
-                            "parser to distinguish recorded diagnosis from inferred "
-                            "causation and to preserve conflicting dates rather than silently resolving them."
-                        ),
-                        (
-                            "Each row records encounter date, provider, quoted diagnosis, "
-                            "recorded ICD-10 code, medication, exposure reference, and page "
-                            "citation. A model extracts 24 events; a reviewer corrects "
-                            "two date errors and rejects one unsupported causal statement. "
-                            "Counsel receives the corrected chronology, original excerpts, "
-                            "and a contradiction list."
-                        ),
-                    ),
-                    field(
-                        "Deficiency queue and rework aging",
-                        "textarea",
-                        (
-                            "Categorize missing evidence, vendor defects, client follow-up, "
-                            "and attorney questions separately. Assign owners and "
-                            "deadlines, preserve the replacement-window clock, and "
-                            "explain which corrections are included in the fixed administrative scope."
-                        ),
-                        (
-                            "Of 126 usable files, 18 await attorney-identified deficiencies "
-                            "and 108 are accepted. Ten need missing date ranges, five "
-                            "need medication reconciliation, and three need signed corrections. "
-                            "The coordinator assigns two-business-day triage targets; the "
-                            "30-day contractual notice window applies to administrative defects, "
-                            "not promised case outcomes."
-                        ),
-                    ),
-                    field(
-                        "Service ledger and collection reconciliation",
-                        "textarea",
-                        (
-                            "Describe how completed services support the monthly invoice "
-                            "without multiplying fees by accepted claims. Match invoice "
-                            "identifiers, credits, deposits, and bank receipts, preserving "
-                            "the distinction between earned revenue and the date cash arrives."
-                        ),
-                        (
-                            "July services support one $58,750 invoice. The ledger applies "
-                            "a previously recorded $15,000 service advance and matches "
-                            "a $43,750 bank receipt, leaving zero receivable. The "
-                            "108 accepted cases appear in the service report only; "
-                            "no ledger line allocates a percentage of attorney fees."
-                        ),
-                    ),
-                    field(
-                        "Pre-flight test evidence and release record",
-                        "textarea",
-                        (
-                            "List the test cases required before production changes, "
-                            "expected results, reviewer identity, and retained artifacts. "
-                            "Include permissions withdrawal, duplicate transmission, "
-                            "incorrect patient matching, and invoice replay rather than testing "
-                            "only successful intake and extraction paths."
-                        ),
-                        (
-                            "The test pack contains 12 synthetic matters: two duplicate "
-                            "webhooks, two missing permissions, two patient mismatches, "
-                            "two partial packets, two invoice replays, and two valid "
-                            "paths. Expected results include one request per stable key "
-                            "and zero duplicate invoices. The release record stores "
-                            "actual outcomes before deployment."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "A synthetic end-to-end cohort demonstrates reproducible identifiers, "
-                    "safe retries, correct access routing, source-linked chronology output, "
-                    "attorney-controlled acceptance, and an invoice-to-receipt reconciliation "
-                    "with no duplicate request charges or unsupported case-linked fees."
-                ),
-            },
-            {
-                "worksheet_id": "ws-04",
-                "number": 4,
-                "title": "Statutory, Licensing, Contract Addendum & Compliance Audit",
-                "purpose": (
-                    "Translate professional-conduct rules, health-record access requirements, "
-                    "contact restrictions, and confidentiality duties into inspectable "
-                    "contract terms and operational evidence. Distinguish ordinary nonlawyer "
-                    "MSO work from a specifically licensed Arizona structure, and assign "
-                    "qualified legal owners to jurisdiction-specific interpretation and remediation."
-                ),
-                "chapter_ref": "Q5, Q9",
-                "instructions": [
-                    (
-                        "Create a jurisdiction matrix covering the firm, prospective "
-                        "client, advertising audience, caller, provider, and service "
-                        "entity. Have firm counsel identify applicable adopted rules "
-                        "and state statutes rather than assuming ABA model language "
-                        "itself supplies nationwide operating permission."
-                    ),
-                    (
-                        "Attach the service scope, pricing support, independence terms, "
-                        "security duties, and rework limits to the agreement. "
-                        "Test actual conduct against those clauses, because a fixed "
-                        "invoice label cannot cure prohibited referrals, unauthorized "
-                        "legal practice, or interference with professional judgment."
-                    ),
-                    (
-                        "Classify every record request by legal route and every "
-                        "data recipient by actual function. Verify applicable "
-                        "authorizations, business-associate duties, security controls, "
-                        "and transfer restrictions before granting access to health "
-                        "records or connecting an external processing service."
-                    ),
-                    (
-                        "Audit advertisements, permission language, calling practices, "
-                        "recordings, and vendor sourcing against current federal "
-                        "and state requirements. Preserve the version examined and "
-                        "counsel's determination, including any deliberately stricter "
-                        "contractual operating standard that exceeds a statutory minimum."
-                    ),
-                    (
-                        "Assign each finding an owner, remediation deadline, and "
-                        "evidence requirement. Suspend the affected activity when "
-                        "authority or lawful structure is absent, while preserving "
-                        "existing client files and routing representation questions "
-                        "to the responsible attorney rather than intake personnel."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Jurisdiction and professional-rule matrix",
-                        "textarea",
-                        (
-                            "Identify each relevant jurisdiction and the adopted rules "
-                            "governing the proposed service. Record counsel's primary "
-                            "sources and review date, distinguishing model provisions "
-                            "from binding local requirements and identifying specific unresolved operating restrictions."
-                        ),
-                        (
-                            "The firm serves New York clients while its MSO operates "
-                            "remotely. Counsel checks New York Rules 5.4, 5.5, and "
-                            "7.2 plus Judiciary Law 478 for unauthorized-practice exposure. "
-                            "The matrix separately records advertising destinations and "
-                            "caller locations; expansion into Florida requires a new "
-                            "state-specific review before traffic begins."
-                        ),
-                    ),
-                    field(
-                        "Rule 5.4 pricing and independence addendum",
-                        "textarea",
-                        (
-                            "Draft the operative compensation and independence clauses "
-                            "for an ordinary nonlawyer MSO. Address settlement sensitivity, "
-                            "client selection, strategy control, payment source, and "
-                            "fair-market documentation without relying solely on the phrase fixed fee."
-                        ),
-                        (
-                            "Clause: The monthly administrative fee is $58,750 for "
-                            "defined services and does not vary with referrals, "
-                            "retainers, recoveries, or legal fees. The firm exclusively "
-                            "controls representation and professional judgment. Payment "
-                            "comes from its operating account. Quarterly scope changes "
-                            "require documented service costs and prospective written agreement."
-                        ),
-                    ),
-                    field(
-                        "Arizona ABS structure verification",
-                        "textarea",
-                        (
-                            "If an Arizona alternative business structure is proposed, "
-                            "identify the licensed entity, approved ownership, compliance "
-                            "responsibility, authorized activities, and license conditions. "
-                            "Explain why an Arizona connection alone does not authorize "
-                            "fee sharing elsewhere."
-                        ),
-                        (
-                            "The ordinary launch uses no ABS exception and receives "
-                            "zero legal-fee participation. A later co-venture requires "
-                            "verification under Arizona Supreme Court Rule 33.1 and "
-                            "ACJA 7-209, including license scope and responsible personnel. "
-                            "An Arizona mailing address or lawyer shareholder does not "
-                            "convert the current MSO into that licensed entity."
-                        ),
-                    ),
-                    field(
-                        "Advertising, referrals, and intake boundaries",
-                        "textarea",
-                        (
-                            "Specify who approves advertisements and intake scripts, "
-                            "what staff may explain, and what they must escalate. "
-                            "Address paid recommendations, misleading claim values, "
-                            "solicitation restrictions, and jurisdiction-specific recordkeeping requirements "
-                            "using the firm's adopted professional rules."
-                        ),
-                        (
-                            "Under applicable counterparts to ABA Rules 7.1, 7.2, "
-                            "7.3, and 5.5, counsel approves every campaign and "
-                            "script version. Staff collect facts and schedule attorney "
-                            "calls; they do not estimate settlements or determine "
-                            "eligibility. Vendor invoices identify advertising services, "
-                            "not payments for personal recommendations or retained clients."
-                        ),
-                    ),
-                    field(
-                        "TCPA contact permission and suppression",
-                        "textarea",
-                        (
-                            "Record the approved contact channels, consent evidence, "
-                            "seller identity, revocation handling, and suppression checks. "
-                            "Distinguish contractual one-to-one permission standards from "
-                            "current federal requirements, and account for technology-specific "
-                            "and state-specific calling restrictions."
-                        ),
-                        (
-                            "The contract requires firm-specific one-to-one written "
-                            "permission for covered marketing outreach under 47 U.S.C. "
-                            "227 and 47 CFR 64.1200. Counsel notes the FCC's "
-                            "2023 one-to-one amendment was vacated in 2025; the "
-                            "stricter contract remains. Revocations enter immediate "
-                            "suppression, with applicable calling-hour and state rules checked."
-                        ),
-                    ),
-                    field(
-                        "HITECH access, authorization, and fee routing",
-                        "textarea",
-                        (
-                            "Specify when individual access, electronic third-party "
-                            "direction, or a separate authorization applies. Record "
-                            "the fee rule for the selected route and avoid "
-                            "representing HITECH as a universal cheap-records mechanism "
-                            "for litigation vendors."
-                        ),
-                        (
-                            "The route sheet cites 42 U.S.C. 17935(e), 45 CFR "
-                            "164.524, and 164.508. Counsel applies the Ciox decision's "
-                            "limits when evaluating third-party directions. Individual "
-                            "access fees follow permitted cost categories; the team "
-                            "does not assume those limits cover every third-party "
-                            "request or that search charges belong in individual-access fees."
-                        ),
-                    ),
-                    field(
-                        "HIPAA role and processing agreement inventory",
-                        "textarea",
-                        (
-                            "Determine whether each participant is a covered entity, "
-                            "business associate, subcontractor, or other authorized "
-                            "recipient. Tie required agreements and safeguards to "
-                            "actual functions rather than assuming possession of medical "
-                            "records automatically establishes HIPAA business-associate status."
-                        ),
-                        (
-                            "A patient's law firm is not automatically a business "
-                            "associate merely because it receives authorized records. "
-                            "If the MSO performs covered functions for a covered "
-                            "entity or business associate, counsel evaluates 45 CFR "
-                            "160.103, 164.502(e), and 164.504(e). Appropriate agreements "
-                            "precede vendor access, alongside contractual confidentiality and security duties."
-                        ),
-                    ),
-                    field(
-                        "Sensitive records and recording restrictions",
-                        "textarea",
-                        (
-                            "Identify record categories and communication practices "
-                            "requiring additional review, including substance-use "
-                            "treatment, psychotherapy notes, minors' information, and "
-                            "call recordings. Specify how staff detect these categories "
-                            "and stop inappropriate routing before external processing."
-                        ),
-                        (
-                            "A packet marked as a substance-use treatment program "
-                            "record is restricted pending counsel's 42 CFR Part 2 "
-                            "assessment, including litigation-use limits. Psychotherapy "
-                            "notes receive separate authorization review. Call recording "
-                            "is disabled until counsel checks 18 U.S.C. 2511 and "
-                            "applicable state all-party rules for the participants' locations."
-                        ),
-                    ),
-                    field(
-                        "Security incident and notification ownership",
-                        "textarea",
-                        (
-                            "Define incident reporting, containment, evidence preservation, "
-                            "legal classification, and notification responsibility. Distinguish "
-                            "contractual escalation times from statutory outside limits, "
-                            "and require review of state obligations alongside applicable "
-                            "HIPAA breach provisions."
-                        ),
-                        (
-                            "The MSO alerts the firm's incident lead within four "
-                            "hours of discovering misdirected records, suspends the "
-                            "link, and preserves access evidence. Counsel evaluates "
-                            "45 CFR 164.400–414 when applicable, including business-associate "
-                            "notice without unreasonable delay and within 60 days. "
-                            "The four-hour contract deadline controls internal escalation."
-                        ),
-                    ),
-                    field(
-                        "Contract audit findings and remediation evidence",
-                        "textarea",
-                        (
-                            "Record each finding, affected workflow, owner, deadline, "
-                            "and objective closure evidence. Include confidentiality, "
-                            "subcontractor access, legal independence, source permissions, "
-                            "payment terms, and retention so the audit examines "
-                            "operations as well as signed documents."
-                        ),
-                        (
-                            "Finding A removes a supplier clause promising payment "
-                            "per signed retainer. Finding B disables an unapproved "
-                            "document processor. Finding C adds a 30-day defect "
-                            "notice period. Counsel signs the revised scope, security "
-                            "verifies processor removal, and the operator stores "
-                            "executed versions before restarting the affected acquisition channel."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "Firm counsel confirms the applicable operating structure, advertising "
-                    "and contact rules, record-request routes, and executed agreements. "
-                    "Every critical finding has objective closure evidence or the affected "
-                    "activity remains suspended with a named remediation owner."
-                ),
-            },
-            {
-                "worksheet_id": "ws-05",
-                "number": 5,
-                "title": "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker",
-                "purpose": (
-                    "Design automation that lowers administrative effort without transferring "
-                    "legal judgment to software or multiplying questionable inquiries. "
-                    "Connect permission evidence, duplicate screening, provider retrieval, "
-                    "source-linked chronology extraction, and operational feedback while "
-                    "maintaining human fallback capacity for fraud, outages, evidence defects, "
-                    "and litigation shocks."
-                ),
-                "chapter_ref": "Q6, Q10",
-                "instructions": [
-                    (
-                        "Map each automation to a specific bottleneck, measurable "
-                        "time saving, authorized dataset, and accountable human. "
-                        "Keep identity screening, record access, clinical extraction, "
-                        "and legal acceptance separate so a convenient integration "
-                        "cannot silently acquire authority beyond its assigned function."
-                    ),
-                    (
-                        "Set baseline acquisition and evidence-quality metrics before "
-                        "testing new publishers. Compare complete cohorts using "
-                        "duplicate rates, permission defects, usable records, and "
-                        "customer collection, rather than optimizing solely for "
-                        "cheap inquiries or a model-generated prediction of case value."
-                    ),
-                    (
-                        "Apply restricted access and data minimization to every "
-                        "integration. Keep medical narratives away from advertising "
-                        "platforms, verify processor terms before sending records, "
-                        "and ensure operational analytics can function with "
-                        "aggregated measures rather than identifiable client information."
-                    ),
-                    (
-                        "Define measurable stop conditions for model errors, vendor "
-                        "fraud, retrieval backlog, system failures, and changes "
-                        "in litigation viability. Pair every stop condition "
-                        "with a manual queue, responsible owner, and communication "
-                        "plan so production can degrade safely."
-                    ),
-                    (
-                        "Close the acquisition feedback loop with documented vendor "
-                        "remedies and prospective budget changes. Preserve cohort "
-                        "history after changes, separate supplier defects from "
-                        "medical nonqualification, and prevent customer pressure "
-                        "from turning administrative metrics into prohibited outcome-based compensation."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Automation inventory and human ownership",
-                        "textarea",
-                        (
-                            "List each automated step, trigger, source system, "
-                            "permitted output, accountable reviewer, and fallback. "
-                            "Explain which decisions remain with the firm and "
-                            "how the inventory prevents tools from expanding "
-                            "their role through undocumented integrations."
-                        ),
-                        (
-                            "The inventory assigns TrustedForm retrieval to acquisition "
-                            "operations, authorized identity checks to the intake "
-                            "lead, request scheduling to the records coordinator, "
-                            "and chronology extraction to a supervised processor. "
-                            "Firm counsel alone decides representation and acceptance. "
-                            "Each connector has an owner, access scope, retry limit, "
-                            "and manual work instruction."
-                        ),
-                    ),
-                    field(
-                        "Permission evidence and fraud firewall",
-                        "textarea",
-                        (
-                            "Define the combined checks for provenance, duplicate "
-                            "submission, suspicious identity patterns, and conflicting "
-                            "retainer claims. Explain the limits of commercial "
-                            "tools and how manual escalation protects legitimate "
-                            "people from automatic rejection based on imperfect matching."
-                        ),
-                        (
-                            "A 1,000-inquiry cohort triggers 70 exact duplicates, "
-                            "20 probable duplicates, and 10 unresolved identity "
-                            "alerts. Staff resolve ambiguous matches before "
-                            "progression. TrustedForm supports source evidence; "
-                            "LexisNexis supports authorized identity research. Neither "
-                            "proves exclusive representation, and no cross-firm "
-                            "client list is exchanged without a lawful basis."
-                        ),
-                    ),
-                    field(
-                        "Provider retrieval scheduler and retry budget",
-                        "textarea",
-                        (
-                            "Specify request scheduling, rate limits, status polling, "
-                            "retry counts, and escalation for providers without "
-                            "reliable electronic interfaces. Separate internal automation "
-                            "targets from provider legal obligations and prevent "
-                            "retries from creating repeated charges or duplicate disclosures."
-                        ),
-                        (
-                            "The scheduler creates at most one active request "
-                            "per stable request key and permits three technical "
-                            "retries for transport failures. A confirmed receipt "
-                            "switches the job to status tracking. Portal ambiguity "
-                            "goes to manual checking; day-10 follow-up and "
-                            "day-25 escalation remain visible on the provider calendar."
-                        ),
-                    ),
-                    field(
-                        "Chronology model contract and evaluation",
-                        "textarea",
-                        (
-                            "Specify permitted model processing, retention terms, "
-                            "required source citations, evaluation cases, and error "
-                            "thresholds. Require abstention on unsupported facts "
-                            "and explain how prompt-like instructions embedded "
-                            "inside source documents are treated as record content."
-                        ),
-                        (
-                            "The selected processor must support the required "
-                            "contractual safeguards and appropriate BAA where "
-                            "applicable; identifiable records never enter a "
-                            "public consumer chat. A 50-document test set "
-                            "requires every chronology statement to cite a "
-                            "page. Embedded instructions are ignored, and "
-                            "unsupported causal conclusions always route to rejection."
-                        ),
-                    ),
-                    field(
-                        "Acquisition experiment and cohort scorecard",
-                        "textarea",
-                        (
-                            "Define one controlled acquisition experiment with "
-                            "budget, audience, approved message, evaluation period, "
-                            "and quality metrics. Keep downstream acceptance "
-                            "as a quality measure rather than a supplier "
-                            "payment trigger or a proxy for settlement value."
-                        ),
-                        (
-                            "Two approved publishers each receive a $3,000 "
-                            "two-week media allocation. Publisher A delivers "
-                            "150 inquiries with 8% duplicates; Publisher B "
-                            "delivers 200 with 25% duplicates. The operator "
-                            "waits for matured permission and evidence metrics "
-                            "before reallocating spend, while paying for contracted "
-                            "advertising rather than accepted cases."
-                        ),
-                    ),
-                    field(
-                        "Privacy-preserving acquisition feedback",
-                        "textarea",
-                        (
-                            "Describe what conversion information may leave the "
-                            "case-management environment and what must remain "
-                            "restricted. Address pixels, audience uploads, hashed "
-                            "identifiers, medical categories, and reporting thresholds "
-                            "so campaign optimization does not disclose client health or representation details."
-                        ),
-                        (
-                            "The media dashboard receives weekly channel totals "
-                            "for valid permissions and administrative completion, "
-                            "subject to counsel's review. It receives no "
-                            "diagnoses, medical pages, claimant lists, or "
-                            "retainer identities. Hashed email addresses remain "
-                            "restricted identifiers, not anonymous statistics; "
-                            "tracking pixels are excluded from authenticated intake "
-                            "and medical-document pages."
-                        ),
-                    ),
-                    field(
-                        "Queue capacity and manual fallback staffing",
-                        "textarea",
-                        (
-                            "Calculate available processing hours, average handling "
-                            "time, maximum queue age, and fallback capacity. "
-                            "Explain how automation failure changes throughput "
-                            "without hiding unpaid overtime, extra workers, "
-                            "or reduced review standards inside the small-team scenario."
-                        ),
-                        (
-                            "Three contractors provide 80 delivery hours monthly "
-                            "at a blended $100 hourly allocation, matching "
-                            "$8,000 labor. At 20 minutes per packet, "
-                            "180 packets use 60 hours and leave 20 "
-                            "for corrections. A 40-hour outage exceeds that "
-                            "buffer; new intake is throttled or additional "
-                            "paid capacity is explicitly budgeted."
-                        ),
-                    ),
-                    field(
-                        "Vendor fraud trigger and containment",
-                        "textarea",
-                        (
-                            "Set measurable thresholds for suspicious clusters, "
-                            "permission failures, duplicate spikes, and supplier "
-                            "noncooperation. Describe payment disputes, preservation "
-                            "of evidence, and protection of potentially legitimate "
-                            "clients without accusing every flagged individual of fabrication."
-                        ),
-                        (
-                            "A publisher's duplicate rate rises from 10% "
-                            "to 28% across 200 inquiries, with 16 "
-                            "unretrievable permission records. The operator pauses "
-                            "that source, preserves original submissions, and "
-                            "requests contractual credits for proven defects. "
-                            "Existing signed clients remain with firm counsel "
-                            "for individual assessment rather than automatic batch rejection."
-                        ),
-                    ),
-                    field(
-                        "Rule 702 litigation shock response",
-                        "textarea",
-                        (
-                            "Describe how the operation detects a material "
-                            "causation ruling or litigation-development risk and "
-                            "changes prospective spending. Identify counsel's role "
-                            "under Federal Rule of Evidence 702 and "
-                            "separate docket monitoring from automated predictions about legal outcomes."
-                        ),
-                        (
-                            "Counsel monitors the relevant MDL docket through "
-                            "PACER and evaluates any Rule 702 general-causation "
-                            "decision. A material adverse ruling prompts a "
-                            "same-day review of new media commitments. The "
-                            "MSO preserves existing files, continues authorized "
-                            "administrative duties, and follows counsel's instructions "
-                            "rather than terminating representation or promising another recovery."
-                        ),
-                    ),
-                    field(
-                        "Recovery drill and automation restart",
-                        "textarea",
-                        (
-                            "Define a repeatable drill covering service outage, "
-                            "incorrect extraction, unauthorized recipient, and delayed "
-                            "provider response. Require evidence of restored "
-                            "integrity, reconciled event counts, and authorized "
-                            "restart rather than assuming system availability proves correct operation."
-                        ),
-                        (
-                            "The monthly drill disables the request connector "
-                            "for two hours and injects five replayed "
-                            "events into a synthetic queue. Staff use "
-                            "the manual register, then reconcile request "
-                            "keys and provider receipts before restart. "
-                            "Success requires zero duplicate submissions, no "
-                            "unreconciled outlays, and documented review of every exception."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "Each automation has an authorized data scope, measured performance "
-                    "target, named human owner, and tested manual fallback. Acquisition "
-                    "feedback excludes identifiable health information, and fraud, model "
-                    "error, cash stress, and Rule 702 shocks have explicit spending-stop rules."
-                ),
-            },
-            {
-                "worksheet_id": "ws-06",
-                "number": 6,
-                "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
-                "purpose": (
-                    "Convert the operating design into a sequenced 30-day readiness sprint "
-                    "with accountable owners, affordable pilot limits, and auditable metrics. "
-                    "Build a transferable service business through clean contracts, repeatable "
-                    "production, reliable collections, controlled data access, and records "
-                    "that support diligence without exposing client confidences."
-                ),
-                "chapter_ref": "Q11, Q12",
-                "instructions": [
-                    (
-                        "Treat the first 30 days as a readiness "
-                        "and controlled-pilot sprint, not a promise of "
-                        "immediate contracted revenue. Keep the canonical "
-                        "1–4 month first-deal horizon visible and avoid "
-                        "committing a full base-case media budget before "
-                        "customer authority and funding exist."
-                    ),
-                    (
-                        "Assign one accountable owner to each sprint "
-                        "deliverable and define observable completion evidence. "
-                        "Sequence contracts, permissions, security, synthetic "
-                        "testing, and funded production so the team "
-                        "does not collect sensitive records merely to "
-                        "demonstrate technical progress."
-                    ),
-                    (
-                        "Publish a weekly pod scorecard with raw "
-                        "cohort counts, conversion denominators, queue aging, "
-                        "source defects, service effort, receivable aging, "
-                        "and cash runway. Label immature cohorts and "
-                        "separate customer acceptance decisions from administrative "
-                        "service billing and collection."
-                    ),
-                    (
-                        "Create an exit-readiness ledger from the "
-                        "first signed engagement rather than reconstructing "
-                        "it during a transaction. Preserve pricing "
-                        "support, contract versions, assignment conditions, "
-                        "processor inventories, and reconciliations while "
-                        "limiting prospective buyers to appropriately aggregated "
-                        "or authorized diligence materials."
-                    ),
-                    (
-                        "At day 30, compare completed evidence "
-                        "against the launch criteria and document "
-                        "unresolved dependencies. Continue only the funded "
-                        "and authorized scope, maintain explicit recovery "
-                        "plans for delays, and update the next "
-                        "30-day plan without rewriting historical targets."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Days 1–7 counterparty and scope sprint",
-                        "textarea",
-                        (
-                            "List first-week deliverables for customer verification, "
-                            "jurisdiction mapping, service design, and pricing "
-                            "support. Assign owners and evidence artifacts, "
-                            "and specify which production activities remain "
-                            "disabled until the customer relationship is authorized and funded."
-                        ),
-                        (
-                            "By day 3, the operator assembles entity "
-                            "and bar verification; by day 5, counsel "
-                            "reviews the jurisdiction matrix; by day 7, "
-                            "the firm receives the $58,750 monthly scope "
-                            "and pricing support. Paid traffic and "
-                            "medical-record collection remain disabled while "
-                            "contract execution and funding are pending."
-                        ),
-                    ),
-                    field(
-                        "Days 8–14 contracts and security sprint",
-                        "textarea",
-                        (
-                            "Define second-week outputs for service terms, "
-                            "contact scripts, data processing, account permissions, "
-                            "and incident ownership. Require specific evidence "
-                            "of execution and configuration rather than "
-                            "treating an unsigned template or planned setting as completed work."
-                        ),
-                        (
-                            "The week-two checklist requires executed service "
-                            "terms, counsel-approved advertisements, role-based access, "
-                            "multifactor authentication, processor review, and "
-                            "a named incident lead. The operator "
-                            "captures configuration evidence using synthetic "
-                            "records. Any outstanding BAA required by "
-                            "the actual relationship blocks that processor "
-                            "from receiving identifiable health records."
-                        ),
-                    ),
-                    field(
-                        "Days 15–21 synthetic test and pilot sprint",
-                        "textarea",
-                        (
-                            "Specify the synthetic test pack, permitted "
-                            "live-pilot scope, spending limit, customer authorization, "
-                            "and stopping conditions. Explain how pilot "
-                            "results will be reported when retainers, "
-                            "provider responses, or collection events have not yet matured."
-                        ),
-                        (
-                            "Days 15–18 run the 12-matter synthetic "
-                            "pack and invoice replay tests. If "
-                            "contracts and funding are complete, days "
-                            "19–21 permit a $1,500 media pilot "
-                            "with at most 100 inquiries. The "
-                            "report marks record and collection stages "
-                            "as pending events with named follow-up "
-                            "dates, never as completed conversions."
-                        ),
-                    ),
-                    field(
-                        "Days 22–30 launch decision and next cycle",
-                        "textarea",
-                        (
-                            "Define the day-30 decision evidence, unresolved "
-                            "dependencies, authorized spending ceiling, and "
-                            "next-cycle priorities. Explain what happens "
-                            "if no firm has signed by "
-                            "the deadline while preserving the canonical first-deal timeline and startup budget."
-                        ),
-                        (
-                            "Day 30 requires a verified contract, "
-                            "funding evidence, passing synthetic tests, "
-                            "and counsel-approved workflows before routine "
-                            "production. If no firm has signed, "
-                            "the team continues targeted outreach within "
-                            "the 1–4 month first-deal horizon and "
-                            "spends no base-case media budget. The "
-                            "next sprint prioritizes contracting rather than artificial volume."
-                        ),
-                    ),
-                    field(
-                        "Pod roles, capacity, and escalation map",
-                        "textarea",
-                        (
-                            "Assign the full-time operator and three "
-                            "contractors to defined responsibilities, hours, "
-                            "handoffs, and escalation duties. Identify "
-                            "customer-side attorney responsibilities separately so "
-                            "the staffing model does not quietly include unbudgeted legal personnel or unlimited contractor availability."
-                        ),
-                        (
-                            "The full-time operator owns commercial terms, "
-                            "cash, and QA. Contractor A handles "
-                            "intake, B coordinates records, and C "
-                            "prepares chronologies within the $8,000 "
-                            "delivery allocation. Firm counsel remains "
-                            "customer-side and owns representation decisions. "
-                            "The scaled plan adds one full-time "
-                            "operator and one contractor, reaching six people total."
-                        ),
-                    ),
-                    field(
-                        "Weekly KPI definitions and cohort maturity",
-                        "textarea",
-                        (
-                            "Define the weekly metrics, denominators, "
-                            "cutoff date, accountable owner, and "
-                            "maturity labels. Include each waterfall "
-                            "stage, operational errors, and collection "
-                            "performance so an attractive inquiry count cannot conceal rejected proof or unpaid administrative invoices."
-                        ),
-                        (
-                            "The mature monthly reference reports "
-                            "1,000 inquiries, 900 unique candidates, "
-                            "180 retainers, 126 usable files, "
-                            "108 acceptances, and $58,750 collected "
-                            "against service invoices. Weekly cohorts "
-                            "show days since intake and open "
-                            "provider requests. The scorecard separately "
-                            "tracks duplicate rate, correction hours, "
-                            "receivable aging, and unrestricted cash days."
-                        ),
-                    ),
-                    field(
-                        "Startup allocation and purchase discipline",
-                        "textarea",
-                        (
-                            "Allocate founder startup capital among "
-                            "setup, testing, systems, and working "
-                            "cash while remaining inside the "
-                            "canonical range. Distinguish spending authority "
-                            "from cash already disbursed and reconcile remaining liquidity before starting the full operating cycle."
-                        ),
-                        (
-                            "A $35,000 startup allocation reserves "
-                            "$7,000 for contracts and setup, "
-                            "$3,000 for systems, $1,500 for "
-                            "pilot media, and $23,500 for "
-                            "working cash. If all setup "
-                            "allocations are spent, founder cash "
-                            "plus the $35,000 line totals "
-                            "$58,500, leaving $11,137.50 below "
-                            "the $69,637.50 full-cycle requirement."
-                        ),
-                    ),
-                    field(
-                        "Contract and operating-asset transfer ledger",
-                        "textarea",
-                        (
-                            "Record transferable contracts, assignment "
-                            "conditions, operating procedures, software "
-                            "licenses, and intellectual-property ownership. "
-                            "Separate business assets from client "
-                            "relationships and medical records, and identify permissions needed before a buyer can access restricted materials or assume service duties."
-                        ),
-                        (
-                            "The ledger lists the executed "
-                            "MSO agreement, assignment-consent clause, "
-                            "workflow documentation, contractor IP "
-                            "assignments, and processor licenses. "
-                            "A buyer initially receives aggregate "
-                            "revenue and defect metrics only. "
-                            "Client files and medical records "
-                            "remain restricted; counsel evaluates "
-                            "confidentiality, contract, and transfer "
-                            "requirements before any expanded diligence access."
-                        ),
-                    ),
-                    field(
-                        "Quality of earnings and concentration evidence",
-                        "textarea",
-                        (
-                            "Specify the monthly records supporting "
-                            "recognized revenue, collected cash, "
-                            "complete costs, owner net profit, "
-                            "and customer concentration. Explain "
-                            "how extraordinary setup costs, unpaid labor, restricted advances, and pass-through amounts will be identified rather than hidden in a valuation narrative."
-                        ),
-                        (
-                            "The diligence folder reconciles $705,000 "
-                            "base annual revenue, $437,100 costs, "
-                            "and $267,900 owner net profit "
-                            "to contracts, service records, and "
-                            "bank activity. It separately reports "
-                            "customer concentration, receivable aging, "
-                            "advance liabilities, and setup costs. "
-                            "No valuation multiple is applied "
-                            "to settlement awards or uncollected "
-                            "hypothetical legal fees."
-                        ),
-                    ),
-                    field(
-                        "Day-30 sign-off and measurable next commitments",
-                        "textarea",
-                        (
-                            "Record the final readiness decision, "
-                            "remaining risks, named owners, "
-                            "due dates, and funded next "
-                            "commitments. Keep evidence of "
-                            "what actually happened separate from targets and require explicit customer authorization before expanding traffic, jurisdictions, services, or data recipients."
-                        ),
-                        (
-                            "Illustrative decision: technical readiness "
-                            "passes, but full production waits "
-                            "for the $11,137.50 liquidity "
-                            "gap to close or the "
-                            "scope to shrink prospectively. "
-                            "The operator owns funding by "
-                            "day 37; counsel owns final "
-                            "campaign review by day 34. "
-                            "Only the funded pilot continues, "
-                            "with results recorded as actuals."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The day-30 ledger distinguishes completed work from targets, identifies "
-                    "every unfunded commitment, and records customer authorization for the "
-                    "next scope. Staffing, cash, canonical scenario totals, contract "
-                    "transferability, and restricted-data handling reconcile before expansion."
-                ),
-            },
-        ],
-    }
+    return {'workbook_id': 'wb-046-mass-tort-intake-hitech-triage-and-law-firm-msos',
+ 'volume_id': 'vol-046-mass-tort-intake-hitech-triage-and-law-firm-msos',
+ 'title': 'Mass-Tort Case Acquisition, HITECH Record Triage & Law-Firm MSOs — Practitioner Testimony '
+          'Operator Workbook',
+ 'subtitle': 'Choosing the Payout Vehicle, Underwriting the Tort, Proving Every File, and Pricing Every '
+             'Signed Case Before the Money Moves',
+ 'worksheets': [{'worksheet_id': 'ws-01',
+                 'number': 1,
+                 'title': 'Vehicle Selection and MDL Readiness Map',
+                 'purpose': 'Decide whether each harm belongs in a class action or an MDL, confirm the '
+                            'docket can clear the consolidation threshold, fund leadership work, and '
+                            'harden every file against bellwether selection, sworn fact sheets, Daubert '
+                            'rulings, and distribution failures before committing capital.',
+                 'chapter_ref': 'Q1-Q2',
+                 'instructions': ['Start by classifying the harm: small uniform monetary losses spread '
+                                  'across many people point to a class action, while serious injury and '
+                                  'death claims point to an MDL where each plaintiff keeps an individual '
+                                  'lawsuit.',
+                                  'Fill in the case counts and venue fields before any marketing budget is '
+                                  'approved, because the panel threshold and venue choice shape every '
+                                  'later cost assumption.',
+                                  'Confirm leadership or co-counsel funding in writing, since '
+                                  'common-benefit document review, depositions, and experts are paid out '
+                                  'of pocket through a common fund.',
+                                  'Audit each file as if it will be pulled into the bellwether pool '
+                                  'tomorrow, checking sworn fact sheet accuracy and any activity that '
+                                  'contradicts the claimed injury.',
+                                  'Close the worksheet by pricing the inventory against a global Daubert '
+                                  'loss and writing a distribution plan that keeps settlement money from '
+                                  'sitting in uncashed checks.'],
+                 'fields': [{'name': 'vehicle_classification',
+                             'type': 'text',
+                             'prompt': 'Classify the target harm as a class action, mass tort, or MDL '
+                                       'candidate. State whether damages are small and uniform across many '
+                                       'people or serious and individualized, and name the payout vehicle '
+                                       'you will pursue for this docket.',
+                             'example': 'Serious injury and death claims belong in an MDL where each '
+                                        'plaintiff keeps an individual lawsuit, attorney and verdict, '
+                                        'while small uniform harms fit a class action: one million people '
+                                        'overcharged three dollars netted the phone company three million '
+                                        'dollars, and nobody files over three dollars [The Brandi Law Firm '
+                                        '— luVb2J9MsQk @ 00:01:26]. Our docket is individualized injury, '
+                                        'so MDL.'},
+                            {'name': 'jpml_threshold_count',
+                             'type': 'text',
+                             'prompt': 'Record the number of filed cases you can currently document and '
+                                       'the number of additional cases you reasonably expect nationwide. '
+                                       'Compare both figures against the consolidation threshold '
+                                       'practitioners cite and note whether a petition could realistically '
+                                       'be denied.',
+                             'example': 'Searcy Law looks for at least 20 to 50 cases with an expectation '
+                                        'of hundreds and hundreds of additional cases, if not thousands, '
+                                        'and notes some MDLs form on fewer than 20 while some petitions '
+                                        'are denied [Searcy Law Video — yIQ0NYXRsmQ @ 00:01:12]. Our '
+                                        'count: 34 filed, roughly 600 more expected, so petition-ready.'},
+                            {'name': 'venue_risk_note',
+                             'type': 'textarea',
+                             'prompt': 'Describe the venue you hope the panel selects and the fallback '
+                                       'locations you could live with. Explain how your docket plan '
+                                       'survives if the panel ignores oral argument, chooses a district '
+                                       'with one filed case, or picks a location nobody requested.',
+                             'example': 'Never bank on venue from oral argument: the panel has judges it '
+                                        'likes to give cases to, sometimes picks a location where only one '
+                                        'case was filed, and has sent MDLs to places nobody requested '
+                                        '[Searcy Law Video — yIQ0NYXRsmQ @ 00:01:43]. Our budget assumes '
+                                        'any district, so travel and local filing costs are reserved '
+                                        'before argument.'},
+                            {'name': 'leadership_funding_check',
+                             'type': 'textarea',
+                             'prompt': 'Name the co-counsel or leadership firm that will fund '
+                                       'common-benefit work, and state the dollar commitment you can '
+                                       'contribute. Identify which document review, deposition, and expert '
+                                       'costs the common fund will carry versus costs your firm absorbs '
+                                       'alone.',
+                             'example': 'MDL leadership finances document review, depositions, and experts '
+                                        'out of pocket through a common fund, so funding is confirmed '
+                                        'before committing [Searcy Law Video — yIQ0NYXRsmQ @ 00:04:07]. '
+                                        'Leadership runs an executive committee of 4-5 under lead or '
+                                        'co-lead counsel, with a steering committee of 2-3 up to 20 in '
+                                        'bigger litigations [Searcy Law Video — yIQ0NYXRsmQ @ 00:03:21].'},
+                            {'name': 'bellwether_exposure',
+                             'type': 'textarea',
+                             'prompt': 'List the files in your inventory most likely to be pulled into a '
+                                       'bellwether pool and rate each as strong, average, or weak. Explain '
+                                       'how a weak file selected for trial could drag down the settlement '
+                                       'matrix for every client.',
+                             'example': 'Dolman Law Group describes a pool of 50 to 100 claims, maybe a '
+                                        'few more, pulled from thousands of names to pick representative '
+                                        'bellwether trials that feed the settlement matrix [Dolman Law '
+                                        'Group — qGQGuFYFCF8 @ 00:00:33]. In testosterone, about 600 '
+                                        'pooled cases became 100 randomized, 32 in core discovery, and 8 '
+                                        'tried [The Federalist Society — vk0M8TfTG9g @ 00:35:27].'},
+                            {'name': 'records_frontload_plan',
+                             'type': 'textarea',
+                             'prompt': 'Describe how you will gather pharmacy records, proof of income, '
+                                       'and critical medical records before any plaintiff fact sheet is '
+                                       'due. Name who orders records, the target turnaround, and which '
+                                       'proof is mandatory before a file enters the inventory.',
+                             'example': "By the time defendants get medical authorizations, Lyon's firm "
+                                        'has already gathered most of the critical medical records that '
+                                        'substantiate the case [Attorney Joseph Lyon — nUl1KZ2z_es @ '
+                                        '00:02:45]. Seeger now requires a pharmacy record and proof of '
+                                        'income up front, because collecting medical records across an '
+                                        'inventory can run tens of millions [The Federalist Society — '
+                                        'vk0M8TfTG9g @ 00:56:39].'},
+                            {'name': 'fact_sheet_calendar',
+                             'type': 'text',
+                             'prompt': 'Enter the plaintiff fact sheet deadline for every client in the '
+                                       'current inventory and the staff member responsible. Note that fact '
+                                       'sheets are sworn, then describe the internal review step that '
+                                       'catches inaccurate answers before signature.',
+                             'example': 'Fact sheets are sworn with perjury exposure and late filings can '
+                                        'lead to dismissal, so every deadline is calendared [LawShelf — '
+                                        'sozfq7mjvKE @ 00:12:39]. Our entry: 212 clients, deadlines '
+                                        'staggered across three months, a paralegal owner per batch, and '
+                                        'an attorney read-through comparing each answer against gathered '
+                                        'records before the client signs.'},
+                            {'name': 'trial_readiness_audit',
+                             'type': 'textarea',
+                             'prompt': 'Audit each file for disability or injury claims that could '
+                                       'collapse under trial selection or trial-readiness certification. '
+                                       'Record any social media, photos, or activities that contradict the '
+                                       'claimed injury, and decide whether the file stays, is downgraded, '
+                                       'or is dropped.',
+                             'example': 'A wood-chopping video and a speedboat trophy shrank one inventory '
+                                        'once trial-readiness certification hit [The Federalist Society — '
+                                        'vk0M8TfTG9g @ 00:52:08]. Our audit flags a back-injury client '
+                                        'posting gym photos and a disability claimant shown on a fishing '
+                                        'trip; both are downgraded pending attorney review, and any file '
+                                        'that cannot survive trial selection is dropped before the '
+                                        'bellwether pool forms.'},
+                            {'name': 'expert_match_daubert',
+                             'type': 'textarea',
+                             'prompt': 'Identify the general causation expert for this docket and confirm '
+                                       'the expertise matches the exact product and method at issue. '
+                                       'Estimate how a global Daubert ruling against causation would '
+                                       'affect every file, and price the inventory against that outcome.',
+                             'example': 'A global ruling on whether the drug can cause the disease can '
+                                        'dismiss the litigation as a whole [Attorney Joseph Lyon — '
+                                        'nUl1KZ2z_es @ 00:04:42]. A forklift expert was excluded for '
+                                        'lacking forklift-specific expertise [McGuireWoods LLP — '
+                                        'tBtb3Kmq3ZA @ 00:18:39]. Before deposition we run Westlaw Expert '
+                                        'Evaluator and PubMed and ask what facts would change the opinion '
+                                        '[McGuireWoods LLP — tBtb3Kmq3ZA @ 00:35:31].'},
+                            {'name': 'distribution_plan',
+                             'type': 'textarea',
+                             'prompt': 'Explain how settlement funds will reach each claimant once a '
+                                       'global resolution is signed. Describe how you will maintain '
+                                       'current addresses, confirm payment delivery, and follow up on '
+                                       'uncashed checks so money does not sit unclaimed after '
+                                       'distribution.',
+                             'example': 'The overdraft MDL left about 80 million dollars in uncashed '
+                                        'checks, so distributions must be structured to actually reach '
+                                        'claimants [Upchurch Watson White & Max Mediation Group — '
+                                        '10ygaMXLKfM @ 00:33:40]. Vioxx settled for $4.85B with about '
+                                        'one-third going to fees under retainers [The Federalist Society — '
+                                        'vk0M8TfTG9g @ 00:17:07]. Our plan: quarterly address refresh and '
+                                        'confirmed-receipt calls on every payment.'}],
+                 'completion_gate': 'Do not commit marketing or workup dollars until the payout vehicle is '
+                                    'named, the filed and expected case counts clear the cited 20 to 50 '
+                                    'case range, leadership funding is confirmed in writing, every fact '
+                                    'sheet deadline has an owner, and the inventory has been priced '
+                                    'against a global Daubert loss.'},
+                {'worksheet_id': 'ws-02',
+                 'number': 2,
+                 'title': 'Tort Selection and Device Docket Underwriting Scorecard',
+                 'purpose': 'Underwrite a tort before buying into it by locating its lifecycle stage, '
+                            'testing science and numerosity, discounting purchase economics for fake '
+                            'claims and attrition, filtering weak files, and proving product identity and '
+                            'injury on every device and pharma file.',
+                 'chapter_ref': 'Q3-Q4',
+                 'instructions': ['Locate the tort on its lifecycle first, because timing beats raw case '
+                                  'strength and entry cost rises at every stage from triggering event '
+                                  'through settlement.',
+                                  'Run the six underwriting gates in order: legal viability, science, '
+                                  'numerosity, defendant, venue, and stage, and stop the scorecard at the '
+                                  'first gate the tort fails.',
+                                  'Discount every quoted return multiple for fake claims and attrition, '
+                                  'and price belly-to-belly verification into the acquisition budget '
+                                  'rather than treating it as optional overhead.',
+                                  'For every device file, secure the original implant surgical report '
+                                  'naming the exact product, the documented complication, and any revision '
+                                  'or removal surgery before records are purged.',
+                                  'Finish by underwriting against a realistic per-case value and an '
+                                  'administration timeline of up to 2 to 3 years, then decide between paid '
+                                  'acquisition and accepting only files that arrive on their own.'],
+                 'fields': [{'name': 'lifecycle_stage',
+                             'type': 'text',
+                             'prompt': 'Identify the current lifecycle stage of the target tort: '
+                                       'triggering event, emerging phase, discovery, Daubert, or '
+                                       'settlement. Explain how entry cost has moved since the triggering '
+                                       'event and whether the window still justifies acquisition spend '
+                                       'today for your firm.',
+                             'example': 'Joe Fantini maps a 6-9 month emerging phase and 1-2 years of '
+                                        'discovery before Daubert and settlement, with entry cost rising '
+                                        'like a stock price at each stage. Power rankings put hair relaxer '
+                                        'at 6-9 months and Bard PowerPort almost gone. The panel usually '
+                                        'needs more than 25 filed cases before consolidation [LexHive '
+                                        'Podcast (Formerly- The Legal Growth Lab) — jn6XvG1gC9w @ '
+                                        '00:20:19].'},
+                            {'name': 'science_gate',
+                             'type': 'textarea',
+                             'prompt': 'Summarize the scientific support behind the tort, including the '
+                                       'number of studies and subjects. State whether the science clears '
+                                       'the underwriting gate, and record which experts you consulted '
+                                       'before the MDL forms and what internal documents revealed.',
+                             'example': 'The underwriting screen runs six gates: legal viability, science '
+                                        'of 2-3 studies with 100+ subjects, numerosity, defendant, venue '
+                                        'and stage. Fleming, Nolen & Jez advise talking to experts before '
+                                        'the MDL forms, because the internal documents reshape the case '
+                                        'like peeling an onion [Fleming, Nolen & Jez — YHzG4RIk3g8 @ '
+                                        '00:01:45]. Our tort shows three studies, so the gate is cleared.'},
+                            {'name': 'numerosity_math',
+                             'type': 'text',
+                             'prompt': 'Estimate the injured population behind the tort and apply the '
+                                       'share of viable claimants who actually come forward. Show the math '
+                                       'that converts that population into a realistic filed-case count '
+                                       'and compare it to the consolidation threshold.',
+                             'example': 'Only 8-10% of viable claimants come forward, so a 10,000-plus '
+                                        'case tort needs roughly 100,000 injured people behind it [LexHive '
+                                        'Podcast (Formerly- The Legal Growth Lab) — jn6XvG1gC9w @ '
+                                        '00:21:30]. Fantini projected GLP-1s past 10,000 cases, then '
+                                        'doubted they would cross it. Our working estimate: 40,000 injured '
+                                        'times 9% equals about 3,600 filed cases, far above the 25-case '
+                                        'panel floor.'},
+                            {'name': 'lead_economics',
+                             'type': 'textarea',
+                             'prompt': 'Record the quoted lead or case purchase price, the typical payout '
+                                       'range, and the projected return multiple. Then discount the '
+                                       'projection for fake claims and attrition, explaining what '
+                                       'verification cost you are pricing into every purchased file.',
+                             'example': 'Buyers quote $5,000 leads against $50K-$250K typical payouts, and '
+                                        'purchased cases returned 2x-10x the purchase price over the past '
+                                        '5 years [Profit with Law (Moshe Amsel) — tjuCUb5CKVY @ 00:19:40]. '
+                                        'Ron Lasorsa found over 20% fake claims in a 15,000-case mesh '
+                                        'docket sourced from Indian call centers on a $50M loan [Moore '
+                                        'Injury Funding — hZFw0Dvtfuk @ 00:10:18].'},
+                            {'name': 'verification_protocol',
+                             'type': 'textarea',
+                             'prompt': 'Describe the verification steps every purchased or '
+                                       'marketer-sourced file passes before money moves, including '
+                                       'diagnosis confirmation, notary contact, and rejection windows. '
+                                       'Name who performs each step within your firm and what specific '
+                                       'result kills the file before workup begins.',
+                             'example': 'Belly-to-belly verification with mobile notaries is expensive, '
+                                        'but it is less expensive than sanctions or bankruptcy [Moore '
+                                        'Injury Funding — hZFw0Dvtfuk @ 00:16:51]. On any medical tort, a '
+                                        'medical record confirming the diagnosis is pulled before the lead '
+                                        'is accepted, and the 14-day rejection window stays open on every '
+                                        'marketer batch [Profit with Law (Moshe Amsel) — tjuCUb5CKVY @ '
+                                        '00:31:05].'},
+                            {'name': 'weak_case_filter',
+                             'type': 'textarea',
+                             'prompt': 'List the files you are declining to file into the MDL and the '
+                                       'reason for each. Explain how a weak case could become a defense '
+                                       'bellwether as the pool narrows, and note any statute of '
+                                       'limitations risk disclosed to clients.',
+                             'example': 'Weak cases filed into an MDL can become defense bellwethers when '
+                                        'the pool is cut from 50 to 30 to 10 [LexHive Podcast (Formerly- '
+                                        'The Legal Growth Lab) — jn6XvG1gC9w @ 00:18:12]. Each client '
+                                        'receives a letter or certification disclosing possible statute of '
+                                        'limitations risk before the file is worked up [On The Docket with '
+                                        'Napoli Shkolnik — p519y7c1was @ 00:29:45].'},
+                            {'name': 'liability_theory',
+                             'type': 'textarea',
+                             'prompt': 'State the liability theory for the docket, whether a known product '
+                                       'defect, failure to warn, or another theory. If failure to warn '
+                                       'applies, explain how you will prove the prescribing doctor would '
+                                       'not have prescribed the product with a better warning.',
+                             'example': 'The duty to warn runs to the doctor, and the plaintiff must prove '
+                                        'the doctor would not have prescribed with a better warning '
+                                        '[Justinian & Associates PLLC — _YA0HVm1udc @ 00:08:56]. Stewart & '
+                                        "Stewart's aggressive pursuit of a pressure cooker explosion "
+                                        'uncovered a seal issue the manufacturer knew about, turning one '
+                                        'burn case into a pattern [Stewart & Stewart Attorneys — '
+                                        '4iH4c_z7Iw0 @ 00:00:47].'},
+                            {'name': 'device_product_id',
+                             'type': 'textarea',
+                             'prompt': 'For each device or implant file, record the exact product named in '
+                                       'the original implant surgical report, the documented complication, '
+                                       'and any revision or removal surgery. Note the date records were '
+                                       'requested relative to the provider purge window.',
+                             'example': 'Secure the original implant surgical report naming the mesh '
+                                        'product before records hit the typical 7-to-10-year purge window '
+                                        '[Lawsuit Tracker — orLyLTC8fiA @ 00:01:52]. Covidien files are '
+                                        'bucketed by product: resorbable collagen-barrier ventral '
+                                        'products, ProGrip inguinal with microgrips persisting about 18 '
+                                        'months, and bare polyester; discovery showed barrier coating '
+                                        'lasting 7 days or less [Jon and Marc — IPkB5-wL-oY @ 00:10:41].'},
+                            {'name': 'lone_pine_readiness',
+                             'type': 'textarea',
+                             'prompt': 'Confirm each Bard hernia mesh or similar file carries immediate '
+                                       'proof of use and specific injury evidence. Describe how you will '
+                                       'produce a case-specific expert report soon after filing, and '
+                                       'identify files that would fail a Lone Pine style order.',
+                             'example': 'Lone Pine style docket control now dismisses padded Bard '
+                                        'inventory with prejudice, so any file lacking immediate proof of '
+                                        'use and specific injury evidence is rejected [Mohr Marketing — '
+                                        'agO8HeUx95E @ 00:00:40]. In Bard, a case-specific expert report '
+                                        'must be filed pretty soon after the lawsuit [Cut to the Chase '
+                                        'Network — JlBWnsNpbyc @ 00:17:25]. Our review rejected 14 files '
+                                        'missing operative notes.'},
+                            {'name': 'settlement_value_underwrite',
+                             'type': 'textarea',
+                             'prompt': 'Record the per-case value benchmark you are underwriting against, '
+                                       'the expected administration timeline after settlement, and the '
+                                       'staff time needed to manage clients. Explain whether paid '
+                                       'acquisition is justified or files should only be accepted when '
+                                       'they arrive on their own.',
+                             'example': "Abbott's NEC inventory deal implied about $80,000 per case, "
+                                        'roughly $175 million for about 2,000 cases, so acquisition is '
+                                        'underwritten against expensive leads and attrition once records '
+                                        'surface [Jon and Marc — 2lQbSEVsxgE @ 00:04:28]. Bard '
+                                        'administration can take up to 2 to 3 years, and clients need to '
+                                        'be managed on that process [Jon and Marc — IPkB5-wL-oY @ '
+                                        '00:04:37].'}],
+                 'completion_gate': "Do not buy a single lead until the tort's lifecycle stage is named, "
+                                    'the science and numerosity gates are cleared, return projections are '
+                                    'discounted for fake claims and attrition, every device file names its '
+                                    'exact product from the implant report, and a per-case value benchmark '
+                                    'is written down.'},
+                {'worksheet_id': 'ws-03',
+                 'number': 3,
+                 'title': 'Toxic Docket Proof and Acquisition Cost Ledger',
+                 'purpose': 'Paper every toxic-exposure and emerging-docket file to the standard '
+                            'defendants and administrators demand, protect participation thresholds and '
+                            'opt-out rights, budget the settlement-to-funds lag, and measure every lead '
+                            'source on cost per retained, settlement-ready case.',
+                 'chapter_ref': 'Q5-Q6',
+                 'instructions': ['Treat proof of injury and proof of exposure as two separate '
+                                  'requirements, and do not count a file in the inventory until both are '
+                                  'documented from records and work or residency history.',
+                                  'Log every deficiency round and fact sheet deadline as it arrives, '
+                                  'because filing deadlines and deficiency rounds are the real gatekeepers '
+                                  'before any toxic docket pays.',
+                                  'Keep client contact data current at all times so participation '
+                                  'thresholds near 95% can be reached and opt-outs can be executed with '
+                                  'wet signatures and ID inside the window.',
+                                  'Budget cash flow on at least a year and a half from settlement to first '
+                                  'funds, paid in rolling tranches, before scaling new acquisition on any '
+                                  'docket.',
+                                  'Measure every vendor and channel on cost per retained, settlement-ready '
+                                  'case, not cost per sign, and hold judgment on new vendors until intake '
+                                  'confirms clients are reachable.'],
+                 'fields': [{'name': 'exposure_proof',
+                             'type': 'textarea',
+                             'prompt': 'For each toxic-exposure file, document proof of injury from '
+                                       'medical records across providers and years, and proof of exposure '
+                                       'through work history or residency. Record the identifier used to '
+                                       'map residency, such as a water system ID or ZIP code.',
+                             'example': 'PFAS files need proof of injury from medical records ordered '
+                                        'across providers and years, plus exposure via firefighter work '
+                                        'history or residency mapped by PWSID or ZIP code [King Law — '
+                                        'aOm5hBG6t9s @ 00:03:52]. It is not enough for someone to simply '
+                                        'believe they were exposed or generally know they suffer from a '
+                                        'PFAS-associated condition [Napoli Shkolnik — S1VC15_WonY @ '
+                                        '00:01:44].'},
+                            {'name': 'deficiency_tracker',
+                             'type': 'textarea',
+                             'prompt': 'Log each deficiency round received from defense counsel, the '
+                                       'number of files cited, and the cure deadline. Explain how '
+                                       'plaintiff fact sheets and filing deadlines are monitored so no '
+                                       'file is scrubbed for qualification or dual-representation '
+                                       'problems.',
+                             'example': 'King Law has been through four rounds of deficiencies and '
+                                        'anticipates another round from defense in the near future [King '
+                                        'Law — aOm5hBG6t9s @ 00:04:28]. The AFFF filing deadline drew '
+                                        '131,000 cases against 60,000-70,000 expected, the judge postponed '
+                                        'the first trial, and the docket was scrubbed toward 80,000-90,000 '
+                                        'after dual-rep and qualification problems [Cut to the Chase '
+                                        'Network — -H3O5pPP-XA @ 00:07:28].'},
+                            {'name': 'participation_threshold',
+                             'type': 'textarea',
+                             'prompt': 'Record your current reachable-client percentage against any '
+                                       'settlement participation threshold, such as 95%. List clients who '
+                                       'have moved or died, the estate representatives needed, and the '
+                                       'steps you will take to refresh contact data now before enrollment '
+                                       'closes.',
+                             'example': 'Talc firms are chasing moved and deceased claimants to reach a '
+                                        '95% threshold, and excluded clients face an uphill fight [Jon and '
+                                        'Marc — NHmq2W3F_do @ 00:05:45]. Aylstock Witkin Kreis & Overholtz '
+                                        'reconnected with 20-30% of signed clients after every other '
+                                        'channel had failed [Kayse AI — kjUaKK45Ahg @ 00:01:00]. Our '
+                                        'status: 91% reachable, 11 estates pending.'},
+                            {'name': 'opt_out_mechanics',
+                             'type': 'textarea',
+                             'prompt': 'If a class settlement threatens to sweep in your clients, describe '
+                                       'your opt-out process. Specify the signature format required, the '
+                                       'identification collected, the deadline window, and who confirms '
+                                       'each opt-out is complete before the file is swept into the class.',
+                             'example': 'Roundup opt-outs run on original wet signatures, not DocuSign, '
+                                        'with ID inside the 90-day window, or the file is swept into the '
+                                        'class [Jon and Marc — 3Qxw8dtCCns @ 00:07:40]. Census data puts '
+                                        'the Roundup class average near $70,000, about $40,000 '
+                                        'residential, across 10 tiers from $165,000 to $10,000 [Cut to the '
+                                        'Chase Network — IHvCfh-WJ6E @ 00:01:34].'},
+                            {'name': 'emerging_tort_grading',
+                             'type': 'textarea',
+                             'prompt': 'Grade each emerging-docket file, such as hair relaxer, rideshare, '
+                                       'or spinal cord stimulator, against the specific proofs that docket '
+                                       'requires. Record duration of use, documented brand or '
+                                       'manufacturer, diagnosis in the charts, and the correct MDL '
+                                       'routing.',
+                             'example': 'Hair relaxer files are graded on many years of use, a documented '
+                                        'brand, and a uterine, ovarian or endometrial diagnosis in the '
+                                        'charts [Salenger, Sack, Kimmel & Bavaro, LLP — ch5IVo6DOos @ '
+                                        '00:05:33]. Spinal cord stimulator files need the product ID, '
+                                        'implant sticker log and operative report to route the case to the '
+                                        'correct MDL [Jon and Marc — NHmq2W3F_do @ 00:03:22].'},
+                            {'name': 'cash_flow_timeline',
+                             'type': 'textarea',
+                             'prompt': 'Project the months from settlement announcement to first funds for '
+                                       'each active docket, and the tranche schedule you expect. Explain '
+                                       'how payroll, advertising, and capital costs will be covered during '
+                                       'that lag without forcing premature or discounted client '
+                                       'resolutions.',
+                             'example': 'Budget at least a year and a half from settlement to first funds, '
+                                        'paid in rolling tranches after releases and proof clear [Michael '
+                                        'Stanisci — _qBek9AFPiI @ 00:00:35]. AFFF resolved for about $7.35 '
+                                        'billion covering 115,000 to 120,000 claims across six injuries '
+                                        '[Jon and Marc — 08ES8nUZRYk @ 00:00:39], and first funds are '
+                                        'expected in the second half of 2028.'},
+                            {'name': 'cost_per_retained_case',
+                             'type': 'textarea',
+                             'prompt': 'Calculate cost per retained, settlement-ready case for each lead '
+                                       'source, not cost per signed retainer. Record raw lead price, '
+                                       'conversion rate to retainer, measured attrition, and the resulting '
+                                       'true cost so sources can be compared head to head.',
+                             'example': 'Attrition of 20-40% is normal, about 30% from 2020 to 2024, and '
+                                        'one source fell out at twice the rate of another, so cost per '
+                                        'retained case is the true measure [Case Works — My_I0OLHPXc @ '
+                                        '00:03:23]. Typical raw-lead-to-retainer conversion runs 3-4% '
+                                        '[Advanced Affiliate — Tt2FvNxVuCs @ 00:14:53]. Signed cases range '
+                                        'from $300 to six grand [Blue Sky Legal — n9AQhSIMkNg @ '
+                                        '00:00:00].'},
+                            {'name': 'lead_hygiene_filters',
+                             'type': 'textarea',
+                             'prompt': 'Describe the automated and human filters every lead passes before '
+                                       'reaching workup, including contact congruence checks, TrustedForm '
+                                       'certificates, and disqualifying criteria. Explain how filters are '
+                                       'tuned so they cut bad leads without inflating cost per lead with '
+                                       'no conversion lift.',
+                             'example': 'Email/phone congruence checks and TrustedForm run on every lead '
+                                        'before workup, because workup is the largest cost in the chain '
+                                        'and bad leads should die before it [Case Works — My_I0OLHPXc @ '
+                                        '00:06:57]. John Casto found that adding a DQ filter doubled CPL '
+                                        'with no conversion lift [Advanced Affiliate — Tt2FvNxVuCs @ '
+                                        '00:14:53]. AI does not make a bad lead good.'},
+                            {'name': 'vendor_compliance',
+                             'type': 'textarea',
+                             'prompt': 'For every lead vendor, record proof that the consumer initiated '
+                                       "contact, the vendor's generation process, and its true cost to "
+                                       'generate. Note the reachability and information-response results '
+                                       'intake observed over the first few months before judging the '
+                                       'vendor.',
+                             'example': 'Before buying, require proof the consumer initiated contact and '
+                                        "know the vendor's generation process and true cost to generate, "
+                                        'since the firm carries the solicitation exposure [Ron Lasorsa — '
+                                        'mmpH5piuvUk @ 00:00:49]. Unreachable clients and refusals to '
+                                        'answer basic information requests were the fraud tell a few '
+                                        'months in [Tort Experts — AyY5OoT74DQ @ 00:21:03].'},
+                            {'name': 'channel_scaling_plan',
+                             'type': 'textarea',
+                             'prompt': 'Choose the acquisition channels you will scale, such as paid '
+                                       'social, SMS, or search, and set the spend controls for each. '
+                                       'Record the trailing conversion window you will use and how returns '
+                                       'landing past the rejection window are budgeted.',
+                             'example': "Scale on today's CPL plus the trailing seven-to-14-day conversion "
+                                        'rate and cost per retainer, and budget for returns landing past '
+                                        'the 14-day window [Advanced Affiliate — Tt2FvNxVuCs @ 00:18:41]. '
+                                        'Paid social runs on bid caps and cost caps across multiple ad '
+                                        'accounts [Advanced Affiliate — Tt2FvNxVuCs @ 00:35:02]. SMS runs '
+                                        'at $3-4 EPC [OfferVault — dlxuHtoqmYw @ 00:10:18].'}],
+                 'completion_gate': 'Do not scale spend on any docket until every counted file carries '
+                                    'documented injury and exposure proof, deficiency rounds are logged '
+                                    'with cure deadlines, reachable-client percentage is measured against '
+                                    'the participation threshold, a settlement-to-funds lag of at least a '
+                                    'year and a half is budgeted, and every source is priced on cost per '
+                                    'retained case.'},
+                {'worksheet_id': 'ws-04',
+                 'number': 4,
+                 'title': 'Intake Speed, Conversion & Case-Management Stack Audit',
+                 'purpose': 'Locate every point where signed-case revenue leaks between the first ring and '
+                            'the retained file, then lock intake, retainer tracking, vendor scoring, and '
+                            'Filevine or Litify automation into one controlled system of record that '
+                            'survives mass-tort volume.',
+                 'chapter_ref': 'Q7-Q8',
+                 'instructions': ['Pull one full week of call logs, recordings, and CRM timestamps before '
+                                  'answering any field, so every answer reflects measured performance '
+                                  'rather than memory or vendor claims.',
+                                  'Record speed-to-contact in minutes and seconds, broken out by mass '
+                                  'tort, class action, and assigned attorney, because attorney workup was '
+                                  'the hidden slowdown on one audited desk.',
+                                  'Freeze any new ad spend until every intake call is recorded and the '
+                                  'desk has been audited end to end against the ring, hold, and callback '
+                                  'standards set here.',
+                                  'Score every lead vendor on cost per retained case rather than cost per '
+                                  'sign, and compare sources head to head using daily CRM reports instead '
+                                  'of monthly summaries.',
+                                  'Treat every automation recipe as a deadline risk: fence it, test it '
+                                  'against a single project ID, add error handling, and notify users '
+                                  'before it touches live matters.'],
+                 'fields': [{'name': 'callback_speed_ladder',
+                             'type': 'textarea',
+                             'prompt': 'Map your current lead-response timeline from form submission to '
+                                       'first outbound dial, and state the target window you will enforce. '
+                                       'Name the staffing coverage, overflow route, and redial cadence '
+                                       "that guarantee contact before the injured caller's interest decays "
+                                       'measurably.',
+                             'example': 'Target outbound contact inside 1 to 3 minutes, since injured '
+                                        'callers show a 5x drop within 5 minutes [Alert Communications — '
+                                        'PJEVefyQCxA @ 00:23:15]. Missing a 60-second callback cuts '
+                                        'conversion by over 70% [Saad Khan | AI Automation — ZkN7hMCBwmQ @ '
+                                        '00:00:34]. Redials at varied times lift contact to 75% to 80%.'},
+                            {'name': 'overflow_ring_cap',
+                             'type': 'text',
+                             'prompt': 'Document the ring limit, maximum hold time, and the exact point at '
+                                       'which unanswered calls roll to a recorded message or overflow '
+                                       'center. Explain how you will audit hold times weekly and who owns '
+                                       'correcting any breach of the cap.',
+                             'example': 'Pickup is capped at three rings and holds at 15 seconds, after '
+                                        'which calls roll to a recorded message and an overflow center '
+                                        '[Alert Communications — PJEVefyQCxA @ 00:21:02]. One firm was '
+                                        'running six-minute holds. Alert also adjusts floor staffing every '
+                                        '15 minutes, so the weekly review compares hold logs against those '
+                                        'staffing intervals.'},
+                            {'name': 'auto_reject_filters',
+                             'type': 'textarea',
+                             'prompt': 'List every hard disqualifier your system will apply automatically '
+                                       'before paid intake staff touch a lead, including jurisdiction, '
+                                       'exposure duration, and date windows. Estimate the labor dollars '
+                                       'currently wasted processing leads that these filters would have '
+                                       'rejected at the door.',
+                             'example': 'Auto-reject on jurisdiction, 30-day exposure, and the 1953-1987 '
+                                        'window before any paid staff member opens the file. One firm '
+                                        'burned $24,000 processing 800 rejected leads [Saad Khan | AI '
+                                        'Automation — ZkN7hMCBwmQ @ 00:01:27]. That works out to $30 per '
+                                        'rejected lead, which becomes the baseline savings figure for the '
+                                        'filter build.'},
+                            {'name': 'tort_questionnaire_design',
+                             'type': 'textarea',
+                             'prompt': 'Describe the tort-specific qualification questionnaire your intake '
+                                       'team will run, including which fields are mandatory before the '
+                                       'record can advance. Note how you will prevent page clutter that '
+                                       'slows specialists, and how the questionnaire grows as criteria for '
+                                       'the docket tighten.',
+                             'example': 'Questionnaires grew from 4 to 50 questions as tort criteria '
+                                        'matured. Fields in the Litify highlights panel are set to '
+                                        'required, and banners are limited because too many banners slow '
+                                        'the intake page [Litify — 5eCAkl3wUBg @ 00:23:03]. Every intake '
+                                        'then ends in one of three exits: open a matter, turn it down, or '
+                                        'refer it through the LRN.'},
+                            {'name': 'retainer_packet_tracking',
+                             'type': 'text',
+                             'prompt': 'Explain how retainers are delivered and signed, whether '
+                                       'e-signature happens while the caller remains on the line, and how '
+                                       'each outstanding packet is tracked until returned. Identify who '
+                                       'chases unsigned packets and the follow-up schedule they use.',
+                             'example': 'Retainers are e-signed while the caller is still on the line '
+                                        'whenever possible. Any packet that goes out unsigned is logged '
+                                        'and tracked, because packet tracking alone adds about 15% to '
+                                        'conversion [Alert Communications — PJEVefyQCxA @ 00:41:10]. On a '
+                                        'floor converting 140 of 200 qualified leads, that lift compounds '
+                                        'across every vendor batch.'},
+                            {'name': 'vendor_ratio_scorecard',
+                             'type': 'textarea',
+                             'prompt': 'Build a head-to-head vendor scorecard that pushes every lead into '
+                                       'the CRM with daily reporting. Specify the ratio you track for each '
+                                       'source, the threshold that triggers a spend cut, and how intake '
+                                       'call recordings feed the comparison.',
+                             'example': 'Every lead lands in the CRM with a daily report, and vendors are '
+                                        'compared head to head; Alert contrasts a vendor at 12:1 with one '
+                                        'at 6:1 [Alert Communications — PJEVefyQCxA @ 00:48:26]. New ad '
+                                        'spend stays frozen until every call is recorded and audited, '
+                                        'since one $30,000 Facebook run ended as a 100% loss.'},
+                            {'name': 'ai_agent_vs_human',
+                             'type': 'textarea',
+                             'prompt': 'Compare the cost and coverage of an AI voice intake agent against '
+                                       'round-the-clock human answering for your expected call volume. '
+                                       'State which channel handles after-hours calls, which handles '
+                                       'qualified escalations, and how you will measure lost conversions '
+                                       'on each.',
+                             'example': 'The AI voice agent prices at $1 per minute at 1,000 minutes or '
+                                        'less, against $2 to $5 per minute for traditional call centers '
+                                        "[Legal Lead Sharks Podcast | K'Lee Terrazas — e67Bx9d5FBc @ "
+                                        '00:00:46]. Alert counters that converting qualified leads '
+                                        'requires lively response 24/7/365, so both channels are '
+                                        'benchmarked on the same 70% qualified-conversion target.'},
+                            {'name': 'client_journey_comms',
+                             'type': 'textarea',
+                             'prompt': 'Design the post-signing client journey that sets expectations '
+                                       'about MDL timing, shared costs, and individual case status. Name '
+                                       'the channels used to reach signed clients, the cadence of updates, '
+                                       'and the recovery method for clients who stop responding.',
+                             'example': 'An intentional client journey sets expectations so there are no '
+                                        'surprises [Chaffin Luhana LLP Injury Lawyers — 5cou1UWhrYw @ '
+                                        '00:00:02]. Updates run on a fixed schedule. For lost clients, '
+                                        'Aylstock Witkin Kreis & Overholtz reached a 20-30% connection '
+                                        'rate after every other channel had failed [Kayse AI — kjUaKK45Ahg '
+                                        '@ 00:01:00].'},
+                            {'name': 'automation_fencing',
+                             'type': 'textarea',
+                             'prompt': 'Describe how each new Filevine or Litify automation recipe will be '
+                                       'fenced, tested, and released. Include trigger conditions, the test '
+                                       'project used, error-handling steps, and the answer to what happens '
+                                       'if the automation fails against a filing deadline.',
+                             'example': 'Trigger conditions sit on section and field selectors, the API '
+                                        'user is excluded, and runs are limited to a single test project '
+                                        'ID until proven [Vineskills — YtXAzduQ3PE @ 00:24:15]. Without '
+                                        'that fence, one expected item becomes ten thousand. Each recipe '
+                                        'also carries an error-handling step, or the assigned user gets '
+                                        'spammed with error messages.'},
+                            {'name': 'zapier_task_budget',
+                             'type': 'text',
+                             'prompt': 'Forecast monthly automation task volume for your case count and '
+                                       'price it against your connector plan. Identify loops and on-save '
+                                       'triggers that inflate task usage, and state whether bulk creates '
+                                       'or deletes will ever run in the live environment.',
+                             'example': 'About $30 a month covers 750 tasks, roughly 250 cases at 2-3 '
+                                        'tasks per case [Vineskills — oNoHY7832hw @ 00:31:13]. High-volume '
+                                        'mass-tort clients run closer to a million tasks, near $3,300 a '
+                                        'month, so loops get replaced with code blocks. Bulk creates and '
+                                        'deletes stay out of live unless an expert builds them.'}],
+                 'completion_gate': 'Do not release new ad spend until every intake call is recorded, the '
+                                    'three-ring and 15-second hold caps are verified in logs, auto-reject '
+                                    'filters are live, retainer packets are tracked to return, and every '
+                                    'automation recipe has passed a single test project ID with error '
+                                    'handling attached.'},
+                {'worksheet_id': 'ws-05',
+                 'number': 5,
+                 'title': 'HITECH Record Retrieval, AI Review & Docket Funding Readiness',
+                 'purpose': 'Convert medical-record control into a cost advantage, verify every '
+                            'AI-assisted chart review against source pages, map the settlement-to-check '
+                            'path, and size litigation funding to the real per-case workup burn rather '
+                            'than the advertising pitch.',
+                 'chapter_ref': 'Q9-Q10',
+                 'instructions': ['Gather three recent provider invoices for medical records, including at '
+                                  'least one digital delivery, so the fee and turnaround fields rest on '
+                                  'actual quotes from your own docket.',
+                                  'Run a commingled-patient and missing-H&P check on a sample of record '
+                                  'sets before filling the quality-control fields, and log how many pages '
+                                  'belonged to other patients.',
+                                  'Ask every AI, lien, and claims vendor in writing who owns them and what '
+                                  'their model trains on, and attach the answers before scoring any '
+                                  'vendor.',
+                                  'Build the docket valuation by injury subtype, with fee splits, '
+                                  'expenses, and surgery dates captured beyond intake, before contacting a '
+                                  'single litigation funder.',
+                                  'Bring transactional counsel into the funding review before any term '
+                                  'sheet turns into a contract, and record every unusual clause flagged '
+                                  'during that review.'],
+                 'fields': [{'name': 'hitech_digital_request',
+                             'type': 'textarea',
+                             'prompt': 'Draft your standard electronic medical record request process, '
+                                       'including who signs the request, where delivery is directed, and '
+                                       'the fee you will accept. Explain how you will respond when a '
+                                       'provider attempts per-page billing on digital copies.',
+                             'example': 'The request is written by the patient, not the attorney, but '
+                                        'directs delivery of records to the firm [The Nomberg Law Firm — '
+                                        '_9ZPWIgPW14 @ 00:04:16]. The federal cap on digital copies is '
+                                        '$6.50 regardless of page volume, so any 75-cent-per-page digital '
+                                        'charge is rejected [The New York Injury & Malpractice Law Firm, '
+                                        'P.C. — uJITvDxd4jA @ 00:00:39].'},
+                            {'name': 'turnaround_cost_model',
+                             'type': 'textarea',
+                             'prompt': 'Model the cost and turnaround difference between paper and digital '
+                                       'record retrieval for a typical file in your docket. Include page '
+                                       'counts, per-page pricing you have been quoted, the digital '
+                                       'alternative, and the waiting time each route adds to workup.',
+                             'example': 'Two thousand pages arrive in 24 hours on a CD, versus 75 cents a '
+                                        'page, about $1,500, and months of waiting [The New York Injury & '
+                                        'Malpractice Law Firm, P.C. — JdDeicrkI-o @ 00:03:17]. A 3,000 to '
+                                        '5,000 page file billed on paper turns into thousands of dollars, '
+                                        'so requests go through records custodians for 24-hour '
+                                        'turnaround.'},
+                            {'name': 'record_integrity_check',
+                             'type': 'textarea',
+                             'prompt': 'Define the quality-control check every incoming record set must '
+                                       'pass before attorney or nurse review. Address commingled patient '
+                                       'pages, missing history and physical documents, illegible '
+                                       'handwriting, and the feedback loop you will use with hospitals '
+                                       'that repeat errors.',
+                             'example': 'At least 2% of every project file carries commingled patients '
+                                        'from scanning errors, fixed with NPIs plus OCR and actionable '
+                                        'feedback to hospitals [CERIS Health — Coka2u38__k @ 00:25:57]. '
+                                        'Every set also gets a missing-H&P check. A five percent error '
+                                        'rate on billions is gigantic dollars, so human checks stay in the '
+                                        'workflow.'},
+                            {'name': 'ai_chart_review_controls',
+                             'type': 'textarea',
+                             'prompt': 'Specify which AI chart-review tool you will deploy, the record '
+                                       'volumes it will process, and the human verification step applied '
+                                       'to every output. Describe how you will measure throughput gains '
+                                       'against labor-only review on a sample of mass-tort files.',
+                             'example': 'Pattern Data reliably sees 7 to 10x better throughput from its '
+                                        'litigation lens versus labor-only review [The LegalTech Fund — '
+                                        '_HuCGlH6Wyw @ 00:13:03]. Tor Herman Law runs Supio across a '
+                                        '43,000-page NICU chart and 86 depositions. Every AI output is '
+                                        'still fact-checked against source pages, because blurred records '
+                                        'and handwriting can fail OCR [LawNext — Yq68SC86WTQ @ 00:20:26].'},
+                            {'name': 'ai_vendor_data_security',
+                             'type': 'textarea',
+                             'prompt': 'List the questions every AI, lien, or claims vendor must answer '
+                                       'before receiving claimant health data. Cover ownership of the '
+                                       'vendor, what its language model trains on, where documents are '
+                                       'stored, and the disqualifying answers that end the evaluation.',
+                             'example': "Every lien or claims vendor is asked 'Who owns you' before any "
+                                        'claimant health data changes hands [The Law Firm Brand Builders — '
+                                        '73xfuxsKsEM @ 00:24:19]. Every AI vendor is asked what its LLM '
+                                        'trains on, and any vendor that trains on user prompts is rejected '
+                                        '[Milestone — 1O2RKMH06LU @ 00:29:03]. Client documents stay out '
+                                        'of open tools.'},
+                            {'name': 'settlement_clearance_liens',
+                             'type': 'textarea',
+                             'prompt': 'Map the settlement administration path from global deal to '
+                                       'claimant checks, including the qualified settlement fund, lien '
+                                       'resolution, and estate issues. Identify the lien types you expect '
+                                       'to be the long poles and the realistic clearance timeline you will '
+                                       'tell clients.',
+                             'example': 'Archer generally clears 90% of funds within 10 to 14 months, with '
+                                        'VA liens as the long poles [Jon and Marc — 8CBO3CgHLvA @ '
+                                        '00:22:02]. Distributions are structured so money actually reaches '
+                                        'claimants, since the overdraft MDL left about 80 million dollars '
+                                        'in uncashed checks [Upchurch Watson White & Max Mediation Group — '
+                                        '10ygaMXLKfM @ 00:33:40].'},
+                            {'name': 'workup_capital_sizing',
+                             'type': 'text',
+                             'prompt': 'Calculate the full per-case workup cost for your docket, including '
+                                       'filing fees, record orders, and nurse review, then multiply by '
+                                       'your client count. Compare that real burn against the facility '
+                                       'size you plan to request from funders.',
+                             'example': 'Workup runs about $3,000 per case, covering $400-500 filing fees, '
+                                        'medical record orders, and nurse review, so 10,000 clients need '
+                                        'roughly $30 million [Slarskey LLC — gdDT2WSKYs0 @ 00:10:38]. The '
+                                        'facility is sized to that burn, not the advertising pitch. Rocade '
+                                        'writes $10 million to $50 million facilities with a $10 million '
+                                        'minimum.'},
+                            {'name': 'injury_subtype_valuation',
+                             'type': 'textarea',
+                             'prompt': 'Replace any per-plaintiff settlement average with a valuation '
+                                       'built by injury subtype. Describe which data points beyond intake '
+                                       'you will capture, such as fee splits, expenses, and surgery dates, '
+                                       'and the quality-control process keeping that data reliable.',
+                             'example': 'Every case is valued by injury subtype rather than a settlement '
+                                        'average; Rocade modeled three 3M grids in 2020 [The Heart of Law '
+                                        'Podcast — Zz1HlCrfQPY @ 00:28:47]. Fee splits, expenses, and '
+                                        'surgery dates are captured beyond intake with QC and SOPs in '
+                                        'place. Funders underwrite this way because, in their words, data '
+                                        'is everything.'},
+                            {'name': 'funder_selection_terms',
+                             'type': 'textarea',
+                             'prompt': 'Profile each funder you will approach, including fund vintage, '
+                                       'investment-period status, pricing structure, and recourse terms. '
+                                       'Flag any contract clauses that grant unusual control or rights, '
+                                       'and note whether repayment depends on case outcomes or functions '
+                                       'as a loan.',
+                             'example': 'Approach funders right after a fund two closes, and confirm they '
+                                        'are still inside the investment period [Slarskey LLC — '
+                                        'gdDT2WSKYs0 @ 00:19:28]. Strip clauses such as attorney-in-fact '
+                                        'rights on a material risk of bankruptcy. Portfolio pricing runs '
+                                        "around a 20% interest rate, paid from the lawyers' slice rather "
+                                        "than the plaintiff's [Bloomberg Law — D9nqJXMXzRI @ 00:06:01]."},
+                            {'name': 'deal_ratio_and_selectivity',
+                             'type': 'text',
+                             'prompt': 'Test your funding request against the value-to-commitment ratio '
+                                       'and selectivity rates commercial funders apply. State your '
+                                       'expected resolution value, the commitment requested, and why your '
+                                       'docket belongs in the small share of deals that survive '
+                                       'underwriting.',
+                             'example': 'A $10 million commitment against a $100 million expected '
+                                        'resolution fits the 10x metric [ResTech Solutions — fTOe5KR6QSE @ '
+                                        '00:13:12]. Only 5-10% of submitted deals survive underwriting on '
+                                        'merits, claim holder, and counsel [TownCenter Partners Litigation '
+                                        'Finance — 5XWpCPDxugc @ 00:02:00]. Capital is raised only when '
+                                        'reinvestment returns exceed its cost.'}],
+                 'completion_gate': 'Do not request funding until per-page digital billing is refused in '
+                                    'writing, every record set passes the commingled-patient check, every '
+                                    'AI output is verified against source pages, the docket is valued by '
+                                    'injury subtype, and the facility request matches the full per-case '
+                                    'workup burn.'},
+                {'worksheet_id': 'ws-06',
+                 'number': 6,
+                 'title': 'Law-Firm MSO, Outside Capital & Arizona ABS Structuring',
+                 'purpose': 'Design a management services organization or ABS path that brings in outside '
+                            'capital without surrendering professional judgment, pricing the services fee '
+                            'correctly, benchmarking valuation multiples, and walling client files, intake '
+                            'control, and settlement authority off from investors.',
+                 'chapter_ref': 'Q11-Q12',
+                 'instructions': ['List every non-lawyer asset and function before drafting the MSO '
+                                  'carve-out, then mark which items legally must stay inside the law firm '
+                                  'under attorney control.',
+                                  'Confirm the services fee is flat monthly or cost-plus with a fair '
+                                  'margin, and reject any draft that ties compensation to a percentage of '
+                                  'revenue or profits.',
+                                  'Benchmark every buyer or investor offer against 6-8x market profit '
+                                  'multiples, and document the walk-away point before the first '
+                                  'negotiation call takes place.',
+                                  'Write the capital deployment plan before closing, including '
+                                  'reinvestment targets, so equity partners cannot push the incoming money '
+                                  'out as compensation.',
+                                  'For any Arizona ABS track, appoint a dedicated compliance lawyer with '
+                                  'management experience and confirm an Arizona-admitted lawyer personally '
+                                  'handles intake and client communication.'],
+                 'fields': [{'name': 'mso_asset_carveout',
+                             'type': 'textarea',
+                             'prompt': 'Inventory the non-lawyer staff, equipment, intellectual property, '
+                                       'and brand assets that would move into a management services '
+                                       'organization. Separately list everything that must remain inside '
+                                       'the law firm, including lawyers, engagement letters, trust '
+                                       'accounts, and settlement authority.',
+                             'example': 'Non-lawyer staff, equipment, IP and founder likeness spin into a '
+                                        'Delaware LLC MSO that leases them back to the firm. Lawyers, '
+                                        'engagement letters, trust accounts, hiring, case selection and '
+                                        'settlement stay inside the firm. The MSO fee is fixed monthly or '
+                                        'cost-plus, validated by a third-party fairness opinion [Confido '
+                                        'Legal — 5TjsKzLtyc4 @ 00:23:21].'},
+                            {'name': 'mso_fee_structure',
+                             'type': 'text',
+                             'prompt': 'Set the management services fee structure, choosing between a flat '
+                                       'monthly amount and cost-plus with a stated markup. Explain how you '
+                                       'will document fairness, how often you will re-price the fee, and '
+                                       'why no percentage of revenue appears anywhere.',
+                             'example': 'Cost-plus markups typically run 10-15% [Confido Legal — '
+                                        '5TjsKzLtyc4 @ 00:25:36]. The fee is re-priced forward-looking '
+                                        'only, with the fairness analysis refreshed each time on an annual '
+                                        "cadence. Any compensation model that's a percentage of a law "
+                                        "firm's revenue is a no-go [Holt Law: For Healthcare Businesses — "
+                                        'DNk78wbKy5s @ 00:02:51].'},
+                            {'name': 'valuation_multiple_benchmark',
+                             'type': 'text',
+                             'prompt': 'Benchmark any acquisition or MSO investment offer against market '
+                                       'profit multiples for law firms and comparable '
+                                       'professional-services deals. Record the offer multiple, the '
+                                       'benchmark you will cite, and the walk-away point where the offer '
+                                       'is considered light.',
+                             'example': 'Shelton benchmarks law-firm offers at 6-8x profit in the market, '
+                                        'so a 4x offer reads as light [Ten Golden Rules Internet Marketing '
+                                        'for Law Firms — I4F5OYZQJuU @ 00:27:11]. Law firms trade at 4-8x '
+                                        'EBITDA while accounting MSO deals sit near 15x. Joe Prencipe '
+                                        'pitches buying in at 5x to roll up PI firms running 35% margins.'},
+                            {'name': 'control_red_flags',
+                             'type': 'textarea',
+                             'prompt': 'List the deal terms that would let outside capital control the '
+                                       'firm, including intake control, hiring, case selection, and '
+                                       'settlement decisions. Describe how majority and minority rights '
+                                       'will be contracted up front to keep professional judgment with the '
+                                       'lawyers.',
+                             'example': "Walk from any buyer whose pitch is 'Once we control client "
+                                        "intake, then we control the firm' [Ten Golden Rules Internet "
+                                        'Marketing for Law Firms — I4F5OYZQJuU @ 00:28:35]. Majority and '
+                                        'minority rights are contracted up front, with hiring, firing, '
+                                        'case selection and settlement kept inside the firm, recalling the '
+                                        'UnitedLex improper-control finding [Jon and Marc — U2xFBBUm_IU @ '
+                                        '00:17:08].'},
+                            {'name': 'mso_contract_traps',
+                             'type': 'textarea',
+                             'prompt': 'Review the proposed management services agreement carefully for '
+                                       'restrictive covenants and any personal exposure. Identify '
+                                       'non-competes, lawyer or client non-solicits, personal guarantees '
+                                       'for unpaid fees, and the replacement language you will demand for '
+                                       'each before signing.',
+                             'example': 'Strip non-competes, lawyer or client non-solicits, and personal '
+                                        'liability for unpaid MSO fees, converting unpaid fees into '
+                                        'deferred fees [Confido Legal — 5TjsKzLtyc4 @ 00:42:21]. Frederick '
+                                        'Shelton turned down over 60 of 70-plus PE-backed MSOs, about 90%, '
+                                        'on behalf of law-firm clients [Ten Golden Rules Internet '
+                                        'Marketing for Law Firms — I4F5OYZQJuU @ 00:06:17].'},
+                            {'name': 'capital_deployment_plan',
+                             'type': 'textarea',
+                             'prompt': 'Write the capital deployment plan that will govern any outside '
+                                       'money before closing. Specify the reinvestment targets, the '
+                                       'expected returns compared with the cost of capital, and the '
+                                       'safeguards preventing equity partners from distributing proceeds '
+                                       'as compensation.',
+                             'example': 'If the money comes in without a plan, there is tremendous '
+                                        'pressure from equity partners to pay it out in compensation '
+                                        "[Mattern LLC — 8wwcTCIWOXM @ 00:39:23]. There's no magic "
+                                        'structure that makes the capital cheaper [Brown Rudnick LLP — '
+                                        'QpKDhqASBqM @ 00:43:22]. Capital is raised only when reinvestment '
+                                        'returns exceed its cost.'},
+                            {'name': 'portfolio_funding_contract',
+                             'type': 'textarea',
+                             'prompt': 'Evaluate any portfolio funding contract by demanding worked payout '
+                                       'examples at multiple outcomes. Describe how the waterfall behaves '
+                                       'on a low-but-positive result, the multiple the funder targets, and '
+                                       'whether the portfolio is genuinely diversified across torts and '
+                                       'stages.',
+                             'example': 'The contract carries worked payout examples at different '
+                                        'outcomes, because a $7M verdict on a $100M case is the problem '
+                                        'scenario [TALKSONLAW — 1kAfGIkF10g @ 00:55:54]. One funder shoots '
+                                        'for 1.5 times to secure the deal, with a recent file at 1.54 [Alt '
+                                        'Funds Network — FQLjhMdShl0 @ 00:21:40]. Litigation funding is a '
+                                        'slow burn at best.'},
+                            {'name': 'funding_market_positioning',
+                             'type': 'text',
+                             'prompt': 'Describe how you will position the firm in a concentrated funding '
+                                       'market where few commercial funders dominate. Explain the speed, '
+                                       'reliability, and control commitments you will seek, and how '
+                                       'current commitment volumes and acceptance rates shape your pitch.',
+                             'example': 'With only about 10 commercial funders and repeat business '
+                                        'dominating, deals are won at step two on speed, reliability and '
+                                        'lack of control [The National Law Review — 9teRv9eFpEc @ '
+                                        '00:32:40]. In 2025, 39 funders committed $2.8B across 346 deals. '
+                                        'Burford funds only 6-8% of cases reviewed, at mid-20s IRRs '
+                                        '[TALKSONLAW — 1kAfGIkF10g @ 00:22:54].'},
+                            {'name': 'arizona_abs_compliance',
+                             'type': 'textarea',
+                             'prompt': 'If pursuing an Arizona alternative business structure, outline the '
+                                       'ownership split, the compliance lawyer you will appoint, and the '
+                                       'approval timeline you are budgeting. Confirm how an '
+                                       'Arizona-admitted lawyer will personally handle intake, record '
+                                       'review, and client communication.',
+                             'example': 'Non-lawyers may own 100% under a compliance lawyer and 10% '
+                                        'disclosure. Approval ran about 4 months and has grown to 6-8 '
+                                        'months for 100-1,000 page applications [Law Leaders — Tvn12qG9i5s '
+                                        '@ 00:12:25]. An empty Arizona office funneling cases elsewhere is '
+                                        'not allowed, so an Arizona-admitted lawyer personally handles '
+                                        'intake [The Heart of Law Podcast — poe1CAsUc4U @ 00:36:28].'},
+                            {'name': 'staff_upl_and_data_walls',
+                             'type': 'textarea',
+                             'prompt': 'Describe the unauthorized-practice training every non-attorney '
+                                       'staff member will complete and the data walls separating investors '
+                                       'from client files. Specify which information outside owners may '
+                                       'see, who may quote fees or timelines, and how compliance oversight '
+                                       'is staffed.',
+                             'example': 'Every staff member gets UPL training; a receptionist never '
+                                        "guesses a timeline like '30 days,' and only attorneys quote fees "
+                                        '[LegalTechLIVE — ajveDNkk7dg @ 00:37:53]. Outside investors see '
+                                        'only revenue and cost data. The compliance lawyer has management '
+                                        'experience and is not spread across five to seven firms [The '
+                                        'Heart of Law Podcast — OdPOa3osKC0 @ 00:19:39].'}],
+                 'completion_gate': 'Do not sign any MSO, investment, or ABS document until the fee is '
+                                    'flat monthly or cost-plus with a fairness opinion, restrictive '
+                                    'covenants and personal fee liability are stripped, hiring, case '
+                                    'selection, and settlement stay inside the firm, and a written capital '
+                                    'deployment plan exists.'}]}

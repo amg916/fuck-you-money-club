@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-incremental-cash-workflow",
-    "diag-02-nested-dispute-cash-cohort",
-    "diag-03-base-case-earned-fee-waterfall",
-    "diag-04-specialty-collected-yield",
-    "diag-05-statutory-risk-decision-tree",
-    "diag-06-three-to-five-person-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-thirty-day-launch-roadmap"
+    "diag-01-nsa-dispute-entry-path",
+    "diag-02-idr-volume-vs-expectation",
+    "diag-03-ppdr-eligibility-waterfall",
+    "diag-04-surprise-bill-dollar-ranges",
+    "diag-05-operations-rule-filing-gates",
+    "diag-06-remittance-posting-cell",
+    "diag-07-oon-payment-bands",
+    "diag-08-back-end-automation-roadmap"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-incremental-cash-workflow",
-    "diag-02-nested-dispute-cash-cohort",
-    "diag-03-base-case-earned-fee-waterfall",
-    "diag-04-specialty-collected-yield",
-    "diag-05-statutory-risk-decision-tree",
-    "diag-06-three-to-five-person-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-thirty-day-launch-roadmap"
+    "diag-01-nsa-dispute-entry-path",
+    "diag-02-idr-volume-vs-expectation",
+    "diag-03-ppdr-eligibility-waterfall",
+    "diag-04-surprise-bill-dollar-ranges",
+    "diag-05-operations-rule-filing-gates",
+    "diag-06-remittance-posting-cell",
+    "diag-07-oon-payment-bands",
+    "diag-08-back-end-automation-roadmap"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-incremental-cash-workflow": {
+    "diag-01-nsa-dispute-entry-path": {
       "concept_a": {
-        "graphic_id": "diag-01-incremental-cash-workflow",
+        "graphic_id": "diag-01-nsa-dispute-entry-path",
         "graphic_type": "diagram",
-        "label": "From Remittance Exception to Earned Contingency",
+        "label": "From Protected Claim to Baseball-Style IDR",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-incremental-cash-workflow",
+        "graphic_id": "diag-01-nsa-dispute-entry-path",
         "graphic_type": "diagram",
-        "label": "From Remittance Exception to Earned Contingency",
+        "label": "From Protected Claim to Baseball-Style IDR",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-incremental-cash-workflow",
+        "graphic_id": "diag-01-nsa-dispute-entry-path",
         "graphic_type": "diagram",
-        "label": "From Remittance Exception to Earned Contingency",
+        "label": "From Protected Claim to Baseball-Style IDR",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-nested-dispute-cash-cohort": {
+    "diag-02-idr-volume-vs-expectation": {
       "concept_a": {
-        "graphic_id": "diag-02-nested-dispute-cash-cohort",
+        "graphic_id": "diag-02-idr-volume-vs-expectation",
         "graphic_type": "diagram",
-        "label": "A Favorable Determination Is Not Collected Cash",
+        "label": "IDR Volume Against Regulator Expectations",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-nested-dispute-cash-cohort",
+        "graphic_id": "diag-02-idr-volume-vs-expectation",
         "graphic_type": "diagram",
-        "label": "A Favorable Determination Is Not Collected Cash",
+        "label": "IDR Volume Against Regulator Expectations",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-nested-dispute-cash-cohort",
+        "graphic_id": "diag-02-idr-volume-vs-expectation",
         "graphic_type": "diagram",
-        "label": "A Favorable Determination Is Not Collected Cash",
+        "label": "IDR Volume Against Regulator Expectations",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-case-earned-fee-waterfall": {
+    "diag-03-ppdr-eligibility-waterfall": {
       "concept_a": {
-        "graphic_id": "diag-03-base-case-earned-fee-waterfall",
+        "graphic_id": "diag-03-ppdr-eligibility-waterfall",
         "graphic_type": "diagram",
-        "label": "$505,000 Earned Fees to $217,150 Owner Profit",
+        "label": "Patient-Provider Dispute Eligibility on an $850 Bill",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-case-earned-fee-waterfall",
+        "graphic_id": "diag-03-ppdr-eligibility-waterfall",
         "graphic_type": "diagram",
-        "label": "$505,000 Earned Fees to $217,150 Owner Profit",
+        "label": "Patient-Provider Dispute Eligibility on an $850 Bill",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-case-earned-fee-waterfall",
+        "graphic_id": "diag-03-ppdr-eligibility-waterfall",
         "graphic_type": "diagram",
-        "label": "$505,000 Earned Fees to $217,150 Owner Profit",
+        "label": "Patient-Provider Dispute Eligibility on an $850 Bill",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-specialty-collected-yield": {
+    "diag-04-surprise-bill-dollar-ranges": {
       "concept_a": {
-        "graphic_id": "diag-04-specialty-collected-yield",
+        "graphic_id": "diag-04-surprise-bill-dollar-ranges",
         "graphic_type": "diagram",
-        "label": "Compare Cash Yield, Not Headline Awards",
+        "label": "Surprise Bills in the Wild by the Dollar",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-specialty-collected-yield",
+        "graphic_id": "diag-04-surprise-bill-dollar-ranges",
         "graphic_type": "diagram",
-        "label": "Compare Cash Yield, Not Headline Awards",
+        "label": "Surprise Bills in the Wild by the Dollar",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-specialty-collected-yield",
+        "graphic_id": "diag-04-surprise-bill-dollar-ranges",
         "graphic_type": "diagram",
-        "label": "Compare Cash Yield, Not Headline Awards",
+        "label": "Surprise Bills in the Wild by the Dollar",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-statutory-risk-decision-tree": {
+    "diag-05-operations-rule-filing-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-statutory-risk-decision-tree",
+        "graphic_id": "diag-05-operations-rule-filing-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Federal Filing",
+        "label": "Filing Gates Under the IDR Operations Final Rule",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-statutory-risk-decision-tree",
+        "graphic_id": "diag-05-operations-rule-filing-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Federal Filing",
+        "label": "Filing Gates Under the IDR Operations Final Rule",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-statutory-risk-decision-tree",
+        "graphic_id": "diag-05-operations-rule-filing-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Federal Filing",
+        "label": "Filing Gates Under the IDR Operations Final Rule",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-three-to-five-person-pod": {
+    "diag-06-remittance-posting-cell": {
       "concept_a": {
-        "graphic_id": "diag-06-three-to-five-person-pod",
+        "graphic_id": "diag-06-remittance-posting-cell",
         "graphic_type": "diagram",
-        "label": "Three People Launch; Five People Scale",
+        "label": "The Remittance Control Cell",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-three-to-five-person-pod",
+        "graphic_id": "diag-06-remittance-posting-cell",
         "graphic_type": "diagram",
-        "label": "Three People Launch; Five People Scale",
+        "label": "The Remittance Control Cell",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-three-to-five-person-pod",
+        "graphic_id": "diag-06-remittance-posting-cell",
         "graphic_type": "diagram",
-        "label": "Three People Launch; Five People Scale",
+        "label": "The Remittance Control Cell",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-allocation": {
+    "diag-07-oon-payment-bands": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-oon-payment-bands",
         "graphic_type": "diagram",
-        "label": "Allocate $25,000 Without Confusing Reserves with Expense",
+        "label": "Where Out-of-Network Payments Land Before and After IDR",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-oon-payment-bands",
         "graphic_type": "diagram",
-        "label": "Allocate $25,000 Without Confusing Reserves with Expense",
+        "label": "Where Out-of-Network Payments Land Before and After IDR",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-oon-payment-bands",
         "graphic_type": "diagram",
-        "label": "Allocate $25,000 Without Confusing Reserves with Expense",
+        "label": "Where Out-of-Network Payments Land Before and After IDR",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-thirty-day-launch-roadmap": {
+    "diag-08-back-end-automation-roadmap": {
       "concept_a": {
-        "graphic_id": "diag-08-thirty-day-launch-roadmap",
+        "graphic_id": "diag-08-back-end-automation-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Controlled Recovery Pipeline",
+        "label": "Four-Week Back-End Automation Rollout",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-thirty-day-launch-roadmap",
+        "graphic_id": "diag-08-back-end-automation-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Controlled Recovery Pipeline",
+        "label": "Four-Week Back-End Automation Rollout",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-thirty-day-launch-roadmap",
+        "graphic_id": "diag-08-back-end-automation-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Controlled Recovery Pipeline",
+        "label": "Four-Week Back-End Automation Rollout",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:04Z"
+  "updated_at": "2026-11-25T00:44:08Z"
 }

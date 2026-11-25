@@ -1,808 +1,906 @@
 from __future__ import annotations
 
-CHAPTER_9 = {
-    "id": "Q9",
-    "chapter_id": "Q9",
-    "chapter_number": 9,
-    "question_number": 9,
-    "slug": "contracts-statutory-guardrails-licensing-outreach-scripts",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern ai data-center powered land, substation headroom & bess site optioning?",
-    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
-    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": (
-        "Principal Option Interests, State Brokerage Boundaries, Utility-Documented MW, "
-        "FERC Interconnection Rules, Diligence Clauses, and CAN-SPAM/TCPA Outreach"
-    ),
-    "layout_template": "legal_compliance_notes",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #47, AI Data-Center Powered Land, Substation Headroom & BESS Site "
-        "Optioning, ranks #15 of 49 with a 92/100 Money-to-Manpower Score and 11 mapped "
-        "plays. This chapter turns that opportunity into an executable rights-and-evidence "
-        "system: acquire an enforceable principal interest, establish the applicable state "
-        "licensing boundary, verify utility study status, and sell precisely defined rights "
-        "rather than imagined power. Annual owner profit is $33,000 Conservative, $212,100 "
-        "Base, and $486,000 Scaled. The public_record_api_intelligence play supplies traceable "
-        "owner and permitting signals; contracts allocate study costs, expired option fees, "
-        "assignment permissions, and milestone risk. Separate BESS parcels from data-center "
-        "campuses, preserve source provenance, and use outreach that states ownership, "
-        "compensation, and capacity limitations accurately."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$110,000",
-            "context": "Annual realized operator fees; excludes land purchase price and capex",
-            "note": "30% net margin; $33,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$505,000",
-            "context": "Annual realized operator fees; excludes land purchase price and capex",
-            "note": "42.0% net margin; $212,100 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual realized operator fees; excludes land purchase price and capex",
-            "note": "54% net margin; $486,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Establish the principal interest before selling the opportunity",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start every parcel file with a role memorandum identifying the acquiring entity, "
-                    "the interest it actually holds, the property jurisdiction, and the services it "
-                    "will perform for anyone else. An executed option can create enforceable contract "
-                    "rights and, depending on state law and drafting, an equitable interest; a GIS "
-                    "pin, unsigned letter, or introduction does not. Recording a permitted memorandum "
-                    "may protect notice priority, but recording alone neither creates valid ownership "
-                    "nor supplies a brokerage exemption. Texas Occupations Code Section 1101.0045 "
-                    "expressly addresses selling an option or assigning a purchase-contract interest "
-                    "without brokerage activity, subject to written disclosure of the interest's "
-                    "nature. California Business and Professions Code Sections 10130, 10131, and "
-                    "10133 require a separate analysis of compensated acts for another and applicable "
-                    "exemptions. Do not generalize either state's treatment nationwide. If the actual "
-                    "service is locating buyers, negotiating another owner's land sale, or earning "
-                    "compensation for procuring a counterparty, engage a properly licensed state "
-                    "broker under a written allocation of duties. A principal label on an invoice "
-                    "does not repair brokerage conduct. Keep acquisition compensation, assignment "
-                    "proceeds, brokerage commissions, and technical consulting fees in separate "
-                    "contract schedules so the facts remain auditable."
-                ),
-                (
-                    "Build a jurisdiction sheet before spending the first option dollar. Record "
-                    "state licensing statutes, commercial versus residential scope, transaction "
-                    "frequency restrictions where relevant, required assignment disclosures, local "
-                    "land-use authority, and the professionals authorized to perform engineering "
-                    "or legal work. New York Real Property Law Sections 440 and 440-a define "
-                    "brokerage activity and impose licensing requirements; determine how the "
-                    "actual entity and services fit rather than importing a Texas conclusion. "
-                    "State wholesaling reforms sometimes target residential property specifically, "
-                    "so verify covered property types before applying registration or disclosure "
-                    "rules to a utility-scale commercial tract. Local zoning can independently "
-                    "prohibit a BESS use or impose a data-center moratorium even when the "
-                    "assignment structure is sound. Confirm signatory authority for LLC owners, "
-                    "trustees, estate representatives, and co-owners through documents acceptable "
-                    "to the closing title company. A probate docket is a diligence signal, not "
-                    "proof that a beneficiary can grant an option. Have state counsel resolve "
-                    "ambiguous authority or exemption questions before buyer solicitation. The "
-                    "licensed surveyor establishes boundaries, the engineer evaluates technical "
-                    "constraints, and the title company reports insurability exceptions; none "
-                    "of those functions should be implied by an automated parcel score. Preserve "
-                    "the dated conclusion and its supporting documents."
-                ),
-                (
-                    "Use public_record_api_intelligence to detect commercial triggers, not to "
-                    "manufacture ownership certainty. County recorder indexes, assessor exports, "
-                    "probate registries, planning dockets, utility commission filings, and official "
-                    "APIs can expose fragmented ownership, expiring permits, industrial reuse, or "
-                    "new infrastructure proceedings. Unclaimed-property ledgers may help resolve "
-                    "entity identity where lawful access permits, but they do not establish "
-                    "parcel title or authorize recovery services. Federal FOIA, 5 U.S.C. Section "
-                    "552, governs federal agency records; county records generally require the "
-                    "applicable state public-records process instead. Store source URL, retrieval "
-                    "date, document identifier, reuse terms, and confidence level beside each "
-                    "claim. An illustrative monthly batch of 300 parcels at $0.40 retrieval "
-                    "cost plus 12 analyst hours at $50 costs $720. If 24 survive document "
-                    "screening, the intelligence cost is $30 per surviving parcel, before "
-                    "title, engineering, or option payments. Do not count those survivors as "
-                    "contracted sites. When an endpoint closes or access terms prohibit "
-                    "automation, switch to scheduled bulk FOIA/public-record exports, official "
-                    "data feeds, and low-frequency cached queues. Respect rate limits and "
-                    "access restrictions; collect only necessary contact details. Route disputed "
-                    "ownership, protected personal records, and conflicting parcel identifiers "
-                    "to manual review rather than auto-generating seller demands."
-                ),
-            ],
-            "table": {
-                "caption": "State Role, Ownership Evidence, and Public-Record Operating Matrix",
-                "headers": [
-                    "Decision requiring a documented operating position",
-                    "Primary authority or evidence to inspect",
-                    "Required execution detail before external solicitation",
-                    "Failure response preserving the legitimate opportunity",
-                ],
-                "rows": [
-                    [
-                        "Acquire and assign an actual principal option interest",
-                        "Executed option agreement and state-specific interest characterization",
-                        "Describe the precise interest without implying fee ownership",
-                        "Stop assignment marketing until enforceable rights actually exist",
-                    ],
-                    [
-                        "Apply Texas equitable-interest rules to the actual conduct",
-                        "Texas Occupations Code Section 1101.0045 and related definitions",
-                        "Deliver written interest disclosure and avoid brokerage conduct",
-                        "Use a licensed Texas broker for covered services",
-                    ],
-                    [
-                        "Evaluate California compensated activity performed for another party",
-                        "California Business and Professions Code Sections 10130 through 10133",
-                        "Document applicable exemption facts and separate third-party services",
-                        "Retain a California broker when the services require licensing",
-                    ],
-                    [
-                        "Evaluate New York procurement and negotiation service boundaries",
-                        "New York Real Property Law Sections 440 and 440-a",
-                        "Map promised services against statutory brokerage activity definitions",
-                        "Remove covered services or engage appropriately licensed personnel",
-                    ],
-                    [
-                        "Confirm estate representative authority before purchasing option rights",
-                        "Probate orders, estate instruments, and title company requirements",
-                        "Obtain signatures from every legally necessary authorized party",
-                        "Suspend payments until the authority defect is resolved",
-                    ],
-                    [
-                        "Separate federal disclosure requests from county record acquisition",
-                        "Federal FOIA and the applicable state public-records statute",
-                        "Use the correct custodian and preserve request provenance",
-                        "Replace fragile scraping with official scheduled bulk exports",
-                    ],
-                    [
-                        "Keep technical representations within verified professional work products",
-                        "Survey records, engineering engagement scope, and title exceptions",
-                        "Attribute each conclusion to its actual qualified source",
-                        "Commission missing professional work before describing conclusions externally",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make the rights file more valuable than the parcel list",
-                "body": (
-                    "Experienced originators sell an organized, transferable evidence package. "
-                    "These tactics reduce preventable option burn without overstating utility readiness."
-                ),
-                "items": [
-                    (
-                        "Ask the title company which option memorandum language and release "
-                        "instrument it will accept before recording anything; attach the agreed forms."
-                    ),
-                    (
-                        "Maintain separate fields for parcel owner, authorized signer, option "
-                        "holder, utility applicant, and prospective assignee; these roles often differ."
-                    ),
-                    (
-                        "Negotiate seller authorization for utility inquiries at option signing "
-                        "so a confidentiality objection does not consume the first diligence month."
-                    ),
-                    (
-                        "Cache dated county exports and retain document hashes; a changed assessor "
-                        "name should trigger verification, not silently replace the contracting owner."
-                    ),
-                ],
-            },
-        },
-        {
-            "heading": "2. Tie every power claim to a dated utility and permitting record",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat a 69kV–345kV substation layer as a screening instrument, not a "
-                    "deliverability certificate. Maintain separate fields for requested MW, studied "
-                    "MW, conditionally available MW, contracted service, and actual energization. "
-                    "Each entry needs the utility or transmission provider, document date, service "
-                    "configuration, dependencies, expiration, and authorized disclosure scope. A "
-                    "hosting-capacity map may address distributed generation rather than a large "
-                    "load, and an ISO generation queue does not reserve data-center load service. "
-                    "FERC Order No. 2023 and implementing tariff changes concern generator "
-                    "interconnection processes within their jurisdiction; they do not replace "
-                    "utility retail service rules, state commission requirements, or applicable "
-                    "large-load procedures. For BESS, separately establish charging load, export "
-                    "rights, operating limitations, and whether the project follows distribution "
-                    "or transmission interconnection rules. For a campus, determine redundancy, "
-                    "ramp schedule, curtailment exposure, power quality, and construction lead "
-                    "times. Request written treatment of network upgrades, cost allocation, "
-                    "security postings, restudy events, and transfer permissions. A study number "
-                    "is evidence of process status only. Marketing must reproduce material "
-                    "conditions instead of turning a preliminary estimate into a firm delivery "
-                    "date. If the utility will not support the proposed MW, price the parcel "
-                    "as speculative land rights rather than powered inventory."
-                ),
-                (
-                    "Separate a standalone BESS parcel of 5–25 acres from a data-center campus "
-                    "at the first screening step. The BESS file needs usable acreage after "
-                    "setbacks, emergency access, equipment separation, drainage, noise controls, "
-                    "fire-water arrangements where required, and charging/export feasibility. "
-                    "The campus file additionally needs dark-fiber route evidence, carrier "
-                    "availability, cooling design, water supply and discharge permissions, "
-                    "backup-generation permitting, and expansion geometry. A carrier map does "
-                    "not establish a service commitment or diverse physical entrances. Local "
-                    "adoption of NFPA 855 or fire-code provisions determines enforceable "
-                    "installation requirements; UL 9540 and UL 9540A documentation serve "
-                    "different equipment and test functions and do not themselves grant a "
-                    "land-use permit. Check the enacted ordinance and current moratorium "
-                    "language with the planning authority. Clean Water Act Section 404, "
-                    "33 U.S.C. Section 1344, can require authorization for discharges of "
-                    "dredged or fill material into covered waters, including jurisdictional "
-                    "wetlands. A GIS wetland layer is not a jurisdictional determination. "
-                    "CERCLA liability under 42 U.S.C. Section 9607 makes environmental "
-                    "history material to eventual acquisition; timely all-appropriate-inquiries "
-                    "work and other statutory conditions matter to available protections. "
-                    "Require qualified investigation rather than assuming a clean-looking "
-                    "agricultural parcel has no environmental exposure."
-                ),
-                (
-                    "Value the option against utility-documented deliverable MW, upgrade exposure, "
-                    "and a credible energization schedule, then discount for remaining conditions. "
-                    "Illustratively, a milestone priced at $2,500 per qualifying MW produces "
-                    "$50,000 only when 20 MW satisfy the contract's evidence definition. If "
-                    "an authorized utility update supports just 12 qualifying MW, the same "
-                    "formula produces $30,000; if the evidence threshold is unmet, that "
-                    "milestone produces zero. These are underwriting mechanics, not additional "
-                    "scorecard revenue. A $4 million upgrade estimate on 20 MW equals "
-                    "$200,000 per MW of developer capital exposure, not originator revenue. "
-                    "Set a buyer-specific upgrade ceiling and latest acceptable energization "
-                    "date, and give the option holder a termination or repricing mechanism "
-                    "when either fails. Budget failed sites explicitly: four expired options "
-                    "at $3,000 each consume $12,000 before recovered deposits or transferable "
-                    "reports. Keep that burn inside the scenario expense envelope rather "
-                    "than subtracting it again from canonical profit. Underwrite BESS revenue "
-                    "and operating assumptions separately from campus economics; an attractive "
-                    "battery location may fail data-center fiber or water requirements. "
-                    "Do not capitalize hoped-for development carry as current fees. A "
-                    "dated utility correction should immediately update valuation, buyer "
-                    "materials, and the decision on the next extension payment."
-                ),
-            ],
-            "table": {
-                "caption": "Power, Land-Use, and Environmental Evidence Required for Defensible Claims",
-                "headers": [
-                    "Claim being evaluated before pricing the interest",
-                    "Evidence supporting the specific proposed project configuration",
-                    "Contract treatment matching the remaining project uncertainty",
-                    "Fallback when the evidence fails the threshold",
-                ],
-                "rows": [
-                    [
-                        "Nearby transmission infrastructure suggests a possible screening advantage",
-                        "Dated GIS layer identifying voltage and infrastructure ownership",
-                        "State proximity only and exclude implied available capacity",
-                        "Seek utility intake feedback before paying a premium",
-                    ],
-                    [
-                        "Twenty megawatts support a proposed origination payment milestone",
-                        "Authorized utility documentation satisfying the negotiated capacity definition",
-                        "Pay only qualifying megawatts after specified conditions resolve",
-                        "Reduce the qualifying quantity or defer payment entirely",
-                    ],
-                    [
-                        "Network upgrades remain within the developer's capital budget",
-                        "Current utility estimate with allocation and restudy assumptions",
-                        "Allocate deposits, overruns, refunds, and termination rights explicitly",
-                        "Reprice the assignment or terminate before extension spending",
-                    ],
-                    [
-                        "Standalone BESS operation fits the selected commercial parcel",
-                        "Charging and export assessment plus applicable fire requirements",
-                        "Condition diligence completion on access and operating feasibility",
-                        "Evaluate a smaller layout or release the option",
-                    ],
-                    [
-                        "Campus infrastructure supports the buyer's staged load growth",
-                        "Utility ramp schedule, carrier confirmation, and water feasibility",
-                        "Match each milestone to the documented development phase",
-                        "Offer only the supported phase or withdraw marketing",
-                    ],
-                    [
-                        "Wetland and flood constraints leave sufficient buildable acreage",
-                        "Qualified delineation, drainage analysis, and applicable agency determinations",
-                        "Preserve investigation access and permits-dependent termination rights explicitly",
-                        "Redesign within feasible acreage or exit before expiration",
-                    ],
-                    [
-                        "Local land-use rules permit the exact proposed facility",
-                        "Current ordinance text, moratorium status, and planning correspondence",
-                        "Define acceptable entitlements and the latest decision date",
-                        "Pause extension payments or pursue an authorized alternative",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before releasing a buyer-facing package",
-                "body": (
-                    "Release only the claims supported by the current file. A failed check "
-                    "changes the package, the price, or the decision to proceed."
-                ),
-                "items": [
-                    (
-                        "Verify the option remains effective, the seller had signing authority, "
-                        "and assignment and diligence-sharing permissions cover the proposed buyer."
-                    ),
-                    (
-                        "Verify every MW and energization statement against a dated utility "
-                        "document, including restudy exposure, conditions, and disclosure restrictions."
-                    ),
-                    (
-                        "Verify current zoning and moratorium status for the actual use, "
-                        "with BESS and campus requirements tracked in separate diligence paths."
-                    ),
-                    (
-                        "Verify the jurisdictional licensing position, buyer compensation disclosures, "
-                        "expired-option reserve, and written authority for each external contact."
-                    ),
-                ],
-            },
-        },
-        {
-            "heading": "3. Draft transferable rights and reconcile every fee to the scorecard",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use a 12–24 month diligence-contingent option only when its extension "
-                    "economics match the likely utility and entitlement calendar. Identify the "
-                    "legal description, purchase-price mechanism, option consideration, payment "
-                    "recipient, effective date, exercise procedure, notice addresses, and exact "
-                    "expiration time. Separate the initial term from paid extensions and state "
-                    "which payments are refundable, credited at closing, or earned immediately. "
-                    "Do not bury a utility-dependent business plan inside an unconditional "
-                    "payment schedule. Give the holder defined access for surveys, environmental "
-                    "investigation, utility meetings, and carrier inquiries, subject to insurance, "
-                    "restoration, and restrictions on invasive work. Address easements, mineral "
-                    "and surface-use conflicts, access rights, title objections, and seller "
-                    "cooperation with applications. Assignment language must distinguish land-option "
-                    "rights from utility applications, study agreements, permits, and consultant "
-                    "reports, each of which may require separate consent or reapplication. "
-                    "Specify notice-only transfers, permitted affiliates, third-party consent "
-                    "standards, and whether the original holder remains liable. Attach any "
-                    "recordable memorandum and the release obligation after termination. An "
-                    "option that cannot be transferred on the buyer's schedule is not "
-                    "assignment inventory merely because its cover page says assignable. "
-                    "Calendar exercise notices with redundant reminders and delivery evidence; "
-                    "missing an exact contractual deadline can destroy an otherwise valuable "
-                    "position without any deterioration in the site."
-                ),
-                (
-                    "Define fee triggers so an accountant and a hostile counterparty reach "
-                    "the same answer. An assignment fee should identify the transferred "
-                    "interest, closing conditions, escrow instructions, and payment timing. A "
-                    "per-MW milestone needs the qualifying utility evidence, measurement unit, "
-                    "partial-performance treatment, dispute procedure, and exclusion of previously "
-                    "paid quantities. Development carry needs a distribution waterfall, reporting "
-                    "rights, dilution treatment, and realization conditions; unsigned projections "
-                    "are not earned fees. The canonical Conservative case is $110,000 revenue "
-                    "less $77,000 expenses, producing $33,000 at 30%. Base is $505,000 "
-                    "less $292,900, producing $212,100 at 42.0%. Scaled is $900,000 less "
-                    "$414,000, producing $486,000 at 54%. Illustrative fee compositions are "
-                    "two $55,000 assignments; five $85,000 assignments plus four separate "
-                    "$20,000 milestones; and six $100,000 assignments plus ten separate "
-                    "$30,000 milestones, respectively. Do not count a milestone twice if "
-                    "it is credited against an assignment fee. These compositions reconcile "
-                    "the scorecard rather than establish closing forecasts. Underlying land "
-                    "prices, loan principal, developer capex, and reimbursed third-party "
-                    "amounts do not become operator fee revenue merely by crossing an "
-                    "account. Have the accountant determine applicable recognition, asset-sale, "
-                    "variable-consideration, and principal-versus-agent treatment; do not invent "
-                    "a retained-share adjustment absent from these canonical scenarios."
-                ),
-                (
-                    "Make scope, confidentiality, anti-circumvention, liability, dispute resolution, "
-                    "and data rights operational rather than decorative. Scope should list "
-                    "deliverables and exclusions, including whether utility coordination means "
-                    "transmitting documents or performing licensed engineering. An anti-circumvention "
-                    "clause should identify introduced counterparties and parcels, preserve "
-                    "documented pre-existing relationships, specify a reasonable survival period, "
-                    "and tie any remedy to enforceable terms instead of claiming ownership "
-                    "of every regional developer. Use a jurisdiction-appropriate liability cap "
-                    "with negotiated exclusions for matters such as fraud, intentional "
-                    "misconduct, confidentiality breaches, or unpaid amounts; enforceability "
-                    "and insurability require review. Allocate indemnities to actual control "
-                    "over access work, third-party claims, and inaccurate representations. "
-                    "Choose governing law, forum or arbitration procedure, notice method, "
-                    "interim-relief treatment, and responsibility for fees. Separate public "
-                    "source material from proprietary scoring logic, licensed GIS layers, "
-                    "seller confidential material, and commissioned reports. A paid consultant "
-                    "report may require an assignment or reliance letter before a buyer "
-                    "can use it. Grant only the data rights actually held and prohibit "
-                    "redistribution where source terms require it. Finally, define correction "
-                    "duties: a capacity reduction, title defect, or enacted moratorium "
-                    "must reach active counterparties promptly. Confidentiality cannot become "
-                    "an excuse to preserve a materially outdated sales statement."
-                ),
-            ],
-            "table": {
-                "caption": "Assignable Option and Origination Agreement Clause Checklist",
-                "headers": [
-                    "Clause family requiring explicit negotiated commercial terms",
-                    "Minimum drafting detail supporting repeatable operator execution",
-                    "Evidence or calculation retained in the closing file",
-                    "Failure allocation protecting against predictable transaction breakdown",
-                ],
-                "rows": [
-                    [
-                        "Scope and principal role define the actual engagement",
-                        "List acquired interests, deliverables, exclusions, and authorized representatives",
-                        "Retain signed scope schedules and applicable licensing analysis",
-                        "Route additional brokerage or engineering work to specialists",
-                    ],
-                    [
-                        "Option term and consideration control the diligence runway",
-                        "Specify initial payments, extensions, credits, and exercise mechanics",
-                        "Retain payment receipts and dated notice delivery evidence",
-                        "Terminate before another installment exceeds the approved budget",
-                    ],
-                    [
-                        "Assignment permission determines whether the package can transfer",
-                        "Separate land rights from utility and consultant permissions",
-                        "Collect required consents and buyer reliance letters early",
-                        "Delay closing or exclude rights that cannot transfer",
-                    ],
-                    [
-                        "Fee triggers distinguish earned compensation from contingent expectations",
-                        "Define qualifying megawatts, closing events, credits, and partial payments",
-                        "Reconcile invoices against unique milestones and escrow statements",
-                        "Withhold disputed amounts under the agreed resolution procedure",
-                    ],
-                    [
-                        "Anti-circumvention protects identifiable introductions without unlimited territorial claims",
-                        "Define protected parties, exclusions, duration, and enforceable remedies",
-                        "Maintain dated introduction logs and pre-existing relationship evidence",
-                        "Resolve documented exceptions before marketing to overlapping buyers",
-                    ],
-                    [
-                        "Liability and disputes allocate losses to controllable conduct",
-                        "Negotiate caps, exclusions, indemnities, forum, and notice requirements",
-                        "Retain insurance confirmations and counsel-reviewed final contract versions",
-                        "Use agreed escalation procedures before deadlines destroy remedies",
-                    ],
-                    [
-                        "Data ownership and correction duties preserve usable diligence",
-                        "Distinguish public records, licensed layers, proprietary models, and reports",
-                        "Retain source licenses, report permissions, and correction history",
-                        "Remove restricted content and notify recipients of material corrections",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Run truthful outreach, structured discovery, and documented handoff",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Segment outreach by channel and recipient before drafting the first "
-                    "message. CAN-SPAM, 15 U.S.C. Section 7704, applies to commercial email "
-                    "including business-to-business messages; use accurate routing information, "
-                    "a nondeceptive subject, required advertising identification where applicable, "
-                    "a valid physical postal address, and a working opt-out mechanism. Honor "
-                    "opt-outs within ten business days and maintain suppression across "
-                    "contractors rather than buying the same address back through another "
-                    "list. For calls and texts, evaluate 47 U.S.C. Section 227, "
-                    "47 CFR Section 64.1200, federal do-not-call requirements where applicable, "
-                    "and relevant state calling and recording laws. Manual dialing is not "
-                    "a universal exemption from solicitation restrictions, and a business "
-                    "contact's published mobile number is not blanket permission for "
-                    "automated marketing. Determine whether the technology, destination, "
-                    "message purpose, and consent satisfy applicable rules before launch. "
-                    "Start with individually researched business email and permitted manual "
-                    "calls, not a high-volume text campaign. FTC Act Section 5 and "
-                    "state deceptive-practices laws make misleading capacity or ownership "
-                    "claims dangerous regardless of the channel. Maintain a campaign "
-                    "record containing the source, permitted purpose, message version, "
-                    "send date, opt-out status, and any promised follow-up. Restrict "
-                    "access to contact exports and remove unnecessary personal details."
-                ),
-                (
-                    "Use scripts that match the actual stage of ownership, and read "
-                    "them verbatim only when their factual statements are true. Before "
-                    "acquisition, say: 'I acquire commercial site options as a principal. "
-                    "I am evaluating whether your parcel could support a battery facility "
-                    "or a data-center use. I do not represent the utility, and I "
-                    "have not established power availability. Would you consider a paid, "
-                    "time-limited option with defined diligence and assignment terms?' After "
-                    "execution, a buyer opening can say: 'Our entity holds an option "
-                    "on this parcel. We are offering our contractual interest, not "
-                    "representing that we own the land outright. The diligence package "
-                    "separates utility-confirmed facts from unresolved conditions. May I send "
-                    "the rights summary and evidence index?' For utility intake, say: "
-                    "'We hold written owner authorization to investigate this parcel. "
-                    "Please identify the applicable process for the proposed load or "
-                    "storage configuration, required deposits, study scope, and any restrictions "
-                    "on sharing or transferring the resulting documents.' If authorization "
-                    "is absent, obtain it before using that script. These openings "
-                    "avoid artificial scarcity and do not turn a nearby substation "
-                    "into a capacity promise. Follow each conversation with a written "
-                    "summary identifying assumptions, requested documents, and the next "
-                    "decision date."
-                ),
-                (
-                    "Discovery should expose disqualifiers before an extension payment comes "
-                    "due. Ask the developer: 'What initial and ultimate load, export "
-                    "capability, redundancy, curtailment tolerance, maximum upgrade contribution, and "
-                    "latest energization date would make this site usable?' Then ask: "
-                    "'Which utility documents and transfer permissions must be present "
-                    "before your team pays an assignment fee or a per-MW milestone?' "
-                    "For a campus, add: 'What fiber diversity, cooling-water strategy, "
-                    "backup-generation envelope, and expansion acreage are essential?' For "
-                    "BESS, ask: 'What charge and discharge limits, fire-access geometry, "
-                    "and operating restrictions would defeat your design?' Record answers "
-                    "as acceptance criteria, not loose sales notes. When evidence changes, "
-                    "use a correction script: 'The utility's latest written position "
-                    "changes the capacity assumption in our earlier package. Please "
-                    "stop using that version. We will provide the replacement evidence "
-                    "and revised commercial terms before requesting any commitment.' A "
-                    "decline closes with: 'Understood. We will record your preference "
-                    "and stop further marketing contact through this channel.' The "
-                    "handoff package should contain the signed rights chain, evidence "
-                    "index, unresolved issues, cost responsibility schedule, approved message "
-                    "history, and milestone ledger. Require a named person to own "
-                    "each unresolved item. Automation can prepare reminders and comparison "
-                    "reports, but it cannot convert missing authority or unsupported "
-                    "MW into a sellable fact."
-                ),
-            ],
-            "table": {
-                "caption": "Verbatim Outreach and Discovery Scripts with Evidence Preconditions",
-                "headers": [
-                    "Conversation stage and intended legitimate operating purpose",
-                    "Verbatim language for the documented factual situation",
-                    "Evidence required before using the quoted statement",
-                    "Required follow-through after the recipient provides an answer",
-                ],
-                "rows": [
-                    [
-                        "First landowner contact before any option is signed",
-                        "I acquire options as a principal and am evaluating this parcel.",
-                        "Document principal acquisition intent and the recipient contact source",
-                        "Ask permission to discuss terms without claiming existing rights",
-                    ],
-                    [
-                        "Landowner discussion addressing speculative power and project suitability",
-                        "I have not established power availability or confirmed this proposed use.",
-                        "Check that the stated investigation status remains factually current",
-                        "Describe the diligence plan and identify seller cooperation needs",
-                    ],
-                    [
-                        "Developer introduction after an enforceable option becomes effective",
-                        "Our entity holds an option; we are offering that contractual interest.",
-                        "Confirm effective rights, assignment terms, and required interest disclosures",
-                        "Send the rights summary before discussing transaction pricing",
-                    ],
-                    [
-                        "Utility inquiry supported by actual written owner authorization",
-                        "Please identify the required studies, deposits, and document transfer restrictions.",
-                        "Retain authorization and describe the proposed operating configuration accurately",
-                        "Log process requirements without implying a capacity reservation",
-                    ],
-                    [
-                        "Developer discovery establishing measurable minimum commercial acceptance criteria",
-                        "What upgrade ceiling and latest energization date make this site workable?",
-                        "Provide the current study status and known project dependencies",
-                        "Convert the answer into written underwriting and termination thresholds",
-                    ],
-                    [
-                        "Material correction after utility or permitting evidence changes",
-                        "Please stop using the earlier package; its capacity assumption has changed.",
-                        "Preserve the replacement source and identify every affected recipient",
-                        "Distribute corrected documents before requesting any further commitment",
-                    ],
-                    [
-                        "Recipient declines further marketing or requests contact suppression",
-                        "We will record your preference and stop marketing through this channel.",
-                        "Identify the recipient and scope without demanding unnecessary information",
-                        "Update suppression records and propagate changes to campaign contractors",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Open the rights and jurisdiction file",
-                    "action": (
-                        "Confirm parcel identity, seller authority, principal role, and the "
-                        "applicable state brokerage analysis before committing option funds."
-                    ),
-                    "detail": (
-                        "Save the legal description, title exceptions, authority instruments, "
-                        "professional engagement scopes, and dated jurisdiction memorandum."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Build the power and fatal-flaw evidence index",
-                    "action": (
-                        "Separate requested capacity from documented deliverability and run "
-                        "distinct BESS and campus diligence paths."
-                    ),
-                    "detail": (
-                        "Track utility conditions, upgrade exposure, energization assumptions, "
-                        "moratorium status, wetlands, fiber, water, access, and permitted disclosure."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Price transferable rights and reserve failed-option expense",
-                    "action": (
-                        "Draft assignment permissions and objective fee triggers while placing "
-                        "expired option payments inside the selected scenario expense envelope."
-                    ),
-                    "detail": (
-                        "Reconcile $110,000/$33,000, $505,000/$212,100, or $900,000/$486,000 "
-                        "revenue/profit pairs without including land value or developer capex."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Release accurate scripts and maintain correction discipline",
-                    "action": (
-                        "Use the approved factual script, record discovery thresholds, and "
-                        "propagate opt-outs and material evidence changes to every affected workflow."
-                    ),
-                    "detail": (
-                        "Transfer the rights chain, source permissions, unresolved-issue owners, "
-                        "notice calendar, and nonduplicative milestone ledger at closing."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": (
-        "Sell the transferable right and the documented evidence, never the megawatts you hope will arrive."
-    ),
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        (
-            "Create a state-specific role memorandum distinguishing principal option assignments "
-            "from compensated brokerage, engineering, and other third-party services."
-        ),
-        (
-            "Obtain seller authority documents, an effective assignable option, permitted utility "
-            "inquiry authorization, and a deadline calendar before buyer solicitation."
-        ),
-        (
-            "Build a dated utility evidence register separating requested, studied, conditional, "
-            "contracted, and energized MW with upgrade costs and transfer restrictions."
-        ),
-        (
-            "Run separate BESS and campus fatal-flaw checklists covering zoning, moratoriums, "
-            "environmental constraints, fire access, fiber, cooling water, and usable acreage."
-        ),
-        (
-            "Attach objective fee triggers, expense allocation, anti-circumvention limits, liability "
-            "terms, dispute procedures, and report/data permissions to the transaction documents."
-        ),
-        (
-            "Launch researched outreach with accurate ownership and capacity language, operational "
-            "opt-out handling, evidence correction procedures, and reconciled option-burn reserves."
-        ),
-    ],
-    "statutory_citations": [
-        {
-            "title": "Texas Occupations Code Section 1101.0045 — Equitable Interests in Real Property",
-            "url": "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1101.htm#1101.0045",
-            "relevance": (
-                "Addresses sale of an option or assignment of a purchase-contract interest "
-                "without brokerage activity and requires written disclosure of the interest's nature."
-            ),
-        },
-        {
-            "title": "California Business and Professions Code Section 10130 — License Requirement",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10130.",
-            "relevance": (
-                "Establishes the licensing requirement for acting as a real-estate broker "
-                "or salesperson in California."
-            ),
-        },
-        {
-            "title": "California Business and Professions Code Section 10131 — Broker Activities",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10131.",
-            "relevance": (
-                "Defines covered compensated activities performed for another, including "
-                "specified sale, leasing, solicitation, and negotiation functions."
-            ),
-        },
-        {
-            "title": "California Business and Professions Code Section 10133 — Specified Exemptions",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10133.",
-            "relevance": (
-                "Provides exemptions whose precise conditions must be evaluated against "
-                "the acquiring entity, personnel, compensation, and actual conduct."
-            ),
-        },
-        {
-            "title": "New York Real Property Law Sections 440 and 440-a — Brokerage and Licensing",
-            "url": "https://www.nysenate.gov/legislation/laws/RPP/440-A",
-            "relevance": (
-                "Section 440-a imposes licensing requirements for brokerage activities "
-                "defined in Section 440; relevant to compensated procurement and negotiation."
-            ),
-        },
-        {
-            "title": "5 U.S.C. Section 552 — Freedom of Information Act",
-            "url": "https://www.law.cornell.edu/uscode/text/5/552",
-            "relevance": (
-                "Governs federal agency disclosure requests; county and municipal acquisition "
-                "requires the relevant state public-records framework instead."
-            ),
-        },
-        {
-            "title": "18 CFR Section 35.28 — Transmission Tariffs and Interconnection Procedures",
-            "url": "https://www.ecfr.gov/current/title-18/chapter-I/subchapter-C/part-35/section-35.28",
-            "relevance": (
-                "Supports review of jurisdictional transmission and generator interconnection "
-                "requirements without conflating a generator queue position with retail load service."
-            ),
-        },
-        {
-            "title": "33 U.S.C. Section 1344 — Clean Water Act Section 404",
-            "url": "https://www.law.cornell.edu/uscode/text/33/1344",
-            "relevance": (
-                "Establishes the permitting framework for covered discharges of dredged "
-                "or fill material; relevant to site grading and jurisdictional wetlands."
-            ),
-        },
-        {
-            "title": "42 U.S.C. Section 9607 — CERCLA Liability",
-            "url": "https://www.law.cornell.edu/uscode/text/42/9607",
-            "relevance": (
-                "Makes environmental history and the statutory conditions for available "
-                "liability protections material to subsequent property acquisition."
-            ),
-        },
-        {
-            "title": "40 CFR Part 312 — Standards and Practices for All Appropriate Inquiries",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-J/part-312",
-            "relevance": (
-                "Defines environmental inquiry requirements relevant to specified CERCLA "
-                "protections, including timing and qualified investigation practices."
-            ),
-        },
-        {
-            "title": "15 U.S.C. Section 7704 — CAN-SPAM Commercial Email Requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Requires accurate commercial email practices, applicable disclosures, a "
-                "valid postal address, and timely handling of recipient opt-outs."
-            ),
-        },
-        {
-            "title": "47 U.S.C. Section 227 — Telephone Consumer Protection Act",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Provides restrictions relevant to specified calling and messaging technologies, "
-                "destinations, solicitation practices, and consent requirements."
-            ),
-        },
-        {
-            "title": "47 CFR Section 64.1200 — Restrictions on Telemarketing and Telephone Solicitation",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": (
-                "Supplies implementing requirements for applicable calls, texts, consent "
-                "practices, and do-not-call procedures."
-            ),
-        },
-        {
-            "title": "15 U.S.C. Section 45 — FTC Act Section 5",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": (
-                "Prohibits unfair or deceptive acts or practices within its scope; "
-                "supports accurate ownership, utility-capacity, and project-readiness representations."
-            ),
-        },
-    ],
-}
+CHAPTER_9 = {'id': 'Q9',
+ 'chapter_id': 'Q9',
+ 'chapter_number': 9,
+ 'question_number': 9,
+ 'slug': 'bess-fundamentals-components-and-system-design',
+ 'question_prompt': 'What is inside a utility-scale battery energy storage system and how is one designed?',
+ 'kicker': 'Q9 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'BESS Fundamentals: Components and System Design',
+ 'subtitle': 'Cells, BMS, PCS, EMS and MV skids, AC block architecture, container configurations, applied '
+             'BESS design case study, manufacturer lifecycle view, and operational grid-scale projects '
+             'worldwide',
+ 'layout_template': 'tool_resource_directory',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners describe a BESS as a layered power plant, not a box of batteries. The '
+                      'stack runs cells, modules, BMS-managed racks, a bidirectional PCS, an EMS, and '
+                      'thermal and fire systems, and every speaker says application fit matters more than '
+                      'hardware brand. LFP dominates utility-scale builds with over 80% share. A '
+                      'Toshiba-LTO integrator pushes 3 MW from a 430 kWh 20-ft box to buffer data-center '
+                      'GPU swings of 40 to 50 MW on a 100 MW site. The street mechanics center on three '
+                      'things: the AC block of four 5 MWh containers per PCS-transformer skid, C-rate '
+                      'rules of 0.5C air-cooled and 1C liquid-cooled, and MV skid budgets where the PCS '
+                      'takes 40 to 50%. Disagreements split power-priced LTO at $600/kW against '
+                      'energy-priced LFP at roughly $270/kWh, and turnkey against split-vendor '
+                      'procurement. Failure data traces 65% of incidents to integration, assembly and '
+                      'construction, not to cells.',
+ 'key_metrics': [{'label': 'Data-center GPU load swing on a 100 MW site',
+                  'metric': 'Data-center GPU load swing on a 100 MW site',
+                  'value': '40 to 50 MW (60 to 70% variable rack-level load)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Variable GPU compute share at the rack level drives swings the grid cannot '
+                             'support without a battery buffer; a gigawatt campus could shed 500 to 600 MW '
+                             'in milliseconds to seconds.',
+                  'source': 'Energy Institute, University of Texas at Austin ([HhLc8bnBSIo @ 00:09:21])'},
+                 {'label': 'PCS share of medium-voltage skid cost',
+                  'metric': 'PCS share of medium-voltage skid cost',
+                  'value': '40 to 50%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Cost split of a factory-built MV skid: PCS 40-50%, transformer 20-30%, '
+                             'switchgear 10-15%, structure 10-20%.',
+                  'source': 'BESS Engineer ([H7C34V05QQw @ 00:02:27])'},
+                 {'label': 'BESS failures rooted in integration, assembly and construction',
+                  'metric': 'BESS failures rooted in integration, assembly and construction',
+                  'value': 'Approximately 65% of classified faults; cells only 11%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Classification of incidents from the EPRI failure database shows balance of '
+                             'system and controls dominate failed elements.',
+                  'source': 'Power System Operation Slides ([Xys0DmLCtVk @ 00:02:08])'},
+                 {'label': 'LFP share of new utility-scale projects',
+                  'metric': 'LFP share of new utility-scale projects',
+                  'value': 'Over 80%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Stationary grid sites have space, so engineers trade density for the safer, '
+                             'bulkier LFP chemistry over NMC.',
+                  'source': 'Learn Solar & BESS ([Wc1MU3K4OEc @ 00:04:13])'}],
+ 'sections': [{'section': 1,
+               'title': 'The Practitioner Consensus',
+               'paragraphs': ['Every practitioner who opened up a container described the same layered '
+                              'stack. The Energy Institute speaker, who spent 24 years in oil and gas '
+                              'before moving into Toshiba-based integration, breaks a BESS into five '
+                              'buckets. The first is cells and modules holding the chemistry. The second '
+                              'is racks carrying their own battery management system. The third is the '
+                              'DC-to-AC conversion step. The fourth is a supervisory controller deciding '
+                              'how racks are run, cooled and dispatched. The fifth is the grid or load '
+                              'where value is actually earned. A container, thermal management and fire '
+                              'protection wrap around all five [HhLc8bnBSIo @ 00:01:45]. Keentel '
+                              'Engineering walks the identical hierarchy: cells are grouped into modules, '
+                              'modules into racks, and racks into DC battery blocks, with the PCS '
+                              'synchronizing that DC energy to the grid and running in reverse to charge '
+                              '[M2z-pv6j-N4 @ 00:04:20]. Learn Solar & BESS frames the build as stacking '
+                              'LEGO blocks in four steps, from a single lithium-ion cell up to rows of '
+                              'racks inside a climate-controlled shipping container [Wc1MU3K4OEc @ '
+                              '00:03:14]. The control layering is just as uniform. The BMS watches cell '
+                              'voltages, temperatures, current and state of charge, and it immediately '
+                              'isolates affected components when conditions go abnormal. The EMS sits '
+                              'above it, running charging schedules, market participation, grid support '
+                              'and utility communications. Keentel says that pairing turns a pile of '
+                              'batteries into an autonomous power plant [M2z-pv6j-N4 @ 00:05:04].',
+                              'The second point of agreement is that application decides the build before '
+                              "any hardware is picked. The Energy Institute speaker's checklist covers the "
+                              'application, power versus capacity, and duration. It then asks whether the '
+                              'system cycles per hour, per day or per week, how much footprint is '
+                              'available, and which customer codes apply, such as NFPA 55 or UL '
+                              'fire-propagation standards. It ends with lifetime cost of ownership, and '
+                              'the speaker calls power-or-capacity the number one question [HhLc8bnBSIo @ '
+                              '00:06:11]. Akash Koushik of Goodenough Energy, interviewed on Gaurav J - '
+                              'TheElectricalGuy, makes the same split with an aircraft analogy. '
+                              'Ancillary-service BESS for primary and secondary frequency control is the '
+                              'military jet, built for response and reliability. Arbitrage and '
+                              'peak-shaving units are the commercial airliner, tuned for round-trip '
+                              'efficiency, low auxiliary consumption and long life [Bg-6ClEVMSU @ '
+                              '00:07:13]. On chemistry for stationary grid work, the default is LFP. Learn '
+                              'Solar & BESS reports that LFP takes over 80% of new utility-scale projects, '
+                              'because open grid sites have space and can trade density for safety '
+                              '[Wc1MU3K4OEc @ 00:04:13]. Cummins built its new containerized line on LFP '
+                              'at a 0.5C, two-hour rating. The PCS, isolation transformer, liquid cooling '
+                              'and fire suppression all come packaged inside 10 ft or 20 ft High Cube ISO '
+                              'boxes [RRbdgfTqeTA @ 00:02:53]. The consensus is fit-for-purpose, never '
+                              'cookie-cutter.',
+                              'For powered-land operators, the data-center load case is where the speakers '
+                              'agree that BESS is mandatory rather than optional. The Energy Institute '
+                              'speaker reports that a 100 MW data center can carry 60 to 70% variable GPU '
+                              'load at the rack level, which means swings of 40 to 50 MW. A gigawatt '
+                              'campus could shed 500 to 600 MW in milliseconds to seconds, which the grid '
+                              'cannot absorb unless a battery buffer soaks up the difference [HhLc8bnBSIo '
+                              '@ 00:09:21]. The same speaker points to new Texas rules telling large '
+                              'data-center loads to hold variance to and from the grid under 1%. The '
+                              'speaker concludes that a campus will need storage just to buffer GPU '
+                              'variability, whether it runs on behind-the-meter generation or utility '
+                              'supply [HhLc8bnBSIo @ 00:20:43]. On Gaurav J - TheElectricalGuy, Koushik '
+                              'forecasts BESS moving from pilot projects to a mandatory asset. Koushik '
+                              'places this inside a 20-year storage super cycle now in its third year, and '
+                              'the host extends that mandate to data centers that cannot depend fully on '
+                              'utility supply [Bg-6ClEVMSU @ 00:39:15]. The safety consensus is '
+                              'defense-in-depth: early gas detection, physical separation of containers, '
+                              'HVAC cooling and clean-agent suppression under NFPA 855. Utility-scale fire '
+                              'incidents are reported down 97% since 2018 [Wc1MU3K4OEc @ 00:07:07].'],
+               'table': {'caption': 'Where the practitioners line up on BESS architecture and design '
+                                    'baselines',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Five-bucket layered stack defines every BESS build',
+                                   'Cells and modules, BMS racks, DC-to-AC conversion, supervisory '
+                                   'controls, then the grid or load',
+                                   'Spec the container, thermal and fire wrap around all five layers '
+                                   'together',
+                                   'Energy Institute, University of Texas at Austin ([HhLc8bnBSIo @ '
+                                   '00:01:45])'],
+                                  ['Power versus capacity is the first sizing question',
+                                   'Deciding between a fast power push and long energy output determines '
+                                   'chemistry and system type',
+                                   'Profile the load before quoting any container, chemistry or vendor '
+                                   'package',
+                                   'Energy Institute, University of Texas at Austin ([HhLc8bnBSIo @ '
+                                   '00:10:38])'],
+                                  ['LFP is the default stationary grid chemistry today',
+                                   'LFP makes up over 80% of new utility-scale projects, beating denser '
+                                   'and costlier NMC',
+                                   'Treat LFP pricing and supply as the baseline for competitive bids',
+                                   'Learn Solar & BESS ([Wc1MU3K4OEc @ 00:04:13])'],
+                                  ['BMS protects the cells while the EMS earns the money',
+                                   'The BMS watches voltage, current, temperature and charge; the EMS uses '
+                                   'weather, prices and load data',
+                                   'Treat EMS configuration as a revenue decision, not an afterthought',
+                                   'Owl WiS ([7n-ba9KN-Uc @ 00:02:56])'],
+                                  ['PCS converts power in both directions for the grid',
+                                   'The PCS charges batteries from AC and discharges back to AC, with '
+                                   'voltage and frequency support',
+                                   'Size the PCS for grid-support duties as well as straight conversion',
+                                   'Gaurav J - TheElectricalGuy ([zphURkyhD-c @ 00:02:48])'],
+                                  ['Temperature control drives battery life and safety outcomes',
+                                   'Operating outside the recommended range cuts efficiency, shortens life '
+                                   'and raises safety risk',
+                                   'Budget liquid cooling or HVAC that reaches every battery module evenly',
+                                   'Keentel Engineering ([M2z-pv6j-N4 @ 00:05:44])'],
+                                  ['Fire protection uses multiple independent defensive layers',
+                                   'Gas detection, container separation, HVAC cooling and clean-agent '
+                                   'suppression under NFPA 855',
+                                   'Never rely on one single safety measure at any site',
+                                   'Learn Solar & BESS ([Wc1MU3K4OEc @ 00:06:35])']]}},
+              {'section': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Sizing starts with the repeatable block. HeatSpring's walkthrough of a 50 "
+                              'MW / 200 MWh plant uses an AC block of four 5 MWh containers around one '
+                              'center skid. That skid carries a bidirectional PCS and a medium-voltage '
+                              'transformer. At four hours, each block delivers 5 MW for 20 MWh, and ten '
+                              'blocks in two rows reach 200 MWh [KpCBra3viO8 @ 00:00:34]. Typical voltages '
+                              'run 1,000 to 1,500 V DC on the battery side, depending on state of charge. '
+                              'The inverter puts out 400 to 800 V AC, and the MV transformer runs at 20 to '
+                              '30 kV. The blocks are lined up so that underground conduit chains from one '
+                              "transformer to the next [KpCBra3viO8 @ 00:01:18]. ELFBULB Battery's "
+                              'container shows the same logic at small scale: six 200 kWh clusters for 1.2 '
+                              'MWh behind a 500 kW modular PCS. That container is expandable to 2 MWh with '
+                              'liquid cooling, and three 500 kW PCS units can be paralleled to 1,500 kW '
+                              "[NZa3fz23P5Q @ 00:01:04]. For data centers, the Energy Institute speaker's "
+                              'team built a 25 MW building block from seven 20-ft containers, sized to '
+                              'carry 70 to 80% of the load. A transformer puts the system onto the '
+                              "customer's 34.5 kV or 13.8 kV main bus as a buffer [HhLc8bnBSIo @ "
+                              '00:18:03].',
+                              'C-rate is the dial that sets duration, cooling and price. Inel Institute of '
+                              "Technology's BESS specialist Nasier teaches that 1C empties full capacity "
+                              'in one hour and 0.5C stretches it to two hours. At 2C, the rate used for '
+                              'grid applications, the battery drains in 30 minutes, and higher rates '
+                              'strain the cells and cut lifespan [5K3HSEyhIng @ 00:23:43]. ELFBULB '
+                              "Battery's rule of thumb is that air conditioning plus fans on each module "
+                              'is enough at 0.5C or below. At 1C charge and discharge, the cells heat fast '
+                              'and liquid cooling becomes the answer [NZa3fz23P5Q @ 00:04:26]. Nasier puts '
+                              'liquid-cooled units at 2.5 to 5 MWh, denser and quieter than air-cooled '
+                              'containers that need ventilation volume. The Energy Institute speaker shows '
+                              'how far C-rate moves the economics. Their 20-ft LTO house holds 12 racks '
+                              'and about 430 kWh, yet it pushes 3 MW for 6 to 9 minutes. A comparable LFP '
+                              'box might hold 4 MWh but deliver only 2 MW [HhLc8bnBSIo @ 00:13:51]. Priced '
+                              'on power, a Tesla Megapack runs about $550/kW and roughly $270/kWh. The LTO '
+                              'system sits near $3,500/kWh but $600/kW, and its next generation targets '
+                              'the $200s to $300/kW [HhLc8bnBSIo @ 00:23:14].',
+                              'On the medium-voltage side, BESS Engineer breaks the factory-built MV skid '
+                              'into five parts: the PCS, an LV cable link, a step-up transformer from '
+                              'roughly 400 to 800 V AC to medium voltage, MV switchgear or RMU, and a '
+                              'steel base. The whole skid is tested at the factory to cut field wiring '
+                              'errors and commissioning time [H7C34V05QQw @ 00:01:46]. The cost split is '
+                              'where buyers misjudge. The PCS takes 40 to 50% of skid cost, transformers '
+                              '20 to 30%, switchgear 10 to 15% and structure 10 to 20%, so the money sits '
+                              'in power electronics and copper, not steel [H7C34V05QQw @ 00:02:27]. Nasier '
+                              'adds a procurement playbook. Start with a turnkey single-vendor package '
+                              'while learning. Then buy batteries and PCS from separate vendors and size '
+                              'them in-house, which saved a huge amount of cost once system studies could '
+                              'be run internally [5K3HSEyhIng @ 01:02:38]. Nasier also sizes for '
+                              'degradation up front, assuming roughly 0.9 to 1% a year so the plant still '
+                              'hits 80% at year five. Battery-stack fuses get a 25% margin above maximum '
+                              'operating current. A 690 V PCS output usually needs no transformer for C&I, '
+                              'but grid connection needs a step to 33 kV, then 132 or 275 kV [5K3HSEyhIng '
+                              '@ 01:07:27].'],
+               'table': {'caption': 'Street-level sizing, cost and spec numbers the practitioners actually '
+                                    'quote',
+                         'headers': ['Mechanic',
+                                     'Number or Spec Stated',
+                                     'How Operators Apply It',
+                                     'Expert Source'],
+                         'rows': [['AC block repeating unit for utility plants',
+                                   'Four 5 MWh containers per PCS-transformer skid, 5 MW for 4 hours, 20 '
+                                   'MWh per block',
+                                   'Replicate blocks in rows so MV conduit chains between transformers',
+                                   'HeatSpring ([KpCBra3viO8 @ 00:00:34])'],
+                                  ['C-rate to discharge duration conversion rule',
+                                   '1C runs one hour, 0.5C runs two hours, 2C runs only 30 minutes',
+                                   'Match the C-rate to the application before sizing containers or '
+                                   'cooling',
+                                   'Inel Institute of Technology ([5K3HSEyhIng @ 00:23:43])'],
+                                  ['Cooling choice threshold set by charge rate',
+                                   'Air cooling with module fans at 0.5C or less; liquid cooling for 1C '
+                                   'cycling',
+                                   'Specify liquid cooling whenever the duty cycle reaches 1C charge and '
+                                   'discharge',
+                                   'ELFBULB Battery ([NZa3fz23P5Q @ 00:04:26])'],
+                                  ['MV skid capital cost distribution breakdown',
+                                   'PCS 40-50%, transformer 20-30%, switchgear 10-15%, skid structure '
+                                   '10-20%',
+                                   'Negotiate hardest on inverters and transformers, not on the steel '
+                                   'frame',
+                                   'BESS Engineer ([H7C34V05QQw @ 00:02:27])'],
+                                  ['Power-priced versus energy-priced storage comparison',
+                                   'Megapack about $550/kW and $270/kWh; LTO system near $600/kW but '
+                                   '$3,500/kWh',
+                                   'Data-center buffers should compare the cost to push power, not the '
+                                   'cost to store energy',
+                                   'Energy Institute, University of Texas at Austin ([HhLc8bnBSIo @ '
+                                   '00:23:14])'],
+                                  ['Battery stack fuse protection sizing rule',
+                                   'Fuse rated at 1.25 times maximum operating current, a 25% margin',
+                                   'Confirm fuse coordination through power system studies before '
+                                   'energizing the stack',
+                                   'Inel Institute of Technology ([5K3HSEyhIng @ 01:00:10])'],
+                                  ['Current lithium cell pricing level for bids',
+                                   'Cells near $80/kWh despite an upward price move in recent months',
+                                   'Rebase project models on current cell pricing before tender submission',
+                                   'Gaurav J - TheElectricalGuy ([Bg-6ClEVMSU @ 00:01:39])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Sizing and Spec Moves the Builders Actually Use',
+                           'body': 'Field-level moves from integrators, consultants and manufacturers who '
+                                   'build, buy and commission these systems.',
+                           'items': ['Ask power or capacity before anything else. A 20-ft LTO box can push '
+                                     '3 MW, while an LFP box of the same footprint holds nearly 10 times '
+                                     'the energy but delivers only 2 MW [Energy Institute, University of '
+                                     'Texas at Austin — HhLc8bnBSIo @ 00:10:54].',
+                                     'Configure the EMS to the real site, including its tariff swings and '
+                                     'load-shedding pattern, not to whatever the user says the application '
+                                     'is [Gaurav J - TheElectricalGuy — Bg-6ClEVMSU @ 00:10:13].',
+                                     'Put the isolation transformer behind the PCS for sites where grid '
+                                     'electricity is not stable, because that is the application it exists '
+                                     'for [ELFBULB Battery — NZa3fz23P5Q @ 00:02:15].',
+                                     'Keep separate inverters for solar and BESS so one source stays '
+                                     'available while the other is under maintenance. A single shared '
+                                     'inverter can be done, but it lowers reliability [Inel Institute of '
+                                     'Technology — 5K3HSEyhIng @ 01:10:40].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Profile the load at real resolution',
+                              'action': 'Map the baseline and the peak swings at millisecond-to-second '
+                                        'resolution before talking to vendors.',
+                              'detail': 'A 100 MW data center with 60 to 70% variable GPU load can swing '
+                                        '40 to 50 MW, and a gigawatt campus can shed 500 to 600 MW in '
+                                        'milliseconds, so size the buffer to the swing and not to the '
+                                        'nameplate [Energy Institute, University of Texas at Austin — '
+                                        'HhLc8bnBSIo @ 00:09:21].'},
+                             {'step': 2,
+                              'title': 'Match chemistry and C-rate to the duty',
+                              'action': 'Choose the chemistry from the safety, cycle-life, power and '
+                                        'replacement-cost priorities, then set the C-rate.',
+                              'detail': 'High safety, high cycle life and heavy power point to LTO. '
+                                        'Affordability, with batteries swapped out periodically, points to '
+                                        'LFP. At 1C, plan liquid cooling instead of air [Energy Institute, '
+                                        'University of Texas at Austin — HhLc8bnBSIo @ 00:07:22] [ELFBULB '
+                                        'Battery — NZa3fz23P5Q @ 00:04:26].'},
+                             {'step': 3,
+                              'title': 'Lay out AC blocks and factory-built MV skids',
+                              'action': 'Arrange the repeating container-plus-skid blocks in rows and '
+                                        'specify pre-tested MV skids.',
+                              'detail': 'Rows let the underground conduit chain one MV transformer to the '
+                                        'next [HeatSpring — KpCBra3viO8 @ 00:02:03]. Factory-integrated '
+                                        'skids cut field wiring errors, installation time and '
+                                        'commissioning complexity [BESS Engineer — H7C34V05QQw @ '
+                                        '00:01:46].'},
+                             {'step': 4,
+                              'title': 'Build interconnection models early',
+                              'action': 'Run hardware validation, then build PSCAD and PSSE models for the '
+                                        'interconnection studies.',
+                              'detail': 'ERCOT connection runs through hardware validation, PSCAD and PSSE '
+                                        'simulation models, and studies of fault levels, stability and '
+                                        'protection coordination. Errors introduced early can delay '
+                                        'commercial operation by months [Keentel Engineering — M2z-pv6j-N4 '
+                                        '@ 00:07:55].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split runs straight through cell chemistry, and it is the '
+                              'first call a powered-land operator has to settle before ordering '
+                              'containers. Paul, speaking at the Energy Institute, University of Texas at '
+                              'Austin, integrates Toshiba LTO modules for high-power industrial and '
+                              'data-center duty. They argue that a Tesla Megapack or CATL Enerack LFP '
+                              'system only reaches 7,000 to 8,000 cycles while their own cells run past '
+                              '130,000, even though their smaller-capacity boxes cycle roughly ten times '
+                              'as often in a given year [HhLc8bnBSIo @ 00:16:29]. Learn Solar & BESS reads '
+                              'the market the other way: LFP makes up over 80% of new utility-scale '
+                              'projects because a stationary grid field has plenty of space for the '
+                              'exceptionally safe, slightly bulky chemistry, beating the denser but more '
+                              'expensive NMC [Wc1MU3K4OEc @ 00:04:13]. Akash Koushik of Goodenough Energy, '
+                              'interviewed on Gaurav J - TheElectricalGuy, dismisses the LTO lane '
+                              'outright: Toshiba launched lithium titanate, and today it is nowhere '
+                              '[Bg-6ClEVMSU @ 00:19:45]. Yet Koushik concedes LFP currently lacks 1C or 2C '
+                              'fast-discharge capability, so they expect complementary chemistries to '
+                              'handle black-start bursts before LFP takes over the sustained load '
+                              '[Bg-6ClEVMSU @ 00:37:54]. Millisecond GPU swings favor a power-first box; '
+                              'multi-hour shifting blocks favor the LFP majority on cost per kWh.',
+                              'Thermal and packaging choices split the field a second time. Nasier Ahmed '
+                              'Siddiqui, a principal electrical engineer teaching for Inel Institute of '
+                              'Technology, frames air cooling as the cheaper upfront route because it '
+                              'needs no pump, no cooling liquid and no extensive plumbing, which is why it '
+                              'still suits smaller systems running under moderate conditions [5K3HSEyhIng '
+                              '@ 00:32:21]. ELFBULB Battery draws the line by C-rate rather than budget: '
+                              'containers running at or below 0.5C get air conditioning plus a fan on '
+                              'every battery module, while anything doing 1C charging and discharging goes '
+                              'liquid because the cells heat up too fast [NZa3fz23P5Q @ 00:04:26]. Cummins '
+                              'skips that debate and ships liquid cooling even on a 0.5C, 2-hour LFP '
+                              'product, bundling the PCS, an isolation transformer for three-phase fault '
+                              'isolation, and fire suppression inside a 10-ft or 20-ft high-cube ISO '
+                              'container [RRbdgfTqeTA @ 00:03:16]. The transformer is its own argument. '
+                              'Siddiqui says most European C&I terminations sit at 690 V, matching PCS '
+                              'output, so no transformer is needed there, while grid-tied plants must step '
+                              'from 690 V up to 33 kV and onward to 132 or 275 kV; if the vendor package '
+                              'lacks one, the transformer gets bought separately from the battery project '
+                              '[5K3HSEyhIng @ 01:07:27].',
+                              'Procurement splits along experience lines. Siddiqui bought single-vendor '
+                              'turnkey packages while learning, then switched to sourcing batteries and '
+                              'PCS from separate vendors, saying turnkey cost them a lot because they '
+                              'could not see what they were paying for the batteries or the PCS; the split '
+                              'route only works for teams able to size components and run every system '
+                              'study themselves [5K3HSEyhIng @ 01:02:58]. Power System Operation Slides '
+                              'pushes back from the incident record: BESS supply chains pull components '
+                              'from multiple suppliers that were not necessarily designed to work '
+                              'together, creating incompatible interfaces and unexpected interactions '
+                              'between components [7tln9f5Ak7M @ 00:09:35]. On application scope, Cummins '
+                              'markets one product across renewable energy shifting, energy arbitrage, '
+                              'backup power, microgrids, off-grid power and EV charging infrastructure '
+                              '[RRbdgfTqeTA @ 00:04:59]. Koushik rejects the one-box idea: '
+                              'ancillary-service units for primary and secondary frequency control are '
+                              'designed like military aircraft, built for response time and reliability '
+                              'without worrying about ROI, while arbitrage and peak-shaving units are '
+                              'designed for long life, round-trip efficiency and low auxiliary consumption '
+                              '[Bg-6ClEVMSU @ 00:07:13]. The operator choice is whether to buy a '
+                              'generalist container and live with its compromises, or specify the EMS, PCS '
+                              'and thermal stack around one revenue job from day one.'],
+               'table': {'caption': 'Side-by-Side Playbooks: Where BESS Practitioners Split',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Cell chemistry for fast power-heavy duty',
+                                   'LTO power-first container rated past 130,000 cycles for GPU load '
+                                   'swings',
+                                   'LFP makes up over 80% of new utility-scale projects on cost and space',
+                                   'Energy Institute, University of Texas at Austin ([HhLc8bnBSIo @ '
+                                   '00:16:29]); Learn Solar & BESS ([Wc1MU3K4OEc @ 00:04:13])'],
+                                  ['Fast discharge rate expected from LFP',
+                                   '2C is usually used for grid application, emptying full capacity in 30 '
+                                   'minutes',
+                                   'LFP currently lacks 1C or 2C capability, so other chemistries handle '
+                                   'black start first',
+                                   'Inel Institute of Technology ([5K3HSEyhIng @ 00:24:24]); Gaurav J - '
+                                   'TheElectricalGuy ([Bg-6ClEVMSU @ 00:37:54])'],
+                                  ['Thermal management matched to C-rate',
+                                   'Air conditioning plus module fans for systems running at 0.5C or below',
+                                   'Liquid cooling even at 0.5C, bundled with PCS and fire suppression in '
+                                   'one box',
+                                   'ELFBULB Battery ([NZa3fz23P5Q @ 00:03:24]); Cummins ([RRbdgfTqeTA @ '
+                                   '00:03:16])'],
+                                  ['Isolation transformer inside the container package',
+                                   'Isolation transformer only needed when the grid electricity is not '
+                                   'stable',
+                                   'Isolation transformer included as standard for three-phase fault '
+                                   'isolation',
+                                   'ELFBULB Battery ([NZa3fz23P5Q @ 00:02:15]); Cummins ([RRbdgfTqeTA @ '
+                                   '00:03:16])'],
+                                  ['Procurement structure for the build',
+                                   'Separate battery and PCS vendors save cost once you can size them '
+                                   'yourself',
+                                   'Factory-tested MV skid delivered as one integrated block cuts field '
+                                   'wiring errors',
+                                   'Inel Institute of Technology ([5K3HSEyhIng @ 01:02:58]); BESS Engineer '
+                                   '([H7C34V05QQw @ 00:01:46])'],
+                                  ['Handling capacity fade across project years',
+                                   'Derate the system up front so committed energy holds in later years',
+                                   'Size and analyze so year-five energy still lands at 80% instead of '
+                                   'blind derating',
+                                   'Inel Institute of Technology ([5K3HSEyhIng @ 00:53:59])'],
+                                  ['BESS role against the diesel generator',
+                                   'BESS is not a direct DG replacement; it optimizes whatever power '
+                                   'source exists',
+                                   'BESS serves as non-diesel backup that cuts reliance on noisy, emitting '
+                                   'gensets',
+                                   'Gaurav J - TheElectricalGuy ([Bg-6ClEVMSU @ 00:25:42]); Inel Institute '
+                                   'of Technology ([5K3HSEyhIng @ 00:40:54])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The failure record flips the usual fear about cells. Power System Operation '
+                              'Slides, drawing on the EPRI BESS failure incident database, puts '
+                              'integration, assembly and construction at roughly 65% of classified root '
+                              'causes, and says cells represent only 11% of failed elements, with the '
+                              'balance of system and controls carrying the rest [Xys0DmLCtVk @ 00:02:08]. '
+                              'Timing is the second trap: about 72% of failures with known system age hit '
+                              'during construction, commissioning or the first two years of operation, '
+                              'often while monitoring and communication systems are not yet live '
+                              '[Xys0DmLCtVk @ 00:04:54]. Victoria Big Battery in 2021 shows the pattern: a '
+                              'coolant leak during commissioning led to a fire that spread across two '
+                              'units, and because monitoring and communication were not yet online, the '
+                              'leak cascaded into a major incident before anyone detected it [7tln9f5Ak7M '
+                              '@ 00:08:25]. Keentel Engineering describes the quieter version of the same '
+                              'disease: poor integration produces harmonics, protection failures, '
+                              'operational restrictions and expensive commissioning delays, which is why '
+                              'every cable, relay, breaker and protection setting has to work together '
+                              'from the design phase [M2z-pv6j-N4 @ 00:06:57]. For anyone optioning a '
+                              'substation-adjacent site, the danger window is the build and the first two '
+                              'years, not the cell spec sheet.',
+                              'Moss Landing on September 20, 2022 is the cleanest dual-cause case on '
+                              'record. Rainwater entered the container through an ingress point created '
+                              'when an umbrella valve was dislodged during improper installation of a vent '
+                              'shield, arcing drove thermal runaway, and insulation-loss alarms were never '
+                              'properly escalated to the operator; smoke and fire reached the fire '
+                              'department two days after the first alarms were recorded [7tln9f5Ak7M @ '
+                              "00:07:48]. South Korea's 2018 to 2019 wave carries an operating lesson: a "
+                              'substantial fraction of those failures occurred when state of charge '
+                              'exceeded 90%, though thin physical evidence left them classified as '
+                              'operational failures [Xys0DmLCtVk @ 00:03:24]. Koushik flags a slower '
+                              'killer for frequency-response duty: abrupt charge and discharge switchovers '
+                              'arrive without warning and can cause irreversible intercalation, which they '
+                              'describe as electrochemistry nobody can control, so the PCS needs fast '
+                              'switchover and high-reliability components [Bg-6ClEVMSU @ 00:11:13]. Their '
+                              'revenue warning is just as sharp: if EMS software or communication latency '
+                              'is slow on a fast frequency response asset, you miss the slot and absorb '
+                              'the DSM penalties that follow [Bg-6ClEVMSU @ 00:36:02]. The damage is not '
+                              'only fire; it is degraded cells and penalty invoices stacking up quietly.',
+                              'The economics checks are where deals die without a headline. Paul says CATL '
+                              'just had almost a gigawatt of energy storage held up in California because '
+                              'it carried too many Chinese-made components to clear entry, which is why '
+                              'their team sources batteries from Japan, builds in Houston, and leans on '
+                              'European and American vendors [HhLc8bnBSIo @ 00:24:06]. BESS Engineer warns '
+                              'that buyers pricing a medium-voltage skid underestimate where the money '
+                              'sits: the PCS runs roughly 40 to 50% of skid cost, transformers 20 to 30%, '
+                              'switchgear 10 to 15%, and the skid structure 10 to 20%, so the steel frame '
+                              'is never the real number [H7C34V05QQw @ 00:02:06]. Koushik prices the '
+                              'lifecycle trap: on a 12-year arbitrage project, degradation in year 11 '
+                              'forces a brand-new battery that only earns for one year, and 1% of '
+                              'auxiliary consumption here and there bleeds across 12 to 25 years of '
+                              'operation [Bg-6ClEVMSU @ 00:12:39]. Keentel Engineering adds the '
+                              'interconnection penalty: ERCOT-bound projects run PSCAD and PSSE models '
+                              'through interconnection studies, and errors introduced early can delay '
+                              'commercial operation by months [M2z-pv6j-N4 @ 00:08:16]. Supply-chain '
+                              'origin, skid mix, augmentation risk and interconnection schedule all land '
+                              'on the pro forma before the first container ships.'],
+               'table': {'caption': 'Firsthand Failure Modes and the Checks Practitioners Teach',
+                         'headers': ['Failure Mode or Trap',
+                                     'What Practitioners Reported',
+                                     'Operator Check They Teach',
+                                     'Expert Source'],
+                         'rows': [['Water ingress through the container enclosure',
+                                   'A dislodged umbrella valve during vent-shield installation let '
+                                   'rainwater in at Moss Landing',
+                                   'Escalate insulation-loss alarms to the operator immediately instead of '
+                                   'two days later',
+                                   'Power System Operation Slides ([7tln9f5Ak7M @ 00:07:48])'],
+                                  ['Commissioning-phase monitoring blind spot',
+                                   'Victoria Big Battery coolant leak spread fire across two units before '
+                                   'detection',
+                                   'Run enhanced monitoring and site hazard assessment during '
+                                   'commissioning when systems are most vulnerable',
+                                   'Power System Operation Slides ([7tln9f5Ak7M @ 00:08:25]); Power System '
+                                   'Operation Slides ([7tln9f5Ak7M @ 00:12:30])'],
+                                  ['Balance-of-system quality defects',
+                                   'Audits found 26% of inspected units with fire-suppression defects and '
+                                   '18% with thermal defects',
+                                   'Use factory acceptance testing to catch issues before they become '
+                                   'field failures',
+                                   'Power System Operation Slides ([Xys0DmLCtVk @ 00:02:46]); Power System '
+                                   'Operation Slides ([7tln9f5Ak7M @ 00:12:30])'],
+                                  ['Operating at very high state of charge',
+                                   'A substantial fraction of South Korean failures occurred when state of '
+                                   'charge exceeded 90%',
+                                   'Tighten operational limit settings for state of charge, voltage, '
+                                   'current and temperature',
+                                   'Power System Operation Slides ([Xys0DmLCtVk @ 00:03:24]); Power System '
+                                   'Operation Slides ([7tln9f5Ak7M @ 00:13:06])'],
+                                  ['Abrupt frequency-response cycling on the cells',
+                                   'Sudden charge-discharge switchovers arrive without warning and cause '
+                                   'irreversible intercalation',
+                                   'Specify a fast-switchover PCS built from high-reliability components '
+                                   'for this duty',
+                                   'Gaurav J - TheElectricalGuy ([Bg-6ClEVMSU @ 00:11:13])'],
+                                  ['Battery-stack fuse rated too tight',
+                                   'A fuse sized at maximum operating current interrupts the stack when it '
+                                   'should not',
+                                   'Rate the fuse 1.25 times maximum operating current and confirm through '
+                                   'system studies',
+                                   'Inel Institute of Technology ([5K3HSEyhIng @ 00:59:48]); Inel '
+                                   'Institute of Technology ([5K3HSEyhIng @ 01:00:10])'],
+                                  ['Foreign-component exposure in the supply chain',
+                                   'CATL had almost a gigawatt of storage held up in California over '
+                                   'Chinese-made components',
+                                   'Source cells and vendors from outside flagged supply chains and audit '
+                                   'every component',
+                                   'Energy Institute, University of Texas at Austin ([HhLc8bnBSIo @ '
+                                   '00:24:06])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Do Not Energize Until These Four Hold',
+                           'body': 'Four go/no-go checks pulled straight from the incidents, losses and '
+                                   'redesigns practitioners lived through on real BESS builds.',
+                           'items': ['Confirm monitoring and communication systems are online before '
+                                     "commissioning energizes the racks; Victoria Big Battery's coolant "
+                                     'leak cascaded across two units because they were not [Power System '
+                                     'Operation Slides — 7tln9f5Ak7M @ 00:08:25].',
+                                     'Route every insulation-loss alarm to a live operator with an '
+                                     'escalation path; at Moss Landing unescalated alarms preceded smoke '
+                                     'and fire by two days [Power System Operation Slides — 7tln9f5Ak7M @ '
+                                     '00:07:48].',
+                                     'Lock operational limits on state of charge, voltage, current and '
+                                     'temperature, since a substantial fraction of South Korean failures '
+                                     'occurred above 90% state of charge [Power System Operation Slides — '
+                                     'Xys0DmLCtVk @ 00:03:24].',
+                                     'Fix the single revenue application before procurement, because EMS, '
+                                     'PCS and thermal design differ between frequency-response and '
+                                     'arbitrage builds and one machine cannot serve all [Gaurav J - '
+                                     'TheElectricalGuy — Bg-6ClEVMSU @ 00:13:38].']}}],
+ 'pull_quote': '"I would say if EMS is not into BESS it\'s more like a UPS." — Akash Koushik, Goodenough '
+               'Energy, on Gaurav J - TheElectricalGuy (Bg-6ClEVMSU @ 00:34:18).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Pull the site load profile and answer the number-one sizing question first: do you '
+                      'need power or capacity, because that decides chemistry, battery type and how the '
+                      'system gets used [Energy Institute, University of Texas at Austin — HhLc8bnBSIo @ '
+                      '00:10:38].',
+                      'Budget the MV skid with the PCS at roughly 40 to 50% of skid cost and transformers '
+                      'at 20 to 30%, rather than anchoring on the steel frame [BESS Engineer — H7C34V05QQw '
+                      '@ 00:02:27].',
+                      'Lay out AC blocks of four 5 MWh containers around one PCS and MV transformer skid, '
+                      'arranged in rows so underground conduit runs transformer to transformer [HeatSpring '
+                      '— KpCBra3viO8 @ 00:02:03].',
+                      'Size the battery so committed energy still lands at 80% after five years instead of '
+                      'relying on blanket derating [Inel Institute of Technology — 5K3HSEyhIng @ '
+                      '00:53:59].',
+                      'Rate battery-stack fuses at 1.25 times maximum operating current and confirm '
+                      'coordination through power system studies [Inel Institute of Technology — '
+                      '5K3HSEyhIng @ 01:00:10].',
+                      'For ERCOT-bound sites, build PSCAD and PSSE models early and get them right, '
+                      'because early modelling errors delay commercial operation by months [Keentel '
+                      'Engineering — M2z-pv6j-N4 @ 00:07:55].'],
+ 'statutory_citations': [{'title': 'Power System Operation Slides — BESS Operational Projects Worldwide | '
+                                   "Grid Scale Utility BESS Overview | Europe's Largest BESS [00:07:48]",
+                          'url': 'https://www.youtube.com/watch?v=7tln9f5Ak7M&t=468s',
+                          'relevance': 'Primary practitioner testimony on BESS failure root causes, Moss '
+                                       'Landing water ingress, unescalated insulation alarms and '
+                                       'commissioning-phase incidents.'},
+                         {'title': 'Energy Institute, University of Texas at Austin — Insights on Battery '
+                                   'Energy Storage Systems (BESS) [00:23:14]',
+                          'url': 'https://www.youtube.com/watch?v=HhLc8bnBSIo&t=1394s',
+                          'relevance': 'Primary practitioner testimony on power-versus-capacity pricing, '
+                                       'LTO versus LFP economics and data-center GPU load smoothing.'},
+                         {'title': 'Gaurav J - TheElectricalGuy — BESS Explained by a Manufacturer: '
+                                   'Applications, Lifecycle & Industry Trends [00:10:54]',
+                          'url': 'https://www.youtube.com/watch?v=Bg-6ClEVMSU&t=654s',
+                          'relevance': 'Primary practitioner testimony on application-specific EMS, PCS '
+                                       'and thermal design and the cell damage from abrupt cycling.'},
+                         {'title': 'Inel Institute of Technology — FREE VIRTUAL MASTERCLASS: Applied case '
+                                   'study of designing a Battery Energy Storage System (BESS) [01:02:58]',
+                          'url': 'https://www.youtube.com/watch?v=5K3HSEyhIng&t=3778s',
+                          'relevance': 'Primary practitioner testimony on turnkey versus multi-vendor BESS '
+                                       'procurement, derating, fuse sizing and transformer requirements.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'HhLc8bnBSIo',
+                       'title': 'Insights on Battery Energy Storage Systems (BESS)',
+                       'channel': 'Energy Institute, University of Texas at Austin',
+                       'author': 'Energy Institute, University of Texas at Austin',
+                       'text': 'That could be 700 MW difference, and in a very short period of time you '
+                               'might see a load shed in the neighborhood of 500-600 MW of power, and the '
+                               'grid just cannot support that type of variability.',
+                       'tip': 'That could be 700 MW difference, and in a very short period of time you '
+                              'might see a load shed in the neighborhood of 500-600 MW of power, and the '
+                              'grid just cannot support that type of variability.',
+                       'timestamp': 598,
+                       'timestamp_seconds': 598,
+                       'timestamp_label': '[00:09:58]',
+                       'url': 'https://www.youtube.com/watch?v=HhLc8bnBSIo&t=598s',
+                       'markdown': '[00:09:58](https://www.youtube.com/watch?v=HhLc8bnBSIo&t=598s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HhLc8bnBSIo',
+                       'title': 'Insights on Battery Energy Storage Systems (BESS)',
+                       'channel': 'Energy Institute, University of Texas at Austin',
+                       'author': 'Energy Institute, University of Texas at Austin',
+                       'text': 'A Tesla Megapack is right around $550 a kilowatt, 270 or so dollars a '
+                               "kilowatt hour; my system, I'm about $3,500 a kilowatt hour, but I'm down "
+                               'at $600 a kilowatt.',
+                       'tip': 'A Tesla Megapack is right around $550 a kilowatt, 270 or so dollars a '
+                              "kilowatt hour; my system, I'm about $3,500 a kilowatt hour, but I'm down at "
+                              '$600 a kilowatt.',
+                       'timestamp': 1394,
+                       'timestamp_seconds': 1394,
+                       'timestamp_label': '[00:23:14]',
+                       'url': 'https://www.youtube.com/watch?v=HhLc8bnBSIo&t=1394s',
+                       'markdown': '[00:23:14](https://www.youtube.com/watch?v=HhLc8bnBSIo&t=1394s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5K3HSEyhIng',
+                       'title': 'FREE VIRTUAL MASTERCLASS: Applied case study of designing a Battery '
+                                'Energy Storage System (BESS)',
+                       'channel': 'Inel Institute of Technology',
+                       'author': 'Inel Institute of Technology',
+                       'text': 'Whenever I go with the turnkey solution it costed me a lot, but whenever I '
+                               'go for integrated solution, I select the PCS from a different vendor, I '
+                               'select the battery from a different vendor.',
+                       'tip': 'Whenever I go with the turnkey solution it costed me a lot, but whenever I '
+                              'go for integrated solution, I select the PCS from a different vendor, I '
+                              'select the battery from a different vendor.',
+                       'timestamp': 3778,
+                       'timestamp_seconds': 3778,
+                       'timestamp_label': '[01:02:58]',
+                       'url': 'https://www.youtube.com/watch?v=5K3HSEyhIng&t=3778s',
+                       'markdown': '[01:02:58](https://www.youtube.com/watch?v=5K3HSEyhIng&t=3778s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5K3HSEyhIng',
+                       'title': 'FREE VIRTUAL MASTERCLASS: Applied case study of designing a Battery '
+                                'Energy Storage System (BESS)',
+                       'channel': 'Inel Institute of Technology',
+                       'author': 'Inel Institute of Technology',
+                       'text': 'For the fuse protection usually 1.25, means we use 25% additional, the 25% '
+                               'oversized protection.',
+                       'tip': 'For the fuse protection usually 1.25, means we use 25% additional, the 25% '
+                              'oversized protection.',
+                       'timestamp': 3610,
+                       'timestamp_seconds': 3610,
+                       'timestamp_label': '[01:00:10]',
+                       'url': 'https://www.youtube.com/watch?v=5K3HSEyhIng&t=3610s',
+                       'markdown': '[01:00:10](https://www.youtube.com/watch?v=5K3HSEyhIng&t=3610s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RRbdgfTqeTA',
+                       'title': 'Cummins Power Generation Battery Energy Storage Systems (BESS) launch '
+                                'unveil',
+                       'channel': 'Cummins',
+                       'author': 'Cummins',
+                       'text': 'Our system is designed with 0.5C rate or 2-hour charge discharge rate to '
+                               'meet the demands of wide range of applications.',
+                       'tip': 'Our system is designed with 0.5C rate or 2-hour charge discharge rate to '
+                              'meet the demands of wide range of applications.',
+                       'timestamp': 196,
+                       'timestamp_seconds': 196,
+                       'timestamp_label': '[00:03:16]',
+                       'url': 'https://www.youtube.com/watch?v=RRbdgfTqeTA&t=196s',
+                       'markdown': '[00:03:16](https://www.youtube.com/watch?v=RRbdgfTqeTA&t=196s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Wc1MU3K4OEc',
+                       'title': 'Battery Energy Storage System (BESS) Explained | Complete Beginner to '
+                                'Expert Guide (2026)',
+                       'channel': 'Learn Solar & BESS',
+                       'author': 'Learn Solar & BESS',
+                       'text': 'It absolutely dominates the market, making up over 80% of new '
+                               'utility-scale projects.',
+                       'tip': 'It absolutely dominates the market, making up over 80% of new utility-scale '
+                              'projects.',
+                       'timestamp': 253,
+                       'timestamp_seconds': 253,
+                       'timestamp_label': '[00:04:13]',
+                       'url': 'https://www.youtube.com/watch?v=Wc1MU3K4OEc&t=253s',
+                       'markdown': '[00:04:13](https://www.youtube.com/watch?v=Wc1MU3K4OEc&t=253s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'H7C34V05QQw',
+                       'title': 'BESS MV Skid Explained: PCS, Transformer, Switchgear & Cost Breakdown',
+                       'channel': 'BESS Engineer',
+                       'author': 'BESS Engineer',
+                       'text': 'The inverters, the PCS, represents roughly like 40 to 50% of the skid '
+                               "cost; that's the most expensive equipment.",
+                       'tip': 'The inverters, the PCS, represents roughly like 40 to 50% of the skid cost; '
+                              "that's the most expensive equipment.",
+                       'timestamp': 147,
+                       'timestamp_seconds': 147,
+                       'timestamp_label': '[00:02:27]',
+                       'url': 'https://www.youtube.com/watch?v=H7C34V05QQw&t=147s',
+                       'markdown': '[00:02:27](https://www.youtube.com/watch?v=H7C34V05QQw&t=147s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Xys0DmLCtVk',
+                       'title': 'BESS Operational Projects Worldwide | Grid Scale Utility BESS Overview | '
+                                "Europe's Largest BESS",
+                       'channel': 'Power System Operation Slides',
+                       'author': 'Power System Operation Slides',
+                       'text': 'Integration, assembly, and construction emerges as the most common root '
+                               'cause of BESS failures, accounting for approximately 65% of all identified '
+                               'faults.',
+                       'tip': 'Integration, assembly, and construction emerges as the most common root '
+                              'cause of BESS failures, accounting for approximately 65% of all identified '
+                              'faults.',
+                       'timestamp': 128,
+                       'timestamp_seconds': 128,
+                       'timestamp_label': '[00:02:08]',
+                       'url': 'https://www.youtube.com/watch?v=Xys0DmLCtVk&t=128s',
+                       'markdown': '[00:02:08](https://www.youtube.com/watch?v=Xys0DmLCtVk&t=128s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KpCBra3viO8',
+                       'title': 'Inside AC Block Architecture: A Technical Walkthrough of Utility-Scale '
+                                'Energy Storage Systems Design',
+                       'channel': 'HeatSpring',
+                       'author': 'HeatSpring',
+                       'text': 'This AC block is made up of four energy storage containers, and in this '
+                               'case each of these has five megawatt hours of energy storage.',
+                       'tip': 'This AC block is made up of four energy storage containers, and in this '
+                              'case each of these has five megawatt hours of energy storage.',
+                       'timestamp': 34,
+                       'timestamp_seconds': 34,
+                       'timestamp_label': '[00:00:34]',
+                       'url': 'https://www.youtube.com/watch?v=KpCBra3viO8&t=34s',
+                       'markdown': '[00:00:34](https://www.youtube.com/watch?v=KpCBra3viO8&t=34s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'M2z-pv6j-N4',
+                       'title': 'Inside a Battery Energy Storage System (BESS): Components Explained | '
+                                'BMS, PCS, EMS & More',
+                       'channel': 'Keentel Engineering',
+                       'author': 'Keentel Engineering',
+                       'text': 'Because every step depends on accurate engineering models, errors '
+                               'introduced early can delay commercial operation by months.',
+                       'tip': 'Because every step depends on accurate engineering models, errors '
+                              'introduced early can delay commercial operation by months.',
+                       'timestamp': 496,
+                       'timestamp_seconds': 496,
+                       'timestamp_label': '[00:08:16]',
+                       'url': 'https://www.youtube.com/watch?v=M2z-pv6j-N4&t=496s',
+                       'markdown': '[00:08:16](https://www.youtube.com/watch?v=M2z-pv6j-N4&t=496s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NqAAt_iYj9w',
+                       'title': 'Decoding BESS: What is Battery Energy Storage Systems | Moxa',
+                       'channel': 'Moxa',
+                       'author': 'Moxa',
+                       'text': 'Energy storage systems for the power grid can be broadly classified into '
+                               'two categories: grid connected services, often referred to as front of the '
+                               'meter, and customer centric energy applications, mostly called behind the '
+                               'meter.',
+                       'tip': 'Energy storage systems for the power grid can be broadly classified into '
+                              'two categories: grid connected services, often referred to as front of the '
+                              'meter, and customer centric energy applications, mostly called behind the '
+                              'meter.',
+                       'timestamp': 19,
+                       'timestamp_seconds': 19,
+                       'timestamp_label': '[00:00:19]',
+                       'url': 'https://www.youtube.com/watch?v=NqAAt_iYj9w&t=19s',
+                       'markdown': '[00:00:19](https://www.youtube.com/watch?v=NqAAt_iYj9w&t=19s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7n-ba9KN-Uc',
+                       'title': 'Battery Energy Storage System | BESS Explained',
+                       'channel': 'Owl WiS',
+                       'author': 'Owl WiS',
+                       'text': 'It uses real-time data like weather, energy prices, and load demand to '
+                               'decide when to charge, discharge, or send power back to the grid.',
+                       'tip': 'It uses real-time data like weather, energy prices, and load demand to '
+                              'decide when to charge, discharge, or send power back to the grid.',
+                       'timestamp': 176,
+                       'timestamp_seconds': 176,
+                       'timestamp_label': '[00:02:56]',
+                       'url': 'https://www.youtube.com/watch?v=7n-ba9KN-Uc&t=176s',
+                       'markdown': '[00:02:56](https://www.youtube.com/watch?v=7n-ba9KN-Uc&t=176s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zphURkyhD-c',
+                       'title': 'BESS Components Explained: Every Part You Need to Know!',
+                       'channel': 'Gaurav J - TheElectricalGuy',
+                       'author': 'Gaurav J - TheElectricalGuy',
+                       'text': 'For example, a 480 volt BESS might require transformation to 11 kV or 33 '
+                               'kV for grid connection.',
+                       'tip': 'For example, a 480 volt BESS might require transformation to 11 kV or 33 kV '
+                              'for grid connection.',
+                       'timestamp': 306,
+                       'timestamp_seconds': 306,
+                       'timestamp_label': '[00:05:06]',
+                       'url': 'https://www.youtube.com/watch?v=zphURkyhD-c&t=306s',
+                       'markdown': '[00:05:06](https://www.youtube.com/watch?v=zphURkyhD-c&t=306s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Bg-6ClEVMSU',
+                       'title': 'BESS Explained by a Manufacturer: Applications, Lifecycle & Industry '
+                                'Trends',
+                       'channel': 'Gaurav J - TheElectricalGuy',
+                       'author': 'Gaurav J - TheElectricalGuy',
+                       'text': 'And this will happen without any warning also, and these abrupt charge and '
+                               'discharge may create intercalation sometime also.',
+                       'tip': 'And this will happen without any warning also, and these abrupt charge and '
+                              'discharge may create intercalation sometime also.',
+                       'timestamp': 654,
+                       'timestamp_seconds': 654,
+                       'timestamp_label': '[00:10:54]',
+                       'url': 'https://www.youtube.com/watch?v=Bg-6ClEVMSU&t=654s',
+                       'markdown': '[00:10:54](https://www.youtube.com/watch?v=Bg-6ClEVMSU&t=654s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Bg-6ClEVMSU',
+                       'title': 'BESS Explained by a Manufacturer: Applications, Lifecycle & Industry '
+                                'Trends',
+                       'channel': 'Gaurav J - TheElectricalGuy',
+                       'author': 'Gaurav J - TheElectricalGuy',
+                       'text': 'You will lose upon the penalties which will be given to you because of '
+                               'missing a slot, so EMS is very critical part for monetizing the real value '
+                               'out of BESS.',
+                       'tip': 'You will lose upon the penalties which will be given to you because of '
+                              'missing a slot, so EMS is very critical part for monetizing the real value '
+                              'out of BESS.',
+                       'timestamp': 2162,
+                       'timestamp_seconds': 2162,
+                       'timestamp_label': '[00:36:02]',
+                       'url': 'https://www.youtube.com/watch?v=Bg-6ClEVMSU&t=2162s',
+                       'markdown': '[00:36:02](https://www.youtube.com/watch?v=Bg-6ClEVMSU&t=2162s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7tln9f5Ak7M',
+                       'title': 'BESS Operational Projects Worldwide | Grid Scale Utility BESS Overview | '
+                                "Europe's Largest BESS",
+                       'channel': 'Power System Operation Slides',
+                       'author': 'Power System Operation Slides',
+                       'text': 'Insulation loss alarms were not properly escalated to the operator, and '
+                               'two days after the initial insulation alarms were recorded, smoke and fire '
+                               'were reported to the fire department.',
+                       'tip': 'Insulation loss alarms were not properly escalated to the operator, and two '
+                              'days after the initial insulation alarms were recorded, smoke and fire were '
+                              'reported to the fire department.',
+                       'timestamp': 468,
+                       'timestamp_seconds': 468,
+                       'timestamp_label': '[00:07:48]',
+                       'url': 'https://www.youtube.com/watch?v=7tln9f5Ak7M&t=468s',
+                       'markdown': '[00:07:48](https://www.youtube.com/watch?v=7tln9f5Ak7M&t=468s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7tln9f5Ak7M',
+                       'title': 'BESS Operational Projects Worldwide | Grid Scale Utility BESS Overview | '
+                                "Europe's Largest BESS",
+                       'channel': 'Power System Operation Slides',
+                       'author': 'Power System Operation Slides',
+                       'text': 'During commissioning, a leak in the coolant system led to a fire that '
+                               'spread across two BESS units.',
+                       'tip': 'During commissioning, a leak in the coolant system led to a fire that '
+                              'spread across two BESS units.',
+                       'timestamp': 505,
+                       'timestamp_seconds': 505,
+                       'timestamp_label': '[00:08:25]',
+                       'url': 'https://www.youtube.com/watch?v=7tln9f5Ak7M&t=505s',
+                       'markdown': '[00:08:25](https://www.youtube.com/watch?v=7tln9f5Ak7M&t=505s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NZa3fz23P5Q',
+                       'title': 'Bellie Breaks Down the 3.6MWh BESS: Your Key to Sustainable Energy!',
+                       'channel': 'ELFBULB Battery',
+                       'author': 'ELFBULB Battery',
+                       'text': 'For one C charging and discharging, definitely we use liquid cooling, '
+                               'because when the cells work at one C discharging too fast, the cells '
+                               'easily get hot.',
+                       'tip': 'For one C charging and discharging, definitely we use liquid cooling, '
+                              'because when the cells work at one C discharging too fast, the cells easily '
+                              'get hot.',
+                       'timestamp': 266,
+                       'timestamp_seconds': 266,
+                       'timestamp_label': '[00:04:26]',
+                       'url': 'https://www.youtube.com/watch?v=NZa3fz23P5Q&t=266s',
+                       'markdown': '[00:04:26](https://www.youtube.com/watch?v=NZa3fz23P5Q&t=266s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'}]}

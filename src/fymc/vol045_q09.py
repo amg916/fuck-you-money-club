@@ -1,839 +1,858 @@
 from __future__ import annotations
 
-CHAPTER_9 = {
-    "id": "Q9",
-    "chapter_id": "Q9",
-    "chapter_number": 9,
-    "question_number": 9,
-    "slug": "contracts-statutory-guardrails-licensing-outreach-scripts",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern no surprises act (idr) medical arbitration & out-of-network recovery?",
-    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
-    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": "HIPAA Business Associate Agreements, ERISA Routing, Cash-Triggered Contingencies, Federal IDR Calendars, and Provider Outreach Controls",
-    "layout_template": "legal_compliance_notes",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #45, Rank #09 of 49, earns a 94/100 Money-to-Manpower Score by "
-        "turning eligible out-of-network underpayments into documented, collected "
-        "provider recoveries. This chapter organizes 12 mapped plays into jurisdiction, "
-        "licensing, privacy, scope, fee calculation, asset ownership, liability, calendars, "
-        "evidence, cash reconciliation, outbound infrastructure, and discovery. The "
-        "canonical annual owner-profit cases are $33,000 Conservative, $217,150 Base, "
-        "and $504,000 Scaled; revenue means earned contingency shares, never provider "
-        "medical billings. Execute the business associate agreement before transferring "
-        "protected records, establish federal versus state jurisdiction before spending "
-        "filing fees, and invoice only on incremental cash after specified costs. "
-        "Outreach must use legitimately provisioned accounts, truthful claims, and "
-        "durable suppression rather than disposable identities or promised recoveries."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$110,000",
-            "context": "Annual earned contingency revenue; excludes baseline provider collections",
-            "note": "30% net margin; $33,000 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$505,000",
-            "context": "Annual earned contingency revenue; excludes baseline provider collections",
-            "note": "43.0% net margin; $217,150 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual earned contingency revenue; excludes baseline provider collections",
-            "note": "56% net margin; $504,000 annual owner net profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Establish jurisdiction, licensing boundaries, and protected-data authority",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Play 1, jurisdiction routing, starts with the service and plan, not "
-                    "the payer logo. Obtain the service date, place of service, provider "
-                    "network status, plan funding evidence, initial payment or denial, "
-                    "and applicable state payment rules. The federal framework in "
-                    "42 U.S.C. § 300gg-111 addresses specified emergency services and "
-                    "certain nonemergency services furnished by nonparticipating providers "
-                    "at participating facilities; air ambulance disputes have a separate "
-                    "statutory provision. Ground ambulance bills do not become federal "
-                    "IDR cases merely because they are out of network. A specified "
-                    "state law or applicable All-Payer Model Agreement can determine "
-                    "the payment route instead. ERISA preemption under 29 U.S.C. "
-                    "§ 1144 is important, but an ERISA label alone does not settle "
-                    "every claim's jurisdiction. Funding status, state opt-in arrangements, "
-                    "service category, and the law's actual reach matter. Store the "
-                    "evidence supporting each routing decision rather than inferring "
-                    "self-funding from an 835 transaction. New York and Texas illustrate "
-                    "why one national payer can administer claims governed by different "
-                    "dispute systems. If evidence conflicts, obtain plan documentation "
-                    "and a written routing determination before incurring an entity "
-                    "fee. Separately evaluate balance-billing protection; federal "
-                    "arbitration eligibility and patient protections are related but "
-                    "not interchangeable determinations."
-                ),
-                (
-                    "Play 2, licensing and representation, separates administrative "
-                    "recovery work from practicing law, collecting consumer debts, "
-                    "and selling clinical referrals. A provider authorization should "
-                    "identify the business acting as its representative, permitted "
-                    "portal actions, negotiation authority, and who can accept a "
-                    "settlement. That authorization does not create a law license or "
-                    "override a state's collection-agency requirements. Florida's "
-                    "commercial collection regime, including Fla. Stat. § 559.553, "
-                    "deserves a specific applicability review when the proposed "
-                    "activity involves collecting commercial claims. New York "
-                    "Judiciary Law §§ 478 and 484 illustrate separate restrictions "
-                    "on unauthorized legal practice. Have qualified local counsel "
-                    "classify activities by provider location, business location, "
-                    "debtor relationship, and forum; do not assume that calling the "
-                    "service analytics changes its substance. Escalate litigation, "
-                    "subpoenas, disputed legal interpretation, and contested ERISA "
-                    "benefit litigation to retained counsel. Analyze percentage fees "
-                    "under applicable professional fee-splitting rules rather than "
-                    "declaring every contingency arrangement permissible. Where "
-                    "federal healthcare program business is implicated, assess "
-                    "42 U.S.C. § 1320a-7b(b) before compensating referral sources. "
-                    "Keep marketing compensation independent of patient referrals "
-                    "and treatment volume. The practical fallback is a narrower "
-                    "administrative scope, a properly licensed service partner, or "
-                    "declining the affected work while preserving the provider's "
-                    "remaining filing time."
-                ),
-                (
-                    "Play 3, privacy authority, requires an executed HIPAA business "
-                    "associate agreement before the recovery operator receives "
-                    "protected health information on the provider's behalf. Pair "
-                    "45 CFR § 164.504(e) with Security Rule safeguards under "
-                    "45 CFR §§ 164.308 and 164.312, and apply minimum-necessary "
-                    "access under § 164.502(b) where applicable. The services agreement "
-                    "alone is insufficient. Specify permitted payment and operations "
-                    "uses, incident reporting, subcontractor restrictions, return or "
-                    "destruction, and treatment of records that must be retained. "
-                    "Use individual accounts, multifactor authentication, encrypted "
-                    "transfer, and access logs; keep prospecting tools outside the "
-                    "clinical-record boundary. Microsoft 365 or a cloud storage "
-                    "brand is not proof that a particular product, subscription, "
-                    "and configuration are covered by the required contractual "
-                    "commitments. Verify those commitments for each service receiving "
-                    "records. An 835 ERA can contain sensitive identifiers even "
-                    "when the attachment lacks a clinical narrative. Collect only "
-                    "claim fields necessary for screening, then obtain selected "
-                    "clinical evidence through the controlled workspace. Evaluate "
-                    "additional restrictions before accepting substance-use-disorder "
-                    "records governed by 42 CFR Part 2. If a prospect emails "
-                    "records prematurely, restrict access, notify the designated "
-                    "privacy contact, and follow the documented incident process "
-                    "instead of forwarding the attachment into a sales sequence."
-                ),
-            ],
-            "table": {
-                "caption": "Jurisdiction and authority matrix for provider recovery intake",
-                "headers": [
-                    "Decision being made",
-                    "Primary authority or evidence",
-                    "Required operating control",
-                    "Failure response and economic consequence",
-                ],
-                "rows": [
-                    [
-                        "Route emergency-service claims before paying arbitration charges",
-                        "42 U.S.C. § 300gg-111 and documented service circumstances",
-                        "Record network status, service category, and governing payment regime",
-                        "Hold disputed eligibility; avoid spending fees on unsupported filings",
-                    ],
-                    [
-                        "Separate self-funded administration from insured product underwriting",
-                        "29 U.S.C. § 1144 plus actual plan funding documents",
-                        "Confirm state-law applicability rather than relying on payer branding",
-                        "Request plan evidence before selecting federal or state procedures",
-                    ],
-                    [
-                        "Identify New York surprise-billing payment disputes correctly",
-                        "New York Financial Services Law Article 6, including § 603",
-                        "Match coverage and service facts against state statutory definitions",
-                        "Use the applicable state route when its requirements control",
-                    ],
-                    [
-                        "Identify Texas state dispute-resolution coverage and procedures",
-                        "Texas Insurance Code Chapter 1467 and relevant coverage evidence",
-                        "Verify product eligibility and applicable provider dispute pathway",
-                        "Do not transplant federal calendars into Texas state disputes",
-                    ],
-                    [
-                        "Classify commercial collection and legal representation activities",
-                        "Fla. Stat. § 559.553; New York Judiciary Law § 478",
-                        "Obtain activity-specific licensing analysis before expanding service territory",
-                        "Narrow scope or retain qualified licensed representation where required",
-                    ],
-                    [
-                        "Authorize protected-record processing and downstream service providers",
-                        "45 CFR § 164.504(e) business associate contract requirements",
-                        "Execute agreements and restrict subcontractor access before record transfer",
-                        "Suspend record ingestion until contractual and security requirements exist",
-                    ],
-                    [
-                        "Separate provider marketing from remunerated patient referral arrangements",
-                        "42 U.S.C. § 1320a-7b(b) and applicable state restrictions",
-                        "Review compensation structure and prohibit patient-volume referral incentives",
-                        "Replace problematic compensation with a properly evaluated service arrangement",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before protected intake or filing expenditure",
-                "body": (
-                    "A named owner records each result in the matter file. Missing "
-                    "evidence stops the affected action without silently abandoning "
-                    "the provider's deadline."
-                ),
-                "items": [
-                    "Confirm service eligibility, plan funding evidence, applicable state law, and the written reason for selecting the federal route.",
-                    "Confirm provider authorization, settlement limits, relevant licensing analysis, and the correct representative identity for portal submission.",
-                    "Confirm signed business associate agreements, approved record-transfer services, subcontractor coverage, and individual access permissions.",
-                    "Confirm deadline calculations, budget authority for unrecoverable fees, batch eligibility, and any applicable cooling-off restriction.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Contract for collected uplift, controlled authority, and clean ownership",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Play 4, contractual scope, defines the service as screening, "
-                    "authorized negotiation, eligible IDR administration, evidence "
-                    "assembly, and cash reconciliation for listed provider entities "
-                    "and claim populations. Attach the tax identifiers, specialties, "
-                    "service periods, excluded payers, and excluded litigation "
-                    "activities. State who funds administrative fees, entity fees, "
-                    "clinical review, and external counsel; require express budget "
-                    "authority before expanding a matter. Give the operator limited "
-                    "representation authority rather than unrestricted power to "
-                    "bind the practice. Settlement instructions should identify "
-                    "minimum acceptable terms and the person authorized to change "
-                    "them. Play 5, the fee trigger, defines baseline collections as "
-                    "the payer's actual initial allowed payment allocated to the "
-                    "claim, not the QPA disclosure when those amounts differ. "
-                    "Incremental recovery excludes baseline receipts, patient "
-                    "cost sharing, unrelated claim payments, and uncollected awards. "
-                    "Deduct the agreed nonrefundable administrative charges, "
-                    "unrecovered entity fees, and attributable casework costs before "
-                    "applying the contingency percentage. Attach a worked example "
-                    "and a claim-level reconciliation format. Define treatment of "
-                    "interest, partial receipts, recoupments, refunds, and bundled "
-                    "remittances explicitly. A favorable determination creates a "
-                    "collection task; it does not by itself establish an earned "
-                    "cash-triggered contingency invoice or authority to debit "
-                    "the provider's bank account."
-                ),
-                (
-                    "Use a precise waterfall: eligible incremental cash equals "
-                    "reconciled payer cash attributable to the recovery minus "
-                    "baseline payments already included in that total; subtract "
-                    "unrecovered filing charges and agreed casework costs; floor "
-                    "the resulting contingency base at zero. For example, a "
-                    "$4,000 initial payment followed by $10,000 additional cash "
-                    "creates $10,000 of incremental receipts, not $14,000 of fee "
-                    "basis. If actual unrecovered charges are $750 and attributable "
-                    "casework costs are $1,250, the net recovery base is $8,000. "
-                    "A 25% contingency produces $2,000 of operator revenue and "
-                    "$6,000 of provider residual benefit after those costs. "
-                    "The $750 is an illustrative combined ledger amount, not "
-                    "a quoted CMS fee schedule. If the operator also incurs "
-                    "$400 of nonreimbursed overhead allocated to that engagement, "
-                    "its contribution is $1,600. Track reimbursed advances through "
-                    "the appropriate clearing accounts and evaluate principal "
-                    "versus agent presentation under ASC 606; never count the "
-                    "provider's recovery as operator revenue. Where the operator "
-                    "bears a case expense rather than obtaining reimbursement, "
-                    "record that expense consistently and do not deduct it twice "
-                    "in the profit bridge. A later entity-fee refund changes "
-                    "unrecovered costs and requires a transparent true-up."
-                ),
-                (
-                    "Play 6, asset ownership, assigns provider records, claim "
-                    "decisions, and matter-specific deliverables to the agreed "
-                    "owner while reserving reusable software and general templates "
-                    "to the operator. Ownership language does not itself authorize "
-                    "secondary use of protected information. Restrict training, "
-                    "resale, and cross-client benchmarking unless separately "
-                    "permitted under applicable contracts and privacy rules. "
-                    "Play 7, liability and dispute design, makes anti-circumvention "
-                    "a narrow collection-reporting obligation covering identified "
-                    "worked claims for a defined tail period. It should not "
-                    "capture unrelated future collections or obstruct provider "
-                    "access to records. Require receipt reporting, reasonable "
-                    "audit access, and cooperation after termination. A liability "
-                    "cap should specify its monetary basis and deliberate "
-                    "exceptions for fraud, willful misconduct, confidentiality "
-                    "breaches, and other negotiated exposures; evaluate enforceability "
-                    "under the selected state's law. Align indemnities with "
-                    "responsibility for inaccurate source records, unauthorized "
-                    "submissions, and security incidents. Define notice, cure, "
-                    "venue, governing law, emergency relief, and mediation or "
-                    "arbitration for disputes between operator and provider. "
-                    "Keep that private contract mechanism distinct from statutory "
-                    "payer-provider IDR. On termination, deliver the deadline "
-                    "register, submission receipts, pending determinations, "
-                    "payment ledger, and authorized record export. Invoice "
-                    "disputes should never become an excuse to hide a live "
-                    "filing deadline or withhold essential transition information."
-                ),
-            ],
-            "table": {
-                "caption": "Contract clause checklist with auditable drafting instructions",
-                "headers": [
-                    "Clause and commercial purpose",
-                    "Required substantive contract language",
-                    "Evidence retained during performance",
-                    "Boundary or fallback when disputed",
-                ],
-                "rows": [
-                    [
-                        "Scope defines exactly which recovery matters are serviced",
-                        "List provider entities, claim periods, services, exclusions, and deliverables",
-                        "Maintain signed schedules and authorized additions for each engagement",
-                        "Exclude litigation unless separately assigned to appropriately qualified counsel",
-                    ],
-                    [
-                        "Authority controls negotiation and final settlement commitments",
-                        "Identify authorized representatives, settlement limits, and provider decision owners",
-                        "Retain written instructions and timestamps for material settlement decisions",
-                        "Escalate offers outside delegated limits without accepting binding terms",
-                    ],
-                    [
-                        "Fee trigger charges only realized net incremental recovery",
-                        "Apply the agreed percentage after specified unrecovered fees and costs",
-                        "Reconcile baseline remittances, additional receipts, expenses, and fee refunds",
-                        "Defer invoicing when payment attribution cannot yet be established",
-                    ],
-                    [
-                        "Anti-circumvention protects worked claims without capturing unrelated revenue",
-                        "Limit reporting obligations and fee tails to identified serviced claims",
-                        "Keep a signed claim inventory and termination reconciliation schedule",
-                        "Exclude new unrelated claims and ordinary baseline provider collections",
-                    ],
-                    [
-                        "Liability allocation matches actual control over preventable failures",
-                        "State cap mechanics, negotiated exceptions, indemnities, and insurance requirements",
-                        "Preserve incident records, source-data representations, and submission audit evidence",
-                        "Review state enforceability and avoid sweeping unsupported immunity language",
-                    ],
-                    [
-                        "Dispute resolution separates service disputes from statutory IDR",
-                        "Specify governing law, venue, notice, cure, and selected dispute process",
-                        "Retain contract notices and documented attempts to resolve disagreements",
-                        "Continue deadline-preserving transition duties during a commercial fee dispute",
-                    ],
-                    [
-                        "Data and intellectual property clauses preserve usable exit rights",
-                        "Separate provider records from reusable tools and restrict secondary uses",
-                        "Maintain export formats, retention schedules, and subcontractor deletion commitments",
-                        "Provide necessary matter records while documenting lawful retention exceptions",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Operate versioned calendars, defensible submissions, and cash controls",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Play 8, deadline control, implements distinct clocks instead "
-                    "of one generic thirty-day task. Under the baseline federal "
-                    "process, a party generally initiates open negotiation within "
-                    "30 business days after receiving the initial payment or "
-                    "denial. The open-negotiation period then lasts 30 business "
-                    "days; federal IDR generally must be initiated within four "
-                    "business days after that period ends. The four-day window "
-                    "is not a universal entity-selection or batching deadline. "
-                    "Record receipt evidence, negotiation delivery, calendar "
-                    "definitions, holidays, portal acknowledgments, and any "
-                    "authorized extension. Implement the clock in a versioned "
-                    "state machine with a second-person check rather than "
-                    "trusting a spreadsheet formula copied between jurisdictions. "
-                    "The 90-calendar-day cooling-off restriction concerns the "
-                    "initiating party bringing subsequent disputes involving "
-                    "the same other party and same or similar items or "
-                    "services after a determination; it is not a blanket "
-                    "ninety-day suspension of all payer work. The statute "
-                    "also provides a subsequent initiation opportunity for "
-                    "affected claims. Maintain a linked cooling-off register "
-                    "and calculate the applicable post-period window. Check "
-                    "current regulations, controlling court orders, and CMS "
-                    "implementation instructions before relying on operational "
-                    "batching criteria or portal procedures. Store the version "
-                    "used, because a historically correct workflow can become "
-                    "wrong after an implementation change."
-                ),
-                (
-                    "Play 9, evidence construction, distinguishes permissible "
-                    "claim-specific support from prohibited arbitration inputs. "
-                    "The statute directs consideration of the QPA and specified "
-                    "additional information, while excluding usual and customary "
-                    "charges, billed charges, and public-program reimbursement "
-                    "rates as payment determinants. Do not instruct a brief "
-                    "builder to multiply a FAIR Health charge percentile "
-                    "and present the result as a permissible federal IDR "
-                    "valuation. Identify the licensed dataset, its actual "
-                    "measure, the evidentiary proposition, and whether that "
-                    "use is permissible before including any benchmark. "
-                    "Clinical acuity, patient complexity, training, facility "
-                    "characteristics, and documented contracting efforts need "
-                    "claim-specific support and careful treatment of information "
-                    "already reflected in the QPA. CARC and RARC values help "
-                    "classify remittances but cannot prove jurisdiction, "
-                    "clinical complexity, or an incorrect QPA independently. "
-                    "Use templates to assemble exhibits, then require a "
-                    "qualified reviewer to verify every assertion and source. "
-                    "For batching, evaluate the operative statutory and "
-                    "regulatory conditions, including relevant party, service, "
-                    "coding, and service-period requirements, rather than "
-                    "assuming one payer name makes all claims compatible. "
-                    "When compatibility is uncertain, split supported cases "
-                    "or obtain clarification before filing. A cheaper "
-                    "aggregate submission is expensive if dismissal destroys "
-                    "its expected recovery and consumes unrecoverable fees."
-                ),
-                (
-                    "Play 10, cash reconciliation, tracks submitted offer, "
-                    "determination, payment due date, actual receipt, fee "
-                    "refund, and recoupment as different ledger events. "
-                    "The federal statute generally requires payment within "
-                    "30 calendar days after the determination; an overdue "
-                    "award belongs in a documented collection escalation, "
-                    "not in cash revenue. The administrative fee is "
-                    "nonrefundable. In an ordinary completed determination, "
-                    "the prevailing party's advanced entity fee is generally "
-                    "returned while the nonprevailing party bears that "
-                    "fee. Dismissals, withdrawals, settlements, and eligibility "
-                    "failures require the applicable fee terms and current "
-                    "instructions; do not assume a refund merely because "
-                    "the merits were never reached. Budget ineligible "
-                    "dismissals as potential entity-fee forfeitures. The "
-                    "canonical annual bridge remains $110,000 revenue less "
-                    "$77,000 total operator expense equals $33,000 owner "
-                    "profit; $505,000 less $287,850 equals $217,150; and "
-                    "$900,000 less $396,000 equals $504,000. These are "
-                    "30%, 43.0%, and 56% margins with teams of 1 FT "
-                    "plus 2 C, 1 FT plus 2 C, and 2 FT plus 3 C. "
-                    "At an illustrative 25% fee, those revenues require "
-                    "$440,000, $2,020,000, and $3,600,000 of net "
-                    "incremental collected fee bases. Neither favorable "
-                    "offer statistics nor pending awards establish those "
-                    "cash volumes; report both collection delays and "
-                    "unrecovered case costs explicitly."
-                ),
-            ],
-            "table": {
-                "caption": "Federal workflow controls and Formula v2.0 cash reconciliation",
-                "headers": [
-                    "Control point and operating purpose",
-                    "Required event or calculation",
-                    "Artifact proving the decision",
-                    "Failure treatment and recovery protection",
-                ],
-                "rows": [
-                    [
-                        "Initial remittance establishes intake timing and baseline collections",
-                        "Record actual receipt and distinguish payment from QPA disclosure",
-                        "Preserve the ERA, remittance advice, and receipt evidence",
-                        "Resolve missing baseline evidence before calculating any contingency invoice",
-                    ],
-                    [
-                        "Open negotiation starts and ends on separate documented dates",
-                        "Calculate initiation eligibility and the thirty-business-day negotiation period independently",
-                        "Store notice content, delivery evidence, and business-day calendar version",
-                        "Escalate disputed delivery promptly without inventing a replacement start",
-                    ],
-                    [
-                        "Federal initiation follows the applicable four-business-day filing window",
-                        "Submit after negotiation ends within the operative initiation period",
-                        "Retain portal acknowledgment and the exact submitted claim inventory",
-                        "Document authorized extensions rather than assuming portal downtime excuses lateness",
-                    ],
-                    [
-                        "Batching and cooling-off controls prevent avoidable eligibility losses",
-                        "Apply current party, service, timing, and restriction criteria separately",
-                        "Maintain rule-version notes and linked prior determination identifiers",
-                        "Separate incompatible claims and reserve funds for unrecoverable charges",
-                    ],
-                    [
-                        "Conservative case reconciles earned revenue to owner profit",
-                        "$110,000 earned revenue minus $77,000 expense equals $33,000 profit",
-                        "Thirty percent margin supported by one employee and two contractors",
-                        "At 25% fees, require $440,000 net collected recovery basis",
-                    ],
-                    [
-                        "Base case reconciles earned revenue to owner profit",
-                        "$505,000 earned revenue minus $287,850 expense equals $217,150 profit",
-                        "Forty-three percent margin supported by one employee and two contractors",
-                        "At 25% fees, require $2,020,000 net collected recovery basis",
-                    ],
-                    [
-                        "Scaled case reconciles earned revenue to owner profit",
-                        "$900,000 earned revenue minus $396,000 expense equals $504,000 profit",
-                        "Fifty-six percent margin supported by two employees and three contractors",
-                        "At 25% fees, require $3,600,000 net collected recovery basis",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect recovery value before optimizing filing throughput",
-                "body": (
-                    "The best operational advantage is a clean jurisdiction file, "
-                    "a provable clock, a supported offer, and a reconciled receipt."
-                ),
-                "items": [
-                    "Keep a payer-product funding evidence library, but revalidate each claim's product and service date before reusing a routing conclusion.",
-                    "Capture negotiation delivery evidence separately from portal filing receipts; one proves negotiation timing and the other proves initiation.",
-                    "Maintain a prohibition filter for billed-charge, usual-and-customary, and public-program rate arguments before a reviewer signs the brief.",
-                    "Reconcile entity-fee refunds against the original cost ledger before issuing the final contingency true-up or closing the matter.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Establish authority and route",
-                    "action": "Confirm provider authorization, privacy agreements, jurisdiction, and licensing scope.",
-                    "detail": "Attach the service facts, plan evidence, signed agreements, and responsible reviewer to the claim record before substantive processing.",
-                },
-                {
-                    "step": 2,
-                    "title": "Calculate clocks and cost exposure",
-                    "action": "Record receipt events, negotiation dates, filing windows, and relevant restrictions.",
-                    "detail": "Use the operative rule version and a second reviewer; document who funds each charge and what happens if eligibility fails.",
-                },
-                {
-                    "step": 3,
-                    "title": "Submit supported eligible matters",
-                    "action": "Verify batch compatibility, permitted evidence, settlement authority, and portal receipts.",
-                    "detail": "Remove unsupported valuation arguments, retain source exhibits, and preserve an immutable copy of the submitted offer and attachments.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile collected cash and true-ups",
-                    "action": "Match receipts and refunds to claims before calculating earned contingency fees.",
-                    "detail": "Subtract the actual baseline and agreed unrecovered costs, process recoupments consistently, and reconcile operator revenue to the profit ledger.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Use lawful outbound infrastructure and exact provider discovery language",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Play 11 is multi_inbox_free_workspace_outbound_clusters, the "
-                    "mapped TRACK_2 outbound infrastructure play. Its proposed "
-                    "capacity math is straightforward: 300 authorized inboxes "
-                    "sending 15 to 25 messages across 20 working days produce "
-                    "90,000 to 150,000 attempted messages monthly. At retail "
-                    "prices of $6 to $12 per seat, 300 seats cost $1,800 "
-                    "to $3,600 monthly before domains and relay charges. "
-                    "Subsidized Microsoft 365 developer or partner accounts "
-                    "may be used only when actual eligibility and product "
-                    "terms expressly permit the intended production sending; "
-                    "free access is not assumed. Cloudflare Email Routing "
-                    "handles forwarding, not a substitute outbound SMTP "
-                    "service. Use a relay that explicitly permits the "
-                    "campaign type and configure sender authentication. "
-                    "Keeping two or three domains per legitimately provisioned "
-                    "tenant is a management limit, not permission to evade "
-                    "provider restrictions. Remove open and click pixels, "
-                    "centralize suppression, and verify address quality "
-                    "through an authorized service. SMTP catch-all responses "
-                    "cannot certify every mailbox or guarantee delivery. "
-                    "Maintain standby domains only for approved continuity "
-                    "with stable identity and suppression, never to evade "
-                    "blocks. If subsidies or acceptable-use terms fail, "
-                    "reduce volume and purchase permitted service. No "
-                    "inbox-count formula establishes primary-folder placement, "
-                    "positive replies, or collected recovery revenue."
-                ),
-                (
-                    "CAN-SPAM, 15 U.S.C. § 7704, applies to commercial "
-                    "business-to-business email as well as consumer campaigns. "
-                    "Use accurate headers, a nondeceptive subject, the "
-                    "required advertising identification, a valid postal "
-                    "address, and a working opt-out; honor requests within "
-                    "ten business days and suppress them across every "
-                    "sending identity. Retain the suppression record rather "
-                    "than reimporting an opted-out address from another "
-                    "vendor. Outsourcing the send does not eliminate the "
-                    "advertiser's responsibilities. Address verification is "
-                    "a deliverability control, not recipient permission. "
-                    "Do not use harvested lists obtained through prohibited "
-                    "methods or buy lists whose provenance cannot be "
-                    "explained. For phone discovery, distinguish manual "
-                    "calls from automated dialing, prerecorded messages, "
-                    "and texts; evaluate 47 U.S.C. § 227, implementing "
-                    "FCC rules, applicable state restrictions, and the "
-                    "recipient's number type before selecting a channel. "
-                    "A practice manager's mobile number is not automatically "
-                    "an unrestricted business line. Avoid patient-facing "
-                    "solicitations and never put patient identifiers in "
-                    "outreach. Campaign economics must include verification, "
-                    "domains, permitted mail service, suppression operations, "
-                    "and staff review, not merely seat savings. If "
-                    "150,000 attempted messages yield an illustrative "
-                    "0.2% positive response rate, that is 300 responses, "
-                    "not 300 qualified practices or engagements. Scale "
-                    "only after measuring legitimate opportunities and "
-                    "staff capacity."
-                ),
-                (
-                    "Play 12, discovery and handoff, converts a response "
-                    "into a bounded eligibility conversation, not an "
-                    "award prediction. Use this opening verbatim: "
-                    "'We help provider groups evaluate eligible "
-                    "out-of-network payment disputes and administer "
-                    "authorized recovery work. We charge an agreed "
-                    "share of incremental cash actually collected "
-                    "after specified unrecovered fees and case costs. "
-                    "Could we discuss your specialty, service states, "
-                    "payer products, and current dispute workflow "
-                    "without sharing patient information?' Then ask: "
-                    "'Who owns your initial-payment records, open-negotiation "
-                    "calendar, and settlement authority, and how do "
-                    "you distinguish self-funded plans from insured "
-                    "products?' Explain the handoff directly: 'Please "
-                    "do not email patient records. If the scope "
-                    "fits, we will execute the services agreement "
-                    "and business associate agreement, then provide "
-                    "the controlled intake method.' For outcome "
-                    "questions, say: 'We can model eligibility, "
-                    "costs, and collection timing after reviewing "
-                    "the records; a favorable determination and "
-                    "actual payment are separate events.' End "
-                    "with a specific next action: 'May we "
-                    "schedule twenty minutes with your revenue-cycle "
-                    "owner and review aggregate claim counts "
-                    "first?' Record objections and exclusions in "
-                    "the CRM, never diagnoses or member identifiers. "
-                    "If the prospect declines, acknowledge the "
-                    "request and suppress further promotional contact "
-                    "across the cluster."
-                ),
-            ],
-            "table": {
-                "caption": "Verbatim outreach and discovery scripts with operating boundaries",
-                "headers": [
-                    "Situation and intended recipient",
-                    "Exact script for the operator",
-                    "Required execution detail or evidence",
-                    "Stop condition and practical fallback",
-                ],
-                "rows": [
-                    [
-                        "Initial email to a published practice business contact",
-                        "Commercial outreach: We help provider groups assess eligible out-of-network payment disputes. Would a short, patient-free workflow discussion be useful?",
-                        "Append the verified business identity, valid postal address, and opt-out method",
-                        "Do not send until sender identity and suppression checks pass",
-                    ],
-                    [
-                        "Closing line offering an immediate promotional email opt-out",
-                        "To stop promotional email from our business, reply stop; we will remove your address from every campaign.",
-                        "Process replies centrally and complete suppression within ten business days",
-                        "Never rotate domains or vendors to recontact suppressed recipients",
-                    ],
-                    [
-                        "Discovery question establishing jurisdiction and operational record ownership",
-                        "Which service states, specialties, plan funding types, and initial-payment records can your revenue-cycle team document without sharing patient information today?",
-                        "Record aggregate scope facts and identify the responsible provider contact",
-                        "Defer claim-level analysis until authorized protected intake is established",
-                    ],
-                    [
-                        "Fee explanation before negotiating the services agreement",
-                        "Our agreed percentage applies only to incremental cash collected after specified unrecovered filing charges and casework costs, not baseline payments.",
-                        "Provide a numerical example and written cost-allocation schedule",
-                        "Resolve ambiguous baseline definitions before presenting an executable agreement",
-                    ],
-                    [
-                        "Response when asked to promise an arbitration outcome",
-                        "We evaluate eligibility and evidence first; a favorable determination still requires payment reconciliation before our cash-triggered fee is earned.",
-                        "Separate eligible cases, favorable determinations, and realized receipts in reporting",
-                        "Decline unsupported recovery percentages and offer a bounded diagnostic",
-                    ],
-                    [
-                        "Handoff when a prospect offers to email clinical records",
-                        "Please do not send patient records by ordinary email; we will arrange the signed agreements and controlled intake method first.",
-                        "Verify privacy agreements and approved transfer access before receiving records",
-                        "Restrict accidental attachments and follow the documented incident process",
-                    ],
-                    [
-                        "Manual discovery call to an appropriate published business line",
-                        "This is a business call about provider payment recovery. Are you the right person for a brief, patient-free discussion?",
-                        "Apply relevant calling restrictions and record any contact preference",
-                        "End the solicitation when declined and update centralized suppression",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "The recoverable asset is eligible incremental cash, not a large bill, "
-        "a favorable statistic, or an unpaid award."
-    ),
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Build a jurisdiction worksheet capturing service category, network status, funding evidence, specified state law, and the documented federal or state route.",
-        "Execute provider authorization, the services agreement, and HIPAA business associate agreements before protected intake or representative portal activity.",
-        "Attach the cash-based contingency waterfall, cost-allocation schedule, worked example, recoupment treatment, and termination claim inventory to the contract.",
-        "Version the federal deadline state machine and independently verify negotiation timing, initiation windows, batch compatibility, and cooling-off restrictions.",
-        "Configure permitted outbound accounts with authenticated identity, centralized opt-outs, no tracking pixels, and a strict separation from protected-record systems.",
-        "Reconcile all three canonical revenue and profit scenarios against actual incremental collections, unrecovered charges, casework expenses, and operator overhead.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "42 U.S.C. § 300gg-111 — Preventing surprise medical bills",
-            "url": "https://www.law.cornell.edu/uscode/text/42/300gg-111",
-            "relevance": (
-                "Establishes the core federal payment-dispute framework, negotiation "
-                "and initiation periods, permissible arbitration considerations, "
-                "batching provisions, cooling-off restrictions, and payment timing."
-            ),
-        },
-        {
-            "title": "45 CFR § 149.510 — Independent dispute resolution process",
-            "url": "https://www.ecfr.gov/current/title-45/section-149.510",
-            "relevance": (
-                "Supplies federal IDR operating requirements; apply the operative "
-                "provisions together with controlling court orders and current "
-                "implementation instructions."
-            ),
-        },
-        {
-            "title": "42 U.S.C. § 300gg-112 — Air ambulance services",
-            "url": "https://www.law.cornell.edu/uscode/text/42/300gg-112",
-            "relevance": (
-                "Provides the distinct statutory framework for covered "
-                "nonparticipating air ambulance payment disputes."
-            ),
-        },
-        {
-            "title": "29 U.S.C. § 1144 — ERISA preemption",
-            "url": "https://www.law.cornell.edu/uscode/text/29/1144",
-            "relevance": (
-                "Informs funding and state-law analysis without replacing "
-                "claim-specific review of service coverage and applicable payment rules."
-            ),
-        },
-        {
-            "title": "45 CFR § 164.504(e) — Business associate contracts",
-            "url": "https://www.ecfr.gov/current/title-45/section-164.504",
-            "relevance": (
-                "Requires appropriate contractual protections for business "
-                "associates and relevant downstream protected-information handling."
-            ),
-        },
-        {
-            "title": "45 CFR § 164.502 — Uses, disclosures, and minimum necessary",
-            "url": "https://www.ecfr.gov/current/title-45/section-164.502",
-            "relevance": (
-                "Supports limits on protected-information use, disclosure, "
-                "and minimum-necessary access where applicable."
-            ),
-        },
-        {
-            "title": "45 CFR § 164.308 — Administrative safeguards",
-            "url": "https://www.ecfr.gov/current/title-45/section-164.308",
-            "relevance": (
-                "Supports risk analysis, workforce access management, "
-                "security incident procedures, and related administrative controls."
-            ),
-        },
-        {
-            "title": "45 CFR § 164.312 — Technical safeguards",
-            "url": "https://www.ecfr.gov/current/title-45/section-164.312",
-            "relevance": (
-                "Addresses access controls, audit controls, integrity, "
-                "authentication, and transmission security for electronic records."
-            ),
-        },
-        {
-            "title": "42 CFR Part 2 — Substance use disorder patient records",
-            "url": "https://www.ecfr.gov/current/title-42/chapter-I/subchapter-A/part-2",
-            "relevance": (
-                "Requires separate evaluation of restrictions affecting "
-                "covered substance-use-disorder records before intake or disclosure."
-            ),
-        },
-        {
-            "title": "42 U.S.C. § 1320a-7b(b) — Healthcare program remuneration restrictions",
-            "url": "https://www.law.cornell.edu/uscode/text/42/1320a-7b",
-            "relevance": (
-                "Requires scrutiny of remuneration connected to federal "
-                "healthcare program referrals and related business."
-            ),
-        },
-        {
-            "title": "New York Financial Services Law § 603 — Surprise-billing definitions",
-            "url": "https://www.nysenate.gov/legislation/laws/FIS/603",
-            "relevance": (
-                "Defines terms relevant to New York's state "
-                "surprise-billing dispute framework and coverage screening."
-            ),
-        },
-        {
-            "title": "Texas Insurance Code Chapter 1467 — Out-of-network claim dispute resolution",
-            "url": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.1467.htm",
-            "relevance": (
-                "Provides Texas procedures requiring a separate coverage "
-                "and pathway assessment rather than automatic federal filing."
-            ),
-        },
-        {
-            "title": "Florida Statutes § 559.553 — Commercial collection agency registration",
-            "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0559/Sections/0559.553.html",
-            "relevance": (
-                "Identifies registration requirements to evaluate when "
-                "a proposed recovery activity falls within the commercial collection regime."
-            ),
-        },
-        {
-            "title": "New York Judiciary Law § 478 — Unauthorized legal practice",
-            "url": "https://www.nysenate.gov/legislation/laws/JUD/478",
-            "relevance": (
-                "Provides a concrete state boundary for distinguishing "
-                "administrative recovery services from restricted legal practice."
-            ),
-        },
-        {
-            "title": "New York Judiciary Law § 484 — Compensation for specified legal services",
-            "url": "https://www.nysenate.gov/legislation/laws/JUD/484",
-            "relevance": (
-                "Supports review of compensated legal-service activities "
-                "that cannot be authorized solely through a provider services contract."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Commercial electronic mail requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Governs truthful commercial email identification, postal "
-                "address disclosure, opt-out mechanisms, and suppression obligations."
-            ),
-        },
-        {
-            "title": "47 U.S.C. § 227 — Telephone solicitation and automated calling restrictions",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Requires channel-specific evaluation before automated "
-                "calls, prerecorded outreach, or text campaigns."
-            ),
-        },
-        {
-            "title": "47 CFR § 64.1200 — Telephone solicitation implementing rules",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": (
-                "Supplies implementing restrictions and operational "
-                "requirements relevant to calling technology, recipients, and contact preferences."
-            ),
-        },
-    ],
-}
+CHAPTER_9 = {'id': 'Q9',
+ 'chapter_id': 'Q9',
+ 'chapter_number': 9,
+ 'question_number': 9,
+ 'slug': 'superbills-oon-benefits-patient-submitted-reimbursement',
+ 'question_prompt': 'How do cash-pay and out-of-network practices use superbills, benefit verification, '
+                    'and patient cost-sharing math to drive patient reimbursement?',
+ 'kicker': 'Q9 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Superbills and OON Benefits: Patient-Submitted Reimbursement for Cash Practices',
+ 'subtitle': 'Superbill required elements, cash-package superbills, EHR claim filing vs. superbills, '
+             'patient claim forms, coinsurance plus balance billing, allowed amounts, FAIR Health cost '
+             'estimates, client self-service benefit verification, eligibility checks, and copay, '
+             'coinsurance, and deductible calculations',
+ 'layout_template': 'tool_resource_directory',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Cash and out-of-network practitioners agree on a two-track model. Collect the full '
+                      'fee at the visit. Then either hand over a superbill for patient self-claims, or '
+                      'courtesy-bill the payer with assignment declined so reimbursement flows to the '
+                      'patient. The working math is a separate out-of-network deductible, an allowed '
+                      'amount often set below the fee, and a reimbursement rate commonly reported at 50 to '
+                      '80 percent. Street mechanics include SimplePractice and Jane auto-generated '
+                      'superbills, a single per-CPT fee schedule with line-item discounts for packages, '
+                      'NPI-first payer calls, and embedded benefit checkers such as Reimbursify and '
+                      'Mentaya at $29 a month. The practitioners split on quoting benefits. Jarod Carter '
+                      'refuses to quote benefits to patients because the practice gets blamed when claims '
+                      'deny. Alicia Murray and Reimbursify put real-time benefit checks directly on the '
+                      'website to drive conversion.',
+ 'key_metrics': [{'label': 'Out-of-network full-charge billing vs self-pay rate',
+                  'metric': 'Out-of-network full-charge billing vs self-pay rate',
+                  'value': 'About $220 per visit billed out-of-network vs a self-pay rate of about $179',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'A Carter coaching client sends full charges to a couple of popular payers '
+                             'and gets the full amount back, beating their discounted self-pay rate.',
+                  'source': 'Jarod Carter ([cA7tBJf4KyY @ 00:06:06])'},
+                 {'label': 'Balance-billing patient responsibility',
+                  'metric': 'Balance-billing patient responsibility',
+                  'value': '$185 total ($35 coinsurance plus $150 balance bill)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'A $250 hourly charge against a $100 out-of-network allowed amount at 35 '
+                             'percent coinsurance, with assignment not accepted.',
+                  'source': 'The Private Practice Outsider ([TNKYk9V0ty8 @ 00:01:58])'},
+                 {'label': 'Allowed amount on a real self-filed claim',
+                  'metric': 'Allowed amount on a real self-filed claim',
+                  'value': '$167 allowed on a $185 appointment',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The Reimbursify host filed out-of-network claims for their own family on a '
+                             'small-business plan and saw allowed amounts close to the charge.',
+                  'source': 'Reimbursify ([of48SgwvfiI @ 00:06:50])'},
+                 {'label': 'Website benefits checker cost',
+                  'metric': 'Website benefits checker cost',
+                  'value': '$29 per month after a free month',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Murray pays for the Mentaya benefits checker embedded on the practice fees '
+                             'page, with a schedule-now button underneath.',
+                  'source': 'Alicia Murray | The Therapist HQ \U0001faa9 ([eXrZnEwRRH4 @ 00:23:09])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator on this beat runs the same fork in the road. Jarod Carter '
+                              'lays out two paths for any cash or out-of-network shop. The first is to '
+                              'hand over a superbill at or after the visit and let the patient file '
+                              'self-claims. The second is to bill the payer out-of-network on the '
+                              "patient's behalf, a route most common in practices that dropped contracts "
+                              'but kept a billing department [cA7tBJf4KyY @ 00:02:21]. Kym Tolson frames '
+                              'the identical split as superbill versus courtesy billing. Tolson stresses '
+                              'that either way the practice collects its full self-pay rate, and the '
+                              "insurer's check lands with the client, not the clinician [FpNL1YIlvD0 @ "
+                              '00:00:17]. Alicia Murray runs a fully virtual, fully private-pay group that '
+                              'does complimentary billing. Murray calls the superbill route the very '
+                              'low-lift option, where the clinician just sends the document and the client '
+                              'carries the rest [eXrZnEwRRH4 @ 00:08:13]. Lisa at Craft Your Practice '
+                              'compresses the doctrine into two rules. The client, not the practice, files '
+                              'the claim. Any money that comes back goes to the client, because the '
+                              'practice was already paid [tkUfu8WA56U @ 00:02:24]. The baseline '
+                              'prerequisite is therefore cash in hand at the time of service. '
+                              "Reimbursement is the patient's side transaction, not practice revenue.",
+                              'The superbill itself is where consensus gets granular. Dr. Marie Fang of '
+                              'Private Practice Skills lists the non-negotiables payers require to make '
+                              "sure 'you are who you say you are': provider name, address and phone, tax "
+                              'ID, NPI and license number. On the client side Fang lists name, birth date '
+                              'and ICD-10 code, plus an itemized list with date of service, CPT code, '
+                              'description and fee. Fang adds a place-of-service code, a paid-in-full '
+                              'statement that this is not a bill, and a signature [HqCQhe8wbVM @ '
+                              '00:03:11]. Lisa at Craft Your Practice warns that a missing field is the '
+                              'most common reason a client submission bounces back. Lisa tells clinicians '
+                              'to print an EIN instead of a Social Security number, and flags telehealth '
+                              'place-of-service codes because plans do check [tkUfu8WA56U @ 00:05:12]. Dr. '
+                              'Lauren Baker adds that a superbill without a paid column needs a separate '
+                              'receipt proving payment before reimbursement happens [zsaby8gJNmg @ '
+                              "00:04:43]. Jarod Carter's hard rule sits underneath all of it: one fee "
+                              'schedule, with the same charge per CPT code for every patient. Mobile '
+                              'visits get priced up through a convenience fee or travel surcharge rather '
+                              'than inflated codes [cA7tBJf4KyY @ 00:07:01]. Patients may not like that '
+                              'the surcharge goes unreimbursed. Carter calls that simply part of the '
+                              'convenience being sold.',
+                              'On the money, the practitioners converge on one sobering formula. Lisa at '
+                              'Craft Your Practice explains that out-of-network benefits usually carry '
+                              'their own deductible, often higher than the in-network one, and nothing '
+                              'comes back until it is met. After that, the plan pays a percentage, '
+                              'commonly fifty to seventy percent, of an allowed amount the plan sets, '
+                              "often well below the fee. In Lisa's example, a $150 session with a $100 "
+                              'allowed amount at sixty percent returns $60, for a real cost of $90 '
+                              '[tkUfu8WA56U @ 00:03:58]. Jasmine at Inlera University defines the allowed '
+                              "amount as the payer's fee schedule filtered through the patient's own "
+                              'benefit plan. A service listed on the fee schedule still pays nothing if '
+                              'the plan excludes it [3JOMCnMqhvI @ 00:01:27]. Nate Page reports clients '
+                              'getting fifty percent, many getting sixty to eighty percent, and some '
+                              'getting one hundred percent back. Page runs a 30 percent coinsurance '
+                              'example where a $200 session nets $140 back and $60 out of pocket '
+                              '[rdwGJdKffpI @ 00:04:16]. The Reimbursify office-hours host adds a '
+                              'deductible detail. The same dollars apply to both the individual and family '
+                              'out-of-network deductibles, and benefits kick in once either one is met '
+                              '[of48SgwvfiI @ 00:01:10].'],
+               'table': {'caption': 'Where cash and out-of-network practitioners line up on superbill '
+                                    'fundamentals',
+                         'headers': ['Consensus Point',
+                                     'Operator Practice',
+                                     'Why It Holds',
+                                     'Expert Source'],
+                         'rows': [['Two billing paths exist for every cash practice',
+                                   'Hand over a superbill for self-claims or bill the payer out-of-network '
+                                   "on the patient's behalf",
+                                   'The superbill route carries the lowest administrative burden for '
+                                   'cash-based shops',
+                                   'Jarod Carter ([cA7tBJf4KyY @ 00:02:21])'],
+                                  ['Full fee is collected at the time of service',
+                                   'Collect the full self-pay rate whether issuing a superbill or a '
+                                   'courtesy claim',
+                                   'The practice has nothing to do with what the insurer later reimburses',
+                                   'Kym Tolson The Traveling Therapist ([FpNL1YIlvD0 @ 00:00:35])'],
+                                  ['Reimbursement checks must go to the client',
+                                   'Decline assignment and leave the remit-payment-to-provider box blank '
+                                   'on out-of-network claims',
+                                   'The client already paid in full, so the insurer check belongs to them',
+                                   'Alicia Murray | The Therapist HQ \U0001faa9 ([eXrZnEwRRH4 @ '
+                                   '00:09:14])'],
+                                  ['Superbill fields must be complete and identifying',
+                                   'Include tax ID, NPI, license, ICD-10, CPT, place of service, fees and '
+                                   'signature',
+                                   'Payers demand identity details on every superbill to screen out '
+                                   'potential insurance fraud',
+                                   'Private Practice Skills ([HqCQhe8wbVM @ 00:03:11])'],
+                                  ['One fee schedule governs every superbill issued',
+                                   'Keep the same charge per CPT code for every patient, clinic or mobile',
+                                   'Mobile premiums belong in a separate convenience or travel surcharge '
+                                   'line instead',
+                                   'Jarod Carter ([cA7tBJf4KyY @ 00:07:01])'],
+                                  ['The out-of-network deductible gates every dollar back',
+                                   'Treat the out-of-network deductible as separate, often higher, and '
+                                   'payable first',
+                                   'Until it is met, the real session cost equals the full fee charged',
+                                   'Craft Your Practice ([tkUfu8WA56U @ 00:03:09])'],
+                                  ['The allowed amount differs from the payer fee schedule',
+                                   'Read the allowed amount as the fee schedule combined with the '
+                                   "patient's benefit plan",
+                                   'Services the plan excludes return nothing even when a fee schedule '
+                                   'lists them',
+                                   'Inlera University ([3JOMCnMqhvI @ 00:01:27])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["The software mechanics are click-level. Kym Tolson's SimplePractice "
+                              'walkthrough starts in the client record. Set billing to self-pay rather '
+                              'than insurance, then add only the payer and member ID. Open the other CMS '
+                              'claim fields and set accept assignment to No, so the insurer pays the '
+                              'client. For superbills, pick a date range and hit create superbill. The '
+                              'statement auto-fills provider NPI, license and tax ID, dates of service, a '
+                              'GT modifier on telehealth lines, diagnosis and charges, totaling $540 in '
+                              "the demo [FpNL1YIlvD0 @ 00:01:57]. Alicia Murray's Jane setup "
+                              'auto-populates a superbill after every appointment, and it takes one or two '
+                              'clicks to email it [eXrZnEwRRH4 @ 00:06:50]. Dr. Lauren Baker walks the '
+                              'patient side of a Humana claims form. Carry over CPT 97162 for the '
+                              'evaluation and 97530 with the GP modifier in 15-minute units. Use place of '
+                              'service 11 roughly 99 percent of the time. Baker charges $30 a unit, or '
+                              '$120 an hour. Baker says to leave the assignment box unsigned so the check '
+                              'goes to the patient, expect 20 to 60 days, and call around day 30 to 45 '
+                              '[zsaby8gJNmg @ 00:11:49]. Baker also insists on giving payers the NPI, not '
+                              'the EIN. Payers never locate Baker by tax ID but find the NPI instantly '
+                              '[zsaby8gJNmg @ 00:13:48].',
+                              'Package superbills are where Jarod Carter gets surgical. A purchase receipt '
+                              'cannot serve as a superbill, because nothing can be submitted for visits '
+                              'that have not happened yet. Every date of service gets its own entry. '
+                              "Carter's example is a $200 hour sold at $10 off per session in a 10-pack. "
+                              'The units still add up to the full rate, and a line-item package discount '
+                              'drops each visit to $190. Alternatively, one bottom-line discount, such as '
+                              '$10 times six dates for $60, does the same job. Carter warns that letting a '
+                              'patient submit $200 when they paid $190 would be insurance fraud '
+                              "[heiuukmxgss @ 00:04:02]. Carter's own shop charges $195 for 60 minutes and "
+                              '$125 for 30. The four hour units still total $250 on paper, and a full-hour '
+                              'session discount brings the line down to $195. Package buyers get a second, '
+                              'stacked package discount line [heiuukmxgss @ 00:06:33]. On collection, '
+                              'Carter pulls the card on file through online intake and refuses to split '
+                              'packages under four figures into payments. Payment plans must clear within '
+                              'six months of likely discharge [cA7tBJf4KyY @ 00:10:57]. One80 Physical '
+                              'Therapy also pairs discounted punch passes with payment plans, so patients '
+                              'do not pay the whole pass upfront [GVdiKSs4kvU @ 00:02:24].',
+                              'Benefit checks are increasingly self-serve. The Reimbursify host pushes '
+                              "clinicians to 'liberate yourself' from running verifications. The fix is a "
+                              'web-app button or unique link that lets prospects submit their name, '
+                              'contact and insurance details. The result drops into the practice portal as '
+                              'an unread message. The host cites a personal claim where a $185 appointment '
+                              'drew a $167 allowed amount. Across plans, the host puts allowed amounts at '
+                              'roughly 60 or 70 percent of charges up to 100 percent [of48SgwvfiI @ '
+                              "00:13:26]. Alicia Murray embeds Mentaya's checker on the fees page at $29 a "
+                              'month after a free month, with a schedule-now button directly beneath it. '
+                              'Murray notes that Mentaya and Thrizer can submit and rectify claims at no '
+                              "cost to the therapist, because the fee comes out of the client's claim "
+                              '[eXrZnEwRRH4 @ 00:23:09]. For practices that bill out-of-network without '
+                              'accepting assignment, The Private Practice Outsider runs the '
+                              'balance-billing math. A $250 charge against a $100 allowed amount at 35 '
+                              'percent coinsurance leaves the patient owing $35. Add the $150 balance '
+                              'bill, and the total is $185. Alternatively, the practice can take the $100 '
+                              'allowed amount as payment in full, collecting $35 from the patient and $65 '
+                              'from the payer [TNKYk9V0ty8 @ 00:01:58].'],
+               'table': {'caption': 'Settings, codes and dollar figures practitioners run on live '
+                                    'superbill and out-of-network workflows',
+                         'headers': ['Mechanic',
+                                     'Exact Setting or Number',
+                                     'Execution Detail',
+                                     'Expert Source'],
+                         'rows': [['SimplePractice courtesy out-of-network claim setup',
+                                   'Accept assignment set to No inside the other CMS claim fields',
+                                   'Client marked self-pay with only the payer and member ID entered',
+                                   'Kym Tolson The Traveling Therapist ([FpNL1YIlvD0 @ 00:02:12])'],
+                                  ['Physical therapy claim coding on the form',
+                                   '97162 evaluation, 97530 with GP modifier, charged at $30 per unit',
+                                   'Place of service 11 is used on roughly 99 percent of claims',
+                                   'Dr. Lauren Baker ([zsaby8gJNmg @ 00:10:19])'],
+                                  ['Mailed claim follow-up cadence and tracking',
+                                   'Payer processing typically takes 20 to 60 days before checks mail',
+                                   'Copy everything, log the mail date, then call near day 30 to 45',
+                                   'Dr. Lauren Baker ([zsaby8gJNmg @ 00:16:08])'],
+                                  ['Package discount shown as a separate line item',
+                                   '$200 full hour minus a $10 ten-pack discount bills $190',
+                                   'CPT units total the full rate before the discount line subtracts',
+                                   'Jarod Carter ([heiuukmxgss @ 00:04:46])'],
+                                  ['Half-hour versus full-hour pricing on superbills',
+                                   'Four units total $250, then full-hour discount down to $195',
+                                   'Thirty-minute sessions bill two units at the same per-code $125',
+                                   'Jarod Carter ([heiuukmxgss @ 00:06:33])'],
+                                  ['Embedded website benefits checker for conversion',
+                                   'Mentaya checker runs $29 per month after one free month',
+                                   'Schedule-now button sits directly beneath the embedded benefits widget',
+                                   'Alicia Murray | The Therapist HQ \U0001faa9 ([eXrZnEwRRH4 @ '
+                                   '00:23:09])'],
+                                  ['Balance billing when assignment is not accepted',
+                                   '$250 charge, $100 allowed, 35 percent coinsurance yields $185 owed',
+                                   'Alternatively accept the $100 allowed amount as full payment instead',
+                                   'The Private Practice Outsider ([TNKYk9V0ty8 @ 00:01:58])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small superbill moves that keep reimbursement flowing',
+                           'body': 'Field-tested details from practitioners who submit, chase and price '
+                                   'out-of-network claims every week.',
+                           'items': ['Give payers the NPI first, not just the EIN: Baker says insurers '
+                                     'never locate an out-of-network provider by tax ID but find the NPI '
+                                     'immediately, and a dropped NPI is the usual reason a claim stalls '
+                                     '[Dr. Lauren Baker — zsaby8gJNmg @ 00:13:48]',
+                                     "In Murray's experience, an adjustment disorder on its own does not "
+                                     'get reimbursed out-of-network, so a secondary diagnosis is needed. A '
+                                     'payer asking for a W-9 on a first out-of-network claim is routine '
+                                     'admin, not a trap [Alicia Murray | The Therapist HQ \U0001faa9 — '
+                                     'eXrZnEwRRH4 @ 00:26:08]',
+                                     'Plans can cap member submission windows at as little as ninety days, '
+                                     'so issue superbills monthly or have the software send them '
+                                     'automatically rather than letting clients hoard six months of '
+                                     'paperwork [Craft Your Practice — tkUfu8WA56U @ 00:09:32]',
+                                     'Before dropping a contract, check what that payer actually pays '
+                                     'out-of-network: a Carter coaching client collects about $220 a visit '
+                                     'billing full charges, against a self-pay rate of about $179 [Jarod '
+                                     'Carter — cA7tBJf4KyY @ 00:05:52]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Front-load the benefit questions',
+                              'action': 'Put the four insurer questions into the intake email or a short '
+                                        'handout before the first session.',
+                              'detail': 'Clients should ask four things. Do I have out-of-network '
+                                        'benefits? What is my out-of-network deductible, and how much is '
+                                        'met? What percentage of which allowed amount do you reimburse? '
+                                        'How do I submit, and is there a deadline? Then run the arithmetic '
+                                        'with the client once [Craft Your Practice — tkUfu8WA56U @ '
+                                        '00:07:08]'},
+                             {'step': 2,
+                              'title': 'Capture the card on file at intake',
+                              'action': 'Build a card-on-file page into the online intake paperwork and '
+                                        'charge after the session ends.',
+                              'detail': 'Carter avoids ending the hour with a painful card swipe. Staff '
+                                        'tell the patient the admin will bill the card on file at the end '
+                                        'of the day, and the card is collected through the intake link '
+                                        '[Jarod Carter — cA7tBJf4KyY @ 00:10:00]'},
+                             {'step': 3,
+                              'title': 'Configure the EHR for out-of-network output',
+                              'action': 'Set the client to self-pay, add the payer and member ID, and set '
+                                        'accept assignment to No.',
+                              'detail': 'With assignment set to No, the payer sends the money to the '
+                                        'client. Use the date-range create-superbill function to auto-fill '
+                                        'NPI, license, tax ID, codes, modifiers and charges [Kym Tolson '
+                                        'The Traveling Therapist — FpNL1YIlvD0 @ 00:01:23]'},
+                             {'step': 4,
+                              'title': 'Line-item every discount against full CPT charges',
+                              'action': 'Keep per-CPT charges identical on every superbill and subtract '
+                                        'package or session discounts as separate lines.',
+                              'detail': 'Use a per-date-of-service discount line, or one bottom-line '
+                                        'discount multiplied by the number of dates. The total must match '
+                                        'what the patient actually paid [Jarod Carter — heiuukmxgss @ '
+                                        '00:04:32]'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The first split is who files. Jarod Carter calls the superbill handoff the '
+                              'lowest administrative burden path and runs a cash practice that way, but '
+                              'Carter also teaches that some payers in some regions make out-of-network '
+                              'billing far more lucrative: one coaching client with a roughly $179 '
+                              'self-pay rate sends the full undiscounted bill and collects about $220 a '
+                              'visit [cA7tBJf4KyY @ 00:02:21] [cA7tBJf4KyY @ 00:06:06]. Kym Tolson '
+                              'recommends the superbill route because it is easier on the provider, and '
+                              'when courtesy-filing in SimplePractice, Tolson marks accept assignment as '
+                              'no so the check goes to the client while the practice still collects the '
+                              'full self-pay rate [FpNL1YIlvD0 @ 00:02:42]. Alicia Murray runs the '
+                              'opposite playbook across a fully out-of-network virtual group practice: '
+                              'complimentary billing, which Murray credits for visible gains in retention '
+                              'and conversion over superbills alone, at the cost of storing insurance '
+                              "cards, driver's licenses and policyholder birth dates, and eventually "
+                              'hiring a biller once claim volume exceeded what Murray could personally '
+                              'handle [eXrZnEwRRH4 @ 00:04:40] [eXrZnEwRRH4 @ 00:11:48]. The operator call '
+                              "is money versus admin: Carter's test is whether you already have a billing "
+                              "department, and Murray's is whether your bandwidth can absorb rework.",
+                              'The sharpest disagreement is whether the practice should quote benefits at '
+                              'all. Jarod Carter uses Reimbursify to pull out-of-network benefits quickly, '
+                              'yet tells superbill-only practices not to look them up for patients, '
+                              'because insurers deny claims they should pay, and when a promised 60 '
+                              'percent never arrives, the bad taste lands on your practice even with a '
+                              'signed acknowledgment; Carter hands prospects a question list instead '
+                              '[cA7tBJf4KyY @ 00:04:19] [cA7tBJf4KyY @ 00:05:00]. Reimbursify pushes the '
+                              'other way: put its web app in the corner of your website, let visitors '
+                              'submit their own name, phone, email and insurance, then share the result '
+                              'with one click and stop running verifications yourself [of48SgwvfiI @ '
+                              '00:13:26]. Alicia Murray embeds a Mentaya checker on the practice fees page '
+                              'showing deductible, amount met and reimbursement percentage, with a '
+                              'schedule-now button directly under it to strike while the iron is hot, at '
+                              '$29 a month after a free month [eXrZnEwRRH4 @ 00:14:29] [eXrZnEwRRH4 @ '
+                              '00:23:09]. Lisa of Craft Your Practice sits between the camps: script four '
+                              'questions about benefits, deductible, percentage of allowed amount, and '
+                              'submission deadline into the intake email, then do the arithmetic with the '
+                              'client once they report back [tkUfu8WA56U @ 00:07:08].',
+                              "Packaging and pricing split the room too. Jarod Carter's general rule is "
+                              'that a package under four figures is not split into payments, because the '
+                              'prepay discount exists to buy cash flow and spreading it out just hands '
+                              'away the discount for nothing; Carter would not argue against two or three '
+                              'monthly payments on two, five or ten thousand dollar packages [cA7tBJf4KyY '
+                              '@ 00:10:57]. One80 Physical Therapy goes the other way, offering payment '
+                              'plans on its punch passes so patients do not pay it all upfront, and '
+                              'pitches the pass as roughly equal to in-network costs before a deductible '
+                              'is hit, delivered in a fraction of the visits [GVdiKSs4kvU @ 00:02:24] '
+                              '[GVdiKSs4kvU @ 00:03:19]. On rate design, Carter insists on one per-CPT fee '
+                              'schedule for every patient, so mobile visits carry a separate convenience '
+                              'or travel surcharge rather than inflated code charges, while Dr. Lauren '
+                              'Baker simply prices every unit at $30, or $120 per 60 minutes, regardless '
+                              'of which code is billed [cA7tBJf4KyY @ 00:07:18] [zsaby8gJNmg @ 00:06:36]. '
+                              "Nate Page adds a sequencing rule Page's practice follows: always check "
+                              'health insurance benefits first, and only then explore sliding scale, with '
+                              'clinicians holding roughly 10 percent sliding scale or pro bono until their '
+                              'student loans are paid [rdwGJdKffpI @ 00:06:41] [rdwGJdKffpI @ 00:06:58].'],
+               'table': {'caption': 'Competing out-of-network playbooks for cash and hybrid practices',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Who files the out-of-network claim with the payer',
+                                   'Hand over a superbill and let the patient self-submit, the lowest '
+                                   'admin burden path',
+                                   'Courtesy-file in SimplePractice with accept assignment set to no so '
+                                   'payment reaches the client',
+                                   'Kym Tolson The Traveling Therapist ([FpNL1YIlvD0 @ 00:00:17]); Jarod '
+                                   'Carter ([cA7tBJf4KyY @ 00:02:21])'],
+                                  ['Whether the practice looks up patient out-of-network benefits',
+                                   'Do not quote benefits; give prospects a question list to ask their own '
+                                   'insurer',
+                                   'Embed a self-serve benefits checker on the website and share results '
+                                   'with one click',
+                                   'Jarod Carter ([cA7tBJf4KyY @ 00:05:12]); Reimbursify ([of48SgwvfiI @ '
+                                   '00:13:26])'],
+                                  ['Billing on behalf of patients versus collecting a discounted self-pay '
+                                   'rate',
+                                   'Collect the discounted self-pay rate of about $179 and hand over a '
+                                   'superbill',
+                                   'Send the full undiscounted bill out-of-network and collect about $220 '
+                                   'per visit',
+                                   'Jarod Carter ([cA7tBJf4KyY @ 00:08:40])'],
+                                  ['Splitting prepaid package payments into monthly installments',
+                                   'Packages under four figures are paid upfront because the discount '
+                                   'exists to buy cash flow',
+                                   'Punch passes come with payment plans so patients avoid paying '
+                                   'everything upfront',
+                                   'Jarod Carter ([cA7tBJf4KyY @ 00:11:11]); One80 Physical Therapy '
+                                   '([GVdiKSs4kvU @ 00:02:24])'],
+                                  ['Handling claim problems after the paperwork leaves the practice',
+                                   'Superbill-only clinician is finished once the document is handed to '
+                                   'the client',
+                                   'Practice helps rectify problems and asks clients to forward odd '
+                                   'letters or stalled checks',
+                                   'Private Practice Skills ([HqCQhe8wbVM @ 00:04:33]); Alicia Murray | '
+                                   'The Therapist HQ \U0001faa9 ([eXrZnEwRRH4 @ 00:10:39])'],
+                                  ['Who carries the complimentary billing workload day to day',
+                                   'Solo clinicians file their own claims with a solid EHR at lower claim '
+                                   'volume',
+                                   'Hire a biller or use Mentaya or Thrizer, with the cost coming out of '
+                                   'the client claim',
+                                   'Alicia Murray | The Therapist HQ \U0001faa9 ([eXrZnEwRRH4 @ 00:13:08] '
+                                   '[eXrZnEwRRH4 @ 00:23:43])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The costliest blowup practitioners report is an expectation gap, not a '
+                              'paperwork gap. Lisa at Craft Your Practice describes the pattern: providers '
+                              'guess hopeful, then three months later the client opens a letter with a '
+                              'number far smaller than expected, or zero, and the disappointment lands on '
+                              "the therapist. Lisa's math: a $150 fee, a $100 plan-set allowed amount and "
+                              'a 60 percent benefit returns $60, so the real cost is $90, and before the '
+                              'separate, often higher out-of-network deductible is met it is the full $150 '
+                              "[tkUfu8WA56U @ 00:00:54] [tkUfu8WA56U @ 00:03:58]. Reimbursify's "
+                              'verification lead reports allowed amounts ranging from about 60 or 70 '
+                              "percent of the local charge up to 100 percent, citing the presenter's own "
+                              '$185 appointment that allowed $167, with large self-insured employers such '
+                              'as universities, Apple, Google or NYU tending toward healthier allowances '
+                              '[of48SgwvfiI @ 00:07:12]. The Private Practice Outsider shows how the gap '
+                              'gets billed when assignment is not accepted: a $250 charge against a $100 '
+                              'allowed amount leaves a $150 balance bill plus 35 percent coinsurance, so '
+                              'the patient owes $185; accept the allowed amount as payment in full and you '
+                              'collect $100 total, $35 from the patient and $65 from the payer '
+                              '[TNKYk9V0ty8 @ 00:01:58] [TNKYk9V0ty8 @ 00:02:21].',
+                              'Paperwork kickbacks have specific, repeatable causes. Lisa flags a missing '
+                              'field as the most common reason a client submission bounces, and warns that '
+                              'telehealth place-of-service codes differ from the office code and plans do '
+                              "check [tkUfu8WA56U @ 00:04:45] [tkUfu8WA56U @ 00:05:35]. Jarod Carter's "
+                              'package trap: an upfront purchase receipt cannot be submitted, because '
+                              'nothing can be claimed before it occurs, and a superbill saying $200 when '
+                              'the patient paid $190 would be insurance fraud; list full per-unit charges, '
+                              "then subtract a line-item package discount, and in Carter's practice a full "
+                              'hour shows $250 in codes, a full-hour discount down to $195, then a second '
+                              '10-pack discount [heiuukmxgss @ 00:04:02] [heiuukmxgss @ 00:07:05]. Dr. '
+                              'Lauren Baker reports insurers scan the claim form but sometimes not the '
+                              'attachments, so write details out rather than relying on see-attached; '
+                              'insurers phone the provider as a fraud check; and whenever Baker gives the '
+                              'EIN, insurers cannot locate the provider, but the NPI works instantly. '
+                              "Baker's other trap: signing the payment-to-provider box sends a check meant "
+                              'for the family to the provider [zsaby8gJNmg @ 00:09:39] [zsaby8gJNmg @ '
+                              '00:13:48]. Alicia Murray adds that adjustment disorders alone have not been '
+                              'reimbursed on any plan Murray has come across [eXrZnEwRRH4 @ 00:26:08].',
+                              'Cash and time leaks come from deadlines, follow-up and expired cards. Lisa '
+                              'warns that plans give members a submission window sometimes as short as '
+                              'ninety days, so a client who hoards six months of superbills can lose some '
+                              'of them; issuing superbills monthly or auto-sending them from software '
+                              "removes that risk [tkUfu8WA56U @ 00:09:32]. Dr. Lauren Baker's family-side "
+                              'workflow assumes 20 to 60 days of processing: copy everything, keep a '
+                              'folder with a sticky note showing the mail date, and call around day 30 or '
+                              '45, because a provider NPI that was submitted but never carried forward '
+                              'happens all the time [zsaby8gJNmg @ 00:16:08] [zsaby8gJNmg @ 00:17:00]. '
+                              "Jarod Carter's collections bottleneck is the card on file: losses come "
+                              'mainly from cards expiring and not being updated, so skip payment plans '
+                              'when the balance cannot be finished within six months of likely discharge, '
+                              'though Carter says the yeses won from offering plans far outweigh those '
+                              'rare losses [cA7tBJf4KyY @ 00:12:35] [cA7tBJf4KyY @ 00:13:02]. Inlera '
+                              'University ranks phoning a live insurance rep dead last among five '
+                              'verification methods because hold times have kept growing, and tells '
+                              'billers to warn patients that any quote of benefits is only an estimate '
+                              'until the claim actually processes [XyBNgMnFz0Y @ 00:06:58] [XyBNgMnFz0Y @ '
+                              '00:07:30].'],
+               'table': {'caption': 'Firsthand out-of-network failure modes and the fixes practitioners '
+                                    'use',
+                         'headers': ['Failure Mode',
+                                     'What Happened Or Was Measured',
+                                     'Operator Fix Taught',
+                                     'Expert Source'],
+                         'rows': [['Hopeful guesses about what the plan will reimburse',
+                                   'Client opens a letter months later showing a much smaller number or '
+                                   'zero',
+                                   'Hand over the four insurer questions and run the arithmetic before '
+                                   'session one',
+                                   'Craft Your Practice ([tkUfu8WA56U @ 00:00:54])'],
+                                  ['Practice quotes benefits that the insurer later refuses to pay',
+                                   'Patient blames the practice even after signing an acknowledgment of '
+                                   'responsibility',
+                                   'Superbill-only practices give insurer questions instead of quoting '
+                                   'benefit levels',
+                                   'Jarod Carter ([cA7tBJf4KyY @ 00:04:49])'],
+                                  ['Upfront package receipt submitted as if it were a superbill',
+                                   'Receipt for a purchase covers dates that have not occurred and cannot '
+                                   'be claimed',
+                                   'Issue per-date superbills with full CPT charges and line-item package '
+                                   'discounts',
+                                   'Jarod Carter ([heiuukmxgss @ 00:01:29])'],
+                                  ['Clients hoard months of superbills before submitting anything',
+                                   'Submission windows can be as short as ninety days so some claims are '
+                                   'lost',
+                                   'Send superbills monthly or set the practice software to send them '
+                                   'automatically',
+                                   'Craft Your Practice ([tkUfu8WA56U @ 00:09:32])'],
+                                  ['Attached superbill documents vanish during insurer scanning',
+                                   'Insurers scan the claim form but sometimes skip the attached '
+                                   'supporting documents',
+                                   'Carry codes and dates onto the form itself and keep copies with mail '
+                                   'dates',
+                                   'Dr. Lauren Baker ([zsaby8gJNmg @ 00:09:39])'],
+                                  ['Adjustment disorder listed as the only diagnosis code',
+                                   'Murray has not come across a plan reimbursing it on out-of-network '
+                                   'claims',
+                                   'Diagnose a secondary condition and explain the clinical interpretation '
+                                   'to the client',
+                                   'Alicia Murray | The Therapist HQ \U0001faa9 ([eXrZnEwRRH4 @ '
+                                   '00:26:23])'],
+                                  ['Medicare patients expecting a superbill from a non-participating '
+                                   'clinic',
+                                   'Non-participating providers cannot give Medicare patients a superbill '
+                                   'to submit',
+                                   'Position monthly or six-week cash tune-up visits for prevention and '
+                                   'fall work',
+                                   'One80 Physical Therapy ([GVdiKSs4kvU @ 00:04:02])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear These Four Checks Before The First Superbill Goes Out',
+                           'body': 'Every item below comes from a kickback, a lost reimbursement, or a '
+                                   'misdirected check that practitioners hit firsthand. Run them once '
+                                   'against a test superbill and your intake paperwork before the next new '
+                                   'client starts.',
+                           'items': ['Confirm the superbill carries name and credentials, individual NPI, '
+                                     'license number, tax ID or EIN, CPT, place-of-service and diagnosis '
+                                     'codes, fee and amount paid, because a missing field is what bounces '
+                                     'submissions [Craft Your Practice — tkUfu8WA56U @ 00:05:12].',
+                                     'Confirm per-CPT charges are identical for every patient and session '
+                                     'length, with package and full-hour pricing handled through line-item '
+                                     'discounts that match what the patient actually paid [Jarod Carter — '
+                                     'heiuukmxgss @ 00:07:34].',
+                                     'Confirm the client knows a diagnosis code goes on the superbill and '
+                                     'to the plan before the first one is handed over, so the choice to '
+                                     'submit is theirs [Craft Your Practice — tkUfu8WA56U @ 00:08:22].',
+                                     'If courtesy billing, confirm accept assignment is not checked and '
+                                     'the remit-payment box is left blank so the reimbursement check goes '
+                                     'directly to the client [Alicia Murray | The Therapist HQ \U0001faa9 '
+                                     '— eXrZnEwRRH4 @ 00:09:00].']}}],
+ 'pull_quote': '"The form is the easy part. The real work is the expectation... clear and early beats '
+               'hopeful every time." — Craft Your Practice (tkUfu8WA56U @ 00:10:43)',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Put the four insurer questions on benefits, deductible met, reimbursement '
+                      'percentage of allowed amount, and submission deadline into the intake email or a '
+                      'short handout [Craft Your Practice — tkUfu8WA56U @ 00:07:33].',
+                      'Collect a card on file through the online intake paperwork and have the admin bill '
+                      'it at end of day instead of ending the session with a card swipe [Jarod Carter — '
+                      'cA7tBJf4KyY @ 00:10:00].',
+                      'For courtesy claims in SimplePractice, set the client to self-pay, add the payer '
+                      'and member ID, and set accept assignment to no in the CMS claim fields [Kym Tolson '
+                      'The Traveling Therapist — FpNL1YIlvD0 @ 00:01:57].',
+                      'Embed a benefits checker on the fees page and place a schedule-now button directly '
+                      'underneath it to book clients while the reimbursement numbers are in front of them '
+                      '[Alicia Murray | The Therapist HQ \U0001faa9 — eXrZnEwRRH4 @ 00:16:08].',
+                      'Add the place-of-service code and a clear statement that the client has paid in '
+                      'full and the document is not a bill, then sign and date each superbill [Private '
+                      'Practice Skills — HqCQhe8wbVM @ 00:04:03].',
+                      'Before dropping contracts, check what each payer actually pays on average for '
+                      'out-of-network services and bill on behalf of patients where full charges beat the '
+                      'self-pay rate [Jarod Carter — cA7tBJf4KyY @ 00:05:52].'],
+ 'statutory_citations': [{'title': 'Jarod Carter — Top 4 Out-of-Network Billing & Superbill Tips '
+                                   '[00:06:06]',
+                          'url': 'https://www.youtube.com/watch?v=cA7tBJf4KyY&t=366s',
+                          'relevance': 'Primary practitioner testimony on billing out-of-network at full '
+                                       'charges for about $220 a visit versus a $179 self-pay rate.'},
+                         {'title': 'Craft Your Practice — Superbills for Therapists: How Out-of-Network '
+                                   'Reimbursement Actually Works [00:03:36]',
+                          'url': 'https://www.youtube.com/watch?v=tkUfu8WA56U&t=216s',
+                          'relevance': 'Primary practitioner testimony on allowed-amount math that turns a '
+                                       '$150 fee into $60 back and a $90 real cost.'},
+                         {'title': 'The Private Practice Outsider — Out of Network Billing [Coinsurance '
+                                   'plus Balance Billing] Amount Explained [00:01:39]',
+                          'url': 'https://www.youtube.com/watch?v=TNKYk9V0ty8&t=99s',
+                          'relevance': 'Primary practitioner testimony on coinsurance plus balance billing '
+                                       'when assignment is not accepted.'},
+                         {'title': 'Jarod Carter — Superbill Secrets for Cash Practice Packages - '
+                                   'Out-of-Network Billing Reimbursement Tips [00:04:02]',
+                          'url': 'https://www.youtube.com/watch?v=heiuukmxgss&t=242s',
+                          'relevance': 'Primary practitioner testimony on line-item package discounts and '
+                                       'matching superbills to amounts actually paid.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'cA7tBJf4KyY',
+                       'title': 'Top 4 Out-of-Network Billing & Superbill Tips',
+                       'channel': 'Jarod Carter',
+                       'author': 'Jarod Carter',
+                       'text': 'One of my coaching clients has a self-pay rate of about 179, and there are '
+                               'a couple of popular payers that pay over two hundred dollars for actual '
+                               'charges, coming out to about 220 dollars a visit.',
+                       'tip': 'One of my coaching clients has a self-pay rate of about 179, and there are '
+                              'a couple of popular payers that pay over two hundred dollars for actual '
+                              'charges, coming out to about 220 dollars a visit.',
+                       'timestamp': 366,
+                       'timestamp_seconds': 366,
+                       'timestamp_label': '[00:06:06]',
+                       'url': 'https://www.youtube.com/watch?v=cA7tBJf4KyY&t=366s',
+                       'markdown': '[00:06:06](https://www.youtube.com/watch?v=cA7tBJf4KyY&t=366s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cA7tBJf4KyY',
+                       'title': 'Top 4 Out-of-Network Billing & Superbill Tips',
+                       'channel': 'Jarod Carter',
+                       'author': 'Jarod Carter',
+                       'text': 'As a general rule, if the package is less than four figures in cost, then '
+                               'I do not split those up into payments.',
+                       'tip': 'As a general rule, if the package is less than four figures in cost, then I '
+                              'do not split those up into payments.',
+                       'timestamp': 657,
+                       'timestamp_seconds': 657,
+                       'timestamp_label': '[00:10:57]',
+                       'url': 'https://www.youtube.com/watch?v=cA7tBJf4KyY&t=657s',
+                       'markdown': '[00:10:57](https://www.youtube.com/watch?v=cA7tBJf4KyY&t=657s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3JOMCnMqhvI',
+                       'title': 'What is the Allowed Amount? | Healthcare Medical Billing',
+                       'channel': 'Inlera University',
+                       'author': 'Inlera University',
+                       'text': "It takes a combination of the patient's benefit plan along with the "
+                               "insurance company's fee schedule, and that is what makes the allowed "
+                               'amount, so the allowed amount is not the same thing as a fee schedule.',
+                       'tip': "It takes a combination of the patient's benefit plan along with the "
+                              "insurance company's fee schedule, and that is what makes the allowed "
+                              'amount, so the allowed amount is not the same thing as a fee schedule.',
+                       'timestamp': 87,
+                       'timestamp_seconds': 87,
+                       'timestamp_label': '[00:01:27]',
+                       'url': 'https://www.youtube.com/watch?v=3JOMCnMqhvI&t=87s',
+                       'markdown': '[00:01:27](https://www.youtube.com/watch?v=3JOMCnMqhvI&t=87s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FpNL1YIlvD0',
+                       'title': 'Out Of Network Billing Via Filing Claims Through an EHR and a Superbill',
+                       'channel': 'Kym Tolson The Traveling Therapist',
+                       'author': 'Kym Tolson The Traveling Therapist',
+                       'text': 'If you select no on accept assignment, they are not going to send the '
+                               'money to you; they are going to send the money to the client.',
+                       'tip': 'If you select no on accept assignment, they are not going to send the money '
+                              'to you; they are going to send the money to the client.',
+                       'timestamp': 132,
+                       'timestamp_seconds': 132,
+                       'timestamp_label': '[00:02:12]',
+                       'url': 'https://www.youtube.com/watch?v=FpNL1YIlvD0&t=132s',
+                       'markdown': '[00:02:12](https://www.youtube.com/watch?v=FpNL1YIlvD0&t=132s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WuZrwo-Qxww',
+                       'title': 'Understand Your Medical Cost Estimate — FAIRHealthConsumer.org (Part 1)',
+                       'channel': 'FAIR Health',
+                       'author': 'FAIR Health',
+                       'text': 'You can use your estimate to manage your deductible, negotiate costs with '
+                               'your providers, or appeal a payment from your insurer.',
+                       'tip': 'You can use your estimate to manage your deductible, negotiate costs with '
+                              'your providers, or appeal a payment from your insurer.',
+                       'timestamp': 133,
+                       'timestamp_seconds': 133,
+                       'timestamp_label': '[00:02:13]',
+                       'url': 'https://www.youtube.com/watch?v=WuZrwo-Qxww&t=133s',
+                       'markdown': '[00:02:13](https://www.youtube.com/watch?v=WuZrwo-Qxww&t=133s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'of48SgwvfiI',
+                       'title': 'Benefit Verifications 101 - Let your clients check their own '
+                                'out-of-network coverage!',
+                       'channel': 'Reimbursify',
+                       'author': 'Reimbursify',
+                       'text': 'The amounts can range between maybe 60 or 70 percent of what someone is '
+                               'charging up to 100 percent of what they are charging.',
+                       'tip': 'The amounts can range between maybe 60 or 70 percent of what someone is '
+                              'charging up to 100 percent of what they are charging.',
+                       'timestamp': 410,
+                       'timestamp_seconds': 410,
+                       'timestamp_label': '[00:06:50]',
+                       'url': 'https://www.youtube.com/watch?v=of48SgwvfiI&t=410s',
+                       'markdown': '[00:06:50](https://www.youtube.com/watch?v=of48SgwvfiI&t=410s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zsaby8gJNmg',
+                       'title': 'How To Fill Out A Claims Form For Out of Network Reimbursement | PT Out '
+                                'of Network Claim',
+                       'channel': 'Dr. Lauren Baker',
+                       'author': 'Dr. Lauren Baker',
+                       'text': 'As an out-of-network provider you are absolutely going to want to have the '
+                               'NPI number, because they are never able to locate me by tax ID number, but '
+                               'with my NPI number they find me right away.',
+                       'tip': 'As an out-of-network provider you are absolutely going to want to have the '
+                              'NPI number, because they are never able to locate me by tax ID number, but '
+                              'with my NPI number they find me right away.',
+                       'timestamp': 828,
+                       'timestamp_seconds': 828,
+                       'timestamp_label': '[00:13:48]',
+                       'url': 'https://www.youtube.com/watch?v=zsaby8gJNmg&t=828s',
+                       'markdown': '[00:13:48](https://www.youtube.com/watch?v=zsaby8gJNmg&t=828s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TNKYk9V0ty8',
+                       'title': 'Out of Network Billing [Coinsurance plus Balance Billing] Amount '
+                                'Explained',
+                       'channel': 'The Private Practice Outsider',
+                       'author': 'The Private Practice Outsider',
+                       'text': 'The patient will owe you 35 percent of the 100, which is 35 dollars, plus '
+                               'the balance bill amount of 150 dollars, so 185 dollars total.',
+                       'tip': 'The patient will owe you 35 percent of the 100, which is 35 dollars, plus '
+                              'the balance bill amount of 150 dollars, so 185 dollars total.',
+                       'timestamp': 118,
+                       'timestamp_seconds': 118,
+                       'timestamp_label': '[00:01:58]',
+                       'url': 'https://www.youtube.com/watch?v=TNKYk9V0ty8&t=118s',
+                       'markdown': '[00:01:58](https://www.youtube.com/watch?v=TNKYk9V0ty8&t=118s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rdwGJdKffpI',
+                       'title': 'Out of Network Therapist | Superbills and Health Insurance',
+                       'channel': 'Nate Page',
+                       'author': 'Nate Page',
+                       'text': 'Some get 50 percent, a lot get 60 to 80 percent, and we even have some '
+                               'clients that say they get a hundred percent back from their health '
+                               'insurance.',
+                       'tip': 'Some get 50 percent, a lot get 60 to 80 percent, and we even have some '
+                              'clients that say they get a hundred percent back from their health '
+                              'insurance.',
+                       'timestamp': 50,
+                       'timestamp_seconds': 50,
+                       'timestamp_label': '[00:00:50]',
+                       'url': 'https://www.youtube.com/watch?v=rdwGJdKffpI&t=50s',
+                       'markdown': '[00:00:50](https://www.youtube.com/watch?v=rdwGJdKffpI&t=50s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HqCQhe8wbVM',
+                       'title': 'Superbills in Private Practice | Out-of-Network Billing',
+                       'channel': 'Private Practice Skills',
+                       'author': 'Private Practice Skills',
+                       'text': 'Once you get into the swing of things with super bills, it really only '
+                               'takes like a minute and a half to complete per client.',
+                       'tip': 'Once you get into the swing of things with super bills, it really only '
+                              'takes like a minute and a half to complete per client.',
+                       'timestamp': 257,
+                       'timestamp_seconds': 257,
+                       'timestamp_label': '[00:04:17]',
+                       'url': 'https://www.youtube.com/watch?v=HqCQhe8wbVM&t=257s',
+                       'markdown': '[00:04:17](https://www.youtube.com/watch?v=HqCQhe8wbVM&t=257s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tkUfu8WA56U',
+                       'title': 'Superbills for Therapists: How Out-of-Network Reimbursement Actually '
+                                'Works',
+                       'channel': 'Craft Your Practice',
+                       'author': 'Craft Your Practice',
+                       'text': 'Plans give members a limited window to submit, sometimes as short as '
+                               'ninety days, sometimes a year.',
+                       'tip': 'Plans give members a limited window to submit, sometimes as short as ninety '
+                              'days, sometimes a year.',
+                       'timestamp': 572,
+                       'timestamp_seconds': 572,
+                       'timestamp_label': '[00:09:32]',
+                       'url': 'https://www.youtube.com/watch?v=tkUfu8WA56U&t=572s',
+                       'markdown': '[00:09:32](https://www.youtube.com/watch?v=tkUfu8WA56U&t=572s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eXrZnEwRRH4',
+                       'title': 'Out-of-network 101 for therapists',
+                       'channel': 'Alicia Murray | The Therapist HQ \U0001faa9',
+                       'author': 'Alicia Murray | The Therapist HQ \U0001faa9',
+                       'text': 'Adjustment disorders on their own do not get reimbursed for out of network '
+                               'benefits.',
+                       'tip': 'Adjustment disorders on their own do not get reimbursed for out of network '
+                              'benefits.',
+                       'timestamp': 1568,
+                       'timestamp_seconds': 1568,
+                       'timestamp_label': '[00:26:08]',
+                       'url': 'https://www.youtube.com/watch?v=eXrZnEwRRH4&t=1568s',
+                       'markdown': '[00:26:08](https://www.youtube.com/watch?v=eXrZnEwRRH4&t=1568s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GVdiKSs4kvU',
+                       'title': 'Insurance Pay vs Out-of-Network: Why One80 Physical Therapy is Different',
+                       'channel': 'One80 Physical Therapy',
+                       'author': 'One80 Physical Therapy',
+                       'text': 'We are non-participating with Medicare, which means we cannot give you a '
+                               'super bill.',
+                       'tip': 'We are non-participating with Medicare, which means we cannot give you a '
+                              'super bill.',
+                       'timestamp': 242,
+                       'timestamp_seconds': 242,
+                       'timestamp_label': '[00:04:02]',
+                       'url': 'https://www.youtube.com/watch?v=GVdiKSs4kvU&t=242s',
+                       'markdown': '[00:04:02](https://www.youtube.com/watch?v=GVdiKSs4kvU&t=242s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dta7Y_d4nYA',
+                       'title': 'Top Medical Billing Interview Questions & Answers | Coinsurance vs '
+                                'Eligibility vs Preauthorization',
+                       'channel': 'MediBill Pro',
+                       'author': 'MediBill Pro',
+                       'text': 'The percentage that the patient is going to pay after that specific '
+                               'deductible is called the co-insurance amount.',
+                       'tip': 'The percentage that the patient is going to pay after that specific '
+                              'deductible is called the co-insurance amount.',
+                       'timestamp': 48,
+                       'timestamp_seconds': 48,
+                       'timestamp_label': '[00:00:48]',
+                       'url': 'https://www.youtube.com/watch?v=dta7Y_d4nYA&t=48s',
+                       'markdown': '[00:00:48](https://www.youtube.com/watch?v=dta7Y_d4nYA&t=48s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SdYPzcQPWOw',
+                       'title': 'How to Calculate Patient and Payer Responsibility (Copay vs Coinsurance '
+                                'vs Deductible)',
+                       'channel': 'Ask The Biller',
+                       'author': 'Ask The Biller',
+                       'text': "Everyone's deductible does not reset on January 1st, so verify whether the "
+                               'benefits are based on a calendar year or a plan year.',
+                       'tip': "Everyone's deductible does not reset on January 1st, so verify whether the "
+                              'benefits are based on a calendar year or a plan year.',
+                       'timestamp': 117,
+                       'timestamp_seconds': 117,
+                       'timestamp_label': '[00:01:57]',
+                       'url': 'https://www.youtube.com/watch?v=SdYPzcQPWOw&t=117s',
+                       'markdown': '[00:01:57](https://www.youtube.com/watch?v=SdYPzcQPWOw&t=117s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XyBNgMnFz0Y',
+                       'title': '5 Ways to verify patient Insurance Eligibility | Medical Billing Terms',
+                       'channel': 'Inlera University',
+                       'author': 'Inlera University',
+                       'text': 'Talking to a human at an insurance company is last on the list because it '
+                               'takes an enormous amount of time, and hold times are incredibly long right '
+                               'now.',
+                       'tip': 'Talking to a human at an insurance company is last on the list because it '
+                              'takes an enormous amount of time, and hold times are incredibly long right '
+                              'now.',
+                       'timestamp': 418,
+                       'timestamp_seconds': 418,
+                       'timestamp_label': '[00:06:58]',
+                       'url': 'https://www.youtube.com/watch?v=XyBNgMnFz0Y&t=418s',
+                       'markdown': '[00:06:58](https://www.youtube.com/watch?v=XyBNgMnFz0Y&t=418s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'heiuukmxgss',
+                       'title': 'Superbill Secrets for Cash Practice Packages - Out-of-Network Billing '
+                                'Reimbursement Tips',
+                       'channel': 'Jarod Carter',
+                       'author': 'Jarod Carter',
+                       'text': 'It would be insurance fraud if you let them send in something that said '
+                               'they paid 200 dollars when they only paid 190 dollars for that session.',
+                       'tip': 'It would be insurance fraud if you let them send in something that said '
+                              'they paid 200 dollars when they only paid 190 dollars for that session.',
+                       'timestamp': 242,
+                       'timestamp_seconds': 242,
+                       'timestamp_label': '[00:04:02]',
+                       'url': 'https://www.youtube.com/watch?v=heiuukmxgss&t=242s',
+                       'markdown': '[00:04:02](https://www.youtube.com/watch?v=heiuukmxgss&t=242s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'}]}

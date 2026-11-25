@@ -1,760 +1,911 @@
 from __future__ import annotations
 
-CHAPTER_11 = {
-    "id": "Q11",
-    "chapter_id": "Q11",
-    "chapter_number": 11,
-    "question_number": 11,
-    "slug": "pod-architecture-contractor-kpis-and-exit-valuation",
-    "question_prompt": "How do you structure a lean 1 FT + 2 C (3 people) -> 2 FT + 3 C (5 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
-    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
-    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
-    "subtitle": "Counsel Retainer Pods, Evidence QA, ASC 606 Cohorts, Written IP Assignments & Transferable Earnings",
-    "layout_template": "action_checklist",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #48, Data-Mined Qui Tam, SEC & IRS Whistleblower Analytics, ranks "
-        "#16 of 49 with a 92/100 Money-to-Manpower Score. Its 11 mapped plays belong "
-        "inside one evidence-production system, not eleven speculative case factories. "
-        "Start with one full-time principal and two contractors; expand to two full-time "
-        "employees and three contractors only when collected retainers support the added "
-        "capacity. Canonical annual owner profits are $30,400 Conservative, $219,375 Base, "
-        "and $510,400 Scaled. Separate paid litigation-support delivery from contingent "
-        "awards, enforce reproducible evidence and written IP ownership, and cap each "
-        "customer or economic counterparty at 25% of recurring revenue. Buyers pay for "
-        "transferable contracts and replacement-adjusted earnings, not allegations, sealed "
-        "docket counts, or headline government recoveries."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$95,000",
-            "context": "Annual gross operator revenue; retainers plus realized net award shares",
-            "note": "32% net margin; $30,400 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$487,500",
-            "context": "Annual gross operator revenue; retainers plus realized net award shares",
-            "note": "45.0% net margin; $219,375 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$880,000",
-            "context": "Annual gross operator revenue; retainers plus realized net award shares",
-            "note": "58% net margin; $510,400 annual owner net profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Assign Eleven Plays to Three Seats Before Adding Capacity",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Run Candidate #48 as a forensic services pod whose product is a "
-                    "reproducible, counsel-ready evidence package. For staffing purposes, "
-                    "map its eleven plays into these work packages: CMS Part B anomaly "
-                    "screening; CMS Part D anomaly screening; Open Payments relationship "
-                    "analysis; SAM.gov procurement linkage; import-manifest reconciliation; "
-                    "cross-source entity resolution; FOIA and primary-source corroboration; "
-                    "representative-claim evidence assembly; counsel retainer delivery; "
-                    "sealed-matter milestone administration; and realized-award reconciliation. "
-                    "This is the chapter's operating allocation, rather than a claim that "
-                    "every dataset establishes an actionable violation. The principal owns "
-                    "scoping, engagement economics, customer communication, and acceptance. "
-                    "The data contractor owns ingestion, normalization, linkage, and "
-                    "reproducible transformations. The evidence contractor owns source "
-                    "verification, request tracking, contradiction searches, and dossier "
-                    "assembly. Licensed counsel remains responsible for legal theory, "
-                    "filing decisions, procedural obligations, and permitted disclosures; "
-                    "the pod does not become a law firm by employing excellent analysts. "
-                    "Give every work package one accountable seat, one reviewer, a "
-                    "delivery definition, and an access classification. A shared job "
-                    "register connects the source snapshot to the client engagement, "
-                    "contractor purchase order, acceptance record, and invoice. That "
-                    "register is both the production backbone and the first artifact "
-                    "a serious acquirer should examine."
-                ),
-                (
-                    "In the three-person configuration, reserve the principal's calendar "
-                    "for selling a narrow deliverable, resolving exceptions, reviewing "
-                    "evidence, and collecting invoices. Do not fill that calendar with "
-                    "manual spreadsheet repair. The two contractors should review each "
-                    "other's mechanical work where competent, while the principal "
-                    "arbitrates material defects and counsel evaluates legal sufficiency. "
-                    "At five people, add a full-time delivery lead and a third "
-                    "contractor specializing in claims reconstruction or source-specific "
-                    "verification. The delivery lead assumes scheduling, acceptance "
-                    "records, and customer reporting; the principal retains pricing "
-                    "and capital allocation. Contractors are fractional capacity, not "
-                    "three concealed full-time salaries. Use written scopes and "
-                    "independent deliverables, and evaluate worker classification under "
-                    "the actual federal and state tests. Set a 25% ceiling for each "
-                    "law-firm customer and each common-control economic counterparty "
-                    "on trailing-twelve-month recurring revenue. Also inspect outstanding "
-                    "receivables and next-quarter contracted revenue at that threshold. "
-                    "Four equal customers mathematically satisfy the ceiling but leave "
-                    "no operating cushion; target five to eight independently paying "
-                    "firms. During startup, disclose unavoidable concentration, freeze "
-                    "discretionary expansion, and prioritize diversification rather "
-                    "than representing a one-client business as already within policy."
-                ),
-                (
-                    "Purchase capacity against accepted work units rather than against "
-                    "the number of allegations generated. An illustrative data-contractor "
-                    "rate of $70 per hour and evidence-contractor rate of $60 per hour, "
-                    "each used eight hours weekly for fifty weeks, consumes $52,000 "
-                    "annually. Against the Conservative scenario's $64,600 total expense "
-                    "envelope, that leaves only $12,600 for every other modeled expense. "
-                    "The calculation exposes how little room exists for expansive "
-                    "software subscriptions, specialist counsel paid by the operator, "
-                    "insurance, and rework. These rates are planning assumptions, not "
-                    "market quotes or extra costs to add after the canonical profit. "
-                    "Negotiate bounded batches with separately priced scope changes, "
-                    "and buy fewer hours when the budget cannot carry the workload. "
-                    "Authorize the five-person configuration only after a thirteen-week "
-                    "cash forecast survives zero awards, a lost major retainer, and "
-                    "a one-month collection delay. Keep at least three months of "
-                    "committed service expenses in unrestricted cash as an internal "
-                    "target. A contractor bench is useful only if replacement "
-                    "analysts can reproduce a sample job without the founder's memory. "
-                    "Document source licenses, join rules, exclusions, and acceptance "
-                    "tests before increasing intake."
-                ),
-            ],
-            "table": {
-                "caption": "Eleven-Play Seat Allocation and Capacity Controls for the Three-to-Five-Person Pod",
-                "headers": [
-                    "Seat or operating boundary",
-                    "Assigned work and accountable outcome",
-                    "Acceptance evidence retained with the job",
-                    "Capacity or escalation rule applied",
-                ],
-                "rows": [
-                    [
-                        "Principal, serving as the initial full-time commercial owner",
-                        "Own play nine, engagement pricing, collections, and final delivery acceptance",
-                        "Signed scope, review record, invoice schedule, and customer acceptance correspondence",
-                        "Escalate legal conclusions to retained counsel before external presentation",
-                    ],
-                    [
-                        "Data contractor, operating against bounded technical delivery batches",
-                        "Own plays one through six with reproducible source-specific transformations",
-                        "Versioned scripts, source checksums, join diagnostics, and documented exclusion logic",
-                        "Stop delivery when source drift invalidates previously accepted transformations",
-                    ],
-                    [
-                        "Evidence contractor, independently verifying sources and contradictory records",
-                        "Own plays seven and eight, including representative-claim reconstruction packets",
-                        "Primary documents, chronology, contradiction log, and source-to-claim cross-reference index",
-                        "Escalate missing claim identifiers instead of inventing transactional detail",
-                    ],
-                    [
-                        "Principal and counsel, coordinating restricted matter administration together",
-                        "Own play ten while counsel controls legal filings and disclosures",
-                        "Counsel-issued access instructions, milestone register, and permitted communication records",
-                        "Suspend external distribution whenever seal scope requires counsel clarification",
-                    ],
-                    [
-                        "Principal and bookkeeper, reconciling the realized-award accounting workstream",
-                        "Own play eleven without forecasting awards as operating cash",
-                        "Award determination, payment evidence, entitlement documents, and settlement reconciliation",
-                        "Separate beneficiary proceeds from amounts earned by the operator",
-                    ],
-                    [
-                        "Delivery lead and specialist, added within the five-person configuration",
-                        "Transfer scheduling to the lead and specialist reconstruction to contractor three",
-                        "Independent job reproduction, signed acceptance, and documented customer handover",
-                        "Add capacity only when retained service cash covers stressed commitments",
-                    ],
-                    [
-                        "Customer portfolio boundary, measured across related economic counterparties",
-                        "Limit each grouped customer to twenty-five percent of recurring revenue",
-                        "Trailing revenue schedule, ownership grouping, receivable aging, and renewal pipeline",
-                        "Treat startup breaches as remediation items before discretionary hiring",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the Small Pod from Evidence Rework",
-                "body": (
-                    "The profitable unit is an accepted, reproducible counsel deliverable, "
-                    "not a large anomaly queue or a speculative recovery estimate."
-                ),
-                "items": [
-                    "Freeze each CMS release and hash the source files before contractor work begins; rerun only after recording a deliberate release change.",
-                    "Maintain a negative-evidence field for every flagged provider or vendor so counsel sees legitimate explanations before investing in a theory.",
-                    "Buy representative-claim reconstruction as a separate bounded task; a population-level outlier chart cannot substitute for transactional particulars.",
-                    "Keep restricted matter names out of ordinary contractor invoices; use counsel-authorized matter codes and a separately permissioned crosswalk.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Enforce Weekly Quality, Ownership, and Outcome Scorecards",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Every Monday, close the prior week's production register before "
-                    "discussing new opportunities. Track accepted packages, first-pass "
-                    "acceptance, material-defect escapes, median cycle time, scope "
-                    "variance, billable utilization, collections, and customer "
-                    "concentration. Define first-pass acceptance as packages accepted "
-                    "without material revision divided by packages submitted that "
-                    "week; show both counts so a tiny denominator cannot masquerade "
-                    "as stable performance. Start with internal targets of 95% "
-                    "first-pass acceptance, zero unsupported material assertions, and "
-                    "100% source traceability. These are management targets, not "
-                    "observed industry benchmarks. Reconcile delivery counts to "
-                    "accepted milestones and invoices instead of rewarding activity "
-                    "such as rows scraped or leads generated. Use Git for code "
-                    "history and an appropriately permissioned document repository "
-                    "for evidence; keep secrets and restricted documents outside "
-                    "ordinary repositories. Each exception needs an owner, cash "
-                    "impact, next action, and due date. The principal reviews "
-                    "receivable aging and contracted workload alongside quality, "
-                    "because an immaculate package for a nonpaying customer does "
-                    "not finance the pod. Publish a compact internal scorecard, "
-                    "then send each law firm only its own authorized service "
-                    "report, with legal assessments supplied by counsel rather "
-                    "than inferred from analyst metrics."
-                ),
-                (
-                    "Contractor compensation should purchase competent analysis, not "
-                    "a desired accusation or a government recovery. Use hourly "
-                    "ceilings or fixed batch prices, with objective acceptance "
-                    "criteria and payment dates stated before work starts. An "
-                    "illustrative service agreement allows two business days for "
-                    "routine review, one business day to acknowledge a material "
-                    "defect, and three business days to deliver a correction "
-                    "plan. Source outages and scope changes pause the delivery "
-                    "clock through a written change record, not an informal "
-                    "excuse. Pay for accepted contracted work even when counsel "
-                    "rejects the legal theory; negative findings can be excellent "
-                    "work. Avoid recovery-based analyst bonuses that encourage "
-                    "overstatement or create additional fee-sharing questions. "
-                    "Secure a signed present assignment of identified deliverable "
-                    "copyrights under 17 U.S.C. section 204(a), plus appropriate "
-                    "confidentiality, invention, and subcontractor flow-down terms. "
-                    "Do not assume every contractor work product qualifies as "
-                    "work made for hire. Inventory preexisting code, licensed "
-                    "datasets, and open-source components separately, specifying "
-                    "the rights actually granted. Public facts are not made "
-                    "proprietary by placing them in a spreadsheet. Verify that "
-                    "the contract permits reuse of general methods without "
-                    "permitting reuse of client evidence, confidential strategy, "
-                    "or restricted source material."
-                ),
-                (
-                    "Maintain a second, restricted outcome scorecard for counsel-led "
-                    "matters without converting it into a sales leaderboard. "
-                    "Record referrals, counsel acceptances, filed cohorts, intervention "
-                    "decisions, government dismissal motions, final dismissals, "
-                    "collections, and elapsed months. Explicitly calculate the DOJ "
-                    "non-intervention rate as declined intervention decisions divided "
-                    "by resolved intervention decisions within a defined filing "
-                    "cohort. Calculate the government-initiated dismissal-motion rate "
-                    "and final-dismissal rate separately, using stated denominators "
-                    "and observation dates. The Granston memorandum concerns DOJ "
-                    "dismissal considerations; it does not supply a universal "
-                    "probability applicable to this pod. Use documented DOJ "
-                    "statistics or counsel-verified cohort records when available, "
-                    "and label immature cohorts as censored rather than treating "
-                    "pending matters as wins. Neither non-intervention nor a "
-                    "dismissal motion mechanically determines the final recovery. "
-                    "For capital planning, however, run a zero-recovery case and "
-                    "a full-delay case in which no contingent receipt arrives "
-                    "within the forecast horizon. Public-disclosure problems, "
-                    "weak representative claims, adverse merits, and procedural "
-                    "failures each belong in the loss taxonomy. Never pay a "
-                    "contractor more for suppressing those categories. A useful "
-                    "scorecard shows why a package failed, whether the service "
-                    "was still contractually earned, and which production step "
-                    "will change before the next delivery."
-                ),
-            ],
-            "table": {
-                "caption": "Weekly Contractor KPIs, QA Service Levels, and Counsel-Verified Outcome Denominators",
-                "headers": [
-                    "Metric and measurement boundary",
-                    "Calculation or operating target applied",
-                    "Evidence reviewed by the accountable owner",
-                    "Response when the control fails",
-                ],
-                "rows": [
-                    [
-                        "First-pass acceptance for packages submitted during the measured week",
-                        "Target ninety-five percent while displaying submitted and accepted package counts",
-                        "Principal compares review comments with the signed deliverable acceptance criteria",
-                        "Require targeted retraining before assigning another equivalent production batch",
-                    ],
-                    [
-                        "Material-defect escapes identified after the customer receives a deliverable",
-                        "Target zero unsupported assertions, broken citations, or material transformation errors",
-                        "Reviewer reproduces sampled findings directly from the frozen source snapshot",
-                        "Notify authorized customer contacts and issue a versioned correction package",
-                    ],
-                    [
-                        "Source traceability across every material claim in an accepted package",
-                        "Require complete source identifiers, extraction dates, and reproducible transformation references",
-                        "Evidence contractor checks the claim index against retained primary documents",
-                        "Withhold acceptance of unsupported claims while paying unrelated accepted work",
-                    ],
-                    [
-                        "Contractor correction service level after documented notice of material defects",
-                        "Acknowledge within one business day and plan correction within three",
-                        "Delivery lead compares ticket timestamps with written scope and outage records",
-                        "Reallocate urgent work and document contractual remedies without concealing delays",
-                    ],
-                    [
-                        "Written ownership coverage for every externally created reusable deliverable",
-                        "Require signed assignments and listed background rights before production deployment",
-                        "Principal checks contributor identity, assignment scope, and subcontractor flow-down records",
-                        "Replace disputed components or obtain necessary rights before offering transfer",
-                    ],
-                    [
-                        "DOJ non-intervention within filing cohorts having resolved intervention decisions",
-                        "Divide declined decisions by resolved decisions and display both underlying counts",
-                        "Counsel verifies disposition dates using records accessible under applicable restrictions",
-                        "Reforecast contingent timing without treating non-intervention as automatic case failure",
-                    ],
-                    [
-                        "Government dismissal motions and final dismissals within explicitly defined cohorts",
-                        "Calculate separate rates and preserve observation dates and pending-matter counts",
-                        "Counsel distinguishes section 3730 dismissal events from unrelated procedural dispositions",
-                        "Update loss taxonomy and keep all speculative receipts outside operating cash",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the Weekly Production Record",
-                    "action": "Close job status, acceptance events, time entries, and invoice milestones each Monday.",
-                    "detail": "Use immutable weekly exports and reconcile every changed status to a named reviewer and supporting record.",
-                },
-                {
-                    "step": 2,
-                    "title": "Reproduce the Highest-Risk Findings",
-                    "action": "Sample joins, representative claims, primary documents, and contradictory evidence before acceptance.",
-                    "detail": "Reject unsupported material assertions and preserve a correction trail rather than overwriting the original package.",
-                },
-                {
-                    "step": 3,
-                    "title": "Reconcile Cash and Restricted Outcomes",
-                    "action": "Review receivable aging separately from counsel-verified intervention and dismissal cohorts.",
-                    "detail": "Display rate denominators and exclude pending awards from the thirteen-week operating cash forecast.",
-                },
-                {
-                    "step": 4,
-                    "title": "Assign and Close Corrective Work",
-                    "action": "Name one owner and due date for each quality, concentration, ownership, or collection exception.",
-                    "detail": "Verify the completed remedy at the following meeting before increasing that workflow's intake.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Keep Retainer Cash, Award Cohorts, and Statutory Exposure Separate",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Preserve the Formula v2.0 totals exactly: Conservative revenue "
-                    "of $95,000 at 32% yields $30,400 owner profit; Base "
-                    "revenue of $487,500 at 45.0% yields $219,375; Scaled "
-                    "revenue of $880,000 at 58% yields $510,400. The "
-                    "corresponding total expense envelopes are $64,600, $268,125, "
-                    "and $369,600. Those are annual model totals, not evidence "
-                    "that awards arrive annually or that all expenses recur "
-                    "evenly. The supplied scorecard does not allocate revenue "
-                    "between retainers and realized awards, so maintain that "
-                    "allocation in the actual ledger rather than inventing "
-                    "a canonical split. For a zero-award cash stress test, "
-                    "average monthly collected service revenue must at least "
-                    "cover the relevant committed cash expenses; using the "
-                    "full annual expense envelopes as a simplifying proxy "
-                    "produces $5,383.33, $22,343.75, and $30,800 monthly "
-                    "coverage requirements. Actual payroll dates, taxes, working "
-                    "capital, and noncash charges require a separate cash "
-                    "bridge. Matching the published profits without awards "
-                    "would require the entire respective revenue total to "
-                    "come from services at those same expense levels. "
-                    "The stated $1,500–$9,500 monthly opex range therefore "
-                    "cannot be substituted for the all-in expense envelopes "
-                    "without reconciling labor and every other included category."
-                ),
-                (
-                    "Build separate service and award subledgers, each reconciled "
-                    "to the general ledger and bank. Under the applicable "
-                    "revenue policy, a retainer collected before performance "
-                    "can create a contract liability rather than immediate "
-                    "earned revenue; recognize services as the promised work "
-                    "is performed under the engagement's actual terms. Track "
-                    "contracted backlog, earned unbilled work, invoices, credits, "
-                    "cash, and write-offs distinctly. For each award cohort, "
-                    "store filing vintage, claimant identity under restricted "
-                    "access, program, entitlement documents, counsel-approved "
-                    "milestones, authorized deductions, and eventual payment. "
-                    "Do not assume a service firm qualifies as a "
-                    "statutory claimant simply because it produced analytics. "
-                    "Accountants and counsel must establish who owns any "
-                    "award and the accounting basis for amounts the "
-                    "operator actually earns. Apply ASC 606 principal-versus-agent "
-                    "analysis where relevant to service arrangements, and "
-                    "document the applicable policy for statutory receipts "
-                    "separately. If the operator merely handles another "
-                    "beneficiary's proceeds, those pass-through amounts are "
-                    "not its revenue. An applicable retained_share means "
-                    "the operator's entitled net contribution, not the "
-                    "government's total recovery. The scorecard's gross revenue "
-                    "label describes operator revenue before its expenses; "
-                    "it never licenses counting client proceeds, underlying "
-                    "medical spending, or procurement value as operator sales."
-                ),
-                (
-                    "Require counsel to assess the FCA public-disclosure bar "
-                    "under 31 U.S.C. section 3730(e)(4) before converting "
-                    "public-dataset findings into a filing thesis. Public "
-                    "availability alone does not resolve that inquiry: "
-                    "the qualifying disclosure channels, substantially similar "
-                    "allegations, original-source provisions, and government position "
-                    "matter. Rule 9(b) requires particularity for fraud "
-                    "allegations, with circuit-specific treatment of representative "
-                    "claims and reliable indicia; build the transaction "
-                    "record counsel requests instead of declaring every "
-                    "statistical outlier a false claim. Counsel files "
-                    "FCA complaints under section 3730(b)(2), including "
-                    "the initial statutory seal and disclosure obligations. "
-                    "Budget a 2–5+ year contingent horizon for "
-                    "long-running investigations and recoveries, potentially including "
-                    "extended FCA seal periods, without asserting that "
-                    "every matter stays sealed that long. SEC and "
-                    "IRS submissions have different confidentiality regimes "
-                    "and are routed through counsel using Form "
-                    "TCR and Form 211. FCA shares generally "
-                    "differ between intervened and non-intervened recoveries; "
-                    "SEC and CFTC ranges are generally 10%–30%, "
-                    "while qualifying IRS awards generally use 15%–30% "
-                    "subject to statutory conditions. Those percentages "
-                    "belong to eligible claimants, not automatically "
-                    "to the analytics pod. Model complete loss "
-                    "and counsel-controlled responses to any suspected disclosure breach."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Scenario Reconciliation and Separate Service-versus-Award Accounting Controls",
-                "headers": [
-                    "Scenario or ledger control",
-                    "Revenue and expense treatment applied",
-                    "Cash planning and evidence requirement",
-                    "Operator decision supported by the record",
-                ],
-                "rows": [
-                    [
-                        "Conservative case using one full-time principal and two fractional contractors",
-                        "$95,000 revenue less $64,600 expenses produces $30,400 owner profit",
-                        "Use $5,383.33 monthly expense coverage only as an initial cash proxy",
-                        "Preserve the exact thirty-two percent margin without adding unbudgeted labor",
-                    ],
-                    [
-                        "Base case retaining the same three-person operating pod configuration",
-                        "$487,500 revenue less $268,125 expenses produces $219,375 owner profit",
-                        "Use $22,343.75 monthly expense coverage before specific working-capital adjustments",
-                        "Preserve the exact forty-five percent margin and investigate collection slippage",
-                    ],
-                    [
-                        "Scaled case using two full-time employees and three fractional contractors",
-                        "$880,000 revenue less $369,600 expenses produces $510,400 owner profit",
-                        "Use $30,800 monthly expense coverage before specific payment-timing adjustments",
-                        "Preserve the exact fifty-eight percent margin with five-person capacity discipline",
-                    ],
-                    [
-                        "Advance service retainers received before all promised work is performed",
-                        "Record contract liabilities where appropriate and recognize earned service performance",
-                        "Reconcile engagement terms, accepted milestones, bank receipts, and deferred balances",
-                        "Avoid confusing upfront cash collection with immediately earned recurring revenue",
-                    ],
-                    [
-                        "Earned service amounts awaiting invoicing or actual customer payment",
-                        "Separate unbilled earned work, receivables, credits, and expected collection losses",
-                        "Review customer-level aging weekly and reconcile subsequent collections to invoices",
-                        "Fund contractor commitments from credible collections rather than booked revenue alone",
-                    ],
-                    [
-                        "Contingent award cohorts tracked outside the recurring services operating forecast",
-                        "Record entitlement and realized operator amounts under the documented accounting policy",
-                        "Preserve claimant documents, authorized deductions, final determinations, and payment evidence",
-                        "Exclude pending awards from hiring capacity and recurring earnings valuation",
-                    ],
-                    [
-                        "Zero-recovery stress covering every pending statutory submission and sealed matter",
-                        "Set contingent receipts to zero without erasing earned retainer obligations",
-                        "Test thirteen-week cash coverage and long-horizon liquidity using service collections",
-                        "Reduce discretionary intake before cash depends on an uncollected government recovery",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Checks Before Capacity Expansion or External Diligence",
-                "body": (
-                    "The principal records these checks; counsel resolves legal scope "
-                    "and the accountant resolves recognition questions."
-                ),
-                "items": [
-                    "Verify that committed contractor work, payroll, and service obligations remain funded when every pending award pays zero.",
-                    "Verify counsel's public-disclosure analysis, Rule 9(b) evidence requirements, and authorized handling instructions before treating a matter as filing-ready.",
-                    "Verify signed contributor assignments, source-license rights, and customer-specific transfer restrictions before presenting reusable IP to a buyer.",
-                    "Verify that each customer and related economic counterparty stays at or below 25% of recurring revenue, with separately documented startup remediation.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Sell Transferable Service Earnings, or Keep a Disciplined Cash Cow",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Prepare an exit book that explains how recurring "
-                    "service earnings survive the principal's departure. Buyers "
-                    "will distinguish a repeatable litigation-support provider "
-                    "from a founder who personally persuades three "
-                    "law firms to purchase bespoke investigations. Present "
-                    "customer cohorts, service retention, gross contribution "
-                    "after direct delivery labor, renewal dates, collection "
-                    "history, contractor continuity, and documented acceptance "
-                    "standards. Separate award receipts and one-time projects "
-                    "from recurring service earnings in every bridge. "
-                    "Illustrative negotiation bands for a small, owner-dependent "
-                    "services business might be 2–3 times normalized "
-                    "seller's discretionary earnings; a transferable managed "
-                    "service operation might test 3–5 times normalized "
-                    "EBITDA. These are underwriting assumptions, not sourced "
-                    "transaction comparables or promised clearing prices. "
-                    "A weak transfer package can command less, "
-                    "and a buyer may decline entirely. Do "
-                    "not apply both measures to the same "
-                    "earnings or call owner net profit EBITDA. "
-                    "Reconcile interest, taxes, depreciation, amortization, owner "
-                    "benefits, replacement management cost, and recurring "
-                    "delivery expense explicitly. Verify whether replacement "
-                    "labor already sits in expenses before deducting "
-                    "it again. Premium pricing comes from "
-                    "demonstrated continuity and diversified collections, not "
-                    "from describing unresolved allegations as a "
-                    "proprietary pipeline worth a percentage of "
-                    "potential government recoveries."
-                ),
-                (
-                    "Use a transparent valuation example independent of "
-                    "the canonical scenario totals. Suppose diligence "
-                    "supports $150,000 of normalized recurring service "
-                    "EBITDA after market replacement management and "
-                    "all recurring delivery costs. At an "
-                    "illustrative 3–4 times multiple, enterprise value "
-                    "is $450,000–$600,000 before debt, cash, "
-                    "working-capital adjustments, transaction expenses, and any "
-                    "contingent consideration. This does not restate "
-                    "the Base case's $219,375 owner profit "
-                    "or imply that the difference is "
-                    "a verified normalization adjustment. Show the "
-                    "actual earnings bridge before using an "
-                    "actual scenario in negotiations. Keep speculative "
-                    "awards outside the base purchase price; "
-                    "if parties consider contingent value, counsel "
-                    "must first establish whether any relevant "
-                    "interest can lawfully transfer and whether "
-                    "disclosure is permitted. A services acquisition "
-                    "does not automatically transfer a relator's "
-                    "standing, an individual's whistleblower eligibility, "
-                    "privilege, or confidential government communications. "
-                    "Design any permitted earnout around clearly "
-                    "defined collections and delivery costs, with "
-                    "reporting rights and dispute procedures. Avoid "
-                    "an earnout that rewards disclosure of "
-                    "restricted material or pressures analysts to "
-                    "amplify allegations. Stress the buyer model "
-                    "for loss of the largest customer "
-                    "and include a realistic transition workload "
-                    "rather than assuming the principal disappears immediately."
-                ),
-                (
-                    "Build the transfer room in layers. Begin "
-                    "with aggregate service metrics, redacted contract "
-                    "summaries, ownership schedules, and synthetic demonstration "
-                    "jobs that reveal no restricted matter "
-                    "facts. Counsel determines whether additional client "
-                    "permissions, protective measures, or court action "
-                    "are required before any sensitive disclosure. "
-                    "A buyer confidentiality agreement alone does "
-                    "not override a seal, privilege, client "
-                    "restriction, or source license. Obtain required "
-                    "assignment or change-of-control permissions, and "
-                    "show contractor continuity through written "
-                    "agreements rather than verbal assurances. "
-                    "If sale pricing is unattractive, "
-                    "operate the same system as "
-                    "a durable cash cow: distribute "
-                    "only after taxes, service reserves, "
-                    "working-capital needs, and correction obligations "
-                    "are funded. Reassess concentration quarterly, "
-                    "reprice labor-intensive engagements, and sunset "
-                    "data feeds whose accepted outputs "
-                    "do not cover their full "
-                    "delivery cost. Run an annual "
-                    "founder-absence test in which the "
-                    "delivery lead or designated backup "
-                    "completes a customer reporting cycle "
-                    "without informal founder intervention. At "
-                    "three people, test a shorter "
-                    "documented handover instead of pretending "
-                    "the business has management depth "
-                    "it cannot afford. The same "
-                    "evidence that supports an eventual "
-                    "exit also protects current distributions: "
-                    "clear rights, dependable collections, repeatable "
-                    "delivery, and no payroll dependency "
-                    "on a sealed case resolving favorably."
-                ),
-            ],
-            "table": {
-                "caption": "Illustrative Buyer Underwriting, Transfer Restrictions, and Durable Distribution Controls",
-                "headers": [
-                    "Diligence item or valuation boundary",
-                    "Evidence the operator should prepare",
-                    "Illustrative buyer treatment or operating rule",
-                    "Failure mode that reduces transferable value",
-                ],
-                "rows": [
-                    [
-                        "Owner-dependent service earnings measured using a consistent discretionary earnings definition",
-                        "Prepare owner compensation adjustments and disclose duties requiring buyer replacement",
-                        "Test two-to-three-times normalized discretionary earnings as an illustrative negotiation band",
-                        "Founder relationships and undocumented production can make even that range excessive",
-                    ],
-                    [
-                        "Managed service earnings supported by independent delivery and diversified customers",
-                        "Prepare recurring EBITDA after replacement management and complete delivery expense recognition",
-                        "Test three-to-five-times normalized EBITDA only as an illustrative underwriting range",
-                        "Mixing discretionary earnings with EBITDA inflates the apparent valuation basis",
-                    ],
-                    [
-                        "Standalone worked example using independently assumed normalized recurring service earnings",
-                        "Assume $150,000 EBITDA after replacement management and recurring delivery expenses",
-                        "Three-to-four-times earnings implies $450,000–$600,000 enterprise value before equity adjustments",
-                        "Treating this example as the canonical Base case misstates supplied economics",
-                    ],
-                    [
-                        "Concentration exposure aggregated across customer firms and related economic counterparties",
-                        "Provide trailing revenue, receivable aging, renewal dates, and common-control groupings",
-                        "Maintain a twenty-five percent ceiling and stress the largest customer loss",
-                        "Splitting one economic customer across several invoices conceals the actual dependency",
-                    ],
-                    [
-                        "Contract and intellectual property rights needed for continued buyer operation",
-                        "Provide signed assignments, background-rights schedules, source licenses, and transfer permissions",
-                        "Transfer only rights actually held and permitted under controlling agreements",
-                        "Missing contractor assignments or restricted datasets can prevent continued service delivery",
-                    ],
-                    [
-                        "Restricted litigation materials and contingent statutory claimant interests under separate review",
-                        "Provide counsel-approved aggregate summaries before considering any further sensitive disclosure",
-                        "Exclude speculative awards from base value and assess transferability before negotiation",
-                        "A confidentiality agreement cannot authorize disclosure otherwise prohibited by controlling restrictions",
-                    ],
-                    [
-                        "Owner distributions when retaining the operation as a durable cash producer",
-                        "Prepare tax reserves, service commitments, collection forecasts, and founder-absence test results",
-                        "Distribute available cash only after funding obligations and maintaining operating reserves",
-                        "Paying distributions from advance retainers can leave accepted delivery obligations unfunded",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "Build a business a buyer can operate without your memory and a payroll "
-        "you can fund without a government recovery."
-    ),
-    "diagram_id": "diag-06",
-    "action_checklist": [
-        "Assign all eleven work packages to the principal, data contractor, and evidence contractor, with named reviewers and written acceptance criteria.",
-        "Execute contractor scopes, correction service levels, signed copyright assignments, and background-rights schedules before reusable production work begins.",
-        "Publish a weekly scorecard showing accepted packages, defect counts, source traceability, collections, concentration, and counsel-verified outcome denominators.",
-        "Reconcile all three canonical revenue, expense, and owner-profit totals while keeping pending awards outside the thirteen-week operating cash forecast.",
-        "Cap each grouped customer and economic counterparty at 25% of recurring revenue, document startup breaches, and test loss of the largest payer.",
-        "Build a redacted transfer package with normalized service earnings, required transfer permissions, and a founder-absence test before discussing valuation multiples.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "31 U.S.C. section 3730(b)(2): Qui Tam Filing and Initial Seal Requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3730",
-            "relevance": (
-                "Counsel controls complaint filing, government disclosure, initial seal "
-                "requirements, and requests affecting restricted matter handling."
-            ),
-        },
-        {
-            "title": "31 U.S.C. section 3730(e)(4): Public-Disclosure Bar and Original-Source Provisions",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3730",
-            "relevance": (
-                "Public-data anomaly packages require a fact-specific assessment of "
-                "qualifying disclosures, substantially similar allegations, and applicable exceptions."
-            ),
-        },
-        {
-            "title": "31 U.S.C. sections 3730(c)(2)(A) and 3730(d): Government Dismissal and Relator Shares",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3730",
-            "relevance": (
-                "Track government dismissal proceedings separately from intervention "
-                "decisions and distinguish intervened from non-intervened share provisions."
-            ),
-        },
-        {
-            "title": "Federal Rule of Civil Procedure 9(b): Particularity in Alleging Fraud or Mistake",
-            "url": "https://www.law.cornell.edu/rules/frcp/rule_9",
-            "relevance": (
-                "Representative-claim reconstruction and reliable supporting records "
-                "must address counsel's circuit-specific pleading requirements."
-            ),
-        },
-        {
-            "title": "17 U.S.C. section 204(a): Written Transfers of Copyright Ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": (
-                "Obtain signed written assignments for transferable contractor-created "
-                "copyright interests rather than relying only on payment or possession."
-            ),
-        },
-        {
-            "title": "15 U.S.C. section 78u-6: Securities Whistleblower Incentives and Protection",
-            "url": "https://www.law.cornell.edu/uscode/text/15/78u-6",
-            "relevance": (
-                "Distinguish eligible SEC whistleblowers, covered award conditions, "
-                "statutory award ranges, and confidentiality provisions from service-firm revenue."
-            ),
-        },
-        {
-            "title": "17 CFR section 240.21F-9: Procedures for Submitting Original Information",
-            "url": "https://www.ecfr.gov/current/title-17/section-240.21F-9",
-            "relevance": (
-                "Counsel-directed SEC submissions must follow the program's information "
-                "submission procedures, including requirements relevant to anonymous submissions."
-            ),
-        },
-        {
-            "title": "26 U.S.C. section 7623: Expenses of Detection and Whistleblower Awards",
-            "url": "https://www.law.cornell.edu/uscode/text/26/7623",
-            "relevance": (
-                "Apply IRS award eligibility, thresholds, and percentage provisions "
-                "to the actual claimant rather than assuming analytics ownership establishes entitlement."
-            ),
-        },
-        {
-            "title": "7 U.S.C. section 26: Commodity Whistleblower Incentives and Protection",
-            "url": "https://www.law.cornell.edu/uscode/text/7/26",
-            "relevance": (
-                "Distinguish CFTC award percentages and eligibility requirements from "
-                "FCA and IRS mechanics when evaluating adjacent counsel-led referrals."
-            ),
-        },
-    ],
-}
+CHAPTER_11 = {'id': 'Q11',
+ 'chapter_id': 'Q11',
+ 'chapter_number': 11,
+ 'question_number': 11,
+ 'slug': 'irs-whistleblower-form-211-to-award-check',
+ 'question_prompt': 'How do you report tax cheats to the IRS Whistleblower Office, and what are the '
+                    'realistic odds, timelines, and payouts?',
+ 'kicker': 'Q11 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'The IRS Whistleblower Program: Form 211 to Award Check',
+ 'subtitle': 'Section 7623(b) thresholds and award percentages, Form 211 vs. Form 3949-A, a line-by-line '
+             'Form 211 walkthrough, the start-to-finish process, offshore-account cases, IRS agent '
+             'whistleblowers, and practitioner debate over whether the program works',
+ 'layout_template': 'chapter_opener',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Former IRS agents, whistleblower counsel and tax controversy litigators agree on '
+                      'the core deal: Form 211 is the only route to an award, payouts run 15 to 30 percent '
+                      'of proceeds actually collected, and nothing pays until the target exhausts every '
+                      'appeal. The working floor is more than $2 million in tax in dispute plus $200,000 '
+                      'of gross income for individual targets, but Brown says the IRS rarely moves below a '
+                      'likely $10 million collection. Winning files are insider-sourced, documented, '
+                      'current and packaged as a narrative memo with enabling-party, witness and document '
+                      'appendices. Timelines run seven to ten years, longer if litigated. The split: Brown '
+                      'and Sullivan want big splashes, while Green and Skarlatos say their billion-dollar '
+                      'claims never paid and the sweet spot is $10 million to $50 million of simple tax '
+                      'evasion.',
+ 'key_metrics': [{'label': 'Mandatory award band',
+                  'metric': 'Mandatory award band',
+                  'value': '15% to 30% of collected proceeds',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Emily Stibil of Phillips and Cohen states the program mandates eligible '
+                             'whistleblowers receive 15 to 30 percent of proceeds the IRS collects, with '
+                             'the final amount set by the Whistleblower Office.',
+                  'source': 'The Anti-Fraud Coalition ([fQss6bE5tKc @ 00:00:34])'},
+                 {'label': 'Mandatory-award eligibility floor',
+                  'metric': 'Mandatory-award eligibility floor',
+                  'value': 'More than $2,000,000 in dispute; more than $200,000 gross income for '
+                           'individual targets',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Tax, penalties, interest, additions to tax and other proceeds in dispute '
+                             'must exceed $2 million, and an individual target must have income over '
+                             '$200,000 in at least one year at issue.',
+                  'source': 'The Anti-Fraud Coalition ([fQss6bE5tKc @ 00:01:27])'},
+                 {'label': 'Average time to a paid claim',
+                  'metric': 'Average time to a paid claim',
+                  'value': 'About 10 years',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Jason T. Brown puts the average time for a successful IRS whistleblower '
+                             'claim at about a decade, with yearly updates that are mostly vague.',
+                  'source': 'Brown, LLC - A Premier Whistleblower Law Firm ([tQIkb01vCTw @ 00:07:20])'},
+                 {'label': 'Whistleblower Office intake load',
+                  'metric': 'Whistleblower Office intake load',
+                  'value': 'About 1,000 claims per month against 32 reviewers',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Eric Green reports the office receives roughly a thousand cases a month with '
+                             '32 reviewers, about 30 to 35 new files each per month, so claims that do not '
+                             'grab attention go nowhere.',
+                  'source': 'Where IRS Problems Get Solved ([ruRW_hNSDYk @ 00:07:31])'}],
+ 'sections': [{'title': '1. The Practitioner Consensus',
+               'paragraphs': ['Every practitioner who walks the program lands on the same payout math. The '
+                              'IRS Whistleblower Office pays 15 to 30 percent of proceeds collected and '
+                              'attributable to the tip, and only after the target has exhausted every '
+                              'appeal right and can no longer file a refund claim [i4GnKgGXiMw @ '
+                              '00:01:04]. Emily Stibil of Phillips and Cohen describes that band as '
+                              'mandatory for eligible claims, with the final award amount set by the '
+                              'Whistleblower Office itself [fQss6bE5tKc @ 00:00:34]. Former IRS agent Mike '
+                              'Sullivan states the collection rule bluntly: if the money is not collected, '
+                              'the tipster does not get a nickel, so chasing a broke target is wasted time '
+                              '[41ejxu80Qtg @ 00:02:09]. The second point of agreement is that Form 211, '
+                              'the Application for Award for Original Information, is the only door to a '
+                              'payout, and the filing has to be right the first time. Jason T. Brown warns '
+                              'that calling a tip hotline or the local office, or going to the FBI or '
+                              'Secret Service, can get a tipster treated as a confidential informant or '
+                              'cooperating witness with a little cash thrown their way, but leaves zero '
+                              'eligibility for the real award even if the government recovers hundreds of '
+                              'millions [RuNrDW46nKY @ 00:01:41].',
+                              'The floor numbers repeat across firms. Stibil and Brown both put the line '
+                              'at more than $2 million in tax, penalties, interest and additions in '
+                              'dispute, plus gross income above $200,000 in at least one year at issue '
+                              'when the target is an individual [fQss6bE5tKc @ 00:01:27]. Brown stresses '
+                              'that the $2 million is tax liability, not unreported income: hide $2 '
+                              'million of income at a roughly 50 percent effective rate and the liability '
+                              'is only $1 million, short of the bar. Clearing the threshold does not make '
+                              'a case workable. Brown says that even at $2 million the IRS is unlikely to '
+                              'move unless the file is blatant, well documented and likely to collect $10 '
+                              'million or more, against deep-pocketed targets with collectible assets, '
+                              'willful conduct and a whistleblower who is an insider [tQIkb01vCTw @ '
+                              '00:01:52]. Dean Zerbe of the National Whistleblower Center ranks insiders '
+                              'first, naming the senior bank official, the tax department and the '
+                              'accountant, and adds that the IRS wants conduct three years old at most for '
+                              'an individual and five or six for a corporation, ideally still running '
+                              "[O45E7FrG_mM @ 00:02:01]. Sullivan's version is that the IRS wants a whale "
+                              'splash that makes headlines and pleases the commissioner, not a couple of '
+                              'bait fish [41ejxu80Qtg @ 00:03:10].',
+                              "The third consensus is that the IRS will not do the tipster's homework or "
+                              'forgive a thin file. Law Minded guest Alina says the IRS receives countless '
+                              'tips every year, so a claim built on something overheard at a restaurant is '
+                              'speculative, and even well-substantiated claims often go uninvestigated, '
+                              'which is why the firm screens out ineligible or unsupported cases before '
+                              'filing [sNHauc7rutQ @ 00:07:51]. A CPA, lawyer and Northeastern academic '
+                              'interviewed by Boston 25 says the informant essentially has to spoon-feed '
+                              'the dirty details, giving the IRS an idea of what taxes are missing, how it '
+                              'came about and what the amounts may be, so the whistleblower does all the '
+                              'digging [mfEL3LienPQ @ 00:01:56]. The same report estimates that 90 percent '
+                              'of claims are found useless and puts the reported average payout at about '
+                              '$224,000, because the IRS is too busy to run down every lead [mfEL3LienPQ @ '
+                              '00:02:27]. Nobody sells speed either. Eric Green and Bryan Skarlatos put '
+                              'the average paying case at eight to ten years, and cases the IRS drags into '
+                              'court at twelve to twenty years minimum; Skarlatos says that, given the '
+                              'timeline, any new case had better be simple and easy [ruRW_hNSDYk @ '
+                              '00:07:15].'],
+               'table': {'caption': 'Where IRS whistleblower practitioners agree before a single document '
+                                    'is gathered',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Payout is a percentage of collected money only',
+                                   'Awards fall between 15 and 30 percent of collected proceeds and issue '
+                                   'only after the target exhausts all appeal rights',
+                                   "Underwrite the target's ability to pay before investing time in the "
+                                   'evidence',
+                                   'Logan Allec ([i4GnKgGXiMw @ 00:01:04])'],
+                                  ['Form 211 is the only award channel',
+                                   'Hotlines, local offices, FBI or Secret Service tips can earn informant '
+                                   'cash but never the program award',
+                                   'Route every claim through a properly built Form 211 from day one',
+                                   'Brown, LLC - A Premier Whistleblower Law Firm ([RuNrDW46nKY @ '
+                                   '00:01:41])'],
+                                  ['Dollar floor of more than $2 million in dispute',
+                                   'Tax, penalties, interest and additions must exceed $2 million, plus '
+                                   '$200,000 gross income for individual targets',
+                                   'Compute tax liability, not unreported income, before deciding the '
+                                   'claim qualifies',
+                                   'The Anti-Fraud Coalition ([fQss6bE5tKc @ 00:01:27])'],
+                                  ['Insiders with documents beat outside suspicion every time',
+                                   'The IRS favors senior bank officials, tax department staff and '
+                                   'accountants who bring documents to an underfunded agency',
+                                   "Lead with the insider's role and the paper trail they can produce",
+                                   'Kohn Kohn & Colapinto ([O45E7FrG_mM @ 00:02:17])'],
+                                  ['Big, documented cases get worked first by agents',
+                                   'The IRS wants a whale splash that makes the newspapers; undocumented '
+                                   'claims are a waste of time',
+                                   'Cut thin or small claims instead of filing them on hope',
+                                   'Former IRS Agent Representation   4.2M Views ([41ejxu80Qtg @ '
+                                   '00:03:10])'],
+                                  ['Ineligible claimants are screened out at the door',
+                                   'Current and former Treasury employees, federal employees learning '
+                                   'facts on duty, and anyone legally required or barred from disclosing '
+                                   'are excluded',
+                                   "Confirm the claimant's eligibility before building any part of the "
+                                   'submission package',
+                                   'Law Minded ([sNHauc7rutQ @ 00:01:06])'],
+                                  ['Identity goes to the IRS, not to the public',
+                                   'Tips cannot be filed anonymously, but the IRS protects whistleblower '
+                                   'confidentiality throughout the program',
+                                   'Expect to sign your own name and rely on IRS confidentiality handling',
+                                   'The Anti-Fraud Coalition ([fQss6bE5tKc @ 00:00:17])']]}},
+              {'title': '2. Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The form itself is short; Teach Me! Personal Finance walks it as a single '
+                              'page split into Section A on the target and Section B on the claimant '
+                              '[WA3dtUQT9f8 @ 00:07:29]. Line 1 flags a new or supplemental submission, '
+                              'with any prior claim number entered; line 2 takes the last four digits of '
+                              "the target's taxpayer ID; lines 3 through 5 take the name with aliases and "
+                              'related taxpayers, the address and a date of birth or approximate age, and '
+                              'the IRS will work with partial data. Line 6 names any IRS employee '
+                              'previously told, line 7 checks the violation type across income, '
+                              'employment, employee plans, government entities and exempt organizations, '
+                              'line 8 states the facts and why they break the law, and line 9 explains how '
+                              'the information was obtained. Lines 15 and 16 lay out the tax owed by year '
+                              'and dollar amount, with room for at least five tax years [WA3dtUQT9f8 @ '
+                              '00:12:44]. The claimant must sign personally under penalty of perjury even '
+                              'with a Form 2848 power of attorney on file, and the package is mailed to '
+                              'the Whistleblower Office [WA3dtUQT9f8 @ 00:03:53]. Alina warns that the 211 '
+                              'looks strikingly like a report-only form with no award, a common but '
+                              'devastating mix-up [sNHauc7rutQ @ 00:06:25].',
+                              'The 211 is a wrapper; the winning asset is the narrative behind it. Zerbe '
+                              'calls the online form a check-the-box document and says the narrative is '
+                              'what the IRS is really reading, starting with chapter-and-verse specificity '
+                              'on the taxpayer and a plain-language account of the scheme [O45E7FrG_mM @ '
+                              '00:09:59]. Zerbe then bolts on three sheets: an appendix of every enabling '
+                              'party, meaning the accounting firm and law firm helping the taxpayer; a '
+                              'list of who else can verify the story, where they are located and what they '
+                              'will likely say, preferably people the IRS can reach inside the US; and a '
+                              'document sheet naming each key record, who controls it and where it sits '
+                              '[O45E7FrG_mM @ 00:11:19]. Brown typically files a comprehensive written '
+                              'memo alongside the 211 walking the IRS through facts, law and documents, '
+                              'because the IRS wants cases silver-plattered, not a quick value meal that '
+                              "gets discarded [tQIkb01vCTw @ 00:06:49]. Sullivan's agent-side version is a "
+                              'really nice letter that someone else polishes, backed by dossiers sometimes '
+                              'inches thick so the reviewing agent does no work; three or four pages of '
+                              'he-said-she-said went straight into the garbage when Sullivan was an agent '
+                              '[41ejxu80Qtg @ 00:03:49].',
+                              'The numbers the IRS needs are two predicate facts: what the target reported '
+                              "and what the true liability was. Brown's model case is a company telling "
+                              'the government it makes $2 million a year while the second set of books, '
+                              'the one hidden from the government, shows $5 million buried through '
+                              'sub-corporations and offshore accounts, a $3 million annual deficit stated '
+                              'as hard figures with the math shown, not guesswork [RuNrDW46nKY @ '
+                              '00:08:47]. For a clean criminal case, Green walks the file to a local IRS '
+                              'Criminal Investigation special agent first, since the 211 asks whether '
+                              'anyone at the IRS has already seen it; one agent told Green they did not '
+                              'like the idea of people in Utah making the call, and CI has interviewed '
+                              "Green's clients [ruRW_hNSDYk @ 00:20:30]. Skarlatos agrees CI is more used "
+                              'to informants than the civil side, but stresses lodging the 211 before CI '
+                              'acts, or there is no award [ruRW_hNSDYk @ 00:22:37]. After filing, Brown '
+                              'reads the yearly update codes: no action means little, referred to audit is '
+                              'slightly promising, and referred to collections is the ding-ding-ding '
+                              'signal that liabilities were found [tQIkb01vCTw @ 00:08:07].'],
+               'table': {'caption': 'Form 211 build sheet, deficit math, intake floors and monitoring '
+                                    'numbers practitioners use',
+                         'headers': ['Mechanic',
+                                     'Exact Practitioner Detail',
+                                     'Number or Threshold',
+                                     'Expert Source'],
+                         'rows': [['Form 211 target section, lines 1 through 9',
+                                   "New or supplemental box, target's last four TIN digits, aliases, "
+                                   'address, age, prior IRS contact, violation type, facts, source of '
+                                   'knowledge',
+                                   'One-page form split into Section A on target and Section B on claimant',
+                                   'Teach Me! Personal Finance ([WA3dtUQT9f8 @ 00:08:13])'],
+                                  ['Tax owed schedule on lines 15 and 16',
+                                   'Tax owed stated by tax year and by dollar amount to the extent the '
+                                   'claimant knows them',
+                                   'Space for at least five separate tax years on the form',
+                                   'Teach Me! Personal Finance ([WA3dtUQT9f8 @ 00:12:44])'],
+                                  ['Two sets of books deficit math',
+                                   'Reported income versus actual income from the hidden second set of '
+                                   'books, with the derivation shown line by line',
+                                   '$2 million reported versus $5 million actual equals a $3 million '
+                                   'yearly deficit',
+                                   'Brown, LLC - A Premier Whistleblower Law Firm ([RuNrDW46nKY @ '
+                                   '00:08:28])'],
+                                  ['Staleness window for the reported conduct',
+                                   'IRS wants current conduct, ideally still ongoing; undeclared offshore '
+                                   'accounts are the exception because they never stop',
+                                   'About three years at most for individuals, five or six for '
+                                   'corporations',
+                                   'Kohn Kohn & Colapinto ([O45E7FrG_mM @ 00:02:01])'],
+                                  ['Law firm intake floor on contingency',
+                                   'Brown takes IRS cases only on contingency and only with detailed, '
+                                   'well-documented, timely information that is not stale',
+                                   'Over $10 million in tax liability required before Brown, LLC accepts',
+                                   'Brown, LLC - A Premier Whistleblower Law Firm ([tQIkb01vCTw @ '
+                                   '00:10:09])'],
+                                  ['Whistleblower Office triage capacity and attention',
+                                   'Claims that do not give reviewers something concrete to latch onto are '
+                                   'dropped as unsupported belief',
+                                   'About 1,000 claims a month against 32 reviewers, roughly 30 to 35 each',
+                                   'Where IRS Problems Get Solved ([ruRW_hNSDYk @ 00:07:31])'],
+                                  ['Status monitoring rights after the filing',
+                                   'Taxpayer First Act requires notice on referral to audit or '
+                                   'examination, notice of target tax payments, and written status '
+                                   'responses',
+                                   'Enacted in 2019; status responses provided on whistleblower or '
+                                   'attorney request',
+                                   'The Anti-Fraud Coalition ([fQss6bE5tKc @ 00:02:06])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'What the filing attorneys do that self-filers skip',
+                           'body': 'These are the packaging and sequencing moves practitioners use to keep '
+                                   'a claim from going into the circular file and to protect the award '
+                                   'percentage later.',
+                           'items': ['Hand over the killer email on day one; Zerbe sees stalled claims '
+                                     'from clients who held evidence back waiting for the IRS to call, and '
+                                     'the IRS really only looks at a filing once [Kohn Kohn & Colapinto — '
+                                     'O45E7FrG_mM @ 00:09:24].',
+                                     'If the information came through your role as an attorney or '
+                                     'accountant, resolve that before filing or the claim can sit in a '
+                                     'taint process for three to five years [Brown, LLC - A Premier '
+                                     'Whistleblower Law Firm — tQIkb01vCTw @ 00:05:48].',
+                                     'Describe supporting documents you do not hold but know exist, and '
+                                     'tell the IRS exactly where to find them [Teach Me! Personal Finance '
+                                     '— WA3dtUQT9f8 @ 00:02:46].',
+                                     'Plead that the target owes tax; Zerbe says showing fraud is a nice '
+                                     'bonus, but all you need to show is that the person owes tax [Kohn '
+                                     'Kohn & Colapinto — O45E7FrG_mM @ 00:17:40].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Qualify the target on dollars and collectability',
+                              'action': 'Compute tax liability in dispute, confirm individual gross '
+                                        'income, and confirm collectible assets before building anything.',
+                              'detail': 'Clear more than $2 million in tax, penalties, interest and '
+                                        'additions in dispute, plus more than $200,000 gross income in at '
+                                        'least one year for individual targets [The Anti-Fraud Coalition — '
+                                        'fQss6bE5tKc @ 00:01:27]; Brown adds the IRS rarely acts below a '
+                                        'likely $10 million collection.'},
+                             {'step': 2,
+                              'title': 'Gather evidence the lawful way',
+                              'action': 'Assemble internal emails, spreadsheets, both sets of books, '
+                                        'returns, bank statements, contracts, invoices and messages '
+                                        'showing intent.',
+                              'detail': 'Brown lists these as the evidence the IRS acts on and warns that '
+                                        'taking documents you are not authorized to have can backfire, get '
+                                        'you fired or get you arrested [Brown, LLC - A Premier '
+                                        'Whistleblower Law Firm — tQIkb01vCTw @ 00:04:57].'},
+                             {'step': 3,
+                              'title': 'Build the 211 plus narrative package',
+                              'action': 'Complete Form 211 Sections A and B, attach a plain-language '
+                                        'narrative memo, and add enabling-party, witness and document '
+                                        'sheets.',
+                              'detail': 'Zerbe appends a sheet of enablers, a list of who can verify the '
+                                        'story and where they are, and a document sheet naming each record '
+                                        'and who controls it [Kohn Kohn & Colapinto — O45E7FrG_mM @ '
+                                        '00:11:19]; sign under penalty of perjury and mail it to the '
+                                        'Whistleblower Office.'},
+                             {'step': 4,
+                              'title': 'Route, lodge and monitor',
+                              'action': 'For a clean criminal case, present to IRS CI first, lodge the 211 '
+                                        'before CI acts, then request yearly status and read the update '
+                                        'codes.',
+                              'detail': 'Skarlatos says to go to IRS CI first in the right case but lodge '
+                                        'the claim with the Whistleblower Office before CI takes action, '
+                                        'or there is no award [Where IRS Problems Get Solved — ruRW_hNSDYk '
+                                        '@ 00:22:37].'}]},
+              {'heading': '3. Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether to file Form 211 solo or behind counsel. '
+                              "Emily Stibil of Phillips and Cohen says flatly that you don't need a lawyer "
+                              'to file a tip, positioning an attorney as a way to navigate the process and '
+                              'craft the tip so it heightens the likelihood of success [fQss6bE5tKc @ '
+                              '00:00:34]. Jason T. Brown pushes much harder: you can fill out the form '
+                              'yourself, but Brown strongly discourages it, predicting a self-filed claim '
+                              'will probably hurt the case and go into the circular file, while conceding '
+                              'that certain people have recovered without an attorney [RuNrDW46nKY @ '
+                              '00:12:28]. Alina of Oberhide PC sells counsel as a credibility signal, '
+                              'arguing the IRS has reason to believe law-firm submissions are genuine '
+                              'because the firm has already vetted eligibility and substantiation and '
+                              'walks away from cases that fail either test [sNHauc7rutQ @ 00:08:46]. '
+                              "Brown's intake desk shows what the solo route costs: many matters arrive "
+                              'after someone already submitted their own Form 211 and wants it salvaged, '
+                              'the firm reviews whether it can even clean up the mess people generally '
+                              "make on their own, and it declines on the spot when it can't [tQIkb01vCTw @ "
+                              '00:06:18]. The working read from the counsel camp is blunt: a botched first '
+                              'filing is treated as close to unrecoverable, because you only get one first '
+                              'bite at the apple.',
+                              'Case-size doctrine splits into two camps. Former IRS agent Mike Sullivan '
+                              'preaches whales only: the IRS wants a big splash that can make the '
+                              'newspapers and please the commissioner, not a couple of bait fish on top of '
+                              "the water, and a small or undocumented claim is not worth anyone's time "
+                              '[41ejxu80Qtg @ 00:03:10]. Bryan Skarlatos answers from twenty years of '
+                              'whistleblower practice that bigger is not better, reporting many '
+                              'billion-dollar claims filed in a career and none of them paid, because a '
+                              'massive claim drags the IRS into a very complex process [ruRW_hNSDYk @ '
+                              '00:12:43]. Skarlatos expects hundred-million-plus cases to hit headwinds '
+                              'from complexity and well funded taxpayer defenses, and puts the sweet spot '
+                              'at 10 to 50 million dollars, or a tighter 10 to 25 million, while warning '
+                              'that a five or six million claim may not justify a ten-year wait for a 20 '
+                              'to 30 percent award once professional fees are counted [ruRW_hNSDYk @ '
+                              '00:16:01]. Eric Green backs the middle path with paid results: the cases '
+                              'that actually paid were small, simple income tax evasion matters the '
+                              'government could make and plead out, and Green notes the DOJ side has no '
+                              'patience for complicated RICO-type builds either [ruRW_hNSDYk @ 00:13:20]. '
+                              "Sullivan's whale doctrine and the Skarlatos sweet spot agree on one thing "
+                              'only: tiny cases die in the queue.',
+                              'Routing is the third fault line. Sullivan says IRS Criminal Investigation '
+                              "chases conviction rates and doesn't care if it collects a nickel, wanting "
+                              'the target behind bars, which is exactly why small payroll or '
+                              'unreported-income gripes go nowhere with that unit [QxVllUQ7IRk @ '
+                              '00:01:50]. Skarlatos explains that CI is far more used to working with '
+                              "witnesses and informants than the civil side, and agrees with Green's "
+                              'practice in the right case: bypass the Whistleblower Office, go directly to '
+                              'IRS CI, then lodge the claim with the office before CI acts, because '
+                              'skipping that filing forfeits the award entirely [ruRW_hNSDYk @ 00:22:37]. '
+                              'Brown hedges the same play, warning that a criminal referral might '
+                              'accelerate a case but can increase the risk your identity is revealed or '
+                              'create criminal exposure, a fate some other IRS complainants have already '
+                              'suffered, so it is a strategy reserved for a clean whistleblower working it '
+                              'through counsel [tQIkb01vCTw @ 00:03:58]. Dean Zerbe sets a lower proof bar '
+                              'than the criminal-first crowd: you just need to show the target owes tax, '
+                              'and proving fraud is a nice bonus rather than a requirement [O45E7FrG_mM @ '
+                              '00:17:40]. The criminal-first operators trade exposure risk for speed and '
+                              'traction, while the civil filers accept slower, quieter handling in '
+                              'exchange for keeping the whistleblower out of the blast radius.'],
+               'table': {'caption': 'Side-by-side playbooks where IRS whistleblower practitioners split',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Who prepares and files the Form 211',
+                                   'Stibil: no lawyer is needed to file a tip, though counsel can craft it '
+                                   'to heighten success',
+                                   'Brown: strongly discourages self-filing, which probably hurts the case '
+                                   'and lands it in the circular file',
+                                   'The Anti-Fraud Coalition ([fQss6bE5tKc @ 00:00:34]) vs Brown, LLC - A '
+                                   'Premier Whistleblower Law Firm ([RuNrDW46nKY @ 00:12:28])'],
+                                  ['Target case size worth filing',
+                                   'Sullivan: only big-splash whale cases that make the newspapers and '
+                                   'please the commissioner get worked',
+                                   'Skarlatos: bigger is not better; the sweet spot runs 10 to 50 million '
+                                   'dollars, ideally 10 to 25 million',
+                                   'Former IRS Agent Representation   4.2M Views ([41ejxu80Qtg @ '
+                                   '00:03:10]) vs Where IRS Problems Get Solved ([ruRW_hNSDYk @ '
+                                   '00:16:01])'],
+                                  ['Dollar floor relative to the target',
+                                   'Zerbe: interest is proportional; two to three million dollars on an '
+                                   'individual draws strong interest',
+                                   'Brown firm: takes contingency cases only with over 10 million in tax '
+                                   'liability and timely documentation',
+                                   'Kohn Kohn & Colapinto ([O45E7FrG_mM @ 00:03:47]) vs Brown, LLC - A '
+                                   'Premier Whistleblower Law Firm ([tQIkb01vCTw @ 00:10:09])'],
+                                  ['Reporting route for a criminal-grade case',
+                                   'Skarlatos and Green: in the right case go to IRS CI first, then lodge '
+                                   'the 211 before CI acts',
+                                   'Brown: criminal referral may accelerate the case but raises identity '
+                                   'exposure and criminal exposure risk',
+                                   'Where IRS Problems Get Solved ([ruRW_hNSDYk @ 00:22:37]) vs Brown, LLC '
+                                   '- A Premier Whistleblower Law Firm ([tQIkb01vCTw @ 00:03:58])'],
+                                  ['Proof standard the claim must hit',
+                                   'Zerbe: you just need to show the target owes tax; proving fraud is '
+                                   'only a nice bonus',
+                                   'Skarlatos: the ideal claim is clear-cut tax evasion with strong '
+                                   'evidence the target knew it was wrong',
+                                   'Kohn Kohn & Colapinto ([O45E7FrG_mM @ 00:17:40]) vs Where IRS Problems '
+                                   'Get Solved ([ruRW_hNSDYk @ 00:27:55])'],
+                                  ['Expected timeline from filing to payment',
+                                   'Brown: the average successful claim takes about 10 years, a full '
+                                   'decade of waiting',
+                                   'Zerbe: a seven to eight year process; Green: 8 to 10 years, or 12 to '
+                                   '20 years if litigated',
+                                   'Brown, LLC - A Premier Whistleblower Law Firm ([tQIkb01vCTw @ '
+                                   '00:07:20]) vs Kohn Kohn & Colapinto ([O45E7FrG_mM @ 00:16:01]) and '
+                                   'Where IRS Problems Get Solved ([ruRW_hNSDYk @ 00:06:57])'],
+                                  ['Program payout track record quoted to clients',
+                                   'Stibil: over 1 billion dollars paid in awards on over 6 billion in '
+                                   'collected proceeds',
+                                   'Teach Me: just over one million dollars across about 2,500 awards on '
+                                   '6.39 billion; expect around 15 percent',
+                                   'The Anti-Fraud Coalition ([fQss6bE5tKc @ 00:00:52]) vs Teach Me! '
+                                   'Personal Finance ([WA3dtUQT9f8 @ 00:07:07])']]}},
+              {'heading': '4. Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first trap is filing in the wrong lane. Alina warns that Form 211 looks '
+                              'strikingly like another form that just reports information with no award '
+                              'attached, calling the mix-up a common but devastating mistake that '
+                              'practitioners see constantly [sNHauc7rutQ @ 00:06:25]. Sullivan draws the '
+                              "same line from the agent's side: Form 3949-A is just a report for someone "
+                              'who screwed you or whose employer failed to take out withholding, while the '
+                              'whistleblower program is something a lot bigger [41ejxu80Qtg @ 00:00:35]. '
+                              'Brown adds that calling a tip hotline or the local office makes you '
+                              'ineligible for an award, and going to the FBI or Secret Service may get you '
+                              'treated as a confidential informant or cooperating witness who gets a '
+                              'little cash thrown your way but no big IRS award [RuNrDW46nKY @ 00:01:41]. '
+                              'Even inside the right form, mechanics kill claims: a wrong filing leaves '
+                              'you dead in the water or delayed a couple of years, and an attorney or '
+                              'accountant who holds the information through that professional role and '
+                              'fails to work it out ahead of time can sit in a taint process for three to '
+                              'five years, half a decade lost before anything happens [tQIkb01vCTw @ '
+                              '00:06:05]. Every one of these losses is locked in on filing day, long '
+                              'before any agent reads a word.',
+                              'The second trap is the whistleblower becoming the target. Brown warns that '
+                              'taking documents you are not authorized to have, especially from an '
+                              'employer, can backfire, get you fired, or get you arrested, which is why '
+                              'counsel should rule on what is usable before any collection starts '
+                              '[tQIkb01vCTw @ 00:05:16]. Green reminds callers that being the '
+                              'whistleblower is no get-out-of-jail-free card, pointing to the UBS '
+                              'whistleblower who collected 104 million dollars only after serving 40 '
+                              'months in prison for participating in the scheme [ruRW_hNSDYk @ 00:30:36]. '
+                              'Brown recounts that in one of the biggest recoveries, in excess of a '
+                              "hundred million, the first firm's filing reportedly made the whistleblower "
+                              'the subject of the criminal investigation, and a second firm had to '
+                              'rehabilitate the claim [RuNrDW46nKY @ 00:13:05]. Green has watched the same '
+                              'dynamic from the defense table: in one audit the whistleblower was the '
+                              'former bookkeeper, the audit showed the client was arguably skimming money '
+                              'and so was the bookkeeper, and the criminal case went away once the facts '
+                              'turned muddy [ruRW_hNSDYk @ 00:30:01]. The pattern across all four accounts '
+                              'is identical: personal participation, an unauthorized document grab, or a '
+                              "sloppy first filing hands the target's lawyers a weapon and can flip the "
+                              "reporter into the defendant's chair.",
+                              'The third trap is economic: a winning case can still pay little or nothing. '
+                              'Sullivan states that if the money is not collected you do not get a nickel, '
+                              'so going after a broke target with no collection potential is wasting your '
+                              'time, because the IRS has few agents and only wants the big fish '
+                              '[41ejxu80Qtg @ 00:02:09]. Green spells out the downside math: you only '
+                              'collect what the government collects, so if a billion-dollar target gambles '
+                              'everything away and settles through an offer in compromise for a hundred '
+                              'bucks, that is the base for your percentage, while clients doing '
+                              'fraud-penalty math in their heads need to come back to earth [ruRW_hNSDYk @ '
+                              '00:14:54]. Skarlatos adds that the Whistleblower Office waits until every '
+                              'last cent is collected and then waits two more years for the refund-claim '
+                              'statute of limitations to expire before processing, so a case that collects '
+                              '90 percent in year one can still sit for years over the final 10 percent '
+                              '[ruRW_hNSDYk @ 00:32:51]. Boston 25 News reports the base rate: an '
+                              'estimated 90 percent of claims are found useless, and the average payout is '
+                              'reportedly about 224,000 dollars [mfEL3LienPQ @ 00:02:27]. Price every '
+                              'claim against those numbers, and against a decade of carrying costs, before '
+                              'spending a single day building the file.'],
+               'table': {'caption': 'Firsthand failure modes and their economic damage',
+                         'headers': ['Failure Mode',
+                                     'What Happened Or Was Warned',
+                                     'Economic Hit',
+                                     'Expert Source'],
+                         'rows': [['Agent closes a slam-dunk claim as no change',
+                                   'Restaurant ran five workers on the books and 15 off; an auditor could '
+                                   'count heads at dinner',
+                                   'Audit closed as a no change audit; the client was furious and nothing '
+                                   'was collected',
+                                   'Where IRS Problems Get Solved ([ruRW_hNSDYk @ 00:14:19])'],
+                                  ['Holding back the strongest evidence for later',
+                                   'Whistleblowers sat on a killer email, waiting for the IRS to call '
+                                   'before handing it over',
+                                   'Claims stalled because the IRS is really only going to look at the '
+                                   'filing once',
+                                   'Kohn Kohn & Colapinto ([O45E7FrG_mM @ 00:09:24])'],
+                                  ['Thin he-said-she-said submission to the agent',
+                                   'Three or four pieces of paper with one or two allegations landed on '
+                                   "the agent's desk",
+                                   'Goes straight into the garbage because agents want the case completely '
+                                   'handed to them',
+                                   'Former IRS Agent Representation   4.2M Views ([41ejxu80Qtg @ '
+                                   '00:04:05])'],
+                                  ['Treating status letters as proof of progress',
+                                   'The annual status and stage letter is interpreted so narrowly it only '
+                                   'confirms the claim is held',
+                                   'One letter a year saying field or Whistleblower Office, and that is '
+                                   'all you get',
+                                   'Where IRS Problems Get Solved ([ruRW_hNSDYk @ 00:24:29])'],
+                                  ['IRS already holding the same information',
+                                   'If the government can argue it already had the info, the '
+                                   "whistleblower's contribution is discounted",
+                                   'No award paid at all, despite a valid and useful tip on the target',
+                                   'Where IRS Problems Get Solved ([ruRW_hNSDYk @ 00:28:44])'],
+                                  ['Using the IRS as a weapon against an opponent',
+                                   'Reporters motivated to harm or disrupt the other side; the IRS is very '
+                                   'sensitive to that',
+                                   "Unclean hands and impure thoughts generally don't succeed, regardless "
+                                   'of effort invested',
+                                   'Brown, LLC - A Premier Whistleblower Law Firm ([RuNrDW46nKY @ '
+                                   '00:11:29])'],
+                                  ['Appealing a denied or unfairly low award',
+                                   'Tax court only reviews whether the Whistleblower Office abused its '
+                                   'discretion, not the fraud itself',
+                                   'An almost impossible standard to meet, so appeals rarely succeed and '
+                                   'add more years',
+                                   'Brown, LLC - A Premier Whistleblower Law Firm ([tQIkb01vCTw @ '
+                                   '00:09:54])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Kill-Switch Checks Before Any Form 211 Goes Out',
+                           'body': 'Four practitioner-tested screens that end most claims before the IRS '
+                                   'ever opens the file; fail any one and the case is not worth a decade '
+                                   'of waiting.',
+                           'items': ['Confirm tax liability, not income, clears 2 million dollars: 2 '
+                                     'million of unreported income at a roughly 50 percent effective rate '
+                                     'is only a 1 million liability and falls short of the threshold '
+                                     '[Brown, LLC - A Premier Whistleblower Law Firm — tQIkb01vCTw @ '
+                                     '00:01:37].',
+                                     'Prove collection potential before filing: even with perfect '
+                                     'information the IRS has to decide it will actually collect, and if '
+                                     "there is no collection potential, don't do it [Former IRS Agent "
+                                     'Representation   4.2M Views — 41ejxu80Qtg @ 00:04:23].',
+                                     'Strike yourself out if you are a current or former Treasury '
+                                     'employee, learned the facts through official duties or a federal '
+                                     'contract, or obtained them from an ineligible insider such as an '
+                                     'IRS-employee friend [Teach Me! Personal Finance — WA3dtUQT9f8 @ '
+                                     '00:05:58].',
+                                     'Drop any plan to stay anonymous: you have to identify yourself, and '
+                                     'anonymous complaints are a historic dead end that never gets '
+                                     'anywhere [Boston 25 News — mfEL3LienPQ @ 00:01:18].']}}],
+ 'pull_quote': "This is not a get rich quick scheme; in fact, if anything, it's a lottery ticket that may "
+               'someday pay you something, maybe. — Eric Green, Where IRS Problems Get Solved (ruRW_hNSDYk '
+               '@ 00:10:05).',
+ 'diagram_id': 'diag-06',
+ 'action_checklist': ['Price the case with two hard numbers before calling anyone: what the target '
+                      'reported to the government versus the actual tax liability, with the math showing '
+                      'exactly how you reach the annual deficit, not guesswork [Brown, LLC - A Premier '
+                      'Whistleblower Law Firm — RuNrDW46nKY @ 00:08:47].',
+                      'File on IRS Form 211, the application for award for original information, rather '
+                      'than Form 3949-A, which is only a report and carries no award [Former IRS Agent '
+                      'Representation   4.2M Views — 41ejxu80Qtg @ 00:02:52].',
+                      'Pair the 211 with a comprehensive written memo that walks the IRS through who, '
+                      'what, when, where, why, intent, the estimated tax loss and how you arrived at it, '
+                      'plus the supporting documents [Brown, LLC - A Premier Whistleblower Law Firm — '
+                      'tQIkb01vCTw @ 00:06:49].',
+                      'Add a sheet listing who else can verify your account, where they are located, and '
+                      'what you expect them to say, prioritizing people and businesses the IRS can '
+                      'actually reach in the US [Kohn Kohn & Colapinto — O45E7FrG_mM @ 00:11:37].',
+                      'Complete lines 15 and 16 with the tax the taxpayer owes, broken out by tax year and '
+                      'dollar amount across up to five years, and attach all supporting documentation '
+                      '[Teach Me! Personal Finance — WA3dtUQT9f8 @ 00:12:44].',
+                      'Once the claim is lodged, send written requests for the status and stage of the '
+                      'claim, which the Whistleblower Office must now answer in writing under the Taxpayer '
+                      'First Act [The Anti-Fraud Coalition — fQss6bE5tKc @ 00:02:40].'],
+ 'statutory_citations': [{'title': 'Brown, LLC - A Premier Whistleblower Law Firm — The IRS Whistleblower '
+                                   'Process from Start to Finish [00:00:00]',
+                          'url': 'https://www.youtube.com/watch?v=tQIkb01vCTw&t=0s',
+                          'relevance': 'Primary practitioner testimony on the seven-step Form 211 '
+                                       'lifecycle, thresholds, taint delays, the 10-year timeline, and tax '
+                                       'court appeals.'},
+                         {'title': 'Where IRS Problems Get Solved — IRS Whistleblower Program: Success or '
+                                   'Failure? Eric Green & Bryan Skarlatos [00:07:31]',
+                          'url': 'https://www.youtube.com/watch?v=ruRW_hNSDYk&t=451s',
+                          'relevance': 'Primary practitioner testimony on Whistleblower Office volume, '
+                                       'case-size sweet spots, the CI-first workaround, 6103 silence, and '
+                                       'payment delays.'},
+                         {'title': 'Kohn Kohn & Colapinto — IRS Tax Whistleblower Program: The Basics With '
+                                   'A Focus On Offshore Accounts [00:05:07]',
+                          'url': 'https://www.youtube.com/watch?v=O45E7FrG_mM&t=307s',
+                          'relevance': 'Primary practitioner testimony on building the Form 211 narrative, '
+                                       'enabling-party appendices, offshore account filings, and award '
+                                       'maximization.'},
+                         {'title': 'Brown, LLC - A Premier Whistleblower Law Firm — Exposing Tax Cheats: '
+                                   'How Whistleblowers Can Report Tax Fraud [00:02:20]',
+                          'url': 'https://www.youtube.com/watch?v=RuNrDW46nKY&t=140s',
+                          'relevance': 'Primary practitioner testimony on award-ineligible reporting '
+                                       'channels, two sets of books, insider privilege traps, and '
+                                       'first-firm filing damage.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'i4GnKgGXiMw',
+                       'title': 'Get Paid for Reporting Tax Cheats | IRS Whistleblower Program',
+                       'channel': 'Logan Allec',
+                       'author': 'Logan Allec',
+                       'text': 'Awards can only be issued once a final determination can be made and as '
+                               'such award payments cannot be made until the taxpayer has exhausted all '
+                               'appeal rights.',
+                       'tip': 'Awards can only be issued once a final determination can be made and as '
+                              'such award payments cannot be made until the taxpayer has exhausted all '
+                              'appeal rights.',
+                       'timestamp': 64,
+                       'timestamp_seconds': 64,
+                       'timestamp_label': '[00:01:04]',
+                       'url': 'https://www.youtube.com/watch?v=i4GnKgGXiMw&t=64s',
+                       'markdown': '[00:01:04](https://www.youtube.com/watch?v=i4GnKgGXiMw&t=64s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sNHauc7rutQ',
+                       'title': 'How to Become an IRS Whistleblower (and Get Paid) | Law Minded EP. 11',
+                       'channel': 'Law Minded',
+                       'author': 'Law Minded',
+                       'text': 'The form 211 looks strikingly like another form that just reports '
+                               "information, but there's no award attached to it, so these can be common "
+                               'but devastating mistakes.',
+                       'tip': 'The form 211 looks strikingly like another form that just reports '
+                              "information, but there's no award attached to it, so these can be common "
+                              'but devastating mistakes.',
+                       'timestamp': 368,
+                       'timestamp_seconds': 368,
+                       'timestamp_label': '[00:06:08]',
+                       'url': 'https://www.youtube.com/watch?v=sNHauc7rutQ&t=368s',
+                       'markdown': '[00:06:08](https://www.youtube.com/watch?v=sNHauc7rutQ&t=368s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QxVllUQ7IRk',
+                       'title': 'If You Are Filing A Whistle Blower Complaint, Form 211 Or Turning Someone '
+                                'For Fraud , Form 3949A',
+                       'channel': 'Former IRS Agent Representation   4.2M Views',
+                       'author': 'Former IRS Agent Representation   4.2M Views',
+                       'text': "IRS criminal investigation is looking for conviction rates; they don't "
+                               'care if they collect a nickel, they want that person behind bars.',
+                       'tip': "IRS criminal investigation is looking for conviction rates; they don't care "
+                              'if they collect a nickel, they want that person behind bars.',
+                       'timestamp': 110,
+                       'timestamp_seconds': 110,
+                       'timestamp_label': '[00:01:50]',
+                       'url': 'https://www.youtube.com/watch?v=QxVllUQ7IRk&t=110s',
+                       'markdown': '[00:01:50](https://www.youtube.com/watch?v=QxVllUQ7IRk&t=110s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QxVllUQ7IRk',
+                       'title': 'If You Are Filing A Whistle Blower Complaint, Form 211 Or Turning Someone '
+                                'For Fraud , Form 3949A',
+                       'channel': 'Former IRS Agent Representation   4.2M Views',
+                       'author': 'Former IRS Agent Representation   4.2M Views',
+                       'text': 'IRS basically wants you to hand them a beautiful and perfect case for a '
+                               "conviction; if it's not a large case or a sizable case, don't bother.",
+                       'tip': 'IRS basically wants you to hand them a beautiful and perfect case for a '
+                              "conviction; if it's not a large case or a sizable case, don't bother.",
+                       'timestamp': 182,
+                       'timestamp_seconds': 182,
+                       'timestamp_label': '[00:03:02]',
+                       'url': 'https://www.youtube.com/watch?v=QxVllUQ7IRk&t=182s',
+                       'markdown': '[00:03:02](https://www.youtube.com/watch?v=QxVllUQ7IRk&t=182s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tQIkb01vCTw',
+                       'title': 'The IRS Whistleblower Process from Start to Finish',
+                       'channel': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'author': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'text': 'If you file it wrong, consider yourself dead in the water or at best '
+                               'delayed by a couple years.',
+                       'tip': 'If you file it wrong, consider yourself dead in the water or at best '
+                              'delayed by a couple years.',
+                       'timestamp': 348,
+                       'timestamp_seconds': 348,
+                       'timestamp_label': '[00:05:48]',
+                       'url': 'https://www.youtube.com/watch?v=tQIkb01vCTw&t=348s',
+                       'markdown': '[00:05:48](https://www.youtube.com/watch?v=tQIkb01vCTw&t=348s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tQIkb01vCTw',
+                       'title': 'The IRS Whistleblower Process from Start to Finish',
+                       'channel': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'author': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'text': 'These cases take forever; the average time for a successful claim is about '
+                               '10 years.',
+                       'tip': 'These cases take forever; the average time for a successful claim is about '
+                              '10 years.',
+                       'timestamp': 440,
+                       'timestamp_seconds': 440,
+                       'timestamp_label': '[00:07:20]',
+                       'url': 'https://www.youtube.com/watch?v=tQIkb01vCTw&t=440s',
+                       'markdown': '[00:07:20](https://www.youtube.com/watch?v=tQIkb01vCTw&t=440s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'AL33o4s-dp4',
+                       'title': 'IRS Whistleblower Programs You Should Know About',
+                       'channel': 'Parrish & Goodman Attorneys At Law',
+                       'author': 'Parrish & Goodman Attorneys At Law',
+                       'text': "It's important to note that the IRS whistleblower program protects the "
+                               'identity of the informant and prohibits any form of retaliation against '
+                               'them.',
+                       'tip': "It's important to note that the IRS whistleblower program protects the "
+                              'identity of the informant and prohibits any form of retaliation against '
+                              'them.',
+                       'timestamp': 104,
+                       'timestamp_seconds': 104,
+                       'timestamp_label': '[00:01:44]',
+                       'url': 'https://www.youtube.com/watch?v=AL33o4s-dp4&t=104s',
+                       'markdown': '[00:01:44](https://www.youtube.com/watch?v=AL33o4s-dp4&t=104s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fQss6bE5tKc',
+                       'title': 'IRS Whistleblower Program Primer',
+                       'channel': 'The Anti-Fraud Coalition',
+                       'author': 'The Anti-Fraud Coalition',
+                       'text': 'Unlike some other whistleblower programs, tips cannot be submitted '
+                               'anonymously to the IRS, but the IRS does protect whistleblowers '
+                               'confidentiality.',
+                       'tip': 'Unlike some other whistleblower programs, tips cannot be submitted '
+                              'anonymously to the IRS, but the IRS does protect whistleblowers '
+                              'confidentiality.',
+                       'timestamp': 17,
+                       'timestamp_seconds': 17,
+                       'timestamp_label': '[00:00:17]',
+                       'url': 'https://www.youtube.com/watch?v=fQss6bE5tKc&t=17s',
+                       'markdown': '[00:00:17](https://www.youtube.com/watch?v=fQss6bE5tKc&t=17s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fQss6bE5tKc',
+                       'title': 'IRS Whistleblower Program Primer',
+                       'channel': 'The Anti-Fraud Coalition',
+                       'author': 'The Anti-Fraud Coalition',
+                       'text': "You don't need a lawyer to file a tip, but a lawyer can help you navigate "
+                               'the process and craft the tip in a way that might heighten the likelihood '
+                               'of success.',
+                       'tip': "You don't need a lawyer to file a tip, but a lawyer can help you navigate "
+                              'the process and craft the tip in a way that might heighten the likelihood '
+                              'of success.',
+                       'timestamp': 34,
+                       'timestamp_seconds': 34,
+                       'timestamp_label': '[00:00:34]',
+                       'url': 'https://www.youtube.com/watch?v=fQss6bE5tKc&t=34s',
+                       'markdown': '[00:00:34](https://www.youtube.com/watch?v=fQss6bE5tKc&t=34s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RuNrDW46nKY',
+                       'title': 'Exposing Tax Cheats: How Whistleblowers Can Report Tax Fraud',
+                       'channel': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'author': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'text': 'If you do it in that manner you will not, let me repeat myself, you will '
+                               'not be eligible for whistleblower award.',
+                       'tip': 'If you do it in that manner you will not, let me repeat myself, you will '
+                              'not be eligible for whistleblower award.',
+                       'timestamp': 101,
+                       'timestamp_seconds': 101,
+                       'timestamp_label': '[00:01:41]',
+                       'url': 'https://www.youtube.com/watch?v=RuNrDW46nKY&t=101s',
+                       'markdown': '[00:01:41](https://www.youtube.com/watch?v=RuNrDW46nKY&t=101s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RuNrDW46nKY',
+                       'title': 'Exposing Tax Cheats: How Whistleblowers Can Report Tax Fraud',
+                       'channel': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'author': 'Brown, LLC - A Premier Whistleblower Law Firm',
+                       'text': 'As a result of the filing in the first firm it was thought that they then '
+                               'became the subject of the criminal investigation and got hurt in the '
+                               'process, and the second firm rehabilitated it.',
+                       'tip': 'As a result of the filing in the first firm it was thought that they then '
+                              'became the subject of the criminal investigation and got hurt in the '
+                              'process, and the second firm rehabilitated it.',
+                       'timestamp': 785,
+                       'timestamp_seconds': 785,
+                       'timestamp_label': '[00:13:05]',
+                       'url': 'https://www.youtube.com/watch?v=RuNrDW46nKY&t=785s',
+                       'markdown': '[00:13:05](https://www.youtube.com/watch?v=RuNrDW46nKY&t=785s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '41ejxu80Qtg',
+                       'title': 'Former IRS Agent Explains How To Become a IRS Whistleblower & Receive a '
+                                'Reward For Exposing Fraud',
+                       'channel': 'Former IRS Agent Representation   4.2M Views',
+                       'author': 'Former IRS Agent Representation   4.2M Views',
+                       'text': "If the money's not collected, guess what, you do not get a nickel, so if "
+                               "the person you're going after is broke you're wasting your time.",
+                       'tip': "If the money's not collected, guess what, you do not get a nickel, so if "
+                              "the person you're going after is broke you're wasting your time.",
+                       'timestamp': 129,
+                       'timestamp_seconds': 129,
+                       'timestamp_label': '[00:02:09]',
+                       'url': 'https://www.youtube.com/watch?v=41ejxu80Qtg&t=129s',
+                       'markdown': '[00:02:09](https://www.youtube.com/watch?v=41ejxu80Qtg&t=129s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mfEL3LienPQ',
+                       'title': 'Becoming an IRS Informant Can Make You Money',
+                       'channel': 'Boston 25 News',
+                       'author': 'Boston 25 News',
+                       'text': "It's estimated that 90% of the claims are found to be useless and the "
+                               'average payout is reportedly about $224,000.',
+                       'tip': "It's estimated that 90% of the claims are found to be useless and the "
+                              'average payout is reportedly about $224,000.',
+                       'timestamp': 147,
+                       'timestamp_seconds': 147,
+                       'timestamp_label': '[00:02:27]',
+                       'url': 'https://www.youtube.com/watch?v=mfEL3LienPQ&t=147s',
+                       'markdown': '[00:02:27](https://www.youtube.com/watch?v=mfEL3LienPQ&t=147s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WA3dtUQT9f8',
+                       'title': 'IRS Form 211 walkthrough ARCHIVED COPY - READ COMMENTS ONLY',
+                       'channel': 'Teach Me! Personal Finance',
+                       'author': 'Teach Me! Personal Finance',
+                       'text': 'You as the taxpayer or the whistleblower must sign this form, and it must '
+                               'be submitted in writing.',
+                       'tip': 'You as the taxpayer or the whistleblower must sign this form, and it must '
+                              'be submitted in writing.',
+                       'timestamp': 233,
+                       'timestamp_seconds': 233,
+                       'timestamp_label': '[00:03:53]',
+                       'url': 'https://www.youtube.com/watch?v=WA3dtUQT9f8&t=233s',
+                       'markdown': '[00:03:53](https://www.youtube.com/watch?v=WA3dtUQT9f8&t=233s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'O45E7FrG_mM',
+                       'title': 'IRS Tax Whistleblower Program: The Basics With A Focus On Offshore '
+                                'Accounts',
+                       'channel': 'Kohn Kohn & Colapinto',
+                       'author': 'Kohn Kohn & Colapinto',
+                       'text': "They'll say well yeah I had this killer email but I wanted to wait till "
+                               "they called me before I gave that to the IRS; don't do that, give the IRS "
+                               "everything you've got.",
+                       'tip': "They'll say well yeah I had this killer email but I wanted to wait till "
+                              "they called me before I gave that to the IRS; don't do that, give the IRS "
+                              "everything you've got.",
+                       'timestamp': 564,
+                       'timestamp_seconds': 564,
+                       'timestamp_label': '[00:09:24]',
+                       'url': 'https://www.youtube.com/watch?v=O45E7FrG_mM&t=564s',
+                       'markdown': '[00:09:24](https://www.youtube.com/watch?v=O45E7FrG_mM&t=564s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EADzW7gAeVw',
+                       'title': "IRS whistleblower couldn't live with himself if he stayed quiet: Attorney "
+                                'for whistleblower',
+                       'channel': 'Fox News',
+                       'author': 'Fox News',
+                       'text': 'At the end of the day he decided he could not live with himself if he '
+                               'stayed quiet and said nothing.',
+                       'tip': 'At the end of the day he decided he could not live with himself if he '
+                              'stayed quiet and said nothing.',
+                       'timestamp': 209,
+                       'timestamp_seconds': 209,
+                       'timestamp_label': '[00:03:29]',
+                       'url': 'https://www.youtube.com/watch?v=EADzW7gAeVw&t=209s',
+                       'markdown': '[00:03:29](https://www.youtube.com/watch?v=EADzW7gAeVw&t=209s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ruRW_hNSDYk',
+                       'title': 'IRS Whistleblower Program: Success or Failure? Eric Green & Bryan '
+                                'Skarlatos',
+                       'channel': 'Where IRS Problems Get Solved',
+                       'author': 'Where IRS Problems Get Solved',
+                       'text': "I've had many billion dollar claims filed; bigger is not better, I'll say "
+                               'it again, bigger is not better.',
+                       'tip': "I've had many billion dollar claims filed; bigger is not better, I'll say "
+                              'it again, bigger is not better.',
+                       'timestamp': 763,
+                       'timestamp_seconds': 763,
+                       'timestamp_label': '[00:12:43]',
+                       'url': 'https://www.youtube.com/watch?v=ruRW_hNSDYk&t=763s',
+                       'markdown': '[00:12:43](https://www.youtube.com/watch?v=ruRW_hNSDYk&t=763s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ruRW_hNSDYk',
+                       'title': 'IRS Whistleblower Program: Success or Failure? Eric Green & Bryan '
+                                'Skarlatos',
+                       'channel': 'Where IRS Problems Get Solved',
+                       'author': 'Where IRS Problems Get Solved',
+                       'text': 'Bypass the Whistleblower office, go directly to IRS CI, and then before CI '
+                               'actually takes action lodge your claim with the Whistleblower office to '
+                               'make sure that you have the ability to get the award.',
+                       'tip': 'Bypass the Whistleblower office, go directly to IRS CI, and then before CI '
+                              'actually takes action lodge your claim with the Whistleblower office to '
+                              'make sure that you have the ability to get the award.',
+                       'timestamp': 1357,
+                       'timestamp_seconds': 1357,
+                       'timestamp_label': '[00:22:37]',
+                       'url': 'https://www.youtube.com/watch?v=ruRW_hNSDYk&t=1357s',
+                       'markdown': '[00:22:37](https://www.youtube.com/watch?v=ruRW_hNSDYk&t=1357s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'}]}

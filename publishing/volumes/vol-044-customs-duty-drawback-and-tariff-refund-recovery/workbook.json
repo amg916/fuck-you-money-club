@@ -1,470 +1,470 @@
 {
   "workbook_id": "wb-044-customs-duty-drawback-and-tariff-refund-recovery",
   "volume_id": "vol-044-customs-duty-drawback-and-tariff-refund-recovery",
-  "title": "Customs Duty Drawback, Tariff Refund & Antitrust Claim Recovery — Operator Companion Workbook",
-  "subtitle": "6 Printable Operator Worksheets for Three-Lane Recovery Underwriting, Contingency Economics, Customs Filing Controls, Settlement Claim Evidence, Automation Resilience, and Small-Team Launch Execution",
+  "title": "Customs Duty Drawback, Tariff Refund & Antitrust Claim Recovery — Practitioner Testimony Operator Workbook",
+  "subtitle": "A field-tested recovery workbook for drawback eligibility, claim execution, IEEPA refunds, Section 301 and AD/CVD exposure, bond sizing, ACE portal reporting, ACH refund setup, entry summaries, post summary corrections, and the CBP protest and court ladder",
   "worksheets": [
     {
       "worksheet_id": "ws-01",
       "number": 1,
-      "title": "Arbitrage Deal / Counterparty Underwriting & Spread Qualification",
-      "purpose": "Qualify recovery opportunities before purchasing records or committing specialist hours. Separate drawback, tariff correction or protest, and settled antitrust claims into independent eligibility decisions, then establish claimant authority, collectible amounts, evidence quality, fee economics, and a documented reason to proceed.",
-      "chapter_ref": "Q1, Q2, Q6",
+      "title": "Drawback Lookback and Claim Readiness Audit",
+      "purpose": "Size the five-year drawback opportunity, choose the right claim type for each product family, prove the import-to-export trace, and decide whether filing clears the cost hurdle before you commit leadership time, provider fees, or a privilege application to Customs.",
+      "chapter_ref": "Q1-Q2",
       "instructions": [
-        "Open one opportunity record per claimant, recovery lane, and underlying claim population. Use manifest intelligence only for prospecting, obtain claimant-authorized source records, and name the person responsible for confirming ownership before estimating any collectible recovery.",
-        "Have the licensed customs broker or trade counsel classify the customs route before quoting fees. Distinguish unused merchandise drawback from entry correction and protest; a matching tariff number alone never establishes a valid claim.",
-        "For settlement opportunities, read the operative class definition, allocation plan, administrator instructions, and court orders. Record the actual claims deadline and distribution conditions rather than treating an announced settlement fund as immediately collectible money.",
-        "Price each lane against its own documentation burden, specialist charges, bond exposure, and payment delay. Quote contingency fees only on contractually defined realized recovery, and exclude importer principal, merchant sales, and settlement pool size from operator revenue.",
-        "Resolve duplicate representation, missing export evidence, adverse duty treatment, and deadline uncertainty before accepting the engagement. Preserve rejected opportunities with specific reasons so acquisition automation cannot repeatedly revive an economically or legally defective claim population."
+        "Pull five years of import entries and export records before writing anything, because first-time claimants can reach back five years from import.",
+        "Complete the fields in order; the one-shipment trace and export scrub must be finished before any waiver of prior notice or accelerated payment application.",
+        "Cite the practitioner source for every rule you rely on, and mark any number that is your own estimate rather than a reported figure.",
+        "Stage a mock audit of your own documentation so you know where every record and data element lives before Customs asks in a desk review.",
+        "If projected recovery minus administrative expense and provider fees is not positive, record that result and stop rather than filing."
       ],
       "fields": [
         {
-          "name": "Claimant identity and recovery ownership",
+          "name": "import_export_profile",
           "type": "textarea",
-          "prompt": "Identify the legal claimant, operating entities, importer identifiers, signing authority, and any transfer affecting recovery rights. Explain how documentary ownership will be established independently of the prospecting database or salesperson's representation.",
-          "example": "Example: Harbor Components LLC supplies its W-9, importer number, corporate resolution, and acquisition agreement. The agreement retained pre-closing customs refunds with the seller, so the first engagement covers only post-closing imports. The chief operating officer signs for the LLC; a separate seller authorization would be required before pursuing the older entry population or quoting fees against it."
+          "prompt": "Describe your import-to-export flow in plain operational terms: which products you import, which you export or destroy, which HTS numbers they share, and whether exports run through your own entity or through a customer, partner, or domestic supplier relationship.",
+          "example": "We import China-origin housings that carry Section 301 duty and export finished units to Canada, while a domestic distributor exports items under the same HTS number. Practitioners say Customs refunds 99% of duties, taxes, and fees on goods later exported or destroyed, keeping 1% [Connecticut District Export Council — bOFLeOBOaF0 @ 00:06:41], so both flows are mapped as drawback candidates."
         },
         {
-          "name": "Three-lane opportunity segmentation",
+          "name": "five_year_lookback_estimate",
           "type": "textarea",
-          "prompt": "Split the opportunity into drawback, tariff correction or protest, and settled antitrust recovery. Assign separate claim populations, evidence packages, expected amounts, and accountable specialists so one lane cannot borrow another lane's eligibility.",
-          "example": "Example: Case HC-044 contains $100,000 of potentially eligible drawback duties, a separate $40,000 classification overpayment, and an illustrative $20,000 settlement distribution estimate. The same $40,000 duty component is excluded from the drawback population. A licensed broker owns customs analysis, while a settlement specialist checks the court-approved claim process. Three child records retain distinct deadlines and recovery calculations."
+          "prompt": "Estimate the total duties, taxes, and fees paid on eligible imports over the past five years, then state what share you believe is recoverable. Note who in leadership must see the number and what assumption about company size might be blocking action today.",
+          "example": "Five-year lookback shows roughly $1.4 million in duties and fees on goods later exported. Evana notes that mid-sized companies assuming drawback is only for big companies find this number gets the CFO's attention [Evana — 6bp1bi4-zH4 @ 00:03:47]. With 70-80% of eligible drawback going unclaimed each year [USA Customs Clearance — QX8vx-rrO4A @ 00:00:52], the CFO briefing is scheduled first."
         },
         {
-          "name": "Drawback statutory eligibility screen",
-          "type": "textarea",
-          "prompt": "Document the applicable 19 U.S.C. § 1313 provision, import and export dates, merchandise condition, duty components, and tracing method. Have the broker identify exclusions and substitution restrictions before accepting the proposed collectible base.",
-          "example": "Example: The broker screens unused merchandise under § 1313(j)(1), linking imported parts to actual exported units through serial numbers and warehouse movements. From $112,000 of paid duties, $12,000 of antidumping duties is excluded under § 1313(v). The remaining $100,000 supports a preliminary $99,000 recovery at 99%, subject to complete evidence, timely filing, and any additional applicable restrictions."
+          "name": "drawback_type_selection",
+          "type": "text",
+          "prompt": "Identify which drawback path fits each product family: unused merchandise traced by direct identification, substitution of commercially interchangeable goods, or destroyed merchandise. Explain the records you hold for each and why that path beats the alternatives for this inventory.",
+          "example": "Unused merchandise drawback covers imported goods exported or destroyed without being used, traced to the export by direct identification [Scarbrough Global — E-PQ2z_UoCM @ 00:00:25]. Our spare parts fit that path. Mixed warehouse stock moves to substitution, which practitioners call especially powerful for commercially interchangeable goods under the same HTS [USA Customs Clearance — khfmXSwD3DE @ 00:02:48]."
         },
         {
-          "name": "Tariff correction and protest route",
+          "name": "hts_substitution_match",
           "type": "textarea",
-          "prompt": "Identify the entry decision being corrected, liquidation status, available administrative route, and controlling deadline. Distinguish an ACE Post-Summary Correction from a protest under 19 U.S.C. § 1514 and document the broker's route selection.",
-          "example": "Example: An entry accepted January 15 has a classification error supported by a technical datasheet and invoice. The broker checks current ACE eligibility, the general 300-day PSC limit, and the requirement to precede scheduled liquidation by at least 15 days. If liquidation has occurred, counsel separately evaluates a protest within 180 days of the relevant protestable decision; PSC timing is not extended by that period."
+          "prompt": "List each import HTS number alongside the export HTS number you plan to substitute against. Flag 'other' lines that must match at 10 digits, any 'other other' lines that are barred, and show the lesser-of value comparison for every substituted pair.",
+          "example": "Import line and export line match at 8 digits, so substitution holds. One 'other' line was pushed to 10 digits and one 'other other' line was dropped. Because you can only claim drawback on the lesser of the import or export value when substituting [Alliance Duty Drawback Services — mkogoOMopss @ 00:03:26], each pair shows both values and the lower figure claimed."
         },
         {
-          "name": "Settlement class and collectible distribution",
-          "type": "textarea",
-          "prompt": "Record the exact settlement class, covered purchase period, exclusions, allocation formula, and administrator evidence rules. Distinguish qualifying purchases from projected distributions and identify any unresolved condition preventing a reliable cash estimate.",
-          "example": "Example: An illustrative court-approved industrial-components settlement covers direct purchases during its defined six-year period. Harbor documents $2,000,000 of qualifying purchases, but the allocation model supports only a provisional $20,000 distribution. The specialist checks affiliate exclusions, releases, and previous claim submissions. Purchase volume remains an allocation input; neither that volume nor the entire settlement fund becomes operator revenue."
+          "name": "ineligible_duty_screen",
+          "type": "text",
+          "prompt": "Separate every duty type paid on candidate entries into recoverable and non-recoverable buckets. Record Section 301 and 201 amounts separately from Section 232, antidumping and countervailing, and over-quota duties, and note any lines where practitioners disagree on eligibility.",
+          "example": "Thompson Hine's Aaron Mandelbaum states the 99% refund on duties, fees and taxes [Thompson Hine LLP — WqGvMD-AOqg @ 00:05:44], and Section 301 and 201 sit in the recoverable bucket. Section 232 steel duties, AD/CVD deposits and over-quota amounts are moved to a non-recoverable tab, since AD/CVD goods sit outside drawback entirely and are never modeled into the forecast."
         },
         {
-          "name": "Evidence coverage and acquisition cost",
+          "name": "one_shipment_trace",
           "type": "textarea",
-          "prompt": "Inventory the records already available and price the work needed to close material gaps. Assign coverage percentages to claim value rather than document counts, and identify which missing evidence would defeat recovery entirely.",
-          "example": "Example: ACE entry summaries cover 100% of proposed import duties, while export BOL, AES references where required, and warehouse records support 82% of proposed drawback value. Recovering archived shipment records costs $1,400 within a $3,600 documentation budget. The unsupported 18% stays outside the filing population until the broker accepts tracing evidence; ten extra invoices cannot substitute for missing export proof."
+          "prompt": "Pick one representative shipment and trace it from purchase order to import entry, through inventory movements, to the export record. Note each document, system, and owner along the path, and where the import record fails to tie back to export.",
+          "example": "Trace of one March container runs PO, entry summary, receiving log, pick ticket, and export bill of lading. Customs grants waiver of prior notice off this trace [Connecticut District Export Council — bOFLeOBOaF0 @ 00:31:30]. The gap sits at receiving, matching the warning that claimants miss by not tying the import record back to the export record [Scarbrough Global — VcD4-UlsOzk @ 00:03:06]."
         },
         {
-          "name": "Contingency rate and earned fee trigger",
+          "name": "export_proof_scrub",
           "type": "textarea",
-          "prompt": "Specify the fee rate, cash receipt trigger, treatment of partial recoveries, and allocation of reversals. Identify who invoices the claimant and whether external specialist costs are operator expenses or separately authorized client charges.",
-          "example": "Example: Drawback carries a 30% contingency on realized eligible refunds, tariff correction carries 25%, and settlement recovery carries 30%. A $99,000 drawback receipt earns a $29,700 fee under the example agreement. An approved but unpaid claim earns no invoice under this contract. Broker and documentation charges are operator expenses already included in underwriting, rather than surprise deductions from the claimant's retained recovery."
+          "prompt": "Describe how you will test the export database against hard-copy export documents before filing. List the foreign-to-foreign moves, cancelled orders, and short shipments removed, and explain how courier proof-of-delivery records are archived as shipments move rather than at claim time.",
+          "example": "A sample of 200 export lines was tested against hard copies, and 14 foreign-to-foreign moves plus 6 short shipments were scrubbed [International Trade Council — O5a8FOALaXk @ 00:52:22]. Courier proof-of-delivery files are now saved weekly because those records expire [Flexport — 1_L7fnmAAU0 @ 00:27:04], and desk reviews typically catch companies on proof of exportation [International Trade Council — O5a8FOALaXk @ 00:43:11]."
         },
         {
-          "name": "Counterparty and specialist diligence",
+          "name": "returns_and_destruction_controls",
           "type": "textarea",
-          "prompt": "Assess claimant responsiveness, broker credentials, counsel scope, administrator authenticity, and payment instructions. Capture independently verified contact channels and conflicts, including any existing representative claiming fees on the same underlying recovery rights.",
-          "example": "Example: The operations lead verifies the broker's license and permit status through official records, confirms the engagement directly, and receives professional coverage details. Harbor identifies an incumbent broker but no existing drawback engagement. The settlement portal is reached from the court-authorized administrator website, not an emailed payment link. Any bank-account change requires a callback using a previously verified telephone number."
+          "prompt": "Explain how open retail returns are physically separated from unused drawback stock and Canada or Mexico exports, and how any planned destruction will be scheduled, witnessed by a disinterested third party, and documented with a certificate before goods are destroyed.",
+          "example": "Open returns now receive red stickers, a separate zone, and an '-R' SKU suffix so they cannot contaminate unused drawback or Canada/Mexico exports [Flexport — 1_L7fnmAAU0 @ 00:29:29]. Damaged stock waits for a scheduled, witnessed destruction event with a certificate, because Customs often denies destruction claims when there is no proof the destruction was supervised [Scarbrough Global — lsd6_oB4p00 @ 00:02:29]."
         },
         {
-          "name": "Lane-specific timing and bond exposure",
+          "name": "partner_claim_structure",
           "type": "textarea",
-          "prompt": "Estimate evidence preparation, submission, review, and payment intervals separately for each lane. State whether accelerated drawback payment is requested, what surety security is required, and which assumptions could materially lengthen cash conversion.",
-          "example": "Example: Budget 30–90 days for drawback evidence assembly and an illustrative 6–18 months for payment without acceleration. A broker-approved accelerated-payment route might shorten post-acceptance timing to 60–120 days, but requires authorization and adequate bond capacity. Tariff refunds use a 3–12-plus-month planning range without assuming a drawback bond. Settlement distributions use 6–24-plus months and no CBP bond."
+          "prompt": "Map any supply chain partners whose exports or imports could support a joint claim. State the quantity actually sold between you, how confidential pricing will be shielded through an intermediary or NDA, and what incentive, if any, partners will receive.",
+          "example": "Our importer partner hands imports to us for a joint claim capped at the quantity sold between us under a commercial relationship [Simply Trade Podcast — 3N8L-IKPY4A @ 00:17:10]. Pricing runs through an NDA'd middleman so neither side sees the other's documents, with about 10% per claim offered [World Trade Center Denver — SO9sA-x5K0k @ 00:39:02]. Selling unused credits is rejected as noncompliant."
         },
         {
-          "name": "Underwriting decision and rejection reason",
+          "name": "go_no_go_economics",
           "type": "textarea",
-          "prompt": "Record the accepted claim ceiling, expected fee, direct costs, evidence conditions, and named reviewer. Explain why the opportunity exceeds the required contribution threshold without relying on accelerated payment or unsupported settlement estimates.",
-          "example": "Example: Accept the documented $100,000 drawback duty base for further broker review, supporting a preliminary $99,000 refund and $29,700 operator fee. Budget $7,900 direct costs, leaving $21,800 before fixed overhead. Hold the separate tariff and settlement opportunities pending their own eligibility decisions. Reject any additional duties whose statutory treatment or export tracing remains unresolved rather than inflating the sales pipeline."
+          "prompt": "Weigh projected recovery against administrative filing expense and provider fees. Record the fee percentage quoted, any provider minimum, the accelerated payment timeline you expect, and the exact day the privilege application and first claims will be filed together.",
+          "example": "Provider quotes 10% of recovery, a good starting point per Nogueiras [International Trade Council — O5a8FOALaXk @ 00:59:22], while CEDA's $250K floor would refer us elsewhere [World Trade Center Denver — SO9sA-x5K0k @ 00:28:03]. Accelerated payment approval may take 120 days before claims pay in about 30. Privilege application and claims file the same day to lock the five-year clock."
         }
       ],
-      "completion_gate": "The operator and responsible specialist sign three separate eligibility decisions, reconcile all overlapping duty components, verify claimant authority, and approve only documented collectible bases with explicit cost and timing assumptions."
+      "completion_gate": "Gate cleared only when the five-year lookback is sized, every claimed duty is confirmed recoverable, one shipment traces cleanly from purchase order to export, the export database reconciles to hard copies, and the recovery math is positive after fees and administrative expense."
     },
     {
       "worksheet_id": "ws-02",
       "number": 2,
-      "title": "Unit Economics, Escrow/Reserve Float & Working-Capital Calculator",
-      "purpose": "Translate recoveries into earned contingency revenue without counting claimant principal. Reconcile deal-level costs, operating reserves, payment timing, and surety collateral with the canonical annual scorecard, while distinguishing unrestricted operator cash from restricted funds, receivables, and refundable client money.",
-      "chapter_ref": "Q3, Q4",
+      "title": "IEEPA Refund, Section 301 and AD/CVD Exposure Map",
+      "purpose": "Confirm who owns the IEEPA refund, map every entry by liquidation status against the refund and protest clocks, file clean CAPE declarations once, and measure the antidumping, countervailing, and bond liabilities that can erase a refund if left unchecked.",
+      "chapter_ref": "Q3-Q4",
       "instructions": [
-        "Calculate each lane independently using realized recovery multiplied by its contracted contingency rate. Show eligible duties, correction refunds, and settlement distributions as claimant amounts; never combine underlying purchases or refund principal with earned operator revenue.",
-        "Separate direct claim expenses, fixed overhead, reserve transfers, and surety collateral. A cash reserve reduces immediately deployable liquidity but does not automatically create an expense, while collateral remains restricted until the surety contract permits release.",
-        "Use the canonical Conservative, Base, and Scaled annual figures exactly. Reconcile annual expense totals to those figures, explaining how quoted monthly operating overhead differs from variable broker, documentation, contractor, and acquisition costs included in total expenses.",
-        "Build a monthly cash schedule from actual expected collection dates rather than signed contract value. Stress delayed customs payment and delayed settlement distributions together, then identify the maximum funding deficit before paying owner distributions or expanding acquisition.",
-        "Send claimant recoveries directly to the authorized claimant account wherever the payment process permits. If an actual escrow arrangement is required, document the independent custodian, permitted disbursements, and reconciliation controls instead of treating client money as float."
+        "Confirm importer-of-record status in ACE before spending a dollar on services, counsel, or financing.",
+        "Pull the ES003 report and build one master entry list; every later field draws from that list.",
+        "Treat every CAPE declaration as final, because an accepted filing cannot be amended.",
+        "Calendar every liquidation date and the 180-day protest window the same day the entry list is built.",
+        "Size bond and AD/CVD exposure at the higher tariff rate so the refund case is not undone by a liability you did not model."
       ],
       "fields": [
         {
-          "name": "Drawback deal contribution calculation",
-          "type": "textarea",
-          "prompt": "Calculate eligible paid duties, statutory recovery percentage, realized refund, contracted fee, direct costs, and pre-overhead contribution. Explain every deduction and keep the claimant's retained recovery separate from the operator's fee revenue.",
-          "example": "Example: $100,000 eligible duties × 99% produces a $99,000 realized refund. At 30%, operator revenue is $29,700 and the claimant retains $69,300 before its own expenses. Documentation costs $3,600, broker services $2,200, illustrative bond premium $1,200, and acquisition $900. Total direct cost is $7,900; contribution is $21,800 before fixed overhead. The premium is a quote assumption, not a statutory price."
+          "name": "ior_status_confirmation",
+          "type": "text",
+          "prompt": "State which legal entity appears as importer of record on each entry, how you confirmed it in ACE, and whether any sister company, DDP supplier, or carrier actually holds that role. Note any entity you assumed was not the importer.",
+          "example": "ACE confirms our company is importer of record on 412 entries, and a subsidiary appears on 37 more. Maguire has seen more businesses that were the importer of record and did not know it than the reverse [Lutz — 6Y30Cf9AeYE @ 00:26:17], and CAPE accepts requests only from the importer or authorized broker [The Wax Seal — mL-p627SkkI @ 00:02:28]."
         },
         {
-          "name": "Tariff refund deal contribution calculation",
+          "name": "es003_entry_pull",
           "type": "textarea",
-          "prompt": "Calculate the overpayment actually recovered through the selected correction or protest route, the contingency fee, specialist costs, and contribution. Do not apply drawback's 99% convention or accelerated-payment bond assumptions to this lane.",
-          "example": "Example: A supported classification correction produces a $40,000 refund, excluding interest from the contracted fee base. The 25% fee equals $10,000; Harbor retains $30,000. Broker or counsel work costs $1,800, records preparation $900, and acquisition $600. Direct cost totals $3,300, leaving $6,700 before fixed overhead. No separate accelerated drawback bond is budgeted merely because the payment originates with CBP."
+          "prompt": "Describe how you pulled the ES003 report, the date range covered, the number of IEEPA-hit entries found, and how the result was reconciled line by line against any refund filing your broker already made. Flag entries the broker list missed.",
+          "example": "ES003 covering 2025 forward was pulled from our own ACE account and matched against the broker's filed list. Opscale Exchange describes a free ES003 review that found an extra $1 million on top of a $2.1 million filing the client's own broker had missed [Opscale Exchange — t98WTC5Cm9o @ 00:16:56], so 23 unmatched entries were escalated before any declaration."
         },
         {
-          "name": "Settlement recovery deal contribution calculation",
+          "name": "liquidation_status_map",
           "type": "textarea",
-          "prompt": "Use the claimant's actual settlement distribution rather than qualifying purchases or the advertised pool. Calculate the earned contingency, claim preparation cost, specialist expense, and contribution while identifying allocation or timing uncertainty.",
-          "example": "Example: A $20,000 realized distribution on $2,000,000 of qualifying purchases generates $6,000 revenue at 30%; the claimant retains $14,000. Documentation costs $800, specialist review $500, and acquisition $300. The $1,600 direct cost leaves $4,400 before fixed overhead. A preliminary administrator estimate remains a forecast until paid under this contract, and this lane carries no CBP surety-bond requirement."
+          "prompt": "Sort every IEEPA-hit entry into unliquidated, inside the 80-day window, and liquidated buckets. For each bucket record the refund path, the protest deadline counted 180 days from liquidation, and whether an entry-specific court order will be required. Note the owner responsible for each deadline.",
+          "example": "Unliquidated entries go through CAPE or PSC, and anything outside the 80-day window is pushed into protest or court before the 180-day protest clock expires [Tariffs Lawsuit — DOHCXtY_zI0 @ 00:03:14]. For older liquidated entries, CBP says it needs an entry-specific court order [Freightos — cIMBwZ9J60I @ 00:00:58], so those 41 entries were routed to counsel."
         },
         {
-          "name": "Reserve policy and distributable cash",
-          "type": "textarea",
-          "prompt": "Define fee-funded reserves for corrections, reversals, and servicing obligations. Show reserve balances separately from expenses and claimant funds, then calculate deployable cash after actual costs and reserve transfers for each worked deal.",
-          "example": "Example: Reserve 15% of the $29,700 drawback fee, or $4,455, leaving $17,345 after $7,900 direct costs. Reserve 10% of the $10,000 tariff fee, leaving $5,700 after $3,300 costs. Reserve 10% of the $6,000 settlement fee, leaving $3,800 after $1,600 costs. Combined contribution is $32,900; combined reserves are $6,055 and deployable cash is $26,845 before overhead."
+          "name": "ach_bank_readiness",
+          "type": "text",
+          "prompt": "Record the US-bank, USD-denominated ACH routing and account details loaded in ACE, who entered them, who independently verified them, and the date. Note whether any refund would otherwise route through a 4811 or notify party instead of directly to you.",
+          "example": "Controller loaded routing and account numbers in ACE and treasury verified them against the bank letter. Practitioners report about $737 million was still trapped because importers had not given Customs their bank details [Finn's Fine Print — Pf2fDVQXfmk @ 00:03:45], and a wrong account number sends the refund into the void for months [Ask The Customs Manager — NRCd8c6t8rY @ 00:02:13]."
         },
         {
-          "name": "Conservative annual scorecard bridge",
+          "name": "cape_declaration_quality",
           "type": "textarea",
-          "prompt": "Reproduce the Conservative Formula v2.0 outcome and supply a lane mix that exactly reconciles earned revenue. Calculate total expenses and explain the staffing notation without converting contractor engagements into additional full-time employees.",
-          "example": "Example: Drawback recoveries of $200,000 at 30% yield $60,000; tariff refunds of $80,000 at 25% yield $20,000; settlement distributions of $100,000 at 30% yield $30,000. Revenue totals $110,000. Expenses are $74,800, leaving $35,200 annual owner net profit at 32%. Staffing is 1 FT + 3 C: one full-time operator with three contracted specialists, not four full-time salaries."
+          "prompt": "List the validation checks you will run on each CAPE declaration before submission, including entry numbers, formatting, banking setup, and reused entries. Explain who signs off, and how you will avoid errors that cannot be fixed after acceptance.",
+          "example": "Only about 70% of declarations passed initial validation, so roughly one in three failed at the door [Tariffs Lawsuit — DOHCXtY_zI0 @ 00:02:08]. Because an accepted CAPE declaration cannot be amended [Tariffs Lawsuit — DOHCXtY_zI0 @ 00:02:26], our checklist compares each entry number with the 7501, confirms ACH setup, blocks reused numbers, and requires a second reviewer's signature."
         },
         {
-          "name": "Base annual scorecard bridge",
+          "name": "court_route_decision",
           "type": "textarea",
-          "prompt": "Reproduce the Base Formula v2.0 outcome with an exact lane-level fee bridge. Distinguish annual total expenses from recurring overhead and retain the canonical profit amount, margin, and staffing configuration without rounding away differences.",
-          "example": "Example: $900,000 drawback recoveries at 30% produce $270,000; $500,000 tariff refunds at 25% produce $125,000; $400,000 settlement distributions at 30% produce $120,000. The $1,800,000 claimant recovery base generates $515,000 revenue. Expenses of $283,250 leave $231,750 owner net profit at 45.0%. One illustrative cost split is $60,000 annual fixed overhead plus $223,250 variable delivery costs, using 1 FT + 3 C."
+          "prompt": "Decide whether to file a protective suit at the Court of International Trade for any entry group. Record the dollar value at stake, the counsel consulted, the expected cost, and why waiting on the administrative route is or is not acceptable.",
+          "example": "Tariffs Lawsuit encourages filing in the Court of International Trade so you are a party before Judge Eaton, who can order the refund immediately [Tariffs Lawsuit — dWEik4YquEE @ 00:00:35]. CSIS panelists warn the Justice Department is banking on small importers not bothering [Center for Strategic & International Studies — PJpF0M_rjYs @ 00:26:15], so the liquidated group above $400,000 goes to counsel."
         },
         {
-          "name": "Scaled annual scorecard bridge",
+          "name": "service_and_financing_vetting",
           "type": "textarea",
-          "prompt": "Reproduce the Scaled Small-Team Formula v2.0 outcome and reconcile lane recoveries, fee revenue, expenses, and owner profit. State the six-person team composition and avoid representing the increased margin as automatic.",
-          "example": "Example: $1,600,000 drawback recoveries at 30% yield $480,000; $800,000 tariff refunds at 25% yield $200,000; $800,000 settlement distributions at 30% yield $240,000. Revenue totals $920,000, expenses total $386,400, and annual owner net profit is $533,600 at 58%. Staffing is 2 FT + 4 C, six people. Achieving that cost structure requires documented throughput and fewer manual rework hours."
+          "prompt": "List every refund service, law firm, or buyout financier that has approached you. Record their fee structure, whether any upfront payment is requested, the buyout price offered per dollar of claim, and why you accepted or declined each offer.",
+          "example": "One firm demanded an upfront fee and was declined, since Border & Bench calls that a red flag and Leyton charges only a percentage after CBP pays [Border & Bench — Zq36LwbWWJc @ 00:08:45]. A buyer offered 60 cents on the dollar; buyout pricing moved from about 22 cents to 55% to 75% of claim value [Commercial Funding Marketplace — LaWXf8aLv1o @ 00:03:29]."
         },
         {
-          "name": "Working-capital runway and collection stress",
+          "name": "tax_and_pass_through_plan",
           "type": "textarea",
-          "prompt": "Schedule startup spending, monthly fixed overhead, claim-specific outlays, and fee collections by month. Calculate the lowest unrestricted cash balance under delayed payment, excluding reserve cash, claimant money, and undrawn financing from available liquidity.",
-          "example": "Example: Start with $35,000, spend $8,000 on setup, and pay $3,000 monthly fixed overhead for four months. One drawback, tariff, and settlement package consume $12,800 combined direct costs. Before any collections, unrestricted cash falls to $2,200. Two more months without receipts create a $3,800 deficit. Pause new paid preparation and arrange committed funding before that deficit, rather than borrowing against claimant refunds."
+          "prompt": "Model the after-tax value of the expected refund, including any depreciation basis that unwinds on capitalized equipment. Then document whether customers, distributors, or shoppers are asking for a share, and what your contracts actually require you to pass through.",
+          "example": "On capitalized equipment at a 30% rate, a $300,000 refund can be worth about $210,000 once the depreciation basis unwinds [Lutz — 6Y30Cf9AeYE @ 00:23:03]. Two distributors requested a share, but the refund belongs to the importer of record, and no court order or Customs rule requires pass-through [PolitiClash — uhEb06Zt2cw @ 00:09:01]; only contract terms are reviewed."
         },
         {
-          "name": "Surety collateral and escrow segregation",
+          "name": "adcvd_scope_screen",
           "type": "textarea",
-          "prompt": "Document the actual bond quote, premium, collateral requirement, release conditions, and custodian of any restricted funds. Separate ordinary import bonds from accelerated drawback security and describe how client receipts avoid the operating account.",
-          "example": "Example: A surety quotes $1,200 annual premium and $10,000 cash collateral for the illustrative accelerated drawback arrangement, subject to underwriting. The premium is already included in direct costs; collateral is additional restricted liquidity, not another expense. Adding collateral to the previous runway example deepens the pre-collection shortfall to $7,800. Refunds go to Harbor directly; this engagement creates no operator-controlled client escrow."
+          "prompt": "Screen every product made of metal, wood, paper, plastics, or chemicals against the written AD/CVD scope language and registers. Record the ABI query results at both 8 and 10 digits, and any item needing a binding scope ruling before shipping.",
+          "example": "Our aluminum brackets cleared at 0% on a 10-digit query, but the 8-digit query surfaced an AD/CVD flag that 10-digit queries miss [NCBFAA Educational Institute — CGsvr1SDN8s @ 01:19:50]. With penalty duties running 50% to over 300%, as with a $50K aluminum container drawing a $150K bill [Ask The Customs Manager — Ze1pOvT4KsI @ 00:01:18], a scope ruling is requested."
         },
         {
-          "name": "Revenue recognition and retained-share reconciliation",
+          "name": "bond_sufficiency_check",
           "type": "textarea",
-          "prompt": "Define the accounting unit, earned fee trigger, principal-versus-agent assessment, and treatment of subcontractors. If a partner retains part of a fee, reconcile recognized operator revenue explicitly instead of silently changing canonical revenue definitions.",
-          "example": "Example: In these scenarios the contracted recovery service earns the full stated fee and pays broker subcontractors as expenses; no additional retained-share factor reduces $515,000 Base revenue. The accountant documents the ASC 606 assessment, including variable consideration. If a different arrangement makes the operator an agent entitled to 70% of a $10,000 service fee, operator revenue is $7,000, requiring a separate bridge rather than reuse of the canonical totals."
+          "prompt": "Recalculate continuous bond sufficiency from a rolling 365-day forecast of duties, taxes, and fees at the higher tariff rate plus a buffer. Record current bond size, required size, the next size you will jump to, and who carries residual liability.",
+          "example": "Bond sufficiency is annual DTF times 10%, $50K minimum [Trade Risk Guaranty — M68ZVWdgp9I @ 00:02:15]. Forecast DTF near $95 million plus a 5% buffer exceeds a $7M bond, and one-size bumps fail nine times out of 10, so we start at $10M. The surety pays up to the bond amount while we remain liable to it [Trade Risk Guaranty — P-dHB1oQLCI @ 00:02:12]."
         }
       ],
-      "completion_gate": "All three annual scenarios reconcile exactly; deal contribution, reserve transfers, restricted collateral, and claimant principal occupy separate ledger categories. The operator approves a funded cash plan that survives the documented collection delay."
+      "completion_gate": "Gate cleared only when importer-of-record status is confirmed, US-bank ACH details are loaded, every entry carries a liquidation status and deadline, CAPE data is validated before submission, AD/CVD scope is checked at 8 and 10 digits, and bond sufficiency is recalculated."
     },
     {
       "worksheet_id": "ws-03",
       "number": 3,
-      "title": "End-to-End Execution, Idempotent Ledger & QA Pre-Flight Sheet",
-      "purpose": "Build a reproducible claim production system from authorized intake through final receipt. Use immutable source evidence, component-level recovery allocation, specialist review, idempotent submission controls, and cash reconciliation to prevent duplicate claims, unsupported tariff matches, missed deadlines, and premature contingency invoices.",
-      "chapter_ref": "Q7, Q8",
+      "title": "ACE Portal, Entry Summary and Protest Ladder Control Sheet",
+      "purpose": "Stand up your own ACE account, register ACH refunds, pull the ES-001 and ES-003 reports, keep every CBP request inside its response window, and package entry summaries, post summary corrections, protests, and court filings so no deadline or dollar slips away.",
+      "chapter_ref": "Q5-Q6",
       "instructions": [
-        "Create a claim identifier before collecting documents, then attach every source file to its authorized claimant and recovery lane. Store original files unchanged, record checksums, and use versioned derived records for extraction, normalization, and corrections.",
-        "Reconcile merchandise quantity, duty components, and ownership before creating a draft drawback claim. Route substitution questions to the broker; an automated eight-digit HTS match is only a candidate link and cannot replace the applicable statutory tests.",
-        "Check liquidation events, correction windows, protest deadlines, and settlement deadlines against authoritative records. Maintain independent calendar verification and assign a backup owner so missing email or a stalled data feed cannot silently expire a claim.",
-        "Transmit formal customs filings only through the engaged licensed broker or trade counsel under the required authority. Preserve submission payloads, acknowledgments, rejection messages, and accepted revisions before changing any ledger status to submitted or accepted.",
-        "Reconcile actual recovery receipts before invoicing the contingency fee under the engagement. Match reversals to the original claim and fee, retain the complete audit chain, and test duplicate suppression with a repeated source file and repeated payment notification."
+        "Sign up for the ACE portal regardless of size; it is the central hub across all brokers that holds an electronic 7501.",
+        "Load bank information inside the portal itself before any refund is expected, and double-check routing and account numbers.",
+        "Switch CF28 and CF29 delivery to the portal before working through the report and correction fields.",
+        "Treat the 7501 as the shipment's tax return: every supporting document must tell the same story, and the importer of record owns the numbers.",
+        "Calendar the 180-day protest date, the 30-day deemed denial date, and the 180-day CIT summons date the moment each trigger occurs."
       ],
       "fields": [
         {
-          "name": "Claim state machine and responsible owner",
-          "type": "textarea",
-          "prompt": "Define allowed claim states, required evidence for each transition, and the person authorized to change status. Separate internal preparation from external acceptance, payment, fee collection, and final archival so progress metrics remain truthful.",
-          "example": "Example: HC-044-D moves through authorized, evidence complete, specialist reviewed, submitted, acknowledged, paid, fee collected, and archived. The analyst can complete evidence preparation but cannot mark a CBP filing accepted. The broker supplies the acknowledgment identifier. A rejected transmission returns to correction required with its error message preserved; it does not count toward submitted production or expected collected revenue."
+          "name": "ace_account_setup",
+          "type": "text",
+          "prompt": "Document your ACE Secure Data Portal setup: the company and importer-of-record data used in the application, the trade account owner, where the shared secret is stored, and the recovery plan if the account locks after failed login attempts.",
+          "example": "We applied with company and IOR data, then unlocked the account with the shared secret, now held in the controller's vault. Three failed attempts lock the account, and a locked-out TAO calls the ACE helpdesk with the shared secret [Shapiro — 605kfE-oUPM @ 00:05:23]. Scarbrough Global encourages signing up regardless of size [Scarbrough Global — GuV2m_XHyd0 @ 00:04:08]."
         },
         {
-          "name": "Source manifest and evidence custody",
-          "type": "textarea",
-          "prompt": "List required source systems, export permissions, file formats, checksums, and retention owners. Explain how originals remain distinguishable from cleaned spreadsheets and how a reviewer can reproduce every material amount from retained evidence.",
-          "example": "Example: The manifest records ACE Form 7501 exports, commercial invoices, warehouse movement files, export BOL, and applicable AES records. Each original receives a SHA-256 checksum and read-only object version. The analyst's normalized CSV records the source filename and row reference for each amount. A corrected invoice becomes a new version with an explanation; the earlier invoice remains available for audit reconstruction."
+          "name": "ach_refund_registration",
+          "type": "text",
+          "prompt": "Confirm that refund bank details are registered inside the ACE portal itself, not assumed from paying duty by ACH or periodic monthly statement. Record the verification step, the date, and any refund currently routed through a 4811 or notify party.",
+          "example": "Since February 6, 2026, CBP stopped paper refund checks for all refund types, with waivers described as rare [Ask The Customs Manager — NRCd8c6t8rY @ 00:00:00]. We had paid duty by periodic monthly statement and wrongly assumed that registered us; bank information must be loaded in the portal itself [Scarbrough Global — P1YIRCE3BPQ @ 00:10:34]. Treasury entered it Tuesday."
         },
         {
-          "name": "Drawback matching and substitution review",
+          "name": "es_report_pull",
           "type": "textarea",
-          "prompt": "Describe the matching keys, quantity controls, condition evidence, and treatment of substitution candidates. Identify limitations under 19 U.S.C. § 1313(j)(2), including classification restrictions and any applicable lesser-of calculation.",
-          "example": "Example: The matcher proposes links using importer, eight-digit HTS, quantity, date, and SKU mappings. The broker rejects a substitution candidate where the applicable classification restriction prevents the proposed treatment. Another candidate requires review of the lesser-of amount before valuation. Neither receives the automatic $99,000 example refund; only individually validated duty components enter the claim calculation and export allocation ledger."
+          "prompt": "Describe the ES-001 and ES-003 line-tariff pulls and Web Intelligence queries you run, the date range covered, how IEEPA lines and liquidation dates are flagged, and how post summary corrections are captured in the same report view. Note who reruns the pull each month.",
+          "example": "ES-001 and ES-003 pulls cover 2025 forward. Following Shapiro, the standard report was parked in Favorites with Save As before editing, then the PSC indicator was dragged in so corrections appear in the same pull [Shapiro — 605kfE-oUPM @ 00:20:16]. The liquidation date column tracks the 180-day protest deadline [BGI Worldwide Logistics, Inc. — zVrENO4RtLw @ 00:02:26]."
         },
         {
-          "name": "Component-level anti-duplication allocation",
-          "type": "textarea",
-          "prompt": "Specify how each entry line, duty component, quantity, and export allocation is reserved against competing recoveries. Explain how corrections, partial refunds, and amendments update eligibility without allowing the same overpayment to be collected twice.",
-          "example": "Example: Entry line E100-03 has $10,000 ordinary duty and a proposed $2,000 classification reduction. The tariff case reserves the disputed $2,000 component. The drawback calculation uses only the broker-approved remaining eligible amount after considering the correction's effect. When the $2,000 refund posts, an allocation event updates the line basis and triggers specialist review of every related draft or existing claim."
+          "name": "cf28_delivery_settings",
+          "type": "text",
+          "prompt": "Record how CF28 requests for information and CF29 notices of action reach you today, who receives them, and the date delivery was switched to the portal. Explain how each 30-day response window is calendared and owned on the day it arrives.",
+          "example": "A CF28 arrived by mail three weeks late, leaving only five days of the 30-day window, and non-response leads to a CF29 rate advance [Scarbrough Global — P1YIRCE3BPQ @ 00:05:32]. Delivery is now set to portal plus mail, the compliance lead owns every request, and a backup reviewer checks the portal each Monday and Thursday."
         },
         {
-          "name": "Deadline engine and independent verification",
-          "type": "textarea",
-          "prompt": "Record the event that starts each statutory or administrative clock, the calculated deadline, and the authoritative source. Include escalation intervals and distinguish ordinary liquidation, extension, suspension, and potential deemed-liquidation issues.",
-          "example": "Example: The calendar stores actual import dates for drawback and separately checks export timing and complete-claim filing under § 1313. Protest reminders use the verified protestable decision date and § 1514's applicable 180-day period. The broker reviews 19 U.S.C. § 1504 events instead of assuming an unchanged liquidation schedule. Settlement reminders use the operative court order, with 30-, 14-, and 3-day escalations."
+          "name": "credit_authorization_check",
+          "type": "text",
+          "prompt": "If you pay CBP directly by credit, describe how each payment is authorized, who confirms authorization on every entry, and what control prevents a forgotten step. Note any entries already penalized and how the penalty was resolved or is still pending.",
+          "example": "Scarbrough Global reports a $1,000 per entry penalty when importers paying CBP direct by credit forget to authorize, with about a dozen penalized yearly [Scarbrough Global — P1YIRCE3BPQ @ 00:28:53]. Our AP clerk now authorizes within one day of each entry summary, and the controller reviews a weekly list of unauthorized entries before close."
         },
         {
-          "name": "Idempotency key and revision protocol",
+          "name": "psc_strategy",
           "type": "textarea",
-          "prompt": "Define stable identifiers for claim creation, submission attempts, revisions, and payments. Explain the database uniqueness rule and reconciliation process that prevent retries from creating duplicate external claims or duplicate internal fee invoices.",
-          "example": "Example: The internal key combines claimant ID, lane, claim population hash, and revision number. A database uniqueness constraint blocks duplicate accepted creation requests. Transmission attempts have separate IDs, while the broker's external reference links all acknowledgments. A timeout first triggers status reconciliation with the filing channel; it never automatically generates a new claim. A revision preserves its predecessor and changed-component list."
+          "prompt": "List entries needing a post summary correction, the error being fixed, who will file it through an ABI connection, and whether a pending 232 or 301 exclusion justifies requesting an extension of liquidation instead of fighting through protest later.",
+          "example": "Importers cannot file a PSC without an ABI connection, and the PSC filer does not have to be the entry filer [Scarbrough Global — 52Q7Sv1KF4Q @ 00:14:18], so a second broker files ours. With a 301 exclusion pending, we asked the center team for an extension of liquidation and will file a PSC once granted [U.S. Customs and Border Protection — lGkujBtNI0A @ 00:04:52]."
         },
         {
-          "name": "Settlement claim package and submission receipt",
+          "name": "form_7501_review",
           "type": "textarea",
-          "prompt": "Document the purchase-ledger transformation, class-period filters, exclusion checks, filer disclosures, claimant certification, and submission evidence. Identify which statements require claimant confirmation rather than inference from imported accounts-payable records.",
-          "example": "Example: The settlement package filters $2,300,000 total vendor purchases to $2,000,000 within the defined products and class period, excluding $300,000 of unrelated purchases. The claimant confirms affiliate status and prior submissions. The packet includes the required third-party filer disclosure and direct-filing information. An administrator receipt, timestamp, and payload checksum are stored before the claim is marked submitted."
+          "prompt": "Walk one entry summary block by block under the 2026 layout. Confirm values exclude DDP duties, each MID matches the actual manufacturer, invoice and packing list descriptions agree, and new melt, smelt, and cast country blocks are completed for 232 articles.",
+          "example": "The February 2026 revision moved 23 of 43 block numbers and added blocks 21-24 for melt, smelt, and cast countries [CustomsPrep — Customs Broker License Exam — qORXZ_TDyKg @ 00:00:20]. Our review stripped duties from DDP values to avoid paying twice [Law Office of Yuri Starikov, LLC — 1DFXItS5lCQ @ 04:00:13] and hand-checked every MID against the actual factory."
         },
         {
-          "name": "QA exception thresholds and pre-flight sample",
+          "name": "protest_packaging",
           "type": "textarea",
-          "prompt": "Specify the exact checks required before submission, including monetary reconciliation, date logic, documentary coverage, signatures, and duplicate detection. Separate blocking defects from reviewable extraction exceptions and name the final reviewer.",
-          "example": "Example: All claimed dollars require accepted source support, all authorizations must be current, and allocated quantities cannot exceed documented imports or exports. Any one-cent unexplained reconciliation difference blocks release until resolved or documented as an approved rounding rule. The broker checks every material eligibility exception and a risk-based sample of otherwise clean lines; sampling never excuses missing evidence for the remaining claimed population."
+          "prompt": "Describe how each protest will be packaged in ACE: the lead entry listed first, how entries with similar exclusions are grouped, the 10-digit HTS and Chapter 99 numbers cited, and the specific because statement supporting any further review request.",
+          "example": "CBP's protest team reported filings jumping from about 28,000 a year to 93,000 in 2020 and urges grouping entries with similar exclusions [U.S. Customs and Border Protection — lGkujBtNI0A @ 00:50:18]. Our protest lists the lead entry first and cites 10-digit HTS plus Chapter 99 numbers, while each entry keeps its own proof because there is no blanket claim."
         },
         {
-          "name": "Receipt, invoice, and reversal reconciliation",
+          "name": "court_escalation_ladder",
           "type": "textarea",
-          "prompt": "Map payment evidence to the claim, earned fee invoice, bank settlement, and reserve entry. Define how partial recoveries and later clawbacks affect the claimant balance, operator revenue, and servicing obligations without erasing original records.",
-          "example": "Example: CBP pays $49,500 against half the approved example recovery. Harbor supplies the receipt, and the operator invoices $14,850 at 30%, not the full $29,700 forecast. A later $5,000 recovery reversal triggers a linked $1,500 fee adjustment under the contract's reversal clause. The original receipt remains unchanged; offsetting events preserve the sequence and identify whether a refund or credit was issued."
+          "prompt": "Map the escalation ladder for each denied or stalled protest: the 180-day protest date, any accelerated disposition request and its mailing method, the deemed denial date, proof that all duties and interest are paid, and the CIT summons deadline.",
+          "example": "Accelerated disposition was sent separately by certified mail, and the protest is deemed denied after 30 days [U.S. Customs and Border Protection — lGkujBtNI0A @ 01:04:12]. The 180-day summons date is calendared from denial, and our void-denial request is treated as a side bet because it does not toll that clock [U.S. Customs and Border Protection — lGkujBtNI0A @ 01:01:36]. All duties are paid."
         },
         {
-          "name": "Audit replay and closure package",
+          "name": "records_isf_cape_capture",
           "type": "textarea",
-          "prompt": "Define the archive contents and demonstrate that a reviewer can reconstruct eligibility, amounts, submissions, payments, and fee calculations without the original analyst. Include retention dates, access restrictions, and unresolved post-payment obligations.",
-          "example": "Example: The closure package contains engagement authority, broker POA confirmation, original evidence, calculation versions, specialist decisions, submission receipts, payment records, and fee invoices. A second analyst rebuilds the $99,000 recovery and $29,700 fee from the archive. Retention follows 19 CFR Part 190 and other applicable requirements, including holds. A paid claim remains open for identified audit or reversal obligations until the responsible specialist clears closure."
+          "prompt": "Describe where every entry document is retained and for how long, how ISF filings are confirmed correct and on time, how entry type codes are checked, and how every IEEPA-hit 7501 is captured before any CAPE declaration is submitted.",
+          "example": "Every document is kept five years [VoraPrep — 2rbdaN1Swhk @ 00:05:04], and ISF filings are checked daily because filing correctly and on time is not optional [JSJ INTERNATIONAL LCB — 2cuZPxRLr1E @ 00:07:42]. Before declaring in CAPE, all IEEPA-hit 7501s are captured, since a missed entry means a new declaration at the back of the queue [NextGen CPA — sMBX0ZlgJRY @ 00:01:10]."
         }
       ],
-      "completion_gate": "A reviewer reproduces one claim per lane from source evidence, verifies every deadline, and demonstrates that duplicate files, submission retries, and repeated payment events cannot create additional claims or fee invoices."
+      "completion_gate": "Gate cleared only when ACE access and ACH bank details are verified, report pulls capture every IEEPA-hit 7501, CF28 delivery runs through the portal, credit authorizations are current, 7501 data reconciles to invoices and packing lists, and every protest and CIT deadline has a named owner."
     },
     {
       "worksheet_id": "ws-04",
       "number": 4,
-      "title": "Statutory, Licensing, Contract Addendum & Compliance Audit",
-      "purpose": "Convert statutory restrictions and engagement terms into operational evidence requirements. Establish authorized customs representation, defensible drawback and protest routes, court-specific settlement disclosures, record retention, and clear contingency mechanics before the team handles sensitive records or initiates formal submissions.",
-      "chapter_ref": "Q5, Q9",
+      "title": "Classification and Valuation Defense Log",
+      "purpose": "Build a defensible HTS classification and customs value for every product line before entry, so the importer of record can prove the code was derived from tariff language, notes, and GRIs, and that the declared value reflects the lowest lawful price actually paid or payable.",
+      "chapter_ref": "Q7-Q8",
       "instructions": [
-        "Assign customs eligibility and formal filing decisions to the engaged licensed broker or trade counsel. Verify the permitted scope of each role and obtain required powers of attorney directly through the authorized professional's documented engagement process.",
-        "Build an eligibility memorandum for each duty component rather than relying on a generic tariff label. Review antidumping, countervailing, Section 232, Section 301, and other special measures against the operative statute, proclamation, exclusion, and current agency instructions.",
-        "Write the contingency addendum around realized cash, fee calculation, direct expenses, partial recoveries, reversals, and termination. Identify who controls filings and who receives refunds, keeping the operator's service agreement separate from customs representation authority.",
-        "For each settlement, preserve the controlling orders and administrator requirements governing third-party assistance, certification, compensation, and payment directions. Tell claimants they may file directly at zero cost and avoid suggesting affiliation with the court or administrator.",
-        "Audit retention, access, deletion, and dispute handling against the actual records and contracts in use. Freeze deletion when litigation, agency examination, or a preservation duty applies, and record remediation owners for every material exception."
+        "Describe each product by material, function, construction, and use before opening the tariff schedule, and never classify straight from the alphabetical index.",
+        "Read legal notes as mandatory text, apply the GRIs in order, and log at least three candidate headings with the reason each was eliminated.",
+        "Treat every supplier or vendor code as an unverified lead and re-derive the code yourself, because the importer of record owns the code and the penalty exposure.",
+        "Pull every Chapter 99 overlay before trusting a base rate, then run the full duty math, including MPF and HMF, against a worked benchmark.",
+        "Test transaction value and first sale eligibility against the full paper trail, including contracts, factory invoices, bank transfers, and additions, before any declaration is made."
       ],
       "fields": [
         {
-          "name": "Customs representation and POA evidence",
+          "name": "product_physical_profile",
           "type": "textarea",
-          "prompt": "Identify the licensed customs broker or trade counsel, authority documents, authorized signers, and filing scope. Explain how the operator avoids conducting regulated customs business outside the permitted role under 19 CFR Part 111.",
-          "example": "Example: Harbor engages a verified licensed broker for drawback and PSC preparation and execution, with trade counsel retained for contested legal issues. The broker obtains a valid Customs Power of Attorney directly from Harbor and verifies signer authority. The operator collects authorized records and coordinates tasks but does not use the broker's credentials, sign customs declarations, or independently make formal classification representations to CBP."
+          "prompt": "Describe the imported product strictly by material, function, construction, and intended use rather than by its marketing or product name. List every physical detail that could move the tariff rate, such as wall construction, insulation, fiber content, or power source, before searching any heading.",
+          "example": "Stainless steel drinking vessel, 750 ml, double wall with vacuum insulation, screw lid, sold for hot and cold beverages. Insulation is the deciding construction detail: USA Customs Clearance notes a single-wall stainless steel bottle runs about 2.9% while a vacuum-insulated flask runs 7.2% [USA Customs Clearance — MfmhZLeMz2w @ 00:02:33]. Product name 'Adventure Flask' is ignored for classification."
         },
         {
-          "name": "Drawback provision and five-year clocks",
+          "name": "candidate_headings_log",
           "type": "textarea",
-          "prompt": "Cite the precise drawback provision and document all applicable import, export, destruction, and filing clocks. Distinguish unused merchandise requirements from manufacturing drawback rules and explain the complete-claim evidence required before expiry.",
-          "example": "Example: The example uses § 1313(j)(1) unused merchandise treatment, not a manufacturing theory. The broker validates the relevant five-year export period and the complete claim requirement under § 1313(r)(1) and 19 CFR § 190.51. An internal deadline is set 90 days before the verified statutory limit. A missing export record is escalated immediately; a draft spreadsheet is not treated as a complete filing."
+          "prompt": "Record at least three candidate headings you considered, the legal note or GRI step that eliminated each one, and the specific product details that decided the final heading. Note how indentation on the page established the hierarchy you followed.",
+          "example": "Heading A eliminated after reading the chapter legal notes as mandatory text; heading B eliminated because a semicolon in the tariff text was treated as a full stop, closing that branch; heading C selected on construction. Star USA, Inc. advises always keeping a log of headings considered and why each was eliminated [Star USA, Inc. — ygZWIWKWe4w @ 00:48:03]."
         },
         {
-          "name": "Excluded duties and special tariff treatment",
-          "type": "textarea",
-          "prompt": "List every duty component and the authority supporting inclusion or exclusion. Address special tariff measures individually, including current product coverage and effective dates, instead of assuming all additional duties share one drawback treatment.",
-          "example": "Example: The broker excludes $12,000 antidumping duties under 19 U.S.C. § 1313(v), which also addresses countervailing duties. A separate Section 232 component is tested against the applicable proclamation's drawback restriction and excluded where barred. Section 301 duties receive a separate eligibility review rather than automatic exclusion or inclusion. The memo records entry dates, tariff components, authorities, and the resulting $100,000 eligible example base."
+          "name": "supplier_code_rederivation",
+          "type": "text",
+          "prompt": "Enter the HTS code your supplier or vendor provided, then the code you re-derived independently from tariff language, notes, and GRIs. Explain any difference and confirm you did not copy a competitor's code or take the first CROSS hit.",
+          "example": "Vendor code differs from the re-derived code at the 6th digit and appears to reflect the origin country's variation. Flexport's trade advisory team says vendor codes are incorrect 99% of the time [Flexport — 2Z2HUuGsrFI @ 00:12:20], and Star USA, Inc. stresses customs only cares that the right HTS is used [Star USA, Inc. — HbhpILTp9v0 @ 00:56:12]. Re-derived code governs."
         },
         {
-          "name": "PSC, protest, and contested decision controls",
+          "name": "duty_digit_and_chapter99_overlays",
           "type": "textarea",
-          "prompt": "Document which administrative path applies to each entry and which issues it can address. Include liquidation monitoring, standing, filing authority, and escalation to counsel where a protest cannot resolve the underlying legal question.",
-          "example": "Example: The broker uses PSC only while the entry and timing remain eligible under current ACE rules. After a protestable liquidation decision, counsel evaluates § 1514 and 19 CFR Part 174, including the applicable 180-day deadline. A challenge to an underlying governmental measure is not automatically labeled a routine classification protest. Counsel identifies jurisdiction and remedy before the operator promises that a particular administrative filing can preserve recovery."
+          "prompt": "Confirm the 8th digit that sets the duty rate, separate from the two statistical digits, then list every Chapter 99 overlay that may stack on the base rate, including Section 122, 301, and 201 exposure, before trusting any 0% figure.",
+          "example": "Base line shows 0%, but the lookup displays a slash and underscore after the rate, signaling added tariffs. Shipping Solutions shows a 0% base line can carry eight possible Chapter 99 overlays [Shipping Solutions — _I3v11oKRLA @ 00:03:45]. Duty set at the 8th digit per Star USA, Inc. [Star USA, Inc. — -v_-OQnVlxE @ 01:01:37]; Section 301 overlay confirmed and logged."
         },
         {
-          "name": "Accelerated drawback and surety responsibilities",
+          "name": "duty_calculation_worksheet",
           "type": "textarea",
-          "prompt": "Identify accelerated-payment authorization, bond terms, collateral, audit obligations, and repayment exposure. State who bears premium and indemnity costs and what operational changes apply if the surety reduces capacity or CBP withholds payment.",
-          "example": "Example: The broker evaluates accelerated payment under 19 CFR § 190.92 and obtains the actual required security terms. Harbor reviews any indemnity obligation directly with the surety and counsel. The operator budgets a quoted $1,200 premium but does not promise access to accelerated funds. If authorization or capacity is unavailable, the claim follows the ordinary timing assumption and the cash forecast removes accelerated receipts."
+          "prompt": "Show the full landed duty math for one shipment: quantity, unit value, base duty, Chapter 99 additions, and the Merchandise Processing Fee and Harbor Maintenance Fee. Compare your total against a worked benchmark so arithmetic errors surface before the entry is filed.",
+          "example": "Benchmark: Supplyia Sourcing lands $697.14 total duty on 5,000 umbrellas at $2 each, including MPF and HMF [Supplyia Sourcing — ff_P7M6LKEo @ 00:14:41]. MPF applied at .3464%, minimum about $26, maximum $508, on both air and ocean [Supplyia Sourcing — ff_P7M6LKEo @ 00:04:24]. Our own shipment total is then recalculated line by line and matched to the customs broker's figure."
         },
         {
-          "name": "Settlement authority and third-party filer disclosure",
-          "type": "textarea",
-          "prompt": "Identify the operative court order, administrator instructions, class definition, and third-party filer requirements. Record the exact claimant disclosure and confirm whether representation, assignments, fee deductions, or payment redirection are restricted.",
-          "example": "Example: For an illustrative settlement approved under Federal Rule of Civil Procedure 23(e), the engagement states: 'You may submit your claim directly to the settlement administrator at zero cost. Our optional preparation service charges 30% of your realized distribution.' The specialist adds every court-required third-party disclosure, checks whether paid assistance is permitted, and removes any payment-redirection term that conflicts with the operative order."
+          "name": "binding_ruling_decision",
+          "type": "text",
+          "prompt": "State whether a binding ruling will be requested before importing, who will request it, and when. If you will not seek one, explain why the classification risk is acceptable given that the importer of record carries the penalty exposure.",
+          "example": "Binding ruling requested by a licensed professional during product development, before the first purchase order ships. Cole International calls a binding ruling the definitive assessment [Cole International — x-SDVKIzJdI @ 00:02:26]. Broker liability is limited to the entry fee, often $100 or less [Steve Fodor — Exy48YwwPtk @ 00:35:38], so the importer of record cannot shift the classification risk onto the broker."
         },
         {
-          "name": "Claim certification and litigation boundaries",
+          "name": "transaction_value_basis",
           "type": "textarea",
-          "prompt": "Identify who certifies claim facts, who resolves legal interpretation, and whether the work concerns an existing settlement or new litigation. Distinguish settlement claim deadlines from substantive antitrust limitation periods and litigation rights.",
-          "example": "Example: Harbor certifies qualifying purchases and affiliate status after reviewing the prepared schedule. The operator does not sign factual declarations on Harbor's behalf without express permitted authority. Counsel explains that 15 U.S.C. § 15b's four-year limitation framework for damages actions is distinct from a settlement's court-ordered claim deadline. The engagement covers an existing settlement claim, not commencement or funding of a new antitrust lawsuit."
+          "prompt": "Document the price actually paid or payable that forms your transaction value, itemizing any middleman markup embedded in that price. Explain whether transaction value is the correct method for this lane and identify every dollar of markup currently being taxed.",
+          "example": "Invoice price from the trading company is $10 per jacket; the Vietnam factory price is $7, so $3 of markup is currently in the duty base. Flexport notes transaction value drives 90 to 95 percent of import valuations [Flexport — yR_RXKhapxo @ 00:09:13], and declaring the factory price would cut liability 30 percent [Ask The Customs Manager — 5fk-EKpR8Zw @ 00:01:26]."
         },
         {
-          "name": "Contingency, termination, and reversal addendum",
+          "name": "first_sale_eligibility",
           "type": "textarea",
-          "prompt": "Draft concrete commercial terms defining the recovery base, earned fee event, expenses, refunds, termination, and duplicate-representation handling. Make the client's obligations measurable without charging for unsupported projected recoveries.",
-          "example": "Example: 'The drawback fee is 30% of eligible refund principal actually received for the scheduled claim population; interest is excluded. No upfront service fee applies. The operator bears listed preparation expenses. A repayment reduces the corresponding fee proportionately. After termination, fees apply only to documented scheduled work that produces recovery under the agreed tail period; duplicate representative fees require written resolution before filing.'"
+          "prompt": "Test the first sale against each condition: arm's length, bona fide, goods clearly destined for the US at manufacture, and the middleman taking title at a separate point in time from the importer. Note any flash title risk and the staggered FOB points.",
+          "example": "First sale is FOB Shenzhen and second sale is FOB Hong Kong, so title passes at different delivery points rather than simultaneously. Flexport warns that simultaneous FOB Hong Kong transfers are flash title and customs has often rejected them [Flexport — yR_RXKhapxo @ 00:15:27]. Contract language was reviewed beyond the Incoterm to confirm when the middleman owned the goods [Flexport — yR_RXKhapxo @ 00:44:21]."
         },
         {
-          "name": "Record retention and restricted access",
+          "name": "first_sale_paper_trail_and_additions",
           "type": "textarea",
-          "prompt": "Set retention periods by record category, governing authority, contractual need, and preservation duties. Specify access permissions, secure transfer methods, and the controls preventing premature deletion of customs, financial, or settlement evidence.",
-          "example": "Example: The broker maps drawback records to 19 CFR Part 190, including applicable retention requirements measured from payment, and checks other relevant Part 163 duties. The team does not start every clock at intake. Customs records are restricted to assigned analysts and the broker; settlement purchase records have a separate access group. A documented litigation hold suspends scheduled deletion and records the responsible counsel and affected files."
+          "prompt": "List the documents in hand proving the first sale price, including the original factory invoice, factory purchase order, and bank transfer. Then describe how assists, royalties, and proceeds of subsequent sale reach the broker on every entry.",
+          "example": "Original factory invoice, factory purchase order, and the bank transfer showing the middleman paid the factory price are filed together with every entry packet [Ask The Customs Manager — 5fk-EKpR8Zw @ 00:02:16]. An additions pipeline is stood up first so assists, royalties, and proceeds of subsequent sale flow to the broker before each filing [Flexport — yR_RXKhapxo @ 00:34:06]. Gaps block the declaration."
         },
         {
-          "name": "Audit exceptions and remediation evidence",
+          "name": "import_record_intelligence",
           "type": "textarea",
-          "prompt": "Record each material exception, affected claims, responsible owner, corrective action, and verification evidence. Prioritize defects that threaten filing authority, eligibility, deadlines, claimant funds, or the truthfulness of signed submissions.",
-          "example": "Example: The audit finds one expired internal signer authorization, two missing export documents, and a settlement disclosure using an obsolete administrator address. All affected submissions pause. Harbor refreshes signer evidence, the warehouse supplies traceable export records, and the specialist verifies the current administrator contact against the court materials. A second reviewer records closure dates and supporting files before the claims return to the submission queue."
+          "prompt": "Summarize what bill-of-lading research revealed about competitors, suppliers, or buyers on this product line. Note any shipments masked by a freight forwarder, how the true shipper was surfaced, and whether reverse data from destination countries filled gaps.",
+          "example": "A competitor's master bill showed only a freight forwarder; scrolling to related bills of lading and clicking the house bill surfaced the true shipper and consignee [ImportGenius — 9IaKZ1JUPmU @ 00:05:51]. Taiwanese suppliers shipping into the US were identified through destination-country import data [💎Kiona 職場 x 行銷筆記💎 — i3e313EJJPE @ 00:00:46]. US ocean freight data omits price, so pricing was benchmarked separately."
         }
       ],
-      "completion_gate": "The responsible broker or counsel confirms customs authority and route selection; the settlement specialist verifies controlling orders and disclosures. Every material contract, eligibility, retention, and certification exception has documented resolution."
+      "completion_gate": "Do not file an entry until every product line has a re-derived HTS code with a three-heading elimination log, a full Chapter 99 overlay check, a duty calculation reconciled to the broker, and a valuation file containing the factory invoice, purchase order, bank transfer, and additions record for any first sale claim."
     },
     {
       "worksheet_id": "ws-05",
       "number": 5,
-      "title": "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker",
-      "purpose": "Automate evidence preparation and prospect qualification without delegating eligibility decisions to unverified matches. Connect acquisition signals to authorized records, measure exception costs, and maintain tested fallback procedures for missing exports, portal outages, bond constraints, deadline changes, and delayed settlement distributions.",
-      "chapter_ref": "Q6, Q10",
+      "title": "Structural Mitigation and Audit-Ready Compliance Plan",
+      "purpose": "Design duty mitigation structures that pay only when built before goods hit the border, including foreign trade zones, bonded storage, returned goods relief, and tariff engineering, and pair them with an internal audit program that keeps every refund filing able to stand up to CBP scrutiny.",
+      "chapter_ref": "Q9-Q10",
       "instructions": [
-        "Use ImportGenius or Panjiva to identify plausible import activity, not to establish paid duties or ownership. Obtain permission before connecting claimant records, and keep prospecting observations separate from evidence used in a formal customs claim.",
-        "Automate extraction, normalization, duplicate detection, and exception routing before automating external actions. Require deterministic calculations and source links for every monetary value, and preserve a manual review path for uncertain document interpretation.",
-        "Track acquisition efficiency using signed authorized engagements, accepted evidence packages, and collected fees rather than raw leads. Attribute contractor rework and failed claim preparation to the originating channel so misleading volume does not hide poor economics.",
-        "Set stop conditions for broken data feeds, missing export trace, expiring deadlines, constrained surety capacity, and changed settlement instructions. Assign a fallback owner and a tested alternative process for each condition before increasing throughput.",
-        "Use approved client references and carefully scoped case studies to grow referrals. Do not publish importer records, merchant purchase details, or recovery amounts without explicit permission, and keep outcome examples tied to their documented factual populations."
+        "Model each foreign trade zone savings bucket separately and exclude any benefit that has ended, such as the inverted-tariff option under privileged foreign status.",
+        "Confirm the original importer of record that paid the first duty before any 9801 return or refund claim, and never let a sister company file on its behalf.",
+        "Lock classification and binding rulings during product development, because misdeclaring or reclassifying after entry is fraud.",
+        "Audit entries on a fixed cadence against the 7501, target at least a 95% pass rate, and clean IOR records, bond status, and 5106 fields before any refund filing.",
+        "Sequence CAPE uploads from cleanest to riskiest entries, and get any prior disclosure on file before CBP issues a notice."
       ],
       "fields": [
         {
-          "name": "Manifest intelligence to authorized intake",
+          "name": "ftz_fit_assessment",
           "type": "textarea",
-          "prompt": "Define prospect filters, data licensing limits, outreach qualification, and the handoff to claimant-authorized ACE records. Explain which facts manifest intelligence can support and which must be verified from primary customs evidence.",
-          "example": "Example: Panjiva identifies 60 import-active manufacturers with apparent outbound activity. Outreach asks whether they retain import and export records rather than asserting refund entitlement. Twelve respond, six authorize a preliminary records review, and three provide usable ACE summaries. Manifest quantities remain prospecting signals; paid duties, importer identity, merchandise condition, and actual export linkage come from authorized records before any claim value enters underwriting."
+          "prompt": "Assess whether a foreign trade zone fits your profile: import volume, share from non-FTA countries, export share, scrap, and entry count. State whether you would own a zone or use a 3PL FTZ network, and estimate each savings bucket.",
+          "example": "Modeled against Rebecca Williams's $50M importer: scrap $60K, exports $100K, one-time deferral $460K, inverted tariff $800K, weekly entry $187K against $2M baseline duty [Montana World Trade Center — xWFmdLRN9Ro @ 00:38:53]. CNBC reports the inverted-tariff option has ended under privileged foreign status, so that bucket is excluded. A 3PL FTZ network avoids capital and compliance burden [Radial — p-c3zl1yoVk @ 00:01:40]."
         },
         {
-          "name": "Extraction schema and source confidence",
+          "name": "bonded_storage_timing",
           "type": "textarea",
-          "prompt": "Specify normalized fields, deterministic validations, document confidence thresholds, and exception routing. Make low-confidence amounts and dates reviewable without allowing extraction confidence to substitute for statutory eligibility or source authenticity.",
-          "example": "Example: The parser extracts entry number, line, import date, ten-digit tariff classification, duty components, quantity, unit, and invoice reference. A derived eight-digit key supports candidate matching. Amounts are calculated with decimal arithmetic, not binary floating-point approximations. Any unclear date, negative quantity, or mismatch against the source total enters manual review; a high extraction score still does not establish drawback eligibility."
+          "prompt": "Identify containers or SKUs where a rate spike makes immediate entry costly, and describe whether you will hold goods in a bonded warehouse or zone until the expected rate settles. Record the expected rate difference and the decision owner.",
+          "example": "Two footwear containers are held in bonded storage rather than entered during the spike, following the Deer Stags approach of expecting 30% instead of 125% on a held container [CNBC — KFKpVuWoQLU @ 00:11:52]. Duty is deferred until goods leave storage. Decision owner: import operations manager, reviewing rates weekly with the broker before releasing either container for entry."
         },
         {
-          "name": "Export BOL and HTS reconciliation automation",
+          "name": "returned_goods_9801_file",
           "type": "textarea",
-          "prompt": "Describe the linkage logic connecting entry records, inventory movements, export documents, and substitution candidates. Record unit conversions and reviewer decisions so an automated match remains reproducible when product descriptions differ.",
-          "example": "Example: The pipeline converts 100 cartons containing 20 units each into 2,000 units using the retained packing specification. It proposes an export match against the warehouse shipment and BOL, then checks dates and allocated quantities. A same-eight-digit HTS substitution candidate is routed to the broker for restriction and value testing. The system records the conversion rule and review outcome instead of silently treating similar descriptions as identical merchandise."
+          "prompt": "For goods that may return, confirm the 3-year window, that no value was added abroad, and that no drawback was claimed on export. List the serial numbers, manufacturer plate photos, and original export declaration number prepared for the carrier.",
+          "example": "Medical instrument demo units coded 9801.00.1055, returning within 3 years with no work done abroad and no drawback claimed on export. Plates photographed and serial numbers captured before export, since a 9801 claim was denied without them [JSJ INTERNATIONAL LCB — W-f4Ah72J_I @ 01:33:40]. Original export declaration number goes to the carrier up front [Ask The Customs Manager — GdCve47uHF8 @ 00:01:21]."
         },
         {
-          "name": "Accounts-payable settlement claim packager",
-          "type": "textarea",
-          "prompt": "Define vendor normalization, class-period filtering, product qualification, credit memo treatment, and duplicate detection for settlement purchase records. Explain how the packager preserves administrator-specific requirements rather than applying one generic allocation template.",
-          "example": "Example: The packager maps vendor aliases to legal sellers, excludes transactions outside the settlement period, and nets $50,000 of credit memos against $2,050,000 otherwise eligible purchases. The resulting $2,000,000 schedule links every line to an invoice or accepted alternative record. Administrator-specific columns and certification questions are versioned separately. The projected $20,000 distribution remains an estimate, not a fixed percentage promised to the claimant."
+          "name": "original_ior_confirmation",
+          "type": "text",
+          "prompt": "Name the legal entity shown as importer of record on the original Form 7501 that paid the first duty. Confirm that same entity, not a sister company or affiliate, will file any 9801 return claim or tariff refund request.",
+          "example": "Original Form 7501 lists the parent operating company as importer of record; the distribution affiliate is excluded from filing. JSJ INTERNATIONAL LCB recounts a sister company that sank five trailers [JSJ INTERNATIONAL LCB — W-f4Ah72J_I @ 00:23:23], and TrackIQ confirms only the Form 7501 importer can claim IEEPA refunds [TrackIQ — Q8jgNmiJNZg @ 00:00:59]. Affiliate staff may support data pulls but never sign."
         },
         {
-          "name": "Acquisition funnel and cohort economics",
+          "name": "tariff_engineering_plan",
           "type": "textarea",
-          "prompt": "Measure conversion from targeted account to authorization, usable evidence, filed claim, and collected fee. Attribute cash acquisition spend and preparation labor to cohorts, while separating early engagement conversion from eventual cash realization.",
-          "example": "Example: A $900 drawback acquisition cohort produces 30 targeted accounts, six qualified conversations, two authorized reviews, and one accepted engagement. Acquisition cost per engagement is $900, not $150 per conversation. The eventual example fee is $29,700 only if the modeled recovery is realized. Monthly reporting keeps that cohort's uncollected forecast separate from cash fees and includes any abandoned-review labor in channel profitability."
+          "prompt": "Describe any tariff engineering change under consideration, confirming it happens during product development before importation. Explain the construction or material change, the target rate, and how you will avoid artificial product splitting or assuming one ruling covers other products.",
+          "example": "Seasonal decor redesign evaluated at the prototype stage, using Flexport's example of snow globes moving from 7.2% to 0% only when engineering happens before importation. Classification and a separate binding ruling for each variant locked during development [JSJ INTERNATIONAL LCB — OyJAzze4KyY @ 00:04:37]. No reclassification after entry, since JSJ calls misdeclaring or reclassifying after entry fraud [JSJ INTERNATIONAL LCB — OyJAzze4KyY @ 00:05:39]."
         },
         {
-          "name": "Specialist capacity and exception cost",
+          "name": "entry_audit_program",
           "type": "textarea",
-          "prompt": "Quantify clean-package throughput, exception frequency, review time, and contracted specialist capacity. Identify the bottleneck that limits additional acquisition and calculate the economic effect of improving source quality instead of adding indiscriminate leads.",
-          "example": "Example: One analyst prepares eight clean packages monthly, but each missing-export exception consumes four extra hours. At a $75 contractor rate, ten exceptions cost $3,000 and 40 hours. A $600 archive-retrieval improvement eliminating six exceptions saves $1,800 of labor, producing $1,200 net savings for that cohort. The broker's available review slots remain the final throughput constraint even after extraction becomes faster."
+          "prompt": "Define your internal entry audit program: sample size, cadence, pass-rate target, and the fields checked on each entry. Explain how country of origin and payables are verified against the 7501 rather than taken from secondary sheets such as the ISF.",
+          "example": "Monthly spreadsheet audit of sampled entries with a target pass rate of at least 95% [Shapiro — cjNgBgUI1As @ 00:02:32]. Country of origin is never taken from the ISF sheet, and payables are checked against the 7501 on every audited entry [Shapiro — cjNgBgUI1As @ 00:40:59]. A $250 to $300 ITRA is ordered to expose unauthorized filers using the importer number."
         },
         {
-          "name": "Portal outage and submission fallback",
+          "name": "ior_record_hygiene",
           "type": "textarea",
-          "prompt": "Document the response to unavailable customs or administrator systems, including deadline escalation, authorized alternative channels, and receipt verification. Prevent retries from creating duplicate claims or treating an internal queue timestamp as an external filing.",
-          "example": "Example: An administrator portal fails five days before the claim deadline. The specialist captures the error, contacts the published administrator support channel, and checks the operative instructions for an authorized alternative. The team uses an alternate method only if permitted and preserves delivery evidence. A queued browser submission is not recorded as filed; restoration triggers receipt reconciliation before any retry or replacement transmission."
+          "prompt": "Record the results of your bond query and ACE importer view review: importer of record name, physical and mailing addresses, bond number, bond status, and Form 5106 contact fields. Note whether an IRS 147C letter is on file.",
+          "example": "Bond query and ACE importer view confirm the IOR, addresses, bond number, and active, sufficient status [Trade Risk Guaranty — PymimTwXXVM @ 00:04:25]. The 147C letter was requested at 1-800-829-0115, pressing 3, around 6:30 Central [Trade Risk Guaranty — PymimTwXXVM @ 00:07:27]. Red-asterisk email and phone fields are confirmed monthly in ACE directly, since a broker bond query cannot show them."
         },
         {
-          "name": "Bond, export-trace, and payment-delay fallback",
+          "name": "prior_disclosure_assessment",
           "type": "textarea",
-          "prompt": "Specify separate fallback actions for insufficient surety capacity, missing export documentation, and delayed distribution. Quantify how each changes claim scope, cash timing, preparation spending, and the next review date.",
-          "example": "Example: If collateral rises by $10,000, the operator removes accelerated receipts from the cash plan and asks the broker to assess ordinary processing. If export evidence remains missing for 18% of value, that population stays outside the supported claim calculation. If settlement payment slips six months, no fee invoice is issued; new acquisition spending pauses when unrestricted runway would fall below two months of committed costs."
+          "prompt": "List any errors found during the audit that could support a prior disclosure, and confirm no CBP notice has yet been issued on those entries. Identify who decides on filing and the date the disclosure must be on file.",
+          "example": "Audit found origin errors on three entries traced to ISF data; no CBP notice has been issued, so a prior disclosure remains available [VoraPrep — xq7kXAXH3GQ @ 00:06:20]. VoraPrep describes the mechanism as the system's way of encouraging people to come clean and fix their own mistakes [VoraPrep — xq7kXAXH3GQ @ 00:05:10]. Compliance counsel files before any refund declaration."
         },
         {
-          "name": "Referral loop and publication permissions",
+          "name": "cape_upload_readiness",
           "type": "textarea",
-          "prompt": "Define the referral trigger, permitted case-study detail, client permission record, and channel attribution. Keep outreach claims tied to verified outcomes and distinguish optional paid services from direct settlement filing options.",
-          "example": "Example: After a fee is collected and the claimant confirms satisfaction, the operator requests an introduction to one peer controller. Written permission allows an anonymized case study reporting a $99,000 drawback receipt and 30% service fee, but excludes entry numbers, supplier names, and shipment details. Settlement outreach states the claimant may file directly at zero cost and identifies the operator as an independent optional service provider."
+          "prompt": "Before any CAPE CSV upload, confirm each entry's classification, origin, and value are clean, because the checkbox attests to them and the upload pushes entries into liquidation, barring further PSCs. Rank entries from cleanest to riskiest for sequencing.",
+          "example": "Tier 1 entries with verified classification, origin, and value go first; Tier 2 entries wait on corrections. Grassi warns the CSV upload pushes entries into liquidation and bars further PSCs [Grassi — xA8LxqtatDo @ 00:13:07], and advises putting the 6% refund interest toward an audit while filing the cleanest entries first [Grassi — xA8LxqtatDo @ 00:23:40]. Only about 63% of Phase 1 declarations passed."
         },
         {
-          "name": "Automation monitoring and rollback test",
+          "name": "penalty_mitigation_strategy",
           "type": "textarea",
-          "prompt": "List production checks, failure thresholds, deployment rollback steps, and human escalation ownership. Test whether a changed rule, corrupted document, repeated event, or stale deadline source can alter accepted claim amounts without detection.",
-          "example": "Example: A weekly replay feeds 20 archived packages through the current matcher. Any unexplained change in eligible duty totals stops deployment. A duplicate payment event must create zero extra invoices, and a corrupted source checksum must trigger quarantine. The prior rule version remains deployable; the operations lead owns rollback while the broker approves changes affecting customs eligibility, duty treatment, or formal filing output."
+          "prompt": "If a penalty or seizure notice arrives, outline the mitigation arguments available, such as inability to pay, first offense, or CBP's own errors. Identify whether counsel or a broker leads the response and how privilege is preserved.",
+          "example": "Counsel leads any penalty response, using first-offense status and documented CBP errors as primary arguments. Jennifer Diaz reports a $4M penalty reduced to $4,000 using inability to pay, first offense, and CBP's own errors [Meaningful Mediation — OFX0_mQm-Qo @ 00:15:49]. IEEPA Tariff Watch notes a broker can file paperwork, but an attorney can protect your rights [IEEPA Tariff Watch — V9_1adwF1c8 @ 00:04:52]."
         }
       ],
-      "completion_gate": "One authorized package per lane completes a supervised pipeline test; exception costs and acquisition attribution are visible. Portal failure, duplicate events, missing evidence, and reduced bond capacity each have a tested owner-led fallback."
+      "completion_gate": "Do not upload a CAPE file, claim 9801 treatment, or apply for zone status until the original importer of record is confirmed, the latest entry audit meets the 95% pass-rate target, IOR and bond records are verified in ACE, and any prior disclosure has been filed or ruled out in writing."
     },
     {
       "worksheet_id": "ws-06",
       "number": 6,
-      "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
-      "purpose": "Launch a disciplined recovery operation without confusing early engagements with collected fees. Allocate the small-team pod, stage the first thirty days, monitor evidence and cash performance, and assemble transferable operating records that support later diligence without overstating backlog or recovery certainty.",
-      "chapter_ref": "Q11, Q12",
+      "title": "Broker Oversight and Settlement Claim Recovery Tracker",
+      "purpose": "Verify that every customs broker acts under a direct, properly scoped power of attorney with demonstrable supervision, benchmark broker economics and bond sourcing, and capture every antitrust and class action settlement dollar through legitimate, honestly documented claims filed before the deadline.",
+      "chapter_ref": "Q11-Q12",
       "instructions": [
-        "Plan the first thirty days around specialist readiness, authorized intake, evidence quality, and a complete sample workflow. Treat the one-to-three-month first-deal range as an engagement target, not a promise that customs or settlement cash arrives immediately.",
-        "Assign one accountable owner to each lane and control function, including backup coverage for deadlines. Use the canonical team configurations when modeling annual outcomes, while documenting actual contractor scope, capacity, billing terms, and conflicts.",
-        "Review pod metrics weekly using consistent denominators and source evidence. Track accepted evidence packages, approaching deadlines, claim rework, cash runway, and collected fee revenue separately so a larger forecast cannot conceal execution or liquidity deterioration.",
-        "Create an exit-readiness ledger as operations begin rather than reconstructing records later. Preserve assignability restrictions, claimant permissions, specialist relationships, revenue reconciliation, open audit exposure, and access-control evidence in a restricted diligence structure.",
-        "At day thirty, compare actual readiness against the written milestones and funding plan. Expand only the lanes with supported eligibility, reliable delivery capacity, and funded waiting periods; record deferred work explicitly instead of manufacturing progress from speculative recoveries."
+        "Confirm a direct power of attorney covers every commodity each broker clears, and have it signed before goods sail from origin.",
+        "Verify duty remittance yourself, because the importer of record stays liable if the broker fails to pay CBP.",
+        "Benchmark broker fees and bond premiums against market bands, and buy the continuous bond direct from a surety where it saves money.",
+        "Inventory every settlement your business or household may qualify for and file through the official site, since unfiled claims are forfeited money.",
+        "Estimate claim quantities from records, upload proof, and reject any notice or service that demands upfront payment, gift cards, crypto, or a Social Security number."
       ],
       "fields": [
         {
-          "name": "Days 1–7 specialist and authority foundation",
+          "name": "poa_scope_verification",
           "type": "textarea",
-          "prompt": "Define the first week's deliverables, owners, costs, and evidence of completion. Prioritize licensed customs capacity, settlement expertise, engagement terms, secure intake, and a funded initial operating plan before purchasing broad prospect lists.",
-          "example": "Example: By day 7, the founder confirms one licensed broker, one trade-counsel contact, and one settlement specialist. The team approves the three-lane intake form, contingency addendum, and direct-filing disclosure template. An $8,000 setup budget covers scoped professional work, secure document storage, and initial data access. Completion requires executed service arrangements and tested access, not merely introductory calls or unsigned proposals."
+          "prompt": "Confirm a direct, properly executed power of attorney exists for each broker, covering every commodity being cleared. Note the signing date, whether it was in hand before goods sailed from origin, and whether any scope expansion requires an amended POA.",
+          "example": "Direct POA with the ocean broker covers electronic components only; the new monitor line needs an amended POA, since VoraPrep calls exceeding POA scope a major compliance failure [VoraPrep — 8NkJbs7UVvY @ 00:07:18]. POA signed and returned before the first shipment sailed, because even a basic ISF filing needs it [Scarbrough Global — m-RN8tPLnPk @ 00:01:25]. Relationship confirmed in writing."
         },
         {
-          "name": "Days 8–14 acquisition and authorized records",
+          "name": "broker_duty_remittance_check",
           "type": "textarea",
-          "prompt": "Set a targeted outreach cohort, qualification questions, authorization target, and source-record acceptance standard. Define what counts as a qualified engagement while keeping unsupported duty estimates outside the collectible recovery forecast.",
-          "example": "Example: Contact 30 import-active manufacturers and 20 businesses fitting one verified settlement class. Target six substantive conversations and three authorized record reviews, not a guaranteed number of claims. For each customs prospect, request entry summaries and export evidence before pricing. For each settlement prospect, verify the class period and direct-filing option. The founder records responses, authorization dates, and reasons for declining unsuitable opportunities."
+          "prompt": "Describe how you verify that your broker actually remits duties to CBP on each entry, and how you would detect a missed payment. Note whether you pay CBP directly, use periodic monthly statements, or authorize credit payments yourself.",
+          "example": "Monthly ACE statement review matches every broker invoice to a CBP-posted payment, because the importer of record stays liable if the broker fails to pay [Steve Fodor — NXnGUZwargM @ 00:04:42]. Periodic monthly statement status moves payment to the 15th business day of the following month [Steve Fodor — NXnGUZwargM @ 00:07:31]. Direct credit payments are authorized to avoid $1,000-per-entry penalties."
         },
         {
-          "name": "Days 15–21 production pilot and controls",
+          "name": "broker_fee_benchmark",
           "type": "textarea",
-          "prompt": "Define the supervised pilot, required records, reviewer responsibilities, and test cases for each lane. Distinguish a completed internal package from a real external submission and avoid manufacturing filings solely to satisfy sprint milestones.",
-          "example": "Example: Prepare one authorized drawback package, one tariff-route assessment, and one settlement eligibility package if suitable prospects exist. Otherwise use clearly labeled synthetic records for the missing lane's workflow test. Run duplicate-file, missing-export, stale-deadline, and payment-reversal tests. The broker signs the customs assessment; the settlement specialist checks the controlling instructions. No synthetic package is submitted to CBP or a settlement administrator."
+          "prompt": "List every line item on your broker invoice, separating entry fees from pass-through charges such as the Merchandise Processing Fee. Compare the entry fee to market bands for standard and complex work, and flag any add-on services you cannot justify.",
+          "example": "Standard ocean entry billed at $225, inside the $150-250 band; complex entries at $380, inside $250-400 [Factory Floor Economics — YhiuYAa1Byw @ 00:06:06]. MPF passed through at 0.3464% with a FY2027 minimum of $34.58 and maximum of $670.86. Broker margin typically lives in add-on services, so each add-on line is questioned before payment is approved by finance."
         },
         {
-          "name": "Days 22–30 readiness decision and next sprint",
-          "type": "textarea",
-          "prompt": "List the final readiness evidence, remaining blockers, responsible owners, and next-month priorities. Use actual completion status and funding needs rather than converting pipeline estimates into revenue or declaring all lanes operational prematurely.",
-          "example": "Example: Day 30 closes with two signed engagements, one broker-reviewed drawback package, and a settlement workflow tested on synthetic records. Collected fee revenue remains $0 because no recovery has arrived. The next sprint pursues missing export records, verifies tariff route timing, and secures one suitable settlement claimant. The founder defers paid acquisition expansion until the cash plan covers the documented preparation and waiting-period commitments."
+          "name": "continuous_bond_sourcing",
+          "type": "text",
+          "prompt": "Record your continuous bond amount, annual premium, and whether it was purchased directly from a surety or through the broker. Explain how the bond amount was sized and when it will next be reviewed against trailing duties, taxes, and fees.",
+          "example": "Continuous bond bought direct from a surety at roughly $400-500 a year, rather than through the broker [Ask The Customs Manager — DHSVYPVM3bA @ 00:01:43]. Sized at 10% of trailing annual duties, taxes, and fees with a $50K floor [Trade Risk Guaranty — M68ZVWdgp9I @ 00:02:15]. Reviewed quarterly; the next increase skips intermediate sizes rather than stepping up one size at a time."
         },
         {
-          "name": "Pod roster and canonical staffing",
+          "name": "broker_supervision_evidence",
           "type": "textarea",
-          "prompt": "Assign accountable people to acquisition, evidence, licensed filing, settlement review, and accounting. Reconcile the roster with canonical staffing and state contractor availability, backup arrangements, and which tasks remain with the full-time operator.",
-          "example": "Example: Conservative and Base use 1 FT + 3 C: the founder owns sales, cash, and case coordination; contracted roles cover broker filing, evidence engineering, and settlement or trade specialist support under defined scopes. Scaled uses 2 FT + 4 C, six people, adding a full-time operations lead and a fourth contracted role. Counsel availability and accounting support are scoped explicitly within the actual cost plan rather than assumed free."
+          "prompt": "Summarize the written evidence your broker provided of responsible supervision and control: training already conducted with topics and hours, a compliance manual that is actually followed, record retention practice, and the 72-hour cyber breach reporting procedure.",
+          "example": "Broker supplied training logs with topics and hours, mirroring what a permit application must prove [Braumiller Law Group, PLLC — 9rfRsbrSbPw @ 00:07:01]. The broker's manual is followed, since a broker is better off with no manual than one ignored [CONECT Recorded Webinars — jMlTHY21lng @ 00:57:18]. Records kept in the US for 5 years; our import team also adopts the 72-hour breach practice."
         },
         {
-          "name": "Weekly operating KPI scorecard",
+          "name": "corrective_advice_log",
           "type": "textarea",
-          "prompt": "Define each KPI, numerator, denominator, reporting interval, source, and intervention threshold. Include evidence completeness, deadline exposure, rework, collection timing, and fee cash without merging forecasts with completed production or collections.",
-          "example": "Example: Week 4 shows three authorized reviews, two signed engagements, and one broker-reviewed package. Value-weighted export support is 82%; material unresolved deadlines within 30 days number zero. Two of ten reviewed records require correction, producing a 20% record rework rate. Collected fees are $0, and unrestricted runway is calculated from committed spending. Any approaching unsupported filing deadline receives same-day specialist escalation."
+          "prompt": "Log any corrective advice your broker has shared about classification, valuation, or entry errors, including the date, the issue, and the action taken. Note whether the advice was documented internally, reported onward, or still awaits a decision from your team.",
+          "example": "Broker flagged an invoice and packing list conflict, cotton versus polyester, on two entries and recommended reconciling before filing, because blind reliance on the importer is a major violation [VoraPrep — 2rbdaN1Swhk @ 00:05:53]. CONECT panelists say sharing corrective advice with the client shows reasonable care [CONECT Recorded Webinars — jMlTHY21lng @ 00:46:26]. Advice documented internally and both entries corrected before filing."
         },
         {
-          "name": "Capital allocation and economic checkpoint",
+          "name": "settlement_eligibility_inventory",
           "type": "textarea",
-          "prompt": "Compare actual launch spending, monthly overhead, direct claim commitments, and restricted cash with the canonical startup and operating ranges. Explain any funding gap and distinguish first signed deal timing from first collected fee timing.",
-          "example": "Example: Available launch capital is $35,000 within the $8,000–$35,000 range, and fixed overhead is $3,000 monthly within the $1,500–$9,500 range. The four-month worked plan leaves $2,200 before collections, excluding additional collateral. A first engagement in months 1–3 does not solve that cash constraint. The operator defers acceleration requiring $10,000 collateral unless separate committed liquidity funds it."
+          "prompt": "List every antitrust or class action settlement your business or household may qualify for, such as interchange, ATM fee, Blue Cross, or data breach cases. For each, record the official settlement site, claim deadline, and whether you hold a unique ID and PIN.",
+          "example": "Gas-station ATM fee case: $167.5 million fund [Receipts — UvphNI0Wxog @ 00:04:53]. AT&T data breach: up to $7,500 with uploaded proof [Crazy Deals and Steals — IP9zniHMMKM @ 00:00:55]; ID and PIN recovered by searching email for Kroll plus breach keywords. Merchant interchange claim filed through PaymentCardSettlement.com. Only 4% of eligible consumers file, so every listed case gets a claim."
         },
         {
-          "name": "Revenue quality and transferable backlog",
+          "name": "claim_estimate_and_proof",
           "type": "textarea",
-          "prompt": "Separate collected fees, earned receivables, conditional forecasts, and speculative opportunities. Record claim stage, reversal exposure, transfer restrictions, and supporting evidence so a reviewer can assess revenue quality without treating claimant principal as business sales.",
-          "example": "Example: The diligence ledger shows $29,700 collected drawback fees, $10,000 tariff fees earned after a documented refund but awaiting client payment, and $6,000 conditional settlement fees awaiting distribution. These are three different categories, not $45,700 collected revenue. Underlying claimant recoveries remain separate. Each engagement records assignability terms, required client permissions, open servicing duties, and the source documents supporting its stated accounting treatment."
+          "prompt": "Show how each claim quantity or loss estimate was built from records such as old bank statements or spreadsheets. Remember the form is signed under penalty of perjury, so note what proof you uploaded and what backup you retain for administrator follow-up.",
+          "example": "ATM fee count built from bank statements, not a guess; Receipts warns that claiming a daily gas-station ATM visit since 2007 invites a follow-up letter [Receipts — UvphNI0Wxog @ 00:06:51]. Blue Cross Option B filing attaches Excel spreadsheets showing allowed-amount calculations [Horty Springer & Mattern, P.C. — jgkO88qEcMs @ 00:13:57]. All supporting statements are archived for later administrator requests under the perjury attestation."
         },
         {
-          "name": "Exit-readiness evidence and relationship transfer",
+          "name": "notice_legitimacy_screen",
           "type": "textarea",
-          "prompt": "Inventory operating procedures, client contracts, specialist dependencies, licenses, data permissions, and system access that affect transferability. Identify what a purchaser could receive contractually and what requires new client authority or professional arrangements.",
-          "example": "Example: The restricted diligence index contains redacted contracts, monthly fee reconciliations, procedure versions, security records, and specialist capacity agreements. Client customs records are not released merely because a buyer signs a general interest letter. Broker licenses, portal credentials, and Customs Powers of Attorney are not treated as freely transferable assets. Counsel maps required consents and replacement arrangements before any proposed transaction changes access or representation."
+          "prompt": "Screen every settlement notice, check, or claim-filing service for scam signals: upfront fees, gift card or crypto requests, Social Security number demands, or contingency charges. Record how you confirmed legitimacy with the administrator named on the official letter.",
+          "example": "Unexpected check verified by emailing the administrator listed on the perforated letter before deposit [The Class Action Attorney — wR6-BeiQppQ @ 00:01:54]. A notice requesting payment was discarded, since News4JAX calls any payment request in a class action a scam [News4JAX The Local Station — kOG09tYsDhM @ 00:00:46]. A 25% contingency pitch for merchant interchange claims was declined because free filing methods exist."
         },
         {
-          "name": "Thirty-day decision and scorecard reconciliation",
+          "name": "recovery_routing_decision",
           "type": "textarea",
-          "prompt": "Record the launch decision, deferred lanes, next funding action, and canonical annual targets. Confirm the difference between a modeled operating outcome and measured performance, preserving the exact profit, margin, staffing, and ranking metadata.",
-          "example": "Example: Continue the supported drawback pilot, defer paid settlement acquisition until one real class-qualified claimant is verified, and fund the next evidence cycle before expanding. Volume 044 remains pipeline rank #03 with Money-to-Manpower Score 95/100: revenue 25, margin 24, efficiency 19, accessibility 14, automation 13. Canonical annual owner profit targets remain $35,200 Conservative, $231,750 Base, and $533,600 Scaled; none is reported as achieved launch performance."
+          "prompt": "For each recovery route, decide whether to file directly, use an intermediary, or opt out. Record expected net proceeds after attorney fees and administration costs come off the top, and confirm importer-of-record status before pursuing any consumer tariff pass-through refund.",
+          "example": "Blue Cross provider claim filed directly; Horty Springer models about 24% of the $2.8 billion to plaintiffs' lawyers and about $200 million to costs [Horty Springer & Mattern, P.C. — jgkO88qEcMs @ 00:03:38]. No tariff pass-through claim is pursued, because CAPE accepts requests only from importers of record or authorized customs brokers [The Wax Seal — mL-p627SkkI @ 00:02:28]. Unfiled claims are forfeited money."
         }
       ],
-      "completion_gate": "The founder signs the thirty-day evidence ledger, reconciles actual cash and claim status, and approves only funded next-sprint commitments. Canonical annual targets remain distinct from measured results, with transfer restrictions and unfinished lane work explicitly recorded."
+      "completion_gate": "Close this worksheet only when every broker holds a direct, correctly scoped POA with documented supervision, duty remittance is verified against ACE, the bond is sized and sourced, and every eligible settlement has a filed claim with record-based estimates, uploaded proof, and administrator-confirmed legitimacy."
     }
   ]
 }

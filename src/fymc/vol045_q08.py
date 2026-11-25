@@ -1,736 +1,870 @@
 from __future__ import annotations
 
-CHAPTER_8 = {
-    "id": "Q8",
-    "chapter_id": "Q8",
-    "chapter_number": 8,
-    "question_number": 8,
-    "slug": "public-records-apis-data-pipelines-operator-tooling",
-    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small no surprises act (idr) medical arbitration & out-of-network recovery desk an unfair information edge?",
-    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
-    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
-    "subtitle": "CMS IDR Records, NPPES, ERISA Plan Evidence, X12 835 Pipelines, and Cash-Verified QPA Recovery",
-    "layout_template": "resource_directory",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #45, Rank #09 of 49, scores 94/100 by turning documented "
-        "out-of-network underpayments into a tightly controlled recovery workflow. "
-        "This chapter connects 18 named resources to 12 mapped plays spanning "
-        "provider discovery, jurisdiction screening, remittance normalization, "
-        "deadline control, evidence assembly, and collected-cash reconciliation. "
-        "Public records identify opportunities; authorized claim records establish "
-        "eligibility; bank-matched receipts establish earned contingency revenue. "
-        "Formula v2.0 fixes annual owner profit at $33,000 Conservative, $217,150 "
-        "Base, and $504,000 Scaled, without counting baseline provider collections. "
-        "The operating edge is a versioned evidence chain, not indiscriminate "
-        "scraping: every source needs an access method, freshness rule, fallback, "
-        "and accountable owner before its output influences a filing."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$110,000",
-            "context": "Annual earned operator contingency revenue; excludes baseline provider collections",
-            "note": "30% net margin; $33,000 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$505,000",
-            "context": "Annual earned operator contingency revenue; excludes baseline provider collections",
-            "note": "43.0% net margin; $217,150 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual earned operator contingency revenue; excludes baseline provider collections",
-            "note": "56% net margin; $504,000 annual owner net profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Establish authoritative identities before enriching an opportunity",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with an identity ledger, not a prospect spreadsheet. Give each "
-                    "provider organization, rendering clinician, payer legal entity, employer "
-                    "plan, and disputed service a separate internal identifier. NPPES supplies "
-                    "an NPI and published taxonomy; it does not establish network status, "
-                    "licensure, ownership, or federal IDR eligibility. Join an organization "
-                    "NPI to the signed engagement, authorized billing records, and relevant "
-                    "practice locations before attaching claims. Use CMS Care Compare to "
-                    "corroborate publicly reported affiliations, then verify current practice "
-                    "relationships directly. An apparent hospital affiliation is neither "
-                    "proof of employment nor proof that a particular encounter qualifies "
-                    "under the No Surprises Act. Store the source URL, retrieval time, "
-                    "effective period, and original artifact hash beside every asserted "
-                    "attribute. Keep contradictory observations rather than overwriting them. "
-                    "A directory address changed yesterday cannot retroactively establish "
-                    "the service location six months earlier. The first three chapter-local "
-                    "mapped plays are Provider Identity Resolution, Practice Affiliation "
-                    "Verification, and Federal-versus-State Routing. At 100 prospective "
-                    "practices and six minutes per identity check, initial screening consumes "
-                    "ten hours; resolving only twenty ambiguous matches at fifteen minutes "
-                    "each adds five hours. That bounded queue beats letting every ambiguous "
-                    "record consume a full arbitration analyst review."
-                ),
-                (
-                    "Jurisdiction is a document question, not a payer-logo classifier. "
-                    "DOL Form 5500 records can corroborate an employer plan's existence "
-                    "and reported arrangements, but filing exemptions, reporting lag, and "
-                    "sponsor subsidiaries prevent a reliable one-field determination of "
-                    "funding status. Obtain the applicable plan documents, coverage details, "
-                    "initial remittance, service location, and evidence concerning any "
-                    "state election that matters to the encounter. Separate ERISA status "
-                    "from self-funding; neither label alone resolves every federal-versus-state "
-                    "payment issue. Test whether a specified state law or applicable "
-                    "All-Payer Model Agreement determines the payment amount before routing "
-                    "to federal IDR under 42 U.S.C. § 300gg-111. Medicare, Medicaid, and "
-                    "other excluded coverage must leave this commercial workflow. Record "
-                    "why the service category and circumstances meet the relevant federal "
-                    "protections, including emergency care or covered nonemergency services "
-                    "at participating facilities. For thirty uncertain claims, a twelve-minute "
-                    "document check costs six analyst hours; compare that with thirty "
-                    "avoidable filing expenditures and dismissed cases. The fallback is "
-                    "a missing-evidence queue with a named requester and deadline, not "
-                    "an automated federal filing based on an insurance card. State "
-                    "insurance department materials supplement, but do not replace, "
-                    "encounter-specific plan evidence."
-                ),
-                (
-                    "Use CMS IDR public-use releases to understand the market's case "
-                    "mix, reporting periods, and operational congestion. They are aggregate "
-                    "observations, not a provider prospect list, a current case-status API, "
-                    "or a forecast that your offers will be collected. Preserve each "
-                    "release with its methodology because submissions, disputes, determinations, "
-                    "and payment outcomes have different denominators. A reported prevailing "
-                    "offer share cannot supply a collection probability without separate "
-                    "receipt evidence. The directory in this chapter contains eighteen "
-                    "named resources across three matrices; the fourth matrix contains "
-                    "operating tests rather than additional directory entries. Cost tiers "
-                    "distinguish free public access, included customer access, and negotiated "
-                    "licenses, because commercial endpoints rarely have universal pricing. "
-                    "Refresh cadence likewise separates a source's publication schedule "
-                    "from the desk's polling schedule. Do not manufacture a latency "
-                    "commitment where the publisher provides none. Maintain an acquisition "
-                    "manifest containing retrieval timestamps, response status, content "
-                    "hashes, parser version, and row counts. A public download that "
-                    "silently changes columns should fail into quarantine instead of "
-                    "rewriting the identity ledger. For six public sources checked "
-                    "weekly, twenty minutes of review per source budgets two hours; "
-                    "measure whether detected changes actually affect routing before "
-                    "increasing that frequency."
-                ),
-            ],
-            "table": {
-                "caption": "Official Discovery Directory: Six Public Identity and Jurisdiction Resources",
-                "headers": [
-                    "Named resource and operating purpose",
-                    "Exact access method",
-                    "Cost tier and acquisition boundary",
-                    "Refresh and latency treatment",
-                    "Rate-limit and retrieval hygiene",
-                    "Fallback evidence when coverage breaks",
-                ],
-                "rows": [
-                    [
-                        "CMS NPPES NPI Registry resolves published provider identifiers",
-                        "Query https://npiregistry.cms.hhs.gov/api/ with version=2.1 and documented search parameters",
-                        "Public API access is free; bulk processing adds storage costs",
-                        "Check weekly; reconcile bulk files against their published release dates",
-                        "Cache NPI responses, bound pagination, and back off throttled requests",
-                        "Use CMS NPPES downloadable files plus signed provider identity records",
-                    ],
-                    [
-                        "CMS NPPES downloadable files support reproducible provider population snapshots",
-                        "Download published files through https://download.cms.gov/nppes/NPI_Files.html and retain manifests",
-                        "Public downloads are free; budget bandwidth and local indexing work",
-                        "Ingest monthly replacement files and available weekly incremental updates",
-                        "Download each artifact once; reuse hashes instead of repeated transfers",
-                        "Use targeted NPI Registry queries for records awaiting bulk reconciliation",
-                    ],
-                    [
-                        "CMS Care Compare datasets corroborate publicly reported clinician affiliations",
-                        "Select dataset and download CSV through https://data.cms.gov/provider-data/ resource pages",
-                        "Public access is free; analyst matching remains an operating expense",
-                        "Read each dataset release date; affiliation changes may lag encounters",
-                        "Prefer complete published downloads over repeated broad interactive queries",
-                        "Request current practice rosters and encounter-specific facility relationship evidence",
-                    ],
-                    [
-                        "DOL Form 5500 Search supports employer plan identity research",
-                        "Search sponsor names and EINs at https://www.efast.dol.gov/5500Search/ official interface",
-                        "Public search is free; document interpretation requires trained staff time",
-                        "Annual filings arrive with lag; preserve plan year and amendments",
-                        "Use targeted searches and published downloads rather than scraping sessions",
-                        "Request summary plan documents and administrator confirmation for relevant coverage",
-                    ],
-                    [
-                        "CMS No Surprises resources publish IDR reports and implementation materials",
-                        "Navigate https://www.cms.gov/nosurprises to IDR reports, downloads, and technical guidance",
-                        "Public releases are free; no private dispute feed is implied",
-                        "Check weekly; ingest only when publication version or content changes",
-                        "Cache downloads and record methodology revisions beside each imported release",
-                        "Retain prior releases and use case-specific receipts for operational status",
-                    ],
-                    [
-                        "Texas Department of Insurance illustrates state surprise-billing routing research",
-                        "Use official balance-billing materials at https://www.tdi.texas.gov/medical-billing/index.html and linked authorities",
-                        "Public materials are free; state-specific interpretation adds casework expense",
-                        "Check before routing Texas encounters and after published rule changes",
-                        "Retrieve linked primary materials once and preserve dated source copies",
-                        "Use applicable state statutes and plan evidence when guidance conflicts",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make uncertainty visible before it becomes a filing expense",
-                "body": (
-                    "The strongest desk separates corroboration from proof and maintains "
-                    "dated evidence for every material routing decision."
-                ),
-                "items": [
-                    "Keep the payer brand, claims administrator, and plan sponsor in separate fields; the logo on an ERA does not identify the governing payment regime.",
-                    "Compare NPI taxonomy against the actual disputed service; a specialty label alone cannot establish clinical complexity or facility eligibility.",
-                    "Save the CMS report methodology alongside the spreadsheet; changes in reporting denominators can masquerade as improvements in recovery performance.",
-                    "Attach the service-date version of coverage evidence to the case; current directory information cannot establish historical network participation.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Normalize claim evidence and build a defensible enrichment waterfall",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The next four mapped plays are ERA Underpayment Triage, Remittance "
-                    "Code Explanation, QPA Disclosure Reconciliation, and Licensed Benchmark "
-                    "Enrichment. Begin with authorized X12 835 delivery through the provider's "
-                    "clearinghouse or payer channel. Preserve the original interchange and "
-                    "parse transaction, claim, service-line, adjustment, remark, and payment "
-                    "reference structures without flattening them prematurely. A CARC explains "
-                    "an adjustment category; it does not prove the payer violated the "
-                    "Act or that the claim belongs in federal IDR. RARCs add context "
-                    "but cannot replace the benefit document and actual notice. Track "
-                    "payer claim identifiers, service dates, modifiers, units, rendering "
-                    "NPI, location, and remittance trace references as distinct fields. "
-                    "Corrected claims and reversals must reference their predecessors. "
-                    "If 2,000 service lines arrive monthly and rules flag eight percent, "
-                    "160 lines need review; at seven minutes each, the queue consumes "
-                    "about 18.7 hours before evidence collection. That is a staffing "
-                    "input, not 160 payable disputes. Route missing QPA disclosures "
-                    "to a document request, contradictory adjustments to analyst review, "
-                    "and suspected duplicates to a reconciliation queue. Never promote "
-                    "a code match directly into a demand packet without verifying "
-                    "the coverage and service circumstances."
-                ),
-                (
-                    "The enrichment waterfall should spend progressively, stopping whenever "
-                    "a cheaper authoritative source answers the question. First use the "
-                    "engagement records, 835, explanation of benefits, and payer's required "
-                    "QPA disclosures. Next consult official identity and jurisdiction records. "
-                    "Then request missing encounter evidence from the provider through a "
-                    "secure channel. Only after eligibility is supportable should the desk "
-                    "buy licensed benchmark observations or commission clinical analysis. "
-                    "FAIR Health products can inform market context under their license "
-                    "terms; access to a website does not establish permission to scrape "
-                    "or redistribute a database. CMS Medicare schedules can help detect "
-                    "unit errors and implausible coding assumptions, but public-payer "
-                    "reimbursement rates are among the prohibited considerations in federal "
-                    "IDR determinations. Likewise, do not use usual-and-customary charges "
-                    "or billed charges as award-setting evidence. Keep those diagnostics "
-                    "outside the submitted merits packet. Offer construction must follow "
-                    "the current governing statute, operative rules, and applicable judicial "
-                    "decisions, rather than treating a benchmark multiplier as entitlement. "
-                    "If twenty eligible cases require an illustrative $35 licensed "
-                    "lookup allocation each, the enrichment budget is $700; if ten "
-                    "fail routing first, purchasing only the remaining ten saves $350 "
-                    "without sacrificing admissible evidence."
-                ),
-                (
-                    "Treat HIPAA architecture as part of the data model. Execute "
-                    "Business Associate Agreements where required under 45 CFR §§ 164.502(e) "
-                    "and 164.504(e), and confirm that the selected vendor service, storage "
-                    "region, support access, and subcontracting arrangement are covered. "
-                    "A vendor's healthcare marketing page is not the agreement. Apply "
-                    "minimum-necessary access to caseworkers, segregate prospecting data "
-                    "from claim evidence, encrypt stored and transmitted records, and "
-                    "record access events without copying clinical narratives into ordinary "
-                    "application logs. HHS OCR's breach portal is a diligence signal "
-                    "about reported incidents, not a certification of current security. "
-                    "Use it to frame vendor questions rather than automatically rejecting "
-                    "every listed entity. Validate parsers against authorized test fixtures "
-                    "or genuinely synthetic examples before processing production remittances. "
-                    "A payment reversal, split remittance, duplicate interchange, negative "
-                    "adjustment, or changed claim identifier must produce an explainable "
-                    "result. Five fixtures covering those patterns are worth more than "
-                    "a dashboard showing thousands of untested rows. For restricted "
-                    "data, fallback means an approved provider transfer channel and "
-                    "manual structured extraction, not uploading the record to a public "
-                    "converter or general enrichment service. Retain required security "
-                    "documentation separately from the retention schedule chosen for "
-                    "the underlying claim artifacts."
-                ),
-            ],
-            "table": {
-                "caption": "Evidence Directory: Six Claim, Benchmark, and Vendor-Diligence Resources",
-                "headers": [
-                    "Named resource and operating purpose",
-                    "Exact access method",
-                    "Cost tier and acquisition boundary",
-                    "Refresh and latency treatment",
-                    "Rate-limit and retrieval hygiene",
-                    "Fallback evidence when coverage breaks",
-                ],
-                "rows": [
-                    [
-                        "Availity Essentials provides authorized payer transactions and remittance access",
-                        "Use https://www.availity.com/ customer enrollment and contracted payer-supported delivery channels",
-                        "Basic and paid offerings differ; confirm transaction and connectivity charges",
-                        "Remittance arrival follows payer release and the contracted delivery schedule",
-                        "Honor contracted transaction limits; deduplicate files using interchange control identifiers",
-                        "Obtain provider-authorized payer portal exports or existing clearinghouse remittance delivery",
-                    ],
-                    [
-                        "X12 external code lists explain adjustment and remittance remark codes",
-                        "Read published CARC and RARC lists through https://x12.org/codes official pages",
-                        "Published access and redistribution rights differ; verify intended license scope",
-                        "Track effective and retirement dates rather than assuming timeless code meanings",
-                        "Cache permitted reference copies and avoid repeatedly crawling identical lists",
-                        "Preserve payer notice explanations and obtain properly licensed reference material",
-                    ],
-                    [
-                        "FAIR Health licensed products provide carefully bounded market context",
-                        "Request product scope and delivery terms through https://www.fairhealth.org/ sales channels",
-                        "Commercial pricing is negotiated; consumer access does not license extraction",
-                        "Record release vintage, geography, sample scope, and contractual update schedule",
-                        "Use only contracted query channels and observe purchased usage allowances",
-                        "Proceed with permissible case evidence rather than inventing benchmark observations",
-                    ],
-                    [
-                        "CMS Physician Fee Schedule files support internal coding sanity checks",
-                        "Download applicable year files through https://www.cms.gov/medicare/payment/fee-schedules/physician official pages",
-                        "Public files are free; these rates are excluded award-setting considerations",
-                        "Load service-year versions and applicable revisions with dated manifests",
-                        "Download once per release and perform repeated comparisons locally",
-                        "Use licensed coding references and provider coding review for discrepancies",
-                    ],
-                    [
-                        "HHS OCR breach portal informs focused vendor security diligence",
-                        "Search reported incidents at https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf official public interface",
-                        "Public access is free; absence does not establish vendor safety",
-                        "Check during onboarding and periodically; reports are not live telemetry",
-                        "Use narrow manual searches and avoid harvesting unrelated incident records",
-                        "Request vendor incident history, remediation evidence, and contractual security commitments",
-                    ],
-                    [
-                        "CMS QPA disclosure guidance clarifies payer information request requirements",
-                        "Use https://www.cms.gov/nosurprises guidance and current official implementing rule links",
-                        "Public guidance is free; obtaining payer-specific disclosures requires authorized requests",
-                        "Review revisions monthly and verify operative requirements before disputed filings",
-                        "Cache guidance versions and keep payer requests outside public channels",
-                        "Use 45 CFR § 149.140 and the payer's actual disclosures",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Accept a traceable source artifact",
-                    "action": "Receive the authorized ERA and associated notice through an approved channel.",
-                    "detail": "Record sender, receipt time, content hash, coverage period, and immutable storage reference before parsing.",
-                },
-                {
-                    "step": 2,
-                    "title": "Normalize without losing lineage",
-                    "action": "Extract claim and service-line records while retaining adjustment relationships.",
-                    "detail": "Preserve original identifiers, reversals, payer traces, code-list versions, and links back to source segments.",
-                },
-                {
-                    "step": 3,
-                    "title": "Resolve eligibility before buying enrichment",
-                    "action": "Verify service circumstances, applicable payment regime, and deadline evidence.",
-                    "detail": "Request missing plan documents first; buy licensed context only for cases that remain supportable.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile and release a review packet",
-                    "action": "Compare parsed totals with the remittance and route exceptions to an analyst.",
-                    "detail": "Require an explained difference of zero or a documented adjustment before the packet enters deadline processing.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Control deadlines, portal evidence, and restrained commercial signals",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The next three mapped plays are Open-Negotiation Deadline Control, "
-                    "IDR Portal Receipt Capture, and Cooling-Off Cohort Control. Model "
-                    "deadlines as events with evidence, not dates someone typed into "
-                    "a calendar. Under the federal framework, distinguish the window "
-                    "for initiating open negotiation after initial payment or denial "
-                    "from the thirty-business-day negotiation period itself. Then calculate "
-                    "the four-business-day initiation window following that period using "
-                    "the operative counting instructions and any applicable extensions. "
-                    "Certified entity selection is a separate procedural step; four "
-                    "business days is not a universal entity-selection or batching "
-                    "deadline. Capture the triggering notice, delivery method, receipt "
-                    "evidence, calculation version, holiday assumptions, and reviewer. "
-                    "Maintain both the statutory due date and an earlier internal "
-                    "target. If twelve cases approach a filing window and each "
-                    "needs twenty minutes of final verification, reserve four analyst "
-                    "hours before the internal target. Portal downtime does not "
-                    "automatically suspend a deadline. Preserve outage evidence and "
-                    "follow CMS's current documented assistance or extension process. "
-                    "Never treat an email to support as proof of a filed dispute. "
-                    "The fallback is a documented escalation using authorized channels, "
-                    "with the case visibly unresolved until an actual receipt exists."
-                ),
-                (
-                    "Use the CMS Federal IDR portal as the submission system of "
-                    "record, not as an assumed general-purpose API. Do not invent "
-                    "a bulk endpoint or automate interactive credentials around portal "
-                    "restrictions. Capture confirmation identifiers, submitted versions, "
-                    "fee instructions, entity communications, and determinations through "
-                    "authorized access. Reconcile internal status to those artifacts "
-                    "daily during active filing windows. Cooling-off logic must attach "
-                    "the determination event to the relevant parties and same or "
-                    "similar items or services under the operative rule. Do not "
-                    "reduce every case to payer brand plus procedure code. Track "
-                    "the ninety-calendar-day restriction and the applicable subsequent "
-                    "initiation window separately; do not confuse this clock with "
-                    "the thirty-business-day negotiation clock. Batching needs its own "
-                    "dated eligibility test because governing rules and judicial "
-                    "decisions can change permissible grouping. Similar spreadsheet "
-                    "rows are not sufficient proof. At forty candidate lines, "
-                    "a proposed four-case batch may reduce duplicated preparation, "
-                    "but model four separate filings until grouping is confirmed. "
-                    "Fee savings belong in the forecast only after eligibility "
-                    "is documented. Google Calendar or Microsoft Outlook can mirror "
-                    "internal reminders, but the event ledger and preserved source "
-                    "documents must remain authoritative when reminders are edited "
-                    "or invitations fail."
-                ),
-                (
-                    "The eleventh mapped play is saas_technographic_churn_pixel_scraping, "
-                    "applied only to permitted public commercial pages and DNS records "
-                    "for prospect timing, never patient-facing authenticated systems. "
-                    "Weekly comparisons can observe additions or removals of Salesforce, "
-                    "HubSpot, Marketo, Segment, or NetSuite indicators where those "
-                    "indicators are actually public. A weekly crawl cannot establish "
-                    "the exact installation day; retain an interval between the "
-                    "last negative and first positive observation. A removed script "
-                    "might reflect a tag-manager change, regional delivery, or "
-                    "site redesign rather than churn. Treat months ten through "
-                    "eleven after an observed installation as a weak outreach "
-                    "hypothesis, not a known annual renewal date. For 200 practice "
-                    "domains checked weekly, approximately 800 monthly page checks "
-                    "at an illustrative $0.02 allocated processing cost total $16; "
-                    "twenty ambiguous signals receiving eight minutes of review "
-                    "consume another 160 minutes. Those figures exclude commercial "
-                    "license charges and are not vendor quotes. Confirm apparent "
-                    "switches with passive DNS TXT/CNAME history and public job-posting "
-                    "mentions before routing outreach. Stop on access restrictions, "
-                    "cache results, and never use this play as evidence of "
-                    "claim eligibility, clinical acuity, payer behavior, or collectible "
-                    "IDR proceeds."
-                ),
-            ],
-            "table": {
-                "caption": "Workflow Directory: Six Filing, Calendar, and Commercial-Signal Resources",
-                "headers": [
-                    "Named resource and operating purpose",
-                    "Exact access method",
-                    "Cost tier and acquisition boundary",
-                    "Refresh and latency treatment",
-                    "Rate-limit and retrieval hygiene",
-                    "Fallback evidence when coverage breaks",
-                ],
-                "rows": [
-                    [
-                        "CMS Federal IDR portal records authorized dispute submissions and receipts",
-                        "Enter through https://www.cms.gov/nosurprises/help-resolve-payment-disputes and its current official portal link",
-                        "Access requires authorization; administrative and entity fees follow operative schedules",
-                        "Review active cases daily; preserve each actual submission confirmation immediately",
-                        "Use permitted interactive workflows; assume no undocumented bulk submission interface",
-                        "Follow published CMS assistance procedures while retaining deadline and outage evidence",
-                    ],
-                    [
-                        "CMS certified IDR entity list supports entity and fee verification",
-                        "Open the current certified entity list through https://www.cms.gov/nosurprises official navigation",
-                        "Public list is free; entity charges depend on applicable published terms",
-                        "Verify certification, availability, conflicts, and fees before each selection decision",
-                        "Cache dated list copies and inspect changes before reusing prior selections",
-                        "Confirm current details through official CMS instructions and entity communications",
-                    ],
-                    [
-                        "OPM federal holiday schedules assist business-day calendar validation",
-                        "Read annual schedules at https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/ official calendar page",
-                        "Public calendar access is free; deadline interpretation remains case-specific work",
-                        "Load applicable years and verify observed days before deadline calculation",
-                        "Retrieve annual schedules once and test locally against operative counting rules",
-                        "Use controlling procedural instructions when calendar assumptions produce conflicting dates",
-                    ],
-                    [
-                        "BuiltWith domain technology reports corroborate public commercial software observations",
-                        "Use https://api.builtwith.com/ documentation with an authorized subscription API key",
-                        "Commercial access is plan-dependent; confirm credits and permitted reuse contractually",
-                        "Provider observation dates may lag changes; preserve returned detection timestamps",
-                        "Cache domain results, cap credits, and obey documented account throttles",
-                        "Inspect permitted public page evidence and independently corroborate vendor migration",
-                    ],
-                    [
-                        "DNSDB passive DNS records help bracket historical domain infrastructure changes",
-                        "Use contracted DNSDB API access documented at https://docs.dnsdb.info/ official site",
-                        "Commercial access and query allowances depend on the selected agreement",
-                        "Historical first-seen and last-seen observations are not exact deployment timestamps",
-                        "Check remaining quota and narrow queries to authorized commercial research scope",
-                        "Use present DNS TXT/CNAME answers plus public job-posting technology mentions",
-                    ],
-                    [
-                        "Google Public DNS resolves current public TXT and CNAME answers",
-                        "Query https://dns.google/resolve with name and type parameters for permitted domains",
-                        "Public resolver access is free; it supplies no contractual monitoring SLA",
-                        "Answers reflect DNS caching and TTL rather than deployment event history",
-                        "Honor TTL, cache answers, serialize retries, and stop repeated failed lookups",
-                        "Use the operating-system resolver and preserve response time with returned records",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four facts before the filing package leaves the desk",
-                "body": (
-                    "A complete packet needs a supported jurisdiction decision, a "
-                    "defensible clock, permissible evidence, and a case-level cash model."
-                ),
-                "items": [
-                    "Confirm coverage, service circumstances, applicable state payment rules, and federal eligibility from encounter-specific documents rather than payer branding.",
-                    "Recompute negotiation and initiation deadlines from preserved triggering events, current counting instructions, and documented extensions.",
-                    "Check batching eligibility, cooling-off relationships, entity status, and the current fee schedule using dated official sources.",
-                    "Remove prohibited award-setting considerations and verify that expected contingency earnings depend on incremental collected cash after unrecovered fees and casework allocations.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Reconcile collections, test failure modes, and protect the scorecard",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The twelfth mapped play is Cash-Verified Contingency Reconciliation. "
-                    "Build its ledger around money received, not offers selected. "
-                    "Suppose the payer initially paid $1,200, an IDR determination "
-                    "sets total payment at $4,200, and only $2,400 of the "
-                    "additional $3,000 has actually arrived. Collected incremental cash "
-                    "is $2,400; the remaining $600 stays a receivable and earns "
-                    "no contingency fee under this model. For illustration, allocate "
-                    "$120 of non-refundable administrative expense, $80 of other "
-                    "unrecovered case fees, and $200 of casework to the collected "
-                    "increment. These are modeling amounts, not the current CMS "
-                    "fee schedule. The distributable recovery basis is $2,000; a "
-                    "25% contractual operator share earns $500. Record certified "
-                    "entity fee deposits separately while disposition is pending. "
-                    "Return of the prevailing party's deposit must be supported "
-                    "by the applicable procedure and actual refund evidence; losing "
-                    "or ineligible-case deposits must not become assumed refunds. "
-                    "Treat unrecovered amounts as costs unless a documented refund "
-                    "right supports a receivable. Define who advances expenses, "
-                    "how recoveries reimburse them, and which casework charges reduce "
-                    "the sharing basis. A dollar allocated before the split "
-                    "cannot also be deducted a second time from the same "
-                    "operator earnings calculation."
-                ),
-                (
-                    "Formula v2.0 remains fixed despite the illustrative case arithmetic. "
-                    "Conservative recognized operator revenue is $110,000, allowable total "
-                    "operator expense is $77,000, and owner net profit is $33,000 "
-                    "at 30%. Base revenue is $505,000, expense is $287,850, and "
-                    "profit is $217,150 at 43.0%. Scaled revenue is $900,000, "
-                    "expense is $396,000, and profit is $504,000 at 56%. "
-                    "These figures exclude initial provider collections, payer principal, "
-                    "uncollected awards, and recoveries belonging to the provider. "
-                    "At the illustrative $500 earned share per completed collection "
-                    "equivalent, the revenue targets require 220, 1,010, and 1,800 "
-                    "equivalents annually. They are collection equivalents, not required "
-                    "filing counts or promised outcomes. If only 80% of otherwise "
-                    "comparable completed matters reach that collection level during "
-                    "the year, illustrative work volumes rise to 275, about 1,263, "
-                    "and 2,250 matters respectively. Test whether the assigned "
-                    "1 FT + 2 C, 1 FT + 2 C, and "
-                    "2 FT + 3 C teams can support those queues. "
-                    "Apply principal-versus-agent analysis under ASC 606 to actual "
-                    "contracts; the scorecard here counts earned operator shares, "
-                    "not gross provider recoveries passed through an account. "
-                    "Maintain separate expense buckets so case allocations and "
-                    "operator overhead reconcile without duplicate deductions."
-                ),
-                (
-                    "Turn the scorecard into a diagnostic dashboard with four "
-                    "independent measures: evidence completeness, procedural timeliness, earned "
-                    "revenue, and cash aging. Do not combine them into a "
-                    "single success percentage. An eligible, timely, prevailing dispute "
-                    "can still have an unpaid balance. Match supplemental ERAs "
-                    "to bank deposits and provider posting records, then flag "
-                    "unmatched receipts, recoupments, reversals, and cross-claim offsets "
-                    "before issuing the contingency invoice. Use SQLite for a "
-                    "small local reconciliation prototype or PostgreSQL for a "
-                    "controlled multiuser ledger; neither product choice substitutes "
-                    "for access restrictions, backup testing, and audit history. "
-                    "Keep protected records out of source control, telemetry "
-                    "exports, and prospecting systems. Test recovery from a backup "
-                    "using a restricted environment and document elapsed restoration "
-                    "time. A nightly job should produce an exception count, "
-                    "oldest unresolved age, and named owner, not merely a "
-                    "green execution status. Review the eight controls below "
-                    "weekly and before every material parser or rule change. "
-                    "If an input feed fails, freeze affected decisions while "
-                    "preserving unaffected work. The useful automation boundary "
-                    "is precise: software assembles traceable evidence and calculations; "
-                    "accountable staff resolve disputed facts, confirm submissions, "
-                    "and authorize collection-based billing only after the "
-                    "underlying cash movement is matched."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Diagnostic Controls Linking Evidence Quality to Earned Operator Revenue",
-                "headers": [
-                    "Control and concrete failure mode",
-                    "Repeatable test and required evidence",
-                    "Operating threshold or unit calculation",
-                    "Fallback and accountable operator action",
-                ],
-                "rows": [
-                    [
-                        "Duplicate remittance ingestion inflates apparent incremental recovery and revenue",
-                        "Replay the identical interchange and compare claim, line, and cash counts",
-                        "Second ingestion creates zero additional recognized receipts or earned shares",
-                        "Quarantine collisions and have the reconciliation owner inspect original artifacts",
-                    ],
-                    [
-                        "Incorrect jurisdiction exposes the desk to unrecovered ineligible-case fees",
-                        "Require encounter documents supporting coverage, service circumstances, and payment regime",
-                        "Every filed case carries a dated and reviewable routing rationale",
-                        "Hold submission while the assigned analyst obtains missing plan evidence",
-                    ],
-                    [
-                        "Deadline calculation mistakes convert otherwise supportable recoveries into lost opportunities",
-                        "Test holiday boundaries, receipt events, extensions, and negotiation completion dates",
-                        "Independent recomputation must match before the internal submission target expires",
-                        "Escalate conflicts immediately and preserve the operative procedural source",
-                    ],
-                    [
-                        "Cooling-off grouping errors hide restricted disputes inside superficially similar batches",
-                        "Compare parties, services, determination events, and operative grouping requirements",
-                        "Every proposed grouping retains its specific eligibility evidence and calculation",
-                        "Separate disputed groupings and forecast individual costs until eligibility resolves",
-                    ],
-                    [
-                        "Prohibited benchmark material contaminates an otherwise useful arbitration evidence packet",
-                        "Scan final exhibits for billed charges and public-payer rate arguments",
-                        "Submitted merits arguments contain only permissible, supported consideration of evidence",
-                        "Remove diagnostic exhibits and rebuild the packet with eligible evidence",
-                    ],
-                    [
-                        "Award-based invoicing recognizes operator earnings before incremental cash actually arrives",
-                        "Match supplemental payments to bank records, remittances, and provider posting entries",
-                        "Illustrative $2,400 collected increment less $400 allocations supports $500 share",
-                        "Keep unpaid differences in receivables and defer associated contingency billing",
-                    ],
-                    [
-                        "Refund assumptions and duplicate expenses distort the retained operator margin",
-                        "Reconcile fee deposits, confirmed refunds, case allocations, and overhead separately",
-                        "Base $505,000 revenue less $287,850 expense equals $217,150 owner profit",
-                        "Reverse unsupported refunds and remove duplicated deductions before closing records",
-                    ],
-                    [
-                        "Feed outages or schema changes silently corrupt downstream operational decisions",
-                        "Validate source hashes, schema versions, row counts, and required field populations",
-                        "Affected records remain quarantined until lineage and totals reconcile successfully",
-                        "Restore the last verified snapshot and assign manual handling explicitly",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "A public signal earns attention, a documented claim earns a filing, "
-        "and reconciled incremental cash earns the contingency fee."
-    ),
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Create an eighteen-resource acquisition manifest recording access rights, cost tier, source vintage, local refresh cadence, retry policy, and fallback evidence.",
-        "Build separate provider, payer, employer-plan, encounter, and remittance identifiers; attach dated jurisdiction evidence before federal routing.",
-        "Test the 835 parser against duplicates, reversals, split payments, negative adjustments, and changed identifiers before ingesting live production files.",
-        "Implement separate negotiation, initiation, entity-selection, batching, and cooling-off states with preserved triggering documents and independently checked deadlines.",
-        "Keep public-domain technographic research separate from protected claim records; corroborate apparent software switches before commercial outreach.",
-        "Close monthly books against matched incremental receipts, confirmed fee dispositions, and nonduplicated expenses; reconcile all three scenarios to the fixed Formula v2.0 scorecard.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "42 U.S.C. § 300gg-111 — Preventing surprise medical bills",
-            "url": "https://www.law.cornell.edu/uscode/text/42/300gg-111",
-            "relevance": (
-                "Establishes the federal surprise-billing framework, negotiation and "
-                "IDR provisions, payment considerations, and excluded considerations."
-            ),
-        },
-        {
-            "title": "45 CFR § 149.510 — Federal independent dispute resolution process",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-B/part-149/subpart-F/section-149.510",
-            "relevance": (
-                "Provides procedural requirements for negotiation, initiation, entity "
-                "selection, fees, batching, and subsequent disputes; verify operative "
-                "provisions against applicable court orders and current CMS implementation."
-            ),
-        },
-        {
-            "title": "45 CFR § 149.140 — Qualifying payment amount methodology",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-B/part-149/subpart-B/section-149.140",
-            "relevance": (
-                "Supports QPA methodology checks and the required disclosure workflow; "
-                "the initial payment and the QPA must remain distinct recorded fields."
-            ),
-        },
-        {
-            "title": "45 CFR § 164.502 — Uses and disclosures of protected health information",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.502",
-            "relevance": (
-                "Governs permitted uses and disclosures, minimum-necessary requirements "
-                "where applicable, and business associate handling of protected records."
-            ),
-        },
-        {
-            "title": "45 CFR § 164.504 — Organizational requirements",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504",
-            "relevance": (
-                "Specifies business associate contract requirements relevant to "
-                "clearinghouses, recovery desks, storage services, and subcontractors."
-            ),
-        },
-        {
-            "title": "45 CFR § 164.312 — Technical safeguards",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312",
-            "relevance": (
-                "Anchors access control, audit controls, integrity protections, "
-                "authentication, and transmission security for electronic protected records."
-            ),
-        },
-        {
-            "title": "29 U.S.C. § 1144 — ERISA preemption and statutory exceptions",
-            "url": "https://www.law.cornell.edu/uscode/text/29/1144",
-            "relevance": (
-                "Informs analysis of plan funding, state insurance regulation, "
-                "and preemption without making a payer logo a jurisdiction decision."
-            ),
-        },
-        {
-            "title": "Texas Insurance Code Chapter 1467 — Out-of-network claim dispute resolution",
-            "url": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.1467.htm",
-            "relevance": (
-                "Provides a concrete state dispute-resolution framework that must "
-                "be evaluated before routing an applicable Texas encounter to federal IDR."
-            ),
-        },
-    ],
-}
+CHAPTER_8 = {'id': 'Q8',
+ 'chapter_id': 'Q8',
+ 'chapter_number': 8,
+ 'question_number': 8,
+ 'slug': 'oon-facility-revenue-asc-behavioral-complex-claim-recovery',
+ 'question_prompt': 'How do out-of-network facilities, ASCs, and treatment centers maximize reimbursement '
+                    'and protect OON revenue from underpayment and recoupment?',
+ 'kicker': 'Q8 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Out-of-Network Facility Revenue: ASC, Behavioral Health, and Complex Claim Recovery',
+ 'subtitle': "Collect Rx's six keys to OON reimbursement, top ten best practices for complex OON claims, "
+             'ASC OON revenue tactics, single-case agreements and recoupment defense, underpayment '
+             'detection and recovery, cash-flow realities before going OON, A/R audit triage, OBL payer '
+             'contracts, and getting OON providers paid at in-network rates',
+ 'layout_template': 'legal_compliance_callout',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners from Patriot Group, MediGain, Collect Rx, AR Specialist and The '
+                      'Auctus Group agree out-of-network facility revenue is shrinking under SIU audits '
+                      'yet remains highly profitable for operators who run a dedicated OON workflow '
+                      'instead of in-network billers. The street mechanics start at verification: benefits '
+                      'checked within 24 hours, allowance methodology and pricer identified, UCR plans '
+                      'prioritized, and SPDs pulled from employers. Post-payment, every allowance is '
+                      'recomputed against Medicare and plan language; Force values two UCR claims at '
+                      '60-70% of charges at roughly 30 in-network claims, while Collect Rx reports 90-100% '
+                      'of charges on pre-payment negotiation and additional payment on over 60% of '
+                      'qualified appeals. Silent PPO layering, 180-day OON appeal windows, and '
+                      'retroactively voided single case agreements are the recurring traps. Practitioners '
+                      'split on whether to promise recovery rates up front and on how hard to threaten '
+                      'network exit.',
+ 'key_metrics': [{'label': 'Pre-Payment Negotiation Yield',
+                  'metric': 'Pre-Payment Negotiation Yield',
+                  'value': '90-100% of billed charges',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Ryan Ellison reports Collect Rx's average on pre-payment negotiated OON "
+                             'claims; one client moved from 80% to 94.1% on $1.5M for a net gain above '
+                             '$135K after fees.',
+                  'source': 'Collect Rx ([Pqx2hpp_cLU @ 00:11:39])'},
+                 {'label': 'Un-Negotiated OON Leakage',
+                  'metric': 'Un-Negotiated OON Leakage',
+                  'value': '30-40% lost on OON claims that are not negotiated; 5-10% lost to poor A/R '
+                           'follow-up',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Collect Rx's estimate of revenue providers forfeit when OON claims are "
+                             'posted without negotiation and when A/R follow-up is weak.',
+                  'source': 'Collect Rx ([jW7NdP3R2Lc @ 00:05:13])'},
+                 {'label': 'UCR Claim Leverage Ratio',
+                  'metric': 'UCR Claim Leverage Ratio',
+                  'value': '2 UCR claims at 60-70% of charges = roughly 30 in-network claims',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Thomas J. Force's unit-economics case for hunting UCR plans and following up "
+                             'at 10 days rather than 20.',
+                  'source': 'Patriot Group ([dUdxVBDLf5w @ 00:08:25])'},
+                 {'label': 'OON Appeal Filing Window',
+                  'metric': 'OON Appeal Filing Window',
+                  'value': '180 days from the EOB date versus 365 days in-network',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "AR Specialist's deadline for out-of-network appeals after Quantum Health and "
+                             'UMR voided approved single case agreements; manual review took about 30 '
+                             'days.',
+                  'source': 'AR Specialist ([OLFRzRe0L2A @ 00:06:34])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Out-of-network is not dead; it is harder. Thomas J. Force of Patriot Group '
+                              'says OON revenue has dropped significantly over three years and SIU audits '
+                              "are climbing, yet the business is 'still very very profitable' [dUdxVBDLf5w "
+                              '@ 00:01:21]. His first diagnosis of a bleeding practice is blunt: it hands '
+                              'OON claims to in-network billers who do not know the game [dUdxVBDLf5w @ '
+                              '00:02:14]. The Auctus Group makes the same point from the capacity side: '
+                              "OON is a 'totally different process,' IDR is more complex still, and the "
+                              'operation needs a billing module, possibly a clearinghouse, and a way to '
+                              'take payments before the first claim drops [Hd2UT1OUlA0 @ 00:01:14]. Their '
+                              "payoff case is that reimbursement can run 'upwards of 10 to 30 x' "
+                              'in-network rates because the provider is not bound by contracts it never '
+                              'agreed to [Hd2UT1OUlA0 @ 00:01:40]. John Bardis of Collect Rx calls OON '
+                              "'the last great opportunity for many providers to improve their "
+                              "reimbursement levels overall' [KkjI85NtmNE @ 00:17:03] and sizes the market "
+                              'at over $60B [KkjI85NtmNE @ 00:16:05]. The shared prerequisite is a '
+                              'dedicated OON workflow with staff who verify, negotiate, and appeal as '
+                              'separate disciplines, not a network billing desk running OON on the side.',
+                              'Every practitioner who touches facility claims agrees the money is won or '
+                              'lost at verification. Liz Taylor, an ASC operations manager presenting for '
+                              'MediGain, wants verification of benefits finished within 24 hours of '
+                              'scheduling and scripted to capture in-network and OON benefits, daily '
+                              'maximums, ASC limitations, allowance methodology, the third-party pricer '
+                              'such as First Health, the UCR percentile, and multiple-procedure reduction '
+                              'rules [w387XkK0lkk @ 00:03:21]. Force sorts plans into four allowance '
+                              'methods: internal fee schedule, percent of Medicare (110% or 200%, which he '
+                              "calls 'not good'), UCR or prevailing rate, and discretionary 'lesser of / "
+                              "greater of' language, and he tells operators UCR plans are the ones to hunt "
+                              '[dUdxVBDLf5w @ 00:02:31]. He pulls the Summary Plan Description from the '
+                              'employer, not the insurer, using an SPD request form and the ID card '
+                              '[dUdxVBDLf5w @ 00:04:38]. Rita Singh of Collect Rx adds that employers set '
+                              'OON benefit levels, which is why the same treatment pays differently, and '
+                              'that limited-benefit policies such as UHC MNRP and Cigna MRC should be '
+                              'flagged during verification because they can still be negotiated above the '
+                              'Medicare-based rate [7h4H8g1S01E @ 00:12:23] [7h4H8g1S01E @ 00:16:15]. '
+                              'Verification is the gate that decides whether a case is worth scheduling at '
+                              'all.',
+                              'The second point of agreement is that the first number a payer offers is a '
+                              "test of nerve. Taylor's rule is 'Never accept the first negotiation offer' "
+                              '[w387XkK0lkk @ 00:09:47], and Dr. Siddi, who spent 23 months winning '
+                              "commercial contracts for an OBL, says 'The first offer is never the final "
+                              "offer' [5aFK91a1KPY @ 01:04:03]. Ryan Ellison of Collect Rx explains why: "
+                              'repricing vendors receive over 10M claims a year each, run algorithms to '
+                              'pick the lowest-paying tactic, and keep staff dossiers listing which '
+                              "billers sign off at 'Mary 30%, Bill 50%,' so a single cheap sign-off "
+                              'becomes precedent for every future claim [Pqx2hpp_cLU @ 00:05:42] '
+                              '[Pqx2hpp_cLU @ 00:07:18]. Singh tells teams to answer every counteroffer '
+                              "and refuse 'check back in 10/15/30 days' stalls, noting the vendors work on "
+                              'commission [7h4H8g1S01E @ 00:08:33]. She leads with the phone even though '
+                              'it is the most time-consuming channel, because it is the best way to '
+                              'optimize the result, and she reports an average lift of 33% from '
+                              'negotiating [7h4H8g1S01E @ 00:10:35]. The consensus operator stance is that '
+                              'every lowball is a counteroffer to reject, document, and escalate rather '
+                              "than a final answer, and that the biller who caves becomes the payer's "
+                              'preferred phone contact.'],
+               'table': {'caption': 'Where OON facility practitioners agree before a single claim is '
+                                    'billed',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['OON remains profitable despite three years of decline',
+                                   'Revenue dropped significantly and SIU audits rose, yet OON is still '
+                                   'very very profitable',
+                                   'Keep OON service lines staffed while budgeting time and documentation '
+                                   'for audit defense',
+                                   'Patriot Group ([dUdxVBDLf5w @ 00:01:21])'],
+                                  ['In-network billers are the most common failure point',
+                                   'Practices lose OON money by routing claims through billers trained '
+                                   'only on network contracts',
+                                   'Separate the OON desk and train it on allowance methods, negotiation, '
+                                   'and appeals',
+                                   'Patriot Group ([dUdxVBDLf5w @ 00:02:14])'],
+                                  ['Verification of benefits must happen within 24 hours of scheduling',
+                                   'Capture OON benefits, daily maximums, ASC limits, pricer, UCR '
+                                   'percentile, and MPR rules',
+                                   'Use a scripted VOB call so every case enters scheduling with its '
+                                   'allowance methodology known',
+                                   'Plano Texas ([w387XkK0lkk @ 00:03:21])'],
+                                  ['UCR and prevailing-rate plans are the targets worth hunting',
+                                   'Four methods exist: fee schedule, percent of Medicare, UCR, and '
+                                   'discretionary lesser-of language',
+                                   'Prioritize UCR plans and pull the SPD from the employer to confirm the '
+                                   'definitions',
+                                   'Patriot Group ([dUdxVBDLf5w @ 00:02:31])'],
+                                  ['Never accept the first negotiation offer from a repricer',
+                                   'First offers are openers; ASC collectors push back and restart '
+                                   'reconsideration on the call',
+                                   'Script a standard counteroffer response and log every offer number and '
+                                   'representative',
+                                   'Plano Texas ([w387XkK0lkk @ 00:09:47])'],
+                                  ['Payers profile your staff by the discounts they accept',
+                                   'Vendor dossiers list billers by sign-off level, such as Mary 30% and '
+                                   'Bill 50%',
+                                   'Hold a single discount floor across all staff so no low sign-off '
+                                   'becomes precedent',
+                                   'Collect Rx ([Pqx2hpp_cLU @ 00:07:18])'],
+                                  ['OON cash flow runs slower and patient balances run larger',
+                                   'Expect three to six months to payment; OON patient benefits average '
+                                   '$13,000 or more',
+                                   'Plan working capital and patient pre-collection policy before '
+                                   'switching any service line out of network',
+                                   'The Auctus Group ([Hd2UT1OUlA0 @ 00:00:17])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["The front end is scripted and fast. Taylor's VOB call asks for the pricer "
+                              "and the multiple-procedure reduction, because Viant reprices at '12510' "
+                              "while UHC uses '15050,' and she checks that patient cost covers the case "
+                              'before approving it, then calls the patient early with payment plans or '
+                              'financing to cut cancellations [w387XkK0lkk @ 00:07:03] [w387XkK0lkk @ '
+                              '00:05:25]. The Auctus Group puts the patient-balance problem in numbers: '
+                              'OON patient benefits average $13,000 or more against a $3,500 in-network '
+                              'out-of-pocket maximum, so the practice must decide whether and how much to '
+                              'pre-collect, how to estimate, and how to explain it with a front-desk '
+                              "script that never promises refunds or 'no bill' [Hd2UT1OUlA0 @ 00:00:17] "
+                              "[Hd2UT1OUlA0 @ 00:00:45]. Force's intake packet is the paper armor: "
+                              'assignment of benefits, authorized-representative designation, '
+                              'carrier-specific forms, a No Surprises Act waiver, and an OON disclosure '
+                              'and financial agreement [dUdxVBDLf5w @ 00:10:25]. He warns that a Cigna '
+                              "client faces a 'millions' clawback for not sending cost-share letters, so "
+                              'fee forgiveness without documentation is an audit target [dUdxVBDLf5w @ '
+                              '00:11:30]. Bardis wants the AOB drafted to cover all rights, appeals and '
+                              'documents, authorized-representative status, ERISA, and full and fair '
+                              'review [KkjI85NtmNE @ 00:21:17].',
+                              'Post-payment, the first move is arithmetic. Force compares the allowed '
+                              'amount to Medicare, and anything at or below Medicare, or around 2x '
+                              "Medicare, gets negotiated or reprocessed because 'Medicare is the floor not "
+                              "not the ceiling' [dUdxVBDLf5w @ 00:05:36] [dUdxVBDLf5w @ 00:06:10]. He "
+                              'follows up at 10 days, not 20, and sells the math to owners: two UCR claims '
+                              'out of ten paid at 60-70% of charges equal roughly 30 in-network claims '
+                              '[dUdxVBDLf5w @ 00:08:25]. Taylor reads EOBs line by line; on one UHC remit '
+                              'the allowed column showed $12,677 against $23,750 billed, but the true '
+                              'allowance was billed minus the group-RC amount, and her posting rule is to '
+                              'appeal anything not allowed at 100% without a stated methodology '
+                              '[w387XkK0lkk @ 00:13:57] [w387XkK0lkk @ 00:16:23]. Singh shows how silent '
+                              'PPO contracts erode payment: many are based on allowed rather than billed '
+                              'charges, so $10K billed, $6K allowed, times 70% yields $4,200 [7h4H8g1S01E '
+                              '@ 00:33:05]. Ellison flags the newest layer, double silent-PPO stacking '
+                              'that caps allowables at 30-40%, and says the defense is auditing EOBs to '
+                              'catch it [Pqx2hpp_cLU @ 00:18:50]. The operator takeaway is to recompute '
+                              "every allowance against the plan's stated methodology before posting a "
+                              'single adjustment.',
+                              'When negotiation stalls, the appeal is short and exhibit-driven. Force '
+                              'builds Exhibit A from the signed forms and Exhibit B from the EOB, argues '
+                              "'five times Medicare' with comparable EOBs paid at 70% of charges, caps it "
+                              "at two pages because 'the carriers have short attention spans,' sends by "
+                              'fax or certified mail, and expects a response within 60 days [dUdxVBDLf5w @ '
+                              '00:12:41] [dUdxVBDLf5w @ 00:13:15]. For patients with no OON benefits, AR '
+                              'Specialist calls the single case agreement, or gap exception, the only '
+                              'in-network-rate path: verify the 50-mile radius yourself by calling '
+                              'competing facilities, request the gap exception up front, then file a '
+                              'formal appeal with medical-necessity documentation [OLFRzRe0L2A @ '
+                              '00:06:04]. The clock is 180 days from the EOB date for OON appeals versus '
+                              "365 in-network [OLFRzRe0L2A @ 00:06:34]. Collect Rx's numbers show what "
+                              'disciplined pursuit returns: one client moved from 80% to 94.1% of charges '
+                              'on $1.5M for a net gain above $135K after fees, and a post-payment run won '
+                              '45 of 73 cases for $300K from about four months of data [Pqx2hpp_cLU @ '
+                              '00:12:07] [Pqx2hpp_cLU @ 00:13:50]. Behavioral practices bleed earlier in '
+                              "the chain: Behavioral Billing's worked scenario traces a refused superbill "
+                              'to telehealth sessions coded POS 11 instead of 02 or 10, plus a generic '
+                              'anxiety code the notes did not justify [yYlBBM1kBMU @ 00:02:38].'],
+               'table': {'caption': 'OON facility mechanics, tools, and the exact numbers practitioners '
+                                    'run',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Tool',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Scripted verification of benefits call',
+                                   'Completed within 24 hours of scheduling, capturing pricer, UCR '
+                                   'percentile, and MPR',
+                                   'Decide before scheduling whether the case cost is covered and which '
+                                   'allowance method applies',
+                                   'Plano Texas ([w387XkK0lkk @ 00:03:21])'],
+                                  ['Multiple-procedure reduction by pricer',
+                                   'Viant reprices at 12510 while UHC applies 15050 to stacked procedures',
+                                   'Ask the MPR rule on every multi-procedure case and model the payment '
+                                   'both ways',
+                                   'Plano Texas ([w387XkK0lkk @ 00:07:03])'],
+                                  ['Patient balance pre-collection policy',
+                                   'OON patient benefits average $13,000 or more versus a $3,500 '
+                                   'in-network maximum',
+                                   'Set pre-collection amounts, estimate method, and a front-desk script '
+                                   'before the visit',
+                                   'The Auctus Group ([Hd2UT1OUlA0 @ 00:00:17])'],
+                                  ['Medicare floor test on every allowance',
+                                   'Allowed at or below Medicare, or about 2x Medicare, triggers '
+                                   'negotiation or reprocessing',
+                                   'Flag every remit under the threshold and open a negotiation file '
+                                   'within 10 days',
+                                   'Patriot Group ([dUdxVBDLf5w @ 00:05:36])'],
+                                  ['Silent PPO allowed-charge math',
+                                   '$10K billed, $6K allowed, times a 70% contract rate pays only $4,200',
+                                   'Recompute PPO-repriced remits against billed charges to expose the '
+                                   'hidden second discount',
+                                   "Becker's Hospital Review ([7h4H8g1S01E @ 00:33:05])"],
+                                  ['Two-page exhibit appeal package',
+                                   'Exhibit A forms, Exhibit B EOB, sent by fax or certified mail, '
+                                   'answered within 60 days',
+                                   'Argue multiples of Medicare and comparable EOBs at 70% of charges in '
+                                   'two pages',
+                                   'Patriot Group ([dUdxVBDLf5w @ 00:13:15])'],
+                                  ['Pre-payment negotiation on facility bills',
+                                   '90-100% of charges on average; one client rose from 80% to 94.1% on '
+                                   '$1.5M',
+                                   'Negotiate before payment rather than appealing a posted lowball after '
+                                   'the fact',
+                                   'Collect Rx ([Pqx2hpp_cLU @ 00:12:07])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Street-Level Moves From the OON Collectors',
+                           'body': 'Small habits that separate OON desks that recover charges from desks '
+                                   'that post whatever the repricer sends.',
+                           'items': ['Call to confirm claim receipt within 10 days, ask how the allowance '
+                                     'was determined, start reconsideration on that same call, and request '
+                                     'an itemization from the repricer [Plano Texas — w387XkK0lkk @ '
+                                     '00:08:56].',
+                                     "Write 'max allowable' on negotiation forms so the signed document "
+                                     'itself proves the agreed number, and always bill implants [Plano '
+                                     'Texas — w387XkK0lkk @ 00:28:40].',
+                                     "Build a plan database like Patriot's roughly 4,000-plan spreadsheet "
+                                     'maintained by an SPD reviewer; lists of good plans, bad plans, and '
+                                     'high payments become appeal leverage [Patriot Group — dUdxVBDLf5w @ '
+                                     '00:09:18].',
+                                     'Stay off payer portals for settlement offers because they only allow '
+                                     "accept or decline, which removes the counteroffer entirely [Becker's "
+                                     'Hospital Review — 7h4H8g1S01E @ 00:24:23].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Verify and Classify the Plan',
+                              'action': 'Run the scripted VOB within 24 hours of scheduling and pull the '
+                                        'SPD from the employer.',
+                              'detail': 'Capture OON benefits, daily maximums, ASC limitations, pricer, '
+                                        'UCR percentile, and MPR on the call [Plano Texas — w387XkK0lkk @ '
+                                        '00:03:21], then classify the plan as fee schedule, percent of '
+                                        'Medicare, UCR, or discretionary using the SPD obtained with a '
+                                        'request form and ID card [Patriot Group — dUdxVBDLf5w @ '
+                                        '00:04:38].'},
+                             {'step': 2,
+                              'title': 'Lock the Intake Packet',
+                              'action': 'Collect every signed form before service and send cost-share '
+                                        'letters on any reduced patient balance.',
+                              'detail': 'Secure the AOB, authorized-representative designation, '
+                                        'carrier-specific forms, No Surprises Act waiver, and OON '
+                                        'financial agreement [Patriot Group — dUdxVBDLf5w @ 00:10:25], '
+                                        'with the AOB covering appeal rights, ERISA, and full and fair '
+                                        'review [Beckers ASC — KkjI85NtmNE @ 00:21:17].'},
+                             {'step': 3,
+                              'title': 'Audit the Remit Against the Methodology',
+                              'action': 'Recompute the true allowance on every EOB and follow up at 10 '
+                                        'days, not 20.',
+                              'detail': 'Subtract group-RC amounts from billed charges to find the real '
+                                        'allowance [Plano Texas — w387XkK0lkk @ 00:13:57] and route '
+                                        'anything at or below Medicare, or around 2x Medicare, into '
+                                        'negotiation or reprocessing [Patriot Group — dUdxVBDLf5w @ '
+                                        '00:08:09].'},
+                             {'step': 4,
+                              'title': 'Negotiate, Then Appeal Inside the Window',
+                              'action': 'Reject the first offer, then file a two-page exhibit appeal well '
+                                        'inside the 180-day OON window.',
+                              'detail': 'Track day zero as the EOB date because OON appeals close at 180 '
+                                        'days versus 365 in-network [AR Specialist — OLFRzRe0L2A @ '
+                                        '00:06:34], and keep the appeal to two pages with forms and EOB as '
+                                        'exhibits sent by fax or certified mail [Patriot Group — '
+                                        'dUdxVBDLf5w @ 00:13:15].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is the channel you fight on. Rita Singh of Collect Rx '
+                              'tells operators to lead with the phone, admitting it is the most '
+                              'time-consuming route but calling it the best way to optimize the result, '
+                              'and warns that settlement portals only let you accept or decline, which '
+                              'kills any counteroffer [7h4H8g1S01E @ 00:09:58]. Vicky Davis of Streamline, '
+                              'working OBL denials, runs the opposite playbook: use payer portals, avoid '
+                              "mail, and highlight the payer's own policy inside the appeal [5aFK91a1KPY @ "
+                              '00:51:05]. Thomas J. Force of Patriot Group sits in between. Force keeps '
+                              'written appeals to two pages because carriers have short attention spans, '
+                              'ships them by fax or certified mail, and expects a response within 60 days '
+                              '[dUdxVBDLf5w @ 00:13:15]. The AR Specialist breakdown shows why no single '
+                              'channel wins. Quantum Health takes fax or mail at Dublin, Ohio, while UMR '
+                              'accepts no faxes at all, only its portal or mail to Salt Lake City '
+                              '[OLFRzRe0L2A @ 00:07:21]. The operator read is that negotiation happens '
+                              'live on the phone, where a rep can be pushed past a first number. Formal '
+                              'appeals ride whatever channel the specific payer actually honors, with '
+                              'proof of receipt and a tracked response window.',
+                              'Practitioners also split on whether to quote recovery numbers at all. '
+                              "Collect Rx's Ryan Ellison puts the prepayment negotiation average at 90 to "
+                              '100 percent of billed charges. Ellison backs it with a client who moved '
+                              'from an 80 percent average to 94.1 percent on $1.5 million, netting more '
+                              'than $135,000 after fees [Pqx2hpp_cLU @ 00:12:07]. Talisman Solutions '
+                              'refuses that pitch outright, telling auditors to avoid promising a recovery '
+                              'rate before reviewing the portfolio. Talisman measures value first by clear '
+                              'root causes and speed to action, and only then by eventual recovery '
+                              '[Zf9f4f3lmAw @ 00:01:11]. The pricing anchor is contested too. Force treats '
+                              'Medicare as the floor, not the ceiling, and flags any allowed amount at or '
+                              'below Medicare, or around two times Medicare, for negotiation or '
+                              'reprocessing [dUdxVBDLf5w @ 00:06:10]. Singh goes further, insisting usual '
+                              'and customary is not tied to a percentage of Medicare rates and that UCR is '
+                              'not 150 percent of Medicare [7h4H8g1S01E @ 00:14:27]. Operators wanting a '
+                              "fast screen can run Force's Medicare comparison on every EOB. Ellison's "
+                              'camp anchors to the full bill instead, with the blunt rule that charges '
+                              'mean charges, and judges every negotiated outcome as a percentage of billed '
+                              'charges rather than any Medicare multiple.',
+                              'The biggest strategic fork is whether to leave networks at all. The Auctus '
+                              'Group pitches out-of-network reimbursement at upwards of 10 to 30 times '
+                              'in-network rates, because you are not bound by contracts you never agreed '
+                              "to [Hd2UT1OUlA0 @ 00:01:40]. Collect Rx's John Bardis calls out-of-network "
+                              'the last great opportunity for many providers to improve reimbursement '
+                              'overall [KkjI85NtmNE @ 00:17:03]. Force tempers that, conceding OON revenue '
+                              'has declined significantly over three years and SIU audits are up, while '
+                              'still calling it very, very profitable [dUdxVBDLf5w @ 00:01:21]. The OEIS '
+                              'panel runs the in-network counter-playbook. Lori tells OBLs to renegotiate '
+                              'rather than let agreements auto-renew, and not to threaten to go out of '
+                              'network unless they are serious. Dr. Siddi rejected Anthem for a full year '
+                              'and used single case agreements at 300 percent while holding out '
+                              '[5aFK91a1KPY @ 01:09:24]. That panel also logged the downside of having no '
+                              'contracts: a Florida client got Medicare approval in nine days but heard '
+                              'network closed from every commercial payer. The practical split is clear. '
+                              'Auctus and Collect Rx build the revenue model around OON leverage, while '
+                              'the OEIS operators use the OON posture and single case agreements as '
+                              'pressure to extract escalators and carve-outs inside a signed contract.'],
+               'table': {'caption': 'Side-by-side playbooks where named practitioners take opposing '
+                                    'positions',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Which channel to negotiate and appeal through',
+                                   'Lead with the phone and avoid settlement portals that only allow '
+                                   'accept or decline',
+                                   "Use payer portals, avoid mail, and highlight the payer's own policy "
+                                   'inside appeals',
+                                   "Becker's Hospital Review ([7h4H8g1S01E @ 00:09:58]); Outpatient "
+                                   'Endovascular & Interventional Society ([5aFK91a1KPY @ 00:51:05])'],
+                                  ['Whether to quote recovery rates up front',
+                                   'Quote a 90 to 100 percent of charges average on prepayment negotiation',
+                                   'Never promise a recovery rate before reviewing the actual claim '
+                                   'portfolio',
+                                   'Collect Rx ([Pqx2hpp_cLU @ 00:11:39]); Talisman Solutions '
+                                   '([Zf9f4f3lmAw @ 00:01:28])'],
+                                  ['Which pricing anchor to argue from',
+                                   'Medicare is the floor, so negotiate anything at or near Medicare',
+                                   'Usual and customary is not tied to any percentage of Medicare rates',
+                                   "Patriot Group ([dUdxVBDLf5w @ 00:06:10]); Becker's Hospital Review "
+                                   '([7h4H8g1S01E @ 00:14:27])'],
+                                  ['Whether to leave payer networks entirely',
+                                   'Go out of network for upwards of 10 to 30 times in-network rates',
+                                   'Renegotiate contracts and never threaten out of network unless you are '
+                                   'serious',
+                                   'The Auctus Group ([Hd2UT1OUlA0 @ 00:01:40]); Outpatient Endovascular & '
+                                   'Interventional Society ([5aFK91a1KPY @ 01:15:49])'],
+                                  ['How to handle MultiPlan and other repricers',
+                                   'Negotiate directly with MultiPlan and other repricers on each '
+                                   'individual claim',
+                                   'Avoid third-party contracts entirely because they function as '
+                                   'reimbursement caps',
+                                   'Patriot Group ([dUdxVBDLf5w @ 00:07:16]); Beckers ASC ([KkjI85NtmNE @ '
+                                   '00:23:12])'],
+                                  ['What to do with the first settlement offer',
+                                   'Accepting kills balance billing and appeals, though deductibles and '
+                                   'co-pays stay billable',
+                                   'Never accept the first negotiation offer because the first offer is '
+                                   'never final',
+                                   "Becker's Hospital Review ([7h4H8g1S01E @ 00:23:12]); Plano Texas "
+                                   '([w387XkK0lkk @ 00:09:47])'],
+                                  ['Who the patient fights alongside',
+                                   'Patient advocate tells patients to call the insurer, appeal, and '
+                                   'grieve the provider',
+                                   'Provider camp says the relationship is with the patient, not the '
+                                   'carrier',
+                                   'The Medical Bill Whisperer ([fq0_XVnPWnI @ 00:05:04]); Plano Texas '
+                                   '([w387XkK0lkk @ 00:23:45])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The costliest failures arrive after the money lands. The AR Specialist case '
+                              'shows Quantum Health and UMR retroactively voiding single case agreements '
+                              'they had already approved, citing in-network facilities within 50 miles. A '
+                              '$1,048.25 payment made on October 7 was reprocessed on November 4 and '
+                              'pulled back into recoupment [OLFRzRe0L2A @ 00:02:52]. The fix is to prove '
+                              'you are the only provider in the radius by calling competing facilities '
+                              'yourself, then request the gap exception up front. The clock is brutal: '
+                              'exactly 180 days from the day-zero EOB to file an out-of-network appeal, '
+                              'against 365 days in-network. Force reports a Cigna client facing a clawback '
+                              'in the millions for failing to send cost-share letters, the fee-forgiveness '
+                              'audit exposure Patriot Group flags directly [dUdxVBDLf5w @ 00:11:30]. Force '
+                              'also caught insurers calling a plan 110 percent of Medicare when the plan '
+                              'was actually UCR, which is why the Patriot team pulls the SPD from the '
+                              'employer rather than trusting the carrier [dUdxVBDLf5w @ 00:07:33]. Singh '
+                              'adds that signed settlement offers are not binding on the payer, so a '
+                              'closed deal can still be reopened, and tells operators to fight recoupments '
+                              'rather than absorb them [7h4H8g1S01E @ 00:22:53].',
+                              'The second trap is reading an EOB at face value. Liz Taylor of MediGain '
+                              'walked through a UHC EOB where the allowed column showed $12,677 against '
+                              '$23,750 billed. The true allowance is billed minus the group-RC amount, and '
+                              'anything not allowed at 100 percent without a stated methodology gets '
+                              'appealed [w387XkK0lkk @ 00:13:57]. Ellison flags a newer payer move, double '
+                              'silent-PPO layering that tops allowables out closer to 30 and 40 percent, '
+                              "caught only by auditing EOBs [Pqx2hpp_cLU @ 00:18:50]. Singh's silent-PPO "
+                              'math shows how contracts keyed to allowed rather than billed charges bleed '
+                              'value: $10,000 billed, $6,000 allowed, times 70 percent yields $4,200, and '
+                              'the payer picks whichever of contract or policy rate is lower [7h4H8g1S01E '
+                              "@ 00:33:05]. Behavioral Billing's dramatized case shows the small-practice "
+                              'version. A downloaded superbill template coded telehealth sessions as POS '
+                              '11 in-person and used a generic anxiety code the clinical notes did not '
+                              'support. On a $150 session with 60 percent expected reimbursement, the $90 '
+                              'the client counted on vanished, risking session reduction, dropout, and '
+                              'practice cash flow [yYlBBM1kBMU @ 00:02:38]. Corrected superbills, '
+                              'client-assisted appeals, and a smarter template were the fix.',
+                              'Economics checks separate real operators from hopefuls. The Auctus Group '
+                              'warns that out-of-network cash flow runs three to six months to payment, '
+                              'not 30 days. OON patient benefits average $13,000 or more against a $3,500 '
+                              'in-network out-of-pocket maximum, so pre-collection rules, estimates, and '
+                              'front-desk scripts must be settled before switching [Hd2UT1OUlA0 @ '
+                              "00:00:17]. Cedar's PFX benchmark team adds the patient-side cost: four out "
+                              'of 10 patients have changed providers because of bad financial experiences '
+                              '[U7ayI8K_Ggw @ 00:02:08]. Collect Rx sizes the leakage at 5 to 10 percent '
+                              'lost to poor A/R follow-up and 30 to 40 percent lost on OON claims that are '
+                              'never negotiated. A practice collecting $200,000 a month loses roughly '
+                              "$20,000 [jW7NdP3R2Lc @ 00:05:13]. Force's math shows why the fight still "
+                              'pays: two UCR claims out of 10 paid at 60 to 70 percent of charges equal '
+                              'roughly 30 in-network claims, provided follow-up hits at 10 days, not 20 '
+                              '[dUdxVBDLf5w @ 00:08:09]. Those numbers only hold when follow-up discipline '
+                              'holds. A slow biller turns the 10-day chase into a 20-day chase, and the '
+                              'aging claims stop compounding into the multiples Force describes and start '
+                              'sliding toward write-off territory instead.'],
+               'table': {'caption': 'Firsthand traps, what they cost, and the countermove practitioners '
+                                    'used',
+                         'headers': ['Failure Mode',
+                                     'What Happened',
+                                     'Economics Check / Countermove',
+                                     'Expert Source'],
+                         'rows': [['Retroactively voided single case agreement',
+                                   'Quantum Health and UMR voided approved SCAs, citing in-network '
+                                   'facilities within 50 miles',
+                                   '$1,048.25 paid October 7 was reprocessed November 4 and recouped; '
+                                   'verify the radius yourself',
+                                   'AR Specialist ([OLFRzRe0L2A @ 00:02:52])'],
+                                  ['Fee-forgiveness clawback on cost-share',
+                                   'A Cigna client did not send cost-share letters to its out-of-network '
+                                   'patients',
+                                   'Clawback exposure reached millions; keep cost-share letters and '
+                                   'financial agreements on file',
+                                   'Patriot Group ([dUdxVBDLf5w @ 00:11:30])'],
+                                  ['Payer dossiers on your billing staff',
+                                   'Payers track which staffer signs off at the deepest discount and '
+                                   'target them',
+                                   'Mary at 20 percent versus Bill at 40 percent; low sign-offs become '
+                                   'precedent',
+                                   'Beckers ASC ([KkjI85NtmNE @ 00:20:38])'],
+                                  ['Charges that never get billed',
+                                   'Providers simply forget to bill items, including implants on surgical '
+                                   'cases',
+                                   'Always bill implants and submit claims within 24 to 48 hours of '
+                                   'service',
+                                   'Beckers ASC ([KkjI85NtmNE @ 00:30:42]); Plano Texas ([w387XkK0lkk @ '
+                                   '00:28:40])'],
+                                  ['A/R aging with no follow-up',
+                                   'Claims drift past 120 days when nobody chases payer receipt and status',
+                                   'Over 45 days is unacceptable and 60 days is the maximum; confirm '
+                                   'receipt within 10 days',
+                                   'Plano Texas ([w387XkK0lkk @ 00:21:15])'],
+                                  ['Underpayments booked as paid',
+                                   'Underpaid claims close as paid so no alarm fires, and write-offs mask '
+                                   'them',
+                                   'Underpayments cost 1 to 3 percent of net revenue and up to 11 percent',
+                                   'MD Clarity ([wnXpxS7_cqA @ 00:00:44])'],
+                                  ['False comfort from prior authorization',
+                                   'An approved authorization still does not guarantee that the claim gets '
+                                   'paid',
+                                   'Recheck eligibility within 24 hours; 2 to 3 percent prior-auth denials '
+                                   'signals a workflow problem',
+                                   'Outpatient Endovascular & Interventional Society ([5aFK91a1KPY @ '
+                                   '00:47:46])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Booking OON Revenue as Collected',
+                           'body': 'Every item below comes from a loss, recoupment, or clawback a '
+                                   'practitioner saw firsthand. Clear all four before treating an '
+                                   'out-of-network payment as money in the bank.',
+                           'items': ['Before relying on any single case agreement, document that no '
+                                     'in-network facility sits within 50 miles by calling competitors '
+                                     'yourself, and calendar the 180-day OON appeal window from the EOB '
+                                     'date [AR Specialist — OLFRzRe0L2A @ 00:06:34].',
+                                     'Do not treat a signed settlement as final cash: signed settlement '
+                                     'offers are not binding on the payer, and accepting one ends balance '
+                                     "billing and appeal rights [Becker's Hospital Review — 7h4H8g1S01E @ "
+                                     '00:22:53].',
+                                     'Send cost-share letters and keep the OON disclosure and financial '
+                                     'agreement on file for every patient, or face fee-forgiveness '
+                                     'clawbacks like the Cigna exposure in the millions [Patriot Group — '
+                                     'dUdxVBDLf5w @ 00:11:30].',
+                                     'Audit every EOB for double silent-PPO layering that caps allowables '
+                                     'near 30 to 40 percent before posting any adjustment [Collect Rx — '
+                                     'Pqx2hpp_cLU @ 00:18:50].']}}],
+ 'pull_quote': 'Medicare is the floor, not the ceiling. — Thomas J. Force, Patriot Group (dUdxVBDLf5w @ '
+               '00:06:10).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Complete verification of benefits within 24 hours of scheduling, asking for '
+                      'allowance methodology, third-party pricer, UCR percentile, and multiple-procedure '
+                      'reduction [Plano Texas — w387XkK0lkk @ 00:03:21].',
+                      'Request the SPD from the employer, not the insurer, using an SPD request form plus '
+                      'the member ID card, and read the glossary definitions of allowance and appeals '
+                      '[Patriot Group — dUdxVBDLf5w @ 00:04:38].',
+                      'Draft the AOB to cover all rights, appeals and documents, authorized-representative '
+                      'status, ERISA, and full and fair review [Beckers ASC — KkjI85NtmNE @ 00:21:17].',
+                      'Lead negotiations by phone, answer every counteroffer, and refuse check-back-in-10, '
+                      "15, or 30-day stalls from commission-paid vendors [Becker's Hospital Review — "
+                      '7h4H8g1S01E @ 00:08:33].',
+                      'Run a de-identified sample audit sorted by payer, age, and value, and output issue, '
+                      'evidence, next step, deadline, and owner for every claim [Talisman Solutions — '
+                      'Zf9f4f3lmAw @ 00:01:28].',
+                      'Hold a monthly operational review with root-cause analysis after assessment and '
+                      'pursuit, and share the playbook across the team [Ensemble — EREvBniyM5c @ '
+                      '00:06:42].'],
+ 'statutory_citations': [{'title': 'Patriot Group — How to Generate Revenue for Out-of-Network Medical '
+                                   'Claims: Insights with Thomas J. Force [00:06:10]',
+                          'url': 'https://www.youtube.com/watch?v=dUdxVBDLf5w&t=370s',
+                          'relevance': 'Primary practitioner testimony on plan vetting, SPD retrieval, '
+                                       'Medicare-floor post-payment analysis, and fee-forgiveness '
+                                       'clawbacks.'},
+                         {'title': 'Beckers ASC — Top 10 Best Practices to Maximize Complex Out-of-Network '
+                                   'Reimbursements and More [00:18:32]',
+                          'url': 'https://www.youtube.com/watch?v=KkjI85NtmNE&t=1112s',
+                          'relevance': 'Primary practitioner testimony on the appeal workflow, AOB '
+                                       'drafting, payer staff dossiers, and third-party contract caps.'},
+                         {'title': 'AR Specialist — SCA 2027 Blueprint: Protect Out-of-Network Revenue '
+                                   'Before It Gets Recouped [00:06:34]',
+                          'url': 'https://www.youtube.com/watch?v=OLFRzRe0L2A&t=394s',
+                          'relevance': 'Primary practitioner testimony on retroactively voided single case '
+                                       'agreements, the 50-mile rule, and the 180-day OON appeal window.'},
+                         {'title': "Becker's Hospital Review — Out-of-Network: Frequently Asked Questions "
+                                   '[00:31:59]',
+                          'url': 'https://www.youtube.com/watch?v=7h4H8g1S01E&t=1919s',
+                          'relevance': 'Primary practitioner testimony on silent PPOs, non-binding '
+                                       'settlement offers, and phone-first negotiation.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'TXjn5syXueM',
+                       'title': 'SHOCKING Truth: How to Get Out-of-Network Providers Paid at In-Network '
+                                'Rates (Legally!)',
+                       'channel': 'The Medical Bill Whisperer',
+                       'author': 'The Medical Bill Whisperer',
+                       'text': 'In such cases your insurance must pay those emergency services at the '
+                               'higher in-network rate.',
+                       'tip': 'In such cases your insurance must pay those emergency services at the '
+                              'higher in-network rate.',
+                       'timestamp': 255,
+                       'timestamp_seconds': 255,
+                       'timestamp_label': '[00:04:15]',
+                       'url': 'https://www.youtube.com/watch?v=TXjn5syXueM&t=255s',
+                       'markdown': '[00:04:15](https://www.youtube.com/watch?v=TXjn5syXueM&t=255s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fq0_XVnPWnI',
+                       'title': 'How to Get Your Insurance to PAY for Out-of-Network Care | The Medical '
+                                'Bill Whisperer',
+                       'channel': 'The Medical Bill Whisperer',
+                       'author': 'The Medical Bill Whisperer',
+                       'text': 'Call your insurance first, let them know that these were emergency '
+                               'services.',
+                       'tip': 'Call your insurance first, let them know that these were emergency '
+                              'services.',
+                       'timestamp': 304,
+                       'timestamp_seconds': 304,
+                       'timestamp_label': '[00:05:04]',
+                       'url': 'https://www.youtube.com/watch?v=fq0_XVnPWnI&t=304s',
+                       'markdown': '[00:05:04](https://www.youtube.com/watch?v=fq0_XVnPWnI&t=304s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'U7ayI8K_Ggw',
+                       'title': 'Insights into Healthcare Finance: PFX Benchmarks',
+                       'channel': 'Cedar',
+                       'author': 'Cedar',
+                       'text': 'Four out of 10 patients have changed providers because of bad financial '
+                               'experiences.',
+                       'tip': 'Four out of 10 patients have changed providers because of bad financial '
+                              'experiences.',
+                       'timestamp': 128,
+                       'timestamp_seconds': 128,
+                       'timestamp_label': '[00:02:08]',
+                       'url': 'https://www.youtube.com/watch?v=U7ayI8K_Ggw&t=128s',
+                       'markdown': '[00:02:08](https://www.youtube.com/watch?v=U7ayI8K_Ggw&t=128s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dUdxVBDLf5w',
+                       'title': 'How to Generate Revenue for Out-of-Network Medical Claims: Insights with '
+                                'Thomas J. Force',
+                       'channel': 'Patriot Group',
+                       'author': 'Patriot Group',
+                       'text': 'Medicare is the floor, not the ceiling.',
+                       'tip': 'Medicare is the floor, not the ceiling.',
+                       'timestamp': 370,
+                       'timestamp_seconds': 370,
+                       'timestamp_label': '[00:06:10]',
+                       'url': 'https://www.youtube.com/watch?v=dUdxVBDLf5w&t=370s',
+                       'markdown': '[00:06:10](https://www.youtube.com/watch?v=dUdxVBDLf5w&t=370s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dUdxVBDLf5w',
+                       'title': 'How to Generate Revenue for Out-of-Network Medical Claims: Insights with '
+                                'Thomas J. Force',
+                       'channel': 'Patriot Group',
+                       'author': 'Patriot Group',
+                       'text': 'Keep your appeal to two pages; the carriers have short attention spans.',
+                       'tip': 'Keep your appeal to two pages; the carriers have short attention spans.',
+                       'timestamp': 795,
+                       'timestamp_seconds': 795,
+                       'timestamp_label': '[00:13:15]',
+                       'url': 'https://www.youtube.com/watch?v=dUdxVBDLf5w&t=795s',
+                       'markdown': '[00:13:15](https://www.youtube.com/watch?v=dUdxVBDLf5w&t=795s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w387XkK0lkk',
+                       'title': 'ASC Billing - The Top 5 Ways to Increase Out of Network Revenue - '
+                                'MediGain',
+                       'channel': 'Plano Texas',
+                       'author': 'Plano Texas',
+                       'text': 'Never accept the first negotiation offer.',
+                       'tip': 'Never accept the first negotiation offer.',
+                       'timestamp': 587,
+                       'timestamp_seconds': 587,
+                       'timestamp_label': '[00:09:47]',
+                       'url': 'https://www.youtube.com/watch?v=w387XkK0lkk&t=587s',
+                       'markdown': '[00:09:47](https://www.youtube.com/watch?v=w387XkK0lkk&t=587s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w387XkK0lkk',
+                       'title': 'ASC Billing - The Top 5 Ways to Increase Out of Network Revenue - '
+                                'MediGain',
+                       'channel': 'Plano Texas',
+                       'author': 'Plano Texas',
+                       'text': 'We collected 1.8 million additional revenue in that year and that was a '
+                               'project that I was personally part of.',
+                       'tip': 'We collected 1.8 million additional revenue in that year and that was a '
+                              'project that I was personally part of.',
+                       'timestamp': 1158,
+                       'timestamp_seconds': 1158,
+                       'timestamp_label': '[00:19:18]',
+                       'url': 'https://www.youtube.com/watch?v=w387XkK0lkk&t=1158s',
+                       'markdown': '[00:19:18](https://www.youtube.com/watch?v=w387XkK0lkk&t=1158s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OLFRzRe0L2A',
+                       'title': 'SCA 2027 Blueprint: Protect Out-of-Network Revenue Before It Gets '
+                                'Recouped',
+                       'channel': 'AR Specialist',
+                       'author': 'AR Specialist',
+                       'text': 'You only have exactly 180 days from that day zero EOB notice date to file '
+                               'an out of network appeal.',
+                       'tip': 'You only have exactly 180 days from that day zero EOB notice date to file '
+                              'an out of network appeal.',
+                       'timestamp': 394,
+                       'timestamp_seconds': 394,
+                       'timestamp_label': '[00:06:34]',
+                       'url': 'https://www.youtube.com/watch?v=OLFRzRe0L2A&t=394s',
+                       'markdown': '[00:06:34](https://www.youtube.com/watch?v=OLFRzRe0L2A&t=394s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EREvBniyM5c',
+                       'title': 'Healthcare Revenue Recovery | OPERATOR INSIGHTS | Healthcare Revenue '
+                                'Cycle Management, RCM',
+                       'channel': 'Ensemble',
+                       'author': 'Ensemble',
+                       'text': 'The process runs from assessment to pursuit to a monthly operational '
+                               'review with root-cause analysis, and we share the playbook.',
+                       'tip': 'The process runs from assessment to pursuit to a monthly operational review '
+                              'with root-cause analysis, and we share the playbook.',
+                       'timestamp': 402,
+                       'timestamp_seconds': 402,
+                       'timestamp_label': '[00:06:42]',
+                       'url': 'https://www.youtube.com/watch?v=EREvBniyM5c&t=402s',
+                       'markdown': '[00:06:42](https://www.youtube.com/watch?v=EREvBniyM5c&t=402s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jW7NdP3R2Lc',
+                       'title': "Collect Rx's 6 Keys to Success in Revenue Cycle Management for Out of "
+                                'Network Providers',
+                       'channel': 'Collect Rx',
+                       'author': 'Collect Rx',
+                       'text': 'Pre-payment negotiation gets 90 to 100 percent of charges on 8 of 10 '
+                               'facility bills.',
+                       'tip': 'Pre-payment negotiation gets 90 to 100 percent of charges on 8 of 10 '
+                              'facility bills.',
+                       'timestamp': 1018,
+                       'timestamp_seconds': 1018,
+                       'timestamp_label': '[00:16:58]',
+                       'url': 'https://www.youtube.com/watch?v=jW7NdP3R2Lc&t=1018s',
+                       'markdown': '[00:16:58](https://www.youtube.com/watch?v=jW7NdP3R2Lc&t=1018s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KkjI85NtmNE',
+                       'title': 'Top 10 Best Practices to Maximize Complex Out-of-Network Reimbursements '
+                                'and More',
+                       'channel': 'Beckers ASC',
+                       'author': 'Beckers ASC',
+                       'text': 'Out of network represents the last great opportunity for many providers to '
+                               'improve their reimbursement levels overall.',
+                       'tip': 'Out of network represents the last great opportunity for many providers to '
+                              'improve their reimbursement levels overall.',
+                       'timestamp': 1023,
+                       'timestamp_seconds': 1023,
+                       'timestamp_label': '[00:17:03]',
+                       'url': 'https://www.youtube.com/watch?v=KkjI85NtmNE&t=1023s',
+                       'markdown': '[00:17:03](https://www.youtube.com/watch?v=KkjI85NtmNE&t=1023s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yYlBBM1kBMU',
+                       'title': 'The Hidden Costs of Your Out-of-Network Behavioral Health Practice',
+                       'channel': 'Medical Billing Education | Behavioral Billing',
+                       'author': 'Medical Billing Education | Behavioral Billing',
+                       'text': "You're beginning to understand that a clean claim is what matters.",
+                       'tip': "You're beginning to understand that a clean claim is what matters.",
+                       'timestamp': 207,
+                       'timestamp_seconds': 207,
+                       'timestamp_label': '[00:03:27]',
+                       'url': 'https://www.youtube.com/watch?v=yYlBBM1kBMU&t=207s',
+                       'markdown': '[00:03:27](https://www.youtube.com/watch?v=yYlBBM1kBMU&t=207s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wnXpxS7_cqA',
+                       'title': 'Healthcare Underpayments Explained: Causes, Costs, and How to Recover',
+                       'channel': 'MD Clarity',
+                       'author': 'MD Clarity',
+                       'text': "The remedy isn't an appeal, it's renegotiation at the next contract "
+                               'update.',
+                       'tip': "The remedy isn't an appeal, it's renegotiation at the next contract update.",
+                       'timestamp': 505,
+                       'timestamp_seconds': 505,
+                       'timestamp_label': '[00:08:25]',
+                       'url': 'https://www.youtube.com/watch?v=wnXpxS7_cqA&t=505s',
+                       'markdown': '[00:08:25](https://www.youtube.com/watch?v=wnXpxS7_cqA&t=505s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Pqx2hpp_cLU',
+                       'title': '6 Keys to Success in Out of Network Reimbursement',
+                       'channel': 'Collect Rx',
+                       'author': 'Collect Rx',
+                       'text': 'Our average on these types of claims is 90 to 100 percent of the overall '
+                               'bill charges.',
+                       'tip': 'Our average on these types of claims is 90 to 100 percent of the overall '
+                              'bill charges.',
+                       'timestamp': 712,
+                       'timestamp_seconds': 712,
+                       'timestamp_label': '[00:11:52]',
+                       'url': 'https://www.youtube.com/watch?v=Pqx2hpp_cLU&t=712s',
+                       'markdown': '[00:11:52](https://www.youtube.com/watch?v=Pqx2hpp_cLU&t=712s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7h4H8g1S01E',
+                       'title': 'Out-of-Network: Frequently Asked Questions',
+                       'channel': "Becker's Hospital Review",
+                       'author': "Becker's Hospital Review",
+                       'text': "Unfortunately these signed settlement offers, they're not binding.",
+                       'tip': "Unfortunately these signed settlement offers, they're not binding.",
+                       'timestamp': 1373,
+                       'timestamp_seconds': 1373,
+                       'timestamp_label': '[00:22:53]',
+                       'url': 'https://www.youtube.com/watch?v=7h4H8g1S01E&t=1373s',
+                       'markdown': '[00:22:53](https://www.youtube.com/watch?v=7h4H8g1S01E&t=1373s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Zf9f4f3lmAw',
+                       'title': '3 Unpaid Claims, 3 Different Next Actions | A/R Audit Walkthrough',
+                       'channel': 'Talisman Solutions',
+                       'author': 'Talisman Solutions',
+                       'text': 'Avoid promising a recovery rate before reviewing the portfolio.',
+                       'tip': 'Avoid promising a recovery rate before reviewing the portfolio.',
+                       'timestamp': 88,
+                       'timestamp_seconds': 88,
+                       'timestamp_label': '[00:01:28]',
+                       'url': 'https://www.youtube.com/watch?v=Zf9f4f3lmAw&t=88s',
+                       'markdown': '[00:01:28](https://www.youtube.com/watch?v=Zf9f4f3lmAw&t=88s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5aFK91a1KPY',
+                       'title': 'Revenue Cycle for OBLs: Payer Contracts, 2026 Coding and Denials | OEIS '
+                                'Annual Meeting',
+                       'channel': 'Outpatient Endovascular & Interventional Society',
+                       'author': 'Outpatient Endovascular & Interventional Society',
+                       'text': 'The first offer is never the final offer.',
+                       'tip': 'The first offer is never the final offer.',
+                       'timestamp': 3843,
+                       'timestamp_seconds': 3843,
+                       'timestamp_label': '[01:04:03]',
+                       'url': 'https://www.youtube.com/watch?v=5aFK91a1KPY&t=3843s',
+                       'markdown': '[01:04:03](https://www.youtube.com/watch?v=5aFK91a1KPY&t=3843s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Hd2UT1OUlA0',
+                       'title': 'Top 5 Things to Think About Before Going Out-of-Network (OON / IDR / NSA '
+                                'Billing)',
+                       'channel': 'The Auctus Group',
+                       'author': 'The Auctus Group',
+                       'text': 'You will not be seeing reimbursement in 30 days like you often can within '
+                               'network.',
+                       'tip': 'You will not be seeing reimbursement in 30 days like you often can within '
+                              'network.',
+                       'timestamp': 17,
+                       'timestamp_seconds': 17,
+                       'timestamp_label': '[00:00:17]',
+                       'url': 'https://www.youtube.com/watch?v=Hd2UT1OUlA0&t=17s',
+                       'markdown': '[00:00:17](https://www.youtube.com/watch?v=Hd2UT1OUlA0&t=17s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'}]}

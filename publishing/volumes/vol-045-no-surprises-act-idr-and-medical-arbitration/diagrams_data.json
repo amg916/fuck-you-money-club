@@ -1,328 +1,335 @@
 {
   "diagrams": [
     {
-      "diagram_id": "diag-01-incremental-cash-workflow",
-      "chart_type": "process_flow",
-      "title": "From Remittance Exception to Earned Contingency",
-      "subtitle": "Five operating steps; provider recoveries never become operator revenue.",
+      "diagram_id": "diag-01-nsa-dispute-entry-path",
       "chapter_number": 1,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Operate under provider authorization and HIPAA Business Associate Agreements where required by 45 CFR § 164.504(e). The initial payment is an actual remittance; QPA is a separate statutory benchmark and must not be substituted for the cash baseline. Apply current CMS instructions and controlling rules to each filing rather than hardcoding fee schedules or batching criteria.",
-      "caption": "Separate eligibility, deadline preservation, evidence, collection, and revenue recognition. No award amount enters the earned-fee ledger before the relevant incremental cash is collected.",
+      "title": "From Protected Claim to Baseball-Style IDR",
+      "subtitle": "Five operator moves that carry a surprise-billing dispute into arbitration",
+      "chart_type": "process_flow",
       "stages": [
         {
-          "label": "Reconcile the baseline",
-          "value": "835 plus bank match",
-          "numeric_value": 1.0,
-          "detail": "Ingest authorized 835 ERA records, CARC/RARC codes, claim identifiers, initial allowed amounts, and payment dates. Match payer cash to the claim and preserve the reported QPA separately; denial codes alone do not establish an underpayment or federal eligibility."
+          "step": "01",
+          "label": "Bill the plan directly",
+          "value": "Step 1",
+          "detail": "Billing the plan directly reveals whether No Surprises Act protections apply to the claim."
         },
         {
-          "label": "Select the payment rail",
-          "value": "Federal, state, or other",
-          "numeric_value": 2.0,
-          "detail": "Verify service setting, network status, coverage, plan funding, applicable state law, and any All-Payer Model Agreement. Route eligible federal disputes under 42 U.S.C. § 300gg-111 and 45 CFR § 149.510; segregate state-process cases before incurring federal filing costs."
+          "step": "02",
+          "label": "Load every deadline into a tracker",
+          "value": "Step 2",
+          "detail": "Open-negotiation, initiation, and offer deadlines go into a tracker before the first dispute, because missing one by a day or two can invalidate the IDR."
         },
         {
-          "label": "Preserve the deadlines",
-          "value": "30 business days + 4",
-          "numeric_value": 3.0,
-          "detail": "Track receipt of initial payment or denial, the separate 30-business-day period to start open negotiation, and the 30-business-day negotiation period. If unresolved, track the four-business-day IDR initiation window after negotiation ends; initiation is distinct from entity selection and later offer submission."
+          "step": "03",
+          "label": "Run the 30-business-day open negotiation",
+          "value": "Step 3",
+          "detail": "Payment flows through a 30-business-day open negotiation before baseball-style IDR anchored to the QPA, the 2019 median contracted rate indexed for inflation."
         },
         {
-          "label": "Build the offer packet",
-          "value": "Supported offer and evidence",
-          "numeric_value": 4.0,
-          "detail": "Use QPA, relevant clinical acuity, case complexity, and permitted contracting evidence. Licensed FAIR Health material requires field-level screening; do not submit usual-and-customary charges, billed charges, or public payer rates as prohibited benchmarks under 42 U.S.C. § 300gg-111(c)(5)(D)."
+          "step": "04",
+          "label": "Pull 4 years of prior in-network rates",
+          "value": "Step 4",
+          "detail": "Prior in-network rates from the past 4 years serve as a defense in IDR, alongside challenges to payer down-coding."
         },
         {
-          "label": "Collect and allocate",
-          "value": "Cash before contingency",
-          "numeric_value": 5.0,
-          "detail": "Reconcile additional payer receipts and confirmed entity fee refunds. Fee base equals incremental cash above the initial payer payment, less unrecovered CMS administrative fees, entity fees, and agreed casework costs, floored at zero. Multiply that base by the contracted share; keep provider-owned cash out of operator revenue."
+          "step": "05",
+          "label": "Price the final offer for winner-takes-all",
+          "value": "Step 5",
+          "detail": "The arbitrator picks one offer and not the average; in one Arizona self-funded case a $42,000 anesthesia bill closed just over $21,000 against an $18,000 QPA."
         }
-      ]
+      ],
+      "caption": "Protection check, deadline discipline, negotiation, evidence, and offer pricing form the entry path into federal IDR.",
+      "assumptions_note": "Step order reflects the sequence of operator gates and pro-tips as reported; dollar figures come from a single self-funded anesthesia case and are not presented as typical.",
+      "note": "Attributed to CMSHHSgov (aQ87InetyaA), PYA, PC (j1DGgPw1__E), and Jentry Harris (LNSPlo2_U3c)."
     },
     {
-      "diagram_id": "diag-02-nested-dispute-cash-cohort",
-      "chart_type": "funnel",
-      "title": "A Favorable Determination Is Not Collected Cash",
-      "subtitle": "One fixed referral cohort, five nested counts, one observation date.",
+      "diagram_id": "diag-02-idr-volume-vs-expectation",
       "chapter_number": 6,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Illustrative cohort counts, not observed performance or the canonical annual revenue model. Every stage is a subset of the preceding stage. Negotiated settlements leave this arbitration funnel and enter a separate collection ledger. Unpaid awards remain receivables or disputed items, not earned contingency revenue under this cash-conditioned model.",
-      "caption": "The example has 420 favorable determinations but only 280 cases with incremental cash received: a 66.7% paid share of favorable cases and a 28.0% referral-to-cash conversion.",
+      "title": "IDR Volume Against Regulator Expectations",
+      "subtitle": "Reported dispute counts stepping down to the original annual forecast",
+      "chart_type": "funnel",
       "stages": [
         {
-          "label": "Referred claims",
-          "value": "1,000 source claims",
-          "numeric_value": 1000.0,
-          "detail": "Freeze a dated intake cohort with unique claim identifiers, provider authority, payer remittance records, and bank reconciliation links; count each dispute unit once."
+          "label": "Anesthesia operator run rate",
+          "value": 5000000,
+          "display": "5M run rate",
+          "conversion": "Highest cited pace",
+          "detail": "One anesthesia operator cites a 5M dispute run rate."
         },
         {
-          "label": "Federal-eligible claims",
-          "value": "700 of 1,000; 70.0%",
-          "numeric_value": 700.0,
-          "detail": "Document federal eligibility and usable records for 700 claims. Exclude the other 300 from this cohort's federal filing path because routing or documentation requirements were not satisfied."
+          "label": "Disputes filed in 2025",
+          "value": 2600000,
+          "display": "2.6M",
+          "conversion": "High end of the 2.2M-2.6M range",
+          "detail": "Providers filed 2.6 million disputes in 2025 and trigger more than 99% of them."
         },
         {
-          "label": "Timely initiated disputes",
-          "value": "560 of 700; 80.0%",
-          "numeric_value": 560.0,
-          "detail": "Carry 560 unresolved, timely initiated disputes forward after open negotiation. The remaining 140 include settlements and operational exits; track their outcomes separately rather than labeling them arbitration losses."
+          "label": "Disputes filed in 2024",
+          "value": 1400000,
+          "display": "1.4M",
+          "conversion": "Prior-year count",
+          "detail": "Volume reached 1.4M disputes in 2024, with providers winning roughly 80-90% of decisions."
         },
         {
-          "label": "Favorable determinations",
-          "value": "420 of 560; 75.0%",
-          "numeric_value": 420.0,
-          "detail": "Record 420 favorable determinations by the observation date. Split the other 140 among pending, adverse, and dismissed cases in the case ledger; do not treat every non-favorable observation as a final merits loss."
+          "label": "Regulator forecast, upper bound",
+          "value": 22000,
+          "display": "22,000",
+          "conversion": "Original expectation ceiling",
+          "detail": "Regulators expected 17,000-22,000 annual cases."
         },
         {
-          "label": "Incremental cash received",
-          "value": "280 of 420; 66.7%",
-          "numeric_value": 280.0,
-          "detail": "Match incremental receipts for 280 favorable cases to bank activity. The other 140 favorable cases have no matched incremental cash at this cutoff. Partial receipts support fees only on their actual net collected amount."
+          "label": "Regulator forecast, lower bound",
+          "value": 17000,
+          "display": "17,000",
+          "conversion": "Original expectation floor",
+          "detail": "Roughly 17,000 disputes per year was the baseline expectation."
         }
-      ]
+      ],
+      "caption": "Actual IDR filings ran orders of magnitude above the annual case count regulators planned for.",
+      "assumptions_note": "Stages are a descending ladder of separately reported counts, not a single cohort flowing between stages; the 5M figure is one operator's run rate.",
+      "note": "Attributed to Long Reads, Explained (cSaC2n-3r9o) for 2025 filings and to employer, payer-analytics, and provider-filer practitioners including Zelis Healthcare (lhoUoQSpOCg) and HaloMD."
     },
     {
-      "diagram_id": "diag-03-base-case-earned-fee-waterfall",
-      "chart_type": "waterfall",
-      "title": "$505,000 Earned Fees to $217,150 Owner Profit",
-      "subtitle": "Six bars reconcile the canonical Base-Case 43.0% net margin.",
+      "diagram_id": "diag-03-ppdr-eligibility-waterfall",
       "chapter_number": 3,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Canonical endpoints are $505,000 annual operator revenue and $217,150 owner profit. Cost splits and the supporting recovery pool are illustrative engineering assumptions. Example fee base: $2,200,000 incremental provider cash collected minus $80,000 unrecovered administrative/entity fees minus $100,000 provider-borne casework costs equals $2,020,000; a 25% retained share produces $505,000 earned operator revenue. Those two provider-borne deductions are outside the operator expense bars and must not be deducted twice. No baseline provider collections are included.",
-      "caption": "$505,000 − $156,000 − $30,000 − $36,000 − $65,850 = $217,150. Owner profit divided by earned operator revenue equals 43.0%. The first and last bars are totals; the four middle bars are negative changes, not additional revenue.",
-      "stages": [
+      "title": "Patient-Provider Dispute Eligibility on an $850 Bill",
+      "subtitle": "How a $300 good faith estimate clears the $400 per-provider trigger",
+      "chart_type": "waterfall",
+      "bars": [
         {
-          "label": "Earned operator revenue",
-          "value": "$505,000 annual fee revenue",
-          "numeric_value": 505000.0,
-          "detail": "Recognize the operator's earned 25% share of the $2,020,000 net incremental collection pool. Where the operator is an agent under ASC 606, exclude provider proceeds and pass-through recoveries from recognized revenue; document the principal-versus-agent assessment."
+          "label": "Billed charges",
+          "value": 850,
+          "display": "$850",
+          "kind": "total"
         },
         {
-          "label": "Variable delivery labor",
-          "value": "−$156,000 annual expense",
-          "numeric_value": -156000.0,
-          "detail": "Illustrative operator-funded contractor delivery labor and specialist support, separate from provider-borne casework already deducted in the fee-base calculation. Owner distributions are not a second labor deduction."
+          "label": "Good faith estimate",
+          "value": 300,
+          "display": "-$300",
+          "kind": "deduction"
         },
         {
-          "label": "Systems and protected storage",
-          "value": "−$30,000 annual expense",
-          "numeric_value": -30000.0,
-          "detail": "Budget $2,500 monthly for contracted secure infrastructure, 835 ingestion, access logging, deadline automation, and licensed evidence tools. Verify business-associate terms before any service receives protected health information."
+          "label": "Excess over estimate",
+          "value": 550,
+          "display": "$550",
+          "kind": "result"
         },
         {
-          "label": "Core operating overhead",
-          "value": "−$36,000 annual expense",
-          "numeric_value": -36000.0,
-          "detail": "Budget $3,000 monthly for insurance, accounting, workspace, and routine administration. Combined with systems, $5,500 monthly fixed overhead sits within the supplied $1,800–$10,500 core operating budget range."
+          "label": "PPDR trigger threshold",
+          "value": 400,
+          "display": "-$400",
+          "kind": "deduction"
         },
         {
-          "label": "Acquisition and variable support",
-          "value": "−$65,850 annual expense",
-          "numeric_value": -65850.0,
-          "detail": "Allocate illustrative non-fixed acquisition, provider onboarding, and transaction support costs. Total operator expenses are $287,850 annually; the monthly core budget range does not represent all-in expenses including variable delivery and acquisition."
+          "label": "Patient administrative fee",
+          "value": 25,
+          "display": "-$25",
+          "kind": "deduction"
         },
         {
-          "label": "Owner net profit",
-          "value": "$217,150 at 43.0%",
-          "numeric_value": 217150.0,
-          "detail": "Canonical Base-Case annual residual for the 1 FT + 2 C pod. Preserve the scorecard's owner-profit definition; do not silently recast this figure as a provider recovery amount, salary figure, or award-value margin."
+          "label": "Cushion above trigger after fee",
+          "value": 125,
+          "display": "$125",
+          "kind": "result"
         }
-      ]
+      ],
+      "caption": "A $300 estimate against an $850 bill exceeds the $400 per-provider threshold, qualifying for PPDR within 120 days for a $25 fee.",
+      "assumptions_note": "Intermediate results are simple subtraction of the reported $850, $300, $400, and $25 figures; collections and late-fee accrual are suspended while the case is pending.",
+      "note": "Attributed to CMSHHSgov (RRI2VT8QiiI) for the threshold, example, and fee, and DAS Health (e5b1ICVPSZs) for the collections freeze."
     },
     {
-      "diagram_id": "diag-04-specialty-collected-yield",
-      "chart_type": "horizontal_bars",
-      "title": "Compare Cash Yield, Not Headline Awards",
-      "subtitle": "Illustrative earned fees per referred claim on eligible federal rails.",
+      "diagram_id": "diag-04-surprise-bill-dollar-ranges",
       "chapter_number": 2,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Each bar uses an independent ten-referral cohort, including referrals producing zero cash, and a hypothetical 25% retained share. Net recovery pools already exclude initial payer collections, unrecovered administrative/entity fees, and agreed casework costs. These are comparison assumptions, not specialty benchmarks, expected returns, or a weighted bridge to annual scorecard revenue. Operator overhead remains to be deducted.",
-      "caption": "Normalize collections to all referred claims so rejected claims, losses, and unpaid awards reduce yield. Specialty labels do not establish jurisdiction or eligibility.",
-      "stages": [
+      "title": "Surprise Bills in the Wild by the Dollar",
+      "subtitle": "Billed, allowed, wiped, and trigger amounts from real patient cases",
+      "chart_type": "horizontal_bars",
+      "unit": "USD",
+      "bars": [
         {
-          "label": "Emergency physician",
-          "value": "$150 earned per referral",
-          "numeric_value": 150.0,
-          "detail": "A $6,000 net incremental cash pool across ten referrals produces $1,500 operator fees at 25%. Screen emergency service circumstances, payer coverage, and the applicable state or federal payment route before filing."
+          "label": "Ground ambulance ride, allowed to billed",
+          "min": 1340,
+          "max": 3180,
+          "typical": 1840,
+          "display": "$1,340 allowed; $3,180 billed; $1,840 balance bill"
         },
         {
-          "label": "Facility anesthesia",
-          "value": "$200 earned per referral",
-          "numeric_value": 200.0,
-          "detail": "An $8,000 net incremental cash pool across ten referrals produces $2,000 operator fees at 25%. Verify the participating-facility context and applicable ancillary service protections rather than relying on the specialty code alone."
+          "label": "Unmet out-of-network deductible",
+          "min": 12000,
+          "max": 12000,
+          "typical": 12000,
+          "display": "$12,000 deductible absorbed the allowed amount"
         },
         {
-          "label": "Facility radiology",
-          "value": "$100 earned per referral",
-          "numeric_value": 100.0,
-          "detail": "A $4,000 net incremental cash pool across ten referrals produces $1,000 operator fees at 25%. Separate professional and technical components, validate service identifiers, and prevent duplicate recovery across component claims."
+          "label": "Appendectomy bill, wiped to total",
+          "min": 9800,
+          "max": 14238,
+          "typical": 9800,
+          "display": "$9,800 of $14,238 wiped within 6 weeks"
         },
         {
-          "label": "Facility pathology",
-          "value": "$80 earned per referral",
-          "numeric_value": 80.0,
-          "detail": "A $3,200 net incremental cash pool across ten referrals produces $800 operator fees at 25%. Validate covered facility-linked services and permitted batching criteria; similar specialty labels do not make every claim batchable."
+          "label": "Uninsured dispute trigger over estimate",
+          "min": 400,
+          "max": 400,
+          "typical": 400,
+          "display": "$400 over the good faith estimate"
         },
         {
-          "label": "Covered air ambulance",
-          "value": "$600 earned per referral",
-          "numeric_value": 600.0,
-          "detail": "A $24,000 net incremental cash pool across ten referrals produces $6,000 operator fees at 25%. Apply the distinct air-ambulance requirements in 45 CFR § 149.520 and 42 U.S.C. § 300gg-112; exclude ground ambulance claims from this federal comparison."
+          "label": "Uninsured dispute filing fee",
+          "min": 25,
+          "max": 25,
+          "typical": 25,
+          "display": "$25 fee within 120 days of the first bill"
         }
-      ]
+      ],
+      "caption": "The helicopter is protected and the road is not, while a Help Desk complaint can erase the illegal portion of an in-network facility bill.",
+      "assumptions_note": "Each bar is a separate reported case or rule; min and max mark the low and high dollar points of that case, and typical marks the amount the patient faced or recovered.",
+      "note": "Attributed to AS DESIGNED | Risk & Insurance Stories (w_lpas-cNkc), Bill Fighter (OWN7CBskcIQ), and Law Unpacked (0NouMpFWLHI)."
     },
     {
-      "diagram_id": "diag-05-statutory-risk-decision-tree",
-      "chart_type": "decision_tree",
-      "title": "Four Checks Before Federal Filing",
-      "subtitle": "Explicit stop, reroute, and proceed outcomes preserve fees and deadlines.",
+      "diagram_id": "diag-05-operations-rule-filing-gates",
       "chapter_number": 5,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Evaluate the checks in sequence for each proposed dispute or batch. Statutory anchors include 42 U.S.C. § 300gg-111, 45 CFR §§ 149.30 and 149.510, and HIPAA business-associate requirements in 45 CFR § 164.504(e). Verify current CMS operational guidance and applicable court orders when configuring deadline, fee, and batching rules.",
-      "caption": "A missing fact is a work item, not permission to file. Every negative branch must identify the responsible person, next action, and remaining deadline.",
-      "stages": [
+      "title": "Filing Gates Under the IDR Operations Final Rule",
+      "subtitle": "Four checks before a dispute reaches the portal",
+      "chart_type": "decision_tree",
+      "nodes": [
         {
-          "label": "Authority and protected records",
-          "value": "Complete → check two",
-          "numeric_value": 1.0,
-          "detail": "Yes: retain provider representation authority, required BAA terms, access controls, and relevant records. No: stop protected-data ingestion and filing until authority and handling arrangements are established; use de-identified samples for system testing."
+          "gate": "G1",
+          "question": "For elective anesthesia, was the facility in-network?",
+          "pass_next": "G2",
+          "fail_action": "Stop the filing; check network status, admission type, and timelines and be the goalie."
         },
         {
-          "label": "Federal payment jurisdiction",
-          "value": "Eligible → check three",
-          "numeric_value": 2.0,
-          "detail": "Yes: document covered service circumstances and why federal IDR applies. No: route to the applicable state process, contractual appeal, or other supported channel. Do not equate self-funded ERISA status with automatic eligibility or fully insured status with automatic exclusion."
+          "gate": "G2",
+          "question": "Is the case keyed to the pre- or post-November 1, 2026 tracker by open-negotiation start date?",
+          "pass_next": "G3",
+          "fail_action": "Split the caseload into two calendar-based tracking systems before proceeding."
         },
         {
-          "label": "Timing and batch validity",
-          "value": "Valid → check four",
-          "numeric_value": 3.0,
-          "detail": "Yes: retain negotiation notices, business-day calculations, timely initiation evidence, and current batch criteria. No: remove incompatible claims or stop the filing. Apply the 90-calendar-day same-party, same-or-similar-item cooling-off restriction and its applicable post-period initiation window; never reset clocks through relabeling."
+          "gate": "G3",
+          "question": "Does the batch hold 50 line items or fewer with no mix of eligible and ineligible Category I CPT codes?",
+          "pass_next": "G4",
+          "fail_action": "Rebuild the batch by manual cross-reference to avoid automatic rejection."
         },
         {
-          "label": "Evidence and collection economics",
-          "value": "Positive → authorized filing",
-          "numeric_value": 4.0,
-          "detail": "Proceed only with a supportable offer and a positive risk-adjusted net collection estimate. Budget CMS administrative fees as non-refundable and losing or ineligible cases as unrecovered entity-fee exposure. Credit prevailing-party entity refunds only when confirmed; apply dismissal-specific rules rather than presuming a refund. Otherwise renegotiate, correct, or decline."
+          "gate": "G4",
+          "question": "Is the filing inside the 4-business-day window after the 30-business-day cooling-off period with the current $15 administrative fee verified?",
+          "pass_next": "File the dispute and run the 30-calendar-day award-payment tracker",
+          "fail_action": "Escalate immediately; the portal blocks late filings with no grace period and wrong fees deny the offer."
         }
-      ]
+      ],
+      "caption": "The May 28, 2026 operations final rule changes the plumbing, and each gate guards against an expired or rejected case.",
+      "assumptions_note": "The batch cap applies to open negotiations starting on or after November 1, 2026; practitioners split on whether the prior cap was 25 or unlimited.",
+      "note": "Attributed to The Phia Group, LLC (ksxW878eWWk), Xpert Billing Talk (g3C-DoM_9CI), and HaloMD (of6CD7esHY0)."
     },
     {
-      "diagram_id": "diag-06-three-to-five-person-pod",
-      "chart_type": "org_architecture",
-      "title": "Three People Launch; Five People Scale",
-      "subtitle": "Clear ownership separates filing execution from cash reconciliation.",
+      "diagram_id": "diag-06-remittance-posting-cell",
       "chapter_number": 11,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Canonical Conservative: $110,000 revenue × 30% = $33,000 owner profit with 1 FT + 2 C. Canonical Base-Case: $505,000 × 43.0% = $217,150 with the same three-person structure. Canonical Scaled: $900,000 × 56% = $504,000 with 2 FT + 3 C. Revenue means earned operator contingency, not provider collections. Seats four and five are additions only in the Scaled configuration.",
-      "caption": "FT means full-time seat; C means contractor seat, not assumed full-time capacity. Assign a named backup for every deadline and keep evidence decisions separate from receipt confirmation.",
-      "stages": [
+      "title": "The Remittance Control Cell",
+      "subtitle": "Roles that make every 835 dollar balance to the deposit",
+      "chart_type": "org_architecture",
+      "center": {
+        "role": "Payment Posting Lead",
+        "headcount": "Not reported by the cited practitioners",
+        "focus": "Charged minus adjustments equals paid, with the TRN trace number tying each ERA to its EFT deposit"
+      },
+      "spokes": [
         {
-          "label": "Owner and recovery lead",
-          "value": "Launch: 1 FT",
-          "numeric_value": 1.0,
-          "detail": "Own provider contracts, jurisdiction exceptions, offer authority, fee-base definitions, and operating economics. Maintain the exception queue and engage appropriately qualified specialists when a matter exceeds the team's authorized scope."
+          "role": "EDI Intake Specialist",
+          "type": "Raw 835 handling",
+          "kpi": "No raw 835 opened in a Word-type editor"
         },
         {
-          "label": "Claims and deadline analyst",
-          "value": "Launch: 1 C",
-          "numeric_value": 1.0,
-          "detail": "Parse 835 records, verify initial remittances, maintain business-day calendars, preserve negotiation delivery evidence, and prepare eligible batches. Escalate missing plan documentation before filing costs are committed."
+          "role": "Contract Variance Auditor",
+          "type": "Remittance versus fee schedule",
+          "kpi": "30 to 40 percent AR drop over about 60 days; 75 cents to $1 underpayment per claim surfaced"
         },
         {
-          "label": "Clinical evidence specialist",
-          "value": "Launch: 1 C",
-          "numeric_value": 1.0,
-          "detail": "Connect chart-supported acuity and complexity to permitted offer factors, redact unnecessary information, and inspect licensed data extracts for prohibited benchmarks. The owner checks submission authority and final packet quality."
+          "role": "Denial Code Analyst",
+          "type": "CARC and RARC triage",
+          "kpi": "CO versus PR never confused; CARC 29 timely filing often 90 to 180 days"
         },
         {
-          "label": "Operations and collections lead",
-          "value": "Scale addition: 1 FT",
-          "numeric_value": 1.0,
-          "detail": "Take ownership of capacity planning, payer payment follow-up, determination-date tracking, and cash reconciliation. Monitor the applicable 30-calendar-day payment obligation after determination separately from actual collection performance."
-        },
-        {
-          "label": "Remittance quality specialist",
-          "value": "Scale addition: 1 C",
-          "numeric_value": 1.0,
-          "detail": "Independently match bank receipts, corrected remittances, entity refunds, and provider allocations. Sample earned contingency calculations for duplicate collections, baseline-payment leakage, and double-counted case costs."
+          "role": "Cash Reconciler",
+          "type": "Deposit matching",
+          "kpi": "Deposit total matches remittance total with every PLB recoupment line worked"
         }
-      ]
+      ],
+      "caption": "The operator who reads group codes, CARCs, and RARCs controls cash, and no EFT is posted without its remittance.",
+      "assumptions_note": "Role split is an editorial grouping of reported tasks; the $200 billed, $80 CO45, $100 PR1, $20 paid example illustrates the balance check.",
+      "note": "Attributed to Health Weave RCM LLC (bPFE9F4Y_Y4), The Claim Game X Practice Solutions (FE6Ns41GFH0), AarkNine Healthcare (3HP5mg0UdCw), and EDI PowerTools by EMS Healthcare Informatics (JfPjIRaIz-o)."
     },
     {
-      "diagram_id": "diag-07-startup-capital-allocation",
-      "chart_type": "stacked_comparison",
-      "title": "Allocate $25,000 Without Confusing Reserves with Expense",
-      "subtitle": "Four capital buckets within the $10,000–$45,000 startup range.",
+      "diagram_id": "diag-07-oon-payment-bands",
       "chapter_number": 4,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Illustrative startup allocation totals $25,000, within the canonical $10,000–$45,000 range. Shares are 26%, 22%, 32%, and 20%. Capital allocations are not automatically current-period expenses. First-deal timing is 1–4 months; first cash collection can occur later, so maintain a dated liquidity forecast.",
-      "caption": "$6,500 + $5,500 + $8,000 + $5,000 = $25,000. Release filing liquidity only for screened cases with documented fee ownership and reimbursement treatment.",
-      "stages": [
+      "title": "Where Out-of-Network Payments Land Before and After IDR",
+      "subtitle": "Payment bands as a share of billed charges",
+      "chart_type": "stacked_comparison",
+      "total_range": "0% to 100% of billed charges",
+      "buckets": [
         {
-          "label": "Secure intake infrastructure",
-          "value": "$6,500; 26% of capital",
-          "numeric_value": 6500.0,
-          "detail": "Fund encrypted storage setup, role-based access, audit logging, 835 parser validation, and backup restoration testing. Use synthetic or de-identified fixtures until contracts and required business-associate arrangements cover the production data path."
+          "label": "Well-paid OON half",
+          "low": 60,
+          "high": 100,
+          "notes": "Audits show half of OON payments land at 60-100% of charges."
         },
         {
-          "label": "Contracts and operating setup",
-          "value": "$5,500; 22% of capital",
-          "numeric_value": 5500.0,
-          "detail": "Fund provider engagement terms, BAA preparation, representation scope, insurance deposits, and accounting design. Specify the incremental-cash baseline, cost deductions, refund allocation, retained share, and handling of provider-owned money."
+          "label": "Low-paid target half",
+          "low": 15,
+          "high": 17,
+          "notes": "The other half pays 15-17% of charges and is the target population."
         },
         {
-          "label": "Case-fee liquidity reserve",
-          "value": "$8,000; 32% of capital",
-          "numeric_value": 8000.0,
-          "detail": "Reserve cash for authorized administrative and entity fee outlays where the provider contract assigns funding responsibility. Track advances, reimbursements, losses, and actual refunds separately; a refundable deposit is not earned operator revenue."
+          "label": "Post-IDR recovery target",
+          "low": 45,
+          "high": 55,
+          "notes": "Filers push the low-paid half toward 45-55% of charges."
         },
         {
-          "label": "Acquisition and runway reserve",
-          "value": "$5,000; 20% of capital",
-          "numeric_value": 5000.0,
-          "detail": "Fund targeted provider outreach, pilot onboarding, and a limited operating buffer. At the illustrative $5,500 monthly fixed overhead, this bucket alone covers less than one month; use staged spending, provider-funded fees, or additional capital before expanding."
+          "label": "Ineligible disputes",
+          "low": 0,
+          "high": 0,
+          "notes": "1 in 5 disputes is thrown out as ineligible, yielding zero recovery."
         }
-      ]
+      ],
+      "caption": "Money in federal IDR is won or lost at the screen, so eligibility checks precede the push from 15-17% toward 45-55% of charges.",
+      "assumptions_note": "Bands come from audit splits and filer targets; separately, Staffingly reports an 88% win rate with awards averaging 450% of QPA.",
+      "note": "Attributed to Adam Cartabiano on Ryan Downs (7lqb5ev54mA) and Staffingly, Inc (ASHyX7v13Eo)."
     },
     {
-      "diagram_id": "diag-08-thirty-day-launch-roadmap",
-      "chart_type": "timeline_roadmap",
-      "title": "Thirty Days to a Controlled Recovery Pipeline",
-      "subtitle": "Build a working operation without compressing statutory calendars.",
+      "diagram_id": "diag-08-back-end-automation-roadmap",
       "chapter_number": 12,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Sprint days are calendar-day project milestones; statutory business-day and calendar-day clocks remain separate. The canonical first-deal horizon is 1–4 months, and this sprint does not assume a completed award, payer deposit, or earned contingency within 30 days.",
-      "caption": "End the month with authorized intake, defensible routing, tested timers, and claim-level economics. Advance individual cases only when their actual statutory and operational conditions hold.",
-      "stages": [
+      "title": "Four-Week Back-End Automation Rollout",
+      "subtitle": "Clean data, measure denials, pilot eligibility, then contract for outcomes",
+      "chart_type": "timeline_roadmap",
+      "weeks": [
         {
-          "label": "Days 1-7",
-          "value": "Authority and data foundation",
-          "numeric_value": 7.0,
-          "detail": "Execute provider engagement and required BAA documents; define the incremental-cash fee formula and fee ownership. Configure least-privilege access and reconcile a sample 835 to bank receipts. Deliver an intake checklist and a tested initial-payment ledger."
+          "week": "Week 1",
+          "title": "Clean eligibility data",
+          "deliverable": "COB error audit, since COB drives about half of eligibility errors",
+          "gate": "No agent touches data that has not been cleaned"
         },
         {
-          "label": "Days 8-14",
-          "value": "Routing and clock validation",
-          "numeric_value": 14.0,
-          "detail": "Classify a pilot cohort using plan documents, service facts, and state-law applicability. Test holiday handling, 30-business-day negotiation calculations, four-business-day initiation windows, and cooling-off restrictions. Deliver a dated routing record for every pilot claim."
+          "week": "Week 2",
+          "title": "Compute the matched denial rate",
+          "deliverable": "Denials and payments mapped back to billing month, exposing gaps such as 15% denied against 7% recovered",
+          "gate": "True net denial rate established before any vendor pitch"
         },
         {
-          "label": "Days 15-21",
-          "value": "Evidence and negotiation execution",
-          "numeric_value": 21.0,
-          "detail": "Start eligible open negotiations within their actual deadlines, retain delivery evidence, and prepare supported offers. Test packet generation with clinical source links and prohibited-benchmark checks. Older eligible matters may advance only if their own clocks permit."
+          "week": "Week 3",
+          "title": "Pilot an eligibility agent",
+          "deliverable": "Cost-of-inaction case at $5 per manual check and $118 per denial reworked, against a 12% denial rate with 24% from eligibility",
+          "gate": "Hard financial outcomes defined for skeptical CFOs"
         },
         {
-          "label": "Days 22-30",
-          "value": "Cash controls and capacity decision",
-          "numeric_value": 30.0,
-          "detail": "Reconcile pilot status, fee exposure, available liquidity, and contractor capacity. Test contingency calculations against partial collections, losses, and confirmed refunds. Deliver a cash forecast and next-month case schedule; record pending negotiations without fabricating awards or collections."
+          "week": "Week 4",
+          "title": "Contract for KPIs and human sign-off",
+          "deliverable": "Vendor contract with KPIs and a reporting feedback loop; humans review and sign agent-drafted appeals",
+          "gate": "Vendor AI screened for repackaged RPA"
         }
-      ]
+      ],
+      "caption": "AI agents draft, verify, and route while humans review, sign, and handle exceptions.",
+      "assumptions_note": "The four-week sequence is an editorial ordering of reported gates; OpenBots claims ROI turns positive by month 3 to 4.",
+      "note": "Attributed to OpenBots (ZpELLvKSrF8), Practical Data Solutions - Healthcare Analytics (4SW5Ihdk8ps), AGS Health (x0zeGvoXqsc), and HealthLeaders Media (BKBNIfZ081U)."
     }
   ]
 }

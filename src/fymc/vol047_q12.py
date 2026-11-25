@@ -1,755 +1,850 @@
 from __future__ import annotations
 
-CHAPTER_12 = {
-    "id": "Q12",
-    "chapter_id": "Q12",
-    "chapter_number": 12,
-    "question_number": 12,
-    "slug": "first-30-day-launch-sprint-kill-fix-scale-gates",
-    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching ai data-center powered land, substation headroom & bess site optioning, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
-    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
-    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
-    "subtitle": "A Four-Person Launch Pod for Utility-Validated MW, Separate BESS and AI Campus Options, Controlled Fee Burn, and Day-30/60/90 Capital Decisions",
-    "layout_template": "thirty_day_plan",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #47 ranks #15 of 49 with a 92/100 Money-to-Manpower Score. "
-        "This sprint sequences 11 mapped plays into a four-person origination pod: "
-        "one full-time principal and three contractors covering GIS, electrical diligence, "
-        "and property rights. Days 1–7 establish buyer specifications and screen parcels; "
-        "Days 8–14 test utility and zoning feasibility; Days 15–21 negotiate contingent "
-        "options; Days 22–30 package evidence and make capital decisions. Separate "
-        "5–25-acre standalone BESS sites from fiber-, water-, and zoning-constrained "
-        "AI campuses. Cap first-month cash deployment at $7,500 against a $25,000 "
-        "launch account. Annual owner-profit cases remain $33,000 Conservative, $212,100 "
-        "Base, and $486,000 Scaled. Day-30/60/90 thresholds expand diligence only when "
-        "documented utility progress, buyer engagement, and remaining cash justify it."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$110,000",
-            "context": "Annual realized option assignment, origination milestone, and development-carry revenue",
-            "note": "30% net margin; $33,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$505,000",
-            "context": "Annual realized option assignment, origination milestone, and development-carry revenue",
-            "note": "42.0% net margin; $212,100 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual realized option assignment, origination milestone, and development-carry revenue",
-            "note": "54% net margin; $486,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Days 1–7: Translate Eleven Plays into a Funded, Four-Person Search",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Launch a narrow search rather than a speculative land portfolio. "
-                    "Candidate #47 has eleven mapped operator plays; use the following "
-                    "execution labels to connect them to observable work products. P01 "
-                    "captures developer requirements; P02 screens 69kV–345kV substations "
-                    "and corridors; P03 reconciles queue records; P04 identifies parcel "
-                    "owners; P05 checks floodplain, wetlands, mineral interests, and access; "
-                    "P06 verifies zoning pathways; P07 obtains utility service evidence; "
-                    "P08 verifies fiber and water; P09 structures assignable contingent "
-                    "options; P10 packages developer diligence; P11 negotiates assignment, "
-                    "milestone, and carry economics. These labels organize this chapter, "
-                    "rather than purporting to reproduce an external play taxonomy. Start "
-                    "with two adjacent jurisdictions and one utility territory. Select "
-                    "three credible developers whose written acquisition criteria cover "
-                    "either standalone storage or AI campuses. Record requested MW, "
-                    "acceptable service dates, acreage, security requirements, and upgrade "
-                    "budgets separately for each buyer. The principal owns outreach and "
-                    "investment decisions; a GIS contractor owns screening; an electrical "
-                    "contractor owns utility questions; a property-rights contractor owns "
-                    "title and option coordination. Retain appropriately licensed counsel "
-                    "or brokerage expertise within that third workstream. No contractor "
-                    "may promise capacity, sign an option, or authorize additional spending."
-                ),
-                (
-                    "Fund the illustrative sprint with $25,000, inside the canonical "
-                    "$10,000–$50,000 startup range, and cap first-month cash deployment "
-                    "at $7,500. Allocate $4,500 to operating expense: $1,200 GIS support, "
-                    "$1,500 electrical support, $1,200 property-rights support, and $600 "
-                    "for software, records, and communications. Allocate another $1,000 "
-                    "to targeted external diligence and $2,000 to option consideration, "
-                    "leaving $17,500 untouched. The principal takes no cash draw during "
-                    "this sprint; personal living costs require separate funding. These "
-                    "are procurement ceilings, not assertions that specialist work fits "
-                    "every local market. Obtain fixed-scope quotes before ordering, and "
-                    "reduce parcel volume if quotes exceed the envelope. Reserve the "
-                    "entire $2,000 option allocation as potentially unrecoverable because "
-                    "utility or zoning diligence can eliminate otherwise attractive "
-                    "sites. This loss allowance describes the same cash, not another "
-                    "expense added twice. No study deposit, extension payment, or "
-                    "nonrefundable reservation may sit outside the ledger. Maintain "
-                    "weekly committed, paid, refundable, and remaining balances. A "
-                    "$10,000-funded launch must use a smaller screening-only scope until "
-                    "additional funding or developer-paid diligence becomes available; "
-                    "it cannot responsibly copy this $25,000 cash plan."
-                ),
-                (
-                    "Build one evidence register in SQLite or a controlled spreadsheet, "
-                    "with QGIS handling spatial overlays. Every parcel record needs its "
-                    "assessor identifier, owner source, acreage, utility territory, "
-                    "nearest relevant facilities, source date, and separate confidence "
-                    "fields for physical observations and utility conclusions. Import "
-                    "public PJM queue material where applicable, FEMA flood layers, "
-                    "USFWS wetland screening layers, county zoning maps, and recorded "
-                    "property instruments. Public layers identify questions; they do "
-                    "not establish service availability, jurisdictional wetland boundaries, "
-                    "or marketable title. Set a first-week funnel of forty raw parcels, "
-                    "twelve desk-screen survivors, and six owner contacts with verified "
-                    "contact provenance. Split the twelve survivors between the two "
-                    "asset types rather than pooling acreage or power assumptions. "
-                    "Storage candidates must fit a 5–25-acre usable footprint with "
-                    "access, setbacks, and a plausible interconnection pathway. Campus "
-                    "candidates require buyer-specific expandable area, cooling strategy, "
-                    "fiber access, and a credible load-service pathway. Put proximity "
-                    "measurements in a geography field, never a deliverable-MW field. "
-                    "At the end of Day 7, the principal signs the source register "
-                    "and rejects records that cannot be reproduced from dated evidence."
-                ),
-            ],
-            "table": {
-                "caption": "Days 1–7: Buyer Specifications, Budget Authority, and Reproducible Parcel Screening",
-                "headers": [
-                    "Execution day and mapped play",
-                    "Accountable pod member and concrete action",
-                    "Required deliverable and evidence trail",
-                    "Quantitative acceptance threshold or spending constraint",
-                ],
-                "rows": [
-                    [
-                        "Day 1 establishes the P01 buyer mandate",
-                        "Principal interviews developers and separates storage from campus requirements",
-                        "Three dated buyer briefs identify power, timing, land, and infrastructure needs",
-                        "Proceed with two jurisdictions inside one selected utility territory",
-                    ],
-                    [
-                        "Day 2 establishes funding across all eleven plays",
-                        "Principal approves contractor scopes and opens the committed-cash ledger",
-                        "Written purchase limits distinguish operating expense, diligence, and option consideration",
-                        "Authorize at most $7,500 against the $25,000 launch account",
-                    ],
-                    [
-                        "Day 3 activates P02 geographic opportunity screening",
-                        "GIS contractor maps relevant substations and 69kV–345kV transmission corridors",
-                        "Forty parcel records preserve dated source links and assessor identifiers",
-                        "Assign zero deliverable MW from geographic proximity alone",
-                    ],
-                    [
-                        "Day 4 connects P03 queues with P07 service questions",
-                        "Electrical contractor separates generation interconnection records from large-load service evidence",
-                        "Utility contact register identifies applicable tariffs and formal inquiry channels",
-                        "Every priority parcel receives an explicitly labeled service-evidence status",
-                    ],
-                    [
-                        "Day 5 advances P04 ownership and P05 fatal-flaw screening",
-                        "Property-rights contractor verifies ownership while GIS contractor flags physical constraints",
-                        "Parcel evidence packs retain access, flood, wetland, and mineral questions",
-                        "Reduce forty raw parcels to twelve reproducible desk-screen survivors",
-                    ],
-                    [
-                        "Day 6 tests P06 zoning and P08 infrastructure",
-                        "Principal requests planning guidance and buyer-specific fiber and water specifications",
-                        "Two separate screening templates prevent storage and campus assumption mixing",
-                        "Reject explicit use prohibitions unless a documented feasible alternative exists",
-                    ],
-                    [
-                        "Day 7 consolidates P01 through P08 screening evidence",
-                        "Principal reviews sources and approves the second-week outreach list",
-                        "Twelve surviving records include six owner contacts with verified provenance",
-                        "Carry forward only records with dated evidence and named next actions",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy Evidence Before Buying More Option Time",
-                "body": "Experienced originators protect bargaining leverage by resolving the most expensive uncertainties before increasing nonrefundable consideration.",
-                "items": [
-                    "Ask the utility which specific service study, tariff process, and customer authorization apply before purchasing an elaborate electrical concept package.",
-                    "Request separate BESS charging and export assumptions; export feasibility does not establish import service or acceptable operating restrictions.",
-                    "Ask fiber providers for route-level feasibility, construction responsibility, and diversity evidence; two carriers can share the same vulnerable conduit.",
-                    "Negotiate diligence extensions against identifiable utility or planning events, with capped payments and written notice mechanics instead of automatic monthly fee escalation.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Days 8–14: Replace Apparent Headroom with Utility and Land-Use Evidence",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The second week converts attractive map positions into explicit "
-                    "utility questions. P07 should produce a utility-authored response "
-                    "or a documented route to the required study, not an originator's "
-                    "estimate dressed as capacity. Ask for the proposed service point, "
-                    "voltage, import and export requirements, study prerequisites, "
-                    "upgrade responsibility, indicative timing, and treatment of "
-                    "competing requests. A queue entry establishes an application "
-                    "record, not available headroom. A hosting-capacity map may describe "
-                    "a different voltage class or operating condition from the proposed "
-                    "project. For storage, document charging load and discharging output "
-                    "separately, including restrictions that could undermine dispatch "
-                    "economics. For an AI campus, obtain the buyer's ramp schedule and "
-                    "critical service requirements before asking about firm supply. "
-                    "Use 18 CFR 35.28 to understand applicable transmission-provider "
-                    "interconnection obligations, while checking the actual tariff and "
-                    "jurisdiction; generator procedures do not automatically supply "
-                    "a campus load-service commitment. Maintain three evidence levels: "
-                    "inquiry submitted, preliminary utility response, and study-supported "
-                    "service parameters. Only the final category supports modeled "
-                    "deliverable MW, and even then quote the utility's conditions "
-                    "and remaining contractual dependencies alongside the number."
-                ),
-                (
-                    "P05 and P06 run in parallel because electrical progress cannot "
-                    "repair unusable property rights or a prohibited land use. For "
-                    "a Virginia search, check local authority under Va. Code "
-                    "§ 15.2-2280 and obtain the current ordinance, parcel district, "
-                    "use classification, application calendar, and any adopted "
-                    "moratorium. A staff conversation is a lead, not an entitlement. "
-                    "Record whether storage is treated as a utility facility, "
-                    "industrial use, or another local category, and identify "
-                    "setbacks, fire access, landscaping, noise, and equipment-height "
-                    "requirements. Examine the usable pad after constraints, not "
-                    "the assessor's gross acreage. Check mineral reservations, "
-                    "surface-use rights, easements, road access, and restrictions "
-                    "that could block foundations or utility corridors. Wetland "
-                    "screening under Clean Water Act Section 404, 33 U.S.C. "
-                    "§ 1344, identifies potential permitting work; database absence "
-                    "does not resolve jurisdiction or authorize fill. Campus "
-                    "water diligence must specify cooling architecture, source, "
-                    "required volume, wastewater disposition, and provider response. "
-                    "Do not charge a standalone BESS parcel for a campus-scale "
-                    "water assumption, but do capture its actual fire-protection "
-                    "and emergency-response requirements. Each unresolved item "
-                    "gets a named resolver, price ceiling, and decision date."
-                ),
-                (
-                    "By Day 14, classify six priority parcels against the actual "
-                    "developer briefs and reduce them to no more than four "
-                    "negotiation candidates. Use a downside residual rather than "
-                    "a headline price per nearby megawatt. Start with the "
-                    "developer's supported project value at the documented service "
-                    "date; subtract land consideration, remaining development "
-                    "spending, supported upgrade exposure, financing and delay "
-                    "costs, and the developer's required return. The resulting "
-                    "headroom limits an assignment fee; it is not itself booked "
-                    "revenue. Where utility-supported MW or upgrade responsibility "
-                    "is absent, leave capacity-derived valuation at zero and "
-                    "negotiate only inexpensive contingent control. Stress the "
-                    "buyer model using a twelve-month service delay and a "
-                    "fifty-percent increase in the currently supported upgrade "
-                    "estimate. These are internal stress assumptions, not "
-                    "predictions of utility outcomes. Obtain buyer confirmation "
-                    "that the stressed residual still supports the proposed "
-                    "fee before increasing consideration. If no usable upgrade "
-                    "estimate exists, the stress test remains incomplete and "
-                    "the site cannot pass the capital-expansion test. Send "
-                    "developers an evidence summary that distinguishes observed "
-                    "facts, utility conditions, operator assumptions, and "
-                    "questions still awaiting third-party resolution."
-                ),
-            ],
-            "table": {
-                "caption": "Days 8–14: Separate Service Evidence, Land-Use Authority, and Downside Valuation",
-                "headers": [
-                    "Execution day and mapped play",
-                    "Accountable pod member and concrete action",
-                    "Required deliverable and evidence trail",
-                    "Quantitative acceptance threshold or spending constraint",
-                ],
-                "rows": [
-                    [
-                        "Day 8 advances P07 utility service qualification",
-                        "Electrical contractor submits authorized inquiries through the utility's designated channel",
-                        "Six parcel inquiries specify load, export, voltage, location, and timing",
-                        "Record submission receipts without presenting them as available capacity",
-                    ],
-                    [
-                        "Day 9 reconciles P03 queue and P07 service evidence",
-                        "Electrical contractor identifies tariff applicability and competing-request dependencies",
-                        "Service-status sheet separates preliminary comments from study-supported parameters",
-                        "Allow no capacity-derived valuation without utility-supported deliverability assumptions",
-                    ],
-                    [
-                        "Day 10 resolves P06 local zoning questions",
-                        "Property-rights contractor obtains ordinances and written planning interpretations where available",
-                        "Six parcel records identify use classification, restrictions, and application sequence",
-                        "Remove parcels subject to an effective incompatible-use moratorium",
-                    ],
-                    [
-                        "Day 11 deepens P05 usable-area and rights screening",
-                        "GIS and property-rights contractors reconcile constraints against proposed site layouts",
-                        "Constraint maps distinguish gross acreage from usable pads and access corridors",
-                        "Storage candidates retain a buyer-compatible footprint within 5–25-acre parcels",
-                    ],
-                    [
-                        "Day 12 verifies P08 campus infrastructure dependencies",
-                        "Principal requests fiber routes and cooling-specific water service responses",
-                        "Campus files identify construction responsibility and any shared fiber-route dependency",
-                        "Do not merge campus infrastructure requirements into standalone storage economics",
-                    ],
-                    [
-                        "Day 13 connects P01 buyer economics with P11 pricing",
-                        "Principal asks developers to evaluate evidence-linked downside residual models",
-                        "Models disclose utility assumptions, upgrade exposure, timing, and required developer returns",
-                        "Stress supported upgrades by fifty percent and timing by twelve months",
-                    ],
-                    [
-                        "Day 14 selects the P09 option negotiation shortlist",
-                        "Principal ranks survivors using buyer fit and unresolved diligence cost",
-                        "No more than four candidate files enter documented owner negotiations",
-                        "Unstudied power supports contingent control only, never a deliverable-MW premium",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Verifications Before Any Nonrefundable Site Payment",
-                "body": "The principal signs these checks for each parcel; failure pauses payment even when the broader sprint remains on schedule.",
-                "items": [
-                    "Verify the option grantor's authority, the exact legal description, and the access rights needed to conduct the proposed diligence.",
-                    "Verify the utility evidence label, keeping preliminary discussion separate from study-supported MW, cost allocation, and energization conditions.",
-                    "Verify current zoning, moratorium status, and the buyer-compatible usable footprint; document unresolved permit work and its funded next step.",
-                    "Verify principal or licensed-broker capacity, assignment language, termination rights, notice dates, and the remaining $2,000 aggregate option-payment allowance.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Days 15–21: Purchase Conditional Control and Build an Assignable Evidence Pack",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "P09 aims for two executed, diligence-contingent options, not "
-                    "maximum acreage under expensive paper. Seek twelve to "
-                    "twenty-four months of contractual control, with negotiated "
-                    "termination rights tied to utility feasibility, zoning, "
-                    "title, access, and buyer-defined physical requirements. "
-                    "That duration is a target, not an assumption that owners "
-                    "will accept cheap long-term exclusivity. If an owner "
-                    "requires consideration beyond the sprint allocation, "
-                    "negotiate staged extensions, obtain developer funding, "
-                    "or stop. Specify permitted assignees, assignment notice, "
-                    "any owner consent, diligence access, cooperation with "
-                    "utility requests, and treatment of studies after "
-                    "termination. Have counsel determine whether recording "
-                    "a memorandum is appropriate and authorized; avoid "
-                    "publishing commercial terms unnecessarily. Validate "
-                    "the principal-trading structure against applicable "
-                    "state licensing rules. Va. Code § 54.1-2100 defines "
-                    "broker activity, while § 54.1-2103 addresses specified "
-                    "exemptions; neither should be reduced to a universal "
-                    "claim that calling compensation an assignment fee "
-                    "eliminates licensing requirements. Where the activity "
-                    "requires brokerage licensure, use a properly licensed "
-                    "participant under a documented arrangement. Never "
-                    "market another owner's parcel as though the pod "
-                    "already controls it. Log execution, effective dates, "
-                    "payment receipts, and every termination notice deadline."
-                ),
-                (
-                    "Keep the workload inside the one-FT-plus-three-contractor "
-                    "pod by enforcing work-in-process limits. The principal "
-                    "handles at most four active owner negotiations and "
-                    "three substantive developer conversations per week. "
-                    "The electrical contractor carries no more than six "
-                    "live utility inquiries; the GIS contractor updates "
-                    "only the twelve survivors; the property-rights "
-                    "contractor prepares no more than two executable "
-                    "option packages during this sprint. Batch factual "
-                    "questions daily and hold one thirty-minute exception "
-                    "meeting twice weekly. Automated reminders can track "
-                    "utility response dates, owner commitments, and option "
-                    "notices, but do not automate interpretations of "
-                    "capacity or legal rights. P10 should produce a "
-                    "versioned evidence pack containing the legal description, "
-                    "control instrument, rights exceptions, constraint map, "
-                    "zoning pathway, utility correspondence, study status, "
-                    "buyer infrastructure requirements, and financial "
-                    "assumptions. Redact personal contact details and "
-                    "share proprietary studies only with appropriate "
-                    "rights and recipient restrictions. Maintain a "
-                    "change log identifying what changed, its source, "
-                    "and which prior claims became stale. If a restudy "
-                    "or municipal action changes feasibility, withdraw "
-                    "the affected pricing sheet immediately and notify "
-                    "every developer who received it before negotiating further."
-                ),
-                (
-                    "P11 separates executable economics from attractive "
-                    "but unearned deal value. An option assignment "
-                    "earns operator revenue only under the applicable "
-                    "contract and accounting treatment; a per-MW "
-                    "milestone must identify the verified capacity "
-                    "basis, triggering event, payer, and payment "
-                    "date. Development carry remains outside realized "
-                    "revenue until the relevant entitlement and "
-                    "recognition conditions are satisfied. Do not "
-                    "count land purchase price, battery procurement, "
-                    "campus construction spending, customer electricity "
-                    "purchases, or underlying project value as "
-                    "origination revenue. Review principal-versus-agent "
-                    "presentation under ASC 606 if the operator "
-                    "collects money on another party's behalf; "
-                    "pass-through collections do not become operator "
-                    "revenue simply by crossing its bank account. "
-                    "For each proposed transaction, maintain separate "
-                    "columns for contract face amount, recognition "
-                    "status, cash received, third-party obligations, "
-                    "and remaining collection risk. Give buyers "
-                    "an itemized transfer schedule rather than "
-                    "a single opaque premium. Where future "
-                    "upgrade costs remain unresolved, use conditional "
-                    "pricing or buyer-funded study milestones "
-                    "instead of manufacturing certainty. The "
-                    "first thirty days should create defensible "
-                    "control and a collection pathway; the "
-                    "canonical two-to-six-month first-deal window "
-                    "makes a Day-30 cash receipt possible but unnecessary."
-                ),
-            ],
-            "table": {
-                "caption": "Days 15–21: Contingent Option Execution, Controlled Workload, and Buyer Transfer Readiness",
-                "headers": [
-                    "Execution day and mapped play",
-                    "Accountable pod member and concrete action",
-                    "Required deliverable and evidence trail",
-                    "Quantitative acceptance threshold or spending constraint",
-                ],
-                "rows": [
-                    [
-                        "Day 15 converts P09 diligence findings into owner terms",
-                        "Principal proposes contingent control while property-rights contractor checks transaction structure",
-                        "Term sheets identify duration, consideration, assignment, access, and termination mechanics",
-                        "Target twelve to twenty-four months without exceeding funded payment limits",
-                    ],
-                    [
-                        "Day 16 verifies P04 ownership before P09 execution",
-                        "Property-rights contractor checks signing authority and recorded rights affecting development",
-                        "Written exceptions list addresses easements, minerals, access, and legal description",
-                        "Resolve every exception that would defeat the proposed diligence access",
-                    ],
-                    [
-                        "Day 17 links P07 milestones to P09 option protections",
-                        "Electrical and property-rights contractors align study events with extension mechanics",
-                        "Draft clauses identify utility cooperation and capped event-based extension payments",
-                        "Reject automatic fee escalation beyond the approved aggregate option allowance",
-                    ],
-                    [
-                        "Day 18 executes the strongest P09 control opportunity",
-                        "Principal signs only after parcel-specific verification checks are complete",
-                        "Executed option and payment receipt enter the controlled evidence register",
-                        "Keep cumulative option consideration within the total $2,000 sprint allocation",
-                    ],
-                    [
-                        "Day 19 assembles P10 developer diligence materials",
-                        "GIS contractor and principal compile dated exhibits with explicit evidence labels",
-                        "Versioned pack distinguishes property rights, utility status, assumptions, and unresolved issues",
-                        "Every external capacity statement reproduces its utility conditions and source date",
-                    ],
-                    [
-                        "Day 20 advances P10 distribution and P11 commercial terms",
-                        "Principal shares authorized materials with selected developers and records substantive feedback",
-                        "Buyer response log captures fee structure, remaining diligence, and decision authority",
-                        "Target two documented buyer responses rather than counting email opens",
-                    ],
-                    [
-                        "Day 21 completes P09 control and P11 transfer mechanics",
-                        "Principal executes a second suitable option or records its specific blocker",
-                        "Transfer schedule separates assignment consideration, milestone payments, and contingent carry",
-                        "Limit active executed options to two until Day-30 evidence review",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the current evidence version",
-                    "action": "Export the parcel register and preserve the underlying utility, title, and zoning documents.",
-                    "detail": "Assign a version date and identify every capacity statement that depends on a pending study or contract.",
-                },
-                {
-                    "step": 2,
-                    "title": "Reconcile rights and cash before signing",
-                    "action": "Confirm grantor authority, assignability, termination notices, and total committed consideration.",
-                    "detail": "Include unpaid contractual commitments in the $7,500 sprint ceiling and preserve the $17,500 launch reserve.",
-                },
-                {
-                    "step": 3,
-                    "title": "Transfer evidence without overstating readiness",
-                    "action": "Send an authorized buyer pack separating storage import/export questions from campus load-service dependencies.",
-                    "detail": "Document recipients, sharing rights, utility conditions, upgrade exposure, and the exact milestones proposed for payment.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close the loop on each buyer objection",
-                    "action": "Assign one resolver, one cost ceiling, and one decision date to every material objection.",
-                    "detail": "Withdraw stale pricing immediately after adverse utility, title, or municipal evidence and preserve the correction record.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Days 22–30 and Beyond: Reconcile Cash, Then Apply Kill / Fix / Scale Thresholds",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The final nine days test whether the pod has "
-                    "created evidence that a developer will actually "
-                    "underwrite. Days 22–24 close buyer questions and "
-                    "repeat the upgrade-and-delay stress test wherever "
-                    "the utility evidence supports it. Days 25–27 "
-                    "reconcile consideration, contractor commitments, "
-                    "and termination dates, then obtain written "
-                    "developer feedback on next actions. Days "
-                    "28–30 produce a signed decision memo "
-                    "for each controlled parcel and the pod "
-                    "as a whole. Kill means stop new "
-                    "spending and exercise available termination "
-                    "rights when justified; it does not "
-                    "mean abandon contractual duties. Fix means "
-                    "one bounded remediation cycle with a "
-                    "named resolver, a deadline within fourteen "
-                    "days, and no more than $1,000 of "
-                    "previously uncommitted diligence spending. Scale "
-                    "at Day 30 means authorize another "
-                    "controlled diligence cycle, not hire a "
-                    "second employee or accumulate paid options. "
-                    "The evidence thresholds below are internal "
-                    "management rules, not universal conversion "
-                    "benchmarks. An unanswered utility inquiry "
-                    "can justify a bounded pause within "
-                    "the two-to-six-month sales cycle, but "
-                    "cannot justify a rising capacity valuation. "
-                    "A confirmed fatal flaw overrides every "
-                    "positive funnel count and every optimistic buyer conversation."
-                ),
-                (
-                    "Reconcile the annual scorecard before interpreting "
-                    "a promising pipeline. Conservative revenue is "
-                    "$110,000, with $77,000 total costs and "
-                    "$33,000 owner net profit at 30%. "
-                    "Base revenue is $505,000, with $292,900 "
-                    "costs and $212,100 profit at 42.0%. "
-                    "Scaled revenue is $900,000, with $414,000 "
-                    "costs and $486,000 profit at 54%. "
-                    "Conservative and Base use one FT "
-                    "plus three contractors; Scaled uses two "
-                    "FT plus four contractors, six people "
-                    "total. Illustrative revenue bridges are "
-                    "two $40,000 assignments plus $30,000 "
-                    "milestones for Conservative; five $75,000 "
-                    "assignments, $100,000 milestones, and $30,000 "
-                    "realized carry for Base; and eight "
-                    "$85,000 assignments, $160,000 milestones, "
-                    "and $60,000 realized carry for Scaled. "
-                    "These bridges reconcile the supplied totals "
-                    "without claiming those fee sizes are "
-                    "market quotations. Annual costs include "
-                    "failed options, specialist work, transaction "
-                    "expense, and other operating costs; "
-                    "the $1,800–$11,000 monthly operating "
-                    "range is not the entire annual "
-                    "cost base. Treat the sprint's possible "
-                    "$2,000 expired-option loss as part "
-                    "of those costs when incurred, not "
-                    "an extra deduction from the canonical "
-                    "profit. Maintain separate realized results "
-                    "and scenario forecasts so pipeline "
-                    "enthusiasm never changes recognized operator revenue."
-                ),
-                (
-                    "Apply the decision hierarchy consistently: a "
-                    "hard failure triggers Kill first; "
-                    "Scale requires every listed condition; "
-                    "all other viable cases enter Fix "
-                    "only if the remediation budget and "
-                    "deadline are credible. Day 60 requires "
-                    "documented utility study progress, two "
-                    "controlled viable sites, and a developer "
-                    "term sheet before expanding option "
-                    "exposure. Day 90 requires one "
-                    "executed developer agreement, a documented "
-                    "payment trigger, and study-supported "
-                    "parameters for any capacity-based "
-                    "pricing. Continuing utility delay can "
-                    "remain Fix when buyers support "
-                    "the revised timetable and fund "
-                    "the incremental work; otherwise "
-                    "freeze expansion. Preserve a cash "
-                    "floor equal to three months "
-                    "of committed operating expense "
-                    "plus unavoidable site obligations. "
-                    "At the illustrative $4,500 "
-                    "monthly operating level, that "
-                    "floor starts at $13,500 "
-                    "before site obligations. Without "
-                    "new receipts, another $4,500 "
-                    "month reduces the initial "
-                    "$17,500 reserve to $13,000, "
-                    "so the pod must cut "
-                    "commitments or secure funding "
-                    "before authorizing that month. "
-                    "Developer deposits count as "
-                    "available cash only to the "
-                    "extent contracts permit their "
-                    "use after associated obligations. "
-                    "Move toward the six-person "
-                    "Scaled configuration only when "
-                    "collected fees and contracted "
-                    "work support the added "
-                    "fixed cost without consuming this reserve."
-                ),
-            ],
-            "table": {
-                "caption": "Days 22–30 Execution and Day-30/60/90 Kill / Fix / Scale Decision Matrix",
-                "headers": [
-                    "Execution day or decision checkpoint",
-                    "Required action or Kill threshold",
-                    "Evidence deliverable or Fix threshold",
-                    "Acceptance requirement or Scale threshold",
-                ],
-                "rows": [
-                    [
-                        "Day 22 reopens P10 buyer diligence questions",
-                        "Principal requests ranked objections from each engaged developer decision-maker",
-                        "Objection log identifies technical, commercial, and property-rights blockers separately",
-                        "Every material objection receives an owner and dated next action",
-                    ],
-                    [
-                        "Day 23 updates P07 utility evidence",
-                        "Electrical contractor follows the designated channel without creating duplicate requests",
-                        "Updated register preserves response dates, study prerequisites, and conditional language",
-                        "Maintain zero unsupported claims of firm deliverable megawatts",
-                    ],
-                    [
-                        "Day 24 retests P11 downside transaction economics",
-                        "Principal reruns supported upgrade estimates and realistic energization-date sensitivities",
-                        "Buyer model shows twelve-month delay and fifty-percent upgrade-cost stress",
-                        "Increase consideration only when supported stressed residual covers the proposed fee",
-                    ],
-                    [
-                        "Day 25 audits P09 consideration and termination exposure",
-                        "Property-rights contractor verifies notices, payment obligations, and remaining option duration",
-                        "Calendar highlights every contractual action falling within the next sixty days",
-                        "Identify zero missed notices and no unbudgeted automatic extensions",
-                    ],
-                    [
-                        "Day 26 reconciles cash across all eleven plays",
-                        "Principal matches bank payments, unpaid commitments, and refundable deposits",
-                        "Cash report distinguishes the $7,500 sprint allocation from the remaining reserve",
-                        "Preserve at least $17,500 after full first-month committed deployment",
-                    ],
-                    [
-                        "Day 27 advances P10 feedback into P11 commitments",
-                        "Principal requests written commercial next steps from interested developer counterparties",
-                        "Response records identify decision authority, diligence conditions, and proposed payment events",
-                        "Count at least two substantive written responses toward Day-30 expansion readiness",
-                    ],
-                    [
-                        "Day 28 prepares parcel-level Kill or Fix recommendations",
-                        "Pod reviews utility, zoning, title, and infrastructure changes since initial screening",
-                        "Decision memo assigns one status and evidence-linked rationale to each option",
-                        "Any confirmed incurable fatal flaw stops additional parcel spending",
-                    ],
-                    [
-                        "Day 29 prices the next bounded work cycle",
-                        "Principal obtains fixed-scope remediation quotes and recalculates the cash floor",
-                        "Forward budget includes operating commitments and unavoidable site payments",
-                        "Approve no cycle that breaches three months of committed operating reserve",
-                    ],
-                    [
-                        "Day 30 signs the pod investment decision",
-                        "Principal applies the hierarchy and sends required contractual notices promptly",
-                        "Signed memo distinguishes site termination, bounded remediation, and evidence-led expansion",
-                        "Do not increase headcount merely because initial screening targets were achieved",
-                    ],
-                    [
-                        "Day 30 applies first-month Kill / Fix / Scale thresholds",
-                        "Kill expansion upon spend above $7,500, reserve below $17,500, or zero viable sites; terminate fatal-flaw sites",
-                        "Fix remaining viable gaps within fourteen days and $1,000; fund the cycle without breaching the forward cash floor",
-                        "Scale diligence only with two contingent options, two written buyer responses, one utility-authored scoping response, and a funded forward cash floor",
-                    ],
-                    [
-                        "Day 60 applies second-cycle Kill / Fix / Scale thresholds",
-                        "Kill new commitments when cash falls below three-month operating reserve plus unavoidable obligations, or every controlled site has a fatal flaw",
-                        "Fix missing study progress or buyer terms within fourteen days and $1,000; otherwise pause expansion without claiming service certainty",
-                        "Scale site exposure only with two viable options, one scoped study accepted into the utility process, one developer term sheet, and preserved cash floor",
-                    ],
-                    [
-                        "Day 90 applies monetization Kill / Fix / Scale thresholds",
-                        "Kill unfunded expansion after missed remediation deadlines, negative supported downside residual, or breach of the recalculated cash floor",
-                        "Fix collection timing or study delays only with written buyer support, funded incremental work, and a fourteen-day reassessment date",
-                        "Scale transaction throughput only with one executed developer agreement, explicit payment trigger, supported capacity pricing, positive stressed residual, and preserved cash floor",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Option the land cheaply, document the power precisely, and scale only the evidence your cash can carry.",
-    "diagram_id": "diag-08",
-    "action_checklist": [
-        "Open a $25,000 launch ledger with a $7,500 first-month deployment ceiling, a $2,000 maximum option-loss allocation, and a $17,500 remaining reserve.",
-        "Assign P01–P11 across one full-time principal and three scoped contractors, limiting the search to two jurisdictions inside one utility territory.",
-        "Screen forty parcels into twelve survivors, separating 5–25-acre standalone BESS sites from buyer-specific AI campus requirements.",
-        "Submit six authorized utility inquiries and preserve separate evidence fields for import, export, study status, upgrade exposure, and energization conditions.",
-        "Negotiate at most two contingent assignable options, verify the transaction's licensing structure, and calendar every payment and termination deadline.",
-        "Sign Day-30/60/90 decisions using the stated hierarchy, downside residual tests, buyer evidence, and a three-month committed-operating-cash floor.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "18 CFR § 35.28 — Non-discriminatory open access transmission tariff",
-            "url": "https://www.ecfr.gov/current/title-18/chapter-I/subchapter-C/part-35/section-35.28",
-            "relevance": (
-                "Provides the federal tariff framework relevant to covered transmission providers "
-                "and interconnection procedures. Determine jurisdiction and actual tariff applicability; "
-                "generation interconnection evidence does not establish campus load-service availability."
-            ),
-        },
-        {
-            "title": "33 U.S.C. § 1344 — Permits for dredged or fill material",
-            "url": "https://www.law.cornell.edu/uscode/text/33/1344",
-            "relevance": (
-                "Supports early evaluation of potential dredge-and-fill permitting exposure. "
-                "Wetland maps are screening evidence, while jurisdiction, proposed impacts, "
-                "and the applicable authorization pathway require project-specific assessment."
-            ),
-        },
-        {
-            "title": "Va. Code § 15.2-2280 — Zoning ordinances generally",
-            "url": "https://law.lis.virginia.gov/vacode/title15.2/chapter22/section15.2-2280/",
-            "relevance": (
-                "Establishes local zoning authority relevant to the illustrative Virginia search. "
-                "Obtain the current local ordinance, parcel district, use classification, "
-                "and restrictions before spending on site control."
-            ),
-        },
-        {
-            "title": "Va. Code § 54.1-2100 — Real estate broker and salesperson definitions",
-            "url": "https://law.lis.virginia.gov/vacode/title54.1/chapter21/section54.1-2100/",
-            "relevance": (
-                "Defines regulated real-estate activities relevant to compensated parcel sourcing "
-                "and transaction negotiation. Evaluate actual conduct rather than assuming "
-                "an assignment-fee label settles licensing treatment."
-            ),
-        },
-        {
-            "title": "Va. Code § 54.1-2103 — Exemptions from chapter",
-            "url": "https://law.lis.virginia.gov/vacode/title54.1/chapter21/section54.1-2103/",
-            "relevance": (
-                "Identifies specified exemptions that must be evaluated against the actual "
-                "ownership interest and transaction structure. Use licensed brokerage participation "
-                "where the proposed conduct requires it."
-            ),
-        },
-    ],
-}
+CHAPTER_12 = {'id': 'Q12',
+ 'chapter_id': 'Q12',
+ 'chapter_number': 12,
+ 'question_number': 12,
+ 'slug': 'q12-community-pushback-and-decentralized-alternatives',
+ 'question_prompt': 'Why are communities pushing back on AI data centers, and do smaller, decentralized or '
+                    'edge alternatives reduce the land and power burden?',
+ 'kicker': 'Q12 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Community Pushback and Decentralized Alternatives',
+ 'subtitle': "Water use, Indigenous land and 'data colonialism', utility land-taking for power lines, "
+             "Florida's Project Tango, secrecy and local resistance, county preparedness, and "
+             'decentralized, edge and tiny data centers as alternatives to hyperscale',
+ 'layout_template': 'action_worksheet_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Opposition to hyperscale AI campuses is now organized and winning votes. Polls show '
+                      '65% to 70% of residents against local sites. Palm Beach County killed Project '
+                      'Tango’s expansion 5-1, Tulsa and the Seminole Nation passed moratoria, and 40 of 41 '
+                      'Ohio county ballot initiatives ban sites above 25 MW. Organizers attack water use, '
+                      '97 dB noise, 16-degree heat islands, doubled power bills, construction jobs that '
+                      'shrink from 1,500 to three permanent roles, and land deals locked behind NDAs. The '
+                      'decentralized camp answers with smaller footprints: Span’s 16-GPU node at a claimed '
+                      '$3M per MW in six months, 20 MW sites paired with district heating to jump power '
+                      'queues, and 10 kW air-cooled racks that fit brownfield halls. Speakers split on '
+                      'whether closed-loop cooling exists at all, and on whether distributed loads '
+                      'strengthen or strain distribution grids.',
+ 'key_metrics': [{'label': 'Proposed hyperscale sites on native lands',
+                  'metric': 'Proposed hyperscale sites on native lands',
+                  'value': '103 to 160 proposed hyperscale data centers',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Crystal Two Bulls counts these sites using a crowdsourced map built from '
+                             'organizer networks; Tulsa passed a 9-month moratorium and the Seminole '
+                             'Nation passed one unanimously.',
+                  'source': 'Democracy Now! ([Ac0-fBK0LVQ @ 00:04:14])'},
+                 {'label': 'Distributed node build cost versus 100 MW campus',
+                  'metric': 'Distributed node build cost versus 100 MW campus',
+                  'value': '$3M/MW and 6 months vs. $15M/MW and 3-5 years',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Span’s Xfra 16-GPU home node, compared on cost per MW and build time against '
+                             'a 100 MW site.',
+                  'source': 'Latitude Media ([D7D1CPOoub4 @ 00:20:50])'},
+                 {'label': 'Local opposition and top grievances',
+                  'metric': 'Local opposition and top grievances',
+                  'value': '65% opposed; electricity 72%, water 64%, noise 41%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'A Quinnipiac poll cited on PBS NewsHour, alongside a separate finding that '
+                             'seven in 10 people oppose a local data center.',
+                  'source': 'PBS NewsHour ([fkB8mt1DEVw @ 00:04:45])'},
+                 {'label': 'Ohio county ballot initiatives banning large sites',
+                  'metric': 'Ohio county ballot initiatives banning large sites',
+                  'value': '40 of 41 ban data centers above 25 MW',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'County-level ballot measures reviewed during an election-season discussion '
+                             'of distributed data centers.',
+                  'source': 'Latitude Media ([D7D1CPOoub4 @ 00:50:40])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Wherever a hyperscale campus is proposed, opposition is now the default '
+                              'response, and the numbers match across countries. On PBS NewsHour, Brangham '
+                              'reported that seven in 10 people oppose a local data center. A Quinnipiac '
+                              'poll put opposition at 65%: 72% of respondents cited electricity, 64% '
+                              'water, and 41% noise [fkB8mt1DEVw @ 00:04:45]. CBC News found the same mood '
+                              'in Canada, where 68% of Canadians would oppose a large data center near '
+                              'their home. Olds, Alberta, a town of about 10,000, faces a proposed complex '
+                              '10 times the size of Canada’s largest, and residents say they were never '
+                              'consulted [Rj_icscgo_Q @ 00:03:14]. That sentiment is turning into votes. '
+                              'In western Palm Beach County, Project Tango is a 600 MW, five-building '
+                              'campus next to Florida’s largest power plant. Its zoning committee '
+                              'recommended denial, and the County Commission then rejected the 1.5M sq ft '
+                              'expansion 5-1. A national protest day of roughly 100 events, nine of them '
+                              'in Florida, was already planned [iYCYPKhdqcY @ 00:05:09]. On Latitude '
+                              'Media, the panel noted that 40 of 41 Ohio county ballot initiatives ban '
+                              'data centers above 25 MW [D7D1CPOoub4 @ 00:50:40]. Every operator in this '
+                              'chapter treats organized resistance as a standard site condition. The one '
+                              'factor that reliably changes the response is the size of the footprint, '
+                              'which runs through every section that follows.',
+                              'Speakers repeat the same specific grievances. Crystal Two Bulls of Honor '
+                              'the Earth and the No Data Center Coalition puts facility water use at '
+                              '300,000 to 2.7 million gallons per year, “even 5 million.” Two Bulls says '
+                              'corporate closed-loop and water-positive claims have been “dispelled,” and '
+                              'puts noise at about 97 dB, compared with roughly 140 dB for an LRAD: “So, '
+                              '97 to 140 is not a big jump” [Ac0-fBK0LVQ @ 00:08:43]. In a second cut of '
+                              'that testimony, Two Bulls adds heat islands of up to 16 degrees and Montana '
+                              'bills that have almost doubled. Two Bulls also describes how the jobs '
+                              'disappear: up to 1,500 construction jobs, mostly not local, over as long as '
+                              'two years, then as few as three full-time jobs, as in Rapid City, South '
+                              'Dakota [OeYd0jErrF4 @ 00:01:42]. Asianometry estimates that a 15 MW IT '
+                              'facility uses about 80 to 130 million gallons a year, “as much water as '
+                              'three hospitals, or two 18-hole golf courses” [tJYSzc7YkY0 @ 00:00:02]. '
+                              'Industrial hygienists Tammy Clark and Kristen Megan Kelly focus on noise '
+                              'measurement. Tonal and ELF noise has to be measured in dBC or dBZ, not dBA. '
+                              'Vendors quote “55 dB at the fence” against an 85 dBA occupational action '
+                              'level that assumes 8-hour exposure, yet these sites run 24/7 [S_6FoEr75bs @ '
+                              '00:11:30].',
+                              'Speakers also agree on how deals get made: quietly, through intermediaries, '
+                              'on land chosen because local rules are weak. Two Bulls says Microsoft, '
+                              'Google, Apple, Meta and Amazon approach tribes through subsidiaries and '
+                              'native-owned energy companies. The pitch opens with solar, NDAs get signed, '
+                              'and only then does the conversation shift to a data center. The result is '
+                              'tribal leadership that answers to corporations rather than to its own '
+                              'people [Ac0-fBK0LVQ @ 00:03:27]. Clark and Kelly describe the same approach '
+                              'on farmland: NDAs and leases pitched as “temporary” and “probably never '
+                              'going to happen,” sites picked for weak zoning, $10M offers to farmers, and '
+                              'one family that turned down $25M [S_6FoEr75bs @ 00:39:30]. On PBS NewsHour, '
+                              'Michael Webber links the secrecy to unincorporated areas where jurisdiction '
+                              'is unclear. Webber concedes that some of the stealth is about hiding from '
+                              'competitors, but says companies are “very late” to engage communities, '
+                              'repeating the mistake of the shale era [fkB8mt1DEVw @ 00:21:11]. The '
+                              'decentralized camp turns these complaints into a sales pitch. Mark '
+                              'Bjornsgaard says smaller sites surrounded by solar can run off-grid and put '
+                              'less stress on the grid, and Joshua Feinberg adds that they also draw less '
+                              'community pushback [W92xU-lo1Gc @ 00:01:55]. The pattern holds across '
+                              'sources: secrecy, scale and grid load drive the backlash.'],
+               'table': {'caption': 'Where practitioners agree on community pushback and footprint',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Opposition is the majority local position',
+                                   'Quinnipiac found 65% opposed, citing electricity 72%, water 64%, noise '
+                                   '41%',
+                                   'Assume organized local resistance exists before securing land or '
+                                   'announcing a site',
+                                   'PBS NewsHour ([fkB8mt1DEVw @ 00:04:45])'],
+                                  ['Elected bodies are voting hyperscale expansions down',
+                                   'Project Tango expansion denied 5-1 after zoning committee recommended '
+                                   'denial',
+                                   'A staff recommendation to deny signals likely defeat at the final '
+                                   'commission vote',
+                                   'WPLG Local 10 ([iYCYPKhdqcY @ 00:05:09])'],
+                                  ['Moratoria are spreading across tribal and municipal governments',
+                                   'Tulsa passed a 9-month moratorium and the Seminole Nation passed one '
+                                   'unanimously',
+                                   'Track tribal council and city agendas as closely as county zoning '
+                                   'dockets',
+                                   'Democracy Now! ([Ac0-fBK0LVQ @ 00:04:14])'],
+                                  ['Construction jobs do not turn into lasting local employment',
+                                   'Up to 1,500 mostly non-local construction jobs, then as few as 3 in '
+                                   'Rapid City',
+                                   'Opponents will check jobs pitches against the permanent headcount '
+                                   'after construction',
+                                   'Democracy Now! ([OeYd0jErrF4 @ 00:01:42])'],
+                                  ['Ratepayer bills are a leading grievance at hearings',
+                                   'Montana bills almost doubled and one person in a trailer got a $900 '
+                                   'bill',
+                                   'Expect residents to blame utility cost increases on large new loads',
+                                   'Democracy Now! ([Ac0-fBK0LVQ @ 00:11:38])'],
+                                  ['Land is acquired through NDAs and soft-pitched leases',
+                                   'Leases pitched as temporary and probably never going to happen, with '
+                                   '$10M farm offers',
+                                   'Once NDA terms surface, they become the opposition’s strongest '
+                                   'argument',
+                                   'Careers Over Beers Podcast ([S_6FoEr75bs @ 00:06:46])'],
+                                  ['Smaller decentralized sites draw less community fire',
+                                   'Smaller sites with surrounding solar can run off-grid, with less grid '
+                                   'stress and less pushback',
+                                   'Reducing site size is a way to lower political risk, not only a sizing '
+                                   'decision',
+                                   'DCSMI ([W92xU-lo1Gc @ 00:01:55])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The distributed model depends on a gap in cost and build time. On Latitude '
+                              'Media, Span’s Xfra is presented as a 16-GPU home node, claimed at $3M per '
+                              'MW and six months to build, compared with $15M per MW and three to five '
+                              'years for a 100 MW site [D7D1CPOoub4 @ 00:20:50]. In that discussion, '
+                              '“distributed” means tens of MW or less, mostly for inference. One working '
+                              'definition is distribution-connected sites of 25 MW or below: “So they’re '
+                              'not connected at transmission voltage. They’re being connected at on '
+                              'distribution” [D7D1CPOoub4 @ 00:27:04]. The unit economics come from the '
+                              'same panel. Offtakes of three to five years are easy at 5 MW and above. A '
+                              'residential install costs about $150K, and an estimated 10% of homeowners '
+                              'would buy in. Shah describes 5,000 data centers of 250 kW at Crown Castle '
+                              'towers selling merchant tokens, which is not a long-term fixed-price '
+                              'offtake. Span is also offering free power to new-construction cul-de-sacs '
+                              '[D7D1CPOoub4 @ 00:43:15]. Size labels are elastic. DCSMI’s Adam Gibson '
+                              'notes that edge means 5 to 10 MW to a hyperscaler but 10 racks in a '
+                              'regional location to others, and that a 50-rack site counts as very large '
+                              'edge in Alaska. Providers define edge to suit their own focus [tWgTVIzYje8 '
+                              '@ 00:00:15]. In practice, that elasticity gives a developer room to pitch '
+                              'the same capacity as a set of small, quiet distribution-level nodes.',
+                              'The second lever is power position. Mark Bjornsgaard calls it the race to '
+                              'the electron. In the UK and Europe, a 50 MW district-heating project gets '
+                              'ahead of a 100 MW data center in the power queue, so Bjornsgaard’s firm '
+                              'builds 20 MW data centers paired with district heating to move up in '
+                              'allocation [W92xU-lo1Gc @ 00:02:43]. Bjornsgaard also cites 6.5 TWh of '
+                              'curtailed UK wind, about 750 MW wasted, as the kind of stranded power that '
+                              'smaller sites with on-site generation and storage can absorb. Michael '
+                              'Webber says on-site, behind-the-meter generation solves speed-to-power when '
+                              'utilities quote four to five years for a grid connection, and that it can '
+                              'avoid August-afternoon peaks. Diesel generators, however, are outlawed in '
+                              'California [fkB8mt1DEVw @ 00:08:04]. SambaNova’s Rodrigo Liang tackles the '
+                              'problem at the rack. State-of-the-art racks draw 100 to 150 kW and are '
+                              'heading to 500 kW with liquid cooling, while SambaNova racks run at 10 kW, '
+                              'air-cooled, and fit into existing brownfield data centers [JvqqjgCu9mg @ '
+                              '00:02:22]. Liang claims 10x throughput on the workload that covers 80% of '
+                              'inference and payback in six months, compared with 18 to 24 months. Running '
+                              'prefill on Nvidia and decode on SambaNova, Liang says, yields 3 to 4x '
+                              'throughput for 10% more power [JvqqjgCu9mg @ 00:19:17]. Taken together, '
+                              'low-power racks and queue-friendly pairings let compute get built without '
+                              'the gigawatt footprint that triggers hearings.',
+                              'Opponents use their own repeatable methods, and site teams that ignore them '
+                              'lose. Two Bulls lists the field kit: town halls, tribal council meetings, '
+                              'door knocking, petitions, and coalitions with agriculture, ranchers and '
+                              'landowners. The results so far include Tulsa’s nine-month moratorium, a '
+                              'unanimous Seminole Nation moratorium, and a Muscogee resolution that was '
+                              'blocked [Ac0-fBK0LVQ @ 00:04:55]. Clark and Kelly go further. They advise '
+                              'withholding tax subsidies, noting that a Google representative testified '
+                              '“we’ll go somewhere else.” They also call for environmental impact studies, '
+                              'which they say stopped a Michigan battery plant, and for recalling '
+                              'officials who approve deals. They claim 50% of data center construction '
+                              'slated for 2026 has been stopped [S_6FoEr75bs @ 00:23:26]. Their monitoring '
+                              'routine is simple: check diesel-generator air-permit filings every month. '
+                              '“So keep once a month, go on there and look” [S_6FoEr75bs @ 01:16:47]. Jeff '
+                              'Pierson offers counties a way out of the binary trap of general zoning or a '
+                              'total ban: a six-factor County Siting Posture Metric. Scores from 0 to 44 '
+                              'point to a conditional use permit, 45 to 79 to overlay districts, and 80 to '
+                              '100 to a ban. Pierson stresses that documentation, not the score itself, is '
+                              'the legal shield [CmmE71lfGdw @ 00:05:01]. Developers who understand these '
+                              'tools can predict which posture a county will take before filing.'],
+               'table': {'caption': 'Street mechanics, tools and unit numbers for distributed and '
+                                    'contested sites',
+                         'headers': ['Mechanic',
+                                     'Exact Numbers Stated',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Distributed 16-GPU home node build',
+                                   'Span Xfra claimed at $3M/MW and 6 months versus $15M/MW and 3-5 years',
+                                   'Deploy inference capacity in months without a 100 MW campus fight',
+                                   'Latitude Media ([D7D1CPOoub4 @ 00:20:50])'],
+                                  ['District-heating pairing to jump the power queue',
+                                   '20 MW data centers paired with heating; a 50 MW heat project beats a '
+                                   '100 MW data center',
+                                   'Pair compute with a heat customer to move up in UK and European grid '
+                                   'allocation',
+                                   'DCSMI ([W92xU-lo1Gc @ 00:02:43])'],
+                                  ['Low-power racks that fit brownfield halls',
+                                   '10 kW air-cooled racks versus 100-150 kW liquid-cooled racks heading '
+                                   'to 500 kW',
+                                   'Retrofit existing data centers instead of building new hyperscale '
+                                   'shells',
+                                   'Founders Explain The World ([JvqqjgCu9mg @ 00:02:22])'],
+                                  ['Behind-the-meter power to beat interconnection waits',
+                                   'Utilities quote 4-5 years for a grid connection; on-site power avoids '
+                                   'August peaks',
+                                   'Use on-site generation for speed-to-power where diesel is not outlawed',
+                                   'PBS NewsHour ([fkB8mt1DEVw @ 00:08:04])'],
+                                  ['Unused industrial interconnection headroom',
+                                   'ProLogis customers run at 25% of their 5, 10 and 20 MW '
+                                   'interconnections',
+                                   'Look for stranded capacity already connected at existing industrial '
+                                   'sites',
+                                   'Latitude Media ([D7D1CPOoub4 @ 00:27:26])'],
+                                  ['EV charging sites as compute hosts',
+                                   'L3 chargers run at roughly 15-30% utilization; EV tariffs block added '
+                                   'load',
+                                   'Opt the site into a C&I tariff to add compute load at charger '
+                                   'locations',
+                                   'Latitude Media ([D7D1CPOoub4 @ 00:39:37])'],
+                                  ['County Siting Posture Metric scoring bands',
+                                   '0-44 conditional use permit, 45-79 overlay districts, 80-100 ban',
+                                   'Predict a county’s regulatory posture and document every factor scored',
+                                   'Jeff Pierson ([CmmE71lfGdw @ 00:05:01])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Field Tricks From the Distributed and Opposition Camps',
+                           'body': 'Specific moves the speakers teach for building small, defending a '
+                                   'site, or attacking one.',
+                           'items': ['Spiky inference loads create power-quality, voltage and harmonics '
+                                     'risk on distribution circuits, which the panel calls solvable, with '
+                                     'storage as the fix [Latitude Media — D7D1CPOoub4 @ 00:26:26]',
+                                     'Check diesel-generator air-permit filings every month to catch '
+                                     'backup generation before it shows up at a hearing: “So keep once a '
+                                     'month, go on there and look” [Careers Over Beers Podcast — '
+                                     'S_6FoEr75bs @ 01:16:47]',
+                                     'Ask whether a closed loop is filled once or uses water every day, '
+                                     'because that answer determines the real water draw [PBS NewsHour — '
+                                     'fkB8mt1DEVw @ 00:10:45]',
+                                     'Run prefill on Nvidia and decode on SambaNova for a claimed 3 to 4x '
+                                     'throughput at only 10% more power [Founders Explain The World — '
+                                     'JvqqjgCu9mg @ 00:24:25]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Size below the ballot line',
+                              'action': 'Design sites as distribution-connected nodes of 25 MW or less, '
+                                        'mostly for inference.',
+                              'detail': '40 of 41 Ohio county ballot initiatives ban data centers above 25 '
+                                        'MW, which makes the sub-25 MW distribution tier the footprint '
+                                        'least exposed to bans [Latitude Media — D7D1CPOoub4 @ 00:50:40]'},
+                             {'step': 2,
+                              'title': 'Score the county before filing',
+                              'action': 'Run the six CSPM factors: infrastructure, agriculture, regulatory '
+                                        'capacity, economics, community alignment and cumulative regional '
+                                        'pressure.',
+                              'detail': 'Pierson’s bands send 0-44 to a conditional use permit, 45-79 to '
+                                        'overlays and 80-100 to a ban, and documentation, not the score, '
+                                        'is the legal shield [Jeff Pierson — CmmE71lfGdw @ 00:06:08]'},
+                             {'step': 3,
+                              'title': 'Lock power ahead of the queue',
+                              'action': 'Pair the site with district heating, on-site solar and storage to '
+                                        'move up in power allocation and reduce grid stress.',
+                              'detail': 'Bjornsgaard says smaller sites with surrounding solar can run '
+                                        'off-grid, and his firm pairs 20 MW builds with district heating '
+                                        'to get ahead in allocation [DCSMI — W92xU-lo1Gc @ 00:01:37]'},
+                             {'step': 4,
+                              'title': 'Engage before the vote, not after',
+                              'action': 'Hold community engagement before the zoning committee hearing '
+                                        'instead of relying on NDAs and stealth.',
+                              'detail': 'Webber says companies are “very late” to engage communities, as '
+                                        'in the shale era, and Olds residents report there was no '
+                                        'consultation [PBS NewsHour — fkB8mt1DEVw @ 00:21:11]'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over footprint. Mark Bjornsgaard argues that a $1T '
+                              'ASI cluster would need 100 GW, about 20% of US electricity, and that the '
+                              'way out is decentralization: smaller sites wrapped in on-site solar and '
+                              "storage that can run off-grid and absorb waste power such as the UK's 6.5 "
+                              "TWh of curtailed wind [W92xU-lo1Gc @ 00:00:32]. Bjornsgaard's firm builds "
+                              '20 MW data centers paired with district heating because, in the UK and '
+                              'Europe, a 50 MW district-heating project gets ahead of a 100 MW data center '
+                              'in the power queue, and Joshua Feinberg adds that smaller sites draw less '
+                              'community pushback [W92xU-lo1Gc @ 00:02:43]. Adam Gibson plays the opposite '
+                              'hand: tier-1 greenfield is nearly impossible to get, so capital rotates '
+                              'into tier-2 and tier-3 markets that still allow 100 MW greenfield builds or '
+                              'easy brownfield retrofits, and with demand high and capacity scarce, Gibson '
+                              'would put a few billion straight into new facilities [tWgTVIzYje8 @ '
+                              "00:02:57]. The Latitude Media panel prices the gap: Span's 16-GPU Xfra node "
+                              'is pitched at $3M/MW and six months to build versus $15M/MW and three to '
+                              'five years for a 100 MW site, yet hyperscalers still prefer 50 MW behind '
+                              '1-2 GW plants because it means one contract and protects the brand '
+                              '[D7D1CPOoub4 @ 00:20:50].',
+                              'On the regulatory weapon, organizers and planners pull in different '
+                              'directions. Crystal Two Bulls counts moratoria as wins: Tulsa passed a '
+                              'nine-month moratorium, the Seminole Nation passed one unanimously, and the '
+                              'Muscogee blocked a resolution, all driven by town halls, tribal council '
+                              'meetings, door knocking, petitions, and coalitions with agriculture, '
+                              'ranchers and landowners [Ac0-fBK0LVQ @ 00:04:14]. Jeff Pierson calls the '
+                              'reflex a binary trap: counties pick between general zoning and a total ban, '
+                              'and the ban invites state preemption fights, takings claims and '
+                              'equal-protection challenges, while potentially outlawing a future project '
+                              "built by local farmers [CmmE71lfGdw @ 00:00:52]. Pierson's alternative is a "
+                              'six-factor County Siting Posture Metric scoring infrastructure capacity, '
+                              'agriculture, regulatory capacity, economic conditions, community alignment '
+                              'and cumulative regional pressure; a score of 0-44 routes to a conditional '
+                              'use permit, 45-79 to overlay districts, and only 80-100 to a ban, which '
+                              'Pierson insists must be a last resort and never the first reaction '
+                              '[CmmE71lfGdw @ 00:06:23]. Tammy Clark and Kristen Meghan run harder plays '
+                              'instead: withhold tax subsidies even when a Google representative testifies '
+                              "'we'll go somewhere else,' demand environmental impact studies, and recall "
+                              'the officials who approve the deals [S_6FoEr75bs @ 00:25:34].',
+                              "Cooling claims are the third fault line. Project Tango's developers "
+                              'answered water, heat and noise objections with closed-loop cooling and '
+                              'offsite water disposal, concrete buildings, a berm and trees, on a parcel '
+                              'bordering the Arden community, an elementary school and sensitive '
+                              'equestrian horses [iYCYPKhdqcY @ 00:02:48]. Kristen Meghan rejects the '
+                              "label outright: 'There is no such thing as a closed loop system when it "
+                              "comes to water use.' Glycol mixes are 50% water, the real alternatives, "
+                              'dielectric fluid or mineral oil, cost more, and air cooling fails once '
+                              'ambient air hits 100 degrees Fahrenheit [S_6FoEr75bs @ 00:43:31]. Michael '
+                              'Webber applies a narrower test: the question is whether a closed loop is '
+                              'filled once or draws water every day, and in Texas water is a more '
+                              "sensitive issue than electricity; Webber still holds up Meta's "
+                              "water-positive site near El Paso and Microsoft's air cooling near San "
+                              'Antonio as working models [fkB8mt1DEVw @ 00:10:45]. Rodrigo Liang sidesteps '
+                              'the argument in hardware: state-of-the-art racks draw 100-150 kW on the way '
+                              'to 500 kW and need liquid cooling, while SambaNova racks run at 10 kW, '
+                              'air-cooled, and drop into brownfield data centers that already exist '
+                              'instead of new campuses [JvqqjgCu9mg @ 00:02:22].'],
+               'table': {'caption': 'Competing playbooks on footprint, local control, cooling, ratepayers '
+                                    'and rack design',
+                         'headers': ['Fault Line', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Footprint strategy for winning scarce grid power',
+                                   'Build 20 MW sites paired with district heating to jump ahead in the '
+                                   'power queue',
+                                   'Chase tier-2 and tier-3 markets that still allow 100 MW greenfield '
+                                   'builds or brownfield retrofits',
+                                   'Data Center Sales & Marketing Institute (DCSMI) ([W92xU-lo1Gc @ '
+                                   '00:02:43]); Data Center Sales & Marketing Institute (DCSMI) '
+                                   '([tWgTVIzYje8 @ 00:02:57])'],
+                                  ['Distributed versus concentrated build cost and speed',
+                                   'Span Xfra 16-GPU home nodes pitched at $3M/MW and six months to build',
+                                   'Hyperscalers prefer 50 MW behind 1-2 GW plants for one contract and '
+                                   'brand protection',
+                                   'Latitude Media ([D7D1CPOoub4 @ 00:20:50]); Latitude Media '
+                                   '([D7D1CPOoub4 @ 00:35:16])'],
+                                  ['Local tool for stopping or shaping projects',
+                                   'Moratoria and bans: Tulsa nine months, Seminole Nation unanimous, '
+                                   'Muscogee resolution blocked',
+                                   'CSPM score routes 0-44 to conditional use permits, 45-79 to overlays, '
+                                   '80-100 to a ban',
+                                   'Democracy Now! ([Ac0-fBK0LVQ @ 00:04:14]); Jeff Pierson ([CmmE71lfGdw '
+                                   '@ 00:05:01])'],
+                                  ['Whether closed-loop cooling claims hold up',
+                                   'Project Tango pitches closed-loop cooling with offsite water disposal; '
+                                   "eStruxture's 90 MW Calgary site runs closed loop",
+                                   'Glycol is 50% water, so a closed loop for water use does not exist',
+                                   'WPLG Local 10 ([iYCYPKhdqcY @ 00:02:48]); CBC News: The National '
+                                   '([Rj_icscgo_Q @ 00:04:19]); Careers Over Beers Podcast ([S_6FoEr75bs @ '
+                                   '00:43:31])'],
+                                  ['How to test a water claim on site',
+                                   'Ask whether the loop is filled once or draws water every single day',
+                                   'Treat corporate closed-loop and water positivity claims as already '
+                                   'dispelled by organizers',
+                                   'PBS NewsHour ([fkB8mt1DEVw @ 00:10:45]); Democracy Now! ([Ac0-fBK0LVQ '
+                                   '@ 00:09:00])'],
+                                  ['Who pays for new generation and grid upgrades',
+                                   'FPL says data center companies fund 100% of new generation under '
+                                   'Senate Bill 484 protections',
+                                   'Commissions approve upfront costs paid by ratepayers; Montana bills '
+                                   'have almost doubled',
+                                   'WPLG Local 10 ([iYCYPKhdqcY @ 00:03:36]); Democracy Now! ([Ac0-fBK0LVQ '
+                                   '@ 00:11:07])'],
+                                  ['Rack density and the need for new campuses',
+                                   'State-of-the-art racks draw 100-150 kW heading toward 500 kW with '
+                                   'liquid cooling',
+                                   'SambaNova runs 10 kW air-cooled racks that fit existing brownfield '
+                                   'data centers',
+                                   'Founders Explain The World ([JvqqjgCu9mg @ 00:02:22])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first trap fires at the kitchen table. Crystal Two Bulls reports that '
+                              'Microsoft, Google, Apple, Meta and Amazon approach through subsidiaries and '
+                              'native-owned energy companies with NDAs in hand, open with a solar pitch, '
+                              'then pivot to a data center once the NDA is signed, leaving tribal '
+                              'leadership accountable to the corporations instead of their own people '
+                              '[Ac0-fBK0LVQ @ 00:03:27]. Tammy Clark and Kristen Meghan describe the same '
+                              "script on farmland: leases pitched as 'temporary' and 'probably never going "
+                              "to happen,' $10M offers to farmers, one family that refused $25M, and sites "
+                              'picked specifically for weak zoning [S_6FoEr75bs @ 00:39:30]. The '
+                              'transmission side is blunter. In Georgia, planned new lines jumped from 24 '
+                              'miles in 2019 to 1,065 miles, roughly 80% of the added 10 GW is for data '
+                              'centers, and Georgia Power offered Rachael Maszk $57,000 for half a '
+                              'backyard while representatives raised eminent domain mid-negotiation; the '
+                              "company's line is 'we use it less than 1 percent of the time' [e8QyJw6I-Bc "
+                              '@ 00:03:50]. Doug Fergus lost a quarter of a backyard and roughly 400 trees '
+                              'to a power line, held out for more than a year, then settled and paid down '
+                              'half the mortgage with the proceeds [e8QyJw6I-Bc @ 00:04:16].',
+                              'The second trap is believing the jobs-and-revenue story. Two Bulls puts '
+                              'numbers on it: up to 1,500 construction jobs, mostly not local, over a '
+                              'build phase of up to two years, then as few as three full-time jobs, as in '
+                              'Rapid City, South Dakota, while Montana bills almost doubled and one person '
+                              'living alone in a trailer received a $900 bill [Ac0-fBK0LVQ @ 00:11:53]. In '
+                              'Alberta, residents of Olds, a town of about 10,000 facing a proposed '
+                              "complex ten times Canada's largest, report no consultation at all, 68% of "
+                              'Canadians would oppose a large data center near home, and no published '
+                              'papers yet prove the economic benefits [Rj_icscgo_Q @ 00:03:14]. Michael '
+                              "Webber names the timing problem directly: 'we feel the impacts today, the "
+                              "benefits come later,' and companies are very late to engage communities, "
+                              'repeating the shale era [fkB8mt1DEVw @ 00:17:16]. Project Tango shows what '
+                              'that costs a developer: the zoning committee recommended denial, the '
+                              'light-industrial argument failed, and the Palm Beach County Commission '
+                              'killed the 1.5M sq ft expansion 5-1 even after FPL said data center '
+                              'companies fund 100% of new generation, with a national protest day of '
+                              'roughly 100 events already planned [iYCYPKhdqcY @ 00:05:09].',
+                              'The third trap is physical and hits operators as hard as neighbors. The '
+                              'Latitude Media panel warns that behind-the-meter builds can be invisible to '
+                              'utilities, much like cannabis grow houses; an overload trips the building '
+                              'rather than the feeder, and spiky inference loads create power-quality, '
+                              'voltage and harmonics risk that the panel calls solvable, with storage as '
+                              'the fix [D7D1CPOoub4 @ 00:24:22]. Utilization is the hidden economics '
+                              'check: ProLogis customers run at 25% of their 5, 10 or 20 MW '
+                              'interconnections, L3 chargers sit at roughly 15-30%, and EV tariffs block '
+                              'added load unless the site opts into a C&I tariff, while office retrofits '
+                              'stall on fire code, server weight, cooling and fiber [D7D1CPOoub4 @ '
+                              '00:39:37]. Noise is where vendor specs break. Kristen Meghan says tonal and '
+                              'low-frequency noise has to be measured in dBC or dBZ, not dBA; vendors '
+                              "quote '55 dB at the fence' against an 85 dBA action level built on "
+                              'eight-hour occupational exposure, while these sites run 24/7 [S_6FoEr75bs @ '
+                              '00:11:30]. Two Bulls cites roughly 97 dB at sites and compares it with an '
+                              "LRAD at about 140 dB: 'So, 97 to 140 is not a big jump' [Ac0-fBK0LVQ @ "
+                              '00:09:45].'],
+               'table': {'caption': 'Firsthand failure modes and the economics check practitioners '
+                                    'attached to each',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Saw',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['NDA-first approach through subsidiaries and partners',
+                                   'Solar pitch pivots to a hyperscale data center after the NDA is signed',
+                                   'Leadership becomes accountable to corporations rather than to its own '
+                                   'people',
+                                   'Democracy Now! ([Ac0-fBK0LVQ @ 00:03:27])'],
+                                  ['Eminent domain raised during easement negotiations',
+                                   'Georgia Power offered $57,000 for half of a residential backyard',
+                                   'Company says it uses eminent domain less than 1 percent of the time',
+                                   'The New York Times ([e8QyJw6I-Bc @ 00:03:37])'],
+                                  ['Jobs promise collapses after construction ends',
+                                   'Up to 1,500 mostly non-local construction jobs over roughly two years',
+                                   'As few as three permanent full-time jobs, as seen in Rapid City',
+                                   'Democracy Now! ([OeYd0jErrF4 @ 00:01:42])'],
+                                  ['Behind-the-meter load hidden from the local utility',
+                                   'Builds can be invisible to utilities, much like cannabis grow houses',
+                                   'Spiky inference loads risk voltage and harmonics problems; storage is '
+                                   'the fix',
+                                   'Latitude Media ([D7D1CPOoub4 @ 00:24:22])'],
+                                  ['Interconnections sized far above actual usage',
+                                   'ProLogis customers use about 25% of their 5, 10 or 20 MW '
+                                   'interconnections',
+                                   'L3 chargers sit at 15-30%; EV tariffs block load unless sites opt into '
+                                   'C&I',
+                                   'Latitude Media ([D7D1CPOoub4 @ 00:39:37])'],
+                                  ['Fence-line noise specs measured on the wrong scale',
+                                   'Vendors claim 55 dB at the fence using dBA weighting',
+                                   'Tonal noise needs dBC or dBZ measurement; sites run 24/7, not eight '
+                                   'hours',
+                                   'Careers Over Beers Podcast ([S_6FoEr75bs @ 00:11:30])'],
+                                  ['Layering AI onto legacy systems and stale data',
+                                   'Bolting AI onto old systems and old data fails in production',
+                                   'Make data and processes AI-ready first, then measure speed and cost '
+                                   'per outcome',
+                                   'Fierce Network TV ([ixyJ-cWKBEg @ 00:02:22])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Kill Switches Before Anyone Signs, Votes or Breaks Ground',
+                           'body': 'Each gate below comes from a trap practitioners hit firsthand on land '
+                                   'deals, noise specs, permits and county decisions.',
+                           'items': ["Treat any NDA or 'temporary' lease offer as the opening move of a "
+                                     'data-center deal, because organizers report solar pitches pivoting '
+                                     'to hyperscale after signature [Democracy Now! — Ac0-fBK0LVQ @ '
+                                     '00:03:27].',
+                                     'Reject fence-line noise numbers quoted only in dBA and demand dBC or '
+                                     'dBZ readings for continuous 24/7 operation [Careers Over Beers '
+                                     'Podcast — S_6FoEr75bs @ 00:11:30].',
+                                     'Pull diesel-generator air-permit filings once a month to catch '
+                                     'projects before they surface publicly [Careers Over Beers Podcast — '
+                                     'S_6FoEr75bs @ 01:16:47].',
+                                     'Document every factor behind a siting posture, because '
+                                     'documentation, not the score itself, is the legal shield [Jeff '
+                                     'Pierson — CmmE71lfGdw @ 00:06:08].']}}],
+ 'pull_quote': "'A total ban is a legally valid civic tool, but it should strictly be deployed as a last "
+               "resort when high standards fail, never as the first reaction.' Jeff Pierson (CmmE71lfGdw @ "
+               '00:06:23).',
+ 'diagram_id': 'diag-08',
+ 'action_checklist': ['Score the county on the six CSPM factors (infrastructure, agriculture, regulatory '
+                      'capacity, economics, community alignment, cumulative pressure) before choosing a '
+                      'conditional use permit, overlay district or ban [Jeff Pierson — CmmE71lfGdw @ '
+                      '00:01:39].',
+                      'Organize through town halls, tribal council meetings, door knocking and petitions, '
+                      'and build coalitions with agriculture, ranchers and landowners [Democracy Now! — '
+                      'Ac0-fBK0LVQ @ 00:04:55].',
+                      'Demand environmental impact studies and ask officials to send the documents '
+                      'directly, the tactic credited with stopping a Michigan battery plant [Careers Over '
+                      'Beers Podcast — S_6FoEr75bs @ 00:52:00].',
+                      'Interrogate every cooling claim by asking whether the closed loop is filled once or '
+                      'uses water daily [PBS NewsHour — fkB8mt1DEVw @ 00:10:45].',
+                      'Pair sub-hyperscale sites of around 20 MW with district heating to move ahead of '
+                      '100 MW data centers in the power queue [Data Center Sales & Marketing Institute '
+                      '(DCSMI) — W92xU-lo1Gc @ 00:02:43].',
+                      'Reduce exposure, choose regions deliberately, and keep data and applications '
+                      'portable to avoid lock-in [Fierce Network TV — ixyJ-cWKBEg @ 00:04:03].'],
+ 'statutory_citations': [{'title': 'Democracy Now! — “Data Colonialism”: Native Communities Fight AI Data '
+                                   'Centers on Indigenous Land [00:04:14]',
+                          'url': 'https://www.youtube.com/watch?v=Ac0-fBK0LVQ&t=254s',
+                          'relevance': 'Primary practitioner testimony on 103 to 160 proposed hyperscale '
+                                       'sites on native lands, NDA-first approaches, and moratorium wins.'},
+                         {'title': 'Jeff Pierson — Preparing your community for grid scale energy and '
+                                   'hyperscale data centers [00:06:23]',
+                          'url': 'https://www.youtube.com/watch?v=CmmE71lfGdw&t=383s',
+                          'relevance': 'Primary practitioner testimony on the binary zoning trap, the CSPM '
+                                       'score bands, and bans as a last resort.'},
+                         {'title': 'Careers Over Beers Podcast — The AI Data Center Land Grab: Money, '
+                                   'Secrecy, & Community Resistance | Kristen Meghan & Tammy Clark '
+                                   '[00:43:31]',
+                          'url': 'https://www.youtube.com/watch?v=S_6FoEr75bs&t=2611s',
+                          'relevance': 'Primary practitioner testimony on closed-loop water claims, tonal '
+                                       'noise measurement, and community counter-tactics.'},
+                         {'title': 'Latitude Media — How Tiny Data Centers Could Solve AI’s Power Crunch '
+                                   '[00:24:22]',
+                          'url': 'https://www.youtube.com/watch?v=D7D1CPOoub4&t=1462s',
+                          'relevance': 'Primary practitioner testimony on distributed data center '
+                                       'economics, behind-the-meter visibility, and grid utilization.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'Ac0-fBK0LVQ',
+                       'title': '“Data Colonialism”: Native Communities Fight AI Data Centers on '
+                                'Indigenous Land',
+                       'channel': 'Democracy Now!',
+                       'author': 'Democracy Now!',
+                       'text': "So, right now we're looking at about 103 to 160 proposed hyperscale data "
+                               'centers on native lands.',
+                       'tip': "So, right now we're looking at about 103 to 160 proposed hyperscale data "
+                              'centers on native lands.',
+                       'timestamp': 254,
+                       'timestamp_seconds': 254,
+                       'timestamp_label': '[00:04:14]',
+                       'url': 'https://www.youtube.com/watch?v=Ac0-fBK0LVQ&t=254s',
+                       'markdown': '[00:04:14](https://www.youtube.com/watch?v=Ac0-fBK0LVQ&t=254s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ac0-fBK0LVQ',
+                       'title': '“Data Colonialism”: Native Communities Fight AI Data Centers on '
+                                'Indigenous Land',
+                       'channel': 'Democracy Now!',
+                       'author': 'Democracy Now!',
+                       'text': 'So, 97 to 140 is not a big jump.',
+                       'tip': 'So, 97 to 140 is not a big jump.',
+                       'timestamp': 585,
+                       'timestamp_seconds': 585,
+                       'timestamp_label': '[00:09:45]',
+                       'url': 'https://www.youtube.com/watch?v=Ac0-fBK0LVQ&t=585s',
+                       'markdown': '[00:09:45](https://www.youtube.com/watch?v=Ac0-fBK0LVQ&t=585s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tWgTVIzYje8',
+                       'title': 'Decentralized Data Centers vs. Hyperscale vs. Edge',
+                       'channel': 'Data Center Sales & Marketing Institute (DCSMI)',
+                       'author': 'Data Center Sales & Marketing Institute (DCSMI)',
+                       'text': 'Tier-2 markets still allow 100 MW greenfield builds or easy brownfield '
+                               'retrofits that tier-1 markets cannot offer.',
+                       'tip': 'Tier-2 markets still allow 100 MW greenfield builds or easy brownfield '
+                              'retrofits that tier-1 markets cannot offer.',
+                       'timestamp': 177,
+                       'timestamp_seconds': 177,
+                       'timestamp_label': '[00:02:57]',
+                       'url': 'https://www.youtube.com/watch?v=tWgTVIzYje8&t=177s',
+                       'markdown': '[00:02:57](https://www.youtube.com/watch?v=tWgTVIzYje8&t=177s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'W92xU-lo1Gc',
+                       'title': 'Hyperscale vs. Decentralized Data Centers, Global Energy Capacity, and '
+                                '$1T ASI Cluster',
+                       'channel': 'Data Center Sales & Marketing Institute (DCSMI)',
+                       'author': 'Data Center Sales & Marketing Institute (DCSMI)',
+                       'text': 'We build 20 MW data centers paired with district heating so we get ahead '
+                               'in power allocation.',
+                       'tip': 'We build 20 MW data centers paired with district heating so we get ahead in '
+                              'power allocation.',
+                       'timestamp': 163,
+                       'timestamp_seconds': 163,
+                       'timestamp_label': '[00:02:43]',
+                       'url': 'https://www.youtube.com/watch?v=W92xU-lo1Gc&t=163s',
+                       'markdown': '[00:02:43](https://www.youtube.com/watch?v=W92xU-lo1Gc&t=163s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iYCYPKhdqcY',
+                       'title': 'Project Tango fuels debate over Florida’s first hyperscale AI data center',
+                       'channel': 'WPLG Local 10',
+                       'author': 'WPLG Local 10',
+                       'text': "Project Tango's expansion master plan went before the Palm Beach County "
+                               'Commission where it was just denied in a 5-1 vote.',
+                       'tip': "Project Tango's expansion master plan went before the Palm Beach County "
+                              'Commission where it was just denied in a 5-1 vote.',
+                       'timestamp': 309,
+                       'timestamp_seconds': 309,
+                       'timestamp_label': '[00:05:09]',
+                       'url': 'https://www.youtube.com/watch?v=iYCYPKhdqcY&t=309s',
+                       'markdown': '[00:05:09](https://www.youtube.com/watch?v=iYCYPKhdqcY&t=309s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tJYSzc7YkY0',
+                       'title': 'The Big Data Center Water Problem',
+                       'channel': 'Asianometry',
+                       'author': 'Asianometry',
+                       'text': 'Berkeley Lab estimates indirect water use from power generation at two to '
+                               "three times a data center's direct water use.",
+                       'tip': 'Berkeley Lab estimates indirect water use from power generation at two to '
+                              "three times a data center's direct water use.",
+                       'timestamp': 333,
+                       'timestamp_seconds': 333,
+                       'timestamp_label': '[00:05:33]',
+                       'url': 'https://www.youtube.com/watch?v=tJYSzc7YkY0&t=333s',
+                       'markdown': '[00:05:33](https://www.youtube.com/watch?v=tJYSzc7YkY0&t=333s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OeYd0jErrF4',
+                       'title': 'How huge AI data centers can harm local communities',
+                       'channel': 'Democracy Now!',
+                       'author': 'Democracy Now!',
+                       'text': "In Montana, people's electricity bills have almost doubled.",
+                       'tip': "In Montana, people's electricity bills have almost doubled.",
+                       'timestamp': 88,
+                       'timestamp_seconds': 88,
+                       'timestamp_label': '[00:01:28]',
+                       'url': 'https://www.youtube.com/watch?v=OeYd0jErrF4&t=88s',
+                       'markdown': '[00:01:28](https://www.youtube.com/watch?v=OeYd0jErrF4&t=88s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fkB8mt1DEVw',
+                       'title': 'Why communities are revolting against data centers',
+                       'channel': 'PBS NewsHour',
+                       'author': 'PBS NewsHour',
+                       'text': 'So we feel the impacts today, the benefits come later.',
+                       'tip': 'So we feel the impacts today, the benefits come later.',
+                       'timestamp': 1036,
+                       'timestamp_seconds': 1036,
+                       'timestamp_label': '[00:17:16]',
+                       'url': 'https://www.youtube.com/watch?v=fkB8mt1DEVw&t=1036s',
+                       'markdown': '[00:17:16](https://www.youtube.com/watch?v=fkB8mt1DEVw&t=1036s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'e8QyJw6I-Bc',
+                       'title': 'When the Power Company Takes Your Land for a Data Center',
+                       'channel': 'The New York Times',
+                       'author': 'The New York Times',
+                       'text': 'In fact, we use it less than 1 percent of the time.',
+                       'tip': 'In fact, we use it less than 1 percent of the time.',
+                       'timestamp': 230,
+                       'timestamp_seconds': 230,
+                       'timestamp_label': '[00:03:50]',
+                       'url': 'https://www.youtube.com/watch?v=e8QyJw6I-Bc&t=230s',
+                       'markdown': '[00:03:50](https://www.youtube.com/watch?v=e8QyJw6I-Bc&t=230s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'e8QyJw6I-Bc',
+                       'title': 'When the Power Company Takes Your Land for a Data Center',
+                       'channel': 'The New York Times',
+                       'author': 'The New York Times',
+                       'text': 'After more than a year, Doug Fergus settled and used the money to pay down '
+                               'half the mortgage.',
+                       'tip': 'After more than a year, Doug Fergus settled and used the money to pay down '
+                              'half the mortgage.',
+                       'timestamp': 256,
+                       'timestamp_seconds': 256,
+                       'timestamp_label': '[00:04:16]',
+                       'url': 'https://www.youtube.com/watch?v=e8QyJw6I-Bc&t=256s',
+                       'markdown': '[00:04:16](https://www.youtube.com/watch?v=e8QyJw6I-Bc&t=256s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CmmE71lfGdw',
+                       'title': 'Preparing your community for grid scale energy and hyperscale data '
+                                'centers',
+                       'channel': 'Jeff Pierson',
+                       'author': 'Jeff Pierson',
+                       'text': 'A total ban is a legally valid civic tool, but it should strictly be '
+                               'deployed as a last resort when high standards fail, never as the first '
+                               'reaction.',
+                       'tip': 'A total ban is a legally valid civic tool, but it should strictly be '
+                              'deployed as a last resort when high standards fail, never as the first '
+                              'reaction.',
+                       'timestamp': 383,
+                       'timestamp_seconds': 383,
+                       'timestamp_label': '[00:06:23]',
+                       'url': 'https://www.youtube.com/watch?v=CmmE71lfGdw&t=383s',
+                       'markdown': '[00:06:23](https://www.youtube.com/watch?v=CmmE71lfGdw&t=383s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JvqqjgCu9mg',
+                       'title': 'AI Without New Data Centers?',
+                       'channel': 'Founders Explain The World',
+                       'author': 'Founders Explain The World',
+                       'text': 'SambaNova racks run at 10 kW, air-cooled, so they fit into existing '
+                               'brownfield data centers.',
+                       'tip': 'SambaNova racks run at 10 kW, air-cooled, so they fit into existing '
+                              'brownfield data centers.',
+                       'timestamp': 142,
+                       'timestamp_seconds': 142,
+                       'timestamp_label': '[00:02:22]',
+                       'url': 'https://www.youtube.com/watch?v=JvqqjgCu9mg&t=142s',
+                       'markdown': '[00:02:22](https://www.youtube.com/watch?v=JvqqjgCu9mg&t=142s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Rj_icscgo_Q',
+                       'title': 'A hyperscale AI data centre boom is coming',
+                       'channel': 'CBC News: The National',
+                       'author': 'CBC News: The National',
+                       'text': 'Residents of Olds say there was no consultation, and 68 percent of '
+                               'Canadians would oppose a large data centre near their home.',
+                       'tip': 'Residents of Olds say there was no consultation, and 68 percent of '
+                              'Canadians would oppose a large data centre near their home.',
+                       'timestamp': 194,
+                       'timestamp_seconds': 194,
+                       'timestamp_label': '[00:03:14]',
+                       'url': 'https://www.youtube.com/watch?v=Rj_icscgo_Q&t=194s',
+                       'markdown': '[00:03:14](https://www.youtube.com/watch?v=Rj_icscgo_Q&t=194s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'D7D1CPOoub4',
+                       'title': 'How Tiny Data Centers Could Solve AI’s Power Crunch',
+                       'channel': 'Latitude Media',
+                       'author': 'Latitude Media',
+                       'text': "So they're not connected at transmission voltage. They're being connected "
+                               'on distribution.',
+                       'tip': "So they're not connected at transmission voltage. They're being connected "
+                              'on distribution.',
+                       'timestamp': 1624,
+                       'timestamp_seconds': 1624,
+                       'timestamp_label': '[00:27:04]',
+                       'url': 'https://www.youtube.com/watch?v=D7D1CPOoub4&t=1624s',
+                       'markdown': '[00:27:04](https://www.youtube.com/watch?v=D7D1CPOoub4&t=1624s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'D7D1CPOoub4',
+                       'title': 'How Tiny Data Centers Could Solve AI’s Power Crunch',
+                       'channel': 'Latitude Media',
+                       'author': 'Latitude Media',
+                       'text': 'Behind-the-meter builds can be invisible to the utility, the same way '
+                               'cannabis grow houses were.',
+                       'tip': 'Behind-the-meter builds can be invisible to the utility, the same way '
+                              'cannabis grow houses were.',
+                       'timestamp': 1462,
+                       'timestamp_seconds': 1462,
+                       'timestamp_label': '[00:24:22]',
+                       'url': 'https://www.youtube.com/watch?v=D7D1CPOoub4&t=1462s',
+                       'markdown': '[00:24:22](https://www.youtube.com/watch?v=D7D1CPOoub4&t=1462s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ixyJ-cWKBEg',
+                       'title': 'Akamai on Why AI Needs More Than Hyperscale Data Centers',
+                       'channel': 'Fierce Network TV',
+                       'author': 'Fierce Network TV',
+                       'text': 'They need to make sure that their data is portable and that their '
+                               "application's portable so they're not locked in and their data is freely "
+                               'movable.',
+                       'tip': 'They need to make sure that their data is portable and that their '
+                              "application's portable so they're not locked in and their data is freely "
+                              'movable.',
+                       'timestamp': 258,
+                       'timestamp_seconds': 258,
+                       'timestamp_label': '[00:04:18]',
+                       'url': 'https://www.youtube.com/watch?v=ixyJ-cWKBEg&t=258s',
+                       'markdown': '[00:04:18](https://www.youtube.com/watch?v=ixyJ-cWKBEg&t=258s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'S_6FoEr75bs',
+                       'title': 'The AI Data Center Land Grab: Money, Secrecy, & Community Resistance | '
+                                'Kristen Meghan & Tammy Clark',
+                       'channel': 'Careers Over Beers Podcast',
+                       'author': 'Careers Over Beers Podcast',
+                       'text': 'There is no such thing as a closed loop system when it comes to water use.',
+                       'tip': 'There is no such thing as a closed loop system when it comes to water use.',
+                       'timestamp': 2611,
+                       'timestamp_seconds': 2611,
+                       'timestamp_label': '[00:43:31]',
+                       'url': 'https://www.youtube.com/watch?v=S_6FoEr75bs&t=2611s',
+                       'markdown': '[00:43:31](https://www.youtube.com/watch?v=S_6FoEr75bs&t=2611s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'S_6FoEr75bs',
+                       'title': 'The AI Data Center Land Grab: Money, Secrecy, & Community Resistance | '
+                                'Kristen Meghan & Tammy Clark',
+                       'channel': 'Careers Over Beers Podcast',
+                       'author': 'Careers Over Beers Podcast',
+                       'text': 'So keep once a month, go on there and look.',
+                       'tip': 'So keep once a month, go on there and look.',
+                       'timestamp': 4607,
+                       'timestamp_seconds': 4607,
+                       'timestamp_label': '[01:16:47]',
+                       'url': 'https://www.youtube.com/watch?v=S_6FoEr75bs&t=4607s',
+                       'markdown': '[01:16:47](https://www.youtube.com/watch?v=S_6FoEr75bs&t=4607s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'}]}

@@ -1,637 +1,826 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($8,000–$45,000 USD) and configure a lean, low-opex ($1,500–$10,000 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Reserve-First Funding, Non-Custodial Kalshi and ForecastEx Analytics, State Affiliate Permissions, and a Twelve-Layer Production Stack",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #49, ranked #18 of 49 with a 91/100 Money-to-Manpower Score, "
-        "rewards disciplined permissions and cash collection rather than expensive infrastructure. "
-        "Across its 12 mapped plays, fund the narrowest permitted analytics product first, "
-        "separate sportsbook commissions from subscription receipts, and retain at least half "
-        "of startup capital as unrestricted working capital. This chapter allocates $8,000–$45,000, "
-        "specifies twelve infrastructure layers, and turns public_record_api_intelligence into "
-        "a bounded business-development experiment. Formula v2.0 annual owner profit remains "
-        "$19,500 Conservative, $137,750 Base, and $325,000 Scaled. Those outcomes require "
-        "separate accounting for acquisition costs, affiliate deductions, seasonal demand, "
-        "and contractor capacity. Launch only after data rights, registration boundaries, "
-        "attribution, restore procedures, and payout reconciliation are evidenced."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$75,000",
-            "context": "Annual operator revenue; excludes customer trading volume and deposits",
-            "note": "26% net margin; $19,500 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$362,500",
-            "context": "Annual operator revenue; subscriptions plus permitted rebates and net commissions",
-            "note": "38.0% net margin; $137,750 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$650,000",
-            "context": "Annual operator revenue; excludes sportsbook handle and event-contract principal",
-            "note": "50% net margin; $325,000 annual owner net profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Reserve Half the Capital Before Buying Capacity",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Start with a bank balance, not a software shopping list. At the $8,000 "
-                    "entry point, ring-fence $4,000 as unrestricted working capital and release "
-                    "only $4,000 for formation, scoped professional work, data access, production "
-                    "setup, initial content, and insurance. At $45,000, preserve $22,500 and "
-                    "allocate the remaining $22,500 through the same categories. This reserve "
-                    "belongs to the operator; it is never customer trading collateral, betting "
-                    "deposits, pooled investment capital, or money held for another person. "
-                    "Keep it in a separate business savings account with a weekly cash forecast. "
-                    "The low-end reserve buys only 2.67 months at $1,500 monthly burn, while "
-                    "the high-end reserve buys 2.25 months at $10,000. Neither automatically "
-                    "covers the stated two-to-six-month path to a first deal. Six months "
-                    "requires $9,000 or $60,000 respectively before collection delays. Resolve "
-                    "that mismatch by delaying optional commitments, collecting earned SaaS "
-                    "receipts, or securing additional owner capital before increasing burn. "
-                    "Do not treat a signed affiliate agreement as cash. Operators can defer "
-                    "payment until a depositor qualifies, a fraud review clears, and an "
-                    "invoice reaches its contractual settlement date. Forecast those dates "
-                    "individually rather than smoothing them into monthly averages."
-                ),
-                (
-                    "Use three release conditions for setup spending: a written scope, an "
-                    "identified deliverable, and a reversible alternative. The $1,600 entry "
-                    "allocation for specialist review buys a tightly bounded assessment of "
-                    "a publisher-only analytics launch, not a multistate registration program. "
-                    "If that assessment identifies filings or permissions exceeding the "
-                    "allocation, defer the affected affiliate surface and retain the reserve. "
-                    "The $9,000 expanded allocation can fund broader contract and registration "
-                    "work, but actual state fees and professional quotations determine its "
-                    "reach. Formation money covers an entity, registered-agent service where "
-                    "needed, bookkeeping setup, and banking documentation; an IRS EIN itself "
-                    "does not require a government application fee. Insurance allocations "
-                    "are planning envelopes pending underwriting, not promised premiums. "
-                    "Request technology errors-and-omissions and cyber coverage with explicit "
-                    "discussion of event-contract analytics and gambling-affiliate exclusions. "
-                    "Read defense-cost treatment, deductibles, retroactive dates, and whether "
-                    "content claims fall outside coverage. Avoid annual prepayments merely "
-                    "to improve a headline monthly price. A twelve-month contract with weak "
-                    "termination rights converts uncertain demand into a fixed liability. "
-                    "Use month-to-month tools until retention and receivable collection "
-                    "justify longer commitments, and record cancellation deadlines in the "
-                    "same calendar used for license renewals."
-                ),
-                (
-                    "Define monthly operating envelopes separately from the canonical annual "
-                    "profit model. A $1,500 launch envelope can allocate $150 to infrastructure, "
-                    "$250 to licensed data, $250 to bookkeeping and professional accruals, "
-                    "$550 to contractor support, $150 to content distribution, and $150 to "
-                    "insurance accruals and contingency. These are spending limits, not claims "
-                    "that every data vendor will sell redistribution rights at that price. "
-                    "A $10,000 mature envelope can allocate $1,000, $2,000, $1,000, $3,500, "
-                    "$2,000, and $500 to those categories respectively. Use a contracted "
-                    "data quotation to replace the allowance before making customer promises. "
-                    "The envelope measures recurring operating commitments; acquisition "
-                    "campaigns, performance compensation, payment fees, and incremental "
-                    "delivery labor still belong in the full income statement. Consequently, "
-                    "the Base case can carry $224,750 of annual expenses without claiming "
-                    "that its entire cost structure fits a $10,000 monthly ceiling. Keep "
-                    "fixed commitments low and release variable spending only against "
-                    "measured cohort contribution. When sportsbook CPA budgets contract "
-                    "after the NFL season, suspend marginal paid traffic before touching "
-                    "the reserve. Subscription renewals can diversify receipts, but model "
-                    "their churn independently rather than assuming that one revenue rail "
-                    "will rescue another during a weak quarter."
-                ),
-            ],
-            "table": {
-                "caption": "Two Startup Budgets That Preserve Exactly Fifty Percent in Working Capital",
-                "headers": [
-                    "Allocation and operational purpose",
-                    "Entry capitalization of eight thousand dollars",
-                    "Expanded capitalization of forty-five thousand dollars",
-                    "Release condition and inexpensive fallback",
-                ],
-                "rows": [
-                    [
-                        "Working capital retained outside all customer transaction flows",
-                        "$4,000 remains unrestricted for timing gaps and operating continuity",
-                        "$22,500 remains unrestricted for receivables delays and seasonal contraction",
-                        "Release against weekly cash forecasts, never projected betting deposits",
-                    ],
-                    [
-                        "Entity formation, banking records, and initial bookkeeping configuration",
-                        "$600 funds a narrow domestic entity and accounting setup",
-                        "$1,500 funds broader documentation and professional bookkeeping configuration",
-                        "Obtain actual jurisdictional fees before purchasing bundled formation services",
-                    ],
-                    [
-                        "Scoped regulatory analysis, contracts, and applicable registration preparation",
-                        "$1,600 funds publisher-boundary analysis before adding affiliate activity",
-                        "$9,000 funds expanded contract work and selected jurisdictional permissions",
-                        "Defer unsupported jurisdictions when actual quotations exceed available allocation",
-                    ],
-                    [
-                        "Market data permissions and initial historical sample acquisition",
-                        "$600 funds a bounded commercial dataset or permitted sample",
-                        "$4,000 funds negotiated feed access and redistribution rights work",
-                        "Use authorized delayed observations when live commercial rights cost more",
-                    ],
-                    [
-                        "Production configuration, access controls, and restoration rehearsal",
-                        "$300 funds minimal hosting setup and first deployment expenses",
-                        "$1,500 funds hardened deployment and independent restoration testing",
-                        "Use one region and managed services before adding redundancy",
-                    ],
-                    [
-                        "Original comparison content and measured business-development experiments",
-                        "$600 funds narrow editorial production and initial attribution tests",
-                        "$3,500 funds deeper explainers and controlled acquisition experiments",
-                        "Publish fewer verified pages instead of purchasing bulk articles",
-                    ],
-                    [
-                        "Initial insurance cash requirement subject to actual underwriting",
-                        "$300 is reserved toward binding a suitable quoted policy",
-                        "$3,000 is reserved toward broader quoted coverage and deductibles",
-                        "Rebudget before binding if relevant exclusions undermine intended protection",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Spend Against Evidence, Not a Vendor Presentation",
-                "body": "The strongest cash controls connect each commitment to a measurable operating constraint.",
-                "items": [
-                    "Negotiate data rights separately for internal calculations, customer display, derived alerts, and historical storage; a working API key proves none of those permissions.",
-                    "Ask affiliate managers for qualification windows, invoice cutoffs, and historical payment timing before forecasting the first CPA receipt.",
-                    "Maintain a publisher-only launch branch so delayed affiliate registrations do not strand the analytics product or consume the entire reserve.",
-                    "Set a recurring cancellation review fourteen days before renewals, especially for annual odds feeds, content platforms, and attribution contracts.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Build Twelve Small Layers Instead of One Expensive Platform",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Separate the ingestion worker, normalized quote store, customer interface, "
-                    "billing ledger, and affiliate callback endpoint even when they share one "
-                    "small deployment. Kalshi connectivity can use its documented interfaces "
-                    "under the applicable access agreement; ForecastEx connectivity must follow "
-                    "the actual venue or authorized intermediary's available interface. Do "
-                    "not promise a native WebSocket endpoint where the contracted feed does "
-                    "not provide one. For licensed sportsbook observations, use an authorized "
-                    "odds supplier rather than scraping protected applications. Attach venue, "
-                    "market identifier, contract wording, settlement source, observation time, "
-                    "and receipt time to every quote. A sub-second processing objective "
-                    "measures receipt-to-publication latency, not guaranteed exchange-to-user "
-                    "freshness. Disclose stale observations and stop positive-EV alerts when "
-                    "either leg exceeds its freshness threshold. Apparent cross-venue spreads "
-                    "can reflect different resolution rules, commissions, limits, or void "
-                    "conditions rather than executable value. Store those differences beside "
-                    "the comparison instead of hiding them in a tooltip. Keep customer order "
-                    "entry and funds movement outside the initial product. A read-only design "
-                    "reduces operational complexity, but it does not independently settle "
-                    "registration questions about solicitation, individualized recommendations, "
-                    "or transaction-linked compensation. Resolve those questions before "
-                    "enabling a new commercial feature."
-                ),
-                (
-                    "The twelve-layer matrix specifies exact reference tiers for a purchasing "
-                    "worksheet, not independently verified current quotations. Confirm prices, "
-                    "regional availability, taxes, quotas, and commercial terms at checkout; "
-                    "the lowest-cost tier is acceptable only when its limits fit measured "
-                    "load. With one DigitalOcean instance, Supabase Pro, two GitHub Team "
-                    "seats, two Bitwarden Teams seats, and 100 billable gigabyte-months of "
-                    "Cloudflare R2 Standard storage, the listed fixed reference subtotal is "
-                    "$59.50 per month. Bitwarden's $8 monthly equivalent requires $96 annual "
-                    "cash payment for two seats at the stated rate. Free allowances are "
-                    "excluded from that subtotal's storage calculation, making the example "
-                    "deliberately simple. Add payment processing, domain registration, data "
-                    "licenses, backups, and usage overages separately. A 10,000-message-per-"
-                    "second feed can exhaust a cheap architecture through database writes "
-                    "alone; persist market changes and bounded snapshots rather than every "
-                    "heartbeat. Instrument queue depth, reconnect frequency, and ingestion "
-                    "lag before buying larger machines. Upgrade the bottleneck that metrics "
-                    "identify, not every layer simultaneously. A free tier that interrupts "
-                    "critical ingestion should be replaced before a dashboard theme receives "
-                    "another dollar. Keep one owner accountable for the complete operating "
-                    "bill rather than distributing subscriptions across personal cards."
-                ),
-                (
-                    "Treat attribution as a small accounting integration rather than a "
-                    "surveillance project. Generate a random click identifier, record the "
-                    "permitted jurisdiction and campaign, and pass only contractually "
-                    "required fields to the licensed operator. An S2S callback must carry "
-                    "an authenticated event, stable transaction identifier, event type, "
-                    "amount where appropriate, and a correction mechanism. Enforce signature "
-                    "verification, replay protection, and idempotency before crediting an "
-                    "FTD. Maintain separate states for reported, qualified, payable, paid, "
-                    "and reversed conversions. Stripe receipts belong to the SaaS ledger; "
-                    "operator commissions belong to the affiliate receivables ledger. "
-                    "Never send payment credentials or full wagering histories to product "
-                    "analytics. Use role-based access, hardware-backed multifactor authentication "
-                    "for administrators, encrypted secrets, and documented retention periods. "
-                    "A geolocation decision must combine the permitted commercial territory "
-                    "with the operator's eligibility requirements; an IP-country lookup alone "
-                    "does not establish state eligibility or age. Apply the chapter's 21+ "
-                    "policy to the U.S. affiliate surface while recording jurisdiction-specific "
-                    "rules separately, including Ontario's distinct framework. Block promotion "
-                    "when location or permission cannot be established. Test backups by "
-                    "restoring them into an isolated environment and reconcile a sample "
-                    "invoice from raw events before accepting production traffic."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Layer Stack With Exact Reference Tiers and Lean Substitutes",
-                "headers": [
-                    "Layer and named vendor",
-                    "Reference tier and explicit pricing basis",
-                    "Production role and purchase condition",
-                    "Cheaper alternative or disciplined usage fallback",
-                ],
-                "rows": [
-                    [
-                        "Layer one: Cloudflare edge delivery and domain protection",
-                        "Free plan costs $0 monthly before separately purchased services",
-                        "Serve cached assets and apply available baseline traffic controls",
-                        "Use included controls before purchasing advanced edge security subscriptions",
-                    ],
-                    [
-                        "Layer two: DigitalOcean ingestion worker and application runtime",
-                        "Basic Droplet reference tier costs $12 monthly for 2 GiB",
-                        "Run bounded workers with measured memory and queue utilization",
-                        "Use a $6 monthly 1 GiB tier only after profiling",
-                    ],
-                    [
-                        "Layer three: Supabase managed relational database and authentication",
-                        "Pro plan starts at $25 monthly before usage charges",
-                        "Store customer entitlements and normalized events with tested backups",
-                        "Free plan costs $0 but requires checking operational restrictions",
-                    ],
-                    [
-                        "Layer four: Upstash Redis buffering and short-lived deduplication",
-                        "Free tier costs $0 monthly within its published allowances",
-                        "Cache quotes and deduplicate callbacks without storing sensitive credentials",
-                        "Use bounded in-process queues when durable buffering is unnecessary",
-                    ],
-                    [
-                        "Layer five: Cloudflare R2 Standard archival object storage",
-                        "Standard storage reference price is $0.015 per billable GB-month",
-                        "Archive licensed snapshots with operations charges budgeted separately",
-                        "Retain fewer snapshots under a documented data retention schedule",
-                    ],
-                    [
-                        "Layer six: GitHub repository collaboration and deployment configuration",
-                        "Team reference price is $4 per user per month",
-                        "Protect production branches and require reviewed deployment changes",
-                        "Free tier costs $0 when its repository controls suffice",
-                    ],
-                    [
-                        "Layer seven: Sentry exception capture and deployment diagnostics",
-                        "Developer tier costs $0 monthly within the published allowance",
-                        "Identify callback failures without including customer secrets in traces",
-                        "Use structured application logs when free event limits approach",
-                    ],
-                    [
-                        "Layer eight: Grafana Cloud latency and capacity measurement",
-                        "Free tier costs $0 monthly within the published allowance",
-                        "Measure feed freshness, queue depth, and notification delivery latency",
-                        "Aggregate metrics locally and reduce high-cardinality label combinations",
-                    ],
-                    [
-                        "Layer nine: Resend transactional customer email delivery service",
-                        "Free tier costs $0 monthly within published sending limits",
-                        "Send account notices and opted-in alerts with delivery monitoring",
-                        "Batch routine notices instead of upgrading for unnecessary messages",
-                    ],
-                    [
-                        "Layer ten: PostHog limited product behavior measurement service",
-                        "Free usage allowance starts at $0 before metered overages",
-                        "Measure activation and retention with minimized event properties",
-                        "Disable recording and use aggregate database counts when sufficient",
-                    ],
-                    [
-                        "Layer eleven: Bitwarden Teams shared operational credential management",
-                        "Teams reference price is $4 per user monthly billed annually",
-                        "Separate shared credentials from personal accounts and record access",
-                        "Use Free individual access until shared credentials become necessary",
-                    ],
-                    [
-                        "Layer twelve: Stripe standard domestic online card payment processing",
-                        "U.S. standard reference rate is 2.9% plus $0.30 per transaction",
-                        "Collect SaaS payments subject to underwriting and additional product fees",
-                        "Use approved bank invoicing for suitable business subscription customers",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Reconcile Both Revenue Rails Before Funding Acquisition",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build three product accounts: analytics subscriptions, expressly permitted "
-                    "builder or referral compensation, and licensed affiliate commissions. "
-                    "The illustrative Base bridge is 250 average paying subscribers at $60 "
-                    "monthly, producing $180,000 annually; $12,500 of authorized builder "
-                    "compensation; and $170,000 of affiliate revenue. The affiliate component "
-                    "comprises 1,200 qualified FTDs at $100 CPA, or $120,000, plus $50,000 "
-                    "of recognized NGR commission. These components sum exactly to $362,500. "
-                    "Builder compensation remains zero until a real agreement permits the "
-                    "specific activity and its registration implications are resolved. For "
-                    "the NGR example, start with the operator's $240,000 contractual gaming "
-                    "revenue basis, subtract $60,000 of eligible bonus and administrative "
-                    "deductions, apply a 30% affiliate share to $180,000, and subtract $4,000 "
-                    "of carried commission deficit. The resulting affiliate receivable is "
-                    "$50,000. This ordering is illustrative; contracts can apply carryover "
-                    "at different stages. Store the actual formula per partner. The operator's "
-                    "gaming revenue basis, customer deposits, handle, and event-contract "
-                    "principal never become this business's sales. Assess principal-versus-"
-                    "agent presentation under ASC 606 and recognize only the earned fee "
-                    "or retained contribution where the business acts as agent, avoiding "
-                    "a second deduction of amounts already netted."
-                ),
-                (
-                    "Reconcile the other scorecard cases just as explicitly. Conservative "
-                    "subscriptions are 60 average customers at $50 monthly, producing "
-                    "$36,000; permitted builder revenue contributes $3,000; affiliate "
-                    "commissions contribute $36,000, illustrated by 300 qualified FTDs at "
-                    "$100 plus $6,000 net NGR commission. Revenue is $75,000 and costs "
-                    "are $55,500, leaving $19,500 at 26%. Scaled subscriptions are 500 "
-                    "average customers at $65 monthly, producing $390,000; builder revenue "
-                    "is $20,000; affiliate revenue is $240,000, illustrated by 1,800 "
-                    "qualified FTDs at $100 plus $60,000 net NGR commission. Revenue is "
-                    "$650,000 and costs are $325,000, leaving $325,000 at 50%. Base costs "
-                    "of $224,750 leave $137,750 at 38.0%. The matrix supplies complete "
-                    "expense bridges; these allocations illustrate the canonical totals "
-                    "rather than replace them. Owner profit is the residual before personal "
-                    "income taxes and distributions, with no additional owner salary charged "
-                    "against the same residual. Conservative and Base staffing remains one "
-                    "full-time owner plus two contractors. Scaled staffing includes the owner, "
-                    "one additional full-time worker, and three contractors. If compensation "
-                    "quotes exceed the labor envelope, revise feasibility rather than quietly "
-                    "treating five people as unpaid capacity."
-                ),
-                (
-                    "Measure acquisition after qualification, not after a registration event. "
-                    "If the Base affiliate cohort costs $48,000 to acquire and produces "
-                    "1,200 qualified FTDs, qualified CAC is $40 and CPA contribution before "
-                    "shared costs is $60 per FTD. Allocate the remaining $24,000 of Base "
-                    "CAC to SaaS acquisition. Suppose off-season qualification falls by 25% "
-                    "while affiliate spend remains $48,000: 900 FTDs produce $90,000 CPA, "
-                    "qualified CAC rises to $53.33, and CPA contribution falls from $72,000 "
-                    "to $42,000. That $30,000 deterioration is a stress case, not a rewrite "
-                    "of the canonical Base outcome. The mapped play public_record_api_intelligence "
-                    "offers a smaller experiment: spend $200 processing 1,000 permitted public "
-                    "records, identify 40 organizational triggers, qualify ten businesses, "
-                    "and convert two $60 monthly subscribers. Acquisition cost is $100 per "
-                    "customer; at an illustrative 80% contribution margin, payback is 2.08 "
-                    "months before churn and shared costs. Favor official license notices, "
-                    "corporate dockets, and procurement APIs. County probate and unclaimed-"
-                    "property records require separate purpose and access analysis; do not "
-                    "repurpose vulnerable individuals' records into gambling prospect lists. "
-                    "If live access becomes restricted, switch to scheduled bulk FOIA or "
-                    "state public-record exports, official feeds, and low-frequency cached queues."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 Revenue and Expense Bridges With Explicit Stress Treatment",
-                "headers": [
-                    "Scenario and recognized revenue composition",
-                    "Complete annual operating expense allocation",
-                    "Reconciled profit and staffing interpretation",
-                    "Cash protection and operating response",
-                ],
-                "rows": [
-                    [
-                        "Conservative: $36,000 subscriptions plus $3,000 builder compensation plus $36,000 commissions",
-                        "$12,000 CAC + $18,000 infrastructure/data + $18,000 labor + $5,000 professional + $2,500 other",
-                        "$75,000 less $55,500 yields $19,500; 26%; one FT plus two contractors",
-                        "Keep publisher scope narrow and avoid unsupported multistate affiliate commitments",
-                    ],
-                    [
-                        "Base: $180,000 subscriptions plus $12,500 builder compensation plus $170,000 commissions",
-                        "$72,000 CAC + $24,000 infrastructure/data + $96,000 labor + $18,000 professional + $14,750 other",
-                        "$362,500 less $224,750 yields $137,750; 38.0%; one FT plus two contractors",
-                        "Track affiliate receivables separately from prepaid subscription service obligations",
-                    ],
-                    [
-                        "Scaled: $390,000 subscriptions plus $20,000 builder compensation plus $240,000 commissions",
-                        "$120,000 CAC + $36,000 infrastructure/data + $132,000 labor + $24,000 professional + $13,000 other",
-                        "$650,000 less $325,000 yields $325,000; 50%; two FT plus three contractors",
-                        "Hire against retained contribution and collections rather than sportsbook handle",
-                    ],
-                    [
-                        "Seasonal sensitivity: nine hundred qualified FTDs generate $90,000 CPA revenue",
-                        "$48,000 unchanged affiliate CAC leaves $42,000 before shared operating expenses",
-                        "$30,000 less CPA contribution than Base; canonical scorecard remains unchanged",
-                        "Pause weak campaigns and rebuild forecasts using partner budget confirmations",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Prove Permissions, Attribution, and Recovery Before Launch",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Create a permissions register that distinguishes market-data rights, "
-                    "federal derivatives activity, state affiliate activity, and contractual "
-                    "marketing restrictions. Under 7 U.S.C. § 1a, the introducing-broker "
-                    "definition can reach solicitation or acceptance of orders without "
-                    "accepting customer money; non-custodial architecture therefore does not "
-                    "alone resolve IB status. FCM boundaries involve additional conduct, "
-                    "including accepting money or property to margin or secure transactions. "
-                    "Evaluate 7 U.S.C. § 6d and, where analysis or recommendations could "
-                    "implicate commodity trading adviser status, the applicable facts under "
-                    "17 CFR § 4.14. Do not assume that calling software a publisher creates "
-                    "an exemption. Document the actual screens, compensation, communications, "
-                    "and prohibited actions reviewed by qualified counsel. For affiliate "
-                    "operations, confirm the specific registration or licensing category "
-                    "required by NJ DGE, PA PGCB, MI MGCB, or the relevant authority before "
-                    "activating that territory. West Virginia and Ontario require separate "
-                    "entries rather than inherited permissions from another jurisdiction. "
-                    "Promote only authorized counterparties and products. Block unlicensed "
-                    "offshore or crypto venues and unlawful sweepstakes destinations. Keep "
-                    "approval evidence attached to the precise legal entity, domain, "
-                    "commercial agreement, and effective period it covers."
-                ),
-                (
-                    "Finish entity and banking hygiene before sending invoices. Match the "
-                    "contracting name, tax documentation, processor account, website ownership, "
-                    "and bank beneficiary; investigate any partner request to pay an unrelated "
-                    "entity. Ask the bank and payment processor to assess the actual analytics "
-                    "and affiliate activities rather than describing the business as generic "
-                    "software. Stripe's published card price does not establish eligibility "
-                    "for every proposed activity. Keep customer subscription charges separate "
-                    "from operator-paid affiliate settlement, and never process wagering "
-                    "deposits through the SaaS merchant account. Use monthly accrual accounting "
-                    "with separate deferred subscription revenue, qualified commissions "
-                    "receivable, disputes, and partner-specific carryover balances. Maintain "
-                    "tax reserves separately from the startup working-capital minimum once "
-                    "profits accrue. Review insurance against the final feature set, including "
-                    "affiliate advertising and market-data redistribution, and retain written "
-                    "underwriting responses. Require contractors to use company-controlled "
-                    "repositories, sign appropriate intellectual-property assignments, and "
-                    "receive only necessary access. Revoke access on departure and rotate "
-                    "shared secrets. Affiliate comparison pages need clear material-connection "
-                    "disclosures under 16 CFR § 255.5, accurate offer terms, and visible "
-                    "responsible-gaming resources appropriate to the destination. Preserve "
-                    "dated page versions so disputed claims can be reconstructed from evidence "
-                    "rather than memory."
-                ),
-                (
-                    "Run a synthetic launch rehearsal without placing bets or creating "
-                    "fabricated payable conversions. Use partner sandboxes or explicitly "
-                    "authorized test events to exercise permitted and blocked locations, "
-                    "the 21+ affiliate entry policy, expired offers, duplicate callbacks, "
-                    "negative adjustments, and partner outages. Confirm that stale market "
-                    "observations suppress actionable alerts while the interface explains "
-                    "the interruption. Restore the database, regenerate one subscription "
-                    "invoice, and reproduce one affiliate statement from the underlying "
-                    "event trail. The owner signs a checklist containing evidence links, "
-                    "observed results, and unresolved defects; screenshots alone cannot "
-                    "prove payment reconciliation or restoration. Start with a small "
-                    "customer cohort and a capped acquisition budget, then inspect actual "
-                    "support minutes, refund requests, callback discrepancies, and collection "
-                    "days weekly. Expand only when the measured work fits the stated team "
-                    "and cash runway. Freeze a partner immediately when its permission "
-                    "expires, its offer becomes inaccurate, or its reporting stops matching "
-                    "qualified events. Preserve the neutral analytics product where lawful "
-                    "and contractually permitted instead of redirecting traffic to a "
-                    "questionable substitute. This operating discipline makes the reserve "
-                    "useful: it buys time to repair a legitimate revenue rail without "
-                    "forcing a rushed contract, an unsupported jurisdiction, or a misleading "
-                    "promotion."
-                ),
-            ],
-            "table": {
-                "caption": "Four Pre-Flight Evidence Packages Required Before Public Acquisition",
-                "headers": [
-                    "Verification package and accountable operator",
-                    "Evidence retained before enabling the feature",
-                    "Concrete test and acceptance requirement",
-                    "Failure response that preserves customer trust",
-                ],
-                "rows": [
-                    [
-                        "Owner maintains federal activity and data-rights evidence package",
-                        "Written feature analysis and contracts covering display and derived outputs",
-                        "Trace each enabled feature to a documented permitted activity",
-                        "Disable affected functionality while retaining authorized neutral analytics access",
-                    ],
-                    [
-                        "Affiliate lead maintains jurisdiction and counterparty permission package",
-                        "Current entity permissions, authorized domains, offer terms, and territory matrix",
-                        "Blocked locations cannot access promotional links for ineligible offers",
-                        "Remove affected offers and stop acquisition for the unsupported territory",
-                    ],
-                    [
-                        "Bookkeeper maintains commission and subscription reconciliation evidence package",
-                        "Signed callback samples, qualification rules, invoices, and carryover calculations",
-                        "Duplicate events create no extra receivable or customer charge",
-                        "Quarantine disputed events and invoice only supported earned amounts",
-                    ],
-                    [
-                        "Technical owner maintains restoration and incident-response evidence package",
-                        "Restored backup results, secret inventory, alert thresholds, and response contacts",
-                        "Recover customer entitlements and suppress alerts from stale feeds",
-                        "Pause actionable notifications and publish a clear service status",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Conditions Before Spending on Public Acquisition",
-                "body": "Every condition requires retained evidence and an accountable owner, not an unchecked assumption.",
-                "items": [
-                    "Verify publisher, IB, FCM, and possible adviser boundaries against the deployed feature set and compensation agreements before enabling transaction-linked revenue.",
-                    "Verify applicable affiliate permissions, 21+ U.S. entry controls, territory restrictions, offer accuracy, material-connection disclosures, and responsible-gaming resources.",
-                    "Verify one complete subscription reconciliation and one authorized affiliate test sequence, including duplicate delivery, reversal, and negative carryover handling.",
-                    "Verify an isolated restore, administrator access controls, stale-feed suppression, and a cash forecast preserving at least half of startup capital at initial allocation.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the funded launch scope",
-                    "action": "Choose the permitted product, initial territories, and maximum monthly commitments.",
-                    "detail": "Record startup allocations, preserve the fifty-percent reserve, and identify features deferred because permission or cash is insufficient.",
-                },
-                {
-                    "step": 2,
-                    "title": "Provision the minimum production stack",
-                    "action": "Confirm reference prices and configure only the twelve layers actually needed.",
-                    "detail": "Purchase commercial data rights separately, apply spending alerts, secure administrator access, and document the owner of each subscription.",
-                },
-                {
-                    "step": 3,
-                    "title": "Rehearse accounting and technical failure",
-                    "action": "Run authorized test events, simulate stale feeds, and restore an isolated backup.",
-                    "detail": "Prove idempotent attribution, partner-specific deductions, subscription entitlements, and repeatable invoice reconciliation before enabling paid acquisition.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release a measured customer cohort",
-                    "action": "Launch with capped acquisition spend and review collected contribution weekly.",
-                    "detail": "Increase capacity only when retention, qualified CAC, support load, permission status, and cash collection support the next commitment.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "Buy permission and proof first, rent capacity second, and leave enough cash to survive the interval between earning a commission and collecting it.",
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Allocate the selected $8,000–$45,000 capitalization and retain at least fifty percent as unrestricted operator working capital.",
-        "Obtain scoped quotations for regulatory analysis, relevant registrations, data redistribution rights, and insurance before committing setup funds.",
-        "Confirm all twelve reference tiers at purchase and configure usage alerts before connecting licensed production feeds.",
-        "Create separate subscription, permitted builder-compensation, and affiliate ledgers with partner-specific deductions and carryover formulas.",
-        "Reconcile the three canonical revenue, expense, margin, profit, and staffing cases without including customer deposits or trading volume.",
-        "Complete permission, attribution, restoration, and cash-runway evidence packages before releasing a capped acquisition campaign.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "7 U.S.C. § 1a — Commodity Exchange Act definitions",
-            "url": "https://www.law.cornell.edu/uscode/text/7/1a",
-            "relevance": "Defines introducing broker, futures commission merchant, and commodity trading adviser; supports feature-specific analysis rather than assuming non-custody resolves registration.",
-        },
-        {
-            "title": "7 U.S.C. § 6d — Futures commission merchants and introducing brokers",
-            "url": "https://www.law.cornell.edu/uscode/text/7/6d",
-            "relevance": "Establishes registration-related requirements relevant when activity moves beyond a properly scoped analytics or publishing business.",
-        },
-        {
-            "title": "17 CFR § 4.14 — Exemption from registration as a commodity trading adviser",
-            "url": "https://www.ecfr.gov/current/title-17/chapter-I/part-4/section-4.14",
-            "relevance": "Provides conditional adviser-registration exemptions whose applicability depends on actual business conduct and communications.",
-        },
-        {
-            "title": "16 CFR § 255.5 — Disclosure of material connections",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
-            "relevance": "Addresses material relationships between endorsers and sellers, including compensation relationships relevant to affiliate comparison content.",
-        },
-        {
-            "title": "5 U.S.C. § 552 — Freedom of Information Act",
-            "url": "https://www.law.cornell.edu/uscode/text/5/552",
-            "relevance": "Governs federal agency records access; state and county records require their respective access laws, and disclosure does not itself establish unrestricted reuse rights.",
-        },
-        {
-            "title": "N.J. Admin. Code § 13:69J-1.2 — Casino service industry enterprise license requirements",
-            "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-13-69J-1-2",
-            "relevance": "Supports examination of New Jersey vendor licensing categories; the specific affiliate arrangement must be classified with the Division of Gaming Enforcement.",
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'venue-map-kalshi-forecastex-brokered-event-contracts',
+ 'question_prompt': 'Which regulated prediction-market venues exist, how do they differ from sportsbooks, '
+                    'and how do brokers like Interactive Brokers deliver event contracts?',
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'The Venue Map: Kalshi, ForecastEx & Brokered Event Contracts',
+ 'subtitle': 'Prediction markets vs sportsbooks, top 10 venues, Kalshi founders and COO on the business, '
+             'Kalshi Pro, ForecastEx buy-only design and hedging economic and climate risk, trading '
+             'Kalshi/CME/ForecastEx inside IBKR, geopolitics contracts, and the critique of prediction '
+             'markets as gambling',
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Across Kalshi, ForecastEx and the IBKR brokered terminal, practitioners agree the '
+                      'product is a binary contract priced between roughly 1 and 99 cents that reads '
+                      'directly as probability and settles at $1 or $0, with prices set peer-to-peer '
+                      'rather than by a house. The street mechanics are tight: ForecastEx pairs Yes and No '
+                      'at $1.01 for a half-penny-per-side fee, Kalshi routed through IBKR costs $0.02 per '
+                      'contract, early exits double the fee load, and ForecastEx pays a variable coupon '
+                      'quoted at 3.14, 3.38, 4.3 and 4.33 percent. Venue routing splits macro (CPI, Fed) '
+                      'toward ForecastEx or CME and sports, elections and culture toward Kalshi. '
+                      "Disagreements are sharp: Kalshi's COO says there is no house, while The Young Turks "
+                      "cite 79-84% losing accounts and Peterffy calls ForecastEx's US clearinghouse "
+                      'probably safer.',
+ 'key_metrics': [{'label': 'ForecastEx Yes + No Pair Price',
+                  'metric': 'ForecastEx Yes + No Pair Price',
+                  'value': '$1.01 per pair (half a penny per side)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The extra penny is the only charge; no other exchange, clearing, data or '
+                             'brokerage fees are added on ForecastEx.',
+                  'source': 'Interactive Brokers ([ceR-weGZSXc @ 00:01:53])'},
+                 {'label': 'Kalshi Fee Routed Through IBKR',
+                  'metric': 'Kalshi Fee Routed Through IBKR',
+                  'value': '$0.02 per contract ($0.01 IBKR + $0.01 exchange)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Fee comparison inside the unified IBKR prediction-markets terminal; exiting '
+                             'early doubles the fees paid.',
+                  'source': 'TC Trading ([MREcV1sLqwc @ 00:11:23])'},
+                 {'label': 'ForecastEx Incentive Coupon',
+                  'metric': 'ForecastEx Incentive Coupon',
+                  'value': '4.33% annualized',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Same rate IBKR pays on idle cash; accrues on the contract mark and adjusts '
+                             'as the price moves.',
+                  'source': 'Interactive Brokers ([rMm-V95moXc @ 00:03:15])'},
+                 {'label': 'Kalshi Weekly Volume',
+                  'metric': 'Kalshi Weekly Volume',
+                  'value': 'Over $25B per week',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Reported by Kalshi's co-founder and COO alongside a $40B valuation, with "
+                             'institutions only just onboarding.',
+                  'source': 'Schwab Network ([ZW18j-a-TuY @ 00:06:38])'}],
+ 'sections': [{'heading': '1. The Practitioner Consensus',
+               'paragraphs': ['The baseline every venue operator agrees on is simple: a prediction-market '
+                              'contract is a Yes/No claim priced between roughly 1 and 99 cents that '
+                              'settles at $1 if right and $0 if wrong, and that price reads directly as '
+                              'probability. Trade Handle frames it with Yes at 60 cents and No near 40 '
+                              'cents, settling at $1 or $0, with traders rather than an operator setting '
+                              'the number peer-to-peer [LHwUBaFR_no @ 00:00:57]. Simple Betting Guides '
+                              'makes the same point from the bettor side: sportsbook odds need converting '
+                              'into implied probability, while a 0-to-$1 price already is one [zfqcFKWL2gA '
+                              '@ 00:01:43]. closeuptrading drills it into position math: 10 contracts at '
+                              '30 cents cost $3, a correct call pays $10 for a $7 gain, and the maximum '
+                              "loss is exactly what was paid [4_swDdRFYJc @ 00:00:16]. Kalshi's CEO "
+                              'describes the engine as working exactly like the NASDAQ, where a 60-cent '
+                              'buyer collects $1 for a 40-cent profit and the counterparty posts that 40 '
+                              'cents [rDeB10i9gCE @ 00:01:16]. The operator takeaway is that the contract '
+                              'price, not odds, is the key number, and max risk on an unlevered position '
+                              'is the premium paid, whether the ticket routes to Kalshi, ForecastEx or '
+                              'CME.',
+                              "The second point of agreement is structural: there is no house. Kalshi's "
+                              'CEO argues a sportsbook sets the price, bans and limits winners, and '
+                              'targets losers, while an open marketplace wants winners because winners are '
+                              'the smart people; the test is the structure, not the topic, and the legal '
+                              'base is the Commodity Exchange Act of 1974, where federal uniformity means '
+                              "deeper liquidity and better prices [rDeB10i9gCE @ 00:03:00]. Kalshi's "
+                              'co-founder and COO puts the revenue model bluntly on Schwab Network: '
+                              'sportsbook revenue equals customer losses, whereas Kalshi does not make '
+                              'money when users lose and simply takes a transaction fee [ZW18j-a-TuY @ '
+                              '00:17:38]. The Interactive Brokers podcast desk echoes it for ForecastEx, '
+                              'saying the venue is not doing a house-edge kind of thing and that the extra '
+                              'penny on a $1.01 pair is the fee, half a penny per side [rMm-V95moXc @ '
+                              '00:19:06]. Trade Handle adds the regulatory frame operators need before '
+                              'routing anything: sportsbooks sit under gambling law, some prediction '
+                              'markets sit under commodities regulation, and that line is still changing '
+                              'quickly, so legality depends on where the trader lives [LHwUBaFR_no @ '
+                              '00:03:14]. For a venue map, that means every ticket is a peer-to-peer '
+                              "contract with a disclosed fee, not a wager against an operator's margin.",
+                              'The third consensus is that venues are not interchangeable and the '
+                              'prerequisites differ by route. TC Trading maps the IBKR terminal as three '
+                              'venues behind one cash account: Kalshi is the consumer venue, CME is '
+                              "institutional, and ForecastEx is IBKR's own exchange, with the desk focus "
+                              'on macro [MREcV1sLqwc @ 00:01:23]. OngPredicts says the first decision is '
+                              'residency: US traders get regulated, dollar-denominated venues with full '
+                              'KYC, while global traders run crypto wallets and stablecoins, and picking '
+                              'wrong means you cannot sign up, cannot trade what you want, or leave better '
+                              'prices elsewhere [4SzgTKdaSHI @ 00:00:49]. On the brokered route, the '
+                              'Interactive Brokers podcast says trading permissions take about a day to '
+                              'switch on [rMm-V95moXc @ 00:15:48], and closeuptrading flags that '
+                              'eligibility is 21+, alongside the thin-market spread risk [4_swDdRFYJc @ '
+                              '00:02:16]. Stack those together and the baseline kit is a verified account '
+                              'on the right side of the residency line, venue permissions approved before '
+                              'the data print you want to trade, and a clear sense of whether the question '
+                              'is a macro release or a sports, election or culture market, because TC '
+                              'Trading routes CPI and Fed questions to ForecastEx or CME and elections, '
+                              'culture and sports to Kalshi.'],
+               'table': {'caption': 'Practitioner consensus on how regulated event-contract venues '
+                                    'actually work',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Contract price reads directly as probability',
+                                   'Yes at 60 cents implies about 60 percent and settles at $1 or $0',
+                                   'Read the price itself instead of converting sportsbook odds into '
+                                   'implied probability',
+                                   'Simple Betting Guides ([zfqcFKWL2gA @ 00:00:54])'],
+                                  ['Prices are set peer-to-peer, not by an operator',
+                                   'Traders set prices through supply and demand, while sportsbooks bake a '
+                                   'margin into their odds',
+                                   'Treat the live price as a signal that can still be wrong, emotional or '
+                                   'thin',
+                                   'Trade Handle ([LHwUBaFR_no @ 00:01:29])'],
+                                  ['Exchange revenue comes from fees, not customer losses',
+                                   'Kalshi does not make money when users lose and takes a transaction fee '
+                                   'instead',
+                                   'Winning accounts are welcomed rather than limited or banned like at '
+                                   'sportsbooks',
+                                   'Schwab Network ([ZW18j-a-TuY @ 00:17:38])'],
+                                  ['Maximum loss equals the premium paid on unlevered trades',
+                                   'Ten contracts at 30 cents cost $3 and pay $10 if correct, a $7 gain',
+                                   'Size positions knowing the full premium can go to zero at settlement',
+                                   'closeuptrading ([4_swDdRFYJc @ 00:00:16])'],
+                                  ['Venues split by user type and question category',
+                                   'Kalshi serves consumers, CME serves institutions, and ForecastEx is '
+                                   "IBKR's own macro-focused exchange",
+                                   'Route CPI and Fed questions to ForecastEx or CME, elections and sports '
+                                   'to Kalshi',
+                                   'TC Trading ([MREcV1sLqwc @ 00:01:23])'],
+                                  ['Residency decides which venues you can actually open',
+                                   'US traders get regulated dollar venues with full KYC; global traders '
+                                   'use crypto wallets and stablecoins',
+                                   'Confirm eligibility before funding or you cannot sign up or trade '
+                                   'target markets',
+                                   'OngPredicts ([4SzgTKdaSHI @ 00:00:49])'],
+                                  ['Regulatory status sits outside gambling law but keeps shifting',
+                                   'Sportsbooks sit under gambling law; some prediction markets sit under '
+                                   'commodities regulation that is changing quickly',
+                                   'Check legality where you live before routing orders to any event venue',
+                                   'Trade Handle ([LHwUBaFR_no @ 00:03:14])']]}},
+              {'heading': '2. Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The brokered workflow TC Trading walks through starts inside one IBKR cash '
+                              'account that routes across Kalshi, CME and ForecastEx with smart order '
+                              'routing to the best price; the path is Trade, then IBKR Prediction Markets '
+                              '[MREcV1sLqwc @ 00:00:53]. Before sizing anything, the speaker clicks show '
+                              'market rules, which links an 8-page full rules document, then places a '
+                              'limit order: an initial bid at 38 cents, then a fill at 39 cents for 100 '
+                              'contracts, with Day or IOC as the time-in-force choices [MREcV1sLqwc @ '
+                              '00:05:39]. The fill immediately showed an average price of 41 cents because '
+                              'of 2 cents in fees, so unrealized P&L opened at minus $2 on the fill itself '
+                              '[MREcV1sLqwc @ 00:07:38]. closeuptrading explains why the limit order '
+                              'matters: Yes at 65 cents plus No at 36 cents totals $1.01, the extra cent '
+                              'is the spread, and in thin markets a market order pays a wide spread, so '
+                              'limits are the default on every venue [4_swDdRFYJc @ 00:00:56]. The same '
+                              'speaker reads exits differently by venue: on Kalshi you sell, on ForecastEx '
+                              'you buy the opposite side, and trading the probability itself, buying at 30 '
+                              'and selling at 45, captures 15 cents without waiting for settlement.',
+                              "Fees are where the venues actually separate. Interactive Brokers' "
+                              'ForecastEx explainer sets the pair at half a penny per side, so Yes plus No '
+                              'bids total $1.01, with no other exchange, clearing, data or brokerage '
+                              'charges, and pricing data is free [ceR-weGZSXc @ 00:01:53]. TC Trading '
+                              'prices the brokered alternatives: ForecastEx at $0.01 built into the $1.01, '
+                              'Kalshi at $0.02 split as one cent IBKR plus one cent exchange, and CME at a '
+                              'cent plus pass-through fees on larger notional [MREcV1sLqwc @ 00:11:23]. '
+                              'There are no settlement fees, but exiting early doubles the fee load: a '
+                              '48-cent exit nets about 46 cents, roughly $5 on 100 contracts, which the '
+                              'speaker says will definitely eat into profits, while warning the fee '
+                              'numbers may change [MREcV1sLqwc @ 00:12:10]. On the other side of the '
+                              'ledger, ForecastEx pays an incentive coupon on positions held overnight; '
+                              'the Interactive Brokers podcast quotes it at 4.33% annualized, the same '
+                              'rate IBKR pays on idle cash, and says it adjusts with the mark, so a CPI '
+                              'contract moving from 52 cents toward 80 or 90 cents earns on the higher '
+                              'value [rMm-V95moXc @ 00:03:15]. Per those numbers, holding to settlement '
+                              'avoids the second fee leg; scalping the probability pays fees twice.',
+                              "ForecastEx's buy-only design changes exit math, and three IBKR-side voices "
+                              'run the numbers. The ForecastEx explainer shows the close-out: hold Yes at '
+                              '26 cents, buy No at 31 cents, total cost 57 cents against a $1 netting, a '
+                              '43-cent profit; the ugly version is No at 70 plus Yes at 86, $1.56 in for '
+                              '$1 out, a 56-cent loss before coupons [ceR-weGZSXc @ 00:06:14]. ForecastEx '
+                              'CEO Downey frames it as buying No at 31 being roughly equivalent to selling '
+                              'Yes at 70, and any pair that nets below $1 pays out, with no novation '
+                              'needed because Yes and No are separate contracts [Vix7rchq6b8 @ 00:11:37]. '
+                              'Thomas Peterffy gives the simplest case: Yes at 40 plus No at 40 is 80 '
+                              "cents for a $1 payout [GaBqUuuLjrQ @ 00:08:02]. For hedgers, Kalshi's CEO "
+                              'supplies the template: an ice cream shop makes $100 on a sunny day and '
+                              'loses $100 on a cold one, so buying 200 cold-weather contracts at 10 '
+                              'percent costs $20 and locks in plus $80 whichever way the weather breaks '
+                              '[rDeB10i9gCE @ 00:08:54]. The pattern is consistent across venues: size the '
+                              'opposing contract count to the dollar exposure, pay the premium up front, '
+                              'and the outcome range collapses to a known number.'],
+               'table': {'caption': 'Venue fees, coupons and exit mechanics with the exact numbers '
+                                    'practitioners quoted',
+                         'headers': ['Mechanic',
+                                     'Exact Number Quoted',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['ForecastEx pair pricing and exchange fee',
+                                   'Yes plus No bids total $1.01, half a penny per side',
+                                   'No other exchange, clearing, data or brokerage charges are stacked on '
+                                   'top',
+                                   'Interactive Brokers ([ceR-weGZSXc @ 00:01:53])'],
+                                  ['Kalshi fee when routed through IBKR',
+                                   '$0.02 per contract, split as $0.01 IBKR plus $0.01 exchange',
+                                   'Budget double that cost when exiting before settlement instead of '
+                                   'holding',
+                                   'TC Trading ([MREcV1sLqwc @ 00:11:23])'],
+                                  ['Early exit fee drag on a live position',
+                                   'A 48-cent exit nets about 46 cents, roughly $5 on 100 contracts',
+                                   'Hold to settlement where possible because settlement itself carries no '
+                                   'fee',
+                                   'TC Trading ([MREcV1sLqwc @ 00:12:10])'],
+                                  ['ForecastEx incentive coupon on overnight positions',
+                                   'Quoted at 3.38% per year and described as variable',
+                                   'Treat the coupon as a moving yield, not a fixed rate, when sizing',
+                                   'closeuptrading ([4_swDdRFYJc @ 00:01:33])'],
+                                  ['Buy-only exit on ForecastEx contracts',
+                                   'Yes at 26 cents plus No at 31 cents costs 57 cents, a 43-cent profit',
+                                   'Close by buying the opposite side rather than selling the original '
+                                   'contract',
+                                   'Interactive Brokers ([ceR-weGZSXc @ 00:06:14])'],
+                                  ['Data reliability threshold on Kalshi markets',
+                                   'Roughly 10,000 / $40,000 in volume, depending on time to expiry',
+                                   'Trust thin-market prices less; deeper volume makes the probability '
+                                   'signal reliable',
+                                   'Schwab Network ([ZW18j-a-TuY @ 00:11:36])'],
+                                  ['Pre-trade resolution checklist before placing any order',
+                                   'Confirm the exact question, the deadline and the resolver every time',
+                                   'Two questions that sound the same can settle differently, so read '
+                                   'rules first',
+                                   'closeuptrading ([4_swDdRFYJc @ 00:01:56])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Edges the venue regulars actually use',
+                           'body': 'Small execution habits that the practitioners say protect fills, fees '
+                                   'and spreads across Kalshi, ForecastEx and CME.',
+                           'items': ['Open show market rules and read the full 8-page rules document '
+                                     'before the first order goes in. [TC Trading — MREcV1sLqwc @ '
+                                     '00:04:45]',
+                                     'Default to limit orders: in thin markets a market order pays the '
+                                     'full wide spread on top of the $1.01 pairing. [closeuptrading — '
+                                     '4_swDdRFYJc @ 00:00:56]',
+                                     'Hunt cross-venue gaps: buy the cheap side on one platform and the '
+                                     'opposite side where it is expensive to lock in the spread, which is '
+                                     'why a second platform is worth opening. [OngPredicts — 4SzgTKdaSHI @ '
+                                     '00:04:32]',
+                                     'Watch fed funds futures against ForecastEx: Torres flagged futures '
+                                     'pricing a more dovish 50bp versus 25bp on ForecastEx as an arbitrage '
+                                     'window. [Interactive Brokers — Vix7rchq6b8 @ 00:13:20]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pick the venue by residency and question type',
+                              'action': 'Decide US-regulated versus global access, then match the question '
+                                        'category to the venue that carries it.',
+                              'detail': 'US traders run regulated dollar venues with full KYC; route CPI '
+                                        'and Fed questions to ForecastEx or CME and elections, culture and '
+                                        'sports to Kalshi. [OngPredicts — 4SzgTKdaSHI @ 00:00:49] [TC '
+                                        'Trading — MREcV1sLqwc @ 00:13:05]'},
+                             {'step': 2,
+                              'title': 'Clear permissions and read the rules',
+                              'action': 'Request prediction-market permissions early and confirm question, '
+                                        'deadline and resolver.',
+                              'detail': 'Trading permissions take about a day to approve, and the '
+                                        'indicator releases hit at 8:30 AM, so request access before the '
+                                        'print you want to trade. [Interactive Brokers — rMm-V95moXc @ '
+                                        '00:15:48]'},
+                             {'step': 3,
+                              'title': 'Enter with a limit order',
+                              'action': 'Bid below the ask, walk the price a cent if needed, and set Day '
+                                        'or IOC time-in-force.',
+                              'detail': 'The speaker bid 38 cents, then filled 100 contracts at 39 cents; '
+                                        'the average showed 41 cents after 2 cents in fees, leaving '
+                                        'unrealized P&L at minus $2. [TC Trading — MREcV1sLqwc @ '
+                                        '00:05:39]'},
+                             {'step': 4,
+                              'title': 'Manage the exit with fees in mind',
+                              'action': 'Sell on Kalshi, buy the opposite side on ForecastEx, and set stop '
+                                        'levels up front.',
+                              'detail': 'Exit by buying the opposite side and stop out at 25/20/15%, '
+                                        'remembering that early exits double the fees paid on the '
+                                        'position. [Interactive Brokers — rMm-V95moXc @ 00:14:48]'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The loudest split is whether this is a market or a casino with a federal '
+                              'license. The Young Turks call it flatly: “it’s gambling,” just with less '
+                              'regulation, sitting under the CFTC instead of state gambling law and live '
+                              'in all 50 states [Y-ToFo3PvAw @ 00:00:35]. They back it with return data: '
+                              'the median prediction-market return runs -8%, worse than -5% at sportsbooks '
+                              'and -6.55% on slots [Y-ToFo3PvAw @ 00:06:37]. Kalshi’s CEO, speaking with '
+                              'Natalie Fratto, draws the line somewhere else entirely: the test is open '
+                              'marketplace versus the house, and “It’s a structure. It’s not the topic” '
+                              '[rDeB10i9gCE @ 00:05:06]. Kalshi’s co-founder on Schwab Network makes the '
+                              'incentive argument directly: a sportsbook’s revenue equals customer losses, '
+                              'while Kalshi says “We don’t make money when users lose” and takes a '
+                              'transaction fee instead [ZW18j-a-TuY @ 00:17:38]. Evan at centsorsense sits '
+                              'between the camps, calling the product “kind of like a coin toss” and “akin '
+                              'to gambling” unless the position is hedging a real exposure, the way flood '
+                              'insurance offsets a house [qH8nQqkMNv8 @ 00:06:43]. The operator takeaway: '
+                              'the same contract reads as a hedge or a wager depending on whether an '
+                              'offsetting exposure exists outside the account.',
+                              'Practitioners also split on which venue is structurally safer. CryptoCoins '
+                              'host Daniel J. Glenn pitches Kalshi as the “first CFTC regulated” '
+                              'prediction site, onshore, with protections comparable to a stock platform '
+                              '[1v9Cq8L6jqg @ 00:05:52]. Thomas Peterffy, speaking to John Lothian News, '
+                              'pushes back hard: Kalshi leans on a “foreign corporation” as guarantor, '
+                              'while ForecastEx clears through a US clearinghouse and is, in Peterffy’s '
+                              'words, “probably safer” [GaBqUuuLjrQ @ 00:02:35]. ForecastEx CEO Downey, on '
+                              'the IBKR podcast, frames the design gap: Yes and No are separate contracts '
+                              'that never share a price, paired at $1.01, making it “the first derivative '
+                              'in the world that doesn’t go into a Clearing House requiring Novation” '
+                              '[Vix7rchq6b8 @ 00:04:05]. The two designs force different exit playbooks. '
+                              'closeuptrading spells it out: on Kalshi you simply sell; on ForecastEx you '
+                              'exit by buying the opposite side, and trading the probability means buying '
+                              'at 30¢ and getting out at 45¢ for a 15¢ gain [4_swDdRFYJc @ 00:01:16]. '
+                              'Downey gives the ForecastEx translation: buying No at 31 is roughly the '
+                              'same as selling Yes at 70 [Vix7rchq6b8 @ 00:11:37]. Operators running both '
+                              'venues need two mental models: a two-sided book on Kalshi and a buy-only '
+                              'pairing engine on ForecastEx.',
+                              'Even the headline ForecastEx incentive coupon gets quoted differently '
+                              'depending on who is talking and when. TC Trading reads the interest at 3.14 '
+                              'APY on the IBKR ticket [MREcV1sLqwc @ 00:10:26], closeuptrading lists the '
+                              'coupon at 3.38% per year and flags it as variable [4_swDdRFYJc @ 00:01:33], '
+                              'Peterffy cites 4.3% paid on the daily closing price [GaBqUuuLjrQ @ '
+                              '00:04:25], and the Cents of Security podcast puts it at 4.33% annualized, '
+                              'matching what IBKR pays on idle cash [rMm-V95moXc @ 00:03:15]. The rate '
+                              'floats, so any coupon number in a pitch is a snapshot. The coupon also '
+                              'reshapes holding periods. Peterffy argues it makes long-dated questions '
+                              'such as national debt above $66T by 2035 viable, and that interest on an '
+                              'appreciated price can exceed the $1 win itself [GaBqUuuLjrQ @ 00:04:25]. '
+                              'The podcast adds that the coupon adjusts with the mark, so a CPI contract '
+                              'climbing from 52¢ to 80–90¢ earns more as it runs [rMm-V95moXc @ 00:13:29]. '
+                              'TC Trading treats venue choice as a category call rather than a yield call: '
+                              'CPI and Fed questions go to ForecastEx or CME, while elections, culture and '
+                              'sports belong on Kalshi [MREcV1sLqwc @ 00:13:05].'],
+               'table': {'caption': 'Venue Map Fault Lines: Who Argues What and How Operators Read It',
+                         'headers': ['Fault Line',
+                                     'Camp A Position',
+                                     'Camp B Position',
+                                     'Operator Read',
+                                     'Expert Source'],
+                         'rows': [['Gambling versus legitimate market structure debate',
+                                   'Prediction markets are gambling with less regulation, live in all 50 '
+                                   'states',
+                                   'Open marketplace versus the house; it is a structure, not the topic',
+                                   'Classify each position by whether a real outside exposure is being '
+                                   'offset',
+                                   'The Young Turks ([Y-ToFo3PvAw @ 00:00:35]); Natalie Fratto '
+                                   '([rDeB10i9gCE @ 00:05:06])'],
+                                  ['Kalshi counterparty and guarantor safety question',
+                                   'Kalshi is the first CFTC regulated site, onshore, with stock-platform '
+                                   'protections',
+                                   'Kalshi relies on a foreign corporation guarantor; ForecastEx US '
+                                   'clearinghouse is probably safer',
+                                   'Know which guarantor stands behind each venue before parking real size '
+                                   'there',
+                                   'CryptoCoins ([1v9Cq8L6jqg @ 00:05:52]); John Lothian News (JLN) '
+                                   '([GaBqUuuLjrQ @ 00:02:35])'],
+                                  ['ForecastEx incentive coupon rate quoted by speakers',
+                                   'TC Trading reads 3.14 APY; closeuptrading quotes 3.38% yearly and '
+                                   'variable',
+                                   'Peterffy cites 4.3%; Cents of Security podcast cites 4.33% annualized',
+                                   'Treat the coupon as a floating rate and recheck it at every entry',
+                                   'TC Trading ([MREcV1sLqwc @ 00:10:26]); Interactive Brokers '
+                                   '([rMm-V95moXc @ 00:03:15])'],
+                                  ['Early exit mechanics across the two venues',
+                                   'On Kalshi you sell the contract back to exit before settlement',
+                                   'On ForecastEx you buy the opposite side; No at 31 roughly equals '
+                                   'selling at 70',
+                                   'Run separate exit math for each venue before you enter the trade',
+                                   'closeuptrading ([4_swDdRFYJc @ 00:01:16]); Interactive Brokers '
+                                   '([Vix7rchq6b8 @ 00:11:37])'],
+                                  ['Which topics deserve to be listed at all',
+                                   'centsorsense backs the proposed CFTC ban on election, sports and '
+                                   'awards contracts',
+                                   'OngPredicts rates Kalshi strongest in sports and economic data markets',
+                                   'Sports flow lives on Kalshi; ForecastEx lists only '
+                                   'US-government-resolved questions',
+                                   'centsorsense ([qH8nQqkMNv8 @ 00:09:06]); OngPredicts ([4SzgTKdaSHI @ '
+                                   '00:02:16]); John Lothian News (JLN) ([GaBqUuuLjrQ @ 00:06:57])'],
+                                  ['One unified venue versus many separate platforms',
+                                   'TC Trading runs Kalshi, CME and ForecastEx from one IBKR cash account '
+                                   'with smart routing',
+                                   'OngPredicts says the best traders do not pick one and trade '
+                                   'cross-platform gaps',
+                                   'Unified routing finds the best price; a second platform unlocks '
+                                   'locked-in spreads',
+                                   'TC Trading ([MREcV1sLqwc @ 00:00:00]); OngPredicts ([4SzgTKdaSHI @ '
+                                   '00:04:32])'],
+                                  ['Forecast accuracy of live contract prices',
+                                   "Kalshi's CEO says the market beat the polls on 2024 Trump and Mamdani",
+                                   'Trade Handle warns prices can be wrong, emotional, or affected by low '
+                                   'liquidity',
+                                   'Trust deep, liquid markets and discount thin books on '
+                                   'closed-information questions',
+                                   'Natalie Fratto ([rDeB10i9gCE @ 00:06:40]); Trade Handle ([LHwUBaFR_no '
+                                   '@ 00:02:00])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first leak is fees, and it shows up on the ticket before the trade has '
+                              'moved. TC Trading filled 100 ForecastEx contracts at 39¢, yet the position '
+                              'displayed a 41¢ average price because of 2¢ in fees, opening at -$2 '
+                              'unrealized [MREcV1sLqwc @ 00:07:38]. Settlement carries no fee, but exiting '
+                              'early doubles the fee bill: a 48¢ exit nets about 46¢, roughly $5 shaved '
+                              'off 100 contracts, and the speaker warns it “will definitely eat into your '
+                              'profits” [MREcV1sLqwc @ 00:12:27]. Simple Betting Guides reminds traders '
+                              'that the gap from 60¢ to $1 is profit only “before fees,” and that fees, '
+                              'spreads, overpaying and following hype all drag results [zfqcFKWL2gA @ '
+                              '00:02:21]. closeuptrading shows where the spread hides: Yes at 65¢ plus No '
+                              'at 36¢ totals $1.01, and in thin markets a market order pays the full wide '
+                              'spread, so limit orders are the default [4_swDdRFYJc @ 00:00:56]. Buy-only '
+                              'exits add their own trap. The Interactive Brokers ForecastEx explainer '
+                              'walks through a No bought at 70¢ that gets closed by buying Yes at 86¢: a '
+                              '$1.56 total outlay against a $1 payout, a 56¢ loss before coupons '
+                              '[ceR-weGZSXc @ 00:07:37].',
+                              'Being right about the world is not the same as getting paid. Kalshi’s '
+                              'co-founder traces the company’s origin to a failed hedge: shorting the S&P '
+                              '500 against the 2016 election lost money even though the thesis was correct '
+                              '[ZW18j-a-TuY @ 00:02:25]. Torres, the senior economist on the IBKR podcast, '
+                              'makes the same point from the trading desk, warning that trading the right '
+                              'data can still lose money and citing a gamma squeeze as the example '
+                              '[Vix7rchq6b8 @ 00:16:39]. Price quality is the next trap. Trade Handle '
+                              'cautions that the contract price is a live signal that can be “wrong, '
+                              'emotional, or affected by low liquidity,” and that value can drop before '
+                              'settlement [LHwUBaFR_no @ 00:02:00]. The Kalshi co-founder ties reliable '
+                              'prices to volume and time to expiry, roughly 10,000 / $40,000 in volume '
+                              '[ZW18j-a-TuY @ 00:11:36], and flags closed information systems as poorly '
+                              'forecast: the Pope market sat at 1% [ZW18j-a-TuY @ 00:13:15]. Leverage '
+                              'compounds every one of these errors. Daniel J. Glenn at CryptoCoins notes '
+                              'Kalshi Pro offers long, short and leverage, but refuses leverage personally '
+                              'because “you can actually lose more than you put in” [1v9Cq8L6jqg @ '
+                              '00:02:58].',
+                              'The aggregate scoreboard is brutal. The Young Turks, citing WSJ figures, '
+                              'report that 79–84% of accounts lose and that 0.1% of Polymarket accounts '
+                              'take 67% of the profits, with users down about $0.5B since Kalshi launched '
+                              '[Y-ToFo3PvAw @ 00:04:59]. They also flag insider trading, with Santos '
+                              'making $17,839 and Joshua Mitts estimating $143M on Polymarket, plus a '
+                              'court map in flux: a federal appeals court let Ohio and Tennessee enforce '
+                              'gambling law, Minnesota’s ban is blocked, and markets are limited in '
+                              'Massachusetts, Washington, Nevada and Michigan, with the fight likely '
+                              'headed to the Supreme Court [Y-ToFo3PvAw @ 00:10:02]. Trade Handle agrees '
+                              'the legal status is “still changing quickly” and tells traders to check '
+                              'legality where they live [LHwUBaFR_no @ 00:03:14]. Contract wording is its '
+                              'own failure mode: closeuptrading warns that “two questions that sound the '
+                              'same can settle differently,” so every trade starts with the exact '
+                              'question, the deadline and the resolver [4_swDdRFYJc @ 00:01:56]. '
+                              'Automation does not dodge accountability either. Kalshi runs AI flags, '
+                              'compliance interviews, a disciplinary panel and CFTC referrals, and the '
+                              'co-founder is blunt about bots: “You are responsible for all your agents '
+                              'coming in” [ZW18j-a-TuY @ 00:30:35].'],
+               'table': {'caption': 'Firsthand Leaks, Losses and Economics Checks on the Venue Map',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Reported',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Entry fees hidden inside the average price',
+                                   'A 39¢ fill on 100 contracts displayed a 41¢ average after 2¢ fees',
+                                   'Position opens at -$2 unrealized before the market moves at all',
+                                   'TC Trading ([MREcV1sLqwc @ 00:07:38])'],
+                                  ['Early exit doubles the total fee bill',
+                                   'A 48¢ exit nets about 46¢ after the second round of fees',
+                                   'Roughly $5 lost on 100 contracts versus holding to fee-free settlement',
+                                   'TC Trading ([MREcV1sLqwc @ 00:12:10])'],
+                                  ['Buy-only exit at a bad opposite-side price',
+                                   'No bought at 70¢ was closed by buying Yes at 86¢',
+                                   'Total outlay $1.56 against a $1 payout, a 56¢ loss before coupons',
+                                   'Interactive Brokers ([ceR-weGZSXc @ 00:07:37])'],
+                                  ['Market orders sent into thin order books',
+                                   'Yes 65¢ plus No 36¢ totals $1.01; thin markets widen the spread',
+                                   'Market orders pay the full spread, so limit orders protect the edge',
+                                   'closeuptrading ([4_swDdRFYJc @ 00:00:56])'],
+                                  ['Right thesis expressed through the wrong instrument',
+                                   'Shorting the S&P 500 to hedge the 2016 election lost money',
+                                   'The election thesis was correct yet the hedge still produced a loss',
+                                   'Schwab Network ([ZW18j-a-TuY @ 00:02:25])'],
+                                  ['Leverage layered on top of event contracts',
+                                   'Kalshi Pro offers long, short and leverage across its listed markets',
+                                   'With leverage you can actually lose more than you put in',
+                                   'CryptoCoins ([1v9Cq8L6jqg @ 00:02:58])'],
+                                  ['Crowd-level losses and profit concentration at the top',
+                                   '79–84% of accounts lose; 0.1% of Polymarket accounts take 67% of '
+                                   'profits',
+                                   'Median return -8% versus -5% for sportsbooks and -6.55% for slots',
+                                   'The Young Turks ([Y-ToFo3PvAw @ 00:04:59]); The Young Turks '
+                                   '([Y-ToFo3PvAw @ 00:06:37])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Any Ticket Goes Live',
+                           'body': 'Every check below traces to a leak, loss or reversal a practitioner '
+                                   'reported on the ticket or in the market itself.',
+                           'items': ['Open “show market rules” and read the full 8-page rules document, '
+                                     'then confirm the exact question, deadline and resolver, because '
+                                     'look-alike questions settle differently [TC Trading — MREcV1sLqwc @ '
+                                     '00:04:45].',
+                                     'Use limit orders only; Yes 65¢ plus No 36¢ already costs $1.01, and '
+                                     'thin books make market orders pay the wide spread [closeuptrading — '
+                                     '4_swDdRFYJc @ 00:00:56].',
+                                     'Price the round trip before entry: settlement is fee-free, but an '
+                                     'early exit doubles fees and turns a 48¢ exit into about 46¢ net [TC '
+                                     'Trading — MREcV1sLqwc @ 00:10:54].',
+                                     'Skip markets below roughly 10,000 / $40,000 in volume and '
+                                     'closed-information questions, where the Pope market sat at 1% '
+                                     '[Schwab Network — ZW18j-a-TuY @ 00:11:36].']}}],
+ 'pull_quote': '“We don’t make money when users lose. We take a transaction fee.” — Schwab Network '
+               '(ZW18j-a-TuY @ 00:17:38).',
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ['Identify the goal first: education, investing, speculating, or hedging, before '
+                      'choosing a contract [Interactive Brokers — rMm-V95moXc @ 00:18:33].',
+                      'Route by category: CPI and Fed questions to ForecastEx or CME, elections, culture '
+                      'and sports to Kalshi [TC Trading — MREcV1sLqwc @ 00:13:05].',
+                      'Check the exact question, the deadline and the resolver on every contract before '
+                      'sizing it [closeuptrading — 4_swDdRFYJc @ 00:01:56].',
+                      'Work a limit order below the ask, as TC Trading did by bidding 38¢ and filling 100 '
+                      'contracts at 39¢ with Day or IOC time-in-force [TC Trading — MREcV1sLqwc @ '
+                      '00:05:39].',
+                      'Size hedges to lock the outcome: the ice cream shop buys 200 cold contracts at 10% '
+                      'for $20 and locks in +$80 either way [Natalie Fratto — rDeB10i9gCE @ 00:08:54].',
+                      'Open a second platform, start small, and buy the cheap side on one venue against '
+                      'the expensive opposite side on another to lock the spread [OngPredicts — '
+                      '4SzgTKdaSHI @ 00:05:15].'],
+ 'statutory_citations': [{'title': 'Schwab Network — Kalshi Co-Founder & COO on Future of Prediction '
+                                   'Markets [00:17:38]',
+                          'url': 'https://www.youtube.com/watch?v=ZW18j-a-TuY&t=1058s',
+                          'relevance': "Primary practitioner testimony on Kalshi's fee-based model versus "
+                                       'sportsbook revenue from customer losses.'},
+                         {'title': 'John Lothian News (JLN) — Thomas Peterffy on ForecastEx: Building a '
+                                   'Buy-Only Market to Transform Event Contracts Trading [00:02:35]',
+                          'url': 'https://www.youtube.com/watch?v=GaBqUuuLjrQ&t=155s',
+                          'relevance': "Primary practitioner testimony on Kalshi's foreign guarantor "
+                                       "versus ForecastEx's US clearinghouse."},
+                         {'title': 'TC Trading — How To Trade Prediction Markets On Interactive Brokers '
+                                   '(Kalshi + CME + ForecastEx) [00:10:54]',
+                          'url': 'https://www.youtube.com/watch?v=MREcV1sLqwc&t=654s',
+                          'relevance': 'Primary practitioner testimony on per-venue fees and how early '
+                                       'exits double the fee bill.'},
+                         {'title': 'The Young Turks — How Prediction Markets Are TAKING OVER America '
+                                   '[00:04:59]',
+                          'url': 'https://www.youtube.com/watch?v=Y-ToFo3PvAw&t=299s',
+                          'relevance': 'Primary practitioner testimony on account loss rates, sports share '
+                                       'of Kalshi volume and profit concentration.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '1v9Cq8L6jqg',
+                       'title': 'Can You Predict the Future? Kalshi Pro & Prediction Markets Explained',
+                       'channel': 'CryptoCoins',
+                       'author': 'CryptoCoins',
+                       'text': 'Long, short and leverage are available, but with leverage you can actually '
+                               'lose more than you put in.',
+                       'tip': 'Long, short and leverage are available, but with leverage you can actually '
+                              'lose more than you put in.',
+                       'timestamp': 178,
+                       'timestamp_seconds': 178,
+                       'timestamp_label': '[00:02:58]',
+                       'url': 'https://www.youtube.com/watch?v=1v9Cq8L6jqg&t=178s',
+                       'markdown': '[00:02:58](https://www.youtube.com/watch?v=1v9Cq8L6jqg&t=178s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LHwUBaFR_no',
+                       'title': 'Prediction Markets vs Sportsbooks: Key Differences Explained',
+                       'channel': 'Trade Handle',
+                       'author': 'Trade Handle',
+                       'text': 'If you come from sports betting, you may be used to looking for odds, but '
+                               'in prediction markets, the key number is the contract price.',
+                       'tip': 'If you come from sports betting, you may be used to looking for odds, but '
+                              'in prediction markets, the key number is the contract price.',
+                       'timestamp': 266,
+                       'timestamp_seconds': 266,
+                       'timestamp_label': '[00:04:26]',
+                       'url': 'https://www.youtube.com/watch?v=LHwUBaFR_no&t=266s',
+                       'markdown': '[00:04:26](https://www.youtube.com/watch?v=LHwUBaFR_no&t=266s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zfqcFKWL2gA',
+                       'title': 'Prediction Markets vs Sports Betting: What is the difference?',
+                       'channel': 'Simple Betting Guides',
+                       'author': 'Simple Betting Guides',
+                       'text': 'If you buy at 60 cents and it settles at $1, your profit is the difference '
+                               'before fees.',
+                       'tip': 'If you buy at 60 cents and it settles at $1, your profit is the difference '
+                              'before fees.',
+                       'timestamp': 141,
+                       'timestamp_seconds': 141,
+                       'timestamp_label': '[00:02:21]',
+                       'url': 'https://www.youtube.com/watch?v=zfqcFKWL2gA&t=141s',
+                       'markdown': '[00:02:21](https://www.youtube.com/watch?v=zfqcFKWL2gA&t=141s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ceR-weGZSXc',
+                       'title': 'Using ForecastEx Economic Forecast Contracts to Hedge Economic and '
+                                'Climate Risks',
+                       'channel': 'Interactive Brokers',
+                       'author': 'Interactive Brokers',
+                       'text': 'The exchange collects 1 cent per pairing and pays out the remaining $1.',
+                       'tip': 'The exchange collects 1 cent per pairing and pays out the remaining $1.',
+                       'timestamp': 213,
+                       'timestamp_seconds': 213,
+                       'timestamp_label': '[00:03:33]',
+                       'url': 'https://www.youtube.com/watch?v=ceR-weGZSXc&t=213s',
+                       'markdown': '[00:03:33](https://www.youtube.com/watch?v=ceR-weGZSXc&t=213s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MREcV1sLqwc',
+                       'title': 'How To Trade Prediction Markets On Interactive Brokers (Kalshi + CME + '
+                                'ForecastEx)',
+                       'channel': 'TC Trading',
+                       'author': 'TC Trading',
+                       'text': 'This is a big thing to think about because it will definitely eat into '
+                               'your profits.',
+                       'tip': 'This is a big thing to think about because it will definitely eat into your '
+                              'profits.',
+                       'timestamp': 747,
+                       'timestamp_seconds': 747,
+                       'timestamp_label': '[00:12:27]',
+                       'url': 'https://www.youtube.com/watch?v=MREcV1sLqwc&t=747s',
+                       'markdown': '[00:12:27](https://www.youtube.com/watch?v=MREcV1sLqwc&t=747s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qH8nQqkMNv8',
+                       'title': 'FORECASTEX - A new prediction exchange from Interactive Brokers #trading '
+                                '#binarytrading #newmarket',
+                       'channel': 'centsorsense',
+                       'author': 'centsorsense',
+                       'text': 'You can lose a lot of money, and it is akin to gambling unless you are '
+                               'hedging.',
+                       'tip': 'You can lose a lot of money, and it is akin to gambling unless you are '
+                              'hedging.',
+                       'timestamp': 403,
+                       'timestamp_seconds': 403,
+                       'timestamp_label': '[00:06:43]',
+                       'url': 'https://www.youtube.com/watch?v=qH8nQqkMNv8&t=403s',
+                       'markdown': '[00:06:43](https://www.youtube.com/watch?v=qH8nQqkMNv8&t=403s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4_swDdRFYJc',
+                       'title': 'How to Trade Prediction Markets (Kalshi, ForecastEx, CME Inside '
+                                'Interactive Brokers)',
+                       'channel': 'closeuptrading',
+                       'author': 'closeuptrading',
+                       'text': 'Two questions that sound the same can settle differently.',
+                       'tip': 'Two questions that sound the same can settle differently.',
+                       'timestamp': 116,
+                       'timestamp_seconds': 116,
+                       'timestamp_label': '[00:01:56]',
+                       'url': 'https://www.youtube.com/watch?v=4_swDdRFYJc&t=116s',
+                       'markdown': '[00:01:56](https://www.youtube.com/watch?v=4_swDdRFYJc&t=116s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GaBqUuuLjrQ',
+                       'title': 'Thomas Peterffy on ForecastEx: Building a Buy-Only Market to Transform '
+                                'Event Contracts Trading',
+                       'channel': 'John Lothian News (JLN)',
+                       'author': 'John Lothian News (JLN)',
+                       'text': 'Kalshi uses a foreign corporation as guarantor, while ForecastEx has a US '
+                               'clearinghouse and is probably safer.',
+                       'tip': 'Kalshi uses a foreign corporation as guarantor, while ForecastEx has a US '
+                              'clearinghouse and is probably safer.',
+                       'timestamp': 155,
+                       'timestamp_seconds': 155,
+                       'timestamp_label': '[00:02:35]',
+                       'url': 'https://www.youtube.com/watch?v=GaBqUuuLjrQ&t=155s',
+                       'markdown': '[00:02:35](https://www.youtube.com/watch?v=GaBqUuuLjrQ&t=155s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Y-ToFo3PvAw',
+                       'title': 'How Prediction Markets Are TAKING OVER America',
+                       'channel': 'The Young Turks',
+                       'author': 'The Young Turks',
+                       'text': "About 70% of Kalshi's daily volume is sports, and 79 to 84% of accounts "
+                               'lose.',
+                       'tip': "About 70% of Kalshi's daily volume is sports, and 79 to 84% of accounts "
+                              'lose.',
+                       'timestamp': 299,
+                       'timestamp_seconds': 299,
+                       'timestamp_label': '[00:04:59]',
+                       'url': 'https://www.youtube.com/watch?v=Y-ToFo3PvAw&t=299s',
+                       'markdown': '[00:04:59](https://www.youtube.com/watch?v=Y-ToFo3PvAw&t=299s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rDeB10i9gCE',
+                       'title': 'Explaining Prediction Markets with the CEO of Kalshi',
+                       'channel': 'Natalie Fratto',
+                       'author': 'Natalie Fratto',
+                       'text': 'So we want the winners because winners are the smart people.',
+                       'tip': 'So we want the winners because winners are the smart people.',
+                       'timestamp': 214,
+                       'timestamp_seconds': 214,
+                       'timestamp_label': '[00:03:34]',
+                       'url': 'https://www.youtube.com/watch?v=rDeB10i9gCE&t=214s',
+                       'markdown': '[00:03:34](https://www.youtube.com/watch?v=rDeB10i9gCE&t=214s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZW18j-a-TuY',
+                       'title': 'Kalshi Co-Founder & COO on Future of Prediction Markets',
+                       'channel': 'Schwab Network',
+                       'author': 'Schwab Network',
+                       'text': "We don't make money when users lose. We take a transaction fee.",
+                       'tip': "We don't make money when users lose. We take a transaction fee.",
+                       'timestamp': 1058,
+                       'timestamp_seconds': 1058,
+                       'timestamp_label': '[00:17:38]',
+                       'url': 'https://www.youtube.com/watch?v=ZW18j-a-TuY&t=1058s',
+                       'markdown': '[00:17:38](https://www.youtube.com/watch?v=ZW18j-a-TuY&t=1058s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZW18j-a-TuY',
+                       'title': 'Kalshi Co-Founder & COO on Future of Prediction Markets',
+                       'channel': 'Schwab Network',
+                       'author': 'Schwab Network',
+                       'text': 'You are responsible for all your agents coming in.',
+                       'tip': 'You are responsible for all your agents coming in.',
+                       'timestamp': 1835,
+                       'timestamp_seconds': 1835,
+                       'timestamp_label': '[00:30:35]',
+                       'url': 'https://www.youtube.com/watch?v=ZW18j-a-TuY&t=1835s',
+                       'markdown': '[00:30:35](https://www.youtube.com/watch?v=ZW18j-a-TuY&t=1835s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4SzgTKdaSHI',
+                       'title': 'Top 10 Prediction Markets 2026',
+                       'channel': 'OngPredicts',
+                       'author': 'OngPredicts',
+                       'text': "The best traders don't pick one. Those gaps are tradeable.",
+                       'tip': "The best traders don't pick one. Those gaps are tradeable.",
+                       'timestamp': 272,
+                       'timestamp_seconds': 272,
+                       'timestamp_label': '[00:04:32]',
+                       'url': 'https://www.youtube.com/watch?v=4SzgTKdaSHI&t=272s',
+                       'markdown': '[00:04:32](https://www.youtube.com/watch?v=4SzgTKdaSHI&t=272s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rMm-V95moXc',
+                       'title': 'Forecast & Event Contracts Explained - Cents of Security Podcast Ep. 69',
+                       'channel': 'Interactive Brokers',
+                       'author': 'Interactive Brokers',
+                       'text': 'Identify what the goal is first.',
+                       'tip': 'Identify what the goal is first.',
+                       'timestamp': 1113,
+                       'timestamp_seconds': 1113,
+                       'timestamp_label': '[00:18:33]',
+                       'url': 'https://www.youtube.com/watch?v=rMm-V95moXc&t=1113s',
+                       'markdown': '[00:18:33](https://www.youtube.com/watch?v=rMm-V95moXc&t=1113s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Vix7rchq6b8',
+                       'title': 'A Behind the Scenes Look at ForecastEx Events Contracts- IBKR Podcast Ep. '
+                                '181',
+                       'channel': 'Interactive Brokers',
+                       'author': 'Interactive Brokers',
+                       'text': 'Critically the two parties are not counterparties to each other, they '
+                               "don't trade the same contract, they never share the same price.",
+                       'tip': "Critically the two parties are not counterparties to each other, they don't "
+                              'trade the same contract, they never share the same price.',
+                       'timestamp': 245,
+                       'timestamp_seconds': 245,
+                       'timestamp_label': '[00:04:05]',
+                       'url': 'https://www.youtube.com/watch?v=Vix7rchq6b8&t=245s',
+                       'markdown': '[00:04:05](https://www.youtube.com/watch?v=Vix7rchq6b8&t=245s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Vix7rchq6b8',
+                       'title': 'A Behind the Scenes Look at ForecastEx Events Contracts- IBKR Podcast Ep. '
+                                '181',
+                       'channel': 'Interactive Brokers',
+                       'author': 'Interactive Brokers',
+                       'text': "I just got to get the economic data right and I think that's huge huge "
+                               'huge in these kinds of markets.',
+                       'tip': "I just got to get the economic data right and I think that's huge huge huge "
+                              'in these kinds of markets.',
+                       'timestamp': 1054,
+                       'timestamp_seconds': 1054,
+                       'timestamp_label': '[00:17:34]',
+                       'url': 'https://www.youtube.com/watch?v=Vix7rchq6b8&t=1054s',
+                       'markdown': '[00:17:34](https://www.youtube.com/watch?v=Vix7rchq6b8&t=1054s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LiKm_5YWgPU',
+                       'title': 'Geopolitics Meets Markets - Cents of Security Ep. 124',
+                       'channel': 'Interactive Brokers',
+                       'author': 'Interactive Brokers',
+                       'text': 'I like to group the participants in those five buckets.',
+                       'tip': 'I like to group the participants in those five buckets.',
+                       'timestamp': 88,
+                       'timestamp_seconds': 88,
+                       'timestamp_label': '[00:01:28]',
+                       'url': 'https://www.youtube.com/watch?v=LiKm_5YWgPU&t=88s',
+                       'markdown': '[00:01:28](https://www.youtube.com/watch?v=LiKm_5YWgPU&t=88s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LiKm_5YWgPU',
+                       'title': 'Geopolitics Meets Markets - Cents of Security Ep. 124',
+                       'channel': 'Interactive Brokers',
+                       'author': 'Interactive Brokers',
+                       'text': 'So, 72% of participants, generally speaking, believe that the shutdown '
+                               'will end by November 21st.',
+                       'tip': 'So, 72% of participants, generally speaking, believe that the shutdown will '
+                              'end by November 21st.',
+                       'timestamp': 643,
+                       'timestamp_seconds': 643,
+                       'timestamp_label': '[00:10:43]',
+                       'url': 'https://www.youtube.com/watch?v=LiKm_5YWgPU&t=643s',
+                       'markdown': '[00:10:43](https://www.youtube.com/watch?v=LiKm_5YWgPU&t=643s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

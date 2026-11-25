@@ -1,470 +1,470 @@
 {
   "workbook_id": "wb-045-no-surprises-act-idr-and-medical-arbitration",
   "volume_id": "vol-045-no-surprises-act-idr-and-medical-arbitration",
-  "title": "No Surprises Act (IDR) Medical Arbitration & Out-of-Network Recovery — Operator Companion Workbook",
-  "subtitle": "6 Printable Operator Worksheets for Federal IDR Eligibility, Incremental-Cash Contingency Economics, Deadline Control, Evidence-Ready Arbitration, Recovery Automation, and Small-Team Scaling",
+  "title": "No Surprises Act (IDR) Medical Arbitration & Out-of-Network Recovery — Practitioner Testimony Operator Workbook",
+  "subtitle": "Field worksheets for screening protected claims, routing disputes to the right forum, verifying the QPA, filing federal IDR on time, and pricing every offer against the rulebook and the IDR scoreboard",
   "worksheets": [
     {
       "worksheet_id": "ws-01",
       "number": 1,
-      "title": "Arbitrage Deal / Counterparty Underwriting & Spread Qualification",
-      "purpose": "Qualify provider engagements before paying dispute fees or promising recovery. Separate federal eligibility from state payment remedies, identify the actual payer counterparty, establish initial-payment evidence, and test whether collectible incremental proceeds justify casework, fee exposure, and the operator's contracted contingency share.",
-      "chapter_ref": "Q1, Q2, Q6",
+      "title": "Protected-Claim Screen and Balance-Billing Exposure Map",
+      "purpose": "Sort every surprise bill into the protected lanes of emergency care, air ambulance, and non-emergency care at in-network facilities, separate the excluded ground ambulance and non-hospital claims, and hold the patient to in-network cost sharing while every disputed dollar moves into the right escalation path.",
+      "chapter_ref": "Q1-Q2",
       "instructions": [
-        "Collect a representative, access-controlled sample of remittance records, claim submissions, plan documents, facility participation evidence, and provider agreements. Assign an internal claim identifier before reviewing pricing, and record who supplied each document and when it was received.",
-        "Classify funding arrangement, service setting, network status, and applicable payment law before estimating arbitration upside. Self-funded ERISA status alone does not establish eligibility; examine the covered service, applicable state mechanisms, and any state-law election supported by plan evidence.",
-        "Build the spread from cash above the payer's documented initial payment, not from billed charges, the QPA alone, or the provider's entire account balance. Deduct unrecovered dispute fees and attributable casework before calculating the contracted operator share.",
-        "Underwrite payer behavior with dated collection cohorts rather than published offer-selection percentages. Distinguish eligibility dismissals, unfavorable determinations, favorable determinations awaiting payment, partial receipts, and completed recoveries so the expected cash model preserves each failure mode separately.",
-        "Authorize a small, documented pilot only after provider authority, jurisdiction, deadline feasibility, and reserve funding are established. Keep ambiguous claims outside the filing queue, name the person resolving each ambiguity, and retain a reasoned rejection record for uneconomic claims."
+        "Freeze every payment, payment plan, and card charge on the account before working any field, because a payment plan can be read as acceptance of the full amount.",
+        "Classify the claim into a protected lane or the excluded column first, since ground ambulance, urgent care, and non-hospital facilities sit outside the ban.",
+        "Get written confirmation of plan funding from HR before relying on any state surprise billing law, because state protections stop at self-funded plans.",
+        "Cite the exact source, timestamp, and dollar figure behind each entry so every complaint, appeal, or reprocessing request can be defended line by line.",
+        "Load every appeal, dispute, and negotiation clock into one tracker on the day the triggering bill or denial arrives, never after the fact."
       ],
       "fields": [
         {
-          "name": "Provider mandate and service perimeter",
-          "type": "textarea",
-          "prompt": "Identify the contracting provider, authorized signatory, participating facilities, rendering specialties, and covered service dates. Describe exactly which recovery activities the operator may perform and which decisions remain with the provider or retained counsel.",
-          "example": "Cedar Emergency Physicians authorizes a 60-claim emergency-medicine pilot at two named hospitals for January service dates. The practice manager supplies remittances; the physician owner approves offers. Authority covers record preparation, negotiation administration, and permitted representative submissions, but excludes patient collection and settlement outside written provider instructions."
+          "name": "lane_classification",
+          "type": "text",
+          "prompt": "Classify the claim into one of the three protected lanes: emergency care, air ambulance, or non-emergency care at an in-network facility. Record the facility network status, the service date, and the reason the claim does or does not fall inside the ban.",
+          "example": "In-network-facility lane: an appendectomy at an in-network hospital with an out-of-network surgeon, anesthesiologist, and radiologist billed $14,238, and a No Surprises Help Desk complaint wiped $9,800 within 6 weeks [Bill Fighter — OWN7CBskcIQ @ 00:09:41]. Ground ambulance is excluded, because the helicopter is protected and the road is not [AS DESIGNED | Risk & Insurance Stories — w_lpas-cNkc @ 00:06:05]."
         },
         {
-          "name": "Plan funding and jurisdiction evidence",
+          "name": "waiver_check",
           "type": "textarea",
-          "prompt": "Record the funding arrangement, governing plan documents, insurer or administrator identity, and relevant state payment mechanism. Explain why the specific claim enters federal IDR rather than assuming every commercial or ERISA-associated claim follows the same pathway.",
-          "example": "Claim CED-104 identifies an employer-funded plan administered by a national carrier. The summary plan description confirms self-funding; intake checks for a relevant state-law election and other applicable payment mechanisms. The reviewer records federal-route support under 42 U.S.C. § 300gg-111 and 45 CFR § 149.510 before approving preparation."
+          "prompt": "List every provider on the claim and flag hospital-based ancillary specialties such as anesthesiology, radiology, pathology, emergency medicine, neonatology, and hospitalists. Note whether any notice-and-consent document was signed, who signed it, and whether that specialty could ever lawfully waive protections.",
+          "example": "Anesthesiology group consent form found in the chart: flagged as unenforceable, because emergency medicine, anesthesiology, pathology, radiology, neonatology, hospitalists, diagnostics, and air ambulance can never be waived [CMSHHSgov — aQ87InetyaA @ 00:27:28]. Copy retained for 7 years, noting consent is very difficult to obtain [Holland & Hart LLP — aaDjROGKKC0 @ 00:39:06]. Member billed at in-network cost sharing only."
         },
         {
-          "name": "Protected service and network facts",
-          "type": "textarea",
-          "prompt": "Document the service category, emergency status, facility participation, provider participation, and any notice-and-consent material relevant to coverage. Identify excluded service types or factual gaps that would make a federal filing inappropriate despite a low initial payment.",
-          "example": "CED-104 concerns emergency physician services at a hospital emergency department, with an out-of-network rendering group. Records identify the plan, patient encounter, and service category without relying on a generic out-of-network flag. A separate ground-ambulance claim is excluded from this federal IDR pilot and evaluated under its applicable payment route."
+          "name": "plan_funding_status",
+          "type": "text",
+          "prompt": "Record whether the plan is fully insured or self-funded, the written source of that answer, and whether any state surprise billing law can reach the claim. Note the HR contact, the plan document section relied on, and any card markings.",
+          "example": "HR confirmed in writing, citing the plan document rather than the brochure, that the plan is self-funded, so the state ground ambulance law reaching only fully insured plans does not apply [AS DESIGNED | Risk & Insurance Stories — w_lpas-cNkc @ 00:15:10]. The member card showed only a small 'sf', so the written answer controlled [Miller Johnson — EwlPyAVGU8k @ 00:08:21]."
         },
         {
-          "name": "Initial payment, QPA, and patient responsibility",
+          "name": "cost_sharing_check",
           "type": "textarea",
-          "prompt": "Separate payer cash, stated QPA, allowed amount, contractual adjustments, and patient cost sharing using remittance evidence. Select a consistent payer-payment basis for incremental recovery and prevent patient balances or QPA figures from masquerading as actual initial receipts.",
-          "example": "The ERA reports a $1,500 QPA and $300 patient responsibility; the payer initially pays $1,200. The recovery ledger uses $1,200 as the initial payer-cash baseline, preserves the $1,500 QPA separately, and excludes patient payments from the contingency base. Any later determination is normalized to the same payer-payment basis."
+          "prompt": "Compare the patient's billed responsibility against in-network cost sharing. Record billed charges, allowed amount, deductible applied, coinsurance, and any balance billed above that amount. Flag every dollar charged to the patient beyond in-network cost sharing as a potential violation for complaint.",
+          "example": "Self-funded Arizona plan, anesthesiology group: billed $42,000, QPA roughly $18,000, final allowed just over $21,000 after IDR sided with the plan, about $20,000 saved, and no balance bill to the member [Jentry Harris — LNSPlo2_U3c @ 00:02:13]. Member responsibility recorded at in-network cost sharing only, with the excess logged as a plan-to-provider payment dispute, not patient debt."
         },
         {
-          "name": "Collectible spread hypothesis",
+          "name": "itemized_bill_audit",
           "type": "textarea",
-          "prompt": "Estimate additional payer cash with a documented collection assumption, then deduct unrecovered fees and attributable casework. Show the contingency percentage and distinguish a screening estimate from earned revenue, which requires actual cleared receipts and contractual entitlement.",
-          "example": "The pilot targets $5,700 total payer cash against a $1,200 initial payment, yielding $4,500 incremental cash. With an illustrative $115 administrative fee, $185 casework cost, and a documented $600 entity-fee refund, the distributable base is $4,200. A 25% share produces $1,050 operator revenue only after the required receipts clear."
+          "prompt": "Request the itemized bill with CPT codes and write down each disputed line with its reason before paying anything. Record duplicate charges, mismatched codes, and services not received, and note that auditors find errors in up to 80% of bills.",
+          "example": "Payments, payment plan, and card charge frozen until the itemized bill was reviewed and every disputed line written down with its reason [Problem Solved Lab — ofqIwNzp8lA @ 00:03:31]. No payment plan signed, because a payment plan can be read as acceptance of the full amount [Problem Solved Lab — ofqIwNzp8lA @ 00:03:46]. Disputed lines routed to the insurer for reprocessing."
         },
         {
-          "name": "Counterparty payment behavior",
-          "type": "textarea",
-          "prompt": "Describe payer performance using completed cohorts with explicit denominators, elapsed collection days, partial payments, and aged determinations. Keep observed cash realization separate from favorable offer selection so a persuasive brief does not become an assumed receipt.",
-          "example": "A prior 40-case cohort contains 24 favorable determinations, eight unfavorable determinations, four eligibility dismissals, and four pending cases. Of the 24 favorable outcomes, 18 have full incremental receipts, three have partial receipts, and three remain unpaid. The underwriting model reports both 60% favorable outcomes and the separate collection distribution."
+          "name": "emergency_status",
+          "type": "text",
+          "prompt": "Document why the visit qualifies as emergency care under the prudent layperson standard. Record the symptoms as the patient experienced them, the denial reason the plan gave, and the date the 120-day appeal clock started running.",
+          "example": "ER claim denied as non-emergency; appeal framed on the prudent layperson standard, meaning a reasonable person in the patient's situation would have gone to the ER [Evolutio Labs — HwCCcS3hQls @ 00:01:03]. The 120-day appeal clock was calendared from the denial date the day the letter arrived [Evolutio Labs — HwCCcS3hQls @ 00:02:12]. The insurer was called first."
         },
         {
-          "name": "Evidence strength and offer support",
+          "name": "lab_and_network_question",
           "type": "textarea",
-          "prompt": "List permissible evidence connecting the proposed offer to the actual service, including clinical acuity, provider qualifications, and relevant contracting history. Explain any benchmark's construction and exclude prohibited billed-charge, usual-and-customary, and public-program payment comparisons.",
-          "example": "CED-104 uses documented patient acuity, physician experience, the QPA, and applicable contracting evidence. A FAIR Health report is screened before use; its brand does not make every metric permissible. A billed-charge percentile is excluded, while any retained permitted measure must have an explained relationship to the service and offer."
+          "prompt": "Before ancillary work such as blood draws, record which lab receives the samples and whether it is in network. Capture the exact question asked of staff, the answer given, and the fallback plan if network status cannot be confirmed.",
+          "example": "Checkout staff asked which lab gets the samples; they could not confirm network status, so the lab prescription was requested and taken to an in-network lab [Insured and Informed — wySlaLru-l4 @ 00:03:36]. Question logged as 'Am I in network?', never 'Do you accept my insurance?' [FOX 26 Houston — 9dOW3txIHG0 @ 00:02:07]. Lab status flagged as contested among practitioners."
         },
         {
-          "name": "Filing-window and cooling-period screen",
+          "name": "complaint_escalation",
           "type": "textarea",
-          "prompt": "Record initial-payment or denial receipt, negotiation initiation, negotiation expiration, and federal filing deadline. Check prior determinations involving the same parties and service category, and separately assess batching eligibility under the rules applicable to the filing.",
-          "example": "The calendar stores receipt as business-day zero, requires negotiation initiation within the applicable 30-business-day window, then tracks the 30-business-day negotiation period and following four-business-day IDR initiation window. A prior same-party determination triggers a separate 90-calendar-day suspension check; the reviewer documents treatment of any affected subsequent claims and special filing window."
+          "prompt": "Map the escalation path for an improper bill: insurer reprocessing call, collection agency script, and No Surprises Help Desk complaint at 1-800-985-3059. Record each contact date, representative, reference number, and the outcome promised at every step.",
+          "example": "Step one: insurer asked to reprocess as an in-network claim. Step two: collection agency told the bill appears to violate the No Surprises Act and asked to stop collection and reprocess through insurance [Share My Lesson — Q11eG-8d-Hw @ 00:04:22]. Step three: Help Desk complaint at 1-800-985-3059, the route that erased $9,800 of a $14,238 bill [Bill Fighter — OWN7CBskcIQ @ 00:09:41]."
         },
         {
-          "name": "Fee-risk allocation and provider liquidity",
-          "type": "textarea",
-          "prompt": "Identify who advances administrative fees, entity deposits, and casework costs, and who bears losses after dismissal or an unfavorable outcome. Require written reserve funding rather than assuming successful claims will immediately finance unsuccessful claims.",
-          "example": "For ten separate illustrative disputes, the provider funds $1,150 in administrative fees, $6,000 in entity deposits, and $1,850 in casework, totaling $9,000. These are planning amounts, not current fee quotes. The contract assigns unrecovered costs to the provider reserve and prohibits spending one provider's balance on another provider's cases."
+          "name": "uninsured_dispute",
+          "type": "text",
+          "prompt": "For self-pay or uninsured patients, compare the final bill to the written good faith estimate. Record the estimate amount, billed amount, difference per provider, date of the first bill, and whether the $25 dispute can still be filed.",
+          "example": "Self-pay patient kept the written estimate: $300 estimated against an $850 bill, which clears the $400-over threshold per provider [CMSHHSgov — RRI2VT8QiiI @ 00:40:00]. Dispute filed with the $25 fee inside 120 days from the first bill [Law Unpacked — 0NouMpFWLHI @ 00:02:32]. Collections and late-fee accrual suspended while the case is pending [DAS Health — e5b1ICVPSZs @ 00:42:00]."
         },
         {
-          "name": "Pilot acceptance and rejection decision",
+          "name": "deadline_tracker",
           "type": "textarea",
-          "prompt": "State the minimum evidence, expected collectible contribution, reserve coverage, and deadline slack required for acceptance. Name a decision owner and record claim-level reasons for rejection, remediation, or deferral without replacing statutory eligibility with a profitability score.",
-          "example": "The pilot accepts 20 of 60 sampled claims: 15 have supported federal eligibility and complete records, while five enter only after missing plan evidence is resolved. Twenty-five state-route claims are redirected and 15 expired or uneconomic claims are rejected. The owner signs the claim list after the $18,000 illustrative reserve is funded."
+          "prompt": "Load every open-negotiation, initiation, and offer deadline into one tracker before the first dispute. Record the trigger date for each clock, the computed due date, the owner responsible, and the confirmation that each step was completed on time.",
+          "example": "Tracker built before the first filing: 30-business-day open negotiation, then the initiation window, then offer dates, because missing a deadline by a day or two can invalidate the IDR [PYA, PC — j1DGgPw1__E @ 00:26:37]. Every final offer priced against winner-takes-all selection, since the arbitrator picks one offer and not the average [Jentry Harris — LNSPlo2_U3c @ 00:01:29]."
         }
       ],
-      "completion_gate": "The provider and intake lead sign the accepted claim list, jurisdiction memoranda, initial-payment baselines, deadline records, and funded reserve schedule; unresolved eligibility claims remain outside the submission queue."
+      "completion_gate": "Do not advance until every claim sits in a protected lane or the excluded column, plan funding is confirmed in writing, every ancillary waiver is flagged as unenforceable, all payments are frozen pending the itemized audit, and every appeal, dispute, and negotiation deadline is loaded into one tracker with a named owner."
     },
     {
       "worksheet_id": "ws-02",
       "number": 2,
-      "title": "Unit Economics, Escrow/Reserve Float & Working-Capital Calculator",
-      "purpose": "Translate claim recoveries into earned operator shares without counting provider collections as operator revenue. Model fee advances, refund timing, casework deductions, loss cohorts, and collection delays, then reconcile annual operating profit exactly to the canonical Conservative, Base, and Scaled scorecard.",
-      "chapter_ref": "Q3, Q4",
+      "title": "Forum Routing, QPA Verification, and Federal IDR Initiation",
+      "purpose": "Route each out-of-network claim to the one process that governs it, test the plan's QPA against its required methodology and disclosures, pass the three-part eligibility screen, and move from a documented open negotiation into a timely, fully paid federal IDR initiation without losing the claim to a missed window.",
+      "chapter_ref": "Q3-Q4",
       "instructions": [
-        "Use separate columns for initial payer cash, additional payer cash, administrative fees, entity deposits, entity refunds, and casework costs. Keep client-owned reserve balances outside revenue, and do not describe ordinary operating cash as escrow without an appropriate arrangement.",
-        "Calculate the contingency base as the greater of zero or incremental cleared payer cash minus unrecovered dispute fees and contracted casework costs. Apply the agreed share afterward, and carry unresolved cost recovery according to the written provider agreement.",
-        "Use the illustrative fee amounts only to practice the worksheet. Before funding an actual dispute, capture the current CMS administrative charge, certified entity schedule, batch pricing, refund treatment, and payment instructions from authoritative sources applicable to that filing.",
-        "Reconcile each provider settlement to bank evidence and distinguish operator-paid costs from provider-funded pass-through amounts. A cost deducted before the share calculation must not also reduce operator profit unless the operator actually bears a separate expense.",
-        "Build a rolling 13-week cash forecast with delayed collections, eligibility losses, and unreturned entity deposits. Preserve the canonical annual scorecard as the comparison baseline while showing your actual operating forecast separately whenever observed volumes or costs differ."
+        "Confirm plan funding and the state route before touching the federal portal, because a claim sent to the wrong process gets kicked out.",
+        "Read the remittance for a QPA before choosing a forum, since a plan sends the QPA when it believes federal law applies.",
+        "Present the full case during open negotiation, because new information is not supposed to be added once the dispute reaches arbitration.",
+        "Assemble the entire IDR submission offline before opening the portal, since the form times out at 50 minutes and windows run in days.",
+        "Pay both the certified IDR entity fee and the administrative fee with the offer, or the other side's offer wins by default."
       ],
       "fields": [
         {
-          "name": "Incremental-cash waterfall",
-          "type": "textarea",
-          "prompt": "Write the complete receipt-to-share calculation using initial payer cash as a separate baseline. Identify fee and casework deductions, the zero floor, and the point at which the operator's contractual share becomes earned and billable.",
-          "example": "Total cleared payer cash is $5,700, including the original $1,200; incremental cash is therefore $4,500. Subtract $115 administrative expense, $185 provider-funded casework, and zero net entity cost after the $600 refund clears. The $4,200 base generates a $1,050 operator share and $3,150 residual provider benefit."
+          "name": "forum_precedence",
+          "type": "text",
+          "prompt": "Determine which dispute process governs the claim using the precedence of all-payer model, specified state law, then federal IDR. Record plan funding, state of service, any opt-in by a self-funded ERISA plan, and why only one process applies.",
+          "example": "Self-funded ERISA plan with no state opt-in: routed to federal IDR, following all-payer model, specified state law, then federal precedence. Logged with the AMA position that there should be one process for any given claim, either the state or the federal process [American Medical Association (AMA) — 6_ODgJ97UtA @ 00:54:45]. Misrouted claims get kicked out [Ryan Downs — 7lqb5ev54mA @ 00:01:25]."
         },
         {
-          "name": "Pending refund and settlement true-up",
-          "type": "textarea",
-          "prompt": "Show how an unpaid entity-fee refund changes distributable proceeds even after a favorable determination. Record provisional deductions, refund evidence, subsequent share adjustments, and the party entitled to the returned deposit under the signed agreement.",
-          "example": "Before the $600 entity refund clears, the same claim has a $3,600 base: $4,500 minus $115, $185, and $600. The 25% share is $900. After the deposit returns, the base rises to $4,200 and the operator earns a $150 true-up, not a second $1,050 fee."
+          "name": "qpa_on_remit",
+          "type": "text",
+          "prompt": "Read the remittance advice and record whether the plan sent a QPA with it, the QPA amount, the CPT code, and the billed charge. Note whether the QPA signal indicates the plan believes federal law applies to this claim.",
+          "example": "Remittance arrived with a QPA attached, which signals the plan believes federal law applies [American Medical Association (AMA) — 6_ODgJ97UtA @ 00:19:50]. Out-of-network MRI, CPT 72148: $4,800 billed against a QPA of about $1,200 [AHealthcareZ - Healthcare Finance Explained — NFJaCM_6M_Y @ 00:07:28]. QPA logged as the basis for cost sharing, not a minimum payment."
         },
         {
-          "name": "Unfavorable and ineligible case treatment",
+          "name": "qpa_disclosure_request",
           "type": "textarea",
-          "prompt": "Model claims with no incremental collection and explain how fee losses affect provider reserves and operator exposure. Treat dismissal refunds conservatively unless verified rules and settlement evidence support a different result; never book an anticipated refund as cash.",
-          "example": "An ineligible dispute produces zero additional payer cash after $115 administrative cost, $600 entity cost, and $185 casework. The planning model reserves the full $900 as unrecovered and sets the operator share to zero. Any documented refund later reduces the actual loss; it does not retroactively create payer recovery."
+          "prompt": "Draft the on-demand QPA disclosure request. List each element requested, including non-fee-for-service rate use, the eligible database used, related codes, and excluded incentive payments, plus the date sent, the plan contact, and the response received.",
+          "example": "Request sent for non-fee-for-service rate use, the database used, related codes, and excluded incentive payments, which the plan must supply on request [CMSHHSgov — Sp7aK2UsmlE @ 00:36:07]. QPA checked against its build: 2019 median contracted rate, at least 3 rates, indexed for inflation. Carrier databases noted as unverified, a black box [Becker's Hospital Review — RJps0omOazk @ 00:53:01]."
         },
         {
-          "name": "Annual scenario reconciliation",
-          "type": "textarea",
-          "prompt": "Enter the canonical annual operator revenue, operating expense, net margin, owner net profit, and team for all three scenarios. Keep startup capital, provider recovery volume, and client reserve balances outside these operator revenue figures.",
-          "example": "Conservative: $110,000 revenue minus $77,000 expense equals $33,000 profit, a 30% margin, with 1 FT + 2 C. Base: $505,000 minus $287,850 equals $217,150, a 43.0% margin, with 1 FT + 2 C. Scaled: $900,000 minus $396,000 equals $504,000, a 56% margin, with 2 FT + 3 C."
+          "name": "qpa_methodology_exposure",
+          "type": "text",
+          "prompt": "Test the plan's QPA math for compliance issues. Record whether each contract rate was counted once regardless of claim volume, who paid for the eligible database, and any penalty exposure the plan faces for a faulty methodology.",
+          "example": "Suspected per-claim rate counting flagged, because a rate negotiated under a contract constitutes a single contracted rate regardless of claims paid at it [CMSHHSgov — Sp7aK2UsmlE @ 00:10:58]. Database cost belongs to the plan [CMSHHSgov — Sp7aK2UsmlE @ 00:31:54]. Exposure noted: up to $100 per day, per entity, per affected individual [CMSHHSgov — Sp7aK2UsmlE @ 00:48:11]."
         },
         {
-          "name": "Retained-share revenue presentation",
+          "name": "eligibility_three_doors",
           "type": "textarea",
-          "prompt": "Define the service promised by the operator and distinguish earned contingency consideration from funds belonging to the provider. Document the principal-agent assessment under ASC 606 and prevent underlying medical collections from inflating reported operator turnover.",
-          "example": "At a contracted 25% share, $2,020,000 of aggregate recovery base after agreed deductions produces $505,000 of operator revenue. The remaining $1,515,000 belongs to providers and is excluded from operator sales. The controller documents the actual contract's ASC 606 treatment; this scorecard consistently reports earned shares rather than gross provider receipts."
+          "prompt": "Run the three-part eligibility test before filing. Record which door the claim enters: ED-admitted out-of-network event, out-of-network clinician on an in-network event, or emergency air ambulance. Note any waived protections, Medicare or Medicaid coverage, or contracted status.",
+          "example": "Door two: out-of-network clinician on an in-network event. Anesthesia checked as elective, eligible only because the facility was in-network [The Phia Group, LLC — ksxW878eWWk @ 00:06:46]. Consent waiver absent, since waived protections make a dispute ineligible [CMSHHSgov — cw4MI_h6Gns @ 00:05:03]. Screen matters: one in five disputes is thrown out as ineligible [Staffingly, Inc — ASHyX7v13Eo @ 00:01:25]."
         },
         {
-          "name": "Reserve ownership and segregation",
+          "name": "open_negotiation_record",
           "type": "textarea",
-          "prompt": "Describe the account structure, beneficial owner, reconciliation frequency, authorized withdrawals, and return process for unused provider advances. Specify whether a true escrow or another lawful custodial arrangement exists instead of applying an escrow label casually.",
-          "example": "Provider A advances $18,000 for 20 individually modeled disputes. The subledger tracks $2,300 administrative charges, $12,000 entity deposits, and $3,700 casework budget. Daily reconciliation links every withdrawal to a claim and invoice. The agreement identifies provider ownership, permitted disbursements, and return of unused funds after final reconciliation."
+          "prompt": "Log the open negotiation. Record the initial payment or denial date, the date negotiation was invoked within 30 business days, the counteroffers exchanged, and the full case presented, since new information should not be added at arbitration.",
+          "example": "Open negotiation invoked within 30 business days of the initial payment, with proof of the start date uploaded, since initiations lacking it are held [CMSHHSgov — cw4MI_h6Gns @ 00:04:22]. Full case presented to the plan up front, because by arbitration you are not supposed to add information [Miller Johnson — EwlPyAVGU8k @ 00:27:15]. Every good-faith outreach logged for submission."
         },
         {
-          "name": "Startup capital and recurring cash burn",
-          "type": "textarea",
-          "prompt": "Allocate startup cash between setup expense and operating runway, separating it from provider-funded dispute reserves. Reconcile the published monthly operating range with annual scenario expenses by identifying variable delivery, acquisition, staffing, and management costs.",
-          "example": "A $30,000 startup budget allocates $8,000 to setup and leaves $22,000 for runway. Recurring overhead of $5,000 monthly consumes $60,000 annually; the Base expense total adds $227,850 of variable delivery and other operating costs to reach $287,850. The metadata ranges remain $10,000–$45,000 startup and $1,800–$10,500 monthly opex."
+          "name": "initiation_window",
+          "type": "text",
+          "prompt": "Calculate the initiation deadline. Record the last day of open negotiation, the four-business-day filing window that follows, the date the submission was assembled offline, and the date it was filed on the federal portal with its confirmation number.",
+          "example": "Negotiation failed on business day 30; four business days counted forward to the initiation deadline [Ryan Downs — 7lqb5ev54mA @ 00:05:15]. Full submission assembled offline before opening the portal, because the form times out at 50 minutes [American Medical Association (AMA) — 6_ODgJ97UtA @ 00:24:00]. Staffingly calls the four-day window absolute, so filing was scheduled ahead of the last day."
         },
         {
-          "name": "Collection lag and 13-week liquidity stress",
-          "type": "textarea",
-          "prompt": "Forecast the timing of operator receipts separately from provider fee advances and entity refunds. Test a full-quarter collection delay, identify the minimum operating balance, and name the funding response before spending relies on an unpaid determination.",
-          "example": "Opening operator cash is $22,000 after setup. Three months at $5,000 recurring overhead leave $7,000 if no contingency receipts arrive. Provider dispute advances remain segregated and unavailable for payroll. The owner caps new discretionary spending at $2,000 and defers hiring when the forecasted operating balance falls below $5,000."
+          "name": "idre_selection",
+          "type": "text",
+          "prompt": "Record the certified IDR entity selection. Note entities used before and whether to reject one, what each entity treats as a successful argument, and whether the parties agreed or the federal government picked the entity for this dispute.",
+          "example": "Previously used entity rejected, which is permitted, and payer down-coding challenged in the same filing [PYA, PC — j1DGgPw1__E @ 00:55:18]. Feedback gathered by meeting entities and asking what they treat as a successful argument, then folded into the submission [Ryan Downs — 7lqb5ev54mA @ 00:09:44]. No agreement within the window means the federal government picks one."
         },
         {
-          "name": "Cohort loss carryforward and contribution",
-          "type": "textarea",
-          "prompt": "Specify whether the agreement nets costs by claim or across a defined provider cohort, and apply that choice consistently. Show how losing cases reduce the cohort base without charging the same casework expense twice in operator accounts.",
-          "example": "Under an expressly cohort-netted contract, 70 successful cases each generate a $4,200 base, totaling $294,000. Thirty zero-recovery cases each consume $900, reducing the cohort base to $267,000. The 25% operator share is $66,750. Without that cohort clause, $73,500 of successful-case shares and separate provider losses would require different settlement."
+          "name": "fee_and_offer",
+          "type": "text",
+          "prompt": "Confirm that both the certified IDR entity fee and the administrative fee were paid together with the offer. Record amounts, payment dates, the offer figure, and the evidence supporting it, including prior in-network rates and down-coding explanations.",
+          "example": "Entity fee and administrative fee paid with the offer, because an offer is not received until both are paid, and an unreceived offer hands the other side its number [CMSHHSgov — 7lzQt8aAlG0 @ 00:25:17]. Offer supported by the provider's prior in-network rates from the past 4 years [PYA, PC — j1DGgPw1__E @ 00:30:31]. Plan required to explain any down-coding."
         },
         {
-          "name": "Cash evidence and month-end close",
+          "name": "target_inventory",
           "type": "textarea",
-          "prompt": "List the evidence required to recognize earned contingency consideration, settle provider balances, and reconcile operating profit. Include bank settlement, remittance matching, unresolved recoupments, refund status, and a reviewer independent of the initial case calculation.",
-          "example": "The close packet includes payer EFT trace 4821, the matching 835, the $1,200 baseline, $4,500 incremental receipt, $600 cleared entity refund, and cost invoices totaling $300. A second reviewer signs the $1,050 contingency calculation. An award notice alone supports an operational receivable record, not an earned cash-based contingency charge."
+          "prompt": "Rank the underpaid out-of-network inventory by net recoverable value. Record payment as a percentage of billed charges, likely additional payment, filing expense, specialist effort, days remaining on the clock, and aggregate variance across recurring claims.",
+          "example": "Target band: claims paid 15 to 17% of charges, pushed toward 45 to 55% [Ryan Downs — 7lqb5ev54mA @ 00:03:38]. Ranked by likely additional payment, filing expense, specialist effort, and time remaining [Vee Healthtek — s3194z7bdwY @ 00:00:54]. Small variances aggregated: a $200 gap across 5,000 claims equals $1 million before fees [Vee Healthtek — GpHExH5dquQ @ 00:01:25]."
         }
       ],
-      "completion_gate": "All three canonical scenarios reconcile exactly; the controller signs the share waterfall, provider reserve reconciliation, cost-allocation policy, and 13-week forecast without counting client funds as operator revenue."
+      "completion_gate": "Do not file until the governing forum is documented, the QPA is read from the remittance and its disclosures requested, the claim passes one eligibility door with no waiver, proof of the open negotiation start date is uploaded, the four-business-day deadline is calendared, and both fees are paid with the offer."
     },
     {
       "worksheet_id": "ws-03",
       "number": 3,
-      "title": "End-to-End Execution, Idempotent Ledger & QA Pre-Flight Sheet",
-      "purpose": "Turn an accepted claim into a reproducible execution record from initial remittance through negotiation, IDR initiation, determination, collection, and settlement. Preserve statutory timing, duplicate protection, evidence provenance, and independent quality checks so retries and staff handoffs cannot create duplicate filings or unsupported fees.",
-      "chapter_ref": "Q7, Q8",
+      "title": "Rule-Change Compliance and IDR Scoreboard Economics",
+      "purpose": "Keep every dispute compliant with the operations final rule on batching, fees, response deadlines, cooling-off periods, and plan registration, then price each claim and entity choice against the IDR scoreboard so that only viable disputes are filed and every award is tracked until cash actually lands.",
+      "chapter_ref": "Q5-Q6",
       "instructions": [
-        "Create one immutable internal claim identity and retain every payer identifier as a linked attribute. Parse the 835 into normalized payment events, but preserve the source file and distinguish service-line adjustments from claim-level denial or eligibility conclusions.",
-        "Start timing from documented receipt events, applying the relevant business-day definition and holiday calendar. Keep the initial negotiation initiation window, negotiation period, and federal IDR initiation window as distinct calculations with independent evidence and reviewer confirmation.",
-        "Send negotiation and filing notices through the required channels and retain delivery evidence. A generated PDF, internal task completion, or successful software request does not establish that the correct counterparty received a legally sufficient notice on time.",
-        "Use a submission outbox with stable idempotency keys and reconcile uncertain responses before retrying. Verify batching eligibility and cooling-period treatment separately; neither a shared procedure code nor a common payer name automatically makes a proposed batch permissible.",
-        "Close only after payer cash, entity-fee disposition, casework deductions, and provider settlement reconcile. Track post-determination nonpayment against the applicable payment deadline, and retain a separate escalation record instead of silently treating the selected offer as collected."
+        "Split the caseload by open-negotiation start date relative to November 1, 2026 before applying any batching or deadline rule.",
+        "Verify the current administrative and entity fees before every payment, because paying the wrong fee means the offer is denied.",
+        "Hard-calendar the four-business-day filing window after the 30-business-day cooling-off period, since the portal allows no grace period.",
+        "Price every claim against the full fee load and realistic recovery share before filing, regardless of how strong the headline win rates look.",
+        "Track every award against the 30-calendar-day payment deadline and never book an award as cash until the funds actually arrive."
       ],
       "fields": [
         {
-          "name": "Claim identity and source fingerprint",
-          "type": "textarea",
-          "prompt": "Define a stable claim key using provider, payer claim control number, service line, and service date, with correction handling. Record source fingerprints and version relationships so duplicate remittance ingestion cannot generate additional recovery inventory.",
-          "example": "Internal claim CED-104 links provider P-17, payer control PC-88214, service line 2, and the recorded service date. A SHA-256 digest identifies the original 835. A corrected remittance becomes event version 2 under the same claim, preserving the initial-payment history rather than opening a second dispute or resetting deadlines."
+          "name": "rule_change_split",
+          "type": "text",
+          "prompt": "Split the caseload by open-negotiation start date relative to November 1, 2026. Record which disputes follow prior single, bundled, and batch rules, which fall under the 50-line-item cap, and the calendar tool tracking each group.",
+          "example": "Two tracking systems keyed on open-negotiation start date, run on a calendar-based tool rather than spreadsheets [Xpert Billing Talk — g3C-DoM_9CI @ 00:01:47]. Post-November 1, 2026 batches capped at exactly 50 line items; older disputes keep prior rules [Xpert Billing Talk — g3C-DoM_9CI @ 00:00:45]. Batch-cap baseline flagged as disputed: 25 or unlimited."
         },
         {
-          "name": "835 normalization and adjustment interpretation",
+          "name": "batch_code_check",
           "type": "textarea",
-          "prompt": "Identify the CLP, SVC, CAS, and payment-trace elements used for extraction and describe how CARC and RARC signals enter review. Require plan and service evidence before converting a payment adjustment into a federal eligibility classification.",
-          "example": "The parser extracts $1,200 payer payment and links the service adjustment to its CARC and RARC values. A contractual adjustment flag creates an intake task, not an automatic IDR filing. The reviewer compares the 835 with the submitted claim, plan funding evidence, and service setting before accepting CED-104."
+          "prompt": "Review every line item grouped for batching. Record the Category I CPT codes, eligibility of each code, whether any ineligible code is mixed in, and the coder who cross-referenced the batch manually before submission to the federal portal.",
+          "example": "Radiology batch cross-referenced manually on Category I CPT codes, because mixing eligible and ineligible codes triggers automatic rejection [Xpert Billing Talk — g3C-DoM_9CI @ 00:03:22]. Initiating party confirmed every resubmitted line meets batching and bundling criteria [CMSHHSgov — Vy31vkzfNBE @ 00:04:24]. New Hampshire state route noted separately: up to 25 items per single fee [New Hampshire Insurance Department — C6hIoQuEWeA @ 00:04:45]."
         },
         {
-          "name": "Deadline computation and calendar version",
-          "type": "textarea",
-          "prompt": "Record receipt evidence, negotiation-start evidence, controlling calendar, counting convention, and computed due dates. Require an independent recalculation and preserve extensions separately from ordinary rules so an exceptional deadline never becomes the default for later cases.",
-          "example": "Calendar CAL-01 treats Saturdays, Sundays, and federal holidays as nonbusiness days for the applicable federal calculation. The record separately computes the initial 30-business-day initiation limit, the 30-business-day negotiation period, and the next four business days for IDR initiation. Two reviewers reconcile actual dates against current CMS instructions before release."
+          "name": "fee_verification",
+          "type": "text",
+          "prompt": "Verify the current administrative and entity fees before every payment. Record the fee schedule date checked, the amount paid per party, the effective date of any change, and confirmation that the offer was accepted as received.",
+          "example": "Administrative fee confirmed at $15 per party, $30 total, cut from $115 effective June 11, 2026 [HaloMD — of6CD7esHY0 @ 00:02:33]. Checked before each payment, because paying the wrong fee means the offer is denied [The Phia Group, LLC — ksxW878eWWk @ 00:17:28]. Lower fee logged as a likely driver of another filing surge."
         },
         {
-          "name": "Negotiation notice and delivery record",
+          "name": "cooling_off_and_response",
           "type": "textarea",
-          "prompt": "Describe the notice package, recipient verification, required content, transmission method, and delivery proof. State how bounces, disputed receipt dates, or changed payer contacts are escalated without assuming that an internal send timestamp establishes valid service.",
-          "example": "The negotiation package identifies the claim, service, proposed payment, and authorized representative using the required notice format. The operator verifies the payer contact against current remittance instructions and retains the sent message, attachments, and delivery evidence. A bounce moves the case to urgent review that day rather than marking negotiation successfully initiated."
+          "prompt": "Calendar the response and filing dates under the operations final rule. Record the business-day-15 response deadline for the non-initiating party, the 30-business-day cooling-off end date, and the four-business-day filing window with no grace period.",
+          "example": "Payer response due by business day 15 of open negotiation [KLGatesLaw — NwapzBNojY0 @ 00:04:19]. Filing window hard-calendared after the 30-business-day cooling-off period, since the portal blocks late filings with no grace period and dumps them into denial queues as permanent losses [Xpert Billing Talk — g3C-DoM_9CI @ 00:02:36]. Change flagged: do not miss it or cases expire."
         },
         {
-          "name": "Batch membership and suspension register",
-          "type": "textarea",
-          "prompt": "List each proposed batch member, the applicable grouping criteria, service-date boundaries, and evidence supporting compatibility. Check the same-party cooling restriction separately and document the rule version, determination date, and any applicable subsequent-claim filing window.",
-          "example": "Batch B-12 proposes six claims involving the same provider and plan. The reviewer checks the applicable item-or-service standard, timing requirements, and current court-affected implementation before grouping them. One claim falls under a prior same-party 90-calendar-day suspension and is removed pending documented treatment under the applicable post-suspension window."
+          "name": "plan_registration",
+          "type": "text",
+          "prompt": "For plan-side operators, confirm the plan is registered in the IDR registry before the deadline. Record the registration date, the steps covered going forward, outstanding disputes at risk of default, and the good-faith outreach log.",
+          "example": "Plan registered ahead of the deadline, because an unregistered plan cannot respond, defaults at the offer stage, and late registration only covers steps going forward [HaloMD — of6CD7esHY0 @ 00:19:47]. Every good-faith outreach to billing agencies logged and submitted in IDR, where it is considered, unlike litigation settlement talks [The Phia Group, LLC — ksxW878eWWk @ 00:03:31]."
         },
         {
-          "name": "Federal initiation and entity selection checkpoints",
+          "name": "award_payment_tracker",
           "type": "textarea",
-          "prompt": "Separate timely federal IDR initiation from later certified entity selection, conflict checks, fee payment, and offer submission. Record the authoritative instruction for each deadline instead of labeling the four-business-day initiation period as an entity-selection period.",
-          "example": "The case reaches federal initiation on day 2 of the applicable four-business-day window, with portal confirmation retained. A separate task tracks the generally applicable three-business-day joint entity-selection period and any controlling current instructions. Entity-selection confirmation then drives the offer-submission deadline, generally ten business days, with the actual portal notice preserved."
+          "prompt": "Track every award against the 30-calendar-day payment deadline. Record the determination date, prevailing offer, amount due, date paid, and any shortfall, and do not book an award as cash until the funds actually land.",
+          "example": "Award tracker run against the 30-calendar-day deadline, since unpaid awards carry reputational and regulatory risk without a private right of action [The Phia Group, LLC — ksxW878eWWk @ 00:14:13]. Awards booked only when cash lands: about 30% of HaloMD's 400,000 awards were unpaid, Anthem at 74% [Long Reads, Explained — nJ5Tz7G_LA8 @ 00:04:46]."
         },
         {
-          "name": "Offer normalization and brief QA",
+          "name": "scoreboard_benchmarks",
           "type": "textarea",
-          "prompt": "Specify whether each amount represents total out-of-network payment, patient cost sharing, initial payer payment, or additional payer payment. Require an arithmetic bridge and evidence citations so the brief never compares amounts defined on incompatible bases.",
-          "example": "The reviewer reconciles a hypothetical $6,300 total payment amount with $300 patient cost sharing, producing $6,000 payer responsibility. After subtracting the $1,200 initial payer payment, additional payer payment would be $4,800. If only $4,500 arrives, the ledger records a $300 shortfall rather than treating the total determination as cash."
+          "prompt": "Record the scoreboard benchmarks used to set offer expectations. Capture the provider win rate, average award relative to QPA, dispute volume against the original projection, and the source and period for each figure cited in planning.",
+          "example": "Providers won 85% of 2024 disputes at an average award of 445% of QPA [Zelis Healthcare — lhoUoQSpOCg @ 00:01:25]. Volume: 2.6 million provider disputes in 2025 against roughly 17,000 expected per year [Long Reads, Explained — cSaC2n-3r9o @ 00:06:58]. Total 2025 awards reached $14.85B, over three times 2024's $4.08B [Top Hospitals USA — eDCqqjk5fqk @ 00:00:00]."
         },
         {
-          "name": "Idempotent submission and uncertain response",
+          "name": "claim_viability_pricing",
           "type": "textarea",
-          "prompt": "Define the external submission key, payload digest, outbox status, retry policy, and reconciliation owner. Explain how the system distinguishes confirmed failure from uncertain success so a timeout cannot trigger duplicate filings, payments, or provider invoices.",
-          "example": "Outbox item SUB-104 uses the claim ID, proceeding type, and filing version as its stable key. A timeout after upload changes status to confirmation-required. The operator checks portal history and the confirmation mailbox before retrying; an existing confirmation is attached to SUB-104 and suppresses another submission or fee instruction."
+          "prompt": "Price the claim against the fee load before filing. Record the charge, the QPA, the gap between them, the expected share of that gap recovered, the total per-dispute cost, and the win rate needed to break even.",
+          "example": "Radiology claim priced first: recovering one quarter of the charge-minus-QPA gap leaves only 11 to 22% of radiology claims viable [AJR Radiology — rYqWvbw_kGo @ 00:04:54]. Unit QPA of $50 against $1,000 per dispute means a 50 to 60% win rate loses money [About The Rest — WdSfoeegaaI @ 00:20:44]. Low-value units held back from filing."
         },
         {
-          "name": "Determination-to-cash collection tracker",
-          "type": "textarea",
-          "prompt": "Track determination receipt, additional amount due, applicable payment deadline, payer contact, and actual receipts. Separate substantive disputes about the amount from payment delay, and identify the documented escalation path for an overdue federal determination.",
-          "example": "A determination establishes $4,800 additional payer payment, with the applicable 30-calendar-day payment deadline recorded. Only $4,500 clears, leaving $300 open. The collections owner sends a reconciliation request with the determination and EFT evidence, then evaluates the appropriate CMS complaint or counsel-assisted route if the shortfall remains unresolved."
+          "name": "idre_ranking",
+          "type": "text",
+          "prompt": "Rank IDR entities on operational performance. Record refund speed, eligibility accuracy, ACH refund enrollment status, verbal bank authentication requirements, and custom report availability for each entity, then note win ratio last as the final tiebreaker.",
+          "example": "Good entities refund in 5 days against a 30-business-day allowance, so refund speed and eligibility accuracy rank ahead of win ratio [HaloMD — g2udecJ21bI @ 00:28:04]. ACH refunds enrolled with all 11 entities, including those requiring verbal bank authentication, with weekly custom reports from the 6 entities that offer them [HaloMD — g2udecJ21bI @ 00:21:09]."
         },
         {
-          "name": "Append-only settlement and correction trail",
+          "name": "plan_side_exposure",
           "type": "textarea",
-          "prompt": "Describe settlement approval, receipt allocation, reversal handling, and retention of earlier calculations. Require balanced correction events rather than editing historical receipts, and state how subsequent payer recoupments affect the operator share and provider statement.",
-          "example": "Settlement SET-104 records $4,500 incremental cash, $300 deductions, a $1,050 share, and $3,150 provider residual. A later $400 payer recoupment creates a linked reversal, reducing the eligible base by $400 and the 25% share by $100. The agreement determines whether that $100 is refunded or credited on the next statement."
+          "prompt": "For employer and plan sponsors, measure IDR exposure. Record whether claims data flags IDR claims, the carrier's response to that request, hidden reversals repaid higher, and the share of medical spend going to IDR this plan year.",
+          "example": "Claims data requested with IDR claims flagged; not knowing which claims went through IDR is almost de facto inadequate fiduciary conduct [AHealthcareZ - Healthcare Finance Explained — 6E_HRECi-t8 @ 00:07:50]. Hidden claims hunted by flagging payments reversed 2 to 6 months later and repaid much higher [Payerset — lqE3aZxq024 @ 00:39:40]. Benchmark: one employer reports 24% of medical claims spend on IDR."
         }
       ],
-      "completion_gate": "A second reviewer confirms jurisdiction, calendar math, delivery evidence, batch membership, offer normalization, portal confirmation, and balanced ledger events; no uncertain submission or unmatched receipt may be marked complete."
+      "completion_gate": "Do not file or pay until every dispute is assigned to the pre- or post-November 1 system, each batch is code-checked, current fees are verified, response and filing windows are hard-calendared, the claim clears the fee-load viability test, and every open award sits on the payment tracker as receivable, not cash."
     },
     {
       "worksheet_id": "ws-04",
       "number": 4,
-      "title": "Statutory, Licensing, Contract Addendum & Compliance Audit",
-      "purpose": "Convert statutory and contractual obligations into evidence-backed operating controls. Establish federal jurisdiction, HIPAA responsibilities, permitted representation, defensible offer evidence, fee allocation, and record retention while preserving state-specific analysis and current implementation instructions for every material filing decision.",
-      "chapter_ref": "Q5, Q9",
+      "title": "Winning vs. Getting Paid: Award Collection and Out-of-Network Facility Recovery",
+      "purpose": "Turn won IDR awards into deposited cash and protect out-of-network facility revenue. Price each dispute before filing, screen eligibility up front, and escalate unpaid awards in bulk. Defend negotiated allowances, single case agreements, and EOB adjustments against recoupment, voided agreements, and silent PPO layering.",
+      "chapter_ref": "Q7-Q8",
       "instructions": [
-        "Create a dated authority register covering 42 U.S.C. § 300gg-111, 45 CFR § 149.510, related plan provisions, applicable state surprise-billing rules, and current CMS implementation material. Attach the authority supporting the actual service and plan rather than relying on a generic reference list.",
-        "Execute the business associate agreement before receiving protected health information for covered activities. Limit access by role, document subcontractor responsibilities, and select storage, messaging, and automation services whose contractual terms and safeguards support the intended health-information processing.",
-        "Review representation authority and state-specific licensing exposure before selling services or signing pleadings. Distinguish administrative support, permitted authorized representation, collection activity, and legal practice, and route activities requiring licensed professionals to the appropriate retained resource.",
-        "Write the fee addendum around actual incremental payer cash, unrecovered dispute fees, casework costs, and refund adjustments. Specify reserve ownership, unsuccessful-case treatment, cohort netting, termination accounting, and recoupment handling so the provider can reproduce every settlement calculation.",
-        "Test evidence restrictions and patient-protection controls on a sample before launch. Preserve the QPA without treating it as a mandatory winning presumption, exclude prohibited comparisons, and ensure the operator's recovery process never creates a prohibited balance bill to the patient."
+        "Pull every IDR award and out-of-network facility claim from the last twelve months before writing a single answer.",
+        "Treat an award as cash only after funds land in the bank, and record unpaid awards in a separate pending bucket.",
+        "Price each dispute type against the full per-dispute cost before deciding whether IDR, negotiation, or the threat of IDR is the right tool.",
+        "Attach the signed award letter, negotiation form, or EOB to every field answer that cites a dollar figure.",
+        "Assign one named owner and a calendared deadline to each unpaid award and each open out-of-network appeal."
       ],
       "fields": [
         {
-          "name": "Federal authority and current implementation register",
+          "name": "award_cash_status_ledger",
           "type": "textarea",
-          "prompt": "Identify statutory and regulatory provisions governing the claim and record the date each operational source was checked. Distinguish enacted text, regulations, judicially affected provisions, and portal instructions instead of treating an old checklist as controlling.",
-          "example": "The register anchors eligibility and payment rules to 42 U.S.C. § 300gg-111 and 45 CFR § 149.510, with 29 CFR § 2590.716-8 considered for applicable ERISA plan provisions. The filing lead attaches current CMS guidance and a dated note on court-affected batching or offer-evaluation instructions before using the checklist."
+          "prompt": "List every IDR award your group has won in the last twelve months, the payer, the award date, the amount, and whether cash has actually landed. Mark each award as paid, partially paid, or unpaid, and note the days elapsed since determination.",
+          "example": "Anthem awards: 14 won, 4 paid, 10 unpaid past 30 calendar days. We stopped booking awards as cash after reading that about 30 percent of HaloMD's 400,000 awards were unpaid, with Anthem at 74 percent [Long Reads, Explained — nJ5Tz7G_LA8 @ 00:04:46]. Unpaid Anthem awards now sit in a separate pending-collection bucket, not in recognized revenue."
         },
         {
-          "name": "State mechanism and ERISA boundary",
+          "name": "pre_filing_dispute_economics",
           "type": "textarea",
-          "prompt": "Document how the state payment mechanism interacts with plan funding, service category, and any applicable election. Name the state authority being evaluated and explain the claim-specific route without assuming all insured or self-funded arrangements behave alike.",
-          "example": "For a Texas encounter, the reviewer examines Texas Insurance Code Chapter 1467 alongside plan funding and service facts. An insured claim within the state mechanism is not automatically sent to federal IDR. A self-funded claim receives a separate election and applicability check, with the supporting plan documents attached to the route memorandum."
+          "prompt": "For each specialty line you plan to file, compare the expected QPA per unit or claim against the full per-dispute cost, then estimate the win rate you need to break even. Flag any claim type where a coin-flip win rate loses money.",
+          "example": "Anesthesia low-unit claims: QPA near $50 a unit against roughly $1,000 per dispute, so a 50 to 60 percent win rate loses money [About The Rest — WdSfoeegaaI @ 00:20:44]. We moved those claims out of the IDR queue and into pre-filing negotiation, using the threat of IDR itself as leverage [About The Rest — WdSfoeegaaI @ 00:26:55]."
         },
         {
-          "name": "Business associate agreement and subcontractors",
-          "type": "textarea",
-          "prompt": "List the covered entity, business associate, subcontractors, permitted uses, incident reporting terms, and return-or-destruction obligations. Connect each processing service to the required agreement and safeguards before any identifiable clinical or payment record enters the service.",
-          "example": "The provider and operator execute terms addressing 45 CFR §§ 164.502(e) and 164.504(e). The encrypted storage vendor and document-processing subcontractor are assessed for downstream business associate duties. The agreement requires prompt incident reporting and defines termination handling; ordinary consumer upload accounts are excluded from the protected-information workflow."
+          "name": "eligibility_refusal_screen",
+          "type": "text",
+          "prompt": "Name the eligibility grounds insurers most often use to refuse payment on your won awards, and describe the up-front screen you will run before filing so those same grounds cannot be raised after the determination is issued.",
+          "example": "Our pre-filing screen checks four refusal grounds: missed deadlines, Medicare beneficiaries, Medicaid beneficiaries, and providers that were actually contracted with the plan [Long Reads, Explained — nJ5Tz7G_LA8 @ 00:08:37]. Any claim failing one check is pulled before filing. Last quarter that screen removed 31 claims that would have produced awards the payer could refuse to honor."
         },
         {
-          "name": "Minimum necessary access and safeguards",
+          "name": "collection_escalation_path",
           "type": "textarea",
-          "prompt": "Specify who needs clinical, payment, and identity information for each task and how access is restricted. Document authentication, encryption, audit logging, and periodic access review against the relevant HIPAA privacy and security requirements.",
-          "example": "The intake contractor can view remittance and plan records; the clinical reviewer receives only necessary encounter material; the growth contractor receives aggregated metrics. MFA, encrypted storage, role-based permissions, and audit events support 45 CFR §§ 164.308, 164.312, and 164.514(d). Access is reviewed monthly and removed immediately when an assignment ends."
+          "prompt": "Map your escalation path for an award still unpaid after the payment deadline: AR follow-up steps, the documents attached to each contact, when you file regulator complaints, and whether a contingency recovery service enters. Note who owns each step.",
+          "example": "Step one: AR call with the signed award letter attached. Step two: bulk complaints to state departments of insurance, treated as pre-litigation rather than single CMS tickets [Apex IONM Solutions — gbhlBlDLViQ @ 00:05:45]. Step three: awards unpaid near two years go to a contingency shop charging 8 percent of the amount recovered, payable after funds arrive [CollectionPro Services LLC — Ahr00pn-Tiw @ 00:01:16]."
         },
         {
-          "name": "Representation and licensing scope",
+          "name": "enforcement_leverage_notes",
           "type": "textarea",
-          "prompt": "Identify permitted representative activities and state-specific licensing questions for collections, claims services, and legal representation. State which professional makes the determination and how the engagement prevents staff from exceeding the authority actually granted by the provider.",
-          "example": "The engagement authorizes document assembly and permitted IDR representation while reserving litigation and jurisdiction disputes requiring legal practice to retained counsel. Counsel evaluates the operating states' collection-agency and unauthorized-practice rules, including Texas Government Code § 81.101 where relevant. Staff receive a written task boundary rather than an assumed nationwide license exemption."
+          "prompt": "Describe the leverage you hold when no private right of action exists and federal fines have not been issued. Include employer-facing pressure, regulatory complaints, and policy advocacy, and state which lever you will pull first against your worst-paying payer.",
+          "example": "A provider group cannot technically sue for unpaid arbitrated awards [Apex IONM Solutions — gbhlBlDLViQ @ 00:02:00], and no penalty has been issued [Long Reads, Explained — nJ5Tz7G_LA8 @ 00:12:00]. Our first lever is the employer angle: Elevance disclosed to employers that it withholds award payments, creating ERISA exposure for those plans [TopMedTalk — 0BcGdvWG_UI @ 00:13:07]."
         },
         {
-          "name": "Incremental-cash contingency addendum",
-          "type": "textarea",
-          "prompt": "Draft the operative share clause with a precise initial-payment baseline, permitted deductions, refund treatment, and zero floor. Exclude baseline collections, patient payments, unpaid determinations, and duplicate charges while explaining provider-level cost netting.",
-          "example": "Operator compensation equals 25% of cleared incremental payer cash above the documented initial payer payment, less unrecovered administrative and entity fees and agreed attributable casework, floored at zero. Baseline payments and patient receipts are excluded. Cohort netting applies only to the expressly identified provider cohort, with later refunds and recoupments reconciled on the next statement."
+          "name": "market_rate_evidence_pull",
+          "type": "text",
+          "prompt": "Record the transparency data you will pull to prove market value before filing: plan, zip code, CPT, and TIN. State the market rate you found as a percentage of Medicare and compare it with what the plan actually paid.",
+          "example": "TIN lookup on the anesthesia group: transparency allowed-amount data filtered by plan, zip, CPT, and TIN showed a market rate near 250 percent of Medicare, while the plan paid 120 percent [The Doctors Lounge — QITUqT322Iw @ 00:41:15]. That gap becomes the opening exhibit, set against plans losing 85 to 90 percent of cases [The Doctors Lounge — QITUqT322Iw @ 00:38:48]."
         },
         {
-          "name": "Fee responsibility and entity refund terms",
+          "name": "oon_benefit_verification_log",
           "type": "textarea",
-          "prompt": "State who pays administrative and entity charges, when deposits are due, and how actual refunds are allocated. Separate the standard prevailing-party refund expectation from dismissal, settlement, withdrawal, and other disposition rules requiring current entity-specific verification.",
-          "example": "The provider advances both illustrative charges: $115 administrative and $600 entity deposit. The administrative charge is modeled as non-refundable. A prevailing-party entity refund reduces case cost only when documented; losing or ineligible cases retain the full deposit loss reserve. Actual dismissal or settlement treatment follows verified applicable instructions, with no assumed favorable refund."
+          "prompt": "For each out-of-network facility case, record when benefits were verified, the allowance methodology and pricer identified, whether the plan pays on UCR, and whether the employer SPD was obtained. Note how many hours elapsed between scheduling and verification.",
+          "example": "ASC case 2291: benefits verified within 24 hours, UCR plan confirmed, SPD pulled from the employer. UCR plans go to the front of the line, since two UCR claims at 60 to 70 percent of charges equal roughly 30 in-network claims [Patriot Group — dUdxVBDLf5w @ 00:08:25]. Follow-up is set at 10 days, not 20."
         },
         {
-          "name": "Offer evidence restrictions and QPA treatment",
+          "name": "negotiation_and_settlement_record",
           "type": "textarea",
-          "prompt": "Define permitted evidence categories and prohibited comparisons for the offer packet. Explain how the QPA is considered alongside relevant allowed information without imposing a presumption unsupported by current governing law or double-counting factors already reflected in pricing.",
-          "example": "The brief considers the QPA and supported information about acuity, training, facility characteristics, and good-faith contracting efforts where applicable. It excludes billed charges, usual-and-customary charge measures, and Medicare or Medicaid rates as prohibited comparison inputs. The reviewer checks current requirements under 45 CFR § 149.510(c)(4) and explains the evidentiary relevance of each exhibit."
+          "prompt": "Document every pre-payment or post-payment negotiation: first offer received, counteroffer made, final agreed number, and the channel used. Explain how the signed form proves the agreed amount and why you did or did not accept a portal settlement offer.",
+          "example": "Repricer opened at 62 percent of charges; we countered, since the rule is never accept the first negotiation offer [Plano Texas — w387XkK0lkk @ 00:09:47], and wrote 'max allowable' on the signed form [Plano Texas — w387XkK0lkk @ 00:28:40]. We refused the portal offer because portals allow only accept or decline [Becker's Hospital Review — 7h4H8g1S01E @ 00:24:23]."
         },
         {
-          "name": "Patient protection and referral compensation",
+          "name": "single_case_agreement_defense",
           "type": "textarea",
-          "prompt": "Describe controls preventing prohibited balance billing and inappropriate referral-linked compensation. Identify patient-cost-sharing treatment and the review required before marketing payments, fee splits, or referral arrangements involving healthcare providers are implemented in any operating state.",
-          "example": "The workflow never bills the patient for the operator's contingency or an IDR shortfall. Provider obligations under 42 U.S.C. § 300gg-131 and 45 CFR § 149.410 are reflected in account instructions. Proposed referral compensation receives a fact-specific review of state fee-splitting rules and 42 U.S.C. § 1320a-7b(b) where relevant; no per-patient commission is launched by default."
+          "prompt": "For every single case agreement you rely on, record the documented proof that no in-network facility exists within 50 miles, the EOB date that starts the out-of-network appeal clock, and the calendared deadline for filing that appeal.",
+          "example": "SCA with UMR, approved, then voided after payment. Our file holds call notes from three competitor facilities confirming none are in network within 50 miles. The EOB is dated March 3, so the appeal deadline is exactly 180 days out, versus 365 in-network [AR Specialist — OLFRzRe0L2A @ 00:06:34]. Manual review is budgeted at about 30 days."
         },
         {
-          "name": "Retention, termination, and incident response",
+          "name": "eob_layering_and_clawback_audit",
           "type": "textarea",
-          "prompt": "Assign retention periods by record category, including HIPAA documentation, contractual records, dispute evidence, and litigation holds. Define incident escalation and termination transfer so deletion automation cannot erase records still required by law, contract, or an active dispute.",
-          "example": "The schedule retains required HIPAA documentation for six years under 45 CFR §§ 164.316(b)(2) and 164.530(j), while separately assessing medical record and dispute retention duties. A suspected disclosure triggers the response plan and 45 CFR § 164.410 assessment. Termination exports authorized records, reconciles reserves, revokes access, and preserves applicable holds before deletion."
+          "prompt": "Before posting any adjustment, audit the EOB for stacked repricing networks and confirm the patient file holds the out-of-network disclosure, financial agreement, and cost-share letter. Record what you found and what you corrected before the adjustment was posted.",
+          "example": "EOB showed two silent PPO discounts layered on one claim, capping the allowable near 35 percent [Collect Rx — Pqx2hpp_cLU @ 00:18:50]; we held posting and appealed. The file had the disclosure and financial agreement but no cost-share letter, so we sent one, avoiding the fee-forgiveness clawback risk seen in Cigna exposure in the millions [Patriot Group — dUdxVBDLf5w @ 00:11:30]."
         }
       ],
-      "completion_gate": "The responsible reviewer signs the authority register, state-route analysis, executed BAA, representation scope, fee addendum, evidence restrictions, and retention schedule before protected records or live disputes enter production."
+      "completion_gate": "Do not advance to Worksheet 5 until every won award is labeled paid, partially paid, or unpaid; every dispute line has a break-even win rate; every single case agreement carries documented 50-mile proof and a calendared 180-day appeal date; and every unpaid award has a named escalation owner."
     },
     {
       "worksheet_id": "ws-05",
       "number": 5,
-      "title": "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker",
-      "purpose": "Automate repetitive intake and deadline work without delegating jurisdiction, clinical judgment, or cash recognition to unsupported predictions. Connect de-identified acquisition evidence to provider pilots, monitor error rates, and preserve manual fallbacks for portal interruptions, uncertain eligibility, and delayed payer remittance.",
-      "chapter_ref": "Q6, Q10",
+      "title": "Superbills, Out-of-Network Benefits, and the Revenue Cycle Engine",
+      "purpose": "Build a clean two-track cash practice model in which superbills or courtesy billing reimburse patients without rejections. Then harden the front-, mid-, and back-end revenue cycle so that registration errors, stalled AR, and silent charge-offs stop draining collections before anyone notices.",
+      "chapter_ref": "Q9-Q10",
       "instructions": [
-        "Map the pipeline from authorized source retrieval through 835 parsing, eligibility review, deadline scheduling, brief assembly, filing, and cash reconciliation. Identify the system of record and responsible person for every state transition rather than relying on informal inbox ownership.",
-        "Evaluate the ERISA and jurisdiction classifier against adjudicated examples, including insured plans, state elections, excluded services, and incomplete documents. Route low-confidence results to review and measure false federal classifications separately because they can consume non-refundable fees.",
-        "Generate briefs from approved evidence templates and case-specific facts with exhibit references. Keep clinical assertions tied to records, screen benchmark content for prohibited measures, and require a named reviewer before any offer or factual statement is submitted.",
-        "Acquire practices through verifiable operational value such as missed-window audits and recovery-ledger diagnostics. Use permissioned case studies with aggregate results, never raw patient records or unqualified favorable-determination statistics presented as universal collection performance.",
-        "Test manual deadline queues, portal outage procedures, backup restoration, and collections escalation before increasing volume. Pause only the affected processing step, preserve statutory deadlines, and avoid inventing an extension or unsupported submission channel when a platform becomes unavailable."
+        "Collect one recent superbill, one courtesy-billed claim, and last month's AR aging report before starting.",
+        "Use real per-CPT charges and real allowed amounts, and never substitute estimates where a remittance already exists.",
+        "Write the benefit-quoting policy as a rule that front desk staff can repeat word for word.",
+        "Confirm payment posting is current to the deposit date before answering any AR follow-up field.",
+        "Report gross charges, net revenue, and cash as three separate numbers in every field that asks about revenue."
       ],
       "fields": [
         {
-          "name": "Pipeline stages and authoritative records",
+          "name": "superbill_required_elements",
           "type": "textarea",
-          "prompt": "Describe each processing stage, its input contract, output record, owner, and failure state. Identify where immutable evidence is stored and how operational status is reconciled with external portal confirmations and cleared cash.",
-          "example": "The pipeline moves through intake, source validation, route review, negotiation, initiation, offer preparation, determination, collection, and settlement. PostgreSQL holds case events; access-controlled object storage holds source documents. A filing coordinator owns portal reconciliation, while a separate collections owner matches EFT traces. Neither a parser success nor a task completion alone advances legal status."
+          "prompt": "Audit one recent superbill line by line and list every required element it carries: provider name and credentials, individual NPI, license number, tax ID, CPT, place of service, diagnosis code, fee, and amount paid. Note any missing field.",
+          "example": "Superbill for client 0417 carried name, credentials, EIN, CPT code, diagnosis, fee, and amount paid, but no individual NPI and no place-of-service code. A missing field is what bounces submissions [Craft Your Practice — tkUfu8WA56U @ 00:05:12]. We added both to the template, and the client's resubmission was accepted on the next cycle without further requests."
         },
         {
-          "name": "835 extraction accuracy and exception queue",
+          "name": "fee_schedule_and_package_pricing",
           "type": "textarea",
-          "prompt": "Set field-level extraction tests for payment amounts, control numbers, service lines, adjustments, and payer identifiers. Define tolerances and exception handling for reversals, corrected remittances, and unmatched deposits before records enter economic calculations or deadline workflows.",
-          "example": "A 200-remittance validation set requires exact agreement on payer payment and claim control number for every automatically accepted record. Three unmatched EFT traces and two corrected claims enter the exception queue. The parser does not infer missing cash; the reviewer resolves each source discrepancy and records the correction before recalculating the recovery base."
+          "prompt": "Write out your per-CPT fee schedule and confirm each charge is identical for every patient and session length. Explain how package pricing and full-hour pricing appear as line-item discounts that match exactly what the patient actually paid.",
+          "example": "One evaluation code and one treatment code, each billed at the same charge for every patient. A ten-visit package appears as full charges with a line-item discount equal to the package savings, so the superbill matches cash paid [Jarod Carter — heiuukmxgss @ 00:07:34]. Packages under four figures are collected in full, not split into payments [Jarod Carter — cA7tBJf4KyY @ 00:10:57]."
         },
         {
-          "name": "ERISA classifier and jurisdiction error budget",
-          "type": "textarea",
-          "prompt": "Specify classifier features, prohibited shortcuts, reviewed labels, and escalation thresholds. Measure false federal routing directly, and require documentary support for funding arrangement and state-rule applicability rather than inferring eligibility from a carrier logo or adjustment code.",
-          "example": "The classifier uses plan documents, funding statements, service setting, and verified state mechanism evidence. In 100 reviewed cases it proposes 72 federal routes, but two prove incorrect, a 2.8% false-route share of those proposals. Automatic routing remains disabled; a reviewer resolves both errors and retrains the decision rules before the next evaluation."
+          "name": "claim_track_choice",
+          "type": "text",
+          "prompt": "State whether each payer lane runs on patient self-submitted superbills or courtesy billing with assignment declined. Explain how you confirm the accept-assignment box stays unchecked and the remit-payment box stays blank so reimbursement goes to the client.",
+          "example": "Two payers are courtesy billed; everyone else gets a monthly superbill. On courtesy claims, accept assignment is left unchecked and the remit-payment box blank [Alicia Murray | The Therapist HQ 🪩 — eXrZnEwRRH4 @ 00:09:00], because selecting no on accept assignment sends the money to the client [Kym Tolson The Traveling Therapist — FpNL1YIlvD0 @ 00:02:12]."
         },
         {
-          "name": "Deadline engine tests and alert ownership",
+          "name": "patient_responsibility_math",
           "type": "textarea",
-          "prompt": "Define calendar fixtures, boundary tests, time-zone handling, extension records, and alert escalation. Test negotiation initiation, negotiation expiration, federal initiation, cooling periods, and post-determination payment separately so a single date helper cannot silently misclassify all deadlines.",
-          "example": "Python unittest fixtures cover federal holidays, Friday receipt, leap day, and year-end transitions. Alerts fire five and two business days before negotiation-related deadlines, with immediate owner escalation inside the final day. The 90-day suspension and 30-day payment obligation use their applicable calendar-day logic rather than reusing the business-day counter."
+          "prompt": "Work one real out-of-network example from charge to patient balance: the fee, the allowed amount, the separate out-of-network deductible status, coinsurance percentage, coinsurance dollars, and any balance bill. Show the arithmetic so the patient can follow every step.",
+          "example": "Charge $250 for the hour; out-of-network allowed amount $100; deductible met; coinsurance 35 percent equals $35; balance bill $150 because assignment was not accepted; patient owes $185 total [The Private Practice Outsider — TNKYk9V0ty8 @ 00:01:58]. The allowed amount combines the benefit plan and the fee schedule, so it is not the fee schedule itself [Inlera University — 3JOMCnMqhvI @ 00:01:27]."
         },
         {
-          "name": "Evidence assembler and benchmark controls",
+          "name": "benefit_quoting_policy",
           "type": "textarea",
-          "prompt": "Describe how the brief builder extracts facts, links exhibits, normalizes payment amounts, and screens benchmark material. Require human verification of clinical acuity and provider qualifications and record the licensed source of every retained pricing reference.",
-          "example": "The assembler populates a standard offer packet from approved facts and exhibit IDs, leaving no unsupported clinical assertion for submission. A reviewer checks acuity against the encounter record and inspects FAIR Health metric definitions. Charge-based material is excluded; any permissible retained benchmark includes source rights, methodology, and a case-specific relevance explanation."
+          "prompt": "Decide whether your practice will quote out-of-network benefits to patients or route them to a self-service checker. Record the policy, the tool if any, its monthly cost, and how you handle blame when a claim later denies.",
+          "example": "Staff no longer quote benefits, since the practice gets blamed when claims deny. Instead, the fees page embeds the Mentaya checker at $29 a month after a free month, with a schedule-now button underneath [Alicia Murray | The Therapist HQ 🪩 — eXrZnEwRRH4 @ 00:23:09]. Patients see their own estimate, and the intake form records that the estimate came from their plan."
         },
         {
-          "name": "Provider acquisition offer and funnel economics",
-          "type": "textarea",
-          "prompt": "Define the target practice, outreach message, diagnostic deliverable, and conversion denominator. Calculate acquisition cost from actual spend and signed providers, and distinguish a signed pilot from collectible claims or recognized operator revenue.",
-          "example": "The target is an independent emergency physician group with usable 835 exports and documented out-of-network inventory. A $4,800 campaign reaches 80 practices, produces 12 discovery calls, four diagnostic reviews, and two signed pilots. Acquisition cost is $2,400 per signed provider; neither signature creates revenue before incremental recovery and earned compensation."
+          "name": "payer_identification_and_submission_cadence",
+          "type": "text",
+          "prompt": "Record the identifiers you give payers on every out-of-network call, the order you give them, and how often superbills are issued. Note the shortest member submission window among your payers and how your cadence stays inside it.",
+          "example": "NPI first, then EIN, because payers never locate an out-of-network provider by tax ID but find the NPI right away [Dr. Lauren Baker — zsaby8gJNmg @ 00:13:48]. One plan caps member submissions at ninety days, so superbills go out monthly through the software instead of letting clients hoard six months of paperwork [Craft Your Practice — tkUfu8WA56U @ 00:09:32]."
         },
         {
-          "name": "Proof package and permissioned case study",
+          "name": "contract_drop_test",
           "type": "textarea",
-          "prompt": "Choose outcome measures that communicate operational value without exposing patient information or equating favorable decisions with collected money. Record provider publication permission, aggregation method, observation period, and limitations caused by pending cases or incomplete collections.",
-          "example": "The provider-approved case study reports 40 submitted disputes, 24 favorable determinations, 18 fully collected favorable cases, three partially collected favorable cases, and three unpaid favorable cases at the measurement date. It omits patient identifiers and claim-level clinical details. Publication occurs only after permission and privacy review of the actual aggregate presentation."
+          "prompt": "Before dropping any payer contract, compare what that payer pays on full out-of-network charges with your self-pay rate. Record both numbers per visit, the payer names, and your decision on whether going out of network raises net revenue.",
+          "example": "Benchmark case: a coaching client with a self-pay rate near $179 sends full charges to two popular payers and collects about $220 a visit [Jarod Carter — cA7tBJf4KyY @ 00:06:06]. Our own test showed one payer at $205 out of network against our $170 self-pay rate, so that contract was dropped and full charges now go out."
         },
         {
-          "name": "Portal outage and manual continuity procedure",
+          "name": "front_end_denial_prevention",
           "type": "textarea",
-          "prompt": "Specify the outage evidence, manual task queue, support contact, and authority needed for alternative filing or deadline relief. Explain how staff preserve proof and avoid assuming that downtime automatically extends a statutory or regulatory deadline.",
-          "example": "When the portal becomes unavailable two business days before initiation expires, the coordinator records timestamps, screenshots, and support ticket details, then escalates immediately. Staff use only currently authorized alternative procedures or documented relief. The manual queue preserves claim priority and evidence; it never marks an unsent filing complete."
+          "prompt": "Describe your registration and financial-clearance checks, including when eligibility is verified, who confirms demographic details, and how fast clean claims drop. Name one front-end error that produced a denial in the last quarter and the control added afterward.",
+          "example": "Eligibility is verified the night before, claims are scrubbed per payer and dropped within 24 to 48 hours. Last quarter a missed middle initial produced a hard denial 30 days later, matching the warning that over 80 percent of denials start in registration [RCMOpsPro — RddJn-tA3OM @ 00:00:40]. Front desk now reads the name back against the card."
         },
         {
-          "name": "Delayed-remittance fallback and cash throttling",
+          "name": "ar_follow_up_rules",
           "type": "textarea",
-          "prompt": "Define aged-recovery buckets, collection ownership, documentation requirements, and volume limits when payer cash lags. Separate provider reserve sufficiency from operator runway and describe the escalation path for determinations that remain unpaid after the applicable deadline.",
-          "example": "The dashboard separates amounts due within 30 days, overdue by 1–30 days, and overdue by more than 30 days, measured against the applicable due date. If operator cash falls below $5,000, discretionary acquisition pauses. Collections staff assemble determination, notice, and remittance evidence for payer escalation and the appropriate enforcement channel."
+          "prompt": "Write your AR follow-up rules: posting status required before calls begin, minimum claim age before a call, daily account targets per specialist, payer buckets used, and how notes are left so the next caller never repeats research.",
+          "example": "No calls until posting is current to the bank-deposit date and reconciled with the bookkeeper [Inlera University — RvLjKE1S1eU @ 00:25:58]. Claims under three weeks old are skipped; each specialist works 40 to 60 accounts daily. Medicare Advantage sits in its own bucket, since its share of AR over 90 days rose from 19 to 36 percent [PayerWatch — cePrn8Rhav8 @ 00:49:55]."
         },
         {
-          "name": "Change control and measurable automation benefit",
+          "name": "revenue_reporting_and_zero_pay_triage",
           "type": "textarea",
-          "prompt": "Record the baseline labor time, proposed automated step, test population, error measures, and rollback owner. Require an observable improvement without increased deadline or eligibility errors, and keep production access separate from experimental processing environments.",
-          "example": "A brief-assembly change reduces median preparation time from 90 to 55 minutes across 20 reviewed cases, saving 700 minutes, or 11 hours 40 minutes. Every offer still receives review. One incorrect exhibit link triggers rollback to the prior template until corrected; the release record preserves both the benefit measurement and defect evidence."
+          "prompt": "Explain how you report gross charges, net revenue, and cash separately each month, and how you triage zero-pay claims by reason code. Include the monthly AR check against expected volume that would expose silent charge-offs or payer-matrix shortcuts.",
+          "example": "Gross, net, and cash run as three separate lines, because a payer-mix shift can send gross off the charts while net plummets [PayerWatch — cePrn8Rhav8 @ 00:26:11]. Zero-pays are sorted into deductible, out-of-network, maxed benefits, and termed policy; termed policies trigger a patient call and updates to both PM and EHR [Amazing Charts — eKRUeJa5ZzQ @ 00:25:53]."
         }
       ],
-      "completion_gate": "The automation owner demonstrates tested calendar logic, reviewed jurisdiction classifications, source-linked briefs, duplicate suppression, and a manual continuity drill; acquisition material uses authorized aggregate evidence and distinguishes decisions from collections."
+      "completion_gate": "Do not advance to Worksheet 6 until the superbill template carries every required element, per-CPT charges are identical across patients, the claim track for each payer is written down, posting is current to the deposit date, and gross, net, and cash are reported as separate numbers."
     },
     {
       "worksheet_id": "ws-06",
       "number": 6,
-      "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
-      "purpose": "Launch a controlled provider pilot within 30 days while respecting longer statutory and collection cycles. Assign small-team ownership, track eligible inventory and collected contribution, reconcile canonical targets, and build transferable records that support management continuity, diligence, and eventual ownership transition without overstating pipeline value.",
-      "chapter_ref": "Q11, Q12",
+      "title": "Decoding Remittances and Scaling Back-End Recovery",
+      "purpose": "Read every remittance down to group codes, CARCs, and RARCs, and reconcile each batch to the bank deposit. Expose contract underpayments and recurring denial causes. Build a financial case for automation and vendor controls in which humans still sign exceptions and control the release of held claims.",
+      "chapter_ref": "Q11-Q12",
       "instructions": [
-        "Treat the first month as a setup and qualified-pipeline sprint, not a promise of completed arbitration cash. The published time to first deal is one to four months, and newly initiated negotiation commonly extends beyond a 30-calendar-day launch plan.",
-        "Assign a full-time operator and two contractors to distinct intake, evidence, deadline, and reconciliation responsibilities. Document backup coverage for every time-sensitive task and preserve independent checking even when one person owns several routine operating functions.",
-        "Measure eligible inventory, timely notices, dismissal reasons, favorable determinations, cleared incremental cash, and earned operator shares as separate metrics. Use dated cohorts and denominators so growing submission volume cannot conceal collection delays or worsening eligibility accuracy.",
-        "Compare the actual forecast with the canonical Conservative, Base, and Scaled cases without rewriting their economics. Scale only after observed delivery capacity, reserve funding, quality, and collection performance support the next workload; headcount alone does not create recoverable inventory.",
-        "Build the exit-readiness ledger from reproducible records, assignable contracts, protected-information controls, and reconciled earnings. Distinguish earned receivables from unpaid determinations and speculative pipeline, and restrict diligence access until appropriate agreements and data-minimization arrangements are established."
+        "Export the last ten 835 files and the matching bank deposits before answering any field.",
+        "Open raw 835 files only in a plain text editor, and never in a Word-type document editor that corrupts the formatting.",
+        "Stop posting any claim that fails the balance check, and record the result of the investigation.",
+        "Map every denial and recovery back to the original billing month before calculating any denial rate.",
+        "Require a dollar outcome, a payback month, and a named human reviewer for every automation or vendor proposal."
       ],
       "fields": [
         {
-          "name": "Days 1–7 operating foundation",
+          "name": "group_code_triage",
           "type": "textarea",
-          "prompt": "Specify first-week deliverables, owners, dependencies, and acceptance evidence for contracts, security, banking, source records, and jurisdiction review. Identify which activities can proceed before protected information arrives and which require executed agreements.",
-          "example": "By day 3, the owner completes the service agreement and incremental-cash addendum. By day 5, the BAA, role permissions, and reserve accounting are active. By day 7, intake receives 60 authorized sample claims and records their initial payment evidence. No production clinical record enters an unapproved service during setup."
+          "prompt": "Pull your last ten remittances and sort every adjustment by group code. Record which CO lines are true contractual write-offs, which PR lines the patient may owe, and which CARCs require action instead of routine posting.",
+          "example": "Of 212 adjustment lines, 168 were CO45 contractual write-offs, 31 were PR1 deductible amounts moved to patient statements, and 13 carried 16, 29, or 197 and went to the action queue. Confusing CO with PR is how patients end up billed for write-offs [Health Weave RCM LLC — bPFE9F4Y_Y4 @ 00:03:18], so a second reviewer checks every PR line."
         },
         {
-          "name": "Days 8–14 underwriting and calendar validation",
+          "name": "claim_balance_check",
           "type": "textarea",
-          "prompt": "Define the second-week claim-screening target, document requirements, calendar tests, and reviewer sign-offs. Separate accepted cases from unresolved cases and identify how missing evidence is obtained without allowing a filing deadline to lapse.",
-          "example": "The intake contractor screens 60 claims and proposes 20 pilot candidates. The operator confirms 15 and holds five for plan documentation. A second reviewer recalculates every candidate deadline and checks the holiday calendar. Cases already near expiry receive same-day attention rather than waiting for the weekly launch meeting."
+          "prompt": "Run the balance check on one claim from your newest 835: charged minus contractual adjustment equals allowed, and paid plus patient share equals allowed. Show every number, and state what you did when the math did not balance.",
+          "example": "Claim billed $200; CO45 adjustment $80 leaves $120 allowed; PR1 deductible $100 plus $20 paid equals $120, so the line balances [Health Weave RCM LLC — bPFE9F4Y_Y4 @ 00:05:52]. A second claim missed by $14, so posting stopped and we investigated before touching the account, as the balance rule requires [Michael Roberts — HolIPG8-TV8 @ 00:01:39]."
         },
         {
-          "name": "Days 15–21 negotiation and evidence preparation",
-          "type": "textarea",
-          "prompt": "Set the authorized negotiation workload, notice verification standard, evidence assembly target, and fee-funding check. Distinguish preparation from federal initiation and preserve the full required negotiation period for each accepted claim.",
-          "example": "The coordinator sends 15 timely negotiation notices with recipient and delivery evidence. Clinical review completes eight draft evidence packets, while the provider funds the agreed reserve. No case enters IDR merely because the launch sprint reaches day 21; its own negotiation expiration and eligibility control the next action."
+          "name": "zero_paid_line_review",
+          "type": "text",
+          "prompt": "List every zero-paid line in the current posting batch and classify each as a true denial or a deductible application. For each, record the allowed amount, the deductible column, the group code, and where the balance was routed.",
+          "example": "Nine zero-paid lines this batch. Seven showed the allowed amount equal to the deductible column with PR1, so they posted to the patient rather than the denial queue [Inlera University — -zx82Gn2h04 @ 00:04:18]. Two were true denials with CARC 16 and went to correction. Secondary coverage was checked before any patient statement went out."
         },
         {
-          "name": "Days 22–30 rehearsal and first operating review",
+          "name": "deposit_reconciliation",
           "type": "textarea",
-          "prompt": "Describe end-of-month deliverables that demonstrate readiness without inventing completed recoveries. Include a submission rehearsal, ledger reconciliation, outage drill, provider report, and next-month calendar for proceedings still within negotiation.",
-          "example": "By day 30, the team rehearses one synthetic filing, reconciles the provider reserve, tests the portal-outage checklist, and issues a status report covering all 20 candidates. Fifteen negotiations remain tracked on their actual clocks; the report records zero earned contingency revenue unless qualifying incremental cash has actually cleared."
+          "prompt": "Describe how each batch is reconciled to the bank: matching the TRN trace number to the EFT, matching deposit totals to remittance totals, working PLB recoupment lines, and handling any EFT that arrived without a remittance.",
+          "example": "The TRN on Tuesday's 835 matched the EFT, but the deposit ran $312 short of the remittance total; a PLB recoupment line explained the gap and was worked before closing [Health Weave RCM LLC — bPFE9F4Y_Y4 @ 00:09:19]. One EFT arrived with no remittance, so we pulled the portal PDF before posting [The Claim Game X Practice Solutions — FE6Ns41GFH0 @ 00:11:04]."
         },
         {
-          "name": "Pod roles, capacity, and backup ownership",
+          "name": "contract_underpayment_audit",
           "type": "textarea",
-          "prompt": "Assign primary and backup responsibility for eligibility, deadlines, clinical evidence, submission, collections, and settlement review. State weekly capacity assumptions and show how independent review survives absences within the specified small-team configurations.",
-          "example": "The Base pod uses 1 FT operator plus 2 contractors: one handles intake and calendars, the other evidence preparation and second checks. The operator owns filing and collections, with trained backup coverage. The Scaled pod adds one FT case manager and one contractor, reaching 2 FT + 3 C, or five people."
+          "prompt": "Match a sample of remittances against your loaded fee schedules and contracts. Record the allowed amount each payer used, the contracted amount, the per-claim variance, the annual volume, and the projected dollar gap if the variance continues.",
+          "example": "Allowed amounts on one payer ran 75 cents to $1 below contract on every claim [The Claim Game X Practice Solutions — FE6Ns41GFH0 @ 00:13:50]. Across 40,000 annual claims that gap reaches up to $40,000. A similar 60-day remittance audit cut accounts receivable 30 to 40 percent [The Claim Game X Practice Solutions — FE6Ns41GFH0 @ 00:15:33], so posting now includes a contract check."
         },
         {
-          "name": "Weekly KPI definitions and thresholds",
+          "name": "recurring_reason_code_root_cause",
           "type": "textarea",
-          "prompt": "Define each KPI numerator, denominator, measurement period, owner, and action threshold. Include deadline adherence, eligibility loss, cash realization, cycle time, and earned contribution without combining materially different populations into one success percentage.",
-          "example": "The weekly scorecard shows 15 of 15 notices timely, 20 of 60 sample claims accepted, and five candidates initially requiring additional plan evidence. Later cohorts separately report favorable outcomes and cleared incremental cash divided by additional payer amounts due. Any missed statutory deadline triggers immediate incident review, regardless of revenue performance."
+          "prompt": "Identify the three reason codes that recur most across your remittances this quarter. For each, trace the upstream cause, name the fix applied at the source, and record whether the code dropped after the fix instead of being resubmitted repeatedly.",
+          "example": "CARC 197 led the list. Before rewriting codes, the auth field was checked: 70553 approved and 70551 billed was supported by the crosswalk, and the real error was a case number in the authorization field [RCM Pulse Academy — Ut5VjfFul68 @ 00:12:34]. Fixing the field template cut repeats, since the fix belongs upstream [Health Weave RCM LLC — bPFE9F4Y_Y4 @ 00:09:51]."
         },
         {
-          "name": "Canonical scorecard and growth decision",
-          "type": "textarea",
-          "prompt": "Record the volume's ranking, score components, canonical annual cases, and actual forecast variance. Explain which observed operational conditions justify moving between staffing levels without presenting the model's profit targets as already earned.",
-          "example": "Volume 045 ranks #09 of 49 with 94/100: 24 revenue, 24 margin, 20 team efficiency, 13 startup accessibility, and 13 automation. Canonical revenue/profit pairs remain $110,000/$33,000, $505,000/$217,150, and $900,000/$504,000. The growth decision uses actual eligible inventory, collection lags, funded reserves, and reviewed capacity, not the score alone."
+          "name": "matched_denial_rate",
+          "type": "text",
+          "prompt": "Calculate your matched denial rate by mapping denials and recoveries back to the original billing month. Record the gross denial percentage, the recovered percentage, the resulting net denial rate, and the payer contributing the largest share.",
+          "example": "Mapped to the June billing month, 15 percent of claims denied and 7 percent were recovered, exposing the true net denial rate [Practical Data Solutions - Healthcare Analytics — 4SW5Ihdk8ps @ 00:20:29]. Eligibility drove the largest share, consistent with 24 percent of denials coming from eligibility against a 12 percent industry denial rate [OpenBots — ZpELLvKSrF8 @ 00:00:25]."
         },
         {
-          "name": "Risk register and stop-spend triggers",
+          "name": "automation_readiness_case",
           "type": "textarea",
-          "prompt": "List the highest-impact failure modes, leading indicators, loss exposure, owners, and specific fallback actions. Include ineligible filings, same-party cooling errors, delayed remittance, privacy incidents, and insufficient operator working capital rather than one generic risk category.",
-          "example": "Two eligibility dismissals in the first ten filings stop new fee commitments for route revalidation. A detected cooling conflict removes the affected claim from the proposed batch. Operator cash below $5,000 pauses discretionary acquisition, while overdue payer amounts enter the documented collections escalation queue. Each trigger names an owner and a restart test."
+          "prompt": "Build the financial case for your first automation project. Record the starting workflow, data cleanliness issues such as coordination of benefits, cost per manual check, cost per reworked denial, expected payback month, and the human review step that remains.",
+          "example": "Starting point is eligibility, the easiest to automate and hardest to ignore [OpenBots — ZpELLvKSrF8 @ 00:25:41]. Coordination of benefits drives about half of eligibility errors, so COB data gets cleaned first [OpenBots — ZpELLvKSrF8 @ 00:14:02]. The model prices $5 per manual check and $118 per reworked denial, with payback expected by month 3 to 4. Humans still sign exceptions."
         },
         {
-          "name": "Transferable contracts and diligence evidence",
+          "name": "vendor_contract_controls",
           "type": "textarea",
-          "prompt": "Identify contract assignment provisions, termination rights, concentration exposure, data-access conditions, staff dependencies, and source-system documentation needed for continuity. Design diligence around minimized information first and obtain the required permissions before external disclosure.",
-          "example": "The diligence index contains executed provider agreements, assignment clauses, aggregate cohort reports, SOP versions, and reconciled earnings schedules. A buyer initially receives provider-coded summaries rather than clinical files. Required provider permissions and appropriate confidentiality and health-information arrangements precede expanded access; the operator records who accessed each authorized document."
+          "prompt": "List the controls you will write into any AI or RCM vendor contract: required KPIs, reporting feedback loops, appeal timeframes, specialty-matched medical necessity review, and the test you will use to detect repackaged RPA sold as AI.",
+          "example": "The draft contract names denial rate and appeal turnaround as KPIs with a monthly feedback report, and screens claimed AI for repackaged RPA, because a vendor relationship should not be an annuity [HealthLeaders Media — BKBNIfZ081U @ 01:00:19]. Payer contracts now require same-specialty medical necessity review, since we get the behavior we tolerate [HealthLeaders Media — BKBNIfZ081U @ 00:10:32]."
         },
         {
-          "name": "Exit-quality earnings and handoff ledger",
+          "name": "idr_volume_and_hold_discipline",
           "type": "textarea",
-          "prompt": "Reconcile reported earnings to earned operator shares, cleared cash, expenses, reserve liabilities, refunds, and recoupments. Separate collected value from unpaid determinations and speculative inventory, then define the handoff evidence needed for another operator to reproduce the close.",
-          "example": "The Base diligence bridge starts with $505,000 earned operator revenue and $287,850 operating expense, yielding $217,150 owner net profit. Provider reserves remain liabilities, and unpaid awards are disclosed separately rather than added to revenue. The successor receives case-level receipt links, cost allocations, calendar ownership, and signed reconciliation records."
+          "prompt": "Describe how back-end automation will handle IDR submission volume and held claims. Record the expected award multiple of QPA, the win rate assumed, the internal release clock, and the rule that stops staff from releasing held claims under deadline pressure.",
+          "example": "Modeling assumes awards at 2 to 3 times QPA and a 75 percent win rate, the range reported by a team handling 200,000 IDR submissions a month [HealthLeaders Media — BKBNIfZ081U @ 00:55:37]. Held claims are never released because a deadline feels close; the internal 4 p.m. clock stays separate from the payer clock [RCM Pulse Academy — Ut5VjfFul68 @ 00:18:57]."
         }
       ],
-      "completion_gate": "The owner signs the 30-day deliverable register, role coverage, KPI definitions, risk responses, canonical reconciliation, and handoff index. Launch completion means a controlled operating system and documented pipeline, not assumed awards or uncollected revenue."
+      "completion_gate": "Part 2 is complete only when every batch reconciles to its deposit, every PLB line is worked, every zero-paid line is classified, the top three recurring codes have upstream fixes, and every automation or vendor proposal carries KPIs, a payback month, and a named human review step."
     }
   ]
 }

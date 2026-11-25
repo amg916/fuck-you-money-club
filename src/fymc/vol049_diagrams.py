@@ -1,769 +1,462 @@
-from __future__ import annotations
+"""Volume 049 diagram data: Regulated Prediction-Market Terminals & Licensed iGaming Affiliates."""
 
-VOLUME_049_SUBTITLE = (
-    "The Complete Playbook for Regulated Prediction-Market Terminals and Licensed "
-    "iGaming Affiliates: $75,000-$650,000 USD in Annual Operator Revenue, "
-    "Starting with a 1 FT + 2 C Pod of 3 People"
+from typing import Dict, List
+
+VOLUME_049_SUBTITLE: str = (
+    "Cache the catalog, normalize Kalshi and Polymarket, gate every cross-venue pair on "
+    "equivalence and book depth, make markets where retail buys longshots, read the rules "
+    "before the first order, and run every affiliate deal through NGR math, FTD-first traffic "
+    "and registration checks"
 )
 
-VOLUME_049_POSITIONING_ALTERNATIVES = [
+
+def build_volume_049_diagrams_data() -> List[Dict]:
+    """Return the eight Volume 049 diagram dicts built from attributed practitioner testimony."""
+    return [
+        {
+            "diagram_id": "diag-01-prediction-market-terminal-wiring",
+            "chapter_number": 1,
+            "title": "Wiring a Prediction-Market Terminal in Five Steps",
+            "subtitle": "From a cached Kalshi catalog to a capped, logged fill-or-kill order",
+            "chart_type": "process_flow",
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Cache the Kalshi catalog",
+                    "value": "Step 1",
+                    "detail": (
+                        "Page roughly 30,000 events at 200 per request; the cold load took 193 seconds "
+                        "and 1.5 seconds from the Streamlit cache, with an invalidation rule because odds keep moving."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Normalize the two venue schemas",
+                    "value": "Step 2",
+                    "detail": (
+                        "Kalshi and Polymarket share almost no IDs, field names or order-book shapes; "
+                        "Predictify covers 16 venues through one normalized API, free tier 25,000 credits and 7 days of history."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Gate every pair on equivalence",
+                    "value": "Step 3",
+                    "detail": (
+                        "Run each cross-venue pair through the equivalence verdict; a 3-cent gap between "
+                        "markets judged not equivalent is not a trade."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Make the model read the contract rules",
+                    "value": "Step 4",
+                    "detail": (
+                        "Read the rules or force the LLM to read them; Perplexity structured output works about "
+                        "90% of the time, so clean the string before any order call."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Dry-run, then fill-or-kill",
+                    "value": "Step 5",
+                    "detail": (
+                        "Keep the $10 cap, read the snapshot, estimate and trade-or-skip reason in the logs, then "
+                        "mimic a market order with fill-or-kill plus an aggressive yes price; RSA keys stay in a .env file."
+                    ),
+                },
+            ],
+            "caption": (
+                "Practitioners wire a split stack: Kalshi for the regulated, KYC'd fiat account and Polymarket "
+                "for crypto-native volume, joined by a normalization layer and gated before any live order."
+            ),
+            "assumptions_note": (
+                "Step order is a synthesis of separate practitioner workflows; every figure is as reported by the "
+                "named speaker, and settlement lag of about an hour to more than 12 hours after close should be budgeted."
+            ),
+            "note": (
+                "Attributed to Part Time Larry (Ib0BEFKAvn0), OngPredicts (HtGMBJ7ynjs, OEhjqCpa1Uw, kDOrvOpgzjE), "
+                "Robot Traders (yYjo1lzNoGI) and Defined (LefzH8sYzRI)."
+            ),
+        },
+        {
+            "diagram_id": "diag-02-odds-data-pipe-freshness-funnel",
+            "chapter_number": 6,
+            "title": "The Odds Data-Pipe Freshness Funnel",
+            "subtitle": "Rejecting stale feeds down to a 5-second refresh and a priced cross-book gap",
+            "chart_type": "funnel",
+            "stages": [
+                {
+                    "label": "Reject 5-minute delayed feeds",
+                    "value": 300,
+                    "display": "300 seconds of delay",
+                    "conversion": "Baseline to reject",
+                    "detail": (
+                        "OddsJam dismisses five-minute delayed feeds as useless when lines move on injury news."
+                    ),
+                },
+                {
+                    "label": "Demand a 99.9 uptime floor",
+                    "value": 99.9,
+                    "display": "99.9 uptime",
+                    "conversion": "Feed qualifies on availability",
+                    "detail": (
+                        "OddsJam cites 99.9 uptime alongside sportsbook and market coverage when pitching the API."
+                    ),
+                },
+                {
+                    "label": "Cache responses for 30 seconds",
+                    "value": 30,
+                    "display": "30-second cache and refresh",
+                    "conversion": "Dashboard refresh matches the cache",
+                    "detail": (
+                        "SportsGameOdds caches the events response for 30 seconds; trim oddIDs, pass a bookmakerID, "
+                        "keep the key in .env.local on the server and send it in the X-API-Key header."
+                    ),
+                },
+                {
+                    "label": "Surface the cross-book gap",
+                    "value": 12.5,
+                    "display": "12.5% spread between -167 and +300",
+                    "conversion": "Gap becomes a locked edge",
+                    "detail": (
+                        "Brandon of DingerStats flags a Rangers-Angels game where two books priced sides 12.5% apart."
+                    ),
+                },
+                {
+                    "label": "Act on a 5-second refresh",
+                    "value": 5,
+                    "display": "5-second refresh on most markets",
+                    "conversion": "Price acted on while still live",
+                    "detail": (
+                        "OddsJam pushes five-second refresh on most markets so the gap is still there when the bet goes in."
+                    ),
+                },
+            ],
+            "caption": (
+                "Odds operators agree latency and coverage decide value: reject delayed feeds, cache deliberately, "
+                "and only act on gaps priced from fresh lines."
+            ),
+            "assumptions_note": (
+                "Stage values carry their reported units (seconds, uptime, percent spread) and are ordered as a "
+                "pipeline, not as a measured conversion ratio between stages."
+            ),
+            "note": (
+                "Attributed to OddsJam (Sports Betting Strategy & Education, ZTKIge6SyQI and Gjuo-nBvRiM) and "
+                "SportsGameOdds API (JXdlRbDVFNY, auctQZC3iOE)."
+            ),
+        },
+        {
+            "diagram_id": "diag-03-pro-desk-leakage-waterfall",
+            "chapter_number": 3,
+            "title": "Pro Desk Leakage Stress Test",
+            "subtitle": "How cross-book hedging, fee load and a rules miss erode a $100K book",
+            "chart_type": "waterfall",
+            "bars": [
+                {"label": "Up on FanDuel", "value": 100000, "display": "$100K", "kind": "total"},
+                {"label": "Down on DraftKings", "value": 20000, "display": "-$20K", "kind": "deduction"},
+                {"label": "Net year-end book", "value": 80000, "display": "$80K", "kind": "result"},
+                {"label": "One month of order-book fee load", "value": 10000, "display": "-$10K", "kind": "deduction"},
+                {"label": "NASCAR pole rules loss", "value": 35000, "display": "-$35K", "kind": "deduction"},
+                {"label": "Remaining after leakage", "value": 35000, "display": "$35K", "kind": "result"},
+            ],
+            "caption": (
+                "Pro desks find the edge is structural, with makers earning about +2.5% per trade against takers, "
+                "but the gains leak through cross-book exposure, software fees and resolution wording."
+            ),
+            "assumptions_note": (
+                "Composite stress test stacking separately reported figures from different traders; the $80K and $35K "
+                "results are arithmetic on those figures, and the $10K is the fee load at about $0.02 per contract on "
+                "roughly $5M of monthly volume."
+            ),
+            "note": (
+                "Attributed to SharpMoney (O3v0_n4fZLQ) for the FanDuel and DraftKings hedge, and Inside Prediction "
+                "Markets (tM5MKtoBoZ0, ieRL4BXtMGA) for Clay's fee load and Steven's $35K NASCAR loss."
+            ),
+        },
+        {
+            "diagram_id": "diag-04-live-trading-latency-ladder",
+            "chapter_number": 2,
+            "title": "The Live-Trading Latency Ladder",
+            "subtitle": "Seconds separating consumer signals from the traders already moving the price",
+            "chart_type": "horizontal_bars",
+            "unit": "seconds",
+            "bars": [
+                {"label": "OddsJam odds refresh", "min": 5, "max": 5, "typical": 5, "display": "5 seconds"},
+                {"label": "ESPN Gamecast lead over TV", "min": 5, "max": 15, "typical": 10, "display": "5 to 15 seconds"},
+                {"label": "Consumer stream delay", "min": 7, "max": 30, "typical": 10, "display": "7, 10 or up to 30 seconds"},
+                {"label": "Free feed lag", "min": 15, "max": 30, "typical": 22.5, "display": "15 to 30 seconds"},
+                {"label": "Dashboard cache window", "min": 30, "max": 30, "typical": 30, "display": "30 seconds"},
+            ],
+            "caption": (
+                "Latency is the hard ceiling on live cross-venue trading: an ESPN-fed Kalshi bot lost money as Kalshi "
+                "moved before the free signal, while pro feeds run near $5,000 a month."
+            ),
+            "assumptions_note": (
+                "Typical values are the midpoint of the stated range where no point estimate was given (Gamecast, free "
+                "feed); the consumer stream typical uses the 10-second figure named by the speaker. Refresh and cache "
+                "bars come from odds-API practitioners for comparison."
+            ),
+            "note": (
+                "Attributed to Part Time Larry (bA_NUrMJuw4), Whale Slots (QpjzafRRmjQ), OddsJam (ZTKIge6SyQI) and "
+                "SportsGameOdds API (JXdlRbDVFNY)."
+            ),
+        },
+        {
+            "diagram_id": "diag-05-event-contract-trading-and-listing-gates",
+            "chapter_number": 5,
+            "title": "Event-Contract Trading and Listing Gates",
+            "subtitle": "Four checks before a trade or a listing reaches a registered DCM",
+            "chart_type": "decision_tree",
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": "Is the trade free of information from your job, your campaign or your employer?",
+                    "pass_next": "G2",
+                    "fail_action": (
+                        "Kill the trade; a signed confidentiality agreement turns it into misappropriation and the CFTC will come after you."
+                    ),
+                },
+                {
+                    "gate": "G2",
+                    "question": "Is the position free of any public misstatement meant to move price?",
+                    "pass_next": "G3",
+                    "fail_action": (
+                        "Stop; pushing misstatements is market manipulation with or without insider-trading liability."
+                    ),
+                },
+                {
+                    "gate": "G3",
+                    "question": (
+                        "For a mention contract, are potential controllers and known insiders identified, with position "
+                        "limits, accountability, reporting and surveillance calibrated to them?"
+                    ),
+                    "pass_next": "G4",
+                    "fail_action": "Hold the listing until the insider map and surveillance calibration are done.",
+                },
+                {
+                    "gate": "G4",
+                    "question": "Do the terms of any geopolitical contract expressly carve out war pathways?",
+                    "pass_next": "List on a registered DCM operating under its 23 core principles.",
+                    "fail_action": (
+                        "Redraft; under the proposal a facially neutral 'facility remains functional' contract involves war unless carved out."
+                    ),
+                },
+            ],
+            "caption": (
+                "Insider trading and manipulation rules apply to prediction markets; a teleprompter operator's roughly "
+                "50 mention-market trades drew a $65,000 penalty after the up-to-25% cooperation discount."
+            ),
+            "assumptions_note": (
+                "Gate order is a synthesis of separate practitioner guidance; jurisdiction remains contested as Nevada "
+                "and Massachusetts sue directly in state court."
+            ),
+            "note": (
+                "Attributed to NEXTPredict (uh3GgMs9ha8, Miller), Profeissor.com Digital Assets, AI & FinTech "
+                "(YIkTrxNRVlc, 4Vqws7tSo8E, G-sfCPFFZ5o) and A Lawyer In Finance Explains (MHeX-gRNpCE)."
+            ),
+        },
+        {
+            "diagram_id": "diag-06-product-first-affiliate-traffic-team",
+            "chapter_number": 11,
+            "title": "Product-First Affiliate Traffic Architecture",
+            "subtitle": "Owning a product, a tool or an audience instead of renting vanity traffic",
+            "chart_type": "org_architecture",
+            "center": {
+                "role": "Product-first affiliate owner",
+                "headcount": "Not reported by practitioners",
+                "focus": "Own the product, tool or audience; SEO is where player value is highest",
+            },
+            "spokes": [
+                {
+                    "role": "Technical SEO and link lead",
+                    "type": "Organic search",
+                    "kpi": (
+                        "Content confirmed visible to Google before any link is bought; about 7% of links lost per year "
+                        "recovered via Majestic and Giga Indexer"
+                    ),
+                },
+                {
+                    "role": "AI search lead",
+                    "type": "Generative engine visibility",
+                    "kpi": (
+                        "Bing Webmaster Tools live and cited listicles reverse-engineered; at least two of domain, "
+                        "article and anchor relevance"
+                    ),
+                },
+                {
+                    "role": "Owned audience lead",
+                    "type": "App, email and Telegram capture",
+                    "kpi": "20%+ conversion into banner click, subscription or add-to-bet-slip versus well under 1%",
+                },
+                {
+                    "role": "Paid acquisition lead",
+                    "type": "PPC and paid social",
+                    "kpi": "Optimized to FTDs not sign-ups, bots filtered, no fast scaling while CPC climbs 40 to 80% at peaks",
+                },
+            ],
+            "caption": (
+                "Content-only SEO is over; winners pair search with owned audiences and FTD-optimized paid traffic, "
+                "with revshare players worth $500 to $2,000 each on 25 to 50% deals."
+            ),
+            "assumptions_note": (
+                "Role split is a synthesis of separate practitioner workflows; no team headcount was reported, and "
+                "black-hat tactics remain disputed between practitioners."
+            ),
+            "note": (
+                "Attributed to Big Pond Digital (0_KHkuMmtVQ, jWqa6ck6G3Y), Revpanda Group (OlzqNLFabLI, Xyf6JUN9RFg), "
+                "Odys Podcast (ESj1bVRdO2s) and Powerhouse Affiliate (pihR_hy7xRU)."
+            ),
+        },
+        {
+            "diagram_id": "diag-07-event-contract-fee-load-by-route",
+            "chapter_number": 4,
+            "title": "Event-Contract Fee Load by Route",
+            "subtitle": "Cents per contract across ForecastEx, Kalshi via IBKR and settlement",
+            "chart_type": "stacked_comparison",
+            "total_range": "0 to 4 cents per contract depending on venue and exit path",
+            "buckets": [
+                {
+                    "label": "Held to settlement",
+                    "low": 0,
+                    "high": 0,
+                    "notes": "Settlement is fee-free; contracts pay $1 or $0.",
+                },
+                {
+                    "label": "ForecastEx pairing fee",
+                    "low": 0.5,
+                    "high": 1,
+                    "notes": "Yes plus No pairs at $1.01, half a penny per side, with no other exchange, clearing, data or brokerage fees.",
+                },
+                {
+                    "label": "Kalshi via IBKR to settlement",
+                    "low": 2,
+                    "high": 2,
+                    "notes": "$0.01 IBKR plus $0.01 exchange per contract.",
+                },
+                {
+                    "label": "Kalshi via IBKR early exit",
+                    "low": 4,
+                    "high": 4,
+                    "notes": "Exiting early doubles the fees, turning a 48-cent exit into about 46 cents net.",
+                },
+            ],
+            "caption": (
+                "Binary contracts priced between roughly 1 and 99 cents read as probability; limit orders only, "
+                "because thin books make market orders pay the wide spread on top of the fee."
+            ),
+            "assumptions_note": (
+                "Round-trip fee for an early exit is the doubled figure reported by TC Trading; spread costs in thin "
+                "books were described but not quantified, so they are excluded."
+            ),
+            "note": (
+                "Attributed to Interactive Brokers (ceR-weGZSXc), TC Trading (MREcV1sLqwc) and closeuptrading (4_swDdRFYJc)."
+            ),
+        },
+        {
+            "diagram_id": "diag-08-cftc-counterparty-and-agent-readiness",
+            "chapter_number": 12,
+            "title": "Four-Week Counterparty and Agent Readiness Roadmap",
+            "subtitle": "Registration, collateral, funding math and agent controls before capital moves",
+            "chart_type": "timeline_roadmap",
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Registration check",
+                    "deliverable": "CFTC registration and NFA membership confirmed through NFA BASIC plus enforcement records",
+                    "gate": "If either registration is missing, walk away; an RFED must hold at least $20 million",
+                },
+                {
+                    "week": "Week 2",
+                    "title": "FCM due diligence",
+                    "deliverable": (
+                        "Vanguard checklist run on capital levels, top-tier 1.25 securities, audit and seg-compliance "
+                        "history and custodian rigor"
+                    ),
+                    "gate": "Concentration noted with about 10 firms holding 80% of customer funds",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Perpetual funding model",
+                    "deliverable": "Each venue's premium math and observation periods modeled, not a headline rate",
+                    "gate": "Funding every 8 hours capped near 2%, up to 6% per 24 hours, priced before sizing",
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Agent controls and CCO reporting",
+                    "deliverable": "Risk controls and audit logs outside the agent harness with hard limits and a kill switch",
+                    "gate": "Unredacted home-regulator CCO report or full Reg 3.3 report, never a hybrid",
+                },
+            ],
+            "caption": (
+                "The CFTC stack runs on registration and segregation, and with more than 70% of futures trading "
+                "automated, the deploying firm is expected to answer for its agents."
+            ),
+            "assumptions_note": (
+                "Weekly cadence is an organizing assumption; the practitioners reported the checks and figures, not "
+                "a four-week schedule."
+            ),
+            "note": (
+                "Attributed to Brokerchampion (CIinXD9tbVo), CFTC roundtables (yUqRhv7w9Vs, ZEPjpgVSavY, Ckw1w5mSMIQ, "
+                "ec9Mk3slriY) and A Lawyer In Finance Explains (BO0iMB23sU4)."
+            ),
+        },
+    ]
+
+
+VOLUME_049_POSITIONING_ALTERNATIVES: List[Dict] = [
     {
-        "title": "The Non-Custodial Event-Contract Intelligence Terminal",
-        "subtitle": (
-            "Sell probability normalization, timestamped market comparisons, and "
-            "subscription analytics without accepting funds or executing customer orders."
-        ),
-        "audience": (
-            "A technical founder and two contractors building paid analytics for "
-            "eligible users of regulated designated contract markets."
-        ),
+        "title": "The Event-Contract Desk",
+        "subtitle": "Wiring Kalshi and Polymarket, gating cross-venue pairs and making markets where retail buys longshots",
+        "audience": "Builders and traders running regulated prediction-market terminals and cross-venue books",
         "research_basis": (
-            "7 U.S.C. 1a defines commodity trading advisers, introducing brokers, "
-            "and futures commission merchants; 7 U.S.C. 6d addresses intermediary "
-            "registration. The publisher exclusion has conditions, including the "
-            "incidental-business limitation, and non-custody alone does not settle "
-            "registration status. Evaluate personalization, solicitation, compensation, "
-            "and order handling before enabling any referral or execution feature. "
-            "17 CFR 40.11 also matters when assessing event-contract availability."
+            "Cached 30,000-event Kalshi catalogs, 16-venue normalization, a $7.75 net on a $100 two-leg pair, "
+            "5-cent contracts winning 4.18% of the time, and Clay's roughly 10% ROI on about $60M of manual volume."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/7/1a",
-            "https://www.law.cornell.edu/uscode/text/7/6d",
-            "https://www.ecfr.gov/current/title-17/chapter-I/part-40/section-40.11",
+            "https://www.youtube.com/watch?v=HtGMBJ7ynjs&t=231s",
+            "https://www.youtube.com/watch?v=Ib0BEFKAvn0&t=887s",
+            "https://www.youtube.com/watch?v=lYFPEQllQOw&t=155s",
+            "https://www.youtube.com/watch?v=vT0qMNgOkxo&t=336s",
+            "https://www.youtube.com/watch?v=tM5MKtoBoZ0&t=1199s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 049 YouTube practitioner transcripts.",
     },
     {
-        "title": "The State-Licensed Affiliate Contribution Desk",
-        "subtitle": (
-            "Turn eligible adult comparison traffic into operator-confirmed CPA "
-            "and settled NGR commissions, with deductions visible before acquisition spend."
-        ),
-        "audience": (
-            "An acquisition operator with engineering and editorial contractors "
-            "serving licensed sportsbook and iGaming partners in specifically cleared states."
-        ),
+        "title": "Follow the NGR",
+        "subtitle": "Licensed iGaming affiliate deals run through the math before the first click is bought",
+        "audience": "Casino and sportsbook affiliates negotiating CPA, revshare and hybrid deals in regulated GEOs",
         "research_basis": (
-            "State gaming agencies administer jurisdiction-specific affiliate and "
-            "vendor requirements; one state's registration does not authorize another. "
-            "Use NJ DGE, PA PGCB, and MI MGCB requirements to build separate partner, "
-            "registration, advertising, and reporting records. NJ casino service "
-            "industry requirements include N.J.S.A. 5:12-92. Apply material-connection "
-            "disclosures under 16 CFR 255.5 alongside age, location, and responsible-gaming controls."
+            "A 35% deal paying an effective 24.5% of GGR, a $400 CPA collapsing to $20 at 5% qualification, "
+            "monthly carryover resets, GEO segmentation that saves 90K of a 100K month, and a 20% click-to-FTD "
+            "guarantee lifting a German CPA to an effective EUR 1,600."
         ),
         "sources": [
-            "https://www.nj.gov/oag/ge/",
-            "https://gamingcontrolboard.pa.gov/",
-            "https://www.michigan.gov/mgcb",
-            "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
+            "https://www.youtube.com/watch?v=WaWQNIAchz0&t=295s",
+            "https://www.youtube.com/watch?v=_puyhQJIomQ&t=395s",
+            "https://www.youtube.com/watch?v=6jlPOcl5CnI&t=853s",
+            "https://www.youtube.com/watch?v=ohEZ5-gHckQ&t=1212s",
+            "https://www.youtube.com/watch?v=jWqa6ck6G3Y&t=1260s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 049 YouTube practitioner transcripts.",
     },
     {
-        "title": "Two Revenue Books, One Small Operating Pod",
-        "subtitle": (
-            "Combine recurring analytics subscriptions with separately authorized "
-            "gaming commissions while keeping contracts, attribution, and deductions distinct."
-        ),
-        "audience": (
-            "A founder seeking the canonical $362,500 annual operator-revenue case "
-            "with one full-time seat and two contractor seats."
-        ),
+        "title": "Licensed or Walk Away",
+        "subtitle": "Registration, rulebooks and insider gates for event contracts and iGaming partners",
+        "audience": "Compliance leads, operators and agent builders entering CFTC-regulated and licensed gaming markets",
         "research_basis": (
-            "CFTC intermediary definitions and state gaming requirements govern "
-            "different activities. Separate product permissions and revenue ledgers "
-            "prevent a software subscription from being treated as authorization for "
-            "gaming promotion or compensated futures solicitation. Source-informed "
-            "operating controls include activity classification, state-specific vendor "
-            "records, disclosed commercial relationships, and settlement-backed commission recognition."
+            "A $65,000 mention-market penalty, 23 DCM core principles, NFA BASIC checks, a $20 million RFED capital "
+            "floor, agent kill switches outside the harness, Bulgaria's roughly EUR 6,000 affiliate license, and an "
+            "8-page rules document read before the first order."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/7/1a",
-            "https://www.law.cornell.edu/uscode/text/7/6d",
-            "https://www.nj.gov/oag/ge/",
-            "https://gamingcontrolboard.pa.gov/",
-            "https://www.michigan.gov/mgcb",
-            "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
+            "https://www.youtube.com/watch?v=uh3GgMs9ha8&t=853s",
+            "https://www.youtube.com/watch?v=G-sfCPFFZ5o&t=319s",
+            "https://www.youtube.com/watch?v=CIinXD9tbVo&t=370s",
+            "https://www.youtube.com/watch?v=Ckw1w5mSMIQ&t=3867s",
+            "https://www.youtube.com/watch?v=XUPjmWHBPq4&t=92s",
+            "https://www.youtube.com/watch?v=MREcV1sLqwc&t=285s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 049 YouTube practitioner transcripts.",
     },
 ]
-
-
-def build_volume_049_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-two-ledger-operating-workflow",
-            "process_flow",
-            "One Pod, Two Separately Authorized Revenue Lanes",
-            "Keep regulated-market analytics distinct from state-licensed gaming acquisition.",
-            1,
-            "operating_framework",
-            (
-                "The terminal is non-custodial and does not pool capital, accept "
-                "customer funds, or submit customer orders. Analytics publishing "
-                "does not itself establish an exemption from CTA, IB, or FCM "
-                "requirements. Partner access and compensation require documented "
-                "permission for the actual activity and jurisdiction."
-            ),
-            (
-                "Build the permission map before the feed adapter; reconcile "
-                "subscriptions and gaming commissions through different revenue accounts."
-            ),
-            [
-                (
-                    "Classify each activity",
-                    "Two distinct permission records",
-                    1.0,
-                    (
-                        "Inventory subscription analytics, personalization, solicitation, "
-                        "builder compensation, and gaming links. Apply 7 U.S.C. 1a "
-                        "and 6d to the derivatives lane and the applicable state "
-                        "vendor rules to the gaming lane; non-custody is necessary "
-                        "but does not resolve every registration question."
-                    ),
-                ),
-                (
-                    "Normalize permitted feeds",
-                    "Timestamp every market observation",
-                    2.0,
-                    (
-                        "Use documented Kalshi, ForecastEx-access, and licensed "
-                        "sportsbook interfaces only where available and permitted. "
-                        "Record source time, receipt time, fees, contract wording, "
-                        "settlement terms, and market identifiers. Measure sub-second "
-                        "delivery as a service target rather than assuming every "
-                        "source provides a WebSocket feed."
-                    ),
-                ),
-                (
-                    "Publish bounded analytics",
-                    "Subscriptions without order handling",
-                    3.0,
-                    (
-                        "Normalize implied probabilities and display fee-aware comparisons "
-                        "with stale-feed cutoffs. Label positive expected value as "
-                        "model-dependent, not riskless arbitrage; incompatible settlement "
-                        "terms and execution slippage can reverse the apparent edge. "
-                        "Do not add personalized recommendations without reassessing activity classification."
-                    ),
-                ),
-                (
-                    "Attribute eligible referrals",
-                    "Separate state and partner identifiers",
-                    4.0,
-                    (
-                        "Apply the product's 21+ policy, jurisdiction-specific geofencing, "
-                        "partner allowlists, material-connection disclosures, and current "
-                        "responsible-gaming helpline disclosures. Sign server-to-server "
-                        "events, deduplicate event identifiers, and rely on partner "
-                        "confirmation for qualifying deposits rather than browser clicks."
-                    ),
-                ),
-                (
-                    "Reconcile earned revenue",
-                    "Separate subscriptions, rebates, CPA, and NGR",
-                    5.0,
-                    (
-                        "Match SaaS invoices, expressly permitted builder statements, "
-                        "accepted CPA events, and settled NGR reports to bank receipts "
-                        "and receivables. Never book trading volume, gambling handle, "
-                        "player deposits, or user balances as operator revenue. Block "
-                        "unlicensed offshore, unlawful crypto, and unlawful sweepstakes destinations."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-eligible-affiliate-cohort",
-            "funnel",
-            "Annual CPA Cohort: Eligible Traffic to Payable Depositor",
-            "Five nested counts describe the affiliate lane only.",
-            6,
-            "illustrative_model",
-            (
-                "Illustrative annual unique-visitor cohort underlying the Base-Case "
-                "$90,000 CPA revenue allocation. Counts are nested, deduplicated, "
-                "and measured within contract-specific attribution windows. Terminal "
-                "subscribers and NGR-only partners are outside this funnel. Entry "
-                "screening is not a substitute for the operator's age and identity checks."
-            ),
-            (
-                "50,000 eligible visitors produce 100 payable FTD events at $900 "
-                "each; a 120-event full-budget planning baseline is reduced by "
-                "20 events for seasonal CPA availability before revenue is booked."
-            ),
-            [
-                (
-                    "Eligible adult visitor cohort",
-                    "50,000 screened unique visitors",
-                    50000.0,
-                    (
-                        "Start with unique visitors passing first-party 21+ screening "
-                        "and permitted-location checks. Preserve jurisdiction, campaign, "
-                        "and partner eligibility evidence while minimizing personal "
-                        "data. Exclude blocked locations and ineligible destinations "
-                        "before commercial links become available."
-                    ),
-                ),
-                (
-                    "Qualified comparison cohort",
-                    "15,000 visitors; 30% of entry cohort",
-                    15000.0,
-                    (
-                        "Count visitors who use a comparison page for an eligible "
-                        "licensed partner and see current commercial terms and the "
-                        "affiliate disclosure. Remove automated traffic and duplicate "
-                        "identities under the documented attribution policy."
-                    ),
-                ),
-                (
-                    "Attributed click cohort",
-                    "3,000 visitors; 20% of comparison cohort",
-                    3000.0,
-                    (
-                        "Create a signed click identifier and store the state, "
-                        "campaign, creative version, and partner offer version. "
-                        "A redirect is evidence of a click, not evidence of "
-                        "a deposit, account approval, or payable commission."
-                    ),
-                ),
-                (
-                    "Partner-confirmed FTD cohort",
-                    "300 depositors; 10% of click cohort",
-                    300.0,
-                    (
-                        "Accept first-time-depositor events only from authenticated "
-                        "partner reporting after operator checks. Match depositors "
-                        "to the originating cohort; deposits still may fail minimum "
-                        "amount, attribution-window, campaign-cap, or commission eligibility terms."
-                    ),
-                ),
-                (
-                    "Contract-payable CPA cohort",
-                    "100 depositors; 33.33% of FTD cohort",
-                    100.0,
-                    (
-                        "Reconcile all 300 events into 100 payable and 200 "
-                        "nonpayable outcomes with explicit partner reason codes. "
-                        "The 100 accepted events generate $90,000 at $900 each. "
-                        "Seasonality is already reflected in this count; do not "
-                        "subtract the $18,000 planning reduction again as operating expense."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-case-profit-bridge",
-            "waterfall",
-            "Base-Case Operator Revenue to Owner Profit",
-            "$362,500 recognized operator revenue less $224,750 operating costs.",
-            3,
-            "illustrative_model",
-            (
-                "USD annually. Opening and closing bars are totals; the four "
-                "intermediate bars are signed cost changes. Canonical gross revenue "
-                "means operator revenue, not customer transaction value. Revenue "
-                "includes $210,000 SaaS, $12,500 permitted builder compensation, "
-                "$90,000 CPA, and $50,000 settled NGR commissions. The illustrative "
-                "cost allocation reconciles exactly to Formula v2.0."
-            ),
-            (
-                "$362,500 - $85,000 - $90,000 - $24,000 - $25,750 = $137,750; "
-                "$137,750 / $362,500 = 38.0%. Affiliate contractual deductions "
-                "are already reflected in recognized commission revenue."
-            ),
-            [
-                (
-                    "Recognized operator revenue",
-                    "$362,500 annual opening total",
-                    362500.0,
-                    (
-                        "Book subscriptions and earned software compensation separately "
-                        "from affiliate commissions. The $50,000 NGR allocation equals "
-                        "$80,000 preliminary contractual commission less $18,000 allocated "
-                        "admin and bonus deductions and $12,000 negative carryover. "
-                        "Apply ASC 606 principal-versus-agent analysis; no additional "
-                        "retained-share multiplier is supplied for this scorecard."
-                    ),
-                ),
-                (
-                    "Acquisition and distribution",
-                    "-$85,000 annual operating cost",
-                    -85000.0,
-                    (
-                        "Allocate $45,000 to SaaS acquisition, $30,000 to CPA "
-                        "acquisition, and $10,000 to NGR acquisition. The CPA cohort "
-                        "therefore carries $300 acquisition cost per payable depositor. "
-                        "Measure channel contribution after partner adjustments, not "
-                        "against headline commission offers."
-                    ),
-                ),
-                (
-                    "Contractor delivery capacity",
-                    "-$90,000 annual operating cost",
-                    -90000.0,
-                    (
-                        "Budget $54,000 for the engineering contractor and $36,000 "
-                        "for the acquisition and editorial contractor. The founder "
-                        "is the one full-time seat and receives the residual "
-                        "owner-profit measure; no separate founder salary is assumed "
-                        "in this illustrative allocation."
-                    ),
-                ),
-                (
-                    "Platform and billing infrastructure",
-                    "-$24,000 annual operating cost",
-                    -24000.0,
-                    (
-                        "Fund permitted feed access, managed PostgreSQL, cloud delivery, "
-                        "monitoring, subscription billing fees, and attribution infrastructure. "
-                        "Track stale-feed incidents and webhook replay failures as "
-                        "service costs; user trading fees belong in comparison "
-                        "analytics rather than operator revenue."
-                    ),
-                ),
-                (
-                    "Professional and operating overhead",
-                    "-$25,750 annual operating cost",
-                    -25750.0,
-                    (
-                        "Allocate $12,000 to activity classification and state vendor "
-                        "work, $6,000 to accounting and insurance, $4,750 to support "
-                        "and administrative tools, and $3,000 to refunds and collection "
-                        "losses. Refunds are charged here only when not already "
-                        "netted from opening revenue."
-                    ),
-                ),
-                (
-                    "Owner profit",
-                    "$137,750 annual closing total; 38.0%",
-                    137750.0,
-                    (
-                        "Operating costs total $224,750, leaving the canonical "
-                        "Base-Case owner profit of $137,750. Fixed delivery, platform, "
-                        "and overhead costs average $11,645.83 monthly before "
-                        "acquisition; this exceeds the metadata's $10,000 monthly "
-                        "upper bound, so that range cannot represent all-in Base-Case costs."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-five-monetization-lane-yields",
-            "horizontal_bars",
-            "Five Revenue Lanes, One Comparable Annual Dollar Unit",
-            "Illustrative lane allocations sum to the canonical $362,500 Base Case.",
-            2,
-            "illustrative_model",
-            (
-                "Every bar measures annual recognized operator revenue in USD, "
-                "not margin, player deposits, or return on wagering capital. "
-                "The first two bars are SaaS subscriptions; the third is a "
-                "separately assessed software-compensation lane; the final two "
-                "are distinct affiliate cohorts with distinct settlement records."
-            ),
-            (
-                "$150,000 + $60,000 + $12,500 + $90,000 + $50,000 = $362,500. "
-                "These allocations are an illustrative bridge, not externally "
-                "verified partner rates or current program availability."
-            ),
-            [
-                (
-                    "Core terminal subscriptions",
-                    "$150,000 annual SaaS revenue",
-                    150000.0,
-                    (
-                        "250 average paying subscribers at $50 monthly generate "
-                        "$150,000 annually. Average subscribers already incorporate "
-                        "churn and replacements. Deliver market comparison, timestamps, "
-                        "and fee normalization without account custody or customer "
-                        "order submission."
-                    ),
-                ),
-                (
-                    "Professional analytics subscriptions",
-                    "$60,000 annual SaaS revenue",
-                    60000.0,
-                    (
-                        "50 additional average paying subscribers at $100 monthly "
-                        "generate $60,000 annually. Keep these subscribers separate "
-                        "from the core tier. Price export capacity, saved analytic "
-                        "views, and alert delivery rather than promising trading "
-                        "profits or personalized investment outcomes."
-                    ),
-                ),
-                (
-                    "Permitted builder compensation",
-                    "$12,500 annual software revenue",
-                    12500.0,
-                    (
-                        "Assume 25 contract-defined software-service milestones earning "
-                        "$500 each under an expressly permitted arrangement. This "
-                        "is a modeling unit, not a claim that any named venue "
-                        "offers this program. Do not recognize revenue until terms, "
-                        "activity classification, and acceptance evidence support it."
-                    ),
-                ),
-                (
-                    "Seasonally adjusted CPA commissions",
-                    "$90,000 annual affiliate revenue",
-                    90000.0,
-                    (
-                        "120 potential payable depositors at $900 imply $108,000 "
-                        "before a modeled 20-event post-NFL budget reduction. The "
-                        "remaining 100 produce $90,000. Subtract the separately budgeted "
-                        "$30,000 CPA acquisition cost for $60,000 contribution before "
-                        "shared delivery and overhead."
-                    ),
-                ),
-                (
-                    "Settled NGR commissions",
-                    "$50,000 annual affiliate revenue",
-                    50000.0,
-                    (
-                        "An illustrative $80,000 preliminary commission entitlement, "
-                        "not casino-wide gaming revenue, falls to $50,000 after "
-                        "$18,000 admin and bonus allocations and $12,000 carryover. "
-                        "Subtract $10,000 allocated acquisition cost for $40,000 "
-                        "contribution before shared costs; retain partner-level carryover ledgers."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-four-preflight-decisions",
-            "decision_tree",
-            "Four Independent Checks Before Commercial Activation",
-            "An unresolved branch disables the affected activity, not the evidence record.",
-            5,
-            "operating_framework",
-            (
-                "These are sequential binary checks with pass and stop branches "
-                "described in each detail. The US-state affiliate plan does not "
-                "extend to Ontario; provincial requirements and partner permissions "
-                "need their own assessment. The product adopts 21+ screening "
-                "without treating it as a universal derivatives-market age statute."
-            ),
-            (
-                "Non-custody, registration status, eligible destinations, and "
-                "settlement economics must each be established independently."
-            ),
-            [
-                (
-                    "Activity classification",
-                    "Pass to jurisdiction check; otherwise stop affected feature",
-                    1.0,
-                    (
-                        "Under 7 U.S.C. 1a and 6d, assess CTA, IB, and FCM "
-                        "status using actual solicitation, compensation, personalization, "
-                        "and order-handling behavior. Pass only with a documented "
-                        "basis for the permitted scope; otherwise disable the "
-                        "feature until required registration or a supported exclusion "
-                        "is established. Never accept funds or pool user capital."
-                    ),
-                ),
-                (
-                    "Jurisdiction and partner authority",
-                    "Pass to audience check; otherwise suppress destination",
-                    2.0,
-                    (
-                        "Verify DCM status and applicable event-contract availability, "
-                        "including 17 CFR 40.11. Separately verify the gaming "
-                        "operator's state license and required affiliate or vendor "
-                        "status with NJ DGE, PA PGCB, MI MGCB, or WV Lottery. "
-                        "N.J.S.A. 5:12-92 addresses casino service industry requirements; "
-                        "one registration does not create nationwide permission."
-                    ),
-                ),
-                (
-                    "Audience and advertising controls",
-                    "Pass to economics check; otherwise block referral",
-                    3.0,
-                    (
-                        "Require the product's 21+ screen, eligible geography, "
-                        "current offer terms, responsible-gaming helpline disclosures, "
-                        "and material-connection disclosure under 16 CFR 255.5. "
-                        "Treat uncertain or conflicting location signals as blocked "
-                        "until resolved. Do not bypass partner identity, self-exclusion, "
-                        "age, or location controls."
-                    ),
-                ),
-                (
-                    "Contract and loss exposure",
-                    "Activate supported lane; otherwise hold acquisition spend",
-                    4.0,
-                    (
-                        "Read CPA acceptance windows, seasonal caps, NGR deduction "
-                        "definitions, negative carryover, payment timing, and clawback "
-                        "rights. Require positive modeled contribution after CAC "
-                        "and documented adjustments; reconcile authenticated settlement "
-                        "events before scaling. Never redirect rejected users to "
-                        "unlicensed offshore or unlawful sweepstakes alternatives."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-base-and-scaled-pod",
-            "org_architecture",
-            "Three Base Seats, Two Explicit Scale Additions",
-            "Base and Conservative use 1 FT + 2 C; Scaled uses 2 FT + 3 C.",
-            11,
-            "operating_framework",
-            (
-                "Each numeric value represents one person. The first three seats "
-                "form the Base-Case pod; the final two exist only in the Scaled "
-                "scenario. External professional engagements are purchased services, "
-                "not additional dedicated operating seats in the canonical team count."
-            ),
-            (
-                "Conservative: $75,000 revenue x 26% = $19,500 owner profit. "
-                "Base: $362,500 x 38.0% = $137,750. "
-                "Scaled: $650,000 x 50% = $325,000. "
-                "The $650,000 scenario requires five people, not the three-person pod."
-            ),
-            [
-                (
-                    "Founder and commercial owner",
-                    "Base seat 1; one full-time operator",
-                    1.0,
-                    (
-                        "Own partner contracts, state-specific permission records, "
-                        "pricing, revenue recognition decisions, and the monthly "
-                        "contribution statement. Maintain separate SaaS and affiliate "
-                        "ledgers and approve acquisition budgets using settled "
-                        "cohorts rather than headline click conversion."
-                    ),
-                ),
-                (
-                    "Integration and reliability contractor",
-                    "Base seat 2; one engineering contractor",
-                    1.0,
-                    (
-                        "Own feed adapters, market normalization, stale-data controls, "
-                        "signed server-to-server attribution, and deployment recovery. "
-                        "Use GitHub Actions for tests and PostgreSQL for replay-safe "
-                        "event identifiers. Never place customer credentials or "
-                        "user funds inside the terminal's operating scope."
-                    ),
-                ),
-                (
-                    "Acquisition and editorial contractor",
-                    "Base seat 3; one distribution contractor",
-                    1.0,
-                    (
-                        "Own eligible-state content, offer freshness, commercial "
-                        "disclosures, campaign cohorts, and seasonal budget pacing. "
-                        "Reconcile failed CPA events with partner reason codes and "
-                        "maintain a correction queue for expired promotions and "
-                        "mismatched settlement terms."
-                    ),
-                ),
-                (
-                    "Product and reliability employee",
-                    "Scaled seat 4; add one full-time operator",
-                    1.0,
-                    (
-                        "Add this seat only in the five-person Scaled scenario. "
-                        "Own release quality, subscription retention, incident response, "
-                        "and feed service objectives while the existing engineering "
-                        "contractor handles integration depth. Rebuild the cost plan "
-                        "within the Scaled $325,000 operating-cost envelope."
-                    ),
-                ),
-                (
-                    "Settlement and support contractor",
-                    "Scaled seat 5; add one operations contractor",
-                    1.0,
-                    (
-                        "Add this seat only in the Scaled scenario. Own commission "
-                        "statement imports, carryover balances, support triage, "
-                        "responsible-gaming referral handling, and partner discrepancy "
-                        "tickets. Keep discretionary promotional access separate "
-                        "from accounting adjustment permissions."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-startup-capital-buckets",
-            "stacked_comparison",
-            "A $24,000 Base Startup Allocation",
-            "Four buckets reconcile to $8,000 lean, $24,000 base, and $45,000 expanded.",
-            4,
-            "illustrative_model",
-            (
-                "Numeric values encode the $24,000 base startup allocation in "
-                "USD. Lean and expanded allocations appear in each stage detail "
-                "and sum independently to the canonical range endpoints. Cash "
-                "reserves are unspent liquidity, not immediate operating expense; "
-                "startup outlays are not added again to the annual profit bridge."
-            ),
-            (
-                "Base: $6,000 + $5,000 + $7,000 + $6,000 = $24,000. "
-                "Lean: $2,000 + $2,000 + $2,500 + $1,500 = $8,000. "
-                "Expanded: $12,000 + $10,000 + $14,000 + $9,000 = $45,000."
-            ),
-            [
-                (
-                    "Activity and vendor setup",
-                    "$6,000 base; 25.00% of startup cash",
-                    6000.0,
-                    (
-                        "Lean $2,000; base $6,000; expanded $12,000. Purchase "
-                        "activity-classification work, partner-contract analysis, and "
-                        "required vendor application preparation. The lean version "
-                        "must narrow its permitted launch scope if actual professional "
-                        "fees or registration costs exceed this allocation."
-                    ),
-                ),
-                (
-                    "Terminal and attribution build",
-                    "$5,000 base; 20.83% of startup cash",
-                    5000.0,
-                    (
-                        "Lean $2,000; base $5,000; expanded $10,000. Fund initial "
-                        "feed adapters, PostgreSQL event storage, signed webhook "
-                        "verification, subscription billing integration, and stale-feed "
-                        "tests. Start with a small permitted source set rather "
-                        "than assuming universal exchange or sportsbook access."
-                    ),
-                ),
-                (
-                    "Content and acquisition experiments",
-                    "$7,000 base; 29.17% of startup cash",
-                    7000.0,
-                    (
-                        "Lean $2,500; base $7,000; expanded $14,000. Build "
-                        "jurisdiction-specific comparison content and run bounded "
-                        "subscription and affiliate acquisition tests. Keep campaign "
-                        "budgets separate by lane, and stop spend when accepted-event "
-                        "economics fail the documented contribution threshold."
-                    ),
-                ),
-                (
-                    "Settlement and operating reserve",
-                    "$6,000 base; 25.00% of startup cash",
-                    6000.0,
-                    (
-                        "Lean $1,500; base $6,000; expanded $9,000. Preserve "
-                        "liquidity for settlement delays, refunds, partner disputes, "
-                        "and unexpected setup costs. At the metadata's $1,500-$10,000 "
-                        "monthly outlay range, the base reserve covers 0.6-4.0 "
-                        "months, before considering the higher full Base-Case cost structure."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-thirty-day-evidence-sprint",
-            "timeline_roadmap",
-            "Thirty Days to an Instrumented, Permission-Bounded Pilot",
-            "Build operating evidence first; first commercial deal remains a 2-6 month assumption.",
-            12,
-            "operating_framework",
-            (
-                "Four sequential milestones cover Days 1-30. Numeric values "
-                "represent milestone end days, not durations or revenue. The "
-                "sprint does not assume that state registrations, venue access, "
-                "or partner contracting finish within thirty days."
-            ),
-            (
-                "Finish with tested analytics, replay-safe attribution, separate "
-                "revenue books, and a funded next-step plan; activate only the "
-                "activities whose permissions and contracts are established."
-            ),
-            [
-                (
-                    "Days 1-7",
-                    "Define scope and evidence ownership",
-                    7.0,
-                    (
-                        "Choose the initial regulated analytics source and a narrow "
-                        "state affiliate footprint. Inventory CTA, IB, FCM, and "
-                        "vendor questions against 7 U.S.C. 1a and 6d and agency "
-                        "requirements. Draft separate SaaS and affiliate contract "
-                        "checklists, cash budgets, and source-access records."
-                    ),
-                ),
-                (
-                    "Days 8-14",
-                    "Build isolated feed and event paths",
-                    14.0,
-                    (
-                        "Implement timestamped ingestion, settlement-term matching, "
-                        "fee normalization, and stale-feed suppression. Build a "
-                        "separate server-to-server event path with signature checks, "
-                        "idempotent identifiers, and synthetic CPA fixtures. Test "
-                        "location uncertainty, blocked destinations, and duplicate "
-                        "events without sending real user funds or orders."
-                    ),
-                ),
-                (
-                    "Days 15-21",
-                    "Exercise eligibility and settlement logic",
-                    21.0,
-                    (
-                        "Test the 21+ product policy, jurisdiction restrictions, "
-                        "current offer disclosures, and responsible-gaming contact "
-                        "placement. Reconcile sample CPA rejection codes and NGR "
-                        "deductions, including partner-specific negative carryover. "
-                        "Verify that simulated invoices and commission statements "
-                        "never book trading volume or deposits as revenue."
-                    ),
-                ),
-                (
-                    "Days 22-30",
-                    "Close pilot evidence and next-month budget",
-                    30.0,
-                    (
-                        "Run a small permitted analytics pilot and activate "
-                        "affiliate links only where required status and partner "
-                        "authority are documented. Reconcile the $362,500 revenue "
-                        "bridge and $137,750 owner-profit model, assign incident "
-                        "owners, and budget the remaining 2-6 month path to "
-                        "the first deal without treating pilot traffic as earned revenue."
-                    ),
-                ),
-            ],
-        ),
-    ]
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for (
-            identifier,
-            kind,
-            title,
-            subtitle,
-            chapter,
-            tag,
-            note,
-            caption,
-            stages,
-        ) in specs
-    ]

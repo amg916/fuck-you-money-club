@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-intake-to-collected-service-fee",
-    "diag-02-nested-claimant-quality-cohorts",
-    "diag-03-base-case-owner-profit-bridge",
-    "diag-04-service-rail-contribution-yield",
-    "diag-05-preflight-statutory-risk-routing",
-    "diag-06-four-to-six-person-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-thirty-day-launch-sprint"
+    "diag-01-mass-tort-to-mdl-path",
+    "diag-02-raw-lead-leakage-funnel",
+    "diag-03-numerosity-waterfall",
+    "diag-04-testosterone-bellwether-bars",
+    "diag-05-pfas-file-gates",
+    "diag-06-law-firm-mso-architecture",
+    "diag-07-device-pharma-dollar-stack",
+    "diag-08-mso-abs-roadmap"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-intake-to-collected-service-fee",
-    "diag-02-nested-claimant-quality-cohorts",
-    "diag-03-base-case-owner-profit-bridge",
-    "diag-04-service-rail-contribution-yield",
-    "diag-05-preflight-statutory-risk-routing",
-    "diag-06-four-to-six-person-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-thirty-day-launch-sprint"
+    "diag-01-mass-tort-to-mdl-path",
+    "diag-02-raw-lead-leakage-funnel",
+    "diag-03-numerosity-waterfall",
+    "diag-04-testosterone-bellwether-bars",
+    "diag-05-pfas-file-gates",
+    "diag-06-law-firm-mso-architecture",
+    "diag-07-device-pharma-dollar-stack",
+    "diag-08-mso-abs-roadmap"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-intake-to-collected-service-fee": {
+    "diag-01-mass-tort-to-mdl-path": {
       "concept_a": {
-        "graphic_id": "diag-01-intake-to-collected-service-fee",
+        "graphic_id": "diag-01-mass-tort-to-mdl-path",
         "graphic_type": "diagram",
-        "label": "Five Handoffs from Inquiry to Collected MSO Fee",
+        "label": "From One Injured Family to a Settlement Matrix",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-intake-to-collected-service-fee",
+        "graphic_id": "diag-01-mass-tort-to-mdl-path",
         "graphic_type": "diagram",
-        "label": "Five Handoffs from Inquiry to Collected MSO Fee",
+        "label": "From One Injured Family to a Settlement Matrix",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-intake-to-collected-service-fee",
+        "graphic_id": "diag-01-mass-tort-to-mdl-path",
         "graphic_type": "diagram",
-        "label": "Five Handoffs from Inquiry to Collected MSO Fee",
+        "label": "From One Injured Family to a Settlement Matrix",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-nested-claimant-quality-cohorts": {
+    "diag-02-raw-lead-leakage-funnel": {
       "concept_a": {
-        "graphic_id": "diag-02-nested-claimant-quality-cohorts",
+        "graphic_id": "diag-02-raw-lead-leakage-funnel",
         "graphic_type": "diagram",
-        "label": "The Conversion Waterfall That Exposes Acquisition Leakage",
+        "label": "Where the Raw Lead Leaks",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-nested-claimant-quality-cohorts",
+        "graphic_id": "diag-02-raw-lead-leakage-funnel",
         "graphic_type": "diagram",
-        "label": "The Conversion Waterfall That Exposes Acquisition Leakage",
+        "label": "Where the Raw Lead Leaks",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-nested-claimant-quality-cohorts",
+        "graphic_id": "diag-02-raw-lead-leakage-funnel",
         "graphic_type": "diagram",
-        "label": "The Conversion Waterfall That Exposes Acquisition Leakage",
+        "label": "Where the Raw Lead Leaks",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-case-owner-profit-bridge": {
+    "diag-03-numerosity-waterfall": {
       "concept_a": {
-        "graphic_id": "diag-03-base-case-owner-profit-bridge",
+        "graphic_id": "diag-03-numerosity-waterfall",
         "graphic_type": "diagram",
-        "label": "Base Case: $705,000 Revenue to $267,900 Owner Profit",
+        "label": "Numerosity Math Behind a 10,000-Case Tort",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-case-owner-profit-bridge",
+        "graphic_id": "diag-03-numerosity-waterfall",
         "graphic_type": "diagram",
-        "label": "Base Case: $705,000 Revenue to $267,900 Owner Profit",
+        "label": "Numerosity Math Behind a 10,000-Case Tort",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-case-owner-profit-bridge",
+        "graphic_id": "diag-03-numerosity-waterfall",
         "graphic_type": "diagram",
-        "label": "Base Case: $705,000 Revenue to $267,900 Owner Profit",
+        "label": "Numerosity Math Behind a 10,000-Case Tort",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-service-rail-contribution-yield": {
+    "diag-04-testosterone-bellwether-bars": {
       "concept_a": {
-        "graphic_id": "diag-04-service-rail-contribution-yield",
+        "graphic_id": "diag-04-testosterone-bellwether-bars",
         "graphic_type": "diagram",
-        "label": "Compare Service Yield Without Pricing Claimant Outcomes",
+        "label": "Inside a Bellwether Selection Funnel",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-service-rail-contribution-yield",
+        "graphic_id": "diag-04-testosterone-bellwether-bars",
         "graphic_type": "diagram",
-        "label": "Compare Service Yield Without Pricing Claimant Outcomes",
+        "label": "Inside a Bellwether Selection Funnel",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-service-rail-contribution-yield",
+        "graphic_id": "diag-04-testosterone-bellwether-bars",
         "graphic_type": "diagram",
-        "label": "Compare Service Yield Without Pricing Claimant Outcomes",
+        "label": "Inside a Bellwether Selection Funnel",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-preflight-statutory-risk-routing": {
+    "diag-05-pfas-file-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-preflight-statutory-risk-routing",
+        "graphic_id": "diag-05-pfas-file-gates",
         "graphic_type": "diagram",
-        "label": "Four Pre-Flight Checks Before Contact or Record Processing",
+        "label": "Four Gates Before a Toxic-Exposure File Counts",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-preflight-statutory-risk-routing",
+        "graphic_id": "diag-05-pfas-file-gates",
         "graphic_type": "diagram",
-        "label": "Four Pre-Flight Checks Before Contact or Record Processing",
+        "label": "Four Gates Before a Toxic-Exposure File Counts",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-preflight-statutory-risk-routing",
+        "graphic_id": "diag-05-pfas-file-gates",
         "graphic_type": "diagram",
-        "label": "Four Pre-Flight Checks Before Contact or Record Processing",
+        "label": "Four Gates Before a Toxic-Exposure File Counts",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-four-to-six-person-pod": {
+    "diag-06-law-firm-mso-architecture": {
       "concept_a": {
-        "graphic_id": "diag-06-four-to-six-person-pod",
+        "graphic_id": "diag-06-law-firm-mso-architecture",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Two Deliberate Scale Additions",
+        "label": "The Law-Firm MSO Blueprint",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-four-to-six-person-pod",
+        "graphic_id": "diag-06-law-firm-mso-architecture",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Two Deliberate Scale Additions",
+        "label": "The Law-Firm MSO Blueprint",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-four-to-six-person-pod",
+        "graphic_id": "diag-06-law-firm-mso-architecture",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Two Deliberate Scale Additions",
+        "label": "The Law-Firm MSO Blueprint",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-allocation": {
+    "diag-07-device-pharma-dollar-stack": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-device-pharma-dollar-stack",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Capital Before Expanding Acquisition",
+        "label": "Device and Pharma Dockets by the Dollar",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-device-pharma-dollar-stack",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Capital Before Expanding Acquisition",
+        "label": "Device and Pharma Dockets by the Dollar",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-device-pharma-dollar-stack",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Capital Before Expanding Acquisition",
+        "label": "Device and Pharma Dockets by the Dollar",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-thirty-day-launch-sprint": {
+    "diag-08-mso-abs-roadmap": {
       "concept_a": {
-        "graphic_id": "diag-08-thirty-day-launch-sprint",
+        "graphic_id": "diag-08-mso-abs-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Measured, Contract-Ready Delivery System",
+        "label": "Four-Step MSO and ABS Setup Roadmap",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-thirty-day-launch-sprint",
+        "graphic_id": "diag-08-mso-abs-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Measured, Contract-Ready Delivery System",
+        "label": "Four-Step MSO and ABS Setup Roadmap",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-thirty-day-launch-sprint",
+        "graphic_id": "diag-08-mso-abs-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Measured, Contract-Ready Delivery System",
+        "label": "Four-Step MSO and ABS Setup Roadmap",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:04Z"
+  "updated_at": "2026-11-25T00:44:08Z"
 }
