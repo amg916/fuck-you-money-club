@@ -12,9 +12,9 @@ These accounts compare eligibility, earnings, controls, and traffic dependence r
 
 | Metric | Value | Confidence | Source |
 | --- | --- | --- | --- |
-| Reported February Raptive RPM | $55.22 |  |  |
-| First-month Journey RPM | $16.15 |  |  |
-| Video share in one account | 8.3% |  |  |
+| Reported February Raptive RPM | $55.22 | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to Meghan's Media ([XXTUzO1Y_1U @ 00:03:53]). |
+| First-month Journey RPM | $16.15 | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to CanEye ([FyVNDOxiU6o @ 00:04:15]). |
+| Video share in one account | 8.3% | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to Carl Broadbent ([feVaD3YiPFE @ 00:08:53]). |
 
 ## Network Selection: Requirements, Revenue Share, and Working Style
 
@@ -24,7 +24,7 @@ Casey Botticello ([uSKcihbY0hs @ 00:21:27]) describes Raptive's publisher revenu
 
 Casey Botticello ([uSKcihbY0hs @ 00:35:17]) describes Mediavine as the more hands-on environment for changing ad settings, including density, directly in the account. Raptive generally requires an email for those changes in their experience. That difference is about how settings are changed, not simply whether a publisher can influence them. She Knows SEO ([dL9VBY-Gj0Y @ 00:42:25]) reports being happy with Raptive's control despite using email rather than a dashboard percentage selector. They asked for a particular structure and valued the support team's implementation. How To Mr ([nIeVxkyipjw @ 00:01:48]) frames managed operation as a tradeoff: onboarding includes a site audit, and having the network handle operations leaves less manual control for publishers who prefer frequent adjustments. Meghan's Media ([NRcTFL8qghY @ 00:03:03]) describes a similarly hands-off Mediavine setup followed by accessible dashboard toggles for individual placements. Their account emphasizes that the publisher can still decide what remains enabled. Across these descriptions, managed setup and publisher choice coexist, but the working interface differs. Casey wants direct experimentation, She Knows SEO is comfortable requesting changes, How To Mr favors an established publisher seeking a managed solution, and Meghan's Media appreciates straightforward controls after the initial setup. Those preferences explain why comparable ad formats can still produce different experiences of the service.
 
-**Selection criteria as each speaker describes them in the supplied recording.**
+**Selection criteria as each speaker lays them out on camera.**
 
 | Decision Area | Reported Comparison | Expert Source |
 | --- | --- | --- |

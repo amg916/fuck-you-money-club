@@ -539,7 +539,7 @@ def build_volume_002_workbook() -> dict:
                                        'Identify unresolved second mortgages or liens. Write an '
                                        'owner-facing explanation that distinguishes the displayed surplus '
                                        'from the amount potentially available after competing debts.',
-                             'example': 'My conversation notes say possible funds, not a guaranteed owner '
+                             'example': 'My conversation notes say possible funds, not a promised owner '
                                         'payment. Before calling, I will check whether a second mortgage '
                                         'or other lien could absorb part of the balance. The records may '
                                         'support discussing an opportunity, but the listed surplus alone '
@@ -944,7 +944,7 @@ def build_volume_002_workbook() -> dict:
                                         'subtracts $2,500 for the lawyer, and leaves $7,500 before the '
                                         'partner split. The closer receives $2,250 and the '
                                         'appointment-setting partner $5,250. I will enter that as an '
-                                        'allocation example, not a guarantee, and keep collection status '
+                                        'allocation example, not a promise, and keep collection status '
                                         'separate from the arithmetic when planning operating cash. '
                                         '[Jordan Tejeda Marketing — -bhX4mtOKPs @ 00:26:24]'},
                             {'name': 'repeatability_and_assistant_training',

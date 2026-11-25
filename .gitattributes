@@ -2,9 +2,9 @@
 # as generated (-diff) so unified code diffs focus on executable engine, API, UI, template, and test changes.
 data/custom/*.json linguist-generated -diff
 publishing/** linguist-generated -diff
-src/fymc/vol00[5-9]_*.py linguist-generated -diff
+src/fymc/vol00[1-9]_*.py linguist-generated -diff
 src/fymc/vol0[1-4][0-9]_*.py linguist-generated -diff
-src/fymc/volume_00[5-9]_citations.py linguist-generated -diff
+src/fymc/volume_00[1-9]_citations.py linguist-generated -diff
 src/fymc/volume_0[1-4][0-9]_citations.py linguist-generated -diff
 src/fymc/volume_00[7-9]_manuscript.py linguist-generated -diff
 src/fymc/volume_01[1-9]_manuscript.py linguist-generated -diff

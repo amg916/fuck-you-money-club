@@ -12,9 +12,9 @@ Across the sixteen assigned videos, Koray Tuğberk GÜBÜR describes topical map
 
 | Metric | Value | Confidence | Source |
 | --- | --- | --- | --- |
-| Finance case: published pages and crawl activity | 400 pages; 60,000 crawls a day |  |  |
-| Topical-map production outline | 26 micro steps |  |  |
-| Important-page accessibility | Within three clicks |  |  |
+| Finance case: published pages and crawl activity | 400 pages; 60,000 crawls a day | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to Koray Tuğberk GÜBÜR ([ww7yHUSX5Ak @ 00:02:44]). |
+| Topical-map production outline | 26 micro steps | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to Behzad Hussain ([NQCo-V1utn8 @ 00:00:38]). |
+| Important-page accessibility | Within three clicks | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to Semrush ([vnkjR9TE9Ok @ 00:03:35]). |
 
 ## Construct the topical map around context, attributes, and publication order
 

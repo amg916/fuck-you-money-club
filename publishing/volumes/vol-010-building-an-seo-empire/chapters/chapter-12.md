@@ -6,15 +6,15 @@
 
 ## Executive Summary
 
-These accounts describe several ways to commercialize SEO work. Gautam Prachi ([ctFRKtUiETo @ 00:05:09]) teaches a bounded portfolio-building trial, while Ideal Directories ([nrI7go1wRl0 @ 00:02:05]) reports selling a website after giving away a listing. Samik Choudhury ([xbFsXyB1UZo @ 00:01:41]) explains reusable templates; SaaS SEO Engine ([kBXz_ArlMVk @ 00:03:49]) connects search intent with product use. Frey Chu ([NoUJBS6-yNQ @ 00:12:47]) emphasizes cleaning directory data. Outgrow ([KfYMGwuZlKU @ 00:01:57]) demonstrates calculator lead capture, and Collaborator ([7sg8dljI1yQ @ 00:04:58]) favors backlink evidence over price alone. Jaryd Krause - Buying Online Businesses ([O0q1EG7DNIc @ 00:07:18]) stresses independent acquisition research alongside broker vetting. The chapter preserves each account's examples, commercial mechanisms, implementation details, and stated limitations rather than turning different experiences into a single earnings formula.
+These operators describe several ways to commercialize SEO work. Gautam Prachi ([ctFRKtUiETo @ 00:05:09]) teaches a bounded portfolio-building trial, while Ideal Directories ([nrI7go1wRl0 @ 00:02:05]) reports selling a website after giving away a listing. Samik Choudhury ([xbFsXyB1UZo @ 00:01:41]) explains reusable templates; SaaS SEO Engine ([kBXz_ArlMVk @ 00:03:49]) connects search intent with product use. Frey Chu ([NoUJBS6-yNQ @ 00:12:47]) emphasizes cleaning directory data. Outgrow ([KfYMGwuZlKU @ 00:01:57]) demonstrates calculator lead capture, and Collaborator ([7sg8dljI1yQ @ 00:04:58]) favors backlink evidence over price alone. Jaryd Krause - Buying Online Businesses ([O0q1EG7DNIc @ 00:07:18]) stresses independent acquisition research alongside broker vetting. Each operator brings their own examples, commercial mechanisms, implementation details, and stated limitations, so treat these as different playbooks rather than a single earnings formula.
 
 ### Key Metrics
 
 | Metric | Value | Confidence | Source |
 | --- | --- | --- | --- |
-| Portfolio-building trial | 14 days |  |  |
-| moveBuddha organic traffic | Over 60,000 monthly organic visits |  |  |
-| Featured directory listing example | $129 a month |  |  |
+| Portfolio-building trial | 14 days | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to Gautam Prachi ([ctFRKtUiETo @ 00:05:09]). |
+| moveBuddha organic traffic | Over 60,000 monthly organic visits | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to Contentbase ([3Fkd3FP40iU @ 00:01:57]). |
+| Featured directory listing example | $129 a month | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to Frey Chu ([NoUJBS6-yNQ @ 00:04:44]). |
 
 ## Turn demonstrated SEO work into client conversations and useful assets
 
@@ -85,7 +85,7 @@ Hyper-Niche Affiliate Directories & AI Tools ([oGsNm_jrtyw @ 00:01:12]) shows th
 
 Ideal Directories ([i6uh0q1WdLo @ 00:00:20]) addresses selling before substantial traffic exists by telling the operator to acknowledge the site's current position when asked. The suggested conversation explains plans for SEO, social activity, newsletters, community involvement, and other promotion, rather than presenting future visitors as current visitors. Ideal Directories ([i6uh0q1WdLo @ 00:01:55]) then proposes introductory advertising rates that remain fixed for an advertiser who continues as a customer, even as later customers face higher prices. Frey Chu ([NoUJBS6-yNQ @ 00:04:05]) distinguishes traffic monetized through display advertising from featured or sponsored listings and discusses Sober Nation as a featured-listing example. The same speaker describes larger directory earnings as rare and frames the model as an SEO-focused business that takes months, not a rapid route to income. QUANTEVO ([JEma0TFSBVU @ 00:02:10]) gives a different starting sequence: combine outreach with SEO, offer free listings to build inventory, and upsell after traffic arrives. These presentations preserve multiple sales approaches. One sells an early advertising position with a clear explanation of limited traffic; another builds free inventory before an upgrade offer; Frey discusses the traffic and niche characteristics behind the directory's eventual monetization. The choice of offer remains distinct from the work of building the listing collection.
 
-**Directory operations and the different offers described in the corpus.**
+**Directory operations and the different offers these operators run.**
 
 | Directory decision or working method | Speaker's implementation or commercial distinction | Expert Source |
 | --- | --- | --- |

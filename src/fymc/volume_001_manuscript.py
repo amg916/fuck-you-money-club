@@ -89,23 +89,33 @@ def build_volume_001_manuscript(abridged_videos: list[dict] | None = None, **kwa
 
     extra_vids = abridged_videos if abridged_videos is not None else kwargs.get("videos")
     if isinstance(extra_vids, list) and len(extra_vids) <= 5:
-        known_ids = {c.get("video_id") for ch in chapters for c in (ch.get("source_citations") or [])}
+        known_triples = {
+            (c.get("video_id"), c.get("timestamp_seconds", c.get("timestamp")), c.get("text"))
+            for ch in chapters for c in (ch.get("source_citations") or [])
+        }
         for fv in extra_vids:
             if not isinstance(fv, dict):
                 continue
             fvid = str(fv.get("video_id") or "").strip()
-            if not fvid or fvid in known_ids:
+            if not fvid:
                 continue
             tips = fv.get("tips") or fv.get("key_points") or fv.get("transcript") or []
-            if tips and isinstance(tips[0], dict):
-                t_sec = int(float(tips[0].get("timestamp", tips[0].get("start", 0))))
-                t_txt = str(tips[0].get("text") or "Fixture tip.").strip()
+            for tip_obj in tips:
+                if not isinstance(tip_obj, dict):
+                    continue
+                t_sec = int(float(tip_obj.get("timestamp", tip_obj.get("start", 0))))
+                t_txt = str(tip_obj.get("text") or "Fixture tip.").strip()
                 if not t_txt.endswith((".", "!", "?")):
                     t_txt += "."
+                if (fvid, t_sec, t_txt) in known_triples:
+                    continue
+                known_triples.add((fvid, t_sec, t_txt))
+                target_ch_num = int(tip_obj.get("chapter_number") or 1)
+                target_idx = target_ch_num - 1 if 1 <= target_ch_num <= len(chapters) else 0
                 h_i, rem_i = divmod(max(0, t_sec), 3600)
                 m_i, s_i = divmod(rem_i, 60)
                 lbl_t = f"[{h_i:02d}:{m_i:02d}:{s_i:02d}]"
-                chapters[0]["source_citations"].append({
+                chapters[target_idx]["source_citations"].append({
                     "source_type": "video_pro_tip",
                     "video_id": fvid,
                     "title": str(fv.get("title") or "Authorized research fixture"),

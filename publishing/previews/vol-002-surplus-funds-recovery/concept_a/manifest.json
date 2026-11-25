@@ -14,12 +14,12 @@
       "sha256": "4a870529ac2d4df882feec971138f9e3fec7cb7e2060c10785cfb492de72c8e1"
     },
     "workbook_pdf.pdf": {
-      "bytes": 479212,
-      "sha256": "2b942aaed889331b998049dbdc181f5ca9caad19bdb7423718b9873bfe7929ee"
+      "bytes": 479208,
+      "sha256": "facdee1a01b3257458f95d65aa1e22c4a0ff2a3b36774672d03c5fe60a566704"
     },
     "book.epub": {
-      "bytes": 217223,
-      "sha256": "06d613b83c2a338df522bd37df69d3bee699e0e287e2d97c1bc5a82e9a8e7b58"
+      "bytes": 217222,
+      "sha256": "bf0f2c75ceeb68c23c0a05cc5967f38717729b7a86e2b35862e8089eab998e5b"
     },
     "art/cover.svg": {
       "bytes": 4371,

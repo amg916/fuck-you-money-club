@@ -12,9 +12,9 @@ These practitioners approach GEO through answer inclusion, source selection, ent
 
 | Metric | Value | Confidence | Source |
 | --- | --- | --- | --- |
-| Brand research sample | 75,000 brands; 25 million AI overviews |  |  |
-| Freshness comparison | 25.7% fresher |  |  |
-| Small-sample inclusion example | 4 of 12; 33%; about 14 to 60% |  |  |
+| Brand research sample | 75,000 brands; 25 million AI overviews | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to Ahrefs ([gReszNnykpg @ 00:00:00]). |
+| Freshness comparison | 25.7% fresher | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to Ahrefs ([gReszNnykpg @ 00:04:34]). |
+| Small-sample inclusion example | 4 of 12; 33%; about 14 to 60% | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to The Answer Lab \| GEO & AEO ([yeLHXIInymI @ 00:07:04]). |
 
 ## Define the outcome: being named, being cited, and being understood
 

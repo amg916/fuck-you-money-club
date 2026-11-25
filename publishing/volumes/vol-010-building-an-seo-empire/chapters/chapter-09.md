@@ -12,9 +12,9 @@ These sixteen transcript accounts separate update reporting, observed site movem
 
 | Metric | Value | Confidence | Source |
 | --- | --- | --- | --- |
-| Business-topic drift in reviewed sites | 86 of 172 |  |  |
-| Client active-user growth | almost 62% |  |  |
-| Demonstrated speed-score movement | 57 to 64 |  |  |
+| Business-topic drift in reviewed sites | 86 of 172 | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to Kasra Dash ([I26NAT6T6Gs @ 00:00:19]). |
+| Client active-user growth | almost 62% | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to True SEO ([y6yAJ9Ocl3U @ 00:03:18]). |
+| Demonstrated speed-score movement | 57 to 64 | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to Kasra Dash ([yzNo7jJ8WBE @ 00:22:54]). |
 
 ## Read the update report before explaining the loss
 

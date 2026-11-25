@@ -299,7 +299,7 @@ def handle_fymc_http(handler, state, method: str, path: str, query: dict, body: 
                 volume["scorecard"], marketplace_clean=clean), "image/svg+xml")
         if method == "GET" and path == "/api/fymc/svg/diagram":
             concept = _norm_concept(q("concept"), default_concept)
-            diag_id = q("diagram") or "diag-01-end-to-end-workflow"
+            diag_id = q("diagram") or "1"
             diag = next((d for i, d in enumerate(_diagrams_list(pub), 1)
                          if str(diag_id) in (str(d.get("diagram_id")), str(i))), None)
             if diag is None:

@@ -1,1048 +1,785 @@
 from __future__ import annotations
 
-CHAPTER_8 = {
-    "id": "Q8",
-    "chapter_id": "Q8",
-    "chapter_number": 8,
-    "question_number": 8,
-    "slug": "technical-indexing-crawl-budgets-log-diagnostics",
-    "question_prompt": "How do these technical SEO tutorials diagnose crawling, discovery, and indexing problems using site structure, internal links, Search Console, Python, and server logs?",
-    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
-    "title": "Technical Indexing, Crawl Budgets & Log Diagnostics",
-    "subtitle": "Crawl Stats reporting, crawl demand, server-log investigations, Python crawling workflows, internal-link discovery, website-structure problems, and crawled-but-not-indexed troubleshooting",
-    "layout_template": "legal_compliance_callout",
-    "reading_time_minutes": 15,
-    "executive_summary": (
-        "These tutorials connect discoverable site structure, responsive servers, and worthwhile pages, "
-        "while disagreeing about how widely crawl-budget constraints apply. Daniel Waisberg defines "
-        "budget through capacity and demand at Google Search Central "
-        "([x_GoMrl6_u0 @ 00:02:35]); Andrew Halliday emphasizes stability and trends on James Dooley "
-        "([cv7lfh1AjZc @ 00:02:56]). BKA Content reports gains after restructuring an RV website, "
-        "while Abdul Latif and Chris Palmer emphasize internal discovery and anchors. TM Blast, "
-        "FatRank, Semrush Live, and brightonSEO investigate actual requests rather than relying "
-        "only on crawler simulations. Daniel Heredia demonstrates Python-assisted analysis on "
-        "BoostRoas ([kuSNDOAsr50 @ 00:31:47]). Misha Manko separates indexing notifications from "
-        "pages needing intervention ([vcLkBQxf9Hs @ 00:07:05]); Pearl Lemon cautions against "
-        "misreading resource requests, and Greenlane emphasizes investigating accumulated index bloat."
-    ),
-    "key_metrics": [
-        {
-            "label": "RV website impressions",
-            "value": "Over 1,656% in 2 months",
-            "context": (
-                "BKA Content reports this increase after launching the client's rebuilt website "
-                "with a revised structure and focused subpages."
-            ),
-            "note": "Attributed to BKA Content (n68rh1s-ZdY @ 00:09:10).",
-        },
-        {
-            "label": "Blog crawl events",
-            "value": "266 unique events over 30 days",
-            "context": (
-                "Greg's pivot table isolates blog activity while investigating whether older "
-                "content draws crawling away from priority service pages."
-            ),
-            "note": "Attributed to TM Blast (1v7Wiw-ptLU @ 00:02:52).",
-        },
-        {
-            "label": "Hospital sitemap crawl coverage",
-            "value": "1.3%",
-            "context": (
-                "The brightonSEO presenter reports this sitemap coverage in the hospital's "
-                "ChatGPT crawl investigation, concentrated on homepage and top-level categories."
-            ),
-            "note": "Attributed to brightonSEO (Q9Nkmc8Cx6I @ 00:11:32).",
-        },
-    ],
-    "sections": [
-        {
-            "id": "Q8-S1",
-            "title": "Separate crawl capacity, crawl demand, and the evidence of a problem",
-            "paragraphs": [
-                (
-                    "Daniel Waisberg at Google Search Central ([x_GoMrl6_u0 @ 00:02:35]) defines "
-                    "crawl budget as the number of URLs Google can and wants to crawl, bringing "
-                    "together crawl rate and crawl demand rather than presenting a target every "
-                    "website should maximize. In the tutorial, responsiveness determines how much "
-                    "crawling the server can handle, while demand concerns new addresses and changes "
-                    "to known content. Andrew Halliday on James Dooley ([cv7lfh1AjZc @ 00:01:12]) "
-                    "puts stable hosting first: repeated server errors reduce crawling, so the "
-                    "foundation precedes attempts to attract additional visits. Their practical "
-                    "emphases overlap without making every increase in requests a ranking result. "
-                    "Halliday discusses backlinks, schema, paid traffic, and social signals as ways "
-                    "of building trust and encouraging activity; Waisberg explains the request "
-                    "capacity and indexing demand behind Google's decisions. Daniel Heredia on "
-                    "BoostRoas ([kuSNDOAsr50 @ 00:27:13]) explicitly says crawling is necessary "
-                    "for appearing in results but is not itself a ranking signal. Read these "
-                    "accounts as explanations of different parts of the process: whether the "
-                    "server can respond, whether Google wants the content, and whether fetched "
-                    "content proceeds into indexing. A technically responsive site and an increased "
-                    "request count therefore answer different questions from whether an individual "
-                    "page has become searchable."
-                ),
-                (
-                    "The speakers do not give one shared threshold for concern. Gary Illyes at "
-                    "Google Search Central ([LIMqmzuzpVg @ 00:02:35]) estimates that over 90% of "
-                    "sites need not worry about crawl budget; the discussion repeatedly distinguishes "
-                    "large-scale constraints from anxiety about a small website's latest post. "
-                    "Andrew Halliday on FatRank ([GVJrNHhAXME @ 00:07:18]) similarly contrasts a "
-                    "five-page local plumber website with a substantial ecommerce catalog, making "
-                    "site size central to the usefulness of tracking. Misha Manko "
-                    "([nBrto2B9RyE @ 00:08:55]) explicitly takes a different position, saying "
-                    "their experience makes consideration worthwhile once a site has more than "
-                    "100 pages. Greenlane Search Marketing, LLC ([NyNv-u7KkFw @ 00:01:37]) "
-                    "also emphasizes larger, database-driven sites but warns against dismissing "
-                    "smaller ones. These positions remain attributed rather than being collapsed "
-                    "into a universal page-count rule. Their examples direct attention toward "
-                    "actual symptoms: important pages not receiving visits, excessive generated "
-                    "URLs, server limitations, or accumulated content drawing continued attention. "
-                    "The Google discussion also describes demand and quality considerations, not "
-                    "just exhausted server capacity. Consequently, the chapter's contrasting "
-                    "accounts support inspecting the site's recorded behavior before choosing "
-                    "which explanation fits, while preserving each speaker's stated view about "
-                    "where that investigation deserves priority."
-                ),
-                (
-                    "Daniel Waisberg at Google Search Central ([x_GoMrl6_u0 @ 00:03:54]) walks "
-                    "through three Crawl Stats trends: total requests, downloaded data, and average "
-                    "response time. Requests include unsuccessful attempts, while resources hosted "
-                    "outside the property do not appear in that site's totals. The response-time "
-                    "measure concerns retrieving page content, not rendering the page or retrieving "
-                    "its associated resources. Ismael at Pearl Lemon SEO "
-                    "([aRuxCdZQ1Yo @ 00:06:50]) demonstrates why file-type percentages need "
-                    "interpretation: the example shows JavaScript at 41% and CSS at 32%, yet "
-                    "they explain that the WordPress implementation needs those files for rendering. "
-                    "The tutorial does not treat those proportions as an emergency. Waisberg "
-                    "at Google Search Central ([x_GoMrl6_u0 @ 00:08:10]) separately distinguishes "
-                    "discovery of new URLs from refresh crawling of known pages, and shows "
-                    "breakdowns by crawler type. Together these demonstrations make the report "
-                    "a way to identify what changed, rather than a scoreboard where every "
-                    "resource request counts against useful crawling. Examine the requested "
-                    "addresses, response patterns, and purpose behind the totals. Pearl Lemon's "
-                    "example particularly warns against blocking assets merely because their "
-                    "share looks large; the speaker describes that action as giving Google "
-                    "a fragmented version of the website rather than solving the suspected problem."
-                ),
-            ],
-            "table": {
-                "caption": "Read the report through the distinctions each speaker actually makes.",
-                "headers": ["Diagnostic distinction", "Transcript-led interpretation", "Expert Source"],
-                "rows": [
-                    [
-                        "Separate what Google can crawl from what Google wants to crawl.",
-                        "Use capacity and demand together instead of inventing a universal request target.",
-                        "Google Search Central ([x_GoMrl6_u0 @ 00:02:35])",
-                    ],
-                    [
-                        "Check stability before seeking additional crawling through other website signals.",
-                        "Halliday identifies repeated 500 errors as a reason Google reduces crawling.",
-                        "James Dooley ([cv7lfh1AjZc @ 00:01:12])",
-                    ],
-                    [
-                        "Distinguish a small local site from a substantial ecommerce product catalog.",
-                        "Halliday makes medium-to-large scale the important context for sustained crawl tracking.",
-                        "FatRank ([GVJrNHhAXME @ 00:07:18])",
-                    ],
-                    [
-                        "Preserve Manko's different view about when smaller sites deserve attention.",
-                        "Their experience-based recommendation begins considering crawl budget above 100 pages.",
-                        "Misha Manko ([nBrto2B9RyE @ 00:08:55])",
-                    ],
-                    [
-                        "Review JavaScript and CSS requests in relation to the actual implementation.",
-                        "Pearl Lemon explains that rendering dependencies can account for substantial resource crawling.",
-                        "Pearl Lemon SEO ([aRuxCdZQ1Yo @ 00:06:50])",
-                    ],
-                    [
-                        "Separate newly discovered URL requests from refresh visits to known pages.",
-                        "Use the purpose breakdown and sample addresses to understand the observed activity.",
-                        "Google Search Central ([x_GoMrl6_u0 @ 00:08:10])",
-                    ],
-                ],
-            },
-        },
-        {
-            "id": "Q8-S2",
-            "title": "Preserve, validate, and segment the requests that actually reached the site",
-            "paragraphs": [
-                (
-                    "Log investigations begin with retaining the evidence. Carl Dalton on FatRank "
-                    "([9YOo5zDOsP8 @ 00:05:00]) describes shared hosting that overwrites logs "
-                    "after a short period and a cron job that moves the current log before "
-                    "the next file begins. Their preferred longer view is about six months, "
-                    "rather than treating isolated daily activity as the whole picture. Andrew "
-                    "Halliday on James Dooley ([cv7lfh1AjZc @ 00:04:35]) asks ideally for "
-                    "three to six months, but says 28 days can begin an investigation, especially "
-                    "for visible server errors. Jamie's presentation on Semrush Live "
-                    "([eelEuYoflG0 @ 00:03:04]) adds a different completeness issue: CDNs, "
-                    "load balancers, and web servers maintain separate records, so collecting "
-                    "only one location may miss where Googlebot actually interacts with the "
-                    "site. Cached edge requests particularly matter when choosing which logs "
-                    "to aggregate. The acquisition task is therefore both historical and "
-                    "architectural: retain enough time to compare behavior, and include the "
-                    "places serving the requests under investigation. Ask the existing log "
-                    "management team what is already captured and how fields are defined. "
-                    "Semrush Live's presentation favors using functionality already in place "
-                    "rather than rebuilding collection simply because an SEO investigation "
-                    "has introduced a new question."
-                ),
-                (
-                    "The brightonSEO presenter ([Q9Nkmc8Cx6I @ 00:09:02]) warns that apparent "
-                    "bot identities must be checked against provider IP information. Their "
-                    "workflow fetches published address data live during ingestion rather than "
-                    "assuming a downloaded list remains current, and keeps rejected spoofed "
-                    "traffic available for a separate investigation. Semrush Live "
-                    "([eelEuYoflG0 @ 00:06:11]) likewise makes Googlebot validation a step "
-                    "before asking SEO questions of the logs, offering manual checks, scripts, "
-                    "or tools according to the amount of data. Once requests are validated, "
-                    "the point is to organize them around a question. TM Blast "
-                    "([1v7Wiw-ptLU @ 00:02:33]) exports crawled URLs into a pivot table "
-                    "and counts events by blog section, comparing that activity with priority "
-                    "service pages. The example finds 266 blog events over 30 days against "
-                    "893 total events, leading Greg to examine legacy posts and plugin URLs. "
-                    "Those figures describe that site's investigation, not a target allocation "
-                    "for every business. The presenter examines actual destinations and the "
-                    "value of the content before describing removals and blocking tests. This "
-                    "combination of verified identity, URL grouping, and page-level inspection "
-                    "keeps a large volume of requests connected to the specific question "
-                    "of what the site's important pages are receiving."
-                ),
-                (
-                    "The hospital investigation at brightonSEO ([Q9Nkmc8Cx6I @ 00:11:32]) "
-                    "compares recorded ChatGPT crawling with the XML sitemap and finds only "
-                    "1.3% coverage, concentrated near the top of the site. The presenter "
-                    "then investigates 499 responses and JavaScript-rendered internal links "
-                    "that prevent the relevant bots from reaching deeper content. A temporary "
-                    "dynamic-rendering arrangement serves cached rendered HTML, with refreshes "
-                    "every six hours; the presenter reports improved crawling and uses the "
-                    "case to support a later server-side-rendering upgrade. They explicitly "
-                    "describe the workaround as a difficult-to-maintain bandage, not the "
-                    "root repair. Semrush Live ([eelEuYoflG0 @ 00:14:42]) provides a "
-                    "different example: a broad response-code view looks mostly healthy, "
-                    "but segmenting 500 responses by subfolder exposes a failing AJAX "
-                    "endpoint essential to rendering content. FatRank "
-                    "([9YOo5zDOsP8 @ 00:10:17]) adds an outcome check after link work: "
-                    "if crawler revisits rise without impressions or clicks improving, "
-                    "inspect the content and page weight rather than stopping at the "
-                    "crawl increase. These cases show why overall totals do not finish "
-                    "the diagnosis. Each speaker moves from a broad pattern to a "
-                    "particular destination, dependency, or content problem, then evaluates "
-                    "what changed after the intervention."
-                ),
-            ],
-            "table": {
-                "caption": "Log investigations connect preserved evidence to a specific operational question.",
-                "headers": ["Evidence to collect", "Investigation taught in the transcript", "Expert Source"],
-                "rows": [
-                    [
-                        "Retain dated access logs before the hosting service overwrites existing files.",
-                        "Dalton describes moving the current log before the next day's generation begins.",
-                        "FatRank ([9YOo5zDOsP8 @ 00:05:00])",
-                    ],
-                    [
-                        "Gather requests from relevant CDN, load-balancer, and web-server recording locations.",
-                        "Aggregate the places serving traffic rather than assuming every layer shares records.",
-                        "Semrush Live ([eelEuYoflG0 @ 00:03:04])",
-                    ],
-                    [
-                        "Validate claimed crawler identities against current published provider IP address information.",
-                        "Fetch the address information during ingestion and retain spoofed traffic separately.",
-                        "brightonSEO ([Q9Nkmc8Cx6I @ 00:09:02])",
-                    ],
-                    [
-                        "Export requested URLs and count events for sections receiving repeated attention.",
-                        "Greg uses an Excel pivot table to examine blog activity against service priorities.",
-                        "TM Blast ([1v7Wiw-ptLU @ 00:02:33])",
-                    ],
-                    [
-                        "Compare recorded bot visits with the URLs included in the sitemap.",
-                        "The hospital investigation discovers coverage concentrated on homepage and top-level categories.",
-                        "brightonSEO ([Q9Nkmc8Cx6I @ 00:11:32])",
-                    ],
-                    [
-                        "Break server-error responses down by the subfolders and resources being requested.",
-                        "The presentation isolates an AJAX endpoint whose failure obstructed rendering page content.",
-                        "Semrush Live ([eelEuYoflG0 @ 00:14:42])",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make the log dataset answerable before making it impressive",
-                "body": (
-                    "The presenters emphasize preservation, request identity, manageable queries, "
-                    "and questions tied to important pages rather than tool volume alone "
-                    "[Semrush Live — eelEuYoflG0 @ 00:07:26]."
-                ),
-                "items": [
-                    (
-                        "Trend activity across weeks and months rather than treating one low-crawl "
-                        "day as the conclusion. [James Dooley — cv7lfh1AjZc @ 00:02:56]"
-                    ),
-                    (
-                        "Do not validate a bot from its user agent alone; the presenter says "
-                        "to use IP information because user agents are easy to imitate. "
-                        "[brightonSEO — Q9Nkmc8Cx6I @ 00:10:56]"
-                    ),
-                    (
-                        "Start a new query with a limit of 10, then iterate before expanding "
-                        "the result set and its processing cost. "
-                        "[Semrush Live — eelEuYoflG0 @ 00:09:17]"
-                    ),
-                    (
-                        "Use frequently visited sections as places to examine links leading "
-                        "toward the sections you actually want crawled. "
-                        "[FatRank — 9YOo5zDOsP8 @ 00:06:07]"
-                    ),
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Preserve the relevant request history",
-                    "action": "Collect retained logs and establish where requests are recorded.",
-                    "detail": (
-                        "Include CDN, load-balancer, and web-server records where those layers "
-                        "serve the traffic being investigated. "
-                        "[Semrush Live — eelEuYoflG0 @ 00:03:04]"
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Validate the crawler population",
-                    "action": "Separate verified crawler traffic from merely claimed bot identities.",
-                    "detail": (
-                        "Use current provider IP information during ingestion and keep the "
-                        "spoofed requests available for their own analysis. "
-                        "[brightonSEO — Q9Nkmc8Cx6I @ 00:09:02]"
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Segment requests around important destinations",
-                    "action": "Group URL events by the sections and pages under investigation.",
-                    "detail": (
-                        "Follow Greg's export-and-pivot approach to compare blog activity "
-                        "with the service pages whose crawling matters to the business. "
-                        "[TM Blast — 1v7Wiw-ptLU @ 00:02:33]"
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Check what the intervention changed",
-                    "action": "Compare crawler revisits with impressions and clicks after the work.",
-                    "detail": (
-                        "If additional crawling does not produce movement in impressions "
-                        "or clicks, investigate the page's content and weight. "
-                        "[FatRank — 9YOo5zDOsP8 @ 00:10:17]"
-                    ),
-                },
-            ],
-        },
-        {
-            "id": "Q8-S3",
-            "title": "Build discovery routes and scale the checks with Python",
-            "paragraphs": [
-                (
-                    "BKA Content ([n68rh1s-ZdY @ 00:03:22]) starts website structure with "
-                    "the customer's journey and top navigation, using an RV park to illustrate "
-                    "a homepage, rates, amenities, locations, attractions, company information, "
-                    "and a blog. The presentation recommends placing the blog in the main "
-                    "navigation instead of burying it beneath another page, then developing "
-                    "subpages around the information customers seek. Long-term and short-term "
-                    "stays, serviced neighboring locations, and nearby attractions become "
-                    "specific destinations rather than unrelated topics crowded onto one "
-                    "page. Abdul Latif ([pjmp4gM12iQ @ 00:02:28]) complements that "
-                    "structural account with routes into important pages: link from the "
-                    "homepage and well-visited blog posts to relevant service pages inside "
-                    "useful sentences. Their audit examples concern existing money pages "
-                    "that have few or no internal routes, not simply a shortage of "
-                    "published content. Misha Manko ([vcLkBQxf9Hs @ 00:12:22]) adds "
-                    "a condition to the location-page approach: pages that merely exchange "
-                    "city names while retaining the same text, photos, and questions look "
-                    "like duplicates in their account. They recommend genuinely local "
-                    "material or a consolidated service-area page when meaningful "
-                    "differentiation is unavailable. The speakers therefore describe "
-                    "both a discovery structure and the distinct content that belongs "
-                    "at the destinations it exposes."
-                ),
-                (
-                    "Chris Palmer SEO ([qLr_HlF7dKw @ 00:01:19]) shows the Links section "
-                    "in Search Console as a starting point for examining internally linked "
-                    "pages, then uses Screaming Frog when more anchor detail is needed. "
-                    "Their analysis distinguishes links pointing into a particular page "
-                    "from the wording distributed across the whole site. Chris Palmer SEO "
-                    "([qLr_HlF7dKw @ 00:08:09]) demonstrates the inlink anchor-text "
-                    "visualization, where larger words represent more frequent wording, "
-                    "and connects that inspection to the term variations ranking pages "
-                    "already cover. Abdul Latif ([pjmp4gM12iQ @ 00:03:01]) offers "
-                    "the simpler labeling check: a reader seeing only the anchor should "
-                    "understand the destination, instead of encountering repeated generic "
-                    "instructions to click or learn more. Palmer also describes more "
-                    "aggressive internal optimization through jump links, headings, and "
-                    "follow-noindex pages, reporting their use in competitive examples. "
-                    "Chris Palmer SEO ([qLr_HlF7dKw @ 00:11:10]) presents these as "
-                    "ways of exposing more term variations internally without adding "
-                    "ordinary indexed pages for every variation. These are Palmer's "
-                    "reported tactics, while Latif's account emphasizes clear contextual "
-                    "routes and avoiding indiscriminate linking. Keeping both accounts "
-                    "visible preserves their different emphases: sitewide anchor "
-                    "optimization on one side, and understandable paths to important "
-                    "existing content on the other."
-                ),
-                (
-                    "Daniel Heredia on BoostRoas ([kuSNDOAsr50 @ 00:31:47]) demonstrates "
-                    "Python as a way to inspect linking structure and identify proposed "
-                    "connections between source and target URLs. Their cryptocurrency-site "
-                    "example produces up to 50,000 internal-link opportunities, with "
-                    "keywords, source pages, and destinations available for review. The "
-                    "presentation also describes combining that output with Internal "
-                    "Links Manager on WordPress to create links from supplied terms "
-                    "and targets. BoostRoas ([kuSNDOAsr50 @ 00:33:56]) extends the "
-                    "workflow to bulk PageSpeed Insights analysis, storing measurements "
-                    "so deployments can be compared across URLs rather than checking "
-                    "only the homepage. The brightonSEO presenter "
-                    "([Q9Nkmc8Cx6I @ 00:07:24]) explains another reason for Python: "
-                    "a ten-day log collection occupies 30 to 40 gigabytes before "
-                    "filtering, and even the reduced dataset contains about eight "
-                    "million rows. Filtering around the actual question matters more "
-                    "than trying to inspect everything in a spreadsheet. Heredia "
-                    "also covers regular checks for indexing problems, log parsing, "
-                    "and browser-driven report exports, but does not prescribe "
-                    "programming for every task. BoostRoas "
-                    "([kuSNDOAsr50 @ 00:41:50]) explicitly recommends an existing "
-                    "market solution when it already handles the process. Python "
-                    "serves repeatable collection, comparison, and scale in these "
-                    "demonstrations; it is not presented as a replacement for "
-                    "deciding which pages and symptoms deserve attention."
-                ),
-            ],
-            "table": {
-                "caption": "Discovery work spans architecture, anchor inspection, and repeatable technical checks.",
-                "headers": ["Observed opportunity", "Speaker's operational approach", "Expert Source"],
-                "rows": [
-                    [
-                        "Organize the main navigation around information the prospective customer actually needs.",
-                        "Use the RV park example to distinguish rates, amenities, locations, and attractions.",
-                        "BKA Content ([n68rh1s-ZdY @ 00:03:22])",
-                    ],
-                    [
-                        "Connect strong existing pages with service pages that currently lack attention.",
-                        "Place contextual links from the homepage and popular posts into relevant destinations.",
-                        "Abdul Latif ([pjmp4gM12iQ @ 00:02:28])",
-                    ],
-                    [
-                        "Inspect anchor wording across the entire website as well as individual targets.",
-                        "Use Screaming Frog's inlink anchor-text visualization to examine repeated term variations.",
-                        "Chris Palmer SEO ([qLr_HlF7dKw @ 00:08:09])",
-                    ],
-                    [
-                        "Record Palmer's use of follow-noindex pages and heading-based jump-link anchors.",
-                        "Their competitive examples expose additional internal term variations without ordinary indexed pages.",
-                        "Chris Palmer SEO ([qLr_HlF7dKw @ 00:11:10])",
-                    ],
-                    [
-                        "Build proposed internal links from keywords, source pages, and target destinations.",
-                        "Heredia demonstrates Python-generated opportunities and describes connecting the output to WordPress.",
-                        "BoostRoas ([kuSNDOAsr50 @ 00:31:47])",
-                    ],
-                    [
-                        "Compare page-speed measurements across multiple URLs before and after relevant deployments.",
-                        "Use bulk API analysis and retained measurements instead of inspecting only the homepage.",
-                        "BoostRoas ([kuSNDOAsr50 @ 00:33:56])",
-                    ],
-                ],
-            },
-        },
-        {
-            "id": "Q8-S4",
-            "title": "Diagnose excluded pages without confusing notifications, content, and rendering",
-            "paragraphs": [
-                (
-                    "Misha Manko ([vcLkBQxf9Hs @ 00:08:44]) distinguishes crawled-currently-not-indexed "
-                    "from discovered-currently-not-indexed: the first describes a page Google "
-                    "fetched but did not retain in the index, while the second describes "
-                    "a known URL not yet crawled. Their walkthrough treats the report "
-                    "as information requiring interpretation, not a list where every "
-                    "entry must disappear. Feeds, filters, internal searches, account "
-                    "pages, checkout pages, and canonical variants can belong outside "
-                    "the index; important products, articles, categories, and previously "
-                    "trafficked pages deserve a different response. Greenlane Search "
-                    "Marketing, LLC ([NyNv-u7KkFw @ 00:00:48]) approaches the same "
-                    "inventory question through accumulated content, arguing that old "
-                    "indexed material can obstruct attention to newer, more valuable "
-                    "pages. TM Blast ([1v7Wiw-ptLU @ 00:06:47]) describes removing "
-                    "about 100 irrelevant older posts and taking them out of both "
-                    "HTML and XML sitemaps to concentrate attention on current "
-                    "content and core service pages. Those are concrete inventory "
-                    "decisions tied to the speakers' examples, rather than a "
-                    "requirement to delete a fixed share of every site. Manko's "
-                    "distinction supplies the initial sorting question: does the "
-                    "excluded URL represent something the business actually wants "
-                    "indexed, or is its exclusion consistent with the function "
-                    "of that page?"
-                ),
-                (
-                    "The speakers also disagree about how particular cleanup actions "
-                    "affect crawl allocation. FatRank ([9YOo5zDOsP8 @ 00:03:25]) "
-                    "reports that changing an obsolete URL to 410 was followed "
-                    "by more crawling of a struggling category and subsequent "
-                    "movement in impressions and clicks. Gary Illyes at Google "
-                    "Search Central ([LIMqmzuzpVg @ 00:26:37]) explicitly says "
-                    "404, 410, and robots-blocked URLs do not waste crawl budget, "
-                    "then contrasts them with soft 404 responses. The chapter "
-                    "preserves the reported intervention and Google's explanation "
-                    "without turning them into a single agreed mechanism. Pearl "
-                    "Lemon SEO ([aRuxCdZQ1Yo @ 00:09:43]) recommends removing "
-                    "or noindexing low-value pages, fixing parameter duplication, "
-                    "strengthening internal links, and cleaning the sitemap. "
-                    "Misha Manko ([nBrto2B9RyE @ 00:19:19]) separately warns "
-                    "that noindex does not stop fetching because Google can "
-                    "continue accessing a known URL without indexing it. Their "
-                    "different accounts make the intended outcome important: "
-                    "removing an unwanted search result, changing which URLs "
-                    "exist, and influencing which requests occur are not "
-                    "described identically. Keep the diagnosis attached to "
-                    "the actual status, URL, and reported behavior instead "
-                    "of attributing every cleanup result to a universally "
-                    "accepted budget transfer. That preserves the transcript "
-                    "debate while retaining the concrete repairs each "
-                    "speaker teaches."
-                ),
-                (
-                    "For a page that should be indexed, Misha Manko "
-                    "([vcLkBQxf9Hs @ 00:30:20]) demonstrates inspecting the URL, "
-                    "running the live test, and viewing the tested page's "
-                    "HTML to see what Google can access. Their technical "
-                    "exception concerns content that arrives too late or "
-                    "depends on JavaScript interaction, leaving an apparently "
-                    "complete human-facing page empty to the crawler. Semrush "
-                    "Live ([eelEuYoflG0 @ 00:16:26]) recommends combining "
-                    "crawl information with logs to find indexable pages "
-                    "without bot hits and to examine whether internal links "
-                    "are actually implemented with an anchor and href "
-                    "value. Daniel Heredia on BoostRoas "
-                    "([kuSNDOAsr50 @ 00:37:36]) adds recurring checks and "
-                    "notifications for accidental indexing directives, robots "
-                    "blocks, or important URLs returning 404 responses. "
-                    "These demonstrations cover different failure points "
-                    "without treating a repeated indexing request as the "
-                    "repair. Misha Manko ([vcLkBQxf9Hs @ 00:21:36]) "
-                    "specifically says requesting indexing again will not "
-                    "change the outcome when the page and website remain "
-                    "unchanged. Their content remedies include consolidating "
-                    "near-identical products, creating genuinely differentiated "
-                    "local pages, and replacing copied supplier material "
-                    "with distinct information. The working sequence in "
-                    "these accounts is to establish accessibility and "
-                    "discovery, inspect what was fetched, repair the "
-                    "identified technical or content issue, and then "
-                    "observe subsequent crawling and indexing behavior."
-                ),
-            ],
-            "table": {
-                "caption": "Match each indexing symptom to its attributed investigation, preserving disagreements.",
-                "headers": ["Symptom or distinction", "Transcript-led response", "Expert Source"],
-                "rows": [
-                    [
-                        "Distinguish a fetched but excluded page from a known uncrawled URL.",
-                        "Manko explains that these report categories describe different points in the process.",
-                        "Misha Manko ([vcLkBQxf9Hs @ 00:08:44])",
-                    ],
-                    [
-                        "Inspect accumulated indexed material alongside the newer pages that deserve attention.",
-                        "Greenlane describes old content potentially obstructing indexing of newer and more valuable material.",
-                        "Greenlane Search Marketing, LLC ([NyNv-u7KkFw @ 00:00:48])",
-                    ],
-                    [
-                        "Retain the distinction between genuine missing-page responses and soft missing-page responses.",
-                        "Illyes says 404 and 410 do not waste budget, contrasting soft 404 behavior.",
-                        "Google Search Central ([LIMqmzuzpVg @ 00:26:37])",
-                    ],
-                    [
-                        "Avoid assuming a noindex directive means that Google stops requesting the URL.",
-                        "Manko says Google can still fetch known pages without putting them into indexing.",
-                        "Misha Manko ([nBrto2B9RyE @ 00:19:19])",
-                    ],
-                    [
-                        "Inspect the tested HTML when important content appears absent to the crawler.",
-                        "Use URL inspection, the live test, and the tested-page view to examine content.",
-                        "Misha Manko ([vcLkBQxf9Hs @ 00:30:20])",
-                    ],
-                    [
-                        "Detect accidental directives, robots blocking, and important URLs returning missing-page responses.",
-                        "Heredia proposes recurring scraping checks with email or Slack notifications for indexing issues.",
-                        "BoostRoas ([kuSNDOAsr50 @ 00:37:36])",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Checks the speakers require before calling the diagnosis complete",
-                "body": (
-                    "Check actual visibility, surviving internal routes, resource dependencies, "
-                    "and the condition that caused exclusion rather than treating every report "
-                    "entry as the same problem [Misha Manko — vcLkBQxf9Hs @ 00:07:05]."
-                ),
-                "items": [
-                    (
-                        "After a redesign, confirm that important service and money pages still "
-                        "have internal links; Latif warns that themes and menus can silently "
-                        "remove those routes. [Abdul Latif — pjmp4gM12iQ @ 00:04:22]"
-                    ),
-                    (
-                        "Do not block JavaScript or CSS merely because resource percentages "
-                        "look high; inspect whether the implementation needs those files "
-                        "to render correctly. [Pearl Lemon SEO — aRuxCdZQ1Yo @ 00:07:12]"
-                    ),
-                    (
-                        "Check whether strong CDN rules intended for AI crawlers also "
-                        "block Google; Manko identifies this as a possible technical "
-                        "exception. [Misha Manko — vcLkBQxf9Hs @ 00:05:58]"
-                    ),
-                    (
-                        "Do not treat the hospital's dynamic-rendering workaround as a "
-                        "finished root repair; the presenter warns that it is difficult "
-                        "to maintain at scale. [brightonSEO — Q9Nkmc8Cx6I @ 00:18:23]"
-                    ),
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "\"More links is not the goal. Clearer links is the goal.\" "
-        "Abdul Latif (pjmp4gM12iQ @ 00:04:05)."
-    ),
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        (
-            "Open Search Console Settings and inspect Crawl Stats trends, host status, "
-            "and request breakdowns before choosing the problem to investigate "
-            "(Google Search Central, x_GoMrl6_u0 @ 00:03:36)."
-        ),
-        (
-            "Retain available server logs and compare trends across time rather than "
-            "making the diagnosis from a single day's requests "
-            "(James Dooley, cv7lfh1AjZc @ 00:02:56)."
-        ),
-        (
-            "Validate crawler identities with provider IP information before "
-            "interpreting the recorded bot activity "
-            "(brightonSEO, Q9Nkmc8Cx6I @ 00:09:02)."
-        ),
-        (
-            "Connect strong existing pages to important service pages through "
-            "contextual internal links "
-            "(Abdul Latif, pjmp4gM12iQ @ 00:02:28)."
-        ),
-        (
-            "Use Python to identify source-page, keyword, and target-page "
-            "combinations for internal-link opportunities "
-            "(BoostRoas, kuSNDOAsr50 @ 00:31:47)."
-        ),
-        (
-            "Inspect the live-tested HTML of important excluded pages to determine "
-            "whether Google can see their content "
-            "(Misha Manko, vcLkBQxf9Hs @ 00:30:20)."
-        ),
-    ],
-    "statutory_citations": [
-        {
-            "title": (
-                "Google Search Central — Crawl Budget and the Crawl Stats report - "
-                "Google Search Console Training [00:02:35]"
-            ),
-            "url": "https://www.youtube.com/watch?v=x_GoMrl6_u0&t=155s",
-            "relevance": (
-                "Core testimony defining crawl budget through crawl rate and demand, "
-                "with the tutorial's subsequent Crawl Stats investigation."
-            ),
-        },
-        {
-            "title": (
-                "Semrush Live — How to Leverage Insights from Your Site’s Server Logs | "
-                "5 Hours of Technical SEO [00:03:04]"
-            ),
-            "url": "https://www.youtube.com/watch?v=eelEuYoflG0&t=184s",
-            "relevance": (
-                "Core practitioner testimony on aggregating logs from different "
-                "infrastructure layers before analyzing crawler behavior."
-            ),
-        },
-        {
-            "title": (
-                "BoostRoas — Python SEO: How to Improve Crawling and Indexing - "
-                "Weekly SEO with Daniel Heredia [00:31:47]"
-            ),
-            "url": "https://www.youtube.com/watch?v=kuSNDOAsr50&t=1907s",
-            "relevance": (
-                "Core practitioner testimony on using Python to analyze internal-link "
-                "structures and identify linking opportunities."
-            ),
-        },
-        {
-            "title": (
-                "Misha Manko — Crawled - Currently Not Indexed: How to Fix It "
-                "(Live Site, Real Data) [00:08:44]"
-            ),
-            "url": "https://www.youtube.com/watch?v=vcLkBQxf9Hs&t=524s",
-            "relevance": (
-                "Core practitioner testimony distinguishing crawled-but-excluded "
-                "pages from discovered URLs that have not yet been crawled."
-            ),
-        },
-    ],
-    "source_citations": [
-        {
-            "source_type": "video_pro_tip",
-            "video_id": "n68rh1s-ZdY",
-            "title": "Is Your Website Structure Hurting Your SEO? Do this!",
-            "channel": "BKA Content",
-            "author": "BKA Content",
-            "text": (
-                "We were able to increase their impressions by over 1,656% "
-                "in the space of only 2 months."
-            ),
-            "tip": (
-                "We were able to increase their impressions by over 1,656% "
-                "in the space of only 2 months."
-            ),
-            "timestamp": 550,
-            "timestamp_seconds": 550,
-            "timestamp_label": "[00:09:10]",
-            "url": "https://www.youtube.com/watch?v=n68rh1s-ZdY&t=550s",
-            "markdown": "[00:09:10](https://www.youtube.com/watch?v=n68rh1s-ZdY&t=550s)",
-            "epistemic_status": "attributed_practitioner_claim",
-            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
-        },
-        {
-            "source_type": "video_pro_tip",
-            "video_id": "qLr_HlF7dKw",
-            "title": "On-Page SEO Internal Linking Tips",
-            "channel": "Chris Palmer SEO",
-            "author": "Chris Palmer SEO",
-            "text": (
-                "Internal links tell Google what is important. "
-                "This is what you feel is important."
-            ),
-            "tip": (
-                "Internal links tell Google what is important. "
-                "This is what you feel is important."
-            ),
-            "timestamp": 250,
-            "timestamp_seconds": 250,
-            "timestamp_label": "[00:04:10]",
-            "url": "https://www.youtube.com/watch?v=qLr_HlF7dKw&t=250s",
-            "markdown": "[00:04:10](https://www.youtube.com/watch?v=qLr_HlF7dKw&t=250s)",
-            "epistemic_status": "attributed_practitioner_claim",
-            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
-        },
-        {
-            "source_type": "video_pro_tip",
-            "video_id": "pjmp4gM12iQ",
-            "title": "Your Best Pages Are Invisible to Google — Internal Linking Explained (2026)",
-            "channel": "Abdul Latif",
-            "author": "Abdul Latif",
-            "text": "More links is not the goal. Clearer links is the goal.",
-            "tip": "More links is not the goal. Clearer links is the goal.",
-            "timestamp": 245,
-            "timestamp_seconds": 245,
-            "timestamp_label": "[00:04:05]",
-            "url": "https://www.youtube.com/watch?v=pjmp4gM12iQ&t=245s",
-            "markdown": "[00:04:05](https://www.youtube.com/watch?v=pjmp4gM12iQ&t=245s)",
-            "epistemic_status": "attributed_practitioner_claim",
-            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
-        },
-        {
-            "source_type": "video_pro_tip",
-            "video_id": "x_GoMrl6_u0",
-            "title": "Crawl Budget and the Crawl Stats report - Google Search Console Training",
-            "channel": "Google Search Central",
-            "author": "Google Search Central",
-            "text": (
-                "Taking crawl rate and crawl demand together, we can define crawl "
-                "budget as the number of URLs Google can and wants to crawl."
-            ),
-            "tip": (
-                "Taking crawl rate and crawl demand together, we can define crawl "
-                "budget as the number of URLs Google can and wants to crawl."
-            ),
-            "timestamp": 155,
-            "timestamp_seconds": 155,
-            "timestamp_label": "[00:02:35]",
-            "url": "https://www.youtube.com/watch?v=x_GoMrl6_u0&t=155s",
-            "markdown": "[00:02:35](https://www.youtube.com/watch?v=x_GoMrl6_u0&t=155s)",
-            "epistemic_status": "attributed_practitioner_claim",
-            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
-        },
-        {
-            "source_type": "video_pro_tip",
-            "video_id": "1v7Wiw-ptLU",
-            "title": "Using Log File Analysis to Improve How Google Crawls My Website",
-            "channel": "TM Blast",
-            "author": "TM Blast",
-            "text": (
-                "The blog has a total of 266 unique events that took place over 30 days."
-            ),
-            "tip": (
-                "The blog has a total of 266 unique events that took place over 30 days."
-            ),
-            "timestamp": 172,
-            "timestamp_seconds": 172,
-            "timestamp_label": "[00:02:52]",
-            "url": "https://www.youtube.com/watch?v=1v7Wiw-ptLU&t=172s",
-            "markdown": "[00:02:52](https://www.youtube.com/watch?v=1v7Wiw-ptLU&t=172s)",
-            "epistemic_status": "attributed_practitioner_claim",
-            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
-        },
-        {
-            "source_type": "video_pro_tip",
-            "video_id": "kuSNDOAsr50",
-            "title": (
-                "Python SEO: How to Improve Crawling and Indexing - "
-                "Weekly SEO with Daniel Heredia"
-            ),
-            "channel": "BoostRoas",
-            "author": "BoostRoas",
-            "text": (
-                "With Python you can analyze the internal linking structures "
-                "and also you can detect internal linking opportunities."
-            ),
-            "tip": (
-                "With Python you can analyze the internal linking structures "
-                "and also you can detect internal linking opportunities."
-            ),
-            "timestamp": 1907,
-            "timestamp_seconds": 1907,
-            "timestamp_label": "[00:31:47]",
-            "url": "https://www.youtube.com/watch?v=kuSNDOAsr50&t=1907s",
-            "markdown": "[00:31:47](https://www.youtube.com/watch?v=kuSNDOAsr50&t=1907s)",
-            "epistemic_status": "attributed_practitioner_claim",
-            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
-        },
-        {
-            "source_type": "video_pro_tip",
-            "video_id": "Q9Nkmc8Cx6I",
-            "title": (
-                "Log Files Don't Lie: A 30-Day Crawl Analysis That Changed "
-                "How We Prioritize Technical SEO"
-            ),
-            "channel": "brightonSEO",
-            "author": "brightonSEO",
-            "text": (
-                "Don't ever rely on just the user agent alone. "
-                "You have to rely on the IP address to validate."
-            ),
-            "tip": (
-                "Don't ever rely on just the user agent alone. "
-                "You have to rely on the IP address to validate."
-            ),
-            "timestamp": 656,
-            "timestamp_seconds": 656,
-            "timestamp_label": "[00:10:56]",
-            "url": "https://www.youtube.com/watch?v=Q9Nkmc8Cx6I&t=656s",
-            "markdown": "[00:10:56](https://www.youtube.com/watch?v=Q9Nkmc8Cx6I&t=656s)",
-            "epistemic_status": "attributed_practitioner_claim",
-            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
-        },
-        {
-            "source_type": "video_pro_tip",
-            "video_id": "LIMqmzuzpVg",
-            "title": "Should I worry about crawl budget? | Search Off the Record",
-            "channel": "Google Search Central",
-            "author": "Google Search Central",
-            "text": (
-                "When I say most, it's probably over 90% of sites on the internet "
-                "don't have to worry about it."
-            ),
-            "tip": (
-                "When I say most, it's probably over 90% of sites on the internet "
-                "don't have to worry about it."
-            ),
-            "timestamp": 155,
-            "timestamp_seconds": 155,
-            "timestamp_label": "[00:02:35]",
-            "url": "https://www.youtube.com/watch?v=LIMqmzuzpVg&t=155s",
-            "markdown": "[00:02:35](https://www.youtube.com/watch?v=LIMqmzuzpVg&t=155s)",
-            "epistemic_status": "attributed_practitioner_claim",
-            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
-        },
-        {
-            "source_type": "video_pro_tip",
-            "video_id": "cv7lfh1AjZc",
-            "title": "Importance of growing crawl budget (James Dooley Interviews Andrew Halliday)",
-            "channel": "James Dooley",
-            "author": "James Dooley",
-            "text": (
-                "You don't really want to look at a day in isolation. "
-                "You want to trend it more over time."
-            ),
-            "tip": (
-                "You don't really want to look at a day in isolation. "
-                "You want to trend it more over time."
-            ),
-            "timestamp": 176,
-            "timestamp_seconds": 176,
-            "timestamp_label": "[00:02:56]",
-            "url": "https://www.youtube.com/watch?v=cv7lfh1AjZc&t=176s",
-            "markdown": "[00:02:56](https://www.youtube.com/watch?v=cv7lfh1AjZc&t=176s)",
-            "epistemic_status": "attributed_practitioner_claim",
-            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
-        },
-        {
-            "source_type": "video_pro_tip",
-            "video_id": "9YOo5zDOsP8",
-            "title": "Server Log Analysis | Find and Fix SEO Errors",
-            "channel": "FatRank",
-            "author": "FatRank",
-            "text": (
-                "If it keeps on hitting these pages, you want the internal links "
-                "there to help push the crawler through to the other pages."
-            ),
-            "tip": (
-                "If it keeps on hitting these pages, you want the internal links "
-                "there to help push the crawler through to the other pages."
-            ),
-            "timestamp": 367,
-            "timestamp_seconds": 367,
-            "timestamp_label": "[00:06:07]",
-            "url": "https://www.youtube.com/watch?v=9YOo5zDOsP8&t=367s",
-            "markdown": "[00:06:07](https://www.youtube.com/watch?v=9YOo5zDOsP8&t=367s)",
-            "epistemic_status": "attributed_practitioner_claim",
-            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
-        },
-        {
-            "source_type": "video_pro_tip",
-            "video_id": "GVJrNHhAXME",
-            "title": "The Real Importance of Crawl Budget for SEO",
-            "channel": "FatRank",
-            "author": "FatRank",
-            "text": (
-                "The more 500 errors you have, the less chance of Google crawling it. "
-                "So they'll decrease your crawl budget."
-            ),
-            "tip": (
-                "The more 500 errors you have, the less chance of Google crawling it. "
-                "So they'll decrease your crawl budget."
-            ),
-            "timestamp": 72,
-            "timestamp_seconds": 72,
-            "timestamp_label": "[00:01:12]",
-            "url": "https://www.youtube.com/watch?v=GVJrNHhAXME&t=72s",
-            "markdown": "[00:01:12](https://www.youtube.com/watch?v=GVJrNHhAXME&t=72s)",
-            "epistemic_status": "attributed_practitioner_claim",
-            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
-        },
-        {
-            "source_type": "video_pro_tip",
-            "video_id": "eelEuYoflG0",
-            "title": (
-                "How to Leverage Insights from Your Site’s Server Logs | "
-                "5 Hours of Technical SEO"
-            ),
-            "channel": "Semrush Live",
-            "author": "Semrush Live",
-            "text": (
-                "We need to validate the requests from Googlebot are actually Googlebot."
-            ),
-            "tip": (
-                "We need to validate the requests from Googlebot are actually Googlebot."
-            ),
-            "timestamp": 371,
-            "timestamp_seconds": 371,
-            "timestamp_label": "[00:06:11]",
-            "url": "https://www.youtube.com/watch?v=eelEuYoflG0&t=371s",
-            "markdown": "[00:06:11](https://www.youtube.com/watch?v=eelEuYoflG0&t=371s)",
-            "epistemic_status": "attributed_practitioner_claim",
-            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
-        },
-        {
-            "source_type": "video_pro_tip",
-            "video_id": "nBrto2B9RyE",
-            "title": "Crawl Budget, Explained: What Eats It and How to Get More",
-            "channel": "Misha Manko",
-            "author": "Misha Manko",
-            "text": (
-                "You need to measure everything by yourself. "
-                "You need to trust only your own logs."
-            ),
-            "tip": (
-                "You need to measure everything by yourself. "
-                "You need to trust only your own logs."
-            ),
-            "timestamp": 1720,
-            "timestamp_seconds": 1720,
-            "timestamp_label": "[00:28:40]",
-            "url": "https://www.youtube.com/watch?v=nBrto2B9RyE&t=1720s",
-            "markdown": "[00:28:40](https://www.youtube.com/watch?v=nBrto2B9RyE&t=1720s)",
-            "epistemic_status": "attributed_practitioner_claim",
-            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
-        },
-        {
-            "source_type": "video_pro_tip",
-            "video_id": "vcLkBQxf9Hs",
-            "title": "Crawled - Currently Not Indexed: How to Fix It (Live Site, Real Data)",
-            "channel": "Misha Manko",
-            "author": "Misha Manko",
-            "text": (
-                "Crawled currently not indexed means that Google crawled your page "
-                "but then chose not to index it for some reason."
-            ),
-            "tip": (
-                "Crawled currently not indexed means that Google crawled your page "
-                "but then chose not to index it for some reason."
-            ),
-            "timestamp": 524,
-            "timestamp_seconds": 524,
-            "timestamp_label": "[00:08:44]",
-            "url": "https://www.youtube.com/watch?v=vcLkBQxf9Hs&t=524s",
-            "markdown": "[00:08:44](https://www.youtube.com/watch?v=vcLkBQxf9Hs&t=524s)",
-            "epistemic_status": "attributed_practitioner_claim",
-            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
-        },
-        {
-            "source_type": "video_pro_tip",
-            "video_id": "aRuxCdZQ1Yo",
-            "title": "How to Fix Crawl Budget Issues and Improve Your SEO in 2026",
-            "channel": "Pearl Lemon SEO",
-            "author": "Pearl Lemon SEO",
-            "text": (
-                "Not every high JavaScript percentage means there is a technical "
-                "SEO problem. Always diagnose before you optimize."
-            ),
-            "tip": (
-                "Not every high JavaScript percentage means there is a technical "
-                "SEO problem. Always diagnose before you optimize."
-            ),
-            "timestamp": 627,
-            "timestamp_seconds": 627,
-            "timestamp_label": "[00:10:27]",
-            "url": "https://www.youtube.com/watch?v=aRuxCdZQ1Yo&t=627s",
-            "markdown": "[00:10:27](https://www.youtube.com/watch?v=aRuxCdZQ1Yo&t=627s)",
-            "epistemic_status": "attributed_practitioner_claim",
-            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
-        },
-        {
-            "source_type": "video_pro_tip",
-            "video_id": "NyNv-u7KkFw",
-            "title": "Crawl Budget & Index Bloat: Technical SEO Factors You Can’t Ignore",
-            "channel": "Greenlane Search Marketing, LLC",
-            "author": "Greenlane Search Marketing, LLC",
-            "text": (
-                "A lot of larger sites, especially database-driven sites, "
-                "they tend to be really bloated, but don't discount smaller sites too."
-            ),
-            "tip": (
-                "A lot of larger sites, especially database-driven sites, "
-                "they tend to be really bloated, but don't discount smaller sites too."
-            ),
-            "timestamp": 97,
-            "timestamp_seconds": 97,
-            "timestamp_label": "[00:01:37]",
-            "url": "https://www.youtube.com/watch?v=NyNv-u7KkFw&t=97s",
-            "markdown": "[00:01:37](https://www.youtube.com/watch?v=NyNv-u7KkFw&t=97s)",
-            "epistemic_status": "attributed_practitioner_claim",
-            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
-        },
-    ],
-}
+CHAPTER_8 = {'id': 'Q8',
+ 'chapter_id': 'Q8',
+ 'chapter_number': 8,
+ 'question_number': 8,
+ 'slug': 'technical-indexing-crawl-budgets-log-diagnostics',
+ 'question_prompt': 'How do these technical SEO tutorials diagnose crawling, discovery, and indexing '
+                    'problems using site structure, internal links, Search Console, Python, and server '
+                    'logs?',
+ 'kicker': 'Q8 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Technical Indexing, Crawl Budgets & Log Diagnostics',
+ 'subtitle': 'Crawl Stats reporting, crawl demand, server-log investigations, Python crawling workflows, '
+             'internal-link discovery, website-structure problems, and crawled-but-not-indexed '
+             'troubleshooting',
+ 'layout_template': 'legal_compliance_callout',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'These tutorials connect discoverable site structure, responsive servers, and '
+                      'worthwhile pages, while disagreeing about how widely crawl-budget constraints '
+                      'apply. Daniel Waisberg defines budget through capacity and demand at Google Search '
+                      'Central ([x_GoMrl6_u0 @ 00:02:35]); Andrew Halliday emphasizes stability and trends '
+                      'on James Dooley ([cv7lfh1AjZc @ 00:02:56]). BKA Content reports gains after '
+                      'restructuring an RV website, while Abdul Latif and Chris Palmer emphasize internal '
+                      'discovery and anchors. TM Blast, FatRank, Semrush Live, and brightonSEO investigate '
+                      'actual requests rather than relying only on crawler simulations. Daniel Heredia '
+                      'demonstrates Python-assisted analysis on BoostRoas ([kuSNDOAsr50 @ 00:31:47]). '
+                      'Misha Manko separates indexing notifications from pages needing intervention '
+                      '([vcLkBQxf9Hs @ 00:07:05]); Pearl Lemon cautions against misreading resource '
+                      'requests, and Greenlane emphasizes investigating accumulated index bloat.',
+ 'key_metrics': [{'label': 'RV website impressions',
+                  'value': 'Over 1,656% in 2 months',
+                  'context': "BKA Content reports this increase after launching the client's rebuilt "
+                             'website with a revised structure and focused subpages.',
+                  'note': 'Attributed to BKA Content (n68rh1s-ZdY @ 00:09:10).',
+                  'metric': 'RV website impressions',
+                  'confidence': 'attributed_practitioner_claim',
+                  'source': 'Attributed to BKA Content (n68rh1s-ZdY @ 00:09:10).'},
+                 {'label': 'Blog crawl events',
+                  'value': '266 unique events over 30 days',
+                  'context': "Greg's pivot table isolates blog activity while investigating whether older "
+                             'content draws crawling away from priority service pages.',
+                  'note': 'Attributed to TM Blast (1v7Wiw-ptLU @ 00:02:52).',
+                  'metric': 'Blog crawl events',
+                  'confidence': 'attributed_practitioner_claim',
+                  'source': 'Attributed to TM Blast (1v7Wiw-ptLU @ 00:02:52).'},
+                 {'label': 'Hospital sitemap crawl coverage',
+                  'value': '1.3%',
+                  'context': "The brightonSEO presenter reports this sitemap coverage in the hospital's "
+                             'ChatGPT crawl investigation, concentrated on homepage and top-level '
+                             'categories.',
+                  'note': 'Attributed to brightonSEO (Q9Nkmc8Cx6I @ 00:11:32).',
+                  'metric': 'Hospital sitemap crawl coverage',
+                  'confidence': 'attributed_practitioner_claim',
+                  'source': 'Attributed to brightonSEO (Q9Nkmc8Cx6I @ 00:11:32).'}],
+ 'sections': [{'id': 'Q8-S1',
+               'title': 'Separate crawl capacity, crawl demand, and the evidence of a problem',
+               'paragraphs': ['Daniel Waisberg at Google Search Central ([x_GoMrl6_u0 @ 00:02:35]) defines '
+                              'crawl budget as the number of URLs Google can and wants to crawl, bringing '
+                              'together crawl rate and crawl demand rather than presenting a target every '
+                              'website should maximize. In the tutorial, responsiveness determines how '
+                              'much crawling the server can handle, while demand concerns new addresses '
+                              'and changes to known content. Andrew Halliday on James Dooley ([cv7lfh1AjZc '
+                              '@ 00:01:12]) puts stable hosting first: repeated server errors reduce '
+                              'crawling, so the foundation precedes attempts to attract additional visits. '
+                              'Their practical emphases overlap without making every increase in requests '
+                              'a ranking result. Halliday discusses backlinks, schema, paid traffic, and '
+                              'social signals as ways of building trust and encouraging activity; Waisberg '
+                              "explains the request capacity and indexing demand behind Google's "
+                              'decisions. Daniel Heredia on BoostRoas ([kuSNDOAsr50 @ 00:27:13]) '
+                              'explicitly says crawling is necessary for appearing in results but is not '
+                              'itself a ranking signal. Read these accounts as explanations of different '
+                              'parts of the process: whether the server can respond, whether Google wants '
+                              'the content, and whether fetched content proceeds into indexing. A '
+                              'technically responsive site and an increased request count therefore answer '
+                              'different questions from whether an individual page has become searchable.',
+                              'The speakers do not give one shared threshold for concern. Gary Illyes at '
+                              'Google Search Central ([LIMqmzuzpVg @ 00:02:35]) estimates that over 90% of '
+                              'sites need not worry about crawl budget; the discussion repeatedly '
+                              "distinguishes large-scale constraints from anxiety about a small website's "
+                              'latest post. Andrew Halliday on FatRank ([GVJrNHhAXME @ 00:07:18]) '
+                              'similarly contrasts a five-page local plumber website with a substantial '
+                              'ecommerce catalog, making site size central to the usefulness of tracking. '
+                              'Misha Manko ([nBrto2B9RyE @ 00:08:55]) explicitly takes a different '
+                              'position, saying their experience makes consideration worthwhile once a '
+                              'site has more than 100 pages. Greenlane Search Marketing, LLC ([NyNv-u7KkFw '
+                              '@ 00:01:37]) also emphasizes larger, database-driven sites but warns '
+                              'against dismissing smaller ones. These positions remain attributed rather '
+                              'than being collapsed into a universal page-count rule. Their examples '
+                              'direct attention toward actual symptoms: important pages not receiving '
+                              'visits, excessive generated URLs, server limitations, or accumulated '
+                              'content drawing continued attention. The Google discussion also describes '
+                              'demand and quality considerations, not just exhausted server capacity. '
+                              "Consequently, the chapter's contrasting accounts support inspecting the "
+                              "site's recorded behavior before choosing which explanation fits, while "
+                              "preserving each speaker's stated view about where that investigation "
+                              'deserves priority.',
+                              'Daniel Waisberg at Google Search Central ([x_GoMrl6_u0 @ 00:03:54]) walks '
+                              'through three Crawl Stats trends: total requests, downloaded data, and '
+                              'average response time. Requests include unsuccessful attempts, while '
+                              "resources hosted outside the property do not appear in that site's totals. "
+                              'The response-time measure concerns retrieving page content, not rendering '
+                              'the page or retrieving its associated resources. Ismael at Pearl Lemon SEO '
+                              '([aRuxCdZQ1Yo @ 00:06:50]) demonstrates why file-type percentages need '
+                              'interpretation: the example shows JavaScript at 41% and CSS at 32%, yet '
+                              'they explain that the WordPress implementation needs those files for '
+                              'rendering. The tutorial does not treat those proportions as an emergency. '
+                              'Waisberg at Google Search Central ([x_GoMrl6_u0 @ 00:08:10]) separately '
+                              'distinguishes discovery of new URLs from refresh crawling of known pages, '
+                              'and shows breakdowns by crawler type. Together these demonstrations make '
+                              'the report a way to identify what changed, rather than a scoreboard where '
+                              'every resource request counts against useful crawling. Examine the '
+                              'requested addresses, response patterns, and purpose behind the totals. '
+                              "Pearl Lemon's example particularly warns against blocking assets merely "
+                              'because their share looks large; the speaker describes that action as '
+                              'giving Google a fragmented version of the website rather than solving the '
+                              'suspected problem.'],
+               'table': {'caption': 'Read the report through the distinctions each speaker actually makes.',
+                         'headers': ['Diagnostic distinction',
+                                     'Transcript-led interpretation',
+                                     'Expert Source'],
+                         'rows': [['Separate what Google can crawl from what Google wants to crawl.',
+                                   'Use capacity and demand together instead of inventing a universal '
+                                   'request target.',
+                                   'Google Search Central ([x_GoMrl6_u0 @ 00:02:35])'],
+                                  ['Check stability before seeking additional crawling through other '
+                                   'website signals.',
+                                   'Halliday identifies repeated 500 errors as a reason Google reduces '
+                                   'crawling.',
+                                   'James Dooley ([cv7lfh1AjZc @ 00:01:12])'],
+                                  ['Distinguish a small local site from a substantial ecommerce product '
+                                   'catalog.',
+                                   'Halliday makes medium-to-large scale the important context for '
+                                   'sustained crawl tracking.',
+                                   'FatRank ([GVJrNHhAXME @ 00:07:18])'],
+                                  ["Preserve Manko's different view about when smaller sites deserve "
+                                   'attention.',
+                                   'Their experience-based recommendation begins considering crawl budget '
+                                   'above 100 pages.',
+                                   'Misha Manko ([nBrto2B9RyE @ 00:08:55])'],
+                                  ['Review JavaScript and CSS requests in relation to the actual '
+                                   'implementation.',
+                                   'Pearl Lemon explains that rendering dependencies can account for '
+                                   'substantial resource crawling.',
+                                   'Pearl Lemon SEO ([aRuxCdZQ1Yo @ 00:06:50])'],
+                                  ['Separate newly discovered URL requests from refresh visits to known '
+                                   'pages.',
+                                   'Use the purpose breakdown and sample addresses to understand the '
+                                   'observed activity.',
+                                   'Google Search Central ([x_GoMrl6_u0 @ 00:08:10])']]}},
+              {'id': 'Q8-S2',
+               'title': 'Preserve, validate, and segment the requests that actually reached the site',
+               'paragraphs': ['Log investigations begin with retaining the evidence. Carl Dalton on '
+                              'FatRank ([9YOo5zDOsP8 @ 00:05:00]) describes shared hosting that overwrites '
+                              'logs after a short period and a cron job that moves the current log before '
+                              'the next file begins. Their preferred longer view is about six months, '
+                              'rather than treating isolated daily activity as the whole picture. Andrew '
+                              'Halliday on James Dooley ([cv7lfh1AjZc @ 00:04:35]) asks ideally for three '
+                              'to six months, but says 28 days can begin an investigation, especially for '
+                              "visible server errors. Jamie's presentation on Semrush Live ([eelEuYoflG0 @ "
+                              '00:03:04]) adds a different completeness issue: CDNs, load balancers, and '
+                              'web servers maintain separate records, so collecting only one location may '
+                              'miss where Googlebot actually interacts with the site. Cached edge requests '
+                              'particularly matter when choosing which logs to aggregate. The acquisition '
+                              'task is therefore both historical and architectural: retain enough time to '
+                              'compare behavior, and include the places serving the requests under '
+                              'investigation. Ask the existing log management team what is already '
+                              "captured and how fields are defined. Semrush Live's presentation favors "
+                              'using functionality already in place rather than rebuilding collection '
+                              'simply because an SEO investigation has introduced a new question.',
+                              'The brightonSEO presenter ([Q9Nkmc8Cx6I @ 00:09:02]) warns that apparent '
+                              'bot identities must be checked against provider IP information. Their '
+                              'workflow fetches published address data live during ingestion rather than '
+                              'assuming a downloaded list remains current, and keeps rejected spoofed '
+                              'traffic available for a separate investigation. Semrush Live ([eelEuYoflG0 '
+                              '@ 00:06:11]) likewise makes Googlebot validation a step before asking SEO '
+                              'questions of the logs, offering manual checks, scripts, or tools according '
+                              'to the amount of data. Once requests are validated, the point is to '
+                              'organize them around a question. TM Blast ([1v7Wiw-ptLU @ 00:02:33]) '
+                              'exports crawled URLs into a pivot table and counts events by blog section, '
+                              'comparing that activity with priority service pages. The example finds 266 '
+                              'blog events over 30 days against 893 total events, leading Greg to examine '
+                              "legacy posts and plugin URLs. Those figures describe that site's "
+                              'investigation, not a target allocation for every business. The presenter '
+                              'examines actual destinations and the value of the content before describing '
+                              'removals and blocking tests. This combination of verified identity, URL '
+                              'grouping, and page-level inspection keeps a large volume of requests '
+                              "connected to the specific question of what the site's important pages are "
+                              'receiving.',
+                              'The hospital investigation at brightonSEO ([Q9Nkmc8Cx6I @ 00:11:32]) '
+                              'compares recorded ChatGPT crawling with the XML sitemap and finds only 1.3% '
+                              'coverage, concentrated near the top of the site. The presenter then '
+                              'investigates 499 responses and JavaScript-rendered internal links that '
+                              'prevent the relevant bots from reaching deeper content. A temporary '
+                              'dynamic-rendering arrangement serves cached rendered HTML, with refreshes '
+                              'every six hours; the presenter reports improved crawling and uses the case '
+                              'to support a later server-side-rendering upgrade. They explicitly describe '
+                              'the workaround as a difficult-to-maintain bandage, not the root repair. '
+                              'Semrush Live ([eelEuYoflG0 @ 00:14:42]) provides a different example: a '
+                              'broad response-code view looks mostly healthy, but segmenting 500 responses '
+                              'by subfolder exposes a failing AJAX endpoint essential to rendering '
+                              'content. FatRank ([9YOo5zDOsP8 @ 00:10:17]) adds an outcome check after '
+                              'link work: if crawler revisits rise without impressions or clicks '
+                              'improving, inspect the content and page weight rather than stopping at the '
+                              'crawl increase. These cases show why overall totals do not finish the '
+                              'diagnosis. Each speaker moves from a broad pattern to a particular '
+                              'destination, dependency, or content problem, then evaluates what changed '
+                              'after the intervention.'],
+               'table': {'caption': 'Log investigations connect preserved evidence to a specific '
+                                    'operational question.',
+                         'headers': ['Evidence to collect',
+                                     'Investigation taught in the transcript',
+                                     'Expert Source'],
+                         'rows': [['Retain dated access logs before the hosting service overwrites '
+                                   'existing files.',
+                                   "Dalton describes moving the current log before the next day's "
+                                   'generation begins.',
+                                   'FatRank ([9YOo5zDOsP8 @ 00:05:00])'],
+                                  ['Gather requests from relevant CDN, load-balancer, and web-server '
+                                   'recording locations.',
+                                   'Aggregate the places serving traffic rather than assuming every layer '
+                                   'shares records.',
+                                   'Semrush Live ([eelEuYoflG0 @ 00:03:04])'],
+                                  ['Validate claimed crawler identities against current published provider '
+                                   'IP address information.',
+                                   'Fetch the address information during ingestion and retain spoofed '
+                                   'traffic separately.',
+                                   'brightonSEO ([Q9Nkmc8Cx6I @ 00:09:02])'],
+                                  ['Export requested URLs and count events for sections receiving repeated '
+                                   'attention.',
+                                   'Greg uses an Excel pivot table to examine blog activity against '
+                                   'service priorities.',
+                                   'TM Blast ([1v7Wiw-ptLU @ 00:02:33])'],
+                                  ['Compare recorded bot visits with the URLs included in the sitemap.',
+                                   'The hospital investigation discovers coverage concentrated on homepage '
+                                   'and top-level categories.',
+                                   'brightonSEO ([Q9Nkmc8Cx6I @ 00:11:32])'],
+                                  ['Break server-error responses down by the subfolders and resources '
+                                   'being requested.',
+                                   'The presentation isolates an AJAX endpoint whose failure obstructed '
+                                   'rendering page content.',
+                                   'Semrush Live ([eelEuYoflG0 @ 00:14:42])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Make the log dataset answerable before making it impressive',
+                           'body': 'The presenters emphasize preservation, request identity, manageable '
+                                   'queries, and questions tied to important pages rather than tool volume '
+                                   'alone [Semrush Live — eelEuYoflG0 @ 00:07:26].',
+                           'items': ['Trend activity across weeks and months rather than treating one '
+                                     'low-crawl day as the conclusion. [James Dooley — cv7lfh1AjZc @ '
+                                     '00:02:56]',
+                                     'Do not validate a bot from its user agent alone; the presenter says '
+                                     'to use IP information because user agents are easy to imitate. '
+                                     '[brightonSEO — Q9Nkmc8Cx6I @ 00:10:56]',
+                                     'Start a new query with a limit of 10, then iterate before expanding '
+                                     'the result set and its processing cost. [Semrush Live — eelEuYoflG0 '
+                                     '@ 00:09:17]',
+                                     'Use frequently visited sections as places to examine links leading '
+                                     'toward the sections you actually want crawled. [FatRank — '
+                                     '9YOo5zDOsP8 @ 00:06:07]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Preserve the relevant request history',
+                              'action': 'Collect retained logs and establish where requests are recorded.',
+                              'detail': 'Include CDN, load-balancer, and web-server records where those '
+                                        'layers serve the traffic being investigated. [Semrush Live — '
+                                        'eelEuYoflG0 @ 00:03:04]'},
+                             {'step': 2,
+                              'title': 'Validate the crawler population',
+                              'action': 'Separate verified crawler traffic from merely claimed bot '
+                                        'identities.',
+                              'detail': 'Use current provider IP information during ingestion and keep the '
+                                        'spoofed requests available for their own analysis. [brightonSEO — '
+                                        'Q9Nkmc8Cx6I @ 00:09:02]'},
+                             {'step': 3,
+                              'title': 'Segment requests around important destinations',
+                              'action': 'Group URL events by the sections and pages under investigation.',
+                              'detail': "Follow Greg's export-and-pivot approach to compare blog activity "
+                                        'with the service pages whose crawling matters to the business. '
+                                        '[TM Blast — 1v7Wiw-ptLU @ 00:02:33]'},
+                             {'step': 4,
+                              'title': 'Check what the intervention changed',
+                              'action': 'Compare crawler revisits with impressions and clicks after the '
+                                        'work.',
+                              'detail': 'If additional crawling does not produce movement in impressions '
+                                        "or clicks, investigate the page's content and weight. [FatRank — "
+                                        '9YOo5zDOsP8 @ 00:10:17]'}]},
+              {'id': 'Q8-S3',
+               'title': 'Build discovery routes and scale the checks with Python',
+               'paragraphs': ['BKA Content ([n68rh1s-ZdY @ 00:03:22]) starts website structure with the '
+                              "customer's journey and top navigation, using an RV park to illustrate a "
+                              'homepage, rates, amenities, locations, attractions, company information, '
+                              'and a blog. The presentation recommends placing the blog in the main '
+                              'navigation instead of burying it beneath another page, then developing '
+                              'subpages around the information customers seek. Long-term and short-term '
+                              'stays, serviced neighboring locations, and nearby attractions become '
+                              'specific destinations rather than unrelated topics crowded onto one page. '
+                              'Abdul Latif ([pjmp4gM12iQ @ 00:02:28]) complements that structural account '
+                              'with routes into important pages: link from the homepage and well-visited '
+                              'blog posts to relevant service pages inside useful sentences. Their audit '
+                              'examples concern existing money pages that have few or no internal routes, '
+                              'not simply a shortage of published content. Misha Manko ([vcLkBQxf9Hs @ '
+                              '00:12:22]) adds a condition to the location-page approach: pages that '
+                              'merely exchange city names while retaining the same text, photos, and '
+                              'questions look like duplicates in their account. They recommend genuinely '
+                              'local material or a consolidated service-area page when meaningful '
+                              'differentiation is unavailable. The speakers therefore describe both a '
+                              'discovery structure and the distinct content that belongs at the '
+                              'destinations it exposes.',
+                              'Chris Palmer SEO ([qLr_HlF7dKw @ 00:01:19]) shows the Links section in '
+                              'Search Console as a starting point for examining internally linked pages, '
+                              'then uses Screaming Frog when more anchor detail is needed. Their analysis '
+                              'distinguishes links pointing into a particular page from the wording '
+                              'distributed across the whole site. Chris Palmer SEO ([qLr_HlF7dKw @ '
+                              '00:08:09]) demonstrates the inlink anchor-text visualization, where larger '
+                              'words represent more frequent wording, and connects that inspection to the '
+                              'term variations ranking pages already cover. Abdul Latif ([pjmp4gM12iQ @ '
+                              '00:03:01]) offers the simpler labeling check: a reader seeing only the '
+                              'anchor should understand the destination, instead of encountering repeated '
+                              'generic instructions to click or learn more. Palmer also describes more '
+                              'aggressive internal optimization through jump links, headings, and '
+                              'follow-noindex pages, reporting their use in competitive examples. Chris '
+                              'Palmer SEO ([qLr_HlF7dKw @ 00:11:10]) presents these as ways of exposing '
+                              'more term variations internally without adding ordinary indexed pages for '
+                              "every variation. These are Palmer's reported tactics, while Latif's account "
+                              'emphasizes clear contextual routes and avoiding indiscriminate linking. '
+                              'Keeping both accounts visible preserves their different emphases: sitewide '
+                              'anchor optimization on one side, and understandable paths to important '
+                              'existing content on the other.',
+                              'Daniel Heredia on BoostRoas ([kuSNDOAsr50 @ 00:31:47]) demonstrates Python '
+                              'as a way to inspect linking structure and identify proposed connections '
+                              'between source and target URLs. Their cryptocurrency-site example produces '
+                              'up to 50,000 internal-link opportunities, with keywords, source pages, and '
+                              'destinations available for review. The presentation also describes '
+                              'combining that output with Internal Links Manager on WordPress to create '
+                              'links from supplied terms and targets. BoostRoas ([kuSNDOAsr50 @ 00:33:56]) '
+                              'extends the workflow to bulk PageSpeed Insights analysis, storing '
+                              'measurements so deployments can be compared across URLs rather than '
+                              'checking only the homepage. The brightonSEO presenter ([Q9Nkmc8Cx6I @ '
+                              '00:07:24]) explains another reason for Python: a ten-day log collection '
+                              'occupies 30 to 40 gigabytes before filtering, and even the reduced dataset '
+                              'contains about eight million rows. Filtering around the actual question '
+                              'matters more than trying to inspect everything in a spreadsheet. Heredia '
+                              'also covers regular checks for indexing problems, log parsing, and '
+                              'browser-driven report exports, but does not prescribe programming for every '
+                              'task. BoostRoas ([kuSNDOAsr50 @ 00:41:50]) explicitly recommends an '
+                              'existing market solution when it already handles the process. Python serves '
+                              'repeatable collection, comparison, and scale in these demonstrations; it is '
+                              'not presented as a replacement for deciding which pages and symptoms '
+                              'deserve attention.'],
+               'table': {'caption': 'Discovery work spans architecture, anchor inspection, and repeatable '
+                                    'technical checks.',
+                         'headers': ['Observed opportunity',
+                                     "Speaker's operational approach",
+                                     'Expert Source'],
+                         'rows': [['Organize the main navigation around information the prospective '
+                                   'customer actually needs.',
+                                   'Use the RV park example to distinguish rates, amenities, locations, '
+                                   'and attractions.',
+                                   'BKA Content ([n68rh1s-ZdY @ 00:03:22])'],
+                                  ['Connect strong existing pages with service pages that currently lack '
+                                   'attention.',
+                                   'Place contextual links from the homepage and popular posts into '
+                                   'relevant destinations.',
+                                   'Abdul Latif ([pjmp4gM12iQ @ 00:02:28])'],
+                                  ['Inspect anchor wording across the entire website as well as individual '
+                                   'targets.',
+                                   "Use Screaming Frog's inlink anchor-text visualization to examine "
+                                   'repeated term variations.',
+                                   'Chris Palmer SEO ([qLr_HlF7dKw @ 00:08:09])'],
+                                  ["Record Palmer's use of follow-noindex pages and heading-based "
+                                   'jump-link anchors.',
+                                   'Their competitive examples expose additional internal term variations '
+                                   'without ordinary indexed pages.',
+                                   'Chris Palmer SEO ([qLr_HlF7dKw @ 00:11:10])'],
+                                  ['Build proposed internal links from keywords, source pages, and target '
+                                   'destinations.',
+                                   'Heredia demonstrates Python-generated opportunities and describes '
+                                   'connecting the output to WordPress.',
+                                   'BoostRoas ([kuSNDOAsr50 @ 00:31:47])'],
+                                  ['Compare page-speed measurements across multiple URLs before and after '
+                                   'relevant deployments.',
+                                   'Use bulk API analysis and retained measurements instead of inspecting '
+                                   'only the homepage.',
+                                   'BoostRoas ([kuSNDOAsr50 @ 00:33:56])']]}},
+              {'id': 'Q8-S4',
+               'title': 'Diagnose excluded pages without confusing notifications, content, and rendering',
+               'paragraphs': ['Misha Manko ([vcLkBQxf9Hs @ 00:08:44]) distinguishes '
+                              'crawled-currently-not-indexed from discovered-currently-not-indexed: the '
+                              'first describes a page Google fetched but did not retain in the index, '
+                              'while the second describes a known URL not yet crawled. Their walkthrough '
+                              'treats the report as information requiring interpretation, not a list where '
+                              'every entry must disappear. Feeds, filters, internal searches, account '
+                              'pages, checkout pages, and canonical variants can belong outside the index; '
+                              'important products, articles, categories, and previously trafficked pages '
+                              'deserve a different response. Greenlane Search Marketing, LLC ([NyNv-u7KkFw '
+                              '@ 00:00:48]) approaches the same inventory question through accumulated '
+                              'content, arguing that old indexed material can obstruct attention to newer, '
+                              'more valuable pages. TM Blast ([1v7Wiw-ptLU @ 00:06:47]) describes removing '
+                              'about 100 irrelevant older posts and taking them out of both HTML and XML '
+                              'sitemaps to concentrate attention on current content and core service '
+                              "pages. Those are concrete inventory decisions tied to the speakers' "
+                              'examples, rather than a requirement to delete a fixed share of every site. '
+                              "Manko's distinction supplies the initial sorting question: does the "
+                              'excluded URL represent something the business actually wants indexed, or is '
+                              'its exclusion consistent with the function of that page?',
+                              'The speakers also disagree about how particular cleanup actions affect '
+                              'crawl allocation. FatRank ([9YOo5zDOsP8 @ 00:03:25]) reports that changing '
+                              'an obsolete URL to 410 was followed by more crawling of a struggling '
+                              'category and subsequent movement in impressions and clicks. Gary Illyes at '
+                              'Google Search Central ([LIMqmzuzpVg @ 00:26:37]) explicitly says 404, 410, '
+                              'and robots-blocked URLs do not waste crawl budget, then contrasts them with '
+                              "soft 404 responses. Treat the FatRank result and Google's explanation as "
+                              'two separate accounts, not as proof of one agreed mechanism. Pearl Lemon '
+                              'SEO ([aRuxCdZQ1Yo @ 00:09:43]) recommends removing or noindexing low-value '
+                              'pages, fixing parameter duplication, strengthening internal links, and '
+                              'cleaning the sitemap. Misha Manko ([nBrto2B9RyE @ 00:19:19]) separately '
+                              'warns that noindex does not stop fetching because Google can continue '
+                              'accessing a known URL without indexing it. Their different accounts make '
+                              'the intended outcome important: removing an unwanted search result, '
+                              'changing which URLs exist, and influencing which requests occur are not '
+                              'described identically. Keep the diagnosis attached to the actual status, '
+                              'URL, and reported behavior instead of attributing every cleanup result to a '
+                              'universally accepted budget transfer. That way you respect where these '
+                              'operators disagree while still applying the concrete repairs each one '
+                              'teaches.',
+                              'For a page that should be indexed, Misha Manko ([vcLkBQxf9Hs @ 00:30:20]) '
+                              'demonstrates inspecting the URL, running the live test, and viewing the '
+                              "tested page's HTML to see what Google can access. Their technical exception "
+                              'concerns content that arrives too late or depends on JavaScript '
+                              'interaction, leaving an apparently complete human-facing page empty to the '
+                              'crawler. Semrush Live ([eelEuYoflG0 @ 00:16:26]) recommends combining crawl '
+                              'information with logs to find indexable pages without bot hits and to '
+                              'examine whether internal links are actually implemented with an anchor and '
+                              'href value. Daniel Heredia on BoostRoas ([kuSNDOAsr50 @ 00:37:36]) adds '
+                              'recurring checks and notifications for accidental indexing directives, '
+                              'robots blocks, or important URLs returning 404 responses. These '
+                              'demonstrations cover different failure points without treating a repeated '
+                              'indexing request as the repair. Misha Manko ([vcLkBQxf9Hs @ 00:21:36]) '
+                              'specifically says requesting indexing again will not change the outcome '
+                              'when the page and website remain unchanged. Their content remedies include '
+                              'consolidating near-identical products, creating genuinely differentiated '
+                              'local pages, and replacing copied supplier material with distinct '
+                              'information. The working sequence in these accounts is to establish '
+                              'accessibility and discovery, inspect what was fetched, repair the '
+                              'identified technical or content issue, and then observe subsequent crawling '
+                              'and indexing behavior.'],
+               'table': {'caption': 'Match each indexing symptom to its attributed investigation, '
+                                    'preserving disagreements.',
+                         'headers': ['Symptom or distinction', 'Transcript-led response', 'Expert Source'],
+                         'rows': [['Distinguish a fetched but excluded page from a known uncrawled URL.',
+                                   'Manko explains that these report categories describe different points '
+                                   'in the process.',
+                                   'Misha Manko ([vcLkBQxf9Hs @ 00:08:44])'],
+                                  ['Inspect accumulated indexed material alongside the newer pages that '
+                                   'deserve attention.',
+                                   'Greenlane describes old content potentially obstructing indexing of '
+                                   'newer and more valuable material.',
+                                   'Greenlane Search Marketing, LLC ([NyNv-u7KkFw @ 00:00:48])'],
+                                  ['Retain the distinction between genuine missing-page responses and soft '
+                                   'missing-page responses.',
+                                   'Illyes says 404 and 410 do not waste budget, contrasting soft 404 '
+                                   'behavior.',
+                                   'Google Search Central ([LIMqmzuzpVg @ 00:26:37])'],
+                                  ['Avoid assuming a noindex directive means that Google stops requesting '
+                                   'the URL.',
+                                   'Manko says Google can still fetch known pages without putting them '
+                                   'into indexing.',
+                                   'Misha Manko ([nBrto2B9RyE @ 00:19:19])'],
+                                  ['Inspect the tested HTML when important content appears absent to the '
+                                   'crawler.',
+                                   'Use URL inspection, the live test, and the tested-page view to examine '
+                                   'content.',
+                                   'Misha Manko ([vcLkBQxf9Hs @ 00:30:20])'],
+                                  ['Detect accidental directives, robots blocking, and important URLs '
+                                   'returning missing-page responses.',
+                                   'Heredia proposes recurring scraping checks with email or Slack '
+                                   'notifications for indexing issues.',
+                                   'BoostRoas ([kuSNDOAsr50 @ 00:37:36])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Checks the speakers require before calling the diagnosis complete',
+                           'body': 'Check actual visibility, surviving internal routes, resource '
+                                   'dependencies, and the condition that caused exclusion rather than '
+                                   'treating every report entry as the same problem [Misha Manko — '
+                                   'vcLkBQxf9Hs @ 00:07:05].',
+                           'items': ['After a redesign, confirm that important service and money pages '
+                                     'still have internal links; Latif warns that themes and menus can '
+                                     'silently remove those routes. [Abdul Latif — pjmp4gM12iQ @ 00:04:22]',
+                                     'Do not block JavaScript or CSS merely because resource percentages '
+                                     'look high; inspect whether the implementation needs those files to '
+                                     'render correctly. [Pearl Lemon SEO — aRuxCdZQ1Yo @ 00:07:12]',
+                                     'Check whether strong CDN rules intended for AI crawlers also block '
+                                     'Google; Manko identifies this as a possible technical exception. '
+                                     '[Misha Manko — vcLkBQxf9Hs @ 00:05:58]',
+                                     "Do not treat the hospital's dynamic-rendering workaround as a "
+                                     'finished root repair; the presenter warns that it is difficult to '
+                                     'maintain at scale. [brightonSEO — Q9Nkmc8Cx6I @ 00:18:23]']}}],
+ 'pull_quote': '"More links is not the goal. Clearer links is the goal." Abdul Latif (pjmp4gM12iQ @ '
+               '00:04:05).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Open Search Console Settings and inspect Crawl Stats trends, host status, and '
+                      'request breakdowns before choosing the problem to investigate (Google Search '
+                      'Central, x_GoMrl6_u0 @ 00:03:36).',
+                      'Retain available server logs and compare trends across time rather than making the '
+                      "diagnosis from a single day's requests (James Dooley, cv7lfh1AjZc @ 00:02:56).",
+                      'Validate crawler identities with provider IP information before interpreting the '
+                      'recorded bot activity (brightonSEO, Q9Nkmc8Cx6I @ 00:09:02).',
+                      'Connect strong existing pages to important service pages through contextual '
+                      'internal links (Abdul Latif, pjmp4gM12iQ @ 00:02:28).',
+                      'Use Python to identify source-page, keyword, and target-page combinations for '
+                      'internal-link opportunities (BoostRoas, kuSNDOAsr50 @ 00:31:47).',
+                      'Inspect the live-tested HTML of important excluded pages to determine whether '
+                      'Google can see their content (Misha Manko, vcLkBQxf9Hs @ 00:30:20).'],
+ 'statutory_citations': [{'title': 'Google Search Central — Crawl Budget and the Crawl Stats report - '
+                                   'Google Search Console Training [00:02:35]',
+                          'url': 'https://www.youtube.com/watch?v=x_GoMrl6_u0&t=155s',
+                          'relevance': 'Core testimony defining crawl budget through crawl rate and '
+                                       "demand, with the tutorial's subsequent Crawl Stats investigation."},
+                         {'title': 'Semrush Live — How to Leverage Insights from Your Site’s Server Logs | '
+                                   '5 Hours of Technical SEO [00:03:04]',
+                          'url': 'https://www.youtube.com/watch?v=eelEuYoflG0&t=184s',
+                          'relevance': 'Core practitioner testimony on aggregating logs from different '
+                                       'infrastructure layers before analyzing crawler behavior.'},
+                         {'title': 'BoostRoas — Python SEO: How to Improve Crawling and Indexing - Weekly '
+                                   'SEO with Daniel Heredia [00:31:47]',
+                          'url': 'https://www.youtube.com/watch?v=kuSNDOAsr50&t=1907s',
+                          'relevance': 'Core practitioner testimony on using Python to analyze '
+                                       'internal-link structures and identify linking opportunities.'},
+                         {'title': 'Misha Manko — Crawled - Currently Not Indexed: How to Fix It (Live '
+                                   'Site, Real Data) [00:08:44]',
+                          'url': 'https://www.youtube.com/watch?v=vcLkBQxf9Hs&t=524s',
+                          'relevance': 'Core practitioner testimony distinguishing crawled-but-excluded '
+                                       'pages from discovered URLs that have not yet been crawled.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'n68rh1s-ZdY',
+                       'title': 'Is Your Website Structure Hurting Your SEO? Do this!',
+                       'channel': 'BKA Content',
+                       'author': 'BKA Content',
+                       'text': 'We were able to increase their impressions by over 1,656% in the space of '
+                               'only 2 months.',
+                       'tip': 'We were able to increase their impressions by over 1,656% in the space of '
+                              'only 2 months.',
+                       'timestamp': 550,
+                       'timestamp_seconds': 550,
+                       'timestamp_label': '[00:09:10]',
+                       'url': 'https://www.youtube.com/watch?v=n68rh1s-ZdY&t=550s',
+                       'markdown': '[00:09:10](https://www.youtube.com/watch?v=n68rh1s-ZdY&t=550s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8 corpus.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qLr_HlF7dKw',
+                       'title': 'On-Page SEO Internal Linking Tips',
+                       'channel': 'Chris Palmer SEO',
+                       'author': 'Chris Palmer SEO',
+                       'text': 'Internal links tell Google what is important. This is what you feel is '
+                               'important.',
+                       'tip': 'Internal links tell Google what is important. This is what you feel is '
+                              'important.',
+                       'timestamp': 250,
+                       'timestamp_seconds': 250,
+                       'timestamp_label': '[00:04:10]',
+                       'url': 'https://www.youtube.com/watch?v=qLr_HlF7dKw&t=250s',
+                       'markdown': '[00:04:10](https://www.youtube.com/watch?v=qLr_HlF7dKw&t=250s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8 corpus.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pjmp4gM12iQ',
+                       'title': 'Your Best Pages Are Invisible to Google — Internal Linking Explained '
+                                '(2026)',
+                       'channel': 'Abdul Latif',
+                       'author': 'Abdul Latif',
+                       'text': 'More links is not the goal. Clearer links is the goal.',
+                       'tip': 'More links is not the goal. Clearer links is the goal.',
+                       'timestamp': 245,
+                       'timestamp_seconds': 245,
+                       'timestamp_label': '[00:04:05]',
+                       'url': 'https://www.youtube.com/watch?v=pjmp4gM12iQ&t=245s',
+                       'markdown': '[00:04:05](https://www.youtube.com/watch?v=pjmp4gM12iQ&t=245s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8 corpus.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'x_GoMrl6_u0',
+                       'title': 'Crawl Budget and the Crawl Stats report - Google Search Console Training',
+                       'channel': 'Google Search Central',
+                       'author': 'Google Search Central',
+                       'text': 'Taking crawl rate and crawl demand together, we can define crawl budget as '
+                               'the number of URLs Google can and wants to crawl.',
+                       'tip': 'Taking crawl rate and crawl demand together, we can define crawl budget as '
+                              'the number of URLs Google can and wants to crawl.',
+                       'timestamp': 155,
+                       'timestamp_seconds': 155,
+                       'timestamp_label': '[00:02:35]',
+                       'url': 'https://www.youtube.com/watch?v=x_GoMrl6_u0&t=155s',
+                       'markdown': '[00:02:35](https://www.youtube.com/watch?v=x_GoMrl6_u0&t=155s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8 corpus.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1v7Wiw-ptLU',
+                       'title': 'Using Log File Analysis to Improve How Google Crawls My Website',
+                       'channel': 'TM Blast',
+                       'author': 'TM Blast',
+                       'text': 'The blog has a total of 266 unique events that took place over 30 days.',
+                       'tip': 'The blog has a total of 266 unique events that took place over 30 days.',
+                       'timestamp': 172,
+                       'timestamp_seconds': 172,
+                       'timestamp_label': '[00:02:52]',
+                       'url': 'https://www.youtube.com/watch?v=1v7Wiw-ptLU&t=172s',
+                       'markdown': '[00:02:52](https://www.youtube.com/watch?v=1v7Wiw-ptLU&t=172s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8 corpus.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kuSNDOAsr50',
+                       'title': 'Python SEO: How to Improve Crawling and Indexing - Weekly SEO with Daniel '
+                                'Heredia',
+                       'channel': 'BoostRoas',
+                       'author': 'BoostRoas',
+                       'text': 'With Python you can analyze the internal linking structures and also you '
+                               'can detect internal linking opportunities.',
+                       'tip': 'With Python you can analyze the internal linking structures and also you '
+                              'can detect internal linking opportunities.',
+                       'timestamp': 1907,
+                       'timestamp_seconds': 1907,
+                       'timestamp_label': '[00:31:47]',
+                       'url': 'https://www.youtube.com/watch?v=kuSNDOAsr50&t=1907s',
+                       'markdown': '[00:31:47](https://www.youtube.com/watch?v=kuSNDOAsr50&t=1907s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8 corpus.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Q9Nkmc8Cx6I',
+                       'title': "Log Files Don't Lie: A 30-Day Crawl Analysis That Changed How We "
+                                'Prioritize Technical SEO',
+                       'channel': 'brightonSEO',
+                       'author': 'brightonSEO',
+                       'text': "Don't ever rely on just the user agent alone. You have to rely on the IP "
+                               'address to validate.',
+                       'tip': "Don't ever rely on just the user agent alone. You have to rely on the IP "
+                              'address to validate.',
+                       'timestamp': 656,
+                       'timestamp_seconds': 656,
+                       'timestamp_label': '[00:10:56]',
+                       'url': 'https://www.youtube.com/watch?v=Q9Nkmc8Cx6I&t=656s',
+                       'markdown': '[00:10:56](https://www.youtube.com/watch?v=Q9Nkmc8Cx6I&t=656s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8 corpus.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LIMqmzuzpVg',
+                       'title': 'Should I worry about crawl budget? | Search Off the Record',
+                       'channel': 'Google Search Central',
+                       'author': 'Google Search Central',
+                       'text': "When I say most, it's probably over 90% of sites on the internet don't "
+                               'have to worry about it.',
+                       'tip': "When I say most, it's probably over 90% of sites on the internet don't have "
+                              'to worry about it.',
+                       'timestamp': 155,
+                       'timestamp_seconds': 155,
+                       'timestamp_label': '[00:02:35]',
+                       'url': 'https://www.youtube.com/watch?v=LIMqmzuzpVg&t=155s',
+                       'markdown': '[00:02:35](https://www.youtube.com/watch?v=LIMqmzuzpVg&t=155s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8 corpus.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cv7lfh1AjZc',
+                       'title': 'Importance of growing crawl budget (James Dooley Interviews Andrew '
+                                'Halliday)',
+                       'channel': 'James Dooley',
+                       'author': 'James Dooley',
+                       'text': "You don't really want to look at a day in isolation. You want to trend it "
+                               'more over time.',
+                       'tip': "You don't really want to look at a day in isolation. You want to trend it "
+                              'more over time.',
+                       'timestamp': 176,
+                       'timestamp_seconds': 176,
+                       'timestamp_label': '[00:02:56]',
+                       'url': 'https://www.youtube.com/watch?v=cv7lfh1AjZc&t=176s',
+                       'markdown': '[00:02:56](https://www.youtube.com/watch?v=cv7lfh1AjZc&t=176s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8 corpus.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9YOo5zDOsP8',
+                       'title': 'Server Log Analysis | Find and Fix SEO Errors',
+                       'channel': 'FatRank',
+                       'author': 'FatRank',
+                       'text': 'If it keeps on hitting these pages, you want the internal links there to '
+                               'help push the crawler through to the other pages.',
+                       'tip': 'If it keeps on hitting these pages, you want the internal links there to '
+                              'help push the crawler through to the other pages.',
+                       'timestamp': 367,
+                       'timestamp_seconds': 367,
+                       'timestamp_label': '[00:06:07]',
+                       'url': 'https://www.youtube.com/watch?v=9YOo5zDOsP8&t=367s',
+                       'markdown': '[00:06:07](https://www.youtube.com/watch?v=9YOo5zDOsP8&t=367s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8 corpus.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GVJrNHhAXME',
+                       'title': 'The Real Importance of Crawl Budget for SEO',
+                       'channel': 'FatRank',
+                       'author': 'FatRank',
+                       'text': 'The more 500 errors you have, the less chance of Google crawling it. So '
+                               "they'll decrease your crawl budget.",
+                       'tip': 'The more 500 errors you have, the less chance of Google crawling it. So '
+                              "they'll decrease your crawl budget.",
+                       'timestamp': 72,
+                       'timestamp_seconds': 72,
+                       'timestamp_label': '[00:01:12]',
+                       'url': 'https://www.youtube.com/watch?v=GVJrNHhAXME&t=72s',
+                       'markdown': '[00:01:12](https://www.youtube.com/watch?v=GVJrNHhAXME&t=72s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8 corpus.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eelEuYoflG0',
+                       'title': 'How to Leverage Insights from Your Site’s Server Logs | 5 Hours of '
+                                'Technical SEO',
+                       'channel': 'Semrush Live',
+                       'author': 'Semrush Live',
+                       'text': 'We need to validate the requests from Googlebot are actually Googlebot.',
+                       'tip': 'We need to validate the requests from Googlebot are actually Googlebot.',
+                       'timestamp': 371,
+                       'timestamp_seconds': 371,
+                       'timestamp_label': '[00:06:11]',
+                       'url': 'https://www.youtube.com/watch?v=eelEuYoflG0&t=371s',
+                       'markdown': '[00:06:11](https://www.youtube.com/watch?v=eelEuYoflG0&t=371s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8 corpus.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nBrto2B9RyE',
+                       'title': 'Crawl Budget, Explained: What Eats It and How to Get More',
+                       'channel': 'Misha Manko',
+                       'author': 'Misha Manko',
+                       'text': 'You need to measure everything by yourself. You need to trust only your '
+                               'own logs.',
+                       'tip': 'You need to measure everything by yourself. You need to trust only your own '
+                              'logs.',
+                       'timestamp': 1720,
+                       'timestamp_seconds': 1720,
+                       'timestamp_label': '[00:28:40]',
+                       'url': 'https://www.youtube.com/watch?v=nBrto2B9RyE&t=1720s',
+                       'markdown': '[00:28:40](https://www.youtube.com/watch?v=nBrto2B9RyE&t=1720s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8 corpus.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vcLkBQxf9Hs',
+                       'title': 'Crawled - Currently Not Indexed: How to Fix It (Live Site, Real Data)',
+                       'channel': 'Misha Manko',
+                       'author': 'Misha Manko',
+                       'text': 'Crawled currently not indexed means that Google crawled your page but then '
+                               'chose not to index it for some reason.',
+                       'tip': 'Crawled currently not indexed means that Google crawled your page but then '
+                              'chose not to index it for some reason.',
+                       'timestamp': 524,
+                       'timestamp_seconds': 524,
+                       'timestamp_label': '[00:08:44]',
+                       'url': 'https://www.youtube.com/watch?v=vcLkBQxf9Hs&t=524s',
+                       'markdown': '[00:08:44](https://www.youtube.com/watch?v=vcLkBQxf9Hs&t=524s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8 corpus.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aRuxCdZQ1Yo',
+                       'title': 'How to Fix Crawl Budget Issues and Improve Your SEO in 2026',
+                       'channel': 'Pearl Lemon SEO',
+                       'author': 'Pearl Lemon SEO',
+                       'text': 'Not every high JavaScript percentage means there is a technical SEO '
+                               'problem. Always diagnose before you optimize.',
+                       'tip': 'Not every high JavaScript percentage means there is a technical SEO '
+                              'problem. Always diagnose before you optimize.',
+                       'timestamp': 627,
+                       'timestamp_seconds': 627,
+                       'timestamp_label': '[00:10:27]',
+                       'url': 'https://www.youtube.com/watch?v=aRuxCdZQ1Yo&t=627s',
+                       'markdown': '[00:10:27](https://www.youtube.com/watch?v=aRuxCdZQ1Yo&t=627s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8 corpus.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NyNv-u7KkFw',
+                       'title': 'Crawl Budget & Index Bloat: Technical SEO Factors You Can’t Ignore',
+                       'channel': 'Greenlane Search Marketing, LLC',
+                       'author': 'Greenlane Search Marketing, LLC',
+                       'text': 'A lot of larger sites, especially database-driven sites, they tend to be '
+                               "really bloated, but don't discount smaller sites too.",
+                       'tip': 'A lot of larger sites, especially database-driven sites, they tend to be '
+                              "really bloated, but don't discount smaller sites too.",
+                       'timestamp': 97,
+                       'timestamp_seconds': 97,
+                       'timestamp_label': '[00:01:37]',
+                       'url': 'https://www.youtube.com/watch?v=NyNv-u7KkFw&t=97s',
+                       'markdown': '[00:01:37](https://www.youtube.com/watch?v=NyNv-u7KkFw&t=97s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8 corpus.'}]}

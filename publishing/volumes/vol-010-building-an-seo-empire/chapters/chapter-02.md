@@ -12,9 +12,9 @@ These practitioners connect keyword discovery to page selection, competitive ins
 
 | Metric | Value | Confidence | Source |
 | --- | --- | --- | --- |
-| Demonstrated Semrush cluster | 8 keywords / 5% KD / 950 aggregate volume |  |  |
-| A low score with exact-target competition | KD 30 / 3,600 searches / 15 matching titles |  |  |
-| Floyi contested-silo classification | At least 60% / 10 topics or fewer behind |  |  |
+| Demonstrated Semrush cluster | 8 keywords / 5% KD / 950 aggregate volume | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to Robbie Richards ([P5ET0IvFReQ @ 00:02:38]; [P5ET0IvFReQ @ 00:02:50]). |
+| A low score with exact-target competition | KD 30 / 3,600 searches / 15 matching titles | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to WeStudyFunnels ([PpHWPSjRYPI @ 00:01:51]; [PpHWPSjRYPI @ 00:02:06]; [PpHWPSjRYPI @ 00:04:06]). |
+| Floyi contested-silo classification | At least 60% / 10 topics or fewer behind | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to Topical Authority SEO \| Floyi ([0XswjN-Lops @ 00:00:38]). |
 
 ## Start with the searches, the business, and the available route into a topic
 

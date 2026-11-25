@@ -1013,19 +1013,28 @@
           "label": "Waterfront transaction",
           "value": "$1.3 million",
           "context": "Reported sale to a buyer who arrived through the living-in-Lake-St.-Louis article, rather than the higher-traffic activities article.",
-          "note": "Attributed to Real Estate SEO & Web Design (xDMs5FogvQ8 @ 00:03:19)."
+          "note": "Attributed to Real Estate SEO & Web Design (xDMs5FogvQ8 @ 00:03:19).",
+          "metric": "Waterfront transaction",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Real Estate SEO & Web Design (xDMs5FogvQ8 @ 00:03:19)."
         },
         {
           "label": "Long-running local rental",
           "value": "$2,000 per month",
           "context": "Ippei's reported continuing payment from the Grand Rapids tree-service website discussed as a digital property.",
-          "note": "Attributed to Ippei - Rank and Rent SEO (uJ0bhk9MeDE @ 00:07:50)."
+          "note": "Attributed to Ippei - Rank and Rent SEO (uJ0bhk9MeDE @ 00:07:50).",
+          "metric": "Long-running local rental",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Ippei - Rank and Rent SEO (uJ0bhk9MeDE @ 00:07:50)."
         },
         {
           "label": "Reported map coverage",
           "value": "21% to 74%",
           "context": "Map Ranking's electrician example measures the portion of the city where the business appeared in the top three.",
-          "note": "Attributed to Map Ranking (uH-42eKssR4 @ 00:03:03)."
+          "note": "Attributed to Map Ranking (uH-42eKssR4 @ 00:03:03).",
+          "metric": "Reported map coverage",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Map Ranking (uH-42eKssR4 @ 00:03:03)."
         }
       ],
       "sections": [
@@ -1264,7 +1273,7 @@
           "callout": {
             "kind": "OPERATOR GATE",
             "title": "Practitioner-stated checks before interpreting or extending the work",
-            "body": "Each check below comes from a warning or limitation stated in the supplied recordings.",
+            "body": "Each check below comes straight from a warning or limit the operators called out on camera.",
             "items": [
               "Check the business's opening hours before running a ranking report; the speaker says closed-hours scans alter the results. [Map Ranking — a_7c98JU32w @ 00:04:26]",
               "Do not apply the described engagement campaign to a brand-new listing or one with no SEO foundation, following this video's stated recommendation. [Map Ranking — uH-42eKssR4 @ 00:04:34]",
@@ -1564,7 +1573,7 @@
           "relevance": "Verbatim practitioner testimony from Chapter Q1 corpus."
         }
       ],
-      "revision": "77fb140ece6e710f"
+      "revision": "80581ce79e1c8741"
     },
     {
       "id": "Q2",
@@ -1584,19 +1593,28 @@
           "label": "Demonstrated Semrush cluster",
           "value": "8 keywords / 5% KD / 950 aggregate volume",
           "context": "Robbie Richards describes these figures for a low-difficulty cluster in the car-accident attorney example.",
-          "note": "Attributed to Robbie Richards ([P5ET0IvFReQ @ 00:02:38]; [P5ET0IvFReQ @ 00:02:50])."
+          "note": "Attributed to Robbie Richards ([P5ET0IvFReQ @ 00:02:38]; [P5ET0IvFReQ @ 00:02:50]).",
+          "metric": "Demonstrated Semrush cluster",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Robbie Richards ([P5ET0IvFReQ @ 00:02:38]; [P5ET0IvFReQ @ 00:02:50])."
         },
         {
           "label": "A low score with exact-target competition",
           "value": "KD 30 / 3,600 searches / 15 matching titles",
           "context": "WeStudyFunnels examines the treadmill-under-$1,000 query and counts fifteen leading results targeting the phrase in their titles.",
-          "note": "Attributed to WeStudyFunnels ([PpHWPSjRYPI @ 00:01:51]; [PpHWPSjRYPI @ 00:02:06]; [PpHWPSjRYPI @ 00:04:06])."
+          "note": "Attributed to WeStudyFunnels ([PpHWPSjRYPI @ 00:01:51]; [PpHWPSjRYPI @ 00:02:06]; [PpHWPSjRYPI @ 00:04:06]).",
+          "metric": "A low score with exact-target competition",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to WeStudyFunnels ([PpHWPSjRYPI @ 00:01:51]; [PpHWPSjRYPI @ 00:02:06]; [PpHWPSjRYPI @ 00:04:06])."
         },
         {
           "label": "Floyi contested-silo classification",
           "value": "At least 60% / 10 topics or fewer behind",
           "context": "Alternative conditions for classifying a silo as contested, using topic counts where domains rank in the top 20.",
-          "note": "Attributed to Topical Authority SEO | Floyi ([0XswjN-Lops @ 00:00:38])."
+          "note": "Attributed to Topical Authority SEO | Floyi ([0XswjN-Lops @ 00:00:38]).",
+          "metric": "Floyi contested-silo classification",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Topical Authority SEO | Floyi ([0XswjN-Lops @ 00:00:38])."
         }
       ],
       "sections": [
@@ -2135,7 +2153,7 @@
           "relevance": "Verbatim practitioner testimony from Chapter Q2 corpus."
         }
       ],
-      "revision": "b94fae69aa121b0e"
+      "revision": "ace1f10eb56ca7ee"
     },
     {
       "id": "Q3",
@@ -2155,19 +2173,28 @@
           "label": "Finance case: published pages and crawl activity",
           "value": "400 pages; 60,000 crawls a day",
           "context": "Koray describes the finance site's earlier crawl activity before it lost its advantageous crawl position.",
-          "note": "Attributed to Koray Tuğberk GÜBÜR ([ww7yHUSX5Ak @ 00:02:44])."
+          "note": "Attributed to Koray Tuğberk GÜBÜR ([ww7yHUSX5Ak @ 00:02:44]).",
+          "metric": "Finance case: published pages and crawl activity",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Koray Tuğberk GÜBÜR ([ww7yHUSX5Ak @ 00:02:44])."
         },
         {
           "label": "Topical-map production outline",
           "value": "26 micro steps",
           "context": "Behzad divides the proposed topical-map creation series into micro steps covering fundamentals, research, processing, and publication planning.",
-          "note": "Attributed to Behzad Hussain ([NQCo-V1utn8 @ 00:00:38])."
+          "note": "Attributed to Behzad Hussain ([NQCo-V1utn8 @ 00:00:38]).",
+          "metric": "Topical-map production outline",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Behzad Hussain ([NQCo-V1utn8 @ 00:00:38])."
         },
         {
           "label": "Important-page accessibility",
           "value": "Within three clicks",
           "context": "Semrush's recommendation for reaching the site's most important pages from the homepage.",
-          "note": "Attributed to Semrush ([vnkjR9TE9Ok @ 00:03:35])."
+          "note": "Attributed to Semrush ([vnkjR9TE9Ok @ 00:03:35]).",
+          "metric": "Important-page accessibility",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Semrush ([vnkjR9TE9Ok @ 00:03:35])."
         }
       ],
       "sections": [
@@ -2706,7 +2733,7 @@
           "relevance": "Verbatim practitioner testimony from Chapter Q3 corpus; Edward Sturm quotes David Quaid's rule at the interview opening."
         }
       ],
-      "revision": "209a1865c2878c40"
+      "revision": "b3e00013b635d003"
     },
     {
       "id": "Q4",
@@ -2726,19 +2753,28 @@
           "label": "Reported article production",
           "value": "502 articles",
           "context": "Articles Matt Diggity says the agency generated without AI for the client case.",
-          "note": "Attributed to Matt Diggity (4DgWUgtZGqQ @ 00:00:14)."
+          "note": "Attributed to Matt Diggity (4DgWUgtZGqQ @ 00:00:14).",
+          "metric": "Reported article production",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Matt Diggity (4DgWUgtZGqQ @ 00:00:14)."
         },
         {
           "label": "Reported top-ten keyword growth",
           "value": "0 to 1,923",
           "context": "Change in the client's number of keywords ranking in the top ten, as reported in the closing results.",
-          "note": "Attributed to Matt Diggity (4DgWUgtZGqQ @ 00:09:16)."
+          "note": "Attributed to Matt Diggity (4DgWUgtZGqQ @ 00:09:16).",
+          "metric": "Reported top-ten keyword growth",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Matt Diggity (4DgWUgtZGqQ @ 00:09:16)."
         },
         {
           "label": "Healthcare pages outside the index",
           "value": "Over 1,700 pages",
           "context": "Pages B2BSEOio says were not indexed in the displayed Search Console account; the speaker also reports only 400 indexed pages.",
-          "note": "Attributed to B2BSEOio (uI61LP8Ue30 @ 00:01:19)."
+          "note": "Attributed to B2BSEOio (uI61LP8Ue30 @ 00:01:19).",
+          "metric": "Healthcare pages outside the index",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to B2BSEOio (uI61LP8Ue30 @ 00:01:19)."
         }
       ],
       "sections": [
@@ -2952,7 +2988,7 @@
           "title": "Read the failures, disagreements, and maintenance burden alongside the scale",
           "paragraphs": [
             "B2BSEOio ([uI61LP8Ue30 @ 00:01:19]) reports more than 1,700 pages outside the index and only 400 indexed pages for the healthcare client. The client expanded services across locations and generated more than 1,500 pages, while the speaker's team handled off-page work rather than the in-house on-page implementation. B2BSEOio ([uI61LP8Ue30 @ 00:02:47]) says the team recommended testing a smaller implementation, observing search-engine reactions, and scaling according to results. B2BSEOio ([uI61LP8Ue30 @ 00:05:08]) attributes the failed execution to AI-generated pages whose differences amounted largely to a few words and the target keyword. The speaker says the business had not grown after more than two years despite the link-building effort. Leonidas @ PPCBasic ([78JTZZ9dRQ8 @ 00:01:06]) presents neighborhood-specific data as the important distinction in the pest-control demonstration: information should not simply be copied across every page. His walkthrough uses local provider information, ratings, neighborhood questions, a map, and landmarks, and also acknowledges a section that needs more targeting. The contrast in these accounts is specific. The healthcare account criticizes substituting a keyword inside almost unchanged material; the neighborhood demonstration seeks information tied to the actual location. Neither account makes the existence of an AI-generated page equivalent to a completed answer to the visitor's particular concern.",
-            "Contentbase ([hGy2v1LMEg0 @ 00:01:50]) presents G2 as claiming 6.6 million monthly organic visitors through programmatic pages. Lorraine Pawell - SEO AEO & Content Strategy ([HYZv8hDMBvw @ 00:10:25]) gives a contrasting account of the review site's performance, describing traffic at 600,000 after previously being close to four million and attributing the loss to low-value duplicate pages following a spam update. These are different figures and narratives in the supplied recordings, not a single continuous measurement series established by the transcripts. Contentbase ([oAo6faMNv24 @ 00:01:58]) similarly reports 226 million monthly organic visitors for Tripadvisor, while Lorraine Pawell - SEO AEO & Content Strategy ([HYZv8hDMBvw @ 00:07:48]) reports roughly 96 million monthly organic traffic at the time of filming. Both describe substantial location-specific content, but their traffic totals should remain attached to the individual account that states them. The differences matter when reading the examples as operating evidence: a reported total belongs to that speaker's case presentation, rather than becoming an interchangeable expected result for another site. The chapter therefore retains the speakers' distinct claims alongside their descriptions of page structure. G2's comparison fields and Tripadvisor's activities or booking information remain described mechanisms even where the recordings offer materially different accounts of traffic and durability.",
+            "Contentbase ([hGy2v1LMEg0 @ 00:01:50]) presents G2 as claiming 6.6 million monthly organic visitors through programmatic pages. Lorraine Pawell - SEO AEO & Content Strategy ([HYZv8hDMBvw @ 00:10:25]) gives a contrasting account of the review site's performance, describing traffic at 600,000 after previously being close to four million and attributing the loss to low-value duplicate pages following a spam update. These are two different figures and two different stories from two different operators, not one continuous measurement of the same site over time. Contentbase ([oAo6faMNv24 @ 00:01:58]) similarly reports 226 million monthly organic visitors for Tripadvisor, while Lorraine Pawell - SEO AEO & Content Strategy ([HYZv8hDMBvw @ 00:07:48]) reports roughly 96 million monthly organic traffic at the time of filming. Both describe substantial location-specific content, but each traffic total stays attached to the person who stated it. That matters when you treat these examples as operating evidence: a reported total belongs to that speaker's case, not an interchangeable expected result for your own site. So keep each speaker's distinct claim next to their description of page structure. G2's comparison fields and Tripadvisor's activities or booking information still stand as the mechanisms these operators describe, even where the speakers give materially different accounts of traffic and durability.",
             "Lorraine Pawell - SEO AEO & Content Strategy ([HYZv8hDMBvw @ 00:11:11]) warns that generating a large page set creates continuing monitoring, maintenance, updating, QA, and development work. Her concern is not limited to the initial cost of assembling pages: she also describes pages with no traffic and the burden of keeping a changing site useful. Lorraine Pawell - SEO AEO & Content Strategy ([HYZv8hDMBvw @ 00:12:33]) argues that generic pages can be displaced by AI answers and recommends expert commentary, tools, calculators, and tables that solve problems on the page. Matt Diggity ([4DgWUgtZGqQ @ 00:04:06]) identifies a related input limitation: bad data produces bad content, and automation can overlook more nuanced opportunities such as custom internal linking. The digitalemania ([ufTFZFvsEIM @ 00:02:52]) closes its own demonstration by saying organic visibility takes time and results vary, rather than assigning the WordPress publishing workflow a fixed return. Together, these warnings remain specific to the practitioners' accounts: maintain the resulting pages, inspect the information feeding them, provide something useful beyond a generic summary, and examine what happens after publication. They do not erase the reported benefits of automated production. They describe work that the speakers say persists after the import finishes, the article draft is created, or the internal-link suggestions are returned."
           ],
           "table": {
@@ -2983,7 +3019,7 @@
                 "Leonidas @ PPCBasic ([78JTZZ9dRQ8 @ 00:02:42]) identifies the section needing tighter targeting."
               ],
               [
-                "G2 receives materially different traffic accounts in the supplied recordings.",
+                "Contentbase and Lorraine Pawell give materially different G2 traffic accounts.",
                 "Contentbase reports 6.6 million monthly visitors; Pawell describes 600,000 after a decline.",
                 "Keep the reported figures attached to their separate speakers and accounts.",
                 "Contentbase ([hGy2v1LMEg0 @ 00:01:50]); Lorraine Pawell - SEO AEO & Content Strategy ([HYZv8hDMBvw @ 00:10:25])."
@@ -3305,7 +3341,7 @@
           "relevance": "Verbatim practitioner testimony from Chapter Q4 corpus."
         }
       ],
-      "revision": "9bf5de84c23c5e27"
+      "revision": "4a9551c3bf93fb1c"
     },
     {
       "id": "Q5",
@@ -3325,19 +3361,28 @@
           "label": "Portfolio acquisition range",
           "value": "10 to 40",
           "context": "Grumpy SEO Guy's recommended Ahrefs Domain Rating range for domains considered for purchase.",
-          "note": "Attributed to Grumpy SEO Guy ([ez24lr3G_Mc @ 00:35:45]); other acquisition checks remain part of the speaker's process."
+          "note": "Attributed to Grumpy SEO Guy ([ez24lr3G_Mc @ 00:35:45]); other acquisition checks remain part of the speaker's process.",
+          "metric": "Portfolio acquisition range",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Grumpy SEO Guy ([ez24lr3G_Mc @ 00:35:45]); other acquisition checks remain part of the speaker's process."
         },
         {
           "label": "Electric-car search spike",
           "value": "1600%",
           "context": "The increase in online electric-car searches used in the CarGuide campaign email.",
-          "note": "Attributed to Fery Kaszoni ([BpLuK4tA5zw @ 00:01:33]); this is a search-interest finding, not a backlink conversion rate."
+          "note": "Attributed to Fery Kaszoni ([BpLuK4tA5zw @ 00:01:33]); this is a search-interest finding, not a backlink conversion rate.",
+          "metric": "Electric-car search spike",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Fery Kaszoni ([BpLuK4tA5zw @ 00:01:33]); this is a search-interest finding, not a backlink conversion rate."
         },
         {
           "label": "Rail-strike campaign outcome",
           "value": "Over 50 placements and links",
           "context": "The combined placements-and-links outcome reported for the Google Trends union-search campaign.",
-          "note": "Attributed to Fery Kaszoni ([PUlSnyUHWbU @ 00:01:02]); the speaker reports placements and links together."
+          "note": "Attributed to Fery Kaszoni ([PUlSnyUHWbU @ 00:01:02]); the speaker reports placements and links together.",
+          "metric": "Rail-strike campaign outcome",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Fery Kaszoni ([PUlSnyUHWbU @ 00:01:02]); the speaker reports placements and links together."
         }
       ],
       "sections": [
@@ -3551,7 +3596,7 @@
           "paragraphs": [
             "Vasco's SEO Tips ([voMel_srl_w @ 00:31:13]) demonstrates AI-assisted prospecting that searches multiple queries, produces a CSV of candidates, and uses the Ahrefs API to filter prospects. The displayed output separates candidates with authority scores but no traffic from the final suggestions with real traffic. Vasco's SEO Tips ([voMel_srl_w @ 00:35:28]) identifies finding suitable sites as the difficult part, explaining why the demonstrated process does not concentrate on automating the email itself. The user still opens submission pages, reads requirements, and contacts publishers. A second workflow finds relevant nonprofits and checks whether they publish donor or sponsor pages, rather than assuming a donation automatically supplies a visible link. Vasco's SEO Tips ([voMel_srl_w @ 00:33:23]) also proposes a link swap instead of paying a publisher, comparing the participating sites' metrics in the example. Ahrefs ([C5ddo63kHHI @ 00:14:43]) gives a different instruction, warning that monetary link exchanges and excessive reciprocal exchanges conflict with Google's guidelines. These positions remain attached to their speakers rather than being reconciled into an invented consensus. The AI demonstration also remains a research-and-selection workflow in the parts shown: its output identifies opportunities, while publisher requirements and the chosen exchange still determine what work follows. The transcript does not supply the downloadable prompt's full contents.",
             "B2BSEOio ([P-NBpi1qUEo @ 00:00:00]) says its agency comparison begins with more than forty-five agencies and six weighted checks, giving greatest importance to demonstrated HARO results before client feedback and track record. The resulting eight entries describe different service scopes, not interchangeable offers. Some concentrate on journalist outreach, others include broader link building, and some provide dashboards, replacement policies, or fixed-price orders. B2BSEOio ([P-NBpi1qUEo @ 00:02:01]) explicitly asks viewers to confirm package details where a service page and current review profile show different figures. The later entries also distinguish broader SEO outcomes from a verified HARO-specific case study, and a founder's prior work from results under a newer marketplace. Those distinctions matter within the comparison itself: the narration does not present every cited growth figure as an isolated consequence of journalist-request links. Vasco's SEO Tips ([voMel_srl_w @ 00:48:16]) offers a related reason for teaching manual evaluation before delegation. Without understanding what an agent or agency is doing and why, a customer can accept a deliverable merely because its supplier calls it good. The combined purchasing lesson stays within these accounts: identify the offered service, examine the evidence associated with that service, and understand the domain-selection work before accepting someone else's list of backlinks as sufficient.",
-            "Citation Labs Tools & Services ([k5nS2OGLtYU @ 00:00:57]) proposes a reporting model that moves from links to rankings, visibility, and revenue rather than ending with link totals or traffic increases. The presentation describes this as the framework inside Link Launch and connects it to budget discussions, renewals, and campaign prioritization. It does not provide a numerical forecasting formula in the supplied transcript. LinkBuilding HQ ([3vuTHqRjxvQ @ 00:04:18]) distinguishes digital PR's broader measures from link building alone: media mentions, sentiment, website traffic, social engagement, leads, and sales belong to the brand campaign's evaluation. Iron Goo ([Z5OwRBCX5ww @ 00:08:32]) challenges treating fifty links as a normal campaign result, reporting that the best group in the cited campaign dataset averaged around a dozen and emphasizing who linked rather than only how many. Iron Goo ([Z5OwRBCX5ww @ 00:09:10]) also separates fast coverage from a slower ranking effect, describing survey respondents' timing expectations for measurable results. These reporting frames allow the chapter's large campaign examples to remain examples rather than becoming production quotas. They also preserve distinct outputs: a placement, an actual backlink, a referring publication, a change in visibility, and a business outcome are not silently substituted for one another. The reporting task follows the speaker's stated objective instead of selecting the biggest available number."
+            "Citation Labs Tools & Services ([k5nS2OGLtYU @ 00:00:57]) pushes a reporting model that moves from links to rankings, visibility, and revenue rather than stopping at link totals or traffic increases. They call this the framework inside Link Launch and tie it directly to budget discussions, renewals, and campaign prioritization. They do not hand over a numerical forecasting formula for it. LinkBuilding HQ ([3vuTHqRjxvQ @ 00:04:18]) splits digital PR's broader measures from link building alone: media mentions, sentiment, website traffic, social engagement, leads, and sales belong to the brand campaign's evaluation. Iron Goo ([Z5OwRBCX5ww @ 00:08:32]) pushes back on treating fifty links as a normal campaign result, reporting that the best group in their campaign dataset averaged around a dozen and stressing who linked rather than only how many. Iron Goo ([Z5OwRBCX5ww @ 00:09:10]) also separates fast coverage from a slower ranking effect, laying out survey respondents' timing expectations for measurable results. Run your reports this way and the big campaign wins stay what they are, examples, not production quotas you get held to. Keep the outputs distinct too: a placement, an actual backlink, a referring publication, a change in visibility, and a business outcome never get quietly swapped in for one another. Report against the objective you actually set, not whichever number happens to be biggest."
           ],
           "table": {
             "caption": "Eight agency descriptions reported by B2BSEOio, retaining the comparison's scope distinctions and verification cautions.",
@@ -3906,7 +3951,7 @@
           "relevance": "Verbatim practitioner testimony from Chapter Q5 corpus."
         }
       ],
-      "revision": "f13a4ba29c53381f"
+      "revision": "1e2d861f31f62ccf"
     },
     {
       "id": "Q6",
@@ -3926,19 +3971,28 @@
           "label": "LinkedIn redirect asset",
           "value": "$2,000",
           "context": "SEO Jesus reports redirecting an expired domain with DR 29 and 144 referring domains to a LinkedIn parasite article.",
-          "note": "Attributed to SEO Jesus (AGcswUV4IEA @ 00:00:00)."
+          "note": "Attributed to SEO Jesus (AGcswUV4IEA @ 00:00:00).",
+          "metric": "LinkedIn redirect asset",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to SEO Jesus (AGcswUV4IEA @ 00:00:00)."
         },
         {
           "label": "Reported LinkedIn traffic movement",
           "value": "3,100 to 7,000",
           "context": "The traffic figures SEO Jesus displays before and one week after the redirect; they separately say one week is too early for reliable data.",
-          "note": "Attributed to SEO Jesus (AGcswUV4IEA @ 00:06:50; AGcswUV4IEA @ 00:06:23)."
+          "note": "Attributed to SEO Jesus (AGcswUV4IEA @ 00:06:50; AGcswUV4IEA @ 00:06:23).",
+          "metric": "Reported LinkedIn traffic movement",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to SEO Jesus (AGcswUV4IEA @ 00:06:50; AGcswUV4IEA @ 00:06:23)."
         },
         {
           "label": "Revived site's organic query coverage",
           "value": "Over 80,000",
           "context": "Different organic queries reported for Koray's expired-domain fitness and athletic-performance project.",
-          "note": "Attributed to Koray Tuğberk GÜBÜR (l_Eiy1S5MeA @ 00:15:11)."
+          "note": "Attributed to Koray Tuğberk GÜBÜR (l_Eiy1S5MeA @ 00:15:11).",
+          "metric": "Revived site's organic query coverage",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Koray Tuğberk GÜBÜR (l_Eiy1S5MeA @ 00:15:11)."
         }
       ],
       "sections": [
@@ -4130,12 +4184,12 @@
           "id": "Q6-S4",
           "title": "Track enforcement, canonical behavior, and the limits speakers report",
           "paragraphs": [
-            "Niche Pursuits Podcast ([0iNy5JybH4I @ 00:02:05]) discusses Forbes Marketplace as a separate affiliate operation associated with the Forbes brand, drawing on Lars Lofgren's reporting. The hosts distinguish the brand's accumulated authority from the company producing the affiliate material and repeatedly frame the arrangements as claims from that reporting. Niche Pursuits Podcast ([0iNy5JybH4I @ 00:17:14]) then reports a large visibility decline: 1.7 million queries had dropped in rank or disappeared in the cited Ahrefs observation. They retain uncertainty over whether the change was manual or algorithmic rather than establishing one explanation. UltraSEOSolutions ([MLdjFE-yxMk @ 00:00:31]) presents the publisher side of the enforcement debate, saying European scrutiny concerns the effect of Google's crackdown on media businesses that depend on sponsored posts. Jacky Chou from Indexsy ([m1jRNdRvtb0 @ 00:03:10]) instead checks live results after Google's announcement and still finds Forbes ranking for best CBD oil queries. Their presentation questions the gap between announced targeting and the examples still visible in search. These are different observations within the corpus: a reported decline across many queries, a debate about publisher income, and surviving rankings in selected searches. The speakers' accounts do not make the continued presence of one result equivalent to the absence of losses elsewhere, or establish the precise cause of every change they show.",
+            "Niche Pursuits Podcast ([0iNy5JybH4I @ 00:02:05]) breaks down Forbes Marketplace as a separate affiliate operation riding the Forbes brand, pulling from Lars Lofgren's reporting. The hosts separate the brand's built-up authority from the company actually producing the affiliate content, and they keep framing the arrangements as claims from that reporting. Niche Pursuits Podcast ([0iNy5JybH4I @ 00:17:14]) then reports a big visibility drop: 1.7 million queries had fallen in rank or vanished in the Ahrefs data they cite. They stay unsure about whether the hit was manual or algorithmic instead of locking in one explanation. UltraSEOSolutions ([MLdjFE-yxMk @ 00:00:31]) gives the publisher side of the enforcement fight, saying European scrutiny is about how Google's crackdown hits media businesses that live on sponsored posts. Jacky Chou from Indexsy ([m1jRNdRvtb0 @ 00:03:10]) instead pulls up live results after Google's announcement and still finds Forbes ranking for best CBD oil queries. Their walkthrough calls out the gap between what Google said it was targeting and what was still showing in search. These are three different signals: a reported drop across many queries, a fight over publisher income, and rankings that survived in specific searches. None of these speakers treat one result still ranking as proof that nothing was lost elsewhere, and none of them pin down the exact cause of every shift they show.",
             "Berta on SEO Boardroom ([CVctN2LgvDQ @ 00:06:34]) describes canonical abuse as one site in a network naming another site's URL as canonical to push value toward the other site. The discussion emphasizes that a suddenly ranking domain may show few backlinks in ordinary tool checks because the mechanism is not a visible redirect. SEO Boardroom ([CVctN2LgvDQ @ 00:08:13]) describes an investigative route through Google's site results and the result's additional site information to look for a second domain associated with the result. That inspection sits alongside checking canonical tags in source code. Charles Floate on Edward Sturm ([clcy9RbjrXQ @ 00:27:33]) describes a different canonical problem: publishers trying to index a share URL or a noncanonical page instead of the actual destination. In that account, identifying the final path is a publishing check rather than evidence of another site's abuse. Frey Chu ([mHkLfhpVYqc @ 00:11:30]) supplies a parallel warning about appearances in backlink markets: a high DR can help someone sell links even when the website has no real traffic. The speakers thus examine different reasons why surface metrics or a copied URL can mislead an operator. Berta's network observations, Floate's indexing mistakes, and Frey's link-selling example all depend on inspecting what sits behind the displayed domain rather than treating that display as the entire explanation.",
             "Charles Floate on Edward Sturm ([clcy9RbjrXQ @ 00:11:19]) describes third-party publishing as renting rather than owning: the host can delete pages, ban accounts, or receive an action that removes rankings. They recount buying placements shortly before the host was hit and losing the investment in those pages. Charles Floate on James Dooley ([XIZhTUQmcNI @ 00:04:55]) therefore recommends continuing to inspect search results and algorithm-update winners rather than assuming yesterday's preferred publisher remains strongest. SirLinksalot ([lfCYBd5qKMk @ 00:00:58]) supplies a separate pitfall for archive rebuilds: copyright complaints, letters, and possible site takedowns, which they describe as relatively rare rather than absent. SEO Boardroom ([CVctN2LgvDQ @ 00:17:10]) distinguishes ordinary competition through parasites and PBNs from fake takedown complaints and other negative attacks, describing DMCA problems as particularly difficult to resolve. The same discussion stresses the budget required to scale paid parasite activity. Together these accounts supply specific operator checks without turning the speakers into one unanimous strategy: watch the host's visibility, recognize that publication access can disappear, distinguish content-restoration complaints from ranking changes, and include paid-placement losses in the picture of the business. The closing position is the practitioners' own combination of reported wins, continued experimentation, and named failure modes, rather than a claim that either expired domains or third-party pages remain permanently available."
           ],
           "table": {
-            "caption": "Enforcement observations and practical limitations reported in the corpus",
+            "caption": "Enforcement observations and practical limitations operators reported",
             "headers": [
               "Observed issue or disputed explanation",
               "What the speaker reports",
@@ -4477,7 +4531,7 @@
           "relevance": "Verbatim practitioner testimony from Chapter Q6 corpus."
         }
       ],
-      "revision": "711d6dc7f3b72d97"
+      "revision": "2830ff8a56447eda"
     },
     {
       "id": "Q7",
@@ -4491,25 +4545,34 @@
       "subtitle": "Agency Assassin, rank-and-rent click tactics, Chrome signals, traffic bots, CTR Driver, long-term tests, skeptical accounts, and HTTP-versus-SOCKS5 browser-profile configuration",
       "layout_template": "thirty_day_roadmap",
       "reading_time_minutes": 15,
-      "executive_summary": "These sixteen videos present competing accounts of manufactured clicks and user signals. William Jones demonstrates Agency Assassin setup; Chris Palmer derives campaign settings from existing traffic; Yash Singh tours Awesome Traffic Bot. SEO Jesus advocates restrained automation, while Isaac Ranks describes short-term rank-and-rent support. Niels Castermans reports next-day gains that usually last four to five days. Leo Poitevin separates rapid viral boosts from longer user-signal accumulation. Osborne Digital Marketing emphasizes profile readiness and mobile engagement. Sterling Sky reports fading gains; Semantic Mastery describes closing Local Fury; Map Labs and Idris Ya'u warn about adverse outcomes. Anthony Hayes promotes P2P mobile IP access, but the supplied transcript does not demonstrate HTTP-versus-SOCKS5 browser-profile configuration. Across these accounts, setup demonstrations, ranking observations, proposed mechanisms, and service claims remain distinct.",
+      "executive_summary": "Sixteen operators give competing accounts of manufactured clicks and user signals. William Jones demonstrates Agency Assassin setup; Chris Palmer derives campaign settings from existing traffic; Yash Singh tours Awesome Traffic Bot. SEO Jesus advocates restrained automation, while Isaac Ranks describes short-term rank-and-rent support. Niels Castermans reports next-day gains that usually last four to five days. Leo Poitevin separates rapid viral boosts from longer user-signal accumulation. Osborne Digital Marketing emphasizes profile readiness and mobile engagement. Sterling Sky reports fading gains; Semantic Mastery describes closing Local Fury; Map Labs and Idris Ya'u warn about adverse outcomes. Anthony Hayes promotes P2P mobile IP access, but he never walks through HTTP-versus-SOCKS5 browser-profile configuration. Across these operators, setup demonstrations, ranking observations, proposed mechanisms, and service claims stay separate and should be judged separately.",
       "key_metrics": [
         {
           "label": "Next-day Chrome-signal movement",
           "value": "50%",
           "context": "Share of the displayed sites that Niels says reached the top ten one day later.",
-          "note": "Attributed to Niels Castermans SEO (9RAmTcJcaDE @ 00:06:47)."
+          "note": "Attributed to Niels Castermans SEO (9RAmTcJcaDE @ 00:06:47).",
+          "metric": "Next-day Chrome-signal movement",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Niels Castermans SEO (9RAmTcJcaDE @ 00:06:47)."
         },
         {
           "label": "Website calculation window",
           "value": "28 days",
           "context": "Recent Search Console window Palmer uses when deriving the best-page CTR range.",
-          "note": "Attributed to Chris Palmer SEO (mg7C81Ti3DY @ 00:12:30)."
+          "note": "Attributed to Chris Palmer SEO (mg7C81Ti3DY @ 00:12:30).",
+          "metric": "Website calculation window",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Chris Palmer SEO (mg7C81Ti3DY @ 00:12:30)."
         },
         {
           "label": "Agency Assassin starting split",
           "value": "50 calls / 50 CTR",
           "context": "Jones's demonstrated starting allocation, subsequently distributed across campaign keywords.",
-          "note": "Attributed to William Jones (qEmm1oiXm5U @ 00:04:08)."
+          "note": "Attributed to William Jones (qEmm1oiXm5U @ 00:04:08).",
+          "metric": "Agency Assassin starting split",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to William Jones (qEmm1oiXm5U @ 00:04:08)."
         }
       ],
       "sections": [
@@ -4518,7 +4581,7 @@
           "paragraphs": [
             "SEO Jesus ([DYkDCiVseqM @ 00:02:30]) defines click-through rate with a simple example: a search result receives 100 views and ten clicks, producing ten percent. Idris Ya'u ([L-FcnuQBAjc @ 00:00:21]) gives the same numerical illustration, but their discussions quickly move beyond that ratio. SEO Jesus ([DYkDCiVseqM @ 00:04:17]) says user signals is the more useful description because the desired sequence includes clicking, spending time on the result, and finding an answer. Isaac Ranks — Rank & Rent ([vBp6IcY8zg0 @ 00:03:26]) describes tasks involving a search, finding the listing, and clicking through, with Chrome, real devices, and a matching country. Isaac subsequently asks for browsing rather than an immediate departure. These accounts therefore discuss several actions under the CTR label rather than one interchangeable quantity. A search-result click is the initial event; browsing and finishing the visit are additional behaviors the speakers want associated with it. The numerical definition does not itself settle which behavior explains a reported ranking change. The speakers also differ in emphasis: SEO Jesus builds an extended argument around satisfaction and the end of a search, whereas Isaac presents a practical sequence for a rank-and-rent site. Both describe engagement after arrival, rather than treating every incoming visit as equivalent merely because it reaches the same destination.",
             "William Jones ([qEmm1oiXm5U @ 00:00:35]) begins the Agency Assassin discussion by asking whether basic SEO is finished and whether the business is already in the top ten. That starting point matters because the demonstration concerns stubborn clients, not a claim that every new listing should immediately receive the same campaign. In the separate course overview, William Jones ([WA8pctaxk30 @ 00:02:11]) describes calculating settings through Google Search Console and considering mobile and desktop traffic. The overview names course components, but it does not disclose the entire calculation process or supply a measured campaign outcome. Leo Poitevin, speaking on Odys Podcast: The High Stakes Growth Show ([0qIqZKefEc8 @ 00:05:19]), likewise places manipulation after substantial work on content, backlinks, user signals, and user experience. SEO Jesus ([DYkDCiVseqM @ 00:05:16]) says content and backlinks still account for ninety percent of SEO in their explanation. The overlap is a sequence, not agreement about every tool: establish the underlying page or profile, then consider extra engagement where progress has stalled. Jones promotes a course and demonstrates a service interface; Poitevin describes difficult competitive situations; SEO Jesus explains an agency approach. Their shared prerequisite should not turn those different presentations into a single reported experiment with common inputs, a common starting rank, or a common result.",
-            "Grey Hat SEO ([rPlpnhqyxtY @ 00:05:00]) presents a CTR and traffic network as a controlled collection of devices or personas. In that video, Chris Palmer wants control over the entire customer sequence rather than purchasing an unspecified quantity of visits. Searches, directions, calls, and later interactions are discussed as parts of that sequence. Semantic Mastery ([VTorygEcF7E @ 00:01:02]) describes a related operational ambition: Google profiles with personas, associated Androids, geographic routines, and activity outside a particular campaign. Yet the conclusion is different. Semantic Mastery ([VTorygEcF7E @ 00:01:50]) says maintaining apparently validated users became increasingly difficult and expensive, contributing to the decision to close Local Fury. Map Labs ([slTweyz4OSs @ 00:00:27]) distinguishes real accounts from genuine engagement by describing real users making fake interactions on business profiles. Across these accounts, the presence of an account or device is not the same claim as an actual customer arriving at a business. Palmer's network presentation emphasizes controllability; Semantic Mastery's retrospective emphasizes maintenance and declining effectiveness; Map Labs emphasizes what happens after the apparent interaction. Those are materially different accounts of what makes a click valuable. The chapter preserves that disagreement instead of treating a controlled persona, an established account, and a completed customer visit as interchangeable descriptions of the same event."
+            "Grey Hat SEO ([rPlpnhqyxtY @ 00:05:00]) presents a CTR and traffic network as a controlled collection of devices or personas. In that video, Chris Palmer wants control over the entire customer sequence rather than purchasing an unspecified quantity of visits. Searches, directions, calls, and later interactions are discussed as parts of that sequence. Semantic Mastery ([VTorygEcF7E @ 00:01:02]) describes a related operational ambition: Google profiles with personas, associated Androids, geographic routines, and activity outside a particular campaign. Yet the conclusion is different. Semantic Mastery ([VTorygEcF7E @ 00:01:50]) says maintaining apparently validated users became increasingly difficult and expensive, contributing to the decision to close Local Fury. Map Labs ([slTweyz4OSs @ 00:00:27]) distinguishes real accounts from genuine engagement by describing real users making fake interactions on business profiles. Across these operators, the presence of an account or device is not the same claim as an actual customer arriving at a business. Palmer's network pitch emphasizes controllability; Semantic Mastery's retrospective emphasizes maintenance and declining effectiveness; Map Labs emphasizes what happens after the apparent interaction. Those are materially different takes on what makes a click valuable. Keep that disagreement in view instead of treating a controlled persona, an established account, and a completed customer visit as interchangeable descriptions of the same event."
           ],
           "table": {
             "caption": "Six distinct claims behind the shared CTR vocabulary",
@@ -4565,8 +4628,8 @@
           "heading": "Campaign settings, IP assumptions, and what the proxy demonstrations establish",
           "paragraphs": [
             "William Jones ([qEmm1oiXm5U @ 00:01:48]) demonstrates setting a search radius while warning viewers not to assume that a small green geogrid can simply be expanded outward without changing the result. The campaign uses a business name and address to identify the correct listing, followed by keywords and a starting event allocation. William Jones ([qEmm1oiXm5U @ 00:03:27]) cautions against sending a thousand searches where the existing monthly volume is 500. Osborne Digital Marketing ([8-9kfC7btJM @ 00:02:14]) also begins with the existing geogrid: yellow and green areas indicate a different starting position from a profile surrounded by red. Osborne Digital Marketing ([8-9kfC7btJM @ 00:03:16]) then checks device proportions, warning against introducing a mobile-heavy campaign when existing discovery is predominantly desktop. These are checks against the business's current situation, not universal campaign defaults. Jones's five-mile demonstration belongs to the displayed examples; Osborne's eligibility discussion belongs to profiles already showing some visibility. Neither account supports copying a radius or device distribution without first looking at the corresponding business data. The common practical instruction is to examine what already ranks, where it ranks, and how people currently find it. Only after those checks do the demonstrations move into keywords, event settings, and the amount of additional activity.",
-            "Chris Palmer SEO ([mg7C81Ti3DY @ 00:12:30]) uses a recent 28-day Search Console window to derive a range from the site's better-performing pages. The method is explicitly tied to changing site conditions rather than a permanently fixed CTR target. Chris Palmer SEO ([mg7C81Ti3DY @ 00:13:40]) excludes a page with one impression and one click because its apparent hundred percent rate would distort the calculation. The spoken arithmetic later includes an acknowledged possible mistake, so the displayed example belongs to the speaker's walkthrough rather than a freshly verified calculation here. Yash Singh ([YwzyoEqNVN4 @ 00:02:33]) enters a device split of 35 desktop, 55 mobile, and ten tablet while explicitly saying the choice depends on existing website or profile data. SEO Jesus ([DYkDCiVseqM @ 00:19:04]) instead describes keeping manipulated traffic within ten percent of total monthly website traffic. These are different ways of sizing a campaign: Palmer works from page-level performance, Singh demonstrates adjustable interface values, and SEO Jesus proposes a proportional ceiling. The numbers should remain attached to those explanations. Combining them into a new formula would erase the differences between a sample setting, a site-derived range, and a speaker's general operating preference. Each account asks for existing traffic to influence the chosen settings.",
-            "Anthony Hayes ([C-Nua5kSxAk @ 00:01:00]) describes worldwide mobile IP access and says residential proxies remain an available alternative. Anthony Hayes ([C-Nua5kSxAk @ 00:03:50]) also says the mobile app can change an IP from one minute upward and discusses sharing proxy access with other people. Yash Singh ([YwzyoEqNVN4 @ 00:05:09]) demonstrates selecting a proxy option, choosing an import format, and importing or pasting proxy details. Chris Palmer SEO ([mg7C81Ti3DY @ 00:07:36]) expresses a preference for mobile and residential proxies and relates the IP choice to the device being represented. These passages establish what the speakers recommend or show about access, importing, and device alignment. They do not establish an HTTP-versus-SOCKS5 browser-profile procedure: neither protocol is named in the supplied transcripts, and Hayes does not demonstrate switching a browser profile between them. Likewise, the provided material does not show a protocol-selection test proving an IP is mobile or residential. That requested comparison therefore has no demonstrated configuration sequence to reproduce from this corpus. The usable account is narrower and concrete: Hayes presents mobile P2P access, Singh shows where proxy details enter the tool, and Palmer supplies campaign preferences. None of those statements can be expanded into an unseen protocol tutorial or an independent verification of the network behind a supplied address."
+            "Chris Palmer SEO ([mg7C81Ti3DY @ 00:12:30]) uses a recent 28-day Search Console window to derive a range from the site's better-performing pages. The method is explicitly tied to changing site conditions rather than a permanently fixed CTR target. Chris Palmer SEO ([mg7C81Ti3DY @ 00:13:40]) excludes a page with one impression and one click because its apparent hundred percent rate would distort the calculation. His spoken arithmetic later includes a possible mistake he admits to on camera, so treat the example numbers as Palmer's own walkthrough, not a checked result to copy. Yash Singh ([YwzyoEqNVN4 @ 00:02:33]) enters a device split of 35 desktop, 55 mobile, and ten tablet while explicitly saying the choice depends on existing website or profile data. SEO Jesus ([DYkDCiVseqM @ 00:19:04]) instead describes keeping manipulated traffic within ten percent of total monthly website traffic. These are different ways of sizing a campaign: Palmer works from page-level performance, Singh demonstrates adjustable interface values, and SEO Jesus proposes a proportional ceiling. Keep each number tied to the operator who gave it. Mashing them into a new formula would erase the differences between a sample setting, a site-derived range, and one operator's general preference. All three want existing traffic to drive the chosen settings.",
+            "Anthony Hayes ([C-Nua5kSxAk @ 00:01:00]) describes worldwide mobile IP access and says residential proxies remain an available alternative. Anthony Hayes ([C-Nua5kSxAk @ 00:03:50]) also says the mobile app can change an IP from one minute upward and discusses sharing proxy access with other people. Yash Singh ([YwzyoEqNVN4 @ 00:05:09]) demonstrates selecting a proxy option, choosing an import format, and importing or pasting proxy details. Chris Palmer SEO ([mg7C81Ti3DY @ 00:07:36]) expresses a preference for mobile and residential proxies and relates the IP choice to the device being represented. That is what these operators actually recommend or show about access, importing, and device alignment. None of them lays out an HTTP-versus-SOCKS5 browser-profile procedure: neither protocol is named by any of them, and Hayes never switches a browser profile between them. Nobody runs a protocol-selection test proving an IP is mobile or residential either. So there is no demonstrated configuration sequence for that comparison to copy. What you can actually use is narrower and concrete: Hayes pitches mobile P2P access, Singh shows where proxy details enter the tool, and Palmer supplies campaign preferences. Do not stretch any of that into a protocol how-to nobody showed, or into proof of the network behind an address a provider hands you."
           ],
           "table": {
             "caption": "Settings shown, recommendations spoken, and protocol details absent from the demonstrations",
@@ -4649,7 +4712,7 @@
         {
           "heading": "Worked 90-Day Cohort Walk",
           "paragraphs": [
-            "Niels Castermans SEO ([9RAmTcJcaDE @ 00:06:47]) reports that half the displayed sites reached the top ten one day after the Chrome-signal intervention, with two reaching the top three. Niels Castermans SEO ([9RAmTcJcaDE @ 00:08:12]) then says the effect is temporary, averaging four to five days. Leo Poitevin on Odys Podcast: The High Stakes Growth Show ([0qIqZKefEc8 @ 00:41:27]) describes a different rapid intervention: a viral boost involving roughly a thousand people in an hour, followed by effects within two or three hours. Chris Palmer SEO ([mg7C81Ti3DY @ 00:16:44]) supplies the explicit ninety-day reference by saying the displayed pool-renovation page launched within the last ninety days. This worked walk therefore compares separate reported timelines; the corpus does not contain one shared ninety-day cohort followed through every stage. Niels's next-day comparison, Poitevin's rapid traffic account, and Palmer's page-age statement cannot be stitched into a single business's history. They do, however, provide distinct points for reading claims about speed. An immediate ranking change is one observation, the duration of that change is another, and the age of a page is a third. The heading organizes those observations without supplying invented intervening days, new rankings, or a common campaign that the speakers never described.",
+            "Niels Castermans SEO ([9RAmTcJcaDE @ 00:06:47]) reports that half the displayed sites reached the top ten one day after the Chrome-signal intervention, with two reaching the top three. Niels Castermans SEO ([9RAmTcJcaDE @ 00:08:12]) then says the effect is temporary, averaging four to five days. Leo Poitevin on Odys Podcast: The High Stakes Growth Show ([0qIqZKefEc8 @ 00:41:27]) describes a different rapid intervention: a viral boost involving roughly a thousand people in an hour, followed by effects within two or three hours. Chris Palmer SEO ([mg7C81Ti3DY @ 00:16:44]) supplies the explicit ninety-day reference by saying the displayed pool-renovation page launched within the last ninety days. These are separate timelines from separate operators; nobody follows one shared ninety-day cohort through every stage. Niels's next-day comparison, Poitevin's rapid traffic account, and Palmer's page-age statement cannot be stitched into a single business's history. They do, however, give you distinct reference points for judging speed claims. An immediate ranking change is one observation, how long that change lasts is another, and the age of a page is a third. Read them as three separate signals, and do not fill in intervening days, new rankings, or a common campaign that none of these operators ever described.",
             "Chris Palmer SEO ([mg7C81Ti3DY @ 00:26:59]) identifies a pool-resurfacing page as thirty days old before checking its result, giving this walk a separate early page-age example rather than a scheduled checkpoint for the ninety-day page. Osborne Digital Marketing ([YGk2zHgGoss @ 00:21:57]) says the usual expectation communicated to clients is up to a month, while acknowledging that results can arrive sooner. Osborne Digital Marketing ([YGk2zHgGoss @ 00:22:14]) names five days, seven days, and two weeks as observed possibilities and says that no improvement within a month should prompt further optimization in month two. Yash Singh ([YwzyoEqNVN4 @ 00:03:05]) describes gradually moving toward a thirty or forty percent traffic increase over months, following the smaller starting increase introduced immediately beforehand. These accounts concern different clocks: page age, time until movement, time until further optimization, and gradual campaign expansion. Keeping those clocks separate avoids presenting an interface setting as a measured ranking outcome. Osborne also describes an initial boost followed by a plateau and another improvement later, rather than uninterrupted movement. The multi-week portion of the walk therefore contains both reported early gains and an explicit instruction to revisit optimization when the expected improvement has not appeared. It does not supply an automatic escalation schedule for every profile.",
             "Sterling Sky Inc ([krFtrxJsFok @ 00:00:52]) says the restaurant moved from the second page to position two quickly, after which rankings were tracked daily for several months. Sterling Sky Inc ([krFtrxJsFok @ 00:01:09]) reports that the gains did not last and that the business moved back toward its earlier position. That longer observation qualifies what a next-day screenshot can establish without denying that the initial movement occurred. Leo Poitevin on Odys Podcast: The High Stakes Growth Show ([0qIqZKefEc8 @ 00:13:15]) describes a different accumulation model in which one or two months may move the average relatively little, while stronger results emerge later. Osborne Digital Marketing ([YGk2zHgGoss @ 00:20:01]) argues that maintaining real engagement, reviews, photos, and ongoing SEO while CTR runs can help preserve the resulting position. The accounts therefore disagree about persistence and the circumstances that produce it; they do not provide a common ninety-day success rate. Sterling Sky supplies a daily follow-up that faded, Poitevin supplies an explanation of delayed accumulation, and Osborne supplies conditions under which a reduction may hold. The end of this walk remains the end of the supplied observations, not a fabricated day-ninety result. Continuation, reduction, and stopping each have to remain attached to the particular speaker's reported experience and explanation."
           ],
@@ -5049,7 +5112,7 @@
           "relevance": "Verbatim practitioner testimony from Chapter Q7 corpus."
         }
       ],
-      "revision": "ef91edcdd89bcdae"
+      "revision": "ef97ca1b899c3d0b"
     },
     {
       "id": "Q8",
@@ -5069,19 +5132,28 @@
           "label": "RV website impressions",
           "value": "Over 1,656% in 2 months",
           "context": "BKA Content reports this increase after launching the client's rebuilt website with a revised structure and focused subpages.",
-          "note": "Attributed to BKA Content (n68rh1s-ZdY @ 00:09:10)."
+          "note": "Attributed to BKA Content (n68rh1s-ZdY @ 00:09:10).",
+          "metric": "RV website impressions",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to BKA Content (n68rh1s-ZdY @ 00:09:10)."
         },
         {
           "label": "Blog crawl events",
           "value": "266 unique events over 30 days",
           "context": "Greg's pivot table isolates blog activity while investigating whether older content draws crawling away from priority service pages.",
-          "note": "Attributed to TM Blast (1v7Wiw-ptLU @ 00:02:52)."
+          "note": "Attributed to TM Blast (1v7Wiw-ptLU @ 00:02:52).",
+          "metric": "Blog crawl events",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to TM Blast (1v7Wiw-ptLU @ 00:02:52)."
         },
         {
           "label": "Hospital sitemap crawl coverage",
           "value": "1.3%",
           "context": "The brightonSEO presenter reports this sitemap coverage in the hospital's ChatGPT crawl investigation, concentrated on homepage and top-level categories.",
-          "note": "Attributed to brightonSEO (Q9Nkmc8Cx6I @ 00:11:32)."
+          "note": "Attributed to brightonSEO (Q9Nkmc8Cx6I @ 00:11:32).",
+          "metric": "Hospital sitemap crawl coverage",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to brightonSEO (Q9Nkmc8Cx6I @ 00:11:32)."
         }
       ],
       "sections": [
@@ -5274,7 +5346,7 @@
           "title": "Diagnose excluded pages without confusing notifications, content, and rendering",
           "paragraphs": [
             "Misha Manko ([vcLkBQxf9Hs @ 00:08:44]) distinguishes crawled-currently-not-indexed from discovered-currently-not-indexed: the first describes a page Google fetched but did not retain in the index, while the second describes a known URL not yet crawled. Their walkthrough treats the report as information requiring interpretation, not a list where every entry must disappear. Feeds, filters, internal searches, account pages, checkout pages, and canonical variants can belong outside the index; important products, articles, categories, and previously trafficked pages deserve a different response. Greenlane Search Marketing, LLC ([NyNv-u7KkFw @ 00:00:48]) approaches the same inventory question through accumulated content, arguing that old indexed material can obstruct attention to newer, more valuable pages. TM Blast ([1v7Wiw-ptLU @ 00:06:47]) describes removing about 100 irrelevant older posts and taking them out of both HTML and XML sitemaps to concentrate attention on current content and core service pages. Those are concrete inventory decisions tied to the speakers' examples, rather than a requirement to delete a fixed share of every site. Manko's distinction supplies the initial sorting question: does the excluded URL represent something the business actually wants indexed, or is its exclusion consistent with the function of that page?",
-            "The speakers also disagree about how particular cleanup actions affect crawl allocation. FatRank ([9YOo5zDOsP8 @ 00:03:25]) reports that changing an obsolete URL to 410 was followed by more crawling of a struggling category and subsequent movement in impressions and clicks. Gary Illyes at Google Search Central ([LIMqmzuzpVg @ 00:26:37]) explicitly says 404, 410, and robots-blocked URLs do not waste crawl budget, then contrasts them with soft 404 responses. The chapter preserves the reported intervention and Google's explanation without turning them into a single agreed mechanism. Pearl Lemon SEO ([aRuxCdZQ1Yo @ 00:09:43]) recommends removing or noindexing low-value pages, fixing parameter duplication, strengthening internal links, and cleaning the sitemap. Misha Manko ([nBrto2B9RyE @ 00:19:19]) separately warns that noindex does not stop fetching because Google can continue accessing a known URL without indexing it. Their different accounts make the intended outcome important: removing an unwanted search result, changing which URLs exist, and influencing which requests occur are not described identically. Keep the diagnosis attached to the actual status, URL, and reported behavior instead of attributing every cleanup result to a universally accepted budget transfer. That preserves the transcript debate while retaining the concrete repairs each speaker teaches.",
+            "The speakers also disagree about how particular cleanup actions affect crawl allocation. FatRank ([9YOo5zDOsP8 @ 00:03:25]) reports that changing an obsolete URL to 410 was followed by more crawling of a struggling category and subsequent movement in impressions and clicks. Gary Illyes at Google Search Central ([LIMqmzuzpVg @ 00:26:37]) explicitly says 404, 410, and robots-blocked URLs do not waste crawl budget, then contrasts them with soft 404 responses. Treat the FatRank result and Google's explanation as two separate accounts, not as proof of one agreed mechanism. Pearl Lemon SEO ([aRuxCdZQ1Yo @ 00:09:43]) recommends removing or noindexing low-value pages, fixing parameter duplication, strengthening internal links, and cleaning the sitemap. Misha Manko ([nBrto2B9RyE @ 00:19:19]) separately warns that noindex does not stop fetching because Google can continue accessing a known URL without indexing it. Their different accounts make the intended outcome important: removing an unwanted search result, changing which URLs exist, and influencing which requests occur are not described identically. Keep the diagnosis attached to the actual status, URL, and reported behavior instead of attributing every cleanup result to a universally accepted budget transfer. That way you respect where these operators disagree while still applying the concrete repairs each one teaches.",
             "For a page that should be indexed, Misha Manko ([vcLkBQxf9Hs @ 00:30:20]) demonstrates inspecting the URL, running the live test, and viewing the tested page's HTML to see what Google can access. Their technical exception concerns content that arrives too late or depends on JavaScript interaction, leaving an apparently complete human-facing page empty to the crawler. Semrush Live ([eelEuYoflG0 @ 00:16:26]) recommends combining crawl information with logs to find indexable pages without bot hits and to examine whether internal links are actually implemented with an anchor and href value. Daniel Heredia on BoostRoas ([kuSNDOAsr50 @ 00:37:36]) adds recurring checks and notifications for accidental indexing directives, robots blocks, or important URLs returning 404 responses. These demonstrations cover different failure points without treating a repeated indexing request as the repair. Misha Manko ([vcLkBQxf9Hs @ 00:21:36]) specifically says requesting indexing again will not change the outcome when the page and website remain unchanged. Their content remedies include consolidating near-identical products, creating genuinely differentiated local pages, and replacing copied supplier material with distinct information. The working sequence in these accounts is to establish accessibility and discovery, inspect what was fetched, repair the identified technical or content issue, and then observe subsequent crawling and indexing behavior."
           ],
           "table": {
@@ -5620,7 +5692,7 @@
           "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus."
         }
       ],
-      "revision": "9171b93eb0129f47"
+      "revision": "604417f9b1a55a7f"
     },
     {
       "id": "Q9",
@@ -5640,19 +5712,28 @@
           "label": "Business-topic drift in reviewed sites",
           "value": "86 of 172",
           "context": "Sites in Dash's partially hit sample whose pages had drifted away from what the business sells.",
-          "note": "Attributed to Kasra Dash ([I26NAT6T6Gs @ 00:00:19])."
+          "note": "Attributed to Kasra Dash ([I26NAT6T6Gs @ 00:00:19]).",
+          "metric": "Business-topic drift in reviewed sites",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Kasra Dash ([I26NAT6T6Gs @ 00:00:19])."
         },
         {
           "label": "Client active-user growth",
           "value": "almost 62%",
           "context": "Growth reported for a client that True SEO says came through the preceding core update.",
-          "note": "Attributed to True SEO ([y6yAJ9Ocl3U @ 00:03:18])."
+          "note": "Attributed to True SEO ([y6yAJ9Ocl3U @ 00:03:18]).",
+          "metric": "Client active-user growth",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to True SEO ([y6yAJ9Ocl3U @ 00:03:18])."
         },
         {
           "label": "Demonstrated speed-score movement",
           "value": "57 to 64",
           "context": "PageSpeed audit score before and after the caching-plugin adjustments shown in the technical audit.",
-          "note": "Attributed to Kasra Dash ([yzNo7jJ8WBE @ 00:22:54])."
+          "note": "Attributed to Kasra Dash ([yzNo7jJ8WBE @ 00:22:54]).",
+          "metric": "Demonstrated speed-score movement",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Kasra Dash ([yzNo7jJ8WBE @ 00:22:54])."
         }
       ],
       "sections": [
@@ -6191,7 +6272,7 @@
           "relevance": "Verbatim practitioner testimony from Chapter Q9 corpus."
         }
       ],
-      "revision": "c51de2be8837b12a"
+      "revision": "6b906ff22f8b288c"
     },
     {
       "id": "Q10",
@@ -6211,19 +6292,28 @@
           "label": "Brand research sample",
           "value": "75,000 brands; 25 million AI overviews",
           "context": "The research sample Ahrefs introduces before discussing five AI-search visibility factors.",
-          "note": "Attributed to Ahrefs ([gReszNnykpg @ 00:00:00])."
+          "note": "Attributed to Ahrefs ([gReszNnykpg @ 00:00:00]).",
+          "metric": "Brand research sample",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Ahrefs ([gReszNnykpg @ 00:00:00])."
         },
         {
           "label": "Freshness comparison",
           "value": "25.7% fresher",
           "context": "Ahrefs describes AI-cited content relative to regular Google results in a study of 17 million citations across seven AI search platforms.",
-          "note": "Attributed to Ahrefs ([gReszNnykpg @ 00:04:34])."
+          "note": "Attributed to Ahrefs ([gReszNnykpg @ 00:04:34]).",
+          "metric": "Freshness comparison",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Ahrefs ([gReszNnykpg @ 00:04:34])."
         },
         {
           "label": "Small-sample inclusion example",
           "value": "4 of 12; 33%; about 14 to 60%",
           "context": "The Answer Lab's illustrative inclusion rate and margin-of-error range, used to explain why a small apparent increase can be noise.",
-          "note": "Attributed to The Answer Lab | GEO & AEO ([yeLHXIInymI @ 00:07:04])."
+          "note": "Attributed to The Answer Lab | GEO & AEO ([yeLHXIInymI @ 00:07:04]).",
+          "metric": "Small-sample inclusion example",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to The Answer Lab | GEO & AEO ([yeLHXIInymI @ 00:07:04])."
         }
       ],
       "sections": [
@@ -6762,7 +6852,7 @@
           "relevance": "Verbatim practitioner testimony from Chapter Q10 corpus."
         }
       ],
-      "revision": "3b80c40d28bbb646"
+      "revision": "9aeb218d59b3bcac"
     },
     {
       "id": "Q11",
@@ -6782,19 +6872,28 @@
           "label": "Reported February Raptive RPM",
           "value": "$55.22",
           "context": "Meghan's Media reports this monthly average alongside 46,000 sessions and $2,568 in earnings.",
-          "note": "Attributed to Meghan's Media ([XXTUzO1Y_1U @ 00:03:53])."
+          "note": "Attributed to Meghan's Media ([XXTUzO1Y_1U @ 00:03:53]).",
+          "metric": "Reported February Raptive RPM",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Meghan's Media ([XXTUzO1Y_1U @ 00:03:53])."
         },
         {
           "label": "First-month Journey RPM",
           "value": "$16.15",
           "context": "CanEye reports this RPM during the first 30 days of Journey monetization.",
-          "note": "Attributed to CanEye ([FyVNDOxiU6o @ 00:04:15])."
+          "note": "Attributed to CanEye ([FyVNDOxiU6o @ 00:04:15]).",
+          "metric": "First-month Journey RPM",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to CanEye ([FyVNDOxiU6o @ 00:04:15])."
         },
         {
           "label": "Video share in one account",
           "value": "8.3%",
           "context": "Carl Broadbent identifies video ads as this share of one website's displayed ad earnings.",
-          "note": "Attributed to Carl Broadbent ([feVaD3YiPFE @ 00:08:53])."
+          "note": "Attributed to Carl Broadbent ([feVaD3YiPFE @ 00:08:53]).",
+          "metric": "Video share in one account",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Carl Broadbent ([feVaD3YiPFE @ 00:08:53])."
         }
       ],
       "sections": [
@@ -6807,7 +6906,7 @@
             "Casey Botticello ([uSKcihbY0hs @ 00:35:17]) describes Mediavine as the more hands-on environment for changing ad settings, including density, directly in the account. Raptive generally requires an email for those changes in their experience. That difference is about how settings are changed, not simply whether a publisher can influence them. She Knows SEO ([dL9VBY-Gj0Y @ 00:42:25]) reports being happy with Raptive's control despite using email rather than a dashboard percentage selector. They asked for a particular structure and valued the support team's implementation. How To Mr ([nIeVxkyipjw @ 00:01:48]) frames managed operation as a tradeoff: onboarding includes a site audit, and having the network handle operations leaves less manual control for publishers who prefer frequent adjustments. Meghan's Media ([NRcTFL8qghY @ 00:03:03]) describes a similarly hands-off Mediavine setup followed by accessible dashboard toggles for individual placements. Their account emphasizes that the publisher can still decide what remains enabled. Across these descriptions, managed setup and publisher choice coexist, but the working interface differs. Casey wants direct experimentation, She Knows SEO is comfortable requesting changes, How To Mr favors an established publisher seeking a managed solution, and Meghan's Media appreciates straightforward controls after the initial setup. Those preferences explain why comparable ad formats can still produce different experiences of the service."
           ],
           "table": {
-            "caption": "Selection criteria as each speaker describes them in the supplied recording.",
+            "caption": "Selection criteria as each speaker lays them out on camera.",
             "headers": [
               "Decision Area",
               "Reported Comparison",
@@ -7343,7 +7442,7 @@
           "relevance": "Verbatim practitioner testimony from Chapter Q11 corpus."
         }
       ],
-      "revision": "22aced1b2abc4d60"
+      "revision": "1036cd2c7df99e35"
     },
     {
       "id": "Q12",
@@ -7357,25 +7456,34 @@
       "subtitle": "SEO portfolios and client pitches, programmatic MRR and SaaS cases, moveBuddha, paid and free directory listings, interactive calculators, backlink pricing, and Empire Flippers purchase and sale experiences",
       "layout_template": "action_worksheet_summary",
       "reading_time_minutes": 15,
-      "executive_summary": "These accounts describe several ways to commercialize SEO work. Gautam Prachi ([ctFRKtUiETo @ 00:05:09]) teaches a bounded portfolio-building trial, while Ideal Directories ([nrI7go1wRl0 @ 00:02:05]) reports selling a website after giving away a listing. Samik Choudhury ([xbFsXyB1UZo @ 00:01:41]) explains reusable templates; SaaS SEO Engine ([kBXz_ArlMVk @ 00:03:49]) connects search intent with product use. Frey Chu ([NoUJBS6-yNQ @ 00:12:47]) emphasizes cleaning directory data. Outgrow ([KfYMGwuZlKU @ 00:01:57]) demonstrates calculator lead capture, and Collaborator ([7sg8dljI1yQ @ 00:04:58]) favors backlink evidence over price alone. Jaryd Krause - Buying Online Businesses ([O0q1EG7DNIc @ 00:07:18]) stresses independent acquisition research alongside broker vetting. The chapter preserves each account's examples, commercial mechanisms, implementation details, and stated limitations rather than turning different experiences into a single earnings formula.",
+      "executive_summary": "These operators describe several ways to commercialize SEO work. Gautam Prachi ([ctFRKtUiETo @ 00:05:09]) teaches a bounded portfolio-building trial, while Ideal Directories ([nrI7go1wRl0 @ 00:02:05]) reports selling a website after giving away a listing. Samik Choudhury ([xbFsXyB1UZo @ 00:01:41]) explains reusable templates; SaaS SEO Engine ([kBXz_ArlMVk @ 00:03:49]) connects search intent with product use. Frey Chu ([NoUJBS6-yNQ @ 00:12:47]) emphasizes cleaning directory data. Outgrow ([KfYMGwuZlKU @ 00:01:57]) demonstrates calculator lead capture, and Collaborator ([7sg8dljI1yQ @ 00:04:58]) favors backlink evidence over price alone. Jaryd Krause - Buying Online Businesses ([O0q1EG7DNIc @ 00:07:18]) stresses independent acquisition research alongside broker vetting. Each operator brings their own examples, commercial mechanisms, implementation details, and stated limitations, so treat these as different playbooks rather than a single earnings formula.",
       "key_metrics": [
         {
           "label": "Portfolio-building trial",
           "value": "14 days",
           "context": "A free SEO trial offered to only one prospect to develop experience and a testimonial.",
-          "note": "Attributed to Gautam Prachi ([ctFRKtUiETo @ 00:05:09])."
+          "note": "Attributed to Gautam Prachi ([ctFRKtUiETo @ 00:05:09]).",
+          "metric": "Portfolio-building trial",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Gautam Prachi ([ctFRKtUiETo @ 00:05:09])."
         },
         {
           "label": "moveBuddha organic traffic",
           "value": "Over 60,000 monthly organic visits",
           "context": "The overall programmatic SEO result reported for route and moving-company pages.",
-          "note": "Attributed to Contentbase ([3Fkd3FP40iU @ 00:01:57])."
+          "note": "Attributed to Contentbase ([3Fkd3FP40iU @ 00:01:57]).",
+          "metric": "moveBuddha organic traffic",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Contentbase ([3Fkd3FP40iU @ 00:01:57])."
         },
         {
           "label": "Featured directory listing example",
           "value": "$129 a month",
           "context": "Frey Chu's account of the featured-listing price used by the Sober Nation directory.",
-          "note": "Attributed to Frey Chu ([NoUJBS6-yNQ @ 00:04:44])."
+          "note": "Attributed to Frey Chu ([NoUJBS6-yNQ @ 00:04:44]).",
+          "metric": "Featured directory listing example",
+          "confidence": "attributed_practitioner_claim",
+          "source": "Attributed to Frey Chu ([NoUJBS6-yNQ @ 00:04:44])."
         }
       ],
       "sections": [
@@ -7523,7 +7631,7 @@
             "Ideal Directories ([i6uh0q1WdLo @ 00:00:20]) addresses selling before substantial traffic exists by telling the operator to acknowledge the site's current position when asked. The suggested conversation explains plans for SEO, social activity, newsletters, community involvement, and other promotion, rather than presenting future visitors as current visitors. Ideal Directories ([i6uh0q1WdLo @ 00:01:55]) then proposes introductory advertising rates that remain fixed for an advertiser who continues as a customer, even as later customers face higher prices. Frey Chu ([NoUJBS6-yNQ @ 00:04:05]) distinguishes traffic monetized through display advertising from featured or sponsored listings and discusses Sober Nation as a featured-listing example. The same speaker describes larger directory earnings as rare and frames the model as an SEO-focused business that takes months, not a rapid route to income. QUANTEVO ([JEma0TFSBVU @ 00:02:10]) gives a different starting sequence: combine outreach with SEO, offer free listings to build inventory, and upsell after traffic arrives. These presentations preserve multiple sales approaches. One sells an early advertising position with a clear explanation of limited traffic; another builds free inventory before an upgrade offer; Frey discusses the traffic and niche characteristics behind the directory's eventual monetization. The choice of offer remains distinct from the work of building the listing collection."
           ],
           "table": {
-            "caption": "Directory operations and the different offers described in the corpus.",
+            "caption": "Directory operations and the different offers these operators run.",
             "headers": [
               "Directory decision or working method",
               "Speaker's implementation or commercial distinction",
@@ -7914,11 +8022,11 @@
           "relevance": "Verbatim practitioner testimony from Chapter Q12 corpus."
         }
       ],
-      "revision": "d731f00825b5a455"
+      "revision": "3c3ed2eab0e32b78"
     }
   ],
   "chapter_count": 12,
-  "total_word_count": 63641,
+  "total_word_count": 64165,
   "epistemic_note": "Compiled exclusively from attributed English YouTube practitioner transcripts in vol010_building_an_seo_empire_corpus.json.",
-  "updated_at": "2026-11-24T00:52:01Z"
+  "updated_at": "2026-11-25T00:55:05Z"
 }

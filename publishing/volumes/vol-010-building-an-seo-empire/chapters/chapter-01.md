@@ -12,9 +12,9 @@ Real Estate SEO & Web Design prioritizes buyer and seller intent over traffic vo
 
 | Metric | Value | Confidence | Source |
 | --- | --- | --- | --- |
-| Waterfront transaction | $1.3 million |  |  |
-| Long-running local rental | $2,000 per month |  |  |
-| Reported map coverage | 21% to 74% |  |  |
+| Waterfront transaction | $1.3 million | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to Real Estate SEO & Web Design (xDMs5FogvQ8 @ 00:03:19). |
+| Long-running local rental | $2,000 per month | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to Ippei - Rank and Rent SEO (uJ0bhk9MeDE @ 00:07:50). |
+| Reported map coverage | 21% to 74% | 🏷️ ATTRIBUTED_PRACTITIONER_CLAIM | Attributed to Map Ranking (uH-42eKssR4 @ 00:03:03). |
 
 ## Choose searches that describe a client, then organize the answer
 
@@ -117,7 +117,7 @@ SEO Mentor ([Sz4DmVhOpxo @ 00:09:13]) surveys private blog networks as another l
 
 > **OPERATOR GATE — Practitioner-stated checks before interpreting or extending the work**
 > 
-> Each check below comes from a warning or limitation stated in the supplied recordings.
+> Each check below comes straight from a warning or limit the operators called out on camera.
 > - Check the business's opening hours before running a ranking report; the speaker says closed-hours scans alter the results. [Map Ranking — a_7c98JU32w @ 00:04:26]
 > - Do not apply the described engagement campaign to a brand-new listing or one with no SEO foundation, following this video's stated recommendation. [Map Ranking — uH-42eKssR4 @ 00:04:34]
 > - Do not translate a ten-percent increase in keyword appearances into an extra click for every appearance; Palmer says to retain a normal average click rate. [Chris Palmer SEO — fSK1KM3C6uQ @ 00:04:01]
