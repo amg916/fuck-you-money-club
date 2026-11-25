@@ -1446,7 +1446,7 @@ S.clean = 0; S.template = pageTemplates[0]; S.previewChapter = 1; S.viewport = '
 function conceptOptions(current) { return Object.entries(studioConcepts).map(([id,title])=>`<option value="${id}" ${id===current?'selected':''}>${esc(label(id))} · ${esc(title)}</option>`).join(''); }
 function openSvgModal(url,title) { openSVG(url,title); }
 function artwork(url,title,extra='') {
- return `<figure class="asset ${esc(extra)}"><button type="button" data-art-url="${esc(url)}" data-art-title="${esc(title)}" aria-label="Zoom: ${esc(title)}"><img loading="lazy" src="${esc(url)}" alt="${esc(title)}"></button><figcaption>${esc(title)} · Select to zoom</figcaption></figure>`;
+ return `<figure class="asset ${esc(extra)}"><button type="button" data-art-url="${esc(url)}" data-art-title="${esc(title)}" aria-label="Zoom: ${esc(title)}"><img decoding="async" src="${esc(url)}" alt="${esc(title)}"></button><figcaption>${esc(title)} · Select to zoom</figcaption></figure>`;
 }
 document.addEventListener('click',event=>{const button=event.target.closest('[data-art-url]');if(button)openSvgModal(button.dataset.artUrl,button.dataset.artTitle);});
 function graphicReview(id,concept) {
@@ -1498,9 +1498,10 @@ function drawDesignAssets() {
  $$('[data-select-concept]').forEach(button=>button.addEventListener('click',()=>{S.concept=button.dataset.selectConcept;$('#design-concept').value=S.concept;drawDesignAssets();updateInteriorPreview();renderScorecards();renderExports();}));
  $('#cover-gallery').innerHTML=coverAssets.map(asset=>`<article class="card">${artwork(endpoint('svg/mockup',{volume:S.volumeId,concept,asset,clean}),label(asset))}${reviewControls(asset,concept)}</article>`).join('');
  const records=firstList(S.manuscript.diagrams,volume().diagrams_data?.diagrams,volume().diagrams?.diagrams,volume().diagrams,S.overview.diagrams?.diagrams,S.overview.diagrams);
- const allIds=records.map(row=>typeof row==='string'?row:row.diagram_id || row.id).filter(Boolean);
+ const allIds=[...new Set(records.map(row=>typeof row==='string'?row:row.diagram_id || row.id).filter(Boolean))];
  const ids=allIds.filter(id=>/^diag-0[1-8]-/.test(id));
- const diagrams=Array.from({length:8},(_,i)=>ids.find(id=>id.startsWith(`diag-0${i+1}-`)) || allIds[i] || String(i+1));
+ const usedDiag=new Set();
+ const diagrams=Array.from({length:8},(_,i)=>{const pick=ids.find(id=>id.startsWith(`diag-0${i+1}-`)&&!usedDiag.has(id)) || allIds.find(id=>!usedDiag.has(id)) || String(i+1);usedDiag.add(pick);return pick;});
  $('#diagram-gallery').innerHTML=diagrams.map(id=>`<article class="card">${artwork(endpoint('svg/diagram',{volume:S.volumeId,concept,diagram:id}),label(id),'diagram')}${reviewControls(id,concept)}</article>`).join('');
  wireReviews($('#cover-gallery'));wireReviews($('#diagram-gallery'));
  $$('#design-studio-content img').forEach(img=>img.addEventListener('error',()=>{const caption=img.closest('figure').querySelector('figcaption');caption.textContent=img.alt+' — preview unavailable; check the API response.';},{once:true}));

@@ -2,6 +2,8 @@
 from __future__ import annotations
 
 import hashlib
+import os
+import stat as stat_mod
 from pathlib import Path
 
 from . import WORKFLOW_STAGES, resolve_volume_slug
@@ -32,19 +34,55 @@ METHODOLOGY = (
 
 
 def _store_revision(root_dir):
-    publishing = _resolve_contained(root_dir, Path(root_dir).resolve() / "publishing")
+    root_res = Path(root_dir).resolve()
+    publishing = _resolve_contained(root_res, root_res / "publishing")
+    pub_str = str(publishing)
     digest = hashlib.sha256()
-    for path in sorted(publishing.rglob("*")):
+    seen_dirs: set[tuple[int, int]] = set()
+    files_to_hash: list[tuple[str, str, os.stat_result]] = []
+    stack = [pub_str]
+    while stack:
+        cur = stack.pop()
         try:
-            _resolve_contained(root_dir, path)
-            if not path.is_file():
-                continue
-            stat = path.stat()
-            digest.update(f"{path.relative_to(publishing)}\0{stat.st_mtime_ns}\0{stat.st_size}\n".encode())
-            if stat.st_size <= 65536:
-                digest.update(hashlib.sha256(path.read_bytes()).digest())
+            dir_st = os.stat(cur)
         except OSError:
             continue
+        dir_key = (dir_st.st_dev, dir_st.st_ino)
+        if dir_key in seen_dirs:
+            continue
+        seen_dirs.add(dir_key)
+        try:
+            with os.scandir(cur) as it:
+                entries = list(it)
+        except OSError:
+            continue
+        for entry in entries:
+            full = entry.path
+            try:
+                is_sym = entry.is_symlink()
+            except OSError:
+                continue
+            if is_sym:
+                _resolve_contained(root_res, Path(full))
+            try:
+                st = os.stat(full) if is_sym else entry.stat(follow_symlinks=False)
+            except OSError:
+                continue
+            mode = st.st_mode
+            if stat_mod.S_ISDIR(mode):
+                stack.append(full)
+            elif stat_mod.S_ISREG(mode):
+                rel = full[len(pub_str) + 1:]
+                files_to_hash.append((rel, full, st))
+    files_to_hash.sort(key=lambda item: item[0])
+    for rel, full, st in files_to_hash:
+        digest.update(f"{rel}\0{st.st_mtime_ns}\0{st.st_size}\n".encode())
+        if st.st_size <= 65536:
+            try:
+                with open(full, "rb") as fh:
+                    digest.update(hashlib.sha256(fh.read()).digest())
+            except OSError:
+                continue
     return digest.hexdigest()
 
 
