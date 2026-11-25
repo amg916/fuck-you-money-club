@@ -110,7 +110,10 @@ def build_volume_001_manuscript(abridged_videos: list[dict] | None = None, **kwa
                 if (fvid, t_sec, t_txt) in known_triples:
                     continue
                 known_triples.add((fvid, t_sec, t_txt))
-                target_ch_num = int(tip_obj.get("chapter_number") or 1)
+                try:
+                    target_ch_num = int(tip_obj.get("chapter_number") or 1)
+                except (TypeError, ValueError):
+                    target_ch_num = 1
                 target_idx = target_ch_num - 1 if 1 <= target_ch_num <= len(chapters) else 0
                 h_i, rem_i = divmod(max(0, t_sec), 3600)
                 m_i, s_i = divmod(rem_i, 60)
